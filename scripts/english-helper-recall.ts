@@ -52,17 +52,23 @@
  * with prose, so the helper offers them as alternatives), wrong side (the helper offers the root
  * only on its other -l / -m side), tagger, ranking, and the two verify classes.
  *
- * Baseline: src/generated/english-helper-baseline.json holds each set's headline metrics.
- * `--check` fails when one is worse than the baseline by more than its tolerance; each metric
- * names the sets it guards (the in-sample doc set guards only root recall anywhere, gap rate and
- * prompt size). It is not part of `npm test`, since doc edits move the numbers.
- * `--write-baseline` updates the sets it ran.
+ * Baseline: src/generated/english-helper-baseline.json holds each set's headline metrics, and
+ * src/generated/english-helper-baseline-items.json each sentence's share of them, keyed by its
+ * English. `--check` compares the sentences both runs have, so a new, moved or deleted item never
+ * moves a guarded number, and fails when a metric is worse on those sentences by more than its
+ * tolerance; each metric names the sets it guards (the in-sample doc set guards only root recall
+ * anywhere, gap rate and prompt size). Under each metric that moved it lists the sentences that
+ * moved it: for *self-contained*, the words now missing, their worklist class, and whether the
+ * item's answers were edited since the baseline. Prompt size is a median, compared over all
+ * sentences. The check is not part of `npm test`, since doc edits move the numbers.
+ * `--write-baseline` updates both files for the sets it ran.
  *
  * Writes tmp/english-helper-recall.csv (one row per sentence), tmp/english-helper-worklist.csv
  * (one row per missing word, and for the wild set per gap and per guess ranked above a grammar
  * row, most frequent English first; NGSL ranks when
  * scripts/frequency-coverage.ts has downloaded the list), and tmp/english-helper-report.md.
  */
+import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 
@@ -87,6 +93,7 @@ const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 const TMP = join(REPO_ROOT, "tmp");
 const NGSL_STATS = join(TMP, "NGSL_12_stats.csv");
 const BASELINE = join(REPO_ROOT, "src", "generated", "english-helper-baseline.json");
+const BASELINE_ITEMS = join(REPO_ROOT, "src", "generated", "english-helper-baseline-items.json");
 const SETS = ["doc", "checkpoint", "wild"] as const;
 type SetName = (typeof SETS)[number];
 /** Sets with reference Ageben, scored on roots, constructions and the prompt's words. */
@@ -370,6 +377,38 @@ type Scored = { answer: string; tree: unknown; words: TreeWord[]; coverage: Cove
 
 const rows: Row[] = [];
 const misses: Miss[] = [];
+
+/** A sentence's share of one metric: [counted, of]. */
+type Pair = [number, number];
+/**
+ * One sentence's share of each guarded metric. The baseline keeps these, so `--check` compares
+ * the same sentences in both runs. The reference fields are absent on the wild set.
+ */
+type ItemRecord = {
+  /** A short hash of the accepted answers: a flip beside a changed hash follows a doc edit. */
+  answers?: string;
+  /** The closest answer's words the prompt does not show, space-separated; empty when self-contained. */
+  missing?: string;
+  /** The same on the prompt for the item's own band (checkpoint). */
+  staged?: string;
+  word?: Pair;
+  open?: Pair;
+  closed?: Pair;
+  anywhere?: Pair;
+  page?: Pair;
+  gap: Pair;
+  verifyClean?: Pair;
+  verifyCaught?: Pair;
+};
+const items = new Map<SetName, Map<string, ItemRecord>>();
+/** Each item's constructions and whether their page was suggested, until the set's structural ones are known. */
+const itemConstructions = new Map<ItemRecord, { id: string; page: boolean }[]>();
+/** A sentence's key in its set: its English, numbered when the set repeats it. */
+function itemKey(records: Map<string, ItemRecord>, english: string): string {
+  let key = english;
+  for (let n = 2; records.has(key); n++) key = `${english} #${n}`;
+  return key;
+}
 /** Joined prose rows already listed, by set and source row. */
 const joinedSeen = new Set<string>();
 type SetTally = {
@@ -443,6 +482,11 @@ function scoreVerify(sentence: Sentence, analysis: Analysis, t: VerifyTally): vo
     t.plants.set(plant.kind, p);
   }
 }
+/** The verify counts so far, to read one sentence's share as a difference. */
+function verifyCounts(v: VerifyTally) {
+  const plants = [...v.plants.values()];
+  return { words: v.words, flagged: [...v.checks.values()].reduce((a, b) => a + b, 0), planted: plants.reduce((a, p) => a + p.planted, 0), caught: plants.reduce((a, p) => a + p.flagged, 0) };
+}
 const tallies = new Map<SetName, SetTally>();
 
 for (const set of sets) {
@@ -468,6 +512,8 @@ for (const set of sets) {
     ...(set === "checkpoint" ? { verify: { answers: 0, clean: 0, errors: 0, words: 0, unknown: 0, checks: new Map(), plants: new Map() } } : {}),
   };
   tallies.set(set, tally);
+  const records = new Map<string, ItemRecord>();
+  items.set(set, records);
   for (const sentence of sentencesOf(set)) {
     const analysis = analyzeEnglish(data, sentence.english);
     const prompt = buildHelperPrompt([{ english: sentence.english, analysis }], data, context);
@@ -489,12 +535,15 @@ for (const set of sets) {
     }
     if (sentence.answers.length && !best) continue;
     // Staged: the same item on the prompt a learner at the item's own band sees.
+    let stagedMissing: string | undefined;
     if (set === "checkpoint" && sentence.stage && parsed.length) {
       const stage = sentence.stage as Band;
       const stagedAnalysis = analyzeEnglish(data, sentence.english, { stage });
       const stagedShows = promptShows(buildHelperPrompt([{ english: sentence.english, analysis: stagedAnalysis }], data, context), [stagedAnalysis]);
+      const missingOf = parsed.map((words) => words.filter((w) => coverWord(w, stagedShows) === "missing").map((w) => w.raw));
+      stagedMissing = missingOf.sort((a, b) => a.length - b.length)[0]!.join(" ");
       tally.staged.sentences++;
-      if (parsed.some((words) => words.every((w) => coverWord(w, stagedShows) !== "missing"))) tally.staged.selfContained++;
+      if (stagedMissing === "") tally.staged.selfContained++;
     }
 
     const slots = analysis.clauses.flatMap((c) => c.slots).filter((slot) => !slot.skipped);
@@ -530,24 +579,26 @@ for (const set of sets) {
     }
     const base = { set, source: sentence.source, group: [sentence.phenomenon, sentence.stage].filter(Boolean).join(" "), english: sentence.english, slots: slots.length, gaps: [...gapSlots].join(" "), prompt_chars: prompt.length };
     if (!best) {
+      records.set(itemKey(records, sentence.english), { gap: [analysis.gaps.length, slots.length] });
       rows.push({ ...base, ageben: "", roots: 0, found: 0, missed: "", not_top1: "", constructions: 0, anchor_hits: 0, page_hits: 0, missed_constructions: "", words: 0, in_prompt: 0, pattern: 0, missing_words: "" });
       continue;
     }
     const { tree } = best;
+    const verifyBefore = tally.verify && verifyCounts(tally.verify);
     if (tally.verify) scoreVerify(sentence, analysis, tally.verify);
 
     const sentenceWords = new Set(tagEnglish(sentence.english).flatMap((s) => s.clauses.flatMap((c) => c.terms.flatMap((t) => [t.normal, t.lemma]))));
     const roots = usedRoots(tree);
     const liveStems = usedLiveStems(tree);
-    const results = roots.map(({ root, open }) => ({ root, open, ...rootResult(analysis, root, sentenceWords) }));
-    for (const { root, open, result, tier } of results) {
+    const results = roots.map(({ root, open }) => ({ root, open, first: !open && rowFirst(analysis, root), ...rootResult(analysis, root, sentenceWords) }));
+    for (const { root, open, first, result, tier } of results) {
       tally.roots.set(result, (tally.roots.get(result) ?? 0) + 1);
       if (open) {
         tally.open.uses++;
         if (result === "top1") tally.open.top1++;
       } else {
         tally.closed.uses++;
-        if (rowFirst(analysis, root)) tally.closed.rowFirst++;
+        if (first) tally.closed.rowFirst++;
       }
       if (tier) tally.tiers.set(tier, (tally.tiers.get(tier) ?? 0) + 1);
       if (result === "missed" || result === "tagging") {
@@ -564,6 +615,7 @@ for (const set of sets) {
     const suggestedPages = new Set(suggested.map((l) => l.split("#")[0]));
     const constructions = new Set((tree as { constructions?: string[] }).constructions ?? []);
     const missedConstructions: string[] = [];
+    const pageByConstruction: { id: string; page: boolean }[] = [];
     let anchorHits = 0;
     let pageHits = 0;
     for (const id of constructions) {
@@ -575,6 +627,7 @@ for (const set of sets) {
         t.anchor++;
         anchorHits++;
       }
+      pageByConstruction.push({ id, page: suggestedPages.has(anchor.split("#")[0]) });
       if (suggestedPages.has(anchor.split("#")[0])) {
         t.page++;
         pageHits++;
@@ -592,6 +645,25 @@ for (const set of sets) {
     for (const word of best.words) {
       if (wrongSide(word, analysis)) misses.push({ set, english: sentence.english, word: word.raw, kind: "wrong side", lemma: lemmaFor(word, sentenceWords), link: "" });
     }
+
+    const record: ItemRecord = {
+      answers: createHash("sha256").update(sentence.answers.join("\n")).digest("hex").slice(0, 8),
+      missing: missingWords.map((w) => w.raw).join(" "),
+      ...(stagedMissing === undefined ? {} : { staged: stagedMissing }),
+      word: [best.coverage.filter((c) => c === "word").length, best.words.length],
+      open: [results.filter((r) => r.open && r.result === "top1").length, results.filter((r) => r.open).length],
+      closed: [results.filter((r) => r.first).length, results.filter((r) => !r.open).length],
+      anywhere: [results.filter((r) => r.result !== "missed" && r.result !== "tagging").length, results.length],
+      gap: [analysis.gaps.length, slots.length],
+    };
+    if (verifyBefore) {
+      const after = verifyCounts(tally.verify!);
+      const words = after.words - verifyBefore.words;
+      record.verifyClean = [words - (after.flagged - verifyBefore.flagged), words];
+      record.verifyCaught = [after.caught - verifyBefore.caught, after.planted - verifyBefore.planted];
+    }
+    itemConstructions.set(record, pageByConstruction);
+    records.set(itemKey(records, sentence.english), record);
 
     rows.push({
       ...base,
@@ -656,11 +728,24 @@ const median = (xs: number[], q = 0.5) => {
 const bandOrder = (group: string) => (BANDS as readonly string[]).indexOf(group);
 const sum = (m: Map<string, number>) => [...m.values()].reduce((a, b) => a + b, 0);
 
+/** Constructions in at least a fifth of a set's sentences: structure every sentence has, counted apart. */
+function structuralOf(set: SetName): Set<string> {
+  const sentences = rows.filter((r) => r.set === set).length;
+  return new Set([...tallies.get(set)!.constructions].filter(([, c]) => c.uses >= sentences * STRUCTURE_SHARE).map(([id]) => id));
+}
+for (const set of sets) {
+  const structural = structuralOf(set);
+  for (const record of items.get(set)!.values()) {
+    const taught = itemConstructions.get(record)?.filter((c) => !structural.has(c.id));
+    if (taught) record.page = [taught.filter((c) => c.page).length, taught.length];
+  }
+}
+
 function summarize(set: SetName) {
   const t = tallies.get(set)!;
   const sentences = rows.filter((r) => r.set === set).length;
   const totalRoots = [...t.roots.values()].reduce((a, b) => a + b, 0);
-  const structural = new Set([...t.constructions].filter(([, c]) => c.uses >= sentences * STRUCTURE_SHARE).map(([id]) => id));
+  const structural = structuralOf(set);
   const taught = [...t.constructions].filter(([id]) => !structural.has(id)).map(([, c]) => c);
   const constructionUses = taught.reduce((a, c) => a + c.uses, 0);
   const totalWords = [...t.coverage.values()].reduce((a, b) => a + b, 0);
@@ -761,54 +846,177 @@ const summary = Object.fromEntries(sets.map((set) => [set, summarize(set)]));
 
 type Headline = Record<(typeof HEADLINE)[number]["key"], number>;
 type Baseline = { sets: Partial<Record<SetName, { sentences: number } & Partial<Headline>>> };
+type BaselineItems = Partial<Record<SetName, Record<string, ItemRecord>>>;
 
 /**
  * The metrics `--check` guards, with the direction that is better, how far the other way a run
- * may move before it fails (percentage points; characters for the prompt size), and the sets it
- * guards. The doc set is in-sample and doc edits move its scores for reasons unrelated to the
- * helper, so it guards only breakage: roots found at all, gaps, and prompt size.
+ * may move before it fails (percentage points; characters for the prompt size), the sets it
+ * guards, and a sentence's share of it (none for the prompt size, a median). The doc set is
+ * in-sample and doc edits move its scores for reasons unrelated to the helper, so it guards only
+ * breakage: roots found at all, gaps, and prompt size.
  */
 const HELD_OUT: readonly SetName[] = ["checkpoint", "wild"];
+const passed = (missing: string | undefined): Pair | undefined => (missing === undefined ? undefined : [missing === "" ? 1 : 0, 1]);
+type Metric = {
+  key: string;
+  label: string;
+  better: "higher" | "lower";
+  tolerance: number;
+  sets: readonly SetName[];
+  /** The record field the metric reads: the baseline keeps a field only for the sets its metric guards. */
+  field?: Exclude<keyof ItemRecord, "answers">;
+  pair?: (r: ItemRecord) => Pair | undefined;
+  missing?: (r: ItemRecord) => string | undefined;
+};
 const HEADLINE = [
-  { key: "selfContained", label: "self-contained", better: "higher", tolerance: 0.5, sets: HELD_OUT },
-  { key: "stagedSelfContained", label: "staged self-contained", better: "higher", tolerance: 0.5, sets: ["checkpoint"] },
-  { key: "wordInPrompt", label: "word in prompt", better: "higher", tolerance: 0.5, sets: HELD_OUT },
-  { key: "rootTop1Open", label: "open-class root top-1", better: "higher", tolerance: 0.5, sets: HELD_OUT },
-  { key: "closedRowFirst", label: "closed root row first", better: "higher", tolerance: 0.5, sets: HELD_OUT },
-  { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5, sets: SETS },
-  { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5, sets: HELD_OUT },
-  { key: "gapRate", label: "gap rate", better: "lower", tolerance: 0.5, sets: SETS },
-  { key: "verifyPrecision", label: "verify precision", better: "higher", tolerance: 0.5, sets: HELD_OUT },
-  { key: "verifyRecall", label: "verify recall", better: "higher", tolerance: 0.5, sets: HELD_OUT },
+  { key: "selfContained", label: "self-contained", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "missing", pair: (r) => passed(r.missing), missing: (r) => r.missing },
+  { key: "stagedSelfContained", label: "staged self-contained", better: "higher", tolerance: 0.5, sets: ["checkpoint"], field: "staged", pair: (r) => passed(r.staged), missing: (r) => r.staged },
+  { key: "wordInPrompt", label: "word in prompt", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "word", pair: (r) => r.word },
+  { key: "rootTop1Open", label: "open-class root top-1", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "open", pair: (r) => r.open },
+  { key: "closedRowFirst", label: "closed root row first", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "closed", pair: (r) => r.closed },
+  { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5, sets: SETS, field: "anywhere", pair: (r) => r.anywhere },
+  { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "page", pair: (r) => r.page },
+  { key: "gapRate", label: "gap rate", better: "lower", tolerance: 0.5, sets: SETS, field: "gap", pair: (r) => r.gap },
+  { key: "verifyPrecision", label: "verify precision", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "verifyClean", pair: (r) => r.verifyClean },
+  { key: "verifyRecall", label: "verify recall", better: "higher", tolerance: 0.5, sets: HELD_OUT, field: "verifyCaught", pair: (r) => r.verifyCaught },
   { key: "promptChars", label: "prompt chars median", better: "lower", tolerance: 500, sets: SETS },
-] as const;
+] as const satisfies readonly Metric[];
+
+/** A metric over some sentences, from their shares; none when no sentence carries it. */
+function shareOver(records: readonly ItemRecord[], pair: (r: ItemRecord) => Pair | undefined): number | undefined {
+  let n = 0;
+  let d = 0;
+  for (const r of records) {
+    const p = pair(r);
+    if (!p) continue;
+    n += p[0];
+    d += p[1];
+  }
+  return d ? share(n, d) : undefined;
+}
+
+// The per-sentence shares must add up to the headline, or the check would guard another number.
+for (const set of sets) {
+  for (const m of HEADLINE as readonly Metric[]) {
+    const headline = summary[set]!.headline[m.key as keyof Headline];
+    if (!m.pair || headline === undefined) continue;
+    const fromItems = shareOver([...items.get(set)!.values()], m.pair);
+    if (fromItems !== headline) throw new Error(`${set} ${m.label}: the item records give ${fromItems}, the tally ${headline}`);
+  }
+}
 
 function readBaseline(): Baseline {
   return existsSync(BASELINE) ? (JSON.parse(readFileSync(BASELINE, "utf8")) as Baseline) : { sets: {} };
 }
+function readBaselineItems(): BaselineItems {
+  return existsSync(BASELINE_ITEMS) ? (JSON.parse(readFileSync(BASELINE_ITEMS, "utf8")) as BaselineItems) : {};
+}
+/** One line per sentence, sorted, so a rewrite's diff shows only the sentences that changed. */
+function serializeBaselineItems(all: BaselineItems): string {
+  const blocks = SETS.filter((set) => all[set]).map((set) => {
+    const lines = Object.entries(all[set]!)
+      .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
+      .map(([english, record]) => `    ${JSON.stringify(english)}: ${JSON.stringify(record)}`);
+    return `  ${JSON.stringify(set)}: {\n${lines.join(",\n")}\n  }`;
+  });
+  return `{\n${blocks.join(",\n")}\n}\n`;
+}
 
-/** One line per headline metric that moved; `worse` lines are past tolerance. */
-function compareBaseline(baseline: Baseline): { worse: string[]; moved: string[] } {
-  const worse: string[] = [];
-  const moved: string[] = [];
+/** The worklist class of each word missing from a sentence's prompt. */
+const missKind = new Map(misses.map((m) => [`${m.set}\t${m.english}\t${m.word}`, m.kind]));
+const FLIPS_SHOWN = 20;
+
+/**
+ * The sentences that moved a metric, worst first. For a pass / fail metric (self-contained),
+ * each one that stopped passing with the words now missing, and each that started; for the
+ * others, when the metric is past tolerance, the sentences whose share fell furthest.
+ */
+function movers(set: SetName, m: Metric, keys: readonly string[], was: Record<string, ItemRecord>, worse: boolean): string[] {
+  const now = items.get(set)!;
+  const out: string[] = [];
+  const cap = (lines: string[]) => (lines.length > FLIPS_SHOWN ? [...lines.slice(0, FLIPS_SHOWN), `      … and ${lines.length - FLIPS_SHOWN} more`] : lines);
+  const edited = (key: string) => (was[key]!.answers !== now.get(key)!.answers ? " (answers edited since the baseline)" : "");
+  if (m.missing) {
+    const lost = keys.filter((k) => m.missing!(was[k]!) === "" && m.missing!(now.get(k)!) !== "");
+    const gained = keys.filter((k) => m.missing!(was[k]!) !== "" && m.missing!(now.get(k)!) === "");
+    if (lost.length) out.push(`    stopped passing (${lost.length}):`);
+    out.push(
+      ...cap(
+        lost.map((k) => {
+          const english = k.replace(/ #\d+$/, "");
+          const words = m.missing!(now.get(k)!)!.split(" ").map((word) => {
+            const kind = missKind.get(`${set}\t${english}\t${word}`);
+            return `\`${word}\`${kind ? ` (${kind})` : ""}`;
+          });
+          return `      "${k}": now missing ${words.join(", ")}${edited(k)}`;
+        }),
+      ),
+    );
+    if (gained.length) out.push(`    started passing (${gained.length}):`);
+    out.push(...cap(gained.map((k) => `      "${k}": had missed ${m.missing!(was[k]!)!.split(" ").map((word) => `\`${word}\``).join(", ")}${edited(k)}`)));
+    return out;
+  }
+  if (!worse || !m.pair) return out;
+  const ratio = (p: Pair) => (p[1] ? p[0] / p[1] : 0);
+  const fell = keys
+    .map((k) => ({ k, a: m.pair!(was[k]!)!, b: m.pair!(now.get(k)!)! }))
+    .map((x) => ({ ...x, loss: m.better === "higher" ? ratio(x.a) - ratio(x.b) : ratio(x.b) - ratio(x.a) }))
+    .filter((x) => x.loss > 0)
+    .sort((x, y) => y.loss - x.loss);
+  if (fell.length) out.push(`    worse on ${fell.length} sentence${fell.length === 1 ? "" : "s"}:`);
+  out.push(...cap(fell.map((x) => `      "${x.k}": ${x.a[0]} of ${x.a[1]} → ${x.b[0]} of ${x.b[1]}${edited(x.k)}`)));
+  return out;
+}
+
+/**
+ * The check's lines, and how many metrics are past tolerance. A set with per-sentence records in
+ * the baseline is compared on the sentences both runs have; one without them (an older baseline),
+ * and the prompt size, on all sentences.
+ */
+function compareBaseline(baseline: Baseline, baselineItems: BaselineItems): { failed: number; moved: number; lines: string[] } {
+  const lines: string[] = [];
+  let failed = 0;
+  let moved = 0;
   for (const set of sets) {
     const before = baseline.sets[set];
     if (!before) {
-      worse.push(`${set}: no baseline (run with --write-baseline)`);
+      failed++;
+      lines.push(`  WORSE: ${set}: no baseline (run with --write-baseline)`);
       continue;
     }
-    for (const m of HEADLINE) {
-      if (!(m.sets as readonly SetName[]).includes(set)) continue;
-      const was = before[m.key];
-      const now = summary[set]!.headline[m.key];
-      if (was === undefined || now === undefined || was === now) continue;
-      const loss = m.better === "higher" ? was - now : now - was;
-      const line = `${set} ${m.label}: ${was} → ${now}`;
-      if (loss > m.tolerance) worse.push(line);
-      else moved.push(line);
+    const was = baselineItems[set];
+    const now = items.get(set)!;
+    if (!was) lines.push(`  ${set}: the baseline has no per-sentence records, so all sentences are compared (--write-baseline adds them)`);
+    else {
+      const fresh = [...now.keys()].filter((k) => !Object.hasOwn(was, k)).length;
+      const gone = Object.keys(was).filter((k) => !now.has(k)).length;
+      lines.push(`  ${set}: ${now.size - fresh} sentences in both runs${fresh || gone ? `; ${fresh} new and ${gone} gone, left out` : ""}`);
+    }
+    for (const m of HEADLINE as readonly Metric[]) {
+      if (!m.sets.includes(set)) continue;
+      const key = m.key as keyof Headline;
+      const allWas = before[key];
+      const allNow = summary[set]!.headline[key];
+      const pair = was && m.pair;
+      // A sentence counts when both runs carry the metric for it.
+      const keys = pair ? [...now.keys()].filter((k) => Object.hasOwn(was, k) && pair(was[k]!) && pair(now.get(k)!)) : [];
+      const a = pair ? shareOver(keys.map((k) => was[k]!), pair) : allWas;
+      const b = pair ? shareOver(keys.map((k) => now.get(k)!), pair) : allNow;
+      if (a === undefined || b === undefined) continue;
+      const all = pair && (a !== allWas || b !== allNow) ? ` (all sentences: ${allWas ?? "-"} → ${allNow ?? "-"})` : "";
+      const loss = m.better === "higher" ? a - b : b - a;
+      const worse = loss > m.tolerance;
+      if (worse) failed++;
+      else if (a !== b) moved++;
+      const flips = pair ? movers(set, m, keys, was, worse) : [];
+      if (a === b && !flips.length) {
+        if (all && allWas !== allNow) lines.push(`  item mix: ${set} ${m.label}: ${a} on the same sentences${all}`);
+        continue;
+      }
+      lines.push(`  ${worse ? "WORSE" : a === b ? "even" : "moved"}: ${set} ${m.label}: ${a} → ${b}${pair ? " on the same sentences" : ""}${all}`, ...flips);
     }
   }
-  return { worse, moved };
+  return { failed, moved, lines };
 }
 
 /** Most-missed words of a set: word, lemma, kind, sentence count. */
@@ -901,17 +1109,22 @@ else {
 }
 
 if (check) {
-  const { worse, moved } = compareBaseline(readBaseline());
-  for (const line of moved) console.error(`  moved: ${line}`);
-  for (const line of worse) console.error(`  WORSE: ${line}`);
-  if (worse.length) {
-    console.error(`baseline check failed: ${worse.length} metric${worse.length === 1 ? "" : "s"} past tolerance (src/generated/english-helper-baseline.json)`);
+  const { failed, moved, lines } = compareBaseline(readBaseline(), readBaselineItems());
+  for (const line of lines) console.error(line);
+  if (failed) {
+    console.error(`baseline check failed: ${failed} metric${failed === 1 ? "" : "s"} past tolerance (src/generated/english-helper-baseline.json)`);
     process.exitCode = 1;
-  } else console.error(`baseline check passed${moved.length ? "; --write-baseline to keep the new numbers" : ""}`);
+  } else console.error(`baseline check passed${moved ? "; --write-baseline to keep the new numbers" : ""}`);
 }
 if (writeBaseline) {
   const baseline = readBaseline();
-  for (const set of sets) baseline.sets[set] = { sentences: summary[set]!.sentences, ...summary[set]!.headline };
+  const baselineItems = readBaselineItems();
+  for (const set of sets) {
+    baseline.sets[set] = { sentences: summary[set]!.sentences, ...summary[set]!.headline };
+    const kept = new Set<string>(["answers", ...(HEADLINE as readonly Metric[]).flatMap((m) => (m.field && m.sets.includes(set) ? [m.field] : []))]);
+    baselineItems[set] = Object.fromEntries([...items.get(set)!].map(([key, record]) => [key, Object.fromEntries(Object.entries(record).filter(([field]) => kept.has(field))) as ItemRecord]));
+  }
   writeFileSync(BASELINE, JSON.stringify(baseline, null, 2) + "\n");
-  console.error(`→ src/generated/english-helper-baseline.json (${sets.join(", ")})`);
+  writeFileSync(BASELINE_ITEMS, serializeBaselineItems(baselineItems));
+  console.error(`→ src/generated/english-helper-baseline.json, english-helper-baseline-items.json (${sets.join(", ")})`);
 }

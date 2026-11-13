@@ -10,7 +10,7 @@ Run **`node scripts/english-helper.mjs '<english>'`** for per-clause root and gr
 
 When changing the helper:
 
-- `npm run english-helper-recall` scores it on doc pairs, English → Ageben checkpoint items, and the held-out wild set (`src/english-helper/wild.tsv`; never copy its sentences into cue rows or examples), including whether each reference word is in the prompt (free; report and worklist in `tmp/`). Run it with `-- --check` before committing a change to `src/english-helper/` or a recipe table, and `-- --write-baseline` to keep improved numbers.
+- `npm run english-helper-recall` scores it on doc pairs, English → Ageben checkpoint items, and the held-out wild set (`src/english-helper/wild.tsv`; never copy its sentences into cue rows or examples), including whether each reference word is in the prompt (free; report and worklist in `tmp/`). Run it with `-- --check` before committing a change to `src/english-helper/` or a recipe table, and `-- --write-baseline` to keep improved numbers. When the check fails, it lists the sentences that moved each metric: read those before anything else.
 - Pin each fixed behavior with a line in `src/english-helper/cases.tsv`.
 - After a lexicon CSV change, run `npm run english-helper-wordnet` to regenerate its WordNet index (`npm test` fails when it is stale).
 
@@ -77,21 +77,35 @@ Two rules keep fixes honest:
 
 The analyzer never reads example notes as cues. Checkpoint and wild English carry none, so a note-reading fix would raise only the in-sample doc scores.
 
+### Which table columns give cues {#cue-columns}
+
+The harvester ([`src/find/english.ts`](../../../src/find/english.ts)) reads cues from a table by its header. Every italic phrase in a column headed **English** becomes a cue for that row's form, and a phrase of several words then takes those words as one slot. A column headed **Example** gives no cues. So a column of whole example phrases (*like a duck*, *Not Azozon?*) is headed **Example**. Under **English**, an example phrase hides the roots and rows its own words would reach.
+
+This is the first thing to check when a doc edit drops the scores. The style pass added four such tables (`relations.md`, `polar-inventory.md`), which cost four checkpoint sentences until their headers were changed.
+
 ## Regression net
 
 - **[`src/english-helper/cases.tsv`](../../../src/english-helper/cases.tsv)** has one line per pinned behavior: English, the slot word, an expectation, and why. `analyze.test.ts` runs it, and the expectation kinds are listed in [`cases.ts`](../../../src/english-helper/cases.ts) (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `shape:`, `reach:`, `sake:`, `no-gap`). An empty slot names the sentence's clause detectors. Expectations name senses, sections and closed words, never root spellings, so a retie never breaks them. Each fixed behavior adds a line.
-- **Baseline.** [`src/generated/english-helper-baseline.json`](../../../src/generated/english-helper-baseline.json) holds the headline metrics per set. `english-helper-recall -- --check` fails when one drops past its tolerance: 0.5 points, or 500 characters for prompt size. `-- --write-baseline` updates it. Each metric names the sets it guards:
+- **Baseline.** [`src/generated/english-helper-baseline.json`](../../../src/generated/english-helper-baseline.json) holds the headline metrics per set, and [`english-helper-baseline-items.json`](../../../src/generated/english-helper-baseline-items.json) holds each sentence's share of them, keyed by its English. `english-helper-recall -- --check` compares the sentences both runs have, and fails when a metric drops on them past its tolerance: 0.5 points, or 500 characters for prompt size (a median, compared over all sentences). `-- --write-baseline` updates both files. Each metric names the sets it guards:
   - Checkpoint guards all of them, *staged self-contained* included.
   - Wild has no reference, so it guards gap rate and prompt size.
   - Doc is in-sample, and doc edits move its scores for reasons unrelated to the helper. It guards only breakage: root recall anywhere, gap rate and prompt size.
 
-  The check is not part of `npm test`, because docs change the numbers. Run it before a commit that touches `src/english-helper/` or a recipe table. When a drop comes from item mix (new or moved checkpoint items), say so where you report the run, then rewrite the baseline.
+  A new, moved or deleted item is left out of the comparison, so item mix never fails the check. The check prints how many sentences it left out, and the all-sentences numbers beside the compared ones when they differ.
+
+  Under each metric that moved, the check lists the sentences that moved it. For *self-contained* it gives every sentence that stopped passing, with the words now missing and their worklist class, and every sentence that started passing. For the other metrics, when one is past tolerance, it gives the sentences whose share fell furthest. A sentence marked *answers edited since the baseline* changed in the docs; an unmarked one changed because the helper reads it differently. To see what changed, run the helper on that sentence at both commits and compare the output.
+
+  The check is not part of `npm test`, because docs change the numbers. Run it before a commit that touches `src/english-helper/` or a recipe table.
 
 ## Model eval (paid)
 
 `npm run english-helper-eval -- --n 40 --seed 1` samples checkpoint items evenly across the three levels. It builds the helper prompt with the item's own answers and English held out of the examples, and has a small model write the Ageben. A draft equal to an accepted answer is right, and a draft that doesn't parse is wrong. Every other draft is read back with the Ageben → English prompt and judged against the English by a stronger model. The report gives the miss rate by level, compares self-contained and not-self-contained items, and lists the closest answer's unused words with their coverage label. Drafts and verdicts are cached by prompt, so a scoring fix reruns for free. `--dry` lists the sample. A run of 40 costs about $4.50. Run it only when asked.
 
 Run it every few rounds, or after a big grammar change, to check that *self-contained* still tracks real translation quality. If the two diverge, fix the metrics before going on.
+
+A run writes over its own results file, and only the last run's drafts are reused. Copy `results.jsonl` aside before a run whose sample or prompt differs, if the old drafts are still wanted.
+
+### Batches
 
 | Batch | Miss | Self-contained / not | No-parse (on self-contained items) |
 |---|---|---|---|
@@ -100,6 +114,30 @@ Run it every few rounds, or after a big grammar change, to check that *self-cont
 | 2026-11-04, n = 40, after the block | 44% | 32% / 58% | 6 (3) |
 
 The *common mistakes* block in the prompt came from these batches. Since it landed, no draft has a comma between words or copies notation. The two drafts that still wrote a bare join vowel followed analysis rows that offered one. Those rows now spell the join word (`vul`, `zam`), so the next batch should show whether that error is gone.
+
+### Oracle ablations {#oracle-ablations}
+
+An ablation shows which kind of fix to build next. `--variant oracle-words` and `--variant oracle-gloss` each add one section to the prompt, built from the item's first accepted answer, and change nothing else:
+
+- **`oracle-words`** lists that answer's words with their glosses, in alphabetical order. Finding and choosing the words is done, so a miss is a wrong order.
+- **`oracle-gloss`** gives that answer's gloss line, in sentence order. The plan is done, so a miss is a word the translator could not spell from the prompt.
+
+Each variant keeps its own `results-<variant>.jsonl` and report. `--compare` prints the stored variants side by side on the items they share, paired on the English (no model calls). `--dry --only page.md:line` prints an item's prompt. Run the variants on the items of a stored plain run (`--only`), so the plain run is not paid for twice.
+
+| 2026-11-13, the same 20 items in each column | Plain (drafts of 2026-11-04) | `oracle-words` | `oracle-gloss` |
+|---|---|---|---|
+| Miss | 55% | 30% | 50% |
+| Miss, self-contained (10) | 30% | 30% | 30% |
+| Miss, not self-contained (10) | 80% | 30% | 70% |
+| No parse | 3 | 5 | 4 |
+
+The two runs cost $4.38. The 20 items were picked half self-contained and half not, so the overall miss is higher than a plain sample's. What the batch shows:
+
+- **Self-contained measures the right thing, for half the problem.** Given the words, the not-self-contained items fall from 80% to 30%, which is the self-contained rate. The self-contained items do not move under either oracle.
+- **The missing words are closed forms, not roots.** Given the whole plan as a gloss, the drafts still left out or misspelled `zol`, `grawal`, `gruodol`, `zayan`, `thobathem`, `hwubam`, `darl` and `zahelaln`: a rank join, a special value, a stacked marker, an address set, an ought, a say word, a stand-in and an instance ending. The prompt spelled none of them, and no lexicon root was among the missing words. A plan does not help when the form is not on the page.
+- **The 30% that remains is order inside a construction.** With every word given, four of the six misses put the words in the wrong order: both compared items go before the rank join (`zazozon zalazun zol gevunom`), `hal` after `herulal` is *only when* and before it is *never*, and the multiplier follows the adjective (`garolem hradol`). The prompt says `h` and `th` words may go anywhere, which is wrong for these.
+
+The numbers are from 20 items, and the plain column is from drafts made on the prompt of 2026-11-04, so read the direction and the per-item evidence, not the exact percentages.
 
 ## The loop
 
@@ -123,9 +161,15 @@ Each round:
 
 ## Next round
 
-1. **Comparatives: *more*, *than*, *better*, *much*.** Comparatives are the worst wild phenomenon (9.4% gap rate). *more* is the most-missed wild word, and *better*, *than*, *good* and *much* follow. Run `find-english.mjs` on *more than*, *better* and *as much as*, then add cues to the comparatives rows that already teach the forms (`comparatives.md`, `comparative-arity.md`). Watch that a *more than* cue doesn't take over the ray rows (*more than 5*), which match through the number placeholder.
-2. **Feeling words with only a root.** The holder hint for someone else's feeling fires only when a slot links a feeling or sake row (*upset*). *Alazun is anxious* reaches only the *anxious* root, so it gets no hint and `--verify` does not check it. Find a signal that a root is a feeling (an overlay kind, a lexicon column, or a sake row cue), not a hand list.
-3. ***work*.** *works* / *working* are gaps (4 wild sentences). Check the lexicon and `english_aliases` for a sense that fits. If none fits, log a lexicon gap for the editor. Don't add a root.
-4. **Verify false alarm on *talk*.** `vezuyol` is checked on 16 checkpoint answers because *talk* reaches the speech root only through an alias. If *talk* is a true sense of that root, that is a lexicon edit for the editor. If not, `verify.ts` should accept an alias whose side matches.
-5. **A range under a question.** *How many coins, from 3 to 5, …?* needs the range hook on **-r** (`gragel oer grazal`). The helper offers the closed `oel`. Add a cue on the `say-amounts.md` *some value in the band* rows only if the page's own example supports that reading; otherwise log it as *feature not reached*.
-6. **Model eval** (paid, only when asked), to confirm that the bare-join-vowel drafts are gone.
+The first three come from the [oracle ablations](#oracle-ablations) and outrank the worklist rows below them.
+
+1. **Spell the closed forms.** The missing words are closed forms a slot links to but the prompt never spells. Show the whole small paradigm of each subsystem a slot links (its cheat sheet table), not one row, so the form is in the prompt whichever row the cue hit. Measure it on *closed root row first* (55.8%) and *self-contained*, and watch characters per self-contained sentence.
+2. **Order inside a construction.** Fix the writing rule that says `h` and `th` words may go anywhere: state where a restrictor, a rank join's items and a multiplier go, from the owning pages. Then give each construction the analysis links one example that shows its frame, chosen by construction, not by shared word. A free metric to go with it: the share of reference constructions that some example in the prompt uses.
+3. **Example phrases still read as cues.** The style pass also added name-bearing cues on `more-hinges.md` and `stand-in-vowels.md` (*so that Alazun sits*, *tells Alazun to sit*). They moved no checkpoint sentence, but each takes its whole phrase as one slot. Check whether those columns should be headed [**Example**](#cue-columns).
+4. **The `--verify` instruction.** A translator with no tools spends its note saying it could not run the script. Leave the instruction out of the prompt unless the caller says tools are there.
+5. **Comparatives: *more*, *than*, *better*, *much*.** Comparatives are the worst wild phenomenon (9.4% gap rate). *more* is the most-missed wild word, and *better*, *than*, *good* and *much* follow. Run `find-english.mjs` on *more than*, *better* and *as much as*, then add cues to the comparatives rows that already teach the forms (`comparatives.md`, `comparative-arity.md`). Watch that a *more than* cue doesn't take over the ray rows (*more than 5*), which match through the number placeholder.
+6. **Feeling words with only a root.** The holder hint for someone else's feeling fires only when a slot links a feeling or sake row (*upset*). *Alazun is anxious* reaches only the *anxious* root, so it gets no hint and `--verify` does not check it. Find a signal that a root is a feeling (an overlay kind, a lexicon column, or a sake row cue), not a hand list.
+7. ***work*.** *works* / *working* are gaps (4 wild sentences). Check the lexicon and `english_aliases` for a sense that fits. If none fits, log a lexicon gap for the editor. Don't add a root.
+8. **Verify false alarm on *talk*.** `vezuyol` is checked on 16 checkpoint answers because *talk* reaches the speech root only through an alias. If *talk* is a true sense of that root, that is a lexicon edit for the editor. If not, `verify.ts` should accept an alias whose side matches.
+9. **A range under a question.** *How many coins, from 3 to 5, …?* needs the range hook on **-r** (`gragel oer grazal`). The helper offers the closed `oel`. Add a cue on the `say-amounts.md` *some value in the band* rows only if the page's own example supports that reading; otherwise log it as *feature not reached*.
+10. **Model eval** (paid, only when asked), after items 1 and 2: a plain run of 40, to see how much of the 80% and the 30% they removed.

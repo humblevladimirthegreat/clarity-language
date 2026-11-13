@@ -192,7 +192,7 @@ When the question already contains *not* (*Didn’t Azozon run?*), *yes* and *no
 
 English checks one guess with a short question: *Just Azozon?*, *How about Ahelan?*, *Nothing?* A *yes/no* question can also check a *named* item: put a single-item join after it instead of a fill-ask blank. The join's ending says what you ask:
 
-| Join after the question | Asks the listener to | English |
+| Join after the question | Asks the listener to | Example |
 |-------------------------|----------------------|---------|
 | Single-item `-l` (or usual `-n`) | confirm that this one item alone is meant | *Just Azozon?*, *Has to be Azozon?* |
 | Single-item `-m` | take up the item you offer | *How about Ahelan?* |

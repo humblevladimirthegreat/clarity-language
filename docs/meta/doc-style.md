@@ -228,6 +228,8 @@ Some house labels look like ordinary English. If a heading or a table column use
 
 Three table headers are defined once in [How to learn](../grammar/introduction.md#cues) and are not unpacked again on each page: **Use**, **Cue** (a memory aid), and **Same root as** (the everyday kind of that root, in its citation form).
 
+A fourth header matters to the tooling. The English helper reads every italic phrase in a column headed **English** as a search cue for that row's form. When the cells hold whole example phrases or sentences (*like a duck*, *Not Azozon?*) and not the English word that calls for the form, head the column **Example**: [which table columns give cues](procedures/english-helper.md#cue-columns).
+
 Intermediate and Advanced sections that finish a series may stay denser once Beginner has unpacked the terms. A later-stage new job still glosses any new label on first use.
 
 ## Plain language (no assumed specialist vocabulary)

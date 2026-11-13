@@ -194,3 +194,7 @@ The beggar waits.	beggar	no-gap	*beggar* keeps its irregular doer verb
 Ahelan sings if Alazun sits.	if	form:blarl	the *if* row spells the whole-sentence condition
 Ahelan sings only if Alazun sits.	only if	form:blarl	the *only if* row spells the whole-sentence condition
 Ahelan sings if and only if Alazun sits.	if and only if	form:blarl	the *iff* row spells the whole-sentence condition
+# Example cells are not cues: a table column headed Example gives none (only an English column does)
+Ahelan swims like a duck.	like	link:relations.md#likeness	an example phrase in a contrast table (*like a duck*) once took the whole slot
+Ahelan swims like a duck.	duck	no-gap	the noun after *like* keeps its own root
+Didn't Azozon walk?	not	link:joins.md#negation-u	an example question (*Not Azozon?*) once took *not* and the name

@@ -59,7 +59,7 @@ With no `bl-` word after a joined subject, the model is the other members: each 
 
 **Compare with:**
 
-| English | What it is instead |
+| Example | What it is instead |
 |---------|--------------------|
 | a `/b/` word with no relation word before it | the recipient |
 | *in a house* | a [hook](hooks.md#extra-noun) (`al bohehal`) |
@@ -88,7 +88,7 @@ On a noun, the same root is **`geham`** (`danal geham blohowel` *a book for a ha
 
 **Compare with:**
 
-| English | What it is instead |
+| Example | What it is instead |
 |---------|--------------------|
 | *a book for Alazun* as who gets it | a `/b/` word with no relation word before it: the recipient |
 | *using* a tool | a [hook](hooks.md#extra-noun) |
@@ -114,7 +114,7 @@ A recipient `/b/` can follow once the pair is complete: `zazozon hanem blalazun 
 
 **Compare with:**
 
-| English | What it is instead |
+| Example | What it is instead |
 |---------|--------------------|
 | who hears the telling | a `/b/` word with no relation word before it |
 | *using* a tool | a [hook](hooks.md#extra-noun) |

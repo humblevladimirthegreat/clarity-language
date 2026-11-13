@@ -19,7 +19,18 @@
  * Run: npm run english-helper-eval -- [--n 100] [--seed 1] [--concurrency 2]
  *      [--translator claude-haiku-5-5] [--back claude-haiku-5-5] [--judge claude-opus-5-5] [--fresh]
  *      npm run english-helper-eval -- --only page.md:line[,page.md:line …]   (those items, no sampling)
- *      npm run english-helper-eval -- --dry   (list the sample and prompt sizes; no model calls)
+ *      npm run english-helper-eval -- --dry   (list the sample and prompt sizes; with --only, print the prompts; no model calls)
+ *      npm run english-helper-eval -- --variant oracle-words|oracle-gloss   (an oracle ablation, below)
+ *      npm run english-helper-eval -- --compare   (the variants' stored results side by side; no model calls)
+ *
+ * Oracle ablations say where the misses come from. Each adds one section to the helper prompt,
+ * built from the item's first accepted answer, and changes nothing else:
+ *   oracle-words  that answer's words with their glosses, in alphabetical order: finding and
+ *                 choosing the words is done, so what still misses is putting them in order
+ *   oracle-gloss  that answer's gloss line, in sentence order: the plan is done, so what still
+ *                 misses is spelling each word from the analysis
+ * Run each with the same `--n` and `--seed` as a plain run, then `--compare`. A variant keeps its
+ * own `results-<variant>.jsonl` and report, so one run never clears another's stored replies.
  *
  * The sample is spread evenly over the three levels (beginner, intermediate, advanced), not in
  * proportion to the pool, so every level shows its misses in a small batch.
@@ -40,7 +51,7 @@ import { loadDefaultTables, parseWithTables } from "../src/parse/index.js";
 import { promptForPassage } from "../src/parse/llm-passage.js";
 import { loadPromptContext } from "../src/parse/llm-examples.js";
 import { featureWeights, type PromptContext } from "../src/parse/llm-prompt.js";
-import { morphGlossLine } from "../src/parse/morph-gloss.js";
+import { morphGlossLine, morphGlossWords } from "../src/parse/morph-gloss.js";
 import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { claude, rng, shuffle, withRetry, type CallResult } from "./lib/claude-cli.js";
@@ -62,10 +73,20 @@ const JUDGE = flag("judge", "claude-opus-5-5");
 const FRESH = process.argv.includes("--fresh");
 const ONLY = flag("only", "").split(",").filter(Boolean);
 const DRY = process.argv.includes("--dry");
+const COMPARE = process.argv.includes("--compare");
+const VARIANTS = ["helper", "oracle-words", "oracle-gloss"] as const;
+type Variant = (typeof VARIANTS)[number];
+const VARIANT = flag("variant", "helper") as Variant;
+if (!VARIANTS.includes(VARIANT)) {
+  console.error(`--variant needs one of ${VARIANTS.join(", ")}`);
+  process.exit(2);
+}
 
 const OUT = join(REPO_ROOT, "tmp", "english-helper-eval");
 const EMPTY = join(OUT, "empty");
-const RESULTS = join(OUT, "results.jsonl");
+/** The plain run keeps the unsuffixed file names; each ablation has its own. */
+const fileOf = (stem: string, ext: string, variant: Variant = VARIANT) => join(OUT, `${stem}${variant === "helper" ? "" : `-${variant}`}.${ext}`);
+const RESULTS = fileOf("results", "jsonl");
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 
 // ---------------------------------------------------------------------------------------------
@@ -137,12 +158,55 @@ function glossOf(ageben: string): string | null {
   }
 }
 
-/** The helper prompt, and the free metrics: is each word of the closest accepted answer in it? */
+/**
+ * The section an oracle variant adds before the task, from the item's first accepted answer;
+ * none for the plain run, or when that answer has no gloss.
+ */
+function oracleSection(item: Item): string[] | null {
+  if (VARIANT === "helper") return null;
+  const answer = item.answers[0]!;
+  const sentences = (answer.match(/[.?!](\s|$)/g) ?? []).length || 1;
+  if (VARIANT === "oracle-gloss") {
+    const gloss = glossOf(answer);
+    if (!gloss) return null;
+    return [
+      "## Gloss of a right answer",
+      "",
+      "One right answer has the gloss below: one gloss word per Ageben word, in sentence order, written like the Gloss lines of the examples. Write the Ageben word for each gloss word, in this order.",
+      "",
+      `Gloss: ${gloss}`,
+    ];
+  }
+  let words: { raw: string; gloss: string }[];
+  try {
+    words = morphGlossWords(answer, tables);
+  } catch {
+    return null;
+  }
+  const sorted = [...words].sort((a, b) => a.raw.localeCompare(b.raw));
+  return [
+    "## Words of a right answer",
+    "",
+    `One right answer uses exactly the ${words.length} words below, each as often as it is listed, in ${sentences === 1 ? "one sentence" : `${sentences} sentences`}. They are in alphabetical order, not sentence order: put them in order.`,
+    "",
+    ...sorted.map((w) => `- \`${w.raw}\` ${w.gloss}`),
+  ];
+}
+
+/**
+ * The prompt the translator gets, and the free metrics: is each word of the closest accepted
+ * answer in the helper prompt? The metrics never read the oracle section, so an item keeps its
+ * self-contained label across variants.
+ */
 function promptFor(item: Item) {
   const analysis = analyzeEnglish(data, item.english);
   const ctx = heldOut(item);
-  const prompt = buildHelperPrompt([{ english: item.english, analysis }], data, ctx);
-  const shows = promptShows(prompt, [analysis]);
+  const helperPrompt = buildHelperPrompt([{ english: item.english, analysis }], data, ctx);
+  const shows = promptShows(helperPrompt, [analysis]);
+  const oracle = oracleSection(item);
+  const TASK = "\n## Task\n";
+  if (oracle && !helperPrompt.includes(TASK)) throw new Error("the helper prompt has no ## Task heading to put the oracle section before");
+  const prompt = oracle ? helperPrompt.replace(TASK, `\n${oracle.join("\n")}\n${TASK}`) : helperPrompt;
   const coverage = new Map<string, Map<string, Coverage>>();
   for (const answer of item.answers) {
     try {
@@ -152,7 +216,7 @@ function promptFor(item: Item) {
       // An answer the parser rejects is scored by the recall report; here it only drops out.
     }
   }
-  return { analysis, prompt, ctx, coverage };
+  return { analysis, prompt, ctx, coverage, oracle: oracle !== null };
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -223,6 +287,9 @@ type Row = {
   band: string;
   english: string;
   answers: string[];
+  variant: Variant;
+  /** An oracle variant whose section could not be built (the answer has no gloss) ran on the plain prompt. */
+  oracle: boolean;
   promptChars: number;
   /** Free metrics on the prompt: every word of some accepted answer is word or pattern. */
   selfContained: boolean;
@@ -262,6 +329,8 @@ async function evaluate(item: Item, job: ReturnType<typeof promptFor>, cached?: 
     band: item.band,
     english: item.english,
     answers: item.answers,
+    variant: VARIANT,
+    oracle: job.oracle,
     promptChars: prompt.length,
     selfContained: [...coverage.values()].some((words) => [...words.values()].every((c) => c !== "missing")),
     draftRaw: "",
@@ -352,6 +421,71 @@ async function evaluate(item: Item, job: ReturnType<typeof promptFor>, cached?: 
 // ---------------------------------------------------------------------------------------------
 // Run
 
+const MISS: Record<Outcome, number> = { exact: 0, same: 0, partly: 0.5, wrong: 1, "no-parse": 1, unreadable: 1 };
+const mean = (xs: number[]) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
+const pct = (x: number) => `${Math.round(x * 100)}%`;
+
+/**
+ * The variants' stored results side by side, on the items every stored variant scored. Items
+ * pair on their English, since an item's line moves when its page is edited. The self-contained
+ * label is the helper prompt's own, read from the first stored variant.
+ */
+function compareVariants(): void {
+  const stored = VARIANTS.flatMap((variant) => {
+    const file = fileOf("results", "jsonl", variant);
+    if (!existsSync(file)) return [];
+    const rows = readFileSync(file, "utf8").split("\n").filter(Boolean).map((line) => JSON.parse(line) as Row).filter((row) => row.outcome);
+    return rows.length ? [{ variant, rows: new Map(rows.map((row) => [row.english, row])) }] : [];
+  });
+  if (stored.length < 2) {
+    console.error("--compare needs stored results of at least two variants (run each with the same --n and --seed)");
+    process.exit(2);
+  }
+  const common = [...stored[0]!.rows.keys()].filter((source) => stored.every((s) => s.rows.has(source)));
+  const base = stored[0]!;
+  const missOf = (s: (typeof stored)[number], sources: string[]) => (sources.length ? pct(mean(sources.map((source) => MISS[s.rows.get(source)!.outcome!]))) : "-");
+  const count = (s: (typeof stored)[number], outcomes: Outcome[]) => common.filter((source) => outcomes.includes(s.rows.get(source)!.outcome!)).length;
+  const selfContained = common.filter((source) => base.rows.get(source)!.selfContained);
+  const notSelfContained = common.filter((source) => !base.rows.get(source)!.selfContained);
+  const line = (label: string, f: (s: (typeof stored)[number]) => string | number) => `| ${label} | ${stored.map(f).join(" | ")} |`;
+  const cell = (text: string) => text.replace(/\|/g, "\\|");
+  const md = [
+    "# English helper model evaluation: variants",
+    "",
+    `${common.length} items scored by every variant (${stored.map((s) => `${s.variant} ${s.rows.size}`).join(", ")}).`,
+    "",
+    `| | ${stored.map((s) => s.variant).join(" | ")} |`,
+    `|---|${stored.map(() => "---").join("|")}|`,
+    line("**Miss**", (s) => `**${missOf(s, common)}**`),
+    line(`Miss, self-contained (${selfContained.length})`, (s) => missOf(s, selfContained)),
+    line(`Miss, not self-contained (${notSelfContained.length})`, (s) => missOf(s, notSelfContained)),
+    ...[...BANDS, "none"].flatMap((band) => {
+      const sources = common.filter((source) => base.rows.get(source)!.band === band);
+      return sources.length ? [line(`Miss, ${band} (${sources.length})`, (s) => missOf(s, sources))] : [];
+    }),
+    line("exact", (s) => count(s, ["exact"])),
+    line("same", (s) => count(s, ["same"])),
+    line("partly", (s) => count(s, ["partly"])),
+    line("wrong", (s) => count(s, ["wrong"])),
+    line("no parse or unreadable", (s) => count(s, ["no-parse", "unreadable"])),
+    line("oracle section missing", (s) => common.filter((source) => s.variant !== "helper" && !s.rows.get(source)!.oracle).length),
+    "",
+    "## Items",
+    "",
+    `| Item | Level | Self-contained | ${stored.map((s) => s.variant).join(" | ")} |`,
+    `|---|---|---|${stored.map(() => "---").join("|")}|`,
+    ...common.map((source) => `| ${base.rows.get(source)!.source}: ${cell(source)} | ${base.rows.get(source)!.band} | ${base.rows.get(source)!.selfContained ? "yes" : "no"} | ${stored.map((s) => s.rows.get(source)!.outcome).join(" | ")} |`),
+  ];
+  const out = join(OUT, "report-variants.md");
+  writeFileSync(out, md.join("\n") + "\n");
+  console.log(md.slice(0, md.indexOf("## Items") - 1).join("\n"));
+  console.log(`\nReport: ${out}`);
+}
+if (COMPARE) {
+  compareVariants();
+  process.exit(0);
+}
+
 mkdirSync(EMPTY, { recursive: true });
 const previous = new Map<string, Row>();
 if (!FRESH && existsSync(RESULTS)) {
@@ -366,6 +500,7 @@ if (DRY) {
   for (const { item, job } of jobs) {
     const cached = previous.has(keyOf(item, job.prompt)) ? " (cached)" : "";
     console.log(`${item.source}\t${item.band}\t${job.prompt.length} chars${cached}\t${item.english}`);
+    if (ONLY.length) console.log(`\n${job.prompt}`);
   }
   process.exit(0);
 }
@@ -393,12 +528,9 @@ await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 // ---------------------------------------------------------------------------------------------
 // Report
 
-const MISS: Record<Outcome, number> = { exact: 0, same: 0, partly: 0.5, wrong: 1, "no-parse": 1, unreadable: 1 };
 const scored = rows.filter((row) => row.outcome);
 const failed = rows.filter((row) => row.error);
 const miss = (row: Row) => MISS[row.outcome!];
-const mean = (xs: number[]) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
-const pct = (x: number) => `${Math.round(x * 100)}%`;
 const money = (x: number) => `$${x.toFixed(3)}`;
 const costOf = (row: Row) => STEPS.reduce((sum, step) => sum + row.cost[step], 0);
 const total = rows.reduce((sum, row) => sum + costOf(row), 0);
@@ -434,7 +566,7 @@ const cell = (text: string) => text.replace(/\|/g, "\\|").replace(/\n/g, " ");
 const md: string[] = [
   "# English helper model evaluation",
   "",
-  `Translator \`${TRANSLATOR}\`, back-translator \`${BACK}\`, judge \`${JUDGE}\`, seed ${SEED}, ${rows.length} items (${scored.length} scored, ${failed.length} errors). Cost ${money(total)} (this run's own calls ${money(spentNow)}), ${money(perItem)} per item; ${N} items at this rate: about ${money(perItem * N)}.`,
+  `Variant \`${VARIANT}\`${VARIANT === "helper" ? "" : ` (${rows.filter((row) => row.oracle).length} of ${rows.length} prompts carry the oracle section)`}. Translator \`${TRANSLATOR}\`, back-translator \`${BACK}\`, judge \`${JUDGE}\`, seed ${SEED}, ${rows.length} items (${scored.length} scored, ${failed.length} errors). Cost ${money(total)} (this run's own calls ${money(spentNow)}), ${money(perItem)} per item; ${N} items at this rate: about ${money(perItem * N)}.`,
   "",
   `Miss per item: exact or same 0, partly 0.5, wrong, no parse or unreadable 1. Overall miss: **${pct(mean(scored.map(miss)))}**.`,
   "",
@@ -488,10 +620,10 @@ const md: string[] = [
     ]),
   ...(failed.length ? ["## Errors", "", ...failed.map((row) => `- ${row.source}: ${cell(row.error!.slice(0, 300))}`)] : []),
 ];
-writeFileSync(join(OUT, "report.md"), md.join("\n") + "\n");
+writeFileSync(fileOf("report", "md"), md.join("\n") + "\n");
 writeFileSync(
-  join(OUT, "report.json"),
-  JSON.stringify({ translator: TRANSLATOR, back: BACK, judge: JUDGE, seed: SEED, overall: mean(scored.map(miss)), outcomes, byBand, bySelf, divergence, steps, cost: total, perItem }, null, 2),
+  fileOf("report", "json"),
+  JSON.stringify({ variant: VARIANT, translator: TRANSLATOR, back: BACK, judge: JUDGE, seed: SEED, overall: mean(scored.map(miss)), outcomes, byBand, bySelf, divergence, steps, cost: total, perItem }, null, 2),
 );
-console.log(`${scored.length} scored, ${failed.length} errors, overall miss ${pct(mean(scored.map(miss)))}, ${money(total)} (${money(perItem)} per item; this run ${money(spentNow)}). Report: ${join(OUT, "report.md")}`);
+console.log(`${scored.length} scored, ${failed.length} errors, overall miss ${pct(mean(scored.map(miss)))}, ${money(total)} (${money(perItem)} per item; this run ${money(spentNow)}). Report: ${fileOf("report", "md")}`);
 if (failed.length) process.exitCode = 1;
