@@ -1,6 +1,6 @@
 # Proposal: learner STT (phoneme ASR, no Ageben speech corpus)
 
-**Status:** PROPOSED  
+**Status:** IDEA  
 **Related:** reverse of `diphone-tts.md`; long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](/phonology), [spans.md](/spans#writing-vs-speech), [numbers.md](/number-markers#writing-preferred-shorthand), [clause.md](/clause#role-letters)). This proposal covers **tooling only**: microphone audio → Ageben letters → optional preferred writing. It does **not** train an Ageben acoustic model.
 

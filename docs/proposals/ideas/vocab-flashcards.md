@@ -1,6 +1,6 @@
 # Proposal: vocab flashcard generator / system
 
-**Status:** v1 **shipped** (`npm run flashcards`: Core, Sakes, Everything packs to `tmp/flashcards/`); v2–v3 **proposed**  
+**Status:** IDEA. v1 **shipped** (`npm run flashcards`: Core, Sakes, Everything packs to `tmp/flashcards/`); v2–v3 **proposed**  
 **Related:** long-term TODO *vocab flashcard generator/system*; reuses the CSV parsers in [`src/lexicon-search.ts`](../../../src/lexicon-search.ts) and [`src/lexicon-compounds.ts`](../../../src/lexicon-compounds.ts), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column) and its checkpoint order from [`src/core-vocabulary.ts`](../../../src/core-vocabulary.ts); packaging via `genanki` from [`requirements.txt`](../../../requirements.txt) (the devcontainer installs it into `.venv`); optional later drill UI may sit next to `gloss-overlay-ui.md`  
 **Design authority:** remains [`docs/grammar/`](../../grammar/introduction.md), [glosses.md](../../meta/glosses.md), and lexicon CSVs. This proposal covers **tooling only**: turn published roots, compounds, and overlays into study decks; do not invent senses or replace the lexicon as source of truth.
 

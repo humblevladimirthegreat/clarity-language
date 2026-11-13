@@ -1,6 +1,6 @@
 # Ageben Spec: software specifications written in Ageben
 
-**Status:** ready to implement, 2026-11-11. No phase started. Decided 2026-11-11: requirements may be say words or stacked acts, and the IR normalizes both; software vocabulary is added per concept from the pilot's counts; conventions stay in a meta note, not a published page; tooling lives in `src/spec/`, with spec files named `*.spec.ab`. Deferred to the pilot: the form for SHOULD.
+**Status:** READY, 2026-11-11. No phase started. Decided 2026-11-11: requirements may be say words or stacked acts, and the IR normalizes both; software vocabulary is added per concept from the pilot's counts; conventions stay in a meta note, not a published page; tooling lives in `src/spec/`, with spec files named `*.spec.ab`. Deferred to the pilot: the form for SHOULD.
 
 **Related:** [parse.mjs](../../scripts/parse.mjs) (`--json`, `--llm-prompt`), [ast-walk.ts](../../src/parse/ast-walk.ts), [llm-passage.ts](../../src/parse/llm-passage.ts), the agent parser bundle [ageben.ts](../../src/agent/ageben.ts), [read-ageben.md](../meta/procedures/read-ageben.md), [lexicon.md](../meta/procedures/lexicon.md), [feature-criteria.md](../meta/feature-criteria.md). Neighbouring ideas: `syntax-highlighting.md` (fence underlines matter most in a spec), `speed-reading-view.md`.
 

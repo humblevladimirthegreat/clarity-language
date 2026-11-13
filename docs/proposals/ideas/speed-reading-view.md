@@ -1,6 +1,6 @@
 # Topic pictures in the margin
 
-Status: idea. Not design authority; fold into grammar / meta docs, then drop. Builds on `syntax-highlighting.md` and needs its topic stretch.
+**Status:** IDEA. Not design authority; fold into grammar / meta docs, then drop. Builds on `syntax-highlighting.md` and needs its topic stretch.
 
 ## Problem
 

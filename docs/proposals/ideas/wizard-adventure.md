@@ -1,6 +1,6 @@
 # Wizard text adventure
 
-Status: milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Ageben vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
+**Status:** IDEA. milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Ageben vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
 
 ## Problem
 

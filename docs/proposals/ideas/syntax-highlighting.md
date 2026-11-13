@@ -1,6 +1,6 @@
 # Structure highlighting for Ageben examples
 
-Status: idea. Not design authority; fold into grammar / meta docs, then drop.
+**Status:** IDEA. Not design authority; fold into grammar / meta docs, then drop.
 
 ## Problem
 

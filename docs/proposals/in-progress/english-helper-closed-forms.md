@@ -1,6 +1,6 @@
 # English helper: spell the closed forms, show the frame
 
-**Status:** Partially implemented: Phase 1 done (2026-11-13). The tree is green and the changes are uncommitted. Open decisions 1 to 5 were adopted on 2026-11-13 as recommended after Phase 1:
+**Status:** IN PROGRESS: Phase 1 done (2026-11-13). The tree is green and the changes are uncommitted. Open decisions 1 to 5 were adopted on 2026-11-13 as recommended after Phase 1:
 1. **Reach:** whole sheet, filled nearest first, lean rendering, capped at 6,000 characters.
 2. **Prompt size:** the median baseline is raised once in Phase 2. Characters per self-contained sentence may rise to about 30,000, from 25,959.
 3. **Source:** the blocks are read from the cheat sheets.

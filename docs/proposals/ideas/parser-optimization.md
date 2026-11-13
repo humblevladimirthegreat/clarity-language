@@ -1,6 +1,6 @@
 # Parser startup optimization
 
-**Status:** items 1, 4, 5 **shipped** (2026-09-25); item 3 (warm dev-server endpoint) is the **next candidate**, deferred; items 2 and 6 **not worth doing** at current numbers.
+**Status:** IDEA. items 1, 4, 5 **shipped** (2026-09-25); item 3 (warm dev-server endpoint) is the **next candidate**, deferred; items 2 and 6 **not worth doing** at current numbers.
 
 Editors only. Follow-ups after lowering `maxLookahead` from 3 to 2 in `src/parse/sentence-parser.ts` (2026-09-25).
 

@@ -1,6 +1,6 @@
 # Proposal: click-to-gloss overlay UI
 
-**Status:** v1–v2 **shipped** (click / hover inspect in viewer + VitePress widgets); highlight-to-gloss **proposed**  
+**Status:** IDEA. v1–v2 **shipped** (click / hover inspect in viewer + VitePress widgets); highlight-to-gloss **proposed**  
 **Related:** long-term TODO *web tools (overlay glosses)*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST + morph tokens); `speed-reading-view.md` / `speed-reading-icons.md` may share the same token map later; `diphone-tts.md` may later speak the same selected range  
 **Design authority:** remains [`docs/grammar/`](../../grammar/introduction.md) and lexicon CSVs. This proposal covers **tooling only**: render parsed Ageben so learners can inspect a word (or construction) without leaving the reading surface.
 

@@ -98,7 +98,8 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 | Add, retitle, or respell a root or compound, move an overlay, edit `core`, number pegs | `lexicon.md`; when anything is respelled, also `retie.md` |
 | Measure, peel, or move sittings and H3s | `restructure-sittings.md` |
 | Write or top up a checkpoint or level review, edit the drill allowlist | `drill-generation.md` |
-| Write a proposal, or orchestrate one as the session the user talks to: subagents, gates, commits, resuming. A subagent running one unit skips it; its brief is complete | `proposals.md` |
+| Write down an idea: a loose spec nobody has planned yet | `ideas.md` |
+| Turn an idea into a plan, or orchestrate one as the session the user talks to: subagents, gates, commits, resuming. A subagent running one unit skips it; its brief is complete | `proposals.md` |
 
 ## Tooling notes
 

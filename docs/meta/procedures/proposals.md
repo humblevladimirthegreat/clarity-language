@@ -1,22 +1,31 @@
 # Proposals (editors)
 
-How to keep **`docs/proposals/`**, what a proposal holds, and how an agent carries one out. Grammar pages must **not** link here or mention that folder.
+How to keep **`docs/proposals/`**, what a proposal holds, and how an agent carries one out. Grammar pages must **not** link here or mention that folder. A loose spec that nobody has planned yet is an **idea**, written per [ideas.md](ideas.md) without reading this page.
 
 ## Folder and links
 
-**Do not link to proposal pages.** Files move between the folder root, `partially-implemented/`, and `rejected/`; a markdown link to a proposal will break. If another editor note must name one, use a backtick filename (`diphone-tts.md`) — never a markdown link whose target is a file under `docs/proposals/`. The same rule applies in grammar, meta, examples, `AGENTS.md`, `TODO.md`, and **other proposals**.
+| Folder | Holds | Status keyword |
+|--------|-------|----------------|
+| `ideas/` | loose specs ([ideas.md](ideas.md)) | `IDEA` |
+| `ready/` | plans that pass [ready to implement](#ready-to-implement) | `READY` |
+| `in-progress/` | plans with a phase under way or stopped partway | `IN PROGRESS` |
+| `rejected/` | ideas and plans turned down | `REJECTED` |
+
+A file's Status keyword matches its folder. Move a file between folders with `git mv`, never by copying.
+
+**Do not link to proposal pages.** Files move between these folders; a markdown link to a proposal will break. If another editor note must name one, use a backtick filename (`diphone-tts.md`) — never a markdown link whose target is a file under `docs/proposals/`. The same rule applies in grammar, meta, examples, `AGENTS.md`, `TODO.md`, and **other proposals**.
 
 Proposals may link **out** to `docs/grammar/`, `docs/meta/`, `data/`, and code. They are not design authority; absorb into grammar or meta, then drop or reject the proposal.
 
 ## What a proposal is
 
-A proposal is a plan for a change that is too large or too undecided to make in one edit. When it is carried out, the grammar pages and meta notes own the result, and the proposal is deleted or moved per [folder and links](#folder-and-links).
+A proposal is a plan for a change that is too large to make in one edit. It starts as an idea and becomes a proposal when it passes [ready to implement](#ready-to-implement). When it is carried out, the grammar pages and meta notes own the result, and the proposal is deleted or moved per [folder and links](#folder-and-links).
 
 **Header lines**, in this order:
 
 | Line | Holds |
 |------|-------|
-| **Status:** | PROPOSED, ready to implement, partially implemented, and each user decision with its date. While a run is in progress, also which phases and workstreams are done ([resuming](#resuming)). |
+| **Status:** | `READY` or `IN PROGRESS`, and each user decision with its date. While a run is in progress, also which phases and workstreams are done ([resuming](#resuming)). |
 | **Related:** | Links out to the grammar pages, meta notes, data, and code it touches. |
 | **Depends on:** / **Order:** | Other proposals that must land first, as backtick filenames. |
 | **Design authority:** | *none* (moves, retitles, tooling), or exactly which forms and readings it changes. |
@@ -28,6 +37,18 @@ Every proposal states, in its plan, that at the end of each [phase](#phases), an
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
 - Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
 - A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](../design-decisions.md).
+
+### Ready to implement
+<a id="ready-to-implement"></a>
+
+An idea moves from `ideas/` to `ready/` with `git mv` when the user wants it built and all of these hold:
+
+- No open decision blocks the first phase. Later phases may still log open decisions, each with its **Recommendation:**.
+- **Design authority:** names exactly which forms and readings it changes, or says *none*.
+- Every proposal named under **Depends on:** has landed.
+- The plan section is complete per [the plan section](#the-plan-section).
+
+The agent writes the plan and the missing header lines; the user settles the blocking decisions. Set Status to `READY` with the date. The orchestrator moves the file to `in-progress/` and sets `IN PROGRESS` when the first phase starts.
 
 ### Stop and alert
 <a id="stop-and-alert"></a>
@@ -180,3 +201,5 @@ At the end of each [phase](#phases), and when the user says to stop partway, the
 - put Problem, Goals and Non-goals last, as H3s under one `## Background` heading after Open decisions, so the next session reads from the top to `## Background` in one range and opens the background only if it needs it (`npm run outline -- <proposal>` gives the line numbers)
 
 Commit the consolidated proposal as the phase's last commit when the run commits ([commits](#commits)); otherwise leave it in the tree.
+
+When nothing planned is left, delete the proposal. When the run stops for good with work left that nobody has planned (a later version, a deferred item), cut the proposal down to an idea per [ideas.md](ideas.md): drop the plan, keep Problem, Sketch, and Open questions for what is left, set Status to `IDEA` with one clause naming what shipped and the doc that owns it, and `git mv` it to `ideas/`.

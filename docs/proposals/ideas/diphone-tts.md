@@ -1,6 +1,6 @@
 # Proposal: diphone concatenative Speak
 
-**Status:** PROPOSED  
+**Status:** IDEA  
 **Related:** kept linguistic stages in `src/tts/` (parse → `toSpeech` → `toPhonemes`; see [Existing stages](#existing-stages)); inverse dictation is `learner-stt.md`; sung contours (same bank) in `diphone-singing.md`; phones from [phonology.md](/phonology)  
 **Design authority:** spoken forms and IPA stay in the grammar docs. This proposal covers the **`synthesize`** stage (a recorded Ageben diphone bank plus in-browser concatenation) and the site **Speak UI**. It does not change letters, phonotactics, or writing→speech maps. It is the only proposal needed to reimplement Speak; the earlier `learner-tts.md` (KittenTTS) is rejected and its still-relevant policy is folded in below.
 

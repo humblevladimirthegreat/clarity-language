@@ -1,6 +1,6 @@
 # English helper: Jev picks the context
 
-**Status:** PROPOSED (2026-11-13). Nothing is built. Open decisions 1 to 4 wait on the user, and Phase 1 cannot start before decision 1.
+**Status:** IDEA (2026-11-13). Nothing is built. Open decisions 1 to 4 wait on the user, and Phase 1 cannot start before decision 1.
 
 **Related:** [English helper quality](../meta/procedures/english-helper.md) ([free metrics](../meta/procedures/english-helper.md#free-metrics), [the worklist](../meta/procedures/english-helper.md#the-worklist-and-where-each-fix-goes), [model eval](../meta/procedures/english-helper.md#model-eval-paid), [next round](../meta/procedures/english-helper.md#next-round)), [`src/english-helper/paradigms.ts`](../../src/english-helper/paradigms.ts), [`src/english-helper/llm-prompt.ts`](../../src/english-helper/llm-prompt.ts), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/english-helper-eval.ts`](../../scripts/english-helper-eval.ts), [`docs/grammar/cheat-sheets/`](../grammar/cheat-sheets/), [`TODO.md`](../../TODO.md) (*use jev for translation?*). Jev: [docs index](https://docs.typesafe.ai/llms.txt), [models and price](https://docs.typesafe.ai/models.md), [known limits](https://docs.typesafe.ai/model-jaggedness.md), [Noul](https://docs.typesafe.ai/primitives/noul.md), [JavaScript SDK](https://docs.typesafe.ai/sdk/javascript.md).
 

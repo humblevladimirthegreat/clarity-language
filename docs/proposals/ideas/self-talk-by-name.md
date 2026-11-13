@@ -1,6 +1,6 @@
 # Proposal: self-talk by name
 
-**Status:** PROPOSED. Nothing here is built.  
+**Status:** IDEA. Nothing here is built.  
 **Related:** `claritish-editor.md` (the editor this would ride on: its matcher, help cards, and mirror panel), [Claritish track](../meta/grammar-docs.md#claritish-track), the [Labels](../grammar/claritish/labels.md) and [Feelings](../grammar/claritish/feelings.md) lessons.  
 **Design authority:** none. This changes English words, not Ageben, and adds no form.
 
