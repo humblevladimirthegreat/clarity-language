@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** DRAFT (classification for clause structure, hooks, hinges and dependents, causation, knowing, residue, intention; the rest is marked `R1b`)  
+**Status:** DRAFT (all keys classified; pair table filled)  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md). The reader copies what the parse tree and the resolve stage already say; it never re-derives a reading.
 
 The interpreter turns a parse into **readings**, one per clause, so tools can compare, show, or check what a text says without walking the parse tree for meaning. This note owns the terms, the frame families, the classification table every reader switches on, the links, the scope statements copied from the grammar pages, and the reader rules. Every row cites the grammar anchor that decides it; a row with no anchor is still to be classified. The parser side is in [parser pipeline](parser-pipeline.md); construction ids come from `constructionRegistry()` in `src/parse/constructions.ts`.
@@ -39,32 +39,33 @@ The interpreter turns a parse into **readings**, one per clause, so tools can co
 | `contrary` | The event goes against a plan, a say word, a channel, or a holder's view (`uom` + that word) | `contrary-to.md` |
 | `occasion` | Restrictors: only when, never, always, sometimes, the occasion list | `restrictors.md`, `more-occasions.md` |
 | `unknown` | A construction with no row | this note |
-| `force` | *R1b*: speech act and question type | `speech-moves.md`, `questions.md` |
-| `polarity` | *R1b*: negation and polar words | `joins.md#negation-u`, `questions.md` |
-| `say` | *R1b*: say words | `permission-consent.md#say-words` |
-| `sake` | *R1b*: whose sake or stake | `sakes.md`, `feelings.md` |
-| `bar` | *R1b*: than planned, than usual, enough, too | `bars.md` |
-| `quote` | *R1b*: quoted speech | `spans.md` |
-| `binder` | *R1b*: universals and bound tags | `universals-domains.md` |
+| `force` | Speech act and question type, a greeting, the addressee | `speech-moves.md`, `firm-soft.md`, `more-turn-words.md`, `questions.md` |
+| `polarity` | Denies the items of its list (`u` joins); never the whole clause | `joins.md#negation-u`, `set-joins.md`, `verb-and-stance-joins.md#stance-joins`, `universals-domains.md#not-every` |
+| `say` | Someone's say over the act: permission, requirement, consent | `permission-consent.md#say-words` |
+| `sake` | Which need the claim or a noun serves or detracts from, and whose stake; a feeling's stake | `sakes.md`, `for-a-sake.md`, `ought-for-a-sake.md`, `feelings.md#feeling-whose-stake` |
+| `bar` | The stance a ranking is measured against: than planned, than usual, enough, too | `bars.md` |
+| `quote` | Quoted words: a nested reading with its own speaker | `spans.md#writing`, `quote-contents.md` |
+| `attitude` | **Added.** How you feel about the claim or how you say it: *hopefully*, speech manner, tone marks, interjections | `feelings.md#speaker-attitude`, `speech-manner.md`, `tone-marks.md`, `speech-moves.md#interjections-reactions` |
+| `binder` | *Every*, *everything but*, and a new member a later phrase falls under; bound tags | `joins.md#everything-ua`, `universals-domains.md` |
 
-R1a dropped no first-cut family and added `intention`, `ability`, and `residue`: each has whole-clause forms that change the claim and that the first cut did not name. R1b may add families from its pages (speaker attitude is a candidate).
+R1a dropped no first-cut family and added `intention`, `ability`, and `residue`: each has whole-clause forms that change the claim and that the first cut did not name. R1b dropped no first-cut family and added `attitude`: speaker attitude, speech manner and tone marks change no truth, but they are the speaker's and stay so under a holder (`holder.md#holder`), so they cannot be details. The final list: `force`, `polarity`, `say`, `stance`, `holder`, `hinge`, `intention`, `ability`, `phase`, `residue`, `notional`, `mirative`, `contrary`, `occasion`, `sake`, `attitude`, `bar`, `quote`, `binder`, `unknown`.
 
 ## Classification table
 
-Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexReading`; `wordFamily` is `MorphWordFamily.kind`; `xFamily` is `XFamily`; `overlay` is overlay `kind` and PoS letter (`overlay:<kind>:<pos>`, with `overlay:<kind>:<pos>:<gloss>` overriding it for one gloss); `joinSeries` is the join series; `anaphor`, `ask`, `answer`, and `shared` are the resolve records (`AnaphorBind` by kind, `AskRecord` by kind, `AnswerRecord`, `SharedRecord` by role); `ending`, `slot`, `edge`, `body`, `reading`, and `word` are keys that only construction ids use (see [construction ids](#construction-ids)). A class of `R1b` means R1b classifies the row.
+Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexReading`; `wordFamily` is `MorphWordFamily.kind`; `xFamily` is `XFamily`; `overlay` is overlay `kind` and PoS letter (`overlay:<kind>:<pos>`, with `overlay:<kind>:<pos>:<gloss>` overriding it for one gloss); `joinSeries` is the join series; `anaphor`, `ask`, `answer`, and `shared` are the resolve records (`AnaphorBind` by kind, `AskRecord` by kind, `AnswerRecord`, `SharedRecord` by role); `ending`, `slot`, `edge`, `body`, `reading`, and `word` are keys that only construction ids use (see [construction ids](#construction-ids)).
 
 | Key type | Key | Class | Anchor | Note |
 |----------|-----|-------|--------|------|
 | unit | `np` | structure | `clause.md#who-acts-and-the-action` | A role phrase: fills `claim.roles` by its role letter |
-| unit | `vp` | structure | `clause.md#who-acts-and-the-action` | Fills `claim.verb`; a joined verb list is R1b |
+| unit | `vp` | structure | `clause.md#who-acts-and-the-action` | Fills `claim.verb`; a joined verb list is a list term, its join read by its `joinSeries` row |
 | unit | `predicate` | structure | `predication.md#identity` | Clause-level `/ɡ/`: fills `claim.predicate` |
 | unit | `h` | detail:adverb | `clause.md#adverbs-h` | Default for a plain `/h/` word. An `/h/` word with a restrictor, ability, or overlay reading takes that word's row first |
 | unit | `linker` | link | `sentence-linkers.md#sentence-linkers` | Points back to the one sentence before the period |
 | unit | `hook` | structure | `hooks.md#including-am-al` | Read by its `hookJob` row |
-| unit | `writingSpan` | R1b | | |
+| unit | `writingSpan` | frame:quote | `spans.md#writing` | A cite fills one role; its words are a nested reading that keeps its own act word and frames (`quote-contents.md#quote-acts`, `evidentiality.md#carry-forward`). Loan, opaque and mention spans are `literal` terms (`spans.md#loans`); an aside `th(…)` is a nested comment reading (`spans.md#asides-th`) |
 | unit | `island` | structure | `scope-islands.md#scope-islands` | Nests: a stance inside frames that chunk only (rule 2) |
-| unit | `clauseCoord` | structure | `joins.md#clause-joins` | One reading per member (rule 1); the join itself is R1b |
-| unit | `gCoord` | R1b | | |
+| unit | `clauseCoord` | structure | `joins.md#clause-joins` | One reading per member (rule 1); the join itself is read by its `joinSeries` row |
+| unit | `gCoord` | structure | `joins.md#right-close` | A `/ɡ/` list; its join is read by its `joinSeries` row |
 | hookJob | `discourse` | link | `hooks.md#discourse-hooks` | Ties this sentence to prior talk: add, reword, replace, except. With `-r` it points back to an earlier stretch (`discourse-hooks.md#discourse`) |
 | hookJob | `clause` | detail:hook | `in-clause-hooks.md#in-clause` | Including, rather, instead, except on a phrase of the clause |
 | hookJob | `extraNoun` | detail:place | `extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m` | On, through, using, near: a landmark for the clause or a hosted landmark; `hooks.md#since` is the time case |
@@ -74,43 +75,43 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | hookJob | `resume` | link | `in-clause-hooks.md#hook-resume` | `-r` hook: points back to a landmark |
 | hookJob | `zone` | frame:contrary | `contrary-to.md#contrary-to-stance` | `uom` + the stance it holds as the opposing zone; that stance is the frame's `content`, not a frame on the claim |
 | lexReading | `ordinary` | structure | `clause.md#who-acts-and-the-action` | Read by its PoS slot |
-| lexReading | `sake` | R1b | | |
+| lexReading | `sake` | frame:sake | `sakes.md#word-shape` | Met, unmet, motive, prescription. On `/th/` it is about the whole claim (`for-a-sake.md#whose-stake`); on `/ɡ/` it nests under its noun. A `bl-` is whose stake (`party`). Feeling words read here too (`how-you-feel.md#feeling-word`) |
 | lexReading | `ability` | frame:ability | `can-and-cant.md#ability` | |
-| lexReading | `greeting` | R1b | | |
+| lexReading | `greeting` | frame:force | `word-endings.md#greeting` | A greeting turn |
 | lexReading | `restrictor` | frame:occasion | `restrictors.md#only-when-never-hal` | `/h/` limits the whole clause; `/w/` limits one adjective (`restrictors.md#on-the-following-adjective-w`) |
 | lexReading | `overlay` | structure | `parser-pipeline.md#overlay-kinds` | Read by its `overlay` row |
-| lexReading | `mention` | R1b | | |
+| lexReading | `mention` | structure | `spans-as-words.md#mention` | Fills a `literal` term |
 | lexReading | `sameRole` | detail:time | `same-role-words.md#before-and-after` | `A CITE B`: before, after, while, like between two phrases of one role |
-| lexReading | `join` | R1b | | |
+| lexReading | `join` | structure | `joins.md#right-close` | Read by its `joinSeries` row |
 | lexReading | `standIn` | link | `dependents.md#dependent-clauses` | The slot a dependent fills; the dependent is a nested reading |
 | lexReading | `standInNamed` | link | `stand-in-roles.md#stand-in-roles` | |
 | lexReading | `standInBack` | link | `stand-in-vowels.md#stand-in-back` | `-rth`: points back to an earlier sentence |
-| lexReading | `listVerb` | R1b | | |
-| lexReading | `joinRelation` | R1b | | |
-| lexReading | `number` | R1b | | |
+| lexReading | `listVerb` | structure | `list-verbs.md#list-verbs` | A verb whose act is a join move (*includes*, *chooses*): fills `claim.verb`; its `/d/` is the list |
+| lexReading | `joinRelation` | detail:relation | `join-relations.md#join-relations` | *with*, *without*, *prioritizing* + `/b/` |
+| lexReading | `number` | structure | `number-roles.md#number-as-roles` | Read by PoS: on `/th/` frame:stance (`number-roles.md#number-as-stance-by-marker`, whole clause); on `/h/` detail:adverb; on `/w/` detail:degree; on a noun a `number` term (rule 7) |
 | lexReading | `unknown` | frame:unknown | | Also an `unread` entry |
 | wordFamily | `content` | structure | `phonology.md#word-edges` | Read by its `lexReading` |
-| wordFamily | `number` | R1b | | |
+| wordFamily | `number` | structure | `numbers.md#counts` | Read by `lexReading:number`; markers and endings are the term's `values` |
 | wordFamily | `x` | structure | `compounds.md#two-roots-one-word` | Read by its `xFamily` |
 | wordFamily | `hook` | structure | `hooks.md#including-am-al` | Read by its `hookJob` |
 | wordFamily | `hookCompound` | label | `hook-compounds.md#hook-compounds` | |
-| wordFamily | `joinMarker` | R1b | | |
-| wordFamily | `writingSpan` | R1b | | |
-| wordFamily | `foreign` | R1b | | |
-| wordFamily | `tag` | R1b | | |
-| wordFamily | `say` | R1b | | |
+| wordFamily | `joinMarker` | structure | `joins.md#right-close` | Closes a list; read by its `joinSeries` row |
+| wordFamily | `writingSpan` | structure | `spans.md#writing` | Read by `unit:writingSpan` |
+| wordFamily | `foreign` | label | `spans.md#loans` | A loan or opaque payload: a `literal` term |
+| wordFamily | `tag` | link | `tag-pronouns.md#tag-pronouns` | Assigns a tag, or recalls one through `anaphor:tag` |
+| wordFamily | `say` | frame:say | `permission-consent.md#say-words` | Covers the whole clause. Fixed by word shape: reach, whose say (`party`), answer, ending are `values` (`permission-consent.md#say-reach`) |
 | xFamily | `role` | label | `roles.md#role-compounds` | |
-| xFamily | `pointer` | R1b | | |
+| xFamily | `pointer` | link | `pronouns.md#role-pointers` | Read through `anaphor:pointer` |
 | xFamily | `hookPrefix` | label | `hook-compounds.md#hook-prefixes` | |
-| xFamily | `sake` | R1b | | |
+| xFamily | `sake` | frame:sake | `sakes.md#word-shape` | The sake seam; read as `lexReading:sake` |
 | xFamily | `scope` | label | `label-seams.md#label-reach` | How far a label reaches |
 | xFamily | `lateral` | label | `viewpoint.md#viewpoint-laterals` | |
 | xFamily | `holder` | frame:holder | `holder.md#holder` | Fixed by word shape: the seam sits on its stance; `party` is the holder |
 | xFamily | `ability` | frame:ability | `can-and-cant.md#ability` | Inside the verb or adjective word; reaches that word's claim |
-| xFamily | `numeric` | R1b | | |
+| xFamily | `numeric` | label | `numeric-derivation.md` | Number + `x` + root |
 | xFamily | `compound` | label | `compounds.md#two-roots-one-word` | |
-| overlay | `sake:th` | R1b |  |  |
-| overlay | `sake:w` | R1b |  |  |
+| overlay | `sake:th` | frame:sake | `sakes.md#word-shape` |  |
+| overlay | `sake:w` | frame:sake | `sakes.md#personal-possession` | adjective reach |
 | overlay | `evidential:th` | frame:stance | `knowing.md#live-vs-memory` |  |
 | overlay | `evidential:w` | frame:stance | `universality.md#mood-on-one-adjective` | adjective reach |
 | overlay | `mirative:th` | frame:mirative | `mirative.md#mirative` |  |
@@ -139,9 +140,9 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `clause_hinge:*:as-of.bookmark` | detail:time | `as-of.md#as-of` | as-of, any PoS; on `/th/` it dates the stance |
 | overlay | `cause:th` | frame:hinge | `cause.md#cause` |  |
 | overlay | `cause:w` | frame:hinge | `cause.md#cause` | adjective reach; frame by default |
-| overlay | `list_verb:v` | R1b |  |  |
-| overlay | `join_relation:g` | R1b |  |  |
-| overlay | `join_relation:h` | R1b |  |  |
+| overlay | `list_verb:v` | structure | `list-verbs.md#list-verbs` | as `lexReading:listVerb` |
+| overlay | `join_relation:g` | detail:relation | `join-relations.md#join-relations` |  |
+| overlay | `join_relation:h` | detail:relation | `join-relations.md#join-relations` |  |
 | overlay | `locative:h` | detail:place | `locative-relations.md#locative-relations` |  |
 | overlay | `locative:g` | detail:place | `locative-relations.md#locative-relations` |  |
 | overlay | `likeness:h` | detail:likeness | `clause.md#extra-nouns` |  |
@@ -150,7 +151,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `exchange:g` | detail:relation | `relations.md#exchange` |  |
 | overlay | `proxy:h` | detail:relation | `relations.md#proxy` |  |
 | overlay | `proxy:g` | detail:relation | `relations.md#proxy` |  |
-| overlay | `stimulus:g` | R1b |  |  |
+| overlay | `stimulus:g` | frame:sake | `sakes.md#personal-possession` | a sake about a noun you do not possess; nests under its noun |
 | overlay | `of_relation:h` | detail:relation | `of-relations.md#of-relations` |  |
 | overlay | `of_relation:g` | detail:relation | `of-relations.md#of-relations` |  |
 | overlay | `phasal:h` | frame:phase | `already-still-yet.md#phasal` |  |
@@ -158,42 +159,42 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `phasal:th` | frame:phase | `already-still-yet.md#phasal` |  |
 | overlay | `attempt:h` | frame:intention | `try.md#try` |  |
 | overlay | `want:th` | frame:intention | `want-and-decide.md#want` |  |
-| overlay | `pairing:w` | R1b |  |  |
-| overlay | `mention:g` | R1b |  |  |
+| overlay | `pairing:w` | link | `list-structure.md#respectively` | *Respectively*: pairs two lists' members by position |
+| overlay | `mention:g` | structure | `spans-as-words.md#mention` | fills a `literal` term |
 | overlay | `likeness:cite` | detail:likeness | `same-role-words.md#same-role-like` | same-role words |
-| joinSeries | `a` | R1b | | |
-| joinSeries | `o` | R1b | | |
-| joinSeries | `ao` | R1b | | |
-| joinSeries | `u` | R1b | | |
-| joinSeries | `ua` | R1b | | |
-| joinSeries | `uo` | R1b | | |
-| joinSeries | `e` | R1b | | |
-| joinSeries | `ae` | R1b | | |
-| joinSeries | `oe` | R1b | | |
-| joinSeries | `ue` | R1b | | |
-| anaphor | `content` | R1b | | |
-| anaphor | `number` | R1b | | |
-| anaphor | `role` | R1b | | |
-| anaphor | `pointer` | R1b | | |
-| anaphor | `tag` | R1b | | |
-| anaphor | `topic` | R1b | | |
+| joinSeries | `a` | structure | `joins.md#and-lists-a` | A list term, set *and* |
+| joinSeries | `o` | structure | `joins.md#rank-o` | A list term, rank |
+| joinSeries | `ao` | structure | `rank-joins.md#route-ao` | A list term, in order |
+| joinSeries | `u` | frame:polarity | `joins.md#negation-u` | List reach: denies only its items, so it nests in its list term (rule 2) and is never in a pair. On `/v/` it denies the verb (`verb-and-stance-joins.md#vp-clause-forms`); on `/th/` the stance words before it (`verb-and-stance-joins.md#stance-joins`) |
+| joinSeries | `ua` | frame:binder | `joins.md#everything-ua` | *Every K* / *everything but X* (`universals-domains.md#universals-domains-generics`); reaches from where it stands to the end of its sentence |
+| joinSeries | `uo` | frame:binder | `rank-joins.md#invert-u-stacks` | Ranked counterpart of `ua`; frame by default |
+| joinSeries | `e` | structure | `joins.md#choice-e` | A list term, choice |
+| joinSeries | `ae` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term |
+| joinSeries | `oe` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term |
+| joinSeries | `ue` | frame:polarity | `set-joins.md#exclusivity-and-denying-a-whole-list` | List reach, as `u`; frame by default |
+| anaphor | `content` | link | `pronouns.md#resume-r` | Whole-stem resume |
+| anaphor | `number` | link | `pronouns.md#resume-r` | A number resumed with `-r` |
+| anaphor | `role` | link | `pronouns.md#resume-r` | Resume by role compound |
+| anaphor | `pointer` | link | `pronouns.md#role-pointers` |  |
+| anaphor | `tag` | link | `tag-pronouns.md#tag-pronouns` | A bound tag names each member in turn (`universals-domains.md#bound-tags`) |
+| anaphor | `topic` | link | `topic.md#topic-pronoun` |  |
 | anaphor | `landmark` | link | `hooked-joins.md#hooked-joins` | A hooked join's landmark pointing back |
-| ask | `yesNo` | R1b | | |
-| ask | `fillAsk` | R1b | | |
-| ask | `rhetorical` | R1b | | |
-| ask | `none` | R1b | | |
-| answer | `answer` | R1b | | |
-| shared | `distribute` | R1b | | |
-| shared | `collective` | R1b | | |
-| shared | `scale` | R1b | | |
-| shared | `equative` | R1b | | |
-| shared | `kind` | R1b | | |
-| shared | `ordinary` | R1b | | |
+| ask | `yesNo` | frame:force | `questions.md#question` | `AskRecord`: the question type is a `value` of the force frame |
+| ask | `fillAsk` | frame:force | `questions.md#fill-ask` | The blank is a `blank` term |
+| ask | `rhetorical` | frame:force | `more-turn-words.md#rhetorical` |  |
+| ask | `none` | structure | `questions.md#question` | Not a question |
+| answer | `answer` | link | `questions.md#fill-ask` | A reply filling a blank |
+| shared | `distribute` | link | `list-structure.md#shared-after-the-join` | SHARED describes each member |
+| shared | `collective` | link | `collectives.md#verbs-v` | The list acts as one |
+| shared | `scale` | link | `list-structure.md#shared-after-the-join` | A shared scale word after the join |
+| shared | `equative` | link | `list-structure.md#shared-after-the-join` |  |
+| shared | `kind` | link | `universals-domains.md#universals-domains-generics` | The kind after a `ua` / `uo` fence |
+| shared | `ordinary` | link | `list-structure.md#shared-after-the-join` |  |
 | ending | `l` | label | `phonology.md#word-edges` | |
 | ending | `m` | label | `word-endings.md#abstract-m` | |
 | ending | `n` | label | `proper-names.md#name-instance--ln` | Named reference; the term's `named` |
 | ending | `ln` | label | `proper-names.md#name-instance--ln` | |
-| ending | `r` | R1b | | |
+| ending | `r` | link | `pronouns.md#resume-r` |  |
 | ending | `rl` | link | `dependents.md#dependent-clauses` | Stand-in for the dependent that follows |
 | ending | `rm` | link | `stand-in-vowels.md#stand-in` | |
 | ending | `rn` | link | `stand-in-roles.md#stand-in-roles` | |
@@ -204,33 +205,34 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | slot | `gl` | detail:adjective | `left-bound-adjectives.md#left-bound-adjectives` | |
 | slot | `asOf` | detail:time | `as-of.md#as-of` | |
 | slot | `grounds` | link | `evidentiality.md#evidence-clause` | `blarl`: the next sentence is the content of the frame it hosts on (see [links](#links)) |
-| slot | `boundJoin` | R1b | | |
-| slot | `tag` | R1b | | |
-| slot | `bar` | R1b | | |
+| slot | `boundJoin` | structure | `joins.md#standalone-phrase` | A join as a `bl-` partner (`blal` *nobody*) |
+| slot | `tag` | link | `tag-pronouns.md#tag-pronouns` | After a `zual` / `zuam` / `zul` fence it binds (`universals-domains.md#bound-tags`) |
+| slot | `bar` | frame:bar | `bars.md#bars` | Inside the rank fence: covers only the ranking, so it nests (rule 2) and is never in a pair |
+| slot | `th` | frame:attitude | `feelings.md#speaker-attitude` | **Added.** A plain `/th/` word on an ordinary root: speaker attitude (*hopefully*) and speech manner (`speech-manner.md#speech-manner`). Whole clause. No construction id yet: today it reads as `lexReading:ordinary` |
 | slot | `dependent` | structure | `dependents.md#dependent-clauses` | `Clause.dependent`: a nested reading in the stand-in's term |
-| edge | `vocative` | R1b | | |
-| edge | `interjection` | R1b | | |
-| edge | `polar` | R1b | | |
-| edge | `force` | R1b | | |
+| edge | `vocative` | frame:force | `speech-moves.md#vocative` | Names the addressee (`party`); frame by default |
+| edge | `interjection` | frame:attitude | `speech-moves.md#interjections-reactions` | A reaction |
+| edge | `polar` | link | `questions.md#polar-particle` | Replies to the yes / no question before it; a body after it is the answer |
+| edge | `force` | frame:force | `speech-moves.md#speech-act-statement-question-command` | On the turn's left edge, outside the body; firm / soft / for-now ending is a `value` (`firm-soft.md#speech-act`); a stack's first word is the act (`more-turn-words.md#stacked-acts`) |
 | edge | `hook` | link | `hooks.md#discourse-hooks` | The left-edge hook; read as `hookJob:discourse` |
-| edge | `tone` | R1b | | |
+| edge | `tone` | frame:attitude | `tone-marks.md#tone-marks` | Voice only, never the act. Reach by `tone.scope.*`: word, island, span, or the rest of the sentence |
 | body | `sentence` | structure | `clause.md#who-acts-and-the-action` | A body and its punctuation |
-| body | `fragment` | R1b | | |
-| body | `topicMarker` | R1b | | |
+| body | `fragment` | structure | `spans.md#asides-th` | A body with no clause |
+| body | `topicMarker` | link | `topic.md#topic` | Sets the topic later pronouns follow |
 | reading | `existence` | structure | `predication.md#existence` | Claim shape: no verb |
 | reading | `unsaidEvent` | structure | `predication.md#unsaid-event` | Claim shape: the verb is unsaid |
-| reading | `kind` | R1b | | |
-| reading | `amountScale` | R1b | | |
-| reading | `frequencyScale` | R1b | | |
-| reading | `bareQuestion` | R1b | | |
-| reading | `greeting` | R1b | | |
-| reading | `verbFirstItem` | R1b | | |
-| reading | `verbSharedNoun` | R1b | | |
-| reading | `fromTo` | R1b | | |
-| reading | `feelingLandmark` | R1b | | |
-| reading | `feelingStake` | R1b | | |
-| word | `plural` | R1b | | |
-| word | `hookedJoin` | R1b | | |
+| reading | `kind` | structure | `universals-domains.md#kind-reference` | A `thing` term naming the kind itself |
+| reading | `amountScale` | detail:degree | `vague-amounts.md` | frame-or-detail unclear; see report |
+| reading | `frequencyScale` | frame:occasion | `more-occasions.md` | frame by default |
+| reading | `bareQuestion` | frame:force | `questions.md#question` | No body: asks about what was just said |
+| reading | `greeting` | frame:force | `word-endings.md#greeting` |  |
+| reading | `verbFirstItem` | structure | `verb-and-stance-joins.md#vp-clause-forms` |  |
+| reading | `verbSharedNoun` | link | `verb-and-stance-joins.md#vp-clause-forms` | An argument shared by joined verbs |
+| reading | `fromTo` | detail:range | `ranges.md#ranges` |  |
+| reading | `feelingLandmark` | structure | `feelings.md#feeling-whose-stake` | The `bl-` is the urge's landmark |
+| reading | `feelingStake` | frame:sake | `feelings.md#feeling-whose-stake` | The `bl-` is whose stake (`party`); the feeling stays yours |
+| word | `plural` | label | `plurality.md#associative` | On a verb it is collective (`collectives.md#verbs-v`) |
+| word | `hookedJoin` | structure | `hooked-joins.md#hooked-joins` |  |
 | word | `rangeMember` | detail:range | `ranges.md#ranges` | |
 
 ## Links
@@ -239,12 +241,12 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 
 | Link | Record or key | Anchor |
 |------|---------------|--------|
-| Pronoun, role pointer, topic pronoun, tag | `AnaphorBind` | *R1b confirms*: `pronouns.md`, `topic.md#topic-pronoun`, `tag-pronouns.md` |
+| Pronoun, role pointer, topic pronoun, tag | `AnaphorBind` | `pronouns.md#resume-r`, `pronouns.md#role-pointers`, `topic.md#topic-pronoun`, `tag-pronouns.md#tag-pronouns` |
 | Landmark pointed back to by a hooked join | `anaphor:landmark` | `hooked-joins.md#hooked-joins` |
-| Item shared by a list's members | `SharedRecord` | *R1b confirms*: `list-structure.md` |
-| Argument shared by joined verbs | `sharedUnits` on `VpCoord` | *R1b confirms*: `verb-and-stance-joins.md#vp-clause-forms` |
-| *Respectively* pairs | | *R1b confirms*: `list-structure.md#respectively` |
-| Reply filling a blank | `AnswerRecord` | *R1b confirms*: `questions.md#fill-ask` |
+| Item shared by a list's members | `SharedRecord` | `list-structure.md#shared-after-the-join` |
+| Argument shared by joined verbs | `sharedUnits` on `VpCoord` | `verb-and-stance-joins.md#vp-clause-forms`; `reading:verbSharedNoun` |
+| *Respectively* pairs | `overlay:pairing:w` | `list-structure.md#respectively` |
+| Reply filling a blank | `AnswerRecord` | `questions.md#fill-ask` |
 | Stand-in to the dependent it stands for | `lexReading:standIn`, `ending:rl` / `rm` / `rn` | `dependents.md#dependent-clauses`, `stand-in-vowels.md#stand-in`, `stand-in-roles.md#stand-in-roles` |
 | Stand-in pointing back to an earlier sentence | `ending:rth` | `stand-in-vowels.md#stand-in-back` |
 | Sentence linker to the one sentence before it | `unit:linker` | `sentence-linkers.md#sentence-linkers` |
@@ -254,7 +256,11 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | **Added:** frame content in the next sentence (`blarl`): a hinge's condition, a channel's grounds | `slot:grounds` | `causation.md#if`, `dependents.md#hinges`, `evidentiality.md#evidence-clause` |
 | **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences | | `evidentiality.md#carry-forward`, `holder.md#holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#dated-channel` |
 
-The last two shape the reading: a hinge whose condition is `blarl` gets that next sentence's reading as its `content` through the link, and a carried frame appears on a later reading as a link to the reading that set it, never as a copied frame.
+| **Added:** a polar word replying to the yes / no question before it | `edge:polar` | `questions.md#polar-particle` |
+| **Added:** a bound tag, naming each member of a `zual` / `zuam` fence in turn, to the end of its sentence and through the stand-ins in it | `slot:tag`, `anaphor:tag` | `universals-domains.md#bound-tags` |
+| **Added:** a topic set by an `/x/` word, which later pronouns follow | `body:topicMarker` | `topic.md#topic` |
+
+The grounds link and the carried frame shape the reading: a hinge whose condition is `blarl` gets that next sentence's reading as its `content` through the link, and a carried frame appears on a later reading as a link to the reading that set it, never as a copied frame.
 
 ## Scope statements
 
@@ -355,6 +361,77 @@ No sentence states an order against another frame.
 - `more-occasions.md#occasions-vs-a-dependent-when` (against `hinge`): "A restrictor lists occasion words; a whole sentence as the occasion takes a hinge word and **`blarl`**."
 - See `stance` and `holder` above for the statements against `occasion`.
 
+### force
+
+**Whole clause:** the act word, on the turn's left edge outside the body. Every frame in the body sits under it in the tree (rule 2).
+
+- `speech-moves.md#speech-act-statement-question-command`: "Each turn does one thing: it states, asks, commands, or forbids."
+- `more-turn-words.md#stacked-acts` (within the family): "the *first* is what you really do, and the *second* is how it sounds."
+- `quote-contents.md#quote-acts` (against `quote`): "The outer sentence is still your claim (*said*), and `yel` or `yol` belongs to the quoted talk."
+- `spans.md#asides-th` (against an aside): "a clause with the same speech act as the outer sentence (both statements, both questions, or both commands)."
+- `questions.md#embedded-whether` (against a dependent): "The whole sentence is still a statement, so do not write `yel` at its start."
+- `tone-marks.md#tone-marks` (against `attitude`): "It never changes the speech act (that is the act word's job)".
+- See `hinge`, `stance`, `holder`, and `intention` above for the statements against `force`.
+
+### polarity
+
+**Whole clause:** none. A `u` join denies only its list, so it nests in its term and every whole-clause frame on the clause sits over it.
+
+- `joins.md#negation-u`: "Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing."
+- `verb-and-stance-joins.md#stance-joins` (against `stance`, `hinge`): "The join works only on the stance words before it, so the claim itself still stands and only its grounds are denied or ranked."
+- `universals-domains.md#not-every` (against `binder`): "Where the denial goes changes the claim:" (`zual gogozel zul` is *not every cat*).
+
+### say
+
+**Whole clause:** the say word on `/h/`.
+
+- `permission-consent.md#say-words`: "like an [intention adverb](/can-and-cant#intention-adverbs), it covers the whole clause."
+
+No sentence states an order against another frame.
+
+### sake
+
+**Whole clause:** met, unmet, prescription and motive on the clause (`/th/`). On `/ɡ/` a sake word nests under its noun; inside a rank fence it is a bar.
+
+- `bars.md#sake-bars`: "the same met word after the fence is about the whole claim".
+- `for-a-sake.md#whose-stake`: "what the act serves is your stake, as you see it. A `/b/` names whose stake the act serves, not whose reason it is."
+- `feelings.md#feeling-whose-stake`: "the need is theirs, and the feeling is yours."
+- See `holder` above for the statement against `holder`.
+
+### attitude
+
+**Whole clause:** speaker attitude and speech manner on `/th/`; a tone mark at the start of the sentence; an interjection.
+
+- `feelings.md#speaker-attitude`: "It is always the speaker's attitude, never the subject's, so it never says that the subject feels it."
+- Same section (against `stance`): "Hope says how you feel about the claim; the channel says what backs it."
+- `speech-manner.md#speech-manner`: "Like any stance word, it may sit anywhere in the sentence; the start is usual."
+- `tone-marks.md#tone-marks` (within the family): "A stack has no spaces and its order does not matter".
+- See `holder` above: speaker attitudes stay yours.
+
+### bar
+
+**Whole clause:** none. A bar sits inside its rank fence.
+
+- `bars.md#channel-bars` (against `holder`): "Inside the fence the seam covers only the bar: the ranking itself is still your claim."
+- `bars.md#bars`: "The same stance word after the fence has its ordinary reading, a stance on the whole sentence."
+
+### quote
+
+**Whole clause:** none on the outer clause. The quoted words are a nested reading.
+
+- `quote-contents.md#quote-acts`: "A quoted question or command keeps its own act word inside the cite, the same way it keeps a tone mark."
+- See `stance` above: "A quote keeps its speaker's frame".
+
+### binder
+
+**Whole clause:** a `ua` / `uo` fence and a phrase that brings in a new member each reach from where they stand to the end of the sentence, and on through a stand-in in it.
+
+- `joins.md#everything-ua` (within the family): "So when a clause has two of them, the earlier one covers the later one, and moving a phrase to the front chooses which."
+- `universals-domains.md#bound-tags`: "A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to".
+- `universals-domains.md#not-every` (against `polarity`): see `polarity`.
+- See `hinge` and `stance` above (`usually-vs-must.md#generalization`) for the statements against `hinge` and `stance`.
+- What a universal commits to: closed `zual` claims no exceptions; open `zuam` "leaves the list of exceptions open … you only do not rule them out" (`universals-domains.md#not-every`).
+
 ## Reader rules
 
 1. **One reading per clause.** A `BodyClause` gives one. A clause join gives one per member, held by a list term. A dependent, a hinge's clause, an island, and a quote give nested readings in `content`.
@@ -368,7 +445,137 @@ No sentence states an order against another frame.
 
 ## Pair table
 
-R1b fills this table once every family is fixed.
+One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`: fixed by a rule; `attitude` tone marks: commute), except `stance` × `stance`, which has a row. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders: outside binders (`joins.md#everything-ua`) no page ties scope to text order, so each sample has both readings.
+
+Counts: fixed by a rule 25, unsettled 83, commutes 10, fixed by word shape 3.
+
+| Pair | Kind | Anchor | Note |
+|------|------|--------|------|
+| `force` × `say` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `sake` | unsettled |  | In a question: is the stake still yours, or asked of the listener, as a channel's grounds are (`want-and-decide.md#whose-intention`)? Samples: `yel zazozon vowurol thobatham.` (y-question | z-Azozon | v-walk | th-physical-met-any-term); `yel thobatham zazozon vowurol.` (y-question | th-physical-met-any-term | z-Azozon | v-walk). Readings: *does Azozon walking serve your health?* / *does Azozon walk? (that would serve my health)* |
+| `force` × `attitude` | unsettled |  | In a question: is the hope still yours, or asked of the listener, as a channel's grounds are (`want-and-decide.md#whose-intention`)? Samples: `yel zazozon vowurol thuwuyom.` (y-question | z-Azozon | v-walk | th-hope); `yel thuwuyom zazozon vowurol.` (y-question | th-hope | z-Azozon | v-walk). Readings: *do you hope Azozon walks?* / *does Azozon walk? (I hope so)* |
+| `force` × `binder` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `hinge` | fixed by a rule | `causation.md#if` | Force over hinge: on a command, *if* limits the instruction |
+| `force` × `stance` | fixed by a rule | `want-and-decide.md#whose-intention` | Force over stance: a channel in a question asks about the listener's grounds |
+| `force` × `holder` | fixed by a rule | `holder.md#holder` | Force over holder: speech moves stay yours |
+| `force` × `intention` | fixed by a rule | `want-and-decide.md#whose-intention` | Force over intention: in a question a bare WANT, PLAN or DECISION asks about the listener's mind |
+| `force` × `ability` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `phase` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `residue` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `notional` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `mirative` | unsettled |  | In a question: is the surprise still yours, or asked of the listener, as a channel's grounds are (`want-and-decide.md#whose-intention`)? Samples: `yel zazozon vowurol themem.` (y-question | z-Azozon | v-walk | th-MIRATIVE); `yel themem zazozon vowurol.` (y-question | th-MIRATIVE | z-Azozon | v-walk). Readings: *did it surprise you that Azozon walks?* / *does Azozon walk? (that surprises me)* |
+| `force` × `contrary` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `force` × `occasion` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |
+| `say` × `sake` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol thobatham.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | th-physical-met-any-term); `thobatham zazozon vowurol hwuvam.` (th-physical-met-any-term | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that Azozon walks, and that serves my health* / *it is allowed that Azozon walks, and that serves my health* |
+| `say` × `attitude` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol thuwuyom.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | th-hope); `thuwuyom zazozon vowurol hwuvam.` (th-hope | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that hopefully Azozon walks* / *hopefully it is allowed that Azozon walks* |
+| `say` × `binder` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zual godozel vowurol.` (h-episode-event-ALLOW-said | [z-everything | g-dog] | v-walk); `zual godozel vowurol hwuvam.` ([z-everything | g-dog] | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that every dog walks* / *for every dog: it is allowed that the dog walks* |
+| `say` × `hinge` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol thohem blarl. zalazun vezuyol.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol hwuvam. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | h-episode-event-ALLOW-said . z-Alazun | v-tell). Readings: *it is allowed that if Alazun talks, Azozon walks* / *if Alazun talks, it is allowed that Azozon walks* |
+| `say` × `stance` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol thomam.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | th-MAY); `thomam zazozon vowurol hwuvam.` (th-MAY | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that possibly Azozon walks* / *possibly it is allowed that Azozon walks* |
+| `say` × `holder` | fixed by a rule | `holder.md#holder` | Holder over it: "The holder covers its clause and any dependent sentence inside it" |
+| `say` × `intention` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol thagom.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | th-plan-itinerary); `thagom zazozon vowurol hwuvam.` (th-plan-itinerary | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that I plan that Azozon walks* / *I plan that it is allowed that Azozon walks* |
+| `say` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol hodam.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | h-ABIL); `hodam zazozon vowurol hwuvam.` (h-ABIL | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that it is within reach that Azozon walks* / *it is within reach that it is allowed that Azozon walks* |
+| `say` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol havem.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | h-already); `havem zazozon vowurol hwuvam.` (h-already | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that already Azozon walks* / *already it is allowed that Azozon walks* |
+| `say` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol haram.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol hwuvam.` (h-RESIDUE | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that Azozon walks, and the outcome is still in effect* / *it is allowed that Azozon walks, and the outcome is still in effect* |
+| `say` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol theyum.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol hwuvam.` (th-NOTIONAL | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that as if Azozon walks* / *as if it is allowed that Azozon walks* |
+| `say` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol themem.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | th-MIRATIVE); `themem zazozon vowurol hwuvam.` (th-MIRATIVE | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that surprisingly Azozon walks* / *surprisingly it is allowed that Azozon walks* |
+| `say` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol uom thagom.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]); `uom thagom zazozon vowurol hwuvam.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that Azozon walks, contrary to plan* / *it is allowed that Azozon walks, contrary to plan* |
+| `say` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hwuvam zazozon vowurol hual.` (h-episode-event-ALLOW-said | z-Azozon | v-walk | h-always); `hual zazozon vowurol hwuvam.` (h-always | z-Azozon | v-walk | h-episode-event-ALLOW-said). Readings: *it is allowed that always Azozon walks* / *always it is allowed that Azozon walks* |
+| `sake` × `attitude` | commutes | `mirative.md#mirative`, `feelings.md#speaker-attitude`, `for-a-sake.md#whose-stake`, `contrary-to.md#contrary-to-stance` | Both are your remarks on the bare claim, each "about the whole claim", and neither changes what is claimed |
+| `sake` × `binder` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zual godozel vowurol.` (th-physical-met-any-term | [z-everything | g-dog] | v-walk); `zual godozel vowurol thobatham.` ([z-everything | g-dog] | v-walk | th-physical-met-any-term). Readings: *every dog walks, and that serves my health* / *for every dog: the dog walks, and that serves my health* |
+| `sake` × `hinge` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol thohem blarl. zalazun vezuyol.` (th-physical-met-any-term | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol thobatham. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | th-physical-met-any-term . z-Alazun | v-tell). Readings: *if Alazun talks, Azozon walks, and that serves my health* / *if Alazun talks, Azozon walks, and that serves my health* |
+| `sake` × `stance` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol thomam.` (th-physical-met-any-term | z-Azozon | v-walk | th-MAY); `thomam zazozon vowurol thobatham.` (th-MAY | z-Azozon | v-walk | th-physical-met-any-term). Readings: *possibly Azozon walks, and that serves my health* / *possibly Azozon walks, and that serves my health* |
+| `sake` × `holder` | fixed by a rule | `holder.md#holder` | A sake word before the holder is yours, after it the holder's |
+| `sake` × `intention` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol thagom.` (th-physical-met-any-term | z-Azozon | v-walk | th-plan-itinerary); `thagom zazozon vowurol thobatham.` (th-plan-itinerary | z-Azozon | v-walk | th-physical-met-any-term). Readings: *I plan that Azozon walks, and that serves my health* / *I plan that Azozon walks, and that serves my health* |
+| `sake` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol hodam.` (th-physical-met-any-term | z-Azozon | v-walk | h-ABIL); `hodam zazozon vowurol thobatham.` (h-ABIL | z-Azozon | v-walk | th-physical-met-any-term). Readings: *it is within reach that Azozon walks, and that serves my health* / *it is within reach that Azozon walks, and that serves my health* |
+| `sake` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol havem.` (th-physical-met-any-term | z-Azozon | v-walk | h-already); `havem zazozon vowurol thobatham.` (h-already | z-Azozon | v-walk | th-physical-met-any-term). Readings: *already Azozon walks, and that serves my health* / *already Azozon walks, and that serves my health* |
+| `sake` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol haram.` (th-physical-met-any-term | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol thobatham.` (h-RESIDUE | z-Azozon | v-walk | th-physical-met-any-term). Readings: *Azozon walks, and the outcome is still in effect, and that serves my health* / *Azozon walks, and that serves my health, and the outcome is still in effect* |
+| `sake` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol theyum.` (th-physical-met-any-term | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol thobatham.` (th-NOTIONAL | z-Azozon | v-walk | th-physical-met-any-term). Readings: *as if Azozon walks, and that serves my health* / *as if Azozon walks, and that serves my health* |
+| `sake` × `mirative` | commutes | `mirative.md#mirative`, `feelings.md#speaker-attitude`, `for-a-sake.md#whose-stake`, `contrary-to.md#contrary-to-stance` | Both are your remarks on the bare claim, each "about the whole claim", and neither changes what is claimed |
+| `sake` × `contrary` | commutes | `mirative.md#mirative`, `feelings.md#speaker-attitude`, `for-a-sake.md#whose-stake`, `contrary-to.md#contrary-to-stance` | Both are your remarks on the bare claim, each "about the whole claim", and neither changes what is claimed |
+| `sake` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thobatham zazozon vowurol hual.` (th-physical-met-any-term | z-Azozon | v-walk | h-always); `hual zazozon vowurol thobatham.` (h-always | z-Azozon | v-walk | th-physical-met-any-term). Readings: *always Azozon walks, and that serves my health* / *always Azozon walks, and that serves my health* |
+| `attitude` × `binder` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zual godozel vowurol.` (th-hope | [z-everything | g-dog] | v-walk); `zual godozel vowurol thuwuyom.` ([z-everything | g-dog] | v-walk | th-hope). Readings: *hopefully every dog walks* / *for every dog: hopefully the dog walks* |
+| `attitude` × `hinge` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol thohem blarl. zalazun vezuyol.` (th-hope | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol thuwuyom. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | th-hope . z-Alazun | v-tell). Readings: *hopefully if Alazun talks, Azozon walks* / *if Alazun talks, hopefully Azozon walks* |
+| `attitude` × `stance` | commutes | `feelings.md#speaker-attitude` | Each does its own job on the claim: "Hope says how you feel about the claim; the channel says what backs it" |
+| `attitude` × `holder` | fixed by a rule | `holder.md#holder` | Attitude stays yours: it is not under the holder |
+| `attitude` × `intention` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol thagom.` (th-hope | z-Azozon | v-walk | th-plan-itinerary); `thagom zazozon vowurol thuwuyom.` (th-plan-itinerary | z-Azozon | v-walk | th-hope). Readings: *hopefully I plan that Azozon walks* / *I plan that hopefully Azozon walks* |
+| `attitude` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol hodam.` (th-hope | z-Azozon | v-walk | h-ABIL); `hodam zazozon vowurol thuwuyom.` (h-ABIL | z-Azozon | v-walk | th-hope). Readings: *hopefully it is within reach that Azozon walks* / *it is within reach that hopefully Azozon walks* |
+| `attitude` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol havem.` (th-hope | z-Azozon | v-walk | h-already); `havem zazozon vowurol thuwuyom.` (h-already | z-Azozon | v-walk | th-hope). Readings: *hopefully already Azozon walks* / *already hopefully Azozon walks* |
+| `attitude` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol haram.` (th-hope | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol thuwuyom.` (h-RESIDUE | z-Azozon | v-walk | th-hope). Readings: *hopefully Azozon walks, and the outcome is still in effect* / *hopefully Azozon walks, and the outcome is still in effect* |
+| `attitude` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol theyum.` (th-hope | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol thuwuyom.` (th-NOTIONAL | z-Azozon | v-walk | th-hope). Readings: *hopefully as if Azozon walks* / *as if hopefully Azozon walks* |
+| `attitude` × `mirative` | commutes | `mirative.md#mirative`, `feelings.md#speaker-attitude`, `for-a-sake.md#whose-stake`, `contrary-to.md#contrary-to-stance` | Both are your remarks on the bare claim, each "about the whole claim", and neither changes what is claimed |
+| `attitude` × `contrary` | commutes | `mirative.md#mirative`, `feelings.md#speaker-attitude`, `for-a-sake.md#whose-stake`, `contrary-to.md#contrary-to-stance` | Both are your remarks on the bare claim, each "about the whole claim", and neither changes what is claimed |
+| `attitude` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thuwuyom zazozon vowurol hual.` (th-hope | z-Azozon | v-walk | h-always); `hual zazozon vowurol thuwuyom.` (h-always | z-Azozon | v-walk | th-hope). Readings: *hopefully always Azozon walks* / *always hopefully Azozon walks* |
+| `binder` × `hinge` | fixed by a rule | `usually-vs-must.md#generalization` | Binder over hinge: the hinge holds for each member |
+| `binder` × `stance` | unsettled | `usually-vs-must.md#generalization` | A channel covers the whole generalization (fixed by a rule). Not stated for MAY: unsettled. `joins.md#everything-ua` puts later words inside the binder, while a stance covers the clause wherever it sits. Samples: `thomam zual godozel vowurol.` (th-MAY | [z-everything | g-dog] | v-walk); `zual godozel vowurol thomam.` ([z-everything | g-dog] | v-walk | th-MAY). Readings: *possibly every dog walks* / *for every dog: possibly the dog walks* |
+| `binder` × `holder` | fixed by a rule | `holder.md#holder` | Holder over it: "The holder covers its clause and any dependent sentence inside it" |
+| `binder` × `intention` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zual godozel vowurol.` (th-plan-itinerary | [z-everything | g-dog] | v-walk); `zual godozel vowurol thagom.` ([z-everything | g-dog] | v-walk | th-plan-itinerary). Readings: *I plan that every dog walks* / *for every dog: I plan that the dog walks* |
+| `binder` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zual godozel vowurol.` (h-ABIL | [z-everything | g-dog] | v-walk); `zual godozel vowurol hodam.` ([z-everything | g-dog] | v-walk | h-ABIL). Readings: *it is within reach that every dog walks* / *for every dog: it is within reach that the dog walks* |
+| `binder` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zual godozel vowurol.` (h-already | [z-everything | g-dog] | v-walk); `zual godozel vowurol havem.` ([z-everything | g-dog] | v-walk | h-already). Readings: *already every dog walks* / *for every dog: already the dog walks* |
+| `binder` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `haram zual godozel vowurol.` (h-RESIDUE | [z-everything | g-dog] | v-walk); `zual godozel vowurol haram.` ([z-everything | g-dog] | v-walk | h-RESIDUE). Readings: *every dog walks, and the outcome is still in effect* / *for every dog: the dog walks, and the outcome is still in effect* |
+| `binder` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `theyum zual godozel vowurol.` (th-NOTIONAL | [z-everything | g-dog] | v-walk); `zual godozel vowurol theyum.` ([z-everything | g-dog] | v-walk | th-NOTIONAL). Readings: *as if every dog walks* / *for every dog: as if the dog walks* |
+| `binder` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `themem zual godozel vowurol.` (th-MIRATIVE | [z-everything | g-dog] | v-walk); `zual godozel vowurol themem.` ([z-everything | g-dog] | v-walk | th-MIRATIVE). Readings: *surprisingly every dog walks* / *for every dog: surprisingly the dog walks* |
+| `binder` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `uom thagom zual godozel vowurol.` ([contrary-to | th-plan-itinerary] | [z-everything | g-dog] | v-walk); `zual godozel vowurol uom thagom.` ([z-everything | g-dog] | v-walk | [contrary-to | th-plan-itinerary]). Readings: *every dog walks, contrary to plan* / *for every dog: the dog walks, contrary to plan* |
+| `binder` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hual zual godozel vowurol.` (h-always | [z-everything | g-dog] | v-walk); `zual godozel vowurol hual.` ([z-everything | g-dog] | v-walk | h-always). Readings: *always every dog walks* / *for every dog: always the dog walks* |
+| `hinge` × `stance` | unsettled | `evidentiality.md#evidence-clause` | A channel goes before the hinge and covers it (fixed by a rule). Not stated for MAY or a stance number: unsettled. Samples: `thomam zazozon vowurol thohem blarl. zalazun vezuyol.` (th-MAY | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol thomam. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | th-MAY . z-Alazun | v-tell). Readings: *if Alazun talks, possibly Azozon walks* / *possibly if Alazun talks, Azozon walks* |
+| `hinge` × `holder` | fixed by a rule | `holder.md#holder` | *So that* after a holder is the holder's, alone it is yours |
+| `hinge` × `intention` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol thohem blarl. zalazun vezuyol.` (th-plan-itinerary | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol thagom. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | th-plan-itinerary . z-Alazun | v-tell). Readings: *if Alazun talks, I plan that Azozon walks* / *I plan that if Alazun talks, Azozon walks* |
+| `hinge` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol thohem blarl. zalazun vezuyol.` (h-ABIL | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol hodam. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | h-ABIL . z-Alazun | v-tell). Readings: *if Alazun talks, it is within reach that Azozon walks* / *it is within reach that if Alazun talks, Azozon walks* |
+| `hinge` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zazozon vowurol thohem blarl. zalazun vezuyol.` (h-already | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol havem. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | h-already . z-Alazun | v-tell). Readings: *if Alazun talks, already Azozon walks* / *already if Alazun talks, Azozon walks* |
+| `hinge` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `haram zazozon vowurol thohem blarl. zalazun vezuyol.` (h-RESIDUE | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol haram. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | h-RESIDUE . z-Alazun | v-tell). Readings: *if Alazun talks, Azozon walks, and the outcome is still in effect* / *if Alazun talks, Azozon walks, and the outcome is still in effect* |
+| `hinge` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `theyum zazozon vowurol thohem blarl. zalazun vezuyol.` (th-NOTIONAL | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol theyum. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | th-NOTIONAL . z-Alazun | v-tell). Readings: *if Alazun talks, as if Azozon walks* / *as if if Alazun talks, Azozon walks* |
+| `hinge` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `themem zazozon vowurol thohem blarl. zalazun vezuyol.` (th-MIRATIVE | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol themem. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | th-MIRATIVE . z-Alazun | v-tell). Readings: *if Alazun talks, surprisingly Azozon walks* / *surprisingly if Alazun talks, Azozon walks* |
+| `hinge` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `uom thagom zazozon vowurol thohem blarl. zalazun vezuyol.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | [th-if | bl-that-clause] . z-Alazun | v-tell); `zazozon thohem blarl vowurol uom thagom. zalazun vezuyol.` (z-Azozon | [th-if | bl-that-clause] | v-walk | [contrary-to | th-plan-itinerary] . z-Alazun | v-tell). Readings: *if Alazun talks, Azozon walks, contrary to plan* / *if Alazun talks, Azozon walks, contrary to plan* |
+| `hinge` × `occasion` | fixed by a rule | `usually-vs-must.md#generalization` | Occasion over hinge: the hinge holds for each occasion |
+| `stance` × `holder` | fixed by word shape | `holder.md#holder` | The seam sits on its stance |
+| `stance` × `intention` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thomam zazozon vowurol thagom.` (th-MAY | z-Azozon | v-walk | th-plan-itinerary); `thagom zazozon vowurol thomam.` (th-plan-itinerary | z-Azozon | v-walk | th-MAY). Readings: *possibly I plan that Azozon walks* / *I plan that possibly Azozon walks* |
+| `stance` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thomam zazozon vowurol hodam.` (th-MAY | z-Azozon | v-walk | h-ABIL); `hodam zazozon vowurol thomam.` (h-ABIL | z-Azozon | v-walk | th-MAY). Readings: *possibly it is within reach that Azozon walks* / *it is within reach that possibly Azozon walks* |
+| `stance` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thomam zazozon vowurol havem.` (th-MAY | z-Azozon | v-walk | h-already); `havem zazozon vowurol thomam.` (h-already | z-Azozon | v-walk | th-MAY). Readings: *possibly already Azozon walks* / *already possibly Azozon walks* |
+| `stance` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thomam zazozon vowurol haram.` (th-MAY | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol thomam.` (h-RESIDUE | z-Azozon | v-walk | th-MAY). Readings: *possibly Azozon walks, and the outcome is still in effect* / *possibly Azozon walks, and the outcome is still in effect* |
+| `stance` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thomam zazozon vowurol theyum.` (th-MAY | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol thomam.` (th-NOTIONAL | z-Azozon | v-walk | th-MAY). Readings: *possibly as if Azozon walks* / *as if possibly Azozon walks* |
+| `stance` × `mirative` | commutes | `mirative.md#mirative` | MIRATIVE "is not a channel"; the page adds a channel beside it, each on the whole claim |
+| `stance` × `contrary` | commutes | `contrary-to.md#contrary-to-stance` | "A stance anywhere else in the clause still applies to the claim" |
+| `stance` × `occasion` | unsettled | `usually-vs-must.md#generalization` | A channel covers the whole generalization (fixed by a rule). Not stated for MAY: unsettled. Samples: `thomam zazozon vowurol hual.` (th-MAY | z-Azozon | v-walk | h-always); `hual zazozon vowurol thomam.` (h-always | z-Azozon | v-walk | th-MAY). Readings: *possibly always Azozon walks* / *always possibly Azozon walks* |
+| `holder` × `intention` | fixed by word shape | `want-and-decide.md#whose-intention` | The seam sits on WANT, PLAN or DECISION |
+| `holder` × `ability` | fixed by a rule | `holder.md#holder` | Holder over it: "The holder covers its clause and any dependent sentence inside it" |
+| `holder` × `phase` | fixed by a rule | `holder.md#holder` | Holder over it: "The holder covers its clause and any dependent sentence inside it" |
+| `holder` × `residue` | fixed by a rule | `holder.md#holder` | Holder over it: "The holder covers its clause and any dependent sentence inside it" |
+| `holder` × `notional` | fixed by word shape | `notional.md#follow-up-endings-notional` | The seam sits on NOTIONAL |
+| `holder` × `mirative` | fixed by a rule | `holder.md#holder` | Holder over it: "The holder covers its clause and any dependent sentence inside it" |
+| `holder` × `contrary` | fixed by a rule | `contrary-to.md#contrary-to-holder` | A holder after `uom` covers only that pair; the event is still your claim |
+| `holder` × `occasion` | fixed by a rule | `holder.md#holder` | Under MEMORY, *never* / *always* cover only the times you both remember |
+| `intention` × `ability` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol hodam.` (th-plan-itinerary | z-Azozon | v-walk | h-ABIL); `hodam zazozon vowurol thagom.` (h-ABIL | z-Azozon | v-walk | th-plan-itinerary). Readings: *I plan that it is within reach that Azozon walks* / *it is within reach that I plan that Azozon walks* |
+| `intention` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol havem.` (th-plan-itinerary | z-Azozon | v-walk | h-already); `havem zazozon vowurol thagom.` (h-already | z-Azozon | v-walk | th-plan-itinerary). Readings: *I plan that already Azozon walks* / *already I plan that Azozon walks* |
+| `intention` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol haram.` (th-plan-itinerary | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol thagom.` (h-RESIDUE | z-Azozon | v-walk | th-plan-itinerary). Readings: *I plan that Azozon walks, and the outcome is still in effect* / *I plan that Azozon walks, and the outcome is still in effect* |
+| `intention` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol theyum.` (th-plan-itinerary | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol thagom.` (th-NOTIONAL | z-Azozon | v-walk | th-plan-itinerary). Readings: *I plan that as if Azozon walks* / *as if I plan that Azozon walks* |
+| `intention` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol themem.` (th-plan-itinerary | z-Azozon | v-walk | th-MIRATIVE); `themem zazozon vowurol thagom.` (th-MIRATIVE | z-Azozon | v-walk | th-plan-itinerary). Readings: *I plan that surprisingly Azozon walks* / *surprisingly I plan that Azozon walks* |
+| `intention` × `contrary` | commutes | `contrary-to.md#contrary-to-stance` | As with a stance: only the word after `uom` is what the event goes against |
+| `intention` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `thagom zazozon vowurol hual.` (th-plan-itinerary | z-Azozon | v-walk | h-always); `hual zazozon vowurol thagom.` (h-always | z-Azozon | v-walk | th-plan-itinerary). Readings: *I plan that always Azozon walks* / *always I plan that Azozon walks* |
+| `ability` × `phase` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol havem.` (h-ABIL | z-Azozon | v-walk | h-already); `havem zazozon vowurol hodam.` (h-already | z-Azozon | v-walk | h-ABIL). Readings: *it is within reach that already Azozon walks* / *already it is within reach that Azozon walks* |
+| `ability` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol haram.` (h-ABIL | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol hodam.` (h-RESIDUE | z-Azozon | v-walk | h-ABIL). Readings: *it is within reach that Azozon walks, and the outcome is still in effect* / *it is within reach that Azozon walks, and the outcome is still in effect* |
+| `ability` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol theyum.` (h-ABIL | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol hodam.` (th-NOTIONAL | z-Azozon | v-walk | h-ABIL). Readings: *it is within reach that as if Azozon walks* / *as if it is within reach that Azozon walks* |
+| `ability` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol themem.` (h-ABIL | z-Azozon | v-walk | th-MIRATIVE); `themem zazozon vowurol hodam.` (th-MIRATIVE | z-Azozon | v-walk | h-ABIL). Readings: *it is within reach that surprisingly Azozon walks* / *surprisingly it is within reach that Azozon walks* |
+| `ability` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol uom thagom.` (h-ABIL | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]); `uom thagom zazozon vowurol hodam.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | h-ABIL). Readings: *it is within reach that Azozon walks, contrary to plan* / *it is within reach that Azozon walks, contrary to plan* |
+| `ability` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `hodam zazozon vowurol hual.` (h-ABIL | z-Azozon | v-walk | h-always); `hual zazozon vowurol hodam.` (h-always | z-Azozon | v-walk | h-ABIL). Readings: *it is within reach that always Azozon walks* / *always it is within reach that Azozon walks* |
+| `phase` × `residue` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zazozon vowurol haram.` (h-already | z-Azozon | v-walk | h-RESIDUE); `haram zazozon vowurol havem.` (h-RESIDUE | z-Azozon | v-walk | h-already). Readings: *already Azozon walks, and the outcome is still in effect* / *already Azozon walks, and the outcome is still in effect* |
+| `phase` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zazozon vowurol theyum.` (h-already | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol havem.` (th-NOTIONAL | z-Azozon | v-walk | h-already). Readings: *already as if Azozon walks* / *as if already Azozon walks* |
+| `phase` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zazozon vowurol themem.` (h-already | z-Azozon | v-walk | th-MIRATIVE); `themem zazozon vowurol havem.` (th-MIRATIVE | z-Azozon | v-walk | h-already). Readings: *already surprisingly Azozon walks* / *surprisingly already Azozon walks* |
+| `phase` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zazozon vowurol uom thagom.` (h-already | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]); `uom thagom zazozon vowurol havem.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | h-already). Readings: *already Azozon walks, contrary to plan* / *already Azozon walks, contrary to plan* |
+| `phase` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `havem zazozon vowurol hual.` (h-already | z-Azozon | v-walk | h-always); `hual zazozon vowurol havem.` (h-always | z-Azozon | v-walk | h-already). Readings: *already always Azozon walks* / *always already Azozon walks* |
+| `residue` × `notional` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `haram zazozon vowurol theyum.` (h-RESIDUE | z-Azozon | v-walk | th-NOTIONAL); `theyum zazozon vowurol haram.` (th-NOTIONAL | z-Azozon | v-walk | h-RESIDUE). Readings: *as if Azozon walks, and the outcome is still in effect* / *as if Azozon walks, and the outcome is still in effect* |
+| `residue` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `haram zazozon vowurol themem.` (h-RESIDUE | z-Azozon | v-walk | th-MIRATIVE); `themem zazozon vowurol haram.` (th-MIRATIVE | z-Azozon | v-walk | h-RESIDUE). Readings: *surprisingly Azozon walks, and the outcome is still in effect* / *surprisingly Azozon walks, and the outcome is still in effect* |
+| `residue` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `haram zazozon vowurol uom thagom.` (h-RESIDUE | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]); `uom thagom zazozon vowurol haram.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | h-RESIDUE). Readings: *Azozon walks, contrary to plan, and the outcome is still in effect* / *Azozon walks, and the outcome is still in effect, contrary to plan* |
+| `residue` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `haram zazozon vowurol hual.` (h-RESIDUE | z-Azozon | v-walk | h-always); `hual zazozon vowurol haram.` (h-always | z-Azozon | v-walk | h-RESIDUE). Readings: *always Azozon walks, and the outcome is still in effect* / *always Azozon walks, and the outcome is still in effect* |
+| `notional` × `mirative` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `theyum zazozon vowurol themem.` (th-NOTIONAL | z-Azozon | v-walk | th-MIRATIVE); `themem zazozon vowurol theyum.` (th-MIRATIVE | z-Azozon | v-walk | th-NOTIONAL). Readings: *as if surprisingly Azozon walks* / *surprisingly as if Azozon walks* |
+| `notional` × `contrary` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `theyum zazozon vowurol uom thagom.` (th-NOTIONAL | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]); `uom thagom zazozon vowurol theyum.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | th-NOTIONAL). Readings: *as if Azozon walks, contrary to plan* / *as if Azozon walks, contrary to plan* |
+| `notional` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `theyum zazozon vowurol hual.` (th-NOTIONAL | z-Azozon | v-walk | h-always); `hual zazozon vowurol theyum.` (h-always | z-Azozon | v-walk | th-NOTIONAL). Readings: *as if always Azozon walks* / *always as if Azozon walks* |
+| `mirative` × `contrary` | commutes | `mirative.md#mirative`, `feelings.md#speaker-attitude`, `for-a-sake.md#whose-stake`, `contrary-to.md#contrary-to-stance` | Both are your remarks on the bare claim, each "about the whole claim", and neither changes what is claimed |
+| `mirative` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `themem zazozon vowurol hual.` (th-MIRATIVE | z-Azozon | v-walk | h-always); `hual zazozon vowurol themem.` (h-always | z-Azozon | v-walk | th-MIRATIVE). Readings: *surprisingly always Azozon walks* / *always surprisingly Azozon walks* |
+| `contrary` × `occasion` | unsettled |  | No sentence orders them, and the two orders give different claims. Samples: `uom thagom zazozon vowurol hual.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | h-always); `hual zazozon vowurol uom thagom.` (h-always | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]). Readings: *always Azozon walks, contrary to plan* / *always Azozon walks, contrary to plan* |
+| `stance` × `stance` | unsettled | | MAY with a channel: not stated. Samples: `thomam zazozon vowurol theyom.` (th-MAY | z-Azozon | v-walk | th-CLUES); `theyom zazozon vowurol thomam.` (th-CLUES | z-Azozon | v-walk | th-MAY). Readings: *possibly I infer that Azozon walks* / *I infer that possibly Azozon walks* |
+
+**Never in a pair:** `polarity` (list reach: it denies only its items, `joins.md#negation-u`), `bar` (inside its rank fence, `bars.md#channel-bars`), `quote` (a nested reading), and `unknown` (an `unread` entry, never ordered).
+
+**The other reading today:** none of the unsettled pairs has a form for the reading its text order does not pick, beyond splitting the frames over two sentences. A scope island cannot carry one: it "holds at most one phrase" (`scope-islands.md#scope-islands`), so it cannot hold a frame and the clause it frames.
 
 ## Construction ids
 
