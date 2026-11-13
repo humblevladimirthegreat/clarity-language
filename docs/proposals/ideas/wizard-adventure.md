@@ -327,7 +327,7 @@ New dependencies: Ink and `ts-fsrs`. Both are mature and narrow in scope.
 | Milestone | Contents |
 |-----------|----------|
 | 1. Sandbox | One open scene with one or two characters; the first 20 handlers; objects from tails plus the override table; simple reference; generator with its first shapes, for speech and narration; recasts with the seeded error table; the three distinct failures; morph gloss on every turn; exportable turn log; no-dead-ends tagging and the reachability check; gating from the construction registry and `core` column; content lint. Done when the school's walkthrough scripts play well |
-| 1b. Onto the interpreter | Phase 3 of `ageben-interpreter.md`: the sandbox plays the same walkthroughs as a host on the shared backend. Later milestones build on this, not on milestone 1's walker |
+| 1b. Onto the interpreter | Phase 5 of `ageben-interpreter.md`: the sandbox plays the same walkthroughs as a host on the shared backend. Later milestones build on this, not on milestone 1's walker |
 | 2. School of wizardry | Two wings with a main quest each; authored characters in Ink; per-line Ageben narration; fading scaffolds; spellbook and journal; Tools sidebar entry; grammar through the pronouns and plurality Beginner checkpoints |
 | 3. Village hub, errands and repetition | Hub with recurring characters; generated errands and encounters driven by FSRS; optional quests |
 | 4. Later areas | One per grammar stage along the cross-doc path: groups, comparatives, conditions, habitual, knowing; mastered spells |

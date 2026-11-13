@@ -4,7 +4,7 @@
 
 **Related:** [parse.mjs](../../../scripts/parse.mjs) (`--json`, `--llm-prompt`), the interpreter's reader, log and matcher (`src/interpret/`, `docs/meta/interpreter.md`, both made by `ageben-interpreter.md`), [llm-passage.ts](../../../src/parse/llm-passage.ts), the agent parser bundle [ageben.ts](../../../src/agent/ageben.ts), [read-ageben.md](../../meta/procedures/read-ageben.md), [lexicon.md](../../meta/procedures/lexicon.md), [feature-criteria.md](../../meta/feature-criteria.md). Neighbouring ideas: `syntax-highlighting.md` (fence underlines matter most in a spec), `speed-reading-view.md`.
 
-**Depends on:** none for the pilot (P1, P2). Unit T1 needs phase 1 of `ageben-interpreter.md` (the reader); T2 and T4 need its phase 2 (the log and matcher). **Order:** the pilot may run before, during, or after the interpreter's phase 1.
+**Depends on:** none for the pilot (P1, P2). Unit T1 needs phase 3 of `ageben-interpreter.md` (the reader); T2 and T4 need its phase 4 (the log and matcher). **Order:** the pilot may run before, during, or after the interpreter's phase 1.
 
 **Design authority:** *none* for phases 1 to 3 (a genre, its conventions, and tooling built on the current grammar). Phase 4 changes only the forms the user accepts under [Open decisions](#open-decisions), each through its owning grammar page.
 
@@ -206,14 +206,14 @@ Run with subagents: the pilot needs a fresh audit context, and the tooling units
 |----|-------|-------|----------------|----------|
 | **P1** | Pilot spec: write a small reference system in English (book lending: members, loans, due dates, fines, consent to reminders, a payment fallback, about 40 statements covering every row of [the mapping](#the-mapping)), then in Ageben, sentence by sentence, checking each with `parse.mjs` per [read-ageben.md](../../meta/procedures/read-ageben.md). Log every workaround with its sentence. | `proposal-worker` | `opus` / `high` | `src/spec/fixtures/lending.spec.ab`, `src/spec/fixtures/lending.en.md`, this proposal (findings only) |
 | **P2** | Independent gap audit of P1: classify each workaround as parser bug, grammar gap, or convention. Write each grammar gap as an open decision with options and a recommendation. Settle SHOULD as a recommendation from P1's sentences. List the vocabulary counts by layer, and propose lexicon rows (English concept, concrete seed, uses in the pilot) for concepts needed more than once. | `proposal-worker` (fresh) | `opus` / `high` | this proposal |
-| **T1** | IR as a view over readings: `src/spec/ir.ts`, `src/spec/types.ts` (id, topic, statement kind, and the frame lookups of [the IR](#the-ir)), tests on the P1 fixture. Starts after phase 1 of `ageben-interpreter.md` | `proposal-worker` | `opus` / `medium` | `src/spec/` |
-| **T2** | Checks as queries over the spec's log: `src/spec/check.ts` + tests, one fixture per check. Starts after phase 2 of `ageben-interpreter.md` | `proposal-worker` | `opus` / `medium` | `src/spec/` |
+| **T1** | IR as a view over readings: `src/spec/ir.ts`, `src/spec/types.ts` (id, topic, statement kind, and the frame lookups of [the IR](#the-ir)), tests on the P1 fixture. Starts after phase 3 of `ageben-interpreter.md` | `proposal-worker` | `opus` / `medium` | `src/spec/` |
+| **T2** | Checks as queries over the spec's log: `src/spec/check.ts` + tests, one fixture per check. Starts after phase 4 of `ageben-interpreter.md` | `proposal-worker` | `opus` / `medium` | `src/spec/` |
 | **T3** | CLI: `scripts/spec.mjs` (`check`, `prompt`, `render`), `spec` script in `package.json` | `proposal-worker` | `sonnet` / `medium` | `scripts/spec.mjs`, `src/spec/`, `package.json` |
 | **T4** | Read-back: `readback` subcommand, a diff of two logs by id using the matcher, tests | `proposal-worker` | `opus` / `medium` | `src/spec/`, `scripts/spec.mjs` |
 | **C1** | Conventions note `docs/meta/ageben-spec.md`: the mapping, document shape, statement kinds, vocabulary layers, and the tool commands. Report an `AGENTS.md` row (Editor notes: owns the spec genre). | `proposal-worker` | `opus` / `medium` | `docs/meta/ageben-spec.md` |
 | **G\*** | Phase 4: one unit per accepted grammar decision, plus one unit for the approved lexicon rows, following that change's own procedure (lexicon, retie, read-ageben). Parser and grammar edit land together. | `proposal-worker` | `opus` / `high` | set per decision |
 
-**Order:** P1 → P2 → **stop for the user's decisions on P2's open decisions** → T1 → T2 → T3 → T4 → C1 → G\*. T1 to C1 don't wait for grammar decisions unless one changes the IR's fields. If a decision does, stop and alert. T1 waits for phase 1 of `ageben-interpreter.md`, and T2 for its phase 2; if the user's decisions arrive first, the run stops there with the pilot committed. P1's fixture is also a good test text for the interpreter's reader, whichever lands first.
+**Order:** P1 → P2 → **stop for the user's decisions on P2's open decisions** → T1 → T2 → T3 → T4 → C1 → G\*. T1 to C1 don't wait for grammar decisions unless one changes the IR's fields. If a decision does, stop and alert. T1 waits for phase 3 of `ageben-interpreter.md`, and T2 for its phase 4; if the user's decisions arrive first, the run stops there with the pilot committed. P1's fixture is also a good test text for the interpreter's reader, whichever lands first.
 
 ### Rule digest (pasted into every brief)
 

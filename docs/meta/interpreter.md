@@ -455,6 +455,8 @@ One row per pair of families whose forms can both reach the whole clause, counti
 
 Counts: fixed by a rule 35, unsettled 91, commutes 8, fixed by word shape 3.
 
+Decided 2026-11-13: where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later, and an attitude word stays outside a question. Neither is on a grammar page yet, so the rows below keep their kinds. Unit S1 of `ageben-interpreter.md` states both on their grammar pages and moves each row it settles to *fixed by a rule*, citing the new anchor; S2 has the parser's resolve stage emit the order.
+
 | Pair | Kind | Anchor | Note |
 |------|------|--------|------|
 | `force` × `say` | fixed by a rule | `speech-moves.md#speech-act-statement-question-command` | Force over it: the act word is on the turn's left edge, outside the body (rule 2) |

@@ -4,7 +4,7 @@
 
 **Related:** [Inspect](/inspect) and its viewer [`GlossViewer.vue`](../../grammar/.vitepress/components/GlossViewer.vue); the interpreter's reader (`src/interpret/`, its types and table in `docs/meta/interpreter.md`, both made by `ageben-interpreter.md`); parse tree types [`src/parse/types.ts`](../../../src/parse/types.ts) and [`resolve.ts`](../../../src/parse/resolve.ts), which the readings point back into; grammar pages [topic](/topic), [pronouns](/pronouns), [joins](/joins), [list structure](/list-structure), [verb and stance joins](/verb-and-stance-joins), [dependents](/dependents), [causation](/causation), [knowing](/knowing), [residue and former](/residue-and-former), [questions](/questions), [feelings](/feelings).
 
-**Depends on:** phase 1 of `ageben-interpreter.md` (the reader and its classification table). No unit here starts before that phase is committed. **Order:** shares topic-stretch detection with `syntax-highlighting.md`; whichever lands second reuses the first one's helper. Topic emoji follow `speed-reading-view.md` if it has landed.
+**Depends on:** phase 3 of `ageben-interpreter.md` (the reader; its classification table is in `docs/meta/interpreter.md`). No unit here starts before that phase is committed. **Order:** shares topic-stretch detection with `syntax-highlighting.md`; whichever lands second reuses the first one's helper. Topic emoji follow `speed-reading-view.md` if it has landed.
 
 **Design authority:** *none*. Tooling only: no form or reading changes, and the parser's accept/reject behavior does not change.
 

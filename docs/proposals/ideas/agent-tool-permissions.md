@@ -1,6 +1,6 @@
 # Agent tool permissions in plain Ageben
 
-**Status:** IDEA, 2026-11-13. Decided 2026-11-13: the tool is a host on the shared interpreter (`ageben-interpreter.md`, all three phases); this idea keeps only what is specific to permissions.  
+**Status:** IDEA, 2026-11-13. Decided 2026-11-13: the tool is a host on the shared interpreter (`ageben-interpreter.md`, all its phases); this idea keeps only what is specific to permissions.  
 **Related:** grammar pages [permission and consent](/permission-consent#say-words), [how far the say reaches](/permission-consent#say-reach), [questions](/questions#question), [ability](/can-and-cant#ability), [phasal words](/already-still-yet#phasal), [spans](/spans), [sakes](/for-a-sake); the interpreter's reader, log, matcher, and loop (`src/interpret/`, made by `ageben-interpreter.md`); the published parser bundle ([ageben.ts](../../../src/agent/ageben.ts)); `ageben-spec.md` (it reads say words as requirements from the same readings).
 
 Not design authority. Tooling only: the sketch adds no form and changes no reading. Where it finds a gap, the gap is an open question for the user.
