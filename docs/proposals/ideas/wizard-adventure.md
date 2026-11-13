@@ -1,6 +1,6 @@
 # Wizard text adventure
 
-**Status:** IDEA. milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Ageben vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
+**Status:** IDEA. milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Decided 2026-11-13: the engine's reading of sentences, its question answering, its turn dispatch, and its reply spelling move to the shared interpreter (`ageben-interpreter.md`, phase 3), and milestone 1's code may be discarded where the new backend makes its shape wrong; milestone 2 starts after that phase. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Ageben vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
 
 ## Problem
 
@@ -99,7 +99,7 @@ A detective subsystem for the language's bias-awareness theme: the player works 
 - **Biased witnesses.** Some witnesses have a stake in the outcome (their [sakes](/for-a-sake#whose-stake)), and the case gives the player a way to find that out. Learning that a witness has a reason to blame someone, without assuming they are lying, is the lesson.
 - **Accusations are sentences.** To close a case the player states what caused what, with [*because*](/iff-fault#only-because) and [fault](/fault#fault), and marks how they know it. The engine checks the claim against the case's hidden facts. A true claim stated with too much certainty from weak evidence is accepted, but a character points out the overreach.
 - **Wrong accusations cost story, not grammar.** An accused innocent is hurt and says so, and the case continues; the player apologizes and keeps going. This keeps the [no penalty for language errors](#learning-principles) rule: the cost is for a wrong judgment, not a wrong sentence.
-- **Generated cases.** A case is a small hidden event graph (who did what, who saw, heard or inferred which part), and witnesses' lines come from it through the same generator as narration. Authored cases carry the main thread; generated ones are errands that review what is due.
+- **Generated cases.** A case is a small hidden event graph (who did what, who saw, heard or inferred which part), and witnesses' lines come from it through the same generator as narration. In the interpreter's terms the hidden events are logged claims, each witness holds the part of that log they saw or were told, and a witness's line is one of those claims under the evidence frame for how they came by it. An interview is a question matched against one witness's log; checking an accusation is a match against the hidden claims, and overreach is a stance on the player's sentence stronger than the evidence frames behind it. Authored cases carry the main thread; generated ones are errands that review what is due.
 - **The journal holds the evidence**, each claim with its witness and source marking, so the player reasons from a record rather than memory.
 
 ### Turns {#turns}
@@ -107,10 +107,10 @@ A detective subsystem for the language's bias-awareness theme: the player works 
 Each line the player types goes through three steps:
 
 1. **Parse.** [`src/parse/browser.ts`](../../../src/parse/browser.ts) already runs the parser in the browser (the Inspect page uses it). A sentence that does not parse gets a [recast](#recasts) when a near form exists, and otherwise a short in-world sign of confusion; the parser's error card is one tap away.
-2. **Resolve.** The engine walks the tree. Role letters give it exact slots (who acts, what is acted on, the action, properties), so there is no English-style guessing about the command. Each noun is matched to an object in the scene ([reference](#reference)). A sentence addressed to a character goes to that character's dialogue instead.
-3. **Apply.** The verb's handler changes the world state, or the character answers. The game prints what happened, plus the morph gloss of the player's sentence, so the player sees what they actually said.
+2. **Read and resolve.** The shared interpreter turns the tree into readings: for each clause, the bare claim (who acts, what is acted on, the action, properties) and the frames around it (speech act, negation, stance, permission). Role letters give exact slots, so there is no English-style guessing about the command. The game, as the interpreter's host, matches each noun to an object in the scene ([reference](#reference)). A sentence addressed to a character goes to that character's dialogue instead.
+3. **Apply.** The interpreter dispatches on the speech act: a statement is logged, a question is matched against the log and the world, and a command runs the verb's handler, which changes the world state. The game prints what happened, plus the morph gloss of the player's sentence, so the player sees what they actually said.
 
-A sentence that parses but has no handler gets its own message, in the game's voice (*the words are true, but beyond your power yet*). A character who cannot act on a grammatical sentence says so in character. Players must never take a grammatical sentence for a wrong one, so the three failures always look different.
+A sentence that parses but has no handler gets its own message, in the game's voice (*the words are true, but beyond your power yet*). A character who cannot act on a grammatical sentence says so in character. Players must never take a grammatical sentence for a wrong one, so the three failures always look different. They are the interpreter's `parse`, `beyond`, and `refused` outcomes, and `beyond` always names the parts it could not act on.
 
 ### Recasts {#recasts}
 
@@ -172,7 +172,7 @@ Give and buy have no root of their own; the first handlers still cover giving, b
 
 ### Grammar in play
 
-Each grammar feature has an everyday use and, where it fits, a spell use. Areas follow the [cross-doc path](../../meta/learning-levels.md#cross-doc-path), so an area never needs grammar the player has not reached.
+Each grammar feature has an everyday use and, where it fits, a spell use. Areas follow the [cross-doc path](../../meta/learning-levels.md#cross-doc-path), so an area never needs grammar the player has not reached. The interpreter already reads every feature below into a frame, a detail, or a list, so adding one to the game means giving the host a rule for it (what a condition triggers, whose belief a holder names), never a new walk of the parse tree.
 
 | Grammar | Everyday use | Spell use |
 |---------|--------------|-----------|
@@ -188,7 +188,7 @@ Each grammar feature has an everyday use and, where it fits, a spell use. Areas 
 
 ### Reference {#reference}
 
-The engine must decide *which* dog a noun means. Start simple: the only visible one, or else the game asks. Later areas use the grammar's own tools for this ([pronouns](/pronouns), [restrictors](/restrictors)), and [`src/parse/resolve.ts`](../../../src/parse/resolve.ts) already tracks topics across sentences.
+The engine must decide *which* dog a noun means. This is the host's `refer`: the interpreter hands it a term (a root with its details, a name, *I* or *you*, or a pronoun with the antecedent the resolver found), and the game answers with one entity, several, or none. Start simple: the only visible one, or else the game asks. Later areas use the grammar's own tools for this ([pronouns](/pronouns), [restrictors](/restrictors)), and [`src/parse/resolve.ts`](../../../src/parse/resolve.ts) already tracks topics across sentences.
 
 ### Spellbook
 
@@ -243,7 +243,7 @@ How the game uses them:
 What stays hand-made:
 
 - **Story, characters and puzzle design.** The docs say what forms mean, not what makes a good quest.
-- **What verbs do in the world.** A handler is game code. When the docs change what a construction *means*, not just how it is spelled, the walkthroughs catch the break. Once the game ships, the rule that parser changes ship with grammar changes extends to game handlers.
+- **What verbs do in the world, and what the world holds.** A handler is game code, and so is the host's answer to *does this claim hold here?* When the docs change what a construction *means*, not just how it is spelled, the walkthroughs catch the break. Once the game ships, the rule that parser changes ship with grammar changes extends to game handlers.
 - **Removed or renamed construction ids.** The build fails and a person fixes the content.
 - **The sentence generator.** Building new sentences beyond the example pool is a second implementation of the grammar that can drift. Keep it small: it produces glosses, every result goes through gloss-inverse and the parser, so it can never show an unparsed line (only an odd one).
 
@@ -289,6 +289,7 @@ The engine is in [`src/game/`](../../../src/game/), the page is [`wizard.md`](..
 - **No Ink yet.** The fixed lines (*yes*, *no*, *sure*, *huh?*, *thank you*) are glosses spelled at build time; generated lines are spelled in the browser with an index that grows one root at a time. A name in an authored gloss is a `{concrete}` slot (`y-{guard}`), so it follows a respelling.
 - **A resume binds to a same-stem verb in its sentence.** `yel vohel doher` resumes the opening, not the door ([resume](/pronouns#resume-r): the most recent word with that stem), so the scripts say `dohel`, and the generator falls back to **-l** when a **-r** would bind to the verb.
 - **No verb puts a thing down.** Among the first handlers, things leave your hands only by giving; the quest models have no *drop* action, and a person can always be asked to give a thing back.
+- **The backend is due to be replaced.** Milestone 1 reads sentences with its own walker ([`read.ts`](../../../src/game/read.ts)), which handles one noun per role and reports everything else (a join, a stance, a dependent) as beyond the game. `ageben-interpreter.md` phase 3 removes that walker, the question answering, and the turn dispatch, and makes the game a host: it keeps the world model, tail defaults, handler bodies, quests, the reachability check, recasts, gating, and the turn log. World events and what each character knows become entries in the interpreter's log, if that proposal's open decision on it is accepted. The walkthroughs are the gate.
 - **The player's position** is a section on the learning order. The sandbox opens everything, and a tester can pretend to have reached any checkpoint to watch narration and speech gate.
 
 ## Inspiration
@@ -314,7 +315,8 @@ A TypeScript web app, deployed with the site and importing the parser directly. 
 
 | Part | Owner |
 |------|-------|
-| Parser, world model, tail defaults, verb handlers, reference, recasts, Ageben generation, repetition tracking, gating | Custom TypeScript |
+| Reading a sentence, matching questions, turn dispatch, spelling and checking replies | The shared interpreter (`src/interpret/`), also custom TypeScript |
+| World model, tail defaults, verb handlers, reference, recasts, generator shapes for narration and speech, repetition tracking, gating | Custom TypeScript, as the interpreter's host |
 | Authored scenes, characters, main quests, story beats | Ink, with all Ageben (speech and narration glosses) written as morph gloss |
 | Spelling, stage checks, walkthroughs | Build step and lint ([derived from the docs](#derived-from-the-docs)) |
 
@@ -325,6 +327,7 @@ New dependencies: Ink and `ts-fsrs`. Both are mature and narrow in scope.
 | Milestone | Contents |
 |-----------|----------|
 | 1. Sandbox | One open scene with one or two characters; the first 20 handlers; objects from tails plus the override table; simple reference; generator with its first shapes, for speech and narration; recasts with the seeded error table; the three distinct failures; morph gloss on every turn; exportable turn log; no-dead-ends tagging and the reachability check; gating from the construction registry and `core` column; content lint. Done when the school's walkthrough scripts play well |
+| 1b. Onto the interpreter | Phase 3 of `ageben-interpreter.md`: the sandbox plays the same walkthroughs as a host on the shared backend. Later milestones build on this, not on milestone 1's walker |
 | 2. School of wizardry | Two wings with a main quest each; authored characters in Ink; per-line Ageben narration; fading scaffolds; spellbook and journal; Tools sidebar entry; grammar through the pronouns and plurality Beginner checkpoints |
 | 3. Village hub, errands and repetition | Hub with recurring characters; generated errands and encounters driven by FSRS; optional quests |
 | 4. Later areas | One per grammar stage along the cross-doc path: groups, comparatives, conditions, habitual, knowing; mastered spells |

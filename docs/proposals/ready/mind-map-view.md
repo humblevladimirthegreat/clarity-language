@@ -1,10 +1,10 @@
 # Collapsible mind map of a passage
 
-**Status:** READY. Decided 2026-11-11: labels show the Ageben word with its gloss below, with a toggle; layout by `d3-hierarchy@3.1.3`, left-to-right, indented outline under 640px; Inspect page only; emoji on topic nodes only; two layers by default with a 1–3 depth control; *respectively* shown by matching pair markers. Not design authority; when carried out, the rules move to a new meta note and this file is deleted.
+**Status:** READY. Decided 2026-11-11: labels show the Ageben word with its gloss below, with a toggle; layout by `d3-hierarchy@3.1.3`, left-to-right, indented outline under 640px; Inspect page only; emoji on topic nodes only; two layers by default with a 1–3 depth control; *respectively* shown by matching pair markers. Decided 2026-11-13: the map is built from the shared interpreter's readings, not from its own walk of the parse tree, and the lift / fold / label classification moves to `ageben-interpreter.md` (units R1a, R1b). Not design authority; when carried out, the rules move to a new meta note and this file is deleted.
 
-**Related:** [Inspect](/inspect) and its viewer [`GlossViewer.vue`](../grammar/.vitepress/components/GlossViewer.vue); parse tree types [`src/parse/types.ts`](../../src/parse/types.ts) (`Utterance`, `Clause`, `Unit`, `ResolveInfo`); [`resolve.ts`](../../src/parse/resolve.ts); [`hook-jobs.ts`](../../src/parse/hook-jobs.ts); [`data/lexicon-overlays.csv`](../../data/lexicon-overlays.csv); grammar pages [topic](/topic), [pronouns](/pronouns), [joins](/joins), [list structure](/list-structure), [verb and stance joins](/verb-and-stance-joins), [dependents](/dependents), [causation](/causation), [knowing](/knowing), [residue and former](/residue-and-former), [questions](/questions), [feelings](/feelings).
+**Related:** [Inspect](/inspect) and its viewer [`GlossViewer.vue`](../../grammar/.vitepress/components/GlossViewer.vue); the interpreter's reader (`src/interpret/`, its types and table in `docs/meta/interpreter.md`, both made by `ageben-interpreter.md`); parse tree types [`src/parse/types.ts`](../../../src/parse/types.ts) and [`resolve.ts`](../../../src/parse/resolve.ts), which the readings point back into; grammar pages [topic](/topic), [pronouns](/pronouns), [joins](/joins), [list structure](/list-structure), [verb and stance joins](/verb-and-stance-joins), [dependents](/dependents), [causation](/causation), [knowing](/knowing), [residue and former](/residue-and-former), [questions](/questions), [feelings](/feelings).
 
-**Depends on:** none. **Order:** shares topic-stretch detection with `syntax-highlighting.md`; whichever lands second reuses the first one's helper. Topic emoji follow `speed-reading-view.md` if it has landed.
+**Depends on:** phase 1 of `ageben-interpreter.md` (the reader and its classification table). No unit here starts before that phase is committed. **Order:** shares topic-stretch detection with `syntax-highlighting.md`; whichever lands second reuses the first one's helper. Topic emoji follow `speed-reading-view.md` if it has landed.
 
 **Design authority:** *none*. Tooling only: no form or reading changes, and the parser's accept/reject behavior does not change.
 
@@ -18,7 +18,7 @@ A mind map shows it, but a full map of even five sentences is too big to read. A
 
 1. On the [Inspect](/inspect) page, a **Map** view of the pasted passage: a tree from one root, showing the root and two layers below it, with every deeper branch folded and expandable.
 2. **No folded meaning.** A collapsed node never reads as a different claim from the text. Anything that changes truth, force, or ownership (a condition, a stance, whose belief or feeling it is, negation, an open list) is shown on the node it modifies, even when its own content is folded.
-3. The tree comes only from the parser and resolver. Where they give nothing, the map shows nothing, never a guess.
+3. The tree comes only from the interpreter's readings, which copy the parser and resolver. Where a reading states nothing, the map shows nothing, never a guess.
 4. It works at phone width, by keyboard, with a screen reader, and in both themes.
 
 ## Non-goals
@@ -28,7 +28,7 @@ A mind map shows it, but a full map of even five sentences is too big to read. A
 - Maps on grammar pages, in examples, or in the Claritish journal. Grammar examples are mostly one sentence, where a map adds little; revisit once U4 shows how longer passages come out.
 - A graph view centred on one entity, with every sentence that mentions it around it. Cross-link markers cover this for now ([tree, not graph](#tree-not-graph)).
 - Export to mind-map apps (OPML, Markdown outline). Easy to add later from the same tree.
-- Any change to what the parser accepts or how it reads a form. If the builder needs data the parser does not expose, that is a [stop-and-alert](../meta/procedures/proposals.md#stop-and-alert) finding.
+- Any change to what the parser accepts or how it reads a form, and any walk of the parse tree for meaning inside `src/mind-map/`. If the builder needs something a reading does not carry, that is a [stop-and-alert](../../meta/procedures/proposals.md#stop-and-alert) finding for the interpreter's table, not a local fix.
 
 ## Design
 
@@ -37,9 +37,9 @@ A mind map shows it, but a full map of even five sentences is too big to read. A
 | Layer | Holds | Shown by default |
 |-------|-------|------------------|
 | Root | The passage's topic, or *passage* when there is none or there are several topic stretches | yes |
-| 1 | One node per main clause (`BodyClause`), labelled by its verb or predicate. With several topic stretches, one node per stretch, its clauses below | yes |
-| 2 | The clause's arguments and hosted units, each link labelled by role letter | yes |
-| 3+ | Dependents (`OdoDependent`), clause content of hinges, islands, quotes and asides, noun internals (adjectives, relations), compound parts | folded |
+| 1 | One node per top-level reading (a main clause), labelled by its claim's verb or predicate. With several topic stretches, one node per stretch, its clauses below | yes |
+| 2 | The claim's roles, each link labelled by role letter | yes |
+| 3+ | Details, the nested readings in a frame's or detail's `content` (dependents, hinge clauses, islands, quotes, asides), a term's own details (adjectives, relations), compound parts | folded |
 
 - **A level with one child merges into its parent.** A passage with one topic stretch makes the topic the root, so its clauses are layer 1.
 - **Joins don't use up a layer.** A join is drawn as a bracket over its members, labelled with the join word and its badges (closed or open, set or rank, distribute or collective from `SharedRecord`), not as a node of its own. A clause join therefore still shows each clause's arguments at layer 2.
@@ -50,23 +50,26 @@ A mind map shows it, but a full map of even five sentences is too big to read. A
 
 ### Lift and fold
 
-Every construction the builder meets falls into one of three classes:
+The interpreter's reader has already sorted every construction into a class, in the table that `docs/meta/interpreter.md` owns. The map draws each class one way and classifies nothing itself:
 
-| Class | Meaning | On the map |
-|-------|---------|------------|
-| **lift** | Changes what the node claims: truth, force, or whose claim it is | A badge on the node it modifies, always visible. The badge names the *kind* (`if`, `although`, `reported`, `holder's belief`, `not`, `open list`); the qualifier's own content may still fold as a child |
-| **fold** | Detail that narrows but does not change the claim (place, time, manner, degree, an extra argument, an aside) | A child node, folded below layer 2 |
+| Reader class | Meaning | On the map |
+|--------------|---------|------------|
+| **frame** (*lift*) | Changes what the node claims: truth, force, or whose claim it is | A badge on the node it modifies, always visible. The badge names the frame's family and values (`if`, `although`, `reported`, `holder's belief`, `not`, `open list`); the frame's `content` may still fold as a child |
+| **detail** (*fold*) | Narrows but does not change the claim (place, time, manner, degree, an extra argument, an aside) | A child node, folded below layer 2 |
 | **label** | Part of the node's own wording (the verb, a noun head, the ending that makes it a name) | Merged into the node's label |
+| **link** | Points at another reading | A cross-link marker ([tree, not graph](#tree-not-graph)) |
 
 Rule of thumb: **lift the kind, fold the content.** A main clause with an *although* dependent carries an `although` badge at layer 1; what the dependent clause says folds below it.
 
-Expected **lift** families, to be confirmed construction by construction in U1a and U1b: condition, cause, concession and fault hinges ([causation](/causation), [dependents](/dependents)); stance, mood and evidence ([knowing](/knowing) and its sub-pages: MAY, evidentiality, holder, usually vs must); residue, former, contrary-to, notional, mirative, already / still / not yet / no longer ([residue and former](/residue-and-former)); negation and polarity; speech act and question type (`AskRecord`, [speech moves](/speech-moves), [questions](/questions)); whose feeling or stake ([feelings](/feelings), [sakes](/sakes)); list shape (closed vs open, set vs rank, SHARED distribute vs collective, universals and bound tags: [joins](/joins)).
+**An unsettled pair is shown, never resolved.** When a reading's `unordered` holds two frames (they do not commute, and no grammar rule orders them), the map draws both badges with an *order not settled* marker between them. It never stacks one inside the other.
 
-**A construction with no row in the table is lifted, never folded.** Showing too much clutters the map; hiding a stance misstates it.
+**An `unknown` frame is drawn as a badge, never folded.** The reader makes one for any construction with no table row. Showing too much clutters the map; hiding a stance misstates it.
+
+The map needs one thing the reader's table does not hold: the badge text for each frame family and value. That wording lives in `src/mind-map/` and in `docs/meta/mind-map.md`.
 
 ### Tree, not graph
 
-Each parsed sentence is a tree: the parser's types nest strictly, sentence → clauses → units → dependents and islands. The map uses that nesting as its backbone, so it can always be drawn as a tree. The meaning of a passage is a graph, though: some words point elsewhere, and some items belong to several others. Each such link is drawn as below, never as a second parent.
+Each sentence's readings form a tree: a reading nests others only where the parse tree nests them (the reader's rule), through a frame's or detail's `content` and through clause terms. The map uses that nesting as its backbone, so it can always be drawn as a tree. The meaning of a passage is a graph, though: some words point elsewhere, and some items belong to several others. Each such link is drawn as below, never as a second parent.
 
 | Source | Shape | On the map |
 |--------|-------|------------|
@@ -79,11 +82,11 @@ Each parsed sentence is a tree: the parser's types nest strictly, sentence → c
 
 Cross-links are not followed when the tree is built, so a link that points back to its own clause (a cycle) cannot break the layout. At worst it draws a marker pointing to a node above it. The resolver already flags some of these (`ownSlot`).
 
-U1a and U1b confirm each row against its grammar page and add any construction that links across the tree and is missing here.
+Each row is a `link` class in the reader's table, confirmed against its grammar page by units R1a and R1b of `ageben-interpreter.md`. A linking construction missing here is added there, and the map draws it by its link type.
 
 ### Pronouns and cross-links
 
-Each resolved anaphor (`AnaphorBind` with an `antecedent`) is labelled with its antecedent's label and a link marker. Hover or focus outlines the antecedent's node. When the antecedent sits in a folded branch, the marker reads *also in: …*, and activating it unfolds the path to that node. A pronoun with no antecedent keeps its own gloss and gets no marker. Nodes are repeated, never merged, so the map stays a tree. Answer links and stand-in links behave the same way.
+Each pronoun term with an antecedent (the reader keeps the resolver's `AnaphorBind` on it) is labelled with its antecedent's label and a link marker. Hover or focus outlines the antecedent's node. When the antecedent sits in a folded branch, the marker reads *also in: …*, and activating it unfolds the path to that node. A pronoun with no antecedent keeps its own gloss and gets no marker. Nodes are repeated, never merged, so the map stays a tree. Answer links and stand-in links behave the same way.
 
 ### Labels and pictures
 
@@ -105,40 +108,42 @@ Checked 2026-11-11: `d3-hierarchy` 3.1.3 is a repackaging of 3.1.2. Its bundled 
 
 ### Data flow
 
-`inspectText` already parses and resolves the passage in the browser. A new pure module `src/mind-map/` turns `ParseResult` + `ResolveInfo` into a `MapNode` tree (`{ id, label, gloss, role?, badges[], children[], foldedByDefault, crossLinks[], pairMarker? }`) and holds the lift/fold table as a typed const keyed by `Unit.kind`, `HookJob`, overlay row, and resolve record type. The Vue component only lays out and draws the tree; it has no grammar logic.
+`inspectText` already parses and resolves the passage in the browser. The interpreter's reader (`src/interpret/browser.ts`) turns that `ParseResult` into readings. A new pure module `src/mind-map/` turns the readings into a `MapNode` tree (`{ id, label, gloss, role?, badges[], children[], foldedByDefault, crossLinks[], pairMarker? }`). It holds the badge wording and the layer rules, and no grammar table. The Vue component only lays out and draws the tree; it has no grammar logic.
 
 ## Implementation plan
 
-The work runs through subagents: the classification reads many grammar pages that the code units don't need. If the user says to stop partway, the orchestrator [consolidates this proposal](../meta/procedures/proposals.md#consolidate) before the session ends.
+The work runs through subagents: the audit needs a fresh context, and the builder and the component share little. If the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
+
+The classification that this plan once held as U1a and U1b is now units R1a and R1b of `ageben-interpreter.md`; the ids below keep their old numbers.
 
 ### Units
 
 | ID | Items | Agent | `model` | effort | May edit |
 |----|-------|-------|---------|--------|----------|
-| U1a | Classify every `Unit` kind, `HookJob`, and dependent/hinge overlay row as lift / fold / label, for clause structure, hinges, causation, and the knowing / residue families. Confirm the stand-in and linker rows of [tree, not graph](#tree-not-graph). Write the table and its rules to a new `docs/meta/mind-map.md` | `proposal-worker` | `opus` | `high` | `docs/meta/mind-map.md` |
-| U1b | Same for joins and list shape (SHARED, *respectively*, verb joins), questions and answers, speech moves, feelings and sakes, spans and quotes, numbers. Append to the table | `proposal-worker` | `opus` | `high` | `docs/meta/mind-map.md` |
-| U2 | `src/mind-map/build.ts` (tree builder + table const transcribed from the meta note) and `build.test.ts`: layers, merge-single-child, joins as brackets, shared items on brackets, *respectively* pair markers, lift badges, default lift for unknown kinds, cross-links (anaphors, answers, stand-ins), a self-pointing link, unparsed leaf | `proposal-worker` | `opus` | `high` | `src/mind-map/**` |
-| U3 | Add `d3-hierarchy@3.1.3`. `MindMap.vue` per [layout and drawing](#layout-and-drawing): tidy-tree placement from measured sizes, folding with `+N` counts, depth control, label toggle, topic emoji, cross-link and pair-marker highlighting with unfold-to-target, tree ARIA and keyboard, outline under 640px. Add a **Map** view to `GlossViewer.vue` or a section on [`inspect.md`](../grammar/inspect.md) with a one-paragraph explanation; add the `@mind-map` alias in `config.ts` | `proposal-worker` | `opus` | `medium` | `docs/grammar/.vitepress/components/MindMap.vue`, `GlossViewer.vue`, `config.ts`, `theme/index.ts`, `docs/grammar/inspect.md`, `package.json`, `package-lock.json` |
-| U4 | Fresh-context audit: run the builder on 20 multi-sentence passages drawn from grammar examples (`node scripts/find.mjs` by construction), including SHARED, *respectively*, a fill-ask with its reply, and cross-sentence pronouns. Check, from `--llm-prompt` readings, that no collapsed view misstates its sentence. Report failures; fix only test fixtures | `proposal-worker` | `opus` | `high` | `src/mind-map/build.test.ts` |
+| U2 | `src/mind-map/build.ts` (readings → `MapNode` tree, badge wording per frame family and value) and `build.test.ts`: layers, merge-single-child, joins as brackets, shared items on brackets, *respectively* pair markers, frame badges, an `unknown` frame drawn as a badge, cross-links (pronouns, answers, stand-ins), a self-pointing link, unparsed leaf. Write the drawing rules (layers, brackets, badges, cross-links) to a new `docs/meta/mind-map.md`, which points to `docs/meta/interpreter.md` for the classes | `proposal-worker` | `opus` | `high` | `src/mind-map/**`, `docs/meta/mind-map.md` |
+| U3 | Add `d3-hierarchy@3.1.3`. `MindMap.vue` per [layout and drawing](#layout-and-drawing): tidy-tree placement from measured sizes, folding with `+N` counts, depth control, label toggle, topic emoji, cross-link and pair-marker highlighting with unfold-to-target, tree ARIA and keyboard, outline under 640px. Add a **Map** view to `GlossViewer.vue` or a section on [`inspect.md`](../../grammar/inspect.md) with a one-paragraph explanation; add the `@mind-map` alias in `config.ts` | `proposal-worker` | `opus` | `medium` | `docs/grammar/.vitepress/components/MindMap.vue`, `GlossViewer.vue`, `config.ts`, `theme/index.ts`, `docs/grammar/inspect.md`, `package.json`, `package-lock.json` |
+| U4 | Fresh-context audit: run the builder on 20 multi-sentence passages drawn from grammar examples (`node scripts/find.mjs` by construction), including SHARED, *respectively*, a fill-ask with its reply, and cross-sentence pronouns. Check, from `--llm-prompt` readings, that no collapsed view misstates its sentence. Sort each failure: a wrong class is a finding for the interpreter's table; a wrong drawing is the builder's. Report failures; fix only test fixtures | `proposal-worker` | `opus` | `high` | `src/mind-map/build.test.ts` |
+| U5 | Style review of the `npm run changed-sections -- <rev>` list (the `inspect.md` paragraph), `<rev>` being the commit before U2 | `style-editor` (fresh) | `opus` | `high` | `docs/grammar/inspect.md` |
 
-Order: U1a → U1b → U2 → U3 → U4, in sequence (U1a and U1b share the meta note; U2 transcribes it). U4 failures go back to a fresh U2-style subagent with the failing passages and the diff stat. The orchestrator then adds the `docs/meta/mind-map.md` row to `AGENTS.md` (editor notes table) and deletes this proposal.
+Order: U2 → U3 → U4 → U5, in sequence. U4's builder failures go back to a fresh U2-style subagent with the failing passages and the diff stat; its class failures stop the run per [stop and alert](../../meta/procedures/proposals.md#stop-and-alert) when they misstate a sentence, since the fix is in the interpreter. The orchestrator then adds the `docs/meta/mind-map.md` row to `AGENTS.md` (editor notes table) and deletes this proposal.
+
 
 ### Rule digest (pasted into every brief)
 
 > - Read `AGENTS.md` first; it routes. This is tooling: never change a form, a reading, or what the parser accepts.
-> - Classes: **lift** (changes truth, force, or whose claim; a badge on the modified node, always visible), **fold** (narrowing detail; a child below layer 2), **label** (part of the node's wording). Lift the kind, fold the content.
-> - Anything unclassified is lifted. When unsure between lift and fold, lift, and note it in the report.
-> - Classify from the owning grammar page, not from memory. Work out what a sample means with `node scripts/parse.mjs --llm-prompt`, never by reading pages alone.
+> - The map is built from the interpreter's readings (`src/interpret/`; classes in `docs/meta/interpreter.md`), never from its own walk of the parse tree. A **frame** is a badge on the node it modifies, always visible; a **detail** is a child below layer 2; a **label** is part of the node's wording; a **link** is a cross-link marker. Lift the kind, fold the content.
+> - An `unknown` frame is drawn as a badge, never folded.
+> - Do not classify here. If a reading puts a construction in the wrong class, or lacks what the map needs, stop and report it; the fix is a row in the interpreter's table. Work out what a sample means with `node scripts/parse.mjs --llm-prompt`, and see its readings with `npm run -s reading -- '<text>'`.
 > - Layers: root, then main clauses, then arguments; deeper folds. A single child merges into its parent. Joins are brackets, not layers. Children keep text order.
 > - The map is always a tree built from the parse nesting. Every other link (pronouns, answers, stand-ins) is a cross-link marker; shared items sit once on their bracket; *respectively* pairs get matching markers. Nodes never merge and never get a second parent.
-> - Where the parser or resolver gives nothing, the map shows nothing.
-> - If the builder needs data the parser does not expose, stop and report it; do not patch the parser.
+> - Where a reading states nothing, the map shows nothing.
+> - Never patch the parser or the reader from here.
 > - Read slices: list headings (`grep -n '^#'`) first, then the ranges you need.
 > - Scripted edits go in a file under `tmp/`, never inline.
 > - Verify with `npm run verify -- --allow-generate` at the end of the item (`--fast` inside it). Read only new error lines from `tmp/verify-last.log`.
 > - Stop and report, without working around, when: a premise here no longer holds; later units would need a different design or order; skipping would leave later units on a broken state; or enough is skipped that the goals can't be met.
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
-> - Do not commit. Report in these fields: **done**, **files touched** (count), **table rows added** (count, and any lifted only by default), **AGENTS.md Owns lines**, **verify** line, **skips** with reasons, **left**, **inefficient**.
+> - Do not commit. Report in these fields: **done**, **files touched** (count), **reader findings** (a wrong class or a missing field, each with its sentence), **AGENTS.md Owns lines**, **verify** line, **skips** with reasons, **left**, **inefficient**.
 
 ### Gates
 
@@ -148,11 +153,11 @@ Order: U1a → U1b → U2 → U3 → U4, in sequence (U1a and U1b share the meta
 
 ### Commits
 
-One per unit after its gate, plus one final commit for the `AGENTS.md` row and the proposal's deletion: six commits expected. Messages start `mind-map-view U1a:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
+One per unit after its gate, plus one final commit for the `AGENTS.md` row and the proposal's deletion: five commits expected. Messages start `mind-map-view U2:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
 
 ## Open decisions
 
-None. Grammar questions met during U1a and U1b are logged here per the [proposal procedure](../meta/procedures/proposals.md#what-a-proposal-is).
+None. Grammar questions about how a construction is read belong to `ageben-interpreter.md`; a question about how the map draws one is logged here per the [proposal procedure](../../meta/procedures/proposals.md#what-a-proposal-is).
 
 ## Historical note: layout libraries considered
 
