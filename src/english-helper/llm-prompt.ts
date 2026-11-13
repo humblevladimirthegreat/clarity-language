@@ -83,6 +83,11 @@ function inputFeatures(inputs: readonly HelperInput[], anchors: ReadonlyMap<stri
   return { wanted, links };
 }
 
+/** The sections the analysis links (`page.md#id`), without the role-letter link every noun and verb carries. */
+export function promptLinks(inputs: readonly HelperInput[]): Set<string> {
+  return inputFeatures(inputs, new Map()).links;
+}
+
 type Indexed = { pair: ExamplePair; words: Set<string>; english: string[]; constructions: Set<string> };
 
 function indexed(pair: ExamplePair): Indexed {

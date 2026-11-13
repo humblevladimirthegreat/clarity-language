@@ -75,13 +75,15 @@ import { basename, dirname, join } from "node:path";
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import { analyzeEnglish, patternForm, suggestionLinks, TIERS, type Analysis, type Slot, type Suggestion } from "../src/english-helper/analyze.js";
 import { coverWord, familyRoots, promptShows, treeWords, type Coverage, type PromptShows, type TreeWord } from "../src/english-helper/coverage.js";
-import { buildHelperPrompt } from "../src/english-helper/llm-prompt.js";
-import { loadHelperData } from "../src/english-helper/load.js";
+import { buildHelperPrompt, promptLinks } from "../src/english-helper/llm-prompt.js";
+import { loadCanonicalAnchors, loadHelperData, loadParadigmBlocks } from "../src/english-helper/load.js";
+import { paradigmLines, REACHES, type CapFill, type Reach } from "../src/english-helper/paradigms.js";
 import { PLANT_KINDS, plantErrors, plantFlagged, type PlantKind } from "../src/english-helper/plant.js";
 import { verifyDraft, type Verified } from "../src/english-helper/verify.js";
 import { tagEnglish } from "../src/english-helper/tag.js";
 import { fillSelf } from "../src/learner-name.js";
-import { BANDS, type Band } from "../src/lint/learning-order.js";
+import { BANDS, pageSections, type Band } from "../src/lint/learning-order.js";
+import { grammarPath } from "../src/english-helper/cues.js";
 import { practiceItems } from "../src/lint/practice-items.js";
 import { docExamples, examplePair, loadPromptContext, tableExamples } from "../src/parse/llm-examples.js";
 import { constructionRegistry } from "../src/parse/constructions.js";
@@ -399,6 +401,8 @@ type ItemRecord = {
   gap: Pair;
   verifyClean?: Pair;
   verifyCaught?: Pair;
+  /** Non-structural constructions of the closest answer that some example in the prompt uses. */
+  frame?: Pair;
 };
 const items = new Map<SetName, Map<string, ItemRecord>>();
 /** Each item's constructions and whether their page was suggested, until the set's structural ones are known. */
@@ -488,6 +492,90 @@ function verifyCounts(v: VerifyTally) {
   return { words: v.words, flagged: [...v.checks.values()].reduce((a, b) => a + b, 0), planted: plants.reduce((a, p) => a + p.planted, 0), caught: plants.reduce((a, p) => a + p.flagged, 0) };
 }
 const tallies = new Map<SetName, SetTally>();
+
+/**
+ * Dry measure for paradigm blocks (checkpoint only): would the item be self-contained if the
+ * cheat sheet blocks its linked sections reach were shown? Nothing is added to the prompt.
+ */
+const paradigmBlocks = loadParadigmBlocks();
+const canonicalAnchors = loadCanonicalAnchors();
+type ReachTally = { selfContained: number; chars: number[]; leanChars: number[]; recovered: number; closedRecovered: number };
+const reachTallies = new Map<Reach, ReachTally>(REACHES.map((r) => [r, { selfContained: 0, chars: [], leanChars: [], recovered: 0, closedRecovered: 0 }]));
+/** Checkpoint words missing from the prompt: closed or not, and the narrowest reach that recovers each (none when no reach does). */
+const reachMisses: { english: string; word: string; closed: boolean; reach: Reach | ""; kind: string }[] = [];
+const reachBaseline = { sentences: 0, selfContained: 0, missing: 0, closedMissing: 0, promptChars: 0 };
+const blockShows = new Map<string, PromptShows>();
+/** Lean renderings under a character cap (the largest block dropped first), measured beside the uncapped reaches. */
+const CAPPED: { reach: Reach; cap: number; fill: CapFill }[] = [
+  { reach: "table", cap: 3000, fill: "drop-largest" },
+  { reach: "page", cap: 6000, fill: "drop-largest" },
+  { reach: "sheet", cap: 6000, fill: "drop-largest" },
+  { reach: "sheet", cap: 3000, fill: "nearest" },
+  { reach: "sheet", cap: 6000, fill: "nearest" },
+  { reach: "sheet", cap: 12000, fill: "nearest" },
+];
+const cappedTallies = CAPPED.map((c) => ({ ...c, selfContained: 0, chars: [] as number[] }));
+/** What a prompt shows with some block lines added: the prompt's own words, and the blocks' (cached by text). */
+function withBlocks(shows: PromptShows, lines: readonly string[]): PromptShows {
+  if (!lines.length) return shows;
+  const text = lines.join("\n");
+  let extra = blockShows.get(text);
+  if (!extra) {
+    extra = promptShows(text, []);
+    if (blockShows.size < 2000) blockShows.set(text, extra);
+  }
+  const families = new Map([...shows.families].map(([k, v]) => [k, new Set(v)]));
+  for (const [k, v] of extra.families) families.set(k, new Set([...(families.get(k) ?? []), ...v]));
+  return { words: new Set([...shows.words, ...extra.words]), roots: new Set([...shows.roots, ...extra.roots]), families, xFamilies: new Set([...shows.xFamilies, ...extra.xFamilies]) };
+}
+/** A word the reference reads as something other than an ordinary content word: a closed row, hook, number, stand-in… */
+const closedWord = (w: TreeWord) => !(w.reading === "ordinary" && w.family.kind === "content");
+
+/** Each item's non-structural constructions and whether an example in its prompt uses them, until the set's structural ones are known. */
+const itemFrames = new Map<ItemRecord, { id: string; shown: boolean; wanted: boolean; exists: boolean; canonical: boolean; page: boolean; block: boolean; taught: boolean; taughtBlock: boolean }[]>();
+/** The sections the rows of the shown blocks link (sheet reach, lean, ≤ 6000, nearest first). */
+function shownBlockLinks(links: Set<string>): string[] {
+  const lines = new Set(paradigmLines(paradigmBlocks, links, "sheet", "lean", 6000, "nearest"));
+  return paradigmBlocks.flatMap((b) => b.rows.filter((r) => lines.has(r.lean)).flatMap((r) => r.links));
+}
+/** Section (`page.md#slug`, and each enclosing section) → the constructions its own doc examples use. */
+const sectionConstructions = new Map<string, Set<string>>();
+{
+  const byPage = new Map(listMarkdown(GRAMMAR_DIR).map((file) => [grammarPath(file), readFileSync(file, "utf8")]));
+  const sectionsOf = new Map<string, ReturnType<typeof pageSections>["sections"]>();
+  for (const pair of context.index) {
+    const [page, line] = pair.source.split(":");
+    const markdown = byPage.get(page!);
+    if (!markdown) continue;
+    if (!sectionsOf.has(page!)) sectionsOf.set(page!, pageSections(page!, markdown).sections);
+    const offset = markdown.split("\n").slice(0, Number(line) - 1).join("\n").length;
+    for (const sec of sectionsOf.get(page!)!) {
+      if (!sec.slug || offset < sec.offset || offset >= sec.end) continue;
+      const key = `${page}#${sec.slug}`;
+      const set = sectionConstructions.get(key) ?? new Set<string>();
+      for (const id of pair.constructions) set.add(id);
+      sectionConstructions.set(key, set);
+    }
+  }
+}
+/** Constructions some example in the index uses. */
+const exampleIds = new Set(context.index.flatMap((pair) => pair.constructions));
+/** Frames not shown: the selection wanted them (the analysis links their home), or did not. */
+/** Frames neither wanted nor reached by a shown block row, by construction id, per set. */
+const frameUnreached = new Map<SetName, Map<string, number>>();
+const frameMisses = new Map<SetName, { wanted: number; unwanted: number; noExample: number; canonical: number; page: number; block: number; taught: number; taughtBlock: number }>();
+const indexConstructions = new Map<string, Set<string>>();
+for (const pair of context.index) {
+  const set = indexConstructions.get(pair.ageben) ?? new Set<string>();
+  for (const id of pair.constructions) set.add(id);
+  indexConstructions.set(pair.ageben, set);
+}
+/** The constructions the prompt's examples use (its `AGEBEN:` lines, looked up in the example index). */
+function exampleConstructions(prompt: string): Set<string> {
+  const out = new Set<string>();
+  for (const m of prompt.matchAll(/^AGEBEN: (.+)$/gm)) for (const id of indexConstructions.get(m[1]!) ?? []) out.add(id);
+  return out;
+}
 
 for (const set of sets) {
   const tally: SetTally = {
@@ -638,6 +726,38 @@ for (const set of sets) {
     for (const c of best.coverage) tally.coverage.set(c, (tally.coverage.get(c) ?? 0) + 1);
     const missingWords = best.words.filter((_, k) => best.coverage[k] === "missing");
     if (missingWords.length === 0) tally.selfContained++;
+    if (set === "checkpoint") {
+      const links = [...promptLinks([{ english: sentence.english, analysis }])].map((l) => canonicalAnchors.get(l) ?? l);
+      reachBaseline.sentences++;
+      reachBaseline.promptChars += prompt.length;
+      if (!missingWords.length) reachBaseline.selfContained++;
+      reachBaseline.missing += missingWords.length;
+      reachBaseline.closedMissing += missingWords.filter(closedWord).length;
+      const firstReach = new Map<TreeWord, Reach>();
+      for (const reach of REACHES) {
+        const lines = paradigmLines(paradigmBlocks, links, reach);
+        const reachShows = withBlocks(shows, lines);
+        const r = reachTallies.get(reach)!;
+        r.chars.push(lines.reduce((a, l) => a + l.length + 1, 0));
+        r.leanChars.push(paradigmLines(paradigmBlocks, links, reach, "lean").reduce((a, l) => a + l.length + 1, 0));
+        if (parsed.some((words) => words.every((w) => coverWord(w, reachShows) !== "missing"))) r.selfContained++;
+        for (const w of missingWords) {
+          if (coverWord(w, reachShows) === "missing") continue;
+          r.recovered++;
+          if (closedWord(w)) r.closedRecovered++;
+          if (!firstReach.has(w)) firstReach.set(w, reach);
+        }
+      }
+      for (const c of cappedTallies) {
+        const lines = paradigmLines(paradigmBlocks, links, c.reach, "lean", c.cap, c.fill);
+        const reachShows = withBlocks(shows, lines);
+        c.chars.push(lines.reduce((a, l) => a + l.length + 1, 0));
+        if (parsed.some((words) => words.every((w) => coverWord(w, reachShows) !== "missing"))) c.selfContained++;
+      }
+      for (const w of missingWords) {
+        reachMisses.push({ english: sentence.english, word: w.raw, closed: closedWord(w), reach: firstReach.get(w) ?? "", kind: classify(w, analysis, shows, sentenceWords).kind });
+      }
+    }
     for (const word of missingWords) {
       const { kind, link } = classify(word, analysis, shows, sentenceWords);
       misses.push({ set, english: sentence.english, word: word.raw, kind, lemma: lemmaFor(word, sentenceWords), link });
@@ -663,6 +783,20 @@ for (const set of sets) {
       record.verifyCaught = [after.caught - verifyBefore.caught, after.planted - verifyBefore.planted];
     }
     itemConstructions.set(record, pageByConstruction);
+    const shownConstructions = exampleConstructions(prompt);
+    const promptAnchors = promptLinks([{ english: sentence.english, analysis }]);
+    const canon = (l: string) => canonicalAnchors.get(l) ?? l;
+    const canonLinks = new Set([...promptAnchors].map(canon));
+    const linkedPages = new Set([...promptAnchors].map((l) => l.split("#")[0]));
+    const blockLinks = new Set(paradigmLines(paradigmBlocks, canonLinks, "sheet", "lean", 6000, "nearest").length ? shownBlockLinks(canonLinks) : []);
+    itemFrames.set(
+      record,
+      [...constructions].map((id) => {
+        const home = context.anchors?.get(id) ?? "";
+        const taughtBy = (links: Iterable<string>) => [...links].some((l) => sectionConstructions.get(l)?.has(id));
+        return { id, shown: shownConstructions.has(id), wanted: promptAnchors.has(home), exists: exampleIds.has(id), canonical: canonLinks.has(canon(home)), page: linkedPages.has(home.split("#")[0]), block: blockLinks.has(canon(home)), taught: taughtBy(canonLinks), taughtBlock: taughtBy(canonLinks) || taughtBy(blockLinks) };
+      }),
+    );
     records.set(itemKey(records, sentence.english), record);
 
     rows.push({
@@ -738,6 +872,28 @@ for (const set of sets) {
   for (const record of items.get(set)!.values()) {
     const taught = itemConstructions.get(record)?.filter((c) => !structural.has(c.id));
     if (taught) record.page = [taught.filter((c) => c.page).length, taught.length];
+    const frames = itemFrames.get(record)?.filter((c) => !structural.has(c.id));
+    if (frames) record.frame = [frames.filter((c) => c.shown).length, frames.length];
+    const fm = frameMisses.get(set) ?? { wanted: 0, unwanted: 0, noExample: 0, canonical: 0, page: 0, block: 0, taught: 0, taughtBlock: 0 };
+    for (const c of frames ?? []) {
+      if (c.shown) continue;
+      if (!c.exists) fm.noExample++;
+      else if (c.wanted) fm.wanted++;
+      else {
+        fm.unwanted++;
+        if (c.canonical) fm.canonical++;
+        if (c.page) fm.page++;
+        if (c.taught) fm.taught++;
+        if (c.taughtBlock) fm.taughtBlock++;
+        if (c.block) fm.block++;
+        else {
+          const m = frameUnreached.get(set) ?? new Map<string, number>();
+          m.set(c.id, (m.get(c.id) ?? 0) + 1);
+          frameUnreached.set(set, m);
+        }
+      }
+    }
+    frameMisses.set(set, fm);
   }
 }
 
@@ -816,6 +972,14 @@ function summarize(set: SetName) {
     foundByTier: Object.fromEntries(TIERS.filter((tier) => t.tiers.has(tier)).map((tier) => [tier, t.tiers.get(tier)!])),
     rootRecall: { open: `${pct(t.open.top1, t.open.uses)} of ${t.open.uses}`, closedRowFirst: `${pct(t.closed.rowFirst, t.closed.uses)} of ${t.closed.uses}`, top1: pct(top1, totalRoots), top3: pct(top1 + (t.roots.get("top3") ?? 0), totalRoots), anywhere: pct(totalRoots - (t.roots.get("missed") ?? 0) - (t.roots.get("tagging") ?? 0), totalRoots), uses: totalRoots },
     constructions: {
+      frameShown: (() => {
+        let n = 0;
+        let d = 0;
+        for (const r of items.get(set)!.values()) if (r.frame) [n, d] = [n + r.frame[0], d + r.frame[1]];
+        return pct(n, d);
+      })(),
+      frameMisses: frameMisses.get(set),
+      frameUnreached: [...(frameUnreached.get(set) ?? [])].sort((a, b) => b[1] - a[1]).slice(0, 15).map(([id, n]) => `${id} ×${n} (${registry.get(id)?.anchor ?? "-"})`),
       uses: constructionUses,
       anchor: pct(taught.reduce((a, c) => a + c.anchor, 0), constructionUses),
       page: pct(taught.reduce((a, c) => a + c.page, 0), constructionUses),
@@ -1042,6 +1206,7 @@ refMetric("**open-class root top-1**", (s) => `**${s.rootRecall.open}**`);
 refMetric("**closed root row first**", (s) => `**${s.rootRecall.closedRowFirst}**`);
 refMetric("root recall top-1 (all) / top-3 / anywhere", (s) => `${s.rootRecall.top1} / ${s.rootRecall.top3} / ${s.rootRecall.anywhere}`);
 refMetric("construction recall anchor / page", (s) => `${s.constructions.anchor} / ${s.constructions.page}`);
+refMetric("frame shown (constructions an example uses)", (s) => s.constructions.frameShown);
 metric("**gap rate** (slots with no suggestion)", (s) => `**${s.gaps.rate}** (${s.gaps.gaps} of ${s.gaps.slots})`);
 metric("suggestions / jobs per slot", (s) => `${s.noise.suggestionsPerSlot} / ${s.noise.jobsPerSlot}`);
 metric("guess above a grammar row", (s) => `${s.noise.guessAboveGrammar} of ${s.noise.guessSlots}`);
@@ -1064,6 +1229,25 @@ for (const set of sets) {
   }
   report.push("", `## Most-missed words: ${set}`, "", "| Word | Lemma | NGSL | Sentences | Kind |", "|---|---|---|---|---|");
   for (const w of topMisses(set, 30)) report.push(`| \`${w.word}\` | ${w.lemma ? `*${w.lemma}*` : ""} | ${w.frequency} | ${w.sentences} | ${w.kind} |`);
+}
+if (reachBaseline.sentences) {
+  const b = reachBaseline;
+  report.push("", "## Paradigm blocks: dry measure (checkpoint)", "", `Would each item be self-contained if the cheat sheet blocks its linked sections reach were shown? Now: ${pct(b.selfContained, b.sentences)} of ${b.sentences}; ${b.missing} words missing, ${b.closedMissing} of them closed.`, "");
+  const perSc = (added: number[], sc: number) => (sc ? Math.round((b.promptChars + added.reduce((x, y) => x + y, 0)) / sc) : 0);
+  report.push(`Prompt characters per self-contained sentence now: ${perSc([], b.selfContained)}. Lean renders each row as its forms and English only.`, "");
+  report.push("| Reach | Self-contained | Missing words recovered | Closed recovered | Chars added median / p90 | Lean median / p90 | Chars per self-contained, full / lean |", "|---|---|---|---|---|---|---|");
+  for (const reach of REACHES) {
+    const r = reachTallies.get(reach)!;
+    report.push(`| ${reach} | ${pct(r.selfContained, b.sentences)} | ${r.recovered} of ${b.missing} | ${r.closedRecovered} of ${b.closedMissing} | ${median(r.chars)} / ${median(r.chars, 0.9)} | ${median(r.leanChars)} / ${median(r.leanChars, 0.9)} | ${perSc(r.chars, r.selfContained)} / ${perSc(r.leanChars, r.selfContained)} |`);
+  }
+  report.push("", "| Lean, capped | Self-contained | Chars added median / p90 | Chars per self-contained |", "|---|---|---|---|");
+  for (const c of cappedTallies) report.push(`| ${c.reach} ≤ ${c.cap}, ${c.fill} | ${pct(c.selfContained, b.sentences)} | ${median(c.chars)} / ${median(c.chars, 0.9)} | ${perSc(c.chars, c.selfContained)} |`);
+  const unreached = reachMisses.filter((m) => m.closed && m.reach === "all");
+  const absent = reachMisses.filter((m) => m.closed && m.reach === "");
+  const byWord = (list: typeof reachMisses) => [...list.reduce((m, x) => m.set(x.word, (m.get(x.word) ?? 0) + 1), new Map<string, number>())].sort((a, b) => b[1] - a[1]).map(([w, n]) => (n > 1 ? `\`${w}\` ×${n}` : `\`${w}\``));
+  report.push("", `Closed words on some sheet, but on none the analysis links (${unreached.length}): ${byWord(unreached).join(", ")}`);
+  report.push("", `Closed words on no sheet (${absent.length}): ${byWord(absent).join(", ")}`);
+  writeFileSync(join(TMP, "english-helper-paradigm-reach.csv"), serializeCsv(["english", "word", "closed", "reach", "kind"], reachMisses.map((m) => ({ ...m, closed: m.closed ? "yes" : "" }))));
 }
 if (ngsl.size === 0) report.push("", "NGSL ranks are blank: run `npx tsx scripts/frequency-coverage.ts` once to download the list.");
 writeFileSync(join(TMP, "english-helper-report.md"), report.join("\n") + "\n");
@@ -1096,6 +1280,8 @@ else {
     console.log(`live x compounds: ${s.liveCompounds.suggested} of ${s.liveCompounds.uses} two-root uses built (${s.liveCompounds.offered} offered in all)`);
     console.log(`found by tier: ${Object.entries(s.foundByTier).map(([t, n]) => `${t} ${n}`).join(", ")}`);
     console.log(`constructions: ${s.constructions.uses} uses — home anchor suggested ${s.constructions.anchor}, home page ${s.constructions.page}`);
+    console.log(`  frame shown ${s.constructions.frameShown} (non-structural constructions some example in the prompt uses); not shown: ${s.constructions.frameMisses?.wanted} wanted, ${s.constructions.frameMisses?.unwanted} not wanted (home linked once canonical ${s.constructions.frameMisses?.canonical}, home page linked ${s.constructions.frameMisses?.page}, home linked by a shown block row ${s.constructions.frameMisses?.block}; used by an example in a linked section ${s.constructions.frameMisses?.taught}, or in a linked or shown-block section ${s.constructions.frameMisses?.taughtBlock}), ${s.constructions.frameMisses?.noExample} with no example`);
+    console.log(`  frames neither wanted nor on a shown block: ${s.constructions.frameUnreached.join(", ")}`);
     console.log(`  (${s.constructions.structural.length} structural constructions in ≥${STRUCTURE_SHARE * 100}% of sentences not counted)`);
     console.log("\nmost-missed roots (* = tagging miss: the word was in the sentence):");
     for (const m of s.missedRoots.slice(0, 15)) console.log(`  ${String(m.count).padStart(4)}  ${m.root}${m.result === "tagging" ? "*" : " "} ${m.sense}`);
@@ -1103,6 +1289,15 @@ else {
     for (const m of s.missedConstructions.slice(0, 15)) console.log(`  ${String(m.uses - m.page).padStart(4)}/${m.uses}  ${m.id}  ${m.anchor}`);
     console.log("\nmost-missed words (not in the prompt):");
     for (const w of topMisses(set, 15)) console.log(`  ${String(w.sentences).padStart(4)}  ${w.word.padEnd(14)} ${(w.lemma || "-").padEnd(10)} ${w.kind}`);
+    console.log();
+  }
+  if (reachBaseline.sentences) {
+    console.log(`paradigm blocks, dry (checkpoint, now ${pct(reachBaseline.selfContained, reachBaseline.sentences)} self-contained; ${reachBaseline.closedMissing} of ${reachBaseline.missing} missing words closed):`);
+    for (const reach of REACHES) {
+      const r = reachTallies.get(reach)!;
+      console.log(`  ${reach.padEnd(6)} self-contained ${pct(r.selfContained, reachBaseline.sentences).padStart(6)}; recovers ${r.recovered} words (${r.closedRecovered} closed); adds ${median(r.chars)} / ${median(r.chars, 0.9)} chars median / p90 (lean ${median(r.leanChars)} / ${median(r.leanChars, 0.9)})`);
+    }
+    for (const c of cappedTallies) console.log(`  lean ${c.reach} ≤ ${c.cap} ${c.fill}: self-contained ${pct(c.selfContained, reachBaseline.sentences)}; adds ${median(c.chars)} / ${median(c.chars, 0.9)}`);
     console.log();
   }
   console.log("→ tmp/english-helper-recall.csv, tmp/english-helper-worklist.csv, tmp/english-helper-report.md");

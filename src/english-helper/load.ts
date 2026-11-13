@@ -14,6 +14,7 @@ import { dataPath, REPO_ROOT } from "../repo-paths.js";
 import type { HelperData, SectionInfo } from "./analyze.js";
 import { createHelperData, type HelperPayload } from "./browser.js";
 import { buildCueIndex, grammarPath, teachingEntry } from "./cues.js";
+import { parseParadigmBlocks, type ParadigmBlock } from "./paradigms.js";
 import { cueWords } from "./tag.js";
 import type { WordnetIndex } from "./wordnet-index.js";
 
@@ -33,6 +34,27 @@ export function loadSections(): Map<string, SectionInfo> {
     for (const [id, section] of anchors) out.set(`${page}#${id}`, { title: section.title, ...(section.band ? { band: section.band } : {}) });
   }
   return out;
+}
+
+/** `page.md#id` → `page.md#slug` of the section the id lands in, for every heading and `<a id>` on the grammar pages. */
+export function loadCanonicalAnchors(): Map<string, string> {
+  const out = new Map<string, string>();
+  for (const file of grammarFiles()) {
+    const page = grammarPath(relative(REPO_ROOT, file));
+    const { anchors } = pageSections(page, readFileSync(file, "utf8"));
+    for (const [id, section] of anchors) out.set(`${page}#${id}`, section.slug ? `${page}#${section.slug}` : page);
+  }
+  return out;
+}
+
+/** Every cheat sheet table as a paradigm block, its row links resolved to their sections (paradigms.ts). */
+export function loadParadigmBlocks(): ParadigmBlock[] {
+  const canonical = loadCanonicalAnchors();
+  return grammarFiles()
+    .map((file) => grammarPath(relative(REPO_ROOT, file)))
+    .filter((page) => page.startsWith("cheat-sheets/"))
+    .sort()
+    .flatMap((page) => parseParadigmBlocks(page, readFileSync(join(GRAMMAR_DIR, page), "utf8"), (link) => canonical.get(link) ?? link));
 }
 
 /** The committed WordNet reverse index (scripts/english-helper-wordnet.ts), when it exists. */
