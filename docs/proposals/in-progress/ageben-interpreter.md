@@ -1,12 +1,12 @@
 # Ageben interpreter: one reader and one runtime for the tools that act on meaning
 
-**Status:** IN PROGRESS. Phase 1 (classification: R1a, R1b, and the pair-table audit) done 2026-11-13; its outcome is [interpreter.md](../../meta/interpreter.md). Next: phase 2, unit S1. Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it, and existing wizard code may be discarded where the new backend makes its shape wrong. Decided 2026-11-13 (open decision 1): **text order is scope order**: where no other rule orders two frames that both reach the whole clause, the earlier covers the later; this covers a binder against any frame word. An attitude word stays outside a question (it is the speaker's, not what is asked). The grammar and the parser carry both (phase 2); the reader only copies the order.
+**Status:** IN PROGRESS. Phase 1 (classification: R1a, R1b, and the pair-table audit) done 2026-11-13; its outcome is [interpreter.md](../../meta/interpreter.md). Next: phase 2, unit S1. Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it, and existing wizard code may be discarded where the new backend makes its shape wrong. Decided 2026-11-13 (open decision 1): **text order is scope order**: where no other rule orders two frames that both reach the whole clause, the earlier covers the later; this covers a binder against any frame word. An attitude word stays outside a question (it is the speaker's, not what is asked). The grammar and the parser carry both (phase 2); the reader only copies the order. Decided 2026-11-13 (open decisions 2–6, and 7 in part, as recommended): the matcher's inference switches are membership in a stated list and a compound matching on its head, plus universal to instance for closed `zual` only, each off by default and marked on its match (2); a role the question leaves out matches anything (3); the wizard's events live in the log, each with who witnessed it, and a character's knowledge is the part of the log they saw or were told (4); the session re-parses a window the host sets, measured in phase 5 (5); MIRATIVE and a sake word stay outside a question, as an attitude word does, since each is the speaker's own (a sake word with no `/b/` is the speaker's stake, [whose stake](/for-a-sake#whose-stake)) (6); a pair that text order can give only one way keeps that order wherever S1 finds a form for the other reading (7). Decided 2026-11-13: a binder keeps its own reach rule on [joins](/joins#everything-ua) (from where it stands to the end of its sentence, and on through a stand-in), and takes its order against another binder or a frame word from the clause rule, so the order is stated once. Decided 2026-11-14: the loop never runs a command that carries a frame it has no rule for; such a turn is `beyond` ([the loop](#the-loop), unit H1). Decided 2026-11-14: what the composition constructs the grammar already has (a condition or a binder on a command, clause sequence, try and fallback) do when run is the interpreter's to define, once, as a bounded evaluator in the loop; that is later work outside this plan, sketched in `generic-ui.md`, and the non-goal now bans only new forms.
 
 **Related:** the parser's tree ([types.ts](../../../src/parse/types.ts)), [resolve.ts](../../../src/parse/resolve.ts), [ast-walk.ts](../../../src/parse/ast-walk.ts), the construction registry ([constructions.ts](../../../src/parse/constructions.ts)), [hook-jobs.ts](../../../src/parse/hook-jobs.ts), overlay kinds ([parser-pipeline.md](../../meta/parser-pipeline.md#overlay-kinds)), gloss to Ageben ([gloss-inverse.ts](../../../src/parse/gloss-inverse.ts), [glosses.md](../../meta/glosses.md#round-trip)), the wizard engine ([src/game/](../../../src/game/), [wizard-game.md](../../meta/wizard-game.md)), [read-ageben.md](../../meta/procedures/read-ageben.md). Consumers: `mind-map-view.md`, `ageben-spec.md`, `structural-search.md`, `agent-tool-permissions.md`, `wizard-adventure.md`.
 
 **Depends on:** none. **Order:** phase 3 lands before `mind-map-view.md` and before unit T1 of `ageben-spec.md`; phase 4 before that proposal's T2 and T4. Its pilot units (P1, P2) wait for nothing here.
 
-**Design authority:** phase 2 only: units S1 and S2 put the decided scope rule (Status) on its grammar pages and in the parser's resolve stage, and S1 adds to `feelings.md` that an attitude word stays outside a question. Every other unit is tooling: no form or reading changes, and the parser's accept/reject behavior does not change. Where the reader needs a meaning the grammar pages do not state, that is an open decision for the user, never a rule written into code.
+**Design authority:** phase 2 only: units S1 and S2 put the decided scope rule (Status) on its grammar pages and in the parser's resolve stage, and S1 adds to `feelings.md`, `mirative.md` and `for-a-sake.md` that an attitude word, MIRATIVE, and a sake word stay outside a question. Every other unit is tooling: no form or reading changes, and the parser's accept/reject behavior does not change. Where the reader needs a meaning the grammar pages do not state, that is an open decision for the user, never a rule written into code.
 
 ## Design
 
@@ -82,15 +82,14 @@ One typed const, `CLASSES`, transcribed from the meta note `docs/meta/interprete
 1. **One reading per clause.** A `BodyClause` gives one. A clause join gives one per member, held by a list term. A dependent, a hinge's clause, an island, and a quote give nested readings in `content`.
 2. **Nesting comes only from the tree.** A frame sits inside another only where the parse tree nests them.
 3. **Frame order.** The grammar marks what one frame reaches: a stance word inside a [scope island](/scope-islands#scope-islands) frames that chunk, one outside frames the clause, and a dependent or quote nests in the tree. Rule 2 covers all of that. What is left is two frames that both reach the whole clause. The reader sorts every such pair of families into one of four kinds, from a pair table in the meta note:
-
    | Kind | Example | The reader |
-   |------|---------|------------|
-   | **commutes** | either order says the same thing | records nothing |
-   | **fixed by word shape** | both sit in one word, in fixed slots (a say word's fields, a holder seam on its stance) | records the order in `order`, citing the word's section |
-   | **fixed by a rule** | a grammar page, or the parser's resolve stage, states the order | copies it into `order`, citing the rule |
-   | **unsettled** | the two do not commute, and nothing orders them | puts the pair in `unordered` |
+    |------|---------|------------|
+    | **commutes** | either order says the same thing | records nothing |
+    | **fixed by word shape** | both sit in one word, in fixed slots (a say word's fields, a holder seam on its stance) | records the order in `order`, citing the word's section |
+    | **fixed by a rule** | a grammar page, or the parser's resolve stage, states the order | copies it into `order`, citing the rule |
+    | **unsettled** | the two do not commute, and nothing orders them | puts the pair in `unordered` |
 
-   The decided rule (Status) makes text order a rule for every pair no other rule orders, so after phase 2 the resolve stage emits each order and the reader copies it as *fixed by a rule*. A pair still unsettled after that (open decisions 6 and 7) goes in `unordered`. The reader never picks, and neither does any consumer or host: a reading with a non-empty `unordered` is `beyond` in the loop, is marked as such in a match, and is shown as unsettled by a consumer with no loop. The parser's ambiguity check cannot see such a pair, because it reports competing trees and here there is one tree.
+    The decided rule (Status) makes text order a rule for every pair no other rule orders, so after phase 2 the resolve stage emits each order and the reader copies it as *fixed by a rule*. A pair still unsettled after that (one open decision 7 still holds) goes in `unordered`. The reader never picks, and neither does any consumer or host: a reading with a non-empty `unordered` is `beyond` in the loop, is marked as such in a match, and is shown as unsettled by a consumer with no loop. The parser's ambiguity check cannot see such a pair, because it reports competing trees and here there is one tree.
 4. **Not stated stays empty.** A missing source, holder, or closure is absent from the reading, never defaulted.
 5. **Pointers, not copies.** Every frame, detail, and term keeps its `LexWord`s, so a consumer can show the text, the gloss, and the position.
 6. **Pronouns keep both ends.** A pronoun term holds the resolver's `AnaphorBind` and, when bound, its antecedent's term. The reader never binds one itself.
@@ -111,7 +110,7 @@ One typed const, `CLASSES`, transcribed from the meta note `docs/meta/interprete
 - **Frames on the question**, other than its own ask force, are filters: the target must carry a frame of that family with equal `values` and a matching `party`.
 - **An unsettled pair travels with the match.** A reading with a non-empty `unordered` still matches on its claim, and the match says which pair is unsettled, so no consumer can file it under a heading that assumes an order.
 - **A match carries its frame path**: the frames on the matched reading and on every reading that contains it. *Ana says Lee never paid her* matches a question about Lee paying Ana with the path *reported by Ana, denied*. The matcher never decides that a framed claim holds; the host's `verdict` does.
-- **Widening** (compound to its head) and **inference** (universal to instance, membership in a stated list) are switches, off by default, and every match found through one says so.
+- **Widening** (compound to its head) and **inference** (membership in a stated list; universal to instance, for closed `zual` only) are switches, off by default, and every match found through one says so.
 
 ### The host
 
@@ -138,7 +137,9 @@ Every member but `refer` is optional. A host with none of the rest is a pure rea
 | question | `ask`, then `holds`, then `verdict`; replies |
 | command, prohibition | resolves the roles with `refer`, then runs `handler` |
 
-**Outcomes** are the wizard's three failures, made general, plus success: `parse` (did not parse), `beyond` (parsed, but `unread`, `unordered`, or `accepts` is non-empty, or no handler), `refused` (the host or its verdict said no), `ok`. The three failures always stay distinct, and `beyond` always names its parts. Agent permissions' *fail closed* is this rule.
+**A framed command fails closed.** A command or prohibition runs only when every frame on its reading, other than its force, is in the loop's **pass-through list**: the frame families that leave what the command does unchanged. The list is a typed const beside `CLASSES`, transcribed from the meta note, and each row cites the grammar section that says so. Any other frame (a condition, a binder, a stance, a holder, a family with no row) makes the turn `beyond` and names the frame, so *if the build fails, delete the branch* never deletes the branch. No host can add to the list: `accepts` narrows what a host takes, never widens it. A statement or a question is not affected; its frames are kept in the log or used as filters.
+
+**Outcomes** are the wizard's three failures, made general, plus success: `parse` (did not parse), `beyond` (parsed, but `unread`, `unordered`, or `accepts` is non-empty, or no handler, or a command carries a frame outside the pass-through list), `refused` (the host or its verdict said no), `ok`. The three failures always stay distinct, and `beyond` always names its parts. Agent permissions' *fail closed* is this rule.
 
 ### Replies
 
@@ -185,46 +186,158 @@ Five phases, each one orchestrator session, run through subagents. Phase 1 (clas
 
 ### Phase 2: the scope rule
 
-| ID | Items | Agent | `model` | effort | May edit |
-|----|-------|-------|---------|--------|----------|
-| S1 | **Grammar.** On [clause](/clause), next to [stance](/clause#stance-th), state the decided rule (Status): when two words that each cover the whole clause share it, the earlier covers the later, with a sample of each order; name or link the standing exceptions (the pair table's *fixed by a rule* and *fixed by word shape* rows). Rewrite the sentences that now say such a word means the same wherever it sits: [can and can't](/can-and-cant#intention-adverbs), [intention](/intention) (PLAN), [try](/try), [residue and former](/residue-and-former) (RESIDUE, FORMER), and any more that `grep -rn -i 'wherever it sits\|anywhere in the sentence\|meaning stays the same' docs/grammar` finds. An ordinary adverb's free placement stays. Broaden the binder sentence in [joins](/joins#everything-ua): a frame word after a binder is inside it, one before covers it. Add to [speaker attitude](/feelings#speaker-attitude) that an attitude word stays outside a question. Check the Practice sections on each edited page for an answer the rule changes. **Then the note:** move every pair-table row the rule settles to *fixed by a rule*, citing the new anchor (force × attitude cites `feelings.md`), and recount. This settles the binder rows phase 1 disagreed on (binder × intention, ability, say, residue). Leave force × sake and force × mirative (open decision 6). List each pair whose forms have fixed positions, so that text order allows only one of its orders (a hinge with `blarl` kept last, a force word first), under open decision 7, with how the other reading can be said, and leave it unsettled. Rows in [unassigned-reserved.md](../../meta/unassigned-reserved.md) and [design-decisions.md](../../meta/design-decisions.md) only if a form loses its reading | `proposal-worker` | `opus` | `high` | the grammar pages named, `docs/meta/interpreter.md`, `docs/meta/design-decisions.md`, `docs/meta/unassigned-reserved.md`, this file's open decisions 6 and 7 |
-| S2 | **Parser.** Transcribe the frame part of the classification table (key → family, and whether it reaches the whole clause) into `src/parse/scope.ts`. In the resolve stage, emit for each clause the order of every two whole-clause frames: the earlier over the later, except where a pair-table row orders them otherwise (copied as data, with its anchor; never re-derived), and no order for a pair still unsettled. Expose it on the resolved tree, each order with the anchor of its rule. Accept/reject unchanged unless S1 took a form's reading away. Tests beside the source. Then `grammar-check` per [read-ageben.md](../../meta/procedures/read-ageben.md). Report the record's shape for R2 | `proposal-worker` | `opus` | `high` | `src/parse/**` |
-| S3 | Style review of the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before S1 | `style-editor` (fresh) | `opus` | `high` | the listed sections |
+Order: S1 → S2 → S3, in sequence. S1 and S2 land in **one commit**, since parser changes ship with the grammar edit that teaches them. If S1 changes `say-*.md` or `english.md`, the recall gate applies. **Cut:** after S3; the user decides open decision 7 before phase 3 if S1 logged pairs there.
 
-Order: S1 → S2 → S3, in sequence. S1 and S2 land in **one commit**, since parser changes ship with the grammar edit that teaches them. If S1 changes `say-*.md` or `english.md`, the recall gate applies. **Cut:** after S3; the user decides open decisions 6 and 7 before phase 3 if S1 logged pairs there.
+#### S1: grammar, then the note
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** the grammar pages named below, `docs/meta/interpreter.md`, `docs/meta/design-decisions.md`, `docs/meta/unassigned-reserved.md`, this file's open decision 7.
+
+Grammar:
+
+- **The rule.** On [clause](/clause), next to [stance](/clause#stance-th), state the decided rule (Status): when two words that each cover the whole clause share it, the earlier covers the later, with a sample of each order. Name or link the standing exceptions (the pair table's *fixed by a rule* and *fixed by word shape* rows).
+- **Position-free wording.** Rewrite the sentences that now say such a word means the same wherever it sits: [can and can't](/can-and-cant#intention-adverbs), [intention](/intention) (PLAN), [try](/try), [residue and former](/residue-and-former) (RESIDUE, FORMER), and any more that `grep -rn -i 'wherever it sits\|anywhere in the sentence\|meaning stays the same' docs/grammar` finds. An ordinary adverb's free placement stays.
+- **Binders.** In [joins](/joins#everything-ua), keep the reach: a binder reaches from where it stands to the end of its sentence, and on through a stand-in. For the order between two such phrases, and against a frame word, link back to the clause rule rather than state it again (Status). Keep the dog-and-cat samples.
+- **Outside a question.** Add to [speaker attitude](/feelings#speaker-attitude) that an attitude word stays outside a question, to [it turns out](/mirative) that MIRATIVE does, and to [whose stake](/for-a-sake#whose-stake) that a sake word does, since with no `/b/` the stake is the speaker's (Status, decision 6).
+- **Fixed positions.** For each pair whose forms have fixed positions, so that text order allows only one of its orders (a hinge with `blarl` kept last, a force word first; this includes the inside readings of force × sake and force × mirative, such as *does Azozon walking serve your health?*), look for how the other reading can be said today (a `/w/` form, a carried frame, a second sentence). Where there is one, the pair keeps its order (decision 7): say so with the standing exceptions on [clause](/clause), with a sample of the other form. Where there is none, list the pair under open decision 7 and leave it unsettled.
+- **Practice.** Check the Practice sections on each edited page for an answer the rule changes.
+- **Reserved forms.** Rows in [unassigned-reserved.md](../../meta/unassigned-reserved.md) and [design-decisions.md](../../meta/design-decisions.md) only if a form loses its reading.
+
+Then the note:
+
+- Move every pair-table row the rule settles to *fixed by a rule*, citing the new anchor, and recount. Force × attitude cites `feelings.md`, force × mirative `mirative.md`, force × sake `for-a-sake.md`; a fixed-position pair with a form for its other reading cites the clause page.
+- Binder × frame rows cite the clause rule. This settles the binder rows phase 1 disagreed on (binder × intention, ability, say, residue). In the `binder` scope statement, cite the clause rule for order and `joins.md` for reach.
+
+#### S2: parser
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/parse/`**.
+
+- Transcribe the frame part of the classification table (key → family, and whether it reaches the whole clause) into `src/parse/scope.ts`.
+- In the resolve stage, emit for each clause the order of every two whole-clause frames: the earlier over the later, except where a pair-table row orders them otherwise (copied as data, with its anchor; never re-derived), and no order for a pair still unsettled. Expose it on the resolved tree, each order with the anchor of its rule.
+- Accept/reject unchanged unless S1 took a form's reading away.
+- Tests beside the source. Then `grammar-check` per [read-ageben.md](../../meta/procedures/read-ageben.md).
+- Report the record's shape for R2.
 
 ### Phase 3: the reader
 
-| ID | Items | Agent | `model` | effort | May edit |
-|----|-------|-------|---------|--------|----------|
-| R2 | `src/interpret/types.ts`, `classes.ts` (transcribed from the note; the frame rows import `src/parse/scope.ts` rather than copy it), `read.ts`, `browser.ts`, tests. `order` is copied from the resolve stage's record; the grounds and carried-frame links are added to `Link`. Tests: one fixture per frame family and one per pair kind, written as morph gloss and spelled by gloss-inverse; the coverage test against `constructionRegistry()` (the note's *Construction ids* section is its list; `tmp/r1a-note.ts` generated it); a test that every two families that can share a clause have a pair-table row; a sweep that reads every doc example ([llm-examples.ts](../../../src/parse/llm-examples.ts)) without throwing and writes to `tmp/` the `unread` counts by construction id and the doc examples that hold a pair still unsettled, by pair | `proposal-worker` | `opus` | `high` | `src/interpret/**` |
-| R3 | `scripts/reading.mjs` and the `reading` npm script: compact text by default, `--json`. One paragraph in [read-ageben.md](../../meta/procedures/read-ageben.md) saying when to use it | `proposal-worker` | `sonnet` | `medium` | `scripts/reading.mjs`, `src/interpret/cli.ts`, `package.json`, `docs/meta/procedures/read-ageben.md` |
-| R4 | Fresh-context audit: 30 doc examples spread across the frame families (`node scripts/find.mjs` by construction). Compare each reading with the sentence's `--llm-prompt` meaning. Fail any reading where something that changes truth, force, or owner is a detail, where a frame order is claimed with no rule behind it, where a pair the table calls *commutes* gives two different meanings, or where a stated field is missing. Report failures; edit only test fixtures | `proposal-worker` (fresh) | `opus` | `high` | `src/interpret/read.test.ts` |
-
 Order: R2 → R3 → R4, in sequence. R4 failures go to a fresh R2-style subagent with the failing sentences and the diff stat. `mind-map-view.md` and T1 of `ageben-spec.md` may start once this phase is committed.
+
+#### R2: the reader
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/interpret/`**.
+
+- `src/interpret/types.ts`, `classes.ts` (transcribed from the note; the frame rows import `src/parse/scope.ts` rather than copy it), `read.ts`, `browser.ts`, tests.
+- `order` is copied from the resolve stage's record; the grounds and carried-frame links are added to `Link`.
+- Tests:
+  - one fixture per frame family and one per pair kind, written as morph gloss and spelled by gloss-inverse
+  - the coverage test against `constructionRegistry()` (the note's *Construction ids* section is its list; `tmp/r1a-note.ts` generated it)
+  - a test that every two families that can share a clause have a pair-table row
+  - a sweep that reads every doc example ([llm-examples.ts](../../../src/parse/llm-examples.ts)) without throwing and writes to `tmp/` the `unread` counts by construction id and the doc examples that hold a pair still unsettled, by pair
+
+#### R3: the `reading` CLI
+
+**Agent:** `proposal-worker`, `sonnet`, `medium`.
+**May edit:** `scripts/reading.mjs`, `src/interpret/cli.ts`, `package.json`, `docs/meta/procedures/read-ageben.md`.
+
+- `scripts/reading.mjs` and the `reading` npm script: compact text by default, `--json`.
+- One paragraph in [read-ageben.md](../../meta/procedures/read-ageben.md) saying when to use it.
+
+#### R4: reader audit
+
+**Agent:** `proposal-worker` (fresh), `opus`, `high`.
+**May edit:** `src/interpret/read.test.ts`.
+
+- 30 doc examples spread across the frame families (`node scripts/find.mjs` by construction). Compare each reading with the sentence's `--llm-prompt` meaning.
+- Fail any reading where something that changes truth, force, or owner is a detail, where a frame order is claimed with no rule behind it, where a pair the table calls *commutes* gives two different meanings, or where a stated field is missing.
+- Report failures; edit only test fixtures.
 
 ### Phase 4: log and matcher
 
-| ID | Items | Agent | `model` | effort | May edit |
-|----|-------|-------|---------|--------|----------|
-| M1 | `log.ts`, `match.ts`, `ask.ts`, tests. Tests include the five-sentence *who paid Ana?* example from `structural-search.md`, written as morph gloss: four matches under four frame paths, and no match for the reversed roles | `proposal-worker` | `opus` | `high` | `src/interpret/**` |
-| M2 | `value.ts`: a number's and a measure's value from its `NumberStem`, for comparison; literal payload equality. The inference and widening switches the user accepted (open decision 2), each off by default and marked on every match it produces | `proposal-worker` | `opus` | `medium` | `src/interpret/**` |
-| M3 | `reading ask FILE QUERY` and `reading log FILE` in the CLI, printing each match with its frame path and both sentences' glosses | `proposal-worker` | `sonnet` | `medium` | `scripts/reading.mjs`, `src/interpret/cli.ts` |
-| M4 | Fresh-context audit: 20 question / passage pairs built from doc examples. Every match must be explained by pointing at the two trees; no match across reversed roles; no frame path that misstates its sentence. Report failures; edit only test fixtures | `proposal-worker` (fresh) | `opus` | `high` | `src/interpret/*.test.ts` |
-
 Order: M1 → M2 → M3 → M4. T2 and T4 of `ageben-spec.md` may start once this phase is committed.
+
+#### M1: log, match, ask
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/interpret/`**.
+
+- `log.ts`, `match.ts`, `ask.ts`, tests.
+- Tests include the five-sentence *who paid Ana?* example from `structural-search.md`, written as morph gloss: four matches under four frame paths, and no match for the reversed roles.
+
+#### M2: values and switches
+
+**Agent:** `proposal-worker`, `opus`, `medium`.
+**May edit:** `src/interpret/`**.
+
+- `value.ts`: a number's and a measure's value from its `NumberStem`, for comparison; literal payload equality.
+- The switches decided in open decision 2 (membership in a stated list; a compound matching on its head; universal to instance, for closed `zual` only), each off by default and marked on every match it produces.
+
+#### M3: `ask` and `log` in the CLI
+
+**Agent:** `proposal-worker`, `sonnet`, `medium`.
+**May edit:** `scripts/reading.mjs`, `src/interpret/cli.ts`.
+
+- `reading ask FILE QUERY` and `reading log FILE`, printing each match with its frame path and both sentences' glosses.
+
+#### M4: matcher audit
+
+**Agent:** `proposal-worker` (fresh), `opus`, `high`.
+**May edit:** `src/interpret/*.test.ts`.
+
+- 20 question / passage pairs built from doc examples.
+- Every match must be explained by pointing at the two trees; no match across reversed roles; no frame path that misstates its sentence.
+- Report failures; edit only test fixtures.
 
 ### Phase 5: host, loop, replies, and the wizard
 
-| ID | Items | Agent | `model` | effort | May edit |
-|----|-------|-------|---------|--------|----------|
-| H1 | `host.ts`, `run.ts`, `reply.ts`, tests against a toy host of three entities: each force, each outcome, each shared reply shape | `proposal-worker` | `opus` | `high` | `src/interpret/**` |
-| W1 | The wizard host: `src/game/host.ts` (`refer`, `holds`, `handler`, `told`, `accepts`) over the kept world model. Delete the files and types in the left column of [the wizard on the interpreter](#the-wizard-on-the-interpreter); the engine's turn calls `run`; handlers take a reading | `proposal-worker` | `opus` | `high` | `src/game/**`, `docs/grammar/.vitepress/lib/wizard.data.ts`, `docs/grammar/.vitepress/components/WizardSandbox.vue` |
-| W2 | Events, told facts, mentions, and what a character knows move to the log, if open decision 4 is accepted. Reply shapes the shared ones cover leave `generate.ts` | `proposal-worker` | `opus` | `high` | `src/game/**` |
-| W3 | Fresh-context check: play every walkthrough and 15 off-script lines per failure kind; confirm the three failures stay distinct and each `beyond` names its parts. Update [wizard-game.md](../../meta/wizard-game.md) to describe what exists | `proposal-worker` (fresh) | `opus` | `medium` | `src/game/*.test.ts`, `docs/meta/wizard-game.md` |
-| C1 | Finish `docs/meta/interpreter.md`: the host contract and how to write a host. Add a pointer from [parser-pipeline.md](../../meta/parser-pipeline.md). Report the `AGENTS.md` rows (editor notes: `interpreter.md`, which owns the reading terms, frame families, classification table, pair table, reader rules and host contract; tooling notes: classify a construction when the parser gains one) | `proposal-worker` | `opus` | `medium` | `docs/meta/interpreter.md`, `docs/meta/parser-pipeline.md` |
-
 Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` rows, then deletes this proposal.
+
+#### H1: host, loop, replies
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/interpret/`**.
+
+- `host.ts`, `run.ts`, `reply.ts`.
+- Tests against a toy host of three entities: each force, each outcome, each shared reply shape.
+- The pass-through list ([the loop](#the-loop)): draft it from the frame families in `docs/meta/interpreter.md`, one row per family the owning grammar page shows leaves a command's action unchanged, with its anchor. A family the pages do not settle stays off the list and is logged as an open decision. Tests: a command under a condition, under a binder, and under a holder each give `beyond`, name the frame, and call no handler; a toy host whose `accepts` returns nothing still cannot run them.
+- The re-parse window is a host setting (decision 5).
+
+#### W1: the wizard host
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/game/`**, `docs/grammar/.vitepress/lib/wizard.data.ts`, `docs/grammar/.vitepress/components/WizardSandbox.vue`.
+
+- `src/game/host.ts` (`refer`, `holds`, `handler`, `told`, `accepts`) over the kept world model.
+- Delete the files and types in the left column of [the wizard on the interpreter](#the-wizard-on-the-interpreter).
+- The engine's turn calls `run`; handlers take a reading.
+
+#### W2: wizard knowledge in the log
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/game/`**.
+
+- Events, told facts, mentions, and what a character knows move to the log (decision 4).
+- Reply shapes the shared ones cover leave `generate.ts`.
+
+#### W3: wizard check
+
+**Agent:** `proposal-worker` (fresh), `opus`, `medium`.
+**May edit:** `src/game/*.test.ts`, `docs/meta/wizard-game.md`.
+
+- Play every walkthrough and 15 off-script lines per failure kind; confirm the three failures stay distinct and each `beyond` names its parts. Among the `beyond` lines, include commands under a condition and under a binder, and confirm the world does not change.
+- A walkthrough line that is a command with a frame off the pass-through list is a finding for the user (the frame joins the list by a grammar citation, or the line changes), never a host-side exception.
+- Measure the turn time against the re-parse window and set the wizard's window (decision 5).
+- Update [wizard-game.md](../../meta/wizard-game.md) to describe what exists.
+
+#### C1: the interpreter note
+
+**Agent:** `proposal-worker`, `opus`, `medium`.
+**May edit:** `docs/meta/interpreter.md`, `docs/meta/parser-pipeline.md`.
+
+- Finish `docs/meta/interpreter.md`: the host contract, the pass-through list, and how to write a host.
+- Add a pointer from [parser-pipeline.md](../../meta/parser-pipeline.md).
+- Report the `AGENTS.md` rows (editor notes: `interpreter.md`, which owns the reading terms, frame families, classification table, pair table, reader rules and host contract; tooling notes: classify a construction when the parser gains one).
 
 ### Rule digest (pasted into every brief)
 
@@ -234,6 +347,7 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 > - The reader copies the tree. It never re-derives a reading, binds a pronoun, defaults a missing field, or claims a scope order no rule states.
 > - Scope rule (decided 2026-11-13): where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later. The grammar states it and the resolve stage emits it (phase 2); the reader copies the emitted order. A pair still unsettled goes in the reading's `unordered`, and no reader, consumer, or host ever picks an order for it.
 > - A meaning the grammar pages do not state is an open decision: log the sentence, the options, and a recommendation, skip the item, and go on.
+> - A command runs only when every frame on it, other than its force, is on the loop's pass-through list. Anything else is `beyond`. No host widens the list or runs a framed command itself.
 > - No consumer and no host walks the parse tree for meaning. If a reading lacks what you need, stop and report; the fix is a table row, not a local walker.
 > - Code never spells a root. Write test Ageben as morph gloss and spell it with gloss-inverse; name roots by concrete sense.
 > - TypeScript, Node ≥ 24, tests with `tsx --test` beside the source (`*.test.ts`). Reuse `src/parse/`.
@@ -261,14 +375,9 @@ One per unit after its gate (S1 and S2 share one), and one per phase for the con
 
 ## Open decisions
 
-None blocks phase 2. Open decision 1 (scope order) is decided; see Status. Numbers stay stable because the body cites them.
+None blocks phase 2. Open decisions 1–6 are decided, and 7 in part; see Status. Numbers stay stable because the body cites them.
 
-2. **Which inference steps the matcher may take** (phase 4). (a) None. (b) Universal to instance: a claim about every member answers a question about one. (c) Membership in a stated list. (d) A compound matches a question on its head. Phase 1 found that closed `zual` claims no exceptions, while open `zuam` "leaves the list of exceptions open" (`universals-domains.md#not-every`). **Recommendation:** (c) and (d) as switches, each marked on the match; (b) as a switch for closed `zual` only.
-3. **Does a question with fewer roles match a fuller claim?** (a) Yes: an unstated role matches anything. (b) Only an explicit blank does. **Recommendation:** (a). *Who paid Ana?* should find *Sam paid Ana yesterday*, and (b) would make every question list every role.
-4. **Do the wizard's events live in the log?** (a) Yes: each event is a logged claim with who witnessed it, and a character's knowledge is the part of the log they saw or were told. (b) Keep `World.events` and `Entity.knows`, and answer past-tense questions through `holds`. **Recommendation:** (a). The mysteries, companions, and belief puzzles in `wizard-adventure.md` all need *who knows what, and how*, which is the log with its frames; (b) would build that a second time.
-5. **How long a transcript the session re-parses.** (a) All of it. (b) A window set by the host. **Recommendation:** (b), with the window measured in phase 5 against the wizard's turn time; nothing depends on it earlier.
-6. **A sake word or MIRATIVE in a question.** A force word comes first, so text order puts these inside what is asked: `yel zazozon vowurol thobatham.` would be *does Azozon walking serve your health?*, and `yel zazozon vowurol themem.` *did it surprise you that Azozon walks?* The alternative keeps them outside, as decided for an attitude word: *does Azozon walk? (that would serve my health / that surprises me)*. (a) Text order (inside). (b) Outside, like attitude. **Recommendation:** (b) for MIRATIVE, since the surprise is the speaker's own reaction, as an attitude is. For a sake word, (b) if [sakes](/sakes) makes the stake the speaker's when none is named, else (a), so that a question can ask whose health a thing serves. Blocks only these two rows of S1.
-7. **Pairs that text order can give only one way.** Some frames have a fixed position (a hinge with `blarl` is kept last; a force word comes first), so text order allows only one of the two orders. S1 lists each such pair here, with how the other reading can be said today (a `/w/` form, a carried frame, a second sentence), and leaves it unsettled. Options per pair: (a) keep the one order, and say the other with the form S1 lists; (b) let the frame move. **Recommendation:** (a) where S1 finds a form for the other reading, since moving a hinge or a force word would undo rules learners meet first; no basis yet where S1 finds none.
+7. **Pairs that text order can give only one way, with no form for the other reading.** Some frames have a fixed position (a hinge with `blarl` is kept last; a force word comes first), so text order allows only one of the two orders. Where S1 finds a form for the other reading, the pair keeps its order (Status). S1 lists here each pair where it finds none, and leaves it unsettled. Options per pair: (a) keep the one order, and leave the other reading unsayable for now; (b) let the frame move. **Recommendation:** no basis yet; the listed pairs settle it, with how much each missing reading matters to a learner.
 
 ## Background
 
@@ -298,7 +407,7 @@ All five split a sentence the same way: a bare clause (who does what to whom), a
 
 ### Non-goals
 
-- **No programming language.** *Execute* here means: log a statement, answer a question, hand a command to the host. No control flow, variables, or types are added to Ageben.
+- **No new forms for programming.** No control flow, variables, or types are added to Ageben. In this plan, *execute* means: log a statement, answer a question, hand a bare command to the host. The grammar already has constructs that compose commands (a condition, a binder, clause sequence, try and fallback). What they do when run is one meaning for every host, so the interpreter will define it, in a bounded evaluator that always terminates; that is later work (`generic-ui.md`), and until it lands such a command is `beyond` ([the loop](#the-loop)).
 - **No second grammar authority.** The reader copies what the tree says. It never re-derives a reading, and every table row cites the grammar section that owns it.
 - **No inference by default.** The matcher is structural. Each inference step is a named switch that stays off until the user accepts it ([open decisions](#open-decisions)).
 - **No paraphrase and no ranking.** A different root is a different claim.
