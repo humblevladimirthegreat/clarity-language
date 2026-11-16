@@ -11,7 +11,6 @@ Only the five most recent posts are kept in full below. Older posts are summariz
 
 Not yet posted. Read the owning grammar page before drafting.
 
-* **Thanks and sorry** (`thanks-and-sorry.md`): gratitude and apology have dedicated structure. Most on-theme, easy vivid examples.
 * **Mirative** (`mirative.md`): marks "this surprised me" as the speaker's reaction, not a claim about the world. Pairs with the *may* and future-evidentiality posts.
 * **Already / still / not yet / no longer** (`already-still-yet.md`): expectation-aware aspect words that encode what you expected, not just timing.
 * **Residue and former** (`residue-and-former.md`): marks what is left over from an earlier state.
@@ -24,6 +23,50 @@ Not yet posted. Read the owning grammar page before drafting.
 * **Cheat sheets and the English helper**: tooling that makes the language easier to learn.
 
 ## Recent posts
+
+### Thanks and Sorry Built From What Happened
+
+Ageben has no set phrase for "thanks" or "sorry". Instead it builds it from the Sake words: nine psychological payoffs (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified).
+
+To thank someone, you say which of your sakes they met and whether it is a short term or long term benefit.
+
+> `thuwathal.`
+>
+> th + uwa + tha + l
+>
+> th-competence-met-lasting
+>
+> "Thanks, that sets me up for the long run." (e.g. someone taught you a skill)
+
+> `thobathar.`
+>
+> th + oba + tha + r
+>
+> th-physical-met-immediate
+>
+> "Thanks, that got me through." (e.g. someone handed you water mid-hike)
+
+To apologize, you use the unmet form with how long the damage lasts, followed by whose sake was hurt.
+
+> `thawethum blawan.`
+>
+> th + awe + thu + m | bl + awan
+>
+> th-relatedness-unmet-modifiable | bl-listener
+>
+> "I'm sorry; that hurt your sense of connection." (e.g. you forgot their birthday)
+
+> `thunathur blawan.`
+>
+> th + una + thu + r | bl + awan
+>
+> th-autonomy-unmet-passing | bl-listener
+>
+> "My bad; that took the choice away from you." (e.g. you ordered for them)
+
+You can't thank or apologize in Ageben without indicating which need was involved, and the other person hears exactly what their help (or your mistake) did. This helps foster compassion and understanding.
+
+Full docs: https://clarityconlang.com/grammar/thanks-and-sorry.html
 
 ### Evidentials Required for Other People's Minds
 
@@ -132,25 +175,11 @@ When you want to be extra sure that *don't* isn't missed, you can also say yul t
 
 Full docs: https://clarityconlang.com/grammar/speech-moves.html#act-word-order
 
-### Labels Say How Far They Reach
-
-Judging a person's character from one action is a common cognitive distortion (the fundamental attribution error), and treating that character as a fixed essence (Essentialism) makes it worse. Both make us less compassionate towards others.
-
-Ageben lets any label mark how essential we treat the behavior with an infix before the ending letter:
-
-- **tha** — this one occasion: `gozovothul` "lazy this time" (one slow day is not a trait)
-- **the** — a pattern with exceptions: `gozovothol` "tends to be lazy" (as opposed to being a consistently lazy person)
-- **tho** — true in one relationship: `gozovothem blalahen` "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
-- **thu** — a name only, not an explanation: `gozovothal` "what gets called lazy" (society's view is not a confirmed trait)
-
-It's an optional efficient way to express a more charitable view of someone's trait.
-
-You can learn more here: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/label-seams.html#label-reach
-
 ## Older posts (summaries)
 
 Full text is in [cool-features-archive.md](cool-features-archive.md). Newest first.
 
+* **Labels Say How Far They Reach**: an infix before a label's ending marks how essential the trait is: `tha` this one occasion, `the` a pattern with exceptions, `tho` true in one relationship, `thu` a name only.
 * **Collective Verbs and Adjectives Use Plural**: `-x` on a verb or adjective means the group does or has it collectively (`vezehelx` sing together, `garagamx` collectively heavy), independent of whether the noun is plural.
 * **May Says If You're Finding Out**: stance `ovu` (*may*) takes an ending saying whether you'll find out (`-m` plain possibility, `-l` I'll find out, `-r` who knows).
 * **Greetings and Goodbyes Set Conversation Length**: name greeting suffixes `-xan/-xen/-xon/-xun` set open-ended / brief / quick / passing; at departure the same forms say how soon you leave. The lower level wins.

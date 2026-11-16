@@ -102,6 +102,16 @@ A detective subsystem for the language's bias-awareness theme: the player works 
 - **Generated cases.** A case is a small hidden event graph (who did what, who saw, heard or inferred which part), and witnesses' lines come from it through the same generator as narration. In the interpreter's terms the hidden events are logged claims, each witness holds the part of that log they saw or were told, and a witness's line is one of those claims under the evidence frame for how they came by it. An interview is a question matched against one witness's log; checking an accusation is a match against the hidden claims, and overreach is a stance on the player's sentence stronger than the evidence frames behind it. Authored cases carry the main thread; generated ones are errands that review what is due.
 - **The journal holds the evidence**, each claim with its witness and source marking, so the player reasons from a record rather than memory.
 
+### Mediations {#mediations}
+
+Proposed 2026-11-16. A third subsystem, for the empowerment theme: two villagers want things that clash, and the player helps them find a plan that serves both. Mysteries carry bias awareness and companions carry compassion; without this, sakes, plans and choice have no play of their own. It opens with [sakes](/for-a-sake), like companions.
+
+- **Ask for the sake, not the position.** Each party states what they want done; the player asks what it is for ([whose stake](/for-a-sake#whose-stake)). The sakes are authored or drawn from the [sake inventory](/sakes#sake-inventory), and a character gives theirs only when asked.
+- **A proposal is a sentence.** The player states a plan, with a fallback where one is needed ([intention](/intention), [try](/try)). The solver's goal and plan check decides whether it serves every stated sake; when it does not, the party it fails says which sake is unmet.
+- **Each party agrees for themselves.** A plan that serves both still needs each one's [consent](/permission-consent#consent), and the rule from companions holds: pressure never works.
+- **No single right answer.** Any plan that serves all the sakes closes the mediation, including one neither party first asked for.
+- **Generated mediations are errands**, filled with what is due for review; authored ones carry the main thread.
+
 ### Turns {#turns}
 
 Each line the player types goes through three steps:
@@ -211,6 +221,21 @@ Impossible quests come from **dead ends**: the player burns the only key or driv
 3. **Reachability check.** Each quest's preconditions and effects are data, and a search confirms the goal is reachable from the start and from every reachable state. It searches the quest's abstract state, not the whole world, so it needs no planner library.
 
 The first and third do most of the work; the walkthroughs catch drift between the engine's real behavior and the quest data.
+
+### Upgrades from the interpreter and the solver {#interpreter-upgrades}
+
+Proposed 2026-11-16. Each takes a part the shared interpreter or the solver (`clingo-solver.md`) already plans, named in brackets as in `various-interpreter-applications.md`. Each arrives with the area whose grammar it needs; none changes the milestones' order.
+
+- **Feedback by reading** [reader, matcher]. A sentence that parses but says something other than what the scene called for is still carried out, and a character then names the frame that differs (*you made the door the one who opens*). Today such a sentence gets only its gloss. Repetition is graded per construction in the sentence, not per sentence.
+- **Solver-built mysteries** [solver]. A generated case has exactly one solution at a chosen difficulty, with the puzzle generator of `logic-grids.md`. Each witness concludes only from what they saw or were told, so a witness can be honestly wrong and can mark a claim as inferred. A fault accusation is checked by switching the named cause off and solving again.
+- **A familiar that hints with a question** [solver]. When the player is stuck in an interview or an information gap, the familiar asks the question whose answer would narrow things most, in Ageben within the player's reach. The hint is input the player can reuse. The same measure lets a character remark on how much the player's own question settled.
+- **The journal keeps the quest log** [log, matcher]. It lists the questions nobody has answered and what the player and each character planned, promised or consented to, taken from the conversation itself. A bargain then matters with no authored quest text.
+- **Divination class scored on calibration** [log]. The player states a prediction with a likelihood number, and a later *it turns out* resolves it. The reward is for being well calibrated over many predictions, not for being right once. It opens with [numbers](/numbers) and [knowing](/knowing).
+- **Spell proofreading** [solver]. Before a trap or lasting enchantment is cast, the spellbook names the case it does not cover (*this fires if the door opens, and you named no fallback if the guard opens it*). The familiar can also take standing orders, with what it may do and on whose say, as in `agent-tool-permissions.md`.
+- **Characters who push back on reasoning** [solver]. A character answers an argument with *that follows only if also …*, and can say which of their own beliefs rest only on what someone told them. The puzzle of freeing a character from a belief with no evidence ([themes](#abstract-senses-and-the-languages-themes)) can then be generated.
+- **Reading preview in the input box** [reader]. Before sending, the player sees the claim, its frames, and where each pronoun points. It is a [fading scaffold](#learning-principles): on in the first wing, optional later.
+
+Open: whether feedback by reading should speak when the player may have meant the odd result. Options: always; only when the result fails the scene's current goal; only on request. **Recommendation:** only when it fails the current goal, so experiment is never corrected.
 
 ### Derived from the docs {#derived-from-the-docs}
 

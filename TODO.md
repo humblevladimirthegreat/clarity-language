@@ -16,12 +16,12 @@ https://discord.gg/CAMGw2Akhc
 -should any other cheat sheets be added?
 -profile build
 -tmp purging?
--blog posts about using AI; public repo containing tips and tricks that can serve as a template
 -speed reading view becomes outline mode?
 -consider conceptual metaphor of past is in front of us (because we can see it)
 Cheat sheet distinguish cue vs exact match
--use jev for translation?
+-split pages with only one h3 into multiple h3s
 -use fable to identify new ideas
+-consider how to make non-LLM agentic AI (can complete high level tasks from ageben prompt)
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth

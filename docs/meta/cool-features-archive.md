@@ -3,6 +3,21 @@
 
 Full text of older posts to the r/conlangs Cool Features You've Added thread, moved out of [cool-features.md](cool-features.md) to save context. Newest first. Spellings and details may be out of date.
 
+### Labels Say How Far They Reach
+
+Judging a person's character from one action is a common cognitive distortion (the fundamental attribution error), and treating that character as a fixed essence (Essentialism) makes it worse. Both make us less compassionate towards others.
+
+Ageben lets any label mark how essential we treat the behavior with an infix before the ending letter:
+
+- **tha** — this one occasion: `gozovothul` "lazy this time" (one slow day is not a trait)
+- **the** — a pattern with exceptions: `gozovothol` "tends to be lazy" (as opposed to being a consistently lazy person)
+- **tho** — true in one relationship: `gozovothem blalahen` "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
+- **thu** — a name only, not an explanation: `gozovothal` "what gets called lazy" (society's view is not a confirmed trait)
+
+It's an optional efficient way to express a more charitable view of someone's trait.
+
+You can learn more here: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/label-seams.html#label-reach
+
 ### Collective Verbs and Adjectives Use Plural
 
 I already have the associative meaning of plural on nouns and I've decided to define plurality for verbs and adjectives, because why not. 
