@@ -153,6 +153,10 @@ type Ctx = {
   sentences: { utterance: number; body: number; id: ReadingId }[];
   /** A dependent's reading, made once where its stand-in names it. */
   dependents: Map<Clause, Reading>;
+  /** Each list term by the join words of its parts: where a *respectively* link finds its partner list. */
+  lists: Map<LexWord, Term>;
+  /** Each *respectively* link and its `/w/` word, filled once every list is read. */
+  pairings: { link: Link; marker: LexWord }[];
 };
 
 type Here = {
@@ -427,7 +431,15 @@ function itemTerm(pkg: NpPackage, here: Here, clause: Clause): Term {
   // A joined adjective list (joins.md#right-close) is read as its list, joins and fences included; `adjs` repeats its
   // adjectives flat, so only the ones outside it are read one by one.
   const inList = pkg.adjCoord ? gPackagesOf(pkg.adjCoord) : new Set<GPackage>();
-  const details = [...(pkg.glAdj ? [pkg.glAdj] : []), ...pkg.adjs.filter((adj) => !inList.has(adj))].map((adj) => adjDetail(adj, here, clause));
+  // The parser's `predicateAdj`: the `/ɡ/` that says what a verbless clause's noun is (predication.md#classification-property).
+  const predicate = clause.predicateAdj && pkg.adjs.includes(clause.predicateAdj) ? clause.predicateAdj : undefined;
+  const own = pkg.adjs.filter((adj) => !inList.has(adj) && adj !== predicate);
+  const details = [...(pkg.glAdj ? [pkg.glAdj] : []), ...own].map((adj) => adjDetail(adj, here, clause));
+  if (predicate) {
+    const claim = thing(predicate.word);
+    addDetails(claim, [adjDetail(predicate, here, clause)]);
+    here.reading.claim.predicate.push(claim);
+  }
   if (pkg.adjCoord) {
     const anchor = classOf("unit:gCoord")?.anchor ?? "";
     details.push({ kind: "adjective", construction: "unit:gCoord", key: "unit:gCoord", anchor, words: [], values: {}, hosted: gTerm(pkg.adjCoord, here, clause) });
@@ -537,8 +549,11 @@ function joinModifiers(mods: LexWord[] | undefined, join: LexWord | undefined, h
   for (const w of mods ?? []) {
     const key = wordKey(w);
     const row = classOf(key);
-    if (row?.cls === "link" && w.overlay?.kind === "pairing") here.reading.links.push(link("pairing", key, join ? [w, join] : [w]));
-    else unread(here, row ? "unplaced" : "noRow", key, w);
+    if (row?.cls === "link" && w.overlay?.kind === "pairing") {
+      const pairing = link("pairing", key, join ? [w, join] : [w]);
+      here.reading.links.push(pairing);
+      here.ctx.pairings.push({ link: pairing, marker: w });
+    } else unread(here, row ? "unplaced" : "noRow", key, w);
   }
 }
 
@@ -562,6 +577,7 @@ function listTerm(parts: Part[], here: Here, bound?: Detail, shared: Detail[] = 
     ...(shared.length ? { sharedDetails: shared } : {}),
   };
   hostOnJoin(term, here);
+  for (const j of joins) if (j) here.ctx.lists.set(j, term);
   return term;
 }
 
@@ -822,20 +838,43 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
       const joins = coord.links.map((l) => l.join);
       const join = joins[joins.length - 1];
       const terms: Term[] = readings.map((reading) => ({ kind: "clause", reading }));
-      // A clause join stands between its clauses (joins.md#clause-joins): each part is one clause and the join after it.
       // A standalone join (no first clause) is one part with the join and its members.
-      const parts = coord.first ? terms.map((member, i) => ({ members: [member], ...(joins[i] ? { join: joins[i] } : {}) })) : [{ members: terms, ...(join ? { join } : {}) }];
-      here.reading.claim.clauses = {
-        kind: "list",
-        ...(join ? { join } : {}),
-        members: terms,
-        shared: [],
-        values: join ? wordValues(join) : {},
-        parts,
-      };
+      if (!coord.first) {
+        here.reading.claim.clauses = { kind: "list", ...(join ? { join } : {}), members: terms, shared: [], values: join ? wordValues(join) : {}, parts: [{ members: terms, ...(join ? { join } : {}) }] };
+        return;
+      }
+      here.reading.claim.clauses = clauseGroups(terms[0]!, coord.links.map((l, i) => ({ join: l.join, member: l.clause ? terms[i + 1] : undefined })));
       return;
     }
   }
+}
+
+/**
+ * A clause list grouped as the tree's joins group it (joins.md#clause-joins): a clause join stands between its
+ * clauses, repeating the same join word keeps the list flat, and switching to a different one closes everything
+ * before it as one group, so `A xel B xal C` is *(A or B) and C*. Each part is one member and the join after it.
+ */
+function clauseGroups(first: Term, links: { join: LexWord; member?: Term }[]): Term {
+  type Group = { join: LexWord; parts: { members: Term[]; join?: LexWord }[] };
+  const close = (group: Group): Term => {
+    const members = group.parts.flatMap((p) => p.members);
+    return { kind: "list", join: group.join, members, shared: [], values: wordValues(group.join), parts: group.parts };
+  };
+  let group: Group | undefined;
+  let last: Term = first;
+  for (const { join, member } of links) {
+    if (group && group.join.raw !== join.raw) {
+      group.parts.push({ members: [last] });
+      last = close(group);
+      group = undefined;
+    }
+    group ??= { join, parts: [] };
+    group.parts.push({ members: [last], join });
+    if (member) last = member;
+  }
+  if (!group) return first;
+  group.parts.push({ members: [last] });
+  return close(group);
 }
 
 // ── Readings ────────────────────────────────────────────────────────────────
@@ -961,6 +1000,8 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     sharedItems: new Map((info?.shared ?? []).map((record) => [record.shared, record])),
     sentences: [],
     dependents: new Map(),
+    lists: new Map(),
+    pairings: [],
   };
   for (const record of info?.shared ?? []) ctx.shared.set(record.join, [...(ctx.shared.get(record.join) ?? []), record]);
   result.utterances.forEach((u, ui) => {
@@ -985,6 +1026,13 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
       out.push(reading);
     });
   });
+
+  // A *respectively* link's other end: the partner lists the resolve stage names (list-structure.md#respectively).
+  const records = new Map((info?.pairings ?? []).map((record) => [record.marker, record]));
+  for (const { link: pairing, marker } of ctx.pairings) {
+    const partners = (records.get(marker)?.partners ?? []).flatMap((join) => ctx.lists.get(join) ?? []);
+    if (partners.length) pairing.partners = partners;
+  }
 
   // Question type: a value of the act word's force frame (interpreter.md#classification-table, `ask`).
   for (const ask of info?.asks ?? []) {

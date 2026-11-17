@@ -160,7 +160,8 @@ Owns:
 - `uom` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `zone`, job `zone`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](/contrary-to#contrary-to-stance)). Enforce checks the zone kind (`zoneKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
-- Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent
+- Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent; a stand-in inside that dependent opens its own, nested in it ([nested-dependents.md](/nested-dependents#nested-dependents)), and clause joins after it land in the innermost one
+- `Clause.predicateAdj`: a verbless clause of one noun with one `/ɡ/`, then only `/h/` words, marks that `/ɡ/` as the clause's predicate, which the tree keeps in the noun's package ([predication.md](/predication#classification-property))
 
 Recovery is off. Illegal left fences and binderless islands throw `SentenceParseError`.
 
@@ -176,6 +177,7 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 | Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](/roles)) |
 | Join **-r** under `yel` / `yem` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](/questions)) |
 | SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `oe`) |
+| *Respectively* partner | `pairings`: each `wubam` list's `PairingRecord`, the other `a` lists in its unit list with as many items (the lists `enforceRespectively` checks, both from `joinParts`); several are kept, never picked between ([list-structure.md](/list-structure#respectively)) |
 
 Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels, and every overlay whose family defines its own **-r** (the settled-to-passing grades, `because` share). Other closed roots resume with **-r** like content ([pronouns.md](/resume-sense#how-english-approximates-r)). Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
 

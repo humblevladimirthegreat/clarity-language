@@ -146,6 +146,8 @@ export type Link = {
   answer?: AnswerRecord;
   /** grounds: the frame whose content the next sentence is; carriedFrame: the frame carried. */
   frame?: Frame;
+  /** pairing: the list terms the *respectively* list pairs with, from the resolve stage's `PairingRecord` (one in every doc example; never picked between). */
+  partners?: Term[];
 };
 
 export type Unread = {

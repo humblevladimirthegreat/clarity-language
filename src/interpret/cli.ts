@@ -80,7 +80,7 @@ function formatClaim(c: Claim): string[] {
 }
 
 function formatLink(l: Link): string {
-  return `link ${l.kind} ${l.key} "${words(l.words)}"${l.to ? ` -> ${l.to}` : ""}`;
+  return `link ${l.kind} ${l.key} "${words(l.words)}"${l.to ? ` -> ${l.to}` : ""}${l.partners?.length ? ` with ${l.partners.map(formatTerm).join(", ")}` : ""}`;
 }
 
 /** Compact text for readings, nested readings (frame contents, details, terms) printed indented after their parent. */

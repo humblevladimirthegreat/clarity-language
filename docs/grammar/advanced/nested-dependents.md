@@ -14,6 +14,14 @@ English can chain reasons: *Azozon is sleepy because Alazun walks because Ahelan
 >
 > "Azozon is sleepy because Alazun walks because Ahelan sleeps." (Ahelan's sleep is why Alazun walks)
 
+A clause joined on after the last dependent belongs to that dependent too, the same way. Here *Azozon runs* joins *Ahelan sleeps*, so both are why Alazun walks.
+
+> `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel xal zazozon veruvol.`
+>
+> [z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | [z-Ahelan | v-sleep | x-and | z-Azozon | v-run]
+>
+> "Azozon is sleepy because Alazun walks because Ahelan sleeps and Azozon runs." (Ahelan's sleep and Azozon's run are why Alazun walks)
+
 ### Practice {#advanced-practice}
 
 Short drills for Advanced. Try each item before opening **Show answer**.

@@ -315,6 +315,26 @@ function visitGCoord(coord: GCoord, v: Visitor): void {
   v.exit?.(node);
 }
 
+/**
+ * Every list part in one unit list that a *respectively* `/w/` could mark: noun lists (and the `/ɡ/` lists on their
+ * packages), verb lists and `/ɡ/` lists, each part with its items' count, join and the `/w/` words before that join
+ * (list-structure.md#respectively).
+ */
+export function joinParts(units: Unit[]): { items: number; join?: LexWord; joinModifiers: LexWord[] }[] {
+  const coords: { parts: { items: unknown[]; join?: LexWord; joinModifiers?: LexWord[] }[] }[] = [];
+  for (const unit of units) {
+    if (unit.kind === "np") {
+      coords.push(unit.coord);
+      for (const part of unit.coord.parts) {
+        for (const item of part.items) if (item.kind === "package" && item.package.adjCoord) coords.push(item.package.adjCoord);
+      }
+    } else if (unit.kind === "vp" || unit.kind === "gCoord") coords.push(unit.coord);
+  }
+  return coords.flatMap((coord) =>
+    coord.parts.map((part) => ({ items: part.items.length, ...(part.join ? { join: part.join } : {}), joinModifiers: "joinModifiers" in part ? (part.joinModifiers ?? []) : [] })),
+  );
+}
+
 /** A verb list's own unit lists: each item's words before its verb, and the words every verb shares after the join. */
 export function vpUnitLists(coord: VpCoord): Unit[][] {
   return coord.parts.flatMap((part) => [...(part.itemUnits ?? []).map((e) => e.units), ...(part.sharedUnits ? [part.sharedUnits] : [])]);

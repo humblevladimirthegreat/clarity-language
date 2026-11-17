@@ -14,6 +14,7 @@ import type {
   NpPackage,
   NpCoord,
   NumberMarker,
+  PairingRecord,
   ParseResult,
   PointerVowel,
   ResolveInfo,
@@ -27,7 +28,7 @@ import type {
   WritingBracket,
 } from "./types.js";
 import { actWord, isDigitless, joinHook, KIND_SERIES, SCALE_SERIES } from "./series.js";
-import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, vpUnitLists, type Visitor, type WordSlot } from "./ast-walk.js";
+import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, joinParts, visitResult, vpUnitLists, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED, closedDerived } from "../closed-roots.js";
 import { isClauseAdverb, type ClassifyTables } from "./classify.js";
 import { clauseScopes, isBareEdge } from "./scope.js";
@@ -1086,13 +1087,43 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables): ResolveInfo
   const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
   const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
   const scope = clauseScopes(result.utterances, tables, blanks);
+  const pairings = respectivelyPairings(result);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
     ...(answers.length > 0 ? { answers } : {}),
     shared: ctx.shared,
     ...(scope.length > 0 ? { scope } : {}),
+    ...(pairings.length > 0 ? { pairings } : {}),
   };
+}
+
+/**
+ * Each *respectively* list and its partners: the other closed or open `a` lists in its unit list with as many items,
+ * the same lists `enforceRespectively` checks (list-structure.md#respectively).
+ */
+function respectivelyPairings(result: ParseResult): PairingRecord[] {
+  const out: PairingRecord[] = [];
+  const unitList = (units: Unit[]): void => {
+    const lists = joinParts(units).filter(
+      (part): part is typeof part & { join: LexWord } =>
+        part.items >= 2 && part.join?.family.kind === "joinMarker" && part.join.family.series === "a",
+    );
+    for (const list of lists) {
+      const marker = list.joinModifiers.find((w) => w.overlay?.kind === "pairing");
+      if (!marker) continue;
+      const partners = lists.filter((other) => other !== list && other.items === list.items).map((other) => other.join);
+      out.push({ marker, join: list.join, partners });
+    }
+  };
+  visitResult(result, {
+    enter(node) {
+      if (node.kind === "clause") unitList(node.clause.units);
+      else if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) unitList(units);
+      else if (node.kind === "island") unitList(node.island.units);
+    },
+  });
+  return out;
 }
 
 /**

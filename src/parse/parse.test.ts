@@ -325,7 +325,9 @@ describe("parse — stand-in dependents", () => {
     assert.equal(coord.coord.links.length, 1);
     assert.equal(coord.coord.links[0]!.join.raw, "xel");
     const nested = parseText("zazozon vozuyel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel xal zazozon veruvol.").utterances[0]!.bodies[0]!.clause;
-    const inner = nested.dependent?.clause.units[0];
+    // Each new dependent belongs to the clause just before it (nested-dependents.md#nested-dependents), so the join
+    // lands in the innermost one.
+    const inner = nested.dependent?.clause.dependent?.clause.units[0];
     assert.ok(inner && inner.kind === "clauseCoord");
   });
 

@@ -414,6 +414,13 @@ export type Unit =
 export type Clause = {
   units: Unit[];
   dependent?: OdoDependent;
+  /**
+   * A verbless clause whose first unit is a noun with one `/ɡ/` and whose other units are all `/h/` words (a hinge, a
+   * stance): that `/ɡ/` says what the noun is, the clause's predicate, though the tree keeps it in the noun's package
+   * (`zazozon guzemel thahum blarl …`, *Azozon is sleepy because …*; predication.md#classification-property,
+   * nested-dependents.md#nested-dependents).
+   */
+  predicateAdj?: GPackage;
 };
 
 export type BodyClause = {
@@ -526,12 +533,25 @@ export type SharedRecord = {
   shared: GPackage | HUnit | ScaleShared;
 };
 
+/**
+ * A *respectively* list and its partner (list-structure.md#respectively): `marker` is the `/w/` before the marked
+ * list's join word `join`; `partners` are the join words of the other `a` lists in the same clause with as many items,
+ * the check that admits it. One partner, as the page's examples have; more are kept, never picked between.
+ */
+export type PairingRecord = {
+  marker: LexWord;
+  join: LexWord;
+  partners: LexWord[];
+};
+
 export type ResolveInfo = {
   anaphors: AnaphorBind[];
   asks: AskRecord[];
   /** Present when a reply fills the fill-ask before it. */
   answers?: AnswerRecord[];
   shared: SharedRecord[];
+  /** Each *respectively* list's partner list. Present when some clause has one. */
+  pairings?: PairingRecord[];
   /**
    * Scope order of each clause's whole-clause frames (clause.md#which-covers-which), from the pair table in
    * `src/parse/scope.ts`. Present when some clause has a whole-clause frame.

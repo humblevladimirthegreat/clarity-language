@@ -1736,10 +1736,14 @@ function standInIn(unit: Unit): LexWord | undefined {
   return undefined;
 }
 
-/** Split a clause after unit `index`, whose stand-in `orodo` is filled by the units that follow. */
+/**
+ * Split a clause after unit `index`, whose stand-in `orodo` is filled by the units that follow. A stand-in inside that
+ * sentence opens its own dependent, nested in it: each new dependent belongs to the clause just before it
+ * (nested-dependents.md#nested-dependents).
+ */
 function splitAtStandIn(units: Unit[], index: number, orodo: LexWord): Clause {
   const rest = units.slice(index + 1);
-  return { units: units.slice(0, index + 1), dependent: rest.length > 0 ? { orodo, clause: { units: rest } } : undefined };
+  return { units: units.slice(0, index + 1), dependent: rest.length > 0 ? { orodo, clause: splitResolved(rest) } : undefined };
 }
 
 const IMPLIED_SUBJECT_SERIES = new Set(["o", "u", "ae", "ue", "ua"]);
@@ -1857,8 +1861,33 @@ function finalizeClause(units: Unit[]): Clause {
 }
 
 function splitClause(units: Unit[]): Clause {
-  const resolved = disambiguateClause(mergeAdjLists(mergeIslandJoins(units)));
+  return splitResolved(disambiguateClause(mergeAdjLists(mergeIslandJoins(units))));
+}
 
+/** Split resolved units at the first forward stand-in ({@link splitAtStandIn}). */
+function splitResolved(resolved: Unit[]): Clause {
+  return markPredicateAdj(splitUnits(resolved));
+}
+
+/**
+ * A verbless clause of one noun with one `/ɡ/`, then only `/h/` words: the `/ɡ/` is the clause's predicate, as in the
+ * bare `zazozon gamahum.` ({@link disambiguateClause}), which splits it off only when nothing follows
+ * (predication.md#classification-property). A dependent's clause is not disambiguated, so a bare one is marked here too.
+ */
+function markPredicateAdj(clause: Clause): Clause {
+  const [first, ...rest] = clause.units;
+  if (first?.kind !== "np" || !rest.every((unit) => unit.kind === "h")) return clause;
+  const part = first.coord.parts[0];
+  if (first.coord.parts.length !== 1 || !part || part.join || part.items.length !== 1) return clause;
+  const item = part.items[0]!;
+  if (item.kind !== "package" || item.package.adjCoord || item.package.adjs.length !== 1) return clause;
+  // A named citation keeps its `/ɡ/` words (proper-names.md#multipart-names), as in disambiguateClause.
+  if (rest.length === 0 && !item.package.head.pos && item.package.head.ending === "n") return clause;
+  clause.predicateAdj = item.package.adjs[0]!;
+  return clause;
+}
+
+function splitUnits(resolved: Unit[]): Clause {
   for (let i = 0; i < resolved.length - 1; i++) {
     const host = verbalDependentIn(resolved[i]!);
     const next = resolved[i + 1];

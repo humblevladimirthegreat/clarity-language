@@ -247,7 +247,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | Landmark pointed back to by a hooked join | `anaphor:landmark` | `hooked-joins.md#hooked-joins` |
 | Item shared by a list's members | `SharedRecord` | `list-structure.md#shared-after-the-join` |
 | Argument shared by joined verbs | `sharedUnits` on `VpCoord` | `verb-and-stance-joins.md#vp-clause-forms`; `reading:verbSharedNoun` |
-| *Respectively* pairs | `overlay:pairing:w` | `list-structure.md#respectively` |
+| *Respectively* pairs, to its partner list (`partners`, from the resolve stage's `PairingRecord`) | `overlay:pairing:w` | `list-structure.md#respectively` |
 | Reply filling a blank | `AnswerRecord` | `questions.md#fill-ask` |
 | Stand-in to the dependent it stands for | `lexReading:standIn`, `ending:rl` / `rm` / `rn` | `dependents.md#dependent-clauses`, `stand-in-vowels.md#stand-in`, `stand-in-roles.md#stand-in-roles` |
 | Stand-in pointing back to an earlier sentence | `ending:rth` | `stand-in-vowels.md#stand-in-back` |

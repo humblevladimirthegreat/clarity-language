@@ -264,19 +264,63 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.equal(frame(reading, "hinge").hosted?.kind, "thing");
   });
 
-  it(
-    "nested-dependents.md:11: a reason for a reason nests, and *Azozon is sleepy* is the predicate",
-    { todo: "needs parser records: the dependent clause holds the inner `blarl` clause flat (no nested `dependent`), and `guzemel` before a hinge is an adjective on the subject's package, not a predicate unit" },
-    () => {
-      const reading = one("[z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep");
+  it("nested-dependents.md:11: a reason for a reason nests, and *Azozon is sleepy* is the predicate", () => {
+    const reading = one("[z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep");
+    assert.equal(reading.claim.predicate.length, 1);
+    const subject = reading.claim.roles.z;
+    assert.ok(subject?.kind === "thing" && subject.details.length === 0);
+    const middle = frame(reading, "hinge").hosted;
+    assert.ok(middle?.kind === "clause");
+    assert.deepEqual(middle.reading.unread, []);
+    const inner = frame(middle.reading, "hinge").hosted;
+    assert.ok(inner?.kind === "clause" && inner.reading.claim.verb?.kind === "thing");
+    assert.equal(inner.reading.id, `${middle.reading.id}/d`);
+  });
+
+  it("predication.md:15: a bare property sentence and one before a hinge give the same predicate", () => {
+    const bare = one("z-Azozon | g-sleepy");
+    const hinged = one("[z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk");
+    for (const reading of [bare, hinged]) {
       assert.equal(reading.claim.predicate.length, 1);
-      const middle = frame(reading, "hinge").hosted;
-      assert.ok(middle?.kind === "clause");
-      assert.deepEqual(middle.reading.unread, []);
-      const inner = frame(middle.reading, "hinge").hosted;
-      assert.ok(inner?.kind === "clause" && inner.reading.claim.verb?.kind === "thing");
-    },
-  );
+      assert.equal(reading.claim.predicate[0]?.kind, "thing");
+    }
+    // A noun with its adjective under a verb keeps it as a detail.
+    const described = one("[z-Azozon | g-sleepy] | v-walk");
+    assert.equal(described.claim.predicate.length, 0);
+  });
+
+  it("list-structure.md:113: *respectively* names its partner list", () => {
+    const reading = one("[z-Azozon | z-Alazun | z-and] | [v-walk | v-run | w-respectively | v-and]");
+    const pairing = reading.links.find((l) => l.kind === "pairing");
+    assert.equal(pairing?.partners?.length, 1);
+    assert.equal(pairing!.partners![0], reading.claim.roles.z);
+    assert.equal(asList(reading.claim.verb).join, pairing!.words[1]);
+  });
+
+  it("list-structure.md:93: a noun list pairs with a noun list of another role", () => {
+    const reading = one("[z-Azozon | z-Alazun | z-Ahelan | z-and] | [d-cat | d-dog | d-bird | w-respectively | d-and] | v-see");
+    const pairing = reading.links.find((l) => l.kind === "pairing");
+    assert.deepEqual(pairing?.partners, [reading.claim.roles.z]);
+  });
+
+  it("joins.md:315: a different clause join closes the group before it", () => {
+    const reading = one("[[z-Azozon | v-walk | x-or-exactly-one | z-Alazun | v-run] | x-and | z-Ahelan | v-sleep]");
+    const outer = asList(reading.claim.clauses);
+    assert.equal(outer.members.length, 2);
+    const group = asList(outer.members[0]);
+    assert.notEqual(group.join?.raw, outer.join?.raw);
+    assert.equal(group.members.length, 2);
+    assert.equal(outer.members[1]?.kind, "clause");
+  });
+
+  it("joins.md:317: a clause list closed and joined again nests on the left", () => {
+    const reading = one("[[z-Azozon | v-walk | x-and | z-Alazun | v-run | x-and | z-Ahelan | v-sleep] | x-or-exactly-one | z-Azozon | v-sleep]");
+    const outer = asList(reading.claim.clauses);
+    const group = asList(outer.members[0]);
+    assert.equal(group.members.length, 3);
+    assert.ok(group.members.every((m) => m.kind === "clause"));
+    assert.deepEqual(outer.parts.map((p) => p.join?.raw), [outer.join?.raw, undefined]);
+  });
 
   it(
     "can-and-cant.md:100: one ability frame that says *unable* and *temporary*",
