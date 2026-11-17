@@ -264,7 +264,7 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
 
   it(
     "nested-dependents.md:11: a reason for a reason nests, and *Azozon is sleepy* is the predicate",
-    { todo: "R4 fail: the innermost dependent is unplaced, and the predicate is read as an adjective detail on the subject" },
+    { todo: "needs parser records: the dependent clause holds the inner `blarl` clause flat (no nested `dependent`), and `guzemel` before a hinge is an adjective on the subject's package, not a predicate unit" },
     () => {
       const reading = one("[z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep");
       assert.equal(reading.claim.predicate.length, 1);
@@ -278,11 +278,10 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
 
   it(
     "can-and-cant.md:100: one ability frame that says *unable* and *temporary*",
-    { todo: "R4 fail: two identical ability frames for one word, and neither records unable or temporary" },
     () => {
       const reading = one("z-Azozon | h-ABIL-unable-temporary");
       assert.deepEqual(families(reading), ["ability"]);
-      assert.ok(Object.keys(frame(reading, "ability").values).length > 1);
+      assert.equal(frame(reading, "ability").values.stanceVowel, "o");
     },
   );
 
@@ -301,11 +300,10 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
 
   it(
     "hooked-joins.md:127: *never since the thunderstorm* keeps the hook that bounds the times",
-    { todo: "R4 fail: the occasion frame holds the landmark but not the hook (since vs until), and no table row places it" },
     () => {
       const occasion = frame(one("z-listener | v-hear | [h-from-x-never.open | bl-thunderstorm]"), "occasion");
       assert.equal(occasion.hosted?.kind, "thing");
-      assert.ok(occasion.values.hook, JSON.stringify(occasion.values));
+      assert.equal(occasion.values.hook, "ul");
     },
   );
 
@@ -353,19 +351,17 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
 
   it(
     "list-structure.md:113: *respectively* pairs the subjects with the verbs",
-    { todo: "R4 fail: the respectively word is in no frame, detail, value or unread entry" },
     () => {
       const reading = one("[z-Azozon | z-Alazun | z-and] | [v-walk | v-run | w-respectively | v-and]");
       assert.equal(asList(reading.claim.verb).members.length, 2);
       const verb = asList(reading.claim.verb);
-      const seen = JSON.stringify([verb.values, verb.shared, reading.claim.details, reading.links, reading.unread]);
-      assert.match(seen, /respectiv/);
+      const pairing = reading.links.find((l) => l.kind === "pairing");
+      assert.ok(pairing && pairing.words.includes(verb.join!), JSON.stringify(reading.links.map((l) => l.kind)));
     },
   );
 
   it(
     "verb-and-stance-joins.md:32: *sees Ahelan* keeps Ahelan as the object of see",
-    { todo: "R4 fail: the object goes in a detail on the later verb, as a nested reading with no verb" },
     () => {
       const verb = asList(one("z-Azozon | [v-walk | [d-Ahelan | v-see] | v-and]").claim.verb);
       const see = verb.members[1]!;
@@ -375,28 +371,26 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
 
   it(
     "hooked-joins.md:11: *everyone at the house* keeps its bound on the list",
-    { todo: "R4 fail: the hook and its landmark are only an anaphor link; the binder's list says nothing of who counts" },
     () => {
       const reading = one("[z-at-x-everything | bl-house] | v-sleep");
       assert.deepEqual(families(reading), ["binder"]);
       const z = asList(reading.claim.roles.z);
-      assert.ok(z.values.hook && (z.shared.length > 0 || frame(reading, "binder").hosted));
+      assert.ok(z.values.hook && z.bound?.values.hook === z.values.hook && z.bound.hosted?.kind === "thing");
     },
   );
 
   it(
     "hooked-joins.md:80: *for whom?* asks with a blank bounded by *for me*",
-    { todo: "R4 fail: the fill-ask blank is an empty list, not a blank term, and the hook is only an anaphor link" },
     () => {
       const reading = one("y-question | [d-for-x-wh | bl-speaker]");
       assert.equal(frame(reading, "force").values.ask, "fillAsk");
-      assert.equal(reading.claim.roles.d?.kind, "blank");
+      const d = reading.claim.roles.d;
+      assert.ok(d?.kind === "blank" && d.details?.[0]?.hosted?.kind === "speaker");
     },
   );
 
   it(
     "fill-ask-jobs.md:13: *what kind of dog?* puts a blank term on the adjective",
-    { todo: "R4 fail: the blank is an empty list term (interpreter.md row: the blank is a `blank` term)" },
     () => {
       const reading = one("y-question | g-wh | z-dog");
       assert.equal(frame(reading, "force").values.ask, "fillAsk");

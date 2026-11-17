@@ -232,7 +232,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | reading | `feelingLandmark` | structure | `feelings.md#feeling-whose-stake` | The `bl-` is the urge's landmark |
 | reading | `feelingStake` | frame:sake | `feelings.md#feeling-whose-stake` | The `bl-` is whose stake (`party`); the feeling stays yours |
 | word | `plural` | label | `plurality.md#associative` | On a verb it is collective (`collectives.md#verbs-v`) |
-| word | `hookedJoin` | structure | `hooked-joins.md#hooked-joins` |  |
+| word | `hookedJoin` | detail:bound | `hooked-joins.md#hooked-joins` | "the hook now says which members count: the ones that stand in that relation to the landmark": the list term's `bound`, or the blank's detail |
 | word | `rangeMember` | detail:range | `ranges.md#ranges` | |
 
 ## Links

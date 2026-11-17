@@ -140,7 +140,7 @@ const OTHER_ROWS: Record<string, ClassRow> = {
   "reading:fromTo": { cls: "detail:range", anchor: "ranges.md#ranges" },
   "reading:feelingLandmark": { cls: "structure", anchor: "feelings.md#feeling-whose-stake" },
   "word:plural": { cls: "label", anchor: "plurality.md#associative" },
-  "word:hookedJoin": { cls: "structure", anchor: "hooked-joins.md#hooked-joins" },
+  "word:hookedJoin": { cls: "detail:bound", anchor: "hooked-joins.md#hooked-joins" },
   "word:rangeMember": { cls: "detail:range", anchor: "ranges.md#ranges" },
 };
 

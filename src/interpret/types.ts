@@ -64,7 +64,7 @@ export type Frame = {
 };
 
 export type Detail = {
-  /** `detail:<kind>` without the prefix: adverb, place, time, degree, adjective, relation, likeness, range, hook, aside, island. */
+  /** `detail:<kind>` without the prefix: adverb, place, time, degree, adjective, relation, likeness, range, hook, aside, island, bound (a hooked join's landmark). */
   kind: string;
   construction: string;
   key: string;
@@ -99,6 +99,8 @@ export type Term =
       parts: { members: Term[]; join?: LexWord }[];
       /** List-reach frames (a `u` list join denies only its items, rule 2). */
       frames?: Frame[];
+      /** A hooked join's bound: which members count (hooked-joins.md#hooked-joins). Its hook is in `values.hook`, its landmark is `hosted`. */
+      bound?: Detail;
     }
   | { kind: "clause"; reading: Reading }
   /** A cite span: its words are readings with their own act word and frames. */

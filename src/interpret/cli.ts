@@ -38,7 +38,7 @@ export function formatTerm(term: Term | undefined): string {
     case "number":
       return `number ${term.word.raw}${tail(term.details)}`;
     case "list":
-      return `list ${term.join ? term.join.raw : "?"}(${term.members.map(formatTerm).join(", ")})`;
+      return `list ${term.join ? term.join.raw : "?"}(${term.members.map(formatTerm).join(", ")})${term.shared.map((s) => ` shared ${s.role} ${s.shared.word.raw}`).join("")}${term.bound ? ` {${formatDetail(term.bound)}}` : ""}`;
     case "clause":
       return `clause ${term.reading.id}`;
     case "quote":
@@ -110,7 +110,10 @@ function nestedReadings(r: Reading): Reading[] {
     if (!t) return;
     if (t.kind === "clause") add([t.reading]);
     else if (t.kind === "quote") add(t.readings);
-    else if (t.kind === "list") t.members.forEach(term);
+    else if (t.kind === "list") {
+      t.members.forEach(term);
+      if (t.bound) detail(t.bound);
+    }
     if ("details" in t) t.details?.forEach(detail);
   };
   const frame = (f: Frame): void => {

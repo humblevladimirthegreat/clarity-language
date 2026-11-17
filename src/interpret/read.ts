@@ -119,7 +119,13 @@ function wordValues(word: LexWord): Record<string, string> {
   const family = word.family;
   const values: Record<string, string> = {};
   if (family.kind === "say") Object.assign(values, SAY_VALUES(word));
-  if (family.kind === "joinMarker") values.series = family.series;
+  if (family.kind === "joinMarker") {
+    values.series = family.series;
+    // A hooked join's or restrictor's hook: which relation to the landmark bounds it (hooked-joins.md#hooked-joins).
+    if (family.hook) values.hook = family.hook;
+  }
+  // An ability word's vowel: can, or which kind of can't (can-and-cant.md#ability); a sake's or scope's vowel likewise.
+  if (family.kind === "x" && family.stanceVowel) values.stanceVowel = family.stanceVowel;
   if (word.overlay) values.gloss = word.overlay.gloss;
   if (word.ending && family.kind !== "say") values.ending = word.ending;
   return values;
@@ -385,23 +391,50 @@ function listFrames(joins: (LexWord | undefined)[], here: Here): Frame[] {
   return out;
 }
 
-function listTerm(parts: { members: Term[]; join?: LexWord }[], here: Here): Term {
+type Part = { members: Term[]; join?: LexWord };
+
+/**
+ * A hooked join's bound (hooked-joins.md#hooked-joins): the hook says which members count, the ones in that relation
+ * to the landmark, a `bl-` word after the join or, with `r`, the landmark the resolve stage binds.
+ */
+function boundOf(join: LexWord | undefined, landmark: LexWord | undefined, here: Here, clause: Clause): Detail | undefined {
+  if (!join || join.family.kind !== "joinMarker" || !join.family.hook) return undefined;
+  const hosted = landmark ? headTerm(landmark, here, clause) : here.ctx.anaphors.has(join) ? pronoun(join, here) : undefined;
+  return { ...detailOf("word:hookedJoin", join, "bound"), construction: "word.hookedJoin", ...(landmark ? { words: [join, landmark] } : {}), ...(hosted ? { hosted } : {}) };
+}
+
+/** `/w/` words right before a join word (`joinModifiers`): *respectively* is a pairing link (list-structure.md#respectively). */
+function joinModifiers(mods: LexWord[] | undefined, join: LexWord | undefined, here: Here): void {
+  for (const w of mods ?? []) {
+    const key = wordKey(w);
+    const row = classOf(key);
+    if (row?.cls === "link" && w.overlay?.kind === "pairing") here.reading.links.push(link("pairing", key, join ? [w, join] : [w]));
+    else unread(here, row ? "unplaced" : "noRow", key, w);
+  }
+}
+
+function listTerm(parts: Part[], here: Here, bound?: Detail): Term {
   if (parts.length === 1 && parts[0]!.members.length === 1 && !parts[0]!.join) return parts[0]!.members[0]!;
   const joins = parts.map((p) => p.join);
   const join = [...joins].reverse().find((j) => j !== undefined);
+  const members = parts.flatMap((p) => p.members);
+  // A fill-ask join with no items is the blank itself (questions.md#fill-ask; interpreter.md `ask:fillAsk`).
+  if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, details: bound ? [bound] : [] };
   const frames = listFrames(joins, here);
   return {
     kind: "list",
     ...(join ? { join } : {}),
-    members: parts.flatMap((p) => p.members),
+    members,
     shared: sharedOf(joins, here),
     values: join ? wordValues(join) : {},
     parts,
     ...(frames.length ? { frames } : {}),
+    ...(bound ? { bound } : {}),
   };
 }
 
 function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
+  let bound: Detail | undefined;
   const parts = coord.parts.map((part) => {
     const members = part.items.map((item): Term => {
       if (item.kind === "package") return itemTerm(item.package, here, clause);
@@ -411,22 +444,26 @@ function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
       return bar;
     });
     if (part.tag) here.reading.links.push(link("tag", "slot:tag", [part.tag]));
-    if (part.landmark) here.reading.links.push(link("anaphor", "anaphor:landmark", [part.landmark]));
+    joinModifiers(part.joinModifiers, part.join, here);
+    bound = boundOf(part.join, part.landmark, here, clause) ?? bound;
     return { members, ...(part.join ? { join: part.join } : {}) };
   });
-  return listTerm(parts, here);
+  return listTerm(parts, here, bound);
 }
 
 function gTerm(coord: GCoord, here: Here, clause: Clause): Term {
-  const parts = coord.parts.map((part) => ({
-    members: part.items.map((item): Term => {
-      if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island.units, here) };
-      const term = thing(item.adj.word);
-      addDetails(term, [adjDetail(item.adj, here, clause)]);
-      return term;
-    }),
-    ...(part.join ? { join: part.join } : {}),
-  }));
+  const parts = coord.parts.map((part) => {
+    joinModifiers(part.joinModifiers, part.join, here);
+    return {
+      members: part.items.map((item): Term => {
+        if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island.units, here) };
+        const term = thing(item.adj.word);
+        addDetails(term, [adjDetail(item.adj, here, clause)]);
+        return term;
+      }),
+      ...(part.join ? { join: part.join } : {}),
+    };
+  });
   return listTerm(parts, here);
 }
 
@@ -439,9 +476,6 @@ function verbTerm(word: LexWord, here: Here): Term {
 
 function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
   const parts = coord.parts.map((part) => {
-    // Words between two verbs belong to the later verb's item (verb-and-stance-joins.md#vp-clause-forms): a nested
-    // reading on that verb's term.
-    const items = new Map((part.itemUnits ?? []).map((item) => [item.verb, readIsland(item.units, here, `v${item.verb.at ?? 0}`)]));
     for (const unit of part.sharedUnits ?? []) {
       readUnit(unit, here, clause);
       if (unit.kind === "np") here.reading.links.push(link("verbShared", "reading:verbSharedNoun", []));
@@ -450,11 +484,16 @@ function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
       const hosted = hostedTerm(hv.hosted, here, clause);
       if (hosted) here.reading.claim.details.push({ ...detailOf("slot:hosted", hv.verb, "hosted"), hosted });
     }
-    const members = part.items.map((w) => {
-      const term = verbTerm(w, here);
-      const item = items.get(w);
-      if (item) addDetails(term, [{ kind: "verbItem", construction: "reading:verbFirstItem", key: "unit:vp", anchor: classOf("reading:verbFirstItem")?.anchor ?? "", words: [w], values: {}, content: [item] }]);
-      return term;
+    joinModifiers(part.joinModifiers, part.join, here);
+    // Each item is a verb plus the words before it (verb-and-stance-joins.md#vp-clause-forms): an item with words of
+    // its own is a nested reading whose verb is that verb.
+    const itemUnits = new Map((part.itemUnits ?? []).map((item) => [item.verb, item.units]));
+    const members = part.items.map((w): Term => {
+      const units = itemUnits.get(w);
+      if (!units) return verbTerm(w, here);
+      const item = readIsland(units, here, `v${w.at ?? 0}`);
+      item.claim.verb = verbTerm(w, { ...here, reading: item });
+      return { kind: "clause", reading: item };
     });
     return { members, ...(part.join ? { join: part.join } : {}) };
   });
@@ -465,7 +504,10 @@ function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
 
 /** A frame word met in the clause: the resolve stage's frame when it gave one, else a frame of its own. */
 function placeFrame(key: string, word: LexWord, reach: FrameReach | undefined, here: Here): Frame {
-  const existing = here.reading.frames.find((f) => f.words[0] === word && (f.key === key || f.family === "holder"));
+  // The resolve stage may file the word under another key of the same family (`lexReading:ability` for an
+  // `xFamily:ability` word): one word, one frame of that family.
+  const family = classOf(key)?.cls.slice("frame:".length);
+  const existing = here.reading.frames.find((f) => f.words[0] === word && (f.key === key || f.family === "holder" || f.family === family));
   if (existing) return existing;
   const frame = frameOf(key, word, here);
   here.reading.frames.push(frame);
