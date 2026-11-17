@@ -53,13 +53,32 @@ export function revCommit(rev: string, cwd = REPO_ROOT): string {
   return sha;
 }
 
-export type RevParser = ScopeParser & {
+/** A parser taken from a bundle; `sawScope` says whether any parse so far returned a `resolve.scope`-shaped record. */
+export type ImportedParser = ScopeParser & { sawScope(): boolean };
+
+export type RevParser = ImportedParser & {
   sha: string;
   dir: string;
-  /** Whether any parse so far returned a `resolve.scope`-shaped record. */
-  sawScope(): boolean;
+  /** The bundle's path; a find worker imports the same parser from it (`importRevParser`). */
+  module: string;
   cleanup(): void;
 };
+
+/** Loads `parseWithTables` and `loadDefaultTables` from a parser bundle. Throws `FindDiffError` naming `rev`. */
+export async function importRevParser(module: string, rev: string): Promise<ImportedParser> {
+  const mod = (await import(pathToFileURL(module).href)) as Record<string, unknown>;
+  const missing = ["parseWithTables", "loadDefaultTables"].filter((name) => typeof mod[name] !== "function");
+  if (missing.length) throw new FindDiffError(`--diff: the parser at ${rev} lacks ${missing.join(" and ")}`);
+  const tables = (mod.loadDefaultTables as () => ClassifyTables)();
+  const oldParse = mod.parseWithTables as FindParse;
+  let saw = false;
+  const parse: FindParse = (text, t, options) => {
+    const result = oldParse(text, t, options);
+    if (!saw && hasScopeRecord(result)) saw = true;
+    return result;
+  };
+  return { tables, parse, sawScope: () => saw };
+}
 
 /** Extracts and bundles the parser at REV and loads its two exports. Throws `FindDiffError`. */
 export async function loadRevParser(rev: string, cwd = REPO_ROOT): Promise<RevParser> {
@@ -90,24 +109,18 @@ export async function loadRevParser(rev: string, cwd = REPO_ROOT): Promise<RevPa
         platform: "node",
         format: "esm",
         packages: "external",
+        // Before 7672fc47 the parser imported the chevrotain-allstar package, since vendored
+        // (memoized, same lookahead) as src/parse/allstar/; point old imports at that copy.
+        ...(existsSync(join(cwd, "node_modules", "chevrotain-allstar"))
+          ? {}
+          : { alias: { "chevrotain-allstar": join(cwd, "src", "parse", "allstar", "all-star-lookahead.ts") } }),
         outfile,
         logLevel: "silent",
       });
     } catch (error) {
       throw new FindDiffError(`--diff: the parser at ${rev} does not bundle: ${(error as Error).message.split("\n")[0]}`);
     }
-    const mod = (await import(pathToFileURL(outfile).href)) as Record<string, unknown>;
-    const missing = ["parseWithTables", "loadDefaultTables"].filter((name) => typeof mod[name] !== "function");
-    if (missing.length) throw new FindDiffError(`--diff: the parser at ${rev} lacks ${missing.join(" and ")}`);
-    const tables = (mod.loadDefaultTables as () => ClassifyTables)();
-    const oldParse = mod.parseWithTables as FindParse;
-    let saw = false;
-    const parse: FindParse = (text, t, options) => {
-      const result = oldParse(text, t, options);
-      if (!saw && hasScopeRecord(result)) saw = true;
-      return result;
-    };
-    return { sha, dir, tables, parse, sawScope: () => saw, cleanup };
+    return { sha, dir, module: outfile, ...(await importRevParser(outfile, rev)), cleanup };
   } catch (error) {
     cleanup();
     throw error;

@@ -51,6 +51,8 @@ export type FindOptions = {
   list: { kind: "values"; key: TermKey } | { kind: "constructions" } | undefined;
   /** `--diff REV`: compare each matching example's scope order under the parser at REV with the current one. */
   diff: string | undefined;
+  /** `--jobs N`: worker threads for the pass; undefined is one per spare core, 1 scans inline. */
+  jobs: number | undefined;
 };
 
 export type FindResult = {
@@ -90,7 +92,7 @@ export class FindUsageError extends Error {
   }
 }
 
-export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--over F] [--under G] [--unordered] [--diff REV] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
+export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--over F] [--under G] [--unordered] [--diff REV] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--jobs N] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
 
 /** `--help`: every key with what it holds and sample values, every flag, and how a construction ID is built. */
 export const FIND_HELP = `find.mjs: search docs examples by parse, not spelling; with --map, rewrite matched letter slots.
@@ -136,6 +138,8 @@ Flags:
   --write                patch docs, TSV and non-test source; a span that does not reparse is left
   --tests                with --write, patch *.test.ts too
   --check-ambiguity      with --write, refuse a patch that gives two trees
+  --jobs N               worker threads, capped at the file count (default 1: scan inline); output is
+                         the same with any N
   --json                 print hits as JSON: each word with its key fields, constructions, overlayKind,
                          frame and clause; each hit with its clause numbers
   --count                print the number of matching examples (or of values with --values)
@@ -197,6 +201,7 @@ export function parseFindArgs(args: string[]): FindOptions {
     sameClause: false,
     list: undefined,
     diff: undefined,
+    jobs: undefined,
   };
   /** The scope query the previous flag opened, so `--over F --under G` is one pair. */
   let openScope: Extract<FindQuery, { kind: "scope" }> | undefined;
@@ -250,7 +255,11 @@ export function parseFindArgs(args: string[]): FindOptions {
       i++;
       options.list = { kind: "values", key };
     } else if (arg === "--constructions") options.list = { kind: "constructions" };
-    else if (arg === "--same-clause") options.sameClause = true;
+    else if (arg === "--jobs") {
+      const value = args[++i];
+      if (!value || !/^[1-9]\d*$/.test(value)) throw new FindUsageError("--jobs needs a positive whole number");
+      options.jobs = Number(value);
+    } else if (arg === "--same-clause") options.sameClause = true;
     else if (arg === "--write") options.write = true;
     else if (arg === "--tests") options.writeTests = true;
     else if (arg === "--check-ambiguity") options.checkAmbiguity = true;
@@ -418,16 +427,25 @@ export function scopePass(
   filter = true,
   cwd = process.cwd(),
 ): ScopeRecord[] {
+  return files.flatMap((file) => scopeFile(file, options, parser, filter, cwd));
+}
+
+/** `scopePass` over one file: what a worker returns for it. */
+export function scopeFile(
+  file: string,
+  options: Pick<FindOptions, "queries" | "sameClause">,
+  parser: ScopeParser,
+  filter = true,
+  cwd = process.cwd(),
+): ScopeRecord[] {
   const out: ScopeRecord[] = [];
-  for (const file of files) {
-    const original = readFileSync(file, "utf8");
-    const rel = relative(cwd, file);
-    const { examples } = collectFileSpans(file, original, parser.tables, parser.parse);
-    for (const example of examples) {
-      if (filter && options.queries.some((q) => matchQuery(example, q, options.sameClause) === null)) continue;
-      const line = original.slice(0, example.index).split("\n").length;
-      out.push({ file: rel, line, index: example.index, text: example.text, ...scopeStrings(example) });
-    }
+  const original = readFileSync(file, "utf8");
+  const rel = relative(cwd, file);
+  const { examples } = collectFileSpans(file, original, parser.tables, parser.parse);
+  for (const example of examples) {
+    if (filter && options.queries.some((q) => matchQuery(example, q, options.sameClause) === null)) continue;
+    const line = original.slice(0, example.index).split("\n").length;
+    out.push({ file: rel, line, index: example.index, text: example.text, ...scopeStrings(example) });
   }
   return out;
 }

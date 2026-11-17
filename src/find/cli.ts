@@ -4,7 +4,8 @@
  * construction ID is built.
  */
 
-import { FIND_USAGE, FindUsageError, parseFindArgs, passFiles, runPass, scopePass, type FindOptions } from "./pass.js";
+import { FIND_USAGE, FindUsageError, parseFindArgs, passFiles, type FindOptions } from "./pass.js";
+import { poolPass, poolScopeDiff } from "./pool.js";
 import { FindDiffError, loadRevParser } from "./rev-parser.js";
 import { diffScopeRecords, formatScopeDiff } from "./scope-diff.js";
 
@@ -22,11 +23,12 @@ try {
   throw error;
 }
 const { output, maps, list } = options;
+/** The worker bundle `scripts/find.mjs` builds beside this one. */
+const workerUrl = new URL("./worker.bundle.mjs", import.meta.url);
 
 if (options.diff) {
   const rev = options.diff;
   const files = passFiles(options.paths);
-  const now = scopePass(files, options);
   let parser;
   try {
     parser = await loadRevParser(rev);
@@ -37,13 +39,13 @@ if (options.diff) {
     }
     throw error;
   }
-  let atRev;
+  let now, atRev, sawScope;
   try {
-    atRev = scopePass(files, options, parser, false);
+    ({ now, atRev, sawScope } = await poolScopeDiff(files, options, workerUrl, parser));
   } finally {
     parser.cleanup();
   }
-  if (!parser.sawScope()) {
+  if (!sawScope) {
     console.error(`--diff: the parser at ${rev} returns no resolve.scope record`);
     process.exit(2);
   }
@@ -54,7 +56,7 @@ if (options.diff) {
   process.exit(0);
 }
 
-const { results, replacements, skips, reviews, parseErrors, tally } = runPass(passFiles(options.paths), options);
+const { results, replacements, skips, reviews, parseErrors, tally } = await poolPass(passFiles(options.paths), options, workerUrl);
 for (const error of parseErrors) console.error(`${error.file}:${error.line}  ${error.reason}: ${error.span}`);
 
 if (list) {

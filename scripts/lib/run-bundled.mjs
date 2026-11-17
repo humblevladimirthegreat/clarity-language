@@ -26,9 +26,17 @@ function newestMtime(dir) {
   return newest;
 }
 
-export async function runBundled(name) {
+/**
+ * Runs dist/<name>/cli.bundle.mjs, rebuilding it first when src/ is newer.
+ * `extraEntries` (file names under src/<name>/, such as "worker.ts") are bundled
+ * beside it as dist/<name>/<base>.bundle.mjs, so the CLI finds them with
+ * `new URL("./<base>.bundle.mjs", import.meta.url)`.
+ */
+export async function runBundled(name, extraEntries = []) {
   // Lives in dist/<name>/ so src/parse/index.ts's `../..` still finds data/.
-  const bundle = join(root, "dist", name, "cli.bundle.mjs");
+  const outdir = join(root, "dist", name);
+  const entries = ["cli.ts", ...extraEntries];
+  const bundles = entries.map((entry) => join(outdir, entry.replace(/\.ts$/, ".bundle.mjs")));
 
   const grammar = join(root, "src", "parse", "word.peggy");
   if (mtime(join(root, "src", "generated", "word-parser.js")) < mtime(grammar)) {
@@ -36,18 +44,20 @@ export async function runBundled(name) {
     execSync("npm run -s generate:word", { cwd: root, stdio: ["ignore", 2, 2] });
   }
 
-  if (mtime(bundle) < newestMtime(join(root, "src"))) {
+  if (Math.min(...bundles.map(mtime)) < newestMtime(join(root, "src"))) {
     const { buildSync } = await import("esbuild");
     buildSync({
-      entryPoints: [join(root, "src", name, "cli.ts")],
+      entryPoints: entries.map((entry) => join(root, "src", name, entry)),
       bundle: true,
       platform: "node",
       format: "esm",
       packages: "external",
-      outfile: bundle,
+      outdir,
+      entryNames: "[name].bundle",
+      outExtension: { ".js": ".mjs" },
       logLevel: "warning",
     });
   }
 
-  await import(pathToFileURL(bundle).href);
+  await import(pathToFileURL(bundles[0]).href);
 }
