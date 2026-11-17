@@ -144,7 +144,7 @@ The seam word is yours; the rest of the clause is the holder's. The word that ca
 >
 > "As Azozon remembers it, Azozon walks, and Azozon takes no view on it."
 
-The no-judgment is Azozon's, like any other stance word under the holder. To take no view yourself, say it in a sentence of its own, with no holder.
+Here *no judgment* is Azozon's, like any other stance word under the holder. To take no view yourself, say it in a sentence of its own, with no holder.
 
 One place is different: a holder right before the [*although* hinge](/dependents#hinges) `thezem` gives the holder only the hinge's expectation, that the obstacle would have stopped the event. The event and the obstacle are still your claim.
 

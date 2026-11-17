@@ -59,7 +59,7 @@ FORMER (`ela`) says a usual pattern held, but you are not claiming it holds now:
 
 **Compare with:** PATTERN `thubom` says how you know (from repeated cases); it does not say the pattern is over. `helam` is not a past tense either: it works with LIVE and in a forecast.
 
-Do not write `helam` right before `hual`: that spot holds the restrictor's list of occasions (*always except when …*). Put `hual` first (bare *always*) and FORMER after the verb, where a channel goes on a general claim.
+Do not write `helam` right before `hual`: that spot holds the restrictor's list of occasions (*always except when …*). Put `hual` first (bare *always*) and FORMER after the verb.
 
 FORMER also works as a [comparison bar](bars.md#channel-bars): `helam` right before the rank word ranks against how it used to be, *than it used to be*.
 

@@ -15,7 +15,7 @@ English *always*, *usually*, *every*, and *never* make a general claim. The [uni
 >
 > "Azozon usually walks."
 
-To say how you know the general claim, add a [channel](/evidentiality#evidentiality). Like any stance word, it covers what comes after it ([which covers which](/clause#which-covers-which)). Put first, before the universal fence or restrictor, it says how you know the whole generalization, and its [ending](/evidentiality#evidence-strength) says how much backs it.
+To say how you know the general claim, add a [channel](/evidentiality#evidentiality). Like any stance word, it covers a later word that is about the whole claim, such as *always* ([which covers which](/clause#which-covers-which)). Put it first, before the universal fence or restrictor, and it says how you know the whole generalization; its [ending](/evidentiality#evidence-strength) says how much backs it.
 
 > `thubor zazozon hual vowurol.`
 >
@@ -43,7 +43,7 @@ After the fence or restrictor, the channel says how you know each case instead:
 >
 > "Every cat, I see it sleeping." (you checked each one)
 
-The difference is what the claim rests on. A channel on each case says you checked every member one by one, so the claim is only as wide as your checking. A channel first says you are generalizing from a pattern, a rule, or a deduction, which reaches cases you have never seen.
+Pick the place by what the claim rests on. Put the channel after the fence when you checked every member one by one; the claim is then only as wide as your checking. Put it first when you generalize from a pattern, a rule, or a deduction, which reaches cases you have never seen.
 
 The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed `hual` with a weak channel, because you claim no exceptions on thin evidence. Open `huam` does not claim that: it leaves the exceptions open.
 

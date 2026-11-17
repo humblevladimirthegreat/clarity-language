@@ -241,7 +241,7 @@ Outside a question, only the single-vowel `-r` cells are words. Under a question
 
 #### How far a stance join reaches {#stance-join-reach}
 
-A `/th/` join takes only the stance words right before it, with nothing between them and the join. A hinge keeps its `bl-` word, which belongs to the hinge (`thahum blerulal thul`). A stance word with other words between it and the join is a stance of its own, and the join after it is standalone. So where MAY sits changes what the join works on:
+When a sentence has more than one stance word, a `/th/` join works only on the stance words right before it, with nothing between them and the join. A hinge's `bl-` word does not count as something between, because it belongs to the hinge (`thahum blerulal thul`). A stance word with other words between it and the join is a stance of its own, and the join after it is standalone. So where MAY (the *maybe* stance) sits changes what the join works on:
 
 > `zazozon vowurol thomam thul.`
 >

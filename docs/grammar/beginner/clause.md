@@ -116,7 +116,7 @@ A few words keep a rule of their own, which their pages give:
 | A *because* or *if* word | Keeps its clause last, so the words before it cover it. To put it over them, say its clause first and point back to it |
 | A word that only gives your own feeling, your surprise, or whose good the act serves | Stays yours, even in a question: the question asks only about the claim |
 | A word naming whose view the clause gives | Covers the whole clause, wherever it sits |
-| A join word right after stance words | Works only on those stance words, so it covers nothing else |
+| A join word (a word that closes a list, such as *and* or *not*) right after stance words | Works only on those stance words, so it covers nothing else |
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 
