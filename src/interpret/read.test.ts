@@ -647,3 +647,64 @@ describe("reader: new members, calls, greetings and bodiless turns (R6d)", () =>
     assert.equal(reading!.frames[1]!.values.ask, "yesNo");
   });
 });
+
+describe("reader: tone marks (tone-marks.md#tone-marks)", () => {
+  /** Readings of a gloss, with every word placed once. */
+  function toned(gloss: string): { readings: Reading[]; all: Reading[] } {
+    const result = parse(glossToAgeben(gloss, tables, index), tables);
+    const readings = readParse(result, { tables });
+    const cover = coverage(result, readings);
+    assert.deepEqual(cover.missing.map((w) => w.word.raw), [], "missing");
+    assert.deepEqual(cover.doubled.map((w) => w.word.raw), [], "doubled");
+    return { readings, all: allReadings(readings) };
+  }
+  const tone = (frames: Frame[] | undefined): Frame => {
+    const found = frames?.filter((f) => f.key === "edge:tone") ?? [];
+    assert.equal(found.length, 1, "one tone frame");
+    assert.equal(found[0]!.family, "attitude");
+    assert.equal(found[0]!.anchor, "tone-marks.md#tone-marks");
+    assert.deepEqual(found[0]!.words, [], "a tone has no word of its own");
+    return found[0]!;
+  };
+
+  it("tone-marks.md:46: a mark on a word sits on that word's term (unsure about just the dog)", () => {
+    const { readings } = toned("z-Azozon | ?d-dog | v-see");
+    const dog = readings[0]!.claim.roles.d as Extract<Term, { kind: "thing" }>;
+    assert.deepEqual(tone(dog.frames).values, { mark: "?", names: "unsure", scope: "word" });
+    assert.ok(!readings[0]!.frames.some((f) => f.key === "edge:tone"), "not a whole-clause frame");
+  });
+
+  it("tone-marks.md:122: a mark on a span sits on the span's term", () => {
+    const { readings } = toned("z-Azozon | ?d-CITE[Azozon] | v-tell");
+    const quote = readings[0]!.claim.roles.d!;
+    assert.equal(quote.kind, "quote");
+    assert.equal(tone("frames" in quote ? quote.frames : undefined).values.scope, "span");
+  });
+
+  it("scope-islands.md:19: a mark before an island's brace frames the island's reading only", () => {
+    const { readings, all } = toned("z-Ahelan | !SCOPE[h-possibility | d-untruth] | v-see");
+    const island = all.find((r) => /\/i\d+$/.test(r.id))!;
+    assert.deepEqual(tone(island.frames).values, { mark: "!", names: "strong", scope: "island" });
+    assert.ok(!readings[0]!.frames.some((f) => f.key === "edge:tone"), "not the clause's frame");
+  });
+
+  it("tone-marks.md:52: a mark standing alone is a whole-clause attitude frame, ordered with the act word by its row", () => {
+    const { readings } = toned("! | y-soft-question | z-Azozon | v-walk");
+    const reading = readings[0]!;
+    assert.deepEqual(families(reading), ["attitude", "force"]);
+    assert.deepEqual(tone(reading.frames).values, { mark: "!", names: "strong", scope: "rest" });
+    assert.deepEqual(orders(reading), ["attitude>force rule"]);
+  });
+
+  it("tone-marks.md:72: a stack is one mark with both names", () => {
+    const { readings } = toned("?! | z-Alazun | d-dog | v-see");
+    assert.equal(tone(readings[0]!.frames).values.names, "unsure strong");
+  });
+
+  it("two marks that each reach the rest of the sentence: unsettled, an open decision", () => {
+    const { readings } = toned("! | z-Azozon | % | d-dog | v-see");
+    const reading = readings[0]!;
+    assert.equal(reading.unordered.length, 1);
+    assert.deepEqual(reading.unordered[0]!.map((f) => f.values.mark), ["!", "%"]);
+  });
+});

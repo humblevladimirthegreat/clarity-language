@@ -30,6 +30,7 @@ import type {
   VpCoord,
 } from "../parse/types.js";
 import { classOf, overlayClassKey } from "./classes.js";
+import { placeTones, toneFrame } from "./tones.js";
 import type { Detail, Frame, Link, LinkKind, Reading, ReadingId, Term, Unread } from "./types.js";
 
 export type ReadOptions = {
@@ -180,6 +181,8 @@ function frameOf(key: string, word: LexWord | undefined, here: Here | undefined)
 }
 
 function fromScope(frame: ScopeFrame): Frame {
+  // A tone mark has no word of its own (tone-marks.md#tone-marks).
+  if (frame.tone) return toneFrame(frame.tone);
   const out = frameOf(frame.key, frame.word, undefined);
   return {
     ...out,
@@ -1049,6 +1052,9 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     const to = asked ? firstOf.get(asked.utteranceIndex)?.id : undefined;
     if (reading) reading.links.push(link("answer", "answer:answer", answer.blanks, { answer, ...(to ? { to } : {}) }));
   }
+  // A tone on a word, a span or an island sits on what it colors (tone-marks.md#tone-marks); a rest-of-sentence tone
+  // came in with the scope frames.
+  if (info?.tones) placeTones(out, allReadings(out), info.tones);
   return out;
 }
 

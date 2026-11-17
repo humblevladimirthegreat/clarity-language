@@ -152,12 +152,14 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
       case "quote":
         // The readings belong to the quote's own parse.
         hit(t.word, r, "term:quote", held);
+        for (const f of t.frames ?? []) frame(f, r, within(held, [t.word]));
         return;
       default: {
         // A pronoun's antecedent is a pointer into another place, never a place of its own.
         hit(t.word, r, `term:${t.kind}`, held);
         const inside = within(held, [t.word]);
         for (const d of t.details ?? []) detail(d, r, inside);
+        for (const f of t.frames ?? []) frame(f, r, inside);
       }
     }
   };

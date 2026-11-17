@@ -18,6 +18,7 @@ import type {
   ParseResult,
   PointerVowel,
   ResolveInfo,
+  ToneRecord,
   RolePart,
   SharedRecord,
   SharedRole,
@@ -1057,7 +1058,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
   };
 }
 
-function buildResolve(result: ParseResult, tables?: ClassifyTables): ResolveInfo {
+function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = []): ResolveInfo {
   const ctx: Ctx = {
     antecedents: [],
     landmarks: [],
@@ -1086,7 +1087,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables): ResolveInfo
   visitResult(result, resolveVisitor(ctx));
   const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
   const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
-  const scope = clauseScopes(result.utterances, tables, blanks);
+  const scope = clauseScopes(result.utterances, tables, blanks, tones);
   const pairings = respectivelyPairings(result);
   return {
     anaphors: ctx.anaphors,
@@ -1095,6 +1096,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables): ResolveInfo
     shared: ctx.shared,
     ...(scope.length > 0 ? { scope } : {}),
     ...(pairings.length > 0 ? { pairings } : {}),
+    ...(tones.length > 0 ? { tones } : {}),
   };
 }
 
@@ -1180,9 +1182,10 @@ function fillAnswers(
  * Stage 4: annotate anaphor binds, fill-ask vs yes/no, SHARED `/ɡ/` readings, and the scope order of whole-clause
  * frames (`tables` names a holder's host stance).
  */
-export function resolve(result: ParseResult, tables?: ClassifyTables): ParseResult {
+/** `tones`: the marks `enforceTones` took out of the token stream (tone-marks.md#tone-marks). */
+export function resolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = []): ParseResult {
   return {
     utterances: result.utterances,
-    resolve: buildResolve(result, tables),
+    resolve: buildResolve(result, tables, tones),
   };
 }

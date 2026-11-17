@@ -217,7 +217,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | edge | `polar` | link | `questions.md#polar-particle` | Replies to the yes / no question before it; a body after it is the answer |
 | edge | `force` | frame:force | `speech-moves.md#speech-act-statement-question-command` | On the turn's left edge, outside the body; firm / soft / for-now ending is a `value` (`firm-soft.md#speech-act`); a stack's first word is the act (`more-turn-words.md#stacked-acts`) |
 | edge | `hook` | link | `hooks.md#discourse-hooks` | The left-edge hook; read as `hookJob:discourse` |
-| edge | `tone` | frame:attitude | `tone-marks.md#tone-marks` | Voice only, never the act. Reach by `tone.scope.*`: word, island, span, or the rest of the sentence |
+| edge | `tone` | frame:attitude | `tone-marks.md#tone-marks` | Voice only, never the act. Reach by `tone.scope.*` (the resolve stage's `ToneRecord`): a word or span tone is a frame on that word's term, detail or frame (its `inner`); an island tone, on the island's reading; a tone before the rest of the sentence, a whole-clause frame of the clause its first colored body word sits in, placed just before that word. No word carries a tone: its frame's `words` is empty, and `values` hold `mark`, `names` and `scope` |
 | body | `sentence` | structure | `clause.md#who-acts-and-the-action` | A body and its punctuation |
 | body | `fragment` | structure | `spans.md#asides-th` | A body with no clause |
 | body | `topicMarker` | link | `topic.md#topic` | Sets the topic later pronouns follow |
@@ -423,7 +423,8 @@ No sentence states an order against another frame.
 - `feelings.md#speaker-attitude`: "It is always the speaker's attitude, never the subject's, so it never says that the subject feels it."
 - Same section (against `stance`): "Hope says how you feel about the claim; the channel says what backs it."
 - `speech-manner.md#speech-manner`: "Like any stance word, it may sit anywhere in the sentence; the start is usual."
-- `tone-marks.md#tone-marks` (within the family): "A stack has no spaces and its order does not matter".
+- `tone-marks.md#tone-marks` (within one mark): "A stack has no spaces and its order does not matter", so a stack is one frame.
+- Two tone marks that each reach the rest of the sentence (`! zazozon % dodozel vayebel.`): **open decision**, unsettled (`unordered`). The page says a mark on a word "overrides it for that word", not how two rest-of-sentence marks order. Options: they commute (voice only, each colors its own stretch); text order; the later overrides the earlier from its place on, as a word's mark does. Recommendation: the override reading, stated on the page, and then the pair commutes in the reader.
 - `feelings.md#speaker-attitude` (against `force`): "It is always the speaker's attitude"; a drill reads `yem thavewom zalazun vayebel dadorol.` as *Honestly, does Alazun see the trumpet, I wonder?* (`speech-manner.md#intermediate-ageben-to-english`). In a question the attitude stays yours and is not asked.
 - `feelings.md#speaker-attitude` (against `force`): "In a question the attitude still stays yours, outside what is asked".
 - See `holder` above: speaker attitudes stay yours.
@@ -459,14 +460,14 @@ No sentence states an order against another frame.
 2. **Nesting comes only from the tree.** A frame sits inside another only where the parse tree nests them. A frame form with adjective reach nests under its adjective. A hinge or channel whose content is a `blarl` next sentence takes that reading through the [grounds link](#links), not by moving it.
 3. **Frame order.** What is left after rule 2 is two frames that both reach the whole clause. The reader sorts every such pair of families into one of four kinds from the [pair table](#pair-table): **commutes** (records nothing), **fixed by word shape** (records the order in `order`, citing the word's section), **fixed by a rule** (copies it into `order`, citing the rule from [scope statements](#scope-statements) or the resolve stage), **unsettled** (puts the pair in `unordered`). No reader, consumer, or host picks an order for an unsettled pair; settling one is a grammar decision.
 4. **Not stated stays empty.** A missing source, holder, or closure is absent from the reading, never defaulted. A carried frame is a link to the reading that set it, not a default.
-5. **Pointers, not copies.** Every frame, detail, and term keeps its `LexWord`s, so a consumer can show the text, the gloss, and the position.
+5. **Pointers, not copies.** Every frame, detail, and term keeps its `LexWord`s, so a consumer can show the text, the gloss, and the position. A tone mark is the one frame with no word: it sits on the place it colors, and `ResolveInfo.tones` keeps its words.
 6. **Pronouns keep both ends.** A pronoun term holds the resolver's `AnaphorBind` and, when bound, its antecedent's term. The reader never binds one itself.
 7. **Numbers stay stems** in the reading; phase 2 adds their values for comparison.
 8. **No row is an unknown frame.** A construction the reader meets with no row in the [classification table](#classification-table) becomes an `unknown` frame and an `unread` entry.
 
 ## Pair table
 
-One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word and `attitude` tone marks: commute), except `stance` × `stance` and `call` × `call`, which have rows. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
+One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word: commutes; two rest-of-sentence tone marks: unsettled, see [attitude](#attitude)), except `stance` × `stance` and `call` × `call`, which have rows. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
 
 Counts: fixed by a rule 126, unsettled 0, commutes 26, fixed by word shape 3.
 

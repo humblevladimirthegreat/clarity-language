@@ -151,7 +151,7 @@ Later splits of `mood` (token class, gloss tag) can follow this column without n
 
 ### Stage 3 — Chevrotain (typed tokens → sentence AST)
 
-Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone-mark stacks (`!` `?` `%` `&` `;`, any order, each at most twice), and `{` / `}` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
+Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone-mark stacks (`!` `?` `%` `&` `;`, any order, each at most twice), and `{` / `}` → Chevrotain `IToken[]` (no second character lexer). `enforceTones` takes the tone marks out of the stream before the grammar runs and keeps a `ToneRecord` for each: the stack as written (`mark`), its `names`, its `scope` (`word`, `span`, `island`, `rest`), its place (`at`, the first word after it), and the `words` it colors; the resolve stage carries them on `ResolveInfo.tones` ([tone-marks.md](/tone-marks#tone-marks)). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
 
 Owns:
 
@@ -227,7 +227,7 @@ Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 - **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
 - **`LexWord`** — Stage 2: `MorphWord` plus `reading`, optional `overlay` / `rootGloss`.
 - **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional stand-in `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, written spans (as noun heads), islands, clause coords, revisers.
-- **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`).
+- **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`), and when present `answers[]`, `pairings[]`, `scope[]` (whole-clause frame order, `src/parse/scope.ts`; a rest-of-sentence tone is an `attitude` frame there), `tones[]` (`ToneRecord`).
 
 ## Browser / bundle size
 

@@ -13,7 +13,7 @@
 import { overlayKey, type ClassifyTables } from "./classify.js";
 import { stackKind } from "./series.js";
 import { isGreeting } from "./ast-walk.js";
-import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, NpCoord, NpPackage, Unit, Utterance } from "./types.js";
+import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, NpCoord, NpPackage, ToneRecord, Unit, Utterance } from "./types.js";
 
 export type FrameFamily =
   | "force"
@@ -119,6 +119,11 @@ export type ScopeFrame = {
   member?: FrameMember;
   /** A holder's stance, NOTIONAL or intention: the frame the holder seam sits on (holder.md#holder). */
   holderHost?: true;
+  /**
+   * A tone mark before the rest of the sentence (tone-marks.md#tone-marks). No word carries it: `word` is the first
+   * word it colors, and its place in the text is just before that word.
+   */
+  tone?: ToneRecord;
 };
 
 export type PairKind = "rule" | "wordShape";
@@ -393,13 +398,22 @@ function mayRightBefore(earlier: ScopeFrame, later: ScopeFrame): boolean {
   return earlier.member === "may" && later.word.pos === "th" && later.word.at === (earlier.word.at ?? -2) + 1;
 }
 
-const position = (frame: ScopeFrame): number => frame.word.at ?? -1;
+const position = (frame: ScopeFrame): number => (frame.tone ? frame.tone.at - 0.5 : (frame.word.at ?? -1));
+
+const TONE = "tone-marks.md#tone-marks";
 
 function orderPair(a: ScopeFrame, b: ScopeFrame, scope: ClauseScope): void {
   // A holder and the stance, NOTIONAL or intention its seam sits on: fixed by word shape.
-  if (a.word === b.word && (a.holderHost || b.holderHost)) {
+  if (a.word === b.word && !a.tone && !b.tone && (a.holderHost || b.holderHost)) {
     const [holder, host] = a.family === "holder" ? [a, b] : [b, a];
     scope.order.push({ over: holder, under: host, kind: "wordShape", anchors: [HOLDER] });
+    return;
+  }
+  // Two tone marks that each reach the rest of the sentence: the page says a stack's order does not matter and that
+  // a mark on a word overrides the sentence's mark for that word, but not how two such marks order. Open decision
+  // (interpreter.md#attitude): unsettled until it is made.
+  if (a.tone && b.tone) {
+    scope.unordered.push({ frames: [a, b], anchors: [TONE] });
     return;
   }
   const row = pairRow(a.family, b.family) ?? DEFAULT_ROW;
@@ -630,17 +644,85 @@ function collectClause(
   tables: ClassifyTables | undefined,
   blanks: ReadonlySet<LexWord>,
   out: ClauseScope[],
+  tones: readonly BodyTone[] = [],
 ): void {
-  out.push(scopeOf(clause, utteranceIndex, inherited, tables, blanks));
+  const own = toneFramesIn(clause, tones);
+  const reaching = [...inherited, ...own];
+  out.push(scopeOf(clause, utteranceIndex, reaching, tables, blanks));
   for (const unit of clause.units) {
     // One reading per member of a clause join (reader rule 1); the turn's edge frames reach each member.
     if (unit.kind === "clauseCoord") {
       const members = [unit.coord.first, ...unit.coord.links.map((link) => link.clause)];
-      for (const member of members) if (member) collectClause(member, utteranceIndex, inherited, tables, blanks, out);
+      for (const member of members) if (member) collectClause(member, utteranceIndex, reaching, tables, blanks, out, tones);
     }
   }
   // A dependent is a nested reading with its own frames (reader rule 2).
-  if (clause.dependent) collectClause(clause.dependent.clause, utteranceIndex, [], tables, blanks, out);
+  if (clause.dependent) collectClause(clause.dependent.clause, utteranceIndex, [], tables, blanks, out, tones);
+}
+
+// ── Tone marks over the rest of the sentence ────────────────────────────────
+
+function isWord(value: object): value is LexWord {
+  return typeof (value as LexWord).raw === "string" && "family" in value && "reading" in value;
+}
+
+/** Every word under `value`, less what sits under the objects in `skip`. */
+function wordsUnder(value: unknown, skip: ReadonlySet<object> = new Set(), out = new Set<LexWord>(), seen = new Set<object>()): Set<LexWord> {
+  if (value === null || typeof value !== "object" || seen.has(value) || skip.has(value)) return out;
+  seen.add(value);
+  if (isWord(value)) {
+    out.add(value);
+    return out;
+  }
+  for (const child of Array.isArray(value) ? value : Object.values(value)) wordsUnder(child, skip, out, seen);
+  return out;
+}
+
+/** A clause's own words: not those of its dependent or of its clause-join members, which have readings of their own. */
+function ownWords(clause: Clause): Set<LexWord> {
+  const skip = new Set<object>();
+  if (clause.dependent) skip.add(clause.dependent.clause);
+  for (const unit of clause.units) {
+    if (unit.kind !== "clauseCoord") continue;
+    if (unit.coord.first) skip.add(unit.coord.first);
+    for (const link of unit.coord.links) if (link.clause) skip.add(link.clause);
+  }
+  return wordsUnder(clause, skip);
+}
+
+/** A rest-of-sentence tone's frame and the first word it colors inside a sentence body. */
+type BodyTone = { frame: ScopeFrame; anchor: LexWord };
+
+/**
+ * The tone frames whose first colored body word is this clause's own: a tone that starts in a dependent or a join
+ * member frames that clause, and one before the body (on its act word or a call) frames the clause it reaches.
+ */
+function toneFramesIn(clause: Clause, tones: readonly BodyTone[]): ScopeFrame[] {
+  if (tones.length === 0) return [];
+  const own = ownWords(clause);
+  return tones.filter((tone) => own.has(tone.anchor)).map((tone) => tone.frame);
+}
+
+/**
+ * Split one turn's rest-of-sentence tones: those that color a body word frame the clause of their first body word;
+ * those that color only left-edge words (`! yem.`) frame the turn's edge.
+ */
+function turnTones(utterance: Utterance, tones: readonly ToneRecord[]): { body: BodyTone[]; edge: ScopeFrame[] } {
+  const out: { body: BodyTone[]; edge: ScopeFrame[] } = { body: [], edge: [] };
+  const rest = tones.filter((tone) => tone.scope === "rest");
+  if (rest.length === 0) return out;
+  const turn = wordsUnder(utterance);
+  const bodies = wordsUnder(utterance.bodies);
+  for (const tone of rest) {
+    if (!turn.has(tone.words[0]!)) continue;
+    const found = frame("edge:tone", tone.words[0]!);
+    if (!found) continue;
+    const toneFrame: ScopeFrame = { ...found, tone };
+    const anchor = tone.words.find((word) => bodies.has(word));
+    if (anchor) out.body.push({ frame: toneFrame, anchor });
+    else out.edge.push(toneFrame);
+  }
+  return out;
 }
 
 /** True when nothing is on the turn's left edge: no act word, call, reaction, polar particle or hook. */
@@ -664,18 +746,25 @@ export function greetingHead(left: LeftEdge, body: BodyClause): LexWord | undefi
 /**
  * Scope records for every clause of the parse, in text order: each clause's whole-clause frames and the order of
  * every two of them. `tables` names a holder's host; without them a holder word gives the holder frame alone.
- * `blanks` are the resolve stage's fill-ask blanks, which bring no new member in.
+ * `blanks` are the resolve stage's fill-ask blanks, which bring no new member in. `tones` are the marks
+ * `enforceTones` kept: one that reaches the rest of the sentence is a whole-clause attitude frame (tone-marks.md#tone-marks).
  */
-export function clauseScopes(utterances: Utterance[], tables?: ClassifyTables, blanks: ReadonlySet<LexWord> = new Set()): ClauseScope[] {
+export function clauseScopes(
+  utterances: Utterance[],
+  tables?: ClassifyTables,
+  blanks: ReadonlySet<LexWord> = new Set(),
+  tones: readonly ToneRecord[] = [],
+): ClauseScope[] {
   const out: ClauseScope[] = [];
   utterances.forEach((utterance, utteranceIndex) => {
-    const edge = edgeFrames(utterance.left);
+    const toned = turnTones(utterance, tones);
+    const edge = [...toned.edge, ...edgeFrames(utterance.left)];
     // A turn with no body (a bare question, a call): one record for its edge frames, matched by utterance.
     if (utterance.bodies.length === 0) out.push({ ...scopeOf({ units: [] }, utteranceIndex, edge, tables, blanks), bodiless: true });
     utterance.bodies.forEach((body: BodyClause) => {
       const head = greetingHead(utterance.left, body);
       const greeting = head ? frame("reading:greeting", head) : undefined;
-      collectClause(body.clause, utteranceIndex, greeting ? [...edge, greeting] : edge, tables, blanks, out);
+      collectClause(body.clause, utteranceIndex, greeting ? [...edge, greeting] : edge, tables, blanks, out, toned.body);
     });
   });
   return out.filter((scope) => scope.frames.length > 0);

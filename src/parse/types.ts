@@ -544,6 +544,25 @@ export type PairingRecord = {
   partners: LexWord[];
 };
 
+/** What a tone mark colors (tone-marks.md#tone-marks): a word, a span, a scope island, or the rest of the sentence. */
+export type ToneScope = "word" | "span" | "island" | "rest";
+
+/**
+ * One tone mark, kept when `enforceTones` takes the marks out of the token stream (tone-marks.md#tone-marks). A tone
+ * is voice only: no `LexWord` carries it, so `words` are the words it colors, never its own.
+ */
+export type ToneRecord = {
+  /** The stack as written (`?!`). */
+  mark: string;
+  /** Each mark's name, doubled ones with a `2` (`unsure`, `strong2`), in the stack's written order. */
+  names: string[];
+  scope: ToneScope;
+  /** Where the mark sits: the `at` of the first word after it. */
+  at: number;
+  /** The words it colors: the word or span; the island's words; the rest of the sentence up to its period. */
+  words: LexWord[];
+};
+
 export type ResolveInfo = {
   anaphors: AnaphorBind[];
   asks: AskRecord[];
@@ -557,4 +576,6 @@ export type ResolveInfo = {
    * `src/parse/scope.ts`. Present when some clause has a whole-clause frame.
    */
   scope?: ClauseScope[];
+  /** Every tone mark, in text order. Present when the text has one. */
+  tones?: ToneRecord[];
 };

@@ -85,6 +85,8 @@ import type {
   NumberMarker,
   NumberStem,
   ParseResult,
+  ToneRecord,
+  ToneScope,
   Unit,
   VpCoord,
 } from "./types.js";
@@ -176,12 +178,13 @@ function toneStackNames(mark: string): string[] | undefined {
 /**
  * Tone-mark placement (speech-moves.md § tone marks). A mark is a valid mark
  * attached to a word, an island's opening `{`, or a span, or free-standing
- * before words of the same sentence. Returns the tokens without tone marks and
- * the `tone.*` constructions they used.
+ * before words of the same sentence. Returns the tokens without tone marks, the
+ * `tone.*` constructions they used, and a record of each mark: what it colors.
  */
-export function enforceTones(tokens: IToken[]): { tokens: IToken[]; constructions: string[] } {
+export function enforceTones(tokens: IToken[]): { tokens: IToken[]; constructions: string[]; tones: ToneRecord[] } {
   const kept: IToken[] = [];
   const constructions = new Set<string>();
+  const tones: ToneRecord[] = [];
   tokens.forEach((token, i) => {
     if (token.tokenType !== Tone) {
       kept.push(token);
@@ -191,7 +194,7 @@ export function enforceTones(tokens: IToken[]): { tokens: IToken[]; construction
     const names = toneStackNames(mark);
     if (!names) throw new ConstructionError("toneStack", `"${mark}"`);
     const next = tokens[i + 1];
-    let scope: string;
+    let scope: ToneScope;
     if (!next || next.tokenType === Period || next.tokenType === QMark || next.tokenType === Bang) {
       throw new ConstructionError("toneTarget", `"${mark}" before ${next ? `"${next.image}"` : "the end"}`);
     } else if (!attached) {
@@ -212,8 +215,34 @@ export function enforceTones(tokens: IToken[]): { tokens: IToken[]; construction
     for (const name of names) constructions.add(`tone.mark.${name}`);
     if (names.length > 1) constructions.add("tone.mark.stack");
     constructions.add(`tone.scope.${scope}`);
+    const words = tonedWords(tokens, i + 1, scope);
+    const at = words[0]?.at;
+    if (at !== undefined) tones.push({ mark, names, scope, at, words });
   });
-  return { tokens: kept, constructions: [...constructions] };
+  return { tokens: kept, constructions: [...constructions], tones };
+}
+
+/** The words a tone colors, from the token after the mark: that word or span, the island up to its `}`, or the rest of the sentence. */
+function tonedWords(tokens: IToken[], from: number, scope: ToneScope): LexWord[] {
+  const wordOf = (token: IToken | undefined): LexWord | undefined => {
+    const payload = token?.payload as TokenPayload | undefined;
+    return payload && isLexWordPayload(payload) ? payload : undefined;
+  };
+  if (scope === "word" || scope === "span") {
+    const word = wordOf(tokens[from]);
+    return word ? [word] : [];
+  }
+  const words: LexWord[] = [];
+  let depth = 0;
+  for (let i = from; i < tokens.length; i++) {
+    const token = tokens[i]!;
+    if (scope === "rest" && token.tokenType === Period) break;
+    if (scope === "island" && token.tokenType === IslandOpen) depth++;
+    if (scope === "island" && token.tokenType === IslandClose && --depth === 0) break;
+    const word = wordOf(token);
+    if (word) words.push(word);
+  }
+  return words;
 }
 
 /** A written span fence (`d[…]`, `th(…)`, `@<Sam>`), one token. */

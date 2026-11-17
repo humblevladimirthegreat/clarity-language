@@ -22,7 +22,8 @@ const words = (ws: LexWord[]): string => ws.map(word).join(" ");
 /** One line for a term; a nested clause or quote shows its reading ids. */
 export function formatTerm(term: Term | undefined): string {
   if (!term) return "-";
-  const tail = (details?: Detail[]): string => (details?.length ? ` {${details.map(formatDetail).join("; ")}}` : "");
+  const tail = (details?: Detail[], frames: Frame[] | undefined = "frames" in term ? term.frames : undefined): string =>
+    (details?.length ? ` {${details.map(formatDetail).join("; ")}}` : "") + (frames?.length ? ` (${frames.map(formatFrame).join("; ")})` : "");
   switch (term.kind) {
     case "thing":
       return `${term.head.raw}${term.named ? " (named)" : ""}${tail(term.details)}`;
@@ -42,7 +43,7 @@ export function formatTerm(term: Term | undefined): string {
     case "clause":
       return `clause ${term.reading.id}`;
     case "quote":
-      return `quote ${term.word.raw} [${term.readings.map((r) => r.id).join(" ")}]`;
+      return `quote ${term.word.raw} [${term.readings.map((r) => r.id).join(" ")}]${tail()}`;
   }
 }
 
@@ -51,11 +52,14 @@ function formatDetail(d: Detail): string {
   if (d.hosted) parts.push(`of ${formatTerm(d.hosted)}`);
   if (d.details?.length) parts.push(`{${d.details.map(formatDetail).join("; ")}}`);
   if (d.content?.length) parts.push(`[${d.content.map((r) => r.id).join(" ")}]`);
+  if (d.frames?.length) parts.push(`(${d.frames.map(formatFrame).join("; ")})`);
   return parts.join(" ");
 }
 
 function formatFrame(f: Frame): string {
   const parts = [f.family, f.key, `"${words(f.words)}"`];
+  // A tone mark has no word of its own (tone-marks.md#tone-marks).
+  if (f.key === "edge:tone") parts.push(`mark ${f.values.mark} ${f.values.scope}`);
   if (f.party) parts.push(`party ${formatTerm(f.party)}`);
   if (f.hosted) parts.push(`hosted ${formatTerm(f.hosted)}`);
   if (f.member) parts.push(`member ${f.member}`);

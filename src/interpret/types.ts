@@ -55,7 +55,10 @@ export type Frame = {
   content?: Reading[];
   /** The hosted `/b/`: a hinge's condition noun, a channel's source, a sake's stake holder. */
   hosted?: Term;
-  /** Frames held inside this one: the stance or intention a contrary zone holds (contrary-to.md#contrary-to-stance). */
+  /**
+   * Frames held inside this one: the stance or intention a contrary zone holds (contrary-to.md#contrary-to-stance), or
+   * a tone mark on the frame's own word (tone-marks.md#tone-marks: "A mark may go on any word, including act words").
+   */
   inner?: Frame[];
   /** Words that describe the frame's own word: a call's or a reaction's `gl-`, `/w/` and `/ɡ/` words (speech-moves.md#vocative, more-turn-words.md#describe-turn-word). */
   details?: Detail[];
@@ -79,17 +82,21 @@ export type Detail = {
   hosted?: Term;
   /** Details of this detail (`/w/` on an adverb or adjective). */
   details?: Detail[];
-  /** Frames that reach only this word (adjective reach), nested here by rule 2. */
+  /** Frames that reach only this word (adjective reach), nested here by rule 2, and a tone mark on the word. */
   frames?: Frame[];
 };
 
+/**
+ * A term's `frames` reach only its word: an adjective-reach stance (rule 2), or a tone mark on the word or span
+ * (tone-marks.md#tone-marks).
+ */
 export type Term =
   | { kind: "thing"; head: LexWord; root: string; named: boolean; details: Detail[]; frames?: Frame[] }
-  | { kind: "speaker" | "listener"; word: LexWord; details?: Detail[] }
-  | { kind: "pronoun"; word: LexWord; bind?: AnaphorBind; antecedent?: Term; details?: Detail[] }
-  | { kind: "blank"; word: LexWord; details?: Detail[] }
-  | { kind: "literal"; word: LexWord; payload: string; details?: Detail[] }
-  | { kind: "number"; word: LexWord; stem: NumberStem; details?: Detail[] }
+  | { kind: "speaker" | "listener"; word: LexWord; details?: Detail[]; frames?: Frame[] }
+  | { kind: "pronoun"; word: LexWord; bind?: AnaphorBind; antecedent?: Term; details?: Detail[]; frames?: Frame[] }
+  | { kind: "blank"; word: LexWord; details?: Detail[]; frames?: Frame[] }
+  | { kind: "literal"; word: LexWord; payload: string; details?: Detail[]; frames?: Frame[] }
+  | { kind: "number"; word: LexWord; stem: NumberStem; details?: Detail[]; frames?: Frame[] }
   | {
       kind: "list";
       /** The join that closes the list (its last part's join). */
@@ -113,7 +120,7 @@ export type Term =
     }
   | { kind: "clause"; reading: Reading }
   /** A cite span: its words are readings with their own act word and frames. */
-  | { kind: "quote"; word: LexWord; readings: Reading[] };
+  | { kind: "quote"; word: LexWord; readings: Reading[]; frames?: Frame[] };
 
 export type LinkKind =
   | "anaphor"
