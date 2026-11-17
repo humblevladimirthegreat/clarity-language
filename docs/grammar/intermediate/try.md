@@ -9,7 +9,7 @@ band: intermediate
 
 English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails. To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb; the ending says how committed the attempt is. The sentence says the attempt happens, not whether it works, so you can report an attempt without claiming how it turned out. (Cue: 🧪 A test tube tries a sample to see what happens.)
 
-It is an [intention adverb](/can-and-cant#intention-adverbs): it covers the whole clause, and next to another word that does, the earlier of the two covers the later ([which word covers which](/clause#which-covers-which)). Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder (no one named whose view it gives).
+It is an [intention adverb](/can-and-cant#intention-adverbs): it is about the whole clause, so next to another such word, the earlier of the two covers the later ([which word covers which](/clause#which-covers-which)). Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder (no one named whose view it gives).
 
 As a plain noun, the root keeps its own meaning (`zowal` *a test tube*).
 

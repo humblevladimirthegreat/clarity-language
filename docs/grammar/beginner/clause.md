@@ -92,7 +92,7 @@ A stance is yours now, as you speak. `/th/` is for what is in a mind, and with n
 
 ### Which word covers which {#which-covers-which}
 
-A stance word covers the whole claim, and so do a few other words you will meet later, such as *always* and *I plan*. When one sentence has two such words, the **earlier one covers the later one**. Where they sit is the only thing that sets this, so moving one to the front changes what you say.
+A stance word is about the whole claim, and so are a few other words you will meet later, such as *always* and *I plan*. When one sentence has two such words, the earlier one **covers** the later one: it is about the later word and the claim together. Their order alone sets this, so swapping the two changes what you say.
 
 > `thewemum zodozel thevemem vowurol.`
 >
@@ -108,7 +108,14 @@ A stance word covers the whole claim, and so do a few other words you will meet 
 
 With only one such word, its place changes nothing. An ordinary adverb (how, when, or where) never takes part: it may sit anywhere.
 
-A few words keep a rule of their own, which their pages give. A speech-act word comes first in its turn, so it covers the rest. A *because* or *if* word keeps its clause last, so the words before it cover it; to put it over them, say its clause first and point back to it. A word that only gives your own feeling, your surprise, or whose good the act serves stays yours, even in a question: the question asks only about the claim. A word naming whose view the clause gives covers the whole clause, wherever it sits.
+A few words keep a rule of their own, which their pages give:
+
+| Word | Its own rule |
+|------|--------------|
+| A speech-act word, such as the one that makes a question | Comes first in its turn, so it covers the rest |
+| A *because* or *if* word | Keeps its clause last, so the words before it cover it. To put it over them, say its clause first and point back to it |
+| A word that only gives your own feeling, your surprise, or whose good the act serves | Stays yours, even in a question: the question asks only about the claim |
+| A word naming whose view the clause gives | Covers the whole clause, wherever it sits |
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 

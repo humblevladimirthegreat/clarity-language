@@ -182,7 +182,7 @@ English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, fee
 
 Hope is not a way of knowing, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
-In a question the attitude still stays yours, outside what is asked, unlike the usual [order](/clause#which-covers-which) where the question word covers the rest. The question asks only about the claim:
+In a question the attitude still stays yours. By the usual [order](/clause#which-covers-which) the question word covers the rest of the turn, but an attitude stays outside what is asked, so the question asks only about the claim:
 
 > `yel zazozon thuwuyom vowurol.`
 >

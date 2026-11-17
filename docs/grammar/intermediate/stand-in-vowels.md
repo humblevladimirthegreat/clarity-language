@@ -121,7 +121,7 @@ The content can be anything a sentence says: a verbless sentence, a denied event
 
 Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#likeness) `hewem` (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem `-r`](/pronouns#resume-r), and *then* or *so* is a hinge + `blarth`.
 
-A hinge with `blarl` stays last, so a word about the whole claim before it covers it. A hinge with `blarth` has nothing after it, so it may come first and cover the words after it ([which word covers which](/clause#which-covers-which)):
+A hinge with `blarl` stays last, so any word about the whole claim that comes before it covers the hinge. A hinge with `blarth` has nothing after it, so it may come first and cover the words after it ([which word covers which](/clause#which-covers-which)). With PLAN, the order says whether the reason is part of the plan or the reason for it:
 
 > `thagom zazozon vowurol thahum blarl zalazun vezuyol.`
 >

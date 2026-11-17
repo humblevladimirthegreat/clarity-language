@@ -162,7 +162,7 @@ When English would say *everything* / *everyone*, write a standalone join with t
 >
 > "everything" / "everyone."
 
-Put a kind after it for *every* member of that kind: `zual godozel` is *every dog*. A phrase like this, and a phrase that brings in a new member (*a cat*), reaches from where it stands to the end of its sentence. Whatever comes later is inside it. Such a phrase follows the order rule for words that cover the whole clause ([which word covers which](clause.md#which-covers-which)): when a clause has two of them, or one and a stance word, the earlier covers the later, and moving a phrase to the front chooses which.
+Put a kind after it for *every* member of that kind: `zual godozel` is *every dog*. A phrase like this, and a phrase that brings in a new member (*a cat*), reaches from where it stands to the end of its sentence. Whatever comes later is inside it. Such a phrase follows the same order rule as a stance word ([which word covers which](clause.md#which-covers-which)): when a clause has two of them, or one and a stance word, the earlier covers the later, and moving a phrase to the front chooses which.
 
 > `zual godozel dogozel vayebel.`
 >

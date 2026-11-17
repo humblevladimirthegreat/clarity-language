@@ -114,7 +114,7 @@ This holds on someone else's act too. `zazozon vezuyol thawetham` is *Azozon tal
 
 The `/b/` names whose stake it is, not who owns the noun. On `/ɡ/` the noun is still yours: `zewal gawethal blalazun` is *my gift, good for Alazun*. Someone else's thing is `gegunum` plus `/b/`, or `goyom`.
 
-A sake word on the clause stays outside a question: it is your own remark on what the act serves (with no `/b/`, your own stake), so the question asks only about the act, though the question word comes first ([which word covers which](/clause#which-covers-which)).
+A sake word on the clause stays outside a question, though the question word comes first ([which word covers which](/clause#which-covers-which)). It is your own remark on what the act serves (with no `/b/`, your own stake), so the question asks only about the act.
 
 > `yel zazozon vowurol thobatham.`
 >

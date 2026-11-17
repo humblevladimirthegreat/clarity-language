@@ -18,7 +18,7 @@ To say what you mean to do (*I plan to walk*), put **`thago`** plus an ending on
 >
 > "I plan to walk."
 
-PLAN covers the whole sentence. Next to another word that covers it, the earlier of the two covers the later ([which word covers which](clause.md#which-covers-which)). The plan stays yours when someone else does the act: `zazozon thagom vowurol` is *I plan for Azozon to walk*, not Azozon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it. In a question, PLAN asks about the listener's plan: `yel zawan vowurol thagom.` is *Do you plan to walk?*
+PLAN is about the whole sentence. Next to another word about the whole sentence, the earlier of the two covers the later ([which word covers which](clause.md#which-covers-which)). The plan stays yours when someone else does the act: `zazozon thagom vowurol` is *I plan for Azozon to walk*, not Azozon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it. In a question, PLAN asks about the listener's plan: `yel zawan vowurol thagom.` is *Do you plan to walk?*
 
 As a plain noun or verb, the root keeps its own meaning (`zagol` *a map*; `vagol` *to plan*). Leave PLAN out when you are only saying what happens.
 
