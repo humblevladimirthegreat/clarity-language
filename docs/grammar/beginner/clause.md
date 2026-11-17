@@ -90,6 +90,26 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 A stance is yours now, as you speak. `/th/` is for what is in a mind, and with nothing else marked, that mind is yours.
 
+### Which word covers which {#which-covers-which}
+
+A stance word covers the whole claim, and so do a few other words you will meet later, such as *always* and *I plan*. When one sentence has two such words, the **earlier one covers the later one**. Where they sit is the only thing that sets this, so moving one to the front changes what you say.
+
+> `thewemum zodozel thevemem vowurol.`
+>
+> th-concern | z-dog | th-doubt | v-walk
+>
+> "Worryingly, I doubt a dog is walking." (the doubt worries you)
+
+> `thevemem zodozel thewemum vowurol.`
+>
+> th-doubt | z-dog | th-concern | v-walk
+>
+> "I doubt a dog is walking, worrying as that would be." (the walking would worry you)
+
+With only one such word, its place changes nothing. An ordinary adverb (how, when, or where) never takes part: it may sit anywhere.
+
+A few words keep a rule of their own, which their pages give. A speech-act word comes first in its turn, so it covers the rest. A *because* or *if* word keeps its clause last, so the words before it cover it; to put it over them, say its clause first and point back to it. A word that only gives your own feeling, your surprise, or whose good the act serves stays yours, even in a question: the question asks only about the claim. A word naming whose view the clause gives covers the whole clause, wherever it sits.
+
 ### Extra nouns (`/b/`) {#extra-nouns}
 
 Some sentences name a person or thing beyond the subject and direct object: who receives what is given, or whom something is like. Mark that **extra noun** with `/b/`; the letter after the `b` tells these two jobs apart.

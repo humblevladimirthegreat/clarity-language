@@ -29,7 +29,8 @@ import type {
 import { actWord, isDigitless, joinHook, KIND_SERIES, SCALE_SERIES } from "./series.js";
 import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, vpUnitLists, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED, closedDerived } from "../closed-roots.js";
-import { isClauseAdverb } from "./classify.js";
+import { isClauseAdverb, type ClassifyTables } from "./classify.js";
+import { clauseScopes } from "./scope.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -1051,7 +1052,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
   };
 }
 
-function buildResolve(result: ParseResult): ResolveInfo {
+function buildResolve(result: ParseResult, tables?: ClassifyTables): ResolveInfo {
   const ctx: Ctx = {
     antecedents: [],
     landmarks: [],
@@ -1079,11 +1080,13 @@ function buildResolve(result: ParseResult): ResolveInfo {
   };
   visitResult(result, resolveVisitor(ctx));
   const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
+  const scope = clauseScopes(result.utterances, tables);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
     ...(answers.length > 0 ? { answers } : {}),
     shared: ctx.shared,
+    ...(scope.length > 0 ? { scope } : {}),
   };
 }
 
@@ -1137,10 +1140,13 @@ function fillAnswers(
   return answers;
 }
 
-/** Stage 4: annotate anaphor binds, fill-ask vs yes/no, and SHARED `/ɡ/` readings. */
-export function resolve(result: ParseResult): ParseResult {
+/**
+ * Stage 4: annotate anaphor binds, fill-ask vs yes/no, SHARED `/ɡ/` readings, and the scope order of whole-clause
+ * frames (`tables` names a holder's host stance).
+ */
+export function resolve(result: ParseResult, tables?: ClassifyTables): ParseResult {
   return {
     utterances: result.utterances,
-    resolve: buildResolve(result),
+    resolve: buildResolve(result, tables),
   };
 }

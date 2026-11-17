@@ -60,6 +60,8 @@ Words like *because* and *although* attach a dependent clause as a reason, a con
 
 A hinge uses the abstract sense of its root, not the everyday object, so it ends in `-m`.
 
+Because the pair comes last, any other word about the whole claim sits before it and covers it, by the usual [order](clause.md#which-covers-which): the earlier covers the later.
+
 You can also say:
 
 <!-- cheat-sheet: linking-clauses -->

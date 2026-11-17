@@ -1,3 +1,4 @@
+import type { ClauseScope } from "./scope.js";
 import type { OverlayKind } from "../lexicon-search.js";
 
 /**
@@ -524,4 +525,9 @@ export type ResolveInfo = {
   /** Present when a reply fills the fill-ask before it. */
   answers?: AnswerRecord[];
   shared: SharedRecord[];
+  /**
+   * Scope order of each clause's whole-clause frames (clause.md#which-covers-which), from the pair table in
+   * `src/parse/scope.ts`. Present when some clause has a whole-clause frame.
+   */
+  scope?: ClauseScope[];
 };

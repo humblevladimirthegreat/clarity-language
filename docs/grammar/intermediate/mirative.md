@@ -28,6 +28,16 @@ The ending says how firm the expectation was that the news overturned. If you do
 >
 > "Alazun is walking, I see it, and I never expected that."
 
+In a question MIRATIVE stays yours, outside what is asked, as a [speaker attitude](feelings.md#speaker-attitude) does: the surprise is your own, so the question asks only about the claim, though the question word comes first ([which word covers which](/clause#which-covers-which)).
+
+> `yel themem zazozon vowurol.`
+>
+> y-question | th-MIRATIVE | z-Azozon | v-walk
+>
+> "Is Azozon walking, of all things?"
+
+To ask whether the news surprised the listener, make the surprise the verb: `yel zawan vemem darl zazozon vowurol.` is *Are you amazed that Azozon walks?*
+
 MIRATIVE does not end a [channel carried from an earlier sentence](evidentiality.md#carry-forward): a surprise inside a report is still part of the report.
 
 The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling word](how-you-feel.md#feeling-word): the mirative after `goyom` says the stimulus was unexpected.

@@ -182,6 +182,16 @@ English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, fee
 
 Hope is not a way of knowing, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
+In a question the attitude still stays yours, outside what is asked, unlike the usual [order](/clause#which-covers-which) where the question word covers the rest. The question asks only about the claim:
+
+> `yel zazozon thuwuyom vowurol.`
+>
+> y-question | z-Azozon | th-hope | v-walk
+>
+> "Is Azozon walking? I hope so."
+
+To ask what the listener hopes, make the hope the verb: `yel zawan vuwuyom darl zazozon vowurol.` is *Do you hope Azozon walks?*
+
 **Compare with:** *Azozon hopes Alazun walks* is Azozon's hope, not yours, so `thuwuyom` cannot say it. Someone else's hope is their want, which you give with how you know it.
 
 ### Practice {#intermediate-practice}

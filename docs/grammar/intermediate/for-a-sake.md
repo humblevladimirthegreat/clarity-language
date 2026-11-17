@@ -114,6 +114,16 @@ This holds on someone else's act too. `zazozon vezuyol thawetham` is *Azozon tal
 
 The `/b/` names whose stake it is, not who owns the noun. On `/ɡ/` the noun is still yours: `zewal gawethal blalazun` is *my gift, good for Alazun*. Someone else's thing is `gegunum` plus `/b/`, or `goyom`.
 
+A sake word on the clause stays outside a question: it is your own remark on what the act serves (with no `/b/`, your own stake), so the question asks only about the act, though the question word comes first ([which word covers which](/clause#which-covers-which)).
+
+> `yel zazozon vowurol thobatham.`
+>
+> y-question | z-Azozon | v-walk | th-physical-met-any-term
+>
+> "Is Azozon walking? That would be good for my health."
+
+To ask whether the act serves a need, say the act first and ask about it: `zazozon vowurol. yel zarth gobatham blawan.` is *Azozon walks. Is that good for your health?*
+
 **Compare with:** the *for* hook (`ol balazun`) names who the act is for without naming which sake.
 
 ### Practice {#intermediate-practice}
