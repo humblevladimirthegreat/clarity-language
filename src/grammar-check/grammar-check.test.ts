@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { test } from "node:test";
 
 import { createToken, CstParser, EOF } from "chevrotain";
-import { LLStarLookaheadStrategy } from "chevrotain-allstar";
+import { LLStarLookaheadStrategy } from "../parse/allstar/all-star-lookahead.js";
 
 import { type Bnf, gastToBnf, type Production } from "./bnf.js";
 import { spanVariants } from "./corpus.js";

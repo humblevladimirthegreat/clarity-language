@@ -9,7 +9,7 @@ import {
   type ParserMethod,
   type TokenType,
 } from "chevrotain";
-import { LLStarLookaheadStrategy } from "chevrotain-allstar";
+import { LLStarLookaheadStrategy } from "./allstar/all-star-lookahead.js";
 
 import {
   allTokens,
