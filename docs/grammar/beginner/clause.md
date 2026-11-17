@@ -106,7 +106,7 @@ A stance word is about the whole claim, and so are a few other words you will me
 >
 > "I doubt a dog is walking, worrying as that would be." (the walking would worry you)
 
-A noun that brings someone or something new into the talk, such as *a dog* the first time you mention it, takes part too, and the joins page lists every phrase that does. In `zodozel thevemem vowurol.` the dog comes first, so it covers the doubt: *there is a dog that I doubt is walking*. That is why the examples above put the stance words before the dog.
+A noun that brings someone or something new into the talk, such as *a dog* the first time you mention it, takes part in this order too; a later lesson on joins lists every phrase that does. In `zodozel thevemem vowurol.` the dog comes first, so it covers the doubt: *there is a dog that I doubt is walking*. That is why the examples above put the stance words before the dog.
 
 With only one such word, its place changes nothing. An ordinary adverb (how, when, or where) never takes part: it may sit anywhere.
 

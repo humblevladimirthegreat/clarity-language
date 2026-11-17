@@ -178,14 +178,17 @@ Put a kind after it for *every* member of that kind: `zual godozel` is *every do
 
 Who did what never changes: in both, the dogs see and the cat is seen. What changes is whether one cat serves for every dog. With just one such phrase, the order changes nothing. The reach also runs on into the sentence a [stand-in](/dependents#dependent-clauses) in it points to.
 
-These phrases bring in a new member:
+Whether a phrase brings in a new member decides whether it takes part in this order:
 
-- A noun (ending `-l` or `-m`) that you mention for the first time, after `/z/`, `/d/` or `/b/`, with or without a number after it (*a cat*, *three cats*). A compound noun counts too.
-- An and-list of such nouns. The whole list counts as one phrase, at the place where it stands.
-- Any `-r` phrase (*someone*, *something*), taught below.
-- A new noun after a word such as *in* or *for* (*in a house*, *for a friend*).
-
-These do not, so they take no part in the order: a blank in a question (*what?*), which asks and brings no one in; the unit in an amount (the *cups* in *two cups of tea*), which measures and names no members; and the words inside a title.
+| Phrase | Example | Takes part in the order? |
+|--------|---------|--------------------------|
+| A noun (ending `-l` or `-m`) that you mention for the first time, after `/z/`, `/d/` or `/b/`, with or without a number after it; a compound noun counts too | *a cat*, *three cats* | Yes |
+| An and-list of such nouns, counted as one phrase at the place where the list stands | *a cat and a dog* | Yes |
+| A join with ending `-r`, taught below | *someone*, *something* | Yes |
+| A new noun after a word such as *in* or *for* | *in a house*, *for a friend* | Yes |
+| A blank in a question | *what?* | No: it asks and brings no one in |
+| The unit in an amount | the *cups* in *two cups of tea* | No: it measures and names no members |
+| The words inside a title | | No |
 
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
