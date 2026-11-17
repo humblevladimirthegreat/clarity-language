@@ -151,7 +151,7 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | [Adjective after the noun](/clause#adjectives-ɡ) | `zodozel gonumul vowurol.` | *An angry dog walks.* | B |
 | [Adjective before the noun](/left-bound-adjectives#left-bound-adjectives): `l` after `/ɡ/` | `glonumul zodozel` | *an angry dog* | B |
 | [Detail on an adjective](/clause#adjective-detail-w) | `zodozel welazem gonumul vowurol.` | *A very angry dog walks.* | B |
-| [Stance on the whole claim](/clause#stance-th) | `zodozel thevemem vowurol.` | *I doubt a dog is walking.* | B |
+| [Stance on the whole claim](/clause#stance-th) | `thevemem zodozel vowurol.` | *I doubt a dog is walking.* | B |
 
 ### Degree words {#degree}
 

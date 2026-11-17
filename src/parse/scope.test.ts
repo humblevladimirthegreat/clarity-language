@@ -9,6 +9,7 @@ import { fullGlossIndex } from "../game/build.js";
 import { glossToAgeben } from "./gloss-inverse.js";
 import { parse } from "./index.js";
 import { FRAME_KEYS, PAIR_ROWS, pairRow, type ClauseScope } from "./scope.js";
+import { addReadingConstructions } from "./construction-trace.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
@@ -31,8 +32,8 @@ function orders(scope: ClauseScope): string[] {
 }
 
 describe("scope tables (interpreter.md#pair-table)", () => {
-  it("has one row per pair: 137 table rows plus the binder, intention and force same-family statements", () => {
-    assert.equal(PAIR_ROWS.length, 140);
+  it("has one row per pair: 137 table rows, the binder, intention and force same-family statements, and 18 call rows", () => {
+    assert.equal(PAIR_ROWS.length, 158);
     const keys = new Set(PAIR_ROWS.map((row) => [...row.pair].sort().join("|")));
     assert.equal(keys.size, PAIR_ROWS.length);
   });
@@ -152,8 +153,9 @@ describe("scope order (clause.md#which-covers-which)", () => {
 
   it("each of two stacked act words is a frame; the first, the real act, covers the second (more-turn-words.md#stacked-acts)", () => {
     const [scope] = scopeOf("y-command | y-question | v-punch | d-box | z-listener");
-    assert.deepEqual(scope!.frames.map((f) => `${f.key} ${f.word.raw}`), ["edge:force yol", "edge:force yel"]);
-    assert.deepEqual(scope!.order.map((o) => `${o.over.word.raw}>${o.under.word.raw} ${o.anchors[0]}`), ["yol>yel more-turn-words.md#stacked-acts"]);
+    assert.deepEqual(scope!.frames.filter((f) => f.family === "force").map((f) => `${f.key} ${f.word.raw}`), ["edge:force yol", "edge:force yel"]);
+    const acts = scope!.order.filter((o) => o.under.family === "force");
+    assert.deepEqual(acts.map((o) => `${o.over.word.raw}>${o.under.word.raw} ${o.anchors[0]}`), ["yol>yel more-turn-words.md#stacked-acts"]);
   });
 
   it("a doubled act word is two frames that commute (more-turn-words.md#doubled-act)", () => {
@@ -161,5 +163,101 @@ describe("scope order (clause.md#which-covers-which)", () => {
     assert.deepEqual(scope!.frames.map((f) => `${f.family} ${f.member ?? ""}`), ["force repeat", "force repeat", "attitude "]);
     assert.deepEqual(orders(scope!), ["attitude>force feelings.md#speaker-attitude", "attitude>force feelings.md#speaker-attitude"]);
     assert.deepEqual(scope!.unordered, []);
+  });
+
+  it("a phrase that brings in a new member orders by text against a binder (joins.md#everything-ua)", () => {
+    const [each] = scopeOf("[[z-everything | g-dog] | z-tag.A] | [d-cat | d-tag.O] | v-see");
+    assert.deepEqual(each!.frames.map((f) => f.key), ["joinSeries:ua", "slot:newMember"]);
+    assert.deepEqual(orders(each!), ["binder>binder clause.md#which-covers-which"]);
+    assert.equal(each!.order[0]!.over.key, "joinSeries:ua");
+    const [one] = scopeOf("[d-cat | d-tag.O] | [[z-everything | g-dog] | z-tag.A] | v-see");
+    assert.equal(one!.order[0]!.over.key, "slot:newMember");
+  });
+
+  it("a named head brings in no new member; a plain `/b/` receiver and a hook's landmark do", () => {
+    assert.deepEqual(scopeOf("z-Azozon | v-walk"), []);
+    assert.deepEqual(scopeOf("[z-Azozon | z-dog | z-and] | v-walk"), []);
+    const [receiver] = scopeOf("z-Azozon | v-tell | b-dog");
+    assert.deepEqual(receiver!.frames.map((f) => f.key), ["slot:newMember"]);
+    const [landmark] = scopeOf("z-Azozon | v-sleep | [in | b-house] | th-MAY");
+    assert.deepEqual(landmark!.frames.map((f) => f.key), ["slot:newMember", "overlay:may:th"]);
+    assert.deepEqual(orders(landmark!), ["binder>stance clause.md#which-covers-which"]);
+  });
+
+  it("a fill-ask blank asks and brings in no new member; two blanks make no pair (questions.md#fill-ask)", () => {
+    const [both] = scopeOf("y-question | z-wh | d-wh | v-see");
+    assert.deepEqual(both!.frames.map((f) => f.key), ["edge:force"]);
+    assert.deepEqual(both!.unordered, []);
+    const [landmark] = scopeOf("y-question | [in | b-wh] | z-dog | v-sleep");
+    assert.deepEqual(landmark!.frames.map((f) => `${f.key} ${f.word.raw}`), ["edge:force yel", "slot:newMember zodozel"]);
+  });
+
+  it("a measure phrase gives an amount and brings in no new member; a counted noun does (measures-and-percent.md#units)", () => {
+    // Only the subject *the cost* brings in a member; the unit with its amount does not.
+    const [measure] = scopeOf("z-cost | [b-percentage-point | g-two] | v-rise");
+    assert.deepEqual(measure!.frames.map((f) => `${f.key} ${f.word.pos}`), ["slot:newMember z"]);
+    const [counted] = scopeOf("z-Azozon | v-tell | [b-dog | g-two]");
+    assert.deepEqual(counted!.frames.map((f) => f.key), ["slot:newMember"]);
+  });
+
+  it("the words inside a title are a name's wording and bring in no new member (proper-names.md#titled-phrases)", () => {
+    assert.deepEqual(scopeOf("NAME[d-tea | instead | d-coffee]"), []);
+  });
+
+  it("each phrase that brings in a new member has one frame on its first word (joins.md#everything-ua)", () => {
+    const glosses = [
+      "z-something | v-walk",
+      "[z-person | z-something] | v-walk",
+      "[z-Azozon | z-Alazun | z-something] | v-walk",
+      "[z-dog | z-cat | z-and] | v-walk",
+      "z-grace | v-walk",
+      "z-peanut-x-butter | v-walk",
+      "[z-cat-x | g-three] | v-walk",
+      "z-Azozon | [v-see | v-eat | v-and | d-bird]",
+    ];
+    for (const gloss of glosses) {
+      const [scope] = scopeOf(gloss);
+      assert.deepEqual(scope?.frames.map((f) => f.key), ["slot:newMember"], gloss);
+    }
+  });
+
+  it("a call commutes with every frame in its clause (speech-moves.md#vocative)", () => {
+    const [scope] = scopeOf("y-Azozon | y-question | z-Azozon | v-walk | th-MAY");
+    assert.deepEqual(scope!.frames.map((f) => f.family), ["call", "force", "stance"]);
+    assert.deepEqual(orders(scope!), ["force>stance want-and-decide.md#whose-intention"]);
+    assert.equal(pairRow("call", "holder")?.kind, "commutes");
+    assert.equal(pairRow("call", "call")?.kind, "commutes");
+  });
+
+  it("a greeting has a greeting frame; a one-name answer after `yal` has none (word-endings.md#greeting)", () => {
+    const [greeting] = scopeOf("Azozon");
+    assert.deepEqual(greeting!.frames.map((f) => f.key), ["reading:greeting"]);
+    const scopes = scopeOf("y-question | z-wh | v-walk . y-statement | Azozon");
+    assert.ok(scopes.every((s) => s.frames.every((f) => f.key !== "reading:greeting")));
+  });
+
+  it("a bid on one's own name greets; under `/y/` it calls (conversation-length.md#conversation-length)", () => {
+    const [bid] = scopeOf("Alazun-ask");
+    assert.deepEqual(bid!.frames.map((f) => f.key), ["reading:greeting"]);
+    const [call] = scopeOf("y-Alazun-minutes");
+    assert.deepEqual(call!.frames.map((f) => f.key), ["edge:vocative"]);
+  });
+
+  it("the construction trace tags a greeting, not a one-name answer after an act word (questions.md#fill-ask)", () => {
+    const tagged = (gloss: string): boolean => {
+      const out = new Set<string>();
+      addReadingConstructions(parse(glossToAgeben(gloss, tables, index), tables), out);
+      return out.has("reading.greeting");
+    };
+    assert.equal(tagged("Azozon"), true);
+    assert.equal(tagged("y-statement | Azozon"), false);
+  });
+
+  it("a turn with no body has its own record, by utterance", () => {
+    const [scope] = scopeOf("y-Azozon | y-question");
+    assert.equal(scope!.bodiless, true);
+    assert.equal(scope!.utteranceIndex, 0);
+    assert.deepEqual(scope!.frames.map((f) => f.family), ["call", "force"]);
+    assert.deepEqual(scope!.order, []);
   });
 });

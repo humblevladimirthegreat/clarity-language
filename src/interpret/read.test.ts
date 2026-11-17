@@ -214,11 +214,12 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.equal(hosted.reading.frames[0]!.values.part, "z");
   });
 
-  it("hooked-joins.md:9: a free hook after a join is a detail of the clause, not the join's bound", () => {
+  it("hooked-joins.md:9: a free hook after a join is a detail of the clause, not the join's bound; its landmark is a new member", () => {
     const reading = one("z-everything | v-sleep | [at | b-house]");
-    assert.deepEqual(families(reading), ["binder"]);
+    assert.deepEqual(reading.frames.map((f) => f.key), ["joinSeries:ua", "slot:newMember"]);
     assert.equal(reading.claim.details.length, 1);
     assert.equal(reading.claim.details[0]!.hosted?.kind, "thing");
+    assert.equal(reading.frames[1]!.hosted, reading.claim.details[0]!.hosted);
   });
 
   it("stance-bars.md:36: REPORTED as a bar on a member of the rank fence, not a clause stance", () => {
@@ -313,8 +314,10 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.ok(sake.party?.kind === "pronoun" && sake.party.antecedent?.kind === "thing");
   });
 
-  it("clause.md:83: speaker attitude is a frame", () => {
-    assert.deepEqual(families(one("z-dog | th-doubt | v-walk")), ["attitude"]);
+  it("clause.md:83: speaker attitude is a frame, under the new member before it", () => {
+    const reading = one("z-dog | th-doubt | v-walk");
+    assert.deepEqual(families(reading), ["binder", "attitude"]);
+    assert.deepEqual(orders(reading), ["binder>attitude rule"]);
   });
 
   it("span-nesting.md:13: a faulty quote is a nested reading in the object role", () => {
@@ -333,11 +336,14 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.deepEqual(orders(one("z-Azozon | h-always | v-sing | h-FORMER")), ["residue>occasion rule"]);
   });
 
-  it("universals-domains.md:242: *every dog sees a cat* (known gap: the new-member phrase has no frame)", () => {
-    const reading = one("[[z-everything | g-dog] | z-tag.A] | [d-cat | d-tag.O] | v-see");
-    assert.deepEqual(families(reading), ["binder"]);
-    assert.deepEqual(reading.order, []);
-    assert.equal(reading.claim.roles.d?.kind, "thing");
+  it("universals-domains.md:242 and :254: *every dog sees a cat* and *a cat, every dog sees* differ in order (joins.md#everything-ua)", () => {
+    const each = one("[[z-everything | g-dog] | z-tag.A] | [d-cat | d-tag.O] | v-see");
+    assert.deepEqual(each.frames.map((f) => f.key), ["joinSeries:ua", "slot:newMember"]);
+    assert.deepEqual(each.order.map((o) => `${o.over.key}>${o.under.key}`), ["joinSeries:ua>slot:newMember"]);
+    assert.equal(each.claim.roles.d?.kind, "thing");
+    assert.equal(each.frames[1]!.hosted, each.claim.roles.d);
+    const single = one("[d-cat | d-tag.O] | [[z-everything | g-dog] | z-tag.A] | v-see");
+    assert.deepEqual(single.order.map((o) => `${o.over.key}>${o.under.key}`), ["slot:newMember>joinSeries:ua"]);
   });
 
   it("want-and-decide.md:48: WANT before PLAN, text order", () => {
@@ -476,10 +482,9 @@ describe("reader: scope rows the reader needs (R6b)", () => {
 
   it("more-turn-words.md#stacked-acts: the first act word, the real act, covers the second", () => {
     const [reading] = read("y-command | y-question | v-punch | d-box | z-listener");
-    assert.deepEqual(reading!.frames.map((f) => f.words[0]!.raw), ["yol", "yel"]);
-    assert.deepEqual(reading!.order.map((o) => `${o.over.words[0]!.raw}>${o.under.words[0]!.raw} ${o.anchors[0]}`), [
-      "yol>yel more-turn-words.md#stacked-acts",
-    ]);
+    assert.deepEqual(reading!.frames.filter((f) => f.family === "force").map((f) => f.words[0]!.raw), ["yol", "yel"]);
+    const acts = reading!.order.filter((o) => o.under.family === "force");
+    assert.deepEqual(acts.map((o) => `${o.over.words[0]!.raw}>${o.under.words[0]!.raw} ${o.anchors[0]}`), ["yol>yel more-turn-words.md#stacked-acts"]);
   });
 
   it("comparative-arity.md#frequency-scale and feelings.md#feeling-whose-stake: a detail and a party, no frame", () => {
@@ -488,5 +493,113 @@ describe("reader: scope rows the reader needs (R6b)", () => {
     const [stake] = read("[th-autonomy-unmet-irreversible-STAYING-OPEN | bl-Azozon]");
     assert.deepEqual(stake!.frames.map((f) => `${f.family} ${f.key}`), ["sake lexReading:sake"]);
     assert.equal(stake!.frames[0]!.party?.kind, "thing");
+  });
+});
+
+describe("reader: new members, calls, greetings and bodiless turns (R6d)", () => {
+  /** Readings of a text in morph gloss, after checking that every word has exactly one place. */
+  function placedAll(gloss: string): Reading[] {
+    const result = parse(glossToAgeben(gloss, tables, index), tables);
+    const readings = readParse(result, { tables });
+    const cover = coverage(result, readings);
+    assert.deepEqual(cover.missing.map((w) => w.word.raw), [], "missing");
+    assert.deepEqual(cover.doubled.map((w) => w.word.raw), [], "doubled");
+    return readings;
+  }
+  const byWord = (reading: Reading): string[] => reading.order.map((o) => `${o.over.words[0]!.raw}>${o.under.words[0]!.raw}`);
+
+  it("clause.md:97: concern covers the new dog, which covers the doubt (clause.md#which-covers-which, joins.md#everything-ua)", () => {
+    const [reading] = placedAll("th-concern | z-dog | th-doubt | v-walk");
+    const [concern, dog, doubt] = reading!.frames.map((f) => f.words[0]!.raw);
+    assert.deepEqual(reading!.frames.map((f) => f.key), ["slot:th", "slot:newMember", "slot:th"]);
+    assert.deepEqual(byWord(reading!), [`${concern}>${dog}`, `${concern}>${doubt}`, `${dog}>${doubt}`]);
+    assert.equal(reading!.frames[1]!.hosted, reading!.claim.roles.z);
+  });
+
+  it("a new member and a standalone join follow text order", () => {
+    const [reading] = placedAll("z-dog | v-walk | th-not");
+    assert.deepEqual(orders(reading!), ["binder>polarity rule"]);
+  });
+
+  it("a named noun, and a list with one, bring in no new-member frame", () => {
+    assert.deepEqual(families(one("z-Azozon | v-walk")), []);
+    assert.deepEqual(families(one("[z-Azozon | z-dog | z-and] | v-walk")), []);
+  });
+
+  it("a new member's frame hosts its whole role phrase: `-r`, an and-list, `-m`, an `x` compound, a number (joins.md#everything-ua)", () => {
+    const glosses = [
+      "z-something | v-walk",
+      "[z-person | z-something] | v-walk",
+      "[z-dog | z-cat | z-and] | v-walk",
+      "z-grace | v-walk",
+      "z-peanut-x-butter | v-walk",
+      "[z-cat-x | g-three] | v-walk",
+    ];
+    for (const gloss of glosses) {
+      const [reading] = placedAll(gloss);
+      assert.deepEqual(reading!.frames.map((f) => f.key), ["slot:newMember"], gloss);
+      assert.equal(reading!.frames[0]!.hosted, reading!.claim.roles.z, gloss);
+    }
+  });
+
+  it("a measure phrase brings in no new member; a counted noun does (measures-and-percent.md#units)", () => {
+    const [measure] = placedAll("z-cost | [b-percentage-point | g-two] | v-rise");
+    assert.deepEqual(measure!.frames.map((f) => `${f.key} ${f.words[0]?.pos}`), ["slot:newMember z"]);
+    const [counted] = placedAll("z-Azozon | v-tell | [b-dog | g-two]");
+    assert.deepEqual(counted!.frames.map((f) => f.key), ["slot:newMember"]);
+  });
+
+  it("a fill-ask blank and a title's words bring in no new member (questions.md#fill-ask, proper-names.md#titled-phrases)", () => {
+    const [ask] = placedAll("y-question | z-wh | d-wh | v-see");
+    assert.deepEqual(ask!.frames.map((f) => f.key), ["edge:force"]);
+    assert.deepEqual(ask!.unordered, []);
+    const [title] = placedAll("NAME[d-tea | instead | d-coffee]");
+    assert.deepEqual(title!.frames, []);
+  });
+
+  it("a hook's landmark brings in a new member: its frame hosts the landmark and covers a later stance word", () => {
+    const [reading] = placedAll("z-Azozon | v-sleep | [in | b-house] | th-MAY");
+    assert.deepEqual(reading!.frames.map((f) => f.key), ["slot:newMember", "overlay:may:th"]);
+    assert.deepEqual(orders(reading!), ["binder>stance rule"]);
+    const hook = reading!.claim.details.find((d) => d.hosted);
+    assert.equal(reading!.frames[0]!.hosted, hook?.hosted);
+  });
+
+  it("a role phrase of a verb-list item is a new member of that item's reading; a shared one, of the clause's", () => {
+    const [reading] = placedAll("z-Azozon | [v-see | [d-bird | v-eat] | v-and] | th-MAY");
+    assert.deepEqual(reading!.frames.map((f) => f.key), ["overlay:may:th"]);
+    const verb = reading!.claim.verb;
+    const item = verb?.kind === "list" ? verb.members.find((m) => m.kind === "clause") : undefined;
+    const inner = item?.kind === "clause" ? item.reading : undefined;
+    assert.deepEqual(inner?.frames.map((f) => f.key), ["slot:newMember"]);
+    assert.equal(inner!.frames[0]!.hosted, inner!.claim.roles.d);
+    const [shared] = placedAll("z-Azozon | [v-see | v-eat | v-and | d-bird]");
+    assert.deepEqual(shared!.frames.map((f) => f.key), ["slot:newMember"]);
+    assert.equal(shared!.frames[0]!.hosted, shared!.claim.roles.d);
+  });
+
+  it("a call commutes with every frame in its clause and is no force frame (speech-moves.md#vocative)", () => {
+    const [reading] = placedAll("y-Azozon | y-question | z-Azozon | v-walk | th-MAY");
+    assert.deepEqual(reading!.frames.map((f) => `${f.family} ${f.key}`), ["call edge:vocative", "force edge:force", "stance overlay:may:th"]);
+    assert.deepEqual(orders(reading!), ["force>stance rule"]);
+    assert.equal(reading!.frames[0]!.party?.kind, "thing");
+  });
+
+  it("a greeting gets a greeting frame; a one-name answer after the act word does not (word-endings.md#greeting, questions.md#fill-ask)", () => {
+    const [greeting] = placedAll("Azozon");
+    assert.deepEqual(greeting!.frames.map((f) => f.key), ["reading:greeting"]);
+    assert.equal(greeting!.frames[0]!.hosted, greeting!.claim.roles.z);
+    const [, answer] = placedAll("y-question | z-wh | v-walk . y-statement | Azozon");
+    assert.deepEqual(answer!.frames.map((f) => f.key), ["edge:force"]);
+  });
+
+  it("a turn with no body has a scope record, matched by utterance", () => {
+    const result = parse(glossToAgeben("y-Azozon | y-question", tables, index), tables);
+    const record = result.resolve?.scope?.find((s) => s.bodiless);
+    assert.equal(record?.utteranceIndex, 0);
+    const [reading] = placedAll("y-Azozon | y-question");
+    assert.deepEqual(reading!.frames.map((f) => f.family), ["call", "force"]);
+    assert.deepEqual(reading!.order, []);
+    assert.equal(reading!.frames[1]!.values.ask, "yesNo");
   });
 });

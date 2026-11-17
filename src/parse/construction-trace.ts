@@ -4,6 +4,7 @@ import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./toke
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
 import { actWord, isDigitless, stackKind } from "./series.js";
 import { isGreeting, isKindReference, isScaleShared, visitResult, vpUnitLists } from "./ast-walk.js";
+import { greetingHead } from "./scope.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, Hosted, LexWord, NumberStem, ParseResult, ResolveInfo, Unit } from "./types.js";
 
@@ -317,8 +318,10 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
     const force = actWord(utterance.left)?.raw;
     if (utterance.bodies.length === 0 && (force === "yel" || force === "yem")) out.add("reading.bareQuestion");
     for (const body of utterance.bodies) {
-      if (isGreeting(body.clause)) out.add("reading.greeting");
-      else if (isExistence(body.clause)) out.add("reading.existence");
+      // A one-name reply after an act word is an answer, not a greeting (questions.md#fill-ask).
+      if (isGreeting(body.clause)) {
+        if (greetingHead(utterance.left, body)) out.add("reading.greeting");
+      } else if (isExistence(body.clause)) out.add("reading.existence");
       else if (isUnsaidEvent(body.clause)) out.add("reading.unsaidEvent");
     }
   }

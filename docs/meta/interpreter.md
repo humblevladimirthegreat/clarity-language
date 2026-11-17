@@ -39,7 +39,7 @@ The interpreter turns a parse into **readings**, one per clause, so tools can co
 | `contrary` | The event goes against a plan, a say word, a channel, or a holder's view (`uom` + that word) | `contrary-to.md` |
 | `occasion` | Restrictors: only when, never, always, sometimes, the occasion list | `restrictors.md`, `more-occasions.md` |
 | `unknown` | A construction with no row | this note |
-| `force` | Speech act and question type, a greeting, the addressee | `speech-moves.md`, `firm-soft.md`, `more-turn-words.md`, `questions.md` |
+| `force` | Speech act and question type, a greeting | `speech-moves.md`, `firm-soft.md`, `more-turn-words.md`, `questions.md` |
 | `polarity` | Denies the items of its list (`u` list joins, which do not pair); a standalone `/th/` join (`thul`, `thum`, `thur`) says how to take the whole claim and pairs | `joins.md#negation-u`, `set-joins.md`, `verb-and-stance-joins.md#stance-joins`, `verb-and-stance-joins.md#standalone-stance-joins`, `universals-domains.md#not-every` |
 | `say` | Someone's say over the act: permission, requirement, consent | `permission-consent.md#say-words` |
 | `sake` | Which need the claim or a noun serves or detracts from, and whose stake; a feeling's stake | `sakes.md`, `for-a-sake.md`, `ought-for-a-sake.md`, `feelings.md#feeling-whose-stake` |
@@ -47,8 +47,9 @@ The interpreter turns a parse into **readings**, one per clause, so tools can co
 | `quote` | Quoted words: a nested reading with its own speaker | `spans.md#writing`, `quote-contents.md` |
 | `attitude` | **Added.** How you feel about the claim or how you say it: *hopefully*, speech manner, tone marks, interjections | `feelings.md#speaker-attitude`, `speech-manner.md`, `tone-marks.md`, `speech-moves.md#interjections-reactions` |
 | `binder` | *Every*, *everything but*, and a new member a later phrase falls under; bound tags | `joins.md#everything-ua`, `universals-domains.md` |
+| `call` | **Added.** Names who the turn is for (`party`); commutes with every other frame in its clause | `speech-moves.md#vocative` |
 
-R1a dropped no first-cut family and added `intention`, `ability`, and `residue`: each has whole-clause forms that change the claim and that the first cut did not name. R1b dropped no first-cut family and added `attitude`: speaker attitude, speech manner and tone marks change no truth, but they are the speaker's and stay so under a holder (`holder.md#holder`), so they cannot be details. The final list: `force`, `polarity`, `say`, `stance`, `holder`, `hinge`, `intention`, `ability`, `phase`, `residue`, `notional`, `mirative`, `contrary`, `occasion`, `sake`, `attitude`, `bar`, `quote`, `binder`, `unknown`.
+R1a dropped no first-cut family and added `intention`, `ability`, and `residue`: each has whole-clause forms that change the claim and that the first cut did not name. R1b dropped no first-cut family and added `attitude`: speaker attitude, speech manner and tone marks change no truth, but they are the speaker's and stay so under a holder (`holder.md#holder`), so they cannot be details. Unit R6d added `call`: a call was filed under `force`, but it commutes with every frame, the act word included, so no `force` row fits it. The final list: `force`, `polarity`, `say`, `stance`, `holder`, `hinge`, `intention`, `ability`, `phase`, `residue`, `notional`, `mirative`, `contrary`, `occasion`, `sake`, `attitude`, `bar`, `quote`, `binder`, `call`, `unknown`.
 
 ## Classification table
 
@@ -206,11 +207,12 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | slot | `asOf` | detail:time | `as-of.md#as-of` | |
 | slot | `grounds` | link | `evidentiality.md#evidence-clause` | `blarl`: the next sentence is the content of the frame it hosts on (see [links](#links)) |
 | slot | `boundJoin` | structure | `joins.md#standalone-phrase` | A join as a `bl-` partner (`blal` *nobody*) |
+| slot | `newMember` | frame:binder | `joins.md#everything-ua` | **Added.** A `/z/`, `/d/` or plain `/b/` phrase that brings in a new member (decided 2026-11-17): a lone first-mention noun, concrete `-l` or abstract `-m` (`word-endings.md#concrete-l`, `#abstract-m`), a root or an `x` compound, a tag may name it, and its adjectives (a number among them, `numbers.md`) sit inside the phrase; an and-list of such nouns, fenced or not, scoped as one phrase at its position; a phrase whose join is the unspecified member `-r` (`zar`, `joins.md#unspecified-member-r-phrase`). A hook's landmark counts (*at a house*). Not a new member (decided 2026-11-17): a fill-ask blank, which asks (`questions.md#fill-ask`; the resolve stage's ask gaps, so two blanks make no pair), a measure phrase, an `-m` unit noun carrying a `/ɡ/` number, which gives an amount (`measures-and-percent.md#units`; a counted `-l` noun and an `-m` noun with no number keep the frame), and the phrases on either side of a titling `-n` hook, a name's wording (`proper-names.md#titled-phrases`). A role phrase of a verb-list item is one of that item's reading (no scope record: the reader places the frame, as for a stance word in an island); one every verb shares is the clause's. The frame keeps the phrase's first word and hosts its term (the role's, or the hook's landmark). No construction id |
 | slot | `tag` | link | `tag-pronouns.md#tag-pronouns` | After a `zual` / `zuam` / `zul` fence it binds (`universals-domains.md#bound-tags`) |
 | slot | `bar` | frame:bar | `bars.md#bars` | Inside the rank fence: covers only the ranking, so it nests (rule 2) and is never in a pair |
 | slot | `th` | frame:attitude | `feelings.md#speaker-attitude` | **Added.** A plain `/th/` word on an ordinary root: speaker attitude (*hopefully*) and speech manner (`speech-manner.md#speech-manner`). Whole clause. No construction id yet: today it reads as `lexReading:ordinary` |
 | slot | `dependent` | structure | `dependents.md#dependent-clauses` | `Clause.dependent`: a nested reading in the stand-in's term |
-| edge | `vocative` | frame:force | `speech-moves.md#vocative` | Names the addressee (`party`); frame by default |
+| edge | `vocative` | frame:call | `speech-moves.md#vocative` | Names the addressee (`party`); in the scope record, and commutes with every frame |
 | edge | `interjection` | frame:attitude | `speech-moves.md#interjections-reactions` | A reaction |
 | edge | `polar` | link | `questions.md#polar-particle` | Replies to the yes / no question before it; a body after it is the answer |
 | edge | `force` | frame:force | `speech-moves.md#speech-act-statement-question-command` | On the turn's left edge, outside the body; firm / soft / for-now ending is a `value` (`firm-soft.md#speech-act`); a stack's first word is the act (`more-turn-words.md#stacked-acts`) |
@@ -225,7 +227,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | reading | `amountScale` | detail:degree | `vague-amounts.md` | frame-or-detail unclear; see report |
 | reading | `frequencyScale` | detail:degree | `comparative-arity.md#frequency-scale` | The scale a rank join ranks by, *how often*: a shared detail on the list term, never a restrictor on the clause |
 | reading | `bareQuestion` | frame:force | `questions.md#question` | No body: asks about what was just said |
-| reading | `greeting` | frame:force | `word-endings.md#greeting` |  |
+| reading | `greeting` | frame:force | `word-endings.md#greeting` | The named citation alone, in a turn with nothing on its left edge; a one-name reply after `yal` is an answer (`questions.md#fill-ask`). The frame keeps the name and hosts the role's term. A bid on the citation (`alahexon.`, no `/y/`; `conversation-length.md#conversation-length`) sits on the left edge and is this frame too; under `/y/` it is a call. Never pairs: a greeting turn holds no other frame |
 | reading | `verbFirstItem` | structure | `verb-and-stance-joins.md#vp-clause-forms` |  |
 | reading | `verbSharedNoun` | link | `verb-and-stance-joins.md#vp-clause-forms` | An argument shared by joined verbs |
 | reading | `fromTo` | detail:range | `ranges.md#ranges` |  |
@@ -381,6 +383,12 @@ No sentence states an order against another frame.
 - `tone-marks.md#tone-marks` (against `attitude`): "It never changes the speech act (that is the act word's job)".
 - See `hinge`, `stance`, `holder`, and `intention` above for the statements against `force`.
 
+### call
+
+**Whole clause:** a call on the turn's left edge names who the turn is for; it frames each sentence body of its turn.
+
+- `speech-moves.md#vocative` (against every family, itself included): decided 2026-11-17, a call commutes with every other frame in its clause. The prose unit after R6d states it on the page.
+
 ### polarity
 
 **Whole clause:** a standalone `/th/` `u` join (`thul`, `thum`, `thur`), which has no stance words right before it and says how to take the claim (`verb-and-stance-joins.md#standalone-stance-joins`): it pairs with other whole-clause frames. Any other `u` join denies only its list, so it nests in its term and every whole-clause frame on the clause sits over it. *Possibly not* and *not possibly* are told apart by where the `u` goes: on the verb (`vowurol vul`, under MAY by rule 2) or right after MAY (`thomam thul`, denying MAY). With other words between MAY and the join, MAY is a frame of its own and the join is standalone (`verb-and-stance-joins.md#stance-join-reach`).
@@ -436,7 +444,7 @@ No sentence states an order against another frame.
 
 ### binder
 
-**Whole clause:** a `ua` / `uo` fence and a phrase that brings in a new member each reach from where they stand to the end of the sentence, and on through a stand-in in it.
+**Whole clause:** a `ua` / `uo` fence and a phrase that brings in a new member (`slot:newMember`, decided 2026-11-17) each reach from where they stand to the end of the sentence, and on through a stand-in in it.
 
 - Order (within the family and against any frame word): `clause.md#which-covers-which`, as `joins.md#everything-ua` says: "Such a phrase follows the order rule for words that cover the whole clause …: when a clause has two of them, or one and a stance word, the earlier covers the later." Reach: `joins.md#everything-ua`, "reaches from where it stands to the end of its sentence. Whatever comes later is inside it."
 - `universals-domains.md#bound-tags`: "A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to".
@@ -458,9 +466,9 @@ No sentence states an order against another frame.
 
 ## Pair table
 
-One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word and `attitude` tone marks: commute), except `stance` × `stance`, which has a row. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
+One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word and `attitude` tone marks: commute), except `stance` × `stance` and `call` × `call`, which have rows. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
 
-Counts: fixed by a rule 126, unsettled 0, commutes 8, fixed by word shape 3.
+Counts: fixed by a rule 126, unsettled 0, commutes 26, fixed by word shape 3.
 
 Decided 2026-11-13, on the grammar pages since unit S1 of `ageben-interpreter.md`: where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later (`clause.md#which-covers-which`); an attitude word, MIRATIVE, and a sake word stay outside a question (`feelings.md#speaker-attitude`, `mirative.md#mirative`, `for-a-sake.md#whose-stake`). Standing exceptions keep their own rows: force first (`speech-moves.md#speech-act-statement-question-command`), a `blarl` hinge last (`dependents.md#hinges`; the hinge over a word is a `blarth` hinge put first, `stand-in-vowels.md#stand-in-back`), the holder over its clause (`holder.md#holder`), and FORMER over a restrictor (`residue-and-former.md#residue-and-former-climate`). Unit S2 has the parser's resolve stage emit the order.
 
@@ -603,6 +611,24 @@ Decided 2026-11-13, on the grammar pages since unit S1 of `ageben-interpreter.md
 | `polarity` × `mirative` | fixed by a rule | `clause.md#which-covers-which`, `verb-and-stance-joins.md#standalone-stance-joins`, `verb-and-stance-joins.md#stance-join-reach` | Text order: the earlier covers the later (`clause.md#which-covers-which`). As `polarity` × `stance`: a `/th/` word right before the join is its item (rule 2); with other words between, either order is said and the earlier covers the later (`verb-and-stance-joins.md#stance-join-reach`). Samples: `zazozon vowurol thul themem.` (z-Azozon | v-walk | th-not | th-MIRATIVE); `themem zazozon vowurol thul.` (th-MIRATIVE | z-Azozon | v-walk | th-not). Readings: *no judgment on whether it surprised me that Azozon walks* / *surprisingly Azozon walks, no judgment* |
 | `polarity` × `contrary` | fixed by a rule | `clause.md#which-covers-which`, `verb-and-stance-joins.md#standalone-stance-joins`, `verb-and-stance-joins.md#stance-join-reach` | Text order: the earlier covers the later (`clause.md#which-covers-which`). As `polarity` × `stance`: a `/th/` word right before the join is its item (rule 2); with other words between, either order is said and the earlier covers the later (`verb-and-stance-joins.md#stance-join-reach`). Samples: `zazozon vowurol thul uom thagom.` (z-Azozon | v-walk | th-not | [contrary-to | th-plan-itinerary]); `uom thagom zazozon vowurol thul.` ([contrary-to | th-plan-itinerary] | z-Azozon | v-walk | th-not). Readings: *no judgment on whether Azozon walks contrary to plan* / *contrary to plan, Azozon walks, no judgment* |
 | `polarity` × `occasion` | fixed by a rule | `clause.md#which-covers-which`, `verb-and-stance-joins.md#standalone-stance-joins` | Text order: the earlier covers the later (`clause.md#which-covers-which`). As `polarity` × `ability`. Keep `thul` apart from `hual`: the spot right before `hual` holds its occasion list (`residue-and-former.md#residue-and-former-climate`), and `thul hual` parses as *always except*. Samples: `thul zazozon hual vowurol.` (th-not | z-Azozon | h-always | v-walk); `hual zazozon vowurol thul.` (h-always | z-Azozon | v-walk | th-not). Readings: *no judgment on whether Azozon always walks* / *always Azozon walks, no judgment* |
+| `call` × `force` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `polarity` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `say` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `stance` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `holder` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `hinge` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `intention` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `ability` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `phase` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `residue` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `notional` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `mirative` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `contrary` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `occasion` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `sake` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `attitude` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `binder` | commutes | `speech-moves.md#vocative` | A call names who the turn is for and changes nothing about what is claimed, asked, or how |
+| `call` × `call` | commutes | `speech-moves.md#vocative` | Two calls name two addressees; neither covers the other |
 
 **Never in a pair:** `polarity` list joins (list reach: they deny only their items, `joins.md#negation-u`; the standalone `/th/` joins pair), `bar` (inside its rank fence, `bars.md#channel-bars`), `quote` (a nested reading), and `unknown` (an `unread` entry, never ordered).
 

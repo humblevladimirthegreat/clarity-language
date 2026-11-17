@@ -12,7 +12,8 @@
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
 import { stackKind } from "./series.js";
-import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, Utterance } from "./types.js";
+import { isGreeting } from "./ast-walk.js";
+import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, NpCoord, NpPackage, Unit, Utterance } from "./types.js";
 
 export type FrameFamily =
   | "force"
@@ -34,6 +35,7 @@ export type FrameFamily =
   | "bar"
   | "quote"
   | "binder"
+  | "call"
   | "unknown";
 
 /** How far a frame form reaches: only `clause` forms pair. */
@@ -88,6 +90,7 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "joinSeries:u": { family: "polarity", reach: "list", anchor: "joins.md#negation-u" },
   "joinSeries:u:standalone": { family: "polarity", reach: "clause", anchor: "verb-and-stance-joins.md#standalone-stance-joins" },
   "joinSeries:ua": { family: "binder", reach: "clause", anchor: "joins.md#everything-ua" },
+  "slot:newMember": { family: "binder", reach: "clause", anchor: "joins.md#everything-ua" },
   "joinSeries:uo": { family: "binder", reach: "clause", anchor: "rank-joins.md#invert-u-stacks" },
   "joinSeries:ue": { family: "polarity", reach: "list", anchor: "set-joins.md#exclusivity-and-denying-a-whole-list" },
   "ask:yesNo": { family: "force", reach: "clause", anchor: "questions.md#question" },
@@ -95,7 +98,7 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "ask:rhetorical": { family: "force", reach: "clause", anchor: "more-turn-words.md#rhetorical" },
   "slot:bar": { family: "bar", reach: "nested", anchor: "bars.md#bars" },
   "slot:th": { family: "attitude", reach: "clause", anchor: "feelings.md#speaker-attitude" },
-  "edge:vocative": { family: "force", reach: "clause", anchor: "speech-moves.md#vocative" },
+  "edge:vocative": { family: "call", reach: "clause", anchor: "speech-moves.md#vocative" },
   "edge:interjection": { family: "attitude", reach: "clause", anchor: "speech-moves.md#interjections-reactions" },
   "edge:force": { family: "force", reach: "clause", anchor: "speech-moves.md#speech-act-statement-question-command" },
   "edge:tone": { family: "attitude", reach: "clause", anchor: "tone-marks.md#tone-marks" },
@@ -133,6 +136,8 @@ export type ClauseScope = {
   frames: ScopeFrame[];
   order: ScopeOrder[];
   unordered: ScopeUnordered[];
+  /** The record of a turn with no body: its `clause` is empty, and the reader matches it by `utteranceIndex`. */
+  bodiless?: true;
 };
 
 const TEXT_ORDER = "clause.md#which-covers-which";
@@ -160,6 +165,29 @@ const REACH = "verb-and-stance-joins.md#stance-join-reach";
 const CHANNEL: Partial<Record<FrameFamily, FrameMember[]>> = { stance: ["channel"] };
 /** A channel follows text order: first, how you know the whole generalization; after a fence or restrictor, each case. */
 const GENERALIZATION = "usually-vs-must.md#generalization";
+
+const CALL = "speech-moves.md#vocative";
+/** Every family a call can share a clause with, itself included: a call commutes with each. */
+const CALL_PAIRS: readonly FrameFamily[] = [
+  "force",
+  "polarity",
+  "say",
+  "stance",
+  "holder",
+  "hinge",
+  "intention",
+  "ability",
+  "phase",
+  "residue",
+  "notional",
+  "mirative",
+  "contrary",
+  "occasion",
+  "sake",
+  "attitude",
+  "binder",
+  "call",
+];
 
 function rule(a: FrameFamily, b: FrameFamily, ...cases: PairCase[]): PairRow {
   return { pair: [a, b], kind: "rule", cases };
@@ -333,6 +361,8 @@ export const PAIR_ROWS: readonly PairRow[] = [
     { ...commutes("more-turn-words.md#doubled-act"), when: { force: ["repeat"] } },
     { order: "textOrder", anchors: ["more-turn-words.md#stacked-acts"] },
   ),
+  // A call names who the turn is for and commutes with every other frame in its clause (speech-moves.md#vocative).
+  ...CALL_PAIRS.map((family): PairRow => ({ pair: ["call", family], kind: "commutes", cases: [commutes(CALL)] })),
 ];
 
 /** Families that never pair (interpreter.md#pair-table, "Never in a pair"). */
@@ -455,8 +485,83 @@ function wordFrames(unit: HUnit, tables: ClassifyTables | undefined): ScopeFrame
   return found ? [found] : [];
 }
 
-function clauseFrames(clause: Clause, tables: ClassifyTables | undefined): ScopeFrame[] {
+/** A noun that brings in a new member: a plain first mention, concrete `-l` or abstract `-m` (word-endings.md#concrete-l), a dictionary root or an `x` compound. */
+function memberNoun(head: LexWord): boolean {
+  const kind = head.family.kind === "content" || (head.family.kind === "x" && head.family.xFamily === "compound");
+  return kind && !head.bl && head.reading === "ordinary" && (head.ending === "l" || head.ending === "m");
+}
+
+/**
+ * A measure phrase (measures-and-percent.md#units): a unit noun, the abstract `-m` sense of a root, with its amount as
+ * a `/ɡ/` number. It gives an amount, not members. A counted `-l` noun (*three cats*) and an `-m` noun with no number
+ * are not measures.
+ */
+function isMeasure(pkg: NpPackage): boolean {
+  return pkg.head.ending === "m" && pkg.adjs.some((adj) => adj.word.pos === "g" && adj.word.family.kind === "number");
+}
+
+/** An `a`-series join with no hook: the and-list (`-l`) or its unspecified member (`-r`, joins.md#unspecified-member-r-phrase). */
+function memberJoin(join: LexWord | undefined, ending: "l" | "r"): boolean {
+  return join?.family.kind === "joinMarker" && join.family.series === "a" && !join.family.hook && join.ending === ending;
+}
+
+/**
+ * The first word of a role phrase that brings in a new member (joins.md#everything-ua), or undefined: a lone member
+ * noun (a tag may name it; its adjectives, a number among them, sit inside the phrase); an and-list of member nouns,
+ * fenced or not, which scopes as one phrase at its position; or a phrase with the unspecified member `-r`, whatever its
+ * items. A hook's landmark counts like a role phrase (*at a house*). A fill-ask blank in `blanks` asks and brings no
+ * member in (questions.md#fill-ask); nor does a measure phrase (measures-and-percent.md#units).
+ */
+export function newMemberHead(coord: NpCoord, blanks?: ReadonlySet<LexWord>): LexWord | undefined {
+  const parts = coord.parts;
+  const first = parts[0];
+  if (!first) return undefined;
+  const lead = first.items[0]?.kind === "package" ? first.items[0].package.head : first.items.length === 0 ? first.join : undefined;
+  if (!lead) return undefined;
+  if (blanks && isBlankPhrase(coord, blanks)) return undefined;
+  const nouns = parts.every((part) => part.items.every((item) => item.kind === "package" && memberNoun(item.package.head) && !isMeasure(item.package)));
+  if (parts.length === 1 && !first.join) return first.items.length === 1 && nouns ? lead : undefined;
+  if (!parts.every((part) => memberJoin(part.join, "l") || memberJoin(part.join, "r"))) return undefined;
+  return parts.some((part) => memberJoin(part.join, "r")) || nouns ? lead : undefined;
+}
+
+/** A phrase whose head or join is a fill-ask blank (questions.md#fill-ask). */
+function isBlankPhrase(coord: NpCoord, blanks: ReadonlySet<LexWord>): boolean {
+  return coord.parts.some(
+    (part) => (part.join && blanks.has(part.join)) || part.items.some((item) => item.kind === "package" && blanks.has(item.package.head)),
+  );
+}
+
+/**
+ * The phrases on either side of a titling hook (`-n`, proper-names.md#titled-phrases): the wording of a name, which
+ * brings nothing into the clause.
+ */
+export function titledPhrases(units: readonly Unit[]): Set<NpCoord> {
+  const out = new Set<NpCoord>();
+  units.forEach((unit, k) => {
+    if (unit.kind !== "hook" || unit.word.ending !== "n" || k === 0 || !units[k + 1]) return;
+    for (const side of [units[k - 1], units[k + 1]]) if (side?.kind === "np") out.add(side.coord);
+  });
+  return out;
+}
+
+/** The role phrases a clause reads itself: its own, and those every verb of a verb list shares (verb-and-stance-joins.md#vp-clause-forms). */
+function rolePhrases(clause: Clause): NpCoord[] {
+  return clause.units.flatMap((unit): NpCoord[] => {
+    if (unit.kind === "np") return [unit.coord];
+    if (unit.kind === "vp") return unit.coord.parts.flatMap((part) => (part.sharedUnits ?? []).flatMap((u) => (u.kind === "np" ? [u.coord] : [])));
+    return [];
+  });
+}
+
+function clauseFrames(clause: Clause, tables: ClassifyTables | undefined, blanks: ReadonlySet<LexWord>): ScopeFrame[] {
   const frames: ScopeFrame[] = [];
+  const titled = titledPhrases(clause.units);
+  for (const coord of rolePhrases(clause)) {
+    const head = titled.has(coord) ? undefined : newMemberHead(coord, blanks);
+    const member = head ? frame("slot:newMember", head) : undefined;
+    if (member) frames.push(member);
+  }
   clause.units.forEach((unit) => {
     if (unit.kind === "h") frames.push(...wordFrames(unit.unit, tables));
     if (unit.kind === "hook" && unit.job === "zone") {
@@ -480,6 +585,13 @@ function clauseFrames(clause: Clause, tables: ClassifyTables | undefined): Scope
 
 function edgeFrames(left: LeftEdge): ScopeFrame[] {
   const frames: ScopeFrame[] = [];
+  for (const word of left.vocatives) {
+    // A bid on the speaker's own named citation, with no `/y/`, is a greeting; under `/y/` it is a call
+    // (conversation-length.md#conversation-length).
+    const bid = !word.pos && word.reading === "greeting";
+    const call = frame(bid ? "reading:greeting" : "edge:vocative", word);
+    if (call) frames.push(call);
+  }
   // Each act word is a frame of its own: a stack's first word is the act, the second how it sounds
   // (more-turn-words.md#stacked-acts); a doubled word repeats the act (more-turn-words.md#doubled-act).
   const repeat = stackKind(left.leadForce, left.force) === "emphatic" ? "repeat" : undefined;
@@ -494,8 +606,14 @@ function edgeFrames(left: LeftEdge): ScopeFrame[] {
   return frames;
 }
 
-function scopeOf(clause: Clause, utteranceIndex: number, inherited: ScopeFrame[], tables: ClassifyTables | undefined): ClauseScope {
-  const frames = [...inherited, ...clauseFrames(clause, tables)]
+function scopeOf(
+  clause: Clause,
+  utteranceIndex: number,
+  inherited: ScopeFrame[],
+  tables: ClassifyTables | undefined,
+  blanks: ReadonlySet<LexWord>,
+): ClauseScope {
+  const frames = [...inherited, ...clauseFrames(clause, tables, blanks)]
     .filter((f) => !NEVER_PAIRS.has(f.family))
     .sort((a, b) => position(a) - position(b));
   const scope: ClauseScope = { clause, utteranceIndex, frames, order: [], unordered: [] };
@@ -510,29 +628,55 @@ function collectClause(
   utteranceIndex: number,
   inherited: ScopeFrame[],
   tables: ClassifyTables | undefined,
+  blanks: ReadonlySet<LexWord>,
   out: ClauseScope[],
 ): void {
-  out.push(scopeOf(clause, utteranceIndex, inherited, tables));
+  out.push(scopeOf(clause, utteranceIndex, inherited, tables, blanks));
   for (const unit of clause.units) {
     // One reading per member of a clause join (reader rule 1); the turn's edge frames reach each member.
     if (unit.kind === "clauseCoord") {
       const members = [unit.coord.first, ...unit.coord.links.map((link) => link.clause)];
-      for (const member of members) if (member) collectClause(member, utteranceIndex, inherited, tables, out);
+      for (const member of members) if (member) collectClause(member, utteranceIndex, inherited, tables, blanks, out);
     }
   }
   // A dependent is a nested reading with its own frames (reader rule 2).
-  if (clause.dependent) collectClause(clause.dependent.clause, utteranceIndex, [], tables, out);
+  if (clause.dependent) collectClause(clause.dependent.clause, utteranceIndex, [], tables, blanks, out);
+}
+
+/** True when nothing is on the turn's left edge: no act word, call, reaction, polar particle or hook. */
+export function isBareEdge(left: LeftEdge): boolean {
+  return !left.force && !left.leadForce && !left.hook && [left.vocatives, left.interjections, left.polars].every((words) => words.length === 0);
+}
+
+/**
+ * The name of a greeting (word-endings.md#greeting): the named citation alone, "exactly as the citation", in a turn
+ * with nothing on its left edge. A one-name reply after `yal` is an answer, not a greeting (questions.md#fill-ask).
+ * A greeting bid (`alahexon.`) sits on the left edge, so its frame comes from the edge, not here.
+ */
+export function greetingHead(left: LeftEdge, body: BodyClause): LexWord | undefined {
+  if (!isBareEdge(left) || body.linker || body.topicMarker || !isGreeting(body.clause)) return undefined;
+  const [unit] = body.clause.units;
+  const item = unit?.kind === "np" ? unit.coord.parts[0]?.items[0] : undefined;
+  const head = item?.kind === "package" ? item.package.head : undefined;
+  return head && head.reading !== "greeting" ? head : undefined;
 }
 
 /**
  * Scope records for every clause of the parse, in text order: each clause's whole-clause frames and the order of
  * every two of them. `tables` names a holder's host; without them a holder word gives the holder frame alone.
+ * `blanks` are the resolve stage's fill-ask blanks, which bring no new member in.
  */
-export function clauseScopes(utterances: Utterance[], tables?: ClassifyTables): ClauseScope[] {
+export function clauseScopes(utterances: Utterance[], tables?: ClassifyTables, blanks: ReadonlySet<LexWord> = new Set()): ClauseScope[] {
   const out: ClauseScope[] = [];
   utterances.forEach((utterance, utteranceIndex) => {
     const edge = edgeFrames(utterance.left);
-    utterance.bodies.forEach((body: BodyClause) => collectClause(body.clause, utteranceIndex, edge, tables, out));
+    // A turn with no body (a bare question, a call): one record for its edge frames, matched by utterance.
+    if (utterance.bodies.length === 0) out.push({ ...scopeOf({ units: [] }, utteranceIndex, edge, tables, blanks), bodiless: true });
+    utterance.bodies.forEach((body: BodyClause) => {
+      const head = greetingHead(utterance.left, body);
+      const greeting = head ? frame("reading:greeting", head) : undefined;
+      collectClause(body.clause, utteranceIndex, greeting ? [...edge, greeting] : edge, tables, blanks, out);
+    });
   });
   return out.filter((scope) => scope.frames.length > 0);
 }

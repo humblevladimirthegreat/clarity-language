@@ -34,6 +34,8 @@ A `/ɡ/` word right after the call describes the person you call, as it would af
 
 To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in `-n`, so `yagayun` calls the guard.
 
+A call picks who you are talking to. It does not change what the sentence claims, so its place among stance words changes nothing.
+
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alazun uses `/y/`; saying Alazun walks uses `/z/` (`zalazun vowurol`).
 
 ### Interjections: reactions

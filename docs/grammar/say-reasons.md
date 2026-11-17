@@ -465,9 +465,9 @@ A word about the argument does not make it. *The argument is valid* names the li
 
 A one-off episode and a standing pattern use the same hinges. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/cause#cause)).
 
-> `zerulal gohem blugalal hual.`
+> `hual zerulal gohem blugalal.`
 >
-> [z-rain | [g-if | bl-cloud]] | h-always
+> h-always | [z-rain | [g-if | bl-cloud]]
 >
 > "It always rains if there are clouds."
 

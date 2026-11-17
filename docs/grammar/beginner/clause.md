@@ -80,9 +80,9 @@ An **adverb** says how, when, or where an action happens. Mark it with `/h/`. Yo
 
 An adverb describes the action. A **stance** word describes how you, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/` (`th` counts as one letter, [phonology](phonology.md#consonants)) and, as with `/h/`, place it anywhere in the sentence. One sentence then carries both the claim and your stance on it.
 
-> `zodozel thevemem vowurol.`
+> `thevemem zodozel vowurol.`
 >
-> z-dog | th-doubt | v-walk
+> th-doubt | z-dog | v-walk
 >
 > "I doubt a dog is walking."
 
@@ -94,17 +94,19 @@ A stance is yours now, as you speak. `/th/` is for what is in a mind, and with n
 
 A stance word is about the whole claim, and so are a few other words you will meet later, such as *always* and *I plan*. When one sentence has two such words, the earlier one **covers** the later one: it is about the later word and the claim together. Their order alone sets this, so swapping the two changes what you say.
 
-> `thewemum zodozel thevemem vowurol.`
+> `thewemum thevemem zodozel vowurol.`
 >
-> th-concern | z-dog | th-doubt | v-walk
+> th-concern | th-doubt | z-dog | v-walk
 >
 > "Worryingly, I doubt a dog is walking." (the doubt worries you)
 
-> `thevemem zodozel thewemum vowurol.`
+> `thevemem thewemum zodozel vowurol.`
 >
-> th-doubt | z-dog | th-concern | v-walk
+> th-doubt | th-concern | z-dog | v-walk
 >
 > "I doubt a dog is walking, worrying as that would be." (the walking would worry you)
+
+A noun that brings someone or something new into the talk, such as *a dog* the first time you mention it, takes part too, and the joins page lists every phrase that does. In `zodozel thevemem vowurol.` the dog comes first, so it covers the doubt: *there is a dog that I doubt is walking*. That is why the examples above put the stance words before the dog.
 
 With only one such word, its place changes nothing. An ordinary adverb (how, when, or where) never takes part: it may sit anywhere.
 

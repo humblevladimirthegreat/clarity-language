@@ -10,7 +10,7 @@ import { CLOSED } from "../closed-roots.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { overlayConstructionId } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
-import type { ClauseScope, FrameReach, ScopeFrame } from "../parse/scope.js";
+import { newMemberHead, titledPhrases, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
   Clause,
@@ -140,8 +140,12 @@ type Ctx = {
   options: ReadOptions;
   text: string;
   scopes: Map<Clause, ClauseScope>;
+  /** The scope record of each turn with no body, by utterance (a bare question, a call). */
+  bodiless: Map<number, ClauseScope>;
   anaphors: Map<LexWord, AnaphorBind>;
   blanks: Set<LexWord>;
+  /** Phrases inside a title (proper-names.md#titled-phrases): a name's wording, no new member. */
+  titled: Set<NpCoord>;
   shared: Map<LexWord, SharedRecord[]>;
   /** The resolve stage's record for each shared word, keyed by the tree's shared item. */
   sharedItems: Map<CoordShared, SharedRecord>;
@@ -173,7 +177,48 @@ function frameOf(key: string, word: LexWord | undefined, here: Here | undefined)
 
 function fromScope(frame: ScopeFrame): Frame {
   const out = frameOf(frame.key, frame.word, undefined);
-  return { ...out, family: frame.family, ...(frame.member ? { member: frame.member } : {}), ...(frame.holderHost ? { holderHost: true as const } : {}) };
+  return {
+    ...out,
+    family: frame.family,
+    ...(frame.member ? { member: frame.member } : {}),
+    ...(frame.holderHost ? { holderHost: true as const } : {}),
+    // A call names the addressee (speech-moves.md#vocative).
+    ...(frame.key === "edge:vocative" ? { party: thing(frame.word) } : {}),
+  };
+}
+
+/** Copy a scope record's frames, orders and unsettled pairs into a reading (reader rule 3). */
+function copyScope(reading: Reading, scope: ClauseScope | undefined): void {
+  if (!scope) return;
+  const byScope = new Map<ScopeFrame, Frame>();
+  for (const frame of scope.frames) {
+    const copy = fromScope(frame);
+    byScope.set(frame, copy);
+    reading.frames.push(copy);
+  }
+  for (const o of scope.order) reading.order.push({ over: byScope.get(o.over)!, under: byScope.get(o.under)!, kind: o.kind, anchors: o.anchors });
+  for (const u of scope.unordered) reading.unordered.push([byScope.get(u.frames[0])!, byScope.get(u.frames[1])!]);
+}
+
+/** Frames whose word heads the role phrase they reach over: a new member (joins.md#everything-ua) and a greeting's name. */
+const PHRASE_FRAMES = new Set(["slot:newMember", "reading:greeting"]);
+
+/** Such a frame keeps the head word and hosts the role's term, so the noun has one place (rule 5). */
+function hostOnHead(term: Term, head: LexWord | undefined, here: Here): void {
+  const frame = here.reading.frames.find((f) => PHRASE_FRAMES.has(f.key) && !f.hosted && f.words[0] === head);
+  if (frame) frame.hosted = term;
+}
+
+/**
+ * A role phrase or landmark that brings in a new member (joins.md#everything-ua): its frame hosts the phrase's term. A
+ * scoped clause has the frame from its scope record; a reading with none (an island, a verb-list item) places it here,
+ * as it does a stance word.
+ */
+function memberFrame(coord: NpCoord, term: Term, here: Here): void {
+  const head = here.ctx.titled.has(coord) ? undefined : newMemberHead(coord, here.ctx.blanks);
+  if (!head) return;
+  if (!here.scoped) placeFrame("slot:newMember", head, "clause", here);
+  hostOnHead(term, head, here);
 }
 
 function detailOf(key: string, word: LexWord, kind: string): Detail {
@@ -719,6 +764,7 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
   here.pendingHook = undefined;
   if (hook && unit.kind === "np") {
     hook.hosted = npTerm(unit.coord, here, clause);
+    memberFrame(unit.coord, hook.hosted, here);
     return;
   }
   if (hook && unit.kind === "vp") {
@@ -726,9 +772,13 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
     return;
   }
   switch (unit.kind) {
-    case "np":
-      setRole(unit.coord.level, npTerm(unit.coord, here, clause), here, firstWord(unit.coord));
+    case "np": {
+      const term = npTerm(unit.coord, here, clause);
+      memberFrame(unit.coord, term, here);
+      hostOnHead(term, firstWord(unit.coord), here);
+      setRole(unit.coord.level, term, here, firstWord(unit.coord));
       return;
+    }
     case "vp":
       if (here.reading.claim.verb) unread(here, "unplaced", "unit:vp", unit.coord.parts[0]?.items[0]);
       else here.reading.claim.verb = vpTerm(unit.coord, here, clause);
@@ -808,6 +858,7 @@ function readIsland(units: Unit[], outer: Here, path = `i${firstAt(units)}`): Re
   const clause: Clause = { units };
   const reading = emptyReading(`${outer.reading.id}/${path}`, outer.utterance, outer.body, clause);
   const here: Here = { ...outer, reading, scoped: false };
+  for (const coord of titledPhrases(units)) here.ctx.titled.add(coord);
   for (const unit of units) readUnit(unit, here, clause);
   return reading;
 }
@@ -825,18 +876,9 @@ function readDependent(clause: Clause, here: Here): Reading | undefined {
 
 function readClause(clause: Clause, utterance: number, body: number, id: ReadingId, ctx: Ctx, scoped: boolean): Reading {
   const reading = emptyReading(id, utterance, body, clause);
-  const scope = ctx.scopes.get(clause);
-  if (scope) {
-    const byScope = new Map<ScopeFrame, Frame>();
-    for (const frame of scope.frames) {
-      const copy = fromScope(frame);
-      byScope.set(frame, copy);
-      reading.frames.push(copy);
-    }
-    for (const o of scope.order) reading.order.push({ over: byScope.get(o.over)!, under: byScope.get(o.under)!, kind: o.kind, anchors: o.anchors });
-    for (const u of scope.unordered) reading.unordered.push([byScope.get(u.frames[0])!, byScope.get(u.frames[1])!]);
-  }
+  copyScope(reading, ctx.scopes.get(clause));
   const here: Here = { ctx, reading, utterance, body, scoped };
+  for (const coord of titledPhrases(clause.units)) ctx.titled.add(coord);
   for (const unit of clause.units) readUnit(unit, here, clause);
   if (clause.dependent && !ctx.dependents.has(clause.dependent.clause)) {
     // A dependent no stand-in names in a role: an `/h/` stand-in or `Odo` slot; kept as a detail with its reading.
@@ -873,11 +915,6 @@ function verbHeaded(verb: Term | undefined, word: LexWord): Extract<Term, { kind
   return undefined;
 }
 
-/** Edge frames the resolve stage does not pair: the addressee. The act word and reactions come from the scope record. */
-function vocativeFrames(left: LeftEdge): Frame[] {
-  return left.vocatives.map((word) => ({ ...frameOf("edge:vocative", word, undefined), party: thing(word) }));
-}
-
 /**
  * The words on each call and reaction (`TurnWordMods`): details on that word's frame, one set in each sentence body the
  * frame sits in (speech-moves.md#vocative, more-turn-words.md#describe-turn-word).
@@ -899,15 +936,6 @@ function edgeDetails(left: LeftEdge, here: Here, clause: Clause): void {
   attach(left.interjections, left.interjectionMods);
 }
 
-/** The act word and reactions of a turn with no body (a bare question, a call), which the scope record does not hold. */
-function bareEdgeFrames(left: LeftEdge): Frame[] {
-  const frames: Frame[] = [];
-  // Each act word of a stack or a doubled act is a frame of its own (more-turn-words.md#stacked-acts).
-  for (const act of [left.leadForce, left.force]) if (act) frames.push(frameOf("edge:force", act, undefined));
-  for (const word of left.interjections) frames.push(frameOf("edge:interjection", word, undefined));
-  return frames;
-}
-
 function edgeLinks(left: LeftEdge, here: Here): void {
   for (const word of left.polars) here.reading.links.push(link("polar", "edge:polar", [word], prevTo(here)));
   if (left.hook) here.reading.links.push(link("discourse", "edge:hook", [left.hook], left.hook.ending === "r" ? prevTo(here) : {}));
@@ -924,9 +952,11 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     result,
     options,
     text,
-    scopes: new Map((info?.scope ?? []).map((s) => [s.clause, s])),
+    scopes: new Map((info?.scope ?? []).filter((s) => !s.bodiless).map((s) => [s.clause, s])),
+    bodiless: new Map((info?.scope ?? []).filter((s) => s.bodiless).map((s) => [s.utteranceIndex, s])),
     anaphors: new Map((info?.anaphors ?? []).map((a) => [a.pronoun, a])),
     blanks: new Set((info?.asks ?? []).flatMap((a) => [...a.gaps, ...(a.inner ?? [])])),
+    titled: new Set(),
     shared: new Map(),
     sharedItems: new Map((info?.shared ?? []).map((record) => [record.shared, record])),
     sentences: [],
@@ -946,8 +976,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
       const id = `${text}:${ui}.${bi}`;
       const reading = body ? readClause(body.clause, ui, bi, id, ctx, true) : emptyReading(id, ui, bi, { units: [] });
       const here: Here = { ctx, reading, utterance: ui, body: bi, scoped: true };
-      if (!body) reading.frames.push(...bareEdgeFrames(utterance.left));
-      reading.frames.push(...vocativeFrames(utterance.left));
+      if (!body) copyScope(reading, ctx.bodiless.get(ui));
       edgeDetails(utterance.left, here, reading.source.clause);
       if (bi === 0) edgeLinks(utterance.left, here);
       if (body?.linker) reading.links.push(link("linker", "unit:linker", [body.linker], prevTo(here)));
@@ -962,9 +991,9 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     if (ask.kind === "none") continue;
     const reading = firstOf.get(ask.utteranceIndex);
     if (!reading) continue;
+    // Every question has an act word (R6b), so its force frame carries the type.
     const act = reading.frames.find((f) => f.key === "edge:force");
     if (act) act.values.ask = ask.kind;
-    else reading.frames.push({ ...frameOf(`ask:${ask.kind}`, undefined, undefined), values: { ask: ask.kind } });
   }
   for (const answer of info?.answers ?? []) {
     const reading = firstOf.get(answer.utteranceIndex);

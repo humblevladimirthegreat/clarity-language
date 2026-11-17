@@ -30,7 +30,7 @@ import { actWord, isDigitless, joinHook, KIND_SERIES, SCALE_SERIES } from "./ser
 import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, vpUnitLists, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED, closedDerived } from "../closed-roots.js";
 import { isClauseAdverb, type ClassifyTables } from "./classify.js";
-import { clauseScopes } from "./scope.js";
+import { clauseScopes, isBareEdge } from "./scope.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -66,6 +66,8 @@ type Topic = { word: LexWord; key: string };
 type Landmark = { word: LexWord; time: boolean };
 
 type Ctx = {
+  /** The left edge of the turn being walked: a greeting is said with nothing on it (word-endings.md#greeting). */
+  turnLeft?: Utterance["left"];
   antecedents: Antecedent[];
   /** Landmarks in surface order; a hooked join's point-back takes the latest (on `/h/`, the latest time one). */
   landmarks: Landmark[];
@@ -352,8 +354,9 @@ function considerLinker(ctx: Ctx, word: LexWord): void {
 }
 
 /** The greeter's own name in a greeting sentence (`azawan.`, word-endings.md#greeting). */
-function greetingName(body: BodyClause): string | undefined {
-  if (!isGreeting(body.clause)) return undefined;
+function greetingName(body: BodyClause, left: Utterance["left"] | undefined): string | undefined {
+  // A one-name reply after `yal` is an answer, not a greeting (questions.md#fill-ask).
+  if (!isGreeting(body.clause) || (left && !isBareEdge(left))) return undefined;
   const [unit] = body.clause.units;
   const [item] = unit?.kind === "np" ? unit.coord.parts[0]!.items : [];
   return item?.kind === "package" ? nameKey(item.package.head) : undefined;
@@ -1003,7 +1006,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
           if (part.tag && part.join) ctx.groupTags.set(part.tag, { join: part.join, words: [...heads] });
         }
       }
-      if (node.kind === "body") enterMove(ctx, [greetingName(node.body) ?? []].flat());
+      if (node.kind === "body") enterMove(ctx, [greetingName(node.body, ctx.turnLeft) ?? []].flat());
       if (node.kind === "clause") noteHookLandmarks(ctx, node.clause.units);
       if (node.kind === "island") noteHookLandmarks(ctx, node.island.units);
       if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) noteHookLandmarks(ctx, units);
@@ -1022,6 +1025,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
       }
       if (node.kind === "utterance") {
         const { left } = node.utterance;
+        ctx.turnLeft = left;
         ctx.consequenceHere = false;
         ctx.currentTurn = {
           head: actWord(left) ?? left.interjections[0] ?? left.vocatives[0] ?? left.polars[0],
@@ -1080,7 +1084,8 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables): ResolveInfo
   };
   visitResult(result, resolveVisitor(ctx));
   const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
-  const scope = clauseScopes(result.utterances, tables);
+  const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
+  const scope = clauseScopes(result.utterances, tables, blanks);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
