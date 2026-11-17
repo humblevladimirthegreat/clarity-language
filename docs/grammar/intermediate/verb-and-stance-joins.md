@@ -153,7 +153,7 @@ English can deny or weigh the grounds you give for a claim and keep the claim: *
 
 > `zazozon vowurol thahum blerulal thul.`
 >
-> z-Azozon | v-walk | [th-because | bl-rain] | th-not
+> z-Azozon | v-walk | [[th-because | bl-rain] | th-not]
 >
 > "Azozon walks, but not because of the rain."
 
@@ -161,7 +161,7 @@ The other join vowels work on stance words the same way they work on a phrase li
 
 > `zazozon vowurol thahum blerulal thohem blalazun thol.`
 >
-> z-Azozon | v-walk | [th-because | bl-rain] | [th-if | bl-Alazun] | th-rank/more
+> z-Azozon | v-walk | [[th-because | bl-rain] | [th-if | bl-Alazun] | th-rank/more]
 >
 > "Azozon walks mainly because of the rain, and also if Alazun is involved."
 
@@ -185,7 +185,7 @@ When the grounds are a whole clause (*not because Alazun runs*), the hinge takes
 
 > `zazozon vowurol thahum thul blarl zalazun veruvol.`
 >
-> z-Azozon | v-walk | th-because | th-not | bl-that-clause | z-Alazun | v-run
+> z-Azozon | v-walk | [th-because | th-not] | bl-that-clause | z-Alazun | v-run
 >
 > "Azozon walks, but not because Alazun runs."
 
@@ -308,7 +308,7 @@ z-Alazun | [v-run | [d-Ahelan | v-punch] | v-and]
 ::: details Show answer
 `zalazun veruvol thahum thul blarl zazozon vabuvul.`
 
-z-Alazun | v-run | th-because | th-not | bl-that-clause | z-Azozon | v-punch
+z-Alazun | v-run | [th-because | th-not] | bl-that-clause | z-Azozon | v-punch
 :::
 
 **5.** *Azozon screams, but not because Ahelan punches.*
@@ -316,7 +316,7 @@ z-Alazun | v-run | th-because | th-not | bl-that-clause | z-Azozon | v-punch
 ::: details Show answer
 `zazozon veyamul thahum thul blarl zahelan vabuvul.`
 
-z-Azozon | v-scream | th-because | th-not | bl-that-clause | z-Ahelan | v-punch
+z-Azozon | v-scream | [th-because | th-not] | bl-that-clause | z-Ahelan | v-punch
 :::
 
 **6.** *Azozon runs. No judgment.*
@@ -356,7 +356,7 @@ x-and.open
 **4.** `zahelan veruvol thahum thul blarl zalazun vabuvul.`
 
 ::: details Show answer
-z-Ahelan | v-run | th-because | th-not | bl-that-clause | z-Alazun | v-punch
+z-Ahelan | v-run | [th-because | th-not] | bl-that-clause | z-Alazun | v-punch
 
 *Ahelan runs, but not because Alazun punches.*
 :::
@@ -372,7 +372,7 @@ y-question | th-why | z-Azozon | v-run
 **6.** `zazozon veruvol thahum blalazun thul.`
 
 ::: details Show answer
-z-Azozon | v-run | [th-because | bl-Alazun] | th-not
+z-Azozon | v-run | [[th-because | bl-Alazun] | th-not]
 
 *Azozon runs, but not because of Alazun.*
 :::
@@ -394,7 +394,7 @@ Two verbs of one subject close with a `/v/` join; `/x/` would start a new clause
 ::: details Show answer
 `zazozon veruvol thahum blalazun thul.`
 
-z-Azozon | v-run | [th-because | bl-Alazun] | th-not
+z-Azozon | v-run | [[th-because | bl-Alazun] | th-not]
 
 The `/th/` join denies the ground; **`vul`** after the verb would deny the running.
 :::

@@ -501,7 +501,7 @@ The kind goes after **`zual`** as a SHARED `/ɡ/`; a noun before the join is the
 ::: details Show answer
 `zazozon vowurol thahum blanurul thul.`
 
-z-Azozon | v-walk | [th-because | bl-night] | th-not
+z-Azozon | v-walk | [[th-because | bl-night] | th-not]
 
 The `/th/` join denies the ground; **`vul`** after the verb would deny the walking.
 
