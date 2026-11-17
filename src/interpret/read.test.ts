@@ -9,6 +9,7 @@ import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { parse } from "../parse/index.js";
 import { PAIR_ROWS } from "../parse/scope.js";
+import { coverage } from "./coverage.js";
 import { allReadings, readParse, readText } from "./read.js";
 import type { Frame, Reading, Term } from "./types.js";
 
@@ -397,4 +398,69 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
       assert.equal(reading.claim.predicate[0]?.kind, "blank");
     },
   );
+});
+
+describe("reader: every word in one place (R6a coverage fixes)", () => {
+  /** The first reading of a sentence written as morph gloss, after checking that every word has exactly one place. */
+  function placed(gloss: string): Reading {
+    const result = parse(glossToAgeben(gloss, tables, index), tables);
+    const readings = readParse(result, { tables });
+    const cover = coverage(result, readings);
+    assert.deepEqual(cover.missing.map((w) => w.word.raw), [], "missing");
+    assert.deepEqual(cover.doubled.map((w) => w.word.raw), [], "doubled");
+    return readings[0]!;
+  }
+  const list = (term: Term | undefined): Extract<Term, { kind: "list" }> => {
+    assert.equal(term?.kind, "list");
+    return term as Extract<Term, { kind: "list" }>;
+  };
+
+  it("as-of.md:62: a shared adjective is a detail on the list, with its as-of pair and bound", () => {
+    const reading = placed("[z-Azozon | z-Alazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]");
+    const [shared] = list(reading.claim.roles.z).sharedDetails ?? [];
+    assert.equal(shared?.values.role, "scale");
+    assert.equal(shared?.details?.[0]?.hosted?.kind, "number");
+  });
+
+  it("stance-bars.md:62: a bar's hosted `bl-` word is the bar frame's hosted", () => {
+    const reading = placed("[z-book | [th-REPORTED | bl-Alazun] | z-rank/less | g-clarity]");
+    const bar = list(reading.claim.roles.z).members[1];
+    assert.ok(bar?.kind === "thing" && bar.frames?.[0]?.hosted?.kind === "thing");
+  });
+
+  it("hooked-joins.md:11: the binder frame keeps the join word and hosts the list", () => {
+    const reading = placed("[z-at-x-everything | bl-house] | v-sleep");
+    assert.equal(frame(reading, "binder").hosted, reading.claim.roles.z);
+  });
+
+  it("span-nesting.md:13: the quote frame hosts the quote term", () => {
+    const reading = placed("z-Azozon | d-CITE[flaw]# | v-tell");
+    assert.equal(frame(reading, "quote").hosted, reading.claim.roles.d);
+  });
+
+  it("joins.md:297: every join of a clause list is kept", () => {
+    const reading = placed("[z-Azozon | v-walk | x-or-exactly-one | z-Alazun | v-run | x-or-exactly-one | z-Ahelan | v-sleep]");
+    const clauses = list(reading.claim.clauses);
+    assert.equal(clauses.parts.filter((p) => p.join).length, 2);
+  });
+
+  it("left-bound-adjectives.md:19: an adjective on a reaction is a detail on its frame", () => {
+    const reading = placed("[gl-angry | y-dog]");
+    assert.equal(frame(reading, "attitude").details?.[0]?.key, "slot:gl");
+  });
+
+  it("stand-in-roles.md:28: a verb stand-in's dependent nests on the verb", () => {
+    const reading = placed("z-Azozon | v-confirm | z-Alazun | v-sit");
+    const verb = reading.claim.verb;
+    assert.ok(verb?.kind === "thing" && verb.details[0]?.kind === "dependent");
+    assert.equal(reading.claim.details.length, 0);
+  });
+
+  it("scope-islands.md:62: a joined adjective list is read with its joins", () => {
+    const reading = placed("[z-dog | [g-red | SCOPE[g-small | g-not] | g-and]] | v-walk");
+    const subject = reading.claim.roles.z;
+    assert.ok(subject?.kind === "thing");
+    const adjectives = list(subject.details.find((d) => d.key === "unit:gCoord")?.hosted);
+    assert.equal(adjectives.members.length, 2);
+  });
 });

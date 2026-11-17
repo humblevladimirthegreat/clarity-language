@@ -38,7 +38,7 @@ export function formatTerm(term: Term | undefined): string {
     case "number":
       return `number ${term.word.raw}${tail(term.details)}`;
     case "list":
-      return `list ${term.join ? term.join.raw : "?"}(${term.members.map(formatTerm).join(", ")})${term.shared.map((s) => ` shared ${s.role} ${s.shared.word.raw}`).join("")}${term.bound ? ` {${formatDetail(term.bound)}}` : ""}`;
+      return `list ${term.join ? term.join.raw : "?"}(${term.members.map(formatTerm).join(", ")})${term.sharedDetails ? term.sharedDetails.map((d) => ` shared ${d.values.role ?? "-"} ${formatDetail(d)}`).join("") : term.shared.map((s) => ` shared ${s.role} ${s.shared.word.raw}`).join("")}${term.bound ? ` {${formatDetail(term.bound)}}` : ""}`;
     case "clause":
       return `clause ${term.reading.id}`;
     case "quote":
@@ -62,6 +62,7 @@ function formatFrame(f: Frame): string {
   if (f.holderHost) parts.push("holderHost");
   if (f.content?.length) parts.push(`content [${f.content.map((r) => r.id).join(" ")}]`);
   if (f.inner?.length) parts.push(`inner (${f.inner.map(formatFrame).join("; ")})`);
+  if (f.details?.length) parts.push(`{${f.details.map(formatDetail).join("; ")}}`);
   return parts.join(" ");
 }
 
@@ -113,6 +114,7 @@ function nestedReadings(r: Reading): Reading[] {
     else if (t.kind === "list") {
       t.members.forEach(term);
       if (t.bound) detail(t.bound);
+      t.sharedDetails?.forEach(detail);
     }
     if ("details" in t) t.details?.forEach(detail);
   };
@@ -121,6 +123,7 @@ function nestedReadings(r: Reading): Reading[] {
     term(f.party);
     term(f.hosted);
     f.inner?.forEach(frame);
+    f.details?.forEach(detail);
   };
   const detail = (d: Detail): void => {
     add(d.content);

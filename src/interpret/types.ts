@@ -57,6 +57,8 @@ export type Frame = {
   hosted?: Term;
   /** Frames held inside this one: the stance or intention a contrary zone holds (contrary-to.md#contrary-to-stance). */
   inner?: Frame[];
+  /** Words that describe the frame's own word: a call's or a reaction's `gl-`, `/w/` and `/ɡ/` words (speech-moves.md#vocative, more-turn-words.md#describe-turn-word). */
+  details?: Detail[];
   /** The resolve stage's member tag, where a pair row tells members apart. */
   member?: string;
   /** A holder's host stance, NOTIONAL or intention. */
@@ -101,6 +103,13 @@ export type Term =
       frames?: Frame[];
       /** A hooked join's bound: which members count (hooked-joins.md#hooked-joins). Its hook is in `values.hook`, its landmark is `hosted`. */
       bound?: Detail;
+      /**
+       * The words after a join that every member shares (list-structure.md#shared-after-the-join): one detail per shared
+       * word, read by its class (a frame-class word nests in `frames`, rule 2), with its own hosted words and modifiers.
+       * `values.role` is the resolve stage's shared role where `shared` has a record for it; an equative's factor
+       * (`npJoinClose.factor`) sits in its scale's `details`.
+       */
+      sharedDetails?: Detail[];
     }
   | { kind: "clause"; reading: Reading }
   /** A cite span: its words are readings with their own act word and frames. */

@@ -14,6 +14,7 @@ import type { ClauseScope, FrameReach, ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
   Clause,
+  CoordShared,
   GCoord,
   GPackage,
   Hosted,
@@ -24,6 +25,7 @@ import type {
   NpPackage,
   ParseResult,
   SharedRecord,
+  TurnWordMods,
   Unit,
   VpCoord,
 } from "../parse/types.js";
@@ -141,6 +143,8 @@ type Ctx = {
   anaphors: Map<LexWord, AnaphorBind>;
   blanks: Set<LexWord>;
   shared: Map<LexWord, SharedRecord[]>;
+  /** The resolve stage's record for each shared word, keyed by the tree's shared item. */
+  sharedItems: Map<CoordShared, SharedRecord>;
   /** First reading id of each sentence, in text order: what a linker, grounds or answer points to. */
   sentences: { utterance: number; body: number; id: ReadingId }[];
   /** A dependent's reading, made once where its stand-in names it. */
@@ -249,12 +253,15 @@ function spanTerm(word: LexWord, here: Here): Term {
     return { kind: "literal", word, payload: family.payload };
   }
   const readings = quoteReadings(word, here);
+  // The frame (or the aside's detail) keeps the word (rule 5) and hosts the quote term, so the term nests in it: one
+  // place for the word wherever else the term sits (a role).
+  const term: Term = { kind: "quote", word, readings };
   if (family.bracket === "(") {
-    here.reading.claim.details.push({ ...detailOf("unit:writingSpan", word, "aside"), content: readings });
+    here.reading.claim.details.push({ ...detailOf("unit:writingSpan", word, "aside"), content: readings, hosted: term });
   } else {
-    here.reading.frames.push({ ...frameOf("unit:writingSpan", word, here), content: readings });
+    here.reading.frames.push({ ...frameOf("unit:writingSpan", word, here), content: readings, hosted: term });
   }
-  return { kind: "quote", word, readings };
+  return term;
 }
 
 function headTerm(word: LexWord, here: Here, clause: Clause): Term {
@@ -354,7 +361,12 @@ function adjDetail(pkg: GPackage, here: Here, clause: Clause): Detail {
   const detail = detailOf(key, word, row?.cls.startsWith("detail:") ? row.cls.slice(7) : "adjective");
   if (row?.cls.startsWith("frame:")) detail.frames = [frameOf(key, word, here)];
   for (const w of pkg.modifiers) modifier(w, here, detail);
-  if (pkg.asOf) detail.details = [...(detail.details ?? []), detailOf("slot:asOf", pkg.asOf.word, "time")];
+  if (pkg.asOf) {
+    // The as-of pair: the `/w/` word and its bound, the time the adjective holds as of (as-of.md#as-of).
+    const asOf = detailOf("slot:asOf", pkg.asOf.word, "time");
+    if (pkg.asOf.bound) asOf.hosted = headTerm(pkg.asOf.bound, here, clause);
+    detail.details = [...(detail.details ?? []), asOf];
+  }
   const hosted = hostedTerm(pkg.hosted, here, clause, detail.frames?.[0]);
   if (hosted) {
     if (row?.cls === "frame:sake" && detail.frames?.[0]) detail.frames[0].party = hosted;
@@ -367,10 +379,82 @@ function itemTerm(pkg: NpPackage, here: Here, clause: Clause): Term {
   // A mention marker before a span: the span is a literal term (spans-as-words.md#mention).
   const mention = pkg.glAdj?.word.reading === "mention" && pkg.head.family.kind === "writingSpan";
   const term = mention && pkg.head.family.kind === "writingSpan" ? ({ kind: "literal", word: pkg.head, payload: pkg.head.family.payload } as Term) : headTerm(pkg.head, here, clause);
-  const details = [...(pkg.glAdj ? [pkg.glAdj] : []), ...pkg.adjs].map((adj) => adjDetail(adj, here, clause));
+  // A joined adjective list (joins.md#right-close) is read as its list, joins and fences included; `adjs` repeats its
+  // adjectives flat, so only the ones outside it are read one by one.
+  const inList = pkg.adjCoord ? gPackagesOf(pkg.adjCoord) : new Set<GPackage>();
+  const details = [...(pkg.glAdj ? [pkg.glAdj] : []), ...pkg.adjs.filter((adj) => !inList.has(adj))].map((adj) => adjDetail(adj, here, clause));
+  if (pkg.adjCoord) {
+    const anchor = classOf("unit:gCoord")?.anchor ?? "";
+    details.push({ kind: "adjective", construction: "unit:gCoord", key: "unit:gCoord", anchor, words: [], values: {}, hosted: gTerm(pkg.adjCoord, here, clause) });
+  }
   if (pkg.tag) here.reading.links.push(link("tag", "slot:tag", [pkg.tag]));
   addDetails(term, details);
   return term;
+}
+
+/** The adjectives a `/ɡ/` list holds, its islands' lists included. */
+function gPackagesOf(coord: GCoord, out = new Set<GPackage>()): Set<GPackage> {
+  const units = (list: Unit[]): void => {
+    for (const unit of list) {
+      if (unit.kind === "gCoord") gPackagesOf(unit.coord, out);
+      else if (unit.kind === "predicate") out.add(unit.adj);
+      else if (unit.kind === "island") units(unit.island.units);
+    }
+  };
+  for (const part of coord.parts) {
+    for (const item of part.items) {
+      if (item.kind === "adj") out.add(item.adj);
+      else units(item.island.units);
+    }
+  }
+  return out;
+}
+
+/** An `/h/` word read as a detail of what holds it (a shared word, a bar): a frame-class word nests in `frames` (rule 2). */
+function hDetail(unit: HUnit, here: Here, clause: Clause): Detail {
+  const word = unit.word;
+  const key = wordKey(word, unit.closes);
+  const row = classOf(key);
+  if (!row) unread(here, "noRow", key, word);
+  const kind = row?.cls.startsWith("detail:") ? row.cls.slice(7) : row?.cls.startsWith("frame:") ? "frame" : "adverb";
+  const detail = detailOf(key, word, kind);
+  const frame = row?.cls.startsWith("frame:") ? frameOf(key, word, here) : undefined;
+  if (frame) detail.frames = [frame];
+  for (const w of unit.modifiers) modifier(w, here, detail);
+  const hosted = hostedTerm(unit.hosted, here, clause, frame);
+  if (hosted) {
+    if (frame && (frame.family === "sake" || frame.family === "holder")) frame.party = hosted;
+    else if (frame) frame.hosted = hosted;
+    else detail.hosted = hosted;
+  }
+  return detail;
+}
+
+/** The shared words of one list part (list-structure.md#shared-after-the-join), each read by its class. */
+function sharedDetails(shared: CoordShared[], here: Here, clause: Clause, factor?: LexWord): Detail[] {
+  const out = shared.map((item) => {
+    const detail = item.word.pos === "g" ? adjDetail(item as GPackage, here, clause) : hDetail(item as HUnit, here, clause);
+    const record = here.ctx.sharedItems.get(item);
+    if (record) detail.values.role = record.role;
+    return detail;
+  });
+  if (factor) {
+    // *Twice as … as*: the factor counts the shared scale (comparatives.md, `npJoinClose.factor`).
+    const amount = detailOf(wordKey(factor), factor, "amount");
+    const scale = out[out.length - 1];
+    if (scale) scale.details = [...(scale.details ?? []), amount];
+    else out.push(amount);
+  }
+  return out;
+}
+
+/** A whole-clause frame on a list's own join word (a binder, joins.md#everything-ua) keeps the word and hosts the list (rule 5). */
+function hostOnJoin(term: Term, here: Here): void {
+  if (term.kind !== "list") return;
+  const joins = new Set([term.join, ...term.parts.map((p) => p.join)].filter((w): w is LexWord => !!w));
+  for (const frame of here.reading.frames) {
+    if (!frame.hosted && frame.words[0] && joins.has(frame.words[0])) frame.hosted = term;
+  }
 }
 
 function sharedOf(joins: (LexWord | undefined)[], here: Here): SharedRecord[] {
@@ -413,15 +497,15 @@ function joinModifiers(mods: LexWord[] | undefined, join: LexWord | undefined, h
   }
 }
 
-function listTerm(parts: Part[], here: Here, bound?: Detail): Term {
-  if (parts.length === 1 && parts[0]!.members.length === 1 && !parts[0]!.join) return parts[0]!.members[0]!;
+function listTerm(parts: Part[], here: Here, bound?: Detail, shared: Detail[] = []): Term {
+  if (parts.length === 1 && parts[0]!.members.length === 1 && !parts[0]!.join && shared.length === 0) return parts[0]!.members[0]!;
   const joins = parts.map((p) => p.join);
   const join = [...joins].reverse().find((j) => j !== undefined);
   const members = parts.flatMap((p) => p.members);
   // A fill-ask join with no items is the blank itself (questions.md#fill-ask; interpreter.md `ask:fillAsk`).
-  if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, details: bound ? [bound] : [] };
+  if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, details: [...(bound ? [bound] : []), ...shared] };
   const frames = listFrames(joins, here);
-  return {
+  const term: Term = {
     kind: "list",
     ...(join ? { join } : {}),
     members,
@@ -430,30 +514,49 @@ function listTerm(parts: Part[], here: Here, bound?: Detail): Term {
     parts,
     ...(frames.length ? { frames } : {}),
     ...(bound ? { bound } : {}),
+    ...(shared.length ? { sharedDetails: shared } : {}),
   };
+  hostOnJoin(term, here);
+  return term;
+}
+
+/** A stance word as a rank fence's comparee (comparatives.md § bars): a bar frame, with its hosted `/b/` and modifiers. */
+function barTerm(unit: HUnit, here: Here, clause: Clause): Term {
+  const bar = thing(unit.word) as Extract<Term, { kind: "thing" }>;
+  const frame = frameOf("slot:bar", unit.word, here);
+  bar.frames = [frame];
+  const box = detailOf("slot:bar", unit.word, "frame");
+  for (const w of unit.modifiers) modifier(w, here, box);
+  if (box.frames?.length) frame.inner = box.frames;
+  if (box.details?.length) bar.details.push(...box.details);
+  const hosted = hostedTerm(unit.hosted, here, clause, frame);
+  if (hosted) frame.hosted = hosted;
+  return bar;
 }
 
 function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
   let bound: Detail | undefined;
+  const shared: Detail[] = [];
   const parts = coord.parts.map((part) => {
     const members = part.items.map((item): Term => {
       if (item.kind === "package") return itemTerm(item.package, here, clause);
       if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island.units, here) };
-      const bar = thing(item.bar.word);
-      if (bar.kind === "thing") bar.frames = [frameOf("slot:bar", item.bar.word, here)];
-      return bar;
+      return barTerm(item.bar, here, clause);
     });
     if (part.tag) here.reading.links.push(link("tag", "slot:tag", [part.tag]));
     joinModifiers(part.joinModifiers, part.join, here);
     bound = boundOf(part.join, part.landmark, here, clause) ?? bound;
+    shared.push(...sharedDetails(part.shared, here, clause, part.factor));
     return { members, ...(part.join ? { join: part.join } : {}) };
   });
-  return listTerm(parts, here, bound);
+  return listTerm(parts, here, bound, shared);
 }
 
 function gTerm(coord: GCoord, here: Here, clause: Clause): Term {
+  const shared: Detail[] = [];
   const parts = coord.parts.map((part) => {
     joinModifiers(part.joinModifiers, part.join, here);
+    shared.push(...sharedDetails(part.shared, here, clause));
     return {
       members: part.items.map((item): Term => {
         if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island.units, here) };
@@ -464,7 +567,7 @@ function gTerm(coord: GCoord, here: Here, clause: Clause): Term {
       ...(part.join ? { join: part.join } : {}),
     };
   });
-  return listTerm(parts, here);
+  return listTerm(parts, here, undefined, shared);
 }
 
 function verbTerm(word: LexWord, here: Here): Term {
@@ -475,29 +578,39 @@ function verbTerm(word: LexWord, here: Here): Term {
 }
 
 function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
+  const shared: Detail[] = [];
   const parts = coord.parts.map((part) => {
+    shared.push(...sharedDetails(part.shared, here, clause));
     for (const unit of part.sharedUnits ?? []) {
       readUnit(unit, here, clause);
       if (unit.kind === "np") here.reading.links.push(link("verbShared", "reading:verbSharedNoun", []));
     }
+    // A label-reach verb's hosted `/b/` (label-seams.md#label-reach) nests on that verb's term: one place for the verb.
+    const labels = new Map<LexWord, Detail>();
     for (const hv of part.hostedVerbs ?? []) {
       const hosted = hostedTerm(hv.hosted, here, clause);
-      if (hosted) here.reading.claim.details.push({ ...detailOf("slot:hosted", hv.verb, "hosted"), hosted });
+      if (hosted) labels.set(hv.verb, { ...detailOf("slot:hosted", hv.verb, "hosted"), hosted });
     }
+    const verbOf = (w: LexWord, at: Here): Term => {
+      const term = verbTerm(w, at);
+      const label = labels.get(w);
+      if (label) addDetails(term, [label]);
+      return term;
+    };
     joinModifiers(part.joinModifiers, part.join, here);
     // Each item is a verb plus the words before it (verb-and-stance-joins.md#vp-clause-forms): an item with words of
     // its own is a nested reading whose verb is that verb.
     const itemUnits = new Map((part.itemUnits ?? []).map((item) => [item.verb, item.units]));
     const members = part.items.map((w): Term => {
       const units = itemUnits.get(w);
-      if (!units) return verbTerm(w, here);
+      if (!units) return verbOf(w, here);
       const item = readIsland(units, here, `v${w.at ?? 0}`);
-      item.claim.verb = verbTerm(w, { ...here, reading: item });
+      item.claim.verb = verbOf(w, { ...here, reading: item });
       return { kind: "clause", reading: item };
     });
     return { members, ...(part.join ? { join: part.join } : {}) };
   });
-  return listTerm(parts, here);
+  return listTerm(parts, here, undefined, shared);
 }
 
 // ── Units ───────────────────────────────────────────────────────────────────
@@ -658,13 +771,17 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
       const readings = members.map((member, i) => readClause(member, here.utterance, here.body, `${here.reading.id}/m${i}`, here.ctx, here.scoped));
       const joins = coord.links.map((l) => l.join);
       const join = joins[joins.length - 1];
+      const terms: Term[] = readings.map((reading) => ({ kind: "clause", reading }));
+      // A clause join stands between its clauses (joins.md#clause-joins): each part is one clause and the join after it.
+      // A standalone join (no first clause) is one part with the join and its members.
+      const parts = coord.first ? terms.map((member, i) => ({ members: [member], ...(joins[i] ? { join: joins[i] } : {}) })) : [{ members: terms, ...(join ? { join } : {}) }];
       here.reading.claim.clauses = {
         kind: "list",
         ...(join ? { join } : {}),
-        members: readings.map((reading) => ({ kind: "clause", reading })),
+        members: terms,
         shared: [],
         values: join ? wordValues(join) : {},
-        parts: [{ members: readings.map((reading) => ({ kind: "clause", reading })), ...(join ? { join } : {}) }],
+        parts,
       };
       return;
     }
@@ -724,7 +841,7 @@ function readClause(clause: Clause, utterance: number, body: number, id: Reading
   if (clause.dependent && !ctx.dependents.has(clause.dependent.clause)) {
     // A dependent no stand-in names in a role: an `/h/` stand-in or `Odo` slot; kept as a detail with its reading.
     const dependent = readDependent(clause, here)!;
-    reading.claim.details.push({
+    const detail: Detail = {
       kind: "dependent",
       construction: "slot:dependent",
       key: "slot:dependent",
@@ -732,15 +849,54 @@ function readClause(clause: Clause, utterance: number, body: number, id: Reading
       words: [clause.dependent.orodo],
       values: {},
       content: [dependent],
-    });
+    };
+    // A verb stand-in (`vaon`, stand-in-roles.md#stand-in-roles) is the verb, and the next clause is its content: the
+    // dependent nests on the verb's term, one place for the word.
+    const verb = verbHeaded(reading.claim.verb, clause.dependent.orodo);
+    if (verb) verb.details.push(detail);
+    else reading.claim.details.push(detail);
     reading.links.push(link("standIn", "slot:dependent", [clause.dependent.orodo], { to: dependent.id }));
   }
   return reading;
 }
 
+/** The thing term headed by `word` among a clause's verb and its joined verbs. */
+function verbHeaded(verb: Term | undefined, word: LexWord): Extract<Term, { kind: "thing" }> | undefined {
+  if (!verb) return undefined;
+  if (verb.kind === "thing") return verb.head === word ? verb : undefined;
+  if (verb.kind === "list") {
+    for (const member of verb.members) {
+      const found = verbHeaded(member.kind === "clause" ? member.reading.claim.verb : member, word);
+      if (found) return found;
+    }
+  }
+  return undefined;
+}
+
 /** Edge frames the resolve stage does not pair: the addressee. The act word and reactions come from the scope record. */
 function vocativeFrames(left: LeftEdge): Frame[] {
   return left.vocatives.map((word) => ({ ...frameOf("edge:vocative", word, undefined), party: thing(word) }));
+}
+
+/**
+ * The words on each call and reaction (`TurnWordMods`): details on that word's frame, one set in each sentence body the
+ * frame sits in (speech-moves.md#vocative, more-turn-words.md#describe-turn-word).
+ */
+function edgeDetails(left: LeftEdge, here: Here, clause: Clause): void {
+  const attach = (words: LexWord[], mods: (TurnWordMods | undefined)[] | undefined): void => {
+    words.forEach((word, i) => {
+      const mod = mods?.[i];
+      const frame = here.reading.frames.find((f) => f.words[0] === word);
+      if (!mod || !frame) return;
+      const box = detailOf(wordKey(word), word, "frame");
+      for (const w of mod.w ?? []) modifier(w, here, box);
+      const details = [...(mod.glAdj ? [mod.glAdj] : []), ...mod.adjs].map((adj) => adjDetail(adj, here, clause));
+      frame.details = [...(frame.details ?? []), ...details, ...(box.details ?? [])];
+      if (box.frames?.length) frame.inner = [...(frame.inner ?? []), ...box.frames];
+    });
+  };
+  attach(left.vocatives, left.vocativeAdjs);
+  attach(left.interjections, left.interjectionMods);
 }
 
 /** The act word and reactions of a turn with no body (a bare question, a call), which the scope record does not hold. */
@@ -772,6 +928,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     anaphors: new Map((info?.anaphors ?? []).map((a) => [a.pronoun, a])),
     blanks: new Set((info?.asks ?? []).flatMap((a) => [...a.gaps, ...(a.inner ?? [])])),
     shared: new Map(),
+    sharedItems: new Map((info?.shared ?? []).map((record) => [record.shared, record])),
     sentences: [],
     dependents: new Map(),
   };
@@ -791,6 +948,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
       const here: Here = { ctx, reading, utterance: ui, body: bi, scoped: true };
       if (!body) reading.frames.push(...bareEdgeFrames(utterance.left));
       reading.frames.push(...vocativeFrames(utterance.left));
+      edgeDetails(utterance.left, here, reading.source.clause);
       if (bi === 0) edgeLinks(utterance.left, here);
       if (body?.linker) reading.links.push(link("linker", "unit:linker", [body.linker], prevTo(here)));
       if (body?.topicMarker) reading.links.push(link("topic", "body:topicMarker", [body.topicMarker]));
@@ -829,13 +987,17 @@ export function allReadings(readings: Reading[]): Reading[] {
   const visitTerm = (term: Term | undefined): void => {
     if (!term) return;
     if (term.kind === "clause") visit(term.reading);
-    if (term.kind === "list") term.members.forEach(visitTerm);
+    if (term.kind === "list") {
+      term.members.forEach(visitTerm);
+      term.sharedDetails?.forEach(visitDetail);
+    }
     if (term.kind === "quote") term.readings.forEach(visit);
     if ("details" in term && term.details) term.details.forEach(visitDetail);
   };
   const visitDetail = (detail: Detail): void => {
     detail.content?.forEach(visit);
     visitTerm(detail.hosted);
+    detail.details?.forEach(visitDetail);
   };
   const visit = (reading: Reading): void => {
     if (seen.has(reading)) return;

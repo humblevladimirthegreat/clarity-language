@@ -6,7 +6,9 @@
  * Two kinds of place:
  * - **own places**: a frame, a detail, a term, a list's join. A word in two own places is `doubled`. A place inside
  *   another place that already holds the same word (a holder seam's `party` cut from its own word, a hooked join's
- *   `bound` detail on the join that closes its list) is the same place, not a second one.
+ *   `bound` detail on the join that closes its list) is the same place, not a second one. A term a frame or a
+ *   detail hosts (a binder frame's list, a quote frame's quote) and that also fills a role is one place: it counts
+ *   nested in the frame that keeps its word, and the role's copy of the same object is skipped.
  * - **pointer places**: a link and an `unread` entry. A link marks the word that carries it, and that word usually has
  *   an own place too (a pronoun's term and its `anaphor` link); an `unread` entry may annotate a frame (`unknown`,
  *   `unscoped`). So a pointer place counts only for a word with no own place, and never doubles one.
@@ -87,25 +89,44 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
   /** Words of an enclosing place, so a nested place on the same word is not a second place. */
   const within = (held: Set<LexWord>, words: (LexWord | undefined)[]): Set<LexWord> => new Set([...held, ...words.filter((w): w is LexWord => !!w)]);
   const path = new Set<Reading>();
+  /** Terms a reading's frames or claim details host: met elsewhere (a role), the same object is not a second place. */
+  let hostedHere = new Set<Term>();
+  const hostedSeen = new Set<Term>();
+  const hostedBy = (r: Reading): Set<Term> => {
+    const out = new Set<Term>();
+    const fromFrame = (f: Frame): void => {
+      if (f.hosted) out.add(f.hosted);
+      f.inner?.forEach(fromFrame);
+    };
+    r.frames.forEach(fromFrame);
+    for (const d of r.claim.details) if (d.hosted) out.add(d.hosted);
+    return out;
+  };
 
   const frame = (f: Frame, r: Reading, held: Set<LexWord>): void => {
     for (const w of f.words) hit(w, r, `frame:${f.key}`, held, false, f);
     const inside = within(held, f.words);
     term(f.party, r, inside);
-    term(f.hosted, r, inside);
+    term(f.hosted, r, inside, true);
     for (const i of f.inner ?? []) frame(i, r, inside);
+    for (const d of f.details ?? []) detail(d, r, inside);
     for (const c of f.content ?? []) reading(c);
   };
   const detail = (d: Detail, r: Reading, held: Set<LexWord>): void => {
     for (const w of d.words) hit(w, r, `detail:${d.kind}`, held);
     const inside = within(held, d.words);
-    term(d.hosted, r, inside);
+    term(d.hosted, r, inside, true);
     for (const x of d.details ?? []) detail(x, r, inside);
     for (const f of d.frames ?? []) frame(f, r, inside);
     for (const c of d.content ?? []) reading(c);
   };
-  const term = (t: Term | undefined, r: Reading, held: Set<LexWord>): void => {
-    if (!t) return;
+  const term = (t: Term | undefined, r: Reading, held: Set<LexWord>, hosted = false): void => {
+    if (!t || (!hosted && hostedHere.has(t))) return;
+    // Two hosts of one term (a binder frame and the hook whose landmark the list is): the first host holds it.
+    if (hosted) {
+      if (hostedSeen.has(t)) return;
+      hostedSeen.add(t);
+    }
     switch (t.kind) {
       case "thing": {
         hit(t.head, r, "term:thing", held);
@@ -125,6 +146,7 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
         for (const m of t.members) term(m, r, inside);
         for (const f of t.frames ?? []) frame(f, r, inside);
         if (t.bound) detail(t.bound, r, inside);
+        for (const d of t.sharedDetails ?? []) detail(d, r, inside);
         return;
       }
       case "quote":
@@ -142,6 +164,8 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
   const reading = (r: Reading): void => {
     if (path.has(r)) return;
     path.add(r);
+    const outer = hostedHere;
+    hostedHere = hostedBy(r);
     const none = new Set<LexWord>();
     for (const o of r.order) if (o.kind === "wordShape") pair(o.over, o.under);
     for (const f of r.frames) frame(f, r, none);
@@ -154,6 +178,7 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
     for (const l of r.links) for (const w of l.words) hit(w, r, `link:${l.kind}`, none, true);
     for (const u of r.unread) hit(u.word, r, `unread:${u.reason}`, none, true);
     path.delete(r);
+    hostedHere = outer;
   };
   for (const r of readings) {
     sentence = r.id;
