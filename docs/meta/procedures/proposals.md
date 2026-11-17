@@ -1,56 +1,30 @@
 # Proposals (editors)
 
-How to keep **`docs/proposals/`**, what a proposal holds, and how an agent carries one out. Grammar pages must **not** link here or mention that folder. A loose spec that nobody has planned yet is an **idea**, written per [ideas.md](ideas.md) without reading this page.
+How the orchestrator (the session the user talks to) carries out a plan in **`docs/proposals/`**: stopping on a finding, running subagents, commits, phases, resuming, and consolidating. Writing the plan (what a proposal holds, when it is ready, phases and units) is [proposal-plans.md](proposal-plans.md). Grammar pages must **not** link here or mention that folder. A loose spec that nobody has planned yet is an **idea**, written per [ideas.md](ideas.md) without reading this page.
 
 ## Folder and links
 
 | Folder | Holds | Status keyword |
 |--------|-------|----------------|
 | `ideas/` | loose specs ([ideas.md](ideas.md)) | `IDEA` |
-| `ready/` | plans that pass [ready to implement](#ready-to-implement) | `READY` |
+| `ready/` | plans that pass [ready to implement](proposal-plans.md#ready-to-implement) | `READY` |
 | `in-progress/` | plans with a phase under way or stopped partway | `IN PROGRESS` |
 | `rejected/` | ideas and plans turned down | `REJECTED` |
 
-A file's Status keyword matches its folder. Move a file between folders with `git mv`, never by copying.
+A file's Status keyword matches its folder. Move a file between folders with `git mv`, never by copying. When the first phase starts, the orchestrator moves the file from `ready/` to `in-progress/` and sets `IN PROGRESS`.
 
 **Do not link to proposal pages.** Files move between these folders; a markdown link to a proposal will break. If another editor note must name one, use a backtick filename (`diphone-tts.md`) — never a markdown link whose target is a file under `docs/proposals/`. The same rule applies in grammar, meta, examples, `AGENTS.md`, `TODO.md`, and **other proposals**.
 
 Proposals may link **out** to `docs/grammar/`, `docs/meta/`, `data/`, and code. They are not design authority; absorb into grammar or meta, then drop or reject the proposal.
 
-## What a proposal is
-
-A proposal is a plan for a change that is too large to make in one edit. It starts as an idea and becomes a proposal when it passes [ready to implement](#ready-to-implement). When it is carried out, the grammar pages and meta notes own the result, and the proposal is deleted or moved per [folder and links](#folder-and-links).
-
-**Header lines**, in this order:
-
-| Line | Holds |
-|------|-------|
-| **Status:** | `READY` or `IN PROGRESS`, and each user decision with its date. While a run is in progress, also which phases and workstreams are done ([resuming](#resuming)). |
-| **Related:** | Links out to the grammar pages, meta notes, data, and code it touches. |
-| **Depends on:** / **Order:** | Other proposals that must land first, as backtick filenames. |
-| **Design authority:** | *none* (moves, retitles, tooling), or exactly which forms and readings it changes. |
-
-**Body sections:** Problem, Goals, Non-goals, then the findings or the design, then the implementation plan, then **Open decisions**. From the first consolidation on, Problem, Goals and Non-goals move to the end under one `## Background` heading ([consolidate](#consolidate)).
-
-Every proposal states, in its plan, that at the end of each [phase](#phases), and if the user says to stop partway, the agent [consolidates the proposal](#consolidate) before the session ends.
+## Open decisions
+<a id="open-decisions"></a>
 
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
 - Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
 - A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](../design-decisions.md).
 
-### Ready to implement
-<a id="ready-to-implement"></a>
-
-An idea moves from `ideas/` to `ready/` with `git mv` when the user wants it built and all of these hold:
-
-- No open decision blocks the first phase. Later phases may still log open decisions, each with its **Recommendation:**.
-- **Design authority:** names exactly which forms and readings it changes, or says *none*.
-- Every proposal named under **Depends on:** has landed.
-- The plan section is complete per [the plan section](#the-plan-section).
-
-The agent writes the plan and the missing header lines; the user settles the blocking decisions. Set Status to `READY` with the date. The orchestrator moves the file to `in-progress/` and sets `IN PROGRESS` when the first phase starts.
-
-### Stop and alert
+## Stop and alert
 <a id="stop-and-alert"></a>
 
 Skipping an item is for a decision that stays local to it. When a finding changes the plan itself, the run stops and the orchestrator tells the user. Such findings include:
@@ -67,37 +41,9 @@ Subagents report such findings to the orchestrator and stop there; they do not w
 3. Records the finding and the point reached on the proposal's Status line ([resuming](#resuming)).
 4. Tells the user what it found, which phases it affects, and the options it sees, then waits for the user's decision before going on.
 
-## One session or several subagents
-
-The **orchestrator** is the Claude Code session the user talks to. It reads the proposal, writes each subagent's brief, reads reports, runs gates, commits, and talks to the user. It is a role, not a model.
-
-Carry out a proposal in the orchestrator's session when it fits there: a few pages, one cluster of related changes, and enough room to hold the rules, the pages, and the diffs without the context being compacted.
-
-Within a subagent run, the orchestrator also does a small unit itself: a few edits on one page it can read in one slice. A subagent's cold start (about 20k tokens) costs more than that slice carried for the rest of the phase. A unit that needs a fresh context by rule (an audit, a checkpoint writer) still gets a subagent. The plan marks such units *orchestrator*.
-
-Use subagents when any of these holds:
-
-- The work spans many pages in clusters that share little.
-- The orchestrator's session would compact before the end, losing detail later items need.
-- A step needs a fresh context by rule: an independent audit, or a checkpoint writer that may not have read later pages ([what you may read](drill-generation.md#execute)).
-
-Subagents cost tokens, and most of the cost is context carried from turn to turn, so the plan keeps each subagent short and its context small, as below. Either way, a run too long for one orchestrator session splits into [phases](#phases).
-
 ## Phases
 
-A **phase** is the part of a proposal that one orchestrator session carries out. Subagents keep each unit's context small, but the orchestrator's own context still grows with every brief, report, diff stat, gate, and exchange with the user, and every later turn pays for all of it again ([where the tokens go](#where-the-tokens-go)). Phases reset it: each phase starts in a fresh session that reads only the consolidated proposal.
-
-Split a proposal into phases when one orchestrator session would carry it past about six units or about 60 orchestrator turns. A proposal that fits in one session has one phase and names none.
-
-Cut between phases where:
-
-- the tree is green and every unit before the cut is committed
-- the next phase needs this phase's outcome (what moved, the new ids, the decisions), not its reports or diffs
-- a user decision is due, or later units depend on what earlier ones find (an audit, a measurement, a tool's review list)
-- the next units read a different set of rules or pages, so the digest changes
-- a [fenced automated rewrite](#fence-automated-rewrites) and its hand fixes have just landed
-
-Never cut inside a unit or where the tree is not green.
+A **phase** is the part of a proposal that one orchestrator session carries out. Subagents keep each unit's context small, but the orchestrator's own context still grows with every brief, report, diff stat, gate, and exchange with the user, and every later turn pays for all of it again ([where the tokens go](proposal-plans.md#where-the-tokens-go)). Phases reset it: each phase starts in a fresh session that reads only the consolidated proposal. Where a plan cuts between phases is [phases](proposal-plans.md#phases) in the planning page.
 
 At the end of each phase the orchestrator:
 
@@ -107,22 +53,11 @@ At the end of each phase the orchestrator:
 
 When a phase runs over its budget and there is more than one unit left to do, the orchestrator ends it early at the next unit boundary, the same way, and the Status line says where the split fell. The next session starts the next phase as in [resuming](#resuming).
 
-## Where the tokens go
-
-- **Every turn re-sends the whole context.** A subagent's earlier turns are a cached prefix, billed at a discount while the cache is warm, but they are still sent again on every turn. So a subagent's input grows with the square of its turn count: each turn costs its current context, and the context grows each turn. Rough arithmetic: one 80-turn subagent that grows from 30k to 180k tokens averages about 105k a turn, about 8M input in all. Four 20-turn subagents that each grow from 30k to 70k average about 50k a turn, about 1M each and 4M in all, for the same work.
-- **A cold start is paid in full, but once.** Each new subagent loads `AGENTS.md`, its brief, and the [procedure](../agents-md.md#procedures) files its task names before its first edit. That costs less than carrying a long context through dozens of later turns.
-- **Bulk output is the biggest waste.** Raw build output, whole-page reads, and per-link hand edits each add thousands of tokens that every later turn pays for again. The tools below keep them out of the context.
-- **The orchestrator pays for everything it reads, every turn.** A diff it reads early is paid for again on every later turn, until the phase ends ([phases](#phases)).
-- **A fork copies the orchestrator's whole conversation.** By mid-run that is larger than a fresh brief.
-- **Parallel subagents save time, not tokens.** Each one pays its own cold start.
-- **Break-even for delegating a read.** T tokens read in a context that runs about 70 more calls cost about 9×T over the rest of the session (cache reads at 0.1× each call, plus the write). The short subagents measured cost 21k–120k weighted tokens, so a search that would read more than about 15k tokens, when only its conclusion is needed, is cheaper in an `Explore` subagent.
-- **Measure it.** `npm run token-report -- --since DATE` prints spend by component, carry cost by content kind, fix-loop counts, a subagent table, and skills invoked, from this project's transcripts. Its header holds the last baseline.
-
 ## Running with subagents
 
 The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`, `style-editor`) restate parts of this page so that subagents never read it: the [stop-and-alert](#stop-and-alert) findings, the stop line, reading slices, script files for scripted edits, quiet verification, and the report fields. When you change one of those rules here, make the same change in every agent file that restates it.
 
-1. **Short-lived subagents.** Give each subagent one or two items, and size a unit by the pages it reads, not by its item count: a unit that walks more than about eight pages, or a whole sidebar group, splits (for example by band). Start a fresh one when the next item reads different pages, or once a context passes about 25 turns or about 80k tokens. Split by shared context, not by file: two items that read the same pages may share a subagent; an item that needs new pages gets a new one.
+1. **Short-lived subagents.** Give each subagent one or two items, and size a unit by the pages it reads, not by its item count: a unit that walks more than about eight pages, or a whole sidebar group, splits (for example by band). Start a fresh one when the next item reads different pages, or once a context passes about 25 turns or about 80k tokens. Split by shared context, not by file: two items that read the same pages may share a subagent; an item that needs new pages gets a new one. A unit that changes code whose design is not settled in the plan (a new tree node, a new data shape) and also writes the prose that teaches the result splits in two: the code unit first, then a prose unit briefed from what the code produced (its forms, glosses and ids, checked with `parse.mjs`). The prose needs the result, not the code's internals, and a code design that is redone midway leaves a context every prose turn would pay for again.
 2. **The item goes in a brief file.** The orchestrator writes each subagent's brief to its own file in the session's scratchpad directory (`tmp/briefs/` when the session has none), and the prompt only names it: *Read your brief at `<path>` and follow it.* Every prompt the orchestrator sends stays in its context for the rest of the phase, while the subagent reads the file once, at its cold start. Build each brief by a script from parts kept in files (the digest, a running list such as glossed labels), and never print a finished brief back into the orchestrator's context. The brief carries everything the subagent needs to start:
    - the item's own finding text, copied from the proposal
    - the gate run or open decision that settles it, if any
@@ -152,20 +87,6 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`,
 13. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
 14. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
 15. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.
-
-## The plan section
-
-A proposal that runs in more than one session states its phases in the plan: each phase's ID, its units, its gate, and its commits, and the cut points chosen per [phases](#phases).
-
-A proposal that runs through subagents also states, in its plan:
-
-- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items)
-- the files each unit may edit
-- the rule digest copied into every brief, with its report format and the standing stop line from [step 2](#running-with-subagents)
-- the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row). A full `npm run verify` that passes against an empty baseline runs the build and the tests, so it is the final gate; don't run `npm run build` or `npm test` again after it.
-- the recall gate, for a phase that edits `say-*.md`, `english.md` or `src/english-helper/`: `npm run english-helper-recall -- --check` at the phase's end, with its result on the Status line. A drop is then owned by the phase that caused it ([English helper](english-helper.md#regression-net)).
-- the style gate, for a proposal that touches prose under `docs/grammar/`: its last unit is a style review of the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before the proposal's first, run by a fresh `style-editor` subagent (`model: opus`, `effort: high`) that made none of the changes. A move or rewrite changes what comes before a section, so a lead, a first-use gloss, or a preview can go stale ([what the build checks](../doc-style.md#what-the-build-checks)).
-- the commit plan: how many commits, and their messages ([commits](#commits))
 
 ## Commits
 

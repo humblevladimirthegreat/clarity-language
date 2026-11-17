@@ -99,7 +99,8 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 | Measure, peel, or move sittings and H3s | `restructure-sittings.md` |
 | Write or top up a checkpoint or level review, edit the drill allowlist | `drill-generation.md` |
 | Write down an idea: a loose spec nobody has planned yet | `ideas.md` |
-| Turn an idea into a plan, or orchestrate one as the session the user talks to: subagents, gates, commits, resuming. A subagent running one unit skips it; its brief is complete | `proposals.md` |
+| Turn an idea into a plan: what a proposal holds, when it is ready, phases and units, the plan section | `proposal-plans.md` |
+| Orchestrate a plan as the session the user talks to: subagents, gates, commits, phases, resuming, consolidating. A subagent running one unit skips it; its brief is complete | `proposals.md` |
 
 ## Tooling notes
 
@@ -118,7 +119,7 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 - **After editing Markdown** under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**: no separate lint command. Skip it when the only changes are under `docs/meta/` or `docs/proposals/`. The build checks emphasis syntax, forward links in stage pages (`npm run lint:forward-links`), wording rules (`npm run lint:prose`, [what the build checks](docs/meta/doc-style.md#what-the-build-checks)), Vue-illegal tags, proposal links, that Ageben in code spans parses and uses lexicon roots, morph glosses, checkpoint word banks and their core vocabulary, the terminology page, and dead URLs, details in [marking Ageben](docs/meta/grammar-docs.md#marking-ageben). Write `*a* / *b*`, not `*a*/*b*`; in bold text put forms in backticks only.
 - **Commits made by AI:** always append **`[skip-cd]`** to the commit message so Amplify doesn't start a build. Commit before and after any tool's large `--write` so its diff stands alone, [fence automated rewrites](docs/meta/procedures/proposals.md#fence-automated-rewrites).
 - **Large output:** when a result says *Output too large … saved to*, grep or slice the saved file; never read it whole. Before reading a long page or proposal, list its headings with line ranges (`npm run -s outline -- <file>`) and read the ranges you need, one file per call. A hook refuses a `cat` of more than 150 lines of Markdown under `docs/`. After a file you have read changes, read the change (`git diff`), not the file again. Run a repo-wide grep with `-l` or `-c` first.
-- **Delegated searches:** when a search would read more than about 15k tokens and you need only its conclusion (a repo-wide rename sweep, where a rule is implemented), give it to an `Explore` subagent and keep the answer. Below that, read slices yourself. Why: [where the tokens go](docs/meta/procedures/proposals.md#where-the-tokens-go).
+- **Delegated searches:** when a search would read more than about 15k tokens and you need only its conclusion (a repo-wide rename sweep, where a rule is implemented), give it to an `Explore` subagent and keep the answer. Below that, read slices yourself. Why: [where the tokens go](docs/meta/procedures/proposal-plans.md#where-the-tokens-go).
 - **End of run:** close a task (or a subagent's report) with a line or two naming anything that looked inefficient in the run, such as a large read, a rerun, or a search that went wide. Note it and move on; do not analyze it or propose fixes.
 - **Bash permission classifier errors:** if a Bash call fails because the auto-mode classifier gave no verdict, retry the same call up to 5 times with exponential backoff (for example 1, 5, 25, 125, 625 seconds). If it still fails, stop working and tell the user. Do not switch to workarounds.
 

@@ -30,9 +30,9 @@ The ending says how firm the expectation was that the news overturned. If you do
 
 In a question MIRATIVE stays yours, outside what is asked, as a [speaker attitude](feelings.md#speaker-attitude) does, though the question word comes first ([which word covers which](/clause#which-covers-which)). The surprise is your own, so the question asks only about the claim.
 
-> `yel themem zazozon vowurol.`
+> `yel themem vowurol zazozon.`
 >
-> y-question | th-MIRATIVE | z-Azozon | v-walk
+> y-question | th-MIRATIVE | v-walk | z-Azozon
 >
 > "Is Azozon walking, of all things?"
 

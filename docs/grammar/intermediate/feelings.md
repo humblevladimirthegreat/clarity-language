@@ -184,9 +184,9 @@ Hope is not a way of knowing, so it cannot hold up a forecast by itself. To say 
 
 In a question the attitude still stays yours. By the usual [order](/clause#which-covers-which) the question word covers the rest of the turn, but an attitude stays outside what is asked, so the question asks only about the claim:
 
-> `yel zazozon thuwuyom vowurol.`
+> `yel thuwuyom vowurol zazozon.`
 >
-> y-question | z-Azozon | th-hope | v-walk
+> y-question | th-hope | v-walk | z-Azozon
 >
 > "Is Azozon walking? I hope so."
 

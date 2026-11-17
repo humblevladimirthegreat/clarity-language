@@ -157,7 +157,7 @@ One per unit after its gate, plus one final commit for the `AGENTS.md` row and t
 
 ## Open decisions
 
-None. Grammar questions about how a construction is read belong to `ageben-interpreter.md`; a question about how the map draws one is logged here per the [proposal procedure](../../meta/procedures/proposals.md#what-a-proposal-is).
+None. Grammar questions about how a construction is read belong to `ageben-interpreter.md`; a question about how the map draws one is logged here per the [proposal procedure](../../meta/procedures/proposals.md#open-decisions).
 
 ## Historical note: layout libraries considered
 

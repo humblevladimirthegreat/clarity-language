@@ -16,7 +16,7 @@ Related meta:
 | [language-name.md](language-name.md) | English name **Ageben** = glasses root **`agebe`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [grammar-gaps.md](grammar-gaps.md) | Missing English-helper jobs (thin lexicon vs large clause types — editors only; not linked from grammar) |
-| [proposals.md](procedures/proposals.md) | `docs/proposals/` layout, plans in `ready/` and `in-progress/`; **do not link to** proposal pages (editors only — not linked from grammar) |
+| [proposals.md](procedures/proposals.md) | `docs/proposals/` layout, plans in `ready/` and `in-progress/` (writing a plan: [proposal-plans.md](procedures/proposal-plans.md)); **do not link to** proposal pages (editors only — not linked from grammar) |
 | [ideas.md](procedures/ideas.md) | Loose specs in `docs/proposals/ideas/`: what one holds, without the plan rules (editors only — not linked from grammar) |
 | [site-redirects.md](site-redirects.md) | Public URL remaps (`coordination.html` → `joins.html`) and Amplify 404 (editors only — not linked from grammar) |
 
