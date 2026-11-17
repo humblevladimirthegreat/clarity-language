@@ -15,36 +15,46 @@ English *always*, *usually*, *every*, and *never* make a general claim. The [uni
 >
 > "Azozon usually walks."
 
-To say how you know the general claim, add a [channel](/evidentiality#evidentiality). On a clause with a universal fence or restrictor, the channel says how you know the whole generalization, not one case, and its [ending](/evidentiality#evidence-strength) says how much backs it.
+To say how you know the general claim, add a [channel](/evidentiality#evidentiality). Like any stance word, it covers what comes after it ([which covers which](/clause#which-covers-which)). Put first, before the universal fence or restrictor, it says how you know the whole generalization, and its [ending](/evidentiality#evidence-strength) says how much backs it.
 
-> `zazozon hual vowurol thubor.`
+> `thubor zazozon hual vowurol.`
 >
-> z-Azozon | h-always | v-walk | th-PATTERN.weak
+> th-PATTERN.weak | z-Azozon | h-always | v-walk
 >
-> "Azozon always walks, from the few cases I have seen."
+> "From the few cases I have seen, Azozon always walks."
 
-> `zual gwozeduyol veduyol thanal.`
+> `thanal zual gwozeduyol veduyol.`
 >
-> [z-everything | g-role-agent-teach] | v-teach | th-DEDUCED.strong
+> th-DEDUCED.strong | [z-everything | g-role-agent-teach] | v-teach
 >
 > "It follows that every teacher teaches." (every step could be shown)
 
-> `zalazun hal vabuvul thebal blezunal.`
+> `thebal blezunal zalazun hal vabuvul.`
 >
-> z-Alazun | h-never | v-punch | [th-REPORTED.strong | bl-soccer]
+> [th-REPORTED.strong | bl-soccer] | z-Alazun | h-never | v-punch
 >
-> "Alazun never punches, per the soccer rules."
+> "Per the soccer rules, Alazun never punches."
+
+After the fence or restrictor, the channel says how you know each case instead:
+
+> `zual gogozel vezuvel thugel.`
+>
+> [z-everything | g-cat] | v-sleep | th-LIVE.strong
+>
+> "Every cat, I see it sleeping." (you checked each one)
+
+The difference is what the claim rests on. A channel on each case says you checked every member one by one, so the claim is only as wide as your checking. A channel first says you are generalizing from a pattern, a rule, or a deduction, which reaches cases you have never seen.
 
 The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed `hual` with a weak channel, because you claim no exceptions on thin evidence. Open `huam` does not claim that: it leaves the exceptions open.
 
 | English | Fence or restrictor | Channel | Example |
 |---------|---------------------|---------|---------|
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zazozon huam vowurol.` |
-| *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zazozon hual vowurol thubor.` |
-| *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gwozeduyol veduyol thanal.` |
+| *always, as far as I have checked* | `hual` / `zual` | a weak channel, first | `thubor zazozon hual vowurol.` |
+| *it follows that every …* | `zual` | DEDUCED.strong `thanal`, first | `thanal zual gwozeduyol veduyol.` |
 | *by definition* | `zual` + `thehom blarl` | none | `zual geyel gwozeduyol thehom blarl zeyer veduyol.` |
-| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zalazun hal vabuvul thebal blezunal.` |
-| *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gogozel guzemel thubom.` |
+| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/`, first | `thebal blezunal zalazun hal vabuvul.` |
+| *cats are sleepy* (in general) | `zuam` + kind | any, or none | `thubom zuam gogozel guzemel.` |
 
 A [cause or condition](/causation) on a general claim says how things work. It holds for *each* member or occasion, the same way the verb does. Inside the sentence after `blarl`, resume the kind with `-r` (`zogozer`) to mean *that same one*: each cat, in turn.
 
@@ -62,7 +72,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 >
 > "By definition, a person is a teacher if and only if they teach."
 
-The channel stays on the main sentence and covers the whole generalization. Put it before the hinge, as with the [evidence clause](/evidentiality#evidence-clause): `zual gogozel vezuvel thubol thohem blarl …` is *going by a well-established pattern, every cat sleeps when …*.
+The channel stays on the main sentence. For the whole generalization, put it first, before the fence and the hinge, as with the [evidence clause](/evidentiality#evidence-clause): `thubol zual gogozel vezuvel thohem blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
 **Compare with:** a general claim you are *not* giving as today's report is [FORMER](/residue-and-former#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](/permission-consent#say-words) (`hwuvom`), not a law of how things work. *Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause.
 
@@ -94,20 +104,20 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Ageben {#advanced-english-to-ageben}
 
-**1.** *Cats sleep, as a rule, going by the pattern.*
+**1.** *Going by the pattern, cats sleep as a rule.*
 
 ::: details Show answer
-`zuam gogozel vezuvel thubom.`
+`thubom zuam gogozel vezuvel.`
 
-[z-everything.open | g-cat] | v-sleep | th-PATTERN
+th-PATTERN | [z-everything.open | g-cat] | v-sleep
 :::
 
-**2.** *Azozon always sits, going by the few cases I have seen.*
+**2.** *Going by the few cases I have seen, Azozon always sits.*
 
 ::: details Show answer
-`zazozon hual vehohel thubor.`
+`thubor zazozon hual vehohel.`
 
-z-Azozon | h-always | v-sit | th-PATTERN.weak
+th-PATTERN.weak | z-Azozon | h-always | v-sit
 :::
 
 **3.** *Alazun usually walks.*
@@ -136,12 +146,12 @@ z-Azozon | h-always.open | v-sit
 *Every cat sleeps when it is sleepy; that is how it works.*
 :::
 
-**3.** `zuam gogozel guzemel thubom.`
+**3.** `thubom zuam gogozel guzemel.`
 
 ::: details Show answer
-[z-everything.open | g-cat] | g-sleepy | th-PATTERN
+th-PATTERN | [z-everything.open | g-cat] | g-sleepy
 
-*Cats are sleepy, as a rule, going by the pattern.*
+*Going by the pattern, cats are sleepy as a rule.*
 :::
 
 #### Pick one {#advanced-pick-one}

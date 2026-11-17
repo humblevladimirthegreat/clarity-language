@@ -45,15 +45,15 @@ FORMER (`ela`) says a usual pattern held, but you are not claiming it holds now:
 >
 > "Azozon always used to sing." (no claim about now)
 
-> `zazozon hual vozuyel helam thevum.`
+> `thevum zazozon hual vozuyel helam.`
 >
-> z-Azozon | h-always | v-sing | h-FORMER | th-MEMORY
+> th-MEMORY | z-Azozon | h-always | v-sing | h-FORMER
 >
-> "Azozon always used to sing, as I remember."
+> "As I remember, Azozon always used to sing."
 
-> `zazozon hual vozuyel helam thubom blral.`
+> `thubom blral zazozon hual vozuyel helam.`
 >
-> z-Azozon | h-always | v-sing | h-FORMER | [th-PATTERN | bl-later]
+> [th-PATTERN | bl-later] | z-Azozon | h-always | v-sing | h-FORMER
 >
 > "Going by the pattern, always singing will be something Azozon used to do."
 
@@ -110,12 +110,12 @@ z-rabbit | th-LIVE | h-RESIDUE | v-departure
 z-Azozon | h-always | v-sing | h-FORMER
 :::
 
-**3.** *The rabbit always used to walk, as I remember.*
+**3.** *As I remember, the rabbit always used to walk.*
 
 ::: details Show answer
-`zarozel hual vowurol helam thevum.`
+`thevum zarozel hual vowurol helam.`
 
-z-rabbit | h-always | v-walk | h-FORMER | th-MEMORY
+th-MEMORY | z-rabbit | h-always | v-walk | h-FORMER
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}

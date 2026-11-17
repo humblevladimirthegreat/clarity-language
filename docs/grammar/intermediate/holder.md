@@ -135,7 +135,16 @@ The seam word is yours; the rest of the clause is the holder's. The word that ca
 | [Sake](/sakes) words and [feeling words](how-you-feel.md#feeling-word), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](/sakes#personal-possession)) | your belonging | the holder's belonging |
 | Another channel | how you know | how the holder knows |
+| A [standalone stance join](/verb-and-stance-joins#standalone-stance-joins) such as `thul` *no judgment* | how you take the claim | how the holder takes it |
 | The grounds after an inferring or pattern host's [`blarl`](evidentiality.md#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
+
+> `zazozon vowurol thul thevumazozon.`
+>
+> z-Azozon | v-walk | th-not | th-MEMORY-Azozon
+>
+> "As Azozon remembers it, Azozon walks, and Azozon takes no view on it."
+
+The no-judgment is Azozon's, like any other stance word under the holder. To take no view yourself, say it in a sentence of its own, with no holder.
 
 One place is different: a holder right before the [*although* hinge](/dependents#hinges) `thezem` gives the holder only the hinge's expectation, that the obstacle would have stopped the event. The event and the obstacle are still your claim.
 

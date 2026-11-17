@@ -37,8 +37,9 @@ describe("scope tables (interpreter.md#pair-table)", () => {
     assert.equal(keys.size, PAIR_ROWS.length);
   });
 
-  it("keeps the table's one unsettled pair, polarity × holder", () => {
-    assert.equal(pairRow("holder", "polarity")?.kind, "unsettled");
+  it("has no unsettled pair; polarity × holder is fixed by a rule, holder over", () => {
+    assert.deepEqual(PAIR_ROWS.filter((row) => row.kind === "unsettled"), []);
+    assert.equal(pairRow("holder", "polarity")?.kind, "rule");
   });
 
   it("marks adjective-reach and list-reach forms as not pairing", () => {
@@ -92,9 +93,24 @@ describe("scope order (clause.md#which-covers-which)", () => {
     ]);
   });
 
-  it("a channel covers a binder wherever it sits; MAY follows text order", () => {
-    const [channel] = scopeOf("[z-everything | g-dog] | v-walk | th-CLUES");
-    assert.deepEqual(orders(channel!), ["stance>binder usually-vs-must.md#generalization"]);
+  it("a channel and a binder follow text order: first the whole generalization, after it each case", () => {
+    const [whole] = scopeOf("th-PATTERN.strong | [z-everything | g-cat] | v-sleep");
+    assert.deepEqual(orders(whole!), ["stance>binder clause.md#which-covers-which"]);
+    assert.deepEqual(whole!.order[0]!.anchors, ["clause.md#which-covers-which", "usually-vs-must.md#generalization"]);
+    const [each] = scopeOf("[z-everything | g-cat] | v-sleep | th-LIVE.strong");
+    assert.deepEqual(orders(each!), ["binder>stance clause.md#which-covers-which"]);
+    const [may] = scopeOf("[z-everything | g-dog] | v-walk | th-MAY");
+    assert.deepEqual(orders(may!), ["binder>stance clause.md#which-covers-which"]);
+  });
+
+  it("a channel and a restrictor follow text order", () => {
+    const [whole] = scopeOf("th-PATTERN.weak | z-Azozon | h-always | v-walk");
+    assert.deepEqual(orders(whole!), ["stance>occasion clause.md#which-covers-which"]);
+    const [each] = scopeOf("z-Azozon | h-always | v-walk | th-PATTERN.weak");
+    assert.deepEqual(orders(each!), ["occasion>stance clause.md#which-covers-which"]);
+  });
+
+  it("MAY and a binder follow text order", () => {
     const [may] = scopeOf("[z-everything | g-dog] | v-walk | th-MAY");
     assert.deepEqual(orders(may!), ["binder>stance clause.md#which-covers-which"]);
   });
@@ -118,13 +134,19 @@ describe("scope order (clause.md#which-covers-which)", () => {
     assert.deepEqual(scope!.unordered, []);
   });
 
-  it("a holder covers its own stance by word shape; holder × polarity stays unordered", () => {
+  it("a holder covers its own stance by word shape and a standalone join by rule", () => {
     const [scope] = scopeOf("z-Alazun | th-REPORTED-Azozon | v-departure | th-not");
     assert.deepEqual(scope!.frames.map((f) => f.family), ["holder", "stance", "polarity"]);
     assert.deepEqual(
       scope!.order.map((o) => `${o.over.family}>${o.under.family} ${o.kind}`),
-      ["holder>stance wordShape", "stance>polarity rule"],
+      ["holder>stance wordShape", "holder>polarity rule", "stance>polarity rule"],
     );
-    assert.deepEqual(scope!.unordered.map((u) => u.frames.map((f) => f.family)), [["holder", "polarity"]]);
+    assert.deepEqual(scope!.unordered, []);
+  });
+
+  it("a standalone join before the holder's stance is still the holder's (holder.md#holder)", () => {
+    const [scope] = scopeOf("z-Azozon | v-walk | th-not | th-MEMORY-Azozon");
+    assert.ok(orders(scope!).includes("holder>polarity holder.md#holder"));
+    assert.deepEqual(scope!.unordered, []);
   });
 });

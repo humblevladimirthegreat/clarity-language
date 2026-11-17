@@ -158,6 +158,8 @@ const STANDALONE = "verb-and-stance-joins.md#standalone-stance-joins";
 /** A `/th/` word right before a `/th/` join is its item; with words between, it is a frame of its own. */
 const REACH = "verb-and-stance-joins.md#stance-join-reach";
 const CHANNEL: Partial<Record<FrameFamily, FrameMember[]>> = { stance: ["channel"] };
+/** A channel follows text order: first, how you know the whole generalization; after a fence or restrictor, each case. */
+const GENERALIZATION = "usually-vs-must.md#generalization";
 
 function rule(a: FrameFamily, b: FrameFamily, ...cases: PairCase[]): PairRow {
   return { pair: [a, b], kind: "rule", cases };
@@ -224,7 +226,8 @@ export const PAIR_ROWS: readonly PairRow[] = [
   { pair: ["attitude", "contrary"], kind: "commutes", cases: [commutes(...REMARKS)] },
   rule("attitude", "occasion", text()),
   rule("binder", "hinge", text("dependents.md#hinges")),
-  rule("binder", "stance", { ...over("stance", "usually-vs-must.md#generalization"), when: CHANNEL }, text()),
+  // Text order for every member: a channel first is about the whole generalization, after the binder about each case.
+  rule("binder", "stance", text(GENERALIZATION)),
   rule("binder", "holder", over("holder", HOLDER)),
   rule("binder", "intention", text()),
   rule("binder", "ability", text()),
@@ -257,7 +260,7 @@ export const PAIR_ROWS: readonly PairRow[] = [
   rule("stance", "notional", text(MAY_BEFORE)),
   rule("stance", "mirative", { ...commutes("mirative.md#mirative"), when: CHANNEL }, text(MAY_BEFORE)),
   { pair: ["stance", "contrary"], kind: "commutes", cases: [commutes("contrary-to.md#contrary-to-stance")] },
-  rule("stance", "occasion", { ...over("stance", "usually-vs-must.md#generalization"), when: CHANNEL }, text()),
+  rule("stance", "occasion", text(GENERALIZATION)),
   { pair: ["holder", "intention"], kind: "wordShape", cases: [over("holder", "want-and-decide.md#whose-intention")] },
   rule("holder", "ability", over("holder", HOLDER)),
   rule("holder", "phase", over("holder", HOLDER)),
@@ -311,7 +314,8 @@ export const PAIR_ROWS: readonly PairRow[] = [
   rule("polarity", "sake", text(STANDALONE, REACH)),
   rule("polarity", "attitude", text(STANDALONE, REACH)),
   rule("polarity", "binder", text()),
-  { pair: ["polarity", "holder"], kind: "unsettled", cases: [{ order: "unsettled", anchors: [HOLDER, REACH] }] },
+  // Under a holder a standalone stance join is the holder's, as a stance word is.
+  rule("polarity", "holder", over("holder", HOLDER)),
   rule("polarity", "phase", text(STANDALONE)),
   rule("polarity", "residue", text(STANDALONE)),
   rule("polarity", "notional", text(STANDALONE, REACH)),
