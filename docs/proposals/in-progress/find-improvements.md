@@ -1,6 +1,6 @@
 # find.mjs: search by kind, order, clause, and scope
 
-**Status:** READY, 2026-11-17. Decided 2026-11-17: scope queries live in find.mjs, over the resolve stage's record; readings-level queries (claims, roles, holders) stay with `structural-search.md`. Frame order is asked with two flags, `--over` and `--under`, not a compact operator. `--diff` is made fast with worker threads, not a parse cache, and gets the old parser from a `git archive` extract, not a worktree.
+**Status:** IN PROGRESS, started 2026-11-17. Done: F1. Decided 2026-11-17: scope queries live in find.mjs, over the resolve stage's record; readings-level queries (claims, roles, holders) stay with `structural-search.md`. Frame order is asked with two flags, `--over` and `--under`, not a compact operator. `--diff` gets the old parser from a `git archive` extract, not a worktree. Decided 2026-11-17, after F1 measured it: no worker threads. Each thread rebuilds the sentence parser (about 4 s of Chevrotain lookahead analysis) and concurrent builds slow each other, so 11 workers took 28 s against 8.5 s on one thread; `--diff` runs its two passes one after the other.
 
 **Related:** [find.mjs](../../../scripts/find.mjs), [src/find/](../../../src/find/) ([cli.ts](../../../src/find/cli.ts), [query.ts](../../../src/find/query.ts), [examples.ts](../../../src/find/examples.ts), [walk.ts](../../../src/find/walk.ts)), the bundle runner ([run-bundled.mjs](../../../scripts/lib/run-bundled.mjs)), the resolve stage's scope record ([scope.ts](../../../src/parse/scope.ts), [resolve.ts](../../../src/parse/resolve.ts)), the construction registry ([constructions.ts](../../../src/parse/constructions.ts)), [overlay kinds](../../meta/parser-pipeline.md#overlay-kinds), [data/lexicon-overlays.csv](../../../data/lexicon-overlays.csv), [searching by construction](../../meta/procedures/read-ageben.md#find).
 
@@ -23,13 +23,12 @@ Weighing a grammar change starts with one question: *which doc examples does thi
 - The 9b question, and questions like it, in one command line.
 - Every key, its values, and every construction ID discoverable from the CLI.
 - `--diff REV`: which examples a parser change flipped, as a measured cost before a scope decision and a check after it.
-- A full pass fast enough that two passes feel like a lookup.
 
 ## Non-goals
 
 - Queries over readings (claims, roles, holders): `structural-search.md`.
 - Comparing the docs at two revisions. `--diff` changes only the parser; both passes read the current docs.
-- A parse cache. Workers make it unnecessary; a cache's staleness rules are a bug surface for a saving of seconds.
+- A parse cache or worker threads. A cache's staleness rules are a bug surface for a saving of seconds; threads each rebuild the parser, which costs more than they save.
 
 ## Design
 
@@ -59,29 +58,16 @@ node scripts/find.mjs --same-clause --seq 'frame=binder|occasion' ... overlayKin
 - **`--diff REV`** runs two passes over the current docs, one with the parser at `REV` and one with the current parser, and lists each example whose orders differ: `file:line  text`, then `-` lines for pairs only at `REV` and `+` lines for pairs only now. A pair is compared as `over family/member raw@position > under family/member raw@position`, plus the unordered set, so the old record's object shape does not matter. Other flags filter which examples are compared, using the current parse. `--count` is the number of examples that differ; `--json` gives the pairs.
   - **The old parser comes from an archive.** `git archive REV src data package.json` is extracted to `tmp/find-rev/<sha>/`, given a `node_modules` link, and `src/parse/index.ts` is bundled to `<dir>/dist/parse-rev/index.bundle.mjs`, so it finds `data/` at `../..` and reads the old lexicon. The folder is removed in a `finally` and on SIGINT. Unlike a worktree, a killed run leaves nothing in `.git`.
   - **Both passes read the current docs.** A difference then comes from the parser alone, and no example has to be matched across edits. The rewrites a decision asks for are in the current text, so the same run checks they landed.
-  - **The current find drives both passes.** It loads only `parseWithTables` and `loadDefaultTables` from the old bundle, since find at `REV` may lack the scope output. When the old bundle lacks either export, or its result has no `resolve.scope`-shaped record, `--diff` exits 2 naming what is missing.
+  - **The current find drives both passes.** It loads only `parseWithTables` and `loadDefaultTables` from the old bundle, since find at `REV` may lack the scope output. `examples.ts` calls `parseWithTables` directly today; the pass takes the parse function and tables as parameters (`runPass(files, options, tables)` in `pass.ts` already takes the tables), so the old pass is the same code with the old bundle's pair. When the old bundle lacks either export, or its result has no `resolve.scope`-shaped record, `--diff` exits 2 naming what is missing.
   - **It stops at the scope record.** When `git cat-file -e REV:src/parse/scope.ts` fails, `REV` predates the record (it landed in ff43d91d), and `--diff` exits 2 saying so.
-
-### Worker threads
-
-A pass splits its files across `os.availableParallelism() - 1` worker threads, capped at the file count; `--jobs N` overrides, and `--jobs 1` runs inline with no worker (the path tests use). Files go to workers largest first. Query flags hold regexes and functions, which a worker cannot receive, so each worker gets the CLI arguments and builds its own queries. A worker scans whole files and returns plain records; the main thread merges them in walk order, so output is the same with any `--jobs`. Under `--write`, each file belongs to one worker, which writes it. The worker is bundled beside the CLI (`dist/find/worker.bundle.mjs`) and takes a parser module path, so `--diff`'s old pass is the same worker with the old bundle.
 
 ### Timing
 
-Measured 2026-11-17 with `--construction join.ua --count`, which parses every example: one pass takes about 9 s on one core (user time matches wall time; the machine has 12). Extracting and bundling the parser at `HEAD~1` took under a second (measured with a worktree, which the archive replaces). An uncached `--diff` is about 20 s on one thread; workers should bring each pass to a second or two.
+One pass with `--construction join.ua --count` takes about 9 s on one thread: about 4 s builds the sentence parser, the rest parses and scans. `--diff` runs two passes in sequence, about 18 s plus under a second to extract and bundle the old parser.
 
 ## Plan
 
-One phase, one orchestrator session, units F1 to F5 in order (F2 and F4 both edit `pass.ts` and `cli.ts`, so nothing runs in parallel). At the start, the orchestrator saves `npm run verify -- --baseline`. Each subagent unit gets a brief file built from its item text and the digest below.
-
-### F1. Worker threads
-
-**Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/find/cli.ts`, `src/find/pass.ts` (new), `src/find/worker.ts` (new), `src/find/*.test.ts`, `scripts/lib/run-bundled.mjs`, `scripts/find.mjs`.
-
-- Move the per-file body of the loop in `cli.ts` into `scanFile` in `pass.ts`, returning plain records (results, replacements, skips, reviews, parse errors). Query building moves to `pass.ts` too, from the argument list.
-- The pool, `--jobs`, ordering and `--write` ownership per [worker threads](#worker-threads). `runBundled` takes extra entry points and builds them with `outdir` into `dist/find/`; the CLI finds its worker with `new URL("./worker.bundle.mjs", import.meta.url)`.
-- **Check:** for a `--word`, a `--seq`, a `--construction`, and a `--map` dry run with `--json`, output with `--jobs 1` and with the default is byte-identical. Report the wall time of the full pass from [timing](#timing).
+One phase, one orchestrator session, units F1 to F5 in order (F2 and F4 both edit `pass.ts` and `cli.ts`, so nothing runs in parallel; F1, as cut down by the 2026-11-17 decision, is done). At the start, the orchestrator saves `npm run verify -- --baseline`. Each subagent unit gets a brief file built from its item text and the digest below.
 
 ### F2. Kind, frame, clause, and JSON
 
@@ -101,7 +87,7 @@ One phase, one orchestrator session, units F1 to F5 in order (F2 and F4 both edi
 ### F4. Scope queries and `--diff`
 
 **Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/find/*` (new files included), `scripts/lib/run-bundled.mjs`.
+**May edit:** `src/find/*` (new files included).
 
 - `--over`, `--under`, `--unordered`, and `--diff REV`, per [scope queries](#scope-queries). The diff logic is a pure function over two passes' records, tested with fixed records.
 - **Check:** `--diff HEAD` lists nothing. `--diff` on a commit before ff43d91d exits 2 with the message. Then, in a scratch copy of the tree (never the working tree), flip one pair row in `scope.ts`, commit it there, and confirm `--diff HEAD~1` from that copy lists the examples `--over`/`--under` finds for that pair. Report the wall time of `--diff HEAD`, and that `tmp/find-rev/` is empty afterward.
