@@ -36,6 +36,7 @@
     "unused-roots": "tsx scripts/unused-roots.ts",
     "test": "node scripts/test.mjs",
     "parse": "node scripts/parse.mjs",
+    "reading": "node scripts/reading.mjs",
     "find": "node scripts/find.mjs",
     "find-english": "node scripts/find-english.mjs",
     "pegs": "node scripts/pegs.mjs",
