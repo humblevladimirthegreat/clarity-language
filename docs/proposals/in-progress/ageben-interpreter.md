@@ -1,12 +1,12 @@
 # Ageben interpreter: one reader and one runtime for the tools that act on meaning
 
-**Status:** IN PROGRESS. Phase 1 (classification: R1a, R1b, and the pair-table audit) done 2026-11-13; its outcome is [interpreter.md](../../meta/interpreter.md). Phase 2 (the scope rule: S1 + S2, S3) done 2026-11-17: text order is scope order on [clause](/clause#which-covers-which), with its standing exceptions there and on the pages that own them; an attitude word, MIRATIVE and a sake word stay outside a question ([speaker attitude](/feelings#speaker-attitude), [it turns out](/mirative#mirative), [whose stake](/for-a-sake#whose-stake)); a binder keeps its reach on [joins](/joins#everything-ua) and takes its order from the clause rule; the resolve stage emits each clause's frame order ([scope.ts](../../../src/parse/scope.ts)). Phase 3 units J1–J3 done 2026-11-17, and the session cut after J3 as planned. Next: phase 3, unit R2, in a fresh session. Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it, and existing wizard code may be discarded where the new backend makes its shape wrong. Decided 2026-11-13 (open decisions 2–5, and 7 in part, as recommended): the matcher's inference switches are membership in a stated list and a compound matching on its head, plus universal to instance for closed `zual` only, each off by default and marked on its match (2); a role the question leaves out matches anything (3); the wizard's events live in the log, each with who witnessed it, and a character's knowledge is the part of the log they saw or were told (4); the session re-parses a window the host sets, measured in phase 5 (5); a pair that text order can give only one way keeps that order wherever there is a form for the other reading (7). Decided 2026-11-14: the loop never runs a command that carries a frame it has no rule for; such a turn is `beyond` ([the loop](#the-loop), unit H1). Decided 2026-11-14: what the composition constructs the grammar already has (a condition or a binder on a command, clause sequence, try and fallback) do when run is the interpreter's to define, once, as a bounded evaluator in the loop; that is later work outside this plan, sketched in `generic-ui.md`, and the non-goal now bans only new forms. Decided 2026-11-17 (open decisions 7–9): a `/th/` join takes only the stance words right before it, and the parse tree makes that a node, so the join's reach shows as brackets in the gloss (7a; a `/th/` word with other words between it and the join is a frame of its own, and both orders of a stance and a standalone join can then be said); under a holder, a standalone stance join is the holder's, as a stance word is (8a); the channel exception on `usually-vs-must.md#generalization` is retired, so a channel follows text order like any stance word: first, it is about the whole generalization; after a universal or restrictor, about each case (9b). Landed in phase 3 (J1, J2): the reach is on [stance joins](/verb-and-stance-joins#stance-join-reach), the holder rule on [holder](/holder#holder), and text order for a channel on [generalization](/usually-vs-must#generalization); the pair table has no unsettled row.
+**Status:** IN PROGRESS. Phases 1 (classification) and 2 (the scope rule) done; their outcome is [interpreter.md](../../meta/interpreter.md) and [scope.ts](../../../src/parse/scope.ts). Phase 3 done through R6 on 2026-11-17: the reader (`src/interpret/`), the `reading` CLI, the R4 audit (22/30 passed; all 8 failures since fixed), a word-coverage check (every word in exactly one place; 0 missing / 0 doubled across 1362 doc examples), and the parser records the reader needed (nested dependents, predicate before a hinge, respectively partners, tone marks, a force frame per act word, call and greeting frames, bodiless turns). The session cut after R6 for budget. **Next: phase 3, unit R7, in a fresh session; its brief is `tmp/briefs/ageben-interpreter-r7.md`.** Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it. Decided 2026-11-13 (open decisions 2–5, 7): the matcher's inference switches are membership in a stated list and a compound matching on its head, plus universal to instance for closed `zual` only, each off by default and marked on its match (2); a role the question leaves out matches anything (3); the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in phase 5 (5); a pair that text order can give only one way keeps that order wherever there is a form for the other reading (7). Decided 2026-11-14: the loop never runs a command that carries a frame it has no rule for (`beyond`); what composition constructs do when run is later work outside this plan (`generic-ui.md`). Decided 2026-11-17 and landed on grammar pages: decisions 7a, 8a, 9b ([stance joins](/verb-and-stance-joins#stance-join-reach), [holder](/holder#holder), [generalization](/usually-vs-must#generalization)); a phrase that brings in a new member follows text order everywhere, against binders and stance words, including `-l`/`-m` nouns, `-r` joins, and-lists and hook landmarks, but not fill-ask blanks, measure units or words inside a title ([joins](/joins#everything-ua), [which covers which](/clause#which-covers-which)); a call commutes with every frame ([vocative](/speech-moves#vocative)); a clause joined after the last nested dependent belongs to it ([nested dependents](/nested-dependents#nested-dependents)).
 
 **Related:** the parser's tree ([types.ts](../../../src/parse/types.ts)), [resolve.ts](../../../src/parse/resolve.ts), [ast-walk.ts](../../../src/parse/ast-walk.ts), the construction registry ([constructions.ts](../../../src/parse/constructions.ts)), [hook-jobs.ts](../../../src/parse/hook-jobs.ts), overlay kinds ([parser-pipeline.md](../../meta/parser-pipeline.md#overlay-kinds)), gloss to Ageben ([gloss-inverse.ts](../../../src/parse/gloss-inverse.ts), [glosses.md](../../meta/glosses.md#round-trip)), the wizard engine ([src/game/](../../../src/game/), [wizard-game.md](../../meta/wizard-game.md)), [read-ageben.md](../../meta/procedures/read-ageben.md). Consumers: `mind-map-view.md`, `ageben-spec.md`, `structural-search.md`, `agent-tool-permissions.md`, `wizard-adventure.md`.
 
 **Depends on:** none. **Order:** phase 3 lands before `mind-map-view.md` and before unit T1 of `ageben-spec.md`; phase 4 before that proposal's T2 and T4. Its pilot units (P1, P2) wait for nothing here.
 
-**Design authority:** *none* from here. Phase 3 units J1 and J2 (decisions 7a, 8a, 9b) have landed. Every remaining unit is tooling: no form or reading changes, and the parser's accept/reject behavior does not change. Where the reader needs a meaning the grammar pages do not state, that is an open decision for the user, never a rule written into code.
+**Design authority:** *none* from here. Every remaining unit is tooling: no form or reading changes unless the user decides one, and then the code lands in the same commit as the grammar edit that teaches it. Where the reader needs a meaning the grammar pages do not state, that is an open decision for the user, never a rule written into code.
 
 ## Design
 
@@ -25,57 +25,13 @@
 
 ### The reading
 
-```ts
-type Reading = {
-  id: ReadingId;                       // text id, sentence index, clause path
-  source: { utterance: number; body: number; clause: Clause };  // into the ParseResult; never a copy
-  frames: Frame[];                     // text order (see frame order)
-  order: FrameOrder[];                 // which frame scopes over which, each with the rule that says so
-  unordered: [Frame, Frame][];         // pairs that do not commute and that no rule orders
-  claim: Claim;
-  links: Link[];
-  unread: Unread[];                    // constructions the reader could not place
-};
+The shipped types in [src/interpret/types.ts](../../../src/interpret/types.ts) are the contract; no consumer adds its own fields. A `Reading` holds `id`, `source` (pointers into the `ParseResult`), `frames` (text order), `order` (copied from `ParseResult.resolve.scope`, each pair with its rule), `unordered`, `claim` (`verb`, `roles` by letter, `predicate`, `details`, `clauses` for a clause join), `links`, and `unread`. Terms are `thing`, `speaker`/`listener`, `pronoun`, `blank`, `literal`, `number`, `list` (with `shared`, `sharedDetails`, `bound`), `clause`, `quote`; any term may carry `details` and `frames` (a tone mark sits there). Frames carry `key`, `anchor`, `values` (a word's typed fields, `hook`, `stanceVowel`), `party`, `hosted`, `content`, `inner`. A binder, a new-member phrase, a cited span and a hooked join's bound each **host** their term, so every word has one place. Links: `anaphor`, `shared`, `pairing` (with `partners`), `grounds`, `carriedFrame` (typed, never filled until R7).
 
-type Claim = {
-  verb?: Term;
-  roles: Partial<Record<"z" | "d" | "b", Term>>;
-  predicate: Term[];                   // clause-level /ɡ/: what the subject is
-  details: Detail[];
-};
-
-type Frame = {
-  family: FrameFamily;
-  construction: string;                // registry id, so every frame names its grammar section
-  words: LexWord[];
-  values: Record<string, string>;      // the word's own typed fields, copied (a say word: reach, part, answer, ending)
-  party?: Term;                        // whose it is: a holder, the one with the say
-  content?: Reading[];                 // the clause it embeds: a condition, a quote
-};
-
-type Term =
-  | { kind: "thing"; head: LexWord; root: string; named: boolean; details: Detail[] }
-  | { kind: "speaker" | "listener"; word: LexWord }
-  | { kind: "pronoun"; word: LexWord; bind: AnaphorBind; antecedent?: Term }
-  | { kind: "blank"; word: LexWord }
-  | { kind: "literal"; word: LexWord; payload: string }
-  | { kind: "number"; word: LexWord; stem: NumberStem }
-  | { kind: "list"; join: LexWord; members: Term[]; shared: SharedRecord[]; values: Record<string, string> }
-  | { kind: "clause"; reading: Reading };
-```
-
-`Detail` has the shape of `Frame` without `party`. These types are the contract; unit R2 may add fields the classification shows are needed, and no consumer may add its own.
-
-The frame families, the classification table, the links, the scope statements, and the pair table are in [interpreter.md](../../meta/interpreter.md). Phase 1 added two link kinds the types above lack: a **grounds** link (a hinge's condition or a channel's grounds in the next sentence, `blarl`) and a **carried-frame** link (a channel, holder, NOTIONAL or dated offset carried over later bare sentences). R2 adds them to `Link`.
+Read readings with `npm run -s reading -- '<text>'` (`--json` for every field); `readParse`, `readText`, `allReadings` are the API ([read.ts](../../../src/interpret/read.ts)).
 
 ### The classification table
 
-One typed const, `CLASSES`, transcribed from the meta note `docs/meta/interpreter.md`. Each row has a key, a class, and the owning grammar anchor.
-
-- **Keys** are what the reader switches on: `Unit.kind`, `HookJob`, `LexReading`, overlay `kind`, `XFamily`, join series, and resolve record type.
-- **Classes:** `frame:<family>`, `detail:<kind>`, `label`, `link`, or `structure` (punctuation and other rows with no meaning of their own).
-- **Coverage test.** A function maps every id in `constructionRegistry()` to a table key. An id that maps to no key fails `npm test`. A construction added to the parser therefore cannot land until someone classifies it, which extends the rule that parser changes ship with grammar changes.
-- **Unknown is a frame.** A construction the reader meets with no row becomes an `unknown` frame and an `unread` entry. Showing too much clutters; hiding a stance misstates.
+`CLASSES` in [classes.ts](../../../src/interpret/classes.ts) is transcribed from the meta note; frame rows come from `FRAME_KEYS` in `scope.ts`. A coverage test fails `npm test` when a `constructionRegistry()` id has no row, and [coverage.ts](../../../src/interpret/coverage.ts) fails it when any doc example's word lands in no place or two (ratchet `coverage-ratchet.json`, now 0 / 0). A construction with no row becomes an `unknown` frame and an `unread` entry.
 
 ### Reader rules
 
@@ -173,53 +129,40 @@ A kept file may still be rewritten when the host interface makes its shape wrong
 
 | Path | Holds |
 |------|-------|
-| `src/parse/scope.ts` | frame keys, pair rows, and the order the resolve stage emits (phase 2, done) |
-| `src/interpret/types.ts`, `classes.ts`, `read.ts` | phase 3 |
+| `src/parse/scope.ts` | frame keys, pair rows, new-member and greeting tests, the order the resolve stage emits (done) |
+| `src/interpret/types.ts`, `classes.ts`, `read.ts`, `tones.ts`, `coverage.ts`, `cli.ts`, `browser.ts` | phase 3 (done) |
+| `scripts/reading.mjs`, npm script `reading` | print a text's readings (done); later `reading ask`, `reading log` |
 | `src/interpret/log.ts`, `match.ts`, `ask.ts`, `value.ts` | phase 4 |
 | `src/interpret/host.ts`, `run.ts`, `reply.ts` | phase 5 |
-| `src/interpret/browser.ts` | browser entry, as [browser.ts](../../../src/parse/browser.ts) is for the parser |
-| `scripts/reading.mjs`, npm script `reading` | print a text's readings; later `reading ask FILE QUERY` |
-| `docs/meta/interpreter.md` | terms, the table, reader rules, the host contract |
+| `docs/meta/interpreter.md` | terms, the table, links, pair table, reader rules; the host contract (C1) |
 
 ## Implementation plan
 
-Five phases, each one orchestrator session, run through subagents. Phases 1 (classification) and 2 (the scope rule) are done. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
+Phases 1, 2, and phase 3 through R6 are done. Each remaining phase is one orchestrator session, run through subagents; at its end, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate).
 
-### Phase 3: the reader
+### Phase 3 (rest): carried frames and a re-audit
 
-Order: R2 → R3 → R4, in sequence. R4 failures go to a fresh R2-style subagent with the failing sentences and the diff stat. `mind-map-view.md` and T1 of `ageben-spec.md` may start once this phase is committed.
+Order: R7 → R8. R8 failures go to a fresh fixer with the failing sentences and the diff stat. `mind-map-view.md` and T1 of `ageben-spec.md` may start once this phase is committed.
 
-#### R2: the reader
+#### R7: the carried-frame record
 
 **Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/interpret/`**.
+**May edit:** `src/parse/**` (resolve stage and its types), `src/interpret/**`, `docs/meta/interpreter.md`, `docs/meta/parser-pipeline.md`.
+**Brief:** `tmp/briefs/ageben-interpreter-r7.md` (gitignored; if it is missing, build it from this item, the digest, and the Terms, The reading and Reader rules sections).
 
-- `src/interpret/types.ts`, `classes.ts` (transcribed from the note; the frame rows import `src/parse/scope.ts` rather than copy it), `read.ts`, `browser.ts`, tests.
-- `order` is copied from the resolve stage's record; the grounds and carried-frame links are added to `Link`.
-- **The record (phase 2).** `ParseResult.resolve.scope?: ClauseScope[]`, present only when some clause has a whole-clause frame; types in `src/parse/scope.ts`. `ClauseScope = { clause; utteranceIndex; frames: ScopeFrame[] (text order); order: ScopeOrder[]; unordered: ScopeUnordered[] }`, one per body clause, clause-join member (each member also gets the turn's edge frames: act word, interjections) and dependent (no edge frames). `ScopeFrame = { family; key; word: LexWord; member?: "channel" | "may" | "number" | "residue" | "former"; holderHost?: true }`; a holder word gives two frames, the holder and its host stance or NOTIONAL (`holderHost`), holder over host by word shape. `ScopeOrder = { over; under; kind: "rule" | "wordShape"; anchors }`; `ScopeUnordered = { frames: [a, b]; anchors }`; a pair that commutes records nothing. Data: `FRAME_KEYS` (key → family, reach, anchor) and `PAIR_ROWS` (the table's rows, split by member where the note does, plus binder × binder and intention × intention), with four sub-keys that are not literal table keys: `lexReading:sake:g`, `lexReading:restrictor:w`, `lexReading:number:th`, `joinSeries:u:standalone`. `resolve(result, tables?)` takes the tables to find a holder's host.
-- **Frames the record leaves out.** It emits no frame for tone marks (`enforceTones` strips them before the tree), vocatives, greetings, `reading:frequencyScale`, `bareQuestion`, `feelingStake`, or the binder phrase that brings in a new member (no classification key names it); force comes only from the act word, and a `/th/` join with stance words right before it is their list's join and never pairs (J1 made that list a node: the join word's `HUnit.closes` holds the word positions of the stance words it closes, empty when the join is standalone, set by `markStanceJoins` in [stance-joins.ts](../../../src/parse/stance-joins.ts); read it from the tree). Where the note classes one of these as a whole-clause frame, report it; the fix is a row in `scope.ts`, not a walker in the reader.
-- Tests:
-  - one fixture per frame family and one per pair kind, written as morph gloss and spelled by gloss-inverse
-  - the coverage test against `constructionRegistry()` (the note's *Construction ids* section is its list; `tmp/r1a-note.ts` generated it)
-  - a test that every two families that can share a clause have a pair-table row
-  - a sweep that reads every doc example ([llm-examples.ts](../../../src/parse/llm-examples.ts)) without throwing and writes to `tmp/` the `unread` counts by construction id and the doc examples that hold a pair still unsettled, by pair
+- A channel, a holder, NOTIONAL and a dated offset carry over later bare sentences ([sentence linkers](/sentence-linkers), [evidentiality](/evidentiality), [dated channel](/dated-channel), [holder](/holder), [as if](/notional)). The parser keeps no record of it, so `carriedFrame` links are never filled and phase 4's log would store reported or imagined sentences as plain fact.
+- From the pages, list per kind what starts, what counts as bare, and what ends the carry; anything unsettled is an open decision.
+- A resolve-stage record beside `resolve.scope`: per sentence body, the frames it inherits, each pointing at its source word. The reader fills one `carriedFrame` link per inherited frame (never copying it into `frames`).
+- Fixtures per kind (carry, ended by a new frame, ended by a turn change if the pages say so); a sweep count in `tmp/interpret-sweep/carried.json`.
 
-#### R3: the `reading` CLI
-
-**Agent:** `proposal-worker`, `sonnet`, `medium`.
-**May edit:** `scripts/reading.mjs`, `src/interpret/cli.ts`, `package.json`, `docs/meta/procedures/read-ageben.md`.
-
-- `scripts/reading.mjs` and the `reading` npm script: compact text by default, `--json`.
-- One paragraph in [read-ageben.md](../../meta/procedures/read-ageben.md) saying when to use it.
-
-#### R4: reader audit
+#### R8: reader re-audit
 
 **Agent:** `proposal-worker` (fresh), `opus`, `high`.
 **May edit:** `src/interpret/read.test.ts`.
 
-- 30 doc examples spread across the frame families (`node scripts/find.mjs` by construction). Compare each reading with the sentence's `--llm-prompt` meaning.
-- Fail any reading where something that changes truth, force, or owner is a detail, where a frame order is claimed with no rule behind it, where a pair the table calls *commutes* gives two different meanings, or where a stated field is missing.
-- Report failures; edit only test fixtures.
+- 30 doc examples, chosen fresh with `node scripts/find.mjs`: about half from constructions changed since R4 (new-member phrases, hooked-join bounds, fill-ask blanks, verb-list items, respectively, nested dependents, tone marks, carried frames, calls), half spread across the other frame families. Include at least 3 of the 13 examples R6e2 left unchanged (intermediate pages; `tmp/interpret-sweep/worklist-r6e2.json` if present).
+- Compare each reading (`npm run -s reading`) with the sentence's `--llm-prompt` meaning. Fail a reading where something that changes truth, force, or owner is a detail; where an order has no rule; where a pair called *commutes* gives two meanings; where a stated field is missing.
+- Report failures as one line each (Ageben, morph gloss, doc file:line, which test, what the reading should hold, anchor); failing fixtures go in as `todo`.
 
 ### Phase 4: log and matcher
 
@@ -232,6 +175,7 @@ Order: M1 → M2 → M3 → M4. T2 and T4 of `ageben-spec.md` may start once thi
 
 - `log.ts`, `match.ts`, `ask.ts`, tests.
 - Tests include the five-sentence *who paid Ana?* example from `structural-search.md`, written as morph gloss: four matches under four frame paths, and no match for the reversed roles.
+- Builds on phase 3: frame paths include `carriedFrame` links (R7), a `slot:newMember` frame is a binder-family frame on the path, a `pairing` link's `partners` pair list members, and a term's `frames` hold tone marks. A reading's `unordered` is non-empty only for two rest-of-sentence tone marks (open decision 10).
 
 #### M2: values and switches
 
@@ -314,6 +258,8 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 > - A **reading** is one clause: a **claim** (verb, roles, predicate, details), its **frames**, its **links**, and pointers back into the parse tree. A **frame** changes truth, force, or whose claim it is. A **detail** narrows without changing. A **label** is part of a word's own wording. The families, the table, the links, and the pair table are in `docs/meta/interpreter.md`; read it by outline and slice.
 > - Classify from the owning grammar page, never from memory, and cite its anchor on the row. Work out what a sample means with `node scripts/parse.mjs --llm-prompt`; check forms with `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …` in one batched call.
 > - The reader copies the tree. It never re-derives a reading, binds a pronoun, defaults a missing field, or claims a scope order no rule states.
+> - See a text's readings with `npm run -s reading -- '<text>'` (`--json` for every field). The shipped types are `src/interpret/types.ts`.
+> - Coverage: every word of a doc example lands in exactly one place in its readings (`src/interpret/coverage.ts`); the ratchet `src/interpret/coverage-ratchet.json` is 0 / 0 and only goes down. A frame that keeps a word hosts the term built from it.
 > - Scope rule (decided 2026-11-13): where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later. The grammar states it (`clause.md#which-covers-which`) and the resolve stage emits it (`ParseResult.resolve.scope`, `src/parse/scope.ts`); the reader copies the emitted order. A pair still unsettled goes in the reading's `unordered`, and no reader, consumer, or host ever picks an order for it.
 > - A meaning the grammar pages do not state is an open decision: log the sentence, the options, and a recommendation, skip the item, and go on.
 > - A command runs only when every frame on it, other than its force, is on the loop's pass-through list. Anything else is `beyond`. No host widens the list or runs a framed command itself.
@@ -338,11 +284,14 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 
 ### Commits
 
-One per unit after its gate, and one per phase for the consolidated proposal; the last of those carries the `AGENTS.md` rows and deletes this file. Phase 1 made five, phase 2 three, phase 3's J units four (J1 hand work, its gloss rewrite, J2, J3) plus the consolidation. Expected from here: phase 3 four (R2, R3, R4, consolidation), phase 4 five, phase 5 six. Messages start `ageben-interpreter R2:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
+One per unit after its gate, and one per phase for the consolidated proposal; the last of those carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 3 so far made sixteen, plus this consolidation. Expected from here: phase 3 three (R7, R8, consolidation; plus one per R8 fix), phase 4 five, phase 5 six. Messages start `ageben-interpreter R7:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
 
 ## Open decisions
 
-None open. Decisions 1–9 are decided; see Status. Numbers stay stable because the body cites them.
+Decisions 1–9 are decided (see Status); numbers stay stable because the body cites them.
+
+10. **Two rest-of-sentence tone marks in one clause** (`! zazozon % dodozel vayebel.`). [tone-marks.md](/tone-marks) states no order; the reader puts the pair in `unordered` (logged on `interpreter.md#attitude`). Options: (a) they commute; (b) text order, the earlier covers the later; (c) the later mark overrides the earlier from its place on, as a word's own mark does. **Recommendation:** (c), stated on the page; the pair then commutes, because the two marks color disjoint stretches.
+11. **A free-standing tone mark mid-sentence** (`zazozon ! dodozel vayebel.`) colors only the words after it. The reader emits it as a clause frame at its position, so text order makes it cover only later frames. [tone-marks.md](/tone-marks) does not say whether it frames the clause from there or only colors those words. Options: (a) a clause frame at its position (today); (b) a span tone on the words after it, with no clause reach. **Recommendation:** (b): the page treats a mark as coloring the words it precedes, and (b) needs no new reach rule; settle it with (10).
 
 ## Background
 
