@@ -11,6 +11,7 @@
  * item, and still covers the whole claim by its own rule; at the edge of the run it stays outside. Only a list of two or more verbs has items to tell apart.
  */
 import { isClauseAdverb } from "./classify.js";
+import { markStanceJoins } from "./stance-joins.js";
 import type { Clause, IslandUnit, LexWord, Unit, VpCoord } from "./types.js";
 
 function isNp(unit: Unit | undefined, level: "z" | "d" | "b"): boolean {
@@ -102,6 +103,8 @@ export function scopeVerbItems(units: Unit[]): Unit[] {
 
 /** {@link scopeVerbItems} over a clause and the sentence its stand-in opens. */
 export function scopeClause(clause: Clause): Clause {
+  // The stance join node is read off the flat list, before any word moves into a verb item.
+  markStanceJoins(clause.units);
   const units = scopeVerbItems(clause.units);
   if (clause.dependent) scopeClause(clause.dependent.clause);
   clause.units = units;
@@ -110,6 +113,7 @@ export function scopeClause(clause: Clause): Clause {
 
 /** {@link scopeVerbItems} over an island's units. */
 export function scopeIsland(island: IslandUnit): IslandUnit {
+  markStanceJoins(island.units);
   island.units = scopeVerbItems(island.units);
   return island;
 }

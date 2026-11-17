@@ -239,6 +239,24 @@ Outside a question, only the single-vowel `-r` cells are words. Under a question
 
 **Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](/fill-ask-jobs#why).
 
+#### How far a stance join reaches {#stance-join-reach}
+
+A `/th/` join takes only the stance words right before it, with nothing between them and the join. A hinge keeps its `bl-` word, which belongs to the hinge (`thahum blerulal thul`). A stance word with other words between it and the join is a stance of its own, and the join after it is standalone. So where MAY sits changes what the join works on:
+
+> `zazozon vowurol thomam thul.`
+>
+> z-Azozon | v-walk | [th-MAY | th-not]
+>
+> "Azozon walks, and not just maybe."
+
+> `thomam zazozon vowurol thul.`
+>
+> th-MAY | z-Azozon | v-walk | th-not
+>
+> "Azozon may walk. No judgment."
+
+In the first, the join denies MAY, the way `thul` denies *because of the rain* above. In the second, MAY and the standalone join each work on the whole claim, and the earlier covers the later ([which covers which](/clause#which-covers-which)).
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.

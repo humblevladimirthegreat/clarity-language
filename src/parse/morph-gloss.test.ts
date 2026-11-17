@@ -646,9 +646,20 @@ describe("morphGlossLine — th stance letter", () => {
 });
 
 describe("morphGlossLine — stance joins and emphatic prohibition", () => {
-  it("glosses /th/ join fences", () => {
-    expectLine("zazozon vowurol thevum thul.", "z-Azozon | v-walk | th-MEMORY | th-not");
-    expectLine("zazozon vowurol thahum blalazun thul.", "z-Azozon | v-walk | [th-because | bl-Alazun] | th-not");
+  it("brackets a /th/ join with the stance words right before it (verb-and-stance-joins.md#stance-join-reach)", () => {
+    expectLine("zazozon vowurol thevum thul.", "z-Azozon | v-walk | [th-MEMORY | th-not]");
+    expectLine("zazozon vowurol thahum blalazun thul.", "z-Azozon | v-walk | [[th-because | bl-Alazun] | th-not]");
+    expectLine("zazozon vowurol thahum thul blarl zalazun veruvol.", "z-Azozon | v-walk | [th-because | th-not] | bl-that-clause | z-Alazun | v-run");
+  });
+
+  it("leaves a standalone /th/ join bare, and a stance word with words between it and the join outside", () => {
+    expectLine("zazozon vowurol thul.", "z-Azozon | v-walk | th-not");
+    expectLine("thomam zazozon vowurol thul.", "th-MAY | z-Azozon | v-walk | th-not");
+    expectLine("zazozon vowurol thomam hahunom thul.", "z-Azozon | v-walk | th-MAY | h-intensity | th-not");
+  });
+
+  it("nests an earlier stance fence inside a later one", () => {
+    expectLine("zazozon vowurol thomam thal thahum thul.", "z-Azozon | v-walk | [[th-MAY | th-and] | th-because | th-not]");
   });
 
   it("glosses yul yul", () => {

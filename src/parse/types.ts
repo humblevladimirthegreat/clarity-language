@@ -274,7 +274,7 @@ export type Hosted = {
   adjs?: GPackage[];
   /** `barl` after an evidential's offset: the next sentence is the grounds (evidentiality.md#evidence-clause). */
   grounds?: LexWord;
-  /** A stance join sits between the host and its `barl` (`thoyem thul barl`), closing the stance words before it. */
+  /** A stance join sits between the host and its `barl` (`thoyem thul barl`), closing the stance words before it: the join's {@link HUnit.closes} holds this host's position. */
   afterJoin?: true;
 };
 
@@ -313,6 +313,13 @@ export type HUnit = {
   word: LexWord;
   modifiers: LexWord[];
   hosted?: Hosted;
+  /**
+   * On a `/th/` join word only, the stance join node: the word positions (`at`) of the stance words right before it that
+   * it closes, in text order, with nothing between (verb-and-stance-joins.md#stance-join-reach). An earlier stance join
+   * in the run stands for its whole fence and ends the run. Empty: a standalone join (verb-and-stance-joins.md#standalone-stance-joins).
+   * Positions, not the units, so the tree stays a tree: each unit sits once, in its unit list.
+   */
+  closes?: number[];
 };
 
 /**

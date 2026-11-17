@@ -59,6 +59,18 @@ describe("scope order (clause.md#which-covers-which)", () => {
     ]);
   });
 
+  it("a standalone join and a stance frame pair by text order, both ways (verb-and-stance-joins.md#stance-join-reach)", () => {
+    const [before] = scopeOf("th-MAY | z-Azozon | v-walk | th-not");
+    assert.deepEqual(orders(before!), ["stance>polarity clause.md#which-covers-which"]);
+    const [after] = scopeOf("th-not | z-Azozon | v-walk | th-MAY");
+    assert.deepEqual(orders(after!), ["polarity>stance clause.md#which-covers-which"]);
+  });
+
+  it("a join right after a stance word is that word's list, not a frame", () => {
+    const [scope] = scopeOf("z-Azozon | v-walk | [th-MAY | th-not]");
+    assert.deepEqual(scope!.frames.map((f) => f.family), ["stance"]);
+  });
+
   it("text order the other way round", () => {
     const [scope] = scopeOf("th-not | z-Azozon | h-always | v-walk");
     assert.deepEqual(orders(scope!), ["polarity>occasion clause.md#which-covers-which"]);

@@ -11,7 +11,7 @@
  * row states one, nothing where the pair commutes, and an `unordered` entry where the pair is still unsettled.
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
-import type { BodyClause, Clause, LeftEdge, LexWord, Unit, Utterance } from "./types.js";
+import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, Utterance } from "./types.js";
 
 export type FrameFamily =
   | "force"
@@ -155,6 +155,8 @@ const REMARKS = ["mirative.md#mirative", "feelings.md#speaker-attitude", "for-a-
 const ACT_EDGE = "speech-moves.md#speech-act-statement-question-command";
 const HINGE_LAST = ["dependents.md#hinges", "stand-in-vowels.md#stand-in-back"];
 const STANDALONE = "verb-and-stance-joins.md#standalone-stance-joins";
+/** A `/th/` word right before a `/th/` join is its item; with words between, it is a frame of its own. */
+const REACH = "verb-and-stance-joins.md#stance-join-reach";
 const CHANNEL: Partial<Record<FrameFamily, FrameMember[]>> = { stance: ["channel"] };
 
 function rule(a: FrameFamily, b: FrameFamily, ...cases: PairCase[]): PairRow {
@@ -301,20 +303,20 @@ export const PAIR_ROWS: readonly PairRow[] = [
   rule("contrary", "occasion", text()),
   rule("stance", "stance", text(MAY_BEFORE)),
   rule("polarity", "force", over("force", ACT_EDGE)),
-  rule("polarity", "stance", text(STANDALONE)),
-  rule("polarity", "intention", text(STANDALONE)),
-  rule("polarity", "hinge", text(...HINGE_LAST, STANDALONE)),
+  rule("polarity", "stance", text(STANDALONE, REACH)),
+  rule("polarity", "intention", text(STANDALONE, REACH)),
+  rule("polarity", "hinge", text(...HINGE_LAST, STANDALONE, REACH)),
   rule("polarity", "ability", text(STANDALONE)),
   rule("polarity", "say", text(STANDALONE)),
-  rule("polarity", "sake", text(STANDALONE)),
-  rule("polarity", "attitude", text(STANDALONE)),
+  rule("polarity", "sake", text(STANDALONE, REACH)),
+  rule("polarity", "attitude", text(STANDALONE, REACH)),
   rule("polarity", "binder", text()),
-  { pair: ["polarity", "holder"], kind: "unsettled", cases: [{ order: "unsettled", anchors: [HOLDER] }] },
+  { pair: ["polarity", "holder"], kind: "unsettled", cases: [{ order: "unsettled", anchors: [HOLDER, REACH] }] },
   rule("polarity", "phase", text(STANDALONE)),
   rule("polarity", "residue", text(STANDALONE)),
-  rule("polarity", "notional", text(STANDALONE)),
-  rule("polarity", "mirative", text(STANDALONE)),
-  rule("polarity", "contrary", text(STANDALONE)),
+  rule("polarity", "notional", text(STANDALONE, REACH)),
+  rule("polarity", "mirative", text(STANDALONE, REACH)),
+  rule("polarity", "contrary", text(STANDALONE, REACH)),
   rule("polarity", "occasion", text(STANDALONE)),
   // Same-family pairs from the scope statements.
   rule("binder", "binder", text("joins.md#everything-ua")),
@@ -404,18 +406,16 @@ function holderFrames(word: LexWord, tables: ClassifyTables | undefined): ScopeF
   return host ? [holder, { ...host, holderHost: true }] : [holder];
 }
 
-function isStanceJoinItem(unit: Unit | undefined): boolean {
-  return unit?.kind === "h" && unit.unit.word.pos === "th";
-}
-
 /** Whole-clause frames carried by one `/h/` or `/th/` word. */
-function wordFrames(word: LexWord, previous: Unit | undefined, tables: ClassifyTables | undefined): ScopeFrame[] {
+function wordFrames(unit: HUnit, tables: ClassifyTables | undefined): ScopeFrame[] {
+  const word = unit.word;
   const family = word.family;
   const pos = word.pos ?? "";
   if (family.kind === "say") return [frame("wordFamily:say", word)].filter((f) => f !== undefined);
   if (family.kind === "joinMarker" && word.reading === "join") {
-    // A standalone `/th/` `u` join has no stance words before it and pairs; after a `/th/` word it is that list's join.
-    if (pos !== "th" || family.series !== "u" || isStanceJoinItem(previous)) return [];
+    // A standalone `/th/` `u` join closes no stance words and pairs; one that closes stance words is that list's join
+    // (the stance join node, verb-and-stance-joins.md#stance-join-reach).
+    if (pos !== "th" || family.series !== "u" || unit.closes?.length !== 0) return [];
     return [frame("joinSeries:u:standalone", word)].filter((f) => f !== undefined);
   }
   if (family.kind === "x" && family.xFamily === "holder") return holderFrames(word, tables);
@@ -445,8 +445,8 @@ function wordFrames(word: LexWord, previous: Unit | undefined, tables: ClassifyT
 
 function clauseFrames(clause: Clause, tables: ClassifyTables | undefined): ScopeFrame[] {
   const frames: ScopeFrame[] = [];
-  clause.units.forEach((unit, i) => {
-    if (unit.kind === "h") frames.push(...wordFrames(unit.unit.word, clause.units[i - 1], tables));
+  clause.units.forEach((unit) => {
+    if (unit.kind === "h") frames.push(...wordFrames(unit.unit, tables));
     if (unit.kind === "hook" && unit.job === "zone") {
       const contrary = frame("hookJob:zone", unit.word);
       if (contrary) frames.push(contrary);

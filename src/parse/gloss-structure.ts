@@ -220,6 +220,21 @@ function attachLeft(out: GlossNode[], kinds: NodeKind[], pair: GlossNode): void 
   kinds.push(kind);
 }
 
+/**
+ * How many units right before `units[k]` its stance join closes: its {@link HUnit.closes}, when they are those units
+ * in this list. 0 for any other unit, a standalone join, or a run split across lists.
+ */
+function stanceJoinItems(units: Unit[], k: number): number {
+  const unit = units[k]!;
+  const closes = unit.kind === "h" ? unit.unit.closes : undefined;
+  if (!closes?.length || k < closes.length) return 0;
+  const same = closes.every((item, j) => {
+    const before = units[k - closes.length + j]!;
+    return before.kind === "h" && before.unit.word.at === item;
+  });
+  return same ? closes.length : 0;
+}
+
 /** Clause units, then the sentence a stand-in opens. */
 function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
   const out = unitListNodes(cur, clause.units);
@@ -240,9 +255,21 @@ function unitListNodes(cur: Cursor, units: Unit[]): GlossNode[] {
     out.push(node);
     kinds.push(kind);
   };
+  // Where each unit's nodes start in `out`; a stance join's fence starts where its first item did.
+  const starts: number[] = [];
   for (let k = 0; k < units.length; k++) {
     const unit = units[k]!;
     const here = nodes[k]!;
+    starts[k] = out.length;
+    const items = unit.kind === "h" ? stanceJoinItems(units, k) : 0;
+    if (items > 0) {
+      // The stance join node: `[[th-because | bl-rain] | th-not]` (verb-and-stance-joins.md#stance-join-reach).
+      starts[k] = starts[k - items]!;
+      const fence = group([...out.splice(starts[k]!), ...here]);
+      kinds.splice(starts[k]!);
+      if (fence) push(fence);
+      continue;
+    }
     if (isHookUnit(unit) && unit.word.ending === "n" && out.length > 0 && nodes[k + 1]?.length) {
       const prev = out.pop()!;
       kinds.pop();

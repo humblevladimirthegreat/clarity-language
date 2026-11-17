@@ -274,7 +274,7 @@ Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase 
 ### Phrase brackets
 <a id="phrase-brackets"></a>
 
-The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/y/`.
+The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/y/`. A standalone `/th/` join (one with no stance words right before it, [stance join reach](/verb-and-stance-joins#stance-join-reach)) is one of these and stays bare.
 
 A dependent sits next to the word it modifies, in Ageben order. Nesting shows attachment:
 
@@ -288,6 +288,7 @@ A dependent sits next to the word it modifies, in Ageben order. Nesting shows at
 | Adjective on the extra noun | `[z-dog \| [g-IDENTITY \| [b-Azozon \| g-tall]]]` |
 | Join fence (join last) | `[d-tea \| d-coffee \| d-or]` |
 | Nested fences | `[[d-tea \| d-coffee \| d-or] \| d-water \| d-and]` |
+| Stance join: the stance words right before a `/th/` join, then the join | `[[th-because \| bl-rain] \| th-not]` |
 | Shared `/ɡ/` after a join | `[z-Azozon \| z-Alazun \| z-and \| g-sleepy]` |
 
 A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase English with no glyphs. When the package has a role letter, it is the prefix: `d-CITE[…]`.
