@@ -1,55 +1,71 @@
 # Parser startup optimization
 
-**Status:** IDEA. items 1, 4, 5 **shipped** (2026-09-25); item 3 (warm dev-server endpoint) is the **next candidate**, deferred; items 2 and 6 **not worth doing** at current numbers.
+**Status:** IDEA, written 2026-09-25, revised 2026-11-17. Shipped 2026-09-25: the `SpanAtom` category token, batch input, and the precompiled CLI (`scripts/parse.mjs`; usage in [reading Ageben](../../meta/procedures/read-ageben.md)).
 
-Editors only. Follow-ups after lowering `maxLookahead` from 3 to 2 in `src/parse/sentence-parser.ts` (2026-09-25).
+**Related:** [sentence-parser.ts](../../../src/parse/sentence-parser.ts), [scripts/parse.mjs](../../../scripts/parse.mjs), [run-bundled.mjs](../../../scripts/lib/run-bundled.mjs), [src/find/pass.ts](../../../src/find/pass.ts), [VitePress config](../../grammar/.vitepress/config.ts).
 
-## Where the time goes (measured 2026-09-25)
+## Problem
 
-| Step | Time |
-|------|------|
-| Chevrotain `performSelfAnalysis()` | ~55 ms |
-| Import of `src/parse/index.ts` (parser + lexicon CSVs) | ~200 ms |
-| First parse | ~15 ms |
-| `npm` startup overhead | ~250 ms |
-| `tsx` startup + on-the-fly TS compile (before item 5) | ~1.5 s |
+Every process that parses a sentence first builds the Chevrotain sentence parser, and since the switch to ALL(*) lookahead (2026-10-08) that build takes 4–5 s; it was about 55 ms before. So:
 
-Parser self-analysis is no longer the bottleneck. Before this work, `npm run parse` took ~2.0 s per call, and nearly all of that was process startup and `tsx`, not the grammar.
+- one `node scripts/parse.mjs` call takes 4.6 s (0.57 s in September), even for one word
+- a find pass takes about 9 s, half of it the build
+- every test file and build check that parses pays it again
 
-## 1. Replace the any-token alternation in `spanUnit` (shipped, no speedup)
+Worker threads do not help: each thread rebuilds the parser, and concurrent builds slow each other. In a trial on find (2026-11-17, commit message `find-improvements F1`), 11 workers took 28 s against 8.5 s on one thread, so find dropped them.
 
-The atomic span branch used `OR2` with one alternative per token type (`ANY_TOKEN_ALTS`). Now every token type except `IslandEdge` / `Period` / `QMark` / `Bang` carries the category token `SpanAtom` (`src/parse/tokens.ts`), and the branch is one `CONSUME5(SpanAtom, { LABEL: "atom" })`. The CST label is unchanged; all tests pass.
+## Sketch
 
-Profiled before and after: `performSelfAnalysis` stayed at 50–59 ms, and module import at ~195 ms. The change is kept only because it is simpler code.
+### A. A cheaper build (helps every process)
 
-## 2. Avoid up-front lookahead analysis (not worth doing)
+Where the build's 4.8 s goes is under [measurements](#measurements-2026-11-17). Two hot spots, each about 2 s:
 
-Options were `chevrotain-allstar` (lazy ALL(\*) lookahead) or a disk cache of LL(k) paths through a custom `lookaheadStrategy`. Either could save at most the ~55 ms of `performSelfAnalysis` per process. Revisit only if grammar growth pushes self-analysis back into seconds.
+- **`chevrotain-allstar`'s `firstSet`** takes 1.7 s on its own. That much time in one function suggests it recomputes rather than caches. Check a newer allstar release first. Failing that, memoize it through a subclass of the strategy or a `patch-package` patch.
+- **Chevrotain's own LL(k) path building** (`possiblePathsFrom`, `remainingPathWith`, `lookAheadSequenceFromAlternatives`) still runs under the ALL(*) strategy, probably for its LL(1) fast path and `optionalHasFollowConflict`. Find out which of it the strategy needs.
+- **Fallback: cache lookahead on disk**, keyed by a hash of the grammar, through a custom `lookaheadStrategy`. allstar's state is an ATN plus a DFA it fills lazily, and whether that serializes is unknown.
 
-## 3. Warm parse endpoint on the dev server (next, deferred)
+Target: a build under about 100 ms. A find pass would then take about 4.5 s. Worker threads would pay again: the 3.7 s scan split across threads brings a pass to about 1 s, the speed find's worker-thread trial aimed for.
 
-Add a Vite plugin (`apply: 'serve'`) in `docs/grammar/.vitepress/config.ts` with `configureServer` registering `/__parse`. It loads the parser once via `server.ssrLoadModule('/src/parse/index.ts')` (re-evaluated automatically when `src/parse/` changes) and returns `parse()` JSON.
+`skipValidations: true` does not help (measured 2026-11-17: 4.3 s against 4.0 s).
 
-- Estimated per call with the server warm: ~70–100 ms with `node` directly (Node startup ~40–50 ms + localhost round trip + parse), ~0.3–0.35 s through `npm run parse`. Compare ~0.57 s / ~0.8 s today.
-- The client must be a thin launcher (`scripts/parse.mjs`) that tries the endpoint **before** importing the bundle; putting the check inside the bundle pays the ~200 ms parser import anyway.
-- Short timeout (~200 ms worst case; a refused localhost connection fails almost instantly), then fall back to the bundle. Pin the port or have the server write a port file.
-- Dev only: `configureServer` never runs under `vitepress build`, and Amplify serves static files, so nothing ships or bills. Keep Vite bound to localhost.
-- Only helps while `npm run dev` runs; build, tests, and cold shells are unaffected.
-- Bonus: dev-only grammar-site components could call the same endpoint for live parses.
+### B. A warm process (helps where it runs)
 
-## 4. Batch input in the CLI (shipped)
+Keep a built parser alive and send work to it. The launchers (`scripts/parse.mjs`, `scripts/find.mjs`) try the warm process **before** importing their bundle, since a check inside the bundle pays the import anyway. They use a short timeout (about 200 ms; a refused localhost connection fails at once) and fall back to the bundle. Pin the port or write a port file.
 
-Each quoted argument to `scripts/parse.mjs` is one input; `-` (or no arguments with piped stdin) reads one input per line. One input prints the same JSON as before; several print an array of `{ input, result }` / `{ input, error }`. A failing input (sentence- or word-level) does not stop the batch; the exit code is 1 if any failed.
+- **`/__parse`**: returns `parse()` JSON for a batch of inputs. A call would take about 0.1 s through `node`, against 4.6 s today.
+- **`/__find`**: runs a whole find pass in the warm process, rather than sending each example to `/__parse`. Find needs more than the JSON: `classify`, construction traces and ambiguity on the live result, and `frame=` matches by `LexWord` identity, which JSON loses. The launcher sends its arguments and prints the records that come back. A pass would take about 4.5 s.
+- **Warm workers**: the warm process keeps a few worker threads, each built once per process lifetime. That brings a find pass to about 1 s even before A. `--diff`'s old pass still builds cold, since it is a different parser.
 
-## 5. Precompiled CLI (shipped)
+The host is either a Vite plugin (`apply: 'serve'`, `configureServer`, `server.ssrLoadModule` reloading when `src/` changes) or a standalone daemon ([open questions](#open-questions)). The Vite plugin is dev only: nothing ships or bills, and Vite stays bound to localhost. Dev-only grammar-site components could use the same endpoint for live parses.
 
-`npm run parse` runs `scripts/parse.mjs`, which executes an esbuild bundle at `dist/parse/cli.bundle.mjs` (kept in `dist/parse/` so `index.ts` still finds `data/` at `../..`). Before running it:
+### C. Lazy lexicon load (low priority)
 
-- regenerates `src/generated/word-parser.js` via `npm run -s generate:word` when `src/parse/word.peggy` is newer (output to stderr so JSON stays clean);
-- rebuilds the bundle when any file under `src/` is newer than it.
+Skip the CSV reads when parse-only output needs no lexicon lookup. Tens of milliseconds at most.
 
-Timings: ~0.57 s calling `node scripts/parse.mjs` directly, ~0.8 s via `npm run parse` (down from ~2.0 s); a bundle rebuild adds ~0.25 s once, a Peggy regenerate ~0.8 s once. `AGENTS.md` tells agents to call `node` directly.
+## Open questions
 
-## 6. Lazy lexicon load (low priority)
+1. **A or B first?** A helps every process, including tests and the cold shells subagents run in. B helps only where the warm process is running, but it also brings worker threads back.
+   **Recommendation:** A first. Then B only if a pass of about 4.5 s still feels slow.
+2. **Where does B live?** The options:
+   - The Vite dev server: no new process to manage, but it works only while `npm run dev` runs.
+   - A standalone daemon, started on first use, watching `src/` and exiting after an idle timeout: it works in any shell, but it needs lifetime and staleness handling.
 
-Skip CSV reads when parse-only output needs no lexicon lookup. Tens of milliseconds at most; part of the ~200 ms import.
+   **Recommendation:** the daemon, since most parse and find calls come from agent shells where the dev server is not running. Settle it by checking how often `npm run dev` is up during agent sessions.
+3. **Does a cached or patched strategy keep ambiguity reporting?** `--check-ambiguity` reads what the allstar strategy logs (`takeAmbiguityReports`). Any change under A must keep those reports byte-identical. Test that with a before-and-after run of `--check-ambiguity` over the doc examples.
+
+## Measurements (2026-11-17)
+
+Building the sentence parser alone (`sentenceGrammar()`) took 4.8 s under `--cpu-prof`. Self time by package: Chevrotain 2.5 s, chevrotain-allstar 1.9 s, `@chevrotain/gast` 0.3 s, native and GC 0.2 s. By function:
+
+| Function | Self time |
+|----------|-----------|
+| allstar `firstSet` | 1720 ms |
+| chevrotain `remainingPathWith` | 534 ms |
+| chevrotain `possiblePathsFrom` | 498 ms |
+| chevrotain `lookAheadSequenceFromAlternatives` | 469 ms |
+| chevrotain `getAlternativesForProd` | 330 ms |
+| chevrotain `getLookaheadPathsForOptionalProd` | 172 ms |
+| chevrotain `isUniquePrefixHash` | 143 ms |
+| allstar `optionalHasFollowConflict` | 94 ms |
+
+find, `--construction join.ua --count`: 8.5 s on one thread. `--jobs` with workers, before F1 dropped them: 8.4 s with 2, 10.1 s with 4, 20.1 s with 8, 28 s with 11. One `node scripts/parse.mjs` call: 4.6 s.
