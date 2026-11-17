@@ -9,7 +9,18 @@ import { relative } from "node:path";
 import type { ClassifyTables } from "../parse/classify.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { type Example } from "./examples.js";
-import { hitWord, matchesTerm, matchSequence, parseTerm, TERM_KEYS, type HitWord, type Term } from "./query.js";
+import {
+  fieldValues,
+  hitWord,
+  matchesTerm,
+  matchSequenceHits,
+  parseTerm,
+  SEQ_GAP,
+  TERM_KEYS,
+  type HitWord,
+  type Term,
+  type TermKey,
+} from "./query.js";
 import {
   mergeMaps,
   parseMap,
@@ -32,9 +43,22 @@ export type FindOptions = {
   write: boolean;
   writeTests: boolean;
   checkAmbiguity: boolean;
+  /** `--same-clause`: every word of a `--seq` hit sits in one clause. */
+  sameClause: boolean;
+  /** `--values KEY` or `--constructions`: tally values over the matching examples instead of listing hits. */
+  list: { kind: "values"; key: TermKey } | { kind: "constructions" } | undefined;
 };
 
-export type FindResult = { file: string; line: number; index: number; text: string; shown: string; words: HitWord[] };
+export type FindResult = {
+  file: string;
+  line: number;
+  index: number;
+  text: string;
+  shown: string;
+  words: HitWord[];
+  /** Clause numbers of the hit words, ascending, without -1. */
+  clauses: number[];
+};
 export type FindReplacement = { file: string; line: number; from: string; to: string };
 export type FindSkip = { file: string; line: number; text: string };
 export type FindReview = { file: string; line: number; raw: string; message: string };
@@ -48,6 +72,8 @@ export type FileRecord = {
   reviews: FindReview[];
   /** `--write` spans that did not reparse; the file's other patches are still written. */
   parseErrors: FindParseError[];
+  /** `--values` / `--constructions`: how many words (values) or examples (construction IDs) carry each value. */
+  tally: Record<string, number>;
 };
 
 /** A bad command line; the CLI prints the message with the usage line and exits with `code`. */
@@ -60,7 +86,64 @@ export class FindUsageError extends Error {
   }
 }
 
-export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM TERM…] [--construction ID|prefix*|/regex/] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; each regex matches the whole value`;
+export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
+
+/** `--help`: every key with what it holds and sample values, every flag, and how a construction ID is built. */
+export const FIND_HELP = `find.mjs: search docs examples by parse, not spelling; with --map, rewrite matched letter slots.
+
+Keys (TERM is key=regex[,key!=regex…]; each regex must match a whole value; key!=regex: no value matches):
+  role         the word's PoS letter, "" outside a role: z, v, th
+  ending       the word ending: l, n, rl
+  root         content roots, the roots around mid-word x: azozo, alazu, owuro
+  family       word family (an x word also its x family): content, joinMarker, hook
+  overlay      sense form of the overlay or host overlay: ubol, ahum, ohem
+  overlayKind  kind of that overlay in lexicon-overlays.csv: evidential, may, phasal
+  frame        whole-clause frame the word carries (resolve.scope), FAMILY and FAMILY/MEMBER: stance, stance/channel, binder
+  unit         kind of the clause unit the word sits in: np, vp, hook
+  raw          the spelling as parsed: zazozon, blarl, yel
+  series       join-series vowels of a join word: a, ua, uo
+  form         hook form, of a hook or the hook in a compound or join: el, ul, oel
+  marker       number marker, writing glyph and speech twin both: +, ra, #
+  xFamily      mid-word x family: sake, pointer, holder
+  reading      how the word is read: ordinary, overlay, restrictor
+  scope        reach vowel of an x word, stance vowel of a scope word, reach of a say word: u, o, uo
+  answer       answer vowel of a say word: a, o, e
+  stance       stance vowel of an x word: a, u, o
+  pointer      pointer vowel of an x word: e, o, a
+  locus        locus vowels of an x word: e, oe, ua
+
+Flags:
+  --word TERM            some word matches TERM
+  --seq TERM|... …       neighboring words match the terms in order; ... matches zero or more words
+  --same-clause          every word of a --seq hit sits in one clause (the innermost Clause node: body
+                         clause, clause-join member, or dependent; words outside every clause never match)
+  --construction ID      the parse uses construction ID: an exact ID, a prefix*, or a /regex/
+  --values KEY           count each value KEY takes (by word) over the matching examples, or every example
+  --constructions        count each construction ID (by example) over the matching examples, or every example
+  --map field=from:to,…  rewrite those letters on matched words (dry run; a swap is one map)
+  --write                patch docs, TSV and non-test source; a span that does not reparse is left
+  --tests                with --write, patch *.test.ts too
+  --check-ambiguity      with --write, refuse a patch that gives two trees
+  --json                 print hits as JSON: each word with its key fields, constructions, overlayKind,
+                         frame and clause; each hit with its clause numbers
+  --count                print the number of matching examples (or of values with --values)
+  paths…                 files or folders; default docs/grammar and docs/examples; pass src, scripts or a
+                         .tsv to walk string literals and TSV cells
+Several query flags must all match.
+
+Construction IDs are dotted: a head, then parts. Word IDs come from the word alone: word.family.<family>,
+word.reading.<reading>, word.ending.<ending>, word.xFamily.<xFamily>, and overlay.<sense form>.<pos>
+(overlay.ubol.th). Parse IDs name a rule or a slot: sentence.* (grammar rules), join.<series>,
+restrictor.<job>, hook.<form>, number.*, role.*, pointer.*, scope.*, force.*, sake.*, tone.*, resolve.*
+(bindings). List them all with --constructions.
+
+Examples:
+  node scripts/find.mjs --word role=v,ending=r
+  node scripts/find.mjs --seq family=hook,raw=em 'role!=[zdb]' role=b
+  node scripts/find.mjs --same-clause --seq 'frame=binder|occasion' ... overlayKind=evidential --count
+  node scripts/find.mjs --construction '/^sentence\\.hUnitRule\\./'
+  node scripts/find.mjs --values overlayKind
+  node scripts/find.mjs --word family=joinMarker,series=e|o --map series=e:o,o:e --write`;
 
 /** `--construction` pattern: `/regex/` (unanchored), `prefix*`, or an exact ID. */
 function constructionTest(pattern: string): (id: string) => boolean {
@@ -97,6 +180,8 @@ export function parseFindArgs(args: string[]): FindOptions {
     write: false,
     writeTests: false,
     checkAmbiguity: false,
+    sameClause: false,
+    list: undefined,
   };
   for (let i = 0; i < args.length; i++) {
     const arg = args[i]!;
@@ -105,8 +190,11 @@ export function parseFindArgs(args: string[]): FindOptions {
       options.queries.push({ kind: "word", term: term(args[++i]!) });
     } else if (arg === "--seq") {
       const terms: Term[] = [];
-      while (args[i + 1] && args[i + 1]!.includes("=") && !args[i + 1]!.startsWith("--")) terms.push(term(args[++i]!));
-      if (terms.length === 0) throw new FindUsageError("--seq needs at least one term");
+      while (args[i + 1] && (args[i + 1] === "..." || (args[i + 1]!.includes("=") && !args[i + 1]!.startsWith("--")))) {
+        const next = args[++i]!;
+        terms.push(next === "..." ? SEQ_GAP : term(next));
+      }
+      if (!terms.some((t) => t !== SEQ_GAP)) throw new FindUsageError("--seq needs at least one term");
       options.queries.push({ kind: "seq", terms });
     } else if (arg === "--construction") {
       if (!args[i + 1]) throw new FindUsageError("--construction needs an ID");
@@ -118,40 +206,58 @@ export function parseFindArgs(args: string[]): FindOptions {
       } catch (error) {
         throw new FindUsageError((error as Error).message);
       }
-    } else if (arg === "--write") options.write = true;
+    } else if (arg === "--values") {
+      const key = args[i + 1] as TermKey | undefined;
+      if (!key || !(TERM_KEYS as readonly string[]).includes(key)) {
+        throw new FindUsageError(`--values needs a key: ${TERM_KEYS.join(" ")}`);
+      }
+      i++;
+      options.list = { kind: "values", key };
+    } else if (arg === "--constructions") options.list = { kind: "constructions" };
+    else if (arg === "--same-clause") options.sameClause = true;
+    else if (arg === "--write") options.write = true;
     else if (arg === "--tests") options.writeTests = true;
     else if (arg === "--check-ambiguity") options.checkAmbiguity = true;
     else if (arg === "--json") options.output = "json";
     else if (arg === "--count") options.output = "count";
-    else if (arg === "--help" || arg === "-h") throw new FindUsageError("Search docs examples by parse.", 0);
+    else if (arg === "--help" || arg === "-h") throw new FindUsageError(FIND_HELP, 0);
     else if (arg.startsWith("--")) throw new FindUsageError(`unknown flag ${arg}`);
     else options.paths.push(arg);
   }
-  if (options.queries.length === 0) throw new FindUsageError("give at least one --word, --seq, or --construction");
+  if (options.queries.length === 0 && !options.list) {
+    throw new FindUsageError("give at least one --word, --seq, or --construction (or --values KEY / --constructions)");
+  }
+  if (options.list && options.maps) throw new FindUsageError("--values and --constructions do not take --map");
   if (options.write && !options.maps) throw new FindUsageError("--write needs --map");
   if (options.writeTests && !options.write) throw new FindUsageError("--tests needs --write");
   return options;
 }
 
 /** Indexes of the words a query highlights, or null when it does not match. */
-export function matchQuery(example: Example, query: FindQuery): number[] | null {
+export function matchQuery(example: Example, query: FindQuery, sameClause = false): number[] | null {
   switch (query.kind) {
     case "word": {
       const hits = example.words.flatMap((w, i) => (matchesTerm(w, query.term) ? [i] : []));
       return hits.length ? hits : null;
     }
     case "seq": {
-      const starts = matchSequence(example.words, query.terms);
-      if (!starts.length) return null;
-      const placed = example.words.filter((w) => w.position >= 0);
-      return starts.flatMap((s) => {
-        const from = placed.indexOf(example.words[s]!);
-        return placed.slice(from, from + query.terms.length).map((w) => example.words.indexOf(w));
-      });
+      const hits = matchSequenceHits(example.words, query.terms, sameClause);
+      return hits.length ? hits.flat() : null;
     }
     case "construction":
       return example.constructions.some(query.test) ? [] : null;
   }
+}
+
+function tallyExample(tally: Record<string, number>, example: Example, list: NonNullable<FindOptions["list"]>): void {
+  const bump = (value: string) => {
+    tally[value] = (tally[value] ?? 0) + 1;
+  };
+  if (list.kind === "constructions") {
+    for (const id of new Set(example.constructions)) bump(id);
+    return;
+  }
+  for (const word of example.words) for (const value of new Set(fieldValues(word, list.key))) bump(value);
 }
 
 function highlight(example: Example, hits: Set<number>): string {
@@ -168,8 +274,8 @@ function highlight(example: Example, hits: Set<number>): string {
  * belong to one scanner. `cwd` makes the reported paths relative.
  */
 export function scanFile(file: string, options: FindOptions, tables: ClassifyTables, cwd = process.cwd()): FileRecord {
-  const { queries, maps, write, writeTests, checkAmbiguity } = options;
-  const record: FileRecord = { results: [], replacements: [], skips: [], reviews: [], parseErrors: [] };
+  const { queries, maps, write, writeTests, checkAmbiguity, sameClause, list } = options;
+  const record: FileRecord = { results: [], replacements: [], skips: [], reviews: [], parseErrors: [], tally: {} };
   const original = readFileSync(file, "utf8");
   const rel = relative(cwd, file);
   const { examples, unparsed } = collectFileSpans(file, original, tables);
@@ -185,9 +291,14 @@ export function scanFile(file: string, options: FindOptions, tables: ClassifyTab
   const skipTestWrite = write && !writeTests && isFindTestFile(file);
   let skippedTestPatch = false;
   for (const example of examples) {
-    const matches = queries.map((q) => matchQuery(example, q));
+    const matches = queries.map((q) => matchQuery(example, q, sameClause));
     if (matches.some((m) => m === null)) continue;
+    if (list) {
+      tallyExample(record.tally, example, list);
+      continue;
+    }
     const hits = new Set(matches.flatMap((m) => m!));
+    const hitWords = [...hits].sort((a, b) => a - b).map((i) => hitWord(example.words[i]!));
     const line = lineOf(example.index);
     record.results.push({
       file: rel,
@@ -195,7 +306,8 @@ export function scanFile(file: string, options: FindOptions, tables: ClassifyTab
       index: example.index,
       text: example.text,
       shown: highlight(example, hits),
-      words: [...hits].sort((a, b) => a - b).map((i) => hitWord(example.words[i]!)),
+      words: hitWords,
+      clauses: [...new Set(hitWords.map((w) => w.clause))].filter((c) => c >= 0).sort((a, b) => a - b),
     });
     if (!maps) continue;
     const rewritten = rewriteExample(example, [...hits], maps);
@@ -233,13 +345,14 @@ export function scanFile(file: string, options: FindOptions, tables: ClassifyTab
 
 /** Concatenates file records in the order given (walk order). */
 export function mergeRecords(records: FileRecord[]): FileRecord {
-  const merged: FileRecord = { results: [], replacements: [], skips: [], reviews: [], parseErrors: [] };
+  const merged: FileRecord = { results: [], replacements: [], skips: [], reviews: [], parseErrors: [], tally: {} };
   for (const record of records) {
     merged.results.push(...record.results);
     merged.replacements.push(...record.replacements);
     merged.skips.push(...record.skips);
     merged.reviews.push(...record.reviews);
     merged.parseErrors.push(...record.parseErrors);
+    for (const [value, n] of Object.entries(record.tally)) merged.tally[value] = (merged.tally[value] ?? 0) + n;
   }
   return merged;
 }

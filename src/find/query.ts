@@ -2,7 +2,9 @@
  * Word-level queries over parsed examples: which words a parse contains, in
  * surface order, and whether they match a `key=value,…` term.
  */
-import type { LexWord, NumberMarker, NumberStem } from "../parse/types.js";
+import { wordConstructions } from "../parse/construction-trace.js";
+import type { ClauseScope } from "../parse/scope.js";
+import type { LexWord, NumberMarker, NumberStem, ParseResult } from "../parse/types.js";
 
 /** One word of a parsed example, tagged with its clause unit and surface position. */
 export type FoundWord = {
@@ -11,6 +13,10 @@ export type FoundWord = {
   unit: string;
   /** Index among the example's whitespace chunks, or -1 when the raw form was not found. */
   position: number;
+  /** Walk-order number of the innermost `Clause` node the word sits in; absent (or -1) outside every clause. */
+  clause?: number;
+  /** Whole-clause frames the word carries in `resolve.scope`: `family` and, with a member, `family/member`. */
+  frames?: string[];
 };
 
 export const TERM_KEYS = [
@@ -19,6 +25,8 @@ export const TERM_KEYS = [
   "root",
   "family",
   "overlay",
+  "overlayKind",
+  "frame",
   "unit",
   "raw",
   "series",
@@ -35,7 +43,15 @@ export const TERM_KEYS = [
 export type TermKey = (typeof TERM_KEYS)[number];
 /** One `key=regex` (or negated `key!=regex`) condition; the regex must match a whole field value. */
 export type Condition = { key: TermKey; value: string; negate: boolean; pattern: RegExp };
+/** One `--seq` slot. `parseTerm` never returns an empty term, so in a sequence `[]` is `...`, a gap of zero or more words. */
 export type Term = Condition[];
+
+/** The `...` slot of a `--seq`. */
+export const SEQ_GAP: Term = [];
+
+export function isSeqGap(term: Term): boolean {
+  return term.length === 0;
+}
 
 /** JSON projection of one matched word; absent letter fields are `null`. */
 export type HitWord = {
@@ -52,6 +68,12 @@ export type HitWord = {
   stance: string | null;
   pointer: string | null;
   locus: string | null;
+  overlayKind: string | null;
+  frame: string[];
+  /** Innermost clause number, or -1 outside every clause. */
+  clause: number;
+  /** Construction IDs the word carries on its own (`word.*`, `overlay.*`). */
+  constructions: string[];
 };
 
 /** A comma that starts the next `key=` / `key!=` condition (a regex may hold other commas, e.g. `{2,3}`). */
@@ -103,33 +125,63 @@ function isLexWord(value: unknown): value is LexWord {
   return typeof value === "object" && value !== null && "raw" in value && "family" in value;
 }
 
+/** Keys under which the tree holds a `Clause` node: a body clause, a clause-join member, a dependent. */
+const CLAUSE_KEYS = new Set(["clause", "first"]);
+
+function isClauseNode(key: string, node: unknown): boolean {
+  return CLAUSE_KEYS.has(key) && typeof node === "object" && node !== null && Array.isArray((node as { units?: unknown }).units);
+}
+
+/** `family` and `family/member` for each whole-clause frame a word carries, by word identity. */
+function frameValues(scope: ClauseScope[] | undefined): Map<LexWord, string[]> {
+  const out = new Map<LexWord, string[]>();
+  for (const record of scope ?? []) {
+    for (const frame of record.frames) {
+      const values = out.get(frame.word) ?? [];
+      for (const value of [frame.family, frame.member ? `${frame.family}/${frame.member}` : undefined]) {
+        if (value && !values.includes(value)) values.push(value);
+      }
+      out.set(frame.word, values);
+    }
+  }
+  return out;
+}
+
 /**
  * Every word in a parse result, in surface order. `chunks` are the example's
- * whitespace chunks with punctuation peeled, used to place each word.
+ * whitespace chunks with punctuation peeled, used to place each word. Each word
+ * gets the walk-order number of the innermost clause it sits in and the
+ * whole-clause frames `resolve.scope` gives it.
  */
 export function flattenWords(result: unknown, chunks: string[]): FoundWord[] {
   const found: FoundWord[] = [];
   const seen = new Set<object>();
-  const walk = (node: unknown, unit: string): void => {
+  let clauses = 0;
+  const walk = (node: unknown, unit: string, clause: number): void => {
     if (Array.isArray(node)) {
-      for (const child of node) walk(child, unit);
+      for (const child of node) walk(child, unit, clause);
       return;
     }
     if (typeof node !== "object" || node === null || seen.has(node)) return;
     seen.add(node);
     if (isLexWord(node)) {
-      found.push({ word: node, unit, position: -1 });
+      found.push({ word: node, unit, position: -1, clause, frames: [] });
       return;
     }
     for (const [key, child] of Object.entries(node)) {
       if (key === "units" && Array.isArray(child)) {
-        for (const u of child) walk(u, typeof u?.kind === "string" ? u.kind : unit);
+        for (const u of child) walk(u, typeof u?.kind === "string" ? u.kind : unit, clause);
+      } else if (isClauseNode(key, child) && !seen.has(child as object)) {
+        walk(child, unit, clauses++);
       } else {
-        walk(child, unit);
+        walk(child, unit, clause);
       }
     }
   };
-  walk(result, "");
+  walk(result, "", -1);
+
+  const frames = frameValues((result as Partial<ParseResult> | null)?.resolve?.scope);
+  for (const item of found) item.frames = frames.get(item.word) ?? [];
 
   const used = new Set<number>();
   for (const item of found) {
@@ -167,6 +219,14 @@ export function formValues(word: LexWord): string[] {
   if (family.kind === "x" && family.hook) forms.push(family.hook);
   if (word.hookCompound) forms.push(word.hookCompound.hook);
   return forms;
+}
+
+/** `kind` of the word's overlay and host overlay (lexicon-overlays.csv). */
+export function overlayKinds(word: LexWord): string[] {
+  const kinds: string[] = [];
+  if (word.overlay) kinds.push(word.overlay.kind);
+  if (word.hostOverlay) kinds.push(word.hostOverlay.kind);
+  return kinds;
 }
 
 export function locusValue(word: LexWord): string | undefined {
@@ -218,11 +278,15 @@ export function hitWord(item: FoundWord): HitWord {
     stance: stanceValue(word) ?? null,
     pointer: pointerValue(word) ?? null,
     locus: locusValue(word) ?? null,
+    overlayKind: first(overlayKinds(word)),
+    frame: item.frames ?? [],
+    clause: item.clause ?? -1,
+    constructions: wordConstructions(word),
   };
 }
 
 /** The values a condition's regex is tested against (a word may have several roots or overlays). */
-function fieldValues(item: FoundWord, key: TermKey): string[] {
+export function fieldValues(item: FoundWord, key: TermKey): string[] {
   const { word } = item;
   const { family } = word;
   switch (key) {
@@ -239,6 +303,10 @@ function fieldValues(item: FoundWord, key: TermKey): string[] {
       return family.kind === "x" ? [family.kind, family.xFamily] : [family.kind];
     case "overlay":
       return [word.overlay?.senseForm, word.hostOverlay?.senseForm].filter((form): form is string => Boolean(form));
+    case "overlayKind":
+      return overlayKinds(word);
+    case "frame":
+      return item.frames ?? [];
     case "unit":
       return [item.unit];
     case "raw":
@@ -275,16 +343,43 @@ export function matchesTerm(item: FoundWord, term: Term): boolean {
   return term.every((condition) => matchesCondition(item, condition));
 }
 
-/** Start indexes (into `words`) where the terms match consecutive surface words. */
-export function matchSequence(words: FoundWord[], terms: Term[]): number[] {
+/**
+ * Every match of `terms` over the placed surface words, as indexes into `words`.
+ * Terms match neighboring words; a `...` slot (`SEQ_GAP`) matches zero or more
+ * words. With `sameClause`, every matched word sits in one clause. One match per
+ * start word: the one that ends earliest.
+ */
+export function matchSequenceHits(words: FoundWord[], terms: Term[], sameClause = false): number[][] {
   const placed = words.filter((w) => w.position >= 0);
-  const starts: number[] = [];
-  for (let i = 0; i + terms.length <= placed.length; i++) {
-    const ok = terms.every((term, k) => {
-      const item = placed[i + k]!;
-      return item.position === placed[i]!.position + k && matchesTerm(item, term);
-    });
-    if (ok) starts.push(words.indexOf(placed[i]!));
+  const matches: number[][] = [];
+  const step = (t: number, from: number, adjacentTo: number | null, clause: number | null, taken: FoundWord[]): FoundWord[] | null => {
+    if (t === terms.length) return taken;
+    const term = terms[t]!;
+    if (isSeqGap(term)) {
+      for (let j = from; j <= placed.length; j++) {
+        const done = step(t + 1, j, null, clause, taken);
+        if (done) return done;
+      }
+      return null;
+    }
+    const item = placed[from];
+    if (!item) return null;
+    if (adjacentTo !== null && item.position !== adjacentTo + 1) return null;
+    if (!matchesTerm(item, term)) return null;
+    const itemClause = item.clause ?? -1;
+    if (sameClause && (itemClause < 0 || (clause !== null && itemClause !== clause))) return null;
+    return step(t + 1, from + 1, item.position, clause ?? itemClause, [...taken, item]);
+  };
+  const lead = terms.findIndex((term) => !isSeqGap(term));
+  if (lead < 0) return [];
+  for (let i = 0; i < placed.length; i++) {
+    const hit = step(lead, i, null, null, []);
+    if (hit) matches.push(hit.map((w) => words.indexOf(w)));
   }
-  return starts;
+  return matches;
+}
+
+/** Start indexes (into `words`) where the terms match; see `matchSequenceHits`. */
+export function matchSequence(words: FoundWord[], terms: Term[], sameClause = false): number[] {
+  return matchSequenceHits(words, terms, sameClause).map((hit) => hit[0]!);
 }

@@ -1,6 +1,7 @@
 /** The parsed Ageben examples on a docs page, as the docs lint reads them. */
 import { classify, type ClassifyTables } from "../parse/classify.js";
 import { collectAmbiguity } from "../parse/ambiguity.js";
+import type { ClauseScope } from "../parse/scope.js";
 import type { LexWord } from "../parse/types.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
@@ -21,6 +22,8 @@ export type Example = {
   constructions: string[];
   /** Resume words bound to an antecedent in the same example. */
   boundResumes: Set<LexWord>;
+  /** Whole-clause frames per clause and their order (`resolve.scope`); empty for a single word. */
+  scope: ClauseScope[];
 };
 
 export type UnparsedSpan = {
@@ -62,7 +65,7 @@ export function parseExample(text: string, cls: Example["cls"], tables: Classify
       const { core } = peelLintChunk(text.trim());
       if (!isAgebenLintCandidate(core)) return null;
       const word = classify(parseWord(core), tables);
-      return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word), boundResumes: new Set() };
+      return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word), boundResumes: new Set(), scope: [] };
     }
     const result = parseWithTables(text.trim(), tables, { constructions: true });
     const boundResumes = new Set<LexWord>();
@@ -70,7 +73,12 @@ export function parseExample(text: string, cls: Example["cls"], tables: Classify
       // A topic pronoun spells its own root, not a cut of its antecedent's, so it counts as a use.
       if (bind.antecedent && bind.kind !== "topic") boundResumes.add(bind.pronoun);
     }
-    return { words: flattenWords(result, chunksOf(text)), constructions: result.constructions ?? [], boundResumes };
+    return {
+      words: flattenWords(result, chunksOf(text)),
+      constructions: result.constructions ?? [],
+      boundResumes,
+      scope: result.resolve?.scope ?? [],
+    };
   } catch {
     // The docs lint reports spans that do not parse.
     return null;

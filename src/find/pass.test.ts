@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { FindUsageError, parseFindArgs, passFiles, runPass, scanFile } from "./pass.js";
+import { TERM_KEYS } from "./query.js";
 
 const tables = loadDefaultTables();
 const here = dirname(fileURLToPath(import.meta.url));
@@ -26,6 +27,27 @@ describe("parseFindArgs", () => {
     assert.throws(() => parseFindArgs([]), FindUsageError);
     assert.throws(() => parseFindArgs(["--word", "role=v", "--write"]), /--write needs --map/);
     assert.throws(() => parseFindArgs(["--construction", "/(/"]), /bad --construction regex/);
+    assert.throws(() => parseFindArgs(["--seq", "..."]), /--seq needs at least one term/);
+    assert.throws(() => parseFindArgs(["--values", "nope"]), /--values needs a key/);
+  });
+
+  it("reads ..., --same-clause, and the listing flags", () => {
+    const options = parseFindArgs(["--same-clause", "--seq", "frame=binder", "...", "overlayKind=evidential"]);
+    assert.equal(options.sameClause, true);
+    const seq = options.queries[0]!;
+    assert.ok(seq.kind === "seq" && seq.terms.length === 3 && seq.terms[1]!.length === 0);
+    assert.deepEqual(parseFindArgs(["--values", "overlayKind"]).list, { kind: "values", key: "overlayKind" });
+    assert.deepEqual(parseFindArgs(["--constructions"]).list, { kind: "constructions" });
+  });
+
+  it("--help carries every key", () => {
+    try {
+      parseFindArgs(["--help"]);
+      assert.fail("expected help");
+    } catch (error) {
+      assert.ok(error instanceof FindUsageError && error.code === 0);
+      for (const key of TERM_KEYS) assert.match(error.message, new RegExp(`^  ${key} `, "m"));
+    }
   });
 });
 
@@ -48,5 +70,12 @@ describe("runPass", () => {
     const merged = runPass(files, options, tables);
     const each = files.flatMap((file) => scanFile(file, options, tables).results);
     assert.deepEqual(merged.results, each);
+  });
+
+  it("tallies values instead of listing hits", () => {
+    const options = parseFindArgs(["--values", "family"]);
+    const record = runPass([fixtureMd], options, tables);
+    assert.deepEqual(record.results, []);
+    assert.ok((record.tally.joinMarker ?? 0) > 0);
   });
 });

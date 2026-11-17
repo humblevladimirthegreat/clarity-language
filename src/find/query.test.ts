@@ -5,7 +5,7 @@ import { CLOSED } from "../closed-roots.js";
 import { classify, loadDefaultTables } from "../parse/index.js";
 import { parseWord } from "../parse/word.js";
 import { collectExamples } from "./examples.js";
-import { hitWord, matchesTerm, matchSequence, parseTerm } from "./query.js";
+import { hitWord, matchesTerm, matchSequence, matchSequenceHits, parseTerm, SEQ_GAP } from "./query.js";
 
 const tables = loadDefaultTables();
 
@@ -92,6 +92,45 @@ describe("example words", () => {
     const { words } = sentence("zalazun vezuyol thewom blazozon.");
     assert.deepEqual(matchSequence(words, [parseTerm("role=th"), parseTerm("role=b")]), [2]);
     assert.deepEqual(matchSequence(words, [parseTerm("role=v"), parseTerm("role=b")]), []);
+  });
+  it("lets ... match zero or more words", () => {
+    const { words } = sentence("zalazun vezuyol thewom blazozon.");
+    assert.deepEqual(matchSequence(words, [parseTerm("role=v"), SEQ_GAP, parseTerm("role=b")]), [1]);
+    assert.deepEqual(matchSequence(words, [parseTerm("role=th"), SEQ_GAP, parseTerm("role=b")]), [2]);
+    assert.deepEqual(matchSequence(words, [parseTerm("role=b"), SEQ_GAP, parseTerm("role=v")]), []);
+    assert.deepEqual(
+      matchSequenceHits(words, [parseTerm("role=z"), SEQ_GAP, parseTerm("role=b")]).map((hit) => hit.map((i) => words[i]!.word.raw)),
+      [["zalazun", "blazozon"]],
+    );
+  });
+});
+
+describe("clause, frame, and overlayKind", () => {
+  // A channel after an occasion word in the main clause; a binder only in the dependent.
+  const main = "zazozon hual vowurol thubor.";
+  const split = "zazozon veduyol thanam blarl zual gwozeduyol veduyol xam zazozon gwozeduyol.";
+  it("numbers clauses in walk order and gives each word its innermost one", () => {
+    const { words } = sentence(split);
+    const clauseOf = (raw: string) => words.find((w) => w.word.raw === raw)!.clause;
+    assert.equal(clauseOf("thanam"), 0);
+    assert.ok(clauseOf("zual")! > 0);
+    assert.notEqual(clauseOf("zual"), clauseOf("thanam"));
+  });
+  it("reads frame values from resolve.scope, family and family/member", () => {
+    const { words } = sentence(main);
+    const channel = words.find((w) => w.word.raw === "thubor")!;
+    assert.deepEqual(channel.frames, ["stance", "stance/channel"]);
+    assert.ok(matchesTerm(channel, parseTerm("frame=stance")));
+    assert.ok(matchesTerm(channel, parseTerm("frame=stance/channel,overlayKind=evidential")));
+    assert.ok(matchesTerm(words.find((w) => w.word.raw === "hual")!, parseTerm("frame=occasion")));
+    assert.ok(!matchesTerm(words.find((w) => w.word.raw === "vowurol")!, parseTerm("frame=.*")));
+  });
+  it("--same-clause keeps a sequence inside one clause", () => {
+    const terms = [parseTerm("frame=binder|occasion"), SEQ_GAP, parseTerm("overlayKind=evidential")];
+    assert.equal(matchSequence(sentence(main).words, terms, true).length, 1);
+    const reversed = [parseTerm("overlayKind=evidential"), SEQ_GAP, parseTerm("frame=binder")];
+    assert.equal(matchSequence(sentence(split).words, reversed).length, 1);
+    assert.equal(matchSequence(sentence(split).words, reversed, true).length, 0);
   });
 });
 
@@ -201,7 +240,12 @@ describe("parse field keys", () => {
       stance: null,
       pointer: null,
       locus: null,
+      overlayKind: null,
+      frame: [],
+      clause: -1,
+      constructions: hitWord(ordinal!).constructions,
     });
+    assert.ok(hitWord(ordinal!).constructions.includes("word.family.number"));
   });
 
   it("matches hooked-join form and a feeling urge", () => {
