@@ -464,3 +464,29 @@ describe("reader: every word in one place (R6a coverage fixes)", () => {
     assert.equal(adjectives.members.length, 2);
   });
 });
+
+describe("reader: scope rows the reader needs (R6b)", () => {
+  it("more-turn-words.md:13: a doubled act word gives each word a force frame, and the two commute", () => {
+    const result = parse(glossToAgeben("y-prohibition | y-prohibition | v-sneak", tables, index), tables);
+    const [reading] = readParse(result, { tables });
+    assert.deepEqual(coverage(result, [reading!]).missing, []);
+    assert.deepEqual(reading!.frames.map((f) => `${f.key} ${f.member ?? ""}`), ["edge:force repeat", "edge:force repeat"]);
+    assert.deepEqual(reading!.order, []);
+  });
+
+  it("more-turn-words.md#stacked-acts: the first act word, the real act, covers the second", () => {
+    const [reading] = read("y-command | y-question | v-punch | d-box | z-listener");
+    assert.deepEqual(reading!.frames.map((f) => f.words[0]!.raw), ["yol", "yel"]);
+    assert.deepEqual(reading!.order.map((o) => `${o.over.words[0]!.raw}>${o.under.words[0]!.raw} ${o.anchors[0]}`), [
+      "yol>yel more-turn-words.md#stacked-acts",
+    ]);
+  });
+
+  it("comparative-arity.md#frequency-scale and feelings.md#feeling-whose-stake: a detail and a party, no frame", () => {
+    const [scale] = read("[z-Azozon | z-Alazun | z-rank/more | h-how-often] | v-walk");
+    assert.deepEqual(scale!.frames, []);
+    const [stake] = read("[th-autonomy-unmet-irreversible-STAYING-OPEN | bl-Azozon]");
+    assert.deepEqual(stake!.frames.map((f) => `${f.family} ${f.key}`), ["sake lexReading:sake"]);
+    assert.equal(stake!.frames[0]!.party?.kind, "thing");
+  });
+});

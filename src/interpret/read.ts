@@ -902,8 +902,8 @@ function edgeDetails(left: LeftEdge, here: Here, clause: Clause): void {
 /** The act word and reactions of a turn with no body (a bare question, a call), which the scope record does not hold. */
 function bareEdgeFrames(left: LeftEdge): Frame[] {
   const frames: Frame[] = [];
-  const act = left.leadForce ?? left.force;
-  if (act) frames.push(frameOf("edge:force", act, undefined));
+  // Each act word of a stack or a doubled act is a frame of its own (more-turn-words.md#stacked-acts).
+  for (const act of [left.leadForce, left.force]) if (act) frames.push(frameOf("edge:force", act, undefined));
   for (const word of left.interjections) frames.push(frameOf("edge:interjection", word, undefined));
   return frames;
 }

@@ -11,6 +11,7 @@
  * row states one, nothing where the pair commutes, and an `unordered` entry where the pair is still unsettled.
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
+import { stackKind } from "./series.js";
 import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, Utterance } from "./types.js";
 
 export type FrameFamily =
@@ -98,14 +99,13 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "edge:interjection": { family: "attitude", reach: "clause", anchor: "speech-moves.md#interjections-reactions" },
   "edge:force": { family: "force", reach: "clause", anchor: "speech-moves.md#speech-act-statement-question-command" },
   "edge:tone": { family: "attitude", reach: "clause", anchor: "tone-marks.md#tone-marks" },
-  "reading:frequencyScale": { family: "occasion", reach: "clause", anchor: "more-occasions.md" },
   "reading:bareQuestion": { family: "force", reach: "clause", anchor: "questions.md#question" },
   "reading:greeting": { family: "force", reach: "clause", anchor: "word-endings.md#greeting" },
-  "reading:feelingStake": { family: "sake", reach: "clause", anchor: "feelings.md#feeling-whose-stake" },
 };
 
 /** Which member of a family a frame is, where a pair row tells members apart. */
-export type FrameMember = "channel" | "may" | "number" | "residue" | "former";
+/** `repeat`: either word of a doubled act word (more-turn-words.md#doubled-act). */
+export type FrameMember = "channel" | "may" | "number" | "residue" | "former" | "repeat";
 
 export type ScopeFrame = {
   family: FrameFamily;
@@ -325,6 +325,14 @@ export const PAIR_ROWS: readonly PairRow[] = [
   // Same-family pairs from the scope statements.
   rule("binder", "binder", text("joins.md#everything-ua")),
   rule("intention", "intention", text("intention.md#plan")),
+  // Two act words: a doubled one is the same act, only more insistent; of two different ones the first is the act
+  // and the second how it sounds, so the first covers the second.
+  rule(
+    "force",
+    "force",
+    { ...commutes("more-turn-words.md#doubled-act"), when: { force: ["repeat"] } },
+    { order: "textOrder", anchors: ["more-turn-words.md#stacked-acts"] },
+  ),
 ];
 
 /** Families that never pair (interpreter.md#pair-table, "Never in a pair"). */
@@ -472,8 +480,13 @@ function clauseFrames(clause: Clause, tables: ClassifyTables | undefined): Scope
 
 function edgeFrames(left: LeftEdge): ScopeFrame[] {
   const frames: ScopeFrame[] = [];
-  const act = left.leadForce ?? left.force;
-  if (act) frames.push(...[frame("edge:force", act)].filter((f) => f !== undefined));
+  // Each act word is a frame of its own: a stack's first word is the act, the second how it sounds
+  // (more-turn-words.md#stacked-acts); a doubled word repeats the act (more-turn-words.md#doubled-act).
+  const repeat = stackKind(left.leadForce, left.force) === "emphatic" ? "repeat" : undefined;
+  for (const act of [left.leadForce, left.force]) {
+    const found = act ? frame("edge:force", act, repeat) : undefined;
+    if (found) frames.push(found);
+  }
   for (const word of left.interjections) {
     const attitude = frame("edge:interjection", word);
     if (attitude) frames.push(attitude);

@@ -223,14 +223,14 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | reading | `unsaidEvent` | structure | `predication.md#unsaid-event` | Claim shape: the verb is unsaid |
 | reading | `kind` | structure | `universals-domains.md#kind-reference` | A `thing` term naming the kind itself |
 | reading | `amountScale` | detail:degree | `vague-amounts.md` | frame-or-detail unclear; see report |
-| reading | `frequencyScale` | frame:occasion | `more-occasions.md` | frame by default |
+| reading | `frequencyScale` | detail:degree | `comparative-arity.md#frequency-scale` | The scale a rank join ranks by, *how often*: a shared detail on the list term, never a restrictor on the clause |
 | reading | `bareQuestion` | frame:force | `questions.md#question` | No body: asks about what was just said |
 | reading | `greeting` | frame:force | `word-endings.md#greeting` |  |
 | reading | `verbFirstItem` | structure | `verb-and-stance-joins.md#vp-clause-forms` |  |
 | reading | `verbSharedNoun` | link | `verb-and-stance-joins.md#vp-clause-forms` | An argument shared by joined verbs |
 | reading | `fromTo` | detail:range | `ranges.md#ranges` |  |
 | reading | `feelingLandmark` | structure | `feelings.md#feeling-whose-stake` | The `bl-` is the urge's landmark |
-| reading | `feelingStake` | frame:sake | `feelings.md#feeling-whose-stake` | The `bl-` is whose stake (`party`); the feeling stays yours |
+| reading | `feelingStake` | structure | `feelings.md#feeling-whose-stake` | No frame of its own: the `bl-` is the `party` of the feeling word's sake frame (`lexReading:sake`), "the need is theirs, and the feeling is yours" |
 | word | `plural` | label | `plurality.md#associative` | On a verb it is collective (`collectives.md#verbs-v`) |
 | word | `hookedJoin` | detail:bound | `hooked-joins.md#hooked-joins` | "the hook now says which members count: the ones that stand in that relation to the landmark": the list term's `bound`, or the blank's detail |
 | word | `rangeMember` | detail:range | `ranges.md#ranges` | |
@@ -373,7 +373,8 @@ No sentence states an order against another frame.
 **Whole clause:** the act word, on the turn's left edge outside the body. Every frame in the body sits under it in the tree (rule 2).
 
 - `speech-moves.md#speech-act-statement-question-command`: "Each turn does one thing: it states, asks, commands, or forbids."
-- `more-turn-words.md#stacked-acts` (within the family): "the *first* is what you really do, and the *second* is how it sounds."
+- `more-turn-words.md#stacked-acts` (within the family): "the *first* is what you really do, and the *second* is how it sounds." Each act word is a frame; the first covers the second.
+- `more-turn-words.md#doubled-act` (within the family): "The act stays the same and only grows more insistent; the repeat never cancels it." The two frames commute.
 - `quote-contents.md#quote-acts` (against `quote`): "The outer sentence is still your claim (*said*), and `yel` or `yol` belongs to the quoted talk."
 - `spans.md#asides-th` (against an aside): "a clause with the same speech act as the outer sentence (both statements, both questions, or both commands)."
 - `questions.md#embedded-whether` (against a dependent): "The whole sentence is still a statement, so do not write `yel` at its start."
@@ -457,7 +458,7 @@ No sentence states an order against another frame.
 
 ## Pair table
 
-One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`: fixed by a rule; `attitude` tone marks: commute), except `stance` × `stance`, which has a row. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
+One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word and `attitude` tone marks: commute), except `stance` × `stance`, which has a row. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
 
 Counts: fixed by a rule 126, unsettled 0, commutes 8, fixed by word shape 3.
 

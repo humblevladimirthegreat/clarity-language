@@ -31,8 +31,8 @@ function orders(scope: ClauseScope): string[] {
 }
 
 describe("scope tables (interpreter.md#pair-table)", () => {
-  it("has one row per pair: 137 table rows plus the binder and intention same-family statements", () => {
-    assert.equal(PAIR_ROWS.length, 139);
+  it("has one row per pair: 137 table rows plus the binder, intention and force same-family statements", () => {
+    assert.equal(PAIR_ROWS.length, 140);
     const keys = new Set(PAIR_ROWS.map((row) => [...row.pair].sort().join("|")));
     assert.equal(keys.size, PAIR_ROWS.length);
   });
@@ -147,6 +147,19 @@ describe("scope order (clause.md#which-covers-which)", () => {
   it("a standalone join before the holder's stance is still the holder's (holder.md#holder)", () => {
     const [scope] = scopeOf("z-Azozon | v-walk | th-not | th-MEMORY-Azozon");
     assert.ok(orders(scope!).includes("holder>polarity holder.md#holder"));
+    assert.deepEqual(scope!.unordered, []);
+  });
+
+  it("each of two stacked act words is a frame; the first, the real act, covers the second (more-turn-words.md#stacked-acts)", () => {
+    const [scope] = scopeOf("y-command | y-question | v-punch | d-box | z-listener");
+    assert.deepEqual(scope!.frames.map((f) => `${f.key} ${f.word.raw}`), ["edge:force yol", "edge:force yel"]);
+    assert.deepEqual(scope!.order.map((o) => `${o.over.word.raw}>${o.under.word.raw} ${o.anchors[0]}`), ["yol>yel more-turn-words.md#stacked-acts"]);
+  });
+
+  it("a doubled act word is two frames that commute (more-turn-words.md#doubled-act)", () => {
+    const [scope] = scopeOf("y-question | y-question | z-Azozon | v-walk | th-hope");
+    assert.deepEqual(scope!.frames.map((f) => `${f.family} ${f.member ?? ""}`), ["force repeat", "force repeat", "attitude "]);
+    assert.deepEqual(orders(scope!), ["attitude>force feelings.md#speaker-attitude", "attitude>force feelings.md#speaker-attitude"]);
     assert.deepEqual(scope!.unordered, []);
   });
 });

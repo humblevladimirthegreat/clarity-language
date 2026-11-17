@@ -1,7 +1,5 @@
 {
-  "missing": 40,
+  "missing": 0,
   "doubled": 0,
-  "keys": {
-    "lexReading:ordinary": 40
-  }
+  "keys": {}
 }
