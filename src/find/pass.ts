@@ -8,7 +8,9 @@ import { relative } from "node:path";
 
 import type { ClassifyTables } from "../parse/classify.js";
 import { loadDefaultTables } from "../parse/index.js";
-import { type Example } from "./examples.js";
+import { type Example, type FindParse } from "./examples.js";
+import { parseWithTables } from "../parse/parse-core.js";
+import { matchScopeQuery, scopeStrings, type ScopeParser, type ScopeRecord } from "./scope-diff.js";
 import {
   fieldValues,
   hitWord,
@@ -47,6 +49,8 @@ export type FindOptions = {
   sameClause: boolean;
   /** `--values KEY` or `--constructions`: tally values over the matching examples instead of listing hits. */
   list: { kind: "values"; key: TermKey } | { kind: "constructions" } | undefined;
+  /** `--diff REV`: compare each matching example's scope order under the parser at REV with the current one. */
+  diff: string | undefined;
 };
 
 export type FindResult = {
@@ -86,7 +90,7 @@ export class FindUsageError extends Error {
   }
 }
 
-export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
+export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--over F] [--under G] [--unordered] [--diff REV] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
 
 /** `--help`: every key with what it holds and sample values, every flag, and how a construction ID is built. */
 export const FIND_HELP = `find.mjs: search docs examples by parse, not spelling; with --map, rewrite matched letter slots.
@@ -118,6 +122,14 @@ Flags:
   --same-clause          every word of a --seq hit sits in one clause (the innermost Clause node: body
                          clause, clause-join member, or dependent; words outside every clause never match)
   --construction ID      the parse uses construction ID: an exact ID, a prefix*, or a /regex/
+  --over F --under G     some clause's scope order (resolve.scope) puts frame F over frame G; F and G are
+                         FAMILY or FAMILY/MEMBER as --values frame lists them; highlights both words; one
+                         side alone matches any partner; each pair is one more query
+  --unordered            some clause has a frame pair no rule orders yet (resolve.scope unordered)
+  --diff REV             parse the current docs with the parser at commit REV and with the current one, and
+                         list each example whose scope order differs: - pairs only at REV, + pairs only now;
+                         other query flags pick the examples (current parse); --count, --json work; REV must
+                         include src/parse/scope.ts (ff43d91d or later)
   --values KEY           count each value KEY takes (by word) over the matching examples, or every example
   --constructions        count each construction ID (by example) over the matching examples, or every example
   --map field=from:to,…  rewrite those letters on matched words (dry run; a swap is one map)
@@ -143,6 +155,8 @@ Examples:
   node scripts/find.mjs --same-clause --seq 'frame=binder|occasion' ... overlayKind=evidential --count
   node scripts/find.mjs --construction '/^sentence\\.hUnitRule\\./'
   node scripts/find.mjs --values overlayKind
+  node scripts/find.mjs --over stance/channel --under occasion
+  node scripts/find.mjs --diff HEAD~1 --count
   node scripts/find.mjs --word family=joinMarker,series=e|o --map series=e:o,o:e --write`;
 
 /** `--construction` pattern: `/regex/` (unanchored), `prefix*`, or an exact ID. */
@@ -182,10 +196,32 @@ export function parseFindArgs(args: string[]): FindOptions {
     checkAmbiguity: false,
     sameClause: false,
     list: undefined,
+    diff: undefined,
   };
+  /** The scope query the previous flag opened, so `--over F --under G` is one pair. */
+  let openScope: Extract<FindQuery, { kind: "scope" }> | undefined;
   for (let i = 0; i < args.length; i++) {
     const arg = args[i]!;
-    if (arg === "--word") {
+    if (arg === "--over" || arg === "--under") {
+      const value = args[i + 1];
+      if (!value || value.startsWith("--")) throw new FindUsageError(`${arg} needs a frame: FAMILY or FAMILY/MEMBER`);
+      i++;
+      const side = arg === "--over" ? "over" : "under";
+      if (openScope && openScope[side] === undefined) {
+        openScope[side] = value;
+        openScope = undefined;
+      } else {
+        openScope = { kind: "scope", [side]: value };
+        options.queries.push(openScope);
+      }
+      continue;
+    }
+    openScope = undefined;
+    if (arg === "--unordered") options.queries.push({ kind: "unordered" });
+    else if (arg === "--diff") {
+      if (!args[i + 1] || args[i + 1]!.startsWith("--")) throw new FindUsageError("--diff needs a commit");
+      options.diff = args[++i]!;
+    } else if (arg === "--word") {
       if (!args[i + 1]) throw new FindUsageError("--word needs a term");
       options.queries.push({ kind: "word", term: term(args[++i]!) });
     } else if (arg === "--seq") {
@@ -224,8 +260,13 @@ export function parseFindArgs(args: string[]): FindOptions {
     else if (arg.startsWith("--")) throw new FindUsageError(`unknown flag ${arg}`);
     else options.paths.push(arg);
   }
-  if (options.queries.length === 0 && !options.list) {
-    throw new FindUsageError("give at least one --word, --seq, or --construction (or --values KEY / --constructions)");
+  if (options.queries.length === 0 && !options.list && !options.diff) {
+    throw new FindUsageError(
+      "give at least one --word, --seq, --construction, --over/--under or --unordered (or --values KEY / --constructions / --diff REV)",
+    );
+  }
+  if (options.diff && (options.maps || options.list)) {
+    throw new FindUsageError("--diff does not take --map, --values or --constructions");
   }
   if (options.list && options.maps) throw new FindUsageError("--values and --constructions do not take --map");
   if (options.write && !options.maps) throw new FindUsageError("--write needs --map");
@@ -246,6 +287,9 @@ export function matchQuery(example: Example, query: FindQuery, sameClause = fals
     }
     case "construction":
       return example.constructions.some(query.test) ? [] : null;
+    case "scope":
+    case "unordered":
+      return matchScopeQuery(example, query);
   }
 }
 
@@ -361,6 +405,31 @@ export function mergeRecords(records: FileRecord[]): FileRecord {
 export function passFiles(paths: string[]): string[] {
   const roots = paths.length ? paths : ["docs/grammar", "docs/examples"].filter((dir) => existsSync(dir));
   return [...new Set(roots.flatMap((root) => listFindFiles(root)))];
+}
+
+/**
+ * One `--diff` pass: every example in `files` parsed with `parser`, as scope strings. With `filter`,
+ * only examples matching all of `options.queries` (the current pass; the pass at REV keeps every example).
+ */
+export function scopePass(
+  files: string[],
+  options: Pick<FindOptions, "queries" | "sameClause">,
+  parser: ScopeParser = { tables: loadDefaultTables(), parse: parseWithTables as FindParse },
+  filter = true,
+  cwd = process.cwd(),
+): ScopeRecord[] {
+  const out: ScopeRecord[] = [];
+  for (const file of files) {
+    const original = readFileSync(file, "utf8");
+    const rel = relative(cwd, file);
+    const { examples } = collectFileSpans(file, original, parser.tables, parser.parse);
+    for (const example of examples) {
+      if (filter && options.queries.some((q) => matchQuery(example, q, options.sameClause) === null)) continue;
+      const line = original.slice(0, example.index).split("\n").length;
+      out.push({ file: rel, line, index: example.index, text: example.text, ...scopeStrings(example) });
+    }
+  }
+  return out;
 }
 
 /** Runs one pass over `files` and merges the records in that order. */

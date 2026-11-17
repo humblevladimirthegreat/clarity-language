@@ -26,6 +26,17 @@ export type Example = {
   scope: ClauseScope[];
 };
 
+/**
+ * The sentence parse a pass uses: the current `parseWithTables` by default, or an older parser's for `--diff`.
+ * Only `resolve.scope`, `resolve.anaphors`, `constructions` and the tree are read from its result.
+ */
+export type FindParse = (text: string, tables: ClassifyTables, options: { constructions: boolean }) => unknown;
+
+type ParsedShape = {
+  constructions?: string[];
+  resolve?: { anaphors?: { pronoun: LexWord; antecedent?: unknown; kind?: string }[]; scope?: ClauseScope[] };
+};
+
 export type UnparsedSpan = {
   text: string;
   index: number;
@@ -59,7 +70,12 @@ function alignWordPositions(source: string, words: FoundWord[]): FoundWord[] {
   });
 }
 
-export function parseExample(text: string, cls: Example["cls"], tables: ClassifyTables): Omit<Example, "text" | "index" | "cls" | "source"> | null {
+export function parseExample(
+  text: string,
+  cls: Example["cls"],
+  tables: ClassifyTables,
+  parse: FindParse = parseWithTables,
+): Omit<Example, "text" | "index" | "cls" | "source"> | null {
   try {
     if (cls === "word") {
       const { core } = peelLintChunk(text.trim());
@@ -67,7 +83,7 @@ export function parseExample(text: string, cls: Example["cls"], tables: Classify
       const word = classify(parseWord(core), tables);
       return { words: [{ word, unit: "", position: 0 }], constructions: wordConstructions(word), boundResumes: new Set(), scope: [] };
     }
-    const result = parseWithTables(text.trim(), tables, { constructions: true });
+    const result = parse(text.trim(), tables, { constructions: true }) as ParsedShape;
     const boundResumes = new Set<LexWord>();
     for (const bind of result.resolve?.anaphors ?? []) {
       // A topic pronoun spells its own root, not a cut of its antecedent's, so it counts as a use.
@@ -98,7 +114,11 @@ export function findParseText(source: string): string {
     .trim();
 }
 
-function parseSpanBody(source: string, tables: ClassifyTables): Omit<Example, "index" | "source"> | null {
+function parseSpanBody(
+  source: string,
+  tables: ClassifyTables,
+  parse: FindParse = parseWithTables,
+): Omit<Example, "index" | "source"> | null {
   const filled = fillSelf(source);
   const direct = classifyAgebenSpan(filled);
   const candidates: { text: string; cls: Example["cls"] }[] = [];
@@ -112,15 +132,20 @@ function parseSpanBody(source: string, tables: ClassifyTables): Omit<Example, "i
     }
   }
   for (const { text, cls } of candidates) {
-    const parsed = parseExample(text, cls, tables);
+    const parsed = parseExample(text, cls, tables, parse);
     if (parsed) return { text, cls, ...parsed };
   }
   return null;
 }
 
 /** Parse one stored Ageben body (a Markdown span, a string literal, or a TSV cell). */
-export function collectBodySpan(source: string, index: number, tables: ClassifyTables): Example | UnparsedSpan {
-  const parsed = parseSpanBody(source, tables);
+export function collectBodySpan(
+  source: string,
+  index: number,
+  tables: ClassifyTables,
+  parse: FindParse = parseWithTables,
+): Example | UnparsedSpan {
+  const parsed = parseSpanBody(source, tables, parse);
   if (parsed) {
     const filled = fillSelf(source).trim();
     const words = parsed.text === filled ? parsed.words : alignWordPositions(source, parsed.words);
@@ -143,12 +168,12 @@ function isExample(span: Example | UnparsedSpan): span is Example {
  * Sentence, phrase, and single-word examples on a page (templates and fragments are skipped).
  * Walks the original Markdown; `SELF` is filled only when parsing a span.
  */
-export function collectPageSpans(markdown: string, tables: ClassifyTables): PageSpans {
+export function collectPageSpans(markdown: string, tables: ClassifyTables, parse: FindParse = parseWithTables): PageSpans {
   const examples: Example[] = [];
   const unparsed: UnparsedSpan[] = [];
   walkAgebenSpans(markdown, {
     text: (source, index) => {
-      const span = collectBodySpan(source, index, tables);
+      const span = collectBodySpan(source, index, tables, parse);
       if (isExample(span)) examples.push(span);
       else unparsed.push(span);
     },

@@ -13,6 +13,7 @@ import { sourceLiterals, vueLiterals } from "../retie/source.js";
 import {
   collectBodySpan,
   collectPageSpans,
+  type FindParse,
   type Example,
   type PageSpans,
   type UnparsedSpan,
@@ -30,7 +31,11 @@ const SKIP_WALK_PREFIXES = ["src/retie", "src/generated", "src/find/fixtures"];
 export type FindQuery =
   | { kind: "word"; term: Term }
   | { kind: "seq"; terms: Term[] }
-  | { kind: "construction"; test: (id: string) => boolean };
+  | { kind: "construction"; test: (id: string) => boolean }
+  /** `--over F --under G`: some clause orders a frame F over a frame G (`family` or `family/member`; a lone side matches any partner). */
+  | { kind: "scope"; over?: string; under?: string }
+  /** `--unordered`: some clause has a pair no rule orders yet. */
+  | { kind: "unordered" };
 
 function posixRel(file: string): string {
   return relative(REPO_ROOT, file).split(sep).join("/");
@@ -68,20 +73,20 @@ function isExample(span: Example | UnparsedSpan): span is Example {
   return "words" in span;
 }
 
-function collectLiteralSpans(source: string, fileName: string, tables: ClassifyTables): PageSpans {
+function collectLiteralSpans(source: string, fileName: string, tables: ClassifyTables, parse?: FindParse): PageSpans {
   const examples: Example[] = [];
   const unparsed: UnparsedSpan[] = [];
   const literals = fileName.endsWith(".vue") ? vueLiterals(source) : sourceLiterals(source, fileName);
   for (const literal of literals) {
     if (literal.escaped || literal.regex) continue;
-    const span = collectBodySpan(literal.body, literal.index, tables);
+    const span = collectBodySpan(literal.body, literal.index, tables, parse);
     if (isExample(span)) examples.push(span);
     else unparsed.push(span);
   }
   return { examples, unparsed };
 }
 
-function collectTsvSpans(text: string, tables: ClassifyTables): PageSpans {
+function collectTsvSpans(text: string, tables: ClassifyTables, parse?: FindParse): PageSpans {
   const examples: Example[] = [];
   const unparsed: UnparsedSpan[] = [];
   let offset = 0;
@@ -89,7 +94,7 @@ function collectTsvSpans(text: string, tables: ClassifyTables): PageSpans {
     let colAt = offset;
     for (const cell of line.split("\t")) {
       if (cell && !cell.startsWith("#")) {
-        const span = collectBodySpan(cell, colAt, tables);
+        const span = collectBodySpan(cell, colAt, tables, parse);
         if (isExample(span)) examples.push(span);
         else unparsed.push(span);
       }
@@ -101,10 +106,10 @@ function collectTsvSpans(text: string, tables: ClassifyTables): PageSpans {
 }
 
 /** Parsed Ageben bodies in a Markdown page, a source file, or a TSV. */
-export function collectFileSpans(file: string, text: string, tables: ClassifyTables): PageSpans {
-  if (file.endsWith(".md")) return collectPageSpans(text, tables);
-  if (file.endsWith(".tsv")) return collectTsvSpans(text, tables);
-  if (SOURCE_FILE.test(file)) return collectLiteralSpans(text, file, tables);
+export function collectFileSpans(file: string, text: string, tables: ClassifyTables, parse?: FindParse): PageSpans {
+  if (file.endsWith(".md")) return collectPageSpans(text, tables, parse);
+  if (file.endsWith(".tsv")) return collectTsvSpans(text, tables, parse);
+  if (SOURCE_FILE.test(file)) return collectLiteralSpans(text, file, tables, parse);
   return { examples: [], unparsed: [] };
 }
 
