@@ -1,0 +1,23 @@
+{
+  "missing": 217,
+  "doubled": 81,
+  "keys": {
+    "slot:adj": 107,
+    "lexReading:ordinary": 59,
+    "joinSeries:ua": 56,
+    "lexReading:number": 30,
+    "joinSeries:uo": 14,
+    "unit:writingSpan": 8,
+    "unit:h": 8,
+    "joinSeries:e": 3,
+    "slot:gl": 3,
+    "lexReading:standIn": 2,
+    "slot:w": 2,
+    "overlay:clause_hinge:*:as-of.ledger": 1,
+    "overlay:likeness:g": 1,
+    "overlay:of_relation:g": 1,
+    "joinSeries:u": 1,
+    "joinSeries:a": 1,
+    "lexReading:sake:g": 1
+  }
+}

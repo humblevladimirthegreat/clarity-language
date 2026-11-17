@@ -85,7 +85,7 @@ export function wordKey(word: LexWord, closes?: number[]): string {
 }
 
 /** The construction id a word carries for one key, or the key when no id names it. */
-function constructionFor(key: string, word?: LexWord): string {
+export function constructionFor(key: string, word?: LexWord): string {
   const [type, name] = key.split(":");
   if (!word) return key;
   if (type === "overlay" && word.overlay) return overlayConstructionId(word.overlay);
