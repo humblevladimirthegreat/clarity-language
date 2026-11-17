@@ -165,3 +165,242 @@ describe("reader: claim, links and nesting", () => {
     assert.equal(readings.length, 2);
   });
 });
+
+/** The one reading of a one-clause gloss. */
+const one = (gloss: string): Reading => read(gloss)[0]!;
+type ListTerm = Extract<Term, { kind: "list" }>;
+const asList = (term: Term | undefined): ListTerm => {
+  assert.equal(term?.kind, "list");
+  return term as ListTerm;
+};
+
+describe("reader audit (R4): doc examples, one per test, checked against the doc's meaning", () => {
+  // Not a doc example: the R2 say/binder fixture, audited because the CLI shows its list as `zual()`.
+  it("audit suspect: *every dog* keeps its kind on the list's shared record", () => {
+    const z = asList(one("h-episode-event-ALLOW-said | [z-everything | g-dog] | v-walk | th-not").claim.roles.z);
+    assert.deepEqual(z.members, []);
+    assert.equal(z.shared.length, 1);
+    assert.equal(z.shared[0]!.role, "kind");
+  });
+
+  it("causation.md:32: a command over an `if` hinge by text order; the condition clause is hosted", () => {
+    const reading = one("y-command | v-walk | [th-if | bl-that-clause] | z-Alazun | v-sit");
+    assert.deepEqual(families(reading), ["force", "hinge"]);
+    assert.deepEqual(orders(reading), ["force>hinge rule"]);
+    assert.equal(reading.claim.roles.z, undefined);
+    const hosted = frame(reading, "hinge").hosted;
+    assert.ok(hosted?.kind === "clause" && hosted.reading.claim.roles.z?.kind === "thing");
+  });
+
+  it("holder.md:141: the holder covers the no-judgment join (a rule) and its own channel (word shape)", () => {
+    const reading = one("z-Azozon | v-walk | th-not | th-MEMORY-Azozon");
+    assert.deepEqual(families(reading), ["polarity", "holder", "stance"]);
+    assert.ok(orders(reading).includes("holder>polarity rule"));
+    assert.ok(orders(reading).includes("holder>stance wordShape"));
+  });
+
+  it("review-intermediate.md:451: a say word's fields", () => {
+    const say = frame(one("z-Alazun | v-sit | h-episode-event-ALLOW-rule"), "say").values;
+    assert.deepEqual([say.reach, say.part, say.answer], ["u", "v", "a"]);
+  });
+
+  it("contrary-to.md:55: a say word inside a `whereas` clause stays in that clause", () => {
+    const reading = one("z-speaker | v-sleep | [h-whereas | bl-that-clause] | z-speaker | v-walk | h-episode-agent-ALLOW-rule");
+    assert.deepEqual(families(reading), ["hinge"]);
+    const hosted = frame(reading, "hinge").hosted;
+    assert.ok(hosted?.kind === "clause");
+    assert.deepEqual(families(hosted.reading), ["say"]);
+    assert.equal(hosted.reading.frames[0]!.values.part, "z");
+  });
+
+  it("hooked-joins.md:9: a free hook after a join is a detail of the clause, not the join's bound", () => {
+    const reading = one("z-everything | v-sleep | [at | b-house]");
+    assert.deepEqual(families(reading), ["binder"]);
+    assert.equal(reading.claim.details.length, 1);
+    assert.equal(reading.claim.details[0]!.hosted?.kind, "thing");
+  });
+
+  it("stance-bars.md:36: REPORTED as a bar on a member of the rank fence, not a clause stance", () => {
+    const reading = one("[z-book | th-REPORTED | z-rank/less | g-clarity]");
+    assert.ok(!families(reading).includes("stance"));
+    const z = asList(reading.claim.roles.z);
+    assert.ok(z.members.some((m) => m.kind === "thing" && m.frames?.some((f) => f.family === "bar")));
+    assert.equal(z.shared[0]?.role, "scale");
+  });
+
+  it("usually-vs-must.md:26: a channel before *every* covers it by text order", () => {
+    const reading = one("th-DEDUCED.strong | [z-everything | g-role-agent-teach] | v-teach");
+    assert.deepEqual(orders(reading), ["stance>binder rule"]);
+    assert.equal(asList(reading.claim.roles.z).shared[0]?.role, "kind");
+  });
+
+  it("special-values.md:77: a channel's time offset is hosted on the channel", () => {
+    const stance = frame(one("z-Azozon | [th-MEMORY | bl---e-] | v-walk"), "stance");
+    assert.equal(stance.member, "channel");
+    assert.equal(stance.hosted?.kind, "number");
+  });
+
+  it("already-still-yet.md:66: MAY over not-yet by text order", () => {
+    assert.deepEqual(orders(one("z-Alazun | th-MAY | th-not-yet | v-departure")), ["stance>phase rule"]);
+  });
+
+  it("evidentiality.md:101: a hand-count number after a channel, text order", () => {
+    const reading = one("z-Alazun | th-REPORTED | th-3rd-hand | v-departure");
+    assert.deepEqual(families(reading), ["stance", "stance"]);
+    assert.deepEqual(orders(reading), ["stance>stance rule"]);
+  });
+
+  it("holder.md:12: the holder is the party and sits over its channel by word shape", () => {
+    const reading = one("z-Alazun | th-CLUES-Azozon | v-departure");
+    assert.deepEqual(orders(reading), ["holder>stance wordShape"]);
+    assert.equal(frame(reading, "holder").party?.kind, "thing");
+  });
+
+  it("contrary-to.md:104: a holder covers a later `although` hinge", () => {
+    const reading = one("z-Azozon | v-walk | th-CLUES-Alazun | [th-although | bl-rain]");
+    assert.deepEqual(orders(reading), ["holder>stance wordShape", "holder>hinge rule", "stance>hinge rule"]);
+    assert.equal(frame(reading, "hinge").hosted?.kind, "thing");
+  });
+
+  it(
+    "nested-dependents.md:11: a reason for a reason nests, and *Azozon is sleepy* is the predicate",
+    { todo: "R4 fail: the innermost dependent is unplaced, and the predicate is read as an adjective detail on the subject" },
+    () => {
+      const reading = one("[z-Azozon | g-sleepy] | [th-because | bl-that-clause] | z-Alazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep");
+      assert.equal(reading.claim.predicate.length, 1);
+      const middle = frame(reading, "hinge").hosted;
+      assert.ok(middle?.kind === "clause");
+      assert.deepEqual(middle.reading.unread, []);
+      const inner = frame(middle.reading, "hinge").hosted;
+      assert.ok(inner?.kind === "clause" && inner.reading.claim.verb?.kind === "thing");
+    },
+  );
+
+  it(
+    "can-and-cant.md:100: one ability frame that says *unable* and *temporary*",
+    { todo: "R4 fail: two identical ability frames for one word, and neither records unable or temporary" },
+    () => {
+      const reading = one("z-Azozon | h-ABIL-unable-temporary");
+      assert.deepEqual(families(reading), ["ability"]);
+      assert.ok(Object.keys(frame(reading, "ability").values).length > 1);
+    },
+  );
+
+  it("as-of.md:17: RESIDUE is a frame and the as-of clock time a time detail", () => {
+    const reading = one("z-Alazun | h-RESIDUE | [h-as-of.ledger | bl-_22,7] | v-departure");
+    assert.deepEqual(families(reading), ["residue"]);
+    assert.equal(frame(reading, "residue").member, "residue");
+    assert.equal(reading.claim.details[0]?.hosted?.kind, "number");
+  });
+
+  it("contrary-to.md:11: the plan sits inside the contrary frame", () => {
+    const reading = one("z-Azozon | v-walk | [contrary-to | th-plan-itinerary]");
+    assert.deepEqual(families(reading), ["contrary"]);
+    assert.deepEqual(frame(reading, "contrary").inner?.map((f) => f.family), ["intention"]);
+  });
+
+  it(
+    "hooked-joins.md:127: *never since the thunderstorm* keeps the hook that bounds the times",
+    { todo: "R4 fail: the occasion frame holds the landmark but not the hook (since vs until), and no table row places it" },
+    () => {
+      const occasion = frame(one("z-listener | v-hear | [h-from-x-never.open | bl-thunderstorm]"), "occasion");
+      assert.equal(occasion.hosted?.kind, "thing");
+      assert.ok(occasion.values.hook, JSON.stringify(occasion.values));
+    },
+  );
+
+  it("ought-for-a-sake.md:12: the sake's stake holder is a bound pronoun", () => {
+    const sake = frame(one("z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]"), "sake");
+    assert.ok(sake.party?.kind === "pronoun" && sake.party.antecedent?.kind === "thing");
+  });
+
+  it("clause.md:83: speaker attitude is a frame", () => {
+    assert.deepEqual(families(one("z-dog | th-doubt | v-walk")), ["attitude"]);
+  });
+
+  it("span-nesting.md:13: a faulty quote is a nested reading in the object role", () => {
+    const reading = one("z-Azozon | d-CITE[flaw]# | v-tell");
+    assert.equal(frame(reading, "quote").content?.length, 1);
+    assert.equal(reading.claim.roles.d?.kind, "quote");
+  });
+
+  it("usually-vs-must.md:20: a weak pattern channel over *always* by text order", () => {
+    const reading = one("th-PATTERN.weak | z-Azozon | h-always | v-walk");
+    assert.deepEqual(orders(reading), ["stance>occasion rule"]);
+    assert.equal(frame(reading, "stance").member, "channel");
+  });
+
+  it("residue-and-former.md:42: FORMER covers *always* though it comes later (a rule)", () => {
+    assert.deepEqual(orders(one("z-Azozon | h-always | v-sing | h-FORMER")), ["residue>occasion rule"]);
+  });
+
+  it("universals-domains.md:242: *every dog sees a cat* (known gap: the new-member phrase has no frame)", () => {
+    const reading = one("[[z-everything | g-dog] | z-tag.A] | [d-cat | d-tag.O] | v-see");
+    assert.deepEqual(families(reading), ["binder"]);
+    assert.deepEqual(reading.order, []);
+    assert.equal(reading.claim.roles.d?.kind, "thing");
+  });
+
+  it("want-and-decide.md:48: WANT before PLAN, text order", () => {
+    assert.deepEqual(orders(one("z-speaker | th-WANT-lasting | th-plan-itinerary | v-walk")), ["intention>intention rule"]);
+  });
+
+  it("stand-in-vowels.md:126: a plan covers a later `because` hinge", () => {
+    const reading = one("th-plan-itinerary | z-Azozon | v-walk | [th-because | bl-that-clause] | z-Alazun | v-tell");
+    assert.deepEqual(orders(reading), ["intention>hinge rule"]);
+    assert.ok(reading.links.some((l) => l.kind === "standIn"));
+  });
+
+  it(
+    "list-structure.md:113: *respectively* pairs the subjects with the verbs",
+    { todo: "R4 fail: the respectively word is in no frame, detail, value or unread entry" },
+    () => {
+      const reading = one("[z-Azozon | z-Alazun | z-and] | [v-walk | v-run | w-respectively | v-and]");
+      assert.equal(asList(reading.claim.verb).members.length, 2);
+      const verb = asList(reading.claim.verb);
+      const seen = JSON.stringify([verb.values, verb.shared, reading.claim.details, reading.links, reading.unread]);
+      assert.match(seen, /respectiv/);
+    },
+  );
+
+  it(
+    "verb-and-stance-joins.md:32: *sees Ahelan* keeps Ahelan as the object of see",
+    { todo: "R4 fail: the object goes in a detail on the later verb, as a nested reading with no verb" },
+    () => {
+      const verb = asList(one("z-Azozon | [v-walk | [d-Ahelan | v-see] | v-and]").claim.verb);
+      const see = verb.members[1]!;
+      assert.ok(see.kind === "clause" && see.reading.claim.roles.d?.kind === "thing" && see.reading.claim.verb);
+    },
+  );
+
+  it(
+    "hooked-joins.md:11: *everyone at the house* keeps its bound on the list",
+    { todo: "R4 fail: the hook and its landmark are only an anaphor link; the binder's list says nothing of who counts" },
+    () => {
+      const reading = one("[z-at-x-everything | bl-house] | v-sleep");
+      assert.deepEqual(families(reading), ["binder"]);
+      const z = asList(reading.claim.roles.z);
+      assert.ok(z.values.hook && (z.shared.length > 0 || frame(reading, "binder").hosted));
+    },
+  );
+
+  it(
+    "hooked-joins.md:80: *for whom?* asks with a blank bounded by *for me*",
+    { todo: "R4 fail: the fill-ask blank is an empty list, not a blank term, and the hook is only an anaphor link" },
+    () => {
+      const reading = one("y-question | [d-for-x-wh | bl-speaker]");
+      assert.equal(frame(reading, "force").values.ask, "fillAsk");
+      assert.equal(reading.claim.roles.d?.kind, "blank");
+    },
+  );
+
+  it(
+    "fill-ask-jobs.md:13: *what kind of dog?* puts a blank term on the adjective",
+    { todo: "R4 fail: the blank is an empty list term (interpreter.md row: the blank is a `blank` term)" },
+    () => {
+      const reading = one("y-question | g-wh | z-dog");
+      assert.equal(frame(reading, "force").values.ask, "fillAsk");
+      assert.equal(reading.claim.predicate[0]?.kind, "blank");
+    },
+  );
+});
