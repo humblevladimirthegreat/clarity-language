@@ -88,7 +88,7 @@ describe("run: statements", () => {
   });
 
   for (const window of [undefined, 1]) {
-    it(`a call-only turn is its own entry; the next turns read as new sentences (window ${window ?? "all"})`, () => {
+    it(`a call-only turn is its own entry; another speaker's statement after it carries no call frame (window ${window ?? "all"})`, () => {
       const t = toy({ ...(window ? { window } : {}) });
       const session = createSession(t.host, tables);
       const call = run(spell("y-Ahelan"), session);
@@ -99,20 +99,60 @@ describe("run: statements", () => {
       session.speaker = "user";
       const asked = run(spell("y-question | z-Alazun | b-Azozon | v-pay"), session);
       assert.equal(asked.outcome, "ok", asked.error ?? "");
-      // The parse puts the call on the next body; a call is on the pass-through list, so the default verdict still counts it.
+      // A call closed by a period reaches its own turn only (sentence-linkers.md#past-a-period).
+      assert.ok(!session.log.entries[1]!.readings[0]!.frames.some((f) => f.family === "call"));
       const [match] = asked.readings[0]!.matches!;
-      assert.ok(match!.path.frames.some((f) => f.frame.family === "call"));
+      assert.ok(!match!.path.frames.some((f) => f.frame.family === "call"));
       assert.deepEqual(shapes(asked), ["yes", "why"]);
       const done = run(spell("y-command | b-Azozon | v-pay"), session);
       assert.equal(done.outcome, "ok", done.error ?? "");
       assert.equal(t.calls.length, 1);
       const { entries } = session.log;
       assert.deepEqual(entries.map((e) => e.speaker), ["user", "other"]);
-      assert.deepEqual(entries.map((e) => e.readings.length), [0, 1]);
+      assert.deepEqual(entries.map((e) => e.readings.length), [1, 1]);
+      assert.ok(entries[0]!.readings[0]!.frames.some((f) => f.family === "call"));
       assert.ok(entries[1]!.readings[0]!.claim.roles.z);
       assert.deepEqual(t.told.length, 2);
     });
   }
+
+  it("a call-only turn, then a statement in the same text: the statement has no call frame; a call before a body in one sentence keeps it", () => {
+    const split = run(`${spell("y-Ahelan")}. ${spell(PAID)}.`, createSession(toy().host, tables));
+    assert.equal(split.outcome, "ok", split.error ?? "");
+    const [lone, statement] = split.readings.map((r) => r.reading);
+    assert.ok(lone!.frames.some((f) => f.family === "call"));
+    assert.ok(statement!.claim.roles.z);
+    assert.ok(!statement!.frames.some((f) => f.family === "call"));
+    const joined = say(toy(), `y-Ahelan | ${PAID}`)[0]!;
+    assert.equal(joined.readings.length, 1);
+    assert.ok(joined.readings[0]!.reading.frames.some((f) => f.family === "call"));
+  });
+
+  it("yes / no are statements: logged, then told (sentence-linkers.md#past-a-period)", () => {
+    for (const gloss of ["y-yes", "y-no-soft"]) {
+      const t = toy();
+      const session = createSession(t.host, tables);
+      const r = run(spell(gloss), session);
+      assert.equal(r.outcome, "ok", r.error ?? "");
+      assert.deepEqual(r.readings.map((x) => x.force), ["statement"]);
+      assert.equal(session.log.entries.length, 1);
+      assert.equal(t.told.length, 1);
+    }
+  });
+
+  it("a greeting or an interjection alone makes no claim: logged as said and told; no handler runs, no question is asked", () => {
+    for (const gloss of ["Azozon", "y-sleepy"]) {
+      const t = toy();
+      const session = createSession(t.host, tables);
+      const r = run(spell(gloss), session);
+      assert.equal(r.outcome, "ok", r.error ?? "");
+      assert.deepEqual(r.readings.map((x) => x.force), ["said"]);
+      assert.deepEqual(r.replies, []);
+      assert.equal(session.log.entries.length, 1);
+      assert.equal(t.told.length, 1);
+      assert.equal(t.calls.length, 0);
+    }
+  });
 
   it("the re-parse window is the host's (decision 5)", () => {
     assert.equal(createSession({ window: 2 }, tables).log.options.window, 2);
@@ -224,6 +264,24 @@ describe("run: questions and shared replies", () => {
     const [r] = say(toy({ holds }), WHERE);
     placeReplies(r!);
   });
+
+  for (const [what, question, at, leaf] of [
+    ["a what-kind blank (gar)", "y-question | z-Azozon | g-wh", "predicate.0", "g-lion"],
+    ["a verb blank (var)", "y-question | z-Azozon | v-wh", "verb", "v-sit"],
+  ] as const) {
+    it(`${what}: blankSites keys it by the matcher's at, and a held answer reaches a fill reply`, () => {
+      const holds: Host["holds"] = (claim) => {
+        const site = blankSites(claim).find((b) => b.at === at);
+        return site ? [{ holds: true, source: "map", answers: { [site.at]: { leaf, english: leaf } } }] : [];
+      };
+      const [r] = say(toy({ holds }), question);
+      assert.equal(r!.outcome, "ok", r!.error ?? "");
+      assert.deepEqual(blankSites(r!.readings[0]!.reading.claim).map((b) => b.at), [at]);
+      assert.equal(r!.replies[0]!.shape, "fillFragment");
+      assert.equal(r!.replies[0]!.gloss, leaf);
+      assert.deepEqual(r!.replies.at(-1)!.because, ["map"]);
+    });
+  }
 
   it("the host's verdict can refuse", () => {
     const [r] = say(toy({ verdict: () => ({ kind: "refused", reason: "private" }) }), "y-question | z-wh | b-Azozon | v-pay");

@@ -5,6 +5,7 @@
  * | Force | Loop does |
  * |-------|-----------|
  * | statement | calls `told`, then adds the turn to the log unless `told` refused |
+ * | said | as a statement: a turn word that makes no claim (a greeting, an interjection alone) |
  * | question | `ask`, then `holds`, then `verdict`; replies |
  * | command, prohibition | resolves the roles with `refer`, then runs `handler` |
  *
@@ -38,7 +39,12 @@ import type { Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 
 export type Outcome = "parse" | "beyond" | "refused" | "ok";
 
-export type Force = "statement" | "question" | "command" | "prohibition";
+/**
+ * `said`: a turn word that is neither an act word nor *yes* / *no* (a greeting, an interjection alone) makes no claim; it
+ * is logged and handed to `told` like a statement, and no handler runs. A *yes* / *no* is a statement: the polar word
+ * implies `yal` / `yam` (sentence-linkers.md#past-a-period).
+ */
+export type Force = "statement" | "said" | "question" | "command" | "prohibition";
 
 /** One thing that put a turn beyond the loop, named. */
 export type BeyondPart = {
@@ -91,12 +97,22 @@ function forceFrame(reading: Reading): Frame | undefined {
 
 const SERIES_FORCE: Readonly<Record<string, Force>> = { a: "statement", e: "question", o: "command", u: "prohibition" };
 
-/** The force a reading is dispatched on; undefined for an act the loop does not dispatch (an answer word, a greeting). */
+/** A claim with nothing in it: no verb, role, predicate, detail or clause join. */
+function emptyClaim(reading: Reading): boolean {
+  const { verb, roles, predicate, details, clauses } = reading.claim;
+  return !verb && !clauses && !Object.keys(roles).length && !predicate.length && !details.length;
+}
+
+/** The force a reading is dispatched on; undefined for an act the loop does not dispatch. */
 function forceOf(reading: Reading): Force | undefined {
   const frame = forceFrame(reading);
-  if (!frame) return "statement";
+  if (frame?.key === "reading:greeting") return "said";
+  if (!frame) return emptyClaim(reading) && reading.frames.some((f) => f.key === "edge:interjection") ? "said" : "statement";
   return SERIES_FORCE[frame.values.series ?? ""];
 }
+
+/** Logged and handed to `told`: a statement, or a turn word that makes no claim. */
+const isTold = (force: Force | undefined): boolean => force === "statement" || force === "said";
 
 /** Every frame a command carries other than its force: on the clause, and on its terms and details at any depth. */
 function commandFrames(reading: Reading): Frame[] {
@@ -282,7 +298,7 @@ export function run<E>(text: string, session: Session<E>): TurnResult {
 
   let readings = read;
   let logged: Session<E>["log"] | undefined;
-  if (read.some((r) => forceOf(r) === "statement")) {
+  if (read.some((r) => isTold(forceOf(r)))) {
     const log = appendTurn(session.log, { speaker: session.speaker, at: session.at, text }, tables);
     const entry = log.entries[log.entries.length - 1];
     if (log.rejected.length > session.log.rejected.length || !entry) {
@@ -292,12 +308,13 @@ export function run<E>(text: string, session: Session<E>): TurnResult {
     readings = entry.readings;
   }
 
-  // Statements first: `told` runs before the turn is logged, and a refusal keeps the turn out of the log.
+  // Statements (and turn words that make no claim) first: `told` runs before the turn is logged, and a refusal keeps the turn out of the log.
   const results: (ReadingResult | undefined)[] = readings.map((reading) => {
-    if (forceOf(reading) !== "statement") return undefined;
+    const force = forceOf(reading);
+    if (force !== "statement" && force !== "said") return undefined;
     const told = host.told?.(reading, session) ?? [];
-    if (!Array.isArray(told)) return { reading, force: "statement", outcome: "refused", refused: told.reason, effects: [], replies: [] };
-    return { reading, force: "statement", outcome: "ok", effects: told.map((e) => ({ reading: reading.id, ...e })), replies: [] };
+    if (!Array.isArray(told)) return { reading, force, outcome: "refused", refused: told.reason, effects: [], replies: [] };
+    return { reading, force, outcome: "ok", effects: told.map((e) => ({ reading: reading.id, ...e })), replies: [] };
   });
   if (logged && !results.some((r) => r?.outcome === "refused")) {
     session.log = logged;
@@ -307,7 +324,7 @@ export function run<E>(text: string, session: Session<E>): TurnResult {
   const late: BeyondPart[] = [];
   readings.forEach((reading, i) => {
     const force = forceOf(reading)!;
-    if (force === "statement") return;
+    if (force === "statement" || force === "said") return;
     if (force === "question") results[i] = question(reading, text, session);
     else {
       const out = command(reading, force, session);

@@ -7,8 +7,10 @@
  *
  * A sentence is one body of an utterance (`/y/` turns split utterances, periods split bodies), the unit a top-level
  * reading reads; a turn holds a run of them, so its range counts sentences, not utterances. A turn that is a call alone
- * is its own entry; once a bare body follows it, the parse puts that body in the call's utterance (the call frames it),
- * so the call's entry keeps no sentence and the next turn's body counts as its own new sentence.
+ * is its own entry and keeps its sentence: a call closed by a period reaches its own turn only, so the next body starts
+ * an utterance of its own (sentence-linkers.md#past-a-period). A turn that is another turn word alone (an interjection,
+ * a *yes*) is its own entry too; once a bare body follows it in the parse, that body joins its utterance, so its entry
+ * keeps no sentence and the next turn's body counts as its own new sentence.
  *
  * Speakers: the log parses the window with each sentence's speaker (`ParseOptions.speakers`), so the resolve stage keeps
  * a carried frame per speaker (`ResolveInfo.carried`): another speaker's reply neither takes nor ends it
@@ -78,10 +80,10 @@ function windowOf(entries: readonly LogEntry[], window: number | undefined): Log
 }
 
 /**
- * Whether the context's last turn gives its sentence to the new one. A turn can end on a call alone, a bodiless
- * utterance (speech-moves.md#vocative); a bare body after it is a new sentence (sentence-linkers.md#past-a-period), but
- * the parse puts it in the call's utterance, so the call's own sentence is gone from the combined parse. The call turn
- * stays its own entry, now with no sentence, and the new turn's sentences are counted from it.
+ * Whether the context's last turn gives its sentence to the new one. A turn can end on a turn word alone, a bodiless
+ * utterance; when the parse puts the new turn's first body in that utterance, the turn word's own sentence is gone from
+ * the combined parse. That turn stays its own entry, now with no sentence, and the new turn's sentences are counted
+ * from it. A call alone keeps its sentence: the body after it starts its own utterance (sentence-linkers.md#past-a-period).
  */
 function absorbsCall(log: Log, context: readonly LogEntry[], parsed: ParseResult, tables: ClassifyTables): boolean {
   if (!context.length || log.parse?.utterances.at(-1)?.bodies.length !== 0) return false;

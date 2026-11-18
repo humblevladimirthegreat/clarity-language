@@ -2972,7 +2972,8 @@ function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
     const edge = childNodes(sentence.cst, "leftEdge")[0];
     const body = childNodes(sentence.cst, "edgeBody")[0] ?? childNodes(sentence.cst, "bodyClause")[0];
     const fragment = childNodes(sentence.cst, "fragment")[0];
-    if (utterances.length === 0 || edge || tokenIs(tokens[sentence.start]!, Hook) || afterNonStatement(utterances.at(-1)!, body)) {
+    const prior = utterances.at(-1);
+    if (!prior || edge || tokenIs(tokens[sentence.start]!, Hook) || afterNonStatement(prior, body) || afterCall(prior, body)) {
       utterances.push({ left: buildLeftEdge(edge), bodies: [] });
     }
     const next = tokens[sentence.end + 1];
@@ -2990,6 +2991,18 @@ function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
 function afterNonStatement(prior: Utterance, body: CstNode | undefined): boolean {
   const act = actWord(prior.left);
   if (!act || (act.family.kind === "joinMarker" && act.family.series === "a")) return false;
+  return !body || !(childToken(body, "Linker") ?? childToken(body, "crossJoin") ?? childToken(body, "topicMarker"));
+}
+
+/**
+ * A sentence after a call-only turn (a call closed by a period, no body): the call reaches its own turn only, so the
+ * next sentence starts its own utterance and is not said to that person by the call (sentence-linkers.md#past-a-period).
+ * When the turn also wrote an act word, only a bare body leaves it; a sentence linker keeps that act
+ * ({@link afterNonStatement}).
+ */
+function afterCall(prior: Utterance, body: CstNode | undefined): boolean {
+  if (prior.bodies.length > 0 || prior.left.vocatives.length === 0) return false;
+  if (!actWord(prior.left)) return true;
   return !body || !(childToken(body, "Linker") ?? childToken(body, "crossJoin") ?? childToken(body, "topicMarker"));
 }
 

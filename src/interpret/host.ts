@@ -47,8 +47,9 @@ export type Held = { holds: boolean; source: string; answers?: Partial<Record<Ro
 export type BlankSite = { at: string; blank: Term; detail?: Detail };
 
 /**
- * Every blank in a claim's roles and details, with its `at`: a role's is its letter (`z`), a detail's hosted blank's is
- * its path (`claim/detail.0/hosted`; a number blank ends in `/number`). A host keys {@link Held} answers by it.
+ * Every blank in a claim's verb, roles, predicate and details, with its `at`: a verb blank's (`var`) is `verb`, a role's
+ * is its letter (`z`), a what-kind blank's (`gar`, a clause `/ɡ/`) is `predicate.<i>`, a detail's hosted blank's is its
+ * path (`claim/detail.0/hosted`; a number blank ends in `/number`). A host keys {@link Held} answers by it.
  */
 export function blankSites(claim: Claim): BlankSite[] {
   const out: BlankSite[] = [];
@@ -59,10 +60,13 @@ export function blankSites(claim: Claim): BlankSite[] {
       else if (d.hosted && "details" in d.hosted && d.hosted.details) details(d.hosted.details, `${here}/hosted`);
       details(d.details ?? [], here);
     });
-  for (const [letter, term] of Object.entries(claim.roles) as [RoleLetter, Term][]) {
-    if (term.kind === "blank") out.push({ at: letter, blank: term });
-    if ("details" in term && term.details) details(term.details, letter);
-  }
+  const term = (t: Term, at: string): void => {
+    if (t.kind === "blank") out.push({ at, blank: t });
+    if ("details" in t && t.details) details(t.details, at);
+  };
+  if (claim.verb) term(claim.verb, "verb");
+  for (const [letter, t] of Object.entries(claim.roles) as [RoleLetter, Term][]) term(t, letter);
+  claim.predicate.forEach((t, i) => term(t, `predicate.${i}`));
   details(claim.details, "claim");
   return out;
 }
