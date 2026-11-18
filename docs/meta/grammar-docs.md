@@ -190,7 +190,7 @@ A grammar file is one sitting. A heading may stay on the page only when it passe
 | 7 | **Room** | At most **10** H3s ([sitting length](procedures/drill-generation.md#sitting-length)) | Split by job onto a sibling, each a full sitting |
 | 8 | **Teaches** | Every H3 homes a form, reading, or rule the learner uses now | Recap, unused-slot inventory, bounce, design notes, and applications do not stay: [empty stages](#empty-stages), [what belongs where](#what-belongs-where), [recipe track](#recipe-track) |
 
-**Lower bound.** A single-H3 sitting is fine when it passes 8 and earns its own checkpoint. Do not merge two sittings to fill a page; merge only when both are the same job on the same axis, the merge passes 1–8, and neither URL is a Beginner parent.
+**Lower bound.** A sitting gives each thing it teaches its own H3, so the page outline lists them: each form, reading, or rule the learner tells apart, with its own worked example. A single-H3 sitting is fine only when it teaches one thing and earns its own checkpoint. Do not merge two sittings to fill a page; merge only when both are the same job on the same axis, the merge passes 1–8, and neither URL is a Beginner parent.
 
 **Signals** (from `npm run page-lines -- --sittings --headings`)
 
@@ -198,6 +198,7 @@ A grammar file is one sitting. A heading may stay on the page only when it passe
 - A heading named after a different topic noun than the title (a page-within-a-page): check 2 and 3.
 - An H3 whose examples need no other H3 on the page: check 4.
 - Practice items that cluster on a few H3s while others get none: check 6.
+- A sitting with one H3: check whether it teaches more than one thing ([lower bound](#one-sitting)).
 
 When a test fails, peel or move by heading ([how to apply](learning-levels.md#how-to-apply)); never fix a failure by renaming headings so they look like one job.
 
