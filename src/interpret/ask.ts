@@ -10,21 +10,11 @@
  * Read the question against the log with `readQuestion` (log.ts), so its pronouns bind to the log's terms.
  */
 import { entryOf, type Log, type LogEntry } from "./log.js";
-import { framePath, match, withIslands, withListFrames, readingTree, type Binding, type FramePath, type MatchOptions, type Switch, type TermSite } from "./match.js";
-import type { Frame, Reading, Term } from "./types.js";
+import { referentOf, type Host } from "./host.js";
+import { framePath, match, withIslands, withListFrames, readingTree, type Binding, type FramePath, type MatchOptions, type Switch } from "./match.js";
+import type { Frame, Reading } from "./types.js";
 
-/** What the host supplies to a question. */
-export type Host = {
-  /**
-   * The host's referent for a term, when it can tell (a person or object in its world). Terms that both resolve match
-   * by referent; otherwise by root. A `speaker` term in the log has its turn's speaker in `entry`.
-   */
-  referent?: (term: Term, side: "query" | "target", site: TermSite & { entry?: LogEntry }) => string | undefined;
-  /** Switches, off by default ({@link Switch}). */
-  switches?: Partial<Record<Switch, boolean>>;
-  /** The parser's lexicon tables; `widen` reads compound heads from them. */
-  lexicon?: MatchOptions["lexicon"];
-};
+export type { Host };
 
 export type Match = {
   reading: Reading;
@@ -84,7 +74,8 @@ function carries(path: FramePath, filter: Frame, options: MatchOptions): boolean
 }
 
 /** Every reading in the log, nested ones included, that answers the question. */
-export function ask(question: Reading, log: Log, host: Host = {}): Match[] {
+export function ask<E>(question: Reading, log: Log, host: Host<E> = {}): Match[] {
+  const referent = referentOf(host);
   const tree = readingTree([...log.readings, question]);
   const filters = questionFilters(question);
   const out: Match[] = [];
@@ -94,8 +85,8 @@ export function ask(question: Reading, log: Log, host: Host = {}): Match[] {
     for (let parent = tree.get(top); parent; parent = tree.get(top)) top = parent.reading;
     const entry = entryOf(log, top);
     const options: MatchOptions = {
-      ...(host.referent
-        ? { referent: (term, side, site) => host.referent!(term, side, side === "target" ? { ...site, ...(entry ? { entry } : {}) } : site) }
+      ...(referent
+        ? { referent: (term, side, site) => referent(term, side, side === "target" ? { ...site, ...(entry ? { entry } : {}) } : site) }
         : {}),
       querySite: { reading: question },
       targetSite: { reading },
