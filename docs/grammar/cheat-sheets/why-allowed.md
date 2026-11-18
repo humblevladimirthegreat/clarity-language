@@ -148,6 +148,7 @@ Speaker attitude is your feeling about the whole claim, on `/th/` with `-m`. It 
 | [`thuwuyom`](/feelings#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
 | [`tholezem`](/feelings#speaker-attitude) | it went well by chance | *luckily* | I |
 | [`thewemum`](/feelings#speaker-attitude) | it concerns you | *worryingly* | I |
+| [`thonumum`](/feelings#speaker-attitude) | it angers you | *infuriatingly* | I |
 
 <PageBreak />
 
