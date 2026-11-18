@@ -186,6 +186,11 @@ export type Link = {
   answer?: AnswerRecord;
   /** grounds: the frame whose content the next sentence is; carriedFrame: the frame carried. */
   frame?: Frame;
+  /**
+   * carriedFrame: the reading's own speaker attitudes and feeling words, which sit over the carried frame
+   * (evidentiality.md#carry-forward). The carried frame covers the claim, never your own stance. Absent when there are none.
+   */
+  coveredBy?: Frame[];
   /** pairing: the list terms the *respectively* list pairs with, from the resolve stage's `PairingRecord` (one in every doc example; never picked between). */
   partners?: Term[];
 };

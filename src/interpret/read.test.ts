@@ -860,6 +860,40 @@ describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
     assert.deepEqual(carried(readings).map((c) => c.length), [0, 1]);
     assert.equal(readings[1]!.links.find((l) => l.kind === "standIn")!.to, `${readings[1]!.id}/d`);
   });
+
+  // Decided 2026-11-18 (15): a carried frame covers what you claim, never your own stance (evidentiality.md#carry-forward).
+  it("a sentence that only wants, plans or decides neither takes nor ends the frame", () => {
+    for (const stance of ["th-WANT-unstated", "th-plan-itinerary", "th-DECISION-modifiable"]) {
+      const readings = read(`z-Alazun | th-REPORTED | v-departure . z-Alazun | ${stance} | v-sing . z-Alazun | v-run`);
+      assert.deepEqual(carried(readings).map((c) => c.map((s) => s.split("->")[1])), [[], [], [`${readings[0]!.id}:stance`]], stance);
+    }
+  });
+
+  it("an attitude or a feeling word leaves the claim under the frame and sits over it", () => {
+    for (const [stance, family] of [["th-hostility", "attitude"], ["th-relatedness-met-any-term-STAYING-OPEN", "sake"]] as const) {
+      const readings = read(`z-Alazun | th-REPORTED | v-departure . z-Alazun | ${stance} | v-run`);
+      const link = readings[1]!.links.find((l) => l.kind === "carriedFrame")!;
+      assert.equal(link.to, readings[0]!.id, stance);
+      assert.deepEqual(link.coveredBy, [frame(readings[1]!, family)], stance);
+    }
+    const plainSake = read("z-Alazun | th-REPORTED | v-departure . z-Azozon | v-walk | th-physical-met-any-term");
+    assert.equal(plainSake[1]!.links.find((l) => l.kind === "carriedFrame")!.coveredBy, undefined);
+  });
+
+  it("polarity, speech manner and a new channel are unchanged", () => {
+    for (const body of ["z-Alazun | [v-run | v-not]", "th-clarity | z-Alazun | v-run"]) {
+      const readings = read(`z-Alazun | th-REPORTED | v-departure . ${body}`);
+      assert.deepEqual(carried(readings).map((c) => c.length), [0, 1], body);
+    }
+    const replaced = read("z-Alazun | th-REPORTED | v-departure . z-Azozon | th-hostility | th-MEMORY | v-walk . z-Azozon | v-sit");
+    assert.deepEqual(carried(replaced).map((c) => c.length), [0, 0, 1]);
+    assert.equal(replaced[2]!.links.find((l) => l.kind === "carriedFrame")!.to, replaced[1]!.id);
+  });
+
+  it("evidentiality.md: *I know who* after a written statement word takes no frame", () => {
+    const readings = read("z-Alazun | [th-REPORTED | [bl-person | bl-something]] | v-departure . y-statement | z-speaker | v-knowledge | d-whether-clause | z-something");
+    assert.deepEqual(carried(readings).flat(), []);
+  });
 });
 
 describe("reader audit (R8): doc examples, one per test, checked against the doc's meaning", () => {

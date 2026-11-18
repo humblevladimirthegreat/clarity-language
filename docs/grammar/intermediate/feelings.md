@@ -173,6 +173,7 @@ English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, fee
 | **`thuwuyom`** | you want it, and it is still open | *hopefully* | `uwuyol` *crossed-fingers* |
 | **`tholezem`** | it went well by chance | *luckily* | `olezel` *ladybug* |
 | **`thewemum`** | it concerns you | *worryingly* | `ewemul` *worried* |
+| **`thonumum`** | it angers you | *infuriatingly* | `onumul` *angry* |
 
 > `zazozon thuwuyom vowurol.`
 >

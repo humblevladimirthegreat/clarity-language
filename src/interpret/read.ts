@@ -1135,13 +1135,15 @@ export const CARRY_ANCHOR: Readonly<Record<CarryKind, string>> = {
 
 /**
  * A `carriedFrame` link on each later bare statement, one per frame the resolve stage says it inherits, to the reading
- * that set it (evidentiality.md#carry-forward). The frame is never copied into the later reading's `frames`.
+ * that set it (evidentiality.md#carry-forward). The frame is never copied into the later reading's `frames`. The
+ * reading's own attitudes and feeling words that the resolve stage says sit over it go in the link's `coveredBy`.
  */
 function carriedLinks(sentences: Reading[], carried: readonly BodyCarry[]): void {
   const at = new Map(sentences.map((r) => [`${r.source.utterance}.${r.source.body}`, r]));
   for (const record of carried) {
     const reading = at.get(`${record.utteranceIndex}.${record.bodyIndex}`);
     if (!reading) continue;
+    const coveredBy = (record.coveredBy ?? []).flatMap((word) => reading.frames.filter((f) => f.words.includes(word)));
     for (const carry of record.frames) {
       const source = at.get(`${carry.utteranceIndex}.${carry.bodyIndex}`);
       const frame = source?.frames.find((f) => f.family === CARRY_FAMILY[carry.kind] && f.words.includes(carry.word));
@@ -1151,6 +1153,7 @@ function carriedLinks(sentences: Reading[], carried: readonly BodyCarry[]): void
           anchor: carry.offset ? "dated-channel.md#dated-channel" : CARRY_ANCHOR[carry.kind],
           ...(source ? { to: source.id } : {}),
           ...(frame ? { frame } : {}),
+          ...(coveredBy.length > 0 ? { coveredBy } : {}),
         }),
       );
     }

@@ -136,17 +136,17 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 **Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
-When you don't name the source, `thebam bleyel blar` (*according to some person*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own:
+When you don't name the source, `thebam bleyel blar` (*according to some person*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own, in your own voice: the written `yal` keeps it out of the report.
 
 | Ageben | English |
 |--------|---------|
 | `zalazun thebam bleyel blar vudurul.` | *Alazun left, according to someone.* (says neither) |
-| `zalazun thebam bleyel blar vudurul. zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* |
-| `zalazun thebam bleyel blar vudurul. zuwen vanam vul derl zar.` | *Alazun left, according to someone. I don't know who.* (a rumor) |
+| `zalazun thebam bleyel blar vudurul. yal zuwen vanam derl zar.` | *Alazun left, according to someone. I know who.* |
+| `zalazun thebam bleyel blar vudurul. yal zuwen vanam vul derl zar.` | *Alazun left, according to someone. I don't know who.* (a rumor) |
 
-> `zalazun thebam bleyel blar vudurul. zuwen vanam derl zar.`
+> `zalazun thebam bleyel blar vudurul. yal zuwen vanam derl zar.`
 >
-> z-Alazun | [th-REPORTED | [bl-person | bl-something]] | v-departure . z-speaker | v-knowledge | d-whether-clause | z-something
+> z-Alazun | [th-REPORTED | [bl-person | bl-something]] | v-departure . y-statement | z-speaker | v-knowledge | d-whether-clause | z-something
 >
 > "Alazun left, according to someone. I know who."
 
@@ -250,6 +250,20 @@ Your statements with no channel of their own take the frame, including a stateme
 > z-Alazun | th-REPORTED | v-departure . y-question | z-Alazun | v-run . z-Alazun | v-sing
 >
 > "Alazun left, so they say. Did Alazun run? Alazun sang." (the singing is hearsay too)
+
+The frame says how you learned a claim, so it never covers your own [stance](/clause#stance-th). A sentence that only plans, wants, or decides claims nothing: it takes no frame and does not end it, and your next statement picks the frame up again. An [attitude or a feeling](feelings.md#speaker-attitude) about a claim leaves the claim under the frame, and the feeling stays yours, outside it.
+
+> `zalazun thebam vudurul. zuwen thagom vowurol. zalazun veruvol.`
+>
+> z-Alazun | th-REPORTED | v-departure . z-speaker | th-plan-itinerary | v-walk . z-Alazun | v-run
+>
+> "Alazun left, so they say. I plan to walk. Alazun ran." (the plan is yours; the running is hearsay)
+
+> `zalazun thebam vudurul. zalazun thonumum veruvol.`
+>
+> z-Alazun | th-REPORTED | v-departure . z-Alazun | th-hostility | v-run
+>
+> "Alazun left, so they say. I'm angry that, so they say, Alazun ran." (the running is hearsay; the anger is yours)
 
 The frame is not ended by a new [topic](topic.md#topic) or a return to one, the [sentence linkers](sentence-linkers.md#sentence-linkers) (*therefore*, *however*, *meanwhile*, *next*, *but*), clause joins, asides, or MAY. A story moves from one person to the next.
 

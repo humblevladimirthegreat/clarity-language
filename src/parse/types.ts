@@ -614,4 +614,13 @@ export type CarriedFrame = {
 };
 
 /** A sentence body and the frames it inherits, in the order of the words that set them. */
-export type BodyCarry = { utteranceIndex: number; bodyIndex: number; frames: CarriedFrame[] };
+export type BodyCarry = {
+  utteranceIndex: number;
+  bodyIndex: number;
+  frames: CarriedFrame[];
+  /**
+   * The body's own speaker attitudes and feeling words on `/th/` (their words): the carried frames sit under them, never
+   * over (evidentiality.md#carry-forward). Absent when there are none.
+   */
+  coveredBy?: LexWord[];
+};

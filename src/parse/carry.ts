@@ -14,7 +14,11 @@
  * - Takes it: a statement with no such frame of its own, including one after a call, a reaction or an answer word, one
  *   with a linker or a topic word, and one with MAY or MIRATIVE (evidentiality.md#carry-forward, mirative.md#mirative).
  * - Neither takes nor ends: a question, a command, a request (the act word that is the real act, more-turn-words.md#stacked-acts);
- *   a hello.
+ *   a hello; a statement that only wants, plans or decides (WANT, PLAN, DECISION), which claims nothing
+ *   (evidentiality.md#carry-forward, intention.md#plan, want-and-decide.md#want, #decision-revisability).
+ * - Under your own stance: a frame carried onto a statement with a speaker attitude or a feeling word on `/th/` sits under
+ *   it; the claim takes the frame and the feeling stays yours (evidentiality.md#carry-forward, feelings.md#speaker-attitude,
+ *   how-you-feel.md#feeling-word). `BodyCarry.coveredBy` names those words.
  * - Ends: a new channel, NOTIONAL or holder (it replaces the frame); a written statement word as the real act;
  *   *by the way* (`xavedam`); a goodbye (word-endings.md#greeting, as the resolve stage tells it from a hello).
  */
@@ -30,6 +34,24 @@ const CARRY_KEYS: Readonly<Record<string, CarryKind>> = {
   "overlay:notional:th": "notional",
   "xFamily:holder": "holder",
 };
+
+/** The keys of a stance that leaves no claim: its content is not asserted (intention.md#plan, want-and-decide.md#want, #decision-revisability). */
+const NO_CLAIM_KEYS: ReadonlySet<string> = new Set(["overlay:want:th", "overlay:plan:th", "overlay:decision:th"]);
+
+/** The key of a speaker attitude: an ordinary root on `/th/` (feelings.md#speaker-attitude). */
+const ATTITUDE_KEY = "slot:th";
+
+/** A feeling word: a sake word with its horizon moved mid-word and an urge (how-you-feel.md#feeling-word). Plain sake words are not. */
+function isFeelingWord(word: LexWord): boolean {
+  return word.family.kind === "x" && word.family.xFamily === "sake" && word.family.horizon !== undefined;
+}
+
+/** The words of a body's own whole-clause stances that a carried frame sits under (evidentiality.md#carry-forward). */
+function ownStanceWords(scope: ClauseScope | undefined): LexWord[] {
+  return (scope?.frames ?? [])
+    .filter((frame) => !frame.tone && (frame.key === ATTITUDE_KEY || (frame.family === "sake" && isFeelingWord(frame.word))))
+    .map((frame) => frame.word);
+}
 
 /** The real act is a statement: no written act word, or a statement word (`yal`, `yam`, `yar`) as the outer one. */
 function writtenAct(utterance: Utterance): "statement" | "other" | undefined {
@@ -94,7 +116,12 @@ export function carriedFrames(utterances: readonly Utterance[], scopes: readonly
         carry = own;
         return;
       }
-      if (carry.length > 0 && !isGreetingScope(scope)) out.push({ utteranceIndex, bodyIndex, frames: carry });
+      // Only wanting, planning or deciding claims nothing: the frame skips it (evidentiality.md#carry-forward).
+      if ((scope?.frames ?? []).some((frame) => NO_CLAIM_KEYS.has(frame.key))) return;
+      if (carry.length > 0 && !isGreetingScope(scope)) {
+        const coveredBy = ownStanceWords(scope);
+        out.push({ utteranceIndex, bodyIndex, frames: carry, ...(coveredBy.length > 0 ? { coveredBy } : {}) });
+      }
     });
   });
   return out;
