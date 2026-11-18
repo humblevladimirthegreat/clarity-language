@@ -7,7 +7,7 @@
  * matcher never decides that a framed claim holds; that is the host's verdict.
  */
 import { entryOf, type Log, type LogEntry } from "./log.js";
-import { framePath, match, negated, readingTree, type Binding, type FramePath, type MatchOptions, type Switch, type TermSite } from "./match.js";
+import { framePath, match, withIslands, negated, readingTree, type Binding, type FramePath, type MatchOptions, type Switch, type TermSite } from "./match.js";
 import type { Frame, Reading, Term } from "./types.js";
 
 /** What the host supplies to a question. */
@@ -82,7 +82,7 @@ export function ask(question: Reading, log: Log, host: Host = {}): Match[] {
     };
     const binding = match(question.claim, reading.claim, options);
     if (!binding) continue;
-    const path = framePath(reading, tree);
+    const path = withIslands(framePath(reading, tree), binding.islands);
     if (!filters.every((f) => carries(path, f, options))) continue;
     out.push({ reading, ...(entry ? { entry } : {}), binding, path, unsettled: path.unsettled, switches: binding.switches });
   }

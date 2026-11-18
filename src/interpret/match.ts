@@ -14,7 +14,7 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
-import { detailNumber, sameNumberWord, samePayload, termNumber } from "./value.js";
+import { detailNumber, sameNumberKind, sameNumberWord, samePayload, termNumber } from "./value.js";
 
 // ── Switches ────────────────────────────────────────────────────────────────
 
@@ -59,6 +59,11 @@ export type Binding = {
   blanks: BlankBinding[];
   /** The switches the match went through; empty for a match on the claim as said. */
   switches: Switch[];
+  /**
+   * The scope islands whose roles the match used, where the target claim lacks the role (scope-islands.md#scope-islands):
+   * their readings go on the frame path, so a stance inside the island stays with the match. Absent when none.
+   */
+  islands?: Reading[];
 };
 
 // ── Terms ───────────────────────────────────────────────────────────────────
@@ -81,6 +86,8 @@ type State = {
   /** Pairing group → the member place chosen in it. */
   pairChoice: Map<object, number>;
   undo: (() => void)[];
+  /** The island readings whose roles the match used ({@link Binding.islands}). */
+  islands: Reading[];
   /** The target claim's verb is not collective: a closed `zual` + kind may stand for an instance. */
   inUniversal: boolean;
 };
@@ -99,9 +106,24 @@ function sameDetailWords(query: Detail, target: Detail): boolean {
 }
 
 function detailMatch(query: Detail, target: Detail, state: State, at: string): boolean {
+  if (query.hosted?.kind === "blank" && detailNumber(query)) return numberBlank(query, target, state, at);
   if (query.key !== target.key || !sameDetailWords(query, target)) return false;
   if (query.hosted && !(target.hosted && termMatch(query.hosted, target.hosted, state, `${at}/hosted`))) return false;
   return detailsSubset(query.details ?? [], target.details ?? [], state, at);
+}
+
+/**
+ * A number blank in a detail (`grar`, *how many? / how much?*, digitless-exponents.md#how-many): it binds to the target's number
+ * detail of the same key and the same kind of number, as a number term. The unit is the term the detail sits on, which
+ * the enclosing term match has already matched (a measure phrase, measures-and-percent.md#measure-phrases).
+ */
+function numberBlank(query: Detail, target: Detail, state: State, at: string): boolean {
+  const q = detailNumber(query)!;
+  const t = detailNumber(target);
+  if (query.key !== target.key || !t || !sameNumberKind(q, t) || t.family.kind !== "number") return false;
+  if (!detailsSubset(query.details ?? [], target.details ?? [], state, at)) return false;
+  state.blanks.push({ at: `${at}/number`, blank: query.hosted!, term: { kind: "number", word: t, stem: t.family.stem } });
+  return true;
 }
 
 /** Every query detail has a matching target detail. */
@@ -228,7 +250,8 @@ function collective(claim: Claim): boolean {
 function claimMemberLists(target: Claim, reading: Reading | undefined): Map<Term, object | undefined> {
   const out = new Map<Term, object | undefined>();
   if (collective(target)) return out;
-  const terms = [...Object.values(target.roles), ...target.predicate].filter((t): t is Term => t !== undefined);
+  // A pronoun that resumes a list stands for that list (reader rule 6: the reader points it at the list term).
+  const terms = [...Object.values(target.roles), ...target.predicate].filter((t): t is Term => t !== undefined).map(throughAntecedent);
   const lists = terms.filter((t): t is ListTerm => t.kind === "list");
   for (const link of reading?.links ?? []) {
     if (link.kind !== "pairing" || !link.partners?.length) continue;
@@ -300,7 +323,7 @@ function claimMatch(query: Claim, target: Claim, state: State, at: string, targe
     if (query.verb && !(target.verb && termMatch(query.verb, target.verb, state, `${prefix}verb`))) return false;
     for (const [letter, term] of Object.entries(query.roles) as [keyof Claim["roles"], Term][]) {
       const other = target.roles[letter];
-      if (!other || !termMatch(term, other, state, `${prefix}${letter}`)) return false;
+      if (other ? !termMatch(term, other, state, `${prefix}${letter}`) : !islandRole(letter, term, target, state, prefix)) return false;
     }
     const predicateOk = query.predicate.every((term, i) =>
       target.predicate.some((other) => tryIn(state, () => termMatch(term, other, state, `${prefix}predicate.${i}`))),
@@ -313,12 +336,35 @@ function claimMatch(query: Claim, target: Claim, state: State, at: string, targe
   }
 }
 
+/**
+ * A role the target claim lacks, found in one of its scope islands (scope-islands.md#scope-islands): the island holds a
+ * chunk of the clause, so its `/b/` is still the clause's recipient. The reader keeps the phrase in the island's
+ * reading (rule 2); the match records the island, so its frames go on the path.
+ */
+function islandRole(letter: keyof Claim["roles"], query: Term, target: Claim, state: State, prefix: string): boolean {
+  for (const detail of target.details) {
+    if (detail.kind !== "island") continue;
+    for (const island of detail.content ?? []) {
+      const other = island.claim.roles[letter];
+      if (!other) continue;
+      const ok = tryIn(state, () => {
+        if (!termMatch(query, other, state, `${prefix}${letter}`)) return false;
+        state.islands.push(island);
+        state.undo.push(() => state.islands.pop());
+        return true;
+      });
+      if (ok) return true;
+    }
+  }
+  return false;
+}
+
 /** Does the query claim fit the target claim? The blanks it binds and the switches it went through, or undefined. */
 export function match(query: Claim, target: Claim, options: MatchOptions = {}): Binding | undefined {
-  const state: State = { options, blanks: [], switches: [], memberLists: new Map(), pairChoice: new Map(), undo: [], inUniversal: false };
+  const state: State = { options, blanks: [], switches: [], memberLists: new Map(), pairChoice: new Map(), undo: [], islands: [], inUniversal: false };
   if (!claimMatch(query, target, state, "", options.targetSite?.reading)) return undefined;
   const used = new Set(state.switches);
-  return { blanks: state.blanks, switches: SWITCH_ORDER.filter((s) => used.has(s)) };
+  return { blanks: state.blanks, switches: SWITCH_ORDER.filter((s) => used.has(s)), ...(state.islands.length ? { islands: [...new Set(state.islands)] } : {}) };
 }
 
 // ── Where readings sit ──────────────────────────────────────────────────────
@@ -423,6 +469,11 @@ export type FramePath = {
   stanceLists: StanceList[];
   /** Pairs no rule orders, from every reading on the path; a match with any is not to be filed under an order. */
   unsettled: [Frame, Frame][];
+  /**
+   * The scope islands of the matched reading the match looked into ({@link Binding.islands}): each island's frames
+   * follow the matched reading's in `frames`, and its pairs are in `unsettled`. Absent when none.
+   */
+  islands?: Reading[];
 };
 
 function frameMembers(list: StanceList): Frame[] {
@@ -484,6 +535,18 @@ function readingFrames(reading: Reading): PathFrame[] {
 }
 
 /** The frame path of a reading: its frames and those of every reading that contains it (`tree` from {@link readingTree}). */
+/** A path with the islands a match looked into: their frames and unsettled pairs join the matched reading's. */
+export function withIslands(path: FramePath, islands: readonly Reading[] | undefined): FramePath {
+  if (!islands?.length) return path;
+  return {
+    ...path,
+    frames: [...path.frames, ...islands.flatMap(readingFrames)],
+    stanceLists: [...path.stanceLists, ...islands.flatMap((r) => r.stanceLists ?? [])],
+    unsettled: [...path.unsettled, ...islands.flatMap((r) => r.unordered)],
+    islands: [...islands],
+  };
+}
+
 export function framePath(reading: Reading, tree: Map<Reading, Parent | undefined>): FramePath {
   const readings: Reading[] = [];
   const via: Via[] = [];

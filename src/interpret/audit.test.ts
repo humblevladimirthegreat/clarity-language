@@ -214,13 +214,14 @@ describe("audit: scope island", () => {
     assert.deepEqual(found(said, "y-question | z-Azozon | v-tell"), ["0:A [] {}"]);
     assert.deepEqual(found(said, "y-question | z-Azozon | v-tell | h-possibility"), []);
   });
-  it(
-    "A16 scope-islands.md#scope-islands: the recipient inside the island is still the clause's /b/ (scope-islands.md:54)",
-    { todo: "reader: the island's /b/ sits in a nested island reading, so the outer claim has no b role to match" },
-    () => {
-      assert.deepEqual(found(said, "y-question | z-Azozon | b-Alazun | v-tell"), ["0:A [] {}"]);
-    },
-  );
+  it("A16 scope-islands.md#scope-islands: the recipient inside the island is still the clause's /b/ (scope-islands.md:54)", () => {
+    const matches = asked(said, "y-question | z-Azozon | b-Alazun | v-tell");
+    assert.deepEqual(matches.map(summary), ["0:A [] {}"]);
+    // The island, with its *possibly*, is on the match's path.
+    const island = matches[0]!.path.islands?.[0];
+    assert.ok(island, "the island reading is on the path");
+    assert.deepEqual(island.claim.details.map((d) => d.words.map((w) => w.raw).join(" ")), ["hogugem"]);
+  });
 });
 
 describe("audit: numbers and measures", () => {
@@ -229,18 +230,24 @@ describe("audit: numbers and measures", () => {
     assert.deepEqual(found(said, "yel zalazun d+3 vayebel."), ["0:A [] {}"]);
     assert.deepEqual(found(said, "yel zalazun dragem vayebel."), []);
   });
-  it(
-    "A17 number-markers.md#number-endings: a number resume has the value it resumes (number-markers.md:85)",
-    { todo: "matcher: `drager` (those three again) does not match a question about three" },
-    () => {
-      assert.deepEqual(found(said, "y-question | z-Azozon | d-three | v-see"), ["1:A [] {}"]);
-    },
-  );
+  it("A17 number-markers.md#number-endings: a number resume has the value it resumes (number-markers.md:85)", () => {
+    assert.deepEqual(found(said, "y-question | z-Azozon | d-three | v-see"), ["1:A [] {}"]);
+  });
 
   it("A18 measures-and-percent.md#measure-phrases: *about two hours* matches about, not exactly two (measures-and-percent.md:222)", () => {
     const walk = passage("zazozon vowurol bagorum gradom.");
     assert.deepEqual(found(walk, "yel zazozon vowurol bagorum gradol."), []);
     assert.deepEqual(found(walk, "yel zazozon vowurol bagorum gradom."), ["0:A [] {}"]);
+  });
+
+  it("A24 digitless-exponents.md#how-many: *how many hours?* binds the amount of the measure phrase (measures-and-percent.md:222)", () => {
+    const walk = passage("zazozon vowurol bagorum gradom.");
+    const matches = asked(walk, "yel zazozon vowurol bagorum grar.");
+    assert.deepEqual(matches.map(summary), ["0:A [b/detail.0/number=number] {}"]);
+    const bound = matches[0]!.binding.blanks[0]!.term;
+    assert.equal(bound.kind === "number" ? bound.word.raw : bound.kind, "gradom");
+    // A walk with no amount gives the blank nothing to bind.
+    assert.deepEqual(found(passage("zazozon vowurol."), "yel zazozon vowurol bagorum grar."), []);
   });
 });
 
@@ -259,14 +266,10 @@ describe("audit: switches", () => {
     assert.deepEqual(found(said, "y-question | z-Alazun | v-walk"), []);
     assert.deepEqual(found(said, "y-question | z-Alazun | v-walk", { infer: true }), ["0:A [] {} +infer"]);
   });
-  it(
-    "A20 joins.md (and-lists): *they sit* resumes the list, so a blank binds it whole and infer reaches a member (joins.md:44)",
-    { todo: "reader: the pointer's antecedent is a new `thing` rooted in the join word `zal`, not the list term" },
-    () => {
-      assert.deepEqual(found(said, "y-question | z-wh | v-sit"), ["1:A [z=list(azozo,alazu)] {}"]);
-      assert.deepEqual(found(said, "y-question | z-Alazun | v-sit", { infer: true }), ["1:A [] {} +infer"]);
-    },
-  );
+  it("A20 joins.md (and-lists): *they sit* resumes the list, so a blank binds it whole and infer reaches a member (joins.md:44)", () => {
+    assert.deepEqual(found(said, "y-question | z-wh | v-sit"), ["1:A [z=list(azozo,alazu)] {}"]);
+    assert.deepEqual(found(said, "y-question | z-Alazun | v-sit", { infer: true }), ["1:A [] {} +infer"]);
+  });
 
   it("A21 compounds.md#dictionary-compounds: widen finds a doorbell on a question about a bell, and says so", () => {
     // Both phrases are new members, so the binder is on the path; decision 18 does not change this pair's outcome.

@@ -13,6 +13,7 @@
  * A digitless word, a digitless exponent, a negative label (`#_`) or an error bound (`+-`, stacked-markers.md#stacked-markers)
  * has no value here: such words compare by their stem only.
  */
+import { numberMarkerIdentity } from "../parse/resolve.js";
 import type { LexWord, NumberGroup, NumberStem } from "../parse/types.js";
 import type { Detail, Term } from "./types.js";
 
@@ -144,6 +145,13 @@ export function measureValue(term: Term): MeasureValue | undefined {
   const amount = wordValue(numbers[0]!);
   if (!amount) return undefined;
   return { unit: term.root, amount, ...(approx(numbers[0]!) ? { approx: true as const } : {}) };
+}
+
+/** Two number words are the same kind of number: the same marker identity (a count, a rank, ...; numbers.md#markers). */
+export function sameNumberKind(a: LexWord, b: LexWord): boolean {
+  const sa = wordStem(a);
+  const sb = wordStem(b);
+  return sa !== undefined && sb !== undefined && numberMarkerIdentity(sa.marker) === numberMarkerIdentity(sb.marker);
 }
 
 /** Two number words name the same number: equal values and the same ending (an exact amount is not an *about* one); words without a value compare by stem. */

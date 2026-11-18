@@ -146,8 +146,11 @@ type Ctx = {
   /** The scope record of each turn with no body, by utterance (a bare question, a call). */
   bodiless: Map<number, ClauseScope>;
   anaphors: Map<LexWord, AnaphorBind>;
-  /** Each pronoun term read so far, by its word: a later pronoun that resumes it points at it (reader rule 6). */
-  pronouns: Map<LexWord, Term>;
+  /**
+   * Each term read so far, by the word it was built from (a thing, number, pronoun, ...): a later pronoun that resumes
+   * that word points at it (reader rule 6). A list is found by its join word in `lists`.
+   */
+  terms: Map<LexWord, Term>;
   blanks: Set<LexWord>;
   /** Phrases inside a title (proper-names.md#titled-phrases): a name's wording, no new member. */
   titled: Set<NpCoord>;
@@ -281,16 +284,17 @@ function thing(word: LexWord): Term {
 }
 
 /**
- * A pronoun term. Its antecedent is the word the resolver's bind names: the term already read for it when that word is
- * itself a pronoun (which holds its own antecedent, so a chain goes on), else a term of that word. Never bound here
- * (reader rule 6).
+ * A pronoun term. Its antecedent is the word the resolver's bind names: the term already read from that word, whatever
+ * its kind (a pronoun holds its own antecedent, so a chain goes on; a join word names its list), else a term of that
+ * word. Never bound here (reader rule 6).
  */
 function pronoun(word: LexWord, here: Here): Term {
   const bind = here.ctx.anaphors.get(word);
   if (bind) here.reading.links.push(link("anaphor", `anaphor:${bind.kind}`, [word], { bind }));
-  const antecedent = bind?.antecedent ? (here.ctx.pronouns.get(bind.antecedent) ?? thing(bind.antecedent)) : undefined;
+  const at = bind?.antecedent;
+  const antecedent = at ? (here.ctx.terms.get(at) ?? here.ctx.lists.get(at) ?? thing(at)) : undefined;
   const term: Term = { kind: "pronoun", word, ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}) };
-  here.ctx.pronouns.set(word, term);
+  here.ctx.terms.set(word, term);
   return term;
 }
 
@@ -339,11 +343,19 @@ function spanTerm(word: LexWord, here: Here): Term {
   return term;
 }
 
+/** The term a role phrase's head word builds, kept by its word so a later pronoun that resumes it points at it. */
 function headTerm(word: LexWord, here: Here, clause: Clause): Term {
+  const term = buildHeadTerm(word, here, clause);
+  if (!here.ctx.terms.has(word)) here.ctx.terms.set(word, term);
+  return term;
+}
+
+function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
   const family = word.family;
   const ctx = here.ctx;
   if (ctx.blanks.has(word)) return { kind: "blank", word };
-  if (family.kind === "number") return { kind: "number", word, stem: family.stem };
+  // A number resume (`drager`, number-markers.md#number-endings) is a pronoun on the number it resumes.
+  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem };
   if (family.kind === "foreign") return { kind: "literal", word, payload: family.payload };
   if (family.kind === "writingSpan") return spanTerm(word, here);
   if (family.kind === "content" && word.ending === "n" && family.roots.length === 1) {
@@ -442,6 +454,9 @@ function adjDetail(pkg: GPackage, here: Here, clause: Clause): Detail {
     if (pkg.asOf.bound) asOf.hosted = headTerm(pkg.asOf.bound, here, clause);
     detail.details = [...(detail.details ?? []), asOf];
   }
+  // A digitless `-r` number under a question is the blank *how many? / how much?* (digitless-exponents.md#how-many): the detail
+  // keeps the word and hosts the blank, so a blank on a count or a measure's amount binds like a role's.
+  if (here.ctx.blanks.has(word) && word.family.kind === "number") detail.hosted = { kind: "blank", word };
   const hosted = hostedTerm(pkg.hosted, here, clause, detail.frames?.[0]);
   if (hosted) {
     if (row?.cls === "frame:sake" && detail.frames?.[0]) detail.frames[0].party = hosted;
@@ -1071,7 +1086,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     scopes: new Map((info?.scope ?? []).filter((s) => !s.bodiless).map((s) => [s.clause, s])),
     bodiless: new Map((info?.scope ?? []).filter((s) => s.bodiless).map((s) => [s.utteranceIndex, s])),
     anaphors: new Map((info?.anaphors ?? []).map((a) => [a.pronoun, a])),
-    pronouns: new Map(),
+    terms: new Map(),
     blanks: new Set((info?.asks ?? []).flatMap((a) => [...a.gaps, ...(a.inner ?? [])])),
     titled: new Set(),
     shared: new Map(),
