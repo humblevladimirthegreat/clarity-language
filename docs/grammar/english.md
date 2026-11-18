@@ -93,7 +93,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | grounds (*as the sky is gray, it will rain*) | **`theyom blarl`** / **`thubom blarl`** | [Evidence clause](/evidentiality#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](/comparatives#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](/comparative-arity#full-comparative-arity) |
-| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](/stance-bars#stance-bars) |
+| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](/stance-bars#limits-and-hopes) |
 | set the scene for one sentence (*as for Azozon*) | **`hehugom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
 | not in that role (*not as a teacher*, off duty) | reach `ue` on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |

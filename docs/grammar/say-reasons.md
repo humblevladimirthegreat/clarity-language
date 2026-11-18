@@ -19,7 +19,7 @@ English links a time, a contrast or a reason to a claim with one word, such as *
 | *despite* (NP) | same **`thezem`** (or **`gezem`**) + `/b/` noun, not a second hinge: `zazozon vowurol thezem blalazun.` |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwuvul` / `uom hwudum` / `uom thagom` / `uom thogel` / `uom thebam` ([contrary to a stance](/contrary-to#contrary-to-stance)) |
 | *though I promised* / *breaking my promise* | **`thezem blarl`** + the promise as its own sentence: `zuwen vezuvel thezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/contrary-to#contrary-to-stance)) |
-| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uom hwudum`**; past the agreed terms is the consent bar **`hwudam`** ([every bar](/stance-bars#stance-bars)) |
+| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uom hwudum`**; past the agreed terms is the consent bar **`hwudam`** ([every bar](/stance-bars#which-bar)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyom blarl`** / **`thubom blarl`** ([evidence clause](/evidentiality#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahom`** ([continue](/speech-moves#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahol`** ([sentence linkers](/sentence-linkers#sentence-linkers)) |
@@ -38,7 +38,7 @@ English links a time, a contrast or a reason to a claim with one word, such as *
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#mechanism) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#mechanism) · [Every bar](/stance-bars#which-bar)
 
 English adverbs like *obviously*, *apparently* and *presumably* say *how you know* a claim. Ageben has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: `-l` solid, `-m` ordinary, `-r` thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how *you* feel about the claim, so it is an attitude word.
 
@@ -308,9 +308,9 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 ### Biased, wishful thinking, overconfident {#biased}
 
-**Needs:** [Motive](/for-a-sake#sake-preference) · [Want](/want-and-decide#want) · [MAY](/knowing#may) · [Speech manner](/speech-manner#speech-manner) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Motive](/for-a-sake#sake-preference) · [Want](/want-and-decide#want) · [MAY](/knowing#may) · [Speech manner](/speech-manner#speech-manner) · [Every bar](/stance-bars#which-bar)
 
-English *biased* says a view may be bent by what the holder wants from it. Ageben says that outright: put a [motive](/for-a-sake#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`uda`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](/stance-bars#stance-bars) on *trust*.
+English *biased* says a view may be bent by what the holder wants from it. Ageben says that outright: put a [motive](/for-a-sake#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`uda`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](/stance-bars#which-bar) on *trust*.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -588,7 +588,7 @@ On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it o
 
 ### Wrong, ugly {#wrong-ugly}
 
-**Needs:** [Fault](/fault#fault) · [Every bar](/stance-bars#stance-bars) · [Negation](/joins#negation-u) · [Unmet](/sakes#sake-changeability)
+**Needs:** [Fault](/fault#fault) · [Every bar](/stance-bars#which-bar) · [Negation](/joins#negation-u) · [Unmet](/sakes#sake-changeability)
 
 English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is *incorrect* (not matching), *morally wrong* (someone broke a norm), or *bad for someone* (a sake unmet). *Ugly* is *not beautiful*, *less beautiful than a bar*, or *unpleasant to me*.
 

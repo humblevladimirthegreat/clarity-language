@@ -45,7 +45,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 z-Alazun | v-deny | [z-child | g-sleepy]
 
-**Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
+**Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#speech-act-verbs)
 :::
 
 **2.** *Alazun and Ahelan cook something other than a tomato and a watermelon.*
@@ -169,7 +169,7 @@ z-Alazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
 Before the rank join, REPORTED is the bar: what Ahelan said sets the level. After the fence it is a stance on the whole superlative: *Alazun is the sleepiest, Ahelan says*.
 
-**Rule:** [Every bar](stance-bars.md#stance-bars)
+**Rule:** [Every bar](stance-bars.md#who-sets-the-bar)
 :::
 
 **3.** *Azozon sees a huge but finite number of baguettes.* `zazozon debodolx grawam vayebel.` or `zazozon debodolx grawal vayebel.`
@@ -205,7 +205,7 @@ z-Azozon | v-command | z-Alazun | v-cook
 
 **`vorn`** takes the next sentence as an instruction; **`varn`** would only state that Alazun cooks.
 
-**Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#stand-in-roles)
+**Rule:** [Lexicalized stand-ins in other roles](stand-in-roles.md#speech-act-verbs)
 :::
 
 **6.** *There is a second-to-last baguette.* `zebodol gruodol.` or `zebodol grodol.`

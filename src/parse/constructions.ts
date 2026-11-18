@@ -333,7 +333,7 @@ export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyR
   restrictor: { anchor: "restrictors.md#only-when-never-hal", summary: "restrictor" },
   join: { anchor: "joins.md#and-lists-a", summary: "join" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in" },
-  standInNamed: { anchor: "stand-in-roles.md#stand-in-roles", summary: "named stand-in" },
+  standInNamed: { anchor: "stand-in-roles.md#speech-act-verbs", summary: "named stand-in" },
   standInBack: { anchor: "stand-in-vowels.md#stand-in-back", summary: "backward stand-in" },
   number: { anchor: "numbers.md#counts", summary: "number" },
   unknown: { anchor: "spans.md#writing", summary: "unclassified root" },
@@ -347,7 +347,7 @@ export const WORD_ENDING_CONSTRUCTIONS: Record<Ending, ConstructionEntry> = {
   r: { anchor: "pronouns.md#resume-r", summary: "-r resume" },
   rl: { anchor: "dependents.md#dependent-clauses", summary: "-rl stand-in" },
   rm: { anchor: "stand-in-vowels.md#stand-in", summary: "-rm stand-in" },
-  rn: { anchor: "stand-in-roles.md#stand-in-roles", summary: "-rn named stand-in" },
+  rn: { anchor: "stand-in-roles.md#speech-act-verbs", summary: "-rn named stand-in" },
   rth: { anchor: "stand-in-vowels.md#stand-in-back", summary: "-rth backward stand-in" },
 };
 

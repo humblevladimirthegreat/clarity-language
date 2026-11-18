@@ -1239,7 +1239,7 @@ function enforceIsland(island: IslandUnit, tables: ClassifyTables): void {
   enforceUnitList(island.units, tables);
 }
 
-/** `zuam gagadul thobam zel …`: a closed `ua` fence is the one item ranked against the bar after it (stance-bars.md#stance-bars). */
+/** `zuam gagadul thobam zel …`: a closed `ua` fence is the one item ranked against the bar after it (stance-bars.md#ranking-a-kind). */
 function rankedUniversalFence(coord: NpCoord): boolean {
   const [fence, bar] = coord.parts;
   return (

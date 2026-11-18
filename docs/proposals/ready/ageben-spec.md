@@ -85,7 +85,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | Nice to have | want: `thalom` | [want](/want-and-decide#want) |
 | Spike or prototype | try, trial run: `howar` | [try](/try#trying) |
 | Scope by release: can / not yet / blocked for now / never | ability `xa` / `xe` / `xo` / `xu` | [ability](/can-and-cant#ability-stance) |
-| Budgets and limits (*at most*, *up to code*, *over the limit*) | bars on a say word: `hwuvol zoel`, `hwuval zol` | [stance bars](/stance-bars#stance-bars), [bars](/bars#bars) |
+| Budgets and limits (*at most*, *up to code*, *over the limit*) | bars on a say word: `hwuvol zoel`, `hwuval zol` | [stance bars](/stance-bars#limits-and-hopes), [bars](/bars#bars) |
 | Quantities, ranges, percentages, times | numerals, ranges, measures | [number ranges](/ranges#number-ranges), [measures](/measures-and-percent#measure-phrases), [percent](/measures-and-percent#percent-and-percentage-points), [time](/digit-strings#time) |
 | Includes / excludes / prioritizes | list verbs | [list verbs](/list-verbs#list-verbs) |
 | Exclusive choice, whole-list denial | set joins | [set joins](/set-joins#exclusivity-and-denying-a-whole-list) |

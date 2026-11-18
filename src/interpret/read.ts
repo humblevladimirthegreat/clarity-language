@@ -1035,7 +1035,7 @@ function readClause(clause: Clause, utterance: number, body: number, id: Reading
       values: {},
       content: [dependent],
     };
-    // A verb stand-in (`vaon`, stand-in-roles.md#stand-in-roles) is the verb, and the next clause is its content: the
+    // A verb stand-in (`vaon`, stand-in-roles.md#speech-act-verbs) is the verb, and the next clause is its content: the
     // dependent nests on the verb's term, one place for the word.
     const verb = verbHeaded(reading.claim.verb, clause.dependent.orodo);
     if (verb) verb.details.push(detail);

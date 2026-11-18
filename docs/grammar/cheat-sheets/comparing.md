@@ -91,15 +91,15 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [More than planned, on an object](/bars#bars) | `zazozon dodelx thagom dol gral vagedal.` | *Azozon eats more strawberries than planned.* | I |
 | [Often, on a recipient](/bars#bars) | `zazozon vezuyol balazun thagom bol hral.` | *Azozon tells Alazun more often than planned.* | I |
 | [Than usual](/bars#channel-bars) | `zazozon thubom zol guzemel.` | *Azozon is sleepier than usual.* | I |
-| [Than I remember](/stance-bars#stance-bars) | `zazozon thevum zol gelazem.` | *Azozon is bigger than I remember.* | A |
-| [Than advertised](/stance-bars#stance-bars) | `zanal thebam zuol gagebem.` | *The book is less clear than advertised.* | A |
-| [Than I expected](/stance-bars#stance-bars) | `zazozon thabem zol guzemel.` | *Azozon is sleepier than I expected.* | A |
-| [Than they used to be](/stance-bars#stance-bars) | `zazozon helam zol guzemel.` | *Azozon is sleepier than they used to be.* | A |
-| [As … as possible](/stance-bars#stance-bars) | `zalazun hodaxal zoel hadurom vowurol.` | *Alazun walks as hastily as possible.* | A |
-| [Up to code](/stance-bars#stance-bars) | `zohehal hwuvol zoel gabobem.` | *The house is as strong as the rules require.* | A |
-| [More than allowed](/stance-bars#stance-bars) | `zedudal hwuval zol gral.` | *There is more tea than the rules allow.* | A |
-| [Than hoped](/stance-bars#stance-bars) | `zanal thuwuyom zol gagebem.` | *The book is clearer than I hoped.* | A |
-| [Than feared](/stance-bars#stance-bars) | `zanal thewemum zuol gagebem.` | *The book is even less clear than I feared.* | A |
+| [Than I remember](/stance-bars#which-bar) | `zazozon thevum zol gelazem.` | *Azozon is bigger than I remember.* | A |
+| [Than advertised](/stance-bars#which-bar) | `zanal thebam zuol gagebem.` | *The book is less clear than advertised.* | A |
+| [Than I expected](/stance-bars#which-bar) | `zazozon thabem zol guzemel.` | *Azozon is sleepier than I expected.* | A |
+| [Than they used to be](/stance-bars#which-bar) | `zazozon helam zol guzemel.` | *Azozon is sleepier than they used to be.* | A |
+| [As … as possible](/stance-bars#limits-and-hopes) | `zalazun hodaxal zoel hadurom vowurol.` | *Alazun walks as hastily as possible.* | A |
+| [Up to code](/stance-bars#limits-and-hopes) | `zohehal hwuvol zoel gabobem.` | *The house is as strong as the rules require.* | A |
+| [More than allowed](/stance-bars#limits-and-hopes) | `zedudal hwuval zol gral.` | *There is more tea than the rules allow.* | A |
+| [Than hoped](/stance-bars#limits-and-hopes) | `zanal thuwuyom zol gagebem.` | *The book is clearer than I hoped.* | A |
+| [Than feared](/stance-bars#limits-and-hopes) | `zanal thewemum zuol gagebem.` | *The book is even less clear than I feared.* | A |
 
 <PageBreak />
 
@@ -108,17 +108,17 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 <!-- cheat-sheet: comparing -->
 | Bar | Ranks against | English | Stage |
 |-----|---------------|---------|-------|
-| [met sake `thudatham`, `thobatham`, …](/stance-bars#stance-bars) | what that sake needs | *enough* / *too much* / *not enough* | A |
+| [met sake `thudatham`, `thobatham`, …](/stance-bars#which-bar) | what that sake needs | *enough* / *too much* / *not enough* | A |
 | [a channel: LIVE `thugem`, MEMORY `thevum`, PATTERN `thubom`, CLUES `theyom`, REPORTED `thebam`, INTUITION `thabem`](/bars#channel-bars) | what that source led you to expect | *than usual* / *normal* / *than I remember* / *than last time* / *than it should be* / *than they said* | I |
-| [FORMER `helam`](/stance-bars#stance-bars) | how it used to be | *than it used to be* / *increasingly* | A |
-| [NOTIONAL `theyum`](/stance-bars#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
-| [PLAN `thagom`](/stance-bars#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
-| [WANT `thalol` / `thalom` / `thalor`](/stance-bars#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
-| [ability `hodaxal`](/stance-bars#stance-bars) | what can be done | *as … as possible* | A |
-| [a requirement `hwuvol` / `hwuvom` / `hwuvor`](/stance-bars#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
-| [a permission `hwuval` / `hwuvam` / `hwuvar`](/stance-bars#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
-| [consent `hwudam`](/stance-bars#stance-bars) | the agreed terms | *more than agreed* | A |
-| [speaker attitude `thuwuyom`, `thewemum`](/stance-bars#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
+| [FORMER `helam`](/stance-bars#which-bar) | how it used to be | *than it used to be* / *increasingly* | A |
+| [NOTIONAL `theyum`](/stance-bars#which-bar) | the imagined case | *than imagined* / *than in theory* | A |
+| [PLAN `thagom`](/stance-bars#which-bar) | the plan or the schedule | *than planned* / *than scheduled* | A |
+| [WANT `thalol` / `thalom` / `thalor`](/stance-bars#which-bar) | the level wanted | *than wanted* / *than I wanted* | A |
+| [ability `hodaxal`](/stance-bars#limits-and-hopes) | what can be done | *as … as possible* | A |
+| [a requirement `hwuvol` / `hwuvom` / `hwuvor`](/stance-bars#limits-and-hopes) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
+| [a permission `hwuval` / `hwuvam` / `hwuvar`](/stance-bars#limits-and-hopes) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
+| [consent `hwudam`](/stance-bars#which-bar) | the agreed terms | *more than agreed* | A |
+| [speaker attitude `thuwuyom`, `thewemum`](/stance-bars#limits-and-hopes) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
 The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the one who demands or grants (a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE (*it turns out*), DECISION, and ATTEMPT are not.
 

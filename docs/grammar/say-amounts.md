@@ -219,7 +219,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 ### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
-**Needs:** [Adverbs `/h/`](/clause#adverbs-h) · [Manner scale](/comparative-arity#manner-scale) · [Every bar](/stance-bars#stance-bars) · [Can](/can-and-cant#can)
+**Needs:** [Adverbs `/h/`](/clause#adverbs-h) · [Manner scale](/comparative-arity#manner-scale) · [Every bar](/stance-bars#limits-and-hopes) · [Can](/can-and-cant#can)
 
 English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending `-m`, as in `hadurom` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use `-l`: `eguge` is *correct* and its abstract sense is *inclusion*, so *properly* is `hegugel`.
 
@@ -263,7 +263,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](/v
 >
 > "The book is hard for Azozon to write."
 
-*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#stance-bars)): REQUIRE **`hwuvol`** is the rule, and a tie meets it. Use **`hwuvor`** for what is customary.
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](/stance-bars#limits-and-hopes)): REQUIRE **`hwuvol`** is the rule, and a tie meets it. Use **`hwuvor`** for what is customary.
 
 > `zazozon hwuvol zoel hegugel varuyol.`
 >
@@ -332,7 +332,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 ### Expensive, cheap, weak, remarkable {#bar-words}
 
-**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Every bar](/stance-bars#stance-bars) · [Adjectives](/clause#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
+**Needs:** [Many and few](/vague-amounts#vague-amounts) · [Every bar](/stance-bars#who-sets-the-bar) · [Adjectives](/clause#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
 
 English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Ageben always states the bar. Write the PATTERN bar **`thubom`** (*than usual*), then the rank word (`zol` for *more than*, `zuol` for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (`-m`): cost, strength, effort.
 
@@ -383,7 +383,7 @@ With no `/b/`, `thubom` is the item's own usual level or the usual case in the s
 >
 > "Azozon is not strong enough."
 
-**Compare with:** any stance that sets a value can be the bar ([every bar](/stance-bars#stance-bars)). *More expensive than I expected* is INTUITION, `thabem zol guderem`, and *too expensive* is a sake bar, `thudatham zol guderem`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
+**Compare with:** any stance that sets a value can be the bar ([every bar](/stance-bars#which-bar)). *More expensive than I expected* is INTUITION, `thabem zol guderem`, and *too expensive* is a sake bar, `thudatham zol guderem`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
 
 ### Just, only, also, especially {#focus-words}
 

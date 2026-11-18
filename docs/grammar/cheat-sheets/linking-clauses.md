@@ -65,21 +65,21 @@ Other role letters work the same: `blarth` after a hinge, `zarth` as the subject
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Takes | English | Stage |
 |--------|-------|---------|-------|
-| [`varn`](/stand-in-roles#stand-in-roles) | a statement | *state…* | A |
-| [`vern`](/stand-in-roles#stand-in-roles) | a question | *question…* | A |
-| [`vorn`](/stand-in-roles#stand-in-roles) | an instruction | *command…* | A |
-| [`vurn`](/stand-in-roles#stand-in-roles) | something to avoid | *prohibit…* | A |
-| [`vaon`](/stand-in-roles#stand-in-roles) | accepts a statement | *confirm that…* | A |
-| [`vuon`](/stand-in-roles#stand-in-roles) | rejects a statement | *deny that…* | A |
-| [`vaen`](/stand-in-roles#stand-in-roles) | accepts a proposed action | *agree to…* | A |
-| [`vuen`](/stand-in-roles#stand-in-roles) | rejects a proposed action | *decline to…* | A |
-| [`vuan`](/stand-in-roles#stand-in-roles) | rejects the premise | *dispute the premise that…* | A |
+| [`varn`](/stand-in-roles#speech-act-verbs) | a statement | *state…* | A |
+| [`vern`](/stand-in-roles#speech-act-verbs) | a question | *question…* | A |
+| [`vorn`](/stand-in-roles#speech-act-verbs) | an instruction | *command…* | A |
+| [`vurn`](/stand-in-roles#speech-act-verbs) | something to avoid | *prohibit…* | A |
+| [`vaon`](/stand-in-roles#speech-act-verbs) | accepts a statement | *confirm that…* | A |
+| [`vuon`](/stand-in-roles#speech-act-verbs) | rejects a statement | *deny that…* | A |
+| [`vaen`](/stand-in-roles#speech-act-verbs) | accepts a proposed action | *agree to…* | A |
+| [`vuen`](/stand-in-roles#speech-act-verbs) | rejects a proposed action | *decline to…* | A |
+| [`vuan`](/stand-in-roles#speech-act-verbs) | rejects the premise | *dispute the premise that…* | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Confirm](/stand-in-roles#stand-in-roles) | `zazozon vaon zalazun vehohel.` | *Azozon confirms that Alazun sits.* | A |
-| [Decline](/stand-in-roles#stand-in-roles) | `zazozon vuen zazozon vehohel.` | *Azozon declines to sit.* | A |
-| [It is … that](/stand-in-roles#stand-in-roles) | `gamahum zarl zazozon vowurol.` | *It is hard for Azozon to walk.* | A |
+| [Confirm](/stand-in-roles#speech-act-verbs) | `zazozon vaon zalazun vehohel.` | *Azozon confirms that Alazun sits.* | A |
+| [Decline](/stand-in-roles#speech-act-verbs) | `zazozon vuen zazozon vehohel.` | *Azozon declines to sit.* | A |
+| [It is … that](/stand-in-roles#sentence-as-subject) | `gamahum zarl zazozon vowurol.` | *It is hard for Azozon to walk.* | A |
 | [Nested](/nested-dependents#nested-dependents) | `zazozon guzemel thahum blarl zalazun vowurol thahum blarl zahelan vezuvel.` | *Azozon is sleepy because Alazun walks because Ahelan sleeps.* (Ahelan's sleep is why Alazun walks) | A |
 
 ### Times with a noun {#time-nouns}

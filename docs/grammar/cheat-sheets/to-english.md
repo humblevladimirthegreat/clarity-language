@@ -19,7 +19,7 @@ Ordinary roots and [dictionary compounds](/compounds#dictionary-compounds) are n
 | root + ending, no role letter, mid-clause | [same-role word](/same-role-words#same-role-words) | `abam` | I |
 | role letter + vowel(s) + ending, no root | [join](/joins) | `zal`, `vul` | B |
 | `y` + vowel + ending, no root | [speech act](/firm-soft#firm-or-soft-act) | `yal` | B |
-| role letter + vowel + `-rn` | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
+| role letter + vowel + `-rn` | [stand-in word](/stand-in-roles#speech-act-verbs) | `darn` *a statement* | I |
 | role letter + `w` + vowel + part + vowel + ending | [role pointer](/pronouns#role-pointers) | `zwuzer` *the latest doer* | B |
 | role letter + `w` + vowel + ending | [tag](/tag-pronouns#naming-with-a-tag) | `zwar` *A* | I |
 | a name's root + `-r` | [resume](/pronouns#resume-r) | `zazozor` *Azozon again* | B |

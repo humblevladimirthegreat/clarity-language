@@ -86,7 +86,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | lexReading | `sameRole` | detail:time | `same-role-words.md#before-and-after` | `A CITE B`: before, after, while, like between two phrases of one role |
 | lexReading | `join` | structure | `joins.md#right-close` | Read by its `joinSeries` row |
 | lexReading | `standIn` | link | `dependents.md#dependent-clauses` | The slot a dependent fills; the dependent is a nested reading |
-| lexReading | `standInNamed` | link | `stand-in-roles.md#stand-in-roles` | |
+| lexReading | `standInNamed` | link | `stand-in-roles.md#speech-act-verbs` | |
 | lexReading | `standInBack` | link | `stand-in-vowels.md#stand-in-back` | `-rth`: points back to an earlier sentence |
 | lexReading | `listVerb` | structure | `list-verbs.md#list-verbs` | A verb whose act is a join move (*includes*, *chooses*): fills `claim.verb`; its `/d/` is the list |
 | lexReading | `joinRelation` | detail:relation | `join-relations.md#join-relations` | *with*, *without*, *prioritizing* + `/b/` |
@@ -199,7 +199,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | ending | `r` | link | `pronouns.md#resume-r` |  |
 | ending | `rl` | link | `dependents.md#dependent-clauses` | Stand-in for the dependent that follows |
 | ending | `rm` | link | `stand-in-vowels.md#stand-in` | |
-| ending | `rn` | link | `stand-in-roles.md#stand-in-roles` | |
+| ending | `rn` | link | `stand-in-roles.md#speech-act-verbs` | |
 | ending | `rth` | link | `stand-in-vowels.md#stand-in-back` | |
 | slot | `adj` | detail:adjective | `clause.md#adjectives-ɡ` | A `/ɡ/` on a noun: a detail of that term |
 | slot | `w` | detail:degree | `clause.md#adjective-detail-w` | A plain `/w/`; a `/w/` frame form takes its `overlay` row with adjective reach |
@@ -250,7 +250,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | Argument shared by joined verbs | `sharedUnits` on `VpCoord` | `verb-and-stance-joins.md#vp-clause-forms`; `reading:verbSharedNoun` |
 | *Respectively* pairs, to its partner list (`partners`, from the resolve stage's `PairingRecord`) | `overlay:pairing:w` | `list-structure.md#respectively` |
 | Reply filling a blank | `AnswerRecord` | `questions.md#fill-ask` |
-| Stand-in to the dependent it stands for | `lexReading:standIn`, `ending:rl` / `rm` / `rn` | `dependents.md#dependent-clauses`, `stand-in-vowels.md#stand-in`, `stand-in-roles.md#stand-in-roles` |
+| Stand-in to the dependent it stands for | `lexReading:standIn`, `ending:rl` / `rm` / `rn` | `dependents.md#dependent-clauses`, `stand-in-vowels.md#stand-in`, `stand-in-roles.md#speech-act-verbs` |
 | Stand-in pointing back to an earlier sentence | `ending:rth` | `stand-in-vowels.md#stand-in-back` |
 | Sentence linker to the one sentence before it | `unit:linker` | `sentence-linkers.md#sentence-linkers` |
 | What carries past a period | | `sentence-linkers.md#past-a-period` |
