@@ -4,8 +4,7 @@ band: intermediate
 
 # Whose view {#whose-view}
 
-### Whose view (holder) {#holder}
-<a id="holder-seam"></a>
+### Naming whose view a sentence gives {#naming-a-holder}
 
 English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Ageben, you name whose view a sentence gives (the **holder**) by joining their name onto a channel or [MAY](/knowing#may). Keep that word's own last letter (`-l`, `-m`, or `-r`) and write the name straight after it: `theyom` plus `azozon` is `theyomazozon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
 
@@ -94,7 +93,9 @@ The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conve
 >
 > "I gather one would think Alazun left."
 
-Someone else's plan goes the same way. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan.
+### Someone else's plan, aim, or motive {#holder-plans-and-motives}
+
+Someone else's plan takes a holder too. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan.
 
 > `zazozon thebamazozon thagom vowurol.`
 >
@@ -125,6 +126,8 @@ Someone else's motive goes the same way. A [motive](for-a-sake.md#sake-preferenc
 > z-Azozon | v-tell | th-relatedness-motive-any-term | th-CLUES-Azozon
 >
 > "I gather Azozon talks to feel connected."
+
+### What belongs to the holder {#what-the-holder-covers}
 
 The seam word is yours; the rest of the clause is the holder's. The word that carries the name says how you know about the holder's view: you inferred it, heard it, or guess it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
 
