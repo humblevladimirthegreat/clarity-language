@@ -208,7 +208,12 @@ One per unit after its gate; the last carries the `AGENTS.md` rows and deletes t
 
 Decisions 1–20, 22 and 23 are decided (23 (a) on 2026-11-18, carried out by H7); numbers stay stable because commits cite them.
 
-**21. A whole-clause sake on a command.** Only questions are settled ([whose stake](/for-a-sake#whose-stake)). It stays off the pass-through list. **Recommendation:** (low) keep it off until a sample needs it; a grammar sentence on what *do X for Y's sake* asks of a listener would settle it.
+**21. A whole-clause sake on a command.** A `/th/` sake word on the clause (met `tha`, unmet `thu`, prescription `the`, motive `tho`, with or without a `bl-` stake holder) is a stance frame, so a command carrying one is `beyond`. [Whose stake](/for-a-sake#whose-stake) settles only questions: the sake word stays outside the question, *your own remark on what the act serves*, so the question asks only about the act. The page also says every sake stance is the speaker's view (*the reason is yours*; *what the act serves is your stake, as you see it*).
+- (a) Mirror the question rule with a sentence on that page: on a command, a sake word is your remark on what the act serves, and the command asks only for the act. The family joins the pass-through list, citing it.
+- (b) A sake on a command also asks the listener to act so that it serves the sake; it stays off the list, since a host cannot check that.
+- (c) Leave it unsettled and off the list until a sample needs it.
+
+**Recommendation:** (medium) (a). The page already treats every sake word as the speaker's stance, never the actor's, and (a) is the same reading it gives a question; (b) would make a sake mean one thing on a command and another everywhere else.
 
 ## Background
 
