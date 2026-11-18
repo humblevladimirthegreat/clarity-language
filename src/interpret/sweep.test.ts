@@ -3,6 +3,8 @@
  * - `unread.json`: `unread` counts by construction id, most first, with up to three sample sources each;
  * - `unsettled.json`: the doc examples that hold a pair still unsettled, by pair;
  * - `families.json`: one example per frame family and per order kind (for fixtures and review);
+ * - `carried.json`: `carriedFrame` links by kind (channel, dated channel, holder, NOTIONAL), with up to five samples each
+ *   (evidentiality.md#carry-forward);
  * - `coverage.json`: words placed nowhere or more than once (coverage.ts), by classification key, by construction id
  *   and by tree slot, with the share of sentences that have any.
  *
@@ -57,6 +59,7 @@ describe("reader sweep over the doc examples", () => {
     const unsettled = new Map<string, string[]>();
     const families = new Map<string, { ageben: string; gloss: string; source: string }>();
     const failures: string[] = [];
+    const carried = new Map<string, { links: number; sentences: number; samples: string[] }>();
     const byKey = new Groups();
     const byConstruction = new Groups();
     const bySlot = new Groups();
@@ -119,12 +122,27 @@ describe("reader sweep over the doc examples", () => {
         const sample = { ageben: example.ageben, gloss: example.gloss, source: example.source };
         for (const frame of reading.frames) if (!families.has(frame.family)) families.set(frame.family, sample);
         for (const order of reading.order) if (!families.has(`order:${order.kind}`)) families.set(`order:${order.kind}`, sample);
+        const kinds = new Set<string>();
+        for (const link of reading.links) {
+          if (link.kind !== "carriedFrame") continue;
+          const kind = link.anchor === "dated-channel.md#dated-channel" ? "dated" : link.key.replace(/^carry:/, "");
+          const row = carried.get(kind) ?? { links: 0, sentences: 0, samples: [] };
+          row.links++;
+          if (!kinds.has(kind)) {
+            kinds.add(kind);
+            row.sentences++;
+            const text = `${example.source}: ${example.ageben}`;
+            if (row.samples.length < 5 && !row.samples.includes(text)) row.samples.push(text);
+          }
+          carried.set(kind, row);
+        }
       }
     }
     mkdirSync(outDir, { recursive: true });
     const sorted = [...unread.entries()].sort((a, b) => b[1].count - a[1].count);
     writeFileSync(join(outDir, "unread.json"), JSON.stringify(Object.fromEntries(sorted), null, 2) + "\n");
     writeFileSync(join(outDir, "unsettled.json"), JSON.stringify(Object.fromEntries(unsettled), null, 2) + "\n");
+    writeFileSync(join(outDir, "carried.json"), JSON.stringify(Object.fromEntries([...carried.entries()].sort()), null, 2) + "\n");
     writeFileSync(join(outDir, "families.json"), JSON.stringify(Object.fromEntries(families), null, 2) + "\n");
     const pct = (n: number, of: number): string => `${((100 * n) / Math.max(of, 1)).toFixed(1)}%`;
     const report = {

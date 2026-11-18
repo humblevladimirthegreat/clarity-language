@@ -578,4 +578,29 @@ export type ResolveInfo = {
   scope?: ClauseScope[];
   /** Every tone mark, in text order. Present when the text has one. */
   tones?: ToneRecord[];
+  /**
+   * The frames each later bare statement inherits from an earlier sentence (evidentiality.md#carry-forward), one entry
+   * per sentence body that inherits any. Present when some body does.
+   */
+  carried?: BodyCarry[];
 };
+
+// ── Carried frames ──────────────────────────────────────────────────────────
+
+/** The families a frame carries past a period in: a channel, a holder, NOTIONAL (evidentiality.md#carry-forward). */
+export type CarryKind = "channel" | "holder" | "notional";
+
+/** One frame carried from the sentence that set it. */
+export type CarriedFrame = {
+  kind: CarryKind;
+  /** The frame's word in the sentence that set it: the channel, NOTIONAL, or holder-seam word. */
+  word: LexWord;
+  /** Where it was set: utterance and body index into the ParseResult. */
+  utteranceIndex: number;
+  bodyIndex: number;
+  /** A dated channel's signed offset, the `/b/` after the channel and its amount (dated-channel.md#dated-channel). */
+  offset?: { bound: LexWord; amount?: LexWord };
+};
+
+/** A sentence body and the frames it inherits, in the order of the words that set them. */
+export type BodyCarry = { utteranceIndex: number; bodyIndex: number; frames: CarriedFrame[] };

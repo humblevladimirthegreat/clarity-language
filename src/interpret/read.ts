@@ -13,6 +13,8 @@ import { parseWithTables } from "../parse/parse-core.js";
 import { newMemberHead, titledPhrases, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
+  BodyCarry,
+  CarryKind,
   Clause,
   CoordShared,
   GCoord,
@@ -1052,10 +1054,45 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     const to = asked ? firstOf.get(asked.utteranceIndex)?.id : undefined;
     if (reading) reading.links.push(link("answer", "answer:answer", answer.blanks, { answer, ...(to ? { to } : {}) }));
   }
+  carriedLinks(out, info?.carried ?? []);
   // A tone on a word, a span or an island sits on what it colors (tone-marks.md#tone-marks); a rest-of-sentence tone
   // came in with the scope frames.
   if (info?.tones) placeTones(out, allReadings(out), info.tones);
   return out;
+}
+
+/** The frame family each carried kind's frame is read as (interpreter.md#frame-families). */
+const CARRY_FAMILY: Readonly<Record<CarryKind, Frame["family"]>> = { channel: "stance", holder: "holder", notional: "notional" };
+
+/** The section that says each kind carries. */
+export const CARRY_ANCHOR: Readonly<Record<CarryKind, string>> = {
+  channel: "evidentiality.md#carry-forward",
+  holder: "holder.md#holder",
+  notional: "notional.md#notional-as-if-framing",
+};
+
+/**
+ * A `carriedFrame` link on each later bare statement, one per frame the resolve stage says it inherits, to the reading
+ * that set it (evidentiality.md#carry-forward). The frame is never copied into the later reading's `frames`.
+ */
+function carriedLinks(sentences: Reading[], carried: readonly BodyCarry[]): void {
+  const at = new Map(sentences.map((r) => [`${r.source.utterance}.${r.source.body}`, r]));
+  for (const record of carried) {
+    const reading = at.get(`${record.utteranceIndex}.${record.bodyIndex}`);
+    if (!reading) continue;
+    for (const carry of record.frames) {
+      const source = at.get(`${carry.utteranceIndex}.${carry.bodyIndex}`);
+      const frame = source?.frames.find((f) => f.family === CARRY_FAMILY[carry.kind] && f.words.includes(carry.word));
+      const words = [carry.word, ...(carry.offset ? [carry.offset.bound, ...(carry.offset.amount ? [carry.offset.amount] : [])] : [])];
+      reading.links.push(
+        link("carriedFrame", `carry:${carry.kind}`, words, {
+          anchor: carry.offset ? "dated-channel.md#dated-channel" : CARRY_ANCHOR[carry.kind],
+          ...(source ? { to: source.id } : {}),
+          ...(frame ? { frame } : {}),
+        }),
+      );
+    }
+  }
 }
 
 /** Parse and read one text. */

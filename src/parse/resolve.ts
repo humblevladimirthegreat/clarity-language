@@ -33,6 +33,7 @@ import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, joinParts, 
 import { CLOSED, closedDerived } from "../closed-roots.js";
 import { isClauseAdverb, type ClassifyTables } from "./classify.js";
 import { clauseScopes, isBareEdge } from "./scope.js";
+import { carriedFrames } from "./carry.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -104,6 +105,8 @@ type Ctx = {
   closing: boolean;
   /** This utterance is a goodbye, so its greeting introduces no one. */
   goodbye: boolean;
+  /** Every utterance or body read as a goodbye: each ends a carried frame (evidentiality.md#carry-forward). */
+  goodbyes: Set<object>;
   anaphors: AnaphorBind[];
   /** Predicates in order, one per clause body; role pointers pick from these. */
   anchors: Anchor[];
@@ -395,6 +398,7 @@ function enterLeft(ctx: Ctx, utterance: Utterance): void {
   if (words.length === 0) return;
   const greetings = left.vocatives.filter((word) => !word.pos && word.reading === "greeting").flatMap((word) => nameKey(word) ?? []);
   enterMove(ctx, greetings);
+  if (ctx.goodbye) ctx.goodbyes.add(utterance);
 }
 
 function bindRole(ctx: Ctx, pronoun: LexWord): void {
@@ -1008,7 +1012,10 @@ function resolveVisitor(ctx: Ctx): Visitor {
           if (part.tag && part.join) ctx.groupTags.set(part.tag, { join: part.join, words: [...heads] });
         }
       }
-      if (node.kind === "body") enterMove(ctx, [greetingName(node.body, ctx.turnLeft) ?? []].flat());
+      if (node.kind === "body") {
+        enterMove(ctx, [greetingName(node.body, ctx.turnLeft) ?? []].flat());
+        if (ctx.goodbye) ctx.goodbyes.add(node.body);
+      }
       if (node.kind === "clause") noteHookLandmarks(ctx, node.clause.units);
       if (node.kind === "island") noteHookLandmarks(ctx, node.island.units);
       if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) noteHookLandmarks(ctx, units);
@@ -1071,6 +1078,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
     greeted: new Set(),
     closing: false,
     goodbye: false,
+    goodbyes: new Set(),
     anaphors: [],
     anchors: [],
     clauses: [],
@@ -1089,6 +1097,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
   const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
   const scope = clauseScopes(result.utterances, tables, blanks, tones);
   const pairings = respectivelyPairings(result);
+  const carried = carriedFrames(result.utterances, scope, ctx.goodbyes);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
@@ -1097,6 +1106,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
     ...(scope.length > 0 ? { scope } : {}),
     ...(pairings.length > 0 ? { pairings } : {}),
     ...(tones.length > 0 ? { tones } : {}),
+    ...(carried.length > 0 ? { carried } : {}),
   };
 }
 

@@ -256,7 +256,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | **Added:** discourse hook to prior talk (`-r`: to an earlier stretch) | `hookJob:discourse`, `edge:hook` | `hooks.md#discourse-hooks`, `discourse-hooks.md#discourse` |
 | **Added:** in-clause hook pointing back to a landmark | `hookJob:resume` | `in-clause-hooks.md#hook-resume` |
 | **Added:** frame content in the next sentence (`blarl`): a hinge's condition, a channel's grounds | `slot:grounds` | `causation.md#if`, `dependents.md#hinges`, `evidentiality.md#evidence-clause` |
-| **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences | | `evidentiality.md#carry-forward`, `holder.md#holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#dated-channel` |
+| **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences. One `carriedFrame` link per inherited frame, `to` the reading that set it, `frame` that reading's frame; a dated channel's link also holds its offset words | `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`); `carry:channel`, `carry:holder`, `carry:notional` | `evidentiality.md#carry-forward`, `holder.md#holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#dated-channel` |
 
 | **Added:** a polar word replying to the yes / no question before it | `edge:polar` | `questions.md#polar-particle` |
 | **Added:** a bound tag, naming each member of a `zual` / `zuam` fence in turn, to the end of its sentence and through the stand-ins in it | `slot:tag`, `anaphor:tag` | `universals-domains.md#bound-tags` |

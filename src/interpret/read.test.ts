@@ -708,3 +708,83 @@ describe("reader: tone marks (tone-marks.md#tone-marks)", () => {
     assert.deepEqual(reading.unordered[0]!.map((f) => f.values.mark), ["!", "%"]);
   });
 });
+
+describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
+  /** Each sentence's carried links, as `kind:word->source` with the frame's family. */
+  const carried = (readings: Reading[]): string[][] =>
+    readings.map((r) =>
+      r.links
+        .filter((l) => l.kind === "carriedFrame")
+        .map((l) => `${l.key}:${l.words[0]!.raw}->${l.to}:${l.frame?.family ?? "none"}`),
+    );
+  const ids = (readings: Reading[]): string[] => readings.map((r) => r.id);
+
+  it("channel: later bare statements get a link to the reading that set it, never a copied frame", () => {
+    const readings = read("z-Alazun | th-REPORTED | v-departure . z-Alazun | v-run . z-Alazun | v-sing");
+    const [first] = ids(readings);
+    const word = readings[0]!.frames.find((f) => f.family === "stance")!.words[0]!.raw;
+    assert.deepEqual(carried(readings), [[], [`carry:channel:${word}->${first}:stance`], [`carry:channel:${word}->${first}:stance`]]);
+    assert.deepEqual(families(readings[1]!), []);
+    const link = readings[2]!.links.find((l) => l.kind === "carriedFrame")!;
+    assert.equal(link.frame, frame(readings[0]!, "stance"));
+    assert.equal(link.anchor, "evidentiality.md#carry-forward");
+  });
+
+  it("channel: a question neither takes nor ends it; a statement after an answer word takes it", () => {
+    const readings = read("z-Alazun | th-REPORTED | v-departure . y-question | z-Alazun | v-run . y-yes | z-Alazun | v-sing");
+    assert.deepEqual(carried(readings).map((c) => c.length), [0, 0, 1]);
+  });
+
+  it("channel: a topic word or a linker keeps it", () => {
+    const readings = read("z-Azozon | th-REPORTED | v-walk . x-Alazun | z-TOPIC | v-sit");
+    assert.deepEqual(carried(readings).map((c) => c.length), [0, 1]);
+  });
+
+  it("channel: a new channel replaces it", () => {
+    const readings = read("z-Alazun | th-REPORTED | v-departure . z-Azozon | th-MEMORY | v-walk . z-Azozon | v-sit");
+    assert.deepEqual(carried(readings).map((c) => c.length), [0, 0, 1]);
+    assert.equal(readings[2]!.links.find((l) => l.kind === "carriedFrame")!.to, readings[1]!.id);
+  });
+
+  it("channel: a written statement word, *by the way*, and a goodbye end it", () => {
+    for (const end of ["y-statement | z-Alazun | v-sleep", "x-by-the-way | z-Alazun | v-sleep", "Alazun . z-Alazun | v-sleep"]) {
+      const readings = read(`Alazun . z-Alazun | th-REPORTED | v-departure . ${end}`);
+      assert.deepEqual(carried(readings).flat(), [], end);
+    }
+    // A rhetorical question is a statement first, so it ends the frame too.
+    const rhetorical = read("z-Alazun | th-REPORTED | v-departure . y-statement | y-question | z-wh | v-care . z-Alazun | v-sleep");
+    assert.deepEqual(carried(rhetorical).flat(), []);
+  });
+
+  it("dated channel: the offset carries with the channel; a new offset sets a new time", () => {
+    const readings = read("z-Azozon | [th-MEMORY | [bl-day | g-minus-one]] | v-walk . z-Azozon | v-sit");
+    const link = readings[1]!.links.find((l) => l.kind === "carriedFrame")!;
+    assert.equal(link.words.length, 3);
+    assert.equal(link.anchor, "dated-channel.md#dated-channel");
+    const again = read("z-Azozon | [th-MEMORY | [bl-day | g-minus-one]] | v-walk . z-Azozon | [th-MEMORY | [bl-hour | g-minus-three]] | v-sit . z-Azozon | v-sing");
+    assert.equal(again[2]!.links.find((l) => l.kind === "carriedFrame")!.to, again[1]!.id);
+  });
+
+  it("holder: the holder and the channel it sits on carry together; a new frame ends them", () => {
+    const readings = read("z-Alazun | th-CLUES-Azozon | v-departure . z-Alazun | v-sleep");
+    assert.deepEqual(carried(readings)[1]!.map((c) => c.split(":")[1]), ["holder", "channel"]);
+    assert.deepEqual(readings[1]!.links.filter((l) => l.kind === "carriedFrame").map((l) => l.frame?.family), ["holder", "stance"]);
+    const ended = read("z-Alazun | th-CLUES-Azozon | v-departure . z-Azozon | th-NOTIONAL | v-walk . z-Azozon | v-sit");
+    assert.deepEqual(carried(ended)[2]!.map((c) => c.split(":")[1]), ["notional"]);
+  });
+
+  it("notional: a made-up story carries; a channel of its own ends the supposition", () => {
+    const story = read("z-Azozon | th-NOTIONAL | v-walk . z-Azozon | v-sit . z-Azozon | v-sing");
+    assert.deepEqual(carried(story).map((c) => c.length), [0, 1, 1]);
+    assert.equal(story[2]!.links.find((l) => l.kind === "carriedFrame")!.frame?.family, "notional");
+    const supposed = read(
+      "z-Azozon | th-NOTIONAL-suppose | g-role-agent-teach . x-it-follows | z-Azozon | v-teach . z-Azozon | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [z-Azozon | g-role-agent-teach]",
+    );
+    assert.deepEqual(carried(supposed).map((c) => c.length), [0, 1, 0]);
+  });
+
+  it("notional ends a carried channel", () => {
+    const readings = read("z-Alazun | th-REPORTED | v-departure . z-Azozon | th-NOTIONAL | v-walk . z-Azozon | v-sit");
+    assert.equal(readings[2]!.links.find((l) => l.kind === "carriedFrame")!.key, "carry:notional");
+  });
+});

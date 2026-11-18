@@ -611,7 +611,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
 }
 
 /** `+` / `-` of a signed offset in a hosted `/b/` (digitless `brul`, or a measure amount); zero has no sign. */
-function offsetSign(bound: LexWord | undefined, amount?: LexWord): "+" | "-" | undefined {
+export function offsetSign(bound: LexWord | undefined, amount?: LexWord): "+" | "-" | undefined {
   const number = [bound, amount].find((w) => w?.family.kind === "number");
   if (!number || number.family.kind !== "number") return undefined;
   const { marker, groups } = number.family.stem;
