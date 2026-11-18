@@ -97,9 +97,9 @@ describe("ask: who paid Ana?", () => {
     assert.equal(sameAll.length, 5);
   });
 
-  it("switches stay off until they land", () => {
-    assert.throws(() => ask(question("y-question | z-wh | b-Azozon | v-pay"), log, { switches: { widen: true } }), /M2/);
+  it("switches are off by default; widening needs the lexicon", () => {
     assert.ok(matches.every((m) => m.switches.length === 0 && m.unsettled.length === 0));
+    assert.throws(() => ask(question("y-question | z-wh | b-Azozon | v-pay"), log, { switches: { widen: true } }), /lexicon/);
   });
 });
 
@@ -147,5 +147,48 @@ describe("ask: carried frames and binders on the path", () => {
     const [m] = ask(question("y-question | z-wh | v-see | d-cat"), log);
     assert.equal(bound(m!), "z=azozo");
     assert.deepEqual(pathOf(m!), ["binder"]);
+  });
+});
+
+describe("ask: switches", () => {
+  /** One speaker's turns, as written text (forms the gloss index cannot spell). */
+  const raw = (...texts: string[]): Turn[] => texts.map((text, at) => ({ speaker: "A", at, text }));
+  const lexicon = tables;
+  const found = (q: string, said: Turn[], switches: Match["switches"] = []): string[][] =>
+    ask(question(q), buildLog(said, tables), {
+      lexicon,
+      switches: Object.fromEntries(switches.map((s) => [s, true])),
+    }).map((m) => m.switches);
+
+  it("compounds.md#two-roots-one-word: widen matches a dictionary compound on its head, and says so", () => {
+    const said = turns("z-Azozon | d-doorbell | v-see");
+    assert.deepEqual(found("y-question | z-Azozon | d-bell | v-see", said), []);
+    assert.deepEqual(found("y-question | z-Azozon | d-bell | v-see", said, ["widen"]), [["widen"]]);
+    // The head is not the compound: a question about the doorbell does not find a bell.
+    assert.deepEqual(found("y-question | z-Azozon | d-doorbell | v-see", turns("z-Azozon | d-bell | v-see"), ["widen"]), []);
+  });
+
+  it("widen: an x compound's last root, a compound inside a compound, and no head for a tail suffix", () => {
+    assert.deepEqual(found("y-question | z-Azozon | d-butter | v-see", raw("zazozon duwedaxubudal vayebel."), ["widen"]), [["widen"]]);
+    assert.deepEqual(found("y-question | z-Azozon | d-house | v-see", turns("z-Azozon | d-firehouse | v-see"), ["widen"]), [["widen"]]);
+    assert.deepEqual(found("y-question | z-Azozon | d-house | v-see", turns("z-Azozon | d-bedroom | v-see"), ["widen"]), []);
+  });
+
+  it("joins.md: infer matches one member of a stated and-list, and says so", () => {
+    const said = turns("[z-Azozon | z-Alazun | z-and] | v-walk");
+    assert.deepEqual(found("y-question | z-Azozon | v-walk", said), []);
+    assert.deepEqual(found("y-question | z-Azozon | v-walk", said, ["infer"]), [["infer"]]);
+    assert.deepEqual(found("y-question | z-Ahelan | v-walk", said, ["infer"]), []);
+    // A blank binds the whole list without a switch.
+    assert.deepEqual(found("y-question | z-wh | v-walk", said, ["infer"]), [[]]);
+  });
+
+  it("list-structure.md#respectively: paired lists give members at the same place; unpaired lists infer nothing", () => {
+    const paired = turns("[z-Azozon | z-Alazun | z-and] | [d-cat | d-dog | w-respectively | d-and] | v-see");
+    assert.deepEqual(found("y-question | z-Azozon | d-cat | v-see", paired, ["infer"]), [["infer"]]);
+    assert.deepEqual(found("y-question | z-Alazun | d-dog | v-see", paired, ["infer"]), [["infer"]]);
+    assert.deepEqual(found("y-question | z-Azozon | d-dog | v-see", paired, ["infer"]), []);
+    const unpaired = turns("[z-Azozon | z-Alazun | z-and] | [d-cat | d-dog | d-and] | v-see");
+    assert.deepEqual(found("y-question | z-Azozon | d-cat | v-see", unpaired, ["infer"]), []);
   });
 });

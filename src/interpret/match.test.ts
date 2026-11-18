@@ -57,3 +57,34 @@ describe("match", () => {
     assert.equal(path.readings[1], inner);
   });
 });
+
+describe("match: switches", () => {
+  const readRaw = (text: string): Reading => readText(text, tables)[0]!;
+  const via = (query: string, target: Reading, infer = true): string[] | undefined =>
+    match(claim(query), target.claim, { switches: { infer }, targetSite: { reading: target } })?.switches;
+
+  // Through `match`: a question's new-member term is a binder filter (open decision 18), so `ask` cannot show this yet.
+  it("universals-domains.md#universals-domains-generics: closed zual + kind holds of an instance; open, denied, or collective does not", () => {
+    const every = read("[z-everything | g-cat] | v-sleep")[0]!;
+    assert.equal(via("z-cat | v-sleep", every, false), undefined);
+    assert.deepEqual(via("z-cat | v-sleep", every), ["infer"]);
+    assert.equal(via("z-dog | v-sleep", every), undefined);
+    assert.equal(via("z-cat | v-sleep", readRaw("zuam gogozel vezuvel.")), undefined);
+    assert.equal(via("z-cat | v-sleep", readRaw("zual gogozel zul vezuvel.")), undefined);
+    assert.equal(via("z-cat | v-sleep", readRaw("zual gogozel vezuvelx.")), undefined);
+  });
+
+  it("numbers match by value: the written and the spoken count are one number", () => {
+    const spoken = readRaw("zogozel gragel.");
+    assert.deepEqual(match(readRaw("zogozel g+3.").claim, spoken.claim)?.switches, []);
+    assert.equal(match(readRaw("zogozel gradol.").claim, spoken.claim), undefined);
+    // An *about* amount is not the exact one.
+    assert.equal(match(readRaw("zogozel gragem.").claim, spoken.claim), undefined);
+  });
+
+  it("measures match by unit and amount", () => {
+    const walked = readRaw("zazozon bezerom gradol vowurol.");
+    assert.ok(match(readRaw("zazozon bezerom g+2 vowurol.").claim, walked.claim));
+    assert.equal(match(readRaw("zazozon bezerom gragel vowurol.").claim, walked.claim), undefined);
+  });
+});

@@ -8,5 +8,7 @@ export { appendTurn, buildLog, emptyLog, entryOf, sentenceSpeakers } from "./log
 export type { Log, LogEntry, LogOptions, Rejected, Turn } from "./log.js";
 export { framePath, listStandings, match, negated, readingTree, throughAntecedent } from "./match.js";
 export type { Binding, BlankBinding, FramePath, ListStanding, MatchOptions, Parent, PathFrame, Switch, TermSite, Via } from "./match.js";
+export { compareValues, measureValue, numberValue, sameNumberWord, samePayload, sameValue, termValue } from "./value.js";
+export type { MeasureValue, NumberValue } from "./value.js";
 export { ask, questionFilters } from "./ask.js";
 export type { Host, Match } from "./ask.js";

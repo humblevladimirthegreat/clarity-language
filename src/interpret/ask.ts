@@ -19,6 +19,8 @@ export type Host = {
   referent?: (term: Term, side: "query" | "target", site: TermSite & { entry?: LogEntry }) => string | undefined;
   /** Switches, off by default ({@link Switch}). */
   switches?: Partial<Record<Switch, boolean>>;
+  /** The parser's lexicon tables; `widen` reads compound heads from them. */
+  lexicon?: MatchOptions["lexicon"];
 };
 
 export type Match = {
@@ -76,6 +78,7 @@ export function ask(question: Reading, log: Log, host: Host = {}): Match[] {
       querySite: { reading: question },
       targetSite: { reading },
       ...(host.switches ? { switches: host.switches } : {}),
+      ...(host.lexicon ? { lexicon: host.lexicon } : {}),
     };
     const binding = match(question.claim, reading.claim, options);
     if (!binding) continue;
