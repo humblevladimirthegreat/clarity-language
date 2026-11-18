@@ -64,6 +64,12 @@ export type Binding = {
    * their readings go on the frame path, so a stance inside the island stays with the match. Absent when none.
    */
   islands?: Reading[];
+  /**
+   * The list-reach frames of the target lists the match went into: a `u` list (*not X*, *neither A nor B*,
+   * joins.md#negation-u) denies its items, so a query term that matches one of them comes back with the denial, to go on
+   * the frame path ({@link withListFrames}). Absent when none.
+   */
+  listFrames?: { frame: Frame; term: Term }[];
 };
 
 // ── Terms ───────────────────────────────────────────────────────────────────
@@ -88,6 +94,8 @@ type State = {
   undo: (() => void)[];
   /** The island readings whose roles the match used ({@link Binding.islands}). */
   islands: Reading[];
+  /** The denied target lists the match went into ({@link Binding.listFrames}). */
+  listFrames: { frame: Frame; term: Term }[];
   /** The target claim's verb is not collective: a closed `zual` + kind may stand for an instance. */
   inUniversal: boolean;
 };
@@ -159,6 +167,7 @@ function termMatch(queryTerm: Term, targetTerm: Term, state: State, at: string):
     if (q !== undefined && t !== undefined) return q === t && detailsSubset(termDetails(query), termDetails(target), state, at);
   }
   if (tryIn(state, () => structural(query, target, state, at) && detailsSubset(termDetails(query), termDetails(target), state, at))) return true;
+  if (tryIn(state, () => deniedMember(query, target, state, at))) return true;
   if (switchOn(state, "widen") && tryIn(state, () => widened(query, target, state, at))) return true;
   if (switchOn(state, "infer") && tryIn(state, () => inferred(query, target, state, at))) return true;
   return false;
@@ -198,6 +207,25 @@ function structural(query: Term, target: Term, state: State, at: string): boolea
     case "blank":
       return true;
   }
+}
+
+/**
+ * A `u` list in the target (*not X*, *neither A nor B*, joins.md#negation-u): the denial reaches only its items, so the
+ * claim still stands about each item, denied. A query term that is not a list matches an item as said, and the list's
+ * frames go with the match ({@link Binding.listFrames}), as *never paid* answers *did Lee pay?* with the denial on the
+ * path. Not a switch: nothing is widened or inferred, and the matcher never decides the claim holds.
+ */
+function deniedMember(query: Term, target: Term, state: State, at: string): boolean {
+  if (query.kind === "list" || target.kind !== "list" || target.values.series !== "u" || target.bound) return false;
+  return target.members.some((member, i) =>
+    tryIn(state, () => {
+      if (!termMatch(query, asMember(member, target), state, `${at}/${i}`)) return false;
+      for (const frame of target.frames ?? []) state.listFrames.push({ frame, term: target });
+      const added = target.frames?.length ?? 0;
+      state.undo.push(() => void (state.listFrames.length -= added));
+      return true;
+    }),
+  );
 }
 
 // ── Widening ────────────────────────────────────────────────────────────────
@@ -361,10 +389,12 @@ function islandRole(letter: keyof Claim["roles"], query: Term, target: Claim, st
 
 /** Does the query claim fit the target claim? The blanks it binds and the switches it went through, or undefined. */
 export function match(query: Claim, target: Claim, options: MatchOptions = {}): Binding | undefined {
-  const state: State = { options, blanks: [], switches: [], memberLists: new Map(), pairChoice: new Map(), undo: [], islands: [], inUniversal: false };
+  const state: State = { options, blanks: [], switches: [], memberLists: new Map(), pairChoice: new Map(), undo: [], islands: [], listFrames: [], inUniversal: false };
   if (!claimMatch(query, target, state, "", options.targetSite?.reading)) return undefined;
   const used = new Set(state.switches);
-  return { blanks: state.blanks, switches: SWITCH_ORDER.filter((s) => used.has(s)), ...(state.islands.length ? { islands: [...new Set(state.islands)] } : {}) };
+  return { blanks: state.blanks, switches: SWITCH_ORDER.filter((s) => used.has(s)), ...(state.islands.length ? { islands: [...new Set(state.islands)] } : {}),
+    ...(state.listFrames.length ? { listFrames: [...state.listFrames] } : {}),
+  };
 }
 
 // ── Where readings sit ──────────────────────────────────────────────────────
@@ -453,6 +483,8 @@ export type PathFrame = {
   coveredBy?: Frame[];
   /** The stance lists that hold it, innermost first. */
   lists: ListStanding[];
+  /** A list-reach frame: the target list it sits on, which the match went into ({@link Binding.listFrames}). */
+  term?: Term;
 };
 
 export type FramePath = {
@@ -534,7 +566,15 @@ function readingFrames(reading: Reading): PathFrame[] {
   ];
 }
 
-/** The frame path of a reading: its frames and those of every reading that contains it (`tree` from {@link readingTree}). */
+/**
+ * A path with the list-reach frames a match went through ({@link Binding.listFrames}): they sit on terms of the matched
+ * reading, so they follow its frames.
+ */
+export function withListFrames(path: FramePath, listFrames: Binding["listFrames"], reading: Reading): FramePath {
+  if (!listFrames?.length) return path;
+  return { ...path, frames: [...path.frames, ...listFrames.map(({ frame, term }): PathFrame => ({ frame, reading, how: "own", lists: [], term }))] };
+}
+
 /** A path with the islands a match looked into: their frames and unsettled pairs join the matched reading's. */
 export function withIslands(path: FramePath, islands: readonly Reading[] | undefined): FramePath {
   if (!islands?.length) return path;
@@ -547,6 +587,7 @@ export function withIslands(path: FramePath, islands: readonly Reading[] | undef
   };
 }
 
+/** The frame path of a reading: its frames and those of every reading that contains it (`tree` from {@link readingTree}). */
 export function framePath(reading: Reading, tree: Map<Reading, Parent | undefined>): FramePath {
   const readings: Reading[] = [];
   const via: Via[] = [];

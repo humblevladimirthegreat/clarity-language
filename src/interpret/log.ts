@@ -105,6 +105,31 @@ function reread(log: Log, entries: LogEntry[], lastCount: number, tables: Classi
   return { ...log, entries: out, parse, readings };
 }
 
+export type QuestionOptions = {
+  /** Who asks: the carried frames are kept per speaker. Unset: a speaker of its own, not one of the log's. */
+  speaker?: string;
+  /** The text id that starts every reading id of the question. */
+  text?: string;
+};
+
+/**
+ * Read a question against the log the way the log reads a new turn: parsed after the log's window, so the resolver binds
+ * its pronouns to the log's terms (a resume with nothing earlier in the question's own text, pronouns.md#resume-r). The
+ * log does not change. Returns the question's top-level readings, in text order; it throws when the text does not parse.
+ */
+export function readQuestion(log: Log, text: string, tables: ClassifyTables, options: QuestionOptions = {}): Reading[] {
+  const context = windowOf(log.entries, log.options.window).filter((e) => e.sentences);
+  const before = context.reduce((n, e) => n + e.sentences!.count, 0);
+  const sized = parseWithTables(transcript([...context, { speaker: "", at: 0, text }]), tables);
+  const count = sentenceIndex(sized).size - before;
+  if (count < 1) return [];
+  const speakers = [...context.flatMap((e) => Array<string>(e.sentences!.count).fill(e.speaker)), ...Array<string>(count).fill(options.speaker ?? "\u0000question")];
+  const parse = parseWithTables(transcript([...context, { speaker: "", at: 0, text }]), tables, { speakers });
+  const index = sentenceIndex(parse);
+  const readings = readParse(parse, { tables, text: options.text ?? "q" });
+  return readings.filter((r) => (index.get(`${r.source.utterance}.${r.source.body}`) ?? -1) >= before);
+}
+
 /** A log of the given turns, in order. */
 export function buildLog(turns: readonly Turn[], tables: ClassifyTables, options: LogOptions = {}): Log {
   return turns.reduce((log, turn) => appendTurn(log, turn, tables), emptyLog(options));

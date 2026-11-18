@@ -8,7 +8,7 @@ import { loadDefaultTables } from "../parse/index.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import type { LexWord } from "../parse/types.js";
 import { ask, type Match } from "./ask.js";
-import { buildLog, type Log, type Turn } from "./log.js";
+import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { throughAntecedent } from "./match.js";
 import { readText } from "./read.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
@@ -289,7 +289,7 @@ function conversation(command: "log" | "ask", raw: string[]): void {
   const query = args[1]!.trim();
   let question: Reading | undefined;
   try {
-    question = readText(query, tables, { text: "q" })[0];
+    question = readQuestion(log, query, tables)[0];
   } catch (error) {
     console.error(`query: ${error instanceof Error ? error.message.split("\n")[0] : String(error)}`);
     process.exit(1);

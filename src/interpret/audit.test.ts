@@ -1,7 +1,7 @@
 // Matcher audit (ageben-interpreter M4): question / passage pairs from doc examples. Each expectation was decided from
 // the grammar page named on the pair and from the two readings, not from the matcher's source. A pair the matcher gets
 // wrong is written as the right expectation and marked `todo`, so it reports without failing the run. Pairs touched by a
-// pending decision pin today's behavior and say so.
+// decision say which. A question is read against the log (`readQuestion`), as the log reads a new turn.
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -12,9 +12,8 @@ import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { ask, type Match } from "./ask.js";
-import { buildLog, type Turn } from "./log.js";
+import { buildLog, readQuestion, type Turn } from "./log.js";
 import { throughAntecedent, type PathFrame } from "./match.js";
-import { readText } from "./read.js";
 import type { Reading, Term } from "./types.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -65,7 +64,7 @@ type Switches = { widen?: boolean; infer?: boolean };
 const asked = (said: Turn[], q: string, switches: Switches = {}): Match[] => {
   const log = buildLog(said, tables);
   assert.deepEqual(log.rejected, []);
-  const question: Reading = readText(spell(q), tables, { text: "q" })[0]!;
+  const question: Reading = readQuestion(log, spell(q), tables)[0]!;
   return ask(question, log, { lexicon: tables, switches });
 };
 const found = (said: Turn[], q: string, switches: Switches = {}): string[] => asked(said, q, switches).map(summary);
@@ -94,10 +93,9 @@ describe("audit: pronouns across sentences", () => {
 
   it(
     "A04 pronouns.md#resume-r: a resume in the question matches the resumed noun of the log (pronouns.md:23)",
-    { todo: "matcher: a question resume with no antecedent in its own text matches nothing; by root it is the dog" },
     () => {
-      // A dog walks. The dog sits. Does the dog sit? The question's `-r` has nothing earlier in its own text, so it is
-      // the one both know: by root, the dog. The log's dog in sentence 2 is a resume of sentence 1's dog.
+      // A dog walks. The dog sits. Does the dog sit? Read against the log, the question's `-r` resumes the log's dog,
+      // and the log's dog in sentence 2 is a resume of sentence 1's dog.
       assert.deepEqual(found(passage("zodozel vowurol. zodozer vehohel."), "yel zodozer vehohel."), ["1:A [] {}"]);
     },
   );
@@ -106,7 +104,6 @@ describe("audit: pronouns across sentences", () => {
 describe("audit: negation", () => {
   it(
     "A05 joins.md#negation-u: *Azozon does not walk* matches a question about walking, marked denied (verb-and-stance-joins.md:180)",
-    { todo: "matcher: a `u`-denied verb list (`vowurol vul`) matches no question about its verb, even a blank" },
     () => {
       // The reading's verb is a one-member `u` list over *walk*; the matcher design gives a denied claim its match with
       // the denial on the path (*Ana says Lee never paid her*).
@@ -135,7 +132,6 @@ describe("audit: holder", () => {
   });
   it(
     "A08 holder.md#holder: a question naming the holder filters through the resumed holder (holder.md:65)",
-    { todo: "matcher: a question frame's party does not match a target party that is a resume of the same name" },
     () => {
       assert.deepEqual(found(said, "y-question | z-Alazun | v-departure | th-CLUES-Azozon"), ["1:A [] {holder(azozo), stance}"]);
     },
@@ -191,7 +187,6 @@ describe("audit: stance lists", () => {
   });
   it(
     "A14 verb-and-stance-joins.md#stance-joins: asked *because of the rain?*, the denied ground answers it (verb-and-stance-joins.md:154)",
-    { todo: "matcher: a denied hinge does not pass a question's equal hinge filter; the target carries it, denied" },
     () => {
       // The target carries a hinge of the family with equal values; its list denies it. As with *never paid*, the
       // match should come back with the denial on the path, so the consumer can answer *no*.
@@ -279,16 +274,15 @@ describe("audit: switches", () => {
   });
 });
 
-describe("audit: pending decisions (today's behavior, neither pass nor fail)", () => {
-  it("A22 decision 18: a new-member phrase on the question filters out a resumed noun (pronouns.md:23)", () => {
-    // *Does a dog sit?* The dog that sits is a resume, with no binder; today the question's binder frame filters it out.
-    // If decision 18 makes a new member on a question no filter, this becomes ["1:A [] {}"].
-    assert.deepEqual(found(passage("zodozel vowurol. zodozer vehohel."), "y-question | z-dog | v-sit"), []);
+describe("audit: decisions", () => {
+  it("A22 decision 18 (b): a new-member phrase on the question is no filter, so it finds a resumed noun (pronouns.md:23)", () => {
+    // *Does a dog sit?* The dog that sits is a resume, with no binder; the question's new member matches it by root.
+    assert.deepEqual(found(passage("zodozel vowurol. zodozer vehohel."), "y-question | z-dog | v-sit"), ["1:A [] {}"]);
   });
 
   it("A23 decision 19: another speaker's goodbye ends your carried frame (word-endings.md#greeting, evidentiality.md#carry-forward)", () => {
-    // B greets, then says the same greeting again: a goodbye. Today it ends A's frame; with option (b) the running
-    // would stay hearsay: ["3:A [] {carried stance}"].
+    // B greets, then says the same greeting again: a goodbye. Decided (a): it ends A's frame, so the running is
+    // A's own claim, with no carried stance.
     const said = passage(["A", "zalazun thebam vudurul."], ["B", "ahelan."], ["B", "ahelan."], ["A", "zalazun veruvol."]);
     assert.deepEqual(found(said, "y-question | z-Alazun | v-run"), ["3:A [] {}"]);
   });

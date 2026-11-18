@@ -63,7 +63,6 @@ describe("match: switches", () => {
   const via = (query: string, target: Reading, infer = true): string[] | undefined =>
     match(claim(query), target.claim, { switches: { infer }, targetSite: { reading: target } })?.switches;
 
-  // Through `match`: a question's new-member term is a binder filter (open decision 18), so `ask` cannot show this yet.
   it("universals-domains.md#universals-domains-generics: closed zual + kind holds of an instance; open, denied, or collective does not", () => {
     const every = read("[z-everything | g-cat] | v-sleep")[0]!;
     assert.equal(via("z-cat | v-sleep", every, false), undefined);

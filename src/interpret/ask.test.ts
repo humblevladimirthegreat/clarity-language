@@ -111,7 +111,9 @@ describe("ask: stance lists on the path", () => {
     assert.deepEqual(pathOf(m!), ["hinge denied"]);
     assert.equal(m!.path.stanceLists.length, 1);
     const because = ask(question("y-question | z-Azozon | v-walk | [th-because | bl-rain]"), buildLog(turns("z-Azozon | v-walk | [[th-because | bl-rain] | th-not]"), tables));
-    assert.equal(because.length, 0);
+    // The question's *because of the rain* passes: the target carries that ground, denied, and the path says so.
+    assert.equal(because.length, 1);
+    assert.deepEqual(pathOf(because[0]!), ["hinge denied"]);
     const plain = ask(question("y-question | z-Azozon | v-walk | [th-because | bl-rain]"), buildLog(turns("z-Azozon | v-walk | [th-because | bl-rain]"), tables));
     assert.equal(plain.length, 1);
   });
@@ -181,6 +183,14 @@ describe("ask: switches", () => {
     assert.deepEqual(found("y-question | z-Ahelan | v-walk", said, ["infer"]), []);
     // A blank binds the whole list without a switch.
     assert.deepEqual(found("y-question | z-wh | v-walk", said, ["infer"]), [[]]);
+  });
+
+  it("universals-domains.md#universals-domains-generics: infer answers *does a cat sleep?* from closed zual + kind (decision 18 (b))", () => {
+    // The question's *a cat* is a new member, no filter, so the universal reading answers it through infer.
+    const every = turns("[z-everything | g-cat] | v-sleep");
+    assert.deepEqual(found("y-question | z-cat | v-sleep", every), []);
+    assert.deepEqual(found("y-question | z-cat | v-sleep", every, ["infer"]), [["infer"]]);
+    assert.deepEqual(found("y-question | z-dog | v-sleep", every, ["infer"]), []);
   });
 
   it("list-structure.md#respectively: paired lists give members at the same place; unpaired lists infer nothing", () => {
