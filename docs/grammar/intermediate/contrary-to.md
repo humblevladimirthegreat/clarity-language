@@ -26,7 +26,7 @@ On a command, request, or prohibition, `uom` and its stance make a reluctant or 
 >
 > "Walk, even though it's not what I planned."
 
-In a question, `uom` and its stance stay yours, outside what is asked, as a [speaker attitude](/feelings#speaker-attitude) does. The listener answers only whether the event happens; your plan is not up for an answer.
+In a question, `uom` and its stance stay yours and outside what is asked, as a [speaker attitude](/feelings#speaker-attitude) does. The listener answers only whether the event happens, not anything about your plan.
 
 > `yel zazozon vowurol uom thagom.`
 >
