@@ -280,7 +280,7 @@ Four things end the frame:
 - A new frame: any channel replaces it.
 - The statement word, written out: `yal` (or `yam` / `yar`) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](more-turn-words.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical `yal yel` is your own claim and ends the frame, but a quiz `yel yal` does not.
 - **`xavedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
-- A goodbye, which ends the conversation.
+- A goodbye, which ends the conversation. Whoever says it, a goodbye ends every speaker's frame, yours included.
 
 > `zalazun thebam vudurul. yal zalazun vezuvel.`
 >
