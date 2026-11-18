@@ -127,7 +127,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `hanem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
 | `haon` | join-relation starting with (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue) | I |
 | `harum` | UNTIL clause hinge (endpoint bound) | [Because, although (hinges)](/dependents#hinges) | B |
 | `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [How far a change has come](/already-still-yet#stage-of-change) | B |
 | `havem` | ALREADY phasal (the change has happened); -m could change | [How far a change has come](/already-still-yet#stage-of-change) | B |
@@ -139,7 +139,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `hedam` | locative between (two landmarks) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `hegalom` | locative past (comes near one landmark and goes on) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#former-climate) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -236,7 +236,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thevum` | memory evidential (remembered firsthand / reconstructive) | [Live vs memory](/knowing#live-vs-memory) | B |
 | `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](/evidentiality#evidence-strength) | I |
-| `thewom` | CAUSE mood (mechanism framing); a hosted /b/ with no hinge is the causer (make) | [CAUSE](/cause#cause) | I |
+| `thewom` | CAUSE mood (mechanism framing); a hosted /b/ with no hinge is the causer (make) | [CAUSE](/cause#mechanism) | I |
 | `theyol` | clues evidential with strong evidence (strong clues) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `theyom` | clues evidential (reasoned from clues about this case) | [Evidentiality](/evidentiality#evidentiality) | I |
 | `theyor` | clues evidential with weak evidence (a weak clue) | [Evidence strength](/evidentiality#evidence-strength) | I |
@@ -329,7 +329,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `wevul` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wevum` | memory evidential (remembered firsthand / reconstructive) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wevur` | memory evidential with weak evidence (hazy memory) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `wewom` | CAUSE mood (mechanism framing) | [CAUSE](/cause#cause) | I |
+| `wewom` | CAUSE mood (mechanism framing) | [CAUSE](/cause#mechanism) | I |
 | `weyol` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `weyom` | clues evidential (reasoned from clues about this case) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `weyor` | clues evidential with weak evidence (a weak clue) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |

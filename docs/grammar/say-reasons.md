@@ -38,7 +38,7 @@ English links a time, a contrast or a reason to a claim with one word, such as *
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#cause) · [Every bar](/stance-bars#stance-bars)
+**Needs:** [Evidence strength](/evidentiality#evidence-strength) · [Deduction](/evidentiality#deduction) · [MAY](/knowing#may) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) · [Hopefully and other attitudes](/feelings#speaker-attitude) · [Unmet](/sakes#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](/spans#asides) · [CAUSE](/cause#mechanism) · [Every bar](/stance-bars#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say *how you know* a claim. Ageben has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: `-l` solid, `-m` ordinary, `-r` thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how *you* feel about the claim, so it is an attitude word.
 
@@ -461,9 +461,9 @@ A word about the argument does not make it. *The argument is valid* names the li
 ### Adding how you know, how often, or how it works {#stacks-evidentiality-cause-restrictors}
 <a id="stacks"></a>
 
-**Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/cause#cause)
+**Needs:** [If](/causation#if) · [evidentiality](/evidentiality#evidentiality) · [restrictors](/restrictors) · [CAUSE](/cause#mechanism)
 
-A one-off episode and a standing pattern use the same hinges. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/cause#cause)).
+A one-off episode and a standing pattern use the same hinges. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](/evidentiality#evidentiality)), **`hual` / `huam`** for how often ([restrictors](/restrictors)), **`thewom`** for mechanism ([CAUSE](/cause#mechanism)).
 
 > `hual zerulal gohem blugalal.`
 >
@@ -471,11 +471,11 @@ A one-off episode and a standing pattern use the same hinges. Add extra words fo
 >
 > "It always rains if there are clouds."
 
-**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/usually-vs-must#generalization)). CAUSE is `thewom`. English *habit* when a cue produces the act is [habit](#habit).
+**Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](/usually-vs-must#general-claims)). CAUSE is `thewom`. English *habit* when a cue produces the act is [habit](#habit).
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](/cause#cause) · [Because](/because-and-iff#choosing-a-hinge) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a label holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
+**Needs:** [CAUSE](/cause#mechanism) · [Because](/because-and-iff#choosing-a-hinge) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a label holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before `thahum` (the cue is a fact) or `thohem` (you do not claim it holds), and the cue in that hinge's `/b/`.
 

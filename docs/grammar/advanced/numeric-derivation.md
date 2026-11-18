@@ -208,7 +208,7 @@ A rank body can be wiped too, which makes a disqualified kind.
 |--------|-----|---------|-----|
 | **`#0exROOT`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zromowaxamahum`: *a disqualified challenge (as type)*; `vromowaxamahum`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
-`#0e` vs `#0`: annihilated place vs zeroth-order rung. `#0e` vs `+0e`: rank wipe vs kind total-null. Free `#e0` is [current generation](generations.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
+`#0e` vs `#0`: annihilated place vs zeroth-order rung. `#0e` vs `+0e`: rank wipe vs kind total-null. Free `#e0` is [current generation](generations.md#generation-counting). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
 ### Which rank the kind holds (`#N`) {#ordinal-digit-morphs-n}
 <a id="ordinal-digit-morphs"></a>

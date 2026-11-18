@@ -74,7 +74,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | Rationale | because `thahum`; whose need it serves: a sake | [because](/because-and-iff#choosing-a-hinge), [for a sake](/for-a-sake#whose-stake) |
 | Invariant over every member, no exceptions / with exceptions | `zual` / `zuam` fence, bound tag for *each one* | [universals](/universals-domains#universals-domains-generics), [bound tags](/universals-domains#bound-tags) |
 | Never / none | `zul`, `hal` | [universals](/universals-domains#universals-domains-generics), [never](/restrictors#only-when-never-hal) |
-| How the invariant is known (proved, tested, observed) | channel on the generalization | [usually vs must](/usually-vs-must#generalization) |
+| How the invariant is known (proved, tested, observed) | channel on the generalization | [usually vs must](/usually-vs-must#general-claims) |
 | Trigger cases, exhaustive or not | occasions + restrictor, **-l** closed / **-m** open | [restrictors](/restrictors#only-when-never-hal), [more occasions](/more-occasions#more-occasions) |
 | Preference order, last resort | `hol`, `huol` | [ranked](/more-occasions#ranked-with-listed-occasions) |
 | State guards (*while not yet shipped*) | `helom`, `hawum`, `havem`, `huvum` | [phasal](/already-still-yet#stage-of-change) |
@@ -90,7 +90,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | Includes / excludes / prioritizes | list verbs | [list verbs](/list-verbs#list-verbs) |
 | Exclusive choice, whole-list denial | set joins | [set joins](/set-joins#exclusivity-and-denying-a-whole-list) |
 | Effective from a version or date | as-of | [as-of](/as-of#as-of) |
-| Legacy behaviour, still in effect after a change | `helam`, `haram` | [residue and former](/residue-and-former#residue-and-former-climate) |
+| Legacy behaviour, still in effect after a change | `helam`, `haram` | [residue and former](/residue-and-former#residue) |
 | Definitions and glossary | identity and classification | [identity](/predication#identity), [classification](/predication#classification) |
 | Project entities (a service, a screen) | proper names, **-n** | [proper names](/proper-names#proper-name--n) |
 | Code identifiers, paths, regexes | opaque span `<…>` | [loans](/spans#loans) |
@@ -157,7 +157,7 @@ Family names are the interpreter's first cut; its meta note is the authority onc
 | Unparsed sentence, or one with an ambiguity the grammar doesn't resolve, including a reading whose `unordered` holds a pair of frames (two meanings on one tree) | fail |
 | Open fill-ask or `thomal` | fail for *ready to implement*; listed as questions |
 | Two requirements whose claims match (the interpreter's matcher: same verb, same roles by referent) and whose say answers clash (require vs forbid) under overlapping conditions and binders | fail, both ids |
-| Closed universal or `hual` backed by only a weak channel | warn: no exceptions claimed on thin evidence ([usually vs must](/usually-vs-must#generalization)) |
+| Closed universal or `hual` backed by only a weak channel | warn: no exceptions claimed on thin evidence ([usually vs must](/usually-vs-must#general-claims)) |
 | Open list (**-m**) on occasions or a fence | note to the implementer: cases are not exhaustive; handle the rest |
 | Fact with no channel | warn: source unknown |
 | `thoger` decision | note: isolate behind an interface |

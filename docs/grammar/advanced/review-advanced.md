@@ -133,7 +133,7 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 
 *Azozon's second child sleeps.*
 
-**Rule:** [Counting inside one level of a family or outline](generations.md#ordinal-generation)
+**Rule:** [Counting inside one level of a family or outline](generations.md#generation-counting)
 :::
 
 **5.** `zazozon grawaxugowul.`
@@ -229,7 +229,7 @@ z-Azozon | h-always.open | v-sit
 
 Open **-m** leaves exceptions; closed **-l** allows none.
 
-**Rule:** [Channels on a generalization](usually-vs-must.md#generalization)
+**Rule:** [Channels on a generalization](usually-vs-must.md#general-claims)
 :::
 
 **8.** *Ahelan sees at most five baguettes.* `zahelan debodolx gruwal uel grazal vayebel.` or `zahelan debodolx gruwal oel grazal vayebel.`

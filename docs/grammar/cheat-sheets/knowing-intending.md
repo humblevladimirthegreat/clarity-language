@@ -120,8 +120,8 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 <!-- generated: overlays pos=th|h kind=may|notional|mirative|residue|former_climate -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#former-climate) | I |
 | `themel` | mirative mood overturning a firm expectation | [It turns out (themem)](/mirative#mirative) | I |
 | `themem` | mirative mood (newly found out and not expected) | [It turns out (themem)](/mirative#mirative) | I |
 | `themer` | mirative mood against a loose expectation | [It turns out (themem)](/mirative#mirative) | I |
@@ -137,9 +137,9 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 |-----|---------|---------|-------|
 | [MAY](/knowing#may) | `zalazun thomam dahelan vudurul.` | *Alazun may be leaving Ahelan.* | B |
 | [MAY, ask to find out](/knowing#follow-up-endings-may) | `yel zazozon vabuvul thomal dalazun.` | *Might Azozon be punching Alazun? let's find out.* | B |
-| [RESIDUE](/residue-and-former#residue-and-former-climate) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
-| [RESIDUE with a channel](/residue-and-former#residue-and-former-climate) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |
-| [FORMER after the verb](/residue-and-former#residue-and-former-climate) | `zazozon hual vozuyel helam.` | *Azozon always used to sing.* | I |
+| [RESIDUE](/residue-and-former#residue) | `zalazun haram vudurul.` | *Alazun has left and is still gone.* | I |
+| [RESIDUE with a channel](/residue-and-former#residue) | `zalazun thevum haram vudurul.` | *I remember Alazun leaving, and Alazun is still gone.* | I |
+| [FORMER after the verb](/residue-and-former#former-climate) | `zazozon hual vozuyel helam.` | *Azozon always used to sing.* | I |
 | [A channel as the bar](/bars#channel-bars) | `thugem` before `zol` | *than it looks* | I |
 
 Neither MAY nor MIRATIVE can be a [comparison bar](/bars#channel-bars).
@@ -237,7 +237,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thebam` *so they say* ([someone said it](/evidentiality#evidentiality)) | | `theyum` *imagine* ([a scene you make up](/notional#notional-as-if-framing)) |
 | `theyol` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `throgel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
 | `thubom blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagom` *I plan to* ([an intention](/intention#plan-predict)) |
-| `haram` *still in effect* ([the outcome stays](/residue-and-former#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#stage-of-change)) |
+| `haram` *still in effect* ([the outcome stays](/residue-and-former#residue)) | | `hawum` *still* ([the state goes on](/already-still-yet#stage-of-change)) |
 | `thogem` *I've decided* ([how open the choice is, no time](/want-and-decide#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](/try#trying)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
 | `thalom` *I want* ([your own wanting](/want-and-decide#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder-plans-and-motives)) |

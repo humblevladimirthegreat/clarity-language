@@ -97,7 +97,7 @@ describe("scope order (clause.md#which-covers-which)", () => {
   it("a channel and a binder follow text order: first the whole generalization, after it each case", () => {
     const [whole] = scopeOf("th-PATTERN.strong | [z-everything | g-cat] | v-sleep");
     assert.deepEqual(orders(whole!), ["stance>binder clause.md#which-covers-which"]);
-    assert.deepEqual(whole!.order[0]!.anchors, ["clause.md#which-covers-which", "usually-vs-must.md#generalization"]);
+    assert.deepEqual(whole!.order[0]!.anchors, ["clause.md#which-covers-which", "usually-vs-must.md#general-claims"]);
     const [each] = scopeOf("[z-everything | g-cat] | v-sleep | th-LIVE.strong");
     assert.deepEqual(orders(each!), ["binder>stance clause.md#which-covers-which"]);
     const [may] = scopeOf("[z-everything | g-dog] | v-walk | th-MAY");
@@ -118,7 +118,7 @@ describe("scope order (clause.md#which-covers-which)", () => {
 
   it("FORMER covers a restrictor wherever it sits; RESIDUE follows text order", () => {
     const [former] = scopeOf("z-Azozon | h-always | v-sing | h-FORMER");
-    assert.deepEqual(orders(former!), ["residue>occasion residue-and-former.md#residue-and-former-climate"]);
+    assert.deepEqual(orders(former!), ["residue>occasion residue-and-former.md#former-climate"]);
     const [residue] = scopeOf("h-RESIDUE | z-Azozon | v-walk | h-always");
     assert.deepEqual(orders(residue!), ["residue>occasion clause.md#which-covers-which"]);
   });

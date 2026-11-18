@@ -58,12 +58,12 @@ Source: [numbers.md](/numbers), [numeric-derivation.md](/numeric-derivation)
 
 - No-mantissa digitless-exp beyond start / last / *just before that*: **`x+e`**, **`x-e`**, … (**`x-e-`** *just before that:* is defined). No discourse job for an unbounded list item.
 - Digitless-exp on end-relative marker **`#-`** / **`rue`**. Counting from the end has no far landmark of its own: the two ends are **`#e`** and **`#e-`**.
-- Zero×exp under `/x/` (**`x+0e`**, **`x±0e-1`**, …). No discourse job; discourse nesting uses [generation](/generations#ordinal-generation).
+- Zero×exp under `/x/` (**`x+0e`**, **`x±0e-1`**, …). No discourse job; discourse nesting uses [generation](/generations#generation-counting).
 - Ordinal zero×digitless under `/x/` (**`x#0e`**, *struck point*; its twins on other hosts are defined). No list has needed a struck item: a dropped point is `ur …`.
 
 ### Digitless-exp / hyperbole on `#-`
 
-- Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`rue`** (combine with [digitful generation](/generations#ordinal-generation) when needed). Counting from the end flips which landmark the joke points at, so no reading is guessable.
+- Digitless-exp and hyperbole on forward/end-relative **`#-`** / **`rue`** (combine with [digitful generation](/generations#generation-counting) when needed). Counting from the end flips which landmark the joke points at, so no reading is guessable.
 
 ### Number markers on `/w/`, `/th/`, and stacks
 

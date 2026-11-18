@@ -89,7 +89,7 @@ I kneel for a quick sense of purpose.	purpose	sake:th-thor	a motive goes on /th/
 I want competence.	competence	sake:none	a sake with no stance spells nothing
 # Habit as CAUSE plus a hinge
 Uzozen has a habit of walking in the rain.	habit	link:say-reasons.md#habit	*habit* when a cue produces the act
-Uzozen has a habit of walking in the rain.	habit	link:cause.md#cause	CAUSE is the mechanism word
+Uzozen has a habit of walking in the rain.	habit	link:cause.md#mechanism	CAUSE is the mechanism word
 Rain triggers Uzozen's walk.	triggers	link:say-reasons.md#habit	*triggered by* is the same cue job
 # Recipe-track cues for stacked acts, CAUSE, and stand-ins
 Who even claps?	who even	link:say-questions.md#ask-words	*who even* is a rhetorical question

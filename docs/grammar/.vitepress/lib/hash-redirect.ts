@@ -143,7 +143,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "rank-joins.md", hash: "full-single-item-and-standalone-inventories", to: "set-joins.md", toHash: "full-single-item-and-standalone-inventories" },
   { page: "spans-as-words.md", hash: "quote-acts", to: "quote-contents.md", toHash: "quote-acts" },
   { page: "spans-as-words.md", hash: "topic-quotes", to: "quote-contents.md", toHash: "topic-quotes" },
-  { page: "usually-vs-must.md", hash: "universality", to: "usually-vs-must.md", toHash: "generalization" },
+  { page: "usually-vs-must.md", hash: "universality", to: "usually-vs-must.md", toHash: "general-claims" },
   { page: "join-limits.md", hash: "scope-islands-join", to: "scope-islands.md", toHash: "scope-islands" },
   { page: "resume-sense.md", hash: "resume-one-sense", to: "resume-sense.md", toHash: "resume-further" },
   { page: "collectives.md", hash: "the-group-as-one", to: "collectives.md", toHash: "groups-further" },
@@ -188,6 +188,10 @@ export const hashRedirects: HashRedirect[] = [
   { page: "because-and-iff.md", hash: "because", to: "because-and-iff.md", toHash: "choosing-a-hinge" },
   { page: "because-and-iff.md", hash: "hinges", to: "because-and-iff.md", toHash: "choosing-a-hinge" },
   { page: "very-and-slightly.md", hash: "degree-w", to: "very-and-slightly.md", toHash: "grading-a-quality" },
+  { page: "residue-and-former.md", hash: "residue-and-former-climate", to: "residue-and-former.md", toHash: "residue" },
+  { page: "cause.md", hash: "cause", to: "cause.md", toHash: "mechanism" },
+  { page: "usually-vs-must.md", hash: "generalization", to: "usually-vs-must.md", toHash: "general-claims" },
+  { page: "generations.md", hash: "ordinal-generation", to: "generations.md", toHash: "generation-counting" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

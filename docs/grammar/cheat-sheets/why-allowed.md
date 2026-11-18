@@ -59,9 +59,9 @@ The ending on the because hinge says whether anyone did wrong.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Mechanism](/cause#cause) | `zazozon vowurol thewom thohem blerulal.` | *Azozon walks if it rains.* (rain as the mechanism) | I |
+| [Mechanism](/cause#mechanism) | `zazozon vowurol thewom thohem blerulal.` | *Azozon walks if it rains.* (rain as the mechanism) | I |
 | [Make someone do it](/cause#make): causer in `/b/`, no hinge | `zalazun vezuyol thewom blazozon.` | *Azozon makes Alazun speak.* | I |
-| [One adjective only](/cause#cause): `wewom` | `zazozon wewom gelunem vowurol.` | *Azozon walks, straining.* (something is causing the strain) | I |
+| [One adjective only](/cause#mechanism): `wewom` | `zazozon wewom gelunem vowurol.` | *Azozon walks, straining.* (something is causing the strain) | I |
 
 ## The sakes {#sakes}
 
@@ -251,7 +251,7 @@ A [say word](/permission-consent#say-words) goes on `/h/`: `h`, `w`, a reach vow
 | `thohem` *if* ([enough, not claimed](/causation#if)) | | `thahum` *because* ([enough, and a fact](/because-and-iff#choosing-a-hinge)) |
 | `thohem` *if* ([other routes remain](/causation#only-if)) | | `thebem` *only if* ([the outcome needs it](/causation#only-if)) |
 | `thahum` *because* ([a cause, no blame](/fault#fault)) | | `thahul` *fault* ([someone did wrong](/fault#fault)) |
-| `thahum` *because* ([the condition](/cause#cause)) | | `thewom` *mechanism* ([how it is produced](/cause#cause)) |
+| `thahum` *because* ([the condition](/cause#mechanism)) | | `thewom` *mechanism* ([how it is produced](/cause#mechanism)) |
 | `hwuvam` *may* ([someone over the act allows it](/permission-consent#permission)) | | `hwudam` *they agreed* ([the yes of the one it's done to](/permission-consent#consent)) |
 | `hwuvam` *may* ([the act is allowed](/permission-consent#permission)) | | `hwuvom` *has to* ([the act is demanded](/permission-consent#permission)) |
 | `hwuvol` *the rules require it* ([an outside demand](/permission-consent#permission)) | | `hwuzor` *I feel I have to* ([an unspoken should](/permission-consent#consent)) |

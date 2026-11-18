@@ -64,9 +64,9 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "overlay:evidential:th": { family: "stance", reach: "clause", anchor: "knowing.md#live-vs-memory" },
   "overlay:evidential:w": { family: "stance", reach: "adjective", anchor: "universality.md#mood-on-one-adjective" },
   "overlay:mirative:th": { family: "mirative", reach: "clause", anchor: "mirative.md#mirative" },
-  "overlay:residue:h": { family: "residue", reach: "clause", anchor: "residue-and-former.md#residue-and-former-climate" },
+  "overlay:residue:h": { family: "residue", reach: "clause", anchor: "residue-and-former.md#residue" },
   "overlay:residue:w": { family: "residue", reach: "adjective", anchor: "universality.md#mood-on-one-adjective" },
-  "overlay:former_climate:h": { family: "residue", reach: "clause", anchor: "residue-and-former.md#residue-and-former-climate" },
+  "overlay:former_climate:h": { family: "residue", reach: "clause", anchor: "residue-and-former.md#former-climate" },
   "overlay:former_climate:w": { family: "residue", reach: "adjective", anchor: "universality.md#mood-on-one-adjective" },
   "overlay:plan:th": { family: "intention", reach: "clause", anchor: "intention.md#plan" },
   "overlay:decision:th": { family: "intention", reach: "clause", anchor: "want-and-decide.md#decision-revisability" },
@@ -79,8 +79,8 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "overlay:clause_hinge:th": { family: "hinge", reach: "clause", anchor: "causation.md#if" },
   "overlay:clause_hinge:g": { family: "hinge", reach: "noun", anchor: "causation.md#if" },
   "overlay:clause_hinge:h": { family: "hinge", reach: "clause", anchor: "dependents.md#hinges" },
-  "overlay:cause:th": { family: "hinge", reach: "clause", anchor: "cause.md#cause" },
-  "overlay:cause:w": { family: "hinge", reach: "adjective", anchor: "cause.md#cause" },
+  "overlay:cause:th": { family: "hinge", reach: "clause", anchor: "cause.md#mechanism" },
+  "overlay:cause:w": { family: "hinge", reach: "adjective", anchor: "cause.md#mechanism" },
   "overlay:stimulus:g": { family: "sake", reach: "noun", anchor: "sakes.md#personal-possession" },
   "overlay:phasal:h": { family: "phase", reach: "clause", anchor: "already-still-yet.md#stage-of-change" },
   "overlay:phasal:w": { family: "phase", reach: "adjective", anchor: "already-still-yet.md#stage-of-change" },
@@ -169,7 +169,7 @@ const STANDALONE = "verb-and-stance-joins.md#standalone-stance-joins";
 const REACH = "verb-and-stance-joins.md#stance-join-reach";
 const CHANNEL: Partial<Record<FrameFamily, FrameMember[]>> = { stance: ["channel"] };
 /** A channel follows text order: first, how you know the whole generalization; after a fence or restrictor, each case. */
-const GENERALIZATION = "usually-vs-must.md#generalization";
+const GENERALIZATION = "usually-vs-must.md#general-claims";
 
 const CALL = "speech-moves.md#vocative";
 /** Every family a call can share a clause with, itself included: a call commutes with each. */
@@ -273,7 +273,7 @@ export const PAIR_ROWS: readonly PairRow[] = [
   rule(
     "hinge",
     "stance",
-    { ...over("stance", "evidentiality.md#evidence-clause", "usually-vs-must.md#generalization"), when: CHANNEL },
+    { ...over("stance", "evidentiality.md#evidence-clause", "usually-vs-must.md#how-things-work"), when: CHANNEL },
     text(MAY_BEFORE, ...HINGE_LAST),
   ),
   rule("hinge", "holder", { order: "textOrder", anchors: [HOLDER] }),
@@ -284,7 +284,7 @@ export const PAIR_ROWS: readonly PairRow[] = [
   rule("hinge", "notional", text(...HINGE_LAST)),
   rule("hinge", "mirative", text(...HINGE_LAST)),
   rule("hinge", "contrary", text(...HINGE_LAST)),
-  rule("hinge", "occasion", over("occasion", "usually-vs-must.md#generalization")),
+  rule("hinge", "occasion", over("occasion", "usually-vs-must.md#how-things-work")),
   { pair: ["stance", "holder"], kind: "wordShape", cases: [over("holder", HOLDER)] },
   rule("stance", "intention", text(MAY_BEFORE)),
   rule("stance", "ability", text()),
@@ -328,7 +328,7 @@ export const PAIR_ROWS: readonly PairRow[] = [
   rule(
     "residue",
     "occasion",
-    { ...over("residue", "residue-and-former.md#residue-and-former-climate"), when: { residue: ["former"] } },
+    { ...over("residue", "residue-and-former.md#former-climate"), when: { residue: ["former"] } },
     text(),
   ),
   rule("notional", "mirative", text()),

@@ -187,7 +187,7 @@ x-Alazun | z-TOPIC | v-sit
 
 z-Alazun | h-RESIDUE | v-fight
 
-**Rule:** [Residue and former climate](residue-and-former.md#residue-and-former-climate)
+**Rule:** [Residue and former climate](residue-and-former.md#residue)
 :::
 
 **13.** *Ahelan is so angry that Alazun cries.*
@@ -661,7 +661,7 @@ z-Alazun | v-sing | [th-CAUSE | bl-Azozon]
 
 The singer stays the subject; the one who makes it happen follows **`thewom`**.
 
-**Rule:** [CAUSE](cause.md#cause)
+**Rule:** [CAUSE](cause.md#make)
 :::
 
 **30.** *Ahelan tells Alazun not to climb.* `zahelan vezuyol balazun durl voguvol.` or `zahelan vezuyol balazun dorl voguvol.`

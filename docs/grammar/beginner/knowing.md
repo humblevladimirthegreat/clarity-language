@@ -277,6 +277,6 @@ z-Ahelan | th-MEMORY | v-pay
 - Plan vs forecast: [Plan](intention.md#plan-predict)
 - Clock / date / when-frames: [Time](digit-strings.md#time)
 - Habitual *always*: [Restrictors](restrictors.md)
-- General claims and their warrant: [Channels on a generalization](/usually-vs-must#generalization)
+- General claims and their warrant: [Channels on a generalization](/usually-vs-must#general-claims)
 - Someone else's view: [Whose view (holder)](/holder#naming-a-holder)
 - Imagined scenes, surprise, and how a claim stands: [Residue and former](/residue-and-former)

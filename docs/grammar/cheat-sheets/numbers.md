@@ -449,16 +449,16 @@ On a rank, an exponent with digits is a generation, not a power of ten: `eK` goe
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g#3`](/generations#ordinal-generation) | 3rd of the focus's own generation, from the start | A |
-| [`g#-3`](/generations#ordinal-generation) | 3rd of the own generation, from the end | A |
-| [`g#3e0`](/generations#ordinal-generation) | 3rd of the current generation, asserted | A |
-| [`g#e0`](/generations#ordinal-generation) | the current generation as a whole | A |
-| [`g#3e2`](/generations#ordinal-generation) | 3rd in generation +2 | A |
-| [`g#3e-2`](/generations#ordinal-generation) | 3rd in generation −2 | A |
-| [`g#-1e2`](/generations#ordinal-generation) | last of generation +2 | A |
-| [`g#e2`](/generations#ordinal-generation) | generation +2 as a whole | A |
-| [`g#e-1`](/generations#ordinal-generation) | generation −1: the parent layer | A |
-| [`g#1e-1`](/generations#ordinal-generation) | 1st of generation −1 | A |
+| [`g#3`](/generations#generation-counting) | 3rd of the focus's own generation, from the start | A |
+| [`g#-3`](/generations#generation-counting) | 3rd of the own generation, from the end | A |
+| [`g#3e0`](/generations#generation-counting) | 3rd of the current generation, asserted | A |
+| [`g#e0`](/generations#generation-counting) | the current generation as a whole | A |
+| [`g#3e2`](/generations#generation-counting) | 3rd in generation +2 | A |
+| [`g#3e-2`](/generations#generation-counting) | 3rd in generation −2 | A |
+| [`g#-1e2`](/generations#generation-counting) | last of generation +2 | A |
+| [`g#e2`](/generations#generation-counting) | generation +2 as a whole | A |
+| [`g#e-1`](/generations#generation-counting) | generation −1: the parent layer | A |
+| [`g#1e-1`](/generations#generation-counting) | 1st of generation −1 | A |
 
 On a family tree, put the anchor person in a `bl-` word right after the number.
 

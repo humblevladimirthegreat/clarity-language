@@ -20,7 +20,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, fe
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/try#trying) |
 | **AWAY** | Feeling urge: move off from a target | `thudathumum` | [How you feel](/how-you-feel#urges) |
-| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
+| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#mechanism) |
 | **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyom` | [How you know](/evidentiality#evidentiality) |
 | **CHOICE** | Say word answer: their call | `hwuvem` | [Permission and consent](/permission-consent#say-words) |
@@ -222,7 +222,7 @@ Endings on unmet `thu`, **DECISION**, and ability *can’t*.
 
 A channel on a clause with a universal fence or restrictor: how you know the general claim.
 
-[Usually vs must](/usually-vs-must#generalization)
+[Usually vs must](/usually-vs-must#general-claims)
 
 ### Check-back
 

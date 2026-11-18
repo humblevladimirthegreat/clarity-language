@@ -167,7 +167,7 @@ This helps you notice, in the middle of an argument, which part you saw and whic
 
 English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
 
-A [general claim](/usually-vs-must#generalization) says in its ending whether it allows exceptions: a closed *always* allows none, and an open *always* leaves them open, like *usually* or *as a rule*. When the claim rests on a pattern, the word for how you know says how much pattern there is, from a well-established one to only a few cases.
+A [general claim](/usually-vs-must#general-claims) says in its ending whether it allows exceptions: a closed *always* allows none, and an open *always* leaves them open, like *usually* or *as a rule*. When the claim rests on a pattern, the word for how you know says how much pattern there is, from a well-established one to only a few cases.
 
 Saying *usually* when you mean it, and *from a few cases* when that is all you have, helps you catch overgeneralizing before one bad day becomes *it always goes wrong*.
 
@@ -291,9 +291,9 @@ Many roots have an abstract sense beside a concrete one, so an idea you cannot s
 - [Live look as attesting](/knowing#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
 - [Residue as unpaid debt](/residue-and-former#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed.
 - [A former pattern as an empty nest](/residue-and-former#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over, so the pattern has ended.
-- [A pattern as paw-prints](/usually-vs-must#generalization) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
+- [A pattern as paw-prints](/usually-vs-must#general-claims) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
 - [*As if* as theater](/notional#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene, and what really happened stays offstage.
-- [Mechanism as gears](/cause#cause) ([a wish as a law](#trap-wish-as-law)): you say how a result comes about, like gears meshing, not only that it follows.
+- [Mechanism as gears](/cause#mechanism) ([a wish as a law](#trap-wish-as-law)): you say how a result comes about, like gears meshing, not only that it follows.
 - [Feeling as a pull](/how-you-feel#urges) ([a feeling as a label](#trap-feeling)): the urge is the vowel of a little place word (*in*, *at*, *for*, *from*), so a feeling moves you in a direction, and you can notice the pull before you follow it.
 
 Each picture already carries a warning against its trap. The intent is that it helps you reach for the healthier frame in the moment and remember it later.
