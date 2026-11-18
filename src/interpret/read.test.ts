@@ -701,11 +701,27 @@ describe("reader: tone marks (tone-marks.md#tone-marks)", () => {
     assert.equal(tone(readings[0]!.frames).values.names, "unsure strong");
   });
 
-  it("two marks that each reach the rest of the sentence: unsettled, an open decision", () => {
+  it("tone-marks.md:128: a second free-standing mark takes over from its place on; the pair is not unordered", () => {
     const { readings } = toned("! | z-Azozon | % | d-dog | v-see");
     const reading = readings[0]!;
-    assert.equal(reading.unordered.length, 1);
-    assert.deepEqual(reading.unordered[0]!.map((f) => f.values.mark), ["!", "%"]);
+    assert.deepEqual(reading.unordered, []);
+    assert.equal(tone(reading.frames).values.mark, "!");
+    const dog = reading.claim.roles.d as Extract<Term, { kind: "thing" }>;
+    assert.deepEqual(tone(dog.frames).values, { mark: "%", names: "joking", scope: "rest" });
+    assert.equal(tone(reading.claim.verb && "frames" in reading.claim.verb ? reading.claim.verb.frames : undefined).values.mark, "%");
+    const azozon = reading.claim.roles.z as Extract<Term, { kind: "thing" }>;
+    assert.ok(!azozon.frames?.some((f) => f.key === "edge:tone"), "the earlier mark's word takes no later tone");
+  });
+
+  it("tone-marks.md:142: a free-standing mark mid-sentence colors only the words after it, with no clause frame", () => {
+    const { readings } = toned("z-Azozon | ! | d-dog | v-see");
+    const reading = readings[0]!;
+    assert.ok(!reading.frames.some((f) => f.key === "edge:tone"), "not a whole-clause frame");
+    assert.deepEqual(orders(reading), []);
+    const dog = reading.claim.roles.d as Extract<Term, { kind: "thing" }>;
+    assert.deepEqual(tone(dog.frames).values, { mark: "!", names: "strong", scope: "rest" });
+    const azozon = reading.claim.roles.z as Extract<Term, { kind: "thing" }>;
+    assert.ok(!azozon.frames?.some((f) => f.key === "edge:tone"), "the word before the mark is not colored");
   });
 });
 

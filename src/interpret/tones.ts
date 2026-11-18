@@ -1,7 +1,8 @@
 /**
  * Tone marks on a word, a span, or a scope island (tone-marks.md#tone-marks): the reader puts each one on the place
- * that holds what it colors. A mark before the rest of the sentence is a whole-clause frame the resolve stage already
- * emitted (`src/parse/scope.ts`), copied with the other scope frames.
+ * that holds what it colors. A free-standing mark at the start of a sentence is a whole-clause frame the resolve stage
+ * already emitted (`src/parse/scope.ts`), copied with the other scope frames. A free-standing mark later in the
+ * sentence colors only the words after it, so it sits on each of those words, with no clause reach.
  *
  * A tone is voice only, so its frame holds no word (`words` is empty): word coverage is unchanged.
  */
@@ -53,8 +54,7 @@ function headOf(term: Term): LexWord | undefined {
  * carries. A left-edge word frames every sentence body and join member of its turn, so its tone sits on each copy.
  * Returns how many places took it.
  */
-function placeOnWord(readings: Reading[], tone: ToneRecord): number {
-  const target = tone.words[0];
+function placeOnWord(readings: Reading[], tone: ToneRecord, target: LexWord | undefined = tone.words[0]): number {
   let placed = 0;
   const seen = new Set<object>();
   const placedOn = new Set<object>();
@@ -128,14 +128,20 @@ function placeOnWord(readings: Reading[], tone: ToneRecord): number {
 }
 
 /**
- * Place every word, span and island tone of a parse (reader rule 2: a tone on a word reaches that word only). A tone
- * whose word has no own place (a linker, a polar particle) goes in `unread` as `unplaced`. `all` lists every reading,
+ * Place every word, span, island and mid-sentence free-standing tone of a parse (reader rule 2: a tone on a word
+ * reaches that word only). A tone none of whose words has an own place (a linker, a polar particle) goes in `unread`
+ * as `unplaced`. `all` lists every reading,
  * nested ones included.
  */
 export function placeTones(readings: Reading[], all: Reading[], tones: readonly ToneRecord[]): void {
   for (const tone of tones) {
-    if (tone.scope === "rest") continue;
-    if (tone.scope === "island") {
+    if (tone.scope === "rest" && tone.initial) continue;
+    if (tone.scope === "rest") {
+      // A mid-sentence mark: a tone on each word it colors that has an own place.
+      let placed = 0;
+      for (const word of tone.words) placed += placeOnWord(readings, tone, word);
+      if (placed > 0) continue;
+    } else if (tone.scope === "island") {
       const island = all.find((r) => islandOf(r, tone));
       if (island) {
         island.frames.push(toneFrame(tone));

@@ -544,7 +544,10 @@ export type PairingRecord = {
   partners: LexWord[];
 };
 
-/** What a tone mark colors (tone-marks.md#tone-marks): a word, a span, a scope island, or the rest of the sentence. */
+/**
+ * What a tone mark colors (tone-marks.md#tone-marks): a word, a span, a scope island, or, for a free-standing mark, the
+ * words after it up to the period or the next free-standing mark.
+ */
 export type ToneScope = "word" | "span" | "island" | "rest";
 
 /**
@@ -559,8 +562,16 @@ export type ToneRecord = {
   scope: ToneScope;
   /** Where the mark sits: the `at` of the first word after it. */
   at: number;
-  /** The words it colors: the word or span; the island's words; the rest of the sentence up to its period. */
+  /**
+   * The words it colors: the word or span; the island's words; for a free-standing mark, the words after it up to the
+   * period or the next free-standing mark (tone-marks.md#tone-marks).
+   */
   words: LexWord[];
+  /**
+   * A free-standing mark before the first word of its sentence: it colors the whole sentence, so the resolve stage
+   * emits it as a whole-clause frame. A free-standing mark later in the sentence colors only its words.
+   */
+  initial?: true;
 };
 
 export type ResolveInfo = {

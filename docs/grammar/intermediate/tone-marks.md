@@ -41,7 +41,7 @@ Write the mark *before* what it colors, so you see the tone before you say the w
 |---------|--------|
 | Attached to a word: `!zazozon` | that word |
 | Attached to a [span](/spans): `!d[ … ]` | the span |
-| Standing alone, then a space: `! zazozon …` | the rest of the sentence, up to the period |
+| Standing alone, then a space: `! zazozon …` | the words after it, up to the period or the next free-standing mark |
 
 > `zazozon ?dodozel vayebel.`
 >
@@ -125,12 +125,21 @@ A mark on a span colors all of it:
 >
 > "Azozon said “Azozon,” I think." (unsure about just the quoted word)
 
+A second free-standing mark takes over for the words after it:
+
+> `! zazozon % dodozel vayebel.`
+>
+> ! | z-Azozon | % | d-dog | v-see
+>
+> "Azozon! … saw a dog." (strong about Azozon, joking about the rest)
+
 **Compare with:** `yel` asks a question; `?` only sounds unsure. A tone mark shows the feeling.
 
 - A mark may go on any word, including act words.
 - A mark is a stack of `!`, `?`, `%`, `&`, `;`, each at most twice, in any order. A third copy (`!!!`) is not a mark, and neither are marks in a row with a space between (`! !`).
 - `&` is the only way to single out one word: moving a word adds no stress.
 - A mark on a word inside a colored span or sentence overrides it for that word. To mix tones on one word, stack them there.
+- A free-standing mark at the start colors the whole sentence. A later one colors only the words after it, so two free-standing marks color separate stretches.
 - Before a span fence, the mark is *your* tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 

@@ -409,13 +409,9 @@ function orderPair(a: ScopeFrame, b: ScopeFrame, scope: ClauseScope): void {
     scope.order.push({ over: holder, under: host, kind: "wordShape", anchors: [HOLDER] });
     return;
   }
-  // Two tone marks that each reach the rest of the sentence: the page says a stack's order does not matter and that
-  // a mark on a word overrides the sentence's mark for that word, but not how two such marks order. Open decision
-  // (interpreter.md#attitude): unsettled until it is made.
-  if (a.tone && b.tone) {
-    scope.unordered.push({ frames: [a, b], anchors: [TONE] });
-    return;
-  }
+  // Two tone marks: each colors its own words, and a later free-standing mark takes over from its place on, so the
+  // pair commutes (tone-marks.md#tone-marks).
+  if (a.tone && b.tone) return;
   const row = pairRow(a.family, b.family) ?? DEFAULT_ROW;
   const found = row.cases.find((c) => caseMatches(c.when, a, b));
   if (!found || found.order === "commutes") return;
@@ -704,12 +700,13 @@ function toneFramesIn(clause: Clause, tones: readonly BodyTone[]): ScopeFrame[] 
 }
 
 /**
- * Split one turn's rest-of-sentence tones: those that color a body word frame the clause of their first body word;
- * those that color only left-edge words (`! yem.`) frame the turn's edge.
+ * Split one turn's sentence-initial free-standing tones (a later one colors only its words, so it is no frame): those
+ * that color a body word frame the clause of their first body word; those that color only left-edge words
+ * (`! yem.`) frame the turn's edge.
  */
 function turnTones(utterance: Utterance, tones: readonly ToneRecord[]): { body: BodyTone[]; edge: ScopeFrame[] } {
   const out: { body: BodyTone[]; edge: ScopeFrame[] } = { body: [], edge: [] };
-  const rest = tones.filter((tone) => tone.scope === "rest");
+  const rest = tones.filter((tone) => tone.scope === "rest" && tone.initial);
   if (rest.length === 0) return out;
   const turn = wordsUnder(utterance);
   const bodies = wordsUnder(utterance.bodies);
@@ -747,7 +744,8 @@ export function greetingHead(left: LeftEdge, body: BodyClause): LexWord | undefi
  * Scope records for every clause of the parse, in text order: each clause's whole-clause frames and the order of
  * every two of them. `tables` names a holder's host; without them a holder word gives the holder frame alone.
  * `blanks` are the resolve stage's fill-ask blanks, which bring no new member in. `tones` are the marks
- * `enforceTones` kept: one that reaches the rest of the sentence is a whole-clause attitude frame (tone-marks.md#tone-marks).
+ * `enforceTones` kept: a free-standing one at the start of its sentence is a whole-clause attitude frame
+ * (tone-marks.md#tone-marks).
  */
 export function clauseScopes(
   utterances: Utterance[],

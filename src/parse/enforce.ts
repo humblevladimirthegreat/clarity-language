@@ -217,12 +217,17 @@ export function enforceTones(tokens: IToken[]): { tokens: IToken[]; construction
     constructions.add(`tone.scope.${scope}`);
     const words = tonedWords(tokens, i + 1, scope);
     const at = words[0]?.at;
-    if (at !== undefined) tones.push({ mark, names, scope, at, words });
+    const before = tokens[i - 1];
+    const initial = scope === "rest" && (!before || before.tokenType === Period || before.tokenType === QMark || before.tokenType === Bang);
+    if (at !== undefined) tones.push({ mark, names, scope, at, words, ...(initial ? { initial: true as const } : {}) });
   });
   return { tokens: kept, constructions: [...constructions], tones };
 }
 
-/** The words a tone colors, from the token after the mark: that word or span, the island up to its `}`, or the rest of the sentence. */
+/**
+ * The words a tone colors, from the token after the mark: that word or span, the island up to its `}`, or, for a
+ * free-standing mark, the words up to the period or the next free-standing mark, which takes over from its place on.
+ */
 function tonedWords(tokens: IToken[], from: number, scope: ToneScope): LexWord[] {
   const wordOf = (token: IToken | undefined): LexWord | undefined => {
     const payload = token?.payload as TokenPayload | undefined;
@@ -237,6 +242,7 @@ function tonedWords(tokens: IToken[], from: number, scope: ToneScope): LexWord[]
   for (let i = from; i < tokens.length; i++) {
     const token = tokens[i]!;
     if (scope === "rest" && token.tokenType === Period) break;
+    if (scope === "rest" && token.tokenType === Tone && !(token.payload as { attached: boolean }).attached) break;
     if (scope === "island" && token.tokenType === IslandOpen) depth++;
     if (scope === "island" && token.tokenType === IslandClose && --depth === 0) break;
     const word = wordOf(token);
