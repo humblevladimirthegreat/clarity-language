@@ -22,11 +22,13 @@ import {
   setState,
   visibleTo,
 } from "./world.js";
-import type { Act, EntityId, Outcome, WorldEvent } from "./types.js";
+import type { Reading } from "../interpret/types.js";
+import type { EntityId, Outcome, WorldEvent } from "./types.js";
 
 export type Doing = {
   ctx: Ctx;
-  act: Act;
+  /** The reading being done; unset when the game itself looks around (the opening). */
+  reading?: Reading;
   /** Who acts; undefined when a thing was ordered to do it to itself. */
   actor?: EntityId;
   patient?: EntityId;
@@ -371,12 +373,12 @@ export const HANDLERS: Record<string, Handler> = {
     spell: true,
     patientScope: "create",
     run(d) {
-      const { ctx, act } = d;
-      const ref = act.object;
-      if (!ref || ref.kind !== "content") return refuse(ctx, "Make what? Name a kind of thing as the object: a new one ends in -l.");
+      const { ctx } = d;
+      const ref = d.reading?.claim.roles.d;
+      if (!ref || ref.kind !== "thing" || ref.named) return refuse(ctx, "Make what? Name a kind of thing as the object: a new one ends in -l.");
       if (!rootTraits(ref.root, ctx.lex).physical) return refuse(ctx, `${capitalize(ctx.gen.nounEnglish(ref.root))} has no body to make.`);
       const room = roomOf(ctx.world, d.actor ?? ctx.world.player)!;
-      const props = ref.adjs.flatMap((adj) => (adj.family.kind === "content" && adj.family.roots.length === 1 ? [adj.family.roots[0]!] : []));
+      const props = ref.details.flatMap((detail) => detail.words).flatMap((adj) => (adj.family.kind === "content" && adj.family.roots.length === 1 ? [adj.family.roots[0]!] : []));
       const made = addEntity(ctx.world, ref.root, { rel: "room", room }, { props });
       const english = clause(who(d) || "you", ["make", "makes"], `a ${ctx.gen.nounEnglish(ref.root)}`);
       const event = eventOf({ ...d, patient: made });
