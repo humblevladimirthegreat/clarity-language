@@ -136,7 +136,7 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 **Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
-When you don't name the source, `thebam bleyel blar` (*according to some person*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own, in your own voice: the written `yal` keeps it out of the report.
+When you don't name the source, `thebam bleyel blar` (*according to some person*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own, and write its `yal`: the written statement word puts that sentence in your own voice, so it is not taken as part of the report.
 
 | Ageben | English |
 |--------|---------|

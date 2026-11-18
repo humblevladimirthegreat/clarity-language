@@ -183,7 +183,7 @@ English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, fee
 
 Hope is not a way of knowing, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
-Any feeling root works the same way, including the roots of the [plain labels](/how-you-feel#feeling-label): `thonumum` from *angry*, `thodebem` from *sad*. Like any [stance](/clause#stance-th), it is your feeling now, as you speak, and it does not change what is claimed. You can then say how a claim lands with you without making your feeling the claim.
+Any feeling root works the same way, including the roots of the [plain labels](/how-you-feel#feeling-label): `thonumum` from *angry*, `thodebem` from *sad*. Like any [stance](/clause#stance-th), it is your feeling now, as you speak, and it does not change what is claimed. This lets you say how you feel about a claim without making your feeling the claim.
 
 > `zazozon thonumum vowurol.`
 >
