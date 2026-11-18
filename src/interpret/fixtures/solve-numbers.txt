@@ -1,0 +1,32 @@
+# Solver fixture: stated numbers, more than, a range, a ray, and digitless words (ranges.md#number-ranges, open-ranges.md#rays, digitless-exponents.md#bare-oom, comparative-arity.md#amount-scale).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# n1, n2: exact counts. n3: a range. n4: a ray (follows from n2, not from n1). n5, n6: digitless, no order facts.
+# n7: more than, on the amount scale, with no counts.
+
+@ n1
+zazozon dodozel gragel vayebel.
+= Azozon sees three dogs.
+
+@ n2
+zalazun dodozel grazal vayebel.
+= Alazun sees five dogs.
+
+@ n3
+zahelan dodozel gragel oel grazal vayebel.
+= Ahelan sees three to five dogs.
+
+@ n4
+zalazun dodozel grawal uel gragel vayebel.
+= Alazun sees more than three dogs.
+
+@ n5
+zalazun dogozel grawagel vayebel.
+= Alazun sees thousands of cats.
+
+@ n6
+zahelan dodozel gral vayebel.
+= Ahelan sees dogs. (more than one)
+
+@ n7
+zogozelx zodozelx zol gral.
+= There are more cats than dogs.

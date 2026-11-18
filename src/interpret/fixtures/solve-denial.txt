@@ -1,0 +1,19 @@
+# Solver fixture: a denial against a stated claim (joins.md#negation-u), on a verb and on a kind.
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# d1 and d2 clash; d3 and d4 clash.
+
+@ d1
+zazozon vowurol.
+= Azozon walks.
+
+@ d2
+zazozon vowurol vul.
+= Azozon doesn't walk.
+
+@ d3
+zazozon godozel.
+= Azozon is a dog.
+
+@ d4
+zazozon godozel gul.
+= Azozon is not a dog.

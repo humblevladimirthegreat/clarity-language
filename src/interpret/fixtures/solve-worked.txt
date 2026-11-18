@@ -1,0 +1,19 @@
+# Solver fixture: the worked example (clingo-solver Sketch, "What the solver may conclude").
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Names: Azozon stands for Pingu, Ahelan for Robin (house cast). "Fly" is v-wing (`vewobol`); the lexicon has no fly verb.
+
+@ s1
+zuam gebezel vewobol.
+= Birds usually fly. (open every-kind: exceptions left open)
+
+@ s2
+zul gawozal vewobol.
+= Penguins never fly. (no penguin flies)
+
+@ s3
+zazozon gawozal gebezel gal.
+= Azozon is a penguin, and a bird.
+
+@ s6
+zahelan gebezel.
+= Ahelan is a bird.

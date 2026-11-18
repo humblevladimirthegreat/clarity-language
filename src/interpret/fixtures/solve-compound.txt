@@ -1,0 +1,15 @@
+# Solver fixture: a dictionary compound that matches on its head (robin `erulolebeze` = red + l + bird `ebeze`).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# k1 and k2 give "is a bird" and "sees a bird" through the head; k3 (a bird) must not give "is a robin".
+
+@ k1
+zazozon gerulolebezel.
+= Azozon is a robin.
+
+@ k2
+zahelan derulolebezel vayebel.
+= Ahelan sees a robin.
+
+@ k3
+zalazun gebezel.
+= Alazun is a bird.

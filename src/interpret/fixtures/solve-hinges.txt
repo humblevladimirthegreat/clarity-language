@@ -1,0 +1,28 @@
+# Solver fixture: a chain of two condition hinges, with only-if and iff variants (causation.md#if, #only-if).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# A = Azozon walks, B = Alazun sits, C = Ahelan sleeps. h1 + h2 + h3 give B, then C.
+# Variants replace h1: h1o (only if: B needs A), h1i (iff). h4 denies A, for the only-if and iff runs.
+
+@ h1
+zalazun vehohel thohem blarl zazozon vowurol.
+= Alazun sits if Azozon walks.
+
+@ h2
+zahelan vezuvel thohem blarl zalazun vehohel.
+= Ahelan sleeps if Alazun sits.
+
+@ h3
+zazozon vowurol.
+= Azozon walks.
+
+@ h1o
+zalazun vehohel thebem blarl zazozon vowurol.
+= Alazun sits only if Azozon walks.
+
+@ h1i
+zalazun vehohel thehom blarl zazozon vowurol.
+= Alazun sits if and only if Azozon walks.
+
+@ h4
+zazozon vowurol vul.
+= Azozon doesn't walk.

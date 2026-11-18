@@ -1,0 +1,24 @@
+# Solver fixture: the clash example (clingo-solver Sketch, "Naming a clash"), s1 as a closed universal.
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Names: Azozon stands for Pingu, Alazun for Tweety (house cast). "Fly" is v-wing (`vewobol`); the lexicon has no fly verb.
+# Smallest clashes: {s1, s2, s3} and {s1, s4, s5}; smallest set to give up: {s1}.
+
+@ s1
+zual gebezel vewobol.
+= Every bird flies. (closed every-kind: no exceptions)
+
+@ s2
+zul gawozal vewobol.
+= Penguins never fly. (no penguin flies)
+
+@ s3
+zazozon gawozal gebezel gal.
+= Azozon is a penguin, and a bird.
+
+@ s4
+zalazun gebezel.
+= Alazun is a bird.
+
+@ s5
+zalazun vewobol vul.
+= Alazun doesn't fly.

@@ -1,0 +1,20 @@
+# Solver fixture: and-lists, respectively, and a collective verb (joins.md#and-lists-a, list-structure.md#respectively, universals-domains.md#universals-domains-generics).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# l1: one list, each member walks. l2: paired by respectively (Azozon saw the cat, Alazun the dog).
+# l3: two unpaired lists, infers nothing about who saw what. l4: collective -x, infers nothing about one member.
+
+@ l1
+zazozon zalazun zal vowurol.
+= Azozon and Alazun walk.
+
+@ l2
+zazozon zalazun zal dogozel dodozel wubam dal vayebel.
+= Azozon and Alazun saw a cat and a dog, respectively.
+
+@ l3
+zazozon zalazun zal dogozel dodozel dal vayebel.
+= Azozon and Alazun saw a cat and a dog.
+
+@ l4
+zahelan zalazun zal vehohelx.
+= Ahelan and Alazun sit together.
