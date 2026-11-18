@@ -85,6 +85,7 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `site-redirects.md` | Public URL remaps. |
 | `agents-md.md` | What belongs in this file. |
 | `wizard-game.md` | Wizard sandbox engine (`src/game/`): what it reads from the docs, writing game content as morph gloss, and its checks. |
+| `interpreter.md` | Interpreter (`src/interpret/`): reading terms, frame families, classification table, pair table, reader rules, matcher rules, host contract, the loop and its pass-through list. |
 | `TODO.md` (root) | Planned revisions; fold into grammar docs as work proceeds. |
 
 ### Procedures (`docs/meta/procedures/`, not published)
@@ -108,6 +109,7 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 - Tests run with **`npm test`** (Node's built-in runner via `tsx --test`). `npm test` and `npm run build` end with a failure footer: each issue with `file:line`, the assertion or the fix, and the rule's `docs/meta/` anchor. Read it instead of rerunning; full output is in `tmp/test-last.log` / `tmp/build-last.log` (`BUILD_VERBOSE=1` prints it all). Vitest is intentionally **not** installed, never run bare `npx vitest`. Use `npx --no-install <tool>` to check for a CLI; avoid bare `npx <tool>` for tools this repo does not depend on.
 - Language design work goes through `introduction.md`, `purpose.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
 - **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `unassigned-reserved.md` for a newly rejected spelling and `design-decisions.md` when the rejection has a reason beyond *no reading yet*). Never change parser behavior without the matching grammar edit.
+- **Interpreter rows:** when the parser gains a construction, classify it in the [classification table](docs/meta/interpreter.md#classification-table) from its owning grammar section in the same change; the coverage test fails on an id with no row.
 - **Orthography invariants** ([phonology](/phonology)): `th` is one letter written with two characters, and there is no `t`. No hyphen after the PoS letter. Native text is unicase lowercase; capitals only inside foreign / opaque payloads ([spans](/spans)). Named reference is marked by ending, not case. Prefer published lexicon roots when the gloss matches.
 - **Example sentences**: do not add a leading assertion turn to every example when it is omissible, see [clause.md](/clause) and [speech-moves.md](/speech-moves).
 - **Learner name slot:** **`SELF`** is the reader's own name, only where the name is the form (greeting, conversation-length bid, self-introduction); plain *I* is not the slot: [first person](docs/meta/grammar-docs.md#house-cast). The site fills it ([`src/learner-name.ts`](src/learner-name.ts)).
