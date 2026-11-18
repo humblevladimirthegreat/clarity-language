@@ -27,7 +27,10 @@ export default defineConfig({
     'Learner grammar for Ageben — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
   // Plain-Markdown copies for AI agents, written by scripts/publish-docs-extras.mjs (served live by llmsDevPlugin in dev)
-  head: [['link', { rel: 'alternate', type: 'text/markdown', href: '/llms.txt', title: 'llms.txt' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/grammar/favicon.svg' }],
+    ['link', { rel: 'alternate', type: 'text/markdown', href: '/llms.txt', title: 'llms.txt' }],
+  ],
   rewrites: {
     'beginner/:page': ':page',
     'intermediate/:page': ':page',

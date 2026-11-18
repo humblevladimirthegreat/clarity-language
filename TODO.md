@@ -9,7 +9,6 @@ https://discord.gg/CAMGw2Akhc
 # TODO
 -vocab flashcards generator
 -contact form / about me
--favicon
 -proposals
 -cheat sheet for reading a word?
 -prioritize the size vowel over distinctness
