@@ -297,7 +297,123 @@ Full rules a subagent may open if the digest does not settle a question: [interp
 
 ## Open decisions
 
-None open for phase 1. R1 adds the group (a) translation rows here, and R2 the group (b) and (c) rows and the attack relation, each with options and a **Recommendation:**; the next phase waits for them.
+R1 drafted the group (a) rows below (2026-11-18); R2 adds the group (b) and (c) rows and the attack relation. The next phase waits for them.
+
+**How the rows are written.** Atoms use English names for readability; the translator writes root ids. A claim is `holds(T)`, its denial `-holds(T)`; a classification is `holds(isa(X, K))`, so the one-line step rules can name the kind as a variable (Clingo has no variable predicate names; S1's per-kind predicates, 2-4x faster, would need one `widen` rule per compound and kind, which B1 weighs). A first-mention noun is `nm(Id, Place)` (decision R1-3). A list term is `ls(Id, Place)`. Every rule carries `on(Id)`, and a twin `fired(Id, C)` rule with the same body; templates below show the `fired` line once per row. `fits(c(Id), P)` facts come from `match()`: the condition of reading `Id` fits claim term `P` (logged, nested, or a hinge's outcome). A universal's template is emitted per reading as a rule over `X`: Clingo cannot substitute `X` into a stored term, so `every(Id, Kind, Template)` can only mark that the step applied. `member/3` adds the pairing group from `claimMemberLists`, which *respectively* needs. Every row keeps to the Clingo 5 / 6 common ground.
+
+### R1-1: the rows that copy a stated rule
+
+Each row below reads one classification table row and copies what its grammar anchor states. Confirm them as one list.
+
+1. **Plain claim.** `unit:vp` / `unit:np` / `unit:predicate` (`clause.md#who-acts-and-the-action`, `predication.md#identity`). `holds(T) :- on(Id).` `fired(Id, T) :- on(Id).` A predicate `/ɡ/` gives `holds(isa(X, K))`. Denial fixture d1: `holds(walk(azozon)) :- on(d1).`; d3: `holds(isa(azozon, dog)) :- on(d3).`
+2. **Denial on a verb or a term.** `joinSeries:u`, frame:polarity, list reach (`joins.md#negation-u`, `verb-and-stance-joins.md#vp-clause-forms`): the join denies only its items, each one (*neither A nor B*), and the rest of the clause stands. `-holds(T[item]) :- on(Id).` for each item. `fired(Id, -T) :- on(Id).` Open `-m` denies the same stated items. d2: `-holds(walk(azozon)) :- on(d2).`; d4: `-holds(isa(azozon, dog)) :- on(d4).`
+3. **A clash.** `clash(P) :- holds(P), -holds(P).` (Sketch, *naming a clash*). d1 + d2 give `clash(walk(azozon))`, d3 + d4 `clash(isa(azozon, dog))`. Where the two terms are not the same term but `match()` says they fit, the clash joins on `fits`; B1 picks the shape.
+4. **Whole-list denial** (*not both*, `vowurol veruvol val vul.`). `joinSeries:u` over a closed list as its one item (`set-joins.md#exclusivity-and-denying-a-whole-list`). `clash(notall(Id)) :- holds(T1), holds(T2), on(Id).` with `fired(Id, notall(Id))`. No F1 fixture; F1 or B1 adds one.
+5. **If.** `overlay:clause_hinge:th` / `:g`, frame:hinge (`causation.md#if`): "whenever the condition holds, the outcome holds too", and saying *if* "does not claim the condition is true", so the nested reading is not emitted as `holds`. `holds(Out) :- fits(c(Id), P), holds(P), on(Id).` `fired(Id, Out) :- fits(c(Id), P), holds(P), on(Id).` Hinges fixture h1 + h2 + h3:
+
+   ```prolog
+   holds(walk(azozon)) :- on(h3).
+   fits(c(h1), walk(azozon)).   fits(c(h2), sit(alazun)).   % from match()
+   holds(sit(alazun)) :- fits(c(h1), P), holds(P), on(h1).
+   holds(sleep(ahelan)) :- fits(c(h2), P), holds(P), on(h2).
+   ```
+
+   A hinge on a command makes no claim (`causation.md#if`): the force frame has no group (a) row, so the turn is `beyond`.
+6. **Only if.** Same rows (`causation.md#only-if`): "the outcome cannot hold without the condition". `-holds(Out) :- fits(c(Id), P), -holds(P), on(Id).` With h1o + h4: `-holds(walk(azozon)) :- on(h4).` gives `-holds(sit(alazun))`, citing h1o and h4. The other direction is R1-5.
+7. **Iff.** `thehom` (`causation.md#only-if`): rows 5 and 6 together. h1i + h3 gives `sit(alazun)`; h1i + h4 gives `-sit(alazun)`.
+8. **Closed every kind.** `joinSeries:ua` frame:binder + `shared:kind` (`universals-domains.md#universals-domains-generics`, `usually-vs-must.md#general-claims`: closed `-l` "allows none" [exceptions]); step `universalInstance`. `holds(T[X]) :- holds(isa(X, K)), on(Id).` `fired(Id, T[X]) :- holds(isa(X, K)), on(Id).` With the verb denied (`zual gogozel vezuvel vul.`, *each cat does not sleep*) the head is `-holds(T[X])`. A hinge on it holds for each member (`usually-vs-must.md#how-things-work`): the hinge's rule takes the same `holds(isa(X, K))` in its body. Clash fixture s1 + s3 + s4 + s5:
+
+   ```prolog
+   holds(fly(X)) :- holds(isa(X, bird)), on(s1).
+   holds(isa(azozon, penguin)) :- on(s3).   holds(isa(azozon, bird)) :- on(s3).
+   holds(isa(alazun, bird)) :- on(s4).
+   -holds(fly(alazun)) :- on(s5).
+   clash(P) :- holds(P), -holds(P).          % clash(fly(alazun)): s1, s4, s5
+   ```
+
+9. **Open every kind.** `zuam` + `shared:kind` (`universals-domains.md#not-every`: "you only do not rule them out"; Sketch, adopted 2026-11-18). `{ holds(T[X]) } :- holds(isa(X, K)), not -holds(T[X]), on(Id).` `fired(Id, T[X]) :- holds(T[X]), holds(isa(X, K)), on(Id).` With everyday defaults switched on: `holds(T[X]) :- holds(isa(X, K)), not -holds(T[X]), on(Id), switch(defaults).` Worked fixture s1 + s6: `holds(isa(ahelan, bird)) :- on(s6).` gives *cannot say* and *could be* for `fly(ahelan)`.
+10. **Membership.** `joinSeries:a` (`joins.md#and-lists-a`, `list-structure.md#respectively`), steps `memberList` / `claimMemberLists` / `collective`. The claim keeps its list term, and `holds(T[X]) :- member(ls(Id, z), X, G), on(Id).` for one list; for *respectively*, `holds(T[X, Y]) :- member(ls(Id, z), X, G), member(ls(Id, d), Y, G), on(Id).` Lists fixture: l1 gives `walk(azozon)` and `walk(alazun)`; l2 gives `see(azozon, nm(l2, d1))` and `see(alazun, nm(l2, d2))`; l3 (two unpaired lists) and l4 (collective `-x`) get no `member` facts and give only their list claim. s3's predicate list `gawozal gebezel gal` gives both `isa` facts this way.
+11. **Compound head.** Step `compoundHeads` (`compounds.md#two-roots-one-word`). `head(robin, bird).` and `holds(isa(X, H)) :- holds(isa(X, C)), head(C, H), switch(widen).` Compound fixture: k1 gives `isa(azozon, bird)`; k2 gives `isa(nm(k2, d), bird)`, so *Ahelan sees a bird*; k3 gives no `isa(alazun, robin)`, since the rule runs only from compound to head.
+12. **Numbers.** `wordFamily:number` / `lexReading:number` (`numbers.md#counts`), Sketch *numbers* (adopted). For each pair of values in the log, `compareValues` gives `less(V1, V2)` or `same(V1, V2)`; for each value and each stated range or ray, `within(V, R)`. A counted noun is `count(nm(Id, P), V)`. Numbers fixture: n1 `count(nm(n1, d), v(3))`, n2 `count(nm(n2, d), v(5))`, `less(v(3), v(5))`; asked *more than three*, `within(v(5), above(v(3)))` holds and no `within` fact holds for `v(3)`, so n2 answers it and n1 does not. The question's fit to a `within` fact is decided in TypeScript, not by `match()`, which compares numbers by value only; B1 places it. n5 (`grawagel`) and n6 (`gral`) carry no value and get no facts. Ranges and rays on a counted noun wait on R1-7; *more cats than dogs* on R1-8.
+
+### R1-2: *No K* (`zul` + kind) reads with no binder
+
+`zul gawozal vewobol.` (*no penguin flies*, worked and clash s2) reads as a polarity list with no members and `shared:ordinary`, with no binder frame; so does the page's own `zul gogozel vehohel.` (*no cat sits*). The page says "*No cat* is the same shape with `u`: `zul` plus the kind" (`universals-domains.md#universals-domains-generics`), and `#not-every` gives it the reading of `zual gogozel vezuvel vul.`. The classification table's `shared:kind` row covers only "the kind after a `ua` / `uo` fence". Without a fix, s2 has no row: Pingu's *no* in the worked example becomes *cannot say*, and the clash {s1, s2, s3} is not found.
+
+- **A.** Classification fix: `shared:kind` also after a `u` fence with no members, and the fence a frame:binder with its polarity, in the reader with a test. The row is then row 8 with the head denied: `-holds(fly(X)) :- holds(isa(X, penguin)), on(s2).` With no verb (`zul godozel.`, *there is no dog*), the head is the kind itself: `-holds(isa(X, dog))` cannot be grounded for an unknown `X`, so it emits `clash(none(Id)) :- holds(isa(X, dog)), on(Id).`.
+- **B.** Read it in the translator from the polarity list and its shared word. This is a local walker, which the rule digest forbids.
+- **C.** Leave `zul` + kind without a row (`beyond`) until the reader classifies it, and change s2 to `zual gawozal vewobol vul.`.
+
+**Recommendation:** (high) A. It is the page's own reading, the worked example depends on it, and the fix is a classification row, as the digest asks. It lands before B1's translator, as a reader change with its interpreter test.
+
+### R1-3: first-mention nouns (`slot:newMember` binder)
+
+Every first-mention noun is a binder frame (`slot:newMember`, `joins.md#everything-ua`, decided 2026-11-17): *Azozon sees three dogs* (n1), *saw a cat and a dog* (l2, l3), *sees a robin* (k2). Group (a) lists no row for it, so each of those readings would be `beyond`.
+
+- **A.** A row in group (a): a fresh constant per reading and place, `nm(Id, P)`, with its kind and details as facts (`holds(isa(nm(k2, d), robin)) :- on(k2).`). Two readings of *a dog* are two dogs, as an English listener takes them; a question still matches by root (question filters, decision 18).
+- **B.** Write the noun as its root (`see(ahelan, robin)`). Simpler, but two sentences about *a dog* become one dog, and *Azozon sees a dog* clashes with *Azozon does not see a dog* only by accident of spelling.
+- **C.** Leave it out of group (a).
+
+**Recommendation:** (medium) A, added to group (a) so the fixtures run. Option C leaves most fixtures `beyond`. A *not … a dog* under A is a denial with no constant to deny; it gets row 2 on the root's kind, which B1 should test.
+
+### R1-4: do the matcher's steps run unasked in a solver job?
+
+In the matcher, `widen` and `infer` are off by default and named when used. The Sketch's worked example applies the and-list predicate (s3) and closed `zual` (s1) with no switch; row 11 above gates `widen`.
+
+- **A.** Mirror the matcher: membership, universal to instance and compound head each need `switch(infer)` / `switch(widen)`, and the answer names the switch.
+- **B.** In a solver job, membership and universal to instance always run, since the pages state them as what the sentence says (an and-list says each; closed *every K* "holds of each K"); `widen` stays a switch, since a compound's head is the lexicon's, not the sentence's. Every answer names the readings and, through `fired`, the step.
+- **C.** All three always on.
+
+**Recommendation:** (medium) B. A solver job is already the consumer's request for inference, and without membership and closed universals the worked example answers *cannot say* everywhere. `widen` is the one step a sentence does not state.
+
+### R1-5: does a condition hinge also run backwards?
+
+Row 5 derives the outcome from the condition, and row 6 the outcome's denial from the condition's denial, as each page states. The contrapositive of each is classical logic, but Clingo does not derive it unless the translator writes it.
+
+- **A.** Write both directions: *if* also gives `-holds(Cond) :- -holds(Out), on(Id).`; *only if* also gives `holds(Cond) :- holds(Out), on(Id).`, so *Alazun sits only if Azozon walks; Alazun sits* gives *Azozon walks*. The derived condition is the hinge's nested term, joined to other claims through `fits`.
+- **B.** Only the stated direction.
+- **C.** The backward direction behind a switch.
+
+**Recommendation:** (medium) A. *Only if* without it never tells the user what the outcome needs, which is what the hinge is for (`causation.md#only-if`: "the outcome needs it"); the `fired` markers still name the hinge.
+
+### R1-6: `hual` (*always*) has no members to range over
+
+`hual` is a restrictor (`lexReading:restrictor`, frame:occasion, `restrictors.md#only-when-never-hal`), closed like `zual` (`usually-vs-must.md#general-claims`), but over occasions, and a reading carries no occasion terms. No F1 fixture shows it; `zazozon hual vowurol.` reads as an occasion frame over `walk(azozon)`.
+
+- **A.** Treat the claim as holding on any occasion the log speaks of: `holds(walk(azozon)) :- on(Id).`, plus `always(walk(azozon))`; `hal` (*never*) gives `-holds(...)`; `huam` gives the open choice rule. Then `zazozon vowurol vul.` clashes with it.
+- **B.** Emit only `always(T)` / `never(T)` and clash them with each other, not with plain claims, since a plain claim may be about another occasion.
+- **C.** No row until occasions are terms.
+
+**Recommendation:** (low) B. A plain *Azozon doesn't walk* is one occasion, and the page does not say whether it breaks *always*; A would claim a clash the grammar does not state. Add a fixture with `hual` and `hal` for whichever is chosen.
+
+### R1-7: ranges and rays on a counted noun
+
+In `zahelan dodozel gragel oel grazal vayebel.` (n3) and `zalazun dodozel grawal uel gragel vayebel.` (n4), the second end comes back as the clause's `pred` with a `hookJob:span` range detail on the clause, not on the noun's number. The numbers row cannot build `within` facts from Readings.
+
+- **A.** Classification fix: a span between two numbers in a counted noun phrase is a `detail:range` on the noun's number term, both ends there (`ranges.md#ranges`, `open-ranges.md#rays`), in the reader with a test.
+- **B.** Rebuild it in the translator from `pred` and the clause detail: a local walker, forbidden.
+- **C.** No order facts for counted-noun ranges and rays (`beyond`) until the reader is fixed.
+
+**Recommendation:** (high) A, before B1 builds the numbers row; C until then.
+
+### R1-8: *more cats than dogs* with no counts (n7)
+
+`zogozelx zodozelx zol gral.` reads as a rank list (`joinSeries:o`) with a shared scale word. The numbers row gives order facts only between values.
+
+- **A.** Emit the ranking as data, `holds(more(amount, cats, dogs))`, answered only when asked as said; no link to counts.
+- **B.** Also link it to counts: with stated counts for both kinds, derive or clash the ranking from `less/2`. This reads *more* as a comparison of counts, which `comparative-arity.md#amount-scale` would have to state.
+- **C.** No row in group (a).
+
+**Recommendation:** (medium) A now; B as a later row once a page states it.
+
+### R1-9: standalone `thul` (*no judgment*) and its kin
+
+`zazozon vowurol thul.` is family `polarity` but denies nothing: "the claim itself is untouched" (`verb-and-stance-joins.md#standalone-stance-joins`). `thum` and `thur` are the same.
+
+- **A.** Emit the claim as row 1, with the frame noted on the reading so a reply can mention it.
+- **B.** No row (`beyond`), since *no judgment* may be read as the speaker not standing behind it.
+
+**Recommendation:** (medium) A. The page says the claim is untouched; B would drop claims a user plainly made. A denial of a stance (`thomam thul`) sits in the stance's list and waits for the stance row.
 
 ## Findings
 
