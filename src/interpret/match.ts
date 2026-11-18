@@ -11,7 +11,6 @@
  * - A blank in the query binds to the target's term in that place.
  * - Widening and inference are switches, off by default ({@link Switch}); they land with values (unit M2).
  */
-import type { LexWord } from "../parse/types.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
 // ── Switches ────────────────────────────────────────────────────────────────
@@ -31,11 +30,6 @@ export type MatchOptions = {
   referent?: (term: Term, side: "query" | "target", site: TermSite) => string | undefined;
   querySite?: TermSite;
   targetSite?: TermSite;
-  /**
-   * The pronoun terms of the readings, by word ({@link readingTree} fills it). The reader's antecedent of a pronoun that
-   * resumes another pronoun is a term of that pronoun's word; this follows it on to its own antecedent.
-   */
-  pronouns?: ReadonlyMap<LexWord, Term>;
   switches?: Partial<Record<Switch, boolean>>;
 };
 
@@ -51,13 +45,9 @@ export type Binding = {
 // ── Terms ───────────────────────────────────────────────────────────────────
 
 /** Follow a pronoun to the term it resumes, through a chain of pronouns (reader rule 6: the resolver's binding, never re-derived). */
-export function throughAntecedent(term: Term, pronouns?: ReadonlyMap<LexWord, Term>): Term {
+export function throughAntecedent(term: Term): Term {
   let out = term;
-  for (let i = 0; i < 32; i++) {
-    if (out.kind === "pronoun" && out.antecedent) out = out.antecedent;
-    else if (out.kind === "thing" && pronouns?.get(out.head)?.kind === "pronoun") out = pronouns.get(out.head)!;
-    else break;
-  }
+  for (let i = 0; i < 32 && out.kind === "pronoun" && out.antecedent; i++) out = out.antecedent;
   return out;
 }
 
@@ -93,8 +83,8 @@ function termMatch(queryTerm: Term, targetTerm: Term, state: State, at: string):
     state.blanks.push({ at, blank: queryTerm, term: targetTerm });
     return true;
   }
-  const query = throughAntecedent(queryTerm, state.options.pronouns);
-  const target = throughAntecedent(targetTerm, state.options.pronouns);
+  const query = throughAntecedent(queryTerm);
+  const target = throughAntecedent(targetTerm);
   const { referent, querySite = {}, targetSite = {} } = state.options;
   if (referent) {
     const q = referent(query, "query", querySite);
@@ -169,9 +159,9 @@ export type Parent = { reading: Reading; via: Via };
 
 /**
  * Every reading under the given ones, nested ones included, in text order (depth first), each with the reading that
- * contains it. Walks the readings, never the parse tree. `pronouns`, when given, collects every pronoun term by word.
+ * contains it. Walks the readings, never the parse tree.
  */
-export function readingTree(readings: readonly Reading[], pronouns?: Map<LexWord, Term>): Map<Reading, Parent | undefined> {
+export function readingTree(readings: readonly Reading[]): Map<Reading, Parent | undefined> {
   const out = new Map<Reading, Parent | undefined>();
   const visit = (reading: Reading, parent: Parent | undefined): void => {
     if (out.has(reading)) return;
@@ -192,7 +182,6 @@ export function readingTree(readings: readonly Reading[], pronouns?: Map<LexWord
     const inTerm = (term: Term, via: Via): void => {
       if (term.kind === "clause") visit(term.reading, { reading, via });
       if (term.kind === "quote") term.readings.forEach((r) => visit(r, { reading, via }));
-      if (term.kind === "pronoun") pronouns?.set(term.word, term); // its antecedent sits where it was said
       if (term.kind === "list") {
         term.members.forEach((m) => inTerm(m, via));
         term.sharedDetails?.forEach((d) => inDetail(d, via));

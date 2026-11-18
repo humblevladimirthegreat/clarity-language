@@ -146,6 +146,8 @@ type Ctx = {
   /** The scope record of each turn with no body, by utterance (a bare question, a call). */
   bodiless: Map<number, ClauseScope>;
   anaphors: Map<LexWord, AnaphorBind>;
+  /** Each pronoun term read so far, by its word: a later pronoun that resumes it points at it (reader rule 6). */
+  pronouns: Map<LexWord, Term>;
   blanks: Set<LexWord>;
   /** Phrases inside a title (proper-names.md#titled-phrases): a name's wording, no new member. */
   titled: Set<NpCoord>;
@@ -278,10 +280,18 @@ function thing(word: LexWord): Term {
   return { kind: "thing", head: word, root: rootOf(word), named: word.ending === "n" || word.ending === "ln", details: [] };
 }
 
+/**
+ * A pronoun term. Its antecedent is the word the resolver's bind names: the term already read for it when that word is
+ * itself a pronoun (which holds its own antecedent, so a chain goes on), else a term of that word. Never bound here
+ * (reader rule 6).
+ */
 function pronoun(word: LexWord, here: Here): Term {
   const bind = here.ctx.anaphors.get(word);
   if (bind) here.reading.links.push(link("anaphor", `anaphor:${bind.kind}`, [word], { bind }));
-  return { kind: "pronoun", word, ...(bind ? { bind } : {}), ...(bind?.antecedent ? { antecedent: thing(bind.antecedent) } : {}) };
+  const antecedent = bind?.antecedent ? (here.ctx.pronouns.get(bind.antecedent) ?? thing(bind.antecedent)) : undefined;
+  const term: Term = { kind: "pronoun", word, ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}) };
+  here.ctx.pronouns.set(word, term);
+  return term;
 }
 
 /** A span's Ageben words, as the morph gloss strips them (spans.md#close). */
@@ -1061,6 +1071,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     scopes: new Map((info?.scope ?? []).filter((s) => !s.bodiless).map((s) => [s.clause, s])),
     bodiless: new Map((info?.scope ?? []).filter((s) => s.bodiless).map((s) => [s.utteranceIndex, s])),
     anaphors: new Map((info?.anaphors ?? []).map((a) => [a.pronoun, a])),
+    pronouns: new Map(),
     blanks: new Set((info?.asks ?? []).flatMap((a) => [...a.gaps, ...(a.inner ?? [])])),
     titled: new Set(),
     shared: new Map(),

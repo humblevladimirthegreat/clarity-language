@@ -93,31 +93,48 @@ function isGreetingScope(scope: ClauseScope | undefined): boolean {
 /**
  * For each sentence body that inherits a frame, the frames it inherits. `scopes` are the resolve stage's scope records;
  * `goodbyes` the utterances and bodies the resolve stage reads as a goodbye.
+ *
+ * `speakers` names who says each sentence, in text order (one per body, or per bodiless utterance). Each speaker keeps
+ * a frame of their own: another speaker's reply neither takes nor ends it, and it is still in force when its speaker
+ * goes on (evidentiality.md#carry-forward). A goodbye ends the conversation, so it ends every speaker's frame. Unset:
+ * one speaker.
  */
-export function carriedFrames(utterances: readonly Utterance[], scopes: readonly ClauseScope[], goodbyes: ReadonlySet<object>): BodyCarry[] {
+export function carriedFrames(
+  utterances: readonly Utterance[],
+  scopes: readonly ClauseScope[],
+  goodbyes: ReadonlySet<object>,
+  speakers?: readonly string[],
+): BodyCarry[] {
   const byClause = new Map(scopes.filter((s) => !s.bodiless).map((s) => [s.clause, s]));
   const out: BodyCarry[] = [];
-  let carry: CarriedFrame[] = [];
+  const carries = new Map<string, CarriedFrame[]>();
+  let sentence = 0;
+  const speakerAt = (index: number): string => speakers?.[index] ?? "";
   utterances.forEach((utterance, utteranceIndex) => {
+    const first = sentence;
+    sentence += Math.max(utterance.bodies.length, 1);
     const act = writtenAct(utterance);
+    if (goodbyes.has(utterance)) carries.clear();
     // A written statement word as the real act: back in your own voice (evidentiality.md#carry-forward).
-    if (act === "statement" || goodbyes.has(utterance)) carry = [];
+    else if (act === "statement") carries.delete(speakerAt(first));
     // A question, command or request neither takes the frame nor ends it.
     if (act === "other") return;
     utterance.bodies.forEach((body, bodyIndex) => {
+      const speaker = speakerAt(first + bodyIndex);
       const scope = byClause.get(body.clause);
       if (goodbyes.has(body)) {
-        carry = [];
+        carries.clear();
         return;
       }
-      if (body.linker && linkerEnglish(body.linker) === "by-the-way") carry = [];
+      if (body.linker && linkerEnglish(body.linker) === "by-the-way") carries.delete(speaker);
       const own = ownCarry(scope, body, utteranceIndex, bodyIndex);
       if (own.length > 0) {
-        carry = own;
+        carries.set(speaker, own);
         return;
       }
       // Only wanting, planning or deciding claims nothing: the frame skips it (evidentiality.md#carry-forward).
       if ((scope?.frames ?? []).some((frame) => NO_CLAIM_KEYS.has(frame.key))) return;
+      const carry = carries.get(speaker) ?? [];
       if (carry.length > 0 && !isGreetingScope(scope)) {
         const coveredBy = ownStanceWords(scope);
         out.push({ utteranceIndex, bodyIndex, frames: carry, ...(coveredBy.length > 0 ? { coveredBy } : {}) });

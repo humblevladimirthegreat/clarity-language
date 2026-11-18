@@ -454,6 +454,11 @@ export type ParseOptions = {
   checkAmbiguity?: boolean;
   /** When set, report the construction IDs the parse used ([constructions.ts](./constructions.ts)). */
   constructions?: boolean;
+  /**
+   * Who says each sentence, in text order: one entry per body, or per bodiless utterance. Each speaker's carried frame
+   * is their own (evidentiality.md#carry-forward). Unset: the text is one speaker.
+   */
+  speakers?: readonly string[];
 };
 
 export type ParseResult = {

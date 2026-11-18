@@ -8,9 +8,9 @@
  * A sentence is one body of an utterance (`/y/` turns split utterances, periods split bodies), the unit a top-level
  * reading reads; a turn holds a run of them, so its range counts sentences, not utterances.
  *
- * Speakers: the parse has no speakers, so the resolve stage's carried frames (`ResolveInfo.carried`) still treat the
- * transcript as one speaker (evidentiality.md#carry-forward says another speaker's reply neither takes nor ends a carried
- * frame). {@link sentenceSpeakers} is the per-sentence list the resolve stage needs once it takes speakers.
+ * Speakers: the log parses the window with each sentence's speaker (`ParseOptions.speakers`), so the resolve stage keeps
+ * a carried frame per speaker (`ResolveInfo.carried`): another speaker's reply neither takes nor ends it
+ * (evidentiality.md#carry-forward).
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
@@ -85,7 +85,9 @@ export function appendTurn(log: Log, turn: Turn, tables: ClassifyTables): Log {
 function reread(log: Log, entries: LogEntry[], lastCount: number, tables: ClassifyTables): Log {
   const window = log.options.window;
   const inWindow = window === undefined ? entries : entries.slice(Math.max(0, entries.length - window - 1));
-  const parse = parseWithTables(transcript(inWindow), tables);
+  const counts = inWindow.map((e) => (e === entries[entries.length - 1] ? lastCount : (e.sentences?.count ?? 0)));
+  const speakers = inWindow.flatMap((e, i) => Array<string>(counts[i]!).fill(e.speaker));
+  const parse = parseWithTables(transcript(inWindow), tables, { speakers });
   const readings = readParse(parse, { tables, text: log.options.text ?? "t" });
   const index = sentenceIndex(parse);
   const at = (r: Reading): number => index.get(`${r.source.utterance}.${r.source.body}`) ?? -1;
@@ -114,8 +116,7 @@ export function entryOf(log: Log, reading: Reading): LogEntry | undefined {
 }
 
 /**
- * Who said each sentence of the log's parse, by utterance and body index: what the resolve stage needs to keep carried
- * frames per speaker.
+ * Who said each sentence of the log's parse, by utterance and body index.
  */
 export function sentenceSpeakers(log: Log): { utterance: number; body: number; speaker: string }[] {
   if (!log.parse) return [];

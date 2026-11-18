@@ -267,7 +267,9 @@ One per unit after its gate, and one per phase for the consolidated proposal; th
 
 ## Open decisions
 
-None open. Decisions 1–17 are decided (see Status); numbers stay stable because the body and commits cite them.
+Decisions 1–17 are decided (see Status); numbers stay stable because the body and commits cite them.
+
+**18. A new-member phrase on a question.** The matcher treats every frame on a question, other than its ask force, as a filter. A new-member phrase (*a cat*) puts a binder-family `slot:newMember` frame on its term, so *who saw a cat?* misses *Sam saw the cat*, whose cat carries no such frame. Options: (a) keep it a filter: a question with *a cat* matches only targets that also bring the cat in new; (b) a `slot:newMember` frame on a question term is not a filter: the term matches by root (or referent) like a bare noun, and other binders (universals, *no*) stay filters; (c) like (b), but the match is marked so a consumer can show that the target's cat was already known. **Recommendation:** (b). A learner asking *who saw a cat?* means any cat, and an answer about the cat already in talk is a right answer; (a) hides it for a difference the asker did not ask about.
 
 ## Background
 
@@ -303,3 +305,5 @@ All five split a sentence the same way: a bare clause (who does what to whom), a
 - **No paraphrase and no ranking.** A different root is a different claim.
 - **No surfaces.** The map, the search box, the spec commands, and the permission hook stay in their own proposals. This one ships a library and a debugging command.
 - **No English input.**
+
+**19. One speaker's goodbye and the others' carried frames.** [Carry forward](/evidentiality#carry-forward) says a goodbye ends the conversation, and that another speaker's reply neither takes nor ends your carried frame, but not whether one speaker's goodbye ends the frames other speakers are carrying. M1b implemented it as ending every speaker's frame (`src/parse/carry.ts`); with no speakers given, nothing changes. Options: (a) a goodbye ends every speaker's carried frame; (b) it ends only its own speaker's. **Recommendation:** (a). A goodbye closes the conversation for everyone in it, so a frame that outlives it would reach into talk the listener counts as new. Settling it adds one sentence to the carry-forward section.

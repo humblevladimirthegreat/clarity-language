@@ -1065,7 +1065,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
   };
 }
 
-function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = []): ResolveInfo {
+function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = [], speakers?: readonly string[]): ResolveInfo {
   const ctx: Ctx = {
     antecedents: [],
     landmarks: [],
@@ -1097,7 +1097,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
   const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
   const scope = clauseScopes(result.utterances, tables, blanks, tones);
   const pairings = respectivelyPairings(result);
-  const carried = carriedFrames(result.utterances, scope, ctx.goodbyes);
+  const carried = carriedFrames(result.utterances, scope, ctx.goodbyes, speakers);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
@@ -1192,10 +1192,13 @@ function fillAnswers(
  * Stage 4: annotate anaphor binds, fill-ask vs yes/no, SHARED `/ɡ/` readings, and the scope order of whole-clause
  * frames (`tables` names a holder's host stance).
  */
-/** `tones`: the marks `enforceTones` took out of the token stream (tone-marks.md#tone-marks). */
-export function resolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = []): ParseResult {
+/**
+ * `tones`: the marks `enforceTones` took out of the token stream (tone-marks.md#tone-marks). `speakers`: who says each
+ * sentence (`ParseOptions.speakers`).
+ */
+export function resolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = [], speakers?: readonly string[]): ParseResult {
   return {
     utterances: result.utterances,
-    resolve: buildResolve(result, tables, tones),
+    resolve: buildResolve(result, tables, tones, speakers),
   };
 }

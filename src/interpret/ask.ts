@@ -8,7 +8,6 @@
  */
 import { entryOf, type Log, type LogEntry } from "./log.js";
 import { framePath, match, negated, readingTree, type Binding, type FramePath, type MatchOptions, type Switch, type TermSite } from "./match.js";
-import type { LexWord } from "../parse/types.js";
 import type { Frame, Reading, Term } from "./types.js";
 
 /** What the host supplies to a question. */
@@ -62,8 +61,7 @@ function carries(path: FramePath, filter: Frame, options: MatchOptions): boolean
 
 /** Every reading in the log, nested ones included, that answers the question. */
 export function ask(question: Reading, log: Log, host: Host = {}): Match[] {
-  const pronouns = new Map<LexWord, Term>();
-  const tree = readingTree([...log.readings, question], pronouns);
+  const tree = readingTree([...log.readings, question]);
   const filters = questionFilters(question);
   const out: Match[] = [];
   for (const [reading] of tree) {
@@ -75,7 +73,6 @@ export function ask(question: Reading, log: Log, host: Host = {}): Match[] {
       ...(host.referent
         ? { referent: (term, side, site) => host.referent!(term, side, side === "target" ? { ...site, ...(entry ? { entry } : {}) } : site) }
         : {}),
-      pronouns,
       querySite: { reading: question },
       targetSite: { reading },
       ...(host.switches ? { switches: host.switches } : {}),

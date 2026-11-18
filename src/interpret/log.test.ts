@@ -68,7 +68,32 @@ describe("log", () => {
     assert.equal(log.entries[0]!.text, TURNS[0]!.text);
   });
 
-  // evidentiality.md#carry-forward: another speaker's reply neither takes nor ends a carried frame. The resolve stage
-  // reads the transcript as one speaker; this lands when it takes `sentenceSpeakers`.
-  it.todo("a reply between a hearsay statement and a bare one neither takes nor ends the frame");
+  // evidentiality.md#carry-forward: the frame is yours; another speaker's reply neither takes nor ends it.
+  it("a reply between a hearsay statement and a bare one neither takes nor ends the frame", () => {
+    const log = buildLog(
+      [
+        { speaker: "A", at: 0, text: spell("z-Alazun | th-REPORTED | v-departure") },
+        { speaker: "B", at: 1, text: spell("z-Azozon | v-sleep") },
+        { speaker: "A", at: 2, text: spell("z-Alazun | v-run") },
+      ],
+      tables,
+    );
+    const carried = (entry: number): string[] =>
+      log.entries[entry]!.readings[0]!.links.filter((l) => l.kind === "carriedFrame").map((l) => `${l.to}`);
+    assert.deepEqual(carried(1), []);
+    assert.deepEqual(carried(2), [log.entries[0]!.readings[0]!.id]);
+  });
+
+  it("the replier's own frame stays theirs", () => {
+    const log = buildLog(
+      [
+        { speaker: "A", at: 0, text: spell("z-Alazun | th-REPORTED | v-departure") },
+        { speaker: "B", at: 1, text: spell("z-Azozon | th-REPORTED | v-sleep") },
+        { speaker: "A", at: 2, text: spell("z-Alazun | v-run") },
+      ],
+      tables,
+    );
+    const to = log.entries[2]!.readings[0]!.links.filter((l) => l.kind === "carriedFrame").map((l) => l.to);
+    assert.deepEqual(to, [log.entries[0]!.readings[0]!.id]);
+  });
 });

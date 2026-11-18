@@ -7,7 +7,6 @@ import { describe, it } from "node:test";
 import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
-import type { LexWord } from "../parse/types.js";
 import { ask, type Match } from "./ask.js";
 import { buildLog, type Turn } from "./log.js";
 import { readingTree, throughAntecedent, type PathFrame } from "./match.js";
@@ -83,9 +82,7 @@ describe("ask: who paid Ana?", () => {
   it("*her* in the hearsay sentence resolves to Ana through the pronoun before it", () => {
     const paid = matches[3]!.reading.claim.roles.b!;
     assert.equal(paid.kind, "pronoun");
-    const pronouns = new Map<LexWord, Term>();
-    readingTree(log.readings, pronouns);
-    const ana = throughAntecedent(paid, pronouns);
+    const ana = throughAntecedent(paid);
     assert.ok(ana.kind === "thing" && ana.named && ana.root === "azozo");
   });
 

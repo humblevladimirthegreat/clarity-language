@@ -39,7 +39,7 @@ function parseIn(text: string, tables: ClassifyTables, options: ParseOptions): P
     utterances = result.utterances;
   }
 
-  let result = resolve({ utterances }, tables, toned.tones);
+  let result = resolve({ utterances }, tables, toned.tones, options.speakers);
   enforceResult(result, tables);
   if (constructions) {
     addResolveConstructions(result.resolve, constructions);
