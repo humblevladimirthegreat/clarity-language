@@ -1,6 +1,6 @@
 # Ageben interpreter: one reader and one runtime for the tools that act on meaning
 
-**Status:** IN PROGRESS. Phases 1–4 done (2026-11-13 to 2026-11-18): the classification, the scope rule, the reader, the log and the matcher; their outcome is [interpreter.md](../../meta/interpreter.md), `src/interpret/` and [scope.ts](../../../src/parse/scope.ts). Phase 5 unit W1 done on 2026-11-18 (commits H1–H6, W1a, W1b): the host, the loop and replies (`src/interpret/host.ts`, `run.ts`, `reply.ts`), and the wizard running on them (`src/game/host.ts`; the game's `read.ts`, `answers.ts` and `reference.ts` deleted); every walkthrough plays to its goal. **Next: W2, in a fresh session.** Decisions the remaining units cite: the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in W3 (5); a new-member phrase on a question is not a filter (18, decided 2026-11-18). Decided and landed 2026-11-18: decision 20 (a), a lone first-mention noun on a command acts on one such thing ([joins](/joins#new-member-in-a-command)), and in a statement says the claim holds of one such thing ([joins](/joins#new-member-in-a-statement)), which grounds the default verdict; decision 22, a call closed by a period reaches only its own turn ([past a period](/sentence-linkers#past-a-period)). Every earlier decision is on its grammar page or in the git log.
+**Status:** IN PROGRESS. Phases 1–4 done (2026-11-13 to 2026-11-18): the classification, the scope rule, the reader, the log and the matcher; their outcome is [interpreter.md](../../meta/interpreter.md), `src/interpret/` and [scope.ts](../../../src/parse/scope.ts). Phase 5 units W1 and H7 done on 2026-11-18: the host, the loop and replies (`src/interpret/host.ts`, `run.ts`, `reply.ts`), the wizard running on them (`src/game/host.ts`), and decisions 21, 23 and 24 on their grammar pages. The session ended after H7 at the user's request, to start the rest fresh; W2 and W3 were split into W2a–W2c and W3a–W3c. **Next: W2c, in a fresh session.** Decisions the remaining units cite: the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in W3a (5); a new-member phrase on a question is not a filter (18). Every other decision is on its grammar page or in the git log.
 
 **Related:** the parser's tree ([types.ts](../../../src/parse/types.ts)), [resolve.ts](../../../src/parse/resolve.ts), [ast-walk.ts](../../../src/parse/ast-walk.ts), the construction registry ([constructions.ts](../../../src/parse/constructions.ts)), [hook-jobs.ts](../../../src/parse/hook-jobs.ts), overlay kinds ([parser-pipeline.md](../../meta/parser-pipeline.md#overlay-kinds)), gloss to Ageben ([gloss-inverse.ts](../../../src/parse/gloss-inverse.ts), [glosses.md](../../meta/glosses.md#round-trip)), the wizard engine ([src/game/](../../../src/game/), [wizard-game.md](../../meta/wizard-game.md)), [read-ageben.md](../../meta/procedures/read-ageben.md). Consumers: `mind-map-view.md`, `ageben-spec.md`, `structural-search.md`, `agent-tool-permissions.md`, `wizard-adventure.md`.
 
@@ -83,11 +83,11 @@ The contract is `Host<E>` in [host.ts](../../../src/interpret/host.ts), and `ask
 | question | `ask`, then `holds`, then `verdict`; replies |
 | command, prohibition | resolves the roles with `refer` (several gives `refused` with *which one?*), then runs `handler` |
 
-**A framed command fails closed.** A command runs only when every frame on it, other than its force, passes `PASS_THROUGH` in `host.ts`: later act words, `call`, `attitude`, and a lone first-mention noun (`slot:newMember`, a single `thing` term with no number, no other binder on the command; [joins](/joins#new-member-in-a-command)). Any other frame makes the turn `beyond` and names it. No host widens the list. A whole-clause sake joins it in H7 (decision 21).
+**A framed command fails closed.** A command runs only when every frame on it, other than its force, passes `PASS_THROUGH` in `host.ts`: later act words, `call`, `attitude`, a lone first-mention noun (`slot:newMember`, a single `thing` term with no number, no other binder on the command; [joins](/joins#new-member-in-a-command)), and a whole-clause sake or feeling word ([whose stake](/for-a-sake#whose-stake), [feeling word](/how-you-feel#feeling-word)). Any other frame makes the turn `beyond` and names it. No host widens the list.
 
 **The default verdict** counts a match as plain when every frame on its path passes `passThrough`, with no unsettled pair and no switch, except that `attitude` together with `slot:newMember` is not plain (no page settles that pair). It cites [vocative](/speech-moves#vocative) and [joins](/joins#new-member-in-a-statement).
 
-**Turns.** The log closes each turn with a period before it joins the transcript. A call-only turn is its own reading (verb `-`). Any `beyond` reading in a turn means nothing in the turn runs and the log does not change.
+**Turns.** The log closes each turn with a period before it joins the transcript. A call, *yes* / *no*, or interjection closed by a period is its own utterance (`buildUtterances`, `afterTurnWord`); a call-only turn is its own reading (verb `-`). Any `beyond` reading in a turn means nothing in the turn runs and the log does not change.
 
 **Outcomes:** `parse`, `beyond` (names every part), `refused`, `ok`, always distinct.
 
@@ -109,7 +109,7 @@ A reply is a `Draft` (`{ gloss, english }`) written as morph gloss. `reply.ts` s
 
 Done in W1: `src/game/host.ts` (`createGameHost`) supplies `refer` (noun resolution over `Term`; `unreadable(term)` serves `accepts`), `holds`, `handler` (wraps `HANDLERS`), `told` (a call sets the addressee and wakes them; a statement whose subject is the speaker runs that verb's handler), `verdict` and `accepts`. `engine.ts` sends every turn through `run`, one session per engine, made again on `reset`; `Doing` takes a reading. `Scope` lives in `src/game/types.ts`. The game's `Draft` is the reply draft plus the entities it mentions; `generate.ts` keeps only wizard lines (`whichDrafts` over `whatIsItLikeDraft`, `report`, `describe`, `where`, `list`, `greeting`, `FIXED`).
 
-Left for W2: `World.events`, the `told:` strings in `World.facts`, `World.mentioned` and `Entity.knows` become log entries, each with its speaker and who witnessed it (decision 4). Kept: world state, objects, handler bodies, quests, reachability, scene, recasts, gating, the turn log, build, lint. The gate is behaviour: every walkthrough plays to its goal, and the three failures stay distinct.
+Left for W2a and W2b: `World.events`, the `told:` strings in `World.facts`, `World.mentioned` and `Entity.knows` become log entries, each with its speaker and who witnessed it (decision 4). Kept: world state, objects, handler bodies, quests, reachability, scene, recasts, gating, the turn log, build, lint. The gate is behaviour: every walkthrough plays to its goal, and the three failures stay distinct.
 
 ### Files
 
@@ -119,46 +119,67 @@ Left for W2: `World.events`, the `told:` strings in `World.facts`, `World.mentio
 | `scripts/reading.mjs`, npm script `reading` | print a text's readings, `reading ask FILE QUERY`, `reading log FILE` (done) |
 | `src/interpret/host.ts`, `run.ts`, `reply.ts` (+ tests) | phase 5 (done) |
 | `src/game/host.ts` | the wizard host (done) |
+| `src/interpret/log.ts` | `Turn.witnesses` (W2a) |
 | `docs/meta/interpreter.md` | terms, the table, links, pair table, reader rules; the host contract (C1) |
 
 ## Implementation plan
 
-Phases 1–4 and phase 5's W1 are done. The rest of phase 5 is one orchestrator session, run through subagents; at its end the orchestrator applies the `AGENTS.md` rows and deletes this proposal.
+Phases 1–4 and phase 5's W1 and H7 are done. The rest of phase 5 runs through subagents in a fresh session; at its end the orchestrator applies the `AGENTS.md` rows and deletes this proposal.
 
 ### Phase 5 (rest): wizard knowledge, wizard check, the interpreter note
 
-Order: H7 → W2 → W3 → C1. H7 and W2 touch disjoint files (`src/parse/`, `src/interpret/` and grammar vs `src/game/`) and may run in parallel.
+Order: W2c → W2a → W2b → W3a → W3b → W3c → C1. Each W unit builds on the one before and they share `src/game/host.ts`, so they run in sequence. C1 touches only meta notes and may run at any point.
 
-#### H7: decisions 21 and 23
+#### W2c: the call rule and leftover reply shapes
 
-**Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `docs/grammar/intermediate/sentence-linkers.md` (`#past-a-period`), `docs/grammar/intermediate/for-a-sake.md` (`#whose-stake`), `src/parse/**`, `src/interpret/**`, and their tests.
+**Agent:** `proposal-worker`, `sonnet`, `medium`.
+**May edit:** `src/game/host.ts`, `src/game/generate.ts`, their tests.
 
-- Decided 2026-11-18 (23 a): *yes*, *no* or an interjection closed by a period is a whole move of its own, as a call is; the bare body after the period gets its own utterance and carries no polar link or interjection frame.
-- Grammar: extend the call sentence H6 added to `#past-a-period` (*A call closed by a period reaches only its own turn …*) and its table row to cover *yes* / *no* and interjections. Self-check against `docs/meta/doc-style.md#checklist`.
-- Code: H6 put the call case in `src/parse/sentence-parser.ts` `buildUtterances` (`afterCall`); widen that check. The parser accepts the same texts; the coverage ratchet stays 0 / 0. Tests: `yes.` then a bare body, and an interjection then a bare body, each give the body its own reading with no polar link or interjection frame; *yes* or an interjection before a body in one sentence is unchanged.
-- Decided 2026-11-18 (21 a): on a command, a whole-clause sake word (met, unmet, prescription or motive, with or without a `bl-` stake holder) is your remark on what the act serves, and the command asks only for the act, as on a question. Grammar: one sentence in [whose stake](/for-a-sake#whose-stake), beside the question paragraph. Code: the sake family joins `PASS_THROUGH` in `src/interpret/host.ts`, citing that anchor. Tests: a command with a sake word runs and calls its handler, and the same command under a condition is still `beyond`.
-- Leave alone the edge case H6 kept: a call plus a written act word, then a sentence linker, stays one utterance (the linker keeps the act).
-
-#### W2: wizard knowledge in the log
-
-**Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/game/`**.
-
-- Events, told facts, mentions, and what a character knows move to the log (decision 4).
 - Drop the host's `told` rule that skips a call finding no one on a statement with a body: decision 22 removed its cause (a call no longer reaches past its period), so the call applies strictly. Check the deliver-book walkthrough still plays.
 - Reply shapes the shared ones in `reply.ts` cover leave `generate.ts`; W1b moved `checkLine`, `whatIsItLikeDraft`, `listGroup` and `closed`.
 
-#### W3: wizard check
+#### W2a: the witness record and events in the log
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `src/interpret/log.ts` and `log.test.ts` (the witness field only), `src/game/**`.
+
+- Shape, settled here (tooling, 2026-11-18): `Turn` gains an optional `witnesses` (speaker names); absent means everyone, so no other consumer changes. A world event joins the log as a turn: its text is the event's report draft spelled through `reply.ts` (the line the player sees), its speaker the agent, its witnesses whoever was in the scene. The log keeps one entry shape, so `ask` reaches an event as it reaches speech.
+- `World.events` and the `told:` strings in `World.facts` (written by `noteTold` in `host.ts`, read by the deliver-book goal in `quests.ts`) become log entries, and their readers read the log. Quest-id facts (`asked-color`, `book-delivered`) stay in `World.facts`.
+- An event whose report draft does not parse to one tree would fall out of the log: stop and report it, never log it unparsed.
+- Report the entry shapes, how witnesses are set, and which readers moved; W2b and W3c are briefed from it.
+
+#### W2b: mentions and knowledge from the log
+
+**Agent:** `proposal-worker` (fresh), `opus`, `high`.
+**May edit:** `src/game/**`.
+
+- `World.mentioned` and what a character learns in play (`Entity.knows`) become views over the log: what was said or done in that character's witness (W2a's field). Reachability, scene, recasts and verbs read the views. A `knows` list set by the world build stays build data, as the character's starting knowledge.
+- Report the views and their callers; W3c is briefed from it.
+
+#### W3a: walkthroughs, W1 outcomes, the window
 
 **Agent:** `proposal-worker` (fresh), `opus`, `medium`.
-**May edit:** `src/game/*.test.ts`, `docs/meta/wizard-game.md`.
+**May edit:** `src/game/*.test.ts`, `src/game/host.ts` (`window` only).
 
-- Play every walkthrough and 15 off-script lines per failure kind; confirm the three failures stay distinct and each `beyond` names its parts. Among the `beyond` lines, include commands under a condition and under a binder, and confirm the world does not change.
+- Play every walkthrough; each plays to its goal.
 - Check the outcome changes W1 made, and report each as kept or as a finding: a command whose subject is not the one called is now `refused` (was `beyond`); *unknown* on a yes / no question is now an `ok` *can't say* reply (was a refusal); a lone greeting or interjection is force `said`.
 - A walkthrough line that is a command with a frame off the pass-through list is a finding for the user (the frame joins the list by a grammar citation, or the line changes), never a host-side exception.
-- Measure the turn time against the re-parse window and set the wizard's window (decision 5).
-- Update [wizard-game.md](../../meta/wizard-game.md) to describe what exists.
+- Measure the turn time against the re-parse window and set the wizard's window (decision 5). Report the numbers.
+
+#### W3b: off-script lines
+
+**Agent:** `proposal-worker` (fresh), `opus`, `medium`.
+**May edit:** `src/game/*.test.ts`.
+
+- Write 15 off-script lines per failure kind (`parse`, `beyond`, `refused`) as one test, glossed and spelled with gloss-inverse; confirm the three failures stay distinct, each `beyond` names its parts, and the world does not change on a failure. Among the `beyond` lines, include commands under a condition and under a binder.
+- Report any line whose outcome surprised you as a finding, not a test edit.
+
+#### W3c: the wizard note
+
+**Agent:** `proposal-worker` (fresh), `opus`, `medium`.
+**May edit:** `docs/meta/wizard-game.md`.
+
+- Update [wizard-game.md](../../meta/wizard-game.md) to describe what exists: the game host on the interpreter, the log with witnesses, events as report turns, the knowledge views, the window. Briefed from the W2a, W2b, W3a and W3b reports; check each claim against the code.
 
 #### C1: the interpreter note
 
@@ -167,7 +188,7 @@ Order: H7 → W2 → W3 → C1. H7 and W2 touch disjoint files (`src/parse/`, `s
 
 - Finish `docs/meta/interpreter.md`: the host contract, the loop's dispatch and outcomes, the pass-through list with its conditions, the default verdict rule, and how to write a host (from [the host](#the-host) and [the loop](#the-loop) above, checked against `host.ts` / `run.ts`).
 - Add the matcher rules phase 4 settled, from `match.ts` / `ask.ts`: a question is read after the log's window, so its pronouns bind through the resolver; a role missing from the outer claim is looked for in the claim's scope islands, with the island on the path; a query term matches a member of a target `u` list, with the list's frames on the path; a denied or excluded frame passes an equal filter, with the denial on the path; a `slot:newMember` frame on a question is not a filter (decision 18); holder filters compare the holder and its channel, never the ending; a number blank in a measure detail binds by key and number kind; the `widen` and `infer` switches, and that membership needs one list or a *respectively* pairing.
-- Add to `parser-pipeline.md` (or `interpreter.md`, whichever owns resolve inputs) that `ParseOptions.speakers` gives one speaker per sentence and the carry record keeps one state per speaker; with none, a text is one speaker. Note that a call closed by a period gets its own utterance (`buildUtterances`, `afterCall`), and that the log closes each turn with a period.
+- Add to `parser-pipeline.md` (or `interpreter.md`, whichever owns resolve inputs) that `ParseOptions.speakers` gives one speaker per sentence and the carry record keeps one state per speaker; with none, a text is one speaker. Note that a call, *yes* / *no*, or interjection closed by a period gets its own utterance (`buildUtterances`, `afterTurnWord`), and that the log closes each turn with a period.
 - Add a pointer from [parser-pipeline.md](../../meta/parser-pipeline.md).
 - Report the `AGENTS.md` rows (editor notes: `interpreter.md`, which owns the reading terms, frame families, classification table, pair table, reader rules and host contract; tooling notes: classify a construction when the parser gains one).
 
@@ -196,18 +217,18 @@ Order: H7 → W2 → W3 → C1. H7 and W2 touch disjoint files (`src/parse/`, `s
 ### Gates
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` must show no new errors before each unit's commit.
-- W2: `npm test` green, including the coverage test.
+- Each W unit: `npm test` green, including the coverage test, and every walkthrough plays to its goal.
 - Phase 5: every wizard walkthrough plays to its goal, and a clean `npm run build`, since the game's content lint and the site build read the engine.
 - Final gate: a full `npm run verify` against an empty baseline.
 - No style gate remains: no later unit changes prose under `docs/grammar/`. If a unit finds it must edit `docs/grammar/wizard.md`, the style gate applies to that phase.
 
 ### Commits
 
-One per unit after its gate; the last carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 5 has made ten so far, including this consolidation. Expected from here: five (H7, W2, W3, C1, the final one). Messages start `ageben-interpreter W2:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
+One per unit after its gate; the last carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 5 has made twelve so far, including H7 and this consolidation. Expected from here: eight (W2c, W2a, W2b, W3a, W3b, W3c, C1, the final one). Messages start `ageben-interpreter W2c:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
 
 ## Open decisions
 
-All decisions (1–23) are decided; 21 (a) and 23 (a) on 2026-11-18, carried out by H7; numbers stay stable because commits cite them.
+All decisions (1–24) are decided; 21 (a), 23 (a) and 24 (a) on 2026-11-18, carried out by H7; numbers stay stable because commits cite them.
 
 ## Background
 
