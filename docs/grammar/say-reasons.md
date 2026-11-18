@@ -415,7 +415,7 @@ Use `thahum blarl` only when Q is also asserted as a world-foundation, what made
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/because-and-iff#choosing-a-hinge) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Choosing the hinge](/because-and-iff#choosing-a-hinge) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
 
 An argument has three parts, and each has its own slot. The *link* between premises and conclusion is a hinge (*if*, *if and only if*). *How you know* the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. *Whether you grant the premises* depends on what sits before `blarl`: the channel alone asserts them, and a hinge between the channel and `blarl` does not.
 

@@ -348,7 +348,7 @@ y-Ahelan | y-soft-prohibition | v-run
 
 **-m** asks softly; **`yul`** is a firm *don't*.
 
-**Rule:** [Speech act: firm and soft](firm-soft.md#firm-or-soft-act)
+**Rule:** [Standing behind or offering softly](firm-soft.md#firm-or-soft-act)
 :::
 
 **11.** *Alazun fights against a guard.* `zalazun vuvuvul uol bagayul.` or `zalazun vuvuvul ual bagayul.`
@@ -384,7 +384,7 @@ z-Alazun | g-angry-th-episode
 
 **`tha`** is this episode; **`thu`** would make Alazun an angry type.
 
-**Rule:** [Label reach](label-seams.md#reach-vowels)
+**Rule:** [Four reach vowels](label-seams.md#reach-vowels)
 :::
 
 **14.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyol thobather blwuzor.` or `zahelan vuguyol thobathem blwuzor.`

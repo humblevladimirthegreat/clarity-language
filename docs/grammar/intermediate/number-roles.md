@@ -4,11 +4,11 @@ band: intermediate
 
 # A number in other roles {#a-number-in-other-roles}
 
-### A number as the action {#number-as-verb-by-marker}
-
 You can use a number as the action (*add three*), as how often (*three times*), as how likely (*70% likely*), as a shout (*Three more!*), as a list label (*point 2:*), or as a place on a scale (*second biggest*). Put the same number word on `/v/`, `/h/`, `/th/`, `/y/`, `/x/`, or `/w/`. The role letter picks the use; the marker still says count, rank, or code.
 
 On `/ɡ/`, `/z/`, `/d/`, and `/b/`, the number stays a plain amount, rank, or code ([marker vowel](number-markers.md#marker-vowel-referential-identity)).
+
+### A number as the action {#number-as-verb-by-marker}
 
 On `/v/`, the marker decides which action the number names.
 

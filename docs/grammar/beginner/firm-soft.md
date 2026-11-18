@@ -46,9 +46,9 @@ For *let's*, make a soft request with inclusive *we*, `aya` ([special pronouns](
 
 A [hook](hooks.md) (`al` / `am` / …) may sit among the opening `/y/` words, immediately before the first act word, or before a body that defaults to a statement.
 
-### For now (**-r**) {#act-for-now}
+### For now (`-r`) {#act-for-now}
 
-`-r` marks an act you hold only **for now**: provisional, and you expect to revisit it.
+English marks a claim, question, or instruction as provisional with *for now*, *as things stand*, or *hold off*. On the act word, the third ending `-r` marks an act you hold only **for now**: provisional, and you expect to revisit it.
 
 <!-- cheat-sheet: talking -->
 | Ageben | Use | English | Cue |

@@ -127,7 +127,7 @@ z-Alazun | v-swim | after.open | v-cook
 
 z-Alazun | v-cry | [th-because | bl-wind]
 
-**Rule:** [Because, iff, and only because](because-and-iff.md#choosing-a-hinge)
+**Rule:** [Choosing the hinge](because-and-iff.md#choosing-a-hinge)
 :::
 
 **7.** *Alazun sits on Ahelan's left.*
@@ -757,7 +757,7 @@ z-Ahelan | [w-very | h-slow] | v-swim
 
 A degree word works before an adverb too, so `welazem` grades `huzezam`; with `guzezam` it would be *a very slow Ahelan swims*.
 
-**Rule:** [How much: degree words](very-and-slightly.md#grading-a-quality)
+**Rule:** [Grading a quality](very-and-slightly.md#grading-a-quality)
 :::
 
 **38.** *Azozon said, “Don't climb.”* `zazozon d[yul voguvol] vezuyol.` or `yul zazozon d[voguvol] vezuyol.`
