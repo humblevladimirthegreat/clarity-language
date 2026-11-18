@@ -12,7 +12,7 @@ import type { LogEntry } from "./log.js";
 import type { Log } from "./log.js";
 import type { MatchOptions, Switch, TermSite } from "./match.js";
 import type { Match } from "./ask.js";
-import type { Claim, Frame, Reading, ReadingId, Term } from "./types.js";
+import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 
 /** What a term refers to in the host's world: one entity, several (ask *which one?*), or none. */
 export type Referent<E> = { kind: "one"; entity: E } | { kind: "several"; entities: E[] } | { kind: "none" };
@@ -126,9 +126,37 @@ export function referentOf<E>(host: Host<E>): Host<E>["referent"] {
  * A frame family a command may carry and still run, because the owning grammar section shows it leaves what the
  * command does unchanged. `force` covers only the act words after the first: the first is the turn's own force.
  */
-export type PassThroughRow = { family: FrameFamily; anchors: readonly string[]; why: string };
+export type PassThroughRow = {
+  family: FrameFamily;
+  /** When set, the row holds only frames with this table key. */
+  key?: string;
+  /** When set, the row holds a frame only when this says so; `all` is every frame the command carries other than its force. */
+  when?: (frame: Frame, all: readonly Frame[]) => boolean;
+  anchors: readonly string[];
+  why: string;
+};
+
+/** A number on a noun: the number word read as its adjective (number-roles.md#number-as-roles). */
+const isNumber = (d: Detail): boolean => d.key.startsWith("lexReading:number") || d.hosted?.kind === "number";
+
+/**
+ * A lone first-mention noun: the binder hosts one noun (not a list: no and-list, no `-r` join, no `zual`), with no
+ * number on it, and no other binder rides on the command.
+ */
+function loneNewMember(frame: Frame, all: readonly Frame[]): boolean {
+  const noun = frame.hosted;
+  if (!noun || noun.kind !== "thing" || noun.details.some(isNumber)) return false;
+  return all.every((f) => f === frame || f.family !== "binder");
+}
 
 export const PASS_THROUGH: readonly PassThroughRow[] = [
+  {
+    family: "binder",
+    key: "slot:newMember",
+    when: loneNewMember,
+    anchors: ["joins.md#new-member-in-a-command"],
+    why: "In a command, a noun mentioned for the first time asks the listener to act on one such thing, whichever one they pick; the host's `refer` picks it, and several give *which one?*.",
+  },
   {
     family: "force",
     anchors: ["more-turn-words.md#doubled-act", "more-turn-words.md#stacked-acts"],
@@ -146,7 +174,9 @@ export const PASS_THROUGH: readonly PassThroughRow[] = [
   },
 ] as const;
 
-/** The pass-through row for a frame, if its family has one. */
-export function passThrough(frame: Frame): PassThroughRow | undefined {
-  return PASS_THROUGH.find((row) => row.family === frame.family);
+/** The pass-through row that holds a frame, if one does; `all` is every frame the command carries other than its force. */
+export function passThrough(frame: Frame, all: readonly Frame[] = [frame]): PassThroughRow | undefined {
+  return PASS_THROUGH.find(
+    (row) => row.family === frame.family && (row.key === undefined || row.key === frame.key) && (!row.when || row.when(frame, all)),
+  );
 }

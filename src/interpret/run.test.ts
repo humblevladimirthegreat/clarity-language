@@ -182,8 +182,48 @@ describe("run: a framed command fails closed", () => {
 
   it("the pass-through list cites a grammar section on every row and holds none of these families", () => {
     for (const row of PASS_THROUGH) assert.ok(row.anchors.length > 0 && row.anchors.every((a) => /^[a-z-]+\.md#[a-z-]+$/.test(a)), row.family);
-    for (const [family] of FRAMED) assert.ok(!PASS_THROUGH.some((row) => row.family === family), family);
+    for (const [family] of FRAMED) assert.ok(!PASS_THROUGH.some((row) => row.family === family && !row.key && !row.when), family);
   });
+});
+
+describe("run: a first-mention noun on a command (joins.md#new-member-in-a-command)", () => {
+  const OPEN_A_DOOR = "y-command | v-open | d-door";
+  const oneDoor = (): Referent<string> => ({ kind: "one", entity: "door-1" });
+
+  it("a lone first-mention noun passes through; refer picks it and the handler runs", () => {
+    const t = toy({ refer: oneDoor });
+    const [r] = say(t, OPEN_A_DOOR);
+    assert.equal(r!.outcome, "ok", r!.beyond.map((p) => p.name).join(", "));
+    assert.deepEqual(t.calls.map((c) => c.roles), [{ d: "door-1" }]);
+  });
+
+  it("which one?, when the noun has two candidate referents", () => {
+    const t = toy({ refer: () => ({ kind: "several", entities: ["door-1", "door-2"] }) });
+    const [r] = say(t, OPEN_A_DOOR);
+    assert.equal(r!.outcome, "refused");
+    assert.deepEqual(shapes(r!), ["whichOne"]);
+    assert.equal(t.calls.length, 0);
+  });
+
+  const STILL_BEYOND: [string, string][] = [
+    ["a universal", "y-command | v-open | [d-everything | g-door]"],
+    ["an -r join", "y-command | v-open | d-something"],
+    ["a numbered noun", "y-command | v-open | [d-door-x | g-three]"],
+    ["an and-list", "y-command | v-open | [d-door | d-box | d-and]"],
+    ["two first-mention nouns", "y-command | b-cat | v-pay | d-box"],
+  ];
+  for (const [what, gloss] of STILL_BEYOND) {
+    it(`${what} stays beyond, names the binder, calls no handler`, () => {
+      const t = toy({ refer: oneDoor, accepts: () => [] });
+      const [r] = say(t, gloss);
+      assert.equal(r!.outcome, "beyond");
+      assert.ok(
+        r!.beyond.some((p) => p.kind === "frame" && p.frame?.family === "binder"),
+        r!.beyond.map((p) => p.name).join(", "),
+      );
+      assert.equal(t.calls.length, 0);
+    });
+  }
 });
 
 describe("run: the other outcomes", () => {

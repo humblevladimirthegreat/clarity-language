@@ -139,8 +139,9 @@ function beyondBefore<E>(reading: Reading, host: Host<E>): BeyondPart[] {
   const force = forceOf(reading);
   if (!force) out.push({ kind: "force", reading: reading.id, name: forceFrame(reading)!.key, frame: forceFrame(reading)! });
   if (force === "command" || force === "prohibition") {
-    for (const frame of commandFrames(reading)) {
-      if (!passThrough(frame)) out.push({ kind: "frame", reading: reading.id, name: `${frame.family}:${frame.key}`, frame });
+    const frames = commandFrames(reading);
+    for (const frame of frames) {
+      if (!passThrough(frame, frames)) out.push({ kind: "frame", reading: reading.id, name: `${frame.family}:${frame.key}`, frame });
     }
     if (reading.claim.clauses) out.push({ kind: "clauses", reading: reading.id, name: "clause join" });
     const verb = reading.claim.verb;

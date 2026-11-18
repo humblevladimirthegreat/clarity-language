@@ -190,6 +190,15 @@ Whether a phrase brings in a new member decides whether it takes part in this or
 | The unit in an amount | the *cups* in *two cups of tea* | No: it measures and names no members |
 | The words inside a title | | No |
 
+<a id="new-member-in-a-command"></a>
+In a command, a noun you mention for the first time, such as *a door*, asks the listener to act on one such thing, whichever one they pick.
+
+> `yol vohel dohel.`
+>
+> y-command | v-open | d-door
+>
+> "Open a door." (any door)
+
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
 
