@@ -108,4 +108,8 @@ describe("glossToAgeben", () => {
   it("rejects a gloss no Ageben line produces", () => {
     assert.throws(() => glossToAgeben("z-dog | v-not-a-real-sense", tables, index));
   });
+
+  it("rejects a stray bracket instead of looping (a role letter on a bracket)", () => {
+    assert.throws(() => glossToAgeben("y-command | d-[red | dog] | v-construct", tables, index), /unbalanced bracket/);
+  });
 });

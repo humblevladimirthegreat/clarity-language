@@ -264,6 +264,8 @@ class GlossReader {
       }
       end += 1;
     }
+    // An empty leaf would never advance: a stray `]` (`d-[red | dog]`, a role letter on a bracket) is malformed.
+    if (end === this.pos) throw new Error(`unbalanced bracket in gloss: ${this.src}`);
     const text = this.src.slice(this.pos, end);
     this.pos = end;
     return { t: "leaf", text };

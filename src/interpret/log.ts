@@ -6,7 +6,9 @@
  * nothing and is reported in `rejected`.
  *
  * A sentence is one body of an utterance (`/y/` turns split utterances, periods split bodies), the unit a top-level
- * reading reads; a turn holds a run of them, so its range counts sentences, not utterances.
+ * reading reads; a turn holds a run of them, so its range counts sentences, not utterances. A turn that is a call alone
+ * is its own entry; once a bare body follows it, the parse puts that body in the call's utterance (the call frames it),
+ * so the call's entry keeps no sentence and the next turn's body counts as its own new sentence.
  *
  * Speakers: the log parses the window with each sentence's speaker (`ParseOptions.speakers`), so the resolve stage keeps
  * a carried frame per speaker (`ResolveInfo.carried`): another speaker's reply neither takes nor ends it
@@ -66,19 +68,44 @@ function windowOf(entries: readonly LogEntry[], window: number | undefined): Log
   return window === undefined ? [...entries] : entries.slice(Math.max(0, entries.length - window));
 }
 
+/**
+ * Whether the context's last turn gives its sentence to the new one. A turn can end on a call alone, a bodiless
+ * utterance (speech-moves.md#vocative); a bare body after it is a new sentence (sentence-linkers.md#past-a-period), but
+ * the parse puts it in the call's utterance, so the call's own sentence is gone from the combined parse. The call turn
+ * stays its own entry, now with no sentence, and the new turn's sentences are counted from it.
+ */
+function absorbsCall(log: Log, context: readonly LogEntry[], parsed: ParseResult, tables: ClassifyTables): boolean {
+  if (!context.length || log.parse?.utterances.at(-1)?.bodies.length !== 0) return false;
+  const alone = parseWithTables(transcript(context), tables);
+  const last = alone.utterances.length - 1;
+  return alone.utterances[last]?.bodies.length === 0 && (parsed.utterances[last]?.bodies.length ?? 0) > 0;
+}
+
+/** The context with its last turn's sentence handed on, when the new turn absorbs a call. */
+function handOn(context: readonly LogEntry[]): LogEntry[] {
+  const last = context[context.length - 1]!;
+  return [...context.slice(0, -1), { ...last, sentences: { first: last.sentences?.first ?? 0, count: (last.sentences?.count ?? 1) - 1 } }];
+}
+
 /** Add one turn: parse it with the window before it; a turn that does not parse, or holds no sentence, is rejected. */
 export function appendTurn(log: Log, turn: Turn, tables: ClassifyTables): Log {
-  const context = windowOf(log.entries, log.options.window);
-  const before = context.reduce((n, e) => n + (e.sentences?.count ?? 0), 0);
+  let context = windowOf(log.entries, log.options.window);
   let parsed: ParseResult;
   try {
     parsed = parseWithTables(transcript([...context, turn]), tables);
   } catch (error) {
     return { ...log, rejected: [...log.rejected, { ...turn, error: error instanceof Error ? error.message : String(error) }] };
   }
+  let entries = log.entries;
+  if (turn.text.trim() && absorbsCall(log, context, parsed, tables)) {
+    const handed = handOn(context);
+    entries = [...entries.slice(0, -1), handed[handed.length - 1]!];
+    context = handed;
+  }
+  const before = context.reduce((n, e) => n + (e.sentences?.count ?? 0), 0);
   const count = (turn.text.trim() ? sentenceIndex(parsed).size : 0) - before;
   if (count < 1) return { ...log, rejected: [...log.rejected, { ...turn, error: "the turn holds no sentence" }] };
-  return reread(log, [...log.entries, { ...turn, readings: [] }], count, tables);
+  return reread(log, [...entries, { ...turn, readings: [] }], count, tables);
 }
 
 /** Read the window again, with the new turn last, and hand each turn in it its readings. */
@@ -118,9 +145,10 @@ export type QuestionOptions = {
  * log does not change. Returns the question's top-level readings, in text order; it throws when the text does not parse.
  */
 export function readQuestion(log: Log, text: string, tables: ClassifyTables, options: QuestionOptions = {}): Reading[] {
-  const context = windowOf(log.entries, log.options.window).filter((e) => e.sentences);
-  const before = context.reduce((n, e) => n + e.sentences!.count, 0);
+  let context = windowOf(log.entries, log.options.window).filter((e) => e.sentences);
   const sized = parseWithTables(transcript([...context, { speaker: "", at: 0, text }]), tables);
+  if (text.trim() && absorbsCall(log, context, sized, tables)) context = handOn(context);
+  const before = context.reduce((n, e) => n + e.sentences!.count, 0);
   const count = sentenceIndex(sized).size - before;
   if (count < 1) return [];
   const speakers = [...context.flatMap((e) => Array<string>(e.sentences!.count).fill(e.speaker)), ...Array<string>(count).fill(options.speaker ?? "\u0000question")];

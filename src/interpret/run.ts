@@ -16,7 +16,7 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { ask, type Match } from "./ask.js";
-import { passThrough, type Bound, type Effect, type FillAnswer, type Held, type Host, type RoleLetter, type Session, type Verdict } from "./host.js";
+import { blankSites, passThrough, type Bound, type Effect, type FillAnswer, type Held, type Host, type RoleLetter, type Session, type Verdict } from "./host.js";
 import { appendTurn, emptyLog, readQuestion } from "./log.js";
 import { allReadings } from "./read.js";
 import {
@@ -24,11 +24,14 @@ import {
   cannotSayDraft,
   fillClauseDraft,
   fillFragmentDrafts,
+  heldLeaf,
+  placeBlank,
   firstReply,
   noDraft,
   whichOneDraft,
   whyReply,
   yesDraft,
+  type PlaceBlank,
   type Reply,
 } from "./reply.js";
 import type { Detail, Frame, Reading, ReadingId, Term } from "./types.js";
@@ -230,14 +233,21 @@ function question<E>(reading: Reading, text: string, session: Session<E>): Readi
   else if (verdict.kind === "no") push(firstReply("no", [noDraft()], tables));
   else if (verdict.kind === "unknown") push(firstReply("cannotSay", [cannotSayDraft(tables)], tables));
   else if (verdict.kind === "fill") {
+    // A where blank (a detail's, from blankSites) answers with the question's hook, and is found in its line by its at.
+    const sites = blankSites(reading.claim);
+    const placeAt = (at: string): PlaceBlank | undefined => {
+      const site = sites.find((s) => s.at === at);
+      return site ? placeBlank(text, site, sites, tables) : undefined;
+    };
     const leaves = verdict.answers.flatMap((a) => {
-      const leaf = a.leaf ?? (a.term ? answerLeaf(a.term, a.at, tables) : undefined);
-      return leaf ? [{ at: a.at, ...leaf }] : [];
+      const place = placeAt(a.at);
+      const leaf = a.leaf ? heldLeaf(a.leaf, place) : a.term ? answerLeaf(a.term, a.at, tables, place) : undefined;
+      return leaf ? [{ at: a.at, place, ...leaf }] : [];
     });
     const unique = [...new Map(leaves.map((l) => [l.leaf, l])).values()];
     push(firstReply("fillFragment", fillFragmentDrafts(unique), tables));
     if (unique.length === 1) {
-      const clause = fillClauseDraft(text, unique[0]!.at, unique[0]!, tables);
+      const clause = fillClauseDraft(text, unique[0]!.at, unique[0]!, tables, unique[0]!.place);
       if (clause) push(firstReply("fillClause", [clause], tables));
     }
     if (!replies.length) push(firstReply("cannotSay", [cannotSayDraft(tables)], tables));

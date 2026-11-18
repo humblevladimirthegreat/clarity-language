@@ -87,6 +87,33 @@ describe("run: statements", () => {
     assert.equal(session.log.entries.length, 1);
   });
 
+  for (const window of [undefined, 1]) {
+    it(`a call-only turn is its own entry; the next turns read as new sentences (window ${window ?? "all"})`, () => {
+      const t = toy({ ...(window ? { window } : {}) });
+      const session = createSession(t.host, tables);
+      const call = run(spell("y-Ahelan"), session);
+      assert.equal(call.outcome, "ok");
+      session.speaker = "other";
+      const told = run(spell(PAID), session);
+      assert.equal(told.outcome, "ok", told.error ?? "");
+      session.speaker = "user";
+      const asked = run(spell("y-question | z-Alazun | b-Azozon | v-pay"), session);
+      assert.equal(asked.outcome, "ok", asked.error ?? "");
+      // The parse puts the call on the next body (it frames it), so the match is framed and the default verdict cannot say.
+      const [match] = asked.readings[0]!.matches!;
+      assert.ok(match!.path.frames.some((f) => f.frame.family === "call"));
+      assert.deepEqual(shapes(asked), ["cannotSay"]);
+      const done = run(spell("y-command | b-Azozon | v-pay"), session);
+      assert.equal(done.outcome, "ok", done.error ?? "");
+      assert.equal(t.calls.length, 1);
+      const { entries } = session.log;
+      assert.deepEqual(entries.map((e) => e.speaker), ["user", "other"]);
+      assert.deepEqual(entries.map((e) => e.readings.length), [0, 1]);
+      assert.ok(entries[1]!.readings[0]!.claim.roles.z);
+      assert.deepEqual(t.told.length, 2);
+    });
+  }
+
   it("the re-parse window is the host's (decision 5)", () => {
     assert.equal(createSession({ window: 2 }, tables).log.options.window, 2);
     assert.equal(createSession({}, tables).log.options.window, undefined);
@@ -132,10 +159,35 @@ describe("run: questions and shared replies", () => {
     const [r] = say(toy({ holds }), WHERE);
     assert.equal(r!.outcome, "ok");
     assert.deepEqual(blankSites(r!.readings[0]!.reading.claim).map((b) => b.at), ["claim/detail.0/hosted"]);
-    assert.deepEqual(shapes(r!), ["fillFragment", "why"]);
+    assert.deepEqual(shapes(r!), ["fillFragment", "fillClause", "why"]);
     assert.equal(r!.replies[0]!.gloss, "[at | b-house]");
     assert.ok(r!.replies[0]!.ageben);
-    assert.deepEqual(r!.replies[1]!.because, ["map"]);
+    assert.equal(r!.replies[1]!.gloss, "[at | b-house] | z-Azozon | v-sit");
+    assert.deepEqual(r!.replies[2]!.because, ["map"]);
+  });
+
+  const WHERE = "y-question | [at | b-wh] | z-Azozon | v-sit";
+  const placeReplies = (r: TurnResult, landmark = "b-house"): void => {
+    assert.equal(r.outcome, "ok");
+    assert.deepEqual(shapes(r).slice(0, 2), ["fillFragment", "fillClause"]);
+    assert.equal(r.replies[0]!.gloss, `[at | ${landmark}]`);
+    assert.equal(r.replies[1]!.gloss, `[at | ${landmark}] | z-Azozon | v-sit`);
+    assert.equal(r.replies[0]!.ageben, spell(`[at | ${landmark}]`));
+    assert.equal(r.replies[1]!.ageben, spell(`[at | ${landmark}] | z-Azozon | v-sit`));
+  };
+
+  it("a where blank answered from the log (a named landmark): the question's hook and the landmark, as a fragment and a full clause", () => {
+    const [, r] = say(toy(), "z-Azozon | v-sit | [at | b-Ahelan]", WHERE);
+    placeReplies(r!, "b-Ahelan");
+  });
+
+  it("a where blank answered from held state that names the landmark alone", () => {
+    const holds: Host["holds"] = (claim) => {
+      const where = blankSites(claim).find((b) => b.detail);
+      return where ? [{ holds: true, source: "map", answers: { [where.at]: { leaf: "b-house", english: "the house" } } }] : [];
+    };
+    const [r] = say(toy({ holds }), WHERE);
+    placeReplies(r!);
   });
 
   it("the host's verdict can refuse", () => {

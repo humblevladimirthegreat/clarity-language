@@ -12,6 +12,7 @@ import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-
 import { morphGlossFor, morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { throughAntecedent } from "./match.js";
+import type { BlankSite } from "./host.js";
 import type { Term } from "./types.js";
 
 /** A line before it is spelled: morph gloss and its English. */
@@ -81,14 +82,55 @@ function leafOf(surface: string, tables: ClassifyTables): string {
   return morphGlossLine(surface, tables).replace(/\.$/, "").trim();
 }
 
-/** An answer term as a leaf in role `at`, with its English; a pronoun answers with its antecedent. */
-export function answerLeaf(term: Term, at: string, tables: ClassifyTables): { leaf: string; english: string } | undefined {
+/** A where blank in the question's line: its hook's leaf, and which `[<hook> | b-wh]` group of the line it is. */
+export type PlaceBlank = { hook: string; nth: number };
+
+const PLACE_GROUP = /\[([^[\]|]+) \| b-wh\]/g;
+
+/**
+ * Find a where blank (a blank hosted in a detail, from `blankSites`) in the question's line: the claim's `nth` hosted
+ * detail blank is the line's `nth` `[<hook> | b-wh]` group. Undefined for a role blank, or when the counts differ.
+ */
+export function placeBlank(questionText: string, site: BlankSite, sites: readonly BlankSite[], tables: ClassifyTables): PlaceBlank | undefined {
+  if (!site.detail || !site.at.endsWith("/hosted")) return undefined;
+  let gloss: string;
+  try {
+    gloss = morphGlossLine(questionText, tables);
+  } catch {
+    return undefined;
+  }
+  const groups = [...gloss.matchAll(PLACE_GROUP)];
+  const places = sites.filter((s) => s.detail && s.at.endsWith("/hosted"));
+  const nth = places.indexOf(site);
+  if (groups.length !== places.length || nth < 0) return undefined;
+  return { hook: groups[nth]![1]!.trim(), nth };
+}
+
+/**
+ * A where answer: the question's own hook and the landmark, `[<hook> | b-<landmark>]` (the game's place fragment). A
+ * leaf that is already a bracket stays as it is.
+ */
+function placeLeaf(landmark: { leaf: string; english: string }, place: PlaceBlank): { leaf: string; english: string } {
+  if (landmark.leaf.startsWith("[")) return landmark;
+  return { leaf: `[${place.hook} | ${landmark.leaf.replace(/^[a-z]+-/, "b-")}]`, english: `${place.hook} ${landmark.english}` };
+}
+
+/**
+ * An answer term as a leaf in role `at`, with its English; a pronoun answers with its antecedent. A where blank
+ * (`place`) answers with the question's hook and the term as its landmark.
+ */
+export function answerLeaf(term: Term, at: string, tables: ClassifyTables, place?: PlaceBlank): { leaf: string; english: string } | undefined {
   const t = throughAntecedent(term);
   if (t.kind !== "thing" && t.kind !== "speaker" && t.kind !== "listener") return undefined;
   const word = t.kind === "thing" ? t.head : t.word;
-  const leaf = morphGlossFor(word, tables).replace(/^[zdb]-/, `${at}-`);
+  const leaf = morphGlossFor(word, tables).replace(/^[zdb]-/, `${place ? "b" : at}-`);
   const english = t.kind === "speaker" ? "me" : t.kind === "listener" ? "you" : t.kind === "thing" && t.named ? namedEnglish(t.root) : leaf.replace(/^[a-z]+-[←]?/, "");
-  return { leaf, english };
+  return place ? placeLeaf({ leaf, english }, place) : { leaf, english };
+}
+
+/** A held answer for a blank: a where blank's leaf may name the landmark alone (`b-house`); it takes the question's hook. */
+export function heldLeaf(answer: { leaf: string; english: string }, place?: PlaceBlank): { leaf: string; english: string } {
+  return place ? placeLeaf(answer, place) : answer;
 }
 
 /** A fill answer as a fragment: the answer word alone. */
@@ -101,14 +143,28 @@ export function fillFragmentDrafts(answers: readonly { leaf: string; english: st
 
 /**
  * A fill answer as a full clause: the question's own gloss with its act word dropped and its blank leaf replaced by
- * the answer. Undefined when the question's gloss has no such blank leaf.
+ * the answer. A where blank (`place`) is its `[<hook> | b-wh]` group, replaced by the answer's group. Undefined when the
+ * question's gloss has no such blank.
  */
-export function fillClauseDraft(questionText: string, blankAt: string, answer: { leaf: string; english: string }, tables: ClassifyTables): Draft | undefined {
+export function fillClauseDraft(
+  questionText: string,
+  blankAt: string,
+  answer: { leaf: string; english: string },
+  tables: ClassifyTables,
+  place?: PlaceBlank,
+): Draft | undefined {
   let gloss: string;
   try {
     gloss = morphGlossLine(questionText, tables).replace(/[.?!]\s*$/, "");
   } catch {
     return undefined;
+  }
+  if (place) {
+    const group = [...gloss.matchAll(PLACE_GROUP)][place.nth];
+    if (!group || !answer.leaf.startsWith("[")) return undefined;
+    const replaced = gloss.slice(0, group.index) + answer.leaf + gloss.slice(group.index + group[0].length);
+    const body = replaced.split(" | ").filter((l) => !/^y-(question|soft-question|working-question)$/.test(l));
+    return { gloss: body.join(" | "), english: `${answer.english}.` };
   }
   const leaves = gloss.split(" | ");
   const at = leaves.findIndex((l) => l.replace(/^\[/, "").replace(/\]$/, "") === `${blankAt}-wh`);
