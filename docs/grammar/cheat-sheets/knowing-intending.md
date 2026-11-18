@@ -167,9 +167,9 @@ A want, a plan, and a decision are three steps, and they stack in that order. Al
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#trying) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](/try#trying) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#trying) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Saying someone tries](/try#trying) | I |
+| `howam` | attempt mood (commitment unstated) | [Saying someone tries](/try#trying) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Saying someone tries](/try#trying) | I |
 | `thagol` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](/intention#plan) | B |
 | `thagom` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](/intention#plan) | B |
 | `thagor` | plan mood sketch map-resolution (direction only; details left open) | [Plan](/intention#plan) | B |
