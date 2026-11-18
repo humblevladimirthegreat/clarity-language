@@ -1,6 +1,6 @@
 # Ageben interpreter: one reader and one runtime for the tools that act on meaning
 
-**Status:** IN PROGRESS. Phases 1 (classification) and 2 (the scope rule) done; their outcome is [interpreter.md](../../meta/interpreter.md) and [scope.ts](../../../src/parse/scope.ts). Phase 3 done on 2026-11-18, with decisions 10–17 implemented: the reader (`src/interpret/`), the `reading` CLI, a word-coverage check (every word in exactly one place; 0 missing / 0 doubled across 1364 doc examples), the parser records the reader needed, the carried-frame record (`ResolveInfo.carried`, [carry.ts](../../../src/parse/carry.ts); the reader fills one `carriedFrame` link per inherited channel, holder or NOTIONAL), and two audits (R4 22/30, R8 30/32; every failure since fixed). **Next: phase 4, in a fresh session.** Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it. Decided 2026-11-13 (open decisions 2–5, 7): the matcher's inference switches are membership in a stated list and a compound matching on its head, plus universal to instance for closed `zual` only, each off by default and marked on its match (2); a role the question leaves out matches anything (3); the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in phase 5 (5); a pair that text order can give only one way keeps that order wherever there is a form for the other reading (7). Decided 2026-11-14: the loop never runs a command that carries a frame it has no rule for (`beyond`); what composition constructs do when run is later work outside this plan (`generic-ui.md`). Decided 2026-11-17 and landed on grammar pages: decisions 7a, 8a, 9b ([stance joins](/verb-and-stance-joins#stance-join-reach), [holder](/holder#holder), [generalization](/usually-vs-must#generalization)); a phrase that brings in a new member follows text order everywhere, against binders and stance words, including `-l`/`-m` nouns, `-r` joins, and-lists and hook landmarks, but not fill-ask blanks, measure units or words inside a title ([joins](/joins#everything-ua), [which covers which](/clause#which-covers-which)); a call commutes with every frame ([vocative](/speech-moves#vocative)); a clause joined after the last nested dependent belongs to it ([nested dependents](/nested-dependents#nested-dependents)). Decided 2026-11-18 and landed: decisions 10 (c) and 11 (b), a free-standing tone mark after the start of a sentence colors only the words after it, up to the next free-standing mark, so two such marks commute ([tone marks](/tone-marks#tone-marks)). Decided 2026-11-18 and landed (decisions 12–17): a bare body after a period is a statement, and only a sentence linker keeps the prior act ([past a period](/sentence-linkers#past-a-period)); a carried frame covers what you claim, never your own stance: a WANT, PLAN or DECIDE sentence neither takes nor ends it, an attitude or feeling stance sits over the carried claim (the `carriedFrame` link's `coveredBy`; speech manner shares the attitude key and sits over it too), only the main clause's channel starts or ends a carry, MAY does not carry under a holder, and grounds inherit ([carry forward](/evidentiality#carry-forward), [holder](/holder#holder)); an ordinary feeling root on `/th/` is a speaker attitude ([speaker attitude](/feelings#speaker-attitude)); a `/th/` join over stance words is one stance list (`Reading.stanceLists`, `interpreter.md`).
+**Status:** IN PROGRESS. Phases 1 (classification) and 2 (the scope rule) done; their outcome is [interpreter.md](../../meta/interpreter.md) and [scope.ts](../../../src/parse/scope.ts). Phase 3 done on 2026-11-18, with decisions 10–17 implemented: the reader (`src/interpret/`), the `reading` CLI, a word-coverage check (every word in exactly one place; 0 missing / 0 doubled across 1364 doc examples), the parser records the reader needed, the carried-frame record (`ResolveInfo.carried`, [carry.ts](../../../src/parse/carry.ts); the reader fills one `carriedFrame` link per inherited channel, holder or NOTIONAL), and two audits (R4 22/30, R8 30/32; every failure since fixed). Phase 4 done on 2026-11-18: the log (`log.ts`, with a speaker per sentence passed to resolve as `ParseOptions.speakers`, one carry state per speaker), the matcher (`match.ts`, `ask.ts`, `readQuestion` reads a question after the log's window), values and the `widen` / `infer` switches (`value.ts`), `reading ask` and `reading log`, and a 20-pair audit (`audit.test.ts`; 7 failures, all since fixed). **Next: phase 5, in a fresh session.** Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it. Decided 2026-11-13 (open decisions 2–5, 7): the matcher's inference switches are membership in a stated list and a compound matching on its head, plus universal to instance for closed `zual` only, each off by default and marked on its match (2); a role the question leaves out matches anything (3); the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in phase 5 (5); a pair that text order can give only one way keeps that order wherever there is a form for the other reading (7). Decided 2026-11-14: the loop never runs a command that carries a frame it has no rule for (`beyond`); what composition constructs do when run is later work outside this plan (`generic-ui.md`). Decided 2026-11-17 and landed on grammar pages: decisions 7a, 8a, 9b ([stance joins](/verb-and-stance-joins#stance-join-reach), [holder](/holder#holder), [generalization](/usually-vs-must#generalization)); a phrase that brings in a new member follows text order everywhere, against binders and stance words, including `-l`/`-m` nouns, `-r` joins, and-lists and hook landmarks, but not fill-ask blanks, measure units or words inside a title ([joins](/joins#everything-ua), [which covers which](/clause#which-covers-which)); a call commutes with every frame ([vocative](/speech-moves#vocative)); a clause joined after the last nested dependent belongs to it ([nested dependents](/nested-dependents#nested-dependents)). Decided 2026-11-18 and landed: decisions 10 (c) and 11 (b), a free-standing tone mark after the start of a sentence colors only the words after it, up to the next free-standing mark, so two such marks commute ([tone marks](/tone-marks#tone-marks)). Decided 2026-11-18 and landed (decisions 12–17): a bare body after a period is a statement, and only a sentence linker keeps the prior act ([past a period](/sentence-linkers#past-a-period)); a carried frame covers what you claim, never your own stance: a WANT, PLAN or DECIDE sentence neither takes nor ends it, an attitude or feeling stance sits over the carried claim (the `carriedFrame` link's `coveredBy`; speech manner shares the attitude key and sits over it too), only the main clause's channel starts or ends a carry, MAY does not carry under a holder, and grounds inherit ([carry forward](/evidentiality#carry-forward), [holder](/holder#holder)); an ordinary feeling root on `/th/` is a speaker attitude ([speaker attitude](/feelings#speaker-attitude)); a `/th/` join over stance words is one stance list (`Reading.stanceLists`, `interpreter.md`). Decided 2026-11-18: decision 18 (b), a new-member phrase on a question is not a filter, so *who saw a cat?* matches *Sam saw the cat* (other binders stay filters); decision 19 (a), anyone's goodbye ends every speaker's carried frame, landed ([carry forward](/evidentiality#carry-forward)). Settled in the matcher on 2026-11-18, following *the host's verdict decides*: a denied or excluded frame still passes an equal filter, with the denial on the path.
 
 **Related:** the parser's tree ([types.ts](../../../src/parse/types.ts)), [resolve.ts](../../../src/parse/resolve.ts), [ast-walk.ts](../../../src/parse/ast-walk.ts), the construction registry ([constructions.ts](../../../src/parse/constructions.ts)), [hook-jobs.ts](../../../src/parse/hook-jobs.ts), overlay kinds ([parser-pipeline.md](../../meta/parser-pipeline.md#overlay-kinds)), gloss to Ageben ([gloss-inverse.ts](../../../src/parse/gloss-inverse.ts), [glosses.md](../../meta/glosses.md#round-trip)), the wizard engine ([src/game/](../../../src/game/), [wizard-game.md](../../meta/wizard-game.md)), [read-ageben.md](../../meta/procedures/read-ageben.md). Consumers: `mind-map-view.md`, `ageben-spec.md`, `structural-search.md`, `agent-tool-permissions.md`, `wizard-adventure.md`.
 
@@ -49,7 +49,7 @@ Read readings with `npm run -s reading -- '<text>'` (`--json` for every field); 
 4. **Not stated stays empty.** A missing source, holder, or closure is absent from the reading, never defaulted.
 5. **Pointers, not copies.** Every frame, detail, and term keeps its `LexWord`s, so a consumer can show the text, the gloss, and the position.
 6. **Pronouns keep both ends.** A pronoun term holds the resolver's `AnaphorBind` and, when bound, its antecedent's term. The reader never binds one itself.
-7. **Numbers stay stems** in the reading; phase 4 adds their values for comparison.
+7. **Numbers stay stems** in the reading; `value.ts` gives their values for comparison.
 
 ### The log
 
@@ -131,54 +131,14 @@ A kept file may still be rewritten when the host interface makes its shape wrong
 |------|-------|
 | `src/parse/scope.ts` | frame keys, pair rows, new-member and greeting tests, the order the resolve stage emits (done) |
 | `src/interpret/types.ts`, `classes.ts`, `read.ts`, `tones.ts`, `coverage.ts`, `cli.ts`, `browser.ts`; `src/parse/carry.ts` | phase 3 (done) |
-| `scripts/reading.mjs`, npm script `reading` | print a text's readings (done); later `reading ask`, `reading log` |
-| `src/interpret/log.ts`, `match.ts`, `ask.ts`, `value.ts` | phase 4 |
+| `scripts/reading.mjs`, npm script `reading` | print a text's readings, `reading ask FILE QUERY`, `reading log FILE` (done) |
+| `src/interpret/log.ts`, `match.ts`, `ask.ts`, `value.ts`, `audit.test.ts` | phase 4 (done) |
 | `src/interpret/host.ts`, `run.ts`, `reply.ts` | phase 5 |
 | `docs/meta/interpreter.md` | terms, the table, links, pair table, reader rules; the host contract (C1) |
 
 ## Implementation plan
 
-Phases 1–3 are done. Each remaining phase is one orchestrator session, run through subagents; at its end, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate).
-
-### Phase 4: log and matcher
-
-Order: M1 → M2 → M3 → M4. T2 and T4 of `ageben-spec.md` may start once this phase is committed.
-
-#### M1: log, match, ask
-
-**Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/interpret/`**.
-
-- `log.ts`, `match.ts`, `ask.ts`, tests.
-- Tests include the five-sentence *who paid Ana?* example from `structural-search.md`, written as morph gloss: four matches under four frame paths, and no match for the reversed roles.
-- Builds on phase 3: frame paths include `carriedFrame` links (R7), a `slot:newMember` frame is a binder-family frame on the path, a `pairing` link's `partners` pair list members, and a term's `frames` hold tone marks. Two free-standing tone marks no longer fill `unordered` (decisions 10–11); a mark after the start puts a tone on each word it colors.
-- Stance lists (R9, `interpreter.md` Terms): `Reading.stanceLists?: StanceList[]`, text order. `StanceList = { kind: "stanceList"; key; construction; anchor; join; values; members: (Frame | StanceList)[]; inner?: Frame[]; details? }`. `members` point at frames still in `frames`; `inner` is polarity for `u`/`ue`, binder for `ua`/`uo`, absent for structure series. A frame path through a stance list includes the list; what denying (`set-joins.md`, whole-list denial) or ranking (`rank-joins.md`) the list means is the matcher's to apply, with fixtures from `verb-and-stance-joins.md:154`, `:186`, `:246`.
-- Carried frames sit under the speaker's own stances: a `carriedFrame` link's `coveredBy` lists the attitude frames over it; a frame path shows the attitude outside the channel.
-- Speakers: [evidentiality](/evidentiality#carry-forward) says another speaker's reply neither takes nor ends a carried frame, but the parse has no speakers, so `ResolveInfo.carried` treats a text as one speaker. The log passes a speaker per utterance into resolve and the carry record honors it; fixture: a reply between a hearsay statement and a bare one.
-
-#### M2: values and switches
-
-**Agent:** `proposal-worker`, `opus`, `medium`.
-**May edit:** `src/interpret/`**.
-
-- `value.ts`: a number's and a measure's value from its `NumberStem`, for comparison; literal payload equality.
-- The switches decided in open decision 2 (membership in a stated list; a compound matching on its head; universal to instance, for closed `zual` only), each off by default and marked on every match it produces.
-
-#### M3: `ask` and `log` in the CLI
-
-**Agent:** `proposal-worker`, `sonnet`, `medium`.
-**May edit:** `scripts/reading.mjs`, `src/interpret/cli.ts`.
-
-- `reading ask FILE QUERY` and `reading log FILE`, printing each match with its frame path and both sentences' glosses.
-
-#### M4: matcher audit
-
-**Agent:** `proposal-worker` (fresh), `opus`, `high`.
-**May edit:** `src/interpret/*.test.ts`.
-
-- 20 question / passage pairs built from doc examples.
-- Every match must be explained by pointing at the two trees; no match across reversed roles; no frame path that misstates its sentence.
-- Report failures; edit only test fixtures.
+Phases 1–4 are done. Each remaining phase is one orchestrator session, run through subagents; at its end, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate).
 
 ### Phase 5: host, loop, replies, and the wizard
 
@@ -190,6 +150,7 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 **May edit:** `src/interpret/`**.
 
 - `host.ts`, `run.ts`, `reply.ts`.
+- Builds on phase 4: the log (`buildLog`, a host window, one speaker per sentence), `readQuestion(log, text, tables, …)` for a question read after the window, and `ask(question, log, host, options)`, which already takes the compound table as `lexicon` on the host for `widen`. Read their exports (`grep -n '^export' src/interpret/*.ts`) before adding to `Host`; extend the type `ask` already uses, never a second one.
 - Tests against a toy host of three entities: each force, each outcome, each shared reply shape.
 - The pass-through list ([the loop](#the-loop)): draft it from the frame families in `docs/meta/interpreter.md`, one row per family the owning grammar page shows leaves a command's action unchanged, with its anchor. A family the pages do not settle stays off the list and is logged as an open decision. Tests: a command under a condition, under a binder, and under a holder each give `beyond`, name the frame, and call no handler; a toy host whose `accepts` returns nothing still cannot run them.
 - The re-parse window is a host setting (decision 5).
@@ -228,6 +189,8 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 **May edit:** `docs/meta/interpreter.md`, `docs/meta/parser-pipeline.md`.
 
 - Finish `docs/meta/interpreter.md`: the host contract, the pass-through list, and how to write a host.
+- Add the matcher rules phase 4 settled, from `match.ts` / `ask.ts`: a question is read after the log's window, so its pronouns bind through the resolver; a role missing from the outer claim is looked for in the claim's scope islands, with the island on the path; a query term matches a member of a target `u` list, with the list's frames on the path; a denied or excluded frame passes an equal filter, with the denial on the path; a `slot:newMember` frame on a question is not a filter (decision 18); holder filters compare the holder and its channel, never the ending; a number blank in a measure detail binds by key and number kind; the `widen` and `infer` switches, and that membership needs one list or a *respectively* pairing.
+- Add to `parser-pipeline.md` (or `interpreter.md`, whichever owns resolve inputs) that `ParseOptions.speakers` gives one speaker per sentence and the carry record keeps one state per speaker; with none, a text is one speaker.
 - Add a pointer from [parser-pipeline.md](../../meta/parser-pipeline.md).
 - Report the `AGENTS.md` rows (editor notes: `interpreter.md`, which owns the reading terms, frame families, classification table, pair table, reader rules and host contract; tooling notes: classify a construction when the parser gains one).
 
@@ -256,20 +219,18 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 ### Gates
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` must show no new errors before each unit's commit.
-- R2, M1, M2, H1, W1, W2: `npm test` green, including the coverage test from R2 on.
+- H1, W1, W2: `npm test` green, including the coverage test from R2 on.
 - Phase 5: every wizard walkthrough plays to its goal, and a clean `npm run build`, since the game's content lint and the site build read the engine.
 - Final gate: a full `npm run verify` against an empty baseline.
 - No style gate remains: no later unit changes prose under `docs/grammar/`. If a unit finds it must edit `docs/grammar/wizard.md`, the style gate applies to that phase.
 
 ### Commits
 
-One per unit after its gate, and one per phase for the consolidated proposal; the last of those carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 3 made thirty, including its two consolidations. Expected from here: phase 4 five, phase 5 six. Messages start `ageben-interpreter M1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
+One per unit after its gate, and one per phase for the consolidated proposal; the last of those carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 4 made ten, including its consolidation. Expected from here: phase 5 six. Messages start `ageben-interpreter M1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
 
 ## Open decisions
 
-Decisions 1–17 are decided (see Status); numbers stay stable because the body and commits cite them.
-
-**18. A new-member phrase on a question.** The matcher treats every frame on a question, other than its ask force, as a filter. A new-member phrase (*a cat*) puts a binder-family `slot:newMember` frame on its term, so *who saw a cat?* misses *Sam saw the cat*, whose cat carries no such frame. Options: (a) keep it a filter: a question with *a cat* matches only targets that also bring the cat in new; (b) a `slot:newMember` frame on a question term is not a filter: the term matches by root (or referent) like a bare noun, and other binders (universals, *no*) stay filters; (c) like (b), but the match is marked so a consumer can show that the target's cat was already known. **Recommendation:** (b). A learner asking *who saw a cat?* means any cat, and an answer about the cat already in talk is a right answer; (a) hides it for a difference the asker did not ask about. It also governs inference: under (a), `ask` can never return a universal-to-instance match, because *does a cat sleep?* puts the frame on *cat* and a closed `zual` reading never carries it (M2 tests that switch through `match` only).
+None open. Decisions 1–19 are decided (see Status); numbers stay stable because the body and commits cite them.
 
 ## Background
 
