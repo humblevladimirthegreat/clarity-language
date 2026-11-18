@@ -256,4 +256,4 @@ A [say word](/permission-consent#say-words) goes on `/h/`: `h`, `w`, a reach vow
 | `hwuvam` *may* ([the act is allowed](/permission-consent#permission)) | | `hwuvom` *has to* ([the act is demanded](/permission-consent#permission)) |
 | `hwuvol` *the rules require it* ([an outside demand](/permission-consent#permission)) | | `hwuzor` *I feel I have to* ([an unspoken should](/permission-consent#consent)) |
 | `thawethem` *ought to, for relatedness* ([advice for a sake](/ought-for-a-sake#sake-force)) | | `thawethom` *for relatedness* ([why it is done](/for-a-sake#sake-preference)) |
-| `thawetham` *thank you* ([my sake is met](/thanks-and-sorry#saying-thanks)) | | `thawethum blawan` *I'm sorry* ([your sake is hurt](/thanks-and-sorry#saying-thanks)) |
+| `thawetham` *thank you* ([my sake is met](/thanks-and-sorry#saying-thanks)) | | `thawethum blawan` *I'm sorry* ([your sake is hurt](/thanks-and-sorry#saying-sorry)) |
