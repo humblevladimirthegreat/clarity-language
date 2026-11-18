@@ -203,7 +203,7 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 > - See a text's readings with `npm run -s reading -- '<text>'` (`--json` for every field). The shipped types are `src/interpret/types.ts`.
 > - Coverage: every word of a doc example lands in exactly one place in its readings (`src/interpret/coverage.ts`); the ratchet `src/interpret/coverage-ratchet.json` is 0 / 0 and only goes down. A frame that keeps a word hosts the term built from it.
 > - Scope rule (decided 2026-11-13): where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later. The grammar states it (`clause.md#which-covers-which`) and the resolve stage emits it (`ParseResult.resolve.scope`, `src/parse/scope.ts`); the reader copies the emitted order. A pair still unsettled goes in the reading's `unordered`, and no reader, consumer, or host ever picks an order for it.
-> - A meaning the grammar pages do not state is an open decision: log the sentence, the options, and a recommendation, skip the item, and go on.
+> - A meaning the grammar pages do not state is an open decision: log the sentence, the options, and a recommendation with its confidence (high, medium or low), skip the item, and go on.
 > - A command runs only when every frame on it, other than its force, is on the loop's pass-through list. Anything else is `beyond`. No host widens the list or runs a framed command itself.
 > - No consumer and no host walks the parse tree for meaning. If a reading lacks what you need, stop and report; the fix is a table row, not a local walker.
 > - Code never spells a root. Write test Ageben as morph gloss and spell it with gloss-inverse; name roots by concrete sense.

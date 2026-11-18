@@ -22,6 +22,10 @@ Proposals may link **out** to `docs/grammar/`, `docs/meta/`, `data/`, and code. 
 
 - Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
 - Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
+- Each recommendation states its confidence, as **(high)**, **(medium)** or **(low)** right after **Recommendation:**.
+  - **High:** the grammar pages or a stated design goal point to one option, and the others cost the learner something clear.
+  - **Medium:** a judgment call with a clear reason, where another option is still defensible.
+  - **Low:** a slight lean only, because the options are close or the agent lacks something that would settle it. Name what that is.
 - A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](../design-decisions.md).
 
 ## Stop and alert
@@ -85,6 +89,8 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`,
     - Run `verify` once per unit, before the commit. Never repeat a green run: when the subagent's last act was a passing `verify` and nothing has changed since, commit on that result. Rerun only after the orchestrator's own edits (such as `AGENTS.md` Owns lines).
 12. **Ask for short, fixed-field reports** that hold only what the orchestrator acts on: what moved (with ids), files touched as a count, registry edits, `AGENTS.md` Owns lines to change, the `verify` line, skips with reasons, lexicon choices, anything the orchestrator must run or fix, **left:** the steps not done when the subagent stopped at its turn cap, and **inefficient:** anything about the run that looked wasteful ([AGENTS.md](../../../AGENTS.md), end of run). *Done* is one line. The report never narrates edits page by page, restates the brief, or lists file names: the diff and `git status` hold those. Keep it to about 150 words, plus any forms, ids or worklist a later unit is briefed from. Every later orchestrator turn pays for the report again.
 13. **Pay for a fresh context where it buys something**: a new set of pages, an independent audit, or a rule about what a writer may have read. Scope an audit to what the proposal changed, plus close neighbors.
+    - **Batch style reviews.** A grammar edit made mid-run, such as the sentence that settles an open decision, never gets a style review of its own. It joins the proposal's [style gate](proposal-plans.md#the-plan-section), which reviews every changed section in one pass. When the proposal has no style gate left and the phase's grammar edits come to more than a few sentences or add a section, the orchestrator adds a style-gate unit at the end of that phase.
+    - **Small edits get a self-check.** When the phase's grammar edits total a few sentences and add no section, the one who wrote them checks them against the [checklist](../doc-style.md#checklist) in `doc-style.md` and no `style-editor` runs. A brief that writes grammar prose names that checklist, so the prose is right when it lands.
 14. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
 15. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.
 

@@ -32,7 +32,7 @@ An idea answers *what problem, roughly what fix, and what is still undecided*. I
 
 1. **Problem**: what a learner or editor cannot do now, or does badly.
 2. **Sketch**: the rough design. Enough that a reader can judge whether it is worth planning; one or two worked examples beat a spec.
-3. **Open questions**: each states the question, lists the options, and ends with a **Recommendation:** when you have one, weighed by its effect on the learner. Say so when you have no basis to choose.
+3. **Open questions**: each states the question, lists the options, and ends with a **Recommendation:** when you have one, weighed by its effect on the learner, with its confidence (**high**, **medium** or **low**, as in [open decisions](proposals.md#open-decisions)). Say so when you have no basis to choose.
 
 Add **Non-goals** or **Not yet** only when they head off a likely misreading. Keep an idea short: under about 100 lines. Research that runs longer (measurements, library surveys) goes in its own section at the end, so a reader can stop before it.
 

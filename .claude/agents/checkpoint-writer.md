@@ -48,6 +48,6 @@ At about 25 tool calls, check what is left. If it is small, finish. If a lot is 
 - Files touched: a count
 - Registry edits: allowlist rows, `core` cells, any bank move on a later page
 - Verify: the PASS/FAIL line
-- Skipped: item, reason, and the open decision it needs (problem, options, and your recommendation)
+- Skipped: item, reason, and the open decision it needs (problem, options, and your recommendation with its confidence: high, medium or low)
 - Left: steps not done, if you stopped early
 - Inefficient: a line or two on anything wasteful in your run, or none

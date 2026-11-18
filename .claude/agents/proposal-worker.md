@@ -33,6 +33,6 @@ Use the format the brief asks for. If it gives none, report in at most 10 lines.
 - Files touched: a count
 - Registry edits and `AGENTS.md` lines to change
 - Check: the verify line, or what you checked instead
-- Skipped: item, reason, and any open decision (problem, options, your recommendation)
+- Skipped: item, reason, and any open decision (problem, options, your recommendation with its confidence: high, medium or low)
 - Left: steps not done, if you stopped early
 - Inefficient: anything wasteful in your run, or none
