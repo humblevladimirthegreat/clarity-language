@@ -4,13 +4,11 @@ band: intermediate
 
 # A number in other roles {#a-number-in-other-roles}
 
-### Number as verb / adverb / interjection / discourse {#number-as-roles}
+### A number as the action {#number-as-verb-by-marker}
 
 You can use a number as the action (*add three*), as how often (*three times*), as how likely (*70% likely*), as a shout (*Three more!*), as a list label (*point 2:*), or as a place on a scale (*second biggest*). Put the same number word on `/v/`, `/h/`, `/th/`, `/y/`, `/x/`, or `/w/`. The role letter picks the use; the marker still says count, rank, or code.
 
 On `/ɡ/`, `/z/`, `/d/`, and `/b/`, the number stays a plain amount, rank, or code ([marker vowel](number-markers.md#marker-vowel-referential-identity)).
-
-#### Number as verb (by marker) {#number-as-verb-by-marker}
 
 On `/v/`, the marker decides which action the number names.
 
@@ -25,7 +23,7 @@ To set a quantity to a value, use an ordinary verb with the number as its object
 
 Endings still apply (`-m` ≈ *about* that amount/code/rank, `-r` resume with a digit; digitless `vrar` / `vrer` is a blank).
 
-#### Number as adverb (by marker) {#number-as-adverb-by-marker}
+### A number as how often {#number-as-adverb-by-marker}
 
 On `/h/`, the marker decides what kind of adverb the number is.
 
@@ -45,7 +43,7 @@ Worked examples: `hragel` *three times*; `hrugel` *÷3 / into 3*; `hrogel` *for 
 
 Endings still apply (`-m` ≈ *about* that many times / that clock or date, `-r` resume with a digit; digitless `hrar` *how many times?* / `hrer` *when?* is a blank). Relative %-change factors use `h+…` (e.g. ×1.5).
 
-#### Number as interjection (by marker) {#number-as-interjection-by-marker}
+### A number as a shout {#number-as-interjection-by-marker}
 
 On `/y/`, a number is a shout (*Three more!*, a score). Number cheers sit with the other opening `/y/` words (before the act word, when a clause follows) or alone as a whole turn with no act word.
 
@@ -64,7 +62,7 @@ Endings still apply (`-m` fuzzy *about three more!*, `-n` named call, `-r` resum
 
 **Compare with:** statement / question / command words in the [speech-act section](/firm-soft#firm-or-soft-act).
 
-#### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
+### A number as a list label {#number-as-discourse-marker-by-marker}
 
 To number the points of a list (*point 2:*, *firstly*) or to cite a label (*item 12*), put the number on `/x/`, the role of words like *therefore* that open a sentence and link it to the one before. The marker says how the point stands toward the other points: `#` is a plain numbered step, `+` backs up an earlier point, and `-` is a new, independent line of support. `_` cites a label instead. None of these is part of the sentence's own roles, unlike `/ɡ/` *the second page* or `/h/` *three times*.
 
@@ -81,12 +79,12 @@ Worked examples: `xrodol` *point 2:*; `xradol` *corroborating 2:*; `xrudol` *ind
 
 Endings still apply (`-l` newly stated item, `-r` *as in (N) above* (with a digit; digitless `xror` is a blank), `-n` titled item name, `-m` fuzzy *around item N*).
 
-#### Number as degree (by marker) {#number-as-degree}
+### A number as a place on a scale {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
 On `/w/`, a number sits in the degree position right before an adjective or adverb ([clause](/clause#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the place on that scale, in superlative shape (`zazozon zol wrodol gelazem` *Azozon is the second biggest*). A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradol` *twice*, factor).
 
-#### Number as stance (by marker) {#number-as-stance-by-marker}
+### A number as how likely {#number-as-stance-by-marker}
 <a id="likelihood"></a>
 
 `/th/` + number is your [stance](/clause#stance-th) on the whole claim: how likely you think it is, or which numbered source it rests on. Spoken, it starts `thr…`, as in English *three*.

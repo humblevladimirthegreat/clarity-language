@@ -4,9 +4,7 @@ band: intermediate
 
 # Dated channel {#dated-channel-sitting}
 
-### Dated channel (signed offset) {#dated-channel}
-<a id="ago"></a>
-<a id="time-offset"></a>
+### Counting time from now {#counting-from-now}
 
 English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a time [measure phrase](/measures-and-percent#measure-phrases) in `/b/` immediately after the channel word, and it becomes the **offset**, how far the event sits from now. The amount is **signed**: `-` is earlier than now, `+` is later than now. The offset always dates the event, not the moment you learned about it.
 
@@ -70,7 +68,7 @@ A channel used as a comparison [bar](/bars#bars) takes the same offset, which da
 
 **Compare with:** an absolute clock or date (`h_#22,7`) dates the event without a channel. [RESIDUE](/residue-and-former#residue) and [FORMER](/residue-and-former#former-climate) do not locate time, so they take no offset.
 
-#### Now and today {#now}
+### Now and today {#now}
 
 English *now* and *today* place the event at the moment you speak. Ageben has no short *now* word: give the channel an offset of zero, so the event sits no time away from that moment. The channel stays, so *now* still says how you know it.
 
