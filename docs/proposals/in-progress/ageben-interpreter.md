@@ -127,7 +127,17 @@ Phases 1–4 and phase 5's W1 are done. The rest of phase 5 is one orchestrator 
 
 ### Phase 5 (rest): wizard knowledge, wizard check, the interpreter note
 
-Order: W2 → W3 → C1.
+Order: H7 → W2 → W3 → C1. H7 and W2 touch disjoint files (`src/parse/`, `src/interpret/` and grammar vs `src/game/`) and may run in parallel.
+
+#### H7: decision 23, an answer word or interjection closed by a period
+
+**Agent:** `proposal-worker`, `opus`, `high`.
+**May edit:** `docs/grammar/intermediate/sentence-linkers.md` (`#past-a-period`), `src/parse/**`, `src/interpret/**`, and their tests.
+
+- Decided 2026-11-18 (23 a): *yes*, *no* or an interjection closed by a period is a whole move of its own, as a call is; the bare body after the period gets its own utterance and carries no polar link or interjection frame.
+- Grammar: extend the call sentence H6 added to `#past-a-period` (*A call closed by a period reaches only its own turn …*) and its table row to cover *yes* / *no* and interjections. Self-check against `docs/meta/doc-style.md#checklist`.
+- Code: H6 put the call case in `src/parse/sentence-parser.ts` `buildUtterances` (`afterCall`); widen that check. The parser accepts the same texts; the coverage ratchet stays 0 / 0. Tests: `yes.` then a bare body, and an interjection then a bare body, each give the body its own reading with no polar link or interjection frame; *yes* or an interjection before a body in one sentence is unchanged.
+- Leave alone the edge case H6 kept: a call plus a written act word, then a sentence linker, stays one utterance (the linker keeps the act).
 
 #### W2: wizard knowledge in the log
 
@@ -192,19 +202,13 @@ Order: W2 → W3 → C1.
 
 ### Commits
 
-One per unit after its gate; the last carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 5 has made ten so far, including this consolidation. Expected from here: four (W2, W3, C1, the final one). Messages start `ageben-interpreter W2:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
+One per unit after its gate; the last carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 5 has made ten so far, including this consolidation. Expected from here: five (H7, W2, W3, C1, the final one). Messages start `ageben-interpreter W2:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
 
 ## Open decisions
 
-Decisions 1–20 and 22 are decided; numbers stay stable because commits cite them.
+Decisions 1–20, 22 and 23 are decided (23 (a) on 2026-11-18, carried out by H7); numbers stay stable because commits cite them.
 
 **21. A whole-clause sake on a command.** Only questions are settled ([whose stake](/for-a-sake#whose-stake)). It stays off the pass-through list. **Recommendation:** (low) keep it off until a sample needs it; a grammar sentence on what *do X for Y's sake* asks of a listener would settle it.
-
-**23. *Yes*, *no* or an interjection closed by a period, then a bare body.** Decision 22 gave a call closed by a period its own turn, but the parser still puts a body after `yes.` or an interjection and a period in the same utterance, so the body carries the polar link or the interjection frame. No grammar page settles it.
-- (a) Treat them like a call: the body after the period gets its own utterance, with a sentence in [past a period](/sentence-linkers#past-a-period).
-- (b) Leave them as they are.
-
-**Recommendation:** (medium) (a). After a rest, a bare body is a statement whatever came before it, and an answer word or a reaction is a whole move of its own, as a call is.
 
 ## Background
 
@@ -240,5 +244,3 @@ All five split a sentence the same way: a bare clause (who does what to whom), a
 - **No paraphrase and no ranking.** A different root is a different claim.
 - **No surfaces.** The map, the search box, the spec commands, and the permission hook stay in their own proposals. This one ships a library and a debugging command.
 - **No English input.**
-
-**19. One speaker's goodbye and the others' carried frames.** [Carry forward](/evidentiality#carry-forward) says a goodbye ends the conversation, and that another speaker's reply neither takes nor ends your carried frame, but not whether one speaker's goodbye ends the frames other speakers are carrying. M1b implemented it as ending every speaker's frame (`src/parse/carry.ts`); with no speakers given, nothing changes. Options: (a) a goodbye ends every speaker's carried frame; (b) it ends only its own speaker's. **Recommendation:** (a). A goodbye closes the conversation for everyone in it, so a frame that outlives it would reach into talk the listener counts as new. Settling it adds one sentence to the carry-forward section.
