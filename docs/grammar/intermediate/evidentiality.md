@@ -251,7 +251,7 @@ Your statements with no channel of their own take the frame, including a stateme
 >
 > "Alazun left, so they say. Did Alazun run? Alazun sang." (the singing is hearsay too)
 
-A command, request, or prohibition takes one channel, REPORTED: the order is someone else's, and you pass it on. It does not start a frame or end yours. Every other channel has no reading on an order. To make an order gentler, use a [soft act word](/firm-soft#speech-act) instead.
+A command, request, or prohibition takes one channel, REPORTED: the order is someone else's, and you pass it on. A [hand count](#hand-depth) says how many hands it passed through. It does not start a frame or end yours. Every other channel has no reading on an order. To make an order gentler, use a [soft act word](/firm-soft#speech-act) instead.
 
 > `yol vowurol thebam.`
 >
