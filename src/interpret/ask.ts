@@ -2,7 +2,8 @@
  * Asking a log (the matcher in the interpreter plan): every reading in the log whose claim fits the question's, with the
  * blanks it binds and the frame path it sits under.
  *
- * The question's frames other than its own ask force and its new-member binders are filters: a reading matches only if
+ * The question's frames other than its own ask force, its new-member binders, and the frames outside what is asked
+ * (those a command passes through, and MIRATIVE) are filters: a reading matches only if
  * its path carries a frame of that family with equal values and a matching party. A frame a stance list denies or
  * excludes still passes, with its standing on the path: the matcher never decides that a framed claim holds; that is
  * the host's verdict.
@@ -10,7 +11,7 @@
  * Read the question against the log with `readQuestion` (log.ts), so its pronouns bind to the log's terms.
  */
 import { entryOf, type Log, type LogEntry } from "./log.js";
-import { referentOf, type Host } from "./host.js";
+import { passThrough, referentOf, type Host } from "./host.js";
 import { framePath, match, withIslands, withListFrames, readingTree, type Binding, type FramePath, type MatchOptions, type Switch } from "./match.js";
 import type { Frame, Reading } from "./types.js";
 
@@ -46,9 +47,22 @@ function isNewMember(frame: Frame): boolean {
   return frame.family === "binder" && frame.key === "slot:newMember";
 }
 
-/** Frames on the question, other than its ask force and its new-member binders: each must be carried on the path. */
+/**
+ * Frames outside what is asked (open decision 25, decided (a)): every frame a command passes through (`passThrough`:
+ * a later act word, a call, an attitude, a clause sake, contrary to a stance), plus MIRATIVE, which mirative.md#mirative
+ * keeps outside what is asked. Adding one to a question asks the same thing.
+ */
+function outsideAsked(frame: Frame, rest: readonly Frame[]): boolean {
+  return frame.family === "mirative" || passThrough(frame, rest) !== undefined;
+}
+
+/**
+ * Frames on the question, other than its ask force, its new-member binders, and the frames outside what is asked: each
+ * must be carried on the path.
+ */
 export function questionFilters(question: Reading): Frame[] {
-  return question.frames.filter((f) => !isAskForce(f) && !isNewMember(f));
+  const rest = question.frames.filter((f) => !isAskForce(f));
+  return rest.filter((f) => !isNewMember(f) && !outsideAsked(f, rest));
 }
 
 /**

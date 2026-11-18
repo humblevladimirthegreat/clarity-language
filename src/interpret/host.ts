@@ -185,6 +185,12 @@ function loneNewMember(frame: Frame, all: readonly Frame[]): boolean {
   return all.every((f) => f === frame || f.family !== "binder");
 }
 
+/** Contrary to a stance: what follows `uom` is a stance word or an intention adverb only (no say word, no holder). */
+function contraryToStance(frame: Frame): boolean {
+  const inner = frame.inner ?? [];
+  return inner.length > 0 && inner.every((f) => f.family === "stance" || f.family === "intention");
+}
+
 export const PASS_THROUGH: readonly PassThroughRow[] = [
   {
     family: "binder",
@@ -213,6 +219,12 @@ export const PASS_THROUGH: readonly PassThroughRow[] = [
     when: (frame) => FRAME_KEYS[frame.key]?.reach === "clause",
     anchors: ["for-a-sake.md#whose-stake", "how-you-feel.md#feeling-word"],
     why: "A sake word on the clause (met, unmet, prescription or motive, with or without a `bl-` stake holder) is your own remark on what the act serves, and a feeling word says how you feel; either way the command asks only for the act, as a question asks only about it.",
+  },
+  {
+    family: "contrary",
+    when: contraryToStance,
+    anchors: ["contrary-to.md#contrary-to-stance"],
+    why: "`uom` and a stance on a command is a reluctant or defiant order: the ordered event goes against the stance, and the act is unchanged. A say word or a holder after `uom` is not on this row.",
   },
 ] as const;
 

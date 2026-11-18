@@ -499,7 +499,8 @@ Each frame on the question is a filter or not by this table; a later change is a
 | its own ask force | no | It is the question |
 | `slot:newMember` binder | no | Decision 18: a question about a first-mention noun asks about such a thing, not one newly brought in, so the term matches by root or referent like a bare noun. Other binders stay filters |
 | bar | no | It sits on its detail, not on the clause, so it is not among the question's frames |
-| every other family | yes | Pass-through families and MIRATIVE included; whether those should filter is under review |
+| a frame on the [pass-through list](#pass-through-list), and MIRATIVE | no | Decision 25 (a): outside the act is outside what is asked. A later act word, a call, an attitude, a clause sake, contrary to a stance, or MIRATIVE ([mirative](/mirative#mirative)) asks the same thing as the bare question. `passThrough` decides, with the question's frames other than its ask force as `all` |
+| every other family | yes | It changes what is asked |
 
 - **A denied or excluded frame passes.** A path frame that a stance list denies (`u`) or excludes (`ua`, `ue`) still passes an equal filter, with its standing on the path (`PathFrame.lists`; `negated()` tells it). Whether the claim holds is the verdict's.
 - **Holder filters** compare the holder (as the party) and its channel, never the ending: on a holder seam the word's ending is the holder's own form ([holder](/holder#holder)), so it is left out of the values on the holder frame and on the stance it sits on.
@@ -564,8 +565,9 @@ A command runs only when every frame on it other than its force, on the clause a
 | `attitude` | Always: a tone mark, speaker attitude or speech manner | [tone marks](/tone-marks#tone-marks), [speaker attitude](/feelings#speaker-attitude), [speech manner](/speech-manner#speech-manner) |
 | `binder` | `slot:newMember` hosting one noun (no list, no number on it), with no other binder on the command; `refer` picks the one | [new member in a command](/joins#new-member-in-a-command) |
 | `sake` | Whole-clause reach: a sake word or feeling word on the clause | [whose stake](/for-a-sake#whose-stake), [feeling word](/how-you-feel#feeling-word) |
+| `contrary` | Contrary to a stance: what follows `uom` is a stance word or an intention adverb only (no say word, no holder); a reluctant or defiant order | [contrary to a stance](/contrary-to#contrary-to-stance) |
 
-Every other family makes a command `beyond` and names it. For MIRATIVE, a channel or MAY, and contrary-to on a command, that is under review.
+Every other family makes a command `beyond` and names it. For MIRATIVE and a channel or MAY on a command, that is under review.
 
 ### The default verdict
 
@@ -579,9 +581,9 @@ With no host `verdict`, the loop counts a match only when it is **plain**: every
 
 The probe is the last describe block of `src/interpret/run.test.ts`. It builds a command and a yes / no question under 20 of the 21 frame families; `unknown` cannot be built, being the parser's fallback for an unread word.
 
-- **Commands run** under a doubled or stacked act word, a clause sake, a speaker attitude, an interjection, a lone first-mention noun, and a call: each frame on a pass-through row.
-- **Commands are `beyond`** under polarity, say, stance (MAY, REPORTED), holder, hinge, intention (plan, want, try), ability, phase, residue (RESIDUE, FORMER), notional, mirative, contrary, occasion, a universal, a bar, and a quote. None is refused.
-- **Questions:** every frame is a filter except a first-mention noun and a bar, as in [question filters](#question-filters).
+- **Commands run** under a doubled or stacked act word, a clause sake, a speaker attitude, an interjection, a lone first-mention noun, a call, and contrary to a stance: each frame on a pass-through row.
+- **Commands are `beyond`** under polarity, say, stance (MAY, REPORTED), holder, hinge, intention (plan, want, try), ability, phase, residue (RESIDUE, FORMER), notional, mirative, occasion, a universal, a bar, and a quote. None is refused.
+- **Questions:** every frame is a filter except a first-mention noun, a bar, a frame a command passes through (a doubled act word, a call, an attitude or interjection, a clause sake, contrary to a stance), and MIRATIVE, as in [question filters](#question-filters). Those questions answer *yes* after a plain logged claim, as the bare question does.
 - **Turns:** a call, *yes*, *no*, or an interjection closed by a period, then a bare body or a sentence linker, is its own move, and the turn is logged as one. A lone greeting or interjection is force said. *Unknown* on a yes / no question is an `ok` *can't say* reply.
 
 ## Writing a host

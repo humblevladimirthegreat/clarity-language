@@ -18,6 +18,14 @@ English *contrary to the plan* says that the event happens even though a plan sa
 
 The stance keeps its endings. A [plan](/intention#plan) after `uom` is your own, like any stance.
 
+On a command, request, or prohibition, `uom` and its stance make a reluctant or defiant order: the event you ask for goes against the stance, and you are still asking for it.
+
+> `yol vowurol uom thagom.`
+>
+> y-command | v-walk | [contrary-to | th-plan-itinerary]
+>
+> "Walk, even though it's not what I planned."
+
 Only the stance right after `uom` is what the event goes against. A stance anywhere else in the clause still applies to the claim:
 
 > `zazozon vowurol uom thagom thomam.`

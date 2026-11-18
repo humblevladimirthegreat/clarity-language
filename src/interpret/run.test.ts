@@ -479,6 +479,7 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
     ["attitude", "y-sleepy | y-command | v-walk"],
     ["binder", "y-command | d-door | v-open"],
     ["call", "y-Azozon | y-command | v-walk"],
+    ["contrary", "y-command | v-walk | [contrary-to | th-plan-itinerary]"],
   ];
   const COMMAND_BEYOND: [string, string][] = [
     ["polarity", "y-command | v-walk | th-not"],
@@ -496,7 +497,6 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
     ["residue", "y-command | h-always | v-walk | h-FORMER"],
     ["notional", "y-command | th-NOTIONAL | v-walk"],
     ["mirative", "y-command | v-walk | th-MIRATIVE"],
-    ["contrary", "y-command | v-walk | [contrary-to | th-plan-itinerary]"],
     ["occasion", "y-command | h-always | v-walk"],
     ["binder", "y-command | [b-everything | g-cat] | v-pay"],
     ["bar", "y-command | [z-listener | th-plan-itinerary | z-rank/more | b-later] | v-departure"],
@@ -535,8 +535,8 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
   }
 
   // [family, question, filter today, first reply, decision]: asked after PAID (or after `logged`). A filter must be
-  // carried on a match's path, so a plain logged claim gives cannot say. Decision 25: a page puts these frames outside
-  // what is asked, yet the loop filters on them today.
+  // carried on a match's path, so a plain logged claim gives cannot say. Decision 25 (a): a frame a command passes
+  // through, and MIRATIVE, is outside what is asked, so it is no filter and the question answers as the bare one does.
   const QUESTIONS: [string, string, boolean, string, (number | string)?][] = [
     ["polarity", "y-question | z-Alazun | b-Azozon | v-pay | th-not", true, "cannotSay"],
     ["say", "y-question | z-Alazun | b-Azozon | v-pay | h-episode-event-ALLOW-said", true, "cannotSay"],
@@ -548,16 +548,16 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
     ["phase", "y-question | z-Alazun | h-still | b-Azozon | v-pay", true, "cannotSay"],
     ["residue", "y-question | h-RESIDUE | z-Alazun | b-Azozon | v-pay", true, "cannotSay"],
     ["notional", "y-question | th-NOTIONAL | z-Alazun | b-Azozon | v-pay", true, "cannotSay"],
-    ["contrary", "y-question | z-Alazun | b-Azozon | v-pay | [contrary-to | th-plan-itinerary]", true, "cannotSay"],
+    ["contrary", "y-question | z-Alazun | b-Azozon | v-pay | [contrary-to | th-plan-itinerary]", false, "yes", 25],
     ["occasion", "y-question | z-Alazun | h-always | b-Azozon | v-pay", true, "cannotSay"],
     ["binder", "y-question | [z-everything | g-cat] | b-Azozon | v-pay", true, "cannotSay"],
     ["quote", "y-question | z-Alazun | d-CITE[flaw]# | v-tell", true, "cannotSay"],
-    ["force", "y-question | y-question | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
-    ["call", "y-Ahelan | y-question | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
-    ["attitude", "y-question | th-hope | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
-    ["attitude", "y-sleepy | y-question | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
-    ["mirative", "y-question | z-Alazun | b-Azozon | v-pay | th-MIRATIVE", true, "cannotSay", 25],
-    ["sake", "y-question | z-Alazun | b-Azozon | v-pay | th-physical-met-any-term", true, "cannotSay", 25],
+    ["force", "y-question | y-question | z-Alazun | b-Azozon | v-pay", false, "yes", 25],
+    ["call", "y-Ahelan | y-question | z-Alazun | b-Azozon | v-pay", false, "yes", 25],
+    ["attitude", "y-question | th-hope | z-Alazun | b-Azozon | v-pay", false, "yes", 25],
+    ["attitude", "y-sleepy | y-question | z-Alazun | b-Azozon | v-pay", false, "yes", 25],
+    ["mirative", "y-question | z-Alazun | b-Azozon | v-pay | th-MIRATIVE", false, "yes", 25],
+    ["sake", "y-question | z-Alazun | b-Azozon | v-pay | th-physical-met-any-term", false, "yes", 25],
     ["binder", "y-question | z-Alazun | d-door | v-open", false, "yes", "z-Alazun | d-door | v-open"],
     ["bar", "y-question | [z-Alazun | th-plan-itinerary | z-rank/more | b-later] | v-departure", false, "cannotSay"],
   ];
