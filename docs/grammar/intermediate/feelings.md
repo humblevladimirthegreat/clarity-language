@@ -182,6 +182,16 @@ English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, fee
 
 Hope is not a way of knowing, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
+Any feeling root works the same way, including the roots of the [plain labels](/how-you-feel#feeling-label): `thonumum` from *angry*, `thodebem` from *sad*. Like any [stance](/clause#stance-th), it is your feeling now, as you speak, and it does not change what is claimed. You can then say how a claim lands with you without making your feeling the claim.
+
+> `zazozon thonumum vowurol.`
+>
+> z-Azozon | th-hostility | v-walk
+>
+> "Azozon is walking, and I'm angry about it."
+
+**Compare with:** the label `zuwen gonumul.` *I am angry* is a claim about you: you are the subject, and the sentence says you are angry, about nothing in particular. In `zazozon thonumum vowurol.` the claim is that Azozon walks, and the anger is how you take it. A [feeling word](/how-you-feel#feeling-word) on a clause works like the attitude and says more: which need is involved and what the feeling pulls you to do.
+
 In a question the attitude still stays yours. By the usual [order](/clause#which-covers-which) the question word covers the rest of the turn, but an attitude stays outside what is asked, so the question asks only about the claim:
 
 > `yel thuwuyom vowurol zazozon.`

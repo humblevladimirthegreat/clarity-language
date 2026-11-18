@@ -38,6 +38,15 @@ describe("reader: one fixture per frame family", () => {
     assert.equal(frame(reading!, "attitude").anchor, "feelings.md#speaker-attitude");
   });
 
+  it("feelings.md: a feeling root on /th/ is a speaker attitude; the same root as a label is the claim", () => {
+    const [stance] = read("z-Azozon | th-hostility | v-walk");
+    assert.deepEqual(families(stance!), ["attitude"]);
+    assert.equal(frame(stance!, "attitude").key, "slot:th");
+    assert.equal(frame(stance!, "attitude").anchor, "feelings.md#speaker-attitude");
+    const [label] = read("z-speaker | g-angry");
+    assert.deepEqual(families(label!), []);
+  });
+
   it("polarity: a standalone /th/ join pairs by text order", () => {
     const [reading] = read("th-not | z-Azozon | v-walk | th-MAY");
     assert.deepEqual(families(reading!), ["polarity", "stance"]);
