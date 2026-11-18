@@ -63,7 +63,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | Consent of the affected person: per act, standing, or assumed | `hwudam`, `hwodam`, `hwudar` | [consent](/permission-consent#consent) |
 | A norm phrased as a description (*passengers remain seated*) | `yol yal`; a soft norm with a softer first act word | [stacked acts](/more-turn-words#stacked-acts) |
 | A norm only for now | `yor yal` | [stacked acts](/more-turn-words#stacked-acts) |
-| A one-off task for the implementer | command `yol` | [speech acts](/speech-moves#act-word-order), [firm and soft](/firm-soft#speech-act) |
+| A one-off task for the implementer | command `yol` | [speech acts](/speech-moves#act-word-order), [firm and soft](/firm-soft#firm-or-soft-act) |
 | Fact or assumption about the world, with its source | statement + channel: `thugem` measured live, `thebam` reported, `thubom` from the pattern, `theyom` inferred, `thanam` deduced | [evidentiality](/evidentiality#evidentiality), [strength](/evidentiality#evidence-strength), [deduction](/evidentiality#deduction) |
 | Whose claim it is | holder | [holder](/holder#holder) |
 | A guess to verify before building / one that may stay open | `thomal` / `thomar` | [MAY follow-ups](/knowing#follow-up-endings-may) |
@@ -77,7 +77,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | How the invariant is known (proved, tested, observed) | channel on the generalization | [usually vs must](/usually-vs-must#generalization) |
 | Trigger cases, exhaustive or not | occasions + restrictor, **-l** closed / **-m** open | [restrictors](/restrictors#only-when-never-hal), [more occasions](/more-occasions#more-occasions) |
 | Preference order, last resort | `hol`, `huol` | [ranked](/more-occasions#ranked-with-listed-occasions) |
-| State guards (*while not yet shipped*) | `helom`, `hawum`, `havem`, `huvum` | [phasal](/already-still-yet#phasal) |
+| State guards (*while not yet shipped*) | `helom`, `hawum`, `havem`, `huvum` | [phasal](/already-still-yet#stage-of-change) |
 | Ordered steps | clause sequence | [clause sequence](/clause-sequence#clause-sequence) |
 | Fallback chain | try + `xen` | [fallback](/try#fallback) |
 | How much design is left to the implementer | plan resolution: `thagor` sketch, `thagom` itinerary, `thagol` with backups | [plan](/intention#plan) |

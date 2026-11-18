@@ -289,11 +289,11 @@ Source: [dependents.md](/sentence-linkers#sentence-linkers)
 
 ## Turn words (`/y/`)
 
-Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/more-turn-words#stacked-acts), [describing a call or reaction](/more-turn-words#describe-turn-word), [questions.md](/polar-inventory#polar-endings)
+Source: [speech-moves.md](/firm-soft#firm-or-soft-act), [stacked act words](/more-turn-words#stacked-acts), [describing a call or reaction](/more-turn-words#describe-turn-word), [questions.md](/polar-inventory#polar-endings)
 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yen` / `yon` / `yun`, `yaon` / …). On `/y/`, **-n** calls someone. Parser: `turnSeriesCall`.
 - **closed (D-59):** a third opening act word (`yul yul yul`), and anything between two [stacked act words](/more-turn-words#stacked-acts) (`yel al yol`).
-- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yer` / `yor` / `yur` are the [for-now acts](/firm-soft#act-r).
+- **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yer` / `yor` / `yur` are the [for-now acts](/firm-soft#act-for-now).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
 - **open:** a check-back with a body after it (`yol yael zazozon vowurol.`). The check-back asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `checkBackBody`.
 - **closed (D-77):** MIRATIVE on the clause of a command, request or prohibition (`themem`, `themel`, `themer` after `yol` / `yom` / `yor` / `yul` / `yum`). An order is not news. Parser: `directiveMirative`.

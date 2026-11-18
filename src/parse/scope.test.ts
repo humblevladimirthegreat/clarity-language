@@ -125,7 +125,7 @@ describe("scope order (clause.md#which-covers-which)", () => {
 
   it("MAY right before a /th/ word cites the phasal rule", () => {
     const [scope] = scopeOf("z-Alazun | th-MAY | th-not-yet | v-departure");
-    assert.deepEqual(scope!.order[0]!.anchors, ["clause.md#which-covers-which", "already-still-yet.md#phasal"]);
+    assert.deepEqual(scope!.order[0]!.anchors, ["clause.md#which-covers-which", "already-still-yet.md#stage-of-change"]);
   });
 
   it("a channel and MIRATIVE commute: no order recorded", () => {

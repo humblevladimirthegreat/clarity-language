@@ -153,10 +153,10 @@ Each compares what is true now with a change, and none is a tense. `-l` is settl
 <!-- cheat-sheet: knowing-intending -->
 | Meaning | `-l` | `-m` | `-r` | Stage |
 |---------|--------|--------|--------|-------|
-| *already* | [`havel`](/already-still-yet#phasal) *for good* | `havem` | `haver` *for now* | I |
-| *still* | [`hawul`](/already-still-yet#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
-| *not yet* | [`thelol`](/already-still-yet#phasal) *but it will* | `thelom` | `thelor` *maybe never* | I |
-| *no longer* | [`huvul`](/already-still-yet#phasal) *never again* | `huvum` | `huvur` *paused* | I |
+| *already* | [`havel`](/already-still-yet#stage-of-change) *for good* | `havem` | `haver` *for now* | I |
+| *still* | [`hawul`](/already-still-yet#stage-of-change) *and will keep on* | `hawum` | `hawur` *about to end* | I |
+| *not yet* | [`thelol`](/already-still-yet#stage-of-change) *but it will* | `thelom` | `thelor` *maybe never* | I |
+| *no longer* | [`huvul`](/already-still-yet#stage-of-change) *never again* | `huvum` | `huvur` *paused* | I |
 
 For *has ever*, use `havem` with `har`; *has never* is `hal` ([ever / never](/already-still-yet#ever-never)).
 
@@ -237,7 +237,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thebam` *so they say* ([someone said it](/evidentiality#evidentiality)) | | `theyum` *imagine* ([a scene you make up](/notional#notional-as-if-framing)) |
 | `theyol` *strong clues* ([how good your evidence is](/evidentiality#evidence-strength)) | | `throgel` *third-hand* ([how many hands](/evidentiality#hand-depth)) |
 | `thubom blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagom` *I plan to* ([an intention](/intention#plan-predict)) |
-| `haram` *still in effect* ([the outcome stays](/residue-and-former#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#phasal)) |
+| `haram` *still in effect* ([the outcome stays](/residue-and-former#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#stage-of-change)) |
 | `thogem` *I've decided* ([how open the choice is, no time](/want-and-decide#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](/try#try)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
 | `thalom` *I want* ([your own wanting](/want-and-decide#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder)) |

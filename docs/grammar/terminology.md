@@ -92,7 +92,7 @@ Hosted *can* / *can’t* (`xa` / `xe` / `xo` / `xu`) and hostless **ABIL**.
 
 The written `/y/` word: `yal` / `yel` / `yol` / `yul` and soft `-m`.
 
-[Firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#firm-or-soft-act)
 
 **Compare with:** [speech act](#speech-act) is the setting (statement / question / command / prohibition). A [polar particle](#polar-particle) is not an act word.
 
@@ -130,7 +130,7 @@ Ordinary manner `/h/`.
 
 Four `/h/` words for how a change stands now, not when it happened.
 
-[Already and still](/already-still-yet#phasal)
+[Already and still](/already-still-yet#stage-of-change)
 
 ### Ambient magnitude
 
@@ -266,7 +266,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 Speech act `yol` / `yom` / `yul` / `yum`.
 
-[Firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#firm-or-soft-act)
 
 ### Comparative / superlative / equative
 
@@ -430,7 +430,7 @@ Under question, join `-r` is a blank; several `-r` = fill all.
 
 Speech-act ending `-l` vs `-m`.
 
-[Firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#firm-or-soft-act)
 
 ### Fit cue
 
@@ -562,7 +562,7 @@ Right-close list closer; **conjunct** = listed item.
 
 Mid-word `th` plus a vowel on a content root, or the vowel right after `w` on a role word: this episode (`thu`), practiced role (`tho`), this pair (`the`), type across scenes (`tha`), or a stacked vowel.
 
-[Label seams](/label-seams#label-reach)
+[Label seams](/label-seams#reach-vowels)
 
 **Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Practiced role](#practiced-role) is `o` on a role compound.
 
@@ -904,7 +904,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 Utterance setting: statement / question / command / prohibition.
 
-[Firm and soft](/firm-soft#speech-act)
+[Firm and soft](/firm-soft#firm-or-soft-act)
 
 **Compare with:** sake **prescription warrant** is [invited / unasked / tryout](#invited-unasked-tryout), not speech act. A [polar particle](#polar-particle) sits at the left edge.
 
@@ -946,7 +946,7 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 A lone `/th/` met word is thanks (*my sake is met*). *Sorry* is unmet plus a `bl-` word for whose sake was hurt.
 
-[Thanks and sorry](/thanks-and-sorry#thanks-sorry)
+[Thanks and sorry](/thanks-and-sorry#saying-thanks)
 
 ### Threshold
 

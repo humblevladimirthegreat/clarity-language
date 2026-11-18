@@ -250,7 +250,7 @@ const ABILITY_STANCE: Record<string, string> = {
   u: "unable-irreversible",
 };
 
-/** Label reach seam vowels (label-seams.md#label-reach). */
+/** Label reach seam vowels (label-seams.md#reach-vowels). */
 export const REACH_VOWEL: Record<string, string> = {
   a: "type",
   e: "pair",

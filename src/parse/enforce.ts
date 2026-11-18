@@ -106,7 +106,7 @@ export class ConstructionError extends SentenceParseError {
 
 const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
-/** Label reach goes on content slots (label-seams.md#label-reach). */
+/** Label reach goes on content slots (label-seams.md#reach-vowels). */
 const REACH_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 /** Slot-rule parts: the participant that sat in that slot (roles.md#role-compounds). */
 const SLOT_PARTS = new Set(["z", "d", "b"]);
@@ -471,7 +471,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "h" && stemRoot === CLOSED.goal && word.ending === "m") {
     throw new ConstructionError("retiredPurposeHinge", word.raw);
   }
-  // NOT YET is no `/h/` word: it waits on an expectation, which is in a mind, a `/th/` stance (already-still-yet.md#phasal).
+  // NOT YET is no `/h/` word: it waits on an expectation, which is in a mind, a `/th/` stance (already-still-yet.md#stage-of-change).
   if (word.pos === "h" && stemRoot === CLOSED.seedling && word.ending !== "n") {
     throw new ConstructionError("retiredNotYet", word.raw);
   }

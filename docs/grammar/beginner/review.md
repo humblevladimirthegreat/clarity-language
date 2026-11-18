@@ -226,7 +226,7 @@ z-sandwich | [near | b-speaker]
 
 *I'm sorry; that hurt your sense of connection.*
 
-**Rule:** [Thanks and sorry](thanks-and-sorry.md#thanks-sorry)
+**Rule:** [Thanks and sorry](thanks-and-sorry.md#saying-thanks)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -348,7 +348,7 @@ y-Ahelan | y-soft-prohibition | v-run
 
 **-m** asks softly; **`yul`** is a firm *don't*.
 
-**Rule:** [Speech act: firm and soft](firm-soft.md#speech-act)
+**Rule:** [Speech act: firm and soft](firm-soft.md#firm-or-soft-act)
 :::
 
 **11.** *Alazun fights against a guard.* `zalazun vuvuvul uol bagayul.` or `zalazun vuvuvul ual bagayul.`
@@ -384,7 +384,7 @@ z-Alazun | g-angry-th-episode
 
 **`tha`** is this episode; **`thu`** would make Alazun an angry type.
 
-**Rule:** [Label reach](label-seams.md#label-reach)
+**Rule:** [Label reach](label-seams.md#reach-vowels)
 :::
 
 **14.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyol thobather blwuzor.` or `zahelan vuguyol thobathem blwuzor.`
@@ -408,7 +408,7 @@ z-Azozon | h-still | v-walk
 
 **-m** says it goes on and could change; **`hawur`** would say it is about to end.
 
-**Rule:** [Already, still, not yet, no longer](already-still-yet.md#phasal)
+**Rule:** [Already, still, not yet, no longer](already-still-yet.md#stage-of-change)
 :::
 
 **16.** *Azozon left because Alazun spoke, and Alazun was wrong to.* `zazozon vudurul thahul blarl zalazun vezuyol.` or `zazozon vudurul thahum blarl zalazun vezuyol.`

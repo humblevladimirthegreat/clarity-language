@@ -173,6 +173,11 @@ export const hashRedirects: HashRedirect[] = [
   { page: "singability.md", hash: "rhythm-and-stress", to: "phonology.md", toHash: "rhythm-and-stress" },
   { page: "feelings.md", hash: "feeling-no-object", to: "how-you-feel.md", toHash: "feeling-no-object" },
   { page: "clause.md", hash: "intention-adverbs", to: "can-and-cant.md", toHash: "intention-adverbs" },
+  { page: "label-seams.md", hash: "label-reach", to: "label-seams.md", toHash: "reach-vowels" },
+  { page: "already-still-yet.md", hash: "phasal", to: "already-still-yet.md", toHash: "stage-of-change" },
+  { page: "firm-soft.md", hash: "speech-act", to: "firm-soft.md", toHash: "firm-or-soft-act" },
+  { page: "firm-soft.md", hash: "act-r", to: "firm-soft.md", toHash: "act-for-now" },
+  { page: "thanks-and-sorry.md", hash: "thanks-sorry", to: "thanks-and-sorry.md", toHash: "saying-thanks" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

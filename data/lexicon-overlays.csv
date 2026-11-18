@@ -192,30 +192,30 @@ ulom,h,🪵,of_relation,material,of-relation material (constitution),wood is the
 ulom,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,of-relations.md#of-relations
 aham,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,of-relations.md#of-relations
 aham,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,of-relations.md#of-relations
-avel,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
-avel,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
-avem,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,already-still-yet.md#phasal
-avem,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,already-still-yet.md#phasal
-aver,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
-aver,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,already-still-yet.md#phasal
-awul,h,⚓,phasal,still.lasting,phasal still (the state continues); -l not expected to change back,anchor holds the ship where it was,already-still-yet.md#phasal
-awul,w,⚓,phasal,still.lasting,phasal still (the state continues); -l not expected to change back,anchor holds the ship where it was,already-still-yet.md#phasal
-awum,h,⚓,phasal,still,phasal still (the state continues); -m could change,anchor holds the ship where it was,already-still-yet.md#phasal
-awum,w,⚓,phasal,still,phasal still (the state continues); -m could change,anchor holds the ship where it was,already-still-yet.md#phasal
-awur,h,⚓,phasal,still.for-now,phasal still (the state continues); -r for now: about to end,anchor holds the ship where it was,already-still-yet.md#phasal
-awur,w,⚓,phasal,still.for-now,phasal still (the state continues); -r for now: about to end,anchor holds the ship where it was,already-still-yet.md#phasal
-elol,th,🌱,phasal,not-yet.sure,NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will,seedling has not grown up yet,already-still-yet.md#phasal
-elol,w,🌱,phasal,not-yet.sure,NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will,seedling has not grown up yet,already-still-yet.md#phasal
-elom,th,🌱,phasal,not-yet,NOT-YET phasal (the change has not happened; the speaker expects it); -m expected,seedling has not grown up yet,already-still-yet.md#phasal
-elom,w,🌱,phasal,not-yet,NOT-YET phasal (the change has not happened; the speaker expects it); -m expected,seedling has not grown up yet,already-still-yet.md#phasal
-elor,th,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,already-still-yet.md#phasal
-elor,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,already-still-yet.md#phasal
-uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,already-still-yet.md#phasal
-uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,already-still-yet.md#phasal
-uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#phasal
-uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#phasal
-uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#phasal
-uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#phasal
+avel,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,already-still-yet.md#stage-of-change
+avel,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,already-still-yet.md#stage-of-change
+avem,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,already-still-yet.md#stage-of-change
+avem,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,already-still-yet.md#stage-of-change
+aver,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,already-still-yet.md#stage-of-change
+aver,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,already-still-yet.md#stage-of-change
+awul,h,⚓,phasal,still.lasting,phasal still (the state continues); -l not expected to change back,anchor holds the ship where it was,already-still-yet.md#stage-of-change
+awul,w,⚓,phasal,still.lasting,phasal still (the state continues); -l not expected to change back,anchor holds the ship where it was,already-still-yet.md#stage-of-change
+awum,h,⚓,phasal,still,phasal still (the state continues); -m could change,anchor holds the ship where it was,already-still-yet.md#stage-of-change
+awum,w,⚓,phasal,still,phasal still (the state continues); -m could change,anchor holds the ship where it was,already-still-yet.md#stage-of-change
+awur,h,⚓,phasal,still.for-now,phasal still (the state continues); -r for now: about to end,anchor holds the ship where it was,already-still-yet.md#stage-of-change
+awur,w,⚓,phasal,still.for-now,phasal still (the state continues); -r for now: about to end,anchor holds the ship where it was,already-still-yet.md#stage-of-change
+elol,th,🌱,phasal,not-yet.sure,NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will,seedling has not grown up yet,already-still-yet.md#stage-of-change
+elol,w,🌱,phasal,not-yet.sure,NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will,seedling has not grown up yet,already-still-yet.md#stage-of-change
+elom,th,🌱,phasal,not-yet,NOT-YET phasal (the change has not happened; the speaker expects it); -m expected,seedling has not grown up yet,already-still-yet.md#stage-of-change
+elom,w,🌱,phasal,not-yet,NOT-YET phasal (the change has not happened; the speaker expects it); -m expected,seedling has not grown up yet,already-still-yet.md#stage-of-change
+elor,th,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,already-still-yet.md#stage-of-change
+elor,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,already-still-yet.md#stage-of-change
+uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
+uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
+uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
+uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
+uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
+uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
 owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,try.md#try
 owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,try.md#try
 owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,try.md#try

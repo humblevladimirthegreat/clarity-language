@@ -27,17 +27,17 @@ The vowel picks the act: `a` statement, `o` command, `e` question, `u` prohibiti
 
 | Act | Firm `-l` | Soft `-m` | For now `-r` | Stage |
 |-----|-------------|-------------|----------------|-------|
-| statement | [`yal`](/speech-moves#speech-act-beginner) *(often omitted)* | [`yam`](/firm-soft#speech-act) *for what it's worth* | [`yar`](/firm-soft#act-r) *as things stand* | B |
-| question | [`yel`](/speech-moves#speech-act-beginner) | [`yem`](/firm-soft#speech-act) *I wonder* | [`yer`](/firm-soft#act-r) *just checking* | B |
-| command | [`yol`](/speech-moves#speech-act-beginner) | [`yom`](/firm-soft#speech-act) *please* | [`yor`](/firm-soft#act-r) *for now* | B |
-| prohibition | [`yul`](/speech-moves#speech-act-beginner) | [`yum`](/firm-soft#speech-act) *please don't* | [`yur`](/firm-soft#act-r) *hold off* | B |
+| statement | [`yal`](/speech-moves#speech-act-beginner) *(often omitted)* | [`yam`](/firm-soft#firm-or-soft-act) *for what it's worth* | [`yar`](/firm-soft#act-for-now) *as things stand* | B |
+| question | [`yel`](/speech-moves#speech-act-beginner) | [`yem`](/firm-soft#firm-or-soft-act) *I wonder* | [`yer`](/firm-soft#act-for-now) *just checking* | B |
+| command | [`yol`](/speech-moves#speech-act-beginner) | [`yom`](/firm-soft#firm-or-soft-act) *please* | [`yor`](/firm-soft#act-for-now) *for now* | B |
+| prohibition | [`yul`](/speech-moves#speech-act-beginner) | [`yum`](/firm-soft#firm-or-soft-act) *please don't* | [`yur`](/firm-soft#act-for-now) *hold off* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Command](/speech-moves#speech-act-beginner) | `yol vowurol.` | *Walk!* | B |
-| [Request with *let's*](/firm-soft#speech-act) | `yom vowurol zayan.` | *Let's walk.* | B |
-| [Soft prohibition with *let's not*](/firm-soft#speech-act) | `yum zayan vezuvel.` | *Let's not sleep.* | B |
-| [Provisional statement](/firm-soft#act-r) | `yar zazozon vowurol.` | *As things stand, Azozon walks.* | B |
+| [Request with *let's*](/firm-soft#firm-or-soft-act) | `yom vowurol zayan.` | *Let's walk.* | B |
+| [Soft prohibition with *let's not*](/firm-soft#firm-or-soft-act) | `yum zayan vezuvel.` | *Let's not sleep.* | B |
+| [Provisional statement](/firm-soft#act-for-now) | `yar zazozon vowurol.` | *As things stand, Azozon walks.* | B |
 | [Doubled act word](/more-turn-words#doubled-act): repeat only the opening act word | `yul yul vozuyul.` | *Don't sneak. I mean it.* | I |
 | [Insisted statement](/more-turn-words#doubled-act) | `yal yal` | *I'm telling you, …* | I |
 | [Pressing question](/more-turn-words#doubled-act) | `yel yel` | *I really need to know: …?* | I |

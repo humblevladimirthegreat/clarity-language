@@ -21,7 +21,7 @@ The letter order `a`, `o`, `e`, `u` gives two sibling **scales**: size is amount
 | [Act](/speech-moves#speech-act-beginner) | join | what you do to the discourse list | statement | command | question | prohibition | B |
 | [Hook](/hooks#including) | join | how much of A is still in the slot | *including* | *rather* | *instead* | *except* | B |
 | [Extra-noun](/hooks#extra-noun) | hook (same spelling) | landmark as the hook job | *in* | *for* | *at* | *from* | B |
-| [Reach](/label-seams#label-reach) | size | how far the label reaches | type | practiced role | this pair | this episode | I |
+| [Reach](/label-seams#reach-vowels) | size | how far the label reaches | type | practiced role | this pair | this episode | I |
 | [Ability](/can-and-cant#ability) | size | how much can-do is in | can | can't right now | can't yet | never | B |
 | [Pointer](/pronouns#role-pointers) | size | how far the pointing reaches | the other one | this sentence | latest | unsaid | B |
 | [Sake](/sakes#word-shape) | size | how much of the sake is in | met | motive | prescription | unmet | B |
@@ -106,7 +106,7 @@ The [middle vowel](/root-tails#root-tails) is a memory aid only: the grammar doe
 | [Pointer](/pronouns#role-pointers) | [the other one](/pronouns#the-other-one) (`zwuzar`) | [this sentence](/pronouns#themself) (`dwuzor`) | latest with that part (`zwuzer`) | [left unsaid](/pronouns#whoever-it-was) (`zwuzur`) | B |
 | [Conversation length](/conversation-length#conversation-length) | `SELFxan` open-ended | `SELFxon` a few minutes | `SELFxen` one slot | `SELFxun` passing | I |
 | [Sake stance](/for-a-sake) | `tha` met / serves | `tho` motive | `the` prescription | `thu` unmet / detracts | B |
-| [Label reach](/label-seams#label-reach) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
+| [Label reach](/label-seams#reach-vowels) | `tha` a type | `tho` practiced role | `the` this pair | `thu` this episode | I |
 | [Role compound](/roles#one-time-or-a-practice) | | `zwozeduyol` a teacher | | `zwuzeduyol` someone who teaches | B |
 
 <PageBreak />

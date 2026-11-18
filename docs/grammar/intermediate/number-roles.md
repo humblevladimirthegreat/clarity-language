@@ -62,7 +62,7 @@ Worked examples: `y_3` *Three!*; `yragel` *Three more!*; `yrugel` *Three short!*
 
 Endings still apply (`-m` fuzzy *about three more!*, `-n` named call, `-r` resume a prior shout’s value, with a digit).
 
-**Compare with:** statement / question / command words in the [speech-act section](/firm-soft#speech-act).
+**Compare with:** statement / question / command words in the [speech-act section](/firm-soft#firm-or-soft-act).
 
 #### Number as discourse marker (by marker) {#number-as-discourse-marker-by-marker}
 

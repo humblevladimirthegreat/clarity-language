@@ -259,7 +259,7 @@ On a list of two or more, with no `-r`, the endings and vowels read as follows. 
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#speech-act) · [Stacking two act words](/more-turn-words#stacked-acts) · [Rhetorical question](/more-turn-words#rhetorical) · [Quiz](/more-turn-words#quiz) · [Questions that sound like another act](/more-turn-words#stacked-questions) · [Conversation length](/conversation-length#conversation-length) · [Call someone](/speech-moves#vocative) · [Someone else's want](/want-and-decide#whose-intention)
+**Needs:** [Ask](/questions#question) · [Reported questions](#reported-questions) · [Stand-in vowels](/stand-in-vowels#stand-in) · [Firm and soft](/firm-soft#firm-or-soft-act) · [Stacking two act words](/more-turn-words#stacked-acts) · [Rhetorical question](/more-turn-words#rhetorical) · [Quiz](/more-turn-words#quiz) · [Questions that sound like another act](/more-turn-words#stacked-questions) · [Conversation length](/conversation-length#conversation-length) · [Call someone](/speech-moves#vocative) · [Someone else's want](/want-and-decide#whose-intention)
 
 English *ask* covers four jobs: putting a question to someone, asking for something, asking someone to do something, and reporting that a question was asked. Ageben gives each job its own shape, so pick the row by the job. English picks *ask* or *tell* for politeness, which Ageben carries on the act word, not the verb.
 
@@ -293,7 +293,7 @@ A question is the act word **`yel`**, and a request is **`yom`**. A reported que
 
 ### Offer, suggest, recommend, invite {#offer-words}
 
-**Needs:** [Firm and soft](/firm-soft#speech-act) · [Check-backs](/polar-inventory#check-backs) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/permission-consent#permission) · [Which noun](/dependents#which-noun)
+**Needs:** [Firm and soft](/firm-soft#firm-or-soft-act) · [Check-backs](/polar-inventory#check-backs) · [Prescription](/ought-for-a-sake#sake-force) · [Permission](/permission-consent#permission) · [Which noun](/dependents#which-noun)
 
 English *offer*, *suggest*, *propose*, *recommend* and *advise* all put something forward that the other person may take or leave. Ageben picks how firmly. A soft act word (`-m`) leaves the choice open. A soft request with *we* proposes a joint act, and a tag after it asks whether they take it up. A prescription **`the`** on a sake says the act ought to serve it, and its ending says whether the person invited it (`-l`) or you are offering it unasked (`-m`).
 

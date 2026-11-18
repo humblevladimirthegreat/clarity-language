@@ -68,7 +68,7 @@ Beginner put a discourse hook at the front of a plain statement. It can sit in t
 | Placement | Ageben | Use |
 |-----------|--------|-----|
 | Before a written turn marker | `HOOK yal BODY` | The written `yal` / `yel` / …, after any vocatives and interjections |
-| Before a default-statement body | `HOOK BODY` | Implied `yal` ([speech moves](/firm-soft#speech-act)) |
+| Before a default-statement body | `HOOK BODY` | Implied `yal` ([speech moves](/firm-soft#firm-or-soft-act)) |
 | Later clause under `/x/` | `… JOIN HOOK BODY` | Same as the opener |
 | Before an `/x/` linker | `HOOK LINKER BODY` | Same as prior talk |
 

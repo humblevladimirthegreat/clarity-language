@@ -64,7 +64,7 @@ After the role letter, look at both sides of the *first* `x`. A role word is not
 | [hook vowels](/hook-compounds#hook-prefixes), maybe `m` | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
 | [hook vowels](/hooked-joins#hooked-joins), maybe `m` or `r` | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
 
-Mid-word `th` is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#label-reach)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
+Mid-word `th` is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#reach-vowels)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
 
 ### One thing or two {#one-or-two}
 

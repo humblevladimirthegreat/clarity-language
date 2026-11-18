@@ -53,7 +53,7 @@ const CLOSED_ROWS = {
   check: { emoji: "✅", root: "oge" },
   // no purpose on `/h/` (dependents.md#so-that): an aim is in a mind, so the purpose hinge is `/th/`
   goal: { emoji: "🥅", root: "ova" },
-  // no NOT YET on `/h/` (already-still-yet.md#phasal): it waits on an expectation, so it is `/th/`
+  // no NOT YET on `/h/` (already-still-yet.md#stage-of-change): it waits on an expectation, so it is `/th/`
   seedling: { emoji: "🌱", root: "elo" },
   // no deontic on `/th/` (permission-consent.md#say-words): permission, a ban, and a requirement are say words on `/h/`
   green: { emoji: "🟢", root: "olo" },

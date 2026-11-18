@@ -527,7 +527,7 @@ function landmarkLateral(word: MorphWord): MorphWord | undefined {
   };
 }
 
-/** `ROOT th V` on any root outside the eight sake roots is label reach (label-seams.md#label-reach). */
+/** `ROOT th V` on any root outside the eight sake roots is label reach (label-seams.md#reach-vowels). */
 function labelReach(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake") return undefined;

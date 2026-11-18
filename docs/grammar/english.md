@@ -158,7 +158,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *overseas* (*across the water*) | **`ohom`** *across* + the water: `hohom blohalal` | [Locative relations](/locative-relations#locative-relations) |
 | *bottom* (the low part of a thing) | `zoduhol gobom blohehal` (a down part of the house) | [Of relations](/of-relations#of-relations) |
 | *parallel* (*parallel to Alazun*) | the direction, then *like*: `gurom gewem blalazun` | [Likeness](/relations#likeness) |
-| *lean* / *tilt* | `voduhol hruwul` (*almost falls*) | [Already, still, not yet](/already-still-yet#phasal) |
+| *lean* / *tilt* | `voduhol hruwul` (*almost falls*) | [Already, still, not yet](/already-still-yet#stage-of-change) |
 | *corner* / *around the corner* | `zadugul` (the corner); `el badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](/locative-relations#locative-relations) |
 | *beyond* / *on the far side of* / *the other side of* (*sits beyond the station*) | **`huzurum`** (on a noun, **`guzurum`**) + the landmark: `huzurum blawahol` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
 | *farther than* | rank on distance: `zohehal zol guzavom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
@@ -208,7 +208,7 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 |--------------|------------|-------|
 | *come* (*is coming to you*) | motion verb `vavobol` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](/here-there#deixis) |
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](/here-there#deixis) |
-| *arrive* / *reach* (*has arrived at the house*) | **`havem`** (*already*) + `vavobol` + **`oel`** + `/b/` | [Already, still, not yet](/already-still-yet#phasal) |
+| *arrive* / *reach* (*has arrived at the house*) | **`havem`** (*already*) + `vavobol` + **`oel`** + `/b/` | [Already, still, not yet](/already-still-yet#stage-of-change) |
 | *approach* / *head for* | `vavobol` + **`oel`** + `/b/` (no **`havem`**: still on the way) | [Locative relations](/locative-relations#locative-relations) |
 | *follow* someone who moves too (*walks behind Alazun*, who also walks) | same-role **`alam`** between the two walkers: `zazozon alam zalazun vowurol` | [Before and after](/same-role-words#before-and-after) |
 | *follow* the back of something that stays put (*walks behind the house*) | manner direction **`hazuhothel`** + `/b/` for the landmark | [Landmark's own front](/viewpoint#landmark-facing) |

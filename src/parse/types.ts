@@ -11,7 +11,7 @@ export type RolePart = "z" | "d" | "b" | "h" | "g" | "th" | "w" | "y" | "x" | "v
 /** Role pointer vowel: `e` same, `a` other, `o` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
 
-/** Label-reach seam: simplex or the six stacks (label-seams.md#label-reach). */
+/** Label-reach seam: simplex or the six stacks (label-seams.md#reach-vowels). */
 export type ReachVowel = "a" | "e" | "o" | "u" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
 
 /** Part-of-speech prefix letters (role stamps). */
@@ -352,7 +352,7 @@ export type VpCoord = {
     join?: LexWord;
     shared: CoordShared[];
     joinModifiers?: LexWord[];
-    /** Hosted `/b/` right after a label-reach `tho` verb (label-seams.md#label-reach). */
+    /** Hosted `/b/` right after a label-reach `tho` verb (label-seams.md#reach-vowels). */
     hostedVerbs?: { verb: LexWord; hosted: Hosted }[];
     /**
      * Words between two verbs of a joined list belong to the later verb's item (verb-and-stance-joins.md#vp-clause-forms):

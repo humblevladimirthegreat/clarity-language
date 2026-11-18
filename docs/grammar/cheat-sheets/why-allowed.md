@@ -124,19 +124,19 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`…thal`](/thanks-and-sorry#thanks-sorry) | the help lasts | *that will stay with me* | I |
-| [`…tham`](/thanks-and-sorry#thanks-sorry) | horizon unstated | *thank you* | I |
-| [`…thar`](/thanks-and-sorry#thanks-sorry) | landed right when needed | *thanks, that got me through* | I |
-| [`…thul blawan`](/thanks-and-sorry#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
-| [`…thum blawan`](/thanks-and-sorry#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
-| [`…thur blawan`](/thanks-and-sorry#thanks-sorry) | the harm is passing | *my bad* | I |
+| [`…thal`](/thanks-and-sorry#saying-thanks) | the help lasts | *that will stay with me* | I |
+| [`…tham`](/thanks-and-sorry#saying-thanks) | horizon unstated | *thank you* | I |
+| [`…thar`](/thanks-and-sorry#saying-thanks) | landed right when needed | *thanks, that got me through* | I |
+| [`…thul blawan`](/thanks-and-sorry#saying-sorry) | the harm is lasting | *I'm deeply sorry* | I |
+| [`…thum blawan`](/thanks-and-sorry#saying-sorry) | the harm can be softened | *I'm sorry* | I |
+| [`…thur blawan`](/thanks-and-sorry#saying-sorry) | the harm is passing | *my bad* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Thanks](/thanks-and-sorry#thanks-sorry) | `thawetham.` | *That meant a lot to me.* | I |
-| [Sorry](/thanks-and-sorry#thanks-sorry) | `thawethum blawan.` | *That hurt your sense of connection.* | I |
-| [Sorry, to another's sake](/thanks-and-sorry#thanks-sorry) | `thawethum blalazun.` | *owns up to a harm to Alazun* | I |
-| [Appreciated by another](/thanks-and-sorry#thanks-sorry) | `thawetham blalazun.` | *Alazun appreciated it* | I |
+| [Thanks](/thanks-and-sorry#saying-thanks) | `thawetham.` | *That meant a lot to me.* | I |
+| [Sorry](/thanks-and-sorry#saying-sorry) | `thawethum blawan.` | *That hurt your sense of connection.* | I |
+| [Sorry, to another's sake](/thanks-and-sorry#saying-sorry) | `thawethum blalazun.` | *owns up to a harm to Alazun* | I |
+| [Appreciated by another](/thanks-and-sorry#saying-sorry) | `thawetham blalazun.` | *Alazun appreciated it* | I |
 
 ### Speaker attitude {#attitude}
 
@@ -256,4 +256,4 @@ A [say word](/permission-consent#say-words) goes on `/h/`: `h`, `w`, a reach vow
 | `hwuvam` *may* ([the act is allowed](/permission-consent#permission)) | | `hwuvom` *has to* ([the act is demanded](/permission-consent#permission)) |
 | `hwuvol` *the rules require it* ([an outside demand](/permission-consent#permission)) | | `hwuzor` *I feel I have to* ([an unspoken should](/permission-consent#consent)) |
 | `thawethem` *ought to, for relatedness* ([advice for a sake](/ought-for-a-sake#sake-force)) | | `thawethom` *for relatedness* ([why it is done](/for-a-sake#sake-preference)) |
-| `thawetham` *thank you* ([my sake is met](/thanks-and-sorry#thanks-sorry)) | | `thawethum blawan` *I'm sorry* ([your sake is hurt](/thanks-and-sorry#thanks-sorry)) |
+| `thawetham` *thank you* ([my sake is met](/thanks-and-sorry#saying-thanks)) | | `thawethum blawan` *I'm sorry* ([your sake is hurt](/thanks-and-sorry#saying-thanks)) |

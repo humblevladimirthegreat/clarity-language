@@ -251,7 +251,7 @@ Your statements with no channel of their own take the frame, including a stateme
 >
 > "Alazun left, so they say. Did Alazun run? Alazun sang." (the singing is hearsay too)
 
-A command, request, or prohibition takes one channel, REPORTED: the order is someone else's, and you pass it on. A [hand count](#hand-depth) says how many hands it passed through. It does not start a frame or end yours. Every other channel has no reading on an order. To make an order gentler, use a [soft act word](/firm-soft#speech-act) instead.
+A command, request, or prohibition takes one channel, REPORTED: the order is someone else's, and you pass it on. A [hand count](#hand-depth) says how many hands it passed through. It does not start a frame or end yours. Every other channel has no reading on an order. To make an order gentler, use a [soft act word](/firm-soft#firm-or-soft-act) instead.
 
 > `yol vowurol thebam.`
 >
@@ -286,7 +286,7 @@ A channel starts or ends a frame only on the sentence's main clause. A channel i
 Four things end the frame:
 
 - A new frame: any channel replaces it.
-- The statement word, written out: `yal` (or `yam` / `yar`) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#speech-act) changes the meaning. In [two stacked act words](more-turn-words.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical `yal yel` is your own claim and ends the frame, but a quiz `yel yal` does not.
+- The statement word, written out: `yal` (or `yam` / `yar`) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](/firm-soft#firm-or-soft-act) changes the meaning. In [two stacked act words](more-turn-words.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical `yal yel` is your own claim and ends the frame, but a quiz `yel yal` does not.
 - **`xavedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - A goodbye, which ends the conversation. Whoever says it, a goodbye ends every speaker's frame, yours included.
 

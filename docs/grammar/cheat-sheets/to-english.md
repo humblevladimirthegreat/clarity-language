@@ -18,7 +18,7 @@ Ordinary roots and [dictionary compounds](/compounds#dictionary-compounds) are n
 | vowel(s) + ending, no role letter | [hook](/hooks) | `al`, `el` | B |
 | root + ending, no role letter, mid-clause | [same-role word](/same-role-words#same-role-words) | `abam` | I |
 | role letter + vowel(s) + ending, no root | [join](/joins) | `zal`, `vul` | B |
-| `y` + vowel + ending, no root | [speech act](/firm-soft#speech-act) | `yal` | B |
+| `y` + vowel + ending, no root | [speech act](/firm-soft#firm-or-soft-act) | `yal` | B |
 | role letter + vowel + `-rn` | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
 | role letter + `w` + vowel + part + vowel + ending | [role pointer](/pronouns#role-pointers) | `zwuzer` *the latest doer* | B |
 | role letter + `w` + vowel + ending | [tag](/tag-pronouns#tag-pronouns) | `zwar` *A* | I |
@@ -129,13 +129,13 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `haon` | join-relation starting with (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue-and-former-climate) | I |
 | `harum` | UNTIL clause hinge (endpoint bound) | [Because, although (hinges)](/dependents#hinges) | B |
-| `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `havem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `haver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `havel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `havem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `haver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 | `havunam` | locative opposite (facing one landmark over a gap) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
-| `hawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `hawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `hawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `hawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `hawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 | `hedam` | locative between (two landmarks) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `hegalom` | locative past (comes near one landmark and goes on) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 | `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
@@ -183,9 +183,9 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `hunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
 | `huon` | join-relation deprioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huvahum` | BY clause hinge (deadline: done at or before the endpoint) | [Because, although (hinges)](/dependents#hinges) | B |
-| `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 | `huzurum` | locative beyond (on the far side of one landmark from the speaker) | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) | I |
 <!-- /generated -->
 
@@ -216,8 +216,8 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](/evidentiality#evidence-strength) | I |
 | `thebem` | ONLY-IF clause hinge (necessary condition) | [Only if, and if and only if](/causation#only-if) | B |
 | `thehom` | IFF clause hinge (biconditional) | [Only if, and if and only if](/causation#only-if) | B |
-| `thelol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `thelom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `thelol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `thelom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 <!-- /generated -->
 
 <PageBreak />
@@ -227,7 +227,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 <!-- generated: overlays pos=th skip=22 take=22 -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `thelor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `thelor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 | `themel` | mirative mood overturning a firm expectation | [It turns out (themem)](/mirative#mirative) | I |
 | `themem` | mirative mood (newly found out and not expected) | [It turns out (themem)](/mirative#mirative) | I |
 | `themer` | mirative mood against a loose expectation | [It turns out (themem)](/mirative#mirative) | I |
@@ -302,19 +302,19 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `wanam` | deduced evidential (follows from the premises) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `wanar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `waram` | residue mood (outcome still on the current tally) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `wavel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wavem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `waver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `wavel` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `wavem` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `waver` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `wawul` | phasal still (the state continues); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `wawum` | phasal still (the state continues); -m could change | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `wawur` | phasal still (the state continues); -r for now: about to end | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 | `webal` | reported evidential with strong evidence (reliable source) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `webam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `webar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
 | `welam` | former-climate mood (not the climate claimed now) | [Mood on one adjective](/universality#mood-on-one-adjective) | A |
-| `welol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `welom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `welor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `welol` | NOT-YET phasal (the change has not happened; the speaker expects it); -l firmly expected: but it will | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `welom` | NOT-YET phasal (the change has not happened; the speaker expects it); -m expected | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `welor` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 | `wenam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `wenar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
 <!-- /generated -->
@@ -358,9 +358,9 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `wunor` | AS-OF clause hinge (unasserted whose-now / placeholder now) resume | [As-of (whose now)](/as-of#as-of) | A |
-| `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
-| `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#phasal) | B |
+| `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
+| `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](/already-still-yet#stage-of-change) | B |
 <!-- /generated -->
 
 ## Same-role words {#same-role-words}

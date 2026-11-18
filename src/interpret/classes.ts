@@ -59,7 +59,7 @@ const OTHER_ROWS: Record<string, ClassRow> = {
   "xFamily:role": { cls: "label", anchor: "roles.md#role-compounds" },
   "xFamily:pointer": { cls: "link", anchor: "pronouns.md#role-pointers" },
   "xFamily:hookPrefix": { cls: "label", anchor: "hook-compounds.md#hook-prefixes" },
-  "xFamily:scope": { cls: "label", anchor: "label-seams.md#label-reach" },
+  "xFamily:scope": { cls: "label", anchor: "label-seams.md#reach-vowels" },
   "xFamily:lateral": { cls: "label", anchor: "viewpoint.md#viewpoint-laterals" },
   "xFamily:numeric": { cls: "label", anchor: "numeric-derivation.md" },
   "xFamily:compound": { cls: "label", anchor: "compounds.md#two-roots-one-word" },

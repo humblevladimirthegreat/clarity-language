@@ -8,7 +8,7 @@ English *a teacher*, *as a teacher*, *the way it was done*, and *that knife* mix
 
 ### Reach across scenes (`e`, `a`, pairs) {#reach}
 
-English tells *someone who teaches* apart from *a teacher*, *Alazun's teacher*, and *a teacher type*. For this, a role word takes every [label reach](/label-seams#label-reach) vowel after `w`, not just `u` and `o`. They are the same vowels other labels write after mid-word `th`; on a role word they come first, and nowhere else. A `th` reach after a role word's stem (`zwuzuduyethel`) is not a word.
+English tells *someone who teaches* apart from *a teacher*, *Alazun's teacher*, and *a teacher type*. For this, a role word takes every [label reach](/label-seams#reach-vowels) vowel after `w`, not just `u` and `o`. They are the same vowels other labels write after mid-word `th`; on a role word they come first, and nowhere else. A `th` reach after a role word's stem (`zwuzuduyethel`) is not a word.
 
 | Vowel | Reach | Example | English |
 |----|-------|---------|---------|

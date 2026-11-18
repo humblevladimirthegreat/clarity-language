@@ -733,7 +733,7 @@ function spellHookPhrases(slots: readonly Slot[]): void {
   });
 }
 
-/** A label-reach seam as a row's form names it (`tha`, `thao`; label-seams.md#label-reach). */
+/** A label-reach seam as a row's form names it (`tha`, `thao`; label-seams.md#reach-vowels). */
 const SCOPE_SEAM = /^th(ao|ae|oe|ua|uo|ue|a|e|o|u)$/;
 const REACH_SECTION = /^(?:predication|label-reach|label-seams)\.md#reach-/;
 

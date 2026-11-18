@@ -159,7 +159,7 @@ English *behind the house* means the house's own back, not a compass heading and
 >
 > "Azozon walks in front of the door."
 
-This is [label reach](/label-seams#label-reach) `the` on a direction: the direction relative to that landmark. Arrow roots take no other reach vowel.
+This is [label reach](/label-seams#reach-vowels) `the` on a direction: the direction relative to that landmark. Arrow roots take no other reach vowel.
 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + `th` + `e` word always takes a `/b/` landmark.
 

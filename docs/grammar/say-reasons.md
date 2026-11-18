@@ -179,7 +179,7 @@ What makes the feeling guilt is the fault hinge on *your own* act. The feeling w
 
 Put the *act* in a `bl-` word after a fault hinge, not the person ([fault](/fault#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alazun did a wrong thing* without *Alazun is bad*.
 
-**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](/thanks-and-sorry#thanks-sorry), not a guilt feeling.
+**Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](/thanks-and-sorry#saying-sorry), not a guilt feeling.
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
@@ -230,7 +230,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/because-and-iff#only-because) · [Already, still, not yet](/already-still-yet#phasal) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/because-and-iff#only-because) · [Already, still, not yet](/already-still-yet#stage-of-change) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Ageben keeps those roots and adds a change word such as *already* or *no longer*, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyoloma` (*meaning*, speech that carries a thought).
 
@@ -271,7 +271,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](/causation#if) · [Only because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/for-a-sake#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/bars#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/for-a-sake#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#saying-thanks) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/bars#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the hinge word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -486,7 +486,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 | *what makes* (*rain is what makes …*: the cause is how it comes about, and it holds) | **`thewom thahum`** + `/b/` the cause |
 | *always X* (how often; no cue) | **`hual`** / **`huam`** |
 | *only when Y* (when the claim counts, not that Y pulls the act) | occasion + **`hal`** |
-| *I'm an X type* (kind of person) | [label reach](/label-seams#label-reach) |
+| *I'm an X type* (kind of person) | [label reach](/label-seams#reach-vowels) |
 | *used to X* (pattern, no claim about now) | **`hual`** + FORMER **`helam`** |
 | *automatically* / *by itself* (no external cue) | **`thewom blanar`** |
 | *I plan to X when Y* (a chosen if-then) | PLAN **`thagom`** + **`thohem`** |
@@ -505,7 +505,7 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 **Compare with:** *always walks* (`vowurol hual`) names no cue. *Walks only when it rains* (`vowurol herulal hal`) says when the claim counts.
 
-**For *I'm an anxious type*, use:** a [reach](/label-seams#label-reach) vowel on the label, not CAUSE.
+**For *I'm an anxious type*, use:** a [reach](/label-seams#reach-vowels) vowel on the label, not CAUSE.
 
 ### Hoping something will happen {#hope-forecast}
 
@@ -525,7 +525,7 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 ### Important, useful, helpful, benefit, satisfy, upset {#sake-words}
 
-**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [How long the feeling lasts](/feelings#feeling-duration) · [Whose stake](/feelings#feeling-whose-stake) · [Thanks and sorry](/thanks-and-sorry#thanks-sorry) · [Bars](/bars#bars)
+**Needs:** [Sake inventory](/sakes#sake-inventory) · [Met](/sakes#time-horizon-endings-on-met) · [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [How long the feeling lasts](/feelings#feeling-duration) · [Whose stake](/feelings#feeling-whose-stake) · [Thanks and sorry](/thanks-and-sorry#saying-thanks) · [Bars](/bars#bars)
 
 English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Ageben names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts.
 
@@ -538,7 +538,7 @@ On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it o
 | *meaningful* / *worthwhile* | `wurotham goyom` | purpose, met |
 | *pointless* / *futile* | `wurothum goyom` | purpose, unmet |
 | *glad to help* / *rewarding to give* | `thewatham.` | the act met your beneficence |
-| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawetham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](/thanks-and-sorry#thanks-sorry)) |
+| *grateful* / *thankful* / *appreciate* (your own thanks) | `thawetham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](/thanks-and-sorry#saying-thanks)) |
 | *benefit* / *benefits Alazun* | `thawetham blalazun` | the act met Alazun's sake |
 | *advantage* (a lead over someone) | `zol` with the scale | rank against the other |
 | *satisfy* (you) | `thawetham blawan` | the act met your sake |
@@ -645,7 +645,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Lie, ignore, mock, exploit, crime {#accusation-words}
 
-**Needs:** [Whose view (holder)](/holder#holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#label-reach) · [Enough and too](/bars#sake-bars) · [Who the urge points at](/how-you-feel#urge-landmark)
+**Needs:** [Whose view (holder)](/holder#holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#reach-vowels) · [Enough and too](/bars#sake-bars) · [Who the urge points at](/how-you-feel#urge-landmark)
 
 English *lie*, *ignore*, and *mock* each name an act and also what the other person knew or meant. *Crime* and *villain* add a verdict. The bare Ageben word names only the act, the part anyone could check. Say what the other person knew or meant through a [holder](/holder#holder), which says how you know it. Put a verdict on the act with fault, a say word, or an unmet sake, and on a person with label reach.
 
@@ -760,7 +760,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 *Stop* means the activity ends, finished or not. *Finish* means it reached its end.
 
-**Compare with:** *still* / *no longer* / *not yet* are [phasal words](/already-still-yet#phasal), not these verbs.
+**Compare with:** *still* / *no longer* / *not yet* are [phasal words](/already-still-yet#stage-of-change), not these verbs.
 
 ## Against a dated now {#dated-now}
 

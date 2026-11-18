@@ -79,7 +79,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
 
-Claritish adds to an English word in two places: [label reach](/label-seams#label-reach), English word + `-th` + reach vowel (`lied-tha`), and [ability](/can-and-cant#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Ageben spells them. Neither suffix takes an ending, because its vowel carries the meaning.
+Claritish adds to an English word in two places: [label reach](/label-seams#reach-vowels), English word + `-th` + reach vowel (`lied-tha`), and [ability](/can-and-cant#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Ageben spells them. Neither suffix takes an ending, because its vowel carries the meaning.
 
 The hyphen belongs to Claritish only. Ageben writes these mid-word on an Ageben root with no hyphen (`vulamuthul`, `vozuyexal`; the ending is the one the Ageben word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
 

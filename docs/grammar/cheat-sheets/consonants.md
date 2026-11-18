@@ -126,7 +126,7 @@ l m r n
 | **is** the same job | tag `-m` is pointer [share](/pronouns#share) (`zwuzem` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
 | **is** | hook closed / open is [join](/joins#join-type-vowel-series) closed / open | B |
 | **is** | [fill-ask](/questions#fill-ask-r) is join `-r` under a question; digitless [`grar`](/number-markers#number-endings) is join `-r` | B / I |
-| **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#speech-act) | B / I |
+| **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#firm-or-soft-act) | B / I |
 | **is** | [decision](/want-and-decide#decision-changeability) is unmet [changeability](/sakes#sake-changeability) | I |
 | **same spelling, not the same scale** | extra-noun [`-m`](/extra-noun-hooks#extra-noun-intermediate) (*amid*) is exactness; same-role [`-m`](/hooks) (*and maybe more*) is completeness | B |
 | **same spelling, not the same scale** | stand-in [`-rm`](/stand-in-vowels#stand-in) is exactness (gist); resume-sense [`-rm`](/resume-sense#resume-sense) is content (the abstract) | I |
@@ -140,7 +140,7 @@ The same letter can do a different **letter job**: where it sits in the word pic
 | [`l`](/left-bound-adjectives#left-bound-adjectives) after `/ɡ/` | `gl-` | adjective before the noun | B |
 | [`l`](/clause#extra-nouns) after `/b/` | `bl-` | completes the host right before it | B |
 | [`w`](/pronouns#role-pointers) | after the role letter | closed word: pointer, tag, role compound, say word | B–I |
-| [`th`](/label-seams#label-reach) mid-word | after the root | stance seam: [reach](/label-seams#label-reach), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
+| [`th`](/label-seams#reach-vowels) mid-word | after the root | stance seam: [reach](/label-seams#reach-vowels), [sakes](/sakes#word-shape), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | [`x`](/compounds) mid-word | between roots | two roots, one word | B |
 | [`/x/`](/speech-moves#continue-x) first | | continue / sentence glue | B |
 | [`-x`](/plurality#associative) last | after the ending | associates or a group | B |

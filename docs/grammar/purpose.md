@@ -60,7 +60,7 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 English *Alazun is angry* can mean one outburst or the kind of person Alazun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label reach](/label-seams#label-reach) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azozon*), or about a type that follows the person across scenes.
+[Label reach](/label-seams#reach-vowels) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azozon*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 
@@ -119,7 +119,7 @@ In English: [Claritish: What a feeling wants](claritish/what-a-feeling-wants.md)
 
 English *thank you* says you are grateful, but not for what.
 
-Ageben has no set phrase for [thanks](/thanks-and-sorry#thanks-sorry). You say which of your sakes was met, and whether the payoff lasts or is only for now; saying that to the person who acted is the thanks. The same word, said about a thing you own, appreciates what you already have ([personal possession](/sakes#personal-possession)).
+Ageben has no set phrase for [thanks](/thanks-and-sorry#saying-thanks). You say which of your sakes was met, and whether the payoff lasts or is only for now; saying that to the person who acted is the thanks. The same word, said about a thing you own, appreciates what you already have ([personal possession](/sakes#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 

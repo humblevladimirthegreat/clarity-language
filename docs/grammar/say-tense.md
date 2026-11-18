@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [*as-of*](/as-of#as-of)
+**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: *when* the event sits, *how you know* it, and whether it *still counts* now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 
@@ -70,7 +70,7 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 ### Present perfect: leftover, done, or ever {#present-perfect}
 
-**Needs:** [RESIDUE](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal)
+**Needs:** [RESIDUE](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change)
 
 English *has left* mixes three ideas: the outcome still counts now, the change has already come, or it happened at some point. Use RESIDUE for the first, *already* for the second, and *already* with *at some point* for the third. Each one says only the idea you choose.
 
@@ -116,7 +116,7 @@ English *had left* means the leaving counted *as of* an earlier moment. Write th
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [In progress](/predication#in-progress) · [Live vs memory](/knowing#live-vs-memory) · [Already, still, not yet](/already-still-yet#phasal)
+**Needs:** [In progress](/predication#in-progress) · [Live vs memory](/knowing#live-vs-memory) · [Already, still, not yet](/already-still-yet#stage-of-change)
 
 English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugem`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 
@@ -180,7 +180,7 @@ English *will* makes three different claims: you mean to, the world will, or you
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#phasal) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
+**Needs:** [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly use the same channels and offsets as tense, so you need few new words for them. Each row says which one.
 
@@ -253,7 +253,7 @@ English *can* and *may* each carry several meanings. Ageben has a separate form 
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwuval`** / **`hwuvam`** / **`hwuvar`** |
 | *may not* | forbidden | **`hwuvul`** / **`hwuvum`** / **`hwuvur`** |
 | *Can I …?* | asking permission | `yem` + **`hwuvam`** |
-| *Could you …?* (polite) | a request | **`yom`** ([speech act](/firm-soft#speech-act)) |
+| *Could you …?* (polite) | a request | **`yom`** ([speech act](/firm-soft#firm-or-soft-act)) |
 
 > `zazozon vozuyexal.`
 >
@@ -314,7 +314,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 ### Must, have to, should {#must-should}
 
-**Needs:** [Requirement](/permission-consent#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/for-a-sake#sake-preference) · [Permission](/permission-consent#permission) · [Speech act](/firm-soft#speech-act) · [Stance as-of](/as-of#stance-as-of)
+**Needs:** [Requirement](/permission-consent#requirement) · [Prescription](/ought-for-a-sake#sake-force) · [Motive](/for-a-sake#sake-preference) · [Permission](/permission-consent#permission) · [Speech act](/firm-soft#firm-or-soft-act) · [Stance as-of](/as-of#stance-as-of)
 
 English *must* and *should* differ in what stands behind the demand. Ageben names that source: a rule, a person, custom, your own command, or a sake the act serves. Pick the row by the source, and the listener hears who or what makes the demand.
 
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#speech-act) · [Whose view](/holder#holder)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#firm-or-soft-act) · [Whose view](/holder#holder)
 
 English *want*, *plan*, *decide*, *try* and *let's* say what someone means to do. Ageben says most of them with WANT, PLAN or DECISION, and the ending adds a shade, such as lasting or passing. Which one you pick says whether you only want it, have a plan, or have decided.
 

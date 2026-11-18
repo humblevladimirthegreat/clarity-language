@@ -54,7 +54,7 @@ These roots work the same way:
 
 ### A feeling word {#feeling-word}
 
-A label does not say what you need or what the feeling makes you want to do. A **feeling word** says both. Take a [sake word](sakes.md#word-shape), which already says which need is involved and whether it is met, and add two things to its end: one vowel for the **urge**, what the feeling pulls you to do, and a last `-m`. Alone on `/th/` it is a whole sentence about you, as a lone met word is in [thanks](thanks-and-sorry.md#thanks-sorry). (cue: a feeling word = a sake word + what it makes you want to do)
+A label does not say what you need or what the feeling makes you want to do. A **feeling word** says both. Take a [sake word](sakes.md#word-shape), which already says which need is involved and whether it is met, and add two things to its end: one vowel for the **urge**, what the feeling pulls you to do, and a last `-m`. Alone on `/th/` it is a whole sentence about you, as a lone met word is in [thanks](thanks-and-sorry.md#saying-thanks). (cue: a feeling word = a sake word + what it makes you want to do)
 
 > `thudathumum.`
 >
@@ -122,7 +122,7 @@ Three of the urges move you relative to someone or something: `e` at them, `o` f
 
 With no `bl-` word, the urge points at someone unnamed: `thunathumem.` is *my say was taken, and I want to take it up with someone*.
 
-**Compare with:** on a plain sake word, a `bl-` word names whose sake it is, so `thawetham blalazun.` says the act met Alazun's sake ([thanks and sorry](thanks-and-sorry.md#thanks-sorry)). After `e`, `o`, or `u` the sake is yours and the `bl-` word is the landmark: `thawethamem blalazun.` is *I feel connected, and I want to thank Alazun*.
+**Compare with:** on a plain sake word, a `bl-` word names whose sake it is, so `thawetham blalazun.` says the act met Alazun's sake ([thanks and sorry](thanks-and-sorry.md#saying-sorry)). After `e`, `o`, or `u` the sake is yours and the `bl-` word is the landmark: `thawethamem blalazun.` is *I feel connected, and I want to thank Alazun*.
 
 ### A feeling about a thing {#feeling-about-a-thing}
 

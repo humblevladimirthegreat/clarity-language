@@ -82,9 +82,9 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "overlay:cause:th": { family: "hinge", reach: "clause", anchor: "cause.md#cause" },
   "overlay:cause:w": { family: "hinge", reach: "adjective", anchor: "cause.md#cause" },
   "overlay:stimulus:g": { family: "sake", reach: "noun", anchor: "sakes.md#personal-possession" },
-  "overlay:phasal:h": { family: "phase", reach: "clause", anchor: "already-still-yet.md#phasal" },
-  "overlay:phasal:w": { family: "phase", reach: "adjective", anchor: "already-still-yet.md#phasal" },
-  "overlay:phasal:th": { family: "phase", reach: "clause", anchor: "already-still-yet.md#phasal" },
+  "overlay:phasal:h": { family: "phase", reach: "clause", anchor: "already-still-yet.md#stage-of-change" },
+  "overlay:phasal:w": { family: "phase", reach: "adjective", anchor: "already-still-yet.md#stage-of-change" },
+  "overlay:phasal:th": { family: "phase", reach: "clause", anchor: "already-still-yet.md#stage-of-change" },
   "overlay:attempt:h": { family: "intention", reach: "clause", anchor: "try.md#try" },
   "overlay:want:th": { family: "intention", reach: "clause", anchor: "want-and-decide.md#want" },
   "joinSeries:u": { family: "polarity", reach: "list", anchor: "joins.md#negation-u" },
@@ -146,7 +146,7 @@ export type ClauseScope = {
 };
 
 const TEXT_ORDER = "clause.md#which-covers-which";
-const MAY_BEFORE = "already-still-yet.md#phasal";
+const MAY_BEFORE = "already-still-yet.md#stage-of-change";
 const HOLDER = "holder.md#holder";
 
 /** One case of a pair row: `over` names the family that covers, `textOrder` the earlier over the later. */
@@ -393,7 +393,7 @@ function caseMatches(when: PairCase["when"], a: ScopeFrame, b: ScopeFrame): bool
   );
 }
 
-/** MAY right before the `/th/` word it covers (already-still-yet.md#phasal). */
+/** MAY right before the `/th/` word it covers (already-still-yet.md#stage-of-change). */
 function mayRightBefore(earlier: ScopeFrame, later: ScopeFrame): boolean {
   return earlier.member === "may" && later.word.pos === "th" && later.word.at === (earlier.word.at ?? -2) + 1;
 }

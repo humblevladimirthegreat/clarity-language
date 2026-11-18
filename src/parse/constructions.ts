@@ -29,7 +29,7 @@ export type ConstructionEntry = { anchor: string; summary: string; reader?: stri
 const BAR_READER =
   "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
 
-/** Shared by every label-reach seam vowel (label-seams.md#label-reach). */
+/** Shared by every label-reach seam vowel (label-seams.md#reach-vowels). */
 const REACH_WORDS =
   "`episode` this time only, `role` as their practiced role, `pair` true in one relationship (with the `b-` party), `type` the kind of person they are, `situation` the label belongs to the circumstances, not the person (a `b-` word after it is that situation; no cause is claimed), `using` playing the role for a purpose, `toward-role` becoming one (not wanting to be), `except-episode` / `except-pair` that type except this time / with that party, `outside-role` as themselves, not in that role (never a refusal of the role)";
 
@@ -282,7 +282,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     reader:
       "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a holder, or a `b-` right after it, says whose (after a feeling whose urge moves you, that `b-` is instead what the urge is about). `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-unasked` not asked for, `-invited` asked for, `-tryout` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-STAYING-FLEETING`, `-AIMED-OPEN`) it is the speaker's feeling about it, said piece by piece: the sake part says what happened to the payoff, the urge says which way the feeling pulls (STAYING stay with it, AIMED act on someone, TOWARD turn to someone, GIVING do something for someone, RESISTING push back, AWAY get away, RELEASING let go, PLACATING keep the peace, HELD frozen or holding it in, UNPLACED no clear pull), and the last part how long the feeling lasts (SETTLED it has set in, OPEN unsaid, FLEETING a passing wave). An English emotion word may sum it up (`th-competence-met-any-term-TOWARD-OPEN` = proud, and I want to show someone), but keep the pull it names. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
   },
-  scope: { anchor: "label-seams.md#label-reach", summary: "label reach" },
+  scope: { anchor: "label-seams.md#reach-vowels", summary: "label reach" },
   hookPrefix: {
     anchor: "hook-compounds.md#hook-prefixes",
     summary: "hook prefix",
@@ -489,12 +489,12 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
 
 type Vowel = "a" | "e" | "o" | "u";
 
-/** Label reach: each seam vowel (label-seams.md#label-reach). */
+/** Label reach: each seam vowel (label-seams.md#reach-vowels). */
 const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
-  "vowel.a": { anchor: "label-seams.md#label-reach", summary: "type across scenes tha", reader: REACH_READER },
-  "vowel.e": { anchor: "label-seams.md#label-reach", summary: "this pair the", reader: REACH_READER },
-  "vowel.o": { anchor: "label-seams.md#label-reach", summary: "practiced role tho", reader: REACH_READER },
-  "vowel.u": { anchor: "label-seams.md#label-reach", summary: "this episode thu", reader: REACH_READER },
+  "vowel.a": { anchor: "label-seams.md#reach-vowels", summary: "type across scenes tha", reader: REACH_READER },
+  "vowel.e": { anchor: "label-seams.md#reach-vowels", summary: "this pair the", reader: REACH_READER },
+  "vowel.o": { anchor: "label-seams.md#reach-vowels", summary: "practiced role tho", reader: REACH_READER },
+  "vowel.u": { anchor: "label-seams.md#reach-vowels", summary: "this episode thu", reader: REACH_READER },
   "vowel.ae": { anchor: "label-seams.md#reach-stacks", summary: "the situation thae", reader: REACH_READER },
   "vowel.ao": { anchor: "label-seams.md#reach-stacks", summary: "using the role thao", reader: REACH_READER },
   "vowel.oe": { anchor: "label-seams.md#reach-stacks", summary: "toward the role thoe", reader: REACH_READER },
@@ -840,8 +840,8 @@ export const REJECTIONS = {
   sakeEnding: { anchor: "sakes.md#word-shape", summary: "a sake word ends in -l / -m / -r (its stance's ending table), with or without an emotion tail" },
   sakeStackedVowel: { anchor: "sakes.md#word-shape", summary: "a sake stance is one vowel; stacked vowels after th are the emotion urge after the horizon letter" },
   prescriptionSlot: { anchor: "ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription (the) goes on /th/ only: it is about an act, not a noun" },
-  labelReachSlot: { anchor: "label-seams.md#label-reach", summary: "label reach goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
-  labelReachStem: { anchor: "label-seams.md#label-reach", summary: "a reach seam labels a content root, not a special pronoun" },
+  labelReachSlot: { anchor: "label-seams.md#reach-vowels", summary: "label reach goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
+  labelReachStem: { anchor: "label-seams.md#reach-vowels", summary: "a reach seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or under /h/ with a slot part (acting as); not on /v/, /w/, or /th/, and not a content part on /h/" },
   hookPrefixSlot: { anchor: "hook-compounds.md#hook-prefixes", summary: "a hook prefix goes on /ɡ/, /z/, /d/, /b/, or /h/; not on /v/, /w/, /th/, /x/, or /y/" },
   hookedJoinSlot: { anchor: "hooked-joins.md#hooked-joins", summary: "a hooked join goes on /z/, /d/, /b/, or /h/; not on /ɡ/, /v/, /w/, /th/, /x/, or /y/, and never as a hosted bl- word" },
@@ -958,7 +958,7 @@ export const REJECTIONS = {
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagom`, `thogem`), someone else's through a holder" },
   channelOffsetSign: { anchor: "dated-channel.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredDespiteHinge: { anchor: "dependents.md#hinges", summary: "`hezem` (whereas) takes no `bl-` noun: despite weighs a thing against an expectation, which is in a mind, so it is `thezem` + a `bl-` noun" },
-  retiredNotYet: { anchor: "already-still-yet.md#phasal", summary: "/h/ on the seedling root is not NOT YET: it waits on an expectation, which is in a mind, so NOT YET is a /th/ stance (`thelom`); someone else's expectation goes through a holder" },
+  retiredNotYet: { anchor: "already-still-yet.md#stage-of-change", summary: "/h/ on the seedling root is not NOT YET: it waits on an expectation, which is in a mind, so NOT YET is a /th/ stance (`thelom`); someone else's expectation goes through a holder" },
   retiredPurposeHinge: { anchor: "dependents.md#so-that", summary: "/h/ on the goal root is not the purpose hinge: an aim is in a mind, so so-that is `thovam`, the speaker's aim; someone else's aim goes through a holder" },
   retiredChannelRoot: { anchor: "evidentiality.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
   retiredDeonticRoot: { anchor: "permission-consent.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwuvam`, `hwuvul`, `hwuvom`)" },

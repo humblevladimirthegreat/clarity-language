@@ -699,7 +699,7 @@ function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
       readUnit(unit, here, clause);
       if (unit.kind === "np") here.reading.links.push(link("verbShared", "reading:verbSharedNoun", []));
     }
-    // A label-reach verb's hosted `/b/` (label-seams.md#label-reach) nests on that verb's term: one place for the verb.
+    // A label-reach verb's hosted `/b/` (label-seams.md#reach-vowels) nests on that verb's term: one place for the verb.
     const labels = new Map<LexWord, Detail>();
     for (const hv of part.hostedVerbs ?? []) {
       const hosted = hostedTerm(hv.hosted, here, clause);

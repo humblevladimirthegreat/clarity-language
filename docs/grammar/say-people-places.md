@@ -614,7 +614,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 
 ### Contribution, acquisition, murder, comparison and other act nouns {#act-nouns}
 
-**Needs:** [The event itself](/roles#the-event-itself) · [Role compounds](/roles#role-compounds) · [Someone's act](#someones-act) · [Fault](/fault#fault) · [Label reach](/label-seams#label-reach) · [Proxy](/relations#proxy) · [Exchange](/relations#exchange)
+**Needs:** [The event itself](/roles#the-event-itself) · [Role compounds](/roles#role-compounds) · [Someone's act](#someones-act) · [Fault](/fault#fault) · [Label reach](/label-seams#reach-vowels) · [Proxy](/relations#proxy) · [Exchange](/relations#exchange)
 
 English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Ageben has no separate noun for them. Put the verb stem on a thing letter with no `w` and part to name the act itself, write `d` as the part to name the thing the act happens to, or say the act as a sentence and resume it with `-r`. A wrongness or a pattern is the hinge or label on the act, not a different noun.
 

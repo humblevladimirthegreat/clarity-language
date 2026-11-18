@@ -124,7 +124,7 @@ A say word takes no `-x`: a group's say comes from a group in the clause.
 
 ### How far the say reaches {#say-reach}
 
-The reach vowel is [label reach](/label-seams#label-reach), the same vowels as after `th` on a label:
+The reach vowel is [label reach](/label-seams#reach-vowels), the same vowels as after `th` on a label:
 
 - `u`: this act. `hwudam` is a yes to this act, which is why consent is asked for each time.
 - `o`: standing. `hwodam` is standing consent (*they're generally fine with this*), `hwovam` standing permission (*you may, any time*), `hwovom` a standing duty, and `hwozom` a discipline. Standing is not binding: `hwodam` can still be taken back, and only `-l` binds.
