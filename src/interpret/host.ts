@@ -172,7 +172,7 @@ export type PassThroughRow = {
   why: string;
 };
 
-/** A number on a noun: the number word read as its adjective (number-roles.md#number-as-roles). */
+/** A number on a noun: the number word read as its adjective (number-roles.md#number-as-verb-by-marker). */
 const isNumber = (d: Detail): boolean => d.key.startsWith("lexReading:number") || d.hosted?.kind === "number";
 
 /**
@@ -211,7 +211,7 @@ export const PASS_THROUGH: readonly PassThroughRow[] = [
   },
   {
     family: "attitude",
-    anchors: ["tone-marks.md#tone-marks", "feelings.md#speaker-attitude", "speech-manner.md#speech-manner"],
+    anchors: ["tone-marks.md#showing-your-tone", "feelings.md#speaker-attitude", "speech-manner.md#speech-manner"],
     why: "A tone mark changes only your voice and never the speech act; a speaker attitude or speech manner is always the speaker's own, never part of the act.",
   },
   {

@@ -907,7 +907,7 @@ Saying both pulls keeps one from hiding the other.
 **Needs:** [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [A feeling about what may happen](/how-you-feel#predicted-feeling) · [How long the feeling lasts](/feelings#feeling-duration) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [evidence strength](/evidentiality#evidence-strength) · [RESIDUE](/residue-and-former#residue) · [NOTIONAL](/notional#notional)
 
 
-A feeling word is how you feel *now*. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/dated-channel#dated-channel): the offset dates the stimulus, and the channel says how you know it. When the cost or payoff has not happened yet, put MAY, `thomam`, before the feeling word, so the sake word says what the stimulus *may* cost.
+A feeling word is how you feel *now*. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyom`**, as for any [forecast](/evidentiality#forecast) or [dated claim](/dated-channel#counting-from-now): the offset dates the stimulus, and the channel says how you know it. When the cost or payoff has not happened yet, put MAY, `thomam`, before the feeling word, so the sake word says what the stimulus *may* cost.
 
 > `zezuyol thomam wuwathurur goyom thebal blral.`
 >

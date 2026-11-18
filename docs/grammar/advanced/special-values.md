@@ -72,7 +72,7 @@ Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drowul` = start-place
 | `-n` | Named designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
 | `-r` | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that arbitrarily small amount again*; `g=-e-` = *that same hair-short amount again*) |
 
-These hair amounts also date an event: with no unit, they fill the [signed time offset](/dated-channel#dated-channel) right after a channel word. For *just* and *about to*, **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
+These hair amounts also date an event: with no unit, they fill the [signed time offset](/dated-channel#counting-from-now) right after a channel word. For *just* and *about to*, **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
 
 > `zazozon thevum blruwul vowurol.`
 >

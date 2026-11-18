@@ -487,7 +487,7 @@ Some derived units have an optional root of their own; the quantity they measure
 ### *Until tomorrow*, *by tomorrow* {#hinge-from-now}
 <a id="until-tomorrow"></a>
 
-**Needs:** [Time hinges](/dependents#dependent-clauses) · [Signed count from now](/dated-channel#dated-channel) · [Dated channel](/dated-channel#dated-channel)
+**Needs:** [Time hinges](/dependents#dependent-clauses) · [Signed count from now](/dated-channel#counting-from-now) · [Dated channel](/dated-channel#counting-from-now)
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time hinge takes the count itself: a signed measure in its `/b/` runs from now.
 

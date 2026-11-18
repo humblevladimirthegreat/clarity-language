@@ -24,7 +24,7 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 
 When you say several sentences in a row, the listener needs to hear where each one ends and whether the next is still the same statement, question, or command. A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat.
 
-The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts. After a rest, a new `/y/` turn word (*yes*, *no*, a call, or an act word) starts a new act, a bare body is a statement whatever came before it, and only a sentence linker keeps the prior act. With no rest, as after an `/x/` continue, the same sentence goes on.
+The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#showing-your-tone) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts. After a rest, a new `/y/` turn word (*yes*, *no*, a call, or an act word) starts a new act, a bare body is a statement whatever came before it, and only a sentence linker keeps the prior act. With no rest, as after an `/x/` continue, the same sentence goes on.
 
 A call, a *yes* / *no*, or an interjection closed by a period is a whole move and reaches only its own turn. The next body is its own statement: it is not said to that person because of the call, and the *yes* / *no* or interjection does not reach it either. Whether you are still talking to that person is up to the conversation.
 

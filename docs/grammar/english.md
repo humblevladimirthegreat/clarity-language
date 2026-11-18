@@ -23,7 +23,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | place (*by the station*) | hook **`em`** (*near*) + `/b/` (or **`el`** *at*) | [Hooks](/hooks#extra-noun) |
 | passing (*walks by the station*) | **`hegalom`** (*past*) + the landmark | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
 | deadline (*by 15:30*, *by the storm*) | **`huvahum`** + `/b/` (or **`huvahum blarl`** + sentence) | [By a deadline](/dependents#by-deadline) |
-| deadline a day away (*by tomorrow*) | **`huvahum`** + a signed count in `/b/` | [Count from now](/dated-channel#dated-channel) |
+| deadline a day away (*by tomorrow*) | **`huvahum`** + a signed count in `/b/` | [Count from now](/dated-channel#counting-from-now) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](/clause#adverbs-h) |
 | origin (*Alazun from the city*) | **`haham` / `gaham`** + `/b/` | [Of relations](/of-relations#of-relations) |
 

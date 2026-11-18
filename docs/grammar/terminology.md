@@ -660,7 +660,7 @@ Number ending `-n`: the number as a name or title (*the Second*, an official lab
 
 Number word under `/v/` `/h/` `/th/` `/y/` `/x/`.
 
-[A number in other roles](/number-roles#number-as-roles)
+[A number in other roles](/number-roles#number-as-verb-by-marker)
 
 ### Numbered alternatives
 
@@ -714,7 +714,7 @@ Special reading of a published root under a PoS.
 
 [Lexicon](lexicon.md)
 
-**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [A number in other roles](/number-roles#number-as-roles), not an overlay. Lexicon abstract `-m` stays abstract.
+**Compare with:** a number under `/v/` `/h/` `/th/` `/y/` `/x/` is [A number in other roles](/number-roles#number-as-verb-by-marker), not an overlay. Lexicon abstract `-m` stays abstract.
 
 ### Placement
 

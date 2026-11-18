@@ -46,7 +46,7 @@ const OTHER_ROWS: Record<string, ClassRow> = {
   "lexReading:standInBack": { cls: "link", anchor: "stand-in-vowels.md#stand-in-back" },
   "lexReading:listVerb": { cls: "structure", anchor: "list-verbs.md#list-verbs" },
   "lexReading:joinRelation": { cls: "detail:relation", anchor: "join-relations.md#join-relations" },
-  "lexReading:number": { cls: "structure", anchor: "number-roles.md#number-as-roles" },
+  "lexReading:number": { cls: "structure", anchor: "number-roles.md#number-as-verb-by-marker" },
   "wordFamily:content": { cls: "structure", anchor: "phonology.md#word-edges" },
   "wordFamily:number": { cls: "structure", anchor: "numbers.md#counts" },
   "wordFamily:x": { cls: "structure", anchor: "compounds.md#two-roots-one-word" },

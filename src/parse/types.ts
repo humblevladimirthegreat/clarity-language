@@ -550,13 +550,13 @@ export type PairingRecord = {
 };
 
 /**
- * What a tone mark colors (tone-marks.md#tone-marks): a word, a span, a scope island, or, for a free-standing mark, the
+ * What a tone mark colors (tone-marks.md#showing-your-tone): a word, a span, a scope island, or, for a free-standing mark, the
  * words after it up to the period or the next free-standing mark.
  */
 export type ToneScope = "word" | "span" | "island" | "rest";
 
 /**
- * One tone mark, kept when `enforceTones` takes the marks out of the token stream (tone-marks.md#tone-marks). A tone
+ * One tone mark, kept when `enforceTones` takes the marks out of the token stream (tone-marks.md#showing-your-tone). A tone
  * is voice only: no `LexWord` carries it, so `words` are the words it colors, never its own.
  */
 export type ToneRecord = {
@@ -569,7 +569,7 @@ export type ToneRecord = {
   at: number;
   /**
    * The words it colors: the word or span; the island's words; for a free-standing mark, the words after it up to the
-   * period or the next free-standing mark (tone-marks.md#tone-marks).
+   * period or the next free-standing mark (tone-marks.md#showing-your-tone).
    */
   words: LexWord[];
   /**
@@ -614,7 +614,7 @@ export type CarriedFrame = {
   /** Where it was set: utterance and body index into the ParseResult. */
   utteranceIndex: number;
   bodyIndex: number;
-  /** A dated channel's signed offset, the `/b/` after the channel and its amount (dated-channel.md#dated-channel). */
+  /** A dated channel's signed offset, the `/b/` after the channel and its amount (dated-channel.md#counting-from-now). */
   offset?: { bound: LexWord; amount?: LexWord };
 };
 

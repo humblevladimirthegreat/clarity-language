@@ -85,7 +85,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "residue-and-former.md", hash: "intermediate", to: "residue-and-former.md" },
   { page: "feelings.md", hash: "intermediate", to: "feelings.md" },
   { page: "numeric-derivation.md", hash: "advanced", to: "numeric-derivation.md" },
-  { page: "more-turn-words.md", hash: "tone-marks", to: "tone-marks.md" },
+  { page: "more-turn-words.md", hash: "tone-marks", to: "tone-marks.md", toHash: "showing-your-tone" },
   { page: "more-turn-words.md", hash: "speech-acts-and-tone-marks", to: "more-turn-words.md" },
   { page: "rank-joins.md", hash: "universals-domains-generics", to: "universals-domains.md" },
   { page: "rank-joins.md", hash: "not-every", to: "universals-domains.md" },
@@ -179,6 +179,9 @@ export const hashRedirects: HashRedirect[] = [
   { page: "firm-soft.md", hash: "act-r", to: "firm-soft.md", toHash: "act-for-now" },
   { page: "thanks-and-sorry.md", hash: "thanks-sorry", to: "thanks-and-sorry.md", toHash: "saying-thanks" },
   { page: "holder.md", hash: "holder", to: "holder.md", toHash: "naming-a-holder" },
+  { page: "tone-marks.md", hash: "tone-marks", to: "tone-marks.md", toHash: "showing-your-tone" },
+  { page: "number-roles.md", hash: "number-as-roles", to: "number-roles.md", toHash: "number-as-verb-by-marker" },
+  { page: "dated-channel.md", hash: "dated-channel", to: "dated-channel.md", toHash: "counting-from-now" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

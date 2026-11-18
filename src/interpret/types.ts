@@ -90,7 +90,7 @@ export type Frame = {
   hosted?: Term;
   /**
    * Frames held inside this one: the stance or intention a contrary zone holds (contrary-to.md#contrary-to-stance), or
-   * a tone mark on the frame's own word (tone-marks.md#tone-marks: "A mark may go on any word, including act words").
+   * a tone mark on the frame's own word (tone-marks.md#showing-your-tone: "A mark may go on any word, including act words").
    */
   inner?: Frame[];
   /** Words that describe the frame's own word: a call's or a reaction's `gl-`, `/w/` and `/ɡ/` words (speech-moves.md#vocative, more-turn-words.md#describe-turn-word). */
@@ -121,7 +121,7 @@ export type Detail = {
 
 /**
  * A term's `frames` reach only its word: an adjective-reach stance (rule 2), or a tone mark on the word or span
- * (tone-marks.md#tone-marks).
+ * (tone-marks.md#showing-your-tone).
  */
 export type Term =
   | { kind: "thing"; head: LexWord; root: string; named: boolean; details: Detail[]; frames?: Frame[] }

@@ -125,7 +125,7 @@ describe("reader sweep over the doc examples", () => {
         const kinds = new Set<string>();
         for (const link of reading.links) {
           if (link.kind !== "carriedFrame") continue;
-          const kind = link.anchor === "dated-channel.md#dated-channel" ? "dated" : link.key.replace(/^carry:/, "");
+          const kind = link.anchor === "dated-channel.md#counting-from-now" ? "dated" : link.key.replace(/^carry:/, "");
           const row = carried.get(kind) ?? { links: 0, sentences: 0, samples: [] };
           row.links++;
           if (!kinds.has(kind)) {

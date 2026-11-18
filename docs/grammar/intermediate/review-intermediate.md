@@ -349,7 +349,7 @@ After the `/b/` of a host, a plain adjective describes that extra noun; right af
 
 `!` marks strong feeling about the sentence; **`yol`** would command Alazun to see it.
 
-**Rule:** [Tone marks](tone-marks.md#tone-marks)
+**Rule:** [Tone marks](tone-marks.md#showing-your-tone)
 :::
 
 **4.** *Alazun and Ahelan each cook three cookies.* `zalazun zahelan zal dugedelx gragel vuguyol.` or `zalazun zahelan zal dugedelx gragel vuguyolx.`
@@ -795,7 +795,7 @@ z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 
 The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
 
-**Rule:** [Dated channel (signed offset)](dated-channel.md#dated-channel)
+**Rule:** [Dated channel (signed offset)](dated-channel.md#counting-from-now)
 :::
 
 #### What changes {#intermediate-what-changes}

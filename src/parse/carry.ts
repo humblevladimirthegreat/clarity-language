@@ -10,7 +10,7 @@
  * - Starts: a whole-clause channel, NOTIONAL or holder seam on a statement's main clause, never one in a dependent or on
  *   one clause-join member, which neither starts nor ends a frame (evidentiality.md#carry-forward,
  *   notional.md#notional-as-if-framing, holder.md#naming-a-holder). A holder seam carries with the channel or NOTIONAL it sits on.
- *   A dated channel keeps its offset (dated-channel.md#dated-channel).
+ *   A dated channel keeps its offset (dated-channel.md#counting-from-now).
  * - Takes it: a statement with no such frame of its own, including one after a call, a reaction or an answer word, one
  *   with a linker or a topic word, and one with MAY or MIRATIVE (evidentiality.md#carry-forward, mirative.md#mirative).
  * - Neither takes nor ends: a question, a command, a request (the act word that is the real act, more-turn-words.md#stacked-acts);

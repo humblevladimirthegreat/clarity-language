@@ -642,7 +642,7 @@ function isPlan(word: LexWord): boolean {
   return word.pos === "th" && word.overlay?.kind === "plan";
 }
 
-/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (dated-channel.md#dated-channel). */
+/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (dated-channel.md#counting-from-now). */
 function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   const sign = offsetSign(hosted?.bound, hosted?.amount);
   if (!sign || word.pos !== "th" || !word.overlay) return;
@@ -1087,7 +1087,7 @@ function enforceDirectiveRemarks(result: ParseResult): void {
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
-    // A command, request or prohibition may name a time without a channel (dated-channel.md#dated-channel).
+    // A command, request or prohibition may name a time without a channel (dated-channel.md#counting-from-now).
     const directive = DIRECTIVE_ACT.test(actWord(left)?.raw ?? "");
     for (const body of bodies) {
       // A linker joins the sentence before it to the one it starts, so a clause follows it (sentence-linkers.md#sentence-linkers).

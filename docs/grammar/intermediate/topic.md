@@ -156,7 +156,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 |-----|--------|
 | The discourse topic | `/x/` |
 | Setting the scene for one sentence | `hehugom` *as for* |
-| Contrasting one phrase | `&` ([tone marks](tone-marks.md#tone-marks)) |
+| Contrasting one phrase | `&` ([tone marks](tone-marks.md#emphasis-and-clefts)) |
 | Ranking among others | `zal` / `zom` / `zol` |
 
 ### Practice {#intermediate-practice}

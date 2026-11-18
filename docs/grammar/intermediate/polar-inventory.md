@@ -96,7 +96,7 @@ After [two stacked act words](more-turn-words.md#stacked-acts), answer the first
 >
 > "Please walk." "Not right now."
 
-For a stronger stance, use the [tone mark](tone-marks.md#tone-marks) `!!`, not a different word. `!!yael` is *Absolutely!* / *Yes, please!*, and `!!yuel` is *Hell no!*
+For a stronger stance, use the [tone mark](tone-marks.md#showing-your-tone) `!!`, not a different word. `!!yael` is *Absolutely!* / *Yes, please!*, and `!!yuel` is *Hell no!*
 
 > `!!yael.`
 >

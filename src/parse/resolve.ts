@@ -1193,7 +1193,7 @@ function fillAnswers(
  * frames (`tables` names a holder's host stance).
  */
 /**
- * `tones`: the marks `enforceTones` took out of the token stream (tone-marks.md#tone-marks). `speakers`: who says each
+ * `tones`: the marks `enforceTones` took out of the token stream (tone-marks.md#showing-your-tone). `speakers`: who says each
  * sentence (`ParseOptions.speakers`).
  */
 export function resolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = [], speakers?: readonly string[]): ParseResult {

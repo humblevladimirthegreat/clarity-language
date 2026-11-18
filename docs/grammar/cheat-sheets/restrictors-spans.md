@@ -173,7 +173,7 @@ A one-word name is an ordinary `-n` word (`donuren`), not a span.
 
 ## Scope islands {#islands}
 
-Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](/tone-marks#tone-marks) right before the brace applies to the whole island.
+Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](/tone-marks#showing-your-tone) right before the brace applies to the whole island.
 
 | Rule | Detail | Stage |
 |------|--------|-------|

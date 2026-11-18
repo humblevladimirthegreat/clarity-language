@@ -151,7 +151,7 @@ Later splits of `mood` (token class, gloss tag) can follow this column without n
 
 ### Stage 3 — Chevrotain (typed tokens → sentence AST)
 
-Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone-mark stacks (`!` `?` `%` `&` `;`, any order, each at most twice), and `{` / `}` → Chevrotain `IToken[]` (no second character lexer). `enforceTones` takes the tone marks out of the stream before the grammar runs and keeps a `ToneRecord` for each: the stack as written (`mark`), its `names`, its `scope` (`word`, `span`, `island`, `rest`), its place (`at`, the first word after it), and the `words` it colors; the resolve stage carries them on `ResolveInfo.tones` ([tone-marks.md](/tone-marks#tone-marks)). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
+Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.`, leading tone-mark stacks (`!` `?` `%` `&` `;`, any order, each at most twice), and `{` / `}` → Chevrotain `IToken[]` (no second character lexer). `enforceTones` takes the tone marks out of the stream before the grammar runs and keeps a `ToneRecord` for each: the stack as written (`mark`), its `names`, its `scope` (`word`, `span`, `island`, `rest`), its place (`at`, the first word after it), and the `words` it colors; the resolve stage carries them on `ResolveInfo.tones` ([tone-marks.md](/tone-marks#showing-your-tone)). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
 
 Owns:
 

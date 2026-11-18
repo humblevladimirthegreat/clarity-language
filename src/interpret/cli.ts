@@ -69,7 +69,7 @@ function formatDetail(d: Detail): string {
 
 function formatFrame(f: Frame): string {
   const parts = [f.family, f.key, `"${words(f.words)}"`];
-  // A tone mark has no word of its own (tone-marks.md#tone-marks).
+  // A tone mark has no word of its own (tone-marks.md#showing-your-tone).
   if (f.key === "edge:tone") parts.push(`mark ${f.values.mark} ${f.values.scope}`);
   if (f.party) parts.push(`party ${formatTerm(f.party)}`);
   if (f.hosted) parts.push(`hosted ${formatTerm(f.hosted)}`);

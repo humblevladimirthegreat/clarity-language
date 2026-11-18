@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change) · [*as-of*](/as-of#as-of)
+**Needs:** [How you know](/evidentiality#evidentiality) · [Forecasts](/evidentiality#forecast) · [Dated channel](/dated-channel#counting-from-now) · [Just and soon](/special-values#just-short) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change) · [*as-of*](/as-of#as-of)
 
 An English tense bundles up to three questions: *when* the event sits, *how you know* it, and whether it *still counts* now. Ageben asks them separately. Pick the row for the English form, then the job you mean.
 
@@ -16,10 +16,10 @@ An English tense bundles up to three questions: *when* the event sits, *how you 
 | *walks* (now) | no channel named | bare verb ([this stretch](/evidentiality#forecast)), unless an earlier channel is still [carried](/evidentiality#carry-forward) |
 | *walked* | you remember it | MEMORY **`thevum`** |
 | *walked* | going by clues or cases | CLUES **`theyom`** / PATTERN **`thubom`** plus a `-` offset |
-| *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](/dated-channel#dated-channel) |
+| *walked* | they told you, or you read it | REPORTED **`thebam`** plus a `-` [offset](/dated-channel#counting-from-now) |
 | *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](/evidentiality#carry-forward)) |
 | *walked* (a made-up story) | it is fiction | NOTIONAL **`theyum`** on the first sentence; bare verbs after it stay in the story ([carry forward](/evidentiality#carry-forward)) |
-| *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](/dated-channel#dated-channel)) |
+| *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](/dated-channel#counting-from-now)) |
 | *has walked* | the outcome still counts | RESIDUE **`haram`** |
 | *has already walked* | the change has come | **`havem`** |
 | *has walked before* / *has never walked* | at least once / not once | **`havem`** + **`har`** / **`hal`** ([ever / never](/already-still-yet#ever-never)) |
@@ -42,7 +42,7 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 ### Simple past: pick how you know {#simple-past}
 
-**Needs:** [Live vs memory](/knowing#live-vs-memory) · [Dated channel](/dated-channel#dated-channel)
+**Needs:** [Live vs memory](/knowing#live-vs-memory) · [Dated channel](/dated-channel#counting-from-now)
 
 English *Azozon walked* hides whether you saw it, read it, or were told. In Ageben you choose a channel, the word that says how you know, so the listener hears your ground as well as the event. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
@@ -180,7 +180,7 @@ English *will* makes three different claims: you mean to, the world will, or you
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](/dated-channel#dated-channel) · [Just and soon](/special-values#just-short) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
+**Needs:** [Dated channel](/dated-channel#counting-from-now) · [Just and soon](/special-values#just-short) · [Now and today](/dated-channel#now) · [RESIDUE and FORMER](/residue-and-former#residue) · [Already, still, not yet](/already-still-yet#stage-of-change) · [Forecasts](/evidentiality#forecast) · [Dependent clauses](/dependents#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly use the same channels and offsets as tense, so you need few new words for them. Each row says which one.
 

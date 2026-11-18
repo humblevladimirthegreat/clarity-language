@@ -1,5 +1,5 @@
 /**
- * Tone marks on a word, a span, or a scope island (tone-marks.md#tone-marks): the reader puts each one on the place
+ * Tone marks on a word, a span, or a scope island (tone-marks.md#showing-your-tone): the reader puts each one on the place
  * that holds what it colors. A free-standing mark at the start of a sentence is a whole-clause frame the resolve stage
  * already emitted (`src/parse/scope.ts`), copied with the other scope frames. A free-standing mark later in the
  * sentence colors only the words after it, so it sits on each of those words, with no clause reach.

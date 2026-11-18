@@ -101,7 +101,7 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "edge:vocative": { family: "call", reach: "clause", anchor: "speech-moves.md#vocative" },
   "edge:interjection": { family: "attitude", reach: "clause", anchor: "speech-moves.md#interjections-reactions" },
   "edge:force": { family: "force", reach: "clause", anchor: "speech-moves.md#speech-act-statement-question-command" },
-  "edge:tone": { family: "attitude", reach: "clause", anchor: "tone-marks.md#tone-marks" },
+  "edge:tone": { family: "attitude", reach: "clause", anchor: "tone-marks.md#showing-your-tone" },
   "reading:bareQuestion": { family: "force", reach: "clause", anchor: "questions.md#question" },
   "reading:greeting": { family: "force", reach: "clause", anchor: "word-endings.md#greeting" },
 };
@@ -120,7 +120,7 @@ export type ScopeFrame = {
   /** A holder's stance, NOTIONAL or intention: the frame the holder seam sits on (holder.md#naming-a-holder). */
   holderHost?: true;
   /**
-   * A tone mark before the rest of the sentence (tone-marks.md#tone-marks). No word carries it: `word` is the first
+   * A tone mark before the rest of the sentence (tone-marks.md#showing-your-tone). No word carries it: `word` is the first
    * word it colors, and its place in the text is just before that word.
    */
   tone?: ToneRecord;
@@ -400,7 +400,7 @@ function mayRightBefore(earlier: ScopeFrame, later: ScopeFrame): boolean {
 
 const position = (frame: ScopeFrame): number => (frame.tone ? frame.tone.at - 0.5 : (frame.word.at ?? -1));
 
-const TONE = "tone-marks.md#tone-marks";
+const TONE = "tone-marks.md#showing-your-tone";
 
 function orderPair(a: ScopeFrame, b: ScopeFrame, scope: ClauseScope): void {
   // A holder and the stance, NOTIONAL or intention its seam sits on: fixed by word shape.
@@ -410,7 +410,7 @@ function orderPair(a: ScopeFrame, b: ScopeFrame, scope: ClauseScope): void {
     return;
   }
   // Two tone marks: each colors its own words, and a later free-standing mark takes over from its place on, so the
-  // pair commutes (tone-marks.md#tone-marks).
+  // pair commutes (tone-marks.md#showing-your-tone).
   if (a.tone && b.tone) return;
   const row = pairRow(a.family, b.family) ?? DEFAULT_ROW;
   const found = row.cases.find((c) => caseMatches(c.when, a, b));
@@ -770,7 +770,7 @@ export function greetingHead(left: LeftEdge, body: BodyClause): LexWord | undefi
  * every two of them. `tables` names a holder's host; without them a holder word gives the holder frame alone.
  * `blanks` are the resolve stage's fill-ask blanks, which bring no new member in. `tones` are the marks
  * `enforceTones` kept: a free-standing one at the start of its sentence is a whole-clause attitude frame
- * (tone-marks.md#tone-marks).
+ * (tone-marks.md#showing-your-tone).
  */
 export function clauseScopes(
   utterances: Utterance[],

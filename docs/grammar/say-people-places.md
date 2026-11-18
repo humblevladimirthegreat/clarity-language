@@ -1098,7 +1098,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 **Needs:** [Opaque and loan words](/spans#loans)
 
-When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/tone-marks#tone-marks) (`!` / `?`) must appear *as content*, wrap that token in an opaque `<…>` span. The outer span’s wording is the opaque interior (the wrapper is packaging, not extra cited words).
+When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](/tone-marks#showing-your-tone) (`!` / `?`) must appear *as content*, wrap that token in an opaque `<…>` span. The outer span’s wording is the opaque interior (the wrapper is packaging, not extra cited words).
 
 ```ageben
 d[ varuyol d<]> ]

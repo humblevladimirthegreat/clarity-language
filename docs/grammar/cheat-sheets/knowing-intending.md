@@ -53,17 +53,17 @@ The ending grades evidence, not how sure you feel or how likely the event is: `-
 | [How many hands](/evidentiality#hand-depth): `th#N` after a channel | `zalazun thebam throgel vudurul.` | *Alazun left, so they say, third-hand.* | I |
 | [A forecast](/evidentiality#forecast): channel + `blral` | `thubom blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](/evidentiality#forecast) | `zalazun thaber blral vudurul.` | *Alazun will leave, a faint hunch.* | I |
-| [A dated claim](/dated-channel#dated-channel): signed time measure | `zazozon thevum blagorum grugel vowurol.` | *I saw Azozon walk three hours ago.* | I |
-| [Later, dated](/dated-channel#dated-channel) | `zalazun thebam blagorum gragel vudurul.` | *I hear Alazun leaves in three hours.* | I |
+| [A dated claim](/dated-channel#counting-from-now): signed time measure | `zazozon thevum blagorum grugel vowurol.` | *I saw Azozon walk three hours ago.* | I |
+| [Later, dated](/dated-channel#counting-from-now) | `zalazun thebam blagorum gragel vudurul.` | *I hear Alazun leaves in three hours.* | I |
 | [Give the grounds](/evidentiality#evidence-clause): `blarl`, grounds in the next sentence | `theyom thahum blarl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
 |--------|------|-------|
-| [`thevum` MEMORY](/dated-channel#dated-channel) | `-` only | I |
-| [`thugem` LIVE](/dated-channel#dated-channel) | no offset | I |
-| [`thubom` PATTERN](/dated-channel#dated-channel) | `-` or `+` | I |
+| [`thevum` MEMORY](/dated-channel#counting-from-now) | `-` only | I |
+| [`thugem` LIVE](/dated-channel#counting-from-now) | no offset | I |
+| [`thubom` PATTERN](/dated-channel#counting-from-now) | `-` or `+` | I |
 
-After a channel, a `bl-` person or thing is the [source](/evidentiality#source); a time measure is the [offset](/dated-channel#dated-channel). `blarl` takes only CLUES, PATTERN, and DEDUCED.
+After a channel, a `bl-` person or thing is the [source](/evidentiality#source); a time measure is the [offset](/dated-channel#counting-from-now). `blarl` takes only CLUES, PATTERN, and DEDUCED.
 
 <!-- cheat-sheet: knowing-intending -->
 | You say | Clause after `blarl` is | Form | Stage |

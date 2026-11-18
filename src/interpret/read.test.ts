@@ -663,7 +663,7 @@ describe("reader: new members, calls, greetings and bodiless turns (R6d)", () =>
   });
 });
 
-describe("reader: tone marks (tone-marks.md#tone-marks)", () => {
+describe("reader: tone marks (tone-marks.md#showing-your-tone)", () => {
   /** Readings of a gloss, with every word placed once. */
   function toned(gloss: string): { readings: Reading[]; all: Reading[] } {
     const result = parse(glossToAgeben(gloss, tables, index), tables);
@@ -677,7 +677,7 @@ describe("reader: tone marks (tone-marks.md#tone-marks)", () => {
     const found = frames?.filter((f) => f.key === "edge:tone") ?? [];
     assert.equal(found.length, 1, "one tone frame");
     assert.equal(found[0]!.family, "attitude");
-    assert.equal(found[0]!.anchor, "tone-marks.md#tone-marks");
+    assert.equal(found[0]!.anchor, "tone-marks.md#showing-your-tone");
     assert.deepEqual(found[0]!.words, [], "a tone has no word of its own");
     return found[0]!;
   };
@@ -807,7 +807,7 @@ describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
     const readings = read("z-Azozon | [th-MEMORY | [bl-day | g-minus-one]] | v-walk . z-Azozon | v-sit");
     const link = readings[1]!.links.find((l) => l.kind === "carriedFrame")!;
     assert.equal(link.words.length, 3);
-    assert.equal(link.anchor, "dated-channel.md#dated-channel");
+    assert.equal(link.anchor, "dated-channel.md#counting-from-now");
     const again = read("z-Azozon | [th-MEMORY | [bl-day | g-minus-one]] | v-walk . z-Azozon | [th-MEMORY | [bl-hour | g-minus-three]] | v-sit . z-Azozon | v-sing");
     assert.equal(again[2]!.links.find((l) => l.kind === "carriedFrame")!.to, again[1]!.id);
   });

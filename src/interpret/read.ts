@@ -199,7 +199,7 @@ function holderHostValues(word: LexWord, tables: ClassifyTables | undefined): Re
 }
 
 function fromScope(frame: ScopeFrame, tables: ClassifyTables | undefined): Frame {
-  // A tone mark has no word of its own (tone-marks.md#tone-marks).
+  // A tone mark has no word of its own (tone-marks.md#showing-your-tone).
   if (frame.tone) return toneFrame(frame.tone);
   const out = frameOf(frame.key, frame.word, undefined);
   if (frame.holderHost) out.values = { ...holderHostValues(frame.word, tables), ...out.values };
@@ -1155,7 +1155,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     if (reading) reading.links.push(link("answer", "answer:answer", answer.blanks, { answer, ...(to ? { to } : {}) }));
   }
   carriedLinks(out, info?.carried ?? []);
-  // A tone on a word, a span or an island sits on what it colors (tone-marks.md#tone-marks); a rest-of-sentence tone
+  // A tone on a word, a span or an island sits on what it colors (tone-marks.md#showing-your-tone); a rest-of-sentence tone
   // came in with the scope frames.
   if (info?.tones) placeTones(out, allReadings(out), info.tones);
   return out;
@@ -1188,7 +1188,7 @@ function carriedLinks(sentences: Reading[], carried: readonly BodyCarry[]): void
       const words = [carry.word, ...(carry.offset ? [carry.offset.bound, ...(carry.offset.amount ? [carry.offset.amount] : [])] : [])];
       reading.links.push(
         link("carriedFrame", `carry:${carry.kind}`, words, {
-          anchor: carry.offset ? "dated-channel.md#dated-channel" : CARRY_ANCHOR[carry.kind],
+          anchor: carry.offset ? "dated-channel.md#counting-from-now" : CARRY_ANCHOR[carry.kind],
           ...(source ? { to: source.id } : {}),
           ...(frame ? { frame } : {}),
           ...(coveredBy.length > 0 ? { coveredBy } : {}),

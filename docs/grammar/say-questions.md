@@ -6,9 +6,9 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*, and 
 
 ### Echo questions {#echo}
 
-**Needs:** [Ask](/questions#question) · [tone marks](/tone-marks#tone-marks)
+**Needs:** [Ask](/questions#question) · [tone marks](/tone-marks#showing-your-tone)
 
-An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yel`**, and put the doubting [tone mark](/tone-marks#tone-marks) `?!` on the word you doubt, or on a blank in its place. The mark tells the speaker which word you are checking.
+An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yel`**, and put the doubting [tone mark](/tone-marks#showing-your-tone) `?!` on the word you doubt, or on a blank in its place. The mark tells the speaker which word you are checking.
 
 > `yel ?!dar zawan vayebel.`
 >
@@ -24,7 +24,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 ### *Really?*, *Is that so?* {#really}
 
-**Needs:** [Polar particle](/questions#polar-particle) · [tone marks](/tone-marks#tone-marks)
+**Needs:** [Polar particle](/questions#polar-particle) · [tone marks](/tone-marks#showing-your-tone)
 
 English *Really?* asks the speaker to confirm what they just said. Answer with your own short question that asks them to confirm: **`yel yaol.`** (*Is that so?*). Plain, it only asks; with the doubting mark `?!` on it, it shows disbelief.
 
@@ -124,7 +124,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 
 ### *What a big dog!* {#exclamations}
 
-**Needs:** [tone marks](/tone-marks#tone-marks) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections-reactions)
+**Needs:** [tone marks](/tone-marks#showing-your-tone) · [extra detail on an adjective](/clause#adjective-detail-w) · [interjections](/speech-moves#interjections-reactions)
 
 English *What a big dog!* and *How big the dog is!* say the dog is very big and that you feel strongly about it. Say the degree with *very* **`welazem`** and the feeling with the tone mark **`!`** before the sentence. Use `!!` for more.
 
