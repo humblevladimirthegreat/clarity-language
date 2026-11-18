@@ -964,7 +964,7 @@ export const REJECTIONS = {
   retiredDeonticRoot: { anchor: "permission-consent.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwuvam`, `hwuvul`, `hwuvom`)" },
   sayHost: { anchor: "permission-consent.md#permission", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair reach e; a participant's say needs no bl- word" },
   saySpeaker: { anchor: "permission-consent.md#permission", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwuvol), a person (hwuvom bl-), custom (hwuvor), or the speaker's own part (hwuzom)" },
-  hingeOffsetWarrant: { anchor: "dated-channel.md#dated-channel", summary: "a signed offset on a time hinge needs a command, request, PLAN, or channel in its clause" },
+  hingeOffsetWarrant: { anchor: "dated-channel.md#dated-channel", summary: "a signed offset on a time hinge needs a command, request, prohibition, PLAN, or channel in its clause" },
   joinDetail: { anchor: "list-structure.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "list-structure.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
   wNoHost: {

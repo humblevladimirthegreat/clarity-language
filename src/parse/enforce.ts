@@ -1087,8 +1087,8 @@ function enforceDirectiveRemarks(result: ParseResult): void {
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
-    // Command / request (e) and prohibition (u) act words may name a time without a channel.
-    const directive = /^y[ou]/.test(actWord(left)?.raw ?? "");
+    // A command, request or prohibition may name a time without a channel (dated-channel.md#dated-channel).
+    const directive = DIRECTIVE_ACT.test(actWord(left)?.raw ?? "");
     for (const body of bodies) {
       // A linker joins the sentence before it to the one it starts, so a clause follows it (sentence-linkers.md#sentence-linkers).
       if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {

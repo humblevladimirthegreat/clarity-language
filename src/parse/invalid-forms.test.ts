@@ -264,6 +264,7 @@ const ROWS: Row[] = [
   { invalid: "zazozon helor vowurol.", rejection: "retiredNotYet", valid: "zazozon thelor vowurol." },
   { invalid: "zazozon vowurol habam blazurom grugel.", rejection: "hingeOffsetWarrant", valid: "yol zawan vuhamum harum blazurom grabal." },
   { invalid: "zazozon vowurol harum blazurom grabal.", rejection: "hingeOffsetWarrant", valid: "zazozon thagom vowurol harum blazurom grabal." },
+  { invalid: "yuol zazozon vowurol harum blazurom grabal.", rejection: "hingeOffsetWarrant", valid: "yul vowurol harum blazurom grabal." },
   {
     invalid: "zalazun haram henam bl_#22,7 hunom bl_#3 vudurul.",
     rejection: "asOfPerHost",
