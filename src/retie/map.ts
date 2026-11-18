@@ -1,6 +1,6 @@
 /** Sidecar written by `convert-word --lexicon` and read by `retie-docs`. */
 
-export const RETIE_MAP_RELATIVE_PATH = "tmp/lexicon-retie-map.json";
+export const RETIE_MAP_RELATIVE_PATH = "tmp/state/lexicon-retie-map.json";
 
 export type RetiePair = {
   emoji: string;

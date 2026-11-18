@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { buildFooter, jobFooter, parseTestFailures, testFailureLines } from "./build-output.ts";
 import { jobKeys, splitJobs } from "./verify.ts";
 
-const LOG = "tmp/build-last.log";
+const LOG = "tmp/logs/build-last.log";
 
 const LINT = `docs/grammar/intermediate/try.md: 12 checked, 0 redundant-omitted / 12 with loose English; 14 morph gloss(es) compared to parser
 docs/grammar/intermediate/try.md:76  practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)
@@ -134,7 +134,7 @@ describe("buildFooter", () => {
   const footer = buildFooter(failed, LOG);
 
   it("holds every issue of every failed job and ends with the failed list", () => {
-    assert.match(footer[0]!, /tmp\/build-last\.log/);
+    assert.match(footer[0]!, /tmp\/logs\/build-last\.log/);
     assert.ok(footer.includes("✗ lint ageben"));
     assert.ok(footer.includes("✗ test"));
     assert.ok(footer.includes("  docs/grammar/intermediate/try.md:76  practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)"));

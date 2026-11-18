@@ -1,6 +1,6 @@
 /**
  * Short failure reports for `npm run build` and `npm test`. The full output goes to a log under
- * tmp/; stdout ends with only the issue lines an agent needs to fix the failure, `file:line` kept.
+ * tmp/logs/; stdout ends with only the issue lines an agent needs to fix the failure, `file:line` kept.
  * Line classification is shared with `npm run verify` ({@link issueLines}).
  */
 import { relative } from "node:path";

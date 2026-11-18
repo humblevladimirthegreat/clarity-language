@@ -3,9 +3,9 @@
  *
  * Looks up each published `concrete` label in the CMU Pronouncing Dictionary (first variant),
  * maps the phonemes to Ageben letters, and writes:
- *  - tmp/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Ageben sound string
- *  - tmp/echo-pron/report.md: coverage, labels missing from CMU, hyphen-only mismatches
- * Downloads cmudict into tmp/ on first run. With `write`, respells `concrete` labels whose only
+ *  - tmp/out/echo-pron/pron.csv: emoji, concrete, lookup word(s), CMU phonemes, Ageben sound string
+ *  - tmp/out/echo-pron/report.md: coverage, labels missing from CMU, hyphen-only mismatches
+ * Downloads cmudict into tmp/cache/ on first run. With `write`, respells `concrete` labels whose only
  * difference from a CMU entry is a hyphen (hot-dog ↔ hotdog) in data/lexicon-published.csv.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -15,12 +15,13 @@ import { CMU_PATH, loadCmu } from "./cmu-dict.ts";
 import { parseCsvLine, serializeCsv } from "./csv.ts";
 import { stripFlagSuffix } from "./flag-label.ts";
 import { toAgeben } from "./pronunciation-map.ts";
-import { REPO_ROOT, dataPath } from "./repo-paths.ts";
+import { dataPath } from "./repo-paths.ts";
+import { tmpPath } from "./tmp-paths.ts";
 
 /** Pinned cmudict commit, so reruns give the same pronunciations. */
 const CMU_URL = "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/cmudict.dict";
-const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
-const OUT = join(REPO_ROOT, "tmp", "echo-pron");
+const FREQ_FILE = tmpPath("cache", "en_50k.txt");
+const OUT = tmpPath("out", "echo-pron");
 
 /** Hyphenated labels kept although CMU has the joined spelling, because the two-word form is more common. */
 const KEEP_HYPHEN = new Set(["old-man"]);
@@ -37,7 +38,7 @@ export type PronunciationReport = {
   reportPath: string;
 };
 
-/** Download tmp/cmudict.dict when it is missing, so convert-word and the lexicon widget share one file. */
+/** Download tmp/cache/cmudict.dict when it is missing, so convert-word and the lexicon widget share one file. */
 export async function ensureCmuDict(): Promise<void> {
   if (existsSync(CMU_PATH)) return;
   mkdirSync(dirname(CMU_PATH), { recursive: true });
@@ -46,7 +47,7 @@ export async function ensureCmuDict(): Promise<void> {
   writeFileSync(CMU_PATH, await res.text());
 }
 
-/** Rebuild tmp/echo-pron from the published lexicon (downloading cmudict on first run). */
+/** Rebuild tmp/out/echo-pron from the published lexicon (downloading cmudict on first run). */
 export async function buildPronunciationCache(options: { write?: boolean } = {}): Promise<PronunciationReport> {
   const write = options.write ?? false;
   await ensureCmuDict();

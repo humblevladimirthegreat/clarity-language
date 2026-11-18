@@ -2,15 +2,15 @@
  * Read-only access to Open English WordNet 2025 (WNDB format), all four parts of speech: synsets,
  * hypernyms, hyponyms, similar-to and derivation pointers. Used
  * by the compound-fill candidate pass and the English helper's reverse index
- * (scripts/english-helper-wordnet.ts). The dictionary is fetched once into `tmp/oewn-2025/`.
+ * (scripts/english-helper-wordnet.ts). The dictionary is fetched once into `tmp/cache/oewn-2025/`.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { inflateRawSync } from "node:zlib";
 
-import { REPO_ROOT } from "./repo-paths.js";
+import { tmpPath } from "./tmp-paths.js";
 
-const WORDNET_DIR = join(REPO_ROOT, "tmp", "oewn-2025");
+const WORDNET_DIR = tmpPath("cache", "oewn-2025");
 const WORDNET_URL = "https://en-word.net/downloads/english-wordnet-2025.zip";
 
 export const WORDNET_POS = ["n", "v", "a", "r"] as const;

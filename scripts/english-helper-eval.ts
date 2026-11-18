@@ -13,7 +13,7 @@
  * that does not parse is wrong with no further call. Calls `claude -p`, so it costs money and is
  * not part of `npm test`.
  *
- * Output goes to `tmp/english-helper-eval/` (gitignored): `results.jsonl` (one row per item; a
+ * Output goes to `tmp/state/english-helper-eval/` (gitignored; paid results, never cleaned): `results.jsonl` (one row per item; a
  * rerun with the same settings reuses rows whose prompt is unchanged), `report.md`, `report.json`.
  *
  * Run: npm run english-helper-eval -- [--n 100] [--seed 1] [--concurrency 2]
@@ -55,6 +55,7 @@ import { morphGlossLine, morphGlossWords } from "../src/parse/morph-gloss.js";
 import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { claude, rng, shuffle, withRetry, type CallResult } from "./lib/claude-cli.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 // ---------------------------------------------------------------------------------------------
 // Options
@@ -82,7 +83,7 @@ if (!VARIANTS.includes(VARIANT)) {
   process.exit(2);
 }
 
-const OUT = join(REPO_ROOT, "tmp", "english-helper-eval");
+const OUT = tmpPath("state", "english-helper-eval");
 const EMPTY = join(OUT, "empty");
 /** The plain run keeps the unsuffixed file names; each ablation has its own. */
 const fileOf = (stem: string, ext: string, variant: Variant = VARIANT) => join(OUT, `${stem}${variant === "helper" ? "" : `-${variant}`}.${ext}`);

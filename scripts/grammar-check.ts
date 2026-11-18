@@ -17,7 +17,7 @@
  *    also lists inputs the parser rejects that the gate-free grammar accepts: a gate (or a check after parsing)
  *    rejected them.
  *
- * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N] [--no-lr1] [--variants]
+ * Run: npm run grammar-check -- [--json tmp/out/grammar-check.json] [--examples N] [--no-lr1] [--variants]
  * (`--no-lr1` skips the LR(1) build for a quicker doc-corpus pass; it then proves nothing.)
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";

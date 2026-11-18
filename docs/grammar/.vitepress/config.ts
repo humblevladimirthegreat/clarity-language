@@ -14,7 +14,7 @@ const buildAt = new Date()
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
-const cmuDict = fileURLToPath(new URL('../../../tmp/cmudict.dict', import.meta.url))
+const cmuDict = fileURLToPath(new URL('../../../tmp/cache/cmudict.dict', import.meta.url))
 const cmuPublic = fileURLToPath(new URL('../public/cmudict.dict', import.meta.url))
 
 await ensureCmuDict()

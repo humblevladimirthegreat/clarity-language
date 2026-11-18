@@ -20,7 +20,7 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 - builds a root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)); a five-letter root's first three letters keep same-kind roots apart ([onset](#onset)), and a three-letter root's first vowel is chosen so overlay-group members never share their first two letters ([root length](#root-length)). `--all` keeps that first vowel and only rewrites the last.
 - skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the holder check against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
 - never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
-- rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
+- rewrites the overlay and compound rows that spell the old root, and writes `tmp/state/lexicon-retie-map.json` for `retie-docs`
 - prints the root-tails report (`npm run convert-word -- --report` prints it alone)
 
 `npm run convert-word -- <english>` (no `--lexicon`) only prints a candidate: a three-letter root by English echo, or with `--kind` and `--shape` the five-letter root that word would take beside the lexicon. Use it to explore, not as a source for a hand edit.

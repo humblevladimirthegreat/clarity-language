@@ -139,8 +139,8 @@ Order: U2 → U3 → U4 → U5, in sequence. U4's builder failures go back to a 
 > - Where a reading states nothing, the map shows nothing.
 > - Never patch the parser or the reader from here.
 > - Read slices: list headings (`grep -n '^#'`) first, then the ranges you need.
-> - Scripted edits go in a file under `tmp/`, never inline.
-> - Verify with `npm run verify -- --allow-generate` at the end of the item (`--fast` inside it). Read only new error lines from `tmp/verify-last.log`.
+> - Scripted edits go in a file under `tmp/scratch/`, never inline.
+> - Verify with `npm run verify -- --allow-generate` at the end of the item (`--fast` inside it). Read only new error lines from `tmp/logs/verify-last.log`.
 > - Stop and report, without working around, when: a premise here no longer holds; later units would need a different design or order; skipping would leave later units on a broken state; or enough is skipped that the goals can't be met.
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 > - Do not commit. Report in these fields: **done**, **files touched** (count), **reader findings** (a wrong class or a missing field, each with its sentence), **AGENTS.md Owns lines**, **verify** line, **skips** with reasons, **left**, **inefficient**.

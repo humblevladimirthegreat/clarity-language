@@ -5,17 +5,18 @@
  *
  * Run: node scripts/checkpoint-pack.mjs --unit I6 --band Intermediate verb-and-stance-joins.md in-clause-hooks.md
  *
- * Writes tmp/checkpoint-pack/<unit>.md (allowlist rows, baseline errors from tmp/verify-baseline.json,
+ * Writes tmp/scratch/checkpoint-pack/<unit>.md (allowlist rows, baseline errors from tmp/state/verify-baseline.json,
  * settings already in use, and `core-vocabulary --for` output per page) and
- * tmp/checkpoint-pack/free-roots.tsv (published roots with an empty `core` cell). Rebuild it right
+ * tmp/scratch/checkpoint-pack/free-roots.tsv (published roots with an empty `core` cell). Rebuild it right
  * before each unit: every unit claims roots and settings.
  */
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { tmpPath } from "../src/tmp-paths.ts";
 
 const ROOT = join(import.meta.dirname, "..");
-const OUT = join(ROOT, "tmp", "checkpoint-pack");
+const OUT = tmpPath("scratch", "checkpoint-pack");
 
 const args = process.argv.slice(2);
 let unit, band;
@@ -77,7 +78,7 @@ function walk(dir) {
 walk(join(ROOT, "docs", "grammar"));
 
 // Baseline errors.
-const baselinePath = join(ROOT, "tmp", "verify-baseline.json");
+const baselinePath = tmpPath("state", "verify-baseline.json");
 const baseline = existsSync(baselinePath) ? JSON.parse(readFileSync(baselinePath, "utf8")).keys : [];
 
 // Sidebar order, for the nearest earlier checkpoint of a page that has none yet.
@@ -91,7 +92,7 @@ function spacing(page) {
   }
 }
 
-const out = [`# Checkpoint pack: unit ${unit} (${band})`, "", "Built by `scripts/checkpoint-pack.mjs`. New words: grep `tmp/checkpoint-pack/free-roots.tsv`.", "", "## Allowlist rows (verbatim)", ""];
+const out = [`# Checkpoint pack: unit ${unit} (${band})`, "", "Built by `scripts/checkpoint-pack.mjs`. New words: grep `tmp/scratch/checkpoint-pack/free-roots.tsv`.", "", "## Allowlist rows (verbatim)", ""];
 for (const page of pages) out.push(rowFor(page) ?? `(no allowlist row for ${page})`);
 out.push("", "## Baseline errors on these pages (what this unit must clear)", "");
 for (const page of pages) for (const k of baseline.filter((k) => k.includes(page))) out.push(`- ${k.replace(/^lint ageben \| /, "")}`);
@@ -112,4 +113,4 @@ for (const page of pages) {
   out.push((text ?? `(no earlier ${bandLc} checkpoint)`).trimEnd(), "```");
 }
 writeFileSync(join(OUT, `${unit}.md`), out.join("\n") + "\n");
-console.log(`tmp/checkpoint-pack/${unit}.md (${out.length} lines); free-roots.tsv (${free.length} roots)`);
+console.log(`tmp/scratch/checkpoint-pack/${unit}.md (${out.length} lines); free-roots.tsv (${free.length} roots)`);

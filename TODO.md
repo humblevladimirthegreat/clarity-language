@@ -11,7 +11,6 @@ https://discord.gg/CAMGw2Akhc
 -cheat sheet for reading a word?
 -prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
--tmp purging?
 -speed reading view becomes outline mode?
 -syntax highlighting should cover more obscure scoping/carry rules
 -cheat sheet distinguish cue vs exact match

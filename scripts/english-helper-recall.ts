@@ -63,10 +63,10 @@
  * sentences. The check is not part of `npm test`, since doc edits move the numbers.
  * `--write-baseline` updates both files for the sets it ran.
  *
- * Writes tmp/english-helper-recall.csv (one row per sentence), tmp/english-helper-worklist.csv
+ * Writes tmp/out/english-helper-recall.csv (one row per sentence), tmp/out/english-helper-worklist.csv
  * (one row per missing word, and for the wild set per gap and per guess ranked above a grammar
  * row, most frequent English first; NGSL ranks when
- * scripts/frequency-coverage.ts has downloaded the list), and tmp/english-helper-report.md.
+ * scripts/frequency-coverage.ts has downloaded the list), and tmp/out/english-helper-report.md.
  */
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -90,10 +90,11 @@ import { constructionRegistry } from "../src/parse/constructions.js";
 import { loadDefaultTables, parseWithTables } from "../src/parse/index.js";
 import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
-const TMP = join(REPO_ROOT, "tmp");
-const NGSL_STATS = join(TMP, "NGSL_12_stats.csv");
+const TMP = tmpPath("out");
+const NGSL_STATS = tmpPath("cache", "NGSL_12_stats.csv");
 const BASELINE = join(REPO_ROOT, "src", "generated", "english-helper-baseline.json");
 const BASELINE_ITEMS = join(REPO_ROOT, "src", "generated", "english-helper-baseline-items.json");
 const SETS = ["doc", "checkpoint", "wild"] as const;
@@ -1300,7 +1301,7 @@ else {
     for (const c of cappedTallies) console.log(`  lean ${c.reach} ≤ ${c.cap} ${c.fill}: self-contained ${pct(c.selfContained, reachBaseline.sentences)}; adds ${median(c.chars)} / ${median(c.chars, 0.9)}`);
     console.log();
   }
-  console.log("→ tmp/english-helper-recall.csv, tmp/english-helper-worklist.csv, tmp/english-helper-report.md");
+  console.log("→ tmp/out/english-helper-recall.csv, tmp/out/english-helper-worklist.csv, tmp/out/english-helper-report.md");
 }
 
 if (check) {

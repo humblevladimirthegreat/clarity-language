@@ -228,7 +228,7 @@ Run with subagents: the pilot needs a fresh audit context, and the tooling units
 - Code: TypeScript, Node >= 24, tests with tsx --test beside the source (*.test.ts). Reuse src/parse/
   and src/interpret/; never reimplement a parser reading, and never walk the parse tree in src/spec/.
   If a reading lacks a field the spec needs, stop and report: the fix is in the interpreter's table.
-- Edits that repeat go in a script file under tmp/, never inline.
+- Edits that repeat go in a script file under `tmp/scratch/`, never inline.
 - Verify with npm run verify -- --allow-generate (--fast inside an item); never paste raw build output.
 - Do not commit; the orchestrator commits.
 - Stop and report instead of working around: a premise no longer holds, later units would need a

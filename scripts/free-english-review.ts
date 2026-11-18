@@ -3,7 +3,7 @@
  * Review lists for the free English pass ([llm-gloss-prompt.md](../docs/proposals/llm-gloss-prompt.md),
  * phase 1 step 3): one JSON per top-level grammar page listing every free English line with its
  * section, Ageben, parser morph, and lint findings, so a page review cannot skip an example.
- * Output goes to `tmp/free-english-review/` (gitignored), plus an `index.json` of counts per page.
+ * Output goes to `tmp/out/free-english-review/` (gitignored), plus an `index.json` of counts per page.
  *
  * Run: npm run free-english-review
  *      npm run free-english-review -- [docs/grammar/<page>.md ...]
@@ -19,9 +19,10 @@ import { loadDefaultTables } from "../src/parse/index.js";
 import { morphGlossLine } from "../src/parse/morph-gloss.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
-const outDir = join(REPO_ROOT, "tmp", "free-english-review");
+const outDir = tmpPath("out", "free-english-review");
 
 const args = process.argv.slice(2);
 const sittingDir = (file: string) => {

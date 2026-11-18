@@ -1,6 +1,6 @@
 /**
  * `--diff REV`: the parser at REV, from a `git archive` of `src`, `data` and `package.json`
- * (plus the docs module `src/repo-paths.ts` imports) extracted to `tmp/find-rev/<sha>/` and bundled to
+ * (plus the docs module `src/repo-paths.ts` imports) extracted to `tmp/scratch/find-rev/<sha>/` and bundled to
  * `<dir>/dist/parse-rev/index.bundle.mjs`, so it reads the old lexicon from `<dir>/data`.
  * Only `parseWithTables` and `loadDefaultTables` are taken from it. The folder is removed by `cleanup`
  * and on SIGINT; unlike a worktree, a killed run leaves nothing in `.git`.
@@ -83,7 +83,7 @@ export async function importRevParser(module: string, rev: string): Promise<Impo
 /** Extracts and bundles the parser at REV and loads its two exports. Throws `FindDiffError`. */
 export async function loadRevParser(rev: string, cwd = REPO_ROOT): Promise<RevParser> {
   const sha = revCommit(rev, cwd);
-  const dir = join(cwd, "tmp", "find-rev", sha);
+  const dir = join(cwd, "tmp", "scratch", "find-rev", sha);
   const cleanup = () => {
     rmSync(dir, { recursive: true, force: true });
     process.off("SIGINT", onSigint);

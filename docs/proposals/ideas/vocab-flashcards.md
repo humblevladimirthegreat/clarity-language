@@ -1,6 +1,6 @@
 # Proposal: vocab flashcard generator / system
 
-**Status:** IDEA. v1 **shipped** (`npm run flashcards`: Core, Sakes, Everything packs to `tmp/flashcards/`); v2–v3 **proposed**  
+**Status:** IDEA. v1 **shipped** (`npm run flashcards`: Core, Sakes, Everything packs to `tmp/out/flashcards/`); v2–v3 **proposed**  
 **Related:** long-term TODO *vocab flashcard generator/system*; reuses the CSV parsers in [`src/lexicon-search.ts`](../../../src/lexicon-search.ts) and [`src/lexicon-compounds.ts`](../../../src/lexicon-compounds.ts), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column) and its checkpoint order from [`src/core-vocabulary.ts`](../../../src/core-vocabulary.ts); packaging via `genanki` from [`requirements.txt`](../../../requirements.txt) (the devcontainer installs it into `.venv`); optional later drill UI may sit next to `gloss-overlay-ui.md`  
 **Design authority:** remains [`docs/grammar/`](../../grammar/introduction.md), [glosses.md](../../meta/glosses.md), and lexicon CSVs. This proposal covers **tooling only**: turn published roots, compounds, and overlays into study decks; do not invent senses or replace the lexicon as source of truth.
 
@@ -37,7 +37,7 @@ The data is already curated (`lexicon-published.csv`, `lexicon-compounds.csv`, `
 - `.apkg` carries stable note GUIDs, so re-importing after a lexicon change updates notes and keeps review history. Derive each GUID from the stable key (below), never from row order. The note type and deck ids are fixed constants for the same reason.
 - Packaging uses **`genanki`** (Python), pinned in `requirements.txt` and installed into `.venv` by the devcontainer. The TypeScript side builds the note list and writes it as JSON; a small Python script (run as `.venv/bin/python`) only packages it. Hand-writing Anki’s SQLite schema from Node is the riskier path.
 - The TSV output is the same note list as plain text, for diffing in review and for other tools.
-- Generated files go under `tmp/flashcards/` (gitignored); they are build output, not data.
+- Generated files go under `tmp/out/flashcards/` (gitignored); they are build output, not data.
 
 Stable keys: published `root`; compound `stem`; overlay `sense_form` (the `th` / `w` rows collapse into one note, with the `pos` values as tags). v1 builds overlay notes for the `sake` kind only; the generator stops if one sake's rows disagree.
 
@@ -126,7 +126,7 @@ grammar pages ─► stageCheckpoints() ────────┘ (core order,
 
 ### v1
 
-- `npm` script: CSVs → note list → `.apkg` (and `.tsv`) for the Core, Sakes, and Everything packs, written to `tmp/flashcards/` for local import. Nothing is published to the site yet.
+- `npm` script: CSVs → note list → `.apkg` (and `.tsv`) for the Core, Sakes, and Everything packs, written to `tmp/out/flashcards/` for local import. Nothing is published to the site yet.
 - The single note type with recognition and production cards, and the compound parts line.
 - Short maintainer note (this proposal or a one-page tooling doc): regenerate from CSV; import into Anki.
 
@@ -151,7 +151,7 @@ The downloadable decks (v2) are built by Amplify during `docs:publish`, not comm
 
 ## Regenerating (maintainers)
 
-- `npm run flashcards` writes `ageben-core`, `ageben-sakes`, and `ageben-everything` (`.apkg`, `.tsv`, and the `.json` handed to genanki) under `tmp/flashcards/`. `--pack core,sakes` picks packs, `--out <dir>` moves the output, `--tsv-only` skips Python.
+- `npm run flashcards` writes `ageben-core`, `ageben-sakes`, and `ageben-everything` (`.apkg`, `.tsv`, and the `.json` handed to genanki) under `tmp/out/flashcards/`. `--pack core,sakes` picks packs, `--out <dir>` moves the output, `--tsv-only` skips Python.
 - After packaging, `scripts/flashcards-check.py` imports every pack into a throwaway collection with Anki's own backend (the `anki` package, no GUI): the note type arrives, nothing conflicts, overlapping packs share notes, every card renders, and a second import adds nothing. `npm run build` runs `npm run flashcards`, so a lexicon edit that breaks a deck fails the build. A full run takes about 1.5 s.
 - The packager is `scripts/flashcards-package.py`, run as `.venv/bin/python` (the devcontainer creates the venv from `requirements.txt`, which pins `genanki` and `anki`). It owns the note type (fixed model id, templates, CSS); `src/flashcards.ts` owns the notes, GUIDs, deck ids, tags, and packs, and `npm test` covers it.
 - After any lexicon or `core` edit, regenerate; re-importing is covered in [Studying with the decks](#studying-with-the-decks).

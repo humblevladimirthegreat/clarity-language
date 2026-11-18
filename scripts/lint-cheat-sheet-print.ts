@@ -23,8 +23,9 @@ import {
   type TableInfo,
 } from "../src/lint/cheat-sheet-print.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
-const OUT_DIR = join(REPO_ROOT, "tmp", "cheat-sheet-print");
+const OUT_DIR = tmpPath("out", "cheat-sheet-print");
 const LETTER = { format: "Letter" as const, margin: { top: "0.4in", right: "0.4in", bottom: "0.4in", left: "0.4in" } };
 
 type Sheet = { id: string; file: string; path: string };
@@ -78,7 +79,7 @@ function printUsage(): void {
   (no args)     every grammar sheet plus Claritish
   --only ID     one sheet (repeatable); IDs are sidebar slugs or claritish
   --all         same as no args (kept for older commands)
-  --calibrate   write each sheet's PDF under tmp/cheat-sheet-print/
+  --calibrate   write each sheet's PDF under tmp/out/cheat-sheet-print/
   --report      print the report even when clean; do not fail
   --json        machine-readable report
   --url ORIGIN  use a running VitePress server (…/grammar)

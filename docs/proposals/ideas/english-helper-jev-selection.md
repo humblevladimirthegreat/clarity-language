@@ -72,7 +72,7 @@ A and B share one request per sentence. D and E are separate requests.
 
 ### Cache and determinism
 
-- Answers are cached on disk under `tmp/english-helper-jev/`, keyed by a hash of the model id, the sentence and the question text. A rerun with unchanged docs makes no call.
+- Answers are cached on disk under `tmp/state/english-helper-jev/`, keyed by a hash of the model id, the sentence and the question text. A rerun with unchanged docs makes no call.
 - `--jev` turns the layer on in the CLI, the recall script and the eval script. Without it, or without `TYPESAFE_API_KEY`, the helper behaves as it does today.
 - The baseline and `--check` run with Jev off. The recall report gains a second column for Jev-on numbers when the flag is set. They are reported, not guarded, because a cache miss would make the check cost money and depend on the network.
 

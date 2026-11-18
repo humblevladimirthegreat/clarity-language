@@ -1,7 +1,7 @@
 /**
  * Vocabulary flashcard decks for Anki (`vocab-flashcards.md`).
  *
- * Run: npm run flashcards                         every v1 pack: tmp/flashcards/ageben-<pack>.apkg and .tsv
+ * Run: npm run flashcards                         every v1 pack: tmp/out/flashcards/ageben-<pack>.apkg and .tsv
  *      npm run flashcards -- --pack core,sakes    only these packs (core, sakes, everything)
  *      npm run flashcards -- --out <dir>          another output directory
  *      npm run flashcards -- --tsv-only           skip the genanki step and the Anki check (no .venv needed)
@@ -15,11 +15,12 @@ import { join, resolve } from "node:path";
 import { lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { buildNotes, buildPack, loadFlashcardInputs, NOTE_FIELDS, PACK_IDS, packTsv, type PackId } from "../src/flashcards.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 type Options = { packs: PackId[]; out: string; tsvOnly: boolean };
 
 function parseArgs(argv: string[]): Options {
-  const options: Options = { packs: [...PACK_IDS], out: join(REPO_ROOT, "tmp", "flashcards"), tsvOnly: false };
+  const options: Options = { packs: [...PACK_IDS], out: tmpPath("out", "flashcards"), tsvOnly: false };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]!;
     if (arg === "--tsv-only") options.tsvOnly = true;

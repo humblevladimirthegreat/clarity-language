@@ -10,7 +10,7 @@ Run **`node scripts/english-helper.mjs '<english>'`** for per-clause root and gr
 
 When changing the helper:
 
-- `npm run english-helper-recall` scores it on doc pairs, English → Ageben checkpoint items, and the held-out wild set (`src/english-helper/wild.tsv`; never copy its sentences into cue rows or examples), including whether each reference word is in the prompt (free; report and worklist in `tmp/`). Run it with `-- --check` before committing a change to `src/english-helper/` or a recipe table, and `-- --write-baseline` to keep improved numbers. When the check fails, it lists the sentences that moved each metric: read those before anything else.
+- `npm run english-helper-recall` scores it on doc pairs, English → Ageben checkpoint items, and the held-out wild set (`src/english-helper/wild.tsv`; never copy its sentences into cue rows or examples), including whether each reference word is in the prompt (free; report and worklist in `tmp/out/`). Run it with `-- --check` before committing a change to `src/english-helper/` or a recipe table, and `-- --write-baseline` to keep improved numbers. When the check fails, it lists the sentences that moved each metric: read those before anything else.
 - Pin each fixed behavior with a line in `src/english-helper/cases.tsv`.
 - After a lexicon CSV change, run `npm run english-helper-wordnet` to regenerate its WordNet index (`npm test` fails when it is stale).
 
@@ -30,7 +30,7 @@ The wild set grows only through the loop below, and new items are drafted from t
 
 ## Free metrics
 
-`npm run english-helper-recall` (`--set doc|checkpoint|wild|all`) writes `tmp/english-helper-report.md`, `tmp/english-helper-recall.csv` and `tmp/english-helper-worklist.csv`.
+`npm run english-helper-recall` (`--set doc|checkpoint|wild|all`) writes `tmp/out/english-helper-report.md`, `tmp/out/english-helper-recall.csv` and `tmp/out/english-helper-worklist.csv`.
 
 | Metric | Definition | Sets |
 |--------|-----------|------|

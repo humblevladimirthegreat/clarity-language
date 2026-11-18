@@ -1,5 +1,5 @@
 /**
- * Reads every doc example (src/parse/llm-examples.ts) and writes to `tmp/interpret-sweep/`:
+ * Reads every doc example (src/parse/llm-examples.ts) and writes to `tmp/out/interpret-sweep/`:
  * - `unread.json`: `unread` counts by construction id, most first, with up to three sample sources each;
  * - `unsettled.json`: the doc examples that hold a pair still unsettled, by pair;
  * - `families.json`: one example per frame family and per order kind (for fixtures and review);
@@ -24,7 +24,7 @@ import { allReadings, constructionFor, readParse, wordKey } from "./read.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(here, "..", "..");
-const outDir = join(rootDir, "tmp", "interpret-sweep");
+const outDir = join(rootDir, "tmp", "out", "interpret-sweep");
 const ratchetPath = join(here, "coverage-ratchet.json");
 
 type Sample = { ageben: string; source: string; word: string; slot: string; places?: string[] };
@@ -165,8 +165,8 @@ describe("reader sweep over the doc examples", () => {
     const stored = JSON.parse(readFileSync(ratchetPath, "utf8")) as Ratchet;
     const now = ratchetNow;
     const gained = Object.keys(now.keys).filter((key) => !(key in stored.keys));
-    assert.deepEqual(gained, [], `keys with no coverage problems before now have some (coverage.ts; tmp/interpret-sweep/coverage.json)`);
-    assert.ok(now.missing <= stored.missing, `missing words rose: ${stored.missing} → ${now.missing} (tmp/interpret-sweep/coverage.json)`);
-    assert.ok(now.doubled <= stored.doubled, `doubled words rose: ${stored.doubled} → ${now.doubled} (tmp/interpret-sweep/coverage.json)`);
+    assert.deepEqual(gained, [], `keys with no coverage problems before now have some (coverage.ts; tmp/out/interpret-sweep/coverage.json)`);
+    assert.ok(now.missing <= stored.missing, `missing words rose: ${stored.missing} → ${now.missing} (tmp/out/interpret-sweep/coverage.json)`);
+    assert.ok(now.doubled <= stored.doubled, `doubled words rose: ${stored.doubled} → ${now.doubled} (tmp/out/interpret-sweep/coverage.json)`);
   });
 });

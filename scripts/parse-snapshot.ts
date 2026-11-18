@@ -3,7 +3,7 @@
  * phrase span in this checkout's docs/grammar/. Both parsers read the same spans, so a difference
  * is a parser change, never a doc change. Exits 1 when any span parses differently.
  *
- * The ref's src/, data/ and package.json are extracted to tmp/parse-ref/<sha>/ and bundled once.
+ * The ref's src/, data/ and package.json are extracted to tmp/cache/parse-ref/<sha>/ and bundled once.
  *
  * With `--drop-one` (one word deleted) and / or `--swap` (two neighboring words swapped), it compares variants of each
  * span instead: inputs beyond the docs, where a parser change can alter a tree or a rejection that no doc sentence shows.
@@ -24,6 +24,7 @@ import { buildSync } from "esbuild";
 import { docSpans, spanVariants } from "../src/grammar-check/corpus.js";
 import { loadDefaultTables, parseWithTables } from "../src/parse/index.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 type Parse = (text: string) => unknown;
 
@@ -36,7 +37,7 @@ const rawToo = args.includes("--raw");
 
 async function refParser(ref: string): Promise<{ sha: string; parse: Parse }> {
   const sha = execFileSync("git", ["rev-parse", "--short", ref], { cwd: REPO_ROOT, encoding: "utf8" }).trim();
-  const dir = join(REPO_ROOT, "tmp", "parse-ref", sha);
+  const dir = tmpPath("cache", "parse-ref", sha);
   const bundle = join(dir, "parse.bundle.mjs");
   if (!existsSync(bundle)) {
     mkdirSync(dir, { recursive: true });

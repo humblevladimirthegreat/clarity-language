@@ -4,7 +4,7 @@
  *
  * Run: npm run retie-docs
  *      npm run retie-docs -- --write
- *      npm run retie-docs -- --map tmp/lexicon-retie-map.json --write
+ *      npm run retie-docs -- --map tmp/state/lexicon-retie-map.json --write
  *
  * Only spans the doc lint reads as Ageben are rewritten (plus emphasised prose runs that parse
  * as an Ageben sentence or phrase); other hits are listed for review. English copies follow

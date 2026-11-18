@@ -5,7 +5,7 @@
  *
  * Run: npm run english-helper-wordnet   (after a lexicon CSV change; the staleness test says when)
  *
- * Fetches Open English WordNet 2025 into tmp/oewn-2025/ once. The output holds English words only, never root
+ * Fetches Open English WordNet 2025 into tmp/cache/oewn-2025/ once. The output holds English words only, never root
  * spellings, so it is committed and neither the site build nor CI needs WordNet.
  *
  * - synonym: shares a synset with a sense, both within their first SYNONYM_RANK senses; or an

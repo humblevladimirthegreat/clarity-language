@@ -2,7 +2,7 @@
 // Test runner: splits the test files across a few shards that run in parallel. Each
 // shard runs its files in one process (--test-isolation=none), so the sentence parser,
 // whose construction takes seconds, is built once per shard instead of once per file.
-// Each shard's output is buffered and saved to tmp/test-last.log. stdout carries the shard lines
+// Each shard's output is buffered and saved to tmp/logs/test-last.log. stdout carries the shard lines
 // and, on failure, each failing test's file:line, name, assertion, and the command to rerun it.
 // BUILD_VERBOSE=1 prints every shard's full output instead; TEST_REPORT=raw (set by build.mjs)
 // prints failing shards' full output, so the build log keeps it for `npm run verify`.
@@ -13,10 +13,11 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { testFailureLines } from "./lib/build-output.ts";
+import { sweepScratch, tmpPath, tmpRel } from "../src/tmp-paths.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const tsx = join(root, "node_modules", ".bin", "tsx");
-const LOG = "tmp/test-last.log";
+const LOG = tmpRel("logs", "test-last.log");
 const verbose = Boolean(process.env.BUILD_VERBOSE);
 const raw = process.env.TEST_REPORT === "raw";
 
@@ -27,6 +28,8 @@ const PATTERNS = [
   "docs/grammar/.vitepress/lib/*.test.ts",
   "scripts/lib/*.test.ts",
 ];
+
+sweepScratch();
 
 const args = process.argv.slice(2);
 const flags = args.filter((arg) => arg.startsWith("-"));
@@ -59,8 +62,8 @@ function runShard(index) {
 
 const results = await Promise.all(Array.from({ length: shards }, (_, i) => runShard(i + 1)));
 const failed = results.filter((r) => r.code !== 0);
-mkdirSync(join(root, "tmp"), { recursive: true });
-writeFileSync(join(root, LOG), results.map((r) => r.out).join("\n"));
+mkdirSync(tmpPath("logs"), { recursive: true });
+writeFileSync(tmpPath("logs", "test-last.log"), results.map((r) => r.out).join("\n"));
 if (failed.length && !verbose && !raw) {
   console.log(`\nFailing tests (full output: ${LOG}; BUILD_VERBOSE=1 prints it all):`);
   for (const line of testFailureLines(failed.map((r) => r.out).join("\n"), root)) console.log(line);

@@ -1,14 +1,14 @@
 /**
  * One quiet check per item: cheat-sheet blocks, build, and tests, compared with a saved baseline.
  *
- * Run: npm run verify -- --baseline          save the current errors to tmp/verify-baseline.json
+ * Run: npm run verify -- --baseline          save the current errors to tmp/state/verify-baseline.json
  *      npm run verify                        print PASS/FAIL, errors new since the baseline, and a resolved count
  *      npm run verify -- --allow-generate    also treat checkpoint errors on allowlist **generate** rows as expected
  *      npm run verify -- --fast              skip tests (cheat-sheet blocks and build only)
  *
  * Steps: `cheat-sheet-blocks --write`, then `node scripts/build.mjs` (which runs `npm test` as one
- * of its jobs, so tests run once). Keys come from the build's full log, tmp/build-last.log, not
- * its stdout. Output stays under about 30 lines; the full log is in tmp/verify-last.log. Exit
+ * of its jobs, so tests run once). Keys come from the build's full log, tmp/logs/build-last.log, not
+ * its stdout. Output stays under about 30 lines; the full log is in tmp/logs/verify-last.log. Exit
  * code 0 means no new errors.
  */
 import { spawnSync } from "node:child_process";
@@ -17,12 +17,13 @@ import { join } from "node:path";
 
 import { allowlistRows } from "../src/lint/checkpoint-inventory.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
+import { tmpPath, tmpRel } from "../src/tmp-paths.js";
 import { compare, jobKeys, jobOf, splitJobs, stripAnsi, type ErrorKey } from "./lib/verify.ts";
 
-const TMP = join(REPO_ROOT, "tmp");
-const BASELINE = join(TMP, "verify-baseline.json");
-const LAST_LOG = join(TMP, "verify-last.log");
-const BUILD_LOG = join(TMP, "build-last.log");
+const BASELINE = tmpPath("state", "verify-baseline.json");
+const LAST_LOG = tmpPath("logs", "verify-last.log");
+const LAST_LOG_REL = tmpRel("logs", "verify-last.log");
+const BUILD_LOG = tmpPath("logs", "build-last.log");
 const ALLOWLIST = join(REPO_ROOT, "docs", "meta", "procedures", "drill-generation.md");
 const SHOW = 22;
 
@@ -62,7 +63,7 @@ function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: s
   const build = sh("node scripts/build.mjs", fast ? { BUILD_SKIP_TEST: "1", BUILD_VERBOSE: "" } : { BUILD_VERBOSE: "" });
   // build.mjs saves every job's full output; its stdout is only a footer. Fall back to stdout if it died before writing the log.
   const buildOut = existsSync(BUILD_LOG) ? stripAnsi(readFileSync(BUILD_LOG, "utf8")) : build.out;
-  mkdirSync(TMP, { recursive: true });
+  mkdirSync(tmpPath("logs"), { recursive: true });
   writeFileSync(LAST_LOG, `$ cheat-sheet-blocks --write (exit ${blocks.code})\n${blocks.out}\n$ build (exit ${build.code})\n${buildOut}`);
 
   const jobs = splitJobs(buildOut);
@@ -70,7 +71,7 @@ function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: s
   jobs.unshift({ label, ok: blocks.code === 0, lines: blocks.out.split("\n") });
   const keys = jobs.flatMap(jobKeys);
   if (build.code !== 0 && !jobs.slice(1).some((j) => !j.ok)) {
-    keys.push(`build | (failed) | exit ${build.code} with no failed job line; see tmp/verify-last.log`);
+    keys.push(`build | (failed) | exit ${build.code} with no failed job line; see ${LAST_LOG_REL}`);
   }
   return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label) };
 }
@@ -86,9 +87,10 @@ function main(): void {
     const generate = generatePages();
     const onGenerate = compare(keys, [], ran, generate).generate;
     const baseline: Baseline = { saved: new Date().toISOString(), fast: options.fast, keys };
+    mkdirSync(tmpPath("state"), { recursive: true });
     writeFileSync(BASELINE, `${JSON.stringify(baseline, null, 2)}\n`);
     console.log(`verify: BASELINE saved, ${keys.length} error key(s), ${onGenerate} on generate rows (${failedNote}; ${secs})`);
-    console.log("  tmp/verify-baseline.json; full log tmp/verify-last.log");
+    console.log(`  ${tmpRel("state", "verify-baseline.json")}; full log ${LAST_LOG_REL}`);
     return;
   }
 
@@ -115,8 +117,8 @@ function main(): void {
       shown += 1;
     }
   }
-  if (result.fresh.length > shown) console.log(`  ... ${result.fresh.length - shown} more new; see tmp/verify-last.log`);
-  if (!pass) console.log("  full log: tmp/verify-last.log");
+  if (result.fresh.length > shown) console.log(`  ... ${result.fresh.length - shown} more new; see ${LAST_LOG_REL}`);
+  if (!pass) console.log(`  full log: ${LAST_LOG_REL}`);
   process.exit(pass ? 0 : 1);
 }
 

@@ -2,23 +2,24 @@
  * Echo metric, Step 3 (docs/proposals/echo-metric.md): how well a root echoes the pronunciation
  * of its concrete English label, 0–1.
  *
- *   node scripts/echo-metric.ts            score every published root → tmp/echo-pron/metric.csv + metric.md
- *   node scripts/echo-metric.ts --sample   also draft tmp/echo-pron/ratings.csv (≈50 roots to rate 0–3 by ear)
+ *   node scripts/echo-metric.ts            score every published root → tmp/out/echo-pron/metric.csv + metric.md
+ *   node scripts/echo-metric.ts --sample   also draft tmp/state/echo-ratings.csv (≈50 roots to rate 0–3 by ear)
  *   node scripts/echo-metric.ts --tune     grid-search the weights against the ratings (Spearman ρ)
  *
- * Reads tmp/echo-pron/pron.csv (run scripts/echo-pronunciation.ts first) and tmp/cmudict.dict
+ * Reads tmp/out/echo-pron/pron.csv (run scripts/echo-pronunciation.ts first) and tmp/cache/cmudict.dict
  * (legal English onsets, for syllable breaks).
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { parseCsv, serializeCsv } from '../src/csv.ts';
+import { tmpPath } from '../src/tmp-paths.ts';
 import { echo, loadPron, WEIGHTS, type Weights } from '../src/echo-metric.ts';
 
 export { echo, loadPron, WEIGHTS, type Weights };
 
-const PRON = 'tmp/echo-pron/pron.csv';
-const OUT = 'tmp/echo-pron';
+const PRON = tmpPath('out', 'echo-pron', 'pron.csv');
+const OUT = tmpPath('out', 'echo-pron');
 
-/** One tmp/echo-pron/pron.csv row (scripts/echo-pronunciation.ts). */
+/** One tmp/out/echo-pron/pron.csv row (scripts/echo-pronunciation.ts). */
 type PronRow = { emoji: string; concrete: string; lookup: string; cmu: string; ageben: string; status: string };
 
 // ---- CLI ----
@@ -44,7 +45,7 @@ if (import.meta.main) {
   ].join('\n'));
   console.log(`${scored.length} roots, mean echo ${mean(scored.map((r) => r.score)).toFixed(3)} → ${OUT}/metric.{csv,md}`);
 
-  const RATINGS = `${OUT}/ratings.csv`;
+  const RATINGS = tmpPath('state', 'echo-ratings.csv');
   if (process.argv.includes('--sample')) {
     if (existsSync(RATINGS)) throw new Error(`${RATINGS} exists; delete it to redraw the sample`);
     // Spelling traps the old metric misread, then evenly spaced by score.

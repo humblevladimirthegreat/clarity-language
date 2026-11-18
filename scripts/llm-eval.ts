@@ -6,7 +6,7 @@
  * the reply against the doc English with a stronger model, and report the miss rate per
  * construction ID and per label. Calls `claude -p`, so it costs money and is not part of `npm test`.
  *
- * Output goes to `tmp/llm-eval/` (gitignored): `results.jsonl` (one row per pair; a rerun with the
+ * Output goes to `tmp/state/llm-eval/` (gitignored; paid results, never cleaned): `results.jsonl` (one row per pair; a rerun with the
  * same settings reuses rows whose prompt is unchanged), `report.md`, and `report.json`.
  *
  * Run: npm run llm-eval -- [--n 200] [--seed 1] [--concurrency 4]
@@ -23,6 +23,7 @@ import { buildPrompt, featureWeights, normalizeGloss, type ExamplePair } from ".
 import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { claude as claudeCall, rng, shuffle, withRetry } from "./lib/claude-cli.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 // ---------------------------------------------------------------------------------------------
 // Options
@@ -40,7 +41,7 @@ const JUDGE = flag("judge", "claude-opus-5-5");
 const FRESH = process.argv.includes("--fresh");
 const ONLY = flag("only", "").split(",").filter(Boolean);
 
-const OUT = join(REPO_ROOT, "tmp", "llm-eval");
+const OUT = tmpPath("state", "llm-eval");
 const EMPTY = join(OUT, "empty");
 const RESULTS = join(OUT, "results.jsonl");
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");

@@ -21,7 +21,7 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run dev` | VitePress local preview of grammar docs (served under `/grammar/`) |
 | `npm run docs:publish` | Production docs build: VitePress build, Amplify extras (`dist/`), what Amplify runs |
 | `npm run docs:preview` | Preview the production docs build |
-| `npm run convert-word` | Convert English to an Ageben root; `--lexicon` rewrites the CSVs (including compound stems and overlay sense forms) and dumps `tmp/lexicon-retie-map.json` (`--only` limits rows) |
+| `npm run convert-word` | Convert English to an Ageben root; `--lexicon` rewrites the CSVs (including compound stems and overlay sense forms) and dumps `tmp/state/lexicon-retie-map.json` (`--only` limits rows) |
 | `npm run retie-docs` | Dry-run retie from that map: Ageben in `docs/`, `AGENTS.md`, `README.md`, heading anchors, and test fixtures, with names / quoted payloads / morph lines following; stale roots in other source are listed for review (`--write` to apply, once per map) |
 | `npm run lexicon-search` | Lexicon search CLI (the docs site has the same search at `/grammar/lexicon`) |
 

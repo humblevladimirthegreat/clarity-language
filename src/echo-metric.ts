@@ -8,9 +8,9 @@ import { join } from "node:path";
 import { parseCsv } from "./csv.ts";
 import { CMU_PATH } from "./cmu-dict.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { REPO_ROOT } from "./repo-paths.ts";
+import { tmpPath } from "./tmp-paths.ts";
 
-const PRON = join(REPO_ROOT, "tmp", "echo-pron", "pron.csv");
+const PRON = tmpPath("out", "echo-pron", "pron.csv");
 
 export type Weights = {
   /** First consonant of the word. */ start: number;
@@ -21,7 +21,7 @@ export type Weights = {
   /** Primary-stress vowel. */ vStress: number;
   /** Any other vowel except unstressed AH0 (which counts 0). */ vOther: number;
 };
-/** Tuned against tmp/echo-pron/ratings.csv (ρ 0.73 → 0.78): codas stay below onsets (editor), stronger decay, vowels halved. */
+/** Tuned against tmp/state/echo-ratings.csv (ρ 0.73 → 0.78): codas stay below onsets (editor), stronger decay, vowels halved. */
 export const WEIGHTS: Weights = { start: 3, stressOnset: 2, onset: 1, coda: 0.75, decay: 0.4, vStress: 0.5, vOther: 0.25 };
 
 /** A phoneme with its Ageben letter and its role in the metric. */

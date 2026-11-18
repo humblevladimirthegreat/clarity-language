@@ -2,7 +2,7 @@
 // Full build: generate the word parser (only when word.peggy changed), typecheck,
 // pad exercise spoilers (rewrites docs, so it runs before anything reads them),
 // then run tests, doc lints, eslint and the VitePress build in parallel.
-// Every job's output is buffered and saved to tmp/build-last.log, in the order jobs finish,
+// Every job's output is buffered and saved to tmp/logs/build-last.log, in the order jobs finish,
 // each followed by its `✓` / `✗ label (12.3s)` line (`npm run verify` reads that log).
 // stdout carries only the status lines, warnings, `build ok` / `build FAILED`, and on failure
 // a Failures footer: each failing job's issue lines with file:line, last. BUILD_VERBOSE=1 also
@@ -14,12 +14,13 @@ import { fileURLToPath } from "node:url";
 
 import { buildFooter } from "./lib/build-output.ts";
 import { mtime } from "./lib/run-bundled.mjs";
+import { strayTmpEntries, sweepScratch, tmpPath, tmpRel } from "../src/tmp-paths.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const bin = (name) => join(root, "node_modules", ".bin", name);
 
 const WARNING_LIMIT = 20;
-const LOG = "tmp/build-last.log";
+const LOG = tmpRel("logs", "build-last.log");
 const verbose = Boolean(process.env.BUILD_VERBOSE);
 const log = [];
 
@@ -60,8 +61,8 @@ function finish(failed) {
   const summary = `build ${failed.length ? "FAILED" : "ok"} in ${((Date.now() - t0) / 1000).toFixed(1)}s`;
   log.push(`\n${summary}`);
   if (failed.length) log.push(`failed: ${failed.map((r) => r.label).join(", ")}`);
-  mkdirSync(join(root, "tmp"), { recursive: true });
-  writeFileSync(join(root, LOG), `${log.join("\n")}\n`);
+  mkdirSync(tmpPath("logs"), { recursive: true });
+  writeFileSync(tmpPath("logs", "build-last.log"), `${log.join("\n")}\n`);
   console.log(`\n${summary}`);
   if (failed.length) {
     console.log("");
@@ -76,6 +77,14 @@ async function step(label, cmd, args) {
 }
 
 const t0 = Date.now();
+
+sweepScratch();
+const stray = strayTmpEntries();
+if (stray.length) {
+  const line = `warning: tmp/ holds ${stray.join(", ")} outside its tier folders; move each into one (src/tmp-paths.ts)`;
+  log.push(line);
+  console.log(line);
+}
 
 const grammar = join(root, "src", "parse", "word.peggy");
 const generated = join(root, "src", "generated", "word-parser.js");

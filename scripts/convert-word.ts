@@ -9,10 +9,10 @@
  *      npm run convert-word -- --report
  *
  * --lexicon requires --only or --all (never re-places the whole lexicon by default).
- * --lexicon also writes tmp/lexicon-retie-map.json for npm run retie-docs.
+ * --lexicon also writes tmp/state/lexicon-retie-map.json for npm run retie-docs.
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import {
@@ -176,7 +176,7 @@ function printUsage(): void {
 --size where the kind takes one) it prints the five-letter root-tails root that word would take
 beside the published lexicon; with
 --kind named alone, the place-name root.
---lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
+--lexicon rewrites the published/overlay/compound CSVs and dumps tmp/state/lexicon-retie-map.json.
 A row keeps its root's length; a new row takes an annealed three-letter root when it is
 overlay-backed (or a marked pronoun), a place-name root when its kind is named, and a root-tails
 five-letter root from its kind and shape otherwise, its middle vowel steered by its size. A
@@ -425,9 +425,8 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
     writeFileSync(closedRootsPath, closed.text);
   }
 
-  const tmpDir = join(REPO_ROOT, "tmp");
-  mkdirSync(tmpDir, { recursive: true });
   const retieMapPath = join(REPO_ROOT, RETIE_MAP_RELATIVE_PATH);
+  mkdirSync(dirname(retieMapPath), { recursive: true });
   const compoundStems = compoundRows.flatMap((row, i) => {
     const newStem = retiedCompounds.rows[i]!.stem;
     return newStem === row.stem ? [] : [{ oldStem: row.stem, newStem }];

@@ -1,7 +1,7 @@
 /**
  * Coverage of the New General Service List (NGSL 1.2: 2809 lemmas, about 92% of general
  * English, CC BY-SA 4.0) against the lexicon CSVs and the grammar docs. The two NGSL files
- * are downloaded into tmp/ on first run.
+ * are downloaded into tmp/cache/ on first run.
  *
  * Run: npx tsx scripts/frequency-coverage.ts
  *      npx tsx scripts/frequency-coverage.ts --gaps-only
@@ -19,19 +19,20 @@
  *   gap       no hit
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname, join, relative } from "node:path";
+import { dirname, relative } from "node:path";
 
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import { loadGrammarEntries } from "../src/find/entries-cache.js";
 import { searchEnglish, tokens } from "../src/find/english.js";
 import { buildLexiconIndex, lookupLexicon, type LexiconSuggestion } from "../src/english-helper/lexicon.js";
 import { parseCompoundCsv, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
-import { dataPath, REPO_ROOT } from "../src/repo-paths.js";
+import { dataPath } from "../src/repo-paths.js";
+import { tmpPath } from "../src/tmp-paths.js";
 
 const NGSL_URL = "https://www.newgeneralservicelist.com/s/";
-const STATS = join(REPO_ROOT, "tmp", "NGSL_12_stats.csv");
-const FORMS = join(REPO_ROOT, "tmp", "NGSL_12_lemmatized_for_research.csv");
-const OUT = join(REPO_ROOT, "tmp", "frequency-coverage.csv");
+const STATS = tmpPath("cache", "NGSL_12_stats.csv");
+const FORMS = tmpPath("cache", "NGSL_12_lemmatized_for_research.csv");
+const OUT = tmpPath("out", "frequency-coverage.csv");
 
 async function ensure(path: string): Promise<string> {
   if (!existsSync(path)) {

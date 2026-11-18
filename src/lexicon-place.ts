@@ -15,11 +15,11 @@ import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
 import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { placeRoot } from "./place-root.ts";
-import { REPO_ROOT } from "./repo-paths.ts";
 import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, tailOf, type Kind, type Shape, type Size } from "./root-tails.ts";
 import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
+import { tmpPath } from "./tmp-paths.ts";
 
-const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
+const FREQ_FILE = tmpPath("cache", "en_50k.txt");
 const FREQ_URL = "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/en/en_50k.txt";
 const UNLISTED = 50001;
 const V = ["a", "e", "o", "u"];
