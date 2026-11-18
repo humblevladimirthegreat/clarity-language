@@ -7,7 +7,7 @@
  * frame and an `unread` entry.
  */
 import { CLOSED } from "../closed-roots.js";
-import type { ClassifyTables } from "../parse/classify.js";
+import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { overlayConstructionId } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { newMemberHead, titledPhrases, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
@@ -187,10 +187,22 @@ function frameOf(key: string, word: LexWord | undefined, here: Here | undefined)
   return { family, construction: constructionFor(key, word), key, anchor: row.anchor, words: word ? [word] : [], values: word ? wordValues(word) : {} };
 }
 
-function fromScope(frame: ScopeFrame): Frame {
+/**
+ * A holder seam's host stance: the channel, MAY or NOTIONAL its left root names (holder.md#holder). The seam word has
+ * no overlay of its own, so the host row's gloss is the stance word's own field, as a plain `/th/` overlay carries it.
+ */
+function holderHostValues(word: LexWord, tables: ClassifyTables | undefined): Record<string, string> {
+  const family = word.family;
+  if (family.kind !== "x" || !tables || !family.leftRoots[0]) return {};
+  const row = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? ""}`));
+  return row ? { gloss: row.gloss } : {};
+}
+
+function fromScope(frame: ScopeFrame, tables: ClassifyTables | undefined): Frame {
   // A tone mark has no word of its own (tone-marks.md#tone-marks).
   if (frame.tone) return toneFrame(frame.tone);
   const out = frameOf(frame.key, frame.word, undefined);
+  if (frame.holderHost) out.values = { ...holderHostValues(frame.word, tables), ...out.values };
   return {
     ...out,
     family: frame.family,
@@ -202,11 +214,11 @@ function fromScope(frame: ScopeFrame): Frame {
 }
 
 /** Copy a scope record's frames, orders and unsettled pairs into a reading (reader rule 3). */
-function copyScope(reading: Reading, scope: ClauseScope | undefined): void {
+function copyScope(reading: Reading, scope: ClauseScope | undefined, tables: ClassifyTables | undefined): void {
   if (!scope) return;
   const byScope = new Map<ScopeFrame, Frame>();
   for (const frame of scope.frames) {
-    const copy = fromScope(frame);
+    const copy = fromScope(frame, tables);
     byScope.set(frame, copy);
     reading.frames.push(copy);
   }
@@ -1007,7 +1019,7 @@ function readDependent(clause: Clause, here: Here): Reading | undefined {
 
 function readClause(clause: Clause, utterance: number, body: number, id: ReadingId, ctx: Ctx, scoped: boolean): Reading {
   const reading = emptyReading(id, utterance, body, clause);
-  copyScope(reading, ctx.scopes.get(clause));
+  copyScope(reading, ctx.scopes.get(clause), ctx.options.tables);
   const here: Here = { ctx, reading, utterance, body, scoped };
   for (const coord of titledPhrases(clause.units)) ctx.titled.add(coord);
   for (const unit of clause.units) readUnit(unit, here, clause);
@@ -1110,7 +1122,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
       const id = `${text}:${ui}.${bi}`;
       const reading = body ? readClause(body.clause, ui, bi, id, ctx, true) : emptyReading(id, ui, bi, { units: [] });
       const here: Here = { ctx, reading, utterance: ui, body: bi, scoped: true };
-      if (!body) copyScope(reading, ctx.bodiless.get(ui));
+      if (!body) copyScope(reading, ctx.bodiless.get(ui), ctx.options.tables);
       edgeDetails(utterance.left, here, reading.source.clause);
       if (bi === 0) edgeLinks(utterance.left, here);
       if (body?.linker) reading.links.push(link("linker", "unit:linker", [body.linker], prevTo(here)));

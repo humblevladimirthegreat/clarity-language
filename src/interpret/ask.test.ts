@@ -92,6 +92,14 @@ describe("ask: who paid Ana?", () => {
     assert.ok(!heard.some((m) => m.entry?.at === 0));
   });
 
+  it("a holder seam's channel filters: CLUES and REPORTED each match their own claim, and the holder must match", () => {
+    const seams = buildLog(turns("z-Alazun | v-walk | th-CLUES-Azozon", "z-Alazun | v-walk | th-REPORTED-Azozon", "z-Alazun | v-walk | th-REPORTED-Alazun"), tables);
+    const at = (gloss: string): number[] => ask(question(gloss), seams).map((m) => m.entry?.at ?? -1);
+    assert.deepEqual(at("y-question | z-Alazun | v-walk | th-CLUES-Azozon"), [0]);
+    assert.deepEqual(at("y-question | z-Alazun | v-walk | th-REPORTED-Azozon"), [1]);
+    assert.deepEqual(at("y-question | z-Alazun | v-walk | th-REPORTED-Alazun"), [2]);
+  });
+
   it("the host's referent wins when both sides resolve", () => {
     const sameAll = ask(question("y-question | z-wh | b-Azozon | v-pay"), log, { referent: () => "one" });
     assert.equal(sameAll.length, 5);
