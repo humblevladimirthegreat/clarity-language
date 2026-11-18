@@ -819,6 +819,32 @@ describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
     const readings = read("z-Alazun | th-REPORTED | v-departure . z-Azozon | th-NOTIONAL | v-walk . z-Azozon | v-sit");
     assert.equal(readings[2]!.links.find((l) => l.kind === "carriedFrame")!.key, "carry:notional");
   });
+
+  // Decided 2026-11-18 (13a): a holder on MAY carries; the MAY stays on its own sentence (holder.md#holder).
+  it("holder on MAY: the holder carries, the MAY does not", () => {
+    const readings = read("z-Alazun | th-MAY-Azozon | v-departure . z-Alazun | v-sleep");
+    assert.deepEqual(carried(readings)[1]!.map((c) => c.split(":")[1]), ["holder"]);
+  });
+
+  // Decided 2026-11-18 (14a): only a channel on the main clause starts or ends a frame (evidentiality.md#carry-forward).
+  it("a channel in a dependent or on one member of a clause join neither starts nor ends a frame", () => {
+    for (const middle of [
+      "[z-Azozon | th-MEMORY | v-walk | x-and.open | z-Alazun | v-run]",
+      "[z-Azozon | v-walk | x-and.open | z-Alazun | th-MEMORY | v-run]",
+      "z-Azozon | v-scream | [th-because | bl-that-clause] | z-Alazun | th-MEMORY | v-punch",
+    ]) {
+      const readings = read(`z-Alazun | th-REPORTED | v-departure . ${middle} . z-Alazun | v-sit`);
+      assert.deepEqual(carried(readings).map((c) => c.map((s) => s.split("->")[1])), [[], [`${readings[0]!.id}:stance`], [`${readings[0]!.id}:stance`]], middle);
+    }
+  });
+
+  // Decided 2026-11-18 (16a): grounds you state are your claims on the same footing (evidentiality.md#carry-forward).
+  // The grounds after `blarl` is the body's nested dependent: the body takes the frame, and the dependent is inside it.
+  it("the grounds after `blarl` sit inside a body that takes the frame", () => {
+    const readings = read("z-Alazun | th-REPORTED | v-departure . z-Azozon | v-scream | [th-because | bl-that-clause] | z-Alazun | v-punch");
+    assert.deepEqual(carried(readings).map((c) => c.length), [0, 1]);
+    assert.equal(readings[1]!.links.find((l) => l.kind === "standIn")!.to, `${readings[1]!.id}/d`);
+  });
 });
 
 describe("reader audit (R8): doc examples, one per test, checked against the doc's meaning", () => {

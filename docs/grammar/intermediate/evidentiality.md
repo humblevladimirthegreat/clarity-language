@@ -259,6 +259,8 @@ The frame is not ended by a new [topic](topic.md#topic) or a return to one, the 
 >
 > "Azozon walked, so they say. Now, about Alazun: Alazun sat." (the sitting is hearsay too)
 
+A channel starts or ends a frame only on the sentence's main clause. A channel inside a [dependent](/dependents#dependent-clauses) or on one member of a [clause join](/joins#clause-joins) is about that part alone.
+
 Four things end the frame:
 
 - A new frame: any channel replaces it.

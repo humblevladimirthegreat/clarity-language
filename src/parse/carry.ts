@@ -7,7 +7,8 @@
  * bare statement, the word that set each frame; the reader turns each into a `carriedFrame` link.
  *
  * What the pages settle, and this file follows:
- * - Starts: a whole-clause channel, NOTIONAL or holder seam on a statement's own clause (evidentiality.md#carry-forward,
+ * - Starts: a whole-clause channel, NOTIONAL or holder seam on a statement's main clause, never one in a dependent or on
+ *   one clause-join member, which neither starts nor ends a frame (evidentiality.md#carry-forward,
  *   notional.md#notional-as-if-framing, holder.md#holder). A holder seam carries with the channel or NOTIONAL it sits on.
  *   A dated channel keeps its offset (dated-channel.md#dated-channel).
  * - Takes it: a statement with no such frame of its own, including one after a call, a reaction or an answer word, one

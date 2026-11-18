@@ -43,7 +43,7 @@ The seam letter keeps its meaning: [evidence strength](evidentiality.md#evidence
 >
 > "Rumor has it Azozon thinks Alazun left."
 
-A holder [carries forward](evidentiality.md#carry-forward) like a channel. After it, your bare claims go on giving that person's view, until a new frame, so you can tell a stretch of the story as they see it.
+A holder [carries forward](evidentiality.md#carry-forward) like a channel. After it, your bare claims go on giving that person's view, until a new frame, so you can tell a stretch of the story as they see it. A holder on MAY carries too, but the MAY stays on its own sentence.
 
 > `zalazun theyomazozon vudurul. zalazun vezuvel.`
 >
