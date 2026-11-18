@@ -104,7 +104,7 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 
 ## Tooling notes
 
-- Node ≥ 24 (runs `.ts` natively; see `.nvmrc`).
+- Node ≥ 24 (see `.nvmrc`). Run any `.ts` script or probe that imports from `src/` with `npx --no-install tsx <file>`, never plain `node`: `src/` imports `.js` paths, which only `tsx` maps to the `.ts` files.
 - Tests run with **`npm test`** (Node's built-in runner via `tsx --test`). `npm test` and `npm run build` end with a failure footer: each issue with `file:line`, the assertion or the fix, and the rule's `docs/meta/` anchor. Read it instead of rerunning; full output is in `tmp/test-last.log` / `tmp/build-last.log` (`BUILD_VERBOSE=1` prints it all). Vitest is intentionally **not** installed, never run bare `npx vitest`. Use `npx --no-install <tool>` to check for a CLI; avoid bare `npx <tool>` for tools this repo does not depend on.
 - Language design work goes through `introduction.md`, `purpose.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
 - **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `unassigned-reserved.md` for a newly rejected spelling and `design-decisions.md` when the rejection has a reason beyond *no reading yet*). Never change parser behavior without the matching grammar edit.
