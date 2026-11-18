@@ -8,7 +8,9 @@ import { CLOSED } from "../closed-roots.js";
 import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
-import { blankSites, PASS_THROUGH, type Effect, type Held, type Host, type Referent } from "./host.js";
+import { FRAME_KEYS } from "../parse/scope.js";
+import { questionFilters } from "./ask.js";
+import { blankSites, PASS_THROUGH, passThrough, type Effect, type Held, type Host, type Referent } from "./host.js";
 import { throughAntecedent } from "./match.js";
 import { createSession, run, type TurnResult } from "./run.js";
 import type { Term } from "./types.js";
@@ -457,5 +459,158 @@ describe("run: the other outcomes", () => {
     const r = say(toy({ handler: () => undefined }), "y-command | b-Azozon | v-pay")[0]!;
     assert.equal(r.outcome, "beyond");
     assert.deepEqual(r.beyond.map((p) => p.kind), ["handler"]);
+  });
+});
+
+/**
+ * The loop probe (L1): a command and a yes / no question under one frame of every family in FRAME_KEYS, and the
+ * turn-boundary cases, with the outcomes the loop gives today. `unknown` (lexReading:unknown) has no sample: it is the
+ * parser's fallback for a word it has no reading for, so no well-formed sentence carries it.
+ */
+describe("run: the loop probe (every frame family, turn boundaries)", () => {
+  const anyOne = (): Referent<string> => ({ kind: "one", entity: "it" });
+
+  // [family, gloss]: ok rows pass through (each frame on a PASS_THROUGH row); beyond rows name the family.
+  const COMMAND_OK: [string, string][] = [
+    ["force", "y-command | y-command | v-walk"],
+    ["force", "y-command | y-question | v-walk"],
+    ["sake", "y-command | v-walk | th-physical-met-any-term"],
+    ["attitude", "y-command | th-revelation | v-walk"],
+    ["attitude", "y-sleepy | y-command | v-walk"],
+    ["binder", "y-command | d-door | v-open"],
+    ["call", "y-Azozon | y-command | v-walk"],
+  ];
+  const COMMAND_BEYOND: [string, string][] = [
+    ["polarity", "y-command | v-walk | th-not"],
+    ["say", "y-command | v-walk | h-episode-event-ALLOW-said"],
+    ["stance", "y-command | v-walk | th-MAY"],
+    ["stance", "y-command | v-walk | th-REPORTED"],
+    ["holder", "y-command | v-walk | th-REPORTED-Azozon"],
+    ["hinge", "y-command | v-walk | [th-if | bl-rain]"],
+    ["intention", "y-command | v-walk | th-plan-itinerary"],
+    ["intention", "y-command | v-walk | th-WANT-unstated"],
+    ["intention", "y-command | h-ATTEMPT-trial | v-walk"],
+    ["ability", "y-command | h-ABIL-able | v-walk"],
+    ["phase", "y-command | h-still | v-walk"],
+    ["residue", "y-command | h-RESIDUE | v-walk"],
+    ["residue", "y-command | h-always | v-walk | h-FORMER"],
+    ["notional", "y-command | th-NOTIONAL | v-walk"],
+    ["mirative", "y-command | v-walk | th-MIRATIVE"],
+    ["contrary", "y-command | v-walk | [contrary-to | th-plan-itinerary]"],
+    ["occasion", "y-command | h-always | v-walk"],
+    ["binder", "y-command | [b-everything | g-cat] | v-pay"],
+    ["bar", "y-command | [z-listener | th-plan-itinerary | z-rank/more | b-later] | v-departure"],
+    ["quote", "y-command | d-CITE[flaw]# | v-tell"],
+  ];
+
+  it("every frame family but unknown has a command and a question sample", () => {
+    const families = new Set(Object.values(FRAME_KEYS).map((row) => row.family));
+    families.delete("unknown");
+    const probed = new Set([...COMMAND_OK, ...COMMAND_BEYOND, ...QUESTIONS].map(([family]) => family));
+    assert.deepEqual([...families].filter((f) => !probed.has(f)), []);
+  });
+
+  for (const [family, gloss] of COMMAND_OK) {
+    it(`command under ${family} runs: every frame on it is on a pass-through row with a grammar anchor (${gloss})`, () => {
+      const t = toy({ refer: anyOne });
+      const [r] = say(t, gloss);
+      assert.equal(r!.outcome, "ok", r!.beyond.map((p) => p.name).join(", "));
+      assert.equal(t.calls.length, 1);
+      const frames = r!.readings[0]!.reading.frames;
+      const own = frames.find((f) => f.family === "force");
+      const rest = frames.filter((f) => f !== own);
+      assert.ok(frames.some((f) => f.family === family), frames.map((f) => f.family).join(", "));
+      for (const f of rest) assert.ok(passThrough(f, rest)?.anchors.length, `${f.family}:${f.key}`);
+    });
+  }
+
+  for (const [family, gloss] of COMMAND_BEYOND) {
+    it(`command under ${family} is beyond and names it; no handler runs (${gloss})`, () => {
+      const t = toy({ refer: anyOne, accepts: () => [] });
+      const [r] = say(t, gloss);
+      assert.equal(r!.outcome, "beyond");
+      assert.ok(r!.beyond.some((p) => p.kind === "frame" && p.frame?.family === family), r!.beyond.map((p) => p.name).join(", "));
+      assert.equal(t.calls.length, 0);
+    });
+  }
+
+  // [family, question, filter today, first reply, decision]: asked after PAID (or after `logged`). A filter must be
+  // carried on a match's path, so a plain logged claim gives cannot say. Decision 25: a page puts these frames outside
+  // what is asked, yet the loop filters on them today.
+  const QUESTIONS: [string, string, boolean, string, (number | string)?][] = [
+    ["polarity", "y-question | z-Alazun | b-Azozon | v-pay | th-not", true, "cannotSay"],
+    ["say", "y-question | z-Alazun | b-Azozon | v-pay | h-episode-event-ALLOW-said", true, "cannotSay"],
+    ["stance", "y-question | z-Alazun | b-Azozon | v-pay | th-MAY", true, "cannotSay"],
+    ["holder", "y-question | z-Alazun | b-Azozon | v-pay | th-REPORTED-Ahelan", true, "cannotSay"],
+    ["hinge", "y-question | z-Alazun | b-Azozon | v-pay | [th-if | bl-rain]", true, "cannotSay"],
+    ["intention", "y-question | z-Alazun | b-Azozon | v-pay | th-plan-itinerary", true, "cannotSay"],
+    ["ability", "y-question | z-Alazun | h-ABIL-able | b-Azozon | v-pay", true, "cannotSay"],
+    ["phase", "y-question | z-Alazun | h-still | b-Azozon | v-pay", true, "cannotSay"],
+    ["residue", "y-question | h-RESIDUE | z-Alazun | b-Azozon | v-pay", true, "cannotSay"],
+    ["notional", "y-question | th-NOTIONAL | z-Alazun | b-Azozon | v-pay", true, "cannotSay"],
+    ["contrary", "y-question | z-Alazun | b-Azozon | v-pay | [contrary-to | th-plan-itinerary]", true, "cannotSay"],
+    ["occasion", "y-question | z-Alazun | h-always | b-Azozon | v-pay", true, "cannotSay"],
+    ["binder", "y-question | [z-everything | g-cat] | b-Azozon | v-pay", true, "cannotSay"],
+    ["quote", "y-question | z-Alazun | d-CITE[flaw]# | v-tell", true, "cannotSay"],
+    ["force", "y-question | y-question | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
+    ["call", "y-Ahelan | y-question | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
+    ["attitude", "y-question | th-hope | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
+    ["attitude", "y-sleepy | y-question | z-Alazun | b-Azozon | v-pay", true, "cannotSay", 25],
+    ["mirative", "y-question | z-Alazun | b-Azozon | v-pay | th-MIRATIVE", true, "cannotSay", 25],
+    ["sake", "y-question | z-Alazun | b-Azozon | v-pay | th-physical-met-any-term", true, "cannotSay", 25],
+    ["binder", "y-question | z-Alazun | d-door | v-open", false, "yes", "z-Alazun | d-door | v-open"],
+    ["bar", "y-question | [z-Alazun | th-plan-itinerary | z-rank/more | b-later] | v-departure", false, "cannotSay"],
+  ];
+
+  for (const [family, gloss, filter, shape, note] of QUESTIONS) {
+    it(`question under ${family}: ${filter ? "a filter" : "not a filter"}, replies ${shape}${note === 25 ? " (decision 25)" : ""} (${gloss})`, () => {
+      const t = toy();
+      const [told, r] = say(t, typeof note === "string" ? note : PAID, gloss);
+      assert.equal(told!.outcome, "ok", told!.error ?? "");
+      assert.equal(r!.outcome, "ok", r!.error ?? r!.beyond.map((p) => p.name).join(", "));
+      const reading = r!.readings[0]!.reading;
+      assert.equal(questionFilters(reading).some((f) => f.family === family), filter, questionFilters(reading).map((f) => f.key).join(", "));
+      assert.equal(shapes(r!)[0], shape);
+    });
+  }
+
+  it("the same question with no frame: yes from the log; unknown is an ok cannot say reply", () => {
+    const [, yes, unknown] = say(toy(), PAID, "y-question | z-Alazun | b-Azozon | v-pay", "y-question | z-Azozon | b-Alazun | v-pay");
+    assert.deepEqual(shapes(yes!), ["yes", "why"]);
+    assert.equal(unknown!.outcome, "ok");
+    assert.deepEqual(shapes(unknown!), ["cannotSay"]);
+  });
+
+  // [first move, closed by a period, then a bare body or a sentence linker]: two readings, the second carries
+  // nothing of the first (sentence-linkers.md#past-a-period).
+  const BODY = "z-Alazun | b-Azozon | v-pay";
+  const LINKED = "x-on-the-contrary | z-Azozon | v-walk";
+  const MOVES: [string, string, string][] = [
+    ["a call", "y-Ahelan", "statement"],
+    ["yes", "y-yes", "statement"],
+    ["no", "y-no", "statement"],
+    ["an interjection", "y-sleepy", "said"],
+  ];
+  for (const [what, move, force] of MOVES) {
+    for (const [after, rest, link] of [["a bare body", BODY, undefined], ["a sentence linker", LINKED, "linker"]] as const) {
+      it(`${what} closed by a period, then ${after}: its own move, logged as one turn`, () => {
+        const t = toy();
+        const session = createSession(t.host, tables);
+        const r = run(`${spell(move)}. ${spell(rest)}.`, session);
+        assert.equal(r.outcome, "ok", r.error ?? "");
+        assert.deepEqual(r.readings.map((x) => x.force), [force, "statement"]);
+        const [lone, next] = r.readings.map((x) => x.reading);
+        if (move === "y-yes" || move === "y-no") assert.ok(lone!.links.some((l) => l.kind === "polar"));
+        assert.ok(!next!.frames.some((f) => f.family === "call" || f.family === "attitude"));
+        assert.deepEqual(next!.links.map((l) => l.kind), link ? [link] : []);
+        assert.equal(session.log.entries.length, 1);
+        assert.equal(t.told.length, 2);
+        assert.equal(t.calls.length, 0);
+      });
+    }
+  }
+
+  it("a lone greeting or interjection is force said", () => {
+    for (const gloss of ["Azozon", "y-sleepy"]) assert.deepEqual(say(toy(), gloss)[0]!.readings.map((x) => x.force), ["said"]);
   });
 });

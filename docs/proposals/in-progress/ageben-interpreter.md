@@ -196,7 +196,23 @@ One per unit after its gate; the last carries the `AGENTS.md` rows and deletes t
 
 ## Open decisions
 
-All decisions (1–24) are decided; 21 (a), 23 (a) and 24 (a) on 2026-11-18, carried out by H7; numbers stay stable because commits cite them.
+All decisions (1–24) are decided; 21 (a), 23 (a) and 24 (a) on 2026-11-18, carried out by H7; numbers stay stable because commits cite them. L1 logged 25 and 26, both open.
+
+**25. Frames outside what is asked still filter a question.** `ask.ts` makes every frame on a question a filter except its ask force and a new-member binder (decision 18). So after `z-Alazun | b-Azozon | v-pay` (`zalazun bazozon varal.`), each of these answers *can't say*, though the bare question answers *yes*: a call, `y-Ahelan | y-question | z-Alazun | b-Azozon | v-pay` (`yahelan yel zalazun bazozon varal.`); a doubled act word, `y-question | y-question | …` (`yel yel …`); a speaker attitude, `y-question | th-hope | …` (`yel thuwuyom …`), or an interjection, `y-sleepy | y-question | …` (`yuzemel yel …`); MIRATIVE, `… | th-MIRATIVE` (`… themem`); a sake word on the clause, `… | th-physical-met-any-term` (`… thobatham`). Pages put each outside what is asked: speech-moves.md#vocative (a call does not change the claim), more-turn-words.md#doubled-act (the act stays the same), mirative.md#mirative (*stays yours, outside what is asked, as a speaker attitude does*), for-a-sake.md (*a sake word on the clause stays outside a question*). Tone marks are attitude frames too. The loop probe (`run.test.ts`) pins today's outcomes, marked decision 25.
+- (a) A question filters on no frame a command passes through: `questionFilters` drops every frame `passThrough` holds (call, force, attitude, clause sake), plus MIRATIVE, which no command passes yet (decision 26).
+- (b) Drop only the frames a page states for questions (call, attitude, MIRATIVE, sake); a doubled `yel yel` stays a filter.
+- (c) Keep them all as filters; the host's verdict decides.
+
+**Recommendation:** **(high)** (a). A learner who adds *Ahelan,* or *I hope* to a question asks the same thing and should get the same answer; one rule (outside the act is outside what is asked) matches the pages and keeps the command and question lists from drifting apart.
+
+**26. Speaker-side frames on a command with no page saying whether they are part of the act.** Every frame on a command other than force, call, attitude, clause sake and a lone new-member noun is `beyond` today. For most (polarity, occasion, ability, phase, intention, NOTIONAL, residue, hinge, holder, a universal, a say word, a bar, a quote) the frame changes what is done or whose word it is, so `beyond` is right and needs no row. Three are the speaker's own remark on a claim, and no page says what they do on a command:
+- MIRATIVE: `y-command | v-walk | th-MIRATIVE` (`yol vowurol themem.`). mirative.md#mirative settles questions only.
+- A channel or MAY: `y-command | v-walk | th-REPORTED` (`yol vowurol thebam.`), `y-command | v-walk | th-MAY` (`yol vowurol thomam.`). evidentiality.md says a command does not take a carried channel *because it is not a claim*, but not what a channel written on a command means (a relayed order? a hedge?).
+- Contrary to a stance: `y-command | v-walk | [contrary-to | th-plan-itinerary]` (`yol vowurol uom thagom.`). contrary-to.md#contrary-to-stance shows statements only.
+
+Options, per frame: (a) pass through, with a grammar line on its page saying it stays outside the act and a `PASS_THROUGH` row citing it; (b) stay `beyond`, with a grammar line saying the frame has no reading on a command (or what it means there); (c) leave it unstated and `beyond`.
+
+**Recommendation:** MIRATIVE (a), **(medium)**: the page already treats it as a speaker attitude in questions, and a learner's surprise should not block the act. A channel or MAY (b), **(medium)**: *walk, I hear* reads as a relayed order, which changes whose command it is, so the loop should not run it. Contrary to a stance (b), **(low)**: *walk, against my plan* may be a reluctant order or a report of one; until a page says, failing closed costs a learner one retry.
 
 ## Background
 
