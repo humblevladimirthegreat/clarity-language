@@ -4,6 +4,8 @@ band: advanced
 
 # Usually vs must {#usually-vs-must}
 
+For a general claim such as *usually* or *always*, a universal fence or restrictor says how far the claim reaches, and a channel before or after that word says how you know the whole claim or each case. A cause or condition on the claim says how things work, and `thehom` on a closed fence makes a definition, which needs no channel.
+
 ### A general claim and how you know it {#general-claims}
 
 English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/universals-domains#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say *who* or *when* the claim covers, and their ending says how many exceptions it allows: closed `-l` allows none, and open `-m` leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.

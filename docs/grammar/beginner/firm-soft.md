@@ -4,6 +4,8 @@ band: beginner
 
 # Firm and soft {#speech-act-firm-and-soft}
 
+Ageben changes one ending to say how firmly you hold a statement, question, or request: with `-l` you stand behind it, and with `-m` you offer it softly. A third ending, `-r`, holds it only for now, and you expect to revisit it.
+
 ### Standing behind or offering softly {#firm-or-soft-act}
 
 You already mark whether a turn is a statement, question, command, or prohibition. English softens any of these with extra words (*please*, *perhaps*, *for what it's worth*); Ageben changes only the ending of the act word, which is `y` + vowel + ending. With `-l` you stand behind the act, and with `-m` you offer it softly and leave the other person free to take it up or not. So you can put forward a view, ask, or make a request without insisting.

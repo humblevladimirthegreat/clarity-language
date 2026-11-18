@@ -4,6 +4,8 @@ band: intermediate
 
 # Tag pronouns {#pronoun-tags}
 
+When English labels people *A* and *O* to keep them apart, Ageben gives each one a tag, a label word that stays on the same person or thing however many others come and go. To refer to two tagged people or things together, one word stacks both tags.
+
 ### Naming with a tag {#naming-with-a-tag}
 
 English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells O*. A **tag** is that label. You choose it, and it stays on the same person or thing however many others come and go. Write the role letter, `w`, a tag vowel, and an ending. (cue: `w` ≈ *we call it*: the label you and the listener agree on)

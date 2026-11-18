@@ -4,9 +4,11 @@ band: intermediate
 
 # Because and iff {#because-and-iff}
 
+English *if*, *only if*, *if and only if*, and *because* each tie an outcome to a condition. Ageben has a hinge for each, and the hinge also says which way the link runs and whether you claim the condition is a fact. *Unless* and *even if* are built on the *if* hinge `thohem`: *unless* changes the word that stands for the next sentence, and *even if* puts the *although* hinge `thezem` before it.
+
 ### Choosing the hinge {#choosing-a-hinge}
 
-English *if*, *only if*, *if and only if*, and *because* each tie an outcome to a condition. Beginner gave you a hinge for each; the table sets them side by side and adds *only because*. Pick the hinge by which way the link runs (the condition is enough, the outcome needs it, or both) and by whether you claim the condition is a fact, so the listener hears both from the one word. Hinges take `-m`, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
+Beginner gave you a hinge for each of these four; the table sets them side by side and adds *only because*. Pick the hinge by which way the link runs (the condition is enough, the outcome needs it, or both) and by whether you claim the condition is a fact, so the listener hears both from the one word. Hinges take `-m`, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

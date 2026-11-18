@@ -4,6 +4,8 @@ band: intermediate
 
 # Whose view {#whose-view}
 
+To report what someone else thinks or feels, you join their name onto the word that says how you know their view, so you never report someone's mind without saying how you know it. Someone else's plan, aim, or motive takes their name the same way. Once the name is on, the rest of the clause gives their view, not yours; only the word that carries the name is your own claim.
+
 ### Naming whose view a sentence gives {#naming-a-holder}
 
 English *Azozon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Ageben, you name whose view a sentence gives (the **holder**) by joining their name onto a channel or [MAY](/knowing#may). Keep that word's own last letter (`-l`, `-m`, or `-r`) and write the name straight after it: `theyom` plus `azozon` is `theyomazozon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)

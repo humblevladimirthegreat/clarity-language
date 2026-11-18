@@ -4,6 +4,8 @@ band: advanced
 
 # Generations {#generations}
 
+You can name one member of a generation, such as a grandchild or a sub-sub-point, with one number word: a rank number plus an exponent that says how many generations away it is from the one in focus. The same forms name close kin (parents, siblings, children) but never side branches such as aunts or cousins, which you reach in two steps.
+
 ### Counting inside one level of a family or outline {#generation-counting}
 
 English counts inside one level of a family or an outline: *the third grandchild*, *the 3rd sub-point*. In Ageben you put an exponent with digits on a rank number (forward `#` / `ro` or end-relative `#-` / `ruo`). There it is not a power of ten: it says how many generations away from the person, version, or outline point in focus. One number word then says both which level you mean and which member of it.

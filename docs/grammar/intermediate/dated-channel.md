@@ -4,6 +4,8 @@ band: intermediate
 
 # Dated channel {#dated-channel-sitting}
 
+English counts time from now (*three hours ago*, *in three hours*); in Ageben you put that amount of time right after the word that says how you know, so a dated claim always says how you know it. For *now* and *today*, that amount is zero.
+
 ### Counting time from now {#counting-from-now}
 
 English *three hours ago* and *in three hours* count from now. Ageben counts from the channel instead: put a time [measure phrase](/measures-and-percent#measure-phrases) in `/b/` immediately after the channel word, and it becomes the **offset**, how far the event sits from now. The amount is **signed**: `-` is earlier than now, `+` is later than now. The offset always dates the event, not the moment you learned about it.

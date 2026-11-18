@@ -4,6 +4,8 @@ band: beginner
 
 # Thanks and sorry {#thanks-and-sorry}
 
+You thank and apologize in Ageben by saying whose sake was served or harmed. For thanks, you say your own sake is met; for sorry, you say the other person's sake went unmet.
+
 ### Saying thanks {#saying-thanks}
 
 To thank someone in Ageben, you have no set phrase like *thank you*. Instead you say that your sake is met: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served, so the thanks tells them what their help did for you; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)

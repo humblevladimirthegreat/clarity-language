@@ -4,9 +4,11 @@ band: beginner
 
 # Label seams {#how-far-a-label-reaches}
 
+English *Alazun is angry* can mean one outburst or the kind of person Alazun is, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word `th`, then a reach vowel, then the ending. Two reach vowels can also stack in a pair, for a reach like *every time but this one*.
+
 ### Four reach vowels {#reach-vowels}
 
-English *Alazun is angry* can mean one outburst or the kind of person Alazun is, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word `th`, then a reach vowel, then the ending. The reach vowel says how much of the person's scenes the label covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. The word keeps its usual role letter, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+The reach vowel says how much of a person's scenes the label covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. The word keeps its usual role letter, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
 > `zalazun gonumuthul.`
 >

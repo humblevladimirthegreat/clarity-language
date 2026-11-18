@@ -4,9 +4,11 @@ band: intermediate
 
 # Try {#try-sitting}
 
+English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails. In Ageben, an `/h/` word before the verb marks the attempt and how committed it is. A clause join then adds a backup that comes into play only if the attempt fails.
+
 ### Saying someone tries {#trying}
 
-English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails. To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb; the ending says how committed the attempt is. The sentence says the attempt happens, not whether it works, so you can report an attempt without claiming how it turned out. (Cue: 🧪 A test tube tries a sample to see what happens.)
+To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb; the ending says how committed the attempt is. The sentence says the attempt happens, not whether it works, so you can report an attempt without claiming how it turned out. (Cue: 🧪 A test tube tries a sample to see what happens.)
 
 It is an [intention adverb](/can-and-cant#intention-adverbs): it is about the whole clause, so next to another such word, the earlier of the two covers the later ([which word covers which](/clause#which-covers-which)). Unlike PLAN, an attempt is something others can watch, so it is not a stance and needs no holder (no one named whose view it gives).
 

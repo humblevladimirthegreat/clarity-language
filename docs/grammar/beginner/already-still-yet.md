@@ -4,6 +4,8 @@ band: beginner
 
 # Already and still {#already-still-not-yet-no-longer}
 
+You say how far a change has come by now with four words, for *already*, *still*, *not yet*, and *no longer*. For *has ever*, you pair *already* with *sometimes*; for *has never*, you use *never* alone.
+
 ### How far a change has come {#stage-of-change}
 
 English *already*, *still*, *not yet*, and *no longer* do not place an event in time; each compares what is true *now* with a change that has or has not come. Ageben uses four words for them, not a tense, so you can say how things stand now without saying when anything happened. Three are `/h/` words, because a change that has come, a state that goes on, and a state that has stopped can all be watched. *Not yet* is a `/th/` [stance](clause.md#stance-th) word, like MAY: it waits on a change that someone expects, and an expectation is in a mind. (cue: each root pictures the stage the change is at)

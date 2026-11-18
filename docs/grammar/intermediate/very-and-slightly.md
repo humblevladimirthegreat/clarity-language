@@ -4,6 +4,8 @@ band: intermediate
 
 # Very and slightly {#very-and-slightly}
 
+English grades with words like *very* and *kind of*, and Ageben puts such a word in one of two places. A degree word in `/w/`, right before an adjective or adverb, grades a quality or how something is done. One fixed word in `/h/` grades the action itself, saying it happened only to some degree, not fully.
+
 ### Grading a quality {#grading-a-quality}
 
 English says how much of a quality something has with words like *very*, *slightly*, and *completely*. Ageben puts such a degree word in `/w/`, right before the adjective or adverb it grades, as Beginner did with `welazem` *very*. The table gives the few fixed degree words that fill that role, and each one works before an adverb as well as an adjective, so you can grade how something is done as well as what it is like.

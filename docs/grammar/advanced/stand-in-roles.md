@@ -4,6 +4,8 @@ band: advanced
 
 # Stand-in words {#stand-in-words}
 
+English verbs such as *confirm* and *deny* name a speech act; Ageben builds them from a stand-in with the ending `-rn` on `/v/`, and the following sentence is the content you confirm or deny. English *it is … that* puts a whole sentence in the subject role, and a `/z/` stand-in does the same.
+
 ### Verbs that name a speech act {#speech-act-verbs}
 
 English has verbs that name a speech act as the event: *state*, *confirm*, *deny*, *agree*, as in *Azozon confirms it* or *I deny that …*. Ageben builds them from the stand-ins. The vowel still says what kind of content follows, and the first letter says which role that content fills. With the ending `-rn` (or `-n` after two vowels, as in `vaen`), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dern`** *a question*, **`dorn`** *a command*, **`durn`** *a prohibition*.

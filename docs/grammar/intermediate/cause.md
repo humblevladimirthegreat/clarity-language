@@ -4,9 +4,11 @@ band: intermediate
 
 # CAUSE {#cause-sitting}
 
+English *makes it happen* can name how a result comes about or the one who makes it happen. In Ageben, the stance word CAUSE right before a hinge says the condition is how the result is produced. With no hinge and a `bl-` word after it, it names the one who makes someone else act.
+
 ### What makes it happen {#mechanism}
 
-English *that is what makes it happen* points at how a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a hinge: the hinge names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
+English *that is what makes it happen* points at how a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a hinge: the hinge names the condition, and CAUSE says that condition is how the result is produced. (cue: ⚙️ *machine*: how the mechanism engages)
 
 As plain words, the same root is `zewol` *a machine* and `vewol` *to operate / engage*.
 

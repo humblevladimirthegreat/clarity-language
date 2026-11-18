@@ -4,6 +4,7 @@ band: intermediate
 
 # Tone marks {#tone-marks-sitting}
 
+In speech your voice shows how you feel; in writing, a mark in front of a word or a sentence shows that feeling without changing what the sentence does. To single out one word, as English does by stressing it or moving it, you mark that word only when you set it against others, because Ageben word order carries no emphasis.
 
 ### Showing your tone with a mark {#showing-your-tone}
 

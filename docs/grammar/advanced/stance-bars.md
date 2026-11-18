@@ -4,6 +4,8 @@ band: advanced
 
 # Every bar {#every-bar}
 
+English ranks a thing against many expectations (*than I remember*, *than they said*, *than I hoped*), and in Ageben any stance that sets a value can be that bar. A `/b/` word on the bar names who sets it: the source, the person who demands or grants, or the people whose cases make the pattern. The ranked item can also be a whole kind, written as a universal fence before the bar. Ability, rules, and hopes can be the bar as well, which gives *as … as possible* and *more than can be done for now*.
+
 ### Which expectation is the bar {#which-bar}
 
 English ranks a thing against many kinds of expectation: *than I remember*, *than they said*, *as … as possible*, *than I hoped*. A [plan bar](/bars#bars) ranks against what a plan set, a [channel bar](/bars#channel-bars) against what a source led you to expect, and a [sake bar](/bars#sake-bars) against what a sake needs. Any other stance that sets a value can be the bar too, and each keeps its own endings and meaning. The table lists them, so you can say which expectation the thing beats or falls short of.
