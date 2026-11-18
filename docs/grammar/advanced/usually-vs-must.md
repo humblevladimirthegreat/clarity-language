@@ -4,8 +4,7 @@ band: advanced
 
 # Usually vs must {#usually-vs-must}
 
-### Channels on a generalization {#generalization}
-<a id="universality-mood"></a>
+### A general claim and how you know it {#general-claims}
 
 English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](/universals-domains#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](/restrictors) (`hual` / `huam` / `hal`) already say *who* or *when* the claim covers, and their ending says how many exceptions it allows: closed `-l` allows none, and open `-m` leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
 
@@ -55,6 +54,8 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 | *by definition* | `zual` + `thehom blarl` | none | `zual geyel gwozeduyol thehom blarl zeyer veduyol.` |
 | *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/`, first | `thebal blezunal zalazun hal vabuvul.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `thubom zuam gogozel guzemel.` |
+
+### How things work, and definitions {#how-things-work}
 
 A [cause or condition](/causation) on a general claim says how things work. It holds for *each* member or occasion, the same way the verb does. Inside the sentence after `blarl`, resume the kind with `-r` (`zogozer`) to mean *that same one*: each cat, in turn.
 

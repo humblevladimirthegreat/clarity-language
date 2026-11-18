@@ -4,8 +4,7 @@ band: intermediate
 
 # CAUSE {#cause-sitting}
 
-### CAUSE {#cause}
-<a id="cause-mood"></a>
+### What makes it happen {#mechanism}
 
 English *that is what makes it happen* points at how a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thewom`** (CAUSE, root **`ewo`**) right before a hinge: the hinge names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
 
@@ -43,7 +42,7 @@ English *habit* / *triggered by*, when a trigger is how the act is produced, use
 
 **Compare with:** *always* (`hual`) says the act holds at every time, with no trigger. *Only when it rains* (`herulal hal`) says when the walking counts, not that rain produces it.
 
-#### Make someone do it {#make}
+### Make someone do it {#make}
 
 In English *Azozon makes Alazun speak*, Azozon makes it happen and Alazun does the speaking. Keep the one who does it (Alazun) as the subject of the verb. Put the one who makes it happen in a `bl-` word right after `thewom`, with no hinge.
 

@@ -4,8 +4,7 @@ band: advanced
 
 # Generations {#generations}
 
-### Counting inside one level of a family or outline {#ordinal-generation}
-<a id="generation-ordinal"></a>
+### Counting inside one level of a family or outline {#generation-counting}
 
 English counts inside one level of a family or an outline: *the third grandchild*, *the 3rd sub-point*. In Ageben you put an exponent with digits on a rank number (forward `#` / `ro` or end-relative `#-` / `ruo`). There it is not a power of ten: it says how many generations away from the person, version, or outline point in focus. One number word then says both which level you mean and which member of it.
 
@@ -35,7 +34,7 @@ The marker still counts **from the start** or **from the end**, but only among t
 
 On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrowamol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use `h#N`.
 
-#### Kin {#kin-generations}
+### Kin {#kin-generations}
 
 The generation forms name close relatives, and never side branches such as aunts, cousins, or nieces. That is because generations branch like a family tree, and a cohort holds only the members that hang from the same point of it:
 

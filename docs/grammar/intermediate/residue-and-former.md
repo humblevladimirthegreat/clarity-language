@@ -4,10 +4,7 @@ band: intermediate
 
 # Residue and former {#residue-and-former}
 
-### Residue and former climate {#residue-and-former-climate}
-<a id="residue"></a>
-<a id="former-climate"></a>
-<a id="episode-standing"></a>
+### What is still in effect {#residue}
 
 English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Ageben says how it stands now, its climate, with two `/h/` words. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now.
 
@@ -36,6 +33,8 @@ RESIDUE (`ara`) says the result still counts: an unpaid tab, a door that is stil
 **Compare with:** [*after*](/dependents#time-hinges) (`halam blohel`) orders two events. `haram` does not say the leaving was earlier; it says the outcome is still in effect. [LIVE](/knowing#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
 **Compare with:** after an act that broke a norm, `haram` says only that the outcome is still in effect: the money is still owed, the window still broken. That the act still counts against the person is [fault](/fault#fault) plus [a feeling](/how-you-feel#feeling-word), and both are yours to say.
+
+### A pattern that used to hold {#former-climate}
 
 FORMER (`ela`) says a usual pattern held, but you are not claiming it holds now: *Azozon always sings* as a past habit. Without it, [always](/restrictors) `hual` describes the pattern as it stands now. As a plain noun, `zelam` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
