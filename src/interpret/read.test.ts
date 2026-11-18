@@ -832,7 +832,6 @@ describe("reader audit (R8): doc examples, one per test, checked against the doc
 
   it(
     "verb-and-stance-joins.md:186: a join between a hinge and `blarl` denies only the grounds, so it nests in the hinge",
-    { todo: "polarity is a sibling clause frame with no order; interpreter.md#polarity says it nests in its term" },
     () => {
       const reading = one("z-Azozon | v-walk | [th-because | th-not] | bl-that-clause | z-Alazun | v-run");
       assert.ok(!reading.frames.some((f) => f.family === "polarity"), "not a whole-clause frame");
@@ -842,7 +841,6 @@ describe("reader audit (R8): doc examples, one per test, checked against the doc
 
   it(
     "in-clause-hooks.md:86: `never` on the hook covers the house after it (*never in a house*)",
-    { todo: "the house is a whole-clause binder over the claim, so it covers the `/w/` restrictor before it" },
     () => {
       const reading = one("z-dog | v-sleep | [[w-never | in] | b-house]");
       const house = reading.frames.find((f) => f.family === "binder" && f.words[0]?.raw === "bohehal");

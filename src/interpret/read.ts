@@ -230,6 +230,17 @@ function memberFrame(coord: NpCoord, term: Term, here: Here): void {
   hostOnHead(term, head, here);
 }
 
+/**
+ * A hook's landmark after a frame word on the hook (`wal al bohehal`, *never in a house*): the resolve stage gives it
+ * no whole-clause frame (`framedLandmarks` in the scope stage), and its binder sits under that frame, earlier over later
+ * (clause.md#which-covers-which, joins.md#everything-ua).
+ */
+function framedMember(coord: NpCoord, term: Term, under: Frame, here: Here): void {
+  const head = here.ctx.titled.has(coord) ? undefined : newMemberHead(coord, here.ctx.blanks);
+  if (!head) return;
+  nestFrame("slot:newMember", head, under, here).hosted = term;
+}
+
 function detailOf(key: string, word: LexWord, kind: string): Detail {
   const anchor = classOf(key)?.anchor ?? "";
   return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values: wordValues(word) };
@@ -694,6 +705,24 @@ function placeFrame(key: string, word: LexWord, reach: FrameReach | undefined, h
   return frame;
 }
 
+/**
+ * The one stance word a list-reach `/th/` join closes (`thomam thul`, `thahum thul blarl`): the join denies only that
+ * word, so it nests in that word's frame (rule 2; verb-and-stance-joins.md#stance-joins,
+ * verb-and-stance-joins.md#stance-join-before-barl). A join that closes several stance words denies their list, which
+ * no one frame holds, so it stays where it was.
+ */
+function listItemFrame(reach: FrameReach | undefined, closes: number[] | undefined, here: Here): Frame | undefined {
+  if (reach !== "list" || closes?.length !== 1) return undefined;
+  return here.reading.frames.find((f) => f.words[0]?.at === closes[0]);
+}
+
+/** A frame held inside another (rule 2): it keeps its word and sits in the outer frame's `inner`. */
+function nestFrame(key: string, word: LexWord, outer: Frame, here: Here): Frame {
+  const frame = frameOf(key, word, here);
+  outer.inner = [...(outer.inner ?? []), frame];
+  return frame;
+}
+
 function readH(unit: HUnit, here: Here, clause: Clause): void {
   const word = unit.word;
   const key = wordKey(word, unit.closes);
@@ -703,7 +732,8 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
     return;
   }
   if (row.cls.startsWith("frame:")) {
-    const frame = placeFrame(key, word, row.reach, here);
+    const item = listItemFrame(row.reach, unit.closes, here);
+    const frame = item ? nestFrame(key, word, item, here) : placeFrame(key, word, row.reach, here);
     if (unit.closes?.length) frame.values.closes = unit.closes.join(",");
     for (const w of unit.modifiers) {
       const holder: Detail = detailOf(key, word, "frame");
@@ -785,7 +815,9 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
   here.pendingHook = undefined;
   if (hook && unit.kind === "np") {
     hook.hosted = npTerm(unit.coord, here, clause);
-    memberFrame(unit.coord, hook.hosted, here);
+    const under = hook.frames?.filter((f) => f.words.length > 0).at(-1);
+    if (under) framedMember(unit.coord, hook.hosted, under, here);
+    else memberFrame(unit.coord, hook.hosted, here);
     return;
   }
   if (hook && unit.kind === "vp") {

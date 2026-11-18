@@ -448,6 +448,7 @@ No sentence states an order against another frame.
 **Whole clause:** a `ua` / `uo` fence and a phrase that brings in a new member (`slot:newMember`, decided 2026-11-17) each reach from where they stand to the end of the sentence, and on through a stand-in in it.
 
 - Order (within the family and against any frame word): `clause.md#which-covers-which`, as `joins.md#everything-ua` says: "Such a phrase follows the order rule for words that cover the whole clause …: when a clause has two of them, or one and a stance word, the earlier covers the later." Reach: `joins.md#everything-ua`, "reaches from where it stands to the end of its sentence. Whatever comes later is inside it."
+- A hook's landmark after a frame word on the hook (`zodozel vezuvel wal al bohehal.`, *never in a house*): the frame word comes first and reaches only the hook's phrase, so its binder nests under that frame word (rule 2; `clause.md#which-covers-which`, `in-clause-hooks.md#hook-w`) and does not pair.
 - `universals-domains.md#bound-tags`: "A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to".
 - `universals-domains.md#not-every` (against `polarity`): see `polarity`.
 - Standing exception: the holder covers its clause (`holder.md#holder`). A channel follows text order like any stance word (`usually-vs-must.md#generalization`).

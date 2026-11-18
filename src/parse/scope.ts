@@ -555,6 +555,30 @@ export function titledPhrases(units: readonly Unit[]): Set<NpCoord> {
   return out;
 }
 
+/** The frame row of a `/w/` word on a hook (a restrictor or a mood on one word), if it has one. */
+function hookModifierFrame(word: LexWord): FrameKeyRow | undefined {
+  const pos = word.pos ?? "";
+  if (word.reading === "restrictor") return FRAME_KEYS[pos === "w" ? "lexReading:restrictor:w" : "lexReading:restrictor"];
+  if (word.reading === "overlay" && word.overlay) return FRAME_KEYS[`overlay:${word.overlay.kind}:${pos}`];
+  return undefined;
+}
+
+/**
+ * The landmarks of hooks that carry a frame word (`wal al bohehal`, *never in a house*): the frame comes first and
+ * reaches only the hook's phrase, so by the earlier-covers-later rule it covers the new member the landmark brings in
+ * (clause.md#which-covers-which, joins.md#everything-ua, in-clause-hooks.md#hook-w). Such a landmark binds under that
+ * frame, not over the clause.
+ */
+export function framedLandmarks(units: readonly Unit[]): Set<NpCoord> {
+  const out = new Set<NpCoord>();
+  units.forEach((unit, k) => {
+    const next = units[k + 1];
+    if (unit.kind !== "hook" || next?.kind !== "np") return;
+    if (unit.modifiers.some((w) => hookModifierFrame(w) !== undefined)) out.add(next.coord);
+  });
+  return out;
+}
+
 /** The role phrases a clause reads itself: its own, and those every verb of a verb list shares (verb-and-stance-joins.md#vp-clause-forms). */
 function rolePhrases(clause: Clause): NpCoord[] {
   return clause.units.flatMap((unit): NpCoord[] => {
@@ -567,8 +591,9 @@ function rolePhrases(clause: Clause): NpCoord[] {
 function clauseFrames(clause: Clause, tables: ClassifyTables | undefined, blanks: ReadonlySet<LexWord>): ScopeFrame[] {
   const frames: ScopeFrame[] = [];
   const titled = titledPhrases(clause.units);
+  const framed = framedLandmarks(clause.units);
   for (const coord of rolePhrases(clause)) {
-    const head = titled.has(coord) ? undefined : newMemberHead(coord, blanks);
+    const head = titled.has(coord) || framed.has(coord) ? undefined : newMemberHead(coord, blanks);
     const member = head ? frame("slot:newMember", head) : undefined;
     if (member) frames.push(member);
   }

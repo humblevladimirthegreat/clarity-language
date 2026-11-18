@@ -115,9 +115,11 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
   const detail = (d: Detail, r: Reading, held: Set<LexWord>): void => {
     for (const w of d.words) hit(w, r, `detail:${d.kind}`, held);
     const inside = within(held, d.words);
+    // Frames first: a binder under the hook's frame word keeps the landmark's head and hosts its term, so it is the
+    // first host and the detail's copy of the same term is skipped.
+    for (const f of d.frames ?? []) frame(f, r, inside);
     term(d.hosted, r, inside, true);
     for (const x of d.details ?? []) detail(x, r, inside);
-    for (const f of d.frames ?? []) frame(f, r, inside);
     for (const c of d.content ?? []) reading(c);
   };
   const term = (t: Term | undefined, r: Reading, held: Set<LexWord>, hosted = false): void => {
