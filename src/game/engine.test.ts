@@ -6,17 +6,7 @@ import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { buildGameData, fullGlossIndex } from "./build.js";
 import { createEngine, type Engine } from "./engine.js";
-import {
-  adjectiveDrafts,
-  citationDrafts,
-  describeDrafts,
-  greetingDrafts,
-  listDrafts,
-  placeFragmentDrafts,
-  reportDrafts,
-  whereDrafts,
-  whichDrafts,
-} from "./generate.js";
+import { describeDrafts, greetingDrafts, listDrafts, reportDrafts, whereDrafts, whichDrafts } from "./generate.js";
 import { checkpointStops } from "./gating.js";
 import { gameLexicon } from "./lexicon.js";
 import { expandGloss, QUESTS } from "./quests.js";
@@ -155,9 +145,6 @@ describe("generator shapes", () => {
       listDrafts(gen, world, "guard", ["dog", "door"], lex.root("eye"), view, "I see a dog and a door."),
       describeDrafts(gen, world, "book", red, view, "A red book."),
       whereDrafts(gen, world, "book", "al", "study", view, "A book in a room."),
-      placeFragmentDrafts(gen, world, "ol", "table", view, "At a table."),
-      citationDrafts(gen, world, "dog", "A dog."),
-      adjectiveDrafts(gen, red, "Red."),
       greetingDrafts(gen, entity(world, "guard").name!),
       whichDrafts(gen, lex.root("dog")),
     ];

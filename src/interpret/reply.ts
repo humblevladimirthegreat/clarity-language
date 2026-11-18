@@ -3,8 +3,9 @@
  * spelled by gloss-inverse, and is parsed; a draft that does not parse to one tree is dropped, so the interpreter never
  * shows an unparsed line. Code never spells a root: a shape writes series glosses, or leaves glossed from a parsed word.
  *
- * Shared shapes: yes, no, cannot say, a fill answer as a fragment and as a full clause, *which one?*, and *why* (the
- * readings that decided, by id; it carries no line).
+ * Shared shapes: yes, no, cannot say, a fill answer as a fragment and as a full clause, *which one?* (a blank in the
+ * ambiguous term's role, or *what is it like?* about it), a list as one role, and *why* (the readings that decided, by
+ * id; it carries no line). `checkLine` is the one-tree check every shown line passes, a host's own lines too.
  */
 import { CLOSED, namedEnglish } from "../closed-roots.js";
 import type { ClassifyTables } from "../parse/classify.js";
@@ -12,6 +13,7 @@ import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-
 import { morphGlossFor, morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { throughAntecedent } from "./match.js";
+import type { ParseResult } from "../parse/types.js";
 import type { BlankSite } from "./host.js";
 import type { Term } from "./types.js";
 
@@ -31,21 +33,32 @@ function indexFor(tables: ClassifyTables): GlossIndex {
   return index;
 }
 
+/** A spelled line, parsed: `ok` when it reads as one tree; otherwise why not, with the parse when it read several ways. */
+export type LineCheck = { ok: true; result: ParseResult } | { ok: false; why: string; result?: ParseResult };
+
+/** Parse a spelled line (with its constructions) and check that it reads as one tree. */
+export function checkLine(ageben: string, tables: ClassifyTables): LineCheck {
+  let result: ParseResult;
+  try {
+    result = parseWithTables(ageben, tables, { constructions: true, checkAmbiguity: true });
+  } catch (error) {
+    return { ok: false, why: `does not parse (${(error as Error).message.split("\n")[0]})` };
+  }
+  return result.ambiguity?.length ? { ok: false, why: "reads more than one way", result } : { ok: true, result };
+}
+
+/** End a spelled line with a period unless it has its own end mark. */
+export const closed = (ageben: string): string => (/[.?!]$/.test(ageben) ? ageben : `${ageben}.`);
+
 /** Spell a draft and parse it; undefined unless it reads as one tree. */
 export function spell(draft: Draft, tables: ClassifyTables): string | undefined {
   let ageben: string;
   try {
-    ageben = glossToAgeben(draft.gloss, tables, indexFor(tables));
+    ageben = closed(glossToAgeben(draft.gloss, tables, indexFor(tables)));
   } catch {
     return undefined;
   }
-  if (!/[.?!]$/.test(ageben)) ageben += ".";
-  try {
-    const result = parseWithTables(ageben, tables, { checkAmbiguity: true });
-    return result.ambiguity?.length ? undefined : ageben;
-  } catch {
-    return undefined;
-  }
+  return checkLine(ageben, tables).ok ? ageben : undefined;
 }
 
 /** The first draft that spells and parses, as a reply of the given shape. */
@@ -70,6 +83,21 @@ export function cannotSayDraft(tables: ClassifyTables): Draft {
 /** *Which one?*: a fill-ask blank in the role the ambiguous term fills (fill-ask-roles.md#who-which-and-any). */
 export function whichOneDraft(role: "z" | "d" | "b"): Draft {
   return { gloss: `y-question | ${role}-wh`, english: "Which one?" };
+}
+
+/**
+ * *Which one?* about a noun: *what is it like?* with the noun as the subject (fill-ask-jobs.md#what-kind). `noun` is
+ * the noun's leaf, in any role.
+ */
+export function whatIsItLikeDraft(noun: { leaf: string; english: string }): Draft {
+  return { gloss: `y-question | g-wh | ${noun.leaf.replace(/^[a-z]+-/, "z-")}`, english: `Which ${noun.english}?` };
+}
+
+/** Several leaves in one role as a list: the one leaf, or `[a | b | <role>-and]` (joins.md#and-lists-a). */
+export function listGroup(leaves: readonly string[]): string {
+  if (leaves.length === 1) return leaves[0]!;
+  const role = leaves[0]!.slice(0, leaves[0]!.indexOf("-"));
+  return `[${leaves.join(" | ")} | ${role}-and]`;
 }
 
 /** A *why* reply: the readings (and held state) that decided, by id. */
@@ -136,9 +164,7 @@ export function heldLeaf(answer: { leaf: string; english: string }, place?: Plac
 /** A fill answer as a fragment: the answer word alone. */
 export function fillFragmentDrafts(answers: readonly { leaf: string; english: string }[]): Draft[] {
   if (answers.length === 0) return [];
-  if (answers.length === 1) return [{ gloss: answers[0]!.leaf, english: `${answers[0]!.english}.` }];
-  const role = answers[0]!.leaf.slice(0, answers[0]!.leaf.indexOf("-"));
-  return [{ gloss: `[${answers.map((a) => a.leaf).join(" | ")} | ${role}-and]`, english: `${answers.map((a) => a.english).join(" and ")}.` }];
+  return [{ gloss: listGroup(answers.map((a) => a.leaf)), english: `${answers.map((a) => a.english).join(" and ")}.` }];
 }
 
 /**

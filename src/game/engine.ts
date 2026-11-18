@@ -232,7 +232,7 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
     let readings: Reading[];
     current = ctx;
     try {
-      readings = readQuestion(session.log, terminated(ageben), tables, { speaker: session.speaker });
+      readings = readQuestion(session.log, ageben, tables, { speaker: session.speaker });
     } catch {
       return undefined;
     }
@@ -251,7 +251,7 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
   function perform(ctx: Ctx, text: string): Outcome {
     current = ctx;
     const before = ctx.lines.length;
-    const turn = run(terminated(text), session);
+    const turn = run(text, session);
     if (turn.outcome === "parse") {
       ctx.lines.push({ kind: "confused", card: { kind: "sentence", message: turn.error ?? "The sentence did not read." } });
       return "parse";
@@ -308,10 +308,4 @@ export function createEngine(tables: ClassifyTables, data: EngineData, options: 
   }
 
   return engine;
-}
-
-
-/** The loop reads a turn that ends in a period (H5: the log closes each turn itself; drop this then). */
-function terminated(text: string): string {
-  return /[.!?]$/.test(text.trim()) ? text.trim() : `${text.trim()}.`; // H5
 }

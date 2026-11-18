@@ -6,7 +6,6 @@
 import { capitalize, clause, listEnglish, nameOf, narrate, refuse, speak, speakFixed, traitsOf, type Ctx } from "./context.js";
 import { describeDrafts, greetingDrafts, listDrafts, reportDrafts, whereDrafts } from "./generate.js";
 import { traitsOf as rootTraits } from "./objects.js";
-import type { Scope } from "./reference.js";
 import {
   addEntity,
   contents,
@@ -23,7 +22,7 @@ import {
   visibleTo,
 } from "./world.js";
 import type { Reading } from "../interpret/types.js";
-import type { EntityId, Outcome, WorldEvent } from "./types.js";
+import type { EntityId, Outcome, Scope, WorldEvent } from "./types.js";
 
 export type Doing = {
   ctx: Ctx;

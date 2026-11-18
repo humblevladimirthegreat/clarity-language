@@ -11,10 +11,9 @@ import { defaultVerdict } from "../interpret/run.js";
 import type { Claim, Frame, Reading, Term } from "../interpret/types.js";
 import { capitalize, nameOf, narrate, refuse, remember, speak, speakFixed, traitsOf, type Ctx } from "./context.js";
 import { greetingDrafts, whichDrafts } from "./generate.js";
-import { resolveNoun, type Resolution, type Scope } from "./reference.js";
 import { handlerFor, type Doing } from "./verbs.js";
-import { entity, has, heldBy, learn, roomOf, sees, setState, visibleTo } from "./world.js";
-import type { EntityId, EntityState, NounRef, Outcome, World } from "./types.js";
+import { entity, has, heldBy, knownTo, learn, roomOf, sees, setState, visibleTo } from "./world.js";
+import type { Entity, EntityId, EntityState, Outcome, Scope, World } from "./types.js";
 
 /** The referent of a command's object whose verb makes it (`construct`): nothing in the scene yet. */
 export const UNMADE = "";
@@ -51,33 +50,120 @@ function placeHolds(world: World, id: EntityId, hook: string, landmark: EntityId
 /** A pointer word's role (pronouns.md#role-pointers): only the plain `/u e/ -r` pointers are read. */
 const POINTER_ROLES: Record<string, "agent" | "patient" | "recipient"> = { z: "agent", d: "patient", b: "recipient" };
 
-/** The engine's noun slot for a term; a string says why the game cannot read it. */
-function nounOf(term: Term): NounRef | string {
-  const adjsOf = (t: Term): LexWord[] => ("details" in t && t.details ? t.details.flatMap((d) => d.words).filter((w) => !!contentRoot(w)) : []);
+const isPointer = (word: LexWord) => word.family.kind === "x" && word.family.xFamily === "pointer";
+
+function pointerRole(word: LexWord): "agent" | "patient" | "recipient" | undefined {
+  if (word.family.kind !== "x" || word.family.reachVowel !== "u" || word.family.pointerVowel !== "e" || word.ending !== "r") return undefined;
+  return POINTER_ROLES[word.family.part ?? ""];
+}
+
+/** Which entity a term means, or why it means none. */
+export type Resolution =
+  | { ok: true; id: EntityId }
+  | { ok: false; reason: "none"; root?: string }
+  | { ok: false; reason: "ambiguous"; root: string; candidates: EntityId[] }
+  | { ok: false; reason: "nobody"; word: LexWord };
+
+/** Where a term is looked for: who says *I* and *you*, whose view the reach is measured from, and how far it reaches. */
+type Reach = { world: World; speaker: EntityId; listener?: EntityId; viewer: EntityId; scope: Scope };
+
+/** Why the game cannot read a term in a role yet; undefined when it can. */
+function unreadable(term: Term): string | undefined {
   switch (term.kind) {
     case "speaker":
     case "listener":
-      return { kind: term.kind, word: term.word };
     case "blank":
-      return { kind: "gap", word: term.word };
+      return undefined;
     case "thing":
-      if (term.head.plural) return `a group (${term.head.raw})`;
-      return { kind: term.named ? "name" : "content", word: term.head, root: term.root, adjs: adjsOf(term) };
+      return term.head.plural ? `a group (${term.head.raw})` : undefined;
     case "pronoun": {
       const word = term.word;
-      if (word.family.kind === "x" && word.family.xFamily === "pointer") {
-        const role = POINTER_ROLES[word.family.part ?? ""];
-        if (!role || word.family.reachVowel !== "u" || word.family.pointerVowel !== "e" || word.ending !== "r") return `this role pointer (${word.raw})`;
-        return { kind: "pointer", word, role };
-      }
+      if (isPointer(word)) return pointerRole(word) ? undefined : `this role pointer (${word.raw})`;
       const to = throughAntecedent(term);
-      if (to.kind === "speaker" || to.kind === "listener") return { kind: to.kind, word };
-      const root = to.kind === "thing" ? to.root : contentRoot(word);
-      if (!root) return `this pronoun (${word.raw})`;
-      return { kind: to.kind === "thing" && to.named ? "name" : "content", word, root, adjs: adjsOf(to) };
+      if (to.kind === "speaker" || to.kind === "listener") return undefined;
+      return (to.kind === "thing" ? to.root : contentRoot(word)) ? undefined : `this pronoun (${word.raw})`;
     }
     default:
       return `a ${term.kind} in a role`;
+  }
+}
+
+/** Adjectives on a term that narrow which one it is. */
+const adjsOf = (t: Term): LexWord[] => ("details" in t && t.details ? t.details.flatMap((d) => d.words).filter((w) => !!contentRoot(w)) : []);
+
+/** The viewer's room and the rooms its doors lead to: places you can name and go to. */
+function roomsInReach(world: World, viewer: EntityId): Entity[] {
+  const here = roomOf(world, viewer);
+  if (!here) return [];
+  const rooms = new Set([here]);
+  for (const door of visibleTo(world, viewer)) for (const room of door.joins ?? []) rooms.add(room);
+  return [...rooms].map((id) => entity(world, id));
+}
+
+function inReach(reach: Reach): Entity[] {
+  const self = entity(reach.world, reach.viewer);
+  const rooms = roomsInReach(reach.world, reach.viewer);
+  const things = reach.scope === "known" ? knownTo(reach.world, reach.viewer) : visibleTo(reach.world, reach.viewer, { hidden: reach.scope === "search" });
+  return [...new Map([self, ...things, ...rooms].map((e) => [e.id, e])).values()];
+}
+
+/** The latest event with someone in that part: what a role pointer reaches. */
+function pointerTarget(world: World, role: "agent" | "patient" | "recipient"): EntityId | undefined {
+  for (let i = world.events.length - 1; i >= 0; i -= 1) {
+    const id = world.events[i]![role];
+    if (id) return id;
+  }
+  return undefined;
+}
+
+function pick(found: Entity[], root: string, adjs: LexWord[], anyOne: boolean): Resolution {
+  let left = found;
+  for (const adj of adjs) {
+    const prop = contentRoot(adj);
+    if (prop) left = left.filter((e) => e.props.includes(prop) || e.root === prop);
+  }
+  if (left.length === 0) return { ok: false, reason: "none", root };
+  // A first mention (**-l**) is any one of its kind; a known one (**-r**) must be the one both mean.
+  if (left.length === 1 || anyOne) return { ok: true, id: left[0]!.id };
+  return { ok: false, reason: "ambiguous", root, candidates: left.map((e) => e.id) };
+}
+
+/** A noun by its root: a name, or a kind used as a title (`yagayun` calls the guard; speech-moves.md#vocative). */
+function byRoot(reach: Reach, root: string, named: boolean, adjs: LexWord[], firstMention: boolean): Resolution {
+  const found = inReach(reach);
+  if (!named) return pick(found.filter((e) => e.root === root), root, adjs, firstMention);
+  const byName = found.filter((e) => e.name === root);
+  return pick(byName.length ? byName : found.filter((e) => e.root === root), root, adjs, false);
+}
+
+/**
+ * Which entity a term means. Start simple: the only one in reach, adjectives narrowing; with several left, the
+ * character asks which. *I* and *you* follow the turn; a role pointer reads the latest event with someone in that part.
+ */
+function resolveTerm(term: Term, reach: Reach): Resolution {
+  if (unreadable(term)) return { ok: false, reason: "none" };
+  const listener = (word: LexWord): Resolution => (reach.listener ? { ok: true, id: reach.listener } : { ok: false, reason: "nobody", word });
+  switch (term.kind) {
+    case "speaker":
+      return { ok: true, id: reach.speaker };
+    case "listener":
+      return listener(term.word);
+    case "thing":
+      return byRoot(reach, term.root, term.named, adjsOf(term), term.head.ending === "l");
+    case "pronoun": {
+      const word = term.word;
+      if (isPointer(word)) {
+        const id = pointerTarget(reach.world, pointerRole(word)!);
+        return id ? { ok: true, id } : { ok: false, reason: "none" };
+      }
+      const to = throughAntecedent(term);
+      if (to.kind === "speaker") return { ok: true, id: reach.speaker };
+      if (to.kind === "listener") return listener(word);
+      const root = to.kind === "thing" ? to.root : contentRoot(word)!;
+      return byRoot(reach, root, to.kind === "thing" && to.named, adjsOf(to), word.ending === "l");
+    }
+    default:
+      return { ok: false, reason: "none" };
   }
 }
 
@@ -96,11 +182,8 @@ export type GameHost = Host<EntityId>;
 export function createGameHost(ctx: () => Ctx): GameHost {
   /** A term's entity from `viewer`'s view: speaker is the player, listener the one called. */
   function resolve(term: Term, viewer: EntityId, scope: Scope): Resolution {
-    const c = ctx();
-    const noun = nounOf(term);
-    if (typeof noun === "string") return { ok: false, reason: "none" };
-    const { world } = c;
-    return resolveNoun(noun, { world, speaker: world.player, ...(world.addressee ? { listener: world.addressee } : {}), viewer, scope });
+    const { world } = ctx();
+    return resolveTerm(term, { world, speaker: world.player, ...(world.addressee ? { listener: world.addressee } : {}), viewer, scope });
   }
 
   /** Who a reading's call addresses: the call on it, else the latest call. */
@@ -367,8 +450,8 @@ export function createGameHost(ctx: () => Ctx): GameHost {
     const terms = [...ROLES.map((r) => claim.roles[r]), ...claim.predicate, ...placeDetails(claim).map((d) => d.hosted)];
     for (const term of terms) {
       if (!term) continue;
-      const noun = nounOf(term);
-      if (typeof noun === "string") out.push(noun);
+      const why = unreadable(term);
+      if (why) out.push(why);
     }
     if (claim.clauses) out.push("a clause join");
     const force = reading.frames.find((f) => f.family === "force")?.values.series;

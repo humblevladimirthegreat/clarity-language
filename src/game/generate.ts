@@ -2,10 +2,12 @@
  * The sentence generator's shapes. Each shape writes a morph gloss from world state, plus its English;
  * the voice spells the gloss and parses it, so the generator can show an odd line but never an unparsed one.
  * Shapes give alternatives in preference order when a first mention or a resume might read another way.
- * First shapes: yes/no answer, fill answer (fragment and full clause), describing a thing, reporting an
- * action, and the greeting and thanks chunks.
+ * The shapes here name world objects or wizard lines: describing a thing, saying where it is, reporting an action, a
+ * list of things, *which one?* about a scene noun, and the greeting and thanks chunks. Shapes any host can use (yes, no,
+ * fill answers, *which one?*, a list as one role, and the one-tree check) are in src/interpret/reply.ts.
  */
 import { CLOSED, namedEnglish } from "../closed-roots.js";
+import { listGroup, whatIsItLikeDraft, type Draft as ReplyDraft } from "../interpret/reply.js";
 import type { GameLexicon } from "./lexicon.js";
 import type { Voice } from "./voice.js";
 import { entity } from "./world.js";
@@ -39,7 +41,8 @@ export const FIXED = {
 /** Whose *I* and *you* a line uses. */
 export type View = { speaker?: EntityId; listener?: EntityId };
 
-export type Draft = { gloss: string; english: string; mentions: EntityId[] };
+/** A reply draft, with the entities it mentions (they count as known after it is said). */
+export type Draft = ReplyDraft & { mentions: EntityId[] };
 
 export type Generator = {
   voice: Voice;
@@ -114,7 +117,7 @@ export function listDrafts(gen: Generator, world: World, subject: EntityId, item
   const drafts: Draft[] = [];
   for (const fresh of [false, true]) {
     const objects = items.map((id) => gen.mention(world, id, "d", view, fresh));
-    const list = objects.length === 1 ? objects[0]! : `[${objects.join(" | ")} | d-and]`;
+    const list = listGroup(objects);
     drafts.push({ gloss: join([gen.mention(world, subject, "z", view), list, gen.verbLeaf(verb)]), english, mentions: items });
   }
   return drafts;
@@ -134,33 +137,12 @@ export function whereDrafts(gen: Generator, world: World, id: EntityId, hook: st
   }));
 }
 
-/** A place as a fragment answer: `[in | b-←room]` (fill-ask-jobs.md#where). */
-export function placeFragmentDrafts(gen: Generator, world: World, hook: string, landmark: EntityId, view: View, english: string): Draft[] {
-  return [false, true].map((fresh) => ({
-    gloss: `[${gen.hookLeaf(hook)} | ${gen.mention(world, landmark, "b", view, fresh)}]`,
-    english,
-    mentions: [landmark],
-  }));
-}
-
-/** A one-word answer as a citation (`uzozen.`, questions.md#fill-ask). */
-export function citationDrafts(gen: Generator, world: World, id: EntityId, english: string): Draft[] {
-  const e = entity(world, id);
-  const leaf = e.name ? gen.voice.leaf("", e.name, "n") : gen.voice.leaf("", e.root, "l");
-  return [{ gloss: leaf, english, mentions: [id] }];
-}
-
-/** An adjective as the answer to *what is it like?* (fill-ask-jobs.md#what-kind). */
-export function adjectiveDrafts(gen: Generator, prop: string, english: string): Draft[] {
-  return [{ gloss: gen.voice.leaf("g", prop, "l"), english, mentions: [] }];
-}
-
 /** A greeting: the speaker's own name as a citation (word-endings.md#greeting). */
 export function greetingDrafts(gen: Generator, nameRoot: string): Draft[] {
   return [{ gloss: gen.voice.leaf("", nameRoot, "n"), english: "Hello.", mentions: [] }];
 }
 
-/** Which one? `y-question | g-wh | z-←dog` (*What is the dog like?*, fill-ask-jobs.md#what-kind). */
+/** Which one? about a scene noun: `y-question | g-wh | z-←dog` (*What is the dog like?*). */
 export function whichDrafts(gen: Generator, root: string): Draft[] {
-  return [{ gloss: `y-question | g-wh | ${gen.voice.leaf("z", root, "r")}`, english: `Which ${gen.nounEnglish(root)}?`, mentions: [] }];
+  return [{ ...whatIsItLikeDraft({ leaf: gen.voice.leaf("z", root, "r"), english: gen.nounEnglish(root) }), mentions: [] }];
 }

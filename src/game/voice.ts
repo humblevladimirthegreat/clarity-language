@@ -7,9 +7,9 @@
 import { classify, type ClassifyTables } from "../parse/classify.js";
 import { glossToAgeben, indexRootForms, seriesGlossIndex, type GlossIndex } from "../parse/gloss-inverse.js";
 import { morphGlossFor } from "../parse/morph-gloss.js";
-import { parseWithTables } from "../parse/parse-core.js";
 import type { LexWord, ParseResult } from "../parse/types.js";
 import { parseWords } from "../parse/word.js";
+import { checkLine, closed } from "../interpret/reply.js";
 import type { Spoken } from "./types.js";
 
 export type Voice = {
@@ -56,15 +56,11 @@ export function unknownWordsIn(result: ParseResult): string[] {
   return [...found];
 }
 
-/** Parse a line the game is about to show; undefined unless it reads one way. */
-export function checkLine(ageben: string, gloss: string, english: string, tables: ClassifyTables): Spoken | undefined {
-  try {
-    const result = parseWithTables(ageben, tables, { constructions: true, checkAmbiguity: true });
-    if (result.ambiguity?.length) return undefined;
-    return { ageben, gloss, english, constructions: result.constructions ?? [], roots: lineRoots(result) };
-  } catch {
-    return undefined;
-  }
+/** A line the game is about to show, with what reading it needs; undefined unless it reads one way. */
+function spoken(ageben: string, gloss: string, english: string, tables: ClassifyTables): Spoken | undefined {
+  const check = checkLine(ageben, tables);
+  if (!check.ok) return undefined;
+  return { ageben, gloss, english, constructions: check.result.constructions ?? [], roots: lineRoots(check.result) };
 }
 
 export function createVoice(tables: ClassifyTables, spelled: Record<string, string> = {}): Voice {
@@ -94,7 +90,7 @@ export function createVoice(tables: ClassifyTables, spelled: Record<string, stri
           return undefined;
         }
       }
-      return checkLine(/[.?!]$/.test(ageben) ? ageben : `${ageben}.`, gloss, english, tables);
+      return spoken(closed(ageben), gloss, english, tables);
     },
   };
 }

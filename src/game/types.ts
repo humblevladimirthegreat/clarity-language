@@ -2,8 +2,6 @@
  * Shared types of the wizard sandbox engine (docs/proposals: `wizard-adventure.md`, milestone 1).
  * World state is plain JSON so a turn log, a walkthrough, or a reset can copy it.
  */
-import type { LexWord } from "../parse/types.js";
-
 export type EntityId = string;
 
 /** Where an entity is: loose in a room, at or on another entity, inside a container, or held. */
@@ -68,43 +66,8 @@ export type World = {
   nextId: number;
 };
 
-export type Force = "statement" | "question" | "command" | "prohibition";
-
-/** A noun slot as the player said it, before it is matched to the world. */
-export type NounRef =
-  | { kind: "content"; word: LexWord; root: string; adjs: LexWord[] }
-  | { kind: "name"; word: LexWord; root: string; adjs: LexWord[] }
-  | { kind: "speaker"; word: LexWord }
-  | { kind: "listener"; word: LexWord }
-  | { kind: "pointer"; word: LexWord; role: "agent" | "patient" | "recipient" }
-  /** A fill-ask blank (`zar`, `dar`, `bar`). */
-  | { kind: "gap"; word: LexWord };
-
-export type PlaceRef = { hook: string; word: LexWord; landmark: NounRef };
-
-/** One sentence as the engine reads it: who does what to whom, and what kind of turn it is. */
-export type Act = {
-  force: Force;
-  /** Calls at the left edge (`/y/` + **-n**). */
-  calls: LexWord[];
-  /** A lone named citation: the speaker's own name as a greeting. */
-  greeting?: LexWord;
-  polar?: "yes" | "no" | "sure";
-  interjections: LexWord[];
-  subject?: NounRef;
-  object?: NounRef;
-  recipient?: NounRef;
-  verb?: { word: LexWord; root: string } | { gap: LexWord };
-  /** Clause-level `/ɡ/` words: a property or kind of the subject (or a `gar` blank). */
-  predicate: LexWord[];
-  places: PlaceRef[];
-  /** `/h/`, `/w/`, and adjective-degree words the engine passes over. */
-  ignored: LexWord[];
-  /** Why the sentence is beyond the engine yet (one entry per part it cannot read). */
-  unsupported: string[];
-  /** The parser's discourse bindings for this sentence's pronouns. */
-  antecedents: Map<LexWord, LexWord>;
-};
+/** How far a noun reaches from a viewer: what it sees, what it knows of, or what a search turns up (hidden things too). */
+export type Scope = "visible" | "known" | "search";
 
 /** How a turn ended. `parse`: did not parse; `beyond`: parsed, but the game cannot do it yet; `refused`: someone could not or would not. */
 export type Outcome = "ok" | "parse" | "beyond" | "refused";
