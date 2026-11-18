@@ -196,16 +196,11 @@ export function createGameHost(ctx: () => Ctx): GameHost {
     return world.addressee;
   }
 
-  /**
-   * Apply a reading's calls: the one called becomes the addressee. `lenient` passes over a call that finds no one: a
-   * statement after a call-only turn is read in that turn's utterance and carries its call, though the player may
-   * have walked away from the one called since.
-   */
-  function applyCalls(reading: Reading, lenient = false): Outcome {
+  /** Apply a reading's calls: the one called becomes the addressee. A call that finds no one is refused. */
+  function applyCalls(reading: Reading): Outcome {
     const c = ctx();
     for (const frame of callFrames(reading)) {
       const res = resolve(frame.party!, c.world.player, "visible");
-      if (!res.ok && lenient) continue;
       if (!res.ok) return unresolved(c, res, undefined);
       if (res.id === c.world.player) return refuse(c, "You call your own name. No one else answers.");
       c.world.addressee = res.id;
@@ -368,7 +363,7 @@ export function createGameHost(ctx: () => Ctx): GameHost {
     const { world } = c;
     const { claim } = reading;
     const bodyless = !claim.verb && !Object.keys(claim.roles).length && !claim.predicate.length && !claim.details.length;
-    if (applyCalls(reading, !bodyless) === "refused") return "refused";
+    if (applyCalls(reading) === "refused") return "refused";
     if (bodyless) {
       if (callFrames(reading).length) {
         respondToCall(c, world.addressee!);
