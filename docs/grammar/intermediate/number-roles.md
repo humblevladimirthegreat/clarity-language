@@ -125,6 +125,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 | *sit* | `vehohel` |
 | *run* | `veruvol` |
 | *punch* | `vabuvul` |
+| *big* | `gelazem` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -162,6 +163,16 @@ z-Alazun | d-score | v-minus-three
 z-Azozon | v-punch | th-70-percent-likely
 :::
 
+**5.** *Ahelan is the third biggest.*
+
+::: details Show answer
+`zahelan zol wrogel gelazem.`
+
+[z-Ahelan | z-rank/more | [w-3rd | g-big]]
+
+The rank marker on `/w/` gives the place on the scale.
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `y_3.`
@@ -188,6 +199,14 @@ z-Ahelan | v-sit | h-3rd
 z-Azozon | v-punch | h-two
 
 *Azozon punches twice.*
+:::
+
+**4.** `zalazun zol wrodol gelazem.`
+
+::: details Show answer
+[z-Alazun | z-rank/more | [w-2nd | g-big]]
+
+*Alazun is the second biggest.*
 :::
 
 #### Pick one {#intermediate-pick-one}

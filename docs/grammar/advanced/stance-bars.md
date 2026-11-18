@@ -163,7 +163,9 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *hope* | `thuwuyom` |
 | *REPORTED* | `thebam` |
+| *PATTERN* | `thubom` |
 | *FORMER* | `helam` |
+| *person* | `eyel` |
 | *agility* | `evunom` |
 | *sing* | `vozuyel` |
 | *trumpet* | `adorol` |
@@ -226,6 +228,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 [z-Alazun | [th-REPORTED | bl-Ahelan] | z-rank/more | g-agility]
 
 *Alazun is more agile than Ahelan said.*
+:::
+
+**4.** `zuam gozuyel thubom bleyelx gadorol zol gohedam.`
+
+::: details Show answer
+[[z-everything.open | g-sing] | [th-PATTERN | [bl-person-x | g-trumpet]] | z-rank/more | g-showmanship]
+
+*Singers are showier than trumpet players.* (as a rule, one kind against the other)
 :::
 
 #### Pick one {#advanced-pick-one}

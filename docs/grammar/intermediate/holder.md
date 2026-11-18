@@ -221,6 +221,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *CLUES* | `theyom` |
 | *REPORTED* | `thebam` |
 | *MAY* | `thomam` |
+| *MEMORY* | `thevum` |
+| *LIVE* | `thugem` |
+| *PLAN* | `thagom` |
 | *departure* | `vudurul` |
 | *scream* | `veyamul` |
 | *sleep* | `vezuvel` |
@@ -252,6 +255,24 @@ z-Alazun | th-REPORTED-Ahelan | v-scream
 z-Alazun | th-MAY-Azozon | v-sleep
 :::
 
+**4.** *I hear Ahelan plans to tell.*
+
+::: details Show answer
+`zahelan thebamahelan thagom vezuyol.`
+
+z-Ahelan | th-REPORTED-Ahelan | th-plan-itinerary | v-tell
+:::
+
+**5.** *I gather Alazun watched Azozon scream.*
+
+::: details Show answer
+`zazozon theyomalazun thugem veyamul.`
+
+z-Azozon | th-CLUES-Alazun | th-LIVE | v-scream
+
+LIVE comes after the holder, so the watching is Alazun's, not yours.
+:::
+
 #### Ageben → English {#intermediate-ageben-to-english}
 
 **1.** `zahelan thebamazozon vezuyol.`
@@ -278,6 +299,22 @@ z-Azozon | th-CLUES-Alazun | v-scream
 *I gather Alazun thinks Azozon screams.*
 :::
 
+**4.** `zalazun thebamazozon thagom vudurul.`
+
+::: details Show answer
+z-Alazun | th-REPORTED-Azozon | th-plan-itinerary | v-departure
+
+*I hear Azozon plans for Alazun to leave.*
+:::
+
+**5.** `zahelan vezuyol thul thevumazozon.`
+
+::: details Show answer
+z-Ahelan | v-tell | th-not | th-MEMORY-Azozon
+
+*As Azozon remembers it, Ahelan told, and Azozon takes no view on it.* (the *no view* is Azozon's, not yours)
+:::
+
 #### Pick one {#intermediate-pick-one}
 
 **1.** *Maybe Alazun thinks Ahelan is asleep.* `zahelan thomamalazun vezuvel.` or `zahelan thomam blalazun vezuvel.`
@@ -288,6 +325,16 @@ z-Azozon | th-CLUES-Alazun | v-scream
 z-Ahelan | th-MAY-Alazun | v-sleep
 
 The holder is the name joined onto the channel, not a `/b/` source.
+:::
+
+**2.** *I hear Azozon plans to tell.* `zazozon thebamazozon thagom vezuyol.` or `zazozon thebam blazozon thagom vezuyol.`
+
+::: details Show answer
+`zazozon thebamazozon thagom vezuyol.`
+
+z-Azozon | th-REPORTED-Azozon | th-plan-itinerary | v-tell
+
+After a holder, PLAN is Azozon's. With Azozon only as the `/b/` source, the plan stays yours: *according to Azozon, I plan for Azozon to tell*.
 :::
 
 #### Fix it {#intermediate-fix-it}
