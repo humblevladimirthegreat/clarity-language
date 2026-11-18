@@ -804,3 +804,49 @@ describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
     assert.equal(readings[2]!.links.find((l) => l.kind === "carriedFrame")!.key, "carry:notional");
   });
 });
+
+describe("reader audit (R8): doc examples, one per test, checked against the doc's meaning", () => {
+  it("hooked-joins.md:170: an `/h/` hooked join before `blarl` is an occasion whose stretch is the next clause", () => {
+    const reading = one("z-listener | v-hear | [h-from-x-never | bl-that-clause] | z-interlocutors | v-go | [in | b-house]");
+    assert.deepEqual(families(reading), ["occasion"]);
+    assert.equal(frame(reading, "occasion").hosted?.kind, "clause");
+  });
+
+  it("english.md:221: *respectively* on a verb list pairs it with the subject list", () => {
+    const reading = one("[z-Azozon | z-Alazun | z-and] | [v-walk | v-run | w-respectively | v-and]");
+    const pairing = reading.links.find((l) => l.kind === "pairing");
+    assert.deepEqual(pairing?.partners, [reading.claim.roles.z]);
+    assert.equal(asList(reading.claim.verb).members.length, 2);
+  });
+
+  it("same-role-words.md:63: *before whom* is a fill ask with a blank on the same-role hook", () => {
+    const reading = one("y-question | before.open | z-wh | z-Azozon | v-walk");
+    assert.equal(frame(reading, "force").values.ask, "fillAsk");
+    assert.equal(reading.claim.details[0]?.hosted?.kind, "blank");
+  });
+
+  it("verb-and-stance-joins.md:252: MAY covers a standalone *no judgment* by text order", () => {
+    const reading = one("th-MAY | z-Azozon | v-walk | th-not");
+    assert.deepEqual(orders(reading), ["stance>polarity rule"]);
+  });
+
+  it(
+    "verb-and-stance-joins.md:186: a join between a hinge and `blarl` denies only the grounds, so it nests in the hinge",
+    { todo: "polarity is a sibling clause frame with no order; interpreter.md#polarity says it nests in its term" },
+    () => {
+      const reading = one("z-Azozon | v-walk | [th-because | th-not] | bl-that-clause | z-Alazun | v-run");
+      assert.ok(!reading.frames.some((f) => f.family === "polarity"), "not a whole-clause frame");
+      assert.equal(frame(reading, "hinge").inner?.[0]?.family, "polarity");
+    },
+  );
+
+  it(
+    "in-clause-hooks.md:86: `never` on the hook covers the house after it (*never in a house*)",
+    { todo: "the house is a whole-clause binder over the claim, so it covers the `/w/` restrictor before it" },
+    () => {
+      const reading = one("z-dog | v-sleep | [[w-never | in] | b-house]");
+      const house = reading.frames.find((f) => f.family === "binder" && f.words[0]?.raw === "bohehal");
+      assert.ok(!house, "the house's binder sits under `never`, not over the clause");
+    },
+  );
+});
