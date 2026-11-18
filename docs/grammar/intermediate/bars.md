@@ -83,7 +83,7 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 
 MAY gives no expected value to compare against, so it cannot be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](#bars) (`thagom`).
 
-A [holder](holder.md#holder) on a comparison bar names whose expectation you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+A [holder](holder.md#naming-a-holder) on a comparison bar names whose expectation you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
 > `zazozon thabemalazun zol guzemel.`
 >

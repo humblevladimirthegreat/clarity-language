@@ -45,7 +45,7 @@ export type Verified = {
 
 type WordNode = { raw: string; ending?: string; family: { kind: string; roots?: string[]; xFamily?: string }; rootGloss?: { concrete?: string; abstract?: string } };
 
-/** Overlay kinds whose word alone is the speaker's own stance (holder.md#holder). */
+/** Overlay kinds whose word alone is the speaker's own stance (holder.md#naming-a-holder). */
 const OWN_STANCE_KINDS = new Set(["want", "plan", "decision"]);
 
 /** Roots of the WANT, PLAN and DECISION overlays, from the lexicon (`alom` → `alo`). */
@@ -220,7 +220,7 @@ export function verifiedLines(v: Verified): string[] {
     const width = Math.max(...v.words.map((w) => w.raw.length));
     out.push("senses:", ...v.words.map((w) => wordLine(w, width)));
   }
-  for (const raw of v.missingHolder ?? []) out.push(`someone else's stance needs a holder: \`${raw}\` alone is yours (holder.md#holder)`);
+  for (const raw of v.missingHolder ?? []) out.push(`someone else's stance needs a holder: \`${raw}\` alone is yours (holder.md#naming-a-holder)`);
   const checks = (v.words?.filter((w) => w.check).length ?? 0) + (v.missingHolder?.length ?? 0);
   if (!v.error && v.unknown.length === 0) {
     out.push(`ok: parses, every word is in the lexicon${checks ? `; ${checks} thing${checks === 1 ? "" : "s"} to check above` : ""}`);

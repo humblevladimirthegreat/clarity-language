@@ -103,7 +103,7 @@ export type MorphWordFamily =
       hook?: string;
       /** Hook prefix on a hook-compound citation (`guexowurelul`): the stem root's own ending and its fused hook. */
       stemHook?: { leftEnding: "l" | "m"; hook: string };
-      /** Holder seam: the host's own grade letter before the holder (holder.md#holder). */
+      /** Holder seam: the host's own grade letter before the holder (holder.md#naming-a-holder). */
       grade?: "l" | "m" | "r";
     }
   | { kind: "hook"; form: string }

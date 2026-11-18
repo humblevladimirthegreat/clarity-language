@@ -223,7 +223,7 @@ function singleRoot(word: LexWord): string | undefined {
   return word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
 }
 
-/** The root a pronoun is built on: the noun's own, or the one a holder seam names (`thunemozan`, holder.md#holder). */
+/** The root a pronoun is built on: the noun's own, or the one a holder seam names (`thunemozan`, holder.md#naming-a-holder). */
 function pronounRoot(word: LexWord): string | undefined {
   if (word.ending !== "n") return undefined;
   if (isNounSlot(word)) return singleRoot(word);
@@ -266,7 +266,7 @@ function isPointer(word: LexWord): boolean {
 }
 
 /**
- * The person a seam's own **-r** resumes: a holder's (`thevemazawar`, holder.md#holder) or a viewpoint lateral's facing
+ * The person a seam's own **-r** resumes: a holder's (`thevemazawar`, holder.md#naming-a-holder) or a viewpoint lateral's facing
  * anchor (`howuhethuzozer`, viewpoint.md#viewpoint-laterals).
  */
 function holderRoots(word: LexWord): string[] {

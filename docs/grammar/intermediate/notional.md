@@ -30,7 +30,7 @@ NOTIONAL [carries forward](evidentiality.md#carry-forward) like a channel, so a 
 
 A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](evidentiality.md#hand-depth).
 
-NOTIONAL takes a [holder](holder.md#holder) the same way a channel does: `theyum` plus `azozon` is `theyumazozon`.
+NOTIONAL takes a [holder](holder.md#naming-a-holder) the same way a channel does: `theyum` plus `azozon` is `theyumazozon`.
 
 > `zalazun theyumazozon vudurul.`
 >

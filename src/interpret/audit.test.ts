@@ -119,7 +119,7 @@ describe("audit: negation", () => {
 });
 
 describe("audit: holder", () => {
-  it("A07 holder.md#holder: *Azozon says Alazun left* is reported by Azozon (holder.md:18)", () => {
+  it("A07 holder.md#naming-a-holder: *Azozon says Alazun left* is reported by Azozon (holder.md:18)", () => {
     assert.deepEqual(
       found(passage("zalazun thebamazozon vudurul."), "y-question | z-wh | v-departure"),
       ["0:A [z=alazu] {holder(azozo), stance}"],
@@ -127,11 +127,11 @@ describe("audit: holder", () => {
   });
 
   const said = passage("zazozon vowurol. zalazun theyomazozor vudurul.");
-  it("A08 holder.md#holder: a resumed holder is Azozon (holder.md:65)", () => {
+  it("A08 holder.md#naming-a-holder: a resumed holder is Azozon (holder.md:65)", () => {
     assert.deepEqual(found(said, "y-question | z-Alazun | v-departure"), ["1:A [] {holder(azozo), stance}"]);
   });
   it(
-    "A08 holder.md#holder: a question naming the holder filters through the resumed holder (holder.md:65)",
+    "A08 holder.md#naming-a-holder: a question naming the holder filters through the resumed holder (holder.md:65)",
     () => {
       assert.deepEqual(found(said, "y-question | z-Alazun | v-departure | th-CLUES-Azozon"), ["1:A [] {holder(azozo), stance}"]);
     },

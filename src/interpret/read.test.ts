@@ -835,7 +835,7 @@ describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
     assert.equal(readings[2]!.links.find((l) => l.kind === "carriedFrame")!.key, "carry:notional");
   });
 
-  // Decided 2026-11-18 (13a): a holder on MAY carries; the MAY stays on its own sentence (holder.md#holder).
+  // Decided 2026-11-18 (13a): a holder on MAY carries; the MAY stays on its own sentence (holder.md#naming-a-holder).
   it("holder on MAY: the holder carries, the MAY does not", () => {
     const readings = read("z-Alazun | th-MAY-Azozon | v-departure . z-Alazun | v-sleep");
     assert.deepEqual(carried(readings)[1]!.map((c) => c.split(":")[1]), ["holder"]);

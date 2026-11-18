@@ -167,7 +167,7 @@ z-Ahelan | [b-hour | g-two.about] | v-sleep
 
 z-Alazun | th-CLUES-Ahelan | v-sing
 
-**Rule:** [Whose view (holder)](holder.md#holder)
+**Rule:** [Whose view (holder)](holder.md#naming-a-holder)
 :::
 
 **11.** *Now, about Alazun: Alazun sits.*

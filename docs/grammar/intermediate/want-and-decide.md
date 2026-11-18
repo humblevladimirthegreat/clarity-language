@@ -17,7 +17,7 @@ English *I want to …* says what you wish would happen. Put **`thalo`** plus an
 >
 > "I want Azozon to walk."
 
-A want is in someone's mind, so someone else's want (*Azozon wants to walk*) is their view: you say whose it is and how you know it with a [holder](holder.md#holder), not with WANT alone.
+A want is in someone's mind, so someone else's want (*Azozon wants to walk*) is their view: you say whose it is and how you know it with a [holder](holder.md#naming-a-holder), not with WANT alone.
 
 To want a person or thing (*want Azozon*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
 
@@ -51,7 +51,7 @@ A want and a [plan](/intention#plan-predict) are different steps, so they stack 
 >
 > "I have long wanted to walk, and I plan to."
 
-For *against my wishes*, put WANT after the hook `uom` ([contrary to a stance](contrary-to.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#holder) goes between `uom` and WANT.
+For *against my wishes*, put WANT after the hook `uom` ([contrary to a stance](contrary-to.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](holder.md#naming-a-holder) goes between `uom` and WANT.
 
 > `zazozon vowurol uom thalom.`
 >
@@ -124,9 +124,9 @@ To say an event goes against a decision (*against my decision*), put DECISION af
 
 ### Someone else's want or decision {#whose-intention}
 
-English *Azozon wants to walk* and *Azozon has decided to walk* report what is in someone else's mind as if you could see it. In Ageben, WANT and DECISION with nothing else marked are yours, and neither takes a `/b/` for whose it is. Someone else's want or decision is their view: you give it with a [holder](/holder#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
+English *Azozon wants to walk* and *Azozon has decided to walk* report what is in someone else's mind as if you could see it. In Ageben, WANT and DECISION with nothing else marked are yours, and neither takes a `/b/` for whose it is. Someone else's want or decision is their view: you give it with a [holder](/holder#naming-a-holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
-After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone else's plan](/holder#holder). After `uom`, write the holder word, then the stance, for *against their wishes*.
+After a holder, WANT and DECISION are the holder's, just as PLAN is for [someone else's plan](/holder#holder-plans-and-motives). After `uom`, write the holder word, then the stance, for *against their wishes*.
 
 > `zazozon thebamazozon thalom vowurol.`
 >

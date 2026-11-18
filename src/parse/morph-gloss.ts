@@ -1512,7 +1512,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "holder") {
     const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
-    // Holder -r resumes the person whose view it is (holder.md#holder).
+    // Holder -r resumes the person whose view it is (holder.md#naming-a-holder).
     if (word.ending === "r") {
       const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
       return [host, ...sensePieces(resumed, tables, { antecedent })];

@@ -67,7 +67,7 @@ export function questionFilters(question: Reading): Frame[] {
 
 /**
  * The values a filter compares. On a holder seam the word's ending is the holder's own (`-n` a name, `-r` a resume;
- * holder.md#holder), so it is the party's form, not the frame's: the party match compares the holder, through referent
+ * holder.md#naming-a-holder), so it is the party's form, not the frame's: the party match compares the holder, through referent
  * and antecedent, and the ending is left out. This holds for the holder frame and for its host stance.
  */
 function filterValues(frame: Frame): Record<string, string> {

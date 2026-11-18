@@ -159,7 +159,7 @@ In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do yo
 
 English *you lied*, *you ignored me*, and *you're mocking me* each name an act and, in the same word, what the other person knew, meant, or felt while doing it. The act is something others could check; the mind behind it is something you infer.
 
-Ageben's words for these acts name only the act, such as *said something untrue*. What the other person knew or meant is said in its own words, which name [whose view](/holder#holder) it is and how you know it, or say that it [could be](/knowing#may).
+Ageben's words for these acts name only the act, such as *said something untrue*. What the other person knew or meant is said in its own words, which name [whose view](/holder#naming-a-holder) it is and how you know it, or say that it [could be](/knowing#may).
 
 This helps you notice, in the middle of an argument, which part you saw and which part you are guessing, and it still lets you say both.
 
@@ -225,7 +225,7 @@ In English: [Claritish: Allowed and required](claritish/allowed-required-agreed.
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a pick often sounds more locked than it is.
 
-Ageben splits them: a [want](/want-and-decide#want) is what you wish for, without meaning to do it yet; a [plan](/intention#plan-predict) is what you mean to do; a [decision](/want-and-decide#decision) says how revisable a pick is; and a [forecast](/evidentiality#forecast) is what the world will do. A forecast has no word of its own: you say how you know and add a word for *later*, so every forecast says what it rests on. Someone else's want, plan, or decision takes a [holder](/holder#holder), a word that says how you know what is in their mind.
+Ageben splits them: a [want](/want-and-decide#want) is what you wish for, without meaning to do it yet; a [plan](/intention#plan-predict) is what you mean to do; a [decision](/want-and-decide#decision) says how revisable a pick is; and a [forecast](/evidentiality#forecast) is what the world will do. A forecast has no word of its own: you say how you know and add a word for *later*, so every forecast says what it rests on. Someone else's want, plan, or decision takes a [holder](/holder#naming-a-holder), a word that says how you know what is in their mind.
 
 Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful forecast as settled fact or as a commitment, and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 

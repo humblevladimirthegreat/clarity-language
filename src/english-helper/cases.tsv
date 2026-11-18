@@ -131,26 +131,26 @@ Uzozen eats bread or rice.	or	form:del	exclusive *or* between objects is the obj
 The soup is not cold.	not	form:gul	*not* before an adjective is the adjective join
 Uzozen does not run.	not	shape:role letter + u + -l	the row shows the join pattern, never the bare vowel
 # Someone else's want or plan: a holder
-Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention takes a holder + PLAN
-Azozon's plan is to walk.	plan is to	link:holder.md#holder	someone else's plan takes a holder + PLAN
-He plans to sing.	plans to	link:holder.md#holder	a pronoun subject's plan takes a holder
+Azozon intends to walk.	intends to	link:holder.md#naming-a-holder	someone else's intention takes a holder + PLAN
+Azozon's plan is to walk.	plan is to	link:holder.md#naming-a-holder	someone else's plan takes a holder + PLAN
+He plans to sing.	plans to	link:holder.md#naming-a-holder	a pronoun subject's plan takes a holder
 Azozon wants to walk.	wants to	link:want-and-decide.md#whose-intention	someone else's want takes a holder + WANT
 She wants a dog.	wants	link:want-and-decide.md#whose-intention	*wants* with a noun is still someone else's want
 Do you want to sing?	want to	not:want-and-decide.md#whose-intention	a bare WANT in a question asks the listener's want
 I want to walk.	I want to	not:want-and-decide.md#whose-intention	the speaker's own want is WANT alone
-My plan is to walk.	My plan is to	not:holder.md#holder	the speaker's own plan is PLAN alone
-I plan to walk.	I plan to	not:holder.md#holder	the speaker's own plan is PLAN alone
+My plan is to walk.	My plan is to	not:holder.md#naming-a-holder	the speaker's own plan is PLAN alone
+I plan to walk.	I plan to	not:holder.md#naming-a-holder	the speaker's own plan is PLAN alone
 Do you really want to sing?	want to	not:want-and-decide.md#whose-intention	the listener owns the want past an adverb, in a question
 Azozon does not want to walk.	want to	link:want-and-decide.md#whose-intention	the owner is found past *does not*
-His plan is to walk.	plan is to	link:holder.md#holder	a possessor owns the plan
+His plan is to walk.	plan is to	link:holder.md#naming-a-holder	a possessor owns the plan
 Azozon wanted to walk.	wanted to	link:want-and-decide.md#whose-intention	a past *wanted to* matches the *want to* cue
 I really want to walk.	want to	not:want-and-decide.md#whose-intention	the speaker owns the want past an adverb
 I really want to walk.	want to	link:say-tense.md#will-want	the speaker's own want is WANT alone
 We want to walk.	We want	link:want-and-decide.md#whose-intention	*we want* has a row for the shared want
 We want to walk.	We want	link:say-tense.md#will-want	*we want* has a row for your own want for the group
 I think Azozon wants to walk.	wants to	link:want-and-decide.md#whose-intention	the inner clause's subject owns the want
-Azozon intends to walk.	intends to	link:holder.md#holder	someone else's intention leads with the holder row
-I intend to walk.	intend to	not:holder.md#holder	the speaker's intention is the PLAN sketch
+Azozon intends to walk.	intends to	link:holder.md#naming-a-holder	someone else's intention leads with the holder row
+I intend to walk.	intend to	not:holder.md#naming-a-holder	the speaker's intention is the PLAN sketch
 I've decided to walk.	decided to	not:want-and-decide.md#whose-intention	the speaker's decision is DECISION alone
 Azozon has decided to walk.	decided to	link:want-and-decide.md#whose-intention	someone else's decision takes a holder
 Azozon has decided to walk.	decided to	not:say-tense.md#will-want	the bare DECISION row is the holder row's twin
@@ -161,22 +161,22 @@ Azozon walks while swimming.	while	link:same-role-words.md#same-role-while	one d
 Azozon, like Ahelan, walks.	like	link:same-role-words.md#same-role-like	B a separate member
 Animals like dogs sleep.	like	link:discourse-hooks.md#stacked-discourse	B an example of A still suggests am
 # Someone else's view: belief, certainty, doubt, forecast, perception, motive
-Azozon thinks Alazun left.	thinks	link:holder.md#holder	someone else's view takes the holder alone
+Azozon thinks Alazun left.	thinks	link:holder.md#naming-a-holder	someone else's view takes the holder alone
 Azozon thinks Alazun left.	thinks	not:say-reasons.md#stance-adverbs	the bare MAY row is the holder's host twin
-I think Alazun left.	I think	not:holder.md#holder	the speaker's own view is a bare claim or MAY
+I think Alazun left.	I think	not:holder.md#naming-a-holder	the speaker's own view is a bare claim or MAY
 I really think Alazun left.	think	link:say-reasons.md#stance-adverbs	the speaker owns *think* past an adverb
-I really think Alazun left.	think	not:holder.md#holder	the speaker's view takes no holder
-Azozon is sure Alazun left.	sure	link:holder.md#holder	someone else's certainty takes a holder
+I really think Alazun left.	think	not:holder.md#naming-a-holder	the speaker's view takes no holder
+Azozon is sure Alazun left.	sure	link:holder.md#naming-a-holder	someone else's certainty takes a holder
 Azozon is sure Alazun left.	sure	not:say-reasons.md#trait-words	the bare certainty row is the holder row's twin
-Azozon suspects Alazun left.	suspects	link:holder.md#holder	someone else's hunch is holder + MAY
-Azozon doubts it.	doubts	link:holder.md#holder	someone else's doubt takes a holder
+Azozon suspects Alazun left.	suspects	link:holder.md#naming-a-holder	someone else's hunch is holder + MAY
+Azozon doubts it.	doubts	link:holder.md#naming-a-holder	someone else's doubt takes a holder
 Azozon expects rain.	expects	not:say-tense.md#ability-words	the bare forecast row is the holder row's twin
-Azozon is watching Alazun leave.	watching	link:holder.md#holder	someone else's watching is holder + LIVE
-His motive is money.	motive	link:holder.md#holder	a possessor's motive takes a holder
+Azozon is watching Alazun leave.	watching	link:holder.md#naming-a-holder	someone else's watching is holder + LIVE
+His motive is money.	motive	link:holder.md#naming-a-holder	a possessor's motive takes a holder
 # Someone else's feeling: a holder after the feeling word
 Alazun is upset.	upset	has:holder-feeling	someone else's feeling takes a holder
 Alazun seems upset.	upset	has:holder-feeling	the owner is found past a copula verb
-I am upset.	upset	not:holder.md#holder	the speaker's own feeling takes no holder
+I am upset.	upset	not:holder.md#naming-a-holder	the speaker's own feeling takes no holder
 # The holder spelled with the owner
 You want to sing.	want to	form:theyomawan	the listener as holder is the listener special pronoun
 # Questions, *we*, and speaker-only attitudes (want-and-decide.md#whose-intention)

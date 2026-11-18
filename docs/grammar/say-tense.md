@@ -28,7 +28,7 @@ An English tense bundles up to three questions: *when* the event sits, *how you 
 | *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zazozon gowurol` ([in progress](/predication#in-progress)) |
 | *is still walking* | the state goes on | **`hawum`** |
 | *has stopped walking* | the state ended | **`huvum`** |
-| *will walk* | your plan | PLAN **`thagom`**; someone else's plan takes a [holder](/holder#holder) |
+| *will walk* | your plan | PLAN **`thagom`**; someone else's plan takes a [holder](/holder#holder-plans-and-motives) |
 | *will walk* | a forecast | channel + **`blral`** ([forecast](/evidentiality#forecast)) |
 | *is going to walk* | your plan, or clues say so | PLAN, or CLUES + **`blral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`blrawul`** / **`blrawum`** on a channel |
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#firm-or-soft-act) · [Whose view](/holder#holder)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#firm-or-soft-act) · [Whose view](/holder#holder-plans-and-motives)
 
 English *want*, *plan*, *decide*, *try* and *let's* say what someone means to do. Ageben says most of them with WANT, PLAN or DECISION, and the ending adds a shade, such as lasting or passing. Which one you pick says whether you only want it, have a plan, or have decided.
 
@@ -391,7 +391,7 @@ WANT, PLAN and DECISION alone are yours. For someone else's, put a holder before
 | English | Ageben | Teach |
 |---------|--------|-------|
 | *want to*, *want* (someone else's want) | holder + WANT: **`thebamazozon thalom`** (*I hear*), **`theyomazozon thalom`** (*I gather*) | [Someone else's want](/want-and-decide#whose-intention) |
-| *plan to*, *plan is to*, *intend to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder) |
+| *plan to*, *plan is to*, *intend to* (someone else's plan) | holder + PLAN: **`thebamazozon thagom`** (*I hear*), **`theyomazozon thagom`** (*I gather*) | [Whose view](/holder#holder-plans-and-motives) |
 | *decide to*, *decided to* (someone else's decision) | holder + DECISION: **`thebamazozon thogem`** (*I hear*), **`theyomazozon thogem`** (*I gather*) | [Someone else's decision](/want-and-decide#whose-intention) |
 | *hopefully*, *I hope*, *hope* (your own hope) | **`thuwuyom`**, which is always yours | [Hopefully](/feelings#speaker-attitude) |
 | *hopes*, *hope*, *wishes*, *wish* (someone else's hope or wish) | holder + WANT: **`theyomazozon thalom`** (*I gather*), **`thebamazozon thalom`** (*I hear*) | [Someone else's want](/want-and-decide#whose-intention) |

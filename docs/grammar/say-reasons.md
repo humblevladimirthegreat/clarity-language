@@ -13,9 +13,9 @@ English links a time, a contrast or a reason to a claim with one word, such as *
 | English | Ageben |
 |---------|---------|
 | *while* / *whilst* / *until* / *till* / *before* / *after* (time) | same hinge + **`blarl`** shape on adverb `/h/`, `-m` ([dependent clauses](/dependents#dependent-clauses)): **`herom`** / **`harum`** / **`habam`** / **`halam`** |
-| *although* / *even though* / *though* | **`thezem blarl`** + the sentence, on adverb `/th/`: the speaker expected otherwise ([hinges](/dependents#hinges)). Someone else's expectation adds a [holder](/holder#holder) on a channel before it: **`theyomalazun thezem blarl`** (*although, as Alazun saw it*) |
+| *although* / *even though* / *though* | **`thezem blarl`** + the sentence, on adverb `/th/`: the speaker expected otherwise ([hinges](/dependents#hinges)). Someone else's expectation adds a [holder](/holder#what-the-holder-covers) on a channel before it: **`theyomalazun thezem blarl`** (*although, as Alazun saw it*) |
 | *even if* | **`thezem thohem blarl`** ([even if](/because-and-iff#only-because)) |
-| *so that* / *in order to* / *my aim is for* | same shape: **`thovam`** ([so that](/dependents#so-that)), your own aim; NP intended get = **`thovam`** + `/b/` noun. Someone else's aim adds a [holder](/holder#holder) |
+| *so that* / *in order to* / *my aim is for* | same shape: **`thovam`** ([so that](/dependents#so-that)), your own aim; NP intended get = **`thovam`** + `/b/` noun. Someone else's aim adds a [holder](/holder#holder-plans-and-motives) |
 | *despite* (NP) | same **`thezem`** (or **`gezem`**) + `/b/` noun, not a second hinge: `zazozon vowurol thezem blalazun.` |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwuvul` / `uom hwudum` / `uom thagom` / `uom thogel` / `uom thebam` ([contrary to a stance](/contrary-to#contrary-to-stance)) |
 | *though I promised* / *breaking my promise* | **`thezem blarl`** + the promise as its own sentence: `zuwen vezuvel thezem blarl zuwen vowurol hwuzal.` (*I sleep, although I promised to walk*) ([contrary to a stance](/contrary-to#contrary-to-stance)) |
@@ -79,13 +79,13 @@ Someone else's view is never a bare claim. Put a holder on the clause, which say
 
 | English | Ageben | Teach |
 |---------|--------|-------|
-| *thinks* / *believes* / *think* / *believe* (someone else's view) | the holder alone: `theyomazozon` (*I gather*), `thebamazozon` (*I hear*), `thomamazozon` (*maybe*) | [Whose view](/holder#holder) |
-| *sure* / *confident* (someone else is) | holder + certainty: `theyomazozon thrawal` | [Whose view](/holder#holder) |
-| *suspects* / *suspect* (someone else's hunch) | holder + MAY: `theyomazozon thomam` | [Whose view](/holder#holder) |
-| *doubts* / *doubt* (someone else's doubt) | holder + doubt: `theyomazozon thevemem` | [Whose view](/holder#holder) |
-| *expects* / *expect* (someone else's forecast) | holder + forecast: `thebamazozon blral` | [Whose view](/holder#holder) |
-| *watching* / *watches* (someone else is) | holder + LIVE: `theyomazozon thugem` | [Whose view](/holder#holder) |
-| *motive* / *motivation* (someone else's) | motive + holder: `thawethom theyomazozon` | [Whose view](/holder#holder) |
+| *thinks* / *believes* / *think* / *believe* (someone else's view) | the holder alone: `theyomazozon` (*I gather*), `thebamazozon` (*I hear*), `thomamazozon` (*maybe*) | [Whose view](/holder#naming-a-holder) |
+| *sure* / *confident* (someone else is) | holder + certainty: `theyomazozon thrawal` | [Whose view](/holder#naming-a-holder) |
+| *suspects* / *suspect* (someone else's hunch) | holder + MAY: `theyomazozon thomam` | [Whose view](/holder#naming-a-holder) |
+| *doubts* / *doubt* (someone else's doubt) | holder + doubt: `theyomazozon thevemem` | [Whose view](/holder#naming-a-holder) |
+| *expects* / *expect* (someone else's forecast) | holder + forecast: `thebamazozon blral` | [Whose view](/holder#naming-a-holder) |
+| *watching* / *watches* (someone else is) | holder + LIVE: `theyomazozon thugem` | [Whose view](/holder#what-the-holder-covers) |
+| *motive* / *motivation* (someone else's) | motive + holder: `thawethom theyomazozon` | [Whose view](/holder#holder-plans-and-motives) |
 
 > `zalazun theyomazozon vudurul.`
 >
@@ -149,7 +149,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > z-Azozon | v-tell | th-relatedness-motive-any-term | th-REPORTED-Azozon
 >
-> "I hear Azozon's reason for talking is feeling connected." (for someone else's reason, say [how you know it](/holder#holder))
+> "I hear Azozon's reason for talking is feeling connected." (for someone else's reason, say [how you know it](/holder#holder-plans-and-motives))
 
 > `zuwen vowurol thovam blarl zalazun vehohel.`
 >
@@ -226,7 +226,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "I walk so that Alazun does not leave."
 
-**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/stand-in-vowels#stand-in), not `thewom`. `thewom` says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/holder#holder) says how you know it.
+**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](/stand-in-vowels#stand-in), not `thewom`. `thewom` says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](/holder#naming-a-holder) says how you know it.
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
@@ -282,9 +282,9 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *circumstance* / *context* | a dependent after `blarl` (`herom blarl`, `thahum blarl`) | the situation as a clause |
 | *requirement* / *demand* | `hwuvol` / `hwuvom` / `hwuvor` | rule, person, or expectation |
 | *necessary* / *unnecessary* | `hwuvol` on the act; *more than needed* is the sake bar `thudatham zol` | required by a rule; past what the need asks |
-| *motivation* / *motive* | `zuwen vowurol thawethom.` | my reason; someone else's motive takes a [holder](/holder#holder) |
+| *motivation* / *motive* | `zuwen vowurol thawethom.` | my reason; someone else's motive takes a [holder](/holder#holder-plans-and-motives) |
 | *satisfaction* / *pleasure* | `thodetham.` | pleasure, met |
-| *desire* / *wish* | `zazozon thalom vowurol.` | I want Azozon to walk; someone else's wish takes a [holder](/holder#holder) |
+| *desire* / *wish* | `zazozon thalom vowurol.` | I want Azozon to walk; someone else's wish takes a [holder](/holder#what-the-holder-covers) |
 | *regret* (for the harm) | `thawethum blawan.` | unmet relatedness, yours |
 | *mistake* / *error* | `gegugel gul` or `thahul blarl` | not correct, or at fault |
 | *assumption* | `theyur` | NOTIONAL, toy with it |
@@ -645,9 +645,9 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Lie, ignore, mock, exploit, crime {#accusation-words}
 
-**Needs:** [Whose view (holder)](/holder#holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#reach-vowels) · [Enough and too](/bars#sake-bars) · [Who the urge points at](/how-you-feel#urge-landmark)
+**Needs:** [Whose view (holder)](/holder#naming-a-holder) · [Plan](/intention#plan-predict) · [Negation](/joins#negation-u) · [Say words after `uom`](/contrary-to#contrary-to-say) · [Exchange](/relations#exchange) · [Unmet](/sakes#sake-changeability) · [Fault](/fault#fault) · [Always](/restrictors#always-hual) · [Label reach](/label-seams#reach-vowels) · [Enough and too](/bars#sake-bars) · [Who the urge points at](/how-you-feel#urge-landmark)
 
-English *lie*, *ignore*, and *mock* each name an act and also what the other person knew or meant. *Crime* and *villain* add a verdict. The bare Ageben word names only the act, the part anyone could check. Say what the other person knew or meant through a [holder](/holder#holder), which says how you know it. Put a verdict on the act with fault, a say word, or an unmet sake, and on a person with label reach.
+English *lie*, *ignore*, and *mock* each name an act and also what the other person knew or meant. *Crime* and *villain* add a verdict. The bare Ageben word names only the act, the part anyone could check. Say what the other person knew or meant through a [holder](/holder#naming-a-holder), which says how you know it. Put a verdict on the act with fault, a say word, or an unmet sake, and on a person with label reach.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -732,7 +732,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 >
 > "Proud of the memo."
 
-**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](/sakes#sake-inventory)). *Confident* about someone else's claim needs a [holder](/holder#holder). `th+e` is only the speaker's own certainty.
+**Compare with:** *proud* rides on whichever sake the pride serves: competence for a skill, relatedness for a tie ([sakes](/sakes#sake-inventory)). *Confident* about someone else's claim needs a [holder](/holder#naming-a-holder). `th+e` is only the speaker's own certainty.
 
 ## Starting and stopping {#phase-verbs}
 

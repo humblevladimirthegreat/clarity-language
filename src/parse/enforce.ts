@@ -436,7 +436,7 @@ function enforceRespectively(units: Unit[]): void {
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
   enforceHookedJoinWord(word);
-  // A holder names people, so it takes -x like any noun (`thodumazawanx`, holder.md#holder).
+  // A holder names people, so it takes -x like any noun (`thodumazawanx`, holder.md#naming-a-holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   // A topic word is a noun, so it takes -x like one (`xazawanx`, topic.md#topic-groups); a published linker does not.
   const topic = word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word)) && !linkerEnglish(word);
@@ -452,7 +452,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (word.family.kind === "tag") enforceTag(word);
   if (isHolderSeamW(word, tables)) throw new ConstructionError("holderSeamW", word.raw);
-  // The speaker is never a holder: your own view needs no seam (D-68, holder.md#holder).
+  // The speaker is never a holder: your own view needs no seam (D-68, holder.md#what-the-holder-covers).
   if (holder && word.family.kind === "x" && word.family.rightRoots?.[0] === CLOSED.microphone) throw new ConstructionError("holderSeamSpeaker", word.raw);
   enforceJoinPlural(word);
   // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (evidentiality.md#evidentiality).
@@ -1072,7 +1072,7 @@ function enforceDirectiveRemarks(result: ParseResult): void {
     const utterance = result.utterances[scope.utteranceIndex];
     if (!utterance || !DIRECTIVE_ACT.test(actWord(utterance.left)?.raw ?? "")) continue;
     if (!utterance.bodies.some((body) => body.clause === scope.clause)) continue;
-    // A holder's stance is someone else's word on the command (holder.md#holder), not the speaker's remark.
+    // A holder's stance is someone else's word on the command (holder.md#what-the-holder-covers), not the speaker's remark.
     for (const { key, word, holderHost } of scope.frames) {
       if (holderHost) continue;
       if (key === "overlay:mirative:th") throw new ConstructionError("directiveMirative", word.raw);

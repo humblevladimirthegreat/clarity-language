@@ -160,7 +160,7 @@ Unlike the event pair, stance *as-of* also takes a signed offset from speech-now
 
 Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thenam`) and *I'm unsure now* (no pair) are both true.
 
-**Compare with:** a channel word is how you know at speech-now, even under `/th/` *as-of*. Someone else's stance takes a [holder](/holder#holder); with one, `thenam` dates *their* stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thenam`.
+**Compare with:** a channel word is how you know at speech-now, even under `/th/` *as-of*. Someone else's stance takes a [holder](/holder#naming-a-holder); with one, `thenam` dates *their* stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thenam`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Cue |

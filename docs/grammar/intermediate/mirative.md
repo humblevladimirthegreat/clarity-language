@@ -48,7 +48,7 @@ The mirative says only that the news was unexpected, not whether it is good or b
 >
 > "To my surprise, the present gives me a moment of warmth, and I savor it."
 
-With a [holder](holder.md#holder), the surprise is the holder's:
+With a [holder](holder.md#naming-a-holder), the surprise is the holder's:
 
 > `zalazun themem theyomazozon vudurul.`
 >

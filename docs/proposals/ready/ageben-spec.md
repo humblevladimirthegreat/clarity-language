@@ -65,7 +65,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | A norm only for now | `yor yal` | [stacked acts](/more-turn-words#stacked-acts) |
 | A one-off task for the implementer | command `yol` | [speech acts](/speech-moves#act-word-order), [firm and soft](/firm-soft#firm-or-soft-act) |
 | Fact or assumption about the world, with its source | statement + channel: `thugem` measured live, `thebam` reported, `thubom` from the pattern, `theyom` inferred, `thanam` deduced | [evidentiality](/evidentiality#evidentiality), [strength](/evidentiality#evidence-strength), [deduction](/evidentiality#deduction) |
-| Whose claim it is | holder | [holder](/holder#holder) |
+| Whose claim it is | holder | [holder](/holder#naming-a-holder) |
 | A guess to verify before building / one that may stay open | `thomal` / `thomar` | [MAY follow-ups](/knowing#follow-up-endings-may) |
 | Working assumption, for now | `theyur` | [notional](/notional#follow-up-endings-notional) |
 | Test scenario, rehearsed | `theyul` | [notional](/notional#follow-up-endings-notional) |

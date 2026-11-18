@@ -57,7 +57,7 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "lexReading:unknown": { family: "unknown", reach: "nested", anchor: "" },
   "wordFamily:say": { family: "say", reach: "clause", anchor: "permission-consent.md#say-words" },
   "xFamily:sake": { family: "sake", reach: "clause", anchor: "sakes.md#word-shape" },
-  "xFamily:holder": { family: "holder", reach: "clause", anchor: "holder.md#holder" },
+  "xFamily:holder": { family: "holder", reach: "clause", anchor: "holder.md#naming-a-holder" },
   "xFamily:ability": { family: "ability", reach: "word", anchor: "can-and-cant.md#ability" },
   "overlay:sake:th": { family: "sake", reach: "clause", anchor: "sakes.md#word-shape" },
   "overlay:sake:w": { family: "sake", reach: "adjective", anchor: "sakes.md#personal-possession" },
@@ -117,7 +117,7 @@ export type ScopeFrame = {
   /** The word that carries it: text, gloss, and position (`word.at`). */
   word: LexWord;
   member?: FrameMember;
-  /** A holder's stance, NOTIONAL or intention: the frame the holder seam sits on (holder.md#holder). */
+  /** A holder's stance, NOTIONAL or intention: the frame the holder seam sits on (holder.md#naming-a-holder). */
   holderHost?: true;
   /**
    * A tone mark before the rest of the sentence (tone-marks.md#tone-marks). No word carries it: `word` is the first
@@ -147,7 +147,7 @@ export type ClauseScope = {
 
 const TEXT_ORDER = "clause.md#which-covers-which";
 const MAY_BEFORE = "already-still-yet.md#stage-of-change";
-const HOLDER = "holder.md#holder";
+const HOLDER = "holder.md#what-the-holder-covers";
 
 /** One case of a pair row: `over` names the family that covers, `textOrder` the earlier over the later. */
 type PairCase =
@@ -447,7 +447,7 @@ function overlayFrame(word: LexWord, kind: string, pos: string): ScopeFrame | un
   return frame(`overlay:${kind}:${pos}`, word, member);
 }
 
-/** The holder seam's host row: an evidential, MAY or NOTIONAL `/th/` overlay (holder.md#holder). */
+/** The holder seam's host row: an evidential, MAY or NOTIONAL `/th/` overlay (holder.md#naming-a-holder). */
 function holderFrames(word: LexWord, tables: ClassifyTables | undefined): ScopeFrame[] {
   const holder = frame("xFamily:holder", word);
   if (!holder) return [];

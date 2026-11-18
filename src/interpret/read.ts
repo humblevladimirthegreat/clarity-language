@@ -188,7 +188,7 @@ function frameOf(key: string, word: LexWord | undefined, here: Here | undefined)
 }
 
 /**
- * A holder seam's host stance: the channel, MAY or NOTIONAL its left root names (holder.md#holder). The seam word has
+ * A holder seam's host stance: the channel, MAY or NOTIONAL its left root names (holder.md#naming-a-holder). The seam word has
  * no overlay of its own, so the host row's gloss is the stance word's own field, as a plain `/th/` overlay carries it.
  */
 function holderHostValues(word: LexWord, tables: ClassifyTables | undefined): Record<string, string> {
@@ -1167,7 +1167,7 @@ const CARRY_FAMILY: Readonly<Record<CarryKind, Frame["family"]>> = { channel: "s
 /** The section that says each kind carries. */
 export const CARRY_ANCHOR: Readonly<Record<CarryKind, string>> = {
   channel: "evidentiality.md#carry-forward",
-  holder: "holder.md#holder",
+  holder: "holder.md#naming-a-holder",
   notional: "notional.md#notional-as-if-framing",
 };
 

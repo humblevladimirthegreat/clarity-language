@@ -52,7 +52,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](/digit-strings#time) |
 | end of a number range (*from 3 to 5*; *up to but not including 5*) | range hook **`oel`** between the two numbers (**`uel`** leaves the second out) | [Ranges of numbers](/ranges#number-ranges) |
 | end of a range on a line (*Azozon to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](/ranges#ranges) |
-| purpose, your own aim (*I walk to sit*, *in order to sit*, *my aim is for Alazun to sit*) | **`thovam blarl`** + the sentence, naming who sits; someone else's aim adds a holder | [So that](/dependents#so-that), [Whose view](/holder#holder) |
+| purpose, your own aim (*I walk to sit*, *in order to sit*, *my aim is for Alazun to sit*) | **`thovam blarl`** + the sentence, naming who sits; someone else's aim adds a holder | [So that](/dependents#so-that), [Whose view](/holder#holder-plans-and-motives) |
 | an instruction or aim as content (*tells Alazun to sit*, *wishes to sit*) | stand-in **`dorl`** + the sentence; **`durl`** for *not to*; open **`dorm`** / **`durm`** when it may not be the only one (*and maybe more*) | [Stand-in vowels](/stand-in-vowels#stand-in) |
 
 ### *'s* / *of* {#of}
@@ -240,7 +240,7 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 | *everyone in the family* / *everyone from the town* | **`zual gobom bluvayal`** / **`zual gaham bluhuham`** | [Of relations](/of-relations#of-relations) |
 | *people in general* | **`zuam geyel`**, or **`eyen`** | [People in general](/universals-domains#generic-neighbors) |
 | *according to someone* (a source you won't name / don't know) | **`thebam bleyel blar`**, then `zuwen vanam derl zar.` / `zuwen vanam vul derl zar.` | [Source](/evidentiality#source) |
-| *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/holder#holder) |
+| *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/holder#what-the-holder-covers) |
 | *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`hemxual`** + the time: `hoexual blanulul` | [Bounding a time](/hooked-joins#hooked-joins-time) |
 | *where was it again?* (remind me) | MEMORY on the question: `yel el bar zayan thevum vagedal.` | [Live vs memory](/knowing#live-vs-memory) |
 | *where shall we …?* / *what shall we do?* (a choice) | PLAN on the question: `yel el bar zayan thagom vagedal.`, `yel var zayan thagom.` | [Plan](/intention#plan) |

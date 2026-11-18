@@ -226,7 +226,7 @@ function isStanceWord(token: IToken): boolean {
   return tokenIs(token, HTh);
 }
 
-/** A holder seam word (`thunemazawan`): whose view it is (holder.md#holder). */
+/** A holder seam word (`thunemazawan`): whose view it is (holder.md#naming-a-holder). */
 function isHolderWord(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   return family?.kind === "x" && family.xFamily === "holder";

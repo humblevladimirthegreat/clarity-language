@@ -145,9 +145,9 @@ describe("scope order (clause.md#which-covers-which)", () => {
     assert.deepEqual(scope!.unordered, []);
   });
 
-  it("a standalone join before the holder's stance is still the holder's (holder.md#holder)", () => {
+  it("a standalone join before the holder's stance is still the holder's (holder.md#what-the-holder-covers)", () => {
     const [scope] = scopeOf("z-Azozon | v-walk | th-not | th-MEMORY-Azozon");
-    assert.ok(orders(scope!).includes("holder>polarity holder.md#holder"));
+    assert.ok(orders(scope!).includes("holder>polarity holder.md#what-the-holder-covers"));
     assert.deepEqual(scope!.unordered, []);
   });
 

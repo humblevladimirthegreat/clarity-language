@@ -215,7 +215,7 @@ function ownerAt(terms: readonly TaggedTerm[], i: number, question = false): "sp
 const RESUMED_WORDS = new Set(["he", "him", "his", "she", "her", "hers", "they", "them", "their", "theirs", "hor", "thom"]);
 
 /**
- * The person a holder word names, as the noun after its seam ([holder](holder.md#holder)): a name
+ * The person a holder word names, as the noun after its seam ([holder](holder.md#naming-a-holder)): a name
  * on **-n**, *you* as the listener, *he* / *she* / *they* as **-r** on the last name before it, a
  * common noun's root on **-l**. Undefined when none applies, so the row keeps its pattern.
  */

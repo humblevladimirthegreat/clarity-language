@@ -99,7 +99,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 
 ### Whose plan or view (`uom` + holder) {#contrary-to-holder}
 
-English *against their plan* names whose plan the event goes against. A plan or a channel after `uom` is yours, unless a [holder](holder.md#holder) word names someone else's. For someone else's plan, after `uom`, write the holder word, then the plan:
+English *against their plan* names whose plan the event goes against. A plan or a channel after `uom` is yours, unless a [holder](holder.md#naming-a-holder) word names someone else's. For someone else's plan, after `uom`, write the holder word, then the plan:
 
 > `zazozon vowurol uom theyomalazun thagom.`
 >

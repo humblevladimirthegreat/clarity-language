@@ -480,7 +480,7 @@ A series has its own slogans; its letters and leftover-logic or cell logic come 
 
 Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyomazozon`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
 
-[Whose view](/holder#holder)
+[Whose view](/holder#naming-a-holder)
 
 **Compare with:** a person in hosted `/b/` after an evidential is the source you heard it from, not the holder. After a feeling word whose urge stays put, a `bl-` word names whose stake it is: the need is theirs and the feeling is yours.
 
@@ -882,7 +882,7 @@ After-join `/ɡ/` (quality) or manner `/h/` in comparatives.
 
 Clause-hinge `thovam`: the speaker's own aim for the host (*so that Alazun sits*; NP *for a money-bag*); in a question, the listener's aim. Someone else's aim takes a holder. Not locative *toward*, not sake `tho`, not discourse *therefore*.
 
-[Dependents](/dependents#so-that), [Whose view](/holder#holder)
+[Dependents](/dependents#so-that), [Whose view](/holder#naming-a-holder)
 
 ### Span / span open
 

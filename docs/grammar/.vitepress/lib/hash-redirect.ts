@@ -103,7 +103,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "verb-and-stance-joins.md", hash: "vp-clause-forms", to: "verb-and-stance-joins.md" },
   { page: "verb-and-stance-joins.md", hash: "vowels--endings", to: "verb-and-stance-joins.md" },
   { page: "verb-and-stance-joins.md", hash: "ending-senses-clause-joins", to: "verb-and-stance-joins.md" },
-  { page: "evidentiality.md", hash: "holder", to: "holder.md" },
+  { page: "evidentiality.md", hash: "holder", to: "holder.md", toHash: "naming-a-holder" },
   { page: "evidentiality.md", hash: "holder-seam", to: "holder.md" },
   { page: "for-a-sake.md", hash: "contrary-to-stance", to: "contrary-to.md", toHash: "contrary-to-stance" },
   { page: "residue-and-former.md", hash: "channel-zone", to: "contrary-to.md", toHash: "channel-zone" },
@@ -178,6 +178,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "firm-soft.md", hash: "speech-act", to: "firm-soft.md", toHash: "firm-or-soft-act" },
   { page: "firm-soft.md", hash: "act-r", to: "firm-soft.md", toHash: "act-for-now" },
   { page: "thanks-and-sorry.md", hash: "thanks-sorry", to: "thanks-and-sorry.md", toHash: "saying-thanks" },
+  { page: "holder.md", hash: "holder", to: "holder.md", toHash: "naming-a-holder" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

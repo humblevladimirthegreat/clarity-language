@@ -91,7 +91,7 @@ export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>
 
 /**
  * English that says how you know someone else's mind, by the channel or MAY gloss
- * (lexicon-overlays.csv) the holder word leads with ([holder](holder.md#holder)). Checked in this
+ * (lexicon-overlays.csv) the holder word leads with ([holder](holder.md#naming-a-holder)). Checked in this
  * order, so *rumor has it* beats a plain report. With no cue, {@link DEFAULT_HOLDER_CHANNEL} leads:
  * *I gather* claims less than hearsay.
  */
@@ -335,7 +335,7 @@ export function extraNounHook(word: string): DetectorHit {
  * stance then takes a holder. The analyzer drops it when the speaker owns the stance, and drops its
  * bare twin when someone else does.
  */
-export const HOLDER_LINKS: readonly string[] = ["holder.md#holder", "want-and-decide.md#whose-intention"];
+export const HOLDER_LINKS: readonly string[] = ["holder.md#naming-a-holder", "want-and-decide.md#whose-intention"];
 
 /**
  * A slot whose suggestions link one of these names a feeling or a stake (*upset*, *glad*). When
@@ -350,12 +350,12 @@ export const FEELING_LINKS: readonly string[] = [
 export const HOLDER_FEELING: DetectorHit = {
   id: "holder-feeling",
   label: "someone else's feeling: a holder after the feeling word (`thuwathuruer theyomalazun`)",
-  links: ["holder.md#holder"],
+  links: ["holder.md#naming-a-holder"],
 };
 
 /**
  * A holder word's host: a channel or MAY with a person noun joined on its seam (`theyom` + `azozon`),
- * else undefined. The person is at least four letters and ends as a noun does (holder.md#holder).
+ * else undefined. The person is at least four letters and ends as a noun does (holder.md#naming-a-holder).
  */
 export function holderHost(word: string): string | undefined {
   return /^(th[aeiou](?:th|[bdghlmnrvwyz])[aeiou][lmr])[aeiou][a-z]{2,}[nlrx]$/.exec(word)?.[1];
