@@ -12,6 +12,8 @@ Built in Node by [`src/game/build.ts`](../../src/game/build.ts), for the page's 
 - **Error table**: one row per **Fix it** drill whose slip reduces to a role-letter swap, an ending swap, one word for another, or a turn word moved to the front, keyed by the parser's error for the wrong form. The seed rows (orthography, typed glosses, endings, `/b/` and `/d/`) are in [`recast.ts`](../../src/game/recast.ts).
 - **Fixed lines**: the glosses in `FIXED` ([`generate.ts`](../../src/game/generate.ts)), spelled with the full gloss index, including the docs' own mid-word `x` words.
 
+The engine is a host of the interpreter's loop: [`src/game/host.ts`](../../src/game/host.ts) supplies its members, and every turn goes through `run` ([the host](interpreter.md#the-host)).
+
 ## Writing game content
 
 - **Name a row by its concrete sense** (`door`, `magnify`), never by its spelling. Code never spells a root ([closed roots](../../src/closed-roots.ts)).

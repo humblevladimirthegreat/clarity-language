@@ -2,10 +2,10 @@
 
 <!-- retie: skip -->
 
-**Status:** DRAFT (all keys classified; pair table filled)  
+**Status:** all keys classified; pair table filled; host contract and loop shipped  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md). The reader copies what the parse tree and the resolve stage already say; it never re-derives a reading.
 
-The interpreter turns a parse into **readings**, one per clause, so tools can compare, show, or check what a text says without walking the parse tree for meaning. This note owns the terms, the frame families, the classification table every reader switches on, the links, the scope statements copied from the grammar pages, and the reader rules. Every row cites the grammar anchor that decides it; a row with no anchor is still to be classified. The parser side is in [parser pipeline](parser-pipeline.md); construction ids come from `constructionRegistry()` in `src/parse/constructions.ts`.
+The interpreter turns a parse into **readings**, one per clause, so tools can compare, show, or check what a text says without walking the parse tree for meaning. This note owns the terms, the frame families, the classification table every reader switches on, the links, the scope statements copied from the grammar pages, the reader rules, the log, the matcher's rules, the host contract, and the loop with its pass-through list and default verdict. Every row cites the grammar anchor that decides it; a row with no anchor is still to be classified. The parser side is in [parser pipeline](parser-pipeline.md); construction ids come from `constructionRegistry()` in `src/parse/constructions.ts`.
 
 ## Terms
 
@@ -469,6 +469,133 @@ No sentence states an order against another frame.
 6. **Pronouns keep both ends.** A pronoun term holds the resolver's `AnaphorBind` and, when bound, its antecedent's term. The reader never binds one itself.
 7. **Numbers stay stems** in the reading; phase 2 adds their values for comparison.
 8. **No row is an unknown frame.** A construction the reader meets with no row in the [classification table](#classification-table) becomes an `unknown` frame and an `unread` entry.
+
+## The log
+
+`Log` (`src/interpret/log.ts`) holds readings in order, each turn with its `speaker` and `at`. Each new turn is parsed together with the transcript so far, or the host's `window` of it, so the resolver's bindings cross turns with no parser change; the same turns always give the same log. The log closes each turn with a period before it joins the transcript. A turn that does not parse adds nothing and goes in `rejected`. The window is parsed with each sentence's speaker (`ParseOptions.speakers`, [stage 4](parser-pipeline.md#stage-4--resolve-ast--discourse-sidecar)), so a carried frame is per speaker.
+
+A call, *yes* / *no*, or interjection closed by a period is its own utterance, so the next sentence reads as a new move ([past a period](/sentence-linkers#past-a-period)); the log keeps it as its own reading.
+
+## Matching
+
+`match(query, target)` (`match.ts`) compares two claims. `ask(question, log, host)` (`ask.ts`) returns every logged reading, nested ones included, whose claim fits the question's: the blanks it binds, its **frame path** (the frames on the matched reading and on every reading that contains it), its unsettled pairs, and the switches it went through. Neither walks the parse tree, decides that a framed claim holds (the [verdict](#the-default-verdict) does), or picks an order for an unsettled pair (it travels with the match).
+
+### Matching a claim
+
+- **The question is read after the log's window.** `readQuestion` (`log.ts`) parses it as the next sentence of the window's transcript, so its pronouns bind through the resolver to the log's terms ([reader rule 6](#reader-rules)); the matcher follows that binding.
+- **Verb** by root. **Roles** by letter, never by word order; a role the query leaves out matches anything.
+- **Terms** by the host's referent when both resolve; otherwise by root, the query's details a subset of the target's. A pronoun matches through its antecedent, a literal by exact payload, a number by its value (`value.ts`), so the written and the spoken form of one number match.
+- **A blank binds** to the target's term in that place. Its `at` names the place: `verb`, a role letter, `predicate.<i>`, or a detail path. `blankSites(claim)` (`host.ts`) lists the same ids, so a host keys held answers by them.
+- **A number blank in a measure detail** binds to a target detail with the same key and the same number kind, at `<path>/number`.
+- **A role missing from the outer claim** is looked for in the claim's scope islands ([scope islands](/scope-islands#scope-islands)): an island holds a chunk of the clause, so its `/b/` is still the clause's. The island's reading goes on the path (`Binding.islands`), so a stance inside it stays with the match.
+- **A member of a `u` list.** A query term that is not a list matches one member of a target `u` list ([negation](/joins#negation-u)); the list's frames go on the path (`Binding.listFrames`), so the denial travels with the match. This is not a switch.
+
+### Question filters
+
+Each frame on the question is a filter or not by this table; a later change is a row. A filter passes when the path carries a frame of the same family with equal `values` and, when the filter has a `party`, a party that matches it (compared as a one-role claim, so through referent and antecedent).
+
+| Frame on the question | Filter | Why |
+|-----------------------|:------:|-----|
+| its own ask force | no | It is the question |
+| `slot:newMember` binder | no | Decision 18: a question about a first-mention noun asks about such a thing, not one newly brought in, so the term matches by root or referent like a bare noun. Other binders stay filters |
+| bar | no | It sits on its detail, not on the clause, so it is not among the question's frames |
+| every other family | yes | Pass-through families and MIRATIVE included; whether those should filter is under review |
+
+- **A denied or excluded frame passes.** A path frame that a stance list denies (`u`) or excludes (`ua`, `ue`) still passes an equal filter, with its standing on the path (`PathFrame.lists`; `negated()` tells it). Whether the claim holds is the verdict's.
+- **Holder filters** compare the holder (as the party) and its channel, never the ending: on a holder seam the word's ending is the holder's own form ([holder](/holder#holder)), so it is left out of the values on the holder frame and on the stance it sits on.
+
+### Switches
+
+`widen` and `infer` are off by default; a host turns them on in `switches`. Every match found through one names it in `Match.switches`, and the [default verdict](#the-default-verdict) never counts it.
+
+- **`widen`**: a compound in the target matches on its head, the last root ([two roots](/compounds#two-roots-one-word)). Dictionary compounds take their head from the lexicon's compound rows, so the host supplies `lexicon`.
+- **`infer`**, membership: a query term matches one member of a target *and* list, only where the claim says who goes with what: the target claim has that one list, or its lists are paired by *respectively* ([respectively](/list-structure#respectively)). Two unpaired lists infer nothing.
+- **`infer`**, universal to instance: closed *every K* with a kind and no leftovers holds of each K ([universals](/universals-domains#universals-domains-generics)); the open universal does not.
+- Neither infers with a collective verb or under a list frame.
+
+## The host
+
+The contract is `Host<E>` in `src/interpret/host.ts`; `ask.ts` re-exports it, and no consumer defines a second one. `E` is the host's entity. Every member is optional: a host with none is a pure reader's client.
+
+| Member | Gives | Read by |
+|--------|-------|---------|
+| `refer(term, ctx)` | What a term refers to: one, several, or none | the loop, for a command's roles and a question's bound roles; `ask`, when `referent` is unset |
+| `referent(term, side, site)` | A string id when the host can tell; terms that both resolve match by it. A logged `speaker` term has its turn in `site.entry` | `ask` |
+| `holds(claim, bound)` | Live state about a question's claim: `Held` (`holds`, `source`, `answers` keyed by role letter or a blank's `at`) | the loop |
+| `handler(root)` | What a verb does, by root: `ok` with effects, or a `Refusal` | the loop, for a command |
+| `told(reading, session)` | What a statement does beyond being logged: effects, or a `Refusal` that makes it `refused` and keeps the turn out of the log | the loop, before logging |
+| `verdict(question, matches, held)` | Yes, no, unknown, fill answers, or refused. Unset: the [default verdict](#the-default-verdict) | the loop |
+| `accepts(reading)` | Parts this host cannot act on yet; each makes the turn `beyond`. It only narrows | the loop |
+| `window` | How many earlier turns are parsed with each new one. Unset: the whole transcript | the log |
+| `switches`, `lexicon` | The [switches](#switches), and the tables `widen` reads | `ask` |
+
+Only `refer` is needed, and only for a command with roles: without it such a command is `beyond`.
+
+## The loop
+
+`createSession(host, tables, { speaker?, text? })` and `run(text, session) → TurnResult` in `src/interpret/run.ts`. `TurnResult` holds `outcome`, `beyond` (each part named), `readings` (one result per dispatched reading), `effects`, and `replies`.
+
+**Dispatch.** Each top-level reading is dispatched on its force frame:
+
+| Force | Loop does |
+|-------|-----------|
+| statement (also *yes* / *no*, which imply the assertion) | calls `told`; if nothing in the turn is refused, adds the turn to the log |
+| said: a greeting, or an interjection with an empty claim | as a statement; no handler, no question |
+| question | `ask`, then `holds`, then `verdict`; replies |
+| command, prohibition | refers each role with `refer`, then runs the verb's `handler` (a prohibition with `prohibition: true`) |
+
+**A turn, in order:**
+
+1. Read the turn after the log's window. If it does not parse: `parse`.
+2. Before dispatch, collect what puts any reading `beyond`: an `unread` construction, an `unordered` pair, a part `accepts` names, a force the loop does not dispatch, and on a command a frame off the [pass-through list](#pass-through-list), a clause join, a verb that is not a root, a verb with no handler, or roles with no `refer`. Any of these: `beyond`, every part named, nothing dispatched, the log unchanged.
+3. Statements and said turns: the turn is appended to a copy of the log, and `told` runs on each. If none is refused, the copy becomes the log. A turn is logged whole or not at all.
+4. Questions and commands. A role that refers to several is `refused` with a *which one?* reply; to none, `refused`. A handler's `Refusal` is `refused` with its reason. A missing handler found here is `beyond`.
+
+**Outcomes:** `parse`, `beyond`, `refused`, `ok`, always distinct. *Unknown* on a yes / no question is `ok` with a *can't say* reply.
+
+### Pass-through list
+
+A command runs only when every frame on it other than its force, on the clause and on its terms and details at any depth, is on `PASS_THROUGH` (`host.ts`). Each row cites the grammar section that shows the frame leaves what the command does unchanged; a later change is a row. No host widens the list: it is a const, not a host member, and `accepts` only narrows.
+
+| Family | Condition | Anchors |
+|--------|-----------|---------|
+| `force` | Act words after the first: a doubled act, or a stacked one that only says how it sounds | [doubled act](/more-turn-words#doubled-act), [stacked acts](/more-turn-words#stacked-acts) |
+| `call` | Always | [vocative](/speech-moves#vocative) |
+| `attitude` | Always: a tone mark, speaker attitude or speech manner | [tone marks](/tone-marks#tone-marks), [speaker attitude](/feelings#speaker-attitude), [speech manner](/speech-manner#speech-manner) |
+| `binder` | `slot:newMember` hosting one noun (no list, no number on it), with no other binder on the command; `refer` picks the one | [new member in a command](/joins#new-member-in-a-command) |
+| `sake` | Whole-clause reach: a sake word or feeling word on the clause | [whose stake](/for-a-sake#whose-stake), [feeling word](/how-you-feel#feeling-word) |
+
+Every other family makes a command `beyond` and names it. For MIRATIVE, a channel or MAY, and contrary-to on a command, that is under review.
+
+### The default verdict
+
+With no host `verdict`, the loop counts a match only when it is **plain**: every frame on its path passes the pass-through list, it has no unsettled pair, and it went through no switch. A path that carries both an `attitude` and a `slot:newMember` binder is not plain: no page settles that pair. A call does not change what a sentence claims ([vocative](/speech-moves#vocative)), and in a statement a first-mention noun says the claim holds of one such thing ([new member in a statement](/joins#new-member-in-a-statement)).
+
+- A fill question: the plain matches' bound blanks, then held answers that hold; none gives *unknown*.
+- A yes / no question: held state that does not hold, with nothing else, gives *no*; a held state that holds or a plain match gives *yes*; otherwise *unknown*.
+- `because` lists the deciding readings by id and held state by `source`; the loop adds a *why* reply. A framed match never decides by default; that is a host's own verdict.
+
+### What the loop probe settled
+
+The probe is the last describe block of `src/interpret/run.test.ts`. It builds a command and a yes / no question under 20 of the 21 frame families; `unknown` cannot be built, being the parser's fallback for an unread word.
+
+- **Commands run** under a doubled or stacked act word, a clause sake, a speaker attitude, an interjection, a lone first-mention noun, and a call: each frame on a pass-through row.
+- **Commands are `beyond`** under polarity, say, stance (MAY, REPORTED), holder, hinge, intention (plan, want, try), ability, phase, residue (RESIDUE, FORMER), notional, mirative, contrary, occasion, a universal, a bar, and a quote. None is refused.
+- **Questions:** every frame is a filter except a first-mention noun and a bar, as in [question filters](#question-filters).
+- **Turns:** a call, *yes*, *no*, or an interjection closed by a period, then a bare body or a sentence linker, is its own move, and the turn is logged as one. A lone greeting or interjection is force said. *Unknown* on a yes / no question is an `ok` *can't say* reply.
+
+## Writing a host
+
+1. **Choose `E`**, the entity a role refers to. Give `refer` for any command with roles; give `referent` too when `E` is not a string or number, so `ask` can match by it.
+2. **Give a `handler` per root** the host acts on, named by concrete sense, never by spelling. It gets the reading, the referred roles, and `prohibition`, and returns effects or a `Refusal` with a reason the player or user sees.
+3. **Give `told`** for what a statement does beyond being logged; a refusal keeps the turn out of the log.
+4. **Give `holds`** for live state the log does not hold. Key a fill answer by its blank's `at` from `blankSites`, as a morph-gloss leaf.
+5. **Give a `verdict`** only to count framed matches (a host's own precedence). It never picks an order for an unsettled pair.
+6. **Give `accepts`** to refuse parts the host cannot act on yet; it never makes a command run that the loop holds `beyond`.
+7. **Set `window`** when the transcript grows long, and `switches` when a match may widen or infer.
+8. **Never walk the parse tree** for meaning. If a reading lacks what the host needs, the fix is a row in the [classification table](#classification-table), not a local walker. Replies are morph-gloss drafts that `reply.ts` spells and parses.
+
+The wizard's engine is a host: `createGameHost` in `src/game/host.ts`. A call sets the addressee and wakes them, and a call that finds no one is refused, with or without a body. A command to someone other than the one called is refused (*A command goes to the one you called.*). A statement whose subject is the speaker runs that verb's handler.
 
 ## Pair table
 
