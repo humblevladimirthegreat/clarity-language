@@ -57,6 +57,8 @@ To say the verb's claim holds at every time, use **`hual`**. Bare `hual` is *alw
 >
 > "Azozon always walks except when it rains."
 
+Because bare `hual` covers every time, it also covers whatever time a plain sentence is about: *Ahelan always sings* and *Ahelan doesn't sing* cannot both be true. With exceptions listed, or with open `huam`, the plain denial may fall in a gap, so the two can stand together.
+
 ### Sometimes / anytime / some other time
 
 To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending `-r` on the restrictor: `har`, `her`, `hur`. `-r` points at some time without saying which, so nothing needs to come before it.
