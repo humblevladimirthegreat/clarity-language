@@ -1,6 +1,6 @@
 # A solver behind the interpreter: Clingo for what follows, what clashes, and what stands
 
-**Status:** READY, 2026-11-18. No phase started. Idea 2026-11-14; researched 2026-11-18 ([Research](#research)). User, 2026-11-18: the wizard integration comes later; the first jobs are what follows, what clashes and what stands. User, 2026-11-18: adopted the recommendations on open generalizations, the unsaid, numbers, the first rows, the browser, *why not*, and clashes under choices; each is in the Sketch. User, 2026-11-18: the matcher's step conditions are shared TypeScript functions that both engines call (Sketch, *the matcher's steps*).  
+**Status:** IN PROGRESS, 2026-11-18. Phase 1 under way. Idea 2026-11-14; researched 2026-11-18 ([Research](#research)). User, 2026-11-18: the wizard integration comes later; the first jobs are what follows, what clashes and what stands. User, 2026-11-18: adopted the recommendations on open generalizations, the unsaid, numbers, the first rows, the browser, *why not*, and clashes under choices; each is in the Sketch. User, 2026-11-18: the matcher's step conditions are shared TypeScript functions that both engines call (Sketch, *the matcher's steps*).  
 **Related:** the interpreter's reading, log, matcher, host and replies ([interpreter.md](../../meta/interpreter.md), `src/interpret/`, [reading.mjs](../../../scripts/reading.mjs)); grammar pages [usually vs must](/usually-vs-must#general-claims), [causation](/causation), [everything](/joins#everything-ua), [universals](/universals-domains#universals-domains-generics), [knowing](/knowing), [holder](/holder), [contrary to](/contrary-to), [fault](/fault), [because](/because-and-iff), [measures and percent](/measures-and-percent), [ranges](/ranges), [open ranges](/open-ranges); consumers `ageben-spec.md`, `agent-tool-permissions.md`, `argument-map.md`, `knowledge-store.md`, `structural-search.md`, `who-knows-what.md`, `various-interpreter-applications.md`, later `wizard-adventure.md` and `logic-grids.md`; the wizard engine ([wizard-game.md](../../meta/wizard-game.md)).  
 **Depends on:** none (the interpreter's reader, log and matcher have landed). **Order:** none required. `ageben-spec.md` may switch its contradiction check to the solver once phase 2 here lands.  
 **Design authority:** *none*. Tooling only: it adds no form and changes no reading. Each translation row states what the solver concludes from a frame family as the grammar page already teaches it; where a row needs a meaning the grammar pages do not state, that is an open decision for the user, and the row waits.
@@ -119,7 +119,26 @@ The wizard already checks its quests without a solver: each quest has a hand-wri
 ## Research
 <a id="research"></a>
 
-Done 2026-11-18 from the package's metadata, README and type files; the package was not run. S1 runs it and adds what it measures here.
+Done 2026-11-18 from the package's metadata, README and type files, then run by S1 (2026-11-18): the worked example, an optimization run, a Lua main, and synthetic programs of the worked example's shape, under Node 24.21 with `tsx`.
+
+**Measured (S1).**
+
+- **Loading.** `import clingo from "clingo-wasm"` resolves the `node` export and runs under `tsx` with no setup; the file must be ESM (the repo's `"type": "module"` covers `src/`; a `.ts` file outside it needs `.mts`). `init()` takes about 0.8 s, once per process.
+- **Consequences.** On the worked example, `--enum-mode=cautious` gives one witness with the four atoms true in every world (`-holds(fly(pingu))`, no `holds(fly(robin))`), and `brave` adds `holds(fly(robin))`: *no* for Pingu, *cannot say* but *could* for Robin, as the Sketch says. The closed s1 with `:- holds(F), -holds(F).` is UNSATISFIABLE.
+- **Optimization.** Free `{ on(s1); on(s2); on(s3); on(s6) }.` with `#maximize { 1,R : on(R) }.` and `--opt-mode=optN` gives OPTIMUM FOUND, cost `[-3]`, and the three optimal sets, each one of s1, s2, s3 left out.
+- **JSON shape.** `{ Solver, Call: [{ Witnesses: [{ Value: string[], Costs?, Consequences? }] }], Result, Models: { Number, More, Optimum?, Costs?, Cautious? / Brave? }, Time: { Total, Solve, … } }`. Witness atoms are strings (`"-holds(fly(pingu))"`, `"fired(s2,-fly(pingu))"`). `Result` is `SATISFIABLE`, `UNSATISFIABLE`, `OPTIMUM FOUND`, or `ERROR` with an `Error` string; an error does not throw. `Call[0]` is `null` when unsatisfiable. Use `--quiet=1` with `brave`: without it every intermediate witness is printed and parsed (2 s instead of 0.3 s at 2,000).
+- **Lua main.** Works: one `prg:ground`, then `prg:solve{assumptions=…, yield=true}` and `handle:core()` give the core `on(s1), on(s2), on(s3)`, and a second solve on the same ground program without s1 is satisfiable. `print` from Lua corrupts the JSON (`Result: ERROR`); report through facts added with `prg:add` and a last solve. `solve{on_core=…}` returned no core.
+- **Size limit.** A program text over about 1 MiB fails with `RuntimeError: memory access out of bounds` (1.03 MB of facts runs, 1.15 MB fails), so 20,000 readings in the `holds(k(X))` encoding did not run. Every run grounds again, and grounding grows faster than linearly when many rules share one predicate.
+
+Synthetic program: per group of four readings, a kind fact, an exception-kind fact, an open rule `{ holds(fly(X)) } :- holds(kI(X)), not -holds(fly(X)), on(gI).` and a strict denial, each guarded by `on/1`. Clingo's `Time.Total` in seconds (solving is under 0.02 s in every row; the rest is grounding):
+
+| Readings | `holds(kI(X))`, cautious | brave (`--quiet=1`) | kind as its own predicate `kI(X)` |
+|---|---|---|---|
+| 200 | 0.012 | 0.010 | |
+| 2,000 | 0.27 | 0.28 | 0.12 |
+| 5,000 | 1.6 | | |
+| 10,000 | 5.9 | | 1.4 |
+| 20,000 | fails (1.19 MB text) | | 5.4 (0.93 MB) |
 
 **What the interpreter gives the translator.**
 
@@ -133,8 +152,8 @@ Done 2026-11-18 from the package's metadata, README and type files; the package 
 **`clingo-wasm` 0.6.0.** Apache-2.0; Clingo 5.8.1 with Lua 5.4.6, no Python. Single-threaded and threaded builds, 0.93 MB gzipped. It runs in a worker in Node and the browser; threads need a cross-origin isolated page, otherwise it falls back to one thread. Vite needs `worker: { format: "es" }`.
 
 - **API.** `run(program, models, options, onModel)`, `stream(program, models, options)`, `init(wasmUrl)` and `restart()`. `options` are Clingo's command-line flags, so `--enum-mode=cautious` / `brave` and optimization flags work. The result is Clingo's JSON output: `Result` (SATISFIABLE, UNSATISFIABLE, OPTIMUM FOUND, UNKNOWN), witnesses as lists of atom strings, costs, and timings.
-- **One-shot.** Each `run` grounds the whole program again. Holding a ground program between solves is possible only inside a Lua `#script` main, untested.
-- **Cores.** The JavaScript API has no assumption or core call, and core access from Lua is unconfirmed, so clashes under choices re-solve instead ([naming a clash](#naming-a-clash)).
+- **One-shot.** Each `run` grounds the whole program again. Holding a ground program between solves is possible only inside a Lua `#script` main (works, S1).
+- **Cores.** The JavaScript API has no assumption or core call; a Lua main gets a core (S1). The Sketch still has clashes under choices re-solve ([naming a clash](#naming-a-clash)).
 
 **Clingo 5 / 6 common ground.** `clingo-wasm` has no Clingo 6 build. A program means the same under both when it has no conditional literal in a rule body (6 needs every condition, not any), no `_` inside `not` (6 makes it a fresh variable), and no integer division (6 floors). A golden test that solves the translator's output under the bundled version shows any drift when the package moves to 6.
 
