@@ -66,10 +66,10 @@ A [tag](/tag-pronouns#naming-with-a-tag) is a label you choose (role letter, `w`
 | A pseudonym: a real person, name kept back (alone, or after a person phrase) | `zwan` / `dwan` / `bwan` | *a friend, call her A* | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |
 | A and associates (`zwanx` on a free tag brings in a real person and their associates) | `zwarx` / `zwanx` | *A and associates* | I |
-| Two tags (six stacks: `zwaor` `zwaer` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaor` | *A and O* | I |
-| Two tags, their parts | `zwaom` | *what A and O did* | I |
-| Two tags and associates | `zwaorx` | *A, O, and associates* | I |
-| Two pseudonyms: brought in while both tags are free, recalled while a `zwan` holds each | `zwaon` | *A and O*, two real people | I |
+| [Two tags](/tag-pronouns#tag-pairs) (six stacks: `zwaor` `zwaer` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaor` | *A and O* | I |
+| [Two tags](/tag-pronouns#tag-pairs), their parts | `zwaom` | *what A and O did* | I |
+| [Two tags](/tag-pronouns#tag-pairs) and associates | `zwaorx` | *A, O, and associates* | I |
+| [Two pseudonyms](/tag-pronouns#tag-pairs): brought in while both tags are free, recalled while a `zwan` holds each | `zwaon` | *A and O*, two real people | I |
 
 ## The topic {#topic}
 
