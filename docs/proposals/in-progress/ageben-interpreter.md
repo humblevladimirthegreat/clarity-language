@@ -1,6 +1,6 @@
 # Ageben interpreter: one reader and one runtime for the tools that act on meaning
 
-**Status:** IN PROGRESS. Phases 1 (classification) and 2 (the scope rule) done; their outcome is [interpreter.md](../../meta/interpreter.md) and [scope.ts](../../../src/parse/scope.ts). Phase 3 done on 2026-11-18, with decisions 10–17 implemented: the reader (`src/interpret/`), the `reading` CLI, a word-coverage check (every word in exactly one place; 0 missing / 0 doubled across 1364 doc examples), the parser records the reader needed, the carried-frame record (`ResolveInfo.carried`, [carry.ts](../../../src/parse/carry.ts); the reader fills one `carriedFrame` link per inherited channel, holder or NOTIONAL), and two audits (R4 22/30, R8 30/32; every failure since fixed). Phase 4 done on 2026-11-18: the log (`log.ts`, with a speaker per sentence passed to resolve as `ParseOptions.speakers`, one carry state per speaker), the matcher (`match.ts`, `ask.ts`, `readQuestion` reads a question after the log's window), values and the `widen` / `infer` switches (`value.ts`), `reading ask` and `reading log`, and a 20-pair audit (`audit.test.ts`; 7 failures, all since fixed). Phase 5: H1 done on 2026-11-18 (`host.ts` with `PASS_THROUGH`: later act words, `call`, `attitude`; `run.ts`, whose turn type is `TurnResult`; `reply.ts`). **Stopped before W1 on open decision 20**: the first walkthrough command is `beyond`. Decided 2026-11-13: one shared backend serves the mind map, Ageben Spec, structural search, agent permissions, and the wizard game; the wizard engine is rebuilt on it. Decided 2026-11-13 (open decisions 2–5, 7): the matcher's inference switches are membership in a stated list and a compound matching on its head, plus universal to instance for closed `zual` only, each off by default and marked on its match (2); a role the question leaves out matches anything (3); the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in phase 5 (5); a pair that text order can give only one way keeps that order wherever there is a form for the other reading (7). Decided 2026-11-14: the loop never runs a command that carries a frame it has no rule for (`beyond`); what composition constructs do when run is later work outside this plan (`generic-ui.md`). Decided 2026-11-17 and landed on grammar pages: decisions 7a, 8a, 9b ([stance joins](/verb-and-stance-joins#stance-join-reach), [holder](/holder#holder), [generalization](/usually-vs-must#generalization)); a phrase that brings in a new member follows text order everywhere, against binders and stance words, including `-l`/`-m` nouns, `-r` joins, and-lists and hook landmarks, but not fill-ask blanks, measure units or words inside a title ([joins](/joins#everything-ua), [which covers which](/clause#which-covers-which)); a call commutes with every frame ([vocative](/speech-moves#vocative)); a clause joined after the last nested dependent belongs to it ([nested dependents](/nested-dependents#nested-dependents)). Decided 2026-11-18 and landed: decisions 10 (c) and 11 (b), a free-standing tone mark after the start of a sentence colors only the words after it, up to the next free-standing mark, so two such marks commute ([tone marks](/tone-marks#tone-marks)). Decided 2026-11-18 and landed (decisions 12–17): a bare body after a period is a statement, and only a sentence linker keeps the prior act ([past a period](/sentence-linkers#past-a-period)); a carried frame covers what you claim, never your own stance: a WANT, PLAN or DECIDE sentence neither takes nor ends it, an attitude or feeling stance sits over the carried claim (the `carriedFrame` link's `coveredBy`; speech manner shares the attitude key and sits over it too), only the main clause's channel starts or ends a carry, MAY does not carry under a holder, and grounds inherit ([carry forward](/evidentiality#carry-forward), [holder](/holder#holder)); an ordinary feeling root on `/th/` is a speaker attitude ([speaker attitude](/feelings#speaker-attitude)); a `/th/` join over stance words is one stance list (`Reading.stanceLists`, `interpreter.md`). Decided 2026-11-18: decision 18 (b), a new-member phrase on a question is not a filter, so *who saw a cat?* matches *Sam saw the cat* (other binders stay filters); decision 19 (a), anyone's goodbye ends every speaker's carried frame, landed ([carry forward](/evidentiality#carry-forward)). Settled in the matcher on 2026-11-18, following *the host's verdict decides*: a denied or excluded frame still passes an equal filter, with the denial on the path.
+**Status:** IN PROGRESS. Phases 1–4 done (2026-11-13 to 2026-11-18): the classification, the scope rule, the reader, the log and the matcher; their outcome is [interpreter.md](../../meta/interpreter.md), `src/interpret/` and [scope.ts](../../../src/parse/scope.ts). Phase 5 unit W1 done on 2026-11-18 (commits H1–H6, W1a, W1b): the host, the loop and replies (`src/interpret/host.ts`, `run.ts`, `reply.ts`), and the wizard running on them (`src/game/host.ts`; the game's `read.ts`, `answers.ts` and `reference.ts` deleted); every walkthrough plays to its goal. **Next: W2, in a fresh session.** Decisions the remaining units cite: the wizard's events live in the log, each with who witnessed it (4); the session re-parses a window the host sets, measured in W3 (5); a new-member phrase on a question is not a filter (18, decided 2026-11-18). Decided and landed 2026-11-18: decision 20 (a), a lone first-mention noun on a command acts on one such thing ([joins](/joins#new-member-in-a-command)), and in a statement says the claim holds of one such thing ([joins](/joins#new-member-in-a-statement)), which grounds the default verdict; decision 22, a call closed by a period reaches only its own turn ([past a period](/sentence-linkers#past-a-period)). Every earlier decision is on its grammar page or in the git log.
 
 **Related:** the parser's tree ([types.ts](../../../src/parse/types.ts)), [resolve.ts](../../../src/parse/resolve.ts), [ast-walk.ts](../../../src/parse/ast-walk.ts), the construction registry ([constructions.ts](../../../src/parse/constructions.ts)), [hook-jobs.ts](../../../src/parse/hook-jobs.ts), overlay kinds ([parser-pipeline.md](../../meta/parser-pipeline.md#overlay-kinds)), gloss to Ageben ([gloss-inverse.ts](../../../src/parse/gloss-inverse.ts), [glosses.md](../../meta/glosses.md#round-trip)), the wizard engine ([src/game/](../../../src/game/), [wizard-game.md](../../meta/wizard-game.md)), [read-ageben.md](../../meta/procedures/read-ageben.md). Consumers: `mind-map-view.md`, `ageben-spec.md`, `structural-search.md`, `agent-tool-permissions.md`, `wizard-adventure.md`.
 
@@ -70,32 +70,26 @@ Read readings with `npm run -s reading -- '<text>'` (`--json` for every field); 
 
 ### The host
 
-```ts
-type Host<E> = {
-  refer(term: Term, ctx: ReferCtx<E>): Referent<E>;          // one, several, none
-  holds?(claim: Claim, bound: Bound<E>): Held[];              // live state, for a host with more than a log
-  handler?(root: string): Handler<E> | undefined;             // what a verb does, for a host that acts
-  told?(reading: Reading, session: Session<E>): Effect[];     // what a statement does beyond being logged
-  verdict?(question: Reading, matches: Match[], held: Held[]): Verdict;  // which frames count, and who wins
-  accepts?(reading: Reading): string[];                       // parts this host cannot act on yet
-};
-```
-
-Every member but `refer` is optional. A host with none of the rest is a pure reader's client.
+The contract is `Host<E>` in [host.ts](../../../src/interpret/host.ts), and `ask.ts` re-exports it; no consumer defines a second one. Members: `refer` (one, several, none), `referent`, `holds` (live state; `Held.answers` keyed by role letter or a blank's `at`, listed by `blankSites(claim)`, which covers role, detail, verb and what-kind blanks), `handler` (by verb root), `told` (returns effects, or a `Refusal` that makes the reading `refused`), `verdict`, `accepts` (narrows only), and `window` (the re-parse window, decision 5). Only `refer` is needed, and only for a command with roles.
 
 ### The loop
 
-`run(text, session) → Turn`, where a `Turn` has an outcome, its readings, effects, and reply drafts. Each reading is dispatched on its `force` frame:
+`createSession(host, tables, { speaker?, text? })` and `run(text, session) → TurnResult` (`outcome`, `beyond: BeyondPart[]`, `readings`, `effects`, `replies`), in [run.ts](../../../src/interpret/run.ts). Each reading is dispatched on its force:
 
 | Force | Loop does |
 |-------|-----------|
-| statement | adds it to the log, then calls `told` |
+| statement (also *yes* / *no*, which imply `yal` / `yam`) | calls `told`; if nothing is refused, adds the turn to the log |
+| said (a greeting or interjection alone) | logs it and calls `told`; no handler, no question |
 | question | `ask`, then `holds`, then `verdict`; replies |
-| command, prohibition | resolves the roles with `refer`, then runs `handler` |
+| command, prohibition | resolves the roles with `refer` (several gives `refused` with *which one?*), then runs `handler` |
 
-**A framed command fails closed.** A command or prohibition runs only when every frame on its reading, other than its force, is in the loop's **pass-through list**: the frame families that leave what the command does unchanged. The list is a typed const beside `CLASSES`, transcribed from the meta note, and each row cites the grammar section that says so. Any other frame (a condition, a binder, a stance, a holder, a family with no row) makes the turn `beyond` and names the frame, so *if the build fails, delete the branch* never deletes the branch. No host can add to the list: `accepts` narrows what a host takes, never widens it. A statement or a question is not affected; its frames are kept in the log or used as filters.
+**A framed command fails closed.** A command runs only when every frame on it, other than its force, passes `PASS_THROUGH` in `host.ts`: later act words, `call`, `attitude`, and a lone first-mention noun (`slot:newMember`, a single `thing` term with no number, no other binder on the command; [joins](/joins#new-member-in-a-command)). Any other frame makes the turn `beyond` and names it. No host widens the list. A whole-clause sake stays off it (open decision 21).
 
-**Outcomes** are the wizard's three failures, made general, plus success: `parse` (did not parse), `beyond` (parsed, but `unread`, `unordered`, or `accepts` is non-empty, or no handler, or a command carries a frame outside the pass-through list), `refused` (the host or its verdict said no), `ok`. The three failures always stay distinct, and `beyond` always names its parts. Agent permissions' *fail closed* is this rule.
+**The default verdict** counts a match as plain when every frame on its path passes `passThrough`, with no unsettled pair and no switch, except that `attitude` together with `slot:newMember` is not plain (no page settles that pair). It cites [vocative](/speech-moves#vocative) and [joins](/joins#new-member-in-a-statement).
+
+**Turns.** The log closes each turn with a period before it joins the transcript. A call-only turn is its own reading (verb `-`). Any `beyond` reading in a turn means nothing in the turn runs and the log does not change.
+
+**Outcomes:** `parse`, `beyond` (names every part), `refused`, `ok`, always distinct.
 
 ### Replies
 
@@ -113,57 +107,27 @@ A reply is a `Draft` (`{ gloss, english }`) written as morph gloss. `reply.ts` s
 
 ### The wizard on the interpreter
 
-| Today | After phase 5 |
-|-------|---------------|
-| [read.ts](../../../src/game/read.ts) and the `Act`, `NounRef`, `PlaceRef`, `Force` types | deleted; the reader |
-| [answers.ts](../../../src/game/answers.ts) (`truthOf`, `answerYesNo`, `answerFill`) | deleted; `ask` over the log plus the host's `holds` |
-| [reference.ts](../../../src/game/reference.ts) | becomes the host's `refer` |
-| the dispatch in [engine.ts](../../../src/game/engine.ts) (`perform`, `performAct`, `ask`, `state`, `command`, `prohibit`) | deleted; the loop |
-| [voice.ts](../../../src/game/voice.ts) `checkLine`, and the yes / no / fill / *which one?* shapes in [generate.ts](../../../src/game/generate.ts) | move to `reply.ts` |
-| `World.events`, the `told:` strings in `World.facts`, `World.mentioned`, `Entity.knows` | become log entries, each with its speaker and who witnessed it ([open decision 4](#open-decisions)) |
-| world state (`place`, `props`, `state`), [objects.ts](../../../src/game/objects.ts), handler bodies in [verbs.ts](../../../src/game/verbs.ts), quests, reachability, scene, recasts, gating, the turn log, build, lint | kept; `Doing` takes a reading |
+Done in W1: `src/game/host.ts` (`createGameHost`) supplies `refer` (noun resolution over `Term`; `unreadable(term)` serves `accepts`), `holds`, `handler` (wraps `HANDLERS`), `told` (a call sets the addressee and wakes them; a statement whose subject is the speaker runs that verb's handler), `verdict` and `accepts`. `engine.ts` sends every turn through `run`, one session per engine, made again on `reset`; `Doing` takes a reading. `Scope` lives in `src/game/types.ts`. The game's `Draft` is the reply draft plus the entities it mentions; `generate.ts` keeps only wizard lines (`whichDrafts` over `whatIsItLikeDraft`, `report`, `describe`, `where`, `list`, `greeting`, `FIXED`).
 
-A kept file may still be rewritten when the host interface makes its shape wrong. The gate is behaviour, not diff size: every walkthrough plays to its goal, and the three failures stay distinct.
+Left for W2: `World.events`, the `told:` strings in `World.facts`, `World.mentioned` and `Entity.knows` become log entries, each with its speaker and who witnessed it (decision 4). Kept: world state, objects, handler bodies, quests, reachability, scene, recasts, gating, the turn log, build, lint. The gate is behaviour: every walkthrough plays to its goal, and the three failures stay distinct.
 
 ### Files
 
 | Path | Holds |
 |------|-------|
-| `src/parse/scope.ts` | frame keys, pair rows, new-member and greeting tests, the order the resolve stage emits (done) |
-| `src/interpret/types.ts`, `classes.ts`, `read.ts`, `tones.ts`, `coverage.ts`, `cli.ts`, `browser.ts`; `src/parse/carry.ts` | phase 3 (done) |
+| `src/parse/scope.ts`, `carry.ts`; `src/interpret/` reader, log, matcher files | phases 1–4 (done) |
 | `scripts/reading.mjs`, npm script `reading` | print a text's readings, `reading ask FILE QUERY`, `reading log FILE` (done) |
-| `src/interpret/log.ts`, `match.ts`, `ask.ts`, `value.ts`, `audit.test.ts` | phase 4 (done) |
-| `src/interpret/host.ts`, `run.ts`, `reply.ts` | phase 5 |
+| `src/interpret/host.ts`, `run.ts`, `reply.ts` (+ tests) | phase 5 (done) |
+| `src/game/host.ts` | the wizard host (done) |
 | `docs/meta/interpreter.md` | terms, the table, links, pair table, reader rules; the host contract (C1) |
 
 ## Implementation plan
 
-Phases 1–4 are done. Each remaining phase is one orchestrator session, run through subagents; at its end, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate).
+Phases 1–4 and phase 5's W1 are done. The rest of phase 5 is one orchestrator session, run through subagents; at its end the orchestrator applies the `AGENTS.md` rows and deletes this proposal.
 
-### Phase 5: host, loop, replies, and the wizard
+### Phase 5 (rest): wizard knowledge, wizard check, the interpreter note
 
-Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` rows, then deletes this proposal.
-
-#### H1: host, loop, replies
-
-**Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/interpret/`**.
-
-- `host.ts`, `run.ts`, `reply.ts`.
-- Builds on phase 4: the log (`buildLog`, a host window, one speaker per sentence), `readQuestion(log, text, tables, …)` for a question read after the window, and `ask(question, log, host, options)`, which already takes the compound table as `lexicon` on the host for `widen`. Read their exports (`grep -n '^export' src/interpret/*.ts`) before adding to `Host`; extend the type `ask` already uses, never a second one.
-- Tests against a toy host of three entities: each force, each outcome, each shared reply shape.
-- The pass-through list ([the loop](#the-loop)): draft it from the frame families in `docs/meta/interpreter.md`, one row per family the owning grammar page shows leaves a command's action unchanged, with its anchor. A family the pages do not settle stays off the list and is logged as an open decision. Tests: a command under a condition, under a binder, and under a holder each give `beyond`, name the frame, and call no handler; a toy host whose `accepts` returns nothing still cannot run them.
-- The re-parse window is a host setting (decision 5).
-
-#### W1: the wizard host
-
-**Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `src/game/`**, `docs/grammar/.vitepress/lib/wizard.data.ts`, `docs/grammar/.vitepress/components/WizardSandbox.vue`.
-
-- `src/game/host.ts` (`refer`, `holds`, `handler`, `told`, `accepts`) over the kept world model.
-- Delete the files and types in the left column of [the wizard on the interpreter](#the-wizard-on-the-interpreter).
-- The engine's turn calls `run`; handlers take a reading.
-- `src/parse/scope.test.ts` imports `fullGlossIndex` from `src/game/build.ts` (the plain gloss index cannot spell holders, sake words or numbers). Keep that export, or move it under `src/parse/` and update the import.
+Order: W2 → W3 → C1.
 
 #### W2: wizard knowledge in the log
 
@@ -171,7 +135,8 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 **May edit:** `src/game/`**.
 
 - Events, told facts, mentions, and what a character knows move to the log (decision 4).
-- Reply shapes the shared ones cover leave `generate.ts`.
+- Drop the host's `told` rule that skips a call finding no one on a statement with a body: decision 22 removed its cause (a call no longer reaches past its period), so the call applies strictly. Check the deliver-book walkthrough still plays.
+- Reply shapes the shared ones in `reply.ts` cover leave `generate.ts`; W1b moved `checkLine`, `whatIsItLikeDraft`, `listGroup` and `closed`.
 
 #### W3: wizard check
 
@@ -179,6 +144,7 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 **May edit:** `src/game/*.test.ts`, `docs/meta/wizard-game.md`.
 
 - Play every walkthrough and 15 off-script lines per failure kind; confirm the three failures stay distinct and each `beyond` names its parts. Among the `beyond` lines, include commands under a condition and under a binder, and confirm the world does not change.
+- Check the outcome changes W1 made, and report each as kept or as a finding: a command whose subject is not the one called is now `refused` (was `beyond`); *unknown* on a yes / no question is now an `ok` *can't say* reply (was a refusal); a lone greeting or interjection is force `said`.
 - A walkthrough line that is a command with a frame off the pass-through list is a finding for the user (the frame joins the list by a grammar citation, or the line changes), never a host-side exception.
 - Measure the turn time against the re-parse window and set the wizard's window (decision 5).
 - Update [wizard-game.md](../../meta/wizard-game.md) to describe what exists.
@@ -188,9 +154,9 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 **Agent:** `proposal-worker`, `opus`, `medium`.
 **May edit:** `docs/meta/interpreter.md`, `docs/meta/parser-pipeline.md`.
 
-- Finish `docs/meta/interpreter.md`: the host contract, the pass-through list, and how to write a host.
+- Finish `docs/meta/interpreter.md`: the host contract, the loop's dispatch and outcomes, the pass-through list with its conditions, the default verdict rule, and how to write a host (from [the host](#the-host) and [the loop](#the-loop) above, checked against `host.ts` / `run.ts`).
 - Add the matcher rules phase 4 settled, from `match.ts` / `ask.ts`: a question is read after the log's window, so its pronouns bind through the resolver; a role missing from the outer claim is looked for in the claim's scope islands, with the island on the path; a query term matches a member of a target `u` list, with the list's frames on the path; a denied or excluded frame passes an equal filter, with the denial on the path; a `slot:newMember` frame on a question is not a filter (decision 18); holder filters compare the holder and its channel, never the ending; a number blank in a measure detail binds by key and number kind; the `widen` and `infer` switches, and that membership needs one list or a *respectively* pairing.
-- Add to `parser-pipeline.md` (or `interpreter.md`, whichever owns resolve inputs) that `ParseOptions.speakers` gives one speaker per sentence and the carry record keeps one state per speaker; with none, a text is one speaker.
+- Add to `parser-pipeline.md` (or `interpreter.md`, whichever owns resolve inputs) that `ParseOptions.speakers` gives one speaker per sentence and the carry record keeps one state per speaker; with none, a text is one speaker. Note that a call closed by a period gets its own utterance (`buildUtterances`, `afterCall`), and that the log closes each turn with a period.
 - Add a pointer from [parser-pipeline.md](../../meta/parser-pipeline.md).
 - Report the `AGENTS.md` rows (editor notes: `interpreter.md`, which owns the reading terms, frame families, classification table, pair table, reader rules and host contract; tooling notes: classify a construction when the parser gains one).
 
@@ -219,26 +185,26 @@ Order: H1 → W1 → W2 → W3 → C1. The orchestrator applies the `AGENTS.md` 
 ### Gates
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` must show no new errors before each unit's commit.
-- H1, W1, W2: `npm test` green, including the coverage test from R2 on.
+- W2: `npm test` green, including the coverage test.
 - Phase 5: every wizard walkthrough plays to its goal, and a clean `npm run build`, since the game's content lint and the site build read the engine.
 - Final gate: a full `npm run verify` against an empty baseline.
 - No style gate remains: no later unit changes prose under `docs/grammar/`. If a unit finds it must edit `docs/grammar/wizard.md`, the style gate applies to that phase.
 
 ### Commits
 
-One per unit after its gate, and one per phase for the consolidated proposal; the last of those carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 4 made ten, including its consolidation. Expected from here: phase 5 six. Messages start `ageben-interpreter M1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
+One per unit after its gate; the last carries the `AGENTS.md` rows and deletes this file. A unit whose code changes a reading lands in the same commit as the grammar edit that teaches it. Phase 5 has made ten so far, including this consolidation. Expected from here: four (W2, W3, C1, the final one). Messages start `ageben-interpreter W2:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits.
 
 ## Open decisions
 
-Decisions 1–19 are decided (see Status); numbers stay stable because the body and commits cite them.
-
-**20. A first-mention noun on a command (blocks W1–W3).** Every noun mentioned for the first time carries the binder frame `slot:newMember`, which is not on the pass-through list. So `y-command | v-open | d-door` (the first quest's walkthrough) is `beyond`, and only commands whose nouns are names or resumes can run. [Joins](/joins#everything-ua) says what such a phrase reaches and how it orders against other binders, but not what it means under a command.
-- (a) A lone new-member noun (`-l`/`-m`, after `/z/`, `/d/`, `/b/` or a hook) passes through on a command: the listener acts on one such thing, and the host's `refer` picks it (several gives *which one?*). `zual` universals, `-r` joins and a second binder stay off the list. Needs a grammar sentence to cite, on [joins](/joins#everything-ua) or the command section of speech moves.
-- (b) Keep failing closed; walkthrough commands use resumes or names, so a beginner cannot command an object until resumes are taught.
-
-**Recommendation:** (high) (a). The quest path teaches commands on first-mention nouns before resumes, and *open a door* has one natural reading for a listener.
+Decisions 1–20 and 22 are decided; numbers stay stable because commits cite them.
 
 **21. A whole-clause sake on a command.** Only questions are settled ([whose stake](/for-a-sake#whose-stake)). It stays off the pass-through list. **Recommendation:** (low) keep it off until a sample needs it; a grammar sentence on what *do X for Y's sake* asks of a listener would settle it.
+
+**23. *Yes*, *no* or an interjection closed by a period, then a bare body.** Decision 22 gave a call closed by a period its own turn, but the parser still puts a body after `yes.` or an interjection and a period in the same utterance, so the body carries the polar link or the interjection frame. No grammar page settles it.
+- (a) Treat them like a call: the body after the period gets its own utterance, with a sentence in [past a period](/sentence-linkers#past-a-period).
+- (b) Leave them as they are.
+
+**Recommendation:** (medium) (a). After a rest, a bare body is a statement whatever came before it, and an answer word or a reaction is a whole move of its own, as a call is.
 
 ## Background
 
