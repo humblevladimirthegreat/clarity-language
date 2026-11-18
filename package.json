@@ -49,6 +49,7 @@
     "plan-units": "tsx scripts/plan-units.ts",
     "peel-headings": "tsx scripts/peel-headings.ts",
     "move-heading": "tsx scripts/move-heading.ts",
+    "retarget-id": "tsx scripts/retarget-id.ts",
     "verify": "tsx scripts/verify.ts",
     "token-report": "node scripts/token-report.mjs",
     "page-lines": "tsx scripts/page-lines.ts",

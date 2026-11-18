@@ -1,6 +1,6 @@
 # Restructuring sittings
 
-Editors only. How to measure a sitting, split one off a page, and move H3s between sittings. What one sitting holds: [one sitting](../grammar-docs.md#one-sitting); one sitting per file: [how to apply](../learning-levels.md#how-to-apply). Wrapped by the `restructure-sittings` skill.
+Editors only. How to measure a sitting, split one off a page, move H3s between sittings, and split an H3 in place. What one sitting holds: [one sitting](../grammar-docs.md#one-sitting); one sitting per file: [how to apply](../learning-levels.md#how-to-apply). Wrapped by the `restructure-sittings` skill.
 
 ## Sitting length {#sitting-length}
 
@@ -19,6 +19,13 @@ To peel named H3s onto a new sitting of another band: `npm run peel-headings -- 
 ## Move an H3 between sittings {#move-heading}
 
 `npm run move-heading -- --from a.md --ids x,y --into b.md (--after id | --before id | --end)` (dry run); `--write` moves the clusters, rewrites `a.md#x` links everywhere `peel-headings` does, and adds `hash-redirect.ts` rows so `a.html#x` lands on `b.html#x`. `--record-only` writes only the hash rows for a move already made by hand (`--ids old:new` for a renamed id). Practice, the allowlist, the sidebar and reviews stay hand work.
+
+## Split an H3 on its page {#split-heading}
+
+1. Split the H3 by hand. Give each new H3 its own `{#id}`, none of them the old id, and remove the old id and any `<a id>` line under it.
+2. `npm run retarget-id -- --page a.md --id old --to new --list` prints every reference to `a.md#old` repo-wide, including same-page `](#old)` links: `file:line`, the link text, and the text around it. Pick the default target, the H3 most references mean, and read each sentence to see which H3 it means.
+3. `npm run retarget-id -- --page a.md --id old --to new --except path/b.md:88=other,…` (dry run, paths from the repo root); `--write` rewrites each reference to `--to` or to its line's exception, and adds one `hash-redirect.ts` row so `a.html#old` lands on `a.html#new`.
+4. The tool sends a whole line to one target. A line marked `(×2)` whose references mean different H3s is fixed by hand after `--write`.
 
 ## After any of these {#after}
 

@@ -1,5 +1,5 @@
 /**
- * Repo-wide `page.md#id` retargets for peel-band, peel-headings and move-heading.
+ * Repo-wide `page.md#id` retargets for peel-band, peel-headings, move-heading and retarget-id.
  *
  * Covers docs (grammar pages, cheat sheets, Claritish `<!-- Source -->`, meta), src (constructions,
  * game `source`), scripts, data (overlay CSV, lexicon `core` column), AGENTS.md and README.md.
@@ -16,7 +16,7 @@ import { rewriteAnchorRefs, rewriteMarkdownLinks } from "./peel-band.ts";
 const SCAN_DIRS = ["docs", "src", "scripts", "data"].map((dir) => join(REPO_ROOT, dir));
 const SCAN_FILES = ["AGENTS.md", "README.md"].map((name) => join(REPO_ROOT, name));
 const SKIP_DIRS = new Set(["node_modules", "public", "dist", "generated", "rejected"]);
-const SKIP_PREFIX = /^(?:peel-band|peel-headings|move-heading|link-rewrite|hash-rows|heading-clusters)/;
+const SKIP_PREFIX = /^(?:peel-band|peel-headings|move-heading|retarget-id|link-rewrite|hash-rows|heading-clusters)/;
 const PROPOSALS = `${join(REPO_ROOT, "docs", "proposals")}${sep}`;
 
 export type Change = { from: string; to: string };
