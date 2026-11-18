@@ -7,20 +7,14 @@ discord invite:
 https://discord.gg/CAMGw2Akhc
 
 # TODO
--vocab flashcards generator
 -contact form / about me
--proposals
 -cheat sheet for reading a word?
 -prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
--profile build
 -tmp purging?
 -speed reading view becomes outline mode?
--consider conceptual metaphor of past is in front of us (because we can see it)
+-syntax highlighting should cover more obscure scoping rules
 Cheat sheet distinguish cue vs exact match
--split pages with only one h3 into multiple h3s
--use fable to identify new ideas
--consider how to make non-LLM agentic AI (can complete high level tasks from ageben prompt)
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth

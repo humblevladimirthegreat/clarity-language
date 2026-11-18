@@ -80,7 +80,7 @@ A proposal that runs in more than one session states its phases in the plan: eac
 
 A proposal that runs through subagents also states, in its plan:
 
-- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](proposals.md#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items, sized per [step 1](proposals.md#running-with-subagents))
+- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](proposals.md#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items, sized per [step 1](proposals.md#running-with-subagents)). Write the units as paragraphs, never as a table, because item text is too long to read in a table cell. Each unit starts with its bold ID and name, then a line with the agent, `model` and effort, then its items, then a **May edit:** line
 - the files each unit may edit
 - the rule digest copied into every brief, with its report format and the standing stop line from [step 2](proposals.md#running-with-subagents)
 - the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row). A full `npm run verify` that passes against an empty baseline runs the build and the tests, so it is the final gate; don't run `npm run build` or `npm test` again after it.
