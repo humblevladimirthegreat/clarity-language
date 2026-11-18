@@ -11,7 +11,7 @@ import { parse } from "../parse/index.js";
 import { PAIR_ROWS } from "../parse/scope.js";
 import { coverage } from "./coverage.js";
 import { allReadings, readParse, readText } from "./read.js";
-import type { Frame, Reading, Term } from "./types.js";
+import type { Frame, Reading, StanceList, Term } from "./types.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
@@ -170,6 +170,12 @@ describe("reader: claim, links and nesting", () => {
 /** The one reading of a one-clause gloss. */
 const one = (gloss: string): Reading => read(gloss)[0]!;
 type ListTerm = Extract<Term, { kind: "list" }>;
+/** The one stance list a reading has, closed by a join of this series. */
+const stanceList = (reading: Reading, series: string): StanceList => {
+  const lists = reading.stanceLists?.filter((l) => l.values.series === series) ?? [];
+  assert.equal(lists.length, 1);
+  return lists[0]!;
+};
 const asList = (term: Term | undefined): ListTerm => {
   assert.equal(term?.kind, "list");
   return term as ListTerm;
@@ -873,11 +879,14 @@ describe("reader audit (R8): doc examples, one per test, checked against the doc
   });
 
   it(
-    "verb-and-stance-joins.md:186: a join between a hinge and `blarl` denies only the grounds, so it nests in the hinge",
+    "verb-and-stance-joins.md:186: a join between a hinge and `blarl` denies only the grounds: a stance list of one",
     () => {
       const reading = one("z-Azozon | v-walk | [th-because | th-not] | bl-that-clause | z-Alazun | v-run");
       assert.ok(!reading.frames.some((f) => f.family === "polarity"), "not a whole-clause frame");
-      assert.equal(frame(reading, "hinge").inner?.[0]?.family, "polarity");
+      const list = stanceList(reading, "u");
+      assert.deepEqual(list.members, [frame(reading, "hinge")]);
+      assert.equal(list.inner?.[0]?.family, "polarity");
+      assert.equal(frame(reading, "hinge").inner, undefined, "the hinge holds nothing");
     },
   );
 
@@ -889,4 +898,49 @@ describe("reader audit (R8): doc examples, one per test, checked against the doc
       assert.ok(!house, "the house's binder sits under `never`, not over the clause");
     },
   );
+});
+
+describe("reader (R9): a `/th/` join that closes stance words reads as one stance list", () => {
+  it("verb-and-stance-joins.md:154: `thul` after one hinge denies the grounds: a list of one, the claim stands", () => {
+    const reading = one("z-Azozon | v-walk | [[th-because | bl-rain] | th-not]");
+    const list = stanceList(reading, "u");
+    assert.deepEqual(list.members, [frame(reading, "hinge")]);
+    assert.deepEqual(list.inner?.map((f) => f.family), ["polarity"]);
+    assert.deepEqual(families(reading), ["hinge"], "no whole-clause polarity");
+  });
+
+  it("verb-and-stance-joins.md:162: a rank join over two grounds is a list with no frame of its own", () => {
+    const reading = one("z-Azozon | v-walk | [[th-because | bl-rain] | [th-if | bl-Alazun] | th-rank/more]");
+    const list = stanceList(reading, "o");
+    assert.deepEqual(list.members, reading.frames.filter((f) => f.family === "hinge"));
+    assert.equal(list.inner, undefined);
+    assert.equal(reading.claim.details.length, 0, "the join is not an adverb on the claim");
+  });
+
+  it("decision 17: `thul` after two grounds denies their list, not the clause", () => {
+    const reading = one("z-Azozon | v-walk | [[th-because | bl-rain] | [th-if | bl-Alazun] | th-not]");
+    const list = stanceList(reading, "u");
+    assert.deepEqual(
+      list.members.map((m) => ("kind" in m ? m.join.raw : m.words[0]?.raw)),
+      reading.frames.filter((f) => f.family === "hinge").map((f) => f.words[0]?.raw),
+      "both hinges, in text order",
+    );
+    assert.deepEqual(list.inner?.map((f) => f.family), ["polarity"]);
+    assert.deepEqual(families(reading), ["hinge", "hinge"], "no whole-clause polarity");
+    assert.equal(reading.unread.length, 0);
+  });
+
+  it("verb-and-stance-joins.md:246: `thul` right after MAY denies MAY: a list of one", () => {
+    const reading = one("z-Azozon | v-walk | [th-MAY | th-not]");
+    const list = stanceList(reading, "u");
+    assert.deepEqual(list.members, [frame(reading, "stance")]);
+    assert.deepEqual(list.inner?.map((f) => f.family), ["polarity"]);
+    assert.deepEqual(families(reading), ["stance"]);
+  });
+
+  it("verb-and-stance-joins.md:198: a standalone join closes nothing, so it is no list", () => {
+    const reading = one("z-Azozon | v-walk | th-not");
+    assert.equal(reading.stanceLists, undefined);
+    assert.deepEqual(families(reading), ["polarity"]);
+  });
 });

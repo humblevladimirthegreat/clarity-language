@@ -173,6 +173,13 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
     const none = new Set<LexWord>();
     for (const o of r.order) if (o.kind === "wordShape") pair(o.over, o.under);
     for (const f of r.frames) frame(f, r, none);
+    // A stance list's members are pointers to frames above (or to an earlier list); its own place is the join word.
+    for (const l of r.stanceLists ?? []) {
+      hit(l.join, r, "stanceList:join", none);
+      const inside = within(none, [l.join]);
+      for (const f of l.inner ?? []) frame(f, r, inside);
+      for (const d of l.details ?? []) detail(d, r, inside);
+    }
     const claim = r.claim;
     term(claim.verb, r, none);
     for (const role of ["z", "d", "b"] as const) term(claim.roles[role], r, none);

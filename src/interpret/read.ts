@@ -33,7 +33,7 @@ import type {
 } from "../parse/types.js";
 import { classOf, overlayClassKey } from "./classes.js";
 import { placeTones, toneFrame } from "./tones.js";
-import type { Detail, Frame, Link, LinkKind, Reading, ReadingId, Term, Unread } from "./types.js";
+import type { Detail, Frame, Link, LinkKind, Reading, ReadingId, StanceList, Term, Unread } from "./types.js";
 
 export type ReadOptions = {
   /** Needed to read a quote's words (they are parsed as their own text). Without them a quote is an `unread` entry. */
@@ -705,15 +705,43 @@ function placeFrame(key: string, word: LexWord, reach: FrameReach | undefined, h
   return frame;
 }
 
+const STANCE_JOINS = "verb-and-stance-joins.md#stance-joins";
+
+/** A frame on the reading, or held in one, whose own word is at `at`. */
+function frameAt(frames: Frame[] | undefined, at: number): Frame | undefined {
+  for (const f of frames ?? []) {
+    if (f.words[0]?.at === at) return f;
+    const inner = frameAt(f.inner, at);
+    if (inner) return inner;
+  }
+  return undefined;
+}
+
 /**
- * The one stance word a list-reach `/th/` join closes (`thomam thul`, `thahum thul blarl`): the join denies only that
- * word, so it nests in that word's frame (rule 2; verb-and-stance-joins.md#stance-joins,
- * verb-and-stance-joins.md#stance-join-before-barl). A join that closes several stance words denies their list, which
- * no one frame holds, so it stays where it was.
+ * A `/th/` join that closes stance words (`thahum blerulal thohem blalazun thul`, `thomam thul`, `thahum thul blarl`):
+ * the stance words it closes are one list, whatever the series, and the join's frame, where its row is a frame, reaches
+ * that list only, so it nests in the list (rule 2; verb-and-stance-joins.md#stance-joins,
+ * verb-and-stance-joins.md#stance-join-reach, verb-and-stance-joins.md#stance-join-before-barl). The members stay
+ * frames of the reading; the list points at them.
  */
-function listItemFrame(reach: FrameReach | undefined, closes: number[] | undefined, here: Here): Frame | undefined {
-  if (reach !== "list" || closes?.length !== 1) return undefined;
-  return here.reading.frames.find((f) => f.words[0]?.at === closes[0]);
+function readStanceList(unit: HUnit, key: string, here: Here): void {
+  const word = unit.word;
+  const lists = (here.reading.stanceLists ??= []);
+  const members: (Frame | StanceList)[] = [];
+  for (const at of unit.closes ?? []) {
+    const member = lists.find((l) => l.join.at === at) ?? frameAt(here.reading.frames, at);
+    if (member) members.push(member);
+    else unread(here, "unplaced", key, word);
+  }
+  const list: StanceList = { kind: "stanceList", key, construction: constructionFor(key, word), anchor: STANCE_JOINS, join: word, values: wordValues(word), members };
+  if (classOf(key)?.cls.startsWith("frame:")) list.inner = [frameOf(key, word, here)];
+  if (unit.modifiers.length) {
+    const holder: Detail = detailOf(key, word, "frame");
+    for (const w of unit.modifiers) modifier(w, here, holder);
+    if (holder.frames?.length) list.inner = [...(list.inner ?? []), ...holder.frames];
+    if (holder.details?.length) list.details = holder.details;
+  }
+  lists.push(list);
 }
 
 /** A frame held inside another (rule 2): it keeps its word and sits in the outer frame's `inner`. */
@@ -726,15 +754,17 @@ function nestFrame(key: string, word: LexWord, outer: Frame, here: Here): Frame 
 function readH(unit: HUnit, here: Here, clause: Clause): void {
   const word = unit.word;
   const key = wordKey(word, unit.closes);
+  if (word.pos === "th" && word.family.kind === "joinMarker" && unit.closes?.length) {
+    readStanceList(unit, key, here);
+    return;
+  }
   const row = classOf(key);
   if (!row) {
     here.reading.frames.push(frameOf(key, word, here));
     return;
   }
   if (row.cls.startsWith("frame:")) {
-    const item = listItemFrame(row.reach, unit.closes, here);
-    const frame = item ? nestFrame(key, word, item, here) : placeFrame(key, word, row.reach, here);
-    if (unit.closes?.length) frame.values.closes = unit.closes.join(",");
+    const frame = placeFrame(key, word, row.reach, here);
     for (const w of unit.modifiers) {
       const holder: Detail = detailOf(key, word, "frame");
       modifier(w, here, holder);

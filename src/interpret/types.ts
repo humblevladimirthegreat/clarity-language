@@ -20,10 +20,43 @@ export type Reading = {
   order: FrameOrder[];
   /** Pairs that do not commute and that no rule orders; no reader, consumer, or host picks. */
   unordered: [Frame, Frame][];
+  /**
+   * Stance words a `/th/` join closes, as one list each, in text order (verb-and-stance-joins.md#stance-joins). Absent
+   * when the clause has none.
+   */
+  stanceLists?: StanceList[];
   claim: Claim;
   links: Link[];
   /** Constructions the reader could not place. */
   unread: Unread[];
+};
+
+/**
+ * A `/th/` join that closes stance words: the joined stance frames as one list, with the join's own frame (if its series
+ * row is a frame) over the list, not over the clause (verb-and-stance-joins.md#stance-joins,
+ * verb-and-stance-joins.md#stance-join-reach). One stance word closed is a list of one. What denying or ranking the list
+ * means is the consumer's, from set-joins.md and rank-joins.md; the reader only copies the tree.
+ */
+export type StanceList = {
+  kind: "stanceList";
+  /** The join's classification-table key (`joinSeries:<series>`). */
+  key: string;
+  construction: string;
+  /** verb-and-stance-joins.md#stance-joins. */
+  anchor: string;
+  /** The join word that closes the list. */
+  join: LexWord;
+  /** The join word's own values: `series`, as on a list term. */
+  values: Record<string, string>;
+  /**
+   * What the join closes, in text order (`HUnit.closes`): stance frames, the same objects as in the reading's frames,
+   * and an earlier stance list in the run, which stands for its whole fence. Pointers, never copies.
+   */
+  members: (Frame | StanceList)[];
+  /** The join's frame where its series row is a frame: polarity (`u`, `ue`), binder (`ua`, `uo`). Absent for a structure series. */
+  inner?: Frame[];
+  /** `/w/` words right before the join: a detail that covers the whole list. */
+  details?: Detail[];
 };
 
 export type FrameOrder = { over: Frame; under: Frame; kind: PairKind; anchors: string[] };

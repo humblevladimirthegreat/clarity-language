@@ -6,7 +6,7 @@ import { basename } from "node:path";
 import { loadDefaultTables } from "../parse/index.js";
 import type { LexWord } from "../parse/types.js";
 import { readText } from "./read.js";
-import type { Claim, Detail, Frame, Link, Reading, Term } from "./types.js";
+import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
 const USAGE = [
   "Usage: node scripts/reading.mjs [--json] '<Ageben text>' ['<Ageben text>' ...]",
@@ -70,6 +70,15 @@ function formatFrame(f: Frame): string {
   return parts.join(" ");
 }
 
+/** A stance list: its join, its members by word (an earlier list by its join), and the join's frame over the list. */
+function formatStanceList(l: StanceList): string {
+  const member = (m: Frame | StanceList): string => ("kind" in m ? `list ${word(m.join)}` : `"${words(m.words)}"`);
+  const parts = [l.key, `"${word(l.join)}"`, `[${l.members.map(member).join(" | ")}]`];
+  if (l.inner?.length) parts.push(`inner (${l.inner.map(formatFrame).join("; ")})`);
+  if (l.details?.length) parts.push(`{${l.details.map(formatDetail).join("; ")}}`);
+  return parts.join(" ");
+}
+
 const frameName = (f: Frame): string => `${f.key}${f.member ? `:${f.member}` : ""}`;
 
 function formatClaim(c: Claim): string[] {
@@ -96,6 +105,7 @@ export function formatReadings(readings: Reading[], indent = 0): string[] {
     for (const f of r.frames) out.push(`${pad}  frame ${formatFrame(f)}`);
     for (const o of r.order) out.push(`${pad}  order ${frameName(o.over)} > ${frameName(o.under)} (${o.kind})`);
     for (const [a, b] of r.unordered) out.push(`${pad}  unordered ${frameName(a)} | ${frameName(b)}`);
+    for (const l of r.stanceLists ?? []) out.push(`${pad}  stanceList ${formatStanceList(l)}`);
     for (const line of formatClaim(r.claim)) out.push(`${pad}  ${line}`);
     for (const l of r.links) out.push(`${pad}  ${formatLink(l)}`);
     for (const u of r.unread) out.push(`${pad}  unread ${u.construction}${u.key ? ` ${u.key}` : ""}${u.word ? ` "${u.word.raw}"` : ""} (${u.reason})`);
