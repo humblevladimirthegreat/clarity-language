@@ -28,7 +28,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, fe
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [How you know](/evidentiality#deduction) |
 | **FLEETING** | Feeling duration: a flash or a wave that will pass | `thawethuluar` | [Feelings](/feelings#feeling-duration) |
 | **FORBID** | Say word answer: no, forbid | `hwuvul` | [Contrary to](/contrary-to#contrary-to-say) |
-| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/residue-and-former#residue) |
+| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Residue and former](/residue-and-former#former-climate) |
 | **GIVING** | Feeling urge: do something for someone | `thewathumom` | [How you feel](/how-you-feel#urges) |
 | **HELD** | Feeling urge: stuck on the spot, frozen or keeping a lid on it | `wawethumaem` | [Feelings](/feelings#emotion-compose) |
 | **IDENTITY** | Identity copula | `gorel` | [Predication](/predication#identity) |
