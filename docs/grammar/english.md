@@ -89,7 +89,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | kind / role (*Azozon as a dog*) | classification `/ɡ/` | [Kind / role](/predication#classification) |
 | same one (*Alazun as Azozon*) | **IDENTITY** + `/b/` | [Identity](/predication#identity) |
 | same time (*as Alazun walks*) | **`herom blarl`** | [Dependent clauses](/dependents#dependent-clauses) |
-| reason / since (*as Alazun walks*) | **`thahum blarl`** | [Because](/because-and-iff#because) |
+| reason / since (*as Alazun walks*) | **`thahum blarl`** | [Because](/because-and-iff#choosing-a-hinge) |
 | grounds (*as the sky is gray, it will rain*) | **`theyom blarl`** / **`thubom blarl`** | [Evidence clause](/evidentiality#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](/comparatives#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](/comparative-arity#full-comparative-arity) |
@@ -98,7 +98,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
 | not in that role (*not as a teacher*, off duty) | reach `ue` on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
 | resemblance (*walks as / like a duck*) | **`hewem`** + `/b/` | [Likeness](/relations#likeness) |
-| how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/exactly-like#exactly-like), [likeness](/relations#likeness), [degree words](/very-and-slightly#degree-w) |
+| how close (*exactly like*, *a bit like*) | **`hewel`** for an exact match (`hewel bladozal`), or `/w/` before **`hewem`**: `wubugem hewem bladozal` (*precisely*), `wamezem hewem bladozal` (*a bit*) | [Exactly like](/exactly-like#exactly-like), [likeness](/relations#likeness), [degree words](/very-and-slightly#grading-a-quality) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewem blarl`** + the event | [Likeness](/relations#likeness) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](/notional#notional) |
 | dated books (*as of Friday*) | **`henam` / `hunom`** + `/b/` | [*As-of*](/as-of#as-of) |
@@ -109,7 +109,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](/hooks#since) |
 | from an event on (*since Alazun fell asleep*) | **`ul barl`** + the sentence | [Since](/hooks#since) |
-| reason (*since Alazun walks*) | **`thahum blarl`** | [Because](/because-and-iff#because) |
+| reason (*since Alazun walks*) | **`thahum blarl`** | [Because](/because-and-iff#choosing-a-hinge) |
 | *never since …* / *not once since …* (over the stretch since then) | **`huxal`** + the time: `huxal blanulul`; **`huxal blarl`** + the sentence | [Bounding a time](/hooked-joins#hooked-joins-time), [bounded by a clause](/hooked-joins#hooked-joins-clause) |
 
 ### *against*
@@ -362,8 +362,8 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *anyway, Azozon …* (after a side topic) | **`er xazozor …`** | [Return](/topic#topic-return), [resume hooks](/discourse-hooks#discourse) |
 | *what are we talking about?* | **`yel zar gehugom.`** | [Asking about the topic](/topic#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyen`** | [Generic pronoun](/pronouns#generic-pronoun) |
-| *the latter* / *the former* (of two just named in the same role) | role pointer **`zwuzer`** (*the latter*) / **`zwuzar`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodozel zwal`, then `zwar`) | [Role pointers](/pronouns#role-pointers), [tag pronouns](/tag-pronouns#tag-pronouns) |
-| *call it A*, *let A be a dog*, *suppose A tells O* | tag + `-l` after the phrase (**`zodozel zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](/tag-pronouns#tag-pronouns) |
+| *the latter* / *the former* (of two just named in the same role) | role pointer **`zwuzer`** (*the latter*) / **`zwuzar`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodozel zwal`, then `zwar`) | [Role pointers](/pronouns#role-pointers), [tag pronouns](/tag-pronouns#naming-with-a-tag) |
+| *call it A*, *let A be a dog*, *suppose A tells O* | tag + `-l` after the phrase (**`zodozel zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](/tag-pronouns#naming-with-a-tag) |
 
 ### Greetings {#greetings}
 

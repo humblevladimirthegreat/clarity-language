@@ -190,7 +190,7 @@ English *judging by*, *going by*, and *given that* name the **grounds** for a cl
 >
 > "Alazun punched, judging by the fact that Azozon is screaming."
 
-Grounds are not a cause. With [`thahum blarl`](because-and-iff.md#only-because), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alazun punch.
+Grounds are not a cause. With [`thahum blarl`](because-and-iff.md#choosing-a-hinge), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alazun punch.
 
 > `zazozon veyamul thahum blarl zalazun vabuvul.`
 >
@@ -315,7 +315,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 >
 > "Azozon teaches, since every teacher teaches and Azozon is a teacher."
 
-To claim only that the conclusion follows, put a [hinge](because-and-iff.md#only-because) between the channel and `blarl`. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+To claim only that the conclusion follows, put a [hinge](because-and-iff.md#choosing-a-hinge) between the channel and `blarl`. The hinge is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
 > `zazozon veduyol thanam thohem blarl zual gwozeduyol veduyol xam zazozon gwozeduyol.`
 >

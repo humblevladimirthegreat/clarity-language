@@ -70,8 +70,8 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | Working assumption, for now | `theyur` | [notional](/notional#follow-up-endings-notional) |
 | Test scenario, rehearsed | `theyul` | [notional](/notional#follow-up-endings-notional) |
 | Open question the implementer must ask, not answer | fill-ask question | [fill ask](/questions#fill-ask), [which blank](/fill-ask-jobs#what-kind) |
-| Guard: if / only if / if and only if / unless / even if | `thohem`, `thebem`, `thehom`, `thohem blurl`, `hezem thohem` | [if](/causation#if), [only if](/causation#only-if), [iff and only because](/because-and-iff#only-because) |
-| Rationale | because `thahum`; whose need it serves: a sake | [because](/because-and-iff#only-because), [for a sake](/for-a-sake#whose-stake) |
+| Guard: if / only if / if and only if / unless / even if | `thohem`, `thebem`, `thehom`, `thohem blurl`, `hezem thohem` | [if](/causation#if), [only if](/causation#only-if), [iff and only because](/because-and-iff#choosing-a-hinge) |
+| Rationale | because `thahum`; whose need it serves: a sake | [because](/because-and-iff#choosing-a-hinge), [for a sake](/for-a-sake#whose-stake) |
 | Invariant over every member, no exceptions / with exceptions | `zual` / `zuam` fence, bound tag for *each one* | [universals](/universals-domains#universals-domains-generics), [bound tags](/universals-domains#bound-tags) |
 | Never / none | `zul`, `hal` | [universals](/universals-domains#universals-domains-generics), [never](/restrictors#only-when-never-hal) |
 | How the invariant is known (proved, tested, observed) | channel on the generalization | [usually vs must](/usually-vs-must#generalization) |
@@ -83,7 +83,7 @@ Every row uses forms the grammar teaches today. *Spec job* is what an English sp
 | How much design is left to the implementer | plan resolution: `thagor` sketch, `thagom` itinerary, `thagol` with backups | [plan](/intention#plan) |
 | Decision record: final / revisable / for now | `thogel` / `thogem` / `thoger` | [decision](/want-and-decide#decision-revisability) |
 | Nice to have | want: `thalom` | [want](/want-and-decide#want) |
-| Spike or prototype | try, trial run: `howar` | [try](/try#try) |
+| Spike or prototype | try, trial run: `howar` | [try](/try#trying) |
 | Scope by release: can / not yet / blocked for now / never | ability `xa` / `xe` / `xo` / `xu` | [ability](/can-and-cant#ability-stance) |
 | Budgets and limits (*at most*, *up to code*, *over the limit*) | bars on a say word: `hwuvol zoel`, `hwuval zol` | [stance bars](/stance-bars#stance-bars), [bars](/bars#bars) |
 | Quantities, ranges, percentages, times | numerals, ranges, measures | [number ranges](/ranges#number-ranges), [measures](/measures-and-percent#measure-phrases), [percent](/measures-and-percent#percent-and-percentage-points), [time](/digit-strings#time) |

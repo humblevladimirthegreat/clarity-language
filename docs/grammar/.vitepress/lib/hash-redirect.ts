@@ -130,7 +130,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "tag-pronouns.md", hash: "how-english-approximates-r", to: "resume-sense.md", toHash: "how-english-approximates-r" },
   { page: "tag-pronouns.md", hash: "resume-sense", to: "resume-sense.md", toHash: "resume-sense" },
   { page: "tag-pronouns.md", hash: "cross-role-recast", to: "resume-sense.md", toHash: "cross-role-recast" },
-  { page: "longer-chains.md", hash: "degree-w", to: "very-and-slightly.md", toHash: "degree-w" },
+  { page: "longer-chains.md", hash: "degree-w", to: "very-and-slightly.md", toHash: "grading-a-quality" },
   { page: "longer-chains.md", hash: "no-subject", to: "no-subject.md", toHash: "no-subject" },
   { page: "in-clause-hooks.md", hash: "discourse", to: "discourse-hooks.md", toHash: "discourse" },
   { page: "discourse-hooks.md", hash: "parallel-chains", to: "in-clause-hooks.md", toHash: "parallel-chains" },
@@ -182,6 +182,12 @@ export const hashRedirects: HashRedirect[] = [
   { page: "tone-marks.md", hash: "tone-marks", to: "tone-marks.md", toHash: "showing-your-tone" },
   { page: "number-roles.md", hash: "number-as-roles", to: "number-roles.md", toHash: "number-as-verb-by-marker" },
   { page: "dated-channel.md", hash: "dated-channel", to: "dated-channel.md", toHash: "counting-from-now" },
+  { page: "tag-pronouns.md", hash: "tag-pronouns", to: "tag-pronouns.md", toHash: "naming-with-a-tag" },
+  { page: "try.md", hash: "try", to: "try.md", toHash: "trying" },
+  { page: "because-and-iff.md", hash: "only-because", to: "because-and-iff.md", toHash: "choosing-a-hinge" },
+  { page: "because-and-iff.md", hash: "because", to: "because-and-iff.md", toHash: "choosing-a-hinge" },
+  { page: "because-and-iff.md", hash: "hinges", to: "because-and-iff.md", toHash: "choosing-a-hinge" },
+  { page: "very-and-slightly.md", hash: "degree-w", to: "very-and-slightly.md", toHash: "grading-a-quality" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

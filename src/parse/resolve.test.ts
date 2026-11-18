@@ -262,7 +262,7 @@ describe("resolve — span and number anaphors", () => {
   });
 });
 
-describe("resolve — tag pronouns (tag-pronouns.md#tag-pronouns)", () => {
+describe("resolve — tag pronouns (tag-pronouns.md#naming-with-a-tag)", () => {
   function tags(text: string): string[] {
     return resolveOf(text)
       .anaphors.filter((a) => a.kind === "tag")

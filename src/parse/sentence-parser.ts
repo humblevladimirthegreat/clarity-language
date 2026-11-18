@@ -162,7 +162,7 @@ const NP_SLOTS = ["z", "d", "b"] as const;
 /**
  * What the last unit of a clause was, which limits the next one (see the `unit` rules). `zFree` (and `dFree`, `bFree`):
  * the main clause ended with a stand-in or `barl` of that slot and no tag, so the next sentence starts as at `start`,
- * except with a bare tag of that slot, which would name the phrase before it (tag-pronouns.md#tag-pronouns).
+ * except with a bare tag of that slot, which would name the phrase before it (tag-pronouns.md#naming-with-a-tag).
  */
 type ChainState = "start" | NpSlot | "v" | "g" | "h" | "zFree" | "dFree" | "bFree";
 /**
@@ -790,7 +790,7 @@ class AgebenSentenceParser extends CstParser {
    * next sentence is the grounds (bars.md#bars). The parts after the first come as a right-recursive rest
    * (read back by `npPartNodes`), so a part's end is known before deciding whether more follow:
    * - After a part a group tag closes (`Tagged`), the next part may open with a new tag (`zwal zodogal zam`); after any
-   *   other part it may not: a tag right after a join names the whole list (tag-pronouns.md#tag-pronouns).
+   *   other part it may not: a tag right after a join names the whole list (tag-pronouns.md#naming-with-a-tag).
    * - A part that opens with a bar ({@link FenceBar}) follows a closed `ua` fence, so it is never the first part.
    */
   private npRules(level: NpSlot) {
@@ -854,7 +854,7 @@ class AgebenSentenceParser extends CstParser {
       const groupTag = NP_HEAD[level].tag;
       const grounds = end.startsWith("Grounds");
       const shape = end.replace(/^Grounds/, "") as CloseEnd | "Tagged";
-      // The join and a tag **-l** right after it, which names the whole list (`zodogal zagadul zam zwal`, tag-pronouns.md#tag-pronouns).
+      // The join and a tag **-l** right after it, which names the whole list (`zodogal zagadul zam zwal`, tag-pronouns.md#naming-with-a-tag).
       const ending = (k: number, label: string) => {
         if (shape !== "Tagged") {
           this.subrule(k, close[shape], { LABEL: label });
@@ -881,7 +881,7 @@ class AgebenSentenceParser extends CstParser {
       const alts: { ALT: () => void }[] = [
         { ALT: () => items(7, () => this.SUBRULE(pkg, { LABEL: "npConjunct" })) },
       ];
-      // A new tag listed with other items goes first (`zwal zodogal zam`, tag-pronouns.md#tag-pronouns).
+      // A new tag listed with other items goes first (`zwal zodogal zam`, tag-pronouns.md#naming-with-a-tag).
       if (start === "First") alts.push({ ALT: () => items(5, () => this.SUBRULE(tag, { LABEL: "npConjunct" })) });
       if (!grounds) alts.push({ ALT: () => ending(1, "standaloneJoin") });
       if (start === "Rest" && !grounds) {
@@ -1517,7 +1517,7 @@ class AgebenSentenceParser extends CstParser {
   /**
    * A noun package: any head in a list (`Package`). A lone phrase is a noun or written span (`Noun`), a forward
    * stand-in (`StandIn`), which ends its sentence's main clause, or a bare tag **-l** as a new referent (`Tag`).
-   * A tag **-l** right after the head and its adjectives names that phrase (tag-pronouns.md#tag-pronouns); a lone noun
+   * A tag **-l** right after the head and its adjectives names that phrase (tag-pronouns.md#naming-with-a-tag); a lone noun
    * or stand-in with one is `…Tagged`, since a plain adjective after the tag no longer describes the noun.
    */
   private npPackageRule(level: NpSlot, variant: "Package" | "Noun" | "NounTagged" | "StandIn" | "StandInTagged" | "Tag") {

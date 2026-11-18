@@ -81,7 +81,7 @@ A span fills a role like any noun, so a [role pointer](/pronouns#role-pointers) 
 
 The same holds for a loan word or any other span, and `dwudel` is [another one](/pronouns#a-new-one) of what the span holds.
 
-An aside gives role pointers nothing to point back to. A [tag](tag-pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
+An aside gives role pointers nothing to point back to. A [tag](tag-pronouns.md#naming-with-a-tag) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
 A span on `/v/` (`v[vezohul]`) has no resume pronoun.
 

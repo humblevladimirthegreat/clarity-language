@@ -59,7 +59,7 @@ The holder word ends the way a noun for that person would:
 | [associative `-x`](/plurality#associative) after the ending | the person and their associates |
 | `-lx` on a kind of person | some people of that kind |
 
-A [tag](tag-pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zalazun theyomeyel vudurul.` is *I gather someone thinks Alazun left*.
+A [tag](tag-pronouns.md#naming-with-a-tag) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zalazun theyomeyel vudurul.` is *I gather someone thinks Alazun left*.
 
 > `zazozon vowurol. zalazun theyomazozor vudurul.`
 >

@@ -203,7 +203,7 @@ Source: [pronouns.md](/pronouns#role-pointers)
 
 ## Tag pronouns
 
-Source: [pronouns.md](/tag-pronouns#tag-pronouns)
+Source: [pronouns.md](/tag-pronouns#naming-with-a-tag)
 
 - **closed (D-24):** a tag on `/y/` / `/x/` (`ywar`, `xwar`).
 - **open:** a tag on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/th/`, or with `gl-` (`vwar`). A tag names a participant, and these slots take none. Parser: `tagSlot`.
@@ -258,7 +258,7 @@ Source: [predication.md](/predication)
 
 ## Closed-root endings
 
-Source: [causation.md](/because-and-iff#hinges), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/residue-and-former#residue)
+Source: [causation.md](/because-and-iff#choosing-a-hinge), [relations.md](/relations), [dependents.md](/dependents#dependent-clauses), [knowing.md](/residue-and-former#residue)
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `hewel`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 

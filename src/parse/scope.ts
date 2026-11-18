@@ -85,7 +85,7 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "overlay:phasal:h": { family: "phase", reach: "clause", anchor: "already-still-yet.md#stage-of-change" },
   "overlay:phasal:w": { family: "phase", reach: "adjective", anchor: "already-still-yet.md#stage-of-change" },
   "overlay:phasal:th": { family: "phase", reach: "clause", anchor: "already-still-yet.md#stage-of-change" },
-  "overlay:attempt:h": { family: "intention", reach: "clause", anchor: "try.md#try" },
+  "overlay:attempt:h": { family: "intention", reach: "clause", anchor: "try.md#trying" },
   "overlay:want:th": { family: "intention", reach: "clause", anchor: "want-and-decide.md#want" },
   "joinSeries:u": { family: "polarity", reach: "list", anchor: "joins.md#negation-u" },
   "joinSeries:u:standalone": { family: "polarity", reach: "clause", anchor: "verb-and-stance-joins.md#standalone-stance-joins" },

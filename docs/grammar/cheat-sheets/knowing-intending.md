@@ -167,9 +167,9 @@ A want, a plan, and a decision are three steps, and they stack in that order. Al
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#try) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](/try#try) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#try) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#trying) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](/try#trying) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#trying) | I |
 | `thagol` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](/intention#plan) | B |
 | `thagom` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](/intention#plan) | B |
 | `thagor` | plan mood sketch map-resolution (direction only; details left open) | [Plan](/intention#plan) | B |
@@ -189,9 +189,9 @@ A want, a plan, and a decision are three steps, and they stack in that order. Al
 | [Plan, sketch](/intention#plan-predict) | `zuwen thagor vowurol.` | *I intend to walk; the details are open.* | B |
 | [Plan, atlas](/intention#plan-predict) | `zuwen thagol vowurol.` | *I'm fully prepared to walk.* | B |
 | [Decision](/want-and-decide#decision): yours, no time | `zuwen thogem vozuyel.` | *I've decided to sing, and can still change that.* | I |
-| [Try](/try#try) | `zazozon howam varuyol.` | *Azozon tries to write.* | I |
-| [Trial run](/try#try) | `zalazun howar vozuyel.` | *Alazun gives singing a try.* | I |
-| [Committed](/try#try) | `zalazun howal vowurol.` | *Alazun keeps trying to walk.* | I |
+| [Try](/try#trying) | `zazozon howam varuyol.` | *Azozon tries to write.* | I |
+| [Trial run](/try#trying) | `zalazun howar vozuyel.` | *Alazun gives singing a try.* | I |
+| [Committed](/try#trying) | `zalazun howal vowurol.` | *Alazun keeps trying to walk.* | I |
 | [Want](/want-and-decide#want): yours | `zazozon thalom vowurol.` | *I want Azozon to walk.* | I |
 | [Someone else's want](/want-and-decide#whose-intention): a holder | `zazozon thebamazozon thalom vowurol.` | *I hear Azozon wants to walk.* | I |
 | [Want, a whim](/want-and-decide#want-endings) | `zalazun thalor vozuyel.` | *Right now I feel like having Alazun sing.* | I |
@@ -239,5 +239,5 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thubom blral` *will, by the pattern* ([a forecast](/evidentiality#forecast)) | | `thagom` *I plan to* ([an intention](/intention#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](/residue-and-former#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](/already-still-yet#stage-of-change)) |
 | `thogem` *I've decided* ([how open the choice is, no time](/want-and-decide#decision)) | | `thagom` *I plan* ([how worked out, still ahead](/intention#plan-predict)) |
-| `howam` *tries* ([acts, outcome open](/try#try)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
+| `howam` *tries* ([acts, outcome open](/try#trying)) | | `vozuyexal` *can sing* ([a claim about ability](/can-and-cant#can)) |
 | `thalom` *I want* ([your own wanting](/want-and-decide#want)) | | `thebamazozon thagom` *I hear Azozon plans* ([someone else's plan](/holder#holder-plans-and-motives)) |

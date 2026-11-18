@@ -18,7 +18,7 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 
 | Piece | Says | In `hwuvam` |
 |-------|------|-------------|
-| `w` | a closed word with no root, as on a [tag](tag-pronouns.md#tag-pronouns) | `w` |
+| `w` | a closed word with no root, as on a [tag](tag-pronouns.md#naming-with-a-tag) | `w` |
 | reach vowel | how far the say reaches: `u` this stretch of doing (more below) | `u` |
 | whose say | `v` someone over the act and outside it; `z` the doer; `d` the one it's done to; `b` the recipient | `v` |
 | answer | `a` yes, allow (as in `yaol`); `u` no, forbid (as in `yuol`); `o` require, ask for (`o` ≈ rank); `e` their call (`e` ≈ choice) | `a` |

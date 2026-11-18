@@ -31,7 +31,7 @@ The interpreter turns a parse into **readings**, one per clause, so tools can co
 | `hinge` | Ties the claim to a condition, cause, concession, fault, or aim: *if*, *only if*, *iff*, *because*, *although*, *so that*, fault, CAUSE | `causation.md`, `because-and-iff.md`, `fault.md`, `cause.md`, `dependents.md#hinges`, `more-hinges.md#result-hinge` |
 | `stance` | How you know the claim or how sure you are: MAY, the channels, deduction | `knowing.md#may`, `knowing.md#live-vs-memory`, `evidentiality.md`, `dated-channel.md`, `usually-vs-must.md`, `universality.md` |
 | `holder` | Whose view the clause gives | `holder.md#naming-a-holder` |
-| `intention` | Want, plan, decision, attempt: the claim is a mind's aim or an attempt, not a plain event | `intention.md#plan`, `want-and-decide.md`, `try.md#try` |
+| `intention` | Want, plan, decision, attempt: the claim is a mind's aim or an attempt, not a plain event | `intention.md#plan`, `want-and-decide.md`, `try.md#trying` |
 | `ability` | Can / can't for the whole clause, or built into a verb or adjective | `can-and-cant.md#ability`, `can-and-cant.md#ability-fallback`, `can-and-cant.md#intention-adverbs` |
 | `phase` | Already, still, not yet, no longer: what holds now against a change | `already-still-yet.md#stage-of-change` |
 | `residue` | RESIDUE (outcome still in effect), FORMER (pattern not claimed for now) | `residue-and-former.md#residue-and-former-climate` |
@@ -100,7 +100,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | wordFamily | `joinMarker` | structure | `joins.md#right-close` | Closes a list; read by its `joinSeries` row |
 | wordFamily | `writingSpan` | structure | `spans.md#writing` | Read by `unit:writingSpan` |
 | wordFamily | `foreign` | label | `spans.md#loans` | A loan or opaque payload: a `literal` term |
-| wordFamily | `tag` | link | `tag-pronouns.md#tag-pronouns` | Assigns a tag, or recalls one through `anaphor:tag` |
+| wordFamily | `tag` | link | `tag-pronouns.md#naming-with-a-tag` | Assigns a tag, or recalls one through `anaphor:tag` |
 | wordFamily | `say` | frame:say | `permission-consent.md#say-words` | Covers the whole clause. Fixed by word shape: reach, whose say (`party`), answer, ending are `values` (`permission-consent.md#say-reach`) |
 | xFamily | `role` | label | `roles.md#role-compounds` | |
 | xFamily | `pointer` | link | `pronouns.md#role-pointers` | Read through `anaphor:pointer` |
@@ -159,7 +159,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `phasal:h` | frame:phase | `already-still-yet.md#stage-of-change` |  |
 | overlay | `phasal:w` | frame:phase | `already-still-yet.md#stage-of-change` | adjective reach |
 | overlay | `phasal:th` | frame:phase | `already-still-yet.md#stage-of-change` |  |
-| overlay | `attempt:h` | frame:intention | `try.md#try` |  |
+| overlay | `attempt:h` | frame:intention | `try.md#trying` |  |
 | overlay | `want:th` | frame:intention | `want-and-decide.md#want` |  |
 | overlay | `pairing:w` | link | `list-structure.md#respectively` | *Respectively*: pairs two lists' members by position |
 | overlay | `mention:g` | structure | `spans-as-words.md#mention` | fills a `literal` term |
@@ -178,7 +178,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | anaphor | `number` | link | `pronouns.md#resume-r` | A number resumed with `-r` |
 | anaphor | `role` | link | `pronouns.md#resume-r` | Resume by role compound |
 | anaphor | `pointer` | link | `pronouns.md#role-pointers` |  |
-| anaphor | `tag` | link | `tag-pronouns.md#tag-pronouns` | A bound tag names each member in turn (`universals-domains.md#bound-tags`) |
+| anaphor | `tag` | link | `tag-pronouns.md#naming-with-a-tag` | A bound tag names each member in turn (`universals-domains.md#bound-tags`) |
 | anaphor | `topic` | link | `topic.md#topic-pronoun` |  |
 | anaphor | `landmark` | link | `hooked-joins.md#hooked-joins` | A hooked join's landmark pointing back |
 | ask | `yesNo` | frame:force | `questions.md#question` | `AskRecord`: the question type is a `value` of the force frame |
@@ -209,7 +209,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | slot | `grounds` | link | `evidentiality.md#evidence-clause` | `blarl`: the next sentence is the content of the frame it hosts on (see [links](#links)) |
 | slot | `boundJoin` | structure | `joins.md#standalone-phrase` | A join as a `bl-` partner (`blal` *nobody*) |
 | slot | `newMember` | frame:binder | `joins.md#everything-ua` | **Added.** A `/z/`, `/d/` or plain `/b/` phrase that brings in a new member (decided 2026-11-17): a lone first-mention noun, concrete `-l` or abstract `-m` (`word-endings.md#concrete-l`, `#abstract-m`), a root or an `x` compound, a tag may name it, and its adjectives (a number among them, `numbers.md`) sit inside the phrase; an and-list of such nouns, fenced or not, scoped as one phrase at its position; a phrase whose join is the unspecified member `-r` (`zar`, `joins.md#unspecified-member-r-phrase`). A hook's landmark counts (*at a house*). Not a new member (decided 2026-11-17): a fill-ask blank, which asks (`questions.md#fill-ask`; the resolve stage's ask gaps, so two blanks make no pair), a measure phrase, an `-m` unit noun carrying a `/ɡ/` number, which gives an amount (`measures-and-percent.md#units`; a counted `-l` noun and an `-m` noun with no number keep the frame), and the phrases on either side of a titling `-n` hook, a name's wording (`proper-names.md#titled-phrases`). A role phrase of a verb-list item is one of that item's reading (no scope record: the reader places the frame, as for a stance word in an island); one every verb shares is the clause's. The frame keeps the phrase's first word and hosts its term (the role's, or the hook's landmark). No construction id |
-| slot | `tag` | link | `tag-pronouns.md#tag-pronouns` | After a `zual` / `zuam` / `zul` fence it binds (`universals-domains.md#bound-tags`) |
+| slot | `tag` | link | `tag-pronouns.md#naming-with-a-tag` | After a `zual` / `zuam` / `zul` fence it binds (`universals-domains.md#bound-tags`) |
 | slot | `bar` | frame:bar | `bars.md#bars` | Inside the rank fence: covers only the ranking, so it nests (rule 2) and is never in a pair |
 | slot | `th` | frame:attitude | `feelings.md#speaker-attitude` | **Added.** A plain `/th/` word on an ordinary root: speaker attitude (*hopefully*; a feeling root such as *angry*, "Any feeling root works the same way", `feelings.md#speaker-attitude`) and speech manner (`speech-manner.md#speech-manner`). Whole clause. No construction id yet: today it reads as `lexReading:ordinary` |
 | slot | `dependent` | structure | `dependents.md#dependent-clauses` | `Clause.dependent`: a nested reading in the stand-in's term |
@@ -244,7 +244,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 
 | Link | Record or key | Anchor |
 |------|---------------|--------|
-| Pronoun, role pointer, topic pronoun, tag | `AnaphorBind` | `pronouns.md#resume-r`, `pronouns.md#role-pointers`, `topic.md#topic-pronoun`, `tag-pronouns.md#tag-pronouns` |
+| Pronoun, role pointer, topic pronoun, tag | `AnaphorBind` | `pronouns.md#resume-r`, `pronouns.md#role-pointers`, `topic.md#topic-pronoun`, `tag-pronouns.md#naming-with-a-tag` |
 | Landmark pointed back to by a hooked join | `anaphor:landmark` | `hooked-joins.md#hooked-joins` |
 | Item shared by a list's members | `SharedRecord` | `list-structure.md#shared-after-the-join` |
 | Argument shared by joined verbs | `sharedUnits` on `VpCoord` | `verb-and-stance-joins.md#vp-clause-forms`; `reading:verbSharedNoun` |
@@ -275,7 +275,7 @@ Per family: the forms that reach the whole clause, then every sentence on its pa
 
 - `dependents.md#hinges`: "*Because* is your stance on why the claim holds, *so that* is your own aim for the event, and *although* is your expectation that the first event would normally have stopped the second, so they take `/th/`."
 - `causation.md#if` (against `force`): "A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case."
-- `because-and-iff.md#only-because` (two hinges): "*Only because* stacks two hinges: `thebem` (the outcome needs it), then `thahum` with the condition (and it is a fact)."
+- `because-and-iff.md#choosing-a-hinge` (two hinges): "*Only because* stacks two hinges: `thebem` (the outcome needs it), then `thahum` with the condition (and it is a fact)."
 - `cause.md#cause` (CAUSE with a hinge): "English *habit* / *triggered by*, when a trigger is how the act is produced, uses this same stack: `thewom` right before the hinge, and the trigger in the hinge's `/b/`."
 - `usually-vs-must.md#generalization` (against `occasion` and `binder`): "A [cause or condition](/causation) on a general claim says how things work. It holds for *each* member or occasion, the same way the verb does."
 
@@ -314,7 +314,7 @@ Per family: the forms that reach the whole clause, then every sentence on its pa
 **Whole clause:** PLAN, WANT, DECISION on `/th/`; the attempt adverb on `/h/`.
 
 - `intention.md#plan`: "PLAN covers the whole sentence. Next to another word that covers it, the earlier of the two covers the later" (`clause.md#which-covers-which`). The plan stays yours when someone else does the act.
-- `try.md#try`: "it covers the whole clause, and next to another word that does, the earlier of the two covers the later" (`clause.md#which-covers-which`).
+- `try.md#trying`: "it covers the whole clause, and next to another word that does, the earlier of the two covers the later" (`clause.md#which-covers-which`).
 - `try.md#fallback` (against a joined clause): "An intention adverb covers only its own clause, so the backup above is a plain *Azozon sings*."
 - `want-and-decide.md#want` (within the family): "A want and a plan are different steps, so they stack in that order:"
 - `want-and-decide.md#endings-changeability` (within the family): "A want comes before both, so the three stack in the order want, plan, decision:"

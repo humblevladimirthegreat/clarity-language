@@ -28,7 +28,7 @@ These are the clusters Ageben allows:
 | `gl-` | Left-hanging |
 | `bl-` | Hosted, with a [syllabic `l`](/phonotactics#syllabic-l) before `r` / `w` |
 | Role letter + `r` | A number word |
-| Role letter + `w` | A [tag pronoun](/tag-pronouns#tag-pronouns), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word) |
+| Role letter + `w` | A [tag pronoun](/tag-pronouns#naming-with-a-tag), a [role compound](/roles#role-compounds), a [role pointer](/pronouns#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word) |
 | `mx`, mid-word | After the hook vowels of a hook prefix's `-m` zone, or after the number body of an approximate numeric prefix |
 | `mx` or `rx`, mid-word | After the hook vowels of a hooked join (its hook's zone or point-back) |
 | `-lx` / `-mx` / `-nx` / `-rx` | Word-final |

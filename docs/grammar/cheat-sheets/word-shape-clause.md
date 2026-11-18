@@ -157,12 +157,12 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 
 | Slot | Words | English | Stage |
 |------|-------|---------|-------|
-| [`/w/`](/very-and-slightly#degree-w), before an adjective or adverb | `welazem` | *very* | B |
+| [`/w/`](/very-and-slightly#grading-a-quality), before an adjective or adverb | `welazem` | *very* | B |
 | | `wohalal` | *extremely* | I |
 | | `wamezem` | *slightly* | I |
 | | `wadowem` | *quite* | I |
 | | `wahuram` | *completely* | I |
-| [`/h/`](/very-and-slightly#degree-w), on the verb | `hayurom` | *kind of* | I |
+| [`/h/`](/very-and-slightly#grading-the-action), on the verb | `hayurom` | *kind of* | I |
 | [`/h/`](/restrictors#again), on the verb | `herugom` | *again* | B |
 
 <PageBreak />

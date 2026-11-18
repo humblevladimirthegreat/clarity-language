@@ -126,7 +126,7 @@ export type MorphWordFamily =
     }
   | { kind: "foreign"; payload: string }
   /**
-   * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; tag-pronouns.md#tag-pronouns).
+   * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; tag-pronouns.md#naming-with-a-tag).
    * A stacked vowel is two tags at once (`zwaor` *A and O*), in written order.
    */
   | { kind: "tag"; vowels: TagVowel[] }
@@ -141,7 +141,7 @@ export type SayPart = "z" | "d" | "b" | "v";
 /** What they said: `a` allow, `u` forbid, `o` require, `e` their call (permission-consent.md#say-words). */
 export type SayAnswer = "a" | "e" | "o" | "u";
 
-/** Tag pronoun vowel, named by its letter name: A, E, O, U (tag-pronouns.md#tag-pronouns). */
+/** Tag pronoun vowel, named by its letter name: A, E, O, U (tag-pronouns.md#naming-with-a-tag). */
 export type TagVowel = "a" | "e" | "o" | "u";
 
 /**
@@ -298,7 +298,7 @@ export type NpPackage = {
   adjs: GPackage[];
   /** Present when the adjectives form a joined list (`garedel gumuzem gul gelem gal`): order and fences. */
   adjCoord?: GCoord;
-  /** Tag pronoun **-l** right after the phrase in the same role: names it (`zodogal zwal`, tag-pronouns.md#tag-pronouns). */
+  /** Tag pronoun **-l** right after the phrase in the same role: names it (`zodogal zwal`, tag-pronouns.md#naming-with-a-tag). */
   tag?: LexWord;
 };
 
@@ -341,7 +341,7 @@ export type NpCoord = {
   level: "z" | "d" | "b";
   /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
-  /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (tag-pronouns.md#tag-pronouns). */
+  /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (tag-pronouns.md#naming-with-a-tag). */
   /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hooked-joins.md#hooked-joins). */
   parts: { items: NpItem[]; join?: LexWord; landmark?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
 };
@@ -484,7 +484,7 @@ export type AnaphorBind = {
   pointerVowel?: PointerVowel;
   /** A self pointer (`o`) that would name its own slot (`zwuzor` in `/z/`): never a sentence. */
   ownSlot?: true;
-  /** A tag **-n** whose tag an **-l** assignment holds (`zwal … zwan`): never a sentence (tag-pronouns.md#tag-pronouns). */
+  /** A tag **-n** whose tag an **-l** assignment holds (`zwal … zwan`): never a sentence (tag-pronouns.md#naming-with-a-tag). */
   placeholderHeld?: true;
   /** A pair tag **-n** with one tag free and one a `zwan` holds (`zwan … zwaon`): never a sentence (tag-pronouns.md#tag-pairs). */
   pairMixed?: true;

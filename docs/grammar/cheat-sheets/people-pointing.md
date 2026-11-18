@@ -21,7 +21,7 @@ A quick look at [pronouns](/pronouns), [topic](/topic), and [plurality](/plurali
 | [A new one of that kind](/pronouns#a-new-one) | the same pointer with `-l` | `dwudel` | *another one* (as object) | B |
 | [Their part, not them](/pronouns#share) | the same pointer with `-m` | `zwuzem` | *what the doer did* | B |
 | [Pin one sense](/resume-sense#resume-sense) | `-rl` concrete, `-rm` abstract | `dodozerl` | *the dog* (not the loyalty) | I |
-| [A label you chose](/tag-pronouns#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
+| [A label you chose](/tag-pronouns#naming-with-a-tag) | role letter + `w` + tag vowel | `zwar` | *A* | I |
 | [The talk's topic](/topic#topic-pronoun) | `ale` + `-n` | `zalen` | *the topic* | I |
 
 ### Role pointers {#role-pointers}
@@ -55,7 +55,7 @@ Endings: `-r` the same one, `-l` [a new one](/pronouns#a-new-one) (not with `u`)
 
 ### Tags {#tags}
 
-A [tag](/tag-pronouns#tag-pronouns) is a label you choose (role letter, `w`, a vowel, then the ending; the vowels go `a` first, then `o`, `e`, and `u` last). It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
+A [tag](/tag-pronouns#naming-with-a-tag) is a label you choose (role letter, `w`, a vowel, then the ending; the vowels go `a` first, then `o`, `e`, and `u` last). It stays on its referent. Tags fill `/z/`, `/d/`, `/b/` only.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|

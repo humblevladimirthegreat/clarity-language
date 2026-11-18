@@ -53,7 +53,7 @@ type Anchor = { predicate: LexWord; fillers: Partial<Record<RolePart, Filler>> }
 type OpenClause = { anchor?: Anchor; before: number };
 
 /** What a tag names: the phrase it was assigned to (or the tag word itself for a new referent), its referent key, and whether the phrase is a name (**-n**), which a tag **-n** needs. */
-/** A tag's holder; `pseudonym` when a `zwan` assigned it (tag-pronouns.md#tag-pronouns). */
+/** A tag's holder; `pseudonym` when a `zwan` assigned it (tag-pronouns.md#naming-with-a-tag). */
 type TagBinding = { word: LexWord; key: string; pseudonym: boolean };
 
 /**
@@ -85,7 +85,7 @@ type Ctx = {
   rangeBlanks: Map<LexWord, BlankRole | undefined>;
   /** Names said in this conversation; a greeting from one of them while closing is goodbye too. */
   named: Set<string>;
-  /** Tags assigned in this conversation (tag-pronouns.md#tag-pronouns); a topic change leaves them alone. */
+  /** Tags assigned in this conversation (tag-pronouns.md#naming-with-a-tag); a topic change leaves them alone. */
   tags: Map<TagVowel, TagBinding>;
   /** Head of the noun package the walk is in: a tag **-l** riding on the package names it. */
   packageHead?: LexWord;
@@ -714,7 +714,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
 }
 
-// ── Tag pronouns (tag-pronouns.md#tag-pronouns) ────────────────────────────────
+// ── Tag pronouns (tag-pronouns.md#naming-with-a-tag) ────────────────────────────────
 
 type TagWord = LexWord & { family: { kind: "tag"; vowels: TagVowel[] } };
 

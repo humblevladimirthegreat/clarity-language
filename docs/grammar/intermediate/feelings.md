@@ -122,7 +122,7 @@ The two sentences keep what happened to them apart from what you feel about it.
 
 ### How strong {#feeling-strength}
 
-English *a little upset* and *overwhelmed* say how strong a feeling is. In Ageben, put a [degree word](/very-and-slightly#degree-w) on `/w/` right before the feeling word, such as `wamezem` *slightly* or `wohalal` *overwhelmingly*. Before a `/w/` feeling it grades the feeling, not the stimulus. With no degree word, strength is unstated. You can then say how strong a feeling is apart from how long it lasts.
+English *a little upset* and *overwhelmed* say how strong a feeling is. In Ageben, put a [degree word](/very-and-slightly#grading-a-quality) on `/w/` right before the feeling word, such as `wamezem` *slightly* or `wohalal` *overwhelmingly*. Before a `/w/` feeling it grades the feeling, not the stimulus. With no degree word, strength is unstated. You can then say how strong a feeling is apart from how long it lasts.
 
 > `zezuyol wohalal wuwathumael goyom.`
 >

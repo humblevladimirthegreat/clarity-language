@@ -21,7 +21,7 @@ Ordinary roots and [dictionary compounds](/compounds#dictionary-compounds) are n
 | `y` + vowel + ending, no root | [speech act](/firm-soft#firm-or-soft-act) | `yal` | B |
 | role letter + vowel + `-rn` | [stand-in word](/stand-in-roles#stand-in-roles) | `darn` *a statement* | I |
 | role letter + `w` + vowel + part + vowel + ending | [role pointer](/pronouns#role-pointers) | `zwuzer` *the latest doer* | B |
-| role letter + `w` + vowel + ending | [tag](/tag-pronouns#tag-pronouns) | `zwar` *A* | I |
+| role letter + `w` + vowel + ending | [tag](/tag-pronouns#naming-with-a-tag) | `zwar` *A* | I |
 | a name's root + `-r` | [resume](/pronouns#resume-r) | `zazozor` *Azozon again* | B |
 
 Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks.md).
@@ -60,7 +60,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `gaen` | join-relation open to (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
-| `gahum` | BECAUSE clause hinge (explanatory reason) | [Because, iff, and only because](/because-and-iff#only-because) | I |
+| `gahum` | BECAUSE clause hinge (explanatory reason) | [Because, iff, and only because](/because-and-iff#choosing-a-hinge) | I |
 | `galam` | AFTER clause hinge (just-after) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](/join-relations#join-relations) | I |
 | `ganem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](/relations#proxy) | B |
@@ -73,7 +73,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `gegol` | mention marker (the span is a word or phrase as spelling) | [Mention](/spans-as-words#mention) | I |
 | `gegon` | name-string mention marker (the span is a name as spelling) | [Mention](/spans-as-words#mention) | I |
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](/relations#exchange) | B |
-| `gehom` | IFF clause hinge (biconditional) | [Because, iff, and only because](/because-and-iff#only-because) | I |
+| `gehom` | IFF clause hinge (biconditional) | [Because, iff, and only because](/because-and-iff#choosing-a-hinge) | I |
 | `gen` | join-relation exclusive for (sole pick adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `genam` | AS-OF clause hinge (asserted whose-now / dated ledger) | [As-of (whose now)](/as-of#as-of) | A |
 | `genar` | AS-OF clause hinge (asserted whose-now / dated ledger) resume | [As-of (whose now)](/as-of#as-of) | A |
@@ -163,9 +163,9 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `hohom` | locative across (edge to far edge of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `hon` | join-relation prioritizing (adverb) | [Join-relations](/join-relations#join-relations) | I |
-| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#try) | I |
-| `howam` | attempt mood (commitment unstated) | [Try](/try#try) | I |
-| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#try) | I |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](/try#trying) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](/try#trying) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](/try#trying) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `huen` | join-relation barring anything but (adverb) | [Join-relations](/join-relations#join-relations) | I |
 | `hulom` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |

@@ -18,7 +18,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, fe
 | **AIMED** | Feeling urge: act on a target | `thunathumem` | [How you feel](/how-you-feel#urges) |
 | **ASIDE** | An aside span | `th(hugowul)` | [Spans](/spans#asides) |
 | **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwuvam` | [Permission and consent](/permission-consent#say-words) |
-| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/try#try) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Try](/try#trying) |
 | **AWAY** | Feeling urge: move off from a target | `thudathumum` | [How you feel](/how-you-feel#urges) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewom` | [CAUSE](/cause#cause) |
 | **CITE** | A cite span: quoted wording | `d[azozon]` | [Spans](/spans#writing) |
@@ -934,7 +934,7 @@ Short word in a role slot (`darl` / `barl` / `derl` / `dorl` / `durl`, open `-rm
 
 Role letter + `w` + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zodozel zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with `-m` (`zwam` *what A did*). With `-n` it is a pseudonym: a real person whose name is kept back (`zwan`). Right after a `zual` / `zuam` / `zul` fence it is a bound tag, naming each member in turn (`zual gogozel zwal` *every cat, each one A*).
 
-[Tag pronouns](/tag-pronouns#tag-pronouns), [Talking about a whole kind](/universals-domains#bound-tags)
+[Tag pronouns](/tag-pronouns#naming-with-a-tag), [Talking about a whole kind](/universals-domains#bound-tags)
 
 ### Tail suffix
 

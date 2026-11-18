@@ -204,7 +204,7 @@ With `blayan`, the other party is the two of you together: people both of you kn
 
 ### Bound tags {#bound-tags}
 
-A [tag](/tag-pronouns#tag-pronouns) right after a `zual`, `zuam`, or `zul` fence, with or without the shared kind, **binds**: it names each member in turn, not the group. `zual gogozel zwal` is *every cat, each one A*, and a `zwar` after it is whichever cat is up. After an ordinary list, a tag still names the whole group (`zodozel zogozel zam zwal` is *a dog and a cat, call them A*), and *all of them together* stays [collective `-x`](/plurality) on the verb.
+A [tag](/tag-pronouns#naming-with-a-tag) right after a `zual`, `zuam`, or `zul` fence, with or without the shared kind, **binds**: it names each member in turn, not the group. `zual gogozel zwal` is *every cat, each one A*, and a `zwar` after it is whichever cat is up. After an ordinary list, a tag still names the whole group (`zodozel zogozel zam zwal` is *a dog and a cat, call them A*), and *all of them together* stays [collective `-x`](/plurality) on the verb.
 
 | Logic | Ageben | English |
 |-------|--------|---------|
@@ -221,7 +221,7 @@ A constant cannot be bound: `zwan` after `zual gogozel` is not a sentence. Nor c
 
 After `zual gogozel zwal vezuvel.`, a `zwar` in the next sentence fails the way English *Every farmer owns a donkey. He is happy.* fails, while *A farmer owns a donkey. He is happy.* works, as does `zogozel zwal vezuvel. zwar guzemel.`
 
-A tag assigned inside that reach expires with it, even one on a plain phrase: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as the [tag page](/tag-pronouns#tag-pronouns) says.
+A tag assigned inside that reach expires with it, even one on a plain phrase: under *every dog*, *a cat O* is a different cat for each dog. A tag on a plain phrase outside any bound reach lasts as the [tag page](/tag-pronouns#naming-with-a-tag) says.
 
 > `zual gogozel zwal vezuvel thohem blarl zwar guzemel.`
 >

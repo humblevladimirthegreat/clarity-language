@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Ageben {#english-cues}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/contrary-to#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/because-and-iff#only-because) · [Discourse hooks with -r](/discourse-hooks#discourse) · [Clause sequence](/clause-sequence#clause-sequence)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Contrary to a stance](/contrary-to#contrary-to-stance) · [Continue](/speech-moves#continue-x) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Stacked discourse hooks](/discourse-hooks#stacked-discourse) · [Because](/because-and-iff#choosing-a-hinge) · [Discourse hooks with -r](/discourse-hooks#discourse) · [Clause sequence](/clause-sequence#clause-sequence)
 
 English links a time, a contrast or a reason to a claim with one word, such as *while*, *although* or *therefore*. Inside one sentence, Ageben hangs the second clause on a hinge word with **`blarl`**, the same shape as *if* / *because*. After a finished sentence, the link is an `/x/` continue word, not a hinge root, so pick the row by whether the second claim sits inside the sentence or starts a new one.
 
@@ -14,7 +14,7 @@ English links a time, a contrast or a reason to a claim with one word, such as *
 |---------|---------|
 | *while* / *whilst* / *until* / *till* / *before* / *after* (time) | same hinge + **`blarl`** shape on adverb `/h/`, `-m` ([dependent clauses](/dependents#dependent-clauses)): **`herom`** / **`harum`** / **`habam`** / **`halam`** |
 | *although* / *even though* / *though* | **`thezem blarl`** + the sentence, on adverb `/th/`: the speaker expected otherwise ([hinges](/dependents#hinges)). Someone else's expectation adds a [holder](/holder#what-the-holder-covers) on a channel before it: **`theyomalazun thezem blarl`** (*although, as Alazun saw it*) |
-| *even if* | **`thezem thohem blarl`** ([even if](/because-and-iff#only-because)) |
+| *even if* | **`thezem thohem blarl`** ([even if](/because-and-iff#unless-and-even-if)) |
 | *so that* / *in order to* / *my aim is for* | same shape: **`thovam`** ([so that](/dependents#so-that)), your own aim; NP intended get = **`thovam`** + `/b/` noun. Someone else's aim adds a [holder](/holder#holder-plans-and-motives) |
 | *despite* (NP) | same **`thezem`** (or **`gezem`**) + `/b/` noun, not a second hinge: `zazozon vowurol thezem blalazun.` |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uom`** + the stance it goes against: `uom hwuvul` / `uom hwudum` / `uom thagom` / `uom thogel` / `uom thebam` ([contrary to a stance](/contrary-to#contrary-to-stance)) |
@@ -121,7 +121,7 @@ Someone else's view is never a bare claim. Put a holder on the clause, which say
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
-**Needs:** [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [A feeling word](/how-you-feel#feeling-word) · [The four urges](/how-you-feel#urges) · [How long the feeling lasts](/feelings#feeling-duration) · [Feeling with no object](/how-you-feel#feeling-no-object)
+**Needs:** [Because](/because-and-iff#choosing-a-hinge) · [Fault](/fault#fault) · [Motive](/for-a-sake#sake-preference) · [Prescription](/ought-for-a-sake#sake-force) · [Attachment sites](/for-a-sake#attachment-sites) · [So that](/dependents#so-that) · [Why?](/fill-ask-jobs#why) · [A feeling word](/how-you-feel#feeling-word) · [The four urges](/how-you-feel#urges) · [How long the feeling lasts](/feelings#feeling-duration) · [Feeling with no object](/how-you-feel#feeling-no-object)
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what *made it happen* (the because hinge), what the speaker is *doing it for* (a motive, on a sake), or the *faculty* of thinking (the abstract sense of `ebobe`).
 
@@ -230,7 +230,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/because-and-iff#only-because) · [Already, still, not yet](/already-still-yet#stage-of-change) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
+**Needs:** [Dependent clauses](/dependents#dependent-clauses) · [Embedded whether](/questions#embedded-whether) · [Because](/because-and-iff#choosing-a-hinge) · [Already, still, not yet](/already-still-yet#stage-of-change) · [Can](/can-and-cant#can) · [Existence](/predication#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](/comparatives#comparatives)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Ageben keeps those roots and adds a change word such as *already* or *no longer*, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyoloma` (*meaning*, speech that carries a thought).
 
@@ -271,7 +271,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 ### Condition, factor, requirement, motivation, satisfaction, truth {#reason-nouns}
 
-**Needs:** [If](/causation#if) · [Only because](/because-and-iff#only-because) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/for-a-sake#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#saying-thanks) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/bars#sake-bars)
+**Needs:** [If](/causation#if) · [Only because](/because-and-iff#choosing-a-hinge) · [Fault](/fault#fault) · [Requirement](/permission-consent#requirement) · [Motive](/for-a-sake#sake-preference) · [Met](/sakes#time-horizon-endings-on-met) · [Thanks and sorry](/thanks-and-sorry#saying-thanks) · [Intention](/intention#plan-predict) · [Speech manner](/speech-manner#speech-manner) · [How you know](/evidentiality#evidentiality) · [Enough and too](/bars#sake-bars)
 
 English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Ageben has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the hinge word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
@@ -339,7 +339,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebe
 ### Whether the *if* or *because* part is a fact {#factivity-if-vs-because}
 <a id="factivity"></a>
 
-**Needs:** [If](/causation#if) · [Because](/because-and-iff#only-because) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [forecasts](/evidentiality#forecast)
+**Needs:** [If](/causation#if) · [Because](/because-and-iff#choosing-a-hinge) · [MAY](/knowing#may) · [*as-of*](/as-of#as-of) · [RESIDUE](/residue-and-former#residue) · [forecasts](/evidentiality#forecast)
 
 English *because* and *if* can hide whether you claim the *if* / *because* clause as a fact about the world. Ageben puts that choice on the hinge: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary hinge.
 
@@ -415,7 +415,7 @@ Use `thahum blarl` only when Q is also asserted as a world-foundation, what made
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/because-and-iff#only-because) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
+**Needs:** [Deduction](/evidentiality#deduction) · [Evidence clause](/evidentiality#evidence-clause) · [If](/causation#if) · [Because, iff, and only because](/because-and-iff#choosing-a-hinge) · [Clause joins](/joins#clause-joins) · [Linking sentences](/sentence-linkers#sentence-linkers) · [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional)
 
 An argument has three parts, and each has its own slot. The *link* between premises and conclusion is a hinge (*if*, *if and only if*). *How you know* the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. *Whether you grant the premises* depends on what sits before `blarl`: the channel alone asserts them, and a hinge between the channel and `blarl` does not.
 
@@ -475,7 +475,7 @@ A one-off episode and a standing pattern use the same hinges. Add extra words fo
 
 ### Habit, triggered by {#habit}
 
-**Needs:** [CAUSE](/cause#cause) · [Because](/because-and-iff#only-because) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a label holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
+**Needs:** [CAUSE](/cause#cause) · [Because](/because-and-iff#choosing-a-hinge) · [If](/causation#if) · [Always](/restrictors) · [Only when](/restrictors) · [How a label holds](/label-reach#classification-packaging) · [Used to](say-tense.md#used-to) · [PLAN](/intention#plan-predict)
 
 English *habit*, *I have a habit of*, and *triggered by* pack how often the act repeats, what cues it, and whether that is who you are. Name the job you mean. When a cue is how the act is produced, put **`thewom`** right before `thahum` (the cue is a fact) or `thohem` (you do not claim it holds), and the cue in that hinge's `/b/`.
 
@@ -970,10 +970,10 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 ### Cause is not target {#emotion-blame}
 
-**Needs:** [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Who the urge points at](/how-you-feel#urge-landmark) · [How long the feeling lasts](/feelings#feeling-duration) · [Because](/because-and-iff#only-because) · [Fault](/fault#fault) · [MAY](/knowing#may)
+**Needs:** [A feeling about a thing](/how-you-feel#feeling-about-a-thing) · [Who the urge points at](/how-you-feel#urge-landmark) · [How long the feeling lasts](/feelings#feeling-duration) · [Because](/because-and-iff#choosing-a-hinge) · [Fault](/fault#fault) · [MAY](/knowing#may)
 
 
-An urge says where the feeling *pulls* you. It does not say who *caused* it. Name the cause with the [because hinge](/because-and-iff#because) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
+An urge says where the feeling *pulls* you. It does not say who *caused* it. Name the cause with the [because hinge](/because-and-iff#choosing-a-hinge) after the feeling, and name its [fault](/fault#fault) only when you mean it. The target and the cause may differ.
 
 > `zezuyol wawethumem goyom blazozon thahum blerulal.`
 >

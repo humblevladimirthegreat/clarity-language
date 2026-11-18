@@ -189,7 +189,7 @@ English puts adjectives on calls and reactions: *Dear Alazun!*, *Happy birthday!
 >
 > "Happy birthday!"
 
-A reaction can also take a [degree word](very-and-slightly.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
+A reaction can also take a [degree word](very-and-slightly.md#grading-a-quality) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
 
 > `welazem yemem.`
 >

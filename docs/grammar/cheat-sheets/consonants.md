@@ -48,7 +48,7 @@ Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [r
 
 ### Scales and series {#scales}
 
-From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#tag-pronouns), and [settled-to-passing](/sakes#settled-to-passing).
+From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#naming-with-a-tag), and [settled-to-passing](/sakes#settled-to-passing).
 
 | Scale | Fit cue | `-l` | `-m` | `-r` | `-n` |
 |-------|----------|--------|--------|--------|--------|
@@ -58,7 +58,7 @@ From [word endings](/word-endings), [number endings](/number-markers#number-endi
 | [Reference](/pronouns#resume-r) | which referent relative to what is already in play | a new one | their part | the same one | — |
 | [Settled-to-passing](/sakes#settled-to-passing) | how lasting the hold is | lasting | default | passing | — |
 
-Reference `-l` and `-m` are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#tag-pronouns). Tag [`-n`](/tag-pronouns#tag-pronouns) is reference `-r` plus a claim that the referent is a name.
+Reference `-l` and `-m` are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#naming-with-a-tag). Tag [`-n`](/tag-pronouns#naming-with-a-tag) is reference `-r` plus a claim that the referent is a name.
 
 ### How the series hang {#ending-tree}
 
@@ -123,7 +123,7 @@ l m r n
 
 | Relation | Pair | Stage |
 |----------|------|-------|
-| **is** the same job | tag `-m` is pointer [share](/pronouns#share) (`zwuzem` by role, [`zwam`](/tag-pronouns#tag-pronouns) by who) | B / I |
+| **is** the same job | tag `-m` is pointer [share](/pronouns#share) (`zwuzem` by role, [`zwam`](/tag-pronouns#naming-with-a-tag) by who) | B / I |
 | **is** | hook closed / open is [join](/joins#join-type-vowel-series) closed / open | B |
 | **is** | [fill-ask](/questions#fill-ask-r) is join `-r` under a question; digitless [`grar`](/number-markers#number-endings) is join `-r` | B / I |
 | **is** | [polar](/polar-inventory#polar-endings) is the [act ending](/firm-soft#firm-or-soft-act) | B / I |

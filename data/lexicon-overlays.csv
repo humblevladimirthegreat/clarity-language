@@ -90,11 +90,11 @@ orel,g,🪙,identity,IDENTITY,IDENTITY copula (identical-to / same-as),coin has 
 ohem,th,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
 ohem,g,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
 ehom,th,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-if
-ehom,g,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,because-and-iff.md#only-because
+ehom,g,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,because-and-iff.md#choosing-a-hinge
 ahum,th,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#hinges
 ahul,th,🧱,clause_hinge,because.fault,BECAUSE clause hinge with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
 ahur,th,🧱,clause_hinge,because.share,BECAUSE clause hinge with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,fault.md#fault
-ahum,g,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,because-and-iff.md#only-because
+ahum,g,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,because-and-iff.md#choosing-a-hinge
 ebem,th,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ebem,g,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ezem,h,🦓,clause_hinge,whereas,WHEREAS clause hinge (contrast; no expectation),zebra stripes show contrast; whereas sets two facts side by side,dependents.md#hinges
@@ -216,9 +216,9 @@ uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could 
 uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
 uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
 uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,already-still-yet.md#stage-of-change
-owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,try.md#try
-owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,try.md#try
-owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,try.md#try
+owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,try.md#trying
+owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,try.md#trying
+owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,try.md#trying
 alol,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,want-and-decide.md#want
 alom,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,want-and-decide.md#want
 alor,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,want-and-decide.md#want

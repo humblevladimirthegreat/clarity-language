@@ -18,20 +18,20 @@ Write the outcome first, then the hinge, then the condition as the hinge's `/b/`
 |-----------------------|------|-----------|---------|-------|
 | [`thohem` / `gohem`](/causation#if) | enough | not asserted | *if* | B |
 | [`thebem` / `gebem`](/causation#only-if) | needed | not asserted | *only if* / *needs* | B |
-| [`thahum` / `gahum`](/because-and-iff#only-because) | enough | asserted as the reason | *because* | I |
-| [`thebem thahum` / `gebem gahum`](/because-and-iff#only-because) | needed | asserted | *only because* / *depends on* | I |
-| [`thehom` / `gehom`](/because-and-iff#only-because) | both ways | not asserted | *if and only if* | I |
+| [`thahum` / `gahum`](/because-and-iff#choosing-a-hinge) | enough | asserted as the reason | *because* | I |
+| [`thebem thahum` / `gebem gahum`](/because-and-iff#choosing-a-hinge) | needed | asserted | *only because* / *depends on* | I |
+| [`thehom` / `gehom`](/because-and-iff#choosing-a-hinge) | both ways | not asserted | *if and only if* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [If, after a verb](/causation#if) | `zazozon vowurol thohem blerulal.` | *Azozon walks if it rains.* | B |
 | [If, after a noun](/causation#if) | `zerulal gohem blugalal.` | *There is rain if there are clouds.* | B |
 | [Only if](/causation#only-if) | `zazozon vowurol thebem blerulal.` | *Azozon walks only if it rains.* | B |
-| [Because](/because-and-iff#only-because) | `zazozon vowurol thahum blarl zalazun vezuvel.` | *Azozon walks because Alazun is asleep.* | I |
-| [If and only if](/because-and-iff#only-because) | `zazozon vowurol thehom blarl zalazun vezuvel.` | *Azozon walks if and only if Alazun is asleep.* | I |
-| [Only because](/because-and-iff#only-because) | `zazozon vowurol thebem thahum blerulal.` | *Azozon walks only because of the rain.* | I |
-| [Unless](/because-and-iff#only-because): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun is asleep.* | I |
-| [Even if](/because-and-iff#only-because) | `zazozon vowurol thezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
+| [Because](/because-and-iff#choosing-a-hinge) | `zazozon vowurol thahum blarl zalazun vezuvel.` | *Azozon walks because Alazun is asleep.* | I |
+| [If and only if](/because-and-iff#choosing-a-hinge) | `zazozon vowurol thehom blarl zalazun vezuvel.` | *Azozon walks if and only if Alazun is asleep.* | I |
+| [Only because](/because-and-iff#choosing-a-hinge) | `zazozon vowurol thebem thahum blerulal.` | *Azozon walks only because of the rain.* | I |
+| [Unless](/because-and-iff#unless-and-even-if): `blurl` for `blarl` | `zazozon vowurol thohem blurl zalazun vezuvel.` | *Azozon walks unless Alazun is asleep.* | I |
+| [Even if](/because-and-iff#unless-and-even-if) | `zazozon vowurol thezem thohem blarl zalazun vezuvel.` | *Azozon walks even if Alazun is asleep.* | I |
 
 A noun after a because hinge names an act or a thing, never a person. For *because of Alazun*, give what Alazun did as a sentence after `blarl`.
 
@@ -248,7 +248,7 @@ A [say word](/permission-consent#say-words) goes on `/h/`: `h`, `w`, a reach vow
 
 | This | vs | That |
 |------|----|------|
-| `thohem` *if* ([enough, not claimed](/causation#if)) | | `thahum` *because* ([enough, and a fact](/because-and-iff#only-because)) |
+| `thohem` *if* ([enough, not claimed](/causation#if)) | | `thahum` *because* ([enough, and a fact](/because-and-iff#choosing-a-hinge)) |
 | `thohem` *if* ([other routes remain](/causation#only-if)) | | `thebem` *only if* ([the outcome needs it](/causation#only-if)) |
 | `thahum` *because* ([a cause, no blame](/fault#fault)) | | `thahul` *fault* ([someone did wrong](/fault#fault)) |
 | `thahum` *because* ([the condition](/cause#cause)) | | `thewom` *mechanism* ([how it is produced](/cause#cause)) |

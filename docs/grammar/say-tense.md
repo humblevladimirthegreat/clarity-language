@@ -248,7 +248,7 @@ English *can* and *may* each carry several meanings. Ageben has a separate form 
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
 | *could* | used to be able | **`xa`** + FORMER **`helam`** |
 | *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`helam`** |
-| *couldn't* | tried, that one time | try **`howam`** ([try](/try#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
+| *couldn't* | tried, that one time | try **`howam`** ([try](/try#trying)) + the [simple past](#simple-past); the sentence leaves the outcome open |
 | *could*, *might*, *may* | it could be | MAY **`thomam`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`hwuval`** / **`hwuvam`** / **`hwuvar`** |
 | *may not* | forbidden | **`hwuvul`** / **`hwuvum`** / **`hwuvur`** |
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](/as-of#stance-as-of) **`th
 
 ### Will, want, try, let's {#will-want}
 
-**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#try) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#firm-or-soft-act) · [Whose view](/holder#holder-plans-and-motives)
+**Needs:** [Plan](/intention#plan-predict) · [Want](/want-and-decide#want) · [Decision](/want-and-decide#decision-revisability) · [Try](/try#trying) · [Hopefully](/feelings#speaker-attitude) · [Speech act](/firm-soft#firm-or-soft-act) · [Whose view](/holder#holder-plans-and-motives)
 
 English *want*, *plan*, *decide*, *try* and *let's* say what someone means to do. Ageben says most of them with WANT, PLAN or DECISION, and the ending adds a shade, such as lasting or passing. Which one you pick says whether you only want it, have a plan, or have decided.
 

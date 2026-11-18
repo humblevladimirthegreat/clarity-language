@@ -64,7 +64,7 @@ A [cause or condition](/causation) on a general claim says how things work. It h
 >
 > "Every cat sleeps when it is sleepy; that is how it works."
 
-A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with `thehom` (*if and only if*, from [causation](/because-and-iff#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
+A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with `thehom` (*if and only if*, from [causation](/because-and-iff#choosing-a-hinge)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
 > `zual geyel gwozeduyol thehom blarl zeyer veduyol.`
 >

@@ -998,7 +998,7 @@ function enforceVerbPredicate(units: Unit[]): void {
 }
 
 /**
- * Tag pronouns (tag-pronouns.md#tag-pronouns): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
+ * Tag pronouns (tag-pronouns.md#naming-with-a-tag): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
  * gl- never; **-l** / **-r** / **-m** / **-n**; **-x** only on **-r** / **-n** (*A and associates*); a pair (`zwaor`) recalls or shares only.
  */
 function enforceTag(word: LexWord): void {
@@ -1040,7 +1040,7 @@ function enforceFenceTag(node: AstNode): void {
 }
 
 /**
- * A tag names a phrase that is not already a pronoun with one fixed form (tag-pronouns.md#tag-pronouns): never a special,
+ * A tag names a phrase that is not already a pronoun with one fixed form (tag-pronouns.md#naming-with-a-tag): never a special,
  * generic, or topic pronoun, or another tag. A resume or role pointer may take one.
  */
 function enforceTagHost(node: AstNode): void {

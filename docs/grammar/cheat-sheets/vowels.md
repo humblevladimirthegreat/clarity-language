@@ -25,7 +25,7 @@ The letter order `a`, `o`, `e`, `u` gives two sibling **scales**: size is amount
 | [Ability](/can-and-cant#ability) | size | how much can-do is in | can | can't right now | can't yet | never | B |
 | [Pointer](/pronouns#role-pointers) | size | how far the pointing reaches | the other one | this sentence | latest | unsaid | B |
 | [Sake](/sakes#word-shape) | size | how much of the sake is in | met | motive | prescription | unmet | B |
-| [Tag](/tag-pronouns#tag-pronouns) | order | same assignment queue as digits | first (A) | second (O) | third (E) | last (U) | I |
+| [Tag](/tag-pronouns#naming-with-a-tag) | order | same assignment queue as digits | first (A) | second (O) | third (E) | last (U) | I |
 | [Digit](/numbers#counts) | order | next unused vowel | `ba` `za` `na` | `do` `vo` `mo` | `ge` `re` | `hu` `lu` | B |
 | [Finger code](/finger-code#counting) (vowel hand) | order | pinky-first count | 1 (pinky) | 2 | 3 | 4 | B |
 
@@ -206,7 +206,7 @@ From [root tails](/root-tails#root-tails): a root's last vowel hangs on the join
 | Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
 | [Digit](/numbers#counts) | `ba` `za` `na` | `do` `vo` `mo` | `ge` `re` | `hu` `lu` | B |
-| [Tag](/tag-pronouns#tag-pronouns) | tag A (`zwar`) | tag O | tag E | tag U | I |
+| [Tag](/tag-pronouns#naming-with-a-tag) | tag A (`zwar`) | tag O | tag E | tag U | I |
 | [Pitch](/phonology#vowel-pitch) | low | mid-low | mid-high | high | B |
 | [Finger code](/finger-code#counting) vowel hand | 1 (pinky) | 2 | 3 | 4 | B |
 
