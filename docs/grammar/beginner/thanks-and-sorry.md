@@ -4,7 +4,7 @@ band: beginner
 
 # Thanks and sorry {#thanks-and-sorry}
 
-### Thanks and sorry {#thanks-sorry}
+### Saying thanks {#saying-thanks}
 
 To thank someone in Ageben, you have no set phrase like *thank you*. Instead you say that your sake is met: a lone `/th/` met word is a whole sentence about you, and saying it to the one who acted is the thanks. Pick the sake that was actually served, so the thanks tells them what their help did for you; the ending says how long the payoff lasts ([endings on met](sakes.md#time-horizon-endings-on-met)). (cue: thanks = *my sake is met*)
 
@@ -26,6 +26,8 @@ To thank someone in Ageben, you have no set phrase like *thank you*. Instead you
 | `…thal` | the help lasts | *that will stay with me* |
 | `…tham` | the help, horizon unstated (default) | *thank you* |
 | `…thar` | the help landed right when needed | *thanks, that got me through* |
+
+### Saying sorry {#saying-sorry}
 
 *Sorry* is about *their* sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in a `bl-` word right after it. The ending is the same [changeability](sakes.md#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
 

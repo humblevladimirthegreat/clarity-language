@@ -4,7 +4,7 @@ band: beginner
 
 # Firm and soft {#speech-act-firm-and-soft}
 
-### Speech act: firm and soft {#speech-act}
+### Standing behind or offering softly {#firm-or-soft-act}
 
 You already mark whether a turn is a statement, question, command, or prohibition. English softens any of these with extra words (*please*, *perhaps*, *for what it's worth*); Ageben changes only the ending of the act word, which is `y` + vowel + ending. With `-l` you stand behind the act, and with `-m` you offer it softly and leave the other person free to take it up or not. So you can put forward a view, ask, or make a request without insisting.
 
@@ -46,7 +46,7 @@ For *let's*, make a soft request with inclusive *we*, `aya` ([special pronouns](
 
 A [hook](hooks.md) (`al` / `am` / …) may sit among the opening `/y/` words, immediately before the first act word, or before a body that defaults to a statement.
 
-#### For now (**-r**) {#act-r}
+### For now (**-r**) {#act-for-now}
 
 `-r` marks an act you hold only **for now**: provisional, and you expect to revisit it.
 

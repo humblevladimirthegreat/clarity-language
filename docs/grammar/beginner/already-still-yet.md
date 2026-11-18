@@ -4,7 +4,7 @@ band: beginner
 
 # Already and still {#already-still-not-yet-no-longer}
 
-### Already, still, not yet, no longer {#phasal}
+### How far a change has come {#stage-of-change}
 
 English *already*, *still*, *not yet*, and *no longer* do not place an event in time; each compares what is true *now* with a change that has or has not come. Ageben uses four words for them, not a tense, so you can say how things stand now without saying when anything happened. Three are `/h/` words, because a change that has come, a state that goes on, and a state that has stopped can all be watched. *Not yet* is a `/th/` [stance](clause.md#stance-th) word, like MAY: it waits on a change that someone expects, and an expectation is in a mind. (cue: each root pictures the stage the change is at)
 
@@ -77,7 +77,7 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 >
 > "Azozon sees a cat that is still sleepy."
 
-#### Ever / never {#ever-never}
+### Ever and never {#ever-never}
 
 English *has ever* / *has never* asks whether something happened at least once, at no particular time. Use *already* `havem` with *sometimes* `har` ([restrictors](restrictors.md)): the change has come, on some unnamed occasion. For *has never*, use bare `hal` (*never*).
 

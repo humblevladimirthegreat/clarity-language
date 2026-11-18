@@ -4,7 +4,7 @@ band: beginner
 
 # Label seams {#how-far-a-label-reaches}
 
-### Label reach {#label-reach}
+### Four reach vowels {#reach-vowels}
 
 English *Alazun is angry* can mean one outburst or the kind of person Alazun is, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word `th`, then a reach vowel, then the ending. The reach vowel says how much of the person's scenes the label covers, biggest to smallest: a type across scenes, a practiced role, one relationship, or this episode. The word keeps its usual role letter, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
@@ -100,7 +100,7 @@ A role word takes no `th` seam after its stem: its reach is written once, at the
 
 **Compare with:** the `th` seam labels the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon said something untrue to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is someone who misstates*.
 
-#### Stacked reach {#reach-stacks}
+### Stacked reach {#reach-stacks}
 
 The four reach vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md#extra-noun) use. A pair that starts with `u` reads like a join's *everything but*: `u` is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Alazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: `ae` *over*, `ao` *using*, `oe` *toward*. Do not read them as the first vowel's meaning followed by the second's.
 
