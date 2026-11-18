@@ -1060,6 +1060,30 @@ function isPluralLabel(word: LexWord): boolean {
   return stem.marker === "_" && stem.groups.some((group) => group.mantissa !== undefined || group.code !== undefined);
 }
 
+/** A command, request or prohibition act word (`yol`, `yom`, `yor`, `yul`, `yum`), not an answer word such as `yuol`. */
+const DIRECTIVE_ACT = /^y[ou][lmr]$/;
+
+/**
+ * A command, request or prohibition is not a claim or news, so on its own clause MIRATIVE (mirative.md#mirative), MAY
+ * (knowing.md#may) and every channel but REPORTED, a relayed order (evidentiality.md#carry-forward), have no reading.
+ */
+function enforceDirectiveRemarks(result: ParseResult): void {
+  for (const scope of result.resolve?.scope ?? []) {
+    const utterance = result.utterances[scope.utteranceIndex];
+    if (!utterance || !DIRECTIVE_ACT.test(actWord(utterance.left)?.raw ?? "")) continue;
+    if (!utterance.bodies.some((body) => body.clause === scope.clause)) continue;
+    // A holder's stance is someone else's word on the command (holder.md#holder), not the speaker's remark.
+    for (const { key, word, holderHost } of scope.frames) {
+      if (holderHost) continue;
+      if (key === "overlay:mirative:th") throw new ConstructionError("directiveMirative", word.raw);
+      if (key === "overlay:may:th") throw new ConstructionError("directiveMay", word.raw);
+      if (key === "overlay:evidential:th" && word.overlay?.gloss.split(".")[0] !== "REPORTED") {
+        throw new ConstructionError("directiveChannel", word.raw);
+      }
+    }
+  }
+}
+
 /** Clause- and discourse-level checks on a parsed and resolved result. */
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
@@ -1088,6 +1112,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     },
   });
   enforceSaySpeaker(result);
+  enforceDirectiveRemarks(result);
   enforceGlLeans(result);
   for (const word of places.seen) if (!places.shaped.has(word)) throw new ConstructionError("degreePlaceShape", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);

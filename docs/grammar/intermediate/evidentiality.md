@@ -251,6 +251,14 @@ Your statements with no channel of their own take the frame, including a stateme
 >
 > "Alazun left, so they say. Did Alazun run? Alazun sang." (the singing is hearsay too)
 
+The one channel a command, request, or prohibition takes is REPORTED: the order is someone else's, and you pass it on. It neither starts nor ends your frame. Every other channel has no reading on an order, because an order is not a claim. To make an order gentler, use a [soft act word](/firm-soft#speech-act) instead.
+
+> `yol vowurol thebam.`
+>
+> y-command | v-walk | th-REPORTED
+>
+> "I'm told you should walk." (the order is someone else's)
+
 The frame says how you learned a claim, so it never covers your own [stance](/clause#stance-th). A sentence that only plans, wants, or decides claims nothing: it takes no frame and does not end it, and your next statement picks the frame up again. An [attitude or a feeling](feelings.md#speaker-attitude) about a claim leaves the claim under the frame, and the feeling stays yours, outside it.
 
 > `zalazun thebam vudurul. zuwen thagom vowurol. zalazun veruvol.`

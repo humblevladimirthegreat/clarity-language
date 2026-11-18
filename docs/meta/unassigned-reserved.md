@@ -296,6 +296,9 @@ Source: [speech-moves.md](/firm-soft#speech-act), [stacked act words](/more-turn
 - **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yer` / `yor` / `yur` are the [for-now acts](/firm-soft#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
 - **open:** a check-back with a body after it (`yol yael zazozon vowurol.`). The check-back asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `checkBackBody`.
+- **closed (D-77):** MIRATIVE on the clause of a command, request or prohibition (`themem`, `themel`, `themer` after `yol` / `yom` / `yor` / `yul` / `yum`). An order is not news. Parser: `directiveMirative`.
+- **closed (D-77):** MAY on the clause of a command, request or prohibition (`thomam`, `thomal`, `thomar`). An order is not a claim. Parser: `directiveMay`.
+- **closed (D-77):** a channel other than REPORTED on the clause of a command, request or prohibition (`thugem`, `thevum`, `thubom`, `theyom`, `thanam`, `thabem`, any strength). An order is not a claim; REPORTED is a relayed order. Parser: `directiveChannel`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yahumal bazozon` is a reaction and then a body with a recipient.
 - **open:** `/w/` on a call (`welazem yalazun`). The person called is not more or less called. Parser: `turnWordModifier`.
 - **open:** `/w/` on an act word or a polar word (`welazem yel`). Firm / soft already grades the act, and the polar particle has its own strengths. The parser rejects them.

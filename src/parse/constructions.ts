@@ -877,6 +877,12 @@ export const REJECTIONS = {
     anchor: "contrary-to.md#contrary-to-stance",
     summary: "the stance after uom says what the event goes against: a channel, PLAN, DECISION, WANT, a ban, a requirement, a refusal, or a speaker attitude",
   },
+  directiveMirative: { anchor: "mirative.md#mirative", summary: "a command, request or prohibition is not news, so MIRATIVE has nothing to overturn on it" },
+  directiveChannel: {
+    anchor: "evidentiality.md#carry-forward",
+    summary: "a command, request or prohibition is not a claim, so the only channel it takes is REPORTED, a relayed order; soften it with the act word",
+  },
+  directiveMay: { anchor: "knowing.md#may", summary: "a command, request or prohibition is not a claim, so MAY has no reading on it" },
   hookSameRole: { anchor: "hooks.md#including-am-al", summary: "an in-clause hook goes between two phrases in the same clause role (A HOOK B)" },
   hookStandIn: { anchor: "hooks.md#since", summary: "the only hook that takes a stand-in is `ul barl` (since); contrary to an event is `thezem blarl`" },
   dependentStanceOnly: {

@@ -567,7 +567,7 @@ A command runs only when every frame on it other than its force, on the clause a
 | `sake` | Whole-clause reach: a sake word or feeling word on the clause | [whose stake](/for-a-sake#whose-stake), [feeling word](/how-you-feel#feeling-word) |
 | `contrary` | Contrary to a stance: what follows `uom` is a stance word or an intention adverb only (no say word, no holder); a reluctant or defiant order | [contrary to a stance](/contrary-to#contrary-to-stance) |
 
-Every other family makes a command `beyond` and names it. For MIRATIVE and a channel or MAY on a command, that is under review.
+Every other family makes a command `beyond` and names it. REPORTED on a command is a relayed order ([carrying a channel forward](/evidentiality#carry-forward)): the order is someone else's, so it stays `beyond` and has no row. MIRATIVE, MAY and every other channel on a command, request or prohibition never reach the loop: the parser rejects them (`directiveMirative`, `directiveMay`, `directiveChannel`; [mirative](/mirative#mirative), [MAY](/knowing#may), D-77), and the turn is a `parse` outcome.
 
 ### The default verdict
 
@@ -582,7 +582,8 @@ With no host `verdict`, the loop counts a match only when it is **plain**: every
 The probe is the last describe block of `src/interpret/run.test.ts`. It builds a command and a yes / no question under 20 of the 21 frame families; `unknown` cannot be built, being the parser's fallback for an unread word.
 
 - **Commands run** under a doubled or stacked act word, a clause sake, a speaker attitude, an interjection, a lone first-mention noun, a call, and contrary to a stance: each frame on a pass-through row.
-- **Commands are `beyond`** under polarity, say, stance (MAY, REPORTED), holder, hinge, intention (plan, want, try), ability, phase, residue (RESIDUE, FORMER), notional, mirative, occasion, a universal, a bar, and a quote. None is refused.
+- **Commands are `beyond`** under polarity, say, stance (REPORTED, a relayed order), holder, hinge, intention (plan, want, try), ability, phase, residue (RESIDUE, FORMER), notional, occasion, a universal, a bar, and a quote. None is refused.
+- **Commands do not parse** under MIRATIVE, MAY, or a channel other than REPORTED (decision 26, D-77): the turn's outcome is `parse`, its error citing the page, and no handler runs.
 - **Questions:** every frame is a filter except a first-mention noun, a bar, a frame a command passes through (a doubled act word, a call, an attitude or interjection, a clause sake, contrary to a stance), and MIRATIVE, as in [question filters](#question-filters). Those questions answer *yes* after a plain logged claim, as the bare question does.
 - **Turns:** a call, *yes*, *no*, or an interjection closed by a period, then a bare body or a sentence linker, is its own move, and the turn is logged as one. A lone greeting or interjection is force said. *Unknown* on a yes / no question is an `ok` *can't say* reply.
 

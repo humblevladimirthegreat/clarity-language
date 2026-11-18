@@ -16,7 +16,7 @@ To say something *could be* so without claiming that it is (*Alazun may be leavi
 >
 > "Alazun may be leaving Ahelan."
 
-Start with **`thomam`**, *may* / *could be*, as here. Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
+Start with **`thomam`**, *may* / *could be*, as here. Without the `/th/` word, you are reporting that it happens. MAY goes only on a claim: a [command, request, or prohibition](/speech-moves#speech-act-beginner) is not a claim, so MAY has no reading there. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
 
 **Compare with:** `zazozon vevemel.` is *Azozon thinks*, a report of the act of thinking; it does not mark anything as a guess.
 

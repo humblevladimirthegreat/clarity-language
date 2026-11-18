@@ -484,7 +484,6 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
   const COMMAND_BEYOND: [string, string][] = [
     ["polarity", "y-command | v-walk | th-not"],
     ["say", "y-command | v-walk | h-episode-event-ALLOW-said"],
-    ["stance", "y-command | v-walk | th-MAY"],
     ["stance", "y-command | v-walk | th-REPORTED"],
     ["holder", "y-command | v-walk | th-REPORTED-Azozon"],
     ["hinge", "y-command | v-walk | [th-if | bl-rain]"],
@@ -496,7 +495,6 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
     ["residue", "y-command | h-RESIDUE | v-walk"],
     ["residue", "y-command | h-always | v-walk | h-FORMER"],
     ["notional", "y-command | th-NOTIONAL | v-walk"],
-    ["mirative", "y-command | v-walk | th-MIRATIVE"],
     ["occasion", "y-command | h-always | v-walk"],
     ["binder", "y-command | [b-everything | g-cat] | v-pay"],
     ["bar", "y-command | [z-listener | th-plan-itinerary | z-rank/more | b-later] | v-departure"],
@@ -530,6 +528,23 @@ describe("run: the loop probe (every frame family, turn boundaries)", () => {
       const [r] = say(t, gloss);
       assert.equal(r!.outcome, "beyond");
       assert.ok(r!.beyond.some((p) => p.kind === "frame" && p.frame?.family === family), r!.beyond.map((p) => p.name).join(", "));
+      assert.equal(t.calls.length, 0);
+    });
+  }
+
+  // [gloss, anchor]: decision 26, a remark with no reading on a command; the parser rejects it, citing the page.
+  const COMMAND_PARSE: [string, string][] = [
+    ["y-command | v-walk | th-MIRATIVE", "mirative.md#mirative"],
+    ["y-command | v-walk | th-MAY", "knowing.md#may"],
+    ["y-command | v-walk | th-LIVE", "evidentiality.md#carry-forward"],
+    ["y-prohibition | v-walk | th-CLUES", "evidentiality.md#carry-forward"],
+  ];
+  for (const [gloss, anchor] of COMMAND_PARSE) {
+    it(`command under a remark with no reading does not parse, citing ${anchor}; no handler runs (${gloss})`, () => {
+      const t = toy({ refer: anyOne, accepts: () => [] });
+      const [r] = say(t, gloss);
+      assert.equal(r!.outcome, "parse");
+      assert.ok(r!.error?.includes(anchor), r!.error ?? "no error");
       assert.equal(t.calls.length, 0);
     });
   }

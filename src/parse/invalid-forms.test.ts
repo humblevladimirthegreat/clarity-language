@@ -327,6 +327,12 @@ const ROWS: Row[] = [
   { invalid: "zuwen vowurol hwavam.", rejection: "saySpeaker", valid: "zuwen vowurol hwuzom." },
   { invalid: "zazozon vowurol uom thawetham.", rejection: "zoneKind", valid: "zazozon vowurol thawethum blalazun." },
   { invalid: "zazozon vowurol uom themem.", rejection: "zoneKind", valid: "zazozon vowurol uom thabem." },
+  { invalid: "yol vowurol themem.", rejection: "directiveMirative", valid: "yel vowurol themem." },
+  { invalid: "yul vowurol themel.", rejection: "directiveMirative", valid: "yul vowurol." },
+  { invalid: "yom vowurol thomam.", rejection: "directiveMay", valid: "yel vowurol thomam." },
+  { invalid: "yol vowurol thugem.", rejection: "directiveChannel", valid: "yol vowurol thebam." },
+  { invalid: "yum vowurol thanam.", rejection: "directiveChannel", valid: "yum vowurol thebar." },
+  { invalid: "yol yel vowurol theyom.", rejection: "directiveChannel", valid: "yel yol vowurol theyom." },
   { invalid: "zazozon vowurol uom thomam.", rejection: "zoneKind", valid: "zazozon vowurol uom thagom." },
   { invalid: "zazozon vowurol uom thubom blarl zalazun vezuvel.", rejection: "standInHost", valid: "zazozon vowurol thubom blarl zalazun vezuvel." },
   // An in-clause hook pairs two phrases in the same clause role (hooks.md#including-am-al).
