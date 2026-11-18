@@ -128,6 +128,23 @@ describe("run: statements", () => {
     assert.ok(joined.readings[0]!.reading.frames.some((f) => f.family === "call"));
   });
 
+  it("yes or an interjection closed by a period is its own move: the bare body after it has no polar link or interjection frame (sentence-linkers.md#past-a-period)", () => {
+    for (const word of ["y-yes", "y-sleepy"]) {
+      const split = run(`${spell(word)}. ${spell(PAID)}.`, createSession(toy().host, tables));
+      assert.equal(split.outcome, "ok", split.error ?? "");
+      assert.equal(split.readings.length, 2, word);
+      const [lone, statement] = split.readings.map((r) => r.reading);
+      assert.ok(lone!.links.some((l) => l.kind === "polar") || lone!.frames.some((f) => f.family === "attitude"), word);
+      assert.ok(statement!.claim.roles.z, word);
+      assert.deepEqual(statement!.links.filter((l) => l.kind === "polar"), [], word);
+      assert.ok(!statement!.frames.some((f) => f.family === "attitude"), word);
+      const joined = say(toy(), `${word} | ${PAID}`)[0]!;
+      assert.equal(joined.readings.length, 1, word);
+      const one = joined.readings[0]!.reading;
+      assert.ok(one.links.some((l) => l.kind === "polar") || one.frames.some((f) => f.family === "attitude"), word);
+    }
+  });
+
   it("yes / no are statements: logged, then told (sentence-linkers.md#past-a-period)", () => {
     for (const gloss of ["y-yes", "y-no-soft"]) {
       const t = toy();
@@ -354,6 +371,26 @@ describe("run: a framed command fails closed", () => {
       assert.equal(session.log.entries.length, 0);
     });
   }
+
+  it("a sake or feeling word on the clause is your remark: the command runs and calls its handler; under a condition it is still beyond (for-a-sake.md#whose-stake, how-you-feel.md#feeling-word)", () => {
+    for (const gloss of ["y-command | v-walk | th-physical-met-any-term", "y-command | v-walk | [th-relatedness-motive-any-term | bl-Alazun]"]) {
+      const t = toy();
+      const r = run(spell(gloss), createSession(t.host, tables));
+      assert.equal(r.outcome, "ok", r.beyond.map((p) => p.name).join(", "));
+      assert.ok(r.readings[0]!.reading.frames.some((f) => f.family === "sake"));
+      assert.equal(t.calls.length, 1);
+    }
+    const feeling = toy();
+    const f = run(spell("y-command | v-walk | th-relatedness-met-any-term-STAYING-OPEN"), createSession(feeling.host, tables));
+    assert.equal(f.outcome, "ok", "a feeling word says how you feel (how-you-feel.md#feeling-word)");
+    assert.equal(feeling.calls.length, 1);
+    const t = toy({ accepts: () => [] });
+    const r = run(spell("y-command | v-sit | th-physical-met-any-term | [th-if | bl-that-clause] | z-Abodun | v-departure"), createSession(t.host, tables));
+    assert.equal(r.outcome, "beyond");
+    assert.ok(r.beyond.some((p) => p.kind === "frame" && p.frame?.family === "hinge"));
+    assert.ok(!r.beyond.some((p) => p.kind === "frame" && p.frame?.family === "sake"));
+    assert.equal(t.calls.length, 0);
+  });
 
   it("the pass-through list cites a grammar section on every row and holds none of these families", () => {
     for (const row of PASS_THROUGH) assert.ok(row.anchors.length > 0 && row.anchors.every((a) => /^[a-z-]+\.md#[a-z-]+$/.test(a)), row.family);

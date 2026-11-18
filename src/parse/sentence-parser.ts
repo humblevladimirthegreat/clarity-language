@@ -2958,7 +2958,8 @@ function cstTokens(cst: CstNode): IToken[] {
  * Group the document's sentences into utterances. A sentence with a left edge opens a new utterance, and so does one
  * that starts with a hook (an extra-noun hook after a sentence end starts a new turn). A bare body (no `/x/` word in
  * front) after a question, command, request or prohibition opens one too: it is a statement, implied `yal`; only a
- * sentence linker keeps the prior act (sentence-linkers.md#past-a-period). Any other sentence continues the utterance
+ * sentence linker keeps the prior act (sentence-linkers.md#past-a-period). So does any sentence after a bodiless turn of a
+ * call, *yes* / *no*, or an interjection ({@link afterTurnWord}). Any other sentence continues the utterance
  * before it. Each body takes the period right after its sentence.
  */
 function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
@@ -2973,7 +2974,7 @@ function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
     const body = childNodes(sentence.cst, "edgeBody")[0] ?? childNodes(sentence.cst, "bodyClause")[0];
     const fragment = childNodes(sentence.cst, "fragment")[0];
     const prior = utterances.at(-1);
-    if (!prior || edge || tokenIs(tokens[sentence.start]!, Hook) || afterNonStatement(prior, body) || afterCall(prior, body)) {
+    if (!prior || edge || tokenIs(tokens[sentence.start]!, Hook) || afterNonStatement(prior, body) || afterTurnWord(prior, body)) {
       utterances.push({ left: buildLeftEdge(edge), bodies: [] });
     }
     const next = tokens[sentence.end + 1];
@@ -2995,13 +2996,14 @@ function afterNonStatement(prior: Utterance, body: CstNode | undefined): boolean
 }
 
 /**
- * A sentence after a call-only turn (a call closed by a period, no body): the call reaches its own turn only, so the
- * next sentence starts its own utterance and is not said to that person by the call (sentence-linkers.md#past-a-period).
- * When the turn also wrote an act word, only a bare body leaves it; a sentence linker keeps that act
- * ({@link afterNonStatement}).
+ * A sentence after a turn word closed by a period with no body: a call, *yes* / *no*, or an interjection is a whole move
+ * of its own, so the next sentence starts its own utterance; it is not said to that person by the call and carries no
+ * polar link or interjection frame (sentence-linkers.md#past-a-period). When the turn also wrote an act word, only a bare
+ * body leaves it; a sentence linker keeps that act ({@link afterNonStatement}).
  */
-function afterCall(prior: Utterance, body: CstNode | undefined): boolean {
-  if (prior.bodies.length > 0 || prior.left.vocatives.length === 0) return false;
+function afterTurnWord(prior: Utterance, body: CstNode | undefined): boolean {
+  const { vocatives, polars, interjections } = prior.left;
+  if (prior.bodies.length > 0 || vocatives.length + polars.length + interjections.length === 0) return false;
   if (!actWord(prior.left)) return true;
   return !body || !(childToken(body, "Linker") ?? childToken(body, "crossJoin") ?? childToken(body, "topicMarker"));
 }

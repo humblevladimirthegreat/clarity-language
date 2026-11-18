@@ -26,13 +26,13 @@ When you say several sentences in a row, the listener needs to hear where each o
 
 The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#tone-marks) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts. After a rest, a new `/y/` turn word (*yes*, *no*, a call, or an act word) starts a new act, a bare body is a statement whatever came before it, and only a sentence linker keeps the prior act. With no rest, as after an `/x/` continue, the same sentence goes on.
 
-A call closed by a period reaches only its own turn. The next body is not said to that person because of the call; whether you are still talking to them is up to the conversation.
+A call, a *yes* / *no*, or an interjection closed by a period is a whole move and reaches only its own turn. The next body is its own statement: it is not said to that person because of the call, and the *yes* / *no* or interjection does not reach it either. Whether you are still talking to that person is up to the conversation.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
 | `.` | Rest: one silent beat | Closes the prior body. Next stretch still defaults to `yal` unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Rest = the claim is done |
 | Next `/y/` turn (*yes* / *no*, a call, written act word) | The period's rest, then the `/y/` word | New turn; firm `-l` / soft `-m` imply `yal` / `yam` | The `/y/` word = a new act |
-| Bare body or hook + body after `.` | The period's rest only | Implied `yal` (or `yam` only if a soft particle / written `yam` said so); a call alone before the `.` does not reach it | No `/y/` word, so same statement |
+| Bare body or hook + body after `.` | The period's rest only | Implied `yal` (or `yam` only if a written `yam` said so); a call, *yes* / *no*, or interjection alone before the `.` does not reach it | No `/y/` word, so same statement |
 | Soft statement / soft *yes* / *no* `-m` | Nothing extra: the `-m` is heard | `yam` (implied or written) | `-m` leaves the hold open |
 | `/x/` continue (clause join) | No rest: the sentence goes on | Keep opener speech act; period after the whole joined stretch | No rest = still going |
 | `/x/` linker after `.` (`xahom …`) | The period's rest, then the linker | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |

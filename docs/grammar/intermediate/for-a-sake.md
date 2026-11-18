@@ -122,6 +122,8 @@ A sake word on the clause stays outside a question, though the question word com
 >
 > "Is Azozon walking? That would be good for my health."
 
+A command works the same way: a sake word on the clause, with or without a `bl-` word, is your remark on what the act serves, and the command asks only for the act.
+
 To ask whether the act serves a need, say the act first and ask about it: `zazozon vowurol. yel zarth gobatham blawan.` is *Azozon walks. Is that good for your health?*
 
 **Compare with:** the *for* hook (`ol balazun`) names who the act is for without naming which sake.

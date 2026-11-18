@@ -64,6 +64,8 @@ A label does not say what you need or what the feeling makes you want to do. A *
 
 Build it from the plain sake word: `thudathum` (a sake, unmet, modifiable) + `u` (the urge to get away) + `-m` = `thudathumum`. The sake word's own ending now sits mid-word and keeps its meaning. The last ending says how long the feeling itself lasts, and `-m` leaves that open.
 
+A feeling word in a command still says how you feel. The command asks only for the act.
+
 The unspecified sake `uda` says that some need is involved without picking one. When you can tell which need it is, put its root in and change nothing else:
 
 > `thunathumum.`

@@ -7,7 +7,7 @@
  * a host member, because no host may widen it (`accepts` only narrows).
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import type { FrameFamily } from "../parse/scope.js";
+import { FRAME_KEYS, type FrameFamily } from "../parse/scope.js";
 import type { LogEntry } from "./log.js";
 import type { Log } from "./log.js";
 import type { MatchOptions, Switch, TermSite } from "./match.js";
@@ -207,6 +207,12 @@ export const PASS_THROUGH: readonly PassThroughRow[] = [
     family: "attitude",
     anchors: ["tone-marks.md#tone-marks", "feelings.md#speaker-attitude", "speech-manner.md#speech-manner"],
     why: "A tone mark changes only your voice and never the speech act; a speaker attitude or speech manner is always the speaker's own, never part of the act.",
+  },
+  {
+    family: "sake",
+    when: (frame) => FRAME_KEYS[frame.key]?.reach === "clause",
+    anchors: ["for-a-sake.md#whose-stake", "how-you-feel.md#feeling-word"],
+    why: "A sake word on the clause (met, unmet, prescription or motive, with or without a `bl-` stake holder) is your own remark on what the act serves, and a feeling word says how you feel; either way the command asks only for the act, as a question asks only about it.",
   },
 ] as const;
 

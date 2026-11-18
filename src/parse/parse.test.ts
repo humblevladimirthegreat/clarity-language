@@ -222,9 +222,11 @@ describe("parse — describing a call or reaction (more-turn-words.md#describe-t
 
   it("leaves a /ɡ/ after an act word or a period in the body", () => {
     assert.deepEqual(parseText("yalazun yol guyulom.").utterances[0]!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
-    const [utt] = parseText("yemel. gelazem.").utterances;
+    // An interjection closed by a period is its own move; the body after it is its own utterance (sentence-linkers.md#past-a-period).
+    const [utt, next] = parseText("yemel. gelazem.").utterances;
     assert.equal(utt!.left.interjectionMods, undefined);
-    assert.deepEqual(utt!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
+    assert.deepEqual(utt!.bodies, []);
+    assert.deepEqual(next!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
   });
 
   it("rejects /w/ on a call and describing words on a number cheer or span", () => {
