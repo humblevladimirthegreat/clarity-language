@@ -4,9 +4,7 @@ band: advanced
 
 # Every bar {#every-bar}
 
-### Every bar {#stance-bars}
-<a id="worse-than"></a>
-<a id="best-effort"></a>
+### Which expectation is the bar {#which-bar}
 
 English ranks a thing against many kinds of expectation: *than I remember*, *than they said*, *as … as possible*, *than I hoped*. A [plan bar](/bars#bars) ranks against what a plan set, a [channel bar](/bars#channel-bars) against what a source led you to expect, and a [sake bar](/bars#sake-bars) against what a sake needs. Any other stance that sets a value can be the bar too, and each keeps its own endings and meaning. The table lists them, so you can say which expectation the thing beats or falls short of.
 
@@ -57,6 +55,8 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](/evid
 >
 > "The book is lighter than I wanted."
 
+### Who sets the bar {#who-sets-the-bar}
+
 The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](/permission-consent#say-words) over the act (`hwuvom`, `hwuvam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](/holder#naming-a-holder) on the clause. On PATTERN it is whose cases set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zanal thebam blalazun zuol gagebem.`
@@ -81,6 +81,8 @@ An adjective after that `/b/` describes it, as after any [host](/longer-chains#c
 >
 > "Azozon sings well for a sleepy learner."
 
+### Ranking a whole kind {#ranking-a-kind}
+
 The ranked item can be a whole kind. Write the [universal fence](/universals-domains#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](/list-structure#fence-nesting)). Open `zuam` is *people of that kind, as a rule*.
 
 > `zuam gwuzadamul thubom zol hral vabezum.`
@@ -98,6 +100,8 @@ To rank one kind against another, keep one kind as the item and put the other in
 > "Rested people work more successfully than exhausted people."
 
 A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): the next sentence is the grounds you worked the bar out from.
+
+### Ability, rules, and hopes as the bar {#limits-and-hopes}
 
 **Ability.** The ability word [`oda`](/can-and-cant#ability-fallback) as the bar is the limit of what can be done. A tie against `hodaxal` is *as … as possible*. The ability vowel says how fixed that limit is, so rank `zol` against `hodaxol` is *more than can be done for now*, and against `hodaxul` *more than could ever be done*.
 
