@@ -238,6 +238,12 @@ Options, per frame: (a) pass through, with a grammar line on its page saying it 
 
 **Recommendation:** MIRATIVE (a), **(medium)**: the page already treats it as a speaker attitude in questions, and a learner's surprise should not block the act. A channel or MAY (b), **(medium)**: *walk, I hear* reads as a relayed order, which changes whose command it is, so the loop should not run it. Contrary to a stance (b), **(low)**: *walk, against my plan* may be a reluctant order or a report of one; until a page says, failing closed costs a learner one retry.
 
+**27. Contrary to a stance on a question.** 25 (a) and 26 together make `uom` + a stance pass through on a command, so a question ignores it: after `zazozon vowurol.`, the question `yel zazozon vowurol uom thagom.` (`y-question | z-Azozon | v-walk | [contrary-to | th-plan-itinerary]`, *Is Azozon walking, against my plan?*) answers *yes*. H8a ships that, and the probe row is marked 25. No page says what `uom` does in a question.
+- (a) Keep it: the stance is the speaker's own, outside what is asked; contrary-to.md#contrary-to-stance gains one line saying so, as mirative.md has for MIRATIVE.
+- (b) Make contrary an exception that still filters a question: the target must say the event went against that stance.
+
+**Recommendation:** **(medium)** (a). The plan after `uom` is the asker's own, so a listener can answer only the claim; one rule keeps the two lists in step. (b) is defensible if a learner would read the question as *did it go against my plan?*, but that question is better asked with the plan as the verb.
+
 ## Background
 
 ### Problem
