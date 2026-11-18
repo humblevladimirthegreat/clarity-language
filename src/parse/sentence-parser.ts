@@ -114,7 +114,7 @@ import { isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
 import { topicEffect } from "./linkers.js";
 import { scopeClause, scopeIsland } from "./verb-items.js";
-import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
+import { actWord, BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
 import type {
   BodyClause,
   Clause,
@@ -2956,8 +2956,10 @@ function cstTokens(cst: CstNode): IToken[] {
 
 /**
  * Group the document's sentences into utterances. A sentence with a left edge opens a new utterance, and so does one
- * that starts with a hook (an extra-noun hook after a sentence end starts a new turn); any other sentence continues
- * the utterance before it. Each body takes the period right after its sentence.
+ * that starts with a hook (an extra-noun hook after a sentence end starts a new turn). A bare body (no `/x/` word in
+ * front) after a question, command, request or prohibition opens one too: it is a statement, implied `yal`; only a
+ * sentence linker keeps the prior act (sentence-linkers.md#past-a-period). Any other sentence continues the utterance
+ * before it. Each body takes the period right after its sentence.
  */
 function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
   const position = new Map(tokens.map((token, i) => [token, i]));
@@ -2968,17 +2970,27 @@ function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
   const utterances: Utterance[] = [];
   for (const sentence of sentences) {
     const edge = childNodes(sentence.cst, "leftEdge")[0];
-    if (utterances.length === 0 || edge || tokenIs(tokens[sentence.start]!, Hook)) {
-      utterances.push({ left: buildLeftEdge(edge), bodies: [] });
-    }
     const body = childNodes(sentence.cst, "edgeBody")[0] ?? childNodes(sentence.cst, "bodyClause")[0];
     const fragment = childNodes(sentence.cst, "fragment")[0];
+    if (utterances.length === 0 || edge || tokenIs(tokens[sentence.start]!, Hook) || afterNonStatement(utterances.at(-1)!, body)) {
+      utterances.push({ left: buildLeftEdge(edge), bodies: [] });
+    }
     const next = tokens[sentence.end + 1];
     const punct = next && tokenIs(next, Period) ? next : undefined;
     if (body) utterances.at(-1)!.bodies.push(buildBodyClause(body, punct));
     if (fragment) utterances.at(-1)!.bodies.push(buildFragment(fragment, punct));
   }
   return utterances;
+}
+
+/**
+ * A bare body after an utterance whose real act is not a statement: no sentence linker, topic word or cross-period join
+ * in front, so it starts its own implied statement (sentence-linkers.md#past-a-period).
+ */
+function afterNonStatement(prior: Utterance, body: CstNode | undefined): boolean {
+  const act = actWord(prior.left);
+  if (!act || (act.family.kind === "joinMarker" && act.family.series === "a")) return false;
+  return !body || !(childToken(body, "Linker") ?? childToken(body, "crossJoin") ?? childToken(body, "topicMarker"));
 }
 
 export function parseSentenceTokens(input: IToken[]): ParseResult {

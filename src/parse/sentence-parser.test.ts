@@ -49,11 +49,22 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[0]!.left.leadForce, undefined);
   });
 
-  it("continues a turn with a plain sentence, and gives each body the period after its own sentence", () => {
-    const result = parseSentenceTokens(tokens("yel. zazozon vowurol"));
+  it("continues a statement with a plain sentence, and gives each body the period after its own sentence", () => {
+    const result = parseSentenceTokens(tokens("yal. zazozon vowurol"));
     assert.equal(result.utterances.length, 1);
     assert.equal(result.utterances[0]!.bodies[0]!.punct, undefined);
-    assert.equal(parseSentenceTokens(tokens("yel. zazozon vowurol.")).utterances[0]!.bodies[0]!.punct, "period");
+    assert.equal(parseSentenceTokens(tokens("yal. zazozon vowurol.")).utterances[0]!.bodies[0]!.punct, "period");
+  });
+
+  it("starts an implied statement with a bare body after a question; a linker keeps the question (sentence-linkers.md#past-a-period)", () => {
+    const bare = parseSentenceTokens(tokens("yel zalazun veruvol. zalazun vozuyel."));
+    assert.equal(bare.utterances.length, 2);
+    assert.equal(bare.utterances[1]!.left.force, undefined);
+    assert.equal(bare.utterances[1]!.left.impliedForce, "yal");
+    assert.equal(parseSentenceTokens(tokens("yel. zazozon vowurol.")).utterances.length, 2);
+    const linked = parseSentenceTokens(tokens("yel zalazun veruvol. xahom zalazun vozuyel."));
+    assert.equal(linked.utterances.length, 1);
+    assert.equal(linked.utterances[0]!.bodies.length, 2);
   });
 
   it("reads a /w/ + hook after a period as discourse glue, as at the start (in-clause-hooks.md#hook-w)", () => {

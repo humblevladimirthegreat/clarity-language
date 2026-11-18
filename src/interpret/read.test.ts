@@ -751,6 +751,22 @@ describe("reader: carried frames (evidentiality.md#carry-forward)", () => {
     assert.deepEqual(carried(readings).map((c) => c.length), [0, 0, 1]);
   });
 
+  it("a bare body after a question is a statement and takes the frame (sentence-linkers.md#past-a-period)", () => {
+    const bare = read("y-question | z-Alazun | v-run . z-Alazun | v-sing");
+    assert.deepEqual(bare.map(families), [["force"], []]);
+    const framed = read("z-Alazun | th-REPORTED | v-departure . y-question | z-Alazun | v-run . z-Alazun | v-sing");
+    assert.deepEqual(carried(framed).map((c) => c.length), [0, 0, 1]);
+    assert.deepEqual(framed[2]!.frames, []);
+  });
+
+  it("a sentence linker after a question keeps the question; a bare body after a command is a statement", () => {
+    const linked = read("y-question | z-Alazun | v-run . x-therefore | z-Alazun | v-sing");
+    assert.deepEqual(linked.map(families), [["force"], ["force"]]);
+    assert.equal(frame(linked[1]!, "force").words[0]!.raw, frame(linked[0]!, "force").words[0]!.raw);
+    const command = read("y-command | z-Alazun | v-run . z-Alazun | v-sing");
+    assert.deepEqual(command.map(families), [["force"], []]);
+  });
+
   it("channel: a topic word or a linker keeps it", () => {
     const readings = read("z-Azozon | th-REPORTED | v-walk . x-Alazun | z-TOPIC | v-sit");
     assert.deepEqual(carried(readings).map((c) => c.length), [0, 1]);
