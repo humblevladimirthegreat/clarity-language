@@ -120,8 +120,8 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 <!-- generated: overlays pos=th|h kind=may|notional|mirative|residue|former_climate -->
 | Ageben | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](/residue-and-former#residue) | I |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](/residue-and-former#former-climate) | I |
+| `haram` | residue mood (outcome still on the current tally) | [What is still in effect](/residue-and-former#residue) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [A pattern that used to hold](/residue-and-former#former-climate) | I |
 | `themel` | mirative mood overturning a firm expectation | [It turns out (themem)](/mirative#mirative) | I |
 | `themem` | mirative mood (newly found out and not expected) | [It turns out (themem)](/mirative#mirative) | I |
 | `themer` | mirative mood against a loose expectation | [It turns out (themem)](/mirative#mirative) | I |
