@@ -4,14 +4,15 @@
  *
  * | Force | Loop does |
  * |-------|-----------|
- * | statement | adds it to the log, then calls `told` |
+ * | statement | calls `told`, then adds the turn to the log unless `told` refused |
  * | question | `ask`, then `holds`, then `verdict`; replies |
  * | command, prohibition | resolves the roles with `refer`, then runs `handler` |
  *
  * A framed command fails closed: it runs only when every frame on it, other than its force, is on the pass-through
  * list (host.ts). Outcomes: `parse` (did not parse), `beyond` (parsed, but something on it is not read, not ordered,
  * not accepted, not handled, or framed off the list; always named), `refused` (the host or its verdict said no), `ok`.
- * A turn with any reading beyond dispatches nothing and leaves the log as it was.
+ * A turn with any reading beyond dispatches nothing and leaves the log as it was; a turn with a refused statement
+ * dispatches the rest and leaves the log as it was. A turn is logged whole or not at all.
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { ask, type Match } from "./ask.js";
@@ -245,7 +246,7 @@ function question<E>(reading: Reading, text: string, session: Session<E>): Readi
   return { ...base, outcome: "ok", replies };
 }
 
-/** Read one user turn against the session and act on it. Updates `session.log` and `session.at` for a statement. */
+/** Read one user turn against the session and act on it. Updates `session.log` and `session.at` for a turn with a statement none refused. */
 export function run<E>(text: string, session: Session<E>): TurnResult {
   const { host, tables } = session;
   const empty = { beyond: [], readings: [], effects: [], replies: [] };
@@ -260,35 +261,44 @@ export function run<E>(text: string, session: Session<E>): TurnResult {
   if (beyond.length) return { ...empty, outcome: "beyond", beyond };
 
   let readings = read;
+  let logged: Session<E>["log"] | undefined;
   if (read.some((r) => forceOf(r) === "statement")) {
     const log = appendTurn(session.log, { speaker: session.speaker, at: session.at, text }, tables);
     const entry = log.entries[log.entries.length - 1];
     if (log.rejected.length > session.log.rejected.length || !entry) {
       return { outcome: "parse", error: log.rejected[log.rejected.length - 1]?.error ?? "not logged", ...empty };
     }
-    session.log = log;
-    session.at += 1;
+    logged = log;
     readings = entry.readings;
   }
 
-  const results: ReadingResult[] = [];
+  // Statements first: `told` runs before the turn is logged, and a refusal keeps the turn out of the log.
+  const results: (ReadingResult | undefined)[] = readings.map((reading) => {
+    if (forceOf(reading) !== "statement") return undefined;
+    const told = host.told?.(reading, session) ?? [];
+    if (!Array.isArray(told)) return { reading, force: "statement", outcome: "refused", refused: told.reason, effects: [], replies: [] };
+    return { reading, force: "statement", outcome: "ok", effects: told.map((e) => ({ reading: reading.id, ...e })), replies: [] };
+  });
+  if (logged && !results.some((r) => r?.outcome === "refused")) {
+    session.log = logged;
+    session.at += 1;
+  }
+
   const late: BeyondPart[] = [];
-  for (const reading of readings) {
+  readings.forEach((reading, i) => {
     const force = forceOf(reading)!;
-    if (force === "statement") {
-      const effects = (host.told?.(reading, session) ?? []).map((e) => ({ reading: reading.id, ...e }));
-      results.push({ reading, force, outcome: "ok", effects, replies: [] });
-    } else if (force === "question") {
-      results.push(question(reading, text, session));
-    } else {
+    if (force === "statement") return;
+    if (force === "question") results[i] = question(reading, text, session);
+    else {
       const out = command(reading, force, session);
       if (Array.isArray(out)) late.push(...out);
-      else results.push(out);
+      else results[i] = out;
     }
-  }
-  const effects = results.flatMap((r) => r.effects);
-  const replies = results.flatMap((r) => r.replies);
-  if (late.length) return { outcome: "beyond", beyond: late, readings: results, effects, replies };
-  const outcome: Outcome = results.some((r) => r.outcome === "refused") ? "refused" : "ok";
-  return { outcome, beyond: [], readings: results, effects, replies };
+  });
+  const done = results.filter((r): r is ReadingResult => r !== undefined);
+  const effects = done.flatMap((r) => r.effects);
+  const replies = done.flatMap((r) => r.replies);
+  if (late.length) return { outcome: "beyond", beyond: late, readings: done, effects, replies };
+  const outcome: Outcome = done.some((r) => r.outcome === "refused") ? "refused" : "ok";
+  return { outcome, beyond: [], readings: done, effects, replies };
 }

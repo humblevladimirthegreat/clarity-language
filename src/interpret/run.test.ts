@@ -8,7 +8,7 @@ import { CLOSED } from "../closed-roots.js";
 import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
-import { PASS_THROUGH, type Effect, type Held, type Host, type Referent } from "./host.js";
+import { blankSites, PASS_THROUGH, type Effect, type Held, type Host, type Referent } from "./host.js";
 import { throughAntecedent } from "./match.js";
 import { createSession, run, type TurnResult } from "./run.js";
 import type { Term } from "./types.js";
@@ -72,6 +72,21 @@ describe("run: statements", () => {
     assert.deepEqual(r.effects.map((e) => e.kind), ["noted"]);
   });
 
+  it("told can refuse a statement: the turn is refused with its reason and leaves the log as it was", () => {
+    const told: string[] = [];
+    const t = toy({ told: (reading) => (told.push(reading.id), reading.claim.roles.z ? { ok: false, reason: "cannot be found" } : []) });
+    const session = createSession(t.host, tables);
+    const r = run(spell(PAID), session);
+    assert.equal(r.outcome, "refused");
+    assert.equal(r.readings[0]!.refused, "cannot be found");
+    assert.equal(told.length, 1);
+    assert.equal(session.log.entries.length, 0);
+    assert.equal(session.at, 0);
+    const ok = run(spell("v-pay | b-Azozon"), session);
+    assert.equal(ok.outcome, "ok");
+    assert.equal(session.log.entries.length, 1);
+  });
+
   it("the re-parse window is the host's (decision 5)", () => {
     assert.equal(createSession({ window: 2 }, tables).log.options.window, 2);
     assert.equal(createSession({}, tables).log.options.window, undefined);
@@ -106,6 +121,21 @@ describe("run: questions and shared replies", () => {
     assert.equal(r!.replies[0]!.gloss, "z-Alazun");
     assert.equal(r!.replies[1]!.gloss, "z-Alazun | b-Azozon | v-pay");
     assert.equal(r!.replies[1]!.ageben, spell(PAID));
+  });
+
+  it("a where blank in a detail, answered from held state keyed by its at", () => {
+    const WHERE = "y-question | [at | b-wh] | z-Azozon | v-sit";
+    const holds: Host["holds"] = (claim) => {
+      const where = blankSites(claim).find((b) => b.detail);
+      return where ? [{ holds: true, source: "map", answers: { [where.at]: { leaf: "[at | b-house]", english: "at the house" } } }] : [];
+    };
+    const [r] = say(toy({ holds }), WHERE);
+    assert.equal(r!.outcome, "ok");
+    assert.deepEqual(blankSites(r!.readings[0]!.reading.claim).map((b) => b.at), ["claim/detail.0/hosted"]);
+    assert.deepEqual(shapes(r!), ["fillFragment", "why"]);
+    assert.equal(r!.replies[0]!.gloss, "[at | b-house]");
+    assert.ok(r!.replies[0]!.ageben);
+    assert.deepEqual(r!.replies[1]!.because, ["map"]);
   });
 
   it("the host's verdict can refuse", () => {

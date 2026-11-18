@@ -13,6 +13,7 @@ import type { Log } from "./log.js";
 import type { MatchOptions, Switch, TermSite } from "./match.js";
 import type { Match } from "./ask.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
+import { detailNumber } from "./value.js";
 
 /** What a term refers to in the host's world: one entity, several (ask *which one?*), or none. */
 export type Referent<E> = { kind: "one"; entity: E } | { kind: "several"; entities: E[] } | { kind: "none" };
@@ -36,10 +37,35 @@ export type Bound<E> = Partial<Record<RoleLetter, Referent<E>>>;
 
 /**
  * Live state the host holds about a question's claim (beyond what the log says). `holds` is whether the claim holds;
- * `answers` gives a fill question's answer per blank role as a morph-gloss leaf (`z-dog`), written by the host from a
- * concrete sense, never a spelling; `source` names the state, for *why*.
+ * `answers` gives a fill question's answer per blank as a morph-gloss leaf (`z-dog`), written by the host from a
+ * concrete sense, never a spelling. A blank that fills a role is keyed by its role letter; any blank, including one
+ * hosted in a detail (a *where* blank), by its `at` ({@link blankSites}). `source` names the state, for *why*.
  */
-export type Held = { holds: boolean; source: string; answers?: Partial<Record<RoleLetter, { leaf: string; english: string }>> };
+export type Held = { holds: boolean; source: string; answers?: Partial<Record<RoleLetter | string, { leaf: string; english: string }>> };
+
+/** A blank in a question's claim and its `at`: the same id a log match gives the blank it binds (match.ts). */
+export type BlankSite = { at: string; blank: Term; detail?: Detail };
+
+/**
+ * Every blank in a claim's roles and details, with its `at`: a role's is its letter (`z`), a detail's hosted blank's is
+ * its path (`claim/detail.0/hosted`; a number blank ends in `/number`). A host keys {@link Held} answers by it.
+ */
+export function blankSites(claim: Claim): BlankSite[] {
+  const out: BlankSite[] = [];
+  const details = (list: readonly Detail[], at: string): void =>
+    list.forEach((d, i) => {
+      const here = `${at}/detail.${i}`;
+      if (d.hosted?.kind === "blank") out.push({ at: detailNumber(d) ? `${here}/number` : `${here}/hosted`, blank: d.hosted, detail: d });
+      else if (d.hosted && "details" in d.hosted && d.hosted.details) details(d.hosted.details, `${here}/hosted`);
+      details(d.details ?? [], here);
+    });
+  for (const [letter, term] of Object.entries(claim.roles) as [RoleLetter, Term][]) {
+    if (term.kind === "blank") out.push({ at: letter, blank: term });
+    if ("details" in term && term.details) details(term.details, letter);
+  }
+  details(claim.details, "claim");
+  return out;
+}
 
 /** What a turn did beyond being read: the host's own record, opaque to the loop. */
 export type Effect = { kind: string; reading?: ReadingId; data?: unknown };
@@ -53,7 +79,10 @@ export type Action<E> = {
   session: Session<E>;
 };
 
-export type HandlerResult = { ok: true; effects?: Effect[] } | { ok: false; reason: string };
+/** The host said no: the reading is `refused`, with this reason. */
+export type Refusal = { ok: false; reason: string };
+
+export type HandlerResult = { ok: true; effects?: Effect[] } | Refusal;
 
 /** What a verb does, for a host that acts. */
 export type Handler<E> = (action: Action<E>) => HandlerResult;
@@ -83,8 +112,11 @@ export type Host<E = string> = {
   holds?: (claim: Claim, bound: Bound<E>) => Held[];
   /** What a verb does, by its root, for a host that acts. */
   handler?: (root: string) => Handler<E> | undefined;
-  /** What a statement does beyond being logged. */
-  told?: (reading: Reading, session: Session<E>) => Effect[];
+  /**
+   * What a statement does beyond being logged. Called before the turn is logged; a {@link Refusal} makes the reading
+   * `refused`, and the turn then leaves the log as it was.
+   */
+  told?: (reading: Reading, session: Session<E>) => Effect[] | Refusal;
   /** Which frames count, and who wins. Unset: the loop's default verdict (run.ts). */
   verdict?: (question: Reading, matches: Match[], held: Held[]) => Verdict;
   /** Parts of a reading this host cannot act on yet: each makes the turn `beyond`. Narrows only. */
