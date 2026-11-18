@@ -52,7 +52,16 @@ export function emptyLog(options: LogOptions = {}): Log {
   return { options, entries: [], rejected: [], readings: [] };
 }
 
-const transcript = (turns: readonly Turn[]): string => turns.map((t) => t.text.trim()).join(" ");
+/**
+ * A turn the host hands in is a closed turn: without a final `.`, `?` or `!` it would run into the next turn when the
+ * transcript is parsed again (a `/y/` word starts a turn only after a period), so the log closes it with `.`.
+ */
+const closed = (text: string): string => {
+  const t = text.trim();
+  return t && !/[.?!]$/.test(t) ? `${t}.` : t;
+};
+
+const transcript = (turns: readonly Turn[]): string => turns.map((t) => closed(t.text)).join(" ");
 
 /** The sentence index of each (utterance, body) in a parse: a bodiless utterance is one sentence, as in the reader. */
 function sentenceIndex(parse: ParseResult): Map<string, number> {

@@ -20,7 +20,7 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
 );
 const index = fullGlossIndex(tables);
-const spell = (gloss: string): string => glossToAgeben(gloss, tables, index) + ".";
+const spell = (gloss: string): string => glossToAgeben(gloss, tables, index);
 
 // The toy host's world: three people from the house cast. Ana is Azozon, Sam is Alazun, Lee is Ahelan.
 const ANA = CLOSED.swan;
@@ -99,10 +99,10 @@ describe("run: statements", () => {
       session.speaker = "user";
       const asked = run(spell("y-question | z-Alazun | b-Azozon | v-pay"), session);
       assert.equal(asked.outcome, "ok", asked.error ?? "");
-      // The parse puts the call on the next body (it frames it), so the match is framed and the default verdict cannot say.
+      // The parse puts the call on the next body; a call is on the pass-through list, so the default verdict still counts it.
       const [match] = asked.readings[0]!.matches!;
       assert.ok(match!.path.frames.some((f) => f.frame.family === "call"));
-      assert.deepEqual(shapes(asked), ["cannotSay"]);
+      assert.deepEqual(shapes(asked), ["yes", "why"]);
       const done = run(spell("y-command | b-Azozon | v-pay"), session);
       assert.equal(done.outcome, "ok", done.error ?? "");
       assert.equal(t.calls.length, 1);
@@ -135,6 +135,41 @@ describe("run: questions and shared replies", () => {
     assert.ok(r!.replies[0]!.ageben);
   });
 
+  it("yes, from a statement said after a call: a call does not change what it claims (speech-moves.md#vocative)", () => {
+    const [, told, r] = say(toy(), "y-Ahelan", PAID, "y-question | z-Alazun | b-Azozon | v-pay");
+    assert.equal(r!.outcome, "ok");
+    assert.deepEqual(shapes(r!), ["yes", "why"]);
+    assert.deepEqual(r!.replies[1]!.because, told!.readings.map((x) => x.reading.id));
+  });
+
+  it("yes, from a statement with a first-mention landmark: the claim holds of one such thing (joins.md#new-member-in-a-statement)", () => {
+    const [told, r] = say(toy(), "z-Alazun | v-go | [in | b-house]", "y-question | z-Alazun | v-go");
+    assert.equal(r!.outcome, "ok");
+    assert.deepEqual(shapes(r!), ["yes", "why"]);
+    assert.deepEqual(r!.replies[1]!.because, told!.readings.map((x) => x.reading.id));
+  });
+
+  it("cannot say, from a statement with a speaker attitude and a first-mention noun: no grammar page settles that pair yet", () => {
+    const [, r] = say(toy(), "z-Alazun | th-revelation | d-cat | v-see", "y-question | z-Alazun | v-see");
+    assert.equal(r!.outcome, "ok");
+    const [match] = r!.readings[0]!.matches!;
+    const families = match!.path.frames.map((f) => `${f.frame.family}:${f.frame.key}`);
+    assert.ok(families.includes("attitude:slot:th") && families.includes("binder:slot:newMember"), families.join(", "));
+    assert.deepEqual(shapes(r!), ["cannotSay"]);
+  });
+
+  it("turns handed in without a period are closed by the log: a statement, then a command", () => {
+    const t = toy();
+    const session = createSession(t.host, tables);
+    const told = run(spell(PAID), session);
+    assert.equal(told.outcome, "ok", told.error ?? "");
+    const done = run(spell("y-command | b-Azozon | v-pay"), session);
+    assert.equal(done.outcome, "ok", done.error ?? "");
+    assert.equal(t.calls.length, 1);
+    assert.equal(session.log.entries.length, 1);
+    assert.equal(session.log.rejected.length, 0);
+  });
+
   it("no, from held state that does not hold", () => {
     const holds = (): Held[] => [{ holds: false, source: "ledger" }];
     const [r] = say(toy({ holds }), "y-question | z-Azozon | b-Alazun | v-pay");
@@ -147,7 +182,7 @@ describe("run: questions and shared replies", () => {
     assert.deepEqual(shapes(r!), ["fillFragment", "fillClause", "why"]);
     assert.equal(r!.replies[0]!.gloss, "z-Alazun");
     assert.equal(r!.replies[1]!.gloss, "z-Alazun | b-Azozon | v-pay");
-    assert.equal(r!.replies[1]!.ageben, spell(PAID));
+    assert.equal(r!.replies[1]!.ageben, `${spell(PAID)}.`);
   });
 
   it("a where blank in a detail, answered from held state keyed by its at", () => {
@@ -172,8 +207,8 @@ describe("run: questions and shared replies", () => {
     assert.deepEqual(shapes(r).slice(0, 2), ["fillFragment", "fillClause"]);
     assert.equal(r.replies[0]!.gloss, `[at | ${landmark}]`);
     assert.equal(r.replies[1]!.gloss, `[at | ${landmark}] | z-Azozon | v-sit`);
-    assert.equal(r.replies[0]!.ageben, spell(`[at | ${landmark}]`));
-    assert.equal(r.replies[1]!.ageben, spell(`[at | ${landmark}] | z-Azozon | v-sit`));
+    assert.equal(r.replies[0]!.ageben, `${spell(`[at | ${landmark}]`)}.`);
+    assert.equal(r.replies[1]!.ageben, `${spell(`[at | ${landmark}] | z-Azozon | v-sit`)}.`);
   };
 
   it("a where blank answered from the log (a named landmark): the question's hook and the landmark, as a fragment and a full clause", () => {

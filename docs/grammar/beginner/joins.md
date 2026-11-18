@@ -190,6 +190,15 @@ Whether a phrase brings in a new member decides whether it takes part in this or
 | The unit in an amount | the *cups* in *two cups of tea* | No: it measures and names no members |
 | The words inside a title | | No |
 
+<a id="new-member-in-a-statement"></a>
+In a statement, a noun you mention for the first time, such as *a cat*, says the claim holds of one such thing.
+
+> `zalazun dogozel vayebel.`
+>
+> z-Alazun | d-cat | v-see
+>
+> "Alazun sees a cat." (there is a cat, and Alazun sees it)
+
 <a id="new-member-in-a-command"></a>
 In a command, a noun you mention for the first time, such as *a door*, asks the listener to act on one such thing, whichever one they pick.
 
