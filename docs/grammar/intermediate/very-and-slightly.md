@@ -4,7 +4,7 @@ band: intermediate
 
 # Very and slightly {#very-and-slightly}
 
-### How much: degree words {#degree-w}
+### Grading a quality {#grading-a-quality}
 
 English says how much of a quality something has with words like *very*, *slightly*, and *completely*. Ageben puts such a degree word in `/w/`, right before the adjective or adverb it grades, as Beginner did with `welazem` *very*. The table gives the few fixed degree words that fill that role, and each one works before an adverb as well as an adjective, so you can grade how something is done as well as what it is like.
 
@@ -41,7 +41,9 @@ English says how much of a quality something has with words like *very*, *slight
 >
 > "A fairly angry dog walks."
 
-One fixed word goes in `/h/` instead and grades the verb itself: **`hayurom`** *kind of* / *sort of* says the action happened only to some degree, not fully.
+### Grading the action itself {#grading-the-action}
+
+To grade the action rather than a quality, one fixed word goes in `/h/` and grades the verb itself: **`hayurom`** *kind of* / *sort of* says the action happened only to some degree, not fully.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English | Cue |

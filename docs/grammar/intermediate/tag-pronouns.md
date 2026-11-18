@@ -4,7 +4,7 @@ band: intermediate
 
 # Tag pronouns {#pronoun-tags}
 
-### Tag pronouns {#tag-pronouns}
+### Naming with a tag {#naming-with-a-tag}
 
 English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells O*. A **tag** is that label. You choose it, and it stays on the same person or thing however many others come and go. Write the role letter, `w`, a tag vowel, and an ending. (cue: `w` ≈ *we call it*: the label you and the listener agree on)
 
@@ -76,7 +76,7 @@ Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalazu
 
 A tag on a phrase, a list, or nothing lasts until it is assigned again or the conversation ends with a [goodbye](/word-endings#greeting). Distance does not blur it, and a [topic change](topic.md#topic-resets) does not reset it, so placeholder reasoning can run through other sentences, or a side topic, and back. A tag assigned inside a [dependent](/dependents#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
 
-#### Two tags at once {#tag-pairs}
+### Two tags at once {#tag-pairs}
 
 To refer to two tagged people or things together (*A and O*) in one word, stack their two tag vowels. There are six stacks, one for each pair of tags. The everyday pair is the first two: `zwaor` is *A and O*. The others are `zwaer` *A and E*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 

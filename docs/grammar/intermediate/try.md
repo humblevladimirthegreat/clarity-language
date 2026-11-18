@@ -4,8 +4,7 @@ band: intermediate
 
 # Try {#try-sitting}
 
-### Try {#try}
-<a id="attempt"></a>
+### Saying someone tries {#trying}
 
 English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails. To say that someone is trying to do something, put **`howa`** plus an ending on `/h/` before the ordinary verb; the ending says how committed the attempt is. The sentence says the attempt happens, not whether it works, so you can report an attempt without claiming how it turned out. (Cue: 🧪 A test tube tries a sample to see what happens.)
 
@@ -44,7 +43,7 @@ English *keeps trying*, *tries*, and *gives it a shot* say how far an attempt wi
 
 A trial run (`-r`) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
 
-#### Fallback (`xen`) {#fallback}
+### Failing that: a backup {#fallback}
 <a id="or-else"></a>
 
 For *try A; failing that, B*, put the clause join **`xen`** between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.

@@ -4,10 +4,7 @@ band: intermediate
 
 # Because and iff {#because-and-iff}
 
-### Because, iff, and only because {#only-because}
-<a id="because"></a>
-<a id="iff"></a>
-<a id="hinges"></a>
+### Choosing the hinge {#choosing-a-hinge}
 
 English *if*, *only if*, *if and only if*, and *because* each tie an outcome to a condition. Beginner gave you a hinge for each; the table sets them side by side and adds *only because*. Pick the hinge by which way the link runs (the condition is enough, the outcome needs it, or both) and by whether you claim the condition is a fact, so the listener hears both from the one word. Hinges take `-m`, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zahul` *a wall*; `zehom` *reciprocity*).
 
@@ -48,6 +45,8 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 > "Azozon walks only because of the rain."
 
 A noun after a because hinge names an act or a thing, not a person. For *because of Alazun*, say what Alazun did as a sentence after `blarl`. A name after the hinge is a named event or place (a storm, a city), never the person.
+
+### Unless and even if {#unless-and-even-if}
 
 English *unless* means *if … not*. Keep `thohem`, but use the stand-in `blurl` instead of `blarl` ([stand-in vowels](stand-in-vowels.md#stand-in)): the outcome holds unless the next sentence is true.
 
