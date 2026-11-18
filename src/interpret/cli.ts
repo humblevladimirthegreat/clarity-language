@@ -3,8 +3,13 @@
 import { readFileSync } from "node:fs";
 import { basename } from "node:path";
 
+import type { ClassifyTables } from "../parse/classify.js";
 import { loadDefaultTables } from "../parse/index.js";
+import { morphGlossLine } from "../parse/morph-gloss.js";
 import type { LexWord } from "../parse/types.js";
+import { ask, type Match } from "./ask.js";
+import { buildLog, type Log, type Turn } from "./log.js";
+import { throughAntecedent } from "./match.js";
 import { readText } from "./read.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
@@ -14,6 +19,12 @@ const USAGE = [
   "       node scripts/reading.mjs [--json] - < inputs.txt    (one input per line)",
   "  Prints each input, then one block per reading (nested readings indented): frames, scope order, claim, links, unread.",
   "  --json  print the readings as JSON, each LexWord reduced to its position and text",
+  "       node scripts/reading.mjs log [--json] [--window N] FILE",
+  "  Reads FILE as a conversation (one turn per line, an optional `Name:` sets the speaker, `#` lines and blanks skipped);",
+  "  prints each turn with its speaker, text, gloss, and readings. A line that does not parse goes to stderr and is skipped.",
+  "       node scripts/reading.mjs ask [--json] [--widen] [--infer] [--window N] FILE '<question>'",
+  "  Prints each reading in the FILE's log that answers the question: speaker, bound blanks, frame path (outermost first),",
+  "  unsettled pairs, switches used, then the glosses of the question and of the sentence. No match prints `no match`.",
 ].join("\n");
 
 const word = (w: LexWord): string => w.raw;
@@ -169,9 +180,13 @@ export function jsonReplacer(key: string, value: unknown): unknown {
 
 /** Circular-safe stringify: a repeated object prints as its id or `[seen]`. */
 export function readingsJson(readings: Reading[]): string {
+  return circularJson(readings);
+}
+
+function circularJson(value: unknown): string {
   const stack: unknown[] = [];
   return JSON.stringify(
-    readings,
+    value,
     function (this: unknown, key: string, value: unknown) {
       const v = jsonReplacer(key, value);
       if (v && typeof v === "object") {
@@ -185,8 +200,110 @@ export function readingsJson(readings: Reading[]): string {
   );
 }
 
+/** The turns of a conversation file: one per line, `Name:` sets the speaker, which carries to the lines after it. */
+export function parseConversation(text: string): { turns: (Turn & { line: number })[] } {
+  const turns: (Turn & { line: number })[] = [];
+  let speaker = "speaker";
+  text.split("\n").forEach((raw, i) => {
+    let line = raw.trim();
+    if (!line || line.startsWith("#")) return;
+    const named = /^([A-Za-z][A-Za-z0-9_-]*):\s*(.*)$/.exec(line);
+    if (named) {
+      speaker = named[1]!;
+      line = named[2]!.trim();
+    }
+    if (line) turns.push({ speaker, at: turns.length, text: line, line: i + 1 });
+  });
+  return { turns };
+}
+
+const glossOf = (text: string, tables: ClassifyTables): string => {
+  try {
+    return morphGlossLine(text, tables, { strict: true });
+  } catch (error) {
+    return `no gloss: ${error instanceof Error ? error.message.split("\n")[0] : String(error)}`;
+  }
+};
+
+/** Build the log of a conversation file; a turn that does not parse is reported on stderr with its line and skipped. */
+export function conversationLog(file: string, tables: ClassifyTables, window?: number): Log {
+  const { turns } = parseConversation(readFileSync(file, "utf8"));
+  const log = buildLog(turns, tables, window === undefined ? {} : { window });
+  for (const r of log.rejected) console.error(`${file}:${(turns[r.at] as { line: number }).line}: skipped: ${r.error.split("\n")[0]}`);
+  return log;
+}
+
+/** Text for `log`: each turn, then its readings. */
+export function formatLog(log: Log, tables: ClassifyTables): string[] {
+  const out: string[] = [];
+  for (const e of log.entries) {
+    out.push(`[${e.at}] ${e.speaker}: ${e.text}`, `  gloss ${glossOf(e.text, tables)}`);
+    out.push(...formatReadings(e.readings).map((l) => `  ${l}`));
+  }
+  return out;
+}
+
+const showTerm = (t: Term): string => formatTerm(throughAntecedent(t));
+
+/** Text for one match of `ask`. */
+export function formatMatch(m: Match, query: string, tables: ClassifyTables): string[] {
+  const out = [`match ${m.reading.id}${m.entry ? ` [${m.entry.at}] ${m.entry.speaker}` : ""}`];
+  for (const b of m.binding.blanks) out.push(`  bound ${b.at} = ${showTerm(b.term)}`);
+  m.path.frames.forEach((pf, i) => {
+    const lists = pf.lists.map((l) => ` ${l.standing}${l.rank ? `#${l.rank}` : ""}`).join("");
+    out.push(`  path ${i + 1} ${pf.how === "carried" ? "carried " : ""}${pf.reading.id}: ${formatFrame(pf.frame)}${lists}`);
+  });
+  for (const [a, b] of m.unsettled) out.push(`  unsettled ${frameName(a)} | ${frameName(b)}`);
+  if (m.switches.length) out.push(`  switches ${m.switches.join(", ")}`);
+  out.push(`  query gloss ${glossOf(query, tables)}`);
+  if (m.entry) out.push(`  sentence gloss ${glossOf(m.entry.text, tables)}`);
+  return out;
+}
+
+function conversation(command: "log" | "ask", raw: string[]): void {
+  let json = false;
+  let widen = false;
+  let infer = false;
+  let window: number | undefined;
+  const args: string[] = [];
+  for (let i = 0; i < raw.length; i++) {
+    const arg = raw[i]!;
+    if (arg === "--json") json = true;
+    else if (arg === "--widen" && command === "ask") widen = true;
+    else if (arg === "--infer" && command === "ask") infer = true;
+    else if (arg === "--window") {
+      window = Number(raw[++i]);
+      if (!Number.isInteger(window) || window < 0) (console.error(`--window needs a whole number\n${USAGE}`), process.exit(1));
+    } else if (arg.startsWith("--")) (console.error(`unknown flag ${arg}\n${USAGE}`), process.exit(1));
+    else args.push(arg);
+  }
+  if (args.length !== (command === "log" ? 1 : 2)) (console.error(USAGE), process.exit(1));
+  const tables = loadDefaultTables();
+  const log = conversationLog(args[0]!, tables, window);
+  const plain = (e: Turn): Turn => ({ speaker: e.speaker, at: e.at, text: e.text });
+  if (command === "log") {
+    if (json) console.log(circularJson({ turns: log.entries.map((e) => ({ ...plain(e), readings: e.readings })), rejected: log.rejected }));
+    else for (const l of formatLog(log, tables)) console.log(l);
+    return;
+  }
+  const query = args[1]!.trim();
+  let question: Reading | undefined;
+  try {
+    question = readText(query, tables, { text: "q" })[0];
+  } catch (error) {
+    console.error(`query: ${error instanceof Error ? error.message.split("\n")[0] : String(error)}`);
+    process.exit(1);
+  }
+  if (!question) (console.error("query: holds no sentence"), process.exit(1));
+  const matches = ask(question, log, { lexicon: tables, switches: { widen, infer } });
+  if (json) console.log(circularJson(matches.map((m) => ({ ...m, entry: m.entry ? plain(m.entry) : undefined }))));
+  else if (matches.length === 0) console.log("no match");
+  else for (const m of matches) for (const l of formatMatch(m, query, tables)) console.log(l);
+}
+
 function main(): void {
   const raw = process.argv.slice(2);
+  if (raw[0] === "log" || raw[0] === "ask") return conversation(raw[0], raw.slice(1));
   let json = false;
   let file: string | undefined;
   const args: string[] = [];
