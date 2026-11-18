@@ -72,7 +72,7 @@ The format is universal from the start; coverage grows from what the agent fails
 
 ## Open questions
 
-1. **Where the widening switches live.** `clingo-solver.md` question 3 recommends moving them to the solver; `structural-search.md` treats them as matcher switches. The store uses both, and they must agree. (a) Solver only, and the matcher asks it. (b) Both, checked equal by a test. **Recommendation:** no basis beyond that one definition is better than two; decide it there.
+1. **Where the widening switches live.** Settled in `clingo-solver.md` (user, 2026-11-18): the conditions for each step stay TypeScript functions that the matcher and the solver's translator both call, so the two agree by construction; `structural-search.md` keeps them as matcher switches.
 
 2. **Marking an entry withdrawn.** (a) Sidecar status only. (b) In Ageben, with a former or *no longer* form, so it is searchable under its own heading (`structural-search.md`, question 4). Which form would carry it is a grammar question for the user. **Recommendation:** (b) if an existing form fits without strain, else (a).
 
