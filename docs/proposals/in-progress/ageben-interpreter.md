@@ -83,7 +83,7 @@ The contract is `Host<E>` in [host.ts](../../../src/interpret/host.ts), and `ask
 | question | `ask`, then `holds`, then `verdict`; replies |
 | command, prohibition | resolves the roles with `refer` (several gives `refused` with *which one?*), then runs `handler` |
 
-**A framed command fails closed.** A command runs only when every frame on it, other than its force, passes `PASS_THROUGH` in `host.ts`: later act words, `call`, `attitude`, and a lone first-mention noun (`slot:newMember`, a single `thing` term with no number, no other binder on the command; [joins](/joins#new-member-in-a-command)). Any other frame makes the turn `beyond` and names it. No host widens the list. A whole-clause sake stays off it (open decision 21).
+**A framed command fails closed.** A command runs only when every frame on it, other than its force, passes `PASS_THROUGH` in `host.ts`: later act words, `call`, `attitude`, and a lone first-mention noun (`slot:newMember`, a single `thing` term with no number, no other binder on the command; [joins](/joins#new-member-in-a-command)). Any other frame makes the turn `beyond` and names it. No host widens the list. A whole-clause sake joins it in H7 (decision 21).
 
 **The default verdict** counts a match as plain when every frame on its path passes `passThrough`, with no unsettled pair and no switch, except that `attitude` together with `slot:newMember` is not plain (no page settles that pair). It cites [vocative](/speech-moves#vocative) and [joins](/joins#new-member-in-a-statement).
 
@@ -129,14 +129,15 @@ Phases 1–4 and phase 5's W1 are done. The rest of phase 5 is one orchestrator 
 
 Order: H7 → W2 → W3 → C1. H7 and W2 touch disjoint files (`src/parse/`, `src/interpret/` and grammar vs `src/game/`) and may run in parallel.
 
-#### H7: decision 23, an answer word or interjection closed by a period
+#### H7: decisions 21 and 23
 
 **Agent:** `proposal-worker`, `opus`, `high`.
-**May edit:** `docs/grammar/intermediate/sentence-linkers.md` (`#past-a-period`), `src/parse/**`, `src/interpret/**`, and their tests.
+**May edit:** `docs/grammar/intermediate/sentence-linkers.md` (`#past-a-period`), `docs/grammar/intermediate/for-a-sake.md` (`#whose-stake`), `src/parse/**`, `src/interpret/**`, and their tests.
 
 - Decided 2026-11-18 (23 a): *yes*, *no* or an interjection closed by a period is a whole move of its own, as a call is; the bare body after the period gets its own utterance and carries no polar link or interjection frame.
 - Grammar: extend the call sentence H6 added to `#past-a-period` (*A call closed by a period reaches only its own turn …*) and its table row to cover *yes* / *no* and interjections. Self-check against `docs/meta/doc-style.md#checklist`.
 - Code: H6 put the call case in `src/parse/sentence-parser.ts` `buildUtterances` (`afterCall`); widen that check. The parser accepts the same texts; the coverage ratchet stays 0 / 0. Tests: `yes.` then a bare body, and an interjection then a bare body, each give the body its own reading with no polar link or interjection frame; *yes* or an interjection before a body in one sentence is unchanged.
+- Decided 2026-11-18 (21 a): on a command, a whole-clause sake word (met, unmet, prescription or motive, with or without a `bl-` stake holder) is your remark on what the act serves, and the command asks only for the act, as on a question. Grammar: one sentence in [whose stake](/for-a-sake#whose-stake), beside the question paragraph. Code: the sake family joins `PASS_THROUGH` in `src/interpret/host.ts`, citing that anchor. Tests: a command with a sake word runs and calls its handler, and the same command under a condition is still `beyond`.
 - Leave alone the edge case H6 kept: a call plus a written act word, then a sentence linker, stays one utterance (the linker keeps the act).
 
 #### W2: wizard knowledge in the log
@@ -206,14 +207,7 @@ One per unit after its gate; the last carries the `AGENTS.md` rows and deletes t
 
 ## Open decisions
 
-Decisions 1–20, 22 and 23 are decided (23 (a) on 2026-11-18, carried out by H7); numbers stay stable because commits cite them.
-
-**21. A whole-clause sake on a command.** A `/th/` sake word on the clause (met `tha`, unmet `thu`, prescription `the`, motive `tho`, with or without a `bl-` stake holder) is a stance frame, so a command carrying one is `beyond`. [Whose stake](/for-a-sake#whose-stake) settles only questions: the sake word stays outside the question, *your own remark on what the act serves*, so the question asks only about the act. The page also says every sake stance is the speaker's view (*the reason is yours*; *what the act serves is your stake, as you see it*).
-- (a) Mirror the question rule with a sentence on that page: on a command, a sake word is your remark on what the act serves, and the command asks only for the act. The family joins the pass-through list, citing it.
-- (b) A sake on a command also asks the listener to act so that it serves the sake; it stays off the list, since a host cannot check that.
-- (c) Leave it unsettled and off the list until a sample needs it.
-
-**Recommendation:** (medium) (a). The page already treats every sake word as the speaker's stance, never the actor's, and (a) is the same reading it gives a question; (b) would make a sake mean one thing on a command and another everywhere else.
+All decisions (1–23) are decided; 21 (a) and 23 (a) on 2026-11-18, carried out by H7; numbers stay stable because commits cite them.
 
 ## Background
 
