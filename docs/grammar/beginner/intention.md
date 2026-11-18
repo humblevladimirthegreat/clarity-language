@@ -4,7 +4,7 @@ band: beginner
 
 # Intention {#intention}
 
-English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Ageben marks intention with a `/th/` stance word before an ordinary verb, and gives a forecast a different shape that always says what it rests on. So the listener can tell a chosen course from a claim about a future event.
+English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Ageben marks intention with a `/th/` stance word before an ordinary verb. So a plan never reads as a claim that the event will happen, and the listener can tell a chosen course from a prediction.
 
 
 ### Plan
