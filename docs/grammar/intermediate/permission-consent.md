@@ -56,6 +56,8 @@ English *may* and *must* often come from someone outside the act: a rule, a pers
 | `o` | `hwuvol` *the rules require* | `hwuvom` *you have to* | `hwuvor` *it's customary* / *is supposed to* |
 | `e` | `hwuvel` *the rules leave it optional* | `hwuvem` *it's up to you* | `hwuver` *nobody cares either way* |
 
+A requirement gives permission: if the rules require an act (`hwuvol`), they also allow it (`hwuval`), and the same holds for a person (`hwuvom`) and for custom (`hwuvor`).
+
 When the speaker is in the clause, the speaker's own say is their part, not `v`, so a bare `v` on `-m` has no reading there. So *I have to walk* says who requires it: the rules (`zuwen vowurol hwuvol.`), a person (`zuwen vowurol hwuvom blalazun.`), custom (`zuwen vowurol hwuvor.`), or you yourself (`zuwen vowurol hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
 
 To ask for permission, put the clause under [ask](/questions#question): `yem zuwen vehohel hwuvam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [`yael.`](/questions#polar-particle) (*go ahead*).
@@ -139,6 +141,8 @@ The reach vowel is [label reach](/label-seams#reach-vowels), the same vowels as 
 > "I promise Ahelan I'll walk."
 
 Only `v` and pair reach `e` take a `bl-` word.
+
+Two say words about the same act contradict each other only when one allows or requires it and the other forbids it, and they share everything else: the same source (the same `bl-` word, or none), whose say, reach, and ending. The rules cannot both allow (`hwuval`) and forbid (`hwuvul`) Azozon's walk, nor require and forbid it. A different person, part, ending, or reach never clashes, so a standing permission (`hwovam`) sits beside a ban on this one walk (`hwuvum`).
 
 ### Practice {#intermediate-practice}
 

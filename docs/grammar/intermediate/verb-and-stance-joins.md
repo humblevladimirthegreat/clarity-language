@@ -157,6 +157,8 @@ English can deny or weigh the grounds you give for a claim and keep the claim: *
 >
 > "Azozon walks, but not because of the rain."
 
+*Not because* rules the rain out as any part of the reason. So it also denies that the rain played a part ([`thahur`](/fault#fault) *partly because*) and that it is to blame (`thahul`).
+
 The other join vowels work on stance words the same way they work on a phrase list ([recap](/joins#join-type-vowel-series)). A rank join says which ground matters most: the first stance word is the main one.
 
 > `zazozon vowurol thahum blerulal thohem blalazun thol.`

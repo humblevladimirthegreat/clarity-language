@@ -18,6 +18,8 @@ To say something *could be* so without claiming that it is (*Alazun may be leavi
 
 Start with **`thomam`**, *may* / *could be*, as here. Without the `/th/` word, you are reporting that it happens. MAY goes only on a claim: a [command, request, or prohibition](/speech-moves#speech-act-beginner) is not a claim, so MAY has no reading there. As a plain noun the root keeps its own meaning (`zomal` *a thought*); the verb *think* is a different root, `vevemel`.
 
+A later plain sentence does not contradict a *may*. If you find out that Alazun is leaving, or that Alazun is not, saying so plainly settles the guess, since MAY never claimed either.
+
 **Compare with:** `zazozon vevemel.` is *Azozon thinks*, a report of the act of thinking; it does not mark anything as a guess.
 
 ### Follow-up endings (MAY) {#follow-up-endings-may}
