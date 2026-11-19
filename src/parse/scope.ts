@@ -496,8 +496,13 @@ function wordFrames(unit: HUnit, tables: ClassifyTables | undefined): ScopeFrame
   return found ? [found] : [];
 }
 
-/** A noun that brings in a new member: a plain first mention, concrete `-l` or abstract `-m` (word-endings.md#concrete-l), a dictionary root or an `x` compound. */
+/**
+ * A noun that brings in a new member: a plain first mention, concrete `-l` or abstract `-m` (word-endings.md#concrete-l),
+ * a dictionary root or an `x` compound; or a "new one" pointer in `-l` (pronouns.md#a-new-one), which brings in a new
+ * thing as the noun it copies would (joins.md#new-member-in-a-statement).
+ */
 function memberNoun(head: LexWord): boolean {
+  if (head.family.kind === "x" && head.family.xFamily === "pointer") return head.ending === "l";
   const kind = head.family.kind === "content" || (head.family.kind === "x" && head.family.xFamily === "compound");
   return kind && !head.bl && head.reading === "ordinary" && (head.ending === "l" || head.ending === "m");
 }

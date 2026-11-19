@@ -199,6 +199,14 @@ In a statement, a noun you mention for the first time, such as *a cat*, says the
 >
 > "Alazun sees a cat." (there is a cat, and Alazun sees it)
 
+A [new-one pointer](/pronouns#a-new-one) in `-l` brings in a new member the same way, because it stands for the noun it copies written out. Here `dwudel` says the same as writing `dodozel` *a dog* again: there is another dog, and Ahelan sees it.
+
+> `zazozon dodozel vayebel. zahelan dwudel vayebel.`
+>
+> z-Azozon | d-dog | v-see . z-Ahelan | d-←episode-patient.same.new | v-see
+>
+> "Azozon sees a dog. Ahelan sees one too."
+
 <a id="new-member-in-a-command"></a>
 In a command, a noun you mention for the first time, such as *a door*, asks the listener to act on one such thing, whichever one they pick.
 
