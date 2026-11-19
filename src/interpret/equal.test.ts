@@ -49,10 +49,13 @@ describe("sameReadings: the practice-item cases", () => {
     assert.equal(verdict("ul balazun zazozon ol bahelan vowurol.", "ol balazun zazozon ul bahelan vowurol."), "different");
   });
 
-  it("reordered /h/ words before a restrictor: the reading holds no occasion list, so the details compare as a set", () => {
-    // The old lint kept /h/ words in text order (`different`). The reading leaves the restrictor's occasion words as
-    // plain adverb details, so this compares `same`; recorded, not settled here.
-    assert.equal(verdict("zazozon hehohel hayebel huol vowurol.", "zazozon hayebel hehohel huol vowurol."), "same");
+  it("reordered /h/ words before a restrictor: the frame holds its occasion list in text order (restrictors.md#only-when-never-hal)", () => {
+    assert.equal(verdict("zazozon hehohel hayebel huol vowurol.", "zazozon hayebel hehohel huol vowurol."), "different");
+  });
+
+  it("an /h/ word right before a restrictor is its occasion; after it, a word of the clause (residue-and-former.md#former-climate)", () => {
+    assert.equal(verdict("zazozon hual vozuyel helam.", "zazozon helam hual vozuyel."), "different");
+    assert.equal(verdict("zazozon vowurol herulal hual.", "zazozon herulal hual vowurol."), "same");
   });
 
   it("does not match swapped role letters", () => {

@@ -121,6 +121,11 @@ export type ScopeFrame = {
   /** A holder's stance, NOTIONAL or intention: the frame the holder seam sits on (holder.md#naming-a-holder). */
   holderHost?: true;
   /**
+   * A `/h/` restrictor's occasions, in text order: the unbroken run of `/h/` words right before it
+   * (restrictors.md#only-when-never-hal). They are its list, not frames of the clause.
+   */
+  occasions?: LexWord[];
+  /**
    * A tone mark before the rest of the sentence (tone-marks.md#showing-your-tone). No word carries it: `word` is the first
    * word it colors, and its place in the text is just before that word.
    */
@@ -594,6 +599,30 @@ function rolePhrases(clause: Clause): NpCoord[] {
   });
 }
 
+/** An `/h/` word that is a restrictor (restrictors.md). */
+function isHRestrictor(unit: Unit | undefined): boolean {
+  return unit?.kind === "h" && unit.unit.word.pos === "h" && unit.unit.word.reading === "restrictor";
+}
+
+/**
+ * Each `/h/` restrictor's occasion list: the unbroken run of `/h/` words right before it, which it ends the way a join
+ * word ends a list (restrictors.md#only-when-never-hal). A word of another role, or an earlier restrictor, ends the run.
+ */
+export function restrictorOccasions(units: readonly Unit[]): Map<LexWord, LexWord[]> {
+  const out = new Map<LexWord, LexWord[]>();
+  units.forEach((unit, k) => {
+    if (unit.kind !== "h" || !isHRestrictor(unit)) return;
+    const list: LexWord[] = [];
+    for (let j = k - 1; j >= 0; j--) {
+      const before = units[j];
+      if (before?.kind !== "h" || before.unit.word.pos !== "h" || isHRestrictor(before)) break;
+      list.unshift(before.unit.word);
+    }
+    if (list.length) out.set(unit.unit.word, list);
+  });
+  return out;
+}
+
 function clauseFrames(clause: Clause, tables: ClassifyTables | undefined, blanks: ReadonlySet<LexWord>): ScopeFrame[] {
   const frames: ScopeFrame[] = [];
   const titled = titledPhrases(clause.units);
@@ -603,8 +632,15 @@ function clauseFrames(clause: Clause, tables: ClassifyTables | undefined, blanks
     const member = head ? frame("slot:newMember", head) : undefined;
     if (member) frames.push(member);
   }
+  const occasions = restrictorOccasions(clause.units);
+  const listed = new Set([...occasions.values()].flat());
   clause.units.forEach((unit) => {
-    if (unit.kind === "h") frames.push(...wordFrames(unit.unit, tables));
+    if (unit.kind === "h" && !listed.has(unit.unit.word)) {
+      for (const found of wordFrames(unit.unit, tables)) {
+        const list = occasions.get(found.word);
+        frames.push(list && found.key === "lexReading:restrictor" ? { ...found, occasions: list } : found);
+      }
+    }
     if (unit.kind === "hook" && unit.job === "zone") {
       const contrary = frame("hookJob:zone", unit.word);
       if (contrary) frames.push(contrary);

@@ -181,6 +181,8 @@ class Canon {
       hosted: frame.hosted ? this.term(frame.hosted) : undefined,
       inner: frame.inner ? multiset(frame.inner.map((f) => this.frame(f))) : undefined,
       details: frame.details ? this.details(frame.details) : undefined,
+      // A restrictor's occasions are its list, in text order, as a join's items are (restrictors.md#only-when-never-hal).
+      occasions: frame.occasions ? frame.occasions.map((d) => this.detail(d)) : undefined,
       member: frame.member,
       holderHost: frame.holderHost,
     };

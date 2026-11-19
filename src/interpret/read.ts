@@ -209,6 +209,8 @@ function fromScope(frame: ScopeFrame, tables: ClassifyTables | undefined): Frame
     family: frame.family,
     ...(frame.member ? { member: frame.member } : {}),
     ...(frame.holderHost ? { holderHost: true as const } : {}),
+    // A restrictor's occasion list; each word's detail joins it as the reader meets the word (readH).
+    ...(frame.occasions ? { occasions: [] } : {}),
     // A call names the addressee (speech-moves.md#vocative).
     ...(frame.key === "edge:vocative" ? { party: thing(frame.word) } : {}),
   };
@@ -810,6 +812,18 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
     readStanceList(unit, key, here);
     return;
   }
+  const restrictor = occasionOf(word, here, clause);
+  if (restrictor) {
+    // An occasion is a plain `/h/` word on its restrictor's list, whatever its own reading (restrictors.md#only-when-never-hal,
+    // residue-and-former.md#former-climate): a detail of the claim the restrictor points at.
+    const detail = detailOf("unit:h", word, "adverb");
+    for (const w of unit.modifiers) modifier(w, here, detail);
+    const hosted = hostedTerm(unit.hosted, here, clause);
+    if (hosted) detail.hosted = hosted;
+    here.reading.claim.details.push(detail);
+    restrictor.occasions!.push(detail);
+    return;
+  }
   const row = classOf(key);
   if (!row) {
     here.reading.frames.push(frameOf(key, word, here));
@@ -846,6 +860,12 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
   const hosted = hostedTerm(unit.hosted, here, clause);
   if (hosted) detail.hosted = hosted;
   here.reading.claim.details.push(detail);
+}
+
+/** The restrictor frame whose occasion list, in the resolve stage's scope record, holds `word`. */
+function occasionOf(word: LexWord, here: Here, clause: Clause): Frame | undefined {
+  const scoped = here.ctx.scopes.get(clause)?.frames.find((f) => f.occasions?.includes(word));
+  return scoped ? here.reading.frames.find((f) => f.occasions && f.words[0] === scoped.word) : undefined;
 }
 
 function readHook(unit: Extract<Unit, { kind: "hook" }>, here: Here, clause: Clause): void {

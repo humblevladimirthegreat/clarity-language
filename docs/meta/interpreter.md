@@ -61,7 +61,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | unit | `np` | structure | `clause.md#who-acts-and-the-action` | A role phrase: fills `claim.roles` by its role letter |
 | unit | `vp` | structure | `clause.md#who-acts-and-the-action` | Fills `claim.verb`; a joined verb list is a list term, its join read by its `joinSeries` row |
 | unit | `predicate` | structure | `predication.md#identity` | Clause-level `/ɡ/`: fills `claim.predicate` |
-| unit | `h` | detail:adverb | `clause.md#adverbs-h` | Default for a plain `/h/` word. An `/h/` word with a restrictor, ability, or overlay reading takes that word's row first |
+| unit | `h` | detail:adverb | `clause.md#adverbs-h` | Default for a plain `/h/` word. An `/h/` word with a restrictor, ability, or overlay reading takes that word's row first, except on a restrictor's occasion list, where it is this row whatever its reading (`residue-and-former.md#former-climate`) |
 | unit | `linker` | link | `sentence-linkers.md#sentence-linkers` | Points back to the one sentence before the period |
 | unit | `hook` | structure | `hooks.md#including-am-al` | Read by its `hookJob` row |
 | unit | `writingSpan` | frame:quote | `spans.md#writing` | A cite fills one role; its words are a nested reading that keeps its own act word and frames (`quote-contents.md#quote-acts`, `evidentiality.md#carry-forward`). Loan, opaque and mention spans are `literal` terms (`spans.md#loans`); an aside `th(…)` is a nested comment reading (`spans.md#asides-th`) |
@@ -80,7 +80,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | lexReading | `sake` | frame:sake | `sakes.md#word-shape` | Met, unmet, motive, prescription. On `/th/` it is about the whole claim (`for-a-sake.md#whose-stake`); on `/ɡ/` it nests under its noun. A `bl-` is whose stake (`party`). Feeling words read here too (`how-you-feel.md#feeling-word`) |
 | lexReading | `ability` | frame:ability | `can-and-cant.md#ability` | |
 | lexReading | `greeting` | frame:force | `word-endings.md#greeting` | A greeting turn |
-| lexReading | `restrictor` | frame:occasion | `restrictors.md#only-when-never-hal` | `/h/` limits the whole clause; `/w/` limits one adjective (`restrictors.md#on-the-following-adjective-w`) |
+| lexReading | `restrictor` | frame:occasion | `restrictors.md#only-when-never-hal` | `/h/` limits the whole clause; `/w/` limits one adjective (`restrictors.md#on-the-following-adjective-w`). An `/h/` restrictor's frame holds its occasions in text order (`occasions`): the unbroken run of `/h/` words right before it, which the resolve stage marks (`ScopeFrame.occasions`). An earlier restrictor ends the run, since each occasion is one simple content word (`restrictors.md#listed-occasions-open`). Each occasion stays a `unit:h` detail of the claim; the frame points at it, and it is no frame of its own |
 | lexReading | `overlay` | structure | `parser-pipeline.md#overlay-kinds` | Read by its `overlay` row |
 | lexReading | `mention` | structure | `spans-as-words.md#mention` | Fills a `literal` term |
 | lexReading | `sameRole` | detail:time | `same-role-words.md#before-and-after` | `A CITE B`: before, after, while, like between two phrases of one role |
@@ -369,9 +369,10 @@ No sentence states an order against another frame.
 
 ### occasion
 
-**Whole clause:** the `/h/` restrictors. On `/w/` they have adjective reach.
+**Whole clause:** the `/h/` restrictors. On `/w/` they have adjective reach. The frame holds its occasion list.
 
 - `restrictors.md#on-the-following-adjective-w`: "An `/h/` restrictor, by contrast, limits the whole clause."
+- `restrictors.md#only-when-never-hal` (its occasions): "occasion words first, the restrictor last, the way a join word ends a list"; "With a restrictor after them, they would be its occasions instead, since a restrictor's list is the whole run of `/h/` words right before it." An `/h/` word with a frame reading of its own is an occasion there, not a frame (`residue-and-former.md#former-climate`: "that spot holds the restrictor's list of occasions"), so `zazozon helam hual vozuyel.` and `zazozon hual vozuyel helam.` read differently.
 - `more-occasions.md#occasions-vs-a-dependent-when` (against `hinge`): "A restrictor lists occasion words; a whole sentence as the occasion takes a hinge word and **`blarl`**."
 - See `stance` and `holder` above for the statements against `occasion`.
 
@@ -631,7 +632,7 @@ A tool that needs what a sentence says reads readings; a tool that needs how it 
 - **Words by identity of form.** A word compares by its raw spelling, except where a rule below replaces it. A frame or detail compares by family or kind, key, construction, words, values and what it holds; its anchor is not compared.
 - **Roles by letter.** `z`, `d`, `b`, the predicate and the verb compare by slot, never by text order (`clause.md#role-letters`).
 - **Details and links as multisets.** Text order between details, between predicate items and between links carries no meaning. An `anaphor` link is left out: the pronoun term holds its bind (reader rule 6).
-- **Frames with their order.** Frames compare as a multiset; each `order` entry compares as (over, under, kind) by canonical frame. Two readings whose frames match but whose `order` differs are `different` (`clause.md#which-covers-which`).
+- **Frames with their order.** Frames compare as a multiset; each `order` entry compares as (over, under, kind) by canonical frame. Two readings whose frames match but whose `order` differs are `different` (`clause.md#which-covers-which`). A restrictor's `occasions` compare as a list in text order, as a join's items do: the restrictor ends its list the way a join word does (`restrictors.md#only-when-never-hal`), and a ranked restrictor ranks them by that order (`more-occasions.md#ranked-with-listed-occasions`).
 - **Unsettled pairs.** When the two texts put an `unordered` pair in different text order, the result is `unsettled`, naming the pair, whatever else differs: the grammar has not said whether that order matters ([reader rules](#reader-rules), rule 3).
 - **The omitted act word.** A sentence (and a quote's sentence) with no `force` frame takes the statement act, with the order the [pair table](#pair-table) gives `force` against each of its frames, citing `speech-moves.md#speech-act-statement-question-command`: `yal` written and `yal` omitted compare equal. This is a comparison rule; the reader still leaves the frame out (reader rule 4).
 - **Pronouns by referent.** A bound pronoun compares as its antecedent's canonical term, keeping its ending's sense: `-r` the one meant (through a chain of `-r` pronouns to the first mention, with the sentence it was met in, `pronouns.md#resume-r`), `-l` the antecedent written out with the pronoun's role letter (`pronouns.md#a-new-one`), `-m` a share of it (`pronouns.md#share`). A role compound keeps its reach and part (`roles.md#role-compounds`). An unbound pronoun compares by form.
