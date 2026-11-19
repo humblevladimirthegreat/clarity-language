@@ -841,12 +841,9 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
       if (frame.family === "sake" || frame.family === "holder") frame.party = hosted;
       else frame.hosted = hosted;
     }
-    if (frame.family === "holder" && !frame.party && word.family.kind === "x" && word.family.rightRoots?.length) {
-      // The holder word ends the way a noun for that person would (holder.md#naming-a-holder): `-n` is a name, marked
-      // named as the same name in a role is, and `-r` is "someone already named", resuming that name; it has no
-      // resolve-stage binding, so it is read as the name it resumes.
-      const named = word.ending === "n" || word.ending === "ln" || word.ending === "r";
-      frame.party = { kind: "thing", head: word, root: word.family.rightRoots.join(""), named, details: [] };
+    if (frame.family === "holder" && !frame.party) {
+      const party = holderParty(word, here);
+      if (party) frame.party = party;
     }
     return;
   }
@@ -860,6 +857,42 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
   const hosted = hostedTerm(unit.hosted, here, clause);
   if (hosted) detail.hosted = hosted;
   here.reading.claim.details.push(detail);
+}
+
+/**
+ * Whose view a holder seam word gives (holder.md#naming-a-holder). The word ends the way a noun for that person would:
+ * the topic pronoun is whoever the talk is about now, so it carries the topic it is bound to (topic.md#topic-pronoun);
+ * the listener is the listener term, as `zawan` is in a role; `-n` is a name, marked named as the same name in a role
+ * is; and `-r` is "someone already named", read as the name it resumes.
+ */
+function holderParty(word: LexWord, here: Here): Term | undefined {
+  const family = word.family;
+  if (family.kind !== "x" || !family.rightRoots?.length) return undefined;
+  if (here.ctx.anaphors.get(word)?.kind === "topic") return pronoun(word, here);
+  if (word.ending === "n" && family.rightRoots.length === 1 && family.rightRoots[0] === CLOSED.headphones) return { kind: "listener", word };
+  const named = word.ending === "n" || word.ending === "ln" || word.ending === "r";
+  return { kind: "thing", head: word, root: family.rightRoots.join(""), named, details: [] };
+}
+
+/**
+ * A holder seam word's frame where no scope record gave one (after `uom`, contrary-to.md#contrary-to-holder): the holder
+ * with its party, and its host stance with the stance word's own gloss (holder.md#naming-a-holder). On a clause the two
+ * are sibling frames the word-shape order puts the holder over; here no order is kept, so the host nests in the holder
+ * (rule 2), one place for the word.
+ */
+function holderFrame(word: LexWord, here: Here): Frame {
+  const holder = frameOf("xFamily:holder", word, here);
+  const party = holderParty(word, here);
+  if (party) holder.party = party;
+  const family = word.family;
+  const tables = here.ctx.options.tables;
+  const row = family.kind === "x" && tables ? tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? ""}`)) : undefined;
+  if (!row) return holder;
+  const host = frameOf(`overlay:${row.kind}:th`, word, here);
+  host.values = { ...holderHostValues(word, tables), ...host.values };
+  const member = row.kind === "evidential" ? "channel" : row.kind === "may" ? "may" : undefined;
+  holder.inner = [{ ...host, ...(member ? { member } : {}), holderHost: true }];
+  return holder;
 }
 
 /** The restrictor frame whose occasion list, in the resolve stage's scope record, holds `word`. */
@@ -880,7 +913,12 @@ function readHook(unit: Extract<Unit, { kind: "hook" }>, here: Here, clause: Cla
     case "zone": {
       const frame = placeFrame("hookJob:zone", word, "clause", here);
       const inner: Frame[] = [];
-      if (unit.zone) inner.push(frameOf(wordKey(unit.zone.word, unit.zone.closes), unit.zone.word, here));
+      if (unit.zone) {
+        const zone = unit.zone.word;
+        // A holder on the stance names whose plan or view the event goes against (contrary-to.md#contrary-to-holder).
+        if (zone.family.kind === "x" && zone.family.xFamily === "holder") inner.push(holderFrame(zone, here));
+        else inner.push(frameOf(wordKey(zone, unit.zone.closes), zone, here));
+      }
       if (unit.heldIntention) inner.push(frameOf(wordKey(unit.heldIntention), unit.heldIntention, here));
       if (inner.length) frame.inner = inner;
       return;

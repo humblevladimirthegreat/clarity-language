@@ -75,7 +75,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | hookJob | `stray` | structure | `social-ties.md#genitive` | Rejected by enforce; never reaches a reading |
 | hookJob | `span` | detail:range | `ranges.md#ranges` | A hook between two endpoints of one kind: the first end fills the role and the detail hosts the second (`zragel oel zrazal`). On a counted noun (`ranges.md#number-ranges`, `open-ranges.md#rays`: "put the endpoints on the counted noun"), a span between the noun's number and a second number (`zodozel gragel oel grazal`, `dodozel grawal uel gragel`) is a detail of that number detail, with both ends there: the first end is that detail's own word, and the range hosts the second as a `number` term. No second number is read as the clause's predicate |
 | hookJob | `resume` | link | `in-clause-hooks.md#hook-resume` | `-r` hook: points back to a landmark |
-| hookJob | `zone` | frame:contrary | `contrary-to.md#contrary-to-stance` | `uom` + the stance it holds as the opposing zone; that stance is the frame's `content`, not a frame on the claim |
+| hookJob | `zone` | frame:contrary | `contrary-to.md#contrary-to-stance` | `uom` + the stance it holds as the opposing zone; that stance is the frame's `content`, not a frame on the claim. A holder word there (`contrary-to.md#contrary-to-holder`) gives the holder frame with its `party`, and its host stance, with that stance's own gloss, in the holder's `inner`: no word-shape order is kept inside the zone, so the host nests (rule 2) |
 | lexReading | `ordinary` | structure | `clause.md#who-acts-and-the-action` | Read by its PoS slot |
 | lexReading | `sake` | frame:sake | `sakes.md#word-shape` | Met, unmet, motive, prescription. On `/th/` it is about the whole claim (`for-a-sake.md#whose-stake`); on `/ɡ/` it nests under its noun. A `bl-` is whose stake (`party`). Feeling words read here too (`how-you-feel.md#feeling-word`) |
 | lexReading | `ability` | frame:ability | `can-and-cant.md#ability` | |
@@ -108,7 +108,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | xFamily | `sake` | frame:sake | `sakes.md#word-shape` | The sake seam; read as `lexReading:sake` |
 | xFamily | `scope` | label | `label-seams.md#reach-vowels` | How far a label reaches |
 | xFamily | `lateral` | label | `viewpoint.md#viewpoint-laterals` | |
-| xFamily | `holder` | frame:holder | `holder.md#naming-a-holder` | Fixed by word shape: the seam sits on its stance; `party` is the holder, marked `named` on `-n` / `-ln` as the same name in a role is, and on `-r` ("someone already named": no resolve-stage binding yet, so it reads as the name it resumes) |
+| xFamily | `holder` | frame:holder | `holder.md#naming-a-holder` | Fixed by word shape: the seam sits on its stance; `party` is the holder, marked `named` on `-n` / `-ln` as the same name in a role is, and on `-r` ("someone already named", read as the name it resumes). The topic pronoun is a pronoun with the topic it is bound to as its antecedent (`topic.md#topic-pronoun`); the listener is the listener term, as `zawan` is in a role |
 | xFamily | `ability` | frame:ability | `can-and-cant.md#ability` | Inside the verb or adjective word; reaches that word's claim |
 | xFamily | `numeric` | label | `numeric-derivation.md` | Number + `x` + root |
 | xFamily | `compound` | label | `compounds.md#two-roots-one-word` | |

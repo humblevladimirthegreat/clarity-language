@@ -317,6 +317,33 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.equal(alone?.hosted?.kind, "clause");
   });
 
+  it("holder.md:84: a topic-pronoun holder carries the topic it is bound to", () => {
+    const reading = readText("xazozon theyomalen zalazun vudurul.", tables)[0]!;
+    const party = frame(reading, "holder").party;
+    assert.ok(party?.kind === "pronoun" && party.antecedent?.kind === "thing" && party.antecedent.root === "azozo");
+    assert.ok(reading.links.some((l) => l.key === "anaphor:topic"));
+  });
+
+  it("holder.md:9: a listener holder is the listener term, as `zawan` is in a role", () => {
+    const reading = readText("zalazun theyomawan vudurul.", tables)[0]!;
+    assert.equal(frame(reading, "holder").party?.kind, "listener");
+  });
+
+  it("contrary-to.md:113: a holder after `uom` has its party, and its channel with its gloss nests in it", () => {
+    const inner = (text: string): Frame[] => frame(readText(text, tables).at(-1)!, "contrary").inner ?? [];
+    const [holder] = inner("zazozon vowurol uom thebamalazun.");
+    const channel = holder?.inner?.[0];
+    assert.ok(holder?.family === "holder" && holder.party?.kind === "thing" && holder.party.named && holder.party.root === "alazu");
+    assert.ok(channel?.family === "stance" && channel.holderHost && channel.member === "channel");
+    assert.equal(channel?.values.gloss, "REPORTED");
+    const plan = inner("zazozon vowurol uom theyomalazun thagom.");
+    assert.deepEqual(plan.map((f) => f.family), ["holder", "intention"]);
+    assert.equal(plan[0]!.inner?.[0]?.values.gloss, "CLUES");
+    assert.equal(inner("zazozon vowurol uom theyomawan thagom.")[0]!.party?.kind, "listener");
+    const topic = inner("xazozon zazozon vowurol uom thebamalen.")[0]!.party;
+    assert.ok(topic?.kind === "pronoun" && topic.antecedent?.kind === "thing" && topic.antecedent.root === "azozo");
+  });
+
   it("contrary-to.md:104: a holder covers a later `although` hinge", () => {
     const reading = one("z-Azozon | v-walk | th-CLUES-Alazun | [th-although | bl-rain]");
     assert.deepEqual(orders(reading), ["holder>stance wordShape", "holder>hinge rule", "stance>hinge rule"]);
