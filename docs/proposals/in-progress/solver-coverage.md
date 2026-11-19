@@ -196,6 +196,8 @@ Full rules a subagent may open if the digest does not settle a question: [solver
 
 Phase 2's drafts, 2026-11-19, merged unedited from units R4a to R4d. Fixtures: `src/interpret/fixtures/draft-holders.txt`, `draft-because.txt`, `draft-maybe.txt`, `draft-lists.txt`, `draft-fill.txt`, `draft-links.txt`. The user confirms these rows (or names the ones to change) before phase 3 builds any; each unit's findings feed the build unit that takes its rows.
 
+**Confirmed, user, 2026-11-19:** every row R4a-1 to R4e-7 as drafted, except R4b-15's zone over a hinge (the `zone(Id, Z)` fact), which R4e's open decision 3 replaces. R4e may restate the encoding of R4b-16, R4b-17, R4b-25 and R4b-26; their meaning is confirmed.
+
 ### Orchestrator notes
 
 - **A question can answer itself** (R4c finding): `yel zodozel gamahum.` answers `yes` from an unrelated log; the question's witness facts seem to carry the predicate asked. A solver bug, not a row: B5 (the fill job's unit) or the first build unit touching `solve.ts` fixes it first.
@@ -763,9 +765,83 @@ Fixtures: `src/interpret/fixtures/draft-links.txt` (`lk1` to `lk41`). Probe file
 - **Not this area:** `zeyel zar uol boduvul vowurol.` (`unused hookJob:extraNoun` is a SHARED hook after `zar`, R4c-5's shape); `zodozel zogozel zal om bahelan …` (R4c-5); `zazozon vezuyol bahelan balazun bal hwubar.` (`joinSeries:a` in a say word's `b`, R4a); `… darl zalazun vowurol thahum blarl …` (a hinge inside a *tell* dependent, the because area); `carry:channel` (R4c-8).
 
 
+### R4e: a term for the conditional
+
+Added by the user, 2026-11-19, from R4b's open decision 2. Fixtures: `src/interpret/fixtures/draft-hinges.txt` (hg1 to hg23). R4b-1's `/ɡ/` outcome follows R4e-7 (the settled existence outcome), not a bare kind.
+
+#### R4e-1: the conditional as a claim term
+- **Kind:** copy (rows 5–7 restated so the conditional is a claim; `causation.md#if`, `#only-if`)
+- **Covers:** the missing term behind R4e-3 to R4e-7 and OD3; no sweep key on its own (hg1–hg4 already answer).
+- **Concludes:** one term per hinge reading, over its own slots: *if* `holds(if(c(Id), o(Id))) :- on(Id).`, *only if* `onlyif(c(Id), o(Id))`, *iff* `iff(c(Id), o(Id))` (one term each, not two; see OD4). A denied outcome writes `neg(o(Id))` in the term (`if(c(Id), neg(o(Id)))`). The rules of rows 5–7 keep their shape and their per-reading heads but take the term in place of `on(Id)`: *if* `holds(Out) :- holds(if(c(Id),o(Id))), fits(c(Id),P), holds(P).` and back `holds(neg(Cond)) :- holds(if(c(Id),o(Id))), fits(P,o(Id)), holds(neg(P)).`; *only if* row 6's two rules with `holds(onlyif(..))`; *iff* rows 5 and 6 each with `holds(iff(..))`. Twins: `fired(Id, if(c(Id),o(Id))) :- on(Id).`; each rule's `fired(Id, Out)` and `used(Id, Out, P)` plus `used(Id, Out, if(c(Id),o(Id)))`, so *why* walks from the outcome through the conditional to its reading. Marks nothing new (the hinge frame is already used).
+- **Classification:** `overlay:clause_hinge:th` / `:g` (frame:hinge): no new row; solver.md rows 5–7 and the reserved names gain `if`, `onlyif`, `iff`.
+- **Anchor:** `causation.md#if`: "whenever the condition holds, the outcome holds too … Saying *if* does not claim the condition is true"; `causation.md#only-if`: "*only if* … says the outcome cannot hold without the condition", "*if and only if* says both at once".
+- **Fixtures:** hg1 + hg2 `? zalazun vehohel.` → yes, because hg1, hg2 (now: yes); hg3 + hg2 and hg4 + hg2 → yes (now: yes). `solve-hinges.lp` regenerates with the term lines.
+
+#### R4e-2: matching conditionals by their slots
+- **Kind:** copy (solver.md Encoding, Fits; extends the slot facts to whole conditionals)
+- **Covers:** what lets R4e-3 and R4e-4 meet the conditional they name; the part a build most likely gets wrong.
+- **Concludes:** `finish()` adds, for each ordered pair of conditional terms B ≠ A (stated, denied, wrapped, MAY-chosen or a question's), `fits(TB, TA).` when A says at least B: (1) same name, or A is `iff` and B is `if` / `onlyif` / `iff`; (2) the same wrappers (`may(..)`, R4e-6) on each slot and the same outcome sign; (3) the slot claims match, with `sites` from each slot's own reading as now: *if* `match(cA, cB)` and `match(oB, oA)` (outcome reversed, `match(oA, oB)`, when the outcome is denied); *only if* `match(oA, oB)` and `match(cB, cA)`; *iff* both ways on both slots. No fits from the term texts: under a hinge a first mention is written as its kind (R1-3), and a conditional must still meet a fitting one worded otherwise. The generic `clash(Q) :- holds(neg(Q)), holds(P), fits(Q, P).` and its `view` form then clash a denied conditional with a stated one; no new clash rule.
+- **Classification:** none (solver encoding).
+- **Anchor:** solver.md Encoding, Fits: "`fits(Q, T)` means `match(Q, T)` succeeds: T says at least Q."
+- **Fixtures:** hg5 + hg6: clash (now: hg5 left `noRow overlay:clause_hinge:th`, hg6 left `noRow joinSeries:u`); hg5 then `? zalazun vehohel thohem blarl zodozel vowurol.` → yes, `? … zogozel vowurol.` → unknown (now: hg5 left, both `beyond`); hg5 + hg7 `? zalazun vehohel.` → yes (now: unknown, hg5 left). Needs Findings 1 first.
+
+#### R4e-3: a denied conditional
+- **Kind:** copy, resting on Open decision 1 (recommended (a))
+- **Covers:** `noRow joinSeries:u` with a hinge as the stance list's one item (`thohem thul blarl`, `thohem blerulal thul`, `thebem thul`, `thehom thul`); `thanam thohem thul blarl` (2 sweep readings, `say-reasons.md`) once D8 says what the denied channel adds.
+- **Concludes:** `holds(neg(if(c(Id),o(Id)))) :- on(Id).` (likewise `onlyif`, `iff`), no `holds` of the condition or the outcome, and no rule of rows 5–7. Clashes through R4e-2 with a conditional that says at least as much. Marks the hinge and the stance list's `u` join used.
+- **Classification:** `joinSeries:u` on `/th/` in a stance list (frame:polarity, list reach): no new row.
+- **Anchor:** `verb-and-stance-joins.md#stance-join-before-barl`: "The same works for every join vowel and every hinge."; `say-reasons.md#arguments`: "*Q doesn't follow from P* … Q **`thanam thohem thul blarl`** P | only that the link fails".
+- **Fixtures:** hg1 + hg8: clash; hg8 + hg2 `? zalazun vehohel.` → unknown; hg3 + hg9, hg4 + hg10: clash; hg1 + hg10: no clash (now: the denial left `noRow joinSeries:u`, no clash, unknown); hg1 + hg11: clash once D8 lands (now: hg11 left).
+
+#### R4e-4: a question over a hinge
+- **Kind:** copy, with a page sentence for the user to confirm
+- **Covers:** questions with a hinge, now `beyond` (`left q:… noRow overlay:clause_hinge:th`), order `edge:force > overlay:clause_hinge:th`.
+- **Concludes:** the question's reading gives the term `if(c(Q),o(Q))` (its claim switched off) and its slots; `follows` gives *yes* from a `holds(TA)` atom with `fits(TQ, TA)`, *no* from `holds(neg(TA))` with `fits(TA, TQ)`, as for any term, read in TypeScript from the R4e-2 facts. A conditional reached only by chaining two stated ones answers *unknown* (no hypothetical reasoning). Marks the hinge used.
+- **Classification:** `force` × `hinge` pair row: add "on a question, it asks whether the conditional holds".
+- **Anchor:** `questions.md#question`: "every word keeps the form it would have in a statement"; **Page sentence** for `causation.md#if`: "A question with an *if* hinge asks whether the condition is enough for the outcome, not whether either one holds."
+- **Fixtures:** hg1 then `? zalazun vehohel thohem blarl zazozon vowurol.` → yes; hg8 then the same → no; hg2 alone → unknown; hg1 + hg12 `? zahelan vezuvel thohem blarl zazozon vowurol.` → unknown (now: all `beyond`, also with `yel`).
+
+#### R4e-5: a holder's conditional
+- **Kind:** copy (solver.md Holders row 4)
+- **Covers:** holder + hinge, today rules inside the view with no term; a holder's denied conditional (`noRow joinSeries:u`).
+- **Concludes:** `holds(view(H, if(c(Id),o(Id)))) :- on(Id).`; Holders row 4 takes it in place of `on(Id)`: `holds(view(H,Out)) :- holds(view(H, if(c(Id),o(Id)))), fits(c(Id),P), holds(view(H,P)).` and the back rule likewise; a denial `holds(view(H, neg(if(..))))`, which clashes in the view through the generic `clash(view(H, Q))` fits form. Marks the holder, the hinge and the `u` join used.
+- **Classification:** `hinge` × `holder` pair row: no new row.
+- **Anchor:** `holder.md#what-the-holder-covers`: "The holder covers its clause and any dependent sentence inside it".
+- **Fixtures:** hg13 + hg14 `? zalazun theyomazozon vehohel.` → yes (now: yes); hg13 + hg15: clash in Azozon's view (now: hg15 left); hg1 + hg15: no clash.
+
+#### R4e-6: MAY with a hinge
+- **Kind:** copy (rows 15, 17, 18) and decision D5 (R4b-25, R4b-26)
+- **Covers:** rows 17 and 18 as built, now with the term; D5's only-if and iff rows.
+- **Concludes:** MAY over a hinge is row 15 on the term: `{ holds(if(c(Id),o(Id))) } :- on(Id).` and `holds(may(if(c(Id),o(Id)))) :- on(Id).`; the `maybe(Id)` gate goes for hinges (it stays for *or* lists), since the rules already wait on the term. A hinge over MAY is `if(c(Id), may(o(Id)))`, held plainly, with row 17's choice `{ holds(Out) } :- holds(if(c(Id),may(o(Id)))), fits(c(Id),P), holds(P).` and no back rule. MAY on the condition is `if(may(c(Id)), o(Id))` with row 18's body. D5: `onlyif` / `iff` take the same wrappers (R4b-25 condition, R4b-26 outcome). The wrappers keep "if A, maybe B" from meeting "if A, B" (R4e-2 (2)).
+- **Classification:** no new row.
+- **Anchor:** `causation.md#if`: "To make the outcome only a guess …, put MAY first … you claim neither the walking nor the sitting, only that the sitting could follow from the walking"; "MAY inside the condition makes the condition a chance".
+- **Fixtures:** hg16 + hg2 `? zalazun vehohel.` → unknown, `?~` → yes (now: the same, through the gate); hg16 + hg8: no clash in some world (now: hg8 left).
+
+#### R4e-7: a noun outcome under a `/ɡ/` hinge (1a, settled)
+- **Kind:** copy, pending the user's confirmation of 1a; supersedes R4b-1's bare kind term for a `/ɡ/` outcome
+- **Covers:** `noRow overlay:clause_hinge:g` with a common-noun outcome (8 sweep readings in `causation.md`, `why-allowed.md`, `finger-code.md`: `zerulal gohem blugalal.`, `zevelal gebem blelol.`, …); `zerulal gahum blugalal.` and `zegewam gahum blerulal.` under row 10.
+- **Concludes:** the outcome is the existence claim `zerulal.` makes, `isa(nm(Id,z), K)`; the condition the existence of its `bl-` noun, `isa(nm(Id,bl), K2)`, slot `c(Id)` holding that verbless claim. *If*: R4e-1's term and forward rule, `holds(isa(nm(Id,z),erula)) :- holds(if(c(Id),o(Id))), fits(c(Id),P), holds(P).`; no back rule, since the encoding has no denied existence term (*no K* is row 9's `clash(none(Id))`). *Only if*: the back rule only, giving `holds(isa(nm(Id,bl),ugala))`. *Because* (`gahum`): row 10 with both `isa` claims and `cause(..)`. A name as the outcome (`zazozon gohem blerulal.`) stays left (D15). Marks the hinge, its hosted term and the `slot:newMember` frame used.
+- **Classification:** `overlay:clause_hinge:g` (frame:hinge, on a noun): no new row.
+- **Anchor:** `causation.md#if`: "A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*."
+- **Fixtures:** hg17 + hg18 `? zerulal.` → yes; hg19 + hg20 `? zugalal.` → yes; hg21 `? zerulal.` and `? zugalal.` → yes; hg22 stays left (now: all left `noRow overlay:clause_hinge:g`, unknown).
+
+#### R4e findings
+
+1. **Reader gap in the translator: a first mention in a hinge's condition.** `zalazun vehohel thohem blarl zodozel vowurol.` is left `noRow overlay:clause_hinge:th`: `hinge()` rejects a condition with any frame (`cond.frames.length && !mayCond`), and its `slot:newMember` frame counts. The outcome takes one (`zodozel vehohel thohem blarl …` works). R4e-2's fixtures need the check to skip `slot:newMember`, as R1-3 already does for marking.
+2. **The brief's premise on fresh constants does not hold under a hinge.** A first mention under a hinge is written as its kind (R1-3, `ehohe(z(odoze))`), not `nm(Id, P)`, so two readings' conditions are equal texts today. R4e-2 still matches by slots, since a conditional must meet a fitting one worded otherwise and a stated `nm` sentence. R4e-7's `nm(Id,z)` / `nm(Id,bl)` outcome and condition are the exception, by 1a.
+3. **Rules per reading, not generic.** R4e-1 keeps each reading's rules and puts the term in their body. A generic `holds(O) :- holds(if(S)), fits(c(S),P), holds(P), out(S,O).` over `cond/out` facts gives the same answer sets, but needs a sign fact for denied outcomes and its own variants for the MAY wrappers and universals; every way the term holds keeps the reading's own slots, so the per-reading rule always fires. *Why* cites the conditional either way (`used(Id, Out, if(..))`). Pick the generic form only if a consumer must derive a conditional from another rule.
+4. **R4b-1 and R4e-7 disagree** on a `/ɡ/` outcome: R4b-1 drafts the bare kind `holds(rain)`, R4e-7 (1a) `holds(isa(nm(Id,z), erula))`. Keep one; 1a answers `? zerulal.` the way `zerulal.` already does.
+5. **`thanam thohem thul blarl`** puts both `thanam` and `thohem` in the stance list the `u` join closes; R4e-3 needs D8's channel-on-your-claim row (R4c) to say what denying DEDUCED adds before hg11 can build.
+
 ## Open decisions
 
 From phase 2's drafts. Each names its row; the user decides before phase 3 builds that row.
+
+**Settled, user, 2026-11-19:** every recommendation below is adopted, with these notes:
+- **R4b 2 is replaced.** A kind or event noun as the outcome of a `/ɡ/` hinge takes rows 5–7, with the existence claim of a verbless sentence (`holds(isa(nm(..), K))`) as the outcome; under `gahum` that is plain row 10. A person's name as the outcome stays left. The link becomes a claim term for the conditional, drafted by R4e (pending).
+- **R4c 6:** (a), with the page's wording raising it to high (`evidentiality.md#evidence-clause`: "You state the claim, the strength of your grounds, and the grounds themselves"). `grounds(E, C)` stays apart from `cause`.
+- **R4e 3:** (b), medium: the zone before a hinge covers the whole link, `holds(against(if(c(Id),o(Id)), Z)) :- on(Id).`, a marker with no clash; the page sentence goes on `contrary-to.md`, and the `hinge` × `contrary` pair-table gloss becomes *(the link goes against the plan)*. Every R4e recommendation is adopted.
+- **R4d O-4:** (a). `yaor` claims in the shared pool, with *for now* and the speaker in the notes. The pool has no per-speaker claims; a per-speaker layer (`said(Speaker, T)`, with `holds(T) :- said(_, T)`) waits for the group-views host policy, and `yaor` and the polar answers (R4d-2) are its first users.
 
 ### R4a open decisions
 
@@ -802,6 +878,13 @@ From phase 2's drafts. Each names its row; the user decides before phase 3 build
 **O-5: what does taking up or rejecting an option give?** `yael` / `yaem` / `yaer`, `yuel` / `yuem` / `yuer` after an offer or an *or* question. Options: (a) notes only, as R4d-3; (b) on an *or* list question, `yael` claims the offered item and `yuel` denies it. **Recommendation:** **(medium)** (a): accepting an offer is a turn act, not a claim about the world, and "this option" names no item the reader can pick.
 
 **O-6: NOTIONAL and what it carries.** `zazozon theyum vowurol. zazozon vehohel.` leaves `noRow overlay:notional:th` then `unused carry:notional`. Page: "The sentence now describes an imagined scene and makes no claim that it happens"; "The supposition carries, so every step after it stays supposed". Options: (a) a wrap like a view, `holds(view(notional, T))` (ending in notes), carried readings the same, inference inside it as holder rule 4, never `holds(T)`; (b) left `beyond`. **Recommendation:** **(medium)** (a): it keeps a supposition's steps checkable for clashes, as `notional.md` reasons from one, and never leaks into your claims.
+
+### R4e open decisions
+
+1. **What a denied conditional means** (`zalazun vehohel thohem thul blarl zazozon vowurol.`). Options: (a) the condition does not guarantee the outcome: `neg(if(..))`, no rule fires, nothing else claimed, clashes with the conditional; (b) classical: the condition holds and the outcome does not; (c) (a) plus the outcome claimed, reading "the claim itself still stands" (`verb-and-stance-joins.md#stance-joins`) as the bare outcome. **Recommendation:** **(high)** (a). `say-reasons.md#arguments` gives the form's meaning outright, "only that the link fails"; `causation.md` says no hinge claims its condition, which (b) would; and the stance join leaves standing only what the clause claimed, which under *if* is nothing but the link, so (c) adds a claim.
+2. **Hinges on universals** (`zual gogozel vezuvel thohem blarl zogozer guzemel.`, *every cat sleeps if it is sleepy*; R4b-16, R4b-17; a denial, hg23). Options: (a) rules as now, no term: the universal's conditional cannot be denied or asked; (b) one template term `if(c(Id),o(Id))` claimed once, with R4b-16's per-member rules gated on it; (c) (b) plus a member term `holds(if(c(Id,X),o(Id,X))) :- holds(if(c(Id),o(Id))), holds(isa(X,K)).` per stated member, with the per-member rules gated on that and R4e-2's fits over the `c(Id,X)` / `o(Id,X)` slots. **Recommendation:** **(medium)** (c): a question or denial about one cat's conditional (`zazozon vezuvel thohem blarl zazozon guzemel.`) then meets the universal, as a plain question meets row 8's instances. Settled by whether hg23's denial reads "not every cat" or "every cat, not if", which `universals-domains.md` does not say; until then hg23 stays left.
+3. **D14's zone over a hinge** (`uom thagom zazozon vowurol thohem blarl. zalazun vezuyol.`). D14 made it data for want of the term. Options: (a) stay data (left); (b) the conditional is still your claim, R4e-1's term and rules, plus `holds(against(if(c(Id),o(Id)), Z)) :- on(Id).`, a marker with no clash, as row 14 does for a plain claim; (c) `against` on the condition, as the pair-table reading gloss says "(the condition goes against the plan)". **Recommendation:** **(low)** (b): row 14's "the event is still your claim" carries over once the conditional is a claim, and a plan goes against events, not against a condition left unclaimed. Settled by `contrary-to.md` saying what a zone before a hinge covers; the pair-table gloss for (c) has no page sentence behind it.
+4. **One term for *only if*, or *if* reversed.** `onlyif(c, o)` (separate name, R4e-1) or `if(o(Id), c(Id))` (the same rules, so *Azozon walks only if it rains* would answer *yes* to *does it rain if Azozon walks?*). **Recommendation:** **(medium)** separate names: `causation.md` says the hinges "keep two questions apart: whether the condition is *enough* for the outcome, and whether the outcome *needs* it", and a learner asking about *enough* should not get *yes* from a stated *needs*. Rules stay the same either way.
 
 ## Background
 
