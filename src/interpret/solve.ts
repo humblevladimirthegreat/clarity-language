@@ -327,19 +327,18 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
   let program = translation.program;
   if (qReading && !keepClaim) {
     const qid = JSON.stringify(qReading.id);
-    // Keep the witness facts; drop the question's own claim.
-    const witness = new RegExp(`^(holds\\(isa\\(|count\\(|detail\\(|fired\\(${escape(qid)},(isa|count|detail)\\()nm\\(${escape(qid)},`);
+    // Keep the witness facts; drop the question's own claim, even where it is a fact about the witness
+    // (`yel zodozel gamahum.`: the dog's kind stays, *is caring* goes).
+    const witness = translation.witnesses.get(qReading.id) ?? new Set<string>();
     program = program
       .split("\n")
-      .filter((line) => !line.includes(`on(${qid})`) || line === `on(${qid}).` || witness.test(line))
+      .filter((line) => !line.includes(`on(${qid})`) || line === `on(${qid}).` || witness.has(line))
       .join("\n");
   }
   const ctx: Context = { translation: { ...translation, left }, options, question: qReading?.id, open: openReadings(program) };
   const asked = qReading && positive(qReading.claim);
   return { ok: true, translation: { ...translation, left }, program, qid: qReading?.id, claim: asked?.claim ?? qReading?.claim, negated: asked?.negated, ctx };
 }
-
-const escape = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const refused = (why: string, left: LeftOut[]): Answer => ({ verdict: "refused", because: [], switches: [], left, english: why });
 

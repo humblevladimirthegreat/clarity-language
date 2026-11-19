@@ -82,6 +82,23 @@ describe("solve: the worked example (Sketch, what the solver may conclude)", () 
   });
 });
 
+describe("solve: a question's witness carries no claim (solver.md#jobs, R4c-1)", () => {
+  // Only a first-mention noun's kind, count and details stay on; a lone-adjective claim on it is the question's own.
+  const unrelated = buildLog([{ speaker: "a", at: 0, text: "zazozon vowurol." }], tables);
+  for (const text of ["yel zodozel gamahum.", "yel zobonol garolem."]) {
+    it(`${text} after an unrelated claim: cannot say`, async () => {
+      assert.equal((await follows(unrelated, q(text), base)).verdict, "unknown");
+    });
+  }
+
+  it("the same claim stated answers it: yes", async () => {
+    const stated = buildLog([{ speaker: "a", at: 0, text: "zodozel gamahum." }], tables);
+    const a = await follows(stated, q("yel zodozel gamahum."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0"]);
+  });
+});
+
 describe("solve: clashes (Sketch, naming a clash)", () => {
   it("s1 closed: the two smallest clashes are {s1, s2, s3} and {s1, s4, s5}", async () => {
     const result = await clashes(log("clash", ["s1", "s2", "s3", "s4", "s5"]), base);

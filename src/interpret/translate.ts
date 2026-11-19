@@ -83,6 +83,11 @@ export type Translation = {
   notes: Note[];
   /** Each wrapped reading's wrap (a holder's view, a say word), so a question with the same wrap is matched inside it. */
   wraps: Map<ReadingId, Wrap>;
+  /**
+   * Each reading's witness lines: the facts its first-mention nouns bring (kind, count, details) and a first-mention
+   * holder's kind, never its claim. A question keeps only these on (solver.md#jobs).
+   */
+  witnesses: Map<ReadingId, Set<string>>;
   /** Each holder term and its English possessive (*Azozon's*), for a reply that names whose view clashes. */
   holders: Map<string, string>;
   /** Each reading in the program: its parts and the ones its rows used (all of them, or it would be in `left`). */
@@ -253,6 +258,7 @@ class Translator {
   newMembers = new Set<Term>();
   readonly wraps = new Map<ReadingId, Wrap>();
   readonly holders = new Map<string, string>();
+  readonly witnesses = new Map<ReadingId, Set<string>>();
   /** Each reading's turn speaker, when the log's entries are given. */
   readonly speakers = new Map<ReadingId, string>();
   /** Each reading's turn, by its place in the log's entries, when they are given. */
@@ -362,7 +368,7 @@ class Translator {
     this.consts.set(t, text);
     this.individuals.set(text, t);
     this.kinds.set(name(t.root), t);
-    this.rule(ctx, `isa(${text},${name(t.root)})`, []);
+    this.witness(ctx, `isa(${text},${name(t.root)})`);
     for (const detail of t.details) {
       const number = detailNumber(detail);
       if (number) {
@@ -370,11 +376,11 @@ class Translator {
         if (range) {
           this.ranges.set(range.text, range.range);
           range.ends.forEach((end) => this.value(end));
-          this.rule(ctx, `count(${text},${range.text})`, [], "count");
-        } else if (wordValue(number)) this.rule(ctx, `count(${text},${this.value(number)})`, [], "count");
+          this.witness(ctx, `count(${text},${range.text})`, "count");
+        } else if (wordValue(number)) this.witness(ctx, `count(${text},${this.value(number)})`, "count");
         continue;
       }
-      this.rule(ctx, `detail(${text},${this.detail(detail, ctx)})`, [], "detail");
+      this.witness(ctx, `detail(${text},${this.detail(detail, ctx)})`, "detail");
     }
     return text;
   }
@@ -437,6 +443,19 @@ class Translator {
     const firedBody = pred === "choice" ? [`holds(${head})`, ...body.map((l) => l.atom), on].join(", ") : pred === "gate" ? [head, ...body.map((l) => l.atom), on].join(", ") : atoms;
     ctx.out.push(`fired(${ctx.id},${c}) :- ${firedBody}.`);
     for (const l of body) if (l.premise) ctx.out.push(`used(${ctx.id},${c},${l.premise}) :- ${firedBody}.`);
+  }
+
+  /**
+   * A first-mention noun's fact as {@link rule} writes it, its lines kept as the reading's witness. Not under MAY's
+   * choice: a question there keeps no witness.
+   */
+  witness(ctx: Ctx, head: string, kind: "holds" | "count" | "detail" = "holds"): void {
+    const from = ctx.out.length;
+    this.rule(ctx, head, [], kind);
+    if (ctx.choice) return;
+    const lines = this.witnesses.get(ctx.reading.id) ?? new Set<string>();
+    ctx.out.slice(from).forEach((l) => lines.add(l));
+    this.witnesses.set(ctx.reading.id, lines);
   }
 
   // ── Readings ──
@@ -686,7 +705,7 @@ class Translator {
       text = `nm(${ctx.id},h)`;
       english = word.plural ? "some people's" : "someone's";
       this.kinds.set(name(party.root), party);
-      this.rule(ctx, `isa(${text},${name(party.root)})`, []);
+      this.witness(ctx, `isa(${text},${name(party.root)})`);
       this.holders.set(text, english);
       return text;
     }
@@ -904,7 +923,7 @@ class Translator {
         l.members.forEach((m, j) => {
           const enc = claim.predicate.includes(l) ? this.kind(m, `${place}${j + 1}`, ctx) : this.term(m, `${place}${j + 1}`, ctx);
           this.facts.add(`member(${ls},${enc},${j + 1}).`);
-          for (const d of shared ?? []) this.rule(ctx, `detail(${enc},${this.detail(d, ctx)})`, [], "detail");
+          for (const d of shared ?? []) this.witness(ctx, `detail(${enc},${this.detail(d, ctx)})`, "detail");
         });
         if (shared) this.use(...shared);
       });
@@ -1294,5 +1313,5 @@ export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogE
   for (const reading of log.readings) t.byId.set(reading.id, reading);
   for (const reading of log.readings) t.reading(reading);
   const program = t.finish();
-  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, holders: t.holders, accounting: t.accounting, site: (id) => t.site(id) };
+  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, witnesses: t.witnesses, holders: t.holders, accounting: t.accounting, site: (id) => t.site(id) };
 }
