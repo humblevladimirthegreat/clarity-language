@@ -8,6 +8,8 @@ Run **`node scripts/parse.mjs '<sentence>'`** directly (not `npm run parse` or `
 
 Run **`npm run -s reading -- '<sentence>'`** (or `node scripts/reading.mjs`; also `--file <path>`, `-` for stdin, one input per line) when you need to see what the interpreter reads rather than what a sentence means: each clause's frames in text order, the scope order it copies from the resolve stage (`order`, and any `unordered` pair), the claim (verb, `z`/`d`/`b`, predicate, details), links, and anything it could not place (`unread`). Nested readings print indented under their parent. `--json` prints the readings with each word reduced to its position and text. Use it for interpreter and host work and for checking a frame or a table row; use `parse.mjs --llm-prompt` (below) to work out what a sentence means.
 
+`--structure` (with `--llm-prompt`, experimental) adds the reader's structure lines to the prompt: per sentence with two or more whole-clause frames, what covers what, which pairs are not settled, and which frames carry over ([`src/interpret/prompt-notes.ts`](../../../src/interpret/prompt-notes.ts)). It is off by default pending an eval.
+
 ## Translating to English {#translating}
 
 Run **`node scripts/parse.mjs --llm-prompt '<sentence>'`** (several quoted inputs make one passage; `--loose` for no note) and follow the prompt it prints. It is self-contained: how to read the morph gloss, the tags and constructions that sentence uses, and the closest doc examples with their English. Use it instead of reading grammar pages to work out what a sentence means.
