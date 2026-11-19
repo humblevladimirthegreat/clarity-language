@@ -1,5 +1,5 @@
 /**
- * Retie Ageben in the docs, AGENTS.md / README.md, and source string literals
+ * Retie Ageben in the docs, AGENTS.md / README.md, source string literals and solver fixtures
  * from the map dumped by convert-word --lexicon (which already retied the lexicon CSVs).
  *
  * Run: npm run retie-docs
@@ -14,7 +14,7 @@
  * grammar cannot read or that was already applied.
  */
 import { execFileSync } from "node:child_process";
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
 import { CLOSED_ENTRIES, HOUSE_CAST, closedRootsIn, namedEnglish } from "../src/closed-roots.js";
@@ -40,6 +40,7 @@ import { lineNumberAt, peelChunk } from "../src/retie/tokens.js";
 import { lexiconConverted, retieTables } from "../src/retie/tables.js";
 import { verifyRetiedSpans } from "../src/retie/verify.js";
 import { REPO_ROOT, dataPath, grammarFile } from "../src/repo-paths.js";
+import { fixtureFromMarkdown, fixtureToMarkdown, goldenOf, listFixtures } from "../src/retie/fixtures.js";
 import { applyResumeKeeps, bareResumeDrift, newLintFindings, rootsInUse } from "../src/retie/drift.js";
 
 const markdownDirs = [
@@ -67,6 +68,8 @@ const SOURCE_SKIP = [
   join(REPO_ROOT, "src", "closed-roots.ts"),
   join(REPO_ROOT, "src", "closed-roots.test.ts"),
 ];
+/** Solver fixtures: Ageben one sentence to a line, retied as Markdown (src/retie/fixtures.ts). */
+const fixtureDir = join(REPO_ROOT, "src", "interpret", "fixtures");
 /** Frequency rank below which a word counts as common English for review. */
 const COMMON_ENGLISH_RANK = 30000;
 
@@ -114,7 +117,8 @@ function printUsage(): void {
 
 Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Ageben in
 docs/grammar/, docs/examples/, docs/meta/, docs/proposals/ (not rejected/), AGENTS.md, README.md, string literals
-under src/ (tests included), scripts/ and the grammar site, and overlay anchors.
+under src/ (tests included), scripts/ and the grammar site, solver fixtures (src/interpret/fixtures/*.txt;
+their solve-*.lp goldens are rebuilt), and overlay anchors.
 convert-word --lexicon already retied the lexicon CSVs; this only checks them.
 Default is a dry-run. --write refuses on a blocking finding (map collision, unreadable old
 spelling, map already applied, parse or resume-bind change), unless --force.`);
@@ -184,7 +188,12 @@ async function main(): Promise<void> {
       return false;
     },
   );
-  const sources = new Map(markdownFiles.map((file) => [file, readFileSync(file, "utf8")]));
+  // Solver fixtures go through the Markdown passes as pages, each Ageben line a code span.
+  const fixtureRaw = new Map(listFixtures(fixtureDir).map((file) => [file, readFileSync(file, "utf8")]));
+  markdownFiles.push(...fixtureRaw.keys());
+  const sources = new Map(
+    markdownFiles.map((file) => [file, fixtureRaw.has(file) ? fixtureToMarkdown(fixtureRaw.get(file)!) : readFileSync(file, "utf8")]),
+  );
   let total = 0;
   let blocking = 0;
   let warnings = 0;
@@ -383,7 +392,8 @@ async function main(): Promise<void> {
       continue;
     }
     total += count;
-    written.push({ file, text: relinked.text });
+    const raw = fixtureRaw.get(file);
+    written.push({ file, text: raw === undefined ? relinked.text : fixtureFromMarkdown(relinked.text, raw) });
   }
 
   // Lexicon anchor cells: overlay `anchor`, and the core-vocabulary `core` column.
@@ -449,6 +459,21 @@ async function main(): Promise<void> {
   const stamped = { ...(JSON.parse(mapText) as object), appliedAt: new Date().toISOString() };
   writeFileSync(options.mapPath, `${JSON.stringify(stamped, null, 2)}\n`);
   console.log(`Wrote ${summary}. Stamped ${relative(REPO_ROOT, options.mapPath)} as applied.`);
+
+  // A retied solve-* fixture's golden program is rebuilt: translate.test.ts writes a missing one.
+  const goldens = written.flatMap(({ file }) => {
+    const golden = fixtureRaw.has(file) ? goldenOf(file) : null;
+    return golden && existsSync(golden) ? [golden] : [];
+  });
+  if (goldens.length > 0) {
+    for (const golden of goldens) unlinkSync(golden);
+    console.log(`rebuilding ${goldens.length} solver golden(s): ${goldens.map((golden) => relative(REPO_ROOT, golden)).join(", ")}`);
+    try {
+      execFileSync("npx", ["--no-install", "tsx", "--test", "src/interpret/translate.test.ts"], { cwd: REPO_ROOT, stdio: "ignore" });
+    } catch {
+      console.warn("translate.test.ts failed after the rebuild: a retied fixture has a reading with no row; read npm test");
+    }
+  }
 
   // Files generated from the lexicon: regenerate rather than retie.
   for (const script of [["cheat-sheet-blocks", "--", "--write"], ["english-helper-wordnet"]]) {

@@ -51,14 +51,14 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 
 ## Tests {#tests}
 
-`retie-docs` rewrites string literals, template pieces and regex literals under `src/`, `scripts/` and the site, and tests that read the real lexicon move as a whole (fixture rows with their uses). These still need a hand pass after `npm test`:
+`retie-docs` rewrites string literals, template pieces and regex literals under `src/`, `scripts/` and the site, and tests that read the real lexicon move as a whole (fixture rows with their uses). It reties the solver fixtures (`src/interpret/fixtures/*.txt`) like doc examples, each Ageben line a code span, and rebuilds the `solve-*.lp` golden of each one it changes. These still need a hand pass after `npm test`:
 
 | What | Where (2026-10-19) | Why it cannot follow |
 |------|--------------------|----------------------|
 | IPA expectations | `src/tts/phonemes.test.ts`, `src/tts/plan.test.ts` | IPA is derived from the spelling, not a copy of it |
 | A spelling that must stay unknown | `src/lint/ageben-docs.test.ts` (`ezuzo`) | the new lexicon may publish it |
 | Lexicon coincidences | `src/find/query.test.ts`, `src/parse/lexicon-check.test.ts`, `src/parse/inspect.test.ts` (possible compound splits) | the expected match exists only in the old lexicon |
-| Solver fixtures | `src/interpret/fixtures/solve-*.txt` and `.lp`, the `.lp` rule cited in [solver.md](../solver.md) | the retie does not read `.txt` or `.lp` files; grep the old root and replace it by hand |
+| Roots in solver encoding | [solver.md](../solver.md) (`isa(X,oboza)`) | an encoding atom in a code span is not Ageben to the retie; grep the old root |
 | Tests of the retie tool on real roots | `src/retie/drift.test.ts`, parts of `src/retie/retie-tokens.test.ts` | `src/retie/` is never retied, so its own fixtures stay put |
 
 The `--write` run also lists test literals it only reports (`string literal … spells old root`): a bare root in a test is read as that file's own fixture, so words on it stay as written. When the file means the real root, name it through `CLOSED` (`assert.equal(root, CLOSED.walk)`); then the next retie moves it.
