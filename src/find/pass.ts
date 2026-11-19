@@ -40,6 +40,8 @@ export type FindOptions = {
   queries: FindQuery[];
   paths: string[];
   output: FindOutput;
+  /** `--all`: text output lists every hit instead of `FIND_SHOWN` of them (`output.ts`). */
+  all: boolean;
   maps: FieldMaps | undefined;
   write: boolean;
   writeTests: boolean;
@@ -91,7 +93,7 @@ export class FindUsageError extends Error {
   }
 }
 
-export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--over F] [--under G] [--unordered] [--diff REV] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--jobs N] [--json|--count] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
+export const FIND_USAGE = `usage: find.mjs [--word TERM] [--seq TERM|... TERM…] [--same-clause] [--construction ID|prefix*|/regex/] [--over F] [--under G] [--unordered] [--diff REV] [--values KEY | --constructions] [--map field=from:to[,…]] [--write] [--tests] [--check-ambiguity] [--jobs N] [--json|--count|--all] [paths…]\n  TERM is key=regex[,key!=regex…]; keys: ${TERM_KEYS.join(" ")}; --help lists each key and flag`;
 
 /** `--help`: every key with what it holds and sample values, every flag, and how a construction ID is built. */
 export const FIND_HELP = `find.mjs: search docs examples by parse, not spelling; with --map, rewrite matched letter slots.
@@ -133,8 +135,8 @@ Flags:
   --unordered            some reading has a frame pair no rule orders yet (the reader's unordered, nested readings included)
   --diff REV             parse and read the current docs with the parser and reader at commit REV and with the
                          current ones, and list each example whose frame order differs: - pairs only at REV,
-                         + pairs only now; other query flags pick the examples (current parse); --count, --json
-                         work; REV must be a13f294c or later (the reader copies scope order)
+                         + pairs only now; other query flags pick the examples (current parse); --count, --json,
+                         --all work; REV must be a13f294c or later (the reader copies scope order)
   --values KEY           count each value KEY takes (by word) over the matching examples, or every example
   --constructions        count each construction ID (by example) over the matching examples, or every example
   --map field=from:to,…  rewrite those letters on matched words (dry run; a swap is one map)
@@ -146,6 +148,8 @@ Flags:
   --json                 print hits as JSON: each word with its key fields, constructions, overlayKind,
                          frame, reach and clause; each hit with its clause numbers
   --count                print the number of matching examples (or of values with --values)
+  --all                  list every hit; by default a listing prints the count (per file), 10 hits
+                         spread over the files, and how many more (--json lists every hit; tallies print in full)
   paths…                 files or folders; default docs/grammar and docs/examples; pass src, scripts or a
                          .tsv to walk string literals and TSV cells
 Several query flags must all match.
@@ -198,6 +202,7 @@ export function parseFindArgs(args: string[]): FindOptions {
     queries: [],
     paths: [],
     output: "text",
+    all: false,
     maps: undefined,
     write: false,
     writeTests: false,
@@ -269,6 +274,7 @@ export function parseFindArgs(args: string[]): FindOptions {
     else if (arg === "--check-ambiguity") options.checkAmbiguity = true;
     else if (arg === "--json") options.output = "json";
     else if (arg === "--count") options.output = "count";
+    else if (arg === "--all") options.all = true;
     else if (arg === "--help" || arg === "-h") throw new FindUsageError(FIND_HELP, 0);
     else if (arg.startsWith("--")) throw new FindUsageError(`unknown flag ${arg}`);
     else options.paths.push(arg);

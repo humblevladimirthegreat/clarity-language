@@ -93,6 +93,10 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`,
     - **Small edits get a self-check.** When the phase's grammar edits total a few sentences and add no section, the one who wrote them checks them against the [checklist](../doc-style.md#checklist) in `doc-style.md` and no `style-editor` runs. A brief that writes grammar prose names that checklist, so the prose is right when it lands.
 14. **Send failures back to the owner.** When a gate fails, send it to the subagent that made the change, if it is still under the turn and token limits in step 1. Otherwise start a fresh subagent with the item, the failing `verify` lines, and the diff stat.
 15. **Keep one writer for `AGENTS.md`.** Subagents report the Owns-line changes; the orchestrator applies them at the end.
+16. **Probe in batches.** Research that tests many sentences (a triage of solver or parser gaps, a survey of what a construction reads as) costs turns, not reads, and every turn re-sends the context. Per probe, a subagent that probes one sentence at a time spends three or four calls (`find.mjs`, `reading.mjs`, a rerun).
+    - **The orchestrator probes what the subagents share.** Before it splits the work, it runs every item through one `node scripts/reading.mjs probe` file, and pastes the compact result (each item's `left` reason or verdict) into the briefs. Items that two areas both touch go to one of them.
+    - **The brief says to batch.** The subagent writes all its probes into one `probe` file (cases separated by `---`), runs it once, and re-probes only what surprised it. `find.mjs` lists ten examples unless asked for `--all`; the brief asks for `--all` only when the unit needs every one.
+    - **Split by the pages read**, as step 1 says: each research subagent gets the grammar pages of one area, and the brief carries the shared context (the note it extends, the decisions already settled) as a digest, not as files to read in full.
 
 ## Commits
 

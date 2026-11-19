@@ -23,6 +23,12 @@ describe("parseFindArgs", () => {
     assert.deepEqual(options.paths, ["docs"]);
   });
 
+  it("lists a sample by default; --all lists every hit, --count only counts", () => {
+    assert.equal(parseFindArgs(["--word", "role=v"]).all, false);
+    assert.equal(parseFindArgs(["--word", "role=v", "--all"]).all, true);
+    assert.equal(parseFindArgs(["--word", "role=v", "--count"]).output, "count");
+  });
+
   it("throws a usage error for a bad command line", () => {
     assert.throws(() => parseFindArgs([]), FindUsageError);
     assert.throws(() => parseFindArgs(["--word", "role=v", "--write"]), /--write needs --map/);

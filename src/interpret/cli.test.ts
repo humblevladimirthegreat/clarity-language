@@ -146,4 +146,65 @@ describe("reading CLI: solve, clashes and stands", () => {
     assert.equal(preferred.extensions.length, 2);
     assert.notEqual(run("stands", "--semantics", "nope", clash).status, 0);
   });
+
+  describe("probe", () => {
+    // Merged, the three turns clash ({every bird flies, Alazun is a bird, Alazun doesn't fly}); split, neither case does.
+    const file = join(dir, "probe.txt");
+    writeFileSync(
+      file,
+      [
+        "# first case: no separator",
+        "zual gebezel vewobol.",
+        "zalazun gebezel.",
+        "? yel zalazun vewobol.",
+        "?~ yel zalazun vewobol.",
+        "--- alone",
+        "Bo: zalazun vewobol vul.",
+        "zqqq qq.",
+        "? yel zalazun vewobol.",
+        "--- merged",
+        "zual gebezel vewobol.",
+        "zalazun gebezel.",
+        "zalazun vewobol vul.",
+      ].join("\n"),
+    );
+
+    it("each case is its own log: no clash split, a clash merged; ? and ?~ questions; a bad turn stops nothing", () => {
+      const out = run("probe", file);
+      assert.equal(out.status, 0, out.stderr);
+      const cases = out.stdout.split(/^(?====)/m);
+      assert.equal(cases.length, 3);
+      assert.match(cases[0]!, /^=== case 1 \(line 2\)\nno clash\n\? yel zalazun vewobol\. -> yes because t:0\.0 t:0\.1\n\?~ yel zalazun vewobol\. -> yes because t:0\.0 t:0\.1\n$/);
+      assert.match(cases[1]!, /^=== alone \(line 6\)\nskipped line 8: zqqq qq\.: /);
+      assert.match(cases[1]!, /^no clash$/m);
+      assert.match(cases[1]!, /^\? yel zalazun vewobol\. -> no because t:0\.0$/m);
+      assert.match(cases[2]!, /^clash t:0\.0 t:0\.1 t:0\.2 atom ewobo\(z\(alazu\)\)$/m);
+      // --possible asks a plain `?` with couldBe.
+      assert.match(run("probe", "--possible", file).stdout, /^\?~ yel zalazun vewobol\. -> no because t:0\.0$/m);
+    });
+
+    it("--program adds the translated program; --json prints one object per case", () => {
+      assert.match(run("probe", "--program", file).stdout, /^program:\n {2}% Generic rules/m);
+      const lines = run("probe", "--json", file).stdout.trim().split("\n").map((l) => JSON.parse(l));
+      assert.equal(lines.length, 3);
+      assert.equal(lines[1].label, "alone");
+      assert.equal(lines[1].rejected[0].line, 8);
+      assert.equal(lines[0].questions[1].job, "couldBe");
+      assert.deepEqual(lines[2].clashes.clashes[0].readings, ["t:0.0", "t:0.1", "t:0.2"]);
+    });
+
+    it("a solve fixture is one case, its readings tagged with the fixture labels", () => {
+      const out = run("probe", join(fixtures, "solve-clash.txt"));
+      assert.equal(out.status, 0, out.stderr);
+      assert.equal(out.stdout.match(/^===/gm)?.length, 1);
+      assert.match(out.stdout, /^clash t:0\.0=s1 t:0\.1=s2 t:0\.2=s3 atom /m);
+      assert.match(out.stdout, /^clash t:0\.0=s1 t:0\.3=s4 t:0\.4=s5 atom /m);
+    });
+
+    it("exits 1 only on a usage error or an unreadable file", () => {
+      assert.equal(run("probe", join(dir, "missing.txt")).status, 1);
+      assert.equal(run("probe").status, 1);
+      assert.equal(run("probe", "--give-up", file).status, 1);
+    });
+  });
 });

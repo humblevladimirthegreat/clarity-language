@@ -10,6 +10,7 @@ import type { LexWord } from "../parse/types.js";
 import { ask, type Match } from "./ask.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { throughAntecedent } from "./match.js";
+import { formatProbe, parseProbe, probeJson, runProbeCase } from "./probe.js";
 import { readText } from "./read.js";
 import { cannotSayDraft, clashReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
 import { clashes, couldBe, follows, giveUp, stands, type Answer, type Clash, type GiveUpResult, type Semantics, type SolveOptions, type StandsResult } from "./solve.js";
@@ -36,6 +37,12 @@ const USAGE = [
   "  Prints each smallest clash in the FILE's log, with its readings; --give-up adds a smallest set to give up.",
   "       node scripts/reading.mjs stands [--json] [--semantics grounded|stable|preferred] [--window N] FILE",
   "  Prints what stands in the FILE's log: each reading in, out or undecided, the attacks, and the extensions.",
+  "       node scripts/reading.mjs probe [--json] [--program] [--possible] [--defaults] [--closed] FILE",
+  "  FILE holds independent cases, each its own log: a line starting `---` starts one (the rest of the line is its label);",
+  "  turn lines as `log` reads them; `? text` asks with follows, `?~ text` with couldBe (--possible: `?` too). A solve",
+  "  fixture (`@ id` tags the next turn, `= English` skipped) is one case. Per case: turns that did not parse, left, notes,",
+  "  each smallest clash or `no clash`, each question's verdict, because, switches and left. --program adds the program;",
+  "  --json prints one JSON object per line per case. A failing case is reported and the others still run.",
 ].join("\n");
 
 const word = (w: LexWord): string => w.raw;
@@ -314,25 +321,27 @@ function conversation(command: "log" | "ask", raw: string[]): void {
 }
 
 /** The solver's options a solve or clashes command names. */
-type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; semantics?: Semantics; window?: number; args: string[] };
+type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; program: boolean; semantics?: Semantics; window?: number; args: string[] };
 
-type SolveCommand = "solve" | "clashes" | "stands";
+type SolveCommand = "solve" | "clashes" | "stands" | "probe";
 
 function solveFlags(command: SolveCommand, raw: string[]): SolveFlags {
-  const flags: SolveFlags = { json: false, possible: false, defaults: false, closed: false, giveUp: false, args: [] };
+  const flags: SolveFlags = { json: false, possible: false, defaults: false, closed: false, giveUp: false, program: false, args: [] };
+  const asks = command === "solve" || command === "probe";
   for (let i = 0; i < raw.length; i++) {
     const arg = raw[i]!;
     if (arg === "--json") flags.json = true;
-    else if (arg === "--possible" && command === "solve") flags.possible = true;
-    else if (arg === "--defaults" && command === "solve") flags.defaults = true;
-    else if (arg === "--closed" && command === "solve") flags.closed = true;
+    else if (arg === "--possible" && asks) flags.possible = true;
+    else if (arg === "--defaults" && asks) flags.defaults = true;
+    else if (arg === "--closed" && asks) flags.closed = true;
+    else if (arg === "--program" && command === "probe") flags.program = true;
     else if (arg === "--give-up" && command === "clashes") flags.giveUp = true;
     else if (arg === "--semantics" && command === "stands") {
       const s = raw[++i];
       if (s !== "grounded" && s !== "stable" && s !== "preferred") (console.error(`--semantics needs grounded, stable or preferred\n${USAGE}`), process.exit(1));
       flags.semantics = s;
     }
-    else if (arg === "--window") {
+    else if (arg === "--window" && command !== "probe") {
       flags.window = Number(raw[++i]);
       if (!Number.isInteger(flags.window) || flags.window < 0) (console.error(`--window needs a whole number\n${USAGE}`), process.exit(1));
     } else if (arg.startsWith("--")) (console.error(`unknown flag ${arg}\n${USAGE}`), process.exit(1));
@@ -410,6 +419,7 @@ export function formatClashes(result: { clashes: Clash[]; left: LeftOut[]; refus
 
 async function solveCommand(command: SolveCommand, raw: string[]): Promise<void> {
   const flags = solveFlags(command, raw);
+  if (command === "probe") return probeCommand(flags);
   const tables = loadDefaultTables();
   const log = conversationLog(flags.args[0]!, tables, flags.window);
   const options: SolveOptions = { lexicon: tables, defaults: flags.defaults, closedWorld: flags.closed };
@@ -443,10 +453,28 @@ async function solveCommand(command: SolveCommand, raw: string[]): Promise<void>
   if (answer.verdict === "refused") process.exitCode = 1;
 }
 
+/** `probe`: each case of the FILE run on its own; only a usage error or an unreadable FILE exits 1. */
+async function probeCommand(flags: SolveFlags): Promise<void> {
+  let text: string;
+  try {
+    text = readFileSync(flags.args[0]!, "utf8");
+  } catch (error) {
+    console.error(`${flags.args[0]}: ${error instanceof Error ? error.message : String(error)}`);
+    process.exit(1);
+  }
+  const tables = loadDefaultTables();
+  const options: SolveOptions = { lexicon: tables, defaults: flags.defaults, closedWorld: flags.closed };
+  const cases = parseProbe(text, flags.possible);
+  for (const [i, c] of cases.entries()) {
+    const result = await runProbeCase(c, tables, options, flags.program);
+    console.log(flags.json ? probeJson(result) : formatProbe(result, i).join("\n"));
+  }
+}
+
 async function main(): Promise<void> {
   const raw = process.argv.slice(2);
   if (raw[0] === "log" || raw[0] === "ask") return conversation(raw[0], raw.slice(1));
-  if (raw[0] === "solve" || raw[0] === "clashes" || raw[0] === "stands") return solveCommand(raw[0], raw.slice(1));
+  if (raw[0] === "solve" || raw[0] === "clashes" || raw[0] === "stands" || raw[0] === "probe") return solveCommand(raw[0], raw.slice(1));
   let json = false;
   let file: string | undefined;
   const args: string[] = [];

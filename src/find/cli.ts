@@ -4,6 +4,7 @@
  * construction ID is built.
  */
 
+import { formatCapped } from "./output.js";
 import { FIND_USAGE, FindUsageError, parseFindArgs, passFiles, type FindOptions } from "./pass.js";
 import { poolPass, poolScopeDiff } from "./pool.js";
 import { FindDiffError, loadRevParser } from "./rev-parser.js";
@@ -22,7 +23,10 @@ try {
   if (error instanceof FindUsageError) usage(error.message, error.code);
   throw error;
 }
-const { output, maps, list } = options;
+const { output, maps, list, all } = options;
+const print = (lines: string[]) => {
+  if (lines.length) console.log(lines.join("\n"));
+};
 /** The worker bundle `scripts/find.mjs` builds beside this one. */
 const workerUrl = new URL("./worker.bundle.mjs", import.meta.url);
 
@@ -52,7 +56,10 @@ if (options.diff) {
   const diffs = diffScopeRecords(atRev, now);
   if (output === "json") console.log(JSON.stringify(diffs, null, 2));
   else if (output === "count") console.log(diffs.length);
-  else for (const diff of diffs) console.log(formatScopeDiff(diff).join("\n"));
+  else {
+    const noun: [string, string] = ["example whose frame order differs", "examples whose frame order differs"];
+    print(formatCapped({ items: diffs, render: formatScopeDiff, file: (d) => d.file, noun, all }));
+  }
   process.exit(0);
 }
 
@@ -73,11 +80,13 @@ if (list) {
 } else if (output === "count") {
   console.log(results.length);
 } else if (maps) {
-  for (const r of replacements) console.log(`${r.file}:${r.line}  ${r.from} → ${r.to}`);
+  const render = (r: (typeof replacements)[number]) => [`${r.file}:${r.line}  ${r.from} → ${r.to}`];
+  print(formatCapped({ items: replacements, render, file: (r) => r.file, noun: ["replacement", "replacements"], all }));
   for (const s of skips) console.error(`${s.file}:${s.line}  skip: ${s.text}`);
   for (const r of reviews) console.error(`${r.file}:${r.line}  review: ${r.raw} (${r.message})`);
 } else {
-  for (const r of results) console.log(`${r.file}:${r.line}  ${r.shown}`);
+  const render = (r: (typeof results)[number]) => [`${r.file}:${r.line}  ${r.shown}`];
+  print(formatCapped({ items: results, render, file: (r) => r.file, noun: ["example", "examples"], all }));
 }
 
 if (parseErrors.length) process.exit(1);

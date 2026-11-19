@@ -178,6 +178,9 @@ The [loop](interpreter.md#the-loop) and host verdicts stay synchronous and never
 node scripts/reading.mjs solve [--json] [--possible] [--defaults] [--closed] [--window N] FILE '<question>'
 node scripts/reading.mjs clashes [--json] [--give-up] [--window N] FILE
 node scripts/reading.mjs stands [--json] [--semantics grounded|stable|preferred] [--window N] FILE
+node scripts/reading.mjs probe [--json] [--program] [--possible] [--defaults] [--closed] FILE
 ```
 
 `solve` runs `follows` (`couldBe` with `--possible`) and prints `verdict`; `reply` (the spelled yes / no / I can't say, or *these cannot all hold* for `both`); `english` when refused or beyond; `why` (each reading id with `[at] speaker: text`); `switches`; `left`. `clashes` prints each clash with its atom and readings, `no clash` when none, and the set to give up with `--give-up`. `stands` prints each reading in, out or undecided, the attacks and the extensions. A refused run exits 1. Replies come from `clashReply` and `giveUpReply` in `reply.ts`.
+
+`probe` (`probe.ts`) runs many independent cases from one FILE, each its own log: a line starting `---` starts a case (the rest of the line is its label), turn lines read as `log` reads them, `? text` asks with `follows` and `?~ text` with `couldBe` (`--possible` makes `?` use `couldBe`). Per case it prints turns that did not parse, `left` (reading, reason, frame key), `note`s, each smallest clash (readings and atom) or `no clash`, and each question's verdict, `because`, switches and its own `left`; `--program` adds the translated program, `--json` one JSON object per line per case. A solve fixture reads as one case, as `translate.test.ts` reads it: `@ id` tags the next turn's readings (`t:0.0=s1`), `= English` is skipped. A failing case is reported in place; only a usage error or an unreadable FILE exits 1.
