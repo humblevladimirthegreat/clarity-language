@@ -1,3 +1,6 @@
+// retie: skip
+// Span expansion reads no lexicon: these words are arbitrary spellings, not roots.
+
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 

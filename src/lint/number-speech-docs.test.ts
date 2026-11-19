@@ -1,3 +1,6 @@
+// retie: skip
+// Number speech is closed grammar, not the lexicon; the content words are arbitrary and pass through unchanged.
+
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 

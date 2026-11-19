@@ -1,3 +1,6 @@
+// retie: skip
+// Digit speech is closed grammar, not the lexicon: a retie never moves these spellings.
+
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
