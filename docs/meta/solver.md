@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** rows built for plain claims, holders, say words, *because*, contrary-to, MAY and *or*; jobs, CLI and browser entry shipped  
+**Status:** rows built for plain claims, holders, say words, *because* (with holders, MAY, restrictors and *or*), contrary-to, MAY and *or*; jobs, CLI and browser entry shipped  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md) through the [classification table](interpreter.md#classification-table). A row copies what a grammar anchor and its classification row already say; it never decides a reading.
 
 The solver answers questions that take more than one step over a log: *does this follow*, *could this be*, *what clashes*, *what to give up*, *why not*, *what stands*. It translates the log's [readings](interpreter.md#terms) to a Clingo program and runs it with `clingo-wasm`. This note owns the encoding, the translation table, the jobs and their options, what each job returns, and the CLI. The one-step matcher, its steps and its switches stay in [interpreter](interpreter.md#matching).
@@ -108,9 +108,15 @@ Each row reads one classification row and copies what its anchor states. A reply
 ### Because, fault and contrary-to
 
 10. **Because** (`overlay:clause_hinge:th` / `:g` with gloss `because`; `because-and-iff.md#choosing-a-hinge`): `holds(Out) :- on(Id).`, `holds(Cond) :- on(Id).`, `holds(cause(Cond, Out)) :- on(Id).` *Enough* adds no rule while both sides are claimed. A first-mention noun in the condition reads as its kind (no `isa` facts).
+   - *Inside a holder's view* (R4b-2, the `hinge` × `holder` pair row; `holder.md#what-the-holder-covers`): each term wrapped, `holds(view(H, Out))`, `holds(view(H, Cond))`, `holds(view(H, cause(Cond, Out)))`, never `holds(T)` (`zalazun theyomazozon vudurul thahum blerulal.`).
+   - *A condition with its own frame* (R4b-4, D2; `because-and-iff.md#choosing-a-hinge`): MAY, a holder or a say word in the `blarl` sentence makes the condition that clause's own term `C'`, `may(T)` (with row 15's choice `{ holds(T) } :- on(Id).`), `view(H, T)` or `say(.., T)`; then `holds(C')`, `holds(Out)`, `holds(cause(C', Out))` (`zazozon vowurol thahum blarl zalazun thomam vezuvel.`).
+   - *MAY right before the hinge* (R4b-5, D3; `fault.md#fault`, `thomam thahul blarl …`): `holds(Out)` and `holds(Cond)` stay claimed; a gate `{ maybe(Id) } :- on(Id).` takes the link and its `fault` / `share` marker, `holds(cause(C, O)) :- maybe(Id), on(Id).`, and `holds(may(cause(C, O))) :- on(Id).`
+   - *The hinge over MAY* (R4b-6, D11; the hinge and `blarth` first, `thahum blarth thomam …`): `holds(Cond)` (the earlier sentence, through `standInBack`), `{ holds(Out) } :- on(Id).`, `holds(may(Out))`, `holds(cause(Cond, may(Out)))`.
+   - *Under `hual` / `huam`* (R4b-7, D12, the `hinge` × `occasion` pair row; `usually-vs-must.md#how-things-work`): `hual` gives the three atoms, each with the marker `always(..)`, so `hal` on the outcome clashes; `huam` gates all three with `{ maybe(Id) } :- on(Id).`, and `maybe(Id) :- switch(defaults), on(Id).` With listed exceptions, or another restrictor, no row.
+   - *With an* or *list* (R4b-7, D12): the *or* bounds on the list (row 20 of *MAY and* or: each item a choice), and per item k, `holds(cause(C[k], O)) :- holds(C[k]), on(Id).` in the condition (`thahum blerulal blugalal bel`), or `holds(cause(C, O[k])) :- holds(O[k]), on(Id).` in the outcome, the other side claimed.
 11. **Not because** (`joinSeries:u` in the hinge's stance list; `verb-and-stance-joins.md#stance-joins`): `holds(Out) :- on(Id).` and `holds(neg(cause(Cond, Out))) :- on(Id).` The condition stays unstated: no `holds(Cond)`. It clashes with *partly because* and with fault, since all three endings share one link `cause(C, O)`.
 12. **Fault and share** (`because.fault` on `-l`, `because.share` on `-r`; `fault.md#fault`): row 10 plus the marker `holds(fault(C, O))` or `holds(share(C, O))`. `fault` is a marker only: it claims no fault from `thahum`, denies none, and never meets a say word.
-13. **Only because** (`thebem` then `thahum`): row 10 plus row 6 on the same condition. A stacked `thebem` with no `/b/` of its own shares the following `thahum`'s `hosted` term, and links its own `grounds` when the condition is the next sentence.
+13. **Only because** (`thebem` then `thahum`): row 10 plus row 6 on the same condition. A stacked `thebem` with no `/b/` of its own shares the following `thahum`'s `hosted` term, and links its own `grounds` when the condition is the next sentence. On a noun (R4b-3, `zerulal gebem gahum blugalal.`) the two hinges are the outcome noun's details: the translation table's row 20 for *because* (both `isa` claims and `cause(..)`) plus `holds(onlyif(c(Id), o(Id)))` and its back rule. A name as the outcome (`zazozon gahum blerulal.`, `zazozon gebem gahum blerulal.`) stays left (R4b-8, D15).
 14. **Contrary to** (`hookJob:zone`, frame:contrary; `contrary-to.md#contrary-to-holder`: "the event is still your claim"): `holds(T) :- on(Id).` and `holds(against(T, Z)) :- on(Id).`, with `Z` = `plan(H)` (a plan with no holder is the turn speaker's, `plan(sp("…"))`), `channel(Gloss, H)`, or `say(W, P, R, A, E[, to])`. A say-word zone uses the say word's own answer and also claims the wrapped say word, so it clashes with a say word of the other answer and *do the rules forbid it?* answers *yes*; a plan or channel zone gives only the marker, never a clash. The channel zone is not built yet, with or without a holder (see [the edge](#the-edge)).
 
 ### MAY and *or*: worlds
@@ -148,9 +154,9 @@ The attack relation. Arguments are the log's readings, `arg(Id) :- on(Id).`; a n
 
 Left out, by area (each stays in `left` or is named in an answer):
 
-- **Holders.** A holder after `uom` (`uom thebamalazun`): the reader's holder frame after `uom` carries no party and no channel gloss, a `readHook` zone gap in `read.ts`, so a contrary channel zone with a holder is out; the confirmed `channel(..)` zone (row 14 of *Because, fault and contrary-to*) is not built even with no holder. The `/ɡ/` stack on a noun (`gebem gahum`): the reader does not give it a row; it stays in `left`.
+- **Holders.** A holder after `uom` (`uom thebamalazun`): the reader's holder frame after `uom` carries no party and no channel gloss, a `readHook` zone gap in `read.ts`, so a contrary channel zone with a holder is out; the confirmed `channel(..)` zone (row 14 of *Because, fault and contrary-to*) is not built even with no holder.
 - **Say words.** A say word with a restrictor, or with a hinge and a universal together; a say word over `zul` or `zuam`; membership inside a say word in a holder's view; a whole-list denial or *no K* inside a say word or under a holder's own MAY.
-- **Because and contrary-to.** *Because* with MAY, a holder, a say word, a restrictor or *or*; contrary-to on anything but a plain claim.
+- **Because and contrary-to.** *Because* under a say word, a holder's own MAY or a stance number; `hal`, `ham` or listed exceptions with *because*; MAY or a restrictor beside a holder, *only because* or *not because*; *or* beside any other frame; a condition with its own frame beside any other frame; contrary-to on anything but a plain claim.
 - **MAY.** Only-if or iff with MAY, on the condition or under the hinge; MAY over members or a whole-list denial; MAY with a carried holder; MAY with a say word, universal or restrictor; MAY in a question (`yel … thomal`); `vaem vul`.
 - **Or.** `ue` and `oe` lists.
 - **Numbers.** Other stance-number markers (`th_N`, `th#N`).

@@ -814,3 +814,60 @@ describe("solve: the conditional as a claim term (R4e-1 to R4e-4, R4e-7, R4b-1)"
     assert.equal((await follows(b(["bc4"]), q("zazozon vowurol."), base)).verdict, "yes");
   });
 });
+
+describe("solve: because with a holder, MAY, a restrictor or or; the /ɡ/ stack (R4b-2 to R4b-8)", () => {
+  const b = (labels: string[], extra: string[] = []) => log("because", labels, extra);
+  const pairs = async (labels: string[], extra: string[] = []) => (await clashes(b(labels, extra), base)).clashes.map((x) => x.readings);
+  const verdict = async (labels: string[], text: string, opts: SolveOptions = base) => (await follows(b(labels), q(text), opts)).verdict;
+  const could = async (labels: string[], text: string) => (await couldBe(b(labels), q(text), base)).verdict;
+
+  it("R4b-2: because inside a holder's view: bc5 + bc6 clash in Azozon's view; the view is not your claim", async () => {
+    const r = await clashes(b(["bc5", "bc6"]), base);
+    assert.deepEqual(r.clashes.map((x) => x.readings), [["t:0.0", "t:0.1"]]);
+    assert.match(r.clashes[0]!.atom, /^view\(azozo,/);
+    assert.equal(await verdict(["bc5"], "zalazun vudurul."), "unknown");
+    assert.match(translate(b(["bc5"]), { lexicon: tables }).program, /^holds\(view\(azozo,cause\(erula,uduru\(z\(alazu\)\)\)\)\) :- on\("t:0.0"\)\.$/m);
+  });
+
+  it("R4b-3: the /ɡ/ stack on a noun is row 13 on the kinds; no clouds clashes", async () => {
+    assert.equal(await verdict(["bc7"], "zerulal."), "yes");
+    assert.deepEqual(await pairs(["bc7"], ["zul gugalal."]), [["t:0.0", "t:0.1"]]);
+    assert.match(translate(b(["bc7"]), { lexicon: tables }).program, /^holds\(onlyif\(c\("t:0.0"\),o\("t:0.0"\)\)\) :- on\("t:0.0"\)\.$/m);
+  });
+
+  it("R4b-4 (D2): a condition with its own MAY, holder or say word is that clause's own term", async () => {
+    assert.equal(await verdict(["bc8"], "zazozon vowurol."), "yes");
+    assert.equal(await verdict(["bc8"], "zalazun vezuvel."), "unknown");
+    assert.equal(await could(["bc8"], "zalazun vezuvel."), "yes");
+    assert.equal(await verdict(["bc9"], "zalazun vezuvel."), "unknown");
+    assert.equal(await verdict(["bc10"], "zazozon vowurol."), "yes");
+    assert.match(translate(b(["bc8"]), { lexicon: tables }).program, /^holds\(cause\(may\(ezuve\(z\(alazu\)\)\),owuro\(z\(azozo\)\)\)\) :- on\("t:0.0"\)\.$/m);
+  });
+
+  it("R4b-5 (D3): MAY right before because hedges only the link", async () => {
+    assert.deepEqual(await pairs(["bc11", "bc12"]), [["t:0.0", "t:0.1"]]);
+    assert.equal(await verdict(["bc13"], "zazozon vowurol."), "yes");
+    assert.equal(await verdict(["bc13"], "zalazun vezuyol."), "yes");
+    const program = translate(b(["bc13"]), { lexicon: tables }).program;
+    assert.match(program, /^holds\(may\(cause\(ezuyo\(z\(alazu\)\),owuro\(z\(azozo\)\)\)\)\) :- on\("t:0.0"\)\.$/m);
+    assert.match(program, /^holds\(fault\(ezuyo\(z\(alazu\)\),owuro\(z\(azozo\)\)\)\) :- maybe\("t:0.0"\), on\("t:0.0"\)\.$/m);
+  });
+
+  it("R4b-6 (D11): because over MAY: the condition claimed, the outcome possible", async () => {
+    assert.equal(await verdict(["bc14"], "zazozon vowurol."), "unknown");
+    assert.equal(await could(["bc14"], "zazozon vowurol."), "yes");
+    assert.equal(await verdict(["bc14"], "zalazun vezuvel."), "yes");
+    assert.match(translate(b(["bc14"]), { lexicon: tables }).program, /^holds\(cause\(ezuve\(z\(alazu\)\),may\(owuro\(z\(azozo\)\)\)\)\) :- on\("t:0.1"\)\.$/m);
+  });
+
+  it("R4b-7 (D12): always marks all three, often gates all three, or links each item where it holds", async () => {
+    assert.deepEqual(await pairs(["bc15", "bc16"]), [["t:0.0", "t:0.1"]]);
+    assert.match(translate(b(["bc15"]), { lexicon: tables }).program, /^always\(cause\(erula,owuro\(z\(azozo\)\)\)\) :- on\("t:0.0"\)\.$/m);
+    assert.equal(await verdict(["bc17"], "zazozon vowurol."), "unknown");
+    assert.equal(await could(["bc17"], "zazozon vowurol."), "yes");
+    assert.equal(await verdict(["bc17"], "zazozon vowurol.", { ...base, defaults: true }), "yes");
+    assert.equal(await verdict(["bc18"], "zazozon vowurol."), "yes");
+    assert.match(translate(b(["bc18"]), { lexicon: tables }).program, /^holds\(cause\(ugala,owuro\(z\(azozo\)\)\)\) :- holds\(ugala\), on\("t:0.0"\)\.$/m);
+    assert.deepEqual(translate(b(["bc19"]), { lexicon: tables }).left, []);
+  });
+});

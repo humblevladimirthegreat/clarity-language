@@ -92,6 +92,9 @@ describe("accounting guard: the drops it catches", () => {
 
   it("a person as a /ɡ/ hinge's outcome is left (R4e-7, D15)", () => {
     assert.deepEqual(left("zazozon gohem blerulal."), ["noRow overlay:clause_hinge:g"]);
+    // R4b-8 (D15): a person's name as the outcome of `gahum` or the `gebem gahum` stack stays left too.
+    assert.deepEqual(left("zazozon gahum blerulal."), ["noRow overlay:clause_hinge:g"]);
+    assert.deepEqual(left("zazozon gebem gahum blerulal."), ["noRow overlay:clause_hinge:g"]);
   });
 
   it("a plain and list, a hinge, and a resumed pronoun are kept", () => {
