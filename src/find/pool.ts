@@ -12,8 +12,7 @@ import { Worker } from "node:worker_threads";
 
 import type { ClassifyTables } from "../parse/classify.js";
 import { loadDefaultTables } from "../parse/index.js";
-import { parseWithTables } from "../parse/parse-core.js";
-import type { FindParse } from "./examples.js";
+import { CURRENT_PARSER } from "./examples.js";
 import { mergeRecords, scanFile, scopeFile, type FileRecord, type FindOptions } from "./pass.js";
 import type { ImportedParser } from "./rev-parser.js";
 import type { ScopeParser, ScopeRecord } from "./scope-diff.js";
@@ -44,7 +43,7 @@ export function runTask(task: PassTask, context: TaskContext): TaskReply {
   const { options, tables, revParser, cwd } = context;
   if (task.kind === "scan") return { kind: "scan", record: scanFile(task.file, options, tables, cwd) };
   if (task.rev && !revParser) throw new Error("find: a --diff task without the parser at REV");
-  const parser: ScopeParser = task.rev ? revParser! : { tables, parse: parseWithTables as FindParse };
+  const parser: ScopeParser = task.rev ? revParser! : { tables, ...CURRENT_PARSER };
   const records = scopeFile(task.file, options, parser, task.filter, cwd);
   return { kind: "scope", records, sawScope: revParser?.sawScope() ?? false };
 }

@@ -242,6 +242,7 @@ describe("parse field keys", () => {
       locus: null,
       overlayKind: null,
       frame: [],
+      reach: [],
       clause: -1,
       constructions: hitWord(ordinal!).constructions,
     });

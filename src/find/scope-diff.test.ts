@@ -28,7 +28,7 @@ describe("frameMatches", () => {
 });
 
 describe("scopeStrings", () => {
-  it("names each frame by family, member, spelling and chunk position, whatever the record's shape", () => {
+  it("names each frame by family, member, spelling and chunk position, whatever the reading's shape", () => {
     const yel = { raw: "yel", at: 0 };
     const tho = { raw: "thobatham", at: 7 };
     const hal = { raw: "hal", at: 1 };
@@ -37,13 +37,13 @@ describe("scopeStrings", () => {
         { word: yel, unit: "", position: 0 },
         { word: tho, unit: "", position: 3 },
       ],
-      scope: [
+      allReadings: [
         {
-          order: [{ over: { family: "sake", word: tho, extra: 1 }, under: { family: "force", word: yel } }],
-          unordered: [{ frames: [{ family: "stance", member: "may", word: tho }, { family: "occasion", word: hal }] }],
+          order: [{ over: { family: "sake", words: [tho], extra: 1 }, under: { family: "force", words: [yel] } }],
+          unordered: [[{ family: "stance", member: "may", words: [tho] }, { family: "occasion", words: [hal] }]],
         },
       ],
-    } as unknown as Pick<Example, "words" | "scope">;
+    } as unknown as Pick<Example, "words" | "allReadings">;
     assert.deepEqual(scopeStrings(example), {
       pairs: ["over sake thobatham@3 > under force yel@0"],
       unordered: ["unordered occasion hal@1 ~ stance/may thobatham@3"],

@@ -8,8 +8,7 @@ import { relative } from "node:path";
 
 import type { ClassifyTables } from "../parse/classify.js";
 import { loadDefaultTables } from "../parse/index.js";
-import { type Example, type FindParse } from "./examples.js";
-import { parseWithTables } from "../parse/parse-core.js";
+import { CURRENT_PARSER, type Example } from "./examples.js";
 import { matchScopeQuery, scopeStrings, type ScopeParser, type ScopeRecord } from "./scope-diff.js";
 import {
   fieldValues,
@@ -104,7 +103,11 @@ Keys (TERM is key=regex[,key!=regex…]; each regex must match a whole value; ke
   family       word family (an x word also its x family): content, joinMarker, hook
   overlay      sense form of the overlay or host overlay: ubol, ahum, ohem
   overlayKind  kind of that overlay in lexicon-overlays.csv: evidential, may, phasal
-  frame        whole-clause frame the word carries (resolve.scope), FAMILY and FAMILY/MEMBER: stance, stance/channel, binder
+  frame        any frame the reader gives the word, in any reading (whole-clause, held in another frame, on one
+               adjective, noun or list, a stance list's join), FAMILY and FAMILY/MEMBER: stance, stance/channel, binder
+  reach        where the reader put each of those frames: clause (a reading's own, whole-clause), nested (held in
+               another frame), list (a list term, a stance list's join), adjective (one adjective), noun (one term),
+               word (one other describing word); with frame= in one term, both hold of one frame
   unit         kind of the clause unit the word sits in: np, vp, hook
   raw          the spelling as parsed: zazozon, blarl, yel
   series       join-series vowels of a join word: a, ua, uo
@@ -124,14 +127,14 @@ Flags:
   --same-clause          every word of a --seq hit sits in one clause (the innermost Clause node: body
                          clause, clause-join member, or dependent; words outside every clause never match)
   --construction ID      the parse uses construction ID: an exact ID, a prefix*, or a /regex/
-  --over F --under G     some clause's scope order (resolve.scope) puts frame F over frame G; F and G are
+  --over F --under G     some reading's frame order (the reader's order, nested readings included) puts F over G; F and G are
                          FAMILY or FAMILY/MEMBER as --values frame lists them; highlights both words; one
                          side alone matches any partner; each pair is one more query
-  --unordered            some clause has a frame pair no rule orders yet (resolve.scope unordered)
-  --diff REV             parse the current docs with the parser at commit REV and with the current one, and
-                         list each example whose scope order differs: - pairs only at REV, + pairs only now;
-                         other query flags pick the examples (current parse); --count, --json work; REV must
-                         include src/parse/scope.ts (ff43d91d or later)
+  --unordered            some reading has a frame pair no rule orders yet (the reader's unordered, nested readings included)
+  --diff REV             parse and read the current docs with the parser and reader at commit REV and with the
+                         current ones, and list each example whose frame order differs: - pairs only at REV,
+                         + pairs only now; other query flags pick the examples (current parse); --count, --json
+                         work; REV must be a13f294c or later (the reader copies scope order)
   --values KEY           count each value KEY takes (by word) over the matching examples, or every example
   --constructions        count each construction ID (by example) over the matching examples, or every example
   --map field=from:to,…  rewrite those letters on matched words (dry run; a swap is one map)
@@ -141,7 +144,7 @@ Flags:
   --jobs N               worker threads, capped at the file count (default 1: scan inline); output is
                          the same with any N
   --json                 print hits as JSON: each word with its key fields, constructions, overlayKind,
-                         frame and clause; each hit with its clause numbers
+                         frame, reach and clause; each hit with its clause numbers
   --count                print the number of matching examples (or of values with --values)
   paths…                 files or folders; default docs/grammar and docs/examples; pass src, scripts or a
                          .tsv to walk string literals and TSV cells
@@ -159,6 +162,7 @@ Examples:
   node scripts/find.mjs --same-clause --seq 'frame=binder|occasion' ... overlayKind=evidential --count
   node scripts/find.mjs --construction '/^sentence\\.hUnitRule\\./'
   node scripts/find.mjs --values overlayKind
+  node scripts/find.mjs --word frame=stance,reach=adjective
   node scripts/find.mjs --over stance/channel --under occasion
   node scripts/find.mjs --diff HEAD~1 --count
   node scripts/find.mjs --word family=joinMarker,series=e|o --map series=e:o,o:e --write`;
@@ -423,7 +427,7 @@ export function passFiles(paths: string[]): string[] {
 export function scopePass(
   files: string[],
   options: Pick<FindOptions, "queries" | "sameClause">,
-  parser: ScopeParser = { tables: loadDefaultTables(), parse: parseWithTables as FindParse },
+  parser: ScopeParser = { tables: loadDefaultTables(), ...CURRENT_PARSER },
   filter = true,
   cwd = process.cwd(),
 ): ScopeRecord[] {
@@ -441,7 +445,7 @@ export function scopeFile(
   const out: ScopeRecord[] = [];
   const original = readFileSync(file, "utf8");
   const rel = relative(cwd, file);
-  const { examples } = collectFileSpans(file, original, parser.tables, parser.parse);
+  const { examples } = collectFileSpans(file, original, parser.tables, parser);
   for (const example of examples) {
     if (filter && options.queries.some((q) => matchQuery(example, q, options.sameClause) === null)) continue;
     const line = original.slice(0, example.index).split("\n").length;

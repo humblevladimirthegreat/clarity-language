@@ -2,9 +2,10 @@
  * Word-level queries over parsed examples: which words a parse contains, in
  * surface order, and whether they match a `key=value,…` term.
  */
+import type { Reading } from "../interpret/types.js";
 import { wordConstructions } from "../parse/construction-trace.js";
-import type { ClauseScope } from "../parse/scope.js";
-import type { LexWord, NumberMarker, NumberStem, ParseResult } from "../parse/types.js";
+import type { LexWord, NumberMarker, NumberStem } from "../parse/types.js";
+import { wordFrames, type FrameEntry } from "./frames.js";
 
 /** One word of a parsed example, tagged with its clause unit and surface position. */
 export type FoundWord = {
@@ -15,8 +16,10 @@ export type FoundWord = {
   position: number;
   /** Walk-order number of the innermost `Clause` node the word sits in; absent (or -1) outside every clause. */
   clause?: number;
-  /** Whole-clause frames the word carries in `resolve.scope`: `family` and, with a member, `family/member`. */
+  /** Every frame the word carries in the readings: `family` and, with a member, `family/member`. */
   frames?: string[];
+  /** The same frames one by one, each with its classification-table reach: what `frame=` and `reach=` match together. */
+  frameEntries?: FrameEntry[];
 };
 
 export const TERM_KEYS = [
@@ -27,6 +30,7 @@ export const TERM_KEYS = [
   "overlay",
   "overlayKind",
   "frame",
+  "reach",
   "unit",
   "raw",
   "series",
@@ -70,6 +74,8 @@ export type HitWord = {
   locus: string | null;
   overlayKind: string | null;
   frame: string[];
+  /** Where each frame the word carries reaches (`clause`, `nested`, `list`, `adjective`, `noun`, `word`; frames.ts), each once. */
+  reach: string[];
   /** Innermost clause number, or -1 outside every clause. */
   clause: number;
   /** Construction IDs the word carries on its own (`word.*`, `overlay.*`). */
@@ -132,28 +138,13 @@ function isClauseNode(key: string, node: unknown): boolean {
   return CLAUSE_KEYS.has(key) && typeof node === "object" && node !== null && Array.isArray((node as { units?: unknown }).units);
 }
 
-/** `family` and `family/member` for each whole-clause frame a word carries, by word identity. */
-function frameValues(scope: ClauseScope[] | undefined): Map<LexWord, string[]> {
-  const out = new Map<LexWord, string[]>();
-  for (const record of scope ?? []) {
-    for (const frame of record.frames) {
-      const values = out.get(frame.word) ?? [];
-      for (const value of [frame.family, frame.member ? `${frame.family}/${frame.member}` : undefined]) {
-        if (value && !values.includes(value)) values.push(value);
-      }
-      out.set(frame.word, values);
-    }
-  }
-  return out;
-}
-
 /**
  * Every word in a parse result, in surface order. `chunks` are the example's
  * whitespace chunks with punctuation peeled, used to place each word. Each word
- * gets the walk-order number of the innermost clause it sits in and the
- * whole-clause frames `resolve.scope` gives it.
+ * gets the walk-order number of the innermost clause it sits in and every frame
+ * the `readings` of the same parse give it (`frames.ts`).
  */
-export function flattenWords(result: unknown, chunks: string[]): FoundWord[] {
+export function flattenWords(result: unknown, chunks: string[], readings: Reading[] = []): FoundWord[] {
   const found: FoundWord[] = [];
   const seen = new Set<object>();
   let clauses = 0;
@@ -180,8 +171,11 @@ export function flattenWords(result: unknown, chunks: string[]): FoundWord[] {
   };
   walk(result, "", -1);
 
-  const frames = frameValues((result as Partial<ParseResult> | null)?.resolve?.scope);
-  for (const item of found) item.frames = frames.get(item.word) ?? [];
+  const frames = wordFrames(readings);
+  for (const item of found) {
+    item.frameEntries = frames.get(item.word) ?? [];
+    item.frames = [...new Set(item.frameEntries.flatMap((entry) => entry.values))];
+  }
 
   const used = new Set<number>();
   for (const item of found) {
@@ -255,6 +249,11 @@ export function pointerValue(word: LexWord): string | undefined {
   return word.family.kind === "x" ? word.family.pointerVowel : undefined;
 }
 
+/** The reach of each frame the word carries, each once. */
+export function reachValues(item: FoundWord): string[] {
+  return [...new Set((item.frameEntries ?? []).map((entry) => entry.reach))];
+}
+
 function first(values: string[]): string | null {
   return values[0] ?? null;
 }
@@ -280,6 +279,7 @@ export function hitWord(item: FoundWord): HitWord {
     locus: locusValue(word) ?? null,
     overlayKind: first(overlayKinds(word)),
     frame: item.frames ?? [],
+    reach: reachValues(item),
     clause: item.clause ?? -1,
     constructions: wordConstructions(word),
   };
@@ -307,6 +307,8 @@ export function fieldValues(item: FoundWord, key: TermKey): string[] {
       return overlayKinds(word);
     case "frame":
       return item.frames ?? [];
+    case "reach":
+      return reachValues(item);
     case "unit":
       return [item.unit];
     case "raw":
@@ -339,8 +341,27 @@ function matchesCondition(item: FoundWord, condition: Condition): boolean {
   return condition.negate ? !hit : hit;
 }
 
+const FRAME_KEYS = new Set<TermKey>(["frame", "reach"]);
+
+/** A `frame` or `reach` condition tested on one frame of the word. */
+function matchesFrameCondition(entry: FrameEntry, condition: Condition): boolean {
+  const values = condition.key === "frame" ? entry.values : [entry.reach];
+  const hit = values.some((value) => condition.pattern.test(value));
+  return condition.negate ? !hit : hit;
+}
+
+/**
+ * Every condition holds of the word. When a term has both `frame` and `reach` conditions they must hold of one frame,
+ * so `frame=polarity,reach=clause` does not match a *no K* binder word whose denial is held in the binder (`nested`).
+ */
 export function matchesTerm(item: FoundWord, term: Term): boolean {
-  return term.every((condition) => matchesCondition(item, condition));
+  const frameConditions = term.filter((condition) => FRAME_KEYS.has(condition.key));
+  const keys = new Set(frameConditions.map((condition) => condition.key));
+  if (keys.size < 2) return term.every((condition) => matchesCondition(item, condition));
+  return (
+    term.every((condition) => FRAME_KEYS.has(condition.key) || matchesCondition(item, condition)) &&
+    (item.frameEntries ?? []).some((entry) => frameConditions.every((condition) => matchesFrameCondition(entry, condition)))
+  );
 }
 
 /**
