@@ -52,17 +52,11 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 
 ## Tests {#tests}
 
-`retie-docs` rewrites string literals, template pieces and regex literals under `src/`, `scripts/` and the site, and tests that read the real lexicon move as a whole (fixture rows with their uses). It reties the solver fixtures (`src/interpret/fixtures/*.txt`) like doc examples, each Ageben line a code span, and rebuilds the `solve-*.lp` golden of each one it changes. A source file with `// retie: skip` on a line of its own is left out: the IPA tests (`src/tts/phonemes.test.ts`, `src/tts/plan.test.ts`) take it, since their spellings are arbitrary and their IPA is derived from them. These still need a hand pass after `npm test`:
-
-| What | Where (2026-10-19) | Why it cannot follow |
-|------|--------------------|----------------------|
-| A spelling that must stay unknown | `src/lint/ageben-docs.test.ts` (`ezuzo`) | the new lexicon may publish it |
-| Lexicon coincidences | `src/find/query.test.ts`, `src/parse/lexicon-check.test.ts`, `src/parse/inspect.test.ts` (possible compound splits) | the expected match exists only in the old lexicon |
-| Tests of the retie tool on real roots | `src/retie/drift.test.ts`, parts of `src/retie/retie-tokens.test.ts` | `src/retie/` is never retied, so its own fixtures stay put |
+`retie-docs` rewrites string literals, template pieces and regex literals under `src/`, `scripts/` and the site, and tests that read the real lexicon move as a whole (fixture rows with their uses). It reties the solver fixtures (`src/interpret/fixtures/*.txt`) like doc examples, each Ageben line a code span, and rebuilds the `solve-*.lp` golden of each one it changes. A source file with `// retie: skip` on a line of its own is left out: the IPA tests (`src/tts/phonemes.test.ts`, `src/tts/plan.test.ts`) take it, since their spellings are arbitrary and their IPA is derived from them. Tests whose case rests on the lexicon (an unpublished spelling, a possible compound split) pick their roots from it, so they pass after a retie. Only the retie tool's own tests on real roots (`src/retie/drift.test.ts`, parts of `src/retie/retie-tokens.test.ts`) still need a hand pass after `npm test`: `src/retie/` is never retied, so their fixtures stay put.
 
 The `--write` run also lists test literals it only reports (`string literal … spells old root`): a bare root in a test is read as that file's own fixture, so words on it stay as written. When the file means the real root, name it through `CLOSED` (`assert.equal(root, CLOSED.walk)`); then the next retie moves it.
 
-A new test of this kind should build its expectation from the lexicon (`CLOSED`, `loadDefaultTables()`) or use its own tables (`createClassifyTablesFromRows`), so the next retie leaves it passing.
+A new test that rests on the lexicon should pick its roots and build its expectation from it (`CLOSED`, `loadDefaultTables()`, as `src/parse/lexicon-check.test.ts` picks an unlisted compound stem) or use its own tables (`createClassifyTablesFromRows`), so the next retie leaves it passing.
 
 ## After the retie {#after}
 

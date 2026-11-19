@@ -55,7 +55,7 @@ describe("regex conditions", () => {
 
   it("match the whole value", () => {
     assert.deepEqual(raws("raw=om"), ["om"]);
-    assert.deepEqual(raws("raw=.*ham"), ["bahaham"]);
+    assert.deepEqual(raws("raw=b.*m"), ["bahaham"]);
   });
   it("take alternations and classes on any key", () => {
     assert.deepEqual(raws("family=hook,raw=al|om"), ["al", "om"]);
@@ -65,9 +65,11 @@ describe("regex conditions", () => {
     assert.deepEqual(raws("role=b,raw!=.*n"), ["bahaham"]);
   });
   it("match roots inside mid-word x compounds", () => {
-    const [word] = sentence("zuwedaxubudal.").words;
-    assert.ok(matchesTerm(word!, parseTerm("root=ubuda")));
-    assert.ok(matchesTerm(word!, parseTerm("family=compound,root=uweda")));
+    // Two roots picked from the lexicon, so the terms and the word move together in a retie.
+    const [left, right] = [...tables.published.keys()].filter((root) => /^[aeou][^aeou][aeou][^aeou][aeou]$/.test(root));
+    const [word] = sentence(`z${left}x${right}l.`).words;
+    assert.ok(matchesTerm(word!, parseTerm(`root=${right}`)));
+    assert.ok(matchesTerm(word!, parseTerm(`family=compound,root=${left}`)));
   });
 });
 

@@ -14,6 +14,22 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
 );
 
+// Roots are picked from the lexicon, so a retie that respells them leaves these cases standing.
+const FIVE = /^[aeou][^aeou][aeou][^aeou][aeou]$/;
+const fives = [...tables.published.keys()].filter((root) => FIVE.test(root) && tables.published.get(root)!.concrete);
+/** A stem `left + l + right` that is no lexicon word and has only that split: no other join letter follows a published prefix. */
+function unlistedStem(): { left: string; right: string; stem: string } {
+  for (const left of fives) {
+    for (const right of fives) {
+      const stem = `${left}l${right}`;
+      if (tables.published.has(stem) || tables.compounds.has(stem)) continue;
+      const otherSplit = [...stem].some((letter, i) => i !== left.length && "lmnr".includes(letter) && tables.published.has(stem.slice(0, i)));
+      if (!otherSplit) return { left, right, stem };
+    }
+  }
+  throw new Error("no unlisted two-root stem in the lexicon");
+}
+
 describe("inspectText", () => {
   it("tokenizes zazozon with PoS, named ending, and published gloss", () => {
     const result = inspectText("zazozon vowurol.", tables);
@@ -56,19 +72,21 @@ describe("inspectText", () => {
   });
 
   it("shows potential dictionary compounds for an unlisted stem", () => {
-    const result = inspectText("zebahelozezul.", tables);
+    const { left, right, stem } = unlistedStem();
+    const result = inspectText(`z${stem}l.`, tables);
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.word.reading, "unknown");
     assert.deepEqual(
       token.word.potentialCompounds?.map(({ left, join, right }) => [left, join, right]),
-      [["ebahe", "l", "ozezu"]],
+      [[left, "l", right]],
     );
-    assert.match(token.gloss, /^unknown root \(maybe bed-l scorpion\)$/);
+    // A split on -l glosses each root by its concrete sense.
+    assert.equal(token.gloss, `unknown root (maybe ${tables.published.get(left)!.concrete}-l ${tables.published.get(right)!.concrete})`);
     assert.ok(token.chips.includes("potential compound"));
 
-    const listed = inspectText("zebahehal.", tables).tokens[0];
+    const listed = inspectText(`z${[...tables.compounds.keys()][0]}l.`, tables).tokens[0];
     assert.equal(listed?.kind, "word");
     if (listed?.kind !== "word") return;
     assert.equal(listed.word.potentialCompounds, undefined);
