@@ -554,8 +554,8 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *set* (a group of things) | `zanalx` | books as a group ([group words](say-amounts.md#group-words)) |
 | *abortion* | `zubayalogahal` | a pregnancy ended |
 | *available* | `gwubewaxal` | can be the recipient of a gift |
-| *independent* | `gebem gahum blalazun gul` | does not depend on Alazun |
-| *independent* (of everyone) | `zazozon gebem gahum blur gul.` | depends on no other |
+| *independent* | `zazozon vowurol thebem blarl zalazun dazozon vagobol thul.` | walks, and does not need Alazun's support to |
+| *independent* (of everyone) | `zazozon vowurol thebem blarl dazozon vagobol thul.` | walks, and needs no one's support to |
 | *straight* (direct) | `gurom` | direction |
 | *hang* | `zazozon dalazun vawuloduhol.` | holds Alazun from above |
 | *editor* | `zwuzobewoluruyel` | doer of the editing |
@@ -582,7 +582,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *cent* | `zuderel g-100` | a hundredth of a dollar |
 | *middle* / *central* | `zabel gobom blorahol` | the heart of the road |
 | *international* | `zamahal gedam blahal blahal bal` | between two countries |
-| *dependent on* | `zazozon gebem gahum blalazun.` | depends on Alazun |
+| *dependent on* | `zazozon vowurol thebem thahum blarl zalazun dazozon vagobol.` | walks only because Alazun supports Azozon |
 | *favorite* | `zolamalugulol` | the one loved first |
 | *count* / *total up* | `zazozon vaborom.` | calculates |
 | *total* / *sum* (the amount) | `zeburam` | the addition |
