@@ -1,7 +1,7 @@
-# Draft fixture (R2, group (b)): holders (holder.md#naming-a-holder, #what-the-holder-covers).
+# Solver fixture (R2, group (b)): holders (holder.md#naming-a-holder, #what-the-holder-covers).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# Not a solve-* fixture: phase 3 (B6) renames it once its rows are confirmed and built.
-# A = Alazun left. b1 + b2: one holder's views clash. b1 + b3: two holders never clash. b1 + b4: a holder's view never clashes with your own claim.
+# b6, a holder on MAY, is in draft-maybe.txt until MAY has its row (B6b).
+# A = Alazun left. b1 + b2: one holder's views clash. b1 + b3: two holders never clash. b4 + b1 (in that order, since the holder carries forward): a holder's view never clashes with your own claim.
 
 @ b1
 zalazun theyomazozon vudurul.
@@ -23,11 +23,6 @@ zalazun vudurul vul.
 @ b5
 zalazun theyomazozon vudurul. zalazun vezuvel.
 = I gather Azozon thinks Alazun left. Alazun is asleep (in Azozon's view).
-
-# A holder on MAY (R2-3): MAY has no row yet.
-@ b6
-zalazun thomamazozon vudurul.
-= Maybe Azozon thinks Alazun left.
 
 # Holder terms (R2-4): the interlocutors, and two first-mention "someone"s.
 @ b7

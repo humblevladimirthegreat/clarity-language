@@ -1,6 +1,5 @@
-# Draft fixture (R2, group (b)): say words (permission-consent.md#say-words, #permission, #consent, #say-reach).
+# Solver fixture (R2, group (b)): say words (permission-consent.md#say-words, #permission, #consent, #say-reach).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# Not a solve-* fixture: phase 3 (B6) renames it once its rows are confirmed and built.
 # The act W = Azozon walks. No say word claims W (p3 alone does).
 
 @ p1

@@ -271,3 +271,84 @@ describe("solve: limits", () => {
     assert.deepEqual(splitAtom('used("t:0.0",f(a,"b,c"),isa(X,k))'), { name: "used", args: ['"t:0.0"', 'f(a,"b,c")', "isa(X,k)"] });
   });
 });
+
+describe("solve: holders (R2-1 rows 1 to 3, R2-2, R2-4, R2-5)", () => {
+  const b = (labels: string[]) => log("holders", labels);
+  const view = (text: string) => q(text);
+
+  it("b1 + b2: one holder's views clash, and the reply names the holder", async () => {
+    const result = await clashes(b(["b1", "b2"]), base);
+    assert.deepEqual(result.clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
+    assert.equal(result.clashes[0]!.atom, "view(azozo,uduru(z(alazu)))");
+    assert.equal(result.clashes[0]!.english, "In Azozon's view these cannot all hold: t:0.0, t:0.1.");
+    assert.equal((await giveUp(b(["b1", "b2"]), base)).giveUp.length, 1);
+    const a = await follows(b(["b1", "b2"]), view(fixture("holders").get("b1")!), base);
+    assert.equal(a.verdict, "both");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    assert.deepEqual((await whyNot(b(["b1"]), view(fixture("holders").get("b2")!), base)).clash?.readings, ["t:0.0"]);
+  });
+
+  it("two holders never clash (b1 + b3, b8 + b9), nor a view and your own claim", async () => {
+    assert.deepEqual((await clashes(b(["b1", "b3"]), base)).clashes, []);
+    assert.deepEqual((await clashes(b(["b8", "b9"]), base)).clashes, []);
+    // Your claim first: after b1 a bare claim would carry Azozon's view (row 2).
+    assert.deepEqual((await clashes(b(["b4", "b1"]), base)).clashes, []);
+  });
+
+  it("a view is not your claim: Alazun left? cannot say after b1", async () => {
+    assert.equal((await follows(b(["b1"]), q("zalazun vudurul."), base)).verdict, "unknown");
+  });
+
+  it("b5: a carried holder gives Azozon's view, not your claim", async () => {
+    assert.equal((await follows(b(["b5"]), q("zalazun vezuvel."), base)).verdict, "unknown");
+    const a = await follows(b(["b5"]), view("zalazun theyomazozon vezuvel."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.1"]);
+  });
+
+  it("b10 + b11: Azozon's own rule runs inside Azozon's view", async () => {
+    const a = await follows(b(["b10", "b11"]), view("zalazun theyomazozon vudurul."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    // Your own rule never reaches a view.
+    assert.equal((await follows(b(["b11"]), view("zalazun theyomazozon vudurul."), base)).verdict, "unknown");
+  });
+});
+
+describe("solve: say words (R2-1 row 4, R2-6 to R2-9)", () => {
+  const p = (labels: string[]) => log("say", labels);
+  const say = fixture("say");
+
+  it("p1 + p2: the rules allow and forbid the same walk", async () => {
+    const result = await clashes(p(["p1", "p2"]), base);
+    assert.deepEqual(result.clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
+    assert.equal(result.clashes[0]!.english, "These cannot all hold: t:0.0, t:0.1.");
+    assert.deepEqual((await clashes(p(["p7", "p2"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
+  });
+
+  it("another party, or another reach, never clashes (p4 + p5, p8 + p9)", async () => {
+    assert.deepEqual((await clashes(p(["p4", "p5"]), base)).clashes, []);
+    assert.deepEqual((await clashes(p(["p8", "p9"]), base)).clashes, []);
+  });
+
+  it("a say word's content stays wrapped: no say word claims its act, consent too", async () => {
+    assert.equal((await follows(p(["p1"]), q(say.get("p3")!), base)).verdict, "unknown");
+    assert.equal((await follows(p(["p6"]), q("zazozon dalazun vayebel."), base)).verdict, "unknown");
+  });
+
+  it("p2 + p3: the act against a stated ban is data, never a clash", async () => {
+    assert.deepEqual((await clashes(p(["p2", "p3"]), base)).clashes, []);
+  });
+
+  it("p7: a requirement gives permission; may Azozon walk? yes, citing p7", async () => {
+    const a = await follows(p(["p7"]), q(say.get("p1")!), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0"]);
+  });
+
+  it("the turn's speaker is the one with the say on -m: two speakers' say never clash", async () => {
+    const two = (speakers: string[]) => buildLog([say.get("p8")!.replace("hwovam", "hwuvam"), say.get("p9")!].map((text, at) => ({ speaker: speakers[at]!, at, text })), tables);
+    assert.deepEqual((await clashes(two(["a", "a"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual((await clashes(two(["a", "b"]), base)).clashes, []);
+  });
+});

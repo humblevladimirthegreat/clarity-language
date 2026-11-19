@@ -24,7 +24,7 @@ import clingo from "clingo-wasm";
 import type { Log } from "./log.js";
 import { match } from "./match.js";
 import type { StepLexicon } from "./steps.js";
-import { detailRange, inRange, translate, type LeftOut, type Translation } from "./translate.js";
+import { detailRange, inRange, translate, unwrapText, type LeftOut, type Translation } from "./translate.js";
 import type { Claim, Detail, Reading, Term } from "./types.js";
 import { detailNumber, wordValue } from "./value.js";
 
@@ -185,6 +185,9 @@ function openReadings(program: string): Set<string> {
   return out;
 }
 
+/** `fired` ids of generic rules that are not readings: a requirement's permission (R2-8), an act against a ban (R2-9). */
+const GENERIC_IDS = new Set(["requires", "against"]);
+
 /** Walk from conclusions back through `fired` and `used` to the readings that produced them. */
 function explain(model: Model, start: readonly string[], ctx: Context): { because: string[]; switches: SolveSwitch[] } {
   const ids = new Set<string>();
@@ -202,7 +205,9 @@ function explain(model: Model, start: readonly string[], ctx: Context): { becaus
     }
     for (const id of by) {
       if (id === "widen") switches.add("widen");
-      else if (id !== ctx.question) {
+      else if (GENERIC_IDS.has(id)) {
+        // A generic rule (R2-8, R2-9): no reading of its own; its premises name them.
+      } else if (id !== ctx.question) {
         ids.add(id);
         if (ctx.options.defaults && ctx.open.has(id)) switches.add("defaults");
       }
@@ -216,6 +221,21 @@ function explain(model: Model, start: readonly string[], ctx: Context): { becaus
 
 /** The conclusions a `clash` atom rests on. */
 function clashPremises(model: Model, atom: string): string[] {
+  const { name, args } = splitAtom(atom);
+  // R2-2: inside one holder's view, the view and its denial (or a view the denied term fits).
+  if (name === "view" && args.length === 2) {
+    const [h, p] = args as [string, string];
+    const denial = `view(${h},neg(${p}))`;
+    if (model.holds.has(atom) && model.holds.has(denial)) return [atom, denial];
+    const met = (model.fits.get(p) ?? []).map((t) => `view(${h},${t})`).find((t) => model.holds.has(t));
+    return met ? [denial, met] : [atom];
+  }
+  // R2-7: a ban and the grant or demand it meets, with the same party, part, reach and ending.
+  if (name === "say" && args[3] === "u") {
+    const acts = [args[5]!, ...(model.fits.get(args[5]!) ?? [])];
+    const other = ["a", "o"].flatMap((a) => acts.map((t) => `say(${[...args.slice(0, 3), a, args[4], t, ...args.slice(6)].join(",")})`)).find((t) => model.holds.has(t));
+    return other ? [atom, other] : [atom];
+  }
   const denial = `neg(${atom})`;
   if (model.holds.has(atom) && model.holds.has(denial)) return [atom, denial];
   const met = model.holds.has(denial) ? (model.fits.get(atom) ?? []).find((p) => model.holds.has(p)) : undefined;
@@ -269,7 +289,9 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
   let qReading: Reading | undefined;
   if (question && "claim" in question) {
     const frames = isQuestionForce(question);
-    const beyond = frames.find((f) => f.key !== "slot:newMember");
+    // A holder or a say word on the question is the translator's (R2-1): the question is asked inside its wrap.
+    const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || !!f.holderHost;
+    const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f));
     if (beyond || question.unread.length) {
       const construction = beyond?.construction ?? question.unread[0]!.construction;
       return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: [{ reading: question.id, construction, key: beyond?.key, reason: "noRow" }] } };
@@ -279,7 +301,7 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
     qReading = { id: "?", source: undefined as never, frames: [], order: [], unordered: [], claim: question, links: [], unread: [] };
   }
   const readings = qReading ? [...log.readings.filter((r) => r !== question), qReading] : log.readings;
-  const translation = translate({ readings }, { lexicon: options.lexicon, switches });
+  const translation = translate({ readings, entries: (log as Partial<Log>).entries }, { lexicon: options.lexicon, switches });
   const left = translation.left.filter((l) => l.reading !== qReading?.id);
   if (qReading && translation.left.length !== left.length) {
     return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: translation.left } };
@@ -307,14 +329,18 @@ function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]
   const yes: string[] = [];
   const no: string[] = [];
   const switches = new Set<SolveSwitch>();
-  for (const atom of model.holds) {
+  // A wrapped question (a holder's view, a say word) is matched inside atoms with the same wrap; a plain one, outside any.
+  const wrap = p.qid ? p.translation.wraps.get(p.qid) : undefined;
+  for (const held of model.holds) {
+    const atom = wrap ? unwrapText(wrap, held) : held;
+    if (atom === undefined) continue;
     const inner = negOf(atom);
     const source = p.translation.terms.get(inner ?? atom);
     if (!source) continue;
     // A denial rules the question out when the question says at least the denied claim.
     const fit = inner ? fitsQuestion(source.claim, p.claim!, p.ctx.options) : fitsQuestion(p.claim!, source.claim, p.ctx.options);
     if (!fit) continue;
-    (inner ? no : yes).push(atom);
+    (inner ? no : yes).push(held);
     fit.forEach((s) => switches.add(s));
   }
   return { yes, no, switches: [...switches] };
@@ -483,6 +509,13 @@ async function describe(readings: readonly string[], p: Extract<Prepared, { ok: 
   return { atom: "", switches: [] };
 }
 
+/** *These cannot all hold*; a clash inside one holder's view names the holder (R2-2: *In Azozon's view …*). */
+function clashEnglish(atom: string, readings: readonly string[], translation: Translation): string {
+  const { name, args } = splitAtom(atom);
+  const holder = name === "view" ? translation.holders.get(args[0]!) : undefined;
+  return `${holder ? `In ${holder} view these` : "These"} cannot all hold: ${readings.join(", ")}.`;
+}
+
 function sortClashes(out: Clash[], order: readonly string[]): Clash[] {
   const rank = (c: Clash): number[] => c.readings.map((r) => order.indexOf(r));
   return out.sort((a, b) => {
@@ -516,7 +549,7 @@ async function clashesOneWorld(p: Extract<Prepared, { ok: true }>): Promise<Clas
     const key = readings.join(" ");
     if (sets.has(key)) continue;
     sets.add(key);
-    out.push({ atom, readings, switches: why.switches, english: `These cannot all hold: ${readings.join(", ")}.` });
+    out.push({ atom, readings, switches: why.switches, english: clashEnglish(atom, readings, p.translation) });
   }
   return { clashes: sortClashes(out, p.translation.readings), left: p.translation.left };
 }
@@ -529,7 +562,7 @@ async function clashesUnderChoices(p: Extract<Prepared, { ok: true }>): Promise<
   const out: Clash[] = [];
   for (const readings of sets) {
     const { atom, switches } = await describe(readings, p);
-    out.push({ atom, readings, switches, english: `These cannot all hold: ${readings.join(", ")}.` });
+    out.push({ atom, readings, switches, english: clashEnglish(atom, readings, p.translation) });
   }
   return { clashes: sortClashes(out, p.translation.readings), left: p.translation.left };
 }

@@ -1,5 +1,5 @@
 /**
- * Translator (clingo-solver proposal, Sketch): a log's readings to a Clingo program, from the confirmed group (a) rows
+ * Translator (clingo-solver proposal, Sketch): a log's readings to a Clingo program, from the confirmed group (a) and (b) rows
  * only. Claims become terms, frames wrap them, every reading is switched by `on(Id)`, and every rule carries its reading
  * id and derives `fired(Id, C)`, with `used(Id, C, Premise)` for each premise in its body.
  *
@@ -14,8 +14,10 @@
  * The program keeps to the Clingo 5 / 6 common ground: no conditional literals in rule bodies, no `_` inside `not`, no
  * integer division.
  */
+import { CLOSED, namedEnglish } from "../closed-roots.js";
+import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type { LexWord } from "../parse/types.js";
-import type { Log } from "./log.js";
+import type { Log, LogEntry } from "./log.js";
 import { match } from "./match.js";
 import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
@@ -37,6 +39,27 @@ export type Note = { reading: ReadingId; frame: Frame };
 /** A term in the program and the claim it stands for: the matcher's input for a question asked of the answer set. */
 export type TermSource = { reading: ReadingId; claim: Claim };
 
+/**
+ * What a group (b) reading's claim is wrapped in (clingo-solver R2-1): a holder's view, `view(H, T)`, or a say word,
+ * `say(Who, Part, Reach, Answer, Ending, T)` with `to(X)` as a seventh argument for pair reach `e` on `z` / `d` / `b`.
+ */
+export type Wrap =
+  | { kind: "view"; holder: string }
+  | { kind: "say"; who: string; part: string; reach: string; answer: string; ending: string; to?: string };
+
+/** A claim term inside its wrap, as the program writes it. */
+export function wrapText(wrap: Wrap | undefined, inner: string): string {
+  if (!wrap) return inner;
+  if (wrap.kind === "view") return `view(${wrap.holder},${inner})`;
+  return `say(${wrap.who},${wrap.part},${wrap.reach},${wrap.answer},${wrap.ending},${inner}${wrap.to ? `,${wrap.to}` : ""})`;
+}
+
+/** The claim term inside an atom with this wrap, or undefined when the atom has another wrap or none. */
+export function unwrapText(wrap: Wrap, atom: string): string | undefined {
+  const [before, after] = wrapText(wrap, "\u0000").split("\u0000") as [string, string];
+  return atom.length > before.length + after.length && atom.startsWith(before) && atom.endsWith(after) ? atom.slice(before.length, atom.length - after.length) : undefined;
+}
+
 export type Translation = {
   program: string;
   /** The readings switched by `on(Id)`, in log order. `Id` is the reading id as a Clingo string. */
@@ -47,6 +70,10 @@ export type Translation = {
   slots: Map<string, TermSource>;
   left: LeftOut[];
   notes: Note[];
+  /** Each wrapped reading's wrap (a holder's view, a say word), so a question with the same wrap is matched inside it. */
+  wraps: Map<ReadingId, Wrap>;
+  /** Each holder term and its English possessive (*Azozon's*), for a reply that names whose view clashes. */
+  holders: Map<string, string>;
 };
 
 // ── Atoms ───────────────────────────────────────────────────────────────────
@@ -56,7 +83,8 @@ const RESERVED = new Set([
   "holds", "neg", "isa", "be", "on", "fired", "used", "fits", "clash", "member", "head", "switch", "candidate", "nm", "ls",
   "z", "d", "b", "g", "w", "dt", "v", "pct", "pts", "rk", "rke", "cd", "inf", "ninf", "rng", "count", "detail", "within",
   "less", "same", "always", "never", "notall", "none", "more", "c", "o", "i", "act", "lit", "pro", "cl", "quote", "speaker",
-  "listener", "blank", "not",
+  "listener", "blank", "not", "view", "say", "via", "to", "grp", "sp", "rules", "unsaid", "interlocutors", "generic", "against",
+  "requires",
 ]);
 
 const str = (s: string): string => JSON.stringify(s);
@@ -138,7 +166,7 @@ export function inRange(value: NumberValue, range: Range): boolean | undefined {
 
 type Literal = { atom: string; premise?: string };
 type Subst = Map<Term, { text: string; term?: Term }>;
-type Ctx = { reading: Reading; id: string; subst: Subst; asserted: boolean; out: string[] };
+type Ctx = { reading: Reading; id: string; subst: Subst; asserted: boolean; out: string[]; wrap?: Wrap };
 
 const GENERIC = [
   "% Generic rules (clingo-solver E1).",
@@ -148,6 +176,30 @@ const GENERIC = [
   "fired(widen, isa(X, H)) :- holds(isa(X, C)), head(C, H), switch(widen).",
   "used(widen, isa(X, H), isa(X, C)) :- holds(isa(X, C)), head(C, H), switch(widen).",
   "holds(neg(P)) :- candidate(P), not holds(P), switch(closed).",
+  "% A holder's view (R2-1 row 1, R2-2): one holder's views clash; two holders' never do, nor a view and your claim.",
+  "clash(view(H, P)) :- holds(view(H, P)), holds(view(H, neg(P))).",
+  "clash(view(H, Q)) :- holds(view(H, neg(Q))), holds(view(H, P)), fits(Q, P).",
+  "% Say words (R2-7): the same party, part, reach and ending, allow or require against forbid; e clashes with nothing.",
+  ...["", ", X"].flatMap((x) => [
+    `clash(say(W, P, R, u, E, T${x})) :- holds(say(W, P, R, a, E, T${x})), holds(say(W, P, R, u, E, T${x})).`,
+    `clash(say(W, P, R, u, E, T${x})) :- holds(say(W, P, R, o, E, T${x})), holds(say(W, P, R, u, E, T${x})).`,
+    `clash(say(W, P, R, u, E, Q${x})) :- holds(say(W, P, R, a, E, T${x})), holds(say(W, P, R, u, E, Q${x})), fits(Q, T).`,
+    `clash(say(W, P, R, u, E, Q${x})) :- holds(say(W, P, R, o, E, T${x})), holds(say(W, P, R, u, E, Q${x})), fits(Q, T).`,
+  ]),
+  "% A requirement gives permission (R2-8).",
+  ...["", ", X"].flatMap((x) => {
+    const body = `holds(say(W, P, R, o, E, T${x}))`;
+    const head = `say(W, P, R, a, E, T${x})`;
+    return [`holds(${head}) :- ${body}.`, `fired(requires, ${head}) :- ${body}.`, `used(requires, ${head}, say(W, P, R, o, E, T${x})) :- ${body}.`];
+  }),
+  "% An act against a stated ban (R2-9): data, never a clash.",
+  ...["", ", X"].flatMap((x) =>
+    [["T", ""], ["Q", ", fits(Q, T)"]].flatMap(([q, fit]) => {
+      const head = `against(T, say(W, P, R, u, E${x}))`;
+      const body = `holds(T), holds(say(W, P, R, u, E, ${q}${x}))${fit}`;
+      return [`holds(${head}) :- ${body}.`, `fired(against, ${head}) :- ${body}.`, `used(against, ${head}, T) :- ${body}.`, `used(against, ${head}, say(W, P, R, u, E, ${q}${x})) :- ${body}.`];
+    }),
+  ),
 ];
 
 const HINGE_KEYS = new Set(["overlay:clause_hinge:th", "overlay:clause_hinge:g"]);
@@ -170,8 +222,18 @@ class Translator {
   readonly ranges = new Map<string, Range>();
   readonly kinds = new Map<string, Term>();
   newMembers = new Set<Term>();
+  readonly wraps = new Map<ReadingId, Wrap>();
+  readonly holders = new Map<string, string>();
+  /** Each reading's turn speaker, when the log's entries are given. */
+  readonly speakers = new Map<ReadingId, string>();
 
   constructor(readonly options: TranslateOptions) {}
+
+  /** The speaker of a reading's turn as a term (`sp("a")`), or the constant `speaker` when the turn is not known. */
+  speaker(reading: Reading): string {
+    const who = this.speakers.get(reading.id.split("/")[0]!);
+    return who === undefined ? "speaker" : `sp(${str(who)})`;
+  }
 
   // ── Terms ──
 
@@ -202,6 +264,7 @@ class Translator {
       case "number":
         return this.value(t.word);
       case "speaker":
+        return this.speaker(ctx.reading);
       case "listener":
         return t.kind;
       case "pronoun":
@@ -292,7 +355,7 @@ class Translator {
    * One rule with its `fired` twin and a `used` line per premise. `head` is the `holds` argument (or the whole atom when
    * `pred` is not `holds`); `C`, the conclusion `fired` names, is the `holds` argument or the atom.
    */
-  rule(ctx: Ctx, head: string, body: Literal[], pred: "holds" | "choice" | "clash" | "count" | "detail" | "always" | "never" = "holds", conclusion?: string): void {
+  rule(ctx: Ctx, head: string, body: Literal[], pred: "holds" | "choice" | "clash" | "count" | "detail" | "via" | "always" | "never" = "holds", conclusion?: string): void {
     const on = `on(${ctx.id})`;
     const atoms = [...body.map((l) => l.atom), on].join(", ");
     const marker = pred === "always" || pred === "never";
@@ -323,10 +386,16 @@ class Translator {
     return undefined;
   }
 
-  readingFrames(reading: Reading): { hinge?: Frame; universal?: Frame; restrictor?: Frame; standalone: Frame[]; other?: Frame } {
+  readingFrames(reading: Reading): { hinge?: Frame; universal?: Frame; restrictor?: Frame; holder?: Frame; channel?: Frame; say?: Frame; standalone: Frame[]; other?: Frame } {
     const out: ReturnType<Translator["readingFrames"]> = { standalone: [] };
+    const holder = reading.frames.some((f) => f.key === "xFamily:holder");
     for (const f of reading.frames) {
       if (f.key === "slot:newMember") continue;
+      // R2-1 row 1: a holder on a channel; a holder on MAY waits for MAY's row.
+      if (f.key === "xFamily:holder" && !out.holder) out.holder = f;
+      else if (holder && f.holderHost && f.key === "overlay:evidential:th" && !out.channel) out.channel = f;
+      else if (f.key === "wordFamily:say" && !out.say) out.say = f;
+      else
       if (HINGE_KEYS.has(f.key) && ["if", "only-if", "iff"].includes(f.values.gloss ?? "") && !out.hinge) out.hinge = f;
       else if ((f.key === "joinSeries:ua" || f.key === "joinSeries:u:kind") && !out.universal) out.universal = f;
       else if (f.key === "lexReading:restrictor" && !out.restrictor) out.restrictor = f;
@@ -354,11 +423,100 @@ class Translator {
     }
     const out: string[] = [];
     const ctx: Ctx = { reading, id: str(reading.id), subst: new Map(), asserted: !frames.hinge && !frames.universal, out };
+    const wrapped = this.wrap(reading, frames, ctx);
+    if (wrapped && "reason" in wrapped) return this.leave(reading, wrapped);
+    if (wrapped) {
+      ctx.wrap = wrapped;
+      ctx.asserted = false;
+      if (frames.restrictor || (frames.say && (frames.hinge || frames.universal))) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
+    }
     const done = this.body(reading, frames, ctx);
     if (done !== true) return this.leave(reading, done);
+    if (wrapped) this.wraps.set(reading.id, wrapped);
     frames.standalone.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
     this.readings.push(reading.id);
     this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
+  }
+
+  /**
+   * R2-1 rows 1 to 4: the wrap a holder, a carried holder, or a say word puts on the reading's claim, with its facts
+   * (the channel as `via(Id, Channel)`, a first-mention holder's kind) into `ctx.out`. Undefined when it has none.
+   */
+  wrap(reading: Reading, frames: ReturnType<Translator["readingFrames"]>, ctx: Ctx): Wrap | { construction: string; key?: string; reason: string } | undefined {
+    const say = frames.say;
+    if (say && frames.holder) return { construction: "frameCombination", reason: "noRow" };
+    if (say) {
+      // Row 4 (permission-consent.md#say-words, #permission, #consent, #say-reach).
+      const { reach = "", part = "", answer = "", ending = "" } = say.values;
+      const v = { reach, part, answer, ending };
+      const bad = { construction: say.construction, key: say.key, reason: "noRow" };
+      if (![v.reach, v.part, v.answer, v.ending].every((x) => x && /^[a-z]+$/.test(x))) return bad;
+      const hosted = say.hosted ? this.term(say.hosted, "bl", { ...ctx, asserted: false }) : undefined;
+      let who: string | undefined;
+      let to: string | undefined;
+      if (v.part === "v") who = hosted ?? (v.ending === "m" ? this.speaker(reading) : v.ending === "l" ? "rules" : v.ending === "r" ? "unsaid" : undefined);
+      else if (v.part === "z" || v.part === "d" || v.part === "b") {
+        const filler = reading.claim.roles[v.part];
+        who = filler ? this.term(filler, v.part, { ...ctx, asserted: false }) : undefined;
+        if (hosted) to = v.reach.includes("e") ? `to(${hosted})` : undefined;
+        if (hosted && !to) return bad;
+      }
+      if (!who) return bad;
+      return { kind: "say", who, part: v.part, reach: v.reach, answer: v.answer, ending: v.ending, to };
+    }
+    let holder: string | undefined;
+    let channel: Frame | undefined;
+    if (frames.holder) {
+      if (!frames.channel) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
+      holder = this.holder(frames.holder, ctx);
+      if (!holder) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
+      channel = frames.channel;
+    } else {
+      // Row 2: a carried holder takes the holder of the reading it links to.
+      const carried = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:holder");
+      if (!carried) return undefined;
+      const from = carried.to ? this.wraps.get(carried.to) : undefined;
+      if (from?.kind !== "view") return { construction: carried.key, key: carried.key, reason: "noRow" };
+      holder = from.holder;
+      channel = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:channel")?.frame;
+    }
+    const gloss = channel?.values.gloss;
+    if (gloss) this.rule(ctx, `via(${ctx.id},${name(gloss.toLowerCase())})`, [], "via");
+    return { kind: "view", holder };
+  }
+
+  /**
+   * Row 3, who the holder is (holder.md#naming-a-holder): a name is its root id, `-r` its antecedent's; a kind of person
+   * is a first-mention noun, `nm(Id, h)` with its kind; R2-4: `-x` is `grp(H)`, the interlocutors and the generic
+   * pronoun are their own holders. Undefined for a holder with no row: the topic pronoun (the reader gives it no
+   * antecedent), the speaker and the listener.
+   */
+  holder(frame: Frame, ctx: Ctx): string | undefined {
+    const party = frame.party ? throughAntecedent(frame.party) : undefined;
+    if (party?.kind !== "thing") return undefined;
+    const word = party.head;
+    if (isTopicPronoun(word) || party.root === CLOSED.microphone || party.root === CLOSED.headphones) return undefined;
+    let text: string;
+    let english: string;
+    if (isGenericPronoun(word)) [text, english] = ["generic", "the generic"];
+    else if (party.root === CLOSED.handshake && party.named) [text, english] = ["interlocutors", "our"];
+    else if (party.named) [text, english] = [name(party.root), `${namedEnglish(party.root)}'s`];
+    else {
+      text = `nm(${ctx.id},h)`;
+      english = word.plural ? "some people's" : "someone's";
+      this.kinds.set(name(party.root), party);
+      this.rule(ctx, `isa(${text},${name(party.root)})`, []);
+      this.holders.set(text, english);
+      return text;
+    }
+    if (word.plural) [text, english] = [`grp(${text})`, english.replace(/'s$/, " and co.'s")];
+    this.holders.set(text, english);
+    return text;
+  }
+
+  /** A term inside the reading's wrap. */
+  w(ctx: Ctx, inner: string): string {
+    return wrapText(ctx.wrap, inner);
   }
 
   /** The reading's rules into `ctx.out`; true, or why it is left out. */
@@ -390,9 +548,10 @@ class Translator {
       const k = name(instance.root);
       this.kinds.set(k, instance);
       ctx.subst.set(list, { text: "X" });
-      body.push({ atom: `holds(isa(X,${k}))`, premise: `isa(X,${k})` });
+      // R2-5: inside a view, the kind is the holder's too.
+      body.push({ atom: `holds(${this.w(ctx, `isa(X,${k})`)})`, premise: this.w(ctx, `isa(X,${k})`) });
       if (!claim.verb && !claim.predicate.length && Object.keys(claim.roles).length === 1) {
-        if (!none || frames.hinge) return { construction: f.construction, key: f.key, reason: "noRow" };
+        if (!none || frames.hinge || ctx.wrap) return { construction: f.construction, key: f.key, reason: "noRow" };
         this.rule(ctx, `none(${ctx.id})`, body, "clash");
         return true;
       }
@@ -400,7 +559,7 @@ class Translator {
 
     // Whole-list denial (row 4): the items cannot all hold.
     if (whole) {
-      if (frames.hinge || frames.restrictor) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
+      if (frames.hinge || frames.restrictor || ctx.wrap) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
       const lits: Literal[] = [];
       denial.members.forEach((m, i) => {
         const item = this.substituted(claim, denial, m, { ...ctx, asserted: false });
@@ -439,23 +598,26 @@ class Translator {
       return true;
     }
 
+    // R2-7, R2-9: a ban's act is matched against the acts it may meet, as a denied term is.
+    const ban = ctx.wrap?.kind === "say" && ctx.wrap.answer === "u";
     for (const h of heads) {
       if (open) this.open(ctx, h.text, body);
-      else this.rule(ctx, lit(h), body);
-      if (list) this.templates.push({ ctx, list, claim: h.claim, sign: h.sign });
-      else this.pool(reading, h.text, h.claim, h.sign);
+      else this.rule(ctx, this.w(ctx, lit(h)), body);
+      if (list) this.templates.push({ ctx, list, claim: h.claim, sign: ban ? -1 : h.sign });
+      else this.pool(reading, h.text, h.claim, ban ? -1 : h.sign);
     }
 
-    // Membership (row 10): the claim keeps its list term, and each member (or each paired place) holds.
-    if (!denial && !frames.universal) this.members(reading, claim, ctx);
+    // Membership (row 10): the claim keeps its list term, and each member (or each paired place) holds; R2-5, inside a
+    // view too. A say word's content stays one wrapped term.
+    if (!denial && !frames.universal && ctx.wrap?.kind !== "say") this.members(reading, claim, ctx);
     return true;
   }
 
   /** Row 9: an open generalization gives only *could be*; with everyday defaults switched on it holds until denied. */
   open(ctx: Ctx, head: string, body: Literal[]): void {
-    const exception: Literal = { atom: `not holds(neg(${head}))` };
-    this.rule(ctx, head, [...body, exception], "choice");
-    this.rule(ctx, head, [...body, exception, { atom: "switch(defaults)" }]);
+    const exception: Literal = { atom: `not holds(${this.w(ctx, `neg(${head})`)})` };
+    this.rule(ctx, this.w(ctx, head), [...body, exception], "choice");
+    this.rule(ctx, this.w(ctx, head), [...body, exception, { atom: "switch(defaults)" }]);
   }
 
   /** R1-8: a rank list of two with a shared scale and nothing else is data, `more(Scale, A, B)` (comparative-arity.md#amount-scale). */
@@ -500,7 +662,7 @@ class Translator {
           this.facts.add(`member(${ls},${enc},${j + 1}).`);
         });
       });
-      this.rule(ctx, this.claim(claim, { ...ctx, subst }), body);
+      this.rule(ctx, this.w(ctx, this.claim(claim, { ...ctx, subst })), body);
       // Each member place as a ground term, for fits.
       const size = group[0]!.members.length;
       for (let j = 0; j < size; j++) {
@@ -530,10 +692,12 @@ class Translator {
     const o = `o(${ctx.id})`;
     this.slots.set(c, { reading: cond.id, claim: cond.claim });
     this.pool(cond, condText, cond.claim, 1);
-    const truth = (slot: string, n: string): Literal[] => [{ atom: `fits(${slot},${n})` }, { atom: `holds(${n})`, premise: n }];
-    const falsity = (slot: string, n: string): Literal[] => [{ atom: `fits(${n},${slot})` }, { atom: `holds(neg(${n}))`, premise: `neg(${n})` }];
-    const out = h.sign < 0 ? `neg(${h.text})` : h.text;
-    const notOut = h.sign < 0 ? h.text : `neg(${h.text})`;
+    // R2-5: inside a view, the holder's own rule runs on the holder's views.
+    const w = (t: string): string => this.w(ctx, t);
+    const truth = (slot: string, n: string): Literal[] => [{ atom: `fits(${slot},${n})` }, { atom: `holds(${w(n)})`, premise: w(n) }];
+    const falsity = (slot: string, n: string): Literal[] => [{ atom: `fits(${n},${slot})` }, { atom: `holds(${w(`neg(${n})`)})`, premise: w(`neg(${n})`) }];
+    const out = w(h.sign < 0 ? `neg(${h.text})` : h.text);
+    const notOut = w(h.sign < 0 ? h.text : `neg(${h.text})`);
     const outTrue = (n: string): Literal[] => (h.sign < 0 ? falsity(o, n) : truth(o, n));
     const outFalse = (n: string): Literal[] => (h.sign < 0 ? truth(o, n) : falsity(o, n));
     const universal = body.length > 0;
@@ -543,11 +707,11 @@ class Translator {
     }
     if (gloss === "if" || gloss === "iff") {
       this.rule(ctx, out, [...body, ...truth(c, "P")]);
-      if (!universal) this.rule(ctx, `neg(${condText})`, outFalse("P"));
+      if (!universal) this.rule(ctx, w(`neg(${condText})`), outFalse("P"));
     }
     if (gloss === "only-if" || gloss === "iff") {
       this.rule(ctx, notOut, [...body, ...falsity(c, "P")]);
-      if (!universal) this.rule(ctx, condText, outTrue("P"));
+      if (!universal) this.rule(ctx, w(condText), outTrue("P"));
     }
     return true;
   }
@@ -658,9 +822,11 @@ function replaceTerm(claim: Claim, from: Term, to: Term): Claim {
 }
 
 /** Translate a log's readings (top level; nested readings are reached through their frames) to a Clingo program. */
-export function translate(log: Pick<Log, "readings">, options: TranslateOptions = {}): Translation {
+export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogEntry[] }, options: TranslateOptions = {}): Translation {
   const t = new Translator(options);
+  // The turn's speaker (a say word's `-m` on `v`, `uwen` in a role), from the log's entries when given.
+  for (const entry of log.entries ?? []) for (const r of entry.readings) t.speakers.set(r.id, entry.speaker);
   for (const reading of log.readings) t.reading(reading);
   const program = t.finish();
-  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes };
+  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, holders: t.holders };
 }

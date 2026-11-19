@@ -89,3 +89,8 @@ zalazun vudurul thrawal.
 @ m19
 zalazun vudurul thramowal.
 = There is no chance Alazun has left.
+
+# A holder on MAY (R2-3), from solve-holders.txt: it joins that fixture once MAY has its row.
+@ b6
+zalazun thomamazozon vudurul.
+= Maybe Azozon thinks Alazun left.

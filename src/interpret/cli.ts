@@ -371,7 +371,7 @@ export function formatClashes(result: { clashes: Clash[]; left: LeftOut[]; refus
   if (result.refused) out.push(`refused ${result.refused}`);
   else if (result.clashes.length === 0) out.push("no clash");
   for (const c of result.clashes) {
-    out.push(`clash ${clashReply(c.readings).english}`, `  atom ${c.atom}`);
+    out.push(`clash ${c.english}`, `  atom ${c.atom}`);
     if (c.switches.length) out.push(`  switches ${c.switches.join(", ")}`);
     out.push(...readingLines(c.readings, log, "  "));
   }

@@ -118,6 +118,36 @@ describe("translate: encoding", () => {
   });
 });
 
+describe("translate: holders and say words (R2-1, R2-4)", () => {
+  const holds = (t: ReturnType<typeof program>): string[] => t.program.split("\n").filter((l) => /^(holds|via)\(.*on\("/.test(l));
+
+  it("row 1: a holder's view is wrapped, never your claim; its channel is data", () => {
+    assert.deepEqual(holds(program("zalazun theyomazozon vudurul.")), ['via("t:0.0",clues) :- on("t:0.0").', 'holds(view(azozo,uduru(z(alazu)))) :- on("t:0.0").']);
+  });
+
+  it("row 3, R2-4: -r resumes its root; -x, the interlocutors and the generic pronoun are their own holders", () => {
+    assert.match(program("zazozon vowurol. zalazun theyomazozor vudurul.").program, /^holds\(view\(azozo,uduru\(z\(alazu\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    assert.match(program("zalazun theyomazozonx vudurul.").program, /^holds\(view\(grp\(azozo\),/m);
+    assert.match(program("zalazun theyomayan vudurul.").program, /^holds\(view\(interlocutors,/m);
+    assert.match(program("theyomeyen zalazun vudurul.").program, /^holds\(view\(generic,/m);
+    assert.match(program("zalazun theyomeyel vudurul.").program, /^holds\(isa\(nm\("t:0\.0",h\),eye\)\) :- on\("t:0\.0"\)\.$/m);
+  });
+
+  it("a holder with no row yet is left out: on MAY (B6b), the topic pronoun", () => {
+    assert.deepEqual(program("zalazun thomamazozon vudurul.").left.map((l) => l.key), ["overlay:may:th"]);
+    assert.deepEqual(program("xazozon theyomalen zalazun vudurul.").left.map((l) => l.key), ["xFamily:holder"]);
+  });
+
+  it("row 4: who has the say, by part and ending; pair reach e on z keeps its bl- word as to(X)", () => {
+    assert.match(program("zazozon vowurol hwuval.").program, /^holds\(say\(rules,v,u,a,l,owuro\(z\(azozo\)\)\)\) :- on/m);
+    assert.match(program("zazozon vowurol hwuvam blalazun.").program, /^holds\(say\(alazu,v,u,a,m,owuro\(z\(azozo\)\)\)\) :- on/m);
+    assert.match(program("zazozon vowurol hwuvam.").program, /^holds\(say\(sp\("a"\),v,u,a,m,/m);
+    assert.match(program("zalazun vezuvel hwuvur.").program, /^holds\(say\(unsaid,v,u,u,r,/m);
+    assert.match(program("zuwen vowurol hwezal blahelan.").program, /^holds\(say\(sp\("a"\),z,e,a,l,owuro\(z\(sp\("a"\)\)\),to\(ahela\)\)\) :- on/m);
+    assert.doesNotMatch(program("zazozon vowurol hwuval.").program, /^holds\(owuro/m);
+  });
+});
+
 describe("translate: ranges (ranges.md#ranges, open-ranges.md#rays)", () => {
   const v = (value: number) => ({ kind: "scalar" as const, value });
   const end = (value: number) => ({ value: v(value) });
