@@ -303,11 +303,6 @@ export type PromptOptions = {
   loose?: boolean;
   /** Examples to show (default 4; 0 for legend only). */
   examples?: number;
-  /**
-   * Plain-English structure lines for the passage (`src/interpret/prompt-notes.ts`), shown after the gloss under a
-   * heading of their own. Absent or empty: the prompt is unchanged. Experimental, off by default.
-   */
-  structure?: readonly string[];
 };
 
 export type PromptContext = {
@@ -407,15 +402,5 @@ export function buildPrompt(
 
   out.push("", several ? "## Gloss lines" : "## Gloss", "");
   glosses.forEach((gloss, k) => out.push(several ? `${k + 1} ${gloss}` : gloss));
-  if (options.structure && options.structure.length > 0) {
-    out.push(
-      "",
-      "## How the words fit together",
-      "",
-      "From the parser. When one word covers another, the second is read inside the first: the first applies to it, not the other way round.",
-      "",
-      ...options.structure.map((line) => `- ${line}`),
-    );
-  }
   return out.join("\n") + "\n";
 }

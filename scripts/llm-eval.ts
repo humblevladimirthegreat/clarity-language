@@ -12,10 +12,6 @@
  * Run: npm run llm-eval -- [--n 200] [--seed 1] [--concurrency 4]
  *      [--translator claude-haiku-5-5] [--judge claude-opus-5-5] [--fresh]
  *      npm run llm-eval -- --only page.md:line[,page.md:line …]   (spot check those pairs, no sampling)
- *      [--min-frames N]   sample only pairs with a sentence of N or more whole-clause frames (carried included)
- *      [--structure]      add the reader's structure lines to each prompt (src/interpret/prompt-notes.ts); output goes
- *                         to `tmp/state/llm-eval/structure/` instead. Sampling does not depend on it, so the same
- *                         `--n`, `--seed` and `--min-frames` pick the same pairs with and without it.
  */
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync, appendFileSync } from "node:fs";
@@ -28,7 +24,6 @@ import { listMarkdown } from "../src/markdown-files.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { claude as claudeCall, rng, shuffle, withRetry } from "./lib/claude-cli.js";
 import { tmpPath } from "../src/tmp-paths.js";
-import { structureLines, wholeClauseFrameCount } from "../src/interpret/prompt-notes.js";
 
 // ---------------------------------------------------------------------------------------------
 // Options
@@ -45,11 +40,8 @@ const TRANSLATOR = flag("translator", "claude-haiku-5-5");
 const JUDGE = flag("judge", "claude-opus-5-5");
 const FRESH = process.argv.includes("--fresh");
 const ONLY = flag("only", "").split(",").filter(Boolean);
-const MIN_FRAMES = Number(flag("min-frames", "0"));
-const STRUCTURE = process.argv.includes("--structure");
 
-// With --structure, results go beside the plain run's, never over them.
-const OUT = STRUCTURE ? tmpPath("state", "llm-eval", "structure") : tmpPath("state", "llm-eval");
+const OUT = tmpPath("state", "llm-eval");
 const EMPTY = join(OUT, "empty");
 const RESULTS = join(OUT, "results.jsonl");
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
@@ -69,19 +61,11 @@ const blockSources = new Set(
     docExamples(readFileSync(file, "utf8")).map((example) => `${basename(file)}:${example.line}`),
   ),
 );
-// --min-frames filters before sampling, from the readings alone, so --structure never changes which pairs are drawn.
-const enoughFrames = (pair: ExamplePair) => MIN_FRAMES <= 0 || wholeClauseFrameCount([pair.ageben], tables) >= MIN_FRAMES;
 const pools: Record<Kind, ExamplePair[]> = {
-  block: context.index.filter((pair) => blockSources.has(pair.source) && enoughFrames(pair)),
-  table: context.index.filter((pair) => !blockSources.has(pair.source) && enoughFrames(pair)),
-  checkpoint: buildTestSet(GRAMMAR_DIR, tables).filter(enoughFrames),
+  block: context.index.filter((pair) => blockSources.has(pair.source)),
+  table: context.index.filter((pair) => !blockSources.has(pair.source)),
+  checkpoint: buildTestSet(GRAMMAR_DIR, tables),
 };
-if (MIN_FRAMES > 0) {
-  process.stderr.write(`--min-frames ${MIN_FRAMES}: ${kindsOf(pools)}\n`);
-}
-function kindsOf(p: Record<Kind, ExamplePair[]>): string {
-  return Object.entries(p).map(([kind, pool]) => `${kind} ${pool.length}`).join(", ");
-}
 const total = Object.values(pools).reduce((sum, pool) => sum + pool.length, 0);
 const random = rng(SEED);
 // Proportional to each pool, largest remainder, so the shares add up to N.
@@ -199,8 +183,7 @@ function keyOf(item: Item, prompt: string): string {
 function promptFor(item: Item): { prompt: string; examples: string[] } {
   const own = normalizeGloss(item.pair.gloss);
   const index = context.index.filter((pair) => normalizeGloss(pair.gloss) !== own);
-  const structure = STRUCTURE ? structureLines([item.pair.ageben], tables) : undefined;
-  const prompt = buildPrompt([item.pair.gloss], item.pair.constructions, { ...context, index, weights }, { structure });
+  const prompt = buildPrompt([item.pair.gloss], item.pair.constructions, { ...context, index, weights });
   const examples = index.filter((pair) => prompt.includes(`Gloss: ${pair.gloss}\n`)).map((pair) => pair.source);
   return { prompt, examples };
 }

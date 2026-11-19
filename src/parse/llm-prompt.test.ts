@@ -239,15 +239,4 @@ describe("promptForPassage", () => {
     const prompt = promptForPassage(["zazozon vowurol.", "zazozon vowurol"], tables, context);
     assert.ok(prompt.trimEnd().endsWith(`## Gloss lines\n\n1 ${glosses[0]}\n2 ${glosses[1]}`));
   });
-
-  it("is byte-identical with no structure lines, and adds them after the gloss when given", () => {
-    const inputs = ["zazozon thebamazozon thalom vowurol."];
-    const plain = promptForPassage(inputs, tables, context);
-    assert.equal(promptForPassage(inputs, tables, context, { structure: undefined }), plain);
-    assert.equal(promptForPassage(inputs, tables, context, { structure: [] }), plain);
-    const line = "`th-REPORTED-Azozon` covers `th-WANT-unstated`.";
-    const withLines = promptForPassage(inputs, tables, context, { structure: [line] });
-    assert.ok(withLines.startsWith(plain.trimEnd()));
-    assert.ok(withLines.trimEnd().endsWith(`- ${line}`));
-  });
 });

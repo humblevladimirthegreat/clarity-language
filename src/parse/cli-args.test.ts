@@ -16,12 +16,6 @@ describe("parseCliArgs", () => {
     assert.throws(() => parseCliArgs(["--json", "--llm-prompt", "zal."]), /does not combine/);
   });
 
-  it("reads --structure, which goes with --llm-prompt", () => {
-    assert.equal(parseCliArgs(["--llm-prompt", "--structure", "zal."]).structure, true);
-    assert.equal(parseCliArgs(["--llm-prompt", "zal."]).structure, false);
-    assert.throws(() => parseCliArgs(["--structure", "zal."]), /go with --llm-prompt/);
-  });
-
   it("rejects any other unknown flag", () => {
     assert.throws(() => parseCliArgs(["--pretty", "zal."]), /unknown flag --pretty/);
   });

@@ -123,20 +123,8 @@ export function inspectNotes(parsed: ParseResult, tokens: readonly InspectToken[
   });
   const indices = (words: readonly LexWord[]): number[] =>
     words.flatMap((w) => (w.at !== undefined && byAt.has(w.at) ? [byAt.get(w.at)!] : []));
-  return notesFromReadings(readParse(parsed, options), indices);
-}
 
-/**
- * The notes for readings already made, with `indices` mapping a frame's words to positions (token indices for the
- * inspector, word positions for the prompt's structure lines). A sentence is listed when it has `minFrames` or more
- * whole-clause frames, carried ones included (default 2).
- */
-export function notesFromReadings(
-  top: Reading[],
-  indices: (words: readonly LexWord[]) => number[],
-  minFrames = 2,
-): InspectNotes {
-  const readings = sentenceReadings(top);
+  const readings = sentenceReadings(readParse(parsed, options));
   const notes = new Map<Frame, FrameNote>();
   const frames: FrameNote[] = [];
   const sentences: SentenceNote[] = [];
@@ -202,7 +190,7 @@ export function notesFromReadings(
       const note = notes.get(f);
       return note && note.reach === "clause" ? [note.tokenIndex] : [];
     });
-    if (whole.length + carried.length < minFrames) continue;
+    if (whole.length + carried.length < 2) continue;
     sentences.push({ reading: reading.id, frames: whole, covers, unsettled, carried });
   }
 

@@ -11,7 +11,7 @@ import { promptForPassage } from "./llm-passage.js";
 const USAGE = [
   "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] [--json] '<Ageben text>' ['<Ageben text>' ...]",
   "       node scripts/parse.mjs [same flags] - < inputs.txt   (one input per line)",
-  "       node scripts/parse.mjs --llm-prompt [--loose] [--structure] [--examples N] '<Ageben text>' ['<Ageben text>' ...]",
+  "       node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Ageben text>' ['<Ageben text>' ...]",
   "  Prints each input, then its morph gloss or a one-line error, then words the lexicon does not know.",
   "  Exits 1 when any input does not parse.",
   "  --json             print the parse tree instead (one input: an object; several: an array)",
@@ -20,7 +20,6 @@ const USAGE = [
   "  --constructions    also list the construction IDs each parse used",
   "  --llm-prompt       print a translation prompt for an LLM with no Ageben context (several inputs make one passage)",
   "  --loose            with --llm-prompt: ask for the sentence only, no note",
-  "  --structure        with --llm-prompt: add how the words fit together, from the reader (experimental)",
   "  --examples N       with --llm-prompt: how many doc examples to show (default 4; 0 for none)",
 ].join("\n");
 
@@ -35,7 +34,7 @@ try {
 } catch (error) {
   usage(error instanceof Error ? error.message : String(error));
 }
-const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, structure, examples, json, args } = parsed;
+const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, examples, json, args } = parsed;
 
 // Each argument is one input; `-` (or no arguments with piped stdin) reads one input per line.
 const readStdin = args.includes("-") || (args.length === 0 && !process.stdin.isTTY);
@@ -54,9 +53,7 @@ if (inputs.length === 0) {
 if (llmPrompt) {
   try {
     const tables = loadDefaultTables();
-    // The reader loads only with --structure, so the plain prompt path does not run it.
-    const lines = structure ? (await import("../interpret/prompt-notes.js")).structureLines(inputs, tables) : undefined;
-    const prompt = promptForPassage(inputs, tables, loadPromptContext(tables), { loose, examples, structure: lines });
+    const prompt = promptForPassage(inputs, tables, loadPromptContext(tables), { loose, examples });
     process.stdout.write(prompt);
   } catch (error) {
     console.error(error instanceof Error ? error.message : String(error));
