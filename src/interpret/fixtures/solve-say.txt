@@ -43,3 +43,74 @@ zazozon vowurol hwovam.
 @ p9
 zazozon vowurol hwuvum.
 = Azozon may not walk (this time); I say so.
+
+# R4a-9: a hinge over a say word, the hinge and `blarth` first (pair row say x hinge; stand-in-vowels.md#stand-in-back).
+# k53, ? zazozon vowurol hwuval. -> follows: yes. k53 + p2 clash: the ban denies the permission, so the back rule
+# denies the condition, which k53's first sentence states.
+@ k53
+zalazun vezuyol. thohem blarth zazozon vowurol hwuval.
+= Alazun talks. If so, the rules allow Azozon to walk.
+
+@ k38
+zalazun vezuyol.
+= Alazun talks.
+
+@ k54
+zazozon godozel.
+= Azozon is a dog.
+
+# R4a-10: a binder over a say word (pair row say x binder, the universal first).
+# k40 + k54, ? zazozon vowurol hwuval. -> follows: yes. k41 + k54, same question -> follows: no, the ban on each dog.
+@ k40
+zual godozel vowurol hwuval.
+= For every dog: the rules allow it to walk.
+
+@ k41
+zual godozel vowurol hwuvul.
+= For every dog: the rules forbid it to walk.
+
+# R4a-11 (D1): a say word over a universal or an *and* list gives one per member for allow and require only.
+# k42 + k54, ? zazozon vowurol hwuval. -> follows: yes. k43 + k54, same question -> unknown, follows and couldBe.
+# k44, same question -> yes. k45 -> unknown. k46, ? zazozon vezuyol bahelan hwubar. -> yes.
+@ k42
+hwuval zual godozel vowurol.
+= The rules allow every dog to walk.
+
+@ k43
+hwuvul zual godozel vowurol.
+= The rules forbid that every dog walks.
+
+@ k44
+zazozon zalazun zal vowurol hwuval.
+= The rules allow Azozon and Alazun to walk.
+
+@ k45
+zazozon zalazun zal vowurol hwuvul.
+= The rules forbid Azozon and Alazun both walking.
+
+@ k46
+zazozon vezuyol bahelan balazun bal hwubar.
+= Azozon tells Ahelan and Alazun, and neither objects.
+
+# R4a-12 (D1): a say word over a hinge, *because*, MAY or a contrary zone keeps the wrap as data.
+# k47 + k38, ? zazozon vowurol hwuval. -> unknown; so for k37 (the say word before the hinge covers it,
+# clause.md#which-covers-which), k48, k49 and k50. After k50, ? zalazun vezuyol. -> unknown.
+@ k37
+zazozon vowurol hwuval thohem blarl zalazun vezuyol.
+= The rules allow that if Alazun talks, Azozon walks.
+
+@ k47
+hwuval zazozon vowurol thohem blarl zalazun vezuyol.
+= The rules allow that if Alazun talks, Azozon walks.
+
+@ k48
+hwuval zazozon vowurol thomam.
+= The rules allow that Azozon possibly walks.
+
+@ k49
+hwuval zazozon vowurol uom thagom.
+= The rules allow Azozon to walk contrary to plan.
+
+@ k50
+hwuval zazozon vowurol thahum blarl zalazun vezuyol.
+= The rules allow that Azozon walks because Alazun talks.

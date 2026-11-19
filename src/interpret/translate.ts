@@ -17,7 +17,7 @@
 import { CLOSED, namedEnglish } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type { LexWord } from "../parse/types.js";
-import type { Log, LogEntry } from "./log.js";
+import type { Addressed, Addressee, Log, LogEntry } from "./log.js";
 import { match, type TermSite } from "./match.js";
 import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
@@ -123,7 +123,7 @@ const RESERVED = new Set([
   "less", "same", "always", "never", "notall", "none", "more", "c", "o", "i", "act", "lit", "pro", "cl", "quote", "speaker",
   "listener", "blank", "not", "view", "say", "via", "to", "grp", "sp", "rules", "unsaid", "interlocutors", "generic", "against",
   "requires", "may", "maybe", "some", "noneof", "notone", "likely", "bans", "cause", "fault", "share", "plan", "channel",
-  "if", "onlyif", "iff",
+  "if", "onlyif", "iff", "we", "every", "because",
 ]);
 
 const str = (s: string): string => JSON.stringify(s);
@@ -297,6 +297,8 @@ class Translator {
   readonly speakers = new Map<ReadingId, string>();
   /** Each reading's turn, by its place in the log's entries, when they are given. */
   readonly turns = new Map<ReadingId, number>();
+  /** Each reading's turn addressees (`LogEntry.addressees`, D16), when the turn has any. */
+  readonly addressees = new Map<ReadingId, Addressed>();
   /** The log's readings by id, for a link that names one (a backward stand-in's sentence). */
   readonly byId = new Map<ReadingId, Reading>();
   /** The accounting guard: the parts the current reading's rows used, and the readings whose claims they wrote. */
@@ -317,18 +319,47 @@ class Translator {
   }
 
   /**
-   * The one addressed in a reading's turn (`listener(N)`, N the turn's place in the log), or the constant `listener`
-   * when the turn is not known. Who that is the log does not say, so two turns' listeners are never one term.
+   * R4a-8 (D16): the one addressed in a reading's turn, from `LogEntry.addressees` (never the call frames on a reading):
+   * with exactly one addressee, that addressee's term (a call's party as a term in a role, another speaker `sp("…")`);
+   * with none or several (R4a decision 1), `listener(N)`, N the turn's place in the log, which fits no other turn's.
+   * The constant `listener` when the turn is not known (a question).
    */
   listener(reading: Reading | ReadingId): string {
-    const turn = this.turns.get((typeof reading === "string" ? reading : reading.id).split("/")[0]!);
-    return turn === undefined ? "listener" : `listener(${turn})`;
+    const id = (typeof reading === "string" ? reading : reading.id).split("/")[0]!;
+    const turn = this.turns.get(id);
+    if (turn === undefined) return "listener";
+    const to = this.addressees.get(id)?.to ?? [];
+    return (to.length === 1 ? this.person(to[0]!) : undefined) ?? `listener(${turn})`;
   }
 
-  /** A reading's turn persons as the program writes them, so a speaker or listener term fits only its own turn's. */
+  /** An addressee as a term: another speaker `sp("…")`; a call's party as in a role (a name, through `-r`'s antecedent). */
+  person(a: Addressee): string | undefined {
+    if (a.kind === "speaker") return `sp(${str(a.speaker)})`;
+    const t = throughAntecedent(a.party);
+    if (t.kind !== "thing") return undefined;
+    return this.consts.get(t) ?? name(t.root);
+  }
+
+  /**
+   * R4a-7: `zaya` in a reading's turn, `we(S, A1, …, Ak)`: the turn speaker and the turn's addressees, sorted by text so
+   * one pair of people is one term whoever speaks. `we(N)` when the turn has no addressees, fitting no other turn's; the
+   * constant `we` when the turn is not known (a question).
+   */
+  we(reading: Reading | ReadingId): string {
+    const id = (typeof reading === "string" ? reading : reading.id).split("/")[0]!;
+    const turn = this.turns.get(id);
+    if (turn === undefined) return "we";
+    const to = this.addressees.get(id)?.to ?? [];
+    if (!to.length) return `we(${turn})`;
+    const who = this.speakers.get(id);
+    const members = [...new Set([who === undefined ? "speaker" : `sp(${str(who)})`, ...to.map((a) => this.person(a) ?? `listener(${turn})`)])].sort();
+    return `we(${members.join(",")})`;
+  }
+
+  /** A reading's turn persons as the program writes them, so a speaker, listener or `zaya` term fits only its own turn's. */
   site(id: ReadingId): TermSite {
     const who = this.speakers.get(id.split("/")[0]!);
-    return { speaker: who === undefined ? "speaker" : `sp(${str(who)})`, listener: this.listener(id) };
+    return { speaker: who === undefined ? "speaker" : `sp(${str(who)})`, listener: this.listener(id), we: this.we(id) };
   }
 
   // ── Terms ──
@@ -355,6 +386,7 @@ class Translator {
     if (known) return known;
     switch (t.kind) {
       case "thing": {
+        if (t.named && t.root === CLOSED.handshake && !t.head.plural) return this.we(ctx.reading);
         if (t.named) {
           const text = name(t.root);
           this.individuals.set(text, t);
@@ -518,7 +550,7 @@ class Translator {
     const holder = reading.frames.some((f) => f.key === "xFamily:holder");
     const denied = mayDenied(reading);
     for (const f of reading.frames) {
-      if (f.key === "slot:newMember") continue;
+      if (f.key === "slot:newMember" || f.key === "edge:vocative") continue;
       // R3-1 row 3: MAY denied (`thomam thul`) is a plain claim; the frame goes to the notes.
       if (f === denied) continue;
       // R2-1 row 1: a holder on a channel; R3-1 row 4: a holder on MAY.
@@ -576,8 +608,19 @@ class Translator {
     if (g) return this.nounHinge(reading, g);
     const why = this.unrowed(reading);
     if (why) return this.leave(reading, why);
+    // R4a-8: a call is read through `LogEntry.addressees`, so its frame is used; a reading with only a call claims nothing.
+    this.use(...reading.frames.filter((f) => f.key === "edge:vocative"));
+    if (reading.frames.length && reading.frames.every((f) => f.key === "edge:vocative") && isEmptyClaim(reading.claim)) {
+      this.accounting.set(reading.id, { parts: readingParts(reading), used: this.used });
+      this.readings.push(reading.id);
+      this.lines.push(`% ${reading.id}`, `on(${str(reading.id)}).`);
+      return;
+    }
     const frames = this.readingFrames(reading);
     if (frames.other) return this.leave(reading, { construction: frames.other.construction, key: frames.other.key, reason: "noRow" });
+    // R4a-12 (D1): a say word over a hinge, *because*, MAY or a contrary zone keeps the wrap as data.
+    const sayOver = frames.say ? [frames.hinge, frames.because, frames.may, frames.zone].filter((f): f is Frame => !!f) : [];
+    if (frames.say && sayOver.length === 1 && over(reading, frames.say, sayOver[0]!)) return this.sayData(reading, frames, sayOver[0]!);
     const kinds = [frames.hinge, frames.universal, frames.restrictor].filter(Boolean).length;
     if (kinds > 1 && !(frames.hinge && frames.universal)) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
     // R2-1 row 8: a hinge beside *because* only as *only because*, `thebem` over `thahum`; contrary to only on a plain claim.
@@ -616,7 +659,10 @@ class Translator {
       ctx.wrap = wrapped;
       ctx.asserted = false;
       // R4a-1: a restrictor runs inside a holder's view; a say word keeps no restrictor.
-      if ((frames.restrictor && wrapped.kind !== "view") || frames.likely || (frames.say && (frames.hinge || frames.universal || frames.restrictor))) return this.leave(reading, combination);
+      // R4a-9: a hinge over a say word; R4a-10, R4a-11: a universal with a plain say word, either order.
+      const hingeOverSay = !!frames.hinge && wrapped.kind === "say" && !!frames.say && over(reading, frames.hinge, frames.say) && !frames.universal;
+      const sayUniversal = !!frames.universal && wrapped.kind === "say" && !frames.hinge;
+      if ((frames.restrictor && wrapped.kind !== "view") || frames.likely || (frames.say && (frames.restrictor || (frames.hinge && !hingeOverSay) || (frames.universal && !sayUniversal)))) return this.leave(reading, combination);
     }
     if (frames.mayHost || (frames.may && !frames.holder && !mayOver)) ctx.choice = true;
     if (frames.likely) {
@@ -642,6 +688,51 @@ class Translator {
     if (may) this.notes.push({ reading: reading.id, frame: may });
     if (denied) this.notes.push({ reading: reading.id, frame: reading.stanceLists![0]!.inner?.[0] ?? denied });
     frames.standalone.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
+    this.readings.push(reading.id);
+    this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
+  }
+
+  /**
+   * R4a-12 (D1): a say word over a hinge, *because*, MAY or a contrary zone: `holds(say(W, P, R, A, E, D)) :- on(Id).` with
+   * `D` the wrapped content as one term, `if(C, O)`, `onlyif(C, O)`, `iff(C, O)`, `because(C, O)`, `may(T)` or
+   * `against(T, Z)`. Nothing else: no part holds, no MAY choice, no hinge rule.
+   */
+  sayData(reading: Reading, frames: Frames, inner: Frame): void {
+    const combination = { construction: "frameCombination", reason: "noRow" };
+    if (frames.holder || frames.mayHost || frames.likely || frames.restrictor || frames.universal || reading.stanceLists?.length) return this.leave(reading, combination);
+    if (reading.links.some((l) => l.kind === "carriedFrame" && l.key === "carry:holder")) return this.leave(reading, combination);
+    if (claimTerms(reading.claim).some((t) => t.kind === "list" || termFrames(t).length)) return this.leave(reading, combination);
+    const out: string[] = [];
+    const ctx: Ctx = { reading, id: str(reading.id), subst: new Map(), asserted: false, out };
+    const say = this.sayWrap(reading, frames.say!, ctx);
+    if ("reason" in say) return this.leave(reading, say);
+    const bad = { construction: inner.construction, key: inner.key, reason: "noRow" };
+    const t = this.claim(reading.claim, ctx);
+    let d: string;
+    if (inner === frames.hinge || inner === frames.because) {
+      const gloss = inner.values.gloss ?? "";
+      const fn = inner === frames.because ? (gloss === "because" ? "because" : undefined) : CONDITIONAL[gloss];
+      const noun = this.nounCondition(inner);
+      const cond = noun ? undefined : this.condition(reading, inner);
+      if (!fn || (!noun && (!cond || cond.frames.some((f) => f.key !== "slot:newMember") || this.unrowed(cond) || claimTerms(cond.claim).some((x) => termFrames(x).length || isOrList(x))))) return this.leave(reading, bad);
+      d = `${fn}(${noun?.text ?? this.claim(cond!.claim, { ...ctx, reading: cond! })},${t})`;
+      this.use(inner);
+    } else if (inner === frames.may) {
+      d = `may(${t})`;
+      this.use(inner);
+    } else {
+      const zone = this.zone(reading, inner, ctx);
+      if ("reason" in zone) return this.leave(reading, zone);
+      d = `against(${t},${zone.term})`;
+    }
+    this.rule(ctx, wrapText(say, d), []);
+    for (const v of this.visited) this.use(...v.frames.filter((f) => f.key === "slot:newMember"));
+    const parts = this.visited.flatMap((v) => readingParts(v, v === reading));
+    const unused = parts.filter((p) => !this.used.has(p.of));
+    if (unused.length) return this.leave(reading, { construction: unused[0]!.key, key: unused[0]!.key, reason: "unused", unused: unused.map((p) => p.text) });
+    this.accounting.set(reading.id, { parts, used: this.used });
+    this.wraps.set(reading.id, say);
+    if (inner === frames.may) this.notes.push({ reading: reading.id, frame: inner });
     this.readings.push(reading.id);
     this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
   }
@@ -694,7 +785,8 @@ class Translator {
     if (v.part === "v") who = hosted ?? (v.ending === "m" ? this.speaker(reading) : v.ending === "l" ? "rules" : v.ending === "r" ? "unsaid" : undefined);
     else if (v.part === "z" || v.part === "d" || v.part === "b") {
       const filler = reading.claim.roles[v.part];
-      who = filler ? this.term(filler, v.part, { ...ctx, asserted: false }) : undefined;
+      const fence = reading.frames.find((f) => f.key === "joinSeries:ua" || f.key === "joinSeries:u:kind")?.hosted;
+      who = filler && filler === fence ? "X" : filler ? this.term(filler, v.part, { ...ctx, asserted: false }) : undefined;
       if (hosted) to = v.reach.includes("e") ? `to(${hosted})` : undefined;
       if (hosted && !to) return bad;
     }
@@ -726,8 +818,8 @@ class Translator {
 
   /**
    * Row 3, who the holder is (holder.md#naming-a-holder): a name is its root id, `-r` its antecedent's; a kind of person
-   * is a first-mention noun, `nm(Id, h)` with its kind; R2-4: `-x` is `grp(H)`, the interlocutors and the generic
-   * pronoun are their own holders. R4a-4: the topic pronoun and a `-r` holder resume their antecedent through the
+   * is a first-mention noun, `nm(Id, h)` with its kind; R2-4: `-x` is `grp(H)`; R4a-7: the interlocutors are the turn's `we(..)` term; the generic
+   * pronoun is its own holder. R4a-4: the topic pronoun and a `-r` holder resume their antecedent through the
    * anaphor link, which the holder uses, as {@link resume} does in a role (a first mention keeps its constant; a `-r`
    * holder with no antecedent is the name it spells). R4a-5: the listener is the listener term, as `zawan` is in a role.
    * Undefined for a holder with no row: a topic pronoun with no topic, and the speaker.
@@ -754,7 +846,7 @@ class Translator {
     let text: string;
     let english: string;
     if (isGenericPronoun(word)) [text, english] = ["generic", "the generic"];
-    else if (party.root === CLOSED.handshake && party.named) [text, english] = ["interlocutors", "our"];
+    else if (party.root === CLOSED.handshake && party.named) [text, english] = [this.we(ctx.reading), "our"];
     else if (party.named) [text, english] = [name(party.root), `${namedEnglish(party.root)}'s`];
     else {
       text = `nm(${ctx.id},h)`;
@@ -820,8 +912,17 @@ class Translator {
       ctx.subst.set(list, { text: "X" });
       this.use(f, ...(f.inner ?? []), ...(list.kind === "list" ? (list.sharedDetails ?? []) : []));
       this.bound.add(instance.head);
-      // R2-5: inside a view, the kind is the holder's too.
-      body.push({ atom: `holds(${this.w(ctx, `isa(X,${k})`)})`, premise: this.w(ctx, `isa(X,${k})`) });
+      // R2-5: inside a view, the kind is the holder's too; a say word's kind is your own claim (R4a-10).
+      const isa = ctx.wrap?.kind === "say" ? `isa(X,${k})` : this.w(ctx, `isa(X,${k})`);
+      body.push({ atom: `holds(${isa})`, premise: isa });
+      const say = ctx.wrap?.kind === "say" ? ctx.wrap : undefined;
+      if (say && frames.say && over(reading, frames.say, f)) {
+        // R4a-11 (D1): over a universal the whole stays one wrapped term, `T[every(K)]`; allow and require reach each one.
+        if (none || open || denial || claim.verb === list) return { construction: "frameCombination", reason: "noRow" };
+        const whole = new Map(ctx.subst).set(list, { text: `every(${k})` });
+        this.rule(ctx, this.w(ctx, this.claim(claim, { ...ctx, subst: whole })), []);
+        if (say.answer !== "a" && say.answer !== "o") return true;
+      }
       if (!claim.verb && !claim.predicate.length && Object.keys(claim.roles).length === 1) {
         // R4a-3: inside a holder's view, *no K* clashes with the holder's own `isa` views.
         if (!none || frames.hinge || frames.because || (ctx.wrap && !plainView(ctx.wrap))) return { construction: f.construction, key: f.key, reason: "noRow" };
@@ -898,8 +999,8 @@ class Translator {
     }
 
     // Membership (row 10): the claim keeps its list term, and each member (or each paired place) holds; R2-5, inside a
-    // view too. A say word's content stays one wrapped term.
-    if (!denial && !frames.universal && !sayOf(ctx.wrap)) this.members(reading, claim, ctx);
+    // view too. R4a-11 (D1): under a plain say word the content stays one wrapped term, and `a` and `o` reach each member.
+    if (!denial && !frames.universal && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx);
     return true;
   }
 
@@ -960,6 +1061,13 @@ class Translator {
   members(reading: Reading, claim: Claim, ctx: Ctx): void {
     const lists = claimMemberLists(claim, reading);
     if (!lists.size) return;
+    const say = ctx.wrap?.kind === "say" ? ctx.wrap : undefined;
+    if (say && say.answer !== "a" && say.answer !== "o") {
+      // A ban or *their call* over a list is the whole term only (D1): the list is used, no member rule.
+      for (const l of lists.keys()) this.use(l);
+      for (const link of reading.links) if (link.kind === "pairing") this.use(link);
+      return;
+    }
     const groups = new Map<object | Term, ListTerm[]>();
     const order = (l: Term): number => ["z", "d", "b", "g"].indexOf(placeOf(claim, l)[0]!);
     for (const [l, g] of [...lists].sort((a, b) => order(a[0]) - order(b[0]))) {
@@ -985,7 +1093,10 @@ class Translator {
         });
         if (shared) this.use(...shared);
       });
-      this.rule(ctx, this.w(ctx, this.claim(claim, { ...ctx, subst })), body);
+      // R4a-11: a list in the say word's own part is its `Who` too.
+      const own = say && (["z", "d", "b"] as const).find((r) => r === say.part && group.includes(claim.roles[r] as ListTerm));
+      const wrap = own ? { ...say, who: subst.get(claim.roles[own]!)!.text } : ctx.wrap;
+      this.rule(ctx, wrapText(wrap, this.claim(claim, { ...ctx, subst })), body);
       // Each member place as a ground term, for fits.
       const size = group[0]!.members.length;
       for (let j = 0; j < size; j++) {
@@ -1073,6 +1184,9 @@ class Translator {
     if (!termName) return bad;
     // R3-1 row 6 and R3-5 have only the forward rule of *if*.
     if ((mayCond || mayOutcome) && gloss !== "if") return bad;
+    // R4a-9: a hinge over a say word (`thohem blarth` first): the outcome is the say term, the condition your own claim.
+    const sayOut = ctx.wrap?.kind === "say";
+    if (sayOut && (mayCond || mayOutcome || ctx.gate || because)) return bad;
     const condClaim = noun?.claim ?? cond!.claim;
     const condSite = cond ?? reading;
     const condText = noun?.text ?? this.claim(cond!.claim, { ...ctx, reading: cond!, asserted: false });
@@ -1089,10 +1203,13 @@ class Translator {
     this.pool(condSite, condText, condClaim, 1);
     // R2-5: inside a view, the holder's own rule runs on the holder's views.
     const w = (t: string): string => this.w(ctx, t);
-    const truth = (slot: string, n: string): Literal[] => [{ atom: `fits(${slot},${n})` }, { atom: `holds(${w(n)})`, premise: w(n) }];
-    const falsity = (slot: string, n: string): Literal[] => [{ atom: `fits(${n},${slot})` }, { atom: `holds(${w(`neg(${n})`)})`, premise: w(`neg(${n})`) }];
+    // R4a-9: under a say word the condition is unwrapped, and the outcome's denial is the say term's (a ban's `neg(say(..))`).
+    const wc = (t: string): string => (sayOut ? t : w(t));
+    const wneg = (slot: string, n: string): string => (slot === o && sayOut ? `neg(${w(n)})` : slot === o ? w(`neg(${n})`) : wc(`neg(${n})`));
+    const truth = (slot: string, n: string): Literal[] => [{ atom: `fits(${slot},${n})` }, { atom: `holds(${slot === o ? w(n) : wc(n)})`, premise: slot === o ? w(n) : wc(n) }];
+    const falsity = (slot: string, n: string): Literal[] => [{ atom: `fits(${n},${slot})` }, { atom: `holds(${wneg(slot, n)})`, premise: wneg(slot, n) }];
     const out = w(h.sign < 0 ? `neg(${h.text})` : h.text);
-    const notOut = w(h.sign < 0 ? h.text : `neg(${h.text})`);
+    const notOut = sayOut && h.sign > 0 ? `neg(${w(h.text)})` : w(h.sign < 0 ? h.text : `neg(${h.text})`);
     const outTrue = (n: string): Literal[] => (h.sign < 0 ? falsity(o, n) : truth(o, n));
     const outFalse = (n: string): Literal[] => (h.sign < 0 ? truth(o, n) : falsity(o, n));
     if (!universal) {
@@ -1100,7 +1217,7 @@ class Translator {
       this.pool(reading, h.text, h.claim, 1);
     }
     // R4e-1: the conditional as a claim term over the reading's own slots.
-    const plain = !universal && !mayCond && !mayOutcome && !ctx.gate;
+    const plain = !universal && !mayCond && !mayOutcome && !ctx.gate && !sayOut;
     const term = `${termName}(${c},${h.sign < 0 ? `neg(${o})` : o})`;
     if (plain) this.conditionals.set(term, { reading: reading.id, name: termName, id: ctx.id, negOut: h.sign < 0, denied });
     if (denied) {
@@ -1120,11 +1237,11 @@ class Translator {
       this.rule({ ...ctx, choice: true }, out, [...body, ...truth(c, "P")]);
     } else if (gloss === "if" || gloss === "iff") {
       this.rule(ctx, out, [...gate, ...body, ...truth(c, "P")]);
-      if (!universal) this.rule(ctx, w(`neg(${condText})`), [...gate, ...outFalse("P")]);
+      if (!universal) this.rule(ctx, wc(`neg(${condText})`), [...gate, ...outFalse("P")]);
     }
     if (gloss === "only-if" || gloss === "iff") {
       this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
-      if (!universal) this.rule(ctx, w(condText), [...gate, ...outTrue("P")]);
+      if (!universal) this.rule(ctx, wc(condText), [...gate, ...outTrue("P")]);
     }
     this.use(frame, mayCond ? condFrames[0] : undefined);
     return true;
@@ -1383,6 +1500,11 @@ function denied(items: readonly { slot: string }[], j: number, w: (t: string) =>
   return [{ atom: `fits(N${j + 1},${items[j]!.slot})` }, { atom: `holds(${w(`neg(N${j + 1})`)})`, premise: w(`neg(N${j + 1})`) }];
 }
 
+/** A claim with no role, predicate, verb, detail or clause (a call alone, `yazozon.`). */
+function isEmptyClaim(claim: Claim): boolean {
+  return !claim.verb && !claim.predicate.length && !Object.keys(claim.roles).length && !claim.details.length && !claim.clauses;
+}
+
 /** Does frame `a` cover frame `b`? */
 function over(reading: Reading, a: Frame, b: Frame): boolean {
   return reading.order.some((o) => o.over === a && o.under === b);
@@ -1520,6 +1642,7 @@ export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogE
     for (const r of entry.readings) {
       t.speakers.set(r.id, entry.speaker);
       t.turns.set(r.id, turn);
+      if (entry.addressees) t.addressees.set(r.id, entry.addressees);
     }
   });
   for (const reading of log.readings) t.byId.set(reading.id, reading);

@@ -29,7 +29,12 @@ function entries(file: string): { label: string; text: string }[] {
     .map((lines) => ({ label: lines[0]!.replace(/^@ /, ""), text: lines[1]! }));
 }
 
-const logOf = (texts: string[]) => buildLog(texts.map((text, at) => ({ speaker: "a", at, text })), tables);
+/** A fixture line's turn: a leading "Name: " sets its speaker, as the log reader does; else the default speaker "a". */
+const named = (line: string, at: number) => {
+  const m = /^([A-Z][A-Za-z0-9_-]*):\s*(.*)$/.exec(line);
+  return m ? { speaker: m[1]!, at, text: m[2]! } : { speaker: "a", at, text: line };
+};
+const logOf = (texts: string[]) => buildLog(texts.map((text, at) => named(text, at)), tables);
 const program = (...texts: string[]) => translate(logOf(texts), { lexicon: tables });
 const fromGloss = (gloss: string): string => glossToAgeben(gloss, tables, index) + ".";
 
@@ -145,7 +150,7 @@ describe("translate: holders and say words (R2-1, R2-4)", () => {
   it("row 3, R2-4: -r resumes its root; -x, the interlocutors and the generic pronoun are their own holders", () => {
     assert.match(program("zazozon vowurol. zalazun theyomazozor vudurul.").program, /^holds\(view\(azozo,uduru\(z\(alazu\)\)\)\) :- on\("t:0\.1"\)\.$/m);
     assert.match(program("zalazun theyomazozonx vudurul.").program, /^holds\(view\(grp\(azozo\),/m);
-    assert.match(program("zalazun theyomayan vudurul.").program, /^holds\(view\(interlocutors,/m);
+    assert.match(program("zalazun theyomayan vudurul.").program, /^holds\(view\(we\(0\),/m);
     assert.match(program("theyomeyen zalazun vudurul.").program, /^holds\(view\(generic,/m);
     assert.match(program("zalazun theyomeyel vudurul.").program, /^holds\(isa\(nm\("t:0\.0",h\),eye\)\) :- on\("t:0\.0"\)\.$/m);
   });

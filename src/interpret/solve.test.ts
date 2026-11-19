@@ -39,7 +39,13 @@ function fixture(name: string): Map<string, string> {
 function log(name: string, labels: string[], extra: string[] = []) {
   const f = fixture(name);
   const texts = [...labels.map((l) => f.get(l)!), ...extra];
-  return buildLog(texts.map((text, at) => ({ speaker: "a", at, text })), tables);
+  return buildLog(texts.map((text, at) => named(text, at)), tables);
+}
+
+/** A fixture line's turn: a leading "Name: " sets its speaker, as the log reader does; else the default speaker "a". */
+function named(line: string, at: number) {
+  const m = /^([A-Z][A-Za-z0-9_-]*):\s*(.*)$/.exec(line);
+  return m ? { speaker: m[1]!, at, text: m[2]! } : { speaker: "a", at, text: line };
 }
 
 const q = (text: string): Reading => readText(text, tables)[0]!;
@@ -341,7 +347,7 @@ describe("solve: holders over restrictors, denials, say words and hinges (R4a-1 
     assert.deepEqual(await atoms(["k1", "k2"]), [["view(azozo,ozuye(z(alazu)))", ["t:0.0", "t:0.1"], "In Azozon's view these cannot all hold: t:0.0, t:0.1."]]);
     assert.deepEqual(await atoms(["k1", "k3"]), []);
     assert.equal((await follows(b(["k1"]), q("zalazun vozuyel."), base)).verdict, "unknown");
-    assert.deepEqual(await atoms(["k4"]), [["view(interlocutors,eba(z(listener(0))))", ["t:0.0", "t:0.1"], "In our view these cannot all hold: t:0.0, t:0.1."]]);
+    assert.deepEqual(await atoms(["k4"]), [["view(we(0),eba(z(listener(0))))", ["t:0.0", "t:0.1"], "In our view these cannot all hold: t:0.0, t:0.1."]]);
   });
 
   it("R4a-2: a whole-list denial inside a view clashes with the holder's items (k6 to k8), never with yours", async () => {
@@ -429,6 +435,54 @@ describe("solve: say words (R2-1 row 4, R2-6 to R2-9)", () => {
     const two = (speakers: string[]) => buildLog([say.get("p8")!.replace("hwovam", "hwuvam"), say.get("p9")!].map((text, at) => ({ speaker: speakers[at]!, at, text })), tables);
     assert.deepEqual((await clashes(two(["a", "a"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
     assert.deepEqual((await clashes(two(["a", "b"]), base)).clashes, []);
+  });
+});
+
+describe("solve: the turn's people and say words over frames (R4a-7 to R4a-12)", () => {
+  const k = (labels: string[]) => log("holders", labels);
+  const p = (labels: string[]) => log("say", labels);
+  const sets = async (l: ReturnType<typeof log>) => (await clashes(l, base)).clashes.map((c) => [c.atom, c.readings]);
+  const allow = q("zazozon vowurol hwuval.");
+
+  it("R4a-7: zaya is the turn's speaker plus its addressees, by call or last call; no addressee fits no other turn", async () => {
+    assert.deepEqual(await sets(k(["k21", "k22"])), [['owuro(z(we(azozo,sp("Bea"))))', ["t:1.0", "t:1.1"]]]);
+    assert.deepEqual(await sets(k(["k23", "k24", "k25", "k26"])), []);
+    assert.deepEqual(await sets(k(["k27", "k28"])), []);
+    assert.match(translate(k(["k27"]), { lexicon: tables }).program, /^holds\(owuro\(z\(we\(0\)\)\)\)/m);
+  });
+
+  it("R4a-8 (D16): zawan is the one called, then the last call, else the other of two speakers; a call alone claims nothing", async () => {
+    const a = await follows(k(["k29"]), q("zazozon vowurol."), base);
+    assert.deepEqual([a.verdict, a.left], ["yes", []]);
+    assert.equal((await follows(k(["k30", "k31"]), q("zazozon vowurol."), base)).verdict, "yes");
+    assert.deepEqual((await clashes(k(["k32", "k33", "k34"]), base)).clashes.map((c) => c.atom), ['owuro(z(sp("Bea")))']);
+    assert.deepEqual(await sets(k(["k23", "k24", "k35", "k36"])), []);
+    assert.deepEqual((await clashes(k(["k16", "k15"]), base)).clashes.map((c) => c.atom), ["view(azozo,uduru(z(alazu)))"]);
+  });
+
+  it("R4a-9: a hinge over a say word (blarth first) gives the say term; a ban then denies the condition, which clashes", async () => {
+    assert.equal((await follows(p(["k53"]), allow, base)).verdict, "yes");
+    assert.deepEqual((await clashes(p(["k53", "p2"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1", "t:0.2"]]);
+  });
+
+  it("R4a-10: a binder over a say word reaches each member; a ban there denies each permission", async () => {
+    assert.equal((await follows(p(["k40", "k54"]), allow, base)).verdict, "yes");
+    assert.equal((await follows(p(["k41", "k54"]), allow, base)).verdict, "no");
+  });
+
+  it("R4a-11 (D1): over every or an and list, allow reaches each member and a ban only the whole", async () => {
+    assert.equal((await follows(p(["k42", "k54"]), allow, base)).verdict, "yes");
+    assert.equal((await follows(p(["k43", "k54"]), allow, base)).verdict, "unknown");
+    assert.equal((await couldBe(p(["k43", "k54"]), allow, base)).verdict, "unknown");
+    assert.equal((await follows(p(["k44"]), allow, base)).verdict, "yes");
+    assert.equal((await follows(p(["k45"]), allow, base)).verdict, "unknown");
+    assert.equal((await follows(p(["k46"]), q("zazozon vezuyol bahelan hwubar."), base)).verdict, "yes");
+  });
+
+  it("R4a-12 (D1): a say word over a hinge, because, MAY or a zone is data: neither half follows", async () => {
+    for (const label of ["k37", "k47", "k48", "k49", "k50"]) assert.equal((await follows(p([label, "k38"]), allow, base)).verdict, "unknown", label);
+    assert.match(translate(p(["k47"]), { lexicon: tables }).program, /^holds\(say\(rules,v,u,a,l,if\(ezuyo\(z\(alazu\)\),owuro\(z\(azozo\)\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.equal((await follows(p(["k50"]), q("zalazun vezuyol."), base)).verdict, "unknown");
   });
 });
 
@@ -681,9 +735,9 @@ describe("solve: faithfulness (the 2026-11-19 triage, fixture solve-faithful)", 
     assert.deepEqual(await clashSets(turns(["a", "f1"], ["a", "f2"])), [["t:0.0", "t:0.1"]]);
   });
 
-  it("awan is the turn's listener: two turns' you walk / you don't walk never clash", async () => {
+  it("awan is the turn's addressee (R4a-8): with no call, the first turn's is unknown and the second's the other speaker", async () => {
     assert.deepEqual(await clashSets(turns(["a", "f3"], ["b", "f4"])), []);
-    assert.match(translate(turns(["a", "f3"], ["b", "f4"]), { lexicon: tables }).program, /holds\(owuro\(z\(listener\(0\)\)\)\)[^\n]*\n[\s\S]*holds\(neg\(owuro\(z\(listener\(1\)\)\)\)\)/);
+    assert.match(translate(turns(["a", "f3"], ["b", "f4"]), { lexicon: tables }).program, /holds\(owuro\(z\(listener\(0\)\)\)\)[^\n]*\n[\s\S]*holds\(neg\(owuro\(z\(sp\("a"\)\)\)\)\)/);
   });
 
   it("a question has no turn: does uwen walk? does not fit a logged speaker's claim", async () => {

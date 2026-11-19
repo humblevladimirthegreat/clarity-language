@@ -13,6 +13,7 @@
  * - A blank in the query binds to the target's term in that place.
  * - Widening and inference are switches, off by default ({@link Switch}); every match found through one names it.
  */
+import { CLOSED } from "../closed-roots.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 import { detailNumber, sameNumberKind, sameNumberWord, samePayload, termNumber } from "./value.js";
 import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type StepLexicon } from "./steps.js";
@@ -49,7 +50,7 @@ const SWITCH_ORDER: Switch[] = ["widen", "infer"];
  * the same turn's person: when both sides name one, they must be the same; when either side names none, the term fits
  * any term of its kind, as a caller that does not know the turns needs.
  */
-export type TermSite = { reading?: Reading; speaker?: string; listener?: string };
+export type TermSite = { reading?: Reading; speaker?: string; listener?: string; we?: string };
 
 export type MatchOptions = {
   /** The host's referent for a term (a person, an object in its world); undefined when it cannot resolve the term. */
@@ -173,7 +174,28 @@ function termMatch(queryTerm: Term, targetTerm: Term, state: State, at: string):
   return false;
 }
 
+/**
+ * A turn person as its site names it: a speaker or listener term, `zaya` (a named handshake thing, R4a-7), or a name
+ * (its root, as a call's party is written). Undefined for any other term, or when the site names no one.
+ */
+function personText(term: Term, site: TermSite | undefined): string | undefined {
+  if (term.kind === "speaker" || term.kind === "listener") return site?.[term.kind];
+  if (term.kind !== "thing" || !term.named || termNumber(term)) return undefined;
+  if (term.root === CLOSED.handshake && !term.head.plural) return site?.we;
+  return /^[a-z][a-z0-9_]*$/.test(term.root) ? term.root : JSON.stringify(term.root);
+}
+
+const isTurnPerson = (t: Term): boolean => t.kind === "speaker" || t.kind === "listener" || (t.kind === "thing" && t.named && t.root === CLOSED.handshake && !t.head.plural);
+
 function structural(query: Term, target: Term, state: State, at: string): boolean {
+  // R4a-7, R4a-8: a turn person fits whatever its site names it as (`zawan` after a call to Azozon is Azozon), and a
+  // name fits a turn person the site names with that name; two turn terms with no site fall back to their kind.
+  if ((isTurnPerson(query) || isTurnPerson(target)) && !(query.kind === target.kind && (query.kind === "speaker" || query.kind === "listener"))) {
+    const q = personText(query, state.options.querySite);
+    const t = personText(target, state.options.targetSite);
+    if (q !== undefined && t !== undefined) return q === t;
+    if (isTurnPerson(query) !== isTurnPerson(target)) return false;
+  }
   switch (query.kind) {
     case "thing": {
       const q = termNumber(query);

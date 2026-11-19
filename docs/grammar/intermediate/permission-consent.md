@@ -26,6 +26,8 @@ English *may*, *must*, *may not*, and *they agreed* each say that someone has a 
 
 If you do not know how it stands, use `-m`.
 
+A say word over an *if*, a *because*, a *maybe* or a *contrary to* allows or forbids that whole thought; it says nothing about either half on its own.
+
 ### Someone over the act (`v`) {#permission}
 <a id="requirement"></a>
 
@@ -143,6 +145,8 @@ The reach vowel is [label reach](/label-seams#reach-vowels), the same vowels as 
 Only `v` and pair reach `e` take a `bl-` word.
 
 Two say words about the same act contradict each other only when one allows or requires it and the other forbids it, and they share everything else: the same source (the same `bl-` word, or none), whose say, reach, and ending. The rules cannot both allow (`hwuval`) and forbid (`hwuvul`) Azozon's walk, nor require and forbid it. A different person, part, ending, or reach never clashes, so a standing permission (`hwovam`) sits beside a ban on this one walk (`hwuvum`).
+
+Over a list or *every*, *allow* and *require* reach each one: `zazozon zalazun zal vowurol hwuval.` lets each walk. A ban does not: `hwuvul` there forbids them walking together, not each one walking.
 
 ### Practice {#intermediate-practice}
 

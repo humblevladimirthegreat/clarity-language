@@ -77,8 +77,9 @@ describe("accounting guard: grammar examples", () => {
 describe("accounting guard: the drops it catches", () => {
   const left = (...texts: string[]) => program(...texts).left.map((l) => `${l.reason} ${l.key ?? l.construction}`);
 
-  it("a say word over an and list (no member rule) is left", () => {
-    assert.deepEqual(left("zazozon zalazun zal vowurol hwuval."), ["unused joinSeries:a"]);
+  it("R4a-11: a say word over an and list uses the list (each member for allow, the whole term for a ban)", () => {
+    assert.deepEqual(left("zazozon zalazun zal vowurol hwuval."), []);
+    assert.deepEqual(left("zazozon zalazun zal vowurol hwuvul."), []);
   });
 
   it("the SHARED word of an oe list is left", () => {

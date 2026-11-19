@@ -113,3 +113,83 @@ zazozon vowurol hwuvul theyomalazun.
 @ k39
 zazozon vowurol hwuvul.
 = The rules forbid Azozon to walk.
+
+# R4a-5 with R4a-8: a listener holder is the turn's addressee. k16 + k15 clash in Azozon's view.
+@ k15
+zalazun thebamazozon vudurul vul.
+= I hear Azozon thinks Alazun did not leave.
+
+@ k16
+Bea: yazozon. zalazun theyomawan vudurul.
+= Azozon! I gather you think Alazun left.
+
+# R4a-7: `zaya` is the turn's speaker plus its addressees.
+# k21 + k22: clash; both turns are Bea and Azozon (by call, then by Bea's last call).
+# k23 + k24 + k25 + k26: no clash; three speakers and no call, so each `zaya` fits only its own turn.
+# k27 + k28: no clash; at Bea's first turn the log has one speaker, so her `zaya` names no addressee.
+@ k21
+Bea: yazozon. zayan vowurol.
+= Azozon! We walk.
+
+@ k22
+Bea: zayan vowurol vul.
+= We don't walk.
+
+@ k23
+Bea: zalazun vudurul.
+= Alazun left.
+
+@ k24
+Cal: zalazun vudurul.
+= Alazun left.
+
+@ k25
+Dee: zayan vowurol.
+= We walk.
+
+@ k26
+Bea: zayan vowurol vul.
+= We don't walk.
+
+@ k27
+Bea: zayan vowurol.
+= We walk.
+
+@ k28
+Cal: zayan vowurol vul.
+= We don't walk.
+
+# R4a-8 (D16): `zawan` is the turn's addressee.
+# k29, ? zazozon vowurol. -> follows: yes. k30 + k31, same question -> yes, by Bea's last call.
+# k32 + k33 + k34: clash, Cal's `zawan` is Bea (otherSpeaker). k23 + k24 + k35 + k36: no clash; three speakers, no call.
+@ k29
+Bea: yazozon. zawan vowurol.
+= Azozon! You walk.
+
+@ k30
+Bea: yazozon. zalazun vudurul.
+= Azozon! Alazun left.
+
+@ k31
+Bea: zawan vowurol.
+= You walk.
+
+@ k32
+Bea: zalazun vudurul.
+= Alazun left.
+
+@ k33
+Cal: zawan vowurol.
+= You walk.
+
+@ k34
+Bea: zuwen vowurol vul.
+= I don't walk.
+
+@ k35
+Dee: zawan vowurol.
+= You walk.
+
+@ k36
+Bea: zawan vowurol vul.
+= You don't walk.
