@@ -1,0 +1,48 @@
+# Solver fixture: the faithfulness triage (2026-11-19). Each case once gave a confident wrong answer or dropped part of a reading.
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# The tests in solve.test.ts take the entries they need, with their own speakers: f1/f2 and f3/f4 clash only when one person says both.
+# The triage's cases that stay left until a row says what they add (a resume pronoun under a universal hinge, a say word over an and list, the SHARED word of an oe list) are in accounting.test.ts: every reading here has a row.
+
+@ f1
+zuwen vowurol.
+= I walk.
+
+@ f2
+zuwen vowurol vul.
+= I don't walk.
+
+@ f3
+zawan vowurol.
+= You walk.
+
+@ f4
+zawan vowurol vul.
+= You don't walk.
+
+@ f5
+zual gogozel vowurol.
+= Every cat walks. (asked: who walks? is a fill question, beyond a yes or no job)
+
+@ f6
+zahelan gogozel.
+= Ahelan is a cat.
+
+@ f7
+zodozel zogozel zal gamayam vowurol.
+= A dog and a cat, both companionable, walk.
+
+@ f8
+zazozon zalazun zal gamayam.
+= Azozon and Alazun are companionable.
+
+@ f9
+zazozon vowurol veruvol vaem.
+= Azozon walks and/or runs (at least one).
+
+@ f10
+zazozon vowurol vul.
+= Azozon doesn't walk.
+
+@ f11
+zazozon veruvol vul.
+= Azozon doesn't run.

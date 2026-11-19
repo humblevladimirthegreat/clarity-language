@@ -86,4 +86,16 @@ describe("match: switches", () => {
     assert.ok(match(readRaw("zazozon bezerom g+2 vowurol.").claim, walked.claim));
     assert.equal(match(readRaw("zazozon bezerom gragel vowurol.").claim, walked.claim), undefined);
   });
+
+  it("a speaker or listener term fits only the same turn's person, when both sites name one", () => {
+    const i = claim("z-speaker | v-walk");
+    const you = claim("z-listener | v-walk");
+    assert.ok(match(i, i, { querySite: { speaker: "sp(a)" }, targetSite: { speaker: "sp(a)" } }));
+    assert.equal(match(i, i, { querySite: { speaker: "sp(a)" }, targetSite: { speaker: "sp(b)" } }), undefined);
+    assert.equal(match(you, you, { querySite: { listener: "listener(0)" }, targetSite: { listener: "listener(1)" } }), undefined);
+    assert.equal(match(i, you, { querySite: { speaker: "sp(a)" }, targetSite: { listener: "sp(a)" } }), undefined);
+    // A caller that does not know the turns (ask with no persons on its sites) fits any term of the kind.
+    assert.ok(match(i, i));
+    assert.ok(match(i, i, { querySite: {}, targetSite: { speaker: "sp(b)" } }));
+  });
 });

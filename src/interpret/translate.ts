@@ -18,7 +18,7 @@ import { CLOSED, namedEnglish } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type { LexWord } from "../parse/types.js";
 import type { Log, LogEntry } from "./log.js";
-import { match } from "./match.js";
+import { match, type TermSite } from "./match.js";
 import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
@@ -87,6 +87,8 @@ export type Translation = {
   holders: Map<string, string>;
   /** Each reading in the program: its parts and the ones its rows used (all of them, or it would be in `left`). */
   accounting: Map<ReadingId, { parts: Part[]; used: ReadonlySet<object> }>;
+  /** A reading's turn persons as the program writes them (`sp("a")`, `listener(0)`), for {@link match}'s sites. */
+  site: (reading: ReadingId) => TermSite;
 };
 
 // ── Atoms ───────────────────────────────────────────────────────────────────
@@ -253,6 +255,8 @@ class Translator {
   readonly holders = new Map<string, string>();
   /** Each reading's turn speaker, when the log's entries are given. */
   readonly speakers = new Map<ReadingId, string>();
+  /** Each reading's turn, by its place in the log's entries, when they are given. */
+  readonly turns = new Map<ReadingId, number>();
   /** The log's readings by id, for a link that names one (a backward stand-in's sentence). */
   readonly byId = new Map<ReadingId, Reading>();
   /** The accounting guard: the parts the current reading's rows used, and the readings whose claims they wrote. */
@@ -268,6 +272,21 @@ class Translator {
   speaker(reading: Reading): string {
     const who = this.speakers.get(reading.id.split("/")[0]!);
     return who === undefined ? "speaker" : `sp(${str(who)})`;
+  }
+
+  /**
+   * The one addressed in a reading's turn (`listener(N)`, N the turn's place in the log), or the constant `listener`
+   * when the turn is not known. Who that is the log does not say, so two turns' listeners are never one term.
+   */
+  listener(reading: Reading | ReadingId): string {
+    const turn = this.turns.get((typeof reading === "string" ? reading : reading.id).split("/")[0]!);
+    return turn === undefined ? "listener" : `listener(${turn})`;
+  }
+
+  /** A reading's turn persons as the program writes them, so a speaker or listener term fits only its own turn's. */
+  site(id: ReadingId): TermSite {
+    const who = this.speakers.get(id.split("/")[0]!);
+    return { speaker: who === undefined ? "speaker" : `sp(${str(who)})`, listener: this.listener(id) };
   }
 
   // ── Terms ──
@@ -313,7 +332,7 @@ class Translator {
       case "speaker":
         return this.speaker(ctx.reading);
       case "listener":
-        return t.kind;
+        return this.listener(ctx.reading);
       case "pronoun":
         return `pro(${ctx.id},${str(t.word.raw)})`;
       case "blank":
@@ -683,7 +702,7 @@ class Translator {
 
   /** The reading's rules into `ctx.out`; true, or why it is left out. */
   body(reading: Reading, frames: Frames, ctx: Ctx, mayOver?: "gate" | "outcome"): true | Why {
-    const claim = reading.claim;
+    const claim = this.sharedPredicate(reading.claim) ?? reading.claim;
     const denials = claimTerms(claim, false).filter((t): t is ListTerm => t.kind === "list" && !!t.frames?.some((f) => f.key === "joinSeries:u"));
     if (denials.length > 1) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
     const denial = denials[0];
@@ -835,6 +854,32 @@ class Translator {
     return { text, claim: replaceTerm(claim, list, item) };
   }
 
+  /**
+   * Row 1 over row 11: named members with a SHARED `/ɡ/` adjective and no verb (`zazozon zalazun zal gamayam.`) are
+   * each of its kind, `isa(X, K)`, as one name with the word is (`zazozon gamayam.`). The claim with the word as its
+   * predicate, carrying the word as its detail as the reader gives a lone `/ɡ/` word; undefined for any other shape.
+   */
+  sharedPredicate(claim: Claim): Claim | undefined {
+    const z = claim.roles.z;
+    if (claim.verb || claim.predicate.length || claim.roles.d || claim.roles.b || claim.details.length) return undefined;
+    if (z?.kind !== "list" || z.values.series !== "a" || z.parts.length !== 1 || z.frames?.length || z.bound) return undefined;
+    const shared = sharedAdjectives(z);
+    if (shared?.length !== 1 || !z.members.every((m) => m.kind === "thing" && m.named)) return undefined;
+    const word = shared[0]!.words[0]!;
+    if (shared[0]!.words.length !== 1 || word.family.kind !== "content") return undefined;
+    this.use(shared[0]!);
+    return { ...claim, predicate: [{ kind: "thing", head: word, root: word.family.roots.join(""), named: false, details: [shared[0]!] }] };
+  }
+
+  /**
+   * Row 14 over row 11: a SHARED `/ɡ/` adjective on a list of first-mention nouns is a detail of each, `detail(nm(..),
+   * dt(..))`, as the word on one noun is. The details, when every member is a first-mention noun of an asserted claim.
+   */
+  sharedDetails(list: ListTerm, ctx: Ctx): Detail[] | undefined {
+    const shared = sharedAdjectives(list);
+    return shared && ctx.asserted && list.members.every((m) => this.newMembers.has(m)) ? shared : undefined;
+  }
+
   members(reading: Reading, claim: Claim, ctx: Ctx): void {
     const lists = claimMemberLists(claim, reading);
     if (!lists.size) return;
@@ -855,10 +900,13 @@ class Translator {
         const v = group.length > 1 ? `X${i + 1}` : "X";
         subst.set(l, { text: v });
         body.push({ atom: `member(${ls},${v},G)` });
+        const shared = claim.predicate.includes(l) ? undefined : this.sharedDetails(l, ctx);
         l.members.forEach((m, j) => {
           const enc = claim.predicate.includes(l) ? this.kind(m, `${place}${j + 1}`, ctx) : this.term(m, `${place}${j + 1}`, ctx);
           this.facts.add(`member(${ls},${enc},${j + 1}).`);
+          for (const d of shared ?? []) this.rule(ctx, `detail(${enc},${this.detail(d, ctx)})`, [], "detail");
         });
+        if (shared) this.use(...shared);
       });
       this.rule(ctx, this.w(ctx, this.claim(claim, { ...ctx, subst })), body);
       // Each member place as a ground term, for fits.
@@ -999,12 +1047,13 @@ class Translator {
 
   /**
    * R3-1 row 8 and R3-3: an *or* list (joins.md#choice-e, set-joins.md#exclusivity-and-denying-a-whole-list). Each item
-   * is a choice; `el` and `ael` need at least one (`clash(noneof(Id))`, and the last item when the rest are denied);
-   * `el` and `em` allow at most one (one held denies the rest); open `aem` adds no rule. Joined on `fits(i(Id, K), P)`.
+   * is a choice; `el`, `ael` and `aem` need at least one (`clash(noneof(Id))`, and the last item when the rest are
+   * denied: "even `-m` still needs at least one of the listed items"); `el` and `em` allow at most one (one held denies
+   * the rest). Joined on `fits(i(Id, K), P)`.
    */
   orList(reading: Reading, claim: Claim, list: ListTerm, ctx: Ctx): true | Why {
     const { series, ending } = list.values;
-    const atLeast = ending === "l";
+    const atLeast = ending === "l" || series === "ae";
     const atMost = series === "e";
     if (!(series === "e" || series === "ae") || !(ending === "l" || ending === "m")) return { construction: `join.${series}`, key: `joinSeries:${series}`, reason: "noRow" };
     const items = this.items(reading, claim, list, ctx);
@@ -1055,6 +1104,10 @@ class Translator {
 
   // ── After the readings ──
 
+  sites(query: ReadingId, target: ReadingId): { querySite: TermSite; targetSite: TermSite } {
+    return { querySite: this.site(query), targetSite: this.site(target) };
+  }
+
   finish(): string {
     // Universal templates with each individual, for fits.
     for (const t of this.templates) {
@@ -1068,12 +1121,13 @@ class Translator {
     const pool = [...this.terms];
     for (const [slot, s] of this.slots) {
       for (const [text, p] of pool) {
-        if (match(s.claim, p.claim)) fits.push(`fits(${slot},${text}).`);
-        if (match(p.claim, s.claim)) fits.push(`fits(${text},${slot}).`);
+        if (match(s.claim, p.claim, this.sites(s.reading, p.reading))) fits.push(`fits(${slot},${text}).`);
+        if (match(p.claim, s.claim, this.sites(p.reading, s.reading))) fits.push(`fits(${text},${slot}).`);
       }
     }
     for (const q of this.denied) {
-      for (const [text, p] of pool) if (text !== q && match(this.terms.get(q)!.claim, p.claim)) fits.push(`fits(${q},${text}).`);
+      const source = this.terms.get(q)!;
+      for (const [text, p] of pool) if (text !== q && match(source.claim, p.claim, this.sites(source.reading, p.reading))) fits.push(`fits(${q},${text}).`);
     }
     const heads: string[] = [];
     if (this.options.lexicon) {
@@ -1156,6 +1210,12 @@ function joinOf(word: LexWord | undefined): { series: string; ending: string } |
 }
 
 /** An *or* list (R3-1 row 8): one `e` or `ae` part, no frame on it. */
+/** A list's SHARED `/ɡ/` adjectives that reach each member (`slot:adj`, role `distribute`), when every SHARED detail is one. */
+function sharedAdjectives(list: ListTerm): Detail[] | undefined {
+  const shared = list.sharedDetails ?? [];
+  return shared.length && shared.every((d) => d.key === "slot:adj" && d.values.role === "distribute" && !d.hosted && !d.details?.length) ? shared : undefined;
+}
+
 function isOrList(term: Term): term is ListTerm {
   return term.kind === "list" && (term.values.series === "e" || term.values.series === "ae") && term.parts.length === 1 && !term.frames?.length && !term.bound;
 }
@@ -1225,9 +1285,14 @@ export function readingParts(reading: Reading, members = true): Part[] {
 export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogEntry[] }, options: TranslateOptions = {}): Translation {
   const t = new Translator(options);
   // The turn's speaker (a say word's `-m` on `v`, `uwen` in a role), from the log's entries when given.
-  for (const entry of log.entries ?? []) for (const r of entry.readings) t.speakers.set(r.id, entry.speaker);
+  (log.entries ?? []).forEach((entry, turn) => {
+    for (const r of entry.readings) {
+      t.speakers.set(r.id, entry.speaker);
+      t.turns.set(r.id, turn);
+    }
+  });
   for (const reading of log.readings) t.byId.set(reading.id, reading);
   for (const reading of log.readings) t.reading(reading);
   const program = t.finish();
-  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, holders: t.holders, accounting: t.accounting };
+  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, holders: t.holders, accounting: t.accounting, site: (id) => t.site(id) };
 }

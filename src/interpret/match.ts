@@ -8,7 +8,8 @@
  * - Verb by root; roles by letter, never by word order; a role the query leaves out matches anything.
  * - Terms by the host's referent when both resolve; otherwise by root, the query's details a subset of the target's. A
  *   pronoun matches through its antecedent. A literal matches by exact payload. A number matches by its value
- *   (`value.ts`), so the written and the spoken form of one number match.
+ *   (`value.ts`), so the written and the spoken form of one number match. A speaker or listener term matches only the
+ *   same turn's person, when the sites name it ({@link TermSite}).
  * - A blank in the query binds to the target's term in that place.
  * - Widening and inference are switches, off by default ({@link Switch}); every match found through one names it.
  */
@@ -42,8 +43,13 @@ export type Switch = "widen" | "infer";
 
 const SWITCH_ORDER: Switch[] = ["widen", "infer"];
 
-/** Where a term sits, for the host's referent: the reading it is in. */
-export type TermSite = { reading?: Reading };
+/**
+ * Where a term sits: the reading it is in, for the host's referent; and the person who speaks and the person addressed in
+ * that reading's turn, as one name each (a turn's speaker, the solver's `sp("…")`). A speaker or listener term fits only
+ * the same turn's person: when both sides name one, they must be the same; when either side names none, the term fits
+ * any term of its kind, as a caller that does not know the turns needs.
+ */
+export type TermSite = { reading?: Reading; speaker?: string; listener?: string };
 
 export type MatchOptions = {
   /** The host's referent for a term (a person, an object in its world); undefined when it cannot resolve the term. */
@@ -176,8 +182,12 @@ function structural(query: Term, target: Term, state: State, at: string): boolea
       return target.kind === "thing" && target.root === query.root && target.named === query.named;
     }
     case "speaker":
-    case "listener":
-      return target.kind === query.kind;
+    case "listener": {
+      if (target.kind !== query.kind) return false;
+      const q = state.options.querySite?.[query.kind];
+      const t = state.options.targetSite?.[query.kind];
+      return q === undefined || t === undefined || q === t;
+    }
     case "pronoun":
       // An unbound pronoun has no antecedent to match through.
       return false;

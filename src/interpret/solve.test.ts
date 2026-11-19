@@ -599,3 +599,46 @@ describe("solve: what stands (R2-12, R2-13)", () => {
     assert.ok(r.stands.every((s) => s.label !== "in" || !r.attacks.some(([, b]) => b === s.reading)));
   });
 });
+
+describe("solve: faithfulness (the 2026-11-19 triage, fixture solve-faithful)", () => {
+  const f = fixture("faithful");
+  /** A log of fixture entries, each with its speaker. */
+  const turns = (...pairs: [string, string][]) => buildLog(pairs.map(([speaker, label], at) => ({ speaker, at, text: f.get(label)! })), tables);
+  const clashSets = async (l: ReturnType<typeof turns>) => (await clashes(l, base)).clashes.map((c) => c.readings);
+
+  it("uwen is the turn's speaker: two speakers' I walk / I don't walk never clash; one speaker's do", async () => {
+    assert.deepEqual(await clashSets(turns(["a", "f1"], ["b", "f2"])), []);
+    assert.deepEqual(await clashSets(turns(["a", "f1"], ["a", "f2"])), [["t:0.0", "t:0.1"]]);
+  });
+
+  it("awan is the turn's listener: two turns' you walk / you don't walk never clash", async () => {
+    assert.deepEqual(await clashSets(turns(["a", "f3"], ["b", "f4"])), []);
+    assert.match(translate(turns(["a", "f3"], ["b", "f4"]), { lexicon: tables }).program, /holds\(owuro\(z\(listener\(0\)\)\)\)[^\n]*\n[\s\S]*holds\(neg\(owuro\(z\(listener\(1\)\)\)\)\)/);
+  });
+
+  it("a question has no turn: does uwen walk? does not fit a logged speaker's claim", async () => {
+    assert.equal((await follows(turns(["a", "f1"]), q("yel zuwen vowurol."), base)).verdict, "unknown");
+  });
+
+  it("who walks? is a fill question: follows and couldBe answer beyond, reason fillAsk", async () => {
+    const l = turns(["a", "f5"], ["a", "f6"]);
+    for (const job of [follows, couldBe]) {
+      const a = await job(l, q("yel zar vowurol."), base);
+      assert.equal(a.verdict, "beyond");
+      assert.deepEqual(a.left.map((x) => x.reason), ["fillAsk"]);
+    }
+  });
+
+  it("aem needs at least one (set-joins.md#exclusivity-and-denying-a-whole-list, row 20)", async () => {
+    assert.equal((await follows(turns(["a", "f9"], ["a", "f10"]), q("zazozon veruvol."), base)).verdict, "yes");
+    assert.deepEqual(await clashSets(turns(["a", "f9"], ["a", "f10"], ["a", "f11"])), [["t:0.0", "t:0.1", "t:0.2"]]);
+  });
+
+  it("SHARED /ɡ/ after a join: a detail of each first-mention member; isa of each named member with no verb", async () => {
+    const t = translate(turns(["a", "f7"]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    for (const place of ["z1", "z2"]) assert.match(t.program, new RegExp(`^detail\\(nm\\("t:0.0",${place}\\),dt\\("slot:adj","gamayam"\\)\\) :- on`, "m"));
+    assert.deepEqual(translate(turns(["a", "f8"]), { lexicon: tables }).left, []);
+    assert.equal((await follows(turns(["a", "f8"]), q("zalazun gamayam."), base)).verdict, "yes");
+  });
+});

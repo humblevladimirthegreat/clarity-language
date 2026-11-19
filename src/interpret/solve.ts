@@ -23,7 +23,7 @@
 import clingo from "clingo-wasm";
 
 import type { Log } from "./log.js";
-import { match } from "./match.js";
+import { match, type TermSite } from "./match.js";
 import type { StepLexicon } from "./steps.js";
 import { detailRange, inRange, translate, unwrapText, type LeftOut, type Translation } from "./translate.js";
 import type { Claim, Detail, Reading, Term } from "./types.js";
@@ -269,9 +269,10 @@ function rangeDetail(term: Term | undefined): Detail | undefined {
 
 /**
  * Whether a stated claim answers the question: {@link match}, with a range on a question noun decided by
- * {@link inRange} against the target noun's count (row 12) and left out of the match.
+ * {@link inRange} against the target noun's count (row 12) and left out of the match. A speaker or listener term fits
+ * only its own turn's, from the translation's sites (a question has no turn).
  */
-function fitsQuestion(question: Claim, target: Claim, options: SolveOptions): SolveSwitch[] | undefined {
+function fitsQuestion(question: Claim, target: Claim, options: SolveOptions, sites: { querySite: TermSite; targetSite: TermSite }): SolveSwitch[] | undefined {
   let q = question;
   let t = target;
   for (const r of ["z", "d", "b"] as const) {
@@ -286,7 +287,7 @@ function fitsQuestion(question: Claim, target: Claim, options: SolveOptions): So
     q = { ...q, roles: { ...q.roles, [r]: { ...qt, details: qt.details.filter((d) => d !== range) } } };
     t = { ...t, roles: { ...t.roles, [r]: { ...tt, details: tt.details.filter((d) => d !== count) } } };
   }
-  const binding = match(q, t, { switches: { widen: !!options.widen }, lexicon: options.lexicon });
+  const binding = match(q, t, { switches: { widen: !!options.widen }, lexicon: options.lexicon, ...sites });
   return binding?.switches.filter((s): s is "widen" => s === "widen");
 }
 
@@ -375,7 +376,11 @@ function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]
     const source = p.translation.terms.get(inner ?? atom);
     if (!source) continue;
     // A denial rules the question out when the question says at least the denied claim.
-    const fit = inner ? fitsQuestion(source.claim, p.claim!, p.ctx.options) : fitsQuestion(p.claim!, source.claim, p.ctx.options);
+    const asked = p.translation.site(p.qid ?? "?");
+    const stated = p.translation.site(source.reading);
+    const fit = inner
+      ? fitsQuestion(source.claim, p.claim!, p.ctx.options, { querySite: stated, targetSite: asked })
+      : fitsQuestion(p.claim!, source.claim, p.ctx.options, { querySite: asked, targetSite: stated });
     if (!fit) continue;
     (inner ? no : yes).push(held);
     fit.forEach((s) => switches.add(s));
@@ -393,7 +398,20 @@ function answer(verdict: SolveVerdict, model: Model, start: string[], p: Extract
  * Does the question follow from the log? *yes* when a claim it fits holds in every world (cautious consequences; the
  * clash-free worlds when there are any, R3-4), *no* when a denial that rules it out does, *unknown* otherwise.
  */
+/**
+ * A fill question (`ask:fillAsk`, questions.md#fill-ask) asks for a term, not yes or no: {@link follows} and
+ * {@link couldBe} answer it `beyond`, with reason `fillAsk`, whatever the rows make of its blank.
+ */
+function fillQuestion(question: Reading | Claim): Answer | undefined {
+  if (!("claim" in question)) return undefined;
+  const force = question.frames.find((f) => f.family === "force" && f.values.ask === "fillAsk");
+  if (!force) return undefined;
+  return { verdict: "beyond", because: [], switches: [], left: [{ reading: question.id, construction: force.construction, key: force.key, reason: "fillAsk" }] };
+}
+
 export async function follows(log: Pick<Log, "readings">, question: Reading | Claim, options: SolveOptions = {}): Promise<Answer> {
+  const fill = fillQuestion(question);
+  if (fill) return fill;
   const p = prepare(log, question, options);
   if (!p.ok) return p.answer;
   const big = tooLarge(p.program, options);
@@ -415,6 +433,8 @@ export async function follows(log: Pick<Log, "readings">, question: Reading | Cl
  * when there are any, R3-4), *no* when a denial that rules it out holds in every world, *unknown* otherwise.
  */
 export async function couldBe(log: Pick<Log, "readings">, question: Reading | Claim, options: SolveOptions = {}): Promise<Answer> {
+  const fill = fillQuestion(question);
+  if (fill) return fill;
   const p = prepare(log, question, options);
   if (!p.ok) return p.answer;
   const big = tooLarge(p.program, options);
