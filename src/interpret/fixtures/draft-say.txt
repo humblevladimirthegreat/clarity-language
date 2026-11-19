@@ -1,0 +1,46 @@
+# Draft fixture (R2, group (b)): say words (permission-consent.md#say-words, #permission, #consent, #say-reach).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Not a solve-* fixture: phase 3 (B6) renames it once its rows are confirmed and built.
+# The act W = Azozon walks. No say word claims W (p3 alone does).
+
+@ p1
+zazozon vowurol hwuval.
+= The rules allow Azozon to walk.
+
+# p1 + p2: same party, reach and act, opposite answers (R2-7).
+@ p2
+zazozon vowurol hwuvul.
+= The rules forbid Azozon to walk.
+
+# p2 + p3: the act happens against a stated ban; never a clash (R2-9).
+@ p3
+zazozon vowurol.
+= Azozon walks.
+
+# p4 + p5: two parties' say; never a clash.
+@ p4
+zazozon vowurol hwuvam blalazun.
+= Alazun lets Azozon walk.
+
+@ p5
+zazozon vowurol hwuvum blahelan.
+= Ahelan does not let Azozon walk.
+
+# Consent (R2-6): is the act claimed?
+@ p6
+zazozon dalazun vayebel hwudam.
+= Azozon looks at Alazun, and Alazun agreed.
+
+# Requirement (R2-8): does it give permission, and does it clash with p2?
+@ p7
+zazozon vowurol hwuvol.
+= The rules require Azozon to walk.
+
+# Reach (R2-7): standing permission beside this episode's ban (p8 + p5 with the same party is the test; here the speaker).
+@ p8
+zazozon vowurol hwovam.
+= Azozon may walk any time; I allow it.
+
+@ p9
+zazozon vowurol hwuvum.
+= Azozon may not walk (this time); I say so.

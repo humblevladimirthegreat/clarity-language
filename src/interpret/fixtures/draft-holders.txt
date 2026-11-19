@@ -1,0 +1,52 @@
+# Draft fixture (R2, group (b)): holders (holder.md#naming-a-holder, #what-the-holder-covers).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Not a solve-* fixture: phase 3 (B6) renames it once its rows are confirmed and built.
+# A = Alazun left. b1 + b2: one holder's views clash. b1 + b3: two holders never clash. b1 + b4: a holder's view never clashes with your own claim.
+
+@ b1
+zalazun theyomazozon vudurul.
+= I gather Azozon thinks Alazun left.
+
+@ b2
+zalazun thebamazozon vudurul vul.
+= I hear Azozon thinks Alazun did not leave.
+
+@ b3
+zalazun theyomahelan vudurul vul.
+= I gather Ahelan thinks Alazun did not leave.
+
+@ b4
+zalazun vudurul vul.
+= Alazun did not leave.
+
+# Carried holder (carry:holder): the second sentence is Azozon's view too, not your claim.
+@ b5
+zalazun theyomazozon vudurul. zalazun vezuvel.
+= I gather Azozon thinks Alazun left. Alazun is asleep (in Azozon's view).
+
+# A holder on MAY (R2-3): MAY has no row yet.
+@ b6
+zalazun thomamazozon vudurul.
+= Maybe Azozon thinks Alazun left.
+
+# Holder terms (R2-4): the interlocutors, and two first-mention "someone"s.
+@ b7
+zalazun theyomayan vudurul.
+= I gather we both think Alazun left.
+
+@ b8
+zalazun theyomeyel vudurul.
+= I gather someone thinks Alazun left.
+
+@ b9
+zalazun theyomeyel vudurul vul.
+= I gather someone thinks Alazun did not leave.
+
+# Inference inside one view (R2-5): b10 is Azozon's hinge, b11 Azozon's view of its condition.
+@ b10
+zalazun theyomazozon vudurul thohem blarl zazozon vowurol.
+= I gather Azozon thinks Alazun leaves if Azozon walks.
+
+@ b11
+zazozon theyomazozon vowurol.
+= I gather Azozon thinks Azozon walks.

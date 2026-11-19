@@ -211,11 +211,149 @@ The lowest-risk shape, with speed and program size not optimized (user, 2026-11-
 
 ## Open decisions
 
-None open for phase 2. R2 adds the group (b) and (c) rows and the attack relation here, each with options and a **Recommendation:**.
+R2 drafted the group (b) and (c) rows on 2026-11-19, in the encoding of `docs/meta/solver.md` (a denial is `holds(neg(T))`; each rule's `fired` and `used` twins are left out). Fixtures: `src/interpret/fixtures/draft-holders.txt` (b1–b11), `draft-say.txt` (p1–p9) and `draft-because.txt` (c1–c13), not `solve-*` until B6 and B7 build them. Every line parses.
+
+### R2-1: rows that copy a stated rule
+
+Each row reads one classification table row and copies what its grammar anchor states. To confirm.
+
+1. **A holder's view.** `xFamily:holder` with its host (`overlay:evidential:th` or `overlay:may:th`, `holderHost`) (`holder.md#what-the-holder-covers`: the event is "what the holder takes to be so; you do not assert it"). `holds(view(H, T)) :- on(Id).`, and a denial inside it `holds(view(H, neg(T))) :- on(Id).`; never `holds(T)`. The seam word is yours ("says how you know about the holder's view"), so its channel is data, `via(Id, Channel)`, outside the term: two reports of one holder by different channels meet. One holder's views clash through the generic rules, wrapped: `clash(view(H, P)) :- holds(view(H, P)), holds(view(H, neg(P))).` and its `fits` form. Two holders differ in `H` and never clash, and a view never clashes with your claim (Sketch, *Frames stay data*). b1 + b2 give `clash(view(azozon, departure(alazun)))`; b1 + b3 and b1 + b4 give none. Whether that clash counts as the log's is R2-2.
+2. **A carried holder.** `carry:holder` link (`holder.md#naming-a-holder`: "your bare claims go on giving that person's view, until a new frame"). The later reading takes row 1 with the `H` of the reading it links to. b5 gives `view(azozon, departure(alazun))` and `view(azozon, sleep(alazun))`, and no `holds(sleep(alazun))`.
+3. **Who the holder is.** The ending table on `holder.md#naming-a-holder`: a name is its root id; `-r` and the topic pronoun resolve through `throughAntecedent`; `-lx` on a kind of person (*some people*) and a bare kind (`theyomeyel`, *someone*) are a first-mention noun, `nm(Id, h)` with its `isa` fact (row 14), so b8 and b9 are two people and never clash. The other holder terms are R2-4.
+4. **A say word.** `wordFamily:say`, values `reach`, `part`, `answer`, `ending` (`permission-consent.md#say-words`; `#permission`: "a say word says only who allows or demands it"). `holds(say(Who, Part, Reach, Answer, Ending, T)) :- on(Id).`, and no `holds(T)` (Sketch: a say word's content stays wrapped). `Who` is the hosted `bl-` word when there is one; else on `v` it is `speaker` for `-m`, `rules` for `-l`, `unsaid` for `-r` ("nobody said") (`#permission`); on `z`, `d`, `b` it is that role's filler in the claim (`#consent`). Pair reach `e` on `z` / `d` / `b` keeps its `bl-` word as a seventh argument, `to(X)` (`#say-reach`). p1 gives `say(rules, v, u, a, l, walk(azozon))`; p4 `say(alazun, v, u, a, m, walk(azozon))`; p4 + p5 never clash (two parties). Consent is R2-6.
+5. **Because.** `overlay:clause_hinge:th` / `:g` with gloss `because` (`because-and-iff.md#choosing-a-hinge`: "enough; condition asserted as the reason"; the outcome is the clause's claim). `holds(Out) :- on(Id).` `holds(Cond) :- on(Id).` `holds(cause(Cond, Out)) :- on(Id).` `Cond` is the hosted clause's term, or with a noun (`gahum blugalal`) the noun's term, whose kind row 14 gives. *Enough* adds no rule while both sides are claimed; on a closed universal the row takes row 8's body, as a hinge does (`usually-vs-must.md#how-things-work`). c1 gives `walk(azozon)`, `sleep(alazun)` and `cause(sleep(alazun), walk(azozon))`; c1 + c2 clash on `sleep(alazun)`, c1 + c4 on `walk(azozon)`.
+6. **Not because.** `joinSeries:u` in the hinge's stance list (`verb-and-stance-joins.md#stance-joins`: "the claim itself still stands and only its grounds are denied"; `#stance-join-before-barl`). `holds(Out) :- on(Id).` `holds(neg(cause(Cond, Out))) :- on(Id).` c1 + c3 give `clash(cause(sleep(alazun), walk(azozon)))`. Whether the condition holds is R2-10.
+7. **Fault and share.** Gloss `because.fault` (`-l`) and `because.share` (`-r`) (`fault.md#fault`): row 5, plus the marker `holds(fault(Cond, Out))` ("the reason broke a norm") or `holds(share(Cond, Out))` ("one share among others"). `thahum` claims no fault and denies none, so c5 + c7 do not clash. The link term they share is R2-10.
+8. **Only because.** `thebem` then `thahum`, ordered by rule (`because-and-iff.md#choosing-a-hinge`: "stacks two hinges: `thebem` (the outcome needs it), then `thahum` with the condition"). Row 5 of this list, plus row 6 (only if) of `docs/meta/solver.md` on the same condition. c8 gives c1's atoms and row 6's two rules. The reading gives `thebem` no content of its own ([Findings](#findings)).
+9. **Contrary to.** `hookJob:zone`, frame:contrary (`contrary-to.md#contrary-to-holder`: "the event is still your claim"; `#contrary-to-stance`: the word after `uom` "no longer applies to the claim"). `holds(T) :- on(Id).` `holds(against(T, Z)) :- on(Id).` The zone `Z` is `plan(H)`, `channel(Gloss, H)` or `say(Who, Part, Reach, Answer, Ending)`, with `H` the holder after `uom` or `speaker`. c9 gives `walk(azozon)` and `against(walk(azozon), plan(speaker))`; c4 clashes with c9, c10 and c11 on `walk(azozon)`. What the zone implies is R2-11.
+
+### R2-2: a clash inside one holder's view
+
+b1 + b2: either one report is wrong, or Azozon holds two views that cannot both be so, which people do. No page says which.
+
+- (A) A `clash` like any other: `clashes`, `giveUp`, `whyNot` and a `both` verdict see it, and the reply names the holder (*In Azozon's view these cannot all hold: b1, b2.*).
+- (B) A separate atom, `torn(H, P)`, on its own field of `clashes`, never in `giveUp`.
+- (C) No clash inside a view.
+
+**Recommendation:** (A) **(medium)**. A consumer (who knows what, the argument map) wants the two reports flagged with their readings, and the reply can say whose view; (B) gives every consumer a second clash kind to handle, and (C) drops what the B6 test names (*one holder's own beliefs can clash*).
+
+### R2-3: a holder on MAY
+
+b6, *Maybe Azozon thinks Alazun left.* MAY has no row yet (`docs/meta/solver.md`, the edge).
+
+- (A) Left out (`left`), as MAY is, until MAY's row.
+- (B) A choice, `{ holds(view(H, T)) } :- on(Id).`: Azozon could think it.
+- (C) As a channel host: the view holds.
+
+**Recommendation:** (A) **(medium)**. (B) is what a MAY row would give, so it lands with that row and both read the same; (C) claims more than *maybe*.
+
+### R2-4: holder terms no page ties together
+
+The associative `-x` (`theyomazozonx`, *Azozon and co.*), the interlocutors (`theyomayan`, b7) and the generic pronoun (`theyomeyen`). `holder.md#what-the-holder-covers` says the interlocutors' view is "one you both share", that "you can't know the listener's memory, only claim the view is shared", and that "you are never the holder".
+
+- (A) Each is its own holder term, `grp(azozon)`, `interlocutors`, `generic`, with nothing passing between them or into your claims. The generic view is one holder, so two generic views can clash.
+- (B) As A, and the interlocutors' view is also your claim, `holds(T)`, since you are one of them.
+- (C) As A, and a group's view is each member's view.
+
+**Recommendation:** (A) **(medium)**. (B) would turn a claim that a view is shared into your plain claim, which the page keeps apart; (C) needs the group's members, which `-x` leaves open. A consumer that wants either can add the rule as a host rule, named in the answer.
+
+### R2-5: inference inside one view
+
+b10 + b11: Azozon's own hinge, and Azozon's view of its condition. Does Azozon's view hold *Alazun leaves*? `holder.md#what-the-holder-covers` makes a hinge under a holder the holder's.
+
+- (A) No: a view holds only what is reported.
+- (B) The holder's own stated rules (rows 5 to 11 under the same holder) run inside the view: `holds(view(H, Out)) :- fits(c(Id), P), holds(view(H, P)), on(Id).`, and the same for universals and membership. Your own rules never reach a view.
+- (C) As B, and your own rules run in every view.
+
+**Recommendation:** (B) **(medium)**. A who-knows-what consumer asks what someone would conclude from what they think; (A) answers *cannot say* to the plain case, and (C) puts your premises in their head, the false-belief case the seam keeps apart. The answer names the holder's readings, so the step shows.
+
+### R2-6: does consent claim the act?
+
+The Sketch wraps every say word. On `permission-consent.md#consent` the glosses read as if the act happened (p6, *Azozon looks at Alazun, and Alazun agreed*), while permission's do not (*Azozon may walk*); the page states neither. The vow `zuwen vowurol hwuzal.` (*I promise to walk*) is consent on `z` with no act yet.
+
+- (A) Wrapped for every say word.
+- (B) Consent (`z` / `d` / `b`) on a statement also claims the act; permission (`v`) does not.
+- (C) By ending or answer: a granted consent (`a`) claims the act, the rest do not.
+
+**Recommendation:** (A) **(medium)**. The vow shows consent that claims no act, so (B) would read a promise as done; a host that wants the act asks for it in its own sentence. A grammar sentence on whether `hwudam` reports the act would settle (C).
+
+### R2-7: which say words clash
+
+p1 + p2 (the rules allow, the rules forbid); p8 + p9 (standing permission, this episode's ban). No page says two say words exclude each other.
+
+- (A) None: say terms are data.
+- (B) The same `Who`, `Part`, `Reach`, `Ending` and a fitting act, with answers `a` and `u`, or `o` and `u`: `clash(say(W, P, R, u, E, T)) :- holds(say(W, P, R, a, E, T)), holds(say(W, P, R, u, E, T)).` and the `o` line. Another party, source, ending or reach never clashes, so p8 + p9 and p4 + p5 stand together.
+- (C) As B, and `e` (*their call*: "neither allowed, forbidden, nor required") against `o` and `u`.
+
+**Recommendation:** (B) **(medium)**. An agent-permissions host needs *the rules allow it* and *the rules forbid it* flagged, with both readings; keying on reach keeps a standing grant beside a one-time ban, which the reach vowels exist to say. (C) rests on reading *their call* as excluding a demand, which the page does not say.
+
+### R2-8: does a requirement give permission?
+
+p7, *the rules require Azozon to walk*: may Azozon walk?
+
+- (A) No: `o` and `a` are separate answers.
+- (B) Yes: `holds(say(W, P, R, a, E, T)) :- holds(say(W, P, R, o, E, T)).`, with its `fired` twin.
+
+**Recommendation:** (B) **(medium)**. A host asking *may the agent do this?* after *the rules require it* gets *yes*, citing p7, instead of *cannot say*; with R2-7 (B), `o` against `u` then follows from `a` against `u`.
+
+### R2-9: an act against a stated say word
+
+p2 + p3: the rules forbid Azozon to walk, and Azozon walks. Not a clash: the page has `uom hwuvul` to say it on purpose (`contrary-to.md#contrary-to-say`).
+
+- (A) Nothing is derived.
+- (B) `holds(against(T, say(W, P, R, u, E))) :- holds(T), holds(say(W, P, R, u, E, T)).` (with `fits` where the terms differ): the atom R2-1 row 9 gives for `uom hwuvul`, never a clash. Only answer `u` (the page: "the event breaks a rule or someone's refusal").
+
+**Recommendation:** (B) **(medium)**. A host checking an agent against its rules asks *did anything go against a ban?* and gets the pair of readings, whether the speaker said `uom` or not.
+
+### R2-10: the link term, and what *not because* says of the condition
+
+Three questions R2-1 rows 5 to 7 leave open:
+
+1. Do `thahul` and `thahur` carry the same link, `cause(C, O)`, so *not because* (c3) clashes with *partly because* (c6) and with fault (c5)? (A) One link for all three endings, the markers on top. (B) One link per ending, and *not because* denies only `thahum`'s.
+2. Does *not because* claim its condition? (A) No: the condition stays unstated (reader rule 4). (B) Yes, as *because* does.
+3. Does fault meet the say words: does c5 (*Alazun was wrong to speak*) clash with *the rules allow Alazun to speak*? (A) No: `fault` is a marker. (B) Yes, fault as `say(rules, v, u, u, l, C)`.
+
+**Recommendation:** 1 (A), 2 (A), 3 (A), each **(medium)**. *Not because of the rain* rules the rain out as any part of the reason, so the argument map's *deny the link* should meet a partial cause too. The page says only that the claim stands and the grounds are denied, so claiming the condition would invent a claim. A norm is not a stated rule, so fault against a rule would clash where the speaker meant no contradiction.
+
+### R2-11: what a contrary zone implies
+
+c10 (*against the rules*) beside c12 (*the rules allow it*); c11 (*contrary to what I hear Alazun thinks*).
+
+- (A) The marker `against(T, Z)` only.
+- (B) A say-word zone also claims its say word on the act, `holds(say(W, P, R, u, E, T))`, so c10 + c12 clash under R2-7 (B) and *do the rules forbid it?* answers *yes*. A plan or channel zone stays a marker.
+- (C) As B, and a plan or channel zone with a holder also gives that holder's view of the denial, `view(H, neg(T))`.
+
+**Recommendation:** (B) **(medium)**. The page says the say word names "a rule or someone's refusal", so *against the rules* cannot hold beside *the rules allow it*; a plan or a view "says otherwise" without saying what, so (C) would give a holder a view no page states.
+
+### R2-12: the attack relation for *what stands*
+
+The ASPARTIX encodings take `arg(X)` and `att(X, Y)`. Arguments are the log's readings, `arg(Id) :- on(Id).`; a nested reading (a hinge's clause, a quote) belongs to its reading. Which readings attack which?
+
+- (A) **Rebut on the clashing pair.** For each clash, the readings whose `fired` gives its two sides attack each other, both ways: `att(A, B) :- fired(A, P), fired(B, neg(P)).` `att(B, A) :- fired(A, P), fired(B, neg(P)).`, with the `fits` form, the `view` form (R2-2), and for `notall(Id)` and `none(Id)` the denying reading against each reading that fired an item. A clash's other readings (premises) are not attacked, and a reading whose own atoms clash attacks itself.
+- (B) Every reading of a smallest clash attacks every other.
+- (C) As A, with one-way attacks the grammar does not state: a claim about a named thing defeats a closed universal (a counter-case), or a stronger channel a weaker one.
+
+Under choices, attacks come from the brave `fired` atoms of a first run; the `att` facts then feed the ASPARTIX program in a second. An open universal never fires against a stated denial (row 10's `not holds(neg(..))`), so it neither attacks nor is attacked.
+
+**Recommendation:** (A) **(medium)**. It names the two readings that disagree and leaves a shared premise standing: in `solve-clash`, s1 is attacked by s2 and by s5, and s3 and s4 stand, where (B) would leave *Tweety is a bird* undecided because of what someone said about flying. (C) needs a preference no page states; a host can add its own `att` facts, named in the answer. c1 + c2 + c13: `att(c1, c2)` and `att(c2, c1)`; grounded gives c13 in and c1, c2 undecided; preferred gives {c1, c13} and {c2, c13}.
+
+### R2-13: semantics, and what `stands` returns
+
+`stands(log, options)` labels each reading `in`, `out` (attacked by a reading that is in) or `undec`. Credulous acceptance is brave and skeptical is cautious over stable or preferred extensions; grounded has one extension, where both agree.
+
+- (A) Grounded by default, `semantics: 'stable' | 'preferred'` as options (the plan).
+- (B) Preferred by default.
+
+**Recommendation:** (A) **(high)**. Grounded has one answer, is stratified and fast, and never accepts a reading an unanswered objection meets, so a consumer never shows one side of a live disagreement as the winner. Note for the user: with R2-12 (A) every attack is mutual, so grounded is exactly the unattacked readings, and the stable and preferred extensions are the largest sets with no attacking pair. The three semantics differ only once a one-way attack exists (R2-12 (C), or a host's own).
 
 ## Findings
 
-F1 found no sentence the grammar could not say. *(R2 writes here: each sentence the grammar could not say, with its English and the workaround used.)*
+F1 found no sentence the grammar could not say. R2 found none either: every English line in the three draft fixtures has a form, *not because* included (`thahum thul blarl`, `verb-and-stance-joins.md#stance-join-before-barl`).
+
+R2 found two gaps in what a reading carries, for B6 and B7 (the fix is the reader or a classification table note, not a walker):
+
+- **A holder's party is not marked named.** In `zalazun theyomazozon vudurul.` the holder frame's `party` has root `azozo` and `named: false`, where `zazozon` as `z` is named. Keyed as a first-mention noun, b1 and b2 would be two holders and never clash. The reader should mark a `-n` holder named (`xFamily:holder`), or B6 keys holders by root and ending.
+- **A stacked `thebem` has no content.** In `zazozon vowurol thebem thahum blarl zalazun vezuvel.` the `thebem` frame has no `hosted`; its condition is the `thahum` frame's clause (`because-and-iff.md#choosing-a-hinge`). B7 needs it on the reading, as a link or a note on the `overlay:clause_hinge:th` row, before R2-1 row 8 can be built.
 
 ## Background
 

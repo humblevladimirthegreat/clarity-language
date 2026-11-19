@@ -1,0 +1,64 @@
+# Draft fixture (R2, group (c)): because, fault, contrary to, and what stands (because-and-iff.md#choosing-a-hinge, fault.md#fault, contrary-to.md, verb-and-stance-joins.md#stance-join-before-barl).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Not a solve-* fixture: phase 3 (B7) renames it once its rows are confirmed and built.
+# W = Azozon walks, S = Alazun is asleep.
+
+@ c1
+zazozon vowurol thahum blarl zalazun vezuvel.
+= Azozon walks because Alazun is asleep.
+
+# c1 + c2: a denial of the condition (rebuts c1).
+@ c2
+zalazun vezuvel vul.
+= Alazun is not asleep.
+
+# c1 + c3: the claim stands and only its grounds are denied (the link).
+@ c3
+zazozon vowurol thahum thul blarl zalazun vezuvel.
+= Azozon walks, but not because Alazun is asleep.
+
+# c1 + c4: a denial of the outcome.
+@ c4
+zazozon vowurol vul.
+= Azozon does not walk.
+
+# Fault and share (R2-10): the same claim and condition, with a marker.
+@ c5
+zazozon vudurul thahul blarl zalazun vezuyol.
+= Azozon left because Alazun spoke, and Alazun was wrong to.
+
+@ c6
+zazozon vudurul thahur blarl zalazun vezuyol.
+= Alazun's speaking is part of why Azozon left.
+
+@ c7
+zazozon vudurul thahum blarl zalazun vezuyol.
+= Azozon left because Alazun spoke. (no fault claimed; no clash with c5)
+
+# Only because: rows 6 and the because row stacked.
+@ c8
+zazozon vowurol thebem thahum blarl zalazun vezuvel.
+= Azozon walks only because Alazun is asleep.
+
+# Contrary to (R2-11): the event is your claim; c4 clashes with each.
+@ c9
+zazozon vowurol uom thagom.
+= Azozon walks, contrary to my plan.
+
+@ c10
+zazozon vowurol uom hwuvul.
+= Azozon walks against the rules.
+
+@ c11
+zazozon vowurol uom thebamalazun.
+= Azozon walks, contrary to what I hear Alazun thinks.
+
+# c10 + c12: with R2-7 and R2-11 (B), the rule c10 goes against clashes with this one.
+@ c12
+zazozon vowurol hwuval.
+= The rules allow Azozon to walk.
+
+# What stands (R2-12): c1 + c2 + c13. Under the recommended attack, c1 and c2 attack each other; c13 stands alone.
+@ c13
+zahelan vehohel.
+= Ahelan sits.
