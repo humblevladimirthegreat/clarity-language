@@ -20,16 +20,32 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { ParseResult } from "../parse/types.js";
 import { readParse } from "./read.js";
-import type { Reading } from "./types.js";
+import type { Frame, Reading, Term } from "./types.js";
 
 /** One turn as the host gives it. `at` is the host's time or sequence number. */
 export type Turn = { speaker: string; at: number; text: string };
+
+/**
+ * One the turn is for: the party of a call (speech-moves.md#vocative), with the call's frame and the log index of the
+ * turn that made it; or another speaker of the log.
+ */
+export type Addressee = { kind: "call"; party: Term; frame: Frame; turn: number } | { kind: "speaker"; speaker: string };
+
+/**
+ * Who a turn is for (`zawan`, `zaya`). A turn's own calls name them (`by: "call"`). A turn with no call is for the
+ * speaker's last call (`lastCall`); with none, when the log has two speakers, for the other one (`otherSpeaker`); else it
+ * is for no one the log names, and the entry has no `addressees`. Decision D16 of `solver-coverage.md`: this carries
+ * forward as the current addressees do for `awanx` (collectives.md#vocatives-y).
+ */
+export type Addressed = { by: "call" | "lastCall" | "otherSpeaker"; to: Addressee[] };
 
 export type LogEntry = Turn & {
   /** The turn's sentences in the log's parse, in text order: `[first, first + count)`. Absent for a turn outside the window. */
   sentences?: { first: number; count: number };
   /** Its sentences' readings (top level; nested readings sit inside them). Empty outside the window. */
   readings: Reading[];
+  /** Who the turn is for; absent when the log names no one. Kept as it was when the turn leaves the window. */
+  addressees?: Addressed;
 };
 
 export type Rejected = Turn & { error: string };
@@ -141,7 +157,52 @@ function reread(log: Log, entries: LogEntry[], lastCount: number, tables: Classi
     first += count;
     return { ...entry, sentences: range, readings: readings.filter((r) => at(r) >= range.first && at(r) < range.first + count) };
   });
-  return { ...log, entries: out, parse, readings };
+  return { ...log, entries: addressed(out), parse, readings };
+}
+
+/**
+ * A turn's own calls: the call frames of its readings, one per call word. A call sits on the left edge of a parsed
+ * utterance and frames each of its bodies, and an utterance runs on across host turns until a `/y/` word starts the next,
+ * so a call is the turn's own only on the reading of its utterance's first body.
+ */
+function callsOf(entry: LogEntry, turn: number): Addressee[] {
+  const out: Addressee[] = [];
+  const seen = new Set<number | undefined>();
+  for (const reading of entry.readings) {
+    if (reading.source.body !== 0) continue;
+    for (const frame of reading.frames) {
+      if (frame.key !== "edge:vocative" || !frame.party || seen.has(frame.words[0]?.at)) continue;
+      seen.add(frame.words[0]?.at);
+      out.push({ kind: "call", party: frame.party, frame, turn });
+    }
+  }
+  return out;
+}
+
+/**
+ * Each turn's addressees, in log order (D16): its own calls; else its speaker's last call; else, with two speakers in
+ * the log so far, the other one. A turn outside the window keeps the addressees it had.
+ */
+function addressed(entries: LogEntry[]): LogEntry[] {
+  const out: LogEntry[] = [];
+  const lastCall = new Map<string, Addressee[]>();
+  const speakers: string[] = [];
+  entries.forEach((entry, i) => {
+    if (!speakers.includes(entry.speaker)) speakers.push(entry.speaker);
+    let addressees: Addressed | undefined;
+    if (!entry.sentences) addressees = entry.addressees;
+    else {
+      const calls = callsOf(entry, i);
+      const last = lastCall.get(entry.speaker);
+      if (calls.length) addressees = { by: "call", to: calls };
+      else if (last) addressees = { by: "lastCall", to: last };
+      else if (speakers.length === 2) addressees = { by: "otherSpeaker", to: [{ kind: "speaker", speaker: speakers.find((s) => s !== entry.speaker) ?? entry.speaker }] };
+    }
+    if (addressees && addressees.by !== "otherSpeaker") lastCall.set(entry.speaker, addressees.to);
+    const { addressees: _old, ...rest } = entry;
+    out.push(addressees ? { ...rest, addressees } : rest);
+  });
+  return out;
 }
 
 export type QuestionOptions = {

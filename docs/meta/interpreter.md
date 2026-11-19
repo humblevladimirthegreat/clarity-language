@@ -131,7 +131,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `ability:w` | frame:ability | `can-and-cant.md#ability-fallback` | adjective reach |
 | overlay | `identity:g` | structure | `predication.md#identity` | fills `claim.predicate` |
 | overlay | `clause_hinge:th` | frame:hinge | `causation.md#if` | *Only because* (`because-and-iff.md#choosing-a-hinge`): a `thebem` with no `/b/`, right before a `thahum` that has one, takes its condition: the same `hosted` term, and its own `grounds` link when the condition is the next sentence |
-| overlay | `clause_hinge:g` | frame:hinge | `causation.md#if` | on a noun; frame by default |
+| overlay | `clause_hinge:g` | frame:hinge | `causation.md#if` | on a noun; frame by default. *Depends on* (`because-and-iff.md#choosing-a-hinge`, `gebem gahum`): a `gebem` detail with no `/b/`, right before a `gahum` detail of the same noun that has one, takes its condition: the same `hosted` term (`/ɡ/` takes no `blarl`) |
 | overlay | `clause_hinge:h` | frame:hinge | `dependents.md#hinges` | whereas, so … that; frame by default |
 | overlay | `clause_hinge:*:while` | detail:time | `dependents.md#hinges` | time hinge, any PoS |
 | overlay | `clause_hinge:*:until` | detail:time | `dependents.md#hinges` | time hinge, any PoS |
@@ -187,7 +187,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | ask | `rhetorical` | frame:force | `more-turn-words.md#rhetorical` |  |
 | ask | `none` | structure | `questions.md#question` | Not a question |
 | answer | `answer` | link | `questions.md#fill-ask` | A reply filling a blank |
-| shared | `distribute` | link | `list-structure.md#shared-after-the-join` | SHARED describes each member |
+| shared | `distribute` | link | `list-structure.md#shared-after-the-join` | SHARED describes each member. A hook right after a noun list's join word ("is SHARED, like an adjective there: it belongs to every item") is read by its `hookJob` row into the list's `sharedDetails` with role `distribute`, not into the claim's details; the parser keeps it a clause unit and gives it no `SharedRecord`, so it has no `shared` link |
 | shared | `collective` | link | `collectives.md#verbs-v` | The list acts as one |
 | shared | `scale` | link | `list-structure.md#shared-after-the-join` | A shared scale word after the join |
 | shared | `equative` | link | `list-structure.md#shared-after-the-join` |  |
@@ -214,7 +214,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | slot | `bar` | frame:bar | `bars.md#bars` | Inside the rank fence: covers only the ranking, so it nests (rule 2) and is never in a pair |
 | slot | `th` | frame:attitude | `feelings.md#speaker-attitude` | **Added.** A plain `/th/` word on an ordinary root: speaker attitude (*hopefully*; a feeling root such as *angry*, "Any feeling root works the same way", `feelings.md#speaker-attitude`) and speech manner (`speech-manner.md#speech-manner`). Whole clause. No construction id yet: today it reads as `lexReading:ordinary` |
 | slot | `dependent` | structure | `dependents.md#dependent-clauses` | `Clause.dependent`: a nested reading in the stand-in's term |
-| edge | `vocative` | frame:call | `speech-moves.md#vocative` | Names the addressee (`party`); in the scope record, and commutes with every frame |
+| edge | `vocative` | frame:call | `speech-moves.md#vocative` | Names the addressee (`party`); in the scope record, and commutes with every frame. The log gives each turn its `addressees` (`LogEntry`): its own calls, the frames on its utterance's first body; else its speaker's last call; else, with two speakers, the other one (decision D16 of `solver-coverage.md`) |
 | edge | `interjection` | frame:attitude | `speech-moves.md#interjections-reactions` | A reaction |
 | edge | `polar` | link | `questions.md#polar-particle` | Replies to the yes / no question before it; a body after it is the answer |
 | edge | `force` | frame:force | `speech-moves.md#speech-act-statement-question-command` | On the turn's left edge, outside the body; firm / soft / for-now ending is a `value` (`firm-soft.md#firm-or-soft-act`); a stack's first word is the act (`more-turn-words.md#stacked-acts`) |

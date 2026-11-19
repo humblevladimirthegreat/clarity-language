@@ -209,4 +209,21 @@ describe("ask: switches", () => {
     const unpaired = turns("[z-Azozon | z-Alazun | z-and] | [d-cat | d-dog | d-and] | v-see");
     assert.deepEqual(found("y-question | z-Azozon | d-cat | v-see", unpaired, ["infer"]), []);
   });
+
+  // pronouns.md: `uwen` is the speaker in this conversation, so *did I walk?* is about the asker.
+  it("a speaker term in the question fits only readings the asker said", () => {
+    const log = buildLog(
+      [
+        { speaker: "A", at: 0, text: "zuwen vowurol." },
+        { speaker: "B", at: 1, text: "zuwen vezuvel." },
+      ],
+      tables,
+    );
+    const said = (text: string, asker?: string): number[] => ask(readText(text, tables, { text: "q" })[0]!, log, {}, asker === undefined ? {} : { asker }).map((m) => m.entry?.at ?? -1);
+    assert.deepEqual(said("yel zuwen vowurol.", "A"), [0]);
+    assert.deepEqual(said("yel zuwen vowurol.", "B"), []);
+    assert.deepEqual(said("yel zuwen vezuvel.", "B"), [1]);
+    // An asker the caller does not name fits any speaker.
+    assert.deepEqual(said("yel zuwen vowurol."), [0]);
+  });
 });

@@ -96,4 +96,37 @@ describe("log", () => {
     const to = log.entries[2]!.readings[0]!.links.filter((l) => l.kind === "carriedFrame").map((l) => l.to);
     assert.deepEqual(to, [log.entries[0]!.readings[0]!.id]);
   });
+
+  // D16 of `solver-coverage.md`: a turn is for its calls; else its speaker's last call; else, with two speakers, the other.
+  it("a turn carries its addressees from its calls, carried forward", () => {
+    const who = (log: Log): string[] =>
+      log.entries.map((e) =>
+        e.addressees
+          ? `${e.addressees.by} ${e.addressees.to.map((a) => (a.kind === "speaker" ? a.speaker : `${a.party.kind === "thing" ? a.party.root : a.party.kind}@${a.turn}`)).join(",")}`
+          : "-",
+      );
+    const three = buildLog(
+      [
+        { speaker: "A", at: 0, text: "yalazun zawan vowurol." },
+        { speaker: "A", at: 1, text: "zawan vezuvel." },
+        { speaker: "B", at: 2, text: "zawan vowurol." },
+        { speaker: "C", at: 3, text: "zawan vowurol." },
+        { speaker: "B", at: 4, text: "yazozon. zawan vezuvel." },
+        { speaker: "A", at: 5, text: "zawan vowurol." },
+      ],
+      tables,
+    );
+    assert.deepEqual(who(three), ["call alazu@0", "lastCall alazu@0", "otherSpeaker A", "-", "call azozo@4", "lastCall alazu@0"]);
+    // The addressees stay with a turn that leaves the window.
+    const windowed = buildLog(
+      [
+        { speaker: "A", at: 0, text: "yalazun zawan vowurol." },
+        { speaker: "B", at: 1, text: "zawan vowurol." },
+        { speaker: "A", at: 2, text: "zawan vezuvel." },
+      ],
+      tables,
+      { window: 1 },
+    );
+    assert.deepEqual(who(windowed), ["call alazu@0", "otherSpeaker A", "lastCall alazu@0"]);
+  });
 });

@@ -247,7 +247,7 @@ function boundOf<E>(reading: Reading, session: Session<E>): Bound<E> {
 /** A question: ask the log, then live state, then the verdict, then replies. */
 function question<E>(reading: Reading, text: string, session: Session<E>): ReadingResult {
   const { host, tables } = session;
-  const matches = ask(reading, session.log, host);
+  const matches = ask(reading, session.log, host, { asker: session.speaker });
   const held = host.holds?.(reading.claim, boundOf(reading, session)) ?? [];
   const verdict = host.verdict ? host.verdict(reading, matches, held) : defaultVerdict(reading, matches, held);
   const base = { reading, force: "question" as const, effects: [], matches, held, verdict };

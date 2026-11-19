@@ -317,6 +317,39 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.equal(alone?.hosted?.kind, "clause");
   });
 
+  it("because-and-iff.md:18: a stacked `gebem` on a noun takes the `gahum` detail's condition", () => {
+    const hinges = (reading: Reading) => {
+      const z = reading.claim.roles.z;
+      return z?.kind === "thing" ? z.details.filter((d) => d.key === "overlay:clause_hinge:g") : [];
+    };
+    const [needs, fact] = hinges(readText("zazozon gebem gahum blalazun.", tables)[0]!);
+    assert.equal(needs?.values.gloss, "only-if");
+    assert.equal(fact?.values.gloss, "because");
+    assert.ok(fact?.hosted?.kind === "thing" && fact.hosted.root === "alazu");
+    assert.equal(needs?.hosted, fact?.hosted);
+    // A lone `gebem` keeps its own condition.
+    const [pred] = readText("zazozon gebem blalazun.", tables)[0]!.claim.predicate;
+    const alone = pred?.kind === "thing" ? pred.details[0] : undefined;
+    assert.ok(alone?.hosted?.kind === "thing" && alone.hosted.root === "alazu");
+  });
+
+  it("list-structure.md#shared-after-the-join: a hook right after the join word is SHARED, each item's", () => {
+    const reading = readText("zodozel zogozel zal om bahelan vowurol.", tables)[0]!;
+    const z = reading.claim.roles.z;
+    assert.ok(z?.kind === "list");
+    const [hook] = z.sharedDetails ?? [];
+    assert.equal(hook?.key, "hookJob:genitive");
+    assert.equal(hook?.values.role, "distribute");
+    assert.ok(hook?.hosted?.kind === "thing" && hook.hosted.root === "ahela");
+    assert.equal(reading.claim.details.length, 0);
+    // On the item before the join word, the hook is that item's alone.
+    const item = readText("zazozon zodozel om bazozor zal vowurol.", tables)[0]!.claim.roles.z;
+    assert.ok(item?.kind === "list" && !item.sharedDetails);
+    // Anywhere else it is an extra noun of the clause.
+    const clause = readText("zodozel zogozel zal gamahum om bahelan vowurol.", tables)[0]!;
+    assert.deepEqual(clause.claim.details.map((d) => d.key), ["hookJob:genitive"]);
+  });
+
   it("holder.md:84: a topic-pronoun holder carries the topic it is bound to", () => {
     const reading = readText("xazozon theyomalen zalazun vudurul.", tables)[0]!;
     const party = frame(reading, "holder").party;

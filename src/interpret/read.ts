@@ -935,10 +935,27 @@ function readHook(unit: Extract<Unit, { kind: "hook" }>, here: Here, clause: Cla
       if (unit.onLeft) detail.values.onLeft = "true";
       if (unit.fromTo) detail.values.fromTo = "true";
       for (const w of unit.modifiers) modifier(w, here, detail);
-      here.reading.claim.details.push(detail);
+      const list = unit.job === "span" ? undefined : sharedHookList(word, here);
+      if (list) {
+        detail.values.role = "distribute";
+        list.sharedDetails = [...(list.sharedDetails ?? []), detail];
+      } else here.reading.claim.details.push(detail);
       here.pendingHook = detail;
     }
   }
+}
+
+/**
+ * The noun list a hook right after its join word belongs to (list-structure.md#shared-after-the-join): "A hook right
+ * after the join word is SHARED, like an adjective there: it belongs to every item." The parser keeps it a clause unit,
+ * so the reader puts its detail with the list's SHARED details, each item's (`distribute`).
+ */
+function sharedHookList(word: LexWord, here: Here): Extract<Term, { kind: "list" }> | undefined {
+  if (word.at === undefined) return undefined;
+  for (const term of Object.values(here.reading.claim.roles)) {
+    if (term?.kind === "list" && term.join?.at !== undefined && term.join.at === word.at - 1) return term;
+  }
+  return undefined;
 }
 
 function setRole(level: "z" | "d" | "b", term: Term, here: Here, word?: LexWord): void {
@@ -1143,7 +1160,8 @@ function readDependent(clause: Clause, here: Here): Reading | undefined {
  * *Only because* (because-and-iff.md#choosing-a-hinge): "*Only because* stacks two hinges: `thebem` (the outcome needs
  * it), then `thahum` with the condition (and it is a fact)." A `thebem` with no `/b/` of its own, right before a `thahum`
  * that has one, takes that condition: the same `hosted` term (one place, the first host's in coverage), and a `grounds`
- * link of its own where the condition is the next sentence (`blarl` before a period).
+ * link of its own where the condition is the next sentence (`blarl` before a period). The `/ɡ/` pair on a noun
+ * (`gebem gahum`, *depends on*) stacks the same way: there the hinges are sibling details of the noun.
  */
 function stackedHinge(reading: Reading): void {
   const KEY = "overlay:clause_hinge:th";
@@ -1155,6 +1173,56 @@ function stackedHinge(reading: Reading): void {
     needs.hosted = fact.hosted;
     for (const l of reading.links.filter((l) => l.kind === "grounds" && l.frame === fact)) reading.links.push({ ...l, frame: needs });
   }
+  for (const details of detailLists(reading)) stackedNounHinge(details);
+}
+
+/** The `/ɡ/` stack among one term's details: `gebem` with no `/b/`, right before a `gahum` that has one (no `blarl` on `/ɡ/`). */
+function stackedNounHinge(details: Detail[]): void {
+  const KEY = "overlay:clause_hinge:g";
+  for (const needs of details) {
+    if (needs.key !== KEY || needs.values.gloss !== "only-if" || needs.hosted || needs.words[0]?.at === undefined) continue;
+    const after = needs.words[0].at + 1;
+    const fact = details.find((d) => d.key === KEY && d.values.gloss === "because" && d.words[0]?.at === after);
+    if (fact?.hosted) needs.hosted = fact.hosted;
+  }
+}
+
+/** Every detail list in one reading's own terms and frames, nested readings left to their own pass. */
+function detailLists(reading: Reading): Detail[][] {
+  const out: Detail[][] = [];
+  const seen = new Set<object>();
+  const details = (list: Detail[] | undefined): void => {
+    if (!list?.length || seen.has(list)) return;
+    seen.add(list);
+    out.push(list);
+    for (const d of list) {
+      term(d.hosted);
+      details(d.details);
+      d.frames?.forEach(frame);
+    }
+  };
+  const frame = (f: Frame): void => {
+    term(f.hosted);
+    term(f.party);
+    details(f.details);
+    f.inner?.forEach(frame);
+  };
+  const term = (t: Term | undefined): void => {
+    if (!t || seen.has(t) || t.kind === "clause" || t.kind === "quote") return;
+    seen.add(t);
+    if (t.kind === "list") {
+      t.members.forEach(term);
+      details(t.sharedDetails);
+      if (t.bound) details([t.bound]);
+    }
+    if ("details" in t) details(t.details);
+    t.frames?.forEach(frame);
+  };
+  reading.frames.forEach(frame);
+  const claim = reading.claim;
+  [claim.verb, ...Object.values(claim.roles), ...claim.predicate].forEach(term);
+  details(claim.details);
+  return out;
 }
 
 function readClause(clause: Clause, utterance: number, body: number, id: ReadingId, ctx: Ctx, scoped: boolean): Reading {

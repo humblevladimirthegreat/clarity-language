@@ -87,8 +87,16 @@ function carries(path: FramePath, filter: Frame, options: MatchOptions): boolean
   );
 }
 
+export type AskOptions = {
+  /**
+   * Who asks, as the log names speakers. A speaker term in the question then fits only a reading said by the asker
+   * (`TermSite`): *did I walk?* is about the asker. Unset: a speaker term fits any turn's speaker.
+   */
+  asker?: string;
+};
+
 /** Every reading in the log, nested ones included, that answers the question. */
-export function ask<E>(question: Reading, log: Log, host: Host<E> = {}): Match[] {
+export function ask<E>(question: Reading, log: Log, host: Host<E> = {}, ask: AskOptions = {}): Match[] {
   const referent = referentOf(host);
   const tree = readingTree([...log.readings, question]);
   const filters = questionFilters(question);
@@ -102,8 +110,8 @@ export function ask<E>(question: Reading, log: Log, host: Host<E> = {}): Match[]
       ...(referent
         ? { referent: (term, side, site) => referent(term, side, side === "target" ? { ...site, ...(entry ? { entry } : {}) } : site) }
         : {}),
-      querySite: { reading: question },
-      targetSite: { reading },
+      querySite: { reading: question, ...(ask.asker !== undefined ? { speaker: ask.asker } : {}) },
+      targetSite: { reading, ...(entry ? { speaker: entry.speaker } : {}) },
       ...(host.switches ? { switches: host.switches } : {}),
       ...(host.lexicon ? { lexicon: host.lexicon } : {}),
     };
