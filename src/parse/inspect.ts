@@ -87,6 +87,8 @@ export type InspectResult = {
   tokens: InspectToken[];
   constructions: InspectConstruction[];
   sentenceWarning?: string;
+  /** The text's parse, when it parsed: consumers read it rather than parse again. */
+  parsed?: ParseResult;
 };
 
 const PUNCT: Record<string, PunctKind> = {
@@ -721,7 +723,7 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
     const constructions = constructionsFromParse(tokens, parsed);
     attachRelated(tokens, constructions, parsed.resolve?.anaphors ?? []);
     attachWhy(tokens, parsed.resolve?.shared ?? []);
-    return { tokens, constructions };
+    return { tokens, constructions, parsed };
   } catch (error) {
     const sentenceWarning =
       error instanceof SentenceParseError

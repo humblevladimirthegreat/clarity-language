@@ -16,3 +16,5 @@ export { clashes, couldBe, follows, giveUp, stands, whyNot } from "./solve-brows
 export type { Answer, Clash, ClashResult, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve-browser.js";
 export { canonicalReadings, compareCanonical, sameReadings } from "./equal.js";
 export type { CanonicalReadings, EqualResult, EqualVerdict, UnorderedPair } from "./equal.js";
+export { FAMILY_TERMS, REACH_LINES, inspectNotes, notesForToken } from "./inspect-notes.js";
+export type { CarriedNote, CoverNote, FamilyTerm, FrameNote, InspectNotes, SentenceNote } from "./inspect-notes.js";
