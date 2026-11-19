@@ -1,6 +1,6 @@
 # Tools that read readings
 
-**Status:** IN PROGRESS, 2026-11-19: phases 1–3 done. The practice lint compares with `sameReadings`; construction search (`src/find/`) takes frames, `reach=` and frame order from readings, and `--diff` takes REV's reader (floor `a13f294c`), taught in [searching by construction](../../meta/procedures/read-ageben.md#find). Decided 2026-11-19: Inspect shows hover notes on each frame word, plus a "what covers what" list when a sentence has two or more whole-clause frames; the prompt eval runs first on about 20 examples with two or more whole-clause frames, reusing stored replies as the baseline, goes to the full set only if the subset shows a gain, and the `--structure` flag is kept only if the overall miss rate drops by at least 3 points. Phase 4 is ready.  
+**Status:** IN PROGRESS, 2026-11-19: phases 1–3 done. The practice lint compares with `sameReadings`; construction search (`src/find/`) takes frames, `reach=` and frame order from readings, and `--diff` takes REV's reader (floor `a13f294c`), taught in [searching by construction](../../meta/procedures/read-ageben.md#find). Decided 2026-11-19: Inspect shows hover notes on each frame word, plus a "what covers what" list when a sentence has two or more whole-clause frames; the prompt eval runs first on about 20 examples with two or more whole-clause frames, reusing stored replies as the baseline, goes to the full set only if the subset shows a gain, and the `--structure` flag is kept only if the overall miss rate drops by at least 3 points. **Phase 4 stopped after D1 and D3, 2026-11-19** (stop-and-alert: four reading families have no learner term; see Open decisions). D1 (`feb91ffd`) and D3 (`11070c62`) are committed; D2 waits on the term decision.  
 **Related:** the reader [read.ts](../../../src/interpret/read.ts) and its note [interpreter.md](../../meta/interpreter.md); the parser note [parser-pipeline.md](../../meta/parser-pipeline.md); Inspect [inspect.ts](../../../src/parse/inspect.ts), [AgebenInspect.vue](../../grammar/.vitepress/components/AgebenInspect.vue), [GlossOverlay.vue](../../grammar/.vitepress/components/GlossOverlay.vue), [config.ts](../../grammar/.vitepress/config.ts); the translation prompt [llm-prompt.ts](../../../src/parse/llm-prompt.ts), [scripts/parse.mjs](../../../scripts/parse.mjs), [src/agent/ageben.ts](../../../src/agent/ageben.ts), [scripts/llm-eval.ts](../../../scripts/llm-eval.ts); the reader's browser entry [src/interpret/browser.ts](../../../src/interpret/browser.ts).  
 **Depends on:** none. **Order:** lands before `mind-map-view.md`. Phase 4 adds the reader to the Inspect page; the mind map then reuses that alias and the parse-once plumbing instead of adding its own. `clingo-solver.md` is in progress and also edits `src/interpret/`; never run a phase of each at the same time. `structural-search.md` (an idea) keeps claim search; it builds on the reading pass `src/find/` now runs.  
 **Design authority:** *none*. Tooling only: no form or reading changes, and the parser's accept/reject behavior does not change. Every comparison rule cites the grammar section it follows. 
@@ -76,7 +76,24 @@ One commit per unit after its gate, staged to that unit's files, message `readin
 
 ## Open decisions
 
-None open.
+### Learner terms for four families (blocks D2)
+
+`inspect-notes.ts` maps each reading family to an A–Z entry in [terminology.md](../../grammar/terminology.md) (`FAMILY_TERMS`). Four families have no entry, so their hover would show no kind: `say` (only the closed labels ALLOW / FORBID / CHOICE / REQUIRE), `intention` (only the mood labels PLAN / WANT / DECISION / ATTEMPT), `contrary`, and `attitude`. There are also weak fits: `polarity` maps to the join-vowel row "negation", not an A–Z heading; `binder` maps to "Binder", whose entry describes words inside a scope island (the other choice is "Domain / generic / *every K*"); `quote` maps to "Span / span open".
+
+- **A.** Add A–Z entries to `terminology.md`: *Say word*, *Intention*, *Contrary to*, *Speaker attitude*, and *Negation* for polarity. Each entry is two lines plus a link to its owning section. D1's map then names all of them.
+- **B.** Name each construction by its closed label (PLAN, WANT, ALLOW…) and leave `contrary` and `attitude` without a kind in the hover.
+- **C.** Show no kind for any family that has no term; the hover gives reach and covers only.
+
+**Recommendation: (high)** A. These are real features, each with its own grammar section, and `terminology.md` is where the learner looks up a feature's name. B names the word rather than the feature, and C hides the most useful line of the hover. Retarget `binder` to "Domain / generic / *every K*" only if the binder reading is the *every K* new member, which D1's example (`zodozel`) suggests.
+
+### Why-links drift (D3)
+
+`reading-consumers-files/why-audit.md` finds 17 drifted `whyFor` links in `src/parse/inspect.ts` out of 47 rows. Twelve name an anchor that moved to a subpage, so the link lands at the page top. Five are the overlay fallback `knowing` for cause, clause hinge, identity, pairing, and mention, which point at the wrong topic.
+
+- **A.** Retarget all 17 to their classification-table anchors.
+- **B.** Retarget the 12 dead anchors only, and decide the fallbacks one by one.
+
+**Recommendation: (high)** A for the 12 dead anchors, since they are broken links. **(medium)** A for the 5 fallbacks: the table anchor is the owning section, though some owners sit on intermediate or advanced pages where a beginner might land.
 
 ## Background
 
