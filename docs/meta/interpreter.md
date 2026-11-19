@@ -618,7 +618,7 @@ A tool that needs what a sentence says reads readings; a tool that needs how it 
 | The "same reading" lint (`src/lint/practice-item-rules.ts`, through `sameReadings`) | readings |
 | Construction search's frame queries (`frame=`, `--over`, `--under`, `--unordered`, `--diff` in `src/find/`) | readings |
 | The translation prompt (`src/parse/llm-prompt.ts`, `parse.mjs --llm-prompt`) | parse (morph gloss), moving to readings |
-| Inspect (`src/parse/inspect.ts`) | parse; readings on top. Its word layer runs even when the sentence does not parse. |
+| Inspect (`src/parse/inspect.ts`) | parse; readings on top: its frame notes (`src/interpret/inspect-notes.ts`, shown on the site through `@interpret-browser`) read the parse `inspectText` made. Its word layer runs even when the sentence does not parse; the notes then show nothing. |
 | The doc, morph-gloss, word-bank, number-speech and word-order lints | parse (form) |
 | Retie, tts, pegs, and the lexicon lints | parse (form) |
 | The English helper's `verify` and `coverage`, `gloss-structure.ts` | parse (form) |

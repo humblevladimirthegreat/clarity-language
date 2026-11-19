@@ -61,10 +61,14 @@ export default defineConfig({
         '@finger-code': `${srcDir}/finger-code.ts`,
         '@game-browser': `${srcDir}/game/index.ts`,
         '@name-respell': `${srcDir}/name-respell.ts`,
+        '@interpret-browser': `${srcDir}/interpret/browser.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
         '@vowel-pitch': `${srcDir}/vowel-pitch.ts`,
       },
+    },
+    build: {
+      target: 'es2022',
     },
     worker: {
       format: 'es',

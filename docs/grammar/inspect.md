@@ -7,6 +7,8 @@ outline: false
 
 Paste Ageben and click or highlight a word for a floating inspect card with part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Highlight a join, span fence, or island brace (`{` / `}`) to inspect the construction. To link to a sentence, end this page's address with ?text= followed by the URL-encoded Ageben.
 
+When the sentence parses, the card for a word that frames the clause, such as a stance or an intention, also names its kind, how far it reaches, and which other framing words it covers or sits under. Each kind links to its entry in the terminology page, and the card links to the section that teaches the word. When a sentence has two or more framings over the whole clause, a short list under it says which one covers which, which pairs no rule orders (*not settled*), and which framings carry over from an earlier sentence. Use the list to check that a stack of framings means what you meant before you rely on the word order.
+
 **IPA:** below the input transcribes the spoken forms (phonology letter table, with syllable dots). Writing shorthand and span brackets expand to their spoken forms first; foreign `<>` interiors and compact loan words are skipped (not Ageben phonology).
 
 **Copy Translation Prompt** copies a prompt that asks an LLM to translate the input into English, one numbered line per input line. Use a model at least as capable as Claude Opus 5.5.

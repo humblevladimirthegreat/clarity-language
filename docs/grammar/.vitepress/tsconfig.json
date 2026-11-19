@@ -15,6 +15,7 @@
       "@digit-pegs": ["../../../src/digit-pegs.ts"],
       "@finger-code": ["../../../src/finger-code.ts"],
       "@game-browser": ["../../../src/game/index.ts"],
+      "@interpret-browser": ["../../../src/interpret/browser.ts"],
       "@parse-browser": ["../../../src/parse/browser.ts"],
       "@english-helper-browser": ["../../../src/english-helper/browser.ts"],
       "@claritish-editor-browser": ["../../../src/claritish-editor/browser.ts"],

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { InspectConstruction, InspectResult, InspectToken } from '@parse-browser'
+import { inspectNotes, notesForToken, type FrameNote, type InspectNotes } from '@interpret-browser'
+import { withBase } from 'vitepress'
+import { useClassifyTables } from '../composables/useClassifyTables'
 import InspectCard from './InspectCard.vue'
 import { computePopoverPlacement } from './popoverPlacement'
 import { getInspectAnchorRect, tokenElement } from './selectionAnchorRect'
@@ -117,6 +120,52 @@ const anchorTokenIndices = computed(() => {
 let pointerDownX = 0
 let pointerDownY = 0
 let didDrag = false
+// Frame notes come from the reading of the parse inspectText already made; nothing new shows when it did not parse.
+const { tables } = useClassifyTables()
+
+const notes = computed<InspectNotes | null>(() => {
+  const parsed = props.result.parsed
+  if (!parsed) return null
+  try {
+    return inspectNotes(parsed, props.result.tokens, { tables: tables.value ?? undefined })
+  } catch {
+    return null
+  }
+})
+
+const sentenceNotes = computed(() => notes.value?.sentences ?? [])
+
+const selectedFrames = computed<FrameNote[]>(() => {
+  if (!notes.value || selected.value < 0 || selectedConstruction.value || phraseSelection.value) return []
+  return notesForToken(notes.value, selected.value)
+})
+
+function hoverTerm(index: number): string {
+  if (!notes.value) return ''
+  const terms = notesForToken(notes.value, index).flatMap((note) => (note.term ? [note.term] : []))
+  return [...new Set(terms)].join(', ')
+}
+
+/** `page.md#heading` → the site's `/page#heading`. */
+function siteHref(anchor: string): string {
+  const [page = '', hash] = anchor.split('#')
+  return withBase(`/${page.replace(/\.md$/, '.html')}${hash ? `#${hash}` : ''}`)
+}
+
+/** The quoted text of the frame whose first word is `first` (all its words). */
+function frameWords(first: number): string {
+  const frame = notes.value?.frames.find((note) => note.tokenIndex === first)
+  const carried = sentenceNotes.value
+    .flatMap((sentence) => sentence.carried)
+    .find((note) => note.tokenIndex === first)
+  const indices = frame?.tokenIndices ?? carried?.tokenIndices ?? [first]
+  return `"${indices.map((i) => tokens.value[i]?.raw ?? '').join(' ')}"`
+}
+
+function wordList(firsts: number[]): string {
+  return firsts.map(frameWords).join(', ')
+}
+
 let selectionTimer: number | undefined
 let positionFrame: number | undefined
 
@@ -530,6 +579,26 @@ onBeforeUnmount(() => {
       </template>
     </p>
 
+    <div v-if="sentenceNotes.length" class="sentence-notes" aria-label="What covers what">
+      <ul v-for="sentence in sentenceNotes" :key="sentence.reading">
+        <li v-for="pair in sentence.covers" :key="`c${pair.over}-${pair.under}`">
+          {{ frameWords(pair.over) }} covers {{ frameWords(pair.under) }}
+        </li>
+        <li v-for="pair in sentence.unsettled" :key="`u${pair[0]}-${pair[1]}`">
+          {{ frameWords(pair[0]) }} and {{ frameWords(pair[1]) }}: not settled
+        </li>
+        <li v-for="carried in sentence.carried" :key="`k${carried.tokenIndex}`">
+          {{ frameWords(carried.tokenIndex) }}<template v-if="carried.term">
+            (<a :href="siteHref(carried.termAnchor ?? carried.anchor)">{{ carried.term }}</a>)</template
+          >
+          <a :href="siteHref(carried.anchor)">carries over</a> from an earlier sentence<template
+            v-if="carried.coveredBy.length"
+            >, under {{ wordList(carried.coveredBy) }}</template
+          >
+        </li>
+      </ul>
+    </div>
+
     <aside v-if="pinned" class="pin" aria-label="Pinned morph">
       <InspectCard
         :token="selectedToken"
@@ -541,6 +610,15 @@ onBeforeUnmount(() => {
         :expanded="true"
         @jump="jump"
       />
+      <div v-if="selectedFrames.length" class="gloss-frame-notes">
+        <p v-for="note in selectedFrames" :key="`${note.reading}:${note.tokenIndex}`">
+          <a v-if="note.term" :href="siteHref(note.termAnchor ?? note.anchor)">{{ note.term }}</a>
+          <template v-if="note.reachLine">{{ note.term ? ': reaches ' : 'Reaches ' }}{{ note.reachLine }}</template>
+          <template v-if="note.covers.length"><br />Covers {{ wordList(note.covers) }}</template>
+          <template v-if="note.coveredBy.length"><br />Under {{ wordList(note.coveredBy) }}</template>
+          <br /><a class="more" :href="siteHref(note.anchor)">Section</a>
+        </p>
+      </div>
       <div class="actions pin-actions">
                 <button type="button" class="btn" @click="copyRaw">
           {{ copied ? 'Copied' : 'Copy romanized' }}
@@ -556,7 +634,8 @@ onBeforeUnmount(() => {
         :style="hoverTipStyle"
         role="tooltip"
       >
-        {{ (tokens[hovered!] as { gloss: string }).gloss }}
+        {{ (tokens[hovered!] as { gloss: string }).gloss
+        }}<template v-if="hoverTerm(hovered!)"> · {{ hoverTerm(hovered!) }}</template>
       </div>
 
       <div
@@ -578,6 +657,15 @@ onBeforeUnmount(() => {
           :expanded="false"
           @jump="jump"
         />
+        <div v-if="selectedFrames.length" class="gloss-frame-notes">
+          <p v-for="note in selectedFrames" :key="`${note.reading}:${note.tokenIndex}`">
+            <a v-if="note.term" :href="siteHref(note.termAnchor ?? note.anchor)">{{ note.term }}</a>
+            <template v-if="note.reachLine">{{ note.term ? ': reaches ' : 'Reaches ' }}{{ note.reachLine }}</template>
+            <template v-if="note.covers.length"><br />Covers {{ wordList(note.covers) }}</template>
+            <template v-if="note.coveredBy.length"><br />Under {{ wordList(note.coveredBy) }}</template>
+            <br /><a class="more" :href="siteHref(note.anchor)">Section</a>
+          </p>
+        </div>
         <div class="actions">
           <button type="button" class="btn" @click="select(selected, true)">Pin</button>
                     <button type="button" class="btn" :disabled="!copyText()" @click="copyRaw">
@@ -699,6 +787,15 @@ onBeforeUnmount(() => {
   margin-top: 0.5rem;
 }
 
+.sentence-notes {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+.sentence-notes ul {
+  margin: 0 0 0.5rem;
+}
+
 .pin-actions {
   margin-top: 0.75rem;
 }
@@ -712,6 +809,10 @@ onBeforeUnmount(() => {
   }
 
   .stream {
+    grid-column: 1;
+  }
+
+  .sentence-notes {
     grid-column: 1;
   }
 
@@ -737,6 +838,21 @@ onBeforeUnmount(() => {
   line-height: 1.35;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   pointer-events: none;
+}
+
+.gloss-frame-notes {
+  margin: 0.5rem 0.75rem 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--vp-c-text-2);
+}
+
+.gloss-frame-notes p {
+  margin: 0 0 0.4rem;
+}
+
+.gloss-frame-notes .more {
+  font-size: 0.8rem;
 }
 
 .floating-peek {
