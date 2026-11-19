@@ -98,6 +98,14 @@ describe("reader: one fixture per frame family", () => {
     assert.deepEqual(orders(reading!), ["residue>occasion rule"]);
   });
 
+  it("occasion: a restrictor holds the run of /h/ words right before it, and a FORMER word there is an occasion", () => {
+    const [reading] = read("z-Azozon | h-FORMER | h-always-except | v-sing");
+    assert.deepEqual(families(reading!), ["occasion"]);
+    assert.deepEqual(frame(reading!, "occasion").occasions?.map((d) => d.words[0]!.raw), ["helam"]);
+    const [listed] = read("z-Azozon | v-walk | h-haste | h-rain | h-night | h-only-when");
+    assert.deepEqual(frame(listed!, "occasion").occasions?.map((d) => d.words[0]!.raw), ["hadurom", "herulal", "hanurul"]);
+  });
+
   it("contrary: the zone's stance is held inside the frame, not a frame on the claim", () => {
     const [reading] = read("z-Azozon | v-walk | [contrary-to | th-plan-itinerary]");
     assert.deepEqual(families(reading!), ["contrary"]);

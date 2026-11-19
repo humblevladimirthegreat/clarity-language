@@ -193,6 +193,20 @@ Any feeling root works the same way, including the roots of the [plain labels](/
 
 **Compare with:** the label `zuwen gonumul.` *I am angry* is a claim about you: you are the subject, and the sentence says you are angry, about nothing in particular. In `zazozon thonumum vowurol.` the claim is that Azozon walks, and the anger is how you take it. A [feeling word](/how-you-feel#feeling-word) on a clause works like the attitude and says more: which need is involved and what the feeling pulls you to do.
 
+Where the attitude stands matters when the clause brings in something new, such as *a jar*. By the usual [order](/clause#which-covers-which), whichever comes first covers the other. Put the new noun first when the jar itself is not in doubt, only what happened to it. Put the attitude first when you doubt the whole claim, the jar included.
+
+> `dadal thevemem vumewel.`
+>
+> d-jar | th-doubt | v-find
+>
+> "There is a jar, and I doubt it was found."
+
+> `thevemem dadal vumewel.`
+>
+> th-doubt | d-jar | v-find
+>
+> "I doubt that a jar was found."
+
 In a question the attitude still stays yours. By the usual [order](/clause#which-covers-which) the question word covers the rest of the turn, but an attitude stays outside what is asked, so the question asks only about the claim:
 
 > `yel theguyom vowurol zazozon.`

@@ -86,6 +86,7 @@ function formatFrame(f: Frame): string {
   if (f.hosted) parts.push(`hosted ${formatTerm(f.hosted)}`);
   if (f.member) parts.push(`member ${f.member}`);
   if (f.holderHost) parts.push("holderHost");
+  if (f.occasions?.length) parts.push(`occasions "${words(f.occasions.flatMap((d) => d.words))}"`);
   if (f.content?.length) parts.push(`content [${f.content.map((r) => r.id).join(" ")}]`);
   if (f.inner?.length) parts.push(`inner (${f.inner.map(formatFrame).join("; ")})`);
   if (f.details?.length) parts.push(`{${f.details.map(formatDetail).join("; ")}}`);

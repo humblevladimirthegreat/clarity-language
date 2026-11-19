@@ -295,7 +295,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 y-question | ? | z-Azozon | v-find | d-key
 
-**Also correct:** `yel zazozon vumewel degewol.`
+**Also correct:** `yel ? zazozon degewol vumewel.`
 :::
 
 **2.** *Who sees the umbrella?*

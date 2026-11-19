@@ -27,7 +27,7 @@ With *no* occasion before it, the list of times is empty and closed, so the clai
 >
 > "Alazun never walks."
 
-**Compare with:** English *the guard who sits* picks out which person ([which person or thing](dependents.md#which-noun)); that is not a restrictor. Bundling items into one list uses a [join](joins.md). Two manner adverbs in a row, with no restrictor, both describe the walk (*quickly and quietly*): they say how it happens, not when it counts.
+**Compare with:** English *the guard who sits* picks out which person ([which person or thing](dependents.md#which-noun)); that is not a restrictor. Bundling items into one list uses a [join](joins.md). Two manner adverbs in a row, with no restrictor, both describe the walk (*quickly and quietly*): they say how it happens, not when it counts. With a restrictor after them, they would be its occasions instead, since a restrictor's list is the whole run of `/h/` words right before it.
 
 > `zazozon vowurol hadurom halozum.`
 >

@@ -95,6 +95,11 @@ export type Frame = {
   inner?: Frame[];
   /** Words that describe the frame's own word: a call's or a reaction's `gl-`, `/w/` and `/ɡ/` words (speech-moves.md#vocative, more-turn-words.md#describe-turn-word). */
   details?: Detail[];
+  /**
+   * A `/h/` restrictor's occasions, in text order (restrictors.md#only-when-never-hal): the claim's details for the
+   * `/h/` words its list holds. The details stay on the claim; the frame points at them.
+   */
+  occasions?: Detail[];
   /** The resolve stage's member tag, where a pair row tells members apart. */
   member?: string;
   /** A holder's host stance, NOTIONAL or intention. */

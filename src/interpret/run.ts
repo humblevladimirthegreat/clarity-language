@@ -201,14 +201,13 @@ function command<E>(reading: Reading, force: Force, session: Session<E>): Readin
 /**
  * A match counts by default only when it is a plain claim: every frame on its path is on the pass-through list, no
  * unsettled pair, no switch. A call does not change what the sentence claims (speech-moves.md#vocative); in a statement,
- * a first-mention noun says the claim holds of one such thing (joins.md#new-member-in-a-statement). A path that carries
- * both a speaker attitude and a first-mention noun is not plain: no grammar page settles that pair yet, so the default
- * verdict cannot say.
+ * a first-mention noun says the claim holds of one such thing (joins.md#new-member-in-a-statement). A speaker attitude
+ * and a first-mention noun are ordered by text order, like any frame pair (feelings.md#speaker-attitude), and each
+ * passes through on its own, so a path with both is plain.
  */
 const plain = (m: Match): boolean => {
   const frames = m.path.frames.map((p) => p.frame);
-  const unsettledPair = frames.some((f) => f.family === "attitude") && frames.some((f) => f.family === "binder" && f.key === "slot:newMember");
-  return !unsettledPair && frames.every((f) => passThrough(f, frames) !== undefined) && m.unsettled.length === 0 && m.switches.length === 0;
+  return frames.every((f) => passThrough(f, frames) !== undefined) && m.unsettled.length === 0 && m.switches.length === 0;
 };
 
 /**

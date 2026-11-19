@@ -208,14 +208,16 @@ describe("run: questions and shared replies", () => {
     assert.deepEqual(r!.replies[1]!.because, told!.readings.map((x) => x.reading.id));
   });
 
-  it("cannot say, from a statement with a speaker attitude and a first-mention noun: no grammar page settles that pair yet", () => {
-    const [, r] = say(toy(), "z-Alazun | th-revelation | d-cat | v-see", "y-question | z-Alazun | v-see");
-    assert.equal(r!.outcome, "ok");
-    const [match] = r!.readings[0]!.matches!;
-    const families = match!.path.frames.map((f) => `${f.frame.family}:${f.frame.key}`);
-    assert.ok(families.includes("attitude:slot:th") && families.includes("binder:slot:newMember"), families.join(", "));
-    assert.deepEqual(shapes(r!), ["cannotSay"]);
-  });
+  for (const told of ["z-Alazun | th-revelation | d-cat | v-see", "z-Alazun | d-cat | th-revelation | v-see"]) {
+    it(`yes, from a statement with a speaker attitude and a first-mention noun in either order (feelings.md#speaker-attitude): ${told}`, () => {
+      const [, r] = say(toy(), told, "y-question | z-Alazun | v-see");
+      assert.equal(r!.outcome, "ok");
+      const [match] = r!.readings[0]!.matches!;
+      const families = match!.path.frames.map((f) => `${f.frame.family}:${f.frame.key}`);
+      assert.ok(families.includes("attitude:slot:th") && families.includes("binder:slot:newMember"), families.join(", "));
+      assert.deepEqual(shapes(r!), ["yes", "why"]);
+    });
+  }
 
   it("turns handed in without a period are closed by the log: a statement, then a command", () => {
     const t = toy();

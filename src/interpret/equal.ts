@@ -173,7 +173,7 @@ class Canon {
       family: frame.family,
       key: frame.key,
       construction: frame.construction,
-      words: frame.words.map(raw),
+      words: this.frameWords(frame),
       values: { ...frame.values },
       party: frame.party ? this.term(frame.party) : undefined,
       // A quote frame's content is talk with its own act word; other content is a nested clause.
@@ -181,11 +181,28 @@ class Canon {
       hosted: frame.hosted ? this.term(frame.hosted) : undefined,
       inner: frame.inner ? multiset(frame.inner.map((f) => this.frame(f))) : undefined,
       details: frame.details ? this.details(frame.details) : undefined,
+      // A restrictor's occasions are its list, in text order, as a join's items are (restrictors.md#only-when-never-hal).
+      occasions: frame.occasions ? frame.occasions.map((d) => this.detail(d)) : undefined,
       member: frame.member,
       holderHost: frame.holderHost,
     };
     this.frames.set(frame, value);
     return value;
+  }
+
+  /**
+   * A frame's words. A new member brought in by an `-l` pointer (joins.md#new-member-in-a-statement) keeps the
+   * antecedent's head written out, as the pointer's term does (pronouns.md#a-new-one), so `dwudel` compares as `dodozel`.
+   */
+  private frameWords(frame: Frame): Json[] {
+    const hosted = frame.hosted;
+    if (frame.key === "slot:newMember" && hosted?.kind === "pronoun" && hosted.word === frame.words[0] && hosted.word.ending === "l") {
+      const written = this.term(hosted);
+      if (written !== null && typeof written === "object" && !Array.isArray(written) && typeof written.head === "string") {
+        return [written.head, ...frame.words.slice(1).map(raw)];
+      }
+    }
+    return frame.words.map(raw);
   }
 
   private details(details: Detail[]): Json {

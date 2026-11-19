@@ -170,7 +170,7 @@ In a yes/no question, a pointer works like any other noun and keeps the same mea
 
 `-l` takes pointer vowels `e`, `a` and `o`, and every part consonant: `zwuzel` is another one like the latest doer. It has no reading with `u`, because an unsaid part has no kind to copy, and none after a special pronoun such as *I* or *you*. After a name, `-l` is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
 
-**Compare with:** `-r` is the same one (`dwuder`); `-l` is another (`dwudel`). Writing the noun out (`dugedel`) says the same as `dwudel`, and the pointer only saves repeating it.
+**Compare with:** `-r` is the same one (`dwuder`); `-l` is another (`dwudel`). For a common noun, writing the noun out (`dugedel`) says the same as `dwudel`, and the pointer only saves repeating it.
 
 ### Share (-m) {#share}
 

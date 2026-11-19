@@ -9,7 +9,7 @@ import { canonicalReadings, compareCanonical, sameReadings } from "./equal.js";
 import { readText } from "./read.js";
 import type { Reading } from "./types.js";
 
-/** Ported from src/lint/reading-equivalence.test.ts, with the tables that lint loads. */
+/** Ported from the retired reading-equivalence lint test, with the tables that lint loaded. */
 describe("sameReadings: the practice-item cases", () => {
   const tables = houseTables();
   const verdict = (a: string, b: string): string => sameReadings(a, b, tables).verdict;
@@ -49,10 +49,13 @@ describe("sameReadings: the practice-item cases", () => {
     assert.equal(verdict("ul balazun zazozon ol bahelan vowurol.", "ol balazun zazozon ul bahelan vowurol."), "different");
   });
 
-  it("reordered /h/ words before a restrictor: the reading holds no occasion list, so the details compare as a set", () => {
-    // The old lint kept /h/ words in text order (`different`). The reading leaves the restrictor's occasion words as
-    // plain adverb details, so this compares `same`; recorded, not settled here.
-    assert.equal(verdict("zazozon hehohel hayebel huol vowurol.", "zazozon hayebel hehohel huol vowurol."), "same");
+  it("reordered /h/ words before a restrictor: the frame holds its occasion list in text order (restrictors.md#only-when-never-hal)", () => {
+    assert.equal(verdict("zazozon hehohel hayebel huol vowurol.", "zazozon hayebel hehohel huol vowurol."), "different");
+  });
+
+  it("an /h/ word right before a restrictor is its occasion; after it, a word of the clause (residue-and-former.md#former-climate)", () => {
+    assert.equal(verdict("zazozon hual vozuyel helam.", "zazozon helam hual vozuyel."), "different");
+    assert.equal(verdict("zazozon vowurol herulal hual.", "zazozon herulal hual vowurol."), "same");
   });
 
   it("does not match swapped role letters", () => {
@@ -123,15 +126,23 @@ describe("sameReadings: frames, islands and pronouns", () => {
     const r = `${first} zahelan dwuder vayebel.`;
     const m = `${first} zahelan dwudem vayebel.`;
     const written = ageben("z-Azozon | d-dog | v-see . z-Ahelan | d-dog | v-see");
-    // The old lint read `dwudel` here as `dodozel` (`same`). A written-out first mention brings a new-member binder
-    // frame (joins.md#new-member-in-a-statement) and the `-l` pointer brings none, so this compares `different`;
-    // recorded, not settled here.
-    assert.equal(sameReadings(l, written, tables).verdict, "different");
-    // With a named antecedent no binder frame comes in, and the pointer is the name written out.
+    // An `-l` pointer brings in a new member as the noun it copies would (joins.md#new-member-in-a-statement), so it
+    // compares as the first mention written out.
+    assert.equal(sameReadings(l, written, tables).verdict, "same");
+    // After a name, `-l` is a new thing that name applies to (pronouns.md#a-new-one): a new member, not the one named.
     const named = "zazozon dalazun vayebel.";
-    assert.equal(sameReadings(`${named} zahelan dwudel vayebel.`, `${named} zahelan dalazun vayebel.`, tables).verdict, "same");
+    assert.equal(sameReadings(`${named} zahelan dwudel vayebel.`, `${named} zahelan dalazun vayebel.`, tables).verdict, "different");
     assert.equal(sameReadings(r, written, tables).verdict, "different");
     assert.equal(sameReadings(m, r, tables).verdict, "different");
     assert.equal(sameReadings(m, l, tables).verdict, "different");
+  });
+
+  it("a speaker attitude and a first-mention noun: the earlier covers the later (feelings.md#speaker-attitude)", () => {
+    const order = (text: string): string[] => readText(text, tables)[0]!.order.map((o) => `${o.over.key}>${o.under.key}`);
+    // *There is a jar, and I doubt it was found*: the new member comes first and covers the attitude.
+    assert.deepEqual(order("dadal thevemem vumewel."), ["slot:newMember>slot:th"]);
+    // *I doubt that a jar was found*: the attitude comes first and covers the new member.
+    assert.deepEqual(order("thevemem dadal vumewel."), ["slot:th>slot:newMember"]);
+    assert.equal(sameReadings("dadal thevemem vumewel.", "thevemem dadal vumewel.", tables).verdict, "different");
   });
 });

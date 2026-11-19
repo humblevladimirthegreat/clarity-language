@@ -8,7 +8,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { normalizeAgeben } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { LexWord } from "../parse/types.js";
-import { compareReadings } from "./reading-equivalence.js";
+import { sameReadings } from "../interpret/equal.js";
 import { ERROR_MARKER, practiceItems, type PracticeItem, type SpoilerLine } from "./practice-items.js";
 
 export type PracticeItemFinding = { index: number; detail: string };
@@ -49,6 +49,12 @@ const LABEL: Record<PracticeItem["type"], string> = {
   changes: "What changes",
 };
 
+/** An unsettled pair fails the item: no page orders it (frame order, docs/meta/interpreter.md#reader-rules). */
+function unsettledMessage(pairs: [string, string][] | undefined): string {
+  const named = (pairs ?? []).map(([x, y]) => `${x} / ${y}`).join("; ");
+  return `the two forms write an unsettled pair in different text order (${named}); see frame order in docs/meta/interpreter.md#reader-rules`;
+}
+
 type Push = (detail: string, index?: number) => void;
 
 function lintAlsoCorrect(item: PracticeItem, tables: ClassifyTables, push: Push): void {
@@ -63,9 +69,10 @@ function lintAlsoCorrect(item: PracticeItem, tables: ClassifyTables, push: Push)
       push(`variant \`${variant.text}\` repeats the main answer`, variant.index);
       continue;
     }
-    const compare = compareReadings(answer.text, variant.text, tables);
+    const compare = sameReadings(answer.text, variant.text, tables);
     if (compare.error) push(`does not parse (${compare.error})`, variant.index);
-    else if (!compare.same) push(`variant \`${variant.text}\` has a different morph reading from \`${answer.text}\``, variant.index);
+    else if (compare.verdict === "unsettled") push(unsettledMessage(compare.pairs), variant.index);
+    else if (compare.verdict !== "same") push(`variant \`${variant.text}\` has a different morph reading from \`${answer.text}\``, variant.index);
   }
 }
 
@@ -74,9 +81,10 @@ function lintPickOne(item: PracticeItem, tables: ClassifyTables, push: Push): vo
   if (!item.promptEnglish) push("prompt needs the English sentence");
   if (item.promptSpans.length !== 2) return push(`prompt needs two Ageben forms, found ${item.promptSpans.length}`);
   const [a, b] = item.promptSpans as [PracticeItem["promptSpans"][0], PracticeItem["promptSpans"][0]];
-  const compare = compareReadings(a.text, b.text, tables);
+  const compare = sameReadings(a.text, b.text, tables);
   if (compare.error) push(`both forms must parse (${compare.error})`);
-  else if (compare.same) push("the two forms have the same reading, so neither is wrong");
+  else if (compare.verdict === "unsettled") push(unsettledMessage(compare.pairs));
+  else if (compare.verdict === "same") push("the two forms have the same reading, so neither is wrong");
   else if (!sameMultiset(contentRoots(a.text, tables), contentRoots(b.text, tables))) {
     push("the two forms use different content roots; use the same content words in both, so they differ only in this stage's decision");
   }
@@ -102,9 +110,9 @@ function lintFixIt(item: PracticeItem, tables: ClassifyTables, push: Push): void
   const error = parseError(answer.text, tables);
   if (error) return push(`corrected sentence does not parse (${error})`, answer.index);
   // A wrong form the parser rejects is fine; one that parses must read differently.
-  if (compareReadings(answer.text, wrong.text, tables).same) {
-    push("the wrong form has the same reading as the correction, so nothing is wrong", wrong.index);
-  }
+  const compare = sameReadings(answer.text, wrong.text, tables);
+  if (compare.verdict === "unsettled") push(unsettledMessage(compare.pairs), wrong.index);
+  else if (compare.verdict === "same") push("the wrong form has the same reading as the correction, so nothing is wrong", wrong.index);
 }
 
 /** Two forms that differ in one morph; answer: a morph line for each, then the difference in plain English. */
