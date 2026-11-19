@@ -45,3 +45,71 @@ zalazun theyomazozon vudurul thohem blarl zazozon vowurol.
 @ b11
 zazozon theyomazozon vowurol.
 = I gather Azozon thinks Azozon walks.
+
+# R4a-1: a restrictor inside a holder's view (holder.md#what-the-holder-covers). k1 + k2 clash in Azozon's view; k1 + k3
+# (two holders) do not; after k1, *does Alazun sing?* cannot say. k4: the carried second sentence is the shared view, so
+# it clashes with the first (one turn, so both `zawan` are one listener).
+@ k1
+zalazun vozuyel hual theyomazozon.
+= I gather Azozon thinks Alazun always sings.
+
+@ k2
+zalazun vozuyel hal theyomazozon.
+= I gather Azozon thinks Alazun never sings.
+
+@ k3
+zalazun vozuyel hal theyomahelan.
+= I gather Ahelan thinks Alazun never sings.
+
+@ k4
+zawan vebal hal thevumayan. zawan vebal.
+= From what I remember of what we both saw, you've never listened. You listen (in the view we share).
+
+# R4a-2: a whole-list denial inside a holder's view. k6 + k7 + k8 clash in Alazun's view; k9 + k10 + k6 (your claims
+# first, so the holder does not carry onto them) do not.
+@ k6
+zazozon vowurol veruvol val vul theyomalazun.
+= I gather Alazun thinks Azozon doesn't both walk and run.
+
+@ k7
+zazozon vowurol theyomalazun.
+= I gather Alazun thinks Azozon walks.
+
+@ k8
+zazozon veruvol theyomalazun.
+= I gather Alazun thinks Azozon runs.
+
+@ k9
+zazozon vowurol.
+= Azozon walks.
+
+@ k10
+zazozon veruvol.
+= Azozon runs.
+
+# R4a-3: verbless *no K* inside a holder's view. k11 + k12 clash in Azozon's view; k13 + k11 do not.
+@ k11
+zul godozel theyomazozon.
+= I gather Azozon thinks there are no dogs.
+
+@ k12
+zazozon godozel theyomazozon.
+= I gather Azozon thinks Azozon is a dog.
+
+@ k13
+zazozon godozel.
+= Azozon is a dog.
+
+# R4a-13: a holder over a say word, both wraps nested. k51 + k52 clash in Alazun's view; k39 + k51 (your say word
+# first) do not; after k52, *does Alazun think the rules allow Azozon to walk?* is no (the ban, inside the view).
+@ k51
+zazozon vowurol hwuval theyomalazun.
+= I gather Alazun thinks the rules allow Azozon to walk.
+
+@ k52
+zazozon vowurol hwuvul theyomalazun.
+= I gather Alazun thinks the rules forbid Azozon to walk.
+
+@ k39
+zazozon vowurol hwuvul.
+= The rules forbid Azozon to walk.

@@ -103,3 +103,17 @@ zerulal.
 @ hg21
 zerulal gahum blugalal.
 = There is rain because there are clouds.
+
+# R4e-5: a holder's conditional (holder.md#what-the-holder-covers; solver.md Holders row 4). hg13 + hg14: *does Azozon
+# think Alazun sits?* yes. hg13 + hg15: clash in Azozon's view. hg1 + hg15: no clash.
+@ hg13
+zalazun theyomazozon vehohel thohem blarl zazozon vowurol.
+= I gather Azozon thinks Alazun sits if Azozon walks.
+
+@ hg14
+zazozon theyomazozon vowurol.
+= I gather Azozon thinks Azozon walks.
+
+@ hg15
+zalazun theyomazozon vehohel thohem thul blarl zazozon vowurol.
+= I gather Azozon thinks it isn't so that Alazun sits if Azozon walks.

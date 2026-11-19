@@ -5,73 +5,9 @@
 # Each group comment names the row, the entries that make one log (in that order), the question, the verdict the row
 # should give, and the verdict now.
 
-# R4a-1: a restrictor inside a holder's view (holder.md#what-the-holder-covers).
-# k1 + k2: clash(view(azozon, ..)) (now: no clash; both left noRow frameCombination).
-# k1 + k3: no clash, two holders (now: no clash, both left).
-# k1, ? zalazun vozuyel. -> follows: no; the view is not your claim (now: unknown, k1 left).
-# k4 + k5: the carried bare sentence is the interlocutors' view too: clash in the shared view (now: no clash; k4 left
-# frameCombination, k5 left carry:holder).
-@ k1
-zalazun vozuyel hual theyomazozon.
-= I gather Azozon thinks Alazun always sings.
-
-@ k2
-zalazun vozuyel hal theyomazozon.
-= I gather Azozon thinks Alazun never sings.
-
-@ k3
-zalazun vozuyel hal theyomahelan.
-= I gather Ahelan thinks Alazun never sings.
-
-@ k4
-zawan vebal hal thevumayan.
-= From what I remember of what we both saw, you've never listened.
-
-@ k5
-zawan vebal.
-= You listen (in the view we share).
-
-# R4a-2: a whole-list denial inside a holder's view.
-# k6 + k7 + k8: clash(view(alazun, notall(..))) (now: no clash; k6 left noRow joinSeries:u).
-# k9 + k10 + k6 (claims first, so the holder does not carry onto them): no clash (now: no clash, k6 left).
-@ k6
-zazozon vowurol veruvol val vul theyomalazun.
-= I gather Alazun thinks Azozon doesn't both walk and run.
-
-@ k7
-zazozon vowurol theyomalazun.
-= I gather Alazun thinks Azozon walks.
-
-@ k8
-zazozon veruvol theyomalazun.
-= I gather Alazun thinks Azozon runs.
-
-@ k9
-zazozon vowurol.
-= Azozon walks.
-
-@ k10
-zazozon veruvol.
-= Azozon runs.
-
-# R4a-3: verbless *no K* inside a holder's view.
-# k11 + k12: clash(view(azozon, none(..))) (now: no clash; k11 left noRow joinSeries:u:kind).
-# k13 + k11: no clash (now: no clash, k11 left).
-@ k11
-zul godozel theyomazozon.
-= I gather Azozon thinks there are no dogs.
-
-@ k12
-zazozon godozel theyomazozon.
-= I gather Azozon thinks Azozon is a dog.
-
-@ k13
-zazozon godozel.
-= Azozon is a dog.
-
 # R4a-4: a topic-pronoun holder resolves to the topic; its anaphor link is used.
-# k14 + k15: clash(view(azozon, ..)) (now: no clash; k14 left unused anaphor:topic and unit:linker). The linker link
-# needs its own row (links unit) before k14 leaves `left`.
+# k14 + k15: clash(view(azozon, ..)) once the linker has a row (now: no clash; R4a-4 is built, and k14 is left only for
+# unused unit:linker, the links unit's).
 @ k14
 xazozon theyomalen zalazun vudurul.
 = Now, about Azozon: I gather Azozon thinks Alazun left.
@@ -81,7 +17,8 @@ zalazun thebamazozon vudurul vul.
 = I hear Azozon thinks Alazun did not leave.
 
 # R4a-5 with R4a-8: a listener holder is the turn's addressee.
-# k16 + k15: clash(view(azozon, ..)) (now: no clash; the call left noRow edge:vocative, the view left noRow xFamily:holder).
+# k16 + k15: clash(view(azozon, ..)) (now: no clash; R4a-5 is built, so the view is view(listener(0), ..) until R4a-8
+# makes the listener the turn's addressee; the call is left noRow edge:vocative).
 @ k16
 Bea: yazozon. zalazun theyomawan vudurul.
 = Azozon! I gather you think Alazun left.
@@ -173,6 +110,8 @@ Dee: zawan vowurol.
 Bea: zawan vowurol vul.
 = You don't walk.
 
+# k13 and k39 are in solve-holders.txt.
+
 # R4a-9: a hinge over a say word (pair row say x hinge, the hinge after the say word).
 # k37 + k38, ? zazozon vowurol hwuval. -> follows: yes (now: unknown; k37 left noRow frameCombination).
 # k37 + k39, ? zalazun vezuyol vul. -> follows: yes, back rule through the ban (now: no, because the condition
@@ -184,10 +123,6 @@ zazozon vowurol hwuval thohem blarl. zalazun vezuyol.
 @ k38
 zalazun vezuyol.
 = Alazun talks.
-
-@ k39
-zazozon vowurol hwuvul.
-= The rules forbid Azozon to walk.
 
 # R4a-10: a binder over a say word (pair row say x binder, the universal first).
 # k40 + k13, ? zazozon vowurol hwuval. -> follows: yes (now: unknown; k40 left noRow frameCombination).
@@ -247,15 +182,3 @@ hwuval zazozon vowurol uom thagom.
 @ k50
 hwuval zazozon vowurol thahum blarl. zalazun vezuyol.
 = The rules allow that Azozon walks because Alazun talks.
-
-# R4a-13: a holder over a say word (pair row say x holder).
-# k51 + k52: clash(view(alazun, say(..))) (now: no clash; both left noRow frameCombination).
-# k39 + k51 (claim first, so the holder does not carry onto it): no clash, a view never clashes with your claim (now:
-# no clash, k51 left).
-@ k51
-zazozon vowurol hwuval theyomalazun.
-= I gather Alazun thinks the rules allow Azozon to walk.
-
-@ k52
-zazozon vowurol hwuvul theyomalazun.
-= I gather Alazun thinks the rules forbid Azozon to walk.

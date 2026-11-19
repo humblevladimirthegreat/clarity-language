@@ -1,6 +1,6 @@
 # Draft solver fixture (solver-coverage R4e): a conditional denied beside a channel, a holder's conditional, MAY over a
 # hinge, and a denied hinge on a universal. Drafted rows only: phase 3 moves each group into solve-hinges.txt when it
-# builds the row. The built R4e rows (hg1–hg10, hg12, hg17–hg21) are in solve-hinges.txt.
+# builds the row. The built R4e rows (hg1–hg10, hg12–hg15, hg17–hg21) are in solve-hinges.txt.
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # Read as one log, the entries do not all stand together; each comment names the entries a verdict reads (as their own case) and the verdict now.
 # A = Azozon walks, B = Alazun sits.
@@ -10,20 +10,6 @@
 @ hg11
 zalazun vehohel thanam thohem thul blarl zazozon vowurol.
 = That Alazun sits doesn't follow from Azozon walking.
-
-# R4e-5: a holder's conditional (holder.md#what-the-holder-covers; solver.md Holders row 4).
-# hg13 + hg14: ? zalazun theyomazozon vehohel. → yes (now: yes). hg13 + hg15: clash in Azozon's view (now: hg15 left). hg1 + hg15: no clash.
-@ hg13
-zalazun theyomazozon vehohel thohem blarl zazozon vowurol.
-= I gather Azozon thinks Alazun sits if Azozon walks.
-
-@ hg14
-zazozon theyomazozon vowurol.
-= I gather Azozon thinks Azozon walks.
-
-@ hg15
-zalazun theyomazozon vehohel thohem thul blarl zazozon vowurol.
-= I gather Azozon thinks it isn't so that Alazun sits if Azozon walks.
 
 # R4e-6: MAY over a hinge (knowing.md#may, causation.md#if; solver.md row 17).
 # hg16 + hg2: ? zalazun vehohel. → unknown, ?~ → yes (now: the same, through the maybe gate). hg16 + hg8: no clash (maybe vs not).

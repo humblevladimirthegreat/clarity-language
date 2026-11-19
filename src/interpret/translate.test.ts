@@ -150,10 +150,10 @@ describe("translate: holders and say words (R2-1, R2-4)", () => {
     assert.match(program("zalazun theyomeyel vudurul.").program, /^holds\(isa\(nm\("t:0\.0",h\),eye\)\) :- on\("t:0\.0"\)\.$/m);
   });
 
-  it("a holder with no row yet is left out: the topic pronoun; a holder on MAY is a choice of its view (R2-3)", () => {
+  it("a holder on MAY is a choice of its view (R2-3); R4a-4: the topic pronoun holder is its topic, its link used", () => {
     assert.match(program("zalazun thomamazozon vudurul.").program, /^\{ holds\(view\(azozo,uduru\(z\(alazu\)\)\)\) \} :- on\("t:0\.0"\)\.$/m);
-    // The reader gives the topic pronoun its antecedent; with no row, its anaphor link goes unused.
-    assert.deepEqual(program("xazozon theyomalen zalazun vudurul.").left.map((l) => l.key), ["anaphor:topic"]);
+    // Only the linker link is left; it is the links unit's.
+    assert.deepEqual(program("xazozon theyomalen zalazun vudurul.").left.map((l) => l.key), ["unit:linker"]);
   });
 
   it("row 4: who has the say, by part and ending; pair reach e on z keeps its bl- word as to(X)", () => {

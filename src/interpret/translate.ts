@@ -54,14 +54,22 @@ export type TermSource = { reading: ReadingId; claim: Claim };
  * `say(Who, Part, Reach, Answer, Ending, T)` with `to(X)` as a seventh argument for pair reach `e` on `z` / `d` / `b`.
  */
 export type Wrap =
-  | { kind: "view"; holder: string; may?: boolean }
-  | { kind: "say"; who: string; part: string; reach: string; answer: string; ending: string; to?: string };
+  | { kind: "view"; holder: string; may?: boolean; say?: SayWrap }
+  | SayWrap;
+
+/** A say word's wrap. */
+export type SayWrap = { kind: "say"; who: string; part: string; reach: string; answer: string; ending: string; to?: string };
+
+/** The say word in a wrap: the wrap itself, or one a holder's view holds (R4a-13). */
+export function sayOf(wrap: Wrap | undefined): SayWrap | undefined {
+  return wrap?.kind === "say" ? wrap : wrap?.say;
+}
 
 /** A claim term inside its wrap, as the program writes it. */
 export function wrapText(wrap: Wrap | undefined, inner: string): string {
   if (!wrap) return inner;
   // R3-6: the holder's own MAY is a term inside the view.
-  if (wrap.kind === "view") return `view(${wrap.holder},${wrap.may ? `may(${inner})` : inner})`;
+  if (wrap.kind === "view") return `view(${wrap.holder},${wrap.may ? `may(${inner})` : wrapText(wrap.say, inner)})`;
   return `say(${wrap.who},${wrap.part},${wrap.reach},${wrap.answer},${wrap.ending},${inner}${wrap.to ? `,${wrap.to}` : ""})`;
 }
 
@@ -205,6 +213,39 @@ type Ctx = { reading: Reading; id: string; subst: Subst; asserted: boolean; out:
 type Why = { construction: string; key?: string; reason: string };
 type Frames = { hinge?: Frame; universal?: Frame; restrictor?: Frame; holder?: Frame; channel?: Frame; say?: Frame; may?: Frame; mayHost?: Frame; likely?: Frame; because?: Frame; zone?: Frame; standalone: Frame[]; other?: Frame };
 
+/**
+ * Say rows 6 to 8 (R2-7, R2-8): which say words clash, a requirement's permission, a ban's denial. `w` wraps each
+ * term: plain in every program; R4a-13 runs them inside a holder's view, `view(V, say(..))`, where one is held.
+ */
+function sayRules(w: (t: string) => string): string[] {
+  return [
+    "% Say words (R2-7): the same party, part, reach and ending, allow or require against forbid; e clashes with nothing.",
+    ...["", ", X"].flatMap((x) => [
+      `clash(${w(`say(W, P, R, u, E, T${x})`)}) :- holds(${w(`say(W, P, R, a, E, T${x})`)}), holds(${w(`say(W, P, R, u, E, T${x})`)}).`,
+      `clash(${w(`say(W, P, R, u, E, T${x})`)}) :- holds(${w(`say(W, P, R, o, E, T${x})`)}), holds(${w(`say(W, P, R, u, E, T${x})`)}).`,
+      `clash(${w(`say(W, P, R, u, E, Q${x})`)}) :- holds(${w(`say(W, P, R, a, E, T${x})`)}), holds(${w(`say(W, P, R, u, E, Q${x})`)}), fits(Q, T).`,
+      `clash(${w(`say(W, P, R, u, E, Q${x})`)}) :- holds(${w(`say(W, P, R, o, E, T${x})`)}), holds(${w(`say(W, P, R, u, E, Q${x})`)}), fits(Q, T).`,
+    ]),
+    "% A requirement gives permission (R2-8).",
+    ...["", ", X"].flatMap((x) => {
+      const body = `holds(${w(`say(W, P, R, o, E, T${x})`)})`;
+      const head = w(`say(W, P, R, a, E, T${x})`);
+      return [`holds(${head}) :- ${body}.`, `fired(requires, ${head}) :- ${body}.`, `used(requires, ${head}, ${w(`say(W, P, R, o, E, T${x})`)}) :- ${body}.`];
+    }),
+    "% A ban denies the matching permission (permission-consent.md#requirement).",
+    ...["", ", X"].flatMap((x) =>
+      [["T", ""], ["Q", ", fits(T, Q)"]].flatMap(([q, fit]) => {
+        const body = `holds(${w(`say(W, P, R, u, E, T${x})`)})${fit}`;
+        const head = w(`neg(say(W, P, R, a, E, ${q}${x}))`);
+        return [`holds(${head}) :- ${body}.`, `fired(bans, ${head}) :- ${body}.`, `used(bans, ${head}, ${w(`say(W, P, R, u, E, T${x})`)}) :- ${body}.`];
+      }),
+    ),
+  ];
+}
+
+/** R4a-13: say rows 6 to 8 inside a holder's view, written only when a reading holds a say word in a view. */
+const VIEW_SAY = sayRules((t) => `view(V, ${t})`).filter((l) => !l.startsWith("%"));
+
 const GENERIC = [
   "% Generic rules (docs/meta/solver.md).",
   "clash(P) :- holds(P), holds(neg(P)).",
@@ -216,27 +257,7 @@ const GENERIC = [
   "% A holder's view (R2-1 row 1, R2-2): one holder's views clash; two holders' never do, nor a view and your claim.",
   "clash(view(H, P)) :- holds(view(H, P)), holds(view(H, neg(P))).",
   "clash(view(H, Q)) :- holds(view(H, neg(Q))), holds(view(H, P)), fits(Q, P).",
-  "% Say words (R2-7): the same party, part, reach and ending, allow or require against forbid; e clashes with nothing.",
-  ...["", ", X"].flatMap((x) => [
-    `clash(say(W, P, R, u, E, T${x})) :- holds(say(W, P, R, a, E, T${x})), holds(say(W, P, R, u, E, T${x})).`,
-    `clash(say(W, P, R, u, E, T${x})) :- holds(say(W, P, R, o, E, T${x})), holds(say(W, P, R, u, E, T${x})).`,
-    `clash(say(W, P, R, u, E, Q${x})) :- holds(say(W, P, R, a, E, T${x})), holds(say(W, P, R, u, E, Q${x})), fits(Q, T).`,
-    `clash(say(W, P, R, u, E, Q${x})) :- holds(say(W, P, R, o, E, T${x})), holds(say(W, P, R, u, E, Q${x})), fits(Q, T).`,
-  ]),
-  "% A requirement gives permission (R2-8).",
-  ...["", ", X"].flatMap((x) => {
-    const body = `holds(say(W, P, R, o, E, T${x}))`;
-    const head = `say(W, P, R, a, E, T${x})`;
-    return [`holds(${head}) :- ${body}.`, `fired(requires, ${head}) :- ${body}.`, `used(requires, ${head}, say(W, P, R, o, E, T${x})) :- ${body}.`];
-  }),
-  "% A ban denies the matching permission (permission-consent.md#requirement).",
-  ...["", ", X"].flatMap((x) =>
-    [["T", ""], ["Q", ", fits(T, Q)"]].flatMap(([q, fit]) => {
-      const body = `holds(say(W, P, R, u, E, T${x}))${fit}`;
-      const head = `neg(say(W, P, R, a, E, ${q}${x}))`;
-      return [`holds(${head}) :- ${body}.`, `fired(bans, ${head}) :- ${body}.`, `used(bans, ${head}, say(W, P, R, u, E, T${x})) :- ${body}.`];
-    }),
-  ),
+  ...sayRules((t) => t),
   "% An act against a stated ban (R2-9): data, never a clash.",
   ...["", ", X"].flatMap((x) =>
     [["T", ""], ["Q", ", fits(Q, T)"]].flatMap(([q, fit]) => {
@@ -594,7 +615,8 @@ class Translator {
       if (frames.may && wrapped.kind === "view") wrapped.may = true;
       ctx.wrap = wrapped;
       ctx.asserted = false;
-      if (frames.restrictor || frames.likely || (frames.say && (frames.hinge || frames.universal))) return this.leave(reading, combination);
+      // R4a-1: a restrictor runs inside a holder's view; a say word keeps no restrictor.
+      if ((frames.restrictor && wrapped.kind !== "view") || frames.likely || (frames.say && (frames.hinge || frames.universal || frames.restrictor))) return this.leave(reading, combination);
     }
     if (frames.mayHost || (frames.may && !frames.holder && !mayOver)) ctx.choice = true;
     if (frames.likely) {
@@ -629,9 +651,9 @@ class Translator {
    * (the channel as `via(Id, Channel)`, a first-mention holder's kind) into `ctx.out`. Undefined when it has none.
    */
   wrap(reading: Reading, frames: Frames, ctx: Ctx): Wrap | Why | undefined {
-    const say = frames.say;
-    if (say && frames.holder) return { construction: "frameCombination", reason: "noRow" };
-    if (say) return this.sayWrap(reading, say, ctx);
+    // R4a-13: a holder over a say word, stated or carried, nests both wraps, `view(H, say(..))`.
+    const inner = frames.say ? this.sayWrap(reading, frames.say, ctx) : undefined;
+    if (inner && "reason" in inner) return inner;
     let holder: string | undefined;
     let channel: Frame | undefined;
     if (frames.holder) {
@@ -643,7 +665,7 @@ class Translator {
     } else {
       // Row 2: a carried holder takes the holder of the reading it links to.
       const carried = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:holder");
-      if (!carried) return undefined;
+      if (!carried) return inner;
       const from = carried.to ? this.wraps.get(carried.to) : undefined;
       if (from?.kind !== "view") return { construction: carried.key, key: carried.key, reason: "noRow" };
       holder = from.holder;
@@ -657,7 +679,7 @@ class Translator {
       this.rule(ctx, `via(${ctx.id},${name(gloss.toLowerCase())})`, [], "via");
       this.use(channel);
     }
-    return { kind: "view", holder };
+    return { kind: "view", holder, ...(inner?.kind === "say" ? { say: inner } : {}) };
   }
 
   /** Row 4 (permission-consent.md#say-words, #permission, #consent, #say-reach): a say word's wrap, or why it has none. */
@@ -705,12 +727,28 @@ class Translator {
   /**
    * Row 3, who the holder is (holder.md#naming-a-holder): a name is its root id, `-r` its antecedent's; a kind of person
    * is a first-mention noun, `nm(Id, h)` with its kind; R2-4: `-x` is `grp(H)`, the interlocutors and the generic
-   * pronoun are their own holders. Undefined for a holder with no row: the topic pronoun (the reader gives it no
-   * antecedent), the speaker and the listener.
+   * pronoun are their own holders. R4a-4: the topic pronoun and a `-r` holder resume their antecedent through the
+   * anaphor link, which the holder uses, as {@link resume} does in a role (a first mention keeps its constant; a `-r`
+   * holder with no antecedent is the name it spells). R4a-5: the listener is the listener term, as `zawan` is in a role.
+   * Undefined for a holder with no row: a topic pronoun with no topic, and the speaker.
    */
   holder(frame: Frame, ctx: Ctx): string | undefined {
-    const party = frame.party ? throughAntecedent(frame.party) : undefined;
-    if (party?.kind !== "thing") return undefined;
+    if (!frame.party) return undefined;
+    this.resume(frame.party, ctx);
+    const through = throughAntecedent(frame.party);
+    const own = frame.party.kind === "pronoun" && through.kind === "pronoun" ? frame.party.word : undefined;
+    const party: Term = own && own.ending === "r" && own.family.kind === "x" ? { kind: "thing", head: own, root: own.family.rightRoots!.join(""), named: true, details: [] } : through;
+    if (party.kind === "listener") {
+      const text = this.term(party, "h", ctx);
+      this.holders.set(text, "your");
+      return text;
+    }
+    if (party.kind !== "thing") return undefined;
+    const known = this.consts.get(party);
+    if (known) {
+      this.holders.set(known, "someone's");
+      return known;
+    }
     const word = party.head;
     if (isTopicPronoun(word) || party.root === CLOSED.microphone || party.root === CLOSED.headphones) return undefined;
     let text: string;
@@ -785,15 +823,17 @@ class Translator {
       // R2-5: inside a view, the kind is the holder's too.
       body.push({ atom: `holds(${this.w(ctx, `isa(X,${k})`)})`, premise: this.w(ctx, `isa(X,${k})`) });
       if (!claim.verb && !claim.predicate.length && Object.keys(claim.roles).length === 1) {
-        if (!none || frames.hinge || frames.because || ctx.wrap) return { construction: f.construction, key: f.key, reason: "noRow" };
-        this.rule(ctx, `none(${ctx.id})`, body, "clash");
+        // R4a-3: inside a holder's view, *no K* clashes with the holder's own `isa` views.
+        if (!none || frames.hinge || frames.because || (ctx.wrap && !plainView(ctx.wrap))) return { construction: f.construction, key: f.key, reason: "noRow" };
+        this.rule(ctx, this.w(ctx, `none(${ctx.id})`), body, "clash");
         return true;
       }
     }
 
     // Whole-list denial (row 4): the items cannot all hold.
     if (whole && denial && inner) {
-      if (frames.hinge || frames.because || frames.zone || frames.restrictor || ctx.wrap) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
+      // R4a-2: inside a holder's view, the items are the holder's views.
+      if (frames.hinge || frames.because || frames.zone || frames.restrictor || (ctx.wrap && !plainView(ctx.wrap))) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
       if (inner.series === "e" && (inner.ending === "l" || inner.ending === "m")) return this.notOne(reading, claim, denial, ctx, inner.ending === "m");
       if (inner.series === "e" || inner.series === "ae") return noRow("joinSeries:u");
       const lits: Literal[] = [];
@@ -801,9 +841,9 @@ class Translator {
         const item = this.substituted(claim, denial, m, { ...ctx, asserted: false });
         const slot = `i(${ctx.id},${i + 1})`;
         this.slots.set(slot, { reading: reading.id, claim: item.claim });
-        lits.push({ atom: `fits(${slot},P${i + 1})` }, { atom: `holds(P${i + 1})`, premise: `P${i + 1}` });
+        lits.push({ atom: `fits(${slot},P${i + 1})` }, { atom: `holds(${this.w(ctx, `P${i + 1}`)})`, premise: this.w(ctx, `P${i + 1}`) });
       });
-      this.rule(ctx, `notall(${ctx.id})`, lits, "clash");
+      this.rule(ctx, this.w(ctx, `notall(${ctx.id})`), lits, "clash");
       return true;
     }
 
@@ -826,18 +866,19 @@ class Translator {
       if (denial || !(always || never || usually) || (usually && listed)) return { construction: frames.restrictor.construction, key: frames.restrictor.key, reason: "noRow" };
       this.use(frames.restrictor);
       const h = heads[0]!;
+      // R4a-1: inside a holder's view each term is wrapped, the marker too (`always(view(H, T))`).
       if (usually) {
         this.open(ctx, h.text, []);
       } else {
-        if (!listed) this.rule(ctx, always ? h.text : `neg(${h.text})`, []);
-        this.rule(ctx, h.text, [], always ? "always" : "never");
+        if (!listed) this.rule(ctx, this.w(ctx, always ? h.text : `neg(${h.text})`), []);
+        this.rule(ctx, this.w(ctx, h.text), [], always ? "always" : "never");
       }
       this.pool(reading, h.text, h.claim, never && !listed ? -1 : 1);
       return true;
     }
 
     // R2-7, R2-9: a ban's act is matched against the acts it may meet, as a denied term is.
-    const ban = ctx.wrap?.kind === "say" && ctx.wrap.answer === "u";
+    const ban = sayOf(ctx.wrap)?.answer === "u";
     const zone = frames.zone ? this.zone(reading, frames.zone, ctx) : undefined;
     if (zone && "reason" in zone) return zone;
     for (const h of heads) {
@@ -858,7 +899,7 @@ class Translator {
 
     // Membership (row 10): the claim keeps its list term, and each member (or each paired place) holds; R2-5, inside a
     // view too. A say word's content stays one wrapped term.
-    if (!denial && !frames.universal && ctx.wrap?.kind !== "say") this.members(reading, claim, ctx);
+    if (!denial && !frames.universal && !sayOf(ctx.wrap)) this.members(reading, claim, ctx);
     return true;
   }
 
@@ -1039,7 +1080,8 @@ class Translator {
     const universal = body.length > 0;
     const denied = hingeDenied(reading) === frame;
     // A denied conditional on a universal (R4e open decision 2), with MAY, in a wrap or beside *because* has no row.
-    if (denied && (universal || mayCond || mayOutcome || ctx.gate || ctx.wrap || because)) return bad;
+    // R4e-5: a holder's denied conditional is the holder's view, `view(H, neg(if(..)))`.
+    if (denied && (universal || mayCond || mayOutcome || ctx.gate || (ctx.wrap && !plainView(ctx.wrap)) || because)) return bad;
     const h = heads[0]!;
     const c = `c(${ctx.id})`;
     const o = `o(${ctx.id})`;
@@ -1063,7 +1105,7 @@ class Translator {
     if (plain) this.conditionals.set(term, { reading: reading.id, name: termName, id: ctx.id, negOut: h.sign < 0, denied });
     if (denied) {
       // R4e-3 (say-reasons.md#arguments: "only that the link fails"): the link denied, nothing else claimed.
-      this.rule(ctx, `neg(${term})`, []);
+      this.rule(ctx, w(`neg(${term})`), []);
       this.useDenied(reading, frame);
       return true;
     }
@@ -1224,13 +1266,15 @@ class Translator {
    */
   notOne(reading: Reading, claim: Claim, list: ListTerm, ctx: Ctx, none: boolean): true {
     const items = this.items(reading, claim, list, ctx);
-    const rest = (k: number): Literal[] => items.flatMap((_, j) => (j === k ? [] : denied(items, j)));
-    items.forEach((_, k) => this.rule(ctx, `notone(${ctx.id})`, [...held(items, k), ...rest(k)], "clash"));
-    if (none) this.rule(ctx, `notone(${ctx.id})`, items.flatMap((_, j) => denied(items, j)), "clash");
+    // R4a-2: inside a holder's view, row 21 runs on the holder's views.
+    const w = (t: string): string => this.w(ctx, t);
+    const rest = (k: number): Literal[] => items.flatMap((_, j) => (j === k ? [] : denied(items, j, w)));
+    items.forEach((_, k) => this.rule(ctx, w(`notone(${ctx.id})`), [...held(items, k, w), ...rest(k)], "clash"));
+    if (none) this.rule(ctx, w(`notone(${ctx.id})`), items.flatMap((_, j) => denied(items, j, w)), "clash");
     if (items.length === 2) {
       for (const [k, j] of [[0, 1], [1, 0]] as const) {
-        this.rule(ctx, items[j]!.text, held(items, k));
-        this.rule(ctx, `neg(${items[j]!.text})`, denied(items, k));
+        this.rule(ctx, w(items[j]!.text), held(items, k, w));
+        this.rule(ctx, w(`neg(${items[j]!.text})`), denied(items, k, w));
       }
     }
     return true;
@@ -1308,6 +1352,7 @@ class Translator {
     const section = (title: string, lines: string[]): string[] => (lines.length ? ["", `% ${title}`, ...lines] : []);
     return [
       ...GENERIC,
+      ...section("Say words inside a holder's view (R4a-13).", [...this.wraps.values()].some((w) => sayOf(w) && w.kind === "view") ? VIEW_SAY : []),
       ...section("Switches.", switches),
       "",
       ...this.lines,
@@ -1324,13 +1369,18 @@ class Translator {
 // ── Helpers ─────────────────────────────────────────────────────────────────
 
 /** Item k held: a claim that says at least the item (row 4's join). */
-function held(items: readonly { slot: string }[], k: number): Literal[] {
-  return [{ atom: `fits(${items[k]!.slot},P${k + 1})` }, { atom: `holds(P${k + 1})`, premise: `P${k + 1}` }];
+function held(items: readonly { slot: string }[], k: number, w: (t: string) => string = (t) => t): Literal[] {
+  return [{ atom: `fits(${items[k]!.slot},P${k + 1})` }, { atom: `holds(${w(`P${k + 1}`)})`, premise: w(`P${k + 1}`) }];
+}
+
+/** R4a-2: a holder's own view, with no MAY and no say word inside it, where the holder's rules run as stated. */
+function plainView(wrap: Wrap): boolean {
+  return wrap.kind === "view" && !wrap.may && !wrap.say;
 }
 
 /** Item j denied: a denial the item says at least (row 6's join). */
-function denied(items: readonly { slot: string }[], j: number): Literal[] {
-  return [{ atom: `fits(N${j + 1},${items[j]!.slot})` }, { atom: `holds(neg(N${j + 1}))`, premise: `neg(N${j + 1})` }];
+function denied(items: readonly { slot: string }[], j: number, w: (t: string) => string = (t) => t): Literal[] {
+  return [{ atom: `fits(N${j + 1},${items[j]!.slot})` }, { atom: `holds(${w(`neg(N${j + 1})`)})`, premise: w(`neg(N${j + 1})`) }];
 }
 
 /** Does frame `a` cover frame `b`? */

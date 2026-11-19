@@ -333,6 +333,59 @@ describe("solve: holders (R2-1 rows 1 to 3, R2-2, R2-4, R2-5)", () => {
   });
 });
 
+describe("solve: holders over restrictors, denials, say words and hinges (R4a-1 to R4a-5, R4a-13, R4e-5)", () => {
+  const b = (labels: string[]) => log("holders", labels);
+  const atoms = async (labels: string[]) => (await clashes(b(labels), base)).clashes.map((c) => [c.atom, c.readings, c.english]);
+
+  it("R4a-1: always and never clash inside one view (k1 + k2), never across holders (k1 + k3) or into your claim", async () => {
+    assert.deepEqual(await atoms(["k1", "k2"]), [["view(azozo,ozuye(z(alazu)))", ["t:0.0", "t:0.1"], "In Azozon's view these cannot all hold: t:0.0, t:0.1."]]);
+    assert.deepEqual(await atoms(["k1", "k3"]), []);
+    assert.equal((await follows(b(["k1"]), q("zalazun vozuyel."), base)).verdict, "unknown");
+    assert.deepEqual(await atoms(["k4"]), [["view(interlocutors,eba(z(listener(0))))", ["t:0.0", "t:0.1"], "In our view these cannot all hold: t:0.0, t:0.1."]]);
+  });
+
+  it("R4a-2: a whole-list denial inside a view clashes with the holder's items (k6 to k8), never with yours", async () => {
+    assert.deepEqual(await atoms(["k6", "k7", "k8"]), [['view(alazu,notall("t:0.0"))', ["t:0.0", "t:0.1", "t:0.2"], "In Alazun's view these cannot all hold: t:0.0, t:0.1, t:0.2."]]);
+    assert.deepEqual(await atoms(["k9", "k10", "k6"]), []);
+  });
+
+  it("R4a-3: no dogs, in Azozon's view, clashes with Azozon's view that Azozon is a dog (k11 + k12), not with yours", async () => {
+    assert.deepEqual(await atoms(["k11", "k12"]), [['view(azozo,none("t:0.0"))', ["t:0.0", "t:0.1"], "In Azozon's view these cannot all hold: t:0.0, t:0.1."]]);
+    assert.deepEqual(await atoms(["k13", "k11"]), []);
+  });
+
+  it("R4a-4: a topic-pronoun holder is the topic, and its anaphor link is used", () => {
+    const t = translate(buildLog([{ speaker: "a", at: 0, text: "xazozon theyomalen zalazun vudurul." }], tables));
+    assert.deepEqual(t.left.map((l) => l.unused), [['link unit:linker "xazozon"']]);
+    const u = translate(buildLog([{ speaker: "a", at: 0, text: "zodozel vudurul. zalazun theyomodozer vezuvel." }], tables));
+    assert.match(u.program, /^holds\(view\(nm\("t:0\.0",z\),ezuve\(z\(alazu\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+  });
+
+  it("R4a-5: a listener holder is the turn's listener; two views of one turn's listener clash", async () => {
+    const one = buildLog([{ speaker: "a", at: 0, text: "zalazun theyomawan vudurul. zalazun theyomawan vudurul vul." }], tables);
+    const result = await clashes(one, base);
+    assert.deepEqual(result.clashes.map((c) => [c.atom, c.english]), [["view(listener(0),uduru(z(alazu)))", "In your view these cannot all hold: t:0.0, t:0.1."]]);
+  });
+
+  it("R4a-13: a holder over a say word: a ban and a grant clash in the view (k51 + k52), and the ban answers no", async () => {
+    assert.deepEqual(await atoms(["k51", "k52"]), [["view(alazu,say(rules,v,u,u,l,owuro(z(azozo))))", ["t:0.0", "t:0.1"], "In Alazun's view these cannot all hold: t:0.0, t:0.1."]]);
+    assert.deepEqual(await atoms(["k39", "k51"]), []);
+    const a = await follows(b(["k52"]), q(fixture("holders").get("k51")!), base);
+    assert.equal(a.verdict, "no");
+    assert.deepEqual(a.because, ["t:0.0"]);
+  });
+
+  it("R4e-5: a holder's conditional runs in the view (hg13 + hg14); its denial clashes there (hg13 + hg15), not with yours (hg1)", async () => {
+    const h = (labels: string[]) => log("hinges", labels);
+    const a = await follows(h(["hg13", "hg14"]), q("zalazun theyomazozon vehohel."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    const c = await clashes(h(["hg13", "hg15"]), base);
+    assert.deepEqual(c.clashes.map((x) => [x.readings, x.english]), [[["t:0.0", "t:0.1"], "In Azozon's view these cannot all hold: t:0.0, t:0.1."]]);
+    assert.deepEqual((await clashes(h(["hg1", "hg15"]), base)).clashes, []);
+  });
+});
+
 describe("solve: say words (R2-1 row 4, R2-6 to R2-9)", () => {
   const p = (labels: string[]) => log("say", labels);
   const say = fixture("say");
