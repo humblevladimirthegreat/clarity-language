@@ -198,6 +198,23 @@ describe("placeTailRoots", () => {
     assert.equal(new Set(roots.slice(0, 30).map((root) => root.slice(0, 2))).size, 30);
   });
 
+  it("keeps size and first consonant over distinctness, and moves only the first vowel", () => {
+    // Six small nature rows whose labels start with b: the b cell holds four roots, one per first vowel.
+    const rows = Array.from({ length: 6 }, () => ({ kind: "nature" as const, shape: "one" as const, size: "small" as const, cmu: "B AA1 L" }));
+    const { roots } = placeTailRoots({ rows, shortRoots: new Set(), compounds: [], steps: 20_000 });
+    for (const root of roots) assert.equal(root[2], "e", root);
+    const onB = roots.filter((root) => root[1] === "b");
+    assert.equal(onB.length, 4);
+    assert.equal(new Set(onB.map((root) => root[0])).size, 4);
+  });
+
+  it("leaves current roots in place on a rerun", () => {
+    const rows = Array.from({ length: 60 }, (_, i) => ({ kind: "food" as const, shape: i % 2 ? "holds" as const : "one" as const, size: "medium" as const, cmu: i % 3 ? "B AA1 L" : "D AA1 L" }));
+    const first = placeTailRoots({ rows, shortRoots: new Set(), compounds: [], steps: 20_000 }).roots;
+    const again = placeTailRoots({ rows: rows.map((row, i) => ({ ...row, current: first[i] })), shortRoots: new Set(), compounds: [], steps: 20_000, seed: 7 }).roots;
+    assert.deepEqual(again, first);
+  });
+
   it("keeps every root clear of the holder check", () => {
     // Every counting (`r`) onset's first three letters spell a host + `r`: the placer must skip each one.
     const holderHosts = new Set(["abar", "eber", "uzur"]);

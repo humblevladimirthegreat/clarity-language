@@ -550,7 +550,13 @@ export async function placePublishedRoots(
   if (fieldErrors.length > 0) throw new Error(`five-letter rows need a kind, a shape and (by kind) a size:\n  ${fieldErrors.join("\n  ")}`);
   const shortRoots = new Set([...short.values(), ...kept.map((k) => k.root).filter((root) => root.length === 3)]);
   const tailRows: TailPlaceRow[] = [
-    ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: item.row.shape as Shape, size: (item.row.size || undefined) as Size | undefined, cmu: item.cmu })),
+    ...longTargets.map((item) => ({
+      kind: item.row.kind as Kind,
+      shape: item.row.shape as Shape,
+      size: (item.row.size || undefined) as Size | undefined,
+      cmu: item.cmu,
+      current: item.row.root?.length === 5 ? item.row.root : undefined,
+    })),
     ...keptLong.map((k) => ({ cmu: "", fixed: k.root })),
   ];
   const rowOfRoot = new Map<string, number>();

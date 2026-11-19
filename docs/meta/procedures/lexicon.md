@@ -12,7 +12,7 @@ npm run convert-word -- --lexicon --only LITERAL
 
 `--only` takes a concrete literal, emoji, or root (repeatable or comma-separated) and limits the run to those published rows; every other row keeps its root. `--lexicon` alone is refused; `--lexicon --all` re-places the whole lexicon.
 
-`--all` re-places every five-letter and place-name row, and rewrites three-letter last vowels and tail-suffix vowels from `kind` and `shape`, keeping the first vowel. Overlay uniqueness is the first two letters, so a last-vowel swap does not re-anneal short roots.
+`--all` re-places every five-letter and place-name row (a five-letter row keeps its root unless moving meets its size or first consonant or saves a confusing pair, so a rerun respells nothing; [onset](#onset)), and rewrites three-letter last vowels and tail-suffix vowels from `kind` and `shape`, keeping the first vowel. Overlay uniqueness is the first two letters, so a last-vowel swap does not re-anneal short roots.
 
 A hand-picked spelling bypasses the checks that placement runs. Placement:
 
@@ -121,13 +121,13 @@ The size is how big the concrete sense is against a person, and it steers the ro
 
 Every five-letter row needs a size except in `mind`, where every row would be `none`; `mind`, `named` and three-letter rows stay empty, and a `mind` row's middle vowel goes to the echo. A three-letter root has no middle vowel, so size does not apply. In the mixed kinds, things get a measured size and the rest `none`: in `doing` a vehicle or toy versus an action, in `person` a being versus an act, in `sign` an object versus a symbol, in `title` a paper or mail object versus a sport or a legal-name mark, in `counting` a clock or instrument versus a time or number.
 
-It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match.
+It's a placement preference, not a check, but it outranks everything else the placer weighs: a root gives up its size vowel only when every first vowel and first consonant in its tail and size is taken or barred. The tails report (`convert-word --report`) prints the share that match.
 
 ### Onset {#onset}
 
-The first two letters keep roots apart, and the middle vowel follows the [size](#size). A **confusing pair** is two roots of the same kind whose first two letters match; placement adds 1 for each. Roots of different kinds cost nothing, since the tail tells them apart, and learning order plays no part. A first consonant that is not the English label's first consonant (p/b, t/d, k/g, s/z, f/v merged) costs 2, so a root gives it up only to avoid two or more confusing pairs. A middle vowel that isn't the size's costs 0.01. Ties go to the closer full English echo, then to fewer stops (`b d g`). A label CMU doesn't know only loses the English cost and the tie-breaks.
+The first consonant echoes the English label, the middle vowel follows the [size](#size), and the **first vowel** keeps roots apart. A **confusing pair** is two roots of the same kind whose first two letters match; placement adds 1 for each. Roots of different kinds cost nothing, since the tail tells them apart, and learning order plays no part. A first consonant that is not the English label's first consonant (p/b, t/d, k/g, s/z, f/v merged) costs 100 and a middle vowel that isn't the size's costs 200, so distinctness moves only the first vowel. A cell (kind, shape, size, first consonant) holds four roots, one per first vowel; a fifth row gives up its English first consonant, never its size vowel. Leaving a row's current root costs 0.5, so a row moves only to meet its size or first consonant or to save a pair. Ties go to the closer full English echo, then to fewer stops (`b d g`). A label CMU doesn't know only loses the English cost and the tie-breaks.
 
-Rows are placed greedily in CSV order, then annealed; the run is seeded, so the same data gives the same roots. Each kind has 48 first-two-letter prefixes, so past 48 rows some confusing pairs are unavoidable; the report prints each kind beside that floor.
+Rows start on their current roots, new rows are placed greedily in CSV order, then all are annealed; the run is seeded, so the same data gives the same roots. Each kind has 48 first-two-letter prefixes, so past 48 rows some confusing pairs are unavoidable; the report prints each kind beside that floor.
 
 ### Seams {#seams}
 

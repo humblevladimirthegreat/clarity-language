@@ -1,7 +1,8 @@
 /**
- * Root-tails placer: each five-letter row's tail comes from its kind and shape, and its onset is chosen
- * so that few roots of the same kind share its first two letters, and to start with the English label's
- * first consonant. A row's size steers its middle vowel. Rows are placed greedily in CSV order, then annealed. Learning order plays no part
+ * Root-tails placer: each five-letter row's tail comes from its kind and shape, its middle vowel from its
+ * size, and its first consonant from the English label. The first vowel is what keeps roots of the same
+ * kind apart (few sharing their first two letters); size and first consonant give way only when a cell
+ * is full. Rows are placed greedily in CSV order, then annealed. Learning order plays no part
  * (a checkpoint lint keeps look-alikes apart in teaching). `placePublishedRoots` (src/lexicon-place.ts) calls it.
  */
 import { echo } from "./echo-metric.ts";
@@ -17,16 +18,22 @@ const FORMS = 4 * 12 * 4 * 12 * 4;
 const JOINS = new Set(["l", "m", "n", "r"]);
 
 /**
- * A first consonant that isn't the English label's first consonant (the echo the onset can carry; the
- * tail fixes the rest). Each confusing pair (same kind, same first two letters) costs 1, so at 2 a root
- * gives up its English first consonant only to avoid two or more confusing pairs.
+ * A middle vowel that isn't the row's size vowel. It outweighs everything but the hard checks, so a root
+ * gives it up only when every first vowel and first consonant in its size cell is taken or barred.
  */
-const FIRST_W = 2;
+const SIZE_W = 200;
 /**
- * A middle vowel that isn't the row's size vowel. Confusing pairs ignore the middle vowel, so this trades
- * only against the echo below it and the first consonant above it; it is given up only in a crowded cell.
+ * A first consonant that isn't the English label's first consonant (the echo the onset can carry; the
+ * tail fixes the rest). Each confusing pair (same kind, same first two letters) costs 1, far below this,
+ * so distinctness moves only the first vowel; a root gives up its English first consonant only when the
+ * four first vowels of its cell (kind, shape, size, consonant) are taken.
  */
-const SIZE_W = 0.01;
+const FIRST_W = 100;
+/**
+ * A root other than the row's current one. Below one confusing pair, so a row moves to save a pair or to
+ * meet its size or first consonant, but a rerun does not reshuffle roots that are already as good.
+ */
+const KEEP_W = 0.5;
 /** Tie-breaks, far below any pair cost: the full English echo, then fewer stops (which decide only within 0.01 of echo). */
 const ECHO_W = 0.002;
 const STOP_W = 0.00001;
@@ -42,6 +49,8 @@ export type TailPlaceRow = {
   cmu: string;
   /** A root kept as it is: the row is not placed, but its root counts against the others. */
   fixed?: string;
+  /** The row's root before this run: placement leaves it there unless moving gains something. */
+  current?: string;
 };
 
 /** A listed compound by member: a row index (five-letter, placed here) or a fixed three-letter root. */
@@ -138,7 +147,8 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
       const root = decode(code);
       const miss = first !== null && root[1] !== first ? FIRST_W : 0;
       const sizeMiss = row.size && root[2] !== SIZE_VOWELS[row.size] ? SIZE_W : 0;
-      costs.set(code, miss + sizeMiss + STOP_W * stops(root) + ECHO_W * (1 - (row.cmu ? echo(root, row.cmu) : 0)));
+      const moved = row.current && root !== row.current ? KEEP_W : 0;
+      costs.set(code, miss + sizeMiss + moved + STOP_W * stops(root) + ECHO_W * (1 - (row.cmu ? echo(root, row.cmu) : 0)));
     }
     return costs;
   });
@@ -215,8 +225,15 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     setCode(i, code);
   });
 
-  // Greedy, in CSV order.
+  // Rows start on their current roots where they still fit; the rest are placed greedily, in CSV order.
   for (const i of free) {
+    const current = rows[i]!.current;
+    if (!current || !/^[aeou][bdghylmnrvwz][aeou][bdghylmnrvwz][aeou]$/.test(current)) continue;
+    const code = encode(current);
+    if (unary[i]!.has(code) && occupant[code]! < 0) setCode(i, code);
+  }
+  for (const i of free) {
+    if (codes[i]! >= 0) continue;
     let best = -1;
     let bestCost = Infinity;
     for (const code of cands[i]!) {
@@ -237,7 +254,8 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const rnd = rng(input.seed ?? 12345);
   /** A row may take a code: it is in the row's tail, and the row is not fixed. */
   const allowed = (k: number, code: number) => unary[k]!.has(code);
-  let temperature = 0.5;
+  // Cool enough that rows seeded on their current roots settle rather than wander: a rerun respells nothing.
+  let temperature = 0.2;
   const cooling = Math.pow(0.000001 / temperature, 1 / Math.max(1, steps));
   for (let step = 0; step < steps && free.length > 0; step++, temperature *= cooling) {
     const i = free[Math.floor(rnd() * free.length)]!;

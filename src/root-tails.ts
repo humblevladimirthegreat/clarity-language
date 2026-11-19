@@ -36,7 +36,7 @@ export const SHAPE_VOWELS = {
   "takes-away": "u",
 } as const;
 
-/** Size → middle vowel. A placement preference, not a check: the placer gives up a size vowel only in a crowded cell. `none` is anything you can't measure: a stuff, an act, a mark, a time. */
+/** Size → middle vowel. A placement preference, not a check, that outranks the English first consonant and distinctness: the placer gives up a size vowel only when its cell is full. `none` is anything you can't measure: a stuff, an act, a mark, a time. */
 export const SIZE_VOWELS = {
   big: "a",
   medium: "o",

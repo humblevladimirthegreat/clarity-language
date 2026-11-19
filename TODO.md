@@ -9,7 +9,6 @@ https://discord.gg/CAMGw2Akhc
 # TODO
 -contact form / about me
 -cheat sheet for reading a word?
--prioritize the size vowel over distinctness
 -should any other cheat sheets be added?
 -speed reading view becomes outline mode?
 -syntax highlighting should cover more obscure scoping/carry rules
