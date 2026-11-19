@@ -623,6 +623,20 @@ A tool that needs what a sentence says reads readings; a tool that needs how it 
 | The English helper's `verify` and `coverage`, `gloss-structure.ts` | parse (form) |
 | The wizard's gloss and root gating (`src/game/`) | parse (form) |
 
+### Equal readings
+
+`sameReadings(textA, textB, tables)` (`equal.ts`) says whether two texts say the same thing: `same`, `different`, or `unsettled`. It reads both texts, builds each side's canonical form with `canonicalReadings(readings)`, and compares the two with `compareCanonical`. A text that does not parse is `different`, with the error. The rules:
+
+- **Positions dropped.** `at`, reading ids and source indexes are not compared.
+- **Words by identity of form.** A word compares by its raw spelling, except where a rule below replaces it. A frame or detail compares by family or kind, key, construction, words, values and what it holds; its anchor is not compared.
+- **Roles by letter.** `z`, `d`, `b`, the predicate and the verb compare by slot, never by text order (`clause.md#role-letters`).
+- **Details and links as multisets.** Text order between details, between predicate items and between links carries no meaning. An `anaphor` link is left out: the pronoun term holds its bind (reader rule 6).
+- **Frames with their order.** Frames compare as a multiset; each `order` entry compares as (over, under, kind) by canonical frame. Two readings whose frames match but whose `order` differs are `different` (`clause.md#which-covers-which`).
+- **Unsettled pairs.** When the two texts put an `unordered` pair in different text order, the result is `unsettled`, naming the pair, whatever else differs: the grammar has not said whether that order matters ([reader rules](#reader-rules), rule 3).
+- **The omitted act word.** A sentence (and a quote's sentence) with no `force` frame takes the statement act, with the order the [pair table](#pair-table) gives `force` against each of its frames, citing `speech-moves.md#speech-act-statement-question-command`: `yal` written and `yal` omitted compare equal. This is a comparison rule; the reader still leaves the frame out (reader rule 4).
+- **Pronouns by referent.** A bound pronoun compares as its antecedent's canonical term, keeping its ending's sense: `-r` the one meant (through a chain of `-r` pronouns to the first mention, with the sentence it was met in, `pronouns.md#resume-r`), `-l` the antecedent written out with the pronoun's role letter (`pronouns.md#a-new-one`), `-m` a share of it (`pronouns.md#share`). A role compound keeps its reach and part (`roles.md#role-compounds`). An unbound pronoun compares by form.
+- **Nested readings** (dependents, islands, quotes, clause-join members, a frame's content) compare recursively, in place.
+
 ## Pair table
 
 One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word: commutes; two free-standing tone marks: commute, see [attitude](#attitude)), except `stance` × `stance` and `call` × `call`, which have rows. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
