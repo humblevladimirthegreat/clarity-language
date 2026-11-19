@@ -35,6 +35,22 @@ A command or request makes no claim, so an *if* hinge on it limits the instructi
 >
 > "If Alazun sits, walk."
 
+To make the outcome only a guess (*if Azozon walks, maybe Alazun sits*), put [MAY](knowing.md#may) first. The *if* clause stays last, so MAY covers the whole sentence: you claim neither the walking nor the sitting, only that the sitting could follow from the walking.
+
+> `thomam zalazun vehohel thohem blarl zazozon vowurol.`
+>
+> th-MAY | z-Alazun | v-sit | [th-if | bl-that-clause] | z-Azozon | v-walk
+>
+> "If Azozon walks, maybe Alazun sits."
+
+MAY inside the condition makes the condition a chance: the outcome holds whenever the walking could be so, whether or not it happens.
+
+> `zalazun vehohel thohem blarl zazozon thomam vowurol.`
+>
+> z-Alazun | v-sit | [th-if | bl-that-clause] | z-Azozon | th-MAY | v-walk
+>
+> "Alazun sits if there's a chance Azozon walks."
+
 As a plain noun, the same root is `zohel` *a door*.
 
 **Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a hinge. *Whether Alazun walks* is [`derl`](dependents.md#dependent-clauses), not `thohem`: *if* sets a condition, and *whether* leaves a yes-or-no question open.

@@ -47,21 +47,21 @@ zalazun theyomazozon vudurul thomam.
 # MAY over a hinge (R3-1 row 5): order may > clause_hinge by rule. m10 + m12: couldBe "Alazun sits" yes, follows cannot say.
 @ m10
 thomam zalazun vehohel thohem blarl zazozon vowurol.
-= Possibly Alazun sits if Azozon walks.
+= If Azozon walks, maybe Alazun sits.
 
-# A hinge over MAY (R3-1 row 6): blarth first, so the hinge covers the MAY. The condition is the earlier sentence; asking it keeps it unclaimed (Findings).
+# A hinge over MAY (R3-1 row 6): blarth first, so the hinge covers the MAY. The condition is the earlier statement, which is claimed.
 @ m11
-yel zazozon vowurol. thohem blarth thomam zalazun vehohel.
-= Does Azozon walk? If so, maybe Alazun sits.
+zazozon vowurol. thohem blarth thomam zalazun vehohel.
+= Azozon walks. If so, maybe Alazun sits.
 
 @ m12
 zazozon vowurol.
 = Azozon walks.
 
-# MAY on a hinge's condition (R3-5): MAY sits in the hosted clause.
+# MAY on a hinge's condition (R3-5): the condition is the possibility (causation.md#if).
 @ m13
 zalazun vehohel thohem blarl zazozon thomam vowurol.
-= Alazun sits if Azozon may walk.
+= Alazun sits if there's a chance Azozon walks.
 
 # MAY with or (R3-1 row 5 over R3-1 row 8): possibly (exactly one of walk, run). m14 + o4 + o5: no clash, since the world without the list is clash-free.
 @ m14
