@@ -8,11 +8,11 @@ zual gebezel vewobol.
 = Every bird flies. (closed every-kind: no exceptions)
 
 @ s2
-zul gawozal vewobol.
+zul gobozal vewobol.
 = Penguins never fly. (no penguin flies)
 
 @ s3
-zazozon gawozal gebezel gal.
+zazozon gobozal gebezel gal.
 = Azozon is a penguin, and a bird.
 
 @ s4

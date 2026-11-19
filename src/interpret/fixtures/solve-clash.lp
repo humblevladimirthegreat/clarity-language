@@ -19,9 +19,9 @@ fired("t:0.0",ewobo(z(X))) :- holds(isa(X,ebeze)), on("t:0.0").
 used("t:0.0",ewobo(z(X)),isa(X,ebeze)) :- holds(isa(X,ebeze)), on("t:0.0").
 % t:0.1
 on("t:0.1").
-holds(neg(ewobo(z(X)))) :- holds(isa(X,awoza)), on("t:0.1").
-fired("t:0.1",neg(ewobo(z(X)))) :- holds(isa(X,awoza)), on("t:0.1").
-used("t:0.1",neg(ewobo(z(X))),isa(X,awoza)) :- holds(isa(X,awoza)), on("t:0.1").
+holds(neg(ewobo(z(X)))) :- holds(isa(X,oboza)), on("t:0.1").
+fired("t:0.1",neg(ewobo(z(X)))) :- holds(isa(X,oboza)), on("t:0.1").
+used("t:0.1",neg(ewobo(z(X))),isa(X,oboza)) :- holds(isa(X,oboza)), on("t:0.1").
 % t:0.2
 on("t:0.2").
 holds(isa(azozo,ls("t:0.2",g))) :- on("t:0.2").
@@ -38,5 +38,5 @@ holds(neg(ewobo(z(alazu)))) :- on("t:0.4").
 fired("t:0.4",neg(ewobo(z(alazu)))) :- on("t:0.4").
 
 % Members, from claimMemberLists().
-member(ls("t:0.2",g),awoza,1).
+member(ls("t:0.2",g),oboza,1).
 member(ls("t:0.2",g),ebeze,2).

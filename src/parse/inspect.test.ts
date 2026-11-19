@@ -56,14 +56,14 @@ describe("inspectText", () => {
   });
 
   it("shows potential dictionary compounds for an unlisted stem", () => {
-    const result = inspectText("zoyahelozezul.", tables);
+    const result = inspectText("zebahelozezul.", tables);
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.word.reading, "unknown");
     assert.deepEqual(
       token.word.potentialCompounds?.map(({ left, join, right }) => [left, join, right]),
-      [["oyahe", "l", "ozezu"]],
+      [["ebahe", "l", "ozezu"]],
     );
     assert.match(token.gloss, /^unknown root \(maybe bed-l scorpion\)$/);
     assert.ok(token.chips.includes("potential compound"));

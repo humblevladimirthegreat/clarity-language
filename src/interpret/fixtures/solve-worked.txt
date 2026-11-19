@@ -7,11 +7,11 @@ zuam gebezel vewobol.
 = Birds usually fly. (open every-kind: exceptions left open)
 
 @ s2
-zul gawozal vewobol.
+zul gobozal vewobol.
 = Penguins never fly. (no penguin flies)
 
 @ s3
-zazozon gawozal gebezel gal.
+zazozon gobozal gebezel gal.
 = Azozon is a penguin, and a bird.
 
 @ s6

@@ -71,7 +71,7 @@ Current map (coordination → joins) plus 404:
 ]
 ```
 
-After save: `/grammar/coordination.html` (and `#…` on that file) should open Joins; `/grammar/no-such-page.html` should show **PAGE NOT FOUND**, not Why Agazan.
+After save: `/grammar/coordination.html` (and `#…` on that file) should open Joins; `/grammar/no-such-page.html` should show **PAGE NOT FOUND**, not Why Ageben.
 
 ## Inventory of old links
 
