@@ -363,25 +363,25 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
   if (family.kind === "joinMarker" && family.hook) {
-    return { line: `hooked join ${family.hook} + ${family.series}`, href: "hooks.html#hooked-joins" };
+    return { line: `hooked join ${family.hook} + ${family.series}`, href: "hooked-joins.html#hooked-joins" };
   }
   if (family.kind === "x" && family.xFamily === "sake") {
     return { line: "sakes (sake + th)", href: "sakes.html" };
   }
   if (family.kind === "x" && family.xFamily === "lateral" && family.landmark) {
-    return { line: "landmark lateral (the /b/ landmark's own facing)", href: "roles.html#landmark-facing" };
+    return { line: "landmark lateral (the /b/ landmark's own facing)", href: "viewpoint.html#landmark-facing" };
   }
   if (family.kind === "x" && family.xFamily === "holder") {
-    return { line: "holder (whose view the clause reports)", href: "knowing.html#holder" };
+    return { line: "holder (whose view the clause reports)", href: "holder.html#naming-a-holder" };
   }
   if (family.kind === "x" && family.xFamily === "lateral") {
-    return { line: "viewpoint lateral", href: "roles.html#viewpoint-laterals" };
+    return { line: "viewpoint lateral", href: "viewpoint.html#viewpoint-laterals" };
   }
   if (family.kind === "x" && family.xFamily === "ability") {
     if (word.reading === "greeting") {
-      return { line: "greeting bid, not ability", href: "compounds.html#conversation-length" };
+      return { line: "greeting bid, not ability", href: "conversation-length.html#conversation-length" };
     }
-    return { line: "ability, not sakes", href: "intention.html#ability" };
+    return { line: "ability, not sakes", href: "can-and-cant.html#ability" };
   }
   if (family.kind === "x" && family.xFamily === "role") {
     return { line: "role compound", href: "roles.html#role-compounds" };
@@ -390,7 +390,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "role pointer", href: "pronouns.html#role-pointers" };
   }
   if (family.kind === "x" && family.xFamily === "hookPrefix") {
-    return { line: `hook prefix ${family.hook ?? ""}`.trim(), href: "hooks.html#hook-prefixes" };
+    return { line: `hook prefix ${family.hook ?? ""}`.trim(), href: "hook-compounds.html#hook-prefixes" };
   }
   if (family.kind === "writingSpan") {
     return { line: "span fence", href: "spans.html" };
@@ -399,7 +399,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: `numeric prefix${family.approx ? " (approximate)" : ""}`, href: "numeric-derivation.html#numeric-derivation" };
   }
   if (word.hookCompound) {
-    return { line: "hook compound", href: "hooks.html#hook-compounds" };
+    return { line: "hook compound", href: "hook-compounds.html#hook-compounds" };
   }
   if (word.dictionaryCompound) {
     return { line: "dictionary compound", href: "compounds.html#dictionary-compounds" };
@@ -408,10 +408,10 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "dictionary compound (unlisted)", href: "compounds.html#dictionary-compounds" };
   }
   if (family.kind === "x" && family.xFamily === "compound") {
-    return { line: "ordinary compound", href: "compounds.html#families-by-shape" };
+    return { line: "ordinary compound", href: "compounds.html#two-roots-one-word" };
   }
   if (family.kind === "x") {
-    return { line: "mid-word x family", href: "compounds.html#families-by-shape" };
+    return { line: "mid-word x family", href: "compounds.html#two-roots-one-word" };
   }
   if (family.kind === "joinMarker") {
     if (sharedRole === "scale" || sharedRole === "equative") {
@@ -427,8 +427,8 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (word.reading === "overlay") {
     const kind = word.overlay?.kind;
-    if (kind === "locative") return { line: "locative relation", href: "relations.html#locative-relations" };
-    if (kind === "of_relation") return { line: "of relation", href: "relations.html#of-relations" };
+    if (kind === "locative") return { line: "locative relation", href: "locative-relations.html#locative-relations" };
+    if (kind === "of_relation") return { line: "of relation", href: "of-relations.html#of-relations" };
     if (kind === "likeness") return { line: "likeness", href: "relations.html#likeness" };
     if (kind === "exchange") return { line: "exchange", href: "relations.html#exchange" };
     if (kind === "proxy") return { line: "proxy", href: "relations.html#proxy" };
@@ -439,6 +439,11 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (kind === "mirative" || kind === "residue" || kind === "former_climate" || kind === "notional" || kind === "phasal") {
       return { line: "closed mood", href: "residue-and-former.html" };
     }
+    if (kind === "cause") return { line: "cause", href: "cause.html#mechanism" };
+    if (kind === "clause_hinge") return { line: "clause hinge", href: "dependents.html#hinges" };
+    if (kind === "identity") return { line: "identity", href: "predication.html#identity" };
+    if (kind === "pairing") return { line: "pairing", href: "list-structure.html#respectively" };
+    if (kind === "mention") return { line: "mention", href: "spans-as-words.html#mention" };
     return { line: "closed mood", href: "knowing.html" };
   }
   if (word.reading === "listVerb" || word.reading === "joinRelation") {

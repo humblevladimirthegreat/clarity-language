@@ -129,7 +129,7 @@ describe("inspectText", () => {
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.why?.line, "hook compound");
-    assert.equal(token.why?.href, "hooks.html#hook-compounds");
+    assert.equal(token.why?.href, "hook-compounds.html#hook-compounds");
     assert.match(token.gloss, /leave/i);
   });
 
