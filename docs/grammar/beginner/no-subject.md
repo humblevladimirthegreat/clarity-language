@@ -82,8 +82,6 @@ d-candy | [w-very | h-haste] | v-throw
 `dadal thevemem vumewel.`
 
 d-jar | th-doubt | v-find
-
-**Also correct:** `thevemem dadal vumewel.`
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
