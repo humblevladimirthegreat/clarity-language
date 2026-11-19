@@ -10,7 +10,7 @@ Four ways to say how you feel, from a body sensation to a word that names the ne
 
 Sometimes all you can tell is what your body is doing: *my chest is tight*, *my stomach is heavy*. Say it as a [property](predication.md#classification-property) sentence: the body part, then a `/ɡ/` word, with no verb. Name no owner for the body part. In a sentence about how you feel, the body is yours.
 
-> `zobal gayewal.`
+> `zobal gegewal.`
 >
 > z-lungs | g-clamp
 >
@@ -78,7 +78,7 @@ You now have four ways to say how you feel, and each says more than the one befo
 
 | You can tell | Ageben | English |
 |--------------|--------|---------|
-| what your body is doing | `zobal gayewal` | *my chest is tight* |
+| what your body is doing | `zobal gegewal` | *my chest is tight* |
 | the English emotion word | `zuwen gonumul` | *I am angry* |
 | that a need is unmet, and the urge | `thudathumum` | *something is off, and I want to get away* |
 | which need it is | `thunathumum` | *my say was taken, and I want to get away* |

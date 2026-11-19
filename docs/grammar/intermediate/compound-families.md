@@ -64,7 +64,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *salad* | `azudal` | 🥗 |
-| *plate* | `uyodal` | 🍽️ |
+| *plate* | `ebodal` | 🍽️ |
 
 **Review:**
 
@@ -82,7 +82,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *a salad plate* (one plate)
 
 ::: details Show answer
-`zazudaxuyodal.`
+`zazudaxebodal.`
 
 z-salad-x-plate
 :::
@@ -105,7 +105,7 @@ z-Ahelan | d-croissant-x-salad | v-see
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zevelaxuyodal.`
+**1.** `zevelaxebodal.`
 
 ::: details Show answer
 z-flower-x-plate
@@ -121,7 +121,7 @@ z-Alazun | d-flower-x-salad | v-see
 *Alazun sees a flower salad.*
 :::
 
-**3.** `zazozon dazudaxuyodalx vayebel.`
+**3.** `zazozon dazudaxebodalx vayebel.`
 
 ::: details Show answer
 z-Azozon | d-salad-x-plate-x | v-see
@@ -131,10 +131,10 @@ z-Azozon | d-salad-x-plate-x | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *a croissant plate* `zagedexuyodal.` or `zuyodaxagedel.`
+**1.** *a croissant plate* `zagedexebodal.` or `zebodaxagedel.`
 
 ::: details Show answer
-`zagedexuyodal.`
+`zagedexebodal.`
 
 z-croissant-x-plate
 
@@ -143,10 +143,10 @@ The last root is the kind (a plate); the root before **`x`** narrows it.
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ahelan sees a salad plate.* (one plate) <!-- lint: error -->`zahelan dazudal duyodal vayebel.`
+**1.** *Ahelan sees a salad plate.* (one plate) <!-- lint: error -->`zahelan dazudal debodal vayebel.`
 
 ::: details Show answer
-`zahelan dazudaxuyodal vayebel.`
+`zahelan dazudaxebodal vayebel.`
 
 z-Ahelan | d-salad-x-plate | v-see
 

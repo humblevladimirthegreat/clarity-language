@@ -44,7 +44,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *sit* | `vehohel` |
 | *punch* | `vabuvul` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *window* | `uwohel` |
 | *open* | `vohel` |
 | *see* | `vayebel` |
@@ -70,7 +70,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **3.** *Azozon punches, then Alazun screams.*
 
 ::: details Show answer
-`zazozon vabuvul xan zalazun veyamul.`
+`zazozon vabuvul xan zalazun vozumul.`
 
 [z-Azozon | v-punch | x-and-then | z-Alazun | v-scream]
 :::
@@ -85,7 +85,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zahelan veyamul xan zalazun vabuvul.`
+**1.** `zahelan vozumul xan zalazun vabuvul.`
 
 ::: details Show answer
 [z-Ahelan | v-scream | x-and-then | z-Alazun | v-punch]

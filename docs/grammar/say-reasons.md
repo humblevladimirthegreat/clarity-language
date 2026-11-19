@@ -248,7 +248,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *know how to* | `zazozon vozuyexal.` | can sing ([can](/can-and-cant#can)) |
 | *realize* / *notice* | `zazozon havem vanam darl zodozel veruvol.` | already knows that the dog runs |
 | *forget* | `zazozon dalazun vevum huvum.` | no longer remembers Alazun |
-| *become* | `zazozon duzemel vebegom.` | starts being sleepy |
+| *become* | `zazozon duzemel vuyugom.` | starts being sleepy |
 | *exist* | `zodozel.` | a lone noun: *there is a dog* |
 | *happen* / *occur* | the event's own verb: `verulal.` | no helper word |
 | *depend on* | `zazozon vowurol thebem thahum blerulal.` | only because of rain |
@@ -456,7 +456,7 @@ To talk *about* an argument rather than make one, use the dictionary words. Each
 >
 > "The argument isn't sound."
 
-A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use `thanam thohem blarl` from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is `theyur` ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `egoham`, not `ebobemuvahul`.
+A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use `thanam thohem blarl` from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is `theyur` ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `ogaham`, not `ebobemuvahul`.
 
 ### Adding how you know, how often, or how it works {#stacks-evidentiality-cause-restrictors}
 <a id="stacks"></a>
@@ -511,15 +511,15 @@ English *habit*, *I have a habit of*, and *triggered by* pack how often the act 
 
 **Needs:** [Hopefully](/feelings#speaker-attitude) · [forecasts](/evidentiality#forecast) · [evidentiality](/evidentiality#evidentiality) · [soon](/special-values#just-short)
 
-English *I hope X will happen* is two claims: you want it, and you expect it. **`thuwuyom`** gives the wanting. The *will* is a [forecast](/evidentiality#forecast), so it needs a channel plus `blral` (or `blrawum` for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thaber`** for a slim hope, **`thabem`** for an ordinary one.
+English *I hope X will happen* is two claims: you want it, and you expect it. **`theguyom`** gives the wanting. The *will* is a [forecast](/evidentiality#forecast), so it needs a channel plus `blral` (or `blrawum` for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thaber`** for a slim hope, **`thabem`** for an ordinary one.
 
-> `thuwuyom thaber blrawum huvum verulal.`
+> `theguyom thaber blrawum huvum verulal.`
 >
 > th-hope | [th-INTUITION.weak | bl-+-e-.about] | h-no-longer | v-rain
 >
 > "I hope the rain stops soon, though it's just a hunch."
 
-**Compare with:** `thuwuyom` with no channel and no offset is hope about now: `zazozon thuwuyom vowurol.` is *Hopefully Azozon is walking.*
+**Compare with:** `theguyom` with no channel and no offset is hope about now: `zazozon theguyom vowurol.` is *Hopefully Azozon is walking.*
 
 ## Judging and helping {#judging}
 
@@ -599,7 +599,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is *incorrect
 | *wrong* (bad for someone) | `thawethum blalazun` | the act detracted from Alazun's sake |
 | *badly* (manner) | the doer, then `thubom zuol hegugel` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahelal gul` | not beautiful |
-| *ugly* (below a bar) | `thuwuyom zuol gahelal` | less beautiful than I hoped |
+| *ugly* (below a bar) | `theguyom zuol gahelal` | less beautiful than I hoped |
 | *ugly* (unpleasant to me) | `godethum` | my noun detracts from pleasure |
 
 > `zezuyol gegugel gul.`
@@ -608,7 +608,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is *incorrect
 >
 > "What was said is wrong." (it isn't correct)
 
-> `zahelan thuwuyom zuol gahelal.`
+> `zahelan theguyom zuol gahelal.`
 >
 > [z-Ahelan | th-hope | z-rank/less | g-hibiscus]
 >
@@ -651,9 +651,9 @@ English *lie*, *ignore*, and *mock* each name an act and also what the other per
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *lie* / *deceive* | `zalazun vulamul.` + `zalazun dulamur vanam theyomalazun.` | said something untrue; I gather Alazun knew it (`thomamalazun`: maybe) |
-| *truthful* (what was said) | `zezuyol gulamul gul.` | no untruth |
-| *truthful* / *honest* (a person) | `zazozon vulamul hal.` | never says anything untrue |
+| *lie* / *deceive* | `zalazun venumul.` + `zalazun denumur vanam theyomalazun.` | said something untrue; I gather Alazun knew it (`thomamalazun`: maybe) |
+| *truthful* (what was said) | `zezuyol genumul gul.` | no untruth |
+| *truthful* / *honest* (a person) | `zazozon venumul hal.` | never says anything untrue |
 | *sincere* | `zazozon vezuyol. zezuyor gegugel theyomazozon.` | I gather Azozon thinks what they said is correct |
 | *ignore* | `zazozon dalazun vegewom vul.` + `zazozon theyomazozon thagom dalazun vegewom vul.` | no answer; I gather Azozon planned not to answer |
 | *go unnoticed* / *be ignored* (no one's aim claimed) | `zalazun gunemum.` | left unseen and unanswered |
@@ -671,11 +671,11 @@ English *lie*, *ignore*, and *mock* each name an act and also what the other per
 | *scheme* / *plot* | `zazozon theyomazozon thagom dalazun voruyul.` | I gather Azozon plans to rob Alazun |
 | *betray* | `zazozon vozezum balazun.` | breaks a promise to Alazun |
 | *flatter* | `zazozon vubudam balazun. zubudar gegugel gul theyomazozon.` | compliments Alazun; I gather Azozon thinks it isn't correct |
-| *greedy* | `zazozon thudatham zol gegumal.` | more money-hungry than a need calls for |
-| *fool* | `zazozon gehuyetham.` | plays the fool, as a type |
+| *greedy* | `zazozon thudatham zol gamumal.` | more money-hungry than a need calls for |
+| *fool* | `zazozon guhuyetham.` | plays the fool, as a type |
 | *sly* / *cunning* | `zazozon gavozutham.` | resourceful, as a type |
 
-> `zalazun vulamul. zalazun dulamur vanam theyomalazun.`
+> `zalazun venumul. zalazun denumur vanam theyomalazun.`
 >
 > z-Alazun | v-misstate . z-Alazun | d-←misstate | v-knowledge | th-CLUES-Alazun
 >
@@ -704,7 +704,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | English | Ageben | Reading |
 |---------|--------|---------|
 | *unclear* / *obscure* | `gagebem gul` | not clear |
-| *honest* / *truthful* / *sincere* | `zezuyol gulamul gul` | no untruth; *sincere* takes a holder ([lie, honest](#accusation-words)) |
+| *honest* / *truthful* / *sincere* | `zezuyol genumul gul` | no untruth; *sincere* takes a holder ([lie, honest](#accusation-words)) |
 | *false* / *untrue* | `gegugel gul` | not correct |
 | *responsible* (to blame) | `thahul blarl` + the act | fault on the act ([fault](/fault#fault)) |
 | *responsible* (in charge) | `gebayom` | of authority |
@@ -742,11 +742,11 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 | English | Ageben | Same root as |
 |---------|--------|--------------|
-| *start* | `vebegom` | ▶️ `ebegol` *play button* |
+| *start* | `vuyugom` | ▶️ `uyugol` *play button* |
 | *stop* | `vezohul` | 🛑 `ezohul` *stop sign* |
 | *finish* | `vuvahul` | 🏁 `uvahul` *finish line* |
 
-> `zazozon dowurol vebegom.`
+> `zazozon dowurol vuyugom.`
 >
 > z-Azozon | d-walk | v-commencement
 >
@@ -1049,7 +1049,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *run* | `veruvol` | |
 | *fire* | `avulul` | |
 | *sit* | `vehohel` | `ehohel` *chair* |
-| *pour* | `vowuvul` | |
+| *pour* | `vobuvul` | |
 | *see* | `vayebel` | `ayebel` *eye* |
 | *if* | `thohem` | `ohel` *door* |
 | *only-if* | `thebem` | `ebel` *paper-roll* |
@@ -1065,7 +1065,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 **1.** *Alazun pours because Ahelan sees a fire.* (Ahelan really does see one)
 
 ::: details Show answer
-`zalazun vowuvul thahum blarl zahelan davulul vayebel.`
+`zalazun vobuvul thahum blarl zahelan davulul vayebel.`
 
 z-Alazun | v-pour | [th-because | b-that-clause] | z-Ahelan | d-fire | v-see
 :::
@@ -1073,7 +1073,7 @@ z-Alazun | v-pour | [th-because | b-that-clause] | z-Ahelan | d-fire | v-see
 **2.** *Azozon pours if there is a test tube.* (there may or may not be one)
 
 ::: details Show answer
-`zazozon vowuvul thohem blowal.`
+`zazozon vobuvul thohem blowal.`
 
 z-Azozon | v-pour | [th-if | b-test-tube]
 :::
@@ -1081,7 +1081,7 @@ z-Azozon | v-pour | [th-if | b-test-tube]
 **3.** *Azozon may be pouring.* (just a guess)
 
 ::: details Show answer
-`zazozon thomam vowuvul.`
+`zazozon thomam vobuvul.`
 
 z-Azozon | th-MAY | v-pour
 :::
@@ -1089,7 +1089,7 @@ z-Azozon | th-MAY | v-pour
 **4.** *Azozon may be sitting, because Alazun pours.*
 
 ::: details Show answer
-`zazozon thomam vehohel thahum blarl zalazun vowuvul.`
+`zazozon thomam vehohel thahum blarl zalazun vobuvul.`
 
 z-Azozon | th-MAY | v-sit | [th-because | b-that-clause] | z-Alazun | v-pour
 :::
@@ -1105,14 +1105,14 @@ z-Azozon | th-MAY | v-sit | [th-because | b-that-clause] | z-Alazun | v-pour
 **6.** *If Alazun had poured, the test-tube would still be melting.*
 
 ::: details Show answer
-`zowal vememul haram theyom blral hunom blarl zalazun vowuvul.`
+`zowal vememul haram theyom blral hunom blarl zalazun vobuvul.`
 
 z-test-tube | v-melt | h-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alazun | v-pour
 :::
 
 #### Ageben → English {#reasons-causation-ageben-to-english}
 
-**1.** `zazozon vowuvul thahum blavulul.`
+**1.** `zazozon vobuvul thahum blavulul.`
 
 ::: details Show answer
 
@@ -1121,7 +1121,7 @@ z-Azozon | v-pour | [th-because | b-fire]
 *Azozon pours because there is fire.*
 :::
 
-**2.** `zalazun vowuvul thohem blowal.`
+**2.** `zalazun vobuvul thohem blowal.`
 
 ::: details Show answer
 
@@ -1139,7 +1139,7 @@ z-Ahelan | th-MAY | d-fire | v-see
 *Maybe Ahelan sees a fire.*
 :::
 
-**4.** `zalazun thomam vowuvul thahum blarl zahelan davulul vayebel.`
+**4.** `zalazun thomam vobuvul thahum blarl zahelan davulul vayebel.`
 
 ::: details Show answer
 
@@ -1157,7 +1157,7 @@ z-Azozon | v-run | [th-if | b-fire] | h-always
 *Azozon always runs if there is fire.*
 :::
 
-**6.** `zowal vememul haram theyom blral hunom blarl zalazun vowuvul.`
+**6.** `zowal vememul haram theyom blral hunom blarl zalazun vobuvul.`
 
 ::: details Show answer
 

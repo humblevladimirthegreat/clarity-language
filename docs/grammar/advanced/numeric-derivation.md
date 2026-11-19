@@ -92,7 +92,7 @@ For *quasi-* with a number of parts (*as if one*, *as if a pair*), write **`-e-N
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`-e-1xROOT`** | quasi-unit / as-if singleton: unit-shaped without being a real one (twin **`+1xROOT`**) | `zruwubaxadowem`: *a quasi-single voice* / as-if primary voice | **-e-** outline + **1** = as-if one |
-| **`-e-2xROOT`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`+2xROOT`**) | `gruwudoxebewom`: *quasi-mutual commitment*; `zruwudoxehom`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
+| **`-e-2xROOT`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`+2xROOT`**) | `gruwudoxabewom`: *quasi-mutual commitment*; `zruwudoxehom`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
 
 | Ageben | Use |
 |--------|-----|
@@ -109,7 +109,7 @@ For a zero-shaped quasi, use `-0xROOT` (anti-null) or `-0e-xROOT` (micro-residue
 
 English *a pair of…*, *three-part…*, *primary…* can say how many parts the kind has, not how many things the sentence is about. Write a one-digit plus body before the `x`: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled as in `zrabaxadowem`). A minus body `-N` (including `-0`, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the bodies in shorthand (`+N` / `-N`).
 
-> `zazozon dradoxebewom vayebel.`
+> `zazozon dradoxabewom vayebel.`
 >
 > z-Azozon | d-two-x-commitment | v-see
 >
@@ -118,7 +118,7 @@ English *a pair of…*, *three-part…*, *primary…* can say how many parts the
 | Ageben | Use | English | `-N` | Privative English | Cue |
 |--------|-----|---------|------|-------------------|-----|
 | **`+1xROOT`** | unit / primary / singleton | `zrabaxadowem`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](/measures-and-percent#measure-phrases)) | `zrubaxadowem` | *an indistinct / non-singular voice* | **1** = one piece |
-| **`+2xROOT`** | dual / mutual / reciprocal / pair | `gradoxebewom`: *mutual commitment* | `grudoxebewom` | *one-sided commitment* | **2** = two sides |
+| **`+2xROOT`** | dual / mutual / reciprocal / pair | `gradoxabewom`: *mutual commitment* | `grudoxabewom` | *one-sided commitment* | **2** = two sides |
 | **`+3xROOT`** | triad / triplet / 3-part / ternary | `zragexezuyol`: *a three-part dialogue* | `zrugexogahom` | *non-tripartite institution* | **3** = three parts |
 | **`+4xROOT`** | quad / 4-part / square / frame | `zrahuxuhuyom`: *a four-part / framed judgment* | `zruhuxemunam` | *an unframed message* | **4** = four sides of a frame |
 | **`+5xROOT`** | hand / pentad / agency-set | `zrazaxuwal`: *a handy / five-fold toolkit* | `zruzaxagom` | *a plan without practical grasp* | **5** = fingers of a hand |
@@ -139,7 +139,7 @@ English can call a thing wiped clean (*a wiped debt*) or stubbornly left over (*
 |-----|--------|--------|----------|
 | **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zramoxaram`: *a wiped debt*; `zrumoxaram`: *a debt that won’t zero*; `drumoxevum`: *that memory that won’t blank*; `brumoxodoram`: non-null residue as argument |
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vramoxodoram`: *to null the score*; `vrumoxodoram`: *to anti-null / refuse to zero the score*; `vramoxuzubam`: *to zero effort*; `vrumoxuzubam`: *to leave effort unzeroable* |
-| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `gramoxodoram`: *null / reset*; `grumoxodoram`: *won’t-null / residual*; `grumoxuwuyom`: *hope that won’t go to zero* (vs `gruwaxuwuyom` *void of hope*) |
+| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `gramoxodoram`: *null / reset*; `grumoxodoram`: *won’t-null / residual*; `grumoxeguyom`: *hope that won’t go to zero* (vs `gruwaxeguyom` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hramoxuzubam`: *with effort zeroed*; `hrumoxuzubam`: *with irreducible effort* / *despite any zeroing* |
 | **`/w/`** (extra detail) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `wramoxaram garam`: *debt (ascribed) zeroed*; `wrumoxaram garam`: *debt whose balance is anti-null* |
 | **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yramoxodoram`; `yrumoxodoram` |
@@ -164,7 +164,7 @@ English can say a kind is wiped out entirely (*annihilate the score*) or leaves 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`+0exROOT`** | total null / absolute wipe of the kind | `vramowaxodoram`: *annihilate the score* (kind); `zramowaxaram`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
-| **`+0e-xROOT`** | sterile / null grain of ROOT | `zramowuxuwuyom`: *sterile hope*; `zramowuxarunul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
+| **`+0e-xROOT`** | sterile / null grain of ROOT | `zramowuxeguyom`: *sterile hope*; `zramowuxarunul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
 | **`+0e-1xROOT`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zrawubayamoxobevam`: *deci-null problem*; `vrawubayamoxodoram`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
 | **`-0exROOT`** | absolute residue of ROOT | `zrumowaxaram`: *debt as absolute residue*; `vrumowaxuzubam`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
 | **`-0e-xROOT`** | micro-residue of ROOT | `zrumowuxevum`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
@@ -192,7 +192,7 @@ On a free number, `±0e-1` is an amount. Before a root, the same bodies wipe the
 |-----|---------|----------|
 | **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zramowaxaram` |
 | **`/v/`** | annihilate that kind | `vramowaxodoram` |
-| **`/ɡ/`** | ascribed total-null | `gramowaxuwuyom` |
+| **`/ɡ/`** | ascribed total-null | `gramowaxeguyom` |
 | **`/h/`** | clause framed as total wipe | `hramowaxuzubam` |
 | **`/w/`** | host graded toward total null | `wramowaxaram garam` |
 | **`/y/`** | *Annihilate that kind!* | `yramowaxodoram` |
@@ -250,7 +250,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name whi
 
 When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker `_` before the `x`; its digits are the code.
 
-> `zazozon drebaxudewal vayebel.`
+> `zazozon drebaxubewal vayebel.`
 >
 > z-Azozon | d-_1-x-petri-dish | v-see
 >
@@ -258,10 +258,10 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zrexudewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
-| **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxudewal`: *specimen #1*; `zrebadoxohehal`: *room-12* as a coded kind; `brebadoxohehal`: *room-12* as `/b/` | the digits **are** the name, not a count |
+| **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zrexubewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
+| **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxubewal`: *specimen #1*; `zrebadoxamahal`: *room-12* as a coded kind; `brebadoxamahal`: *room-12* as `/b/` | the digits **are** the name, not a count |
 
-When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zohehal g_12` = *the room numbered 12*. Use `_NxROOT` when the code is part of the concept (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free `x_…`; to dial or enter a code, use free `v_…`.
+When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zamahal g_12` = *the room numbered 12*. Use `_NxROOT` when the code is part of the concept (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free `x_…`; to dial or enter a code, use free `v_…`.
 
 Digitless `+`/`-`/`#` on ROOT = *what the kind is*; digitless `_` = *how the catalog names it*.
 
@@ -299,7 +299,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *hammer* | `vohowel` |
-| *pour* | `vowuvul` |
+| *pour* | `vobuvul` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#advanced-english-to-ageben}
@@ -323,7 +323,7 @@ z-Ahelan | d-one-x-factory | v-see
 **3.** *Azozon pours a quasi-gold.*
 
 ::: details Show answer
-`zazozon druwuxugulol vowuvul.`
+`zazozon druwuxugulol vobuvul.`
 
 z-Azozon | d-quasi-x-gold | v-pour
 :::
@@ -372,10 +372,10 @@ z-Alazun | v-minus-zero-x-fire
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Alazun pours a first-class gold.* `zalazun drobaxugulol vowuvul.` or `zalazun drabaxugulol vowuvul.`
+**1.** *Alazun pours a first-class gold.* `zalazun drobaxugulol vobuvul.` or `zalazun drabaxugulol vobuvul.`
 
 ::: details Show answer
-`zalazun drobaxugulol vowuvul.`
+`zalazun drobaxugulol vobuvul.`
 
 z-Alazun | d-1st-x-gold | v-pour
 

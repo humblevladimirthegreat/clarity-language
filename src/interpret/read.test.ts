@@ -937,7 +937,7 @@ describe("reader audit (R8): doc examples, one per test, checked against the doc
     "in-clause-hooks.md:86: `never` on the hook covers the house after it (*never in a house*)",
     () => {
       const reading = one("z-dog | v-sleep | [[w-never | in] | b-house]");
-      const house = reading.frames.find((f) => f.family === "binder" && f.words[0]?.raw === "bohehal");
+      const house = reading.frames.find((f) => f.family === "binder" && f.words[0]?.raw === "bamahal");
       assert.ok(!house, "the house's binder sits under `never`, not over the clause");
     },
   );

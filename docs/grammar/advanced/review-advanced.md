@@ -23,7 +23,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *tomato* | `odedel` |
 | *watermelon* | `owodel` |
 | *quiet* | `ugowul` |
-| *station* | `awahol` |
+| *station* | `ezahol` |
 | *cook* | `vuguyol` |
 | *sit* | `vehohel` |
 | *as-of.ledger* | `henam` |
@@ -73,7 +73,7 @@ z-Azozon | [h-as-of.ledger | bl-_3,5] | v-sit | [in | b-school]
 **4.** *Ahelan sees a station that I remember as quiet.*
 
 ::: details Show answer
-`zahelan dawahol wevum gugowul vayebel.`
+`zahelan dezahol wevum gugowul vayebel.`
 
 z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
@@ -104,7 +104,7 @@ z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-walk | [h-after 
 **Rule:** [Nested dependents](nested-dependents.md#nested-dependents)
 :::
 
-**2.** `zexual blawahol vehohel.`
+**2.** `zexual blezahol vehohel.`
 
 ::: details Show answer
 [z-at-x-everything | bl-station] | v-sit
@@ -246,7 +246,7 @@ z-Ahelan | [d-baguette-x | g-minus-infinity] | through | g-five | v-see
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zazozon dawahol vowurolul.` / `zazozon dawahol vowurolum.`
+**1.** `zazozon dezahol vowurolul.` / `zazozon dezahol vowurolum.`
 
 ::: details Show answer
 z-Azozon | d-station | v-leave

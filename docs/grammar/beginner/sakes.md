@@ -59,7 +59,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 
 To say that a belonging of yours *serves* a sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word `th`, `a`, then an ending. That adjective describes the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away. With `-m`, you leave the time horizon unstated:
 
-> `zohehal guwatham.`
+> `zamahal guwatham.`
 >
 > z-house | g-competence-met-any-term
 >
@@ -191,7 +191,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *tent* | `udehal` | ⛺ |
+| *tent* | `anahal` | ⛺ |
 | *wind* | `awulol` | 🌬️ |
 | *calendar* | `agorol` | 📅 |
 | *thunderstorm* | `anulul` | ⛈️ |
@@ -223,7 +223,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *My tent serves the physical sake in the long term.*
 
 ::: details Show answer
-`zudehal gobathal.`
+`zanahal gobathal.`
 
 z-tent | g-physical-met-lasting
 :::
@@ -302,7 +302,7 @@ z-Azozon | v-sing | th-competence-unmet-modifiable
 *Azozon sings, and that knocks my confidence.* (modifiable)
 :::
 
-**5.** `zudehal godethur gobathal.`
+**5.** `zanahal godethur gobathal.`
 
 ::: details Show answer
 [z-tent | g-pleasure-unmet-passing | g-physical-met-lasting]

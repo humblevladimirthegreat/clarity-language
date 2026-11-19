@@ -118,7 +118,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *cry* | `vagamul` | 😭 |
 | *fight* | `vuvuvul` | 🫯 |
 | *eat* | `vagedal` | 🍴 from *cutlery* |
-| *pour* | `vowuvul` | 🫗 |
+| *pour* | `vobuvul` | 🫗 |
 | *MAY* | `thomam` | 💭 from *thought*: a balloon over the scene |
 | *LIVE* | `thugem` | 👁️‍🗨️ from *attest*: seen at the scene |
 | *MEMORY* | `thevum` | 🎣 from *fishing*: pulled up from memory |
@@ -132,7 +132,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *pay* | `varal` |
 | *wine* | `owudal` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *sandwich* | `edal` |
 | *punch* | `vabuvul` |
 
@@ -165,7 +165,7 @@ z-Alazun | th-MAY-who-knows | v-cry
 **4.** *Alazun is pouring wine, I can see it.*
 
 ::: details Show answer
-`zalazun thugem dowudal vowuvul.`
+`zalazun thugem dowudal vobuvul.`
 
 z-Alazun | th-LIVE | d-wine | v-pour
 :::
@@ -188,7 +188,7 @@ z-Azozon | th-MEMORY | v-pay
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zazozon thomam dowudal vowuvul.`
+**1.** `zazozon thomam dowudal vobuvul.`
 
 ::: details Show answer
 z-Azozon | th-MAY | d-wine | v-pour
@@ -196,7 +196,7 @@ z-Azozon | th-MAY | d-wine | v-pour
 *Azozon may be pouring wine.*
 :::
 
-**2.** `zahelan thomal veyamul.`
+**2.** `zahelan thomal vozumul.`
 
 ::: details Show answer
 z-Ahelan | th-MAY-find-out | v-scream

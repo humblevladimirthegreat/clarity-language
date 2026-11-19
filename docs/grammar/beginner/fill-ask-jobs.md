@@ -69,7 +69,7 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 | **`el ber`** | *Anywhere?* |
 | **`el bur`** | *Where else?* |
 
-Answer with the hook and the landmark, keeping the `/b/` letter: `el bohehal.` ("At the house.").
+Answer with the hook and the landmark, keeping the `/b/` letter: `el bamahal.` ("At the house.").
 
 **Compare with:** *when?* is `har` on `/h/`. Occasions are times or cases, so a place never goes there.
 

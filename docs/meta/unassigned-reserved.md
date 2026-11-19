@@ -329,7 +329,7 @@ Source: [clause.md](/clause)
 
 - **open:** a `gl-` adjective with no noun after it (`zazozon globulol.`, `zazozon dedavol globulol vayebel.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
 - **open:** a `bl-` word with no `/ɡ/`, `/h/`, or `/th/` host right before it (`zazozon varal blazozon.`). It completes the word before it, and that word names no relation; the recipient is a plain `/b/`. Parser: `blNoHost`.
-- **open:** a plain `/b/` item in a hosted list (`hazam bludehal buzedel bal`). Every item of the hosted slot takes `bl-`. Parser: `blListItem`.
+- **open:** a plain `/b/` item in a hosted list (`hazam blanahal bozedel bal`). Every item of the hosted slot takes `bl-`. Parser: `blListItem`.
 - **open:** lean **`l`** on any role letter but `/ɡ/` and `/b/`: `zl-` / `dl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](/compound-families#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](/predication#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
 - **closed (D-22):** a `bl-` word after `/z/`, `/d/`, `/v/`, or `/w/`.

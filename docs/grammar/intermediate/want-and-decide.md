@@ -59,7 +59,7 @@ For *against my wishes*, put WANT after the hook `uom` ([contrary to a stance](c
 >
 > "Azozon walks, against my wishes."
 
-**Compare with:** [hopefully](feelings.md#speaker-attitude) (`thuwuyom`) is your hope about whether a claim turns out true; `thalom` is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. Among the [stacked urges](feelings.md#emotion-compose) of a feeling, SEEKING is a feeling turning toward someone for comfort, not a plain want.
+**Compare with:** [hopefully](feelings.md#speaker-attitude) (`theguyom`) is your hope about whether a claim turns out true; `thalom` is wanting the act itself. [Motive](for-a-sake.md#sake-preference) says which sake the act serves, not that it is wanted. Among the [stacked urges](feelings.md#emotion-compose) of a feeling, SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
 ### Saying you have decided, and how final it is {#decision-revisability}
 <a id="decision"></a>
@@ -194,7 +194,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *want-unstated* | `thalom` | 🌠 from *shooting star*: a wish |
 | *DECISION* | `thogem` | ✅ from *check*: the box is ticked |
-| *pen* | `ebewol` | 🖊️ |
+| *pen* | `abewol` | 🖊️ |
 
 **Review:**
 
@@ -285,7 +285,7 @@ z-Ahelan | th-WANT-lasting | th-plan-itinerary | d-present | v-find
 *I have long wanted Ahelan to find a present, and I plan for that.*
 :::
 
-**4.** `zahelan thagom thogel debewol vumewel.`
+**4.** `zahelan thagom thogel dabewol vumewel.`
 
 ::: details Show answer
 z-Ahelan | th-plan-itinerary | th-DECISION-irreversible | d-pen | v-find

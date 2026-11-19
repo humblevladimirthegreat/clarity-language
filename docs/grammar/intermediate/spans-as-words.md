@@ -45,13 +45,13 @@ The span is a [cite](/spans#writing) `[…]` when the spelling is Ageben, and an
 
 With `-n`, the mention is a name as spelling (the title, which could be changed), even when the name is one word: `glegon d[onuren]` is not `donuren`. A cite with `@` is the work itself, and that span is for a title of several words (`d@[onuren alazun]`). The one-word *Onuren* as the work is an ordinary `-n` word (`donuren`).
 
-> `zazozon d@[onuren alazun] vuyugum.`
+> `zazozon d@[onuren alazun] vegugum.`
 >
 > z-Azozon | d-NAME.CITE[Onuren | Alazun] | v-rejection
 >
 > "Azozon dislikes Onuren Alazun." (the work)
 
-> `zazozon glegon d[onuren] vuyugum.`
+> `zazozon glegon d[onuren] vegugum.`
 >
 > z-Azozon | [gl-NAME.MENTION | d-CITE[Onuren]] | v-rejection
 >
@@ -134,7 +134,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *Onuren* | `onuren` | 🎵 from *note*: a song's name |
-| *rejection* | `vuyugum` | ❌ from *cross* |
+| *rejection* | `vegugum` | ❌ from *cross* |
 | *letters* | `glegol` | 🔤: a word is its letters |
 
 **Review:**
@@ -146,7 +146,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *topic* | `alen` |
 | *attest* | `vugel` |
-| *misstate* | `vulamul` |
+| *misstate* | `venumul` |
 | *small* | `gamezem` |
 | *tell* | `vezuyol` |
 | *write* | `varuyol` |
@@ -190,7 +190,7 @@ z-Ahelan | d-NAME.CITE.instance[Onuren | Alazun] | v-see
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zazozon glegon d[onuren] vuyugum.`
+**1.** `zazozon glegon d[onuren] vegugum.`
 
 ::: details Show answer
 z-Azozon | [gl-NAME.MENTION | d-CITE[Onuren]] | v-rejection
@@ -214,7 +214,7 @@ z-Ahelan | d-CITE.about[z-Azozon | v-attest] | v-tell
 *Alazun, who is small, punches Azozon.*
 :::
 
-**4.** `zazozon d[zalazun vulamul] vugel.`
+**4.** `zazozon d[zalazun venumul] vugel.`
 
 ::: details Show answer
 z-Azozon | d-CITE[z-Alazun | v-misstate] | v-attest
@@ -224,10 +224,10 @@ z-Azozon | d-CITE[z-Alazun | v-misstate] | v-attest
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon dislikes Onuren Alazun.* (the work) `zazozon d@[onuren alazun] vuyugum.` or `zazozon d[onuren alazun] vuyugum.`
+**1.** *Azozon dislikes Onuren Alazun.* (the work) `zazozon d@[onuren alazun] vegugum.` or `zazozon d[onuren alazun] vegugum.`
 
 ::: details Show answer
-`zazozon d@[onuren alazun] vuyugum.`
+`zazozon d@[onuren alazun] vegugum.`
 
 z-Azozon | d-NAME.CITE[Onuren | Alazun] | v-rejection
 
@@ -236,10 +236,10 @@ z-Azozon | d-NAME.CITE[Onuren | Alazun] | v-rejection
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ahelan dislikes the name “alazun.”* <!-- lint: error -->`zahelan glegol d[alazun] vuyugum.`
+**1.** *Ahelan dislikes the name “alazun.”* <!-- lint: error -->`zahelan glegol d[alazun] vegugum.`
 
 ::: details Show answer
-`zahelan glegon d[alazun] vuyugum.`
+`zahelan glegon d[alazun] vegugum.`
 
 z-Ahelan | [gl-NAME.MENTION | d-CITE[Alazun]] | v-rejection
 

@@ -70,8 +70,8 @@ describe("translate: encoding", () => {
   });
 
   it("R1-2: no K with a verb denies the head; with no verb the kind itself clashes", () => {
-    const t = program("zul gawozal vewobol.", "zul godozel.");
-    assert.match(t.program, /^holds\(neg\(ewobo\(z\(X\)\)\)\) :- holds\(isa\(X,awoza\)\), on\("t:0\.0"\)\.$/m);
+    const t = program("zul gobozal vewobol.", "zul godozel.");
+    assert.match(t.program, /^holds\(neg\(ewobo\(z\(X\)\)\)\) :- holds\(isa\(X,oboza\)\), on\("t:0\.0"\)\.$/m);
     assert.match(t.program, /^clash\(none\("t:0\.1"\)\) :- holds\(isa\(X,odoze\)\), on\("t:0\.1"\)\.$/m);
   });
 

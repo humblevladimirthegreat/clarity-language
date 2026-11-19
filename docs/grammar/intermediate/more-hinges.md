@@ -71,7 +71,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *dance* | `vunurol` |
-| *drink* | `vuwudal` |
+| *drink* | `vududal` |
 | *very* | `welazem` |
 | *slow* | `uzezam` |
 | *haste* | `hadurom` |
@@ -86,7 +86,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Azozon drinks the cocktail after the dance.* (*after the dance* says which cocktail)
 
 ::: details Show answer
-`zazozon dagudal galam blunurol vuwudal.`
+`zazozon dagudal galam blunurol vududal.`
 
 z-Azozon | [d-cocktail | [g-after | bl-dance]] | v-drink
 :::
@@ -109,7 +109,7 @@ z-Alazun | [w-very | h-haste] | v-dance | [h-so-result | bl-that-clause] | z-Ahe
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zahelan dagudal gabam blunurol vuwudal vul.`
+**1.** `zahelan dagudal gabam blunurol vududal vul.`
 
 ::: details Show answer
 z-Ahelan | [d-cocktail | [g-before | bl-dance]] | [v-drink | v-not]
@@ -147,7 +147,7 @@ English *so … that* is not *so that*: **`thovam`** makes the sitting only Ahel
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zalazun dagudal galam blunurol vuwudal.` / `zalazun dagudal halam blunurol vuwudal.`
+**1.** `zalazun dagudal galam blunurol vududal.` / `zalazun dagudal halam blunurol vududal.`
 
 ::: details Show answer
 z-Alazun | [d-cocktail | [g-after | bl-dance]] | v-drink

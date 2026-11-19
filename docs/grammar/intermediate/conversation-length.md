@@ -87,7 +87,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *doorbell* | `oheleboral` |
 | *flower* | `evelal` |
 | *see* | `vayebel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -133,7 +133,7 @@ SELF-ask
 *I only have time for one thing.* / *I'm about to leave.* (arriving / leaving)
 :::
 
-**2.** `yazozoxun zalazun veyamul.`
+**2.** `yazozoxun zalazun vozumul.`
 
 ::: details Show answer
 y-Azozon-passing | z-Alazun | v-scream

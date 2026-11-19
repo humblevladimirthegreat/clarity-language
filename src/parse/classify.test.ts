@@ -138,7 +138,7 @@ describe("classify", () => {
   });
 
   it("ability on non-sake host compound", () => {
-    expectReading("vehehaxol", "ability");
+    expectReading("vuyahaxol", "ability");
   });
 
   it("greeting bid on citation or /y/ vocative, not ability", () => {
@@ -259,7 +259,7 @@ describe("classify", () => {
   });
 
   it("dictionary compound lemma glosses as one kind", () => {
-    const word = expectReading("zoyahehal", "ordinary");
+    const word = expectReading("zebahehal", "ordinary");
     assert.equal(word.family.kind, "content");
     assert.equal(word.dictionaryCompound, true);
     assert.equal(word.rootGloss?.concrete, "bedroom");

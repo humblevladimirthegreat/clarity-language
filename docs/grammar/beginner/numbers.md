@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *baguette* | `ebodol` | 🥖 |
 | *croissant* | `agedel` | 🥐 |
 | *cake* | `egodel` | 🎂 |
-| *doughnut* | `udodel` | 🍩 |
+| *doughnut* | `ededel` | 🍩 |
 | *smell* | `vonebel` | 👃 from *nose* |
 
 **Review:**
@@ -143,7 +143,7 @@ z-Azozon | [d-cake-x | g-two] | v-see
 **3.** *Alazun finds the second doughnut.*
 
 ::: details Show answer
-`zalazun dudodel grodol vumewel.`
+`zalazun dededel grodol vumewel.`
 
 z-Alazun | [d-doughnut | g-2nd] | v-find
 :::
@@ -226,10 +226,10 @@ z-Azozon | [d-baguette | g-2nd] | v-see
 Rank marker **`ro`** gives the place in a series; **`ra`** would count two.
 :::
 
-**2.** *There are three doughnuts.* `zudodelx gragel.` or `zudodelx gral.`
+**2.** *There are three doughnuts.* `zededelx gragel.` or `zededelx gral.`
 
 ::: details Show answer
-`zudodelx gragel.`
+`zededelx gragel.`
 
 z-doughnut-x | g-three
 

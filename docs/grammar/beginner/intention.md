@@ -73,14 +73,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sit* | `vehohel` |
 | *find* | `vumewel` |
 | *tell* | `vezuyol` |
-| *misstate* | `vulamul` |
+| *misstate* | `venumul` |
 | *write* | `varuyol` |
 | *fight* | `vuvuvul` |
 | *book* | `anal` |
 | *see* | `vayebel` |
 | *therefore* | `xahom` |
 | *punch* | `vabuvul` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *walk* | `vowurol` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -112,7 +112,7 @@ z-speaker | th-plan-atlas | v-tell | b-Alazun
 **4.** *I intend to say something untrue.* (just the direction)
 
 ::: details Show answer
-`zuwen thagor vulamul.`
+`zuwen thagor venumul.`
 
 z-speaker | th-plan-sketch | v-misstate
 :::
@@ -175,7 +175,7 @@ z-speaker | th-plan-sketch | d-Alazun | v-punch
 *I intend to punch Alazun; the details are open.*
 :::
 
-**6.** `zuwen thagol veyamul.`
+**6.** `zuwen thagol vozumul.`
 
 ::: details Show answer
 z-speaker | th-plan-atlas | v-scream

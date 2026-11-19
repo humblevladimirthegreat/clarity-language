@@ -25,7 +25,7 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. `o` ra
 | [The most](/comparatives#superlatives): one name | `zazozon zol gamahum.` | *Azozon is the most challenging.* | B |
 | [Much more](/comparatives#degree): `/w/` before the adjective | `zazozon zalazun zol wohalal gamahum.` | *Azozon is much more challenging than Alazun.* | B |
 | [As … as](/comparatives#equatives) | `zazozon zalazun zoel gamahum.` | *Azozon is as challenging as Alazun.* | B |
-| [About as … as](/comparatives#equatives) | `zazozon zalazun zoem gubalel.` | *Azozon is about as bright as Alazun.* | B |
+| [About as … as](/comparatives#equatives) | `zazozon zalazun zoem gobulel.` | *Azozon is about as bright as Alazun.* | B |
 | [Both are](/comparatives#equatives): an *and*-list, no ranking | `zazozon zalazun zal gamahum` | *Azozon and Alazun are both challenging.* | B |
 | [Not as … as](/comparative-arity#comparative-arity): `zuol` | `zalazun zazozon zuol gamahum` | *Alazun is not as challenging as Azozon.* | I |
 | [No more … than](/comparative-arity#comparative-arity): deny with `zul` | `zalazun zazozon zol gamahum zul.` | *Alazun is no more challenging than Azozon.* | I |
@@ -63,8 +63,8 @@ Keep the rank join; change what the shared word is.
 | [Amount, by impression](/comparative-arity#amount-scale): `gram` | `zogozelx zodozelx zol gram.` | *It looks like there are more cats than dogs.* | I |
 | [How many more](/comparative-arity#amount-scale): difference in `/b/` | `zogozelx zodozelx zol gral blragel.` | *There are three more cats than dogs.* | I |
 | [Frequency](/comparative-arity#frequency-scale): `hral` | `zazozon zalazun zol hral vowurol.` | *Azozon walks more often than Alazun.* | I |
-| [Time, later](/comparative-arity#time-scale): `bral` | `zazozon zalazun zol bral vevorol.` | *Azozon arrives later than Alazun.* | I |
-| [Time, earlier](/comparative-arity#time-scale) | `zazozon zalazun zuol bral vevorol.` | *Azozon arrives earlier than Alazun.* | I |
+| [Time, later](/comparative-arity#time-scale): `bral` | `zazozon zalazun zol bral vayurol.` | *Azozon arrives later than Alazun.* | I |
+| [Time, earlier](/comparative-arity#time-scale) | `zazozon zalazun zuol bral vayurol.` | *Azozon arrives earlier than Alazun.* | I |
 | [The more …, the more …](/comparative-arity#covarying) | `zazozon hral vowurol xoel zalazun hral vezuvel.` | *The more Azozon walks, the more Alazun sleeps.* | I |
 | [The more …, the less …](/comparative-arity#covarying) | `zazozon hral vowurol xuol zalazun hral vezuvel.` | *The more Azozon walks, the less Alazun sleeps.* | I |
 | [Twice as](/comparative-arity#factor): factor after the adjective | `zazozon zalazun zoel gelazem hradol.` | *Azozon is twice as big as Alazun.* | I |
@@ -86,8 +86,8 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Later than planned](/bars#bars) | `zazozon thagom zol bral vevorol.` | *Azozon arrives later than planned.* | I |
-| [Stance after the fence](/bars#bars) | `zazozon zol bral vevorol thagom.` | *I plan for Azozon to arrive last.* | I |
+| [Later than planned](/bars#bars) | `zazozon thagom zol bral vayurol.` | *Azozon arrives later than planned.* | I |
+| [Stance after the fence](/bars#bars) | `zazozon zol bral vayurol thagom.` | *I plan for Azozon to arrive last.* | I |
 | [More than planned, on an object](/bars#bars) | `zazozon dodelx thagom dol gral vagedal.` | *Azozon eats more strawberries than planned.* | I |
 | [Often, on a recipient](/bars#bars) | `zazozon vezuyol balazun thagom bol hral.` | *Azozon tells Alazun more often than planned.* | I |
 | [Than usual](/bars#channel-bars) | `zazozon thubom zol guzemel.` | *Azozon is sleepier than usual.* | I |
@@ -96,9 +96,9 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than I expected](/stance-bars#which-bar) | `zazozon thabem zol guzemel.` | *Azozon is sleepier than I expected.* | A |
 | [Than they used to be](/stance-bars#which-bar) | `zazozon helam zol guzemel.` | *Azozon is sleepier than they used to be.* | A |
 | [As … as possible](/stance-bars#limits-and-hopes) | `zalazun hodaxal zoel hadurom vowurol.` | *Alazun walks as hastily as possible.* | A |
-| [Up to code](/stance-bars#limits-and-hopes) | `zohehal hwuvol zoel gabobem.` | *The house is as strong as the rules require.* | A |
+| [Up to code](/stance-bars#limits-and-hopes) | `zamahal hwuvol zoel gabobem.` | *The house is as strong as the rules require.* | A |
 | [More than allowed](/stance-bars#limits-and-hopes) | `zedudal hwuval zol gral.` | *There is more tea than the rules allow.* | A |
-| [Than hoped](/stance-bars#limits-and-hopes) | `zanal thuwuyom zol gagebem.` | *The book is clearer than I hoped.* | A |
+| [Than hoped](/stance-bars#limits-and-hopes) | `zanal theguyom zol gagebem.` | *The book is clearer than I hoped.* | A |
 | [Than feared](/stance-bars#limits-and-hopes) | `zanal thewemum zuol gagebem.` | *The book is even less clear than I feared.* | A |
 
 <PageBreak />
@@ -118,7 +118,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [a requirement `hwuvol` / `hwuvom` / `hwuvor`](/stance-bars#limits-and-hopes) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
 | [a permission `hwuval` / `hwuvam` / `hwuvar`](/stance-bars#limits-and-hopes) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
 | [consent `hwudam`](/stance-bars#which-bar) | the agreed terms | *more than agreed* | A |
-| [speaker attitude `thuwuyom`, `thewemum`](/stance-bars#limits-and-hopes) | the case you hoped for or feared | *than hoped* / *than feared* | A |
+| [speaker attitude `theguyom`, `thewemum`](/stance-bars#limits-and-hopes) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
 The bar's ending keeps its own job: on a channel it is evidence strength (`thubol`, `thubor`). The bar's `/b/` is the source (REPORTED), the one who demands or grants (a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a hinge, MAY, MIRATIVE (*it turns out*), DECISION, and ATTEMPT are not.
 
@@ -151,4 +151,4 @@ English *many* and *often* rank against an unstated baseline. Ageben names the b
 | `zoel` *as … as* ([a tie](/comparatives#equatives)) | | `zazozon zalazun zuol gamahum` *not as … as* ([below](/comparative-arity#comparative-arity)) |
 | `zol gamahum` *no most* ([standalone](/comparative-arity#comparative-arity)) | | `zor gamahum` *whatever ranks highest* · `zazozon zalazun zor gamahum` *whichever of these* ([someone is on top](/comparative-arity#comparative-arity)) |
 | `zalazun zazozon zol hahunom vowurol` *more intensely than* ([ranks the manner](/comparative-arity#manner-scale)) | | `gahunom` *more intense* ([a quality of the people](/comparative-arity#manner-scale)) |
-| `zazozon thagom zol bral vevorol` *later than planned* ([a bar before the join](/bars#bars)) | | `zazozon zol bral vevorol thagom` *I plan for them to be last* ([a stance after](/bars#bars)) |
+| `zazozon thagom zol bral vayurol` *later than planned* ([a bar before the join](/bars#bars)) | | `zazozon zol bral vayurol thagom` *I plan for them to be last* ([a stance after](/bars#bars)) |

@@ -380,7 +380,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *pay* | `varal` |
 | *basket* | `abowal` |
 | *see* | `vayebel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *big* | `gelazem` |
 | *ant* | `enezal` |
 
@@ -488,7 +488,7 @@ z-Azozon | d-none | v-see
 *Azozon sees nothing.*
 :::
 
-**6.** `zalazun veyamul xel zahelan varal.`
+**6.** `zalazun vozumul xel zahelan varal.`
 
 ::: details Show answer
 [z-Alazun | v-scream | x-or-exactly-one | z-Ahelan | v-pay]

@@ -40,7 +40,7 @@ To say *when* that claim counts (*only at school*, *always except when it rains*
 
 #### This episode (`thu`) {#reach-occasion}
 
-> `zazozon vulamuthul.`
+> `zazozon venumuthul.`
 >
 > z-Azozon | v-misstate-th-episode
 >
@@ -48,7 +48,7 @@ To say *when* that claim counts (*only at school*, *always except when it rains*
 
 #### Practiced role (`tho`) {#reach-occupation}
 
-> `zazozon vulamuthol.`
+> `zazozon venumuthol.`
 >
 > z-Azozon | v-misstate-th-role
 >
@@ -68,7 +68,7 @@ On a verb, `tho` is that act as their practice, not one outing.
 >
 > "Azozon is a stranger to Alazun."
 
-> `zazozon vulamuthel blalazun.`
+> `zazozon venumuthel blalazun.`
 >
 > z-Azozon | [v-misstate-th-pair | bl-Alazun]
 >
@@ -100,7 +100,7 @@ These are the same vowels, written right after `w` on a [role compound](roles.md
 
 A role word takes no `th` seam after its stem: its reach is written once, at the front. Reach on a plain verb stem (`veduyothul`) labels the teaching.
 
-**Compare with:** the `th` seam labels the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon vulamuthul balazun.` is *Azozon said something untrue to Alazun, this once*. A role compound names the person by their part: `zazozon gwozulamul.` is *Azozon is someone who misstates*.
+**Compare with:** the `th` seam labels the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zazozon venumuthul balazun.` is *Azozon said something untrue to Alazun, this once*. A role compound names the person by their part: `zazozon gwozenumul.` is *Azozon is someone who misstates*.
 
 ### Stacked reach {#reach-stacks}
 
@@ -140,7 +140,7 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Alazun is becoming a teacher."
 
-> `zazozon vulamuthual.`
+> `zazozon venumuthual.`
 >
 > z-Azozon | v-misstate-th-except-episode
 >
@@ -176,13 +176,13 @@ The four reach vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Azozon is a teacher type, except with Alazun."
 
-> `zazozon vulamuthaol.`
+> `zazozon venumuthaol.`
 >
 > z-Azozon | v-misstate-th-using
 >
 > "Azozon is using misstatement as a tool."
 
-> `zalazun vulamuthoel.`
+> `zalazun venumuthoel.`
 >
 > z-Alazun | v-misstate-th-toward-role
 >
@@ -219,7 +219,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *angry* | `onumul` |
-| *misstate* | `vulamul` |
+| *misstate* | `venumul` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -243,7 +243,7 @@ z-Azozon | [g-pair-agent-teach | bl-Alazun]
 **3.** *Ahelan said something untrue, but it was the situation, not Ahelan.*
 
 ::: details Show answer
-`zahelan vulamuthael.`
+`zahelan venumuthael.`
 
 z-Ahelan | v-misstate-th-situation
 :::
@@ -258,7 +258,7 @@ z-Azozon | g-anxious-th-type
 *Azozon is an anxious type.*
 :::
 
-**2.** `zazozon vulamuthel blalazun.`
+**2.** `zazozon venumuthel blalazun.`
 
 ::: details Show answer
 z-Azozon | [v-misstate-th-pair | bl-Alazun]

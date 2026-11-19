@@ -72,7 +72,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agebe
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* (`/ɡ/`) | |
 | `x` in the middle | one thing; you can still hear both roots | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | `x` ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not `x` |
+| dictionary word | one familiar kind, listed as a single entry | `zebahehal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not `x` |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 

@@ -69,7 +69,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | [Role letter](/phonotactics#phonotactics) | first letter: the word's job in the clause | I |
 | Optional `l` after `/ɡ/` | [adjective before the noun](/left-bound-adjectives#left-bound-adjectives) | B |
 | Optional `l` after `/b/` | [`bl-`](/clause#extra-nouns): completes the word right before it | B |
-| Root(s) | vowel-first; a [dictionary compound](/phonotactics#phonotactics) is one long root (`oyaheha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](/compounds)) | I |
+| Root(s) | vowel-first; a [dictionary compound](/phonotactics#phonotactics) is one long root (`ebaheha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](/compounds)) | I |
 | Mid-word `th` | the stance seam: [reach](/label-seams#reach-vowels), [sakes](/sakes), [viewpoint](/viewpoint#viewpoint-laterals) | I |
 | `-l` / `-m` / `-n` / `-r` | the [word ending](/word-endings) | B |
 | `-ln` | [one of a name](/proper-names#name-instance--ln) | I |

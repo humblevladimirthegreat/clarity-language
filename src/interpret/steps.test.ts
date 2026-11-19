@@ -85,7 +85,7 @@ describe("steps: infer", () => {
   });
 
   it("universals-domains.md#universals-domains-generics: closed zul + kind (no K) gives the instance its denial covers", () => {
-    const none = readText("zul gawozal vewobol.", tables)[0]!.claim.roles.z!;
+    const none = readText("zul gobozal vewobol.", tables)[0]!.claim.roles.z!;
     const instance = universalInstance(none, "u");
     assert.ok(instance?.kind === "thing" && instance.root === rootOf("penguin"));
     assert.equal(universalInstance(none), undefined);

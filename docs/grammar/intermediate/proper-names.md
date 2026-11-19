@@ -58,7 +58,7 @@ What counts as one depends on what the name names:
 
 An `-ln` word is a new mention, so a lone `zazozoln.` is *there is an Azozon*, and a later `-r` resume (`dazozor`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](/spans#when-required)).
 
-**Compare with:** `gazozon` after a noun puts it in the brand (`zoyahel gazozon` *the bed is an Azozon*), and `-l` on the root is the root’s own sense: `dazozol` is *a swan*.
+**Compare with:** `gazozon` after a noun puts it in the brand (`zebahel gazozon` *the bed is an Azozon*), and `-l` on the root is the root’s own sense: `dazozol` is *a swan*.
 
 ### Countries and traditions {#countries-traditions}
 
@@ -127,7 +127,7 @@ The family name describes the given name, so the person is still one noun in one
 | `zaloln golowon` | [one of a name](#name-instance--ln) | *someone named Alon Olowon* |
 | `zalor` | [resume](/pronouns) | *Alon* (the same person) |
 
-Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zuvayal golowon` *the Olowon family*), and what the family uses takes the ordinary *whose* hook: `dohehal om buvayal golowon` is *the Olowon family’s house*.
+Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zuvayal golowon` *the Olowon family*), and what the family uses takes the ordinary *whose* hook: `damahal om buvayal golowon` is *the Olowon family’s house*.
 
 A full name works as a [greeting](/word-endings#greeting) too: `alon golowon.` is Alon Olowon saying hello. A [call](/speech-moves#vocative) takes the family name the same way (`yalon golowon.` *Alon Olowon!*).
 
@@ -149,7 +149,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 
 A business or product name uses the same pieces. A compact label is one `x` word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](/spans#when-required), where any role letter can appear.
 
-A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary ending) takes the same four endings as any content word. A **dictionary compound** also fills one role: it is one stem, written without mid-word `x` (`zoyahehal` *bedroom*).
+A nativized loan (a foreign word adapted into an Ageben root, plus an ordinary ending) takes the same four endings as any content word. A **dictionary compound** also fills one role: it is one stem, written without mid-word `x` (`zebahehal` *bedroom*).
 
 **Compare with:** `zalon golowon.` alone is a sentence: *Alon is an Olowon* ([classification](/predication#classification)). The citation `alon golowon` has no role letter, so it only names. Two people in one role take a [join](/joins#right-close) after them (`zalon zolowon zal`).
 
@@ -163,7 +163,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *hospital-bed* (ward name) | `uhahaxoyahen` | 🏥 *hospital* **x** 🛏️ *bed*: one ward's name |
+| *hospital-bed* (ward name) | `uhahaxebahen` | 🏥 *hospital* **x** 🛏️ *bed*: one ward's name |
 | *Temperature* (named standard) | `hoveron` | 🌡️ from *thermometer* |
 | *Intrusion* (titled procedure) | `vezebun` | 💉 from *syringe* |
 | *Emergency* (titled drill) | `vemavan` | 🚑 from *ambulance* |
@@ -196,7 +196,7 @@ z-Azozon | v-sit | h-Uhahan
 **2.** *The bed is an Azozon.* (the brand)
 
 ::: details Show answer
-`zoyahel gazozon.`
+`zebahel gazozon.`
 
 z-bed | g-Azozon
 :::
@@ -212,11 +212,11 @@ z-Ahelan | v-Ezuven
 **4.** *Azozon sees Hospital-Bed.* (the ward's name)
 
 ::: details Show answer
-`zazozon duhahaxoyahen vayebel.`
+`zazozon duhahaxebahen vayebel.`
 
-z-Azozon | d-Uhaha-x-Oyahen | v-see
+z-Azozon | d-Uhaha-x-Ebahen | v-see
 
-**Also correct:** `zazozon vayebel duhahaxoyahen.`
+**Also correct:** `zazozon vayebel duhahaxebahen.`
 :::
 
 **5.** *There is a big Ahelan.* (one bed of that brand)
@@ -269,15 +269,15 @@ z-Azozon | d-Ahelan.instance | v-see . z-←Ahelan.instance | g-big
 *Azozon sees an Ahelan. It is big.* (one bed of that brand)
 :::
 
-**5.** `zuhahaxoyahen varuyol.`
+**5.** `zuhahaxebahen varuyol.`
 
 ::: details Show answer
-z-Uhaha-x-Oyahen | v-write
+z-Uhaha-x-Ebahen | v-write
 
 *Hospital-Bed writes.* (the ward, as an office)
 :::
 
-**6.** `zoyahel gazabanam.`
+**6.** `zebahel gazabanam.`
 
 ::: details Show answer
 z-bed | g-japanese
@@ -309,12 +309,12 @@ z-Ahelan | v-Emavan
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Hospital-Bed sits.* (one ward's name) <!-- lint: error -->`zuhahan zoyahen vehohel.`
+**1.** *Hospital-Bed sits.* (one ward's name) <!-- lint: error -->`zuhahan zebahen vehohel.`
 
 ::: details Show answer
-`zuhahaxoyahen vehohel.`
+`zuhahaxebahen vehohel.`
 
-z-Uhaha-x-Oyahen | v-sit
+z-Uhaha-x-Ebahen | v-sit
 
 A hyphenated name is one word joined with **`x`**; two **-n** words in the same role are two named things.
 :::

@@ -10,7 +10,7 @@ English *more than planned*, *sleepier than usual*, *enough*, and *too much* com
 
 English *more than planned* and *later than planned* rank one thing against a value a stance sets, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/can-and-cant#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
-> `zazozon thagom zol bral vevorol.`
+> `zazozon thagom zol bral vayurol.`
 >
 > [z-Azozon | th-plan-itinerary | z-rank/more | b-later] | v-arrival
 >
@@ -18,7 +18,7 @@ English *more than planned* and *later than planned* rank one thing against a va
 
 The same stance word after the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
 
-> `zazozon zol bral vevorol thagom.`
+> `zazozon zol bral vayurol thagom.`
 >
 > [z-Azozon | z-rank/more | b-later] | v-arrival | th-plan-itinerary
 >
@@ -137,7 +137,7 @@ Name a sake to say which need sets the limit. With a quality as the scale, the s
 
 On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* and *too early*:
 
-> `zazozon thudatham zuol bral vevorol.`
+> `zazozon thudatham zuol bral vayurol.`
 >
 > [z-Azozon | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
 >

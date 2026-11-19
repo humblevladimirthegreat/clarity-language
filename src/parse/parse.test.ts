@@ -29,7 +29,7 @@ describe("parse — clause.md beginner", () => {
     assert.equal(body.clause.units[1]!.kind, "vp");
   });
 
-  it("parses zuzehal gobovol. as classification predicate", () => {
+  it("parses zazahal gobovol. as classification predicate", () => {
     const result = parseText("zezedel gobulol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
@@ -108,7 +108,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses yel command with a period", () => {
-    const result = parseText("yol vehehal.");
+    const result = parseText("yol vuyahal.");
     assert.equal(result.utterances[0]!.left.force?.raw, "yol");
     assert.equal(result.utterances[0]!.bodies[0]!.punct, "period");
   });
@@ -237,7 +237,7 @@ describe("parse — describing a call or reaction (more-turn-words.md#describe-t
 });
 
 describe("parse — joins.md", () => {
-  it("parses zuzehal zagorol zam.", () => {
+  it("parses zazahal zagorol zam.", () => {
     const result = parseText("zezedel zogozel zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "np");
@@ -432,7 +432,7 @@ describe("parse — hosted /w/ before /b/", () => {
   });
 
   it("parses extra-noun hook with restrictor /w/ left of the hook", () => {
-    const result = parseText("zodozel vezuvel wal al bohehal.");
+    const result = parseText("zodozel vezuvel wal al bamahal.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const hook = units.find((u) => u.kind === "hook");
     assert.ok(hook && hook.kind === "hook");
@@ -484,7 +484,7 @@ describe("parse — /ɡ/ join fences", () => {
 });
 
 describe("parse — illegal fences", () => {
-  it("rejects left fence zam zuzehal zagorol", () => {
+  it("rejects left fence zam zazahal zagorol", () => {
     assert.throws(() => parseText("zam zezedel zogozel."), SentenceParseError);
   });
 
@@ -673,7 +673,7 @@ describe("parse — spans.md written fences and closes", () => {
 
 describe("parse — pronouns.md resume with no earlier match", () => {
   it("reads an opening resume of a lexicon stem as the one you both know", () => {
-    for (const text of ["zalazun vayebel donor.", "zoher vowurol.", "zodozer vowurol.", "zoyahehar vowurol.", "zalazun vowurolar."]) {
+    for (const text of ["zalazun vayebel donor.", "zoher vowurol.", "zodozer vowurol.", "zebahehar vowurol.", "zalazun vowurolar."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
     assert.throws(() => parseText("zabubur vowurol."), SentenceParseError);
@@ -694,13 +694,13 @@ describe("parse — comparatives.md bars", () => {
   it("takes one /th/ stance word before a rank join as the fence's bar", () => {
     for (const [text, raw] of [
       ["zazozon thubom zol guzemel.", "thubom"],
-      ["zazozon thagom zol bral vevorol.", "thagom"],
+      ["zazozon thagom zol bral vayurol.", "thagom"],
       ["zanal thalom zuol garolem.", "thalom"],
       ["zedudal thudatham zoel gral.", "thudatham"],
       ["zanal thugem zuom garolem.", "thugem"],
       ["zalazun hodaxal zoel hadurom vowurol.", "hodaxal"],
-      ["zohehal hwuvol zoel gabobem.", "hwuvol"],
-      ["zanal thuwuyom zol gagebem.", "thuwuyom"],
+      ["zamahal hwuvol zoel gabobem.", "hwuvol"],
+      ["zanal theguyom zol gagebem.", "theguyom"],
       ["zazozon thabemalazun zol guzemel.", "thabemalazun"],
     ] as const) {
       assert.equal(barOf(text)?.word.raw, raw, text);
@@ -754,7 +754,7 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("ends the sentence at a bar's barl: the next words are the grounds", () => {
-    const clause = parseText("zazozon theyom blarl zol guzemel zalazun veyamul.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zazozon theyom blarl zol guzemel zalazun vozumul.").utterances[0]!.bodies[0]!.clause;
     assert.equal(clause.units.length, 1);
     assert.deepEqual(clause.dependent?.clause.units.map((u) => u.kind), ["np", "vp"]);
   });
@@ -793,7 +793,7 @@ describe("parse — spans.md mention marker", () => {
   });
 
   it("reads -n as the name-string marker", () => {
-    const np = parseText("glegon d<Hamlet> vuyugum.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "np" && u.coord.level === "d")!;
+    const np = parseText("glegon d<Hamlet> vegugum.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "np" && u.coord.level === "d")!;
     const item = np.kind === "np" ? np.coord.parts[0]!.items[0] : undefined;
     assert.ok(item?.kind === "package");
     assert.equal(item.package.glAdj?.word.overlay?.gloss, "NAME.MENTION");
@@ -834,7 +834,7 @@ describe("parse — contrary to a stance (uom + /th/)", () => {
       "zazozon vowurol uom thogem.",
       "zazozon vowurol uom thalom.",
       "zazozon vowurol uom thebam.",
-      "zazozon vowurol uom thuwuyom.",
+      "zazozon vowurol uom theguyom.",
       "zazozon vowurol uom thebamalazun.",
     ]) {
       const { hook, units } = zoneOf(text);
@@ -956,9 +956,9 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () 
   });
 
   it("fills a hosted /b/ slot with the list that starts right after the host", () => {
-    const [, , h] = units("zalazun vehohel hedam bledavol blawahol bal.");
+    const [, , h] = units("zalazun vehohel hedam bledavol blezahol bal.");
     assert.ok(h?.kind === "h");
-    assert.deepEqual(h.unit.hosted?.boundJoin?.members.map((m) => m.raw), ["blawahol"]);
+    assert.deepEqual(h.unit.hosted?.boundJoin?.members.map((m) => m.raw), ["blezahol"]);
     assert.equal(h.unit.hosted?.boundJoin?.join.raw, "bal");
   });
 

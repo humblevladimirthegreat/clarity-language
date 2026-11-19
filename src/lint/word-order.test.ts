@@ -50,7 +50,7 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
   it("reads X HOOK Y in one role as one slot, and a hook's landmark as placed anywhere", () => {
     assert.deepEqual(rules("yel zazozon aor zahelan varuyol."), []);
     assert.deepEqual(rules("zazozon vowurol erom vazuvol."), []);
-    assert.deepEqual(rules("zazozon vowurol el bohehal."), []);
+    assert.deepEqual(rules("zazozon vowurol el bamahal."), []);
   });
 
   it("lets a measure /b/ go anywhere, like an /h/ word", () => {

@@ -28,7 +28,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *swim* | `vazuvol` |
 | *climb* | `voguvol` |
 | *therefore* | `xahom` |
-| *tent* | `udehal` |
+| *tent* | `anahal` |
 | *bucket* | `obowal` |
 | *cook* | `vuguyol` |
 | *cookie* | `ugedel` |
@@ -58,7 +58,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *relatedness* | `awel` |
 | *competence* | `uwal` |
 | *PATTERN* | `thubom` |
-| *hope* | `thuwuyom` |
+| *hope* | `theguyom` |
 | *want-unstated* | `thalom` |
 | *possibility* | `hogugem` |
 | *around* | `hevam` |
@@ -203,7 +203,7 @@ z-Alazun | h-RESIDUE | v-fight
 **14.** *Alazun sleeps in a tent. Ahelan cooks in there.*
 
 ::: details Show answer
-`zalazun vezuvel al budehal. zahelan vuguyol ar.`
+`zalazun vezuvel al banahal. zahelan vuguyol ar.`
 
 z-Alazun | v-sleep | [in | b-tent] . z-Ahelan | v-cook | in.there
 
@@ -232,7 +232,7 @@ z-Ahelan | h-ATTEMPT-trial | v-climb
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zahelan dudehal vayebel. zahelan dobowal vayeber.`
+**1.** `zahelan danahal vayebel. zahelan dobowal vayeber.`
 
 ::: details Show answer
 z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see
@@ -508,10 +508,10 @@ The `/th/` join denies the ground; **`vul`** after the verb would deny the walki
 **Rule:** [Stance joins](verb-and-stance-joins.md#stance-joins)
 :::
 
-**17.** *Hopefully Azozon walks.* `zazozon thuwuyom vowurol.` or `zazozon huwuyom vowurol.`
+**17.** *Hopefully Azozon walks.* `zazozon theguyom vowurol.` or `zazozon heguyom vowurol.`
 
 ::: details Show answer
-`zazozon thuwuyom vowurol.`
+`zazozon theguyom vowurol.`
 
 z-Azozon | th-hope | v-walk
 

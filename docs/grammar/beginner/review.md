@@ -39,7 +39,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sandwich* | `edal` |
 | *cookie* | `ugedel` |
 | *cook* | `vuguyol` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *fight* | `vuvuvul` |
 | *mango* | `amedel` |
 | *watermelon* | `owodel` |
@@ -47,7 +47,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *swim* | `vazuvol` |
 | *night* | `anurul` |
 | *intensity* | `ahunom` |
-| *helmet* | `umobul` |
+| *helmet* | `ehobul` |
 | *physical* | `obal` |
 | *punch* | `vabuvul` |
 | *wood* | `ulol` |
@@ -140,7 +140,7 @@ z-Ahelan | [g-companionship | bl-Alazun]
 **8.** *Azozon punches, then Alazun screams.*
 
 ::: details Show answer
-`zazozon vabuvul xan zalazun veyamul.`
+`zazozon vabuvul xan zalazun vozumul.`
 
 [z-Azozon | v-punch | x-and-then | z-Alazun | v-scream]
 
@@ -179,7 +179,7 @@ z-Azozon | d-sandwich | instead | d-cookie | v-cook
 **Rule:** [Instead](hooks.md#instead)
 :::
 
-**4.** `zahelan vozuyel th(zalazun veyamul).`
+**4.** `zahelan vozuyel th(zalazun vozumul).`
 
 ::: details Show answer
 z-Ahelan | v-sing | th-ASIDE[z-Alazun | v-scream]
@@ -303,10 +303,10 @@ The first name before **`zol`** ranks higher.
 **Rule:** [Comparatives](comparatives.md#comparatives)
 :::
 
-**7.** *My helmet serves the physical sake in the long term.* `zumobul gobathal.` or `zumobul gobathul.`
+**7.** *My helmet serves the physical sake in the long term.* `zehobul gobathal.` or `zehobul gobathul.`
 
 ::: details Show answer
-`zumobul gobathal.`
+`zehobul gobathal.`
 
 z-helmet | g-physical-met-lasting
 

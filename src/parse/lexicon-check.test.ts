@@ -13,7 +13,7 @@ describe("unknownWords", () => {
   });
 
   it("does not report a listed compound stem or a published root", () => {
-    assert.deepEqual(unknownWords(parse("zoyahehal vowurol.")), []);
+    assert.deepEqual(unknownWords(parse("zebahehal vowurol.")), []);
   });
 
   it("does not report a role compound on a listed compound stem", () => {

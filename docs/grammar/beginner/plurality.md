@@ -169,7 +169,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `veruvol` |
 | *sit* | `vehohel` |
 | *see* | `vayebel` |
-| *drink* | `vuwudal` |
+| *drink* | `vududal` |
 | *knife* | `anewul` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -211,11 +211,11 @@ z-interlocutors-x | d-sandwich | v-see
 **5.** *Azozon drinks wine. They sit.* (Azozon and associates)
 
 ::: details Show answer
-`zazozon dowudal vuwudal. zwuzerx vehohel.`
+`zazozon dowudal vududal. zwuzerx vehohel.`
 
 z-Azozon | d-wine | v-drink . z-←episode-agent.same-x | v-sit
 
-**Also correct:** `zazozon dowudal vuwudal. zazozorx vehohel.`
+**Also correct:** `zazozon dowudal vududal. zazozorx vehohel.`
 :::
 
 **6.** *You all sit.* (everyone I'm talking to)
@@ -268,7 +268,7 @@ y-question | z-listener-x | v-sit
 *Are you all sitting?*
 :::
 
-**6.** `zayan dowudal vuwudal.`
+**6.** `zayan dowudal vududal.`
 
 ::: details Show answer
 z-interlocutors | d-wine | v-drink

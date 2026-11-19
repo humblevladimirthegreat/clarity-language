@@ -64,7 +64,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *trophy* | `odoral` |
 | *run* | `veruvol` |
-| *drink* | `vuwudal` |
+| *drink* | `vududal` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -87,7 +87,7 @@ z-teamwork | [g-open-to | bl-Azozon]
 **3.** *Alazun runs, refusing the drink.*
 
 ::: details Show answer
-`zalazun hun bluwudal veruvol.`
+`zalazun hun blududal veruvol.`
 
 z-Alazun | [h-refusing | bl-drink] | v-run
 :::

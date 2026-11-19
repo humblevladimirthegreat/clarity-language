@@ -10,19 +10,19 @@ Hooks already give you *in*, *from*, and *toward*; the other places on this page
 
 English says where someone is or moves with small words such as *in*, *from*, *toward*, and *between*. The everyday ones, *in* / *on* / *at* / *from* / *toward* / *through* / *out of*, are [extra-noun hooks](/extra-noun-hooks#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the source before the goal. *Between*, *across*, and *around* each need a root instead, with the landmark after it.
 
-> `zazozon ul bawahol vowurol oel bedavol.`
+> `zazozon ul bezahol vowurol oel bedavol.`
 >
 > z-Azozon | [from | b-station] | v-walk | [toward | b-train]
 >
 > "Azozon walks from a station toward a train."
 
-> `zazozon ul bohehal vowurol el bawahol.`
+> `zazozon ul bamahal vowurol el bezahol.`
 >
 > z-Azozon | [from | b-house] | v-walk | [at | b-station]
 >
 > "Azozon walks from a house to a station."
 
-> `zalazun ual bohehal veruvol al bedavol.`
+> `zalazun ual bamahal veruvol al bedavol.`
 >
 > z-Alazun | [out-of | b-house] | v-run | [in | b-train]
 >
@@ -40,7 +40,7 @@ English says where someone is or moves with small words such as *in*, *from*, *t
 
 *Between* needs a root, not a hook: the position depends on two landmarks at once. Use hosted **`hedam`** (or **`gedam`** on a noun) and put both landmarks in `/b/` as a [join](/joins). (cue: 🥪 *sandwich*: the filling sits between two sides)
 
-> `zalazun vehohel hedam bledavol blawahol bal.`
+> `zalazun vehohel hedam bledavol blezahol bal.`
 >
 > z-Alazun | v-sit | [h-between | [bl-train | bl-station | b-and]]
 >
@@ -48,7 +48,7 @@ English says where someone is or moves with small words such as *in*, *from*, *t
 
 Everything in `bl-` after the relation word counts as one landmark. A join (`bal`) or a [plural](/plurality) fills that landmark whole: each item takes `bl-`, the join word needs none (`bl-` on it is also correct), and the landmarks do not each need their own relation word. A join with no items before it is the whole landmark, so it takes `bl-` itself (`hewem blar` *like what?*, `hewem blal` *like nothing*). The same holds on a noun:
 
-> `zazozon gedam bledavol blawahol bal vehohel.`
+> `zazozon gedam bledavol blezahol bal vehohel.`
 >
 > [z-Azozon | [g-between | [bl-train | bl-station | b-and]]] | v-sit
 >
@@ -60,7 +60,7 @@ As a plain noun, `zedal` is *a sandwich*.
 
 *Across* also needs a root. The hook `uel` *through* passes through the inside of the landmark (a crowd, a tunnel). **`hohom`** goes from one edge to the far edge (a street, a river). Put the landmark in a `bl-` word right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
 
-> `zazozon vowurol hohom blawahol.`
+> `zazozon vowurol hohom blezahol.`
 >
 > z-Azozon | v-walk | [h-across | bl-station]
 >
@@ -93,13 +93,13 @@ English has four more words for where a path or a place sits against one landmar
 
 *Past* is **`hegalom`**: the path comes near the landmark and goes on, without stopping there and without going in. (cue: ☄️ *comet*: a comet swings by the sun and keeps going)
 
-> `zazozon vowurol hegalom blohehal.`
+> `zazozon vowurol hegalom blamahal.`
 >
 > z-Azozon | v-walk | [h-past | bl-house]
 >
 > "Azozon walks past a house."
 
-`em` *near* says only that the person is close, and `hohom` *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zohehal gegalom blawahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
+`em` *near* says only that the person is close, and `hohom` *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zamahal gegalom blezahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
 
 *Along* is **`herahom`**: the path, or a row of things, follows the long side of the landmark (a road, a river, a train). It covers both walking on a road and walking beside it. (cue: 🛤️ *railway*: two rails run side by side the whole way)
 
@@ -109,7 +109,7 @@ English has four more words for where a path or a place sits against one landmar
 >
 > "Alazun runs along a train."
 
-On a noun it is **`gerahom`**: `zohehalx gerahom bledavol` *houses along the train*. As a plain noun, `zerahol` is *a railway*.
+On a noun it is **`gerahom`**: `zamahalx gerahom bledavol` *houses along the train*. As a plain noun, `zerahol` is *a railway*.
 
 *Opposite* is **`havunam`**: the person faces the landmark with a gap between them. (cue: 🏐 *volleyball*: the two sides face each other over the net)
 
@@ -121,7 +121,7 @@ On a noun it is **`gerahom`**: `zohehalx gerahom bledavol` *houses along the tra
 
 To name the gap (*across the station from Azozon*), add `hohom` with the gap as its landmark:
 
-> `zahelan vehohel havunam blazozon hohom blawahol.`
+> `zahelan vehohel havunam blazozon hohom blezahol.`
 >
 > z-Ahelan | v-sit | [h-opposite | bl-Azozon] | [h-across | bl-station]
 >
@@ -131,7 +131,7 @@ On a noun it is **`gavunam`**. As a plain noun, `zavunal` is *a volleyball*.
 
 *Beyond* is **`huzurum`**: the person or thing is on the far side of the landmark from where the speaker stands. (cue: 🌇 *sunset*: the sun goes down on the far side of the horizon)
 
-> `zalazun vehohel huzurum blawahol.`
+> `zalazun vehohel huzurum blezahol.`
 >
 > z-Alazun | v-sit | [h-beyond | bl-station]
 >
@@ -158,7 +158,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *bridge* | `ohol` | 🌉 |
-| *house* | `ohehal` | 🏠 |
+| *house* | `amahal` | 🏠 |
 
 **Review:**
 
@@ -178,7 +178,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Ahelan walks from a house to a bridge.*
 
 ::: details Show answer
-`zahelan ul bohehal vowurol el bohol.`
+`zahelan ul bamahal vowurol el bohol.`
 
 z-Ahelan | [from | b-house] | v-walk | [at | b-bridge]
 :::
@@ -202,7 +202,7 @@ z-Alazun | v-run | [h-across | bl-water]
 **4.** *Azozon walks past the house.*
 
 ::: details Show answer
-`zazozon vowurol hegalom blohehal.`
+`zazozon vowurol hegalom blamahal.`
 
 z-Azozon | v-walk | [h-past | bl-house]
 :::

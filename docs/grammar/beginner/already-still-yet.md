@@ -29,7 +29,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azozon hasn't walked yet."
 
-> `zazozon huvum vowurol el bohehal.`
+> `zazozon huvum vowurol el bamahal.`
 >
 > z-Azozon | h-no-longer | v-walk | [at | b-house]
 >

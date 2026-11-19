@@ -23,7 +23,7 @@ You already say what kind something is by putting the kind on `/ɡ/` after the n
 | `zazozon godozel hual` | characterizing / habitual | *Azozon is always a dog* |
 | `zazozon godozel gul` | negation | *Azozon is not a dog* |
 
-> `zazozon wayurom godozel.`
+> `zazozon waburom godozel.`
 >
 > z-Azozon | [w-degree | g-dog]
 >
@@ -74,7 +74,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | **IDENTITY** | `orel` |
 | *guard* | `agayul` |
 | *quiet* | `ugowul` |
-| *kind of* | `wayurom` |
+| *kind of* | `waburom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -97,7 +97,7 @@ z-Alazun | [g-same | bl-Azozon]
 **3.** *Ahelan is kind of a statue.*
 
 ::: details Show answer
-`zahelan wayurom gezahel.`
+`zahelan waburom gezahel.`
 
 z-Ahelan | [w-degree | g-statue]
 :::
@@ -128,7 +128,7 @@ z-guard | [[g-IDENTITY | bl-Alazun] | g-not]
 *Ahelan is always quiet.*
 :::
 
-**3.** `zezahel wayurom gagayul.`
+**3.** `zezahel waburom gagayul.`
 
 ::: details Show answer
 z-statue | [w-degree | g-guard]

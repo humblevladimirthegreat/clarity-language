@@ -276,7 +276,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabuvul` |
 | *walk* | `vowurol` |
 | *sleep* | `vezuvel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *because* | `thahum` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -316,7 +316,7 @@ z-Alazun | v-run | [th-because | th-not] | bl-that-clause | z-Azozon | v-punch
 **5.** *Azozon screams, but not because Ahelan punches.*
 
 ::: details Show answer
-`zazozon veyamul thahum thul blarl zahelan vabuvul.`
+`zazozon vozumul thahum thul blarl zahelan vabuvul.`
 
 z-Azozon | v-scream | [th-because | th-not] | bl-that-clause | z-Ahelan | v-punch
 :::
@@ -339,7 +339,7 @@ z-Alazun | [v-run | [d-Ahelan | v-punch] | v-or-exactly-one]
 *Alazun runs or punches Ahelan.* (exactly one)
 :::
 
-**2.** `zazozon veyamul xam zalazun vezuvel.`
+**2.** `zazozon vozumul xam zalazun vezuvel.`
 
 ::: details Show answer
 [z-Azozon | v-scream | x-and.open | z-Alazun | v-sleep]

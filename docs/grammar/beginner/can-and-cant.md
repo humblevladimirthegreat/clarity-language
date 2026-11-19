@@ -123,7 +123,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *clipboard* | `egowal` | 📋 |
+| *clipboard* | `ugowal` | 📋 |
 | *capacity* | `odam` | 🥣 from *bowl*; as **`hodaxol`**, a bare *can't* |
 
 **Review:**
@@ -142,7 +142,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azozon can write on the clipboard.*
 
 ::: details Show answer
-`zazozon varuyoxal ael begowal.`
+`zazozon varuyoxal ael bugowal.`
 
 z-Azozon | v-write-able | [on | b-clipboard]
 :::

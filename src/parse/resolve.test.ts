@@ -63,10 +63,10 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
   });
 
   it("matches a compound only on its whole stem (bed is not bedroom)", () => {
-    const part = resolveOf("zoyahehal vowurol. zoyaher vehohel.");
+    const part = resolveOf("zebahehal vowurol. zebaher vehohel.");
     assert.equal(part.anaphors[0]!.antecedent, undefined);
-    const whole = resolveOf("zoyahehal vowurol. zoyahehar vehohel.");
-    assert.equal(whole.anaphors[0]!.antecedent?.raw, "zoyahehal");
+    const whole = resolveOf("zebahehal vowurol. zebahehar vehohel.");
+    assert.equal(whole.anaphors[0]!.antecedent?.raw, "zebahehal");
   });
 
   it("matches a hook compound only on its whole stem (walk is not enter)", () => {
@@ -208,7 +208,7 @@ describe("resolve — content-rule pointers (role-parts.md#content-of-the-event)
   });
 
   it("x: the next sentence after a consequence linker", () => {
-    assert.deepEqual(pointers("zazozon vabuvul. xahom zalazun veyamul. dwuxer vayebel."), ["dwuxer→veyamul"]);
+    assert.deepEqual(pointers("zazozon vabuvul. xahom zalazun vozumul. dwuxer vayebel."), ["dwuxer→vozumul"]);
   });
 
   it("y: the latest turn", () => {
@@ -587,13 +587,13 @@ describe("resolve — hooked-join point-back (hooked-joins.md#hooked-joins-point
   const landmarkOf = (text: string) => resolveOf(text).anaphors.find((bind) => bind.kind === "landmark")?.antecedent?.raw;
 
   it("takes the latest landmark: a hook's /b/, a hosted bl- word, or a hooked join's", () => {
-    assert.equal(landmarkOf("zazozon vehohel el bohehal. zerxual vezuvel."), "bohehal");
-    assert.equal(landmarkOf("zazozon vehohel el bohehal. zexual bluzahal vezuvel. zarxar vowurol."), "bluzahal");
+    assert.equal(landmarkOf("zazozon vehohel el bamahal. zerxual vezuvel."), "bamahal");
+    assert.equal(landmarkOf("zazozon vehohel el bamahal. zexual bluzahal vezuvel. zarxar vowurol."), "bluzahal");
     assert.equal(landmarkOf("zazozon vowurol halam blanulul. zerxual vezuvel."), "blanulul");
   });
 
   it("on /h/, takes only a time landmark", () => {
-    assert.equal(landmarkOf("zazozon vowurol halam blanulul. zalazun vehohel el bohehal. zawan vebal hurxal."), "blanulul");
+    assert.equal(landmarkOf("zazozon vowurol halam blanulul. zalazun vehohel el bamahal. zawan vebal hurxal."), "blanulul");
     assert.equal(landmarkOf("zazozon vowurol huxal blovulul. zawan vebal hurxal."), "blovulul");
   });
 });

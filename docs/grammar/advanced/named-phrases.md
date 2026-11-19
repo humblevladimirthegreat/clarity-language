@@ -40,7 +40,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *page* | `obonol` |
-| *pen* | `ebewol` |
+| *pen* | `abewol` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#advanced-english-to-ageben}
@@ -48,7 +48,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *a page or a pen* (the familiar set phrase)
 
 ::: details Show answer
-`zobonol zebewol zen.`
+`zobonol zabewol zen.`
 
 NAME[z-page | z-pen | z-or-exactly-one]
 :::
@@ -87,7 +87,7 @@ NAME[z-Alazun | z-Ahelan | z-and]
 *“Alazun and Ahelan”* (the familiar pair, named as one)
 :::
 
-**3.** `zalazun dobonol debewol dan vayebel.`
+**3.** `zalazun dobonol dabewol dan vayebel.`
 
 ::: details Show answer
 z-Alazun | NAME[d-page | d-pen | d-and] | v-see
@@ -107,10 +107,10 @@ z-Ahelan | [d-dove | d-imprimatur | d-and] | v-see
 **-l** is an ordinary list; **-n** would name the pair as one set phrase.
 :::
 
-**2.** *“Page and Pen”* (the familiar set phrase) `zobonol zebewol zan.` or `zobonol zebewol zal.`
+**2.** *“Page and Pen”* (the familiar set phrase) `zobonol zabewol zan.` or `zobonol zabewol zal.`
 
 ::: details Show answer
-`zobonol zebewol zan.`
+`zobonol zabewol zan.`
 
 NAME[z-page | z-pen | z-and]
 

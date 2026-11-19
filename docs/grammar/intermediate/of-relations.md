@@ -21,7 +21,7 @@ English *of* and *from* say how one noun sits toward another, without saying whi
 >
 > "Azozon sees a teapot full of tea."
 
-> `zazozon dohehal gulom blulol vayebel.`
+> `zazozon damahal gulom blulol vayebel.`
 >
 > z-Azozon | [d-house | [g-material | bl-wood]] | v-see
 >
@@ -33,7 +33,7 @@ English *of* and *from* say how one noun sits toward another, without saying whi
 >
 > "Alazun, who is from the city, walks."
 
-On an event, the same roots take `/h/` (`zazozon veyuyel hulom blulol` *Azozon crafts out of wood*; `zalazun vowurol haham blazahol` *Alazun walks, originating from the city*). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zadal` *a jar*; `zulol` *wood*; `zahal` *a country*).
+On an event, the same roots take `/h/` (`zazozon vaguyel hulom blulol` *Azozon crafts out of wood*; `zalazun vowurol haham blazahol` *Alazun walks, originating from the city*). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zadal` *a jar*; `zulol` *wood*; `zahal` *a country*).
 
 For *a piece of* a mass, put the substance first and `gozowum` right after it. With no `/b/`, the whole it was cut from is left open.
 
@@ -53,7 +53,7 @@ After a join, `gobom` and `gaham` can limit the set the join covers. They do it 
 >
 > "Everyone in the family sleeps."
 
-`zual gaham bluhuham` is *everyone from the town*. A hook after the join would instead be an extra noun of the clause: it would place the act and leave the set unchanged.
+`zual gaham blalaham` is *everyone from the town*. A hook after the join would instead be an extra noun of the clause: it would place the act and leave the set unchanged.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -82,7 +82,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *station* | `awahol` | 🚉 |
+| *station* | `ezahol` | 🚉 |
 | *hand* | `ahebal` | ✋ |
 | *contents* | `gadam` | 🫙 from *jar*: the vessel named by what it stores |
 | *origin* | `gaham` | 🗾 from *country*: where it comes from |
@@ -96,7 +96,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *ticket* | `odenol` |
 | *luggage* | `elobal` |
-| *house* | `ohehal` |
+| *house* | `amahal` |
 | *teapot* | `edodal` |
 | *wine* | `owudal` |
 | *bread* | `obodel` |
@@ -119,7 +119,7 @@ z-Ahelan | [d-teapot | [g-contents | bl-wine]] | v-see
 **2.** *Alazun finds a ticket from the station.*
 
 ::: details Show answer
-`zalazun dodenol gaham blawahol vumewel.`
+`zalazun dodenol gaham blezahol vumewel.`
 
 z-Alazun | [d-ticket | [g-origin | bl-station]] | v-find
 :::
@@ -127,7 +127,7 @@ z-Alazun | [d-ticket | [g-origin | bl-station]] | v-find
 **3.** *Azozon sees a house made of wood.*
 
 ::: details Show answer
-`zazozon dohehal gulom blulol vayebel.`
+`zazozon damahal gulom blulol vayebel.`
 
 z-Azozon | [d-house | [g-material | bl-wood]] | v-see
 :::
@@ -150,7 +150,7 @@ z-Alazun | [d-bread | g-division] | v-smell
 *Alazun smells a piece of bread.*
 :::
 
-**3.** `zalazun delobal gaham blawahol vumewel.`
+**3.** `zalazun delobal gaham blezahol vumewel.`
 
 ::: details Show answer
 z-Alazun | [d-luggage | [g-origin | bl-station]] | v-find
@@ -172,7 +172,7 @@ The vessel takes **`gadam`**; the filling sits in `/b/`.
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zahelan dohehal gulom blulol vayebel.` / `zahelan dohehal gadam blulol vayebel.`
+**1.** `zahelan damahal gulom blulol vayebel.` / `zahelan damahal gadam blulol vayebel.`
 
 ::: details Show answer
 z-Ahelan | [d-house | [g-material | bl-wood]] | v-see

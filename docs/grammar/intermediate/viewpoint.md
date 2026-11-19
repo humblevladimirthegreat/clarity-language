@@ -70,7 +70,7 @@ The examples above used *west* / *left*. The other seven arrow roots work the sa
 | **`unuhol`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
 | **`anuhol`** | compass heading, or forward-left on a face | *northwest* / *forward-left* | ↖️ *northwest-arrow*: between north and west |
 | **`ozuhol`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
-| **`azohol`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
+| **`uzuhol`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
 Indoor headings may follow a local map (building north). When you mean directions from a person’s body, name the viewpoint or use the listener (`…thazawan`, `…thehon`).
 
@@ -140,14 +140,14 @@ Gravity works the same way: bare `oduho` + `/b/` is *under* the landmark, and ba
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewuhol` *west*; `gabuhol` *up* |
 | **`DIR th ANCHOR`** | that point on ANCHOR’s facing rose | `gewuhothawan` *listener-left* |
-| DIR + **`th`** + **`e`** + `/b/` | that point on the landmark’s own rose | `gazuhothel blohehal` *behind the house* |
+| DIR + **`th`** + **`e`** + `/b/` | that point on the landmark’s own rose | `gazuhothel blamahal` *behind the house* |
 | **complex `/ɡ/` + `/b/`** | region on a side of a landmark | `gewuhothazozon bledalol` *left of the tree, from Azozon’s view* |
 
 ### The landmark's own front (DIR + `th` + `e`) {#landmark-facing}
 
 English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then `th`, then **`e`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. `e` is the same vowel as pair reach on a label: here, the one `/b/` landmark is the one whose facing counts.
 
-> `zodozel vehohel gazuhothel blohehal.`
+> `zodozel vehohel gazuhothel blamahal.`
 >
 > z-dog | v-sit | [g-south-th-landmark | bl-house]
 >
@@ -166,11 +166,11 @@ The landmark's front is where its design or current use faces (a house's front d
 <!-- cheat-sheet: roles -->
 | Ageben | English |
 |--------|---------|
-| `gazuhothel blohehal` | *behind the house* (its own back) |
-| `gonuhothel blohehal` | *in front of the house* |
-| `gewuhothel blohehal` | *on the house's left* |
-| `gewuhothazozon blohehal` | *left of the house, from Azozon's view* |
-| `gewuhol blohehal` | *west of the house* |
+| `gazuhothel blamahal` | *behind the house* (its own back) |
+| `gonuhothel blamahal` | *in front of the house* |
+| `gewuhothel blamahal` | *on the house's left* |
+| `gewuhothazozon blamahal` | *left of the house, from Azozon's view* |
+| `gewuhol blamahal` | *west of the house* |
 
 ### Endings and resume
 
@@ -203,7 +203,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *boat* | `onaval` | 🚤 |
+| *boat* | `ubaval` | 🚤 |
 | *island* | `alahel` | 🏝️ |
 | *west* | `ewuhol` | ⬅️: west on the map, left on a face |
 | *up* | `abuhol` | ⏫: away from the pull |
@@ -234,7 +234,7 @@ y-command | v-walk | z-Ahelan | h-west-th-Azozon
 **2.** *Azozon sits above the boat.*
 
 ::: details Show answer
-`zazozon vehohel gabuhol blonaval.`
+`zazozon vehohel gabuhol blubaval.`
 
 z-Azozon | v-sit | [g-up | bl-boat]
 :::
@@ -265,7 +265,7 @@ y-command | v-walk | z-Alazun | h-west
 *Alazun, walk west.*
 :::
 
-**2.** `zazozon vazuvol hoduhol blonaval.`
+**2.** `zazozon vazuvol hoduhol blubaval.`
 
 ::: details Show answer
 z-Azozon | v-swim | [h-down | bl-boat]
@@ -291,10 +291,10 @@ z-Alazun | v-swim | [h-down | bl-island]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon sits on the boat's left.* `zazozon vehohel hewuhothel blonaval.` or `zazozon vehohel hewuhol blonaval.`
+**1.** *Azozon sits on the boat's left.* `zazozon vehohel hewuhothel blubaval.` or `zazozon vehohel hewuhol blubaval.`
 
 ::: details Show answer
-`zazozon vehohel hewuhothel blonaval.`
+`zazozon vehohel hewuhothel blubaval.`
 
 z-Azozon | v-sit | [h-west-th-landmark | bl-boat]
 

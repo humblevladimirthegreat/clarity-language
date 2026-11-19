@@ -200,7 +200,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *sit* | `vehohel` |
 | *run* | `veruvol` |
 | *angry* | `onumul` |
@@ -237,7 +237,7 @@ z-Ahelan | v-swim | h-night | h-always-except
 **4.** *Alazun screams sometimes.*
 
 ::: details Show answer
-`zalazun veyamul har.`
+`zalazun vozumul har.`
 
 z-Alazun | v-scream | h-sometimes
 :::
@@ -245,7 +245,7 @@ z-Alazun | v-scream | h-sometimes
 **5.** *Azozon screams again.*
 
 ::: details Show answer
-`zazozon herugom veyamul.`
+`zazozon herugom vozumul.`
 
 z-Azozon | h-again | v-scream
 :::

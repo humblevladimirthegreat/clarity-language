@@ -163,7 +163,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *candy* | `unedal` |
 | *cake* | `egodel` |
-| *doughnut* | `udodel` |
+| *doughnut* | `ededel` |
 | *eat* | `vagedal` |
 | *red* | `erulol` |
 | *small* | `amezem` |
@@ -191,7 +191,7 @@ z-Alazun | [d-cake | [d-lollipop | [used-by | b-←Alazun]] | d-and] | v-eat
 **3.** *Alazun eats Ahelan's cake and doughnut.*
 
 ::: details Show answer
-`zalazun degodel dudodel dal gegunum blahelan vagedal.`
+`zalazun degodel dededel dal gegunum blahelan vagedal.`
 
 z-Alazun | [d-cake | d-doughnut | d-and | [g-ownership | bl-Ahelan]] | v-eat
 :::
@@ -230,7 +230,7 @@ z-Alazun | [[d-candy | d-chocolate | d-or-exactly-one] | d-ice-cream | d-and] | 
 *The lollipop and the ice cream are red and small, respectively.*
 :::
 
-**3.** `zegodel zudodel zoel gelazem.`
+**3.** `zegodel zededel zoel gelazem.`
 
 ::: details Show answer
 [z-cake | z-doughnut | z-equal-rank | g-big]
@@ -258,10 +258,10 @@ z-Alazun | [[d-lollipop | g-red] | d-candy | d-and] | v-eat
 A modifier for one item stays on that item. `gerulol` right after the join word is SHARED: both sweets would be red.
 :::
 
-**2.** *Ahelan eats the cake and her doughnut.* (only the doughnut is hers) `zahelan degodel dudodel om bahelar dal vagedal.` or `zahelan degodel om bahelar dudodel dal vagedal.`
+**2.** *Ahelan eats the cake and her doughnut.* (only the doughnut is hers) `zahelan degodel dededel om bahelar dal vagedal.` or `zahelan degodel om bahelar dededel dal vagedal.`
 
 ::: details Show answer
-`zahelan degodel dudodel om bahelar dal vagedal.`
+`zahelan degodel dededel om bahelar dal vagedal.`
 
 z-Ahelan | [d-cake | [d-doughnut | [used-by | b-←Ahelan]] | d-and] | v-eat
 

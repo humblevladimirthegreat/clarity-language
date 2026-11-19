@@ -61,7 +61,7 @@ The reach vowel does its usual work. Pair reach `e` takes its `bl-` party, as on
 
 ### Places, tools, and times {#places-tools-times}
 
-A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bohehal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
+A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bamahal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
 
 | Job | Ageben | English |
 |-----|--------|---------|
@@ -125,7 +125,7 @@ A `y` pointer reaches turns, not events: `dwuyer` the latest turn, `dwuyar` the 
 
 If the next sentence after an event opened with a [consequence linker](sentence-linkers.md#sentence-linkers) (`xahom` *therefore*, `xahol` *it follows that*), an `x` pointer is that sentence's event:
 
-> `zazozon vabuvul. xahom zalazun veyamul. zahelan dwuxer vayebel.`
+> `zazozon vabuvul. xahom zalazun vozumul. zahelan dwuxer vayebel.`
 >
 > z-Azozon | v-punch . x-therefore | z-Alazun | v-scream . z-Ahelan | d-←episode-outcome.same | v-see
 >
@@ -145,7 +145,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *go* | `vavobol` | 👣 from *footprints* |
 | *steal* | `varozum` | 🦝 from *raccoon* |
-| *mask* | `amebul` | 😷 |
+| *mask* | `umebul` | 😷 |
 
 **Review:**
 
@@ -179,7 +179,7 @@ z-Azozon | v-go | h-role-agent-theft
 **3.** *Alazun goes toward the mask. Azozon sees the mask.*
 
 ::: details Show answer
-`zalazun vavobol oel bamebul. zazozon damebur vayebel.`
+`zalazun vavobol oel bumebul. zazozon dumebur vayebel.`
 
 z-Alazun | v-go | [toward | b-mask] . z-Azozon | d-←mask | v-see
 :::
@@ -202,7 +202,7 @@ z-Ahelan | d-episode-manner-theft | v-see
 *Ahelan sees a way of stealing.*
 :::
 
-**2.** `zazozon vavobol oel bamebul. zalazun vowurol er.`
+**2.** `zazozon vavobol oel bumebul. zalazun vowurol er.`
 
 ::: details Show answer
 z-Azozon | v-go | [toward | b-mask] . z-Alazun | v-walk | there
@@ -210,7 +210,7 @@ z-Azozon | v-go | [toward | b-mask] . z-Alazun | v-walk | there
 *Azozon goes toward the mask. Alazun walks there.*
 :::
 
-**3.** `zazozon vavobol ul bamebul. zalazun vowurol ur.`
+**3.** `zazozon vavobol ul bumebul. zalazun vowurol ur.`
 
 ::: details Show answer
 z-Azozon | v-go | [from | b-mask] . z-Alazun | v-walk | from.there

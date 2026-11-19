@@ -38,7 +38,7 @@ Stacked vowels combine the same four moves (`a` / `o` / `e` / `u`):
 | **`van`** | hold the object in the set | *includes / adds* | `a` ≈ add (hold / inventory) | `zazozon daledel van` |
 | **`ven`** | lock the object as the sole pick | *chooses (as the one choice)* | `e` ≈ choice (single pick) | `zazozon dedudal ven` |
 | **`vaen`** | admit the object; more may follow | *picks (more picks may follow)* | `ae` ≈ add one, more may follow (open pick) | `zazozon dugedam vaen` |
-| **`vun`** | reject the object | *denies / refuses* | `u` ≈ undo (take that member back) | `zazozon dulamul vun` |
+| **`vun`** | reject the object | *denies / refuses* | `u` ≈ undo (take that member back) | `zazozon denumul vun` |
 | **`vuan`** | leave the object out of the set | *excludes* | `ua` ≈ undo + add (cut that member) | `zazozon duwedal vuan` |
 | **`vuen`** | bar that one; the rest stay free | *bars (anything but)* | `ue` ≈ undo + choice (forbid that pick) | `zazozon dogudal vuen` |
 | **`von`** | rank the object first | *prioritizes* | `o` ≈ rank (put this first) | `zazozon dabezul von` |
@@ -68,7 +68,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *sandwich* | `edal` |
-| *drink* | `vuwudal` |
+| *drink* | `vududal` |
 | *table* | `edohel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -84,7 +84,7 @@ z-Azozon | d-trophy | v-includes
 **2.** *Alazun chooses the drink.*
 
 ::: details Show answer
-`zalazun duwudal ven.`
+`zalazun dududal ven.`
 
 z-Alazun | d-drink | v-choose
 :::
@@ -107,7 +107,7 @@ z-Alazun | d-trophy | v-choose
 *Alazun chooses the trophy.* (as the one choice)
 :::
 
-**2.** `zazozon duwudal vun.`
+**2.** `zazozon dududal vun.`
 
 ::: details Show answer
 z-Azozon | d-drink | v-denies

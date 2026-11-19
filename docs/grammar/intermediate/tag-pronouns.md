@@ -133,9 +133,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *person* | `eyel` |
-| *pour* | `vowuvul` |
+| *pour* | `vobuvul` |
 | *see* | `vayebel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *tomato* | `odedel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -143,7 +143,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Ahelan (A) pours. Alazun (O) harvests. A sees O.*
 
 ::: details Show answer
-`zahelan zwal vowuvul. zalazun zwol vogelam. zwar dwor vayebel.`
+`zahelan zwal vobuvul. zalazun zwol vogelam. zwar dwor vayebel.`
 
 [z-Ahelan | z-tag.A] | v-pour . [z-Alazun | z-tag.O] | v-harvest . z-←tag.A | d-←tag.O | v-see
 :::
@@ -151,7 +151,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Azozon (A) and Alazun (O) harvest. A and O scream.*
 
 ::: details Show answer
-`zazozon zwal zalazun zwol zam vogelam. zwaor veyamul.`
+`zazozon zwal zalazun zwol zam vogelam. zwaor vozumul.`
 
 [[z-Azozon | z-tag.A] | [z-Alazun | z-tag.O] | z-and.open] | v-harvest . z-←tag.A+O | v-scream
 :::
@@ -166,7 +166,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zeyel zwan vowuvul. zahelan dwan vayebel.`
+**1.** `zeyel zwan vobuvul. zahelan dwan vayebel.`
 
 ::: details Show answer
 [z-person | z-tag.A.name] | v-pour . z-Ahelan | d-tag.A.name | v-see
@@ -174,7 +174,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *A real person (A) pours. Ahelan sees A.*
 :::
 
-**2.** `zwal veyamul. zwar dodedel gerulol vayebel.`
+**2.** `zwal vozumul. zwar dodedel gerulol vayebel.`
 
 ::: details Show answer
 z-tag.A | v-scream . z-←tag.A | [d-tomato | g-red] | v-see
@@ -182,7 +182,7 @@ z-tag.A | v-scream . z-←tag.A | [d-tomato | g-red] | v-see
 *Someone (A) screams. A sees a red tomato.*
 :::
 
-**3.** `zazozon zwal zahelan zwol zam vowuvul. zalazun dwaom vayebel.`
+**3.** `zazozon zwal zahelan zwol zam vobuvul. zalazun dwaom vayebel.`
 
 ::: details Show answer
 [[z-Azozon | z-tag.A] | [z-Ahelan | z-tag.O] | z-and.open] | v-pour . z-Alazun | d-←tag.A+O.part | v-see
@@ -192,10 +192,10 @@ z-tag.A | v-scream . z-←tag.A | [d-tomato | g-red] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon (A) pours. Alazun (O) harvests. O screams.* `zazozon zwal vowuvul. zalazun zwol vogelam. zwor veyamul.` or `zazozon zwal vowuvul. zalazun zwol vogelam. zwar veyamul.`
+**1.** *Azozon (A) pours. Alazun (O) harvests. O screams.* `zazozon zwal vobuvul. zalazun zwol vogelam. zwor vozumul.` or `zazozon zwal vobuvul. zalazun zwol vogelam. zwar vozumul.`
 
 ::: details Show answer
-`zazozon zwal vowuvul. zalazun zwol vogelam. zwor veyamul.`
+`zazozon zwal vobuvul. zalazun zwol vogelam. zwor vozumul.`
 
 [z-Azozon | z-tag.A] | v-pour . [z-Alazun | z-tag.O] | v-harvest . z-←tag.O | v-scream
 
@@ -204,10 +204,10 @@ The tag vowel picks the referent: **`o`** is Alazun.
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Azozon (A) pours. Alazun harvests. A screams.* <!-- lint: error -->`zazozon zwal vowuvul. zalazun vogelam. zwuzer veyamul.`
+**1.** *Azozon (A) pours. Alazun harvests. A screams.* <!-- lint: error -->`zazozon zwal vobuvul. zalazun vogelam. zwuzer vozumul.`
 
 ::: details Show answer
-`zazozon zwal vowuvul. zalazun vogelam. zwar veyamul.`
+`zazozon zwal vobuvul. zalazun vogelam. zwar vozumul.`
 
 [z-Azozon | z-tag.A] | v-pour . z-Alazun | v-harvest . z-←tag.A | v-scream
 

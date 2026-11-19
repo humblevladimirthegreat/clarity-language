@@ -62,7 +62,7 @@ After the role letter, look at both sides of the *first* `x`. A role word is not
 | [name](/conversation-length#conversation-length) | `a` / `o` / `e` / `u`, then `-n` | conversation length | *Azozon, I have time* | I |
 | [longer root](/compound-families#families-by-shape) | `a` / `e` / `o` / `u` | [ability](/can-and-cant#ability) | *can't sing right now* | I |
 | [hook vowels](/hook-compounds#hook-prefixes), maybe `m` | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
-| [hook vowels](/hooked-joins#hooked-joins), maybe `m` or `r` | a join: vowels and an ending | hooked join, landmark after it | `zexual blohehal` *everyone at the house* | A |
+| [hook vowels](/hooked-joins#hooked-joins), maybe `m` or `r` | a join: vowels and an ending | hooked join, landmark after it | `zexual blamahal` *everyone at the house* | A |
 
 Mid-word `th` is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#reach-vowels)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
 
@@ -73,7 +73,7 @@ Mid-word `th` is another family: a sake root and a vowel (`guwathal`), any other
 |--------|-----|---------|-------|
 | [two words](/compounds#compound-vs-separate) | two things, or a property marked another way | `zohowel zurewel zam` *a hammer and a wrench*; `zodozel gobulol` *a blue dog* | B |
 | [`x` in the middle](/compounds#compound-vs-separate) | one thing; both roots audible | `gagamaxolamal` *in love* (the crush kind); `zuwedaxubudal` *peanut butter*; `zazozoxalazun` (one person) | B |
-| [dictionary word](/compounds#compound-vs-separate) | one familiar kind, one entry | `zoyahehal` *bedroom*; `zezalal` *sunflower* | B |
+| [dictionary word](/compounds#compound-vs-separate) | one familiar kind, one entry | `zebahehal` *bedroom*; `zezalal` *sunflower* | B |
 
 A dictionary compound joins its two roots with the left root's ending (`-l` everyday, `-m` abstract), never `x`. If the pairing is not listed, glue with `x` or use two words.
 
@@ -84,7 +84,7 @@ A dictionary compound joins its two roots with the left root's ending (`-l` ever
 | [`zuzahalanal`](/compounds#dictionary-compounds) | *textbook* | B |
 | [`zerulalogobal`](/compounds#dictionary-compounds) | *raincoat* | B |
 | [`zahuyayel`](/root-tails#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
-| [`zoyahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
+| [`zebahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
 With more pieces, keep the English order in one word, with the kind as the last root (`zogudaxedudaxowulan` *Coffee-Tea-Water*, one named shop).
 
@@ -162,7 +162,7 @@ Calls and sentence glue use [`/y/`](/speech-moves) and [`/x/`](/dependents).
 | | `wamezem` | *slightly* | I |
 | | `wadowem` | *quite* | I |
 | | `wahuram` | *completely* | I |
-| [`/h/`](/very-and-slightly#grading-the-action), on the verb | `hayurom` | *kind of* | I |
+| [`/h/`](/very-and-slightly#grading-the-action), on the verb | `haburom` | *kind of* | I |
 | [`/h/`](/restrictors#again), on the verb | `herugom` | *again* | B |
 
 <PageBreak />
@@ -211,7 +211,7 @@ With a name or a resumed noun, the pair is a [property](/predication#existence),
 |-----|---------|---------|-------|
 | [Not](/label-reach#classification-packaging) | `zazozon godozel gul.` | *Azozon is not a dog.* | I |
 | [Always](/label-reach#classification-packaging) | `zazozon godozel hual` | *Azozon is always a dog.* | I |
-| [Sort of](/label-reach#classification-packaging) | `zazozon wayurom godozel.` | *Azozon is something of a dog.* | I |
+| [Sort of](/label-reach#classification-packaging) | `zazozon waburom godozel.` | *Azozon is something of a dog.* | I |
 | [Be ADJ!](/more-turn-words#command-property) | `yol guyulom.` | *Be careful!* | I |
 | [Don't be ADJ](/more-turn-words#command-property) | `yul` + `/ɡ/` | | I |
 
@@ -221,8 +221,8 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [`thu`](/label-seams#reach-occasion) | this episode | `zazozon vulamuthul.` | *Azozon said something untrue this once.* | I |
-| [`tho`](/label-seams#reach-occupation) | a practiced role | `zazozon vulamuthol.` | *Azozon says untrue things as their craft.* | I |
+| [`thu`](/label-seams#reach-occasion) | this episode | `zazozon venumuthul.` | *Azozon said something untrue this once.* | I |
+| [`tho`](/label-seams#reach-occupation) | a practiced role | `zazozon venumuthol.` | *Azozon says untrue things as their craft.* | I |
 | [`the`](/label-seams#reach-relative) | this pair (`/b/` follows) | `zazozon gulayethem blalazun.` | *Azozon is a stranger to Alazun.* | I |
 | [`tha`](/label-seams#reach-type) | a type across scenes | `zalazun ganomuthal.` | *Alazun is an anxious type.* | I |
 
@@ -247,4 +247,4 @@ Root, mid-word `th`, a reach vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | `zazozon vowurol.` *Azozon walks* ([the verb](/clause#who-acts-and-the-action)) | | `zazozon gowurol.` *Azozon is walking* ([under way](/predication#in-progress)) |
 | `dazozon vayebel.` *Azozon was seen* ([no subject named](/no-subject#no-subject)) | | `zeyel zar` *someone did it* ([an unnamed someone](/joins#unspecified-member-r-phrase)) |
 | `dazozol` *a swan* ([`-l`](/proper-names#proper-name--n)) | | `dazozoln` *an Azozon* ([`-ln`: one of the name](/proper-names#name-instance--ln)) |
-| `zoyahehal` *bedroom* ([a dictionary word](/compounds#dictionary-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |
+| `zebahehal` *bedroom* ([a dictionary word](/compounds#dictionary-compounds)) | | `zuwedaxubudal` *peanut butter* ([glued with `x`](/compounds#compound-vs-separate)) |

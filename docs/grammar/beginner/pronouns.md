@@ -28,9 +28,9 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** for English *the dog that walked*, say that the dog walks as its own sentence, then resume the dog with `-r` in whatever role you need. Do not attach a *who / that / which* clause to the noun ([which person or thing](dependents.md#which-noun)).
 
-A word built from two roots resumes with its whole stem too. `doyahehar` is *the bedroom*; `doyaher` is *the bed*, and never points at a bedroom.
+A word built from two roots resumes with its whole stem too. `debahehar` is *the bedroom*; `debaher` is *the bed*, and never points at a bedroom.
 
-> `zazozon doyahehal vayebel. zalazun doyahehar vayebel.`
+> `zazozon debahehal vayebel. zalazun debahehar vayebel.`
 >
 > z-Azozon | d-bedroom | v-see . z-Alazun | d-←bedroom | v-see
 >
@@ -253,7 +253,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *cook* | `vuguyol` | 🧑‍🍳 from *cook*, the person at the stove |
-| *drink* | `vuwudal` | 🥤 |
+| *drink* | `vududal` | 🥤 |
 | *cookie* | `ugedel` | 🍪 |
 | *knife* | `anewul` | 🔪 |
 | *punch* | `vabuvul` | 👊 |
@@ -271,7 +271,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *speaker* | `uwen` |
 | *see* | `vayebel` |
 | *find* | `vumewel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *tell* | `vezuyol` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -279,11 +279,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azozon drinks. They cook.*
 
 ::: details Show answer
-`zazozon vuwudal. zwuzer vuguyol.`
+`zazozon vududal. zwuzer vuguyol.`
 
 z-Azozon | v-drink . z-←episode-agent.same | v-cook
 
-**Also correct:** `zazozon vuwudal. zazozor vuguyol.`
+**Also correct:** `zazozon vududal. zazozor vuguyol.`
 :::
 
 **2.** *Alazun finds a knife. Ahelan sees the knife.*
@@ -307,11 +307,11 @@ z-speaker | d-listener | v-see
 **4.** *Alazun punches Ahelan. They scream.* (Ahelan)
 
 ::: details Show answer
-`zalazun dahelan vabuvul. zwuder veyamul.`
+`zalazun dahelan vabuvul. zwuder vozumul.`
 
 z-Alazun | d-Ahelan | v-punch . z-←episode-patient.same | v-scream
 
-**Also correct:** `zalazun dahelan vabuvul. zahelar veyamul.`
+**Also correct:** `zalazun dahelan vabuvul. zahelar vozumul.`
 :::
 
 **5.** *Azozon sees a cookie. Alazun finds one.*
@@ -332,7 +332,7 @@ z-interlocutors | v-cook
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zahelan vuguyol. zalazun vuwudal. zwuzar veyamul.`
+**1.** `zahelan vuguyol. zalazun vududal. zwuzar vozumul.`
 
 ::: details Show answer
 z-Ahelan | v-cook . z-Alazun | v-drink . z-←episode-agent.other | v-scream
@@ -340,7 +340,7 @@ z-Ahelan | v-cook . z-Alazun | v-drink . z-←episode-agent.other | v-scream
 *Ahelan cooks. Alazun drinks. The other one screams.* (Ahelan)
 :::
 
-**2.** `dugedel vumewel. zwuzur veyamul.`
+**2.** `dugedel vumewel. zwuzur vozumul.`
 
 ::: details Show answer
 d-cookie | v-find . z-←episode-agent.unsaid | v-scream
@@ -356,7 +356,7 @@ z-Alazun | d-Azozon | v-punch . z-Ahelan | d-←episode-agent.same.part | v-see
 *Alazun punches Azozon. Ahelan sees what they did.* (Alazun's punch, not Alazun)
 :::
 
-**4.** `zeyen veyamul.`
+**4.** `zeyen vozumul.`
 
 ::: details Show answer
 z-ONE | v-scream
@@ -382,10 +382,10 @@ z-Azozon | v-tell | b-Ahelan . z-←episode-recipient.same | d-cookie | v-cook
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Azozon sees Alazun. They scream.* (Alazun) `zazozon dalazun vayebel. zwuder veyamul.` or `zazozon dalazun vayebel. zwuzer veyamul.`
+**1.** *Azozon sees Alazun. They scream.* (Alazun) `zazozon dalazun vayebel. zwuder vozumul.` or `zazozon dalazun vayebel. zwuzer vozumul.`
 
 ::: details Show answer
-`zazozon dalazun vayebel. zwuder veyamul.`
+`zazozon dalazun vayebel. zwuder vozumul.`
 
 z-Azozon | d-Alazun | v-see . z-←episode-patient.same | v-scream
 
@@ -404,10 +404,10 @@ Alazun was the one told, part **`b`**; `dwuzer` is the doer, Azozon.
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *One drinks.* (anyone, as a rule) <!-- lint: error -->`zawan vuwudal.`
+**1.** *One drinks.* (anyone, as a rule) <!-- lint: error -->`zawan vududal.`
 
 ::: details Show answer
-`zeyen vuwudal.`
+`zeyen vududal.`
 
 z-ONE | v-drink
 

@@ -166,16 +166,16 @@ Read these whole words part by part:
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, feel about the whole claim. In Ageben, put the content root for that feeling on `/th/` with `-m`. It is always the speaker's attitude, never the subject's, so it never says that the subject feels it. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`huwuyom`).
+English *hopefully*, *luckily*, and *worryingly* say how *you*, the speaker, feel about the whole claim. In Ageben, put the content root for that feeling on `/th/` with `-m`. It is always the speaker's attitude, never the subject's, so it never says that the subject feels it. For the subject's manner (*Azozon walks hopefully*), use `/h/` (`heguyom`).
 
 | Ageben | Use | English | Same root as |
 |--------|-----|---------|--------------|
-| **`thuwuyom`** | you want it, and it is still open | *hopefully* | `uwuyol` *crossed-fingers* |
+| **`theguyom`** | you want it, and it is still open | *hopefully* | `eguyol` *crossed-fingers* |
 | **`tholezem`** | it went well by chance | *luckily* | `olezel` *ladybug* |
 | **`thewemum`** | it concerns you | *worryingly* | `ewemul` *worried* |
 | **`thonumum`** | it angers you | *infuriatingly* | `onumul` *angry* |
 
-> `zazozon thuwuyom vowurol.`
+> `zazozon theguyom vowurol.`
 >
 > z-Azozon | th-hope | v-walk
 >
@@ -195,15 +195,15 @@ Any feeling root works the same way, including the roots of the [plain labels](/
 
 In a question the attitude still stays yours. By the usual [order](/clause#which-covers-which) the question word covers the rest of the turn, but an attitude stays outside what is asked, so the question asks only about the claim:
 
-> `yel thuwuyom vowurol zazozon.`
+> `yel theguyom vowurol zazozon.`
 >
 > y-question | th-hope | v-walk | z-Azozon
 >
 > "Is Azozon walking? I hope so."
 
-To ask what the listener hopes, make the hope the verb: `yel zawan vuwuyom darl zazozon vowurol.` is *Do you hope Azozon walks?*
+To ask what the listener hopes, make the hope the verb: `yel zawan veguyom darl zazozon vowurol.` is *Do you hope Azozon walks?*
 
-**Compare with:** *Azozon hopes Alazun walks* is Azozon's hope, not yours, so `thuwuyom` cannot say it. Someone else's hope is their want, which you give with how you know it.
+**Compare with:** *Azozon hopes Alazun walks* is Azozon's hope, not yours, so `theguyom` cannot say it. Someone else's hope is their want, which you give with how you know it.
 
 ### Practice {#intermediate-practice}
 
@@ -216,7 +216,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *hug* | `vahuyal` | 🫂 from *hug* |
-| *hope* | `thuwuyom` | 🤞 from *crossed-fingers* |
+| *hope* | `theguyom` | 🤞 from *crossed-fingers* |
 
 **Review:**
 
@@ -279,7 +279,7 @@ th-MAY | [th-relatedness-unmet-modifiable-PLACATING-OPEN | bl-Alazun]
 **6.** *Hopefully Alazun sleeps.*
 
 ::: details Show answer
-`zalazun thuwuyom vezuvel.`
+`zalazun theguyom vezuvel.`
 
 z-Alazun | th-hope | v-sleep
 :::
@@ -330,10 +330,10 @@ th-sake-unmet-modifiable-TOWARD-SETTLED
 After `ae` the `bl-` word says whose stake it is, so the missing connection is Alazun's. After `e` it is the landmark: your own connection is missing, and you want to take it up with Alazun.
 :::
 
-**2.** *Hopefully Azozon sits.* `zazozon thuwuyom vehohel.` or `zazozon huwuyom vehohel.`
+**2.** *Hopefully Azozon sits.* `zazozon theguyom vehohel.` or `zazozon heguyom vehohel.`
 
 ::: details Show answer
-`zazozon thuwuyom vehohel.`
+`zazozon theguyom vehohel.`
 
 z-Azozon | th-hope | v-sit
 

@@ -191,7 +191,7 @@ The interlocutors work as holder on any host. With PLAN after it, the plan is on
 >
 > "I gather we both plan to walk."
 
-Pronouns, speech moves, and [speaker attitudes](feelings.md#speaker-attitude) stay yours: `uwen` is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with `thuwuyom`. The holder's view is their view now. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
+Pronouns, speech moves, and [speaker attitudes](feelings.md#speaker-attitude) stay yours: `uwen` is still you, the sentence is still your turn, and *hopefully* is still your hope. You are never the holder: your own view needs no seam. Someone else's hope is their want, so *Azozon hopes Alazun walks* is the holder with WANT, never with `theguyom`. The holder's view is their view now. A channel with a holder still takes its own `/b/`, so `thebamazozon blral` is *I hear Azozon expects it*.
 
 Each clause has one holder. The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 
@@ -227,7 +227,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *LIVE* | `thugem` |
 | *PLAN* | `thagom` |
 | *departure* | `vudurul` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *sleep* | `vezuvel` |
 | *tell* | `vezuyol` |
 
@@ -244,7 +244,7 @@ z-Alazun | th-CLUES-Azozon | v-departure
 **2.** *I hear Ahelan thinks Alazun screams.*
 
 ::: details Show answer
-`zalazun thebamahelan veyamul.`
+`zalazun thebamahelan vozumul.`
 
 z-Alazun | th-REPORTED-Ahelan | v-scream
 :::
@@ -268,7 +268,7 @@ z-Ahelan | th-REPORTED-Ahelan | th-plan-itinerary | v-tell
 **5.** *I gather Alazun watched Azozon scream.*
 
 ::: details Show answer
-`zazozon theyomalazun thugem veyamul.`
+`zazozon theyomalazun thugem vozumul.`
 
 z-Azozon | th-CLUES-Alazun | th-LIVE | v-scream
 
@@ -293,7 +293,7 @@ z-Alazun | th-MAY-Ahelan | v-departure
 *Maybe Ahelan thinks Alazun has left.*
 :::
 
-**3.** `zazozon theyomalazun veyamul.`
+**3.** `zazozon theyomalazun vozumul.`
 
 ::: details Show answer
 z-Azozon | th-CLUES-Alazun | v-scream
@@ -341,10 +341,10 @@ After a holder, PLAN is Azozon's. With Azozon only as the `/b/` source, the plan
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *I hear Azozon thinks Alazun screams.* <!-- lint: error -->`zalazun thebam blazozon veyamul.`
+**1.** *I hear Azozon thinks Alazun screams.* <!-- lint: error -->`zalazun thebam blazozon vozumul.`
 
 ::: details Show answer
-`zalazun thebamazozon veyamul.`
+`zalazun thebamazozon vozumul.`
 
 z-Alazun | th-REPORTED-Azozon | v-scream
 

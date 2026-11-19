@@ -243,7 +243,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *significantly* (*matters a lot*) | `hagugom` |
 | *gradually* / *slowly* | `huzezam` |
 | *widely* / *broadly* | `horahom` |
-| *deeply* | `heyowum` |
+| *deeply* | `hebowum` |
 | *easily* (*with less effort than usual*) | `thubom zuol huzubam` before the verb |
 | *hard to* / *easy to* + a verb (*hard to ignore*) | the doer, then `thubom zol huzubam` / `thubom zuol huzubam`, and the verb with *can* (`-xal`) |
 
@@ -342,8 +342,8 @@ With no `/b/`, `thubom` is the item's own usual level or the usual case in the s
 |---------|--------|
 | *expensive* / *costly* / *pricey* | `thubom zol guderem` (costs more than usual) |
 | *cheap* / *inexpensive* | `thubom zuol guderem` |
-| *rich* / *wealthy* (than most people) | `thubom bleyelx zol gegumam` |
-| *poor* (*little money*, than most people) | `thubom bleyelx zuol gegumam` |
+| *rich* / *wealthy* (than most people) | `thubom bleyelx zol gamumam` |
+| *poor* (*little money*, than most people) | `thubom bleyelx zuol gamumam` |
 | *strong* / *powerful* (than most people) | `thubom bleyelx zol gabobem` |
 | *weak* / *feeble* / *frail* (than most people) | `thubom bleyelx zuol gabobem` |
 | *weak today* / *not as strong as usual* | `thubom zuol gabobem` |
@@ -352,11 +352,11 @@ With no `/b/`, `thubom` is the item's own usual level or the usual case in the s
 | *far* / *far away* / *distant* / *remote* | `thubom zol guzavom` (farther than usual) |
 | *wide* / *broad* | `thubom zol gorahom` |
 | *narrow* | `thubom zuol gorahom` |
-| *deep* | `thubom zol geyowum` |
-| *shallow* | `thubom zuol geyowum` |
+| *deep* | `thubom zol gebowum` |
+| *shallow* | `thubom zuol gebowum` |
 | *thick* | `gabedel gul` (not flat) |
 | *remarkable* / *special* (unusual) / *outstanding* | `thubom zol` + the quality that stands out: `thubom zol gelazem` |
-| *picky* / *choosy* / *particular* (fussy) | `thubom zol goyugem` (more selective than usual) |
+| *picky* / *choosy* / *particular* (fussy) | `thubom zol gebugem` (more selective than usual) |
 | *major* / *significant* (matters more than usual) | `thubom zol gurothal` ([important](say-reasons.md#sake-words)) |
 
 > `zanal thubom zol guderem.`
@@ -438,7 +438,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | *member* (of a group) | `gobom` + `/b/` group | part of the group |
 | *member* (unspecified, of a menu or list) | `zer` | anything among the listed |
 | *list* (*a list of cats and dogs*) | `zogozel zodozel zal` | an and-list |
-| *list* (written) | `zegowal` | *clipboard* |
+| *list* (written) | `zugowal` | *clipboard* |
 | *range* (of numbers) | `zragel oel zrazal` | the band from 3 to 5 |
 | *range* (of things: how far it reaches) | `zaham` | *scope*, the abstract sense of `aha` |
 
@@ -474,13 +474,13 @@ Some derived units have an optional root of their own; the quantity they measure
 | English unit | Unit root (metaphor) | Example | Quantity (unchanged) |
 |--------------|----------------------|---------|----------------------|
 | newton | `avava` *newton* | `bavavam g+10` | `abuvu` *force* |
-| pascal | `edowa` *pascal* | `bedowam g+101325` | `ayewa` *pressure* |
+| pascal | `edowa` *pascal* | `bedowam g+101325` | `egewa` *pressure* |
 | joule | `ezalo` *joule* | `bezalom g+500` | `abewa` *energy* |
-| watt | `umavo` *watt* | `bumavom g+60` | `oyewe` *power* |
+| watt | `umavo` *watt* | `bumavom g+60` | `ebewe` *power* |
 | hertz | `uzula` *hertz* | `buzulam g+50` | `adora` *rhythm* |
 | ohm | `obewe` *ohm* | `bobewem g+100` | `ugohu` *blockage* |
 | coulomb | `uzeve` *coulomb* | `buzevem g+2` | `erazu` *charge* |
-| radian | `odugu` *radian* | `bodugum g+1` | `orego` *cycle* |
+| radian | `odugu` *radian* | `bodugum g+1` | `oyugo` *cycle* |
 
 **Related form:** general `+1xROOT` (*primary / singleton of a kind*) is a [numeric prefix](/numeric-derivation#scalar-digit-morphs), not an SI alias.
 

@@ -23,7 +23,7 @@ In each word, the first vowel names the family: `u` not, `a` add, `o` pass. The 
 
 `yual` answers a question that assumes something false. *Have you stopped saying untrue things?* has no honest *yes* or *no* if you never did. `yual.` says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use `yoel` (below).
 
-> `yel zazozon vowurol ul bohehal. yual.`
+> `yel zazozon vowurol ul bamahal. yual.`
 >
 > y-question | z-Azozon | v-walk | [from | b-house] . y-reject-frame
 >
@@ -53,7 +53,7 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 
 **`yuar`** says the question's premise fails at the moment, though it may hold later (cue: a door that is not there yet). `yuor` holds off on the claim; `yuar` holds off on what the question took for granted.
 
-> `yel zazozon vowurol ul bohehal. yuar.`
+> `yel zazozon vowurol ul bamahal. yuar.`
 >
 > y-question | z-Azozon | v-walk | [from | b-house] . y-reject-frame-for-now
 >
@@ -233,7 +233,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *listener* | `awan` |
 | *tell* | `vezuyol` |
-| *misstate* | `vulamul` |
+| *misstate* | `venumul` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -288,7 +288,7 @@ y-decline-for-now
 *I'll pass for now.*
 :::
 
-**3.** `zazozon vulamul. yel yuol.`
+**3.** `zazozon venumul. yel yuol.`
 
 ::: details Show answer
 z-Azozon | v-misstate . y-question | y-no

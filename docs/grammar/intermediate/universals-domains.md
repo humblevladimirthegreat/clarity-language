@@ -35,7 +35,7 @@ With a plain verb, *every cat* acts one by one: `zual gogozel vehohel.` is *each
 
 *Every cat* covers the cats the situation is about. An extra-noun [hook](/hooks#extra-noun) after the kind is a clause extra, as after any noun: it places the act, and it does not change which cats count.
 
-> `zual gogozel el bohehal vehohel.`
+> `zual gogozel el bamahal vehohel.`
 >
 > [z-everything | g-cat] | [at | b-house] | v-sit
 >
@@ -292,7 +292,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *dress* | `edobal` |
 | *ring* | `orebel` |
 | *wine* | `owudal` |
-| *beer* | `urudal` |
+| *beer* | `obudal` |
 | *see* | `vayebel` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -300,7 +300,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *everything but wine and beer*
 
 ::: details Show answer
-`zowudal zurudal zual.`
+`zowudal zobudal zual.`
 
 [z-wine | z-beer | z-everything-but]
 :::

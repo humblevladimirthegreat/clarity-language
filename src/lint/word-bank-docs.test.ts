@@ -142,13 +142,13 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
   });
 
   it("matches roots, not spellings: other roles, full-root resumes, role compounds", () => {
-    const rows = ["*Azozon* | `azozon`", "*tell* | `vezuyol`", "*run* | `eruvol`", "*dog* | `odozel`", "*scream* | `veyamul`"];
-    const md = page(rows, ["zazozon vezuyol. zwubezuyor veruvol.", "zodozel veruvol. zodozer veyamul."]);
+    const rows = ["*Azozon* | `azozon`", "*tell* | `vezuyol`", "*run* | `eruvol`", "*dog* | `odozel`", "*scream* | `vozumul`"];
+    const md = page(rows, ["zazozon vezuyol. zwubezuyor veruvol.", "zodozel veruvol. zodozer vozumul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("reads a resume as its antecedent's root", () => {
-    const md = page(["*Azozon* | `azozon`", "*run* | `eruvol`", "*scream* | `veyamul`"], ["zazozon veruvol. zazozor veyamul."]);
+    const md = page(["*Azozon* | `azozon`", "*run* | `eruvol`", "*scream* | `vozumul`"], ["zazozon veruvol. zazozor vozumul."]);
     assert.deepEqual(kinds(md), []);
   });
 

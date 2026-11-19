@@ -177,7 +177,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *guard* | `agayul` | 💂 |
 | *see* | `vayebel` | 👁️ from *eye* |
 | *tell* | `vezuyol` | 💬 from *speech* |
-| *scream* | `veyamul` | 😱 |
+| *scream* | `vozumul` | 😱 |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `derl` | **e** ≈ choice: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
@@ -238,7 +238,7 @@ z-guard | v-see | d-whether-clause | z-Alazun | v-peek
 **5.** *Azozon talks to the guard who screams.*
 
 ::: details Show answer
-`zagayul veyamul. zazozon vezuyol bagayul.`
+`zagayul vozumul. zazozon vezuyol bagayul.`
 
 z-guard | v-scream . z-Azozon | v-tell | b-guard
 :::
@@ -246,14 +246,14 @@ z-guard | v-scream . z-Azozon | v-tell | b-guard
 **6.** *Alazun screams, and my aim is for a guard to run.*
 
 ::: details Show answer
-`zalazun veyamul thovam blarl zagayul veruvol.`
+`zalazun vozumul thovam blarl zagayul veruvol.`
 
 z-Alazun | v-scream | [th-so-that | bl-that-clause] | z-guard | v-run
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `zalazun vehohel thezem blarl zagayul veyamul.`
+**1.** `zalazun vehohel thezem blarl zagayul vozumul.`
 
 ::: details Show answer
 z-Alazun | v-sit | [th-although | bl-that-clause] | z-guard | v-scream
@@ -285,7 +285,7 @@ z-Ahelan | v-tell | b-guard | d-that-clause | [z-Azozon | g-angry] | v-sit
 *Ahelan tells the guard that an angry Azozon sits.*
 :::
 
-**5.** `zagayul veruvol wadurom halam blarl zalazun veyamul.`
+**5.** `zagayul veruvol wadurom halam blarl zalazun vozumul.`
 
 ::: details Show answer
 z-guard | v-run | [[w-haste | h-after] | bl-that-clause] | z-Alazun | v-scream

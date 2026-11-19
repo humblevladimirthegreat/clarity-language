@@ -142,9 +142,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *monkey* | `amozal` | 🐒 |
-| *penguin* | `awozal` | 🐧 |
-| *giraffe* | `ohezol` | 🦒 |
-| *banana* | `anedol` | 🍌 |
+| *penguin* | `obozal` | 🐧 |
+| *giraffe* | `ehazol` | 🦒 |
+| *banana* | `obedol` | 🍌 |
 
 **Review:**
 
@@ -161,7 +161,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *The monkey eats a banana against the rules.*
 
 ::: details Show answer
-`zamozal danedol vagedal uom hwuvul.`
+`zamozal dobedol vagedal uom hwuvul.`
 
 z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
 :::
@@ -169,7 +169,7 @@ z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
 **2.** *The penguin sleeps, contrary to my plan.*
 
 ::: details Show answer
-`zawozal vezuvel uom thagom.`
+`zobozal vezuvel uom thagom.`
 
 z-penguin | v-sleep | [contrary-to | th-plan-itinerary]
 :::
@@ -177,7 +177,7 @@ z-penguin | v-sleep | [contrary-to | th-plan-itinerary]
 **3.** *The giraffe walks, contrary to what I was told.*
 
 ::: details Show answer
-`zohezol vowurol uom thebam.`
+`zehazol vowurol uom thebam.`
 
 z-giraffe | v-walk | [contrary-to | th-REPORTED]
 :::
@@ -192,7 +192,7 @@ z-monkey | v-eat | [contrary-to | th-CLUES-Ahelan | th-plan-itinerary]
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zawozal vowurol uom thubom.`
+**1.** `zobozal vowurol uom thubom.`
 
 ::: details Show answer
 z-penguin | v-walk | [contrary-to | th-PATTERN]
@@ -200,7 +200,7 @@ z-penguin | v-walk | [contrary-to | th-PATTERN]
 *The penguin walks, contrary to habit.*
 :::
 
-**2.** `zamozal danedol vagedal uom thebamahelan.`
+**2.** `zamozal dobedol vagedal uom thebamahelan.`
 
 ::: details Show answer
 z-monkey | d-banana | v-eat | [contrary-to | th-REPORTED-Ahelan]
@@ -208,7 +208,7 @@ z-monkey | d-banana | v-eat | [contrary-to | th-REPORTED-Ahelan]
 *The monkey eats a banana, contrary to what I hear Ahelan thinks.*
 :::
 
-**3.** `zawozal danedol vagedal uom thabem.`
+**3.** `zobozal dobedol vagedal uom thabem.`
 
 ::: details Show answer
 z-penguin | d-banana | v-eat | [contrary-to | th-INTUITION]
@@ -218,10 +218,10 @@ z-penguin | d-banana | v-eat | [contrary-to | th-INTUITION]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *The penguin sleeps, contrary to my plan.* `zawozal vezuvel uom thagom.` or `zawozal vezuvel thagom.`
+**1.** *The penguin sleeps, contrary to my plan.* `zobozal vezuvel uom thagom.` or `zobozal vezuvel thagom.`
 
 ::: details Show answer
-`zawozal vezuvel uom thagom.`
+`zobozal vezuvel uom thagom.`
 
 z-penguin | v-sleep | [contrary-to | th-plan-itinerary]
 
@@ -230,10 +230,10 @@ Without **`uom`**, `thagom` is your stance on the claim: *I plan for the penguin
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *The monkey eats a banana against the rules.* <!-- lint: error -->`zamozal danedol vagedal uom hwuvam.`
+**1.** *The monkey eats a banana against the rules.* <!-- lint: error -->`zamozal dobedol vagedal uom hwuvam.`
 
 ::: details Show answer
-`zamozal danedol vagedal uom hwuvul.`
+`zamozal dobedol vagedal uom hwuvul.`
 
 z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
 

@@ -81,7 +81,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *pressure* | `ayewam` | 🗜️ from *clamp* |
+| *pressure* | `egewam` | 🗜️ from *clamp* |
 | *iff* | `thehom` | ↔️ from *east-west*: each side only with the other |
 
 **Review:**
@@ -99,7 +99,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *bell* | `eboral` |
 | *departure* | `vudurul` |
 | *sit* | `vehohel` |
-| *pour* | `vowuvul` |
+| *pour* | `vobuvul` |
 | *tell* | `vezuyol` |
 | *run* | `veruvol` |
 | *see* | `vayebel` |
@@ -117,7 +117,7 @@ z-Azozon | v-run | [th-if | bl-that-clause] | z-Alazun | v-tell
 **2.** *There is pressure because of the rain.*
 
 ::: details Show answer
-`zayewam gahum blerulal.`
+`zegewam gahum blerulal.`
 
 z-pressure | [g-because | bl-rain]
 :::
@@ -133,14 +133,14 @@ z-Ahelan | v-sit | th-only-if | [th-because | bl-rain]
 **4.** *Azozon pours unless Alazun sits.*
 
 ::: details Show answer
-`zazozon vowuvul thohem blurl zalazun vehohel.`
+`zazozon vobuvul thohem blurl zalazun vehohel.`
 
 z-Azozon | v-pour | [th-if | bl-lest-clause] | z-Alazun | v-sit
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zazozon vehohel thehom blarl zalazun vowuvul.`
+**1.** `zazozon vehohel thehom blarl zalazun vobuvul.`
 
 ::: details Show answer
 z-Azozon | v-sit | [th-iff | bl-that-clause] | z-Alazun | v-pour

@@ -81,7 +81,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 
 Claritish adds to an English word in two places: [label reach](/label-seams#reach-vowels), English word + `-th` + reach vowel (`lied-tha`), and [ability](/can-and-cant#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Ageben spells them. Neither suffix takes an ending, because its vowel carries the meaning.
 
-The hyphen belongs to Claritish only. Ageben writes these mid-word on an Ageben root with no hyphen (`vulamuthul`, `vozuyexal`; the ending is the one the Ageben word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
+The hyphen belongs to Claritish only. Ageben writes these mid-word on an Ageben root with no hyphen (`venumuthul`, `vozuyexal`; the ending is the one the Ageben word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
 
 **Marking:** a hyphenated English host (`lied-tha`) is an English span, so the build does not parse it. Table rows for a suffix use `-tha` or `-xa`, not `…-tha` (a template that does not parse). A tone mark attaches to the English word it colors and is written bare (`%You're the worst.`), not as a backtick span.
 

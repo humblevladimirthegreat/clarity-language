@@ -13,7 +13,7 @@ You have already met the one-vowel extra-noun hooks (*in* / *for* / *at* / *from
 
 A hook + `/b/` right after a landmark (the `/b/` of another extra) describes that landmark, not the clause: *the house near me*.
 
-> `zazozon vowurol al bohehal em buwen.`
+> `zazozon vowurol al bamahal em buwen.`
 >
 > z-Azozon | v-walk | [in | [b-house | [near | b-speaker]]]
 >
@@ -43,7 +43,7 @@ With an extra-noun hook, `-m` makes a **zone extra**: the landmark is only the g
 >
 > "Azozon sits on a chair."
 
-> `zazozon danal aol bebewol varuyol.`
+> `zazozon danal aol babewol varuyol.`
 >
 > z-Azozon | d-book | [using | b-pen] | v-write
 >

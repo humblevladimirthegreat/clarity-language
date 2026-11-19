@@ -23,7 +23,7 @@ English ranks a thing against many kinds of expectation: *than I remember*, *tha
 | a requirement `hwuvol` / `hwuvom` / `hwuvor` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
 | a permission `hwuval` / `hwuvam` / `hwuvar` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
 | consent `hwudam` | the agreed terms | *more than agreed* |
-| speaker attitude (`thuwuyom`, `thewemum`) | the case you hoped for or feared | *than hoped* / *than feared* |
+| speaker attitude (`theguyom`, `thewemum`) | the case you hoped for or feared | *than hoped* / *than feared* |
 
 The bar's ending keeps its own job: on a channel it is [evidence strength](/evidentiality#evidence-strength) (`thubol` *than it reliably is*, `thubor` *than the few cases so far*).
 
@@ -115,7 +115,7 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 
 **Rules and permission.** A requirement as the bar is the demand; a tie meets it. A permission is the limit; rank `zol` goes over it.
 
-> `zohehal hwuvol zoel gabobem.`
+> `zamahal hwuvol zoel gabobem.`
 >
 > [z-house | h-episode-event-REQUIRE-rule | z-equal-rank | g-strength]
 >
@@ -129,7 +129,7 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 
 **Hopes and fears.** A speaker-attitude word as the bar is the case you hoped for or feared.
 
-> `zanal thuwuyom zol gagebem.`
+> `zanal theguyom zol gagebem.`
 >
 > [z-book | th-hope | z-rank/more | g-clarity]
 >
@@ -163,7 +163,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *hope* | `thuwuyom` |
+| *hope* | `theguyom` |
 | *REPORTED* | `thebam` |
 | *PATTERN* | `thubom` |
 | *FORMER* | `helam` |
@@ -193,7 +193,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **3.** *Ahelan is more artistic than I hoped.*
 
 ::: details Show answer
-`zahelan thuwuyom zol gubewom.`
+`zahelan theguyom zol gubewom.`
 
 [z-Ahelan | th-hope | z-rank/more | g-artistry]
 :::
@@ -216,7 +216,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *Azozon is as showy as the rules require.*
 :::
 
-**2.** `zazozon thuwuyom zuol gozuyel.`
+**2.** `zazozon theguyom zuol gozuyel.`
 
 ::: details Show answer
 [z-Azozon | th-hope | z-rank/less | g-sing]
@@ -242,10 +242,10 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Ahelan is more agile than I hoped.* `zahelan zol gevunom thuwuyom.` or `zahelan thuwuyom zol gevunom.`
+**1.** *Ahelan is more agile than I hoped.* `zahelan zol gevunom theguyom.` or `zahelan theguyom zol gevunom.`
 
 ::: details Show answer
-`zahelan thuwuyom zol gevunom.`
+`zahelan theguyom zol gevunom.`
 
 [z-Ahelan | th-hope | z-rank/more | g-agility]
 

@@ -43,7 +43,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *wait* | `vabahom` |
-| *pour* | `vowuvul` |
+| *pour* | `vobuvul` |
 | *water* | `owulal` |
 | *find* | `vumewel` |
 | *soap* | `ozebul` |
@@ -58,7 +58,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Azozon waits if Alazun pours the water if Ahelan finds the soap.*
 
 ::: details Show answer
-`zazozon vabahom thohem blarl zalazun dowulal vowuvul thohem blarl zahelan dozebul vumewel.`
+`zazozon vabahom thohem blarl zalazun dowulal vobuvul thohem blarl zahelan dozebul vumewel.`
 
 z-Azozon | v-wait | [th-if | bl-that-clause] | z-Alazun | d-water | v-pour | [th-if | bl-that-clause] | z-Ahelan | d-soap | v-find
 :::
@@ -66,7 +66,7 @@ z-Azozon | v-wait | [th-if | bl-that-clause] | z-Alazun | d-water | v-pour | [th
 **2.** *Ahelan pours the water because Alazun finds the soap because Azozon lifts the basket.*
 
 ::: details Show answer
-`zahelan dowulal vowuvul thahum blarl zalazun dozebul vumewel thahum blarl zazozon dabowal velunel.`
+`zahelan dowulal vobuvul thahum blarl zalazun dozebul vumewel thahum blarl zazozon dabowal velunel.`
 
 z-Ahelan | d-water | v-pour | [th-because | bl-that-clause] | z-Alazun | d-soap | v-find | [th-because | bl-that-clause] | z-Azozon | d-basket | v-lift
 :::
@@ -89,7 +89,7 @@ z-Ahelan | d-coat | v-see | [th-because | bl-that-clause] | z-Azozon | d-basket 
 *Ahelan sees the coat because Azozon lifts the basket because Alazun finds the socks.* (Alazun's find is why Azozon lifts the basket.)
 :::
 
-**2.** `zazozon vehohel thahum blarl zalazun vabahom thahum blarl zahelan dowulal vowuvul.`
+**2.** `zazozon vehohel thahum blarl zalazun vabahom thahum blarl zahelan dowulal vobuvul.`
 
 ::: details Show answer
 z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-wait | [th-because | bl-that-clause] | z-Ahelan | d-water | v-pour

@@ -8,7 +8,7 @@ A hook can join a dictionary word in two ways. A hook compound fuses an extra-no
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
-English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Ageben makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowurol ul bawahol` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
+English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Ageben makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowurol ul bezahol` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
 
 Keep the left word’s own `-l` or `-m`, then write the hook, with no mid-word `x`. The dictionary form is the citation (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
@@ -21,7 +21,7 @@ owurol + ul → owurolul
 
 In a clause, add a role letter to that citation (`vowurolul`). The extra participant is an ordinary object (`/d/`), not `/b/` (that would still be a recipient after a verb).
 
-> `zazozon dawahol vowurolul.`
+> `zazozon dezahol vowurolul.`
 >
 > z-Azozon | d-station | v-leave
 >
@@ -64,7 +64,7 @@ An abstract object keeps the hook's picture, as on the [free hook](/abstract-lan
 
 Other roots fuse the same way: `vezuyoluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`owurolul`, not `vowurolul`).
 
-**Compare with:** `vowurol ul bawahol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [dictionary compound](/compounds#dictionary-compounds) like *doorbell* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+**Compare with:** `vowurol ul bezahol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [dictionary compound](/compounds#dictionary-compounds) like *doorbell* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Hook prefixes (hook + `x` + stem) {#hook-prefixes}
 
@@ -92,14 +92,14 @@ Plain `x` spells the hook's `-l` reading. An `m` right before the `x` picks the 
 
 | Hook | Prefix | Concrete stem | Abstract stem |
 |------|--------|---------------|---------------|
-| `al` *in* | **`…ax…`** | `gaxohehal` *indoor* | `gaxabowum` *mid-crisis* |
+| `al` *in* | **`…ax…`** | `gaxamahal` *indoor* | `gaxabowum` *mid-crisis* |
 | `ael` *on* | **`…aox…`** | `gaexohalal` *seagoing* | `gaexonam` *on-policy* |
-| `el` *at* | **`…ox…`** | `gexohehal` *at the house* | `gexobevam` *at issue* |
-| `oel` *toward* | **`…oex…`** | `goexohehal` *houseward* | `goexuzebum` *habit-forming* |
-| `ul` *from* | **`…ux…`** | `guxohehal` *from the house* | `guxuzobam` *heritage-derived* |
+| `el` *at* | **`…ox…`** | `gexamahal` *at the house* | `gexobevam` *at issue* |
+| `oel` *toward* | **`…oex…`** | `goexamahal` *houseward* | `goexuzebum` *habit-forming* |
+| `ul` *from* | **`…ux…`** | `guxamahal` *from the house* | `guxuzobam` *heritage-derived* |
 | `ual` *out of* | **`…uax…`** | `guaxowulal` *out of the water* | `guaxaram` *debt-free* |
 | `uel` *through* | **`…uox…`** | `guexohalal` *transoceanic* | `guexabowum` *crisis-spanning* |
-| `ol` *for* | **`…ex…`** | `goxohehal` *household* | `goxonam` *pro-policy* |
+| `ol` *for* | **`…ex…`** | `goxamahal` *household* | `goxonam` *pro-policy* |
 | `aol` *using* | **`…aex…`** | `gaoxowulal` *water-powered* | `gaoxogarem` *tradition-based* |
 | `uol` *against* | **`…uex…`** | `guoxohalal` *sea-facing* (a seawall) | `guoxonam` *anti-policy* |
 
@@ -107,16 +107,16 @@ Plain `x` spells the hook's `-l` reading. An `m` right before the `x` picks the 
 |------|--------|---------------|---------------|
 | `am` *amid* | **`…amx…`** | `gamxohalal` *mid-ocean* | `gamxabowum` *crisis-era* |
 | `aem` *over* | **`…aomx…`** | `gaemxohalal` *over the ocean* (a flight) | `gaemxonam` *policy-covered* |
-| `em` *near* | **`…omx…`** | `gemxohehal` *near the house* | `gemxobevam` *problem-adjacent* |
-| `oem` *in the direction of* | **`…oemx…`** | `goemxohehal` *facing the house* | `goemxuzebum` *habit-leaning* |
-| `um` *away from* | **`…umx…`** | `gumxohehal` *away from the house* | `gumxuzebum` *habit-shedding* |
+| `em` *near* | **`…omx…`** | `gemxamahal` *near the house* | `gemxobevam` *problem-adjacent* |
+| `oem` *in the direction of* | **`…oemx…`** | `goemxamahal` *facing the house* | `goemxuzebum` *habit-leaning* |
+| `um` *away from* | **`…umx…`** | `gumxamahal` *away from the house* | `gumxuzebum` *habit-shedding* |
 | `uam` *out from among* | **`…uamx…`** | `guamxegayal` *picked from the group* | `guamxegayam` *community-drawn* |
 | `uem` *by way of* | **`…uomx…`** | `guemxohol` *bridge-routed* | `guemxawulom` *influence-routed* |
 | `om` *used by* | **`…emx…`** | `gomxegayal` *group-owned* | `gomxegayam` *community-held* |
 | `aom` *by* | **`…aemx…`** | `gaomxorahol` *road-borne* | `gaomxonam` *policy-channeled* |
 | `uom` *contrary to* | **`…uemx…`** | `guomxawulol` *headwind* | `guomxonam` *off-policy* |
 
-A pair differs the way the free hooks do: `gexohehal` *at the house* is there, and `gemxohehal` *near the house* is only close to it.
+A pair differs the way the free hooks do: `gexamahal` *at the house* is there, and `gemxamahal` *near the house* is only close to it.
 
 The role letter gives the word's role, as on any content word:
 
@@ -124,7 +124,7 @@ The role letter gives the word's role, as on any content word:
 |-------------|----------------|---------|---------|
 | `/ɡ/` | a property: in that relation to the stem | `goxogobem` | *body-positive* |
 | `/z/` `/d/` `/b/` | someone or something in that relation | `zuoxuvuvul` | *an opponent of fighting* |
-| `/h/` | how the clause stands to the stem | `hoexohehal` | *houseward* (of the movement) |
+| `/h/` | how the clause stands to the stem | `hoexamahal` | *houseward* (of the movement) |
 
 > `zuoxuvuvul vowurol.`
 >
@@ -132,13 +132,13 @@ The role letter gives the word's role, as on any content word:
 >
 > "An opponent of fighting walks."
 
-> `zazozon vowurol hoexohehal.`
+> `zazozon vowurol hoexamahal.`
 >
 > z-Azozon | v-walk | h-toward-x-house
 >
 > "Azozon walks houseward."
 
-The stem may be an ordinary compound (`guoxohehaxowurol` *against walking in houses*) or a [hook compound](#hook-compounds) citation:
+The stem may be an ordinary compound (`guoxamahaxowurol` *against walking in houses*) or a [hook compound](#hook-compounds) citation:
 
 > `zalazun guoxowurolul.`
 >
@@ -185,7 +185,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *walk* | `vowurol` |
-| *boat* | `onaval` |
+| *boat* | `ubaval` |
 | *guard* | `agayul` |
 | *fog* | `ovulul` |
 | *ocean* | `ohalal` |
@@ -195,7 +195,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 **1.** *Azozon leaves a boat.*
 
 ::: details Show answer
-`zazozon donaval vowurolul.`
+`zazozon dubaval vowurolul.`
 
 z-Azozon | d-boat | v-leave
 :::

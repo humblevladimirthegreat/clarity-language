@@ -140,28 +140,28 @@ One English word, one row: the form that says it and the section that teaches it
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aem`** + `/b/`; plain height (*above the table*) is gravity **`habuhol`** | [Hooks](/extra-noun-hooks#extra-noun-intermediate), [Gravity](/viewpoint#gravity) |
 | *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`hoduhol`** (on a noun, **`goduhol`**) + `/b/` | [Gravity](/viewpoint#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`habuhol`** (on a noun, **`gabuhol`**) + `/b/` | [Gravity](/viewpoint#gravity) |
-| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with `th` + `o` + `/b/` landmark, such as `gazuhothel blohehal` | [Landmark's own front](/viewpoint#landmark-facing) |
+| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with `th` + `o` + `/b/` landmark, such as `gazuhothel blamahal` | [Landmark's own front](/viewpoint#landmark-facing) |
 | *with* / *alongside* / *along with* (*runs with Alazun*) | **`han`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](/join-relations#join-relations) |
 | *via* / *by way of* / *through* (*goes via the station*) | hook **`uel`** + `/b/` (**`uem`** for a setting) | [Hooks](/hooks#extra-noun) |
 | *along* / *alongside* a line (*walks along the road*, *houses along the river*) | **`herahom`** (on a noun, **`gerahom`**) + the landmark: `herahom blorahol` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
-| *past* (*walks past the house*) | **`hegalom`** (on a noun, **`gegalom`**) + the landmark: `hegalom blohehal` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
+| *past* (*walks past the house*) | **`hegalom`** (on a noun, **`gegalom`**) + the landmark: `hegalom blamahal` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
 | *opposite* / *facing* / *across from* (*sits opposite Alazun*, *across the water from Alazun*) | **`havunam`** + the landmark; name the gap with **`hohom`**: `havunam blalazun hohom blowulal` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
 | *up the hill* / *down the hill* / *uphill* / *downhill* | **`herahom`** + the hill, then bare **`habuhol`** / **`hoduhol`**: `herahom blamahul habuhol` | [Viewpoint vs landmark](/viewpoint#viewpoint-vs-landmark) |
 | *through there* | resume hook **`uer`** | [Point back](/in-clause-hooks#hook-resume) |
 | *with it* (the same tool) | resume hook **`aor`** | [Point back](/in-clause-hooks#hook-resume) |
 | *off* / *away from* / *out of* (*walks off the road*) | hook **`ul`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *off* (switched off, disconnected) | `govugul` (*disconnection*, as an adjective) | [Adjectives](/clause#adjectives-ɡ) |
-| *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bohehal bul` | [Hooks](/hooks#extra-noun), [negation](/joins#negation-u) |
-| *throughout* / *all over* (*walks throughout the house*) | **`el bual`** *everywhere*, then the landmark's hook: `el bual al bohehal` | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
+| *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bamahal bul` | [Hooks](/hooks#extra-noun), [negation](/joins#negation-u) |
+| *throughout* / *all over* (*walks throughout the house*) | **`el bual`** *everywhere*, then the landmark's hook: `el bual al bamahal` | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
 | *abroad* (*in another country*) | **`el bahal bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
 | *overseas* (*across the water*) | **`ohom`** *across* + the water: `hohom blohalal` | [Locative relations](/locative-relations#locative-relations) |
-| *bottom* (the low part of a thing) | `zoduhol gobom blohehal` (a down part of the house) | [Of relations](/of-relations#of-relations) |
+| *bottom* (the low part of a thing) | `zoduhol gobom blamahal` (a down part of the house) | [Of relations](/of-relations#of-relations) |
 | *parallel* (*parallel to Alazun*) | the direction, then *like*: `gurom gewem blalazun` | [Likeness](/relations#likeness) |
 | *lean* / *tilt* | `voduhol hruwul` (*almost falls*) | [Already, still, not yet](/already-still-yet#stage-of-change) |
 | *corner* / *around the corner* | `zadugul` (the corner); `el badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](/locative-relations#locative-relations) |
-| *beyond* / *on the far side of* / *the other side of* (*sits beyond the station*) | **`huzurum`** (on a noun, **`guzurum`**) + the landmark: `huzurum blawahol` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
-| *farther than* | rank on distance: `zohehal zol guzavom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
+| *beyond* / *on the far side of* / *the other side of* (*sits beyond the station*) | **`huzurum`** (on a noun, **`guzurum`**) + the landmark: `huzurum blezahol` | [Past, along, opposite, beyond](/locative-relations#path-and-far-side) |
+| *farther than* | rank on distance: `zamahal zol guzavom` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Azozon versus Alazun*) | hook **`uol`** + `/b/` | [Hooks](/hooks#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`el bar`** / **`el bal`** / **`el bual`** / **`el bur`** | [Somewhere, nowhere, everywhere](/here-there#place-indefinites) |
 | *anywhere* (any place will do) / *not … anywhere* | **`el ber`** (*at any one*); with a denial, **`el bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](/here-there#place-indefinites), [unspecified member](/joins#unspecified-member-r-phrase) |
@@ -233,11 +233,11 @@ English adds *and maybe more* after whatever might not be complete. Ageben says 
 | *someone, I don't know who* | **`zar`**, then `zuwen vanam vul derl zar.` | [Unspecified member](/joins#unspecified-member-r-phrase), [dependent clauses](/dependents#dependent-clauses) |
 | *you know the one* / *that person* (we both know) | `-r` with nothing earlier: `zeyer` | [Resume](/pronouns#resume-r) |
 | *everyone here* | **`zual geyel`**; near me, **`zemxual bluwen`** | [Universals](/universals-domains#universals-domains-generics), [hooked joins](/hooked-joins#hooked-joins-hooks) |
-| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zexual blohehal`** / **`zexar blovahal`** | [Hook plus a join](/hooked-joins#hooked-joins) |
+| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zexual blamahal`** / **`zexar blovahal`** | [Hook plus a join](/hooked-joins#hooked-joins) |
 | *anything for me?* / *something for me* | **`yel doxar bluwen.`** / **`doxar bluwen`** | [Hook plus a join](/hooked-joins#hooked-joins-endings) |
 | *everyone there* (the place just named) | **`zerxual`** | [Point back](/hooked-joins#hooked-joins-point-back) |
 | *everyone we know* / *nobody we know* | **`zual gwedanam blayan`** / **`zal gwedanam blayan`** | [Every and none, by set](/universals-domains#kind-domains) |
-| *everyone in the family* / *everyone from the town* | **`zual gobom bluvayal`** / **`zual gaham bluhuham`** | [Of relations](/of-relations#of-relations) |
+| *everyone in the family* / *everyone from the town* | **`zual gobom bluvayal`** / **`zual gaham blalaham`** | [Of relations](/of-relations#of-relations) |
 | *people in general* | **`zuam geyel`**, or **`eyen`** | [People in general](/universals-domains#generic-neighbors) |
 | *according to someone* (a source you won't name / don't know) | **`thebam bleyel blar`**, then `zuwen vanam derl zar.` / `zuwen vanam vul derl zar.` | [Source](/evidentiality#source) |
 | *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](/holder#what-the-holder-covers) |
@@ -271,7 +271,7 @@ The ending picks the sense: `-l` is the everyday thing, `-m` is the abstract qua
 | *structural* | `gobom` (a piece of the structure; add the whole in `/b/`) | [Of relations](/of-relations#of-relations) |
 | *native* (*native to the country*) | `gaham` + `/b/` for the place: `zeyel gaham blahal` | [Of relations](/of-relations#of-relations) |
 
-> `zazozon dohehal gugulol vayebel.`
+> `zazozon damahal gugulol vayebel.`
 >
 > z-Azozon | [d-house | g-gold] | v-see
 >
@@ -287,11 +287,11 @@ English builds many words from a relation and a noun: *anti-war*, *indoor*, *tra
 | *an opponent of* / *a supporter of* (*an anti-war person*) | the hook prefix on `/z/`: `zuoxuvuvul`; *pro-* is **`…ex…`** | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *pro-* (*pro-policy*) | hook prefix **`…ex…`**: `goxonam` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *contra-* / *counter-* / *off-* (*off-policy*, *headwind*) | hook prefix **`…uemx…`**: `guomxonam`, `guomxawulol` | [Hook prefixes](/hook-compounds#hook-prefixes) |
-| *in-* / *intra-* / *indoor* (*indoor*, *mid-crisis*) | hook prefix **`…ax…`**: `gaxohehal`, `gaxabowum` | [Hook prefixes](/hook-compounds#hook-prefixes) |
+| *in-* / *intra-* / *indoor* (*indoor*, *mid-crisis*) | hook prefix **`…ax…`**: `gaxamahal`, `gaxabowum` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *inter-* / *mid-* / *amid* (*mid-ocean*, *crisis-era*) | hook prefix **`…amx…`**: `gamxohalal`, `gamxabowum` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *para-* / *near-* / *-adjacent* (*problem-adjacent*) | hook prefix **`…omx…`**: `gemxobevam` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *trans-* / *cross-* / *-spanning* (*transoceanic*) | hook prefix **`…uox…`**: `guexohalal`, `guexabowum` | [Hook prefixes](/hook-compounds#hook-prefixes) |
-| *-ward* / *-bound* (*houseward*) | hook prefix **`…oex…`**: `goexohehal`; for the movement, on `/h/`: `hoexohehal` | [Hook prefixes](/hook-compounds#hook-prefixes) |
+| *-ward* / *-bound* (*houseward*) | hook prefix **`…oex…`**: `goexamahal`; for the movement, on `/h/`: `hoexamahal` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *-powered* / *-based* / *-driven* (*water-powered*, *tradition-based*) | hook prefix **`…aex…`**: `gaoxowulal`, `gaoxogarem` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *-free* / *out of* in one word (*debt-free*) | hook prefix **`…uax…`**: `guaxaram` | [Hook prefixes](/hook-compounds#hook-prefixes) |
 | *-derived* / *-sourced* (*heritage-derived*) | hook prefix **`…ux…`**: `guxuzobam` | [Hook prefixes](/hook-compounds#hook-prefixes) |
@@ -308,11 +308,11 @@ English names many kinds with a number idea in front: *quasi-friend*, *proto-lov
 | *proto-* / *in its beginning form* | numeric prefix **`rowux…`**: `zrowuxolamal` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
 | *multi-* / *poly-* (*multi-faith*) | numeric prefix **`rax…`**: `zraxehaham` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
 | *de-* / *un-* on a kind (*to de-tale*) | numeric prefix **`rux…`**: `vruxonom` | [A kind at its limit](/numeric-derivation#limit-polarity-stage) |
-| *uni-* / *bi-* / *tri-* / *three-part* / *mutual* | numeric prefix **`rabax…`** / **`radox…`** / **`ragex…`**: `zrabaxadowem`, `gradoxebewom`, `zragexezuyol` | [How many parts the kind has](/numeric-derivation#scalar-digit-morphs) |
-| *one-sided* / *non-mutual* | numeric prefix **`rudox…`**: `grudoxebewom` | [How many parts the kind has](/numeric-derivation#scalar-digit-morphs) |
+| *uni-* / *bi-* / *tri-* / *three-part* / *mutual* | numeric prefix **`rabax…`** / **`radox…`** / **`ragex…`**: `zrabaxadowem`, `gradoxabewom`, `zragexezuyol` | [How many parts the kind has](/numeric-derivation#scalar-digit-morphs) |
+| *one-sided* / *non-mutual* | numeric prefix **`rudox…`**: `grudoxabewom` | [How many parts the kind has](/numeric-derivation#scalar-digit-morphs) |
 | *first-class* / *secondary* / *third-order* | numeric prefix **`robax…`** / **`rodox…`** / **`rogex…`**: `drobaxobewom`, `grodoxumunom`, `zrogexobevam` | [Which rank the kind holds](/numeric-derivation#ordinal-digit-morphs) |
 | *null* / *to zero out* a kind (*null the score*) | numeric prefix **`ramox…`**: `vramoxodoram` | [Wiped clean or left over](/numeric-derivation#null-anti-null) |
-| *specimen #1*, *room-12* as a kind | numeric prefix **`rebax…`** / **`rebadox…`**: `zrebaxudewal`, `zrebadoxohehal` | [Label / code sense](/numeric-derivation#label-code-sense) |
+| *specimen #1*, *room-12* as a kind | numeric prefix **`rebax…`** / **`rebadox…`**: `zrebaxubewal`, `zrebadoxamahal` | [Label / code sense](/numeric-derivation#label-code-sense) |
 | *mega-* / *a gazillion-* (*a gazillion-mess*) | numeric prefix **`rabawax…`**: `zrabawaxazulam` | [Hyperbole](/numeric-derivation#hyperbole-sense) |
 | *roughly three-part* | `mx` for the seam: `dragemxezuyol` | [Numeric prefixes](/numeric-derivation#numeric-derivation) |
 
@@ -328,22 +328,22 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *a teacher*, *a fighter*, *a dog walker* (a practiced role or job) | the role compound with reach `o`: `zwozeduyol` | [One time or a practice](/roles#one-time-or-a-practice) |
 | *the one teaching* (this event) | the role compound on `-r`: `zwuzeduyor` | [This instance](/roles#this-instance-r) |
 | *often says untrue things*, *usually walks* | a [restrictor](/restrictors): `huam`, `war` | [Always](/restrictors#always-hual) |
-| *this time*, *this once* (angry this time, said something untrue this once) | **`thu`** on the root: `gonumuthul`, `vulamuthul` | [This episode](/label-seams#reach-occasion) |
-| *as their craft*, *as a practice* | **`tho`** on the root: `vulamuthol` | [Practiced role](/label-seams#reach-occupation) |
+| *this time*, *this once* (angry this time, said something untrue this once) | **`thu`** on the root: `gonumuthul`, `venumuthul` | [This episode](/label-seams#reach-occasion) |
+| *as their craft*, *as a practice* | **`tho`** on the root: `venumuthol` | [Practiced role](/label-seams#reach-occupation) |
 | *in dealings with*, *a stranger to Alazun* | **`the`** plus `/b/`: `gulayethem blalazun` | [This pair](/label-seams#reach-relative) |
-| *lie*, *liar*, *deceive*, *ignore*, *mock*, *exploit*, *crime*, *criminal*, *abuse*, *villain*, *aggressive*, *scheme*, *plot* | the act root; what they knew or meant through a holder; a verdict as fault, a say word, or label reach: `vulamul` | [Lie, ignore, mock, exploit, crime](say-reasons.md#accusation-words) |
-| *type*, *kind of person* (a type who says untrue things, an anxious type) | **`tha`** on the root: `zazozon vulamuthal` | [Type across scenes](/label-seams#reach-type) |
-| *said something untrue to Alazun, this once* | **`thu`** on the verb, recipient as usual: `vulamuthul balazun` | [This episode](/label-seams#reach-occasion) |
+| *lie*, *liar*, *deceive*, *ignore*, *mock*, *exploit*, *crime*, *criminal*, *abuse*, *villain*, *aggressive*, *scheme*, *plot* | the act root; what they knew or meant through a holder; a verdict as fault, a say word, or label reach: `venumul` | [Lie, ignore, mock, exploit, crime](say-reasons.md#accusation-words) |
+| *type*, *kind of person* (a type who says untrue things, an anxious type) | **`tha`** on the root: `zazozon venumuthal` | [Type across scenes](/label-seams#reach-type) |
+| *said something untrue to Alazun, this once* | **`thu`** on the verb, recipient as usual: `venumuthul balazun` | [This episode](/label-seams#reach-occasion) |
 | *it's the situation*, *it was the situation*, *by circumstance* | **`thae`**: `gonumuthael`, `gwaezeduyol` | [Stacked reach](/label-seams#reach-stacks) |
 | *becoming a teacher* | reach `oe`: `gwoezeduyol` | [Reach across scenes](/role-parts#reach) |
-| *becoming* (becoming one who misstates) | **`thoe`** on the root: `vulamuthoel` | [Stacked reach](/label-seams#reach-stacks) |
+| *becoming* (becoming one who misstates) | **`thoe`** on the root: `venumuthoel` | [Stacked reach](/label-seams#reach-stacks) |
 | *as a teacher, I …* | role compound on `/h/`: `hwozeduyol` | [Acting as](/role-parts#acting-as) |
 | *not as a teacher* (off duty) | reach `uo` on `/h/`: `hwuozeduyol` | [Acting as](/role-parts#acting-as) |
 | *not as a teacher* (the label) | reach `uo`: `gwuozeduyol` | [Reach across scenes](/role-parts#reach) |
 | *playing the teacher* (for a purpose) | reach `ao`: `gwaozeduyol` | [Reach across scenes](/role-parts#reach) |
-| *as a tool*, *for a purpose* (using misstatement as a tool) | **`thao`** on the root: `vulamuthaol` | [Stacked reach](/label-seams#reach-stacks) |
+| *as a tool*, *for a purpose* (using misstatement as a tool) | **`thao`** on the root: `venumuthaol` | [Stacked reach](/label-seams#reach-stacks) |
 | *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyothuol` | [Stacked reach](/label-seams#reach-stacks) |
-| *except this time*, *except this once* | **`thua`**: `vulamuthual` | [Stacked reach](/label-seams#reach-stacks) |
+| *except this time*, *except this once* | **`thua`**: `venumuthual` | [Stacked reach](/label-seams#reach-stacks) |
 | *except with* (angry as a type, except with Alazun) | **`thue`** plus `/b/`: `gonumuthuel blalazun` | [Stacked reach](/label-seams#reach-stacks) |
 | *seen*, *the one seen* | the undergoer `d`: `zwudayebel`, `zwudayeber` | [The undergoer](/roles#the-undergoer-d) |
 | *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zodozel gwudayebexal` | [Can be](/can-and-cant#role-ability) |

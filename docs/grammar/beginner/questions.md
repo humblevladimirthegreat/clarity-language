@@ -272,7 +272,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *coat* | `ogobal` | 🧥 |
 | *key* | `egewol` | 🔑 |
 | *write* | `varuyol` | ✍️ |
-| *misstate* | `vulamul` | 🤥 |
+| *misstate* | `venumul` | 🤥 |
 
 **Review:**
 
@@ -311,7 +311,7 @@ y-question | ?z-wh | d-umbrella | v-see
 **3.** *Is Alazun saying something untrue, I wonder?*
 
 ::: details Show answer
-`yem zalazun vulamul.`
+`yem zalazun venumul.`
 
 y-soft-question | z-Alazun | v-misstate
 :::

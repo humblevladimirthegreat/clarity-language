@@ -53,7 +53,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *rain* | `erulal` |
 | *departure* | `vudurul` |
 | *sit* | `vehohel` |
-| *pour* | `vowuvul` |
+| *pour* | `vobuvul` |
 | *tell* | `vezuyol` |
 | *run* | `veruvol` |
 
@@ -62,7 +62,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Alazun ran because Azozon poured, and Azozon was wrong to.*
 
 ::: details Show answer
-`zalazun veruvol thahul blarl zazozon vowuvul.`
+`zalazun veruvol thahul blarl zazozon vobuvul.`
 
 z-Alazun | v-run | [th-because.fault | bl-that-clause] | z-Azozon | v-pour
 :::
@@ -101,7 +101,7 @@ z-Azozon | v-departure | [th-because.share | bl-rain]
 *The rain is part of why Azozon left.*
 :::
 
-**3.** `zazozon vehohel thahum blarl zalazun vowuvul.`
+**3.** `zazozon vehohel thahum blarl zalazun vobuvul.`
 
 ::: details Show answer
 z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
@@ -111,10 +111,10 @@ z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Azozon sits because Alazun pours.* (no one is to blame) `zazozon vehohel thahum blarl zalazun vowuvul.` or `zazozon vehohel thahul blarl zalazun vowuvul.`
+**1.** *Azozon sits because Alazun pours.* (no one is to blame) `zazozon vehohel thahum blarl zalazun vobuvul.` or `zazozon vehohel thahul blarl zalazun vobuvul.`
 
 ::: details Show answer
-`zazozon vehohel thahum blarl zalazun vowuvul.`
+`zazozon vehohel thahum blarl zalazun vobuvul.`
 
 z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
 

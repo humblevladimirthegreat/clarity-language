@@ -126,7 +126,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *wine* | `owudal` |
-| *beer* | `urudal` |
+| *beer* | `obudal` |
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
 
@@ -204,10 +204,10 @@ Route **`ao`** makes the first item the start; rank **`o`** would make it the mo
 The tie **`oe`** puts the two on a par; rank **`o`** would make the dress the whiter one.
 :::
 
-**3.** *Anything but beer.* (any other drink is fine) `zurudal zuel.` or `zurudal zul.`
+**3.** *Anything but beer.* (any other drink is fine) `zobudal zuel.` or `zobudal zul.`
 
 ::: details Show answer
-`zurudal zuel.`
+`zobudal zuel.`
 
 [z-beer | z-anything-but]
 

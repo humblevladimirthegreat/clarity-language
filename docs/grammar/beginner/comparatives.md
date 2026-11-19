@@ -72,7 +72,7 @@ When English would say *as challenging as*, you say two people have the quality 
 >
 > "Alazun is as sleepy as Ahelan."
 
-> `zazozon zalazun zoem gubalel.`
+> `zazozon zalazun zoem gobulel.`
 >
 > [z-Azozon | z-Alazun | z-equal-rank.open | g-bright]
 >

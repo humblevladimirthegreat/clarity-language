@@ -141,7 +141,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *bottle* | `awodal` | 🍼 |
+| *bottle* | `ubodal` | 🍼 |
 | *meter* | `ezerom` | 📐 from *set square* |
 | *hour* | `agorum` | ⏳ from *hourglass* |
 | *cost* | `uderem` | 💵 from *dollar* |
@@ -199,18 +199,18 @@ A change in points is a measure phrase on `oduru`, like *two hours*. **`yo`** (`
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zawodalx g+50%.`
+**1.** `zubodalx g+50%.`
 
 ::: details Show answer
 
-🔊 `zawodalx grazamoyol.`
+🔊 `zubodalx grazamoyol.`
 
 z-bottle-x | g-50yo
 
 *50% of the bottles.*
 :::
 
-**2.** `zawodalx gragel gruhul.`
+**2.** `zubodalx gragel gruhul.`
 
 ::: details Show answer
 
@@ -227,10 +227,10 @@ z-Azozon | v-walk | [b-hour | g-two.about]
 *Azozon walks for about two hours.*
 :::
 
-**4.** `zazozon dawodalx g+25% vayebel.`
+**4.** `zazozon dubodalx g+25% vayebel.`
 
 ::: details Show answer
-🔊 `zazozon dawodalx gradozayol vayebel.`
+🔊 `zazozon dubodalx gradozayol vayebel.`
 
 z-Azozon | [d-bottle-x | g-25yo] | v-see
 

@@ -66,7 +66,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *write* | `varuyol` |
 | *see* | `vayebel` |
 | *umbrella* | `omobul` |
-| *clipboard* | `egowal` |
+| *clipboard* | `ugowal` |
 | *calendar* | `agorol` |
 
 #### English → Ageben {#advanced-english-to-ageben}
@@ -115,7 +115,7 @@ Each list takes its own join, with the role letter of its items.
 *Alazun or Ahelan sees the umbrella* (one of them; which is not said)
 :::
 
-**3.** `zegowal zagorol zomobul zer.`
+**3.** `zugowal zagorol zomobul zer.`
 
 ::: details Show answer
 [z-clipboard | z-calendar | z-umbrella | z-anything]

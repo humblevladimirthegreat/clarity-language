@@ -162,7 +162,7 @@ The four one-vowel hooks name the everyday extras; each cue reads the prepositio
 | **`ul`** | *from* | source of a path | except that landmark |
 | **`ol`** | *for* | who or what the act is meant for | rather this aim |
 
-> `zodozel vezuvel al bohehal.`
+> `zodozel vezuvel al bamahal.`
 >
 > z-dog | v-sleep | [in | b-house]
 >
@@ -176,7 +176,7 @@ To ask *where?*, put the fill-ask blank `bar` after the hook (`el bar` *where?*,
 >
 > "Alazun sits at a table."
 
-> `zazozon dowudal vowuvul ul bedodal.`
+> `zazozon dowudal vobuvul ul bedodal.`
 >
 > z-Azozon | d-wine | v-pour | [from | b-teapot]
 >
@@ -202,7 +202,7 @@ These hooks take `-l`: the landmark is the exact place, point, source, or goal.
 
 To say where something is (*there is a dog in a house*), write the noun with no verb, then the hook and its `/b/`. A noun alone says the thing [exists](predication.md#existence), and the hook places it.
 
-> `zodozel al bohehal.`
+> `zodozel al bamahal.`
 >
 > z-dog | [in | b-house]
 >
@@ -253,7 +253,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *table* | `edohel` | 𓊲 |
 | *family* | `uvayal` | 👪 |
 | *teapot* | `edodal` | 🫖 |
-| *beer* | `urudal` | 🍺 |
+| *beer* | `obudal` | 🍺 |
 
 **Review:**
 
@@ -267,7 +267,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *wine* | `owudal` |
 | *sandwich* | `edal` |
 | *sit* | `vehohel` |
-| *pour* | `vowuvul` |
+| *pour* | `vobuvul` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -282,11 +282,11 @@ z-family | including | z-Azozon | v-cook
 **2.** *Alazun pours wine instead of beer.*
 
 ::: details Show answer
-`zalazun durudal el dowudal vowuvul.`
+`zalazun dobudal el dowudal vobuvul.`
 
 z-Alazun | d-beer | instead | d-wine | v-pour
 
-**Also correct:** `zalazun vowuvul durudal el dowudal.`
+**Also correct:** `zalazun vobuvul dobudal el dowudal.`
 :::
 
 **3.** *Azozon cooks a cookie for Ahelan.*
@@ -331,7 +331,7 @@ z-Azozon | d-cookie | v-cook | [for | b-family]
 *Azozon cooks a cookie for a family.*
 :::
 
-**2.** `el zalazun durudal vowuvul.`
+**2.** `el zalazun dobudal vobuvul.`
 
 ::: details Show answer
 instead | z-Alazun | d-beer | v-pour
@@ -373,10 +373,10 @@ z-Alazun | v-sit | [from | b-that-clause] | z-Azozon | v-cook
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Alazun pours wine from a teapot.* `zalazun dowudal vowuvul ul bedodal.` or `zalazun dowudal vowuvul al bedodal.`
+**1.** *Alazun pours wine from a teapot.* `zalazun dowudal vobuvul ul bedodal.` or `zalazun dowudal vobuvul al bedodal.`
 
 ::: details Show answer
-`zalazun dowudal vowuvul ul bedodal.`
+`zalazun dowudal vobuvul ul bedodal.`
 
 z-Alazun | d-wine | v-pour | [from | b-teapot]
 

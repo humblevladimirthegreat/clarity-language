@@ -184,7 +184,7 @@ On a [feeling](how-you-feel.md#feeling-word) (a sake word with an urge and a dur
 
 English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyom`, from clues), PATTERN (`thubom`, from cases that repeat) and DEDUCED (`thanam`, from premises). Each one takes `blarl` as its `/b/`. The main sentence stops after `blarl`, and the next sentence is the grounds ([dependent clauses](/dependents#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
 
-> `zalazun vabuvul theyom blarl zazozon veyamul.`
+> `zalazun vabuvul theyom blarl zazozon vozumul.`
 >
 > z-Alazun | v-punch | [th-CLUES | bl-that-clause] | z-Azozon | v-scream
 >
@@ -192,7 +192,7 @@ English *judging by*, *going by*, and *given that* name the **grounds** for a cl
 
 Grounds are not a cause. With [`thahum blarl`](because-and-iff.md#choosing-a-hinge), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alazun punch.
 
-> `zazozon veyamul thahum blarl zalazun vabuvul.`
+> `zazozon vozumul thahum blarl zalazun vabuvul.`
 >
 > z-Azozon | v-scream | [th-because | bl-that-clause] | z-Alazun | v-punch
 >
@@ -223,7 +223,7 @@ For a forecast, keep the [offset](#forecast) and put `blarl` after it. The patte
 
 You assert the grounds, the way you assert a cause. If you are not sure of them, say so inside the grounds clause with its own channel:
 
-> `zalazun vabuvul theyom blarl zazozon thugem veyamul.`
+> `zalazun vabuvul theyom blarl zazozon thugem vozumul.`
 >
 > z-Alazun | v-punch | [th-CLUES | bl-that-clause] | z-Azozon | th-LIVE | v-scream
 >
@@ -374,7 +374,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *rain* | `erulal` |
 | *tell* | `vezuyol` |
 | *see* | `vayebel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *punch* | `vabuvul` |
 | *sleep* | `vezuvel` |
 
@@ -383,7 +383,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *I heard third-hand that Alazun screams.*
 
 ::: details Show answer
-`zalazun thebam throgel veyamul.`
+`zalazun thebam throgel vozumul.`
 
 z-Alazun | th-REPORTED | th-3rd-hand | v-scream
 :::
@@ -444,10 +444,10 @@ DEDUCED with **-l** means you could show every step; **-m** means you could name
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Alazun punched, judging by the fact that Azozon screams.* <!-- lint: error -->`zalazun vabuvul thahum barl zazozon veyamul.`
+**1.** *Alazun punched, judging by the fact that Azozon screams.* <!-- lint: error -->`zalazun vabuvul thahum barl zazozon vozumul.`
 
 ::: details Show answer
-`zalazun vabuvul theyom blarl zazozon veyamul.`
+`zalazun vabuvul theyom blarl zazozon vozumul.`
 
 z-Alazun | v-punch | [th-CLUES | bl-that-clause] | z-Azozon | v-scream
 

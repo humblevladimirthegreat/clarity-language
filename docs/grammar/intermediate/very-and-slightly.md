@@ -45,14 +45,14 @@ English says how much of a quality something has with words like *very*, *slight
 
 ### Grading the action itself {#grading-the-action}
 
-To grade the action rather than a quality, one fixed word goes in `/h/` and grades the verb itself: **`hayurom`** *kind of* / *sort of* says the action happened only to some degree, not fully.
+To grade the action rather than a quality, one fixed word goes in `/h/` and grades the verb itself: **`haburom`** *kind of* / *sort of* says the action happened only to some degree, not fully.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Ageben | English | Cue |
 |--------|---------|-----|
-| `hayurom` | *kind of* / *sort of* | 📈: some degree, not a full one |
+| `haburom` | *kind of* / *sort of* | 📈: some degree, not a full one |
 
-> `zazozon hayurom vowurol.`
+> `zazozon haburom vowurol.`
 >
 > z-Azozon | h-kind-of | v-walk
 >
@@ -71,7 +71,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *small* | `amezem` | 🐁 from *mouse* |
 | *quite* | `wadowem` | 🔉 from *audio* |
 | *completely* | `wahuram` | 💯 from *hundred* |
-| *kind of* | `hayurom` | 📈 from *uptrend* |
+| *kind of* | `haburom` | 📈 from *uptrend* |
 
 **Review:**
 
@@ -84,8 +84,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *again* | `herugom` |
 | *ocean* | `wohalal` |
 | *wine* | `owudal` |
-| *drink* | `vuwudal` |
-| *pour* | `vowuvul` |
+| *drink* | `vududal` |
+| *pour* | `vobuvul` |
 | *smell* | `vonebel` |
 | *sit* | `vehohel` |
 | *haste* | `hadurom` |
@@ -99,7 +99,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *A slightly sleepy Ahelan drinks the wine.*
 
 ::: details Show answer
-`zahelan wamezem guzemel dowudal vuwudal.`
+`zahelan wamezem guzemel dowudal vududal.`
 
 [z-Ahelan | [w-small | g-sleepy]] | d-wine | v-drink
 :::
@@ -107,7 +107,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Alazun pours the wine fairly hastily.*
 
 ::: details Show answer
-`zalazun dowudal wadowem hadurom vowuvul.`
+`zalazun dowudal wadowem hadurom vobuvul.`
 
 z-Alazun | d-wine | [w-quite | h-haste] | v-pour
 :::
@@ -115,7 +115,7 @@ z-Alazun | d-wine | [w-quite | h-haste] | v-pour
 **3.** *Azozon kind of drinks the wine.*
 
 ::: details Show answer
-`zazozon dowudal hayurom vuwudal.`
+`zazozon dowudal haburom vududal.`
 
 z-Azozon | d-wine | h-kind-of | v-drink
 :::
@@ -123,7 +123,7 @@ z-Azozon | d-wine | h-kind-of | v-drink
 **4.** *A fairly sleepy Azozon pours the wine again.*
 
 ::: details Show answer
-`zazozon wadowem guzemel dowudal herugom vowuvul.`
+`zazozon wadowem guzemel dowudal herugom vobuvul.`
 
 [z-Azozon | [w-quite | g-sleepy]] | d-wine | h-again | v-pour
 :::
@@ -138,7 +138,7 @@ z-Azozon | d-wine | h-kind-of | v-drink
 *A completely quiet Ahelan sits.*
 :::
 
-**2.** `zalazun dowudal wohalal hadurom vuwudal.`
+**2.** `zalazun dowudal wohalal hadurom vududal.`
 
 ::: details Show answer
 z-Alazun | d-wine | [w-ocean | h-haste] | v-drink
@@ -146,7 +146,7 @@ z-Alazun | d-wine | [w-ocean | h-haste] | v-drink
 *Alazun drinks the wine extremely hastily.*
 :::
 
-**3.** `zazozon welazem ganomul dowudal hayurom vonebel.`
+**3.** `zazozon welazem ganomul dowudal haburom vonebel.`
 
 ::: details Show answer
 [z-Azozon | [w-very | g-anxious]] | d-wine | h-kind-of | v-smell
@@ -164,10 +164,10 @@ z-Ahelan | d-wine | [w-small | h-haste] | v-smell
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *A very angry Ahelan pours the wine hastily.* `zahelan welazem gonumul dowudal hadurom vowuvul.` or `zahelan gonumul dowudal welazem hadurom vowuvul.`
+**1.** *A very angry Ahelan pours the wine hastily.* `zahelan welazem gonumul dowudal hadurom vobuvul.` or `zahelan gonumul dowudal welazem hadurom vobuvul.`
 
 ::: details Show answer
-`zahelan welazem gonumul dowudal hadurom vowuvul.`
+`zahelan welazem gonumul dowudal hadurom vobuvul.`
 
 [z-Ahelan | [w-very | g-angry]] | d-wine | h-haste | v-pour
 
@@ -186,7 +186,7 @@ A `/w/` word grades the word right after it: before *angry* it says how angry, b
 A slightly sleepy Alazun sits in the first; an extremely sleepy Alazun sits in the second.
 :::
 
-**2.** `zazozon dowudal herugom vowuvul.` / `zazozon dowudal hayurom vowuvul.`
+**2.** `zazozon dowudal herugom vobuvul.` / `zazozon dowudal haburom vobuvul.`
 
 ::: details Show answer
 z-Azozon | d-wine | h-again | v-pour

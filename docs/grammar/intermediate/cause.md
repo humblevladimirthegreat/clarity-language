@@ -18,7 +18,7 @@ As plain words, the same root is `zewol` *a machine* and `vewol` *to operate / e
 >
 > "If it rains, rain is what makes Azozon walk."
 
-> `zalazun vowuvul thewom thahum blavulul.`
+> `zalazun vobuvul thewom thahum blavulul.`
 >
 > z-Alazun | v-pour | th-CAUSE | [th-because | bl-fire]
 >
@@ -85,18 +85,18 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *if* | `thohem` |
 | *because* | `thahum` |
-| *pressure* | `ayewam` |
+| *pressure* | `egewam` |
 | *rain* | `erulal` |
 | *stop* | `vezohul` |
-| *pour* | `vowuvul` |
-| *scream* | `veyamul` |
+| *pour* | `vobuvul` |
+| *scream* | `vozumul` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Pressure is what makes the wheel stop.*
 
 ::: details Show answer
-`zuwovol vezohul thewom thahum blayewam.`
+`zuwovol vezohul thewom thahum blegewam.`
 
 z-wheel | v-stop | th-CAUSE | [th-because | bl-pressure]
 :::
@@ -104,7 +104,7 @@ z-wheel | v-stop | th-CAUSE | [th-because | bl-pressure]
 **2.** *Azozon makes Alazun pour the water.*
 
 ::: details Show answer
-`zalazun dowulal vowuvul thewom blazozon.`
+`zalazun dowulal vobuvul thewom blazozon.`
 
 z-Alazun | d-water | v-pour | [th-CAUSE | bl-Azozon]
 :::
@@ -119,7 +119,7 @@ z-wheel | v-stop | th-CAUSE | [th-if | bl-rain]
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zalazun vowuvul thewom thahum blayewam.`
+**1.** `zalazun vobuvul thewom thahum blegewam.`
 
 ::: details Show answer
 z-Alazun | v-pour | th-CAUSE | [th-because | bl-pressure]
@@ -127,7 +127,7 @@ z-Alazun | v-pour | th-CAUSE | [th-because | bl-pressure]
 *Pressure is what makes Alazun pour.*
 :::
 
-**2.** `zahelan veyamul thewom blalazun.`
+**2.** `zahelan vozumul thewom blalazun.`
 
 ::: details Show answer
 z-Ahelan | v-scream | [th-CAUSE | bl-Alazun]
@@ -145,10 +145,10 @@ z-wheel | v-stop | [th-CAUSE | bl-Ahelan]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon makes Ahelan pour.* `zahelan vowuvul thewom blazozon.` or `zazozon vowuvul thewom blahelan.`
+**1.** *Azozon makes Ahelan pour.* `zahelan vobuvul thewom blazozon.` or `zazozon vobuvul thewom blahelan.`
 
 ::: details Show answer
-`zahelan vowuvul thewom blazozon.`
+`zahelan vobuvul thewom blazozon.`
 
 z-Ahelan | v-pour | [th-CAUSE | bl-Azozon]
 

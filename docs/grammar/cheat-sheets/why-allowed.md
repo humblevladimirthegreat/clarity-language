@@ -106,7 +106,7 @@ The scale runs `-l` most settled, `-m` the default, `-r` most passing. When unsu
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Serves, on a noun](/sakes#met) | `zohehal guwatham.` | *My house serves competence.* | B |
+| [Serves, on a noun](/sakes#met) | `zamahal guwatham.` | *My house serves competence.* | B |
 | [Serves, lasting](/sakes#time-horizon-endings-on-met) | `zewal gawethal.` | *My gift serves relatedness in the long term.* | B |
 | [Detracts](/sakes#sake-changeability) | `zanal guwathum.` | *My book detracts from competence.* (modifiable) | B |
 | [Costly now, good later](/sakes#sake-changeability) | `zanal godethur guwathal.` | *My book is a slog for now, but builds lasting competence.* | B |
@@ -145,7 +145,7 @@ Speaker attitude is your feeling about the whole claim, on `/th/` with `-m`. It 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thuwuyom`](/feelings#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
+| [`theguyom`](/feelings#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
 | [`tholezem`](/feelings#speaker-attitude) | it went well by chance | *luckily* | I |
 | [`thewemum`](/feelings#speaker-attitude) | it concerns you | *worryingly* | I |
 | [`thonumum`](/feelings#speaker-attitude) | it angers you | *infuriatingly* | I |

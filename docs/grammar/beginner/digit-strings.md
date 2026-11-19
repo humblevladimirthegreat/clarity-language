@@ -134,7 +134,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -170,11 +170,11 @@ h-_15,30 | z-Azozon | v-walk
 
 #### Ageben → English {#beginner-ageben-to-english}
 
-**1.** `h_9 zazozon veyamul.`
+**1.** `h_9 zazozon vozumul.`
 
 ::: details Show answer
 
-🔊 `hrenal zazozon veyamul.`
+🔊 `hrenal zazozon vozumul.`
 
 h-_9 | z-Azozon | v-scream
 

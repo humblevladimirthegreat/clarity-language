@@ -20,7 +20,7 @@ Ageben keeps the two apart: with no extra marking, whose-now is **speech-now**, 
 >
 > "As of 22 July, Alazun had left and was still gone."
 
-> `zazozon henam bl_#22,7 vehohel al bohehal.`
+> `zazozon henam bl_#22,7 vehohel al bamahal.`
 >
 > z-Azozon | [h-as-of.ledger | bl-_22,7] | v-sit | [in | b-house]
 >
@@ -73,7 +73,7 @@ Here the snapshot covers only *challenging*. It does not reach a verb: a verb in
 >
 > "As of the departure, the money still stood."
 
-> `zazozon henam bl_#22,7 habam bludurul vehohel al bohehal.`
+> `zazozon henam bl_#22,7 habam bludurul vehohel al bamahal.`
 >
 > z-Azozon | [h-as-of.ledger | bl-_22,7] | [h-before | bl-departure] | v-sit | [in | b-house]
 >

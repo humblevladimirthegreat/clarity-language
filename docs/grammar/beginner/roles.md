@@ -192,7 +192,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *construct* | `voguyol` | 👷 from *construct* |
 | *construction* | `ugohul` | 🚧 |
-| *helmet* | `umobul` | 🪖 |
+| *helmet* | `ehobul` | 🪖 |
 
 **Review:**
 
@@ -205,7 +205,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezuyol` |
 | *punch* | `vabuvul` |
 | *fight* | `vuvuvul` |
-| *scream* | `veyamul` |
+| *scream* | `vozumul` |
 | *see* | `vayebel` |
 | *run* | `veruvol` |
 | *sleep* | `vezuvel` |
@@ -231,7 +231,7 @@ z-Azozon | v-tell . z-←episode-recipient-tell | v-sleep
 **3.** *Alazun punches Azozon. The one punched screams.*
 
 ::: details Show answer
-`zalazun dazozon vabuvul. zwudabuvur veyamul.`
+`zalazun dazozon vabuvul. zwudabuvur vozumul.`
 
 z-Alazun | d-Azozon | v-punch . z-←episode-patient-punch | v-scream
 :::
@@ -270,7 +270,7 @@ z-guard | d-episode-patient-construct | v-see
 *The guard sees something built.*
 :::
 
-**2.** `zahelan voguyol. zwuzoguyor dumobul vayebel.`
+**2.** `zahelan voguyol. zwuzoguyor dehobul vayebel.`
 
 ::: details Show answer
 z-Ahelan | v-construct . z-←episode-agent-construct | d-helmet | v-see
@@ -294,7 +294,7 @@ z-Alazun | [d-guard | g-episode-agent-sleep] | v-see
 *Alazun sees a guard who sleeps.*
 :::
 
-**5.** `zwudabuvul veyamul.`
+**5.** `zwudabuvul vozumul.`
 
 ::: details Show answer
 z-episode-patient-punch | v-scream
@@ -302,7 +302,7 @@ z-episode-patient-punch | v-scream
 *Someone who gets punched screams.*
 :::
 
-**6.** `zahelan dumobul voguyol. zalazun dwuder vayebel.`
+**6.** `zahelan dehobul voguyol. zalazun dwuder vayebel.`
 
 ::: details Show answer
 z-Ahelan | d-helmet | v-construct . z-Alazun | d-←episode-patient.same | v-see

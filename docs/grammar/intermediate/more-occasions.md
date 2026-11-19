@@ -61,7 +61,7 @@ English *preferably when A, or else when B* ranks the times it lists. Closed **`
 | **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | `o` ≈ rank + `e` ≈ choice |
 | **`huol` / `huom`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | `u` ≈ undo + `o` ≈ rank |
 
-> `zazozon vowurol hebeham hanurul hol.`
+> `zazozon vowurol heyaham hanurul hol.`
 >
 > z-Azozon | v-walk | h-weekend | h-night | h-when-ranked
 >

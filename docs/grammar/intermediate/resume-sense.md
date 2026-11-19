@@ -110,8 +110,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *teapot* | `edodal` |
-| *pour* | `vowuvul` |
-| *drink* | `vuwudal` |
+| *pour* | `vobuvul` |
+| *drink* | `vududal` |
 | *carry* | `velobal` |
 | *quiet* | `ugowul` |
 | *see* | `vayebel` |
@@ -138,7 +138,7 @@ z-Azozon | g-quiet . z-Ahelan | g-←quiet
 **3.** *Ahelan pours the tea quietly. Azozon drinks the tea that way.*
 
 ::: details Show answer
-`zahelan dedudal vowuvul hugowul. zazozon dedudar vuwudal hugowur.`
+`zahelan dedudal vobuvul hugowul. zazozon dedudar vududal hugowur.`
 
 z-Ahelan | d-tea | v-pour | h-quiet . z-Azozon | d-←tea | v-drink | h-←quiet
 :::
@@ -154,14 +154,14 @@ z-Alazun | d-teapot | v-carry . z-Ahelan | d-ceremony | v-see . z-Azozon | d-←
 **5.** *Ahelan pours tea. Alazun does the same with Ahelan.*
 
 ::: details Show answer
-`zahelan dedudal vowuvul. zalazun vahelar.`
+`zahelan dedudal vobuvul. zalazun vahelar.`
 
 z-Ahelan | d-tea | v-pour . z-Alazun | v-←Ahelan
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zalazun dedudal vuwudal. zahelan vuwudar.`
+**1.** `zalazun dedudal vududal. zahelan vududar.`
 
 ::: details Show answer
 z-Alazun | d-tea | v-drink . z-Ahelan | v-←drink
@@ -169,7 +169,7 @@ z-Alazun | d-tea | v-drink . z-Ahelan | v-←drink
 *Alazun drinks tea. Ahelan does too.*
 :::
 
-**2.** `zazozon dedudal vowuvul hugowul. zahelan vabuyol hugowur.`
+**2.** `zazozon dedudal vobuvul hugowul. zahelan vabuyol hugowur.`
 
 ::: details Show answer
 z-Azozon | d-tea | v-pour | h-quiet . z-Ahelan | v-bow | h-←quiet

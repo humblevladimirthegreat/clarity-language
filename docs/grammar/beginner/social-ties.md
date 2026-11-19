@@ -16,7 +16,7 @@ English *Azozon's dog* often means the dog is in Azozon's *use*: Azozon keeps it
 >
 > "Azozon's dog runs." (the dog Azozon keeps)
 
-> `zazozon dohehal om balazun vayebel.`
+> `zazozon damahal om balazun vayebel.`
 >
 > z-Azozon | [d-house | [used-by | b-Alazun]] | v-see
 >

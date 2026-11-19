@@ -78,7 +78,7 @@ With several occasions before `huol`, the last listed is the first choice.
 |-----|---------|---------|-------|
 | [Either, not both](/more-occasions#more-occasions) | `zazozon vowurol herulal hanurul hel.` | *Azozon walks either when it rains or at night.* (not both) | I |
 | [And/or](/more-occasions#more-occasions) | `zalazun vezuvel herulal hozulal hael.` | *Alazun sleeps when it rains and/or when it snows.* | I |
-| [Preferably](/more-occasions#ranked-with-listed-occasions) | `zazozon vowurol hebeham hanurul hol.` | *preferably on weekends, or else at night* | I |
+| [Preferably](/more-occasions#ranked-with-listed-occasions) | `zazozon vowurol heyaham hanurul hol.` | *preferably on weekends, or else at night* | I |
 | [Last resort](/more-occasions#ranked-with-listed-occasions) | `zazozon vowurol herulal huol.` | *When it rains, Azozon walks only as a last resort.* | I |
 | [When's best?](/more-occasions#unspecified-member-r) | `yel hor zayan vowurol.` | *When's best for us to walk?* | I |
 | [On an adjective, one of two](/more-occasions#unspecified-member-r) | `zazozon werulal wanurul wel guzemel.` | *sleepy either when it rains or at night* (not both) | I |
@@ -159,7 +159,7 @@ A one-word name is an ordinary `-n` word (`donuren`), not a span.
 | [Name of uncertain spelling](/spans#y-spans) | <code>y~@&lt;Sam&gt;</code> | *Sam?* (not sure of the name) | B |
 | [Foreign interjection](/spans#y-spans) | <code>y&lt;Wow&gt;</code> | *Wow!* | B |
 | [A word as spelling](/spans-as-words#mention): `glegol` | `glegol z[odoze] gamezem.` | *The word “odoze” is small.* | I |
-| [A name as spelling](/spans-as-words#mention): `glegon` | `zazozon glegon d[onuren] vuyugum.` | *Azozon dislikes the name “onuren.”* | I |
+| [A name as spelling](/spans-as-words#mention): `glegon` | `zazozon glegon d[onuren] vegugum.` | *Azozon dislikes the name “onuren.”* | I |
 
 ### Writing the close {#close}
 
