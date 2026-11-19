@@ -1,0 +1,73 @@
+# Solver draft fixture (R4c): lists (ranks, ties, ue, two denial lists, SHARED words) and channel stances on your own claim (D8).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Read as one log, the entries do not all stand together; each comment names the entries a verdict reads (as their own case) and the verdict now.
+
+# R4c-1: superlative, one name before zol. ? yel zahelan zol guzemel. → follows: yes (now: beyond, l1 left unused shared:scale)
+@ l1
+zahelan zol guzemel.
+= Ahelan is the sleepiest.
+
+# R4c-2: closed tie. l2 alone: ? yel zalazun zazozon zoel gamahum. → yes (now: beyond, unused shared:equative); ? yel zazozon gamahum. → unknown (now: unknown)
+# l2 + l3: clash tie / more on one scale (now: no clash, l2 left)
+@ l2
+zazozon zalazun zoel gamahum.
+= Azozon is as challenging as Alazun.
+
+@ l3
+zazozon zalazun zol gamahum.
+= Azozon is more challenging than Alazun.
+
+# R4c-2: open tie is data only. l4 + l3: no clash (now: no clash, l4 left unused shared:equative)
+@ l4
+zazozon zalazun zoem gamahum.
+= Azozon is about as challenging as Alazun.
+
+# R4c-2: a tie with a verb; each member's act holds. ? yel zazozon vowurol. → yes (now: unknown, l5 left unused shared:equative)
+@ l5
+zazozon zalazun zoel hahunom vowurol.
+= Azozon walks as intensely as Alazun.
+
+# R4c-2: three tied, pairwise. ? yel zalazun zahelan zoel gamahum. → yes (now: beyond, unused shared:equative)
+@ l6
+zazozon zalazun zahelan zoel gamahum.
+= Azozon, Alazun and Ahelan are equally challenging.
+
+# R4c-3: ue denies each listed item. ? yel zalazun dobodel vagedal. → no (now: unknown, l7 left noRow joinSeries:ue)
+@ l7
+zalazun dobodel duel vagedal.
+= Alazun eats anything but bread.
+
+# R4c-4: two denial lists deny the joint substitution. ? yel zalazun dogozel vayebel. → no (now: unknown, l8 left noRow joinSeries:u)
+@ l8
+zazozon zalazun zul dodozel dogozel dul vayebel.
+= Neither Azozon nor Alazun sees a dog or a cat.
+
+# R4c-5: SHARED hook after a noun join. ? yel zogozel om bahelan vowurol. → yes (now: unknown, l9 left unused hookJob:genitive)
+@ l9
+zodozel zogozel zal om bahelan vowurol.
+= Ahelan's dog and cat walk.
+
+# R4c-6: collective SHARED adjective: the list as one. ? yel zobonol garolem. → unknown (now: yes from the question alone; see Findings)
+@ l10
+zobonol zadorol zal garolemx.
+= The page and the trumpet are heavy together.
+
+# R4c-7: channel stance on your own claim (D8). n1 alone: ? yel zalazun vudurul. → yes (now: unknown, n1 left noRow overlay:evidential:th)
+# n1 + n4: clash, your claim and your denial (now: no clash)
+@ n1
+zalazun thebam throgel vudurul.
+= I heard third-hand that Alazun left.
+
+# R4c-7: source and depth. ? yel zalazun vudurul. → yes (now: unknown)
+@ n2
+zalazun thebal blunonal throdol vudurul.
+= Alazun left, according to a newspaper article by someone who interviewed people who were there.
+
+# R4c-7: channel last. ? yel zazozon vezuvel. → yes (now: unknown)
+@ n3
+zazozon guzemel vezuvel thevum.
+= Sleepy Azozon slept, I remember.
+
+@ n4
+zalazun vudurul vul.
+= Alazun did not leave.
