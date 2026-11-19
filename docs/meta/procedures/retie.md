@@ -41,6 +41,7 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 ## Docs: what to read after `--write` {#docs}
 
 - **Review items** are text the retie could not classify: a CLI call in code, coined forms in a proposal. Collisions found only in proposals are warnings, not blocks.
+- **Forms that do not parse.** A rejected or reserved form (`gorxawahal`) is never rewritten: the map's new roots are often other rows' old roots, so a rewrite inside a word the parser cannot split could hit the wrong boundary. When one spells an old root, in a doc, a fixture, a comment or a string literal, the run lists it (`review … spells old root X (now Y) in a form that does not parse`); respell it by hand. In a code span of solver encoding (`holds(`, `isa(`, `:-`), a token that is exactly an old root is a root id and is rewritten; a root inside a longer token is not.
 - **Initials** ([initials.md § Initials](/initials#initials)) follow their title on the same page (`src/retie/initials.ts`): when a title root moves to one with another first consonant, the handle in every marker form, its morph copy, its 🔊 lines and the English capitals (*the NL*) move with it. Two titles on one page that share the old initials get a review line and no rewrite. Prose that names a letter's root (`n` from `ana`) is fixed by hand.
 - **Examples that rest on a spelling coincidence** still parse and lint, so nothing reports them: two roots that shared a short stem, a full-root resume that was needed only because of a neighbor. Reread the [full-root resume](/pronouns#resume-r) examples after any retie.
 - **Bare-resume warnings** (`zazawar` reads another root now) mean a resume in prose binds by its stem; the warning names the spelling that keeps the old reading when one exists.
@@ -57,7 +58,6 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 |------|--------------------|----------------------|
 | A spelling that must stay unknown | `src/lint/ageben-docs.test.ts` (`ezuzo`) | the new lexicon may publish it |
 | Lexicon coincidences | `src/find/query.test.ts`, `src/parse/lexicon-check.test.ts`, `src/parse/inspect.test.ts` (possible compound splits) | the expected match exists only in the old lexicon |
-| Roots in solver encoding | [solver.md](../solver.md) (`isa(X,oboza)`) | an encoding atom in a code span is not Ageben to the retie; grep the old root |
 | Tests of the retie tool on real roots | `src/retie/drift.test.ts`, parts of `src/retie/retie-tokens.test.ts` | `src/retie/` is never retied, so its own fixtures stay put |
 
 The `--write` run also lists test literals it only reports (`string literal … spells old root`): a bare root in a test is read as that file's own fixture, so words on it stay as written. When the file means the real root, name it through `CLOSED` (`assert.equal(root, CLOSED.walk)`); then the next retie moves it.

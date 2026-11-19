@@ -18,6 +18,7 @@ import { retieOverlayForm } from "./lexicon.js";
 import { contentStemRoots } from "./resume.js";
 import { rewriteMarkdown, type RetieReview } from "./markdown.js";
 import { resumeRewrite, rewritePlainTokens, type RetieChange } from "./tokens.js";
+import { unreadableOldRoot, unreadableReason } from "./unreadable.js";
 
 export type SourceLiteral = {
   /** Offset of the literal body (after the opening quote). */
@@ -497,13 +498,21 @@ function reviewStale(
   for (const match of text.matchAll(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g)) {
     const word = match[0];
     if (written.has(word) || isEnglish(word, ctx) || isKept(word, ctx)) continue;
+    const quoted = `string literal "${body.length > 60 ? `${body.slice(0, 57)}…` : body}"`;
     const stale = staleRoot(word, ctx);
     if (stale) {
       reviews.push({
         text: body,
         index: index + match.index!,
-        reason: `string literal "${body.length > 60 ? `${body.slice(0, 57)}…` : body}" spells old root ${stale} (now ${ctx.map.get(stale)}${reusedNote(stale, ctx)}); not retied — name closed roots through src/closed-roots.ts`,
+        reason: `${quoted} spells old root ${stale} (now ${ctx.map.get(stale)}${reusedNote(stale, ctx)}); not retied — name closed roots through src/closed-roots.ts`,
       });
+      continue;
+    }
+    // A form the word grammar rejects is never rewritten, only listed.
+    const unreadable = unreadableOldRoot(word, ctx.map);
+    if (unreadable) {
+      const hit = { word, index: index + match.index!, oldRoot: unreadable, newRoot: ctx.map.get(unreadable)! };
+      reviews.push({ text: body, index: hit.index, reason: `${quoted} ${unreadableReason(hit)}` });
     }
   }
 }

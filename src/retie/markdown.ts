@@ -29,6 +29,7 @@ import { morphPairsMatching, reglossMarkdown, type ReglossEdit } from "../reglos
 import { followPairs, followProse, mergeFollowPairs, type FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
 import { asRetieTables, type RetieTables } from "./tables.js";
+import { isSolverEncoding, rewriteEncodingAtoms, unreadableHits, unreadableReason } from "./unreadable.js";
 
 export type RetieReview = {
   text: string;
@@ -102,7 +103,15 @@ export function rewriteMarkdown(
     return probe.length > 0;
   };
 
+  /** A word that spells an old root in a form that does not parse is listed, never rewritten. */
+  const reviewUnreadable = (text: string, index: number): void => {
+    for (const hit of unreadableHits(text, map, index)) {
+      if (!keep.has(hit.word)) reviews.push({ text: hit.word, index: hit.index, reason: unreadableReason(hit) });
+    }
+  };
+
   const rewriteAgeben = (text: string, index: number, cls: string): string => {
+    reviewUnreadable(text, index);
     const base = guard(resumeRewrite(map, parseTables));
     // A template or fragment can cut a word before its ending (`gonogotha…`): retie it with a filler ending.
     const rewrite: CoreRewrite =
@@ -124,12 +133,15 @@ export function rewriteMarkdown(
   /** One inline span or one fence line, routed by its lint class. */
   const rewriteLine = (text: string, index: number, onlyReadsAsAgeben = false): string => {
     if (!text.trim()) return text;
+    // Solver encoding: a token that is exactly an old root is a root id.
+    if (isSolverEncoding(text)) return rewriteEncodingAtoms(text, map, index, changes);
     // Classify with the learner-name slot filled, as the lint does (`zSELFn` → `zeman`).
     const cls = classifyAgebenSpan(fillSelf(text));
     const allowed = onlyReadsAsAgeben ? cls !== "template" && REWRITE_CLASSES.has(cls) : REWRITE_CLASSES.has(cls);
     if (allowed) {
       return rewriteAgeben(text, index, cls);
     }
+    reviewUnreadable(text, index);
     if (wouldChange(text)) {
       // The doc lint checks every word in code that looks like Ageben, whatever the line is,
       // so those words must move with the lexicon. Other words stay; the line is reviewed.

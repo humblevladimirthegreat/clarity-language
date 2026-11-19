@@ -158,10 +158,10 @@ Source: [hooks.md](/hook-compounds#hook-prefixes)
 
 - **open:** a vowel pair that is no hook (`ea`, `eo`, `eu`, `oa`, `ou`, `au`, …) before **`x`** or **`mx`** (`geaxavuvul`, `gouxavuvul`). No hook to read. Parser: no word.
 - **open:** **`n`** between hook vowels and the seam (`guenxavuvul`). It would need a job of the hook's **-n** inside a word. Parser: no word.
-- **closed ([hooked joins](design-decisions.md#hooked-joins)):** **`r`** between hook vowels and the seam (`gorxahehal`). The stem is the landmark, so nothing is left unsaid to point back to. Parser: no word.
+- **closed ([hooked joins](design-decisions.md#hooked-joins)):** **`r`** between hook vowels and the seam (`gorxawahal`). The stem is the landmark, so nothing is left unsaid to point back to. Parser: no word.
 - **closed (D-57):** `lx` after hook vowels (`guelxavuvul`). Plain **`x`** already spells the **-l** reading. Parser: no word.
 - **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuoxuvuvul`). `/v/` would repeat the `/ɡ/` predicate (*is anti-fighting*); the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
-- **open:** a hook prefix inside a larger word: as a piece of an ordinary compound (*an anti-war house*), as a role-compound stem, or with ability after its stem (`gaxahehaxal`). Not guessable which piece the hook would cover; a separate `/ɡ/` word says it. Parser: no word.
+- **open:** a hook prefix inside a larger word: as a piece of an ordinary compound (*an anti-war house*), as a role-compound stem, or with ability after its stem (`gaxawahaxal`). Not guessable which piece the hook would cover; a separate `/ɡ/` word says it. Parser: no word.
 
 ## Hooked joins {#hooked-joins}
 
