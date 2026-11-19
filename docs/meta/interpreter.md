@@ -479,7 +479,7 @@ A call, *yes* / *no*, or interjection closed by a period is its own utterance, s
 
 ## Matching
 
-`match(query, target)` (`match.ts`) compares two claims. `ask(question, log, host)` (`ask.ts`) returns every logged reading, nested ones included, whose claim fits the question's: the blanks it binds, its **frame path** (the frames on the matched reading and on every reading that contains it), its unsettled pairs, and the switches it went through. Neither walks the parse tree, decides that a framed claim holds (the [verdict](#the-default-verdict) does), or picks an order for an unsettled pair (it travels with the match).
+`match(query, target)` (`match.ts`) compares two claims; the step conditions it shares with the [solver](solver.md) are in `steps.ts`. `ask(question, log, host)` (`ask.ts`) returns every logged reading, nested ones included, whose claim fits the question's: the blanks it binds, its **frame path** (the frames on the matched reading and on every reading that contains it), its unsettled pairs, and the switches it went through. Neither walks the parse tree, decides that a framed claim holds (the [verdict](#the-default-verdict) does), or picks an order for an unsettled pair (it travels with the match).
 
 ### Matching a claim
 
@@ -514,6 +514,7 @@ Each frame on the question is a filter or not by this table; a later change is a
 - **`infer`**, membership: a query term matches one member of a target *and* list, only where the claim says who goes with what: the target claim has that one list, or its lists are paired by *respectively* ([respectively](/list-structure#respectively)). Two unpaired lists infer nothing.
 - **`infer`**, universal to instance: closed *every K* with a kind and no leftovers holds of each K ([universals](/universals-domains#universals-domains-generics)); the open universal does not.
 - Neither infers with a collective verb or under a list frame.
+- Questions that take more than one step (a chain of hinges, a clash, what to give up) are the [solver](solver.md)'s, with its own switches.
 
 ## The host
 
