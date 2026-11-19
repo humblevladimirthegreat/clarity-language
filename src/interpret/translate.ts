@@ -30,8 +30,18 @@ export type TranslateOptions = {
   switches?: Partial<Record<"widen" | "defaults" | "closed", boolean>>;
 };
 
-/** A reading left out of the program, as an `unread` part is: the turn is `beyond` for a solver job. */
-export type LeftOut = { reading: ReadingId; construction: string; key?: string; reason: string };
+/**
+ * A reading left out of the program, as an `unread` part is: the turn is `beyond` for a solver job. Reason `noRow`: a
+ * frame or combination with no row; `unused`: every frame has a row, but the rows that ran left a part of the reading
+ * unused (the accounting guard), listed in `unused`.
+ */
+export type LeftOut = { reading: ReadingId; construction: string; key?: string; reason: string; unused?: string[] };
+
+/**
+ * A part of a reading a row must use, or the reading is left out (the accounting guard): a frame (with the frames held
+ * inside it), a link, a SHARED detail after a join, a blank, and a list the matcher reads members of (`claimMemberLists`).
+ */
+export type Part = { kind: "frame" | "link" | "shared" | "blank" | "list"; of: object; reading: ReadingId; key: string; text: string };
 
 /** A frame the program does not encode but a reply may mention (R1-9: standalone `thul` leaves the claim untouched). */
 export type Note = { reading: ReadingId; frame: Frame };
@@ -75,6 +85,8 @@ export type Translation = {
   wraps: Map<ReadingId, Wrap>;
   /** Each holder term and its English possessive (*Azozon's*), for a reply that names whose view clashes. */
   holders: Map<string, string>;
+  /** Each reading in the program: its parts and the ones its rows used (all of them, or it would be in `left`). */
+  accounting: Map<ReadingId, { parts: Part[]; used: ReadonlySet<object> }>;
 };
 
 // ── Atoms ───────────────────────────────────────────────────────────────────
@@ -243,6 +255,12 @@ class Translator {
   readonly speakers = new Map<ReadingId, string>();
   /** The log's readings by id, for a link that names one (a backward stand-in's sentence). */
   readonly byId = new Map<ReadingId, Reading>();
+  /** The accounting guard: the parts the current reading's rows used, and the readings whose claims they wrote. */
+  used = new Set<object>();
+  visited: Reading[] = [];
+  /** The kind word of the current reading's universal: a pronoun that resumes it is bound by the universal (no row yet). */
+  bound = new Set<LexWord>();
+  readonly accounting = new Map<ReadingId, { parts: Part[]; used: ReadonlySet<object> }>();
 
   constructor(readonly options: TranslateOptions) {}
 
@@ -254,9 +272,21 @@ class Translator {
 
   // ── Terms ──
 
+  /**
+   * A pronoun written uses its anaphor link: through its antecedent, or as its own constant when the resolver found
+   * none. Not when a universal binds the antecedent: the pronoun would be written as the kind (no row yet).
+   */
+  resume(term: Term, ctx: Ctx): void {
+    if (term.kind !== "pronoun") return;
+    const t = throughAntecedent(term);
+    if (t.kind === "thing" && this.bound.has(t.head)) return;
+    for (const l of ctx.reading.links) if (l.kind === "anaphor" && l.words.includes(term.word)) this.used.add(l);
+  }
+
   term(term: Term, place: string, ctx: Ctx): string {
     const own = ctx.subst.get(term);
     if (own) return own.text;
+    this.resume(term, ctx);
     const t = throughAntecedent(term);
     const sub = ctx.subst.get(t);
     if (sub) return sub.text;
@@ -291,7 +321,10 @@ class Translator {
       case "literal":
         return `lit(${str(t.payload)})`;
       case "clause":
-        return `cl(${this.claim(t.reading.claim, { ...ctx, asserted: false })})`;
+        // A content clause is one term; the stand-in that names it is written with it.
+        if (!this.visited.includes(t.reading)) this.visited.push(t.reading);
+        for (const l of ctx.reading.links) if (l.kind === "standIn" && l.to === t.reading.id) this.use(l);
+        return `cl(${this.claim(t.reading.claim, { ...ctx, reading: t.reading, asserted: false })})`;
       case "quote":
         return `quote(${ctx.id},${str(t.word.raw)})`;
     }
@@ -339,6 +372,7 @@ class Translator {
   kind(term: Term, place: string, ctx: Ctx): string {
     const own = ctx.subst.get(term);
     if (own) return own.text;
+    this.resume(term, ctx);
     const t = throughAntecedent(term);
     if (t.kind === "thing") {
       this.kinds.set(name(t.root), t);
@@ -433,11 +467,37 @@ class Translator {
     return out;
   }
 
-  leave(reading: Reading, why: { construction: string; key?: string; reason: string }): void {
+  leave(reading: Reading, why: { construction: string; key?: string; reason: string; unused?: string[] }): void {
     this.left.push({ reading: reading.id, ...why });
   }
 
+  /** Mark parts used; undefined ones are skipped. */
+  use(...parts: (object | undefined)[]): void {
+    for (const p of parts) if (p) this.used.add(p);
+  }
+
+  /** A frame and the stance list that denies it (`thul`): the list's own polarity frames are used with it. */
+  useDenied(reading: Reading, frame: Frame): void {
+    this.use(frame);
+    for (const list of reading.stanceLists ?? []) if (list.members.includes(frame)) this.use(...(list.inner ?? []));
+  }
+
+  /** A SHARED link is used when every SHARED detail of the list its join closes is. */
+  useSharedLinks(): void {
+    for (const v of this.visited) {
+      const lists = claimTerms(v.claim).filter((t): t is ListTerm => t.kind === "list");
+      for (const l of v.links) {
+        if (l.kind !== "shared" && l.kind !== "verbShared") continue;
+        const own = lists.filter((t) => t.join && l.words.includes(t.join));
+        if (own.length && own.every((t) => (t.sharedDetails ?? []).every((d) => this.used.has(d)))) this.use(l);
+      }
+    }
+  }
+
   reading(reading: Reading): void {
+    this.used = new Set();
+    this.visited = [reading];
+    this.bound = new Set();
     const why = this.unrowed(reading);
     if (why) return this.leave(reading, why);
     const frames = this.readingFrames(reading);
@@ -451,6 +511,7 @@ class Translator {
     if (frames.zone && !(lone && !frames.hinge && !frames.universal)) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
     for (const f of reading.frames) {
       if (f.key !== "slot:newMember") continue;
+      this.use(f);
       if (f.hosted) this.newMembers.add(f.hosted);
       if (f.hosted?.kind === "list") f.hosted.members.forEach((m) => this.newMembers.add(m));
     }
@@ -487,9 +548,21 @@ class Translator {
     }
     const done = this.body(reading, frames, ctx, mayOver);
     if (done !== true) return this.leave(reading, done);
+    const denied = mayDenied(reading);
+    this.use(frames.may, frames.mayHost, frames.likely, ...frames.standalone);
+    if (denied) this.useDenied(reading, denied);
+    this.useSharedLinks();
+    // R1-3: a first mention in a nested reading is written as its kind, as one under a hinge is.
+    for (const v of this.visited) this.use(...v.frames.filter((f) => f.key === "slot:newMember"));
+    const parts = this.visited.flatMap((v) => readingParts(v, v === reading));
+    const unused = parts.filter((p) => !this.used.has(p.of));
+    if (unused.length) {
+      const first = unused[0]!;
+      return this.leave(reading, { construction: first.key, key: first.key, reason: "unused", unused: unused.map((p) => p.text) });
+    }
+    this.accounting.set(reading.id, { parts, used: this.used });
     if (wrapped) this.wraps.set(reading.id, wrapped);
     if (may) this.notes.push({ reading: reading.id, frame: may });
-    const denied = mayDenied(reading);
     if (denied) this.notes.push({ reading: reading.id, frame: reading.stanceLists![0]!.inner?.[0] ?? denied });
     frames.standalone.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
     this.readings.push(reading.id);
@@ -510,6 +583,7 @@ class Translator {
       if (!frames.channel && !frames.mayHost) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
       holder = this.holder(frames.holder, ctx);
       if (!holder) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
+      this.use(frames.holder);
       channel = frames.channel;
     } else {
       // Row 2: a carried holder takes the holder of the reading it links to.
@@ -518,10 +592,16 @@ class Translator {
       const from = carried.to ? this.wraps.get(carried.to) : undefined;
       if (from?.kind !== "view") return { construction: carried.key, key: carried.key, reason: "noRow" };
       holder = from.holder;
-      channel = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:channel")?.frame;
+      this.use(carried);
+      const link = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:channel");
+      channel = link?.frame;
+      if (channel?.values.gloss) this.use(link);
     }
     const gloss = channel?.values.gloss;
-    if (gloss) this.rule(ctx, `via(${ctx.id},${name(gloss.toLowerCase())})`, [], "via");
+    if (gloss) {
+      this.rule(ctx, `via(${ctx.id},${name(gloss.toLowerCase())})`, [], "via");
+      this.use(channel);
+    }
     return { kind: "view", holder };
   }
 
@@ -542,6 +622,7 @@ class Translator {
       if (hosted && !to) return bad;
     }
     if (!who) return bad;
+    this.use(say);
     return { kind: "say", who, part: v.part, reach: v.reach, answer: v.answer, ending: v.ending, to };
   }
 
@@ -555,10 +636,14 @@ class Translator {
     const inner = frame.inner ?? [];
     if (inner.length !== 1) return bad;
     const f = inner[0]!;
-    if (f.key === "overlay:plan:th") return { term: `plan(${this.speaker(reading)})` };
+    if (f.key === "overlay:plan:th") {
+      this.use(frame, f);
+      return { term: `plan(${this.speaker(reading)})` };
+    }
     if (f.key !== "wordFamily:say") return bad;
     const say = this.sayWrap(reading, f, ctx);
     if ("reason" in say || say.kind !== "say") return bad;
+    this.use(frame);
     return { term: `say(${say.who},${say.part},${say.reach},${say.answer},${say.ending}${say.to ? `,${say.to}` : ""})`, say };
   }
 
@@ -640,6 +725,8 @@ class Translator {
       const k = name(instance.root);
       this.kinds.set(k, instance);
       ctx.subst.set(list, { text: "X" });
+      this.use(f, ...(f.inner ?? []), ...(list.kind === "list" ? (list.sharedDetails ?? []) : []));
+      this.bound.add(instance.head);
       // R2-5: inside a view, the kind is the holder's too.
       body.push({ atom: `holds(${this.w(ctx, `isa(X,${k})`)})`, premise: this.w(ctx, `isa(X,${k})`) });
       if (!claim.verb && !claim.predicate.length && Object.keys(claim.roles).length === 1) {
@@ -682,6 +769,7 @@ class Translator {
       const never = v.series === "a" && v.ending === "l";
       const usually = v.series === "ua" && v.ending === "m";
       if (denial || !(always || never || usually) || (usually && listed)) return { construction: frames.restrictor.construction, key: frames.restrictor.key, reason: "noRow" };
+      this.use(frames.restrictor);
       const h = heads[0]!;
       if (usually) {
         this.open(ctx, h.text, []);
@@ -733,6 +821,7 @@ class Translator {
     if (z?.kind !== "list" || z.values.series !== "o" || z.members.length !== 2 || z.parts.length !== 1 || z.frames?.length || z.bound) return undefined;
     const scale = (z.sharedDetails ?? []).filter((d) => d.values.role === "scale");
     if (scale.length !== 1 || z.sharedDetails!.length !== 1) return undefined;
+    this.use(z, scale[0]);
     return `more(${this.detail(scale[0]!, ctx)},${this.kind(z.members[0]!, "z1", ctx)},${this.kind(z.members[1]!, "z2", ctx)})`;
   }
 
@@ -741,6 +830,7 @@ class Translator {
     const enc = list === claim.verb && item.kind === "thing" ? name(item.root) : claim.predicate.includes(list) ? this.kind(item, "g", ctx) : this.term(item, placeOf(claim, list), ctx);
     const subst: Subst = new Map(ctx.subst);
     subst.set(list, { text: enc, term: item });
+    this.use(list);
     const text = this.claim(claim, { ...ctx, subst });
     return { text, claim: replaceTerm(claim, list, item) };
   }
@@ -757,7 +847,9 @@ class Translator {
     for (const group of groups.values()) {
       const subst: Subst = new Map(ctx.subst);
       const body: Literal[] = [];
+      for (const link of reading.links) if (link.kind === "pairing" && group.some((l) => l.join && link.words.includes(l.join))) this.use(link);
       group.forEach((l, i) => {
+        this.use(l);
         const place = placeOf(claim, l);
         const ls = this.term(l, place, ctx);
         const v = group.length > 1 ? `X${i + 1}` : "X";
@@ -792,7 +884,12 @@ class Translator {
   condition(reading: Reading, frame: Frame): Reading | undefined {
     const hosted = frame.hosted && throughAntecedent(frame.hosted);
     const back = hosted?.kind === "pronoun" ? reading.links.find((l) => l.kind === "standInBack" && l.words.includes(hosted.word))?.to : undefined;
-    return hosted?.kind === "clause" ? hosted.reading : back ? this.byId.get(back) : frame.content?.[0];
+    const cond = hosted?.kind === "clause" ? hosted.reading : back ? this.byId.get(back) : frame.content?.[0];
+    if (cond) {
+      for (const l of reading.links) if ((l.kind === "standIn" || l.kind === "standInBack" || l.kind === "grounds") && (l.to === cond.id || l.frame === frame)) this.use(l);
+      if (!this.visited.includes(cond)) this.visited.push(cond);
+    }
+    return cond;
   }
 
   /**
@@ -823,6 +920,8 @@ class Translator {
     if (gloss === "because.fault") this.rule(ctx, `fault(${condText},${out})`, body);
     else if (gloss === "because.share") this.rule(ctx, `share(${condText},${out})`, body);
     else if (gloss !== "because") return bad;
+    this.use(frame);
+    if (denied) this.useDenied(reading, becauseDenied(reading)!);
     return frames.hinge ? this.hinge(reading, frames.hinge, heads, body, ctx) : true;
   }
 
@@ -872,6 +971,7 @@ class Translator {
       this.rule(ctx, notOut, [...body, ...falsity(c, "P")]);
       if (!universal) this.rule(ctx, w(condText), outTrue("P"));
     }
+    this.use(frame, mayCond ? cond.frames[0] : undefined);
     return true;
   }
 
@@ -1095,6 +1195,32 @@ function replaceTerm(claim: Claim, from: Term, to: Term): Claim {
   return { ...claim, verb: swap(claim.verb), roles, predicate: claim.predicate.map((p) => swap(p)!) };
 }
 
+/**
+ * The accounting guard's inventory of one reading: its frames (with the frames held inside them and a stance list's
+ * own), its links, the SHARED details of its lists, its blanks, and (`members`, the reading itself rather than a
+ * condition or a clause it holds) each list the matcher reads members of.
+ */
+export function readingParts(reading: Reading, members = true): Part[] {
+  const out: Part[] = [];
+  const id = reading.id;
+  const add = (kind: Part["kind"], of: object, key: string, words: readonly { raw: string }[]): void => {
+    out.push({ kind, of, reading: id, key, text: `${kind} ${key} "${raws(words)}"` });
+  };
+  const frame = (f: Frame): void => {
+    add("frame", f, f.key, f.words);
+    f.inner?.forEach(frame);
+  };
+  reading.frames.forEach(frame);
+  for (const list of reading.stanceLists ?? []) list.inner?.forEach(frame);
+  for (const l of reading.links) add("link", l, l.key, l.words);
+  for (const t of claimTerms(reading.claim)) {
+    if (t.kind === "list") for (const d of t.sharedDetails ?? []) add("shared", d, d.key, d.words);
+    if (t.kind === "blank") add("blank", t, "blank", [t.word]);
+  }
+  if (members) for (const l of claimMemberLists(reading.claim, reading).keys()) if (l.kind === "list") add("list", l, `joinSeries:${l.values.series}`, l.join ? [l.join] : []);
+  return out;
+}
+
 /** Translate a log's readings (top level; nested readings are reached through their frames) to a Clingo program. */
 export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogEntry[] }, options: TranslateOptions = {}): Translation {
   const t = new Translator(options);
@@ -1103,5 +1229,5 @@ export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogE
   for (const reading of log.readings) t.byId.set(reading.id, reading);
   for (const reading of log.readings) t.reading(reading);
   const program = t.finish();
-  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, holders: t.holders };
+  return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, holders: t.holders, accounting: t.accounting };
 }
