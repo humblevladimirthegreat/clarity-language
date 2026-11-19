@@ -9,7 +9,7 @@ import { canonicalReadings, compareCanonical, sameReadings } from "./equal.js";
 import { readText } from "./read.js";
 import type { Reading } from "./types.js";
 
-/** Ported from src/lint/reading-equivalence.test.ts, with the tables that lint loads. */
+/** Ported from the retired reading-equivalence lint test, with the tables that lint loaded. */
 describe("sameReadings: the practice-item cases", () => {
   const tables = houseTables();
   const verdict = (a: string, b: string): string => sameReadings(a, b, tables).verdict;
