@@ -5,7 +5,7 @@
 **Status:** all keys classified; pair table filled; host contract and loop shipped  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md). The reader copies what the parse tree and the resolve stage already say; it never re-derives a reading.
 
-The interpreter turns a parse into **readings**, one per clause, so tools can compare, show, or check what a text says without walking the parse tree for meaning. This note owns the terms, the frame families, the classification table every reader switches on, the links, the scope statements copied from the grammar pages, the reader rules, the log, the matcher's rules, the host contract, and the loop with its pass-through list and default verdict. Every row cites the grammar anchor that decides it; a row with no anchor is still to be classified. The parser side is in [parser pipeline](parser-pipeline.md); construction ids come from `constructionRegistry()` in `src/parse/constructions.ts`.
+The interpreter turns a parse into **readings**, one per clause, so tools can compare, show, or check what a text says without walking the parse tree for meaning. This note owns the terms, the frame families, the classification table every reader switches on, the links, the scope statements copied from the grammar pages, the reader rules, the log, the matcher's rules, the host contract, the loop with its pass-through list and default verdict, and which tools read readings and which the parse. Every row cites the grammar anchor that decides it; a row with no anchor is still to be classified. The parser side is in [parser pipeline](parser-pipeline.md); construction ids come from `constructionRegistry()` in `src/parse/constructions.ts`.
 
 ## Terms
 
@@ -598,9 +598,30 @@ The probe is the last describe block of `src/interpret/run.test.ts`. It builds a
 5. **Give a `verdict`** only to count framed matches (a host's own precedence). It never picks an order for an unsettled pair.
 6. **Give `accepts`** to refuse parts the host cannot act on yet; it never makes a command run that the loop holds `beyond`.
 7. **Set `window`** when the transcript grows long, and `switches` when a match may widen or infer.
-8. **Never walk the parse tree** for meaning. If a reading lacks what the host needs, the fix is a row in the [classification table](#classification-table), not a local walker. Replies are morph-gloss drafts that `reply.ts` spells and parses.
+8. **Never walk the parse tree** for meaning. If a reading lacks what the host needs, the fix is a row in the [classification table](#classification-table), not a local walker; the same holds for every tool ([parse or reading](#parse-or-reading)). Replies are morph-gloss drafts that `reply.ts` spells and parses.
 
 The wizard's engine is a host: `createGameHost` in `src/game/host.ts`. A call sets the addressee and wakes them, and a call that finds no one is refused, with or without a body. A command to someone other than the one called is refused (*A command goes to the one you called.*). A statement whose subject is the speaker runs that verb's handler.
+
+## Parse or reading
+
+A tool that needs what a sentence says reads readings; a tool that needs how it is written reads the parse. Word order, spelling, brackets, construction ids and morph glosses are form. Roles, frames, what covers what, and what a pronoun or carried frame points to are meaning.
+
+**No tool walks the parse tree or the resolve records for meaning.** The [host](#writing-a-host) rule holds for every tool: when a reading lacks something a tool needs, the fix is a row in the [classification table](#classification-table) or a change to the reader, never a local walker.
+
+| Tool | Reads |
+|------|-------|
+| The loop (`run.ts`), `ask` (`ask.ts`), the matcher (`match.ts`) | readings |
+| The [solver](solver.md) (`solve.ts`, `translate.ts`) | readings |
+| The wizard's engine and host (`src/game/engine.ts`, `src/game/host.ts`) | readings |
+| `scripts/reading.mjs` (`npm run reading`) | readings |
+| The "same reading" lint (`src/lint/reading-equivalence.ts`, called from `practice-item-rules.ts`) | parse, moving to readings |
+| Construction search's frame queries (`frame=`, `--over`, `--under`, `--unordered`, `--diff` in `src/find/`) | parse (resolve scope records), moving to readings |
+| The translation prompt (`src/parse/llm-prompt.ts`, `parse.mjs --llm-prompt`) | parse (morph gloss), moving to readings |
+| Inspect (`src/parse/inspect.ts`) | parse; readings on top. Its word layer runs even when the sentence does not parse. |
+| The doc, morph-gloss, word-bank, number-speech and word-order lints | parse (form) |
+| Retie, tts, pegs, and the lexicon lints | parse (form) |
+| The English helper's `verify` and `coverage`, `gloss-structure.ts` | parse (form) |
+| The wizard's gloss and root gating (`src/game/`) | parse (form) |
 
 ## Pair table
 

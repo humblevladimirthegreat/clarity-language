@@ -14,6 +14,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 3. **Doc sync** — mid-word **`x`** rule order mirrors [compounds.md](/compounds); number stems mirror [numbers.md](/numbers); sentence fences mirror [joins.md](/joins) / [spans.md](/spans) / [clause.md](/clause) / [dependents.md](/dependents).
 4. **Testable stages** — morph fixtures, classify fixtures, sentence fixtures, and resolve fixtures fail independently.
 5. **No design authority creep** — if a parse fork is not in the docs, fix the docs or reject the input; do not paper over with backtracking across stages.
+6. **Form, not meaning** — the parse serves tools that need how a sentence is written; a tool that needs what it says reads readings ([parse or reading](interpreter.md#parse-or-reading)).
 
 ## Non-goals (still out)
 
