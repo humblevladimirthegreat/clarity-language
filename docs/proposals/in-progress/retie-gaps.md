@@ -1,6 +1,6 @@
 # Retie gaps: what a lexicon retie still leaves by hand
 
-**Status:** READY (2026-11-19). The scope follows the 2026-11-19 retie (107 five-letter roots, size-first placement) and a scan for that retie's old spellings left in tracked files. Not design authority; when carried out, the rules live in [retie.md](../../meta/procedures/retie.md) and this file is deleted.
+**Status:** IN PROGRESS (2026-11-19): phase 1 started. The scope follows the 2026-11-19 retie (107 five-letter roots, size-first placement) and a scan for that retie's old spellings left in tracked files. Not design authority; when carried out, the rules live in [retie.md](../../meta/procedures/retie.md) and this file is deleted.
 
 **Related:** [retie.md](../../meta/procedures/retie.md) (known issues), [lexicon.md § respelling a row](../../meta/procedures/lexicon.md#respelling-a-row), [`scripts/retie-docs.ts`](../../../scripts/retie-docs.ts), [`src/retie/`](../../../src/retie/) (`markdown.ts`, `source.ts`, `derived.ts`, `fixtures.ts`), [initials](/initials#initials) and [`src/lint/initials-docs.test.ts`](../../../src/lint/initials-docs.test.ts), [`src/tts/numbers.ts`](../../../src/tts/numbers.ts) (`numberWordToSpeech`), [`src/tts/phonemes.test.ts`](../../../src/tts/phonemes.test.ts), [`src/tts/plan.test.ts`](../../../src/tts/plan.test.ts), [`src/parse/lexicon-check.test.ts`](../../../src/parse/lexicon-check.test.ts), [`src/parse/inspect.test.ts`](../../../src/parse/inspect.test.ts), [`src/find/query.test.ts`](../../../src/find/query.test.ts), [solver.md](../../meta/solver.md).
 

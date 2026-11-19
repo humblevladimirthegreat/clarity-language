@@ -35,6 +35,7 @@ import {
 } from "../src/retie/map.js";
 import { rewriteSourceLiterals } from "../src/retie/source.js";
 import { respellDerived, wordPairsOf } from "../src/retie/derived.js";
+import { respellInitials } from "../src/retie/initials.js";
 import { letterNameTable, respellLetterNames } from "../src/retie/letter-names.js";
 import { lineNumberAt, peelChunk } from "../src/retie/tokens.js";
 import { lexiconConverted, retieTables } from "../src/retie/tables.js";
@@ -334,6 +335,21 @@ async function main(): Promise<void> {
       ...result,
       text: derived.text,
       changes: [...result.changes, ...derived.fixes.map((fix) => ({ from: fix.from, to: fix.to, index: fix.index }))],
+    });
+  }
+
+  // A title's initials (`z@_nl`), their 🔊 lines and English capitals follow the title's roots.
+  for (const [file, result] of results) {
+    const original = sources.get(file)!;
+    const initials = respellInitials(original, result.text, wordPairsOf(result.changes));
+    for (const item of initials.reviews) {
+      review(`${relative(REPO_ROOT, file)}:${lineNumberAt(original, item.index)}  review  \`${item.text}\`  (${item.reason})`);
+    }
+    if (initials.fixes.length === 0) continue;
+    results.set(file, {
+      ...result,
+      text: initials.text,
+      changes: [...result.changes, ...initials.fixes.map((fix) => ({ from: fix.from, to: fix.to, index: fix.index }))],
     });
   }
 
