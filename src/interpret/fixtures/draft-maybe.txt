@@ -1,0 +1,91 @@
+# Draft fixture (R3): MAY (knowing.md#may, #follow-up-endings-may; verb-and-stance-joins.md#stance-join-reach; holder.md#what-the-holder-covers).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Not a solve-* fixture: a later unit renames it once its rows are confirmed and built.
+# P = Alazun left. m1 alone: couldBe P yes, follows P cannot say. m1 + m2: what maybe P says of not P (R3-2). m1 + m3: whether maybe P clashes with P (R3-2).
+
+@ m1
+zalazun thomam vudurul.
+= Alazun may have left.
+
+@ m2
+zalazun vudurul vul.
+= Alazun did not leave.
+
+@ m3
+zalazun vudurul.
+= Alazun left.
+
+# The follow-up ending is data: m4 reads as m1 (R3-1 row 1).
+@ m4
+zalazun thomal vudurul.
+= Alazun may have left; I'll find out.
+
+# Possibly not (R3-1 row 2): the denial is the choice.
+@ m5
+zalazun thomam vudurul vul.
+= Alazun may not have left.
+
+# MAY denied (R3-1 row 3): a plain claim.
+@ m6
+zalazun vudurul thomam thul.
+= Alazun left, and not just maybe.
+
+# MAY as a holder's host (R3-1 row 4, R2-3): your guess about Azozon's view. m7 + m8: one world holds Azozon's two views (R2-2), the other does not.
+@ m7
+zalazun thomamazozon vudurul.
+= Maybe Azozon thinks Alazun left.
+
+@ m8
+zalazun thebamazozon vudurul vul.
+= I hear Azozon thinks Alazun did not leave.
+
+# The holder's own MAY (R3-6): the holder covers the MAY.
+@ m9
+zalazun theyomazozon vudurul thomam.
+= I gather Azozon thinks Alazun may have left.
+
+# MAY over a hinge (R3-1 row 5): order may > clause_hinge by rule. m10 + m12: couldBe "Alazun sits" yes, follows cannot say.
+@ m10
+thomam zalazun vehohel thohem blarl zazozon vowurol.
+= Possibly Alazun sits if Azozon walks.
+
+# A hinge over MAY (R3-1 row 6): blarth first, so the hinge covers the MAY. The condition is the earlier sentence; asking it keeps it unclaimed (Findings).
+@ m11
+yel zazozon vowurol. thohem blarth thomam zalazun vehohel.
+= Does Azozon walk? If so, maybe Alazun sits.
+
+@ m12
+zazozon vowurol.
+= Azozon walks.
+
+# MAY on a hinge's condition (R3-5): MAY sits in the hosted clause.
+@ m13
+zalazun vehohel thohem blarl zazozon thomam vowurol.
+= Alazun sits if Azozon may walk.
+
+# MAY with or (R3-1 row 5 over R3-1 row 8): possibly (exactly one of walk, run). m14 + o4 + o5: no clash, since the world without the list is clash-free.
+@ m14
+zazozon thomam vowurol veruvol vel.
+= Azozon may walk or run (one of the two).
+
+# MAY and an open universal: m15 + m16 give couldBe "Ahelan sleeps" yes (both choices taken), follows cannot say, even with defaults.
+@ m15
+zahelan thomam gogozel.
+= Ahelan may be a cat.
+
+@ m16
+zuam gogozel vezuvel.
+= Cats usually sleep.
+
+# Degrees of likelihood (R3-7).
+@ m17
+zalazun vudurul thraremol.
+= Alazun has left, 70% likely.
+
+@ m18
+zalazun vudurul thrawal.
+= Alazun has certainly left.
+
+@ m19
+zalazun vudurul thramowal.
+= There is no chance Alazun has left.

@@ -1,0 +1,73 @@
+# Draft fixture (R3): or-lists (joins.md#choice-e, set-joins.md#exclusivity-and-denying-a-whole-list).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Not a solve-* fixture: a later unit renames it once its rows are confirmed and built.
+# A = Azozon walks, B = Azozon runs. Bounds (R3-1 row 8): el exactly one, ael / aem at least one, em at most one.
+
+@ o1
+zazozon vowurol veruvol vel.
+= Azozon walks or runs (exactly one).
+
+@ o2
+zazozon vowurol veruvol vael.
+= Azozon walks and/or runs.
+
+@ o3
+zazozon vowurol veruvol vem.
+= Azozon walks or runs, or neither (at most one).
+
+@ o4
+zazozon vowurol vul.
+= Azozon doesn't walk.
+
+@ o5
+zazozon veruvol vul.
+= Azozon doesn't run.
+
+@ o6
+zazozon vowurol.
+= Azozon walks.
+
+# o1 + o4: B follows under R3-3 (B). o1 + o6: not B follows under R3-3 (B). o2 + o6: B cannot say. o3 + o6: not B.
+# o1 + o4 + o5: every world clashes; under R3-3 (B) on shared atoms (A and B themselves).
+
+# An or on z.
+@ o7
+zazozon zalazun zel vowurol.
+= Azozon or Alazun walks (exactly one).
+
+# Every world clashes with no shared atom (for B3's re-solve). Row 8 has no backward rule, so o11 and o12 never deny Ahelan's kind.
+# Worlds: {cat} clash(sleep(ahelan)); {dog} clash(walk(ahelan)); {} clash(noneof(o8)); {cat, dog} clashes on both kinds. Smallest clash: o8, o9, o10, o11, o12.
+@ o8
+zahelan gogozel godozel gel.
+= Ahelan is a cat or a dog (exactly one).
+
+@ o9
+zual gogozel vezuvel.
+= Every cat sleeps.
+
+@ o10
+zual godozel vowurol.
+= Every dog walks.
+
+@ o11
+zahelan vezuvel vul.
+= Ahelan doesn't sleep.
+
+@ o12
+zahelan vowurol vul.
+= Ahelan doesn't walk.
+
+# The open universal's choice: o8 + o13 give couldBe "Ahelan sleeps" yes, follows cannot say, with or without defaults (the dog world has no cat).
+@ o13
+zuam gogozel vezuvel.
+= Cats usually sleep.
+
+# Not exactly one (R3-1 row 7): both, or neither. o14 + o6: B follows. o14 + o4: not B follows.
+@ o14
+zazozon vowurol veruvol vel vul.
+= Azozon does not do exactly one of walk and run (both, or neither).
+
+# Not at least one (R3-1 row 7): the whole list denied, so neither.
+@ o15
+zazozon vowurol veruvol vael vul.
+= Azozon does not walk and/or run.

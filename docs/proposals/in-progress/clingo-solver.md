@@ -20,6 +20,15 @@ No unit edits prose under `docs/grammar/`, so there is no style gate and no reca
 - `translate.test.ts` translates every `src/interpret/fixtures/solve-*.txt`, requires an empty `left`, and writes or checks a golden `solve-*.lp`. R2's fixtures are `draft-holders.txt` (b1–b11), `draft-say.txt` (p1–p9) and `draft-because.txt` (c1–c13); the unit that builds a fixture's rows renames it to `solve-*.txt` with `git mv` and drops or splits out any line whose row the user did not confirm.
 - R2's two reader gaps ([Findings](#findings)) are B0b's.
 
+### Before phase 3: draft *maybe* and *or*
+
+User, 2026-11-19: settle MAY now (B3-1 as A, run before phase 3), so the R2 and R3 rows are confirmed in one round and phase 3 builds them all.
+
+**R3 Draft the MAY and *or* rows.**  
+`proposal-worker`, `model: opus`, effort `high`.  
+As R2, reading [solver.md](../../meta/solver.md) for the encoding: rows for MAY (`knowing.md`) and for *or* (`e` lists, `set-joins.md`), each citing its [classification table](../../meta/interpreter.md#classification-table) row and grammar anchor. They make several worlds, so each row says what `follows` (cautious) and `couldBe` (brave) answer, and how it meets a stated denial and the open universal's choice. Include a MAY on a holder (R2-3) and on a hinge's condition, MAY with *or*, and at least one fixture where every world clashes with no shared atom, for B3's re-solve. Where `knowing.md` or `set-joins.md` does not state a reading (what *maybe P* says of *not P*, degrees of likelihood, inclusive or exclusive *or*), that is an open decision with options, never a choice. F1-style fixtures in `src/interpret/fixtures/draft-maybe.txt` and `draft-or.txt` (not `solve-*`), checked with `parse.mjs`. Rows go under **Open decisions** as R3-1 (rows that copy a stated rule), R3-2, … with recommendations; R2-3 is revised in place to name the R3 row it would follow; sentences the grammar cannot say go in **Findings**.  
+**May edit:** new `src/interpret/fixtures/draft-*.txt`, this proposal (Open decisions and Findings only).
+
 ### Phase 3: build groups (b) and (c), and what stands
 
 **B0b Reader fixes for holders and *only because*.**  
@@ -126,7 +135,7 @@ b6, *Maybe Azozon thinks Alazun left.* MAY has no row yet (`docs/meta/solver.md`
 - (B) A choice, `{ holds(view(H, T)) } :- on(Id).`: Azozon could think it.
 - (C) As a channel host: the view holds.
 
-**Recommendation:** (A) **(medium)**. (B) is what a MAY row would give, so it lands with that row and both read the same; (C) claims more than *maybe*.
+**Recommendation:** (B) **(medium)**, as R3-1 row 4 drafts it (with R3-2 for a stated denial of the view); (A) only if the MAY rows are not confirmed. (B) is what the MAY row gives, so both read the same; (C) claims more than *maybe*.
 
 ### R2-4: holder terms no page ties together
 
@@ -227,6 +236,82 @@ Under choices, attacks come from the brave `fired` atoms of a first run; the `at
 
 **Recommendation:** (A) **(high)**. Grounded has one answer, is stratified and fast, and never accepts a reading an unanswered objection meets, so a consumer never shows one side of a live disagreement as the winner. Note for the user: with R2-12 (A) every attack is mutual, so grounded is exactly the unattacked readings, and the stable and preferred extensions are the largest sets with no attacking pair. The three semantics differ only once a one-way attack exists (R2-12 (C), or a host's own).
 
+### R3-1: rows that copy a stated rule
+
+R3 drafted the MAY and *or* rows on 2026-11-19, in the same encoding. Fixtures: `src/interpret/fixtures/draft-maybe.txt` (m1–m19) and `draft-or.txt` (o1–o15); every line parses. These rows make several worlds: `follows` is cautious (in every world) and `couldBe` brave (in some world), so MAY alone never makes anything follow. Not drafted: `ue` and `oe` lists, MAY in a question (`yel … thomal`), a stance number's other markers (`th_N`, `th#N`).
+
+Each row reads one classification table row and copies what its grammar anchor states. To confirm. How a row meets a stated denial is R3-2; how the *or* bounds are written is R3-3.
+
+1. **MAY on a claim.** `overlay:may:th` (frame:stance) (`knowing.md#may`: "the sentence now says the leaving is possible, not that it happens"). `{ holds(T) } :- on(Id).` The ending (`thomal`, `thomam`, `thomar`) adds no rule and is kept in `Translation.notes` (`knowing.md#follow-up-endings-may`: it says only "whether you mean to follow up"). m1 alone: `follows` *did Alazun leave?* gives *cannot say*, `couldBe` gives *yes*; m4 reads as m1. With an open universal (row 10) both choices are free: m15 + m16 give `couldBe` *does Ahelan sleep?* *yes* and `follows` *cannot say*, with defaults too, since one world has no cat.
+2. **Possibly not.** `joinSeries:u` on the verb under MAY (rule 2; [scope statements](../../meta/interpreter.md#scope-statements): "*Possibly not* … on the verb (`vowurol vul`, under MAY by rule 2)"). `{ holds(neg(T)) } :- on(Id).` m5: `couldBe` *Alazun didn't leave?* *yes*.
+3. **MAY denied.** `joinSeries:u` in MAY's stance list (`verb-and-stance-joins.md#stance-join-reach`: `thomam thul`, "Azozon walks, and not just maybe"). Row 1 of `docs/meta/solver.md`, `holds(T) :- on(Id).`, with the frame in `Translation.notes` as row 16. This is the edge's *denial of a stance* for MAY. m6.
+4. **MAY as a holder's host.** `xFamily:holder` with host `overlay:may:th` (`holder.md#what-the-holder-covers`: the seam word "says how you know about the holder's view: you inferred it, heard it, or guess it"). R2-1 row 1 as a choice: `{ holds(view(H, T)) } :- on(Id).`, and `{ holds(view(H, neg(T))) } :- on(Id).` for a denial. A later bare sentence it carries to takes R2-1 row 2 unchanged, a plain view (`holder.md#naming-a-holder`: "A holder on MAY carries too, but the MAY itself covers only its own sentence"). m7 + m8: one world holds both of Azozon's views and the R2-2 clash, the other does not, so no clash; `couldBe` *does Azozon think Alazun left?* *yes*.
+5. **MAY over a hinge or an *or* list.** Order `overlay:may:th > overlay:clause_hinge:th` (rule) (the `hinge` × `stance` row of the [pair table](../../meta/interpreter.md#pair-table): `thomam … thohem blarl` is "possibly (Azozon walks if Alazun talks)"); MAY over a list term by text order (`clause.md#which-covers-which`). A gate: `{ maybe(Id) } :- on(Id).`, and every rule of the content (rows 5 to 7, R3-1 row 8) takes `maybe(Id)` beside `on(Id)` in its body. m10 + m12: `couldBe` *does Alazun sit?* *yes*, `follows` *cannot say*. m14 + o4 + o5: no clash, since the world without the gate is clash-free.
+6. **A hinge over MAY.** Order `overlay:clause_hinge:th > overlay:may:th` (rule), the `blarth` hinge put first (`stand-in-vowels.md#stand-in-back`). Row 5's forward rule as a choice, `{ holds(Out) } :- fits(c(Id), P), holds(P), on(Id).`, and no backward rule: a denied outcome says nothing of the condition, since the outcome was only possible. m11 + m12: `couldBe` *does Alazun sit?* *yes*.
+7. **Whole-list denial of an *or* list.** `joinSeries:u` over a closed `e` / `ae` list as its one item (`set-joins.md#exclusivity-and-denying-a-whole-list`: "single-item *not X* with the whole list as X"; `vel vul` is "not exactly one … (both, or neither)"). `vael vul` (o15) denies at least one: each item denied, as `vowurol veruvol vul`. `vel vul` (o14): for each item k, `clash(notone(Id)) :- holds(T[k]), holds(neg(T[j])), …, on(Id).` with every other item denied in the body, joined on `fits(i(Id, K), P)` as row 4; with two items also `holds(T[2]) :- holds(T[1]), on(Id).` and `holds(neg(T[2])) :- holds(neg(T[1])), on(Id).`, both ways. `vem vul` (at least two) adds the same clash with no item held. o14 + o6: *does Azozon run?* *yes*.
+8. **The *or* bounds.** `joinSeries:e`, `joinSeries:ae` (structure: a list term) (`joins.md#choice-e`: closed `-l` "exactly one", open `-m` optional; `set-joins.md#exclusivity-and-denying-a-whole-list`: "`e` alone is still at most one", and on `ae` "even `-m` still needs at least one … at least one is true without saying how many"). So `el` exactly one, `em` at most one, `ael` and `aem` at least one. Each item k of the list term is a choice, `{ holds(T[k]) } :- on(Id).`, read from the reading's list term (no `member` facts: `memberList` is for `a`). The bounds are R3-3. Open `aem` adds no rule, since the solver has no term for an item not listed. o1 alone: `couldBe` *does Azozon walk?* *yes*, `follows` *cannot say*. With an open universal: o8 + o13 give `couldBe` *does Ahelan sleep?* *yes* and `follows` *cannot say*, with defaults too (the dog world has no cat).
+
+### R3-2: what *maybe P* says of *not P*, and of *P*
+
+m1 + m2 (*Alazun may have left*; *Alazun did not leave*), and m1 + m3 (*… Alazun left*). `knowing.md#may` says MAY claims the possibility, "not that it happens"; no page says whether a stated denial meets it, and `thomam thul` (*not just maybe*) hints that MAY alone means *only maybe*.
+
+- (A) A guarded choice, as row 10: `{ holds(T) } :- not holds(neg(T)), on(Id).` A stated or derived denial wins: no clash, `couldBe P` *no*. A gate (R3-1 row 5) has no single term to guard.
+- (B) An unguarded choice (R3-1 rows 1, 4, 6, 8 as written), with R3-4 (B) dropping the world where P and *not P* clash: the same answers as (A), one mechanism for plain claims, gates and *or* items.
+- (C) As (A), plus a possibility atom that clashes: `holds(may(T)) :- on(Id).` `clash(may(T)) :- holds(may(T)), holds(neg(T)).` m1 + m2 clash.
+- (D) As any of these, plus *maybe P* clashes with a stated *P* (MAY as *only maybe*).
+
+**Recommendation:** (B) with R3-4 (B), else (A) **(medium)**. A log that later settles a guess (`thomal` exists to say *I'll find out*) should read as an update, not a contradiction, so (C) and (D) would flag every resolved *maybe* to a who-knows-what or argument-map consumer. (A) and (B) answer alike; (B) also covers a gated hinge or list, where (A) has nothing to guard.
+
+### R3-3: writing the *or* bounds
+
+The bounds in R3-1 row 8 are stated; how they meet a log is not. A cardinality head (`1 { … } 1`) makes a log that breaks it have no world at all, against the encoding's derived `clash` atom.
+
+- (A) Clash atoms only: for `el` and `ae`, `some(Id) :- holds(T[k]), on(Id).` per item and `clash(noneof(Id)) :- on(Id), not some(Id).`; for `el` and `em`, `clash(twoof(Id)) :- holds(T[j]), holds(T[k]), on(Id).` per pair.
+- (B) As (A), plus the plain rules the bounds give: for `el` and `em`, `holds(neg(T[j])) :- holds(T[k]), on(Id).` per pair; for `el` and `ae`, `holds(T[k]) :- holds(neg(T[j])), …, on(Id).` with every other item denied (the translator writes each body out), each joined on `fits(i(Id, K), P)` as row 4. The `twoof` atom is then not needed.
+- (C) Hard constraints (`:- on(Id), not some(Id).`): a log that breaks a bound has no world, so `clashes` cannot name an atom.
+
+**Recommendation:** (B) **(medium)**. A logic-grid consumer needs elimination: o1 + o4 gives *Azozon runs* and o1 + o6 *Azozon doesn't run* as plain rules in every world, which closed world and row 10's guard then see; (A) leaves both at *cannot say* unless R3-4 (B) drops the clashing world. The clash atom keeps a world when every item is denied. Under (B), o1 + o4 + o5 clash on A and B in every world; o8 to o12 (row 8 has no backward rule, so nothing denies Ahelan's kind) is the fixture where every world clashes with no shared atom: `{cat}` on `sleep(ahelan)`, `{dog}` on `walk(ahelan)`, `{}` on `noneof(o8)`.
+
+### R3-4: which worlds `follows` and `couldBe` read
+
+With *or*, a world can break a bound and carry a clash: in o1 alone, the world with neither item has `clash(noneof(o1))`. Today both jobs read every world.
+
+- (A) Every world, as today. Reasoning by cases fails: *A or B; if A then C; if B then C* gives *cannot say* for C, and `couldBe` can answer *yes* from a clashing world.
+- (B) Clash-free worlds first: each job adds `:- clash(P).` and solves; if no world is left, it answers from every world as today, where the log's own clash shows as `both`. A one-world log answers exactly as now. This changes `solve.ts`, not only the translator.
+- (C) Fewest clashes: `#minimize { 1, P : clash(P) }` and cautious or brave over optimal worlds. As (B) when a clash-free world exists, finer when none does; whether `clingo-wasm` runs consequences over optimal models is unchecked.
+
+**Recommendation:** (B) **(medium)**. Reasoning by cases is what a consumer expects from *or*, and a guess or an *or* item should never be answered *could be* from a world that cannot hold; the fallback keeps today's `both` for a log that clashes outright. (C) waits until a consumer needs answers inside a clashing log.
+
+### R3-5: MAY on a hinge's condition
+
+m13, *Alazun sits if Azozon may walk*: MAY in the hosted clause. No page says what a condition with MAY means.
+
+- (A) Left out (`left`) until a page states it.
+- (B) The condition is the possibility: every MAY reading also gives `holds(may(T)) :- on(Id).`, a stated T gives `holds(may(T)) :- holds(T).`, and the hinge's body takes `holds(may(T))`. `may(T)` never clashes (R3-2).
+- (C) The MAY is dropped: the condition is T.
+
+**Recommendation:** (A) **(medium)**. (B) is the reading English *if there's a chance* suggests, but it would conclude outcomes from a meaning no page gives; a sentence on `causation.md#if` (or `knowing.md#may`) would settle it, and (B) then follows. (C) claims the outcome from less than the speaker said.
+
+### R3-6: the holder's own MAY
+
+m9, *I gather Azozon thinks Alazun may have left*: the holder covers the MAY (`holder.md#what-the-holder-covers`: MAY with a holder is "the holder's"). A view is data, so it has no worlds of its own.
+
+- (A) A term inside the view, `holds(view(H, may(T))) :- on(Id).`, which never meets `view(H, T)` or `view(H, neg(T))`.
+- (B) Left out.
+- (C) As (A), with R2-5 (B)'s rules running on `may(T)` inside the view.
+
+**Recommendation:** (A) **(medium)**. A who-knows-what consumer asking *does Azozon think Alazun may have left?* gets *yes*, citing m9; R2-2's clash inside a view stays for plain views, as R3-2 (B) keeps a guess from clashing. (C) waits on R2-5.
+
+### R3-7: degrees of likelihood
+
+`lexReading:number` on `/th/` (frame:stance, `number-roles.md#number-as-stance-by-marker`): `thraremol` *70% likely* (m17), `th+` *likely*; `special-values.md#special-number-as-stance`: `thrawal` "certain: not an estimate" (m18), `thramowal` "no chance at all: ruled out, not just 0%" (m19), while `th+100` and `th+0` "are still estimates". No page ties a figure to what holds.
+
+- (A) Every estimate is R3-1 row 1's choice, with the figure as data, `likely(Id, V)`; certain is a plain claim (row 1) and no chance a denial (row 2), as the page says both step outside the estimate.
+- (B) As (A), plus a threshold option (say 90) above which an estimate counts as a claim, named in the answer as a switch.
+- (C) Left out.
+
+**Recommendation:** (A) **(medium)**. It copies the page's one sharp line (estimate or not) and keeps the figure for a consumer that ranks by it; a threshold is a host's policy, which (B) could add later as a switch. Under (A) a 0% estimate still *could be*, as the page's "not just 0%" implies.
+
 ### B3-1: *or* and *maybe*
 
 B3 built clashes under choices, but the translator has no row for *or* (`e` lists: a list term with no member rule and no choice, so one world) or for MAY, and an open universal's choice never forces a clash. So no fixture has every world clashing with no shared atom; the code handles that case in general terms but no test reaches it. R2-3 also waits on MAY's row.
@@ -239,6 +324,8 @@ B3 built clashes under choices, but the translator has no row for *or* (`e` list
 ## Findings
 
 F1 found no sentence the grammar could not say. R2 found none either: every English line in the three draft fixtures has a form, *not because* included (`thahum thul blarl`, `verb-and-stance-joins.md#stance-join-before-barl`).
+
+R3 found one. *If Azozon walks, maybe Alazun sits*, with the hinge over MAY and the condition unclaimed: a `blarl` hinge sits last, so MAY anywhere in the main clause covers it (*possibly (Alazun sits if Azozon walks)*, `thomam zalazun vehohel thohem blarl zazozon vowurol.`), and a `blarth` hinge put first covers MAY but points back to an earlier sentence, which a statement claims. Workaround: ask the condition first, `yel zazozon vowurol. thohem blarth thomam zalazun vehohel.` (*Does Azozon walk? If so, maybe Alazun sits.*, m11), or take MAY over the hinge.
 
 R2 found two gaps in what a reading carries; B0b fixes them before B6 and B7 (the fix is the reader or a classification table note, not a walker):
 
