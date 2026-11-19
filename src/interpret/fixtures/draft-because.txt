@@ -4,25 +4,6 @@
 # Each group comment names the row, the entries that make one log (in that order), the question, the verdict the row
 # should give, and the verdict now (one probe run, 2026-11-19, commit 0184a2d8).
 
-# R4b-1: a noun condition on a hinge. bc1: the link and both sides claimed, each noun its kind (now: left noRow
-# overlay:clause_hinge:g). bc2: `if` rows on the kinds (now: left). bc3, ? zahelan vayebel. -> unknown, the condition
-# is not claimed (now: unknown, left noRow overlay:clause_hinge:th). bc4, ? zazozon vowurol. -> yes (now: unknown, left).
-@ bc1
-zerulal gahum blugalal.
-= There is rain because of the clouds.
-
-@ bc2
-zerulal gohem blugalal.
-= There is rain if there are clouds.
-
-@ bc3
-zahelan develal vayebel thebem blezalol.
-= Ahelan sees a flower only if there is sun.
-
-@ bc4
-zazozon vowurol thahum blerulal.
-= Azozon walks because of the rain.
-
 # R4b-2: because inside a holder's view. bc5 + bc6: clash(view(azozon, ..)) (now: no clash, bc5 left frameCombination).
 # bc5, ? zalazun vudurul. -> unknown; the view is not your claim (now: unknown, left).
 @ bc5

@@ -26,3 +26,80 @@ zalazun vehohel thehom blarl zazozon vowurol.
 @ h4
 zazozon vowurol vul.
 = Azozon doesn't walk.
+
+# R4e-1: the conditional as a claim term, if(c(Id), o(Id)), onlyif(..), iff(..); the rules of rows 5–7 take it in their body.
+# hg1 + hg2: ? zalazun vehohel. → yes, because hg1, hg2, the why walk passing through if(c(hg1), o(hg1)).
+# hg3 + hg2 (only if, back rule) and hg4 + hg2 (iff): the same → yes.
+@ hg1
+zalazun vehohel thohem blarl zazozon vowurol.
+= Alazun sits if Azozon walks.
+
+@ hg2
+zazozon vowurol.
+= Azozon walks.
+
+@ hg3
+zazozon vowurol thebem blarl zalazun vehohel.
+= Azozon walks only if Alazun sits.
+
+@ hg4
+zalazun vehohel thehom blarl zazozon vowurol.
+= Alazun sits if and only if Azozon walks.
+
+# R4e-2: conditionals meet by their slots. Under a hinge a first mention is written as its kind.
+# hg5 + hg6: clash. hg5, ? zalazun vehohel thohem blarl zodozel vowurol. → yes; ? … zogozel vowurol. → unknown, a cat is
+# not a dog. hg5 + hg7: ? zalazun vehohel. → yes.
+@ hg5
+zalazun vehohel thohem blarl zodozel vowurol.
+= Alazun sits if a dog walks.
+
+@ hg6
+zalazun vehohel thohem thul blarl zodozel vowurol.
+= It isn't so that Alazun sits if a dog walks.
+
+@ hg7
+zodozel vowurol.
+= A dog walks.
+
+# R4e-3: a denied conditional claims neg(T) and nothing else (say-reasons.md#arguments: "only that the link fails").
+# hg1 + hg8: clash. hg8 + hg2: ? zalazun vehohel. → unknown. hg3 + hg9, hg4 + hg10: clash. hg1 + hg10: no clash.
+@ hg8
+zalazun vehohel thohem thul blarl zazozon vowurol.
+= It isn't so that Alazun sits if Azozon walks.
+
+@ hg9
+zazozon vowurol thebem thul blarl zalazun vehohel.
+= It isn't so that Azozon walks only if Alazun sits.
+
+@ hg10
+zalazun vehohel thehom thul blarl zazozon vowurol.
+= It isn't so that Alazun sits if and only if Azozon walks.
+
+# R4e-4: a question over a hinge asks whether the conditional holds. hg1, ? zalazun vehohel thohem blarl zazozon vowurol.
+# → yes; hg8: the same → no; hg2 alone → unknown. hg1 + hg12, ? zahelan vezuvel thohem blarl zazozon vowurol. →
+# unknown: a chained conditional is not stated (no hypothetical reasoning).
+@ hg12
+zahelan vezuvel thohem blarl zalazun vehohel.
+= Ahelan sleeps if Alazun sits.
+
+# R4e-7: a noun outcome under a /ɡ/ hinge is the existence claim isa(nm(Id, z), K) (causation.md#if).
+# hg17 + hg18: ? zerulal. → yes. hg19 + hg20: ? zugalal. → yes. hg21 (row 10): ? zerulal. and ? zugalal. → yes.
+@ hg17
+zerulal gohem blugalal.
+= There is rain if there are clouds.
+
+@ hg18
+zugalal.
+= There are clouds.
+
+@ hg19
+zerulal gebem blugalal.
+= There is rain only if there are clouds.
+
+@ hg20
+zerulal.
+= There is rain.
+
+@ hg21
+zerulal gahum blugalal.
+= There is rain because there are clouds.

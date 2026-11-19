@@ -10,6 +10,10 @@
 % t:0.9 = c10
 % t:0.10 = c12
 % t:0.11 = c13
+% t:0.12 = bc1
+% t:0.13 = bc2
+% t:0.14 = bc3
+% t:0.15 = bc4
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -126,12 +130,16 @@ holds(ezuve(z(alazu))) :- on("t:0.7").
 fired("t:0.7",ezuve(z(alazu))) :- on("t:0.7").
 holds(cause(ezuve(z(alazu)),owuro(z(azozo)))) :- on("t:0.7").
 fired("t:0.7",cause(ezuve(z(alazu)),owuro(z(azozo)))) :- on("t:0.7").
-holds(neg(owuro(z(azozo)))) :- fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
-fired("t:0.7",neg(owuro(z(azozo)))) :- fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
-used("t:0.7",neg(owuro(z(azozo))),neg(P)) :- fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
-holds(ezuve(z(alazu))) :- fits(o("t:0.7"),P), holds(P), on("t:0.7").
-fired("t:0.7",ezuve(z(alazu))) :- fits(o("t:0.7"),P), holds(P), on("t:0.7").
-used("t:0.7",ezuve(z(alazu)),P) :- fits(o("t:0.7"),P), holds(P), on("t:0.7").
+holds(onlyif(c("t:0.7"),o("t:0.7"))) :- on("t:0.7").
+fired("t:0.7",onlyif(c("t:0.7"),o("t:0.7"))) :- on("t:0.7").
+holds(neg(owuro(z(azozo)))) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
+fired("t:0.7",neg(owuro(z(azozo)))) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
+used("t:0.7",neg(owuro(z(azozo))),onlyif(c("t:0.7"),o("t:0.7"))) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
+used("t:0.7",neg(owuro(z(azozo))),neg(P)) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(P,c("t:0.7")), holds(neg(P)), on("t:0.7").
+holds(ezuve(z(alazu))) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(o("t:0.7"),P), holds(P), on("t:0.7").
+fired("t:0.7",ezuve(z(alazu))) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(o("t:0.7"),P), holds(P), on("t:0.7").
+used("t:0.7",ezuve(z(alazu)),onlyif(c("t:0.7"),o("t:0.7"))) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(o("t:0.7"),P), holds(P), on("t:0.7").
+used("t:0.7",ezuve(z(alazu)),P) :- holds(onlyif(c("t:0.7"),o("t:0.7"))), fits(o("t:0.7"),P), holds(P), on("t:0.7").
 % t:0.8
 on("t:0.8").
 holds(owuro(z(azozo))) :- on("t:0.8").
@@ -154,9 +162,59 @@ fired("t:0.10",say(rules,v,u,a,l,owuro(z(azozo)))) :- on("t:0.10").
 on("t:0.11").
 holds(ehohe(z(ahela))) :- on("t:0.11").
 fired("t:0.11",ehohe(z(ahela))) :- on("t:0.11").
+% t:0.12
+on("t:0.12").
+holds(isa(nm("t:0.12",z),erula)) :- on("t:0.12").
+fired("t:0.12",isa(nm("t:0.12",z),erula)) :- on("t:0.12").
+holds(isa(nm("t:0.12",bl),ugala)) :- on("t:0.12").
+fired("t:0.12",isa(nm("t:0.12",bl),ugala)) :- on("t:0.12").
+holds(cause(isa(nm("t:0.12",bl),ugala),isa(nm("t:0.12",z),erula))) :- on("t:0.12").
+fired("t:0.12",cause(isa(nm("t:0.12",bl),ugala),isa(nm("t:0.12",z),erula))) :- on("t:0.12").
+% t:0.13
+on("t:0.13").
+holds(if(c("t:0.13"),o("t:0.13"))) :- on("t:0.13").
+fired("t:0.13",if(c("t:0.13"),o("t:0.13"))) :- on("t:0.13").
+holds(isa(nm("t:0.13",z),erula)) :- holds(if(c("t:0.13"),o("t:0.13"))), fits(c("t:0.13"),P), holds(P), on("t:0.13").
+fired("t:0.13",isa(nm("t:0.13",z),erula)) :- holds(if(c("t:0.13"),o("t:0.13"))), fits(c("t:0.13"),P), holds(P), on("t:0.13").
+used("t:0.13",isa(nm("t:0.13",z),erula),if(c("t:0.13"),o("t:0.13"))) :- holds(if(c("t:0.13"),o("t:0.13"))), fits(c("t:0.13"),P), holds(P), on("t:0.13").
+used("t:0.13",isa(nm("t:0.13",z),erula),P) :- holds(if(c("t:0.13"),o("t:0.13"))), fits(c("t:0.13"),P), holds(P), on("t:0.13").
+% t:0.14
+on("t:0.14").
+holds(onlyif(c("t:0.14"),o("t:0.14"))) :- on("t:0.14").
+fired("t:0.14",onlyif(c("t:0.14"),o("t:0.14"))) :- on("t:0.14").
+holds(neg(ayebe(z(ahela),d(evela)))) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(P,c("t:0.14")), holds(neg(P)), on("t:0.14").
+fired("t:0.14",neg(ayebe(z(ahela),d(evela)))) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(P,c("t:0.14")), holds(neg(P)), on("t:0.14").
+used("t:0.14",neg(ayebe(z(ahela),d(evela))),onlyif(c("t:0.14"),o("t:0.14"))) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(P,c("t:0.14")), holds(neg(P)), on("t:0.14").
+used("t:0.14",neg(ayebe(z(ahela),d(evela))),neg(P)) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(P,c("t:0.14")), holds(neg(P)), on("t:0.14").
+holds(ezalo) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(o("t:0.14"),P), holds(P), on("t:0.14").
+fired("t:0.14",ezalo) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(o("t:0.14"),P), holds(P), on("t:0.14").
+used("t:0.14",ezalo,onlyif(c("t:0.14"),o("t:0.14"))) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(o("t:0.14"),P), holds(P), on("t:0.14").
+used("t:0.14",ezalo,P) :- holds(onlyif(c("t:0.14"),o("t:0.14"))), fits(o("t:0.14"),P), holds(P), on("t:0.14").
+% t:0.15
+on("t:0.15").
+holds(owuro(z(azozo))) :- on("t:0.15").
+fired("t:0.15",owuro(z(azozo))) :- on("t:0.15").
+holds(erula) :- on("t:0.15").
+fired("t:0.15",erula) :- on("t:0.15").
+holds(cause(erula,owuro(z(azozo)))) :- on("t:0.15").
+fired("t:0.15",cause(erula,owuro(z(azozo)))) :- on("t:0.15").
 
 % Fits, from match().
 fits(c("t:0.7"),ezuve(z(alazu))).
 fits(ezuve(z(alazu)),c("t:0.7")).
 fits(o("t:0.7"),owuro(z(azozo))).
 fits(owuro(z(azozo)),o("t:0.7")).
+fits(c("t:0.13"),isa(nm("t:0.12",bl),ugala)).
+fits(isa(nm("t:0.12",bl),ugala),c("t:0.13")).
+fits(c("t:0.13"),isa(nm("t:0.13",bl),ugala)).
+fits(isa(nm("t:0.13",bl),ugala),c("t:0.13")).
+fits(o("t:0.13"),isa(nm("t:0.12",z),erula)).
+fits(isa(nm("t:0.12",z),erula),o("t:0.13")).
+fits(o("t:0.13"),isa(nm("t:0.13",z),erula)).
+fits(isa(nm("t:0.13",z),erula),o("t:0.13")).
+fits(o("t:0.13"),erula).
+fits(erula,o("t:0.13")).
+fits(c("t:0.14"),ezalo).
+fits(ezalo,c("t:0.14")).
+fits(o("t:0.14"),ayebe(z(ahela),d(evela))).
+fits(ayebe(z(ahela),d(evela)),o("t:0.14")).

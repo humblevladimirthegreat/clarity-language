@@ -129,12 +129,16 @@ fired("t:0.8",view(nm("t:0.8",h),neg(uduru(z(alazu))))) :- on("t:0.8").
 on("t:0.9").
 via("t:0.9",clues) :- on("t:0.9").
 fired("t:0.9",via("t:0.9",clues)) :- on("t:0.9").
-holds(view(azozo,uduru(z(alazu)))) :- fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
-fired("t:0.9",view(azozo,uduru(z(alazu)))) :- fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
-used("t:0.9",view(azozo,uduru(z(alazu))),view(azozo,P)) :- fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
-holds(view(azozo,neg(owuro(z(azozo))))) :- fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
-fired("t:0.9",view(azozo,neg(owuro(z(azozo))))) :- fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
-used("t:0.9",view(azozo,neg(owuro(z(azozo)))),view(azozo,neg(P))) :- fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+holds(view(azozo,if(c("t:0.9"),o("t:0.9")))) :- on("t:0.9").
+fired("t:0.9",view(azozo,if(c("t:0.9"),o("t:0.9")))) :- on("t:0.9").
+holds(view(azozo,uduru(z(alazu)))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+fired("t:0.9",view(azozo,uduru(z(alazu)))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+used("t:0.9",view(azozo,uduru(z(alazu))),view(azozo,if(c("t:0.9"),o("t:0.9")))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+used("t:0.9",view(azozo,uduru(z(alazu))),view(azozo,P)) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+holds(view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+fired("t:0.9",view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+used("t:0.9",view(azozo,neg(owuro(z(azozo)))),view(azozo,if(c("t:0.9"),o("t:0.9")))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+used("t:0.9",view(azozo,neg(owuro(z(azozo)))),view(azozo,neg(P))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
 % t:0.10
 on("t:0.10").
 via("t:0.10",clues) :- on("t:0.10").

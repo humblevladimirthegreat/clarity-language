@@ -309,7 +309,9 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
     // R3-6: so is the holder's own MAY, a term inside the view.
     const holder = frames.some((f) => f.key === "xFamily:holder");
     const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || !!f.holderHost || (holder && f.key === "overlay:may:th");
-    const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f));
+    // R4e-4: a condition hinge on a question asks whether the conditional holds; the translator gives its term.
+    const conditional = (f: Reading["frames"][number]): boolean => (f.key === "overlay:clause_hinge:th" || f.key === "overlay:clause_hinge:g") && ["if", "only-if", "iff"].includes(f.values.gloss ?? "");
+    const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f) && !conditional(f));
     if (beyond || question.unread.length) {
       const construction = beyond?.construction ?? question.unread[0]!.construction;
       return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: [{ reading: question.id, construction, key: beyond?.key, reason: "noRow" }] } };
@@ -365,6 +367,19 @@ function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]
   const switches = new Set<SolveSwitch>();
   // A wrapped question (a holder's view, a say word) is matched inside atoms with the same wrap; a plain one, outside any.
   const wrap = p.qid ? p.translation.wraps.get(p.qid) : undefined;
+  // R4e-4: a question over a hinge asks for its conditional, matched through the R4e-2 fits between conditionals.
+  const asked = p.qid ? [...p.translation.conditionals].find(([, c]) => c.reading === p.qid) : undefined;
+  if (asked) {
+    const [tq, cq] = asked;
+    const fits = p.translation.conditionalFits;
+    for (const held of model.holds) {
+      const atom = wrap ? unwrapText(wrap, held) : held;
+      if (atom === undefined) continue;
+      const inner = negOf(atom);
+      if (inner === undefined ? fits.get(tq)?.has(atom) : fits.get(inner)?.has(tq)) (inner === undefined ? yes : no).push(held);
+    }
+    return cq.denied ? { yes: no, no: yes, switches: [] } : { yes, no, switches: [] };
+  }
   for (const held of model.holds) {
     // A wrapped denial, `neg(say(..))` (a ban's denied permission), rules out the question inside the same wrap.
     const denial = wrap ? negOf(held) : undefined;

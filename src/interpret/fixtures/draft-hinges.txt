@@ -1,69 +1,15 @@
-# Draft solver fixture (solver-coverage R4e): a claim term for the conditional (if, only if, iff), its denial
-# (`thohem thul blarl`), a question over a hinge, a holder's conditional, MAY over a hinge, and a noun outcome under a
-# `/ɡ/` hinge. Drafted rows only: phase 3 moves each group into solve-hinges.txt when it builds the row.
+# Draft solver fixture (solver-coverage R4e): a conditional denied beside a channel, a holder's conditional, MAY over a
+# hinge, and a denied hinge on a universal. Drafted rows only: phase 3 moves each group into solve-hinges.txt when it
+# builds the row. The built R4e rows (hg1–hg10, hg12, hg17–hg21) are in solve-hinges.txt.
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # Read as one log, the entries do not all stand together; each comment names the entries a verdict reads (as their own case) and the verdict now.
 # A = Azozon walks, B = Alazun sits.
 
-# R4e-1: the term. hg1 + hg2: ? zalazun vehohel. → yes, because hg1, hg2, and the why walk passes through if(c(hg1), o(hg1)) (now: yes, because hg1, hg2).
-# hg3 + hg2: ? zalazun vehohel. → yes (only if, back rule; now: yes). hg4 + hg2: the same for iff (now: yes).
-@ hg1
-zalazun vehohel thohem blarl zazozon vowurol.
-= Alazun sits if Azozon walks.
-
-@ hg2
-zazozon vowurol.
-= Azozon walks.
-
-@ hg3
-zazozon vowurol thebem blarl zalazun vehohel.
-= Azozon walks only if Alazun sits.
-
-@ hg4
-zalazun vehohel thehom blarl zazozon vowurol.
-= Alazun sits if and only if Azozon walks.
-
-# R4e-2: matching by slots. Each reading's "a dog" is its own nm(..) constant; the conditionals still meet through fits facts on their slots.
-# hg5 + hg6: clash (now: hg5 left noRow overlay:clause_hinge:th, hg6 left noRow joinSeries:u). hg5 then ? zalazun vehohel thohem blarl zodozel vowurol. → yes (now: beyond).
-# hg5 + hg7: ? zalazun vehohel. → yes (now: unknown, hg5 left). hg5 then ? zalazun vehohel thohem blarl zogozel vowurol. → unknown, a cat is not a dog (now: beyond). hg5 needs the condition's slot:newMember accepted (Findings 1).
-@ hg5
-zalazun vehohel thohem blarl zodozel vowurol.
-= Alazun sits if a dog walks.
-
-@ hg6
-zalazun vehohel thohem thul blarl zodozel vowurol.
-= It isn't so that Alazun sits if a dog walks.
-
-@ hg7
-zodozel vowurol.
-= A dog walks.
-
-# R4e-3: a denied conditional (verb-and-stance-joins.md#stance-join-before-barl; say-reasons.md#arguments: "only that the link fails").
-# hg1 + hg8: clash (now: hg8 left noRow). hg8 + hg2: ? zalazun vehohel. → unknown (now: left).
-# hg3 + hg9: clash. hg4 + hg10: clash. hg1 + hg10: no clash (not both ways, while one way holds).
-# hg1 + hg11: clash, once D8 says what the denied channel in the same stance list adds (now: left).
-@ hg8
-zalazun vehohel thohem thul blarl zazozon vowurol.
-= It isn't so that Alazun sits if Azozon walks.
-
-@ hg9
-zazozon vowurol thebem thul blarl zalazun vehohel.
-= It isn't so that Azozon walks only if Alazun sits.
-
-@ hg10
-zalazun vehohel thehom thul blarl zazozon vowurol.
-= It isn't so that Alazun sits if and only if Azozon walks.
-
+# R4e-3 with a channel: hg1 (solve-hinges.txt) + hg11: clash, once D8 says what the denied channel in the same stance
+# list adds (now: hg11 left noRow joinSeries:u).
 @ hg11
 zalazun vehohel thanam thohem thul blarl zazozon vowurol.
 = That Alazun sits doesn't follow from Azozon walking.
-
-# R4e-4: a question over a hinge (questions.md#question, order edge:force > overlay:clause_hinge:th).
-# hg1: ? zalazun vehohel thohem blarl zazozon vowurol. → yes (now: beyond, the question left noRow overlay:clause_hinge:th). hg8: the same → no. hg2 alone: → unknown.
-# hg1 + hg12: ? zahelan vezuvel thohem blarl zazozon vowurol. → unknown (a chained conditional is not stated; no hypothetical reasoning).
-@ hg12
-zahelan vezuvel thohem blarl zalazun vehohel.
-= Ahelan sleeps if Alazun sits.
 
 # R4e-5: a holder's conditional (holder.md#what-the-holder-covers; solver.md Holders row 4).
 # hg13 + hg14: ? zalazun theyomazozon vehohel. → yes (now: yes). hg13 + hg15: clash in Azozon's view (now: hg15 left). hg1 + hg15: no clash.
@@ -84,33 +30,6 @@ zalazun theyomazozon vehohel thohem thul blarl zazozon vowurol.
 @ hg16
 thomam zalazun vehohel thohem blarl zazozon vowurol.
 = If Azozon walks, maybe Alazun sits.
-
-# R4e-7: a noun outcome under a /ɡ/ hinge (causation.md#if: "a noun outcome says *there is X if there is Y*"). User recommendation 1a, not yet confirmed.
-# hg17 + hg18: ? zerulal. → yes (now: left noRow overlay:clause_hinge:g). hg19 + hg20: ? zugalal. → yes (now: left).
-# hg21: ? zerulal. → yes, ? zugalal. → yes (row 10; now: left). hg22: stays left (D15: no person as the outcome).
-@ hg17
-zerulal gohem blugalal.
-= There is rain if there are clouds.
-
-@ hg18
-zugalal.
-= There are clouds.
-
-@ hg19
-zerulal gebem blugalal.
-= There is rain only if there are clouds.
-
-@ hg20
-zerulal.
-= There is rain.
-
-@ hg21
-zerulal gahum blugalal.
-= There is rain because there are clouds.
-
-@ hg22
-zazozon gohem blerulal.
-= There is Azozon if it rains.
 
 # Open decision 2: a denied hinge on a universal. hg23 alone: left (now: left noRow).
 @ hg23

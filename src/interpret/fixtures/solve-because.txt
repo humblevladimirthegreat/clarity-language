@@ -62,3 +62,22 @@ zazozon vowurol hwuval.
 @ c13
 zahelan vehohel.
 = Ahelan sits.
+
+# R4b-1: a noun condition on a hinge reads as its kind; a /ɡ/ outcome is R4e-7's existence claim. bc1: the link and both
+# sides claimed. bc2: the if rows. bc3, ? zahelan vayebel. → unknown, the condition is not claimed. bc4, ? zazozon
+# vowurol. → yes.
+@ bc1
+zerulal gahum blugalal.
+= There is rain because of the clouds.
+
+@ bc2
+zerulal gohem blugalal.
+= There is rain if there are clouds.
+
+@ bc3
+zahelan develal vayebel thebem blezalol.
+= Ahelan sees a flower only if there is sun.
+
+@ bc4
+zazozon vowurol thahum blerulal.
+= Azozon walks because of the rain.

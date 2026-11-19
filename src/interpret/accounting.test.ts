@@ -89,6 +89,10 @@ describe("accounting guard: the drops it catches", () => {
     assert.deepEqual(left("zual geyel gwozeduyol thehom blarl zeyer veduyol."), ["unused anaphor:content"]);
   });
 
+  it("a person as a /ɡ/ hinge's outcome is left (R4e-7, D15)", () => {
+    assert.deepEqual(left("zazozon gohem blerulal."), ["noRow overlay:clause_hinge:g"]);
+  });
+
   it("a plain and list, a hinge, and a resumed pronoun are kept", () => {
     assert.deepEqual(left("zazozon zalazun zal vowurol."), []);
     assert.deepEqual(left("zual gogozel vowurol."), []);

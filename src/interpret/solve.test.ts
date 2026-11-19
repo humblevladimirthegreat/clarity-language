@@ -281,8 +281,8 @@ describe("solve: limits", () => {
   });
 
   it("a question with a frame that has no row is beyond", async () => {
-    const f = fixture("hinges");
-    assert.equal((await follows(log("hinges", ["h3"]), q(f.get("h1")!), base)).verdict, "beyond");
+    // A *because* hinge on a question has no row (R4e-4 covers only if, only if and iff).
+    assert.equal((await follows(log("hinges", ["h3"]), q("zalazun vehohel thahum blarl zazozon vowurol."), base)).verdict, "beyond");
   });
 
   it("splitAtom keeps strings and nested terms whole", () => {
@@ -554,7 +554,7 @@ describe("solve: because, fault, contrary to (R2-1 rows 5 to 9, R2-10, R2-11)", 
 
   it("c8: only because adds only-if on the same condition", async () => {
     const program = translate(c(["c8"]), { lexicon: tables }).program;
-    assert.match(program, /^holds\(neg\(owuro\(z\(azozo\)\)\)\) :- fits\(P,c\("t:0.0"\)\), holds\(neg\(P\)\), on\("t:0.0"\)\.$/m);
+    assert.match(program, /^holds\(neg\(owuro\(z\(azozo\)\)\)\) :- holds\(onlyif\(c\("t:0.0"\),o\("t:0.0"\)\)\), fits\(P,c\("t:0.0"\)\), holds\(neg\(P\)\), on\("t:0.0"\)\.$/m);
     assert.equal((await follows(c(["c8"]), q("zalazun vezuvel."), base)).verdict, "yes");
   });
 
@@ -657,5 +657,53 @@ describe("solve: faithfulness (the 2026-11-19 triage, fixture solve-faithful)", 
     for (const place of ["z1", "z2"]) assert.match(t.program, new RegExp(`^detail\\(nm\\("t:0.0",${place}\\),dt\\("slot:adj","gamayam"\\)\\) :- on`, "m"));
     assert.deepEqual(translate(turns(["a", "f8"]), { lexicon: tables }).left, []);
     assert.equal((await follows(turns(["a", "f8"]), q("zalazun gamayam."), base)).verdict, "yes");
+  });
+});
+
+describe("solve: the conditional as a claim term (R4e-1 to R4e-4, R4e-7, R4b-1)", () => {
+  const h = (labels: string[], extra: string[] = []) => log("hinges", labels, extra);
+  const pairs = async (labels: string[]) => (await clashes(h(labels), base)).clashes.map((x) => x.readings);
+
+  it("R4e-1: hg1 + hg2 answer through the conditional, and each hinge claims its term", async () => {
+    const a = await follows(h(["hg1", "hg2"]), q("zalazun vehohel."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    assert.match(translate(h(["hg1"]), { lexicon: tables }).program, /^used\("t:0\.0",ehohe\(z\(alazu\)\),if\(c\("t:0\.0"\),o\("t:0\.0"\)\)\) :- /m);
+    for (const label of ["hg3", "hg4"]) assert.equal((await follows(h([label, "hg2"]), q("zalazun vehohel."), base)).verdict, "yes", label);
+  });
+
+  it("R4e-2, R4e-3: a denied conditional clashes with one that says at least as much", async () => {
+    assert.deepEqual(await pairs(["hg5", "hg6"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["hg1", "hg8"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["hg3", "hg9"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["hg4", "hg10"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["hg1", "hg10"]), []);
+    assert.equal((await follows(h(["hg8", "hg2"]), q("zalazun vehohel."), base)).verdict, "unknown");
+  });
+
+  it("R4e-2: a first mention in the condition meets a stated one", async () => {
+    assert.equal((await follows(h(["hg5", "hg7"]), q("zalazun vehohel."), base)).verdict, "yes");
+  });
+
+  it("R4e-4: a question over a hinge asks whether the conditional holds", async () => {
+    const asked = q("zalazun vehohel thohem blarl zazozon vowurol.");
+    assert.equal((await follows(h(["hg1"]), asked, base)).verdict, "yes");
+    assert.equal((await follows(h(["hg8"]), asked, base)).verdict, "no");
+    assert.equal((await follows(h(["hg2"]), asked, base)).verdict, "unknown");
+    assert.equal((await follows(h(["hg1", "hg12"]), q("zahelan vezuvel thohem blarl zazozon vowurol."), base)).verdict, "unknown");
+    assert.equal((await follows(h(["hg5"]), q("zalazun vehohel thohem blarl zodozel vowurol."), base)).verdict, "yes");
+    assert.equal((await follows(h(["hg5"]), q("zalazun vehohel thohem blarl zogozel vowurol."), base)).verdict, "unknown");
+  });
+
+  it("R4e-7: a noun outcome under a /ɡ/ hinge is an existence claim", async () => {
+    assert.equal((await follows(h(["hg17", "hg18"]), q("zerulal."), base)).verdict, "yes");
+    assert.equal((await follows(h(["hg19", "hg20"]), q("zugalal."), base)).verdict, "yes");
+    for (const text of ["zerulal.", "zugalal."]) assert.equal((await follows(h(["hg21"]), q(text), base)).verdict, "yes", text);
+  });
+
+  it("R4b-1: a bl- noun condition reads as its kind", async () => {
+    const b = (labels: string[]) => log("because", labels);
+    assert.equal((await follows(b(["bc3"]), q("zahelan vayebel."), base)).verdict, "unknown");
+    assert.equal((await follows(b(["bc4"]), q("zazozon vowurol."), base)).verdict, "yes");
   });
 });
