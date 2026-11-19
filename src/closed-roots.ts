@@ -42,7 +42,7 @@ const CLOSED_ROWS = {
   east: { emoji: "➡️", root: "aho" },
   southeast: { emoji: "↘️", root: "ozuho" },
   south: { emoji: "⬇️", root: "azuho" },
-  southwest: { emoji: "↙️", root: "azoho" },
+  southwest: { emoji: "↙️", root: "uzuho" },
   west: { emoji: "⬅️", root: "ewuho" },
   northwest: { emoji: "↖️", root: "anuho" },
   // no channel on `/th/` (evidentiality.md#evidentiality): a record is REPORTED, a tale NOTIONAL
