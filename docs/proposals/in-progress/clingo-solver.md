@@ -1,80 +1,48 @@
 # A solver behind the interpreter: Clingo for what follows, what clashes, and what stands
 
-**Status:** IN PROGRESS, 2026-11-18. Phase 1 done (S1, S2, F1, R1). User, 2026-11-18: confirmed the group (a) rows, decided R1-2 to R1-9 and S1-1 as recommended (R1-6 as A), and the encoding as the lowest-risk shape, size aside ([Group (a) rows and decisions](#group-a-rows-and-decisions)). Phase 2 is ready. Idea 2026-11-14; researched and spiked 2026-11-18 ([Research](#research)). User, 2026-11-18: the wizard integration comes later; the first jobs are what follows, what clashes and what stands. User, 2026-11-18: adopted the recommendations on open generalizations, the unsaid, numbers, the first rows, the browser, *why not*, and clashes under choices; each is in the Sketch. User, 2026-11-18: the matcher's step conditions are shared TypeScript functions that both engines call (Sketch, *the matcher's steps*).  
-**Related:** the interpreter's reading, log, matcher, host and replies ([interpreter.md](../../meta/interpreter.md), `src/interpret/`, [reading.mjs](../../../scripts/reading.mjs)); grammar pages [usually vs must](/usually-vs-must#general-claims), [causation](/causation), [everything](/joins#everything-ua), [universals](/universals-domains#universals-domains-generics), [knowing](/knowing), [holder](/holder), [contrary to](/contrary-to), [fault](/fault), [because](/because-and-iff), [measures and percent](/measures-and-percent), [ranges](/ranges), [open ranges](/open-ranges); consumers `ageben-spec.md`, `agent-tool-permissions.md`, `argument-map.md`, `knowledge-store.md`, `structural-search.md`, `who-knows-what.md`, `various-interpreter-applications.md`, later `wizard-adventure.md` and `logic-grids.md`; the wizard engine ([wizard-game.md](../../meta/wizard-game.md)).  
-**Depends on:** none (the interpreter's reader, log and matcher have landed). **Order:** none required. `ageben-spec.md` may switch its contradiction check to the solver once phase 2 here lands.  
+**Status:** IN PROGRESS, 2026-11-19. Phase 1 done (S1, S2, F1, R1); phase 2 done (B0, B1, B2, B3, B4, B5, R2), 2026-11-19. Group (a) is built and its confirmed rows, encoding and jobs are in [solver.md](../../meta/solver.md). Phase 2 departed from the confirmed rows in two places, both recorded there: a denial is `holds(neg(T))`, not `-holds(T)` (Clingo's strong negation makes a claim beside its denial unsatisfiable, so no `clash` atom could be derived); and *only if* fires when the condition says at least the denied term (`fits(P, c(Id))`), which agrees with the row whenever the terms are equal. **Waiting on the user:** confirm the group (b) and (c) rows and decide R2-2 to R2-13 and B3-1 ([Open decisions](#open-decisions)); then phase 3. User, 2026-11-18: the wizard integration comes later; the first jobs are what follows, what clashes and what stands; the matcher's step conditions are shared TypeScript functions that both engines call. Idea 2026-11-14; researched and spiked 2026-11-18 ([Research](#research)).  
+**Related:** [solver.md](../../meta/solver.md); the interpreter's reading, log, matcher, host and replies ([interpreter.md](../../meta/interpreter.md), `src/interpret/`, [reading.mjs](../../../scripts/reading.mjs)); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [contrary to](/contrary-to), [causation](/causation); consumers `ageben-spec.md`, `agent-tool-permissions.md`, `argument-map.md`, `knowledge-store.md`, `structural-search.md`, `who-knows-what.md`, `various-interpreter-applications.md`, later `wizard-adventure.md` and `logic-grids.md`; the wizard engine ([wizard-game.md](../../meta/wizard-game.md)).  
+**Depends on:** none. `ageben-spec.md` may now switch its contradiction check to the solver.  
 **Design authority:** *none*. Tooling only: it adds no form and changes no reading. Each translation row states what the solver concludes from a frame family as the grammar page already teaches it; where a row needs a meaning the grammar pages do not state, that is an open decision for the user, and the row waits.
 
 ## Implementation plan
 
-Run with subagents. Phase 1 is done; two phases are left. Each ends where the user confirms translation rows, which later units build on ([phases](../../meta/procedures/proposal-plans.md#phases)). At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends, then stops and gives the prompt for the next phase.
+Run with subagents. Phases 1 and 2 are done; phase 3 is left, and starts once the user has confirmed the group (b) and (c) rows. At its end the orchestrator runs the final gate and deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)).
 
 No unit edits prose under `docs/grammar/`, so there is no style gate and no recall gate.
 
-**What phase 1 left for later units.**
+**What phase 2 left for phase 3.**
 
-- `clingo-wasm` 0.6.0 is a dependency and runs under Node 24 with `tsx`. A program text over about 1 MiB fails, and grounding many rules on one shared predicate grows faster than linearly ([Research](#research), S1's table).
-- `src/interpret/steps.ts` exports `memberList`, `collective`, `claimMemberLists`, `asMember`, `universalInstance`, `compoundHeads(term, lexicon)`, `throughAntecedent` (`match.ts` re-exports it), and the types `StepLexicon` and `ListTerm`; `steps.test.ts` has a case for each.
-- Fixtures are `src/interpret/fixtures/solve-{worked,clash,hinges,denial,lists,compound,numbers}.txt`: a label line `@ <id>`, one Ageben line, `= <English>`; `#` starts a comment. The house cast stands in for the Sketch's names (Azozon for Pingu, Ahelan for Robin, Alazun for Tweety), and *fly* is `v-wing` (`vewobol`). Ids and texts per fixture are in each file.
-- The confirmed group (a) rows and the encoding are under [Group (a) rows and decisions](#group-a-rows-and-decisions); B1 builds them.
-
-### Phase 2: fix the reader, build group (a), draft groups (b) and (c)
-
-**B0 Reader fixes.**  
-`proposal-worker`, `model: opus`, effort `high`. For R1-2 and R1-7.  
-In the reader: `zul` + kind with no members classifies as `shared:kind` after its `u` fence, with the fence a frame:binder carrying its polarity (R1-2); a span between two numbers in a counted noun phrase is a `detail:range` on the noun's number term, both ends there (R1-7). A test for each, and the [classification table](../../meta/interpreter.md#classification-table) rows changed in the same edit. The grammar pages already state both readings (`universals-domains.md#universals-domains-generics`, `ranges.md#ranges`, `open-ranges.md#rays`), so no grammar page changes; if one turns out not to, stop and report.  
-**May edit:** `src/interpret/read.ts`, `src/interpret/classes.ts`, their tests, `src/interpret/coverage-ratchet.json` if the coverage test asks, `docs/meta/interpreter.md` (classification table rows).
-
-**B1 Translator.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-`src/interpret/translate.ts`: a log (readings, nested ones included) to a Clingo program, from the confirmed group (a) rows only. Claims become terms, frames wrap them, every reading gets `on(Id)`, every rule carries its reading id and derives `fired`. Fitting stays the matcher's ([Sketch](#sketch)): fits computed with `match` and emitted as facts. Step facts come from `steps.ts`. Number order facts from `compareValues`. A frame with no row is left out and reported per reading, as `unread` is. The program text keeps to the Clingo 5 / 6 common ground ([Research](#research)). `translate.test.ts`: golden program text per F1 fixture. Report the encoding (atom shapes, what a fit fact holds) in the report, for B5. Add the fixtures R1 found missing, checked with `parse.mjs`: a whole-list denial (R1-1 row 4), and `hual` / `hal` (R1-6, decided A). The encoding is E1; speed and size are not optimized in this proposal.  
-**May edit:** `src/interpret/translate.ts`, `src/interpret/translate.test.ts`, `src/interpret/fixtures/solve-*`.
-
-**B2 Solve and explain.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-`src/interpret/solve.ts`, the only importer of `clingo-wasm`: `follows(log, question, options)` (cautious), `couldBe` (brave), and `clashes(log)`. Options: `defaults` (everyday defaults for open universals), `closedWorld` (the unsaid is false); an answer that used either names it, as `Match.switches` does. A question answers *yes*, *no* or *cannot say* per the [Sketch](#sketch), with `because` as the reading ids from the `fired` walk, ready for `whyReply`. `clash` atoms with the one removal pass. A program text over about 1 MiB is refused with a reply that says so, never a crash; brave runs pass `--quiet=1` (S1: 2.0 s without it at 2,000 readings, 0.3 s with). Tests: the worked example's answers and *why* ids, the two smallest clashes, the hinge chain, numbers, and that the two engines agree on every one-step `widen` and `infer` case in `match.test.ts`.  
-**May edit:** `src/interpret/solve.ts`, `src/interpret/solve.test.ts`.
-
-**B3 Clashes under choices.**  
-`proposal-worker`, `model: opus`, effort `medium`.  
-In `solve.ts`, as decision S1-1 settles: when the program has more than one world, re-solve with the switch atoms free: one optimization run for a smallest set to give up (`giveUp(log)`), and QuickXplain for a smallest clash; `clashes` uses them only when needed. *Why not*: `whyNot(log, claim)` adds the claim as a reading and returns the smallest clash it joins. Tests on fixtures with *or* and open universals, and on the clash example (sets {s1, s2, s3}, {s1, s4, s5}; give up {s1}).  
-**May edit:** `src/interpret/solve.ts`, `src/interpret/solve.test.ts`, `src/interpret/fixtures/solve-*`.
-
-**B4 Entries: CLI and browser.**  
-`proposal-worker`, `model: opus`, effort `medium`.  
-`reading.mjs solve [--json] [--possible] [--defaults] [--closed] [--window N] FILE '<question>'`, plus `reading.mjs clashes [--give-up] FILE`, with replies drafted through `reply.ts` (*why*, *these cannot all hold*). Browser: `src/interpret/solve-browser.ts` that loads `clingo-wasm` in a worker on the first call, exported beside `browser.ts`, and a test that a Vite build of a one-line entry importing it succeeds (`worker: { format: "es" }`). If the site's build cannot bundle the worker, stop and report.  
-**May edit:** `src/interpret/cli.ts`, `src/interpret/cli.test.ts`, `scripts/reading.mjs`, `src/interpret/solve-browser.ts`, `src/interpret/browser.ts`, a test file beside them.
-
-**B5 Meta note.**  
-`proposal-worker`, `model: opus`, effort `medium`.  
-`docs/meta/solver.md` from what B1 to B4 produced: the encoding, the confirmed group (a) translation table (each row citing its classification table row and grammar anchor), the API and its options, what each job returns, the CLI, and the rule that each new row is confirmed by the user when written. One line in [interpreter.md](../../meta/interpreter.md) under [switches](../../meta/interpreter.md#switches) pointing to it, and `steps.ts` named where that note lists the matcher's files. Report an `AGENTS.md` Editor notes row (solver: translation table, encoding, jobs); the orchestrator applies it.  
-**May edit:** `docs/meta/solver.md`, `docs/meta/interpreter.md` (two lines).
-
-**R2 Draft the group (b) and (c) rows.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-As R1, for holders and say words (group (b)) and because, contrary-to and fault (group (c)), reading `docs/meta/solver.md` for the encoding. For group (c), also draft the attack relation *what stands* uses: which stated relations count as an attack between two readings, and which semantics a consumer gets by default (grounded, with stable and preferred as options). Add F1-style fixtures for each row, checked with `parse.mjs`. Rows go under **Open decisions** with recommendations.  
-**May edit:** `src/interpret/fixtures/solve-*`, this proposal (Open decisions and Findings only).
-
-**Order:** B0, B1, B2, B3, B4, B5, R2, in sequence (shared files). The orchestrator applies the `AGENTS.md` row after B5 and commits it with B5. **Stop for the user to confirm the group (b) and (c) rows.**
+- [solver.md](../../meta/solver.md) holds the encoding, the group (a) translation table, the jobs and their options, the CLI, and the edge (what has no row yet). Every unit reads it first; B8 extends it.
+- `src/interpret/translate.ts`: `translate(log, {lexicon, switches})` returns `{program, readings, terms, slots, left, notes}`. A reading with no row is listed in `left` with reason `noRow` and the frame's key. `speaker` and `listener` are constants, not tied to the turn: group (b) rows that need the turn's speaker fix that in B6.
+- `src/interpret/solve.ts`: `follows`, `couldBe`, `clashes`, `giveUp`, `whyNot` (verdicts yes / no / unknown / `both` / `beyond` / `refused`); clashes under choices by QuickXplain and a hitting-set tree. `stands` is B7's.
+- `reading.mjs solve` and `reading.mjs clashes` are in `src/interpret/cli.ts`; `reply.ts` has `clashReply` and `giveUpReply`; `src/interpret/solve-browser.ts` is the browser entry (a site page that imports it needs `build.target: 'es2022'`).
+- `translate.test.ts` translates every `src/interpret/fixtures/solve-*.txt`, requires an empty `left`, and writes or checks a golden `solve-*.lp`. R2's fixtures are `draft-holders.txt` (b1–b11), `draft-say.txt` (p1–p9) and `draft-because.txt` (c1–c13); the unit that builds a fixture's rows renames it to `solve-*.txt` with `git mv` and drops or splits out any line whose row the user did not confirm.
+- R2's two reader gaps ([Findings](#findings)) are B0b's.
 
 ### Phase 3: build groups (b) and (c), and what stands
 
+**B0b Reader fixes for holders and *only because*.**  
+`proposal-worker`, `model: opus`, effort `high`.  
+The two gaps in [Findings](#findings): a `-n` holder party is marked named on the `xFamily:holder` frame, as the same name in a role is; the stacked `thebem` frame carries its condition (the `thahum` frame's clause), as a link or a note, per `because-and-iff.md#choosing-a-hinge`. A test for each, and the [classification table](../../meta/interpreter.md#classification-table) rows changed in the same edit. If either needs a reading the grammar pages do not state, stop and report.  
+**May edit:** `src/interpret/read.ts`, `src/interpret/classes.ts`, their tests, `src/parse/scope.ts` (frame rows only), `src/interpret/coverage-ratchet.json` if the coverage test asks, `docs/meta/interpreter.md` (classification table rows).
+
 **B6 Holders and say words.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-The confirmed group (b) rows in `translate.ts`, with golden programs and `solve.test.ts` cases: one holder's own beliefs can clash, two holders' never do, a say word's content stays wrapped.  
-**May edit:** `src/interpret/translate.ts`, `src/interpret/translate.test.ts`, `src/interpret/solve.test.ts`, `src/interpret/fixtures/solve-*`.
+The confirmed group (b) rows (R2-1 rows 1 to 4 and R2-2 to R2-9 as decided) in `translate.ts`, with golden programs and `solve.test.ts` cases: one holder's own beliefs can clash, two holders' never do, a say word's content stays wrapped. `git mv` `draft-holders.txt` and `draft-say.txt` to `solve-*`.  
+**May edit:** `src/interpret/translate.ts`, `src/interpret/translate.test.ts`, `src/interpret/solve.ts` (only where a decided row changes a verdict or a reply, such as a holder named in a clash), `src/interpret/solve.test.ts`, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`.
 
 **B7 What stands.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-The confirmed group (c) rows in `translate.ts`, the attack relation, and `stands(log, options)` in `solve.ts` with the ASPARTIX encodings (grounded by default; stable and preferred as options), credulous through brave and skeptical through cautious consequences. `reading.mjs stands [--semantics S] FILE`. Tests on the R2 fixtures.  
-**May edit:** `src/interpret/translate.ts`, `src/interpret/solve.ts`, their tests, `src/interpret/cli.ts`, `scripts/reading.mjs`, `src/interpret/fixtures/solve-*`.
+The confirmed group (c) rows (R2-1 rows 5 to 9, R2-10, R2-11) in `translate.ts`, the attack relation (R2-12), and `stands(log, options)` in `solve.ts` with the ASPARTIX encodings (R2-13), credulous through brave and skeptical through cautious consequences. `reading.mjs stands [--semantics S] FILE`. Tests on the R2 fixtures; `git mv` `draft-because.txt` to `solve-because.txt`.  
+**May edit:** `src/interpret/translate.ts`, `src/interpret/solve.ts`, their tests, `src/interpret/cli.ts`, `src/interpret/cli.test.ts`, `scripts/reading.mjs`, `src/interpret/solve-browser.ts`, `src/interpret/browser.ts`, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`.
 
 **B8 Meta note, groups (b) and (c).**  
 `proposal-worker`, `model: sonnet`, effort `medium`.  
-Add the confirmed rows, the attack relation, `stands` and its CLI to `docs/meta/solver.md`. Report any change to the `AGENTS.md` row.  
+Add the confirmed rows, the attack relation, `stands` and its CLI to [solver.md](../../meta/solver.md), and update its edge. Report any change to the `AGENTS.md` row.  
 **May edit:** `docs/meta/solver.md`.
 
-**Order:** B6, B7, B8, in sequence. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)).
+**Order:** B0b, B6, B7, B8, in sequence. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), or cuts it to an idea if B3-1 leaves *or* / *maybe* rows for later.
 
 ### Rule digest (pasted into every brief)
 
@@ -88,6 +56,7 @@ Add the confirmed rows, the attack relation, `stands` and its CLI to `docs/meta/
 - Tooling only: a translation row copies what a grammar page and the interpreter's
   classification table already say, and cites both. A meaning neither states is an open
   decision for the user, never a choice you make.
+- Encoding, translation table and jobs: docs/meta/solver.md. A denial is holds(neg(T)).
 - Code: TypeScript, Node >= 24, run with npx --no-install tsx; tests with tsx --test beside the
   source (*.test.ts). Only src/interpret/solve.ts (and solve-browser.ts) import clingo-wasm.
 - Never walk the parse tree; read Readings. Fitting is match()'s; step conditions are steps.ts's.
@@ -116,98 +85,10 @@ Full rules a subagent may open if the digest does not settle a question: [interp
 
 ### Gates and commits
 
-- `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` after each unit, before its commit.
+- `npm run verify -- --baseline` at the start of phase 3; `npm run verify -- --allow-generate` after each unit, before its commit.
 - Final gate, at the end of phase 3: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
-- One commit per unit, after its gate: `clingo-solver <ID>: … [skip-cd]` with the co-author line. S1 commits the dependency with its Research. R1 and R2 commit only the proposal.
-- Each phase ends with a commit of the consolidated proposal: phase 1 made 5; phase 2 about 8 with B0, phase 3 about 4 (the last deletes the proposal).
-
-## Group (a) rows and decisions
-<a id="group-a-rows-and-decisions"></a>
-
-R1 drafted these rows; the user confirmed them and settled each decision on 2026-11-18. B1 builds them, and B5 copies them into `docs/meta/solver.md`.
-
-**How the rows are written.** Atoms use English names for readability; the translator writes root ids. A claim is `holds(T)`, its denial `-holds(T)`; a classification is `holds(isa(X, K))`, so the one-line step rules can name the kind as a variable (Clingo has no variable predicate names; E1 keeps this shape). A first-mention noun is `nm(Id, Place)` (decision R1-3). A list term is `ls(Id, Place)`. Every rule carries `on(Id)`, and a twin `fired(Id, C)` rule with the same body; templates below show the `fired` line once per row. `fits(c(Id), P)` facts come from `match()`: the condition of reading `Id` fits claim term `P` (logged, nested, or a hinge's outcome). A universal's template is emitted per reading as a rule over `X`: Clingo cannot substitute `X` into a stored term, so `every(Id, Kind, Template)` can only mark that the step applied. `member/3` adds the pairing group from `claimMemberLists`, which *respectively* needs. Every row keeps to the Clingo 5 / 6 common ground.
-
-### R1-1: the rows that copy a stated rule
-
-Each row below reads one classification table row and copies what its grammar anchor states. Confirmed as listed.
-
-1. **Plain claim.** `unit:vp` / `unit:np` / `unit:predicate` (`clause.md#who-acts-and-the-action`, `predication.md#identity`). `holds(T) :- on(Id).` `fired(Id, T) :- on(Id).` A predicate `/ɡ/` gives `holds(isa(X, K))`. Denial fixture d1: `holds(walk(azozon)) :- on(d1).`; d3: `holds(isa(azozon, dog)) :- on(d3).`
-2. **Denial on a verb or a term.** `joinSeries:u`, frame:polarity, list reach (`joins.md#negation-u`, `verb-and-stance-joins.md#vp-clause-forms`): the join denies only its items, each one (*neither A nor B*), and the rest of the clause stands. `-holds(T[item]) :- on(Id).` for each item. `fired(Id, -T) :- on(Id).` Open `-m` denies the same stated items. d2: `-holds(walk(azozon)) :- on(d2).`; d4: `-holds(isa(azozon, dog)) :- on(d4).`
-3. **A clash.** `clash(P) :- holds(P), -holds(P).` (Sketch, *naming a clash*). d1 + d2 give `clash(walk(azozon))`, d3 + d4 `clash(isa(azozon, dog))`. Where the two terms are not the same term but `match()` says they fit, the clash joins on `fits`; B1 picks the shape.
-4. **Whole-list denial** (*not both*, `vowurol veruvol val vul.`). `joinSeries:u` over a closed list as its one item (`set-joins.md#exclusivity-and-denying-a-whole-list`). `clash(notall(Id)) :- holds(T1), holds(T2), on(Id).` with `fired(Id, notall(Id))`. No F1 fixture; F1 or B1 adds one.
-5. **If.** `overlay:clause_hinge:th` / `:g`, frame:hinge (`causation.md#if`): "whenever the condition holds, the outcome holds too", and saying *if* "does not claim the condition is true", so the nested reading is not emitted as `holds`. `holds(Out) :- fits(c(Id), P), holds(P), on(Id).` `fired(Id, Out) :- fits(c(Id), P), holds(P), on(Id).` Hinges fixture h1 + h2 + h3:
-
-   ```prolog
-   holds(walk(azozon)) :- on(h3).
-   fits(c(h1), walk(azozon)).   fits(c(h2), sit(alazun)).   % from match()
-   holds(sit(alazun)) :- fits(c(h1), P), holds(P), on(h1).
-   holds(sleep(ahelan)) :- fits(c(h2), P), holds(P), on(h2).
-   ```
-
-   A hinge on a command makes no claim (`causation.md#if`): the force frame has no group (a) row, so the turn is `beyond`.
-6. **Only if.** Same rows (`causation.md#only-if`): "the outcome cannot hold without the condition". `-holds(Out) :- fits(c(Id), P), -holds(P), on(Id).` With h1o + h4: `-holds(walk(azozon)) :- on(h4).` gives `-holds(sit(alazun))`, citing h1o and h4. The other direction is R1-5.
-7. **Iff.** `thehom` (`causation.md#only-if`): rows 5 and 6 together. h1i + h3 gives `sit(alazun)`; h1i + h4 gives `-sit(alazun)`.
-8. **Closed every kind.** `joinSeries:ua` frame:binder + `shared:kind` (`universals-domains.md#universals-domains-generics`, `usually-vs-must.md#general-claims`: closed `-l` "allows none" [exceptions]); step `universalInstance`. `holds(T[X]) :- holds(isa(X, K)), on(Id).` `fired(Id, T[X]) :- holds(isa(X, K)), on(Id).` With the verb denied (`zual gogozel vezuvel vul.`, *each cat does not sleep*) the head is `-holds(T[X])`. A hinge on it holds for each member (`usually-vs-must.md#how-things-work`): the hinge's rule takes the same `holds(isa(X, K))` in its body. Clash fixture s1 + s3 + s4 + s5:
-
-   ```prolog
-   holds(fly(X)) :- holds(isa(X, bird)), on(s1).
-   holds(isa(azozon, penguin)) :- on(s3).   holds(isa(azozon, bird)) :- on(s3).
-   holds(isa(alazun, bird)) :- on(s4).
-   -holds(fly(alazun)) :- on(s5).
-   clash(P) :- holds(P), -holds(P).          % clash(fly(alazun)): s1, s4, s5
-   ```
-
-9. **Open every kind.** `zuam` + `shared:kind` (`universals-domains.md#not-every`: "you only do not rule them out"; Sketch, adopted 2026-11-18). `{ holds(T[X]) } :- holds(isa(X, K)), not -holds(T[X]), on(Id).` `fired(Id, T[X]) :- holds(T[X]), holds(isa(X, K)), on(Id).` With everyday defaults switched on: `holds(T[X]) :- holds(isa(X, K)), not -holds(T[X]), on(Id), switch(defaults).` Worked fixture s1 + s6: `holds(isa(ahelan, bird)) :- on(s6).` gives *cannot say* and *could be* for `fly(ahelan)`.
-10. **Membership.** `joinSeries:a` (`joins.md#and-lists-a`, `list-structure.md#respectively`), steps `memberList` / `claimMemberLists` / `collective`. The claim keeps its list term, and `holds(T[X]) :- member(ls(Id, z), X, G), on(Id).` for one list; for *respectively*, `holds(T[X, Y]) :- member(ls(Id, z), X, G), member(ls(Id, d), Y, G), on(Id).` Lists fixture: l1 gives `walk(azozon)` and `walk(alazun)`; l2 gives `see(azozon, nm(l2, d1))` and `see(alazun, nm(l2, d2))`; l3 (two unpaired lists) and l4 (collective `-x`) get no `member` facts and give only their list claim. s3's predicate list `gawozal gebezel gal` gives both `isa` facts this way.
-11. **Compound head.** Step `compoundHeads` (`compounds.md#two-roots-one-word`). `head(robin, bird).` and `holds(isa(X, H)) :- holds(isa(X, C)), head(C, H), switch(widen).` Compound fixture: k1 gives `isa(azozon, bird)`; k2 gives `isa(nm(k2, d), bird)`, so *Ahelan sees a bird*; k3 gives no `isa(alazun, robin)`, since the rule runs only from compound to head.
-12. **Numbers.** `wordFamily:number` / `lexReading:number` (`numbers.md#counts`), Sketch *numbers* (adopted). For each pair of values in the log, `compareValues` gives `less(V1, V2)` or `same(V1, V2)`; for each value and each stated range or ray, `within(V, R)`. A counted noun is `count(nm(Id, P), V)`. Numbers fixture: n1 `count(nm(n1, d), v(3))`, n2 `count(nm(n2, d), v(5))`, `less(v(3), v(5))`; asked *more than three*, `within(v(5), above(v(3)))` holds and no `within` fact holds for `v(3)`, so n2 answers it and n1 does not. The question's fit to a `within` fact is decided in TypeScript, not by `match()`, which compares numbers by value only; B1 places it. n5 (`grawagel`) and n6 (`gral`) carry no value and get no facts. Ranges and rays on a counted noun wait on R1-7; *more cats than dogs* on R1-8.
-
-### R1-2: *No K* (`zul` + kind)
-
-Once B0 makes the reader classify `zul` + kind as `shared:kind` with a binder frame carrying its polarity (`universals-domains.md#universals-domains-generics`, `#not-every`), *no K* is row 8 with the head denied: `zul gawozal vewobol.` gives `-holds(fly(X)) :- holds(isa(X, penguin)), on(s2).` With no verb (`zul godozel.`, *there is no dog*), the kind itself is denied: `clash(none(Id)) :- holds(isa(X, dog)), on(Id).`
-
-### R1-3: first-mention nouns (`slot:newMember` binder)
-
-A row in group (a) (`joins.md#everything-ua`): a fresh constant per reading and role, `nm(Id, P)`, with its kind and details as facts (`holds(isa(nm(k2, d), robin)) :- on(k2).`). Two readings of *a dog* are two dogs, and a question still matches by root (question filters, decision 18). A denial *not … a dog* has no constant to deny and takes row 2 on the root's kind; B1 tests it.
-
-### R1-4: the matcher's steps in a solver job
-
-Membership and closed universal to instance always run in a solver job, since the pages state them as what the sentence says. `widen` (compound head) stays a switch, `switch(widen)`, named in the answer, since a compound's head is the lexicon's. Every answer names its readings and, through `fired` and `used`, the step.
-
-### R1-5: condition hinges run both ways
-
-*If* also gives `-holds(Cond) :- -holds(Out), on(Id).`, and *only if* also gives `holds(Cond) :- holds(Out), on(Id).`, so *Alazun sits only if Azozon walks; Alazun sits* gives *Azozon walks*. The derived condition is the hinge's nested term, joined to other claims through `fits`; `fired` names the hinge.
-
-### R1-6: `hual` (*always*) and `hal` (*never*)
-
-Bare `hual` holds at every time, so it covers whatever time a plain sentence is about; the restrictors page (*Always*) now states this. Bare `hual` + P gives row 1, `holds(P) :- on(Id).`, plus the marker `always(P)`, and a plain denial clashes with it. Bare `hal` (*never*) gives `-holds(P)` plus `never(P)`. Open `huam` gives row 9's choice rule. `hual` with listed exceptions (*always except when it rains*) and `hal` with listed occasions (*only when*) give only their marker, since a plain claim may fall on a listed occasion; occasions as terms are later work. B1 adds a fixture with bare `hual`, bare `hal`, `huam`, and an exception list.
-
-### R1-7: ranges and rays on a counted noun
-
-Once B0 puts a span between two numbers in a counted noun phrase as a `detail:range` on the noun's number term (`ranges.md#ranges`, `open-ranges.md#rays`), row 12 builds `within` facts from it.
-
-### R1-8: *more cats than dogs* with no counts (n7)
-
-`zogozelx zodozelx zol gral.` (a rank list, `joinSeries:o`, with a shared scale word) is data, `holds(more(amount, cats, dogs))`, answered only when asked as said, with no link to counts. Linking it to stated counts waits until `comparative-arity.md#amount-scale` states it.
-
-### R1-9: standalone `thul` (*no judgment*) and its kin
-
-`zazozon vowurol thul.` (and `thum`, `thur`) emits the claim as row 1, with the frame noted on the reading so a reply can mention it: "the claim itself is untouched" (`verb-and-stance-joins.md#standalone-stance-joins`). A denial of a stance (`thomam thul`) sits in the stance's list and waits for the stance row.
-
-### S1-1: clashes under choices
-
-Re-solve, as the Sketch plans ([naming a clash](#naming-a-clash)): plain programs and run options, one optimization run for a smallest set to give up, QuickXplain for a smallest clash. A Lua `#script` main with assumption cores (works, S1) waits until a consumer measures a slow clash.
-
-### E1: encoding
-
-The lowest-risk shape, with speed and program size not optimized (user, 2026-11-18):
-
-- **One `holds/1` predicate** around every claim, with `isa(X, K)` inside, as the rows above are written. The generic rules (`clash`, the step rules) stay one line each. A predicate per root grounds 2–4× faster (S1) and waits until a consumer needs the speed.
-- **Provenance carries its premises.** Each rule has its `fired(Id, C)` twin and, for each atom in its body, `used(Id, C, Premise)` with the same body, so *why* is a plain walk over the answer set: from a conclusion through `used` to the readings whose `fired` produced each premise. No body re-matching in TypeScript.
-- **Fits are computed before solving**, by `match()`, against every term the log holds (stated claims, nested clauses, universal templates with their members), as the Sketch says. A question is matched against the answer set afterwards, in TypeScript.
-- **Closed world** (`closedWorld`): a `candidate(P)` fact for each term the log or the question mentions, and `-holds(P) :- candidate(P), not holds(P), switch(closed).`
-- **Size.** No patch to `clingo-wasm`. B2 refuses a program text over about 1 MiB with a reply that says so; the limit is the package's fixed WebAssembly stack, which `run.js` copies the program onto.
+- One commit per unit, after its gate: `clingo-solver <ID>: … [skip-cd]` with the co-author line.
+- Phase 1 made 5 commits, phase 2 made 9 (with a fix to B1 and the consolidation); phase 3 about 5 (the last deletes the proposal).
 
 ## Open decisions
 
@@ -346,11 +227,20 @@ Under choices, attacks come from the brave `fired` atoms of a first run; the `at
 
 **Recommendation:** (A) **(high)**. Grounded has one answer, is stratified and fast, and never accepts a reading an unanswered objection meets, so a consumer never shows one side of a live disagreement as the winner. Note for the user: with R2-12 (A) every attack is mutual, so grounded is exactly the unattacked readings, and the stable and preferred extensions are the largest sets with no attacking pair. The three semantics differ only once a one-way attack exists (R2-12 (C), or a host's own).
 
+### B3-1: *or* and *maybe*
+
+B3 built clashes under choices, but the translator has no row for *or* (`e` lists: a list term with no member rule and no choice, so one world) or for MAY, and an open universal's choice never forces a clash. So no fixture has every world clashing with no shared atom; the code handles that case in general terms but no test reaches it. R2-3 also waits on MAY's row.
+
+- (A) Draft *or* and MAY rows now as one more unit in phase 3, with a stop for the user to confirm them before they are built (a phase 4).
+- (B) Leave them out of this proposal: when phase 3 ends, cut what is left to an idea (*or* and MAY rows, and a test of clashes under choices on them) instead of deleting the proposal.
+
+**Recommendation:** (B) **(medium)**. Groups (a) to (c) meet the proposal's goals for stated claims, and the solver reports an *or* or *maybe* reading in `left` instead of guessing; drafting the rows is the same kind of work as R1 and R2 and needs its own confirmation round, which fits a follow-up better than a fourth phase here. (A) is better if a consumer due soon (logic grids, the argument map) needs *or* first.
+
 ## Findings
 
 F1 found no sentence the grammar could not say. R2 found none either: every English line in the three draft fixtures has a form, *not because* included (`thahum thul blarl`, `verb-and-stance-joins.md#stance-join-before-barl`).
 
-R2 found two gaps in what a reading carries, for B6 and B7 (the fix is the reader or a classification table note, not a walker):
+R2 found two gaps in what a reading carries; B0b fixes them before B6 and B7 (the fix is the reader or a classification table note, not a walker):
 
 - **A holder's party is not marked named.** In `zalazun theyomazozon vudurul.` the holder frame's `party` has root `azozo` and `named: false`, where `zazozon` as `z` is named. Keyed as a first-mention noun, b1 and b2 would be two holders and never clash. The reader should mark a `-n` holder named (`xFamily:holder`), or B6 keys holders by root and ending.
 - **A stacked `thebem` has no content.** In `zazozon vowurol thebem thahum blarl zalazun vezuvel.` the `thebem` frame has no `hosted`; its condition is the `thahum` frame's clause (`because-and-iff.md#choosing-a-hinge`). B7 needs it on the reading, as a link or a note on the `overlay:clause_hinge:th` row, before R2-1 row 8 can be built.
