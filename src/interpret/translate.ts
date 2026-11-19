@@ -1,5 +1,5 @@
 /**
- * Translator (clingo-solver proposal, Sketch): a log's readings to a Clingo program, from the confirmed group (a) and (b) rows
+ * Translator (docs/meta/solver.md): a log's readings to a Clingo program, from the confirmed group (a) and (b) rows
  * only. Claims become terms, frames wrap them, every reading is switched by `on(Id)`, and every rule carries its reading
  * id and derives `fired(Id, C)`, with `used(Id, C, Premise)` for each premise in its body.
  *
@@ -40,7 +40,7 @@ export type Note = { reading: ReadingId; frame: Frame };
 export type TermSource = { reading: ReadingId; claim: Claim };
 
 /**
- * What a group (b) reading's claim is wrapped in (clingo-solver R2-1): a holder's view, `view(H, T)`, or a say word,
+ * What a group (b) reading's claim is wrapped in (docs/meta/solver.md): a holder's view, `view(H, T)`, or a say word,
  * `say(Who, Part, Reach, Answer, Ending, T)` with `to(X)` as a seventh argument for pair reach `e` on `z` / `d` / `b`.
  */
 export type Wrap =
@@ -176,7 +176,7 @@ type Why = { construction: string; key?: string; reason: string };
 type Frames = { hinge?: Frame; universal?: Frame; restrictor?: Frame; holder?: Frame; channel?: Frame; say?: Frame; may?: Frame; mayHost?: Frame; likely?: Frame; because?: Frame; zone?: Frame; standalone: Frame[]; other?: Frame };
 
 const GENERIC = [
-  "% Generic rules (clingo-solver E1).",
+  "% Generic rules (docs/meta/solver.md).",
   "clash(P) :- holds(P), holds(neg(P)).",
   "clash(Q) :- holds(neg(Q)), holds(P), fits(Q, P).",
   "holds(isa(X, H)) :- holds(isa(X, C)), head(C, H), switch(widen).",

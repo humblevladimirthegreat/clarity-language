@@ -1,4 +1,4 @@
-# Solver fixture: the clash example (clingo-solver Sketch, "Naming a clash"), s1 as a closed universal.
+# Solver fixture: the clash example, s1 as a closed universal.
 # Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # Names: Azozon stands for Pingu, Alazun for Tweety (house cast). "Fly" is v-wing (`vewobol`); the lexicon has no fly verb.
 # Smallest clashes: {s1, s2, s3} and {s1, s4, s5}; smallest set to give up: {s1}.

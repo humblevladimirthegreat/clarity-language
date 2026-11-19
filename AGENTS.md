@@ -86,7 +86,7 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `agents-md.md` | What belongs in this file. |
 | `wizard-game.md` | Wizard sandbox engine (`src/game/`): what it reads from the docs, writing game content as morph gloss, and its checks. |
 | `interpreter.md` | Interpreter (`src/interpret/`): reading terms, frame families, classification table, pair table, reader rules, matcher rules, host contract, the loop and its pass-through list, which tools read readings and which the parse. |
-| `solver.md` | Solver (`src/interpret/solve.ts`, `translate.ts`): encoding, translation table, jobs and options, CLI. |
+| `solver.md` | Solver (`src/interpret/solve.ts`, `translate.ts`): encoding, translation table, jobs and options, what stands, CLI. |
 | `TODO.md` (root) | Planned revisions; fold into grammar docs as work proceeds. |
 
 ### Procedures (`docs/meta/procedures/`, not published)

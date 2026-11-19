@@ -3,7 +3,7 @@
 % t:0.2 = l3
 % t:0.3 = l4
 
-% Generic rules (clingo-solver E1).
+% Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
 clash(Q) :- holds(neg(Q)), holds(P), fits(Q, P).
 holds(isa(X, H)) :- holds(isa(X, C)), head(C, H), switch(widen).

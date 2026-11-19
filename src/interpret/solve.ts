@@ -1,5 +1,5 @@
 /**
- * Solver (clingo-solver proposal, Sketch): what follows from a log, what could be, and what clashes, from the program
+ * Solver (docs/meta/solver.md): what follows from a log, what could be, and what clashes, from the program
  * {@link translate} writes. The only importer of `clingo-wasm`; every call is asynchronous, so the loop (`run`) and a
  * host's verdict never call it.
  *
@@ -728,7 +728,7 @@ export const MAX_EXTENSIONS = 64;
  * ban's denial, an act against a ban, a compound's head) is the readings' behind its premises.
  */
 const ATTACKS = [
-  "% What stands (clingo-solver R2-12): who fired a conclusion, and rebut on each clash's two sides.",
+  "% What stands (docs/meta/solver.md, what stands): who fired a conclusion, and rebut on each clash's two sides.",
   "gen_rule(requires). gen_rule(against). gen_rule(bans). gen_rule(widen).",
   "src(A, C) :- fired(A, C), on(A).",
   "src(A, C) :- fired(G, C), gen_rule(G), used(G, C, P), src(A, P).",

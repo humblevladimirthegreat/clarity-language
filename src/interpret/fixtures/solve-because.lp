@@ -11,7 +11,7 @@
 % t:0.10 = c12
 % t:0.11 = c13
 
-% Generic rules (clingo-solver E1).
+% Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
 clash(Q) :- holds(neg(Q)), holds(P), fits(Q, P).
 holds(isa(X, H)) :- holds(isa(X, C)), head(C, H), switch(widen).

@@ -1,4 +1,4 @@
-# Solver fixture: the worked example (clingo-solver Sketch, "What the solver may conclude").
+# Solver fixture: the worked example.
 # Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # Names: Azozon stands for Pingu, Ahelan for Robin (house cast). "Fly" is v-wing (`vewobol`); the lexicon has no fly verb.
 
