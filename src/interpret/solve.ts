@@ -116,6 +116,17 @@ async function consequences(program: string, mode: "cautious" | "brave"): Promis
   return { ok: true, atoms: r.witnesses.at(-1) ?? [] };
 }
 
+/**
+ * R3-4: the worlds a question reads. Clash-free worlds first (`:- clash(P).`); when every world clashes, every world, so
+ * the log's own clash shows as `both`. A one-world log answers as before.
+ */
+async function worlds(program: string): Promise<string | { why: string }> {
+  const free = `${program}\n:- clash(P).`;
+  const r = await call(free, 1, []);
+  if (!r.ok) return { why: r.why };
+  return r.unsat ? program : free;
+}
+
 /** Whether the program has more than one world: the choices (row 9's open rules, the closed world's loops) matter. */
 async function severalWorlds(program: string): Promise<boolean | string> {
   const r = await call(program, 2, []);
@@ -276,7 +287,7 @@ function fitsQuestion(question: Claim, target: Claim, options: SolveOptions): So
 }
 
 type Prepared =
-  | { ok: true; translation: Translation; program: string; qid?: string; claim?: Claim; ctx: Context }
+  | { ok: true; translation: Translation; program: string; qid?: string; claim?: Claim; negated?: boolean; ctx: Context }
   | { ok: false; answer: Answer };
 
 /**
@@ -290,7 +301,9 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
   if (question && "claim" in question) {
     const frames = isQuestionForce(question);
     // A holder or a say word on the question is the translator's (R2-1): the question is asked inside its wrap.
-    const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || !!f.holderHost;
+    // R3-6: so is the holder's own MAY, a term inside the view.
+    const holder = frames.some((f) => f.key === "xFamily:holder");
+    const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || !!f.holderHost || (holder && f.key === "overlay:may:th");
     const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f));
     if (beyond || question.unread.length) {
       const construction = beyond?.construction ?? question.unread[0]!.construction;
@@ -317,7 +330,8 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
       .join("\n");
   }
   const ctx: Context = { translation: { ...translation, left }, options, question: qReading?.id, open: openReadings(program) };
-  return { ok: true, translation: { ...translation, left }, program, qid: qReading?.id, claim: qReading?.claim, ctx };
+  const asked = qReading && positive(qReading.claim);
+  return { ok: true, translation: { ...translation, left }, program, qid: qReading?.id, claim: asked?.claim ?? qReading?.claim, negated: asked?.negated, ctx };
 }
 
 const escape = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -325,6 +339,22 @@ const escape = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const refused = (why: string, left: LeftOut[]): Answer => ({ verdict: "refused", because: [], switches: [], left, english: why });
 
 /** The `holds` atoms the question fits (yes) and the denials that rule it out (no), with any match switches. */
+/**
+ * A question *not P?* (one item denied on one term, joins.md#negation-u) as P with its answer flipped: *yes* when P's
+ * denial holds, *no* when P does (R3-1 row 2 asks *Alazun didn't leave?*).
+ */
+function positive(claim: Claim): { claim: Claim; negated: boolean } {
+  const swap = (from: Term, to: Term) => (t: Term | undefined): Term | undefined => (t === from ? to : t);
+  for (const t of [claim.verb, claim.roles.z, claim.roles.d, claim.roles.b, ...claim.predicate]) {
+    if (t?.kind !== "list" || !t.frames?.some((f) => f.key === "joinSeries:u") || t.members.length !== 1 || t.parts.length !== 1) continue;
+    const s = swap(t, t.members[0]!);
+    const roles: Claim["roles"] = {};
+    for (const r of ["z", "d", "b"] as const) if (claim.roles[r]) roles[r] = s(claim.roles[r]);
+    return { claim: { ...claim, verb: s(claim.verb), roles, predicate: claim.predicate.map((x) => s(x)!) }, negated: true };
+  }
+  return { claim, negated: false };
+}
+
 function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]; no: string[]; switches: SolveSwitch[] } {
   const yes: string[] = [];
   const no: string[] = [];
@@ -343,7 +373,7 @@ function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]
     (inner ? no : yes).push(held);
     fit.forEach((s) => switches.add(s));
   }
-  return { yes, no, switches: [...switches] };
+  return p.negated ? { yes: no, no: yes, switches: [...switches] } : { yes, no, switches: [...switches] };
 }
 
 function answer(verdict: SolveVerdict, model: Model, start: string[], p: Extract<Prepared, { ok: true }>, extra: SolveSwitch[]): Answer {
@@ -353,15 +383,17 @@ function answer(verdict: SolveVerdict, model: Model, start: string[], p: Extract
 }
 
 /**
- * Does the question follow from the log? *yes* when a claim it fits holds in every world (cautious consequences),
- * *no* when a denial that rules it out does, *unknown* otherwise.
+ * Does the question follow from the log? *yes* when a claim it fits holds in every world (cautious consequences; the
+ * clash-free worlds when there are any, R3-4), *no* when a denial that rules it out does, *unknown* otherwise.
  */
 export async function follows(log: Pick<Log, "readings">, question: Reading | Claim, options: SolveOptions = {}): Promise<Answer> {
   const p = prepare(log, question, options);
   if (!p.ok) return p.answer;
   const big = tooLarge(p.program, options);
   if (big) return refused(big, p.translation.left);
-  const run = await consequences(p.program, "cautious");
+  const program = await worlds(p.program);
+  if (typeof program !== "string") return refused(program.why, p.translation.left);
+  const run = await consequences(program, "cautious");
   if (!run.ok) return refused(run.why, p.translation.left);
   const model = new Model(run.atoms);
   const h = hits(model, p);
@@ -372,15 +404,17 @@ export async function follows(log: Pick<Log, "readings">, question: Reading | Cl
 }
 
 /**
- * Could the question be so? *yes* when a claim it fits holds in some world (brave consequences), *no* when a denial
- * that rules it out holds in every world, *unknown* otherwise.
+ * Could the question be so? *yes* when a claim it fits holds in some world (brave consequences; the clash-free worlds
+ * when there are any, R3-4), *no* when a denial that rules it out holds in every world, *unknown* otherwise.
  */
 export async function couldBe(log: Pick<Log, "readings">, question: Reading | Claim, options: SolveOptions = {}): Promise<Answer> {
   const p = prepare(log, question, options);
   if (!p.ok) return p.answer;
   const big = tooLarge(p.program, options);
   if (big) return refused(big, p.translation.left);
-  const brave = await consequences(p.program, "brave");
+  const program = await worlds(p.program);
+  if (typeof program !== "string") return refused(program.why, p.translation.left);
+  const brave = await consequences(program, "brave");
   if (!brave.ok) return refused(brave.why, p.translation.left);
   const some = new Model(brave.atoms);
   const b = hits(some, p);
@@ -388,7 +422,7 @@ export async function couldBe(log: Pick<Log, "readings">, question: Reading | Cl
     // In some world: only what is in every world is *no*, so a brave denial alone does not settle it.
     return answer("yes", some, b.yes, p, b.switches);
   }
-  const cautious = await consequences(p.program, "cautious");
+  const cautious = await consequences(program, "cautious");
   if (!cautious.ok) return refused(cautious.why, p.translation.left);
   const every = new Model(cautious.atoms);
   const c = hits(every, p);

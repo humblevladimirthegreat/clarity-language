@@ -49,6 +49,23 @@ describe("translate: golden program per solver fixture", () => {
   }
 });
 
+describe("translate: MAY and or (R3-1, R3-5, R3-7)", () => {
+  it("the MAY rows that have none yet are left out", () => {
+    const key = (text: string) => program(text).left.map((l) => l.key ?? l.construction);
+    // MAY on a hinge's condition reads only the forward rule of *if* (R3-5); a hinge over MAY too (R3-1 row 6).
+    assert.deepEqual(key("zalazun vehohel thebem blarl zazozon thomam vowurol."), ["overlay:clause_hinge:th"]);
+    // A choice over members, a carried holder on a MAY sentence, and other stance numbers.
+    assert.deepEqual(key("thomam zazozon zalazun zal vowurol."), ["frameCombination"]);
+    assert.deepEqual(key("zalazun vudurul th_3."), ["lexReading:number:th"]);
+  });
+
+  it("an or list's items are pooled as terms, with their slots", () => {
+    const t = program("zazozon vowurol veruvol vel.");
+    assert.ok(t.terms.has("owuro(z(azozo))") && t.terms.has("eruvo(z(azozo))"));
+    assert.deepEqual([...t.slots.keys()], ['i("t:0.0",1)', 'i("t:0.0",2)']);
+  });
+});
+
 describe("translate: encoding", () => {
   it("Clingo 5 / 6 common ground: no classical negation, no conditional literal in a body, no `_` inside `not`", () => {
     for (const file of readdirSync(fixtures).filter((f) => /^solve-.*\.txt$/.test(f))) {
@@ -133,8 +150,8 @@ describe("translate: holders and say words (R2-1, R2-4)", () => {
     assert.match(program("zalazun theyomeyel vudurul.").program, /^holds\(isa\(nm\("t:0\.0",h\),eye\)\) :- on\("t:0\.0"\)\.$/m);
   });
 
-  it("a holder with no row yet is left out: on MAY (B6b), the topic pronoun", () => {
-    assert.deepEqual(program("zalazun thomamazozon vudurul.").left.map((l) => l.key), ["overlay:may:th"]);
+  it("a holder with no row yet is left out: the topic pronoun; a holder on MAY is a choice of its view (R2-3)", () => {
+    assert.match(program("zalazun thomamazozon vudurul.").program, /^\{ holds\(view\(azozo,uduru\(z\(alazu\)\)\)\) \} :- on\("t:0\.0"\)\.$/m);
     assert.deepEqual(program("xazozon theyomalen zalazun vudurul.").left.map((l) => l.key), ["xFamily:holder"]);
   });
 

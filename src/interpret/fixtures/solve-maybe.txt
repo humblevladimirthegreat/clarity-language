@@ -1,6 +1,6 @@
-# Draft fixture (R3): MAY (knowing.md#may, #follow-up-endings-may; verb-and-stance-joins.md#stance-join-reach; holder.md#what-the-holder-covers).
+# Solver fixture (R3): MAY (knowing.md#may, #follow-up-endings-may; verb-and-stance-joins.md#stance-join-reach; holder.md#what-the-holder-covers).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# Not a solve-* fixture: a later unit renames it once its rows are confirmed and built.
+# The holder lines (m7 to m9, b6) come last: a bare line after one carries its holder (R2-1 row 2).
 # P = Alazun left. m1 alone: couldBe P yes, follows P cannot say. m1 + m2: what maybe P says of not P (R3-2). m1 + m3: whether maybe P clashes with P (R3-2).
 
 @ m1
@@ -29,20 +29,6 @@ zalazun thomam vudurul vul.
 @ m6
 zalazun vudurul thomam thul.
 = Alazun left, and not just maybe.
-
-# MAY as a holder's host (R3-1 row 4, R2-3): your guess about Azozon's view. m7 + m8: one world holds Azozon's two views (R2-2), the other does not.
-@ m7
-zalazun thomamazozon vudurul.
-= Maybe Azozon thinks Alazun left.
-
-@ m8
-zalazun thebamazozon vudurul vul.
-= I hear Azozon thinks Alazun did not leave.
-
-# The holder's own MAY (R3-6): the holder covers the MAY.
-@ m9
-zalazun theyomazozon vudurul thomam.
-= I gather Azozon thinks Alazun may have left.
 
 # MAY over a hinge (R3-1 row 5): order may > clause_hinge by rule. m10 + m12: couldBe "Alazun sits" yes, follows cannot say.
 @ m10
@@ -90,7 +76,21 @@ zalazun vudurul thrawal.
 zalazun vudurul thramowal.
 = There is no chance Alazun has left.
 
-# A holder on MAY (R2-3), from solve-holders.txt: it joins that fixture once MAY has its row.
+# MAY as a holder's host (R3-1 row 4, R2-3): your guess about Azozon's view. m7 + m8: the world that holds both of Azozon's views clashes (R2-2) and is dropped (R3-4), so couldBe gives no, as for m1 + m2 (R3-2).
+@ m7
+zalazun thomamazozon vudurul.
+= Maybe Azozon thinks Alazun left.
+
+@ m8
+zalazun thebamazozon vudurul vul.
+= I hear Azozon thinks Alazun did not leave.
+
+# The holder's own MAY (R3-6): the holder covers the MAY.
+@ m9
+zalazun theyomazozon vudurul thomam.
+= I gather Azozon thinks Alazun may have left.
+
+# A holder on MAY (R2-3), moved here from the holders fixture: the same reading as m7.
 @ b6
 zalazun thomamazozon vudurul.
 = Maybe Azozon thinks Alazun left.

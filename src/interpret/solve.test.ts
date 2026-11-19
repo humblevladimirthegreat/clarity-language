@@ -12,6 +12,7 @@ import { match } from "./match.js";
 import { readText } from "./read.js";
 import { whyReply } from "./reply.js";
 import { clashes, couldBe, follows, giveUp, splitAtom, whyNot, type SolveOptions } from "./solve.js";
+import { translate } from "./translate.js";
 import type { Reading } from "./types.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -350,5 +351,147 @@ describe("solve: say words (R2-1 row 4, R2-6 to R2-9)", () => {
     const two = (speakers: string[]) => buildLog([say.get("p8")!.replace("hwovam", "hwuvam"), say.get("p9")!].map((text, at) => ({ speaker: speakers[at]!, at, text })), tables);
     assert.deepEqual((await clashes(two(["a", "a"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
     assert.deepEqual((await clashes(two(["a", "b"]), base)).clashes, []);
+  });
+});
+
+describe("solve: MAY (R3-1 rows 1 to 6, R3-2, R3-5 to R3-7)", () => {
+  const m = (labels: string[], extra: string[] = []) => log("maybe", labels, extra);
+  const left = q("zalazun vudurul.");
+
+  it("m1 alone: Alazun left? cannot say; could Alazun have left? yes. m4's ending reads the same", async () => {
+    for (const label of ["m1", "m4"]) {
+      assert.equal((await follows(m([label]), left, base)).verdict, "unknown");
+      const a = await couldBe(m([label]), left, base);
+      assert.equal(a.verdict, "yes");
+      assert.deepEqual(a.because, ["t:0.0"]);
+    }
+  });
+
+  it("R3-2: maybe P never clashes with not P or with P; after not P, could P be? no", async () => {
+    assert.deepEqual((await clashes(m(["m1", "m2"]), base)).clashes, []);
+    assert.deepEqual((await clashes(m(["m1", "m3"]), base)).clashes, []);
+    assert.equal((await couldBe(m(["m1", "m2"]), left, base)).verdict, "no");
+    assert.equal((await follows(m(["m1", "m3"]), left, base)).verdict, "yes");
+  });
+
+  it("m5: possibly not; m6: MAY denied is a plain claim, its thul kept in the notes", async () => {
+    assert.equal((await couldBe(m(["m5"]), q("zalazun vudurul vul."), base)).verdict, "yes");
+    assert.equal((await follows(m(["m5"]), q("zalazun vudurul vul."), base)).verdict, "unknown");
+    assert.equal((await follows(m(["m5"]), left, base)).verdict, "unknown");
+    assert.equal((await follows(m(["m6"]), left, base)).verdict, "yes");
+    assert.deepEqual(translate(m(["m6"]), { lexicon: tables }).notes.map((n) => n.frame.key), ["joinSeries:u"]);
+  });
+
+  it("m7 (b6): maybe Azozon thinks Alazun left; beside m8 no clash, and R3-2 drops the clashing world", async () => {
+    const view = q("zalazun theyomazozon vudurul.");
+    for (const label of ["m7", "b6"]) {
+      assert.equal((await couldBe(m([label]), view, base)).verdict, "yes");
+      assert.equal((await follows(m([label]), view, base)).verdict, "unknown");
+    }
+    assert.deepEqual((await clashes(m(["m7", "m8"]), base)).clashes, []);
+    assert.equal((await couldBe(m(["m7", "m8"]), view, base)).verdict, "no");
+  });
+
+  it("m9: the holder's own MAY is a term inside the view (R3-6)", async () => {
+    const a = await follows(m(["m9"]), q("zalazun theyomazozon vudurul thomam."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0"]);
+    assert.equal((await follows(m(["m9"]), q("zalazun theyomazozon vudurul."), base)).verdict, "unknown");
+    assert.equal((await couldBe(m(["m9"]), q("zalazun theyomazozon vudurul."), base)).verdict, "unknown");
+  });
+
+  it("m10 + m12: MAY over a hinge gates it; m11: a hinge over MAY makes the outcome a choice", async () => {
+    const sits = q("zalazun vehohel.");
+    for (const labels of [["m10", "m12"], ["m11"]]) {
+      assert.equal((await couldBe(m(labels), sits, base)).verdict, "yes", labels.join());
+      assert.equal((await follows(m(labels), sits, base)).verdict, "unknown", labels.join());
+    }
+  });
+
+  it("m13: MAY on the condition reads may(T); a stated walk and a possible one both give it (R3-5)", async () => {
+    const sits = q("zalazun vehohel.");
+    const a = await follows(m(["m13", "m12"]), sits, base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    assert.equal((await follows(m(["m13"], ["zazozon thomam vowurol."]), sits, base)).verdict, "yes");
+    assert.equal((await follows(m(["m13"]), sits, base)).verdict, "unknown");
+  });
+
+  it("m14 beside o4 + o5: no clash, since the world without the gate is clash-free", async () => {
+    const o = fixture("or");
+    assert.deepEqual((await clashes(m(["m14"], [o.get("o4")!, o.get("o5")!]), base)).clashes, []);
+  });
+
+  it("m15 + m16: could Ahelan sleep? yes; does Ahelan sleep? cannot say, with defaults too", async () => {
+    const sleeps = q("zahelan vezuvel.");
+    assert.equal((await couldBe(m(["m15", "m16"]), sleeps, base)).verdict, "yes");
+    assert.equal((await follows(m(["m15", "m16"]), sleeps, base)).verdict, "unknown");
+    assert.equal((await follows(m(["m15", "m16"]), sleeps, { ...base, defaults: true })).verdict, "unknown");
+  });
+
+  it("R3-7: an estimate is a choice with its figure as data; certain is a claim, no chance a denial", async () => {
+    assert.equal((await couldBe(m(["m17"]), left, base)).verdict, "yes");
+    assert.equal((await follows(m(["m17"]), left, base)).verdict, "unknown");
+    assert.match(translate(m(["m17"]), { lexicon: tables }).program, /^likely\("t:0\.0",v\(70\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.equal((await couldBe(m([], ["zalazun vudurul th+0."]), left, base)).verdict, "yes");
+    assert.equal((await follows(m(["m18"]), left, base)).verdict, "yes");
+    assert.equal((await follows(m(["m19"]), left, base)).verdict, "no");
+  });
+});
+
+describe("solve: or (R3-1 rows 7 and 8, R3-3, R3-4)", () => {
+  const o = (labels: string[], extra: string[] = []) => log("or", labels, extra);
+  const walks = q("zazozon vowurol.");
+  const runs = q("zazozon veruvol.");
+
+  it("o1 alone: could Azozon walk? yes; does Azozon walk? cannot say", async () => {
+    assert.equal((await couldBe(o(["o1"]), walks, base)).verdict, "yes");
+    assert.equal((await follows(o(["o1"]), walks, base)).verdict, "unknown");
+  });
+
+  it("the bounds: exactly one, at least one, at most one", async () => {
+    const a = await follows(o(["o1", "o4"]), runs, base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    assert.equal((await follows(o(["o1", "o6"]), runs, base)).verdict, "no");
+    assert.equal((await follows(o(["o2", "o6"]), runs, base)).verdict, "unknown");
+    assert.equal((await follows(o(["o2", "o4"]), runs, base)).verdict, "yes");
+    assert.equal((await follows(o(["o3", "o6"]), runs, base)).verdict, "no");
+    assert.equal((await follows(o(["o3", "o4"]), runs, base)).verdict, "unknown");
+    assert.equal((await couldBe(o(["o7"]), q("zalazun vowurol."), base)).verdict, "yes");
+  });
+
+  it("o1 + o4 + o5: every world clashes; the clash is all three, and the answer shows both", async () => {
+    const all = o(["o1", "o4", "o5"]);
+    assert.deepEqual((await clashes(all, base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1", "t:0.2"]]);
+    assert.equal((await giveUp(all, base)).giveUp.length, 1);
+    assert.equal((await follows(all, walks, base)).verdict, "both");
+  });
+
+  it("R3-4: reasoning by cases, A or B; if A then C; if B then C; so C", async () => {
+    const cases = o(["o1"], ["zalazun vehohel thohem blarl zazozon vowurol.", "zalazun vehohel thohem blarl zazozon veruvol."]);
+    const a = await follows(cases, q("zalazun vehohel."), base);
+    assert.equal(a.verdict, "yes");
+  });
+
+  it("o8 to o12: every world clashes with no shared atom; re-solved, one smallest clash of all five", async () => {
+    const all = o(["o8", "o9", "o10", "o11", "o12"]);
+    const result = await clashes(all, base);
+    assert.deepEqual(result.clashes.map((c) => c.readings), [["t:0.0", "t:0.1", "t:0.2", "t:0.3", "t:0.4"]]);
+    assert.equal((await giveUp(all, base)).giveUp.length, 1);
+  });
+
+  it("o8 + o13: could Ahelan sleep? yes; does Ahelan sleep? cannot say, with defaults too", async () => {
+    const sleeps = q("zahelan vezuvel.");
+    assert.equal((await couldBe(o(["o8", "o13"]), sleeps, base)).verdict, "yes");
+    assert.equal((await follows(o(["o8", "o13"]), sleeps, base)).verdict, "unknown");
+    assert.equal((await follows(o(["o8", "o13"]), sleeps, { ...base, defaults: true })).verdict, "unknown");
+  });
+
+  it("row 7: not exactly one is both or neither; not at least one denies each", async () => {
+    assert.equal((await follows(o(["o14", "o6"]), runs, base)).verdict, "yes");
+    assert.equal((await follows(o(["o14", "o4"]), runs, base)).verdict, "no");
+    assert.equal((await follows(o(["o15"]), walks, base)).verdict, "no");
+    assert.equal((await follows(o(["o15"]), runs, base)).verdict, "no");
   });
 });

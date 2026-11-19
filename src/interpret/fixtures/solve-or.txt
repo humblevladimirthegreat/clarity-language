@@ -1,6 +1,6 @@
-# Draft fixture (R3): or-lists (joins.md#choice-e, set-joins.md#exclusivity-and-denying-a-whole-list).
+# Solver fixture (R3): or-lists (joins.md#choice-e, set-joins.md#exclusivity-and-denying-a-whole-list).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# Not a solve-* fixture: a later unit renames it once its rows are confirmed and built.
+# R3-1 rows 7 and 8, R3-3.
 # A = Azozon walks, B = Azozon runs. Bounds (R3-1 row 8): el exactly one, ael / aem at least one, em at most one.
 
 @ o1
