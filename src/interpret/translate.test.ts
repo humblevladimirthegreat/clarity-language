@@ -101,6 +101,16 @@ describe("translate: encoding", () => {
     assert.equal(t.left[0]!.reason, "noRow");
   });
 
+  it("a collective -x verb under zual + kind gets no per-member rule: the reading is left out, reported", () => {
+    const t = program("zual gogozel vezuvelx.");
+    assert.deepEqual(t.readings, []);
+    assert.doesNotMatch(t.program, /ezuve/);
+    assert.equal(t.left.length, 1);
+    assert.equal(t.left[0]!.reading, "t:0.0");
+    assert.equal(t.left[0]!.reason, "noRow");
+    assert.equal(t.left[0]!.key, "joinSeries:ua");
+  });
+
   it("closed world: a candidate per ground term, under switch(closed)", () => {
     const t = translate(logOf(["zazozon vowurol."]), { switches: { closed: true } });
     assert.match(t.program, /^switch\(closed\)\.$/m);

@@ -17,7 +17,7 @@
 import type { LexWord } from "../parse/types.js";
 import type { Log } from "./log.js";
 import { match } from "./match.js";
-import { asMember, claimMemberLists, compoundHeads, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
+import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
 
@@ -376,6 +376,8 @@ class Translator {
     let list: Term | undefined;
     if (frames.universal) {
       const f = frames.universal;
+      // A collective verb (`-x`) says something of the group, not of each member: no per-member rule.
+      if (collective(claim)) return { construction: f.construction, key: f.key, reason: "noRow" };
       list = f.hosted;
       const none = f.key === "joinSeries:u:kind";
       const closed = list && universalInstance(list, none ? "u" : "ua");

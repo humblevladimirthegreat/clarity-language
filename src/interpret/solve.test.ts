@@ -158,7 +158,7 @@ describe("solve: the two engines agree on one-step cases (match.test.ts)", () =>
     ["z-dog | v-sleep", fromGloss("[z-everything | g-cat] | v-sleep")],
     ["z-cat | v-sleep", "zuam gogozel vezuvel."],
     ["z-cat | v-sleep", "zual gogozel zul vezuvel."],
-    ["z-cat | v-sleep", "zual gogozel vezuvelx.", "translate.ts applies row 8 to a collective -x verb; the matcher's infer does not (steps.collective)"],
+    ["z-cat | v-sleep", "zual gogozel vezuvelx."],
   ];
   for (const [query, target, todo] of cases) {
     it(`infer: ${query} against ${target}`, { todo }, async () => {
