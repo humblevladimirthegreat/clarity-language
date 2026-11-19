@@ -4,8 +4,9 @@
  * shows an unparsed line. Code never spells a root: a shape writes series glosses, or leaves glossed from a parsed word.
  *
  * Shared shapes: yes, no, cannot say, a fill answer as a fragment and as a full clause, *which one?* (a blank in the
- * ambiguous term's role, or *what is it like?* about it), a list as one role, and *why* (the readings that decided, by
- * id; it carries no line). `checkLine` is the one-tree check every shown line passes, a host's own lines too.
+ * ambiguous term's role, or *what is it like?* about it), a list as one role, *why* (the readings that decided, by
+ * id; it carries no line), and the solver's *these cannot all hold* and *giving up* (readings by id, no line).
+ * `checkLine` is the one-tree check every shown line passes, a host's own lines too.
  */
 import { CLOSED, namedEnglish } from "../closed-roots.js";
 import type { ClassifyTables } from "../parse/classify.js";
@@ -20,7 +21,7 @@ import type { Term } from "./types.js";
 /** A line before it is spelled: morph gloss and its English. */
 export type Draft = { gloss: string; english: string };
 
-export type ReplyShape = "yes" | "no" | "cannotSay" | "fillFragment" | "fillClause" | "whichOne" | "why" | "handler";
+export type ReplyShape = "yes" | "no" | "cannotSay" | "fillFragment" | "fillClause" | "whichOne" | "why" | "clash" | "giveUp" | "handler";
 
 /** A line the interpreter shows: spelled and parsed. A *why* reply carries `because` and no line. */
 export type Reply = { shape: ReplyShape; english: string; ageben?: string; gloss?: string; because?: string[] };
@@ -103,6 +104,17 @@ export function listGroup(leaves: readonly string[]): string {
 /** A *why* reply: the readings (and held state) that decided, by id. */
 export function whyReply(because: readonly string[]): Reply {
   return { shape: "why", english: `Because of ${because.join(", ") || "nothing said"}.`, because: [...because] };
+}
+
+/** *These cannot all hold*: the readings of one clash, by id; like *why*, it carries no line. */
+export function clashReply(readings: readonly string[]): Reply {
+  return { shape: "clash", english: `These cannot all hold: ${readings.join(", ")}.`, because: [...readings] };
+}
+
+/** *Giving up X resolves every clash*: a smallest set of readings to give up, by id; it carries no line. */
+export function giveUpReply(readings: readonly string[]): Reply {
+  const english = readings.length ? `Giving up ${readings.join(", ")} resolves every clash.` : "Nothing clashes; nothing needs giving up.";
+  return { shape: "giveUp", english, because: [...readings] };
 }
 
 /** The morph gloss of one surface word. */

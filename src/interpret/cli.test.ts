@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { readFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
@@ -90,5 +91,46 @@ describe("reading CLI: log and ask", () => {
     assert.equal(JSON.parse(run("ask", "--json", file, query).stdout).length, 2);
     const none = run("ask", file, readFileSync(join(fixtures, "paid-query.txt"), "utf8").trim().replace("bazozon", "bahelan"));
     assert.equal(none.stdout.trim(), "no match");
+  });
+});
+
+describe("reading CLI: solve and clashes", () => {
+  const fixtures = join(rootDir, "src", "interpret", "fixtures");
+  const dir = mkdtempSync(join(tmpdir(), "reading-solve-"));
+  /** A solver fixture as a conversation file: its Ageben lines, one turn each. */
+  const conversation = (name: string): string => {
+    const lines = readFileSync(join(fixtures, `solve-${name}.txt`), "utf8").split("\n").filter((l) => l.trim() && !/^[@=#]/.test(l));
+    const file = join(dir, `${name}.txt`);
+    writeFileSync(file, lines.join("\n"));
+    return file;
+  };
+  const worked = conversation("worked");
+  const clash = conversation("clash");
+  const run = (...args: string[]) => spawnSync("node", [join(rootDir, "scripts", "reading.mjs"), ...args], { encoding: "utf8", cwd: rootDir });
+
+  it("solve: no with why, unknown without defaults, yes under them, and could-be", () => {
+    const no = run("solve", worked, "yel zazozon vewobol.");
+    assert.equal(no.status, 0, no.stderr);
+    assert.match(no.stdout, /^verdict no$/m);
+    assert.match(no.stdout, /^reply No\. \S+$/m);
+    assert.match(no.stdout, /^why Because of t:0\.1, t:0\.2\.$/m);
+    assert.match(no.stdout, /^ {2}t:0\.2 \[2\] speaker: zazozon /m);
+    assert.match(run("solve", worked, "yel zahelan vewobol.").stdout, /^verdict unknown\nreply I can't say\. /m);
+    const yes = run("solve", "--defaults", worked, "yel zahelan vewobol.").stdout;
+    assert.match(yes, /^verdict yes$/m);
+    assert.match(yes, /^switches defaults$/m);
+    const json = JSON.parse(run("solve", "--possible", "--json", worked, "yel zahelan vewobol.").stdout);
+    assert.equal(json.verdict, "yes");
+    assert.equal(json.reply.shape, "yes");
+  });
+
+  it("clashes: each smallest clash with its readings, and the set to give up", () => {
+    const out = run("clashes", "--give-up", clash);
+    assert.equal(out.status, 0, out.stderr);
+    assert.match(out.stdout, /^clash These cannot all hold: t:0\.0, t:0\.1, t:0\.2\.$/m);
+    assert.match(out.stdout, /^clash These cannot all hold: t:0\.0, t:0\.3, t:0\.4\.$/m);
+    assert.match(out.stdout, /^give up Giving up t:0\.0 resolves every clash\.$/m);
+    assert.equal(run("clashes", worked).stdout.trim(), "no clash");
+    assert.deepEqual(JSON.parse(run("clashes", "--json", "--give-up", clash).stdout).giveUp.giveUp, ["t:0.0"]);
   });
 });

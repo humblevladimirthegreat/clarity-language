@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { fullGlossIndex } from "../game/build.js";
-import { checkLine, closed, fillFragmentDrafts, listGroup, spell, whatIsItLikeDraft } from "./reply.js";
+import { checkLine, clashReply, closed, fillFragmentDrafts, giveUpReply, listGroup, spell, whatIsItLikeDraft } from "./reply.js";
 
 const tables = loadDefaultTables();
 const index = fullGlossIndex(tables);
@@ -25,6 +25,15 @@ describe("checkLine", () => {
 });
 
 describe("shared shapes", () => {
+  it("the solver's replies name readings by id and carry no line", () => {
+    const clash = clashReply(["t:0.0", "t:2.0"]);
+    assert.equal(clash.english, "These cannot all hold: t:0.0, t:2.0.");
+    assert.deepEqual(clash.because, ["t:0.0", "t:2.0"]);
+    assert.equal(clash.ageben, undefined);
+    assert.equal(giveUpReply(["t:0.0"]).english, "Giving up t:0.0 resolves every clash.");
+    assert.equal(giveUpReply([]).shape, "giveUp");
+  });
+
   it("a list is one leaf alone, else an and-list in the first leaf's role", () => {
     assert.equal(listGroup(["d-dog"]), "d-dog");
     assert.equal(listGroup(["d-dog", "d-door"]), "[d-dog | d-door | d-and]");

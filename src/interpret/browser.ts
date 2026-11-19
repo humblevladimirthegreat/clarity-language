@@ -12,3 +12,5 @@ export { compareValues, measureValue, numberValue, sameNumberWord, samePayload, 
 export type { MeasureValue, NumberValue } from "./value.js";
 export { ask, questionFilters } from "./ask.js";
 export type { Host, Match } from "./ask.js";
+export { clashes, couldBe, follows, giveUp, whyNot } from "./solve-browser.js";
+export type { Answer, Clash, ClashResult, GiveUpResult, SolveOptions, SolveSwitch, SolveVerdict, WhyNotResult } from "./solve-browser.js";

@@ -11,6 +11,9 @@ import { ask, type Match } from "./ask.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { throughAntecedent } from "./match.js";
 import { readText } from "./read.js";
+import { cannotSayDraft, clashReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
+import { clashes, couldBe, follows, giveUp, type Answer, type Clash, type GiveUpResult, type SolveOptions } from "./solve.js";
+import type { LeftOut } from "./translate.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
 const USAGE = [
@@ -25,6 +28,12 @@ const USAGE = [
   "       node scripts/reading.mjs ask [--json] [--widen] [--infer] [--window N] FILE '<question>'",
   "  Prints each reading in the FILE's log that answers the question: speaker, bound blanks, frame path (outermost first),",
   "  unsettled pairs, switches used, then the glosses of the question and of the sentence. No match prints `no match`.",
+  "       node scripts/reading.mjs solve [--json] [--possible] [--defaults] [--closed] [--window N] FILE '<question>'",
+  "  Asks the solver whether the question follows from the FILE's log (--possible: whether it could be so): the verdict,",
+  "  the reply, why (each deciding reading with its turn), switches used, and readings left out of the program.",
+  "  --defaults  everyday defaults for open universals; --closed  the unsaid is false",
+  "       node scripts/reading.mjs clashes [--json] [--give-up] [--window N] FILE",
+  "  Prints each smallest clash in the FILE's log, with its readings; --give-up adds a smallest set to give up.",
 ].join("\n");
 
 const word = (w: LexWord): string => w.raw;
@@ -301,9 +310,111 @@ function conversation(command: "log" | "ask", raw: string[]): void {
   else for (const m of matches) for (const l of formatMatch(m, query, tables)) console.log(l);
 }
 
-function main(): void {
+/** The solver's options a solve or clashes command names. */
+type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; window?: number; args: string[] };
+
+function solveFlags(command: "solve" | "clashes", raw: string[]): SolveFlags {
+  const flags: SolveFlags = { json: false, possible: false, defaults: false, closed: false, giveUp: false, args: [] };
+  for (let i = 0; i < raw.length; i++) {
+    const arg = raw[i]!;
+    if (arg === "--json") flags.json = true;
+    else if (arg === "--possible" && command === "solve") flags.possible = true;
+    else if (arg === "--defaults" && command === "solve") flags.defaults = true;
+    else if (arg === "--closed" && command === "solve") flags.closed = true;
+    else if (arg === "--give-up" && command === "clashes") flags.giveUp = true;
+    else if (arg === "--window") {
+      flags.window = Number(raw[++i]);
+      if (!Number.isInteger(flags.window) || flags.window < 0) (console.error(`--window needs a whole number\n${USAGE}`), process.exit(1));
+    } else if (arg.startsWith("--")) (console.error(`unknown flag ${arg}\n${USAGE}`), process.exit(1));
+    else flags.args.push(arg);
+  }
+  if (flags.args.length !== (command === "solve" ? 2 : 1)) (console.error(USAGE), process.exit(1));
+  return flags;
+}
+
+/** The reply to a solver answer: yes, no, or cannot say spelled; *these cannot all hold* for `both`; else its English. */
+export function answerReply(answer: Answer, tables: ClassifyTables): Reply | undefined {
+  if (answer.verdict === "yes") return firstReply("yes", [yesDraft()], tables);
+  if (answer.verdict === "no") return firstReply("no", [noDraft()], tables);
+  if (answer.verdict === "unknown") return firstReply("cannotSay", [cannotSayDraft(tables)], tables);
+  if (answer.verdict === "both") return clashReply(answer.because);
+  return undefined;
+}
+
+/** One line per reading id: the id, then its turn when the log has it. */
+function readingLines(ids: readonly string[], log: Log, indent: string): string[] {
+  const turnOf = new Map(log.entries.flatMap((e) => e.readings.map((r) => [r.id, e] as const)));
+  return ids.map((id) => {
+    const e = turnOf.get(id);
+    return `${indent}${id}${e ? ` [${e.at}] ${e.speaker}: ${e.text}` : ""}`;
+  });
+}
+
+const leftLines = (left: readonly LeftOut[]): string[] => left.map((l) => `left ${l.reading} ${l.construction}: ${l.reason}`);
+
+/** Text for `solve`: verdict, reply, why with each deciding turn, switches, readings left out. */
+export function formatAnswer(answer: Answer, log: Log, tables: ClassifyTables): string[] {
+  const out = [`verdict ${answer.verdict}`];
+  const reply = answerReply(answer, tables);
+  if (reply) out.push(`reply ${reply.english}${reply.ageben ? ` ${reply.ageben}` : ""}`);
+  if (answer.english) out.push(`english ${answer.english}`);
+  if (answer.because.length && answer.verdict !== "both") out.push(`why ${whyReply(answer.because).english}`);
+  out.push(...readingLines(answer.because, log, "  "));
+  if (answer.switches.length) out.push(`switches ${answer.switches.join(", ")}`);
+  out.push(...leftLines(answer.left));
+  return out;
+}
+
+/** Text for `clashes`: each clash's reply, atom, switches and readings; then the set to give up, when asked. */
+export function formatClashes(result: { clashes: Clash[]; left: LeftOut[]; refused?: string }, log: Log, give?: GiveUpResult): string[] {
+  const out: string[] = [];
+  if (result.refused) out.push(`refused ${result.refused}`);
+  else if (result.clashes.length === 0) out.push("no clash");
+  for (const c of result.clashes) {
+    out.push(`clash ${clashReply(c.readings).english}`, `  atom ${c.atom}`);
+    if (c.switches.length) out.push(`  switches ${c.switches.join(", ")}`);
+    out.push(...readingLines(c.readings, log, "  "));
+  }
+  if (give) {
+    if (give.refused) out.push(`give up refused ${give.refused}`);
+    else out.push(`give up ${giveUpReply(give.giveUp).english}`, ...readingLines(give.giveUp, log, "  "));
+  }
+  out.push(...leftLines(result.left));
+  return out;
+}
+
+async function solveCommand(command: "solve" | "clashes", raw: string[]): Promise<void> {
+  const flags = solveFlags(command, raw);
+  const tables = loadDefaultTables();
+  const log = conversationLog(flags.args[0]!, tables, flags.window);
+  const options: SolveOptions = { lexicon: tables, defaults: flags.defaults, closedWorld: flags.closed };
+  if (command === "clashes") {
+    const result = await clashes(log, options);
+    const give = flags.giveUp ? await giveUp(log, options) : undefined;
+    if (flags.json) console.log(JSON.stringify({ ...result, ...(give ? { giveUp: give } : {}) }, null, 2));
+    else for (const l of formatClashes(result, log, give)) console.log(l);
+    if (result.refused) process.exitCode = 1;
+    return;
+  }
+  const query = flags.args[1]!.trim();
+  let question: Reading | undefined;
+  try {
+    question = readQuestion(log, query, tables)[0];
+  } catch (error) {
+    console.error(`query: ${error instanceof Error ? error.message.split("\n")[0] : String(error)}`);
+    process.exit(1);
+  }
+  if (!question) (console.error("query: holds no sentence"), process.exit(1));
+  const answer = await (flags.possible ? couldBe : follows)(log, question, options);
+  if (flags.json) console.log(JSON.stringify({ ...answer, reply: answerReply(answer, tables) }, null, 2));
+  else for (const l of formatAnswer(answer, log, tables)) console.log(l);
+  if (answer.verdict === "refused") process.exitCode = 1;
+}
+
+async function main(): Promise<void> {
   const raw = process.argv.slice(2);
   if (raw[0] === "log" || raw[0] === "ask") return conversation(raw[0], raw.slice(1));
+  if (raw[0] === "solve" || raw[0] === "clashes") return solveCommand(raw[0], raw.slice(1));
   let json = false;
   let file: string | undefined;
   const args: string[] = [];
@@ -350,4 +461,4 @@ function main(): void {
   if (failed) process.exit(1);
 }
 
-if (/^(reading\.mjs|cli\.bundle\.mjs)$/.test(basename(process.argv[1] ?? ""))) main();
+if (/^(reading\.mjs|cli\.bundle\.mjs)$/.test(basename(process.argv[1] ?? ""))) await main();
