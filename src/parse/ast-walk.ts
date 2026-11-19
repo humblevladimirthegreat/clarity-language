@@ -115,6 +115,22 @@ export function isKindReference(part: NpCoord["parts"][number]): boolean {
   );
 }
 
+/**
+ * *No K*: a `zul` fence with no items + the kind on shared `/ɡ/` (universals-domains.md#universals-domains-generics): the
+ * same shape as *every K*, so its kind is the shared kind and its fence a binder (interpreter.md `joinSeries:u:kind`).
+ */
+export function isNoKindFence(part: NpCoord["parts"][number]): boolean {
+  const join = part.join;
+  return (
+    part.items.length === 0 &&
+    join?.family.kind === "joinMarker" &&
+    join.reading === "join" &&
+    join.family.series === "u" &&
+    join.ending === "l" &&
+    part.shared.some(isSharedGPackage)
+  );
+}
+
 /** Greeting: a prefix-less named citation said alone, with any family name (`azawan.`, word-endings.md § greeting). */
 export function isGreeting(clause: Clause): boolean {
   const [only, ...rest] = clause.units;

@@ -12,7 +12,7 @@
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
 import { stackKind } from "./series.js";
-import { isGreeting } from "./ast-walk.js";
+import { isGreeting, isNoKindFence } from "./ast-walk.js";
 import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, NpCoord, NpPackage, ToneRecord, Unit, Utterance } from "./types.js";
 
 export type FrameFamily =
@@ -90,6 +90,7 @@ export const FRAME_KEYS: Readonly<Record<string, FrameKeyRow>> = {
   "joinSeries:u": { family: "polarity", reach: "list", anchor: "joins.md#negation-u" },
   "joinSeries:u:standalone": { family: "polarity", reach: "clause", anchor: "verb-and-stance-joins.md#standalone-stance-joins" },
   "joinSeries:ua": { family: "binder", reach: "clause", anchor: "joins.md#everything-ua" },
+  "joinSeries:u:kind": { family: "binder", reach: "clause", anchor: "universals-domains.md#universals-domains-generics" },
   "slot:newMember": { family: "binder", reach: "clause", anchor: "joins.md#everything-ua" },
   "joinSeries:uo": { family: "binder", reach: "clause", anchor: "rank-joins.md#invert-u-stacks" },
   "joinSeries:ue": { family: "polarity", reach: "list", anchor: "set-joins.md#exclusivity-and-denying-a-whole-list" },
@@ -610,6 +611,10 @@ function clauseFrames(clause: Clause, tables: ClassifyTables | undefined, blanks
         const series = join.family.series;
         if (series === "ua" || series === "uo") {
           const binder = frame(`joinSeries:${series}`, join);
+          if (binder) frames.push(binder);
+        } else if (isNoKindFence(part)) {
+          // *No K* (`zul` + kind) binds as *every K* does; its denial rides in the binder (interpreter.md `joinSeries:u:kind`).
+          const binder = frame("joinSeries:u:kind", join);
           if (binder) frames.push(binder);
         }
       }

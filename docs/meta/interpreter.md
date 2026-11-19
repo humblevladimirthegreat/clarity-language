@@ -47,7 +47,7 @@ The interpreter turns a parse into **readings**, one per clause, so tools can co
 | `bar` | The stance a ranking is measured against: than planned, than usual, enough, too | `bars.md` |
 | `quote` | Quoted words: a nested reading with its own speaker | `spans.md#writing`, `quote-contents.md` |
 | `attitude` | **Added.** How you feel about the claim or how you say it: *hopefully*, speech manner, tone marks, interjections | `feelings.md#speaker-attitude`, `speech-manner.md`, `tone-marks.md`, `speech-moves.md#interjections-reactions` |
-| `binder` | *Every*, *everything but*, and a new member a later phrase falls under; bound tags | `joins.md#everything-ua`, `universals-domains.md` |
+| `binder` | *Every*, *no*, *everything but*, and a new member a later phrase falls under; bound tags | `joins.md#everything-ua`, `universals-domains.md` |
 | `call` | **Added.** Names who the turn is for (`party`); commutes with every other frame in its clause | `speech-moves.md#vocative` |
 
 R1a dropped no first-cut family and added `intention`, `ability`, and `residue`: each has whole-clause forms that change the claim and that the first cut did not name. R1b dropped no first-cut family and added `attitude`: speaker attitude, speech manner and tone marks change no truth, but they are the speaker's and stay so under a holder (`holder.md#what-the-holder-covers`), so they cannot be details. Unit R6d added `call`: a call was filed under `force`, but it commutes with every frame, the act word included, so no `force` row fits it. The final list: `force`, `polarity`, `say`, `stance`, `holder`, `hinge`, `intention`, `ability`, `phase`, `residue`, `notional`, `mirative`, `contrary`, `occasion`, `sake`, `attitude`, `bar`, `quote`, `binder`, `call`, `unknown`.
@@ -73,7 +73,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | hookJob | `extraNoun` | detail:place | `extra-noun-hooks.md#extra-noun-stacked-vowels-and-loose-m` | On, through, using, near: a landmark for the clause or a hosted landmark; `hooks.md#since` is the time case |
 | hookJob | `genitive` | detail:relation | `social-ties.md#genitive` | `om` + `/b/` on the noun to its left: a detail of that term |
 | hookJob | `stray` | structure | `social-ties.md#genitive` | Rejected by enforce; never reaches a reading |
-| hookJob | `span` | detail:range | `ranges.md#ranges` | A hook between two endpoints of one kind |
+| hookJob | `span` | detail:range | `ranges.md#ranges` | A hook between two endpoints of one kind: the first end fills the role and the detail hosts the second (`zragel oel zrazal`). On a counted noun (`ranges.md#number-ranges`, `open-ranges.md#rays`: "put the endpoints on the counted noun"), a span between the noun's number and a second number (`zodozel gragel oel grazal`, `dodozel grawal uel gragel`) is a detail of that number detail, with both ends there: the first end is that detail's own word, and the range hosts the second as a `number` term. No second number is read as the clause's predicate |
 | hookJob | `resume` | link | `in-clause-hooks.md#hook-resume` | `-r` hook: points back to a landmark |
 | hookJob | `zone` | frame:contrary | `contrary-to.md#contrary-to-stance` | `uom` + the stance it holds as the opposing zone; that stance is the frame's `content`, not a frame on the claim |
 | lexReading | `ordinary` | structure | `clause.md#who-acts-and-the-action` | Read by its PoS slot |
@@ -167,7 +167,8 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | joinSeries | `a` | structure | `joins.md#and-lists-a` | A list term, set *and* |
 | joinSeries | `o` | structure | `joins.md#rank-o` | A list term, rank |
 | joinSeries | `ao` | structure | `rank-joins.md#route-ao` | A list term, in order |
-| joinSeries | `u` | frame:polarity | `joins.md#negation-u` | List reach: a list join denies only its items, so it nests in its list term (rule 2) and does not pair. On `/v/` it denies the verb (`verb-and-stance-joins.md#vp-clause-forms`); on `/th/` the stance words right before it, so it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`, `verb-and-stance-joins.md#stance-join-reach`). A standalone `/th/` join (`thul`, `thum`, `thur`) has no stance words right before it and says how to take the whole claim, so it pairs (`verb-and-stance-joins.md#standalone-stance-joins`) |
+| joinSeries | `u` | frame:polarity | `joins.md#negation-u` | List reach: a list join denies only its items, so it nests in its list term (rule 2) and does not pair. On `/v/` it denies the verb (`verb-and-stance-joins.md#vp-clause-forms`); on `/th/` the stance words right before it, so it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`, `verb-and-stance-joins.md#stance-join-reach`). A standalone `/th/` join (`thul`, `thum`, `thur`) has no stance words right before it and says how to take the whole claim, so it pairs (`verb-and-stance-joins.md#standalone-stance-joins`). A `zul` fence with no items and a shared kind is `u:kind` |
+| joinSeries | `u:kind` | frame:binder | `universals-domains.md#universals-domains-generics` | *No K*: a `zul` fence (any role level) with no items and the kind on shared `/ɡ/`, "the same shape with `u`" as *every K* (`zul gogozel vehohel.`; with no verb, *there is no K*: `zul godozel.`). The fence binds as `ua` does and hosts its list; the `u` denial is the frame's `inner` (a `joinSeries:u` polarity frame on the same word), not a frame on the list term. Its shared word is `shared:kind` |
 | joinSeries | `ua` | frame:binder | `joins.md#everything-ua` | *Every K* / *everything but X* (`universals-domains.md#universals-domains-generics`); reaches from where it stands to the end of its sentence. On `/th/` after stance words (`thual`, *every ground but these*), it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`) |
 | joinSeries | `uo` | frame:binder | `rank-joins.md#invert-u-stacks` | Ranked counterpart of `ua`; frame by default. On `/th/` after stance words, it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`) |
 | joinSeries | `e` | structure | `joins.md#choice-e` | A list term, choice |
@@ -190,7 +191,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | shared | `collective` | link | `collectives.md#verbs-v` | The list acts as one |
 | shared | `scale` | link | `list-structure.md#shared-after-the-join` | A shared scale word after the join |
 | shared | `equative` | link | `list-structure.md#shared-after-the-join` |  |
-| shared | `kind` | link | `universals-domains.md#universals-domains-generics` | The kind after a `ua` / `uo` fence |
+| shared | `kind` | link | `universals-domains.md#universals-domains-generics` | The kind after a `ua` / `uo` fence, or after a *no K* `zul` fence (`joinSeries:u:kind`) |
 | shared | `ordinary` | link | `list-structure.md#shared-after-the-join` |  |
 | ending | `l` | label | `phonology.md#word-edges` | |
 | ending | `m` | label | `word-endings.md#abstract-m` | |
@@ -395,7 +396,7 @@ No sentence states an order against another frame.
 
 ### polarity
 
-**Whole clause:** a standalone `/th/` `u` join (`thul`, `thum`, `thur`), which has no stance words right before it and says how to take the claim (`verb-and-stance-joins.md#standalone-stance-joins`): it pairs with other whole-clause frames. Any other `u` join denies only its list, so it nests in its term and every whole-clause frame on the clause sits over it; on `/th/` that term is the [stance list](#terms) of the stance words it closes, one or several. *Possibly not* and *not possibly* are told apart by where the `u` goes: on the verb (`vowurol vul`, under MAY by rule 2) or right after MAY (`thomam thul`, denying MAY). With other words between MAY and the join, MAY is a frame of its own and the join is standalone (`verb-and-stance-joins.md#stance-join-reach`).
+**Whole clause:** a standalone `/th/` `u` join (`thul`, `thum`, `thur`), which has no stance words right before it and says how to take the claim (`verb-and-stance-joins.md#standalone-stance-joins`): it pairs with other whole-clause frames. A *no K* `zul` fence is a binder carrying its denial (`joinSeries:u:kind`). Any other `u` join denies only its list, so it nests in its term and every whole-clause frame on the clause sits over it; on `/th/` that term is the [stance list](#terms) of the stance words it closes, one or several. *Possibly not* and *not possibly* are told apart by where the `u` goes: on the verb (`vowurol vul`, under MAY by rule 2) or right after MAY (`thomam thul`, denying MAY). With other words between MAY and the join, MAY is a frame of its own and the join is standalone (`verb-and-stance-joins.md#stance-join-reach`).
 
 - `joins.md#negation-u`: "Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing."
 - `verb-and-stance-joins.md#stance-joins` (against `stance`, `hinge`): "The join works only on the stance words before it, so the claim itself still stands and only its grounds are denied or ranked."

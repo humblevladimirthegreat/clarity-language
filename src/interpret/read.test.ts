@@ -987,3 +987,52 @@ describe("reader (R9): a `/th/` join that closes stance words reads as one stanc
     assert.deepEqual(families(reading), ["polarity"]);
   });
 });
+
+describe("reader (B0): *no K* and a range on a counted noun", () => {
+  it("universals-domains.md:46: `zul` + kind is a binder over the list, its denial inside, its kind shared", () => {
+    const reading = one("[z-no | g-cat] | v-sit");
+    assert.deepEqual(families(reading), ["binder"]);
+    const binder = frame(reading, "binder");
+    assert.equal(binder.key, "joinSeries:u:kind");
+    assert.deepEqual(binder.inner?.map((f) => `${f.family} ${f.key}`), ["polarity joinSeries:u"]);
+    const z = asList(reading.claim.roles.z);
+    assert.equal(binder.hosted, z);
+    assert.deepEqual(z.members, []);
+    assert.equal(z.frames, undefined, "the denial rides in the binder, not on the list");
+    assert.deepEqual(z.shared.map((r) => r.role), ["kind"]);
+    assert.deepEqual(z.sharedDetails?.map((d) => d.values.role), ["kind"]);
+    assert.deepEqual(reading.links.map((l) => l.key), ["shared:kind"]);
+    assert.equal(reading.unread.length, 0);
+  });
+
+  it("universals-domains.md:54: with no verb, `zul godozel` is the same binder; `zodozel zul` stays a list denial", () => {
+    assert.equal(frame(one("[z-no | g-dog]"), "binder").key, "joinSeries:u:kind");
+    const not = one("[z-dog | z-not] | v-walk");
+    assert.deepEqual(families(not), []);
+    assert.deepEqual(asList(not.claim.roles.z).frames?.map((f) => f.family), ["polarity"]);
+  });
+
+  it("ranges.md:136: a range on a counted noun sits on its number detail, both ends there, no predicate", () => {
+    const reading = one("[z-dog | g-three] | through | g-five | v-walk");
+    assert.deepEqual(reading.claim.predicate, []);
+    assert.equal(reading.claim.details.length, 0);
+    const z = reading.claim.roles.z;
+    assert.ok(z?.kind === "thing");
+    const number = z.details.find((d) => d.key === "lexReading:number")!;
+    assert.equal(number.words[0]!.raw, "gragel");
+    const range = number.details?.find((d) => d.kind === "range");
+    assert.equal(range?.key, "hookJob:span");
+    assert.equal(range?.words[0]!.raw, "oel");
+    assert.ok(range?.hosted?.kind === "number" && range.hosted.word.raw === "grazal");
+  });
+
+  it("open-ranges.md:9: a ray on a counted noun reads the same way", () => {
+    const reading = one("z-Alazun | [d-dog | g-plus-infinity] | through-excluding | g-three | v-see");
+    assert.deepEqual(reading.claim.predicate, []);
+    const d = reading.claim.roles.d;
+    assert.ok(d?.kind === "thing");
+    const range = d.details.find((x) => x.key === "lexReading:number")?.details?.[0];
+    assert.equal(range?.words[0]!.raw, "uel");
+    assert.ok(range?.hosted?.kind === "number" && range.hosted.word.raw === "gragel");
+  });
+});

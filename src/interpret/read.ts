@@ -11,6 +11,7 @@ import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { overlayConstructionId } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { newMemberHead, titledPhrases, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
+import { isNoKindFence } from "../parse/ast-walk.js";
 import type {
   AnaphorBind,
   BodyCarry,
@@ -541,11 +542,11 @@ function hDetail(unit: HUnit, here: Here, clause: Clause): Detail {
 }
 
 /** The shared words of one list part (list-structure.md#shared-after-the-join), each read by its class. */
-function sharedDetails(shared: CoordShared[], here: Here, clause: Clause, factor?: LexWord): Detail[] {
+function sharedDetails(shared: CoordShared[], here: Here, clause: Clause, factor?: LexWord, noKind = false): Detail[] {
   const out = shared.map((item) => {
     const detail = item.word.pos === "g" ? adjDetail(item as GPackage, here, clause) : hDetail(item as HUnit, here, clause);
     const record = here.ctx.sharedItems.get(item);
-    if (record) detail.values.role = record.role;
+    if (record) detail.values.role = noKind ? "kind" : record.role;
     return detail;
   });
   if (factor) {
@@ -567,9 +568,10 @@ function hostOnJoin(term: Term, here: Here): void {
   }
 }
 
-function sharedOf(joins: (LexWord | undefined)[], here: Here): SharedRecord[] {
+function sharedOf(joins: (LexWord | undefined)[], here: Here, noKind: ReadonlySet<LexWord> = new Set()): SharedRecord[] {
   const out: SharedRecord[] = [];
-  for (const join of joins) if (join) out.push(...(here.ctx.shared.get(join) ?? []));
+  // After a *no K* fence the shared word is the kind, as after `zual` (universals-domains.md#universals-domains-generics).
+  for (const join of joins) if (join) out.push(...(here.ctx.shared.get(join) ?? []).map((r) => (noKind.has(join) ? { ...r, role: "kind" as const } : r)));
   for (const record of out) here.reading.links.push(link("shared", `shared:${record.role}`, [record.join], { shared: record }));
   return out;
 }
@@ -583,6 +585,17 @@ function listFrames(joins: (LexWord | undefined)[], here: Here): Frame[] {
     if (classOf(key)?.reach === "list") out.push(frameOf(key, join, here));
   }
   return out;
+}
+
+/**
+ * *No K* (`zul` + kind, universals-domains.md#universals-domains-generics): the fence is a binder, as `zual`'s is, and its
+ * denial rides in it as `inner`, not on the list term. A scoped clause has the binder from its scope record; a reading with
+ * none (an island, a verb-list item) places it here. `hostOnJoin` hosts the list (interpreter.md `joinSeries:u:kind`).
+ */
+function noKindBinder(join: LexWord, here: Here): void {
+  const scoped = here.reading.frames.find((f) => f.key === "joinSeries:u:kind" && f.words[0] === join);
+  const frame = scoped ?? (here.scoped ? undefined : placeFrame("joinSeries:u:kind", join, "clause", here));
+  if (frame) frame.inner = [frameOf("joinSeries:u", join, here)];
 }
 
 type Part = { members: Term[]; join?: LexWord };
@@ -610,19 +623,20 @@ function joinModifiers(mods: LexWord[] | undefined, join: LexWord | undefined, h
   }
 }
 
-function listTerm(parts: Part[], here: Here, bound?: Detail, shared: Detail[] = []): Term {
+function listTerm(parts: Part[], here: Here, bound?: Detail, shared: Detail[] = [], noKind: ReadonlySet<LexWord> = new Set()): Term {
   if (parts.length === 1 && parts[0]!.members.length === 1 && !parts[0]!.join && shared.length === 0) return parts[0]!.members[0]!;
   const joins = parts.map((p) => p.join);
   const join = [...joins].reverse().find((j) => j !== undefined);
   const members = parts.flatMap((p) => p.members);
   // A fill-ask join with no items is the blank itself (questions.md#fill-ask; interpreter.md `ask:fillAsk`).
   if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, details: [...(bound ? [bound] : []), ...shared] };
-  const frames = listFrames(joins, here);
+  const frames = listFrames(joins.filter((j) => !j || !noKind.has(j)), here);
+  for (const j of noKind) noKindBinder(j, here);
   const term: Term = {
     kind: "list",
     ...(join ? { join } : {}),
     members,
-    shared: sharedOf(joins, here),
+    shared: sharedOf(joins, here, noKind),
     values: join ? wordValues(join) : {},
     parts,
     ...(frames.length ? { frames } : {}),
@@ -651,6 +665,7 @@ function barTerm(unit: HUnit, here: Here, clause: Clause): Term {
 function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
   let bound: Detail | undefined;
   const shared: Detail[] = [];
+  const noKind = new Set(coord.parts.filter(isNoKindFence).map((part) => part.join!));
   const parts = coord.parts.map((part) => {
     const members = part.items.map((item): Term => {
       if (item.kind === "package") return itemTerm(item.package, here, clause);
@@ -660,10 +675,10 @@ function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
     if (part.tag) here.reading.links.push(link("tag", "slot:tag", [part.tag]));
     joinModifiers(part.joinModifiers, part.join, here);
     bound = boundOf(part.join, part.landmark, here, clause) ?? bound;
-    shared.push(...sharedDetails(part.shared, here, clause, part.factor));
+    shared.push(...sharedDetails(part.shared, here, clause, part.factor, !!part.join && noKind.has(part.join)));
     return { members, ...(part.join ? { join: part.join } : {}) };
   });
-  return listTerm(parts, here, bound, shared);
+  return listTerm(parts, here, bound, shared, noKind);
 }
 
 function gTerm(coord: GCoord, here: Here, clause: Clause): Term {
@@ -877,6 +892,51 @@ function firstWord(coord: NpCoord): LexWord | undefined {
   return item?.kind === "package" ? item.package.head : undefined;
 }
 
+/** A counted noun's number: the noun phrase is one noun whose last `/ɡ/` is a number (numbers.md#counts). */
+function countedNumber(unit: Unit | undefined): { level: "z" | "d" | "b"; number: GPackage } | undefined {
+  if (unit?.kind !== "np" || unit.coord.parts.length !== 1) return undefined;
+  const part = unit.coord.parts[0]!;
+  const item = part.items[0];
+  if (part.join || part.items.length !== 1 || item?.kind !== "package") return undefined;
+  const number = item.package.adjs.at(-1);
+  return number && isNumberAdj(number) ? { level: unit.coord.level, number } : undefined;
+}
+
+function isNumberAdj(pkg: GPackage): boolean {
+  return pkg.word.pos === "g" && pkg.word.reading === "number" && pkg.word.family.kind === "number";
+}
+
+/**
+ * A range on a counted noun (ranges.md#number-ranges, open-ranges.md#rays): `zodozel gragel oel grazal` puts both ends on
+ * the noun. The span is a `detail:range` of the noun's number detail, the first end that detail's own word and the second
+ * the range's hosted number term, as `zragel oel zrazal` hosts its second end (interpreter.md `hookJob:span`).
+ */
+function countedRange(units: Unit[], i: number, here: Here, clause: Clause): boolean {
+  const hook = units[i];
+  const end = units[i + 1];
+  const counted = countedNumber(units[i - 1]);
+  if (hook?.kind !== "hook" || hook.job !== "span" || end?.kind !== "predicate" || !isNumberAdj(end.adj) || !counted) return false;
+  const noun = here.reading.claim.roles[counted.level];
+  const number = noun?.kind === "thing" ? noun.details.find((d) => d.key === "lexReading:number" && d.words[0] === counted.number.word) : undefined;
+  if (!number) return false;
+  const range = detailOf("hookJob:span", hook.word, "range");
+  for (const w of hook.modifiers) modifier(w, here, range);
+  const second = headTerm(end.adj.word, here, clause);
+  // A word after the second end describes that end alone (ranges.md#number-ranges).
+  const own = adjDetail(end.adj, here, clause);
+  addDetails(second, [...(own.details ?? [])]);
+  range.hosted = second;
+  number.details = [...(number.details ?? []), range];
+  return true;
+}
+
+function readUnits(units: Unit[], here: Here, clause: Clause): void {
+  for (let i = 0; i < units.length; i++) {
+    if (countedRange(units, i, here, clause)) i++;
+    else readUnit(units[i]!, here, clause);
+  }
+}
+
 function readUnit(unit: Unit, here: Here, clause: Clause): void {
   const hook = here.pendingHook;
   here.pendingHook = undefined;
@@ -1002,7 +1062,7 @@ function readIsland(units: Unit[], outer: Here, path = `i${firstAt(units)}`): Re
   const reading = emptyReading(`${outer.reading.id}/${path}`, outer.utterance, outer.body, clause);
   const here: Here = { ...outer, reading, scoped: false };
   for (const coord of titledPhrases(units)) here.ctx.titled.add(coord);
-  for (const unit of units) readUnit(unit, here, clause);
+  readUnits(units, here, clause);
   return reading;
 }
 
@@ -1022,7 +1082,7 @@ function readClause(clause: Clause, utterance: number, body: number, id: Reading
   copyScope(reading, ctx.scopes.get(clause), ctx.options.tables);
   const here: Here = { ctx, reading, utterance, body, scoped };
   for (const coord of titledPhrases(clause.units)) ctx.titled.add(coord);
-  for (const unit of clause.units) readUnit(unit, here, clause);
+  readUnits(clause.units, here, clause);
   if (clause.dependent && !ctx.dependents.has(clause.dependent.clause)) {
     // A dependent no stand-in names in a role: an `/h/` stand-in or `Odo` slot; kept as a detail with its reading.
     const dependent = readDependent(clause, here)!;
