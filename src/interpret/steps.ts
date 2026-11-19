@@ -83,9 +83,12 @@ export function asMember(member: Term, list: ListTerm): Term {
   return { ...member, details: [...(member.details ?? []), ...shared] } as Term;
 }
 
-/** Closed `zual` + kind, no leftovers (universals-domains.md#universals-domains-generics): the instance it stands for. */
-export function universalInstance(target: Term): Term | undefined {
-  if (target.kind !== "list" || target.values.series !== "ua" || target.values.ending !== "l") return undefined;
+/**
+ * Closed `zual` + kind, no leftovers (universals-domains.md#universals-domains-generics): the instance it stands for.
+ * With `series` `u`, closed `zul` + kind (*no K*, the `joinSeries:u:kind` binder): the instance its denial covers.
+ */
+export function universalInstance(target: Term, series: "ua" | "u" = "ua"): Term | undefined {
+  if (target.kind !== "list" || target.values.series !== series || target.values.ending !== "l") return undefined;
   if (target.members.length || target.frames?.length || target.bound) return undefined;
   const shared = target.sharedDetails ?? [];
   const kinds = shared.filter((d) => d.values.role === "kind");

@@ -1,0 +1,31 @@
+# Solver fixture: always and never (restrictors.md, "Always"; R1-6).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# a1 + a2 clash (bare always covers any time); a3 + a4 clash (bare never). a5 (open, as a rule) and a6 (with a listed exception) do not clash with a plain denial (a7).
+
+@ a1
+zahelan vozuyel hual.
+= Ahelan always sings.
+
+@ a2
+zahelan vozuyel vul.
+= Ahelan doesn't sing.
+
+@ a3
+zalazun veruvol hal.
+= Alazun never runs.
+
+@ a4
+zalazun veruvol.
+= Alazun runs.
+
+@ a5
+zazozon vehohel huam.
+= Azozon usually sits.
+
+@ a6
+zazozon vowurol herulal hual.
+= Azozon always walks except when it rains.
+
+@ a7
+zazozon vowurol vehohel vul.
+= Azozon neither walks nor sits.

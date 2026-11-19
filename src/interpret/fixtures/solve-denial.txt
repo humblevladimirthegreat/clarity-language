@@ -17,3 +17,13 @@ zazozon godozel.
 @ d4
 zazozon godozel gul.
 = Azozon is not a dog.
+
+# d5 and d6 clash through fits: d6 denies "a dog" by its kind (no first-mention constant to deny), and match() fits it to d5's dog.
+
+@ d5
+zazozon dodozel vayebel.
+= Azozon sees a dog.
+
+@ d6
+zazozon dodozel dul vayebel.
+= Azozon doesn't see a dog.

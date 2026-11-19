@@ -83,4 +83,12 @@ describe("steps: infer", () => {
     assert.equal(universalInstance(readText("zual gogozel zul vezuvel.", tables)[0]!.claim.roles.z!), undefined);
     assert.equal(universalInstance(role("z-Azozon | v-sleep", "z")), undefined);
   });
+
+  it("universals-domains.md#universals-domains-generics: closed zul + kind (no K) gives the instance its denial covers", () => {
+    const none = readText("zul gawozal vewobol.", tables)[0]!.claim.roles.z!;
+    const instance = universalInstance(none, "u");
+    assert.ok(instance?.kind === "thing" && instance.root === rootOf("penguin"));
+    assert.equal(universalInstance(none), undefined);
+    assert.equal(universalInstance(readText("zual gogozel vezuvel.", tables)[0]!.claim.roles.z!, "u"), undefined);
+  });
 });

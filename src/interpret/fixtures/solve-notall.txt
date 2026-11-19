@@ -1,0 +1,15 @@
+# Solver fixture: a whole-list denial, "not both" (set-joins.md#exclusivity-and-denying-a-whole-list).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# w1 denies the closed list as one item; w2 and w3 together clash with it, either alone does not.
+
+@ w1
+zazozon vowurol veruvol val vul.
+= Azozon doesn't both walk and run.
+
+@ w2
+zazozon vowurol.
+= Azozon walks.
+
+@ w3
+zazozon veruvol.
+= Azozon runs.
