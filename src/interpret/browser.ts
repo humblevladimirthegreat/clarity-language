@@ -12,7 +12,7 @@ export { compareValues, measureValue, numberValue, sameNumberWord, samePayload, 
 export type { MeasureValue, NumberValue } from "./value.js";
 export { ask, questionFilters } from "./ask.js";
 export type { Host, Match } from "./ask.js";
-export { clashes, couldBe, follows, giveUp, whyNot } from "./solve-browser.js";
-export type { Answer, Clash, ClashResult, GiveUpResult, SolveOptions, SolveSwitch, SolveVerdict, WhyNotResult } from "./solve-browser.js";
+export { clashes, couldBe, follows, giveUp, stands, whyNot } from "./solve-browser.js";
+export type { Answer, Clash, ClashResult, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve-browser.js";
 export { canonicalReadings, compareCanonical, sameReadings } from "./equal.js";
 export type { CanonicalReadings, EqualResult, EqualVerdict, UnorderedPair } from "./equal.js";

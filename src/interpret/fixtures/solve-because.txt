@@ -1,6 +1,5 @@
-# Draft fixture (R2, group (c)): because, fault, contrary to, and what stands (because-and-iff.md#choosing-a-hinge, fault.md#fault, contrary-to.md, verb-and-stance-joins.md#stance-join-before-barl).
+# Solver fixture (R2, group (c)): because, fault, contrary to, and what stands (because-and-iff.md#choosing-a-hinge, fault.md#fault, contrary-to.md, verb-and-stance-joins.md#stance-join-before-barl).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# Not a solve-* fixture: phase 3 (B7) renames it once its rows are confirmed and built.
 # W = Azozon walks, S = Alazun is asleep.
 
 @ c1
@@ -40,7 +39,7 @@ zazozon vudurul thahum blarl zalazun vezuyol.
 zazozon vowurol thebem thahum blarl zalazun vezuvel.
 = Azozon walks only because Alazun is asleep.
 
-# Contrary to (R2-11): the event is your claim; c4 clashes with each.
+# Contrary to (R2-1 row 9, R2-11): the event is your claim; c4 clashes with each. A plan with no holder is the turn speaker's.
 @ c9
 zazozon vowurol uom thagom.
 = Azozon walks, contrary to my plan.
@@ -49,9 +48,10 @@ zazozon vowurol uom thagom.
 zazozon vowurol uom hwuvul.
 = Azozon walks against the rules.
 
-@ c11
-zazozon vowurol uom thebamalazun.
-= Azozon walks, contrary to what I hear Alazun thinks.
+# c11 has no row yet: the reader gives the holder frame after `uom` no party and no channel gloss.
+# @ c11
+# zazozon vowurol uom thebamalazun.
+# = Azozon walks, contrary to what I hear Alazun thinks.
 
 # c10 + c12: with R2-7 and R2-11 (B), the rule c10 goes against clashes with this one.
 @ c12

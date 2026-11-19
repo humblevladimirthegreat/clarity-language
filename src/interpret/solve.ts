@@ -10,6 +10,7 @@
  * - {@link clashes}: the smallest clashes. One world: each `clash` atom in it, with the readings behind it, shrunk by
  *   one removal pass. Several worlds: re-solved with the switch atoms free (QuickXplain).
  * - {@link giveUp}: a smallest set to give up, by one optimization run. {@link whyNot}: the smallest clash a claim joins.
+ * - {@link stands}: what stands, each reading in, out or undecided over the attacks clashes give (ASPARTIX encodings).
  *
  * Fitting stays the matcher's: the question is matched in TypeScript, by {@link match}, against the claims the answer
  * set's `holds` atoms stand for ({@link Translation.terms}). A question's fit to a stated range is {@link inRange}'s.
@@ -196,8 +197,11 @@ function openReadings(program: string): Set<string> {
   return out;
 }
 
-/** `fired` ids of generic rules that are not readings: a requirement's permission (R2-8), an act against a ban (R2-9). */
-const GENERIC_IDS = new Set(["requires", "against"]);
+/**
+ * `fired` ids of generic rules that are not readings: a requirement's permission (R2-8), an act against a ban (R2-9), a
+ * ban's denied permission (permission-consent.md#requirement).
+ */
+const GENERIC_IDS = new Set(["requires", "against", "bans"]);
 
 /** Walk from conclusions back through `fired` and `used` to the readings that produced them. */
 function explain(model: Model, start: readonly string[], ctx: Context): { because: string[]; switches: SolveSwitch[] } {
@@ -362,7 +366,10 @@ function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]
   // A wrapped question (a holder's view, a say word) is matched inside atoms with the same wrap; a plain one, outside any.
   const wrap = p.qid ? p.translation.wraps.get(p.qid) : undefined;
   for (const held of model.holds) {
-    const atom = wrap ? unwrapText(wrap, held) : held;
+    // A wrapped denial, `neg(say(..))` (a ban's denied permission), rules out the question inside the same wrap.
+    const denial = wrap ? negOf(held) : undefined;
+    const inside = denial === undefined ? undefined : unwrapText(wrap!, denial);
+    const atom = wrap ? (unwrapText(wrap, held) ?? (inside === undefined ? undefined : `neg(${inside})`)) : held;
     if (atom === undefined) continue;
     const inner = negOf(atom);
     const source = p.translation.terms.get(inner ?? atom);
@@ -680,4 +687,173 @@ export async function whyNot(log: Pick<Log, "readings">, claim: Reading | Claim,
   const { atom, switches } = await describe(found, p);
   const english = found.length ? `That cannot hold with ${found.join(", ")}.` : "That cannot hold on its own.";
   return { clash: { atom, readings: found, switches, english }, left: p.translation.left };
+}
+
+// ── What stands ─────────────────────────────────────────────────────────────
+
+/** R2-13: grounded by default; credulous and skeptical acceptance over stable or preferred extensions. */
+export type Semantics = "grounded" | "stable" | "preferred";
+
+export type StandsOptions = SolveOptions & { semantics?: Semantics };
+
+/** `in`: accepted (grounded, or skeptically); `out`: attacked by a reading that is in; `undec`: neither. */
+export type Label = "in" | "out" | "undec";
+
+export type Standing = {
+  reading: string;
+  label: Label;
+  /** In some extension (brave): under grounded, the same as `in`. */
+  credulous: boolean;
+};
+
+export type StandsResult = {
+  semantics: Semantics;
+  /** Each translated reading, in log order. */
+  stands: Standing[];
+  /** `[attacker, attacked]`, in log order. */
+  attacks: [string, string][];
+  /** The extensions, each in log order: one under grounded; at most {@link MAX_EXTENSIONS} under stable or preferred. */
+  extensions: string[][];
+  english?: string;
+  left: LeftOut[];
+  refused?: string;
+};
+
+/** The extensions `stands` lists under stable or preferred; acceptance comes from brave and cautious runs, not this list. */
+export const MAX_EXTENSIONS = 64;
+
+/**
+ * R2-12: the attack relation, added to the log's program. Arguments are the log's readings; the readings whose `fired`
+ * gives a clash's two sides rebut each other, both ways. A conclusion of a generic rule (a requirement's permission, a
+ * ban's denial, an act against a ban, a compound's head) is the readings' behind its premises.
+ */
+const ATTACKS = [
+  "% What stands (clingo-solver R2-12): who fired a conclusion, and rebut on each clash's two sides.",
+  "gen_rule(requires). gen_rule(against). gen_rule(bans). gen_rule(widen).",
+  "src(A, C) :- fired(A, C), on(A).",
+  "src(A, C) :- fired(G, C), gen_rule(G), used(G, C, P), src(A, P).",
+  "rebut(A, B) :- src(A, P), src(B, neg(P)).",
+  "rebut(A, B) :- src(A, P), src(B, neg(Q)), fits(Q, P).",
+  "rebut(A, B) :- src(A, view(H, P)), src(B, view(H, neg(P))).",
+  "rebut(A, B) :- src(A, view(H, P)), src(B, view(H, neg(Q))), fits(Q, P).",
+  "rebut(A, B) :- src(A, notall(A)), used(A, notall(A), P), src(B, P).",
+  "rebut(A, B) :- src(A, none(A)), used(A, none(A), P), src(B, P).",
+  "att(A, B) :- rebut(A, B).",
+  "att(B, A) :- rebut(A, B).",
+].join("\n");
+
+/** ASPARTIX's order over the arguments (Egly, Gaggl, Woltran 2010), for encodings with no conditional literals. */
+const ORDER = [
+  "lt(X, Y) :- arg(X), arg(Y), X < Y.",
+  "nsucc(X, Z) :- lt(X, Y), lt(Y, Z).",
+  "succ(X, Y) :- lt(X, Y), not nsucc(X, Y).",
+  "ninf(X) :- lt(Y, X).",
+  "nsup(X) :- lt(X, Y).",
+  "inf(X) :- not ninf(X), arg(X).",
+  "sup(X) :- not nsup(X), arg(X).",
+];
+
+/** The ASPARTIX encodings: grounded (`ground.dl`), stable (`stable.dl`), preferred by saturation (`prefex.dl`). */
+const ENCODINGS: Record<Semantics, string[]> = {
+  grounded: [
+    ...ORDER,
+    "defended_upto(X, Y) :- inf(Y), arg(X), not att(Y, X).",
+    "defended_upto(X, Y) :- inf(Y), in(Z), att(Z, Y), att(Y, X).",
+    "defended_upto(X, Y) :- succ(Z, Y), defended_upto(X, Z), not att(Y, X).",
+    "defended_upto(X, Y) :- succ(Z, Y), defended_upto(X, Z), in(V), att(V, Y), att(Y, X).",
+    "defended(X) :- sup(Y), defended_upto(X, Y).",
+    "in(X) :- defended(X).",
+  ],
+  stable: [
+    "in(X) :- not out(X), arg(X).",
+    "out(X) :- not in(X), arg(X).",
+    ":- in(X), in(Y), att(X, Y).",
+    "defeated(X) :- in(Y), att(Y, X).",
+    ":- out(X), not defeated(X).",
+  ],
+  preferred: [
+    "in(X) :- not out(X), arg(X).",
+    "out(X) :- not in(X), arg(X).",
+    ":- in(X), in(Y), att(X, Y).",
+    "defeated(X) :- in(Y), att(Y, X).",
+    "not_defended(X) :- att(Y, X), not defeated(Y).",
+    ":- in(X), not_defended(X).",
+    ...ORDER,
+    "inN(X) :- in(X).",
+    "inN(X) | outN(X) :- out(X).",
+    "eq_upto(Y) :- inf(Y), in(Y), inN(Y).",
+    "eq_upto(Y) :- inf(Y), out(Y), outN(Y).",
+    "eq_upto(Y) :- succ(Z, Y), in(Y), inN(Y), eq_upto(Z).",
+    "eq_upto(Y) :- succ(Z, Y), out(Y), outN(Y), eq_upto(Z).",
+    "eq :- sup(Y), eq_upto(Y).",
+    "undefeated_upto(X, Y) :- inf(Y), outN(X), outN(Y).",
+    "undefeated_upto(X, Y) :- inf(Y), outN(X), not att(Y, X).",
+    "undefeated_upto(X, Y) :- succ(Z, Y), undefeated_upto(X, Z), outN(Y).",
+    "undefeated_upto(X, Y) :- succ(Z, Y), undefeated_upto(X, Z), not att(Y, X).",
+    "undefeated(X) :- sup(Y), undefeated_upto(X, Y).",
+    "spoil :- eq.",
+    "spoil :- inN(X), inN(Y), att(X, Y).",
+    "spoil :- inN(X), outN(Y), att(Y, X), undefeated(Y).",
+    "inN(X) :- spoil, arg(X).",
+    "outN(X) :- spoil, arg(X).",
+    ":- not spoil.",
+  ],
+};
+
+/** The `in(..)` arguments of a witness. */
+const ins = (atoms: readonly string[]): Set<string> => new Set(atoms.filter((a) => a.startsWith("in(")).map((a) => unquote(splitAtom(a).args[0]!)));
+
+/**
+ * What stands (R2-12, R2-13): each reading labelled `in`, `out` or `undec`. The attacks come from one run of the log's
+ * program with {@link ATTACKS} (brave, so under choices an attack in any world counts); the `att` facts then feed an
+ * ASPARTIX encoding in a second run. Grounded by default; under `stable` or `preferred`, `in` is skeptical (cautious) and
+ * `credulous` brave. With every attack mutual, grounded is exactly the unattacked readings.
+ */
+export async function stands(log: Pick<Log, "readings">, options: StandsOptions = {}): Promise<StandsResult> {
+  const semantics = options.semantics ?? "grounded";
+  const empty = (left: LeftOut[], refused?: string): StandsResult => ({ semantics, stands: [], attacks: [], extensions: [], left, refused });
+  const p = prepare(log, undefined, options);
+  if (!p.ok) return empty(p.answer.left, p.answer.english);
+  const first = `${p.program}\n${ATTACKS}\n`;
+  const big = tooLarge(first, options);
+  if (big) return empty(p.translation.left, big);
+  const ids = switchIds(p.program);
+  const order = (id: string): number => ids.indexOf(id);
+  const run = await consequences(first, "brave");
+  if (!run.ok) return empty(p.translation.left, run.why);
+  const attacks = run.atoms
+    .filter((a) => a.startsWith("att("))
+    .map((a) => splitAtom(a).args.map(unquote) as [string, string])
+    .filter(([a, b]) => order(a) >= 0 && order(b) >= 0)
+    .sort((x, y) => order(x[0]) - order(y[0]) || order(x[1]) - order(y[1]));
+  if (!ids.length) return { semantics, stands: [], attacks, extensions: [], left: p.translation.left };
+  const second = [...ids.map((id) => `arg(${JSON.stringify(id)}).`), ...attacks.map(([a, b]) => `att(${JSON.stringify(a)},${JSON.stringify(b)}).`), ...ENCODINGS[semantics]].join("\n");
+  const sorted = (set: ReadonlySet<string>): string[] => ids.filter((id) => set.has(id));
+  let skeptical: Set<string>;
+  let credulous: Set<string>;
+  let extensions: string[][];
+  if (semantics === "grounded") {
+    const g = await call(second, 1, []);
+    if (!g.ok) return empty(p.translation.left, g.why);
+    skeptical = credulous = ins(g.witnesses.at(-1) ?? []);
+    extensions = [sorted(skeptical)];
+  } else {
+    const all = await call(second, MAX_EXTENSIONS, []);
+    if (!all.ok) return empty(p.translation.left, all.why);
+    extensions = all.witnesses.map((w) => sorted(ins(w)));
+    if (all.unsat) [skeptical, credulous] = [new Set(), new Set()];
+    else {
+      const [brave, cautious] = [await call(second, 0, ["--enum-mode=brave", "--quiet=1"]), await call(second, 0, ["--enum-mode=cautious", "--quiet=1"])];
+      if (!brave.ok) return empty(p.translation.left, brave.why);
+      if (!cautious.ok) return empty(p.translation.left, cautious.why);
+      credulous = ins(brave.witnesses.at(-1) ?? []);
+      skeptical = ins(cautious.witnesses.at(-1) ?? []);
+    }
+  }
+  const out = new Set(attacks.filter(([a]) => skeptical.has(a)).map(([, b]) => b));
+  const result = ids.map((reading): Standing => ({ reading, label: skeptical.has(reading) ? "in" : out.has(reading) ? "out" : "undec", credulous: credulous.has(reading) }));
+  const named = (label: Label): string[] => result.filter((s) => s.label === label).map((s) => s.reading);
+  const parts = [["Standing", named("in")], ["Out", named("out")], ["Undecided", named("undec")]] as const;
+  const english = parts.filter(([, list]) => list.length).map(([title, list]) => `${title}: ${list.join(", ")}.`).join(" ");
+  return { semantics, stands: result, attacks, extensions, english, left: p.translation.left };
 }

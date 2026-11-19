@@ -94,7 +94,7 @@ describe("reading CLI: log and ask", () => {
   });
 });
 
-describe("reading CLI: solve and clashes", () => {
+describe("reading CLI: solve, clashes and stands", () => {
   const fixtures = join(rootDir, "src", "interpret", "fixtures");
   const dir = mkdtempSync(join(tmpdir(), "reading-solve-"));
   /** A solver fixture as a conversation file: its Ageben lines, one turn each. */
@@ -132,5 +132,18 @@ describe("reading CLI: solve and clashes", () => {
     assert.match(out.stdout, /^give up Giving up t:0\.0 resolves every clash\.$/m);
     assert.equal(run("clashes", worked).stdout.trim(), "no clash");
     assert.deepEqual(JSON.parse(run("clashes", "--json", "--give-up", clash).stdout).giveUp.giveUp, ["t:0.0"]);
+  });
+
+  it("stands: each reading's label, the attacks, the extensions; --semantics", () => {
+    const out = run("stands", clash);
+    assert.equal(out.status, 0, out.stderr);
+    assert.match(out.stdout, /^semantics grounded$/m);
+    assert.match(out.stdout, /^undec t:0\.0 \[0\] speaker: zual /m);
+    assert.match(out.stdout, /^in t:0\.2 \[2\] /m);
+    assert.match(out.stdout, /^attack t:0\.1 -> t:0\.0$/m);
+    const preferred = JSON.parse(run("stands", "--json", "--semantics", "preferred", clash).stdout);
+    assert.equal(preferred.semantics, "preferred");
+    assert.equal(preferred.extensions.length, 2);
+    assert.notEqual(run("stands", "--semantics", "nope", clash).status, 0);
   });
 });

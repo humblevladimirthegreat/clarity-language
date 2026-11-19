@@ -6,7 +6,7 @@
  */
 import type * as Solve from "./solve.js";
 
-export type { Answer, Clash, ClashResult, GiveUpResult, SolveOptions, SolveSwitch, SolveVerdict, WhyNotResult } from "./solve.js";
+export type { Answer, Clash, ClashResult, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve.js";
 
 let loading: Promise<typeof Solve> | undefined;
 
@@ -36,4 +36,9 @@ export async function giveUp(...args: Parameters<typeof Solve.giveUp>): ReturnTy
 /** {@link Solve.whyNot}: the smallest clash a claim joins. */
 export async function whyNot(...args: Parameters<typeof Solve.whyNot>): ReturnType<typeof Solve.whyNot> {
   return (await solver()).whyNot(...args);
+}
+
+/** {@link Solve.stands}: what stands, each reading in, out or undecided. */
+export async function stands(...args: Parameters<typeof Solve.stands>): ReturnType<typeof Solve.stands> {
+  return (await solver()).stands(...args);
 }

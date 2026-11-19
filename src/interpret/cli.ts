@@ -12,7 +12,7 @@ import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { throughAntecedent } from "./match.js";
 import { readText } from "./read.js";
 import { cannotSayDraft, clashReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
-import { clashes, couldBe, follows, giveUp, type Answer, type Clash, type GiveUpResult, type SolveOptions } from "./solve.js";
+import { clashes, couldBe, follows, giveUp, stands, type Answer, type Clash, type GiveUpResult, type Semantics, type SolveOptions, type StandsResult } from "./solve.js";
 import type { LeftOut } from "./translate.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
@@ -34,6 +34,8 @@ const USAGE = [
   "  --defaults  everyday defaults for open universals; --closed  the unsaid is false",
   "       node scripts/reading.mjs clashes [--json] [--give-up] [--window N] FILE",
   "  Prints each smallest clash in the FILE's log, with its readings; --give-up adds a smallest set to give up.",
+  "       node scripts/reading.mjs stands [--json] [--semantics grounded|stable|preferred] [--window N] FILE",
+  "  Prints what stands in the FILE's log: each reading in, out or undecided, the attacks, and the extensions.",
 ].join("\n");
 
 const word = (w: LexWord): string => w.raw;
@@ -311,9 +313,11 @@ function conversation(command: "log" | "ask", raw: string[]): void {
 }
 
 /** The solver's options a solve or clashes command names. */
-type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; window?: number; args: string[] };
+type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; semantics?: Semantics; window?: number; args: string[] };
 
-function solveFlags(command: "solve" | "clashes", raw: string[]): SolveFlags {
+type SolveCommand = "solve" | "clashes" | "stands";
+
+function solveFlags(command: SolveCommand, raw: string[]): SolveFlags {
   const flags: SolveFlags = { json: false, possible: false, defaults: false, closed: false, giveUp: false, args: [] };
   for (let i = 0; i < raw.length; i++) {
     const arg = raw[i]!;
@@ -322,6 +326,11 @@ function solveFlags(command: "solve" | "clashes", raw: string[]): SolveFlags {
     else if (arg === "--defaults" && command === "solve") flags.defaults = true;
     else if (arg === "--closed" && command === "solve") flags.closed = true;
     else if (arg === "--give-up" && command === "clashes") flags.giveUp = true;
+    else if (arg === "--semantics" && command === "stands") {
+      const s = raw[++i];
+      if (s !== "grounded" && s !== "stable" && s !== "preferred") (console.error(`--semantics needs grounded, stable or preferred\n${USAGE}`), process.exit(1));
+      flags.semantics = s;
+    }
     else if (arg === "--window") {
       flags.window = Number(raw[++i]);
       if (!Number.isInteger(flags.window) || flags.window < 0) (console.error(`--window needs a whole number\n${USAGE}`), process.exit(1));
@@ -365,6 +374,21 @@ export function formatAnswer(answer: Answer, log: Log, tables: ClassifyTables): 
   return out;
 }
 
+/** Text for `stands`: each reading with its label and turn, the attacks, and the extensions. */
+export function formatStands(result: StandsResult, log: Log): string[] {
+  const out: string[] = [];
+  if (result.refused) out.push(`refused ${result.refused}`);
+  else {
+    out.push(`semantics ${result.semantics}`);
+    if (result.english) out.push(`english ${result.english}`);
+    for (const s of result.stands) out.push(...readingLines([s.reading], log, `${s.label}${s.credulous && s.label !== "in" ? " (credulous)" : ""} `));
+    for (const [a, b] of result.attacks) out.push(`attack ${a} -> ${b}`);
+    for (const e of result.extensions) out.push(`extension {${e.join(", ")}}`);
+  }
+  out.push(...leftLines(result.left));
+  return out;
+}
+
 /** Text for `clashes`: each clash's reply, atom, switches and readings; then the set to give up, when asked. */
 export function formatClashes(result: { clashes: Clash[]; left: LeftOut[]; refused?: string }, log: Log, give?: GiveUpResult): string[] {
   const out: string[] = [];
@@ -383,11 +407,18 @@ export function formatClashes(result: { clashes: Clash[]; left: LeftOut[]; refus
   return out;
 }
 
-async function solveCommand(command: "solve" | "clashes", raw: string[]): Promise<void> {
+async function solveCommand(command: SolveCommand, raw: string[]): Promise<void> {
   const flags = solveFlags(command, raw);
   const tables = loadDefaultTables();
   const log = conversationLog(flags.args[0]!, tables, flags.window);
   const options: SolveOptions = { lexicon: tables, defaults: flags.defaults, closedWorld: flags.closed };
+  if (command === "stands") {
+    const result = await stands(log, { ...options, semantics: flags.semantics });
+    if (flags.json) console.log(JSON.stringify(result, null, 2));
+    else for (const l of formatStands(result, log)) console.log(l);
+    if (result.refused) process.exitCode = 1;
+    return;
+  }
   if (command === "clashes") {
     const result = await clashes(log, options);
     const give = flags.giveUp ? await giveUp(log, options) : undefined;
@@ -414,7 +445,7 @@ async function solveCommand(command: "solve" | "clashes", raw: string[]): Promis
 async function main(): Promise<void> {
   const raw = process.argv.slice(2);
   if (raw[0] === "log" || raw[0] === "ask") return conversation(raw[0], raw.slice(1));
-  if (raw[0] === "solve" || raw[0] === "clashes") return solveCommand(raw[0], raw.slice(1));
+  if (raw[0] === "solve" || raw[0] === "clashes" || raw[0] === "stands") return solveCommand(raw[0], raw.slice(1));
   let json = false;
   let file: string | undefined;
   const args: string[] = [];

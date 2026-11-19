@@ -11,7 +11,7 @@ import { buildLog } from "./log.js";
 import { match } from "./match.js";
 import { readText } from "./read.js";
 import { whyReply } from "./reply.js";
-import { clashes, couldBe, follows, giveUp, splitAtom, whyNot, type SolveOptions } from "./solve.js";
+import { clashes, couldBe, follows, giveUp, splitAtom, stands, whyNot, type SolveOptions, type StandsResult } from "./solve.js";
 import { translate } from "./translate.js";
 import type { Reading } from "./types.js";
 
@@ -347,6 +347,14 @@ describe("solve: say words (R2-1 row 4, R2-6 to R2-9)", () => {
     assert.deepEqual(a.because, ["t:0.0"]);
   });
 
+  it("a ban denies the matching permission: after p2, may Azozon walk? no, citing p2; p7 + p2 still clash", async () => {
+    const a = await follows(p(["p2"]), q(say.get("p1")!), base);
+    assert.equal(a.verdict, "no");
+    assert.deepEqual(a.because, ["t:0.0"]);
+    assert.equal((await follows(p(["p2"]), q(say.get("p2")!), base)).verdict, "yes");
+    assert.deepEqual((await clashes(p(["p7", "p2"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
+  });
+
   it("the turn's speaker is the one with the say on -m: two speakers' say never clash", async () => {
     const two = (speakers: string[]) => buildLog([say.get("p8")!.replace("hwovam", "hwuvam"), say.get("p9")!].map((text, at) => ({ speaker: speakers[at]!, at, text })), tables);
     assert.deepEqual((await clashes(two(["a", "a"]), base)).clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
@@ -493,5 +501,101 @@ describe("solve: or (R3-1 rows 7 and 8, R3-3, R3-4)", () => {
     assert.equal((await follows(o(["o14", "o4"]), runs, base)).verdict, "no");
     assert.equal((await follows(o(["o15"]), walks, base)).verdict, "no");
     assert.equal((await follows(o(["o15"]), runs, base)).verdict, "no");
+  });
+});
+
+describe("solve: because, fault, contrary to (R2-1 rows 5 to 9, R2-10, R2-11)", () => {
+  const c = (labels: string[]) => log("because", labels);
+  const pairs = async (labels: string[]) => (await clashes(c(labels), base)).clashes.map((x) => x.readings);
+
+  it("c1: the outcome, the condition and the link all hold", async () => {
+    const one = c(["c1"]);
+    assert.equal((await follows(one, q("zazozon vowurol."), base)).verdict, "yes");
+    assert.deepEqual((await follows(one, q("zalazun vezuvel."), base)).because, ["t:0.0"]);
+    assert.match(translate(one, { lexicon: tables }).program, /^holds\(cause\(ezuve\(z\(alazu\)\),owuro\(z\(azozo\)\)\)\) :- on\("t:0.0"\)\.$/m);
+  });
+
+  it("c1 clashes with a denied condition (c2), a denied outcome (c4) and a denied link (c3)", async () => {
+    assert.deepEqual(await pairs(["c1", "c2"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["c1", "c4"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["c1", "c3"]), [["t:0.0", "t:0.1"]]);
+  });
+
+  it("not because leaves the condition unstated and keeps the claim (R2-10)", async () => {
+    const three = c(["c3"]);
+    assert.equal((await follows(three, q("zalazun vezuvel."), base)).verdict, "unknown");
+    assert.equal((await follows(three, q("zazozon vowurol."), base)).verdict, "yes");
+  });
+
+  it("fault and share share the link: c3-style denial clashes with each; thahum and thahul do not clash (c5 + c7)", async () => {
+    const denied = "zazozon vudurul thahum thul blarl zalazun vezuyol.";
+    assert.deepEqual((await clashes(log("because", ["c5"], [denied]), base)).clashes.map((x) => x.readings), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual((await clashes(log("because", ["c6"], [denied]), base)).clashes.map((x) => x.readings), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["c5", "c7"]), []);
+    assert.deepEqual((await clashes(log("because", ["c5"], ["zalazun vezuyol hwuval."]), base)).clashes, []);
+  });
+
+  it("c8: only because adds only-if on the same condition", async () => {
+    const program = translate(c(["c8"]), { lexicon: tables }).program;
+    assert.match(program, /^holds\(neg\(owuro\(z\(azozo\)\)\)\) :- fits\(P,c\("t:0.0"\)\), holds\(neg\(P\)\), on\("t:0.0"\)\.$/m);
+    assert.equal((await follows(c(["c8"]), q("zalazun vezuvel."), base)).verdict, "yes");
+  });
+
+  it("contrary to: the event is still your claim; c4 clashes with c9 and c10", async () => {
+    assert.equal((await follows(c(["c9"]), q("zazozon vowurol."), base)).verdict, "yes");
+    assert.match(translate(c(["c9"]), { lexicon: tables }).program, /^holds\(against\(owuro\(z\(azozo\)\),plan\(sp\("a"\)\)\)\) :- on\("t:0.0"\)\.$/m);
+    assert.deepEqual(await pairs(["c4", "c9"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(await pairs(["c4", "c10"]), [["t:0.0", "t:0.1"]]);
+  });
+
+  it("R2-11: a say-word zone claims its say word: c10 + c12 clash; do the rules forbid it? yes", async () => {
+    assert.deepEqual(await pairs(["c10", "c12"]), [["t:0.0", "t:0.1"]]);
+    const a = await follows(c(["c10"]), q("zazozon vowurol hwuvul."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0"]);
+  });
+
+  it("a channel or a holder after uom has no row yet", () => {
+    assert.deepEqual(translate(buildLog([{ speaker: "a", at: 0, text: "zazozon vowurol uom thebamalazun." }], tables), { lexicon: tables }).left.map((l) => l.key), ["hookJob:zone"]);
+  });
+});
+
+describe("solve: what stands (R2-12, R2-13)", () => {
+  const labels = (r: StandsResult) => Object.fromEntries(r.stands.map((s) => [s.reading, s.label]));
+
+  it("solve-clash: s1 is attacked by s2 and by s5; s3 and s4 stand", async () => {
+    const r = await stands(log("clash", ["s1", "s2", "s3", "s4", "s5"]), base);
+    assert.deepEqual(r.attacks, [["t:0.0", "t:0.1"], ["t:0.0", "t:0.4"], ["t:0.1", "t:0.0"], ["t:0.4", "t:0.0"]]);
+    assert.deepEqual(labels(r), { "t:0.0": "undec", "t:0.1": "undec", "t:0.2": "in", "t:0.3": "in", "t:0.4": "undec" });
+  });
+
+  it("c1 + c2 + c13: grounded gives c13 in, c1 and c2 undecided", async () => {
+    const r = await stands(log("because", ["c1", "c2", "c13"]), base);
+    assert.deepEqual(r.attacks, [["t:0.0", "t:0.1"], ["t:0.1", "t:0.0"]]);
+    assert.deepEqual(labels(r), { "t:0.0": "undec", "t:0.1": "undec", "t:0.2": "in" });
+    assert.deepEqual(r.extensions, [["t:0.2"]]);
+    assert.equal(r.english, "Standing: t:0.2. Undecided: t:0.0, t:0.1.");
+  });
+
+  it("c1 + c2 + c13: preferred and stable give {c1, c13} and {c2, c13}; c1 and c2 credulous only", async () => {
+    for (const semantics of ["preferred", "stable"] as const) {
+      const r = await stands(log("because", ["c1", "c2", "c13"]), { ...base, semantics });
+      assert.deepEqual(r.extensions.map((e) => e.join(" ")).sort(), ["t:0.0 t:0.2", "t:0.1 t:0.2"], semantics);
+      assert.deepEqual(labels(r), { "t:0.0": "undec", "t:0.1": "undec", "t:0.2": "in" }, semantics);
+      assert.deepEqual(r.stands.map((s) => s.credulous), [true, true, true], semantics);
+    }
+  });
+
+  it("a ban and a requirement attack each other through the permission; an open universal attacks nothing", async () => {
+    assert.deepEqual((await stands(log("say", ["p7", "p2"]), base)).attacks, [["t:0.0", "t:0.1"], ["t:0.1", "t:0.0"]]);
+    const open = await stands(log("worked", ["s1", "s2", "s3", "s6"]), base);
+    assert.deepEqual(open.attacks, []);
+    assert.ok(open.stands.every((s) => s.label === "in"));
+  });
+
+  it("under choices the attacks come from the brave run: o1 + o4 + o5", async () => {
+    const r = await stands(log("or", ["o1", "o4", "o5"]), base);
+    assert.ok(r.attacks.length > 0);
+    assert.ok(r.stands.every((s) => s.label !== "in" || !r.attacks.some(([, b]) => b === s.reading)));
   });
 });

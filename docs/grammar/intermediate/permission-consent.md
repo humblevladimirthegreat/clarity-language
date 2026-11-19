@@ -56,7 +56,7 @@ English *may* and *must* often come from someone outside the act: a rule, a pers
 | `o` | `hwuvol` *the rules require* | `hwuvom` *you have to* | `hwuvor` *it's customary* / *is supposed to* |
 | `e` | `hwuvel` *the rules leave it optional* | `hwuvem` *it's up to you* | `hwuver` *nobody cares either way* |
 
-A requirement gives permission: if the rules require an act (`hwuvol`), they also allow it (`hwuval`), and the same holds for a person (`hwuvom`) and for custom (`hwuvor`).
+A requirement gives permission: if the rules require an act (`hwuvol`), they also allow it (`hwuval`), and the same holds for a person (`hwuvom`) and for custom (`hwuvor`). A ban takes permission away: if the rules forbid an act (`hwuvul`), they do not allow it (`hwuval`).
 
 When the speaker is in the clause, the speaker's own say is their part, not `v`, so a bare `v` on `-m` has no reading there. So *I have to walk* says who requires it: the rules (`zuwen vowurol hwuvol.`), a person (`zuwen vowurol hwuvom blalazun.`), custom (`zuwen vowurol hwuvor.`), or you yourself (`zuwen vowurol hwuzom.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
 
