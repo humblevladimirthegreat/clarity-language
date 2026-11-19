@@ -828,7 +828,11 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
       else frame.hosted = hosted;
     }
     if (frame.family === "holder" && !frame.party && word.family.kind === "x" && word.family.rightRoots?.length) {
-      frame.party = { kind: "thing", head: word, root: word.family.rightRoots.join(""), named: false, details: [] };
+      // The holder word ends the way a noun for that person would (holder.md#naming-a-holder): `-n` is a name, marked
+      // named as the same name in a role is, and `-r` is "someone already named", resuming that name; it has no
+      // resolve-stage binding, so it is read as the name it resumes.
+      const named = word.ending === "n" || word.ending === "ln" || word.ending === "r";
+      frame.party = { kind: "thing", head: word, root: word.family.rightRoots.join(""), named, details: [] };
     }
     return;
   }
@@ -1077,12 +1081,31 @@ function readDependent(clause: Clause, here: Here): Reading | undefined {
   return reading;
 }
 
+/**
+ * *Only because* (because-and-iff.md#choosing-a-hinge): "*Only because* stacks two hinges: `thebem` (the outcome needs
+ * it), then `thahum` with the condition (and it is a fact)." A `thebem` with no `/b/` of its own, right before a `thahum`
+ * that has one, takes that condition: the same `hosted` term (one place, the first host's in coverage), and a `grounds`
+ * link of its own where the condition is the next sentence (`blarl` before a period).
+ */
+function stackedHinge(reading: Reading): void {
+  const KEY = "overlay:clause_hinge:th";
+  for (const needs of reading.frames) {
+    if (needs.key !== KEY || needs.values.gloss !== "only-if" || needs.hosted || needs.words[0]?.at === undefined) continue;
+    const after = needs.words[0].at + 1;
+    const fact = reading.frames.find((f) => f.key === KEY && f.values.gloss === "because" && f.words[0]?.at === after);
+    if (!fact?.hosted) continue;
+    needs.hosted = fact.hosted;
+    for (const l of reading.links.filter((l) => l.kind === "grounds" && l.frame === fact)) reading.links.push({ ...l, frame: needs });
+  }
+}
+
 function readClause(clause: Clause, utterance: number, body: number, id: ReadingId, ctx: Ctx, scoped: boolean): Reading {
   const reading = emptyReading(id, utterance, body, clause);
   copyScope(reading, ctx.scopes.get(clause), ctx.options.tables);
   const here: Here = { ctx, reading, utterance, body, scoped };
   for (const coord of titledPhrases(clause.units)) ctx.titled.add(coord);
   readUnits(clause.units, here, clause);
+  stackedHinge(reading);
   if (clause.dependent && !ctx.dependents.has(clause.dependent.clause)) {
     // A dependent no stand-in names in a role: an `/h/` stand-in or `Odo` slot; kept as a detail with its reading.
     const dependent = readDependent(clause, here)!;

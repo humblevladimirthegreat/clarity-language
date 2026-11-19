@@ -273,6 +273,42 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.equal(frame(reading, "holder").party?.kind, "thing");
   });
 
+  it("holder.md:57: an `-n` holder is a name, marked named as the same name in a role is; `-r` resumes it; a kind is not", () => {
+    const party = (text: string): Term | undefined => frame(readText(text, tables).at(-1)!, "holder").party;
+    const named = party("zalazun theyomazozon vudurul.");
+    assert.ok(named?.kind === "thing" && named.named && named.root === "azozo");
+    const role = readText("zazozon vowurol.", tables)[0]!.claim.roles.z;
+    assert.ok(role?.kind === "thing" && role.named && role.root === "azozo");
+    const resumed = party("zazozon vowurol. zalazun theyomazozor vudurul.");
+    assert.ok(resumed?.kind === "thing" && resumed.named && resumed.root === "azozo");
+    const kind = party("zalazun theyomeyel vudurul.");
+    assert.ok(kind?.kind === "thing" && !kind.named);
+  });
+
+  it("because-and-iff.md:41: a stacked `thebem` takes the `thahum` frame's condition", () => {
+    const hinges = (reading: Reading): Frame[] => reading.frames.filter((f) => f.family === "hinge");
+    const [needs, fact] = hinges(readText("zazozon vowurol thebem thahum blarl zalazun vezuvel.", tables)[0]!);
+    assert.equal(needs?.values.gloss, "only-if");
+    assert.equal(fact?.values.gloss, "because");
+    assert.equal(fact?.hosted?.kind, "clause");
+    assert.equal(needs?.hosted, fact?.hosted);
+    const [nounNeeds, nounFact] = hinges(readText("zazozon vowurol thebem thahum blerulal.", tables)[0]!);
+    assert.ok(nounFact?.hosted && nounNeeds?.hosted === nounFact.hosted);
+    // `blarl` before a period: the next sentence is the condition of both, each through its own grounds link.
+    const [first, next] = readText("zazozon vowurol thebem thahum blarl. zalazun vezuvel.", tables);
+    const grounds = first!.links.filter((l) => l.kind === "grounds");
+    assert.deepEqual(
+      grounds.map((l) => [l.frame?.values.gloss, l.to]),
+      [
+        ["because", next!.id],
+        ["only-if", next!.id],
+      ],
+    );
+    // A lone `thebem` keeps its own condition.
+    const [alone] = hinges(readText("zalazun vehohel thebem blarl zazozon vowurol.", tables)[0]!);
+    assert.equal(alone?.hosted?.kind, "clause");
+  });
+
   it("contrary-to.md:104: a holder covers a later `although` hinge", () => {
     const reading = one("z-Azozon | v-walk | th-CLUES-Alazun | [th-although | bl-rain]");
     assert.deepEqual(orders(reading), ["holder>stance wordShape", "holder>hinge rule", "stance>hinge rule"]);

@@ -108,7 +108,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | xFamily | `sake` | frame:sake | `sakes.md#word-shape` | The sake seam; read as `lexReading:sake` |
 | xFamily | `scope` | label | `label-seams.md#reach-vowels` | How far a label reaches |
 | xFamily | `lateral` | label | `viewpoint.md#viewpoint-laterals` | |
-| xFamily | `holder` | frame:holder | `holder.md#naming-a-holder` | Fixed by word shape: the seam sits on its stance; `party` is the holder |
+| xFamily | `holder` | frame:holder | `holder.md#naming-a-holder` | Fixed by word shape: the seam sits on its stance; `party` is the holder, marked `named` on `-n` / `-ln` as the same name in a role is, and on `-r` ("someone already named": no resolve-stage binding yet, so it reads as the name it resumes) |
 | xFamily | `ability` | frame:ability | `can-and-cant.md#ability` | Inside the verb or adjective word; reaches that word's claim |
 | xFamily | `numeric` | label | `numeric-derivation.md` | Number + `x` + root |
 | xFamily | `compound` | label | `compounds.md#two-roots-one-word` | |
@@ -130,7 +130,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `ability:h` | frame:ability | `can-and-cant.md#ability-fallback` |  |
 | overlay | `ability:w` | frame:ability | `can-and-cant.md#ability-fallback` | adjective reach |
 | overlay | `identity:g` | structure | `predication.md#identity` | fills `claim.predicate` |
-| overlay | `clause_hinge:th` | frame:hinge | `causation.md#if` |  |
+| overlay | `clause_hinge:th` | frame:hinge | `causation.md#if` | *Only because* (`because-and-iff.md#choosing-a-hinge`): a `thebem` with no `/b/`, right before a `thahum` that has one, takes its condition: the same `hosted` term, and its own `grounds` link when the condition is the next sentence |
 | overlay | `clause_hinge:g` | frame:hinge | `causation.md#if` | on a noun; frame by default |
 | overlay | `clause_hinge:h` | frame:hinge | `dependents.md#hinges` | whereas, so … that; frame by default |
 | overlay | `clause_hinge:*:while` | detail:time | `dependents.md#hinges` | time hinge, any PoS |
