@@ -1,20 +1,11 @@
 # Tools that read readings
 
-**Status:** IN PROGRESS, 2026-11-19: phases 1 and 2 done. The practice lint compares with `sameReadings` (`src/interpret/equal.ts`, [equal readings](../../meta/interpreter.md#equal-readings)); `src/lint/reading-equivalence.ts` is gone. Settled in phase 2 and now on their pages: an `-l` pointer takes the `slot:newMember` binder ([new member in a statement](../../grammar/beginner/joins.md#new-member-in-a-statement)); attitude × new member follows text order ([speaker attitude](../../grammar/intermediate/feelings.md#speaker-attitude)); a restrictor's frame holds the unbroken run of `/h/` occasion words before it, kept as `unit:h` details the frame's `occasions` field points at ([restrictors](../../grammar/beginner/restrictors.md)). Decided 2026-11-19: Inspect shows hover notes on each frame word, plus a "what covers what" list when a sentence has two or more whole-clause frames; the prompt eval runs first on about 20 examples with two or more whole-clause frames, reusing stored replies as the baseline, goes to the full set only if the subset shows a gain, and the `--structure` flag is kept only if the overall miss rate drops by at least 3 points. Decided 2026-11-19 after phase 2: a restrictor's occasions compare in text order for every restrictor, and an earlier restrictor ends the run (both in the restrictor row of the [classification table](../../meta/interpreter.md#classification-table)); the `-l` "Compare with" line is scoped to a common noun. Phase 3 is ready.  
-**Related:** the reader [read.ts](../../../src/interpret/read.ts) and its note [interpreter.md](../../meta/interpreter.md); the parser note [parser-pipeline.md](../../meta/parser-pipeline.md); the "same reading" lint [reading-equivalence.ts](../../../src/lint/reading-equivalence.ts) and its caller [practice-item-rules.ts](../../../src/lint/practice-item-rules.ts); checkpoint policy [translation-exercises.md](../../meta/translation-exercises.md) (principle 14); construction search [src/find/](../../../src/find/) and its how-to [read-ageben.md](../../meta/procedures/read-ageben.md#find); Inspect [inspect.ts](../../../src/parse/inspect.ts), [AgebenInspect.vue](../../grammar/.vitepress/components/AgebenInspect.vue), [GlossOverlay.vue](../../grammar/.vitepress/components/GlossOverlay.vue), [config.ts](../../grammar/.vitepress/config.ts); the translation prompt [llm-prompt.ts](../../../src/parse/llm-prompt.ts), [scripts/parse.mjs](../../../scripts/parse.mjs), [src/agent/ageben.ts](../../../src/agent/ageben.ts), [scripts/llm-eval.ts](../../../scripts/llm-eval.ts); the reader's browser entry [src/interpret/browser.ts](../../../src/interpret/browser.ts).  
-**Depends on:** none. **Order:** lands before `mind-map-view.md`. Phase 4 adds the reader to the Inspect page; the mind map then reuses that alias and the parse-once plumbing instead of adding its own. `clingo-solver.md` is in progress and also edits `src/interpret/`; never run a phase of each at the same time. `structural-search.md` (an idea) keeps claim search; phase 3 here moves only the existing frame queries, and that idea builds on the reading pass this one adds to `src/find/`.  
+**Status:** IN PROGRESS, 2026-11-19: phases 1–3 done. The practice lint compares with `sameReadings`; construction search (`src/find/`) takes frames, `reach=` and frame order from readings, and `--diff` takes REV's reader (floor `a13f294c`), taught in [searching by construction](../../meta/procedures/read-ageben.md#find). Decided 2026-11-19: Inspect shows hover notes on each frame word, plus a "what covers what" list when a sentence has two or more whole-clause frames; the prompt eval runs first on about 20 examples with two or more whole-clause frames, reusing stored replies as the baseline, goes to the full set only if the subset shows a gain, and the `--structure` flag is kept only if the overall miss rate drops by at least 3 points. Phase 4 is ready.  
+**Related:** the reader [read.ts](../../../src/interpret/read.ts) and its note [interpreter.md](../../meta/interpreter.md); the parser note [parser-pipeline.md](../../meta/parser-pipeline.md); Inspect [inspect.ts](../../../src/parse/inspect.ts), [AgebenInspect.vue](../../grammar/.vitepress/components/AgebenInspect.vue), [GlossOverlay.vue](../../grammar/.vitepress/components/GlossOverlay.vue), [config.ts](../../grammar/.vitepress/config.ts); the translation prompt [llm-prompt.ts](../../../src/parse/llm-prompt.ts), [scripts/parse.mjs](../../../scripts/parse.mjs), [src/agent/ageben.ts](../../../src/agent/ageben.ts), [scripts/llm-eval.ts](../../../scripts/llm-eval.ts); the reader's browser entry [src/interpret/browser.ts](../../../src/interpret/browser.ts).  
+**Depends on:** none. **Order:** lands before `mind-map-view.md`. Phase 4 adds the reader to the Inspect page; the mind map then reuses that alias and the parse-once plumbing instead of adding its own. `clingo-solver.md` is in progress and also edits `src/interpret/`; never run a phase of each at the same time. `structural-search.md` (an idea) keeps claim search; it builds on the reading pass `src/find/` now runs.  
 **Design authority:** *none*. Tooling only: no form or reading changes, and the parser's accept/reject behavior does not change. Every comparison rule cites the grammar section it follows. 
 
 ## Design
-
-### Construction search over readings (phase 3, C1)
-
-`src/find/` runs the reader on each parsed example and takes frames from the readings:
-
-- `frame=` lists every frame on a word: whole-clause frames, frames nested in `inner`, adjective-reach frames, and stance-list joins. A new word key `reach=` (`clause`, `adjective`, `list`, `noun`, `word`, `nested`) restricts it; `frame=X,reach=clause` gives today's results.
-- `--over`, `--under` and `--unordered` read each reading's `order` and `unordered`, nested readings included, so islands and verb-list items count.
-- `--diff REV` reads both passes through the reader. `rev-parser.ts` already archives all of `src`, so it takes `readParse` from REV as well. The floor moves to the first commit whose reader copies scope order; the unit finds it and replaces the current floor (`ff43d91d`) in the code and in `read-ageben.md`.
-- A run's time is measured before and after. If the reading pass adds more than about 30% to a full run, the readings go in the find cache with the parses.
 
 ### Inspect over readings (phase 4)
 
@@ -28,19 +19,9 @@ The parse stays the base. When the sentence parses, a new `src/interpret/inspect
 
 ## Implementation plan
 
-Three phases left, each one orchestrator session. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
+Two phases left, each one orchestrator session. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
 
 The orchestrator saves `npm run verify -- --baseline` at the start of each phase. Between units the gate is `npm run verify -- --allow-generate` against that baseline; the phase's final gate is a full `npm run verify` that passes with no new errors. No phase edits `say-*.md`, `english.md` or `src/english-helper/`, so there is no recall gate. Grammar-page edits here are small (one paragraph on `inspect.md` in phase 4); the writer self-checks them against the [checklist](../../meta/doc-style.md#checklist). If a phase's grammar edits pass a few sentences or add a section, the orchestrator adds a `style-editor` unit (`opus`, `high`) on `npm run changed-sections -- <rev>` at that phase's end ([batch style reviews](../../meta/procedures/proposals.md#running-with-subagents)).
-
-### Phase 3: construction search
-
-**C1 Frames from readings.** Agent: `proposal-worker`, `model: opus`, effort `high`.
-Per [construction search over readings](#construction-search-over-readings-phase-3-c1): run the reader in the find pass, take `frame=` and the new `reach=` key from readings, read `--over` / `--under` / `--unordered` from `order` and `unordered` (nested readings included), and make `--diff` take `readParse` from REV, with the new floor. Keep `--json` output keys stable apart from the added `reach`. Measure a full run before and after (`--jobs 1`) and cache readings if it grows past about 30%. Tests in `src/find/` for an island frame, an adjective-reach frame and `reach=clause`.
-**May edit:** `src/find/`, `scripts/find.mjs`, `src/interpret/browser.ts` (an export only).
-
-**C2 Docs.** Agent: *orchestrator*.
-In `read-ageben.md`, rewrite the *Scope order* and *Measuring a scope decision* paragraphs and the `frame=` example: frames come from readings, `reach=` restricts them, and the new `--diff` floor. In the [parse or reading](../../meta/interpreter.md#parse-or-reading) table, change construction search's row to *readings*.
-**May edit:** `docs/meta/procedures/read-ageben.md`, `docs/meta/interpreter.md`.
 
 ### Phase 4: Inspect
 
@@ -76,6 +57,7 @@ Copied into every subagent brief:
 > - Read `AGENTS.md`. This proposal is tooling only: no form or reading changes, and the parser's accept/reject behavior does not change. A change that would need one is a stop-and-alert finding, unless your brief names the user's decision that allows it.
 > - A tool that needs what a sentence says reads readings (`src/interpret/`); one that needs how it is written reads the parse ([parse or reading](docs/meta/interpreter.md#parse-or-reading)). When a reading lacks something, add it to the reader with its classification-table row in `docs/meta/interpreter.md`, never a local walk of the parse tree.
 > - The reader never defaults a missing field, binds a pronoun, or orders an unsettled pair (interpreter.md#reader-rules). Comparison rules that do (the omitted act word) live in the consumer and cite their grammar anchor. "Same reading" is `sameReadings` in `src/interpret/equal.ts` ([equal readings](docs/meta/interpreter.md#equal-readings)); doc examples load tables with `loadDefaultTables()`.
+> - This repo needs Node 24. If `node -v` prints a lower version, prefix every shell command with `export PATH=/opt/node24/bin:$PATH &&` (shell state does not persist between calls).
 > - Run `.ts` with `npx --no-install tsx`. Check Ageben forms with one batched `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`; see readings with `npm run -s reading -- '<text>'`; keep `--llm-prompt` for working out what a sentence means.
 > - List headings before reading a long page (`npm run -s outline -- <file>`) and read only the ranges you need. Never paste raw build output.
 > - Scripts that edit files go in a file under `tmp/scratch/reading-consumers/`, never inline. Reports a later unit or phase reads go in `docs/proposals/in-progress/reading-consumers-files/` (tracked: `tmp/` does not survive between sessions).
@@ -90,7 +72,7 @@ Rule sections a subagent may open when the digest does not settle a question: [r
 
 ### Commits
 
-One commit per unit after its gate, staged to that unit's files, message `reading-consumers <ID>: <what> [skip-cd]` and the co-author line; plus one commit of the consolidated proposal at the end of each phase. Expected: 2 + 1 (phase 3), 3 + 1 (phase 4, D3 commits nothing if it only writes `tmp/`), 1–2 + 1 (phase 5). When the last phase ends, the proposal and `reading-consumers-files/` are deleted.
+One commit per unit after its gate, staged to that unit's files, message `reading-consumers <ID>: <what> [skip-cd]` and the co-author line; plus one commit of the consolidated proposal at the end of each phase. Expected: 3 + 1 (phase 4, D3 commits nothing if it only writes `tmp/`), 1–2 + 1 (phase 5). When the last phase ends, the proposal and `reading-consumers-files/` are deleted.
 
 ## Open decisions
 

@@ -13,7 +13,7 @@ import { sourceLiterals, vueLiterals } from "../retie/source.js";
 import {
   collectBodySpan,
   collectPageSpans,
-  type FindParse,
+  type FindParser,
   type Example,
   type PageSpans,
   type UnparsedSpan,
@@ -73,20 +73,20 @@ function isExample(span: Example | UnparsedSpan): span is Example {
   return "words" in span;
 }
 
-function collectLiteralSpans(source: string, fileName: string, tables: ClassifyTables, parse?: FindParse): PageSpans {
+function collectLiteralSpans(source: string, fileName: string, tables: ClassifyTables, parser?: FindParser): PageSpans {
   const examples: Example[] = [];
   const unparsed: UnparsedSpan[] = [];
   const literals = fileName.endsWith(".vue") ? vueLiterals(source) : sourceLiterals(source, fileName);
   for (const literal of literals) {
     if (literal.escaped || literal.regex) continue;
-    const span = collectBodySpan(literal.body, literal.index, tables, parse);
+    const span = collectBodySpan(literal.body, literal.index, tables, parser);
     if (isExample(span)) examples.push(span);
     else unparsed.push(span);
   }
   return { examples, unparsed };
 }
 
-function collectTsvSpans(text: string, tables: ClassifyTables, parse?: FindParse): PageSpans {
+function collectTsvSpans(text: string, tables: ClassifyTables, parser?: FindParser): PageSpans {
   const examples: Example[] = [];
   const unparsed: UnparsedSpan[] = [];
   let offset = 0;
@@ -94,7 +94,7 @@ function collectTsvSpans(text: string, tables: ClassifyTables, parse?: FindParse
     let colAt = offset;
     for (const cell of line.split("\t")) {
       if (cell && !cell.startsWith("#")) {
-        const span = collectBodySpan(cell, colAt, tables, parse);
+        const span = collectBodySpan(cell, colAt, tables, parser);
         if (isExample(span)) examples.push(span);
         else unparsed.push(span);
       }
@@ -106,10 +106,10 @@ function collectTsvSpans(text: string, tables: ClassifyTables, parse?: FindParse
 }
 
 /** Parsed Ageben bodies in a Markdown page, a source file, or a TSV. */
-export function collectFileSpans(file: string, text: string, tables: ClassifyTables, parse?: FindParse): PageSpans {
-  if (file.endsWith(".md")) return collectPageSpans(text, tables, parse);
-  if (file.endsWith(".tsv")) return collectTsvSpans(text, tables, parse);
-  if (SOURCE_FILE.test(file)) return collectLiteralSpans(text, file, tables, parse);
+export function collectFileSpans(file: string, text: string, tables: ClassifyTables, parser?: FindParser): PageSpans {
+  if (file.endsWith(".md")) return collectPageSpans(text, tables, parser);
+  if (file.endsWith(".tsv")) return collectTsvSpans(text, tables, parser);
+  if (SOURCE_FILE.test(file)) return collectLiteralSpans(text, file, tables, parser);
   return { examples: [], unparsed: [] };
 }
 

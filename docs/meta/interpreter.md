@@ -616,7 +616,7 @@ A tool that needs what a sentence says reads readings; a tool that needs how it 
 | The wizard's engine and host (`src/game/engine.ts`, `src/game/host.ts`) | readings |
 | `scripts/reading.mjs` (`npm run reading`) | readings |
 | The "same reading" lint (`src/lint/practice-item-rules.ts`, through `sameReadings`) | readings |
-| Construction search's frame queries (`frame=`, `--over`, `--under`, `--unordered`, `--diff` in `src/find/`) | parse (resolve scope records), moving to readings |
+| Construction search's frame queries (`frame=`, `--over`, `--under`, `--unordered`, `--diff` in `src/find/`) | readings |
 | The translation prompt (`src/parse/llm-prompt.ts`, `parse.mjs --llm-prompt`) | parse (morph gloss), moving to readings |
 | Inspect (`src/parse/inspect.ts`) | parse; readings on top. Its word layer runs even when the sentence does not parse. |
 | The doc, morph-gloss, word-bank, number-speech and word-order lints | parse (form) |
