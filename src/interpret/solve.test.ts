@@ -11,7 +11,7 @@ import { buildLog } from "./log.js";
 import { match } from "./match.js";
 import { readText } from "./read.js";
 import { whyReply } from "./reply.js";
-import { clashes, couldBe, follows, splitAtom, type SolveOptions } from "./solve.js";
+import { clashes, couldBe, follows, giveUp, splitAtom, whyNot, type SolveOptions } from "./solve.js";
 import type { Reading } from "./types.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -106,6 +106,69 @@ describe("solve: clashes (Sketch, naming a clash)", () => {
   it("a plain claim and its denial clash (denial d1 + d2)", async () => {
     const result = await clashes(log("denial", ["d1", "d2"]), base);
     assert.deepEqual(result.clashes.map((c) => c.readings), [["t:0.0", "t:0.1"]]);
+  });
+});
+
+describe("solve: clashes under choices (Sketch, naming a clash; S1-1)", () => {
+  // always.md a5 "Azozon usually sits" is an open rule (row 9): its choice gives the program two worlds.
+  const usually = fixture("always").get("a5")!;
+  const example = ["s1", "s2", "s3", "s4", "s5"];
+
+  it("the clash example, plain: give up {s1}", async () => {
+    const result = await giveUp(log("clash", example), base);
+    assert.deepEqual(result.giveUp, ["t:0.0"]);
+    assert.equal(result.english, "Giving up t:0.0 resolves every clash.");
+  });
+
+  it("the clash example beside an open rule: re-solved, the same two clashes, give up {s1}", async () => {
+    const choices = log("clash", example, [usually]);
+    const result = await clashes(choices, base);
+    assert.deepEqual(
+      result.clashes.map((c) => c.readings),
+      [
+        ["t:0.0", "t:0.1", "t:0.2"],
+        ["t:0.0", "t:0.3", "t:0.4"],
+      ],
+    );
+    assert.ok(result.clashes.every((c) => c.atom.length));
+    assert.deepEqual((await giveUp(choices, base)).giveUp, ["t:0.0"]);
+  });
+
+  it("open universals: the worked example has several worlds and nothing to give up", async () => {
+    const worked = log("worked", ["s1", "s2", "s3", "s6"]);
+    assert.deepEqual((await clashes(worked, base)).clashes, []);
+    assert.deepEqual((await giveUp(worked, { ...base, defaults: true })).giveUp, []);
+    assert.deepEqual((await clashes(worked, { ...base, defaults: true, closedWorld: true })).clashes, []);
+  });
+
+  it("an open universal beside a plain clash: only the clash, and one of its two readings to give up", async () => {
+    const d = fixture("denial");
+    const mixed = log("worked", ["s1", "s6"], [d.get("d1")!, d.get("d2")!]);
+    assert.deepEqual((await clashes(mixed, base)).clashes.map((c) => c.readings), [["t:0.2", "t:0.3"]]);
+    const up = (await giveUp(mixed, base)).giveUp;
+    assert.equal(up.length, 1);
+    assert.ok(["t:0.2", "t:0.3"].includes(up[0]!));
+  });
+});
+
+describe("solve: why not (Sketch, naming a clash)", () => {
+  it("why can't Alazun not fly? it joins the clash with s1 and s4", async () => {
+    const s5 = q(fixture("clash").get("s5")!);
+    assert.deepEqual((await whyNot(log("clash", ["s1", "s4"]), s5, base)).clash?.readings, ["t:0.0", "t:0.1"]);
+    // The log's own clash {s1, s2, s3} is not one the claim joins.
+    const result = await whyNot(log("clash", ["s1", "s2", "s3", "s4"]), s5, base);
+    assert.deepEqual(result.clash?.readings, ["t:0.0", "t:0.3"]);
+    assert.equal(result.clash?.english, "That cannot hold with t:0.0, t:0.3.");
+  });
+
+  it("why can't Azozon fly? s2 and s3, under an open rule too", async () => {
+    const flies = q("zazozon vewobol.");
+    assert.deepEqual((await whyNot(log("clash", ["s2", "s3"]), flies, base)).clash?.readings, ["t:0.0", "t:0.1"]);
+    assert.deepEqual((await whyNot(log("worked", ["s1", "s2", "s3", "s6"]), flies, base)).clash?.readings, ["t:0.1", "t:0.2"]);
+  });
+
+  it("a claim that clashes with nothing has no clash", async () => {
+    assert.equal((await whyNot(log("worked", ["s1", "s2", "s3", "s6"]), q("zahelan vewobol."), base)).clash, undefined);
   });
 });
 

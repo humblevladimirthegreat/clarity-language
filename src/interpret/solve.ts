@@ -7,7 +7,9 @@
  *   denial of it does, *unknown* (*I can't say.*) otherwise.
  * - {@link couldBe}: brave consequences. *yes* when the claim holds in some world, *no* when its denial holds in every
  *   world, *unknown* otherwise.
- * - {@link clashes}: each `clash` atom true in every world, with the readings behind it, shrunk by one removal pass.
+ * - {@link clashes}: the smallest clashes. One world: each `clash` atom in it, with the readings behind it, shrunk by
+ *   one removal pass. Several worlds: re-solved with the switch atoms free (QuickXplain).
+ * - {@link giveUp}: a smallest set to give up, by one optimization run. {@link whyNot}: the smallest clash a claim joins.
  *
  * Fitting stays the matcher's: the question is matched in TypeScript, by {@link match}, against the claims the answer
  * set's `holds` atoms stand for ({@link Translation.terms}). A question's fit to a stated range is {@link inRange}'s.
@@ -85,21 +87,40 @@ function tooLarge(program: string, options: SolveOptions): string | undefined {
   return size > limit ? `The log is too large for the solver: its program is ${size} bytes, over the ${limit}-byte limit.` : undefined;
 }
 
-/** One run in `cautious` (every world) or `brave` (some world) mode: the consequences, or why there are none. */
-async function consequences(program: string, mode: "cautious" | "brave"): Promise<Run> {
+type Raw =
+  | { ok: true; unsat: boolean; witnesses: string[][]; more: boolean }
+  | { ok: false; why: string };
+
+/** One Clingo call: every witness printed, whether the program had no world, and whether more models were left. */
+async function call(program: string, models: number, args: string[]): Promise<Raw> {
   try {
-    const result = (await clingo.run(program, 0, [`--enum-mode=${mode}`, "--quiet=1"])) as {
+    const result = (await clingo.run(program, models, args)) as {
       Result: string;
       Error?: string;
       Call?: ({ Witnesses?: { Value: string[] }[] } | null)[];
+      Models?: { More?: string };
     };
     if (result.Result === "ERROR") return { ok: false, why: `The solver failed: ${result.Error ?? "unknown error"}.` };
-    if (result.Result === "UNSATISFIABLE") return { ok: false, why: "The solver found no world." };
-    const witnesses = result.Call?.[0]?.Witnesses ?? [];
-    return { ok: true, atoms: witnesses.at(-1)?.Value ?? [] };
+    const witnesses = (result.Call?.[0]?.Witnesses ?? []).map((w) => w.Value);
+    return { ok: true, unsat: result.Result === "UNSATISFIABLE", witnesses, more: result.Models?.More === "yes" };
   } catch (error) {
     return { ok: false, why: `The solver failed: ${error instanceof Error ? error.message : String(error)}.` };
   }
+}
+
+/** One run in `cautious` (every world) or `brave` (some world) mode: the consequences, or why there are none. */
+async function consequences(program: string, mode: "cautious" | "brave"): Promise<Run> {
+  const r = await call(program, 0, [`--enum-mode=${mode}`, "--quiet=1"]);
+  if (!r.ok) return r;
+  if (r.unsat) return { ok: false, why: "The solver found no world." };
+  return { ok: true, atoms: r.witnesses.at(-1) ?? [] };
+}
+
+/** Whether the program has more than one world: the choices (row 9's open rules, the closed world's loops) matter. */
+async function severalWorlds(program: string): Promise<boolean | string> {
+  const r = await call(program, 2, []);
+  if (!r.ok) return r.why;
+  return r.witnesses.length > 1;
 }
 
 /** Split `f(a,g(b),"c,d")` into its name and top-level arguments. */
@@ -240,9 +261,10 @@ type Prepared =
 
 /**
  * The log's program, with the question as one more reading whose claim is switched off: only the facts a
- * first-mention noun in it brings (its kind, count and details) stay on, as a witness.
+ * first-mention noun in it brings (its kind, count and details) stay on, as a witness. With `keepClaim` the claim stays
+ * on, as {@link whyNot} needs.
  */
-function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefined, options: SolveOptions): Prepared {
+function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefined, options: SolveOptions, keepClaim = false): Prepared {
   const switches = { widen: !!options.widen, defaults: !!options.defaults, closed: !!options.closedWorld };
   let qReading: Reading | undefined;
   if (question && "claim" in question) {
@@ -263,7 +285,7 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
     return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: translation.left } };
   }
   let program = translation.program;
-  if (qReading) {
+  if (qReading && !keepClaim) {
     const qid = JSON.stringify(qReading.id);
     // Keep the witness facts; drop the question's own claim.
     const witness = new RegExp(`^(holds\\(isa\\(|count\\(|detail\\(|fired\\(${escape(qid)},(isa|count|detail)\\()nm\\(${escape(qid)},`);
@@ -359,16 +381,119 @@ function only(program: string, keep: ReadonlySet<string>): string {
     .join("\n");
 }
 
+// ── Clashes ─────────────────────────────────────────────────────────────────
+
+/** The reading ids the program switches on (`on("…").` facts), in program order. */
+function switchIds(program: string): string[] {
+  return [...program.matchAll(/^on\(("(?:[^"\\]|\\.)*")\)\.$/gm)].map((m) => unquote(m[1]!));
+}
+
 /**
- * What clashes: each `clash` atom true in every world, with the readings the `fired` walk names, shrunk by one
- * removal pass (a reading whose loss leaves the same clash is dropped), so a fact derived two ways does not keep a
- * reading the clash does not need. Clashes with the same readings are given once.
+ * A re-solve over the readings' switch atoms (Sketch, naming a clash: clashes under choices). A set of readings is
+ * consistent when some world of it has no `clash` atom; every call is one plain program, so it runs on Clingo 5 and 6.
  */
-export async function clashes(log: Pick<Log, "readings">, options: SolveOptions = {}): Promise<ClashResult> {
-  const p = prepare(log, undefined, options);
-  if (!p.ok) return { clashes: [], left: p.answer.left, refused: p.answer.english };
-  const big = tooLarge(p.program, options);
-  if (big) return { clashes: [], left: p.translation.left, refused: big };
+class Resolver {
+  runs = 0;
+  failed?: string;
+  private readonly memo = new Map<string, boolean>();
+
+  constructor(
+    readonly program: string,
+    readonly order: readonly string[],
+  ) {}
+
+  private key(set: ReadonlySet<string>): string {
+    return this.order.filter((id) => set.has(id)).join(" ");
+  }
+
+  /** Whether some world of the given readings has no clash. A failed run counts as consistent and is kept in `failed`. */
+  async consistent(set: ReadonlySet<string>): Promise<boolean> {
+    const key = this.key(set);
+    const known = this.memo.get(key);
+    if (known !== undefined) return known;
+    this.runs++;
+    const r = await call(`${only(this.program, set)}\n:- clash(P).`, 1, []);
+    const ok = r.ok ? !r.unsat : true;
+    if (!r.ok) this.failed ??= r.why;
+    this.memo.set(key, ok);
+    return ok;
+  }
+
+  /**
+   * QuickXplain (Junker): a smallest clash among `candidates` given the `background` readings, which stay on and are
+   * not returned. Undefined when background and candidates together are consistent; empty when the background alone
+   * clashes.
+   */
+  async quickXplain(background: readonly string[], candidates: readonly string[]): Promise<string[] | undefined> {
+    if (await this.consistent(new Set([...background, ...candidates]))) return undefined;
+    if (!candidates.length) return [];
+    const qx = async (b: readonly string[], d: readonly string[], c: readonly string[]): Promise<string[]> => {
+      if (d.length && !(await this.consistent(new Set(b)))) return [];
+      if (c.length === 1) return [...c];
+      const half = Math.ceil(c.length / 2);
+      const [c1, c2] = [c.slice(0, half), c.slice(half)];
+      const d2 = await qx([...b, ...c1], c1, c2);
+      const d1 = await qx([...b, ...d2], d2, c1);
+      return [...d1, ...d2];
+    };
+    const found = await qx(background, [], candidates);
+    return this.order.filter((id) => found.includes(id));
+  }
+
+  /**
+   * Every smallest clash, by Reiter's hitting-set tree over {@link quickXplain}: each clash found is broken by giving up
+   * one of its readings at a time, until what is left is consistent. Stops after `limit` nodes.
+   */
+  async allClashes(limit = 256): Promise<string[][]> {
+    const found: string[][] = [];
+    const fixes: Set<string>[] = [];
+    const seen = new Set<string>();
+    const queue: Set<string>[] = [new Set()];
+    for (let nodes = 0; queue.length && nodes < limit; nodes++) {
+      const removed = queue.shift()!;
+      const key = this.key(removed);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      if (fixes.some((f) => [...f].every((id) => removed.has(id)))) continue;
+      let clash = found.find((c) => c.every((id) => !removed.has(id)));
+      if (!clash) {
+        clash = await this.quickXplain([], this.order.filter((id) => !removed.has(id)));
+        if (clash === undefined) {
+          fixes.push(removed);
+          continue;
+        }
+        found.push(clash);
+      }
+      for (const id of clash) queue.push(new Set([...removed, id]));
+    }
+    return found;
+  }
+}
+
+/** A clash's switches and atom, from one run of its readings alone: a clash atom true in every world, else in some. */
+async function describe(readings: readonly string[], p: Extract<Prepared, { ok: true }>): Promise<{ atom: string; switches: SolveSwitch[] }> {
+  const program = only(p.program, new Set([...readings, ...(p.qid ? [p.qid] : [])]));
+  for (const mode of ["cautious", "brave"] as const) {
+    const run = await consequences(program, mode);
+    if (!run.ok) continue;
+    const model = new Model(run.atoms);
+    const atom = model.clash[0];
+    if (atom !== undefined) return { atom, switches: explain(model, clashPremises(model, atom), p.ctx).switches };
+  }
+  return { atom: "", switches: [] };
+}
+
+function sortClashes(out: Clash[], order: readonly string[]): Clash[] {
+  const rank = (c: Clash): number[] => c.readings.map((r) => order.indexOf(r));
+  return out.sort((a, b) => {
+    const [x, y] = [rank(a), rank(b)];
+    for (let i = 0; i < Math.min(x.length, y.length); i++) if (x[i] !== y[i]) return x[i]! - y[i]!;
+    return x.length - y.length;
+  });
+}
+
+/** One world: each `clash` atom true in it, with the readings the `fired` walk names, shrunk by one removal pass. */
+async function clashesOneWorld(p: Extract<Prepared, { ok: true }>): Promise<ClashResult> {
   const run = await consequences(p.program, "cautious");
   if (!run.ok) return { clashes: [], left: p.translation.left, refused: run.why };
   const model = new Model(run.atoms);
@@ -393,12 +518,99 @@ export async function clashes(log: Pick<Log, "readings">, options: SolveOptions 
     sets.add(key);
     out.push({ atom, readings, switches: why.switches, english: `These cannot all hold: ${readings.join(", ")}.` });
   }
-  const order = p.translation.readings;
-  const rank = (c: Clash): number[] => c.readings.map((r) => order.indexOf(r));
-  out.sort((a, b) => {
-    const [x, y] = [rank(a), rank(b)];
-    for (let i = 0; i < Math.min(x.length, y.length); i++) if (x[i] !== y[i]) return x[i]! - y[i]!;
-    return x.length - y.length;
-  });
-  return { clashes: out, left: p.translation.left };
+  return { clashes: sortClashes(out, p.translation.readings), left: p.translation.left };
+}
+
+/** Several worlds: the smallest clashes by re-solving with the switch atoms free (QuickXplain under a hitting-set tree). */
+async function clashesUnderChoices(p: Extract<Prepared, { ok: true }>): Promise<ClashResult> {
+  const resolver = new Resolver(p.program, switchIds(p.program));
+  const sets = await resolver.allClashes();
+  if (resolver.failed) return { clashes: [], left: p.translation.left, refused: resolver.failed };
+  const out: Clash[] = [];
+  for (const readings of sets) {
+    const { atom, switches } = await describe(readings, p);
+    out.push({ atom, readings, switches, english: `These cannot all hold: ${readings.join(", ")}.` });
+  }
+  return { clashes: sortClashes(out, p.translation.readings), left: p.translation.left };
+}
+
+/**
+ * What clashes. When the program has one world: each `clash` atom true in it, with the readings the `fired` walk
+ * names, shrunk by one removal pass (a reading whose loss leaves the same clash is dropped), so a fact derived two ways
+ * does not keep a reading the clash does not need. When it has several (an open rule's choice, a closed-world loop), a
+ * set of readings clashes when none of its worlds is free of `clash` atoms, and each smallest such set is found by
+ * re-solving with the switch atoms free (S1-1). Clashes with the same readings are given once.
+ */
+export async function clashes(log: Pick<Log, "readings">, options: SolveOptions = {}): Promise<ClashResult> {
+  const p = prepare(log, undefined, options);
+  if (!p.ok) return { clashes: [], left: p.answer.left, refused: p.answer.english };
+  const big = tooLarge(p.program, options);
+  if (big) return { clashes: [], left: p.translation.left, refused: big };
+  const several = await severalWorlds(p.program);
+  if (typeof several === "string") return { clashes: [], left: p.translation.left, refused: several };
+  return several ? clashesUnderChoices(p) : clashesOneWorld(p);
+}
+
+export type GiveUpResult = {
+  /** A smallest set of readings whose removal leaves a world with no clash, in log order; empty when nothing clashes. */
+  giveUp: string[];
+  english?: string;
+  left: LeftOut[];
+  refused?: string;
+};
+
+/**
+ * A smallest set to give up (Sketch, naming a clash): one optimization run with every reading's switch atom free,
+ * forbidding a `clash` atom and keeping as many readings as it can. The readings left out take one from every clash.
+ */
+export async function giveUp(log: Pick<Log, "readings">, options: SolveOptions = {}): Promise<GiveUpResult> {
+  const p = prepare(log, undefined, options);
+  if (!p.ok) return { giveUp: [], left: p.answer.left, refused: p.answer.english };
+  const ids = switchIds(p.program);
+  const free = only(p.program, new Set());
+  const program = [free, `{ ${ids.map((id) => `on(${JSON.stringify(id)})`).join("; ")} }.`, ":- clash(P).", ...ids.map((id) => `:~ not on(${JSON.stringify(id)}). [1@0,${JSON.stringify(id)}]`)].join("\n");
+  const big = tooLarge(program, options);
+  if (big) return { giveUp: [], left: p.translation.left, refused: big };
+  const r = await call(program, 0, ["--opt-mode=opt", "--quiet=1"]);
+  if (!r.ok) return { giveUp: [], left: p.translation.left, refused: r.why };
+  if (r.unsat) return { giveUp: [], left: p.translation.left, refused: "The solver found no world, even with every reading given up." };
+  const kept = new Set((r.witnesses.at(-1) ?? []).filter((a) => a.startsWith("on(")).map((a) => unquote(splitAtom(a).args[0]!)));
+  const out = ids.filter((id) => !kept.has(id));
+  return { giveUp: out, english: out.length ? `Giving up ${out.join(", ")} resolves every clash.` : undefined, left: p.translation.left };
+}
+
+export type WhyNotResult = {
+  /** The smallest clash the claim joins: the log's readings in it (the claim itself left out), or none when it fits. */
+  clash?: Clash;
+  left: LeftOut[];
+  /** `beyond` when the claim has a frame with no row, as {@link follows} has it. */
+  verdict?: "beyond";
+  refused?: string;
+};
+
+/**
+ * *Why not?* (Sketch, naming a clash): the claim joins the log as one more reading, switched on, and the reply is the
+ * smallest clash it joins, found by QuickXplain with the claim as background: one reason, which is what a reply needs.
+ * When the log clashes on its own, the hitting-set tree finds every clash and the smallest one with the claim is given.
+ */
+export async function whyNot(log: Pick<Log, "readings">, claim: Reading | Claim, options: SolveOptions = {}): Promise<WhyNotResult> {
+  const p = prepare(log, claim, options, true);
+  if (!p.ok) return p.answer.verdict === "beyond" ? { left: p.answer.left, verdict: "beyond" } : { left: p.answer.left, refused: p.answer.english };
+  const big = tooLarge(p.program, options);
+  if (big) return { left: p.translation.left, refused: big };
+  const ids = switchIds(p.program);
+  const resolver = new Resolver(p.program, ids);
+  const rest = ids.filter((id) => id !== p.qid);
+  let found: string[] | undefined;
+  if (await resolver.consistent(new Set(rest))) found = await resolver.quickXplain([p.qid!], rest);
+  else {
+    // The log clashes already: a clash without the claim is not one it joins, so walk them all and keep the claim's.
+    const joined = (await resolver.allClashes()).filter((c) => c.includes(p.qid!)).sort((a, b) => a.length - b.length);
+    found = joined[0]?.filter((id) => id !== p.qid);
+  }
+  if (resolver.failed) return { left: p.translation.left, refused: resolver.failed };
+  if (found === undefined) return { left: p.translation.left };
+  const { atom, switches } = await describe(found, p);
+  const english = found.length ? `That cannot hold with ${found.join(", ")}.` : "That cannot hold on its own.";
+  return { clash: { atom, readings: found, switches, english }, left: p.translation.left };
 }
