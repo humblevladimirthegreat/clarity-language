@@ -1,17 +1,11 @@
 # Tools that read readings
 
-**Status:** IN PROGRESS, 2026-11-19: phases 1–3 done. The practice lint compares with `sameReadings`; construction search (`src/find/`) takes frames, `reach=` and frame order from readings, and `--diff` takes REV's reader (floor `a13f294c`), taught in [searching by construction](../../meta/procedures/read-ageben.md#find). Decided 2026-11-19: Inspect shows hover notes on each frame word, plus a "what covers what" list when a sentence has two or more whole-clause frames; the prompt eval runs first on about 20 examples with two or more whole-clause frames, reusing stored replies as the baseline, goes to the full set only if the subset shows a gain, and the `--structure` flag is kept only if the overall miss rate drops by at least 3 points. **Phase 4 stopped after D1 and D3, 2026-11-19** (stop-and-alert: four reading families have no learner term; see Open decisions). D1 (`feb91ffd`) and D3 (`11070c62`) are committed; D2 waits on the term decision.  
-**Related:** the reader [read.ts](../../../src/interpret/read.ts) and its note [interpreter.md](../../meta/interpreter.md); the parser note [parser-pipeline.md](../../meta/parser-pipeline.md); Inspect [inspect.ts](../../../src/parse/inspect.ts), [AgebenInspect.vue](../../grammar/.vitepress/components/AgebenInspect.vue), [GlossOverlay.vue](../../grammar/.vitepress/components/GlossOverlay.vue), [config.ts](../../grammar/.vitepress/config.ts); the translation prompt [llm-prompt.ts](../../../src/parse/llm-prompt.ts), [scripts/parse.mjs](../../../scripts/parse.mjs), [src/agent/ageben.ts](../../../src/agent/ageben.ts), [scripts/llm-eval.ts](../../../scripts/llm-eval.ts); the reader's browser entry [src/interpret/browser.ts](../../../src/interpret/browser.ts).  
-**Depends on:** none. **Order:** lands before `mind-map-view.md`. Phase 4 adds the reader to the Inspect page; the mind map then reuses that alias and the parse-once plumbing instead of adding its own. `clingo-solver.md` is in progress and also edits `src/interpret/`; never run a phase of each at the same time. `structural-search.md` (an idea) keeps claim search; it builds on the reading pass `src/find/` now runs.  
+**Status:** IN PROGRESS, 2026-11-19: phases 1–4 done. The practice lint compares with `sameReadings`; construction search (`src/find/`) takes frames, `reach=` and frame order from readings, taught in [searching by construction](../../meta/procedures/read-ageben.md#find). Inspect shows frame notes from readings (`src/interpret/inspect-notes.ts`, rendered in `GlossOverlay.vue`), through the `@interpret-browser` alias; the site build target is now `es2022`, because the reader's browser entry pulls in clingo's worker. Decided 2026-11-19: `terminology.md` gained A–Z entries for say word, intention, contrary to, speaker attitude and negation, and the binder family maps to *Domain / generic / every K*; the 17 drifted `whyFor` links point at their owning sections. Decided earlier: the prompt eval runs first on about 20 examples with two or more whole-clause frames, reusing stored replies as the baseline, goes to the full set only if the subset shows a gain, and the `--structure` flag is kept only if the overall miss rate drops by at least 3 points. Phase 5 is ready.  
+**Related:** the reader [read.ts](../../../src/interpret/read.ts) and its note [interpreter.md](../../meta/interpreter.md); the translation prompt [llm-prompt.ts](../../../src/parse/llm-prompt.ts), [scripts/parse.mjs](../../../scripts/parse.mjs), [src/agent/ageben.ts](../../../src/agent/ageben.ts), [scripts/llm-eval.ts](../../../scripts/llm-eval.ts).  
+**Depends on:** none. **Order:** lands before `mind-map-view.md`. The mind map reuses the `@interpret-browser` alias and the parse-once plumbing (`inspectText` returns `parsed`) that phase 4 added, instead of adding its own. `clingo-solver.md` is in progress and also edits `src/interpret/`; never run a phase of each at the same time. `structural-search.md` (an idea) keeps claim search; it builds on the reading pass `src/find/` now runs.  
 **Design authority:** *none*. Tooling only: no form or reading changes, and the parser's accept/reject behavior does not change. Every comparison rule cites the grammar section it follows. 
 
 ## Design
-
-### Inspect over readings (phase 4)
-
-The parse stays the base. When the sentence parses, a new `src/interpret/inspect-notes.ts` takes the `ParseResult` that `inspectText` already made (parse once) and returns, by token: each frame word's family and reach, which frame covers which, unsettled pairs, and carried frames. The family names shown are the learner terms from [terminology.md](../../grammar/terminology.md), never the internal family ids, and each links to its owning section. The site gets an `@interpret-browser` alias in `config.ts` for `src/interpret/browser.ts`; `mind-map-view.md` reuses it. On hover or focus, a frame word shows its kind, how far it reaches, and what it covers. When the sentence has two or more whole-clause frames, a short list under it also says what covers what (*"maybe" covers "want"*), which pairs are not settled, and which frames carry over from an earlier sentence.
-
-`inspect.ts` also holds `whyFor`, a hand-written map from a word to the section that explains it, while the classification table records an owning section for every key. D3 compares the two and reports; any change to `whyFor` is a later decision, since its links may deliberately point at beginner pages.
 
 ### Reader facts in the translation prompt (phase 5)
 
@@ -19,23 +13,9 @@ The parse stays the base. When the sentence parses, a new `src/interpret/inspect
 
 ## Implementation plan
 
-Two phases left, each one orchestrator session. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
+One phase left, one orchestrator session. At the end of it, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
 
-The orchestrator saves `npm run verify -- --baseline` at the start of each phase. Between units the gate is `npm run verify -- --allow-generate` against that baseline; the phase's final gate is a full `npm run verify` that passes with no new errors. No phase edits `say-*.md`, `english.md` or `src/english-helper/`, so there is no recall gate. Grammar-page edits here are small (one paragraph on `inspect.md` in phase 4); the writer self-checks them against the [checklist](../../meta/doc-style.md#checklist). If a phase's grammar edits pass a few sentences or add a section, the orchestrator adds a `style-editor` unit (`opus`, `high`) on `npm run changed-sections -- <rev>` at that phase's end ([batch style reviews](../../meta/procedures/proposals.md#running-with-subagents)).
-
-### Phase 4: Inspect
-
-**D1 Notes.** Agent: `proposal-worker`, `model: opus`, effort `high`.
-Write `src/interpret/inspect-notes.ts` and its test per [Inspect over readings](#inspect-over-readings-phase-4): input the `ParseResult` and tokens from `inspectText` (change `inspectText` to return its `ParseResult` as an optional field, so the text is parsed once); output per token the frame family as a learner term and anchor, its reach and what it covers (for the hover), and the sentence's covers / unsettled / carried list, filled only when the sentence has two or more whole-clause frames. A family with no term in `terminology.md` is a stop-and-alert finding, not a made-up name. No Node APIs; export from `src/interpret/browser.ts`.
-**May edit:** `src/interpret/inspect-notes.ts`, `src/interpret/inspect-notes.test.ts`, `src/interpret/browser.ts`, `src/parse/inspect.ts` (the return field only).
-
-**D2 UI.** Agent: `proposal-worker`, `model: opus`, effort `medium`.
-Add the `@interpret-browser` alias in `config.ts`; render D1's notes in `GlossOverlay.vue`: the hover or focus card of a frame word, and the list under the sentence when D1 fills it; add one paragraph to `docs/grammar/inspect.md` saying what the new notes show. Report the Inspect page's bundle size before and after, measured as [browser / bundle size](../../meta/parser-pipeline.md#browser--bundle-size) measures the parser's. Self-check the paragraph against the [checklist](../../meta/doc-style.md#checklist). Update Inspect's row in the [parse or reading](../../meta/interpreter.md#parse-or-reading) table if what it reads has changed.
-**May edit:** `docs/grammar/.vitepress/config.ts`, `docs/grammar/.vitepress/components/GlossOverlay.vue`, `docs/grammar/.vitepress/components/AgebenInspect.vue`, `docs/grammar/inspect.md`, `docs/meta/interpreter.md`.
-
-**D3 Why-links audit.** Agent: `proposal-worker`, `model: sonnet`, effort `medium`.
-For every branch of `whyFor` in `src/parse/inspect.ts`, find the classification-table key the same word reads by (`wordKey`) and compare the two anchors. Write `docs/proposals/in-progress/reading-consumers-files/why-audit.md`: same section, different section on purpose (a beginner page for an advanced owner), or drift. Report the counts. No code edits. The orchestrator logs any drift as an open decision when consolidating.
-**May edit:** `tmp/scratch/reading-consumers/`, `tmp/state/reading-consumers/`.
+The orchestrator saves `npm run verify -- --baseline` at the start of each phase. Between units the gate is `npm run verify -- --allow-generate` against that baseline; the phase's final gate is a full `npm run verify` that passes with no new errors. No phase edits `say-*.md`, `english.md` or `src/english-helper/`, so there is no recall gate. Phase 5 edits no grammar page, so there is no style gate.
 
 ### Phase 5: the translation prompt
 
@@ -72,28 +52,11 @@ Rule sections a subagent may open when the digest does not settle a question: [r
 
 ### Commits
 
-One commit per unit after its gate, staged to that unit's files, message `reading-consumers <ID>: <what> [skip-cd]` and the co-author line; plus one commit of the consolidated proposal at the end of each phase. Expected: 3 + 1 (phase 4, D3 commits nothing if it only writes `tmp/`), 1–2 + 1 (phase 5). When the last phase ends, the proposal and `reading-consumers-files/` are deleted.
+One commit per unit after its gate, staged to that unit's files, message `reading-consumers <ID>: <what> [skip-cd]` and the co-author line; plus one commit of the consolidated proposal at the end of each phase. Expected: 1–2 + 1. When phase 5 ends, the proposal is deleted.
 
 ## Open decisions
 
-### Learner terms for four families (blocks D2)
-
-`inspect-notes.ts` maps each reading family to an A–Z entry in [terminology.md](../../grammar/terminology.md) (`FAMILY_TERMS`). Four families have no entry, so their hover would show no kind: `say` (only the closed labels ALLOW / FORBID / CHOICE / REQUIRE), `intention` (only the mood labels PLAN / WANT / DECISION / ATTEMPT), `contrary`, and `attitude`. There are also weak fits: `polarity` maps to the join-vowel row "negation", not an A–Z heading; `binder` maps to "Binder", whose entry describes words inside a scope island (the other choice is "Domain / generic / *every K*"); `quote` maps to "Span / span open".
-
-- **A.** Add A–Z entries to `terminology.md`: *Say word*, *Intention*, *Contrary to*, *Speaker attitude*, and *Negation* for polarity. Each entry is two lines plus a link to its owning section. D1's map then names all of them.
-- **B.** Name each construction by its closed label (PLAN, WANT, ALLOW…) and leave `contrary` and `attitude` without a kind in the hover.
-- **C.** Show no kind for any family that has no term; the hover gives reach and covers only.
-
-**Recommendation: (high)** A. These are real features, each with its own grammar section, and `terminology.md` is where the learner looks up a feature's name. B names the word rather than the feature, and C hides the most useful line of the hover. Retarget `binder` to "Domain / generic / *every K*" only if the binder reading is the *every K* new member, which D1's example (`zodozel`) suggests.
-
-### Why-links drift (D3)
-
-`reading-consumers-files/why-audit.md` finds 17 drifted `whyFor` links in `src/parse/inspect.ts` out of 47 rows. Twelve name an anchor that moved to a subpage, so the link lands at the page top. Five are the overlay fallback `knowing` for cause, clause hinge, identity, pairing, and mention, which point at the wrong topic.
-
-- **A.** Retarget all 17 to their classification-table anchors.
-- **B.** Retarget the 12 dead anchors only, and decide the fallbacks one by one.
-
-**Recommendation: (high)** A for the 12 dead anchors, since they are broken links. **(medium)** A for the 5 fallbacks: the table anchor is the owning section, though some owners sit on intermediate or advanced pages where a beginner might land.
+None open.
 
 ## Background
 
@@ -105,13 +68,10 @@ The interpreter turns a parse into readings, one per clause: claim, frames, the 
 - **Construction search's frame queries.** `frame=`, `--over`, `--under`, `--unordered` and `--diff` read `resolve.scope`. Scope records exist only for sentence clauses, members of a clause join, and dependents. So frames inside islands and verb-list items, frames that reach one adjective, and stance lists are invisible to these queries.
 - **The translation prompt.** `--llm-prompt` gives the model a morph gloss plus prose rules ("a plan … on `h-` covers the whole sentence") and leaves the model to work out scope. The reader already knows which frame covers which, which pairs are unsettled, and which frames carry over from an earlier sentence.
 
-Separately, **Inspect** shows each word's form but nothing about how the words combine. It should keep its parser base: its word-by-word layer runs even when the sentence does not parse. The reader can add a layer on top.
-
 ### Goals
 
 - One definition of "same reading", the interpreter's, used by the practice-item lint.
 - Construction search's frame queries see every frame the reader places, with a way to restrict them to whole-clause frames.
-- Inspect shows how a parsed sentence's frames combine, on top of its current word layer.
 - A measured answer on whether reader facts improve the translation prompt, kept only if they do.
 
 ### Non-goals
