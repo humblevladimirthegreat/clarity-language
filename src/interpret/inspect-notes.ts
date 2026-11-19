@@ -24,20 +24,24 @@ export type FamilyTerm = { term: string; anchor: string };
  */
 export const FAMILY_TERMS: Readonly<Partial<Record<FrameFamily, FamilyTerm>>> = {
   force: { term: "Speech act", anchor: "terminology.md#speech-act" },
-  polarity: { term: "Negation", anchor: "terminology.md#join-vowel-names" },
+  polarity: { term: "Negation", anchor: "terminology.md#negation" },
+  say: { term: "Say word", anchor: "terminology.md#say-word" },
   stance: { term: "Stance", anchor: "terminology.md#stance" },
   holder: { term: "Holder", anchor: "terminology.md#holder" },
   hinge: { term: "Clause hinge", anchor: "terminology.md#clause-hinge-np-hinge" },
+  intention: { term: "Intention", anchor: "terminology.md#intention" },
   ability: { term: "Ability / incapability", anchor: "terminology.md#ability-incapability" },
   phase: { term: "Already / still / not yet / no longer", anchor: "terminology.md#already-still-not-yet-no-longer" },
   residue: { term: "Residue / former climate", anchor: "terminology.md#residue-former-climate" },
   notional: { term: "NOTIONAL", anchor: "terminology.md#mood-labels" },
   mirative: { term: "MIRATIVE", anchor: "terminology.md#mood-labels" },
+  contrary: { term: "Contrary to", anchor: "terminology.md#contrary-to" },
   occasion: { term: "Restrictor", anchor: "terminology.md#restrictor" },
   sake: { term: "Sakes", anchor: "terminology.md#sakes" },
   bar: { term: "Bar", anchor: "terminology.md#bar" },
   quote: { term: "Span", anchor: "terminology.md#span-span-open" },
-  binder: { term: "Binder", anchor: "terminology.md#binder" },
+  attitude: { term: "Speaker attitude", anchor: "terminology.md#speaker-attitude" },
+  binder: { term: "Domain / generic / every K", anchor: "terminology.md#domain-generic-every-k" },
   call: { term: "Vocative", anchor: "terminology.md#vocative" },
 };
 

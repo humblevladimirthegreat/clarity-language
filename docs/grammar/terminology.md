@@ -306,6 +306,12 @@ Same-speech-act forward motion.
 
 **Compare with:** a [sentence linker](#sentence-linker) is the *therefore / however* subclass of continue, and a [topic](#topic) word is the *now, about X* subclass.
 
+### Contrary to
+
+The hook `uom` right before a `/th/` stance word or an intention adverb: the event goes against that plan, say word, or channel (*contrary to the plan*), and the word after `uom` no longer applies to the claim.
+
+[Contrary to](/contrary-to#contrary-to-stance)
+
 ### Cross-role recast
 
 Resume with a different PoS letter than the antecedent.
@@ -528,6 +534,12 @@ An event root on `/ɡ/`: the noun is in the middle of that event, as its doer (*
 
 **Compare with:** a [role compound](#role-compound-agent-patient-recipient) names a participant, with no claim that the act is under way.
 
+### Intention
+
+The clause says what a mind means to do, or that someone tries, not that the event happens. PLAN (`thagom`), WANT, and DECISION are `/th/` stance words; ATTEMPT is an intention adverb on `/h/`.
+
+[Intention](/intention#plan) · [Want and decide](/want-and-decide#want) · [Try](/try#trying)
+
 ### Invert
 
 Join stacks `ua` / `uo` / `ue`.
@@ -655,6 +667,12 @@ Number ending `-n`: the number as a name or title (*the Second*, an official lab
 [Number markers and endings](/number-markers#number-endings)
 
 **Compare with:** content `-n` is the same [named](#concrete-abstract-named-resume) cell on a content word. Phrase join `-n` is a [named list](#named-list). Clause join `-n` is a [sequence](#sequence).
+
+### Negation
+
+Vowel `u` in a join denies the items of its list: one item is *not X* (`zazozon zul` *not Azozon*), two are *neither A nor B*, more are *none of these*. Because it is a join, the rest of the sentence still stands. A `/th/` `u` join with no stance words before it (`thul` *no judgment*) leaves the claim untouched and says how to take it.
+
+[Joins](/joins#negation-u) · [Joins on verbs and stances](/verb-and-stance-joins#standalone-stance-joins)
 
 ### Number as verb / adverb / interjection / discourse
 
@@ -842,6 +860,12 @@ Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = `goyom` + `/w/` ne
 
 [Sakes](/sakes)
 
+### Say word
+
+One `/h/` word for who has a say over an act and what they say: allow, forbid, require, or leave it to someone (`hwuvam`). It covers the whole clause. Its answers are the labels ALLOW, FORBID, REQUIRE, and CHOICE ([mood labels](#mood-labels)).
+
+[Permission and consent](/permission-consent#say-words)
+
 ### Scale
 
 A sibling parent map with no parent of its own. On `a` / `o` / `e` / `u`, **size** is amount (biggest to smallest) and **order** is position (first to fourth). On `-l` / `-m` / `-r` / `-n`, the five are content, exactness, completeness, reference, and settled-to-passing. Series hang on a scale; sibling scales do not hang on each other.
@@ -891,6 +915,12 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 [Spans](/spans)
 
 **Compare with:** a numeric or ordered from–to is a [range](#range-ray), not a span.
+
+### Speaker attitude
+
+A `/th/` word with `-m` for how you, the speaker, feel about the whole claim (`theguyom` *hopefully*). It is always yours, never the subject's, and in a question it stays outside what is asked.
+
+[Feelings](/feelings#speaker-attitude)
 
 ### Special pronoun
 
