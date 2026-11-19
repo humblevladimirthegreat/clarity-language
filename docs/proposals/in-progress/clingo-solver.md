@@ -1,35 +1,26 @@
 # A solver behind the interpreter: Clingo for what follows, what clashes, and what stands
 
-**Status:** IN PROGRESS, 2026-11-19. Phase 1 done (S1, S2, F1, R1); phase 2 done (B0, B1, B2, B3, B4, B5, R2), 2026-11-19. Group (a) is built and its confirmed rows, encoding and jobs are in [solver.md](../../meta/solver.md). Phase 2 departed from the confirmed rows in two places, both recorded there: a denial is `holds(neg(T))`, not `-holds(T)` (Clingo's strong negation makes a claim beside its denial unsatisfiable, so no `clash` atom could be derived); and *only if* fires when the condition says at least the denied term (`fits(P, c(Id))`), which agrees with the row whenever the terms are equal. **Waiting on the user:** confirm the group (b) and (c) rows and decide R2-2 to R2-13 and B3-1 ([Open decisions](#open-decisions)); then phase 3. User, 2026-11-18: the wizard integration comes later; the first jobs are what follows, what clashes and what stands; the matcher's step conditions are shared TypeScript functions that both engines call. Idea 2026-11-14; researched and spiked 2026-11-18 ([Research](#research)).  
+**Status:** IN PROGRESS, 2026-11-19. Phase 1 done (S1, S2, F1, R1); phase 2 done (B0, B1, B2, B3, B4, B5, R2), 2026-11-19. Group (a) is built and its confirmed rows, encoding and jobs are in [solver.md](../../meta/solver.md). Phase 2 departed from the confirmed rows in two places, both recorded there: a denial is `holds(neg(T))`, not `-holds(T)` (Clingo's strong negation makes a claim beside its denial unsatisfiable, so no `clash` atom could be derived); and *only if* fires when the condition says at least the denied term (`fits(P, c(Id))`), which agrees with the row whenever the terms are equal. User, 2026-11-19: draft MAY and *or* before phase 3 (B3-1 as A; R3 ran the same day); then confirmed R2-1 and R3-1 and decided R2-2 to R2-13 and R3-2 to R3-7 as recommended, and the readings R2-7, R2-8, R2-10 and R3-2 adopt went on their grammar pages. Phase 3 is ready. User, 2026-11-18: the wizard integration comes later; the first jobs are what follows, what clashes and what stands; the matcher's step conditions are shared TypeScript functions that both engines call. Idea 2026-11-14; researched and spiked 2026-11-18 ([Research](#research)).  
 **Related:** [solver.md](../../meta/solver.md); the interpreter's reading, log, matcher, host and replies ([interpreter.md](../../meta/interpreter.md), `src/interpret/`, [reading.mjs](../../../scripts/reading.mjs)); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [contrary to](/contrary-to), [causation](/causation); consumers `ageben-spec.md`, `agent-tool-permissions.md`, `argument-map.md`, `knowledge-store.md`, `structural-search.md`, `who-knows-what.md`, `various-interpreter-applications.md`, later `wizard-adventure.md` and `logic-grids.md`; the wizard engine ([wizard-game.md](../../meta/wizard-game.md)).  
 **Depends on:** none. `ageben-spec.md` may now switch its contradiction check to the solver.  
 **Design authority:** *none*. Tooling only: it adds no form and changes no reading. Each translation row states what the solver concludes from a frame family as the grammar page already teaches it; where a row needs a meaning the grammar pages do not state, that is an open decision for the user, and the row waits.
 
 ## Implementation plan
 
-Run with subagents. Phases 1 and 2 are done; phase 3 is left, and starts once the user has confirmed the group (b) and (c) rows. At its end the orchestrator runs the final gate and deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)).
+Run with subagents. Phases 1 and 2 are done, and R3 drafted the MAY and *or* rows after phase 2; phase 3 is ready. At its end the orchestrator runs the final gate and deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)).
 
-No unit edits prose under `docs/grammar/`, so there is no style gate and no recall gate.
+No phase 3 unit edits prose under `docs/grammar/`, so there is no style gate and no recall gate.
 
-**What phase 2 left for phase 3.**
+**What phases 2 and R3 left for phase 3.**
 
 - [solver.md](../../meta/solver.md) holds the encoding, the group (a) translation table, the jobs and their options, the CLI, and the edge (what has no row yet). Every unit reads it first; B8 extends it.
 - `src/interpret/translate.ts`: `translate(log, {lexicon, switches})` returns `{program, readings, terms, slots, left, notes}`. A reading with no row is listed in `left` with reason `noRow` and the frame's key. `speaker` and `listener` are constants, not tied to the turn: group (b) rows that need the turn's speaker fix that in B6.
-- `src/interpret/solve.ts`: `follows`, `couldBe`, `clashes`, `giveUp`, `whyNot` (verdicts yes / no / unknown / `both` / `beyond` / `refused`); clashes under choices by QuickXplain and a hitting-set tree. `stands` is B7's.
+- `src/interpret/solve.ts`: `follows`, `couldBe`, `clashes`, `giveUp`, `whyNot` (verdicts yes / no / unknown / `both` / `beyond` / `refused`); clashes under choices by QuickXplain and a hitting-set tree. Both jobs read every world today; R3-4 changes that (B6b). `stands` is B7's.
 - `reading.mjs solve` and `reading.mjs clashes` are in `src/interpret/cli.ts`; `reply.ts` has `clashReply` and `giveUpReply`; `src/interpret/solve-browser.ts` is the browser entry (a site page that imports it needs `build.target: 'es2022'`).
-- `translate.test.ts` translates every `src/interpret/fixtures/solve-*.txt`, requires an empty `left`, and writes or checks a golden `solve-*.lp`. R2's fixtures are `draft-holders.txt` (b1–b11), `draft-say.txt` (p1–p9) and `draft-because.txt` (c1–c13); the unit that builds a fixture's rows renames it to `solve-*.txt` with `git mv` and drops or splits out any line whose row the user did not confirm.
-- R2's two reader gaps ([Findings](#findings)) are B0b's.
+- `translate.test.ts` translates every `src/interpret/fixtures/solve-*.txt`, requires an empty `left`, and writes or checks a golden `solve-*.lp`. The draft fixtures are `draft-holders.txt` (b1–b11), `draft-say.txt` (p1–p9), `draft-because.txt` (c1–c13), `draft-maybe.txt` (m1–m19) and `draft-or.txt` (o1–o15); the unit that builds a fixture's rows renames it to `solve-*.txt` with `git mv`, and moves any line whose row is left out (R3-5's m13) to a test that expects it in `left`.
+- The confirmed rows and settled decisions are under [Rows and decisions for phase 3](#rows-and-decisions-for-phase-3). R2's two reader gaps ([Findings](#findings)) are B0b's.
 
-### Before phase 3: draft *maybe* and *or*
-
-User, 2026-11-19: settle MAY now (B3-1 as A, run before phase 3), so the R2 and R3 rows are confirmed in one round and phase 3 builds them all.
-
-**R3 Draft the MAY and *or* rows.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-As R2, reading [solver.md](../../meta/solver.md) for the encoding: rows for MAY (`knowing.md`) and for *or* (`e` lists, `set-joins.md`), each citing its [classification table](../../meta/interpreter.md#classification-table) row and grammar anchor. They make several worlds, so each row says what `follows` (cautious) and `couldBe` (brave) answer, and how it meets a stated denial and the open universal's choice. Include a MAY on a holder (R2-3) and on a hinge's condition, MAY with *or*, and at least one fixture where every world clashes with no shared atom, for B3's re-solve. Where `knowing.md` or `set-joins.md` does not state a reading (what *maybe P* says of *not P*, degrees of likelihood, inclusive or exclusive *or*), that is an open decision with options, never a choice. F1-style fixtures in `src/interpret/fixtures/draft-maybe.txt` and `draft-or.txt` (not `solve-*`), checked with `parse.mjs`. Rows go under **Open decisions** as R3-1 (rows that copy a stated rule), R3-2, … with recommendations; R2-3 is revised in place to name the R3 row it would follow; sentences the grammar cannot say go in **Findings**.  
-**May edit:** new `src/interpret/fixtures/draft-*.txt`, this proposal (Open decisions and Findings only).
-
-### Phase 3: build groups (b) and (c), and what stands
+### Phase 3: build groups (b) and (c), MAY and *or*, and what stands
 
 **B0b Reader fixes for holders and *only because*.**  
 `proposal-worker`, `model: opus`, effort `high`.  
@@ -38,20 +29,25 @@ The two gaps in [Findings](#findings): a `-n` holder party is marked named on th
 
 **B6 Holders and say words.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-The confirmed group (b) rows (R2-1 rows 1 to 4 and R2-2 to R2-9 as decided) in `translate.ts`, with golden programs and `solve.test.ts` cases: one holder's own beliefs can clash, two holders' never do, a say word's content stays wrapped. `git mv` `draft-holders.txt` and `draft-say.txt` to `solve-*`.  
+The confirmed group (b) rows (R2-1 rows 1 to 4, R2-2 and R2-4 to R2-9) in `translate.ts`, with golden programs and `solve.test.ts` cases: one holder's own beliefs can clash, two holders' never do, a say word's content stays wrapped. `git mv` `draft-holders.txt` and `draft-say.txt` to `solve-*`; b6 (a holder on MAY) waits for B6b.  
 **May edit:** `src/interpret/translate.ts`, `src/interpret/translate.test.ts`, `src/interpret/solve.ts` (only where a decided row changes a verdict or a reply, such as a holder named in a clash), `src/interpret/solve.test.ts`, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`.
+
+**B6b MAY and *or*.**  
+`proposal-worker`, `model: opus`, effort `high`.  
+The confirmed R3-1 rows and R3-2 to R3-7 in `translate.ts`, R2-3 (a holder on MAY), and R3-4's world selection in `solve.ts` (`follows` and `couldBe` read clash-free worlds first, then every world). Golden programs and `solve.test.ts` cases, including reasoning by cases on *or*, and o8–o12 as the fixture where every world clashes with no shared atom, run through B3's re-solve (`clashes`, `giveUp`). `git mv` `draft-maybe.txt` and `draft-or.txt` to `solve-*`.  
+**May edit:** `src/interpret/translate.ts`, `src/interpret/translate.test.ts`, `src/interpret/solve.ts`, `src/interpret/solve.test.ts`, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`.
 
 **B7 What stands.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-The confirmed group (c) rows (R2-1 rows 5 to 9, R2-10, R2-11) in `translate.ts`, the attack relation (R2-12), and `stands(log, options)` in `solve.ts` with the ASPARTIX encodings (R2-13), credulous through brave and skeptical through cautious consequences. `reading.mjs stands [--semantics S] FILE`. Tests on the R2 fixtures; `git mv` `draft-because.txt` to `solve-because.txt`.  
+The confirmed group (c) rows (R2-1 rows 5 to 9, R2-10, R2-11) in `translate.ts`, the attack relation (R2-12), and `stands(log, options)` in `solve.ts` with the ASPARTIX encodings (R2-13), credulous through brave and skeptical through cautious consequences, with attacks from the brave `fired` atoms of a first run when there are several worlds. `reading.mjs stands [--semantics S] FILE`. Tests on the R2 fixtures; `git mv` `draft-because.txt` to `solve-because.txt`.  
 **May edit:** `src/interpret/translate.ts`, `src/interpret/solve.ts`, their tests, `src/interpret/cli.ts`, `src/interpret/cli.test.ts`, `scripts/reading.mjs`, `src/interpret/solve-browser.ts`, `src/interpret/browser.ts`, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`.
 
-**B8 Meta note, groups (b) and (c).**  
+**B8 Meta note, groups (b) and (c), MAY and *or*.**  
 `proposal-worker`, `model: sonnet`, effort `medium`.  
-Add the confirmed rows, the attack relation, `stands` and its CLI to [solver.md](../../meta/solver.md), and update its edge. Report any change to the `AGENTS.md` row.  
+Add the confirmed rows, the world selection, the attack relation, `stands` and its CLI to [solver.md](../../meta/solver.md), and update its edge (what is still left out: R3-5's MAY on a condition, `ue` / `oe` lists, MAY in a question, other stance-number markers). Report any change to the `AGENTS.md` row.  
 **May edit:** `docs/meta/solver.md`.
 
-**Order:** B0b, B6, B7, B8, in sequence. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), or cuts it to an idea if B3-1 leaves *or* / *maybe* rows for later.
+**Order:** B0b, B6, B6b, B7, B8, in sequence. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)).
 
 ### Rule digest (pasted into every brief)
 
@@ -97,7 +93,7 @@ Full rules a subagent may open if the digest does not settle a question: [interp
 - `npm run verify -- --baseline` at the start of phase 3; `npm run verify -- --allow-generate` after each unit, before its commit.
 - Final gate, at the end of phase 3: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
 - One commit per unit, after its gate: `clingo-solver <ID>: … [skip-cd]` with the co-author line.
-- Phase 1 made 5 commits, phase 2 made 9 (with a fix to B1 and the consolidation); phase 3 about 5 (the last deletes the proposal).
+- Phase 1 made 5 commits, phase 2 made 9 (with a fix to B1 and the consolidation); R3 made 1, and the settled decisions 1; phase 3 about 6 (the last deletes the proposal).
 
 ## Open decisions
 
