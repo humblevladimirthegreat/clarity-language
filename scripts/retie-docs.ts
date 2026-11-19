@@ -33,7 +33,8 @@ import {
   RETIE_MAP_RELATIVE_PATH,
   unreadableOldRoots,
 } from "../src/retie/map.js";
-import { rewriteSourceLiterals } from "../src/retie/source.js";
+import { rewriteSourceComments } from "../src/retie/comments.js";
+import { rewriteSourceLiterals, SOURCE_RETIE_SKIP_RE } from "../src/retie/source.js";
 import { respellDerived, wordPairsOf } from "../src/retie/derived.js";
 import { respellInitials } from "../src/retie/initials.js";
 import { letterNameTable, respellLetterNames } from "../src/retie/letter-names.js";
@@ -424,21 +425,43 @@ async function main(): Promise<void> {
     }
   }
 
-  // Source: root tables, sample fillers, test fixtures.
+  // Source: root tables, sample fillers, test fixtures; then backticked Ageben in comments.
   const currentRoots = publishedRoots;
   for (const file of sourceDirs.flatMap((dir) => listSource(dir))) {
     const original = readFileSync(file, "utf8");
-    const result = rewriteSourceLiterals(original, file, { map, tables: tables.old, current: tables.current, follow, english, currentRoots, keep });
     const rel = relative(REPO_ROOT, file);
+    // A file whose spellings are arbitrary (IPA fixtures) opts out with `// retie: skip`.
+    if (SOURCE_RETIE_SKIP_RE.test(original)) {
+      console.log(`${rel}  skipped (retie: skip)`);
+      continue;
+    }
+    const ctx = { map, tables: tables.old, current: tables.current, follow, english, currentRoots, keep };
+    const result = rewriteSourceLiterals(original, file, ctx);
+    const comments = rewriteSourceComments(result.text, file, ctx);
     for (const item of result.reviews) {
       review(`${rel}:${lineNumberAt(original, item.index)}  review  ${item.reason}`);
     }
-    for (const change of result.changes) {
+    for (const item of comments.reviews) {
+      review(`${rel}:${lineNumberAt(original, item.index)}  review  comment \`${item.text}\`  (${item.reason})`);
+    }
+    for (const failure of verifyRetiedSpans(comments.spans, map, tables, keep)) {
+      const rendered = `${rel}:${lineNumberAt(original, failure.span.index)}  ${failure.level}  comment \`${failure.span.before}\` → \`${failure.span.after}\`  (${failure.detail})`;
+      if (failure.level === "info") {
+        info += 1;
+        console.log(rendered);
+      } else if (failure.level === "warning") {
+        warnings += 1;
+        console.warn(rendered);
+      } else {
+        block(rendered);
+      }
+    }
+    for (const change of [...result.changes, ...comments.changes]) {
       console.log(`${rel}:${lineNumberAt(original, change.index)}  ${change.from} → ${change.to}`);
     }
-    if (result.text !== original) {
-      total += result.changes.length;
-      written.push({ file, text: result.text });
+    if (comments.text !== original) {
+      total += result.changes.length + comments.changes.length;
+      written.push({ file, text: comments.text });
     }
   }
 

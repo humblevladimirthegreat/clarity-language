@@ -115,7 +115,7 @@ export type MorphWordFamily =
     }
   /**
    * Join word. `hook`: a hooked join's extra-noun hook, as its free form (`ol`, `om`, `or`): the hook bounds the
-   * join's set, and its landmark is the `bl-` word right after (`zexual blahehal`, hooked-joins.md#hooked-joins).
+   * join's set, and its landmark is the `bl-` word right after (`zexual blawahal`, hooked-joins.md#hooked-joins).
    */
   | { kind: "joinMarker"; series: string; hook?: string }
   | {

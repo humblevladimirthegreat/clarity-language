@@ -1,3 +1,6 @@
+// retie: skip
+// IPA fixtures: each spelling is arbitrary, and its IPA is derived from it, so a retie must not move one without the other.
+
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 

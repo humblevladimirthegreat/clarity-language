@@ -251,7 +251,7 @@ function memberFrame(coord: NpCoord, term: Term, here: Here): void {
 }
 
 /**
- * A hook's landmark after a frame word on the hook (`wal al bohehal`, *never in a house*): the resolve stage gives it
+ * A hook's landmark after a frame word on the hook (`wal al bamahal`, *never in a house*): the resolve stage gives it
  * no whole-clause frame (`framedLandmarks` in the scope stage), and its binder sits under that frame, earlier over later
  * (clause.md#which-covers-which, joins.md#everything-ua).
  */

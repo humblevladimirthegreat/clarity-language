@@ -106,11 +106,26 @@ function isKept(word: string, ctx: SourceRetieContext): boolean {
 const NAME_RE = /(?<![A-Za-z])[A-Z][a-z]+(?![A-Za-z])/g;
 const OVERLAY_ID_RE = /^overlay\.([a-z]+)\.([a-z]+)$/;
 
-export function rewriteSourceLiterals(source: string, fileName: string, ctx: SourceRetieContext): SourceRetieResult {
-  const isTest = /\.test\.[mc]?ts$/.test(fileName);
-  // A test that reads the real lexicon names real roots: its stale spellings are rewritten, not just reported.
-  const realLexicon = isTest && REAL_LEXICON_RE.test(source);
-  const literals = fileName.endsWith(".vue") ? vueLiterals(source) : sourceLiterals(source, fileName);
+/** A source file opts out of the retie with `// retie: skip` on a line of its own (its spellings are arbitrary). */
+export const SOURCE_RETIE_SKIP_RE = /^[ \t]*\/\/[ \t]*retie:[ \t]*skip[ \t]*$/m;
+
+function isTestFile(fileName: string): boolean {
+  return /\.test\.[mc]?ts$/.test(fileName);
+}
+
+function literalsOf(source: string, fileName: string): SourceLiteral[] {
+  return fileName.endsWith(".vue") ? vueLiterals(source) : sourceLiterals(source, fileName);
+}
+
+/**
+ * The context for one file: in a test, a bare old root as a literal is the file's own fixture,
+ * so its root and English name leave the map.
+ */
+export function fileRetieContext(source: string, fileName: string, ctx: SourceRetieContext): SourceRetieContext {
+  return fixtureContext(literalsOf(source, fileName), isTestFile(fileName), ctx);
+}
+
+function fixtureContext(literals: readonly SourceLiteral[], isTest: boolean, ctx: SourceRetieContext): SourceRetieContext {
   // In a test, a bare old root as a literal (`root: "eye"`, `"abede"`) is a fixture the file defines for itself:
   // words on that root are about the fixture, not the lexicon, so this file never respells them. A test that
   // asserts a real root names it through `CLOSED` instead (`assert.equal(root, CLOSED.walk)`), so it follows.
@@ -118,17 +133,23 @@ export function rewriteSourceLiterals(source: string, fileName: string, ctx: Sou
   const fixtures = new Set(
     isTest ? literals.map((literal) => literal.body).filter((body) => /^[a-z]+$/.test(body) && ctx.map.has(body)) : [],
   );
+  if (fixtures.size === 0) return ctx;
   // A fixture keeps its English name too (`root: "azawa"` and *Azawan* stay together).
   const fixtureNames = new Set([...fixtures].map(namedEnglish));
-  const fileCtx =
-    fixtures.size > 0
-      ? {
-          ...ctx,
-          map: new Map([...ctx.map].filter(([root]) => !fixtures.has(root))),
-          follow: { ...ctx.follow, names: new Map([...ctx.follow.names].filter(([name]) => !fixtureNames.has(name))) },
-          keep: new Set([...(ctx.keep ?? []), ...fixtureNames]),
-        }
-      : ctx;
+  return {
+    ...ctx,
+    map: new Map([...ctx.map].filter(([root]) => !fixtures.has(root))),
+    follow: { ...ctx.follow, names: new Map([...ctx.follow.names].filter(([name]) => !fixtureNames.has(name))) },
+    keep: new Set([...(ctx.keep ?? []), ...fixtureNames]),
+  };
+}
+
+export function rewriteSourceLiterals(source: string, fileName: string, ctx: SourceRetieContext): SourceRetieResult {
+  const isTest = isTestFile(fileName);
+  // A test that reads the real lexicon names real roots: its stale spellings are rewritten, not just reported.
+  const realLexicon = isTest && REAL_LEXICON_RE.test(source);
+  const literals = literalsOf(source, fileName);
+  const fileCtx = fixtureContext(literals, isTest, ctx);
   const results = literals.map((literal) => rewriteLiteral(literal, isTest, realLexicon, fileCtx));
   keepFileConsistent(results, fileCtx);
 

@@ -575,7 +575,7 @@ function hookModifierFrame(word: LexWord): FrameKeyRow | undefined {
 }
 
 /**
- * The landmarks of hooks that carry a frame word (`wal al bohehal`, *never in a house*): the frame comes first and
+ * The landmarks of hooks that carry a frame word (`wal al bamahal`, *never in a house*): the frame comes first and
  * reaches only the hook's phrase, so by the earlier-covers-later rule it covers the new member the landmark brings in
  * (clause.md#which-covers-which, joins.md#everything-ua, in-clause-hooks.md#hook-w). Such a landmark binds under that
  * frame, not over the clause.
