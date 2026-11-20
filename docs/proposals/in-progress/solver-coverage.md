@@ -1,46 +1,40 @@
 # Solver coverage: the edge, wrong answers, and fill questions
 
-**Status:** IN PROGRESS, 2026-11-19: phases 1 and 2 done; phase 3 done (FX, B0, B1a, B1b, B2a, P1): the conditional is a claim term, holders, say words and the turn's addressees, *because*; P1 rewrote the *dependent on* and *independent* recipe rows in `say-people-places.md` with Alazun's support (`agobo`) as a `blarl` clause. Recall gate after phase 3: passed (baseline check). Phase 4 under way (2026-11-20): done B2b (open decision 1 settled as (a) and built), B3a, T1 (probe output scoping, added 2026-11-20), B3b; done B3c, B3d (open decisions 2 and 3 settled 2026-11-20 as D18, D19), B4a; next P2; open decisions 4 and 5 wait on the user. User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
+**Status:** IN PROGRESS, 2026-11-20: phases 1 to 4 done. Phase 4 (B2b, B3a, T1, B3b, B3c, B3d, B4a, P2): contrary-to zones, MAY over a clause and on hinges, hinges on universals, rank and ties, probe output scoping (T1), and the `verb-and-stance-joins.md` checkpoint (P2); open decisions 2 and 3 settled as D18 and D19 and built. Next is phase 5 (B4b, B6a, B6b, B6c, B5, S1); open decisions 4 and 5 wait on the user ([Open decisions](#open-decisions)). User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
 **Related:** [solver.md](../../meta/solver.md); [interpreter.md](../../meta/interpreter.md) (classification and pair tables); `src/interpret/` (`translate.ts`, `solve.ts`, `read.ts`, `classes.ts`, `match.ts`, `log.ts`, `probe.ts`, `cli.ts`); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [causation](/causation), [contrary to](/contrary-to), [knowing](/knowing), [evidentiality](/evidentiality), [restrictors](/restrictors), [rank joins](/rank-joins), [set joins](/set-joins), [list structure](/list-structure), [comparatives](/comparatives), [pronouns](/pronouns), [collectives](/collectives), [questions](/questions), [fill-ask roles](/fill-ask-roles), [sentence linkers](/sentence-linkers), [polar inventory](/polar-inventory), [hooks](/hooks), [notional](/notional); recipe page `say-people-places.md`.  
 **Depends on:** none.  
-**Design authority:** no new forms. The page sentences the confirmed rows name (each written in the unit that builds its row). The `hinge` × `contrary` pair-table sample and gloss in `interpreter.md` (D14, R4e decision 3). The recipe rows *dependent on* and *independent* in `say-people-places.md` (D15).
+**Design authority:** no new forms. The page sentences the confirmed rows name (each written in the unit that builds its row).
 
 ## Design
 
 Phase 1 built the faithful half: the **accounting guard** in `translate.ts` (`Translation.accounting`) sends a reading with an unused part to `left` with reason `unused` (a question with one answers `beyond`), and the sweep `src/interpret/accounting.test.ts` fails on a kept grammar example with an unused part. Speaker and listener are turn-tied (`listener(N)`, `Translation.site(id)`, `TermSite` in `match.ts`).
 
-Phase 3 built the conditional, holders, say words and *because*. What later units build on:
+Phases 3 and 4 built the rows below; [solver.md](../../meta/solver.md#translation-table) owns each. What phase 5 builds on:
 
-- **The conditional is a claim term.** Each plain *if* / *only if* / *iff* reading claims `if(c(Id),o(Id))`, `onlyif(..)` or `iff(..)` (`neg(o(Id))` for a denied outcome), and rows 5–7 take the term in their bodies; matching between conditionals is `Translation.conditionals` / `Translation.conditionalFits`. A hinge on a universal, or with MAY anywhere, still keeps the old rules and gets no term (B3b, B3c). A hinge in a holder's view claims `view(H, if(..))`; a denied conditional inside a view, under MAY, or beside *because* is still left.
-- **Witnesses.** A question's witness facts come from `Translation.witnesses` (FX); a row that adds a first-mention witness fact records its lines there.
-- **Holders and say words.** `sayRules()` in `translate.ts` emits the say clash / requires / bans rules (view-wrapped copies only when a reading holds a say word in a view). `zayan` is `we(..)`; `zawan` reads `LogEntry.addressees`; a reading that is only a call writes just `on(Id).`. Reserved names now include `if`, `onlyif`, `iff`, `we`, `every`, `because`.
+- **The conditional is a claim term.** A plain *if* / *only if* / *iff* claims `if(c(Id),o(Id))`, `onlyif(..)` or `iff(..)`; matching between conditionals is `Translation.conditionals` / `conditionalFits`. MAY wraps a side: `if(may(c),o)`, `if(c,may(o))`, or `may(if(..))` with a choice on the plain term (`Conditional.may` keeps a wrapped one from meeting a plain one). A hinge on a closed universal claims a template term plus a member term per stated member (`Conditional.id` = `"Id",M`), rows 5–7 run per member. A hinge in a holder's view claims `view(H, if(..))`.
+- **Zones.** `against(T, Z)` with `Z` = `plan(H)`, `want(H)`, `decision(H)`, `channel(Gloss, H)` or a say word; `H` = `sp("…")` with no holder; a zone over a hinge puts `against` on the conditional.
+- **MAY.** Row 15's choice wherever MAY is held (D18, D19); *always* over MAY adds `always(may(T))`, which clashes with and attacks `never(T)`. A MAY question runs as `couldBe` (switch `couldBe`).
+- **Rank and ties.** `ranked()` in `translate.ts`: `more(S, A, B)` per ordered pair, `most(S, A)`, `tie(S, A, B, E)`, `ratio(S, A, B, V)` (never pooled for questions; open decision 4); with a verb each member's act holds.
+- **Witnesses.** A question's witness facts come from `Translation.witnesses`; a row that adds a first-mention witness fact records its lines there.
+- **Holders and say words.** `sayRules()` emits the say rules; `zayan` is `we(..)`; `zawan` reads `LogEntry.addressees`. Reserved names include `if`, `onlyif`, `iff`, `we`, `every`, `because`, `want`, `decision`.
 - **One pool of claims.** Every turn's plain claim is `holds(T)`, with no speaker; a per-speaker layer (`said(Speaker, T)`) waits for the group-views host policy, and `yaor` and the polar answers (R4d-2) will be its first users.
-- **Fixtures.** `solve-holders.txt`, `solve-because.txt`, `solve-hinges.txt`, `solve-say.txt` (new). Use the inline `blarl …` form of a hinge condition: the period form (`thohem blarl. zalazun vezuyol.`, the `grounds` link) is left by every hinge row. A draft verdict "→ no" that only means *does not follow* is tested as `unknown`; the draft files mean *no* only where the denial is derivable.
+- **Fixtures.** `solve-holders.txt`, `-because`, `-hinges`, `-say`, `-maybe`, `-lists`. `draft-holders.txt` holds only k14 (B6a), `draft-because.txt` only bc36 (tag `zwar`, left), `draft-hinges.txt` hg11 (B6c) and hg23 (left), `draft-lists.txt` R4c-3 and later; `draft-maybe.txt` is gone. Use the inline `blarl …` form of a hinge condition. A draft verdict "→ no" that only means *does not follow* is tested as `unknown`.
+- **Probing.** `probe --program` prints the case's own lines; `--case N`, `--terms a,b`, `--program=full` (T1).
 
-After phase 3 the sweep leaves 2516 example readings: 397 `unused` (unit:linker 83, edge:polar 55, shared:scale 48, slot:tag 44, edge:hook 43, shared:equative 31, lexReading:standIn 22, shared:distribute 20, hookJob:resume 17, others 34), the rest `noRow`.
+After phase 4 the sweep leaves 2489 example readings: 338 `unused` (unit:linker 83, edge:polar 55, slot:tag 44, edge:hook 43, lexReading:standIn 22, shared:scale 22, shared:distribute 20, hookJob:resume 17, lexReading:standInBack 7, carry:channel 5, shared:collective 4, others 16), the rest `noRow`.
 
 ## Decided
 
-User, 2026-11-19, each as recommended; D13 as the user stated it. D1–D3, D11, D12, D15 and D16 are built (phase 3) and live in [solver.md](../../meta/solver.md#translation-table); the numbers of the rest are kept.
+User, 2026-11-19, each as recommended. D1–D6 and D11–D20 are built and live in [solver.md](../../meta/solver.md#translation-table); the numbers of the rest are kept.
 
-4. **`uom` before a fence** takes the same per-member rule as the fence first: `against(T[X], Z)`.
-5. **Only-if and iff with MAY.** On the condition, R3-5 (`may(T)` in the body). Under the hinge, no backward rule, as R3-1 row 6 for *if*.
-6. **A carried holder on a MAY sentence** is the holder's own MAY, `view(H, may(T))` (holder table: MAY is the holder's). **A MAY question** runs as `couldBe`, whatever job is called.
 7. **`ue`** denies each listed item (the classification row: "as `u`"). The outside item that holds adds no rule, as open `aem` adds none.
 8. **Channel stances on your own claim** (`thebam`, `th_N`, `th#N`, `th@+95`, `th-e-`) take row 1, with the frame in `notes`, like row 16 (`evidentiality.md#evidentiality`: "the listener always knows what your claim rests on"). Not R3-7's estimate row: these name sources, not likelihoods.
 9. **Two denial lists in one clause** deny the joint substitution, `neg(T[a][b])`.
 10. **The fill job.** Cautious answers by default, brave with `--possible`; one `zar` with several fillers lists them all; no filler is *unknown* unless `closedWorld` gives *nobody*; `…er` is an existence yes or no; `gar` answers from `isa` only until named details are encoded; *why* binds `C` from `cause(C, Out)` only, not a met *if*. When, where, whose and how wait for detail-term rows.
 
-13. ***Always* over MAY** (`hual zazozon vowurol thomam.`) gives `holds(may(T))` and the marker `always(may(T))`, and clashes with *never* (`never(T)`, row 15). It does not clash with a plain denial (R3-2).
-14. **Contrary-to with a hinge.** The `hinge` × `contrary` pair row's second sample changes to the `blarth` form, so its two samples follow its own text-order rule (check `contrary-to.md` first). A hinge over a zone puts `against` on the outcome (a copy row); a zone over a hinge is data, since the encoding has no term for a conditional.
-17. **`oe` ties.** A tie claims no member has the quality (`comparatives.md#equatives` keeps *both are challenging* apart as an *and* list). Closed `zoel` clashes with `zol` on the same scale; `zoem` is data only; with a verb, each member's act holds; three or more are all tied, pairwise.
-18. **D13 gives a choice** (user, 2026-11-20, open decision 2 (a)). *Always* over MAY also writes row 15's choice `{ holds(T) } :- on(Id).`, so `hual zazozon vowurol thomam.` answers `?~ zazozon vowurol.` *yes*; with a plain denial (my11) it still answers *no*, and the two do not clash. With a *never* sentence (my10) the log clashes, and a clashing log reads every world (R3-4), so `?~` answers *yes*; reading only the fewest-clash worlds is the deferred host policy.
-19. **A hinge over MAY gives a choice** (user, 2026-11-20, open decision 3 (b)). With the condition held, a hinge over MAY (`thebem blarth thomam …`, my16) gives a choice on the outcome, so `?~` answers *yes*, as R4b-25's back rule already does: MAY gives a choice wherever it is held. The *only if* half still adds no forward rule.
-20. **Also from B3a:** the D13 clash (`always(may(T))` against `never(T)`) has no attack in `stands` (`rebut/2` does not cover it); B3d adds one if `rebut/2` takes it as written, else reports it.
-
 ## Implementation plan
 
-Run with subagents ([running with subagents](../../meta/procedures/proposals.md#running-with-subagents)); phases 1 to 3 are done, two phases remain. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Every unit runs in sequence: they share `translate.ts`, its tests and `solver.md`.
+Run with subagents ([running with subagents](../../meta/procedures/proposals.md#running-with-subagents)); phases 1 to 4 are done, one phase remains. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Every unit runs in sequence: they share `translate.ts`, its tests and `solver.md`.
 
 **Budget** (user, 2026-11-19): each phase spends about what phase 2 did, five drafting units of about 40 tool calls and 110k–140k subagent tokens each. A build unit costs more per row than a drafting unit (code, goldens, tests, page sentences), so each build unit takes about four to eight rows, and each phase five or six units, the lighter units (FX, P1, S1) filling the sixth place.
 
@@ -48,50 +42,20 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
 
 **Every build unit may edit:** `src/interpret/translate.ts`, `src/interpret/solve.ts` (only where a row changes a verdict or reply), their tests, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`, `docs/meta/solver.md`, the grammar pages its rows' page sentences name. A unit's own **May edit:** line adds to this.
 
-### Carried from phase 3
+### Carried into phase 5
 
-- **B2b:** the `uom` reader gap (R4b findings) is still open. A plan zone paired with the holder's own plan has no fixture: PLAN with a holder has no row (`zazozon vowurol theyomalazun thagom.` left `overlay:plan:th`).
-- **B3b:** R4b-7 accepted a hinge's hosted *or* list with `parts: []` (the reader gives none) as an *or* list when it has at most one part; R4b-4 covers a framed condition only on a plain *because*; a restrictor beside a holder, MAY or `thebem` over *because* stays left. A noun hinge with a carried holder is left `unused`.
-- **B6a:** k14 (`draft-holders.txt`, a topic-pronoun holder) is left only for `unit:linker`; R4d-1 clears it. `draft-because.txt` holds bc22 and later (B2b, B3a, B3b, B3c).
-- **B6b:** the period form of a hinge condition (`thohem blarl. zalazun vezuyol.`, `slot:grounds`) is left by every hinge row; decide whether R4d-8's stand-in row covers it, or report it for the edge.
-- **No row, for the edge at the end:** a question asked as said over a data wrap (answers unknown); `zul` / `zuam` under a leading say word (left); `awanx` (`LogEntry.addressees` holds only the turn's own calls, while `collectives.md#addressing-several-people` adds anyone already addressed).
-- **Settled by B3b (2026-11-20):** the `vul` form of *walks, but not because of the night* denies the walking; both pages show it as the wrong option. The `thul` form denies only the link (`neg(cause(..))`), tested.
-- **P2:** the `verb-and-stance-joins.md` checkpoint item *Azozon runs, but not because of Alazun.* (`… thahum blalazun thul.` / `… vul thahum blalazun.`) puts a person after a because hinge, which `because-and-iff.md#choosing-a-hinge` forbids; `src/interpret/read.test.ts` still parses `zazozon gebem gahum blalazun.` (structure only, harmless).
+- **B4b:** if open decision 4 goes (a), B4b also makes `match()` compare the SHARED words (scale, factor, `-l` / `-m`) and pools `ratio(..)` for questions. B4b's R4c-5 marks the SHARED hook's `hookJob` frame (R4c finding 3).
+- **B6a:** k14 (`draft-holders.txt`, its only case, a topic-pronoun holder) is left only for `unit:linker`; R4d-1 clears it.
+- **B6b:** the period form of a hinge condition (`thohem blarl. zalazun vezuyol.`, `slot:grounds`) is left by every hinge row; decide whether R4d-8's stand-in row covers it, or report it for the edge. A `blarth` condition that points back to a denied sentence is left `noRow overlay:clause_hinge:th`.
+- **B6c:** R4e finding 5 (hg11).
 - **S1:** besides the changed-sections list, the R4b-4 sentence in `because-and-iff.md#choosing-a-hinge` says "holder", which that band teaches later, with no link.
-
-### Phase 4: contrary-to, MAY, universals, rank
-
-**B2b Contrary-to.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4b-9 to R4b-15 and R4a-6; R4b decision 3 (`uom thalom` / `uom thogem` zones) and R4e decision 3 (a zone over a hinge marks the link, replacing R4b-15's `zone(Id, Z)` fact). First fix the reader gap: a holder after `uom` leaves `noRow hookJob:zone` (`readHook` in `read.ts`; after `uom` the zone reads `contrary.inner = [holder{inner: [stance (member: "channel", holderHost)]}, intention?]`). The `hinge` × `contrary` pair row in `interpreter.md`: its second sample becomes the `blarth` form (D14, check `contrary-to.md` first) and its gloss *(the link goes against the plan)*.  
-**May edit:** as every build unit, plus `src/interpret/read.ts` (`readHook` zone only) and `docs/meta/interpreter.md` (the `hinge` × `contrary` row only).
-
-**B3a MAY over a clause.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4b-18 to R4b-24: MAY over members, whole-list denials, say words, universals and `always` (D13), *always* over MAY, `vaem vul`.
-
-**B3b MAY with hinges, holders and questions.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4b-25 to R4b-28 and R4e-6; R4b decision 1 (the *only if* half of a hinge over MAY is plain). D5, D6. Also the stance join that denies a *because* link ([carried from phase 3](#carried-from-phase-3)).
-
-**B3c Hinges on universals.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4b-16 and R4b-17 with R4e decision 2 (c): one template term plus a member conditional for each stated member, the per-member rules gated on it; the edge line changes as R4b-16 says. A denial of a universal's conditional (hg23) stays left.
-
-**B3d MAY choices (D18, D19).**  
-`proposal-worker`, `model: opus`, effort `high`.  
-D18 and D19, with item 20; my9 (`solve-maybe.txt`, D13) and my16 (`solve-maybe.txt`, R4b-26) change their `?~` verdicts to *yes*, with tests; the solver.md rows (17, 18) say so.
-
-**B4a Rank and ties.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4c-1 and R4c-2 (D17); R4c decisions 1 to 4 (reversed rank clashes, rank with a verb, rank of three or more, a tie with a factor as `ratio(..)`).
-
-**P2 A person after a *because* hinge.**  
-`checkpoint-writer`, `model: opus`, effort `high`.  
-Rewrite the `verb-and-stance-joins.md` checkpoint item *Azozon runs, but not because of Alazun.* so that what follows the hinge names an act or a thing about Alazun, not Alazun (`because-and-iff.md#choosing-a-hinge`; P1 used Alazun's support, `agobo`, in a `blarl` clause). Keep the item's two-option form: the `thul` join is the answer, and the `vul` form is the wrong option its note explains, as review item 16 does. Read `docs/meta/procedures/drill-generation.md` first.  
-**May edit:** that checkpoint item, and the drill allowlist if the procedure asks.
-
-**Order:** B2b, B3a, T1, B3b, B3c, B3d, B4a, P2.
+- **For the edge at the end** (no row; fold into [solver.md](../../meta/solver.md#the-edge) when the proposal closes, beside [Outside this proposal](#outside-this-proposal)):
+  - a question asked as said over a data wrap (answers unknown); `zul` / `zuam` under a leading say word; `awanx` (`LogEntry.addressees` holds only the turn's own calls, while `collectives.md#addressing-several-people` adds anyone already addressed)
+  - zones: a say-word zone with a universal, restrictor or hinge; `zuam` / `zul` with a zone; `huam` or listed exceptions with a zone; *only if* under a zone; a denied hinge with a zone; the fragment `uom hwudum` (`say-reasons.md`)
+  - MAY: `huam` under MAY; `hal` / `huam` over MAY; listed exceptions with MAY over a restrictor; open `zuam` and *no K* with no verb under MAY; MAY with a say word, universal or restrictor beside another frame; a carried holder with MAY beside a hinge; row 6's forward rule on a MAY condition reads `holds(neg(may(P)))`, which nothing produces
+  - universals: with MAY on the condition, a universal hinge's *only if* half has no back rule; hg23 (a denied universal hinge); bc36 (tag `zwar`, `slot:tag`)
+  - rank: a place on a scale (open decision 5); an open tie with a factor (`zoem`); a factor on a tie of three or with a verb; `zaol` with one name or a verb; any frame on a rank shape other than R1-8
+  - `zazozon guzemel vul.` reads `vul` as the verb *no*, not a denial of the adjective claim (B3c); check how the grammar denies an adjective predication before calling it a reader bug
 
 ### Phase 5: lists, links, fill; style
 
@@ -176,221 +140,19 @@ Full rules a subagent may open if the digest does not settle a question: [solver
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` after each unit, before its commit.
 - Final gate, at the end of phase 5: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
-- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; one consolidation commit at the end of phases 3 and 4. About 19 commits in all, the last deleting this proposal.
+- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 5 makes six unit commits and a last one deleting this proposal.
 
 ## Confirmed rows
 
-Drafted in phase 2 (units R4a to R4e) and confirmed by the user, 2026-11-19: every row as drafted, except R4b-15's zone over a hinge (the `zone(Id, Z)` fact), which R4e decision 3 replaces. Each row's **Fixtures** are in `src/interpret/fixtures/draft-*.txt` (`draft-holders`, `-because`, `-maybe`, `-lists`, `-fill`, `-links`, `-hinges`), with the verdict the row should give and the verdict before the build. [Settled decisions](#settled-decisions), at the end, are part of the rows they name; each unit's findings feed the unit that builds its rows ([Implementation plan](#implementation-plan) names it).
+Drafted in phase 2 (units R4a to R4e) and confirmed by the user, 2026-11-19; the rows phases 3 and 4 built are gone from here and live in [solver.md](../../meta/solver.md#translation-table). Each row's **Fixtures** are in `src/interpret/fixtures/draft-*.txt` (`draft-lists`, `-fill`, `-links`, `-hinges`), with the verdict the row should give and the verdict before the build. [Settled decisions](#settled-decisions), at the end, are part of the rows they name; each unit's findings feed the unit that builds its rows ([Implementation plan](#implementation-plan) names it).
 
 ### Outside this proposal
 
 Left groups the drafts met that are host policies or other subsystems: CAUSE `thewom` before a hinge, `/h/` hinges, sake words with MAY, `stimulus:g`, nested hinges.
 
-### R4a: holders, say words, the turn's addressees
-
-Fixtures: `src/interpret/fixtures/draft-holders.txt` (entries `k1`–`k52`; `k20` dropped). Probe files in the scratchpad: `r4a-probe.txt`, `r4a-probe2.txt`, `r4a-probe3.txt`. "Now" verdicts are from one probe run on 2026-11-19 at commit 0184a2d8.
-
-#### R4a-6: holder or channel after `uom`
-- **Kind:** copy (row 14's zone terms, now that the reader gives the zone's holder a party)
-- **Covers:** Holders, after-`uom` holders; `noRow hookJob:zone` (`zazozon vowurol uom theyomalazun thagom.`, `zazozon vowurol uom thebamalazun.`, `zamozal dobedol vagedal uom thebamahelan.`, `zamozal vagedal uom theyomahelan thagom.`; probe `holders-21`, `-22`, `-24`, `-25`). Also the channel zone with no holder (`uom thebam`), unbuilt for the same reason.
-- **Concludes:** row 14: `holds(T) :- on(Id).` and `holds(against(T, Z)) :- on(Id).` with `Z` = `plan(H)` (holder + PLAN; no holder, `plan(sp("…"))` as now) or `channel(Gloss, H)` (holder on a channel; no holder, `H` = the turn speaker `sp("…")`). Marker only, never a clash. `H` from `holder()` (R4a-4, R4a-5 for a topic or listener holder). Marks the zone frame, the holder frame and its host used. The `want` host after `uom` (`uom theyomazozon thalom`) stays out: row 14 lists no `want(..)` zone.
-- **Classification:** `hookJob:zone` (frame:contrary): no new row; its text already names the holder word after `uom` (`contrary-to.md#contrary-to-holder`).
-- **Anchor:** `contrary-to.md#contrary-to-holder`: "A plan or a channel after `uom` is yours, unless a holder word names someone else's" and "A holder on a channel after `uom` names whose view the event goes against. The holder covers only that pair: the event is still your claim."
-- **Fixtures:** k17, k18, k19 each, `? zazozon vowurol.` → yes (now: unknown, each left `hookJob:zone`).
-
-#### R4a findings
-
-- **Other holder hosts stay out.** Most `holder` readings in `left.tsv` are blocked by PLAN, WANT, decision, sake, mirative, NOTIONAL, a second channel or `edge:force` (`holders-2` … `holders-70`), not by the holder; they belong to those areas' rows.
-- **Carry-forward in fixtures.** A bare sentence after a holder sentence is the holder's view (`carry:holder`), so every "your claim" entry is placed before the holder entry.
-
-### R4b: because, contrary-to, MAY, hinges on universals
-
-Fixtures: `src/interpret/fixtures/draft-because.txt` (`bc1`–`bc40`), `src/interpret/fixtures/draft-maybe.txt` (`my1`–`my18`). Probe file: scratchpad `r4b-probe.txt` (labels match the fixture ids). "Now" verdicts are from one probe run on 2026-11-19 at commit 0184a2d8. Row numbers below are solver.md's translation table (1–17) and its *Holders*, *Because* and *MAY* lists (Holders 1–9, Because 10–14, MAY 15–21).
-
-#### R4b-9: contrary to, with MAY elsewhere in the clause
-- **Kind:** copy
-- **Covers:** `frameCombination` with `contrary:hookJob:zone … stance:overlay:may:th` (probe `because-34`).
-- **Concludes:** row 15 on T (`{ holds(T) }`, `holds(may(T))`) and `holds(against(T, Z)) :- holds(T), on(Id).`; a say-word zone's wrapped say word stays claimed. Marks MAY and the zone used.
-- **Classification:** `stance` × `contrary` pair row (commutes): no new row.
-- **Anchor:** `contrary-to.md#contrary-to-stance`: "A stance anywhere else in the clause still applies to the claim" (`zazozon vowurol uom thagom thomam.`, "Azozon may be walking, contrary to my plan.").
-- **Fixtures:** bc22 `?` → unknown, `?~` → yes (now: unknown, left).
-
-#### R4b-10: contrary to a holder's plan or view
-- **Kind:** copy (blocked by a reader gap, see Findings)
-- **Covers:** `noRow hookJob:zone` with `holder:xFamily:holder` after `uom` (probe `because-38`, `because-40`; 8 sweep readings).
-- **Concludes:** row 14 with `Z` = `plan(H)` or `channel(Gloss, H)`, H from Holders row 3; `holds(T)` stays your claim. Marks the zone, the holder and its channel used.
-- **Classification:** `holder` × `contrary` pair row ("A holder after `uom` is the contrary's own content"): no new row.
-- **Anchor:** `contrary-to.md#contrary-to-holder`: "The holder covers only that pair: the event is still your claim."
-- **Fixtures:** bc23, bc24 `? zazozon vowurol.` → yes (now: unknown, left `noRow hookJob:zone`).
-
-#### R4b-11: the channel zone
-- **Kind:** copy (row 14 already names `channel(Gloss, H)`)
-- **Covers:** `noRow hookJob:zone` with `stance:overlay:evidential:th` (probe `because-35`, `because-36`, `because-39`, `because-42`).
-- **Concludes:** `holds(T)` and `holds(against(T, channel(Gloss, sp("…"))))` (no holder: the turn speaker's); marker only, never a clash. Marks the zone and the channel frame used.
-- **Classification:** `hookJob:zone` (frame:contrary): no new row.
-- **Anchor:** `contrary-to.md#channel-zone`: "The pair names what the event goes against; the channel then says nothing about how you know the claim."
-- **Fixtures:** bc25 `? zazozon vowurol.` → yes (now: unknown, left).
-
-#### R4b-12: contrary to on a universal (binder first)
-- **Kind:** copy
-- **Covers:** `frameCombination` with `contrary:hookJob:zone` + `binder:joinSeries:ua`.
-- **Concludes:** row 8 and, per member, `holds(against(T[X], Z)) :- holds(isa(X, K)), on(Id).` Marks the zone and the binder used.
-- **Classification:** `binder` × `contrary` pair row: no new row.
-- **Anchor:** `usually-vs-must.md#how-things-work`: "It holds for *each* member or occasion, the same way the verb does." with `clause.md#which-covers-which` (text order).
-- **Fixtures:** bc26 + bc28 `? zazozon vowurol.` → yes (now: unknown, left).
-
-#### R4b-13: `uom` before a fence
-- **Kind:** decision D4
-- **Covers:** `uom thagom zual godozel vowurol.` (the `binder` × `contrary` pair row's first sample).
-- **Concludes:** the same per-member rule as R4b-12, `against(T[X], Z)`. Marks the zone and the binder used.
-- **Classification:** `binder` × `contrary` pair row: no new row.
-- **Anchor:** **Page sentence** for `contrary-to.md#contrary-to-stance`: "Before a fence (`uom thagom zual godozel vowurol.`), `uom` and its stance go with each member, as after it."
-- **Fixtures:** bc27 + bc28 `? zazozon vowurol.` → yes (now: unknown, left).
-
-#### R4b-14: contrary to with a bare restrictor
-- **Kind:** copy
-- **Covers:** `frameCombination` with `contrary:hookJob:zone` + `occasion:lexReading:restrictor`.
-- **Concludes:** row 15 (`hual`: `holds(T)` and `always(T)`; `hal`: `holds(neg(T))` and `never(T)`, with no `against`, since no event happens) plus `holds(against(T, Z))` and the marker `always(against(T, Z))` for `hual`. Marks the zone and the restrictor used.
-- **Classification:** `contrary` × `occasion` pair row: no new row.
-- **Anchor:** `restrictors.md#always-hual` with `clause.md#which-covers-which` (text order; `hual zazozon vowurol uom thagom.` is the pair row's second sample).
-- **Fixtures:** bc29 + bc16 clash (now: no clash, left).
-
-#### R4b-15: contrary to with a hinge
-- **Kind:** decision D14
-- **Covers:** `frameCombination` with `contrary:hookJob:zone` + `hinge:overlay:clause_hinge:th`, both orders.
-- **Concludes:** hinge over zone (hinge + `blarth` first): rows 5–7 with the outcome rule also giving `holds(against(Out, Z)) :- fits(c(Id), P), holds(P), on(Id).` Zone over hinge (`uom` first): rows 5–7 plus a fact outside `holds`, `zone(Id, Z)`, read only as said (the encoding has no term for a conditional). Marks the zone and the hinge used.
-- **Classification:** `hinge` × `contrary` pair row; its second sample changes to `zalazun vezuyol. thohem blarth zazozon vowurol uom thagom.` (if Alazun talks, Azozon walks contrary to plan), so the two samples follow its text-order rule. `contrary-to.md` teaches no hinge with `uom`, so nothing there conflicts.
-- **Anchor:** `stand-in-vowels.md#stand-in-back` (the hinge over a word is a hinge + `blarth` put first), quoted in the pair row.
-- **Fixtures:** bc30 `? zazozon vowurol.` → unknown (now: unknown, left); bc31 kept, data only (now: left).
-
-#### R4b-16: a universal hinge whose condition names the member
-- **Kind:** copy; changes the edge line "A hinge on a universal gets only the forward rule; its condition must not mention `X`"
-- **Covers:** `unused anaphor:content` (probe `because-4`, `because-44`; `-r` resume of the kind in the `blarl` sentence); `zwal` / `zwar` tags (probe `because-45`) once tags resolve.
-- **Concludes:** per member, with `c(Id, X)` / `o(Id, X)` slots whose `fits` facts are computed for each member X the log gives `isa(X, K)` for: `holds(T[X]) :- holds(isa(X, K)), fits(c(Id, X), P), holds(P), on(Id).` and back, `holds(neg(C[X])) :- holds(isa(X, K)), fits(P, o(Id, X)), holds(neg(P)), on(Id).` Marks the `anaphor:content` link used. New edge line: "A universal hinge's condition may name the member through a resume pronoun; the slots are built per stated member, so a member known only through `widen` gets no rule."
-- **Classification:** `binder` × `hinge` pair row: no new row.
-- **Anchor:** `usually-vs-must.md#how-things-work`: "Inside the sentence after `blarl`, resume the kind with `-r` (`zogozer`) to mean *that same one*: each cat, in turn."
-- **Fixtures:** bc32 + bc33 + bc34 `? zazozon vezuvel.` → yes; bc32 + bc33 + bc35 `? zazozon guzemel.` → no (now: unknown both, left `unused anaphor:content`); bc36 the same once `zwar` resolves (now: left `noRow overlay:clause_hinge:th`).
-
-#### R4b-17: a definition both ways
-- **Kind:** copy
-- **Covers:** `thehom` on a closed fence (`zual geyel gwozeduyol thehom blarl zeyer veduyol.`, probe `because-4`).
-- **Concludes:** R4b-16 with row 7 (both rules each way, per member): `holds(O[X]) :- isa, fits(c(Id, X), P), holds(P)` and `holds(C[X]) :- isa, fits(o(Id, X), P), holds(P)`, and the two denial rules. Marks the link and the hinge used.
-- **Classification:** `binder` × `hinge` pair row: no new row.
-- **Anchor:** `usually-vs-must.md#how-things-work`: "A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it."
-- **Fixtures:** bc37 + bc38 + bc39 `? zazozon gwozeduyol.` → yes; bc37 + bc38 + bc40 `? zazozon veduyol.` → yes (now: unknown both, left).
-
-#### R4b-18: MAY over members
-- **Kind:** copy (row 17's gate on row 11)
-- **Covers:** `frameCombination` from `(ctx.choice || mayOver) && claimMemberLists(..)`.
-- **Concludes:** `{ maybe(Id) }`; the list claim and each `holds(T[X]) :- member(ls(Id, z), X, G), maybe(Id), on(Id).`; `holds(may(T))` on the list term. Marks MAY and the member list used.
-- **Classification:** `stance` over `joinSeries:a`: no new row.
-- **Anchor:** `knowing.md#may`: "The sentence now says the leaving is possible, not that it happens".
-- **Fixtures:** my1 `?` → unknown, `?~` → yes (now: unknown both, left).
-
-#### R4b-19: MAY over a whole-list denial
-- **Kind:** copy
-- **Covers:** as R4b-18, with `joinSeries:u` over a closed list.
-- **Concludes:** row 4 (and row 21's `notone`) with `maybe(Id)` in each body, under the gate. Marks MAY and the denial list used.
-- **Classification:** `stance` × `polarity`: no new row.
-- **Anchor:** `knowing.md#may` (as R4b-18).
-- **Fixtures:** my2 + my3 no clash in the world without the guess (now: no clash, my2 left).
-
-#### R4b-20: MAY over a say word
-- **Kind:** copy
-- **Covers:** `frames.may && frames.say` (`thomam zazozon vowurol hwuvam.`, the `say` × `stance` pair row's second sample).
-- **Concludes:** row 15 on the wrapped term: `{ holds(say(..T)) }`, `holds(may(say(..T)))`; Holders rows 6–9 run inside the gate. Text order decides: `hwuvam … thomam` stays Holders row 5 with MAY inside (`say(.., may(T))`). Marks MAY and the say word used.
-- **Classification:** `say` × `stance` pair row: no new row.
-- **Anchor:** `knowing.md#may` with `clause.md#which-covers-which`.
-- **Fixtures:** my4 `?` → unknown, `?~` → yes (now: unknown both, left).
-
-#### R4b-21: MAY and a universal, both orders
-- **Kind:** copy
-- **Covers:** `frames.may && frames.universal`.
-- **Concludes:** MAY first: one gate `{ maybe(Id) }` over row 8 for the whole generalization (`holds(T[X]) :- holds(isa(X, K)), maybe(Id), on(Id).`). Binder first: per member `{ holds(T[X]) } :- holds(isa(X, K)), on(Id).` and `holds(may(T[X])) :- holds(isa(X, K)), on(Id).` Marks MAY and the binder used.
-- **Classification:** `binder` × `stance` pair row ("Text order for every member"): no new row.
-- **Anchor:** `usually-vs-must.md#how-things-work`: "*Maybe every cat sleeps* is [MAY](/knowing#may) on the same clause."
-- **Fixtures:** my5 + my7 and my6 + my7, `?` → unknown, `?~` → yes (now: unknown, left).
-
-#### R4b-22: MAY over *always*
-- **Kind:** copy
-- **Covers:** `frames.may && frames.restrictor`, MAY first.
-- **Concludes:** the gate over row 15: `holds(T) :- maybe(Id), on(Id).` and `always(T) :- maybe(Id), on(Id).`; `hal` the same with `neg` and `never`. Marks MAY and the restrictor used.
-- **Classification:** `stance` × `occasion` pair row (text order): no new row.
-- **Anchor:** `knowing.md#may` with `clause.md#which-covers-which`.
-- **Fixtures:** my8 + my10 no clash in the world without the guess (now: no clash, left).
-
-#### R4b-23: *always* over MAY
-- **Kind:** decision D13
-- **Covers:** `frames.may && frames.restrictor`, restrictor first (`hual zazozon vowurol thomam.`).
-- **Concludes:** `holds(may(T))`, the marker `always(may(T))`, and a new clash rule `clash(always(may(T))) :- always(may(T)), never(T).` (with its `fits` form). No clash with `holds(neg(T))`. Marks MAY and the restrictor used.
-- **Classification:** `stance` × `occasion` pair row: no new row.
-- **Anchor:** **Page sentence** for `restrictors.md#always-hual`: "`hual` before MAY (`hual zazozon vowurol thomam.`) says walking is possible on every occasion; it clashes with *never*, not with one *not*."
-- **Fixtures:** my9 + my10 clash (now: no clash, left); my9 + my11 no clash, `?~ zazozon vowurol.` → no (now: no clash, no).
-
-#### R4b-24: `vaem vul`
-- **Kind:** copy (row 21 as `vael vul`)
-- **Covers:** `noRow joinSeries:u` on a closed `aem` list.
-- **Concludes:** each item denied, `holds(neg(T[k])) :- on(Id).` Marks the denial and the list used.
-- **Classification:** `joinSeries:u` over a closed `ae` list: no new row.
-- **Anchor:** `set-joins.md#exclusivity-and-denying-a-whole-list`: "On `ae`, even `-m` still needs at least one of the listed items." and "this is single-item *not X* with the whole list as X". Denying *at least one* is *none*, as for `vael vul`.
-- **Fixtures:** my12 + my13 clash; my12 `? zazozon veruvol.` → no (now: no clash, unknown, left).
-
-#### R4b-25: only-if and iff with MAY on the condition
-- **Kind:** decision D5
-- **Covers:** `noRow overlay:clause_hinge:th` for `thebem` / `thehom` with a MAY `blarl` sentence.
-- **Concludes:** row 18 (`may(T)` in the body, `holds(may(T)) :- holds(T), on(Id).` inside the hinge) with rows 6 and 7; the back rule gives `holds(may(T))`. Marks the link, the hinge and MAY used.
-- **Classification:** `overlay:clause_hinge:th` over a nested `overlay:may:th`: no new row.
-- **Anchor:** `causation.md#if`: "MAY inside the condition makes the condition a chance" (row 18), extended by D5.
-- **Fixtures:** my14 + my13 and my15 + my13, `? zalazun vezuvel.` → unknown, `?~` → yes (now: unknown, left).
-
-#### R4b-26: only-if and iff over MAY
-- **Kind:** decision D5
-- **Covers:** hinge + `blarth` first, then MAY, for `thebem` / `thehom`.
-- **Concludes:** no backward rule; the forward rules only, as row 17 for *if*: `thehom`'s *if* half as the choice `{ holds(Out) } :- fits(c(Id), P), holds(P), on(Id).`; the *only if* half, see Open decisions 1. Marks the stand-in link, the hinge and MAY used.
-- **Classification:** `hinge` × `stance` pair row: no new row.
-- **Anchor:** solver.md row 17 (`causation.md#if`), extended by D5.
-- **Fixtures:** my16 `?` → unknown, `?~` → yes (now: unknown, t:0.1 left).
-
-#### R4b-27: a carried holder on a MAY sentence
-- **Kind:** decision D6
-- **Covers:** `frameCombination` from `frames.may && !frames.holder` under a carried wrap.
-- **Concludes:** `holds(view(H, may(T))) :- on(Id).` (`Wrap.may`), as MAY row 16's own MAY. Marks MAY and the `carry:holder` link used.
-- **Classification:** `carry:holder` link + `overlay:may:th`: no new row.
-- **Anchor:** `holder.md#naming-a-holder` (holder table: MAY is the holder's).
-- **Fixtures:** my17 `? zalazun vezuvel.` → unknown (now: unknown, t:0.1 left).
-
-#### R4b-28: a MAY question
-- **Kind:** decision D6
-- **Covers:** `edge:force` + `stance:overlay:may:th` questions (probe `because-16`–`because-18`; `left q noRow overlay:may:th`).
-- **Concludes:** the question without MAY, run as `couldBe` whichever job is called; the answer names the switch. Marks the question's MAY used.
-- **Classification:** `overlay:may:th` in a question: no new row.
-- **Anchor:** **Page sentence** for `knowing.md#may`: "A question with MAY (`yel zazozon vabuvul thomal dalazun.`) asks whether it could be so."
-- **Fixtures:** my18, `? yel zazozon vabuvul thomal dalazun.` → yes (now: beyond).
-
-#### R4b findings
-
-- **Reader gap (R4b-10):** `uom thebamalazun` and `uom theyomalazun thagom` still leave `noRow hookJob:zone`; solver.md's edge says the holder frame after `uom` carries no party and no channel gloss (`readHook` in `read.ts`). R4b-10 needs that reader fix first.
-- **Outside my area, large in the sweep:** `overlay:cause:th` (CAUSE `thewom` before a hinge, 40 readings, including the page's own `zual gogozel vezuvel thewom thohem blarl zogozer guzemel.`), `overlay:clause_hinge:h` (19), `lexReading:sake` with MAY (22), `overlay:stimulus:g` (12+), nested hinges in `nested-dependents.md` (`thahum blarl … thahum blarl`), and `overlay:phasal:th` under MAY. The tag `zwal` / `zwar` (R4b-16's bc36) needs tag resolution, `slot:tag` unused.
-
 ### R4c drafts: lists, stance numbers, the fill job
 
 Fixtures: `src/interpret/fixtures/draft-lists.txt` (l1–l10, n1–n4), `src/interpret/fixtures/draft-fill.txt` (f1–f10). Probe: scratchpad `r4c-probe.txt` / `r4c-probe.out`. Rank with two names already translates (`holds(more(dt("slot:adj","gamahum"), azozo, alazu))`), so it is not drafted; only its open edges are (Open decisions 1–3).
-
-#### R4c-1: Superlative, one name before `zol`
-- **Kind:** copy
-- **Covers:** `unused shared:scale` with one item before the rank join (lists-10, lists-11, lists-15; `zahelan zol wrogel gelazem.` with a degree too)
-- **Concludes:** `holds(most(S, A)) :- on(Id).`, S the shared scale as `more` already writes it (`dt(Key, Word)`), A the one item; data, answered only as said (as row 17). A `/w/` degree before the scale goes to `Translation.notes`. Marks the `shared:scale` link used.
-- **Classification:** `shared:scale` (link): add "one item before `o`: the superlative, `most(S, A)`".
-- **Anchor:** `comparatives.md#superlatives`: "One name before `zol`, then the same shared adjective, means that person ranks highest in the group you have in mind."
-- **Fixtures:** l1: `? yel zahelan zol guzemel.` → yes (now: beyond, `unused shared:scale`)
-
-#### R4c-2: `oe` tie
-- **Kind:** decision D17
-- **Covers:** `unused shared:equative` (31 readings; lists-12, lists-13, lists-14, lists-38)
-- **Concludes:** for each ordered pair of members A ≠ B, `holds(tie(S, A, B, E)) :- on(Id).` (E `l` for `zoel`, `m` for `zoem`), so three or more are tied pairwise and the tie is symmetric. No `isa(X, K)` for any member. Closed only: generic `clash(tie(S, A, B, l)) :- holds(tie(S, A, B, l)), holds(more(S, A, B)).` (the reversed `more` meets the reversed tie fact). With a verb, row 11's `holds(T[X]) :- member(ls(Id, z), X, G), on(Id).` per member, and the tie on the `/h/` scale. Marks the `shared:equative` link and the `oe` list used.
-- **Classification:** `joinSeries:oe` (structure) + `shared:equative` (link): add "a tie, `tie(S, A, B, E)` per ordered pair; closed `-l` clashes with rank `o` on the same scale; with a verb each member's act holds (D17)".
-- **Anchor:** `comparatives.md#equatives`: "you say two people have the quality to the same degree instead of picking a winner"; "*both are challenging* is an *and*-list plus a shared adjective … It does not rank them or say they match." D17 for the clash, `zoem` and the verb. **Page sentence** for `comparatives.md#equatives`: "A tie does not say either one has the quality: `zazozon zalazun zoel gamahum` can be two people who are both hardly challenging. With a verb, each one does it: `zazozon zalazun zoel hahunom vowurol` is *Azozon walks as intensely as Alazun*, and both walk."
-- **Fixtures:** l2: `? yel zalazun zazozon zoel gamahum.` → yes (now: beyond); `? yel zazozon gamahum.` → unknown (now: unknown). l2 + l3: clash `tie` / `more` (now: no clash, l2 left). l4 + l3: no clash (now: no clash, l4 left). l5: `? yel zazozon vowurol.` → yes (now: unknown). l6: `? yel zalazun zahelan zoel gamahum.` → yes (now: beyond)
 
 #### R4c-3: `ue` denies each listed item
 - **Kind:** decision D7
@@ -584,15 +346,7 @@ Fixtures: `src/interpret/fixtures/draft-links.txt` (`lk1` to `lk41`). Probe file
 
 ### R4e: a term for the conditional
 
-Added by the user, 2026-11-19, from R4b's open decision 2. Fixtures: `src/interpret/fixtures/draft-hinges.txt` (hg1 to hg23). R4b-1's `/ɡ/` outcome follows R4e-7 (the settled existence outcome), not a bare kind.
-
-#### R4e-6: MAY with a hinge
-- **Kind:** copy (rows 15, 17, 18) and decision D5 (R4b-25, R4b-26)
-- **Covers:** rows 17 and 18 as built, now with the term; D5's only-if and iff rows.
-- **Concludes:** MAY over a hinge is row 15 on the term: `{ holds(if(c(Id),o(Id))) } :- on(Id).` and `holds(may(if(c(Id),o(Id)))) :- on(Id).`; the `maybe(Id)` gate goes for hinges (it stays for *or* lists), since the rules already wait on the term. A hinge over MAY is `if(c(Id), may(o(Id)))`, held plainly, with row 17's choice `{ holds(Out) } :- holds(if(c(Id),may(o(Id)))), fits(c(Id),P), holds(P).` and no back rule. MAY on the condition is `if(may(c(Id)), o(Id))` with row 18's body. D5: `onlyif` / `iff` take the same wrappers (R4b-25 condition, R4b-26 outcome). The wrappers keep "if A, maybe B" from meeting "if A, B" (R4e-2 (2)).
-- **Classification:** no new row.
-- **Anchor:** `causation.md#if`: "To make the outcome only a guess …, put MAY first … you claim neither the walking nor the sitting, only that the sitting could follow from the walking"; "MAY inside the condition makes the condition a chance".
-- **Fixtures:** hg16 + hg2 `? zalazun vehohel.` → unknown, `?~` → yes (now: the same, through the gate); hg16 + hg8: no clash in some world (now: hg8 left).
+Added by the user, 2026-11-19. Its built rows live in [solver.md](../../meta/solver.md#translation-table); `draft-hinges.txt` keeps hg11 (B6c) and hg23 (left).
 
 #### R4e findings
 
@@ -605,20 +359,10 @@ Finding 3 stands as built: rules per reading, the term in each body; pick a gene
 
 The user adopted every recommendation below, 2026-11-19, with these notes:
 - **R4c 6:** (a), with the page's wording raising it to high (`evidentiality.md#evidence-clause`: "You state the claim, the strength of your grounds, and the grounds themselves"). `grounds(E, C)` stays apart from `cause`.
-- **R4e 3:** (b), medium: the zone before a hinge covers the whole link, `holds(against(if(c(Id),o(Id)), Z)) :- on(Id).`, a marker with no clash; the page sentence goes on `contrary-to.md`, and the `hinge` × `contrary` pair-table gloss becomes *(the link goes against the plan)*. Every R4e recommendation is adopted; decisions 1 and 4 are built (phase 3).
 - **R4d O-4:** (a). `yaor` claims in the shared pool, with *for now* and the speaker in the notes. The pool has no per-speaker claims; a per-speaker layer (`said(Speaker, T)`, with `holds(T) :- said(_, T)`) waits for the group-views host policy, and `yaor` and the polar answers (R4d-2) are its first users.
-
-#### R4b decisions
-
-1. **The *only if* half of a hinge over MAY** (`zalazun vezuvel vul. thebem blarth thomam zazozon vowurol.`: without the sleeping, could Azozon walk?). Options: (a) plain, `holds(neg(Out)) :- fits(P, c(Id)), holds(neg(P))`: without the condition the outcome is not even possible; (b) a choice, as row 17's *if*; (c) no rule. **Recommendation:** **(medium)** (a): *only then may Azozon walk* rules the walking out without the condition, and (b) would let a learner's *no* answer read as *maybe*. Settled by the user reading the English.
-3. **Zones `uom thalom` (want) and `uom thogem` (decision)** (`zazozon vowurol uom thalom.`, 15 sweep readings with `intention:overlay:want:th` / `:decision:th`): row 14 lists only plan, channel and say. Options: (a) `Z` = `want(H)` / `decision(H)`, marker only, as `plan(H)`; (b) leave them. **Recommendation:** **(high)** (a): `contrary-to.md#contrary-to-stance` lets any intention adverb follow `uom`, the same shape as plan.
 
 #### R4c decisions
 
-1. **Reversed rank.** `zazozon zalazun zol gamahum. zalazun zazozon zol gamahum.` gives no clash now (probe L1r). Options: (a) `clash(more(S, B, A)) :- holds(more(S, A, B)), holds(more(S, B, A)).`; (b) data only. **Recommendation:** **(high)** (a): `comparatives.md#comparatives` says "The first name sits higher on that quality than the second", and D17 already treats rank as strict when it clashes with a tie.
-2. **Rank with a verb.** `zazozon zahelan zol hahunom velunel.` (`unused shared:scale`): does each member's act hold? Options: (a) as D17 for ties, each member's act holds plus `more(S, A, B)`; (b) only `more`. **Recommendation:** **(medium)** (a): *runs faster than* is said of two runners, and it keeps `o` and `oe` alike; settled by a sentence on `comparatives.md` about `/h/` scales.
-3. **Rank of three or more** (`zazozon zalazun zahelan zol gamahum`, also `zaol`, `zom`, and `zol … zul`): Options: (a) `more(S, Xi, Xj)` for each i < j in text order; (b) only first over the rest. **Recommendation:** **(medium)** (a) for `zol`; `zaol` (sorted low to high, `list-structure.md#shared-after-the-join`) reversed; `zom` and a denied rank wait. Settled by `rank-joins.md`'s wording for three items.
-4. **A tie with a factor** (`zazozon zalazun zoel gelazem hradol.`, `zogozelx zodozelx zoel gral`): a factor makes it not a tie. Options: (a) data `ratio(S, A, B, V)`, no tie, no clash; (b) leave left. **Recommendation:** **(medium)** (a), since the page reads it as *N times as*; D17 does not cover it.
 5. **Verbless lists** (`zobudal zuel.`, `zobonol zabewol zen.`, `zugowal zagorol zomobul zer.`, `zahelan der vagedal.` has a verb but `…er` with no items): no claim term. Options: (a) a fragment stays left with its own reason (`fragment`), later read as a reply to a fill question; (b) existence (`isa`) per item. **Recommendation:** **(medium)** (a): the pages give these as offers and names, not claims (`rank-joins.md`: "The invert `ue` offers a free choice outside the list"). Statement `…er` (*eats anything*) needs its own decision: likely an open universal (row 10), low.
 6. **Evidence clause** (`zalazun vabuvul theyom blarl zazozon vozumul.`, lists-31, lists-33; standalone `theyom blarl`, lists-19 to lists-21): is the grounds sentence also your claim, and what joins them? Options: (a) both row 1, plus data `grounds(E, C)`; (b) only the claim. **Recommendation:** **(low)** (a); settled by the wording of `evidentiality.md#evidence-clause`, not read in this unit.
 7. **`…ur` and `…or` fill questions, and a blank inside `derl` / `darl`.** D10 does not cover them. Options: `…ur` excludes the listed items and items already named in the turn; `…or` fills from `most` / `more`; a `darl` blank fills through `say` / `view`; or `beyond` until decided. **Recommendation:** **(medium)** `beyond` for now, then `…ur` as the listed-blank complement, which the arity table states ("*Other than these?*").
@@ -637,11 +381,6 @@ The user adopted every recommendation below, 2026-11-19, with these notes:
 **O-5: what does taking up or rejecting an option give?** `yael` / `yaem` / `yaer`, `yuel` / `yuem` / `yuer` after an offer or an *or* question. Options: (a) notes only, as R4d-3; (b) on an *or* list question, `yael` claims the offered item and `yuel` denies it. **Recommendation:** **(medium)** (a): accepting an offer is a turn act, not a claim about the world, and "this option" names no item the reader can pick.
 
 **O-6: NOTIONAL and what it carries.** `zazozon theyum vowurol. zazozon vehohel.` leaves `noRow overlay:notional:th` then `unused carry:notional`. Page: "The sentence now describes an imagined scene and makes no claim that it happens"; "The supposition carries, so every step after it stays supposed". Options: (a) a wrap like a view, `holds(view(notional, T))` (ending in notes), carried readings the same, inference inside it as holder rule 4, never `holds(T)`; (b) left `beyond`. **Recommendation:** **(medium)** (a): it keeps a supposition's steps checkable for clashes, as `notional.md` reasons from one, and never leaks into your claims.
-
-#### R4e decisions
-
-2. **Hinges on universals** (`zual gogozel vezuvel thohem blarl zogozer guzemel.`, *every cat sleeps if it is sleepy*; R4b-16, R4b-17; a denial, hg23). Options: (a) rules as now, no term: the universal's conditional cannot be denied or asked; (b) one template term `if(c(Id),o(Id))` claimed once, with R4b-16's per-member rules gated on it; (c) (b) plus a member term `holds(if(c(Id,X),o(Id,X))) :- holds(if(c(Id),o(Id))), holds(isa(X,K)).` per stated member, with the per-member rules gated on that and R4e-2's fits over the `c(Id,X)` / `o(Id,X)` slots. **Recommendation:** **(medium)** (c): a question or denial about one cat's conditional (`zazozon vezuvel thohem blarl zazozon guzemel.`) then meets the universal, as a plain question meets row 8's instances. Settled by whether hg23's denial reads "not every cat" or "every cat, not if", which `universals-domains.md` does not say; until then hg23 stays left.
-3. **D14's zone over a hinge** (`uom thagom zazozon vowurol thohem blarl. zalazun vezuyol.`). D14 made it data for want of the term. Options: (a) stay data (left); (b) the conditional is still your claim, R4e-1's term and rules, plus `holds(against(if(c(Id),o(Id)), Z)) :- on(Id).`, a marker with no clash, as row 14 does for a plain claim; (c) `against` on the condition, as the pair-table reading gloss says "(the condition goes against the plan)". **Recommendation:** **(low)** (b): row 14's "the event is still your claim" carries over once the conditional is a claim, and a plan goes against events, not against a condition left unclaimed. Settled by `contrary-to.md` saying what a zone before a hinge covers; the pair-table gloss for (c) has no page sentence behind it.
 
 ## Open decisions
 
