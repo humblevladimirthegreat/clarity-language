@@ -1,7 +1,7 @@
 /**
  * Vocabulary flashcard decks for Anki (`vocab-flashcards.md`).
  *
- * Run: npm run flashcards                         every v1 pack: tmp/out/flashcards/ageben-<pack>.apkg and .tsv
+ * Run: npm run flashcards                         every pack: tmp/out/flashcards/ageben-<pack>.apkg (and claritish.apkg) and .tsv
  *      npm run flashcards -- --pack core,sakes    only these packs (core, sakes, everything, claritish)
  *                                                 claritish: tmp/out/flashcards/claritish.apkg and .tsv, Claritish note type
  *      npm run flashcards -- --out <dir>          another output directory
@@ -25,9 +25,7 @@ const LEXICON_MODEL = "Ageben lexicon";
 type Options ={ packs: PackId[]; out: string; tsvOnly: boolean };
 
 function parseArgs(argv: string[]): Options {
-  // claritish joins the default once flashcards-package.py builds the Claritish note type; until
-  // then it is written only on --pack claritish (the build runs the default).
-  const options: Options = { packs: PACK_IDS.filter((p) => p !== "claritish"), out: tmpPath("out", "flashcards"), tsvOnly: false };
+  const options: Options = { packs: [...PACK_IDS], out: tmpPath("out", "flashcards"), tsvOnly: false };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]!;
     if (arg === "--tsv-only") options.tsvOnly = true;

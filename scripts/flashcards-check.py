@@ -5,12 +5,15 @@ Run through npm run flashcards; by hand: .venv/bin/python scripts/flashcards-che
 
 Uses Anki's own backend (the `anki` package from requirements.txt), so it checks what a learner's
 import does: the note type arrives, nothing conflicts, overlapping packs share notes, every card
-renders a non-blank question and answer, and a second import adds nothing.
+renders a non-blank question and answer, and a second import adds nothing. For a Claritish pack it
+then imports a build with one note dropped and checks that the release search finds exactly that note.
 """
 
+import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 import tempfile
 
@@ -18,10 +21,41 @@ from anki.collection import Collection, ImportAnkiPackageOptions, ImportAnkiPack
 from anki.import_export_pb2 import ImportAnkiPackageUpdateCondition
 
 IF_NEWER = ImportAnkiPackageUpdateCondition.IMPORT_ANKI_PACKAGE_UPDATE_CONDITION_IF_NEWER
+ALWAYS = ImportAnkiPackageUpdateCondition.IMPORT_ANKI_PACKAGE_UPDATE_CONDITION_ALWAYS
+
+# Cards per note, by the pack JSON's `model` (flashcards-package.py builds the templates).
+TEMPLATES = {"Ageben lexicon": 2, "Claritish": 1}
+RELEASE_TAG = "claritish::release::"
 
 
 def visible(html: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"<style>.*?</style>|<[^>]+>", " ", html, flags=re.S)).strip()
+
+
+def release_id(decks: list[dict]) -> str:
+    """The release id src/flashcards-claritish.ts computes: a hash of the note list without tags."""
+    body = [[d["name"], d["id"], [[n["guid"], n["fields"]] for n in d["notes"]]] for d in decks]
+    text = json.dumps(body, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:8]
+
+
+def drop_one(path: str, work: str) -> tuple[str, str, str]:
+    """Write and package a copy of a Claritish pack with its last note dropped and the release
+    tags recomputed. Returns the copy's JSON path, the dropped GUID, and the new release id."""
+    with open(path, encoding="utf-8") as f:
+        pack = json.load(f)
+    deck = max(pack["decks"], key=lambda d: len(d["notes"]))
+    dropped = deck["notes"].pop()["guid"]
+    rid = release_id(pack["decks"])
+    for d in pack["decks"]:
+        for n in d["notes"]:
+            n["tags"] = [t for t in n["tags"] if not t.startswith(RELEASE_TAG)] + [RELEASE_TAG + rid]
+    out = os.path.join(work, "dropped.json")
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(pack, f, ensure_ascii=False)
+    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "flashcards-package.py")
+    subprocess.run([sys.executable, script, out, re.sub(r"\.json$", ".apkg", out)], check=True)
+    return out, dropped, rid
 
 
 def main() -> None:
@@ -29,20 +63,28 @@ def main() -> None:
     if not packs:
         sys.exit("usage: flashcards-check.py <pack.json> [...]")
     problems: list[str] = []
-    guids: set[str] = set()
+    guids: dict[str, set[str]] = {model: set() for model in TEMPLATES}
     decks: set[str] = set()
+    claritish: list[str] = []
     for path in packs:
         with open(path, encoding="utf-8") as f:
-            for d in json.load(f)["decks"]:
-                decks.add(d["name"])
-                guids.update(n["guid"] for n in d["notes"])
+            pack = json.load(f)
+        if pack.get("model") not in TEMPLATES:
+            sys.exit(f"{path}: unknown note type {pack.get('model')!r}")
+        if pack["model"] == "Claritish":
+            claritish.append(path)
+        for d in pack["decks"]:
+            decks.add(d["name"])
+            guids[pack["model"]].update(n["guid"] for n in d["notes"])
+    notes = sum(len(g) for g in guids.values())
+    want_cards = sum(TEMPLATES[m] * len(g) for m, g in guids.items())
 
     with tempfile.TemporaryDirectory() as work:
         col = Collection(os.path.join(work, "check.anki2"))
 
-        def load(path: str, again: bool) -> None:
+        def load(path: str, again: bool, update=IF_NEWER) -> None:
             apkg = re.sub(r"\.json$", ".apkg", path)
-            options = ImportAnkiPackageOptions(update_notes=IF_NEWER, update_notetypes=IF_NEWER)
+            options = ImportAnkiPackageOptions(update_notes=update, update_notetypes=update)
             log = col.import_anki_package(ImportAnkiPackageRequest(package_path=apkg, options=options)).log
             name = os.path.basename(apkg)
             for field in ("conflicting", "first_field_match", "missing_notetype", "missing_deck", "empty_first_field"):
@@ -56,28 +98,41 @@ def main() -> None:
         for path in packs:
             load(path, again=True)
 
-        if col.note_count() != len(guids):
-            problems.append(f"{col.note_count()} notes in the collection, {len(guids)} distinct GUIDs in the packs")
-        if col.card_count() != 2 * len(guids):
-            problems.append(f"{col.card_count()} cards for {len(guids)} notes; want two per note")
+        if col.note_count() != notes:
+            problems.append(f"{col.note_count()} notes in the collection, {notes} distinct GUIDs in the packs")
+        if col.card_count() != want_cards:
+            problems.append(f"{col.card_count()} cards for {notes} notes; want {want_cards}")
         missing = decks - {d.name for d in col.decks.all_names_and_ids()}
         if missing:
             problems.append(f"decks not created: {', '.join(sorted(missing))}")
-        cards = col.find_cards('"note:Ageben lexicon"')
-        if len(cards) != 2 * len(guids):
-            problems.append(f"{len(cards)} Ageben lexicon cards found to render; want {2 * len(guids)}")
-        for cid in cards:
-            card = col.get_card(cid)
-            q, a = visible(card.question()), visible(card.answer())
-            if not q or not a or "{{" in q + a or "front of this card is blank" in q.lower():
-                problems.append(f"{card.note()['front']} {card.template()['name']}: bad render: {q[:60]!r}")
+        for model, per_note in TEMPLATES.items():
+            cards = col.find_cards(f'"note:{model}"')
+            if len(cards) != per_note * len(guids[model]):
+                problems.append(f"{len(cards)} {model} cards found to render; want {per_note * len(guids[model])}")
+            for cid in cards:
+                card = col.get_card(cid)
+                q, a = visible(card.question()), visible(card.answer())
+                if not q or not a or "{{" in q + a or "front of this card is blank" in q.lower():
+                    problems.append(f"{card.note()['front']} {card.template()['name']}: bad render: {q[:60]!r}")
+
+        # The update a learner makes: import a build that drops a note, then search for notes
+        # outside the new release. ALWAYS, since both builds may carry the same modified time.
+        released = ""
+        for path in claritish:
+            out, dropped, rid = drop_one(path, work)
+            load(out, again=False, update=ALWAYS)
+            stale = col.find_notes(f'"deck:Claritish*" -tag:{RELEASE_TAG}{rid}')
+            found = [col.get_note(nid).guid for nid in stale]
+            if found != [dropped]:
+                problems.append(f"release search after dropping {dropped} found {found[:5]} ({len(found)} note(s))")
+            released = ", release search finds the dropped note"
         col.close()
 
     for p in problems[:40]:
         print(f"  {p}", file=sys.stderr)
     if problems:
         sys.exit(f"Anki import check failed: {len(problems)} problem(s)")
-    print(f"Anki import check: {len(guids)} notes, {2 * len(guids)} cards, {len(decks)} decks")
+    print(f"Anki import check: {notes} notes, {want_cards} cards, {len(decks)} decks{released}")
 
 
 if __name__ == "__main__":

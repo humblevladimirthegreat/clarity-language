@@ -2,7 +2,8 @@
 
 Run through npm run flashcards; by hand: .venv/bin/python scripts/flashcards-package.py <pack.json> <out.apkg>
 
-The note type and its ids are fixed constants so a re-import updates notes and keeps review
+The pack JSON's `model` names the note type: "Ageben lexicon" (v1 packs) or "Claritish".
+Each note type and its ids are fixed constants so a re-import updates notes and keeps review
 history; note GUIDs and deck ids come from the JSON, where they derive from stable keys.
 """
 
@@ -13,6 +14,7 @@ import sys
 import genanki
 
 MODEL_ID = 1738204517
+CLARITISH_MODEL_ID = 1738204518
 FIELDS = ["front", "concrete", "abstract", "aliases", "parts", "mnemonic", "kind"]
 
 # Overlays (kind set) lead with the definition; roots and compounds show labeled concrete,
@@ -47,7 +49,7 @@ CSS = """
 .mnemonic { margin-top: 0.8em; font-size: 14px; font-style: italic; opacity: 0.6; }
 """
 
-MODEL = genanki.Model(
+LEXICON_MODEL = genanki.Model(
     MODEL_ID,
     "Ageben lexicon",
     fields=[{"name": f} for f in FIELDS],
@@ -67,14 +69,47 @@ MODEL = genanki.Model(
     sort_field_index=0,
 )
 
+# Claritish: the form on the front; the meaning (HTML from the cheat sheet) and a small, muted
+# lesson line on the back. One template; the Ageben packs never share these notes.
+CLARITISH_CSS = CSS + """
+.meaning { display: inline-block; text-align: left; margin: 0.25em 0; }
+.lesson { margin-top: 1em; font-size: 13px; opacity: 0.55; }
+"""
+
+CLARITISH_MODEL = genanki.Model(
+    CLARITISH_MODEL_ID,
+    "Claritish",
+    fields=[{"name": f} for f in ["front", "meaning", "lesson"]],
+    templates=[
+        {
+            "name": "Recognition",
+            "qfmt": STEM,
+            "afmt": '{{FrontSide}}<hr id="answer"><div class="meaning">{{meaning}}</div>'
+            + '{{#lesson}}<div class="lesson">{{lesson}}</div>{{/lesson}}',
+        },
+    ],
+    css=CLARITISH_CSS,
+    sort_field_index=0,
+)
+
+# Note type by the JSON's `model`, with the fields that already hold HTML (never escaped).
+MODELS = {
+    "Ageben lexicon": (LEXICON_MODEL, set()),
+    "Claritish": (CLARITISH_MODEL, {"meaning"}),
+}
+
 
 def main() -> None:
     if len(sys.argv) != 3:
         sys.exit("usage: flashcards-package.py <pack.json> <out.apkg>")
     with open(sys.argv[1], encoding="utf-8") as f:
         pack = json.load(f)
-    if pack["fields"] != FIELDS:
-        sys.exit(f"field mismatch: JSON has {pack['fields']}, note type has {FIELDS}")
+    if pack.get("model") not in MODELS:
+        sys.exit(f"unknown note type {pack.get('model')!r}; use {', '.join(MODELS)}")
+    model, html_fields = MODELS[pack["model"]]
+    names = [f["name"] for f in model.fields]
+    if pack["fields"] != names:
+        sys.exit(f"field mismatch: JSON has {pack['fields']}, note type {model.name} has {names}")
 
     decks = []
     due = 0
@@ -84,8 +119,8 @@ def main() -> None:
             # Due keeps new cards in pack order: checkpoint order, then CSV order.
             deck.add_note(
                 genanki.Note(
-                    model=MODEL,
-                    fields=[html.escape(v, quote=False) for v in n["fields"]],
+                    model=model,
+                    fields=[v if name in html_fields else html.escape(v, quote=False) for name, v in zip(names, n["fields"])],
                     tags=n["tags"],
                     guid=n["guid"],
                     due=due,
