@@ -2,7 +2,8 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { clashes, couldBe, follows, type Answer, type ClashResult, type SolveOptions } from "./solve.js";
-import { ownProgram, translate, type LeftOut } from "./translate.js";
+import { ownProgram, translate } from "./translate.js";
+import type { LeftOut } from "./translate-types.js";
 
 /** A question in a case: asked with `follows`, or `couldBe` (`?~`, or `?` under `--possible`). */
 export type ProbeQuestion = { text: string; job: "follows" | "couldBe"; line: number };

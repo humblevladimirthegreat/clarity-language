@@ -14,7 +14,7 @@ import { formatProbe, parseProbe, probeJson, runProbeCase, type ProgramView } fr
 import { readText } from "./read.js";
 import { cannotSayDraft, clashReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
 import { clashes, couldBe, follows, giveUp, stands, type Answer, type Clash, type GiveUpResult, type Semantics, type SolveOptions, type StandsResult } from "./solve.js";
-import type { LeftOut } from "./translate.js";
+import type { LeftOut } from "./translate-types.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
 const USAGE = [
