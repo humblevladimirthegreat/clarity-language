@@ -863,12 +863,13 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
  * Whose view a holder seam word gives (holder.md#naming-a-holder). The word ends the way a noun for that person would:
  * the topic pronoun is whoever the talk is about now, so it carries the topic it is bound to (topic.md#topic-pronoun);
  * the listener is the listener term, as `zawan` is in a role; `-n` is a name, marked named as the same name in a role
- * is; and `-r` is "someone already named", read as the name it resumes.
+ * is; and `-r` is "someone already named", a pronoun with the resolver's antecedent (a name with none bound).
  */
 function holderParty(word: LexWord, here: Here): Term | undefined {
   const family = word.family;
   if (family.kind !== "x" || !family.rightRoots?.length) return undefined;
-  if (here.ctx.anaphors.get(word)?.kind === "topic") return pronoun(word, here);
+  const bind = here.ctx.anaphors.get(word)?.kind;
+  if (bind === "topic" || (word.ending === "r" && bind === "content")) return pronoun(word, here);
   if (word.ending === "n" && family.rightRoots.length === 1 && family.rightRoots[0] === CLOSED.headphones) return { kind: "listener", word };
   const named = word.ending === "n" || word.ending === "ln" || word.ending === "r";
   return { kind: "thing", head: word, root: family.rightRoots.join(""), named, details: [] };

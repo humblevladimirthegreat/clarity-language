@@ -25,7 +25,7 @@ import clingo from "clingo-wasm";
 import type { Log } from "./log.js";
 import { match, type TermSite } from "./match.js";
 import type { StepLexicon } from "./steps.js";
-import { detailRange, inRange, translate, unwrapText, type LeftOut, type Translation } from "./translate.js";
+import { detailRange, inRange, sayOf, translate, unwrapText, type LeftOut, type Translation } from "./translate.js";
 import type { Claim, Detail, Reading, Term } from "./types.js";
 import { detailNumber, wordValue } from "./value.js";
 
@@ -234,12 +234,24 @@ function explain(model: Model, start: readonly string[], ctx: Context): { becaus
   return { because, switches: (["widen", "defaults", "closedWorld"] as const).filter((s) => switches.has(s)) };
 }
 
+/** The held grant or demand a ban's say word (its arguments) meets, each term wrapped by `w`. */
+function sayMet(model: Model, args: readonly string[], w: (t: string) => string): string | undefined {
+  const acts = [args[5]!, ...(model.fits.get(args[5]!) ?? [])];
+  return ["a", "o"].flatMap((a) => acts.map((t) => w(`say(${[...args.slice(0, 3), a, args[4], t, ...args.slice(6)].join(",")})`))).find((t) => model.holds.has(t));
+}
+
 /** The conclusions a `clash` atom rests on. */
 function clashPremises(model: Model, atom: string): string[] {
   const { name, args } = splitAtom(atom);
   // R2-2: inside one holder's view, the view and its denial (or a view the denied term fits).
   if (name === "view" && args.length === 2) {
     const [h, p] = args as [string, string];
+    // R4a-13: a ban and the grant or demand it meets, inside one holder's view.
+    const said = splitAtom(p);
+    if (said.name === "say" && said.args[3] === "u") {
+      const other = sayMet(model, said.args, (t) => `view(${h},${t})`);
+      return other ? [atom, other] : [atom];
+    }
     const denial = `view(${h},neg(${p}))`;
     if (model.holds.has(atom) && model.holds.has(denial)) return [atom, denial];
     const met = (model.fits.get(p) ?? []).map((t) => `view(${h},${t})`).find((t) => model.holds.has(t));
@@ -247,8 +259,7 @@ function clashPremises(model: Model, atom: string): string[] {
   }
   // R2-7: a ban and the grant or demand it meets, with the same party, part, reach and ending.
   if (name === "say" && args[3] === "u") {
-    const acts = [args[5]!, ...(model.fits.get(args[5]!) ?? [])];
-    const other = ["a", "o"].flatMap((a) => acts.map((t) => `say(${[...args.slice(0, 3), a, args[4], t, ...args.slice(6)].join(",")})`)).find((t) => model.holds.has(t));
+    const other = sayMet(model, args, (t) => t);
     return other ? [atom, other] : [atom];
   }
   const denial = `neg(${atom})`;
@@ -309,7 +320,9 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
     // R3-6: so is the holder's own MAY, a term inside the view.
     const holder = frames.some((f) => f.key === "xFamily:holder");
     const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || !!f.holderHost || (holder && f.key === "overlay:may:th");
-    const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f));
+    // R4e-4: a condition hinge on a question asks whether the conditional holds; the translator gives its term.
+    const conditional = (f: Reading["frames"][number]): boolean => (f.key === "overlay:clause_hinge:th" || f.key === "overlay:clause_hinge:g") && ["if", "only-if", "iff"].includes(f.values.gloss ?? "");
+    const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f) && !conditional(f));
     if (beyond || question.unread.length) {
       const construction = beyond?.construction ?? question.unread[0]!.construction;
       return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: [{ reading: question.id, construction, key: beyond?.key, reason: "noRow" }] } };
@@ -327,19 +340,18 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
   let program = translation.program;
   if (qReading && !keepClaim) {
     const qid = JSON.stringify(qReading.id);
-    // Keep the witness facts; drop the question's own claim.
-    const witness = new RegExp(`^(holds\\(isa\\(|count\\(|detail\\(|fired\\(${escape(qid)},(isa|count|detail)\\()nm\\(${escape(qid)},`);
+    // Keep the witness facts; drop the question's own claim, even where it is a fact about the witness
+    // (`yel zodozel gamahum.`: the dog's kind stays, *is caring* goes).
+    const witness = translation.witnesses.get(qReading.id) ?? new Set<string>();
     program = program
       .split("\n")
-      .filter((line) => !line.includes(`on(${qid})`) || line === `on(${qid}).` || witness.test(line))
+      .filter((line) => !line.includes(`on(${qid})`) || line === `on(${qid}).` || witness.has(line))
       .join("\n");
   }
   const ctx: Context = { translation: { ...translation, left }, options, question: qReading?.id, open: openReadings(program) };
   const asked = qReading && positive(qReading.claim);
   return { ok: true, translation: { ...translation, left }, program, qid: qReading?.id, claim: asked?.claim ?? qReading?.claim, negated: asked?.negated, ctx };
 }
-
-const escape = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const refused = (why: string, left: LeftOut[]): Answer => ({ verdict: "refused", because: [], switches: [], left, english: why });
 
@@ -366,10 +378,25 @@ function hits(model: Model, p: Extract<Prepared, { ok: true }>): { yes: string[]
   const switches = new Set<SolveSwitch>();
   // A wrapped question (a holder's view, a say word) is matched inside atoms with the same wrap; a plain one, outside any.
   const wrap = p.qid ? p.translation.wraps.get(p.qid) : undefined;
+  // R4e-4: a question over a hinge asks for its conditional, matched through the R4e-2 fits between conditionals.
+  const asked = p.qid ? [...p.translation.conditionals].find(([, c]) => c.reading === p.qid) : undefined;
+  if (asked) {
+    const [tq, cq] = asked;
+    const fits = p.translation.conditionalFits;
+    for (const held of model.holds) {
+      const atom = wrap ? unwrapText(wrap, held) : held;
+      if (atom === undefined) continue;
+      const inner = negOf(atom);
+      if (inner === undefined ? fits.get(tq)?.has(atom) : fits.get(inner)?.has(tq)) (inner === undefined ? yes : no).push(held);
+    }
+    return cq.denied ? { yes: no, no: yes, switches: [] } : { yes, no, switches: [] };
+  }
   for (const held of model.holds) {
-    // A wrapped denial, `neg(say(..))` (a ban's denied permission), rules out the question inside the same wrap.
-    const denial = wrap ? negOf(held) : undefined;
-    const inside = denial === undefined ? undefined : unwrapText(wrap!, denial);
+    // A wrapped denial, `neg(say(..))` (a ban's denied permission), rules out the question inside the same wrap; R4a-13,
+    // inside a holder's view too, `view(H, neg(say(..)))`.
+    const outer = wrap?.kind === "view" && wrap.say ? unwrapText({ ...wrap, say: undefined }, held) : held;
+    const denial = wrap && outer !== undefined ? negOf(outer) : undefined;
+    const inside = denial === undefined ? undefined : unwrapText(sayOf(wrap) ?? wrap!, denial);
     const atom = wrap ? (unwrapText(wrap, held) ?? (inside === undefined ? undefined : `neg(${inside})`)) : held;
     if (atom === undefined) continue;
     const inner = negOf(atom);
@@ -758,6 +785,9 @@ const ATTACKS = [
   "rebut(A, B) :- src(A, view(H, P)), src(B, view(H, neg(Q))), fits(Q, P).",
   "rebut(A, B) :- src(A, notall(A)), used(A, notall(A), P), src(B, P).",
   "rebut(A, B) :- src(A, none(A)), used(A, none(A), P), src(B, P).",
+  "% R4a-2, R4a-3: the same inside a holder's view.",
+  "rebut(A, B) :- src(A, view(H, notall(A))), used(A, view(H, notall(A)), P), src(B, P).",
+  "rebut(A, B) :- src(A, view(H, none(A))), used(A, view(H, none(A)), P), src(B, P).",
   "att(A, B) :- rebut(A, B).",
   "att(B, A) :- rebut(A, B).",
 ].join("\n");

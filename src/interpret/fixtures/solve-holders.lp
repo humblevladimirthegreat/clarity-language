@@ -8,7 +8,45 @@
 % t:0.7 = b9
 % t:0.8 = b10
 % t:0.9 = b11
-% t:0.10 = undefined
+% t:0.10 = k1
+% t:0.11 = k2
+% t:0.12 = k3
+% t:0.13 = k4
+% t:0.14 = k6
+% t:0.15 = k7
+% t:0.16 = k8
+% t:0.17 = k9
+% t:0.18 = k10
+% t:0.19 = k11
+% t:0.20 = k12
+% t:0.21 = k13
+% t:0.22 = k51
+% t:0.23 = k52
+% t:0.24 = k39
+% t:0.25 = k15
+% t:0.26 = k16
+% t:0.27 = k21
+% t:1.0 = k22
+% t:2.0 = k23
+% t:3.0 = k24
+% t:4.0 = k25
+% t:4.1 = k26
+% t:4.2 = k27
+% t:4.3 = k28
+% t:4.4 = k29
+% t:4.5 = k30
+% t:4.6 = k31
+% t:4.7 = k32
+% t:5.0 = k33
+% t:6.0 = k34
+% t:7.0 = k35
+% t:8.0 = k36
+% t:8.1 = undefined
+% t:8.2 = undefined
+% t:8.3 = undefined
+% t:8.4 = undefined
+% t:8.5 = undefined
+% t:8.6 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -67,6 +105,34 @@ fired(against, against(T, say(W, P, R, u, E, X))) :- holds(T), holds(say(W, P, R
 used(against, against(T, say(W, P, R, u, E, X)), T) :- holds(T), holds(say(W, P, R, u, E, Q, X)), fits(Q, T).
 used(against, against(T, say(W, P, R, u, E, X)), say(W, P, R, u, E, Q, X)) :- holds(T), holds(say(W, P, R, u, E, Q, X)), fits(Q, T).
 
+% Say words inside a holder's view (R4a-13).
+clash(view(V, say(W, P, R, u, E, T))) :- holds(view(V, say(W, P, R, a, E, T))), holds(view(V, say(W, P, R, u, E, T))).
+clash(view(V, say(W, P, R, u, E, T))) :- holds(view(V, say(W, P, R, o, E, T))), holds(view(V, say(W, P, R, u, E, T))).
+clash(view(V, say(W, P, R, u, E, Q))) :- holds(view(V, say(W, P, R, a, E, T))), holds(view(V, say(W, P, R, u, E, Q))), fits(Q, T).
+clash(view(V, say(W, P, R, u, E, Q))) :- holds(view(V, say(W, P, R, o, E, T))), holds(view(V, say(W, P, R, u, E, Q))), fits(Q, T).
+clash(view(V, say(W, P, R, u, E, T, X))) :- holds(view(V, say(W, P, R, a, E, T, X))), holds(view(V, say(W, P, R, u, E, T, X))).
+clash(view(V, say(W, P, R, u, E, T, X))) :- holds(view(V, say(W, P, R, o, E, T, X))), holds(view(V, say(W, P, R, u, E, T, X))).
+clash(view(V, say(W, P, R, u, E, Q, X))) :- holds(view(V, say(W, P, R, a, E, T, X))), holds(view(V, say(W, P, R, u, E, Q, X))), fits(Q, T).
+clash(view(V, say(W, P, R, u, E, Q, X))) :- holds(view(V, say(W, P, R, o, E, T, X))), holds(view(V, say(W, P, R, u, E, Q, X))), fits(Q, T).
+holds(view(V, say(W, P, R, a, E, T))) :- holds(view(V, say(W, P, R, o, E, T))).
+fired(requires, view(V, say(W, P, R, a, E, T))) :- holds(view(V, say(W, P, R, o, E, T))).
+used(requires, view(V, say(W, P, R, a, E, T)), view(V, say(W, P, R, o, E, T))) :- holds(view(V, say(W, P, R, o, E, T))).
+holds(view(V, say(W, P, R, a, E, T, X))) :- holds(view(V, say(W, P, R, o, E, T, X))).
+fired(requires, view(V, say(W, P, R, a, E, T, X))) :- holds(view(V, say(W, P, R, o, E, T, X))).
+used(requires, view(V, say(W, P, R, a, E, T, X)), view(V, say(W, P, R, o, E, T, X))) :- holds(view(V, say(W, P, R, o, E, T, X))).
+holds(view(V, neg(say(W, P, R, a, E, T)))) :- holds(view(V, say(W, P, R, u, E, T))).
+fired(bans, view(V, neg(say(W, P, R, a, E, T)))) :- holds(view(V, say(W, P, R, u, E, T))).
+used(bans, view(V, neg(say(W, P, R, a, E, T))), view(V, say(W, P, R, u, E, T))) :- holds(view(V, say(W, P, R, u, E, T))).
+holds(view(V, neg(say(W, P, R, a, E, Q)))) :- holds(view(V, say(W, P, R, u, E, T))), fits(T, Q).
+fired(bans, view(V, neg(say(W, P, R, a, E, Q)))) :- holds(view(V, say(W, P, R, u, E, T))), fits(T, Q).
+used(bans, view(V, neg(say(W, P, R, a, E, Q))), view(V, say(W, P, R, u, E, T))) :- holds(view(V, say(W, P, R, u, E, T))), fits(T, Q).
+holds(view(V, neg(say(W, P, R, a, E, T, X)))) :- holds(view(V, say(W, P, R, u, E, T, X))).
+fired(bans, view(V, neg(say(W, P, R, a, E, T, X)))) :- holds(view(V, say(W, P, R, u, E, T, X))).
+used(bans, view(V, neg(say(W, P, R, a, E, T, X))), view(V, say(W, P, R, u, E, T, X))) :- holds(view(V, say(W, P, R, u, E, T, X))).
+holds(view(V, neg(say(W, P, R, a, E, Q, X)))) :- holds(view(V, say(W, P, R, u, E, T, X))), fits(T, Q).
+fired(bans, view(V, neg(say(W, P, R, a, E, Q, X)))) :- holds(view(V, say(W, P, R, u, E, T, X))), fits(T, Q).
+used(bans, view(V, neg(say(W, P, R, a, E, Q, X))), view(V, say(W, P, R, u, E, T, X))) :- holds(view(V, say(W, P, R, u, E, T, X))), fits(T, Q).
+
 % t:0.0
 on("t:0.0").
 via("t:0.0",clues) :- on("t:0.0").
@@ -107,8 +173,8 @@ fired("t:0.5",view(azozo,ezuve(z(alazu)))) :- on("t:0.5").
 on("t:0.6").
 via("t:0.6",clues) :- on("t:0.6").
 fired("t:0.6",via("t:0.6",clues)) :- on("t:0.6").
-holds(view(interlocutors,uduru(z(alazu)))) :- on("t:0.6").
-fired("t:0.6",view(interlocutors,uduru(z(alazu)))) :- on("t:0.6").
+holds(view(we(5),uduru(z(alazu)))) :- on("t:0.6").
+fired("t:0.6",view(we(5),uduru(z(alazu)))) :- on("t:0.6").
 % t:0.7
 on("t:0.7").
 holds(isa(nm("t:0.7",h),eye)) :- on("t:0.7").
@@ -129,21 +195,242 @@ fired("t:0.8",view(nm("t:0.8",h),neg(uduru(z(alazu))))) :- on("t:0.8").
 on("t:0.9").
 via("t:0.9",clues) :- on("t:0.9").
 fired("t:0.9",via("t:0.9",clues)) :- on("t:0.9").
-holds(view(azozo,uduru(z(alazu)))) :- fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
-fired("t:0.9",view(azozo,uduru(z(alazu)))) :- fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
-used("t:0.9",view(azozo,uduru(z(alazu))),view(azozo,P)) :- fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
-holds(view(azozo,neg(owuro(z(azozo))))) :- fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
-fired("t:0.9",view(azozo,neg(owuro(z(azozo))))) :- fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
-used("t:0.9",view(azozo,neg(owuro(z(azozo)))),view(azozo,neg(P))) :- fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+holds(view(azozo,if(c("t:0.9"),o("t:0.9")))) :- on("t:0.9").
+fired("t:0.9",view(azozo,if(c("t:0.9"),o("t:0.9")))) :- on("t:0.9").
+holds(view(azozo,uduru(z(alazu)))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+fired("t:0.9",view(azozo,uduru(z(alazu)))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+used("t:0.9",view(azozo,uduru(z(alazu))),view(azozo,if(c("t:0.9"),o("t:0.9")))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+used("t:0.9",view(azozo,uduru(z(alazu))),view(azozo,P)) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(c("t:0.9"),P), holds(view(azozo,P)), on("t:0.9").
+holds(view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+fired("t:0.9",view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+used("t:0.9",view(azozo,neg(owuro(z(azozo)))),view(azozo,if(c("t:0.9"),o("t:0.9")))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
+used("t:0.9",view(azozo,neg(owuro(z(azozo)))),view(azozo,neg(P))) :- holds(view(azozo,if(c("t:0.9"),o("t:0.9")))), fits(P,o("t:0.9")), holds(view(azozo,neg(P))), on("t:0.9").
 % t:0.10
 on("t:0.10").
 via("t:0.10",clues) :- on("t:0.10").
 fired("t:0.10",via("t:0.10",clues)) :- on("t:0.10").
 holds(view(azozo,owuro(z(azozo)))) :- on("t:0.10").
 fired("t:0.10",view(azozo,owuro(z(azozo)))) :- on("t:0.10").
+% t:0.11
+on("t:0.11").
+via("t:0.11",clues) :- on("t:0.11").
+fired("t:0.11",via("t:0.11",clues)) :- on("t:0.11").
+holds(view(azozo,ozuye(z(alazu)))) :- on("t:0.11").
+fired("t:0.11",view(azozo,ozuye(z(alazu)))) :- on("t:0.11").
+always(view(azozo,ozuye(z(alazu)))) :- on("t:0.11").
+fired("t:0.11",always(view(azozo,ozuye(z(alazu))))) :- on("t:0.11").
+% t:0.12
+on("t:0.12").
+via("t:0.12",clues) :- on("t:0.12").
+fired("t:0.12",via("t:0.12",clues)) :- on("t:0.12").
+holds(view(azozo,neg(ozuye(z(alazu))))) :- on("t:0.12").
+fired("t:0.12",view(azozo,neg(ozuye(z(alazu))))) :- on("t:0.12").
+never(view(azozo,ozuye(z(alazu)))) :- on("t:0.12").
+fired("t:0.12",never(view(azozo,ozuye(z(alazu))))) :- on("t:0.12").
+% t:0.13
+on("t:0.13").
+via("t:0.13",clues) :- on("t:0.13").
+fired("t:0.13",via("t:0.13",clues)) :- on("t:0.13").
+holds(view(ahela,neg(ozuye(z(alazu))))) :- on("t:0.13").
+fired("t:0.13",view(ahela,neg(ozuye(z(alazu))))) :- on("t:0.13").
+never(view(ahela,ozuye(z(alazu)))) :- on("t:0.13").
+fired("t:0.13",never(view(ahela,ozuye(z(alazu))))) :- on("t:0.13").
+% t:0.14
+on("t:0.14").
+via("t:0.14",memory) :- on("t:0.14").
+fired("t:0.14",via("t:0.14",memory)) :- on("t:0.14").
+holds(view(we(13),neg(eba(z(listener(13)))))) :- on("t:0.14").
+fired("t:0.14",view(we(13),neg(eba(z(listener(13)))))) :- on("t:0.14").
+never(view(we(13),eba(z(listener(13))))) :- on("t:0.14").
+fired("t:0.14",never(view(we(13),eba(z(listener(13)))))) :- on("t:0.14").
+% t:0.15
+on("t:0.15").
+via("t:0.15",memory) :- on("t:0.15").
+fired("t:0.15",via("t:0.15",memory)) :- on("t:0.15").
+holds(view(we(13),eba(z(listener(13))))) :- on("t:0.15").
+fired("t:0.15",view(we(13),eba(z(listener(13))))) :- on("t:0.15").
+% t:0.16
+on("t:0.16").
+via("t:0.16",clues) :- on("t:0.16").
+fired("t:0.16",via("t:0.16",clues)) :- on("t:0.16").
+clash(view(alazu,notall("t:0.16"))) :- fits(i("t:0.16",1),P1), holds(view(alazu,P1)), fits(i("t:0.16",2),P2), holds(view(alazu,P2)), on("t:0.16").
+fired("t:0.16",view(alazu,notall("t:0.16"))) :- fits(i("t:0.16",1),P1), holds(view(alazu,P1)), fits(i("t:0.16",2),P2), holds(view(alazu,P2)), on("t:0.16").
+used("t:0.16",view(alazu,notall("t:0.16")),view(alazu,P1)) :- fits(i("t:0.16",1),P1), holds(view(alazu,P1)), fits(i("t:0.16",2),P2), holds(view(alazu,P2)), on("t:0.16").
+used("t:0.16",view(alazu,notall("t:0.16")),view(alazu,P2)) :- fits(i("t:0.16",1),P1), holds(view(alazu,P1)), fits(i("t:0.16",2),P2), holds(view(alazu,P2)), on("t:0.16").
+% t:0.17
+on("t:0.17").
+via("t:0.17",clues) :- on("t:0.17").
+fired("t:0.17",via("t:0.17",clues)) :- on("t:0.17").
+holds(view(alazu,owuro(z(azozo)))) :- on("t:0.17").
+fired("t:0.17",view(alazu,owuro(z(azozo)))) :- on("t:0.17").
+% t:0.18
+on("t:0.18").
+via("t:0.18",clues) :- on("t:0.18").
+fired("t:0.18",via("t:0.18",clues)) :- on("t:0.18").
+holds(view(alazu,eruvo(z(azozo)))) :- on("t:0.18").
+fired("t:0.18",view(alazu,eruvo(z(azozo)))) :- on("t:0.18").
+% t:0.19
+on("t:0.19").
+via("t:0.19",clues) :- on("t:0.19").
+fired("t:0.19",via("t:0.19",clues)) :- on("t:0.19").
+holds(view(alazu,owuro(z(azozo)))) :- on("t:0.19").
+fired("t:0.19",view(alazu,owuro(z(azozo)))) :- on("t:0.19").
+% t:0.20
+on("t:0.20").
+via("t:0.20",clues) :- on("t:0.20").
+fired("t:0.20",via("t:0.20",clues)) :- on("t:0.20").
+holds(view(alazu,eruvo(z(azozo)))) :- on("t:0.20").
+fired("t:0.20",view(alazu,eruvo(z(azozo)))) :- on("t:0.20").
+% t:0.21
+on("t:0.21").
+via("t:0.21",clues) :- on("t:0.21").
+fired("t:0.21",via("t:0.21",clues)) :- on("t:0.21").
+clash(view(azozo,none("t:0.21"))) :- holds(view(azozo,isa(X,odoze))), on("t:0.21").
+fired("t:0.21",view(azozo,none("t:0.21"))) :- holds(view(azozo,isa(X,odoze))), on("t:0.21").
+used("t:0.21",view(azozo,none("t:0.21")),view(azozo,isa(X,odoze))) :- holds(view(azozo,isa(X,odoze))), on("t:0.21").
+% t:0.22
+on("t:0.22").
+via("t:0.22",clues) :- on("t:0.22").
+fired("t:0.22",via("t:0.22",clues)) :- on("t:0.22").
+holds(view(azozo,isa(azozo,odoze))) :- on("t:0.22").
+fired("t:0.22",view(azozo,isa(azozo,odoze))) :- on("t:0.22").
+% t:0.23
+on("t:0.23").
+via("t:0.23",clues) :- on("t:0.23").
+fired("t:0.23",via("t:0.23",clues)) :- on("t:0.23").
+holds(view(azozo,isa(azozo,odoze))) :- on("t:0.23").
+fired("t:0.23",view(azozo,isa(azozo,odoze))) :- on("t:0.23").
+% t:0.24
+on("t:0.24").
+via("t:0.24",clues) :- on("t:0.24").
+fired("t:0.24",via("t:0.24",clues)) :- on("t:0.24").
+holds(view(alazu,say(rules,v,u,a,l,owuro(z(azozo))))) :- on("t:0.24").
+fired("t:0.24",view(alazu,say(rules,v,u,a,l,owuro(z(azozo))))) :- on("t:0.24").
+% t:0.25
+on("t:0.25").
+via("t:0.25",clues) :- on("t:0.25").
+fired("t:0.25",via("t:0.25",clues)) :- on("t:0.25").
+holds(view(alazu,say(rules,v,u,u,l,owuro(z(azozo))))) :- on("t:0.25").
+fired("t:0.25",view(alazu,say(rules,v,u,u,l,owuro(z(azozo))))) :- on("t:0.25").
+% t:0.26
+on("t:0.26").
+via("t:0.26",clues) :- on("t:0.26").
+fired("t:0.26",via("t:0.26",clues)) :- on("t:0.26").
+holds(view(alazu,say(rules,v,u,u,l,owuro(z(azozo))))) :- on("t:0.26").
+fired("t:0.26",view(alazu,say(rules,v,u,u,l,owuro(z(azozo))))) :- on("t:0.26").
+% t:0.27
+on("t:0.27").
+via("t:0.27",reported) :- on("t:0.27").
+fired("t:0.27",via("t:0.27",reported)) :- on("t:0.27").
+holds(view(azozo,neg(uduru(z(alazu))))) :- on("t:0.27").
+fired("t:0.27",view(azozo,neg(uduru(z(alazu))))) :- on("t:0.27").
+% t:1.0
+on("t:1.0").
+% t:2.0
+on("t:2.0").
+via("t:2.0",clues) :- on("t:2.0").
+fired("t:2.0",via("t:2.0",clues)) :- on("t:2.0").
+holds(view(azozo,uduru(z(alazu)))) :- on("t:2.0").
+fired("t:2.0",view(azozo,uduru(z(alazu)))) :- on("t:2.0").
+% t:3.0
+on("t:3.0").
+% t:4.0
+on("t:4.0").
+via("t:4.0",clues) :- on("t:4.0").
+fired("t:4.0",via("t:4.0",clues)) :- on("t:4.0").
+holds(view(azozo,owuro(z(we(azozo,sp("Bea")))))) :- on("t:4.0").
+fired("t:4.0",view(azozo,owuro(z(we(azozo,sp("Bea")))))) :- on("t:4.0").
+% t:4.1
+on("t:4.1").
+via("t:4.1",clues) :- on("t:4.1").
+fired("t:4.1",via("t:4.1",clues)) :- on("t:4.1").
+holds(view(azozo,neg(owuro(z(we(azozo,sp("Bea"))))))) :- on("t:4.1").
+fired("t:4.1",view(azozo,neg(owuro(z(we(azozo,sp("Bea"))))))) :- on("t:4.1").
+% t:4.2
+on("t:4.2").
+via("t:4.2",clues) :- on("t:4.2").
+fired("t:4.2",via("t:4.2",clues)) :- on("t:4.2").
+holds(view(azozo,uduru(z(alazu)))) :- on("t:4.2").
+fired("t:4.2",view(azozo,uduru(z(alazu)))) :- on("t:4.2").
+% t:4.3
+on("t:4.3").
+holds(uduru(z(alazu))) :- on("t:4.3").
+fired("t:4.3",uduru(z(alazu))) :- on("t:4.3").
+% t:4.4
+on("t:4.4").
+holds(owuro(z(we(31)))) :- on("t:4.4").
+fired("t:4.4",owuro(z(we(31)))) :- on("t:4.4").
+% t:4.5
+on("t:4.5").
+via("t:4.5",clues) :- on("t:4.5").
+fired("t:4.5",via("t:4.5",clues)) :- on("t:4.5").
+holds(view(azozo,neg(owuro(z(we(azozo,sp("Bea"))))))) :- on("t:4.5").
+fired("t:4.5",view(azozo,neg(owuro(z(we(azozo,sp("Bea"))))))) :- on("t:4.5").
+% t:4.6
+on("t:4.6").
+via("t:4.6",clues) :- on("t:4.6").
+fired("t:4.6",via("t:4.6",clues)) :- on("t:4.6").
+holds(view(azozo,owuro(z(we(azozo,sp("Bea")))))) :- on("t:4.6").
+fired("t:4.6",view(azozo,owuro(z(we(azozo,sp("Bea")))))) :- on("t:4.6").
+% t:4.7
+on("t:4.7").
+holds(neg(owuro(z(we(34))))) :- on("t:4.7").
+fired("t:4.7",neg(owuro(z(we(34))))) :- on("t:4.7").
+% t:5.0
+on("t:5.0").
+% t:6.0
+on("t:6.0").
+via("t:6.0",clues) :- on("t:6.0").
+fired("t:6.0",via("t:6.0",clues)) :- on("t:6.0").
+holds(view(azozo,owuro(z(azozo)))) :- on("t:6.0").
+fired("t:6.0",view(azozo,owuro(z(azozo)))) :- on("t:6.0").
+% t:7.0
+on("t:7.0").
+% t:8.0
+on("t:8.0").
+via("t:8.0",clues) :- on("t:8.0").
+fired("t:8.0",via("t:8.0",clues)) :- on("t:8.0").
+holds(view(azozo,uduru(z(alazu)))) :- on("t:8.0").
+fired("t:8.0",view(azozo,uduru(z(alazu)))) :- on("t:8.0").
+% t:8.1
+on("t:8.1").
+via("t:8.1",clues) :- on("t:8.1").
+fired("t:8.1",via("t:8.1",clues)) :- on("t:8.1").
+holds(view(azozo,owuro(z(azozo)))) :- on("t:8.1").
+fired("t:8.1",view(azozo,owuro(z(azozo)))) :- on("t:8.1").
+% t:8.2
+on("t:8.2").
+via("t:8.2",clues) :- on("t:8.2").
+fired("t:8.2",via("t:8.2",clues)) :- on("t:8.2").
+holds(view(azozo,uduru(z(alazu)))) :- on("t:8.2").
+fired("t:8.2",view(azozo,uduru(z(alazu)))) :- on("t:8.2").
+% t:8.3
+on("t:8.3").
+holds(owuro(z(listener(39)))) :- on("t:8.3").
+fired("t:8.3",owuro(z(listener(39)))) :- on("t:8.3").
+% t:8.4
+on("t:8.4").
+via("t:8.4",clues) :- on("t:8.4").
+fired("t:8.4",via("t:8.4",clues)) :- on("t:8.4").
+holds(view(azozo,neg(owuro(z(sp("Bea")))))) :- on("t:8.4").
+fired("t:8.4",view(azozo,neg(owuro(z(sp("Bea")))))) :- on("t:8.4").
+% t:8.5
+on("t:8.5").
+holds(owuro(z(listener(41)))) :- on("t:8.5").
+fired("t:8.5",owuro(z(listener(41)))) :- on("t:8.5").
+% t:8.6
+on("t:8.6").
+via("t:8.6",clues) :- on("t:8.6").
+fired("t:8.6",via("t:8.6",clues)) :- on("t:8.6").
+holds(view(azozo,neg(owuro(z(azozo))))) :- on("t:8.6").
+fired("t:8.6",view(azozo,neg(owuro(z(azozo))))) :- on("t:8.6").
 
 % Fits, from match().
 fits(c("t:0.9"),owuro(z(azozo))).
 fits(owuro(z(azozo)),c("t:0.9")).
 fits(o("t:0.9"),uduru(z(alazu))).
 fits(uduru(z(alazu)),o("t:0.9")).
+fits(i("t:0.16",1),owuro(z(azozo))).
+fits(owuro(z(azozo)),i("t:0.16",1)).
+fits(i("t:0.16",2),eruvo(z(azozo))).
+fits(eruvo(z(azozo)),i("t:0.16",2)).

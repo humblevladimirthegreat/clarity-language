@@ -7,6 +7,22 @@
 % t:0.6 = p7
 % t:0.7 = p8
 % t:0.8 = p9
+% t:0.9 = k53
+% t:0.10 = k38
+% t:0.11 = k54
+% t:0.12 = k40
+% t:0.13 = k41
+% t:0.14 = k42
+% t:0.15 = k43
+% t:0.16 = k44
+% t:0.17 = k45
+% t:0.18 = k46
+% t:0.19 = k37
+% t:0.20 = k47
+% t:0.21 = k48
+% t:0.22 = k49
+% t:0.23 = k50
+% t:0.24 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -101,3 +117,93 @@ fired("t:0.7",say(sp("a"),v,o,a,m,owuro(z(azozo)))) :- on("t:0.7").
 on("t:0.8").
 holds(say(sp("a"),v,u,u,m,owuro(z(azozo)))) :- on("t:0.8").
 fired("t:0.8",say(sp("a"),v,u,u,m,owuro(z(azozo)))) :- on("t:0.8").
+% t:0.9
+on("t:0.9").
+holds(ezuyo(z(alazu))) :- on("t:0.9").
+fired("t:0.9",ezuyo(z(alazu))) :- on("t:0.9").
+% t:0.10
+on("t:0.10").
+holds(say(rules,v,u,a,l,owuro(z(azozo)))) :- fits(c("t:0.10"),P), holds(P), on("t:0.10").
+fired("t:0.10",say(rules,v,u,a,l,owuro(z(azozo)))) :- fits(c("t:0.10"),P), holds(P), on("t:0.10").
+used("t:0.10",say(rules,v,u,a,l,owuro(z(azozo))),P) :- fits(c("t:0.10"),P), holds(P), on("t:0.10").
+holds(neg(ezuyo(z(alazu)))) :- fits(P,o("t:0.10")), holds(neg(say(rules,v,u,a,l,P))), on("t:0.10").
+fired("t:0.10",neg(ezuyo(z(alazu)))) :- fits(P,o("t:0.10")), holds(neg(say(rules,v,u,a,l,P))), on("t:0.10").
+used("t:0.10",neg(ezuyo(z(alazu))),neg(say(rules,v,u,a,l,P))) :- fits(P,o("t:0.10")), holds(neg(say(rules,v,u,a,l,P))), on("t:0.10").
+% t:0.11
+on("t:0.11").
+holds(ezuyo(z(alazu))) :- on("t:0.11").
+fired("t:0.11",ezuyo(z(alazu))) :- on("t:0.11").
+% t:0.12
+on("t:0.12").
+holds(isa(azozo,odoze)) :- on("t:0.12").
+fired("t:0.12",isa(azozo,odoze)) :- on("t:0.12").
+% t:0.13
+on("t:0.13").
+holds(say(rules,v,u,a,l,owuro(z(X)))) :- holds(isa(X,odoze)), on("t:0.13").
+fired("t:0.13",say(rules,v,u,a,l,owuro(z(X)))) :- holds(isa(X,odoze)), on("t:0.13").
+used("t:0.13",say(rules,v,u,a,l,owuro(z(X))),isa(X,odoze)) :- holds(isa(X,odoze)), on("t:0.13").
+% t:0.14
+on("t:0.14").
+holds(say(rules,v,u,u,l,owuro(z(X)))) :- holds(isa(X,odoze)), on("t:0.14").
+fired("t:0.14",say(rules,v,u,u,l,owuro(z(X)))) :- holds(isa(X,odoze)), on("t:0.14").
+used("t:0.14",say(rules,v,u,u,l,owuro(z(X))),isa(X,odoze)) :- holds(isa(X,odoze)), on("t:0.14").
+% t:0.15
+on("t:0.15").
+holds(say(rules,v,u,a,l,owuro(z(every(odoze))))) :- on("t:0.15").
+fired("t:0.15",say(rules,v,u,a,l,owuro(z(every(odoze))))) :- on("t:0.15").
+holds(say(rules,v,u,a,l,owuro(z(X)))) :- holds(isa(X,odoze)), on("t:0.15").
+fired("t:0.15",say(rules,v,u,a,l,owuro(z(X)))) :- holds(isa(X,odoze)), on("t:0.15").
+used("t:0.15",say(rules,v,u,a,l,owuro(z(X))),isa(X,odoze)) :- holds(isa(X,odoze)), on("t:0.15").
+% t:0.16
+on("t:0.16").
+holds(say(rules,v,u,u,l,owuro(z(every(odoze))))) :- on("t:0.16").
+fired("t:0.16",say(rules,v,u,u,l,owuro(z(every(odoze))))) :- on("t:0.16").
+% t:0.17
+on("t:0.17").
+holds(say(rules,v,u,a,l,owuro(z(ls("t:0.17",z))))) :- on("t:0.17").
+fired("t:0.17",say(rules,v,u,a,l,owuro(z(ls("t:0.17",z))))) :- on("t:0.17").
+holds(say(rules,v,u,a,l,owuro(z(X)))) :- member(ls("t:0.17",z),X,G), on("t:0.17").
+fired("t:0.17",say(rules,v,u,a,l,owuro(z(X)))) :- member(ls("t:0.17",z),X,G), on("t:0.17").
+% t:0.18
+on("t:0.18").
+holds(say(rules,v,u,u,l,owuro(z(ls("t:0.18",z))))) :- on("t:0.18").
+fired("t:0.18",say(rules,v,u,u,l,owuro(z(ls("t:0.18",z))))) :- on("t:0.18").
+% t:0.19
+on("t:0.19").
+holds(say(ls("t:0.19",b),b,u,a,r,ezuyo(z(azozo),b(ls("t:0.19",b))))) :- on("t:0.19").
+fired("t:0.19",say(ls("t:0.19",b),b,u,a,r,ezuyo(z(azozo),b(ls("t:0.19",b))))) :- on("t:0.19").
+holds(say(X,b,u,a,r,ezuyo(z(azozo),b(X)))) :- member(ls("t:0.19",b),X,G), on("t:0.19").
+fired("t:0.19",say(X,b,u,a,r,ezuyo(z(azozo),b(X)))) :- member(ls("t:0.19",b),X,G), on("t:0.19").
+% t:0.20
+on("t:0.20").
+holds(say(rules,v,u,a,l,if(ezuyo(z(alazu)),owuro(z(azozo))))) :- on("t:0.20").
+fired("t:0.20",say(rules,v,u,a,l,if(ezuyo(z(alazu)),owuro(z(azozo))))) :- on("t:0.20").
+% t:0.21
+on("t:0.21").
+holds(say(rules,v,u,a,l,if(ezuyo(z(alazu)),owuro(z(azozo))))) :- on("t:0.21").
+fired("t:0.21",say(rules,v,u,a,l,if(ezuyo(z(alazu)),owuro(z(azozo))))) :- on("t:0.21").
+% t:0.22
+on("t:0.22").
+holds(say(rules,v,u,a,l,may(owuro(z(azozo))))) :- on("t:0.22").
+fired("t:0.22",say(rules,v,u,a,l,may(owuro(z(azozo))))) :- on("t:0.22").
+% t:0.23
+on("t:0.23").
+holds(say(rules,v,u,a,l,against(owuro(z(azozo)),plan(sp("a"))))) :- on("t:0.23").
+fired("t:0.23",say(rules,v,u,a,l,against(owuro(z(azozo)),plan(sp("a"))))) :- on("t:0.23").
+% t:0.24
+on("t:0.24").
+holds(say(rules,v,u,a,l,because(ezuyo(z(alazu)),owuro(z(azozo))))) :- on("t:0.24").
+fired("t:0.24",say(rules,v,u,a,l,because(ezuyo(z(alazu)),owuro(z(azozo))))) :- on("t:0.24").
+
+% Fits, from match().
+fits(c("t:0.10"),ezuyo(z(alazu))).
+fits(ezuyo(z(alazu)),c("t:0.10")).
+fits(o("t:0.10"),owuro(z(azozo))).
+fits(owuro(z(azozo)),o("t:0.10")).
+fits(owuro(z(ls("t:0.18",z))),owuro(z(ls("t:0.17",z)))).
+
+% Members, from claimMemberLists().
+member(ls("t:0.17",z),azozo,1).
+member(ls("t:0.17",z),alazu,2).
+member(ls("t:0.19",b),ahela,1).
+member(ls("t:0.19",b),alazu,2).

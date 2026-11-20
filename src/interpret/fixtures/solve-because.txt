@@ -62,3 +62,94 @@ zazozon vowurol hwuval.
 @ c13
 zahelan vehohel.
 = Ahelan sits.
+
+# R4b-1: a noun condition on a hinge reads as its kind; a /ɡ/ outcome is R4e-7's existence claim. bc1: the link and both
+# sides claimed. bc2: the if rows. bc3, ? zahelan vayebel. → unknown, the condition is not claimed. bc4, ? zazozon
+# vowurol. → yes.
+@ bc1
+zerulal gahum blugalal.
+= There is rain because of the clouds.
+
+@ bc2
+zerulal gohem blugalal.
+= There is rain if there are clouds.
+
+@ bc3
+zahelan develal vayebel thebem blezalol.
+= Ahelan sees a flower only if there is sun.
+
+@ bc4
+zazozon vowurol thahum blerulal.
+= Azozon walks because of the rain.
+
+# R4b-3: the /ɡ/ stack, only because on a noun (row 13 on the kinds). bc7: the outcome, the condition, the link and
+# onlyif(c, o); with "no clouds" (zul gugalal.) it clashes; ? zerulal. -> yes.
+@ bc7
+zerulal gebem gahum blugalal.
+= There is rain only because of the clouds.
+
+# R4b-4 (D2): a because condition with its own frame is that clause's own term. bc8, ? zazozon vowurol. -> yes;
+# ? zalazun vezuvel. -> unknown; ?~ -> yes. bc9, ? zalazun vezuvel. -> unknown (Ahelan's view only). bc10,
+# ? zazozon vowurol. -> yes.
+@ bc8
+zazozon vowurol thahum blarl zalazun thomam vezuvel.
+= Azozon walks because Alazun may be asleep.
+
+@ bc9
+zazozon vowurol thahum blarl zalazun theyomahelan vezuvel.
+= Azozon walks because, as far as I can tell, Ahelan thinks Alazun is asleep.
+
+@ bc10
+zazozon vowurol thahum blarl zazozon vowurol hwuvam.
+= Azozon walks because Azozon is allowed to walk.
+
+# R4b-5 (D3): MAY right before because hedges only the link. bc11 + bc12 clash on the walking; bc13,
+# ? zazozon vowurol. -> yes, ? zalazun vezuyol. -> yes.
+@ bc11
+zazozon vowurol thomam thahum blerulal.
+= Azozon walks, maybe because of the rain.
+
+@ bc12
+zazozon vowurol vul.
+= Azozon is not walking.
+
+@ bc13
+zazozon vowurol thomam thahul blarl zalazun vezuyol.
+= Azozon walks, maybe Alazun's fault for talking.
+
+# R4b-6 (D11): because over MAY. bc14 (two sentences), ? zazozon vowurol. -> unknown; ?~ -> yes.
+@ bc14
+zalazun vezuvel. thahum blarth thomam zazozon vowurol.
+= Alazun is asleep. Because of that, Azozon may walk.
+
+# R4b-7 (D12): because under always / often, and with or. bc15 + bc16 clash; bc17, ? zazozon vowurol. -> unknown,
+# ?~ -> yes; bc18, ? zazozon vowurol. -> yes; bc19 kept.
+@ bc15
+zazozon vowurol thahum blerulal hual.
+= Azozon always walks because of the rain.
+
+@ bc16
+zazozon vowurol hal.
+= Azozon never walks.
+
+@ bc17
+zazozon vowurol thahum blerulal huam.
+= Azozon often walks because of the rain.
+
+@ bc18
+zazozon vowurol thahum blerulal blugalal bel.
+= Azozon walks because of the rain or the clouds.
+
+@ bc19
+zalazun genemum huam thahul blarl zazozon vezuyol.
+= Alazun is often hurt, Azozon's fault for talking.
+
+# R4b-2: because inside a holder's view (holder.md#what-the-holder-covers). bc5 + bc6 clash in Azozon's view; bc5,
+# ? zalazun vudurul. -> unknown, the view is not your claim. Last in the file, since bc6's holder carries to the next sentence.
+@ bc5
+zalazun theyomazozon vudurul thahum blerulal.
+= I gather Azozon thinks Alazun left because of the rain.
+
+@ bc6
+zalazun theyomazozon vudurul vul.
+= I gather Azozon thinks Alazun did not leave.

@@ -287,8 +287,10 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.ok(named?.kind === "thing" && named.named && named.root === "azozo");
     const role = readText("zazozon vowurol.", tables)[0]!.claim.roles.z;
     assert.ok(role?.kind === "thing" && role.named && role.root === "azozo");
+    // R4a-4: `-r` is a pronoun whose antecedent is the name it resumes.
     const resumed = party("zazozon vowurol. zalazun theyomazozor vudurul.");
-    assert.ok(resumed?.kind === "thing" && resumed.named && resumed.root === "azozo");
+    const antecedent = resumed?.kind === "pronoun" ? resumed.antecedent : undefined;
+    assert.ok(antecedent?.kind === "thing" && antecedent.named && antecedent.root === "azozo");
     const kind = party("zalazun theyomeyel vudurul.");
     assert.ok(kind?.kind === "thing" && !kind.named);
   });

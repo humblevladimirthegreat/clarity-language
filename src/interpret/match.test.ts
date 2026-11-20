@@ -93,7 +93,9 @@ describe("match: switches", () => {
     assert.ok(match(i, i, { querySite: { speaker: "sp(a)" }, targetSite: { speaker: "sp(a)" } }));
     assert.equal(match(i, i, { querySite: { speaker: "sp(a)" }, targetSite: { speaker: "sp(b)" } }), undefined);
     assert.equal(match(you, you, { querySite: { listener: "listener(0)" }, targetSite: { listener: "listener(1)" } }), undefined);
-    assert.equal(match(i, you, { querySite: { speaker: "sp(a)" }, targetSite: { listener: "sp(a)" } }), undefined);
+    // R4a-8: a listener its site names as another speaker is that speaker; R4a-7: `zaya` is its site's `we` term.
+    assert.ok(match(i, you, { querySite: { speaker: "sp(a)" }, targetSite: { listener: "sp(a)" } }));
+    assert.equal(match(i, you, { querySite: { speaker: "sp(a)" }, targetSite: { listener: "sp(b)" } }), undefined);
     // A caller that does not know the turns (ask with no persons on its sites) fits any term of the kind.
     assert.ok(match(i, i));
     assert.ok(match(i, i, { querySite: {}, targetSite: { speaker: "sp(b)" } }));
