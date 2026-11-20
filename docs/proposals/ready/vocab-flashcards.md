@@ -1,6 +1,6 @@
 # Proposal: vocab flashcards v2
 
-**Status:** READY 2026-11-20. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); `docs/meta/flashcards.md` owns it once `claritish-flashcards.md` lands; phase 3 extends that doc). Decisions, 2026-11-20:
+**Status:** READY 2026-11-20. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 3 extends that doc). Decisions, 2026-11-20:
 - One pack per band, plus Everything.
 - One subdeck per unit; words and grammar share each subdeck; unlocking is per checkpoint, by tag.
 - Endings are taught once per kind; closed sets are drilled as overlapping cloze; no emoji on any card.
@@ -8,10 +8,10 @@
 - No contrast cards; confusable pairs wait for v3; Advanced stays its own pack.
 - GUIDs come from source + spelling + concrete gloss, with release tags for stale notes; the mnemonic stays on the back.
 - The plan ends with a Flashcards download page under **Tools**.
-- The Claritish pack ships first, in `claritish-flashcards.md`: it builds the publish step, the release tag scheme and `docs/meta/flashcards.md`, which this plan extends.
+- The Claritish pack shipped first (2026-11-20): it built the publish step, the release tag scheme and `docs/meta/flashcards.md`, which this plan extends.
 
 **Related:** [`src/flashcards.ts`](../../../src/flashcards.ts), [`scripts/flashcards.ts`](../../../scripts/flashcards.ts), [`scripts/flashcards-package.py`](../../../scripts/flashcards-package.py), [`scripts/flashcards-check.py`](../../../scripts/flashcards-check.py), [`data/lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column), units in [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), the [settled-to-passing scale](../../grammar/beginner/sakes.md#settled-to-passing), closed words in [`scripts/cheat-sheet-blocks.ts`](../../../scripts/cheat-sheet-blocks.ts), the sidebar in [`config.ts`](../../grammar/.vitepress/config.ts), [`amplify.yml`](../../../amplify.yml).  
-**Depends on:** `claritish-flashcards.md`.  
+**Depends on:** none. The Claritish pack shipped 2026-11-20: publish step, Amplify venv, release tags and [`docs/meta/flashcards.md`](../../meta/flashcards.md).  
 **Design authority:** none. No form or reading changes. Phase 1 moves six `core` cells earlier and tops up those checkpoints with existing forms.
 
 ## Problem
@@ -133,7 +133,7 @@ The page gets its checkpoint list and release id from a VitePress data loader, `
 
 ### Publishing
 
-`docs:publish` builds the four packs into `dist/grammar/flashcards/` beside the Claritish pack, through the publish step and Amplify venv that `claritish-flashcards.md` adds. A failed packaging step fails the deploy. Nothing generated is committed.
+`docs:publish` builds the four packs into `dist/grammar/flashcards/` beside the Claritish pack, through the publish step and Amplify venv the Claritish pack added ([publishing](../../meta/flashcards.md#publishing)). A failed packaging step fails the deploy. Nothing generated is committed.
 
 ## Plan
 
@@ -232,7 +232,7 @@ Gate: `npm run verify -- --allow-generate`, and `npm run flashcards` prints its 
 - **May edit:** `docs/grammar/flashcards.md`, `docs/grammar/.vitepress/config.ts` (Tools items only), a Vue component under `.vitepress/components/` if the tables need one.
 
 **U11 Meta doc.** `proposal-worker`, `model: opus`, effort `medium`.
-- Extend `docs/meta/flashcards.md` (written by `claritish-flashcards.md`) with the Ageben packs:
+- Extend `docs/meta/flashcards.md` (written with the Claritish pack) with the Ageben packs:
   - packs and decks, note types, keys and release tags, the anchor-to-checkpoint rule, endings and sets, the load check;
   - regenerating and the import check;
   - where decks are built.
