@@ -103,6 +103,7 @@ const jobs = [
   run("lint md balance", "node", ["scripts/lint-md-balance.mjs"]),
   run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"]),
   run("lint forward links", bin("tsx"), ["scripts/lint-forward-links.ts"]),
+  run("lint source size", bin("tsx"), ["scripts/lint-source-size.ts"]),
   run("lint prose style", bin("tsx"), ["scripts/lint-prose-style.ts"]),
   run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"]),
   run("lint claritish editor", bin("tsx"), ["scripts/lint-claritish-editor.ts"]),
