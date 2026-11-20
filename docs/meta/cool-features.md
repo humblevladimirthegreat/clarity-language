@@ -24,6 +24,22 @@ Not yet posted. Read the owning grammar page before drafting.
 
 ## Recent posts
 
+### Interpreter
+
+Not a feature of the language itself but around its tooling. Ageben is syntactically unambiguous, which means that code can understand it much better than natural languages. Natural languages require LLMs (like ChatGPT) to process intelligently, which has downsides like cost and hallucinations. LLMs are required for these applications because natural language is so ambiguous that no set of coded rules can correctly account for all or even most cases of how language is used. The design of Ageben is such that LLMs aren't required to accomplish many of the applications we currently use LLMs for.
+
+I don't have a decent demo yet but I've been building the interpretation engine that will allow some very cool applications down the road. Such as:
+
+* **Mind map view**: turns a passage into a collapsible mind map of who did what, under which condition, and who believes it.
+
+* **Structural search**: search a text using an Ageben sentence as the query, matching what was claimed instead of which words appear. A search for "the drug causes harm" won't also return "the drug doesn't cause harm" or "does it cause harm?".
+
+* **Wizard adventure**: a browser text adventure game where you play a wizard and every action is an Ageben sentence you type. There's no AI: the parser and hand-written rules respond, and characters reply in Ageben generated from the state of the world.
+
+* **Generic UI**: control applications by typing Ageben commands. Each participating app describes its own functions in Ageben and the interpreter executes those functions based on the Ageben you typed.
+
+* **Ageben agent**: an agent that carries out tasks from an Ageben prompt without a language model. Every belief, goal and plan it holds is an Ageben sentence stored in a knowledge base or derived from said knowledge. This means it can explain each step it takes, it asks when it doesn't know something, and the steps can be fixed and debugged in the code or knowledge base instead of adding "Don't make this mistake" into the prompt.
+
 ### Thanks and Sorry Built From What Happened
 
 Ageben has no set phrase for "thanks" or "sorry". Instead it builds it from the Sake words: nine psychological payoffs (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified).
@@ -120,65 +136,11 @@ You can't tell what an uknown word is from these letter cues alone, but it shoul
 
 Full docs: https://clarityconlang.com/grammar/root-tails.html
 
-### Command vs Prohibition Redundancy via Word-Order
-
-Sentences in Ageben start with a speech act word: yal for statements (usually omitted), yol for questions, yel for commands, and yul for prohibitions. Being only a single vowel apart can lead to mishearing though, so each act also has its own usual word order for redundancy:
-
-* statement - verb last
-* question - verb second
-* command - verb first (after the act word)
-* prohibition - verb last (like a statement)
-
-Prohibitions use the same word order as statements because that is less dangerous to confuse than sharing the same word order as a command. In the third and fourth examples below, note that even if you miss or mistake the first word, the word order means that you can't confuse "Don't eat the mushroom" with "Eat the mushroom." At worst you hear "(Someone) eats the mushroom" a description rather than an instruction.
-
-> `(yal) zazawan damahul vagadel.`
->
-> /(ˈjäl) ˈzä.zä.wän ˈdä.mä.ɦʉl ˈvä.ɡä.de̞l/
->
-> z-Azawan | d-mushroom | v-eat
->
-> "Azawan eats the mushroom."
-
-> `yel zazawan vagadel damahul.`
->
-> /ˈjo̞l ˈzä.zä.wän ˈvä.ɡä.de̞l ˈdä.mä.ɦʉl/
->
-> y-question | z-Azawan | v-eat | d-mushroom
->
-> "Does Azawan eat the mushroom?"
-
-> `yol vagadel damahul.`
->
-> /ˈje̞l ˈvä.ɡä.de̞l ˈdä.mä.ɦʉl/
->
-> y-command | v-eat | d-mushroom
->
-> "Eat the mushroom."
-
-> `yul damahul vagadel.`
->
-> /ˈjʉl ˈdä.mä.ɦʉl ˈvä.ɡä.de̞l/
->
-> y-prohibition | d-mushroom | v-eat
->
-> "Don't eat the mushroom."
-
-When you want to be extra sure that *don't* isn't missed, you can also say yul twice for emphasis.
-
-> `yul yul damahul vagadel.`
->
-> /ˈjʉl ˈjʉl ˈdä.mä.ɦʉl ˈvä.ɡä.de̞l/
->
-> y-prohibition | y-prohibition | d-mushroom | v-eat
->
-> "Don't eat the mushroom. Seriously, don't."
-
-Full docs: https://clarityconlang.com/grammar/speech-moves.html#act-word-order
-
 ## Older posts (summaries)
 
 Full text is in [cool-features-archive.md](cool-features-archive.md). Newest first.
 
+* **Command vs Prohibition Redundancy via Word-Order**: each act word has its own word order (statement and prohibition verb last, question verb second, command verb first), so a misheard `yul` can never turn "don't eat it" into "eat it"; `yul yul` stresses the prohibition.
 * **Labels Say How Far They Reach**: an infix before a label's ending marks how essential the trait is: `tha` this one occasion, `the` a pattern with exceptions, `tho` true in one relationship, `thu` a name only.
 * **Collective Verbs and Adjectives Use Plural**: `-x` on a verb or adjective means the group does or has it collectively (`vezehelx` sing together, `garagamx` collectively heavy), independent of whether the noun is plural.
 * **May Says If You're Finding Out**: stance `ovu` (*may*) takes an ending saying whether you'll find out (`-m` plain possibility, `-l` I'll find out, `-r` who knows).
