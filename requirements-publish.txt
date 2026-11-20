@@ -1,0 +1,2 @@
+# Python needed to publish the site (amplify.yml preBuild installs only this into .venv)
+genanki==0.13.1

@@ -3,9 +3,11 @@
  * After VitePress writes dist/grammar/, add Amplify publish extras:
  * root index (home vs 404), copy of 404.html, stubs for pageMoves, and the
  * plain-Markdown copies for AI agents (llms.txt, llms-full.txt, per-page .md), and the
- * parser bundle agents can run (tools/ageben.mjs).
+ * parser bundle agents can run (tools/ageben.mjs), and the Claritish flashcard pack
+ * (grammar/flashcards/claritish.apkg, packaged by .venv/bin/python with genanki).
  */
-import { copyFileSync, mkdirSync, writeFileSync } from 'node:fs'
+import { spawnSync } from 'node:child_process'
+import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -17,6 +19,10 @@ import {
 } from './lib/site-redirects.ts'
 import { agentBundle, AGENT_BUNDLE_PATH } from './lib/agent-bundle.ts'
 import { llmsFiles } from './lib/llms-txt.ts'
+import { claritishLessons } from '../docs/grammar/.vitepress/lib/reading-order.ts'
+import { CLARITISH_APKG_PATH } from '../docs/grammar/.vitepress/lib/claritish-flashcards.data.ts'
+import { CLARITISH_FIELDS, CLARITISH_MODEL, loadClaritishPack } from '../src/flashcards-claritish.ts'
+import { tmpPath } from '../src/tmp-paths.ts'
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
 const DIST = join(ROOT, 'dist')
@@ -48,3 +54,32 @@ for (const [path, body] of llmsFiles()) {
 const bundleDest = join(DIST, AGENT_BUNDLE_PATH)
 mkdirSync(dirname(bundleDest), { recursive: true })
 writeFileSync(bundleDest, await agentBundle())
+
+// Claritish flashcards: same pack JSON as `npm run flashcards -- --pack claritish`, without the
+// Anki import check (publishing installs only requirements-publish.txt). A failure fails the deploy.
+const python = join(ROOT, '.venv', 'bin', 'python')
+if (!existsSync(python)) {
+  throw new Error('no .venv/bin/python: create it with `python3 -m venv .venv && .venv/bin/pip install -r requirements-publish.txt`')
+}
+const pack = loadClaritishPack(claritishLessons)
+const packJson = tmpPath('out', 'flashcards', 'claritish-publish.json')
+mkdirSync(dirname(packJson), { recursive: true })
+writeFileSync(
+  packJson,
+  `${JSON.stringify({
+    model: CLARITISH_MODEL,
+    fields: CLARITISH_FIELDS,
+    decks: pack.decks.map((d) => ({
+      name: d.name,
+      id: d.id,
+      notes: d.notes.map((n) => ({ guid: n.guid, fields: CLARITISH_FIELDS.map((f) => n.fields[f]), tags: n.tags })),
+    })),
+  }, null, 1)}\n`,
+)
+const apkg = join(DIST, 'grammar', CLARITISH_APKG_PATH.replace(/^\//, ''))
+mkdirSync(dirname(apkg), { recursive: true })
+const packaged = spawnSync(python, [join(ROOT, 'scripts', 'flashcards-package.py'), packJson, apkg], { stdio: 'inherit' })
+if (packaged.status !== 0) {
+  throw new Error(`flashcards-package.py failed (status ${packaged.status ?? packaged.signal}) for ${apkg}`)
+}
+console.log(`claritish flashcards: ${pack.notes.length} notes in ${pack.decks.length} deck(s), release ${pack.releaseId} → dist/grammar${CLARITISH_APKG_PATH}`)

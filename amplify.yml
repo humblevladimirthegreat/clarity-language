@@ -8,6 +8,10 @@ frontend:
         - nvm use
         - node --version
         - npm ci
+        # Flashcard packaging (scripts/publish-docs-extras.mjs) runs genanki from .venv
+        - python3 --version
+        - python3 -m venv .venv
+        - .venv/bin/pip install -r requirements-publish.txt
     build:
       commands:
         - npm run docs:publish
