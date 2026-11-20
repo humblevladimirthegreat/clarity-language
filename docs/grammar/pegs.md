@@ -24,7 +24,7 @@ Only the root spells digits, so first take off the letters around it:
 
 `w` and `y` fill out a syllable without spelling a digit, so a five-letter root with one of them spells a single digit: `arowel` *radio* is 7, and `anewul` *knife* is 9. A root whose only consonants are `w` and `y`, like `ogayul` *ogre*, spells no number.
 
-Vowels never count, so roots that differ only in their vowels spell the same number: `agedal` *cutlery*, `agedel` *croissant* and `ogodal` *coconut* are all 32. When a number has several roots, pick the picture you find most vivid.
+Vowels never count, so roots that differ only in their vowels spell the same number: `ozedal` *cutlery*, `agedel` *croissant* and `ogodal` *coconut* are all 32. When a number has several roots, pick the picture you find most vivid.
 
 Longer words spell longer numbers:
 

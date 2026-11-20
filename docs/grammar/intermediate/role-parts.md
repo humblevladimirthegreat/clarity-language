@@ -61,7 +61,7 @@ The reach vowel does its usual work. Pair reach `e` takes its `bl-` party, as on
 
 ### Places, tools, and times {#places-tools-times}
 
-A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bamahal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
+A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](/hooks#extra-noun) (`al bohahal` *in a house*, `aol banewul` *using a knife*), and it has no role compound. Name it with words you already have:
 
 | Job | Ageben | English |
 |-----|--------|---------|

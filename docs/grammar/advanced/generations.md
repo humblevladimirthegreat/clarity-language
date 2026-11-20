@@ -108,7 +108,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *eat* | `vagedal` |
+| *eat* | `vozedal` |
 | *person* | `eyel` |
 | *see* | `vayebel` |
 | *sit* | `vehohel` |
@@ -119,9 +119,9 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Alazun, Azozon's youngest sibling, eats.*
 
 ::: details Show answer
-`zalazun g#-1e0 blazozon vagedal.`
+`zalazun g#-1e0 blazozon vozedal.`
 
-🔊 `zalazun gruowamoyabal blazozon vagedal.`
+🔊 `zalazun gruowamoyabal blazozon vozedal.`
 
 [z-Alazun | [g-#--1e0 | bl-Azozon]] | v-eat
 :::
@@ -156,7 +156,7 @@ z-Alazun | [d-parent-x | [g-#-e-1 | bl-Ahelan]] | v-see
 *Azozon, Alazun's eldest sibling, sits.*
 :::
 
-**2.** `zohoyolx growadol blazozon vagedal.`
+**2.** `zohoyolx growadol blazozon vozedal.`
 
 ::: details Show answer
 [z-child-x | [g-#-e2 | bl-Azozon]] | v-eat

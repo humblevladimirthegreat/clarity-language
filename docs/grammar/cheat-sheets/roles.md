@@ -96,7 +96,7 @@ Bare arrow words are compass headings. With mid-word `th` and a facing person th
 |--------|-----|---------|-------|
 | [Bare DIR](/viewpoint#viewpoint-vs-landmark) | compass / gravity | `gewuhol` *west*; `gabuhol` *up* | I |
 | [`DIR th ANCHOR`](/viewpoint#viewpoint-vs-landmark) | that point on ANCHOR's facing rose | `gewuhothawan` *listener-left* | I |
-| [DIR + `th` + `e` + `/b/`](/viewpoint#landmark-facing) | that point on the landmark's own rose | `gazuhothel blamahal` *behind the house* | I |
+| [DIR + `th` + `e` + `/b/`](/viewpoint#landmark-facing) | that point on the landmark's own rose | `gazuhothel blohahal` *behind the house* | I |
 | [complex `/ɡ/` + `/b/`](/viewpoint#viewpoint-vs-landmark) | region on a side of a landmark | `gewuhothazozon bledalol` *left of the tree, from Azozon's view* | I |
 
 The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer on `-r`. The ending applies to the anchor, not the direction.
@@ -114,11 +114,11 @@ The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer o
 <!-- cheat-sheet: roles -->
 | Ageben | English | Stage |
 |--------|---------|-------|
-| [`gazuhothel blamahal`](/viewpoint#landmark-facing) | *behind the house* (its own back) | I |
-| [`gonuhothel blamahal`](/viewpoint#landmark-facing) | *in front of the house* | I |
-| [`gewuhothel blamahal`](/viewpoint#landmark-facing) | *on the house's left* | I |
-| [`gewuhothazozon blamahal`](/viewpoint#landmark-facing) | *left of the house, from Azozon's view* | I |
-| [`gewuhol blamahal`](/viewpoint#landmark-facing) | *west of the house* | I |
+| [`gazuhothel blohahal`](/viewpoint#landmark-facing) | *behind the house* (its own back) | I |
+| [`gonuhothel blohahal`](/viewpoint#landmark-facing) | *in front of the house* | I |
+| [`gewuhothel blohahal`](/viewpoint#landmark-facing) | *on the house's left* | I |
+| [`gewuhothazozon blohahal`](/viewpoint#landmark-facing) | *left of the house, from Azozon's view* | I |
+| [`gewuhol blohahal`](/viewpoint#landmark-facing) | *west of the house* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -130,7 +130,7 @@ The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer o
 | [Under](/viewpoint#viewpoint-vs-landmark) | `zodozel vezuvel hoduhol bledalol.` | *The dog sleeps under the tree.* | I |
 | [Above](/viewpoint#viewpoint-vs-landmark) | `zebezel vehohel gabuhol blodozel.` | *A bird sits above the dog.* | I |
 | [Left of a landmark](/viewpoint#viewpoint-vs-landmark) | `zanal gewuhothazozon bledalol.` | *The book is left of the tree, from Azozon's view.* | I |
-| [Behind](/viewpoint#landmark-facing) | `zodozel vehohel gazuhothel blamahal.` | *The dog sits behind the house.* | I |
+| [Behind](/viewpoint#landmark-facing) | `zodozel vehohel gazuhothel blohahal.` | *The dog sits behind the house.* | I |
 
 <PageBreak />
 
@@ -143,5 +143,5 @@ The anchor can be `uwe` *speaker*, `awa` *listener*, a name, or a role pointer o
 | `zwuzeduyor` *the one teaching* ([this instance](/roles#role-compounds)) | | `gwuzeduyol` *is one who teaches* ([a label](/roles#saying-someone-is-a-teacher)) |
 | `daruyoxuwal` *a writing tool* ([a compound](/role-parts#places-tools-times)) | | `aol` *using* ([a hook on the clause](/hooks#extra-noun)) |
 | `gewuhol` *west* ([compass](/viewpoint#endings-and-resume)) | | `gewuhothazozon` *Azozon's left* ([a face](/viewpoint#endings-and-resume)) |
-| `gewuhothazozon bledalol` *left of the tree, from Azozon's view* ([a facing person](/viewpoint#viewpoint-vs-landmark)) | | `gewuhothel blamahal` *on the house's left* ([the landmark's own front](/viewpoint#landmark-facing)) |
+| `gewuhothazozon bledalol` *left of the tree, from Azozon's view* ([a facing person](/viewpoint#viewpoint-vs-landmark)) | | `gewuhothel blohahal` *on the house's left* ([the landmark's own front](/viewpoint#landmark-facing)) |
 | `hwozeduyol` *as a teacher* ([acting as](/role-parts#acting-as)) | | `hewem blwozeduyol` *like a teacher* ([likeness](/relations#likeness)) |

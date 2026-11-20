@@ -50,11 +50,11 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
   it("reads X HOOK Y in one role as one slot, and a hook's landmark as placed anywhere", () => {
     assert.deepEqual(rules("yel zazozon aor zahelan varuyol."), []);
     assert.deepEqual(rules("zazozon vowurol erom vazuvol."), []);
-    assert.deepEqual(rules("zazozon vowurol el bamahal."), []);
+    assert.deepEqual(rules("zazozon vowurol el bohahal."), []);
   });
 
   it("lets a measure /b/ go anywhere, like an /h/ word", () => {
-    assert.deepEqual(rules("zazozon bezerom gradol vowurol."), []);
+    assert.deepEqual(rules("zazozon bozerom gradol vowurol."), []);
     assert.deepEqual(rules("zahelan bagorum gradom vezuvel."), []);
     assert.deepEqual(rules("zalazun bazozon oel bahelan varal."), ["/b/ right after the verb"]);
   });
@@ -65,7 +65,7 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
   });
 
   it("leaves a stand-in and what follows it to the dependent", () => {
-    assert.deepEqual(rules("zahelan vezuyol balazun dorm vunurol."), []);
+    assert.deepEqual(rules("zahelan vezuyol balazun dorm vudurol."), []);
   });
 
   it("skips a moved sentence when the page also shows it in default order", () => {
@@ -89,7 +89,7 @@ describe("word order by speech act (speech-moves.md#act-word-order)", () => {
   it("reads a joined verb with its own object or recipient as one verb slot (verb-and-stance-joins.md#vp-clause-forms)", () => {
     assert.deepEqual(rules("zahelan vowuyal davogel erom vowurol."), []);
     assert.deepEqual(rules("zalazun vezuyol bahelan abam vowurol."), []);
-    assert.deepEqual(rules("zazozon dabedal vugudol daledel vagedal val."), []);
+    assert.deepEqual(rules("zazozon dabedal vugudol daledel vozedal val."), []);
     // A word after the last verb is not that verb's own: it still leaves statement order.
     assert.deepEqual(rules("zahelan vowurol abam vowuyal davogel."), ["statement: verb late"]);
   });

@@ -102,13 +102,13 @@ The sentence after `blarl` has to name an event or a thing, so it needs a noun o
 
 English *during*, *before*, *after*, and *until* can take a noun instead of a clause (*after the thunderstorm*). The time hinges take a noun the same way as *despite*: put the event or period in a `bl-` word right after `herom` *during*, `habam` *before*, `halam` *after*, or `harum` *until*. You can then place an event in time without writing a second sentence.
 
-> `zazozon vowurol herom blanulul.`
+> `zazozon vowurol herom blozulul.`
 >
 > z-Azozon | v-walk | [h-while | bl-storm]
 >
 > "Azozon walks during the thunderstorm."
 
-> `zazozon vehohel halam blanulul.`
+> `zazozon vehohel halam blozulul.`
 >
 > z-Azozon | v-sit | [h-after | bl-storm]
 >
@@ -118,7 +118,7 @@ English *during*, *before*, *after*, and *until* can take a noun instead of a cl
 
 *Until* and *by* both name an endpoint. `harum` *until* says this event lasts up to the endpoint. `huvahum` *by* says this event is done at the endpoint or sooner. (cue: 🏁 *finish line*: done by the time you reach the flag)
 
-> `zazozon vowurol huvahum blanulul.`
+> `zazozon vowurol huvahum blozulul.`
 >
 > z-Azozon | v-walk | [h-by | bl-storm]
 >

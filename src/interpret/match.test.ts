@@ -82,9 +82,9 @@ describe("match: switches", () => {
   });
 
   it("measures match by unit and amount", () => {
-    const walked = readRaw("zazozon bezerom gradol vowurol.");
-    assert.ok(match(readRaw("zazozon bezerom g+2 vowurol.").claim, walked.claim));
-    assert.equal(match(readRaw("zazozon bezerom gragel vowurol.").claim, walked.claim), undefined);
+    const walked = readRaw("zazozon bozerom gradol vowurol.");
+    assert.ok(match(readRaw("zazozon bozerom g+2 vowurol.").claim, walked.claim));
+    assert.equal(match(readRaw("zazozon bozerom gragel vowurol.").claim, walked.claim), undefined);
   });
 
   it("a speaker or listener term fits only the same turn's person, when both sites name one", () => {

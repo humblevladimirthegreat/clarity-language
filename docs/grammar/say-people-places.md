@@ -241,7 +241,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Ageben
 | `zwuzelahal` | *player* | `elahal` *playground* |
 | `zwozozuval` | *athlete* | `ozuval` *sport* |
 | `zwuzowunal` | *competitor* | `owunal` *water-polo* |
-| `zwuzomurol` | *winner* | `omurol` *victory* |
+| `zwuzevuyol` | *winner* | `evuyol` *victory* |
 | `zwozagobol` | *supporter* / *sponsor* | `agobol` *crutch* |
 | `zwozolamal` | *lover* | `olamal` *love* |
 | `zwozebodal` | *servant* / *server* / *assistant* | `ebodal` *plate* |
@@ -251,7 +251,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Ageben
 | `zwuzebal` | *audience* (those who hear) | `ebal` *ear* |
 | `zwozogayul` | *terrorist* | `ogayul` *ogre* |
 | `zwuzahavam` | *tourist* | `ahaval` *ship* |
-| `zwozamaham` | *neighbor* (add `em buwen` for *near me*) | `amahal` *house* |
+| `zwozohaham` | *neighbor* (add `em buwen` for *near me*) | `ohahal` *house* |
 | `zwozebayol` | *officer* (police) | `ebayol` *police* |
 | `zwozogahom` | *official* / *minister* | `ogahom` *institution* |
 | `zwozahalogahol` | *politician* | `ahalogahol` *government* |
@@ -274,7 +274,7 @@ English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwozed
 
 **Compare with:** *like a teacher* is [likeness](/relations#likeness) (`hewem blwozeduyol`).
 
-*Shareholder* is *owner* of a part: `zwuzegunum gobom blamahal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwozuzubal gohuyam bluwen`. *Relative* is a person who is part of the family: `zeyel gobom bluvayal`.
+*Shareholder* is *owner* of a part: `zwuzegunum gobom blohahal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwozuzubal gohuyam bluwen`. *Relative* is a person who is part of the family: `zeyel gobom bluvayal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalazun gegobom blazozon` is *Alazun is Azozon's boss* ([social relations](/social-ties#social-relations)).
 
@@ -423,9 +423,9 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *join* / *associate with* (come along) | `zazozon vowurol han blalazun.` | walks in company with Alazun |
 | *join* / *admit* (take into a set) | `zazozon dugedam vaen.` | admits the object; more may follow |
 | *belong to* | `zanal om balazun.` | in Alazun's use |
-| *consist of* / *made of* | `zamahal gulom blulol.` | material |
-| *comprise* / *constitute* / *is part of* | `zohowel gobom blamahal.` | a piece of the whole |
-| *match* / *correspond to* / *fit* (alike) | `zamahal hewem blodozel.` | like (likeness) |
+| *consist of* / *made of* | `zohahal gulom blulol.` | material |
+| *comprise* / *constitute* / *is part of* | `zohowel gobom blohahal.` | a piece of the whole |
+| *match* / *correspond to* / *fit* (alike) | `zohahal hewem blodozel.` | like (likeness) |
 | *replace* / *substitute* | `zazozon danal heham blohowel veham.` | swaps one for the other |
 | *represent* (act for) | `zazozon hanem blalazun vezuyol.` | tells on behalf of Alazun |
 | *prefer* | `zazozon danal von.` | ranks the object first |
@@ -472,14 +472,14 @@ English makes nouns for a part, a kind, a role, and a manner. Ageben has no sepa
 
 | English | Ageben | Reading |
 |---------|--------|---------|
-| *piece* / *fragment* / *feature* | `zohowel gobom blamahal.` | a part of the whole |
+| *piece* / *fragment* / *feature* | `zohowel gobom blohahal.` | a part of the whole |
 | *cluster* / *bunch* | the kind with `-x`: `zodozelx` | a set here ([group words](say-amounts.md#group-words)) |
 | *species* / *kind* (the category) | `zalenem` | classification |
 | *the dodo* / *the wolf* (the species itself) | `zuan gedozel` | [the kind itself](/universals-domains#kind-reference) |
 | *gender* / *sex* (the category) | `zuvugem zemugem zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
 | *patient* (being treated) | `zwudohemul` | the one who undergoes healing |
-| *scene* (where it happens) | `zazozon vowurol el bamahal. zalazun vehohel er.` | the place already named: *there* |
+| *scene* (where it happens) | `zazozon vowurol el bohahal. zalazun vehohel er.` | the place already named: *there* |
 | *function* (purpose) | `zanal guwathom.` | the book's purpose is competence |
 | *size* (how big) | `zanal zohowel zoel gelazem.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazozon vowurol hadurom.` |
@@ -527,7 +527,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *object* (grammatical) | `/d/` | done to ([role letters](/clause#role-letters)) |
 | *board* (committee) | `zuhunal` | a team |
 | *board* (plank) | `zulol` | wood |
-| *series* / *round* (a cycle) | `zoyugom` | cycle |
+| *series* / *round* (a cycle) | `zarugom` | cycle |
 | *operation* (an activity) | `zezobam` | activity |
 | *operation* (arithmetic) | `zaborom` | calculation |
 | *do* + a noun (*do the dishes*) | `zazozon debodalx vababal.` | the act itself in the verb slot: washes the plates |
@@ -535,7 +535,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *What is Azozon doing?* | `yel var zazozon.` | a [fill-ask](/questions#fill-ask) for the act |
 | *application* (use) | hook `aol` + tool | `zazozon vowurol aol bohowel.` |
 | *application* (software) | `zubogal` | a package |
-| *campaign* | `zazozon vuvuvum herom blanulul.` | struggles during a period |
+| *campaign* | `zazozon vuvuvum herom blozulul.` | struggles during a period |
 | *behavior* | `zezobam` | the activity, or a manner adverb |
 | *population* | `zeyelx gaham blahal` | people of the country |
 | *reference* (point back) | `dwuder` | a role pointer to the last thing done to |
@@ -546,7 +546,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *verb* | `zezuyolezobal` | the word for an action |
 | *noun* | `zezuyolanenel` | the word that names a thing |
 | *density* | `zuhazelagoral` | bulk packed into an extent |
-| *afternoon* | `zazuroladurul` | the late part of the day |
+| *afternoon* | `zazurolunurul` | the late part of the day |
 | *popular* | `golamaluhazel` | loved by the many |
 | *user* | `zwuzahebal` | doer with the hand |
 | *sentence* (a punishment) / *punishment* / *penalty* | `zebayomenemul` | harm from authority |
@@ -561,7 +561,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *editor* | `zwuzobewoluruyel` | doer of the editing |
 | *closely* | `zazozon vayebel huzavom hul.` | looks, not at a distance |
 | *briefly* | `zazozon vowurol bazerom gram.` | walks for about five seconds |
-| *wherever* | `el bual gamahal` | everywhere houses are |
+| *wherever* | `el bual gohahal` | everywhere houses are |
 | *alone* (without company) | `zazozon vowurol huan blur.` | walks without any other |
 | *single* (unmarried) | `zazozon guwuram gul.` | not in union |
 | *income* / *revenue* | `zaralanonal` | money incoming |
@@ -581,7 +581,7 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *tendency* | `huam` on the verb | usually, as a rule |
 | *cent* | `zuderel g-100` | a hundredth of a dollar |
 | *middle* / *central* | `zabel gobom blorahol` | the heart of the road |
-| *international* | `zamahal gedam blahal blahal bal` | between two countries |
+| *international* | `zohahal gedam blahal blahal bal` | between two countries |
 | *dependent on* | `zazozon vowurol thebem thahum blarl zalazun dazozon vagobol.` | walks only because Alazun supports Azozon |
 | *favorite* | `zolamalugulol` | the one loved first |
 | *count* / *total up* | `zazozon vaborom.` | calculates |
@@ -590,10 +590,10 @@ An English noun like *case* or *board* covers several jobs, and Ageben has a dif
 | *criticize* | `zazozon dalazun vuhuyom.` | judges Alazun |
 | *critical* (fault-finding) | `guhuyom` | judging |
 | *ride* (a bus) | `zazozon vebaval.` | rides the bus |
-| *environment* / *surroundings* | `zamahamogugal` | the world seen as the home around you |
+| *environment* / *surroundings* | `zohahamogugal` | the world seen as the home around you |
 | *efficiency* | `zuvahamuzubal` | output for the effort |
-| *holder* (a thing that holds) | `zahebalayobal` | what holds in the hand |
-| *holder* (a person who bears) | `zwuzayobal` | doer of the bearing |
+| *holder* (a thing that holds) | `zahebaloyobal` | what holds in the hand |
+| *holder* (a person who bears) | `zwuzoyobal` | doer of the bearing |
 | *intervention* | `zazozon vavobol hedam blalazun blahelan bal.` | comes between the two |
 | *reduce* | `zazozon danal v-3.` | decreases the object by three |
 | *reduce* (cut down) | `zazozon danal vagowul.` | cuts it |
@@ -680,14 +680,14 @@ Some English words have a second or third sense that a published root already ca
 | *experience* (skill) | `zuwam` | readiness |
 | *side* (position, location) | `zehohem` | a position |
 | *address* (a location) | `zehohem` | where it is |
-| *public* (open to everyone) | `zamahal gaen blual.` | a house open to all |
+| *public* (open to everyone) | `zohahal gaen blual.` | a house open to all |
 | *character* (a trait) | `zevebem` | trace |
 | *special* (dear to one person) | `zazozon golamam.` | cherished |
-| *fit* (healthy) | `zazozon goredem.` | in health |
+| *fit* (healthy) | `zazozon gewedem.` | in health |
 | *fit* (suits) | `guwatham` | a met need ([sake words](say-reasons.md#sake-words)) |
-| *match* (a contest) | `zazaham` | a contest |
+| *match* (a contest) | `zenaham` | a contest |
 | *ride* (a horse, a bike) | `zazozon vahavam aol bohazol.` | travels using the horse |
-| *admit* (acknowledge a fault) | `zazozon dayobal vowuyam.` | acknowledges the harm |
+| *admit* (acknowledge a fault) | `zazozon doyobal vowuyam.` | acknowledges the harm |
 | *directly* (without a go-between) | `gurom` | straight |
 | *set off* / *start* | `vuyugom` | [starts](say-reasons.md#phase-verbs) |
 | *turn off* / *stop* | `vezohul` | [stops](say-reasons.md#phase-verbs) |

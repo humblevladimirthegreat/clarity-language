@@ -142,13 +142,13 @@ English *walks more often than* ranks how many times something happens. Write di
 
 English *arrives earlier than* ranks when something happens. Write digitless **`bral`** (*later*) in the same place, right after the rank join. Rank `o` is *later than*, and `uo` is *earlier than*.
 
-> `zazozon zalazun zol bral vayurol.`
+> `zazozon zalazun zol bral vavurol.`
 >
 > [z-Azozon | z-Alazun | z-rank/more | b-later] | v-arrival
 >
 > "Azozon arrives later than Alazun."
 
-> `zazozon zalazun zuol bral vayurol.`
+> `zazozon zalazun zuol bral vavurol.`
 >
 > [z-Azozon | z-Alazun | z-rank/less | b-later] | v-arrival
 >
@@ -206,7 +206,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *pie* | `abodal` | 🥧 |
 | *lift* | `velunel` | 🏋️: its abstract is *exertion* |
-| *arrival* | `vayurol` | 🛬 |
+| *arrival* | `vavurol` | 🛬 |
 
 **Review:**
 
@@ -281,7 +281,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Azozon lifts more often than Alazun.*
 :::
 
-**3.** `zahelan zalazun zuol bral vayurol.`
+**3.** `zahelan zalazun zuol bral vavurol.`
 
 ::: details Show answer
 [z-Ahelan | z-Alazun | z-rank/less | b-later] | v-arrival

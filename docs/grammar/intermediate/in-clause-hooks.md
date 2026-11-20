@@ -83,7 +83,7 @@ A surprise word on the *including* hook gives English *even*: **`wemem al`** add
 
 On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right after it. A `/ɡ/` word after the landmark still describes the landmark.
 
-> `zodozel vezuvel wal al bamahal.`
+> `zodozel vezuvel wal al bohahal.`
 >
 > z-dog | v-sleep | [[w-never | in] | b-house]
 >
@@ -103,13 +103,13 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 | `ur` | the place already named, as a source | *from there* |
 | `or` | the one already named, as a goal | *for that* / *for it* |
 
-> `zazozon vehohel el bamahal. zalazun vehohel er.`
+> `zazozon vehohel el bohahal. zalazun vehohel er.`
 >
 > z-Azozon | v-sit | [at | b-house] . z-Alazun | v-sit | there
 >
 > "Azozon sits at the house. Alazun sits there too."
 
-> `zodozel vezuvel al bamahal. zodozer veruvol ur.`
+> `zodozel vezuvel al bohahal. zodozer veruvol ur.`
 >
 > z-dog | v-sleep | [in | b-house] . z-←dog | v-run | from.there
 >
@@ -136,7 +136,7 @@ Stacked extra-noun vowels, the hooks with two vowels, point back the same way: t
 >
 > "Azozon writes a book with a pen. Alazun writes with it too."
 
-> `zazozon vowurol uel bamahal. zalazun vowurol uer.`
+> `zazozon vowurol uel bohahal. zalazun vowurol uer.`
 >
 > z-Azozon | v-walk | [through | b-house] . z-Alazun | v-walk | through.there
 >

@@ -16,13 +16,13 @@ English says where someone is or moves with small words such as *in*, *from*, *t
 >
 > "Azozon walks from a station toward a train."
 
-> `zazozon ul bamahal vowurol el bezahol.`
+> `zazozon ul bohahal vowurol el bezahol.`
 >
 > z-Azozon | [from | b-house] | v-walk | [at | b-station]
 >
 > "Azozon walks from a house to a station."
 
-> `zalazun ual bamahal veruvol al bedavol.`
+> `zalazun ual bohahal veruvol al bedavol.`
 >
 > z-Alazun | [out-of | b-house] | v-run | [in | b-train]
 >
@@ -93,13 +93,13 @@ English has four more words for where a path or a place sits against one landmar
 
 *Past* is **`hegalom`**: the path comes near the landmark and goes on, without stopping there and without going in. (cue: ☄️ *comet*: a comet swings by the sun and keeps going)
 
-> `zazozon vowurol hegalom blamahal.`
+> `zazozon vowurol hegalom blohahal.`
 >
 > z-Azozon | v-walk | [h-past | bl-house]
 >
 > "Azozon walks past a house."
 
-`em` *near* says only that the person is close, and `hohom` *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zamahal gegalom blezahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
+`em` *near* says only that the person is close, and `hohom` *across* reaches both edges. On a noun, **`gegalom`** names what you reach by going past the landmark: `zohahal gegalom blezahol` *a house past the station*. As a plain noun, `zegalol` is *a comet*.
 
 *Along* is **`herahom`**: the path, or a row of things, follows the long side of the landmark (a road, a river, a train). It covers both walking on a road and walking beside it. (cue: 🛤️ *railway*: two rails run side by side the whole way)
 
@@ -109,7 +109,7 @@ English has four more words for where a path or a place sits against one landmar
 >
 > "Alazun runs along a train."
 
-On a noun it is **`gerahom`**: `zamahalx gerahom bledavol` *houses along the train*. As a plain noun, `zerahol` is *a railway*.
+On a noun it is **`gerahom`**: `zohahalx gerahom bledavol` *houses along the train*. As a plain noun, `zerahol` is *a railway*.
 
 *Opposite* is **`havunam`**: the person faces the landmark with a gap between them. (cue: 🏐 *volleyball*: the two sides face each other over the net)
 
@@ -158,7 +158,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *bridge* | `ohol` | 🌉 |
-| *house* | `amahal` | 🏠 |
+| *house* | `ohahal` | 🏠 |
 
 **Review:**
 
@@ -178,7 +178,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Ahelan walks from a house to a bridge.*
 
 ::: details Show answer
-`zahelan ul bamahal vowurol el bohol.`
+`zahelan ul bohahal vowurol el bohol.`
 
 z-Ahelan | [from | b-house] | v-walk | [at | b-bridge]
 :::
@@ -202,7 +202,7 @@ z-Alazun | v-run | [h-across | bl-water]
 **4.** *Azozon walks past the house.*
 
 ::: details Show answer
-`zazozon vowurol hegalom blamahal.`
+`zazozon vowurol hegalom blohahal.`
 
 z-Azozon | v-walk | [h-past | bl-house]
 :::

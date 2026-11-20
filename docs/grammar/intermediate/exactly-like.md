@@ -14,7 +14,7 @@ You already say *like* with `hewem` / `gewem`: the event or thing resembles the 
 >
 > "Azozon walks exactly like a duck."
 
-> `zamahal gewel blazozon.`
+> `zohahal gewel blazozon.`
 >
 > z-house | [g-exactly-like | bl-Azozon]
 >
@@ -42,7 +42,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *duck* | `adozal` |
-| *house* | `amahal` |
+| *house* | `ohahal` |
 | *run* | `veruvol` |
 | *walk* | `vowurol` |
 | *see* | `vayebel` |
@@ -60,7 +60,7 @@ z-Alazun | [h-exactly-like | bl-duck] | v-run
 **2.** *A house just like Azozon's.*
 
 ::: details Show answer
-`zamahal gewel blazozon.`
+`zohahal gewel blazozon.`
 
 z-house | [g-exactly-like | bl-Azozon]
 :::

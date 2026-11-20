@@ -205,8 +205,8 @@ holds(most(dt("slot:adj","gelazem"),ahela)) :- on("t:0.18").
 fired("t:0.18",most(dt("slot:adj","gelazem"),ahela)) :- on("t:0.18").
 % t:0.19
 on("t:0.19").
-holds(neg(ageda(z(alazu),d(obode)))) :- on("t:0.19").
-fired("t:0.19",neg(ageda(z(alazu),d(obode)))) :- on("t:0.19").
+holds(neg(ozeda(z(alazu),d(obode)))) :- on("t:0.19").
+fired("t:0.19",neg(ozeda(z(alazu),d(obode)))) :- on("t:0.19").
 % t:0.20
 on("t:0.20").
 holds(neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.20").

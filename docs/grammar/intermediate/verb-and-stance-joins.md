@@ -73,7 +73,7 @@ A hook with its `/b/` is an item word too:
 
 Words that every verb shares go in one of two places: after the join, or before the subject. After the join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. The join counts as *the verb*, so a recipient right after it is in its [usual place](/speech-moves#act-word-order).
 
-> `zazozon vugudol vagedal val dabedal.`
+> `zazozon vugudol vozedal val dabedal.`
 >
 > z-Azozon | [v-cooking | v-eat | v-and | d-popcorn]
 >
@@ -93,17 +93,17 @@ Words that every verb shares go in one of two places: after the join, or before 
 
 Before the subject, a word covers every verb. That is the place for scene-setting words (`h_15,30 zazozon vowurol veruvol val` *at 15:30 Azozon walks and runs*), and for a shared object when you want the verbs last. English works the same way: a fronted object is shared, and *cooked popcorn and ate* is not.
 
-> `dabedal zazozon vugudol vagedal val.`
+> `dabedal zazozon vugudol vozedal val.`
 >
 > d-popcorn | z-Azozon | [v-cooking | v-eat | v-and]
 >
 > "Popcorn, Azozon cooked and ate."
 
-A verb that has its own object takes no shared object, and a verb that has its own recipient takes no shared recipient. After `dabedal vugudol vagedal val`, a shared object would give *cook* two objects, so it is not a sentence. Put the second object in its own verb's item instead (`dabedal vugudol daledel vagedal val`).
+A verb that has its own object takes no shared object, and a verb that has its own recipient takes no shared recipient. After `dabedal vugudol vozedal val`, a shared object would give *cook* two objects, so it is not a sentence. Put the second object in its own verb's item instead (`dabedal vugudol daledel vozedal val`).
 
 A [stance](/clause#stance-th) `/th/` word and an [intention adverb](/can-and-cant#intention-adverbs) are never item words, wherever they sit: like any stance word, each is about the whole claim. A `bl-` word right after an `/h/`, `/ɡ/`, or `/th/` word still completes that word.
 
-With no subject, a statement with a shared object starts with its verbs (`vugudol vagedal val dabedal`), which is the default order for a command. Name the subject when the act could be misheard.
+With no subject, a statement with a shared object starts with its verbs (`vugudol vozedal val dabedal`), which is the default order for a command. Name the subject when the act could be misheard.
 
 A rank join on verb phrases puts the acts in order of priority, so the earlier act is the one preferred: *would rather walk than run*.
 

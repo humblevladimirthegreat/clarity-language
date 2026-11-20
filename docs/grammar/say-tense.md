@@ -200,7 +200,7 @@ English time words (*today*, *previously*, *continue*) mostly use the same chann
 | *future* / *in the future* | a channel + **`blral`** |
 | *once* (*one time*) | `h+1` before the verb |
 | *ever* (*Have you walked at all?*) | **`havem`** + **`her`** (*anytime*) under **`yel`**: `yel her zawan havem vowurol` |
-| *during* (*during the storm*) | **`herom`** + `/b/`: `herom blanulul` |
+| *during* (*during the storm*) | **`herom`** + `/b/`: `herom blozulul` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrawul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hugulom`** (*first*, as a manner adverb) |
 | *continue* / *keep doing* | **`hawum`** (*still*) |

@@ -59,7 +59,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 
 To say that a belonging of yours *serves* a sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word `th`, `a`, then an ending. That adjective describes the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away. With `-m`, you leave the time horizon unstated:
 
-> `zamahal guwatham.`
+> `zohahal guwatham.`
 >
 > z-house | g-competence-met-any-term
 >
@@ -191,10 +191,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *tent* | `anahal` | ⛺ |
+| *tent* | `odahal` | ⛺ |
 | *wind* | `awulol` | 🌬️ |
 | *calendar* | `agorol` | 📅 |
-| *storm* | `anulul` | ⛈️ |
+| *storm* | `ozulul` | ⛈️ |
 | *night* | `anurul` | 🌃 |
 | *autonomy* | `unal` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `uwal` | 🧰 from *tool*: the kit that gets things working |
@@ -223,7 +223,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *My tent serves the physical sake in the long term.*
 
 ::: details Show answer
-`zanahal gobathal.`
+`zodahal gobathal.`
 
 z-tent | g-physical-met-lasting
 :::
@@ -247,7 +247,7 @@ z-wind | [w-physical-unmet-passing | g-stimulus]
 **4.** *The thunderstorm detracts from pleasure.* (modifiable)
 
 ::: details Show answer
-`zanulul wodethum goyom.`
+`zozulul wodethum goyom.`
 
 z-storm | [w-pleasure-unmet-modifiable | g-stimulus]
 :::
@@ -302,7 +302,7 @@ z-Azozon | v-sing | th-competence-unmet-modifiable
 *Azozon sings, and that knocks my confidence.* (modifiable)
 :::
 
-**5.** `zanahal godethur gobathal.`
+**5.** `zodahal godethur gobathal.`
 
 ::: details Show answer
 [z-tent | g-pleasure-unmet-passing | g-physical-met-lasting]

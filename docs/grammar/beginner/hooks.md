@@ -162,7 +162,7 @@ The four one-vowel hooks name the everyday extras; each cue reads the prepositio
 | **`ul`** | *from* | source of a path | except that landmark |
 | **`ol`** | *for* | who or what the act is meant for | rather this aim |
 
-> `zodozel vezuvel al bamahal.`
+> `zodozel vezuvel al bohahal.`
 >
 > z-dog | v-sleep | [in | b-house]
 >
@@ -202,7 +202,7 @@ These hooks take `-l`: the landmark is the exact place, point, source, or goal.
 
 To say where something is (*there is a dog in a house*), write the noun with no verb, then the hook and its `/b/`. A noun alone says the thing [exists](predication.md#existence), and the hook places it.
 
-> `zodozel al bamahal.`
+> `zodozel al bohahal.`
 >
 > z-dog | [in | b-house]
 >
@@ -214,7 +214,7 @@ To say where something is (*there is a dog in a house*), write the noun with no 
 
 For *since* (from a starting point, and still true now), use `ul` *from* with a time instead of a place: *from the thunderstorm on*. [`halam`](dependents.md#time-hinges) *after* only places the event later. `ul` says the event has gone on from that point until now. (cue: `u` ≈ undo: leave the starting point behind)
 
-> `zazozon vehohel ul banulul.`
+> `zazozon vehohel ul bozulul.`
 >
 > z-Azozon | v-sit | [from | b-storm]
 >

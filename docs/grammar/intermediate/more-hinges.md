@@ -43,7 +43,7 @@ English can place one thing in time rather than the whole event (*the walk after
 | *until* | **`garum`** |
 | *by* | **`guvahum`** |
 
-> `zalazun dowurol galam blanulul vayebel.`
+> `zalazun dowurol galam blozulul vayebel.`
 >
 > z-Alazun | [d-walk | [g-after | bl-storm]] | v-see
 >
@@ -70,7 +70,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *dance* | `vunurol` |
+| *dance* | `vudurol` |
 | *drink* | `vududal` |
 | *very* | `welazem` |
 | *slow* | `uzezam` |
@@ -86,7 +86,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Azozon drinks the cocktail after the dance.* (*after the dance* says which cocktail)
 
 ::: details Show answer
-`zazozon dagudal galam blunurol vududal.`
+`zazozon dagudal galam bludurol vududal.`
 
 z-Azozon | [d-cocktail | [g-after | bl-dance]] | v-drink
 :::
@@ -102,14 +102,14 @@ z-Azozon | [d-cocktail | [g-after | bl-dance]] | v-drink
 **3.** *Alazun dances so hastily that Ahelan cries.*
 
 ::: details Show answer
-`zalazun welazem hadurom vunurol hahom blarl zahelan vagamul.`
+`zalazun welazem hadurom vudurol hahom blarl zahelan vagamul.`
 
 z-Alazun | [w-very | h-haste] | v-dance | [h-so-result | bl-that-clause] | z-Ahelan | v-cry
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zahelan dagudal gabam blunurol vududal vul.`
+**1.** `zahelan dagudal gabam bludurol vududal vul.`
 
 ::: details Show answer
 z-Ahelan | [d-cocktail | [g-before | bl-dance]] | [v-drink | v-not]
@@ -125,7 +125,7 @@ z-Ahelan | [d-cocktail | [g-before | bl-dance]] | [v-drink | v-not]
 *Ahelan is so angry that she throws the cocktail.*
 :::
 
-**3.** `zalazun vunurol. xezem zazozon welazem guzezam hahom blarl zazozor vehohel.`
+**3.** `zalazun vudurol. xezem zazozon welazem guzezam hahom blarl zazozor vehohel.`
 
 ::: details Show answer
 z-Alazun | v-dance . x-however | [z-Azozon | [w-very | g-slow]] | [h-so-result | bl-that-clause] | z-←Azozon | v-sit
@@ -135,10 +135,10 @@ z-Alazun | v-dance . x-however | [z-Azozon | [w-very | g-slow]] | [h-so-result |
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ahelan dances so hastily that Azozon sits down.* <!-- lint: error -->`zahelan welazem hadurom vunurol thovam blarl zazozon vehohel.`
+**1.** *Ahelan dances so hastily that Azozon sits down.* <!-- lint: error -->`zahelan welazem hadurom vudurol thovam blarl zazozon vehohel.`
 
 ::: details Show answer
-`zahelan welazem hadurom vunurol hahom blarl zazozon vehohel.`
+`zahelan welazem hadurom vudurol hahom blarl zazozon vehohel.`
 
 z-Ahelan | [w-very | h-haste] | v-dance | [h-so-result | bl-that-clause] | z-Azozon | v-sit
 
@@ -147,7 +147,7 @@ English *so … that* is not *so that*: **`thovam`** makes the sitting only Ahel
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zalazun dagudal galam blunurol vududal.` / `zalazun dagudal halam blunurol vududal.`
+**1.** `zalazun dagudal galam bludurol vududal.` / `zalazun dagudal halam bludurol vududal.`
 
 ::: details Show answer
 z-Alazun | [d-cocktail | [g-after | bl-dance]] | v-drink

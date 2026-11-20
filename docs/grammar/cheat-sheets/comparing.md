@@ -63,8 +63,8 @@ Keep the rank join; change what the shared word is.
 | [Amount, by impression](/comparative-arity#amount-scale): `gram` | `zogozelx zodozelx zol gram.` | *It looks like there are more cats than dogs.* | I |
 | [How many more](/comparative-arity#amount-scale): difference in `/b/` | `zogozelx zodozelx zol gral blragel.` | *There are three more cats than dogs.* | I |
 | [Frequency](/comparative-arity#frequency-scale): `hral` | `zazozon zalazun zol hral vowurol.` | *Azozon walks more often than Alazun.* | I |
-| [Time, later](/comparative-arity#time-scale): `bral` | `zazozon zalazun zol bral vayurol.` | *Azozon arrives later than Alazun.* | I |
-| [Time, earlier](/comparative-arity#time-scale) | `zazozon zalazun zuol bral vayurol.` | *Azozon arrives earlier than Alazun.* | I |
+| [Time, later](/comparative-arity#time-scale): `bral` | `zazozon zalazun zol bral vavurol.` | *Azozon arrives later than Alazun.* | I |
+| [Time, earlier](/comparative-arity#time-scale) | `zazozon zalazun zuol bral vavurol.` | *Azozon arrives earlier than Alazun.* | I |
 | [The more …, the more …](/comparative-arity#covarying) | `zazozon hral vowurol xoel zalazun hral vezuvel.` | *The more Azozon walks, the more Alazun sleeps.* | I |
 | [The more …, the less …](/comparative-arity#covarying) | `zazozon hral vowurol xuol zalazun hral vezuvel.` | *The more Azozon walks, the less Alazun sleeps.* | I |
 | [Twice as](/comparative-arity#factor): factor after the adjective | `zazozon zalazun zoel gelazem hradol.` | *Azozon is twice as big as Alazun.* | I |
@@ -86,9 +86,9 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Later than planned](/bars#bars) | `zazozon thagom zol bral vayurol.` | *Azozon arrives later than planned.* | I |
-| [Stance after the fence](/bars#bars) | `zazozon zol bral vayurol thagom.` | *I plan for Azozon to arrive last.* | I |
-| [More than planned, on an object](/bars#bars) | `zazozon dodelx thagom dol gral vagedal.` | *Azozon eats more strawberries than planned.* | I |
+| [Later than planned](/bars#bars) | `zazozon thagom zol bral vavurol.` | *Azozon arrives later than planned.* | I |
+| [Stance after the fence](/bars#bars) | `zazozon zol bral vavurol thagom.` | *I plan for Azozon to arrive last.* | I |
+| [More than planned, on an object](/bars#bars) | `zazozon dodelx thagom dol gral vozedal.` | *Azozon eats more strawberries than planned.* | I |
 | [Often, on a recipient](/bars#bars) | `zazozon vezuyol balazun thagom bol hral.` | *Azozon tells Alazun more often than planned.* | I |
 | [Than usual](/bars#channel-bars) | `zazozon thubom zol guzemel.` | *Azozon is sleepier than usual.* | I |
 | [Than I remember](/stance-bars#which-bar) | `zazozon thevum zol gelazem.` | *Azozon is bigger than I remember.* | A |
@@ -96,7 +96,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than I expected](/stance-bars#which-bar) | `zazozon thabem zol guzemel.` | *Azozon is sleepier than I expected.* | A |
 | [Than they used to be](/stance-bars#which-bar) | `zazozon helam zol guzemel.` | *Azozon is sleepier than they used to be.* | A |
 | [As … as possible](/stance-bars#limits-and-hopes) | `zalazun hodaxal zoel hadurom vowurol.` | *Alazun walks as hastily as possible.* | A |
-| [Up to code](/stance-bars#limits-and-hopes) | `zamahal hwuvol zoel gabobem.` | *The house is as strong as the rules require.* | A |
+| [Up to code](/stance-bars#limits-and-hopes) | `zohahal hwuvol zoel gabobem.` | *The house is as strong as the rules require.* | A |
 | [More than allowed](/stance-bars#limits-and-hopes) | `zedudal hwuval zol gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](/stance-bars#limits-and-hopes) | `zanal theguyom zol gagebem.` | *The book is clearer than I hoped.* | A |
 | [Than feared](/stance-bars#limits-and-hopes) | `zanal thewemum zuol gagebem.` | *The book is even less clear than I feared.* | A |
@@ -151,4 +151,4 @@ English *many* and *often* rank against an unstated baseline. Ageben names the b
 | `zoel` *as … as* ([a tie](/comparatives#equatives)) | | `zazozon zalazun zuol gamahum` *not as … as* ([below](/comparative-arity#comparative-arity)) |
 | `zol gamahum` *no most* ([standalone](/comparative-arity#comparative-arity)) | | `zor gamahum` *whatever ranks highest* · `zazozon zalazun zor gamahum` *whichever of these* ([someone is on top](/comparative-arity#comparative-arity)) |
 | `zalazun zazozon zol hahunom vowurol` *more intensely than* ([ranks the manner](/comparative-arity#manner-scale)) | | `gahunom` *more intense* ([a quality of the people](/comparative-arity#manner-scale)) |
-| `zazozon thagom zol bral vayurol` *later than planned* ([a bar before the join](/bars#bars)) | | `zazozon zol bral vayurol thagom` *I plan for them to be last* ([a stance after](/bars#bars)) |
+| `zazozon thagom zol bral vavurol` *later than planned* ([a bar before the join](/bars#bars)) | | `zazozon zol bral vavurol thagom` *I plan for them to be last* ([a stance after](/bars#bars)) |

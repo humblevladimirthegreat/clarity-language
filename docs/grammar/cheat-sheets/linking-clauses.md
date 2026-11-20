@@ -88,10 +88,10 @@ Put an event or period in a `bl-` word after the time hinge. *Until*: lasts up t
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [During](/dependents#time-hinges) | `zazozon vowurol herom blanulul.` | *Azozon walks during the thunderstorm.* | B |
-| [After](/dependents#time-hinges) | `zazozon vehohel halam blanulul.` | *Azozon sits after the thunderstorm.* | B |
-| [By](/dependents#by-deadline) | `zazozon vowurol huvahum blanulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
-| [A noun in time](/more-hinges#time-hinge-on-noun) | `zalazun dowurol galam blanulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
+| [During](/dependents#time-hinges) | `zazozon vowurol herom blozulul.` | *Azozon walks during the thunderstorm.* | B |
+| [After](/dependents#time-hinges) | `zazozon vehohel halam blozulul.` | *Azozon sits after the thunderstorm.* | B |
+| [By](/dependents#by-deadline) | `zazozon vowurol huvahum blozulul.` | *Azozon walks by the time of the thunderstorm.* (done no later than that) | B |
+| [A noun in time](/more-hinges#time-hinge-on-noun) | `zalazun dowurol galam blozulul vayebel.` | *Alazun sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
 
 On a noun: `gerom` *during*, `gabam` *before*, `galam` *after*, `garum` *until*, `guvahum` *by*. *Since* is [*from* on a time](/hooks#since).
 
@@ -182,7 +182,7 @@ The relation word takes the other noun as a `bl-` word right after it. Use `/h/`
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Like, on an event](/relations#likeness) | `zazozon hewem bladozal vowurol.` | *Azozon walks like a duck.* | B |
-| [Like, on a noun](/relations#likeness) | `zamahal gewem blazozon.` | *A house like Azozon's.* | B |
+| [Like, on a noun](/relations#likeness) | `zohahal gewem blazozon.` | *A house like Azozon's.* | B |
 | [Like an event](/relations#likeness): `blarl` | `zazozon vowurol hewem blarl zadozal vazuvol.` | *Azozon walks the way a duck swims.* | B |
 | [Alike](/relations#likeness) | `zazozon zalazun zal gewem.` | *Azozon and Alazun are alike.* | B |
 | [Exactly like](/exactly-like#exactly-like) | `zazozon hewel bladozal vowurol.` | *Azozon walks exactly like a duck.* | I |
@@ -209,14 +209,14 @@ Plain *in*, *on*, *at*, *from*, *toward* are [hooks](/extra-noun-hooks#extra-nou
 | [Between](/locative-relations#locative-relations) | `zalazun vehohel hedam bledavol blezahol bal.` | *Alazun sits between a train and a station.* | I |
 | [Across](/locative-relations#locative-relations) | `zazozon vowurol hohom blezahol.` | *Azozon walks across the station.* | I |
 | [Around](/locative-relations#locative-relations) | `zogozelx vehohel hevam bledavol.` | *Cats sit around a train.* | I |
-| [Past](/locative-relations#path-and-far-side) | `zazozon vowurol hegalom blamahal.` | *Azozon walks past a house.* | I |
+| [Past](/locative-relations#path-and-far-side) | `zazozon vowurol hegalom blohahal.` | *Azozon walks past a house.* | I |
 | [Along](/locative-relations#path-and-far-side) | `zalazun veruvol herahom bledavol.` | *Alazun runs along a train.* | I |
 | [Opposite](/locative-relations#path-and-far-side) | `zahelan vehohel havunam blazozon.` | *Ahelan sits opposite Azozon.* | I |
 | [Across from](/locative-relations#path-and-far-side) | `zahelan vehohel havunam blazozon hohom blezahol.` | *Ahelan sits across the station from Azozon.* | I |
 | [Beyond](/locative-relations#path-and-far-side) | `zalazun vehohel huzurum blezahol.` | *Alazun sits beyond the station.* | I |
 | [Up the hill](/viewpoint#viewpoint-vs-landmark) | `zazozon vowurol herahom blamahul habuhol.` | *Azozon walks up the mountain.* | I |
 | [From, toward](/locative-relations#locative-relations) | `zazozon ul bezahol vowurol oel bedavol.` | *Azozon walks from a station toward a train.* | I |
-| [Out of, in](/locative-relations#locative-relations) | `zalazun ual bamahal veruvol al bedavol.` | *Alazun runs out of a house into a train.* | I |
+| [Out of, in](/locative-relations#locative-relations) | `zalazun ual bohahal veruvol al bedavol.` | *Alazun runs out of a house into a train.* | I |
 
 ### Of {#of}
 
@@ -237,7 +237,7 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 |-----|---------|---------|-------|
 | [Part of](/of-relations#of-relations) | `zazozon dahebal gobom blalazun vayebel.` | *Azozon sees one of Alazun's hands.* | I |
 | [Contents of](/of-relations#of-relations) | `zazozon dedodal gadam bledudal vayebel.` | *Azozon sees a teapot full of tea.* | I |
-| [Made of](/of-relations#of-relations) | `zazozon damahal gulom blulol vayebel.` | *Azozon sees a house made of wood.* | I |
+| [Made of](/of-relations#of-relations) | `zazozon dohahal gulom blulol vayebel.` | *Azozon sees a house made of wood.* | I |
 | [From](/of-relations#of-relations) | `zalazun gaham blazahol vowurol.` | *Alazun, who is from the city, walks.* | I |
 | [A piece of](/of-relations#of-relations): substance first | `zazozon dobodel gozowum vayebel.` | *Azozon sees a piece of bread.* | I |
 

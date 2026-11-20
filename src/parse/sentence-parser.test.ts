@@ -107,15 +107,15 @@ describe("sentence-parser synthetic", () => {
       const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
       return part?.shared.map((item) => item.word.raw);
     };
-    assert.deepEqual(sharedOf("zazozon zalazun zol bral vayurol."), ["bral"]);
-    assert.deepEqual(sharedOf("zazozon zalazun zal bral vayurol."), []);
+    assert.deepEqual(sharedOf("zazozon zalazun zol bral vavurol."), ["bral"]);
+    assert.deepEqual(sharedOf("zazozon zalazun zal bral vavurol."), []);
   });
 
   it("reads a sentence-initial hook with /b/ after it as an extra-noun hook", () => {
-    const utt = parseSentenceTokens(tokens("el bamahal zazozon vowurol.")).utterances[0]!;
+    const utt = parseSentenceTokens(tokens("el bohahal zazozon vowurol.")).utterances[0]!;
     assert.equal(utt.left.hook, undefined);
     assert.equal(utt.bodies[0]!.clause.units[0]!.kind, "hook");
-    const vocative = parseSentenceTokens(tokens("yazozon el bamahal zalazun vowurol.")).utterances[0]!;
+    const vocative = parseSentenceTokens(tokens("yazozon el bohahal zalazun vowurol.")).utterances[0]!;
     assert.equal(vocative.left.hook, undefined);
     assert.equal(parseSentenceTokens(tokens("al zazozon vowurol.")).utterances[0]!.left.hook?.raw, "al");
   });
@@ -137,7 +137,7 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("puts a /ɡ/ after a SHARED relation's /b/ on that landmark", () => {
-    const shared = parseSentenceTokens(tokens("zodozel zogozel zal gobom blamahar gamezem.")).utterances[0]!.bodies[0]!.clause.units;
+    const shared = parseSentenceTokens(tokens("zodozel zogozel zal gobom blohahar gamezem.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(shared.length, 1);
     const unit = shared[0]!;
     const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;

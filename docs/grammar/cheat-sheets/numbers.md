@@ -208,7 +208,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number, with
 | [A code as object](/digit-strings#digit-strings) | `zazozon d_555,123,4567 vayebel.` | *Azozon sees 555-123-4567.* | B |
 | [Fields](/digit-strings#code-fields) | `d_2,1,3` | *version 2.1.3* | B |
 | [Plural label](/digit-strings#plural-labels) | `zazozon vowurol herom bl_90x.` | *Azozon walked in the ’90s.* | B |
-| [Letter code](/number-markers#letter-codes) | `zazozon debebul g_b12 vagedal.` | *Azozon takes a B12 pill.* | I |
+| [Letter code](/number-markers#letter-codes) | `zazozon debebul g_b12 vozedal.` | *Azozon takes a B12 pill.* | I |
 | [Initials](/initials#initials) | `z@_nl` | *the NL* (for `zanaxalazun`) | A |
 
 Say a code one character per syllable: a digit by its digit syllable, a consonant by its letter name, and a vowel after a break `'`.
@@ -253,7 +253,7 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract `-m` of a
 <!-- cheat-sheet: numbers -->
 | Unit | Root | Example | Same root, concrete sense | Stage |
 |------|------|---------|----------------------|-------|
-| [meter](/measures-and-percent#stock-units) | `ezero` | `bezerom g+2` | `ezerol` *set-square* | I |
+| [meter](/measures-and-percent#stock-units) | `ozero` | `bozerom g+2` | `ozerol` *set-square* | I |
 | [gram](/measures-and-percent#stock-units) | `ubere` | `buberem g+5` | `uberel` *pound* (banknote) | I |
 | [second](/measures-and-percent#stock-units) | `azero` | `bazerom g+3` | `azerol` *stopwatch* | I |
 | [minute](/measures-and-percent#stock-units) | `umuro` | `bumurom g+5` | `umurol` *three-o'clock* | I |
@@ -277,13 +277,13 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract `-m` of a
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`bezerom g+2`](/measures-and-percent#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
+| [`bozerom g+2`](/measures-and-percent#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
 | [`zazerom g+3`; `duberem g+5`](/measures-and-percent#measure-phrases) | subject / object / … | *three seconds*; *five grams* | I |
-| [`gezerom g+2`](/measures-and-percent#measure-phrases) after a noun | modifier on a noun | rare | I |
+| [`gozerom g+2`](/measures-and-percent#measure-phrases) after a noun | modifier on a noun | rare | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Two meters](/measures-and-percent#measure-phrases) | `zazozon bezerom gradol vowurol.` | *Azozon walks two meters.* | I |
+| [Two meters](/measures-and-percent#measure-phrases) | `zazozon bozerom gradol vowurol.` | *Azozon walks two meters.* | I |
 | [A price](/measures-and-percent#measure-phrases): after `heham` | `bagorum g+3` | *for three hours* | I |
 
 Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
@@ -348,7 +348,7 @@ End a count with `yo` for a percent, `yu` for percentage points. A minus number 
 | [Two thirds](/measures-and-percent#fractions): the count, then the fraction | `zogozelx gradol grugel vehohel.` | *Two thirds of the cats sit.* | I |
 | [A third of an hour](/measures-and-percent#fractions) | `zazozon vowurol bagorum grabal grugel.` | *Azozon walks for a third of an hour.* | I |
 
-After a measure unit a lone minus number is a negative amount (`bezerom grudol` *minus 2 meters*).
+After a measure unit a lone minus number is a negative amount (`bozerom grudol` *minus 2 meters*).
 
 ## Special values {#special}
 

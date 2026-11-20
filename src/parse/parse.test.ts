@@ -29,7 +29,7 @@ describe("parse — clause.md beginner", () => {
     assert.equal(body.clause.units[1]!.kind, "vp");
   });
 
-  it("parses zazahal gobovol. as classification predicate", () => {
+  it("parses zenahal gobovol. as classification predicate", () => {
     const result = parseText("zezedel gobulol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
@@ -237,7 +237,7 @@ describe("parse — describing a call or reaction (more-turn-words.md#describe-t
 });
 
 describe("parse — joins.md", () => {
-  it("parses zazahal zagorol zam.", () => {
+  it("parses zenahal zagorol zam.", () => {
     const result = parseText("zezedel zogozel zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "np");
@@ -432,7 +432,7 @@ describe("parse — hosted /w/ before /b/", () => {
   });
 
   it("parses extra-noun hook with restrictor /w/ left of the hook", () => {
-    const result = parseText("zodozel vezuvel wal al bamahal.");
+    const result = parseText("zodozel vezuvel wal al bohahal.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     const hook = units.find((u) => u.kind === "hook");
     assert.ok(hook && hook.kind === "hook");
@@ -484,7 +484,7 @@ describe("parse — /ɡ/ join fences", () => {
 });
 
 describe("parse — illegal fences", () => {
-  it("rejects left fence zam zazahal zagorol", () => {
+  it("rejects left fence zam zenahal zagorol", () => {
     assert.throws(() => parseText("zam zezedel zogozel."), SentenceParseError);
   });
 
@@ -648,7 +648,7 @@ describe("parse — stage 4 resolve", () => {
   });
 
   it("marks a join -r under yol as a fill-ask blank, and a join -l as no blank", () => {
-    for (const text of ["yel ol bar zayan vagedal.", "yel var zayan.", "yel har zayan vagedal.", "yel zarx vowurol."]) {
+    for (const text of ["yel ol bar zayan vozedal.", "yel var zayan.", "yel har zayan vozedal.", "yel zarx vowurol."]) {
       const ask = parseText(text).resolve?.asks[0];
       assert.equal(ask?.kind, "fillAsk", text);
       assert.equal(ask?.gaps.length, 1, text);
@@ -694,18 +694,18 @@ describe("parse — comparatives.md bars", () => {
   it("takes one /th/ stance word before a rank join as the fence's bar", () => {
     for (const [text, raw] of [
       ["zazozon thubom zol guzemel.", "thubom"],
-      ["zazozon thagom zol bral vayurol.", "thagom"],
+      ["zazozon thagom zol bral vavurol.", "thagom"],
       ["zanal thalom zuol garolem.", "thalom"],
       ["zedudal thudatham zoel gral.", "thudatham"],
       ["zanal thugem zuom garolem.", "thugem"],
       ["zalazun hodaxal zoel hadurom vowurol.", "hodaxal"],
-      ["zamahal hwuvol zoel gabobem.", "hwuvol"],
+      ["zohahal hwuvol zoel gabobem.", "hwuvol"],
       ["zanal theguyom zol gagebem.", "theguyom"],
       ["zazozon thabemalazun zol guzemel.", "thabemalazun"],
     ] as const) {
       assert.equal(barOf(text)?.word.raw, raw, text);
     }
-    const units = parseText("zazozon dodelx thagom dol gral vagedal.").utterances[0]!.bodies[0]!.clause.units;
+    const units = parseText("zazozon dodelx thagom dol gral vozedal.").utterances[0]!.bodies[0]!.clause.units;
     const object = units.find((u) => u.kind === "np" && u.coord.level === "d");
     assert.ok(object?.kind === "np" && object.coord.parts[0]!.items.some((i) => i.kind === "bar" && i.bar.word.raw === "thagom"));
   });

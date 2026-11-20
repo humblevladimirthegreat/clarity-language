@@ -106,7 +106,7 @@ The scale runs `-l` most settled, `-m` the default, `-r` most passing. When unsu
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Serves, on a noun](/sakes#met) | `zamahal guwatham.` | *My house serves competence.* | B |
+| [Serves, on a noun](/sakes#met) | `zohahal guwatham.` | *My house serves competence.* | B |
 | [Serves, lasting](/sakes#time-horizon-endings-on-met) | `zewal gawethal.` | *My gift serves relatedness in the long term.* | B |
 | [Detracts](/sakes#sake-changeability) | `zanal guwathum.` | *My book detracts from competence.* (modifiable) | B |
 | [Costly now, good later](/sakes#sake-changeability) | `zanal godethur guwathal.` | *My book is a slog for now, but builds lasting competence.* | B |

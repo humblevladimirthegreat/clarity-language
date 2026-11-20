@@ -70,7 +70,7 @@ When the blank is A, it already comes first, and nothing moves: `yel zar abam za
 
 **Compare with:** a [route join](/rank-joins#route-ao) and an [ordered range](/ranges#ranges) also put members in order. `zazozon zahelan zaol` lists every member in order (*Azozon, then Ahelan*). `zazozon aol zahelan` walks from one end to the other, taking in everyone between. `zazozon abam zahelan` relates just the two, with Ahelan as the background.
 
-**Compare with:** [the landmark's own front](/viewpoint#landmark-facing) places A against something that stays put: `gazuhothel blamahal` *behind the house*. Use `alam` for behind someone who is moving too.
+**Compare with:** [the landmark's own front](/viewpoint#landmark-facing) places A against something that stays put: `gazuhothel blohahal` *behind the house*. Use `alam` for behind someone who is moving too.
 
 ### While (`erom`) {#same-role-while}
 
@@ -153,7 +153,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *walk* | `vowurol` |
 | *sing* | `vozuyel` |
-| *dance* | `vunurol` |
+| *dance* | `vudurol` |
 | *clap* | `vaguyal` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
@@ -201,7 +201,7 @@ y-question | after.open | z-wh | z-horse | v-walk
 **6.** *Azozon waves before dancing.*
 
 ::: details Show answer
-`zazozon vowuyal abam vunurol.`
+`zazozon vowuyal abam vudurol.`
 
 z-Azozon | v-wave | before.open | v-dance
 :::
@@ -224,7 +224,7 @@ y-question | z-wh | before.open | z-horse | v-walk
 *Who walks ahead of the horse?*
 :::
 
-**3.** `zahelan vozuyel erom vunurol.`
+**3.** `zahelan vozuyel erom vudurol.`
 
 ::: details Show answer
 z-Ahelan | v-sing | while.open | v-dance
@@ -250,10 +250,10 @@ z-Alazun | like.open | z-Ahelan
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azozon sings only while dancing.* `zazozon vozuyel erom vunurol.` or `zazozon vozuyel erol vunurol.`
+**1.** *Azozon sings only while dancing.* `zazozon vozuyel erom vudurol.` or `zazozon vozuyel erol vudurol.`
 
 ::: details Show answer
-`zazozon vozuyel erol vunurol.`
+`zazozon vozuyel erol vudurol.`
 
 z-Azozon | v-sing | while.closed | v-dance
 

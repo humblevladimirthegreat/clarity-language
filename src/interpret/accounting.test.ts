@@ -109,10 +109,10 @@ describe("accounting guard: the drops it catches", () => {
   });
 
   it("R4c-5: a hosting /ɡ/ word and a hook after a noun join, and a verb join's /h/ or /d/, use their SHARED parts", () => {
-    assert.deepEqual(left("zalazun degodel dededel dal gegunum blahelan vagedal."), []);
+    assert.deepEqual(left("zalazun degodel dededel dal gegunum blahelan vozedal."), []);
     assert.deepEqual(left("zodozel zogozel zal om bahelan vowurol."), []);
     assert.deepEqual(left("zazozon vowurol veruvol val hahunom."), []);
-    assert.deepEqual(left("zazozon vagedal vayebel val dobodel."), []);
+    assert.deepEqual(left("zazozon vozedal vayebel val dobodel."), []);
   });
 
   it("R4c-8: a carried channel is used on a bare sentence", () => {

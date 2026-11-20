@@ -87,7 +87,7 @@ zahelan zol gelazem.
 = Ahelan is the biggest.
 
 @ l7
-zalazun dobodel duel vagedal.
+zalazun dobodel duel vozedal.
 = Alazun eats anything but bread.
 
 @ l8

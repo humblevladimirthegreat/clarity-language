@@ -119,7 +119,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *departure* | `vudurul` | 🛫 |
 | *cry* | `vagamul` | 😭 |
 | *fight* | `vuvuvul` | 🫯 |
-| *eat* | `vagedal` | 🍴 from *cutlery* |
+| *eat* | `vozedal` | 🍴 from *cutlery* |
 | *pour* | `vobuvul` | 🫗 |
 | *MAY* | `thomam` | 💭 from *thought*: a balloon over the scene |
 | *LIVE* | `thugem` | 👁️‍🗨️ from *attest*: seen at the scene |
@@ -214,7 +214,7 @@ y-question | z-Alazun | v-fight | th-MAY-find-out | d-Azozon
 *Might Alazun be fighting Azozon? Let's find out.*
 :::
 
-**4.** `zazozon thomar dedal vagedal.`
+**4.** `zazozon thomar dedal vozedal.`
 
 ::: details Show answer
 z-Azozon | th-MAY-who-knows | d-sandwich | v-eat
@@ -230,7 +230,7 @@ z-Ahelan | th-MAY | d-Alazun | v-punch
 *Ahelan may be punching Alazun.*
 :::
 
-**6.** `zahelan thevum dedal vagedal.`
+**6.** `zahelan thevum dedal vozedal.`
 
 ::: details Show answer
 z-Ahelan | th-MEMORY | d-sandwich | v-eat

@@ -26,7 +26,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *window* | `uwohel` | 🪟 |
 | *open* | `vohel` | 🚪 from *door* |
-| *candy* | `unedal` | 🍬 |
+| *candy* | `agedal` | 🍬 |
 | *jar* | `adal` | 🫙 |
 | *throw* | `vobovol` | 🪃 from *boomerang* |
 
@@ -69,11 +69,11 @@ h-haste | v-pay | b-Ahelan
 **3.** *The candy was thrown very hastily.*
 
 ::: details Show answer
-`dunedal welazem hadurom vobovol.`
+`dagedal welazem hadurom vobovol.`
 
 d-candy | [w-very | h-haste] | v-throw
 
-**Also correct:** `dunedal vobovol welazem hadurom.`
+**Also correct:** `dagedal vobovol welazem hadurom.`
 :::
 
 **4.** *I doubt the jar was found.*
@@ -102,7 +102,7 @@ v-throw | d-jar
 *A jar was thrown.*
 :::
 
-**3.** `zahelan dunedal vobovol.`
+**3.** `zahelan dagedal vobovol.`
 
 ::: details Show answer
 z-Ahelan | d-candy | v-throw
@@ -120,10 +120,10 @@ v-pay | [b-Azozon | g-angry]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *The candy was found.* `dunedal vumewel.` or `zunedal vumewel.`
+**1.** *The candy was found.* `dagedal vumewel.` or `zagedal vumewel.`
 
 ::: details Show answer
-`dunedal vumewel.`
+`dagedal vumewel.`
 
 d-candy | v-find
 

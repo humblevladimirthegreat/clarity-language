@@ -26,8 +26,8 @@ const tables = createClassifyTables(
 type Row = { invalid: string; rejection: RejectionId | undefined; valid: string };
 
 const ROWS: Row[] = [
-  { invalid: "zazozon dabedal vugudol vagedal val daledel.", rejection: "verbSharedOwn", valid: "zazozon dabedal vugudol daledel vagedal val." },
-  { invalid: "daledel zazozon vugudol dabedal vagedal val.", rejection: "verbSharedOwn", valid: "daledel zazozon vugudol vagedal val." },
+  { invalid: "zazozon dabedal vugudol vozedal val daledel.", rejection: "verbSharedOwn", valid: "zazozon dabedal vugudol daledel vozedal val." },
+  { invalid: "daledel zazozon vugudol dabedal vozedal val.", rejection: "verbSharedOwn", valid: "daledel zazozon vugudol vozedal val." },
   { invalid: "zazozon bahelan vezuyol varal val bazozon.", rejection: "verbSharedOwn", valid: "zazozon vezuyol varal val bazozon." },
   { invalid: "zazozon thevum blagorum grugel blahelan vowurol.", rejection: "slotlessHost", valid: "zazozon thevum blagorum grugel vowurol bahelan." },
   { invalid: "zazozon zalazun zoel gelazem hradol blahelan.", rejection: "slotlessHost", valid: "zazozon zalazun zoel gelazem hradol." },
@@ -106,8 +106,8 @@ const ROWS: Row[] = [
   { invalid: "thudathumem blazozon blalazun.", rejection: "blNoHost", valid: "thudathumem blazozon." },
   { invalid: "zazozon wonumuthul gamahum.", rejection: "labelReachSlot", valid: "zazozon gonumuthal." },
   { invalid: "zazozon guwathaol.", rejection: "sakeStackedVowel", valid: "zazozon guwathal." },
-  { invalid: "zazozon gewuhothal.", rejection: "labelReachArrow", valid: "zazozon gewuhothel blamahal." },
-  { invalid: "zodozel vehohel gazuhothel.", rejection: "landmarkLateralBound", valid: "zodozel vehohel gazuhothel blamahal." },
+  { invalid: "zazozon gewuhothal.", rejection: "labelReachArrow", valid: "zazozon gewuhothel blohahal." },
+  { invalid: "zodozel vehohel gazuhothel.", rejection: "landmarkLateralBound", valid: "zodozel vehohel gazuhothel blohahal." },
   { invalid: "zual gogozelx.", rejection: "pluralKindAfterUniversal", valid: "zual gogozel." },
   { invalid: "zazozon vowurol oer.", rejection: "stackedHookResume", valid: "zragel oer zrazal." },
   { invalid: "aor zazozon vowurol.", rejection: "hookDiscourseStack", valid: "zazozon vowurol aor." },
@@ -152,7 +152,7 @@ const ROWS: Row[] = [
   { invalid: "zalazun vudurul gadamul.", rejection: "predicateAfterVerb", valid: "zalazun gadamul. zenumur vudurul." },
   { invalid: "vwazeduyol.", rejection: "roleCompoundSlot", valid: "zwuzeduyol vowurol." },
   { invalid: "zazozon vuexuvuvul.", rejection: "hookPrefixSlot", valid: "zazozon guoxuvuvul." },
-  { invalid: "thuexuvuvul zazozon vowurol.", rejection: "hookPrefixSlot", valid: "zazozon vowurol hoexamahal." },
+  { invalid: "thuexuvuvul zazozon vowurol.", rejection: "hookPrefixSlot", valid: "zazozon vowurol hoexohahal." },
   { invalid: "ywazeduyol.", rejection: "roleCompoundSlot", valid: "ywuzeduyon." },
   { invalid: "zalazun vowurol hwahowurol.", rejection: "roleCompoundSlot", valid: "zalazun vowurol hadurom." },
   { invalid: "zazozon vowurol. dwugar vehohel.", rejection: "pointerOtherState", valid: "zazozon vowurol. dwuger vehohel." },
@@ -352,15 +352,15 @@ const ROWS: Row[] = [
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "zalx vowurol.", rejection: "joinPlural", valid: "zarx vowurol." },
   // Hooked joins (hooked-joins.md#hooked-joins): a landmark after hook -l / -m, none after point-back -r.
-  { invalid: "zoxual vezuvel.", rejection: "hookedJoinLandmark", valid: "zexual blamahal vezuvel." },
-  { invalid: "zazozon vehohel ol bamahal. zorxual blamahal vezuvel.", rejection: "hookedJoinPointBackLandmark", valid: "zazozon vehohel el bamahal. zerxual vezuvel." },
-  { invalid: "zorxual vezuvel.", rejection: "hookedJoinUnbound", valid: "zazozon vehohel el bamahal. zerxual vezuvel." },
-  { invalid: "zazozon vehohel ol bamahal. zawan vebal hurxal.", rejection: "hookedJoinUnbound", valid: "zazozon vowurol halam blanulul. zawan vebal hurxal." },
+  { invalid: "zoxual vezuvel.", rejection: "hookedJoinLandmark", valid: "zexual blohahal vezuvel." },
+  { invalid: "zazozon vehohel ol bohahal. zorxual blohahal vezuvel.", rejection: "hookedJoinPointBackLandmark", valid: "zazozon vehohel el bohahal. zerxual vezuvel." },
+  { invalid: "zorxual vezuvel.", rejection: "hookedJoinUnbound", valid: "zazozon vehohel el bohahal. zerxual vezuvel." },
+  { invalid: "zazozon vehohel ol bohahal. zawan vebal hurxal.", rejection: "hookedJoinUnbound", valid: "zazozon vowurol halam blozulul. zawan vebal hurxal." },
   { invalid: "zoerxual vezuvel.", rejection: "hookedJoinPointBack", valid: "zoexual bluzahal vezuvel." },
-  { invalid: "zazozon goxual blamahal.", rejection: "hookedJoinSlot", valid: "zazozon gexamahal." },
+  { invalid: "zazozon goxual blohahal.", rejection: "hookedJoinSlot", valid: "zazozon gexohahal." },
   { invalid: "zoxual blarl zazozon vezuvel.", rejection: "hookedJoinClause", valid: "zawan vebal huxal blarl zazozon vezuvel." },
-  { invalid: "zawan vebal haexal blanulul.", rejection: "hookedJoinTime", valid: "zawan vebal huxal blanulul." },
-  { invalid: "zawan vebal huxoel blanulul.", rejection: "hookedJoinRestrictor", valid: "zawan vebal huxual blanulul." },
+  { invalid: "zawan vebal haexal blozulul.", rejection: "hookedJoinTime", valid: "zawan vebal huxal blozulul." },
+  { invalid: "zawan vebal huxoel blozulul.", rejection: "hookedJoinRestrictor", valid: "zawan vebal huxual blozulul." },
   { invalid: "zalazun theyomwar vudurul.", rejection: "holderSeamW", valid: "zalazun theyomeyel vudurul." },
 ];
 

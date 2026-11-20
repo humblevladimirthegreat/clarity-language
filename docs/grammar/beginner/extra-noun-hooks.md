@@ -13,7 +13,7 @@ You have already met the one-vowel extra-noun hooks (*in* / *for* / *at* / *from
 
 A hook + `/b/` right after a landmark (the `/b/` of another extra) describes that landmark, not the clause: *the house near me*.
 
-> `zazozon vowurol al bamahal em buwen.`
+> `zazozon vowurol al bohahal em buwen.`
 >
 > z-Azozon | v-walk | [in | [b-house | [near | b-speaker]]]
 >

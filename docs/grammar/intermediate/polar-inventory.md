@@ -23,7 +23,7 @@ In each word, the first vowel names the family: `u` not, `a` add, `o` pass. The 
 
 `yual` answers a question that assumes something false. *Have you stopped saying untrue things?* has no honest *yes* or *no* if you never did. `yual.` says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use `yoel` (below).
 
-> `yel zazozon vowurol ul bamahal. yual.`
+> `yel zazozon vowurol ul bohahal. yual.`
 >
 > y-question | z-Azozon | v-walk | [from | b-house] . y-reject-frame
 >
@@ -53,7 +53,7 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 
 **`yuar`** says the question's premise fails at the moment, though it may hold later (cue: a door that is not there yet). `yuor` holds off on the claim; `yuar` holds off on what the question took for granted.
 
-> `yel zazozon vowurol ul bamahal. yuar.`
+> `yel zazozon vowurol ul bohahal. yuar.`
 >
 > y-question | z-Azozon | v-walk | [from | b-house] . y-reject-frame-for-now
 >

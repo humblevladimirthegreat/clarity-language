@@ -117,7 +117,7 @@ A word right after B describes B alone, not the range. To describe the range its
 
 **Compare with:** for *through* in a range, use `oel`; `uel` leaves B out. As an extra noun, `uel` + `/b/` is *through* a place.
 
-**Compare with:** a hook right after a [landmark](/extra-noun-hooks#extra-noun-intermediate) describes that landmark, never a range: `al bamahal oel bobewol` is *in the house toward the pencil*. For *from X to Y*, use `ul` … `oel` with a `/b/` after each (`zazozon ul b_9 oel b_17 vowurol`, *Azozon walks from 9:00 to 17:00*).
+**Compare with:** a hook right after a [landmark](/extra-noun-hooks#extra-noun-intermediate) describes that landmark, never a range: `al bohahal oel bobewol` is *in the house toward the pencil*. For *from X to Y*, use `ul` … `oel` with a `/b/` after each (`zazozon ul b_9 oel b_17 vowurol`, *Azozon walks from 9:00 to 17:00*).
 
 ### Ranges of numbers {#number-ranges}
 

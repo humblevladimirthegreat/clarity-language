@@ -21,7 +21,7 @@ English *of* and *from* say how one noun sits toward another, without saying whi
 >
 > "Azozon sees a teapot full of tea."
 
-> `zazozon damahal gulom blulol vayebel.`
+> `zazozon dohahal gulom blulol vayebel.`
 >
 > z-Azozon | [d-house | [g-material | bl-wood]] | v-see
 >
@@ -53,7 +53,7 @@ After a join, `gobom` and `gaham` can limit the set the join covers. They do it 
 >
 > "Everyone in the family sleeps."
 
-`zual gaham blalaham` is *everyone from the town*. A hook after the join would instead be an extra noun of the clause: it would place the act and leave the set unchanged.
+`zual gaham blanaham` is *everyone from the town*. A hook after the join would instead be an extra noun of the clause: it would place the act and leave the set unchanged.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -96,7 +96,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *ticket* | `odenol` |
 | *luggage* | `elobal` |
-| *house* | `amahal` |
+| *house* | `ohahal` |
 | *teapot* | `edodal` |
 | *wine* | `owudal` |
 | *bread* | `obodel` |
@@ -127,7 +127,7 @@ z-Alazun | [d-ticket | [g-origin | bl-station]] | v-find
 **3.** *Azozon sees a house made of wood.*
 
 ::: details Show answer
-`zazozon damahal gulom blulol vayebel.`
+`zazozon dohahal gulom blulol vayebel.`
 
 z-Azozon | [d-house | [g-material | bl-wood]] | v-see
 :::
@@ -172,7 +172,7 @@ The vessel takes **`gadam`**; the filling sits in `/b/`.
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zahelan damahal gulom blulol vayebel.` / `zahelan damahal gadam blulol vayebel.`
+**1.** `zahelan dohahal gulom blulol vayebel.` / `zahelan dohahal gadam blulol vayebel.`
 
 ::: details Show answer
 z-Ahelan | [d-house | [g-material | bl-wood]] | v-see

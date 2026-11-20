@@ -14,7 +14,7 @@ A number word can do more than count. You can give an amount of a unit (*two met
 
 To say how much of a unit you mean (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each metric or everyday unit is the [abstract](/word-endings#abstract-m) sense of an ordinary root, so the unit noun ends in `-m`. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with `-r`.
 
-> `zazozon bezerom gradol vowurol.`
+> `zazozon bozerom gradol vowurol.`
 >
 > z-Azozon | [b-meter | g-two] | v-walk
 >
@@ -27,9 +27,9 @@ The amount hosts nothing, so no `bl-` word comes after it. A plain `/b/` there i
 <!-- cheat-sheet: numbers -->
 | Ageben | Use | English |
 |--------|-----|---------|
-| `bezerom g+2` | extra noun (`/b/`) | *two meters* |
+| `bozerom g+2` | extra noun (`/b/`) | *two meters* |
 | `zazerom g+3`; `duberem g+5` | subject / object / … | *three seconds*; *five grams* |
-| `gezerom g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
+| `gozerom g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 The amount takes the usual number endings, so `-m` makes it fuzzy (`gradom` ≈ *about two*). The unit takes ordinary word endings.
 
@@ -40,7 +40,7 @@ Each unit word reuses an ordinary root whose everyday meaning hints at the unit.
 <!-- cheat-sheet: numbers -->
 | SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
 |--------------------|----------------------|---------|----------------------|-----|
-| meter | `ezero` *meter* | `bezerom g+2` | `ezerol` *set-square* | 📐: exact length |
+| meter | `ozero` *meter* | `bozerom g+2` | `ozerol` *set-square* | 📐: exact length |
 | gram | `ubere` *gram* | `buberem g+5` | `uberel` *pound* (banknote) | 💷: standard mass |
 | second | `azero` *second* | `bazerom g+3` | `azerol` *stopwatch* | ⏱️: short tick |
 | minute | `umuro` *minute* | `bumurom g+5` | `umurol` *three-o'clock* | 🕒: the hand steps one minute at a time |
@@ -121,7 +121,7 @@ To say how many parts, put the count first and the fraction after it: `g+N` then
 >
 > "Two thirds of the cats sit."
 
-`g-N` alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerom grudol` *minus 2 meters*). The count makes the fraction plain wherever it stands, after a unit too: a count then a minus is never a negative amount, since a unit takes one amount.
+`g-N` alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bozerom grudol` *minus 2 meters*). The count makes the fraction plain wherever it stands, after a unit too: a count then a minus is never a negative amount, since a unit takes one amount.
 
 > `zazozon vowurol bagorum grabal grugel.`
 >
@@ -129,7 +129,7 @@ To say how many parts, put the count first and the fraction after it: `g+N` then
 >
 > "Azozon walks for a third of an hour."
 
-*Half* of a unit also has a decimal route (`bezerom g+0.5`).
+*Half* of a unit also has a decimal route (`bozerom g+0.5`).
 
 ### Practice {#intermediate-practice}
 
@@ -142,7 +142,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *bottle* | `ubodal` | 🍼 |
-| *meter* | `ezerom` | 📐 from *set square* |
+| *meter* | `ozerom` | 📐 from *set square* |
 | *hour* | `agorum` | ⏳ from *hourglass* |
 | *cost* | `uderem` | 💵 from *dollar* |
 | *percentage point* | `odurum` | ➗ from *divide* |
@@ -172,7 +172,7 @@ z-pill-x | g-25yo
 **2.** *Azozon walks two meters.*
 
 ::: details Show answer
-`zazozon bezerom gradol vowurol.`
+`zazozon bozerom gradol vowurol.`
 
 z-Azozon | [b-meter | g-two] | v-walk
 :::

@@ -108,14 +108,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *bread* | `obodel` |
 | *sandwich* | `edal` |
-| *eat* | `vagedal` |
+| *eat* | `vozedal` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
 **1.** *Azozon eats cheese and/or bread.*
 
 ::: details Show answer
-`zazozon dehedel dobodel dael vagedal.`
+`zazozon dehedel dobodel dael vozedal.`
 
 z-Azozon | [d-cheese | d-bread | d-and/or] | v-eat
 :::
@@ -123,7 +123,7 @@ z-Azozon | [d-cheese | d-bread | d-and/or] | v-eat
 **2.** *Alazun doesn't eat both the sandwich and the cheese.*
 
 ::: details Show answer
-`zalazun dedal dehedel dal dul vagedal.`
+`zalazun dedal dehedel dal dul vozedal.`
 
 z-Alazun | [[d-sandwich | d-cheese | d-and] | d-not] | v-eat
 :::
@@ -139,14 +139,14 @@ z-Alazun | [[d-sandwich | d-cheese | d-and] | d-not] | v-eat
 **4.** *Something other than a bee is eating the cheese.*
 
 ::: details Show answer
-`zubezal zur dehedel vagedal.`
+`zubezal zur dehedel vozedal.`
 
 [z-bee | z-something-else] | d-cheese | v-eat
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zazozon dedal dobodel dul vagedal.`
+**1.** `zazozon dedal dobodel dul vozedal.`
 
 ::: details Show answer
 z-Azozon | [d-sandwich | d-bread | d-not] | v-eat
@@ -162,7 +162,7 @@ z-Azozon | [d-sandwich | d-bread | d-not] | v-eat
 *not exactly one of the bread and the cheese* (both, or neither)
 :::
 
-**3.** `zahelan der vagedal.`
+**3.** `zahelan der vozedal.`
 
 ::: details Show answer
 z-Ahelan | d-anything | v-eat
@@ -170,7 +170,7 @@ z-Ahelan | d-anything | v-eat
 *Ahelan eats anything.*
 :::
 
-**4.** `zalazun dobodel duel vagedal.`
+**4.** `zalazun dobodel duel vozedal.`
 
 ::: details Show answer
 z-Alazun | [d-bread | d-anything-but] | v-eat

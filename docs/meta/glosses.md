@@ -210,7 +210,7 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `gugowum` | `g-volume` | `g-uzumu(quiet→volume)-m`, `g-volume-m` |
 | `hevul` | `h-fishing` | `h-uvuvu(fishing)-l` |
 | `thevum` | `th-MEMORY` | `h-uvuvu(fishing→MEMORY)-m` |
-| `gamaham` | `g-home` | `g-ohohu(house→home)-m` |
+| `gohaham` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zuwem` and `zuwen` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Ageben line and from [word-endings.md](/word-endings). The gloss’s job is the **sense**, not a second orthography.
 
@@ -228,7 +228,7 @@ Morph uses the published **concrete** or **abstract** for that ending, unless `e
 | `vayebel` | `v-see` | *sees* |
 | `vehohel` | `v-sit` | *sits* |
 | `vezuyol` | `v-tell` | *tells* |
-| `al bamahal` | `in | b-house` | *in a house* |
+| `al bohahal` | `in | b-house` | *in a house* |
 | `welazem` | `w-very` | *very* |
 | `zayebel` | `z-eye` | *the eye* (no packing on `/z/`) |
 
@@ -316,8 +316,8 @@ A morph line corresponds **one-to-one** with its Ageben. From the gloss alone yo
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](/number-markers#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`grodol` → `g-2nd`, `gruodol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role words** gloss the reach after **`w`**, then the part, then the stem, joined with `-`: `zwuzeduyol` → `z-episode-agent-teach`, `gwozeduyol` → `g-role-agent-teach`, `hwozeduyol` → `h-role-agent-teach` (*as a teacher*), `dwubezuyol` → `d-episode-recipient-speech`, `dwuhowurol` → `d-episode-manner-walk`. Reach takes the label-reach labels (`episode`, `role`, `pair`, `type`, and the stacked labels); the part is `agent` (**`z`**), `patient` (**`d`**), `recipient` (**`b`**), or a quality of the event: `manner` (**`h`**), `state` (**`g`**), `stance` (**`th`**), `extent` (**`w`**), `move` (**`y`**), `outcome` (**`x`**), `event` (**`v`**, pointers only). A stem compound keeps its `-x-` (`zwuzodozexowurol` → `z-episode-agent-dog-x-walk`), and ability follows the stem (`gwozeduyoxal` → `g-role-agent-teach-able`).
-- **Hook prefixes** gloss the hook as its extra-noun label, then `-x-`, then the stem: `guoxuvuvul` → `g-against-x-fight`, `guomxawulol` → `g-contrary-to-x-wind` (the **`mx`** zone is the hook's **-m** label), `guoxamahaxowurol` → `g-against-x-house-x-walk`. A hook-compound stem glosses as the fused verb (`guoxowurolul` → `g-against-x-leave`), and label reach keeps its `-th-` joiner (`zuoxuvuvuthol` → `z-against-x-fight-th-role`).
-- **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the zone label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zexual blamahal` → `[z-at-x-everything | bl-house]`, `zemxuam bluwen` → `[z-near-x-everything.open | bl-speaker]`, `doxar` under a question → `d-for-x-wh`, `zerxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `er` `at.then`).
+- **Hook prefixes** gloss the hook as its extra-noun label, then `-x-`, then the stem: `guoxuvuvul` → `g-against-x-fight`, `guomxawulol` → `g-contrary-to-x-wind` (the **`mx`** zone is the hook's **-m** label), `guoxohahaxowurol` → `g-against-x-house-x-walk`. A hook-compound stem glosses as the fused verb (`guoxowurolul` → `g-against-x-leave`), and label reach keeps its `-th-` joiner (`zuoxuvuvuthol` → `z-against-x-fight-th-role`).
+- **Hooked joins** gloss the hook's label from the [extra-noun grid](/extra-noun-hooks#extra-noun-intermediate) (the zone label on hook **-m**, the point-back label on hook **-r**), then `-x-`, then the join's label, with `.open` for join **-m**; the landmark rides in the bracket: `zexual blohahal` → `[z-at-x-everything | bl-house]`, `zemxuam bluwen` → `[z-near-x-everything.open | bl-speaker]`, `doxar` under a question → `d-for-x-wh`, `zerxual` → `z-there-x-everything`, `daorxar` → `d-on.it-x-something`. On `/h/`, a point-back names a time: `hurxal` → `h-since.then-x-never` (`ar` `within.then`, `er` `at.then`).
 - **Numeric prefixes** gloss the number body's kind label, then `-x-`, then the stem in the sense its ending picks: `zrawaxolamal` → `z-infinity-x-love`, `zruwuxahuyayel` → `z-quasi-x-friend`, `zragexezuyol` → `z-three-x-speech`, `drobaxobewom` → `d-1st-x-draft`. The **`mx`** seam adds `.about` to the number (`dragemxezuyol` → `d-three.about-x-speech`).
 - **Role-compound resumes** keep their reach and part: `dwuzaruyor` → `d-←episode-agent-write`, `dwudaruyor` → `d-←episode-patient-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
 - **Role pointers** gloss their reach, part, and pointer vowel, never the referent: `zwuzer` → `z-←episode-agent.same`, `dwudar` → `d-←episode-patient.other`, `dwuzor` → `d-←episode-agent.self`, `zwuzur` → `z-←episode-agent.unsaid`, `zwozer` → `z-←role-agent.same`, `dwuher` → `d-←episode-manner.same`, `dwuver` → `d-←episode-event.same`. **-l** adds `.new` and **-m** adds `.part` (`dwudel` → `d-←episode-patient.same.new`, `zwuzem` → `z-←episode-agent.same.part`, `zwubam` → `z-←episode-recipient.other.part`, `zwuzum` → `z-←episode-agent.unsaid.part`).
@@ -410,7 +410,7 @@ Gloss each piece by **family** ([compounds.md](/compounds)) — English only. Dr
 | Role compound | `zwuzuvuvul` | `z-episode-agent-fight` ([role words](#round-trip)) |
 | Acting as | `hwozeduyol` | `h-role-agent-teach` ([role words](#round-trip)) |
 | Hook prefix | `guoxuvuvul` / `guomxawulol` | `g-against-x-fight` / `g-contrary-to-x-wind` ([hook prefixes](#round-trip)) |
-| Hooked join | `zexual blamahal` / `hurxal` | `[z-at-x-everything \| bl-house]` / `h-since.then-x-never` ([hooked joins](#round-trip)) |
+| Hooked join | `zexual blohahal` / `hurxal` | `[z-at-x-everything \| bl-house]` / `h-since.then-x-never` ([hooked joins](#round-trip)) |
 | Numeric prefix | `zrawaxolamal` / `dragemxezuyol` | `z-infinity-x-love` / `d-three.about-x-speech` ([numeric prefixes](#round-trip)) |
 | Span | `th(hugowul)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrowul` | `x-starting-with` |

@@ -508,7 +508,7 @@ Role letter + extra-noun hook vowels + `x` (or `mx` for the hook's `-m` zone) + 
 
 ### Hooked join
 
-Role letter + extra-noun hook vowels (+ `m` for the zone or `r` to point back) + `x` + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blamahal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blanulul` *never since the thunderstorm*).
+Role letter + extra-noun hook vowels (+ `m` for the zone or `r` to point back) + `x` + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zexual blohahal` *everyone at the house*, `doxar bluwen` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blozulul` *never since the thunderstorm*).
 
 [Hook plus a join](/hooked-joins#hooked-joins)
 

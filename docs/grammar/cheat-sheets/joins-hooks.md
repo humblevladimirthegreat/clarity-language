@@ -132,12 +132,12 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 |-----------------|------|---------|---------|-------|
 | two words in the same role | [same-role](/hooks#including) | `zuvayal al zazozon` | *the family, including Azozon* | B |
 | front of the sentence | [glue to prior talk](/hooks#discourse-hooks) | `al zazozon vowurol` | *Additionally, Azozon walks* | B |
-| `/b/` right after, no recipient `/b/` right before | [extra noun](/hooks#extra-noun) | `zodozel vezuvel al bamahal` | *a dog sleeps in a house* | B |
+| `/b/` right after, no recipient `/b/` right before | [extra noun](/hooks#extra-noun) | `zodozel vezuvel al bohahal` | *a dog sleeps in a house* | B |
 | `-r`, nothing on the right | [point back](/in-clause-hooks#hook-resume) | `zalazun vehohel er` | *Alazun sits there* | I |
 | stacked vowel between two same-role words | [range](/ranges#ranges) | `zazozon oel zahelan` | *Azozon through Ahelan* | I |
 | fused onto a citation | [hook compound](/hook-compounds#hook-compounds) | `vowurolul` | *leave* | A |
 | hook vowels, then `x` and a stem | [hook prefix](/hook-compounds#hook-prefixes) | `guoxuvuvul` | *anti-fighting* | A |
-| role letter, hook vowels, `x`, a join, then a `bl-` landmark | [hooked join](/hooked-joins#hooked-joins) | `zexual blamahal` | *everyone at the house* | A |
+| role letter, hook vowels, `x`, a join, then a `bl-` landmark | [hooked join](/hooked-joins#hooked-joins) | `zexual blohahal` | *everyone at the house* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
 
@@ -168,14 +168,14 @@ Fused onto a citation, the hook makes a [verb](/hook-compounds#hook-compounds) (
 
 | `-l` | `-m` | `-r` | Fused `-l` | Prefix `-l` | Prefix `-m` |
 |--------|--------|--------|--------------|---------------|---------------|
-| `al` *in* | `am` *amid* | `ar` *in there* | `owurolal` *enter* | `gaxamahal` *indoor* | `gamxohalal` *mid-ocean* |
+| `al` *in* | `am` *amid* | `ar` *in there* | `owurolal` *enter* | `gaxohahal` *indoor* | `gamxohalal` *mid-ocean* |
 | `ael` *on* | `aem` *over* | `aer` *on it* | `owurolaol` *mount* | `gaexohalal` *seagoing* | `gaemxohalal` *over the ocean* |
-| `el` *at* | `em` *near* | `er` *there* | `owurolol` *attend* | `gexamahal` *at the house* | `gemxamahal` *near the house* |
-| `oel` *toward* | `oem` *in the direction of* | | `owuroloel` *head for* | `goexamahal` *houseward* | `goemxamahal` *facing the house* |
-| `ul` *from*, [*since*](/hooks#since) | `um` *away from* | `ur` *from there* | `owurolul` *leave* | `guxamahal` *from the house* | `gumxamahal` *away from the house* |
+| `el` *at* | `em` *near* | `er` *there* | `owurolol` *attend* | `gexohahal` *at the house* | `gemxohahal` *near the house* |
+| `oel` *toward* | `oem` *in the direction of* | | `owuroloel` *head for* | `goexohahal` *houseward* | `goemxohahal` *facing the house* |
+| `ul` *from*, [*since*](/hooks#since) | `um` *away from* | `ur` *from there* | `owurolul` *leave* | `guxohahal` *from the house* | `gumxohahal` *away from the house* |
 | `ual` *out of* | `uam` *out from among* | | `owurolual` *exit* | `guaxowulal` *out of the water* | `guamxegayal` *picked from the group* |
 | `uel` *through* | `uem` *by way of* | `uer` *through there* | `owuroluol` *traverse* | `guexohalal` *transoceanic* | `guemxohol` *bridge-routed* |
-| `ol` *for* | `om` [*used by*](/social-ties#genitive) (*B's*) | `or` *for it* | `owurolel` *serve* | `goxamahal` *household* | `gomxegayal` *group-owned* |
+| `ol` *for* | `om` [*used by*](/social-ties#genitive) (*B's*) | `or` *for it* | `owurolel` *serve* | `goxohahal` *household* | `gomxegayal` *group-owned* |
 | `aol` *using* | `aom` *by* | `aor` *with it* | `owurolael` *wield* | `gaoxowulal` *water-powered* | `gaomxorahol` *road-borne* |
 | `uol` *against* | `uom` *contrary to* | | `owuroluel` *oppose* | `guoxohalal` *sea-facing* | `guomxawulol` *headwind* |
 
@@ -189,17 +189,17 @@ Role letter, the hook's vowels (`m` for its setting, `r` to point back), `x`, th
 
 | Ageben | English |
 |--------|---------|
-| `zexual blamahal` | [*everyone at the house*](/hooked-joins#hooked-joins) |
+| `zexual blohahal` | [*everyone at the house*](/hooked-joins#hooked-joins) |
 | `zemxual bluwen` / `zumxual blayan` | [*everyone here*](/hooked-joins#hooked-joins-hooks) / *everyone over there* |
 | `zuoxual bluwen` | [*everyone against me*](/hooked-joins#hooked-joins-hooks) |
 | `doxar bluwen` | [*something for me*](/hooked-joins#hooked-joins-endings) |
 | `zexuam blual` | [*people anywhere, in general*](/hooked-joins#hooked-joins-endings) |
 | `zerxual` | [*everyone there*](/hooked-joins#hooked-joins-point-back) (the place just named) |
-| `haxual blanulul` | [*always, during the thunderstorm*](/hooked-joins#hooked-joins-time) |
-| `hexar blanulul` | [*at some point at the thunderstorm*](/hooked-joins#hooked-joins-time) |
-| `huxal blanulul` | [*never since the thunderstorm*](/hooked-joins#hooked-joins-time) |
-| `hoexual blanulul` | [*always, until the thunderstorm*](/hooked-joins#hooked-joins-time) |
-| `hemxual blanulul` | [*always, around the time of the thunderstorm*](/hooked-joins#hooked-joins-time) |
+| `haxual blozulul` | [*always, during the thunderstorm*](/hooked-joins#hooked-joins-time) |
+| `hexar blozulul` | [*at some point at the thunderstorm*](/hooked-joins#hooked-joins-time) |
+| `huxal blozulul` | [*never since the thunderstorm*](/hooked-joins#hooked-joins-time) |
+| `hoexual blozulul` | [*always, until the thunderstorm*](/hooked-joins#hooked-joins-time) |
+| `hemxual blozulul` | [*always, around the time of the thunderstorm*](/hooked-joins#hooked-joins-time) |
 | `hurxal` | [*never since then*](/hooked-joins#hooked-joins-time) |
 | `huxal blarl` + clause | [*never since* (that happened)](/hooked-joins#hooked-joins-clause) |
 
@@ -224,7 +224,7 @@ Role letter, the hook's vowels (`m` for its setting, `r` to point back), `x`, th
 | This | vs | That |
 |------|----|------|
 | `zodozel zul` *no dog* ([join denies](/universals-domains#universals-domains-generics)) | | `zuvayal ul zazozon` *the family except Azozon* ([hook takes B out of A](/hooks#except)) |
-| `zexual blamahal vezuvel` *everyone at the house sleeps* ([who counts](/hooked-joins#hooked-joins)) | | `zual vezuvel el bamahal` *everyone sleeps at the house* (where it happens) |
+| `zexual blohahal vezuvel` *everyone at the house sleeps* ([who counts](/hooked-joins#hooked-joins)) | | `zual vezuvel el bohahal` *everyone sleeps at the house* (where it happens) |
 | `zuhunam gan blazozon` *a team including Azozon* ([join-relation](/join-relations#join-relations)) | | `zuhunam al zazozon` *the team, including Azozon* (afterthought) |
 | `zazozon zahelan zal` *the two of them* ([vs a range](/ranges#ranges)) | | `zazozon oel zahelan` *Azozon through Ahelan*; `zazozon zahelan zaol` *Azozon, then Ahelan* |
 | hook `oel` *toward X* ([where a path ends](/extra-noun-hooks#extra-noun-intermediate)) | | `zaol` + X *start with X* ([where it starts](/rank-joins#route-ao)) |

@@ -154,7 +154,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *CLUES* | `theyom` |
 | *REPORTED* | `thebam` |
-| *eat* | `vagedal` |
+| *eat* | `vozedal` |
 | *sleep* | `vezuvel` |
 | *walk* | `vowurol` |
 
@@ -163,7 +163,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *The monkey eats a banana against the rules.*
 
 ::: details Show answer
-`zamozal dobedol vagedal uom hwuvul.`
+`zamozal dobedol vozedal uom hwuvul.`
 
 z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
 :::
@@ -187,7 +187,7 @@ z-giraffe | v-walk | [contrary-to | th-REPORTED]
 **4.** *The monkey eats, against Ahelan's plan, as far as I can tell.*
 
 ::: details Show answer
-`zamozal vagedal uom theyomahelan thagom.`
+`zamozal vozedal uom theyomahelan thagom.`
 
 z-monkey | v-eat | [contrary-to | th-CLUES-Ahelan | th-plan-itinerary]
 :::
@@ -202,7 +202,7 @@ z-penguin | v-walk | [contrary-to | th-PATTERN]
 *The penguin walks, contrary to habit.*
 :::
 
-**2.** `zamozal dobedol vagedal uom thebamahelan.`
+**2.** `zamozal dobedol vozedal uom thebamahelan.`
 
 ::: details Show answer
 z-monkey | d-banana | v-eat | [contrary-to | th-REPORTED-Ahelan]
@@ -210,7 +210,7 @@ z-monkey | d-banana | v-eat | [contrary-to | th-REPORTED-Ahelan]
 *The monkey eats a banana, contrary to what I hear Ahelan thinks.*
 :::
 
-**3.** `zobozal dobedol vagedal uom thabem.`
+**3.** `zobozal dobedol vozedal uom thabem.`
 
 ::: details Show answer
 z-penguin | d-banana | v-eat | [contrary-to | th-INTUITION]
@@ -232,10 +232,10 @@ Without **`uom`**, `thagom` is your stance on the claim: *I plan for the penguin
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *The monkey eats a banana against the rules.* <!-- lint: error -->`zamozal dobedol vagedal uom hwuvam.`
+**1.** *The monkey eats a banana against the rules.* <!-- lint: error -->`zamozal dobedol vozedal uom hwuvam.`
 
 ::: details Show answer
-`zamozal dobedol vagedal uom hwuvul.`
+`zamozal dobedol vozedal uom hwuvul.`
 
 z-monkey | d-banana | v-eat | [contrary-to | h-episode-event-FORBID-rule]
 

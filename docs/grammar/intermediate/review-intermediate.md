@@ -28,7 +28,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *swim* | `vazuvol` |
 | *climb* | `voguvol` |
 | *therefore* | `xahom` |
-| *tent* | `anahal` |
+| *tent* | `odahal` |
 | *bucket* | `obowal` |
 | *cook* | `vuguyol` |
 | *cookie* | `ugedel` |
@@ -203,7 +203,7 @@ z-Alazun | h-RESIDUE | v-fight
 **14.** *Alazun sleeps in a tent. Ahelan cooks in there.*
 
 ::: details Show answer
-`zalazun vezuvel al banahal. zahelan vuguyol ar.`
+`zalazun vezuvel al bodahal. zahelan vuguyol ar.`
 
 z-Alazun | v-sleep | [in | b-tent] . z-Ahelan | v-cook | in.there
 
@@ -232,7 +232,7 @@ z-Ahelan | h-ATTEMPT-trial | v-climb
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zahelan danahal vayebel. zahelan dobowal vayeber.`
+**1.** `zahelan dodahal vayebel. zahelan dobowal vayeber.`
 
 ::: details Show answer
 z-Ahelan | d-tent | v-see . z-Ahelan | d-bucket | v-←see

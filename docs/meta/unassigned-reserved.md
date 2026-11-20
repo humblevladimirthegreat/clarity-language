@@ -114,7 +114,7 @@ Source: [joins.md](/joins), [verb-and-stance-joins.md](/verb-and-stance-joins#st
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaer` … `thuor` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaer`, `xuar`, `gaer`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
 - **open:** clause sequence **-n** beyond `xan` `xen` `xun` `xaen` `xuon` (`xuan`, `xuen`, `xon`, `xaon`, `xoen`). No reading is guessable: `xon` and `xaon` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuen` (*everything but* / *anything but*) have no clause job. `xon` is also a departure mark after a name.
-- **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`dabedal vugudol vagedal val daledel`).
+- **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`dabedal vugudol vozedal val daledel`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** **-x** on a join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it; a named package with associates has no job yet. Parser: `joinPlural`.
 - **open:** a rank or route join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or route fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](/open-ranges#rays).
@@ -329,7 +329,7 @@ Source: [clause.md](/clause)
 
 - **open:** a `gl-` adjective with no noun after it (`zazozon globulol.`, `zazozon dedavol globulol vayebel.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
 - **open:** a `bl-` word with no `/ɡ/`, `/h/`, or `/th/` host right before it (`zazozon varal blazozon.`). It completes the word before it, and that word names no relation; the recipient is a plain `/b/`. Parser: `blNoHost`.
-- **open:** a plain `/b/` item in a hosted list (`hazam blanahal bozedel bal`). Every item of the hosted slot takes `bl-`. Parser: `blListItem`.
+- **open:** a plain `/b/` item in a hosted list (`hazam blodahal bozedel bal`). Every item of the hosted slot takes `bl-`. Parser: `blListItem`.
 - **open:** lean **`l`** on any role letter but `/ɡ/` and `/b/`: `zl-` / `dl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](/compound-families#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](/predication#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
 - **closed (D-22):** a `bl-` word after `/z/`, `/d/`, `/v/`, or `/w/`.

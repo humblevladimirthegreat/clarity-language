@@ -161,7 +161,7 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 | `m` | mind and feeling | `evemu` *fear* | [`-m`](/word-endings#abstract-m) abstract | A |
 | `b` | body and what goes on it | `aheba` *hand* | [`/b/`](/clause#role-letters) the extra piece | A |
 | `v` | doing, playing, moving | `eruvo` *run* | [`/v/`](/clause#role-letters) the action | A |
-| `h` | places and fixtures | `amaha` *house* | [`/h/`](/clause#role-letters) where | A |
+| `h` | places and fixtures | `ohaha` *house* | [`/h/`](/clause#role-letters) where | A |
 | `l` | nature and raw stuff | `edalo` *tree* | [`-l`](/word-endings#concrete-l) concrete | A |
 | `d` | food, drink, kitchen | `alede` *apple* | [`/d/`](/clause#role-letters) what is done to | A |
 | `w` | tools | `anewu` *knife* | [`/w/`](/clause#role-letters) *with* | A |

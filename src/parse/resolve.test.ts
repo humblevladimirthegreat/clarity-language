@@ -289,7 +289,7 @@ describe("resolve — tag pronouns (tag-pronouns.md#naming-with-a-tag)", () => {
   });
 
   it("introduces a new referent with no phrase before it", () => {
-    assert.deepEqual(tags("zwal bwol vezuyol. zwor dugedel vagedal."), ["zwor→bwol"]);
+    assert.deepEqual(tags("zwal bwol vezuyol. zwor dugedel vozedal."), ["zwor→bwol"]);
   });
 
   it("tags each item of a list, and a tag listed first is new", () => {
@@ -587,13 +587,13 @@ describe("resolve — hooked-join point-back (hooked-joins.md#hooked-joins-point
   const landmarkOf = (text: string) => resolveOf(text).anaphors.find((bind) => bind.kind === "landmark")?.antecedent?.raw;
 
   it("takes the latest landmark: a hook's /b/, a hosted bl- word, or a hooked join's", () => {
-    assert.equal(landmarkOf("zazozon vehohel el bamahal. zerxual vezuvel."), "bamahal");
-    assert.equal(landmarkOf("zazozon vehohel el bamahal. zexual bluzahal vezuvel. zarxar vowurol."), "bluzahal");
-    assert.equal(landmarkOf("zazozon vowurol halam blanulul. zerxual vezuvel."), "blanulul");
+    assert.equal(landmarkOf("zazozon vehohel el bohahal. zerxual vezuvel."), "bohahal");
+    assert.equal(landmarkOf("zazozon vehohel el bohahal. zexual bluzahal vezuvel. zarxar vowurol."), "bluzahal");
+    assert.equal(landmarkOf("zazozon vowurol halam blozulul. zerxual vezuvel."), "blozulul");
   });
 
   it("on /h/, takes only a time landmark", () => {
-    assert.equal(landmarkOf("zazozon vowurol halam blanulul. zalazun vehohel el bamahal. zawan vebal hurxal."), "blanulul");
+    assert.equal(landmarkOf("zazozon vowurol halam blozulul. zalazun vehohel el bohahal. zawan vebal hurxal."), "blozulul");
     assert.equal(landmarkOf("zazozon vowurol huxal blovulul. zawan vebal hurxal."), "blovulul");
   });
 });

@@ -62,7 +62,7 @@ After the role letter, look at both sides of the *first* `x`. A role word is not
 | [name](/conversation-length#conversation-length) | `a` / `o` / `e` / `u`, then `-n` | conversation length | *Azozon, I have time* | I |
 | [longer root](/compound-families#families-by-shape) | `a` / `e` / `o` / `u` | [ability](/can-and-cant#ability) | *can't sing right now* | I |
 | [hook vowels](/hook-compounds#hook-prefixes), maybe `m` | a stem | hook prefix | `guoxuvuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
-| [hook vowels](/hooked-joins#hooked-joins), maybe `m` or `r` | a join: vowels and an ending | hooked join, landmark after it | `zexual blamahal` *everyone at the house* | A |
+| [hook vowels](/hooked-joins#hooked-joins), maybe `m` or `r` | a join: vowels and an ending | hooked join, landmark after it | `zexual blohahal` *everyone at the house* | A |
 
 Mid-word `th` is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label reach](/label-seams#reach-vowels)), or a direction root and a facing person (`gewuhothazozon`). After a sake root, root-shaped letters are always the emotion tail.
 

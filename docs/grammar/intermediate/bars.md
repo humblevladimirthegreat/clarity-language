@@ -10,7 +10,7 @@ English *more than planned*, *sleepier than usual*, *enough*, and *too much* com
 
 English *more than planned* and *later than planned* rank one thing against a value a stance sets, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](/can-and-cant#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
-> `zazozon thagom zol bral vayurol.`
+> `zazozon thagom zol bral vavurol.`
 >
 > [z-Azozon | th-plan-itinerary | z-rank/more | b-later] | v-arrival
 >
@@ -18,7 +18,7 @@ English *more than planned* and *later than planned* rank one thing against a va
 
 The same stance word after the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
 
-> `zazozon zol bral vayurol thagom.`
+> `zazozon zol bral vavurol thagom.`
 >
 > [z-Azozon | z-rank/more | b-later] | v-arrival | th-plan-itinerary
 >
@@ -26,7 +26,7 @@ The same stance word after the fence has its ordinary reading, a stance on the w
 
 A bar fence ranks one item against one bar: with a bar, there is no second name and no second bar. Any of the rank joins works (`zol`, `zuol`, `zoel`, and their open `-m` forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
-> `zazozon dodelx thagom dol gral vagedal.`
+> `zazozon dodelx thagom dol gral vozedal.`
 >
 > z-Azozon | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
 >
@@ -137,7 +137,7 @@ Name a sake to say which need sets the limit. With a quality as the scale, the s
 
 On the [time scale](comparative-arity.md#time-scale), a sake bar is *too late* and *too early*:
 
-> `zazozon thudatham zuol bral vayurol.`
+> `zazozon thudatham zuol bral vavurol.`
 >
 > [z-Azozon | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
 >

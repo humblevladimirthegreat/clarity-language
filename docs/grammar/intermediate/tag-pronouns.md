@@ -44,7 +44,7 @@ The last `zwar` is still the dog, though the cat is the newer doer. `zwuzer` wou
 
 With no phrase to tag, a tag holds a placeholder, as in *suppose A tells O*:
 
-> `zwal vezuyol bwol. zwor dugedel vagedal.`
+> `zwal vezuyol bwol. zwor dugedel vozedal.`
 >
 > z-tag.A | v-tell | b-tag.O . z-←tag.O | d-cookie | v-eat
 >

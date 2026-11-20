@@ -161,10 +161,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *candy* | `unedal` |
+| *candy* | `agedal` |
 | *cake* | `egodel` |
 | *doughnut* | `ededel` |
-| *eat* | `vagedal` |
+| *eat* | `vozedal` |
 | *red* | `erulol` |
 | *small* | `amezem` |
 | *big* | `elazem` |
@@ -175,7 +175,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *The lollipop and the candy are both red.*
 
 ::: details Show answer
-`zoledel zunedal zal gerulol.`
+`zoledel zagedal zal gerulol.`
 
 [z-lollipop | z-candy | z-and | g-red]
 :::
@@ -183,7 +183,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *Alazun eats the cake and her lollipop.* (only the lollipop is hers)
 
 ::: details Show answer
-`zalazun degodel doledel om balazur dal vagedal.`
+`zalazun degodel doledel om balazur dal vozedal.`
 
 z-Alazun | [d-cake | [d-lollipop | [used-by | b-←Alazun]] | d-and] | v-eat
 :::
@@ -191,7 +191,7 @@ z-Alazun | [d-cake | [d-lollipop | [used-by | b-←Alazun]] | d-and] | v-eat
 **3.** *Alazun eats Ahelan's cake and doughnut.*
 
 ::: details Show answer
-`zalazun degodel dededel dal gegunum blahelan vagedal.`
+`zalazun degodel dededel dal gegunum blahelan vozedal.`
 
 z-Alazun | [d-cake | d-doughnut | d-and | [g-ownership | bl-Ahelan]] | v-eat
 :::
@@ -199,7 +199,7 @@ z-Alazun | [d-cake | d-doughnut | d-and | [g-ownership | bl-Ahelan]] | v-eat
 **4.** *Azozon and Alazun eat a lollipop and an ice cream, respectively.*
 
 ::: details Show answer
-`zazozon zalazun zal doledel dazedal wubam dal vagedal.`
+`zazozon zalazun zal doledel dazedal wubam dal vozedal.`
 
 [z-Azozon | z-Alazun | z-and] | [d-lollipop | d-ice-cream | w-respectively | d-and] | v-eat
 :::
@@ -207,14 +207,14 @@ z-Alazun | [d-cake | d-doughnut | d-and | [g-ownership | bl-Ahelan]] | v-eat
 **5.** *Alazun eats either candy or chocolate, and an ice cream.*
 
 ::: details Show answer
-`zalazun dunedal dohedel del dazedal dal vagedal.`
+`zalazun dagedal dohedel del dazedal dal vozedal.`
 
 z-Alazun | [[d-candy | d-chocolate | d-or-exactly-one] | d-ice-cream | d-and] | v-eat
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
 
-**1.** `zunedal zohedel zam gegunum blahelan guzemel.`
+**1.** `zagedal zohedel zam gegunum blahelan guzemel.`
 
 ::: details Show answer
 [z-candy | z-chocolate | z-and.open | [g-ownership | [bl-Ahelan | g-sleepy]]]
@@ -248,20 +248,20 @@ z-ice-cream | [[g-red | g-small | g-not] | g-big | g-and]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alazun eats the red lollipop and the candy.* `zalazun doledel gerulol dunedal dal vagedal.` or `zalazun doledel dunedal dal gerulol vagedal.`
+**1.** *Alazun eats the red lollipop and the candy.* `zalazun doledel gerulol dagedal dal vozedal.` or `zalazun doledel dagedal dal gerulol vozedal.`
 
 ::: details Show answer
-`zalazun doledel gerulol dunedal dal vagedal.`
+`zalazun doledel gerulol dagedal dal vozedal.`
 
 z-Alazun | [[d-lollipop | g-red] | d-candy | d-and] | v-eat
 
 A modifier for one item stays on that item. `gerulol` right after the join word is SHARED: both sweets would be red.
 :::
 
-**2.** *Ahelan eats the cake and her doughnut.* (only the doughnut is hers) `zahelan degodel dededel om bahelar dal vagedal.` or `zahelan degodel om bahelar dededel dal vagedal.`
+**2.** *Ahelan eats the cake and her doughnut.* (only the doughnut is hers) `zahelan degodel dededel om bahelar dal vozedal.` or `zahelan degodel om bahelar dededel dal vozedal.`
 
 ::: details Show answer
-`zahelan degodel dededel om bahelar dal vagedal.`
+`zahelan degodel dededel om bahelar dal vozedal.`
 
 z-Ahelan | [d-cake | [d-doughnut | [used-by | b-←Ahelan]] | d-and] | v-eat
 
@@ -270,7 +270,7 @@ Only the item just before the join word takes a hook this way. In the other form
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zalazun dunedal dohedel del dazedal dal vagedal.` / `zalazun dunedal dohedel del dazedal del vagedal.`
+**1.** `zalazun dagedal dohedel del dazedal dal vozedal.` / `zalazun dagedal dohedel del dazedal del vozedal.`
 
 ::: details Show answer
 z-Alazun | [[d-candy | d-chocolate | d-or-exactly-one] | d-ice-cream | d-and] | v-eat

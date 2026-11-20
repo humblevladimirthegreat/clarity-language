@@ -56,11 +56,11 @@ describe("numberValue", () => {
 
 describe("measureValue", () => {
   it("measures-and-percent.md#measure-phrases: the unit's root and the amount", () => {
-    const meter = readText("zazozon bezerom gradol vowurol.", tables)[0]!.claim.roles.b!;
+    const meter = readText("zazozon bozerom gradol vowurol.", tables)[0]!.claim.roles.b!;
     const measure = measureValue(meter)!;
     assert.deepEqual(measure.amount, { kind: "scalar", value: 2 });
     assert.equal(measure.unit, meter.kind === "thing" ? meter.root : "");
-    assert.equal(measureValue(readText("zazozon bezerom vowurol.", tables)[0]!.claim.roles.b!), undefined);
+    assert.equal(measureValue(readText("zazozon bozerom vowurol.", tables)[0]!.claim.roles.b!), undefined);
   });
 });
 

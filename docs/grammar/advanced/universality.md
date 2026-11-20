@@ -11,13 +11,13 @@ English can hedge or source one description inside a sentence: *a hat that I rem
 
 Only words about how you know or how things stand move to `/w/` this way: the ones above, [CAUSE](/cause#mechanism), the [*already* / *still* words](/already-still-yet#stage-of-change), and [*can* with `oda`](/can-and-cant#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wagom` *as planned*, `wogem` *decidedly*, `wowam` *tentatively*, `walom` *wishfully*).
 
-> `zazozon danobal wevum gerulol vayebel.`
+> `zazozon dahobal wevum gerulol vayebel.`
 >
 > z-Azozon | [d-hat | [w-MEMORY | g-red]] | v-see
 >
 > "Azozon sees a hat that I remember as red."
 
-> `zazozon danobal wugem gerulol vayebel.`
+> `zazozon dahobal wugem gerulol vayebel.`
 >
 > z-Azozon | [d-hat | [w-LIVE | g-red]] | v-see
 >
@@ -39,7 +39,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *hat* | `anobal` | 🧢 |
+| *hat* | `ahobal` | 🧢 |
 
 **Review:**
 
@@ -71,7 +71,7 @@ z-Alazun | [d-dress | [w-LIVE | g-red]] | v-see
 **2.** *Azozon sees a hat that I remember as red.*
 
 ::: details Show answer
-`zazozon danobal wevum gerulol vayebel.`
+`zazozon dahobal wevum gerulol vayebel.`
 
 z-Azozon | [d-hat | [w-MEMORY | g-red]] | v-see
 :::
@@ -94,7 +94,7 @@ z-Azozon | [d-dress | [w-MEMORY | g-red]] | v-see
 *Azozon sees a dress that I remember as red.*
 :::
 
-**2.** `zalazun danobal wugem gerulol vayebel.`
+**2.** `zalazun dahobal wugem gerulol vayebel.`
 
 ::: details Show answer
 z-Alazun | [d-hat | [w-LIVE | g-red]] | v-see
@@ -112,10 +112,10 @@ z-Alazun | [d-hat | [w-LIVE | g-red]] | v-see
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Azozon sees a hat that I can see is red.* `zazozon danobal wugem gerulol vayebel.` or `zazozon danobal thugem gerulol vayebel.`
+**1.** *Azozon sees a hat that I can see is red.* `zazozon dahobal wugem gerulol vayebel.` or `zazozon dahobal thugem gerulol vayebel.`
 
 ::: details Show answer
-`zazozon danobal wugem gerulol vayebel.`
+`zazozon dahobal wugem gerulol vayebel.`
 
 z-Azozon | [d-hat | [w-LIVE | g-red]] | v-see
 

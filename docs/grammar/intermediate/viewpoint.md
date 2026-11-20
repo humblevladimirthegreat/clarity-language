@@ -140,14 +140,14 @@ Gravity works the same way: bare `oduho` + `/b/` is *under* the landmark, and ba
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewuhol` *west*; `gabuhol` *up* |
 | **`DIR th ANCHOR`** | that point on ANCHOR’s facing rose | `gewuhothawan` *listener-left* |
-| DIR + **`th`** + **`e`** + `/b/` | that point on the landmark’s own rose | `gazuhothel blamahal` *behind the house* |
+| DIR + **`th`** + **`e`** + `/b/` | that point on the landmark’s own rose | `gazuhothel blohahal` *behind the house* |
 | **complex `/ɡ/` + `/b/`** | region on a side of a landmark | `gewuhothazozon bledalol` *left of the tree, from Azozon’s view* |
 
 ### The landmark's own front (DIR + `th` + `e`) {#landmark-facing}
 
 English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then `th`, then **`e`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. `e` is the same vowel as pair reach on a label: here, the one `/b/` landmark is the one whose facing counts.
 
-> `zodozel vehohel gazuhothel blamahal.`
+> `zodozel vehohel gazuhothel blohahal.`
 >
 > z-dog | v-sit | [g-south-th-landmark | bl-house]
 >
@@ -166,11 +166,11 @@ The landmark's front is where its design or current use faces (a house's front d
 <!-- cheat-sheet: roles -->
 | Ageben | English |
 |--------|---------|
-| `gazuhothel blamahal` | *behind the house* (its own back) |
-| `gonuhothel blamahal` | *in front of the house* |
-| `gewuhothel blamahal` | *on the house's left* |
-| `gewuhothazozon blamahal` | *left of the house, from Azozon's view* |
-| `gewuhol blamahal` | *west of the house* |
+| `gazuhothel blohahal` | *behind the house* (its own back) |
+| `gonuhothel blohahal` | *in front of the house* |
+| `gewuhothel blohahal` | *on the house's left* |
+| `gewuhothazozon blohahal` | *left of the house, from Azozon's view* |
+| `gewuhol blohahal` | *west of the house* |
 
 ### Endings and resume
 

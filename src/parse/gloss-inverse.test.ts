@@ -59,7 +59,7 @@ describe("glossToAgeben", () => {
       "zazozon vowurol. zwuzer vuhuyol.",
       "zazozon vayebel dwuzor.",
       "zazozon dalazun vayebel. zwudarx veruvol.",
-      "zazozon d[ayobam#|] vezuyol.",
+      "zazozon d[oyobam#|] vezuyol.",
       "glegol z<kimchi> gamezem.",
       "zogozelx gragel.",
       "zogozelx gragel.",
@@ -99,7 +99,7 @@ describe("glossToAgeben", () => {
       "zodozel gaham blahaval vezuvel.",
       "zazozon vowurol halam blalazun.",
       "yel hewem blar zazozon vowurol.",
-      "zazozon vehohel el bamahal. zexual blamahar vezuvel.",
+      "zazozon vehohel el bohahal. zexual blohahar vezuvel.",
     ]) {
       assert.equal(canonical(glossToAgeben(morphGlossLine(ageben, tables), tables, bare)), canonical(ageben), ageben);
     }

@@ -9,7 +9,7 @@
 # R4d-6: the occasion clause after a restrictor's stand-in is the marker's data; the link is used.
 # lk28, ? zawan vebal. -> follows: unknown, marker only, as row 15 with listed occasions (now: unknown, left unused lexReading:standIn).
 @ lk28
-zawan vebal huxal blarl zayan vavobol al bamahal.
+zawan vebal huxal blarl zayan vavobol al bohahal.
 = You haven't listened once since we went into the house.
 
 # R4d-7: a point-back hook takes the landmark it points back to (needs the reader gap filled first).
@@ -17,11 +17,11 @@ zawan vebal huxal blarl zayan vavobol al bamahal.
 # lk30, ? zalazun vehohel. -> follows: unknown, never no (now: unknown, left).
 # lk31, ? zalazun varuyol aol babewol. -> follows: yes (now: unknown, left).
 @ lk29
-zazozon vehohel el bamahal. zalazun vehohel er.
+zazozon vehohel el bohahal. zalazun vehohel er.
 = Azozon sits at the house. Alazun sits there too.
 
 @ lk30
-zazozon vehohel el bamahal. zalazun vehohel vul er.
+zazozon vehohel el bohahal. zalazun vehohel vul er.
 = Azozon sits at the house. Alazun doesn't sit there.
 
 @ lk31
@@ -43,7 +43,7 @@ zazozon vezuyol balazun durl vehohel. zalazun valom durth.
 # lk34, ? zazozon dabedal vagedal. -> follows: yes (now: unknown, left unused reading:verbSharedNoun).
 # lk35, ? zazozon veruvol. -> follows: yes (now: unknown; not left, the verb list is never split).
 @ lk34
-zazozon vugudol vagedal val dabedal.
+zazozon vugudol vozedal val dabedal.
 = Azozon cooks and eats bread.
 
 @ lk35

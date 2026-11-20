@@ -58,7 +58,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *listener* | `awan` |
 | *walk* | `vowurol` |
 | *departure* | `vudurul` |
-| *dance* | `vunurol` |
+| *dance* | `vudurol` |
 | *competence* | `uwal` |
 
 #### English → Ageben {#beginner-english-to-ageben}
@@ -423,10 +423,10 @@ z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 **Rule:** [Fault](fault.md#fault)
 :::
 
-**17.** *I'm proud that I'm dancing, and I want to savor it.* `zuwen vunurol thuwathamam.` or `zuwen vunurol thuwathamem.`
+**17.** *I'm proud that I'm dancing, and I want to savor it.* `zuwen vudurol thuwathamam.` or `zuwen vudurol thuwathamem.`
 
 ::: details Show answer
-`zuwen vunurol thuwathamam.`
+`zuwen vudurol thuwathamam.`
 
 z-speaker | v-dance | th-competence-met-any-term-STAYING-OPEN
 

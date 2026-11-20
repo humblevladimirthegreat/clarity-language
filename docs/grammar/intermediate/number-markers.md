@@ -171,9 +171,9 @@ A free number in shorthand shows its ending as a mark after the role letter (`g~
 
 English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A `_` code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
 
-> `zazozon debebul g_b12 vagedal.`
+> `zazozon debebul g_b12 vozedal.`
 >
-> 🔊 `zazozon debebul grebubadol vagedal.`
+> 🔊 `zazozon debebul grebubadol vozedal.`
 >
 > z-Azozon | [d-pill | g-_b12] | v-eat
 >

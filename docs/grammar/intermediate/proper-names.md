@@ -127,7 +127,7 @@ The family name describes the given name, so the person is still one noun in one
 | `zaloln golowon` | [one of a name](#name-instance--ln) | *someone named Alon Olowon* |
 | `zalor` | [resume](/pronouns) | *Alon* (the same person) |
 
-Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zuvayal golowon` *the Olowon family*), and what the family uses takes the ordinary *whose* hook: `damahal om buvayal golowon` is *the Olowon family’s house*.
+Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zuvayal golowon` *the Olowon family*), and what the family uses takes the ordinary *whose* hook: `dohahal om buvayal golowon` is *the Olowon family’s house*.
 
 A full name works as a [greeting](/word-endings#greeting) too: `alon golowon.` is Alon Olowon saying hello. A [call](/speech-moves#vocative) takes the family name the same way (`yalon golowon.` *Alon Olowon!*).
 

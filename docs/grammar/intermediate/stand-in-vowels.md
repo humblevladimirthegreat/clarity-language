@@ -158,7 +158,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
-| *dance* | `vunurol` |
+| *dance* | `vudurol` |
 | *sing* | `vozuyel` |
 | *tell* | `vezuyol` |
 | *see* | `vayebel` |
@@ -169,7 +169,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Ahelan tells Alazun to dance, and maybe more.*
 
 ::: details Show answer
-`zahelan vezuyol balazun dorm vunurol.`
+`zahelan vezuyol balazun dorm vudurol.`
 
 z-Ahelan | v-tell | b-Alazun | d-to-clause.open | v-dance
 :::
@@ -185,7 +185,7 @@ z-Azozon | v-tell | b-Ahelan | d-lest-clause | v-sing
 **3.** *Alazun dances unless Azozon sings.*
 
 ::: details Show answer
-`zalazun vunurol thohem blurl zazozon vozuyel.`
+`zalazun vudurol thohem blurl zazozon vozuyel.`
 
 z-Alazun | v-dance | [th-if | bl-lest-clause] | z-Azozon | v-sing
 :::
@@ -208,7 +208,7 @@ z-Ahelan | v-sing . z-Alazun | v-tell | d-that-same-claim
 *Ahelan sings. Alazun says so.*
 :::
 
-**2.** `zalazun vayebel derl zazozon vunurol xel zahelan vozuyel.`
+**2.** `zalazun vayebel derl zazozon vudurol xel zahelan vozuyel.`
 
 ::: details Show answer
 z-Alazun | v-see | d-whether-clause | [z-Azozon | v-dance | x-or-exactly-one | z-Ahelan | v-sing]
@@ -216,7 +216,7 @@ z-Alazun | v-see | d-whether-clause | [z-Azozon | v-dance | x-or-exactly-one | z
 *Alazun sees whether Azozon dances or Ahelan sings.*
 :::
 
-**3.** `zazozon vehohel thovam blurl zalazun vunurol.`
+**3.** `zazozon vehohel thovam blurl zalazun vudurol.`
 
 ::: details Show answer
 z-Azozon | v-sit | [th-so-that | bl-lest-clause] | z-Alazun | v-dance
@@ -224,7 +224,7 @@ z-Azozon | v-sit | [th-so-that | bl-lest-clause] | z-Alazun | v-dance
 *Azozon sits, and my aim is for Alazun not to dance.*
 :::
 
-**4.** `zazozon vezuyol balazun durl vunurol. zalazun valom durth.`
+**4.** `zazozon vezuyol balazun durl vudurol. zalazun valom durth.`
 
 ::: details Show answer
 z-Azozon | v-tell | b-Alazun | d-lest-clause | v-dance . z-Alazun | v-wish | d-that-same-prohibition
@@ -256,10 +256,10 @@ z-Ahelan | v-tell | b-Alazun | d-to-clause.open | v-sit
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Alazun dances. Azozon says so.* <!-- lint: error -->`zalazun vunurol. zazozon vezuyol darl.`
+**1.** *Alazun dances. Azozon says so.* <!-- lint: error -->`zalazun vudurol. zazozon vezuyol darl.`
 
 ::: details Show answer
-`zalazun vunurol. zazozon vezuyol darth.`
+`zalazun vudurol. zazozon vezuyol darth.`
 
 z-Alazun | v-dance . z-Azozon | v-tell | d-that-same-claim
 

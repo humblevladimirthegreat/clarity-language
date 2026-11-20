@@ -1193,8 +1193,8 @@ describe("solve: denials, SHARED words and channels (R4c-3 to R4c-8, D7 to D9, R
   const said = async (l: ReturnType<typeof r>, question: string) => (await follows(l, q(question), base)).verdict;
 
   it("R4c-3 (D7): l7, ue denies each listed item; the outside item adds nothing", async () => {
-    assert.equal(await said(r(["l7"]), "yel zalazun dobodel vagedal."), "no");
-    assert.equal(await said(r(["l7"]), "yel zalazun dogozel vagedal."), "unknown");
+    assert.equal(await said(r(["l7"]), "yel zalazun dobodel vozedal."), "no");
+    assert.equal(await said(r(["l7"]), "yel zalazun dogozel vozedal."), "unknown");
   });
 
   it("R4c-4 (D9): l8, two u lists deny every pairing", async () => {
@@ -1208,7 +1208,7 @@ describe("solve: denials, SHARED words and channels (R4c-3 to R4c-8, D7 to D9, R
     for (const p of ["z1", "z2"]) assert.match(t.program, new RegExp(`^detail\\(nm\\("t:0\\.0",${p}\\),dt\\("hookJob:genitive","om",ahela,w\\)\\) :- on\\("t:0\\.0"\\)\\.$`, "m"));
     assert.equal(await said(r(["l9"]), "yel zogozel vowurol."), "yes");
     assert.equal(await said(r([], ["zazozon vowurol veruvol val hahunom."]), "yel zazozon veruvol hahunom."), "yes");
-    assert.equal(await said(r([], ["zazozon vagedal vayebel val dobodel."]), "yel zazozon dobodel vayebel."), "yes");
+    assert.equal(await said(r([], ["zazozon vozedal vayebel val dobodel."]), "yel zazozon dobodel vayebel."), "yes");
   });
 
   it("R4c-6: a likeness with no bl- word, each member to each other member", async () => {
@@ -1305,8 +1305,8 @@ describe("solve: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4,
     // T stays open: no world denies it (couldBe answers yes only where a choice could make T hold).
     assert.equal((await couldBe(q15, q("yel zalazun vezuvel."), base)).verdict, "unknown");
     assert.deepEqual(translate(q15, { lexicon: tables }).left.map((l) => l.reading), ["t:0.0"]);
-    const q17 = lk(ask("yel zazozon vowurol ul bamahal."), "lk18");
-    assert.equal(await said(q17, "yel zazozon vowurol ul bamahal."), "unknown");
+    const q17 = lk(ask("yel zazozon vowurol ul bohahal."), "lk18");
+    assert.equal(await said(q17, "yel zazozon vowurol ul bohahal."), "unknown");
     assert.deepEqual(translate(q17, { lexicon: tables }).left.map((l) => l.reading), ["t:0.0"]);
     const command = lk(ask("yol zalazun vowurol."), "Alazun: yaol.");
     assert.equal(await said(command, "yel zalazun vowurol."), "unknown");

@@ -127,7 +127,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *interlocutors* | `ayan` |
 | *rain* | `erulal` |
 | *night* | `anurul` |
-| *storm* | `anulul` |
+| *storm* | `ozulul` |
 | *sleepy* | `uzemel` |
 | *walk* | `vowurol` |
 | *run* | `veruvol` |
@@ -226,7 +226,7 @@ z-Ahelan | v-climb | h-rain | h-fog | h-equally-when
 *Ahelan climbs as often in rain as in fog.*
 :::
 
-**6.** `zalazun voguvol hanulul hem.`
+**6.** `zalazun voguvol hozulul hem.`
 
 ::: details Show answer
 z-Alazun | v-climb | h-storm | h-when-one.open

@@ -13,7 +13,7 @@
  *
  * Order is read in slots: `X HOOK Y` with one role on both sides (a same-role hook, range, or same-role word) is one
  * slot, and so is a range whose far end is a bare number (`dorelx gragel oer grazal`); a hook that describes the noun on
- * its left (`zodozel om bar`) belongs to that noun; a hook's `/b/` landmark, a measure `/b/` (`bezerom gradol`,
+ * its left (`zodozel om bar`) belongs to that noun; a hook's `/b/` landmark, a measure `/b/` (`bozerom gradol`,
  * measures-and-percent.md#measure-phrases), and every `/h/` / `/th/` unit is an `h` slot, which goes anywhere. A range hook
  * in **-r** under a question is a fill-ask blank, as the resolver records it (open-ranges.md#named-ranges). A stand-in (`darl`, `dorm`) sits where its dependent
  * puts it and is not checked. Verbless clauses and dependents are not checked.
@@ -21,7 +21,7 @@
  * Between two joined verbs (`zahelan vowuyal davogel erom vowurol`), a word's place says which verb takes it
  * (verb-and-stance-joins.md#vp-clause-forms): a word before the subject or after the last verb is shared, and a `/d/` or `/b/`
  * right after an earlier verb is that verb's own. So a verb with its own words up to the same-role word is one `v` slot.
- * A `/v/` join (`dabedal vugudol daledel vagedal val`) is one verb unit already.
+ * A `/v/` join (`dabedal vugudol daledel vozedal val`) is one verb unit already.
  *
  * A drill's wrong form is not checked: the option of a **Pick one** item that is not the answer, and the
  * `<!-- lint: error -->` form of a **Fix it** item ({@link drillWrongForms}).
@@ -70,7 +70,7 @@ function isStandIn(unit: Unit): boolean {
   );
 }
 
-/** A unit noun with its amount (`bezerom gradol` *two meters*): says how much, like an `/h/` word. */
+/** A unit noun with its amount (`bozerom gradol` *two meters*): says how much, like an `/h/` word. */
 function isMeasure(unit: Unit): boolean {
   return unit.kind === "np" && unit.coord.level === "b" && unit.coord.parts.some((part) =>
     part.items.some((item) =>

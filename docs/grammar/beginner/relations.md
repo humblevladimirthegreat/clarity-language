@@ -27,7 +27,7 @@ When English says something resembles a model (*walks like a duck*, *a house lik
 
 On a noun, the same root is **`gewem`**:
 
-> `zamahal gewem blazozon.`
+> `zohahal gewem blazozon.`
 >
 > z-house | [g-like | bl-Azozon]
 >
@@ -62,7 +62,7 @@ With no `bl-` word after a joined subject, the model is the other members: each 
 | Example | What it is instead |
 |---------|--------------------|
 | a `/b/` word with no relation word before it | the recipient |
-| *in a house* | a [hook](hooks.md#extra-noun) (`al bamahal`) |
+| *in a house* | a [hook](hooks.md#extra-noun) (`al bohahal`) |
 | *using* a tool | also a [hook](hooks.md#extra-noun) |
 | giving *one* person two labels | not resemblance, so not this pair |
 | *as sleepy as* | how far two things have a quality, not whether one resembles the other |

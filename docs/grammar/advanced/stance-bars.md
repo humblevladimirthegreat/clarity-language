@@ -115,7 +115,7 @@ A CLUES or PATTERN bar can also take [`blarl`](/evidentiality#evidence-clause): 
 
 **Rules and permission.** A requirement as the bar is the demand; a tie meets it. A permission is the limit; rank `zol` goes over it.
 
-> `zamahal hwuvol zoel gabobem.`
+> `zohahal hwuvol zoel gabobem.`
 >
 > [z-house | h-episode-event-REQUIRE-rule | z-equal-rank | g-strength]
 >

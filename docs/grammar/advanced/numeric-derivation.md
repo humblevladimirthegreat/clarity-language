@@ -123,7 +123,7 @@ English *a pair of…*, *three-part…*, *primary…* can say how many parts the
 | **`+4xROOT`** | quad / 4-part / square / frame | `zrahuxuhuyom`: *a four-part / framed judgment* | `zruhuxemunam` | *an unframed message* | **4** = four sides of a frame |
 | **`+5xROOT`** | hand / pentad / agency-set | `zrazaxuwal`: *a handy / five-fold toolkit* | `zruzaxagom` | *a plan without practical grasp* | **5** = fingers of a hand |
 | **`+6xROOT`** | hex / 6-part / honeycomb / pack | `zravoxuvahal`: *a hexagonal / six-pack product* | `zruvoxuhunam` | *an unpacked team* | **6** = honeycomb / six-pack |
-| **`+7xROOT`** | heptad / week-cycle / complete series | `zrarexezudam`: *a seven-fold / week-cycle ritual* | `zrurexezudam` | *a broken-cycle ritual* | **7** = days that close a week |
+| **`+7xROOT`** | heptad / week-cycle / complete series | `zrarexorudam`: *a seven-fold / week-cycle ritual* | `zrurexorudam` | *a broken-cycle ritual* | **7** = days that close a week |
 | **`+8xROOT`** | octet / 8-part / doubled-quad | `zraluxugohum`: *an octet / eight-part blockage* | `zruluxugohum` | *a non-octet blockage* | **8** = two frames (4+4) |
 | **`+9xROOT`** | ennead / near-full / almost-ten | `zranaxonurel`: *a nine-part / near-full choir* | `zrunaxonurel` | *a far-from-full choir* | **9** = one short of ten |
 | **`+0xROOT`** | null / reset / emptied | `vramoxodoram`: *to zero-score / null the score* | `grumoxodoram` | *a score that won’t null* / *stubborn residual score* (**anti-null**) | **0** = empty count |
@@ -259,9 +259,9 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`_xROOT`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zrexubewal`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
-| **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxubewal`: *specimen #1*; `zrebadoxamahal`: *room-12* as a coded kind; `brebadoxamahal`: *room-12* as `/b/` | the digits **are** the name, not a count |
+| **`_NxROOT`** | **specimen / item #N**: the code is part of the kind | `zrebaxubewal`: *specimen #1*; `zrebadoxohahal`: *room-12* as a coded kind; `brebadoxohahal`: *room-12* as `/b/` | the digits **are** the name, not a count |
 
-When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zamahal g_12` = *the room numbered 12*. Use `_NxROOT` when the code is part of the concept (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free `x_…`; to dial or enter a code, use free `v_…`.
+When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zohahal g_12` = *the room numbered 12*. Use `_NxROOT` when the code is part of the concept (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free `x_…`; to dial or enter a code, use free `v_…`.
 
 Digitless `+`/`-`/`#` on ROOT = *what the kind is*; digitless `_` = *how the catalog names it*.
 

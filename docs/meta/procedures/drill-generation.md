@@ -197,7 +197,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner b
 | `odoze` | *dog* |
 | `ogoze` | *cat* |
 | `ana` | *book* |
-| `amaha` | *house* |
+| `ohaha` | *house* |
 | `eguge` | *inclusion* / *inside* (**-m**) |
 | `obulo` | *blue* |
 | `erulo` | *red* |
@@ -401,7 +401,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Social ties (`gamayam`) | `social-ties.md` Beginner |
 | Extra-noun hook compounds (`owurolul`) | `hook-compounds.md` Advanced |
 | Hook prefixes (`guoxuvuvul`, `gamxohalal`) | `hook-compounds.md` Advanced |
-| Hooked joins (`zexual blamahal`, `huxal blanulul`) | `hooked-joins.md` Advanced |
+| Hooked joins (`zexual blohahal`, `huxal blozulul`) | `hooked-joins.md` Advanced |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
 | spelled counts / ordinals / `gral` (no shorthand) | `numbers.md` Beginner |

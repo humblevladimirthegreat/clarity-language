@@ -198,7 +198,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *dance* | `vunurol` | 🕺 |
+| *dance* | `vudurol` | 🕺 |
 | *stop* | `vezohul` | 🛑 |
 | *quiet* | `ugowul` | 🔈 |
 | *walk* | `vowurol` | 🚶 |
@@ -231,7 +231,7 @@ z-Azozon | d-CITE[Azozon] | v-tell
 **2.** *Alazun wrote something like “Ahelan dances.”*
 
 ::: details Show answer
-`zalazun d~[zahelan vunurol] varuyol.`
+`zalazun d~[zahelan vudurol] varuyol.`
 
 z-Alazun | d-CITE.about[z-Ahelan | v-dance] | v-write
 :::
@@ -255,7 +255,7 @@ y-prohibition | z-Azozon | v-CITE[v-stop]
 **5.** *Sam, does Azozon dance?*
 
 ::: details Show answer
-<code>y@&lt;Sam&gt; yel zazozon vunurol.</code>
+<code>y@&lt;Sam&gt; yel zazozon vudurol.</code>
 
 y-NAME.OPAQUE["Sam"] | y-question | z-Azozon | v-dance
 :::
@@ -286,7 +286,7 @@ z-Alazun | v-OPAQUE["google"] | d-Egoren
 *Alazun googled Egoren.* (a borrowed word)
 :::
 
-**3.** `zahelan g(zahelar vunurol) vowurol.`
+**3.** `zahelan g(zahelar vudurol) vowurol.`
 
 ::: details Show answer
 [z-Ahelan | g-ASIDE[z-←Ahelan | v-dance]] | v-walk
@@ -302,7 +302,7 @@ y-OPAQUE["Bravo"]
 *Bravo!* (a foreign word)
 :::
 
-**5.** `zahelan d~@[egoren alazun] vunurol.`
+**5.** `zahelan d~@[egoren alazun] vudurol.`
 
 ::: details Show answer
 z-Ahelan | d-NAME.CITE.about[Egoren | Alazun] | v-dance
@@ -320,10 +320,10 @@ z-Ahelan | d-CITE[v-stop] | v-tell
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ahelan danced Egoren Alazun.* (the dance) `zahelan d@[egoren alazun] vunurol.` or `zahelan d[egoren alazun] vunurol.`
+**1.** *Ahelan danced Egoren Alazun.* (the dance) `zahelan d@[egoren alazun] vudurol.` or `zahelan d[egoren alazun] vudurol.`
 
 ::: details Show answer
-`zahelan d@[egoren alazun] vunurol.`
+`zahelan d@[egoren alazun] vudurol.`
 
 z-Ahelan | d-NAME.CITE[Egoren | Alazun] | v-dance
 
@@ -342,10 +342,10 @@ What was said is the object, so it is a cite in `/d/`; an aside only comments on
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Alazun danced Egoren.* (a work with a one-word name) <!-- lint: error -->`zalazun d@[egoren] vunurol.`
+**1.** *Alazun danced Egoren.* (a work with a one-word name) <!-- lint: error -->`zalazun d@[egoren] vudurol.`
 
 ::: details Show answer
-`zalazun degoren vunurol.`
+`zalazun degoren vudurol.`
 
 z-Alazun | d-Egoren | v-dance
 

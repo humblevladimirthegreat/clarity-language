@@ -22,7 +22,7 @@ Each letter **echoes** a job it already has somewhere in the grammar: the letter
 | `m` | mind and feeling: faces, emotions, mental states | `evemu` *fear* | [`-m`](/word-endings#abstract-m) is the abstract ending |
 | `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `aheba` *hand* | [`/b/`](/clause#role-letters) is the bolted-on piece |
 | `v` | doing, playing and moving: actions, toys, vehicles | `eruvo` *run* | [`/v/`](/clause#role-letters) is the action |
-| `h` | places and fixtures: buildings, landscapes, rooms, headings | `amaha` *house* | [`/h/`](/clause#role-letters) is where |
+| `h` | places and fixtures: buildings, landscapes, rooms, headings | `ohaha` *house* | [`/h/`](/clause#role-letters) is where |
 | `l` | nature and raw stuff: plants, weather, sky, materials, colors | `edalo` *tree* | [`-l`](/word-endings#concrete-l) is the concrete ending |
 | `d` | food and drink, with dishes and kitchen gear | `alede` *apple* | [`/d/`](/clause#role-letters) is what is done to (eaten) |
 | `w` | tools and things you use | `anewu` *knife* | [`/w/`](/clause#role-letters) is *with* |

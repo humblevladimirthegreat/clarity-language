@@ -35,7 +35,7 @@ With a plain verb, *every cat* acts one by one: `zual gogozel vehohel.` is *each
 
 *Every cat* covers the cats the situation is about. An extra-noun [hook](/hooks#extra-noun) after the kind is a clause extra, as after any noun: it places the act, and it does not change which cats count.
 
-> `zual gogozel el bamahal vehohel.`
+> `zual gogozel el bohahal vehohel.`
 >
 > [z-everything | g-cat] | [at | b-house] | v-sit
 >

@@ -49,7 +49,7 @@ Equality `oe` with a shared scale needs two or more names. `oe` with no shared s
 
 English *two meters taller* still ranks two people on one quality, and it also names how large the gap is. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the *unit* (published abstract = SI name), and `/ɡ/` on the unit is the *amount* ([measure phrases](/measures-and-percent#measure-phrases)).
 
-> `zazozon zalazun zol gadahom blezerom gradol.`
+> `zazozon zalazun zol gadahom blozerom gradol.`
 >
 > [z-Azozon | z-Alazun | z-rank/more | [g-height | [bl-meter | g-two]]]
 >
@@ -78,7 +78,7 @@ To score the shared adjective as of a dated now, write [*as-of*](/as-of#as-of) o
 
 **Needs:** [Measure phrases](/measures-and-percent#measure-phrases) · [Exponents](/digitless-exponents#exponents)
 
-English *kilometers* or *milligrams* scales the unit with a prefix. Ageben keeps the base unit and puts the power of ten on the amount (`e3` / `e-3` / an exact count): `bezerom g+5400` or `bezerom g+5.4e3`; `buberem g+70e3`. There is no *kilo-* / *milli-* / *mega-* stem, so the unit word stays the same at every size.
+English *kilometers* or *milligrams* scales the unit with a prefix. Ageben keeps the base unit and puts the power of ten on the amount (`e3` / `e-3` / an exact count): `bozerom g+5400` or `bozerom g+5.4e3`; `buberem g+70e3`. There is no *kilo-* / *milli-* / *mega-* stem, so the unit word stays the same at every size.
 
 For *two meters taller*, see [measured differentials](#measured-differentials). Vague degree uses `/w/` on the scale (`zol wohalal gadahom …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
@@ -231,7 +231,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *properly* / *correctly* | `hegugel` |
 | *properly* (*up to standard*) | the doer, then `hwuvol zoel hegugel` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubugem` |
-| *neatly* / *in an orderly way* | `henodam` |
+| *neatly* / *in an orderly way* | `hulodam` |
 | *seriously* | `hezedem` |
 | *surprisingly* / *suddenly* | `hemem` |
 | *surprisingly* + adjective (*surprisingly blue*) | `wemem` right before the `/ɡ/` word |
@@ -327,7 +327,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *at least 5* / *at most 5* (*minimum* / *maximum*) | `zrazal oel zrawal` / `zruwal oel zrazal` |
 | *2nd through last* (a rank up to the last place) | `zrodol oel zrowal` |
 | *decade* / *century* | `bovuvam g+10` / `bovuvam g+100` |
-| *unit* | the measure phrase: `bezerom g+2` |
+| *unit* | the measure phrase: `bozerom g+2` |
 | *estimate* (*I put it at 40*) | stance number `th+40` |
 
 ### Expensive, cheap, weak, remarkable {#bar-words}
@@ -467,7 +467,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 
 **Needs:** [Measure phrases](/measures-and-percent#measure-phrases) · [Proper name `-n`](/proper-names#proper-name--n)
 
-English *the meter* or *the pascal* cites a unit as a named standard. Everyday measure puts a stock unit root in a measure phrase (`bezerom gradol`); to cite the standard itself, use `-n` on that unit root ([named handles](/word-endings#named-n-beginner)), so it reads as a proper name. Resume a prior unit phrase with `-r` on the same root (`bezeror gradol` after `bezerom gradol` is on the table).
+English *the meter* or *the pascal* cites a unit as a named standard. Everyday measure puts a stock unit root in a measure phrase (`bozerom gradol`); to cite the standard itself, use `-n` on that unit root ([named handles](/word-endings#named-n-beginner)), so it reads as a proper name. Resume a prior unit phrase with `-r` on the same root (`bozeror gradol` after `bozerom gradol` is on the table).
 
 Some derived units have an optional root of their own; the quantity they measure stays on its own root:
 
@@ -480,7 +480,7 @@ Some derived units have an optional root of their own; the quantity they measure
 | hertz | `uzula` *hertz* | `buzulam g+50` | `adora` *rhythm* |
 | ohm | `obewe` *ohm* | `bobewem g+100` | `ugohu` *blockage* |
 | coulomb | `uzeve` *coulomb* | `buzevem g+2` | `erazu` *charge* |
-| radian | `odugu` *radian* | `bodugum g+1` | `oyugo` *cycle* |
+| radian | `odugu` *radian* | `bodugum g+1` | `arugo` *cycle* |
 
 **Related form:** general `+1xROOT` (*primary / singleton of a kind*) is a [numeric prefix](/numeric-derivation#scalar-digit-morphs), not an SI alias.
 
