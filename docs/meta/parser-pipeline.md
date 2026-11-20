@@ -207,7 +207,8 @@ src/
     classify.ts                  # Stage 2
     tokenize.ts / tokens.ts      # peel .?! { } ; LexWord → IToken
     sentence-parser.ts           # Stage 3 entry: parser instance, parseSentenceTokens
-    sentence-grammar.ts          # Stage 3 Chevrotain grammar class
+    sentence-grammar.ts          # Stage 3 Chevrotain grammar class: rule fields, constructor, DSL handle
+    grammar/                     # Stage 3 rule families, one definer each: clause, unit, np, vp, modifier, package
     sentence-shapes.ts           # Stage 3 shared head: error class, slot types and consts, error messages
     mark-context.ts              # before Stage 3: markContext retypes tokens by lookahead
     sentence-build.ts            # after Stage 3: post-parse fixes, CST → AST
@@ -231,7 +232,7 @@ Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 
 - **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
 - **`LexWord`** — Stage 2: `MorphWord` plus `reading`, optional `overlay` / `rootGloss`.
-- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional stand-in `dependent`). A call, *yes* / *no*, or interjection closed by a period is its own utterance: the sentence after it opens a new one (`buildUtterances`, `afterTurnWord` in `sentence-grammar.ts`; [past a period](/sentence-linkers#past-a-period)). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, written spans (as noun heads), islands, clause coords, revisers.
+- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional stand-in `dependent`). A call, *yes* / *no*, or interjection closed by a period is its own utterance: the sentence after it opens a new one (`buildUtterances`, `afterTurnWord` in `sentence-build.ts`; [past a period](/sentence-linkers#past-a-period)). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, written spans (as noun heads), islands, clause coords, revisers.
 - **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`), and when present `answers[]`, `pairings[]`, `scope[]` (whole-clause frame order, `src/parse/scope.ts`; a rest-of-sentence tone is an `attitude` frame there), `tones[]` (`ToneRecord`), `carried[]` (`BodyCarry`, `src/parse/carry.ts`): for each later bare statement, the frames it inherits past a period, each a `CarriedFrame` `{ kind: "channel" | "holder" | "notional"; word; utteranceIndex; bodyIndex; offset?: { bound; amount? } }` pointing at the frame's word in the sentence that set it ([carry forward](/evidentiality#carry-forward)). A holder seam gives a `holder` entry and one for the channel or NOTIONAL it sits on (none for MAY); a dated channel's signed `/b/` is its `offset`. The carry starts on a statement's own whole-clause channel, NOTIONAL or holder; questions, commands and requests neither take nor end it; a new one of the three, a written statement word as the real act, *by the way* (`xavedam`), or a goodbye (as the resolver tells it from a hello) ends it. The record keeps one carry per speaker: `ParseOptions.speakers` names who says each sentence, in text order (one per body, or per bodiless utterance), so another speaker's reply neither takes nor ends a speaker's frame, and a goodbye ends every speaker's. With no `speakers`, the text is one speaker.
 
 ## Browser / bundle size
