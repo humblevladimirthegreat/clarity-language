@@ -14,8 +14,6 @@ https://discord.gg/CAMGw2Akhc
 -speed reading view becomes outline mode?
 -syntax highlighting should cover more obscure scoping/carry rules
 -cheat sheet distinguish cue vs exact match
--consider introducing overlay terms as normal vocab
--flashcards download on tools
 -scoping/carry rules in central page/cheat-sheet
 -change llms.txt to download the reader instead of parser?
 

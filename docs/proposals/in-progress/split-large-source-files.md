@@ -1,8 +1,8 @@
 # Split the large source files under src/
 
-**Status:** IN PROGRESS, 2026-11-20: phase 1 done (D1 `npm run deps`, D2 the size lint and [code-layout.md](../../meta/code-layout.md), which owns the limits, the lint and how to split a file). Next is phase 2 (S1a to S3). Decided 2026-11-20, all as recommended: in scope are `sentence-parser.ts`, `translate.ts`, `morph-gloss.ts`, and the Keys and Context leaf of `read.ts`, not `enforce.ts`; `read.ts` keeps Terms, Units and Readings together; `Translator`'s condition methods move out as functions; the grammar class's rules move into one definer function per rule family (unit S1c); S4 and S5 are phase 3. **Runs unsupervised** (see [Implementation plan](#implementation-plan)).  
+**Status:** IN PROGRESS, 2026-11-20: phase 1 done (D1 `npm run deps`, D2 the size lint and [code-layout.md](../../meta/code-layout.md), which owns the limits, the lint and how to split a file). Next is phase 2 (S1a to S1c). User, 2026-11-20: open decisions 1 and 2 settled as recommended (`deps --check-move` ignores indentation; `--split` counts value imports only); [code-layout.md](../../meta/code-layout.md#splitting-a-file) owns both. User, 2026-11-20: phases rebalanced, phase 2 is the parser (S1a to S1c), phase 3 the rest (S2 to S5 and the close). Decided 2026-11-20, all as recommended: in scope are `sentence-parser.ts`, `translate.ts`, `morph-gloss.ts`, and the Keys and Context leaf of `read.ts`, not `enforce.ts`; `read.ts` keeps Terms, Units and Readings together; `Translator`'s condition methods move out as functions; the grammar class's rules move into one definer function per rule family (unit S1c). **Runs unsupervised** (see [Implementation plan](#implementation-plan)).  
 **Related:** [code-layout.md](../../meta/code-layout.md), [deps.ts](../../../scripts/deps.ts), [lint-source-size.ts](../../../scripts/lint-source-size.ts), [parser-pipeline.md](../../meta/parser-pipeline.md), [read-ageben.md](../../meta/procedures/read-ageben.md), [interpreter.md](../../meta/interpreter.md), [solver.md](../../meta/solver.md), [proposals.md](../../meta/procedures/proposals.md).  
-**Depends on:** none. **Order:** `solver-coverage.md` is in progress and edits `translate.ts` and `read.ts`. Run each phase here between its phases, never during one. Its text names functions by file; the close step updates the ones that moved.  
+**Depends on:** none. **Order:** `solver-coverage.md` is in progress and edits `translate.ts` and `read.ts`. Phase 3 here runs between its phases, never during one; phase 2 touches neither file and can run any time. Its text names functions by file; the close step updates the ones that moved.  
 **Design authority:** *none*. Tooling and code layout only: no form or reading changes, and the parser's accept/reject behavior does not change.
 
 ## Design
@@ -48,8 +48,8 @@ The work runs through subagents: the units read different files and share little
 
 ### Phases
 
-- **Phase 2, parser and translator:** S1a, S1b, S1c, S2, S3. Prompt: *Carry out phase 2 of `split-large-source-files.md`*. Cut after S3: the next units read different files (`morph-gloss.ts`, `read.ts`), and five units fill a session.
-- **Phase 3, the rest:** S4, S5, then the close. Prompt: *Carry out phase 3 of `split-large-source-files.md`*.
+- **Phase 2, parser:** S1a, S1b, S1c. Prompt: *Carry out phase 2 of `split-large-source-files.md`*. Cut after S1c: the three units share `sentence-grammar.ts` and the parser meta docs, and the later units read none of them. S1c is the riskiest unit and may take more than one subagent; nothing follows it in the phase to crowd out.
+- **Phase 3, interpreter and gloss:** S2, S3, S4, S5, then the close. Prompt: *Carry out phase 3 of `split-large-source-files.md`*. Run it only while `solver-coverage.md` is between phases.
 
 ### Units
 
@@ -120,14 +120,11 @@ Make `read-context.ts` per [Splits](#splits), and repoint importers of `wordKey`
 
 ### Commits
 
-One per unit after its gate, plus one per phase for the consolidated proposal. Phase 1 is done. Phase 2: S1a, S1b, S1c, S2, S3, and the consolidation (6). Phase 3: S4, S5, and the close (3). Messages start `split-large-source-files D1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits, staging only the unit's files.
+One per unit after its gate, plus one per phase for the consolidated proposal. Phase 1 is done. Phase 2: S1a, S1b, S1c, and the consolidation (4). Phase 3: S2, S3, S4, S5, and the close (5). Messages start `split-large-source-files D1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits, staging only the unit's files.
 
 ## Open decisions
 
-Logged for review when the plan is done.
-
-1. **`deps --check-move` ignores indentation** (D1). A method that becomes a function changes indent, so an exact compare would flag every line of it. Options: ignore leading whitespace; compare exactly and list the reindented lines as allowed. Taken: ignore leading whitespace, and each new file's leading comment. What would change it: a move whose only change is indentation inside a multi-line template literal, where whitespace is content; none of the planned splits moves such a literal by reindenting it. **Recommendation:** (medium) keep.
-2. **`deps --split` counts value imports only** (D1). Options: count type-only imports in cycles; leave them out. Taken: leave them out, since `import type` is erased and makes no runtime cycle (S3 relies on this for `Translator`). What would change it: a build mode that keeps type imports at run time, which this repo does not use. **Recommendation:** (high) keep.
+None open. The run logs here each **(low)** decision it makes, and each hard-to-undo **(medium)** one, for review when the plan is done.
 
 ## Seam measurements
 
