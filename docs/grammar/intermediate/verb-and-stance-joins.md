@@ -371,12 +371,12 @@ y-question | th-why | z-Azozon | v-run
 *Why do you say Azozon runs?*
 :::
 
-**6.** `zazozon veruvol thahum blalazun thul.`
+**6.** `zazozon veruvol thahum blozumul thul.`
 
 ::: details Show answer
-z-Azozon | v-run | [[th-because | bl-Alazun] | th-not]
+z-Azozon | v-run | [[th-because | bl-scream] | th-not]
 
-*Azozon runs, but not because of Alazun.*
+*Azozon runs, but not because of the screaming.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -391,12 +391,12 @@ z-Alazun | [v-walk | v-run | v-and]
 Two verbs of one subject close with a `/v/` join; `/x/` would start a new clause.
 :::
 
-**2.** *Azozon runs, but not because of Alazun.* `zazozon veruvol thahum blalazun thul.` or `zazozon veruvol vul thahum blalazun.`
+**2.** *Azozon runs, but not because Alazun screams.* `zazozon veruvol thahum thul blarl zalazun vozumul.` or `zazozon veruvol vul thahum blarl zalazun vozumul.`
 
 ::: details Show answer
-`zazozon veruvol thahum blalazun thul.`
+`zazozon veruvol thahum thul blarl zalazun vozumul.`
 
-z-Azozon | v-run | [[th-because | bl-Alazun] | th-not]
+z-Azozon | v-run | [th-because | th-not] | bl-that-clause | z-Alazun | v-scream
 
 The `/th/` join denies the ground; **`vul`** after the verb would deny the running.
 :::
