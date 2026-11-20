@@ -65,9 +65,8 @@ Phase 6 tests the tooling: it builds T2 and T3, runs the one unit left from phas
 `proposal-worker`, `model: sonnet`, effort `high`.  
 Build once what each phase 5 unit rebuilt or hunted for:
 1. `npm run sweep`: runs the walk that `src/interpret/accounting.test.ts` runs (shared from one module, not copied) and prints left readings by reason and part key, `unused` by part key, and throws. `--save` writes the counts to a `tmp/state/` file through `tmpPath()`; `--diff` prints only the keys whose count changed since the save. Six units each wrote a `tmp/scratch/*-sweep.ts` for this.
-2. A TypeScript mode for `npm run outline`: a `.ts` file's top-level functions, classes, types and consts with line ranges, so a unit reads only the part of `translate.ts` (about 2,300 lines) it edits.
-3. `npm run class-row -- <key> …`: each classification-table row of `docs/meta/interpreter.md` for a part key (such as `joinSeries:ue`), with its line number and its `notes` cell.
-4. A paragraph in [solver.md](../../meta/solver.md) by the Files line: how a `solve-*.txt` fixture is registered in `solve.test.ts`, how its `.lp` golden is written and regenerated, and that a case still left belongs in `accounting.test.ts`.
+2. `npm run class-row -- <key> …`: each classification-table row of `docs/meta/interpreter.md` for a part key (such as `joinSeries:ue`), with its line number and its `notes` cell.
+3. A paragraph in [solver.md](../../meta/solver.md) by the Files line: how a `solve-*.txt` fixture is registered in `solve.test.ts`, how its `.lp` golden is written and regenerated, and that a case still left belongs in `accounting.test.ts`.
 
 Tests beside each script. Its report names the commands, one line each, for the rule digest and for the `AGENTS.md` tooling notes; the orchestrator adds the digest line before B6b and applies the `AGENTS.md` lines.  
 **May edit:** `scripts/` (not `token-report.mjs`), `package.json`, `src/interpret/accounting.test.ts` and a new module under `src/interpret/` for the shared walk, `docs/meta/solver.md` (the fixture paragraph and the CLI section).

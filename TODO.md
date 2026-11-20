@@ -1,5 +1,6 @@
 
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
+copy redirects from dist/amplify-redirects.json
 
 my name: obuyen (innovation) gageben (clarity)
 
@@ -13,6 +14,10 @@ https://discord.gg/CAMGw2Akhc
 -speed reading view becomes outline mode?
 -syntax highlighting should cover more obscure scoping/carry rules
 -cheat sheet distinguish cue vs exact match
+-consider introducing overlay terms as normal vocab
+-flashcards download on tools
+-scoping/carry rules in central page/cheat-sheet
+-change llms.txt to download the reader instead of parser?
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth
