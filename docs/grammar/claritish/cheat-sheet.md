@@ -93,7 +93,7 @@ Feeling word: a thanks or sorry word + urge + how long it lasts. The first four 
 | `o` | do something for someone | `ua` | let go |
 | `u` | move off | `ao` | keep the peace |
 | | | `ae` | stay on the spot |
-| | | `ue` | can't tell which way |
+| | | `ue` | go, but can't tell which way |
 
 How long it lasts: `-l` settled in, `-m` open, `-r` a wave that will pass.
 

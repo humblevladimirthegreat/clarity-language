@@ -17,7 +17,7 @@ First, six more urges go in the same place as `a`, `e`, `o`, and `u`, and name u
 | `ua` | step out of the fight: let go, yield | it can't be changed, or it isn't worth the cost |
 | `ao` | use yourself to keep the peace | calming things down keeps someone safe |
 | `ae` | stay on the spot: frozen, or keeping a lid on it | acting now would cost more than waiting |
-| `ue` | you can't tell which way it pulls | you don't know yet |
+| `ue` | go, but you can't tell which way | you don't know yet |
 
 `oe` covers sharing as well as comfort, and the sake says which: with a met sake you want to tell someone, with an unmet sake you want someone with you. As with the first four, no urge is the right one to have.
 
