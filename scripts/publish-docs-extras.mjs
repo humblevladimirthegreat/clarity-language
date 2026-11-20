@@ -21,7 +21,7 @@ import { agentBundle, AGENT_BUNDLE_PATH } from './lib/agent-bundle.ts'
 import { llmsFiles } from './lib/llms-txt.ts'
 import { claritishLessons } from '../docs/grammar/.vitepress/lib/reading-order.ts'
 import { CLARITISH_APKG_PATH } from '../docs/grammar/.vitepress/lib/claritish-flashcards.data.ts'
-import { CLARITISH_FIELDS, CLARITISH_MODEL, loadClaritishPack } from '../src/flashcards-claritish.ts'
+import { claritishPackJson, loadClaritishPack } from '../src/flashcards-claritish.ts'
 import { tmpPath } from '../src/tmp-paths.ts'
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
@@ -66,15 +66,7 @@ const packJson = tmpPath('out', 'flashcards', 'claritish-publish.json')
 mkdirSync(dirname(packJson), { recursive: true })
 writeFileSync(
   packJson,
-  `${JSON.stringify({
-    model: CLARITISH_MODEL,
-    fields: CLARITISH_FIELDS,
-    decks: pack.decks.map((d) => ({
-      name: d.name,
-      id: d.id,
-      notes: d.notes.map((n) => ({ guid: n.guid, fields: CLARITISH_FIELDS.map((f) => n.fields[f]), tags: n.tags })),
-    })),
-  }, null, 1)}\n`,
+  `${JSON.stringify(claritishPackJson(pack), null, 1)}\n`,
 )
 const apkg = join(DIST, 'grammar', CLARITISH_APKG_PATH.replace(/^\//, ''))
 mkdirSync(dirname(apkg), { recursive: true })

@@ -51,7 +51,7 @@ const SHEETS: Record<string, string> = {
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";
-const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn.md", CLARITISH_SHEET, "editor.md"]);
+const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn.md", CLARITISH_SHEET, "flashcards.md", "editor.md"]);
 const CLARITISH_PATTERN_ONLY = new Set(["what-a-feeling-wants.md", "feelings.md"]);
 
 const MARKER_RE = /<!--\s*cheat-sheet:\s*(\S+)\s*-->/g;

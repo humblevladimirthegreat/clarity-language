@@ -121,6 +121,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "video",
   "AgebenInspect",
   "ClaritishEditor",
+  "ClaritishFlashcards",
   "DigitPegs",
   "FingerCode",
   "GlossOverlay",

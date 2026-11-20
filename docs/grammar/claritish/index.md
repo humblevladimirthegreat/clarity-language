@@ -30,13 +30,14 @@ Each lesson is short, with a few examples and a practice set. They build on each
 - [What a feeling wants](what-a-feeling-wants.md): the sake behind a feeling, and its urge, meaning what it makes you want to do.
 - [Feelings in full](feelings.md): six more urges, whether a feeling will pass, and a fear of what has not happened.
 
-Four pages follow the lessons:
+Five pages follow the lessons:
 
 | Page | What it gives you |
 |------|-------------------|
 | [Bonus: tone marks](tone-marks.md) | seven marks that say how you mean a sentence |
 | [Learn the full language](learn.md) | where the words go in the full language |
 | [Cheat sheet](cheat-sheet.md) | every drop-in in one place |
+| [Flashcards](flashcards.md) | every drop-in as an Anki flashcard, one deck per lesson |
 | [Journal editor](editor.md) | marks the habits in your own writing as you type |
 
 <!-- Entry page of the Claritish track; adds no forms and teaches no drop-in beyond the one example. Keep the lesson list in step with the sidebar in .vitepress/config.ts (docs/meta/grammar-docs.md#claritish-track). -->

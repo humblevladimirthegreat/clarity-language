@@ -47,7 +47,7 @@ export type ClaritishLessonPage = ClaritishLesson & { markdown: string };
 const DECK_ROOT = "Claritish";
 const TAG_ROOT = "claritish";
 /** Sidebar entries of the Claritish track that are not lessons (by slug). */
-const NOT_LESSONS = new Set(["", "learn", "cheat-sheet", "editor"]);
+const NOT_LESSONS = new Set(["", "learn", "cheat-sheet", "flashcards", "editor"]);
 /** Sheet sections that hold no notes: sounds, not meanings. */
 const NO_NOTES = new Set(["sounds"]);
 
@@ -325,6 +325,15 @@ export function loadClaritishPack(sidebar: readonly { text: string; link: string
   const dir = join(REPO_ROOT, "docs", "grammar", "claritish");
   const lessons = claritishLessonList(sidebar).map((l) => ({ ...l, markdown: readFileSync(join(dir, l.page), "utf8") }));
   return buildClaritishPack(readFileSync(join(dir, "cheat-sheet.md"), "utf8"), lessons);
+}
+
+/** The JSON `scripts/flashcards-package.py` packages: the Claritish note type and its decks. */
+export function claritishPackJson(pack: ClaritishPack) {
+  return {
+    model: CLARITISH_MODEL,
+    fields: CLARITISH_FIELDS,
+    decks: pack.decks.map((d) => ({ name: d.name, id: d.id, notes: d.notes.map((n) => ({ guid: n.guid, fields: CLARITISH_FIELDS.map((f) => n.fields[f]), tags: n.tags })) })),
+  };
 }
 
 /** Anki-importable TSV for the Claritish note type. */

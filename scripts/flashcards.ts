@@ -14,7 +14,7 @@ import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 import { claritishLessons, lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
-import { CLARITISH_FIELDS, CLARITISH_MODEL, claritishTsv, loadClaritishPack } from "../src/flashcards-claritish.js";
+import { claritishPackJson, claritishTsv, loadClaritishPack } from "../src/flashcards-claritish.js";
 import { buildNotes, buildPack, loadFlashcardInputs, NOTE_FIELDS, PACK_IDS, packTsv, type PackId } from "../src/flashcards.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath } from "../src/tmp-paths.js";
@@ -64,11 +64,7 @@ function main(): void {
       const base = join(options.out, "claritish");
       writeFileSync(`${base}.tsv`, claritishTsv(pack));
       if (!options.tsvOnly) {
-        packageJson(base, {
-          model: CLARITISH_MODEL,
-          fields: CLARITISH_FIELDS,
-          decks: pack.decks.map((d) => ({ name: d.name, id: d.id, notes: d.notes.map((n) => ({ guid: n.guid, fields: CLARITISH_FIELDS.map((f) => n.fields[f]), tags: n.tags })) })),
-        });
+        packageJson(base, claritishPackJson(pack));
       }
       console.log(`${id}: ${pack.notes.length} notes in ${pack.decks.length} deck(s), release ${pack.releaseId} → ${base}.${options.tsvOnly ? "tsv" : "apkg"}`);
       continue;

@@ -442,6 +442,7 @@ export const claritishLessons: LessonLink[] = [
   { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
   { text: 'Learn the full language', link: '/claritish/learn' },
   { text: 'Cheat sheet', link: '/claritish/cheat-sheet' },
+  { text: 'Flashcards', link: '/claritish/flashcards' },
   { text: 'Journal editor', link: '/claritish/editor' },
 ]
 
