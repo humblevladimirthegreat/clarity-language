@@ -994,6 +994,30 @@ describe("solve: MAY over members, denials, say words, universals and always; va
   });
 });
 
+describe("solve: hinges on universals (R4b-16, R4b-17, R4e decision 2)", () => {
+  const h = (labels: string[], extra: string[] = []) => log("hinges", labels, extra);
+
+  it("R4b-16: bc32 + bc33, a condition that resumes the member runs per stated member, both ways", async () => {
+    const a = await follows(h(["bc32", "bc33", "bc34"]), q("zazozon vezuvel."), base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.because, ["t:0.0", "t:0.1", "t:0.2"]);
+    assert.equal((await follows(h(["bc32", "bc33", "bc35"]), q("zazozon guzemel."), base)).verdict, "no");
+    // Not a stated member: no rule.
+    assert.equal((await follows(h(["bc32", "bc34"]), q("zazozon vezuvel."), base)).verdict, "unknown");
+  });
+
+  it("R4e decision 2 (c): a member's conditional meets the universal's", async () => {
+    assert.equal((await follows(h(["bc32", "bc33"]), q("zazozon vezuvel thohem blarl zazozon guzemel."), base)).verdict, "yes");
+    assert.equal((await follows(h(["bc32", "bc33"]), q("zazozon vezuvel thohem thul blarl zazozon guzemel."), base)).verdict, "no");
+    assert.equal((await clashes(h(["bc32", "bc33"], ["zazozon vezuvel thohem thul blarl zazozon guzemel."]), base)).clashes.length, 1);
+  });
+
+  it("R4b-17: bc37 + bc38, a definition works both ways", async () => {
+    assert.equal((await follows(h(["bc37", "bc38", "bc39"]), q("zazozon gwozeduyol."), base)).verdict, "yes");
+    assert.equal((await follows(h(["bc37", "bc38", "bc40"]), q("zazozon veduyol."), base)).verdict, "yes");
+  });
+});
+
 describe("solve: MAY with hinges, holders and questions (R4b-25 to R4b-28, R4e-6)", () => {
   const m = (labels: string[], extra: string[] = []) => log("maybe", labels, extra);
   const h = (labels: string[], extra: string[] = []) => log("hinges", labels, extra);

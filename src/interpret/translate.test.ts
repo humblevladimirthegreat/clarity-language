@@ -105,10 +105,22 @@ describe("translate: encoding", () => {
     assert.match(t.program, /^holds\(neg\(ezuve\(z\(X\)\)\)\) :- holds\(isa\(X,ogoze\)\), on\("t:0\.0"\)\.$/m);
   });
 
-  it("row 8: a hinge on a closed universal takes the kind in its body", () => {
+  it("row 8: a hinge on a closed universal takes the kind in its body, through the member's conditional (R4e decision 2)", () => {
     const t = program("zual gebezel vewobol thohem blarl zazozon vowurol.");
     assert.deepEqual(t.left, []);
-    assert.match(t.program, /^holds\(ewobo\(z\(X\)\)\) :- holds\(isa\(X,ebeze\)\), fits\(c\("t:0\.0"\),P\), holds\(P\), on\("t:0\.0"\)\.$/m);
+    assert.match(t.program, /^holds\(if\(c\("t:0\.0"\),o\("t:0\.0"\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.match(t.program, /^holds\(if\(c\("t:0\.0",X\),o\("t:0\.0",X\)\)\) :- holds\(if\(c\("t:0\.0"\),o\("t:0\.0"\)\)\), holds\(isa\(X,ebeze\)\), on\("t:0\.0"\)\.$/m);
+    assert.match(t.program, /^holds\(ewobo\(z\(X\)\)\) :- holds\(if\(c\("t:0\.0",X\),o\("t:0\.0",X\)\)\), holds\(isa\(X,ebeze\)\), fits\(c\("t:0\.0",X\),P\), holds\(P\), on\("t:0\.0"\)\.$/m);
+  });
+
+  it("R4b-16: a resume pronoun in a universal hinge's condition is the member, with per-member slots", () => {
+    const t = program("zual gogozel vezuvel thohem blarl zogozer guzemel.", "zazozon gogozel.");
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(neg\(isa\(X,uzeme\)\)\) :- holds\(if\(c\("t:0\.0",X\),o\("t:0\.0",X\)\)\), holds\(isa\(X,ogoze\)\), fits\(P,o\("t:0\.0",X\)\), holds\(neg\(P\)\), on\("t:0\.0"\)\.$/m);
+    assert.match(t.program, /^fits\(c\("t:0\.0",azozo\),isa\(azozo,uzeme\)\)\.$/m);
+    assert.ok(t.conditionals.has('if(c("t:0.0",azozo),o("t:0.0",azozo))'));
+    // Only a member the log states of the kind gets slots.
+    assert.ok(!t.slots.has('c("t:0.0",X)') && !t.slots.has('c("t:0.0")'));
   });
 
   it("R1-9: standalone thul keeps the claim and notes the frame", () => {

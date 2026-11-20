@@ -124,3 +124,41 @@ zazozon theyomazozon vowurol.
 @ hg15
 zalazun theyomazozon vehohel thohem thul blarl zazozon vowurol.
 = I gather Azozon thinks it isn't so that Alazun sits if Azozon walks.
+
+# R4b-16: a universal hinge whose condition resumes the member (usually-vs-must.md#how-things-work). R4e decision 2 (c):
+# the template term if(c(Id), o(Id)), and per stated member if(c(Id, M), o(Id, M)), the per-member rules gated on it.
+# bc32 + bc33 + bc34: ? zazozon vezuvel. → yes. bc32 + bc33 + bc35: ? zazozon guzemel. → no. bc32 + bc33:
+# ? zazozon vezuvel thohem blarl zazozon guzemel. → yes, the member's conditional.
+@ bc32
+zual gogozel vezuvel thohem blarl zogozer guzemel.
+= Every cat sleeps if it is sleepy.
+
+@ bc33
+zazozon gogozel.
+= Azozon is a cat.
+
+@ bc34
+zazozon guzemel.
+= Azozon is sleepy.
+
+@ bc35
+zazozon vezuvel vul.
+= Azozon is not asleep.
+
+# R4b-17: a definition both ways (usually-vs-must.md#how-things-work). bc37 + bc38 + bc39: ? zazozon gwozeduyol. → yes;
+# bc37 + bc38 + bc40: ? zazozon veduyol. → yes.
+@ bc37
+zual geyel gwozeduyol thehom blarl zeyer veduyol.
+= By definition, a person is a teacher if and only if they teach.
+
+@ bc38
+zazozon geyel.
+= Azozon is a person.
+
+@ bc39
+zazozon veduyol.
+= Azozon teaches.
+
+@ bc40
+zazozon gwozeduyol.
+= Azozon is a teacher.

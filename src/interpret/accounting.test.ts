@@ -86,8 +86,9 @@ describe("accounting guard: the drops it catches", () => {
     assert.deepEqual(left("zazozon zalazun zoel gamahum."), ["unused shared:equative"]);
   });
 
-  it("a resume pronoun under a universal hinge is left", () => {
-    assert.deepEqual(left("zual geyel gwozeduyol thehom blarl zeyer veduyol."), ["unused anaphor:content"]);
+  it("R4b-16, R4b-17: a resume pronoun under a universal hinge is the member; a denied one stays left (R4e decision 2)", () => {
+    assert.deepEqual(left("zual geyel gwozeduyol thehom blarl zeyer veduyol."), []);
+    assert.deepEqual(left("zual gogozel vezuvel thohem thul blarl zogozer guzemel."), ["noRow overlay:clause_hinge:th"]);
   });
 
   it("a person as a /ɡ/ hinge's outcome is left (R4e-7, D15)", () => {

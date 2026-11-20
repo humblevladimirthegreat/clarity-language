@@ -1,6 +1,6 @@
 # Solver coverage: the edge, wrong answers, and fill questions
 
-**Status:** IN PROGRESS, 2026-11-19: phases 1 and 2 done; phase 3 done (FX, B0, B1a, B1b, B2a, P1): the conditional is a claim term, holders, say words and the turn's addressees, *because*; P1 rewrote the *dependent on* and *independent* recipe rows in `say-people-places.md` with Alazun's support (`agobo`) as a `blarl` clause. Recall gate after phase 3: passed (baseline check). Phase 4 under way (2026-11-20): done B2b (open decision 1 settled as (a) and built), B3a, T1 (probe output scoping, added 2026-11-20), B3b; next B3c, B4a, P2; open decisions 2 and 3 wait on the user. User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
+**Status:** IN PROGRESS, 2026-11-19: phases 1 and 2 done; phase 3 done (FX, B0, B1a, B1b, B2a, P1): the conditional is a claim term, holders, say words and the turn's addressees, *because*; P1 rewrote the *dependent on* and *independent* recipe rows in `say-people-places.md` with Alazun's support (`agobo`) as a `blarl` clause. Recall gate after phase 3: passed (baseline check). Phase 4 under way (2026-11-20): done B2b (open decision 1 settled as (a) and built), B3a, T1 (probe output scoping, added 2026-11-20), B3b; done B3c; next B3d (open decisions 2 and 3 settled 2026-11-20 as D18, D19), B4a, P2. User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
 **Related:** [solver.md](../../meta/solver.md); [interpreter.md](../../meta/interpreter.md) (classification and pair tables); `src/interpret/` (`translate.ts`, `solve.ts`, `read.ts`, `classes.ts`, `match.ts`, `log.ts`, `probe.ts`, `cli.ts`); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [causation](/causation), [contrary to](/contrary-to), [knowing](/knowing), [evidentiality](/evidentiality), [restrictors](/restrictors), [rank joins](/rank-joins), [set joins](/set-joins), [list structure](/list-structure), [comparatives](/comparatives), [pronouns](/pronouns), [collectives](/collectives), [questions](/questions), [fill-ask roles](/fill-ask-roles), [sentence linkers](/sentence-linkers), [polar inventory](/polar-inventory), [hooks](/hooks), [notional](/notional); recipe page `say-people-places.md`.  
 **Depends on:** none.  
 **Design authority:** no new forms. The page sentences the confirmed rows name (each written in the unit that builds its row). The `hinge` × `contrary` pair-table sample and gloss in `interpreter.md` (D14, R4e decision 3). The recipe rows *dependent on* and *independent* in `say-people-places.md` (D15).
@@ -34,6 +34,9 @@ User, 2026-11-19, each as recommended; D13 as the user stated it. D1–D3, D11, 
 13. ***Always* over MAY** (`hual zazozon vowurol thomam.`) gives `holds(may(T))` and the marker `always(may(T))`, and clashes with *never* (`never(T)`, row 15). It does not clash with a plain denial (R3-2).
 14. **Contrary-to with a hinge.** The `hinge` × `contrary` pair row's second sample changes to the `blarth` form, so its two samples follow its own text-order rule (check `contrary-to.md` first). A hinge over a zone puts `against` on the outcome (a copy row); a zone over a hinge is data, since the encoding has no term for a conditional.
 17. **`oe` ties.** A tie claims no member has the quality (`comparatives.md#equatives` keeps *both are challenging* apart as an *and* list). Closed `zoel` clashes with `zol` on the same scale; `zoem` is data only; with a verb, each member's act holds; three or more are all tied, pairwise.
+18. **D13 gives a choice** (user, 2026-11-20, open decision 2 (a)). *Always* over MAY also writes row 15's choice `{ holds(T) } :- on(Id).`, so `hual zazozon vowurol thomam.` answers `?~ zazozon vowurol.` *yes*; with a *never* sentence it still answers *no*, and the two still do not clash with a plain denial.
+19. **A hinge over MAY gives a choice** (user, 2026-11-20, open decision 3 (b)). With the condition held, a hinge over MAY (`thebem blarth thomam …`, my16) gives a choice on the outcome, so `?~` answers *yes*, as R4b-25's back rule already does: MAY gives a choice wherever it is held. The *only if* half still adds no forward rule.
+20. **Also from B3a:** the D13 clash (`always(may(T))` against `never(T)`) has no attack in `stands` (`rebut/2` does not cover it); B3d adds one if `rebut/2` takes it as written, else reports it.
 
 ## Implementation plan
 
@@ -75,16 +78,20 @@ R4b-25 to R4b-28 and R4e-6; R4b decision 1 (the *only if* half of a hinge over M
 `proposal-worker`, `model: opus`, effort `high`.  
 R4b-16 and R4b-17 with R4e decision 2 (c): one template term plus a member conditional for each stated member, the per-member rules gated on it; the edge line changes as R4b-16 says. A denial of a universal's conditional (hg23) stays left.
 
+**B3d MAY choices (D18, D19).**  
+`proposal-worker`, `model: opus`, effort `high`.  
+D18 and D19, with item 20; my9 (`solve-maybe.txt`, D13) and my16 (`solve-maybe.txt`, R4b-26) change their `?~` verdicts to *yes*, with tests; the solver.md rows (17, 18) say so.
+
 **B4a Rank and ties.**  
 `proposal-worker`, `model: opus`, effort `high`.  
 R4c-1 and R4c-2 (D17); R4c decisions 1 to 4 (reversed rank clashes, rank with a verb, rank of three or more, a tie with a factor as `ratio(..)`).
 
 **P2 A person after a *because* hinge.**  
 `checkpoint-writer`, `model: opus`, effort `high`.  
-Rewrite the `verb-and-stance-joins.md` checkpoint item *Azozon runs, but not because of Alazun.* so that what follows the hinge names an act or a thing about Alazun, not Alazun (`because-and-iff.md#choosing-a-hinge`; P1 used Alazun's support, `agobo`, in a `blarl` clause). Keep both answer forms (the `thul` join and `vul`) if the rewrite allows. Read `docs/meta/procedures/drill-generation.md` first.  
+Rewrite the `verb-and-stance-joins.md` checkpoint item *Azozon runs, but not because of Alazun.* so that what follows the hinge names an act or a thing about Alazun, not Alazun (`because-and-iff.md#choosing-a-hinge`; P1 used Alazun's support, `agobo`, in a `blarl` clause). Keep the item's two-option form: the `thul` join is the answer, and the `vul` form is the wrong option its note explains, as review item 16 does. Read `docs/meta/procedures/drill-generation.md` first.  
 **May edit:** that checkpoint item, and the drill allowlist if the procedure asks.
 
-**Order:** B2b, B3a, B3b, B3c, B4a, P2.
+**Order:** B2b, B3a, T1, B3b, B3c, B3d, B4a, P2.
 
 ### Phase 5: lists, links, fill; style
 
@@ -638,9 +645,7 @@ The user adopted every recommendation below, 2026-11-19, with these notes:
 
 ## Open decisions
 
-2. **D13 and a *could be* question** (B3a finding). As built, *always* over MAY (`hual zazozon vowurol thomam.`, my9) gives `holds(may(T))` and `always(may(T))` but no choice on T, so `?~ zazozon vowurol.` (*could Azozon be walking?*) answers *unknown*. Options: (a) add row 15's choice `{ holds(T) } :- on(Id).`, so the answer becomes *yes*; my9 with my11 still gives *no*, and the two still do not clash; (b) keep D13 as written. **Recommendation:** **(medium)** (a): *Azozon may always walk* plainly leaves walking possible, and a learner asking *could be* expects *yes*; row 15 already does this for the plain habitual. (b) is defensible only if `couldBe` should never answer from a permission. Also from B3a: the new D13 clash (`always(may(T))` against `never(T)`) has no attack in `stands`, since `rebut/2` does not cover it; `clashes` names both readings.
-
-3. **Only-if over MAY and *could be*** (B3b finding). R4b-26's draft gave my16 (`zalazun vezuvel. thebem blarth thomam zazozon vowurol.`, *Alazun is asleep. Only then may Azozon walk.*) `?~ zazozon vowurol.` → *yes*. As built under R4b decision 1 (the *only if* half is plain, no back rule, D5), a held condition gives nothing, so `?~` answers *unknown*; the fixture and test say *unknown*. Options: (a) keep *unknown*; (b) add a choice `{ holds(O) } :- holds(may(O))`-style rule for a hinge over MAY, as row 15 gives a choice, so `?~` answers *yes* once the condition holds. B3b already added that choice on R4b-25's back rule (MAY on the condition), so (b) would make the two directions agree. **Recommendation:** **(medium)** (b): *only then may Azozon walk* with the condition met plainly leaves walking possible, and a learner asking *could be* expects *yes*; it also matches open decision 2's option (a), so MAY gives a choice wherever it is held. (a) is defensible if `couldBe` should answer only from what a reading makes hold.
+None.
 
 ## Background
 
