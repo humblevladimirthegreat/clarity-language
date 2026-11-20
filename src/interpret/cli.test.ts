@@ -183,14 +183,42 @@ describe("reading CLI: solve, clashes and stands", () => {
       assert.match(run("probe", "--possible", file).stdout, /^\?~ yel zalazun vewobol\. -> no because t:0\.0$/m);
     });
 
-    it("--program adds the translated program; --json prints one object per case", () => {
-      assert.match(run("probe", "--program", file).stdout, /^program:\n {2}% Generic rules/m);
+    it("--program adds the case's own program lines; --program=full adds the generic rules too; --json prints one object per case", () => {
+      const own = run("probe", "--program", file).stdout;
+      assert.match(own, /^program:\n {2}% t:0\.0\n {2}on\("t:0\.0"\)\.$/m);
+      assert.doesNotMatch(own, /Generic rules|^ {2}clash\(P\) :-/m);
+      const full = run("probe", "--program=full", file).stdout;
+      assert.match(full, /^program:\n {2}% Generic rules/m);
+      assert.ok(full.split("\n").length > own.split("\n").length + 100);
       const lines = run("probe", "--json", file).stdout.trim().split("\n").map((l) => JSON.parse(l));
       assert.equal(lines.length, 3);
       assert.equal(lines[1].label, "alone");
       assert.equal(lines[1].rejected[0].line, 8);
       assert.equal(lines[0].questions[1].job, "couldBe");
       assert.deepEqual(lines[2].clashes.clashes[0].readings, ["t:0.0", "t:0.1", "t:0.2"]);
+    });
+
+    it("--case N or --case LABEL runs one case, keeping its number; an unknown case exits 1", () => {
+      const second = run("probe", "--case", "2", file);
+      assert.equal(second.status, 0, second.stderr);
+      assert.equal(second.stdout.match(/^===/gm)?.length, 1);
+      assert.match(second.stdout, /^=== alone \(line 6\)$/m);
+      assert.equal(run("probe", "--case=alone", file).stdout, second.stdout);
+      assert.match(run("probe", "--case", "1", file).stdout, /^=== case 1 /m);
+      assert.equal(run("probe", "--case", "4", file).status, 1);
+      assert.equal(run("probe", "--case", "nope", file).status, 1);
+      assert.equal(run("probe", "--case", file).status, 1);
+    });
+
+    it("--terms a,b prints only program lines naming one of those predicates, and implies --program", () => {
+      const out = run("probe", "--terms", "on,clash", "--case", "3", file).stdout;
+      assert.match(out, /^program:\n(?: {2}.*\bon\(.*\n?)+$/m);
+      const lines = out.split("\nprogram:\n")[1]!.split("\n").filter(Boolean);
+      assert.ok(lines.length > 0 && lines.every((l) => /(?<!\w)(?:on|clash)\(/.test(l)));
+      // generic lines are filtered out of the own program; --program=full lets a generic predicate through.
+      assert.doesNotMatch(run("probe", "--terms=clash", "--case", "3", file).stdout, /clash\(P\)/);
+      assert.match(run("probe", "--terms=clash", "--program=full", "--case", "3", file).stdout, /clash\(P\) :-/);
+      assert.equal(run("probe", "--terms", "", file).status, 1);
     });
 
     it("a solve fixture is one case, its readings tagged with the fixture labels", () => {

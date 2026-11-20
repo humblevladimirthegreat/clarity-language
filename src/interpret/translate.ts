@@ -251,6 +251,8 @@ function sayRules(w: (t: string) => string): string[] {
 /** R4a-13: say rows 6 to 8 inside a holder's view, written only when a reading holds a say word in a view. */
 const VIEW_SAY = sayRules((t) => `view(V, ${t})`).filter((l) => !l.startsWith("%"));
 
+const VIEW_SAY_TITLE = "Say words inside a holder's view (R4a-13).";
+
 const GENERIC = [
   "% Generic rules (docs/meta/solver.md).",
   "clash(P) :- holds(P), holds(neg(P)).",
@@ -272,6 +274,21 @@ const GENERIC = [
     }),
   ),
 ];
+
+/**
+ * A program's own lines: the text without what every program shares (the generic rules, and the holder's-view say
+ * rules when a reading holds a say word in a view), for probing one case. A text that does not start with the
+ * generic block comes back whole.
+ */
+export function ownProgram(program: string): string {
+  const lines = program.split("\n");
+  if (GENERIC.some((l, i) => lines[i] !== l)) return program;
+  let rest = lines.slice(GENERIC.length);
+  const title = `% ${VIEW_SAY_TITLE}`;
+  const at = rest.indexOf(title);
+  if (at > 0 && rest[at - 1] === "" && VIEW_SAY.every((l, i) => rest[at + 1 + i] === l)) rest = [...rest.slice(0, at - 1), ...rest.slice(at + 1 + VIEW_SAY.length)];
+  return rest.join("\n");
+}
 
 const HINGE_KEYS = new Set(["overlay:clause_hinge:th", "overlay:clause_hinge:g"]);
 /** R4e-1: a condition hinge's gloss and its conditional term's name. */
@@ -1679,7 +1696,7 @@ class Translator {
     const section = (title: string, lines: string[]): string[] => (lines.length ? ["", `% ${title}`, ...lines] : []);
     return [
       ...GENERIC,
-      ...section("Say words inside a holder's view (R4a-13).", [...this.wraps.values()].some((w) => sayOf(w) && w.kind === "view") ? VIEW_SAY : []),
+      ...section(VIEW_SAY_TITLE, [...this.wraps.values()].some((w) => sayOf(w) && w.kind === "view") ? VIEW_SAY : []),
       ...section("Switches.", switches),
       "",
       ...this.lines,

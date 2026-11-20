@@ -10,7 +10,7 @@ import type { LexWord } from "../parse/types.js";
 import { ask, type Match } from "./ask.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { throughAntecedent } from "./match.js";
-import { formatProbe, parseProbe, probeJson, runProbeCase } from "./probe.js";
+import { formatProbe, parseProbe, probeJson, runProbeCase, type ProgramView } from "./probe.js";
 import { readText } from "./read.js";
 import { cannotSayDraft, clashReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
 import { clashes, couldBe, follows, giveUp, stands, type Answer, type Clash, type GiveUpResult, type Semantics, type SolveOptions, type StandsResult } from "./solve.js";
@@ -37,11 +37,14 @@ const USAGE = [
   "  Prints each smallest clash in the FILE's log, with its readings; --give-up adds a smallest set to give up.",
   "       node scripts/reading.mjs stands [--json] [--semantics grounded|stable|preferred] [--window N] FILE",
   "  Prints what stands in the FILE's log: each reading in, out or undecided, the attacks, and the extensions.",
-  "       node scripts/reading.mjs probe [--json] [--program] [--possible] [--defaults] [--closed] FILE",
+  "       node scripts/reading.mjs probe [--json] [--program[=full]] [--terms a,b] [--case N|LABEL] [--possible] [--defaults] [--closed] FILE",
   "  FILE holds independent cases, each its own log: a line starting `---` starts one (the rest of the line is its label);",
   "  turn lines as `log` reads them; `? text` asks with follows, `?~ text` with couldBe (--possible: `?` too). A solve",
   "  fixture (`@ id` tags the next turn, `= English` skipped) is one case. Per case: turns that did not parse, left, notes,",
-  "  each smallest clash or `no clash`, each question's verdict, because, switches and left. --program adds the program;",
+  "  each smallest clash or `no clash`, each question's verdict, because, switches and left. --program adds the case's own",
+  "  program lines, not the generic rules every program shares (--program=full keeps them); --terms a,b keeps only program",
+  "  lines naming one of those predicates (implies --program); --case N runs only the Nth case (1-based), --case LABEL the case",
+  "  with that label. The program is for debugging one case or confirming a new row's terms; batch probes run without it.",
   "  --json prints one JSON object per line per case. A failing case is reported and the others still run.",
 ].join("\n");
 
@@ -321,12 +324,12 @@ function conversation(command: "log" | "ask", raw: string[]): void {
 }
 
 /** The solver's options a solve or clashes command names. */
-type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; program: boolean; semantics?: Semantics; window?: number; args: string[] };
+type SolveFlags = { json: boolean; possible: boolean; defaults: boolean; closed: boolean; giveUp: boolean; program?: ProgramView; case?: string; semantics?: Semantics; window?: number; args: string[] };
 
 type SolveCommand = "solve" | "clashes" | "stands" | "probe";
 
 function solveFlags(command: SolveCommand, raw: string[]): SolveFlags {
-  const flags: SolveFlags = { json: false, possible: false, defaults: false, closed: false, giveUp: false, program: false, args: [] };
+  const flags: SolveFlags = { json: false, possible: false, defaults: false, closed: false, giveUp: false, args: [] };
   const asks = command === "solve" || command === "probe";
   for (let i = 0; i < raw.length; i++) {
     const arg = raw[i]!;
@@ -334,7 +337,17 @@ function solveFlags(command: SolveCommand, raw: string[]): SolveFlags {
     else if (arg === "--possible" && asks) flags.possible = true;
     else if (arg === "--defaults" && asks) flags.defaults = true;
     else if (arg === "--closed" && asks) flags.closed = true;
-    else if (arg === "--program" && command === "probe") flags.program = true;
+    else if ((arg === "--program" || arg === "--program=full") && command === "probe") flags.program = { ...flags.program, ...(arg === "--program=full" ? { full: true } : {}) };
+    else if ((arg === "--terms" || arg.startsWith("--terms=")) && command === "probe") {
+      const list = arg === "--terms" ? raw[++i] : arg.slice("--terms=".length);
+      const terms = (list ?? "").split(",").map((t) => t.trim()).filter(Boolean);
+      if (!terms.length) (console.error(`--terms needs predicate names, a,b\n${USAGE}`), process.exit(1));
+      flags.program = { ...flags.program, terms };
+    } else if ((arg === "--case" || arg.startsWith("--case=")) && command === "probe") {
+      const id = arg === "--case" ? raw[++i] : arg.slice("--case=".length);
+      if (!id) (console.error(`--case needs a number or a label\n${USAGE}`), process.exit(1));
+      flags.case = id;
+    }
     else if (arg === "--give-up" && command === "clashes") flags.giveUp = true;
     else if (arg === "--semantics" && command === "stands") {
       const s = raw[++i];
@@ -465,7 +478,11 @@ async function probeCommand(flags: SolveFlags): Promise<void> {
   const tables = loadDefaultTables();
   const options: SolveOptions = { lexicon: tables, defaults: flags.defaults, closedWorld: flags.closed };
   const cases = parseProbe(text, flags.possible);
+  // --case N is the 1-based index among the file's cases; otherwise the case whose label is exactly LABEL.
+  const chosen = flags.case === undefined ? undefined : /^\d+$/.test(flags.case) ? Number(flags.case) - 1 : cases.findIndex((c) => c.label === flags.case);
+  if (chosen !== undefined && !cases[chosen]) (console.error(`--case ${flags.case}: no such case (the file has ${cases.length})`), process.exit(1));
   for (const [i, c] of cases.entries()) {
+    if (chosen !== undefined && i !== chosen) continue;
     const result = await runProbeCase(c, tables, options, flags.program);
     console.log(flags.json ? probeJson(result) : formatProbe(result, i).join("\n"));
   }

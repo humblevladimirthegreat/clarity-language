@@ -2,7 +2,7 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { clashes, couldBe, follows, type Answer, type ClashResult, type SolveOptions } from "./solve.js";
-import { translate, type LeftOut } from "./translate.js";
+import { ownProgram, translate, type LeftOut } from "./translate.js";
 
 /** A question in a case: asked with `follows`, or `couldBe` (`?~`, or `?` under `--possible`). */
 export type ProbeQuestion = { text: string; job: "follows" | "couldBe"; line: number };
@@ -30,6 +30,20 @@ export type ProbeResult = {
 };
 
 const SPEAKER = /^([A-Za-z][A-Za-z0-9_-]*):\s*(.*)$/;
+
+/** What `--program` prints: the case's own lines, or every line with `full`; `terms` keeps only lines naming one of those predicates. */
+export type ProgramView = { full?: boolean; terms?: string[] };
+
+/** The program text a view asks for: own lines by default, the whole text for `full`, then only lines with a `name(` of `terms`. */
+export function programView(program: string, view: ProgramView): string {
+  let text = view.full ? program : ownProgram(program);
+  if (view.terms?.length) {
+    const names = view.terms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    const mention = new RegExp(`(?<![\\w])(?:${names.join("|")})\\(`);
+    text = text.split("\n").filter((l) => mention.test(l)).join("\n");
+  }
+  return text;
+}
 
 /**
  * The cases of a probe file. A line starting `---` starts a case (the rest of the line is its label); `#` lines and
@@ -76,7 +90,7 @@ export function parseProbe(text: string, possible = false): ProbeCase[] {
 const firstLine = (error: unknown): string => (error instanceof Error ? error.message : String(error)).split("\n")[0]!;
 
 /** Run one case: its log, what the program leaves out, its notes and clashes, then each question. Never throws. */
-export async function runProbeCase(c: ProbeCase, tables: ClassifyTables, options: SolveOptions, withProgram = false): Promise<ProbeResult> {
+export async function runProbeCase(c: ProbeCase, tables: ClassifyTables, options: SolveOptions, program?: ProgramView): Promise<ProbeResult> {
   const result: ProbeResult = { label: c.label, line: c.line, turns: [], rejected: [], left: [], notes: [], questions: [] };
   try {
     const log = buildLog(c.turns.map(({ speaker, at, text }) => ({ speaker, at, text })), tables);
@@ -88,7 +102,7 @@ export async function runProbeCase(c: ProbeCase, tables: ClassifyTables, options
     const t = translate(log, { lexicon: options.lexicon, switches });
     result.left = t.left;
     result.notes = t.notes.map((n) => ({ reading: n.reading, key: n.frame.key, construction: n.frame.construction }));
-    if (withProgram) result.program = t.program;
+    if (program) result.program = programView(t.program, program);
     result.clashes = await clashes(log, options);
     for (const q of c.questions) {
       try {
