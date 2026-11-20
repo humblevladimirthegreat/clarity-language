@@ -45,7 +45,7 @@ English can place one thing in time rather than the whole event (*the walk after
 
 > `zalazun dowurol galam blanulul vayebel.`
 >
-> z-Alazun | [d-walk | [g-after | bl-thunderstorm]] | v-see
+> z-Alazun | [d-walk | [g-after | bl-storm]] | v-see
 >
 > "Alazun sees the walk after the thunderstorm." (*after the thunderstorm* says which walk)
 

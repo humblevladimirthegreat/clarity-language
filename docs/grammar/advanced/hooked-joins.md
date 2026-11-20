@@ -126,7 +126,7 @@ English *never since …* and *always, until …* bound how often something happ
 <!-- Exception to house-cast: *you never listen* is the complaint these forms answer, so the listener is the point. -->
 > `zawan vebal huxam blanulul.`
 >
-> z-listener | v-hear | [h-from-x-never.open | bl-thunderstorm]
+> z-listener | v-hear | [h-from-x-never.open | bl-storm]
 >
 > "You haven't listened since the thunderstorm, as far as I know."
 
@@ -141,13 +141,13 @@ English *never since …* and *always, until …* bound how often something happ
 
 > `zazozon vowurol hoexual blanulul.`
 >
-> z-Azozon | v-walk | [h-toward-x-always | bl-thunderstorm]
+> z-Azozon | v-walk | [h-toward-x-always | bl-storm]
 >
 > "Azozon always walked, until the thunderstorm."
 
 > `zazozon vozuyel hemxual blanulul.`
 >
-> z-Azozon | v-sing | [h-near-x-always | bl-thunderstorm]
+> z-Azozon | v-sing | [h-near-x-always | bl-storm]
 >
 > "Azozon always sings around the time of the thunderstorm."
 
@@ -159,7 +159,7 @@ With `r` before the seam, `ar`, `er`, and `ur` can also point back to a time: to
 
 > `zazozon vowurol halam blanulul. zawan vebal hurxal.`
 >
-> z-Azozon | v-walk | [h-after | bl-thunderstorm] . z-listener | v-hear | h-since.then-x-never
+> z-Azozon | v-walk | [h-after | bl-storm] . z-listener | v-hear | h-since.then-x-never
 >
 > "Azozon walked after the thunderstorm. You haven't listened since then."
 

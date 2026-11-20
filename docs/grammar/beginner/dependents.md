@@ -104,13 +104,13 @@ English *during*, *before*, *after*, and *until* can take a noun instead of a cl
 
 > `zazozon vowurol herom blanulul.`
 >
-> z-Azozon | v-walk | [h-while | bl-thunderstorm]
+> z-Azozon | v-walk | [h-while | bl-storm]
 >
 > "Azozon walks during the thunderstorm."
 
 > `zazozon vehohel halam blanulul.`
 >
-> z-Azozon | v-sit | [h-after | bl-thunderstorm]
+> z-Azozon | v-sit | [h-after | bl-storm]
 >
 > "Azozon sits after the thunderstorm."
 
@@ -120,7 +120,7 @@ English *during*, *before*, *after*, and *until* can take a noun instead of a cl
 
 > `zazozon vowurol huvahum blanulul.`
 >
-> z-Azozon | v-walk | [h-by | bl-thunderstorm]
+> z-Azozon | v-walk | [h-by | bl-storm]
 >
 > "Azozon walks by the time of the thunderstorm." (done no later than that)
 

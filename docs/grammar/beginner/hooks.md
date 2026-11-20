@@ -216,7 +216,7 @@ For *since* (from a starting point, and still true now), use `ul` *from* with a 
 
 > `zazozon vehohel ul banulul.`
 >
-> z-Azozon | v-sit | [from | b-thunderstorm]
+> z-Azozon | v-sit | [from | b-storm]
 >
 > "Azozon has been sitting since the thunderstorm."
 

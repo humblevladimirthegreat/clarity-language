@@ -127,7 +127,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *interlocutors* | `ayan` |
 | *rain* | `erulal` |
 | *night* | `anurul` |
-| *thunderstorm* | `anulul` |
+| *storm* | `anulul` |
 | *sleepy* | `uzemel` |
 | *walk* | `vowurol` |
 | *run* | `veruvol` |
@@ -229,7 +229,7 @@ z-Ahelan | v-climb | h-rain | h-fog | h-equally-when
 **6.** `zalazun voguvol hanulul hem.`
 
 ::: details Show answer
-z-Alazun | v-climb | h-thunderstorm | h-when-one.open
+z-Alazun | v-climb | h-storm | h-when-one.open
 
 *Alazun climbs during a thunderstorm, or never.*
 :::

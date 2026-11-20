@@ -194,7 +194,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tent* | `anahal` | ⛺ |
 | *wind* | `awulol` | 🌬️ |
 | *calendar* | `agorol` | 📅 |
-| *thunderstorm* | `anulul` | ⛈️ |
+| *storm* | `anulul` | ⛈️ |
 | *night* | `anurul` | 🌃 |
 | *autonomy* | `unal` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `uwal` | 🧰 from *tool*: the kit that gets things working |
@@ -249,7 +249,7 @@ z-wind | [w-physical-unmet-passing | g-stimulus]
 ::: details Show answer
 `zanulul wodethum goyom.`
 
-z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
+z-storm | [w-pleasure-unmet-modifiable | g-stimulus]
 :::
 
 **5.** *Azozon cooks, and I enjoy it right now.*
