@@ -30,6 +30,11 @@ const SIZE_W = 200;
  */
 const FIRST_W = 100;
 /**
+ * The same miss on a core vocabulary row (`core` column). Above `FIRST_W`, so a core row wins a full cell's
+ * English first consonant from a non-core row; below `SIZE_W`, so it never buys a slot with its size vowel.
+ */
+const FIRST_W_CORE = 150;
+/**
  * A root other than the row's current one. Below one confusing pair, so a row moves to save a pair or to
  * meet its size or first consonant, but a rerun does not reshuffle roots that are already as good.
  */
@@ -51,6 +56,8 @@ export type TailPlaceRow = {
   fixed?: string;
   /** The row's root before this run: placement leaves it there unless moving gains something. */
   current?: string;
+  /** A core vocabulary row: it outbids non-core rows for its English first consonant. */
+  core?: boolean;
 };
 
 /** A listed compound by member: a row index (five-letter, placed here) or a fixed three-letter root. */
@@ -145,7 +152,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     const costs = new Map<number, number>();
     for (const code of cands[i]!) {
       const root = decode(code);
-      const miss = first !== null && root[1] !== first ? FIRST_W : 0;
+      const miss = first !== null && root[1] !== first ? (row.core ? FIRST_W_CORE : FIRST_W) : 0;
       const sizeMiss = row.size && root[2] !== SIZE_VOWELS[row.size] ? SIZE_W : 0;
       const moved = row.current && root !== row.current ? KEEP_W : 0;
       costs.set(code, miss + sizeMiss + moved + STOP_W * stops(root) + ECHO_W * (1 - (row.cmu ? echo(root, row.cmu) : 0)));

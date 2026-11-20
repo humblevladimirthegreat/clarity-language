@@ -44,6 +44,8 @@ export type PlaceRow = {
   shape?: string;
   /** Middle-vowel preference (`size` column), src/root-tails.ts. */
   size?: string;
+  /** Core vocabulary row (`core` column filled): it outbids non-core rows for its English first consonant. */
+  core?: boolean;
 };
 
 export type Placement = {
@@ -556,6 +558,7 @@ export async function placePublishedRoots(
       size: (item.row.size || undefined) as Size | undefined,
       cmu: item.cmu,
       current: item.row.root?.length === 5 ? item.row.root : undefined,
+      core: item.row.core,
     })),
     ...keptLong.map((k) => ({ cmu: "", fixed: k.root })),
   ];

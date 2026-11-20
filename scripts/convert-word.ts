@@ -313,6 +313,7 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
         kind: (row.kind ?? "").trim(),
         shape: (row.shape ?? "").trim(),
         size: (row.size ?? "").trim(),
+        core: !!(row.core ?? "").trim(),
       }];
     }),
     overlays,

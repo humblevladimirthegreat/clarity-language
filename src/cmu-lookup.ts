@@ -29,6 +29,7 @@ export const CMU_OVERRIDES: Record<string, string> = {
   caesura: "S IH0 ZH UH1 R AH0",
   scepter: "S EH1 P T ER0",
   caduceus: "K AH0 D UW1 S IY0 AH0 S",
+  lunchbox: "L AH1 N CH B AA2 K S",
   // Places: keyed by the whole label, one primary stress per word, `|` between words.
   uae: "Y UW2 EY2 IY1",
   "bouvet-island": "B UW0 V EY1 | AY1 L AH0 N D",
