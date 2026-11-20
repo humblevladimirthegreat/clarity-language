@@ -206,7 +206,11 @@ src/
     word.ts                      # Stage 1 wrapper
     classify.ts                  # Stage 2
     tokenize.ts / tokens.ts      # peel .?! { } ; LexWord → IToken
-    sentence-grammar.ts           # Stage 3 Chevrotain
+    sentence-parser.ts           # Stage 3 entry: parser instance, parseSentenceTokens
+    sentence-grammar.ts          # Stage 3 Chevrotain grammar class
+    sentence-shapes.ts           # Stage 3 shared head: error class, slot types and consts, error messages
+    mark-context.ts              # before Stage 3: markContext retypes tokens by lookahead
+    sentence-build.ts            # after Stage 3: post-parse fixes, CST → AST
     hook-jobs.ts                 # each hook's job, decided once after Stage 3
     ast-walk.ts                  # the one AST visitor (resolve, enforce, inspect are handler sets)
     series.ts                    # join-series, scale and number helpers shared across stages

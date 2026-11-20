@@ -3,7 +3,7 @@ import { test } from "node:test";
 
 import { getLookaheadPaths, type TokenType } from "chevrotain";
 
-import { sentenceGrammar } from "../sentence-grammar.js";
+import { sentenceGrammar } from "../sentence-parser.js";
 import { buildCallers, firstSet } from "./all-star-lookahead.js";
 import { buildATNKey, createATN } from "./atn.js";
 import { alternationFirstTokens, type OptionalKind, optionalFirstTokens, ReachableTokens, ruleSites } from "./fast-first.js";

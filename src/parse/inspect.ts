@@ -3,7 +3,7 @@ import { morphGlossBrackets, senseLabel } from "./morph-gloss.js";
 import type { WordBrackets } from "./gloss-structure.js";
 import { visitResult, type Visitor } from "./ast-walk.js";
 import { parseWithTables } from "./parse-core.js";
-import { SentenceParseError } from "./sentence-grammar.js";
+import { SentenceParseError } from "./sentence-shapes.js";
 import type {
   AnaphorBind,
   Ending,

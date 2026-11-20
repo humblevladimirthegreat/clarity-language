@@ -14,7 +14,8 @@ export {
   SAKE_ROOTS,
   unknownLexiconContentRoots,
 } from "./classify.js";
-export { parseSentenceTokens, SentenceParseError } from "./sentence-grammar.js";
+export { parseSentenceTokens } from "./sentence-parser.js";
+export { SentenceParseError } from "./sentence-shapes.js";
 export { numberMarkerIdentity, resolve, wholeStem } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
 export { segmentUtterance, tokenizeUtterance } from "./tokenize.js";

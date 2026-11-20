@@ -9,7 +9,7 @@ import { loadDefaultTables, parse } from "./index.js";
 import { grammarFile } from "../repo-paths.js";
 
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
-import { sentenceGrammar } from "./sentence-grammar.js";
+import { sentenceGrammar } from "./sentence-parser.js";
 
 describe("construction registry", () => {
   it("covers every sentence-grammar production, and only those", () => {
