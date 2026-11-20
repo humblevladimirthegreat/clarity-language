@@ -1,36 +1,6 @@
-# Solver draft fixture (R4c): lists (ranks, ties, ue, two denial lists, SHARED words) and channel stances on your own claim (D8).
+# Solver draft fixture (R4c): lists (ue, two denial lists, SHARED words) and channel stances on your own claim (D8).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # Read as one log, the entries do not all stand together; each comment names the entries a verdict reads (as their own case) and the verdict now.
-
-# R4c-1: superlative, one name before zol. ? yel zahelan zol guzemel. → follows: yes (now: beyond, l1 left unused shared:scale)
-@ l1
-zahelan zol guzemel.
-= Ahelan is the sleepiest.
-
-# R4c-2: closed tie. l2 alone: ? yel zalazun zazozon zoel gamahum. → yes (now: beyond, unused shared:equative); ? yel zazozon gamahum. → unknown (now: unknown)
-# l2 + l3: clash tie / more on one scale (now: no clash, l2 left)
-@ l2
-zazozon zalazun zoel gamahum.
-= Azozon is as challenging as Alazun.
-
-@ l3
-zazozon zalazun zol gamahum.
-= Azozon is more challenging than Alazun.
-
-# R4c-2: open tie is data only. l4 + l3: no clash (now: no clash, l4 left unused shared:equative)
-@ l4
-zazozon zalazun zoem gamahum.
-= Azozon is about as challenging as Alazun.
-
-# R4c-2: a tie with a verb; each member's act holds. ? yel zazozon vowurol. → yes (now: unknown, l5 left unused shared:equative)
-@ l5
-zazozon zalazun zoel hahunom vowurol.
-= Azozon walks as intensely as Alazun.
-
-# R4c-2: three tied, pairwise. ? yel zalazun zahelan zoel gamahum. → yes (now: beyond, unused shared:equative)
-@ l6
-zazozon zalazun zahelan zoel gamahum.
-= Azozon, Alazun and Ahelan are equally challenging.
 
 # R4c-3: ue denies each listed item. ? yel zalazun dobodel vagedal. → no (now: unknown, l7 left noRow joinSeries:ue)
 @ l7

@@ -2,6 +2,10 @@
 # Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # l1: one list, each member walks. l2: paired by respectively (Azozon saw the cat, Alazun the dog).
 # l3: two unpaired lists, infers nothing about who saw what. l4: collective -x, infers nothing about one member.
+# Ranks and ties (comparatives.md, comparative-arity.md; R1-8, R4c-1, R4c-2 and D17, R4c decisions 1 to 4). Read as one log, they do not all stand together.
+# r1: the superlative, most(S, A). r2: a closed tie, tie(S, A, B, l) per ordered pair; with r3 it clashes. r4: an open tie, data only.
+# r5: a tie with a verb, each walks. r6: three tied, pairwise. r7: r3 reversed, which clashes with r3. r8: a rank with a verb, each lifts.
+# r9: a rank of three, more for each pair in text order. r10: zaol sorts low to high. r11, r12: a factor is ratio(S, A, B, V), no tie.
 
 @ l1
 zazozon zalazun zal vowurol.
@@ -18,3 +22,51 @@ zazozon zalazun zal dogozel dodozel dal vayebel.
 @ l4
 zahelan zalazun zal vehohelx.
 = Ahelan and Alazun sit together.
+
+@ r1
+zahelan zol guzemel.
+= Ahelan is the sleepiest.
+
+@ r2
+zazozon zalazun zoel gamahum.
+= Azozon is as challenging as Alazun.
+
+@ r3
+zazozon zalazun zol gamahum.
+= Azozon is more challenging than Alazun.
+
+@ r4
+zazozon zalazun zoem gamahum.
+= Azozon is about as challenging as Alazun.
+
+@ r5
+zazozon zalazun zoel hahunom vowurol.
+= Azozon walks as intensely as Alazun.
+
+@ r6
+zazozon zalazun zahelan zoel gamahum.
+= Azozon, Alazun and Ahelan are equally challenging.
+
+@ r7
+zalazun zazozon zol gamahum.
+= Alazun is more challenging than Azozon.
+
+@ r8
+zazozon zahelan zol hahunom velunel.
+= Azozon lifts more intensely than Ahelan.
+
+@ r9
+zazozon zalazun zahelan zol gamahum.
+= Azozon is more challenging than Alazun, and Alazun than Ahelan.
+
+@ r10
+zazozon zalazun zahelan zaol gamahum.
+= Azozon, then Alazun, then Ahelan, from least to most challenging.
+
+@ r11
+zazozon zalazun zoel gelazem hradol.
+= Azozon is twice as big as Alazun.
+
+@ r12
+zalazun zazozon zoel gelazem hrudol.
+= Alazun is half as big as Azozon.

@@ -43,8 +43,11 @@ export type LeftOut = { reading: ReadingId; construction: string; key?: string; 
  */
 export type Part = { kind: "frame" | "link" | "shared" | "blank" | "list"; of: object; reading: ReadingId; key: string; text: string };
 
-/** A frame the program does not encode but a reply may mention (R1-9: standalone `thul` leaves the claim untouched). */
-export type Note = { reading: ReadingId; frame: Frame };
+/**
+ * A frame the program does not encode but a reply may mention (R1-9: standalone `thul` leaves the claim untouched), or
+ * a detail (R4c-1: a `/w/` degree on a superlative's scale).
+ */
+export type Note = { reading: ReadingId; frame: Frame | Detail };
 
 /** A term in the program and the claim it stands for: the matcher's input for a question asked of the answer set. */
 export type TermSource = { reading: ReadingId; claim: Claim };
@@ -267,6 +270,9 @@ const GENERIC = [
   "% A holder's view (R2-1 row 1, R2-2): one holder's views clash; two holders' never do, nor a view and your claim.",
   "clash(view(H, P)) :- holds(view(H, P)), holds(view(H, neg(P))).",
   "clash(view(H, Q)) :- holds(view(H, neg(Q))), holds(view(H, P)), fits(Q, P).",
+  "% Rank and ties (R4c decision 1, R4c-2, D17): a rank one way and the other, or a closed tie and a rank, on one scale.",
+  "clash(more(S, B, A)) :- holds(more(S, A, B)), holds(more(S, B, A)).",
+  "clash(tie(S, A, B, l)) :- holds(tie(S, A, B, l)), holds(more(S, A, B)).",
   ...sayRules((t) => t),
   "% An act against a stated ban (R2-9): data, never a clash.",
   ...["", ", X"].flatMap((x) =>
@@ -1026,10 +1032,11 @@ class Translator {
       return true;
     }
 
-    // The heads: the claim, or each denied item (row 2).
-    const heads: { text: string; claim: Claim; sign: 1 | -1 }[] = denial
+    // The heads: the claim, or each denied item (row 2); a rank or tie list claims its rank terms (R1-8, R4c-1, R4c-2).
+    const ranked = denial ? undefined : this.ranked(reading, claim, frames, ctx);
+    const heads: { text: string; claim: Claim; sign: 1 | -1; unasked?: true }[] = denial
       ? denial.members.map((m) => ({ ...this.substituted(claim, denial, m, { ...ctx, asserted: false }), sign: -1 as const }))
-      : [{ text: this.rank(claim, ctx) ?? this.claim(claim, ctx), claim, sign: ctx.deny ? -1 : sign }];
+      : (ranked?.heads ?? [{ text: this.claim(claim, ctx), claim }]).map((h) => ({ ...h, sign: ctx.deny ? -1 : sign }));
     if (frames.universal && denial) heads.forEach((h) => (h.sign = -1));
     const lit = (h: { text: string; sign: number }): string => (h.sign < 0 ? `neg(${h.text})` : h.text);
 
@@ -1106,7 +1113,7 @@ class Translator {
         if (zone.say?.answer === "u") this.pool(reading, h.text, h.claim, -1);
       }
       if (list) this.templates.push({ ctx, list, claim: h.claim, sign: ban ? -1 : h.sign });
-      else this.pool(reading, h.text, h.claim, ban ? -1 : h.sign);
+      else if (!h.unasked) this.pool(reading, h.text, h.claim, ban ? -1 : h.sign);
       // R3-5: every MAY reading gives `may(T)`, which a hinge on a MAY condition reads; the holder's own MAY (R3-6) is
       // already a term inside the view.
       // R4b-18: over members the gate's `may(T)` is on the list term, ungated. R4b-20: over a say word, `may(say(..T))`.
@@ -1117,7 +1124,9 @@ class Translator {
 
     // Membership (row 10): the claim keeps its list term, and each member (or each paired place) holds; R2-5, inside a
     // view too. R4a-11 (D1): under a plain say word the content stays one wrapped term, and `a` and `o` reach each member.
-    if (!denial && !frames.universal && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx);
+    // R4c-2 (D17), R4c decision 2: a rank or tie with a verb gives each member's act, as row 11 does.
+    const lists = ranked?.acts ? new Map<Term, object | undefined>([[ranked.acts, undefined]]) : undefined;
+    if (!denial && !frames.universal && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx, lists);
     return true;
   }
 
@@ -1128,15 +1137,75 @@ class Translator {
     this.rule(ctx, this.w(ctx, head), [...body, exception, { atom: "switch(defaults)" }]);
   }
 
-  /** R1-8: a rank list of two with a shared scale and nothing else is data, `more(Scale, A, B)` (comparative-arity.md#amount-scale). */
-  rank(claim: Claim, ctx: Ctx): string | undefined {
+  /**
+   * A rank or tie list on one shared scale, and nothing else in the clause but a verb: the terms it claims, each with
+   * the claim a question is matched against, and the list whose members each act; undefined for any other shape.
+   * - R1-8: two names before `zol`, `more(S, A, B)`, the scale with its degree (comparative-arity.md#amount-scale).
+   * - R4c decision 3: three or more before `zol`, `more(S, Xi, Xj)` for each i < j in text order; `zaol` sorts low to
+   *   high, so each later name ranks higher (list-structure.md#shared-after-the-join).
+   * - R4c-1: one name before `zol`, the superlative `most(S, A)` (comparatives.md#superlatives); a `/w/` degree goes to
+   *   the notes. A place on the scale (`wrodol`, comparative-arity.md#place-on-a-scale) is not the top: no row.
+   * - R4c-2 (D17): a tie, `tie(S, A, B, E)` per ordered pair, E `l` or `m` (comparatives.md#equatives).
+   * - R4c decision 4: a closed tie of two with a factor is `ratio(S, A, B, V)`, no tie (comparative-arity.md#factor). It is
+   *   not pooled for questions: `match()` reads no SHARED detail, so a tie question would fit it.
+   * - R4c decision 2, D17: with a verb the scale is `/h/` and each member's act holds (comparative-arity.md#manner-scale).
+   * Beyond R1-8 the clause has no frame: a denied rank and `zom` wait.
+   */
+  ranked(reading: Reading, claim: Claim, frames: Frames, ctx: Ctx): { heads: { text: string; claim: Claim; unasked?: true }[]; acts?: ListTerm } | undefined {
     const z = claim.roles.z;
-    if (claim.verb || claim.predicate.length || claim.roles.d || claim.roles.b || claim.details.length) return undefined;
-    if (z?.kind !== "list" || z.values.series !== "o" || z.members.length !== 2 || z.parts.length !== 1 || z.frames?.length || z.bound) return undefined;
-    const scale = (z.sharedDetails ?? []).filter((d) => d.values.role === "scale");
-    if (scale.length !== 1 || z.sharedDetails!.length !== 1) return undefined;
-    this.use(z, scale[0]);
-    return `more(${this.detail(scale[0]!, ctx)},${this.kind(z.members[0]!, "z1", ctx)},${this.kind(z.members[1]!, "z2", ctx)})`;
+    if (claim.predicate.length || claim.roles.d || claim.roles.b || claim.details.length) return undefined;
+    if (z?.kind !== "list" || z.parts.length !== 1 || z.frames?.length || z.bound) return undefined;
+    const shared = z.sharedDetails ?? [];
+    const scale = shared[0];
+    if (shared.length !== 1 || !scale) return undefined;
+    const { series, ending } = z.values;
+    const n = z.members.length;
+    const named: string[] = [];
+    const names = (i: number): string => (named[i] ??= this.kind(z.members[i]!, `z${i + 1}`, ctx));
+    if (!claim.verb && series === "o" && n === 2 && scale.values.role === "scale") {
+      this.use(z, scale);
+      return { heads: [{ text: `more(${this.detail(scale, ctx)},${names(0)},${names(1)})`, claim }] };
+    }
+    const bare = !ctx.deny && !ctx.wrap && Object.entries(frames).every(([k, v]) => (k === "standalone" ? !(v as Frame[]).length : !v));
+    if (!bare || (claim.verb && (scale.kind !== "adverb" || collective(claim)))) return undefined;
+    // The claim over two of the members, in that order, as `zol` or `zoel`: what a question about the pair is matched against.
+    const pair = (i: number, j: number): Claim => {
+      const members = [z.members[i]!, z.members[j]!];
+      const values = series === "ao" ? { ...z.values, series: "o" } : z.values;
+      return replaceTerm(claim, z, { ...z, members, values, parts: [{ ...z.parts[0]!, members }] });
+    };
+    const heads: { text: string; claim: Claim; unasked?: true }[] = [];
+    const inner = scale.details ?? [];
+    if (series === "o" && scale.values.role === "scale" && n === 1) {
+      if (inner.some((d) => detailNumber(d))) return undefined;
+      heads.push({ text: `most(${this.detail({ ...scale, details: undefined }, ctx)},${names(0)})`, claim });
+      inner.forEach((d) => this.notes.push({ reading: reading.id, frame: d }));
+    } else if ((series === "o" || (series === "ao" && !claim.verb)) && scale.values.role === "scale" && n >= 2) {
+      const s = this.detail(scale, ctx);
+      for (let i = 0; i < n; i++)
+        for (let j = i + 1; j < n; j++) {
+          const [hi, lo] = series === "o" ? [i, j] : [j, i];
+          heads.push({ text: `more(${s},${names(hi)},${names(lo)})`, claim: pair(hi, lo) });
+        }
+    } else if (series === "oe" && scale.values.role === "equative" && n >= 2 && (ending === "l" || ending === "m")) {
+      const factor = inner.length === 1 && inner[0]!.kind === "amount" ? detailNumber(inner[0]!) : undefined;
+      if (factor) {
+        if (ending !== "l" || n !== 2 || claim.verb) return undefined;
+        // The inverse marker `ru` divides (*half as big*): the same ratio the other way round.
+        const inverse = ["-", "ru"].includes(wordStem(factor)?.marker ?? "");
+        const v = this.value(factor);
+        if (inverse && !/^v\(-/.test(v)) return undefined;
+        const [a, b] = inverse ? [names(1), names(0)] : [names(0), names(1)];
+        heads.push({ text: `ratio(${this.detail({ ...scale, details: undefined }, ctx)},${a},${b},${inverse ? v.replace(/^v\(-/, "v(") : v})`, claim, unasked: true });
+      } else {
+        if (inner.length) return undefined;
+        const s = this.detail(scale, ctx);
+        for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) if (i !== j) heads.push({ text: `tie(${s},${names(i)},${names(j)},${ending})`, claim: pair(i, j) });
+      }
+    } else return undefined;
+    this.use(z, scale);
+    if (!claim.verb) return { heads };
+    return { heads: [{ text: this.claim(claim, ctx), claim }, ...heads], acts: z };
   }
 
   /** The claim with one list term replaced by one of its items. */
@@ -1175,8 +1244,7 @@ class Translator {
     return shared && ctx.asserted && list.members.every((m) => this.newMembers.has(m)) ? shared : undefined;
   }
 
-  members(reading: Reading, claim: Claim, ctx: Ctx): void {
-    const lists = claimMemberLists(claim, reading);
+  members(reading: Reading, claim: Claim, ctx: Ctx, lists = claimMemberLists(claim, reading)): void {
     if (!lists.size) return;
     const say = ctx.wrap?.kind === "say" ? ctx.wrap : undefined;
     if (say && say.answer !== "a" && say.answer !== "o") {

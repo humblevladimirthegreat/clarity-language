@@ -80,6 +80,8 @@ When English would say *Alazun walks more intensely than Azozon*, you rank how t
 >
 > "Alazun walks as intensely as Azozon."
 
+With a verb, each one does it: in both `zalazun zazozon zol hahunom vowurol` and `zalazun zazozon zoel hahunom vowurol`, both walk. The rank or the tie is only about how.
+
 **Compare with:** `gahunom` after `zol` (no verb) is *more intense* as a quality of the people. After the verb, `hahunom` is an ordinary *how* they walk and ranks nothing.
 
 ### Amount scale (`gral`) {#amount-scale}

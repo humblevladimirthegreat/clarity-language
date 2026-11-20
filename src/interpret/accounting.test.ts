@@ -82,8 +82,12 @@ describe("accounting guard: the drops it catches", () => {
     assert.deepEqual(left("zazozon zalazun zal vowurol hwuvul."), []);
   });
 
-  it("the SHARED word of an oe list is left", () => {
-    assert.deepEqual(left("zazozon zalazun zoel gamahum."), ["unused shared:equative"]);
+  it("R4c-1, R4c-2: a tie and a superlative use their SHARED word; a denied tie, an open tie with a factor and a place on the scale stay left", () => {
+    assert.deepEqual(left("zazozon zalazun zoel gamahum."), []);
+    assert.deepEqual(left("zahelan zol guzemel."), []);
+    assert.deepEqual(left("zazozon zalazun zoel gamahum thul."), ["unused shared:equative"]);
+    assert.deepEqual(left("zazozon zalazun zoem gelazem hradol."), ["unused shared:equative"]);
+    assert.deepEqual(left("zahelan zol wrogel gelazem."), ["unused shared:scale"]);
   });
 
   it("R4b-16, R4b-17: a resume pronoun under a universal hinge is the member; a denied one stays left (R4e decision 2)", () => {

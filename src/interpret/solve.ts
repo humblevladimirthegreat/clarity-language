@@ -263,6 +263,9 @@ function clashPremises(model: Model, atom: string): string[] {
     const other = sayMet(model, args, (t) => t);
     return other ? [atom, other] : [atom];
   }
+  // R4c decision 1, R4c-2 (D17): a rank one way and the other, or a closed tie and the rank it meets.
+  if (name === "more" && args.length === 3) return [atom, `more(${args[0]},${args[2]},${args[1]})`];
+  if (name === "tie" && args.length === 4) return [atom, `more(${args[0]},${args[1]},${args[2]})`];
   const denial = `neg(${atom})`;
   if (model.holds.has(atom) && model.holds.has(denial)) return [atom, denial];
   const met = model.holds.has(denial) ? (model.fits.get(atom) ?? []).find((p) => model.holds.has(p)) : undefined;

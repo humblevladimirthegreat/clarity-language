@@ -173,7 +173,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | joinSeries | `uo` | frame:binder | `rank-joins.md#invert-u-stacks` | Ranked counterpart of `ua`; frame by default. On `/th/` after stance words, it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`) |
 | joinSeries | `e` | structure | `joins.md#choice-e` | A list term, choice |
 | joinSeries | `ae` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term |
-| joinSeries | `oe` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term |
+| joinSeries | `oe` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term; with a shared scale a tie, `tie(S, A, B, E)` per ordered pair; closed `-l` clashes with rank `o` on the same scale; with a verb each member's act holds (D17) |
 | joinSeries | `ue` | frame:polarity | `set-joins.md#exclusivity-and-denying-a-whole-list` | List reach, as `u`; frame by default |
 | anaphor | `content` | link | `pronouns.md#resume-r` | Whole-stem resume |
 | anaphor | `number` | link | `pronouns.md#resume-r` | A number resumed with `-r` |
@@ -189,8 +189,8 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | answer | `answer` | link | `questions.md#fill-ask` | A reply filling a blank |
 | shared | `distribute` | link | `list-structure.md#shared-after-the-join` | SHARED describes each member. A hook right after a noun list's join word ("is SHARED, like an adjective there: it belongs to every item") is read by its `hookJob` row into the list's `sharedDetails` with role `distribute`, not into the claim's details; the parser keeps it a clause unit and gives it no `SharedRecord`, so it has no `shared` link |
 | shared | `collective` | link | `collectives.md#verbs-v` | The list acts as one |
-| shared | `scale` | link | `list-structure.md#shared-after-the-join` | A shared scale word after the join |
-| shared | `equative` | link | `list-structure.md#shared-after-the-join` |  |
+| shared | `scale` | link | `list-structure.md#shared-after-the-join` | A shared scale word after the join; one item before `o`: the superlative, `most(S, A)` |
+| shared | `equative` | link | `list-structure.md#shared-after-the-join` | A tie, `tie(S, A, B, E)` per ordered pair; closed `-l` clashes with rank `o` on the same scale; with a verb each member's act holds (D17) |
 | shared | `kind` | link | `universals-domains.md#universals-domains-generics` | The kind after a `ua` / `uo` fence, or after a *no K* `zul` fence (`joinSeries:u:kind`) |
 | shared | `ordinary` | link | `list-structure.md#shared-after-the-join` |  |
 | ending | `l` | label | `phonology.md#word-edges` | |

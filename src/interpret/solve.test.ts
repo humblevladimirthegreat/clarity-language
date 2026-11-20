@@ -1098,3 +1098,63 @@ describe("solve: MAY with hinges, holders and questions (R4b-25 to R4b-28, R4e-6
     assert.equal((await follows(m([], ["zazozon vowurol thahum blanurul thul."]), walks, base)).verdict, "yes");
   });
 });
+
+describe("solve: ranks and ties (R1-8, R4c-1, R4c-2 and D17, R4c decisions 1 to 4)", () => {
+  const r = (labels: string[], extra: string[] = []) => log("lists", labels, extra);
+  const yes = async (labels: string[], question: string, verdict = "yes") => assert.equal((await follows(r(labels), q(question), base)).verdict, verdict, `${labels.join("+")}: ${question}`);
+
+  it("R4c-1: r1, the superlative is most(S, A), answered as said; a degree goes to the notes", async () => {
+    await yes(["r1"], "yel zahelan zol guzemel.");
+    await yes(["r1"], "yel zahelan guzemel.", "unknown");
+    const t = translate(r([], ["zazozon zol wohalal gamahum."]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(most\(dt\("slot:adj","gamahum"\),azozo\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.deepEqual(t.notes.map((n) => n.frame.key), ["slot:w"]);
+    // A place on the scale is not the top (comparative-arity.md#place-on-a-scale): left.
+    assert.deepEqual(translate(r([], ["zahelan zol wrogel gelazem."]), { lexicon: tables }).left.map((l) => l.key), ["shared:scale"]);
+  });
+
+  it("R4c-2 (D17): r2, a tie answers either order and says nothing of the quality; r6, three tied pairwise", async () => {
+    await yes(["r2"], "yel zalazun zazozon zoel gamahum.");
+    await yes(["r2"], "yel zazozon gamahum.", "unknown");
+    await yes(["r6"], "yel zalazun zahelan zoel gamahum.");
+    await yes(["r6"], "yel zahelan zazozon zoel gamahum.");
+  });
+
+  it("R4c-2 (D17): r2 + r3, a closed tie clashes with a rank either way; r4 + r3, an open tie does not", async () => {
+    for (const labels of [["r2", "r3"], ["r2", "r7"]]) {
+      const c = (await clashes(r(labels), base)).clashes;
+      assert.equal(c.length, 1, labels.join("+"));
+      assert.deepEqual(c[0]!.readings, ["t:0.0", "t:0.1"]);
+    }
+    assert.deepEqual((await clashes(r(["r4", "r3"]), base)).clashes, []);
+  });
+
+  it("R4c-2 (D17), R4c decision 2: r5 and r8, with a verb each member acts", async () => {
+    await yes(["r5"], "yel zazozon vowurol.");
+    await yes(["r5"], "yel zalazun vowurol.");
+    await yes(["r8"], "yel zahelan velunel.");
+    await yes(["r8"], "yel zazozon zahelan zol hahunom velunel.");
+  });
+
+  it("R4c decision 1: r3 + r7, a rank one way and the other clash", async () => {
+    const c = (await clashes(r(["r3", "r7"]), base)).clashes;
+    assert.equal(c.length, 1);
+    assert.deepEqual(c[0]!.readings, ["t:0.0", "t:0.1"]);
+  });
+
+  it("R4c decision 3: r9, three ranked in text order; r10, zaol from low to high", async () => {
+    await yes(["r9"], "yel zazozon zahelan zol gamahum.");
+    await yes(["r9"], "yel zahelan zalazun zol gamahum.", "unknown");
+    await yes(["r10"], "yel zahelan zazozon zol gamahum.");
+    await yes(["r10"], "yel zazozon zahelan zol gamahum.", "unknown");
+  });
+
+  it("R4c decision 4: r11 and r12, a factor is ratio(S, A, B, V), no tie and no clash", async () => {
+    await yes(["r11"], "yel zazozon zalazun zoel gelazem.", "unknown");
+    const program = translate(r(["r11", "r12"]), { lexicon: tables }).program;
+    assert.match(program, /^holds\(ratio\(dt\("slot:adj","gelazem"\),azozo,alazu,v\(2\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.match(program, /^holds\(ratio\(dt\("slot:adj","gelazem"\),azozo,alazu,v\(2\)\)\) :- on\("t:0\.1"\)\.$/m);
+    assert.deepEqual((await clashes(r(["r11"], ["zazozon zalazun zol gelazem."]), base)).clashes, []);
+  });
+});
