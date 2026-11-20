@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
 import { createClassifyTables } from "./classify.js";
-import { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
+import { parseSentenceTokens } from "./sentence-parser.js";
+import { SentenceParseError } from "./sentence-shapes.js";
 import { tokenizeUtterance, tokensFromLexWords, punctToken } from "./tokenize.js";
 import { classify } from "./classify.js";
 import { parseWord } from "./word.js";

@@ -123,7 +123,7 @@ test("span variants drop one word or swap two neighbors, keep the period, and sk
 
 test("the sentence parser decides by structure and token types: no GATE, no IGNORE_AMBIGUITIES", () => {
   // The full proof (one tree per input) is `npm run grammar-check`; this is its quick part.
-  const source = readFileSync(join(REPO_ROOT, "src", "parse", "sentence-parser.ts"), "utf8");
+  const source = readFileSync(join(REPO_ROOT, "src", "parse", "sentence-grammar.ts"), "utf8");
   assert.deepEqual(source.match(/\bGATE\b|IGNORE_AMBIGUITIES/g) ?? [], []);
 });
 

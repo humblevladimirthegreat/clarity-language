@@ -16,7 +16,8 @@ import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun, rolePronounRoots } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import { mixedSpanEnds, type HookJob } from "./hook-jobs.js";
-import { markContext, SentenceParseError } from "./sentence-parser.js";
+import { markContext } from "./mark-context.js";
+import { SentenceParseError } from "./sentence-shapes.js";
 import {
   B,
   Bang,

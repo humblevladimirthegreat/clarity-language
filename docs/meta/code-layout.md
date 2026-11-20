@@ -21,3 +21,12 @@ Editors only. How large hand-written source files stay small, and how to split o
 ### Methods to functions
 
 A class that grows past the ceiling can hand methods to plain functions in a new file. Example: `Translator` is exported (`export class`) and imported as a type only (`import type`), so there is no runtime cycle. Each moved method becomes `function name(t: Translator, …)`. `this.` becomes `t.` inside, and a call `this.hinge(x)` becomes `hinge(this, x)`. `Translator` has no `private` fields, so nothing else changes. A class with `private` members, or one the new file would import as a value, needs its own check first: a value import back into the class file makes a load-time cycle.
+
+### Chevrotain rule families
+
+A Chevrotain grammar class splits by rule family. Rules are class fields (`this.RULE("name", () => …)`), and a rule body runs only during `performSelfAnalysis()`, after every field is set, so rules can be defined outside the class in any order. `src/parse/sentence-grammar.ts` is the example:
+
+- Each family is a definer function in its own file under `src/parse/grammar/` (`defineClauseRules(p)`, `defineNpRules(p)`, …), called from the constructor before `performSelfAnalysis()`. Inside, `this.` becomes `p.` and a field `public x = this.RULE(…)` becomes `p.x = p.RULE(…)`.
+- The class keeps one declaration per rule field (`public x!: ParserRule;`), the constructor, the `lookahead` override, and the handle `dsl`. The DSL methods (`RULE`, `SUBRULE`, `CONSUME`, `OR`, …) are `protected` in `CstParser`, so `dsl` returns `this` cast once to `GrammarParser`: the class's public members plus each DSL method the rules use, typed `CstParser["NAME"]`. A DSL method no rule uses yet (such as `OPTION6`) is added to that type before a rule can use it.
+- Rule-building helper methods become functions in their family's file, taking `p`.
+- **Check:** save the parser instance's `getSerializedGastProductions()` as JSON before the move and after it; the two files must be byte-identical. That proves the rules, their names and their order are unchanged, so no syntax tree can change.

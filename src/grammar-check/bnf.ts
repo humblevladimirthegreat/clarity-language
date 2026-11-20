@@ -3,7 +3,7 @@
  *
  * Every `OPTION` / `MANY` / `AT_LEAST_ONE` / `OR` becomes its own nonterminal, named after the
  * rule and the DSL call that made it (`gPackage.MANY2`), so a finding points back at the decision
- * in sentence-parser.ts. Gates, `ACTION`s and rule arguments are invisible here: the BNF is the
+ * in sentence-grammar.ts. Gates, `ACTION`s and rule arguments are invisible here: the BNF is the
  * grammar the parser would have with every gate deleted.
  *
  * A token category (`W`, `Odo`) is a set of terminals (its members, and theirs), as Chevrotain matches it, not a nonterminal:

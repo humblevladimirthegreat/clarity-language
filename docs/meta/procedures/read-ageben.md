@@ -42,4 +42,4 @@ To go further, from an English sentence to suggested roots and sections, use the
 
 ## One tree per sentence {#grammar-check}
 
-After changing `src/parse/sentence-parser.ts` (rules or `markContext`), run **`npm run grammar-check`** (about a minute; not part of `npm test`). It fails on any `GATE`, LR(1) conflict, or doc sentence with two trees; turn a new choice into structure or a token mark, never a gate.
+After changing `src/parse/sentence-grammar.ts` (rules) or `src/parse/mark-context.ts` (`markContext`), run **`npm run grammar-check`** (about a minute; not part of `npm test`). It fails on any `GATE`, LR(1) conflict, or doc sentence with two trees; turn a new choice into structure or a token mark, never a gate.
