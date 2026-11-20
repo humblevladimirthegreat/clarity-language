@@ -993,3 +993,74 @@ describe("solve: MAY over members, denials, say words, universals and always; va
     assert.deepEqual(a.because, ["t:0.0"]);
   });
 });
+
+describe("solve: MAY with hinges, holders and questions (R4b-25 to R4b-28, R4e-6)", () => {
+  const m = (labels: string[], extra: string[] = []) => log("maybe", labels, extra);
+  const h = (labels: string[], extra: string[] = []) => log("hinges", labels, extra);
+  const asleep = q("zalazun vezuvel.");
+  const walks = q("zazozon vowurol.");
+
+  it("R4b-25 (D5): my14 / my15 + my13, MAY on the condition: the back rule gives the condition as MAY on a claim", async () => {
+    for (const label of ["my14", "my15"]) {
+      assert.equal((await follows(m([label, "my13"]), asleep, base)).verdict, "unknown", label);
+      const a = await couldBe(m([label, "my13"]), asleep, base);
+      assert.equal(a.verdict, "yes", label);
+      assert.deepEqual(a.because, ["t:0.0", "t:0.1"]);
+    }
+    const t = translate(m(["my14"]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(onlyif\(may\(c\("t:0\.0"\)\),o\("t:0\.0"\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.match(t.program, /^holds\(may\(ezuve\(z\(alazu\)\)\)\) :- holds\(onlyif\(may\(c\("t:0\.0"\)\),o\("t:0\.0"\)\)\), fits\(o\("t:0\.0"\),P\), holds\(P\), on\("t:0\.0"\)\.$/m);
+  });
+
+  it("R4b-26 (D5, R4b decision 1): my16, only-if over MAY: no back rule, the only-if half plain", async () => {
+    assert.equal((await follows(m(["my16"]), walks, base)).verdict, "unknown");
+    assert.equal((await couldBe(m(["my16"]), walks, base)).verdict, "unknown");
+    // Without the condition the walking is not even possible.
+    const a = await follows(m(["my16"], ["zalazun vezuvel vul."]), walks, base);
+    assert.equal(a.verdict, "no");
+    assert.deepEqual(a.because, ["t:0.1", "t:0.2"]);
+    assert.match(translate(m(["my16"]), { lexicon: tables }).program, /^holds\(onlyif\(c\("t:0\.1"\),may\(o\("t:0\.1"\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    // iff over MAY adds the if half as a choice.
+    assert.equal((await couldBe(m([], ["zalazun vezuvel. thehom blarth thomam zazozon vowurol."]), walks, base)).verdict, "yes");
+  });
+
+  it("R4b-27 (D6): my17, a carried holder on MAY is the holder's own MAY", async () => {
+    const t = translate(m(["my17"]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(view\(azozo,may\(ezuve\(z\(alazu\)\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    assert.equal((await follows(m(["my17"]), asleep, base)).verdict, "unknown");
+    assert.equal((await follows(m(["my17"]), q("zalazun theyomazozon vezuvel thomam."), base)).verdict, "yes");
+  });
+
+  it("R4b-28 (D6): my18, a MAY question runs as couldBe whichever job is called, and names the switch", async () => {
+    const may = q("yel zazozon vabuvul thomal dalazun.");
+    const a = await follows(m(["my18"]), may, base);
+    assert.equal(a.verdict, "yes");
+    assert.deepEqual(a.switches, ["couldBe"]);
+    const b = await couldBe(m(["my18"]), may, base);
+    assert.equal(b.verdict, "yes");
+    assert.deepEqual(b.switches, []);
+  });
+
+  it("R4e-6: hg16, MAY over a hinge is row 15 on the term; beside hg8 no clash", async () => {
+    const sits = q("zalazun vehohel.");
+    assert.equal((await follows(h(["hg16", "hg2"]), sits, base)).verdict, "unknown");
+    assert.equal((await couldBe(h(["hg16", "hg2"]), sits, base)).verdict, "yes");
+    assert.deepEqual((await clashes(h(["hg16", "hg8"]), base)).clashes, []);
+    const program = translate(h(["hg16"]), { lexicon: tables }).program;
+    assert.match(program, /^\{ holds\(if\(c\("t:0\.0"\),o\("t:0\.0"\)\)\) \} :- on\("t:0\.0"\)\.$/m);
+    assert.match(program, /^holds\(may\(if\(c\("t:0\.0"\),o\("t:0\.0"\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.doesNotMatch(program, /maybe\(/);
+    // A hinge over MAY, if(c, may(o)), never meets a plain conditional.
+    assert.equal((await couldBe(m([], ["zalazun vehohel. thohem blarth thomam zazozon vowurol."]), q("zalazun vehohel thohem blarl zazozon vowurol."), base)).verdict, "unknown");
+  });
+
+  it("a stance join after because denies only the link: the claim stands (verb-and-stance-joins.md#stance-joins)", async () => {
+    const t = translate(m([], ["zazozon vowurol thahum blanurul thul."]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(neg\(cause\(anuru,owuro\(z\(azozo\)\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.doesNotMatch(t.program, /^holds\(anuru\)/m);
+    assert.equal((await follows(m([], ["zazozon vowurol thahum blanurul thul."]), walks, base)).verdict, "yes");
+  });
+});

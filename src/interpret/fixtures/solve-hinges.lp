@@ -20,9 +20,10 @@
 % t:0.19 = hg19
 % t:0.20 = hg20
 % t:0.21 = hg21
-% t:0.22 = hg13
-% t:0.23 = hg14
-% t:0.24 = hg15
+% t:0.22 = hg16
+% t:0.23 = hg13
+% t:0.24 = hg14
+% t:0.25 = hg15
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -277,30 +278,44 @@ holds(cause(isa(nm("t:0.21",bl),ugala),isa(nm("t:0.21",z),erula))) :- on("t:0.21
 fired("t:0.21",cause(isa(nm("t:0.21",bl),ugala),isa(nm("t:0.21",z),erula))) :- on("t:0.21").
 % t:0.22
 on("t:0.22").
-via("t:0.22",clues) :- on("t:0.22").
-fired("t:0.22",via("t:0.22",clues)) :- on("t:0.22").
-holds(view(azozo,if(c("t:0.22"),o("t:0.22")))) :- on("t:0.22").
-fired("t:0.22",view(azozo,if(c("t:0.22"),o("t:0.22")))) :- on("t:0.22").
-holds(view(azozo,ehohe(z(alazu)))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(c("t:0.22"),P), holds(view(azozo,P)), on("t:0.22").
-fired("t:0.22",view(azozo,ehohe(z(alazu)))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(c("t:0.22"),P), holds(view(azozo,P)), on("t:0.22").
-used("t:0.22",view(azozo,ehohe(z(alazu))),view(azozo,if(c("t:0.22"),o("t:0.22")))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(c("t:0.22"),P), holds(view(azozo,P)), on("t:0.22").
-used("t:0.22",view(azozo,ehohe(z(alazu))),view(azozo,P)) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(c("t:0.22"),P), holds(view(azozo,P)), on("t:0.22").
-holds(view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(P,o("t:0.22")), holds(view(azozo,neg(P))), on("t:0.22").
-fired("t:0.22",view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(P,o("t:0.22")), holds(view(azozo,neg(P))), on("t:0.22").
-used("t:0.22",view(azozo,neg(owuro(z(azozo)))),view(azozo,if(c("t:0.22"),o("t:0.22")))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(P,o("t:0.22")), holds(view(azozo,neg(P))), on("t:0.22").
-used("t:0.22",view(azozo,neg(owuro(z(azozo)))),view(azozo,neg(P))) :- holds(view(azozo,if(c("t:0.22"),o("t:0.22")))), fits(P,o("t:0.22")), holds(view(azozo,neg(P))), on("t:0.22").
+{ holds(if(c("t:0.22"),o("t:0.22"))) } :- on("t:0.22").
+fired("t:0.22",if(c("t:0.22"),o("t:0.22"))) :- holds(if(c("t:0.22"),o("t:0.22"))), on("t:0.22").
+holds(may(if(c("t:0.22"),o("t:0.22")))) :- on("t:0.22").
+fired("t:0.22",may(if(c("t:0.22"),o("t:0.22")))) :- on("t:0.22").
+holds(ehohe(z(alazu))) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(c("t:0.22"),P), holds(P), on("t:0.22").
+fired("t:0.22",ehohe(z(alazu))) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(c("t:0.22"),P), holds(P), on("t:0.22").
+used("t:0.22",ehohe(z(alazu)),if(c("t:0.22"),o("t:0.22"))) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(c("t:0.22"),P), holds(P), on("t:0.22").
+used("t:0.22",ehohe(z(alazu)),P) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(c("t:0.22"),P), holds(P), on("t:0.22").
+holds(neg(owuro(z(azozo)))) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(P,o("t:0.22")), holds(neg(P)), on("t:0.22").
+fired("t:0.22",neg(owuro(z(azozo)))) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(P,o("t:0.22")), holds(neg(P)), on("t:0.22").
+used("t:0.22",neg(owuro(z(azozo))),if(c("t:0.22"),o("t:0.22"))) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(P,o("t:0.22")), holds(neg(P)), on("t:0.22").
+used("t:0.22",neg(owuro(z(azozo))),neg(P)) :- holds(if(c("t:0.22"),o("t:0.22"))), fits(P,o("t:0.22")), holds(neg(P)), on("t:0.22").
 % t:0.23
 on("t:0.23").
 via("t:0.23",clues) :- on("t:0.23").
 fired("t:0.23",via("t:0.23",clues)) :- on("t:0.23").
-holds(view(azozo,owuro(z(azozo)))) :- on("t:0.23").
-fired("t:0.23",view(azozo,owuro(z(azozo)))) :- on("t:0.23").
+holds(view(azozo,if(c("t:0.23"),o("t:0.23")))) :- on("t:0.23").
+fired("t:0.23",view(azozo,if(c("t:0.23"),o("t:0.23")))) :- on("t:0.23").
+holds(view(azozo,ehohe(z(alazu)))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(c("t:0.23"),P), holds(view(azozo,P)), on("t:0.23").
+fired("t:0.23",view(azozo,ehohe(z(alazu)))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(c("t:0.23"),P), holds(view(azozo,P)), on("t:0.23").
+used("t:0.23",view(azozo,ehohe(z(alazu))),view(azozo,if(c("t:0.23"),o("t:0.23")))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(c("t:0.23"),P), holds(view(azozo,P)), on("t:0.23").
+used("t:0.23",view(azozo,ehohe(z(alazu))),view(azozo,P)) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(c("t:0.23"),P), holds(view(azozo,P)), on("t:0.23").
+holds(view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(P,o("t:0.23")), holds(view(azozo,neg(P))), on("t:0.23").
+fired("t:0.23",view(azozo,neg(owuro(z(azozo))))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(P,o("t:0.23")), holds(view(azozo,neg(P))), on("t:0.23").
+used("t:0.23",view(azozo,neg(owuro(z(azozo)))),view(azozo,if(c("t:0.23"),o("t:0.23")))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(P,o("t:0.23")), holds(view(azozo,neg(P))), on("t:0.23").
+used("t:0.23",view(azozo,neg(owuro(z(azozo)))),view(azozo,neg(P))) :- holds(view(azozo,if(c("t:0.23"),o("t:0.23")))), fits(P,o("t:0.23")), holds(view(azozo,neg(P))), on("t:0.23").
 % t:0.24
 on("t:0.24").
 via("t:0.24",clues) :- on("t:0.24").
 fired("t:0.24",via("t:0.24",clues)) :- on("t:0.24").
-holds(view(azozo,neg(if(c("t:0.24"),o("t:0.24"))))) :- on("t:0.24").
-fired("t:0.24",view(azozo,neg(if(c("t:0.24"),o("t:0.24"))))) :- on("t:0.24").
+holds(view(azozo,owuro(z(azozo)))) :- on("t:0.24").
+fired("t:0.24",view(azozo,owuro(z(azozo)))) :- on("t:0.24").
+% t:0.25
+on("t:0.25").
+via("t:0.25",clues) :- on("t:0.25").
+fired("t:0.25",via("t:0.25",clues)) :- on("t:0.25").
+holds(view(azozo,neg(if(c("t:0.25"),o("t:0.25"))))) :- on("t:0.25").
+fired("t:0.25",view(azozo,neg(if(c("t:0.25"),o("t:0.25"))))) :- on("t:0.25").
 
 % Fits, from match().
 fits(c("t:0.0"),owuro(z(azozo))).
@@ -395,17 +410,22 @@ fits(c("t:0.22"),owuro(z(azozo))).
 fits(owuro(z(azozo)),c("t:0.22")).
 fits(o("t:0.22"),ehohe(z(alazu))).
 fits(ehohe(z(alazu)),o("t:0.22")).
-fits(c("t:0.24"),owuro(z(azozo))).
-fits(owuro(z(azozo)),c("t:0.24")).
-fits(o("t:0.24"),ehohe(z(alazu))).
-fits(ehohe(z(alazu)),o("t:0.24")).
+fits(c("t:0.23"),owuro(z(azozo))).
+fits(owuro(z(azozo)),c("t:0.23")).
+fits(o("t:0.23"),ehohe(z(alazu))).
+fits(ehohe(z(alazu)),o("t:0.23")).
+fits(c("t:0.25"),owuro(z(azozo))).
+fits(owuro(z(azozo)),c("t:0.25")).
+fits(o("t:0.25"),ehohe(z(alazu))).
+fits(ehohe(z(alazu)),o("t:0.25")).
 fits(if(c("t:0.0"),o("t:0.0")),iff(c("t:0.4"),o("t:0.4"))).
 fits(if(c("t:0.0"),o("t:0.0")),if(c("t:0.6"),o("t:0.6"))).
 fits(if(c("t:0.0"),o("t:0.0")),iff(c("t:0.9"),o("t:0.9"))).
 fits(if(c("t:0.0"),o("t:0.0")),if(c("t:0.13"),o("t:0.13"))).
 fits(if(c("t:0.0"),o("t:0.0")),iff(c("t:0.15"),o("t:0.15"))).
 fits(if(c("t:0.0"),o("t:0.0")),if(c("t:0.22"),o("t:0.22"))).
-fits(if(c("t:0.0"),o("t:0.0")),if(c("t:0.24"),o("t:0.24"))).
+fits(if(c("t:0.0"),o("t:0.0")),if(c("t:0.23"),o("t:0.23"))).
+fits(if(c("t:0.0"),o("t:0.0")),if(c("t:0.25"),o("t:0.25"))).
 fits(if(c("t:0.1"),o("t:0.1")),if(c("t:0.16"),o("t:0.16"))).
 fits(onlyif(c("t:0.3"),o("t:0.3")),iff(c("t:0.4"),o("t:0.4"))).
 fits(onlyif(c("t:0.3"),o("t:0.3")),iff(c("t:0.9"),o("t:0.9"))).
@@ -418,7 +438,8 @@ fits(if(c("t:0.6"),o("t:0.6")),iff(c("t:0.9"),o("t:0.9"))).
 fits(if(c("t:0.6"),o("t:0.6")),if(c("t:0.13"),o("t:0.13"))).
 fits(if(c("t:0.6"),o("t:0.6")),iff(c("t:0.15"),o("t:0.15"))).
 fits(if(c("t:0.6"),o("t:0.6")),if(c("t:0.22"),o("t:0.22"))).
-fits(if(c("t:0.6"),o("t:0.6")),if(c("t:0.24"),o("t:0.24"))).
+fits(if(c("t:0.6"),o("t:0.6")),if(c("t:0.23"),o("t:0.23"))).
+fits(if(c("t:0.6"),o("t:0.6")),if(c("t:0.25"),o("t:0.25"))).
 fits(onlyif(c("t:0.8"),o("t:0.8")),onlyif(c("t:0.14"),o("t:0.14"))).
 fits(iff(c("t:0.9"),o("t:0.9")),iff(c("t:0.4"),o("t:0.4"))).
 fits(iff(c("t:0.9"),o("t:0.9")),iff(c("t:0.15"),o("t:0.15"))).
@@ -430,7 +451,8 @@ fits(if(c("t:0.13"),o("t:0.13")),if(c("t:0.6"),o("t:0.6"))).
 fits(if(c("t:0.13"),o("t:0.13")),iff(c("t:0.9"),o("t:0.9"))).
 fits(if(c("t:0.13"),o("t:0.13")),iff(c("t:0.15"),o("t:0.15"))).
 fits(if(c("t:0.13"),o("t:0.13")),if(c("t:0.22"),o("t:0.22"))).
-fits(if(c("t:0.13"),o("t:0.13")),if(c("t:0.24"),o("t:0.24"))).
+fits(if(c("t:0.13"),o("t:0.13")),if(c("t:0.23"),o("t:0.23"))).
+fits(if(c("t:0.13"),o("t:0.13")),if(c("t:0.25"),o("t:0.25"))).
 fits(onlyif(c("t:0.14"),o("t:0.14")),onlyif(c("t:0.8"),o("t:0.8"))).
 fits(iff(c("t:0.15"),o("t:0.15")),iff(c("t:0.4"),o("t:0.4"))).
 fits(iff(c("t:0.15"),o("t:0.15")),iff(c("t:0.9"),o("t:0.9"))).
@@ -441,11 +463,21 @@ fits(if(c("t:0.22"),o("t:0.22")),if(c("t:0.6"),o("t:0.6"))).
 fits(if(c("t:0.22"),o("t:0.22")),iff(c("t:0.9"),o("t:0.9"))).
 fits(if(c("t:0.22"),o("t:0.22")),if(c("t:0.13"),o("t:0.13"))).
 fits(if(c("t:0.22"),o("t:0.22")),iff(c("t:0.15"),o("t:0.15"))).
-fits(if(c("t:0.22"),o("t:0.22")),if(c("t:0.24"),o("t:0.24"))).
-fits(if(c("t:0.24"),o("t:0.24")),if(c("t:0.0"),o("t:0.0"))).
-fits(if(c("t:0.24"),o("t:0.24")),iff(c("t:0.4"),o("t:0.4"))).
-fits(if(c("t:0.24"),o("t:0.24")),if(c("t:0.6"),o("t:0.6"))).
-fits(if(c("t:0.24"),o("t:0.24")),iff(c("t:0.9"),o("t:0.9"))).
-fits(if(c("t:0.24"),o("t:0.24")),if(c("t:0.13"),o("t:0.13"))).
-fits(if(c("t:0.24"),o("t:0.24")),iff(c("t:0.15"),o("t:0.15"))).
-fits(if(c("t:0.24"),o("t:0.24")),if(c("t:0.22"),o("t:0.22"))).
+fits(if(c("t:0.22"),o("t:0.22")),if(c("t:0.23"),o("t:0.23"))).
+fits(if(c("t:0.22"),o("t:0.22")),if(c("t:0.25"),o("t:0.25"))).
+fits(if(c("t:0.23"),o("t:0.23")),if(c("t:0.0"),o("t:0.0"))).
+fits(if(c("t:0.23"),o("t:0.23")),iff(c("t:0.4"),o("t:0.4"))).
+fits(if(c("t:0.23"),o("t:0.23")),if(c("t:0.6"),o("t:0.6"))).
+fits(if(c("t:0.23"),o("t:0.23")),iff(c("t:0.9"),o("t:0.9"))).
+fits(if(c("t:0.23"),o("t:0.23")),if(c("t:0.13"),o("t:0.13"))).
+fits(if(c("t:0.23"),o("t:0.23")),iff(c("t:0.15"),o("t:0.15"))).
+fits(if(c("t:0.23"),o("t:0.23")),if(c("t:0.22"),o("t:0.22"))).
+fits(if(c("t:0.23"),o("t:0.23")),if(c("t:0.25"),o("t:0.25"))).
+fits(if(c("t:0.25"),o("t:0.25")),if(c("t:0.0"),o("t:0.0"))).
+fits(if(c("t:0.25"),o("t:0.25")),iff(c("t:0.4"),o("t:0.4"))).
+fits(if(c("t:0.25"),o("t:0.25")),if(c("t:0.6"),o("t:0.6"))).
+fits(if(c("t:0.25"),o("t:0.25")),iff(c("t:0.9"),o("t:0.9"))).
+fits(if(c("t:0.25"),o("t:0.25")),if(c("t:0.13"),o("t:0.13"))).
+fits(if(c("t:0.25"),o("t:0.25")),iff(c("t:0.15"),o("t:0.15"))).
+fits(if(c("t:0.25"),o("t:0.25")),if(c("t:0.22"),o("t:0.22"))).
+fits(if(c("t:0.25"),o("t:0.25")),if(c("t:0.23"),o("t:0.23"))).

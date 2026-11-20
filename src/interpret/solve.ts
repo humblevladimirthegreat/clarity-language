@@ -46,7 +46,8 @@ export type SolveOptions = {
 };
 
 /** A switch an answer went through, as `Match.switches` names the matcher's. */
-export type SolveSwitch = "widen" | "defaults" | "closedWorld";
+/** `couldBe`: a MAY question (R4b-28, D6) was run as {@link couldBe} by another job. */
+export type SolveSwitch = "widen" | "defaults" | "closedWorld" | "couldBe";
 
 /**
  * `yes` / `no` / `unknown` as `Verdict` has them; `both` when the question's claim and its denial both follow (the log
@@ -271,7 +272,18 @@ function clashPremises(model: Model, atom: string): string[] {
 
 // ── Questions ───────────────────────────────────────────────────────────────
 
-const isQuestionForce = (reading: Reading): Reading["frames"] => reading.frames.filter((f) => f.family !== "force");
+const isQuestionForce = (reading: Reading): Reading["frames"] => reading.frames.filter((f) => f.family !== "force" && !questionMay(reading, f));
+
+/**
+ * R4b-28 (D6, knowing.md#may): a question's own MAY (`yel zazozon vabuvul thomal dalazun.`) asks whether it could be so.
+ * The question runs without it, as {@link couldBe}, whichever job is called. A holder's MAY stays the holder's (R3-6).
+ */
+function questionMay(reading: Reading, f: Reading["frames"][number]): boolean {
+  return f.key === "overlay:may:th" && !f.holderHost && !reading.frames.some((g) => g.key === "xFamily:holder");
+}
+
+const mayQuestion = (question: Reading | Claim): question is Reading =>
+  "claim" in question && question.frames.some((f) => f.family === "force") && question.frames.some((f) => questionMay(question, f));
 
 /** A thing term's range detail (R1-7), if it carries one. */
 function rangeDetail(term: Term | undefined): Detail | undefined {
@@ -439,6 +451,10 @@ function fillQuestion(question: Reading | Claim): Answer | undefined {
 export async function follows(log: Pick<Log, "readings">, question: Reading | Claim, options: SolveOptions = {}): Promise<Answer> {
   const fill = fillQuestion(question);
   if (fill) return fill;
+  if (mayQuestion(question)) {
+    const a = await couldBe(log, question, options);
+    return a.verdict === "beyond" || a.verdict === "refused" ? a : { ...a, switches: [...a.switches, "couldBe"] };
+  }
   const p = prepare(log, question, options);
   if (!p.ok) return p.answer;
   const big = tooLarge(p.program, options);

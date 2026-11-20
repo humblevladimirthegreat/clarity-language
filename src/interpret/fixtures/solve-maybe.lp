@@ -27,12 +27,19 @@
 % t:0.26 = my11
 % t:0.27 = my12
 % t:0.28 = my13
-% t:0.29 = m7
-% t:0.30 = m8
-% t:0.31 = m9
-% t:0.32 = b6
-% t:0.33 = undefined
-% t:0.34 = undefined
+% t:0.29 = my14
+% t:0.30 = my15
+% t:0.31 = my16
+% t:0.32 = my18
+% t:0.33 = m7
+% t:0.34 = m8
+% t:0.35 = m9
+% t:0.36 = b6
+% t:0.37 = my17
+% t:0.38 = undefined
+% t:0.39 = undefined
+% t:0.40 = undefined
+% t:0.41 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -123,35 +130,45 @@ holds(uduru(z(alazu))) :- on("t:0.5").
 fired("t:0.5",uduru(z(alazu))) :- on("t:0.5").
 % t:0.6
 on("t:0.6").
-{ maybe("t:0.6") } :- on("t:0.6").
-fired("t:0.6",maybe("t:0.6")) :- maybe("t:0.6"), on("t:0.6").
-holds(ehohe(z(alazu))) :- fits(c("t:0.6"),P), holds(P), maybe("t:0.6"), on("t:0.6").
-fired("t:0.6",ehohe(z(alazu))) :- fits(c("t:0.6"),P), holds(P), maybe("t:0.6"), on("t:0.6").
-used("t:0.6",ehohe(z(alazu)),P) :- fits(c("t:0.6"),P), holds(P), maybe("t:0.6"), on("t:0.6").
-holds(neg(owuro(z(azozo)))) :- fits(P,o("t:0.6")), holds(neg(P)), maybe("t:0.6"), on("t:0.6").
-fired("t:0.6",neg(owuro(z(azozo)))) :- fits(P,o("t:0.6")), holds(neg(P)), maybe("t:0.6"), on("t:0.6").
-used("t:0.6",neg(owuro(z(azozo))),neg(P)) :- fits(P,o("t:0.6")), holds(neg(P)), maybe("t:0.6"), on("t:0.6").
+{ holds(if(c("t:0.6"),o("t:0.6"))) } :- on("t:0.6").
+fired("t:0.6",if(c("t:0.6"),o("t:0.6"))) :- holds(if(c("t:0.6"),o("t:0.6"))), on("t:0.6").
+holds(may(if(c("t:0.6"),o("t:0.6")))) :- on("t:0.6").
+fired("t:0.6",may(if(c("t:0.6"),o("t:0.6")))) :- on("t:0.6").
+holds(ehohe(z(alazu))) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(c("t:0.6"),P), holds(P), on("t:0.6").
+fired("t:0.6",ehohe(z(alazu))) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(c("t:0.6"),P), holds(P), on("t:0.6").
+used("t:0.6",ehohe(z(alazu)),if(c("t:0.6"),o("t:0.6"))) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(c("t:0.6"),P), holds(P), on("t:0.6").
+used("t:0.6",ehohe(z(alazu)),P) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(c("t:0.6"),P), holds(P), on("t:0.6").
+holds(neg(owuro(z(azozo)))) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(P,o("t:0.6")), holds(neg(P)), on("t:0.6").
+fired("t:0.6",neg(owuro(z(azozo)))) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(P,o("t:0.6")), holds(neg(P)), on("t:0.6").
+used("t:0.6",neg(owuro(z(azozo))),if(c("t:0.6"),o("t:0.6"))) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(P,o("t:0.6")), holds(neg(P)), on("t:0.6").
+used("t:0.6",neg(owuro(z(azozo))),neg(P)) :- holds(if(c("t:0.6"),o("t:0.6"))), fits(P,o("t:0.6")), holds(neg(P)), on("t:0.6").
 % t:0.7
 on("t:0.7").
 holds(owuro(z(azozo))) :- on("t:0.7").
 fired("t:0.7",owuro(z(azozo))) :- on("t:0.7").
 % t:0.8
 on("t:0.8").
-{ holds(ehohe(z(alazu))) } :- fits(c("t:0.8"),P), holds(P), on("t:0.8").
-fired("t:0.8",ehohe(z(alazu))) :- holds(ehohe(z(alazu))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
-used("t:0.8",ehohe(z(alazu)),P) :- holds(ehohe(z(alazu))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+holds(if(c("t:0.8"),may(o("t:0.8")))) :- on("t:0.8").
+fired("t:0.8",if(c("t:0.8"),may(o("t:0.8")))) :- on("t:0.8").
+{ holds(ehohe(z(alazu))) } :- holds(if(c("t:0.8"),may(o("t:0.8")))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+fired("t:0.8",ehohe(z(alazu))) :- holds(ehohe(z(alazu))), holds(if(c("t:0.8"),may(o("t:0.8")))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+used("t:0.8",ehohe(z(alazu)),if(c("t:0.8"),may(o("t:0.8")))) :- holds(ehohe(z(alazu))), holds(if(c("t:0.8"),may(o("t:0.8")))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+used("t:0.8",ehohe(z(alazu)),P) :- holds(ehohe(z(alazu))), holds(if(c("t:0.8"),may(o("t:0.8")))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
 % t:0.9
 on("t:0.9").
 holds(owuro(z(azozo))) :- on("t:0.9").
 fired("t:0.9",owuro(z(azozo))) :- on("t:0.9").
 % t:0.10
 on("t:0.10").
+holds(if(may(c("t:0.10")),o("t:0.10"))) :- on("t:0.10").
+fired("t:0.10",if(may(c("t:0.10")),o("t:0.10"))) :- on("t:0.10").
 holds(may(P)) :- fits(c("t:0.10"),P), holds(P), on("t:0.10").
 fired("t:0.10",may(P)) :- fits(c("t:0.10"),P), holds(P), on("t:0.10").
 used("t:0.10",may(P),P) :- fits(c("t:0.10"),P), holds(P), on("t:0.10").
-holds(ehohe(z(alazu))) :- fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
-fired("t:0.10",ehohe(z(alazu))) :- fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
-used("t:0.10",ehohe(z(alazu)),may(P)) :- fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
+holds(ehohe(z(alazu))) :- holds(if(may(c("t:0.10")),o("t:0.10"))), fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
+fired("t:0.10",ehohe(z(alazu))) :- holds(if(may(c("t:0.10")),o("t:0.10"))), fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
+used("t:0.10",ehohe(z(alazu)),if(may(c("t:0.10")),o("t:0.10"))) :- holds(if(may(c("t:0.10")),o("t:0.10"))), fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
+used("t:0.10",ehohe(z(alazu)),may(P)) :- holds(if(may(c("t:0.10")),o("t:0.10"))), fits(c("t:0.10"),P), holds(may(P)), on("t:0.10").
 % t:0.11
 on("t:0.11").
 { maybe("t:0.11") } :- on("t:0.11").
@@ -301,28 +318,98 @@ holds(owuro(z(azozo))) :- on("t:0.30").
 fired("t:0.30",owuro(z(azozo))) :- on("t:0.30").
 % t:0.31
 on("t:0.31").
-{ holds(view(azozo,uduru(z(alazu)))) } :- on("t:0.31").
-fired("t:0.31",view(azozo,uduru(z(alazu)))) :- holds(view(azozo,uduru(z(alazu)))), on("t:0.31").
-holds(may(view(azozo,uduru(z(alazu))))) :- on("t:0.31").
-fired("t:0.31",may(view(azozo,uduru(z(alazu))))) :- on("t:0.31").
+holds(onlyif(may(c("t:0.31")),o("t:0.31"))) :- on("t:0.31").
+fired("t:0.31",onlyif(may(c("t:0.31")),o("t:0.31"))) :- on("t:0.31").
+holds(may(P)) :- fits(c("t:0.31"),P), holds(P), on("t:0.31").
+fired("t:0.31",may(P)) :- fits(c("t:0.31"),P), holds(P), on("t:0.31").
+used("t:0.31",may(P),P) :- fits(c("t:0.31"),P), holds(P), on("t:0.31").
+holds(neg(owuro(z(azozo)))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(P,c("t:0.31")), holds(neg(may(P))), on("t:0.31").
+fired("t:0.31",neg(owuro(z(azozo)))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(P,c("t:0.31")), holds(neg(may(P))), on("t:0.31").
+used("t:0.31",neg(owuro(z(azozo))),onlyif(may(c("t:0.31")),o("t:0.31"))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(P,c("t:0.31")), holds(neg(may(P))), on("t:0.31").
+used("t:0.31",neg(owuro(z(azozo))),neg(may(P))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(P,c("t:0.31")), holds(neg(may(P))), on("t:0.31").
+{ holds(ezuve(z(alazu))) } :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+fired("t:0.31",ezuve(z(alazu))) :- holds(ezuve(z(alazu))), holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+used("t:0.31",ezuve(z(alazu)),onlyif(may(c("t:0.31")),o("t:0.31"))) :- holds(ezuve(z(alazu))), holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+used("t:0.31",ezuve(z(alazu)),P) :- holds(ezuve(z(alazu))), holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+holds(may(ezuve(z(alazu)))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+fired("t:0.31",may(ezuve(z(alazu)))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+used("t:0.31",may(ezuve(z(alazu))),onlyif(may(c("t:0.31")),o("t:0.31"))) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
+used("t:0.31",may(ezuve(z(alazu))),P) :- holds(onlyif(may(c("t:0.31")),o("t:0.31"))), fits(o("t:0.31"),P), holds(P), on("t:0.31").
 % t:0.32
 on("t:0.32").
-via("t:0.32",reported) :- on("t:0.32").
-fired("t:0.32",via("t:0.32",reported)) :- on("t:0.32").
-holds(view(azozo,neg(uduru(z(alazu))))) :- on("t:0.32").
-fired("t:0.32",view(azozo,neg(uduru(z(alazu))))) :- on("t:0.32").
+holds(iff(may(c("t:0.32")),o("t:0.32"))) :- on("t:0.32").
+fired("t:0.32",iff(may(c("t:0.32")),o("t:0.32"))) :- on("t:0.32").
+holds(may(P)) :- fits(c("t:0.32"),P), holds(P), on("t:0.32").
+fired("t:0.32",may(P)) :- fits(c("t:0.32"),P), holds(P), on("t:0.32").
+used("t:0.32",may(P),P) :- fits(c("t:0.32"),P), holds(P), on("t:0.32").
+holds(owuro(z(azozo))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(c("t:0.32"),P), holds(may(P)), on("t:0.32").
+fired("t:0.32",owuro(z(azozo))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(c("t:0.32"),P), holds(may(P)), on("t:0.32").
+used("t:0.32",owuro(z(azozo)),iff(may(c("t:0.32")),o("t:0.32"))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(c("t:0.32"),P), holds(may(P)), on("t:0.32").
+used("t:0.32",owuro(z(azozo)),may(P)) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(c("t:0.32"),P), holds(may(P)), on("t:0.32").
+holds(neg(owuro(z(azozo)))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(P,c("t:0.32")), holds(neg(may(P))), on("t:0.32").
+fired("t:0.32",neg(owuro(z(azozo)))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(P,c("t:0.32")), holds(neg(may(P))), on("t:0.32").
+used("t:0.32",neg(owuro(z(azozo))),iff(may(c("t:0.32")),o("t:0.32"))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(P,c("t:0.32")), holds(neg(may(P))), on("t:0.32").
+used("t:0.32",neg(owuro(z(azozo))),neg(may(P))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(P,c("t:0.32")), holds(neg(may(P))), on("t:0.32").
+{ holds(ezuve(z(alazu))) } :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+fired("t:0.32",ezuve(z(alazu))) :- holds(ezuve(z(alazu))), holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+used("t:0.32",ezuve(z(alazu)),iff(may(c("t:0.32")),o("t:0.32"))) :- holds(ezuve(z(alazu))), holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+used("t:0.32",ezuve(z(alazu)),P) :- holds(ezuve(z(alazu))), holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+holds(may(ezuve(z(alazu)))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+fired("t:0.32",may(ezuve(z(alazu)))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+used("t:0.32",may(ezuve(z(alazu))),iff(may(c("t:0.32")),o("t:0.32"))) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
+used("t:0.32",may(ezuve(z(alazu))),P) :- holds(iff(may(c("t:0.32")),o("t:0.32"))), fits(o("t:0.32"),P), holds(P), on("t:0.32").
 % t:0.33
 on("t:0.33").
-via("t:0.33",clues) :- on("t:0.33").
-fired("t:0.33",via("t:0.33",clues)) :- on("t:0.33").
-holds(view(azozo,may(uduru(z(alazu))))) :- on("t:0.33").
-fired("t:0.33",view(azozo,may(uduru(z(alazu))))) :- on("t:0.33").
+holds(ezuve(z(alazu))) :- on("t:0.33").
+fired("t:0.33",ezuve(z(alazu))) :- on("t:0.33").
 % t:0.34
 on("t:0.34").
-{ holds(view(azozo,uduru(z(alazu)))) } :- on("t:0.34").
-fired("t:0.34",view(azozo,uduru(z(alazu)))) :- holds(view(azozo,uduru(z(alazu)))), on("t:0.34").
-holds(may(view(azozo,uduru(z(alazu))))) :- on("t:0.34").
-fired("t:0.34",may(view(azozo,uduru(z(alazu))))) :- on("t:0.34").
+holds(onlyif(c("t:0.34"),may(o("t:0.34")))) :- on("t:0.34").
+fired("t:0.34",onlyif(c("t:0.34"),may(o("t:0.34")))) :- on("t:0.34").
+holds(neg(owuro(z(azozo)))) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
+fired("t:0.34",neg(owuro(z(azozo)))) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
+used("t:0.34",neg(owuro(z(azozo))),onlyif(c("t:0.34"),may(o("t:0.34")))) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
+used("t:0.34",neg(owuro(z(azozo))),neg(P)) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
+% t:0.35
+on("t:0.35").
+holds(abuvu(z(azozo),d(alazu))) :- on("t:0.35").
+fired("t:0.35",abuvu(z(azozo),d(alazu))) :- on("t:0.35").
+% t:0.36
+on("t:0.36").
+{ holds(view(azozo,uduru(z(alazu)))) } :- on("t:0.36").
+fired("t:0.36",view(azozo,uduru(z(alazu)))) :- holds(view(azozo,uduru(z(alazu)))), on("t:0.36").
+holds(may(view(azozo,uduru(z(alazu))))) :- on("t:0.36").
+fired("t:0.36",may(view(azozo,uduru(z(alazu))))) :- on("t:0.36").
+% t:0.37
+on("t:0.37").
+via("t:0.37",reported) :- on("t:0.37").
+fired("t:0.37",via("t:0.37",reported)) :- on("t:0.37").
+holds(view(azozo,neg(uduru(z(alazu))))) :- on("t:0.37").
+fired("t:0.37",view(azozo,neg(uduru(z(alazu))))) :- on("t:0.37").
+% t:0.38
+on("t:0.38").
+via("t:0.38",clues) :- on("t:0.38").
+fired("t:0.38",via("t:0.38",clues)) :- on("t:0.38").
+holds(view(azozo,may(uduru(z(alazu))))) :- on("t:0.38").
+fired("t:0.38",view(azozo,may(uduru(z(alazu))))) :- on("t:0.38").
+% t:0.39
+on("t:0.39").
+{ holds(view(azozo,uduru(z(alazu)))) } :- on("t:0.39").
+fired("t:0.39",view(azozo,uduru(z(alazu)))) :- holds(view(azozo,uduru(z(alazu)))), on("t:0.39").
+holds(may(view(azozo,uduru(z(alazu))))) :- on("t:0.39").
+fired("t:0.39",may(view(azozo,uduru(z(alazu))))) :- on("t:0.39").
+% t:0.40
+on("t:0.40").
+via("t:0.40",clues) :- on("t:0.40").
+fired("t:0.40",via("t:0.40",clues)) :- on("t:0.40").
+holds(view(azozo,uduru(z(alazu)))) :- on("t:0.40").
+fired("t:0.40",view(azozo,uduru(z(alazu)))) :- on("t:0.40").
+% t:0.41
+on("t:0.41").
+via("t:0.41",clues) :- on("t:0.41").
+fired("t:0.41",via("t:0.41",clues)) :- on("t:0.41").
+holds(view(azozo,may(ezuve(z(alazu))))) :- on("t:0.41").
+fired("t:0.41",view(azozo,may(ezuve(z(alazu))))) :- on("t:0.41").
 
 % Fits, from match().
 fits(c("t:0.6"),owuro(z(azozo))).
@@ -345,6 +432,19 @@ fits(i("t:0.18",1),owuro(z(azozo))).
 fits(owuro(z(azozo)),i("t:0.18",1)).
 fits(i("t:0.18",2),eruvo(z(azozo))).
 fits(eruvo(z(azozo)),i("t:0.18",2)).
+fits(c("t:0.31"),ezuve(z(alazu))).
+fits(ezuve(z(alazu)),c("t:0.31")).
+fits(o("t:0.31"),owuro(z(azozo))).
+fits(owuro(z(azozo)),o("t:0.31")).
+fits(c("t:0.32"),ezuve(z(alazu))).
+fits(ezuve(z(alazu)),c("t:0.32")).
+fits(o("t:0.32"),owuro(z(azozo))).
+fits(owuro(z(azozo)),o("t:0.32")).
+fits(c("t:0.34"),ezuve(z(alazu))).
+fits(ezuve(z(alazu)),c("t:0.34")).
+fits(o("t:0.34"),owuro(z(azozo))).
+fits(owuro(z(azozo)),o("t:0.34")).
+fits(onlyif(may(c("t:0.31")),o("t:0.31")),iff(may(c("t:0.32")),o("t:0.32"))).
 
 % Members, from claimMemberLists().
 member(ls("t:0.17",z),azozo,1).

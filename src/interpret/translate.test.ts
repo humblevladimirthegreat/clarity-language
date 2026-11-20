@@ -57,8 +57,10 @@ describe("translate: golden program per solver fixture", () => {
 describe("translate: MAY and or (R3-1, R3-5, R3-7)", () => {
   it("the MAY rows that have none yet are left out", () => {
     const key = (text: string) => program(text).left.map((l) => l.key ?? l.construction);
-    // MAY on a hinge's condition reads only the forward rule of *if* (R3-5); a hinge over MAY too (R3-1 row 6).
-    assert.deepEqual(key("zalazun vehohel thebem blarl zazozon thomam vowurol."), ["overlay:clause_hinge:th"]);
+    // R4b-25 (D5): MAY on an only-if hinge's condition now has its row.
+    assert.deepEqual(key("zalazun vehohel thebem blarl zazozon thomam vowurol."), []);
+    // A carried holder on MAY beside a hinge (R4b-27 builds it on a plain claim only).
+    assert.deepEqual(key("zalazun theyomazozon vudurul. thomam zalazun vehohel thohem blarl zazozon vowurol."), ["frameCombination"]);
     // MAY over `huam` or `hal` over MAY (R4b-22, R4b-23 build only `hual` / `hal` under MAY and `hual` over it), and other stance numbers.
     assert.deepEqual(key("thomam zazozon vowurol huam."), ["lexReading:restrictor"]);
     assert.deepEqual(key("hal zazozon vowurol thomam."), ["lexReading:restrictor"]);

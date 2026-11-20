@@ -104,6 +104,13 @@ zerulal.
 zerulal gahum blugalal.
 = There is rain because there are clouds.
 
+# R4e-6: MAY over a hinge is row 15 on the conditional term, { holds(if(c, o)) } and may(if(c, o)) (knowing.md#may,
+# causation.md#if; solver.md MAY row 17). hg16 + hg2: ? zalazun vehohel. → unknown, ?~ → yes. hg16 + hg8: no clash, the
+# world without the conditional is clash-free.
+@ hg16
+thomam zalazun vehohel thohem blarl zazozon vowurol.
+= If Azozon walks, maybe Alazun sits.
+
 # R4e-5: a holder's conditional (holder.md#what-the-holder-covers; solver.md Holders row 4). hg13 + hg14: *does Azozon
 # think Alazun sits?* yes. hg13 + hg15: clash in Azozon's view. hg1 + hg15: no clash.
 @ hg13

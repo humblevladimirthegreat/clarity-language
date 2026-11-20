@@ -48,6 +48,8 @@ In a yes/no question, `thomal` says you are asking in order to find out:
 >
 > "Might Azozon be punching Alazun? Let's find out."
 
+A question with MAY asks whether it could be so, not whether it is.
+
 > `zahelan thomar vagamul.`
 >
 > z-Ahelan | th-MAY-who-knows | v-cry

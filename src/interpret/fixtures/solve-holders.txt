@@ -1,6 +1,6 @@
 # Solver fixture (R2, group (b)): holders (holder.md#naming-a-holder, #what-the-holder-covers).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# b6, a holder on MAY, is in draft-maybe.txt until MAY has its row (B6b).
+# b6, a holder on MAY, is in solve-maybe.txt.
 # R4a-6: a holder or a channel after `uom` (contrary-to.md#contrary-to-holder). The event stays your claim.
 # k17, k18, k19 each, ? zazozon vowurol. -> yes. Before the holder entries, so no holder carries onto them.
 @ k17

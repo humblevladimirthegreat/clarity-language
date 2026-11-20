@@ -81,9 +81,10 @@ export function unwrapText(wrap: Wrap, atom: string): string | undefined {
 
 /**
  * R4e-1: a conditional term, `if(c(Id), o(Id))`, `onlyif(..)` or `iff(..)` (`neg(o(Id))` for a denied outcome), keyed by
- * its bare text. `denied`: the reading claims `neg(T)` (R4e-3).
+ * its bare text. `denied`: the reading claims `neg(T)` (R4e-3). `may` (R4e-6): MAY on the condition, `if(may(c(Id)), o(Id))`,
+ * or under the hinge, `if(c(Id), may(o(Id)))`; a conditional meets only one with the same wrapper.
  */
-export type Conditional = { reading: ReadingId; name: "if" | "onlyif" | "iff"; id: string; negOut: boolean; denied: boolean };
+export type Conditional = { reading: ReadingId; name: "if" | "onlyif" | "iff"; id: string; negOut: boolean; denied: boolean; may?: "cond" | "out" };
 
 export type Translation = {
   program: string;
@@ -701,8 +702,11 @@ class Translator {
     // R4b-2: *because* runs inside a holder's own view, never under a say word.
     if (wrapped && (frames.zone || (frames.because && (wrapped.kind !== "view" || wrapped.say)))) return this.leave(reading, combination);
     if (wrapped) {
-      // R3-6: the holder covers its own MAY. A carried holder on a MAY sentence has no row.
-      if (frames.may && !frames.holder && !(frames.say && wrapped.kind === "say")) return this.leave(reading, combination);
+      // R3-6: the holder covers its own MAY. R4b-27 (D6): so does a carried holder (holder.md#naming-a-holder), on a
+      // plain claim only, as the holder's own MAY is.
+      const carriedMay = !!frames.may && !frames.holder && wrapped.kind === "view" && !wrapped.say;
+      if (carriedMay && (frames.hinge || frames.because || frames.universal || frames.restrictor || frames.say)) return this.leave(reading, combination);
+      if (frames.may && !frames.holder && !carriedMay && !(frames.say && wrapped.kind === "say")) return this.leave(reading, combination);
       if (frames.may && wrapped.kind === "view") wrapped.may = true;
       ctx.wrap = wrapped;
       ctx.asserted = false;
@@ -712,7 +716,7 @@ class Translator {
       const sayUniversal = !!frames.universal && wrapped.kind === "say" && !frames.hinge;
       if ((frames.restrictor && wrapped.kind !== "view") || frames.likely || (frames.say && (frames.restrictor || (frames.hinge && !hingeOverSay) || (frames.universal && !sayUniversal)))) return this.leave(reading, combination);
     }
-    if (frames.mayHost || (frames.may && !frames.holder && !mayOver)) ctx.choice = true;
+    if (frames.mayHost || (frames.may && !frames.holder && ctx.wrap?.kind !== "view" && !mayOver)) ctx.choice = true;
     if (frames.likely) {
       const likely = this.likely(frames.likely, ctx);
       if (likely !== true) return this.leave(reading, likely);
@@ -949,7 +953,8 @@ class Translator {
     const plainMay = !!frames.may && !ctx.wrap && !frames.mayHost && !frames.likely && !frames.universal && !frames.restrictor && !frames.zone && !frames.because;
     if (listed && ctx.choice && !mayOver && plainMay) [ctx.choice, mayOver] = [false, "gate"];
     else if (listed && (ctx.choice || mayOver)) return { construction: "frameCombination", reason: "noRow" };
-    if (mayOver === "gate") {
+    // R4e-6: MAY over a hinge is row 15 on the conditional term, with no `maybe(Id)` gate (the hinge's rules wait on the term).
+    if (mayOver === "gate" && !frames.hinge) {
       this.rule(ctx, `maybe(${ctx.id})`, [], "gate");
       ctx.gate = `maybe(${ctx.id})`;
     }
@@ -1035,7 +1040,7 @@ class Translator {
       // R4b-15 (D14): the earlier covers the later; a zone first marks the conditional (R4e decision 3).
       const first = zone && (over(reading, frames.zone!, frames.hinge) ? true : over(reading, frames.hinge, frames.zone!) ? false : undefined);
       if (zone && first === undefined) return zoneBad;
-      return this.hinge(reading, frames.hinge, heads, body, ctx, mayOver === "outcome", false, zone ? { term: zone.term, first: !!first } : undefined);
+      return this.hinge(reading, frames.hinge, heads, body, ctx, mayOver, false, zone ? { term: zone.term, first: !!first } : undefined);
     }
 
     if (frames.restrictor) {
@@ -1372,17 +1377,18 @@ class Translator {
     if (m) this.rule(ctx, w(m), body);
     // R4b-7 (D12): under `hual` each atom also takes the marker `always(..)`.
     if (always) for (const a of atoms) this.rule(ctx, a, body, "always");
-    return frames.hinge ? this.hinge(reading, frames.hinge, heads, body, ctx, false, true) : true;
+    return frames.hinge ? this.hinge(reading, frames.hinge, heads, body, ctx, undefined, true) : true;
   }
 
   /**
    * Rows 5–7 and R1-5: a condition hinge; neither its condition nor its outcome is claimed. R4e-1: the reading claims
    * the conditional, `if(c(Id), o(Id))`, `onlyif(..)` or `iff(..)` (`neg(o(Id))` for a denied outcome), and each rule
    * takes it in its body. R4e-3: a denied conditional (`thohem thul blarl`) claims `neg(T)` and runs no rule. A hinge on
-   * a universal, over MAY, under MAY or with MAY in its condition keeps its rules with no term. R4b-1: a `bl-` noun
+   * a universal keeps its rules with no term. R4e-6: MAY over the hinge makes the term a choice; MAY on the condition or
+   * under the hinge wraps that slot of the term in `may(..)`. R4b-1: a `bl-` noun
    * condition reads as its kind.
    */
-  hinge(reading: Reading, frame: Frame, heads: { text: string; claim: Claim; sign: 1 | -1 }[], body: Literal[], ctx: Ctx, mayOutcome = false, because = false, zone?: { term: string; first: boolean }): true | Why {
+  hinge(reading: Reading, frame: Frame, heads: { text: string; claim: Claim; sign: 1 | -1 }[], body: Literal[], ctx: Ctx, mayOver?: MayOver, because = false, zone?: { term: string; first: boolean }): true | Why {
     const bad = { construction: frame.construction, key: frame.key, reason: "noRow" };
     const noun = this.nounCondition(frame);
     const cond = noun ? undefined : this.condition(reading, frame);
@@ -1395,11 +1401,13 @@ class Translator {
     const gloss = frame.values.gloss ?? "";
     const termName = CONDITIONAL[gloss];
     if (!termName) return bad;
-    // R3-1 row 6 and R3-5 have only the forward rule of *if*.
-    if ((mayCond || mayOutcome) && gloss !== "if") return bad;
+    // R4e-6: MAY first (`thomam … thohem blarl`) makes the conditional a choice; the hinge first (`blarth` over MAY) makes the
+    // outcome possible.
+    const mayGate = mayOver === "gate";
+    const mayOutcome = mayOver === "outcome";
     // R4a-9: a hinge over a say word (`thohem blarth` first): the outcome is the say term, the condition your own claim.
     const sayOut = ctx.wrap?.kind === "say";
-    if (sayOut && (mayCond || mayOutcome || ctx.gate || because)) return bad;
+    if (sayOut && (mayCond || mayOutcome || mayGate || because)) return bad;
     const condClaim = noun?.claim ?? cond!.claim;
     const condSite = cond ?? reading;
     const condText = noun?.text ?? this.claim(cond!.claim, { ...ctx, reading: cond!, asserted: false });
@@ -1408,10 +1416,10 @@ class Translator {
     const denied = hingeDenied(reading) === frame;
     // A denied conditional on a universal (R4e open decision 2), with MAY, in a wrap or beside *because* has no row.
     // R4e-5: a holder's denied conditional is the holder's view, `view(H, neg(if(..)))`.
-    if (denied && (universal || mayCond || mayOutcome || ctx.gate || (ctx.wrap && !plainView(ctx.wrap)) || because)) return bad;
+    if (denied && (universal || mayCond || mayOutcome || mayGate || (ctx.wrap && !plainView(ctx.wrap)) || because)) return bad;
     // R4b-15 (D14): a hinge over a zone marks the outcome its *if* rule gives; *only if* gives no outcome to mark. R4e
     // decision 3: a zone over a hinge marks the conditional, which needs its term.
-    if (zone && (denied || universal || mayCond || mayOutcome || ctx.gate || sayOut || (!zone.first && gloss === "only-if"))) return bad;
+    if (zone && (denied || universal || mayCond || mayOutcome || mayGate || sayOut || (!zone.first && gloss === "only-if"))) return bad;
     const h = heads[0]!;
     const c = `c(${ctx.id})`;
     const o = `o(${ctx.id})`;
@@ -1432,34 +1440,55 @@ class Translator {
       this.slots.set(o, { reading: reading.id, claim: h.claim });
       this.pool(reading, h.text, h.claim, 1);
     }
-    // R4e-1: the conditional as a claim term over the reading's own slots.
-    const plain = !universal && !mayCond && !mayOutcome && !ctx.gate && !sayOut;
-    const term = `${termName}(${c},${h.sign < 0 ? `neg(${o})` : o})`;
-    if (plain) this.conditionals.set(term, { reading: reading.id, name: termName, id: ctx.id, negOut: h.sign < 0, denied });
+    // R4e-1: the conditional as a claim term over the reading's own slots. R4e-6: MAY on the condition is
+    // `if(may(c(Id)), o(Id))`, MAY under the hinge `if(c(Id), may(o(Id)))`; MAY over the hinge keeps the plain term.
+    const termed = !universal && !sayOut;
+    const oSlot = h.sign < 0 ? `neg(${o})` : o;
+    const term = `${termName}(${mayCond ? `may(${c})` : c},${mayOutcome ? `may(${oSlot})` : oSlot})`;
+    const may = mayCond ? "cond" : mayOutcome ? "out" : undefined;
+    if (termed) this.conditionals.set(term, { reading: reading.id, name: termName, id: ctx.id, negOut: h.sign < 0, denied, ...(may ? { may } : {}) });
     if (denied) {
       // R4e-3 (say-reasons.md#arguments: "only that the link fails"): the link denied, nothing else claimed.
       this.rule(ctx, w(`neg(${term})`), []);
       this.useDenied(reading, frame);
       return true;
     }
-    const gate: Literal[] = plain ? [{ atom: `holds(${w(term)})`, premise: w(term) }] : [];
-    if (plain) this.rule(ctx, w(term), []);
+    const gate: Literal[] = termed ? [{ atom: `holds(${w(term)})`, premise: w(term) }] : [];
+    if (termed && mayGate) {
+      // R4e-6: row 15 on the term, `{ holds(T) }` and `holds(may(T))`.
+      this.rule({ ...ctx, choice: true }, w(term), []);
+      this.rule(ctx, w(`may(${term})`), []);
+    } else if (termed) this.rule(ctx, w(term), []);
     if (zone?.first) this.rule(ctx, `against(${term},${zone.term})`, []);
+    const enough = gloss === "if" || gloss === "iff";
+    const needs = gloss === "only-if" || gloss === "iff";
     if (mayCond) {
-      // R3-5: the body reads `may(P)`; a stated condition gives it too. No backward rule.
+      // R3-5: the body reads `may(P)`; a stated condition gives it too. No backward rule for *if*. R4b-25 (D5): *only if*
+      // and *iff* add row 6 on `may(P)`, and its back rule gives the condition as MAY on a claim (row 15).
       this.rule(ctx, w("may(P)"), [{ atom: `fits(${c},P)` }, { atom: `holds(${w("P")})`, premise: w("P") }]);
-      this.rule(ctx, out, [...body, { atom: `fits(${c},P)` }, { atom: `holds(${w("may(P)")})`, premise: w("may(P)") }]);
+      if (enough) this.rule(ctx, out, [...gate, ...body, { atom: `fits(${c},P)` }, { atom: `holds(${w("may(P)")})`, premise: w("may(P)") }]);
+      if (needs) {
+        this.rule(ctx, notOut, [...gate, ...body, { atom: `fits(P,${c})` }, { atom: `holds(${w("neg(may(P))")})`, premise: w("neg(may(P))") }]);
+        if (!universal) {
+          this.rule({ ...ctx, choice: true }, w(condText), [...gate, ...outTrue("P")]);
+          this.rule(ctx, w(`may(${condText})`), [...gate, ...outTrue("P")]);
+        }
+      }
     } else if (mayOutcome) {
-      // R3-1 row 6: a hinge over MAY makes the outcome only possible: a choice, and no backward rule.
-      this.rule({ ...ctx, choice: true }, out, [...body, ...truth(c, "P")]);
-    } else if (gloss === "if" || gloss === "iff") {
-      this.rule(ctx, out, [...gate, ...body, ...truth(c, "P")]);
-      if (zone && !zone.first) this.rule(ctx, `against(${out},${zone.term})`, [...gate, ...body, ...truth(c, "P")]);
-      if (!universal) this.rule(ctx, wc(`neg(${condText})`), [...gate, ...outFalse("P")]);
-    }
-    if (gloss === "only-if" || gloss === "iff") {
-      this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
-      if (!universal) this.rule(ctx, wc(condText), [...gate, ...outTrue("P")]);
+      // R3-1 row 6: a hinge over MAY makes the outcome only possible: a choice, and no backward rule. R4b-26 (D5, R4b
+      // decision 1): the *only if* half stays plain, without the condition the outcome is not even possible.
+      if (enough) this.rule({ ...ctx, choice: true }, out, [...gate, ...body, ...truth(c, "P")]);
+      if (needs) this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
+    } else {
+      if (enough) {
+        this.rule(ctx, out, [...gate, ...body, ...truth(c, "P")]);
+        if (zone && !zone.first) this.rule(ctx, `against(${out},${zone.term})`, [...gate, ...body, ...truth(c, "P")]);
+        if (!universal) this.rule(ctx, wc(`neg(${condText})`), [...gate, ...outFalse("P")]);
+      }
+      if (needs) {
+        this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
+        if (!universal) this.rule(ctx, wc(condText), [...gate, ...outTrue("P")]);
+      }
     }
     this.use(frame, mayCond ? condFrames[0] : undefined);
     return true;
@@ -1541,7 +1570,7 @@ class Translator {
     };
     for (const [tb, b] of this.conditionals) {
       for (const [ta, a] of this.conditionals) {
-        if (tb === ta || !(a.name === b.name || a.name === "iff") || a.negOut !== b.negOut) continue;
+        if (tb === ta || !(a.name === b.name || a.name === "iff") || a.negOut !== b.negOut || a.may !== b.may) continue;
         const [cA, cB, oA, oB] = [`c(${a.id})`, `c(${b.id})`, `o(${a.id})`, `o(${b.id})`];
         const enough = (): boolean => m(cA, cB) && (b.negOut ? m(oA, oB) : m(oB, oA));
         const needs = (): boolean => m(cB, cA) && (b.negOut ? m(oB, oA) : m(oA, oB));

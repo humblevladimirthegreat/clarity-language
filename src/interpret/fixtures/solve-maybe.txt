@@ -134,6 +134,29 @@ zazozon vowurol veruvol vaem vul.
 zazozon vowurol.
 = Azozon walks.
 
+# R4b-25 (D5): only-if and iff with MAY on the condition, onlyif(may(c), o) / iff(may(c), o) (causation.md#if). my14 + my13 and
+# my15 + my13: follows Alazun is asleep cannot say; couldBe yes, since the back rule gives the condition as MAY on a claim.
+@ my14
+zazozon vowurol thebem blarl zalazun thomam vezuvel.
+= Azozon walks only if Alazun may be asleep.
+
+@ my15
+zazozon vowurol thehom blarl zalazun thomam vezuvel.
+= Azozon walks if and only if Alazun may be asleep.
+
+# R4b-26 (D5, R4b decision 1): only-if over MAY, onlyif(c, may(o)): no back rule, and the only-if half plain (without the
+# sleeping the walking is not even possible). my16: follows and couldBe Azozon walks cannot say, since only if gives no
+# outcome from a held condition.
+@ my16
+zalazun vezuvel. thebem blarth thomam zazozon vowurol.
+= Alazun is asleep. Only then may Azozon walk.
+
+# R4b-28 (D6, knowing.md#may): a MAY question asks whether it could be so, whichever job is called. my18: ? yel zazozon
+# vabuvul thomal dalazun. gives yes, the switch couldBe named.
+@ my18
+zazozon vabuvul dalazun.
+= Azozon punches Alazun.
+
 # MAY as a holder's host (R3-1 row 4, R2-3): your guess about Azozon's view. m7 + m8: the world that holds both of Azozon's views clashes (R2-2) and is dropped (R3-4), so couldBe gives no, as for m1 + m2 (R3-2).
 @ m7
 zalazun thomamazozon vudurul.
@@ -152,3 +175,9 @@ zalazun theyomazozon vudurul thomam.
 @ b6
 zalazun thomamazozon vudurul.
 = Maybe Azozon thinks Alazun left.
+
+# R4b-27 (D6, holder.md#naming-a-holder): a carried holder on a MAY sentence is the holder's own MAY, view(azozon, may(..)).
+# my17: follows Alazun is asleep cannot say; the view with MAY follows.
+@ my17
+zalazun theyomazozon vudurul. zalazun thomam vezuvel.
+= I gather Azozon thinks Alazun left. Alazun may be asleep (in Azozon's view).
