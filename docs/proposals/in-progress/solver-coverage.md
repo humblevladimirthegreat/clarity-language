@@ -1,6 +1,6 @@
 # Solver coverage: the edge, wrong answers, and fill questions
 
-**Status:** IN PROGRESS, 2026-11-20: phases 1 to 4 done. Phase 4 (B2b, B3a, T1, B3b, B3c, B3d, B4a, P2): contrary-to zones, MAY over a clause and on hinges, hinges on universals, rank and ties, probe output scoping (T1), and the `verb-and-stance-joins.md` checkpoint (P2); open decisions 2 and 3 settled as D18 and D19 and built. Open decisions 4 and 5 settled 2026-11-20 as D21 and D22. Next is phase 5 (B4b, B4c, B6a, B6b); then phase 6 (B6c, B5a, B5b, S1), split off 2026-11-20 to fit one session's budget. User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
+**Status:** IN PROGRESS, 2026-11-20: phases 1 to 5 done. Phase 5 (B4b, B4c, B6a): lists and channel stances on your own claim, a `fragment` left reason, SHARED words in `match()` (D21), a place on a scale (D22), and links that add no term (R4d-1 to R4d-5, O-1, O-4, O-5). It ended early at the user's word, to save tokens: B6b moves to phase 6, after a tooling unit (T2) that cuts what each unit rebuilt or hunted for. Open decisions 1 to 3 logged. Next is phase 6 (T2, B6b, B6c); then phase 7 (B5a, B5b, S1). User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
 **Related:** [solver.md](../../meta/solver.md); [interpreter.md](../../meta/interpreter.md) (classification and pair tables); `src/interpret/` (`translate.ts`, `solve.ts`, `read.ts`, `classes.ts`, `match.ts`, `log.ts`, `probe.ts`, `cli.ts`); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [causation](/causation), [contrary to](/contrary-to), [knowing](/knowing), [evidentiality](/evidentiality), [restrictors](/restrictors), [rank joins](/rank-joins), [set joins](/set-joins), [list structure](/list-structure), [comparatives](/comparatives), [pronouns](/pronouns), [collectives](/collectives), [questions](/questions), [fill-ask roles](/fill-ask-roles), [sentence linkers](/sentence-linkers), [polar inventory](/polar-inventory), [hooks](/hooks), [notional](/notional); recipe page `say-people-places.md`.  
 **Depends on:** none.  
 **Design authority:** no new forms. The page sentences the confirmed rows name (each written in the unit that builds its row).
@@ -9,46 +9,42 @@
 
 Phase 1 built the faithful half: the **accounting guard** in `translate.ts` (`Translation.accounting`) sends a reading with an unused part to `left` with reason `unused` (a question with one answers `beyond`), and the sweep `src/interpret/accounting.test.ts` fails on a kept grammar example with an unused part. Speaker and listener are turn-tied (`listener(N)`, `Translation.site(id)`, `TermSite` in `match.ts`).
 
-Phases 3 and 4 built the rows below; [solver.md](../../meta/solver.md#translation-table) owns each. What phases 5 and 6 build on:
+Phases 3 to 5 built the rows below; [solver.md](../../meta/solver.md#translation-table) owns each. What phases 6 and 7 build on:
 
 - **The conditional is a claim term.** A plain *if* / *only if* / *iff* claims `if(c(Id),o(Id))`, `onlyif(..)` or `iff(..)`; matching between conditionals is `Translation.conditionals` / `conditionalFits`. MAY wraps a side: `if(may(c),o)`, `if(c,may(o))`, or `may(if(..))` with a choice on the plain term (`Conditional.may` keeps a wrapped one from meeting a plain one). A hinge on a closed universal claims a template term plus a member term per stated member (`Conditional.id` = `"Id",M`), rows 5–7 run per member. A hinge in a holder's view claims `view(H, if(..))`.
 - **Zones.** `against(T, Z)` with `Z` = `plan(H)`, `want(H)`, `decision(H)`, `channel(Gloss, H)` or a say word; `H` = `sp("…")` with no holder; a zone over a hinge puts `against` on the conditional.
 - **MAY.** Row 15's choice wherever MAY is held (D18, D19); *always* over MAY adds `always(may(T))`, which clashes with and attacks `never(T)`. A MAY question runs as `couldBe` (switch `couldBe`).
-- **Rank and ties.** `ranked()` in `translate.ts`: `more(S, A, B)` per ordered pair, `most(S, A)`, `tie(S, A, B, E)`, `ratio(S, A, B, V)` (never pooled for questions; open decision 4); with a verb each member's act holds.
+- **Rank, ties and places.** `ranked()` in `translate.ts`: `more(S, A, B)` per ordered pair, `most(S, A)`, `tie(S, A, B, E)`, `ratio(S, A, B, V)`, and `place(S, A, rk(N))` (D22: two places for one member clash; a place other than 1 gives `neg(most(S, A))`; a place with a verb stays left). `match()` compares a list's SHARED words (D21, [matching a claim](../../meta/interpreter.md#matching-a-claim)), so a rank, tie, ratio or place question on another scale never fits; `ratio(..)` is pooled for questions. With a verb each member's act holds.
+- **Lists and channels** (solver.md rows 25–31). `ue` denies each item; two `u` lists deny every pairing; SHARED details after a join go on each member or into each verb's term; likeness among members, each to each; a collective `-x` adjective is `isa(ls(..), K)` with no member facts; a channel on your own claim is row 1 with the frame in `notes`, carried readings too; an evidence clause claims both, plus `grounds(E, C)`.
+- **The `fragment` reason.** `{ construction: "fragment", key: <join frame>, reason: "fragment" }`, helper `fragment()` in `translate.ts`; today only a verbless claim whose one role is a `z` list with a join frame other than `joinSeries:u`. B6b extends it to table fragments.
+- **Links** (rows 33–37). `/x/` continue words, polar verdicts, no-verdict polar words, tags, and discourse hooks with `a`, `o`, `ao`, `ae`, `er` take the body's own rows plus notes. A verdict (`ao` / `uo`, on `-l`, `-m` or `-r`; `yuor` too, open decision 3) reaches only an answered reading with no frame but its act word and first mentions, and no list, blank, clause or quote. `xahom` adds `cause(Prior, Next)` between two plain claims only. `Note.frame` may be a `LinkNote`; `talk()` / `talkRules()`; a reading with an empty claim and only links writes `on(Id)` alone.
 - **Witnesses.** A question's witness facts come from `Translation.witnesses`; a row that adds a first-mention witness fact records its lines there.
 - **Holders and say words.** `sayRules()` emits the say rules; `zayan` is `we(..)`; `zawan` reads `LogEntry.addressees`. Reserved names include `if`, `onlyif`, `iff`, `we`, `every`, `because`, `want`, `decision`.
 - **One pool of claims.** Every turn's plain claim is `holds(T)`, with no speaker; a per-speaker layer (`said(Speaker, T)`) waits for the group-views host policy, and `yaor` and the polar answers (R4d-2) will be its first users.
-- **Fixtures.** `solve-holders.txt`, `-because`, `-hinges`, `-say`, `-maybe`, `-lists`. `draft-holders.txt` holds only k14 (B6a), `draft-because.txt` only bc36 (tag `zwar`, left), `draft-hinges.txt` hg11 (B6c) and hg23 (left), `draft-lists.txt` R4c-3 and later; `draft-maybe.txt` is gone. Use the inline `blarl …` form of a hinge condition. A draft verdict "→ no" that only means *does not follow* is tested as `unknown`.
+- **Fixtures.** `solve-holders.txt`, `-because`, `-hinges`, `-say`, `-maybe`, `-lists`, `-channels`, `-links`. `solve-links.txt` reads as one log, each verdict answering the entry before it; lk7, lk15 and lk17 are tested in `solve.test.ts`, lk6 in `accounting.test.ts`. Drafts left: `draft-because.txt` (bc36, tag `zwar`, left), `draft-hinges.txt` (hg11 for B6c, hg23 left), `draft-links.txt` (lk28–lk33 and lk37–lk39 for B6b; lk34–lk36 and lk41 for B6c), `draft-fill.txt` (B5a). Use the inline `blarl …` form of a hinge condition. A draft verdict "→ no" that only means *does not follow* is tested as `unknown`; a draft "couldBe yes" on a claim nothing states is `unknown` too (`couldBe` says yes only where a choice makes the claim hold).
 - **Probing.** `probe --program` prints the case's own lines; `--case N`, `--terms a,b`, `--program=full` (T1).
 
-After phase 4 the sweep leaves 2489 example readings: 338 `unused` (unit:linker 83, edge:polar 55, slot:tag 44, edge:hook 43, lexReading:standIn 22, shared:scale 22, shared:distribute 20, hookJob:resume 17, lexReading:standInBack 7, carry:channel 5, shared:collective 4, others 16), the rest `noRow`.
+After phase 5 the sweep leaves 113 `unused` readings: slot:adj 34, shared:scale 28, lexReading:standIn 25, hookJob:resume 17, shared:distribute 15, edge:hook 9, lexReading:standInBack 7, lexReading:number 5, carry:notional 3, edge:polar 2, and 1 or 2 each for slot:grounds, overlay:pairing:w, anaphor:content, overlay:likeness:g, unit:h, hookJob:extraNoun, shared:equative, lexReading:sake:g, shared:kind, overlay:clause_hinge:th. `slot:adj` shows up only now: readings a linker or tag stopped before now get that far. Nobody has triaged it.
 
 ## Decided
 
-User, 2026-11-19 (D7–D10) and 2026-11-20 (D21, D22), each as recommended. D1–D6 and D11–D20 are built and live in [solver.md](../../meta/solver.md#translation-table); the numbers of the rest are kept.
+User, 2026-11-19 (D7–D10) and 2026-11-20 (D21, D22), each as recommended. Every decision but D10 is built and lives in [solver.md](../../meta/solver.md#translation-table); the numbers are kept.
 
-7. **`ue`** denies each listed item (the classification row: "as `u`"). The outside item that holds adds no rule, as open `aem` adds none.
-8. **Channel stances on your own claim** (`thebam`, `th_N`, `th#N`, `th@+95`, `th-e-`) take row 1, with the frame in `notes`, like row 16 (`evidentiality.md#evidentiality`: "the listener always knows what your claim rests on"). Not R3-7's estimate row: these name sources, not likelihoods.
-9. **Two denial lists in one clause** deny the joint substitution, `neg(T[a][b])`.
 10. **The fill job.** Cautious answers by default, brave with `--possible`; one `zar` with several fillers lists them all; no filler is *unknown* unless `closedWorld` gives *nobody*; `…er` is an existence yes or no; `gar` answers from `isa` only until named details are encoded; *why* binds `C` from `cause(C, Out)` only, not a met *if*. When, where, whose and how wait for detail-term rows.
-21. **`match()` compares SHARED words** (open decision 4 (a)). The scale word, a factor and `-l` / `-m` are compared when a question is matched, a matcher rule in [matching](../../meta/interpreter.md#matching), so a rank or tie question on one scale never fits a reading on another; `ratio(..)` is then pooled for questions. Fitting stays `match()`'s job; the solver matches no family by itself.
-22. **A place on a scale** (open decision 5 (a)). `zahelan zol wrogel gelazem` (*Ahelan is the third biggest*, `comparative-arity.md#place-on-a-scale`) claims `place(S, A, N)`. Place 1 is `most(S, A)`; one member holds one place per scale, so two places for the same member clash (and place N > 1 clashes with `most(S, A)`). It claims no `more(..)` against named members, since the set it ranks in is unstated: *is Ahelan bigger than Azozon?* stays *unknown*.
 
 ## Implementation plan
 
-Run with subagents ([running with subagents](../../meta/procedures/proposals.md#running-with-subagents)); phases 1 to 4 are done, two phases remain. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Every unit runs in sequence: they share `translate.ts`, its tests and `solver.md`.
+Run with subagents ([running with subagents](../../meta/procedures/proposals.md#running-with-subagents)); phases 1 to 5 are done, two phases remain. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Every unit runs in sequence: they share `translate.ts`, its tests and `solver.md`.
 
-**Budget** (user, 2026-11-19): each phase spends about what phase 2 did, five drafting units of about 40 tool calls and 110k–140k subagent tokens each. A build unit costs more per row than a drafting unit (code, goldens, tests, page sentences), so each build unit takes about four to eight rows, and each phase five or six units, the lighter units (FX, P1, S1) filling the sixth place.
+**Budget** (user, 2026-11-19; revised 2026-11-20). Phase 5's build units ran 54 to 88 tool calls and 97k to 176k subagent tokens each, and the session ran short after three of them. Most of the overrun went on start-up reads (`translate.ts`, `solver.md`) and on tools each unit rebuilt (a sweep counter, fixture wiring, classification-row lookups); T2 builds those once. Each phase now takes three units. A build unit that passes about 60 tool calls with more than a few edits left stops and hands back; the orchestrator starts a fresh subagent for the rest. Briefs carry only the [Design](#design) bullets a unit builds on, not the whole section.
 
-**Every build unit** adds its confirmed rows to `translate.ts` with golden programs and `solve.test.ts` cases; moves its rows' `draft-*.txt` cases into the `solve-*.txt` of the same area (`solve-holders.txt`, `solve-because.txt`, `solve-say.txt`, `solve-maybe.txt`, `solve-lists.txt`, `solve-hinges.txt`), or `git mv`s a draft to a new `solve-*.txt` when no file fits, and deletes an emptied draft with `git rm` (a `solve-*` fixture holds only cases that translate whole; a case still left is tested in `accounting.test.ts`); adds its rows to the translation table in [solver.md](../../meta/solver.md#translation-table) and removes them from the edge; and writes each page sentence its rows name on that page (the [doc-style checklist](../../meta/doc-style.md#checklist) applies; S1 reviews it). Its brief quotes its rows, the settled decisions they use and its rows' findings, from [Confirmed rows](#confirmed-rows). Its report gives the sweep's `unused` count by part key.
+**Every build unit** adds its confirmed rows to `translate.ts` with golden programs and `solve.test.ts` cases; moves its rows' `draft-*.txt` cases into the `solve-*.txt` of the same area, or `git mv`s a draft to a new `solve-*.txt` when no file fits, and deletes an emptied draft with `git rm` (a `solve-*` fixture holds only cases that translate whole; a case still left is tested in `accounting.test.ts`); adds its rows to the translation table in [solver.md](../../meta/solver.md#translation-table) and removes them from the edge; and writes each page sentence its rows name on that page (the [doc-style checklist](../../meta/doc-style.md#checklist) applies; S1 reviews it). Its brief quotes its rows, the settled decisions they use and its rows' findings, from [Confirmed rows](#confirmed-rows). Its report gives the sweep's `unused` count by part key.
 
 **Every build unit may edit:** `src/interpret/translate.ts`, `src/interpret/solve.ts` (only where a row changes a verdict or reply), their tests, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`, `docs/meta/solver.md`, the grammar pages its rows' page sentences name. A unit's own **May edit:** line adds to this.
 
-### Carried into phases 5 and 6
+### Carried into phases 6 and 7
 
-- **B4b:** R4c-5 marks the SHARED hook's `hookJob` frame (R4c finding 3).
-- **B6a:** k14 (`draft-holders.txt`, its only case, a topic-pronoun holder) is left only for `unit:linker`; R4d-1 clears it.
-- **B6b:** the period form of a hinge condition (`thohem blarl. zalazun vezuyol.`, `slot:grounds`) is left by every hinge row; decide whether R4d-8's stand-in row covers it, or report it for the edge. A `blarth` condition that points back to a denied sentence is left `noRow overlay:clause_hinge:th`.
+- **B6b:** the period form of a hinge condition (`thohem blarl. zalazun vezuyol.`, `slot:grounds`) is left by every hinge row; decide whether R4d-8's stand-in row covers it, or report it for the edge. A `blarth` condition that points back to a denied sentence is left `noRow overlay:clause_hinge:th`; report it for the edge unless R4d-8 covers it as written.
 - **B6c:** R4e finding 5 (hg11).
 - **S1:** besides the changed-sections list, the R4b-4 sentence in `because-and-iff.md#choosing-a-hinge` says "holder", which that band teaches later, with no link.
 - **For the edge at the end** (no row; fold into [solver.md](../../meta/solver.md#the-edge) when the proposal closes, beside [Outside this proposal](#outside-this-proposal)):
@@ -56,41 +52,40 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
   - zones: a say-word zone with a universal, restrictor or hinge; `zuam` / `zul` with a zone; `huam` or listed exceptions with a zone; *only if* under a zone; a denied hinge with a zone; the fragment `uom hwudum` (`say-reasons.md`)
   - MAY: `huam` under MAY; `hal` / `huam` over MAY; listed exceptions with MAY over a restrictor; open `zuam` and *no K* with no verb under MAY; MAY with a say word, universal or restrictor beside another frame; a carried holder with MAY beside a hinge; row 6's forward rule on a MAY condition reads `holds(neg(may(P)))`, which nothing produces
   - universals: with MAY on the condition, a universal hinge's *only if* half has no back rule; hg23 (a denied universal hinge); bc36 (tag `zwar`, `slot:tag`)
-  - rank: an open tie with a factor (`zoem`); a factor on a tie of three or with a verb; `zaol` with one name or a verb; any frame on a rank shape other than R1-8
+  - rank: an open tie with a factor (`zoem`); a factor on a tie of three or with a verb; `zaol` with one name or a verb; any frame on a rank shape other than R1-8; `zuol` (a superlative or place from the bottom, `noRow joinSeries:uo`); a place with a verb; *is Ahelan the third biggest?* after *Ahelan is the biggest* answers unknown (no row denies a place from `most`; the two claims clash)
+  - lists: the likeness term drops its `bl-` model (`zazozon gewem blalazun.` gives `isa(azozo, ewe)`), so with three or more members the pairs pool into one term; a `zam` list brings in no new member (`zodozel zogozel zam gegunum blazozon.`); named members with a `bl-` likeness model (`zazozon zalazun zal gewem blagayul guzemel.`); a SHARED number word and `dar` with a resume (`zazozon zalazun zal growamol.`, `zalazun dar godozer gubulel vayebel.`); `theyomazozon thrawal` (holder + certainty, `noRow frameCombination`); `el bual gamahal` (`unused shared:kind`)
+  - links: a polar verdict on a reading with frames, a list, a blank, a clause or a quote (`edge:polar`); `xahom` between claims with frames or lists is a note only; a hinge inside a *tell* dependent (`… darl zalazun vowurol thahum blarl …`)
   - `zazozon guzemel vul.` reads `vul` as the verb *no*, not a denial of the adjective claim (B3c); check how the grammar denies an adjective predication before calling it a reader bug
 
-### Phase 5: lists, rank matching, links
+### Phase 6: tooling, links that point back, joined verbs
 
-**B4b Lists and stance numbers.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4c-3 to R4c-8 (D7, D8, D9; SHARED details after a join; likeness; collective `-x`); R4c decisions 5 (verbless lists left with reason `fragment`), 6 (the evidence clause claimed, with `grounds(E, C)`) and 8 (a SHARED number word stays left). Also fix the throw: `translate()` crashes on `zazozon dugavalx grodol oel growal vayebel.` (`open-ranges.md`) in `inRange` / `compareValues`; then make the sweep in `accounting.test.ts` fail on a throw instead of skipping it.
+**T2 Unit tooling.**  
+`proposal-worker`, `model: sonnet`, effort `high`.  
+Build once what each phase 5 unit rebuilt or hunted for:
+1. `npm run sweep`: runs the walk that `src/interpret/accounting.test.ts` runs (shared from one module, not copied) and prints left readings by reason and part key, `unused` by part key, and throws. `--save` writes the counts to a `tmp/state/` file through `tmpPath()`; `--diff` prints only the keys whose count changed since the save. Six units each wrote a `tmp/scratch/*-sweep.ts` for this.
+2. A TypeScript mode for `npm run outline`: a `.ts` file's top-level functions, classes, types and consts with line ranges, so a unit reads only the part of `translate.ts` (about 2,300 lines) it edits.
+3. `npm run class-row -- <key> …`: each classification-table row of `docs/meta/interpreter.md` for a part key (such as `joinSeries:ue`), with its line number and its `notes` cell.
+4. A paragraph in [solver.md](../../meta/solver.md) by the Files line: how a `solve-*.txt` fixture is registered in `solve.test.ts`, how its `.lp` golden is written and regenerated, and that a case still left belongs in `accounting.test.ts`.
 
-**B4c Matching SHARED words; a place on a scale.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-D21 and D22. First D21: `match()` compares the SHARED words, `ratio(..)` pooled for questions, with tests that a rank, tie or ratio question on another scale does not fit; then D22's row, its fixture cases in `solve-lists.txt`, and its page sentence on `comparative-arity.md#place-on-a-scale` if the page does not already say that a place rules out another. B4a built rank in `ranked()` (`translate.ts`); B4b runs first.  
-**May edit:** as every build unit, plus `src/interpret/match.ts` and `docs/meta/interpreter.md` (the matching section only).
-
-**B6a Links that add no term.**  
-`proposal-worker`, `model: opus`, effort `high`.  
-R4d-1 to R4d-5; R4d decisions O-1 (only `xahom` adds `cause(Prior, Next)`), O-4 (`yaor` claims, *for now* in notes) and O-5 (taking up an option is a note). The `unit:linker` row in the classification table gets a note that topic words and agenda numbers share the key.  
-**May edit:** as every build unit, plus `docs/meta/interpreter.md` (the `unit:linker` row only).
+Tests beside each script. Its report names the commands, one line each, for the rule digest and for the `AGENTS.md` tooling notes; the orchestrator adds the digest line before B6b and applies the `AGENTS.md` lines.  
+**May edit:** `scripts/`, `package.json`, `src/interpret/accounting.test.ts` and a new module under `src/interpret/` for the shared walk, `docs/meta/solver.md` (the fixture paragraph and the CLI section).
 
 **B6b Links that point back.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-R4d-6 to R4d-8; R4d decisions O-2 (*instead* drops the replaced reading) and O-3 (*except* narrows the general claim; the page sentence goes on `hooks.md`). First the reader gaps: `hookJob:resume` gets its `to` and landmark; `standInBack` takes the latest content of its kind (`durth`, `derth`, `dorth`), not always the previous sentence; `el`, `em`, `ul`, `um` hooks get a `to`. Table fragments with nothing after a stand-in (`herom blarl`, `ul barl`) take reason `fragment` (B4b's).  
-**May edit:** as every build unit, plus `src/interpret/read.ts` (those hook and stand-in fields only).
-
-**Order:** B4b, B4c, B6a, B6b. Then consolidate this proposal and stop.
-
-### Phase 6: joined verbs, fill; style
+R4d-6 to R4d-8; R4d decisions O-2 (*instead* drops the replaced reading) and O-3 (*except* narrows the general claim; the page sentence goes on `hooks.md`, in the discourse-hooks section: the general claim stays, minus the members the exception names). First the reader gaps, as their own step with `read.ts` tests: `hookJob:resume` gets its `to` and landmark; `standInBack` takes the latest content of its kind (`durth`, `derth`, `dorth`), not always the previous sentence; `el`, `em`, `ul`, `um` hooks get a `to`. If a gap needs a design beyond a `to` and a landmark, or the reader cannot mark the excepted members without new grammar, stop after it and hand back. Table fragments with nothing after a stand-in (`herom blarl`, `ul barl`) take the `fragment` reason. Fixtures: lk28 to lk33 and lk37 to lk39 into `solve-links.txt` (one log) or `solve.test.ts`. Its report lists the edge items it leaves.  
+**May edit:** as every build unit, plus `src/interpret/read.ts` (those hook and stand-in fields only), `docs/meta/interpreter.md` (the links-table rows for the `to` fields, and the `notes` cell of rows its rows name).
 
 **B6c Joined verbs and NOTIONAL.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-R4d-9 and R4d-10 (a `val` verb list claims each verb; *respectively*), with the verb list counted as an accounting part; R4d decision O-6 (NOTIONAL is a wrap, `view(notional, T)`, carried readings too, never `holds(T)`). R4e finding 5 (`thanam thohem thul blarl`, hg11) builds here if B4b's channel row says what denying DEDUCED adds.
+R4d-9 and R4d-10 (a `val` verb list claims each verb; *respectively*), with the verb list counted as an accounting part; R4d decision O-6 (NOTIONAL is a wrap, `view(notional, T)`, carried readings too, never `holds(T)`). R4e finding 5 (`thanam thohem thul blarl`, hg11) builds here if the channel rows (solver.md rows 25–31) say what denying DEDUCED adds. Fixtures: lk34 to lk36 and lk41.
+
+**Order:** T2, B6b, B6c. Then consolidate this proposal and stop.
+
+### Phase 7: fill; style
 
 **B5a The fill job.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-R4c-9 to R4c-13 (D10) and R4c decision 7 (`…ur` / `…or` answer `beyond` for now): `fill(log, question, options)` in `solve.ts`, with its `solve.test.ts` cases from `draft-fill.txt`, and the Jobs section of [solver.md](../../meta/solver.md#jobs). Its report gives `fill`'s signature and result shape, which B5b is briefed from.
+R4c-9 to R4c-13 (D10) and R4c decision 7 (`…ur` / `…or` answer `beyond` for now): `fill(log, question, options)` in `solve.ts`, with its `solve.test.ts` cases from `draft-fill.txt`, and the Jobs section of [solver.md](../../meta/solver.md#jobs). Verbless lists are left `fragment` (phase 5), later read as replies to a fill question. Its report gives `fill`'s signature and result shape, which B5b is briefed from.
 
 **B5b Fill wiring.**  
 `proposal-worker`, `model: opus`, effort `medium`.  
@@ -102,9 +97,9 @@ Export `fill` from `solve-browser.ts` and `browser.ts`; `reading.mjs solve` and 
 The `npm run changed-sections -- <rev>` list, where `<rev>` is `9e38c73d`, the commit before F1's.  
 **May edit:** the listed sections.
 
-**Order:** B6c, B5a, B5b, S1. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), folding anything left into [solver.md](../../meta/solver.md#the-edge).
+**Order:** B5a, B5b, S1. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), folding anything left into [solver.md](../../meta/solver.md#the-edge).
 
-**Running phases 5 and 6.** Before each build unit the orchestrator runs that unit's draft cases through one `probe` file and appends the result to the brief. A unit that passes about 40 tool calls with more than a few edits left stops and hands back; the orchestrator starts a fresh subagent for the rest.
+**Running phases 6 and 7.** Before each build unit the orchestrator runs that unit's draft cases through one `probe` file and appends the result to the brief.
 
 ### Rule digest (pasted into every brief)
 
@@ -157,67 +152,19 @@ Full rules a subagent may open if the digest does not settle a question: [solver
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` after each unit, before its commit.
 - Final gate, at the end of phase 6: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
-- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 5 makes four unit commits and a consolidation commit; phase 6 four unit commits and a last one deleting this proposal.
+- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 6 makes three unit commits and a consolidation commit; phase 7 three unit commits and a last one deleting this proposal.
 
 ## Confirmed rows
 
-Drafted in phase 2 (units R4a to R4e) and confirmed by the user, 2026-11-19; the rows phases 3 and 4 built are gone from here and live in [solver.md](../../meta/solver.md#translation-table). Each row's **Fixtures** are in `src/interpret/fixtures/draft-*.txt` (`draft-lists`, `-fill`, `-links`, `-hinges`), with the verdict the row should give and the verdict before the build. [Settled decisions](#settled-decisions), at the end, are part of the rows they name; each unit's findings feed the unit that builds its rows ([Implementation plan](#implementation-plan) names it).
+Drafted in phase 2 (units R4a to R4e) and confirmed by the user, 2026-11-19; the rows phases 3 to 5 built are gone from here and live in [solver.md](../../meta/solver.md#translation-table). Each row's **Fixtures** are in `src/interpret/fixtures/draft-*.txt` (`draft-lists`, `-fill`, `-links`, `-hinges`), with the verdict the row should give and the verdict before the build. [Settled decisions](#settled-decisions), at the end, are part of the rows they name; each unit's findings feed the unit that builds its rows ([Implementation plan](#implementation-plan) names it).
 
 ### Outside this proposal
 
 Left groups the drafts met that are host policies or other subsystems: CAUSE `thewom` before a hinge, `/h/` hinges, sake words with MAY, `stimulus:g`, nested hinges.
 
-### R4c drafts: lists, stance numbers, the fill job
+### R4c drafts: the fill job
 
-Fixtures: `src/interpret/fixtures/draft-lists.txt` (l1–l10, n1–n4), `src/interpret/fixtures/draft-fill.txt` (f1–f10). Probe: scratchpad `r4c-probe.txt` / `r4c-probe.out`. Rank with two names already translates (`holds(more(dt("slot:adj","gamahum"), azozo, alazu))`), so it is not drafted; only its open edges are (Open decisions 1–3).
-
-#### R4c-3: `ue` denies each listed item
-- **Kind:** decision D7
-- **Covers:** `noRow joinSeries:ue` with a verb (lists-37)
-- **Concludes:** row 2: `holds(neg(T[item])) :- on(Id).` per listed item; the outside item that holds adds no rule (as open `aem`). Marks the `joinSeries:ue` frame used. A verbless `ue` list stays left (Open decision 5).
-- **Classification:** `joinSeries:ue` already reads "List reach, as `u`"; add "row 2 on each item; nothing for the outside item (D7)".
-- **Anchor:** `set-joins.md#full-single-item-and-standalone-inventories`: "`…uel` (`zuel` / …) | closed invert-menu of one | *anything but X*"; D7.
-- **Fixtures:** l7: `? yel zalazun dobodel vagedal.` → no (now: unknown, `noRow joinSeries:ue`)
-
-#### R4c-4: Two denial lists in one clause
-- **Kind:** decision D9
-- **Covers:** the edge note "Two denial lists in one clause have no row" (`noRow joinSeries:u` on such a clause)
-- **Concludes:** for each pair (a, b) of the two lists' items, `holds(neg(T[a][b])) :- on(Id).` (joint substitution). Marks both `joinSeries:u` frames used. Drops the edge note.
-- **Classification:** `joinSeries:u` (frame:polarity): add "two `u` lists in one clause: every pairing denied, `neg(T[a][b])` (D9)".
-- **Anchor:** **Page sentence** for `joins.md#negation-u`: "Two `u` lists in one clause deny every pairing: `zazozon zalazun zul dodozel dogozel dul vayebel.` is *Neither Azozon nor Alazun sees a dog or a cat.*"
-- **Fixtures:** l8: `? yel zalazun dogozel vayebel.` → no (now: unknown, `noRow joinSeries:u`)
-
-#### R4c-5: SHARED details after a join, beyond a plain `/ɡ/`
-- **Kind:** copy
-- **Covers:** the Triage item *SHARED hook after a join* (`unused hookJob:genitive`, the list's `sharedDetails` with role `distribute`); `unused shared:distribute` with a `/ɡ/` that hosts a `/b/` (`zodozel zogozel zam gegunum blazozon.`, `zalazun degodel dededel dal gegunum blahelan vagedal.`) and an `/h/` after a verb join (`zazozon vowurol veruvol val hahunom.`)
-- **Concludes:** after a noun join, each first-mention member gets `detail(nm(Id, P), dt(Key, Words))` as row 14 gives a SHARED adjective, and the claim stays row 11's per member; after a verb join, the `/h/`, `/d/` or `/b/` goes into each verb's term (`holds(T[v])` per verb, each with the shared part). Marks the `sharedDetails` entry and the hook's `hookJob` frame used.
-- **Classification:** `shared:distribute` (link) already states the hook; add "a hosted `/ɡ/` + `/b/` and a verb join's shared `/d/`, `/b/` or `/h/`: a detail of each member (row 14) / a part of each verb's term".
-- **Anchor:** `list-structure.md#shared-after-the-join`: "A hook right after the join word is SHARED, like an adjective there: it belongs to every item."; "A `/ɡ/` word that hosts a `/b/` is SHARED the same way"; "verbs | a `/d/` object, a recipient `/b/`, or an `/h/` adverb: every verb takes it".
-- **Fixtures:** l9: `? yel zogozel om bahelan vowurol.` → yes (now: unknown, `unused hookJob:genitive`)
-
-#### R4c-6: Likeness among the members (`zal gewem`, no `bl-`)
-- **Kind:** copy
-- **Covers:** `unused shared:distribute` with `overlay:likeness:g` (lists-16, lists-17; `zazozon zalazun zal gewem blagayul guzemel.` has a `bl-` model and is the per-member detail of R4c-5)
-- **Concludes:** for each ordered pair of members A ≠ B, the term `zazozon gewem blalazun.` now gives, with A as `z` and B as the hosted `bl-`: `holds(T[A][B]) :- on(Id).` Marks the link used.
-- **Classification:** `shared:distribute` (link): add "a hosted relation with no `bl-` word: each member to each other member".
-- **Anchor:** `relations.md` (beginner, the likeness section): "With no `bl-` word after a joined subject, the model is the other members: each one resembles the others. … Every hosted relation follows this rule."
-- **Fixtures:** probe L13 only (`zazozon zalazun zal gewem.` `? yel zazozon gewem blalazun.` → yes; now: unknown, `unused shared:distribute`); not in the fixture file, since `gewem` is not this unit's row family
-
-#### R4c-7: Collective SHARED adjective (`/ɡ/`…`-x`)
-- **Kind:** copy
-- **Covers:** `unused shared:collective` (lists-23, lists-27, lists-28)
-- **Concludes:** `holds(isa(ls(Id, z), K)) :- on(Id).`, the list term as one unit, with no `member` facts and no `isa` per member (as row 11 already does for a collective `-x` verb). Marks the `shared:collective` link and the list used.
-- **Classification:** `shared:collective` (link): add "the list as one, `isa(ls(..), K)`; no member facts".
-- **Anchor:** `collectives.md#adjectives-g`: "Put `-x` on the adjective, after its ending, when the property holds of the noun's group as one unit."
-- **Fixtures:** l10: `? yel zobonol garolem.` → unknown (now: yes from the question alone; Findings 1)
-
-#### R4c-8: Channel stances on your own claim
-- **Kind:** decision D8
-- **Covers:** `noRow overlay:evidential:th` with the channel as the only frame (136 readings) or with a stance number (`stance:lexReading:number:th`, 4): lists-2, lists-7, lists-8, lists-9, lists-18, lists-25, lists-26, lists-30, lists-34; and the carried channel (`unused carry:channel`) on later bare sentences
-- **Concludes:** row 1, `holds(T) :- on(Id).`, with the channel frame, its `bl-` source and any stance number (`th_N`, `th#N`, `th@+95`, `th-e-`) kept in `Translation.notes`, as row 16. A later bare sentence the channel carries to is row 1 too, its `carriedFrame` link marked used. Marks the `overlay:evidential:th` frame (and the number stance) used. Not row 19: these name sources, not likelihoods.
-- **Classification:** `overlay:evidential:th` (frame:stance): add "on your own claim, row 1 with the frame in `notes` (D8)"; the `carriedFrame` link for a channel: "row 1 on the later sentence".
-- **Anchor:** `evidentiality.md#evidentiality`: "the listener always knows what your claim rests on"; `evidentiality.md#carry-forward`: "Once you put a channel on a claim, your later claims with no channel keep it"; D8.
-- **Fixtures:** n1, n2: `? yel zalazun vudurul.` → yes (now: unknown); n3: `? yel zazozon vezuvel.` → yes (now: unknown); n1 + n4: clash (now: no clash; n4 left `unused carry:channel` when it follows a channel)
+Fixtures: `src/interpret/fixtures/draft-fill.txt` (f1–f10).
 
 #### R4c-9: The fill job
 - **Kind:** decision D10
@@ -260,58 +207,9 @@ Fixtures: `src/interpret/fixtures/draft-lists.txt` (l1–l10, n1–n4), `src/int
 - **Anchor:** `fill-ask-jobs.md#why`: "To ask *why?*, write a condition word …, then the blank `blar`."; D10.
 - **Fixtures:** f9: `? yel thahum blar zazozon vowurol.` → zalazun vezuvel; f5 + f1: `? yel thahum blar zalazun vehohel.` → unknown (now: beyond, `fillAsk`)
 
-#### R4c findings
-
-1. **A question answers itself.** `yel zodozel gamahum.` and `yel zobonol garolem.` answer `yes` with an unrelated log (`zazozon vowurol.`; probe E1): the first-mention subject's witness facts seem to carry the asked predicate. Outside this unit; it masks R4c-7's verdict.
-2. **Collective adjective gets member facts.** `zobonol zadorol zal garolemx.` translates with `member(ls(..), nm(..), 1..2)`; row 11 gives a collective `-x` verb none. R4c-7 needs the same for `-x` adjectives (`claimMemberLists` or the collective step).
-3. **SHARED hook leftover key** is `unused hookJob:genitive`, not `shared:distribute`: R4c-5 must mark the hook's `hookJob` frame.
-4. **Carried channel.** A bare sentence after a channel sentence is left `unused carry:channel`; R4c-8 covers it, which also gives own-claim clashes across sentences (n1 + n4 in the fixture order).
-5. **Stance-number spellings.** No spelled `th_N`, `th@+95` or `th-e-` example was in this unit's sample; fixtures cover `thebam`, `thebal`, `thevum` and `th#N` (`throgel`, `throdol`). Phase 3 should add one of each from `number-roles.md` / `special-values.md`.
-6. **Outside this area:** `theyomazozon thrawal` (lists-40, `noRow frameCombination`, holder + certainty); `el bual gamahal` (lists-39, `unused shared:kind`).
-
 ### R4d: links (drafted 2026-11-19)
 
-Fixtures: `src/interpret/fixtures/draft-links.txt` (`lk1` to `lk41`). Probe file: scratchpad `r4d-probe.txt`. Rows are ordered by sweep count; kinds that share the rule "marks the link used, keeps the clause" are grouped.
-
-#### R4d-1: `/x/` continue words: topic words, agenda numbers, sentence linkers
-- **Kind:** copy
-- **Covers:** `unit:linker` (82: about 58 topic words such as `xazozon`, `xazozor`, `xodozel`, `xuwen`, `x@<Sam>`, `x[odoze]`, agenda numbers `xrodol`, `x#-2`, `xrowul`; about 24 linkers `xahom`, `xezem`, `xezel`, `xahol`, `xugohul`, …), `body:topicMarker` `glegol` beside a span topic; `links-5`, `-6`, `-7`, `-17`, `-18`, `-23`, `-29`, `-35`, `-41` to `-48`, `-61` to `-65`
-- **Concludes:** nothing new: the body takes its own rows (row 1 and the rest), and a reading that is only a topic word writes nothing and is not left. A linker adds `linker(Word, To)` to `Translation.notes`, so a reply can mention it. The accounting marks the `unit:linker` link (and `body:topicMarker`) used. The topic pronoun's binding stays `anaphor:topic` (B1); a carried frame stays the carry rows' (`evidentiality.md#carry-forward`: the linker neither ends nor starts it)
-- **Classification:** `unit:linker` (link), unchanged class; note to add: "On any other `/x/` word, a topic word or agenda number (`topic.md#topic`): links nothing to the claim"
-- **Anchor:** `sentence-linkers.md#sentence-linkers`: "A linker reaches back to one sentence: the one that ends at the period before it."; `evidentiality.md#deduction`: "A linker is not a channel, so the conclusion keeps your frame: a deduction from a report is still REPORTED."; `topic.md#topic`: "it may stand alone as a whole sentence to announce a topic before saying anything about it"
-- **Fixtures:** `lk1` yes (now unknown); `lk2` yes / no (now unknown / no); `lk3` yes (now unknown); `lk4` yes, both readings kept (now unknown, both left); `lk5` yes once B1 lands (now unknown); `lk6` unknown, left only for `edge:force` (now unknown); `k14` in `draft-holders.txt` also clears `unit:linker`. *Therefore* adding a cause is O-1
-
-#### R4d-2: a yes / no verdict takes the claim it answers
-- **Kind:** copy
-- **Covers:** `edge:polar` with `ao` / `uo` on `-l` / `-m` (`yaol`, `yaom`, `yuol`, `yuom`; about 32 of 55) whose `to` reading is a yes / no question or a statement; `links-14`, `-15`, `-16`
-- **Concludes:** with R the `to` reading and T its claim term, translated at R's sites (`Translation.site(R)`, so the question's `zawan` stays the answerer): `ao` gives `holds(T) :- on(Id).`, `uo` gives row 2's `holds(neg(T)) :- on(Id).`; a first-mention noun in T gets the answer's own constants (row 14; under `uo`, row 2 on its kind). A body after the particle takes row 1 as well (classification: "a body after it is the answer"). The ending goes to `Translation.notes`. Marks the `edge:polar` link used. A polar word on a fill question (R has blanks) stays `left` `unused`
-- **Classification:** `edge:polar` (link), unchanged
-- **Anchor:** `questions.md#polar-particle`: "`yaol` / soft `yaom` | the claim matches" and "`yuol` / soft `yuom` | the claim does not match"; "To back up your own statement with *yes*, give `yaol` a turn of its own"; `sentence-linkers.md#past-a-period`: "`-l` vs `-m` on the act word / *yes* / *no* is how firmly you stand behind it"
-- **Fixtures:** `lk7`+`lk8` yes; `lk7`+`lk9` no; `lk7`+`lk10` yes; `lk7`+`lk11` yes (all now unknown); `lk12`+`lk13` clash on `walk(z(alazun))` (now no clash); `lk14` yes, no clash (now yes, t:1.0 left)
-
-#### R4d-3: a polar word with no verdict claims nothing
-- **Kind:** copy
-- **Covers:** `edge:polar` with `ua` (`yual`, `yuam`, `yuar`) and `oe` (`yoel`, `yoem`, `yoer`) on any ending, and any polar word whose `to` reading is a command or that has no `to`
-- **Concludes:** no rule; marks the `edge:polar` link used, so the turn is not left; T stays open (`couldBe` yes). The word goes to `Translation.notes`
-- **Classification:** `edge:polar` (link), unchanged
-- **Anchor:** `polar-inventory.md#polar-endings`: "`yoel`, `yoem` and `yoer` decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame."; `polar-inventory.md`: "`yual` … judges the question, not the speaker's willingness"; for a command, `polar-inventory.md#answer-command` (comply / refuse: no claim; force has no row)
-- **Fixtures:** `lk15`+`lk16` unknown, couldBe yes, `lk16` not left (now unknown, left); `lk17`+`lk18` unknown, `lk18` not left (now unknown, left)
-
-#### R4d-4: tags mark their link used
-- **Kind:** copy
-- **Covers:** `slot:tag` (44: `zwal` 34, `zwol` 10, `dwol` 5, `zwan` 3, `zwon` 1); `links-22`, `-45`, `-51` to `-60`, `-66` to `-72`
-- **Concludes:** nothing new: the tagged phrase takes its own row (a name, a first-mention noun, a list term, or row 8's template), and a recall binds through its anaphor link, as `zwar` already does. Marks `slot:tag` used once the term it names is written. A bound tag on a `zual` / `zuam` / `zul` fence names the template's member: a recall inside its reach is the `X` of `T[X]` (row 8)
-- **Classification:** `slot:tag` (link), unchanged
-- **Anchor:** `tag-pronouns.md#naming-with-a-tag`: "A tag with `-l` right after a phrase in the same role names that phrase"; `universals-domains.md#bound-tags`: "binds: it names each member in turn, not the group"
-- **Fixtures:** `lk19` `? zodozel dugedel vayebel.` yes (now unknown, t:0.0 left); `lk20`+`lk21` yes (now unknown); `lk22` yes through row 11 (now unknown). A bound tag in a universal hinge (`zual gogozel zwal vezuvel thohem blarl zwar guzemel.`) also needs R4b's universal hinge
-
-#### R4d-5: a discourse hook that adds, rewords or returns keeps the clause
-- **Kind:** copy
-- **Covers:** `edge:hook` and `hookJob:discourse` with `a` (`al`, `am`, `ar`), `o` (`ol`, `om`, `or`), `ao` (`aol`, `aom`), `ae` (`ael`, `aem`) and `er` (about 33 of 41); `links-11`, `-28`, `-31`, `-32`
-- **Concludes:** row 1 on the body; the hook to `Translation.notes`; marks the link used. The prior reading is untouched
-- **Classification:** `edge:hook` (link, read as `hookJob:discourse`), unchanged
-- **Anchor:** `hooks.md#discourse-hooks`: "`al …` | add another claim you stand behind" and "`ol …` | say the last claim another way"; `discourse-hooks.md#discourse`: "`er …` *Anyway* leaves the side topic standing and returns to the main one"; `discourse-hooks.md#stacked-discourse`: "`ael …` … this sentence is one case of what you just said"
-- **Fixtures:** `lk23` to `lk27`, each yes on its own clause (now unknown, left). `el` / `em` / `ur` are O-2, `ul` / `um` O-3
+Fixtures: `src/interpret/fixtures/draft-links.txt` (`lk28` to `lk41`; the rest moved to `solve-links.txt` in phase 5). Probe file: scratchpad `r4d-probe.txt`. Rows are ordered by sweep count; kinds that share the rule "marks the link used, keeps the clause" are grouped.
 
 #### R4d-6: a restrictor's occasion clause is the marker's data
 - **Kind:** copy
@@ -356,9 +254,8 @@ Fixtures: `src/interpret/fixtures/draft-links.txt` (`lk1` to `lk41`). Probe file
 #### R4d findings
 
 - **Reader gaps.** `hookJob:resume` has no `to` and no landmark (`read.ts` `readHook`), so R4d-7 cannot be built until the resolve stage names the resumed hook's landmark and its reading. `standInBack` always points to the previous sentence (`prevTo`), but `durth` / `derth` / `dorth` stand for the most recent content of their kind (`lk33`: the `durl` dependent `t:0.0/d`). `edge:hook` `el` / `em` / `ul` / `um` carry no `to` (O-2, O-3 need one).
-- **Fragments, not sentences.** About 25 left readings are table fragments: a stand-in with nothing after it (`herom blarl`, `ul barl`, `huxal blarl`, also `slot:grounds`), `ul oel`, `ul ul`, `zarx ar`, `er xazozor`, `glegol x[odoze]`, `x@[onuren alazun]`. No row can use a dangling stand-in; the sweep should skip fragments or leave them with their own reason.
+- **Fragments, not sentences.** About 25 left readings are table fragments: a stand-in with nothing after it (`herom blarl`, `ul barl`, `huxal blarl`, also `slot:grounds`), `ul oel`, `ul ul`, `zarx ar`, `er xazozor`, `glegol x[odoze]`, `x@[onuren alazun]`. No row can use a dangling stand-in; B6b gives them the `fragment` reason.
 - **Verb lists are never split.** `zazozon vowurol veruvol val.` answers *does Azozon run?* unknown and is not left, since a verb list is no part; R4d-9 drafts the split, and the accounting should list a verb list as a `list` part.
-- **Not this area:** `zeyel zar uol boduvul vowurol.` (`unused hookJob:extraNoun` is a SHARED hook after `zar`, R4c-5's shape); `zodozel zogozel zal om bahelan …` (R4c-5); `zazozon vezuyol bahelan balazun bal hwubar.` (`joinSeries:a` in a say word's `b`, R4a); `… darl zalazun vowurol thahum blarl …` (a hinge inside a *tell* dependent, the because area); `carry:channel` (R4c-8).
 
 
 ### R4e: a term for the conditional
@@ -374,34 +271,27 @@ Finding 3 stands as built: rules per reading, the term in each body; pick a gene
 ### Settled decisions
 <a id="settled-decisions"></a>
 
-The user adopted every recommendation below, 2026-11-19, with these notes:
-- **R4c 6:** (a), with the page's wording raising it to high (`evidentiality.md#evidence-clause`: "You state the claim, the strength of your grounds, and the grounds themselves"). `grounds(E, C)` stays apart from `cause`.
-- **R4d O-4:** (a). `yaor` claims in the shared pool, with *for now* and the speaker in the notes. The pool has no per-speaker claims; a per-speaker layer (`said(Speaker, T)`, with `holds(T) :- said(_, T)`) waits for the group-views host policy, and `yaor` and the polar answers (R4d-2) are its first users.
+The user adopted every recommendation below, 2026-11-19.
 
 #### R4c decisions
 
-5. **Verbless lists** (`zobudal zuel.`, `zobonol zabewol zen.`, `zugowal zagorol zomobul zer.`, `zahelan der vagedal.` has a verb but `…er` with no items): no claim term. Options: (a) a fragment stays left with its own reason (`fragment`), later read as a reply to a fill question; (b) existence (`isa`) per item. **Recommendation:** **(medium)** (a): the pages give these as offers and names, not claims (`rank-joins.md`: "The invert `ue` offers a free choice outside the list"). Statement `…er` (*eats anything*) needs its own decision: likely an open universal (row 10), low.
-6. **Evidence clause** (`zalazun vabuvul theyom blarl zazozon vozumul.`, lists-31, lists-33; standalone `theyom blarl`, lists-19 to lists-21): is the grounds sentence also your claim, and what joins them? Options: (a) both row 1, plus data `grounds(E, C)`; (b) only the claim. **Recommendation:** **(low)** (a); settled by the wording of `evidentiality.md#evidence-clause`, not read in this unit.
 7. **`…ur` and `…or` fill questions, and a blank inside `derl` / `darl`.** D10 does not cover them. Options: `…ur` excludes the listed items and items already named in the turn; `…or` fills from `most` / `more`; a `darl` blank fills through `say` / `view`; or `beyond` until decided. **Recommendation:** **(medium)** `beyond` for now, then `…ur` as the listed-blank complement, which the arity table states ("*Other than these?*").
-8. **SHARED number word and `dar` with a resume** (`zazozon zalazun zal growamol.`, `zogozelx zodozelx zal gral`, `zalazun dar godozer gubulel vayebel.`): what a SHARED number says of each member is not stated in this unit's anchors. **Recommendation:** **(low)** leave left; settled by `generations.md` and `resume-sense.md`.
 
 #### R4d decisions
-
-**O-1: does a sentence linker add a term?** `zazozon vowurol. xahom zalazun veruvol.` (*therefore*). The page gives each linker a gloss only ("*therefore* moves forward from the prior claim"; `xahol` "the next claim must hold if the last sentence does"; `xugohul` "the last claim is blocked outright"). Options: (a) notes only for all nine (R4d-1 as drafted); (b) `xahom` adds row 10's `holds(cause(Prior, Next))`, so *why does Alazun run?* cites the walk and *not because* (row 11) can clash with it; `xahol` adds the rule `holds(Next) :- holds(Prior), on(Id).`; contrast and sequence linkers notes only; (c) `xugohul` also denies the prior claim. **Recommendation:** **(medium)** (b) for `xahom` only, (a) for the rest: English *therefore* states a reason and the learner would expect *why?* to find it; a deduction's conclusion is already claimed, so `xahol`'s rule adds nothing a job reads. Reject (c): the page's own example keeps the denied *sleeping* true. Settled by a page sentence on `sentence-linkers.md#sentence-linkers` saying *therefore* gives a reason as *because* does.
 
 **O-2: does *instead* / *never mind* withdraw the last claim?** `zalazun veruvol. el zalazun vezuvel.`; `ur` (*drop the last point*) and `em` the same. Page: "`el …` | this claim replaces the last one". Options: (a) the replaced reading leaves the program (the job's `on` fact off), with a note; (b) keep both and add a one-way attack in `stands`, `att(Id, Last)`; (c) notes only, both claimed. **Recommendation:** **(medium)** (a): *does Alazun run?* should not answer *yes* after the speaker replaced it; (b) still lets `follows` say yes. Needs the reader to give `el` / `em` / `ul` a `to` (only `-r` hooks get one today).
 
 **O-3: what does *except* do to the claim before it?** `zuvayal vowurol. ul zalazun vowurol vul.` Page: "`ul …` | an exception to what was just said". Options: (a) notes only, both claimed (the family's members clash with Alazun's denial once membership reaches him); (b) the prior reading's universal or member rule skips the members the exception names; (c) like O-2, the prior reading leaves. **Recommendation:** **(low)** (b), since an exception should never show as a clash; settled by a page sentence on what `ul …` does to a general claim before it, and how the reader marks the excepted members.
 
-**O-4: does a *for now* polar word claim?** `yaor zazozon vowurol.` Page: "`yaor` takes a claim on board without committing to it" but also "says only that you hold the claim for now". Options: (a) claim as `-l` / `-m` do, `-r` in notes; (b) no claim, as R4d-3. **Recommendation:** **(low)** (a), since the page says the speaker holds the claim and a later reversal shows as a clash the learner can give up; settled by the page saying whether `yaor` asserts.
-
-**O-5: what does taking up or rejecting an option give?** `yael` / `yaem` / `yaer`, `yuel` / `yuem` / `yuer` after an offer or an *or* question. Options: (a) notes only, as R4d-3; (b) on an *or* list question, `yael` claims the offered item and `yuel` denies it. **Recommendation:** **(medium)** (a): accepting an offer is a turn act, not a claim about the world, and "this option" names no item the reader can pick.
-
 **O-6: NOTIONAL and what it carries.** `zazozon theyum vowurol. zazozon vehohel.` leaves `noRow overlay:notional:th` then `unused carry:notional`. Page: "The sentence now describes an imagined scene and makes no claim that it happens"; "The supposition carries, so every step after it stays supposed". Options: (a) a wrap like a view, `holds(view(notional, T))` (ending in notes), carried readings the same, inference inside it as holder rule 4, never `holds(T)`; (b) left `beyond`. **Recommendation:** **(medium)** (a): it keeps a supposition's steps checkable for clashes, as `notional.md` reasons from one, and never leaks into your claims.
 
 ## Open decisions
 
-None.
+Logged in phase 5, 2026-11-20. None blocks phase 6.
+
+1. **A genitive on one noun and on a joined list** (B4b). The reader puts `om bahelan` on the clause after a single noun (`yel zogozel om bahelan vowurol.`) but on each member after a join (`zodozel zogozel zal om bahelan vowurol.`), so the question never fits the log and answers unknown; the fixture asks `yel zogozel vowurol.` instead. Options: (a) the matcher treats a clause-level genitive as a detail of the `z` noun; (b) accept the gap and list it on the edge. **Recommendation:** **(medium)** (a): a learner who says *Ahelan's dog and cat walk* expects *does Ahelan's cat walk?* to answer yes, and the program already writes the detail on each member.
+2. **A ratio asked the other way round** (B4c). `zazozon zalazun zoel gelazem hradol.` (*twice as big*) and `zalazun zazozon zoel gelazem hrudol.` (*half as big*) encode the same `ratio` atom, but a question in one wording against a log in the other answers unknown, since `match()` compares the members in order and the factor. Options: (a) accept it; (b) pool the inverse claim as a second fitting claim. **Recommendation:** **(medium)** (b): a learner who hears *twice as big* expects *is Alazun half as big?* to answer yes, and the atom is already shared, so only matching changes. B4c leaned (a), with no reason given beyond scope.
+3. **`yuor`** (B6a). O-4 names only `yaor`; B6a read it as a rule about the `-r` ending and built `yuor` the same way (the denial, held for now). Options: (a) keep it; (b) `yuor` claims nothing. **Recommendation:** **(medium)** (a): `-r` carries *for now* on both verdicts, and the polar grid stays regular.
 
 ## Background
 
