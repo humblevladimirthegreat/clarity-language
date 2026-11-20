@@ -128,7 +128,7 @@ const RESERVED = new Set([
   "less", "same", "always", "never", "notall", "none", "more", "c", "o", "i", "act", "lit", "pro", "cl", "quote", "speaker",
   "listener", "blank", "not", "view", "say", "via", "to", "grp", "sp", "rules", "unsaid", "interlocutors", "generic", "against",
   "requires", "may", "maybe", "some", "noneof", "notone", "likely", "bans", "cause", "fault", "share", "plan", "channel",
-  "if", "onlyif", "iff", "we", "every", "because", "want", "decision", "grounds",
+  "if", "onlyif", "iff", "we", "every", "because", "want", "decision", "grounds", "place",
 ]);
 
 /** R4b decision 3: the intention adverbs after `uom` and their zone terms (contrary-to.md#contrary-to-stance). */
@@ -275,6 +275,11 @@ const GENERIC = [
   "% Rank and ties (R4c decision 1, R4c-2, D17): a rank one way and the other, or a closed tie and a rank, on one scale.",
   "clash(more(S, B, A)) :- holds(more(S, A, B)), holds(more(S, B, A)).",
   "clash(tie(S, A, B, l)) :- holds(tie(S, A, B, l)), holds(more(S, A, B)).",
+  "% A place on a scale (D22): one place per member and scale, and a place below the top denies the top.",
+  "clash(place(S, A, M)) :- holds(place(S, A, N)), holds(place(S, A, M)), N != M.",
+  "holds(neg(most(S, A))) :- holds(place(S, A, N)), N != rk(1).",
+  "fired(place, neg(most(S, A))) :- holds(place(S, A, N)), N != rk(1).",
+  "used(place, neg(most(S, A)), place(S, A, N)) :- holds(place(S, A, N)), N != rk(1).",
   ...sayRules((t) => t),
   "% An act against a stated ban (R2-9): data, never a clash.",
   ...["", ", X"].flatMap((x) =>
@@ -1193,10 +1198,12 @@ class Translator {
    * - R4c decision 3: three or more before `zol`, `more(S, Xi, Xj)` for each i < j in text order; `zaol` sorts low to
    *   high, so each later name ranks higher (list-structure.md#shared-after-the-join).
    * - R4c-1: one name before `zol`, the superlative `most(S, A)` (comparatives.md#superlatives); a `/w/` degree goes to
-   *   the notes. A place on the scale (`wrodol`, comparative-arity.md#place-on-a-scale) is not the top: no row.
+   *   the notes.
+   * - D22: an ordinal on `/w/` there is a place on the scale, `place(S, A, N)` (comparative-arity.md#place-on-a-scale);
+   *   no `more(..)`, since the set it ranks in is unstated. The generic rules clash two places and deny the top.
    * - R4c-2 (D17): a tie, `tie(S, A, B, E)` per ordered pair, E `l` or `m` (comparatives.md#equatives).
-   * - R4c decision 4: a closed tie of two with a factor is `ratio(S, A, B, V)`, no tie (comparative-arity.md#factor). It is
-   *   not pooled for questions: `match()` reads no SHARED detail, so a tie question would fit it.
+   * - R4c decision 4: a closed tie of two with a factor is `ratio(S, A, B, V)`, no tie (comparative-arity.md#factor);
+   *   D21: pooled for questions, since `match()` compares the scale, the factor and the ending.
    * - R4c decision 2, D17: with a verb the scale is `/h/` and each member's act holds (comparative-arity.md#manner-scale).
    * Beyond R1-8 the clause has no frame: a denied rank and `zom` wait.
    */
@@ -1225,9 +1232,15 @@ class Translator {
     const heads: { text: string; claim: Claim; unasked?: true }[] = [];
     const inner = scale.details ?? [];
     if (series === "o" && scale.values.role === "scale" && n === 1) {
-      if (inner.some((d) => detailNumber(d))) return undefined;
-      heads.push({ text: `most(${this.detail({ ...scale, details: undefined }, ctx)},${names(0)})`, claim });
-      inner.forEach((d) => this.notes.push({ reading: reading.id, frame: d }));
+      const place = inner.length === 1 ? detailNumber(inner[0]!) : undefined;
+      if (place) {
+        if (claim.verb) return undefined;
+        heads.push({ text: `place(${this.detail({ ...scale, details: undefined }, ctx)},${names(0)},${this.value(place)})`, claim });
+      } else {
+        if (inner.some((d) => detailNumber(d))) return undefined;
+        heads.push({ text: `most(${this.detail({ ...scale, details: undefined }, ctx)},${names(0)})`, claim });
+        inner.forEach((d) => this.notes.push({ reading: reading.id, frame: d }));
+      }
     } else if ((series === "o" || (series === "ao" && !claim.verb)) && scale.values.role === "scale" && n >= 2) {
       const s = this.detail(scale, ctx);
       for (let i = 0; i < n; i++)
@@ -1244,7 +1257,7 @@ class Translator {
         const v = this.value(factor);
         if (inverse && !/^v\(-/.test(v)) return undefined;
         const [a, b] = inverse ? [names(1), names(0)] : [names(0), names(1)];
-        heads.push({ text: `ratio(${this.detail({ ...scale, details: undefined }, ctx)},${a},${b},${inverse ? v.replace(/^v\(-/, "v(") : v})`, claim, unasked: true });
+        heads.push({ text: `ratio(${this.detail({ ...scale, details: undefined }, ctx)},${a},${b},${inverse ? v.replace(/^v\(-/, "v(") : v})`, claim });
       } else {
         if (inner.length) return undefined;
         const s = this.detail(scale, ctx);

@@ -37,6 +37,11 @@ clash(view(H, Q)) :- holds(view(H, neg(Q))), holds(view(H, P)), fits(Q, P).
 % Rank and ties (R4c decision 1, R4c-2, D17): a rank one way and the other, or a closed tie and a rank, on one scale.
 clash(more(S, B, A)) :- holds(more(S, A, B)), holds(more(S, B, A)).
 clash(tie(S, A, B, l)) :- holds(tie(S, A, B, l)), holds(more(S, A, B)).
+% A place on a scale (D22): one place per member and scale, and a place below the top denies the top.
+clash(place(S, A, M)) :- holds(place(S, A, N)), holds(place(S, A, M)), N != M.
+holds(neg(most(S, A))) :- holds(place(S, A, N)), N != rk(1).
+fired(place, neg(most(S, A))) :- holds(place(S, A, N)), N != rk(1).
+used(place, neg(most(S, A)), place(S, A, N)) :- holds(place(S, A, N)), N != rk(1).
 % Say words (R2-7): the same party, part, reach and ending, allow or require against forbid; e clashes with nothing.
 clash(say(W, P, R, u, E, T)) :- holds(say(W, P, R, a, E, T)), holds(say(W, P, R, u, E, T)).
 clash(say(W, P, R, u, E, T)) :- holds(say(W, P, R, o, E, T)), holds(say(W, P, R, u, E, T)).

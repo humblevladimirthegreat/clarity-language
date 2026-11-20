@@ -14,10 +14,13 @@
 % t:0.13 = r10
 % t:0.14 = r11
 % t:0.15 = r12
-% t:0.16 = l7
-% t:0.17 = l8
-% t:0.18 = l9
-% t:0.19 = l10
+% t:0.16 = r13
+% t:0.17 = r14
+% t:0.18 = r15
+% t:0.19 = l7
+% t:0.20 = l8
+% t:0.21 = l9
+% t:0.22 = l10
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -32,6 +35,11 @@ clash(view(H, Q)) :- holds(view(H, neg(Q))), holds(view(H, P)), fits(Q, P).
 % Rank and ties (R4c decision 1, R4c-2, D17): a rank one way and the other, or a closed tie and a rank, on one scale.
 clash(more(S, B, A)) :- holds(more(S, A, B)), holds(more(S, B, A)).
 clash(tie(S, A, B, l)) :- holds(tie(S, A, B, l)), holds(more(S, A, B)).
+% A place on a scale (D22): one place per member and scale, and a place below the top denies the top.
+clash(place(S, A, M)) :- holds(place(S, A, N)), holds(place(S, A, M)), N != M.
+holds(neg(most(S, A))) :- holds(place(S, A, N)), N != rk(1).
+fired(place, neg(most(S, A))) :- holds(place(S, A, N)), N != rk(1).
+used(place, neg(most(S, A)), place(S, A, N)) :- holds(place(S, A, N)), N != rk(1).
 % Say words (R2-7): the same party, part, reach and ending, allow or require against forbid; e clashes with nothing.
 clash(say(W, P, R, u, E, T)) :- holds(say(W, P, R, a, E, T)), holds(say(W, P, R, u, E, T)).
 clash(say(W, P, R, u, E, T)) :- holds(say(W, P, R, o, E, T)), holds(say(W, P, R, u, E, T)).
@@ -185,36 +193,48 @@ holds(ratio(dt("slot:adj","gelazem"),azozo,alazu,v(2))) :- on("t:0.15").
 fired("t:0.15",ratio(dt("slot:adj","gelazem"),azozo,alazu,v(2))) :- on("t:0.15").
 % t:0.16
 on("t:0.16").
-holds(neg(ageda(z(alazu),d(obode)))) :- on("t:0.16").
-fired("t:0.16",neg(ageda(z(alazu),d(obode)))) :- on("t:0.16").
+holds(place(dt("slot:adj","gelazem"),ahela,rk(3))) :- on("t:0.16").
+fired("t:0.16",place(dt("slot:adj","gelazem"),ahela,rk(3))) :- on("t:0.16").
 % t:0.17
 on("t:0.17").
-holds(neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.17").
-fired("t:0.17",neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.17").
-holds(neg(ayebe(z(azozo),d(ogoze)))) :- on("t:0.17").
-fired("t:0.17",neg(ayebe(z(azozo),d(ogoze)))) :- on("t:0.17").
-holds(neg(ayebe(z(alazu),d(odoze)))) :- on("t:0.17").
-fired("t:0.17",neg(ayebe(z(alazu),d(odoze)))) :- on("t:0.17").
-holds(neg(ayebe(z(alazu),d(ogoze)))) :- on("t:0.17").
-fired("t:0.17",neg(ayebe(z(alazu),d(ogoze)))) :- on("t:0.17").
+holds(place(dt("slot:adj","gelazem"),ahela,rk(2))) :- on("t:0.17").
+fired("t:0.17",place(dt("slot:adj","gelazem"),ahela,rk(2))) :- on("t:0.17").
 % t:0.18
 on("t:0.18").
-holds(owuro(z(ls("t:0.18",z)))) :- on("t:0.18").
-fired("t:0.18",owuro(z(ls("t:0.18",z)))) :- on("t:0.18").
-holds(isa(nm("t:0.18",z1),odoze)) :- on("t:0.18").
-fired("t:0.18",isa(nm("t:0.18",z1),odoze)) :- on("t:0.18").
-detail(nm("t:0.18",z1),dt("hookJob:genitive","om",ahela,w)) :- on("t:0.18").
-fired("t:0.18",detail(nm("t:0.18",z1),dt("hookJob:genitive","om",ahela,w))) :- on("t:0.18").
-holds(isa(nm("t:0.18",z2),ogoze)) :- on("t:0.18").
-fired("t:0.18",isa(nm("t:0.18",z2),ogoze)) :- on("t:0.18").
-detail(nm("t:0.18",z2),dt("hookJob:genitive","om",ahela,w)) :- on("t:0.18").
-fired("t:0.18",detail(nm("t:0.18",z2),dt("hookJob:genitive","om",ahela,w))) :- on("t:0.18").
-holds(owuro(z(X))) :- member(ls("t:0.18",z),X,G), on("t:0.18").
-fired("t:0.18",owuro(z(X))) :- member(ls("t:0.18",z),X,G), on("t:0.18").
+holds(most(dt("slot:adj","gelazem"),ahela)) :- on("t:0.18").
+fired("t:0.18",most(dt("slot:adj","gelazem"),ahela)) :- on("t:0.18").
 % t:0.19
 on("t:0.19").
-holds(isa(ls("t:0.19",z),arole)) :- on("t:0.19").
-fired("t:0.19",isa(ls("t:0.19",z),arole)) :- on("t:0.19").
+holds(neg(ageda(z(alazu),d(obode)))) :- on("t:0.19").
+fired("t:0.19",neg(ageda(z(alazu),d(obode)))) :- on("t:0.19").
+% t:0.20
+on("t:0.20").
+holds(neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.20").
+fired("t:0.20",neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.20").
+holds(neg(ayebe(z(azozo),d(ogoze)))) :- on("t:0.20").
+fired("t:0.20",neg(ayebe(z(azozo),d(ogoze)))) :- on("t:0.20").
+holds(neg(ayebe(z(alazu),d(odoze)))) :- on("t:0.20").
+fired("t:0.20",neg(ayebe(z(alazu),d(odoze)))) :- on("t:0.20").
+holds(neg(ayebe(z(alazu),d(ogoze)))) :- on("t:0.20").
+fired("t:0.20",neg(ayebe(z(alazu),d(ogoze)))) :- on("t:0.20").
+% t:0.21
+on("t:0.21").
+holds(owuro(z(ls("t:0.21",z)))) :- on("t:0.21").
+fired("t:0.21",owuro(z(ls("t:0.21",z)))) :- on("t:0.21").
+holds(isa(nm("t:0.21",z1),odoze)) :- on("t:0.21").
+fired("t:0.21",isa(nm("t:0.21",z1),odoze)) :- on("t:0.21").
+detail(nm("t:0.21",z1),dt("hookJob:genitive","om",ahela,w)) :- on("t:0.21").
+fired("t:0.21",detail(nm("t:0.21",z1),dt("hookJob:genitive","om",ahela,w))) :- on("t:0.21").
+holds(isa(nm("t:0.21",z2),ogoze)) :- on("t:0.21").
+fired("t:0.21",isa(nm("t:0.21",z2),ogoze)) :- on("t:0.21").
+detail(nm("t:0.21",z2),dt("hookJob:genitive","om",ahela,w)) :- on("t:0.21").
+fired("t:0.21",detail(nm("t:0.21",z2),dt("hookJob:genitive","om",ahela,w))) :- on("t:0.21").
+holds(owuro(z(X))) :- member(ls("t:0.21",z),X,G), on("t:0.21").
+fired("t:0.21",owuro(z(X))) :- member(ls("t:0.21",z),X,G), on("t:0.21").
+% t:0.22
+on("t:0.22").
+holds(isa(ls("t:0.22",z),arole)) :- on("t:0.22").
+fired("t:0.22",isa(ls("t:0.22",z),arole)) :- on("t:0.22").
 
 % Fits, from match().
 fits(ayebe(z(azozo),d(ogoze)),ayebe(z(azozo),d(nm("t:0.1",d1)))).
@@ -231,8 +251,9 @@ member(ls("t:0.8",z),azozo,1).
 member(ls("t:0.8",z),alazu,2).
 member(ls("t:0.11",z),azozo,1).
 member(ls("t:0.11",z),ahela,2).
-member(ls("t:0.18",z),nm("t:0.18",z1),1).
-member(ls("t:0.18",z),nm("t:0.18",z2),2).
+member(ls("t:0.21",z),nm("t:0.21",z1),1).
+member(ls("t:0.21",z),nm("t:0.21",z2),2).
 
 % Number order, from compareValues().
 less(v(-2),v(2)).
+less(rk(2),rk(3)).

@@ -140,6 +140,23 @@ function detailsSubset(query: readonly Detail[], target: readonly Detail[], stat
   return query.every((q, i) => target.some((t) => tryIn(state, () => detailMatch(q, t, state, `${at}/detail.${i}`))));
 }
 
+/**
+ * D21: a list's SHARED words (list-structure.md#shared-after-the-join). Each query word fits a target word as a detail
+ * does, so a rank or tie on one scale never fits one on another; a number under it (a factor, comparative-arity.md#factor,
+ * or a place, comparative-arity.md#place-on-a-scale) is compared both ways, so a plain rank or tie never fits a ratio or
+ * a place, nor the other way round.
+ */
+function sharedMatch(query: readonly Detail[], target: readonly Detail[], state: State, at: string): boolean {
+  const numbers = (d: Detail): number => (d.details ?? []).filter((x) => detailNumber(x)).length;
+  return query.every((q, i) => target.some((t) => numbers(q) === numbers(t) && tryIn(state, () => detailMatch(q, t, state, `${at}.${i}`))));
+}
+
+/** D21: a rank or tie list (a SHARED scale or equative word) fits only one with the same ending, `-l` or `-m`. */
+function sameRank(query: Extract<Term, { kind: "list" }>, target: Extract<Term, { kind: "list" }>): boolean {
+  const ranks = (l: Extract<Term, { kind: "list" }>): boolean => (l.sharedDetails ?? []).some((d) => d.values.role === "scale" || d.values.role === "equative");
+  return !(ranks(query) || ranks(target)) || query.values.ending === target.values.ending;
+}
+
 /** Run a test; on failure, drop the blanks it bound, the switches it went through, and the choices it made. */
 function tryIn(state: State, test: () => boolean): boolean {
   const marks = [state.blanks.length, state.switches.length, state.undo.length] as const;
@@ -224,7 +241,9 @@ function structural(query: Term, target: Term, state: State, at: string): boolea
         target.kind === "list" &&
         target.values.series === query.values.series &&
         target.members.length === query.members.length &&
-        query.members.every((m, i) => termMatch(m, target.members[i]!, state, `${at}/${i}`))
+        sameRank(query, target) &&
+        query.members.every((m, i) => termMatch(m, target.members[i]!, state, `${at}/${i}`)) &&
+        sharedMatch(query.sharedDetails ?? [], target.sharedDetails ?? [], state, `${at}/shared`)
       );
     case "clause":
       return target.kind === "clause" && claimMatch(query.reading.claim, target.reading.claim, state, at, target.reading);

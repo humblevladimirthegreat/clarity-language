@@ -200,9 +200,9 @@ function openReadings(program: string): Set<string> {
 
 /**
  * `fired` ids of generic rules that are not readings: a requirement's permission (R2-8), an act against a ban (R2-9), a
- * ban's denied permission (permission-consent.md#requirement).
+ * ban's denied permission (permission-consent.md#requirement), a place below the top's denied top (D22).
  */
-const GENERIC_IDS = new Set(["requires", "against", "bans"]);
+const GENERIC_IDS = new Set(["requires", "against", "bans", "place"]);
 
 /** Walk from conclusions back through `fired` and `used` to the readings that produced them. */
 function explain(model: Model, start: readonly string[], ctx: Context): { because: string[]; switches: SolveSwitch[] } {
@@ -266,6 +266,14 @@ function clashPremises(model: Model, atom: string): string[] {
   // R4c decision 1, R4c-2 (D17): a rank one way and the other, or a closed tie and the rank it meets.
   if (name === "more" && args.length === 3) return [atom, `more(${args[0]},${args[2]},${args[1]})`];
   if (name === "tie" && args.length === 4) return [atom, `more(${args[0]},${args[1]},${args[2]})`];
+  // D22: two places for one member on one scale.
+  if (name === "place" && args.length === 3) {
+    const other = [...model.holds].find((h) => {
+      const p = splitAtom(h);
+      return p.name === "place" && p.args[0] === args[0] && p.args[1] === args[1] && p.args[2] !== args[2];
+    });
+    return other ? [atom, other] : [atom];
+  }
   const denial = `neg(${atom})`;
   if (model.holds.has(atom) && model.holds.has(denial)) return [atom, denial];
   const met = model.holds.has(denial) ? (model.fits.get(atom) ?? []).find((p) => model.holds.has(p)) : undefined;
@@ -795,7 +803,7 @@ export const MAX_EXTENSIONS = 64;
  */
 const ATTACKS = [
   "% What stands (docs/meta/solver.md, what stands): who fired a conclusion, and rebut on each clash's two sides.",
-  "gen_rule(requires). gen_rule(against). gen_rule(bans). gen_rule(widen).",
+  "gen_rule(requires). gen_rule(against). gen_rule(bans). gen_rule(place). gen_rule(widen).",
   "src(A, C) :- fired(A, C), on(A).",
   "src(A, C) :- fired(G, C), gen_rule(G), used(G, C, P), src(A, P).",
   "rebut(A, B) :- src(A, P), src(B, neg(P)).",

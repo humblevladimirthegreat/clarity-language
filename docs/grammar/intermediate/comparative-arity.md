@@ -56,6 +56,8 @@ English *the second biggest* names a place just below the winner. Keep the super
 
 Under `zuol` the same place counts from the bottom, so `zazozon zuol wrodol gelazem` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zol` or `zuol`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
 
+One name holds one place on a scale. If Azozon is the second biggest, Azozon is neither the third biggest nor the biggest.
+
 **Compare with:** an ordinal after a noun picks the Nth *thing* (`zodozel grodol` *the second dog*), not the Nth on a scale. A factor (*twice as big*) goes on `/h/`, not `/w/`.
 
 ### Manner scale (`/h/`) {#manner-scale}
