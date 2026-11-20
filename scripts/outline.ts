@@ -26,6 +26,8 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import ts from "typescript";
 
+import { BANNER } from "./lib/deps.ts";
+
 type Options = { depth: number; minTokens: number; collapse: boolean; top: number };
 
 type Section = { level: number; title: string; start: number; end: number; tokens: number };
@@ -60,7 +62,6 @@ function outline(text: string, maxDepth: number): Section[] {
 
 const CODE_FILE = /\.(?:[cm]?[jt]s|[jt]sx)$/;
 const OUTLINE_FILE = /\.(?:md|[cm]?[jt]s|[jt]sx)$/;
-const BANNER = /^\s*\/\/\s*[─=-]{2,}\s*(.*?)\s*[─=-]*\s*$/;
 /** A run of this many short entries in a row prints as one line. */
 const RUN_MIN = 3;
 /** An entry this many lines long or shorter counts as short. */

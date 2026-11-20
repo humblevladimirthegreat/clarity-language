@@ -56,7 +56,8 @@
     "changed-sections": "tsx scripts/changed-sections.ts",
     "wording-only": "tsx scripts/wording-only.ts",
     "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts",
-    "outline": "tsx scripts/outline.ts"
+    "outline": "tsx scripts/outline.ts",
+    "deps": "tsx scripts/deps.ts"
   },
   "engines": {
     "node": ">=24"
