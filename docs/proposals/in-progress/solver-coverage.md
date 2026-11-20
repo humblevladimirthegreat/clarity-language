@@ -1,6 +1,6 @@
 # Solver coverage: the edge, wrong answers, and fill questions
 
-**Status:** IN PROGRESS, 2026-11-20: phases 1 to 4 done. Phase 4 (B2b, B3a, T1, B3b, B3c, B3d, B4a, P2): contrary-to zones, MAY over a clause and on hinges, hinges on universals, rank and ties, probe output scoping (T1), and the `verb-and-stance-joins.md` checkpoint (P2); open decisions 2 and 3 settled as D18 and D19 and built. Next is phase 5 (B4b, B6a, B6b, B6c, B5, S1); open decisions 4 and 5 wait on the user ([Open decisions](#open-decisions)). User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
+**Status:** IN PROGRESS, 2026-11-20: phases 1 to 4 done. Phase 4 (B2b, B3a, T1, B3b, B3c, B3d, B4a, P2): contrary-to zones, MAY over a clause and on hinges, hinges on universals, rank and ties, probe output scoping (T1), and the `verb-and-stance-joins.md` checkpoint (P2); open decisions 2 and 3 settled as D18 and D19 and built. Open decisions 4 and 5 settled 2026-11-20 as D21 and D22. Next is phase 5 (B4b, B4c, B6a, B6b, B6c, B5a, B5b, S1). User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
 **Related:** [solver.md](../../meta/solver.md); [interpreter.md](../../meta/interpreter.md) (classification and pair tables); `src/interpret/` (`translate.ts`, `solve.ts`, `read.ts`, `classes.ts`, `match.ts`, `log.ts`, `probe.ts`, `cli.ts`); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [causation](/causation), [contrary to](/contrary-to), [knowing](/knowing), [evidentiality](/evidentiality), [restrictors](/restrictors), [rank joins](/rank-joins), [set joins](/set-joins), [list structure](/list-structure), [comparatives](/comparatives), [pronouns](/pronouns), [collectives](/collectives), [questions](/questions), [fill-ask roles](/fill-ask-roles), [sentence linkers](/sentence-linkers), [polar inventory](/polar-inventory), [hooks](/hooks), [notional](/notional); recipe page `say-people-places.md`.  
 **Depends on:** none.  
 **Design authority:** no new forms. The page sentences the confirmed rows name (each written in the unit that builds its row).
@@ -25,12 +25,14 @@ After phase 4 the sweep leaves 2489 example readings: 338 `unused` (unit:linker 
 
 ## Decided
 
-User, 2026-11-19, each as recommended. D1–D6 and D11–D20 are built and live in [solver.md](../../meta/solver.md#translation-table); the numbers of the rest are kept.
+User, 2026-11-19 (D7–D10) and 2026-11-20 (D21, D22), each as recommended. D1–D6 and D11–D20 are built and live in [solver.md](../../meta/solver.md#translation-table); the numbers of the rest are kept.
 
 7. **`ue`** denies each listed item (the classification row: "as `u`"). The outside item that holds adds no rule, as open `aem` adds none.
 8. **Channel stances on your own claim** (`thebam`, `th_N`, `th#N`, `th@+95`, `th-e-`) take row 1, with the frame in `notes`, like row 16 (`evidentiality.md#evidentiality`: "the listener always knows what your claim rests on"). Not R3-7's estimate row: these name sources, not likelihoods.
 9. **Two denial lists in one clause** deny the joint substitution, `neg(T[a][b])`.
 10. **The fill job.** Cautious answers by default, brave with `--possible`; one `zar` with several fillers lists them all; no filler is *unknown* unless `closedWorld` gives *nobody*; `…er` is an existence yes or no; `gar` answers from `isa` only until named details are encoded; *why* binds `C` from `cause(C, Out)` only, not a met *if*. When, where, whose and how wait for detail-term rows.
+21. **`match()` compares SHARED words** (open decision 4 (a)). The scale word, a factor and `-l` / `-m` are compared when a question is matched, a matcher rule in [matching](../../meta/interpreter.md#matching), so a rank or tie question on one scale never fits a reading on another; `ratio(..)` is then pooled for questions. Fitting stays `match()`'s job; the solver matches no family by itself.
+22. **A place on a scale** (open decision 5 (a)). `zahelan zol wrogel gelazem` (*Ahelan is the third biggest*, `comparative-arity.md#place-on-a-scale`) claims `place(S, A, N)`. Place 1 is `most(S, A)`; one member holds one place per scale, so two places for the same member clash (and place N > 1 clashes with `most(S, A)`). It claims no `more(..)` against named members, since the set it ranks in is unstated: *is Ahelan bigger than Azozon?* stays *unknown*.
 
 ## Implementation plan
 
@@ -44,7 +46,7 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
 
 ### Carried into phase 5
 
-- **B4b:** if open decision 4 goes (a), B4b also makes `match()` compare the SHARED words (scale, factor, `-l` / `-m`) and pools `ratio(..)` for questions. B4b's R4c-5 marks the SHARED hook's `hookJob` frame (R4c finding 3).
+- **B4b:** R4c-5 marks the SHARED hook's `hookJob` frame (R4c finding 3).
 - **B6a:** k14 (`draft-holders.txt`, its only case, a topic-pronoun holder) is left only for `unit:linker`; R4d-1 clears it.
 - **B6b:** the period form of a hinge condition (`thohem blarl. zalazun vezuyol.`, `slot:grounds`) is left by every hinge row; decide whether R4d-8's stand-in row covers it, or report it for the edge. A `blarth` condition that points back to a denied sentence is left `noRow overlay:clause_hinge:th`.
 - **B6c:** R4e finding 5 (hg11).
@@ -54,7 +56,7 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
   - zones: a say-word zone with a universal, restrictor or hinge; `zuam` / `zul` with a zone; `huam` or listed exceptions with a zone; *only if* under a zone; a denied hinge with a zone; the fragment `uom hwudum` (`say-reasons.md`)
   - MAY: `huam` under MAY; `hal` / `huam` over MAY; listed exceptions with MAY over a restrictor; open `zuam` and *no K* with no verb under MAY; MAY with a say word, universal or restrictor beside another frame; a carried holder with MAY beside a hinge; row 6's forward rule on a MAY condition reads `holds(neg(may(P)))`, which nothing produces
   - universals: with MAY on the condition, a universal hinge's *only if* half has no back rule; hg23 (a denied universal hinge); bc36 (tag `zwar`, `slot:tag`)
-  - rank: a place on a scale (open decision 5); an open tie with a factor (`zoem`); a factor on a tie of three or with a verb; `zaol` with one name or a verb; any frame on a rank shape other than R1-8
+  - rank: an open tie with a factor (`zoem`); a factor on a tie of three or with a verb; `zaol` with one name or a verb; any frame on a rank shape other than R1-8
   - `zazozon guzemel vul.` reads `vul` as the verb *no*, not a denial of the adjective claim (B3c); check how the grammar denies an adjective predication before calling it a reader bug
 
 ### Phase 5: lists, links, fill; style
@@ -62,6 +64,11 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
 **B4b Lists and stance numbers.**  
 `proposal-worker`, `model: opus`, effort `high`.  
 R4c-3 to R4c-8 (D7, D8, D9; SHARED details after a join; likeness; collective `-x`); R4c decisions 5 (verbless lists left with reason `fragment`), 6 (the evidence clause claimed, with `grounds(E, C)`) and 8 (a SHARED number word stays left). Also fix the throw: `translate()` crashes on `zazozon dugavalx grodol oel growal vayebel.` (`open-ranges.md`) in `inRange` / `compareValues`; then make the sweep in `accounting.test.ts` fail on a throw instead of skipping it.
+
+**B4c Matching SHARED words; a place on a scale.**  
+`proposal-worker`, `model: opus`, effort `high`.  
+D21 and D22. First D21: `match()` compares the SHARED words, `ratio(..)` pooled for questions, with tests that a rank, tie or ratio question on another scale does not fit; then D22's row, its fixture cases in `solve-lists.txt`, and its page sentence on `comparative-arity.md#place-on-a-scale` if the page does not already say that a place rules out another. B4a built rank in `ranked()` (`translate.ts`); B4b runs first.  
+**May edit:** as every build unit, plus `src/interpret/match.ts` and `docs/meta/interpreter.md` (the matching section only).
 
 **B6a Links that add no term.**  
 `proposal-worker`, `model: opus`, effort `high`.  
@@ -77,17 +84,23 @@ R4d-6 to R4d-8; R4d decisions O-2 (*instead* drops the replaced reading) and O-3
 `proposal-worker`, `model: opus`, effort `high`.  
 R4d-9 and R4d-10 (a `val` verb list claims each verb; *respectively*), with the verb list counted as an accounting part; R4d decision O-6 (NOTIONAL is a wrap, `view(notional, T)`, carried readings too, never `holds(T)`). R4e finding 5 (`thanam thohem thul blarl`, hg11) builds here if B4b's channel row says what denying DEDUCED adds.
 
-**B5 The fill job.**  
+**B5a The fill job.**  
 `proposal-worker`, `model: opus`, effort `high`.  
-R4c-9 to R4c-13 (D10) and R4c decision 7 (`…ur` / `…or` answer `beyond` for now): `fill(log, question, options)` in `solve.ts`, exported from `solve-browser.ts` and `browser.ts`; `reading.mjs solve` and `probe` dispatch a `fillAsk` question to it; the reply through `reply.ts`; the Jobs and CLI sections of [solver.md](../../meta/solver.md#jobs).  
-**May edit:** as every build unit, plus `src/interpret/solve-browser.ts`, `src/interpret/browser.ts`, `src/interpret/reply.ts`, `src/interpret/probe.ts`, `src/interpret/cli.ts`.
+R4c-9 to R4c-13 (D10) and R4c decision 7 (`…ur` / `…or` answer `beyond` for now): `fill(log, question, options)` in `solve.ts`, with its `solve.test.ts` cases from `draft-fill.txt`, and the Jobs section of [solver.md](../../meta/solver.md#jobs). Its report gives `fill`'s signature and result shape, which B5b is briefed from.
+
+**B5b Fill wiring.**  
+`proposal-worker`, `model: opus`, effort `medium`.  
+Export `fill` from `solve-browser.ts` and `browser.ts`; `reading.mjs solve` and `probe` dispatch a `fillAsk` question to it; the reply through `reply.ts`; the CLI section of [solver.md](../../meta/solver.md#cli).  
+**May edit:** `src/interpret/solve-browser.ts`, `src/interpret/browser.ts`, `src/interpret/reply.ts`, `src/interpret/probe.ts`, `src/interpret/cli.ts`, their tests, `docs/meta/solver.md` (Jobs and CLI sections).
 
 **S1 Style gate.**  
 `style-editor`, `model: opus`, effort `high`.  
 The `npm run changed-sections -- <rev>` list, where `<rev>` is `9e38c73d`, the commit before F1's.  
 **May edit:** the listed sections.
 
-**Order:** B4b, B6a, B6b, B6c, B5, S1. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), folding anything left into [solver.md](../../meta/solver.md#the-edge).
+**Order:** B4b, B4c, B6a, B6b, B6c, B5a, B5b, S1. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), folding anything left into [solver.md](../../meta/solver.md#the-edge).
+
+**Running phase 5.** Before each build unit the orchestrator runs that unit's draft cases through one `probe` file and appends the result to the brief. A unit that passes about 40 tool calls with more than a few edits left stops and hands back; the orchestrator starts a fresh subagent for the rest.
 
 ### Rule digest (pasted into every brief)
 
@@ -140,7 +153,7 @@ Full rules a subagent may open if the digest does not settle a question: [solver
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` after each unit, before its commit.
 - Final gate, at the end of phase 5: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
-- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 5 makes six unit commits and a last one deleting this proposal.
+- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 5 makes eight unit commits and a last one deleting this proposal.
 
 ## Confirmed rows
 
@@ -384,8 +397,7 @@ The user adopted every recommendation below, 2026-11-19, with these notes:
 
 ## Open decisions
 
-4. **`match()` reads no SHARED words** (B4a finding). The scale word, a factor and `-l` / `-m` are not compared when a question is matched, so a rank or tie question on one scale fits a reading on another and gets a confident wrong answer (true of R1-8's rank before this phase; B4a's tie rows share it). B4a keeps `ratio(..)` out of the question pool so a tie question never fits a ratio, which leaves ratio questions unanswered. Options: (a) compare the SHARED words in `match()` (a matcher rule in `interpreter.md#matching`); (b) answer rank atoms by their term text in `solve.ts`. **Recommendation:** **(medium)** (a): fitting is `match()`'s job everywhere else, (b) would make rank the one family the solver matches by itself, and the goal *no wrong answer from a known bug* names exactly this. It fits phase 5's B4b (SHARED details after a join, R4c-5), which reads the same parts.
-5. **A place on a scale** (B4a finding). `zahelan zol wrogel gelazem` (*Ahelan is the third biggest*, `comparative-arity.md#place-on-a-scale`) is left: `most(S, A)` would be wrong, and no row gives a term for a place. Options: (a) a later row, `place(S, A, N)`, with a clash against `most` for N > 1; (b) leave it on the edge. **Recommendation:** **(low)** (b) for this proposal: no draft or decision covers it, and its clashes with `more` need their own row; what would settle it is a consumer that asks about places.
+None.
 
 ## Background
 
