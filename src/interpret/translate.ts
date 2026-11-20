@@ -123,8 +123,11 @@ const RESERVED = new Set([
   "less", "same", "always", "never", "notall", "none", "more", "c", "o", "i", "act", "lit", "pro", "cl", "quote", "speaker",
   "listener", "blank", "not", "view", "say", "via", "to", "grp", "sp", "rules", "unsaid", "interlocutors", "generic", "against",
   "requires", "may", "maybe", "some", "noneof", "notone", "likely", "bans", "cause", "fault", "share", "plan", "channel",
-  "if", "onlyif", "iff", "we", "every", "because",
+  "if", "onlyif", "iff", "we", "every", "because", "want", "decision",
 ]);
+
+/** R4b decision 3: the intention adverbs after `uom` and their zone terms (contrary-to.md#contrary-to-stance). */
+const ZONE_INTENTIONS: Record<string, string> = { "overlay:plan:th": "plan", "overlay:want:th": "want", "overlay:decision:th": "decision" };
 
 const str = (s: string): string => JSON.stringify(s);
 const name = (s: string): string => (/^[a-z][a-z0-9_]*$/.test(s) && !RESERVED.has(s) ? s : str(s));
@@ -626,7 +629,6 @@ class Translator {
     const kinds = [frames.hinge, frames.universal, frames.restrictor].filter(Boolean).length;
     if (kinds > 1 && !(frames.hinge && frames.universal)) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
     // R2-1 row 8: a hinge beside *because* only as *only because*, `thebem` over `thahum`; contrary to only on a plain claim.
-    const lone = !(frames.may || frames.mayHost || frames.likely || frames.holder || frames.say || frames.restrictor);
     const onlyBecause = !frames.hinge || (frames.because && frames.hinge.values.gloss === "only-if" && over(reading, frames.hinge, frames.because) && !becauseDenied(reading));
     // R4b-2: *because* inside a holder's view; R4b-5, R4b-6 (D3, D11): MAY right before or after it; R4b-7 (D12): under
     // `hual` / `huam`, the restrictor over the hinge.
@@ -636,7 +638,10 @@ class Translator {
       (!frames.may || !(frames.holder || frames.hinge || frames.restrictor)) &&
       (!frames.restrictor || (!frames.holder && !frames.hinge && !!frames.because && over(reading, frames.restrictor, frames.because)));
     if (frames.because && !becauseOk) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
-    if (frames.zone && !(lone && !frames.hinge && !frames.universal)) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
+    // Row 14 on a plain claim; R4b-9: beside MAY; R4b-12, R4b-13: on a closed universal; R4b-14: with `hual` / `hal`;
+    // R4b-15 (D14, R4e decision 3): with a hinge. One of these at a time.
+    const zoneOk = !(frames.mayHost || frames.likely || frames.holder || frames.say) && [frames.may, frames.hinge, frames.universal, frames.restrictor].filter(Boolean).length <= 1;
+    if (frames.zone && !zoneOk) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
     for (const f of reading.frames) {
       if (f.key !== "slot:newMember") continue;
       this.use(f);
@@ -812,19 +817,30 @@ class Translator {
 
   /**
    * R2-1 row 9, R2-11 (contrary-to.md#contrary-to-stance): the zone after `uom`, `plan(H)` or `say(Who, Part, Reach,
-   * Answer, Ending[, to(X)])` with the say word's wrap. A plan with no holder is the turn speaker's. A channel or a
-   * holder after `uom` has no row: the reader gives the zone's holder frame no party and no channel gloss.
+   * Answer, Ending[, to(X)])` with the say word's wrap. A plan with no holder is the turn speaker's. R4b decision 3: a
+   * want or a decision is `want(H)` / `decision(H)`, as a plan. R4a-6, R4b-10, R4b-11 (contrary-to.md#contrary-to-holder,
+   * #channel-zone): a holder after `uom` names `H` (Holders row 3), on its channel alone `channel(Gloss, H)`; a channel
+   * with no holder is the turn speaker's. The holder's own channel before an intention is used with no term.
    */
   zone(reading: Reading, frame: Frame, ctx: Ctx): { term: string; say?: Extract<Wrap, { kind: "say" }> } | Why {
     const bad = { construction: frame.construction, key: frame.key, reason: "noRow" };
     const inner = frame.inner ?? [];
-    if (inner.length !== 1) return bad;
-    const f = inner[0]!;
-    if (f.key === "overlay:plan:th") {
-      this.use(frame, f);
-      return { term: `plan(${this.speaker(reading)})` };
+    const holder = inner[0]?.key === "xFamily:holder" ? inner[0] : undefined;
+    const rest = holder ? inner.slice(1) : inner;
+    if (rest.length > 1 || (!holder && !rest.length)) return bad;
+    const f = rest[0];
+    const host = holder?.inner?.length === 1 && holder.inner[0]!.key === "overlay:evidential:th" ? holder.inner[0] : undefined;
+    const intention = f ? ZONE_INTENTIONS[f.key] : undefined;
+    const channel = f ? (f.key === "overlay:evidential:th" && !f.holderHost ? f : undefined) : host;
+    const gloss = intention ? undefined : channel?.values.gloss;
+    if (holder && (!host || !(intention || (!f && gloss)))) return bad;
+    if (intention || gloss) {
+      const who = holder ? this.holder(holder, { ...ctx, choice: false }) : this.speaker(reading);
+      if (!who) return bad;
+      this.use(frame, f, holder, host);
+      return { term: intention ? `${intention}(${who})` : `channel(${name(gloss!.toLowerCase())},${who})` };
     }
-    if (f.key !== "wordFamily:say") return bad;
+    if (!f || f.key !== "wordFamily:say") return bad;
     const say = this.sayWrap(reading, f, ctx);
     if ("reason" in say || say.kind !== "say") return bad;
     this.use(frame);
@@ -973,7 +989,18 @@ class Translator {
     const lit = (h: { text: string; sign: number }): string => (h.sign < 0 ? `neg(${h.text})` : h.text);
 
     if (frames.because) return this.because(reading, frames, claim, heads, body, ctx, mayOver);
-    if (frames.hinge) return this.hinge(reading, frames.hinge, heads, body, ctx, mayOver === "outcome");
+    // Row 14's zone, outside MAY's choice. A say-word zone only on a plain claim or beside MAY (R4b-9); on a universal
+    // only a closed `zual` (R4b-12, R4b-13).
+    const zone = frames.zone ? this.zone(reading, frames.zone, { ...ctx, choice: false }) : undefined;
+    if (zone && "reason" in zone) return zone;
+    const zoneBad = { construction: frames.zone?.construction ?? "", key: frames.zone?.key, reason: "noRow" };
+    if (zone && ((zone.say && (frames.universal || frames.restrictor || frames.hinge)) || (frames.universal && (frames.universal.key !== "joinSeries:ua" || open)))) return zoneBad;
+    if (frames.hinge) {
+      // R4b-15 (D14): the earlier covers the later; a zone first marks the conditional (R4e decision 3).
+      const first = zone && (over(reading, frames.zone!, frames.hinge) ? true : over(reading, frames.hinge, frames.zone!) ? false : undefined);
+      if (zone && first === undefined) return zoneBad;
+      return this.hinge(reading, frames.hinge, heads, body, ctx, mayOver === "outcome", false, zone ? { term: zone.term, first: !!first } : undefined);
+    }
 
     if (frames.restrictor) {
       const v = frames.restrictor.values;
@@ -982,6 +1009,8 @@ class Translator {
       const never = v.series === "a" && v.ending === "l";
       const usually = v.series === "ua" && v.ending === "m";
       if (denial || !(always || never || usually) || (usually && listed)) return { construction: frames.restrictor.construction, key: frames.restrictor.key, reason: "noRow" };
+      // R4b-14: a zone only with bare `hual` / `hal`.
+      if (zone && (usually || listed)) return zoneBad;
       this.use(frames.restrictor);
       const h = heads[0]!;
       // R4a-1: inside a holder's view each term is wrapped, the marker too (`always(view(H, T))`).
@@ -991,21 +1020,26 @@ class Translator {
         if (!listed) this.rule(ctx, this.w(ctx, always ? h.text : `neg(${h.text})`), []);
         this.rule(ctx, this.w(ctx, h.text), [], always ? "always" : "never");
       }
+      // R4b-14 (restrictors.md#always-hual): `hual` marks its act against the zone, the marker too; `hal` has no event to mark.
+      if (zone && always) {
+        this.rule(ctx, `against(${h.text},${zone.term})`, []);
+        this.rule(ctx, `against(${h.text},${zone.term})`, [], "always");
+      }
       this.pool(reading, h.text, h.claim, never && !listed ? -1 : 1);
       return true;
     }
 
     // R2-7, R2-9: a ban's act is matched against the acts it may meet, as a denied term is.
     const ban = sayOf(ctx.wrap)?.answer === "u";
-    const zone = frames.zone ? this.zone(reading, frames.zone, ctx) : undefined;
-    if (zone && "reason" in zone) return zone;
     for (const h of heads) {
       if (open) this.open(ctx, h.text, body);
       else this.rule(ctx, this.w(ctx, lit(h)), body);
       if (zone) {
         // R2-1 row 9, R2-11: the act is still your claim, marked against its zone; a say-word zone claims its say word.
-        this.rule(ctx, `against(${lit(h)},${zone.term})`, []);
-        if (zone.say) this.rule(ctx, wrapText(zone.say, lit(h)), []);
+        // R4b-9: beside MAY the mark needs the act; R4b-12: on a universal, each member's.
+        const plain = { ...ctx, choice: false };
+        this.rule(plain, `against(${lit(h)},${zone.term})`, ctx.choice ? [{ atom: `holds(${lit(h)})`, premise: lit(h) }] : body);
+        if (zone.say) this.rule(plain, wrapText(zone.say, lit(h)), []);
         if (zone.say?.answer === "u") this.pool(reading, h.text, h.claim, -1);
       }
       if (list) this.templates.push({ ctx, list, claim: h.claim, sign: ban ? -1 : h.sign });
@@ -1292,7 +1326,7 @@ class Translator {
    * a universal, over MAY, under MAY or with MAY in its condition keeps its rules with no term. R4b-1: a `bl-` noun
    * condition reads as its kind.
    */
-  hinge(reading: Reading, frame: Frame, heads: { text: string; claim: Claim; sign: 1 | -1 }[], body: Literal[], ctx: Ctx, mayOutcome = false, because = false): true | Why {
+  hinge(reading: Reading, frame: Frame, heads: { text: string; claim: Claim; sign: 1 | -1 }[], body: Literal[], ctx: Ctx, mayOutcome = false, because = false, zone?: { term: string; first: boolean }): true | Why {
     const bad = { construction: frame.construction, key: frame.key, reason: "noRow" };
     const noun = this.nounCondition(frame);
     const cond = noun ? undefined : this.condition(reading, frame);
@@ -1319,6 +1353,9 @@ class Translator {
     // A denied conditional on a universal (R4e open decision 2), with MAY, in a wrap or beside *because* has no row.
     // R4e-5: a holder's denied conditional is the holder's view, `view(H, neg(if(..)))`.
     if (denied && (universal || mayCond || mayOutcome || ctx.gate || (ctx.wrap && !plainView(ctx.wrap)) || because)) return bad;
+    // R4b-15 (D14): a hinge over a zone marks the outcome its *if* rule gives; *only if* gives no outcome to mark. R4e
+    // decision 3: a zone over a hinge marks the conditional, which needs its term.
+    if (zone && (denied || universal || mayCond || mayOutcome || ctx.gate || sayOut || (!zone.first && gloss === "only-if"))) return bad;
     const h = heads[0]!;
     const c = `c(${ctx.id})`;
     const o = `o(${ctx.id})`;
@@ -1351,6 +1388,7 @@ class Translator {
     }
     const gate: Literal[] = plain ? [{ atom: `holds(${w(term)})`, premise: w(term) }] : [];
     if (plain) this.rule(ctx, w(term), []);
+    if (zone?.first) this.rule(ctx, `against(${term},${zone.term})`, []);
     if (mayCond) {
       // R3-5: the body reads `may(P)`; a stated condition gives it too. No backward rule.
       this.rule(ctx, w("may(P)"), [{ atom: `fits(${c},P)` }, { atom: `holds(${w("P")})`, premise: w("P") }]);
@@ -1360,6 +1398,7 @@ class Translator {
       this.rule({ ...ctx, choice: true }, out, [...body, ...truth(c, "P")]);
     } else if (gloss === "if" || gloss === "iff") {
       this.rule(ctx, out, [...gate, ...body, ...truth(c, "P")]);
+      if (zone && !zone.first) this.rule(ctx, `against(${out},${zone.term})`, [...gate, ...body, ...truth(c, "P")]);
       if (!universal) this.rule(ctx, wc(`neg(${condText})`), [...gate, ...outFalse("P")]);
     }
     if (gloss === "only-if" || gloss === "iff") {

@@ -48,10 +48,10 @@ zazozon vowurol uom thagom.
 zazozon vowurol uom hwuvul.
 = Azozon walks against the rules.
 
-# c11 has no row yet: the reader gives the holder frame after `uom` no party and no channel gloss.
-# @ c11
-# zazozon vowurol uom thebamalazun.
-# = Azozon walks, contrary to what I hear Alazun thinks.
+# c11 (R4b-10): a holder on a channel after `uom`, channel(Gloss, H).
+@ c11
+zazozon vowurol uom thebamalazun.
+= Azozon walks, contrary to what I hear Alazun thinks.
 
 # c10 + c12: with R2-7 and R2-11 (B), the rule c10 goes against clashes with this one.
 @ c12
@@ -143,6 +143,55 @@ zazozon vowurol thahum blerulal blugalal bel.
 @ bc19
 zalazun genemum huam thahul blarl zazozon vezuyol.
 = Alazun is often hurt, Azozon's fault for talking.
+
+# R4b-9: contrary to, with MAY. bc22, ? zazozon vowurol. -> unknown; ?~ -> yes.
+@ bc22
+zazozon vowurol uom thagom thomam.
+= Azozon may be walking, contrary to my plan.
+
+# R4b-10: contrary to a holder's plan or view. bc23 and bc24, ? zazozon vowurol. -> yes.
+@ bc23
+zazozon vowurol uom theyomalazun thagom.
+= Azozon walks, against Alazun's plan, as far as I can tell.
+
+@ bc24
+zazozon vowurol uom thebamalazun.
+= Azozon walks, contrary to what I hear Alazun thinks.
+
+# R4b-11: the channel zone, the turn speaker's. bc25, ? zazozon vowurol. -> yes.
+@ bc25
+zazozon vowurol uom thebam.
+= Azozon walks, contrary to what I was told.
+
+# R4b-12 and R4b-13 (D4): contrary to on a universal, either order. bc26 + bc28 and bc27 + bc28,
+# ? zazozon vowurol. -> yes, against(walk(azozon), plan(..)) per member.
+@ bc26
+zual godozel vowurol uom thagom.
+= Every dog walks, contrary to my plan.
+
+@ bc27
+uom thagom zual godozel vowurol.
+= Contrary to my plan, every dog walks.
+
+@ bc28
+zazozon godozel.
+= Azozon is a dog.
+
+# R4b-14: contrary to with a bare restrictor. bc29 + bc16: clash.
+@ bc29
+hual zazozon vowurol uom thagom.
+= Azozon always walks, contrary to my plan.
+
+# R4b-15 (D14, R4e decision 3): a hinge over a zone (the hinge and blarth first) marks the outcome; a zone over a
+# hinge marks the conditional, against(if(..), plan(..)). bc30, ? zazozon vowurol. -> yes: its first sentence is a plain
+# claim, so the if rule gives the outcome. bc31, ? zazozon vowurol. -> unknown, the hinge claims neither side.
+@ bc30
+zalazun vezuyol. thohem blarth zazozon vowurol uom thagom.
+= Alazun talks. If so, Azozon walks, contrary to my plan.
+
+@ bc31
+zazozon vowurol uom thagom thohem blarl zalazun vezuyol.
+= Contrary to my plan, Azozon walks if Alazun talks.
 
 # R4b-2: because inside a holder's view (holder.md#what-the-holder-covers). bc5 + bc6 clash in Azozon's view; bc5,
 # ? zalazun vudurul. -> unknown, the view is not your claim. Last in the file, since bc6's holder carries to the next sentence.

@@ -343,6 +343,12 @@ describe("solve: holders over restrictors, denials, say words and hinges (R4a-1 
   const b = (labels: string[]) => log("holders", labels);
   const atoms = async (labels: string[]) => (await clashes(b(labels), base)).clashes.map((c) => [c.atom, c.readings, c.english]);
 
+  it("R4a-6: a holder or a channel after uom names the zone; the event is still your claim (k17 to k19)", async () => {
+    for (const k of ["k17", "k18", "k19"]) assert.equal((await follows(b([k]), q("zazozon vowurol."), base)).verdict, "yes");
+    const marks = ["k17", "k18", "k19"].map((k) => /holds\(against\(owuro\(z\(azozo\)\),(.*)\)\) :- on\("t:0\.0"\)\.$/m.exec(translate(b([k]), { lexicon: tables }).program)?.[1]);
+    assert.deepEqual(marks, ["plan(alazu)", "channel(reported,alazu)", 'channel(reported,sp("a"))']);
+  });
+
   it("R4a-1: always and never clash inside one view (k1 + k2), never across holders (k1 + k3) or into your claim", async () => {
     assert.deepEqual(await atoms(["k1", "k2"]), [["view(azozo,ozuye(z(alazu)))", ["t:0.0", "t:0.1"], "In Azozon's view these cannot all hold: t:0.0, t:0.1."]]);
     assert.deepEqual(await atoms(["k1", "k3"]), []);
@@ -679,8 +685,61 @@ describe("solve: because, fault, contrary to (R2-1 rows 5 to 9, R2-10, R2-11)", 
     assert.deepEqual(a.because, ["t:0.0"]);
   });
 
-  it("a channel or a holder after uom has no row yet", () => {
-    assert.deepEqual(translate(buildLog([{ speaker: "a", at: 0, text: "zazozon vowurol uom thebamalazun." }], tables), { lexicon: tables }).left.map((l) => l.key), ["hookJob:zone"]);
+  const program = (labels: string[]) => translate(c(labels), { lexicon: tables }).program;
+  const marks = (labels: string[]) => program(labels).split("\n").filter((l) => /^(holds|always)\(against\(/.test(l) && l.includes("on(\"t:"));
+  const walks = q("zazozon vowurol.");
+
+  it("R4b-9: contrary to beside MAY: the mark needs the act (bc22)", async () => {
+    assert.equal((await follows(c(["bc22"]), walks, base)).verdict, "unknown");
+    assert.equal((await couldBe(c(["bc22"]), walks, base)).verdict, "yes");
+    assert.deepEqual(marks(["bc22"]), ['holds(against(owuro(z(azozo)),plan(sp("a")))) :- holds(owuro(z(azozo))), on("t:0.0").']);
+  });
+
+  it("R4b-10, R4b-11: a holder's plan or channel, or your own channel; the event is still your claim (bc23 to bc25, c11)", async () => {
+    for (const l of ["bc23", "bc24", "bc25", "c11"]) assert.equal((await follows(c([l]), walks, base)).verdict, "yes");
+    assert.deepEqual(marks(["bc23", "bc24", "bc25"]), [
+      'holds(against(owuro(z(azozo)),plan(alazu))) :- on("t:0.0").',
+      'holds(against(owuro(z(azozo)),channel(reported,alazu))) :- on("t:0.1").',
+      'holds(against(owuro(z(azozo)),channel(reported,sp("a")))) :- on("t:0.2").',
+    ]);
+  });
+
+  it("R4b decision 3: a want or a decision after uom is a zone as a plan is", () => {
+    const t = translate(buildLog(["zazozon vowurol uom thalom.", "zazozon vowurol uom thogem.", "zazozon vowurol uom theyomazozon thalom."].map((text, at) => ({ speaker: "a", at, text })), tables), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.deepEqual(t.program.split("\n").filter((l) => l.startsWith("holds(against(") && l.includes("on(\"t:")), [
+      'holds(against(owuro(z(azozo)),want(sp("a")))) :- on("t:0.0").',
+      'holds(against(owuro(z(azozo)),decision(sp("a")))) :- on("t:0.1").',
+      'holds(against(owuro(z(azozo)),want(azozo))) :- on("t:0.2").',
+    ]);
+  });
+
+  it("R4b-12, R4b-13 (D4): on a closed universal, either order, each member's act is marked (bc26 / bc27 + bc28)", async () => {
+    for (const first of ["bc26", "bc27"]) {
+      assert.equal((await follows(c([first, "bc28"]), walks, base)).verdict, "yes");
+      assert.deepEqual(marks([first]), ['holds(against(owuro(z(X)),plan(sp("a")))) :- holds(isa(X,odoze)), on("t:0.0").']);
+    }
+  });
+
+  it("R4b-14: hual marks its act, the marker too, and clashes with hal (bc29 + bc16); hal marks nothing", async () => {
+    assert.deepEqual(await pairs(["bc29", "bc16"]), [["t:0.0", "t:0.1"]]);
+    assert.deepEqual(marks(["bc29"]), [
+      'holds(against(owuro(z(azozo)),plan(sp("a")))) :- on("t:0.0").',
+      'always(against(owuro(z(azozo)),plan(sp("a")))) :- on("t:0.0").',
+    ]);
+    const hal = translate(buildLog([{ speaker: "a", at: 0, text: "hal zazozon vowurol uom thagom." }], tables), { lexicon: tables });
+    assert.deepEqual(hal.left, []);
+    assert.ok(!hal.program.includes("against(owuro"));
+  });
+
+  it("R4b-15 (D14): a hinge over a zone marks the outcome (bc30); R4e decision 3: a zone over a hinge marks the conditional (bc31)", async () => {
+    // bc30's first sentence is a plain claim, so the if rule gives the outcome.
+    assert.equal((await follows(c(["bc30"]), walks, base)).verdict, "yes");
+    assert.deepEqual(marks(["bc30"]), [
+      'holds(against(owuro(z(azozo)),plan(sp("a")))) :- holds(if(c("t:0.1"),o("t:0.1"))), fits(c("t:0.1"),P), holds(P), on("t:0.1").',
+    ]);
+    assert.equal((await follows(c(["bc31"]), walks, base)).verdict, "unknown");
+    assert.deepEqual(marks(["bc31"]), ['holds(against(if(c("t:0.0"),o("t:0.0")),plan(sp("a")))) :- on("t:0.0").']);
   });
 });
 

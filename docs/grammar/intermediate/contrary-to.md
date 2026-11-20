@@ -42,6 +42,8 @@ Only the stance right after `uom` is what the event goes against. A stance anywh
 >
 > "Azozon may be walking, contrary to my plan."
 
+Before a fence (`uom thagom zual godozel vowurol.`), `uom` and its stance go with each member, as after it.
+
 The word after `uom` has to say something the event can go against, such as a plan. Say words and channels can too, as the next sections show.
 
 | After `uom` | English |

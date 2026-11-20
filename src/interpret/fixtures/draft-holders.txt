@@ -11,17 +11,3 @@
 @ k14
 xazozon theyomalen zalazun vudurul.
 = Now, about Azozon: I gather Azozon thinks Alazun left.
-
-# R4a-6: a holder or a channel after `uom` (contrary-to.md#contrary-to-holder). The event stays your claim.
-# k17, ? zazozon vowurol. -> follows: yes (now: unknown, k17 left noRow hookJob:zone). Same for k18 and k19.
-@ k17
-zazozon vowurol uom theyomalazun thagom.
-= Azozon walks, against what I gather Alazun plans.
-
-@ k18
-zazozon vowurol uom thebamalazun.
-= Azozon walks, contrary to what I hear Alazun thinks.
-
-@ k19
-zazozon vowurol uom thebam.
-= Azozon walks, contrary to what I heard.

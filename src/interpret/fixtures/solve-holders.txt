@@ -1,6 +1,20 @@
 # Solver fixture (R2, group (b)): holders (holder.md#naming-a-holder, #what-the-holder-covers).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # b6, a holder on MAY, is in draft-maybe.txt until MAY has its row (B6b).
+# R4a-6: a holder or a channel after `uom` (contrary-to.md#contrary-to-holder). The event stays your claim.
+# k17, k18, k19 each, ? zazozon vowurol. -> yes. Before the holder entries, so no holder carries onto them.
+@ k17
+zazozon vowurol uom theyomalazun thagom.
+= Azozon walks, against what I gather Alazun plans.
+
+@ k18
+zazozon vowurol uom thebamalazun.
+= Azozon walks, contrary to what I hear Alazun thinks.
+
+@ k19
+zazozon vowurol uom thebam.
+= Azozon walks, contrary to what I heard.
+
 # A = Alazun left. b1 + b2: one holder's views clash. b1 + b3: two holders never clash. b4 + b1 (in that order, since the holder carries forward): a holder's view never clashes with your own claim.
 
 @ b1
