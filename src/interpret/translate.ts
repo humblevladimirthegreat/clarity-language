@@ -20,7 +20,7 @@ import type { LexWord } from "../parse/types.js";
 import type { Addressed, Addressee, Log, LogEntry } from "./log.js";
 import { match, type TermSite } from "./match.js";
 import { asMember, claimMemberLists, collective, compoundHeads, memberList, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
-import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
+import type { Claim, Detail, Frame, Link, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
 
 export type TranslateOptions = {
@@ -45,10 +45,20 @@ export type LeftOut = { reading: ReadingId; construction: string; key?: string; 
 export type Part = { kind: "frame" | "link" | "shared" | "blank" | "list"; of: object; reading: ReadingId; key: string; text: string };
 
 /**
- * A frame the program does not encode but a reply may mention (R1-9: standalone `thul` leaves the claim untouched), or
- * a detail (R4c-1: a `/w/` degree on a superlative's scale).
+ * A frame the program does not encode but a reply may mention (R1-9: standalone `thul` leaves the claim untouched), a
+ * detail (R4c-1: a `/w/` degree on a superlative's scale), or a link that adds no term (R4d: a sentence linker, a topic
+ * word, a tag, a discourse hook, a polar word); a linker's note is `linker(Word, To)`, its words and the reading it points to.
  */
-export type Note = { reading: ReadingId; frame: Frame | Detail };
+export type Note = { reading: ReadingId; frame: Frame | Detail | LinkNote };
+
+/** A link as a note: its classification key doubles as the construction a reply names. */
+export type LinkNote = Link & { construction: string };
+
+/** R4d: the links a reading's rows used with no term of their own, a polar word's verdict, and *therefore*'s prior reading. */
+type Talk = { used: Link[]; answer?: { to: Reading; sign: 1 | -1 }; therefore?: ReadingId };
+
+/** R4d-5: a discourse hook that adds (`a`, `ao`, `ae`), rewords (`o`) or returns (`er`) keeps the clause. */
+const KEPT_HOOK = /^(?:(?:a|o)[lmr]|(?:ao|ae)[lm]|er)$/;
 
 /** A term in the program and the claim it stands for: the matcher's input for a question asked of the answer set. */
 export type TermSource = { reading: ReadingId; claim: Claim };
@@ -348,6 +358,8 @@ class Translator {
   readonly conditionals = new Map<string, Conditional>();
   readonly conditionalFits = new Map<string, Set<string>>();
   readonly everyHinges: EveryHinge[] = [];
+  /** R4d decision O-1: each plain claim's term (row 1, no frame, no list), by reading, for *therefore*'s `cause`. */
+  readonly plainTerms = new Map<ReadingId, string>();
 
   constructor(readonly options: TranslateOptions) {}
 
@@ -653,10 +665,20 @@ class Translator {
     if (why) return this.leave(reading, why);
     // R4a-8: a call is read through `LogEntry.addressees`, so its frame is used; a reading with only a call claims nothing.
     this.use(...reading.frames.filter((f) => f.key === "edge:vocative"));
-    if (reading.frames.length && reading.frames.every((f) => f.key === "edge:vocative") && isEmptyClaim(reading.claim)) {
-      this.accounting.set(reading.id, { parts: readingParts(reading), used: this.used });
+    // R4d: linkers, topic words, tags, kept discourse hooks and polar words add no term of their own.
+    const talk = this.talk(reading);
+    this.use(...talk.used);
+    // R4d-1: a topic word alone writes nothing; R4d-2, R4d-3: a bare polar word claims only its verdict, if any.
+    if (reading.frames.every((f) => f.key === "edge:vocative") && isEmptyClaim(reading.claim)) {
+      const parts = readingParts(reading);
+      const unused = parts.filter((p) => !this.used.has(p.of));
+      if (unused.length) return this.leave(reading, { construction: unused[0]!.key, key: unused[0]!.key, reason: "unused", unused: unused.map((p) => p.text) });
+      const out: string[] = [];
+      this.talkRules(reading, talk, out);
+      this.accounting.set(reading.id, { parts, used: this.used });
+      talk.used.forEach((l) => this.notes.push({ reading: reading.id, frame: { ...l, construction: l.key } }));
       this.readings.push(reading.id);
-      this.lines.push(`% ${reading.id}`, `on(${str(reading.id)}).`);
+      this.lines.push(`% ${reading.id}`, `on(${str(reading.id)}).`, ...out);
       return;
     }
     // R4c-8 (D8): a channel on your own claim, with any stance number, is row 1; the frames go to the notes.
@@ -775,8 +797,71 @@ class Translator {
     if (denied) this.notes.push({ reading: reading.id, frame: reading.stanceLists![0]!.inner?.[0] ?? denied });
     frames.standalone.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
     if (own) own.frames.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
+    talk.used.forEach((l) => this.notes.push({ reading: reading.id, frame: { ...l, construction: l.key } }));
+    // R4d decision O-1: a plain claim keeps its term for a later *therefore*.
+    const plain = bareFrames(frames, ctx) && !ctx.choice && !grounds && !claimTerms(reading.claim).some((t) => t.kind === "list" || t.kind === "clause" || t.kind === "quote" || t.kind === "blank");
+    if (plain) this.plainTerms.set(reading.id, this.claim(reading.claim, ctx));
+    this.talkRules(reading, talk, out);
     this.readings.push(reading.id);
     this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
+  }
+
+  /**
+   * R4d-1, R4d-3 to R4d-5 (R4d decisions O-4, O-5): the links that add no term. Used: a sentence linker, topic word or
+   * agenda number (`unit:linker`), a span topic (`body:topicMarker`), a tag (`slot:tag`; its phrase takes its own row),
+   * a discourse hook that adds, rewords or returns (`edge:hook`, {@link KEPT_HOOK}), and a polar word with no verdict
+   * (`ua`, `oe`, `ae`, `ue`, or any polar word on a command or with no reading before it). R4d-2: `ao` / `uo` on any
+   * ending (`-r` too, O-4) on a yes / no question or a statement is a verdict on that reading's claim; on a fill question,
+   * or a reading with a frame or a list, it stays unused. O-1: `xahom` names the reading its `cause` starts from.
+   */
+  talk(reading: Reading): Talk {
+    const out: Talk = { used: [] };
+    for (const l of reading.links) {
+      const text = raws(l.words);
+      if (l.key === "unit:linker" || l.key === "body:topicMarker" || l.key === "slot:tag") {
+        out.used.push(l);
+        if (l.key === "unit:linker" && text === "xahom" && l.to) out.therefore = l.to;
+      } else if (l.key === "edge:hook" && l.kind === "discourse" && KEPT_HOOK.test(text)) out.used.push(l);
+      else if (l.key === "edge:polar") {
+        const m = /^y([aeiou]+)[lmr]$/.exec(text);
+        if (!m) continue;
+        const to = l.to ? this.byId.get(l.to) : undefined;
+        const force = to?.frames.find((f) => f.key === "edge:force");
+        const command = force?.values.series === "o" || force?.values.series === "u";
+        if (["ua", "oe", "ae", "ue"].includes(m[1]!) || ((m[1] === "ao" || m[1] === "uo") && (!to || command))) out.used.push(l);
+        else if ((m[1] === "ao" || m[1] === "uo") && to && answerable(to)) {
+          out.used.push(l);
+          out.answer = { to, sign: m[1] === "ao" ? 1 : -1 };
+        }
+      }
+    }
+    return out;
+  }
+
+  /**
+   * R4d-2: a verdict takes the claim T of the reading it answers, written at that reading's sites (so its `zawan` stays
+   * the one answering): `holds(T) :- on(Id).` for `ao`, row 2's `holds(neg(T)) :- on(Id).` for `uo`. A first mention in
+   * T takes the answer's own constants under `ao` (row 14; its witness lines are the answer's) and its kind under `uo`.
+   * R4d decision O-1: `xahom` between two plain claims adds row 10's `holds(cause(Prior, Next)) :- on(Id).`
+   */
+  talkRules(reading: Reading, talk: Talk, out: string[]): void {
+    if (talk.answer) {
+      const { to, sign } = talk.answer;
+      if (sign > 0) for (const f of to.frames) if (f.key === "slot:newMember" && f.hosted) this.newMembers.add(f.hosted);
+      const had = this.witnesses.get(to.id);
+      const ctx: Ctx = { reading: to, id: str(reading.id), subst: new Map(), asserted: sign > 0, out };
+      const t = this.claim(to.claim, ctx);
+      this.rule(ctx, sign > 0 ? t : `neg(${t})`, []);
+      this.pool(reading, t, to.claim, sign);
+      const lines = this.witnesses.get(to.id);
+      if (!had && lines) {
+        this.witnesses.delete(to.id);
+        this.witnesses.set(reading.id, new Set([...(this.witnesses.get(reading.id) ?? []), ...lines]));
+      }
+    }
+    const prior = talk.therefore ? this.plainTerms.get(talk.therefore) : undefined;
+    const next = this.plainTerms.get(reading.id);
+    if (prior && next) this.rule({ reading, id: str(reading.id), subst: new Map(), asserted: true, out }, `cause(${prior},${next})`, []);
   }
 
   /**
@@ -2005,6 +2090,18 @@ function denied(items: readonly { slot: string }[], j: number, w: (t: string) =>
 }
 
 /** A claim with no role, predicate, verb, detail or clause (a call alone, `yazozon.`). */
+/**
+ * R4d-2: a reading a verdict can answer: a statement or a yes / no question with no frame but its act word and first
+ * mentions, and a claim with no list, blank, clause or quote.
+ */
+function answerable(reading: Reading): boolean {
+  const force = reading.frames.find((f) => f.key === "edge:force");
+  if (force && !(force.values.series === "a" || force.values.ask === "yesNo")) return false;
+  if (reading.unread.length || reading.claim.clauses || isEmptyClaim(reading.claim)) return false;
+  if (!reading.frames.every((f) => f.key === "edge:force" || f.key === "slot:newMember" || f.key === "edge:vocative")) return false;
+  return !claimTerms(reading.claim).some((t) => t.kind === "list" || t.kind === "blank" || t.kind === "clause" || t.kind === "quote");
+}
+
 function isEmptyClaim(claim: Claim): boolean {
   return !claim.verb && !claim.predicate.length && !Object.keys(claim.roles).length && !claim.details.length && !claim.clauses;
 }

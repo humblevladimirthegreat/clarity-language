@@ -207,3 +207,9 @@ Dee: zawan vowurol.
 @ k36
 Bea: zawan vowurol vul.
 = You don't walk.
+
+# R4a-4 with R4d-1: a topic-pronoun holder resolves to the topic; the topic word is a note. k14 + k15 clash in
+# Azozon's view.
+@ k14
+xazozon theyomalen zalazun vudurul.
+= Now, about Azozon: I gather Azozon thinks Alazun left.

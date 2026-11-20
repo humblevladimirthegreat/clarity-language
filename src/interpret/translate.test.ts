@@ -172,8 +172,8 @@ describe("translate: holders and say words (R2-1, R2-4)", () => {
 
   it("a holder on MAY is a choice of its view (R2-3); R4a-4: the topic pronoun holder is its topic, its link used", () => {
     assert.match(program("zalazun thomamazozon vudurul.").program, /^\{ holds\(view\(azozo,uduru\(z\(alazu\)\)\)\) \} :- on\("t:0\.0"\)\.$/m);
-    // Only the linker link is left; it is the links unit's.
-    assert.deepEqual(program("xazozon theyomalen zalazun vudurul.").left.map((l) => l.key), ["unit:linker"]);
+    // R4d-1: the topic word is a note, so nothing is left.
+    assert.deepEqual(program("xazozon theyomalen zalazun vudurul.").left.map((l) => l.key), []);
   });
 
   it("row 4: who has the say, by part and ending; pair reach e on z keeps its bl- word as to(X)", () => {

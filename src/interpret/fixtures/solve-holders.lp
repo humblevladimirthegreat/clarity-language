@@ -44,12 +44,13 @@
 % t:6.0 = k34
 % t:7.0 = k35
 % t:8.0 = k36
-% t:8.1 = undefined
+% t:8.1 = k14
 % t:8.2 = undefined
 % t:8.3 = undefined
 % t:8.4 = undefined
 % t:8.5 = undefined
 % t:8.6 = undefined
+% t:8.7 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -453,6 +454,12 @@ via("t:8.6",clues) :- on("t:8.6").
 fired("t:8.6",via("t:8.6",clues)) :- on("t:8.6").
 holds(view(azozo,neg(owuro(z(azozo))))) :- on("t:8.6").
 fired("t:8.6",view(azozo,neg(owuro(z(azozo))))) :- on("t:8.6").
+% t:8.7
+on("t:8.7").
+via("t:8.7",clues) :- on("t:8.7").
+fired("t:8.7",via("t:8.7",clues)) :- on("t:8.7").
+holds(view(azozo,uduru(z(alazu)))) :- on("t:8.7").
+fired("t:8.7",view(azozo,uduru(z(alazu)))) :- on("t:8.7").
 
 % Fits, from match().
 fits(c("t:0.12"),owuro(z(azozo))).

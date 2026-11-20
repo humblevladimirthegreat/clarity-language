@@ -1,0 +1,105 @@
+# Solver fixture: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5; sentence-linkers.md#sentence-linkers,
+# questions.md#polar-particle, polar-inventory.md#polar-endings, tag-pronouns.md#naming-with-a-tag, hooks.md#discourse-hooks).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# A line may start "Name: " to set the turn's speaker, as the log reader does; an entry with no name is the default speaker.
+# The golden reads the file as one log, so each verdict here answers the entry before it; solve.test.ts puts the
+# questions lk7 (yel zalazun vowurol.), lk15 (yel zalazun vezuvel.) and lk17 (yel zazozon vowurol ul bamahal.) before them.
+# R4d-1: lk1 to lk5, a linker, topic word or agenda number is a note (lk4: a topic word alone writes nothing); lk1, O-1:
+# xahom adds cause(Prior, Next). R4d-2: lk7 + lk8 to lk11, lk12 + lk13 (clash), lk14. R4d-3: lk7 / lk15 / lk17 + lk16, lk18.
+# R4d-4: lk19 to lk22. R4d-5: lk23 to lk27. O-4: lk40, the -r ending claims as -l does.
+
+@ lk1
+zazozon vowurol. xahom zalazun veruvol.
+= Azozon walks. Therefore Alazun runs.
+
+@ lk2
+zalazun vezuvel vul. xugohul zalazun veruvol.
+= Alazun isn't sleeping. On the contrary, Alazun is running.
+
+@ lk3
+xrodol zazozon vehohel.
+= Point two: Azozon sits.
+
+@ lk8
+Alazun: yaol.
+= Yes.
+
+@ lk4
+xazozon. xezem zalazun veruvol.
+= Now, about Azozon. However, Alazun runs.
+
+@ lk5
+xodozel zazozon dalen vayebel. zalen veruvol.
+= Now, about a dog: Azozon sees it. It runs.
+
+@ lk12
+Azozon: zalazun vowurol.
+= Alazun walks.
+
+@ lk13
+Ahelan: yuol.
+= No.
+
+@ lk14
+zazozon vowurol. yaol.
+= Azozon walks. Yes.
+
+@ lk19
+zodozel zwal dugedel dwol vayebel. zogozel dwar vayebel. zwar vowurol.
+= A dog (A) sees a cookie (O). A cat sees A. A walks.
+
+@ lk20
+zual gogozel zwal vezuvel.
+= Every cat, each one A, sleeps.
+
+@ lk21
+zazozon gogozel.
+= Azozon is a cat.
+
+@ lk9
+Alazun: yuol.
+= No.
+
+@ lk22
+zodozel zogozel zam zwal vowurol.
+= A dog and a cat, call them A, walk.
+
+@ lk23
+zazozon vehohel. al zalazun vowurol.
+= Azozon sits. Additionally, Alazun walks.
+
+@ lk10
+Alazun: yaom.
+= I think so.
+
+@ lk24
+er zazozon vowurol.
+= Anyway, Azozon walks.
+
+@ lk11
+Alazun: yaol zalazun vowurol.
+= Yes, Alazun walked.
+
+@ lk25
+aol zalazun vezuvel.
+= In fact, Alazun sleeps.
+
+@ lk16
+Alazun: yoer.
+= I'll pass for now.
+
+@ lk26
+zuvayal vowurol. ael zalazun vowurol.
+= The family walks. For example, Alazun walks.
+
+@ lk18
+Alazun: yual.
+= The question doesn't apply.
+
+@ lk27
+ol zahelan godozel.
+= In other words, Ahelan is a dog.
+
+@ lk40
+yaor zazozon vowurol.
+= All right, so Azozon walks, for now.

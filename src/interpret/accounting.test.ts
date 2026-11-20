@@ -119,6 +119,10 @@ describe("accounting guard: the drops it catches", () => {
     assert.deepEqual(left("zalazun thebam throgel vudurul.", "zalazun vudurul vul."), []);
   });
 
+  it("R4d-1: lk6, a linker on a question keeps the question's act, so both readings stay left only for edge:force; R4d-2: a verdict on a fill question stays unused", () => {
+    assert.deepEqual(left("yel zawan vowurol. xahom zawan veruvol."), ["noRow edge:force", "noRow edge:force"]);
+    assert.deepEqual(left("yel zar vowurol.", "yaol."), ["noRow edge:force", "unused edge:polar"]);
+  });
   it("a plain and list, a hinge, and a resumed pronoun are kept", () => {
     assert.deepEqual(left("zazozon zalazun zal vowurol."), []);
     assert.deepEqual(left("zual gogozel vowurol."), []);

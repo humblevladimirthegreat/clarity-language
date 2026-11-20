@@ -62,7 +62,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | unit | `vp` | structure | `clause.md#who-acts-and-the-action` | Fills `claim.verb`; a joined verb list is a list term, its join read by its `joinSeries` row |
 | unit | `predicate` | structure | `predication.md#identity` | Clause-level `/ɡ/`: fills `claim.predicate` |
 | unit | `h` | detail:adverb | `clause.md#adverbs-h` | Default for a plain `/h/` word. An `/h/` word with a restrictor, ability, or overlay reading takes that word's row first, except on a restrictor's occasion list, where it is this row whatever its reading (`residue-and-former.md#former-climate`) |
-| unit | `linker` | link | `sentence-linkers.md#sentence-linkers` | Points back to the one sentence before the period |
+| unit | `linker` | link | `sentence-linkers.md#sentence-linkers` | Points back to the one sentence before the period. On any other `/x/` word, a topic word or agenda number (`topic.md#topic`): links nothing to the claim |
 | unit | `hook` | structure | `hooks.md#including-am-al` | Read by its `hookJob` row |
 | unit | `writingSpan` | frame:quote | `spans.md#writing` | A cite fills one role; its words are a nested reading that keeps its own act word and frames (`quote-contents.md#quote-acts`, `evidentiality.md#carry-forward`). Loan, opaque and mention spans are `literal` terms (`spans.md#loans`); an aside `th(…)` is a nested comment reading (`spans.md#asides-th`) |
 | unit | `island` | structure | `scope-islands.md#scope-islands` | Nests: a stance inside frames that chunk only (rule 2) |

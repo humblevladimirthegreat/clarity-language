@@ -366,9 +366,10 @@ describe("solve: holders over restrictors, denials, say words and hinges (R4a-1 
     assert.deepEqual(await atoms(["k13", "k11"]), []);
   });
 
-  it("R4a-4: a topic-pronoun holder is the topic, and its anaphor link is used", () => {
-    const t = translate(buildLog([{ speaker: "a", at: 0, text: "xazozon theyomalen zalazun vudurul." }], tables));
-    assert.deepEqual(t.left.map((l) => l.unused), [['link unit:linker "xazozon"']]);
+  it("R4a-4: a topic-pronoun holder is the topic, and its anaphor link is used; with R4d-1, k14 + k15 clash in Azozon's view", async () => {
+    const t = translate(log("holders", ["k14"]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.deepEqual((await clashes(log("holders", ["k14", "k15"]), base)).clashes.map((c) => c.atom), ["view(azozo,uduru(z(alazu)))"]);
     const u = translate(buildLog([{ speaker: "a", at: 0, text: "zodozel vudurul. zalazun theyomodozer vezuvel." }], tables));
     assert.match(u.program, /^holds\(view\(nm\("t:0\.0",z\),ezuve\(z\(alazu\)\)\)\) :- on\("t:0\.1"\)\.$/m);
   });
@@ -1248,5 +1249,92 @@ describe("solve: denials, SHARED words and channels (R4c-3 to R4c-8, D7 to D9, R
     const left = (text: string) => translate(r([], [text]), { lexicon: tables }).left.map((l) => [l.reason, l.key]);
     assert.deepEqual(left("zobudal zuel."), [["fragment", "joinSeries:ue"]]);
     assert.deepEqual(left("zazozon zalazun zal growamol."), [["unused", "shared:distribute"]]);
+  });
+});
+
+describe("solve: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5)", () => {
+  // Each item is a solve-links.txt label or an Ageben line (a question the fixture cannot hold).
+  const lk = (...items: string[]) => buildLog(items.map((x, at) => named(fixture("links").get(x) ?? x, at)), tables);
+  const said = async (l: ReturnType<typeof lk>, question: string) => (await follows(l, q(question), base)).verdict;
+  const notes = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).notes.map((n) => `${n.reading} ${n.frame.key}`);
+  const ask = (text: string) => `Azozon: ${text}`;
+
+  it("R4d-1: lk1 to lk5, a linker, topic word or agenda number is a note and the clause stands; lk4, a topic word alone writes nothing", async () => {
+    assert.equal(await said(lk("lk1"), "yel zalazun veruvol."), "yes");
+    assert.deepEqual(notes(lk("lk1")), ["t:0.1 unit:linker"]);
+    assert.equal(await said(lk("lk2"), "yel zalazun veruvol."), "yes");
+    assert.equal(await said(lk("lk2"), "yel zalazun vezuvel."), "no");
+    assert.equal(await said(lk("lk3"), "yel zazozon vehohel."), "yes");
+    const four = translate(lk("lk4"), { lexicon: tables });
+    assert.deepEqual(four.left, []);
+    assert.match(four.program, /^on\("t:0\.0"\)\.\n% t:0\.1$/m);
+    assert.equal(await said(lk("lk4"), "yel zalazun veruvol."), "yes");
+    assert.equal(await said(lk("lk5"), "yel zazozon vayebel."), "yes");
+  });
+
+  it("O-1: lk1, xahom adds cause(Prior, Next), which not because denies; xugohul adds none", async () => {
+    assert.match(translate(lk("lk1"), { lexicon: tables }).program, /^holds\(cause\(owuro\(z\(azozo\)\),eruvo\(z\(alazu\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    assert.deepEqual((await clashes(lk("lk1", "zalazun veruvol thahum thul blarl zazozon vowurol."), base)).clashes.map((c) => c.readings), [["t:0.1", "t:0.2"]]);
+    assert.doesNotMatch(translate(lk("lk2"), { lexicon: tables }).program, /cause\(/);
+  });
+
+  it("R4d-2: lk7 + lk8 to lk11, a verdict takes the question's claim (yes or its denial); lk12 + lk13 clash; lk14 stands", async () => {
+    const q7 = ask("yel zalazun vowurol.");
+    assert.equal(await said(lk(q7, "lk8"), "yel zalazun vowurol."), "yes");
+    assert.equal(await said(lk(q7, "lk9"), "yel zalazun vowurol."), "no");
+    assert.equal(await said(lk(q7, "lk10"), "yel zalazun vowurol."), "yes");
+    assert.deepEqual(notes(lk(q7, "lk10")), ["t:1.0 edge:polar"]);
+    assert.equal(await said(lk(q7, "lk11"), "yel zalazun vowurol."), "yes");
+    assert.deepEqual(translate(lk(q7, "lk8"), { lexicon: tables }).left.map((l) => l.key), ["edge:force"]);
+    assert.deepEqual((await clashes(lk("lk12", "lk13"), base)).clashes.map((c) => c.readings), [["t:0.0", "t:1.0"]]);
+    assert.equal(await said(lk("lk14"), "yel zazozon vowurol."), "yes");
+    assert.deepEqual((await clashes(lk("lk14"), base)).clashes, []);
+  });
+
+  it("R4d-2: a first mention in the question takes the answer's constants under yes, its kind under no; a fill question's verdict stays left", () => {
+    const yes = translate(lk(ask("yel zazozon dodozel vayebel."), "lk8"), { lexicon: tables });
+    assert.match(yes.program, /^holds\(ayebe\(z\(azozo\),d\(nm\("t:1\.0",d\)\)\)\) :- on\("t:1\.0"\)\.$/m);
+    assert.ok(yes.witnesses.get("t:1.0")?.size);
+    assert.match(translate(lk(ask("yel zazozon dodozel vayebel."), "lk9"), { lexicon: tables }).program, /^holds\(neg\(ayebe\(z\(azozo\),d\(odoze\)\)\)\) :- on\("t:1\.0"\)\.$/m);
+    assert.deepEqual(translate(lk(ask("yel zar vowurol."), "lk8"), { lexicon: tables }).left.map((l) => [l.reason, l.key]), [["noRow", "edge:force"], ["unused", "edge:polar"]]);
+  });
+
+  it("R4d-3, O-5: lk15 + lk16, lk17 + lk18, a polar word with no verdict claims nothing and is not left; so does one on a command or an offer", async () => {
+    const q15 = lk(ask("yel zalazun vezuvel."), "lk16");
+    assert.equal(await said(q15, "yel zalazun vezuvel."), "unknown");
+    // T stays open: no world denies it (couldBe answers yes only where a choice could make T hold).
+    assert.equal((await couldBe(q15, q("yel zalazun vezuvel."), base)).verdict, "unknown");
+    assert.deepEqual(translate(q15, { lexicon: tables }).left.map((l) => l.reading), ["t:0.0"]);
+    const q17 = lk(ask("yel zazozon vowurol ul bamahal."), "lk18");
+    assert.equal(await said(q17, "yel zazozon vowurol ul bamahal."), "unknown");
+    assert.deepEqual(translate(q17, { lexicon: tables }).left.map((l) => l.reading), ["t:0.0"]);
+    const command = lk(ask("yol zalazun vowurol."), "Alazun: yaol.");
+    assert.equal(await said(command, "yel zalazun vowurol."), "unknown");
+    assert.deepEqual(translate(command, { lexicon: tables }).left.map((l) => l.reading), ["t:0.0"]);
+    const offer = lk(ask("yel zalazun vowurol."), "Alazun: yael.");
+    assert.equal(await said(offer, "yel zalazun vowurol."), "unknown");
+    assert.deepEqual(notes(offer), ["t:1.0 edge:polar"]);
+  });
+
+  it("R4d-4: lk19 to lk22, a tag is used once its phrase is written", async () => {
+    assert.equal(await said(lk("lk19"), "yel zodozel dugedel vayebel."), "yes");
+    assert.equal(await said(lk("lk19"), "yel zodozel vowurol."), "yes");
+    assert.equal(await said(lk("lk20", "lk21"), "yel zazozon vezuvel."), "yes");
+    assert.equal(await said(lk("lk22"), "yel zodozel vowurol."), "yes");
+  });
+
+  it("R4d-5: lk23 to lk27, a discourse hook that adds, rewords or returns keeps its clause", async () => {
+    assert.equal(await said(lk("lk23"), "yel zalazun vowurol."), "yes");
+    assert.equal(await said(lk("lk24"), "yel zazozon vowurol."), "yes");
+    assert.equal(await said(lk("lk25"), "yel zalazun vezuvel."), "yes");
+    assert.equal(await said(lk("lk26"), "yel zalazun vowurol."), "yes");
+    assert.equal(await said(lk("lk27"), "yel zahelan godozel."), "yes");
+    assert.deepEqual(notes(lk("lk24")), ["t:0.0 edge:hook"]);
+  });
+
+  it("O-4: lk40, -r claims as -l does, with the word in the notes; on a question too", async () => {
+    assert.equal(await said(lk("lk40"), "yel zazozon vowurol."), "yes");
+    assert.deepEqual(notes(lk("lk40")), ["t:0.0 edge:polar"]);
+    assert.equal(await said(lk(ask("yel zalazun vowurol."), "Alazun: yaor."), "yel zalazun vowurol."), "yes");
   });
 });
