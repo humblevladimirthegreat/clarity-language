@@ -59,6 +59,8 @@ To say the verb's claim holds at every time, use **`hual`**. Bare `hual` is *alw
 
 Because bare `hual` covers every time, it also covers whatever time a plain sentence is about: *Ahelan always sings* and *Ahelan doesn't sing* cannot both be true. With exceptions listed, or with open `huam`, the plain denial may fall in a gap, so the two can stand together.
 
+Put `hual` before [MAY](/knowing#may) and it says the thing is possible on every occasion: `hual zazozon vowurol thomam.` is *Azozon may walk any time*. That cannot stand with *Azozon never walks* (`zazozon vowurol hal.`). It can stand with *Azozon is not walking* (`zazozon vowurol vul.`), since being free to walk at any time does not say Azozon walks now.
+
 ### Sometimes / anytime / some other time
 
 To say *sometimes*, *anytime*, or *some other time* without naming the occasion (no *rain*, no *night*), put ending `-r` on the restrictor: `har`, `her`, `hur`. `-r` points at some time without saying which, so nothing needs to come before it.

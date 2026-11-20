@@ -5,73 +5,8 @@
 # Each group comment names the row, the entries that make one log (in that order), the question, the verdict the row
 # should give, and the verdict now (one probe run, 2026-11-19, commit 0184a2d8).
 
-# R4b-18: MAY over an and list. my1, ? zazozon vowurol. -> unknown; ?~ -> yes (now: unknown both, left
-# frameCombination).
-@ my1
-zazozon zalazun zal thomam vowurol.
-= Azozon and Alazun may be walking.
-
-# R4b-19: MAY over a whole-list denial. my2 + my3: no clash in the world without the guess (now: no clash, my2 left
-# frameCombination).
-@ my2
-zazozon thomam vowurol veruvol val vul.
-= Azozon may not both walk and run.
-
-@ my3
-zazozon vowurol. zazozon veruvol.
-= Azozon walks. Azozon runs.
-
-# R4b-20: MAY over a say word. my4, ? zazozon vowurol hwuvam. -> unknown; ?~ -> yes (now: unknown both, left
-# frameCombination).
-@ my4
-thomam zazozon vowurol hwuvam.
-= Maybe Azozon is allowed to walk.
-
-# R4b-21: MAY and a universal, both orders. my5 + my7 and my6 + my7, ? zazozon vowurol. -> unknown; ?~ -> yes
-# (now: unknown both, left frameCombination).
-@ my5
-thomam zual godozel vowurol.
-= Maybe every dog walks.
-
-@ my6
-zual godozel thomam vowurol.
-= Every dog may be walking.
-
-@ my7
-zazozon godozel.
-= Azozon is a dog.
-
-# R4b-22: MAY over always. my8 + my10: no clash in the world without the guess (now: no clash, my8 left
-# frameCombination).
-@ my8
-thomam zazozon vowurol hual.
-= Maybe Azozon always walks.
-
-# R4b-23 (D13): always over MAY. my9 + my10: clash, always possible against never (now: no clash, my9 left
-# frameCombination). my9 + my11: no clash; ?~ zazozon vowurol. -> no (now: no clash; no, from my11 alone).
-@ my9
-hual zazozon vowurol thomam.
-= Azozon may always walk (on any occasion, walking is possible).
-
-@ my10
-zazozon vowurol hal.
-= Azozon never walks.
-
-@ my11
-zazozon vowurol vul.
-= Azozon is not walking.
-
-# R4b-24: vaem vul. my12 + my13: clash, each item denied (now: no clash, my12 left noRow joinSeries:u).
-# my12, ? zazozon veruvol. -> no (now: unknown).
-@ my12
-zazozon vowurol veruvol vaem vul.
-= Azozon does not walk and/or run (neither).
-
-@ my13
-zazozon vowurol.
-= Azozon walks.
-
-# R4b-25 (D5): only-if and iff with MAY on the condition. my14 + my13, ? zalazun vezuvel. -> unknown;
+# R4b-25 (D5): only-if and iff with MAY on the condition. my14 + my13 (my13, zazozon vowurol., now in
+# solve-maybe.txt), ? zalazun vezuvel. -> unknown;
 # ?~ -> yes, the back rule gives may(sleep) (now: unknown both, my14 left noRow overlay:clause_hinge:th).
 # my15 + my13 the same.
 @ my14

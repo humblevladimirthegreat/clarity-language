@@ -59,8 +59,9 @@ describe("translate: MAY and or (R3-1, R3-5, R3-7)", () => {
     const key = (text: string) => program(text).left.map((l) => l.key ?? l.construction);
     // MAY on a hinge's condition reads only the forward rule of *if* (R3-5); a hinge over MAY too (R3-1 row 6).
     assert.deepEqual(key("zalazun vehohel thebem blarl zazozon thomam vowurol."), ["overlay:clause_hinge:th"]);
-    // A choice over members, a carried holder on a MAY sentence, and other stance numbers.
-    assert.deepEqual(key("thomam zazozon zalazun zal vowurol."), ["frameCombination"]);
+    // MAY over `huam` or `hal` over MAY (R4b-22, R4b-23 build only `hual` / `hal` under MAY and `hual` over it), and other stance numbers.
+    assert.deepEqual(key("thomam zazozon vowurol huam."), ["lexReading:restrictor"]);
+    assert.deepEqual(key("hal zazozon vowurol thomam."), ["lexReading:restrictor"]);
     assert.deepEqual(key("zalazun vudurul th_3."), ["lexReading:number:th"]);
   });
 

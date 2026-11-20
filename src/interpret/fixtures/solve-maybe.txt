@@ -76,6 +76,64 @@ zalazun vudurul thrawal.
 zalazun vudurul thramowal.
 = There is no chance Alazun has left.
 
+# R4b-18: MAY over members gates the list claim and each member (knowing.md#may). my1: follows Azozon walks cannot say; couldBe yes.
+@ my1
+zazozon zalazun zal thomam vowurol.
+= Azozon and Alazun may be walking.
+
+# R4b-19: MAY over a whole-list denial gates row 4 (knowing.md#may). my2 + my3: no clash, since the world without the gate is clash-free.
+@ my2
+zazozon thomam vowurol veruvol val vul.
+= Azozon may not both walk and run.
+
+@ my3
+zazozon vowurol. zazozon veruvol.
+= Azozon walks. Azozon runs.
+
+# R4b-20: MAY over a say word, may(say(..T)) (knowing.md#may, clause.md#which-covers-which). my4: follows the say word cannot say; couldBe yes for the rules' say word (a question's own -m speaker fits no turn's).
+@ my4
+thomam zazozon vowurol hwuvam.
+= Maybe Azozon is allowed to walk.
+
+# R4b-21: MAY and a universal (usually-vs-must.md#how-things-work). MAY first gates the generalization (my5); the binder first is a choice per member (my6). With my7, follows Azozon walks cannot say; couldBe yes.
+@ my5
+thomam zual godozel vowurol.
+= Maybe every dog walks.
+
+@ my6
+zual godozel thomam vowurol.
+= Every dog may be walking.
+
+@ my7
+zazozon godozel.
+= Azozon is a dog.
+
+# R4b-22: MAY over always gates row 15. my8 + my10: no clash. R4b-23 (D13, restrictors.md#always-hual): always over MAY is may(T) on every occasion; my9 + my10 clash (always possible against never), my9 + my11 do not, and couldBe Azozon walks gives no.
+@ my8
+thomam zazozon vowurol hual.
+= Maybe Azozon always walks.
+
+@ my9
+hual zazozon vowurol thomam.
+= Azozon may always walk (on any occasion, walking is possible).
+
+@ my10
+zazozon vowurol hal.
+= Azozon never walks.
+
+@ my11
+zazozon vowurol vul.
+= Azozon is not walking.
+
+# R4b-24: vaem vul denies each item, as vael vul (set-joins.md#exclusivity-and-denying-a-whole-list). my12 + my13 clash; my12 alone: follows Azozon runs gives no.
+@ my12
+zazozon vowurol veruvol vaem vul.
+= Azozon does not walk and/or run (neither).
+
+@ my13
+zazozon vowurol.
+= Azozon walks.
+
 # MAY as a holder's host (R3-1 row 4, R2-3): your guess about Azozon's view. m7 + m8: the world that holds both of Azozon's views clashes (R2-2) and is dropped (R3-4), so couldBe gives no, as for m1 + m2 (R3-2).
 @ m7
 zalazun thomamazozon vudurul.

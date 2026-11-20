@@ -930,3 +930,66 @@ describe("solve: because with a holder, MAY, a restrictor or or; the /ɡ/ stack 
     assert.deepEqual(translate(b(["bc19"]), { lexicon: tables }).left, []);
   });
 });
+
+describe("solve: MAY over members, denials, say words, universals and always; vaem vul (R4b-18 to R4b-24)", () => {
+  const m = (labels: string[], extra: string[] = []) => log("maybe", labels, extra);
+  const walks = q("zazozon vowurol.");
+
+  it("R4b-18: my1, MAY over members gates the list and each member", async () => {
+    assert.equal((await follows(m(["my1"]), walks, base)).verdict, "unknown");
+    assert.equal((await couldBe(m(["my1"]), walks, base)).verdict, "yes");
+    const t = translate(m(["my1"]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(owuro\(z\(X\)\)\) :- member\(ls\("t:0\.0",z\),X,G\), maybe\("t:0\.0"\), on\("t:0\.0"\)\.$/m);
+    assert.match(t.program, /^holds\(may\(owuro\(z\(ls\("t:0\.0",z\)\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+  });
+
+  it("R4b-19: my2 + my3, MAY over not both: no clash, the world without the gate is clash-free", async () => {
+    assert.deepEqual((await clashes(m(["my2", "my3"]), base)).clashes, []);
+    assert.match(translate(m(["my2"]), { lexicon: tables }).program, /^clash\(notall\("t:0\.0"\)\) :- .*maybe\("t:0\.0"\), on\("t:0\.0"\)\.$/m);
+    // Without MAY the same pair clashes (row 4).
+    assert.equal((await clashes(m(["my3"], ["zazozon vowurol veruvol val vul."]), base)).clashes.length, 1);
+  });
+
+  it("R4b-20: my4, MAY over a say word is may(say(..T)); the say word is a choice", async () => {
+    assert.equal((await follows(m(["my4"]), q("zazozon vowurol hwuvam."), base)).verdict, "unknown");
+    assert.match(translate(m(["my4"]), { lexicon: tables }).program, /^holds\(may\(say\(sp\("a"\),v,u,a,m,owuro\(z\(azozo\)\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    // The rules' say word, which a question can ask: could be, does not follow; a ban leaves it no world.
+    const rules = ["thomam zazozon vowurol hwuval."];
+    const allowed = q("zazozon vowurol hwuval.");
+    assert.equal((await couldBe(m([], rules), allowed, base)).verdict, "yes");
+    assert.equal((await follows(m([], rules), allowed, base)).verdict, "unknown");
+    assert.equal((await couldBe(m([], [...rules, "zazozon vowurol hwuvul."]), allowed, base)).verdict, "no");
+  });
+
+  it("R4b-21: my5 (MAY first) and my6 (the binder first) with my7: could be, does not follow", async () => {
+    for (const labels of [["my5", "my7"], ["my6", "my7"]]) {
+      assert.equal((await follows(m(labels), walks, base)).verdict, "unknown", labels.join());
+      assert.equal((await couldBe(m(labels), walks, base)).verdict, "yes", labels.join());
+    }
+    assert.match(translate(m(["my5"]), { lexicon: tables }).program, /^holds\(owuro\(z\(X\)\)\) :- holds\(isa\(X,odoze\)\), maybe\("t:0\.0"\), on\("t:0\.0"\)\.$/m);
+    const six = translate(m(["my6"]), { lexicon: tables }).program;
+    assert.match(six, /^\{ holds\(owuro\(z\(X\)\)\) \} :- holds\(isa\(X,odoze\)\), on\("t:0\.0"\)\.$/m);
+    assert.match(six, /^holds\(may\(owuro\(z\(X\)\)\)\) :- holds\(isa\(X,odoze\)\), on\("t:0\.0"\)\.$/m);
+  });
+
+  it("R4b-22: my8 + my10, MAY over always gates row 15: no clash", async () => {
+    assert.deepEqual((await clashes(m(["my8", "my10"]), base)).clashes, []);
+    assert.equal((await couldBe(m(["my8"]), walks, base)).verdict, "yes");
+  });
+
+  it("R4b-23 (D13): my9, always over MAY, clashes with never (my10), not with one not (my11)", async () => {
+    const c = (await clashes(m(["my9", "my10"]), base)).clashes;
+    assert.deepEqual(c.map((x) => [x.atom, x.readings]), [["always(may(owuro(z(azozo))))", ["t:0.0", "t:0.1"]]]);
+    assert.deepEqual((await clashes(m(["my9", "my11"]), base)).clashes, []);
+    assert.equal((await couldBe(m(["my9", "my11"]), walks, base)).verdict, "no");
+    assert.match(translate(m(["my9"]), { lexicon: tables }).program, /^always\(may\(owuro\(z\(azozo\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+  });
+
+  it("R4b-24: my12, vaem vul denies each item: clashes with my13, and Azozon runs gives no", async () => {
+    assert.equal((await clashes(m(["my12", "my13"]), base)).clashes.length, 1);
+    const a = await follows(m(["my12"]), q("zazozon veruvol."), base);
+    assert.equal(a.verdict, "no");
+    assert.deepEqual(a.because, ["t:0.0"]);
+  });
+});

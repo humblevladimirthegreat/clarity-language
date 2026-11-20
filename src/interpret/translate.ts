@@ -653,7 +653,11 @@ class Translator {
     const combination = { construction: "frameCombination", reason: "noRow" };
     const may = frames.may ?? frames.mayHost;
     // R3-1 rows 4 to 6, R3-6: which MAY rows combine with the reading's other frames.
-    if (frames.may && (frames.mayHost || frames.say || frames.universal || frames.restrictor || frames.likely)) return this.leave(reading, combination);
+    if (frames.may && (frames.mayHost || frames.likely)) return this.leave(reading, combination);
+    // R4b-20: MAY over a plain say word (`thomam … hwuvam`); the say word first stays R4a-12's data (`say(.., may(T))`).
+    if (frames.may && frames.say && !(over(reading, frames.may, frames.say) && !(frames.universal || frames.restrictor || frames.hinge || frames.holder || frames.because || frames.zone))) return this.leave(reading, combination);
+    // R4b-21 to R4b-23: MAY with a universal or a restrictor, and nothing else.
+    if (frames.may && (frames.universal || frames.restrictor) && (frames.hinge || frames.holder || frames.because || frames.zone)) return this.leave(reading, combination);
     if (frames.may && frames.holder && (frames.hinge || !over(reading, frames.holder, frames.may))) return this.leave(reading, combination);
     if (frames.mayHost && (frames.hinge || frames.universal || frames.restrictor || frames.likely)) return this.leave(reading, combination);
     if (frames.likely && (frames.hinge || frames.universal || frames.restrictor || frames.holder || frames.say)) return this.leave(reading, combination);
@@ -667,6 +671,13 @@ class Translator {
       if (over(reading, frames.may, frames.hinge)) mayOver = "gate";
       else if (over(reading, frames.hinge, frames.may)) mayOver = "outcome";
       else return this.leave(reading, combination);
+    } else if (frames.may && (frames.universal || frames.restrictor)) {
+      // R4b-21: MAY first gates the whole generalization; the binder first is a choice per member (no `mayOver`).
+      // R4b-22: MAY over `hual` / `hal` gates row 15; R4b-23 (D13): `hual` over MAY is `may(T)` on every occasion.
+      const other = (frames.universal ?? frames.restrictor)!;
+      if (over(reading, frames.may, other)) mayOver = "gate";
+      else if (over(reading, other, frames.may)) mayOver = frames.restrictor ? "outcome" : undefined;
+      else return this.leave(reading, combination);
     }
     const wrapped = this.wrap(reading, frames, ctx);
     if (wrapped && "reason" in wrapped) return this.leave(reading, wrapped);
@@ -674,7 +685,7 @@ class Translator {
     if (wrapped && (frames.zone || (frames.because && (wrapped.kind !== "view" || wrapped.say)))) return this.leave(reading, combination);
     if (wrapped) {
       // R3-6: the holder covers its own MAY. A carried holder on a MAY sentence has no row.
-      if (frames.may && !frames.holder) return this.leave(reading, combination);
+      if (frames.may && !frames.holder && !(frames.say && wrapped.kind === "say")) return this.leave(reading, combination);
       if (frames.may && wrapped.kind === "view") wrapped.may = true;
       ctx.wrap = wrapped;
       ctx.asserted = false;
@@ -905,7 +916,8 @@ class Translator {
     const denial = denials[0];
     // R3-1 row 7: the list a whole-list denial denies; `vael vul` denies each item, as a plain denial does.
     const inner = denial && denial.parts.length > 1 && denial.parts.at(-1)!.members.length === 0 ? joinOf(denial.parts[0]!.join) : undefined;
-    const whole = !!inner && !(inner.series === "ae" && inner.ending === "l");
+    // R4b-24: `vaem vul` as `vael vul` ("On `ae`, even `-m` still needs at least one of the listed items").
+    const whole = !!inner && !(inner.series === "ae" && (inner.ending === "l" || inner.ending === "m"));
     const ors = claimTerms(claim, false).filter(isOrList);
     const noRow = (key: string): Why => ({ construction: key.replace("joinSeries:", "join."), key, reason: "noRow" });
     // R4b-7 (D12): *because* with an *or* list in its outcome, alone.
@@ -914,8 +926,12 @@ class Translator {
     if (ctx.deny && denial) return noRow("joinSeries:u");
     // R3-1 row 5: MAY over an or list gates it, as over a hinge.
     if (ors.length && frames.may) [ctx.choice, mayOver] = [false, "gate"];
-    // A choice or a gate over a whole-list denial or over members has no row.
-    if ((ctx.choice || mayOver) && (whole || claimMemberLists(claim, reading).size)) return { construction: "frameCombination", reason: "noRow" };
+    // R4b-18, R4b-19: plain MAY over members or over a whole-list denial gates them, as over an *or* list. Any other
+    // choice or gate over them has no row.
+    const listed = whole || claimMemberLists(claim, reading).size > 0;
+    const plainMay = !!frames.may && !ctx.wrap && !frames.mayHost && !frames.likely && !frames.universal && !frames.restrictor && !frames.zone && !frames.because;
+    if (listed && ctx.choice && !mayOver && plainMay) [ctx.choice, mayOver] = [false, "gate"];
+    else if (listed && (ctx.choice || mayOver)) return { construction: "frameCombination", reason: "noRow" };
     if (mayOver === "gate") {
       this.rule(ctx, `maybe(${ctx.id})`, [], "gate");
       ctx.gate = `maybe(${ctx.id})`;
@@ -938,6 +954,9 @@ class Translator {
       const instance = closed ?? (list?.kind === "list" && !none && list.values.ending === "m" ? universalInstance({ ...list, values: { ...list.values, ending: "l" } }) : undefined);
       if (!list || !instance || instance.kind !== "thing" || instance.details.length) return { construction: f.construction, key: f.key, reason: "noRow" };
       open = !closed;
+      // R4b-21: MAY with a closed universal only (row 8), never with *no K* and no verb.
+      const lone = !claim.verb && !claim.predicate.length && Object.keys(claim.roles).length === 1;
+      if (frames.may && (open || lone)) return { construction: "frameCombination", reason: "noRow" };
       if (none) sign = -1;
       if (denial && (none || whole)) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
       const k = name(instance.root);
@@ -1008,7 +1027,24 @@ class Translator {
       const always = v.series === "ua" && v.ending === "l";
       const never = v.series === "a" && v.ending === "l";
       const usually = v.series === "ua" && v.ending === "m";
-      if (denial || !(always || never || usually) || (usually && listed)) return { construction: frames.restrictor.construction, key: frames.restrictor.key, reason: "noRow" };
+      const bad = { construction: frames.restrictor.construction, key: frames.restrictor.key, reason: "noRow" };
+      if (denial || !(always || never || usually) || (usually && listed)) return bad;
+      // R4b-22: MAY over bare `hual` / `hal` gates row 15 (the gate is already on ctx); `huam` has no row there.
+      if (frames.may && usually) return bad;
+      if (frames.may && mayOver === "outcome") {
+        // R4b-23 (D13, restrictors.md#always-hual): `hual` over MAY is `may(T)` with the marker `always(may(T))`; it
+        // clashes with *never*, not with one *not*.
+        if (!always || listed) return bad;
+        this.use(frames.restrictor);
+        const t = heads[0]!.text;
+        const marker = `always(may(${t}))`;
+        this.rule(ctx, `may(${t})`, []);
+        this.rule(ctx, `may(${t})`, [], "always");
+        this.rule(ctx, marker, [{ atom: `never(${t})`, premise: `never(${t})` }], "clash");
+        this.rule(ctx, marker, [{ atom: "never(P)", premise: "never(P)" }, { atom: `fits(P,${t})` }], "clash");
+        this.pool(reading, t, heads[0]!.claim, 1);
+        return true;
+      }
       // R4b-14: a zone only with bare `hual` / `hal`.
       if (zone && (usually || listed)) return zoneBad;
       this.use(frames.restrictor);
@@ -1046,7 +1082,10 @@ class Translator {
       else this.pool(reading, h.text, h.claim, ban ? -1 : h.sign);
       // R3-5: every MAY reading gives `may(T)`, which a hinge on a MAY condition reads; the holder's own MAY (R3-6) is
       // already a term inside the view.
-      if ((frames.may && !ctx.wrap) || frames.mayHost) this.rule({ ...ctx, choice: false }, `may(${this.w(ctx, lit(h))})`, []);
+      // R4b-18: over members the gate's `may(T)` is on the list term, ungated. R4b-20: over a say word, `may(say(..T))`.
+      // R4b-21: the binder over MAY gives `may(T[X])` per member; MAY over the binder has only the gate.
+      const mayRow = (frames.may && (!ctx.wrap || ctx.wrap.kind === "say") && !(frames.universal && mayOver === "gate")) || frames.mayHost;
+      if (mayRow) this.rule({ ...ctx, choice: false, gate: undefined }, `may(${this.w(ctx, lit(h))})`, list ? body : []);
     }
 
     // Membership (row 10): the claim keeps its list term, and each member (or each paired place) holds; R2-5, inside a
