@@ -1,6 +1,6 @@
 # Solver coverage: the edge, wrong answers, and fill questions
 
-**Status:** IN PROGRESS, 2026-11-20: phases 1 to 4 done. Phase 4 (B2b, B3a, T1, B3b, B3c, B3d, B4a, P2): contrary-to zones, MAY over a clause and on hinges, hinges on universals, rank and ties, probe output scoping (T1), and the `verb-and-stance-joins.md` checkpoint (P2); open decisions 2 and 3 settled as D18 and D19 and built. Open decisions 4 and 5 settled 2026-11-20 as D21 and D22. Next is phase 5 (B4b, B4c, B6a, B6b, B6c, B5a, B5b, S1). User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
+**Status:** IN PROGRESS, 2026-11-20: phases 1 to 4 done. Phase 4 (B2b, B3a, T1, B3b, B3c, B3d, B4a, P2): contrary-to zones, MAY over a clause and on hinges, hinges on universals, rank and ties, probe output scoping (T1), and the `verb-and-stance-joins.md` checkpoint (P2); open decisions 2 and 3 settled as D18 and D19 and built. Open decisions 4 and 5 settled 2026-11-20 as D21 and D22. Next is phase 5 (B4b, B4c, B6a, B6b); then phase 6 (B6c, B5a, B5b, S1), split off 2026-11-20 to fit one session's budget. User, 2026-11-19: close the edge (group 1) and the borderline items (fill questions, `ue` / `oe`, other stance numbers) now, without waiting for a consumer; host policies (group views, one-way attacks, fewest clashes, *not ruled out*, likelihood thresholds) wait for a consumer; each later phase is sized to phase 2's spend. The solver's first version shipped; [solver.md](../../meta/solver.md) owns its rows, jobs and edge.  
 **Related:** [solver.md](../../meta/solver.md); [interpreter.md](../../meta/interpreter.md) (classification and pair tables); `src/interpret/` (`translate.ts`, `solve.ts`, `read.ts`, `classes.ts`, `match.ts`, `log.ts`, `probe.ts`, `cli.ts`); grammar pages [holder](/holder), [permission and consent](/permission-consent), [because](/because-and-iff), [fault](/fault), [causation](/causation), [contrary to](/contrary-to), [knowing](/knowing), [evidentiality](/evidentiality), [restrictors](/restrictors), [rank joins](/rank-joins), [set joins](/set-joins), [list structure](/list-structure), [comparatives](/comparatives), [pronouns](/pronouns), [collectives](/collectives), [questions](/questions), [fill-ask roles](/fill-ask-roles), [sentence linkers](/sentence-linkers), [polar inventory](/polar-inventory), [hooks](/hooks), [notional](/notional); recipe page `say-people-places.md`.  
 **Depends on:** none.  
 **Design authority:** no new forms. The page sentences the confirmed rows name (each written in the unit that builds its row).
@@ -9,7 +9,7 @@
 
 Phase 1 built the faithful half: the **accounting guard** in `translate.ts` (`Translation.accounting`) sends a reading with an unused part to `left` with reason `unused` (a question with one answers `beyond`), and the sweep `src/interpret/accounting.test.ts` fails on a kept grammar example with an unused part. Speaker and listener are turn-tied (`listener(N)`, `Translation.site(id)`, `TermSite` in `match.ts`).
 
-Phases 3 and 4 built the rows below; [solver.md](../../meta/solver.md#translation-table) owns each. What phase 5 builds on:
+Phases 3 and 4 built the rows below; [solver.md](../../meta/solver.md#translation-table) owns each. What phases 5 and 6 build on:
 
 - **The conditional is a claim term.** A plain *if* / *only if* / *iff* claims `if(c(Id),o(Id))`, `onlyif(..)` or `iff(..)`; matching between conditionals is `Translation.conditionals` / `conditionalFits`. MAY wraps a side: `if(may(c),o)`, `if(c,may(o))`, or `may(if(..))` with a choice on the plain term (`Conditional.may` keeps a wrapped one from meeting a plain one). A hinge on a closed universal claims a template term plus a member term per stated member (`Conditional.id` = `"Id",M`), rows 5–7 run per member. A hinge in a holder's view claims `view(H, if(..))`.
 - **Zones.** `against(T, Z)` with `Z` = `plan(H)`, `want(H)`, `decision(H)`, `channel(Gloss, H)` or a say word; `H` = `sp("…")` with no holder; a zone over a hinge puts `against` on the conditional.
@@ -36,7 +36,7 @@ User, 2026-11-19 (D7–D10) and 2026-11-20 (D21, D22), each as recommended. D1�
 
 ## Implementation plan
 
-Run with subagents ([running with subagents](../../meta/procedures/proposals.md#running-with-subagents)); phases 1 to 4 are done, one phase remains. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Every unit runs in sequence: they share `translate.ts`, its tests and `solver.md`.
+Run with subagents ([running with subagents](../../meta/procedures/proposals.md#running-with-subagents)); phases 1 to 4 are done, two phases remain. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Every unit runs in sequence: they share `translate.ts`, its tests and `solver.md`.
 
 **Budget** (user, 2026-11-19): each phase spends about what phase 2 did, five drafting units of about 40 tool calls and 110k–140k subagent tokens each. A build unit costs more per row than a drafting unit (code, goldens, tests, page sentences), so each build unit takes about four to eight rows, and each phase five or six units, the lighter units (FX, P1, S1) filling the sixth place.
 
@@ -44,7 +44,7 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
 
 **Every build unit may edit:** `src/interpret/translate.ts`, `src/interpret/solve.ts` (only where a row changes a verdict or reply), their tests, `src/interpret/fixtures/solve-*`, `src/interpret/fixtures/draft-*`, `docs/meta/solver.md`, the grammar pages its rows' page sentences name. A unit's own **May edit:** line adds to this.
 
-### Carried into phase 5
+### Carried into phases 5 and 6
 
 - **B4b:** R4c-5 marks the SHARED hook's `hookJob` frame (R4c finding 3).
 - **B6a:** k14 (`draft-holders.txt`, its only case, a topic-pronoun holder) is left only for `unit:linker`; R4d-1 clears it.
@@ -59,7 +59,7 @@ Run with subagents ([running with subagents](../../meta/procedures/proposals.md#
   - rank: an open tie with a factor (`zoem`); a factor on a tie of three or with a verb; `zaol` with one name or a verb; any frame on a rank shape other than R1-8
   - `zazozon guzemel vul.` reads `vul` as the verb *no*, not a denial of the adjective claim (B3c); check how the grammar denies an adjective predication before calling it a reader bug
 
-### Phase 5: lists, links, fill; style
+### Phase 5: lists, rank matching, links
 
 **B4b Lists and stance numbers.**  
 `proposal-worker`, `model: opus`, effort `high`.  
@@ -80,6 +80,10 @@ R4d-1 to R4d-5; R4d decisions O-1 (only `xahom` adds `cause(Prior, Next)`), O-4 
 R4d-6 to R4d-8; R4d decisions O-2 (*instead* drops the replaced reading) and O-3 (*except* narrows the general claim; the page sentence goes on `hooks.md`). First the reader gaps: `hookJob:resume` gets its `to` and landmark; `standInBack` takes the latest content of its kind (`durth`, `derth`, `dorth`), not always the previous sentence; `el`, `em`, `ul`, `um` hooks get a `to`. Table fragments with nothing after a stand-in (`herom blarl`, `ul barl`) take reason `fragment` (B4b's).  
 **May edit:** as every build unit, plus `src/interpret/read.ts` (those hook and stand-in fields only).
 
+**Order:** B4b, B4c, B6a, B6b. Then consolidate this proposal and stop.
+
+### Phase 6: joined verbs, fill; style
+
 **B6c Joined verbs and NOTIONAL.**  
 `proposal-worker`, `model: opus`, effort `high`.  
 R4d-9 and R4d-10 (a `val` verb list claims each verb; *respectively*), with the verb list counted as an accounting part; R4d decision O-6 (NOTIONAL is a wrap, `view(notional, T)`, carried readings too, never `holds(T)`). R4e finding 5 (`thanam thohem thul blarl`, hg11) builds here if B4b's channel row says what denying DEDUCED adds.
@@ -98,9 +102,9 @@ Export `fill` from `solve-browser.ts` and `browser.ts`; `reading.mjs solve` and 
 The `npm run changed-sections -- <rev>` list, where `<rev>` is `9e38c73d`, the commit before F1's.  
 **May edit:** the listed sections.
 
-**Order:** B4b, B4c, B6a, B6b, B6c, B5a, B5b, S1. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), folding anything left into [solver.md](../../meta/solver.md#the-edge).
+**Order:** B6c, B5a, B5b, S1. Then the final gate, and the orchestrator deletes this proposal ([consolidate](../../meta/procedures/proposals.md#consolidate)), folding anything left into [solver.md](../../meta/solver.md#the-edge).
 
-**Running phase 5.** Before each build unit the orchestrator runs that unit's draft cases through one `probe` file and appends the result to the brief. A unit that passes about 40 tool calls with more than a few edits left stops and hands back; the orchestrator starts a fresh subagent for the rest.
+**Running phases 5 and 6.** Before each build unit the orchestrator runs that unit's draft cases through one `probe` file and appends the result to the brief. A unit that passes about 40 tool calls with more than a few edits left stops and hands back; the orchestrator starts a fresh subagent for the rest.
 
 ### Rule digest (pasted into every brief)
 
@@ -152,8 +156,8 @@ Full rules a subagent may open if the digest does not settle a question: [solver
 ### Gates and commits
 
 - `npm run verify -- --baseline` at the start of each phase; `npm run verify -- --allow-generate` after each unit, before its commit.
-- Final gate, at the end of phase 5: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
-- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 5 makes eight unit commits and a last one deleting this proposal.
+- Final gate, at the end of phase 6: a full `npm run verify` that passes against an empty baseline (it runs the build and the tests).
+- One commit per unit, after its gate: `solver-coverage <ID>: … [skip-cd]` with the co-author line; phase 5 makes four unit commits and a consolidation commit; phase 6 four unit commits and a last one deleting this proposal.
 
 ## Confirmed rows
 
