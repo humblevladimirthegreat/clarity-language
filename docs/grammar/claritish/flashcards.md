@@ -10,7 +10,7 @@ The Claritish flashcards put every drop-in from the lessons into Anki, a flashca
 
 ## What the pack holds {#contents}
 
-The decks sit under one deck called **Claritish**, in the order of the lessons, with the bonus lesson last.
+The lesson decks sit inside one deck called **Claritish**, in the order of the lessons, with the bonus lesson last.
 
 <ClaritishFlashcards part="decks" />
 
@@ -30,7 +30,7 @@ The file holds only the flashcards. Anki keeps your progress on your own device.
 
 Read a lesson first, then study its deck: open **Claritish**, then the deck with the lesson's title. When a drop-in shows, say what it means before you press **Show Answer**. Recalling the meaning yourself, rather than recognizing it on the back, is what makes it stick.
 
-Studying the **Claritish** deck itself draws new flashcards from every lesson, in lesson order. That shows you drop-ins from lessons you have not read yet, so keep to the lesson decks until you have read them all.
+Studying the **Claritish** deck itself draws new flashcards from every lesson, in lesson order. That shows you drop-ins from lessons you have not read yet, so keep to the lesson decks until you have read every lesson.
 
 ## Updating {#updating}
 
