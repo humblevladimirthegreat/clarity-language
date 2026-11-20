@@ -114,7 +114,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | xFamily | `compound` | label | `compounds.md#two-roots-one-word` | |
 | overlay | `sake:th` | frame:sake | `sakes.md#word-shape` |  |
 | overlay | `sake:w` | frame:sake | `sakes.md#personal-possession` | adjective reach |
-| overlay | `evidential:th` | frame:stance | `knowing.md#live-vs-memory` |  |
+| overlay | `evidential:th` | frame:stance | `knowing.md#live-vs-memory` | On your own claim, row 1 with the frame in `notes` (D8); a stance number beside it goes to the notes too |
 | overlay | `evidential:w` | frame:stance | `universality.md#mood-on-one-adjective` | adjective reach |
 | overlay | `mirative:th` | frame:mirative | `mirative.md#mirative` |  |
 | overlay | `residue:h` | frame:residue | `residue-and-former.md#residue` |  |
@@ -167,14 +167,14 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | joinSeries | `a` | structure | `joins.md#and-lists-a` | A list term, set *and* |
 | joinSeries | `o` | structure | `joins.md#rank-o` | A list term, rank |
 | joinSeries | `ao` | structure | `rank-joins.md#route-ao` | A list term, in order |
-| joinSeries | `u` | frame:polarity | `joins.md#negation-u` | List reach: a list join denies only its items, so it nests in its list term (rule 2) and does not pair. On `/v/` it denies the verb (`verb-and-stance-joins.md#vp-clause-forms`); on `/th/` the stance words right before it, so it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`, `verb-and-stance-joins.md#stance-join-reach`). A standalone `/th/` join (`thul`, `thum`, `thur`) has no stance words right before it and says how to take the whole claim, so it pairs (`verb-and-stance-joins.md#standalone-stance-joins`). A `zul` fence with no items and a shared kind is `u:kind` |
+| joinSeries | `u` | frame:polarity | `joins.md#negation-u` | List reach: a list join denies only its items, so it nests in its list term (rule 2) and does not pair. On `/v/` it denies the verb (`verb-and-stance-joins.md#vp-clause-forms`); on `/th/` the stance words right before it, so it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`, `verb-and-stance-joins.md#stance-join-reach`). A standalone `/th/` join (`thul`, `thum`, `thur`) has no stance words right before it and says how to take the whole claim, so it pairs (`verb-and-stance-joins.md#standalone-stance-joins`). A `zul` fence with no items and a shared kind is `u:kind`. Two `u` lists in one clause: every pairing denied, `neg(T[a][b])` (D9) |
 | joinSeries | `u:kind` | frame:binder | `universals-domains.md#universals-domains-generics` | *No K*: a `zul` fence (any role level) with no items and the kind on shared `/ɡ/`, "the same shape with `u`" as *every K* (`zul gogozel vehohel.`; with no verb, *there is no K*: `zul godozel.`). The fence binds as `ua` does and hosts its list; the `u` denial is the frame's `inner` (a `joinSeries:u` polarity frame on the same word), not a frame on the list term. Its shared word is `shared:kind` |
 | joinSeries | `ua` | frame:binder | `joins.md#everything-ua` | *Every K* / *everything but X* (`universals-domains.md#universals-domains-generics`); reaches from where it stands to the end of its sentence. On `/th/` after stance words (`thual`, *every ground but these*), it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`) |
 | joinSeries | `uo` | frame:binder | `rank-joins.md#invert-u-stacks` | Ranked counterpart of `ua`; frame by default. On `/th/` after stance words, it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`) |
 | joinSeries | `e` | structure | `joins.md#choice-e` | A list term, choice |
 | joinSeries | `ae` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term |
 | joinSeries | `oe` | structure | `set-joins.md#full-single-item-and-standalone-inventories` | A list term; with a shared scale a tie, `tie(S, A, B, E)` per ordered pair; closed `-l` clashes with rank `o` on the same scale; with a verb each member's act holds (D17) |
-| joinSeries | `ue` | frame:polarity | `set-joins.md#exclusivity-and-denying-a-whole-list` | List reach, as `u`; frame by default |
+| joinSeries | `ue` | frame:polarity | `set-joins.md#exclusivity-and-denying-a-whole-list` | List reach, as `u`; frame by default. Row 2 on each item; nothing for the outside item (D7). With no verb, a fragment |
 | anaphor | `content` | link | `pronouns.md#resume-r` | Whole-stem resume |
 | anaphor | `number` | link | `pronouns.md#resume-r` | A number resumed with `-r` |
 | anaphor | `role` | link | `pronouns.md#resume-r` | Resume by role compound |
@@ -187,8 +187,8 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | ask | `rhetorical` | frame:force | `more-turn-words.md#rhetorical` |  |
 | ask | `none` | structure | `questions.md#question` | Not a question |
 | answer | `answer` | link | `questions.md#fill-ask` | A reply filling a blank |
-| shared | `distribute` | link | `list-structure.md#shared-after-the-join` | SHARED describes each member. A hook right after a noun list's join word ("is SHARED, like an adjective there: it belongs to every item") is read by its `hookJob` row into the list's `sharedDetails` with role `distribute`, not into the claim's details; the parser keeps it a clause unit and gives it no `SharedRecord`, so it has no `shared` link |
-| shared | `collective` | link | `collectives.md#verbs-v` | The list acts as one |
+| shared | `distribute` | link | `list-structure.md#shared-after-the-join` | SHARED describes each member. A hook right after a noun list's join word ("is SHARED, like an adjective there: it belongs to every item") is read by its `hookJob` row into the list's `sharedDetails` with role `distribute`, not into the claim's details; the parser keeps it a clause unit and gives it no `SharedRecord`, so it has no `shared` link. A hosted `/ɡ/` + `/b/` and a verb join's shared `/d/`, `/b/` or `/h/`: a detail of each member (row 14) / a part of each verb's term. A hosted relation with no `bl-` word: each member to each other member |
+| shared | `collective` | link | `collectives.md#verbs-v` | The list acts as one. On a `/ɡ/` adjective, the list as one, `isa(ls(..), K)`; no member facts |
 | shared | `scale` | link | `list-structure.md#shared-after-the-join` | A shared scale word after the join; one item before `o`: the superlative, `most(S, A)` |
 | shared | `equative` | link | `list-structure.md#shared-after-the-join` | A tie, `tie(S, A, B, E)` per ordered pair; closed `-l` clashes with rank `o` on the same scale; with a verb each member's act holds (D17) |
 | shared | `kind` | link | `universals-domains.md#universals-domains-generics` | The kind after a `ua` / `uo` fence, or after a *no K* `zul` fence (`joinSeries:u:kind`) |

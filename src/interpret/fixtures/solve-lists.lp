@@ -14,6 +14,10 @@
 % t:0.13 = r10
 % t:0.14 = r11
 % t:0.15 = r12
+% t:0.16 = l7
+% t:0.17 = l8
+% t:0.18 = l9
+% t:0.19 = l10
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -179,6 +183,42 @@ fired("t:0.14",ratio(dt("slot:adj","gelazem"),azozo,alazu,v(2))) :- on("t:0.14")
 on("t:0.15").
 holds(ratio(dt("slot:adj","gelazem"),azozo,alazu,v(2))) :- on("t:0.15").
 fired("t:0.15",ratio(dt("slot:adj","gelazem"),azozo,alazu,v(2))) :- on("t:0.15").
+% t:0.16
+on("t:0.16").
+holds(neg(ageda(z(alazu),d(obode)))) :- on("t:0.16").
+fired("t:0.16",neg(ageda(z(alazu),d(obode)))) :- on("t:0.16").
+% t:0.17
+on("t:0.17").
+holds(neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.17").
+fired("t:0.17",neg(ayebe(z(azozo),d(odoze)))) :- on("t:0.17").
+holds(neg(ayebe(z(azozo),d(ogoze)))) :- on("t:0.17").
+fired("t:0.17",neg(ayebe(z(azozo),d(ogoze)))) :- on("t:0.17").
+holds(neg(ayebe(z(alazu),d(odoze)))) :- on("t:0.17").
+fired("t:0.17",neg(ayebe(z(alazu),d(odoze)))) :- on("t:0.17").
+holds(neg(ayebe(z(alazu),d(ogoze)))) :- on("t:0.17").
+fired("t:0.17",neg(ayebe(z(alazu),d(ogoze)))) :- on("t:0.17").
+% t:0.18
+on("t:0.18").
+holds(owuro(z(ls("t:0.18",z)))) :- on("t:0.18").
+fired("t:0.18",owuro(z(ls("t:0.18",z)))) :- on("t:0.18").
+holds(isa(nm("t:0.18",z1),odoze)) :- on("t:0.18").
+fired("t:0.18",isa(nm("t:0.18",z1),odoze)) :- on("t:0.18").
+detail(nm("t:0.18",z1),dt("hookJob:genitive","om",ahela,w)) :- on("t:0.18").
+fired("t:0.18",detail(nm("t:0.18",z1),dt("hookJob:genitive","om",ahela,w))) :- on("t:0.18").
+holds(isa(nm("t:0.18",z2),ogoze)) :- on("t:0.18").
+fired("t:0.18",isa(nm("t:0.18",z2),ogoze)) :- on("t:0.18").
+detail(nm("t:0.18",z2),dt("hookJob:genitive","om",ahela,w)) :- on("t:0.18").
+fired("t:0.18",detail(nm("t:0.18",z2),dt("hookJob:genitive","om",ahela,w))) :- on("t:0.18").
+holds(owuro(z(X))) :- member(ls("t:0.18",z),X,G), on("t:0.18").
+fired("t:0.18",owuro(z(X))) :- member(ls("t:0.18",z),X,G), on("t:0.18").
+% t:0.19
+on("t:0.19").
+holds(isa(ls("t:0.19",z),arole)) :- on("t:0.19").
+fired("t:0.19",isa(ls("t:0.19",z),arole)) :- on("t:0.19").
+
+% Fits, from match().
+fits(ayebe(z(azozo),d(ogoze)),ayebe(z(azozo),d(nm("t:0.1",d1)))).
+fits(ayebe(z(alazu),d(odoze)),ayebe(z(alazu),d(nm("t:0.1",d2)))).
 
 % Members, from claimMemberLists().
 member(ls("t:0.0",z),azozo,1).
@@ -191,6 +231,8 @@ member(ls("t:0.8",z),azozo,1).
 member(ls("t:0.8",z),alazu,2).
 member(ls("t:0.11",z),azozo,1).
 member(ls("t:0.11",z),ahela,2).
+member(ls("t:0.18",z),nm("t:0.18",z1),1).
+member(ls("t:0.18",z),nm("t:0.18",z2),2).
 
 % Number order, from compareValues().
 less(v(-2),v(2)).

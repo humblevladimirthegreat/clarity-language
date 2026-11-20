@@ -19,7 +19,7 @@ import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type { LexWord } from "../parse/types.js";
 import type { Addressed, Addressee, Log, LogEntry } from "./log.js";
 import { match, type TermSite } from "./match.js";
-import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
+import { asMember, claimMemberLists, collective, compoundHeads, memberList, throughAntecedent, universalInstance, type ListTerm, type StepLexicon } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
 
@@ -33,7 +33,8 @@ export type TranslateOptions = {
 /**
  * A reading left out of the program, as an `unread` part is: the turn is `beyond` for a solver job. Reason `noRow`: a
  * frame or combination with no row; `unused`: every frame has a row, but the rows that ran left a part of the reading
- * unused (the accounting guard), listed in `unused`.
+ * unused (the accounting guard), listed in `unused`; `fragment` (R4c decision 5): a verbless list (`zobudal zuel.`), an offer or
+ * a name rather than a claim, with no claim term (`construction` `fragment`, `key` the list's join frame).
  */
 export type LeftOut = { reading: ReadingId; construction: string; key?: string; reason: string; unused?: string[] };
 
@@ -127,7 +128,7 @@ const RESERVED = new Set([
   "less", "same", "always", "never", "notall", "none", "more", "c", "o", "i", "act", "lit", "pro", "cl", "quote", "speaker",
   "listener", "blank", "not", "view", "say", "via", "to", "grp", "sp", "rules", "unsaid", "interlocutors", "generic", "against",
   "requires", "may", "maybe", "some", "noneof", "notone", "likely", "bans", "cause", "fault", "share", "plan", "channel",
-  "if", "onlyif", "iff", "we", "every", "because", "want", "decision",
+  "if", "onlyif", "iff", "we", "every", "because", "want", "decision", "grounds",
 ]);
 
 /** R4b decision 3: the intention adverbs after `uom` and their zone terms (contrary-to.md#contrary-to-stance). */
@@ -197,7 +198,8 @@ export function inRange(value: NumberValue, range: Range): boolean | undefined {
   const hook = range.hook.replace(/[lmr]$/, "");
   if (!["oe", "ao", "ue", "uo", "ua"].includes(hook)) return undefined;
   const { first, second } = range;
-  const ends = first.infinite ? first.infinite : second.infinite ? -second.infinite : compareValues(first.value!, second.value!);
+  // An end with no value (`growal`, open-ranges.md) does not order.
+  const ends = first.infinite ? first.infinite : second.infinite ? -second.infinite : first.value && second.value ? compareValues(first.value, second.value) : undefined;
   const a = against(value, first);
   const b = against(value, second);
   if (ends === undefined || a === undefined || b === undefined) return undefined;
@@ -570,19 +572,20 @@ class Translator {
     if (reading.stanceLists?.length && !mayDenied(reading) && !becauseDenied(reading) && !hingeDenied(reading)) return { construction: reading.stanceLists[0]!.construction, key: reading.stanceLists[0]!.key, reason: "noRow" };
     const terms = claimTerms(reading.claim);
     for (const t of terms) {
-      for (const f of termFrames(t)) if (!(t.kind === "list" && f.key === "joinSeries:u")) return { construction: f.construction, key: f.key, reason: "noRow" };
+      // R4c-3 (D7): `ue` with a verb denies each listed item, as `u` does.
+      for (const f of termFrames(t)) if (!(t.kind === "list" && (f.key === "joinSeries:u" || (f.key === "joinSeries:ue" && reading.claim.verb)))) return { construction: f.construction, key: f.key, reason: "noRow" };
       for (const d of termDetails(t)) if (d.frames?.length || d.content?.length) return { construction: d.construction, key: d.key, reason: "noRow" };
     }
     for (const d of reading.claim.details) if (d.frames?.length || d.content?.length) return { construction: d.construction, key: d.key, reason: "noRow" };
     return undefined;
   }
 
-  readingFrames(reading: Reading): Frames {
+  readingFrames(reading: Reading, skip?: ReadonlySet<Frame>): Frames {
     const out: Frames = { standalone: [] };
     const holder = reading.frames.some((f) => f.key === "xFamily:holder");
     const denied = mayDenied(reading);
     for (const f of reading.frames) {
-      if (f.key === "slot:newMember" || f.key === "edge:vocative") continue;
+      if (f.key === "slot:newMember" || f.key === "edge:vocative" || skip?.has(f)) continue;
       // R3-1 row 3: MAY denied (`thomam thul`) is a plain claim; the frame goes to the notes.
       if (f === denied) continue;
       // R2-1 row 1: a holder on a channel; R3-1 row 4: a holder on MAY.
@@ -638,6 +641,9 @@ class Translator {
     this.bound = new Set();
     const g = nounHinge(reading);
     if (g) return this.nounHinge(reading, g);
+    // R4c decision 5: a verbless list is a fragment, with no claim term.
+    const frag = reading.unread.length ? undefined : fragment(reading);
+    if (frag) return this.leave(reading, frag);
     const why = this.unrowed(reading);
     if (why) return this.leave(reading, why);
     // R4a-8: a call is read through `LogEntry.addressees`, so its frame is used; a reading with only a call claims nothing.
@@ -648,8 +654,12 @@ class Translator {
       this.lines.push(`% ${reading.id}`, `on(${str(reading.id)}).`);
       return;
     }
-    const frames = this.readingFrames(reading);
+    // R4c-8 (D8): a channel on your own claim, with any stance number, is row 1; the frames go to the notes.
+    const own = ownChannel(reading);
+    const frames = this.readingFrames(reading, own?.frames);
     if (frames.other) return this.leave(reading, { construction: frames.other.construction, key: frames.other.key, reason: "noRow" });
+    // R4c-8: a bare sentence a channel carries to is row 1 too.
+    const carriedChannel = reading.frames.every((f) => f.key === "slot:newMember" || f.key === "edge:vocative") && !reading.links.some((l) => l.kind === "carriedFrame" && l.key === "carry:holder") ? reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:channel") : undefined;
     // R4a-12 (D1): a say word over a hinge, *because*, MAY or a contrary zone keeps the wrap as data.
     const sayOver = frames.say ? [frames.hinge, frames.because, frames.may, frames.zone].filter((f): f is Frame => !!f) : [];
     if (frames.say && sayOver.length === 1 && over(reading, frames.say, sayOver[0]!)) return this.sayData(reading, frames, sayOver[0]!);
@@ -730,8 +740,18 @@ class Translator {
       const likely = this.likely(frames.likely, ctx);
       if (likely !== true) return this.leave(reading, likely);
     }
+    // R4c decision 6 (evidentiality.md#evidence-clause): the grounds after `blarl` are your claim too.
+    const grounds = own?.channel.hosted && own.channel.hosted.kind !== "thing" ? this.grounds(reading, own.channel, ctx) : undefined;
+    if (grounds && "reason" in grounds) return this.leave(reading, grounds);
     const done = this.body(reading, frames, ctx, mayOver);
     if (done !== true) return this.leave(reading, done);
+    if (grounds) {
+      this.rule(ctx, grounds.text, []);
+      this.rule(ctx, `grounds(${grounds.text},${this.claim(reading.claim, ctx)})`, []);
+      this.pool(grounds.reading, grounds.text, grounds.reading.claim, 1);
+    }
+    if (own) this.use(...own.frames);
+    this.use(carriedChannel);
     const denied = mayDenied(reading);
     this.use(frames.may, frames.mayHost, frames.likely, ...frames.standalone);
     if (denied) this.useDenied(reading, denied);
@@ -749,6 +769,7 @@ class Translator {
     if (may) this.notes.push({ reading: reading.id, frame: may });
     if (denied) this.notes.push({ reading: reading.id, frame: reading.stanceLists![0]!.inner?.[0] ?? denied });
     frames.standalone.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
+    if (own) own.frames.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
     this.readings.push(reading.id);
     this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
   }
@@ -796,6 +817,25 @@ class Translator {
     if (inner === frames.may) this.notes.push({ reading: reading.id, frame: inner });
     this.readings.push(reading.id);
     this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
+  }
+
+  /**
+   * R4c decision 6 (evidentiality.md#evidence-clause): a reasoned channel's grounds after `blarl`, a plain clause with
+   * no list, claimed as row 1, with the data `grounds(E, C)` (kept apart from `cause`). Checked before the claim is
+   * written; the caller writes it. A `bl-` source noun is no grounds: it stays in the notes. Why it has no row: another source, a frame or a list in the grounds, or a list in the
+   * claim.
+   */
+  grounds(reading: Reading, channel: Frame, ctx: Ctx): { text: string; reading: Reading } | Why {
+    const bad = { construction: channel.construction, key: channel.key, reason: "noRow" };
+    const hosted = channel.hosted;
+    const link = hosted?.kind === "clause" ? reading.links.find((l) => l.kind === "standIn" && l.to === hosted.reading.id) : undefined;
+    if (hosted?.kind !== "clause") return bad;
+    if (!link || link.words.map((w) => w.raw).join(" ") !== "blarl" || isEmptyClaim(reading.claim)) return bad;
+    if (claimTerms(reading.claim).some((t) => t.kind === "list")) return bad;
+    const cond = hosted.reading;
+    if (cond.frames.some((f) => f.key !== "slot:newMember") || this.unrowed(cond) || cond.stanceLists?.length || claimTerms(cond.claim).some((t) => t.kind === "list" || termFrames(t).length)) return bad;
+    this.condition(reading, channel);
+    return { text: this.claim(cond.claim, { ...ctx, reading: cond, asserted: false }), reading: cond };
   }
 
   /**
@@ -941,9 +981,15 @@ class Translator {
   /** The reading's rules into `ctx.out`; true, or why it is left out. */
   body(reading: Reading, frames: Frames, ctx: Ctx, mayOver?: MayOver): true | Why {
     const claim = this.sharedPredicate(reading.claim) ?? reading.claim;
-    const denials = claimTerms(claim, false).filter((t): t is ListTerm => t.kind === "list" && !!t.frames?.some((f) => f.key === "joinSeries:u"));
-    if (denials.length > 1) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
+    // R4c-3 (D7): `ue` (*anything but*) denies each listed item, as `u` does; the outside item adds no rule.
+    const denies = (t: ListTerm, key: string): boolean => !!t.frames?.some((f) => f.key === key);
+    const denials = claimTerms(claim, false).filter((t): t is ListTerm => t.kind === "list" && (denies(t, "joinSeries:u") || denies(t, "joinSeries:ue")));
+    // R4c-4 (D9): two `u` lists in one clause deny every pairing, on a plain claim only.
+    const second = denials[1];
+    const listedOnly = (t: ListTerm): boolean => denies(t, "joinSeries:u") && !(t.parts.length > 1 && t.parts.at(-1)!.members.length === 0);
+    if (denials.length > 2 || (second && (!denials.every(listedOnly) || frames.universal || frames.because || frames.hinge || frames.restrictor || frames.zone || ctx.deny))) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
     const denial = denials[0];
+    for (const d of denials) this.use(...(d.frames ?? []).filter((f) => f.key === "joinSeries:ue"));
     // R3-1 row 7: the list a whole-list denial denies; `vael vul` denies each item, as a plain denial does.
     const inner = denial && denial.parts.length > 1 && denial.parts.at(-1)!.members.length === 0 ? joinOf(denial.parts[0]!.join) : undefined;
     // R4b-24: `vaem vul` as `vael vul` ("On `ae`, even `-m` still needs at least one of the listed items").
@@ -1033,8 +1079,11 @@ class Translator {
     }
 
     // The heads: the claim, or each denied item (row 2); a rank or tie list claims its rank terms (R1-8, R4c-1, R4c-2).
-    const ranked = denial ? undefined : this.ranked(reading, claim, frames, ctx);
-    const heads: { text: string; claim: Claim; sign: 1 | -1; unasked?: true }[] = denial
+    // R4c-5: a verb join's SHARED part goes into each verb's term; R4c-6, R4c-7: a likeness or a collective word on the members.
+    const ranked: { heads: { text: string; claim: Claim; unasked?: true }[]; acts?: ListTerm; one?: true } | undefined = denial ? undefined : (this.ranked(reading, claim, frames, ctx) ?? this.verbJoin(reading, claim, frames, ctx) ?? this.asOne(claim, frames, ctx));
+    const heads: { text: string; claim: Claim; sign: 1 | -1; unasked?: true }[] = second
+      ? denial!.members.flatMap((a) => second.members.map((b) => ({ ...this.substitutedAll(claim, [[denial!, a], [second, b]], { ...ctx, asserted: false }), sign: -1 as const })))
+      : denial
       ? denial.members.map((m) => ({ ...this.substituted(claim, denial, m, { ...ctx, asserted: false }), sign: -1 as const }))
       : (ranked?.heads ?? [{ text: this.claim(claim, ctx), claim }]).map((h) => ({ ...h, sign: ctx.deny ? -1 : sign }));
     if (frames.universal && denial) heads.forEach((h) => (h.sign = -1));
@@ -1126,7 +1175,7 @@ class Translator {
     // view too. R4a-11 (D1): under a plain say word the content stays one wrapped term, and `a` and `o` reach each member.
     // R4c-2 (D17), R4c decision 2: a rank or tie with a verb gives each member's act, as row 11 does.
     const lists = ranked?.acts ? new Map<Term, object | undefined>([[ranked.acts, undefined]]) : undefined;
-    if (!denial && !frames.universal && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx, lists);
+    if (!denial && !frames.universal && !ranked?.one && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx, lists);
     return true;
   }
 
@@ -1166,8 +1215,7 @@ class Translator {
       this.use(z, scale);
       return { heads: [{ text: `more(${this.detail(scale, ctx)},${names(0)},${names(1)})`, claim }] };
     }
-    const bare = !ctx.deny && !ctx.wrap && Object.entries(frames).every(([k, v]) => (k === "standalone" ? !(v as Frame[]).length : !v));
-    if (!bare || (claim.verb && (scale.kind !== "adverb" || collective(claim)))) return undefined;
+    if (!bareFrames(frames, ctx) || (claim.verb && (scale.kind !== "adverb" || collective(claim)))) return undefined;
     // The claim over two of the members, in that order, as `zol` or `zoel`: what a question about the pair is matched against.
     const pair = (i: number, j: number): Claim => {
       const members = [z.members[i]!, z.members[j]!];
@@ -1210,12 +1258,73 @@ class Translator {
 
   /** The claim with one list term replaced by one of its items. */
   substituted(claim: Claim, list: Term, item: Term, ctx: Ctx): { text: string; claim: Claim } {
-    const enc = list === claim.verb && item.kind === "thing" ? name(item.root) : claim.predicate.includes(list) ? this.kind(item, "g", ctx) : this.term(item, placeOf(claim, list), ctx);
+    return this.substitutedAll(claim, [[list, item]], ctx);
+  }
+
+  /** The claim with each list term replaced by the item paired with it (R4c-4: one item of each of two denial lists). */
+  substitutedAll(claim: Claim, pairs: [Term, Term][], ctx: Ctx): { text: string; claim: Claim } {
     const subst: Subst = new Map(ctx.subst);
-    subst.set(list, { text: enc, term: item });
-    this.use(list);
-    const text = this.claim(claim, { ...ctx, subst });
-    return { text, claim: replaceTerm(claim, list, item) };
+    let out = claim;
+    for (const [list, item] of pairs) {
+      const enc = list === claim.verb && item.kind === "thing" ? name(item.root) : claim.predicate.includes(list) ? this.kind(item, "g", ctx) : this.term(item, placeOf(claim, list), ctx);
+      subst.set(list, { text: enc, term: item });
+      this.use(list);
+      out = replaceTerm(out, list, item);
+    }
+    return { text: this.claim(claim, { ...ctx, subst }), claim: out };
+  }
+
+  /**
+   * R4c-5 (list-structure.md#shared-after-the-join): a verb join with a SHARED `/h/` adverb, or a `/d/` or `/b/` after
+   * it (the `verbShared` link): `holds(T[v])` per verb, each term with the shared part. A plain claim with no other
+   * list; undefined for any other shape, or a verb join with nothing shared.
+   */
+  verbJoin(reading: Reading, claim: Claim, frames: Frames, ctx: Ctx): { heads: { text: string; claim: Claim }[] } | undefined {
+    const v = claim.verb;
+    if (v?.kind !== "list" || !memberList(v) || !bareFrames(frames, ctx)) return undefined;
+    if (claimTerms(claim, false).some((t) => t !== v && t.kind === "list")) return undefined;
+    const shared = v.sharedDetails ?? [];
+    const links = reading.links.filter((l) => l.kind === "verbShared");
+    if ((!shared.length && !links.length) || !shared.every((d) => d.key === "unit:h" && d.values.role === "distribute")) return undefined;
+    const each: Claim = { ...claim, details: [...claim.details, ...shared] };
+    const heads = v.members.map((m) => this.substituted(each, v, m, ctx));
+    this.use(v, ...shared, ...links);
+    return { heads };
+  }
+
+  /**
+   * Members as one, with no verb and no member rule (`one`):
+   * - R4c-7 (collectives.md#adjectives-g): a collective SHARED `/ɡ/` adjective (`-x`), `isa(ls(Id, z), K)`, the list as
+   *   one unit, with no `member` facts and no `isa` per member (as row 11 for a collective verb).
+   * - R4c-6 (relations.md, likeness): a SHARED likeness with no `bl-` word on named members, each to each other member:
+   *   for each ordered pair A ≠ B the term of `A gewem blB.`
+   */
+  asOne(claim: Claim, frames: Frames, ctx: Ctx): { heads: { text: string; claim: Claim }[]; one: true } | undefined {
+    const z = claim.roles.z;
+    if (claim.verb || claim.predicate.length || claim.roles.d || claim.roles.b || claim.details.length) return undefined;
+    if (z?.kind !== "list" || !memberList(z) || !bareFrames(frames, ctx)) return undefined;
+    const shared = z.sharedDetails ?? [];
+    const d = shared[0];
+    if (shared.length !== 1 || !d || d.hosted || d.details?.length || d.words.length !== 1) return undefined;
+    const word = d.words[0]!;
+    if (word.family.kind !== "content") return undefined;
+    const root = word.family.roots.join("");
+    const kindOf = (detail: Detail): Term => ({ kind: "thing", head: word, root, named: false, details: [detail] });
+    const heads: { text: string; claim: Claim }[] = [];
+    if (d.values.role === "collective" && d.key === "slot:adj") {
+      const one: Claim = { ...claim, predicate: [kindOf(d)] };
+      heads.push({ text: `isa(${this.term(z, "z", ctx)},${this.kind(one.predicate[0]!, "g", ctx)})`, claim: one });
+    } else if (d.values.role === "distribute" && d.key === "overlay:likeness:g" && z.members.every((m) => m.kind === "thing" && m.named)) {
+      z.members.forEach((a, i) =>
+        z.members.forEach((b, j) => {
+          if (i === j) return;
+          const pair: Claim = { roles: { z: a }, predicate: [kindOf({ ...d, hosted: b })], details: [] };
+          heads.push({ text: this.claim(pair, ctx), claim: pair });
+        }),
+      );
+    } else return undefined;
+    this.use(z, d);
+    return { heads, one: true };
   }
 
   /**
@@ -1240,7 +1349,10 @@ class Translator {
    * dt(..))`, as the word on one noun is. The details, when every member is a first-mention noun of an asserted claim.
    */
   sharedDetails(list: ListTerm, ctx: Ctx): Detail[] | undefined {
-    const shared = sharedAdjectives(list);
+    // R4c-5 (list-structure.md#shared-after-the-join): a hosting `/ɡ/` word, a SHARED hook, or a likeness with its model, too.
+    const all = list.sharedDetails ?? [];
+    const each = (d: Detail): boolean => d.values.role === "distribute" && (d.key === "slot:adj" || d.key === "hookJob:genitive" || (d.key === "overlay:likeness:g" && !!d.hosted));
+    const shared = all.length && all.every(each) ? all : undefined;
     return shared && ctx.asserted && list.members.every((m) => this.newMembers.has(m)) ? shared : undefined;
   }
 
@@ -1955,6 +2067,33 @@ function stackedNounHinge(z: Extract<Term, { kind: "thing" }>): NounHinge | unde
 }
 
 /** A join word's series and ending. */
+/**
+ * R4c-8 (D8): the channel on your own claim (no holder) and any stance numbers beside it (`th_N`, `th#N`, `th@+95`,
+ * `th-e-`), when they are the reading's only frames; undefined otherwise.
+ */
+function ownChannel(reading: Reading): { channel: Frame; frames: Set<Frame> } | undefined {
+  if (reading.frames.some((f) => f.key === "xFamily:holder")) return undefined;
+  const channels = reading.frames.filter((f) => f.key === "overlay:evidential:th" && !f.holderHost);
+  const channel = channels[0];
+  if (channels.length !== 1 || !channel || channel.inner?.length) return undefined;
+  const rest = reading.frames.filter((f) => f !== channel && f.key !== "slot:newMember" && f.key !== "edge:vocative");
+  if (!rest.every((f) => f.key === "lexReading:number:th" && !f.inner?.length)) return undefined;
+  return { channel, frames: new Set([channel, ...rest]) };
+}
+
+/** R4c decision 5: a verbless claim whose one role is a list with a join frame (`zobudal zuel.`, `zobonol zabewol zen.`). */
+function fragment(reading: Reading): Why | undefined {
+  const c = reading.claim;
+  if (c.verb || c.predicate.length || c.details.length || c.roles.d || c.roles.b || c.clauses) return undefined;
+  const f = c.roles.z?.kind === "list" ? termFrames(c.roles.z).find((x) => x.key.startsWith("joinSeries:") && x.key !== "joinSeries:u") : undefined;
+  return f ? { construction: "fragment", key: f.key, reason: "fragment" } : undefined;
+}
+
+/** No frame on the reading but the ones every row reads, no wrap and no denial: the shape the list rows R1-8 and R4c take. */
+function bareFrames(frames: Frames, ctx: Ctx): boolean {
+  return !ctx.deny && !ctx.wrap && Object.entries(frames).every(([k, v]) => (k === "standalone" ? !(v as Frame[]).length : !v));
+}
+
 function joinOf(word: LexWord | undefined): { series: string; ending: string } | undefined {
   return word?.family.kind === "joinMarker" ? { series: word.family.series, ending: word.ending ?? "" } : undefined;
 }

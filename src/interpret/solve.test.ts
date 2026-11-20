@@ -1158,3 +1158,68 @@ describe("solve: ranks and ties (R1-8, R4c-1, R4c-2 and D17, R4c decisions 1 to 
     assert.deepEqual((await clashes(r(["r11"], ["zazozon zalazun zol gelazem."]), base)).clashes, []);
   });
 });
+
+describe("solve: denials, SHARED words and channels (R4c-3 to R4c-8, D7 to D9, R4c decisions 5, 6 and 8)", () => {
+  const r = (labels: string[], extra: string[] = []) => log("lists", labels, extra);
+  const n = (labels: string[], extra: string[] = []) => log("channels", labels, extra);
+  const said = async (l: ReturnType<typeof r>, question: string) => (await follows(l, q(question), base)).verdict;
+
+  it("R4c-3 (D7): l7, ue denies each listed item; the outside item adds nothing", async () => {
+    assert.equal(await said(r(["l7"]), "yel zalazun dobodel vagedal."), "no");
+    assert.equal(await said(r(["l7"]), "yel zalazun dogozel vagedal."), "unknown");
+  });
+
+  it("R4c-4 (D9): l8, two u lists deny every pairing", async () => {
+    assert.equal(await said(r(["l8"]), "yel zalazun dogozel vayebel."), "no");
+    assert.equal(await said(r(["l8"]), "yel zazozon dodozel vayebel."), "no");
+  });
+
+  it("R4c-5: l9, a SHARED hook is a detail of each member; a verb join's /h/ or /d/ is in each verb's term", async () => {
+    const t = translate(r(["l9"]), { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    for (const p of ["z1", "z2"]) assert.match(t.program, new RegExp(`^detail\\(nm\\("t:0\\.0",${p}\\),dt\\("hookJob:genitive","om",ahela,w\\)\\) :- on\\("t:0\\.0"\\)\\.$`, "m"));
+    assert.equal(await said(r(["l9"]), "yel zogozel vowurol."), "yes");
+    assert.equal(await said(r([], ["zazozon vowurol veruvol val hahunom."]), "yel zazozon veruvol hahunom."), "yes");
+    assert.equal(await said(r([], ["zazozon vagedal vayebel val dobodel."]), "yel zazozon dobodel vayebel."), "yes");
+  });
+
+  it("R4c-6: a likeness with no bl- word, each member to each other member", async () => {
+    const l = r([], ["zazozon zalazun zal gewem."]);
+    assert.equal(await said(l, "yel zazozon gewem blalazun."), "yes");
+    assert.equal(await said(l, "yel zalazun gewem blazozon."), "yes");
+  });
+
+  it("R4c-7: l10, a collective adjective holds of the list as one, with no member facts", async () => {
+    const t = translate(r(["l10"]), { lexicon: tables });
+    assert.match(t.program, /^holds\(isa\(ls\("t:0\.0",z\),arole\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.doesNotMatch(t.program, /^member\(/m);
+    assert.equal(await said(r(["l10"]), "yel zobonol garolem."), "unknown");
+  });
+
+  it("R4c-8 (D8): n1 to n3 and n5, a channel on your own claim is row 1, the frames in the notes; n4, carried, clashes with n1", async () => {
+    assert.equal(await said(n(["n1"]), "yel zalazun vudurul."), "yes");
+    assert.equal(await said(n(["n2"]), "yel zalazun vudurul."), "yes");
+    assert.equal(await said(n(["n3"]), "yel zazozon vezuvel."), "yes");
+    assert.equal(await said(n(["n5"]), "yel zalazun vudurul."), "yes");
+    assert.deepEqual(translate(n(["n1"]), { lexicon: tables }).notes.map((x) => x.frame.key), ["overlay:evidential:th", "lexReading:number:th"]);
+    const c = (await clashes(n(["n1", "n4"]), base)).clashes;
+    assert.equal(c.length, 1);
+    assert.deepEqual(c[0]!.readings, ["t:0.0", "t:0.1"]);
+  });
+
+  it("R4c decision 6: the evidence clause claims the grounds too, with grounds(E, C), apart from cause", async () => {
+    const l = n([], ["zalazun vabuvul theyom blarl zazozon vozumul."]);
+    const t = translate(l, { lexicon: tables });
+    assert.deepEqual(t.left, []);
+    assert.match(t.program, /^holds\(grounds\(ozumu\(z\(azozo\)\),abuvu\(z\(alazu\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.doesNotMatch(t.program, /cause\(/);
+    assert.equal(await said(l, "yel zazozon vozumul."), "yes");
+    assert.equal(await said(l, "yel zalazun vabuvul."), "yes");
+  });
+
+  it("R4c decisions 5 and 8: a verbless list is a fragment; a SHARED number word stays left", () => {
+    const left = (text: string) => translate(r([], [text]), { lexicon: tables }).left.map((l) => [l.reason, l.key]);
+    assert.deepEqual(left("zobudal zuel."), [["fragment", "joinSeries:ue"]]);
+    assert.deepEqual(left("zazozon zalazun zal growamol."), [["unused", "shared:distribute"]]);
+  });
+});

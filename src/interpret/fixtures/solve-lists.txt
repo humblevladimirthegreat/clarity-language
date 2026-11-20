@@ -6,6 +6,8 @@
 # r1: the superlative, most(S, A). r2: a closed tie, tie(S, A, B, l) per ordered pair; with r3 it clashes. r4: an open tie, data only.
 # r5: a tie with a verb, each walks. r6: three tied, pairwise. r7: r3 reversed, which clashes with r3. r8: a rank with a verb, each lifts.
 # r9: a rank of three, more for each pair in text order. r10: zaol sorts low to high. r11, r12: a factor is ratio(S, A, B, V), no tie.
+# Denials and SHARED words (R4c-3 to R4c-7, D7, D9). l7: ue denies each listed item (anything but bread). l8: two u lists deny every pairing.
+# l9: a SHARED hook after a noun join is a detail of each member. l10: a collective -x adjective holds of the list as one, nothing of a member.
 
 @ l1
 zazozon zalazun zal vowurol.
@@ -70,3 +72,19 @@ zazozon zalazun zoel gelazem hradol.
 @ r12
 zalazun zazozon zoel gelazem hrudol.
 = Alazun is half as big as Azozon.
+
+@ l7
+zalazun dobodel duel vagedal.
+= Alazun eats anything but bread.
+
+@ l8
+zazozon zalazun zul dodozel dogozel dul vayebel.
+= Neither Azozon nor Alazun sees a dog or a cat.
+
+@ l9
+zodozel zogozel zal om bahelan vowurol.
+= Ahelan's dog and cat walk.
+
+@ l10
+zobonol zadorol zal garolemx.
+= The page and the trumpet are heavy together.

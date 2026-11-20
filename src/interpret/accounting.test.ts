@@ -40,7 +40,7 @@ function walked(reading: Reading): object[] {
 }
 
 describe("accounting guard: grammar examples", () => {
-  it("every reading in the program used all its parts; the rest are left as unused", () => {
+  it("translate() never throws, and every reading in the program used all its parts; the rest are left as unused", () => {
     const silent: string[] = [];
     let kept = 0;
     for (const file of passFiles(["docs/grammar"])) {
@@ -49,8 +49,9 @@ describe("accounting guard: grammar examples", () => {
         let t: ReturnType<typeof translate>;
         try {
           t = translate({ readings: example.readings }, { lexicon: tables });
-        } catch {
-          continue; // A translator crash is not the guard's to report.
+        } catch (e) {
+          silent.push(`${file}: ${example.text}: translate() threw ${(e as Error).message}`);
+          continue;
         }
         for (const id of t.readings) {
           kept++;
@@ -100,6 +101,21 @@ describe("accounting guard: the drops it catches", () => {
     // R4b-8 (D15): a person's name as the outcome of `gahum` or the `gebem gahum` stack stays left too.
     assert.deepEqual(left("zazozon gahum blerulal."), ["noRow overlay:clause_hinge:g"]);
     assert.deepEqual(left("zazozon gebem gahum blerulal."), ["noRow overlay:clause_hinge:g"]);
+  });
+
+  it("a range end with no value does not order (open-ranges.md), and translate() does not throw", () => {
+    assert.doesNotThrow(() => program("zazozon dugavalx grodol oel growal vayebel."));
+  });
+
+  it("R4c-5: a hosting /ɡ/ word and a hook after a noun join, and a verb join's /h/ or /d/, use their SHARED parts", () => {
+    assert.deepEqual(left("zalazun degodel dededel dal gegunum blahelan vagedal."), []);
+    assert.deepEqual(left("zodozel zogozel zal om bahelan vowurol."), []);
+    assert.deepEqual(left("zazozon vowurol veruvol val hahunom."), []);
+    assert.deepEqual(left("zazozon vagedal vayebel val dobodel."), []);
+  });
+
+  it("R4c-8: a carried channel is used on a bare sentence", () => {
+    assert.deepEqual(left("zalazun thebam throgel vudurul.", "zalazun vudurul vul."), []);
   });
 
   it("a plain and list, a hinge, and a resumed pronoun are kept", () => {

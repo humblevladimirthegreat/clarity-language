@@ -1,0 +1,24 @@
+# Solver fixture: channel stances on your own claim (R4c-8, D8; evidentiality.md#evidentiality, #carry-forward, number-roles.md).
+# Format: each entry is a label line "@ <id>", then one Ageben sentence, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Each is row 1, the channel and any stance number in the notes. n1: depth (th#N). n2: a bl- source and depth. n3: the channel last.
+# n4: a bare sentence the channel carries to, row 1 too; n1 + n4 clash. n5: a source number (th_N).
+
+@ n1
+zalazun thebam throgel vudurul.
+= I heard third-hand that Alazun left.
+
+@ n2
+zalazun thebal blunonal throdol vudurul.
+= Alazun left, according to a newspaper article by someone who interviewed people who were there.
+
+@ n3
+zazozon guzemel vezuvel thevum.
+= Sleepy Azozon slept, I remember.
+
+@ n4
+zalazun vudurul vul.
+= Alazun did not leave.
+
+@ n5
+zalazun thebam th_3 vudurul.
+= Alazun left, I heard, per source 3.

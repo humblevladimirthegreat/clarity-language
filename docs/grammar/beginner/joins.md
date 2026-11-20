@@ -152,6 +152,14 @@ When English denies the listed items, use vowel `u`. One item before `zul` is *n
 >
 > "neither tea nor coffee."
 
+Two `u` lists in one clause deny every pairing: no item of one list goes with any item of the other.
+
+> `zazozon zalazun zul dodozel dogozel dul vayebel.`
+>
+> [z-Azozon | z-Alazun | z-not] | [d-dog | d-cat | d-not] | v-see
+>
+> "Neither Azozon nor Alazun sees a dog or a cat."
+
 ### Everything (`ua`)
 
 When English would say *everything* / *everyone*, write a standalone join with two vowels, `u` then `a` (`zual`). With one item before it, the same join means *everything but* that item. Both vowels sit in one word: say them in order, then the ending. (cue: `u` ≈ undo, then `a` ≈ add.)
