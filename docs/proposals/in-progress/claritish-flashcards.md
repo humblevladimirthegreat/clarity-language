@@ -1,6 +1,6 @@
 # Proposal: Claritish flashcards
 
-**Status:** READY 2026-11-20. Decisions, 2026-11-20:
+**Status:** IN PROGRESS 2026-11-20, phase 1 started. Decisions, 2026-11-20:
 - Claritish gets a flashcard pack, built from the cheat sheet, and ships before flashcards v2 (`vocab-flashcards.md`).
 - Card fronts show only the drop-in form; no example sentences.
 - The pack has its own download page in the Claritish track.

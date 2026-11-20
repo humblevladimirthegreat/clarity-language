@@ -47,11 +47,13 @@ export type FlashcardInputs = {
   sakeRoots: readonly string[];
 };
 
-export const PACK_IDS = ["core", "sakes", "everything"] as const;
+export const PACK_IDS = ["core", "sakes", "everything", "claritish"] as const;
 export type PackId = (typeof PACK_IDS)[number];
+/** Packs of the Ageben lexicon note type; `claritish` has its own (`flashcards-claritish.ts`). */
+export type LexiconPackId = Exclude<PackId, "claritish">;
 
 export type PackDeck = { name: string; id: number; notes: FlashcardNote[] };
-export type Pack = { id: PackId; decks: PackDeck[] };
+export type Pack = { id: LexiconPackId; decks: PackDeck[] };
 
 const DECK_ROOT = "Ageben";
 
@@ -147,7 +149,7 @@ function deck(name: string, notes: FlashcardNote[]): PackDeck {
   return { name: full, id: deckId(full), notes };
 }
 
-export function buildPack(id: PackId, notes: FlashcardNotes, inputs: Pick<FlashcardInputs, "checkpoints" | "pageTitle" | "sakeRoots">): Pack {
+export function buildPack(id: LexiconPackId, notes: FlashcardNotes, inputs: Pick<FlashcardInputs, "checkpoints" | "pageTitle" | "sakeRoots">): Pack {
   if (id === "core") {
     const words = [...notes.roots, ...notes.compounds].filter((n) => n.core);
     const decks: PackDeck[] = [];
