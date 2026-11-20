@@ -978,12 +978,18 @@ describe("solve: MAY over members, denials, say words, universals and always; va
     assert.equal((await couldBe(m(["my8"]), walks, base)).verdict, "yes");
   });
 
-  it("R4b-23 (D13): my9, always over MAY, clashes with never (my10), not with one not (my11)", async () => {
+  it("R4b-23 (D13, D18): my9, always over MAY, clashes with never (my10), not with one not (my11); alone it could be", async () => {
+    assert.equal((await couldBe(m(["my9"]), walks, base)).verdict, "yes");
+    assert.equal((await follows(m(["my9"]), walks, base)).verdict, "unknown");
     const c = (await clashes(m(["my9", "my10"]), base)).clashes;
     assert.deepEqual(c.map((x) => [x.atom, x.readings]), [["always(may(owuro(z(azozo))))", ["t:0.0", "t:0.1"]]]);
     assert.deepEqual((await clashes(m(["my9", "my11"]), base)).clashes, []);
     assert.equal((await couldBe(m(["my9", "my11"]), walks, base)).verdict, "no");
-    assert.match(translate(m(["my9"]), { lexicon: tables }).program, /^always\(may\(owuro\(z\(azozo\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    const program = translate(m(["my9"]), { lexicon: tables }).program;
+    assert.match(program, /^always\(may\(owuro\(z\(azozo\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.match(program, /^\{ holds\(owuro\(z\(azozo\)\)\) \} :- on\("t:0\.0"\)\.$/m);
+    // Item 20: the D13 clash is an attack in what stands, both ways.
+    assert.deepEqual((await stands(m(["my9", "my10"]), base)).attacks, [["t:0.0", "t:0.1"], ["t:0.1", "t:0.0"]]);
   });
 
   it("R4b-24: my12, vaem vul denies each item: clashes with my13, and Azozon runs gives no", async () => {
@@ -1037,14 +1043,18 @@ describe("solve: MAY with hinges, holders and questions (R4b-25 to R4b-28, R4e-6
     assert.match(t.program, /^holds\(may\(ezuve\(z\(alazu\)\)\)\) :- holds\(onlyif\(may\(c\("t:0\.0"\)\),o\("t:0\.0"\)\)\), fits\(o\("t:0\.0"\),P\), holds\(P\), on\("t:0\.0"\)\.$/m);
   });
 
-  it("R4b-26 (D5, R4b decision 1): my16, only-if over MAY: no back rule, the only-if half plain", async () => {
+  it("R4b-26 (D5, D19): my16, only-if over MAY: a held condition gives the choice, no back rule, the only-if half plain", async () => {
     assert.equal((await follows(m(["my16"]), walks, base)).verdict, "unknown");
-    assert.equal((await couldBe(m(["my16"]), walks, base)).verdict, "unknown");
+    const could = await couldBe(m(["my16"]), walks, base);
+    assert.equal(could.verdict, "yes");
+    assert.deepEqual(could.because, ["t:0.0", "t:0.1"]);
     // Without the condition the walking is not even possible.
     const a = await follows(m(["my16"], ["zalazun vezuvel vul."]), walks, base);
     assert.equal(a.verdict, "no");
     assert.deepEqual(a.because, ["t:0.1", "t:0.2"]);
-    assert.match(translate(m(["my16"]), { lexicon: tables }).program, /^holds\(onlyif\(c\("t:0\.1"\),may\(o\("t:0\.1"\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    const program = translate(m(["my16"]), { lexicon: tables }).program;
+    assert.match(program, /^holds\(onlyif\(c\("t:0\.1"\),may\(o\("t:0\.1"\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    assert.match(program, /^\{ holds\(owuro\(z\(azozo\)\)\) \} :- holds\(onlyif\(c\("t:0\.1"\),may\(o\("t:0\.1"\)\)\)\), fits\(c\("t:0\.1"\),P\), holds\(P\), on\("t:0\.1"\)\.$/m);
     // iff over MAY adds the if half as a choice.
     assert.equal((await couldBe(m([], ["zalazun vezuvel. thehom blarth thomam zazozon vowurol."]), walks, base)).verdict, "yes");
   });

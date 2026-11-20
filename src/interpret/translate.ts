@@ -1059,11 +1059,12 @@ class Translator {
       if (frames.may && usually) return bad;
       if (frames.may && mayOver === "outcome") {
         // R4b-23 (D13, restrictors.md#always-hual): `hual` over MAY is `may(T)` with the marker `always(may(T))`; it
-        // clashes with *never*, not with one *not*.
+        // clashes with *never*, not with one *not*. D18: it also writes row 15's choice on T.
         if (!always || listed) return bad;
         this.use(frames.restrictor);
         const t = heads[0]!.text;
         const marker = `always(may(${t}))`;
+        this.rule({ ...ctx, choice: true }, t, []);
         this.rule(ctx, `may(${t})`, []);
         this.rule(ctx, `may(${t})`, [], "always");
         this.rule(ctx, marker, [{ atom: `never(${t})`, premise: `never(${t})` }], "clash");
@@ -1497,8 +1498,9 @@ class Translator {
       }
     } else if (mayOutcome) {
       // R3-1 row 6: a hinge over MAY makes the outcome only possible: a choice, and no backward rule. R4b-26 (D5, R4b
-      // decision 1): the *only if* half stays plain, without the condition the outcome is not even possible.
-      if (enough) this.rule({ ...ctx, choice: true }, out, [...gate, ...body, ...truth(c, "P")]);
+      // decision 1): the *only if* half stays plain, without the condition the outcome is not even possible. D19: with
+      // the condition held, every hinge over MAY gives the choice on the outcome (MAY gives a choice wherever it is held).
+      this.rule({ ...ctx, choice: true }, out, [...gate, ...body, ...truth(c, "P")]);
       if (needs) this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
     } else {
       if (enough) {

@@ -108,7 +108,7 @@ zual godozel thomam vowurol.
 zazozon godozel.
 = Azozon is a dog.
 
-# R4b-22: MAY over always gates row 15. my8 + my10: no clash. R4b-23 (D13, restrictors.md#always-hual): always over MAY is may(T) on every occasion; my9 + my10 clash (always possible against never), my9 + my11 do not, and couldBe Azozon walks gives no.
+# R4b-22: MAY over always gates row 15. my8 + my10: no clash. R4b-23 (D13, restrictors.md#always-hual): always over MAY is may(T) on every occasion, with row 15's choice (D18): my9 alone, couldBe Azozon walks gives yes; my9 + my10 clash (always possible against never), my9 + my11 do not, and there couldBe Azozon walks gives no.
 @ my8
 thomam zazozon vowurol hual.
 = Maybe Azozon always walks.
@@ -144,9 +144,9 @@ zazozon vowurol thebem blarl zalazun thomam vezuvel.
 zazozon vowurol thehom blarl zalazun thomam vezuvel.
 = Azozon walks if and only if Alazun may be asleep.
 
-# R4b-26 (D5, R4b decision 1): only-if over MAY, onlyif(c, may(o)): no back rule, and the only-if half plain (without the
-# sleeping the walking is not even possible). my16: follows and couldBe Azozon walks cannot say, since only if gives no
-# outcome from a held condition.
+# R4b-26 (D5, R4b decision 1, D19): only-if over MAY, onlyif(c, may(o)): no back rule, and the only-if half plain (without
+# the sleeping the walking is not even possible); a held condition gives the choice on the outcome. my16: follows Azozon
+# walks cannot say, couldBe gives yes.
 @ my16
 zalazun vezuvel. thebem blarth thomam zazozon vowurol.
 = Alazun is asleep. Only then may Azozon walk.

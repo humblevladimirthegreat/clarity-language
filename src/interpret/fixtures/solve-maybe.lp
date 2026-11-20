@@ -286,6 +286,8 @@ always(owuro(z(azozo))) :- maybe("t:0.25"), on("t:0.25").
 fired("t:0.25",always(owuro(z(azozo)))) :- maybe("t:0.25"), on("t:0.25").
 % t:0.26
 on("t:0.26").
+{ holds(owuro(z(azozo))) } :- on("t:0.26").
+fired("t:0.26",owuro(z(azozo))) :- holds(owuro(z(azozo))), on("t:0.26").
 holds(may(owuro(z(azozo)))) :- on("t:0.26").
 fired("t:0.26",may(owuro(z(azozo)))) :- on("t:0.26").
 always(may(owuro(z(azozo)))) :- on("t:0.26").
@@ -366,6 +368,10 @@ fired("t:0.33",ezuve(z(alazu))) :- on("t:0.33").
 on("t:0.34").
 holds(onlyif(c("t:0.34"),may(o("t:0.34")))) :- on("t:0.34").
 fired("t:0.34",onlyif(c("t:0.34"),may(o("t:0.34")))) :- on("t:0.34").
+{ holds(owuro(z(azozo))) } :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(c("t:0.34"),P), holds(P), on("t:0.34").
+fired("t:0.34",owuro(z(azozo))) :- holds(owuro(z(azozo))), holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(c("t:0.34"),P), holds(P), on("t:0.34").
+used("t:0.34",owuro(z(azozo)),onlyif(c("t:0.34"),may(o("t:0.34")))) :- holds(owuro(z(azozo))), holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(c("t:0.34"),P), holds(P), on("t:0.34").
+used("t:0.34",owuro(z(azozo)),P) :- holds(owuro(z(azozo))), holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(c("t:0.34"),P), holds(P), on("t:0.34").
 holds(neg(owuro(z(azozo)))) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
 fired("t:0.34",neg(owuro(z(azozo)))) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
 used("t:0.34",neg(owuro(z(azozo))),onlyif(c("t:0.34"),may(o("t:0.34")))) :- holds(onlyif(c("t:0.34"),may(o("t:0.34")))), fits(P,c("t:0.34")), holds(neg(P)), on("t:0.34").
