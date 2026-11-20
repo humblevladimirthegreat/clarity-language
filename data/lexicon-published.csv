@@ -122,7 +122,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫷,pushing-hand,ubebu,body,takes-away,small,pushback,a hand pushing back says not so fast; pushback is resisting a demand,,push,
 👌,ok,oguye,person,one,none,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
 🤏,pinch,ebuvu,doing,takes-away,none,inch,a pinch of fingers spans about an inch; an inch is a small unit of length,,,
-✌️,victory,omuro,person,order,none,triumph,peace sign shows triumph,,succeed; defeat; overcome,
+✌️,victory,evuyo,person,order,none,triumph,peace sign shows triumph,,succeed; defeat; overcome,
 🤞,crossed-fingers,eguyo,person,order,none,hope,crossed fingers bring hope,,,feelings.md#intermediate-practice
 🤘,horns,ohobu,body,takes-away,medium,,,,,
 🤙,shaka,uhuya,person,holds,none,contact,shaka invites contact,,,
@@ -167,7 +167,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👧,girl,egoyo,person,order,medium,girlhood,the years a girl spends growing up,,daughter,
 🧑,person,eye,person,one,,humanity,a person is one of us; humanity is what all people share,,people; individual; human; civilian,
 👨,man,amayo,person,order,big,manhood,a man has finished growing up,,gentleman; guy,
-🧔,beard,ewoba,body,holds,small,maturity,a full beard grows with age; maturity is having grown up,,,
+🧔,beard,obeba,body,holds,small,maturity,a full beard grows with age; maturity is having grown up,,,
 👩,woman,awayo,person,order,big,womanhood,a woman has finished growing up,,lady,
 🧓,elder,elayo,person,order,big,wisdom,an elder holds wisdom,,elderly; wise; senior,
 👴,old-man,alayo,person,order,big,elderhood,an old man has reached the last stage of life,,old,
@@ -203,7 +203,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫅,reign,oruyo,person,order,none,sovereignty,reigning embodies sovereignty,,,
 🤴,inherit,unuya,person,holds,none,nobility,an inherited title passes rank down the family line,,,
 👸,court,oguya,person,holds,none,,,,,
-👳,turban,emoba,body,holds,medium,,,,,
+👳,turban,uwoba,body,holds,medium,,,,,
 👲,skullcap,ozeba,body,holds,small,,,,,
 🧕,head-scarf,aroba,body,holds,medium,modesty,headscarf shows modesty,,,
 🤵,tuxedo,odoba,body,holds,medium,formality,tuxedo signals formality,,fancy; suit,
@@ -236,7 +236,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧑‍🦽,propel,ebuvo,doing,order,none,independence,self-propelling a chair shows independence,,motivate,
 🏃,run,eruvo,doing,order,none,,,,,speech-moves.md#beginner-practice
 🧑‍🩰,ballet,oburo,counting,order,none,,,,,
-🕺,dance,unuro,counting,order,none,,,,,spans.md#beginner-practice
+🕺,dance,uduro,counting,order,none,,,,,spans.md#beginner-practice
 🕴️,levitate,eluve,doing,one,none,elevation,levitating lifts a body off the ground,,,
 👯,partying,abura,counting,holds,none,revelry,partying dancers show revelry,,,
 🧖,sauna,ozaha,place,holds,big,relaxation,sauna brings relaxation,,relax,
@@ -432,14 +432,14 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍆,eggplant,ogodo,food,order,medium,provocation,eggplant emoji provokes,,,
 🥔,potato,uyede,food,one,small,,,,,
 🥕,carrot,agedo,food,order,small,incentive,carrot on a stick is incentive,,,
-🌽,maize,ogeda,food,holds,small,kitsch,a corny joke is hokey and overdone,,corn,
+🌽,maize,emeda,food,holds,small,kitsch,a corny joke is hokey and overdone,,corn,
 🌶️,pepper,abedu,food,takes-away,small,heat,hot pepper brings heat,,chili,
 🫑,bell-pepper,ubeda,food,holds,small,,,,,
 🥒,cucumber,ugedo,food,order,small,,,,,
 🫝,pickle,ebedo,food,order,small,predicament,a pickle is a mess to get out of; a predicament is a hard spot,,,
 🥬,greens,eguda,food,holds,none,vitality,leafy greens fuel vitality,,vital; vegetable,
-🥦,broccoli,orede,food,one,small,health,eat broccoli for health,,healthy; welfare,
-🧄,garlic,oleda,food,holds,small,,,,,
+🥦,broccoli,ewede,food,one,small,health,eat broccoli for health,,healthy; welfare,
+🧄,garlic,ogeda,food,holds,small,,,,,
 🧅,onion,onedu,food,takes-away,small,depth,onion has layers of depth,,,
 🥜,peanut,uweda,food,holds,small,triviality,work for peanuts is trivial pay,,,
 🫘,bean,obeda,food,holds,small,,,,,
@@ -452,7 +452,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥖,baguette,ebodo,food,order,medium,,,,,numbers.md#beginner-practice
 🫓,flat-bread,evoda,food,holds,medium,simplicity,flatbread is simple fare,g:bland,plain,
 🥨,pretzel,erede,food,one,small,complexity,a pretzel is knotted and twisted back on itself,,complex; complicate,
-🥯,bagel,emede,food,one,small,,,,,
+🥯,bagel,enede,food,one,small,,,,,
 🥞,pancake,abede,food,one,small,flattening,pancake flattens under pressure,,flat; thin; smooth,
 🧇,waffle,awede,food,one,small,indecision,a waffle is cooked by turning; indecision is turning from one side to the other,,,
 🧀,cheese,ehede,food,one,small,,,,,set-joins.md#intermediate-practice
@@ -473,18 +473,18 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍳,cooking,ugudo,food,order,none,,,,,
 🥘,pan,oboda,food,holds,medium,medley,many components cook in one pan,,,
 🍲,soup,uzuda,food,holds,none,simmer,soup simmers over low heat for a long time,,stew,
-🫕,sauce,ewuda,food,holds,none,sharing,everyone dips into one shared pot of sauce,,,
+🫕,sauce,oyuda,food,holds,none,sharing,everyone dips into one shared pot of sauce,,,
 🥣,bowl,oda,food,holds,,capacity,a bowl holds what it can; capacity is how much fits,,,can-and-cant.md#beginner-practice
 🥗,salad,azuda,food,holds,none,,,,,compound-families.md#intermediate-practice
 🍿,popcorn,abeda,food,holds,small,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,ubuda,food,holds,none,compliment,"butter spreads warm and smooth, like a compliment",,,
 🧂,salt,ozuda,food,holds,none,skepticism,take it with a grain of salt,,,
 🥫,metal,umule,nature,one,none,,a can stands for metal: the hard shiny material,,,
-🍱,lunchbox,enoda,food,holds,medium,order,a lunchbox keeps each food in its own tidy slot,,bento; line; rank; arrange,
+🍱,lunchbox,uloda,food,holds,medium,order,a lunchbox keeps each food in its own tidy slot,,bento; line; rank; arrange,
 🍘,rice-cracker,urede,food,one,small,,,,,
 🍙,rice-ball,areda,food,holds,small,,,,,
 🍚,rice,aruda,food,holds,none,,,,,
-🍛,spice,awuda,food,holds,none,piquancy,spice gives food its bite; piquancy is the lively edge that keeps something interesting,,seasoning,
+🍛,spice,ezuda,food,holds,none,piquancy,spice gives food its bite; piquancy is the lively edge that keeps something interesting,,seasoning,
 🍜,noodles,anuda,food,holds,none,,,,,
 🍝,pasta,abuda,food,holds,none,,,,spaghetti,
 🍠,yam,ayede,food,one,small,nostalgia,a yam is homestyle nostalgia,,,
@@ -504,16 +504,16 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧁,cupcake,ugeda,food,holds,small,coda,cupcake is a sweet course; coda is the unobservable closing role,,,
 🥧,pie,aboda,food,holds,medium,,,,,comparative-arity.md#intermediate-practice
 🍫,chocolate,ohede,food,one,small,,,,,list-structure.md#intermediate-practice
-🍬,candy,uneda,food,holds,small,sugar,candy is sweetened; sugar is what sweetens,,,no-subject.md#beginner-practice
+🍬,candy,ageda,food,holds,small,sugar,candy is sweetened; sugar is what sweetens,,,no-subject.md#beginner-practice
 🍭,lollipop,olede,food,one,small,pacification,lollipop pacifies a child,,,list-structure.md#intermediate-practice
-🍮,flan,oyeda,food,holds,small,richness,flan is thick with cream and eggs,,custard,
+🍮,flan,oveda,food,holds,small,richness,flan is thick with cream and eggs,,custard,
 🍯,honey,ahuda,food,holds,none,endearment,honey is a sweet endearment,,,
 🍼,bottle,uboda,food,holds,medium,inhibition,a bottle holds liquid inside; inhibition is holding feeling in,,,measures-and-percent.md#intermediate-practice
 🥛,milk,umuda,food,holds,none,,,,,
 ☕,coffee,oguda,food,holds,none,alertness,coffee fuels alertness,g:bitter,,
 🫖,teapot,edoda,food,holds,medium,ceremony,teapot pours with ceremony,,,hooks.md#beginner-practice
 🍵,tea,eduda,food,holds,none,,,,,resume-sense.md#intermediate-practice
-🍶,rice-wine,ezuda,food,holds,none,ritual,a toast of rice wine is ritual,,sake,
+🍶,rice-wine,oruda,food,holds,none,ritual,a toast of rice wine is ritual,,sake,
 🍾,champagne,ehuda,food,holds,none,,,,,
 🍷,wine,owuda,food,holds,none,refinement,wine signals refinement,,,plurality.md#beginner-practice
 🍸,cocktail,aguda,food,holds,none,blend,cocktail blends many flavors,,combine; mixture; stir; mix; compound; combination,more-hinges.md#intermediate-practice
@@ -529,7 +529,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧊,ice,uzule,nature,one,none,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,more-occasions.md#intermediate-practice
 🥢,stick,ezedo,food,order,small,,chopsticks stand for any stick: a thin length of wood,,,
 🍽️,plate,eboda,food,holds,medium,service,plate is set for service,,help; dish; assistance; favor; aid,compound-families.md#intermediate-practice
-🍴,silverware,ageda,food,holds,small,provision,silverware enables provision,v:eat,cutlery; supply; resource; meal; food; diet,knowing.md#beginner-practice
+🍴,silverware,ozeda,food,holds,small,provision,silverware enables provision,v:eat,cutlery; supply; resource; meal; food; diet,knowing.md#beginner-practice
 🥄,spoon,uzeda,food,holds,small,portion,spoon measures a portion,,component; segment,
 🔪,knife,anewu,tool,takes-away,small,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
 🫙,jar,ada,food,holds,,storage,jar stores what is kept,,vessel; stock,no-subject.md#beginner-practice
@@ -547,21 +547,21 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏜️,desert,adaha,place,holds,big,barren,a desert has little life; barren is empty of results,,dry,
 🏝️,island,alahe,place,one,big,isolation,an island stands apart; isolation is standing apart,,isolate,viewpoint.md#intermediate-practice
 🏞️,park,obaha,place,holds,big,refuge,a park is a green refuge; refuge is safe respite,,,
-🏟️,arena,azaha,place,holds,big,contest,an arena hosts competition; contest is the unobservable stakes,,stadium; tournament,
+🏟️,arena,enaha,place,holds,big,contest,an arena hosts competition; contest is the unobservable stakes,,stadium; tournament,
 🏛️,colonnade,ogaho,place,order,big,institution,grand columns mark public power; institution is established order,,official; column; establishment; politics; govern,
 🏗️,building-site,ubaho,place,order,big,undertaking,a building site is a big job under way; an undertaking is a task taken on,,,
 🧱,wall,ahu,place,takes-away,,foundation,a wall stands on what is under it; foundation is the base layer,,basis; framework; underlie; base,
 🪨,rock,arole,nature,one,medium,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; cement,collectives.md#intermediate-practice
 🪵,wood,ulo,nature,order,,raw,wood is unfinished material; raw is unprocessed state,,log,compounds.md#beginner-practice
 🛖,hut,ahaha,place,holds,big,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
-🏘️,neighborhood,alaha,place,holds,big,town,a neighborhood of houses forms a town; a town is a small settled place,,houses; settlement,
+🏘️,neighborhood,anaha,place,holds,big,town,a neighborhood of houses forms a town; a town is a small settled place,,houses; settlement,
 🏚️,derelict-house,edahu,place,takes-away,big,ruin,a derelict house shows decay; ruin is lasting damage,,,
-🏠,house,amaha,place,holds,big,home,a house is walls and roof; home is where you belong,,domestic; accommodation,locative-relations.md#intermediate-practice
+🏠,house,ohaha,place,holds,big,home,a house is walls and roof; home is where you belong,,domestic; accommodation,locative-relations.md#intermediate-practice
 🏢,office,ovaha,place,holds,big,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
 🏤,post-office,oyaha,place,holds,big,conveyance,post office sends mail; conveyance is the unobservable transfer-as-kind,,delivery; transportation; transfer; transport,
 🏥,hospital,uhaha,place,holds,big,,,,,proper-names.md#intermediate-practice
 🏦,bank,abaha,place,holds,big,security,bank keeps money safe; security is kept safe,,deposit,
-🏨,hotel,ohaha,place,holds,big,,,,,
+🏨,hotel,ayaha,place,holds,big,,,,,
 🏩,motel,omaha,place,holds,big,privacy,discreet lodging,,,
 🏪,shop,awaha,place,holds,big,convenience,the corner shop is always nearby; convenience is easy to reach,,store,
 🏫,school,uzaha,place,holds,big,education,school teaches; education is learning over time,,educational; course,word-endings.md#beginner-practice
@@ -573,19 +573,19 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🗽,statue,ezahe,place,one,big,liberty,statue of liberty,,liberal,label-reach.md#intermediate-practice
 ⛪,church,ehaha,place,holds,big,faith,church gathers believers; faith is trust in what is unseen,,religious; religion,
 🕌,mosque,umaha,place,holds,big,,,,,
-🛕,temple,odaha,place,holds,big,,,,,
-🕍,synagogue,enaha,place,holds,big,,,,,
+🛕,temple,ulaha,place,holds,big,,,,,
+🕍,synagogue,ezaha,place,holds,big,,,,,
 ⛩️,shrine,uyaha,place,holds,big,shinto,a shrine marks the way; shinto is keeping it,,,
-🕋,sanctuary,ayaha,place,holds,big,quest,kaaba draws the faithful; quest is the unobservable sacred aim,,,
+🕋,sanctuary,azaha,place,holds,big,quest,kaaba draws the faithful; quest is the unobservable sacred aim,,,
 ⛲,fountain,avaha,place,holds,big,,,,,
-⛺,tent,anaha,place,holds,big,,,,,sakes.md#beginner-practice
+⛺,tent,odaha,place,holds,big,,,,,sakes.md#beginner-practice
 🌁,foggy,uvulu,nature,takes-away,none,purport,foggy skyline leaves outlines unclear; purport is claimed but unsettled,,imply,
 🌃,night,anuru,counting,takes-away,none,unknown,night hides what day shows; unknown is what is hidden,,darkness; dark,sakes.md#beginner-practice
 🏙️,skyline,azaho,place,order,big,urban,towers and lights fill the skyline; urban is city life,,city,
 🏡,cottage,egaha,place,holds,big,rural,a cottage with a garden sits out of town; rural is country life,,,
-🌄,morning,eduro,counting,order,none,dawn,sun rises over peaks; dawn is a new beginning,,daybreak,
+🌄,morning,omuro,counting,order,none,dawn,sun rises over peaks; dawn is a new beginning,,daybreak,
 🌅,sunrise,azuro,counting,order,none,day,sunrise opens each new day; day is the sunrise-to-sunrise unit,,,dated-channel.md#intermediate-practice
-🌆,nightfall,aduru,counting,takes-away,none,closure,nightfall ends the day; closure is bringing something to an end,,dusk,
+🌆,nightfall,unuru,counting,takes-away,none,closure,nightfall ends the day; closure is bringing something to an end,,dusk,
 🌇,sunset,uzuru,counting,takes-away,none,far-side,the sun sets on the far side of the horizon; the far side is the side away from where you stand,,,
 🌉,bridge,oho,place,order,,span,a bridge spans the gap; span is reaching across,,,locative-relations.md#intermediate-practice
 🚐,van,uvava,doing,holds,big,,a minibus is a van,,,
@@ -630,7 +630,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🚢,ship,ahava,doing,holds,big,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail; trip; tour,hook-compounds.md#advanced-practice
 ✈️,airplane,arava,doing,holds,big,,,,plane; aircraft; flight,
 🛫,departure,uduru,counting,takes-away,none,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon; leave; depart,knowing.md#beginner-practice
-🛬,arrival,ayuro,counting,order,none,reaching,plane touching down reaches destination; arrival is reaching the end,,,comparative-arity.md#intermediate-practice
+🛬,arrival,avuro,counting,order,none,reaching,plane touching down reaches destination; arrival is reaching the end,,,comparative-arity.md#intermediate-practice
 🪂,parachute,ubavo,doing,order,big,descent,parachute slows a fall; descent is coming down safely,,sink,
 💺,seat,uzohe,place,one,medium,passive,seat holds you while others move; passive is not acting yourself,,,number-markers.md#intermediate-practice
 🚁,helicopter,uhava,doing,holds,big,,,,,
@@ -662,7 +662,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🌌,galaxy,agala,nature,holds,big,vastness,a galaxy holds billions of stars,,vast; universe,
 ☁️,cloud,ugala,nature,holds,big,sky,clouds fill the sky,,atmosphere,evidentiality.md#intermediate-practice
 ⛅,cloudy,ogulu,nature,takes-away,none,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
-⛈️,storm,anulu,nature,takes-away,none,,,,thunderstorm,sakes.md#beginner-practice
+⛈️,storm,ozulu,nature,takes-away,none,,,,thunderstorm,sakes.md#beginner-practice
 🌦️,showers,uhula,nature,holds,none,,,,,
 🌧️,rain,erula,nature,holds,none,letdown,rain washes out what you hoped to do; a letdown is a hope that fell through,,,clause-sequence.md#beginner-practice
 🌨️,snow,ozula,nature,holds,none,stillness,snow quiets the landscape; stillness is calm / slack water,,,more-occasions.md#intermediate-practice
@@ -754,7 +754,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪡,needle,enewu,tool,takes-away,small,,,,,
 🧶,yarn,ayula,nature,holds,none,blanket,yarn is knit into a blanket; a blanket is the cover that warms,,,
 🪢,knot,awe,tool,one,,bond,knot ties two ends together; bond is holding fast together,,bind; integrate,
-🕶️,shades,azebu,body,takes-away,small,unbothered,shades hide the eyes; cool is calm unbothered style,,sunglasses,
+🕶️,shades,ahebu,body,takes-away,small,unbothered,shades hide the eyes; cool is calm unbothered style,,sunglasses,
 🥽,goggles,egebu,body,takes-away,small,,,,,
 🥼,lab-coat,aloba,body,holds,medium,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; specialist; specialize; pro; qualification; expert; professional,
 🦺,vest,uvoba,body,holds,medium,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance; insure,
@@ -768,30 +768,30 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 👗,dress,edoba,body,holds,medium,clothing,a dress is one garment; clothing is garments worn together,,wear; clothes,rank-joins.md#intermediate-practice
 👘,kimono,egoba,body,holds,medium,,,,,
 🥻,sari,uzoba,body,holds,medium,heritage,sari carries traditional form; heritage is passed-down culture,,culture; cultural,
-🩱,swimsuit,uwoba,body,holds,medium,exposure,swimsuit reveals for water; exposure is being laid open,,,
-🩲,underwear,oyoba,body,holds,medium,,,,briefs,
+🩱,swimsuit,azoba,body,holds,medium,exposure,swimsuit reveals for water; exposure is being laid open,,,
+🩲,underwear,anoba,body,holds,medium,,,,briefs,
 🩳,shorts,ohoba,body,holds,medium,,,,,
 👙,bikini,oboba,body,holds,medium,,,,,
 👚,blouse,aboba,body,holds,medium,,,,,
 🪭,fan,avobu,body,takes-away,medium,coolness,a fan stirs the air and cools the skin,,,
 👛,purse,eboba,body,holds,medium,savings,purse holds small valuables; savings is kept resources,,,
-👜,bag,ayoba,body,holds,medium,bearing,a bag carries what is needed; bearing is carrying that load,,,
+👜,bag,oyoba,body,holds,medium,bearing,a bag carries what is needed; bearing is carrying that load,,,
 👝,clutch,ageba,body,holds,small,,,,,
 🛍️,shopping-bag,awoba,body,holds,medium,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,,
 🎒,backpack,aba,body,holds,,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,
-🩴,flip-flop,azoba,body,holds,medium,,,,sandal,
+🩴,flip-flop,evoba,body,holds,medium,,,,sandal,
 👞,shoe,uhoba,body,holds,medium,,,,,
 👟,sneaker,ezoba,body,holds,medium,activity,sneaker is built for movement; activity is active motion,,action; active,
 🥾,boot,unoba,body,holds,medium,mile,a boot is made for long walking; a mile is a long walking distance,,,
 🥿,loafer,uloba,body,holds,medium,,,,,
-👠,high-heel,ahoba,body,holds,medium,,,,,
+👠,high-heel,eyoba,body,holds,medium,,,,,
 🩰,ballet-shoe,uyoba,body,holds,medium,,,,,
 🪮,comb,ogebo,body,order,small,,,,,quote-contents.md#intermediate-practice
 👑,crown,egobo,body,order,medium,leadership,crown marks who rules; leadership is being the one others answer to,,lead,social-ties.md#beginner-practice
 👒,sun-hat,azobu,body,takes-away,medium,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,udoba,body,holds,medium,trick,a magician pulls a trick from a top hat,,,
 🎓,mortar-board,omoba,body,holds,medium,,,,college; university,
-🧢,hat,anoba,body,holds,medium,,,,cap,universality.md#advanced-practice
+🧢,hat,ahoba,body,holds,medium,,,,cap,universality.md#advanced-practice
 🪖,helmet,ehobu,body,takes-away,medium,,,,,roles.md#beginner-practice
 ⛑️,hard-hat,ahobu,body,takes-away,medium,,,,,
 📿,rosary,orebo,body,order,small,prayer,beads count prayers; prayer is speaking to the sacred,,,
@@ -808,7 +808,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔕,bell-off,eburu,counting,takes-away,none,,,,,
 🎼,sheet-music,ehoro,counting,order,medium,composition,sheetmusic arranges notes on lines; composition is arranged creation,,music; compose,collectives.md#intermediate-practice
 🎵,note,onure,counting,one,none,melody,note carries a musical line; melody is tuneful line,,tone; pitch,spans-as-words.md#intermediate-practice
-🎶,song,uduro,counting,order,none,,,,tune,
+🎶,song,ezuro,counting,order,none,,,,tune,
 🎙️,studio-mic,uzewe,tool,one,small,,,,studio,
 🎚️,slider,ezewo,tool,order,small,adjustment,slider fine-tunes the level; adjustment is fine tuning,,adjust; amendment; revise,
 🎛️,knob,anewe,tool,one,small,control,knobs adjust the sound mix; control is directing settings,,operate; regulate; handle; conduct,
@@ -897,14 +897,14 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🗒️,notepad,unena,title,holds,small,,,,,
 📇,index-card,eneno,title,order,small,lookup,card index sorts; lookup is the unobservable find-operation,,search; index,
 📈,uptrend,aburo,counting,order,none,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,very-and-slightly.md#intermediate-practice
-📉,downtrend,aluru,counting,takes-away,none,loss,the chart falls; loss is having less than before,,deficit,
+📉,downtrend,aduru,counting,takes-away,none,loss,the chart falls; loss is having less than before,,deficit,
 📊,bar-chart,eburo,counting,order,none,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,
 📋,clipboard,ugowa,tool,holds,medium,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,can-and-cant.md#beginner-practice
 📌,pin,ubewu,tool,takes-away,small,highlight,pin marks an important spot; highlight is marking as important,,,
 📎,paper-clip,ebewa,tool,holds,small,attachment,paperclip holds sheets together; attachment is joined addition,,attach,
 📏,ruler,uroro,counting,order,medium,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,
 🚃,railcar,urava,doing,holds,big,length,a railcar runs long; length is how far along,,extend; long,
-📐,set-square,ezero,counting,order,small,meter,set square marks exact length; meter is the SI length unit,,,measures-and-percent.md#intermediate-practice
+📐,set-square,ozero,counting,order,small,meter,set square marks exact length; meter is the SI length unit,,,measures-and-percent.md#intermediate-practice
 ✂️,scissors,ozewu,tool,takes-away,small,separation,scissors cut material apart; separation is dividing apart,,distinct; slice; apart; distinguish; distinction; separate,quote-contents.md#intermediate-practice
 🗃️,file-box,avona,title,holds,medium,archive,file box stores old records; archive is stored past record,,file; database,
 🗄️,cabinet,ugaha,place,holds,big,,,,shelf,
@@ -966,7 +966,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪤,mousetrap,amewu,tool,takes-away,small,trap,mousetrap lures then snaps shut; trap is lure into confinement,,,
 🪒,razor,urebu,body,takes-away,small,,,,,
 🧴,lotion,oluba,body,holds,none,self-care,lotion soothes your own skin; self-care is tending to yourself,,,
-🧷,safety-pin,eyebu,body,takes-away,small,fastening,safety pin holds fabric together; fastening is holding together,,,
+🧷,safety-pin,azebu,body,takes-away,small,fastening,safety pin holds fabric together; fastening is holding together,,,
 🧹,broom,ubowu,tool,takes-away,medium,cleanup,broom sweeps dirt away; cleanup is clearing what clutters,,sweep; wipe,
 🧺,basket,abowa,tool,holds,medium,gathering,basket collects items together; gathering is bringing together,,,plurality.md#beginner-practice
 🧻,paper-roll,ebe,body,one,,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; essential; lack,
@@ -998,12 +998,12 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🚸,children-crossing,ehahu,place,takes-away,big,vulnerability,children crossing marks those at risk; vulnerability is easily harmed,,,
 ⛔,no-entry,egu,sign,takes-away,,forbidden,no entry sign blocks the way; forbidden is not allowed,,ban; illegal,
 🚫,prohibited,ebugu,sign,takes-away,none,taboo,prohibited sign bans; taboo is the unobservable ban-as-norm,,,
-🚳,no-bicycles,ayugu,sign,takes-away,none,,,,,
-🚭,smoke-free,unugu,sign,takes-away,none,,,,no-smoking,
-🚯,no-littering,ulugu,sign,takes-away,none,,,,,
+🚳,no-bicycles,anugu,sign,takes-away,none,,,,,
+🚭,smoke-free,uzugu,sign,takes-away,none,,,,no-smoking,
+🚯,no-littering,unugu,sign,takes-away,none,,,,,
 🚷,no-pedestrian,onugu,sign,takes-away,none,boundary,no walking past this sign; a boundary marks what others may not cross,,limit; edge; border; margin,
 📵,no-phone,enugu,sign,takes-away,none,,,,,
-🔞,adults-only,anugu,sign,takes-away,none,,,,no-minors,
+🔞,adults-only,udugu,sign,takes-away,none,,,,no-minors,
 ☢️,radioactive,urugu,sign,takes-away,none,toxicity,radiation poisons; toxicity is being harmful to be near,,,
 ☣️,biohazard,abugu,sign,takes-away,none,,,,,
 ⬆️,north,onuho,place,order,none,,,,northern,
@@ -1020,8 +1020,8 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ↪️,forward,uvuho,place,order,none,redirect,return arrow curves forward right; redirect is sending another way,,proceed; forth,
 ⤴️,curve-up,ogugo,sign,order,none,improvement,the arrow turns upward; improvement is getting better,,improve; enhance; reform; slope,
 ⤵️,curve-down,egugo,sign,order,none,setback,the arrow turns downward; a setback puts progress back,,,
-🔃,reload,oyugo,sign,order,none,cycle,reload arrows go in a circle; cycle repeats round and round,,round; season,
-🔄,sync,arugo,sign,order,none,turn,sync arrows spin around; a turn is going around,,refresh; spin; twist; bend,
+🔃,reload,arugo,sign,order,none,cycle,reload arrows go in a circle; cycle repeats round and round,,round; season,
+🔄,sync,azugo,sign,order,none,turn,sync arrows spin around; a turn is going around,,refresh; spin; twist; bend,
 🛐,worship,ewuyo,person,order,none,devotion,worship symbol marks sacred practice; devotion is committed reverence,,devote,
 ⚛️,atom,adele,nature,one,small,fundamental,atom is basic building block; fundamental is core underlying part,,element; nuclear; core; radical; basic,
 🕉️,om,umuge,sign,one,none,spirituality,om symbol marks sacred sound; spirituality is inner sacred life,,spirit; soul,
@@ -1035,7 +1035,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🕎,menorah,omuga,sign,holds,none,,,,,
 🪯,khanda,aguge,sign,one,none,sikh,the khanda marks the faith; sikh is belonging to it,,,
 ♈,aries,eruro,counting,order,none,impulse,aries charges as the first sign; impulse is sudden forward drive,,urge,
-♉,taurus,oyuro,counting,order,none,,,,,
+♉,taurus,eduro,counting,order,none,,,,,
 ♊,gemini,ero,counting,order,,duality,gemini twins mirror two sides; duality is two sides together,,twin,
 ♋,cancer,uguro,counting,order,none,,,,,
 ♌,leo,eluro,counting,order,none,,,,,
@@ -1056,13 +1056,13 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⏯️,play-pause,obugo,sign,order,none,,,,,
 ◀️,backward,ubugo,sign,order,none,reverse,backward plays opposite direction; reverse is going opposite direction,,,
 ⏪,rewind,urugo,sign,order,none,backtrack,double rewind jumps back; backtrack is revisiting earlier,,,
-⏮️,skip-back,owugo,sign,order,none,,,,previous-track; previous,
+⏮️,skip-back,ozugo,sign,order,none,,,,previous-track; previous,
 ⏫,up,abuho,place,order,none,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,viewpoint.md#intermediate-practice
 ⏬,down,oduho,place,order,none,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,more-occasions.md#intermediate-practice
 ⏸️,pause,obugu,sign,takes-away,none,hiatus,pause halts playback; hiatus is a temporary halt,,suspend,
 ⏺️,record,ege,sign,one,,preservation,record button captures now; preservation is the unobservable keeping-across-time,,tape; preserve; retain,
 ⏏️,eject,ohugu,sign,takes-away,none,removal,eject pushes media out; removal is forcing outward exit,,extract,
-🎦,movie-theater,ezaha,place,holds,big,make-believe,a movie theater shows a film; make-believe is the unobservable as-if,,cinema; imagination; pretend,
+🎦,movie-theater,amaha,place,holds,big,make-believe,a movie theater shows a film; make-believe is the unobservable as-if,,cinema; imagination; pretend,
 🔆,bright,obule,nature,one,none,amplify,bright raises the brightness; amplify is making louder or brighter,v:shine,light,
 📶,signal,ezugo,sign,order,none,evidence,signal bars show what gets through; evidence is what supports a claim,,sign; prove; indication; indicate,
 🛜,wireless,uwugo,sign,order,none,connectivity,a wireless signal links devices without a cable,,online,
@@ -1404,7 +1404,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 𓄛,animal,anoza,creature,holds,medium,,the hide sign marks words for animals in hieroglyphs,,creature; beast,
 𓉐,room,uraha,place,holds,big,,the floor-plan sign is a walled space with a doorway,,chamber,
 𓊲,table,edohe,place,one,medium,,a low table set with offerings,,,hooks.md#beginner-practice
-𝄐,hold,avuro,counting,order,none,lingering,a hold (fermata) keeps a note longer than its beat; lingering is staying past the expected time,,fermata,
+𝄐,hold,ohuro,counting,order,none,lingering,a hold (fermata) keeps a note longer than its beat; lingering is staying past the expected time,,fermata,
 𝄒,breath-mark,oburu,counting,takes-away,none,breather,a breath mark gives the singer a moment to breathe; a breather is a short break to recover,,,
 𝄓,caesura,ozuru,counting,takes-away,none,interruption,a caesura cuts the music off mid-flow; an interruption breaks off what was going on,,,
 𝄞,clef,ugure,counting,one,none,context,a clef at the start tells you how to read every note after it; context is what tells you how to read what follows,,background,
