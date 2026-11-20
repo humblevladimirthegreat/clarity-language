@@ -47,6 +47,7 @@ The lead rules were written for a section that teaches a grammar feature. Other 
 | The lead of a whole page | A page with two or more teaching sections (not counting Practice and See also) needs one, between the H1 and the first H3. It previews each section in at most one sentence ([say it once](#say-it-once)). A page with one teaching section needs no separate page lead: its one lead sits under the H1 or under that H3, not both |
 | Instructions for a control or tool on the page | [Interface instructions](#interface-instructions) |
 | A [Claritish](claritish-style.md) lesson | `## The gap` replaces the lead: it names the English habit and its cost, and Ageben enters only in its last sentence ([the gap](claritish-style.md#the-gap)). Skip the lead rules and the slogan test. Everything else applies |
+| A Claritish page that is not a lesson (cheat sheet, flashcards, journal editor) | [Interface instructions](#interface-instructions) and [Claritish wording and voice](claritish-style.md) apply. The lead rules and the slogan test do not |
 | Tables | May stay telegraphic. Running prose may not |
 | An orientation page (`purpose.md`, `introduction.md`) | [orientation-style.md](orientation-style.md). The lead rules and the slogan test do not apply; the rest of this page does, as that page lists |
 | The glossary (`terminology.md`) | Exempt from the specialist-term check, since defining those terms is its job |

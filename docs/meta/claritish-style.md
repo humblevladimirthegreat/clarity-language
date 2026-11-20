@@ -42,7 +42,7 @@ Gloss the term in plain English in the **same sentence as first use**, exactly a
 
 Lessons own two terms, because the grammar has no name for them: **drop-in** (an Ageben word used inside an English sentence) and the **gap** section heading. Add no others in a lesson.
 
-The journal editor has three interface words of its own: **cue**, **card**, and **mirror**. They name parts of the editor, not features of the language, and they stay on the editor page and in its data.
+The journal editor has three interface words of its own: **cue**, **card**, and **mirror**. They name parts of the editor, not features of the language, and they stay on the editor page and in its data. The Flashcards page's *flashcards* are Anki cards, not editor cards; it says *flashcard* wherever *card* alone could be read as an editor card.
 
 **Naming a feature is not teaching its grammar.** Keep out the machinery the reader cannot use yet: role letters, hosting, slots and word order, joins, spans, citation forms, the concrete / abstract split. A lesson says what the word means and where it goes in the English sentence, and stops.
 
