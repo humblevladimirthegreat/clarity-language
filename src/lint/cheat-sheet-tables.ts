@@ -61,3 +61,7 @@ export function cells(line: string): string[] {
   const inner = line.trim().replace(/^\|/, "").replace(/\|$/, "");
   return inner.split("|").map((cell) => cell.trim());
 }
+
+/** A span with its `-l` / `-m` / `-r` ending swapped for each of the three; other spans as they are. */
+export const swapEnding = (span: string): string[] =>
+  /[lmr]$/.test(span) ? ["l", "m", "r"].map((e) => span.slice(0, -1) + e) : [span];

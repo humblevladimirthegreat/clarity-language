@@ -1,6 +1,7 @@
 /**
  * Claritish flashcards: one note per distinct form on the Claritish cheat sheet
- * (docs/grammar/claritish/cheat-sheet.md), each filed under the first lesson that teaches it.
+ * (docs/grammar/claritish/cheat-sheet.md), each filed under the lesson the sheet links it to,
+ * or else the first lesson that teaches it.
  * Card text comes only from the sheet's tables and lines; nothing here types a form or a meaning.
  * Pure at import time: `buildClaritishPack` takes markdown, `loadClaritishPack` reads the files.
  */
@@ -9,7 +10,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { cellEnglish, plain, readFormula, readSheet, type Sheet } from "./claritish-editor/sheet.js";
-import { spans } from "./lint/cheat-sheet-tables.js";
+import { spans, swapEnding } from "./lint/cheat-sheet-tables.js";
 import { REPO_ROOT } from "./repo-paths.js";
 
 /** The Claritish note type: its own model, never shared with the Ageben packs. */
@@ -62,7 +63,7 @@ function deckId(name: string): number {
 
 /** A word with its `-l` / `-m` / `-r` ending swapped: the variants the cheat sheet lint accepts as taught. */
 export function endingVariants(form: string): string[] {
-  return /^[^\s]*[lmr]$/.test(form) && !form.startsWith("-") ? ["l", "m", "r"].map((e) => form.slice(0, -1) + e) : [form];
+  return /\s/.test(form) || form.startsWith("-") ? [form] : swapEnding(form);
 }
 
 const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -284,10 +285,13 @@ export function buildClaritishPack(sheetMarkdown: string, lessons: readonly Clar
   }
 
   const draft = [...byForm].map(([form, { places }]) => {
-    const variants = endingVariants(form);
-    const found = lessonSpans.find((l) => variants.some((v) => inSpans(v, l.spans)));
-    if (!found) throw new Error(`Claritish form \`${form}\` is in no lesson`);
     const first = places[0]!;
+    // The sheet's link wins (row, column header, heading); otherwise the first lesson that has the form.
+    const variants = endingVariants(form);
+    const found = first.link
+      ? lessonSpans.find((l) => l.lesson.page === first.link)
+      : lessonSpans.find((l) => variants.some((v) => inSpans(v, l.spans)));
+    if (!found) throw new Error(first.link ? `Claritish form \`${form}\`: the sheet links ${first.link}, which is not a lesson` : `Claritish form \`${form}\` is in no lesson`);
     return {
       form,
       section: first.section,

@@ -86,8 +86,8 @@ Feeling word: a thanks or sorry word + urge + how long it lasts. The first four 
 |---------|-------|-----|------|-----|
 | autonomy | unmet | default ending | push back (urge) | settled in (how long) |
 
-| Urge | Pulls you to | Urge | Pulls you to |
-|------|--------------|------|--------------|
+| [Urge](what-a-feeling-wants.md) | [Pulls you to](what-a-feeling-wants.md) | [Urge](feelings.md) | [Pulls you to](feelings.md) |
+|---------------------------------|-----------------------------------------|----------------------|------------------------------|
 | `a` | stay in it | `oe` | turn to someone |
 | `e` | act on someone | `uo` | push back |
 | `o` | do something for someone | `ua` | let go |

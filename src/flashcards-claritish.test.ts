@@ -5,7 +5,7 @@ import { describe, it } from "node:test";
 
 import { claritishLessons } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { readFormula, readSheet, readSwap } from "./claritish-editor/sheet.js";
-import { buildClaritishPack, claritishGuid, claritishLessonList, claritishTsv, loadClaritishPack, type ClaritishLessonPage } from "./flashcards-claritish.js";
+import { buildClaritishPack, claritishGuid, endingVariants, claritishLessonList, claritishTsv, loadClaritishPack, type ClaritishLessonPage } from "./flashcards-claritish.js";
 import { spans } from "./lint/cheat-sheet-tables.js";
 import { REPO_ROOT } from "./repo-paths.js";
 
@@ -16,11 +16,17 @@ const pack = buildClaritishPack(sheetMarkdown, lessons);
 const sheet = readSheet(sheetMarkdown);
 
 describe("Claritish notes", () => {
-  it("maps every note to one lesson, agreeing with the sheet's link where it has one", () => {
+  it("maps every note to one lesson: the sheet's link where it has one, and that lesson has the form", () => {
     const slugs = new Set(lessons.map((l) => l.slug));
     for (const note of pack.notes) {
       assert.ok(slugs.has(note.lesson.slug), `${note.form}: ${note.lesson.slug} is not a lesson`);
       if (note.sheetLesson) assert.equal(note.lesson.page, note.sheetLesson, `${note.form}: lesson disagrees with the sheet's link`);
+      const pageSpans = spans(lessons.find((l) => l.slug === note.lesson.slug)!.markdown);
+      const variants = endingVariants(note.form);
+      assert.ok(
+        pageSpans.some((s) => variants.includes(s) || (/\s/.test(s) && variants.some((v) => s.split(/\s+/).includes(v)))),
+        `${note.form}: ${note.lesson.page} has no \`${note.form}\` (or an ending variant) in a backtick span`,
+      );
       assert.equal(note.tags.filter((t) => t.startsWith("claritish::lesson::")).length, 1, note.form);
       assert.equal(note.fields.lesson, note.lesson.title);
     }

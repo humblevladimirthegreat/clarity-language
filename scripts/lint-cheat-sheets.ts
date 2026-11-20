@@ -20,7 +20,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join, posix, relative } from "node:path";
 
 import { classifyAgebenSpan } from "../src/lint/ageben-docs.js";
-import { spans, tables } from "../src/lint/cheat-sheet-tables.js";
+import { spans, swapEnding, tables } from "../src/lint/cheat-sheet-tables.js";
 import { pageSections, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { listMarkdown } from "../src/markdown-files.js";
@@ -62,9 +62,6 @@ const problems: string[] = [];
 function formSpans(text: string): string[] {
   return spans(text).filter((s) => ["word", "phrase", "sentence"].includes(classifyAgebenSpan(s)));
 }
-
-const swapEnding = (span: string) =>
-  /[lmr]$/.test(span) ? ["l", "m", "r"].map((e) => span.slice(0, -1) + e) : [span];
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
