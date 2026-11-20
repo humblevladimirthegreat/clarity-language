@@ -56,8 +56,8 @@ describe("morphGlossLine — hooked joins (hooked-joins.md#hooked-joins)", () =>
   });
   it("glosses a point-back hook, and on /h/ a time", () => {
     expectLine("zazozon vehohel el bohahal. zerxual vezuvel.", "z-Azozon | v-sit | [at | b-house] . z-there-x-everything | v-sleep");
-    expectLine("zazozon vowurol halam blozulul. zawan vebal hurxal.", "z-Azozon | v-walk | [h-after | bl-thunderstorm] . z-listener | v-hear | h-since.then-x-never");
-    expectLine("zawan vebal huxam blozulul.", "z-listener | v-hear | [h-from-x-never.open | bl-thunderstorm]");
+    expectLine("zazozon vowurol halam blozulul. zawan vebal hurxal.", "z-Azozon | v-walk | [h-after | bl-storm] . z-listener | v-hear | h-since.then-x-never");
+    expectLine("zawan vebal huxam blozulul.", "z-listener | v-hear | [h-from-x-never.open | bl-storm]");
   });
 });
 

@@ -468,7 +468,7 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
   it(
     "hooked-joins.md:127: *never since the thunderstorm* keeps the hook that bounds the times",
     () => {
-      const occasion = frame(one("z-listener | v-hear | [h-from-x-never.open | bl-thunderstorm]"), "occasion");
+      const occasion = frame(one("z-listener | v-hear | [h-from-x-never.open | bl-storm]"), "occasion");
       assert.equal(occasion.hosted?.kind, "thing");
       assert.equal(occasion.values.hook, "ul");
     },

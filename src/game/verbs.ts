@@ -289,7 +289,7 @@ export const HANDLERS: Record<string, Handler> = {
       return report(d, clause(who(d), ["fall asleep", "falls asleep"]));
     },
   },
-  cutlery: {
+  silverware: {
     english: ["eat", "eats"],
     creature: true,
     needsPatient: true,

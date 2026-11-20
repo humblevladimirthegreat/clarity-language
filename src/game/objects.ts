@@ -57,7 +57,7 @@ export const OVERRIDES: Record<string, Partial<Traits>> = {
   money: { physical: true, size: "small", portable: true, container: false },
   bell: { container: false },
   door: { physical: true, size: "big", openable: true, portable: false },
-  cutlery: { edible: false, container: false },
+  silverware: { edible: false, container: false },
   drink: { drinkable: true, pours: true, edible: false, container: false, portable: true, size: "small" },
   water: { drinkable: true, pours: true, quenches: true },
   wood: { flammable: true },

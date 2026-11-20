@@ -13,7 +13,7 @@ zawan vebal huxal blarl zayan vavobol al bohahal.
 = You haven't listened once since we went into the house.
 
 # R4d-7: a point-back hook takes the landmark it points back to (needs the reader gap filled first).
-# lk29, ? zalazun vehohel el bamahal. -> follows: yes; ? zalazun vehohel. -> yes (now: unknown; left unused hookJob:resume).
+# lk29, ? zalazun vehohel el bohahal. -> follows: yes; ? zalazun vehohel. -> yes (now: unknown; left unused hookJob:resume).
 # lk30, ? zalazun vehohel. -> follows: unknown, never no (now: unknown, left).
 # lk31, ? zalazun varuyol aol babewol. -> follows: yes (now: unknown, left).
 @ lk29
@@ -40,7 +40,7 @@ zazozon vezuyol balazun durl vehohel. zalazun valom durth.
 = Azozon tells Alazun not to sit. Alazun wishes not to.
 
 # R4d-9: joined verbs: each verb claims with the shared noun.
-# lk34, ? zazozon dabedal vagedal. -> follows: yes (now: unknown, left unused reading:verbSharedNoun).
+# lk34, ? zazozon dabedal vozedal. -> follows: yes (now: unknown, left unused reading:verbSharedNoun).
 # lk35, ? zazozon veruvol. -> follows: yes (now: unknown; not left, the verb list is never split).
 @ lk34
 zazozon vugudol vozedal val dabedal.

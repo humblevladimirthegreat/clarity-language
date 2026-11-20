@@ -30,7 +30,7 @@ describe("tail defaults", () => {
   });
 
   it("overrides fix rows that are odd in play", () => {
-    assert.ok(!traits("cutlery").edible);
+    assert.ok(!traits("silverware").edible);
     assert.ok(traits("door").openable);
     assert.ok(traits("book").portable);
     assert.deepEqual(traits("dog").chases, ["cat"]);
