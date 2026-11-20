@@ -1,5 +1,5 @@
 /**
- * Check that the sentence grammar gives every input at most one tree. It reports each finding and fails (exit 1) on any of: a `GATE` or `IGNORE_AMBIGUITIES` in sentence-parser.ts, a nullable symbol with two empty derivations, an
+ * Check that the sentence grammar gives every input at most one tree. It reports each finding and fails (exit 1) on any of: a `GATE` or `IGNORE_AMBIGUITIES` in sentence-grammar.ts, a nullable symbol with two empty derivations, an
  * LR(1) conflict, a doc sentence with two gate-free trees or none, or an ALL(*) ambiguity report.
  *
  * 1. Exports the parser's grammar as BNF with every gate deleted (src/grammar-check/bnf.ts).
@@ -30,7 +30,7 @@ import { buildLr1, groupConflicts } from "../src/grammar-check/lr1.js";
 import { eliminateEmpty, emptyDerivations } from "../src/grammar-check/normalize.js";
 import { enforceTokens, enforceTones } from "../src/parse/enforce.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { markContext, parseSentenceTokens, SentenceParseError, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
+import { markContext, parseSentenceTokens, SentenceParseError, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-grammar.js";
 import { allTokens } from "../src/parse/tokens.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tokenizeUtterance } from "../src/parse/tokenize.js";
@@ -42,9 +42,9 @@ const skipLr1 = args.includes("--no-lr1");
 const withVariants = args.includes("--variants");
 
 // Gates: the grammar must decide by structure and token types, so no gate may choose a tree.
-const parserSource = readFileSync(join(REPO_ROOT, "src", "parse", "sentence-parser.ts"), "utf8");
+const parserSource = readFileSync(join(REPO_ROOT, "src", "parse", "sentence-grammar.ts"), "utf8");
 const gateSites = (parserSource.match(/\bGATE\b|IGNORE_AMBIGUITIES/g) ?? []).length;
-console.log(`GATE / IGNORE_AMBIGUITIES sites in sentence-parser.ts: ${gateSites}`);
+console.log(`GATE / IGNORE_AMBIGUITIES sites in sentence-grammar.ts: ${gateSites}`);
 
 const bnf = gastToBnf(sentenceGrammar(), "document", allTokens);
 console.log(`Grammar: ${bnf.nonterminals.size} nonterminals, ${bnf.productions.length} productions, ${bnf.terminals.size} token types`);

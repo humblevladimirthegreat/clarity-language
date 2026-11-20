@@ -6,7 +6,7 @@ import { diagnoseParseError, enforceResult, enforceTokens, enforceTones } from "
 import type { ClassifyTables } from "./classify.js";
 import { resolve } from "./resolve.js";
 import { addCstConstructions, addReadingConstructions, addResolveConstructions } from "./construction-trace.js";
-import { parseSentenceTokensWithCst } from "./sentence-parser.js";
+import { parseSentenceTokensWithCst } from "./sentence-grammar.js";
 import { tokenizeUtterance } from "./tokenize.js";
 import type { ParseOptions, ParseResult } from "./types.js";
 
