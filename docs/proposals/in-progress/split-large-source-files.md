@@ -1,56 +1,21 @@
 # Split the large source files under src/
 
-**Status:** IN PROGRESS, 2026-11-20: phase 1 (D1, D2) under way. Decided 2026-11-20: `npm run outline` lists class members, folds runs of short entries, takes `--min-tokens` and a directory (shipped; see the header of [outline.ts](../../../scripts/outline.ts)). Decided 2026-11-20, all as recommended: a dependency tool, `npm run deps`, is built first; in scope are `sentence-parser.ts`, `translate.ts`, `morph-gloss.ts`, and the Keys and Context leaf of `read.ts`, not `enforce.ts`; a build lint enforces the size limit with an allowlist that only shrinks; `read.ts` keeps Terms, Units and Readings together; `Translator`'s condition methods move out as functions. Decided 2026-11-20: the grammar class's rules move into one definer function per rule family (unit S1c), and S4 and S5 move to a phase 3. **Runs unsupervised** (see [Implementation plan](#implementation-plan)).  
-**Related:** [outline.ts](../../../scripts/outline.ts), [build.mjs](../../../scripts/build.mjs), [parser-pipeline.md](../../meta/parser-pipeline.md), [read-ageben.md](../../meta/procedures/read-ageben.md), [interpreter.md](../../meta/interpreter.md), [solver.md](../../meta/solver.md), [proposals.md](../../meta/procedures/proposals.md).  
+**Status:** IN PROGRESS, 2026-11-20: phase 1 done (D1 `npm run deps`, D2 the size lint and [code-layout.md](../../meta/code-layout.md), which owns the limits, the lint and how to split a file). Next is phase 2 (S1a to S3). Decided 2026-11-20, all as recommended: in scope are `sentence-parser.ts`, `translate.ts`, `morph-gloss.ts`, and the Keys and Context leaf of `read.ts`, not `enforce.ts`; `read.ts` keeps Terms, Units and Readings together; `Translator`'s condition methods move out as functions; the grammar class's rules move into one definer function per rule family (unit S1c); S4 and S5 are phase 3. **Runs unsupervised** (see [Implementation plan](#implementation-plan)).  
+**Related:** [code-layout.md](../../meta/code-layout.md), [deps.ts](../../../scripts/deps.ts), [lint-source-size.ts](../../../scripts/lint-source-size.ts), [parser-pipeline.md](../../meta/parser-pipeline.md), [read-ageben.md](../../meta/procedures/read-ageben.md), [interpreter.md](../../meta/interpreter.md), [solver.md](../../meta/solver.md), [proposals.md](../../meta/procedures/proposals.md).  
 **Depends on:** none. **Order:** `solver-coverage.md` is in progress and edits `translate.ts` and `read.ts`. Run each phase here between its phases, never during one. Its text names functions by file; the close step updates the ones that moved.  
 **Design authority:** *none*. Tooling and code layout only: no form or reading changes, and the parser's accept/reject behavior does not change.
-
-## Problem
-
-A few hand-written files under `src/` are far longer than the rest (2026-11-20):
-
-| Lines | File |
-|------:|------|
-| 3040 | `src/parse/sentence-parser.ts` |
-| 2298 | `src/interpret/translate.ts` |
-| 1763 | `src/parse/morph-gloss.ts` |
-| 1446 | `src/interpret/read.ts` |
-| 1420 | `src/parse/enforce.ts` |
-
-Everything else is at or under about 1340. An agent editing one of these either reads it whole (15k to 35k tokens) or edits from a partial view, and the cost recurs on every session that touches the parser or interpreter. No limit is stated, so the next file drifts the same way.
-
-## Goals
-
-- No hand-written source file over 1500 lines, with a build lint that keeps it so.
-- A dependency tool (`npm run deps`) that shows what a split would cut, before and after it is made.
-- A meta note, `docs/meta/code-layout.md`, that owns the limit and how to split a file.
-- Every split moves code without changing behavior, and `git mv` keeps history where a file changes name.
-
-## Non-goals
-
-- No split of `enforce.ts` (1420, no clean seam) or of the test files (`solve.test.ts` at 1340 is a flat list of cases).
-- No refactor inside a function or method beyond what moving it requires (`this.` → `t.` in S3, `this.` → `p.` in S1c).
-- No Chevrotain grammar inheritance: the rule families are mutually recursive, and inheritance is a linear chain.
-- No generating the one-line rule variants (`unitAfterZOpen`, `unitAfterZShared`, …) from a loop. That changes the code's shape, not just where it lives, and belongs in a later change.
 
 ## Design
 
 ### Limits
 
-- **Soft target, about 800 lines** for hand-written source. Past it, a file marks its sections with `// ── Title ──` banners, so `outline` and `deps` see the seams.
-- **Hard ceiling, 1500 lines** for hand-written `.ts` and `.mjs` under `src/` and `scripts/`, tests included. `src/generated/` is exempt.
-- **The lint** (`scripts/lint-source-size.ts`, run by the build) fails on a file over the ceiling unless the allowlist names it. Each allowlist row holds its file's line count when added. A row fails when its file grows past that count, and when the file drops under the ceiling, so stale rows get removed. It starts with the three files over the ceiling, and each split removes its row.
+[code-layout.md](../../meta/code-layout.md#limits) owns the 1500-line ceiling and the lint, `scripts/lint-source-size.ts`. Its allowlist starts with `src/parse/sentence-parser.ts` (3040), `src/interpret/translate.ts` (2298) and `src/parse/morph-gloss.ts` (1763). S1a repoints the first row, and each split removes its row.
 
-### `npm run deps`
+What the units need to know about `npm run deps` (`npm run -s deps -- --help` lists the modes):
 
-A script beside `outline` on the TypeScript compiler API, logic in `scripts/lib/deps.ts`, CLI in `scripts/deps.ts`. Modes:
-
-- **`deps FILE`**: edges between groups of one file, meaning which top-level names and `this.` members each group uses from each other group. Groups default to the file's banners, with the lines before the first banner as `head`. `--groups "name:a-b,…"` gives line ranges instead. Class members belong to the group their line falls in.
-- **`--uses NAME`** (`Class.member` for a member): every reference, in its own file and others, from the language service's find-references over `tsconfig.json`, so a local that shadows a top-level name is not counted.
-- **`--importers FILE`**: each export and the files that import it.
-- **`--split FILE "new-a.ts:a-b,c-d;new-b.ts:e-f"`** (unlisted lines stay in FILE): the import graph the split would give. It reports each cycle among the resulting files, and each **load-time read**: a top-level initializer (a `const`, a static field, a top-level call) that would read an imported binding while the module loads. Cycles between function-only code are allowed; load-time reads across a cycle are not.
-- **`--check-move REV:FILE FILE…`**: compares the old file at REV with the union of the new files, ignoring import and export-list lines, blank lines, and a leading `export ` keyword. It prints each line found on only one side. A pure move prints nothing.
-- **`--over N [PATH…]`**: hand-written `.ts` / `.mjs` files over N lines, largest first. The lint calls the same function.
+- `--check-move` ignores indentation and each new file's leading comment, so a method that becomes a function does not flag for its new indent.
+- Class members are named `Class.member` in every mode, as in `--uses Translator.hinge`.
+- `--split` builds cycles from value imports only (type-only imports are listed, not counted). It exits 1 only on a load-time read between two files in one cycle.
 
 ### Splits
 
@@ -83,22 +48,10 @@ The work runs through subagents: the units read different files and share little
 
 ### Phases
 
-- **Phase 1, tooling:** D1, D2. Cut after D2: the splits need only the tool and the lint, not their reports, and they read different files.
 - **Phase 2, parser and translator:** S1a, S1b, S1c, S2, S3. Prompt: *Carry out phase 2 of `split-large-source-files.md`*. Cut after S3: the next units read different files (`morph-gloss.ts`, `read.ts`), and five units fill a session.
 - **Phase 3, the rest:** S4, S5, then the close. Prompt: *Carry out phase 3 of `split-large-source-files.md`*.
 
 ### Units
-
-**D1 `npm run deps`.**
-`proposal-worker`, `model: opus`, effort `high`.
-Build `scripts/lib/deps.ts`, `scripts/deps.ts` and the `"deps"` script in `package.json`, per [`npm run deps`](#npm-run-deps), with every mode. Move the banner regex from `scripts/outline.ts` into the lib and import it from both. Write `scripts/lib/deps.test.ts` on small in-memory sources: banner groups, `--groups`, a `this.` member edge, shadowing for `--uses`, a cycle and a load-time read for `--split`, a pure move and a changed line for `--check-move`. Then check it against the real tree: on `src/interpret/read.ts`, Context's only out-edges are `thing`, `placeFrame`, `nestFrame`; on `src/parse/sentence-parser.ts`, the class uses no `*TypeAt` function. A local-only prototype may exist at `tmp/prototypes/deps-probe/edges.ts`; use it if present.
-**May edit:** `scripts/deps.ts`, `scripts/lib/deps.ts`, `scripts/lib/deps.test.ts`, `scripts/outline.ts`, `package.json`.
-
-**D2 Size lint and `code-layout.md`.**
-`proposal-worker`, `model: sonnet`, effort `medium`.
-(1) `scripts/lint-source-size.ts` per [Limits](#limits), calling D1's over-limit function. It prints each failure as `file:line` with the fix and the anchor `docs/meta/code-layout.md#limits`. Allowlist rows: `src/parse/sentence-parser.ts`, `src/interpret/translate.ts`, `src/parse/morph-gloss.ts`, each with its count. Register it in `scripts/build.mjs` beside the other lints, and add `"lint:source-size"` to `package.json`. (2) `docs/meta/code-layout.md` with `## Limits` (the [Limits](#limits) section) and `## Splitting a file`: measure with `outline` and `deps`, check the mapping with `deps --split`, move bodies by a script that copies line ranges, apply the [Renames](#splits) rule, run `deps --check-move`, then `verify`. Include the methods-to-functions pattern. Editor-note voice per [doc-style.md](../../meta/doc-style.md).
-**May edit:** `scripts/lint-source-size.ts`, `scripts/build.mjs`, `package.json`, `docs/meta/code-layout.md`.
-Then the orchestrator adds an `AGENTS.md` editor-notes row (`code-layout.md` | Source file size limit and its lint, splitting a file, `npm run deps`). It also adds a tooling note: *Before splitting or moving code across files, measure with `npm run deps` ([code layout](docs/meta/code-layout.md#splitting-a-file)).*
 
 **S1a Rename the parser file.**
 `proposal-worker`, `model: sonnet`, effort `low`.
@@ -150,7 +103,7 @@ Make `read-context.ts` per [Splits](#splits), and repoint importers of `wordKey`
 > - Measure before moving: `npm run -s outline -- FILE` (`--min-tokens 300` for the big entries) and `npm run -s deps -- FILE`. Ranges in the brief may have drifted; trust the tools.
 > - Check the mapping with `deps --split` first. Function-only cycles are allowed. A load-time read across a cycle is not: move the const with what it reads.
 > - **Move, never retype.** Copy bodies with a script that cuts line ranges (written to a file under `tmp/scratch/`, run from there, asserting each range starts and ends where expected). Then fix imports from the `tsc` errors. Never edit a moved body, except `this.` → `t.` in S3 and `this.` → `p.` in S1c.
-> - After the move, `npm run -s deps -- --check-move HEAD:OLDFILE NEWFILES…` must print nothing, except the lines the brief allows.
+> - After the move, `npm run -s deps -- --check-move HEAD:OLDFILE NEWFILES…` must print nothing (it ignores indentation and each new file's leading comment), except the lines the brief allows.
 > - Keep each new file's leading doc comment: one or two lines on what it holds. Keep banners with the code under them.
 > - `git mv` only where the brief says. Never re-export a moved name from its old file; repoint the importers.
 > - Parser files (S1a to S1c): also run `npm run grammar-check`.
@@ -167,11 +120,14 @@ Make `read-context.ts` per [Splits](#splits), and repoint importers of `wordKey`
 
 ### Commits
 
-One per unit after its gate, plus one per phase for the consolidated proposal. Phase 1: D1, D2 with the `AGENTS.md` lines, and the consolidation (3). Phase 2: S1a, S1b, S1c, S2, S3, and the consolidation (6). Phase 3: S4, S5, and the close (3). Twelve in all. Messages start `split-large-source-files D1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits, staging only the unit's files.
+One per unit after its gate, plus one per phase for the consolidated proposal. Phase 1 is done. Phase 2: S1a, S1b, S1c, S2, S3, and the consolidation (6). Phase 3: S4, S5, and the close (3). Messages start `split-large-source-files D1:` (and so on), then `[skip-cd]`, then the co-author line. Only the orchestrator commits, staging only the unit's files.
 
 ## Open decisions
 
-None open at the start. The run logs here each **(low)** decision it makes, and each hard-to-undo **(medium)** one, for review when the plan is done.
+Logged for review when the plan is done.
+
+1. **`deps --check-move` ignores indentation** (D1). A method that becomes a function changes indent, so an exact compare would flag every line of it. Options: ignore leading whitespace; compare exactly and list the reindented lines as allowed. Taken: ignore leading whitespace, and each new file's leading comment. What would change it: a move whose only change is indentation inside a multi-line template literal, where whitespace is content; none of the planned splits moves such a literal by reindenting it. **Recommendation:** (medium) keep.
+2. **`deps --split` counts value imports only** (D1). Options: count type-only imports in cycles; leave them out. Taken: leave them out, since `import type` is erased and makes no runtime cycle (S3 relies on this for `Translator`). What would change it: a build mode that keeps type imports at run time, which this repo does not use. **Recommendation:** (high) keep.
 
 ## Seam measurements
 
@@ -196,3 +152,31 @@ Line ranges from `npm run outline` on 2026-11-20. Edges come from a probe (`npx 
 - Terms → Readings: `readParse`, `readDependent`, `readIsland`. Units → Readings: `readIsland`, `readClause`. Units → Terms: 12 names.
 
 **`enforce.ts`.** Word rules 290–617, hosts 619–795, the structure visitor 796–1085 and `enforceResult` 1087–1240 call each other both ways. `diagnoseParseError` (1271–1375) is a separate job, but at ~105 lines it is not worth a file.
+
+## Background
+
+### Problem
+
+A few hand-written files under `src/` are far longer than the rest (2026-11-20):
+
+| Lines | File |
+|------:|------|
+| 3040 | `src/parse/sentence-parser.ts` |
+| 2298 | `src/interpret/translate.ts` |
+| 1763 | `src/parse/morph-gloss.ts` |
+| 1446 | `src/interpret/read.ts` |
+| 1420 | `src/parse/enforce.ts` |
+
+Everything else is at or under about 1340. An agent editing one of these either reads it whole (15k to 35k tokens) or edits from a partial view, and the cost recurs on every session that touches the parser or interpreter. No limit is stated, so the next file drifts the same way.
+
+### Goals
+
+- No hand-written source file over 1500 lines, with the build lint keeping it so.
+- Every split moves code without changing behavior, and `git mv` keeps history where a file changes name.
+
+### Non-goals
+
+- No split of `enforce.ts` (1420, no clean seam) or of the test files (`solve.test.ts` at 1340 is a flat list of cases).
+- No refactor inside a function or method beyond what moving it requires (`this.` → `t.` in S3, `this.` → `p.` in S1c).
+- No Chevrotain grammar inheritance: the rule families are mutually recursive, and inheritance is a linear chain.
+- No generating the one-line rule variants (`unitAfterZOpen`, `unitAfterZShared`, …) from a loop. That changes the code's shape, not just where it lives, and belongs in a later change.
