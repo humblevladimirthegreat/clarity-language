@@ -13,6 +13,7 @@ import { parseOverlayCsv, parsePublishedCsv, senseFormRoot, type OverlayRow, typ
 import { overlayExamples, type OverlayExample } from "./flashcards-examples.js";
 import { endingNotes } from "./flashcards-endings.js";
 import { overlaySlotNotes, overlayWordNotes } from "./flashcards-overlays.js";
+import { overlaySetNotes } from "./flashcards-sets.js";
 import { pageSections, type Band, type PageSections } from "./lint/learning-order.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { grammarFile, readData, REPO_ROOT } from "./repo-paths.js";
@@ -46,9 +47,10 @@ export type FlashcardNote = LexiconNote | OverlayNote | SetNote;
 
 /**
  * `overlays` are word notes; `slots` are slot notes, a known form in a new slot at a later checkpoint;
+ * `sets` are set notes over word notes (`flashcards-sets.ts`), each after its members;
  * `endings` are the scale note and the ending notes (`flashcards-endings.ts`).
  */
-export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[]; endings: SetNote[] };
+export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[]; sets: SetNote[]; endings: SetNote[] };
 
 /** A note's field values in its note type's field order. */
 export function fieldValues(note: FlashcardNote): string[] {
@@ -150,7 +152,7 @@ export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`ageben-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-/** Every note: roots, compounds, overlay word and slot notes, scale and ending notes. `examples` defaults to {@link overlayExamples} over the inputs. */
+/** Every note: roots, compounds, overlay word, slot and set notes, scale and ending notes. `examples` defaults to {@link overlayExamples} over the inputs. */
 export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">, examples?: ReadonlyMap<string, OverlayExample>): FlashcardNotes {
   const checkpointBand = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
   const coreTags = (source: NoteSource, key: string, cell: string | undefined): string[] => {
@@ -191,13 +193,15 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
   const found = examples ?? overlayExamples(inputs.overlays, inputs, tables);
   const overlays = overlayWordNotes(inputs, found, tables);
   const slots = overlaySlotNotes(inputs, overlays, found, tables);
+  // A cloze set note per kind with three or more word notes at one checkpoint (flashcards-sets.ts).
+  const sets = overlaySetNotes(inputs, overlays);
   // The scale note and one ending note per scale-ending kind (flashcards-endings.ts).
   const endings = endingNotes(inputs);
 
-  const all = [...roots, ...compounds, ...overlays, ...slots, ...endings];
+  const all = [...roots, ...compounds, ...overlays, ...slots, ...sets, ...endings];
   const release = releaseTag(all);
   for (const note of all) note.tags.push(release);
-  return { roots, compounds, overlays, slots, endings };
+  return { roots, compounds, overlays, slots, sets, endings };
 }
 
 /** The glosses on a production front, which must pick out one stem (aliases are cues and may repeat). */
@@ -237,7 +241,7 @@ export function buildPack(id: LexiconPackId, notes: FlashcardNotes, inputs: Pick
     }
     return { id, decks: [deck("Sakes", ordered)] };
   }
-  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Overlays", notes.overlays), deck("Everything::Slots", notes.slots), deck("Everything::Endings", notes.endings)] };
+  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Overlays", notes.overlays), deck("Everything::Slots", notes.slots), deck("Everything::Sets", notes.sets), deck("Everything::Endings", notes.endings)] };
 }
 
 /** Sake roots from the first column of the sake inventory table (sakes.md#sake-inventory). */

@@ -27,6 +27,7 @@ import {
 } from "./flashcards.js";
 import { endingNoteKey, endingReading, SCALE_ANCHOR, SCALE_NOTE_KEY } from "./flashcards-endings.js";
 import { overlayExamples, overlayRowKey } from "./flashcards-examples.js";
+import { overlaySetNotes, setNoteKey, SET_MIN_MEMBERS } from "./flashcards-sets.js";
 import { highlightExample, hostLine, slotNoteKey, slotReadings, slotTaughtByMForm, wordNoteGloss } from "./flashcards-overlays.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { morphGlossLine } from "./parse/morph-gloss.js";
@@ -39,7 +40,7 @@ const examples = overlayExamples(inputs.overlays, inputs, tables);
 const elapsed = Math.round(performance.now() - started);
 const notes = buildNotes(inputs, examples);
 const rebuild = (published: typeof inputs.published) => buildNotes({ ...inputs, published }, examples);
-const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.overlays, ...n.slots, ...n.endings];
+const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.overlays, ...n.slots, ...n.sets, ...n.endings];
 const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];
 
 describe("buildNotes", () => {
@@ -201,7 +202,7 @@ describe("buildNotes", () => {
       const cp = inputs.checkpoints.find((c) => c.anchor === n.core)!;
       assert.deepEqual(cps, [`ageben::cp::${cp.page.replace(/\.md$/, "")}::${cp.band}`], n.key);
     }
-    for (const n of [...notes.overlays, ...notes.slots, ...notes.endings]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
+    for (const n of [...notes.overlays, ...notes.slots, ...notes.sets, ...notes.endings]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
     assert.ok(!notes.roots.some((n) => n.tags.some((t) => t.startsWith("ageben::core::"))));
   });
 
@@ -221,6 +222,50 @@ describe("buildNotes", () => {
       else seen.set(key, n.key);
     }
     assert.deepEqual(dupes, []);
+  });
+});
+
+describe("set notes", () => {
+  const cpOf = (tags: readonly string[]) => tags.find((t) => t.startsWith("ageben::cp::"))!;
+  const membersOf = (text: string) => [...text.matchAll(/\{\{c\d+::<code>([^<]+)<\/code>\}\}/g)].map((m) => m[1]!);
+
+  it("makes one cloze set note per kind with three or more word notes at one checkpoint", () => {
+    const groups = new Map<string, string[]>();
+    for (const n of notes.overlays) {
+      if (SCALE_ENDING_KINDS.has(n.fields.kind) && !n.fields.form.endsWith("m")) continue;
+      const key = setNoteKey(n.fields.kind, cpOf(n.tags).split("::")[2]!);
+      groups.set(key, [...(groups.get(key) ?? []), n.fields.form]);
+    }
+    const expected = [...groups].filter(([, forms]) => forms.length >= SET_MIN_MEMBERS);
+    assert.deepEqual(notes.sets.map((n) => [n.key, membersOf(n.fields.text)]).sort(), expected.sort());
+    for (const n of notes.sets) {
+      assert.equal(n.model, SET_MODEL);
+      assert.equal(n.guid, noteGuid("set", n.key, ""));
+      assert.equal(n.fields.mnemonic, "");
+      assert.match(n.fields.link, /^https:\/\/clarityconlang\.com\/grammar\/[a-z-]+\.html#/);
+    }
+  });
+
+  it("blanks each member with its English, as the design's phasal set", () => {
+    const phasal = notes.sets.find((n) => n.key === "phasal@already-still-yet")!;
+    assert.equal(
+      phasal.fields.text,
+      "{{c1::<code>avem</code>}} <i>already</i> · {{c2::<code>awum</code>}} <i>still</i> · {{c3::<code>elom</code>}} <i>not yet</i> · {{c4::<code>uvum</code>}} <i>no longer</i>",
+    );
+    assert.equal(phasal.fields.title, "Phasal words");
+    // Lexical -l / -r forms of a scale-ending kind keep word notes but stay out of its set.
+    assert.ok(notes.overlays.some((n) => n.key === "elol"));
+  });
+
+  it("tags a set note with its members' checkpoint and sorts it after them", () => {
+    for (const set of notes.sets) {
+      const members = membersOf(set.fields.text).map((f) => notes.overlays.find((n) => n.key === f)!);
+      for (const m of members) assert.equal(cpOf(m.tags), cpOf(set.tags), `${set.key}: ${m.key}`);
+      assert.ok(set.tags.includes(`ageben::overlay::${members[0]!.fields.kind}`));
+    }
+    const order = buildPack("everything", notes, inputs).decks.flatMap((d) => d.notes.map((n) => n.key));
+    for (const set of notes.sets) for (const f of membersOf(set.fields.text)) assert.ok(order.indexOf(f) < order.indexOf(set.key), set.key);
+    assert.deepEqual(overlaySetNotes(inputs, notes.overlays).map((n) => n.key), notes.sets.map((n) => n.key));
   });
 });
 
@@ -307,6 +352,7 @@ describe("packs", () => {
       ["Ageben::Everything::Compounds", inputs.compounds.length],
       ["Ageben::Everything::Overlays", notes.overlays.length],
       ["Ageben::Everything::Slots", notes.slots.length],
+      ["Ageben::Everything::Sets", notes.sets.length],
       ["Ageben::Everything::Endings", notes.endings.length],
     ]);
     assert.deepEqual(packJson({ id: "everything", decks }).modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS, [SET_MODEL]: SET_FIELDS });
