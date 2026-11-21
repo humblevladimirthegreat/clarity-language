@@ -20,7 +20,8 @@ import { describe, it } from "node:test";
 import { loadDefaultTables, parse } from "../parse/index.js";
 import { buildExampleIndex } from "../parse/llm-examples.js";
 import { coverage, type WordSlot } from "./coverage.js";
-import { allReadings, constructionFor, readParse, wordKey } from "./read.js";
+import { allReadings, readParse } from "./read.js";
+import { constructionFor, wordKey } from "./read-context.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(here, "..", "..");
