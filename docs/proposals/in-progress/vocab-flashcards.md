@@ -4,7 +4,8 @@
 - 2026-11-21: `gezem` / `govam` on a noun are taught at `more-hinges.md#time-hinge-on-noun` with the other noun hinges; their anchors moved there from beginner `dependents.md#hinges`, whose two sentences naming them went (a `/ɡ/` hinge with `/b/` is taught later). High, not flagged, `9a6714b9`.
 - 2026-11-21: the `/ɡ/` and `/w/` as-of resume forms (`genar`, `gunor`, `wenar`, `wunor`) take the snapshot of the matching earlier pair, taught with examples at `as-of.md#as-of`. Medium, not flagged, `99d9109f`.
 - 2026-11-21: `hadam` on an event names what the act puts in as the filling (`zazozon vobuvul hadam bledudal` *Azozon pours, filling something with tea*), at `of-relations.md#of-relations`. Medium, not flagged, `a63e020d`.
-- 2026-11-21: Anki's default import drops the suspension (it resets scheduling), so the Flashcards page tells the learner to tick **Import any learning progress**, and the U25 import check imports with `with_scheduling=True`; the alternative was a different unlock mechanism. Medium, not flagged, DECISION1.
+- 2026-11-21: Anki's default import drops the suspension (it resets scheduling), so the Flashcards page tells the learner to tick **Import any learning progress**, and the U25 import check imports with `with_scheduling=True`; the alternative was a different unlock mechanism. Medium, not flagged, `9e905ed2`.
+- 2026-11-21: Anki's default new-card sort (*Card type, then order gathered*) breaks note order within a day, so the Flashcards page tells the learner to set the Ageben preset to **Order gathered**; the alternative, a deck preset inside the `.apkg`, applies only if the learner ticks *Import deck presets* and genanki lacks it. Medium, not flagged, DECISION2.
 
 v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
 - One pack per band, plus Everything.
@@ -92,7 +93,7 @@ Done in phase 2: `eze`, `uge`, `eho`, `awu`, `ago` and `uba` are now core at or 
 
 `docs/grammar/flashcards.md`, titled **Flashcards**, sits under **Tools** in the sidebar after Inspect. It holds:
 - What the packs hold, with download links.
-- Setup: Anki with AnkiDroid or AnkiMobile, FSRS at about 0.9, bury siblings, study from the top **Ageben** deck. When importing, tick **Import any learning progress**: Anki's default import resets every card to new, which drops the suspension the packs ship with (found in U24; Anki 26.9, `with_scheduling` off by default).
+- Setup: Anki with AnkiDroid or AnkiMobile, FSRS at about 0.9, bury siblings, study from the top **Ageben** deck. When importing, tick **Import any learning progress**: Anki's default import resets every card to new, which drops the suspension the packs ship with (found in U24; Anki 26.9, `with_scheduling` off by default). In the study preset, set the new-card sort order to **Order gathered**: the default, *Card type, then order gathered*, shows a day's recognition cards before its production and higher cloze cards.
 - Unlocking: one tag search per checkpoint, grouped by band and unit.
 - Updating: re-import, then delete with the release search.
 - Reviewing: daily reviews before new cards; on a production card, say the answer before flipping; read-only learners suspend the production cards.
