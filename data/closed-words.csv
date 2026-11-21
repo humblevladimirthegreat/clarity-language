@@ -13,3 +13,29 @@ xevewom,*next*,linker,sentence-linkers.md#sentence-linkers
 xugohum,*but*,linker,sentence-linkers.md#sentence-linkers
 xugohul,*on the contrary*,linker,sentence-linkers.md#sentence-linkers
 xavedam,*by the way*,linker,sentence-linkers.md#sentence-linkers
+yem,"*I wonder*, gentle question",polar,questions.md#question
+yaol,"*yes*, *true*",polar,questions.md#polar-particle
+yaom,"*I think so*, *yeah*",polar,questions.md#polar-particle
+yuol,"*no*, *false*",polar,questions.md#polar-particle
+yuom,"*I don't think so*, *nah*",polar,questions.md#polar-particle
+yael,"*sure*, *I'll take that*",polar,questions.md#polar-particle
+yaem,"*okay*, *sure, I guess*",polar,questions.md#polar-particle
+yuel,*not that* (reject this option),polar,polar-inventory.md#polar-particle-fuller-inventory
+yual,*the question doesn't apply*,polar,polar-inventory.md#polar-particle-fuller-inventory
+yoel,*I won't answer*,polar,polar-inventory.md#polar-particle-fuller-inventory
+yaor,"*true, for now*",polar,polar-inventory.md#polar-endings
+yuor,"*not so, for now*",polar,polar-inventory.md#polar-endings
+yaer,"*fine, for now*, *let's try it*",polar,polar-inventory.md#polar-endings
+yuem,*nah* (reject this option softly),polar,polar-inventory.md#polar-endings
+yuer,"*not that, for now*, *not right now*",polar,polar-inventory.md#polar-endings
+yuam,*it's more complicated than that*,polar,polar-inventory.md#polar-endings
+yuar,"*it doesn't apply, for now*",polar,polar-inventory.md#polar-endings
+yoem,*I'd rather not say*,polar,polar-inventory.md#polar-endings
+yoer,"*pass, for now*",polar,polar-inventory.md#polar-endings
+yam,*for what it's worth* (soft statement),stance,firm-soft.md#firm-or-soft-act
+yom,*please* (request),stance,firm-soft.md#firm-or-soft-act
+yum,"*please don't*, *I'd rather you not*",stance,firm-soft.md#firm-or-soft-act
+yar,"*as things stand*, *for now, I take it that*",stance,firm-soft.md#act-for-now
+yer,"*just checking*, *for now, is it*",stance,firm-soft.md#act-for-now
+yor,*for now* (command until told otherwise),stance,firm-soft.md#act-for-now
+yur,"*hold off*, *don't yet*",stance,firm-soft.md#act-for-now
