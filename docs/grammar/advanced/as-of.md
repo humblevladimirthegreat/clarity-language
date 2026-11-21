@@ -91,6 +91,32 @@ Here the snapshot covers only *challenging*. It does not reach a verb: a verb in
 >
 > "Azozon sees the house as it would be on 23 July."
 
+A noun or adjective snapshot resumes the same way as the clause one. In a following `/x/` clause, `genar` / `gunor` on a noun and `wenar` / `wunor` before an adjective take the same snapshot as the earlier pair: the same word with `-r` and no `/b/`. This saves restating the date when the next sentence looks at the same moment.
+
+> `zazozon dohahal genam bl_#22,7 vayebel. xalazun dohahal genar vayebel.`
+>
+> z-Azozon | [d-house | [g-as-of.ledger | bl-_22,7]] | v-see . x-Alazun | [d-house | g-as-of.ledger] | v-see
+>
+> "Azozon sees the house as of 22 July. Alazun sees it as of that same day too."
+
+> `zazozon dohahal gunom bl_#23,7 vayebel. xalazun dohahal gunor vayebel.`
+>
+> z-Azozon | [d-house | [g-as-of.bookmark | bl-_23,7]] | v-see . x-Alazun | [d-house | g-as-of.bookmark] | v-see
+>
+> "Azozon sees the house as it would be on 23 July. Alazun sees it as it would be then too."
+
+> `zazozon zalazun zol wenam b_#22,7 gamahum. xalazun wenar gamahum.`
+>
+> [z-Azozon | z-Alazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]] . x-Alazun | [w-as-of.ledger | g-challenge]
+>
+> "As of 22 July, Azozon is more challenging than Alazun. As of that same day, Alazun is challenging too."
+
+> `zazozon zalazun zol wunom b_#23,7 gamahum. xalazun wunor gamahum.`
+>
+> [z-Azozon | z-Alazun | z-rank/more | [[w-as-of.bookmark | b-_23,7] | g-challenge]] . x-Alazun | [w-as-of.bookmark | g-challenge]
+>
+> "Taking 23 July as now, Azozon would be more challenging than Alazun. From that same now, Alazun would be challenging too."
+
 > `zaral haram henam bludurul.`
 >
 > z-money | h-RESIDUE | [h-as-of.ledger | bl-departure]
