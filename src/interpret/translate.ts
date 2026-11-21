@@ -19,13 +19,14 @@ import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type { LexWord } from "../parse/types.js";
 import type { Addressed, Addressee, Log, LogEntry } from "./log.js";
 import { match, type TermSite } from "./match.js";
+import { allReadings } from "./read.js";
 import { asMember, claimMemberLists, collective, compoundHeads, memberList, throughAntecedent, universalInstance, type ListTerm } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
 
 import { KEPT_HOOK, sayOf, wrapText, type Conditional, type Ctx, type EveryHinge, type Frames, type LeftOut, type Literal, type MayOver, type Note, type Part, type Subst, type Talk, type TermSource, type TranslateOptions, type Translation, type Why, type Wrap } from "./translate-types.js";
 import { CONDITIONAL, HINGE_KEYS, ZONE_INTENTIONS, answerable, bareFrames, becauseDenied, claimTerms, detailRange, fragment, hingeDenied, inRange, isEmptyClaim, isOrList, joinOf, mayDenied, name, nounHinge, over, ownChannel, placeOf, plainView, raws, replaceTerm, sharedAdjectives, str, termDetails, termFrames, valueTerm, type Range } from "./translate-helpers.js";
-import { because, condition, hinge, notOne, nounCondition, nounHinge as sayNounHinge, orList, pool as poolClaim } from "./translate-conditions.js";
+import { because, condition, hinge, pooled, resumedDetails, notOne, nounCondition, nounHinge as sayNounHinge, orList, pool as poolClaim } from "./translate-conditions.js";
 
 // ── The program ─────────────────────────────────────────────────────────────
 
@@ -249,8 +250,17 @@ export class Translator {
         return this.speaker(ctx.reading);
       case "listener":
         return this.listener(ctx.reading);
-      case "pronoun":
+      case "pronoun": {
+        // R4d-8 (stand-in-vowels.md#stand-in-back): a stand-in pointing back is the linked reading's claim, nested and not
+        // claimed again, as the forward stand-in's dependent is written.
+        const back = ctx.reading.links.find((l) => l.kind === "standInBack" && l.words.includes(t.word) && l.to);
+        const content = back?.to ? this.byId.get(back.to) : undefined;
+        if (back && content && content !== ctx.reading) {
+          this.use(back);
+          return `cl(${this.claim(content.claim, { ...ctx, reading: content, asserted: false })})`;
+        }
         return `pro(${ctx.id},${str(t.word.raw)})`;
+      }
       case "blank":
         return "blank";
       case "literal":
@@ -320,7 +330,8 @@ export class Translator {
   claim(claim: Claim, ctx: Ctx): string {
     const roles = (["z", "d", "b"] as const).filter((r) => claim.roles[r]).map((r) => `${r}(${this.term(claim.roles[r]!, r, ctx)})`);
     const kinds = claim.predicate.map((p, i) => this.kind(p, claim.predicate.length > 1 ? `g${i + 1}` : "g", ctx));
-    const details = claim.details.length ? [`w(${claim.details.map((d) => this.detail(d, ctx)).join(",")})`] : [];
+    const all = [...claim.details, ...resumedDetails(this, claim, ctx.reading)];
+    const details = all.length ? [`w(${all.map((d) => this.detail(d, ctx)).join(",")})`] : [];
     if (!claim.verb && kinds.length === 1 && roles.length === 1 && claim.roles.z && !details.length) {
       return `isa(${this.term(claim.roles.z, "z", ctx)},${kinds[0]})`;
     }
@@ -986,7 +997,9 @@ export class Translator {
 
     if (frames.restrictor) {
       const v = frames.restrictor.values;
-      const listed = claim.details.some((d) => d.key === "unit:h");
+      // R4d-6 (restrictors.md#only-when-never-hal): an occasion clause (`huxal blarl …`) is listed, in the marker's data.
+      const occasion = frames.restrictor.hosted?.kind === "clause" ? frames.restrictor.hosted : undefined;
+      const listed = claim.details.some((d) => d.key === "unit:h") || !!occasion;
       const always = v.series === "ua" && v.ending === "l";
       const never = v.series === "a" && v.ending === "l";
       const usually = v.series === "ua" && v.ending === "m";
@@ -1018,7 +1031,9 @@ export class Translator {
         this.open(ctx, h.text, []);
       } else {
         if (!listed) this.rule(ctx, this.w(ctx, always ? h.text : `neg(${h.text})`), []);
-        this.rule(ctx, this.w(ctx, h.text), [], always ? "always" : "never");
+        const stand = occasion ? reading.links.find((l) => l.kind === "standIn" && l.to === occasion.reading.id) : undefined;
+        const marked = occasion && stand ? this.claim({ ...h.claim, details: [...h.claim.details, { kind: "occasion", construction: stand.key, key: stand.key, anchor: stand.anchor, words: stand.words, values: {}, hosted: occasion }] }, ctx) : h.text;
+        this.rule(ctx, this.w(ctx, marked), [], always ? "always" : "never");
       }
       // R4b-14 (restrictors.md#always-hual): `hual` marks its act against the zone, the marker too; `hal` has no event to mark.
       if (zone && always) {
@@ -1473,7 +1488,7 @@ export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogE
       if (entry.addressees) t.addressees.set(r.id, entry.addressees);
     }
   });
-  for (const reading of log.readings) t.byId.set(reading.id, reading);
+  for (const reading of allReadings(log.readings)) t.byId.set(reading.id, reading);
   for (const reading of log.readings) t.reading(reading);
   const program = t.finish();
   return { program, readings: t.readings, terms: t.terms, slots: t.slots, left: t.left, notes: t.notes, wraps: t.wraps, witnesses: t.witnesses, holders: t.holders, accounting: t.accounting, site: (id) => t.site(id), conditionals: t.conditionals, conditionalFits: t.conditionalFits };

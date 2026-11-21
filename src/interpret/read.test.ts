@@ -1142,3 +1142,49 @@ describe("reader (B0): *no K* and a range on a counted noun", () => {
     assert.ok(range?.hosted?.kind === "number" && range.hosted.word.raw === "gragel");
   });
 });
+
+describe("reader: links that point back past a period", () => {
+  const linkOf = (reading: Reading, kind: string) => reading.links.find((l) => l.kind === kind);
+
+  it("stand-in-vowels.md#stand-in-back: `-rth` stands for the most recent content of its vowel's kind", () => {
+    // `durth`: the last *not* / *lest* content is the `durl` dependent, not the sentence before.
+    const [first, second] = readText("zazozon vezuyol balazun durl vehohel. zalazun valom durth.", tables);
+    assert.equal(linkOf(second!, "standInBack")?.to, first!.links.find((l) => l.kind === "standIn")?.to);
+    assert.equal(linkOf(second!, "standInBack")?.to, `${first!.id}/d`);
+    // `darth`: the last statement, the sentence itself (it ends after its dependents).
+    const [said, so] = readText("zalazun vehohel. zazozon vezuyol darth.", tables);
+    assert.equal(linkOf(so!, "standInBack")?.to, said!.id);
+    // A question is not a statement: `darth` skips it to the statement before; `derth` takes it.
+    const [statement, question, back] = readText("zalazun vehohel. yel zazozon vowurol. zazozon vezuyol darth.", tables);
+    assert.notEqual(linkOf(back!, "standInBack")?.to, question!.id);
+    assert.equal(linkOf(back!, "standInBack")?.to, statement!.id);
+    const [asked, that] = readText("yel zalazun vehohel. zazozon vezuyol derth.", tables);
+    assert.equal(linkOf(that!, "standInBack")?.to, asked!.id);
+    // No content of that kind: no `to`.
+    const [, none] = readText("yel zalazun vehohel. zazozon vezuyol darth.", tables);
+    assert.equal(linkOf(none!, "standInBack")?.to, undefined);
+  });
+
+  it("in-clause-hooks.md#hook-resume: a point-back hook takes the landmark already in play", () => {
+    const [first, second] = readText("zazozon vehohel el bohahal. zalazun vehohel er.", tables);
+    const resume = linkOf(second!, "hookResume");
+    assert.equal(resume?.to, first!.id);
+    assert.equal(resume?.resumed?.key, "hookJob:extraNoun");
+    assert.equal(resume?.resumed?.hosted?.kind === "thing" ? resume.resumed.hosted.head.raw : undefined, "bohahal");
+    // Stacked vowels keep the extra they named: `aor` takes the `aol` landmark, not the later `ael` one.
+    const [, writes] = readText("zazozon danal aol babewol ael behohel varuyol. zalazun varuyol aor.", tables);
+    const means = linkOf(writes!, "hookResume")?.resumed?.hosted;
+    assert.equal(means?.kind === "thing" ? means.head.raw : undefined, "babewol");
+    // No earlier landmark: no `to`.
+    assert.equal(linkOf(readText("zalazun vehohel er.", tables)[0]!, "hookResume")?.to, undefined);
+  });
+
+  it("hooks.md#discourse-hooks: `el` / `em` / `ul` / `um` on the left edge point to the claim before", () => {
+    for (const hook of ["el", "em", "ul", "um"]) {
+      const [first, second] = readText(`zalazun veruvol. ${hook} zalazun vezuvel.`, tables);
+      assert.equal(linkOf(second!, "discourse")?.to, first!.id, hook);
+    }
+    const [, plain] = readText("zalazun veruvol. al zalazun vezuvel.", tables);
+    assert.equal(linkOf(plain!, "discourse")?.to, undefined);
+  });
+});

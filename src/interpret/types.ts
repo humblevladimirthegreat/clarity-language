@@ -198,6 +198,11 @@ export type Link = {
   coveredBy?: Frame[];
   /** pairing: the list terms the *respectively* list pairs with, from the resolve stage's `PairingRecord` (one in every doc example; never picked between). */
   partners?: Term[];
+  /**
+   * hookResume: the extra-noun hook it points back to (in-clause-hooks.md#hook-resume), in the reading `to` names; its
+   * `hosted` is the landmark. Absent when no earlier sentence names one.
+   */
+  resumed?: Detail;
 };
 
 export type Unread = {

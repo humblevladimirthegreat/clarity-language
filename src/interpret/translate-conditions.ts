@@ -1,6 +1,6 @@
 /** Translator conditions (docs/meta/solver.md): hinges, *because*, noun conditions, *or* lists and the fits pool, as functions taking the translator. */
 import { throughAntecedent, type ListTerm } from "./steps.js";
-import type { Claim, Frame, Reading, Term } from "./types.js";
+import type { Claim, Detail, Frame, Reading, Term } from "./types.js";
 import { wrapText, type Conditional, type Ctx, type Frames, type Literal, type MayOver, type Why } from "./translate-types.js";
 import { CONDITIONAL, becauseDenied, claimTerms, denied, held, hingeDenied, isOrList, name, orRow, plainView, str, termFrames, type NounHinge } from "./translate-helpers.js";
 import { readingParts, type Translator } from "./translate.js";
@@ -421,6 +421,41 @@ export function listItems(tr: Translator, reading: Reading, claim: Claim, list: 
 
 export function pool(tr: Translator, reading: Reading, text: string, claim: Claim, sign: number): void {
   if (/\bX\d*\b/.test(text)) return;
-  if (!tr.terms.has(text)) tr.terms.set(text, { reading: reading.id, claim });
+  if (!tr.terms.has(text)) tr.terms.set(text, { reading: reading.id, claim: pooled(tr, claim, reading) });
   if (sign < 0) tr.denied.add(text);
+}
+
+/**
+ * R4d-7 (in-clause-hooks.md#hook-resume): a point-back hook adds the extra-noun detail of the hook it resumes, with this
+ * hook's vowels and that hook's ending, on the resumed landmark's own term, so *there* is the same place. The details
+ * go in the claim's term and in the claim the pool keeps for it, so a question is matched against them too.
+ */
+export function resumedDetails(tr: Translator, claim: Claim, reading: Reading): Detail[] {
+  // The reading's own claim, or a copy of it with one term put in (a denied verb, a list member).
+  if (claim.details !== reading.claim.details) return [];
+  return reading.links.flatMap((l) => {
+    const own = l.kind === "hookResume" ? l.words[0] : undefined;
+    const resumed = l.resumed?.words[0];
+    if (!own || !resumed || !l.resumed?.hosted || own.family.kind !== "hook" || resumed.family.kind !== "hook") return [];
+    tr.use(l);
+    const form = own.family.form.slice(0, -1) + resumed.family.form.slice(-1);
+    return [{ ...l.resumed, words: [{ ...resumed, raw: form, family: { kind: "hook", form } }], details: undefined, frames: undefined }];
+  });
+}
+
+/**
+ * The claim the pool keeps for a term, as its term was written, so a question is matched against what was claimed: with
+ * R4d-7's resumed hook details, and R4d-8's backward stand-ins as the content they point to.
+ */
+export function pooled(tr: Translator, claim: Claim, reading: Reading): Claim {
+  const resumed = resumedDetails(tr, claim, reading);
+  const roles = { ...claim.roles };
+  for (const r of ["z", "d", "b"] as const) {
+    const t = roles[r];
+    const back = t?.kind === "pronoun" ? reading.links.find((l) => l.kind === "standInBack" && l.words.includes(t.word) && l.to) : undefined;
+    const content = back?.to ? tr.byId.get(back.to) : undefined;
+    if (content && content !== reading) roles[r] = { kind: "clause", reading: content };
+  }
+  const changed = resumed.length > 0 || (["z", "d", "b"] as const).some((r) => roles[r] !== claim.roles[r]);
+  return changed ? { ...claim, roles, details: [...claim.details, ...resumed] } : claim;
 }

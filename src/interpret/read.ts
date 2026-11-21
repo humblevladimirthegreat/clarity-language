@@ -149,6 +149,18 @@ function prevTo(here: Here): Partial<Link> {
   return to ? { to } : {};
 }
 
+/**
+ * The discourse hooks that point to the claim before them: any `-r` hook (an earlier stretch), and `el` / `em`
+ * (*instead*, *never mind*: this claim replaces the last one) and `ul` / `um` (*except*: an exception to what was
+ * just said), hooks.md#discourse-hooks.
+ */
+const PRIOR_CLAIM_HOOKS = new Set(["el", "em", "ul", "um"]);
+
+function discourseTo(word: LexWord, here: Here): Partial<Link> {
+  const form = word.family.kind === "hook" ? word.family.form : "";
+  return word.ending === "r" || PRIOR_CLAIM_HOOKS.has(form) ? prevTo(here) : {};
+}
+
 function addDetails(term: Term, details: Detail[]): void {
   if (details.length === 0 || term.kind === "clause" || term.kind === "list" || term.kind === "quote") return;
   term.details = [...(term.details ?? []), ...details];
@@ -629,7 +641,7 @@ function readHook(unit: Extract<Unit, { kind: "hook" }>, here: Here, clause: Cla
   const word = unit.word;
   switch (unit.job) {
     case "discourse":
-      here.reading.links.push(link("discourse", "hookJob:discourse", [word], word.ending === "r" ? prevTo(here) : {}));
+      here.reading.links.push(link("discourse", "hookJob:discourse", [word], discourseTo(word, here)));
       return;
     case "resume":
       here.reading.links.push(link("hookResume", "hookJob:resume", [word]));
@@ -1014,7 +1026,7 @@ function edgeDetails(left: LeftEdge, here: Here, clause: Clause): void {
 
 function edgeLinks(left: LeftEdge, here: Here): void {
   for (const word of left.polars) here.reading.links.push(link("polar", "edge:polar", [word], prevTo(here)));
-  if (left.hook) here.reading.links.push(link("discourse", "edge:hook", [left.hook], left.hook.ending === "r" ? prevTo(here) : {}));
+  if (left.hook) here.reading.links.push(link("discourse", "edge:hook", [left.hook], discourseTo(left.hook, here)));
 }
 
 /**
@@ -1088,10 +1100,67 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     if (reading) reading.links.push(link("answer", "answer:answer", answer.blanks, { answer, ...(to ? { to } : {}) }));
   }
   carriedLinks(out, info?.carried ?? []);
+  pointBackLinks(out);
   // A tone on a word, a span or an island sits on what it colors (tone-marks.md#showing-your-tone); a rest-of-sentence tone
   // came in with the scope frames.
   if (info?.tones) placeTones(out, allReadings(out), info.tones);
   return out;
+}
+
+/** The vowel of a join word (an act word, a stand-in), or `a` for none: a turn with no act word states. */
+function seriesOf(word: LexWord | undefined): string {
+  return word?.family.kind === "joinMarker" ? word.family.series : "a";
+}
+
+/** An extra-noun hook's vowels, without its ending (`aol` → `ao`). */
+function hookVowels(word: LexWord | undefined): string {
+  return word?.family.kind === "hook" ? word.family.form.slice(0, -1) : "";
+}
+
+/**
+ * The `to` of each link that points back past a period, once every sentence is read:
+ *
+ * - A stand-in on `-rth` stands for the most recent content of its vowel's kind (stand-in-vowels.md#stand-in-back:
+ *   "the word stands for the most recent content of that kind"). The kinds are the act vowels: `a` a statement, `e` a
+ *   question, `o` an instruction, `u` *not* / *lest* content. A content is an earlier sentence, by its act word (none
+ *   states), or a dependent a stand-in of that vowel fills in it (`durl …`); the sentence ends after its dependents, so it
+ *   is the more recent. With none, the link has no `to`.
+ * - A point-back hook (`er`, `aor`) takes the landmark already in play (in-clause-hooks.md#hook-resume): the latest
+ *   extra-noun hook in an earlier sentence, and for stacked vowels the latest with the same vowels ("the vowels keep the
+ *   extra they named"). `to` is its sentence and `resumed` its detail, whose `hosted` is the landmark.
+ */
+function pointBackLinks(sentences: Reading[]): void {
+  const byId = new Map(allReadings(sentences).map((r) => [r.id, r]));
+  const contents = (sentence: Reading): { vowel: string; id: ReadingId }[] => {
+    const act = sentence.frames.find((f) => f.key === "edge:force");
+    const dependents = sentence.links
+      .filter((l) => l.kind === "standIn" && l.to && byId.has(l.to))
+      .sort((a, b) => (b.words[0]?.at ?? 0) - (a.words[0]?.at ?? 0))
+      .map((l) => ({ vowel: seriesOf(l.words[0]), id: l.to! }));
+    return [{ vowel: seriesOf(act?.words[0]), id: sentence.id }, ...dependents];
+  };
+  const hooks = (sentence: Reading): Detail[] =>
+    sentence.claim.details.filter((d) => d.key === "hookJob:extraNoun" && d.hosted).reverse();
+  sentences.forEach((sentence, i) => {
+    const earlier = sentences.slice(0, i).reverse();
+    for (const l of allReadings([sentence]).flatMap((r) => r.links)) {
+      if (l.kind === "standInBack") {
+        const vowel = seriesOf(l.words[0]);
+        const found = earlier.flatMap(contents).find((c) => c.vowel === vowel);
+        if (found) l.to = found.id;
+        else delete l.to;
+      }
+      if (l.kind === "hookResume") {
+        const vowels = hookVowels(l.words[0]);
+        const all = earlier.flatMap((s) => hooks(s).map((d) => ({ s, d })));
+        const found = (vowels.length > 1 ? all.find(({ d }) => hookVowels(d.words[0]) === vowels) : undefined) ?? all[0];
+        if (found) {
+          l.to = found.s.id;
+          l.resumed = found.d;
+        }
+      }
+    }
+  });
 }
 
 /** The frame family each carried kind's frame is read as (interpreter.md#frame-families). */
