@@ -14,8 +14,7 @@
  * The program keeps to the Clingo 5 / 6 common ground: no conditional literals in rule bodies, no `_` inside `not`, no
  * integer division.
  */
-import { CLOSED, namedEnglish } from "../closed-roots.js";
-import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
+import { CLOSED } from "../closed-roots.js";
 import type { LexWord } from "../parse/types.js";
 import type { Addressed, Addressee, Log, LogEntry } from "./log.js";
 import { match, type TermSite } from "./match.js";
@@ -24,10 +23,18 @@ import { asMember, claimMemberLists, collective, compoundHeads, memberList, thro
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
 
-import { KEPT_HOOK, sayOf, wrapText, type Conditional, type Ctx, type EveryHinge, type Frames, type LeftOut, type Literal, type MayOver, type Note, type Part, type Subst, type Talk, type TermSource, type TranslateOptions, type Translation, type Why, type Wrap } from "./translate-types.js";
-import { CONDITIONAL, HINGE_KEYS, ZONE_INTENTIONS, answerable, bareFrames, becauseDenied, claimTerms, detailRange, fragment, hingeDenied, inRange, isEmptyClaim, isOrList, joinOf, mayDenied, name, nounHinge, over, ownChannel, placeOf, plainView, raws, replaceTerm, sharedAdjectives, str, termDetails, termFrames, valueTerm, type Range } from "./translate-helpers.js";
-import { excepted, pointBack, withdrawn } from "./translate-links.js";
-import { because, condition, hinge, pooled, resumedDetails, notOne, nounCondition, nounHinge as sayNounHinge, orList, pool as poolClaim } from "./translate-conditions.js";
+import { sayOf, wrapText, type Conditional, type Ctx, type EveryHinge, type Frames, type LeftOut, type Literal, type MayOver, type Note, type Part, type Subst, type TermSource, type TranslateOptions, type Translation, type Why, type Wrap } from "./translate-types.js";
+import { HINGE_KEYS, bareFrames, becauseDenied, claimTerms, detailRange, fragment, hingeDenied, inRange, isEmptyClaim, isOrList, joinOf, mayDenied, name, nounHinge, over, ownChannel, placeOf, plainView, raws, replaceTerm, sharedAdjectives, str, termDetails, termFrames, valueTerm, type Range } from "./translate-helpers.js";
+import { excepted, resumedDetails, talkOf, talkRules, withdrawn } from "./translate-links.js";
+import { groundsOf, sayData, wrapOf, zoneOf } from "./translate-say.js";
+import {
+  because,
+  hinge,
+  notOne,
+  nounHinge as sayNounHinge,
+  orList,
+  pool as poolClaim,
+} from "./translate-conditions.js";
 
 // ── The program ─────────────────────────────────────────────────────────────
 
@@ -471,7 +478,7 @@ export class Translator {
     // R4a-8: a call is read through `LogEntry.addressees`, so its frame is used; a reading with only a call claims nothing.
     this.use(...reading.frames.filter((f) => f.key === "edge:vocative"));
     // R4d: linkers, topic words, tags, kept discourse hooks and polar words add no term of their own.
-    const talk = this.talk(reading);
+    const talk = talkOf(this, reading);
     this.use(...talk.used);
     // R4d-1: a topic word alone writes nothing; R4d-2, R4d-3: a bare polar word claims only its verdict, if any.
     if (reading.frames.every((f) => f.key === "edge:vocative") && isEmptyClaim(reading.claim)) {
@@ -479,7 +486,7 @@ export class Translator {
       const unused = parts.filter((p) => !this.used.has(p.of));
       if (unused.length) return this.leave(reading, { construction: unused[0]!.key, key: unused[0]!.key, reason: "unused", unused: unused.map((p) => p.text) });
       const out: string[] = [];
-      this.talkRules(reading, talk, out);
+      talkRules(this, reading, talk, out);
       this.accounting.set(reading.id, { parts, used: this.used });
       talk.used.forEach((l) => this.notes.push({ reading: reading.id, frame: { ...l, construction: l.key } }));
       this.readings.push(reading.id);
@@ -494,7 +501,7 @@ export class Translator {
     const carriedChannel = reading.frames.every((f) => f.key === "slot:newMember" || f.key === "edge:vocative") && !reading.links.some((l) => l.kind === "carriedFrame" && l.key === "carry:holder") ? reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:channel") : undefined;
     // R4a-12 (D1): a say word over a hinge, *because*, MAY or a contrary zone keeps the wrap as data.
     const sayOver = frames.say ? [frames.hinge, frames.because, frames.may, frames.zone].filter((f): f is Frame => !!f) : [];
-    if (frames.say && sayOver.length === 1 && over(reading, frames.say, sayOver[0]!)) return this.sayData(reading, frames, sayOver[0]!);
+    if (frames.say && sayOver.length === 1 && over(reading, frames.say, sayOver[0]!)) return sayData(this, reading, frames, sayOver[0]!);
     const kinds = [frames.hinge, frames.universal, frames.restrictor].filter(Boolean).length;
     if (kinds > 1 && !(frames.hinge && frames.universal)) return this.leave(reading, { construction: "frameCombination", reason: "noRow" });
     // R2-1 row 8: a hinge beside *because* only as *only because*, `thebem` over `thahum`; contrary to only on a plain claim.
@@ -548,7 +555,7 @@ export class Translator {
       else if (over(reading, other, frames.may)) mayOver = frames.restrictor ? "outcome" : undefined;
       else return this.leave(reading, combination);
     }
-    const wrapped = this.wrap(reading, frames, ctx);
+    const wrapped = wrapOf(this, reading, frames, ctx);
     if (wrapped && "reason" in wrapped) return this.leave(reading, wrapped);
     // R4b-2: *because* runs inside a holder's own view, never under a say word.
     if (wrapped && (frames.zone || (frames.because && (wrapped.kind !== "view" || wrapped.say)))) return this.leave(reading, combination);
@@ -573,7 +580,7 @@ export class Translator {
       if (likely !== true) return this.leave(reading, likely);
     }
     // R4c decision 6 (evidentiality.md#evidence-clause): the grounds after `blarl` are your claim too.
-    const grounds = own?.channel.hosted && own.channel.hosted.kind !== "thing" ? this.grounds(reading, own.channel, ctx) : undefined;
+    const grounds = own?.channel.hosted && own.channel.hosted.kind !== "thing" ? groundsOf(this, reading, own.channel, ctx) : undefined;
     if (grounds && "reason" in grounds) return this.leave(reading, grounds);
     const done = this.body(reading, frames, ctx, mayOver);
     if (done !== true) return this.leave(reading, done);
@@ -606,267 +613,9 @@ export class Translator {
     // R4d decision O-1: a plain claim keeps its term for a later *therefore*.
     const plain = bareFrames(frames, ctx) && !ctx.choice && !grounds && !claimTerms(reading.claim).some((t) => t.kind === "list" || t.kind === "clause" || t.kind === "quote" || t.kind === "blank");
     if (plain) this.plainTerms.set(reading.id, this.claim(reading.claim, ctx));
-    this.talkRules(reading, talk, out);
+    talkRules(this, reading, talk, out);
     this.readings.push(reading.id);
     this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
-  }
-
-  /**
-   * R4d-1, R4d-3 to R4d-5 (R4d decisions O-4, O-5): the links that add no term. Used: a sentence linker, topic word or
-   * agenda number (`unit:linker`), a span topic (`body:topicMarker`), a tag (`slot:tag`; its phrase takes its own row),
-   * a discourse hook that adds, rewords or returns (`edge:hook`, {@link KEPT_HOOK}), and a polar word with no verdict
-   * (`ua`, `oe`, `ae`, `ue`, or any polar word on a command or with no reading before it). R4d-2: `ao` / `uo` on any
-   * ending (`-r` too, O-4) on a yes / no question or a statement is a verdict on that reading's claim; on a fill question,
-   * or a reading with a frame or a list, it stays unused. O-1: `xahom` names the reading its `cause` starts from.
-   */
-  talk(reading: Reading): Talk {
-    const out: Talk = { used: [] };
-    for (const l of reading.links) {
-      const text = raws(l.words);
-      if (l.key === "unit:linker" || l.key === "body:topicMarker" || l.key === "slot:tag") {
-        out.used.push(l);
-        if (l.key === "unit:linker" && text === "xahom" && l.to) out.therefore = l.to;
-      } else if (l.key === "edge:hook" && l.kind === "discourse" && (KEPT_HOOK.test(text) || pointBack(l, out))) out.used.push(l);
-      else if (l.key === "edge:polar") {
-        const m = /^y([aeiou]+)[lmr]$/.exec(text);
-        if (!m) continue;
-        const to = l.to ? this.byId.get(l.to) : undefined;
-        const force = to?.frames.find((f) => f.key === "edge:force");
-        const command = force?.values.series === "o" || force?.values.series === "u";
-        if (["ua", "oe", "ae", "ue"].includes(m[1]!) || ((m[1] === "ao" || m[1] === "uo") && (!to || command))) out.used.push(l);
-        else if ((m[1] === "ao" || m[1] === "uo") && to && answerable(to)) {
-          out.used.push(l);
-          out.answer = { to, sign: m[1] === "ao" ? 1 : -1 };
-        }
-      }
-    }
-    return out;
-  }
-
-  /**
-   * R4d-2: a verdict takes the claim T of the reading it answers, written at that reading's sites (so its `zawan` stays
-   * the one answering): `holds(T) :- on(Id).` for `ao`, row 2's `holds(neg(T)) :- on(Id).` for `uo`. A first mention in
-   * T takes the answer's own constants under `ao` (row 14; its witness lines are the answer's) and its kind under `uo`.
-   * R4d decision O-1: `xahom` between two plain claims adds row 10's `holds(cause(Prior, Next)) :- on(Id).`
-   */
-  talkRules(reading: Reading, talk: Talk, out: string[]): void {
-    if (talk.withdraws) this.withdrawn.add(talk.withdraws);
-    if (talk.answer) {
-      const { to, sign } = talk.answer;
-      if (sign > 0) for (const f of to.frames) if (f.key === "slot:newMember" && f.hosted) this.newMembers.add(f.hosted);
-      const had = this.witnesses.get(to.id);
-      const ctx: Ctx = { reading: to, id: str(reading.id), subst: new Map(), asserted: sign > 0, out };
-      const t = this.claim(to.claim, ctx);
-      this.rule(ctx, sign > 0 ? t : `neg(${t})`, []);
-      poolClaim(this, reading, t, to.claim, sign);
-      const lines = this.witnesses.get(to.id);
-      if (!had && lines) {
-        this.witnesses.delete(to.id);
-        this.witnesses.set(reading.id, new Set([...(this.witnesses.get(reading.id) ?? []), ...lines]));
-      }
-    }
-    const prior = talk.therefore ? this.plainTerms.get(talk.therefore) : undefined;
-    const next = this.plainTerms.get(reading.id);
-    if (prior && next) this.rule({ reading, id: str(reading.id), subst: new Map(), asserted: true, out }, `cause(${prior},${next})`, []);
-  }
-
-  /**
-   * R4a-12 (D1): a say word over a hinge, *because*, MAY or a contrary zone: `holds(say(W, P, R, A, E, D)) :- on(Id).` with
-   * `D` the wrapped content as one term, `if(C, O)`, `onlyif(C, O)`, `iff(C, O)`, `because(C, O)`, `may(T)` or
-   * `against(T, Z)`. Nothing else: no part holds, no MAY choice, no hinge rule.
-   */
-  sayData(reading: Reading, frames: Frames, inner: Frame): void {
-    const combination = { construction: "frameCombination", reason: "noRow" };
-    if (frames.holder || frames.mayHost || frames.likely || frames.restrictor || frames.universal || reading.stanceLists?.length) return this.leave(reading, combination);
-    if (reading.links.some((l) => l.kind === "carriedFrame" && l.key === "carry:holder")) return this.leave(reading, combination);
-    if (claimTerms(reading.claim).some((t) => t.kind === "list" || termFrames(t).length)) return this.leave(reading, combination);
-    const out: string[] = [];
-    const ctx: Ctx = { reading, id: str(reading.id), subst: new Map(), asserted: false, out };
-    const say = this.sayWrap(reading, frames.say!, ctx);
-    if ("reason" in say) return this.leave(reading, say);
-    const bad = { construction: inner.construction, key: inner.key, reason: "noRow" };
-    const t = this.claim(reading.claim, ctx);
-    let d: string;
-    if (inner === frames.hinge || inner === frames.because) {
-      const gloss = inner.values.gloss ?? "";
-      const fn = inner === frames.because ? (gloss === "because" ? "because" : undefined) : CONDITIONAL[gloss];
-      const noun = nounCondition(this, inner);
-      const cond = noun ? undefined : condition(this, reading, inner);
-      if (!fn || (!noun && (!cond || cond.frames.some((f) => f.key !== "slot:newMember") || this.unrowed(cond) || claimTerms(cond.claim).some((x) => termFrames(x).length || isOrList(x))))) return this.leave(reading, bad);
-      d = `${fn}(${noun?.text ?? this.claim(cond!.claim, { ...ctx, reading: cond! })},${t})`;
-      this.use(inner);
-    } else if (inner === frames.may) {
-      d = `may(${t})`;
-      this.use(inner);
-    } else {
-      const zone = this.zone(reading, inner, ctx);
-      if ("reason" in zone) return this.leave(reading, zone);
-      d = `against(${t},${zone.term})`;
-    }
-    this.rule(ctx, wrapText(say, d), []);
-    for (const v of this.visited) this.use(...v.frames.filter((f) => f.key === "slot:newMember"));
-    const parts = this.visited.flatMap((v) => readingParts(v, v === reading));
-    const unused = parts.filter((p) => !this.used.has(p.of));
-    if (unused.length) return this.leave(reading, { construction: unused[0]!.key, key: unused[0]!.key, reason: "unused", unused: unused.map((p) => p.text) });
-    this.accounting.set(reading.id, { parts, used: this.used });
-    this.wraps.set(reading.id, say);
-    if (inner === frames.may) this.notes.push({ reading: reading.id, frame: inner });
-    this.readings.push(reading.id);
-    this.lines.push(`% ${reading.id}`, `on(${ctx.id}).`, ...out);
-  }
-
-  /**
-   * R4c decision 6 (evidentiality.md#evidence-clause): a reasoned channel's grounds after `blarl`, a plain clause with
-   * no list, claimed as row 1, with the data `grounds(E, C)` (kept apart from `cause`). Checked before the claim is
-   * written; the caller writes it. A `bl-` source noun is no grounds: it stays in the notes. Why it has no row: another source, a frame or a list in the grounds, or a list in the
-   * claim.
-   */
-  grounds(reading: Reading, channel: Frame, ctx: Ctx): { text: string; reading: Reading } | Why {
-    const bad = { construction: channel.construction, key: channel.key, reason: "noRow" };
-    const hosted = channel.hosted;
-    const link = hosted?.kind === "clause" ? reading.links.find((l) => l.kind === "standIn" && l.to === hosted.reading.id) : undefined;
-    if (hosted?.kind !== "clause") return bad;
-    if (!link || link.words.map((w) => w.raw).join(" ") !== "blarl" || isEmptyClaim(reading.claim)) return bad;
-    if (claimTerms(reading.claim).some((t) => t.kind === "list")) return bad;
-    const cond = hosted.reading;
-    if (cond.frames.some((f) => f.key !== "slot:newMember") || this.unrowed(cond) || cond.stanceLists?.length || claimTerms(cond.claim).some((t) => t.kind === "list" || termFrames(t).length)) return bad;
-    condition(this, reading, channel);
-    return { text: this.claim(cond.claim, { ...ctx, reading: cond, asserted: false }), reading: cond };
-  }
-
-  /**
-   * R2-1 rows 1 to 4: the wrap a holder, a carried holder, or a say word puts on the reading's claim, with its facts
-   * (the channel as `via(Id, Channel)`, a first-mention holder's kind) into `ctx.out`. Undefined when it has none.
-   */
-  wrap(reading: Reading, frames: Frames, ctx: Ctx): Wrap | Why | undefined {
-    // R4a-13: a holder over a say word, stated or carried, nests both wraps, `view(H, say(..))`.
-    const inner = frames.say ? this.sayWrap(reading, frames.say, ctx) : undefined;
-    if (inner && "reason" in inner) return inner;
-    let holder: string | undefined;
-    let channel: Frame | undefined;
-    if (frames.holder) {
-      if (!frames.channel && !frames.mayHost) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
-      holder = this.holder(frames.holder, ctx);
-      if (!holder) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
-      this.use(frames.holder);
-      channel = frames.channel;
-    } else {
-      // Row 2: a carried holder takes the holder of the reading it links to.
-      const carried = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:holder");
-      if (!carried) return inner;
-      const from = carried.to ? this.wraps.get(carried.to) : undefined;
-      if (from?.kind !== "view") return { construction: carried.key, key: carried.key, reason: "noRow" };
-      holder = from.holder;
-      this.use(carried);
-      const link = reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:channel");
-      channel = link?.frame;
-      if (channel?.values.gloss) this.use(link);
-    }
-    const gloss = channel?.values.gloss;
-    if (gloss) {
-      this.rule(ctx, `via(${ctx.id},${name(gloss.toLowerCase())})`, [], "via");
-      this.use(channel);
-    }
-    return { kind: "view", holder, ...(inner?.kind === "say" ? { say: inner } : {}) };
-  }
-
-  /** Row 4 (permission-consent.md#say-words, #permission, #consent, #say-reach): a say word's wrap, or why it has none. */
-  sayWrap(reading: Reading, say: Frame, ctx: Ctx): Wrap | Why {
-    const { reach = "", part = "", answer = "", ending = "" } = say.values;
-    const v = { reach, part, answer, ending };
-    const bad = { construction: say.construction, key: say.key, reason: "noRow" };
-    if (![v.reach, v.part, v.answer, v.ending].every((x) => x && /^[a-z]+$/.test(x))) return bad;
-    const hosted = say.hosted ? this.term(say.hosted, "bl", { ...ctx, asserted: false }) : undefined;
-    let who: string | undefined;
-    let to: string | undefined;
-    if (v.part === "v") who = hosted ?? (v.ending === "m" ? this.speaker(reading) : v.ending === "l" ? "rules" : v.ending === "r" ? "unsaid" : undefined);
-    else if (v.part === "z" || v.part === "d" || v.part === "b") {
-      const filler = reading.claim.roles[v.part];
-      const fence = reading.frames.find((f) => f.key === "joinSeries:ua" || f.key === "joinSeries:u:kind")?.hosted;
-      who = filler && filler === fence ? "X" : filler ? this.term(filler, v.part, { ...ctx, asserted: false }) : undefined;
-      if (hosted) to = v.reach.includes("e") ? `to(${hosted})` : undefined;
-      if (hosted && !to) return bad;
-    }
-    if (!who) return bad;
-    this.use(say);
-    return { kind: "say", who, part: v.part, reach: v.reach, answer: v.answer, ending: v.ending, to };
-  }
-
-  /**
-   * R2-1 row 9, R2-11 (contrary-to.md#contrary-to-stance): the zone after `uom`, `plan(H)` or `say(Who, Part, Reach,
-   * Answer, Ending[, to(X)])` with the say word's wrap. A plan with no holder is the turn speaker's. R4b decision 3: a
-   * want or a decision is `want(H)` / `decision(H)`, as a plan. R4a-6, R4b-10, R4b-11 (contrary-to.md#contrary-to-holder,
-   * #channel-zone): a holder after `uom` names `H` (Holders row 3), on its channel alone `channel(Gloss, H)`; a channel
-   * with no holder is the turn speaker's. The holder's own channel before an intention is used with no term.
-   */
-  zone(reading: Reading, frame: Frame, ctx: Ctx): { term: string; say?: Extract<Wrap, { kind: "say" }> } | Why {
-    const bad = { construction: frame.construction, key: frame.key, reason: "noRow" };
-    const inner = frame.inner ?? [];
-    const holder = inner[0]?.key === "xFamily:holder" ? inner[0] : undefined;
-    const rest = holder ? inner.slice(1) : inner;
-    if (rest.length > 1 || (!holder && !rest.length)) return bad;
-    const f = rest[0];
-    const host = holder?.inner?.length === 1 && holder.inner[0]!.key === "overlay:evidential:th" ? holder.inner[0] : undefined;
-    const intention = f ? ZONE_INTENTIONS[f.key] : undefined;
-    const channel = f ? (f.key === "overlay:evidential:th" && !f.holderHost ? f : undefined) : host;
-    const gloss = intention ? undefined : channel?.values.gloss;
-    if (holder && (!host || !(intention || (!f && gloss)))) return bad;
-    if (intention || gloss) {
-      const who = holder ? this.holder(holder, { ...ctx, choice: false }) : this.speaker(reading);
-      if (!who) return bad;
-      this.use(frame, f, holder, host);
-      return { term: intention ? `${intention}(${who})` : `channel(${name(gloss!.toLowerCase())},${who})` };
-    }
-    if (!f || f.key !== "wordFamily:say") return bad;
-    const say = this.sayWrap(reading, f, ctx);
-    if ("reason" in say || say.kind !== "say") return bad;
-    this.use(frame);
-    return { term: `say(${say.who},${say.part},${say.reach},${say.answer},${say.ending}${say.to ? `,${say.to}` : ""})`, say };
-  }
-
-  /**
-   * Row 3, who the holder is (holder.md#naming-a-holder): a name is its root id, `-r` its antecedent's; a kind of person
-   * is a first-mention noun, `nm(Id, h)` with its kind; R2-4: `-x` is `grp(H)`; R4a-7: the interlocutors are the turn's `we(..)` term; the generic
-   * pronoun is its own holder. R4a-4: the topic pronoun and a `-r` holder resume their antecedent through the
-   * anaphor link, which the holder uses, as {@link resume} does in a role (a first mention keeps its constant; a `-r`
-   * holder with no antecedent is the name it spells). R4a-5: the listener is the listener term, as `zawan` is in a role.
-   * Undefined for a holder with no row: a topic pronoun with no topic, and the speaker.
-   */
-  holder(frame: Frame, ctx: Ctx): string | undefined {
-    if (!frame.party) return undefined;
-    this.resume(frame.party, ctx);
-    const through = throughAntecedent(frame.party);
-    const own = frame.party.kind === "pronoun" && through.kind === "pronoun" ? frame.party.word : undefined;
-    const party: Term = own && own.ending === "r" && own.family.kind === "x" ? { kind: "thing", head: own, root: own.family.rightRoots!.join(""), named: true, details: [] } : through;
-    if (party.kind === "listener") {
-      const text = this.term(party, "h", ctx);
-      this.holders.set(text, "your");
-      return text;
-    }
-    if (party.kind !== "thing") return undefined;
-    const known = this.consts.get(party);
-    if (known) {
-      this.holders.set(known, "someone's");
-      return known;
-    }
-    const word = party.head;
-    if (isTopicPronoun(word) || party.root === CLOSED.microphone || party.root === CLOSED.headphones) return undefined;
-    let text: string;
-    let english: string;
-    if (isGenericPronoun(word)) [text, english] = ["generic", "the generic"];
-    else if (party.root === CLOSED.handshake && party.named) [text, english] = [this.we(ctx.reading), "our"];
-    else if (party.named) [text, english] = [name(party.root), `${namedEnglish(party.root)}'s`];
-    else {
-      text = `nm(${ctx.id},h)`;
-      english = word.plural ? "some people's" : "someone's";
-      this.kinds.set(name(party.root), party);
-      this.witness(ctx, `isa(${text},${name(party.root)})`);
-      this.holders.set(text, english);
-      return text;
-    }
-    if (word.plural) [text, english] = [`grp(${text})`, english.replace(/'s$/, " and co.'s")];
-    this.holders.set(text, english);
-    return text;
   }
 
   /** A term inside the reading's wrap. */
@@ -939,7 +688,8 @@ export class Translator {
       this.bound.add(instance.head);
       // R2-5: inside a view, the kind is the holder's too; a say word's kind is your own claim (R4a-10).
       const isa = ctx.wrap?.kind === "say" ? `isa(X,${k})` : this.w(ctx, `isa(X,${k})`);
-      body.push({ atom: `holds(${isa})`, premise: isa }, ...excepted(this, reading.id, list).map((m) => ({ atom: `X!=${m}` })));
+      body.push({ atom: `holds(${isa})`, premise: isa });
+      for (const m of excepted(this, reading.id, list)) body.push({ atom: `X!=${m}` });
       ctx.every = { list, kind: k };
       const say = ctx.wrap?.kind === "say" ? ctx.wrap : undefined;
       if (say && frames.say && over(reading, frames.say, f)) {
@@ -988,7 +738,7 @@ export class Translator {
     if (frames.because) return because(this, reading, frames, claim, heads, body, ctx, mayOver);
     // Row 14's zone, outside MAY's choice. A say-word zone only on a plain claim or beside MAY (R4b-9); on a universal
     // only a closed `zual` (R4b-12, R4b-13).
-    const zone = frames.zone ? this.zone(reading, frames.zone, { ...ctx, choice: false }) : undefined;
+    const zone = frames.zone ? zoneOf(this, reading, frames.zone, { ...ctx, choice: false }) : undefined;
     if (zone && "reason" in zone) return zone;
     const zoneBad = { construction: frames.zone?.construction ?? "", key: frames.zone?.key, reason: "noRow" };
     if (zone && ((zone.say && (frames.universal || frames.restrictor || frames.hinge)) || (frames.universal && (frames.universal.key !== "joinSeries:ua" || open)))) return zoneBad;
@@ -1036,7 +786,11 @@ export class Translator {
       } else {
         if (!listed) this.rule(ctx, this.w(ctx, always ? h.text : `neg(${h.text})`), []);
         const stand = occasion ? reading.links.find((l) => l.kind === "standIn" && l.to === occasion.reading.id) : undefined;
-        const marked = occasion && stand ? this.claim({ ...h.claim, details: [...h.claim.details, { kind: "occasion", construction: stand.key, key: stand.key, anchor: stand.anchor, words: stand.words, values: {}, hosted: occasion }] }, ctx) : h.text;
+        let marked = h.text;
+        if (occasion && stand) {
+          const mark: Detail = { kind: "occasion", construction: stand.key, key: stand.key, anchor: stand.anchor, words: stand.words, values: {}, hosted: occasion };
+          marked = this.claim({ ...h.claim, details: [...h.claim.details, mark] }, ctx);
+        }
         this.rule(ctx, this.w(ctx, marked), [], always ? "always" : "never");
       }
       // R4b-14 (restrictors.md#always-hual): `hual` marks its act against the zone, the marker too; `hal` has no event to mark.
@@ -1289,7 +1043,8 @@ export class Translator {
         const ls = this.term(l, place, ctx);
         const v = group.length > 1 ? `X${i + 1}` : "X";
         subst.set(l, { text: v });
-        body.push({ atom: `member(${ls},${v},G)` }, ...excepted(this, reading.id, l).map((m) => ({ atom: `${v}!=${m}` })));
+        body.push({ atom: `member(${ls},${v},G)` });
+        for (const m of excepted(this, reading.id, l)) body.push({ atom: `${v}!=${m}` });
         const shared = claim.predicate.includes(l) ? undefined : this.sharedDetails(l, ctx);
         l.members.forEach((m, j) => {
           const enc = claim.predicate.includes(l) ? this.kind(m, `${place}${j + 1}`, ctx) : this.term(m, `${place}${j + 1}`, ctx);
@@ -1313,7 +1068,8 @@ export class Translator {
           s.set(l, { text: claim.predicate.includes(l) ? this.kind(l.members[j]!, `${place}${j + 1}`, ctx) : this.term(l.members[j]!, `${place}${j + 1}`, ctx) });
           c = replaceTerm(c, l, m);
         }
-        if (group.some((l) => excepted(this, reading.id, l).includes(s.get(l)!.text))) continue;
+        const skipped = group.some((l) => excepted(this, reading.id, l).includes(s.get(l)!.text));
+        if (skipped) continue;
         poolClaim(this, reading, this.claim(claim, { ...ctx, subst: s }), c, 1);
       }
     }
@@ -1378,7 +1134,9 @@ export class Translator {
   finish(): string {
     // Universal templates with each individual, for fits.
     for (const t of this.templates) {
-      for (const [text, term] of [...this.individuals].filter(([x]) => !excepted(this, t.ctx.reading.id, t.list).includes(x))) {
+      const except = excepted(this, t.ctx.reading.id, t.list);
+      for (const [text, term] of this.individuals) {
+        if (except.includes(text)) continue;
         const subst: Subst = new Map(t.ctx.subst);
         subst.set(t.list, { text, term });
         poolClaim(this, t.ctx.reading, this.claim(t.claim, { ...t.ctx, subst, out: [] }), replaceTerm(t.claim, t.list, term), t.sign);
@@ -1388,7 +1146,8 @@ export class Translator {
     // its kind (`isa(M, K)` in the pool); a member known only through `widen` gets none.
     for (const e of this.everyHinges) {
       for (const [text, term] of this.individuals) {
-        if (!this.terms.has(`isa(${text},${e.kind})`) || excepted(this, e.reading.id, e.list).includes(text)) continue;
+        if (!this.terms.has(`isa(${text},${e.kind})`)) continue;
+        if (excepted(this, e.reading.id, e.list).includes(text)) continue;
         const id = `${e.ctx.id},${text}`;
         const cond = e.bound.reduce((claim, b) => replaceTerm(claim, b, term), e.cond);
         const out = replaceTerm(e.out, e.list, term);

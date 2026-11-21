@@ -11,9 +11,10 @@
  */
 import { throughAntecedent, type ListTerm } from "./steps.js";
 import type { Translator } from "./translate.js";
-import { name, raws } from "./translate-helpers.js";
-import type { Talk } from "./translate-types.js";
-import type { Link, ReadingId, Term } from "./types.js";
+import { pool as poolClaim } from "./translate-conditions.js";
+import { answerable, name, raws, str } from "./translate-helpers.js";
+import { KEPT_HOOK, type Ctx, type Talk } from "./translate-types.js";
+import type { Claim, Detail, Link, Reading, ReadingId, Term } from "./types.js";
 
 /** O-2: the discourse hooks that withdraw the claim they point to. */
 const WITHDRAW_HOOK = /^(?:e[lm]|ur)$/;
@@ -54,4 +55,102 @@ export function excepted(tr: Translator, prior: ReadingId, list: Term | ListTerm
     }
   }
   return out;
+}
+
+// ── What the pool keeps ─────────────────────────────────────────────────────
+
+/**
+ * R4d-7 (in-clause-hooks.md#hook-resume): a point-back hook adds the extra-noun detail of the hook it resumes, with this
+ * hook's vowels and that hook's ending, on the resumed landmark's own term, so *there* is the same place. The details
+ * go in the claim's term and in the claim the pool keeps for it, so a question is matched against them too.
+ */
+export function resumedDetails(tr: Translator, claim: Claim, reading: Reading): Detail[] {
+  // The reading's own claim, or a copy of it with one term put in (a denied verb, a list member).
+  if (claim.details !== reading.claim.details) return [];
+  return reading.links.flatMap((l) => {
+    const own = l.kind === "hookResume" ? l.words[0] : undefined;
+    const resumed = l.resumed?.words[0];
+    if (!own || !resumed || !l.resumed?.hosted || own.family.kind !== "hook" || resumed.family.kind !== "hook") return [];
+    tr.use(l);
+    const form = own.family.form.slice(0, -1) + resumed.family.form.slice(-1);
+    return [{ ...l.resumed, words: [{ ...resumed, raw: form, family: { kind: "hook", form } }], details: undefined, frames: undefined }];
+  });
+}
+
+/**
+ * The claim the pool keeps for a term, as its term was written, so a question is matched against what was claimed: with
+ * R4d-7's resumed hook details, and R4d-8's backward stand-ins as the content they point to.
+ */
+export function pooled(tr: Translator, claim: Claim, reading: Reading): Claim {
+  const resumed = resumedDetails(tr, claim, reading);
+  const roles = { ...claim.roles };
+  for (const r of ["z", "d", "b"] as const) {
+    const t = roles[r];
+    const back = t?.kind === "pronoun" ? reading.links.find((l) => l.kind === "standInBack" && l.words.includes(t.word) && l.to) : undefined;
+    const content = back?.to ? tr.byId.get(back.to) : undefined;
+    if (content && content !== reading) roles[r] = { kind: "clause", reading: content };
+  }
+  const changed = resumed.length > 0 || (["z", "d", "b"] as const).some((r) => roles[r] !== claim.roles[r]);
+  return changed ? { ...claim, roles, details: [...claim.details, ...resumed] } : claim;
+}
+
+// ── Links in the claim path ─────────────────────────────────────────────────
+
+/**
+ * R4d-1, R4d-3 to R4d-5 (R4d decisions O-4, O-5): the links that add no term. Used: a sentence linker, topic word or
+ * agenda number (`unit:linker`), a span topic (`body:topicMarker`), a tag (`slot:tag`; its phrase takes its own row),
+ * a discourse hook that adds, rewords or returns (`edge:hook`, {@link KEPT_HOOK}), and a polar word with no verdict
+ * (`ua`, `oe`, `ae`, `ue`, or any polar word on a command or with no reading before it). R4d-2: `ao` / `uo` on any
+ * ending (`-r` too, O-4) on a yes / no question or a statement is a verdict on that reading's claim; on a fill question,
+ * or a reading with a frame or a list, it stays unused. O-1: `xahom` names the reading its `cause` starts from.
+ */
+export function talkOf(tr: Translator, reading: Reading): Talk {
+  const out: Talk = { used: [] };
+  for (const l of reading.links) {
+    const text = raws(l.words);
+    if (l.key === "unit:linker" || l.key === "body:topicMarker" || l.key === "slot:tag") {
+      out.used.push(l);
+      if (l.key === "unit:linker" && text === "xahom" && l.to) out.therefore = l.to;
+    } else if (l.key === "edge:hook" && l.kind === "discourse" && (KEPT_HOOK.test(text) || pointBack(l, out))) out.used.push(l);
+    else if (l.key === "edge:polar") {
+      const m = /^y([aeiou]+)[lmr]$/.exec(text);
+      if (!m) continue;
+      const to = l.to ? tr.byId.get(l.to) : undefined;
+      const force = to?.frames.find((f) => f.key === "edge:force");
+      const command = force?.values.series === "o" || force?.values.series === "u";
+      if (["ua", "oe", "ae", "ue"].includes(m[1]!) || ((m[1] === "ao" || m[1] === "uo") && (!to || command))) out.used.push(l);
+      else if ((m[1] === "ao" || m[1] === "uo") && to && answerable(to)) {
+        out.used.push(l);
+        out.answer = { to, sign: m[1] === "ao" ? 1 : -1 };
+      }
+    }
+  }
+  return out;
+}
+
+/**
+ * R4d-2: a verdict takes the claim T of the reading it answers, written at that reading's sites (so its `zawan` stays
+ * the one answering): `holds(T) :- on(Id).` for `ao`, row 2's `holds(neg(T)) :- on(Id).` for `uo`. A first mention in
+ * T takes the answer's own constants under `ao` (row 14; its witness lines are the answer's) and its kind under `uo`.
+ * R4d decision O-1: `xahom` between two plain claims adds row 10's `holds(cause(Prior, Next)) :- on(Id).`
+ */
+export function talkRules(tr: Translator, reading: Reading, talk: Talk, out: string[]): void {
+  if (talk.withdraws) tr.withdrawn.add(talk.withdraws);
+  if (talk.answer) {
+    const { to, sign } = talk.answer;
+    if (sign > 0) for (const f of to.frames) if (f.key === "slot:newMember" && f.hosted) tr.newMembers.add(f.hosted);
+    const had = tr.witnesses.get(to.id);
+    const ctx: Ctx = { reading: to, id: str(reading.id), subst: new Map(), asserted: sign > 0, out };
+    const t = tr.claim(to.claim, ctx);
+    tr.rule(ctx, sign > 0 ? t : `neg(${t})`, []);
+    poolClaim(tr, reading, t, to.claim, sign);
+    const lines = tr.witnesses.get(to.id);
+    if (!had && lines) {
+      tr.witnesses.delete(to.id);
+      tr.witnesses.set(reading.id, new Set([...(tr.witnesses.get(reading.id) ?? []), ...lines]));
+    }
+  }
+  const prior = talk.therefore ? tr.plainTerms.get(talk.therefore) : undefined;
+  const next = tr.plainTerms.get(reading.id);
+  if (prior && next) tr.rule({ reading, id: str(reading.id), subst: new Map(), asserted: true, out }, `cause(${prior},${next})`, []);
 }

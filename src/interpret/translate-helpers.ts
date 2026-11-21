@@ -230,7 +230,10 @@ export function ownChannel(reading: Reading): { channel: Frame; frames: Set<Fram
 export function fragment(reading: Reading): Why | undefined {
   const c = reading.claim;
   if (c.verb || c.predicate.length || c.roles.d || c.roles.b || c.clauses) return undefined;
-  const dangling = reading.links.some((l) => l.to) ? undefined : reading.links.find((l) => l.kind === "standIn" || l.kind === "hookResume" || (l.key === "edge:hook" && !c.roles.z && !c.details.length));
+  const reaches = reading.links.some((l) => l.to);
+  const dangling = reaches
+    ? undefined
+    : reading.links.find((l) => l.kind === "standIn" || l.kind === "hookResume" || (l.key === "edge:hook" && !c.roles.z && !c.details.length));
   if (dangling) return { construction: "fragment", key: dangling.key, reason: "fragment" };
   if (c.details.length) return undefined;
   const f = c.roles.z?.kind === "list" ? termFrames(c.roles.z).find((x) => x.key.startsWith("joinSeries:") && x.key !== "joinSeries:u") : undefined;
