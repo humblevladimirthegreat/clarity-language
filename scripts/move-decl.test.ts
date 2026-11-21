@@ -139,3 +139,92 @@ describe("move-decl", () => {
     assert.match(out[0]!, /^load-time read across a cycle: src\/e\.ts DOUBLE reads BASE from src\/d\.ts/);
   });
 });
+
+const T = lines(
+  "/** Header of t. */",
+  'import { x } from "./x.js";',
+  "",
+  "function helper(n: number): number {",
+  "  return n + x;",
+  "}",
+  "",
+  "export class Tr {",
+  "  count = 0;",
+  "",
+  "  /** Doc of bump. */",
+  "  bump(by: number): number {",
+  "    this.count += helper(by);",
+  "    return this.twice(this.count);",
+  "  }",
+  "",
+  "  twice(n: number): number {",
+  "    const list = [n, n].map(() => this.count);",
+  "    return list.length + `${n}",
+  "  kept`.length;",
+  "  }",
+  "",
+  "  run(): number {",
+  "    const twice = 1;",
+  "    return this.bump(twice) + this.twice(2);",
+  "  }",
+  "}",
+);
+
+/** planMove with --method: the texts and notes, or the refusals. */
+function moveMethods(root: string, to: string, methods: string): { files: Record<string, string>; notes: string[] } | string[] {
+  const result = planMove({ root, from: "src/t.ts", names: [], to, methods: methods.split(",") });
+  if (!result.ok) return [...result.refused, ...(result.moveLines ?? []).map((l) => `${l.side} ${l.text}`)];
+  return { files: Object.fromEntries(result.files.map((f) => [relative(root, f.file), f.text])), notes: result.notes };
+}
+
+describe("move-decl --method", () => {
+  it("turns methods into functions and rewrites this-calls, aliasing a name taken at a call site", () => {
+    const root = project({ "src/t.ts": T, "src/x.ts": X });
+    const out = moveMethods(root, "src/u.ts", "Tr.bump,Tr.twice");
+    assert.ok(!Array.isArray(out), String(out));
+    const u = out.files["src/u.ts"]!;
+    assert.match(u, /^import \{ type Tr, helper \} from "\.\/t\.js";\n/);
+    assert.ok(
+      u.endsWith(
+        lines(
+          "/** Doc of bump. */",
+          "export function bump(tr: Tr, by: number): number {",
+          "  tr.count += helper(by);",
+          "  return twice(tr, tr.count);",
+          "}",
+          "",
+          "export function twice(tr: Tr, n: number): number {",
+          "  const list = [n, n].map(() => tr.count);",
+          "  return list.length + `${n}",
+          "  kept`.length;",
+          "}",
+        ),
+      ),
+      u,
+    );
+    const t = out.files["src/t.ts"]!;
+    assert.match(t, /import \{ bump, twice as trTwice \} from "\.\/u\.js";/);
+    assert.ok(t.includes("    return bump(this, twice) + trTwice(this, 2);\n"), t);
+    assert.ok(!t.includes("bump(by"), t);
+    assert.deepEqual(out.notes, ["src/t.ts imports twice as trTwice: twice is taken there"]);
+  });
+
+  it("picks a free parameter name and renames a function whose name TO already takes", () => {
+    const tWithTr = T.replace("const list = [n, n]", "const tr = n;\n    const list = [tr, n]");
+    const root = project({ "src/t.ts": tWithTr, "src/x.ts": X, "src/u.ts": lines("export const twice = 2;") });
+    const out = moveMethods(root, "src/u.ts", "Tr.twice");
+    assert.ok(!Array.isArray(out), String(out));
+    assert.match(out.files["src/u.ts"]!, /export function trTwice\(tr2: Tr, n: number\): number \{\n {2}const tr = n;\n {2}const list = \[tr, n\]\.map\(\(\) => tr2\.count\);/);
+    const t = out.files["src/t.ts"]!;
+    assert.ok(t.includes("return trTwice(this, this.count);"), t);
+    assert.deepEqual(out.notes, ["renamed Tr.twice to trTwice: twice is taken where it moves"]);
+  });
+
+  it("refuses private members and a use other than a this-call", () => {
+    const priv = project({ "src/t.ts": T.replace("  count = 0;", "  private count = 0;"), "src/x.ts": X });
+    assert.deepEqual(moveMethods(priv, "src/u.ts", "Tr.bump"), ["Tr: has private or protected members (count), which a function cannot reach"]);
+    const C2 = lines('import { Tr } from "./t.js";', "", "export const n = new Tr().bump(1);");
+    const used = project({ "src/t.ts": T, "src/x.ts": X, "src/c.ts": C2 });
+    assert.deepEqual(moveMethods(used, "src/u.ts", "Tr.bump"), ["Tr.bump: used at src/c.ts:3 other than as a this.bump(…) call in src/t.ts"]);
+  });
+});

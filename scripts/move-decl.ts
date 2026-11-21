@@ -12,6 +12,19 @@
  * add a type error to a file it edits; and when `deps --check-move` finds a line on only one side.
  * A pure move prints nothing.
  *
+ *   move-decl FROM [NAME[,NAME…]] --method Class.name[,…] TO
+ *
+ * `--method` also moves methods of a top-level class in FROM (docs/meta/code-layout.md#methods-to-functions):
+ * each becomes `function name(tr: Class, …)`, `this` becomes `tr` inside it, and each `this.name(…)` call
+ * becomes `name(this, …)`. The parameter is `tr` unless a moved body already uses that name, then `tr2`,
+ * `tr3`, … A name taken in TO renames the function to `classMethod`; a name taken only in FROM aliases
+ * FROM's import of it; each prints a line. It refuses a class with private or protected members, a generic
+ * class, a static, abstract, overloaded or decorated method, a body using `super` or `arguments`, and any use
+ * of the method other than a `this.name(…)` call in FROM.
+ *
+ * `--dry-run` writes nothing and prints the files it would write; with `--method`, also the lines that
+ * differ from FROM as `deps --check-move` sees them (the signatures, call sites and `this` lines).
+ *
  * Run: npm run -s move-decl -- src/interpret/read.ts readUnit,UnitKind src/interpret/read-units.ts
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -21,15 +34,19 @@ import ts from "typescript";
 
 import { BANNER, bindingNames, checkMove, headerLines, importsOf, projectSourceFiles, readProject, splitReport, type MoveLine } from "./lib/deps.ts";
 
-export type MoveOptions = { from: string; names: string[]; to: string; root?: string };
-export type MoveResult = { ok: true; files: { file: string; text: string }[] } | { ok: false; refused: string[]; moveLines?: MoveLine[] };
+/** `methods` are `Class.name` specs for --method. */
+export type MoveOptions = { from: string; names: string[]; to: string; root?: string; methods?: string[] };
+/** `notes` are the renames and aliases --method made; `changed` the lines that differ from FROM under --method. */
+export type MoveResult =
+  | { ok: true; files: { file: string; text: string }[]; notes: string[]; changed: MoveLine[] }
+  | { ok: false; refused: string[]; moveLines?: MoveLine[] };
 
 /** One moved unit: a top-level statement (or an overload run), with the comment lines directly above it. */
 type Piece = { names: string[]; stmts: ts.Statement[]; start: number; end: number; startLine: number; endLine: number; text: string };
 
 const TS_FILE = /\.[cm]?ts$/;
 const FORMAT: ts.FormatCodeSettings = { ...ts.getDefaultFormatCodeSettings(), indentSize: 2, tabSize: 2, convertTabsToSpaces: true };
-const PREFERENCES: ts.UserPreferences = { allowTextChangesInNewFiles: true, importModuleSpecifierEnding: "auto", quotePreference: "double" };
+const PREFERENCES: ts.UserPreferences = { allowTextChangesInNewFiles: true, preferTypeOnlyAutoImports: true, importModuleSpecifierEnding: "auto", quotePreference: "double" };
 
 function hasModifier(node: ts.Node, kind: ts.SyntaxKind): boolean {
   return ts.canHaveModifiers(node) && (ts.getModifiers(node)?.some((m) => m.kind === kind) ?? false);
@@ -48,7 +65,7 @@ const lineOf = (sf: ts.SourceFile, pos: number): number => sf.getLineAndCharacte
 const lineStart = (text: string, pos: number): number => text.lastIndexOf("\n", pos - 1) + 1;
 
 /** Start of the comment lines directly above a statement (no blank line between, no banner), else the statement's own line start. */
-function pieceStart(sf: ts.SourceFile, s: ts.Statement): number {
+function pieceStart(sf: ts.SourceFile, s: ts.Node): number {
   const text = sf.text;
   let start = s.getStart(sf);
   const comments = ts.getLeadingCommentRanges(text, s.pos) ?? [];
@@ -110,7 +127,7 @@ function findPieces(sf: ts.SourceFile, names: string[]): { pieces: Piece[]; refu
 }
 
 /** FROM with the pieces' lines removed, each with one blank line after it. */
-function cutPieces(text: string, pieces: Piece[]): string {
+function cutPieces(text: string, pieces: { startLine: number; endLine: number }[]): string {
   const lines = text.split("\n");
   const out: string[] = [];
   let justCut = false;
@@ -156,16 +173,22 @@ function specifierEnding(text: string, file: string): string {
   return js > tsCount ? ".js" : ".ts";
 }
 
-/** Give each relative import or export specifier without an extension the file's ending. */
-function fixSpecifiers(file: string, text: string, ending: string): string {
+/**
+ * Give each relative import or export specifier the refactor wrote the file's ending: added where it has
+ * none, swapped where it has the other one (`.ts` for `.js`). Specifiers already in `before` stay as they are.
+ */
+function fixSpecifiers(file: string, text: string, ending: string, before: string): string {
   const sf = parse(file, text);
+  const had = new Set(before ? importsOf(file, before).map((i) => i.spec) : []);
   let out = text;
   for (const s of [...sf.statements].reverse()) {
     if (!(ts.isImportDeclaration(s) || ts.isExportDeclaration(s)) || !s.moduleSpecifier || !ts.isStringLiteral(s.moduleSpecifier)) continue;
     const spec = s.moduleSpecifier.text;
-    if (!spec.startsWith(".") || /\.[cm]?[jt]s$/.test(spec)) continue;
-    const at = s.moduleSpecifier.getEnd() - 1;
-    out = out.slice(0, at) + ending + out.slice(at);
+    if (!spec.startsWith(".") || had.has(spec) || spec.endsWith(ending)) continue;
+    if (/\.(json|vue|css|[cm][jt]s)$/.test(spec)) continue;
+    const bare = /\.[jt]s$/.test(spec) ? spec.slice(0, -3) : spec;
+    const lit = s.moduleSpecifier;
+    out = `${out.slice(0, lit.getStart(sf) + 1)}${bare}${ending}${out.slice(lit.getEnd() - 1)}`;
   }
   return out;
 }
@@ -218,6 +241,276 @@ function diagnosticKeys(service: ts.LanguageService, file: string): Map<string, 
   return out;
 }
 
+// ── Methods to functions ──
+
+function walk(node: ts.Node, visit: (n: ts.Node) => void): void {
+  visit(node);
+  node.forEachChild((c) => walk(c, visit));
+}
+
+/** What `this` inside a node binds to: the nearest enclosing function, class member or class, arrows skipped. */
+function thisOwner(node: ts.Node): ts.Node | undefined {
+  for (let n = node.parent; n; n = n.parent) {
+    if (ts.isArrowFunction(n)) continue;
+    if (ts.isFunctionLike(n) || ts.isClassStaticBlockDeclaration(n) || ts.isPropertyDeclaration(n) || ts.isClassLike(n) || ts.isSourceFile(n)) return n;
+  }
+  return undefined;
+}
+
+/** The identifier that starts at `pos`. */
+function identifierAt(sf: ts.SourceFile, pos: number): ts.Identifier | undefined {
+  let hit: ts.Identifier | undefined;
+  const go = (n: ts.Node): void => {
+    if (hit || pos < n.pos || pos >= n.end) return;
+    if (ts.isIdentifier(n) && n.getStart(sf) === pos) hit = n;
+    else n.forEachChild(go);
+  };
+  go(sf);
+  return hit;
+}
+
+/** The top-level class member (or top-level statement) that holds a node. */
+function memberOf(node: ts.Node): ts.Node {
+  let n = node;
+  while (n.parent && !ts.isSourceFile(n.parent) && !(ts.isClassDeclaration(n.parent) && ts.isSourceFile(n.parent.parent))) n = n.parent;
+  return n;
+}
+
+/** Names a file declares or imports at top level. */
+function topNames(sf: ts.SourceFile): Set<string> {
+  const out = new Set(sf.statements.flatMap(declaredNames));
+  for (const s of sf.statements) {
+    const c = ts.isImportDeclaration(s) ? s.importClause : undefined;
+    if (c?.name) out.add(c.name.text);
+    const b = c?.namedBindings;
+    if (b && ts.isNamespaceImport(b)) out.add(b.name.text);
+    else if (b) for (const e of b.elements) out.add(e.name.text);
+  }
+  return out;
+}
+
+/** Names declared anywhere inside a node: variables, parameters, functions, classes. */
+function declaredIn(node: ts.Node): Set<string> {
+  const out = new Set<string>();
+  walk(node, (n) => {
+    if (ts.isVariableDeclaration(n) || ts.isParameter(n) || ts.isBindingElement(n)) for (const id of bindingNames(n.name)) out.add(id.text);
+    else if ((ts.isFunctionDeclaration(n) || ts.isFunctionExpression(n) || ts.isClassDeclaration(n) || ts.isClassExpression(n)) && n.name) out.add(n.name.text);
+  });
+  return out;
+}
+
+/** Identifiers inside a node that name a binding, not a property. */
+function referencedIn(node: ts.Node): Set<string> {
+  const out = new Set<string>();
+  walk(node, (n) => {
+    if (!ts.isIdentifier(n)) return;
+    const p = n.parent;
+    const property =
+      (ts.isPropertyAccessExpression(p) && p.name === n) ||
+      ((ts.isPropertyAssignment(p) || ts.isMethodDeclaration(p) || ts.isPropertyDeclaration(p) || ts.isPropertySignature(p) || ts.isMethodSignature(p)) && p.name === n) ||
+      (ts.isQualifiedName(p) && p.right === n) ||
+      (ts.isBindingElement(p) && p.propertyName === n);
+    if (!property) out.add(n.text);
+  });
+  return out;
+}
+
+type MovedMethod = { spec: string; cls: string; name: string; node: ts.MethodDeclaration; start: number; startLine: number; endLine: number; calls: ts.CallExpression[] };
+/** FROM with the methods turned into functions at its end; `aliases` maps a function's name in FROM to its name in TO. */
+type MethodPlan = { ok: true; text: string; names: string[]; notes: string[]; aliases: Map<string, string> } | { ok: false; refused: string[] };
+
+/** Find each `Class.name` method, or the reasons to refuse it. */
+function findMethods(sf: ts.SourceFile, specs: string[], rel: string): { moved: MovedMethod[]; refused: string[] } {
+  const text = sf.text;
+  const refused: string[] = [];
+  const moved: MovedMethod[] = [];
+  const checked = new Set<string>();
+  for (const spec of specs) {
+    const [cName, mName, ...extra] = spec.split(".");
+    if (!cName || !mName || extra.length) {
+      refused.push(`${spec}: not Class.method`);
+      continue;
+    }
+    const cls = sf.statements.find((s): s is ts.ClassDeclaration => ts.isClassDeclaration(s) && s.name?.text === cName);
+    if (!cls) {
+      refused.push(`${cName}: no top-level class in ${rel}`);
+      continue;
+    }
+    if (!checked.has(cName)) {
+      checked.add(cName);
+      if (cls.typeParameters) refused.push(`${cName}: a generic class`);
+      const hidden = cls.members.filter((m) => (m.name && ts.isPrivateIdentifier(m.name)) || hasModifier(m, ts.SyntaxKind.PrivateKeyword) || hasModifier(m, ts.SyntaxKind.ProtectedKeyword));
+      if (hidden.length) refused.push(`${cName}: has private or protected members (${hidden.map((m) => m.name?.getText(sf) ?? "constructor").join(", ")}), which a function cannot reach`);
+    }
+    const members = cls.members.filter((m) => m.name?.getText(sf) === mName);
+    const node = members[0];
+    if (!node) {
+      refused.push(`${spec}: no member ${mName} in ${cName}`);
+      continue;
+    }
+    if (members.length > 1 || !ts.isMethodDeclaration(node) || !node.body || !ts.isIdentifier(node.name)) {
+      refused.push(`${spec}: not one method with a body (an overload, a field, an accessor)`);
+      continue;
+    }
+    const bad = (ts.getModifiers(node) ?? []).filter((m) => m.kind !== ts.SyntaxKind.PublicKeyword && m.kind !== ts.SyntaxKind.AsyncKeyword);
+    if (bad.length || ts.getDecorators(node)?.length || node.questionToken) {
+      refused.push(`${spec}: ${bad.length ? `a ${bad.map((m) => m.getText(sf)).join(" ")}` : "a decorated or optional"} method`);
+      continue;
+    }
+    const first = node.parameters[0];
+    if (first && ts.isIdentifier(first.name) && first.name.text === "this") refused.push(`${spec}: declares a this parameter`);
+    walk(node, (n) => {
+      const what = n.kind === ts.SyntaxKind.SuperKeyword ? "super" : ts.isIdentifier(n) && n.text === "arguments" && thisOwner(n) === node ? "arguments" : "";
+      if (what) refused.push(`${spec}: uses ${what} at ${rel}:${lineOf(sf, n.getStart(sf))}`);
+    });
+    const begin = node.getStart(sf);
+    const lineEnd = text.indexOf("\n", node.end);
+    if (text.slice(lineStart(text, begin), begin).trim() !== "" || text.slice(node.end, lineEnd < 0 ? text.length : lineEnd).trim() !== "") {
+      refused.push(`${spec}: shares a line with other code`);
+      continue;
+    }
+    const start = pieceStart(sf, node);
+    moved.push({ spec, cls: cName, name: mName, node, start, startLine: lineOf(sf, start), endLine: lineOf(sf, node.end), calls: [] });
+  }
+  return { moved, refused };
+}
+
+/** Rewrite a call `this.name(…)` (or `tr.name(…)`) as `fn(recv, …)`. */
+function callChanges(sf: ts.SourceFile, call: ts.CallExpression, fn: string, recv: string, shift = 0): ts.TextChange[] {
+  const pa = call.expression as ts.PropertyAccessExpression;
+  const open = sf.text.indexOf("(", call.typeArguments ? call.typeArguments.end : pa.end);
+  const arg = call.arguments[0];
+  const sep = !arg ? "" : sf.text.slice(open + 1, arg.getStart(sf)).includes("\n") ? "," : ", ";
+  const start = pa.getStart(sf);
+  return [
+    { span: { start: start - shift, length: pa.end - start }, newText: fn },
+    { span: { start: open + 1 - shift, length: 0 }, newText: `${recv}${sep}` },
+  ];
+}
+
+/**
+ * Turn the methods into functions at the end of FROM, so the top-level move can take them: each signature
+ * gains the class parameter, `this` becomes that parameter, and each `this.name(…)` call becomes `name(this, …)`.
+ */
+function methodsToFunctions(sf: ts.SourceFile, specs: string[], service: ts.LanguageService, toSf: ts.SourceFile | undefined, root: string): MethodPlan {
+  const text = sf.text;
+  const from = resolve(sf.fileName);
+  const rel = relative(root, from);
+  const { moved, refused } = findMethods(sf, specs, rel);
+  if (refused.length) return { ok: false, refused };
+  const program = service.getProgram();
+  for (const m of moved) {
+    const at = m.node.name.getStart(sf);
+    for (const sym of service.findReferences(from, at) ?? []) {
+      for (const ref of sym.references) {
+        const here = resolve(ref.fileName) === from;
+        if (here && ref.textSpan.start === at) continue;
+        const id = here ? identifierAt(sf, ref.textSpan.start) : undefined;
+        const pa = id?.parent;
+        const call = pa?.parent;
+        if (!pa || !call || !ts.isPropertyAccessExpression(pa) || pa.name !== id || pa.expression.kind !== ts.SyntaxKind.ThisKeyword || pa.questionDotToken || !ts.isCallExpression(call) || call.expression !== pa || call.questionDotToken) {
+          const refSf = program?.getSourceFile(ref.fileName);
+          const line = refSf ? lineOf(refSf, ref.textSpan.start) : 0;
+          refused.push(`${m.spec}: used at ${relative(root, ref.fileName)}:${line} other than as a this.${m.name}(…) call in ${rel}`);
+          continue;
+        }
+        m.calls.push(call);
+      }
+    }
+  }
+  if (refused.length) return { ok: false, refused };
+  const idents = new Set<string>();
+  for (const m of moved) walk(m.node, (n) => ts.isIdentifier(n) && idents.add(n.text));
+  let param = "tr";
+  for (let i = 2; idents.has(param); i++) param = `tr${i}`;
+  // Names: a clash in TO renames the function; a clash only in FROM aliases FROM's import of it.
+  const fromTop = topNames(sf);
+  const toTop = toSf ? topNames(toSf) : new Set<string>();
+  const usedInMoved = new Set(moved.flatMap((m) => [...referencedIn(m.node)]));
+  const movedNodes = new Set<ts.Node>(moved.map((m) => m.node));
+  const taken = new Set([...referencedIn(sf), ...declaredIn(sf), ...fromTop, ...toTop, ...(toSf ? referencedIn(toSf) : [])]);
+  const fnName = new Map<MovedMethod, string>();
+  const notes: string[] = [];
+  const aliases = new Map<string, string>();
+  for (const m of moved) {
+    const callers = (inMoved: boolean): ts.Node[] => m.calls.map(memberOf).filter((c) => movedNodes.has(c) === inMoved);
+    const localIn = (members: ts.Node[]): boolean => members.some((c) => declaredIn(c).has(m.name));
+    const toClash = toTop.has(m.name) || (fromTop.has(m.name) && usedInMoved.has(m.name)) || localIn(callers(true));
+    const fromClash = fromTop.has(m.name) || localIn(callers(false));
+    if (!toClash && !fromClash) {
+      fnName.set(m, m.name);
+      continue;
+    }
+    const base = `${m.cls[0]!.toLowerCase()}${m.cls.slice(1)}${m.name[0]!.toUpperCase()}${m.name.slice(1)}`;
+    let alias = base;
+    for (let i = 2; taken.has(alias); i++) alias = `${base}${i}`;
+    taken.add(alias);
+    fnName.set(m, alias);
+    if (toClash) notes.push(`renamed ${m.spec} to ${alias}: ${m.name} is taken where it moves`);
+    else {
+      aliases.set(alias, m.name);
+      notes.push(`${rel} imports ${m.name} as ${alias}: ${m.name} is taken there`);
+    }
+  }
+  // Calls in code that stays.
+  const changes = moved.flatMap((m) => m.calls.filter((c) => !movedNodes.has(memberOf(c))).flatMap((c) => callChanges(sf, c, fnName.get(m)!, "this")));
+  const functions = moved.map((m) => {
+    const node = m.node;
+    const local: ts.TextChange[] = [];
+    const open = text.indexOf("(", node.typeParameters ? node.typeParameters.end : node.name.end);
+    const first = node.parameters[0];
+    const sep = !first ? "" : text.slice(open + 1, first.getStart(sf)).includes("\n") ? "," : ", ";
+    const begin = node.getStart(sf);
+    const head = `${hasModifier(node, ts.SyntaxKind.AsyncKeyword) ? "async " : ""}function${node.asteriskToken ? "*" : ""} ${fnName.get(m)}${text.slice(node.name.end, open)}(${param}: ${m.cls}${sep}`;
+    local.push({ span: { start: begin - m.start, length: open + 1 - begin }, newText: head });
+    const covered = new Set<ts.Node>();
+    for (const o of moved) {
+      for (const c of o.calls) {
+        if (memberOf(c) !== node) continue;
+        covered.add((c.expression as ts.PropertyAccessExpression).expression);
+        local.push(...callChanges(sf, c, fnName.get(o)!, param, m.start));
+      }
+    }
+    walk(node, (n) => {
+      if (n.kind === ts.SyntaxKind.ThisKeyword && !covered.has(n) && thisOwner(n) === node) local.push({ span: { start: n.getStart(sf) - m.start, length: n.end - n.getStart(sf) }, newText: param });
+    });
+    // Drop the member's indent, except on lines that start inside a template literal, where it is content.
+    const indent = text.slice(lineStart(text, begin), begin);
+    const inTemplate = new Set<number>();
+    walk(node, (n) => {
+      if (ts.isTemplateExpression(n) || ts.isNoSubstitutionTemplateLiteral(n)) for (let l = lineOf(sf, n.getStart(sf)) + 1; l <= lineOf(sf, n.end); l++) inTemplate.add(l);
+    });
+    const seg = applyChanges(text.slice(m.start, node.end), local);
+    return seg
+      .split("\n")
+      .map((line, i) => (inTemplate.has(m.startLine + i) || !line.startsWith(indent) ? line : line.slice(indent.length)))
+      .join("\n");
+  });
+  const kept = cutPieces(applyChanges(text, changes), moved);
+  return { ok: true, text: `${kept.trimEnd()}\n\n${functions.join("\n\n")}\n`, names: moved.map((m) => fnName.get(m)!), notes, aliases };
+}
+
+/** Give each aliased function its own name in TO, and import it under the alias in FROM. */
+function restoreAliases(next: Map<string, string>, from: string, to: string, aliases: Map<string, string>): void {
+  if (!aliases.size) return;
+  const toText = next.get(to)!;
+  const toSf = parse(to, toText);
+  const toChanges: ts.TextChange[] = [];
+  walk(toSf, (n) => {
+    if (ts.isIdentifier(n) && aliases.has(n.text)) toChanges.push({ span: { start: n.getStart(toSf), length: n.end - n.getStart(toSf) }, newText: aliases.get(n.text)! });
+  });
+  next.set(to, applyChanges(toText, toChanges));
+  const fromText = next.get(from)!;
+  const fromSf = parse(from, fromText);
+  const fromChanges: ts.TextChange[] = [];
+  walk(fromSf, (n) => {
+    if (ts.isImportSpecifier(n) && !n.propertyName && aliases.has(n.name.text)) {
+      fromChanges.push({ span: { start: n.name.getStart(fromSf), length: n.name.end - n.name.getStart(fromSf) }, newText: `${aliases.get(n.name.text)!} as ${n.name.text}` });
+    }
+  });
+  next.set(from, applyChanges(fromText, fromChanges));
+}
+
 /** Work out the move without writing: the new text of every file it changes, or why it refuses. */
 export function planMove(opts: MoveOptions): MoveResult {
   const root = resolve(opts.root ?? process.cwd());
@@ -229,19 +522,35 @@ export function planMove(opts: MoveOptions): MoveResult {
   if (!existsSync(from)) return { ok: false, refused: [`${relFrom}: no such file`] };
   const project = readProject(resolve(root, "tsconfig.json"));
   const options = project.options;
-  const fromText = readFileSync(from, "utf8");
+  const diskText = readFileSync(from, "utf8");
   const toExists = existsSync(to);
   const toText = toExists ? readFileSync(to, "utf8") : "";
+  const sources = projectSourceFiles(root);
+  const roots = new Set([...project.fileNames.map((f) => resolve(f)), ...sources.filter((f) => TS_FILE.test(f) && !f.endsWith(".d.ts")).map((f) => resolve(f))]);
+  const fileNames = [...roots, ...(roots.has(to) ? [] : [to])];
+  const { service, set, read } = overlayService(fileNames, options, root);
+  if (!toExists) set(to, "");
+  // --method: the methods become functions at the end of FROM first; the move below takes them from there.
+  let fromText = diskText;
+  let names = opts.names;
+  let method: Extract<MethodPlan, { ok: true }> | undefined;
+  if (opts.methods?.length) {
+    const plan = methodsToFunctions(parse(from, diskText), opts.methods, service, toExists ? parse(to, toText) : undefined, root);
+    if (!plan.ok) return { ok: false, refused: plan.refused };
+    method = plan;
+    fromText = plan.text;
+    names = [...names, ...plan.names];
+  }
   const fromSf = parse(from, fromText);
-  const { pieces, refused } = findPieces(fromSf, opts.names);
+  const { pieces, refused } = findPieces(fromSf, names);
   const moved = new Set(pieces.flatMap((p) => p.names));
+  // A file the language service does not see may call a moved method through its class.
+  const watched = new Set([...moved, ...(opts.methods ?? []).map((s) => s.split(".")[0]!)]);
   if (toExists) {
     const clash = parse(to, toText).statements.flatMap(declaredNames).filter((n) => moved.has(n));
     for (const n of new Set(clash)) refused.push(`${n}: already declared in ${relTo}`);
   }
   // Importers the language service does not see.
-  const sources = projectSourceFiles(root);
-  const roots = new Set([...project.fileNames.map((f) => resolve(f)), ...sources.filter((f) => TS_FILE.test(f) && !f.endsWith(".d.ts")).map((f) => resolve(f))]);
   for (const file of sources) {
     if (roots.has(resolve(file)) || resolve(file) === from) continue;
     const text = readFileSync(file, "utf8");
@@ -250,7 +559,7 @@ export function planMove(opts: MoveOptions): MoveResult {
       if (!imp.spec.startsWith(".")) continue;
       const hit = ts.resolveModuleName(imp.spec, resolve(file), options, ts.sys).resolvedModule?.resolvedFileName;
       if (!hit || resolve(hit) !== from) continue;
-      const names = imp.names.filter((n) => n === "*" || moved.has(n));
+      const names = imp.names.filter((n) => n === "*" || watched.has(n));
       if (names.length) refused.push(`${relative(root, file)} imports ${names.join(", ")} from ${relFrom}, and the language service does not see it`);
     }
   }
@@ -270,9 +579,6 @@ export function planMove(opts: MoveOptions): MoveResult {
   const cut = cutPieces(fromText, pieces);
   const gathered = `${cut.trimEnd()}\n\n`;
   const block = pieces.map((p) => p.text).join("\n\n");
-  const fileNames = [...roots, ...(roots.has(to) ? [] : [to])];
-  const { service, set, read } = overlayService(fileNames, options, root);
-  if (!toExists) set(to, "");
   set(from, `${gathered}${block}\n`);
   const edits = service.getEditsForRefactor(from, FORMAT, { pos: gathered.length, end: gathered.length + block.length }, "Move to file", "Move to file", PREFERENCES, { targetFile: to });
   if (!edits || edits.edits.length === 0) return { ok: false, refused: ["TypeScript's Move to file refactor does not apply here"] };
@@ -305,7 +611,7 @@ export function planMove(opts: MoveOptions): MoveResult {
   const head = toNext.slice(0, firstMoved.getFullStart()).trimEnd();
   next.set(to, `${head ? `${head}\n\n` : ""}${texts.join("\n\n")}\n`);
   const fromEnding = specifierEnding(fromText, from);
-  for (const [file, text] of next) next.set(file, fixSpecifiers(file, text, file === to && !toExists ? fromEnding : specifierEnding(read(file) ?? text, file)));
+  for (const [file, text] of next) next.set(file, fixSpecifiers(file, text, file === to && !toExists ? fromEnding : specifierEnding(read(file) ?? text, file), file === to && !toExists ? "" : (read(file) ?? "")));
   // Checks: no line on only one side, no new type error in an edited file.
   const oldTo = toExists ? toText.split("\n").filter((_, i) => !headerLines(toText).has(i + 1)).join("\n") : "";
   const moveLines = checkMove(from, toExists ? `${fromText}\n${oldTo}` : fromText, [
@@ -313,7 +619,9 @@ export function planMove(opts: MoveOptions): MoveResult {
     { file: to, text: next.get(to)! },
   ]);
   if (moveLines.length) return { ok: false, refused: ["the move check found lines on only one side"], moveLines };
-  set(from, fromText);
+  if (method) restoreAliases(next, from, to, method.aliases);
+  const changed = method ? checkMove(from, toExists ? `${diskText}\n${oldTo}` : diskText, [...next].filter(([f]) => f === from || f === to).map(([file, text]) => ({ file, text }))) : [];
+  set(from, diskText);
   if (toExists) set(to, toText);
   const before = new Map([...next.keys()].map((f) => [f, f === to && !toExists ? new Map<string, number>() : diagnosticKeys(service, f)]));
   for (const [file, text] of next) set(file, text);
@@ -322,21 +630,38 @@ export function planMove(opts: MoveOptions): MoveResult {
     for (const [key, n] of diagnosticKeys(service, file)) if (n > (was.get(key) ?? 0)) refused.push(`${relative(root, file)}: new type error: ${key}`);
   }
   if (refused.length) return { ok: false, refused };
-  return { ok: true, files: [...next].map(([file, text]) => ({ file, text })) };
+  return { ok: true, files: [...next].map(([file, text]) => ({ file, text })), notes: method?.notes ?? [], changed };
 }
 
 function main(): void {
   const args = process.argv.slice(2);
-  if (args.length !== 3 || args.some((a) => a.startsWith("-"))) {
-    console.error("Usage: npm run -s move-decl -- FROM NAME[,NAME…] TO");
+  const methods: string[] = [];
+  const positional: string[] = [];
+  let dryRun = false;
+  let bad = false;
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i]!;
+    if (a === "--dry-run") dryRun = true;
+    else if (a === "--method" && args[i + 1]) methods.push(...args[++i]!.split(",").filter(Boolean));
+    else if (a.startsWith("-")) bad = true;
+    else positional.push(a);
+  }
+  if (bad || !(positional.length === 3 || (positional.length === 2 && methods.length))) {
+    console.error("Usage: npm run -s move-decl -- [--dry-run] FROM [NAME[,NAME…]] [--method Class.name[,…]] TO");
     process.exit(2);
   }
-  const [from, names, to] = args as [string, string, string];
-  const result = planMove({ from, names: names.split(",").filter(Boolean), to });
+  const [from, names, to] = (positional.length === 3 ? positional : [positional[0], "", positional[1]]) as [string, string, string];
+  const result = planMove({ from, names: names.split(",").filter(Boolean), to, methods });
   if (!result.ok) {
     for (const r of result.refused) console.error(`move-decl: refused: ${r}`);
     for (const d of result.moveLines ?? []) console.error(`${d.side} ${relative(process.cwd(), d.file)}:${d.line}  ${d.text.trim()}`);
     process.exit(1);
+  }
+  for (const n of result.notes) console.log(`move-decl: ${n}`);
+  if (dryRun) {
+    for (const f of result.files) console.log(`would write ${relative(process.cwd(), f.file)}`);
+    for (const d of result.changed) console.log(`${d.side} ${relative(process.cwd(), d.file)}:${d.line}  ${d.text.trim()}`);
+    return;
   }
   for (const f of result.files) {
     mkdirSync(dirname(f.file), { recursive: true });
