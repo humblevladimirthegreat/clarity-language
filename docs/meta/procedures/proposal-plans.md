@@ -72,7 +72,10 @@ Never cut inside a unit or where the tree is not green.
 - **A fork copies the orchestrator's whole conversation.** By mid-run that is larger than a fresh brief.
 - **Parallel subagents save time, not tokens.** Each one pays its own cold start.
 - **Break-even for delegating a read.** T tokens read in a context that runs about 70 more calls cost about 9×T over the rest of the session (cache reads at 0.1× each call, plus the write). The short subagents measured cost 21k–120k weighted tokens, so a search that would read more than about 15k tokens, when only its conclusion is needed, is cheaper in an `Explore` subagent.
-- **Measure it.** `npm run token-report -- --since DATE` prints spend by component, carry cost by content kind, fix-loop counts, a subagent table, and skills invoked, from this project's transcripts. Its header holds the last baseline.
+- **Measure it.** `npm run token-report -- --since DATE` prints spend by component, carry cost by content kind, fix-loop counts, a subagent table, skills invoked, and recurring shapes (scratch scripts and greps found in three or more subagents, a sign of a missing shared tool), from this project's transcripts. Its header holds the last baseline. To read one unit's run:
+  - `--agent <id prefix or description text>` keeps only the matching subagent transcripts, so name each unit's launch by its ID.
+  - `--session <id prefix>` keeps that session and its subagents; with `--agent`, only its matching subagents. Without `--since`, both search all dates.
+  - `--calls` prints one line per tool call: number, kind, result tokens, context at the call, carry cost, label.
 
 ## The plan section
 

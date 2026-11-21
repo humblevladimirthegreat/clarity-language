@@ -6,6 +6,14 @@
 //   --since / --until  window on each transcript's first timestamp (default: the last 7 days)
 //   --skip             leave out a session (for example the one running the report)
 //   --dir              transcript folder (default ~/.claude/projects/<slug of this repo's path>)
+//   --agent <id | text>  only the subagent transcripts whose id starts with it or whose description
+//                      holds it (case-insensitive; the Subagents table lists each description)
+//   --session <id>     only that session (an id prefix) and its subagents; with --agent, its matching subagents
+//   --calls            one line per tool call of the selected transcripts: number, kind, result tokens,
+//                      context at that call, carry cost (weighted, and its share of that transcript), label
+//   --agent / --session without --since search all dates. The Recurring shapes section counts, over every
+//   subagent in the window, the scratch scripts written or run and the greps repeated in 3 or more of them
+//   (under --agent / --session only the shapes the selected transcripts used).
 //
 // Costs are weighted by relative price: input 1×, cache write 2× (1 h) or 1.25× (5 min), cache
 // read 0.1×, output 5×. Token sizes of carried items are estimated at 3.6 characters per token,
@@ -38,17 +46,27 @@ function parseArgs(argv) {
     since: day(new Date(Date.now() - 7 * 86400e3)),
     until: "9999",
     skip: undefined,
+    agent: undefined,
+    session: undefined,
+    calls: false,
     dir: path.join(os.homedir(), ".claude", "projects", root.replace(/[^A-Za-z0-9]/g, "-")),
   };
+  let explicitSince = false;
   for (let i = 0; i < argv.length; i++) {
     const flag = argv[i];
-    const key = { "--since": "since", "--until": "until", "--skip": "skip", "--dir": "dir" }[flag];
+    if (flag === "--calls") {
+      opts.calls = true;
+      continue;
+    }
+    const key = { "--since": "since", "--until": "until", "--skip": "skip", "--dir": "dir", "--agent": "agent", "--session": "session" }[flag];
     if (!key || argv[i + 1] === undefined) {
-      console.error(`Unknown or incomplete argument: ${flag}\nUsage: npm run token-report -- [--since DATE] [--until DATE] [--skip SESSION] [--dir PATH]`);
+      console.error(`Unknown or incomplete argument: ${flag}\nUsage: npm run token-report -- [--since DATE] [--until DATE] [--skip SESSION] [--dir PATH] [--agent ID_OR_TEXT] [--session ID] [--calls]`);
       process.exit(2);
     }
     opts[key] = argv[++i];
+    if (key === "since") explicitSince = true;
   }
+  if ((opts.agent || opts.session) && !explicitSince) opts.since = "";
   return opts;
 }
 
@@ -94,7 +112,7 @@ function transcripts() {
         /* no meta */
       }
       const subLines = fs.readFileSync(path.join(subDir, g), "utf8").split("\n").filter(Boolean);
-      out.push({ session, sub: true, lines: subLines, start: firstTimestamp(subLines), desc: meta.description ?? "", type: meta.agentType ?? "" });
+      out.push({ session, sub: true, id: g.replace(/^agent-|\.jsonl$/g, ""), lines: subLines, start: firstTimestamp(subLines), desc: meta.description ?? "", type: meta.agentType ?? "" });
     }
   }
   return out;
@@ -114,8 +132,15 @@ const resultText = (r) => (typeof r.content === "string" ? r.content : (r.conten
 
 // ---------- classifying ----------
 
-const CHECK = /npm run (build|verify|lint\S*|grammar-check)\b|npm (run )?test\b|scripts\/(build|test)\.mjs|tsx --test/;
+const CHECK = /npm run( -s| --silent)? (build|verify|lint\S*|grammar-check)\b|npm (run )?test\b|scripts\/(build|test)\.mjs|tsx --test/;
 const EDIT_BASH = /sed -i|python3 - <<|--write\b|cat > |tee /;
+// This repo's own kinds: scratch files are `tmp/scratch/` or a session's scratchpad.
+const SCRATCH = String.raw`(?:tmp/scratch|/scratchpad)/`;
+const SCRATCH_EDIT = new RegExp(String.raw`cat >+ \S*${SCRATCH}|tee \S*${SCRATCH}|\bnode \S*${SCRATCH}\S+\.mjs\b`);
+const ONE_OFF = new RegExp(String.raw`\b(npx( --no-install)? )?tsx \S*${SCRATCH}`);
+const PROBE = /scripts\/reading\.mjs (probe|solve)\b/;
+// The carry table keeps the older, coarser kinds so earlier reports stay comparable.
+const coarse = (kind) => ({ "scripted edit": "edit", probe: "bash other", "one-off tool": "bash other" })[kind] ?? kind;
 const FAIL = /build FAILED|^✗ |✖ failing|^Failing tests|ℹ fail [1-9]|^Exit code [1-9]|verify: FAIL/m;
 
 function kindOf(name, input = {}) {
@@ -132,7 +157,10 @@ function kindOf(name, input = {}) {
   if (name !== "Bash") return "other tool";
   const c = (input.command ?? "").replace(/^cd [^;&]+(;|&&)\s*/, "");
   if (CHECK.test(c)) return "check";
+  if (SCRATCH_EDIT.test(c)) return "scripted edit";
   if (EDIT_BASH.test(c)) return "edit";
+  if (ONE_OFF.test(c)) return "one-off tool";
+  if (PROBE.test(c)) return "probe";
   if (/tool-results|\/tasks\/\S+\.output/.test(c)) return "exploration: saved output";
   if (/docs\/proposals\/\S+\.md/.test(c) && /^\s*(cat|sed -n|head|tail|less)\b/.test(c)) return "proposal read";
   if (/^\s*(cat|sed -n|head|tail|awk|grep|rg|find|ls|wc|diff)\b|git (diff|show|log|grep)|scripts\/(find|find-english|parse|pegs)\.mjs|page-lines/.test(c)) {
@@ -140,6 +168,12 @@ function kindOf(name, input = {}) {
   }
   if (/^\s*git /.test(c)) return "git";
   return "bash other";
+}
+
+/** One line of what a tool call did. */
+function callLabel(name, input) {
+  const what = name === "Bash" ? (input.command ?? "") : (input.file_path ?? input.pattern ?? input.skill ?? input.description ?? "");
+  return `${name}: ${what}`.replace(/\s+/g, " ").slice(0, 100);
 }
 
 /** The failing step names a check result shows. */
@@ -159,6 +193,7 @@ function analyse(t) {
   const order = [];
   const tools = new Map();
   const items = []; // { kind, tok, at, label, big }
+  const callList = []; // { n, kind, name, input, msgId, inIt, outIt }
   const events = []; // check / edit / log-peek / src-grep, in order
   const skills = [];
   let listing;
@@ -175,10 +210,16 @@ function analyse(t) {
       for (const c of o.message.content ?? []) {
         if (c.type === "tool_use") {
           const kind = kindOf(c.name, c.input);
-          tools.set(c.id, { name: c.name, input: c.input ?? {}, kind });
+          // A tool_use can repeat on later lines of the same message: one call record per id.
+          const seen = tools.get(c.id)?.rec;
+          const rec = seen ?? { n: callList.length + 1, kind, name: c.name, input: c.input ?? {}, msgId: o.message.id };
+          if (!seen) callList.push(rec);
+          tools.set(c.id, { name: c.name, input: c.input ?? {}, kind, rec });
           const inputTok = repoTok(JSON.stringify(c.input ?? {}));
-          items.push({ kind: kind === "edit" || kind === "subagent" ? kind : "tool input", tok: inputTok, at: order.length });
-          if (kind === "edit") events.push({ type: "edit" });
+          const inIt = { kind: coarse(kind) === "edit" || kind === "subagent" ? coarse(kind) : "tool input", tok: inputTok, at: order.length };
+          items.push(inIt);
+          rec.inIt ??= inIt;
+          if (coarse(kind) === "edit") events.push({ type: "edit" });
           if (c.name === "Skill") skills.push(c.input?.skill ?? "?");
         } else if (c.type === "text") {
           items.push({ kind: "assistant text", tok: proseTok(c.text ?? ""), at: order.length });
@@ -191,7 +232,9 @@ function analyse(t) {
           const text = resultText(c);
           const kind = tool?.kind ?? "other tool";
           const label = tool?.name === "Bash" ? (tool.input.command ?? "").slice(0, 70) : (tool?.input.file_path ?? tool?.input.pattern ?? tool?.name ?? "?");
-          items.push({ kind, tok: repoTok(text), at: order.length + 1, label: `${tool?.name ?? "?"}: ${label}`.replace(/\s+/g, " ") });
+          const outIt = { kind: coarse(kind), tok: repoTok(text), at: order.length + 1, label: `${tool?.name ?? "?"}: ${label}`.replace(/\s+/g, " ") };
+          items.push(outIt);
+          if (tool?.rec) tool.rec.outIt = outIt;
           if (kind === "check") events.push({ type: "check", fail: FAIL.test(text), steps: FAIL.test(text) ? failedSteps(text) : [] });
           else if (kind.startsWith("exploration")) {
             const cmd = tool?.name === "Bash" ? tool.input.command ?? "" : tool?.input.file_path ?? "";
@@ -258,15 +301,33 @@ function analyse(t) {
     if (failing && !editedSinceFail && e.type === "src grep") loop.srcGreps++;
   }
   const ctxs = calls.map(context);
-  return { ...t, lines: undefined, n, cost, comp, items, loop, skills, listing, ctx0: ctxs[0] ?? 0, ctxMax: Math.max(0, ...ctxs) };
+  const toolCalls = callList.map((r) => ({
+    n: r.n,
+    kind: r.kind,
+    name: r.name,
+    input: r.input,
+    tok: r.outIt?.tok ?? 0,
+    ctx: context(usage.get(r.msgId) ?? {}),
+    carry: (r.inIt?.carry ?? 0) + (r.outIt?.carry ?? 0),
+    label: callLabel(r.name, r.input),
+  }));
+  return { ...t, lines: undefined, toolCalls, n, cost, comp, items, loop, skills, listing, ctx0: ctxs[0] ?? 0, ctxMax: Math.max(0, ...ctxs) };
 }
 
 // ---------- report ----------
 
-const all = transcripts().map(analyse).filter((x) => x.n > 0);
+const inWindow = transcripts().map(analyse).filter((x) => x.n > 0);
+const selected = (x) => {
+  if (opts.session && !x.session.startsWith(opts.session)) return false;
+  if (!opts.agent) return !x.sub || !!opts.session;
+  const want = opts.agent.toLowerCase();
+  return x.sub && (x.id.startsWith(opts.agent) || x.desc.toLowerCase().includes(want));
+};
+// --session alone keeps the session and its subagents; --agent keeps only subagents.
+const all = inWindow.filter((x) => (opts.agent || opts.session ? selected(x) : true));
 const total = all.reduce((a, x) => a + x.cost, 0);
 if (!total) {
-  console.log(`No API calls in ${opts.dir} between ${opts.since} and ${opts.until}.`);
+  console.log(opts.agent || opts.session ? `No transcript in ${opts.dir} matches${opts.session ? ` --session ${opts.session}` : ""}${opts.agent ? ` --agent ${opts.agent}` : ""}.` : `No API calls in ${opts.dir} between ${opts.since} and ${opts.until}.`);
   process.exit(0);
 }
 const pct = (x, of = total) => `${((100 * x) / of).toFixed(1)}%`;
@@ -279,7 +340,7 @@ const sum = (xs, f) => xs.reduce((a, x) => a + f(x), 0);
 const mains = all.filter((x) => !x.sub);
 const subs = all.filter((x) => x.sub);
 
-console.log(`Token report ${opts.since} → ${opts.until === "9999" ? "now" : opts.until}`);
+console.log(`Token report ${opts.since || "the start"} → ${opts.until === "9999" ? "now" : opts.until}${opts.session ? `, session ${opts.session}` : ""}${opts.agent ? `, agent ${opts.agent}` : ""}`);
 console.log(
   `${mains.length} sessions, ${subs.length} subagents, ${sum(all, (x) => x.n).toLocaleString("en")} API calls, ${(total / 1e6).toFixed(1)}M weighted tokens`,
 );
@@ -331,6 +392,86 @@ for (const s of [...subs].sort((a, b) => (a.start < b.start ? -1 : 1))) {
 }
 if (subs.length) console.log(`  median peak ~${k(median(subs.map((x) => x.ctxMax)))}, median cost ~${k(median(subs.map((x) => x.cost)))}`);
 
+// ---------- recurring shapes ----------
+
+/** A scratch file name with its unit-specific stem replaced: b4b-sweep.ts → *-sweep.ts, build3.log → build#.log. */
+function scratchShape(p) {
+  const base = p.replace(/^['"]|['"]$/g, "").replace(/^.*\//, "");
+  const m = /^(.*?)(\.[^./]+)?$/.exec(base);
+  const stem = m[1];
+  const ext = m[2] ?? "";
+  const i = stem.lastIndexOf("-");
+  return `scratch/${i > 0 ? `*${stem.slice(i)}` : stem.replace(/\d+/g, "#")}${ext}`;
+}
+const isScratch = (p) => new RegExp(SCRATCH).test(p);
+
+/** A command's simple commands as word lists, split at unquoted | || && ; (quotes removed from words). */
+function commandWords(c) {
+  const segs = [[]];
+  for (const m of c.matchAll(/'([^']*)'|"([^"]*)"|(&&|\|\||[|;])|([^\s'"|;&]+)/g)) {
+    if (m[3]) segs.push([]);
+    else segs[segs.length - 1].push(m[1] ?? m[2] ?? m[4]);
+  }
+  return segs.filter((w) => w.length);
+}
+
+/** The pattern of a grep / rg command given as words: the first positional word, or the -e argument. */
+function grepPattern(words) {
+  for (let i = 1; i < words.length; i++) {
+    if (words[i] === "-e" || words[i] === "--regexp") return words[i + 1];
+    if (!words[i].startsWith("-")) return words[i];
+  }
+  return undefined;
+}
+
+/** The shapes one tool call has: a scratch file written or run, a grep pattern. */
+function shapesOf(name, input) {
+  const out = [];
+  if (name === "Write" || name === "Edit" || name === "NotebookEdit") {
+    const p = input.file_path ?? "";
+    if (isScratch(p)) out.push({ shape: `write ${scratchShape(p)}`, sample: p });
+  } else if (name === "Grep") {
+    if (input.pattern) out.push({ shape: `grep ${input.pattern.slice(0, 60)}`, sample: input.pattern });
+  } else if (name === "Bash") {
+    const c = (input.command ?? "").replace(/^cd [^;&]+(;|&&)\s*/, "");
+    for (const m of c.matchAll(/(?:cat >+|tee)\s+(\S+)/g)) if (isScratch(m[1])) out.push({ shape: `write ${scratchShape(m[1])}`, sample: m[1] });
+    for (const m of c.matchAll(/\b(?:node|tsx)\s+(\S+)/g)) if (isScratch(m[1])) out.push({ shape: `run ${scratchShape(m[1])}`, sample: m[1] });
+    for (const words of commandWords(c)) {
+      if (!/^(grep|rg)$/.test(words[0])) continue;
+      const pat = grepPattern(words);
+      if (pat) out.push({ shape: `grep ${pat.slice(0, 60)}`, sample: pat });
+    }
+  }
+  return out;
+}
+
+/** Shapes found in at least `min` distinct subagents, most first. `only` limits them to shapes those transcripts used. */
+function recurringShapes(subs, only, min = 3) {
+  const byShape = new Map();
+  for (const x of subs) {
+    for (const call of x.toolCalls) {
+      for (const { shape, sample } of shapesOf(call.name, call.input)) {
+        const e = byShape.get(shape) ?? { agents: new Set(), calls: 0, sample };
+        e.agents.add(x.id);
+        e.calls++;
+        byShape.set(shape, e);
+      }
+    }
+  }
+  const mine = new Set();
+  if (only) for (const x of only) for (const call of x.toolCalls) for (const { shape } of shapesOf(call.name, call.input)) mine.add(shape);
+  return [...byShape.entries()]
+    .filter(([shape, e]) => e.agents.size >= min && (!only || mine.has(shape)))
+    .sort((a, b) => b[1].agents.size - a[1].agents.size || b[1].calls - a[1].calls)
+    .slice(0, 15);
+}
+
+const windowSubs = inWindow.filter((x) => x.sub);
+const recurring = recurringShapes(windowSubs, opts.agent || opts.session ? subs : undefined);
+console.log(`\n## Recurring shapes (in 3 or more of the window's ${windowSubs.length} subagents${opts.agent || opts.session ? ", used by the selected ones" : ""}): subagents, calls, shape, sample`);
+for (const [shape, e] of recurring) console.log(`  ${String(e.agents.size).padStart(4)} ${String(e.calls).padStart(5)}  ${shape.padEnd(34)} ${e.sample.slice(0, 50)}`);
+if (!recurring.length) console.log("  none");
+
 console.log("\n## Skills");
 const invoked = {};
 for (const x of all) for (const s of x.skills) invoked[s] = (invoked[s] ?? 0) + 1;
@@ -343,4 +484,14 @@ if (listings.length) {
   const listingCarry = sum(all, (x) => sum(x.items.filter((it) => it.kind === "skill listing"), (it) => it.carry));
   const syncedShare = sum(listings, (x) => x.listing.syncedChars) / (sum(listings, (x) => x.listing.chars) || 1);
   console.log(`  skill listing carry: ${pct(listingCarry)} of spend, about ${pct(listingCarry * syncedShare)} for the synced part (${pct(syncedShare, 1)} of its characters)`);
+}
+
+if (opts.calls) {
+  console.log("\n## Tool calls: number, kind, result tokens, context at the call, carry (weighted, share of that transcript's spend), label");
+  for (const x of all) {
+    console.log(`  ${x.session.slice(0, 8)} ${x.sub ? `sub ${x.id.slice(0, 8)} ${x.desc || x.type}` : "main"} (${x.toolCalls.length} tool calls, ${x.n} API calls)`);
+    for (const c of x.toolCalls) {
+      console.log(`    ${String(c.n).padStart(3)} ${c.kind.padEnd(26)} ${k(c.tok).padStart(5)} ${k(c.ctx).padStart(5)} ${k(c.carry).padStart(5)} ${pct(c.carry, x.cost).padStart(6)}  ${c.label}`);
+    }
+  }
 }
