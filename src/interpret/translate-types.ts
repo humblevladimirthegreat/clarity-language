@@ -124,4 +124,4 @@ export type EveryHinge = { reading: Reading; condSite: Reading; ctx: Ctx; cond: 
 export type Why = { construction: string; key?: string; reason: string };
 /** Where MAY sits against a hinge: over it (a gate), under it (the outcome), or right before *because* (only the link). */
 export type MayOver = "gate" | "outcome" | "link";
-export type Frames = { hinge?: Frame; universal?: Frame; restrictor?: Frame; holder?: Frame; channel?: Frame; say?: Frame; may?: Frame; mayHost?: Frame; likely?: Frame; because?: Frame; zone?: Frame; standalone: Frame[]; other?: Frame };
+export type Frames = { hinge?: Frame; universal?: Frame; restrictor?: Frame; holder?: Frame; channel?: Frame; say?: Frame; may?: Frame; mayHost?: Frame; likely?: Frame; because?: Frame; zone?: Frame; notional?: Frame; standalone: Frame[]; other?: Frame };

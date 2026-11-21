@@ -14,8 +14,11 @@ export const RESERVED = new Set([
   "less", "same", "always", "never", "notall", "none", "more", "c", "o", "i", "act", "lit", "pro", "cl", "quote", "speaker",
   "listener", "blank", "not", "view", "say", "via", "to", "grp", "sp", "rules", "unsaid", "interlocutors", "generic", "against",
   "requires", "may", "maybe", "some", "noneof", "notone", "likely", "bans", "cause", "fault", "share", "plan", "channel",
-  "if", "onlyif", "iff", "we", "every", "because", "want", "decision", "grounds", "place",
+  "if", "onlyif", "iff", "we", "every", "because", "want", "decision", "grounds", "place", "notional",
 ]);
+
+/** R4d decision O-6: the holder of NOTIONAL's view, `view(notional, T)` (notional.md#notional-as-if-framing). */
+export const NOTIONAL = "notional";
 
 /** R4b decision 3: the intention adverbs after `uom` and their zone terms (contrary-to.md#contrary-to-stance). */
 export const ZONE_INTENTIONS: Record<string, string> = { "overlay:plan:th": "plan", "overlay:want:th": "want", "overlay:decision:th": "decision" };

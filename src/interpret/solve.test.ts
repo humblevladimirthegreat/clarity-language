@@ -1429,3 +1429,30 @@ describe("solve: joined verbs (R4d-9, R4d-10)", () => {
     assert.deepEqual((await clashes(lk("lk36", "ul zalazun veruvol vul."), base)).clashes, []);
   });
 });
+
+describe("solve: NOTIONAL (R4d decision O-6)", () => {
+  const lk = (...items: string[]) => buildLog(items.map((x, at) => named(fixture("links").get(x) ?? x, at)), tables);
+  const said = async (l: ReturnType<typeof lk>, question: string) => (await follows(l, q(question), base)).verdict;
+  const left = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).left.map((x) => [x.reason, x.construction]);
+  const notes = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).notes.map((n) => `${n.reading} ${n.frame.key}`);
+
+  it("lk41, NOTIONAL and the sentence it carries to are view(notional, T), never your claim; steps inside it clash", async () => {
+    assert.deepEqual(left(lk("lk41")), []);
+    assert.deepEqual(notes(lk("lk41")), ["t:0.0 overlay:notional:th", "t:0.1 carry:notional"]);
+    assert.equal(await said(lk("lk41"), "yel zazozon vehohel."), "unknown");
+    assert.equal(await said(lk("lk41"), "yel zazozon vowurol."), "unknown");
+    const program = translate(lk("lk41"), { lexicon: tables }).program;
+    assert.match(program, /^holds\(view\(notional,ehohe\(z\(azozo\)\)\)\) :- on\("t:0\.1"\)\.$/m);
+    assert.doesNotMatch(program, /^holds\(ehohe/m);
+    // A carried step denying the supposition clashes inside it (Holders row 4), never with your own claim.
+    const inside = (await clashes(lk("zazozon theyur vowurol. zazozon vowurol vul."), base)).clashes;
+    assert.deepEqual(inside.map((c) => [c.atom, c.english]), [["view(notional,owuro(z(azozo)))", "In the imagined view these cannot all hold: t:0.0, t:0.1."]]);
+    assert.deepEqual((await clashes(lk("zazozon vowurol. zazozon theyum vowurol vul."), base)).clashes, []);
+    // An *if* inside the supposition runs inside it: the outcome is supposed, not yours.
+    const hinge = lk("zazozon theyur vowurol thohem blarl zalazun vehohel. zalazun vehohel.");
+    assert.match(translate(hinge, { lexicon: tables }).program, /^holds\(view\(notional,owuro\(z\(azozo\)\)\)\) :- holds\(view\(notional,if\(/m);
+    assert.equal(await said(hinge, "yel zazozon vowurol."), "unknown");
+    // A holder on NOTIONAL (`theyumazozon`) has no row.
+    assert.deepEqual(left(lk("zalazun theyumazozon vudurul.")), [["noRow", "frameCombination"]]);
+  });
+});

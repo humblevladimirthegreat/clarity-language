@@ -38,7 +38,7 @@
 % t:19.5 = lk36
 % t:19.6 = lk44
 % t:19.7 = lk45
-% t:19.8 = undefined
+% t:19.8 = lk41
 % t:19.9 = undefined
 % t:19.10 = undefined
 % t:19.11 = undefined
@@ -58,6 +58,8 @@
 % t:24.3 = undefined
 % t:24.4 = undefined
 % t:24.5 = undefined
+% t:24.6 = undefined
+% t:24.7 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -396,6 +398,14 @@ holds(ugudo(z(azozo),d(nm("t:24.5",d1)))) :- on("t:24.5").
 fired("t:24.5",ugudo(z(azozo),d(nm("t:24.5",d1)))) :- on("t:24.5").
 holds(ozeda(z(azozo),d(nm("t:24.5",d2)))) :- on("t:24.5").
 fired("t:24.5",ozeda(z(azozo),d(nm("t:24.5",d2)))) :- on("t:24.5").
+% t:24.6
+on("t:24.6").
+holds(view(notional,owuro(z(azozo)))) :- on("t:24.6").
+fired("t:24.6",view(notional,owuro(z(azozo)))) :- on("t:24.6").
+% t:24.7
+on("t:24.7").
+holds(view(notional,ehohe(z(azozo)))) :- on("t:24.7").
+fired("t:24.7",view(notional,ehohe(z(azozo)))) :- on("t:24.7").
 
 % Members, from claimMemberLists().
 member(ls("t:8.0",z),odoze,1).

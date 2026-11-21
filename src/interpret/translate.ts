@@ -427,6 +427,8 @@ export class Translator {
       // R2-1 rows 5 to 8: *because* and its fault and share endings; row 9: contrary to.
       else if (HINGE_KEYS.has(f.key) && /^because(\.|$)/.test(f.values.gloss ?? "") && !out.because) out.because = f;
       else if (f.key === "hookJob:zone" && !out.zone) out.zone = f;
+      // R4d decision O-6: NOTIONAL wraps the claim (notional.md#notional-as-if-framing).
+      else if (f.key === "overlay:notional:th" && !out.notional) out.notional = f;
       else
       if (HINGE_KEYS.has(f.key) && ["if", "only-if", "iff"].includes(f.values.gloss ?? "") && !out.hinge) out.hinge = f;
       else if ((f.key === "joinSeries:ua" || f.key === "joinSeries:u:kind") && !out.universal) out.universal = f;
@@ -537,6 +539,10 @@ export class Translator {
     if (frames.may && frames.holder && (frames.hinge || !over(reading, frames.holder, frames.may))) return this.leave(reading, combination);
     if (frames.mayHost && (frames.hinge || frames.universal || frames.restrictor || frames.likely)) return this.leave(reading, combination);
     if (frames.likely && (frames.hinge || frames.universal || frames.restrictor || frames.holder || frames.say)) return this.leave(reading, combination);
+    // R4d decision O-6: NOTIONAL, stated or carried, is a view with no holder; a holder, MAY, a stance number or a
+    // channel of its own beside it has no row.
+    const carriedNotional = frames.notional ? undefined : reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:notional");
+    if ((frames.notional || carriedNotional) && (frames.holder || frames.may || frames.mayHost || frames.likely || own)) return this.leave(reading, combination);
     let mayOver: MayOver | undefined;
     if (frames.may && frames.because) {
       // R4b-5 (D3): MAY right before *because* hedges only the link; R4b-6 (D11): *because* over MAY makes the outcome possible.
@@ -609,6 +615,8 @@ export class Translator {
     if (denied) this.notes.push({ reading: reading.id, frame: reading.stanceLists![0]!.inner?.[0] ?? denied });
     frames.standalone.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
     if (own) own.frames.forEach((frame) => this.notes.push({ reading: reading.id, frame }));
+    if (frames.notional) this.notes.push({ reading: reading.id, frame: frames.notional });
+    else if (carriedNotional && this.used.has(carriedNotional)) this.notes.push({ reading: reading.id, frame: { ...carriedNotional, construction: carriedNotional.key } });
     talk.used.forEach((l) => this.notes.push({ reading: reading.id, frame: { ...l, construction: l.key } }));
     // R4d decision O-1: a plain claim keeps its term for a later *therefore*.
     const plain = bareFrames(frames, ctx) && !ctx.choice && !grounds && !claimTerms(reading.claim).some((t) => t.kind === "list" || t.kind === "clause" || t.kind === "quote" || t.kind === "blank");

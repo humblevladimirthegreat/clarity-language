@@ -1,4 +1,4 @@
-# Solver fixture: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5) and links that point back (R4d-6 to
+# Solver fixture: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5), NOTIONAL (O-6) and links that point back (R4d-6 to
 # R4d-8, O-2, O-3), and joined verbs (R4d-9, R4d-10; sentence-linkers.md#sentence-linkers,
 # questions.md#polar-particle, polar-inventory.md#polar-endings, tag-pronouns.md#naming-with-a-tag, hooks.md#discourse-hooks).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
@@ -179,3 +179,10 @@ zazozon vowurol veruvol vam.
 @ lk45
 zazozon dabedal vugudol daledel vozedal val.
 = Azozon cooks popcorn and eats an apple.
+
+# NOTIONAL (R4d decision O-6; notional.md#notional-as-if-framing): lk41, the imagined scene and the bare sentence it
+# carries to are each view(notional, T), never your claim, so *does Azozon sit?* is unknown.
+
+@ lk41
+zazozon theyum vowurol. zazozon vehohel.
+= Imagine Azozon walking. Azozon sits.
