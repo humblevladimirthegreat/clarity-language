@@ -11,6 +11,7 @@ import {
   loadFlashcardInputs,
   noteGuid,
   packTsv,
+  releaseId,
   productionGlosses,
   sakeInventoryRoots,
 } from "./flashcards.js";
@@ -38,13 +39,54 @@ describe("buildNotes", () => {
     assert.equal(note.fields.abstract, rows[0]!.definition);
   });
 
-  it("derives GUIDs from source and key, not row order", () => {
+  it("derives GUIDs from source, spelling and concrete gloss, not row order", () => {
     const reversed = buildNotes({ ...inputs, published: [...inputs.published].reverse() });
     const guid = new Map(reversed.roots.map((n) => [n.key, n.guid]));
     for (const n of notes.roots) assert.equal(guid.get(n.key), n.guid);
-    assert.equal(notes.roots[0]!.guid, noteGuid("root", notes.roots[0]!.key));
+    for (const n of notes.roots) assert.equal(n.guid, noteGuid("root", n.key, n.fields.concrete));
+    for (const n of notes.compounds) assert.equal(n.guid, noteGuid("compound", n.key, n.fields.concrete));
+    for (const n of notes.overlays) assert.equal(n.guid, noteGuid("overlay", n.key, n.fields.concrete));
     const all = [...notes.roots, ...notes.compounds, ...notes.overlays].map((n) => n.guid);
     assert.equal(new Set(all).size, all.length);
+  });
+
+  it("keeps the GUID through an alias or mnemonic edit; a respelling or new gloss makes a new one", () => {
+    const [a, b] = inputs.published;
+    const edited = buildNotes({ ...inputs, published: [{ ...a!, mnemonic: `${a!.mnemonic} x`, englishAliases: ["zz"] }, ...inputs.published.slice(1)] });
+    assert.equal(edited.roots[0]!.guid, notes.roots[0]!.guid);
+    // A retie hands row a the old spelling of row b: the note must not inherit b's history.
+    const retied = buildNotes({ ...inputs, published: [{ ...a!, root: b!.root }, ...inputs.published.slice(1)] });
+    assert.notEqual(retied.roots[0]!.guid, notes.roots[1]!.guid);
+    assert.notEqual(retied.roots[0]!.guid, notes.roots[0]!.guid);
+    const reglossed = buildNotes({ ...inputs, published: [{ ...a!, concrete: `${a!.concrete} x` }, ...inputs.published.slice(1)] });
+    assert.notEqual(reglossed.roots[0]!.guid, notes.roots[0]!.guid);
+  });
+
+  it("tags every note with one release id that changes only when content changes", () => {
+    const all = [...notes.roots, ...notes.compounds, ...notes.overlays];
+    const id = releaseId(all);
+    assert.match(id, /^[0-9a-f]{8}$/);
+    for (const n of all) assert.equal(n.tags.filter((t) => t.startsWith("ageben::release::")).join(), `ageben::release::${id}`, n.key);
+    const reversed = buildNotes({ ...inputs, published: [...inputs.published].reverse() });
+    assert.equal(releaseId([...reversed.roots, ...reversed.compounds, ...reversed.overlays]), id);
+    assert.equal(releaseId(all.map((n) => ({ ...n, tags: [] }))), id);
+    const [a] = inputs.published;
+    const edited = buildNotes({ ...inputs, published: [{ ...a!, mnemonic: `${a!.mnemonic} x` }, ...inputs.published.slice(1)] });
+    assert.notEqual(releaseId([...edited.roots, ...edited.compounds, ...edited.overlays]), id);
+  });
+
+  it("tags core words and overlays with the checkpoint that first drills them", () => {
+    for (const n of [...notes.roots, ...notes.compounds]) {
+      const cps = n.tags.filter((t) => t.startsWith("ageben::cp::"));
+      if (!n.core) {
+        assert.deepEqual(cps, [], n.key);
+        continue;
+      }
+      const cp = inputs.checkpoints.find((c) => c.anchor === n.core)!;
+      assert.deepEqual(cps, [`ageben::cp::${cp.page.replace(/\.md$/, "")}::${cp.band}`], n.key);
+    }
+    for (const n of notes.overlays) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
+    assert.ok(!notes.roots.some((n) => n.tags.some((t) => t.startsWith("ageben::core::"))));
   });
 
   it("shows a compound's parts with each root's concrete gloss", () => {

@@ -59,19 +59,30 @@ export type Pack = { id: LexiconPackId; decks: PackDeck[] };
 
 const DECK_ROOT = "Ageben";
 
-/** Anki GUID from the source and stable key, never from row order. */
-export function noteGuid(source: NoteSource, key: string): string {
-  return createHash("sha256").update(`ageben/${source}/${key}`).digest("base64url").slice(0, 12);
+/**
+ * Anki GUID from the source, spelling and concrete gloss, never from row order. A respelling or a
+ * new concrete gloss makes a new note; an edited alias, mnemonic, `core` cell or deck keeps it.
+ */
+export function noteGuid(source: NoteSource, spelling: string, gloss: string): string {
+  return createHash("sha256").update(JSON.stringify(["ageben/v2", source, spelling, gloss])).digest("base64url").slice(0, 12);
+}
+
+/** First 8 hex of a hash of the note list without tags: changes only when note content changes. */
+export function releaseId(notes: readonly FlashcardNote[]): string {
+  const body = [...notes]
+    .sort((a, b) => (a.guid < b.guid ? -1 : a.guid > b.guid ? 1 : 0))
+    .map((n) => [n.source, n.guid, NOTE_FIELDS.map((f) => n.fields[f]), n.core]);
+  return createHash("sha256").update(JSON.stringify(body)).digest("hex").slice(0, 8);
+}
+
+/** Tag every note with the release search tag `ageben::release::<id>`. */
+export function releaseTag(notes: readonly FlashcardNote[]): string {
+  return `ageben::release::${releaseId(notes)}`;
 }
 
 /** Stable Anki deck id from the deck name, in genanki's recommended range [2^30, 2^31). */
 export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`ageben-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
-}
-
-/** `more-turn-words.md#intermediate-practice` → `ageben::core::speech-moves::intermediate`. */
-function coreTag(cell: string, band: Band): string {
-  return `ageben::core::${cell.split("#")[0]!.replace(/\.md$/, "")}::${band}`;
 }
 
 function earliestBand(bands: readonly (Band | undefined)[]): Band | undefined {
@@ -80,11 +91,12 @@ function earliestBand(bands: readonly (Band | undefined)[]): Band | undefined {
 
 export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">): FlashcardNotes {
   const checkpointBand = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
+  const checkpointIndex = new Map(inputs.checkpoints.map((c, i) => [c.anchor, i]));
   const coreTags = (source: NoteSource, key: string, cell: string | undefined): string[] => {
     if (!cell) return [];
     const band = checkpointBand.get(cell);
     if (!band) throw new Error(`${source} ${key}: core cell ${cell} names no stage checkpoint`);
-    return [coreTag(cell, band)];
+    return [checkpointTag(cell.split("#")[0]!, band)];
   };
   const concreteOf = new Map(inputs.published.map((r) => [r.root, r.concrete]));
   const empty: NoteFields = { front: "", concrete: "", abstract: "", aliases: "", parts: "", mnemonic: "", kind: "" };
@@ -92,7 +104,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
   const roots = inputs.published.map((r): FlashcardNote => ({
     source: "root",
     key: r.root,
-    guid: noteGuid("root", r.root),
+    guid: noteGuid("root", r.root, r.concrete),
     fields: { ...empty, front: r.root, concrete: r.concrete, abstract: r.abstract, aliases: (r.englishAliases ?? []).join(", "), mnemonic: r.mnemonic },
     tags: ["ageben::root", ...coreTags("root", r.root, r.core)],
     core: r.core ?? "",
@@ -105,7 +117,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
   const compounds = inputs.compounds.map((r): FlashcardNote => ({
     source: "compound",
     key: r.stem,
-    guid: noteGuid("compound", r.stem),
+    guid: noteGuid("compound", r.stem, r.concrete),
     fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: r.join ? `${part(r.left)} + ${r.join} + ${part(r.right)}` : `${part(r.left)} + ${r.right}`, mnemonic: r.mnemonic },
     tags: ["ageben::compound", ...coreTags("compound", r.stem, r.core)],
     core: r.core ?? "",
@@ -123,21 +135,31 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
       }
     }
     const stage = earliestBand(rows.map((r) => inputs.anchorBand(r.anchor)));
+    // The note unlocks at the first checkpoint, in path order, that any of its rows maps to.
+    const cps = rows.map((r) => {
+      const cp = anchorCheckpoint(r.anchor, inputs);
+      if (!cp) throw new Error(`overlay ${senseForm}: anchor ${r.anchor} maps to no checkpoint`);
+      return cp;
+    });
+    const cp = cps.reduce((a, b) => (checkpointIndex.get(b.anchor)! < checkpointIndex.get(a.anchor)! ? b : a));
     return {
       source: "overlay",
       key: senseForm,
-      guid: noteGuid("overlay", senseForm),
+      guid: noteGuid("overlay", senseForm, first.gloss),
       fields: { ...empty, front: senseForm, concrete: first.gloss, abstract: first.definition, mnemonic: first.mnemonic, kind: first.kind },
       tags: [
         "ageben::overlay",
         `ageben::overlay::${first.kind}`,
         ...[...new Set(rows.map((r) => r.pos))].map((pos) => `ageben::pos::${pos}`),
         ...(stage ? [`ageben::stage::${stage}`] : []),
+        cp.tag,
       ],
       core: "",
     };
   });
 
+  const release = releaseTag([...roots, ...compounds, ...overlays]);
+  for (const note of [...roots, ...compounds, ...overlays]) note.tags.push(release);
   return { roots, compounds, overlays };
 }
 
