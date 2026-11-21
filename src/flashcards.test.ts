@@ -425,6 +425,16 @@ describe("packs", () => {
     assert.ok(scale > 0 && kindOf(sakes[scale - 1]!) === "sake", sakes.map((n) => n.key).join(" "));
   });
 
+  it("no checkpoint adds more than 45 new cards", () => {
+    const LIMIT = 45;
+    const over = inputs.checkpoints
+      .filter((c) => !c.review)
+      .map((c) => ({ anchor: c.anchor, cards: checkpointNotes(notes, c).reduce((sum, n) => sum + noteCards(n), 0) }))
+      .filter((c) => c.cards > LIMIT)
+      .map((c) => `${c.anchor}: ${c.cards}`);
+    assert.deepEqual(over, [], `checkpoints over ${LIMIT} new cards`);
+  });
+
   it("Everything: all roots, compounds, closed words and overlay word notes, one deck per source", () => {
     const decks = buildPack("everything", notes, inputs).decks;
     assert.deepEqual(decks.map((d) => [d.name, d.notes.length]), [
