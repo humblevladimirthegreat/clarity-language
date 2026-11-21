@@ -1382,3 +1382,50 @@ describe("solve: links that point back (R4d-6 to R4d-8, R4d decisions O-2, O-3)"
     assert.deepEqual((await clashes(lk("lk43"), base)).clashes, []);
   });
 });
+
+describe("solve: joined verbs (R4d-9, R4d-10)", () => {
+  const lk = (...items: string[]) => buildLog(items.map((x, at) => named(fixture("links").get(x) ?? x, at)), tables);
+  const said = async (l: ReturnType<typeof lk>, question: string) => (await follows(l, q(question), base)).verdict;
+  const left = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).left;
+
+  it("R4d-9: lk34, lk35, a closed val verb list claims each verb, with the shared object; the list is a part", async () => {
+    assert.equal(await said(lk("lk34"), "yel zazozon dabedal vozedal."), "yes");
+    assert.equal(await said(lk("lk34"), "yel zazozon dabedal vugudol."), "yes");
+    assert.equal(await said(lk("lk35"), "yel zazozon veruvol."), "yes");
+    assert.equal(await said(lk("lk35"), "yel zazozon vowurol."), "yes");
+    assert.deepEqual(left(lk("lk35")), []);
+    assert.match(translate(lk("lk35"), { lexicon: tables }).program, /^holds\(eruvo\(z\(azozo\)\)\) :- on\("t:0\.0"\)\.$/m);
+    // A verb's own object stays its own; a member list in a role takes row 11 per verb.
+    assert.equal(await said(lk("zazozon dalazun vayebel vowurol val."), "yel zazozon dalazun vayebel."), "yes");
+    assert.equal(await said(lk("zazozon dalazun vayebel vowurol val."), "yel zazozon vowurol."), "yes");
+    assert.equal(await said(lk("zazozon zalazun zal vowurol veruvol val."), "yel zalazun veruvol."), "yes");
+  });
+
+  it("R4d-9: lk44, an open vam verb list claims each listed verb, as an open zam list claims each member", async () => {
+    assert.deepEqual(left(lk("lk44")), []);
+    assert.equal(await said(lk("lk44"), "yel zazozon vowurol."), "yes");
+    assert.equal(await said(lk("lk44"), "yel zazozon veruvol."), "yes");
+  });
+
+  it("R4d-9: lk45, first mentions in two verbs' own objects are two individuals, nm(Id, d1) and nm(Id, d2)", async () => {
+    assert.deepEqual(left(lk("lk45")), []);
+    assert.equal(await said(lk("lk45"), "yel zazozon dabedal vugudol."), "yes");
+    assert.equal(await said(lk("lk45"), "yel zazozon daledel vozedal."), "yes");
+    assert.equal(await said(lk("lk45"), "yel zazozon dabedal vozedal."), "unknown");
+    const program = translate(lk("lk45"), { lexicon: tables }).program;
+    assert.match(program, /^holds\(ugudo\(z\(azozo\),d\(nm\("t:0\.0",d1\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+    assert.match(program, /^holds\(ozeda\(z\(azozo\),d\(nm\("t:0\.0",d2\)\)\)\) :- on\("t:0\.0"\)\.$/m);
+  });
+
+  it("R4d-10: lk36, wubam pairs the verb list with the subject list by index", async () => {
+    assert.deepEqual(left(lk("lk36")), []);
+    assert.equal(await said(lk("lk36"), "yel zalazun veruvol."), "yes");
+    assert.equal(await said(lk("lk36"), "yel zazozon vowurol."), "yes");
+    assert.equal(await said(lk("lk36"), "yel zalazun vowurol."), "unknown");
+    assert.equal(await said(lk("lk36"), "yel zazozon veruvol."), "unknown");
+    assert.match(translate(lk("lk36"), { lexicon: tables }).program, /^holds\(eruvo\(z\(X\)\)\) :- member\(ls\("t:0\.0",z\),X,2\), on\("t:0\.0"\)\.$/m);
+    // An exception skips its member in the paired rule, with no clash (O-3).
+    assert.equal(await said(lk("lk36", "ul zalazun veruvol vul."), "yel zalazun veruvol."), "no");
+    assert.deepEqual((await clashes(lk("lk36", "ul zalazun veruvol vul."), base)).clashes, []);
+  });
+});

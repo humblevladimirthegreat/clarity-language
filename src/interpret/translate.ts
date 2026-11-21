@@ -726,8 +726,8 @@ export class Translator {
 
     // The heads: the claim, or each denied item (row 2); a rank or tie list claims its rank terms (R1-8, R4c-1, R4c-2).
     // R4c-5: a verb join's SHARED part goes into each verb's term; R4c-6, R4c-7: a likeness or a collective word on the members.
-    const ranked: { heads: { text: string; claim: Claim; unasked?: true }[]; acts?: ListTerm; one?: true } | undefined = denial ? undefined : (this.ranked(reading, claim, frames, ctx) ?? this.verbJoin(reading, claim, frames, ctx) ?? this.asOne(claim, frames, ctx));
-    const heads: { text: string; claim: Claim; sign: 1 | -1; unasked?: true }[] = second
+    const ranked: { heads: { text: string; claim: Claim; unasked?: true; body?: Literal[] }[]; acts?: ListTerm; one?: true; verbs?: true; paired?: true } | undefined = denial ? undefined : (this.ranked(reading, claim, frames, ctx) ?? this.verbJoin(reading, claim, frames, ctx) ?? this.asOne(claim, frames, ctx));
+    const heads: { text: string; claim: Claim; sign: 1 | -1; unasked?: true; body?: Literal[] }[] = second
       ? denial!.members.flatMap((a) => second.members.map((b) => ({ ...this.substitutedAll(claim, [[denial!, a], [second, b]], { ...ctx, asserted: false }), sign: -1 as const })))
       : denial
       ? denial.members.map((m) => ({ ...this.substituted(claim, denial, m, { ...ctx, asserted: false }), sign: -1 as const }))
@@ -806,7 +806,7 @@ export class Translator {
     const ban = sayOf(ctx.wrap)?.answer === "u";
     for (const h of heads) {
       if (open) this.open(ctx, h.text, body);
-      else this.rule(ctx, this.w(ctx, lit(h)), body);
+      else this.rule(ctx, this.w(ctx, lit(h)), h.body ? [...body, ...h.body] : body);
       if (zone) {
         // R2-1 row 9, R2-11: the act is still your claim, marked against its zone; a say-word zone claims its say word.
         // R4b-9: beside MAY the mark needs the act; R4b-12: on a universal, each member's.
@@ -829,7 +829,10 @@ export class Translator {
     // view too. R4a-11 (D1): under a plain say word the content stays one wrapped term, and `a` and `o` reach each member.
     // R4c-2 (D17), R4c decision 2: a rank or tie with a verb gives each member's act, as row 11 does.
     const lists = ranked?.acts ? new Map<Term, object | undefined>([[ranked.acts, undefined]]) : undefined;
-    if (!denial && !frames.universal && !ranked?.one && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx, lists);
+    // R4d-9: after a verb join, row 11 on each verb's claim; R4d-10's paired verbs wrote their member rules already.
+    if (ranked?.verbs) {
+      if (!ranked.paired) for (const h of ranked.heads) this.members(reading, h.claim, ctx);
+    } else if (!denial && !frames.universal && !ranked?.one && (!sayOf(ctx.wrap) || ctx.wrap?.kind === "say")) this.members(reading, claim, ctx, lists);
     return true;
   }
 
@@ -937,21 +940,78 @@ export class Translator {
   }
 
   /**
-   * R4c-5 (list-structure.md#shared-after-the-join): a verb join with a SHARED `/h/` adverb, or a `/d/` or `/b/` after
-   * it (the `verbShared` link): `holds(T[v])` per verb, each term with the shared part. A plain claim with no other
-   * list; undefined for any other shape, or a verb join with nothing shared.
+   * An `a` verb list, closed or open, on a plain claim: a claim per verb, with the clause's roles and each shared unit; a verb's own
+   * object stays its own (`verbs`, the claim with each verb as its own claim).
+   * - R4d-9 (verb-and-stance-joins.md#vp-clause-forms): `holds(V_k(..)) :- on(Id).` per verb (`zazozon vowurol veruvol
+   *   val.`); a member list in a role takes row 11 per verb.
+   * - R4c-5 (list-structure.md#shared-after-the-join): a SHARED `/h/` adverb, or a `/d/` or `/b/` after the join (the
+   *   `verbShared` link), is in each verb's term.
+   * - R4d-10 (list-structure.md#respectively): `wubam` on the verb list pairs it with a role's list by index, row 11
+   *   paired: `holds(V_k(z(X), ..)) :- member(ls(Id, z), X, k), on(Id).` (`paired`), with no list-term claim.
+   * Undefined for any other shape.
    */
-  verbJoin(reading: Reading, claim: Claim, frames: Frames, ctx: Ctx): { heads: { text: string; claim: Claim }[] } | undefined {
+  verbJoin(reading: Reading, claim: Claim, frames: Frames, ctx: Ctx): { heads: { text: string; claim: Claim; unasked?: true; body?: Literal[] }[]; verbs: true; paired?: true } | undefined {
     const v = claim.verb;
     if (v?.kind !== "list" || !memberList(v) || !bareFrames(frames, ctx)) return undefined;
-    if (claimTerms(claim, false).some((t) => t !== v && t.kind === "list")) return undefined;
     const shared = v.sharedDetails ?? [];
     const links = reading.links.filter((l) => l.kind === "verbShared");
-    if ((!shared.length && !links.length) || !shared.every((d) => d.key === "unit:h" && d.values.role === "distribute")) return undefined;
+    if (!shared.every((d) => d.key === "unit:h" && d.values.role === "distribute")) return undefined;
+    const others = claimTerms(claim, false).filter((t) => t !== v && t.kind === "list");
     const each: Claim = { ...claim, details: [...claim.details, ...shared] };
-    const heads = v.members.map((m) => this.substituted(each, v, m, ctx));
-    this.use(v, ...shared, ...links);
-    return { heads };
+    // Each verb's claim. A verb with its own object is a clause item: its roles join the clause's, its object its own.
+    const own = (m: Term): Claim | undefined => {
+      if (m.kind === "thing") return { ...each, verb: m };
+      if (m.kind !== "clause") return undefined;
+      const inner = m.reading.claim;
+      if (inner.verb?.kind !== "thing" || inner.predicate.length || m.reading.links.length) return undefined;
+      if (m.reading.frames.some((f) => f.key !== "slot:newMember" || !f.hosted || f.hosted.kind === "list")) return undefined;
+      if (claimTerms(inner, false).some((t) => t.kind === "list") || (["z", "d", "b"] as const).some((r) => inner.roles[r] && each.roles[r])) return undefined;
+      return { ...each, verb: inner.verb, roles: { ...each.roles, ...inner.roles }, details: [...each.details, ...inner.details] };
+    };
+    const items = v.members.map(own);
+    if (!items.every((c): c is Claim => c !== undefined)) return undefined;
+    // A first mention as verb k's own object is `nm(Id, Rk)`, its role and the verb's place, so two verbs' never share one.
+    const mention = (): void => {
+      v.members.forEach((m, k) => {
+        if (m.kind !== "clause" || !m.reading.frames.length) return;
+        const r = m.reading;
+        for (const f of r.frames) {
+          const t = f.hosted!;
+          this.newMembers.add(t);
+          const role = (["z", "d", "b"] as const).find((x) => r.claim.roles[x] && throughAntecedent(r.claim.roles[x]!) === t);
+          if (role && ctx.asserted && t.kind === "thing" && !t.named) this.firstMention(t, `${role}${k + 1}`, ctx);
+        }
+        this.use(...r.frames);
+        if (!this.visited.includes(r)) this.visited.push(r);
+      });
+    };
+    const pairing = v.join ? reading.links.find((l) => l.kind === "pairing" && l.words.includes(v.join!)) : undefined;
+    if (!pairing) {
+      // Row 11 per verb: a role list is read by `members()` on each verb's claim.
+      const lists = claimMemberLists(each, reading);
+      if (others.some((t) => !lists.has(t))) return undefined;
+      mention();
+      const heads = items.map((c) => ({ text: this.claim(c, ctx), claim: c }));
+      this.use(v, ...shared, ...links);
+      return { heads, verbs: true };
+    }
+    const l = pairing.partners?.find((t): t is ListTerm => others.includes(t) && memberList(t) && t.members.length === v.members.length && !claim.predicate.includes(t));
+    if (!l || others.length !== 1) return undefined;
+    mention();
+    const place = placeOf(claim, l);
+    const ls = this.term(l, place, ctx);
+    const skip = excepted(this, reading.id, l);
+    const heads = items.map((c, k) => {
+      const enc = this.term(l.members[k]!, `${place}${k + 1}`, ctx);
+      this.facts.add(`member(${ls},${enc},${k + 1}).`);
+      // The pool keeps each verb's claim on its paired member, as row 11's member places.
+      if (!skip.includes(enc)) poolClaim(this, reading, this.claim(c, { ...ctx, subst: new Map(ctx.subst).set(l, { text: enc }) }), replaceTerm(c, l, asMember(l.members[k]!, l)), 1);
+      const text = this.claim(c, { ...ctx, subst: new Map(ctx.subst).set(l, { text: "X" }) });
+      const body: Literal[] = [{ atom: `member(${ls},X,${k + 1})` }, ...skip.map((m) => ({ atom: `X!=${m}` }))];
+      return { text, claim: c, unasked: true as const, body };
+    });
+    this.use(v, l, pairing, ...shared, ...links);
+    return { heads, verbs: true, paired: true };
   }
 
   /**
@@ -1238,6 +1298,9 @@ export function readingParts(reading: Reading, members = true): Part[] {
     if (t.kind === "blank") add("blank", t, "blank", [t.word]);
   }
   if (members) for (const l of claimMemberLists(reading.claim, reading).keys()) if (l.kind === "list") add("list", l, `joinSeries:${l.values.series}`, l.join ? [l.join] : []);
+  // R4d findings: an `a` verb list is a part too, which R4d-9's claim per verb uses (`verbJoin()`).
+  const verb = reading.claim.verb;
+  if (members && verb && memberList(verb)) add("list", verb, `joinSeries:${verb.values.series}`, verb.join ? [verb.join] : []);
   return out;
 }
 

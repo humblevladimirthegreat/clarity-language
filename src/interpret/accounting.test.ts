@@ -64,6 +64,16 @@ describe("accounting guard: the drops it catches", () => {
     assert.deepEqual(left("zazozon vozedal vayebel val dobodel."), []);
   });
 
+  it("R4d-9: a verb list is a part; a closed val list and an open vam list claim each verb", () => {
+    assert.deepEqual(left("zazozon vowurol veruvol val."), []);
+    assert.deepEqual(left("zazozon zalazun zal vowurol veruvol wubam val."), []);
+    assert.deepEqual(left("zazozon vowurol veruvol vam."), []);
+    assert.deepEqual(left("zazozon dabedal vugudol vehohel val."), []);
+    // Two verbs' own first mentions are nm(Id, d1) and nm(Id, d2); a verb whose own object is a list of first mentions has no row yet.
+    assert.deepEqual(left("zazozon dabedal vugudol daledel vozedal val."), []);
+    assert.deepEqual(left("zazozon zalazun zal dogozel dodozel dal vayebel vozedal val."), ["unused joinSeries:a"]);
+  });
+
   it("R4c-8: a carried channel is used on a bare sentence", () => {
     assert.deepEqual(left("zalazun thebam throgel vudurul.", "zalazun vudurul vul."), []);
   });

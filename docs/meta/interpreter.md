@@ -164,7 +164,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `pairing:w` | link | `list-structure.md#respectively` | *Respectively*: pairs two lists' members by position |
 | overlay | `mention:g` | structure | `spans-as-words.md#mention` | fills a `literal` term |
 | overlay | `likeness:cite` | detail:likeness | `same-role-words.md#same-role-like` | same-role words |
-| joinSeries | `a` | structure | `joins.md#and-lists-a` | A list term, set *and* |
+| joinSeries | `a` | structure | `joins.md#and-lists-a` | A list term, set *and*; on a verb list, a claim per verb (`verb-and-stance-joins.md#vp-clause-forms`) |
 | joinSeries | `o` | structure | `joins.md#rank-o` | A list term, rank |
 | joinSeries | `ao` | structure | `rank-joins.md#route-ao` | A list term, in order |
 | joinSeries | `u` | frame:polarity | `joins.md#negation-u` | List reach: a list join denies only its items, so it nests in its list term (rule 2) and does not pair. On `/v/` it denies the verb (`verb-and-stance-joins.md#vp-clause-forms`); on `/th/` the stance words right before it, so it sits in their [stance list](#terms) (`verb-and-stance-joins.md#stance-joins`, `verb-and-stance-joins.md#stance-join-reach`). A standalone `/th/` join (`thul`, `thum`, `thur`) has no stance words right before it and says how to take the whole claim, so it pairs (`verb-and-stance-joins.md#standalone-stance-joins`). A `zul` fence with no items and a shared kind is `u:kind`. Two `u` lists in one clause: every pairing denied, `neg(T[a][b])` (D9) |

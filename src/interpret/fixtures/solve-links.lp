@@ -33,11 +33,11 @@
 % t:19.0 = lk39
 % t:19.1 = lk42
 % t:19.2 = lk43
-% t:19.3 = undefined
-% t:19.4 = undefined
-% t:19.5 = undefined
-% t:19.6 = undefined
-% t:19.7 = undefined
+% t:19.3 = lk34
+% t:19.4 = lk35
+% t:19.5 = lk36
+% t:19.6 = lk44
+% t:19.7 = lk45
 % t:19.8 = undefined
 % t:19.9 = undefined
 % t:19.10 = undefined
@@ -53,6 +53,11 @@
 % t:23.0 = undefined
 % t:23.1 = undefined
 % t:24.0 = undefined
+% t:24.1 = undefined
+% t:24.2 = undefined
+% t:24.3 = undefined
+% t:24.4 = undefined
+% t:24.5 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -355,9 +360,47 @@ fired("t:23.1",ewobo(z(X))) :- member(ls("t:23.1",z),X,G), X!=alazu, on("t:23.1"
 on("t:24.0").
 holds(neg(ewobo(z(alazu)))) :- on("t:24.0").
 fired("t:24.0",neg(ewobo(z(alazu)))) :- on("t:24.0").
+% t:24.1
+on("t:24.1").
+holds(isa(nm("t:24.1",d),abeda)) :- on("t:24.1").
+fired("t:24.1",isa(nm("t:24.1",d),abeda)) :- on("t:24.1").
+holds(ugudo(z(azozo),d(nm("t:24.1",d)))) :- on("t:24.1").
+fired("t:24.1",ugudo(z(azozo),d(nm("t:24.1",d)))) :- on("t:24.1").
+holds(ozeda(z(azozo),d(nm("t:24.1",d)))) :- on("t:24.1").
+fired("t:24.1",ozeda(z(azozo),d(nm("t:24.1",d)))) :- on("t:24.1").
+% t:24.2
+on("t:24.2").
+holds(owuro(z(azozo))) :- on("t:24.2").
+fired("t:24.2",owuro(z(azozo))) :- on("t:24.2").
+holds(eruvo(z(azozo))) :- on("t:24.2").
+fired("t:24.2",eruvo(z(azozo))) :- on("t:24.2").
+% t:24.3
+on("t:24.3").
+holds(owuro(z(X))) :- member(ls("t:24.3",z),X,1), on("t:24.3").
+fired("t:24.3",owuro(z(X))) :- member(ls("t:24.3",z),X,1), on("t:24.3").
+holds(eruvo(z(X))) :- member(ls("t:24.3",z),X,2), on("t:24.3").
+fired("t:24.3",eruvo(z(X))) :- member(ls("t:24.3",z),X,2), on("t:24.3").
+% t:24.4
+on("t:24.4").
+holds(owuro(z(azozo))) :- on("t:24.4").
+fired("t:24.4",owuro(z(azozo))) :- on("t:24.4").
+holds(eruvo(z(azozo))) :- on("t:24.4").
+fired("t:24.4",eruvo(z(azozo))) :- on("t:24.4").
+% t:24.5
+on("t:24.5").
+holds(isa(nm("t:24.5",d1),abeda)) :- on("t:24.5").
+fired("t:24.5",isa(nm("t:24.5",d1),abeda)) :- on("t:24.5").
+holds(isa(nm("t:24.5",d2),alede)) :- on("t:24.5").
+fired("t:24.5",isa(nm("t:24.5",d2),alede)) :- on("t:24.5").
+holds(ugudo(z(azozo),d(nm("t:24.5",d1)))) :- on("t:24.5").
+fired("t:24.5",ugudo(z(azozo),d(nm("t:24.5",d1)))) :- on("t:24.5").
+holds(ozeda(z(azozo),d(nm("t:24.5",d2)))) :- on("t:24.5").
+fired("t:24.5",ozeda(z(azozo),d(nm("t:24.5",d2)))) :- on("t:24.5").
 
 % Members, from claimMemberLists().
 member(ls("t:8.0",z),odoze,1).
 member(ls("t:8.0",z),ogoze,2).
 member(ls("t:23.1",z),azozo,1).
 member(ls("t:23.1",z),alazu,2).
+member(ls("t:24.3",z),azozo,1).
+member(ls("t:24.3",z),alazu,2).

@@ -1,5 +1,5 @@
 # Solver fixture: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5) and links that point back (R4d-6 to
-# R4d-8, O-2, O-3; sentence-linkers.md#sentence-linkers,
+# R4d-8, O-2, O-3), and joined verbs (R4d-9, R4d-10; sentence-linkers.md#sentence-linkers,
 # questions.md#polar-particle, polar-inventory.md#polar-endings, tag-pronouns.md#naming-with-a-tag, hooks.md#discourse-hooks).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # A line may start "Name: " to set the turn's speaker, as the log reader does; an entry with no name is the default speaker.
@@ -154,3 +154,28 @@ zalazun gebezel. zual gebezel vewobol. ul zalazun vewobol vul.
 @ lk43
 zazozon zalazun zal vewobol. ul zalazun vewobol vul.
 = Azozon and Alazun fly. Except, Alazun doesn't fly.
+
+# Joined verbs (R4d-9, R4d-10; verb-and-stance-joins.md#vp-clause-forms, list-structure.md#respectively). R4d-9: lk34,
+# lk35, a closed `val` verb list claims each verb with the clause's roles and the shared object; lk44, an open `vam` list
+# claims each listed verb too; lk45, first mentions in two verbs' own objects are two individuals. R4d-10: lk36, `wubam`
+# pairs the verb list with the subject list by index.
+
+@ lk34
+zazozon vugudol vozedal val dabedal.
+= Azozon cooks and eats popcorn.
+
+@ lk35
+zazozon vowurol veruvol val.
+= Azozon walks and runs.
+
+@ lk36
+zazozon zalazun zal vowurol veruvol wubam val.
+= Azozon and Alazun walk and run, respectively.
+
+@ lk44
+zazozon vowurol veruvol vam.
+= Azozon walks, runs, and so on.
+
+@ lk45
+zazozon dabedal vugudol daledel vozedal val.
+= Azozon cooks popcorn and eats an apple.
