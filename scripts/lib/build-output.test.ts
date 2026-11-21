@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { buildFooter, jobFooter, parseTestFailures, testFailureLines } from "./build-output.ts";
+import { ASSERTION_LIMIT, LINE_WIDTH, buildFooter, jobFooter, parseTestFailures, testFailureLines } from "./build-output.ts";
 import { jobKeys, splitJobs } from "./verify.ts";
 
 const LOG = "tmp/logs/build-last.log";
@@ -123,6 +123,25 @@ describe("test failures", () => {
     assert.equal(lines[1], "  scripts/lib/demo.test.ts:4");
     assert.equal(lines.at(-1), "  rerun: npm test -- scripts/lib/demo.test.ts");
     assert.ok(!lines.some((l) => /\bat (Test|TestContext)\b/.test(l)));
+  });
+
+  it("clips a long line and counts the lines past the cap, so a matched program never prints whole", () => {
+    const program = Array.from({ length: 40 }, (_, i) => `  'holds(isa(x${i},cat)).\\n' +`).join("\n");
+    const out = [
+      "✖ failing tests:",
+      "",
+      "test at scripts/lib/demo.test.ts:1:1",
+      "✖ matches (1ms)",
+      `  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /^x$/m. Input: '${"y".repeat(500)}'`,
+      program,
+      "      at TestContext.<anonymous> (/repo/scripts/lib/demo.test.ts:2:3)",
+    ].join("\n");
+    const [failure] = parseTestFailures(out, ROOT);
+    assert.equal(failure!.message.length, ASSERTION_LIMIT);
+    assert.equal(failure!.more, 41 - ASSERTION_LIMIT);
+    assert.ok(failure!.message.every((l) => l.length <= LINE_WIDTH + 20));
+    assert.match(failure!.message[0]!, /… \(\+\d+ chars\)$/);
+    assert.ok(testFailureLines(out, ROOT).includes(`  … ${41 - ASSERTION_LIMIT} more lines in the full output`));
   });
 });
 

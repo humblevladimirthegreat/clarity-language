@@ -1,20 +1,29 @@
 #!/usr/bin/env node
 /**
- * PreToolUse hook on Bash: refuse a command that prints a long Markdown file
- * (under docs/, or AGENTS.md / TODO.md) whole to the transcript, and say how
- * to read it in slices instead. Wired in .claude/settings.json.
+ * PreToolUse hook on Bash: refuse a command whose whole output would land in
+ * the transcript when a repo command prints a summary and saves the rest to a
+ * file. Wired in .claude/settings.json. Two rules:
  *
- * Blocked: `cat`, `less`, `more`, `bat` or `nl` whose output reaches the
+ * Long Markdown. `cat`, `less`, `more`, `bat` or `nl` whose output reaches the
  * transcript (the last stage of a pipeline, no redirect) when the Markdown
- * files it names total more than LIMIT lines. Allowed: `cat x.md | grep …`,
+ * files it names (under docs/, or AGENTS.md / TODO.md) total more than LIMIT
+ * lines: read it in slices instead. Allowed: `cat x.md | grep …`,
  * `cat > x.md <<EOF`, `sed -n 'A,Bp'`, `grep`, `head`, `tail`, and files
  * outside the guarded paths.
+ *
+ * Raw test runs. `tsx --test` or `node --test` (also through `npx`) whose
+ * output reaches the transcript: a failure prints every assertion's whole
+ * input, such as a solver program under `assert.match`. `npm test -- FILE`
+ * prints a capped footer and saves the full output to tmp/logs/test-last.log.
+ * Allowed: piped into another command (`| grep -E '^# (pass|fail)'`) or
+ * redirected to a file.
  *
  * Exit 2 with a message on stderr blocks the call and shows the message to
  * the model; exit 0 lets it run. Any internal error lets the call run.
  */
 import { existsSync, readFileSync, statSync } from "node:fs";
-import { isAbsolute, relative, resolve } from "node:path";
+import { basename, isAbsolute, relative, resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 
 const LIMIT = 150;
 const PRINTERS = new Set(["cat", "less", "more", "bat", "nl"]);
@@ -59,10 +68,22 @@ function lineCount(file) {
   }
 }
 
-function check(command, cwd, root) {
+/** A direct node:test run: `tsx --test …`, `node --test …`, or either through `npx`, after any `VAR=value` words. */
+export function rawTestRun(words) {
+  const rest = words.filter((w) => !/^[A-Za-z_][A-Za-z0-9_]*=/.test(w));
+  let i = 0;
+  if (basename(rest[i] ?? "") === "npx") {
+    i++;
+    while (rest[i]?.startsWith("-")) i++;
+  }
+  return ["tsx", "node"].includes(basename(rest[i] ?? "")) && rest.slice(i + 1).includes("--test");
+}
+
+export function check(command, cwd, root) {
   const text = stripHeredocs(command);
   let dir = cwd;
   const offenders = [];
+  let rawTest = false;
   // Split into commands on ; && || and newlines, then each into pipeline stages.
   for (const statement of text.split(/;|&&|\|\||\n/)) {
     const stages = statement.split("|");
@@ -73,9 +94,10 @@ function check(command, cwd, root) {
         dir = resolve(dir, words[1]);
         return;
       }
-      if (!PRINTERS.has(words[0])) return;
       if (index !== stages.length - 1) return; // output feeds another command
-      if (/(^|\s)\d?>/.test(stage) || stage.includes("<<")) return; // writes a file
+      if (/(^|\s)\d?>(?!&)/.test(stage) || stage.includes("<<")) return; // writes a file
+      if (rawTestRun(words)) rawTest = true;
+      if (!PRINTERS.has(words[0])) return;
       const files = words
         .slice(1)
         .filter((w) => !w.startsWith("-"))
@@ -87,7 +109,7 @@ function check(command, cwd, root) {
   }
   // The limit applies to the whole call: two mid-size files in one command count together.
   const total = offenders.reduce((sum, [, n]) => sum + n, 0);
-  return total > LIMIT ? offenders : [];
+  return { markdown: total > LIMIT ? offenders : [], rawTest };
 }
 
 function main() {
@@ -100,7 +122,16 @@ function main() {
   const command = input?.tool_input?.command;
   if (typeof command !== "string") process.exit(0);
   const root = process.env.CLAUDE_PROJECT_DIR || input.cwd || process.cwd();
-  const offenders = check(command, input.cwd || root, root);
+  const { markdown: offenders, rawTest } = check(command, input.cwd || root, root);
+  if (rawTest) {
+    process.stderr.write(
+      "Blocked: a direct tsx --test / node --test run prints each failure's whole input (a failed assert.match prints the full program). " +
+        "Run npm test -- FILE (add --test-name-pattern=NAME for one test; env vars such as UPDATE_GOLDEN=1 pass through): " +
+        "it prints a capped footer and saves the full output to tmp/logs/test-last.log. " +
+        "To keep the raw run, pipe it into a filter (| grep -E '^# (pass|fail)') or redirect it to a file under tmp/scratch/.\n",
+    );
+    process.exit(2);
+  }
   if (offenders.length === 0) process.exit(0);
   const list = offenders.map(([f, n]) => `${f} (${n} lines)`).join(", ");
   const first = offenders[0][0];
@@ -113,8 +144,10 @@ function main() {
   process.exit(2);
 }
 
-try {
-  main();
-} catch {
-  process.exit(0);
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  try {
+    main();
+  } catch {
+    process.exit(0);
+  }
 }

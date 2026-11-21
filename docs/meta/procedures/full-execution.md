@@ -9,6 +9,7 @@ How one session carries out a whole proposal, every phase, without the user star
 | **Runner** | the session the user talks to | runs the [usage gate](#usage-gate), starts one phase executor per phase, reads its [phase report](#phase-report), decides whether to go on |
 | **Phase executor** | a `phase-executor` subagent (`.claude/agents/phase-executor.md`) | the orchestrator of [proposals.md](proposals.md) for one phase, with the [changes below](#phase-executor) |
 | **Worker** | `proposal-worker`, `checkpoint-writer`, `style-editor`, `Explore`, started by the executor | one unit, unchanged |
+| **Run reviewer** | a `run-reviewer` subagent (`.claude/agents/run-reviewer.md`) the runner starts once the run ends | the [optimization review](#optimization-review) |
 
 Workers sit two layers below the runner, inside Claude Code's default nesting limit of three. A subagent definition cannot limit which agent types it starts (a type list in its `tools` is ignored), so the agent file names the allowed types.
 
@@ -28,7 +29,7 @@ The 5-hour and 7-day usage windows are account-wide: every session, subagent, an
 **Limits.** Start the phase only when both hold:
 
 - 5-hour window: current use plus the forecast stays at or under **80%**
-- 7-day window: current use plus the forecast stays at or under **90%**
+- 7-day window: current use plus the forecast stays at or under **95%**
 
 When a limit would be crossed:
 
@@ -84,13 +85,27 @@ The runner:
    - `DONE`: the usage gate, then the next phase.
    - `SPLIT`: the usage gate, then a fresh executor for the rest.
    - `STOPPED`: tells the user what the report says and waits.
-4. When the proposal has been deleted or turned back into an idea ([consolidate](proposals.md#consolidate)), ends the run. It tells the user:
+4. When the proposal has been deleted or turned back into an idea ([consolidate](proposals.md#consolidate)), ends the run. It starts the [optimization review](#optimization-review) and waits for it, then tells the user:
    - the phases run
    - the *Decided by agent* list, flagged entries first
    - the blocking decisions still open
    - what the run cost in both windows (`--deltas`)
+   - the optimization idea's path and its findings in one line each, or that nothing qualified
    - the command for the per-phase token breakdown, `npm run token-report -- --session <runner session id>`, which nests each executor's workers under it with a subtotal
+
+## Optimization review
+<a id="optimization-review"></a>
+
+When the run ends, the runner starts one `subagent_type: "run-reviewer"` (`.claude/agents/run-reviewer.md`). The run reviewer writes what used significantly more tokens than needed as an idea under `docs/proposals/ideas/optimization/` and commits it. The prompt holds:
+
+- the proposal's filename
+- the runner's session id, and the earlier ones when the run was resumed in a new session
+- each phase report's *Inefficient* line, labeled by phase
+
+It returns the file's path and one line per finding, or *no findings*.
 
 ## Keeping in step
 
 `.claude/agents/phase-executor.md` restates the [phase executor](#phase-executor) changes, [agent decisions](#agent-decisions), and the [phase report](#phase-report). When you change one of those here, make the same change there. It also counts as one of the agent files that [proposals.md](proposals.md#running-with-subagents) keeps in step.
+
+`.claude/agents/run-reviewer.md` owns the [optimization review](#optimization-review)'s steps, what counts as a finding, and the file's sections. When you change what the runner sends it or reads back, change the agent file to match.

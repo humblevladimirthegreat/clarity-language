@@ -1,6 +1,6 @@
 # Proposal: vocab flashcards v2
 
-**Status:** READY 2026-11-20. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 3 extends that doc). Decisions, 2026-11-20:
+**Status:** READY 2026-11-20. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
 - One pack per band, plus Everything.
 - One subdeck per unit; words and grammar share each subdeck; unlocking is per checkpoint, by tag.
 - Endings are taught once per kind; closed sets are drilled as overlapping cloze; no emoji on any card.
@@ -12,7 +12,7 @@
 
 **Related:** [`src/flashcards.ts`](../../../src/flashcards.ts), [`scripts/flashcards.ts`](../../../scripts/flashcards.ts), [`scripts/flashcards-package.py`](../../../scripts/flashcards-package.py), [`scripts/flashcards-check.py`](../../../scripts/flashcards-check.py), [`data/lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column), units in [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), the [settled-to-passing scale](../../grammar/beginner/sakes.md#settled-to-passing), closed words in [`scripts/cheat-sheet-blocks.ts`](../../../scripts/cheat-sheet-blocks.ts), the sidebar in [`config.ts`](../../grammar/.vitepress/config.ts), [`amplify.yml`](../../../amplify.yml).  
 **Depends on:** none. The Claritish pack shipped 2026-11-20: publish step, Amplify venv, release tags and [`docs/meta/flashcards.md`](../../meta/flashcards.md).  
-**Design authority:** none. No form or reading changes. Phase 1 moves six `core` cells earlier and tops up those checkpoints with existing forms.
+**Design authority:** none. No form or reading changes. Phase 2 moves six `core` cells earlier and tops up those checkpoints with existing forms.
 
 ## Problem
 
@@ -137,7 +137,9 @@ The page gets its checkpoint list and release id from a VitePress data loader, `
 
 ## Plan
 
-Three phases, each in a fresh orchestrator session. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
+Six phases, each in a fresh orchestrator session, each planned at well under 40 orchestrator turns and cut where the next units read different rules or pages, or wait on a finding. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
+
+The build runs `npm run flashcards`, which packages every pack with `scripts/flashcards-package.py` and checks it. So the packager learns the new note types (U16) before the generator emits them (U17 on), and every unit leaves `npm run flashcards` working.
 
 ### Rule digest (copied into every brief)
 
@@ -148,6 +150,7 @@ Three phases, each in a fresh orchestrator session. At the end of each phase, an
 > - Stage pages under `docs/grammar/{beginner,intermediate,advanced}/` never mention decks or link to the Flashcards page.
 > - Output must be deterministic: no timestamps or random ids in notes, GUIDs, deck ids or the release id. Model ids are fixed constants.
 > - GUID = hash of source + spelling + concrete gloss (overlays `sense_form` + `gloss`, slot notes `+@page`). Release tag `ageben::release::<8 hex of the tagless note list>`. Checkpoint tag `ageben::cp::<page>::<band>`.
+> - Leave `npm run flashcards` working at the end of the unit: the build runs it, packaging and checking every pack.
 > - A data JSON edit goes through load-and-save, then `npm run format-json`.
 > - List headings first (`npm run -s outline -- <file>`), then read only the ranges you need. Trim output (`2>&1 | tail -30`).
 > - Check with `npm run verify -- --allow-generate` (`--fast` inside an item). On a new error, read only its line in `tmp/logs/verify-last.log`.
@@ -156,82 +159,154 @@ Three phases, each in a fresh orchestrator session. At the end of each phase, an
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 > - **Report** (about 150 words): done (one line); counts (notes, cards, rows) where the unit makes them; files touched (count); registry or `AGENTS.md` lines to change; the `verify` line; skips with reasons; lexicon choices; **left:**; **inefficient:**.
 
-### Phase 1: data and checkpoints
+### Phase 1: closed words
 
-**U1 Closed-words data.** `proposal-worker`, `model: opus`, effort `medium`.
-- Create `data/closed-words.csv` (`form,english,kind,anchor`). Seed it from `CLOSED_WORDS` in `scripts/cheat-sheet-blocks.ts`. Add polar particles and stance words, and turn words, from the tables on their owning pages (`questions.md`, `polar-inventory.md`, `firm-soft.md`, `speech-moves.md`, `more-turn-words.md`), one row per word with a fixed English reading.
-- Point the `closed-words` source at the CSV, filtered to the kinds it shows today. Add a parser in `src/` with a test: every form parses, and every form is spelled in its anchor section.
-- If `retie-docs` covers the other `data/` CSVs, add this one.
-- Run `npm run cheat-sheet-blocks -- --write`. If it changes output, the orchestrator fences it in its own commit.
-- Document the file where the cheat-sheet data is described in [`grammar-docs.md`](../../meta/grammar-docs.md#cheat-sheets).
-- **May edit:** `data/closed-words.csv`, `scripts/cheat-sheet-blocks.ts`, a new `src/closed-words.ts` and its test, the retie file list, `docs/grammar/cheat-sheets/*.md` (generated blocks only), `docs/meta/grammar-docs.md` (cheat-sheets section).
+**U1 Closed-words file and parser.** `proposal-worker`, `model: opus`, effort `medium`.
+- Create `data/closed-words.csv` (`form,english,kind,anchor`), seeded from `CLOSED_WORDS` in `scripts/cheat-sheet-blocks.ts`: the pronouns and sentence linkers it holds today.
+- Add a parser `src/closed-words.ts` with a test: every form parses, and every form is spelled in its anchor section.
+- **May edit:** `data/closed-words.csv`, a new `src/closed-words.ts` and its test.
 
-**U2 Late hosts, beginner part 1.** `checkpoint-writer`, `model: opus`, effort `high`.
-- Before launch, the orchestrator runs `node scripts/checkpoint-pack.mjs --unit V2a --band Beginner dependents.md plurality.md clause-sequence.md`.
-- The prompt names the sittings and the pack, and says to introduce `eze` at `dependents.md`, `uge` at `plurality.md`, and `eho` at `clause-sequence.md`. For each, move its `core` cell and turn its old page's bank row from **New words** to **Review**.
-- **May edit:** what `checkpoint-writer` allows for those three sittings.
+**U2 Cheat sheets read the file.** `proposal-worker`, `model: sonnet`, effort `medium`.
+- Point the `closed-words` source in `scripts/cheat-sheet-blocks.ts` at U1's parser, filtered to the kinds it shows today, and drop `CLOSED_WORDS`.
+- Run `npm run cheat-sheet-blocks -- --write`. The output should not change; if it does, report the diff stat, and the orchestrator fences it in its own commit.
+- Say where the closed-words data lives in the [cheat sheets](../../meta/grammar-docs.md#cheat-sheets) section of `grammar-docs.md`.
+- **May edit:** `scripts/cheat-sheet-blocks.ts`, `docs/grammar/cheat-sheets/*.md` (generated blocks only), `docs/meta/grammar-docs.md` (cheat-sheets section).
 
-**U3 Late hosts, beginner part 2.** `checkpoint-writer`, `model: opus`, effort `high`.
-- As U2, with `--unit V2b`, for `already-still-yet.md` (`awu`) and `intention.md` (`ago`).
-- **May edit:** as U2, for those two sittings.
+**U3 Polar particles and stance words.** `proposal-worker`, `model: opus`, effort `medium`.
+- Add a row per polar particle and stance word, from the tables in `questions.md`, `polar-inventory.md` and `firm-soft.md`, each with a fixed English reading and its anchor section. U1's test must pass.
+- **May edit:** `data/closed-words.csv`.
 
-**U4 Late hosts, intermediate.** `checkpoint-writer`, `model: opus`, effort `high`.
-- As U2, with `--unit V2c --band Intermediate`, for `list-structure.md` (`uba`).
-- **May edit:** as U2, for that sitting.
+**U4 Turn words.** `proposal-worker`, `model: opus`, effort `medium`.
+- As U3, for the turn words in `speech-moves.md` and `more-turn-words.md`.
+- **May edit:** `data/closed-words.csv`.
 
-Gate: `npm run verify -- --allow-generate` against the phase baseline, and `npm run core-vocabulary` shows no checkpoint over its cap. The orchestrator adds the `closed-words.csv` row to the Data table in `AGENTS.md`.
+**U5 Retie coverage.** `proposal-worker`, `model: sonnet`, effort `low`.
+- If `retie-docs` rewrites the other `data/` CSVs, add `closed-words.csv` to its list. If it does not, report so and change nothing.
+- **May edit:** the retie file list.
 
-### Phase 2: generator
+Gate: `npm run verify -- --allow-generate` against the phase baseline. The orchestrator adds the `closed-words.csv` row to the Data table in `AGENTS.md` and commits it with the consolidated proposal.
 
-**U5 Checkpoints, keys and overlay notes.** `proposal-worker`, `model: opus`, effort `high`.
-- In `src/flashcards.ts`, add the anchor-to-checkpoint mapping (explicit ids and auto slugs).
-- Add the new GUID and release tag, the checkpoint tags, and overlay word and slot notes with per-slot readings and the host line.
-- Retire the v1 sake-only collapse and the v1 key.
-- Tests: every overlay row maps; GUIDs follow the new key; a reused spelling with a new gloss makes a new GUID; slot notes appear only at later checkpoints.
+### Phase 2: late hosts
+
+Six units, one sitting each. Before each launch, the orchestrator runs `node scripts/checkpoint-pack.mjs --unit <pack id> --band <band> <page>`. The prompt names the sitting, the pack and the host. The writer introduces the host at that sitting, moves its `core` cell there, and turns its old page's bank row from **New words** to **Review**. **May edit:** what `checkpoint-writer` allows for that sitting.
+
+**U6 `eze` at `dependents.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2a`, band Beginner.
+
+**U7 `uge` at `plurality.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2b`, band Beginner.
+
+**U8 `eho` at `clause-sequence.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2c`, band Beginner.
+
+**U9 `awu` at `already-still-yet.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2d`, band Beginner.
+
+**U10 `ago` at `intention.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2e`, band Beginner.
+
+**U11 `uba` at `list-structure.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2f`, band Intermediate.
+
+Gate: `npm run verify -- --allow-generate` against the phase baseline, and `npm run core-vocabulary` shows no checkpoint over its cap.
+
+### Phase 3: keys, examples, note types
+
+**U12 Anchor to checkpoint.** `proposal-worker`, `model: opus`, effort `high`.
+- In `src/flashcards.ts`, map each overlay row's `anchor` to its checkpoint per the design (explicit ids and auto slugs, `anchorBand`), as a function the later units call.
+- Test: every overlay row maps.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
 
-**U6 Examples and morph glosses.** `proposal-worker`, `model: opus`, effort `high`.
-- Choose each overlay note's example per the design, and attach the parser's morph gloss.
-- Find the existing gloss code that checks morph glosses in the build; reuse it, do not write a new glosser.
+**U13 Keys and tags.** `proposal-worker`, `model: opus`, effort `medium`.
+- Add the new GUID, the release tag and the checkpoint tags (from U12) to the notes v1 builds today. Retire the v1 key.
+- Tests: GUIDs follow the new key; a reused spelling with a new gloss makes a new GUID; the release id changes only when content changes.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
+
+**U14 Overlay examples.** `proposal-worker`, `model: opus`, effort `high`.
+- Choose each overlay row's example per the design: the shortest code span in the anchor section whose parse uses the overlay in the row's slot, else the shortest from the rest of the anchor's page before its checkpoint.
 - A test fails on a row with no example. If more than a few rows have none, stop and report the list.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`, a new helper beside them.
 
-**U7 Ending, set, scale and closed-word notes; packs.** `proposal-worker`, `model: opus`, effort `high`.
-- Add the scale note, ending notes, set notes (cloze text), and closed-word notes from U1's parser.
+**U15 Morph glosses.** `proposal-worker`, `model: opus`, effort `medium`.
+- Attach the parser's morph gloss to each U14 example. Find the gloss code the build uses to check morph glosses and reuse it; do not write a new glosser.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`, U14's helper.
+
+**U16 Note types in the packager.** `proposal-worker`, `model: opus`, effort `medium`.
+- Let the pack JSON name the note type per note, keeping the pack-level `model` as the default so the Claritish pack and the v1 notes package unchanged.
+- In `scripts/flashcards-package.py`, add the **Ageben overlay** and **Ageben set** note types per the design (fixed model ids; mnemonic on the back only; a highlight style for the example). Nothing emits them yet.
+- **May edit:** `scripts/flashcards-package.py`, `scripts/flashcards.ts`, `src/flashcards.ts` (pack JSON shape only).
+
+Gate: `npm run verify -- --allow-generate` against the phase baseline.
+
+### Phase 4: notes and packs
+
+**U17 Overlay word notes.** `proposal-worker`, `model: opus`, effort `high`.
+- Build an **Ageben overlay** word note per sense form at its first checkpoint, from U12–U15: rows at one checkpoint fold in, readings listed per slot where they differ, the host line from `senseFormRoot`.
+- Retire the v1 sake-only collapse.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
+
+**U18 Slot notes.** `proposal-worker`, `model: opus`, effort `high`.
+- Add a slot note per later checkpoint that puts a known form in a new slot; for a form in an ending set, only the `-m` form.
+- Test: slot notes appear only at later checkpoints.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
+
+**U19 Scale and ending notes.** `proposal-worker`, `model: opus`, effort `high`.
+- Add the scale note at `sakes.md#beginner-practice`, and an ending note per kind whose endings read the scale, at its first `-l` / `-r` checkpoint, both as **Ageben set** notes. Those kinds keep word notes for `-m` forms only; lexical endings keep a word note per form.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
+
+**U20 Set notes.** `proposal-worker`, `model: opus`, effort `medium`.
+- Add a cloze set note per set as the design defines it, sorted after its members.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
+
+**U21 Closed-word notes.** `proposal-worker`, `model: opus`, effort `medium`.
+- Build an **Ageben lexicon** note per row of U1's parser, tagged and placed like an overlay through U12's mapping.
+- Test: every closed-word row maps to a checkpoint.
+- **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
+
+**U22 Band packs.** `proposal-worker`, `model: opus`, effort `high`.
 - Build the band packs with unit subdecks in the design's order, plus Everything. Drop the Core and Sakes packs.
-- Make `PACK_IDS` `beginner,intermediate,advanced,everything`.
-- Add the load test (45 cards). If it fails with closed words in, stop and report the checkpoints over the limit.
-- Update the TSV and CLI flags in `scripts/flashcards.ts`.
+- Make `PACK_IDS` `beginner,intermediate,advanced,everything,claritish`.
+- Update the TSV and CLI flags in `scripts/flashcards.ts` in the same unit, so the build keeps running.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`, `scripts/flashcards.ts`.
 
-**U8 Packaging and import check.** `proposal-worker`, `model: opus`, effort `medium`.
-- In `scripts/flashcards-package.py`, add the **Ageben overlay** and **Ageben set** note types (fixed model ids; mnemonic on the back only), ship every card suspended, and add a highlight style for the example.
-- Make new-card order follow deck order.
+**U23 Load test.** `proposal-worker`, `model: sonnet`, effort `medium`.
+- Add the test: no checkpoint adds more than 45 new cards. If it fails with closed words in, stop and report the checkpoints over the limit.
+- **May edit:** `src/flashcards.test.ts`.
+
+Gate: `npm run verify -- --allow-generate`, and `npm run flashcards` prints its note and card counts per pack. The orchestrator puts those counts on the Status line.
+
+### Phase 5: packaging and publishing
+
+**U24 Suspended cards and new-card order.** `proposal-worker`, `model: opus`, effort `medium`.
+- In `scripts/flashcards-package.py`, ship every card suspended, and make new-card order follow deck order.
+- **May edit:** `scripts/flashcards-package.py`, `requirements.txt` (pins only).
+
+**U25 Import check.** `proposal-worker`, `model: opus`, effort `medium`.
 - Extend `scripts/flashcards-check.py`:
   - first import arrives suspended;
   - a card unsuspended before re-import stays unsuspended;
   - new-card order matches the note list;
   - after importing a second build with one note dropped, the release search finds exactly that note;
   - every card of every type renders.
-- **May edit:** `scripts/flashcards-package.py`, `scripts/flashcards-check.py`, `requirements.txt` (pins only).
+- **May edit:** `scripts/flashcards-check.py`.
 
-Gate: `npm run verify -- --allow-generate`, and `npm run flashcards` prints its note and card counts per pack. The orchestrator puts those counts on the Status line.
+**U26 Publish step.** `proposal-worker`, `model: sonnet`, effort `medium`.
+- Extend the Claritish publish step in `scripts/publish-docs-extras.mjs` to build the four Ageben packs into `dist/grammar/flashcards/`. Run `npm run docs:publish` and check the four `.apkg` files land.
+- **May edit:** `scripts/publish-docs-extras.mjs`, `scripts/flashcards.ts`.
 
-### Phase 3: publishing, page, docs
-
-**U9 Publish pipeline and data loader.** `proposal-worker`, `model: opus`, effort `medium`.
-- Extend the Claritish publish step in `publish-docs-extras.mjs` to build the four Ageben packs into `dist/grammar/flashcards/`.
+**U27 Data loader.** `proposal-worker`, `model: opus`, effort `medium`.
 - Add `docs/grammar/.vitepress/lib/flashcards.data.ts`, modeled on the other data loaders. It returns the packs (name, file, note and card counts), the checkpoints grouped by band and unit (title, tag search), and the release id.
-- **May edit:** `scripts/publish-docs-extras.mjs`, `scripts/flashcards.ts`, the new data loader.
+- The report lists the loader's exports and their shapes, for U28's brief.
+- **May edit:** the new data loader.
 
-**U10 Flashcards page and sidebar.** `proposal-worker`, `model: opus`, effort `high`.
-- Write `docs/grammar/flashcards.md` per the design's download page, reading U9's loader. Follow [doc-style.md](../../meta/doc-style.md) and its checklist.
-- Add `{ text: 'Flashcards', link: '/flashcards' }` to **Tools** in `config.ts`, after Inspect.
+Gate: `npm run verify -- --allow-generate` against the phase baseline.
+
+### Phase 6: page and docs
+
+**U28 Flashcards page.** `proposal-worker`, `model: opus`, effort `high`.
+- Write `docs/grammar/flashcards.md` per the design's download page, reading U27's loader (its exports go in the brief). Follow [doc-style.md](../../meta/doc-style.md) and its checklist.
 - Run `npm run build`; links to the `.apkg` files must pass the dead-link check.
-- The orchestrator removes the `flashcards download on tools` line from `TODO.md` when that file has no other uncommitted change; otherwise it tells the user.
-- **May edit:** `docs/grammar/flashcards.md`, `docs/grammar/.vitepress/config.ts` (Tools items only), a Vue component under `.vitepress/components/` if the tables need one.
+- **May edit:** `docs/grammar/flashcards.md`, a Vue component under `.vitepress/components/` if the tables need one.
 
-**U11 Meta doc.** `proposal-worker`, `model: opus`, effort `medium`.
+**U29 Sidebar and TODO.** *orchestrator*.
+- Add `{ text: 'Flashcards', link: '/flashcards' }` to **Tools** in `config.ts`, after Inspect.
+- Remove the `flashcards download on tools` line from `TODO.md` when that file has no other uncommitted change; otherwise tell the user.
+
+**U30 Meta doc.** `proposal-worker`, `model: opus`, effort `medium`.
 - Extend `docs/meta/flashcards.md` (written with the Claritish pack) with the Ageben packs:
   - packs and decks, note types, keys and release tags, the anchor-to-checkpoint rule, endings and sets, the load check;
   - regenerating and the import check;
@@ -239,21 +314,20 @@ Gate: `npm run verify -- --allow-generate`, and `npm run flashcards` prints its 
 - The brief carries this proposal's Design and [v1 as shipped](#v1-as-shipped) sections.
 - **May edit:** `docs/meta/flashcards.md`.
 
-**U12 Style gate.** `style-editor`, `model: opus`, effort `high`.
-- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before phase 1's first. That list covers U2–U4's checkpoints and the Flashcards page.
+**U31 Style gate.** `style-editor`, `model: opus`, effort `high`.
+- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before phase 1's first. That list covers U6–U11's checkpoints and the Flashcards page.
 
 Final gate: `npm run verify` against an empty baseline (`--allow-generate` only for allowlist **generate** rows this plan did not touch). The orchestrator then:
-- applies the `AGENTS.md` row: Data `closed-words.csv`;
 - cuts this proposal down to an idea holding the v3 items, per [consolidate](../../meta/procedures/proposals.md#consolidate);
 - runs `git mv` to `ideas/`.
 
 ### Commits
 
-One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 1, 5–6 commits; phase 2, 5; phase 3, 6, the last being the idea cut-down. About 17 in all.
+One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal (phase 1's also holds the `AGENTS.md` row). Expected: phase 1, 6–7 commits; phase 2, 7; phase 3, 6; phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 38 in all.
 
 ## Open decisions
 
-None block phase 1. If U6 finds more than a few overlay rows with no example on their page, or U7's load test fails with closed words in, the orchestrator stops and brings the options to the user.
+None block phase 1. If U14 finds more than a few overlay rows with no example on their page, or U23's load test fails with closed words in, the orchestrator stops and brings the options to the user.
 
 ## v1 as shipped
 

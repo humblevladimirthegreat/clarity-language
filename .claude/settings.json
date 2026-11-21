@@ -10,7 +10,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/hooks/guard-long-read.mjs\"",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/hooks/guard-long-output.mjs\"",
             "timeout": 10
           }
         ]

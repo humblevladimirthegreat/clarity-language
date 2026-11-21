@@ -9,6 +9,13 @@ import { issueLines, stripAnsi } from "./verify.ts";
 
 export const ISSUE_LIMIT = 30;
 export const ASSERTION_LIMIT = 12;
+/** A footer line longer than this is cut: a failed `assert.match` prints its whole input on one line. */
+export const LINE_WIDTH = 200;
+
+/** A line cut to {@link LINE_WIDTH}, saying how much was cut. */
+export function clip(line: string): string {
+  return line.length <= LINE_WIDTH ? line : `${line.slice(0, LINE_WIDTH)}… (+${line.length - LINE_WIDTH} chars)`;
+}
 
 /** Lines that count or report success: useful in the log, noise in a failure footer. */
 const FOOTER_NOISE = [/^OK\b/, /^warning: /, /^[✓✗] shard \d+\/\d+:/, /^[A-Z][\w -]*: \d+ /, /^▶ /, /^ℹ /, /^\s+at /, /^\s*[{}]$/];
@@ -26,9 +33,9 @@ export function jobFooter(label: string, output: string, log: string, limit = IS
   const summaries: string[] = [];
   issues.forEach((issue, i) => {
     if (issue.kind === "header" && issues[i + 1]?.kind !== "detail") summaries.push(issue.text);
-    else body.push(issue.text);
+    else body.push(clip(issue.text));
   });
-  if (!body.length && !summaries.length) return lastLines(lines, 10);
+  if (!body.length && !summaries.length) return lastLines(lines, 10).map(clip);
   return [...capped(body, limit, log), ...summaries];
 }
 
@@ -41,7 +48,8 @@ function lastLines(lines: string[], n: number): string[] {
   return lines.filter((l) => l.trim()).slice(-n);
 }
 
-export type TestFailure = { name: string; location: string; file: string; message: string[] };
+/** A failing test; `message` holds at most {@link ASSERTION_LIMIT} lines, each clipped, and `more` counts the lines left out. */
+export type TestFailure = { name: string; location: string; file: string; message: string[]; more: number };
 
 /**
  * Failing tests from node:test spec-reporter output, read from each shard's `✖ failing tests:`
@@ -55,12 +63,13 @@ export function parseTestFailures(output: string, root = process.cwd()): TestFai
   let current: (TestFailure & { testAt: string; done: boolean }) | undefined;
   const finish = () => {
     if (!current) return;
-    const { name, location, file, message, testAt } = current;
+    const { name, location, file, message, more, testAt } = current;
     failures.push({
       name,
       location: location || testAt,
       file: file || testAt.replace(/:\d+(?::\d+)?$/, ""),
       message,
+      more,
     });
     current = undefined;
   };
@@ -80,7 +89,7 @@ export function parseTestFailures(output: string, root = process.cwd()): TestFai
     const testAt = /^test at (.+)$/.exec(line);
     if (testAt) {
       finish();
-      current = { name: "", location: "", file: "", message: [], testAt: testAt[1]!, done: false };
+      current = { name: "", location: "", file: "", message: [], more: 0, testAt: testAt[1]!, done: false };
       continue;
     }
     const name = /^✖ (.+?)(?: \(\d+(?:\.\d+)?m?s\))?$/.exec(line);
@@ -100,7 +109,9 @@ export function parseTestFailures(output: string, root = process.cwd()): TestFai
       continue;
     }
     if (current.done) continue;
-    if (line.trim() && current.message.length < ASSERTION_LIMIT) current.message.push(line.replace(/^ {2}/, ""));
+    if (!line.trim()) continue;
+    if (current.message.length < ASSERTION_LIMIT) current.message.push(clip(line.replace(/^ {2}/, "")));
+    else current.more++;
   }
   finish();
   return failures;
@@ -114,6 +125,7 @@ export function testFailureLines(output: string, root = process.cwd()): string[]
     `✖ ${f.name}`,
     `  ${f.location}`,
     ...f.message.map((l) => `  ${l}`),
+    ...(f.more ? [`  … ${f.more} more lines in the full output`] : []),
     `  rerun: npm test -- ${f.file}`,
   ]);
 }
