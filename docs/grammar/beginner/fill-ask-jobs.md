@@ -128,12 +128,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a visitor desk
 
-**New words:**
-
-| English | Ageben | Cue |
-|---------|--------|-----|
-| *map* | `agol` | 🗺️ |
-
 **Review:**
 
 | English | Ageben |
@@ -141,6 +135,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
+| *map* | `agol` |
 | *dog* | `odozel` |
 | *find* | `vumewel` |
 | *walk* | `vowurol` |

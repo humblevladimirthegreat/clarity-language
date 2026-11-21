@@ -210,6 +210,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *anxious* | `anomul` | 😰 |
 | *strangeness* | `ulayem` | 👽 from *alien* |
 | *teach* | `veduyol` | 🧑‍🏫 |
+| *map* | `agol` | 🗺️ |
 
 **Review:**
 
@@ -246,6 +247,14 @@ z-Azozon | [g-pair-agent-teach | bl-Alazun]
 `zahelan venumuthael.`
 
 z-Ahelan | v-misstate-th-situation
+:::
+
+**4.** *Ahelan is anxious, but it's the map, not Ahelan.*
+
+::: details Show answer
+`zahelan ganomuthael blagol.`
+
+z-Ahelan | [g-anxious-th-situation | bl-map]
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}
