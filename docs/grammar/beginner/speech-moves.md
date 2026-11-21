@@ -157,7 +157,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *surprise* | `emel` | 😮 |
 | *sit* | `vehohel` | 🪑 from *chair* |
-| *peek* | `vebemol` | 🫣 |
+| *zebra* | `ezel` | 🦓 |
 | *run* | `veruvol` | 🏃 |
 | *therefore* | `xahom` | ➡️ from *east* |
 
@@ -273,12 +273,12 @@ y-Alazun | y-prohibition | v-run
 *Alazun, don’t run!*
 :::
 
-**6.** `zahelan welazem gonumul vebemol. xahom zalazun veruvol.`
+**6.** `zezel welazem gonumul veruvol. xahom zalazun veruvol.`
 
 ::: details Show answer
-[z-Ahelan | [w-very | g-angry]] | v-peek . x-therefore | z-Alazun | v-run
+[z-zebra | [w-very | g-angry]] | v-run . x-therefore | z-Alazun | v-run
 
-*A very angry Ahelan peeks. Therefore Alazun runs.*
+*A very angry zebra runs. Therefore Alazun runs.*
 :::
 
 #### Pick one {#beginner-pick-one}

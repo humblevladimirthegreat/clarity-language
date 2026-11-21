@@ -20,7 +20,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🤪,zany,ezeme,mind,one,,zaniness,"zany antics are unreasoned play; zaniness is that play, not a kind of person",,silly,
 🤑,money-hunger,amuma,mind,holds,,wealth,the money-eyed face wants money; wealth is what it hungers for,,asset; wealthy; rich,
 🤭,gasp,agame,mind,one,,shock,gasp at a shock,,,
-🫣,peek,ebemo,mind,order,,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,speech-moves.md#beginner-practice
+🫣,peek,ebemo,mind,order,,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,dependents.md#beginner-practice
 🤫,hush,uhamu,mind,takes-away,,confidentiality,a hushed whisper keeps the matter private,,,
 🤔,think,eveme,mind,one,,doubt,think shows doubt,,understand; consider; consideration; reckon,clause.md#beginner-practice
 🫡,salute,ozemo,mind,order,,respect,a salute honors someone; respect is honoring their worth,,civil; admire; honor,
@@ -288,7 +288,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🫏,donkey,odazo,creature,order,big,,,,,
 🐎,horse,ohazo,creature,order,big,,,,,same-role-words.md#intermediate-practice
 🦄,unicorn,uyazu,creature,takes-away,big,rarity,unicorn is rare magic,,unique; rare; extraordinary,
-🦓,zebra,eze,creature,one,,contrast,zebra stripes show contrast,,,sentence-linkers.md#intermediate-practice
+🦓,zebra,eze,creature,one,,contrast,zebra stripes show contrast,,,speech-moves.md#beginner-practice
 🦌,deer,edaza,creature,holds,big,timidity,deer in headlights is timid,,,
 🦬,bison,ubaza,creature,holds,big,,,,,
 🐃,buffalo,ebaza,creature,holds,big,drudgery,a buffalo pulls through drudgery,,,

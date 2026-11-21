@@ -130,7 +130,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *sneak* | `vozuyul` | 🥷 |
-| *however* | `xezem` | 🦓 from *zebra*: two stripes, still one animal |
 | *meanwhile* | `xugorom` | 🕰️ from *clock*: time passing beside the last claim |
 | *next* | `xevewom` | 🎞️ from *film*: the following frame |
 
@@ -141,6 +140,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
+| *however* | `xezem` |
 | *luggage* | `elobal` |
 | *train* | `edavol` |
 | *coat* | `ogobal` |

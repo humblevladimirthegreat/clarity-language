@@ -178,6 +178,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vayebel` | 👁️ from *eye* |
 | *tell* | `vezuyol` | 💬 from *speech* |
 | *scream* | `vozumul` | 😱 |
+| *peek* | `vebemol` | 🫣 |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `derl` | **e** ≈ choice: pick yes or no |
 | *because* | `thahum` | 🧱 from *wall*: the cause is what the result sits on |
@@ -192,7 +193,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *sit* | `vehohel` |
-| *peek* | `vebemol` |
 | *run* | `veruvol` |
 | *haste* | `hadurom` |
 | *angry* | `onumul` |
