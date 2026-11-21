@@ -27,6 +27,7 @@ const PATTERNS = [
   "docs/grammar/.vitepress/components/*.test.ts",
   "docs/grammar/.vitepress/lib/*.test.ts",
   "scripts/lib/*.test.ts",
+  "scripts/*.test.ts",
 ];
 
 sweepScratch();

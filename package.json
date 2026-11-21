@@ -61,7 +61,8 @@
     "outline": "tsx scripts/outline.ts",
     "sweep": "tsx scripts/sweep.ts",
     "class-row": "tsx scripts/class-row.ts",
-    "deps": "tsx scripts/deps.ts"
+    "deps": "tsx scripts/deps.ts",
+    "move-decl": "tsx scripts/move-decl.ts"
   },
   "engines": {
     "node": ">=24"

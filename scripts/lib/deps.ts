@@ -159,7 +159,7 @@ function runsAtLoad(node: ts.Node, unit: Unit): boolean {
 }
 
 /** Bind each name in a binding pattern. */
-function bindingNames(name: ts.BindingName): ts.Identifier[] {
+export function bindingNames(name: ts.BindingName): ts.Identifier[] {
   if (ts.isIdentifier(name)) return [name];
   const out: ts.Identifier[] = [];
   for (const el of name.elements) if (!ts.isOmittedExpression(el)) out.push(...bindingNames(el.name));
@@ -423,7 +423,7 @@ function importExportLines(fileName: string, text: string): Set<number> {
 }
 
 /** The file's header comment: comment lines from line 1 that end at a blank line. */
-function headerLines(text: string): Set<number> {
+export function headerLines(text: string): Set<number> {
   const lines = text.split("\n");
   const out = new Set<number>();
   let inBlock = false;
