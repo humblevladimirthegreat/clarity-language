@@ -24,21 +24,23 @@ Not yet posted. Read the owning grammar page before drafting.
 
 ## Recent posts
 
-### Interpreter
+### Language Interpreter
 
 Not a feature of the language itself but around its tooling. Ageben is syntactically unambiguous, which means that code can understand it much better than natural languages. Natural languages require LLMs (like ChatGPT) to process intelligently, which has downsides like cost and hallucinations. LLMs are required for these applications because natural language is so ambiguous that no set of coded rules can correctly account for all or even most cases of how language is used. The design of Ageben is such that LLMs aren't required to accomplish many of the applications we currently use LLMs for.
 
 I don't have a decent demo yet but I've been building the interpretation engine that will allow some very cool applications down the road. Such as:
 
-* **Mind map view**: turns a passage into a collapsible mind map of who did what, under which condition, and who believes it.
+* **Mind map view**: turns a passage into a collapsible mind map of topics with items and how items relate to each other.
 
 * **Structural search**: search a text using an Ageben sentence as the query, matching what was claimed instead of which words appear. A search for "the drug causes harm" won't also return "the drug doesn't cause harm" or "does it cause harm?".
 
-* **Wizard adventure**: a browser text adventure game where you play a wizard and every action is an Ageben sentence you type. There's no AI: the parser and hand-written rules respond, and characters reply in Ageben generated from the state of the world.
-
 * **Generic UI**: control applications by typing Ageben commands. Each participating app describes its own functions in Ageben and the interpreter executes those functions based on the Ageben you typed.
 
-* **Ageben agent**: an agent that carries out tasks from an Ageben prompt without a language model. Every belief, goal and plan it holds is an Ageben sentence stored in a knowledge base or derived from said knowledge. This means it can explain each step it takes, it asks when it doesn't know something, and the steps can be fixed and debugged in the code or knowledge base instead of adding "Don't make this mistake" into the prompt.
+* **Text adventure**: a text adventure game where you just type Ageben to interact with the world. There's no AI: the parser and hand-written rules respond, and characters reply in Ageben generated from the state of the world.
+
+* **Ageben agent**: an agent that carries out tasks from an Ageben prompt without a language model. Every belief, goal and plan it holds is an Ageben sentence stored in a knowledge base or derived from said knowledge. This means it can explain each step it takes, it asks when it doesn't know something, and the steps can be fixed and debugged in the code or knowledge base instead of adding "Don't make this mistake" into the system prompt and hoping it gets followed.
+
+This will enable an exciting new direction for AI that hasn't been really explored! Albeit it will only be able to understand things written in Ageben.
 
 ### Thanks and Sorry Built From What Happened
 

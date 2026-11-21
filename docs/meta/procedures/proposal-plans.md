@@ -51,7 +51,11 @@ Subagents cost tokens, and most of the cost is context carried from turn to turn
 
 A **phase** is the part of a proposal that one orchestrator session carries out; what the orchestrator does at a phase's end is [phases](proposals.md#phases) on the running page.
 
-Split a proposal into phases when one orchestrator session would carry it past about six units or about 60 orchestrator turns. A proposal that fits in one session has one phase and names none.
+Prefer more, shorter phases. The orchestrator's context grows with every unit's brief, report and gate, and each later turn pays for all of it again, while a cut costs one cold start ([where the tokens go](#where-the-tokens-go)). In a [full run](full-execution.md) a cut costs the user nothing either, because the runner starts each phase.
+
+Plan a phase at about 40 orchestrator turns, and cut sooner where a cut point below falls naturally. Size a phase by orchestrator turns, not by its unit count. A small unit costs the orchestrator about four turns (brief, launch, gate, commit), so a phase of small units can hold eight to ten of them. A proposal that fits in one session has one phase and names none.
+
+Never leave a phase holding a single subagent unit, such as a style gate. Fold it into a neighboring phase, even when that phase then runs one unit past its budget. A cold start is cheap next to a long context, but one small unit doesn't earn a whole session of its own.
 
 Cut between phases where:
 
@@ -69,6 +73,7 @@ Never cut inside a unit or where the tree is not green.
 - **A cold start is paid in full, but once.** Each new subagent loads `AGENTS.md`, its brief, and the [procedure](../agents-md.md#procedures) files its task names before its first edit. That costs less than carrying a long context through dozens of later turns.
 - **Bulk output is the biggest waste.** Raw build output, whole-page reads, and per-link hand edits each add thousands of tokens that every later turn pays for again. The tools in [running with subagents](proposals.md#running-with-subagents) keep them out of the context.
 - **The orchestrator pays for everything it reads, every turn.** A diff it reads early is paid for again on every later turn, until the phase ends ([phases](#phases)).
+- **A phase cut is cheap.** A fresh orchestrator loads `AGENTS.md`, [proposals.md](proposals.md) and the consolidated proposal once, about 25k tokens. Its context then grows with the square of its turns, like a subagent's. One 80-turn phase that grows from 30k to 150k averages about 90k a turn, about 7M input. Two 40-turn phases that each grow from 30k to 90k average about 60k, about 2.4M each and 5M in all, for the same work.
 - **A fork copies the orchestrator's whole conversation.** By mid-run that is larger than a fresh brief.
 - **Parallel subagents save time, not tokens.** Each one pays its own cold start.
 - **Break-even for delegating a read.** T tokens read in a context that runs about 70 more calls cost about 9×T over the rest of the session (cache reads at 0.1× each call, plus the write). The short subagents measured cost 21k–120k weighted tokens, so a search that would read more than about 15k tokens, when only its conclusion is needed, is cheaper in an `Explore` subagent.
@@ -83,7 +88,7 @@ A proposal that runs in more than one session states its phases in the plan: eac
 
 A proposal that runs through subagents also states, in its plan:
 
-- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](proposals.md#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is one or two items, sized per [step 1](proposals.md#running-with-subagents)). Write the units as paragraphs, never as a table, because item text is too long to read in a table cell. Each unit starts with its bold ID and name, then a line with the agent, `model` and effort, then its items, then a **May edit:** line
+- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](proposals.md#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is usually one item, sized per [step 1](proposals.md#running-with-subagents)). Write the units as paragraphs, never as a table, because item text is too long to read in a table cell. Each unit starts with its bold ID and name, then a line with the agent, `model` and effort, then its items, then a **May edit:** line
 - the files each unit may edit
 - the rule digest copied into every brief, with its report format and the standing stop line from [step 2](proposals.md#running-with-subagents)
 - the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row). A full `npm run verify` that passes against an empty baseline runs the build and the tests, so it is the final gate; don't run `npm run build` or `npm test` again after it.
