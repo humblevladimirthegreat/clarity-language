@@ -1157,6 +1157,14 @@ describe("solve: ranks and ties (R1-8, R4c-1, R4c-2 and D17, R4c decisions 1 to 
     assert.match(program, /^holds\(ratio\(dt\("slot:adj","gelazem"\),azozo,alazu,v\(2\)\)\) :- on\("t:0\.1"\)\.$/m);
     assert.deepEqual((await clashes(r(["r11"], ["zazozon zalazun zol gelazem."]), base)).clashes, []);
   });
+
+  it("solver-followups decision 2 (b): a ratio fits its inverse, r11 and r12 each answer the other wording", async () => {
+    await yes(["r11"], "yel zalazun zazozon zoel gelazem hrudol.");
+    await yes(["r12"], "yel zazozon zalazun zoel gelazem hradol.");
+    await yes(["r12"], "yel zalazun zazozon zoel gelazem hrudol.");
+    await yes(["r11"], "yel zalazun zazozon zoel gelazem hradol.", "unknown");
+    await yes(["r11"], "yel zalazun zazozon zoel gamahum hrudol.", "unknown");
+  });
   it("D21: a rank, tie, superlative or ratio question on another scale, or with another factor or ending, does not fit", async () => {
     await yes(["r3"], "yel zazozon zalazun zol gelazem.", "unknown");
     await yes(["r2"], "yel zazozon zalazun zoel gelazem.", "unknown");
@@ -1207,6 +1215,10 @@ describe("solve: denials, SHARED words and channels (R4c-3 to R4c-8, D7 to D9, R
     assert.deepEqual(t.left, []);
     for (const p of ["z1", "z2"]) assert.match(t.program, new RegExp(`^detail\\(nm\\("t:0\\.0",${p}\\),dt\\("hookJob:genitive","om",ahela,w\\)\\) :- on\\("t:0\\.0"\\)\\.$`, "m"));
     assert.equal(await said(r(["l9"]), "yel zogozel vowurol."), "yes");
+    // solver-followups decision 1 (a): the question's clause-level genitive is a detail of its /z/ noun.
+    assert.equal(await said(r(["l9"]), "yel zogozel om bahelan vowurol."), "yes");
+    assert.equal(await said(r(["l9"]), "yel zogozel om bazozon vowurol."), "unknown");
+    assert.equal(await said(r([], ["zogozel om bahelan vowurol."]), "yel zogozel om bahelan vowurol."), "yes");
     assert.equal(await said(r([], ["zazozon vowurol veruvol val hahunom."]), "yel zazozon veruvol hahunom."), "yes");
     assert.equal(await said(r([], ["zazozon vozedal vayebel val dobodel."]), "yel zazozon dobodel vayebel."), "yes");
   });

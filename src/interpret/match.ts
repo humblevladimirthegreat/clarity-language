@@ -15,7 +15,8 @@
  */
 import { CLOSED } from "../closed-roots.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
-import { detailNumber, sameNumberKind, sameNumberWord, samePayload, termNumber } from "./value.js";
+import type { LexWord } from "../parse/types.js";
+import { detailNumber, sameNumberKind, sameNumberWord, samePayload, termNumber, wordValue } from "./value.js";
 import { asMember, claimMemberLists, collective, compoundHeads, throughAntecedent, universalInstance, type StepLexicon } from "./steps.js";
 
 export { throughAntecedent };
@@ -151,6 +152,36 @@ function sharedMatch(query: readonly Detail[], target: readonly Detail[], state:
   return query.every((q, i) => target.some((t) => numbers(q) === numbers(t) && tryIn(state, () => detailMatch(q, t, state, `${at}.${i}`))));
 }
 
+/** A ratio list (comparative-arity.md#factor): two members, `zoel`, and one SHARED equative word with a factor under it. */
+function ratioFactor(list: Extract<Term, { kind: "list" }>): { scale: Detail; factor: LexWord } | undefined {
+  const shared = list.sharedDetails ?? [];
+  const scale = shared[0];
+  if (list.members.length !== 2 || list.values.series !== "oe" || shared.length !== 1 || scale?.values.role !== "equative") return undefined;
+  const inner = scale.details ?? [];
+  const factor = inner.length === 1 && inner[0]!.kind === "amount" ? detailNumber(inner[0]!) : undefined;
+  return factor && { scale, factor };
+}
+
+/**
+ * A ratio fits its inverse (comparative-arity.md#factor): *A is twice as big as B* fits *B is half as big as A*, the
+ * two members swapped and the factor's value negated, since `ru` divides. The scale and the ending still match as
+ * said; the translator writes both wordings as one `ratio(S, A, B, V)` atom.
+ */
+function inverseRatio(query: Extract<Term, { kind: "list" }>, target: Term, state: State, at: string): boolean {
+  if (target.kind !== "list" || target.values.series !== query.values.series || !sameRank(query, target)) return false;
+  const q = ratioFactor(query);
+  const t = ratioFactor(target);
+  if (!q || !t || q.factor.ending !== t.factor.ending) return false;
+  const qv = wordValue(q.factor);
+  const tv = wordValue(t.factor);
+  if (qv?.kind !== "scalar" || tv?.kind !== "scalar" || qv.percent !== tv.percent || qv.value !== -tv.value) return false;
+  return (
+    detailMatch({ ...q.scale, details: undefined }, { ...t.scale, details: undefined }, state, `${at}/shared.0`) &&
+    termMatch(query.members[0]!, target.members[1]!, state, `${at}/1`) &&
+    termMatch(query.members[1]!, target.members[0]!, state, `${at}/0`)
+  );
+}
+
 /** D21: a rank or tie list (a SHARED scale or equative word) fits only one with the same ending, `-l` or `-m`. */
 function sameRank(query: Extract<Term, { kind: "list" }>, target: Extract<Term, { kind: "list" }>): boolean {
   const ranks = (l: Extract<Term, { kind: "list" }>): boolean => (l.sharedDetails ?? []).some((d) => d.values.role === "scale" || d.values.role === "equative");
@@ -238,12 +269,16 @@ function structural(query: Term, target: Term, state: State, at: string): boolea
     }
     case "list":
       return (
-        target.kind === "list" &&
-        target.values.series === query.values.series &&
-        target.members.length === query.members.length &&
-        sameRank(query, target) &&
-        query.members.every((m, i) => termMatch(m, target.members[i]!, state, `${at}/${i}`)) &&
-        sharedMatch(query.sharedDetails ?? [], target.sharedDetails ?? [], state, `${at}/shared`)
+        tryIn(
+          state,
+          () =>
+            target.kind === "list" &&
+            target.values.series === query.values.series &&
+            target.members.length === query.members.length &&
+            sameRank(query, target) &&
+            query.members.every((m, i) => termMatch(m, target.members[i]!, state, `${at}/${i}`)) &&
+            sharedMatch(query.sharedDetails ?? [], target.sharedDetails ?? [], state, `${at}/shared`),
+        ) || tryIn(state, () => inverseRatio(query, target, state, at))
       );
     case "clause":
       return target.kind === "clause" && claimMatch(query.reading.claim, target.reading.claim, state, at, target.reading);
@@ -317,7 +352,22 @@ function inferred(query: Term, target: Term, state: State, at: string): boolean 
   return true;
 }
 
-function claimMatch(query: Claim, target: Claim, state: State, at: string, targetReading?: Reading): boolean {
+/**
+ * A genitive the reader puts on the clause (`zogozel om bahelan vowurol.`, social-ties.md#genitive) as a detail of the
+ * `/z/` noun, so it fits a claim whose noun carries it, as a SHARED genitive on each member of a list does
+ * (list-structure.md#shared-after-the-join). Only when `/z/` is a noun and the clause has no `/d/` or `/b/`: `om` sits
+ * on the noun to its left, which with another role there may be that role's.
+ */
+function genitiveOnZ(claim: Claim): Claim {
+  const z = claim.roles.z;
+  const genitives = claim.details.filter((d) => d.key === "hookJob:genitive");
+  if (!genitives.length || z?.kind !== "thing" || claim.roles.d || claim.roles.b) return claim;
+  return { ...claim, roles: { ...claim.roles, z: { ...z, details: [...z.details, ...genitives] } }, details: claim.details.filter((d) => !genitives.includes(d)) };
+}
+
+function claimMatch(queryClaim: Claim, targetClaim: Claim, state: State, at: string, targetReading?: Reading): boolean {
+  const query = genitiveOnZ(queryClaim);
+  const target = genitiveOnZ(targetClaim);
   const prefix = at ? `${at}/` : "";
   if (switchOn(state, "infer")) {
     for (const [list, group] of claimMemberLists(target, targetReading)) state.memberLists.set(list, group);

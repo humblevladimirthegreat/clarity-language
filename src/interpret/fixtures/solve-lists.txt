@@ -5,10 +5,10 @@
 # Ranks and ties (comparatives.md, comparative-arity.md; R1-8, R4c-1, R4c-2 and D17, R4c decisions 1 to 4, D21, D22). Read as one log, they do not all stand together.
 # r1: the superlative, most(S, A). r2: a closed tie, tie(S, A, B, l) per ordered pair; with r3 it clashes. r4: an open tie, data only.
 # r5: a tie with a verb, each walks. r6: three tied, pairwise. r7: r3 reversed, which clashes with r3. r8: a rank with a verb, each lifts.
-# r9: a rank of three, more for each pair in text order. r10: zaol sorts low to high. r11, r12: a factor is ratio(S, A, B, V), no tie.
+# r9: a rank of three, more for each pair in text order. r10: zaol sorts low to high. r11, r12: a factor is ratio(S, A, B, V), no tie; each answers the other wording.
 # r13, r14: a place on a scale, place(S, A, N); the two clash, and each clashes with r15, the plain superlative on the same scale.
 # Denials and SHARED words (R4c-3 to R4c-7, D7, D9). l7: ue denies each listed item (anything but bread). l8: two u lists deny every pairing.
-# l9: a SHARED hook after a noun join is a detail of each member. l10: a collective -x adjective holds of the list as one, nothing of a member.
+# l9: a SHARED hook after a noun join is a detail of each member, so a question with the genitive on one member fits. l10: a collective -x adjective holds of the list as one, nothing of a member.
 
 @ l1
 zazozon zalazun zal vowurol.
