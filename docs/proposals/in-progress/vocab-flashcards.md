@@ -1,6 +1,6 @@
 # Proposal: vocab flashcards v2
 
-**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it; next is phase 2. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
+**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it. Phase 2 (U6–U11, late hosts) done 2026-11-21: six hosts made core earlier (see [late hosts](#late-hosts)); no checkpoint over its `core` cap; next is phase 3. Settled by the phase executor 2026-11-21 (autonomous, core order): `eze`, `awu`, `ago` and `uba` could not be New words at the checkpoint the plan named, because its bank lists their overlay (`thezem`, `awum`, `agom`, `ubam`) and the word-bank lint counts that row as the host. They went to the nearest earlier checkpoint with room instead, per the design's *at or before the overlay*: `awu` at `here-there.md`, `ago` at `label-seams.md`, `uba` at `collectives.md`; `eze` at `speech-moves.md`, which took the slot of *peek* `ebemo`, now core at `dependents.md`. `uge` went to `plurality.md` and `eho` to `clause-sequence.md` as planned. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
 - One pack per band, plus Everything.
 - One subdeck per unit; words and grammar share each subdeck; unlocking is per checkpoint, by tag.
 - Endings are taught once per kind; closed sets are drilled as overlapping cloze; no emoji on any card.
@@ -12,7 +12,7 @@
 
 **Related:** [`src/flashcards.ts`](../../../src/flashcards.ts), [`scripts/flashcards.ts`](../../../scripts/flashcards.ts), [`scripts/flashcards-package.py`](../../../scripts/flashcards-package.py), [`scripts/flashcards-check.py`](../../../scripts/flashcards-check.py), [`data/lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column), units in [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), the [settled-to-passing scale](../../grammar/beginner/sakes.md#settled-to-passing), closed words in [`data/closed-words.csv`](../../../data/closed-words.csv) and [`src/closed-words.ts`](../../../src/closed-words.ts), the sidebar in [`config.ts`](../../grammar/.vitepress/config.ts), [`amplify.yml`](../../../amplify.yml).  
 **Depends on:** none. The Claritish pack shipped 2026-11-20: publish step, Amplify venv, release tags and [`docs/meta/flashcards.md`](../../meta/flashcards.md).  
-**Design authority:** none. No form or reading changes. Phase 2 moves six `core` cells earlier and tops up those checkpoints with existing forms.
+**Design authority:** none. No form or reading changes.
 
 ## Design
 
@@ -76,18 +76,7 @@ A set is a kind's word notes first taught at one checkpoint, three or more of th
 
 ### Late hosts
 
-A host the learner already has is the strongest mnemonic. Six hosts that are now core only after their overlay move to a checkpoint with room, at or before the overlay. Each moved root goes from **New words** to **Review** on its old page.
-
-| Host | Overlay first drilled at | Moves to |
-|------|-------------------------|----------|
-| `eze` *zebra* | `dependents.md` (beginner) | `dependents.md#beginner-practice` |
-| `uge` *attest* | `knowing.md` (beginner) | `plurality.md#beginner-practice` |
-| `eho` *east-west* | `causation.md` (beginner) | `clause-sequence.md#beginner-practice` |
-| `awu` *anchor* | `already-still-yet.md` (beginner) | `already-still-yet.md#beginner-practice` |
-| `ago` *map* | `intention.md` (beginner) | `intention.md#beginner-practice` |
-| `uba` *socks* | `list-structure.md` (intermediate) | `list-structure.md#intermediate-practice` |
-
-`ewe` (`clause.md`) and `uvahu` (`dependents.md`, whose one free slot goes to `eze`) find no room and stay cues.
+Done in phase 2: `eze`, `uge`, `eho`, `awu`, `ago` and `uba` are now core at or before the checkpoint that first drills their overlay. `ewe` and `uvahu` stay cues. A host cannot be a New word at a checkpoint whose bank lists one of its overlays: the word-bank lint counts the overlay row as the host root.
 
 ### Load check
 
@@ -110,7 +99,7 @@ The page gets its checkpoint list and release id from a VitePress data loader, `
 
 ## Plan
 
-Phases 2–6 are left, each in a fresh orchestrator session, each planned at well under 40 orchestrator turns and cut where the next units read different rules or pages, or wait on a finding. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
+Phases 3–6 are left, each in a fresh orchestrator session, each planned at well under 40 orchestrator turns and cut where the next units read different rules or pages, or wait on a finding. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
 
 The build runs `npm run flashcards`, which packages every pack with `scripts/flashcards-package.py` and checks it. So the packager learns the new note types (U16) before the generator emits them (U17 on), and every unit leaves `npm run flashcards` working.
 
@@ -131,24 +120,6 @@ The build runs `npm run flashcards`, which packages every pack with `scripts/fla
 > - Stop and report, without working around it, when: a premise of the unit no longer holds; the unit would need a different design; skipping would leave later units on a broken state; or more than a few rows fail a rule the design states.
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 > - **Report** (about 150 words): done (one line); counts (notes, cards, rows) where the unit makes them; files touched (count); registry or `AGENTS.md` lines to change; the `verify` line; skips with reasons; lexicon choices; **left:**; **inefficient:**.
-
-### Phase 2: late hosts
-
-Six units, one sitting each. Before each launch, the orchestrator runs `node scripts/checkpoint-pack.mjs --unit <pack id> --band <band> <page>`. The prompt names the sitting, the pack and the host. The writer introduces the host at that sitting, moves its `core` cell there, and turns its old page's bank row from **New words** to **Review**. **May edit:** what `checkpoint-writer` allows for that sitting.
-
-**U6 `eze` at `dependents.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2a`, band Beginner.
-
-**U7 `uge` at `plurality.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2b`, band Beginner.
-
-**U8 `eho` at `clause-sequence.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2c`, band Beginner.
-
-**U9 `awu` at `already-still-yet.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2d`, band Beginner.
-
-**U10 `ago` at `intention.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2e`, band Beginner.
-
-**U11 `uba` at `list-structure.md`.** `checkpoint-writer`, `model: opus`, effort `high`. Pack `V2f`, band Intermediate.
-
-Gate: `npm run verify -- --allow-generate` against the phase baseline, and `npm run core-vocabulary` shows no checkpoint over its cap.
 
 ### Phase 3: keys, examples, note types
 
@@ -261,7 +232,7 @@ Gate: `npm run verify -- --allow-generate` against the phase baseline.
 - **May edit:** `docs/meta/flashcards.md`.
 
 **U31 Style gate.** `style-editor`, `model: opus`, effort `high`.
-- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `1a0e3e4f`, the commit before phase 1's first. That list covers U6–U11's checkpoints and the Flashcards page.
+- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `1a0e3e4f`, the commit before phase 1's first. That list covers phase 2's checkpoint top-ups (`speech-moves.md`, `dependents.md`, `plurality.md`, `clause-sequence.md`, `here-there.md`, `label-seams.md`, `collectives.md`) and the Flashcards page.
 
 Final gate: `npm run verify` against an empty baseline (`--allow-generate` only for allowlist **generate** rows this plan did not touch). The orchestrator then:
 - cuts this proposal down to an idea holding the v3 items, per [consolidate](../../meta/procedures/proposals.md#consolidate);
@@ -269,11 +240,11 @@ Final gate: `npm run verify` against an empty baseline (`--allow-generate` only 
 
 ### Commits
 
-One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 2, 7; phase 3, 6; phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 31 left.
+One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 3, 6; phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 24 left.
 
 ## Open decisions
 
-None block phase 2. If U14 finds more than a few overlay rows with no example on their page, or U23's load test fails with closed words in, the orchestrator stops and brings the options to the user.
+None block phase 3. If U14 finds more than a few overlay rows with no example on their page, or U23's load test fails with closed words in, the orchestrator stops and brings the options to the user.
 
 ## Background
 
