@@ -39,3 +39,7 @@ yar,"*as things stand*, *for now, I take it that*",stance,firm-soft.md#act-for-n
 yer,"*just checking*, *for now, is it*",stance,firm-soft.md#act-for-now
 yor,*for now* (command until told otherwise),stance,firm-soft.md#act-for-now
 yur,"*hold off*, *don't yet*",stance,firm-soft.md#act-for-now
+yal,*statement* (act word; usually left out),turn,speech-moves.md#speech-act-statement-question-command
+yel,*question* (yes/no or fill-in ask),turn,speech-moves.md#speech-act-statement-question-command
+yol,*command* (do this),turn,speech-moves.md#speech-act-statement-question-command
+yul,"*don't…* (prohibition)",turn,speech-moves.md#speech-act-statement-question-command
