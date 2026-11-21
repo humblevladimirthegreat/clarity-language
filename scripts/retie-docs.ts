@@ -414,7 +414,7 @@ async function main(): Promise<void> {
   }
 
   // Lexicon anchor cells: overlay `anchor`, and the core-vocabulary `core` column.
-  for (const csvPath of [overlaysPath, dataPath("lexicon-published.csv"), compoundsPath]) {
+  for (const csvPath of [overlaysPath, dataPath("lexicon-published.csv"), compoundsPath, dataPath("closed-words.csv")]) {
     const relinked = relinkOverlayAnchors(readFileSync(csvPath, "utf8"), grammarDir, renames);
     for (const change of relinked.changes) {
       console.log(`${relative(REPO_ROOT, csvPath)}  anchor  ${change.from} → ${change.to}`);
