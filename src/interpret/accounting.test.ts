@@ -4,74 +4,23 @@
  * example the reading pass in `src/find/` reads through `translate()`, so the next silent drop fails here.
  */
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 
-import { passFiles } from "../find/pass.js";
-import { collectFileSpans } from "../find/walk.js";
 import { loadDefaultTables } from "../parse/index.js";
+import { walkAccounting } from "./accounting-walk.js";
 import { buildLog } from "./log.js";
 import { translate } from "./translate.js";
-import type { Frame, Reading, Term } from "./types.js";
 
 const tables = loadDefaultTables();
 const logOf = (texts: string[]) => buildLog(texts.map((text, at) => ({ speaker: "a", at, text })), tables);
 const program = (...texts: string[]) => translate(logOf(texts), { lexicon: tables });
 
-/** The parts of a reading, walked here apart from the translator's own inventory: frames (and their inner frames), links, SHARED details, blanks. */
-function walked(reading: Reading): object[] {
-  const out: object[] = [];
-  const frame = (f: Frame): void => {
-    out.push(f);
-    f.inner?.forEach(frame);
-  };
-  reading.frames.forEach(frame);
-  reading.stanceLists?.forEach((l) => l.inner?.forEach(frame));
-  out.push(...reading.links);
-  const term = (t: Term | undefined): void => {
-    if (t?.kind === "list") {
-      out.push(...(t.sharedDetails ?? []));
-      t.members.forEach(term);
-    }
-    if (t?.kind === "blank") out.push(t);
-  };
-  [reading.claim.verb, reading.claim.roles.z, reading.claim.roles.d, reading.claim.roles.b, ...reading.claim.predicate].forEach(term);
-  return out;
-}
-
 describe("accounting guard: grammar examples", () => {
   it("translate() never throws, and every reading in the program used all its parts; the rest are left as unused", () => {
-    const silent: string[] = [];
-    let kept = 0;
-    for (const file of passFiles(["docs/grammar"])) {
-      for (const example of collectFileSpans(file, readFileSync(file, "utf8"), tables).examples) {
-        if (!example.readings.length) continue;
-        let t: ReturnType<typeof translate>;
-        try {
-          t = translate({ readings: example.readings }, { lexicon: tables });
-        } catch (e) {
-          silent.push(`${file}: ${example.text}: translate() threw ${(e as Error).message}`);
-          continue;
-        }
-        for (const id of t.readings) {
-          kept++;
-          const reading = example.readings.find((r) => r.id === id);
-          const account = t.accounting.get(id);
-          if (!reading || !account) {
-            silent.push(`${file}: ${example.text}: ${id} has no accounting`);
-            continue;
-          }
-          const inventory = new Set(account.parts.map((p) => p.of));
-          const missed = walked(reading).filter((p) => !inventory.has(p));
-          const unused = account.parts.filter((p) => !account.used.has(p.of)).map((p) => p.text);
-          if (missed.length) silent.push(`${file}: ${example.text}: ${id} has ${missed.length} part(s) the inventory misses`);
-          if (unused.length) silent.push(`${file}: ${example.text}: ${id} kept with ${unused.join(", ")}`);
-        }
-        for (const l of t.left) if (l.reason === "unused") assert.ok(l.unused?.length, `${file}: ${example.text}: unused names its parts`);
-      }
-    }
-    assert.ok(kept > 1000, `the sweep reads the grammar examples (kept ${kept})`);
-    assert.deepEqual(silent.slice(0, 20), [], `${silent.length} silent drop(s)`);
+    const walk = walkAccounting(tables);
+    assert.deepEqual(walk.unnamed, [], "unused names its parts");
+    assert.ok(walk.kept > 1000, `the sweep reads the grammar examples (kept ${walk.kept})`);
+    assert.deepEqual(walk.silent.slice(0, 20), [], `${walk.silent.length} silent drop(s)`);
   });
 });
 

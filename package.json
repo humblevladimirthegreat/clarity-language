@@ -58,6 +58,8 @@
     "wording-only": "tsx scripts/wording-only.ts",
     "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts",
     "outline": "tsx scripts/outline.ts",
+    "sweep": "tsx scripts/sweep.ts",
+    "class-row": "tsx scripts/class-row.ts",
     "deps": "tsx scripts/deps.ts"
   },
   "engines": {

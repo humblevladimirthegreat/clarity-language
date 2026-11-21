@@ -9,6 +9,8 @@ The solver answers questions that take more than one step over a log: *does this
 
 Files: `src/interpret/translate.ts` (log to program), `src/interpret/translate-types.ts` (its exported types), `src/interpret/translate-helpers.ts` (its atoms, ranges and claim helpers), `src/interpret/translate-conditions.ts` (hinges, *because*, noun conditions and *or* lists, as functions taking the `Translator`), `src/interpret/solve.ts` (the jobs; the only file that imports `clingo-wasm`), `src/interpret/solve-browser.ts` (the browser entry), and `src/interpret/steps.ts` (step conditions shared with the matcher). Goldens are `src/interpret/fixtures/solve-*.lp`, each beside its `solve-*.txt` fixture.
 
+A solver fixture is `src/interpret/fixtures/solve-NAME.txt`: comment lines start `#`, and each entry is a `@ label` line, one Ageben line (a leading `Name: ` sets the speaker), and `= English`, with a blank line between entries. `translate.test.ts` registers every `solve-*.txt` in the folder by itself, so a new file needs no list entry; it translates the file as one log and asserts `left` is empty, so every fixture reading has a row. Its golden `solve-NAME.lp` is the label comments followed by the program; the test writes it when it is missing and rewrites it under `UPDATE_GOLDEN=1 npm test`, so read the diff of a regenerated golden before keeping it. `solve.test.ts` reads a fixture by `NAME` and label (`log("NAME", ["s1", "s2"])`). A case that is still left, with no row, is not a fixture: it goes in `accounting.test.ts` as `assert.deepEqual(left("..."), ["noRow key"])`.
+
 ## Adding a row
 
 Each new row is confirmed by the user when it is written: the row, its classification table row, its grammar anchor, and a fixture that shows it. A construction with no row is left out and reported (see [the edge](#the-edge)); an agent never writes a row the user has not confirmed. A meaning that neither a grammar page nor the classification table states is an open decision for the user, not a row.
@@ -229,6 +231,8 @@ node scripts/reading.mjs clashes [--json] [--give-up] [--window N] FILE
 node scripts/reading.mjs stands [--json] [--semantics grounded|stable|preferred] [--window N] FILE
 node scripts/reading.mjs probe [--json] [--program[=full]] [--terms a,b] [--case N|LABEL] [--possible] [--defaults] [--closed] FILE
 ```
+
+`npm run sweep` is the translation accounting sweep (not the reader coverage sweep, `sweep.test.ts`): it runs the walk `accounting.test.ts` runs, `src/interpret/accounting-walk.ts`, and prints the readings left by reason and key, the unused parts by part key, and the examples where `translate()` threw. `--save` writes the counts to `tmp/state/sweep-accounting.json`; `--diff` prints only the keys whose count changed since the save. `npm run class-row -- joinSeries:ue` prints the classification-table rows of a part key, each with its line in `interpreter.md` and its note cell.
 
 `solve` runs `follows` (`couldBe` with `--possible`) and prints `verdict`; `reply` (the spelled yes / no / I can't say, or *these cannot all hold* for `both`); `english` when refused or beyond; `why` (each reading id with `[at] speaker: text`); `switches`; `left`. `clashes` prints each clash with its atom and readings, `no clash` when none, and the set to give up with `--give-up`. `stands` prints each reading in, out or undecided, the attacks and the extensions. A refused run exits 1. Replies come from `clashReply` and `giveUpReply` in `reply.ts`.
 
