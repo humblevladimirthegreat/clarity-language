@@ -57,7 +57,7 @@ function generatePages(): Set<string> {
   );
 }
 
-function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[] } {
+function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[]; sizeWarnings: string[] } {
   const blocks = sh("node_modules/.bin/tsx scripts/cheat-sheet-blocks.ts --write");
   rmSync(BUILD_LOG, { force: true });
   const build = sh("node scripts/build.mjs", fast ? { BUILD_SKIP_TEST: "1", BUILD_VERBOSE: "" } : { BUILD_VERBOSE: "" });
@@ -73,13 +73,15 @@ function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: s
   if (build.code !== 0 && !jobs.slice(1).some((j) => !j.ok)) {
     keys.push(`build | (failed) | exit ${build.code} with no failed job line; see ${LAST_LOG_REL}`);
   }
-  return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label) };
+  // The source-size lint only warns; show its lines so a file past the ceiling is seen on a passing run.
+  const sizeWarnings = jobs.filter((j) => j.label === "lint source size").flatMap((j) => j.lines.filter((l) => l.startsWith("warning: ")));
+  return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label), sizeWarnings };
 }
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const started = Date.now();
-  const { keys, ran, failedJobs } = run(options.fast);
+  const { keys, ran, failedJobs, sizeWarnings } = run(options.fast);
   const secs = `${Math.round((Date.now() - started) / 1000)}s`;
   const failedNote = failedJobs.length ? `failed jobs: ${failedJobs.join(", ")}` : "every job passed";
 
@@ -91,6 +93,7 @@ function main(): void {
     writeFileSync(BASELINE, `${JSON.stringify(baseline, null, 2)}\n`);
     console.log(`verify: BASELINE saved, ${keys.length} error key(s), ${onGenerate} on generate rows (${failedNote}; ${secs})`);
     console.log(`  ${tmpRel("state", "verify-baseline.json")}; full log ${LAST_LOG_REL}`);
+    for (const line of sizeWarnings) console.log(`  ${line}`);
     return;
   }
 
@@ -106,6 +109,7 @@ function main(): void {
   if (options.allowGenerate) parts.push(`${result.generate} on generate rows (expected)`);
   if (result.unchecked) parts.push(`${result.unchecked} not checked (job skipped)`);
   console.log(`verify: ${pass ? "PASS" : "FAIL"}, ${parts.join(", ")} (${failedNote}; ${secs})`);
+  for (const line of sizeWarnings) console.log(`  ${line}`);
   if (baseline.saved === "none") console.log("  no baseline: run npm run verify -- --baseline first; every error counts as new");
   const byJob = new Map<string, ErrorKey[]>();
   for (const key of result.fresh) byJob.set(jobOf(key), [...(byJob.get(jobOf(key)) ?? []), key]);
