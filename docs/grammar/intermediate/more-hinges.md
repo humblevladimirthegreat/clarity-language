@@ -4,7 +4,7 @@ band: intermediate
 
 # Hinges on a degree or a noun {#hinges-on-a-degree-or-a-noun}
 
-In Beginner a hinge word tied a dependent clause to the whole main sentence. Here it attaches to a single word instead. The first section ties a result to how much of a quality there is (*so tired that they sleep*). The second places one thing in time (*the walk after the thunderstorm*) rather than the whole event.
+In Beginner a hinge word tied a dependent clause to the whole main sentence. Here it attaches to a single word instead. The first section ties a result to how much of a quality there is (*so tired that they sleep*). The second places one thing in time (*the walk after the thunderstorm*) rather than the whole event, and also hangs *despite* and *so that* on a single noun.
 
 ### Result (*so … that*) {#result-hinge}
 

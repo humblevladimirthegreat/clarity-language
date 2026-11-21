@@ -91,7 +91,7 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 >
 > "Azozon sees a cat that is still sleepy."
 
-The other three words work the same way:
+The other three words, *already*, *not yet*, and *no longer*, work the same way:
 
 | Ageben | English |
 |--------|---------|

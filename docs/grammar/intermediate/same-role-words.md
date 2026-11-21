@@ -50,7 +50,7 @@ English *before* and *ahead of* put A first; *after* and *behind* put A second. 
 >
 > "Azozon walks behind Ahelan." (Ahelan walks too)
 
-With `-l`, Ahelan is the whole of it:
+With `-l`, Ahelan is the only one Azozon walks ahead of or behind:
 
 > `zazozon abal zahelan vowurol.`
 >

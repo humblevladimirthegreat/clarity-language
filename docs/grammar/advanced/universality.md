@@ -29,7 +29,7 @@ Only words about how you know or how things stand move to `/w/` this way: the on
 >
 > "Azozon walks, still tired." (the tiredness from earlier has not worn off)
 
-Every other mood word works the same way on `/w/`:
+The other mood words work the same way. Each row below puts one on `/w/` before the same adjective:
 
 | Ageben | English |
 |--------|---------|

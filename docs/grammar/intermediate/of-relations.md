@@ -33,7 +33,16 @@ English *of* and *from* say how one noun sits toward another, without saying whi
 >
 > "Alazun, who is from the city, walks."
 
-On an event, the same roots take `/h/` (`zazozon vaguyel hulom blulol` *Azozon crafts out of wood*; `zalazun vowurol haham blazahol` *Alazun walks, originating from the city*; `zazozon vudurol hobom bleguval` *Azozon dances as part of a game*; `zazozon vobuvul hadam bledudal` *Azozon pours, filling something with tea*: on an event, `hadam` names what the act puts in as the filling). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zadal` *a jar*; `zulol` *wood*; `zahal` *a country*).
+The same roots also work on an event, with `/h/`:
+
+| Ageben | English |
+|--------|---------|
+| `zazozon vudurol hobom bleguval` | *Azozon dances as part of a game* |
+| `zazozon vobuvul hadam bledudal` | *Azozon pours, filling something with tea* |
+| `zazozon vaguyel hulom blulol` | *Azozon crafts out of wood* |
+| `zalazun vowurol haham blazahol` | *Alazun walks, originating from the city* |
+
+On an event, `hadam` names what the act puts in as the filling. As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zadal` *a jar*; `zulol` *wood*; `zahal` *a country*).
 
 For *a piece of* a mass, put the substance first and `gozowum` right after it. With no `/b/`, the whole it was cut from is left open.
 

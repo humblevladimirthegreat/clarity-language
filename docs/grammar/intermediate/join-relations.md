@@ -37,7 +37,14 @@ For several members, put a [phrase join](/joins) inside the `/b/` phrase (`gan b
 | **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | `oe` ≈ rank then choice (same height) | `zedudal goen blogudal`; `… hoen blalazun vowurol` |
 | **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | `uo` ≈ undo + rank (drop this rank) | `zugedal guon blugedam`; `… huon blugedam vowurol` |
 
-*Anti-* vs *without*: `gun blumudel` vs `guan blumudel`. *Without X* vs *anything but X*: `guan bluwedal` vs `guen bluwedal`. Sole pick vs among options: `gen blazozon` vs `gaen blazozon`. Workaround as top priority vs workaround as first step: `gon blurewem` vs `gaon blurewem`.
+Four pairs are close in meaning; compare them side by side:
+
+| One side | The other side | Ageben |
+|----------|----------------|--------|
+| *anti-* | *without* | `gun blumudel` / `guan blumudel` |
+| *without X* | *anything but X* | `guan bluwedal` / `guen bluwedal` |
+| sole pick | among options | `gen blazozon` / `gaen blazozon` |
+| workaround as top priority | workaround as first step | `gon blurewem` / `gaon blurewem` |
 
 The `/h/` forms in whole sentences:
 

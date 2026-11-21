@@ -76,7 +76,7 @@ On a noun it is **`gohom`**: `zazozon gohom blezahol vehohel` *Azozon, across th
 >
 > "Cats sit around a train."
 
-On a noun: `zogozelx gevam bledavol` *cats around a train*. As a plain noun, `zeval` is *a carousel*. `em` *near* says only that the person or thing is close, not that it surrounds the landmark.
+On a noun you get `zogozelx gevam bledavol` *cats around a train*. As a plain noun, `zeval` is *a carousel*. `em` *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
