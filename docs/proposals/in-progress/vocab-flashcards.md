@@ -1,6 +1,6 @@
 # Proposal: vocab flashcards v2
 
-**Status:** READY 2026-11-20. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
+**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it; next is phase 2. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
 - One pack per band, plus Everything.
 - One subdeck per unit; words and grammar share each subdeck; unlocking is per checkpoint, by tag.
 - Endings are taught once per kind; closed sets are drilled as overlapping cloze; no emoji on any card.
@@ -10,34 +10,9 @@
 - The plan ends with a Flashcards download page under **Tools**.
 - The Claritish pack shipped first (2026-11-20): it built the publish step, the release tag scheme and `docs/meta/flashcards.md`, which this plan extends.
 
-**Related:** [`src/flashcards.ts`](../../../src/flashcards.ts), [`scripts/flashcards.ts`](../../../scripts/flashcards.ts), [`scripts/flashcards-package.py`](../../../scripts/flashcards-package.py), [`scripts/flashcards-check.py`](../../../scripts/flashcards-check.py), [`data/lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column), units in [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), the [settled-to-passing scale](../../grammar/beginner/sakes.md#settled-to-passing), closed words in [`scripts/cheat-sheet-blocks.ts`](../../../scripts/cheat-sheet-blocks.ts), the sidebar in [`config.ts`](../../grammar/.vitepress/config.ts), [`amplify.yml`](../../../amplify.yml).  
+**Related:** [`src/flashcards.ts`](../../../src/flashcards.ts), [`scripts/flashcards.ts`](../../../scripts/flashcards.ts), [`scripts/flashcards-package.py`](../../../scripts/flashcards-package.py), [`scripts/flashcards-check.py`](../../../scripts/flashcards-check.py), [`data/lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), the [core vocabulary column](../../meta/procedures/lexicon.md#core-vocabulary-column), units in [`reading-order.ts`](../../grammar/.vitepress/lib/reading-order.ts), the [settled-to-passing scale](../../grammar/beginner/sakes.md#settled-to-passing), closed words in [`data/closed-words.csv`](../../../data/closed-words.csv) and [`src/closed-words.ts`](../../../src/closed-words.ts), the sidebar in [`config.ts`](../../grammar/.vitepress/config.ts), [`amplify.yml`](../../../amplify.yml).  
 **Depends on:** none. The Claritish pack shipped 2026-11-20: publish step, Amplify venv, release tags and [`docs/meta/flashcards.md`](../../meta/flashcards.md).  
 **Design authority:** none. No form or reading changes. Phase 2 moves six `core` cells earlier and tops up those checkpoints with existing forms.
-
-## Problem
-
-v1 teaches words but almost no grammar. Its Core pack holds only content roots, and the Sakes pack is the only one with overlays. A learner meets about 180 overlay notes and the closed function words (pronouns, sentence linkers, polar particles, turn words) on the pages, with nothing to review them.
-
-The v2 plan in v1 (one overlay subdeck per `kind`) would make this worse:
-
-- **Kinds mix stages.** Clause hinges are anchored from beginner `dependents.md` to advanced `as-of.md`.
-- **Ending series triple the load.** Evidentials alone are 7 channels × `-m` / `-l` / `-r`, three nearly identical notes per channel.
-- **Bare forms are weak cues.** `unam` alone on a card means little until its section has been read.
-- **Subdeck sizes swing widely.** Per checkpoint, 82 of 115 subdecks hold 1–5 notes and 8 hold more than 10, up to 30 (`universality.md`, 60 cards).
-
-## Goals
-
-1. Band packs whose unit subdecks hold the unit's words and grammar, unlocked one checkpoint at a time.
-2. Overlay, set, ending and closed-word notes, built from data and checked pages, with no hand-written card text.
-3. Note identity that survives edits, makes a respelling a new note, and lets a learner clear stale notes.
-4. Decks built at publish and offered on a Flashcards page under **Tools**.
-
-## Non-goals
-
-- Anything in v3: cloze from sentences (anchor examples, never checkpoint items), inflected prompts, confusable-pair cards. When this plan is done, those go back to `ideas/`.
-- Contrast cards, emoji on cards, audio, LLM enrichment, a custom SRS engine, an in-browser drill.
-- Changing the lexicon schema (no row id column), gloss rules, or any form or reading.
-- Stage pages mentioning the decks. Only the Flashcards page and the sidebar do.
 
 ## Design
 
@@ -95,10 +70,8 @@ A set is a kind's word notes first taught at one checkpoint, three or more of th
 
 ### Closed function words
 
-`data/closed-words.csv` holds pronouns, sentence linkers, polar particles and stance words, and turn words, one row per word with a fixed English reading. Its columns are `form`, `english`, `kind` and `anchor`, and rows come from the owning sections' tables.
+[`data/closed-words.csv`](../../../data/closed-words.csv) (`form,english,kind,anchor`) holds 44 closed words with a fixed English reading: kinds `pronoun` 5, `linker` 9, `polar` 19 (answer words and the question particle `yem`), `stance` 7 (the act-word variants of `firm-soft.md`), `turn` 4 (`yal` `yel` `yol` `yul`). `english` carries `*…*` markup around the gloss words. `src/closed-words.ts` exports `loadClosedWords()`, `parseClosedWordsCsv()`, `ClosedWordRow` and `CLOSED_WORD_KINDS`; its test checks every form parses and is spelled in its anchor section. The cheat sheets show the `pronoun` and `linker` kinds only. `retie-docs` relinks its anchors but does not rewrite its forms; a stale form fails that test.
 
-- The cheat sheets' `closed-words` source reads it, keeping only the kinds it shows today.
-- `npm test` checks that every form parses and is spelled in its anchor section, so a missed respelling fails.
 - Each row becomes an **Ageben lexicon** note, tagged and placed like an overlay.
 
 ### Late hosts
@@ -137,7 +110,7 @@ The page gets its checkpoint list and release id from a VitePress data loader, `
 
 ## Plan
 
-Six phases, each in a fresh orchestrator session, each planned at well under 40 orchestrator turns and cut where the next units read different rules or pages, or wait on a finding. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
+Phases 2–6 are left, each in a fresh orchestrator session, each planned at well under 40 orchestrator turns and cut where the next units read different rules or pages, or wait on a finding. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
 
 The build runs `npm run flashcards`, which packages every pack with `scripts/flashcards-package.py` and checks it. So the packager learns the new note types (U16) before the generator emits them (U17 on), and every unit leaves `npm run flashcards` working.
 
@@ -158,33 +131,6 @@ The build runs `npm run flashcards`, which packages every pack with `scripts/fla
 > - Stop and report, without working around it, when: a premise of the unit no longer holds; the unit would need a different design; skipping would leave later units on a broken state; or more than a few rows fail a rule the design states.
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 > - **Report** (about 150 words): done (one line); counts (notes, cards, rows) where the unit makes them; files touched (count); registry or `AGENTS.md` lines to change; the `verify` line; skips with reasons; lexicon choices; **left:**; **inefficient:**.
-
-### Phase 1: closed words
-
-**U1 Closed-words file and parser.** `proposal-worker`, `model: opus`, effort `medium`.
-- Create `data/closed-words.csv` (`form,english,kind,anchor`), seeded from `CLOSED_WORDS` in `scripts/cheat-sheet-blocks.ts`: the pronouns and sentence linkers it holds today.
-- Add a parser `src/closed-words.ts` with a test: every form parses, and every form is spelled in its anchor section.
-- **May edit:** `data/closed-words.csv`, a new `src/closed-words.ts` and its test.
-
-**U2 Cheat sheets read the file.** `proposal-worker`, `model: sonnet`, effort `medium`.
-- Point the `closed-words` source in `scripts/cheat-sheet-blocks.ts` at U1's parser, filtered to the kinds it shows today, and drop `CLOSED_WORDS`.
-- Run `npm run cheat-sheet-blocks -- --write`. The output should not change; if it does, report the diff stat, and the orchestrator fences it in its own commit.
-- Say where the closed-words data lives in the [cheat sheets](../../meta/grammar-docs.md#cheat-sheets) section of `grammar-docs.md`.
-- **May edit:** `scripts/cheat-sheet-blocks.ts`, `docs/grammar/cheat-sheets/*.md` (generated blocks only), `docs/meta/grammar-docs.md` (cheat-sheets section).
-
-**U3 Polar particles and stance words.** `proposal-worker`, `model: opus`, effort `medium`.
-- Add a row per polar particle and stance word, from the tables in `questions.md`, `polar-inventory.md` and `firm-soft.md`, each with a fixed English reading and its anchor section. U1's test must pass.
-- **May edit:** `data/closed-words.csv`.
-
-**U4 Turn words.** `proposal-worker`, `model: opus`, effort `medium`.
-- As U3, for the turn words in `speech-moves.md` and `more-turn-words.md`.
-- **May edit:** `data/closed-words.csv`.
-
-**U5 Retie coverage.** `proposal-worker`, `model: sonnet`, effort `low`.
-- If `retie-docs` rewrites the other `data/` CSVs, add `closed-words.csv` to its list. If it does not, report so and change nothing.
-- **May edit:** the retie file list.
-
-Gate: `npm run verify -- --allow-generate` against the phase baseline. The orchestrator adds the `closed-words.csv` row to the Data table in `AGENTS.md` and commits it with the consolidated proposal.
 
 ### Phase 2: late hosts
 
@@ -253,7 +199,7 @@ Gate: `npm run verify -- --allow-generate` against the phase baseline.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
 
 **U21 Closed-word notes.** `proposal-worker`, `model: opus`, effort `medium`.
-- Build an **Ageben lexicon** note per row of U1's parser, tagged and placed like an overlay through U12's mapping.
+- Build an **Ageben lexicon** note per row of `loadClosedWords()` (`src/closed-words.ts`; 44 rows, kinds `pronoun`, `linker`, `polar`, `stance`, `turn`), tagged and placed like an overlay through U12's mapping. Render the `*…*` markup in `english` as on the other notes. GUID: form + English.
 - Test: every closed-word row maps to a checkpoint.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
 
@@ -315,7 +261,7 @@ Gate: `npm run verify -- --allow-generate` against the phase baseline.
 - **May edit:** `docs/meta/flashcards.md`.
 
 **U31 Style gate.** `style-editor`, `model: opus`, effort `high`.
-- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before phase 1's first. That list covers U6–U11's checkpoints and the Flashcards page.
+- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `1a0e3e4f`, the commit before phase 1's first. That list covers U6–U11's checkpoints and the Flashcards page.
 
 Final gate: `npm run verify` against an empty baseline (`--allow-generate` only for allowlist **generate** rows this plan did not touch). The orchestrator then:
 - cuts this proposal down to an idea holding the v3 items, per [consolidate](../../meta/procedures/proposals.md#consolidate);
@@ -323,20 +269,47 @@ Final gate: `npm run verify` against an empty baseline (`--allow-generate` only 
 
 ### Commits
 
-One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal (phase 1's also holds the `AGENTS.md` row). Expected: phase 1, 6–7 commits; phase 2, 7; phase 3, 6; phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 38 in all.
+One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 2, 7; phase 3, 6; phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 31 left.
 
 ## Open decisions
 
-None block phase 1. If U14 finds more than a few overlay rows with no example on their page, or U23's load test fails with closed words in, the orchestrator stops and brings the options to the user.
+None block phase 2. If U14 finds more than a few overlay rows with no example on their page, or U23's load test fails with closed words in, the orchestrator stops and brings the options to the user.
 
-## v1 as shipped
+## Background
+
+### Problem
+
+v1 teaches words but almost no grammar. Its Core pack holds only content roots, and the Sakes pack is the only one with overlays. A learner meets about 180 overlay notes and the closed function words (pronouns, sentence linkers, polar particles, turn words) on the pages, with nothing to review them.
+
+The v2 plan in v1 (one overlay subdeck per `kind`) would make this worse:
+
+- **Kinds mix stages.** Clause hinges are anchored from beginner `dependents.md` to advanced `as-of.md`.
+- **Ending series triple the load.** Evidentials alone are 7 channels × `-m` / `-l` / `-r`, three nearly identical notes per channel.
+- **Bare forms are weak cues.** `unam` alone on a card means little until its section has been read.
+- **Subdeck sizes swing widely.** Per checkpoint, 82 of 115 subdecks hold 1–5 notes and 8 hold more than 10, up to 30 (`universality.md`, 60 cards).
+
+### Goals
+
+1. Band packs whose unit subdecks hold the unit's words and grammar, unlocked one checkpoint at a time.
+2. Overlay, set, ending and closed-word notes, built from data and checked pages, with no hand-written card text.
+3. Note identity that survives edits, makes a respelling a new note, and lets a learner clear stale notes.
+4. Decks built at publish and offered on a Flashcards page under **Tools**.
+
+### Non-goals
+
+- Anything in v3: cloze from sentences (anchor examples, never checkpoint items), inflected prompts, confusable-pair cards. When this plan is done, those go back to `ideas/`.
+- Contrast cards, emoji on cards, audio, LLM enrichment, a custom SRS engine, an in-browser drill.
+- Changing the lexicon schema (no row id column), gloss rules, or any form or reading.
+- Stage pages mentioning the decks. Only the Flashcards page and the sidebar do.
+
+### v1 as shipped
 
 - **Command:** `npm run flashcards` writes `ageben-core`, `ageben-sakes` and `ageben-everything` (`.apkg`, `.tsv`, `.json`) under `tmp/out/flashcards/`. `--pack`, `--out` and `--tsv-only` are its flags, and `npm run build` runs it.
 - **Split:** `src/flashcards.ts` owns notes, GUIDs, deck ids, tags and packs (`npm test`). `scripts/flashcards-package.py` owns the note type and packages with `genanki`. `scripts/flashcards-check.py` imports every pack into a throwaway collection with Anki's backend: the note type arrives, nothing conflicts, overlapping packs share notes, every card renders, and a second import adds nothing.
 - **Note type "Ageben lexicon":** recognition (stem → English) and production (English → stem). The English block is labeled concrete, abstract and *also* (`english_aliases`) lines. A compound shows its parts with each root's concrete gloss. The mnemonic shows small on the back. No two production fronts may match.
 - **Keys:** root `root`, compound `stem`, sake overlay `sense_form` with the `th` / `w` rows collapsed.
 
-## Measurements
+### Measurements
 
 Measured 2026-11-20, mapping each overlay row to its checkpoint as in the design. Cards = 2 per word or overlay note, plus one per member of a set or ending note. Closed words are not counted.
 
