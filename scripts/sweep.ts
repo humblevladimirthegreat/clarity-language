@@ -6,10 +6,13 @@
  *
  * Options: --save  write the counts to tmp/state/sweep-accounting.json
  *          --diff  print only the keys whose count changed since the save (with --save, then save the new counts)
+ *          --texts KEY …  instead of counts, the example texts behind each key: a left reason (`fragment`), a frame or
+ *                  part key (`lexReading:standIn`), or a type that heads keys (`edge`); each text with its count and file
  *
  * Run: npm run sweep
  *      npm run sweep -- --save
  *      npm run sweep -- --diff
+ *      npm run sweep -- --texts edge:hook fragment
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
@@ -17,16 +20,23 @@ import { dirname } from "node:path";
 import { walkAccounting } from "../src/interpret/accounting-walk.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { tmpPath, tmpRel } from "../src/tmp-paths.js";
-import { countWalk, diffCounts, formatCounts, formatDiff, type SweepCounts } from "./lib/sweep.ts";
+import { countWalk, diffCounts, formatCounts, formatDiff, formatTexts, textsFor, type SweepCounts } from "./lib/sweep.ts";
 
 const SAVE = tmpPath("state", "sweep-accounting.json");
-const USAGE = "Usage: npm run sweep -- [--save] [--diff]";
+const USAGE = "Usage: npm run sweep -- [--save] [--diff] | --texts KEY …";
 
-const args = process.argv.slice(2);
+const argv = process.argv.slice(2);
+const at = argv.indexOf("--texts");
+const textKeys = at >= 0 ? argv.slice(at + 1) : [];
+const args = at >= 0 ? argv.slice(0, at) : argv;
 const bad = args.filter((a) => a !== "--save" && a !== "--diff");
-if (bad.length) {
-  console.error(`Unknown argument ${bad[0]}. ${USAGE}`);
+if (bad.length || (at >= 0 && (!textKeys.length || args.length))) {
+  console.error(bad.length ? `Unknown argument ${bad[0]}. ${USAGE}` : `--texts takes one or more keys and no other flag. ${USAGE}`);
   process.exit(1);
+}
+if (textKeys.length) {
+  console.log(formatTexts(textsFor(walkAccounting(loadDefaultTables()).left, textKeys), textKeys).join("\n"));
+  process.exit(0);
 }
 const save = args.includes("--save");
 const diff = args.includes("--diff");

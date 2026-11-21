@@ -74,3 +74,43 @@ export function formatDiff(changes: Change[]): string[] {
   if (!changes.length) return ["no change since the save"];
   return changes.map((c) => `${c.table.padEnd(6)} ${String(c.before).padStart(5)} -> ${String(c.after).padEnd(5)} ${c.key}`);
 }
+
+/** True when `key` names `candidate`: the same key, or a type that heads it (`lexReading` names `lexReading:standIn`). */
+const names = (key: string, candidate: string): boolean => candidate === key || candidate.startsWith(`${key}:`);
+
+/** One distinct example text behind a key: how many left readings it gave, the first file it came from. */
+export type KeyText = { key: string; text: string; file: string; count: number };
+
+/**
+ * The example texts behind each key (`--texts`): a key matches a left reading's reason, its frame key, or the key of any of
+ * its unused parts. Grouped by key, then text, the commonest first.
+ */
+export function textsFor(left: readonly Walk["left"][number][], keys: readonly string[]): KeyText[] {
+  const out = new Map<string, KeyText>();
+  for (const l of left) {
+    const hits = new Set<string>();
+    for (const k of keys) {
+      if (l.reason === k || names(k, l.key)) hits.add(l.key);
+      for (const part of l.unused) if (names(k, partKey(part))) hits.add(partKey(part));
+    }
+    for (const key of hits) {
+      const id = `${key}\u0000${l.text}`;
+      const row = out.get(id) ?? { key, text: l.text, file: l.file, count: 0 };
+      row.count++;
+      out.set(id, row);
+    }
+  }
+  return [...out.values()].sort((a, b) => a.key.localeCompare(b.key) || b.count - a.count || a.text.localeCompare(b.text));
+}
+
+/** The `--texts` report: per key, one line per text, `count | text  (file)`; no match says so. */
+export function formatTexts(rows: readonly KeyText[], keys: readonly string[]): string[] {
+  const lines: string[] = [];
+  for (const key of [...new Set(rows.map((r) => r.key))]) {
+    const mine = rows.filter((r) => r.key === key);
+    lines.push(`${key}: ${mine.reduce((n, r) => n + r.count, 0)} left, ${mine.length} text(s)`);
+    for (const r of mine) lines.push(`  ${String(r.count).padStart(4)} | ${r.text}  (${r.file})`);
+  }
+  if (!rows.length) lines.push(`no left reading matches ${keys.join(", ")}`);
+  return lines;
+}

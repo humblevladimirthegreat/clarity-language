@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { countWalk, diffCounts, formatCounts, formatDiff, partKey } from "./sweep.ts";
+import { countWalk, diffCounts, formatCounts, formatDiff, formatTexts, partKey, textsFor } from "./sweep.ts";
 
-const left = (reason: string, key: string, unused: string[] = []) => ({ file: "f.md", text: "t", reading: "t:0.0", reason, key, unused });
+const left = (reason: string, key: string, unused: string[] = [], text = "t") => ({ file: "f.md", text, reading: "t:0.0", reason, key, unused });
 
 describe("sweep counts", () => {
   it("partKey reads the key out of a part's text", () => {
@@ -40,5 +40,14 @@ describe("sweep counts", () => {
     assert.ok(lines.indexOf("left, noRow: 2") < lines.indexOf("left, unused: 1"));
     assert.ok(lines.includes("      2  joinSeries:ue"));
     assert.ok(lines.includes("translate() threw: 1"));
+  });
+
+  it("lists the texts behind a reason, a key, a part key or a type", () => {
+    const rows = [left("fragment", "lexReading:standIn", [], "herom blarl"), left("fragment", "lexReading:standIn", [], "herom blarl"), left("unused", "edge:force", ['link hookJob:resume "ar"'], "zarx ar")];
+    assert.deepEqual(textsFor(rows, ["fragment"]).map((r) => `${r.key} ${r.count} ${r.text}`), ["lexReading:standIn 2 herom blarl"]);
+    assert.deepEqual(textsFor(rows, ["hookJob:resume"]).map((r) => r.text), ["zarx ar"]);
+    assert.deepEqual(textsFor(rows, ["lexReading"]).map((r) => r.key), ["lexReading:standIn"]);
+    assert.ok(formatTexts(textsFor(rows, ["fragment"]), ["fragment"]).includes("     2 | herom blarl  (f.md)"));
+    assert.deepEqual(formatTexts([], ["nosuch"]), ["no left reading matches nosuch"]);
   });
 });
