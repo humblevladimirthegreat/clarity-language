@@ -11,6 +11,7 @@ import GlossViewer from '../components/GlossViewer.vue'
 import EnglishHelper from '../components/EnglishHelper.vue'
 import AgebenInspect from '../components/AgebenInspect.vue'
 import ClaritishEditor from '../components/ClaritishEditor.vue'
+import AgebenFlashcards from '../components/AgebenFlashcards.vue'
 import ClaritishFlashcards from '../components/ClaritishFlashcards.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
@@ -32,6 +33,7 @@ export default {
     app.component('EnglishHelper', EnglishHelper)
     app.component('AgebenInspect', AgebenInspect)
     app.component('ClaritishEditor', ClaritishEditor)
+    app.component('AgebenFlashcards', AgebenFlashcards)
     app.component('ClaritishFlashcards', ClaritishFlashcards)
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)
