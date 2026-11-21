@@ -10,10 +10,11 @@ import { join } from "node:path";
 import { loadClosedWords, type ClosedWordRow } from "./closed-words.js";
 import { stageCheckpoints, type Checkpoint } from "./core-vocabulary.js";
 import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
-import { parseOverlayCsv, parsePublishedCsv, senseFormRoot, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
+import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
 import { overlayExamples, type OverlayExample } from "./flashcards-examples.js";
 import { endingNotes } from "./flashcards-endings.js";
 import { overlaySlotNotes, overlayWordNotes } from "./flashcards-overlays.js";
+import { packUnits, type PackUnit } from "./flashcards-packs.js";
 import { overlaySetNotes } from "./flashcards-sets.js";
 import { pageSections, type Band, type PageSections } from "./lint/learning-order.js";
 import { loadDefaultTables } from "./parse/index.js";
@@ -73,15 +74,14 @@ export type FlashcardInputs = {
   anchorSection: (anchor: string) => { band: Band | undefined; line: number; offset: number; end: number } | undefined;
   /** Markdown of a grammar page. */
   pageText: (page: string) => string;
-  /** Display title of a grammar page (`clause.md` → `Clause`). */
-  pageTitle: (page: string) => string;
-  /** Sake roots in sake-inventory order. */
-  sakeRoots: readonly string[];
+  /** Sidebar units of every band, which name the band packs' subdecks (`flashcards-packs.ts`). */
+  units: readonly PackUnit[];
 };
 
-export const PACK_IDS = ["core", "sakes", "everything", "claritish"] as const;
+/** The three band packs, the Everything lookup pack, and the Claritish pack. */
+export const PACK_IDS = ["beginner", "intermediate", "advanced", "everything", "claritish"] as const;
 export type PackId = (typeof PACK_IDS)[number];
-/** Packs of the Ageben lexicon note type; `claritish` has its own (`flashcards-claritish.ts`). */
+/** Packs built from these notes (`flashcards-packs.ts`); `claritish` has its own note type (`flashcards-claritish.ts`). */
 export type LexiconPackId = Exclude<PackId, "claritish">;
 
 export type PackDeck = { name: string; id: number; notes: FlashcardNote[] };
@@ -127,8 +127,6 @@ export function packJson(pack: Pack): PackJson {
   };
 }
 
-const DECK_ROOT = "Ageben";
-
 /**
  * Anki GUID from the source, spelling and concrete gloss, never from row order. A respelling or a
  * new concrete gloss makes a new note; an edited alias, mnemonic, `core` cell or deck keeps it.
@@ -156,7 +154,7 @@ export function deckId(name: string): number {
 }
 
 /** Every note: roots, compounds, closed words, overlay word, slot and set notes, scale and ending notes. `examples` defaults to {@link overlayExamples} over the inputs. */
-export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">, examples?: ReadonlyMap<string, OverlayExample>): FlashcardNotes {
+export function buildNotes(inputs: Omit<FlashcardInputs, "units">,examples?: ReadonlyMap<string, OverlayExample>): FlashcardNotes {
   const checkpointBand = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
   const coreTags = (source: NoteSource, key: string, cell: string | undefined): string[] => {
     if (!cell) return [];
@@ -255,51 +253,6 @@ export function productionGlosses(note: FlashcardNote): string {
   return `${note.fields.concrete} | ${note.fields.abstract}`;
 }
 
-function deck(name: string, notes: FlashcardNote[]): PackDeck {
-  const full = `${DECK_ROOT}::${name}`;
-  return { name: full, id: deckId(full), notes };
-}
-
-export function buildPack(id: LexiconPackId, notes: FlashcardNotes, inputs: Pick<FlashcardInputs, "checkpoints" | "pageTitle" | "sakeRoots">): Pack {
-  if (id === "core") {
-    const words = [...notes.roots, ...notes.compounds].filter((n) => n.core);
-    const decks: PackDeck[] = [];
-    for (const checkpoint of inputs.checkpoints) {
-      const here = words.filter((n) => n.core === checkpoint.anchor);
-      if (here.length === 0) continue;
-      const number = String(decks.length + 1).padStart(2, "0");
-      decks.push(deck(`Core::${number} ${inputs.pageTitle(checkpoint.page)} · ${checkpoint.band}`, here));
-    }
-    return { id, decks };
-  }
-  if (id === "sakes") {
-    const ordered: FlashcardNote[] = [];
-    for (const root of inputs.sakeRoots) {
-      const rootNote = notes.roots.find((n) => n.key === root);
-      const overlay = notes.overlays.find((n) => n.fields.kind === "sake" && senseFormRoot(n.key) === root);
-      if (!rootNote || !overlay) throw new Error(`sake root ${root}: no published row or no sake overlay`);
-      ordered.push(rootNote, overlay);
-    }
-    return { id, decks: [deck("Sakes", ordered)] };
-  }
-  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Closed", notes.closed), deck("Everything::Overlays", notes.overlays), deck("Everything::Slots", notes.slots), deck("Everything::Sets", notes.sets), deck("Everything::Endings", notes.endings)] };
-}
-
-/** Sake roots from the first column of the sake inventory table (sakes.md#sake-inventory). */
-export function sakeInventoryRoots(sakesMarkdown: string): string[] {
-  const lines = sakesMarkdown.split(/\r?\n/);
-  const start = lines.findIndex((l) => /^#+ .*\{#sake-inventory\}/.test(l));
-  if (start < 0) throw new Error("sakes.md has no #sake-inventory heading");
-  const roots: string[] = [];
-  for (const line of lines.slice(start + 1)) {
-    if (/^#/.test(line)) break;
-    const cell = /^\|\s*\*\*`([a-z]+)`\*\*\s*\|/.exec(line);
-    if (cell) roots.push(cell[1]!);
-    else if (roots.length > 0 && !line.startsWith("|")) break;
-  }
-  return roots;
-}
-
 /** The checkpoint that first drills an anchored row: page, band, Practice heading id, and unlock tag. */
 export type AnchorCheckpoint = { page: string; band: Band; id: string; anchor: string; tag: string };
 
@@ -360,7 +313,6 @@ export function loadFlashcardInputs(
     if (!sections.has(page)) sections.set(page, pageSections(page, pageText(page)));
     return sections.get(page)!;
   };
-  const titles = new Map(pages.map((p) => [p.page, p.title]));
   return {
     published: parsePublishedCsv(readData("lexicon-published.csv")),
     compounds: parseCompoundCsv(readData("lexicon-compounds.csv")),
@@ -379,30 +331,6 @@ export function loadFlashcardInputs(
       return { band: section.band, line: text.slice(0, section.offset).split("\n").length, offset: section.offset, end: section.end };
     },
     pageText,
-    pageTitle: (page) => titles.get(page) ?? page.replace(/\.md$/, ""),
-    sakeRoots: sakeInventoryRoots(markdown.get("sakes.md") ?? readFileSync(grammarFile("sakes.md"), "utf8")),
+    units: packUnits(),
   };
-}
-
-/**
- * Anki-importable TSV: directive header, then one line per Ageben lexicon note (deck, GUID, fields, tags).
- * One TSV holds one note type, so overlay notes are in the `.apkg` and `.json` only.
- */
-export function packTsv(pack: Pack): string {
-  const clean = (s: string) => s.replace(/[\t\r\n]+/g, " ");
-  const lines = [
-    "#separator:tab",
-    "#html:false",
-    `#notetype:${LEXICON_MODEL}`,
-    "#deck column:1",
-    "#guid column:2",
-    `#tags column:${NOTE_FIELDS.length + 3}`,
-    `#columns:deck\tguid\t${NOTE_FIELDS.join("\t")}\ttags`,
-  ];
-  for (const d of pack.decks) {
-    for (const note of d.notes) {
-      if (note.model === LEXICON_MODEL) lines.push([d.name, note.guid, ...NOTE_FIELDS.map((f) => note.fields[f]), note.tags.join(" ")].map(clean).join("\t"));
-    }
-  }
-  return `${lines.join("\n")}\n`;
 }

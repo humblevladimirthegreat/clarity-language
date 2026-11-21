@@ -1,8 +1,9 @@
 /**
  * Vocabulary flashcard decks for Anki (`vocab-flashcards.md`).
  *
- * Run: npm run flashcards                         every pack: tmp/out/flashcards/ageben-<pack>.apkg (and claritish.apkg) and .tsv
- *      npm run flashcards -- --pack core,sakes    only these packs (core, sakes, everything, claritish)
+ * Run: npm run flashcards                         every pack: tmp/out/flashcards/ageben-<pack>.apkg (and claritish.apkg), and one
+ *                                                 .tsv per note type (ageben-<pack>.tsv, -overlay.tsv, -set.tsv)
+ *      npm run flashcards -- --pack beginner,everything   only these packs (beginner, intermediate, advanced, everything, claritish)
  *                                                 claritish: tmp/out/flashcards/claritish.apkg and .tsv, Claritish note type
  *      npm run flashcards -- --out <dir>          another output directory
  *      npm run flashcards -- --tsv-only           skip the genanki step and the Anki check (no .venv needed)
@@ -15,7 +16,8 @@ import { join, resolve } from "node:path";
 
 import { claritishLessons, lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { claritishPackJson, claritishTsv, loadClaritishPack } from "../src/flashcards-claritish.js";
-import { buildNotes, buildPack, loadFlashcardInputs, PACK_IDS, packJson, packTsv, type PackId } from "../src/flashcards.js";
+import { buildNotes, loadFlashcardInputs, PACK_IDS, packJson, type PackId } from "../src/flashcards.js";
+import { buildPack, noteCards, packTsvs } from "../src/flashcards-packs.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath } from "../src/tmp-paths.js";
 
@@ -68,12 +70,13 @@ function main(): void {
     }
     const pack = buildPack(id, notes, inputs);
     const base = join(options.out, `ageben-${id}`);
-    writeFileSync(`${base}.tsv`, packTsv(pack));
-    const count = pack.decks.reduce((n, d) => n + d.notes.length, 0);
+    for (const tsv of packTsvs(pack)) writeFileSync(`${base}${tsv.suffix}.tsv`, tsv.text);
+    const packNotes = pack.decks.flatMap((d) => d.notes);
+    const cards = packNotes.reduce((n, note) => n + noteCards(note), 0);
     if (!options.tsvOnly) {
       packageJson(base, packJson(pack));
     }
-    console.log(`${id}: ${count} notes in ${pack.decks.length} deck(s) → ${base}.${options.tsvOnly ? "tsv" : "apkg"}`);
+    console.log(`${id}: ${packNotes.length} notes, ${cards} cards in ${pack.decks.length} deck(s) → ${base}.${options.tsvOnly ? "tsv" : "apkg"}`);
   }
   if (packed.length > 0) {
     const check = spawnSync(python, [join(REPO_ROOT, "scripts", "flashcards-check.py"), ...packed], { stdio: "inherit" });

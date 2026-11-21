@@ -1,8 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { isLevelReview, lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
-import { CLOSED } from "./closed-roots.js";
+import { advancedUnits, beginnerUnits, intermediateUnits, lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { NOT_CORE_ROOTS } from "./core-vocabulary.js";
 import {
   anchorCheckpoint,
@@ -13,26 +12,27 @@ import {
   coveredByEndingNote,
   LEXICON_MODEL,
   LEXICAL_ENDING_FORMS,
-  buildPack,
   loadFlashcardInputs,
+  NOTE_FIELDS,
   noteGuid,
   OVERLAY_FIELDS,
   OVERLAY_MODEL,
   packJson,
-  packTsv,
   releaseId,
   productionGlosses,
-  sakeInventoryRoots,
   SCALE_ENDING_KINDS,
   SET_FIELDS,
   SET_MODEL,
+  type FlashcardNote,
   type FlashcardNotes,
 } from "./flashcards.js";
+import { buildPack, checkpointNotes, noteCards, packTsvs, unitDeckName } from "./flashcards-packs.js";
 import { endingNoteKey, endingReading, SCALE_ANCHOR, SCALE_NOTE_KEY } from "./flashcards-endings.js";
 import { overlayExamples, overlayRowKey } from "./flashcards-examples.js";
 import { overlaySetNotes, setNoteKey, SET_MIN_MEMBERS } from "./flashcards-sets.js";
 import { highlightExample, hostLine, slotNoteKey, slotReadings, slotTaughtByMForm, wordNoteGloss } from "./flashcards-overlays.js";
 import { loadDefaultTables } from "./parse/index.js";
+import { BANDS } from "./lint/learning-order.js";
 import { morphGlossLine } from "./parse/morph-gloss.js";
 
 const pages = lessonPages();
@@ -44,7 +44,6 @@ const elapsed = Math.round(performance.now() - started);
 const notes = buildNotes(inputs, examples);
 const rebuild = (published: typeof inputs.published) => buildNotes({ ...inputs, published }, examples);
 const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.closed, ...n.overlays, ...n.slots, ...n.sets, ...n.endings];
-const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];
 
 describe("buildNotes", () => {
   it("makes one note per published root, compound, and overlay sense form an ending note does not cover", () => {
@@ -303,7 +302,7 @@ describe("set notes", () => {
       for (const m of members) assert.equal(cpOf(m.tags), cpOf(set.tags), `${set.key}: ${m.key}`);
       assert.ok(set.tags.includes(`ageben::overlay::${members[0]!.fields.kind}`));
     }
-    const order = buildPack("everything", notes, inputs).decks.flatMap((d) => d.notes.map((n) => n.key));
+    const order = BANDS.flatMap((band) => buildPack(band, notes, inputs).decks.flatMap((d) => d.notes.map((n) => n.key)));
     for (const set of notes.sets) for (const f of membersOf(set.fields.text)) assert.ok(order.indexOf(f) < order.indexOf(set.key), set.key);
     assert.deepEqual(overlaySetNotes(inputs, notes.overlays).map((n) => n.key), notes.sets.map((n) => n.key));
   });
@@ -358,63 +357,115 @@ describe("ending notes", () => {
 });
 
 describe("packs", () => {
-  it("Core: one subdeck per checkpoint with new words, in path order", () => {
-    const core = buildPack("core", notes, inputs);
-    const order = new Map(inputs.checkpoints.map((c, i) => [c.anchor, i]));
-    const at = core.decks.map((d) => order.get(d.notes[0]!.core)!);
-    assert.deepEqual(at, [...at].sort((a, b) => a - b));
-    core.decks.forEach((d, i) => {
-      assert.match(d.name, new RegExp(`^Ageben::Core::${String(i + 1).padStart(2, "0")} `));
-      assert.equal(new Set(d.notes.map((n) => n.core)).size, 1, d.name);
-    });
-    const packed = core.decks.flatMap((d) => d.notes.map((n) => n.key));
-    const coreKeys = [...notes.roots, ...notes.compounds].filter((n) => n.core).map((n) => n.key);
-    assert.deepEqual([...packed].sort(), [...coreKeys].sort());
-    assert.ok(!packed.some((k) => NOT_CORE_ROOTS.has(k)));
-    assert.ok(!core.decks.some((d) => isLevelReview(d.notes[0]!.core.split("#")[0]!)));
+  const cpOf = (n: FlashcardNote) => n.tags.find((t) => t.startsWith("ageben::cp::"));
+  const bandPacks = BANDS.map((band) => buildPack(band, notes, inputs));
+  const grammarNotes = [...notes.closed, ...notes.overlays, ...notes.slots, ...notes.sets, ...notes.endings];
+  const coreNotes = [...notes.roots, ...notes.compounds].filter((n) => n.core);
+
+  it("puts every core word, closed word and grammar note in one band pack, the band of its checkpoint", () => {
+    const packed = bandPacks.flatMap((p) => p.decks.flatMap((d) => d.notes.map((n) => ({ band: p.id, n }))));
+    assert.deepEqual(packed.map((p) => p.n.guid).sort(), [...coreNotes, ...grammarNotes].map((n) => n.guid).sort());
+    const bandOf = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
+    for (const { band, n } of packed) {
+      if (n.core) assert.equal(bandOf.get(n.core), band, n.key);
+      else assert.ok(cpOf(n)?.endsWith(`::${band}`), `${n.key} ${cpOf(n)}`);
+    }
+    assert.ok(!packed.some((p) => NOT_CORE_ROOTS.has(p.n.key) && p.n.source === "root"));
   });
 
-  it("Sakes: nine roots, each followed by its sake overlay, in inventory order", () => {
-    const [deck] = buildPack("sakes", notes, inputs).decks;
-    assert.equal(deck!.notes.length, 18);
-    assert.deepEqual(new Set(inputs.sakeRoots), new Set(SAKES));
-    deck!.notes.forEach((n, i) => {
-      assert.equal(n.source, i % 2 === 0 ? "root" : "overlay");
-      if (i % 2 === 0) assert.equal(n.key, inputs.sakeRoots[i / 2]);
-      else assert.equal(n.model === OVERLAY_MODEL && n.fields.kind, "sake");
-    });
+  it("names one subdeck per sidebar unit with notes, numbered as in the band, in sidebar order", () => {
+    const names = { beginner: "1 Beginner", intermediate: "2 Intermediate", advanced: "3 Advanced" };
+    for (const [b, units] of [["beginner", beginnerUnits], ["intermediate", intermediateUnits], ["advanced", advancedUnits]] as const) {
+      const pack = buildPack(b, notes, inputs);
+      const expected = units.map((u, i) => `Ageben::${names[b]}::${String(i + 1).padStart(2, "0")} ${u.text}`);
+      const got = pack.decks.map((d) => d.name);
+      assert.deepEqual(got, expected.filter((name) => got.includes(name)));
+      assert.ok(got.length > 0, b);
+      for (const d of pack.decks) assert.ok(d.notes.length > 0, d.name);
+    }
+    assert.equal(unitDeckName({ band: "beginner", number: 4, title: "Why and what for", pages: [] }), "Ageben::1 Beginner::04 Why and what for");
   });
 
-  it("Everything: all roots, compounds and overlay word notes, one deck per source", () => {
+  it("keeps checkpoint order inside a unit: each subdeck runs through its checkpoints in path order", () => {
+    const at = new Map(inputs.checkpoints.map((c, i) => [checkpointTag(c.page, c.band), i]));
+    const coreAt = new Map(inputs.checkpoints.map((c, i) => [c.anchor, i]));
+    for (const pack of bandPacks) {
+      const order = pack.decks.flatMap((d) => d.notes.map((n) => (n.core ? coreAt.get(n.core)! : at.get(cpOf(n)!)!)));
+      assert.deepEqual(order, [...order].sort((a, b) => a - b), pack.id);
+    }
+  });
+
+  it("orders a checkpoint: core words, closed words, then per overlay kind its word, slot, ending and set notes", () => {
+    const rank = (n: FlashcardNote) =>
+      n.source === "root" || n.source === "compound" ? 0
+      : n.source === "closed" ? 1
+      : n.model === OVERLAY_MODEL ? (n.fields.slot_of ? 3 : 2)
+      : n.key.includes("@") ? 5 : 4;
+    const kindOf = (n: FlashcardNote) => (n.model === OVERLAY_MODEL ? n.fields.kind : n.key === SCALE_NOTE_KEY ? "sake" : n.tags.find((t) => t.startsWith("ageben::overlay::"))!.slice(17));
+    let checked = 0;
+    for (const checkpoint of inputs.checkpoints) {
+      const here = checkpointNotes(notes, checkpoint);
+      const lexical = here.filter((n) => rank(n) <= 1).map(rank);
+      assert.deepEqual(lexical, [...lexical].sort(), checkpoint.anchor);
+      const grammar = here.slice(lexical.length);
+      assert.ok(grammar.every((n) => rank(n) >= 2), checkpoint.anchor);
+      const runs: { kind: string; ranks: number[] }[] = [];
+      for (const n of grammar) {
+        if (runs.at(-1)?.kind === kindOf(n)) runs.at(-1)!.ranks.push(rank(n));
+        else runs.push({ kind: kindOf(n), ranks: [rank(n)] });
+      }
+      assert.equal(new Set(runs.map((r) => r.kind)).size, runs.length, `${checkpoint.anchor}: a kind splits`);
+      for (const r of runs) assert.deepEqual(r.ranks, [...r.ranks].sort(), `${checkpoint.anchor} ${r.kind}`);
+      if (runs.length > 1 || lexical.length > 0) checked++;
+    }
+    assert.ok(checked > 10);
+    // The scale note sits with the sake kind at sakes.md, before the sake set note if there is one.
+    const sakes = checkpointNotes(notes, inputs.checkpoints.find((c) => c.anchor === "sakes.md#beginner-practice")!);
+    const scale = sakes.findIndex((n) => n.key === SCALE_NOTE_KEY);
+    assert.ok(scale > 0 && kindOf(sakes[scale - 1]!) === "sake", sakes.map((n) => n.key).join(" "));
+  });
+
+  it("Everything: all roots, compounds, closed words and overlay word notes, one deck per source", () => {
     const decks = buildPack("everything", notes, inputs).decks;
     assert.deepEqual(decks.map((d) => [d.name, d.notes.length]), [
       ["Ageben::Everything::Roots", inputs.published.length],
       ["Ageben::Everything::Compounds", inputs.compounds.length],
       ["Ageben::Everything::Closed", inputs.closedWords.length],
       ["Ageben::Everything::Overlays", notes.overlays.length],
-      ["Ageben::Everything::Slots", notes.slots.length],
-      ["Ageben::Everything::Sets", notes.sets.length],
-      ["Ageben::Everything::Endings", notes.endings.length],
     ]);
-    assert.deepEqual(packJson({ id: "everything", decks }).modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS, [SET_MODEL]: SET_FIELDS });
+    assert.deepEqual(packJson({ id: "everything", decks }).modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS });
   });
 
-  it("names the overlay note type on overlay notes in the pack JSON, with its field order", () => {
-    const json = packJson(buildPack("sakes", notes, inputs));
-    assert.deepEqual(json.modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS });
-    const packed = json.decks[0]!.notes;
-    packed.forEach((n, i) => {
-      assert.equal(n.model, i % 2 === 0 ? undefined : OVERLAY_MODEL);
-      assert.equal(n.fields.length, i % 2 === 0 ? json.fields.length : OVERLAY_FIELDS.length);
-    });
-    assert.equal(packJson(buildPack("core", notes, inputs)).modelFields, undefined);
+  it("names each non-lexicon note type in the pack JSON, with its field order", () => {
+    const json = packJson(bandPacks[0]!);
+    assert.deepEqual(json.modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS, [SET_MODEL]: SET_FIELDS });
+    for (const n of json.decks.flatMap((d) => d.notes)) {
+      const fields = n.model === OVERLAY_MODEL ? OVERLAY_FIELDS : n.model === SET_MODEL ? SET_FIELDS : json.fields;
+      assert.equal(n.fields.length, fields.length, n.guid);
+    }
   });
 
-  it("writes one TSV line per Ageben lexicon note under the header", () => {
-    const pack = buildPack("sakes", notes, inputs);
-    const lines = packTsv(pack).trimEnd().split("\n");
-    assert.equal(lines.filter((l) => !l.startsWith("#")).length, 9);
-    assert.ok(lines.filter((l) => !l.startsWith("#")).every((l) => l.split("\t").length === 10));
+  it("writes one TSV per note type, each with its own header and one line per note", () => {
+    const pack = bandPacks[0]!;
+    const tsvs = packTsvs(pack);
+    assert.deepEqual(tsvs.map((t) => [t.model, t.suffix]), [[LEXICON_MODEL, ""], [OVERLAY_MODEL, "-overlay"], [SET_MODEL, "-set"]]);
+    for (const [i, fields] of [NOTE_FIELDS, OVERLAY_FIELDS, SET_FIELDS].entries()) {
+      const lines = tsvs[i]!.text.trimEnd().split("\n");
+      const model = tsvs[i]!.model;
+      assert.ok(lines.includes(`#notetype:${model}`));
+      assert.ok(lines.includes(`#html:${model !== LEXICON_MODEL}`));
+      const body = lines.filter((l) => !l.startsWith("#"));
+      assert.equal(body.length, pack.decks.flatMap((d) => d.notes).filter((n) => n.model === model).length, model);
+      assert.ok(body.every((l) => l.split("\t").length === fields.length + 3), model);
+    }
+    assert.deepEqual(packTsvs(buildPack("everything", notes, inputs)).map((t) => t.suffix), ["", "-overlay"]);
+  });
+
+  it("counts cards per note: two for lexicon and overlay notes, one per cloze for set notes", () => {
+    const phasal = notes.sets.find((n) => n.key === "phasal@already-still-yet")!;
+    assert.equal(noteCards(phasal), 4);
+    assert.equal(noteCards(notes.overlays[0]!), 2);
+    assert.equal(noteCards(notes.roots[0]!), 2);
   });
 });
 
@@ -435,13 +486,6 @@ describe("anchorCheckpoint", () => {
     const cp = inputs.checkpoints.find((c) => !c.review)!;
     assert.equal(anchorCheckpoint(cp.anchor, inputs)?.anchor, cp.anchor);
     assert.equal(anchorCheckpoint("clause.md#no-such-section", inputs), undefined);
-  });
-});
-
-describe("sakeInventoryRoots", () => {
-  it("reads the first column of the inventory table", () => {
-    const md = "### Sake inventory {#sake-inventory}\n\n| Ageben | Use |\n|---|---|\n| **`ahu`** | autonomy |\n| **`ulo`** | competence |\n\nAfter.\n";
-    assert.deepEqual(sakeInventoryRoots(md), ["ahu", "ulo"]);
   });
 });
 
