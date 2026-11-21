@@ -85,10 +85,16 @@ export function slotNoteKey(senseForm: string, page: string): string {
 
 /**
  * True when a row's slot is taught by its ending set's `-m` form: an `-l` / `-r` sense form whose `-m`
- * sibling of the same kind takes the same slot. Only the `-m` form of an ending set gets a slot note.
+ * sibling of the same kind takes the same slot, and whose reading carries over (its gloss there is one of
+ * `taughtGlosses`, its glosses in slots already taught). A form whose gloss changes in the new slot keeps
+ * its own slot note (`ewel` cite: *like*, taught as *exactly-like*).
  */
-export function slotTaughtByMForm(row: Pick<OverlayRow, "senseForm" | "pos" | "kind">, overlays: readonly Pick<OverlayRow, "senseForm" | "pos" | "kind">[]): boolean {
-  if (!/[lr]$/.test(row.senseForm)) return false;
+export function slotTaughtByMForm(
+  row: Pick<OverlayRow, "senseForm" | "pos" | "kind" | "gloss">,
+  overlays: readonly Pick<OverlayRow, "senseForm" | "pos" | "kind">[],
+  taughtGlosses: ReadonlySet<string>,
+): boolean {
+  if (!/[lr]$/.test(row.senseForm) || !taughtGlosses.has(row.gloss)) return false;
   const m = `${row.senseForm.slice(0, -1)}m`;
   return overlays.some((r) => r.senseForm === m && r.kind === row.kind && r.pos === row.pos);
 }
@@ -177,8 +183,8 @@ export function overlayWordNotes(inputs: OverlayNoteInputs, examples?: ReadonlyM
 /**
  * One Ageben overlay slot note per later checkpoint that puts a known sense form in a new slot: the form's
  * rows there whose slot no earlier checkpoint taught fold in, as on a word note, and `slot_of` names the
- * word note. An `-l` / `-r` row whose `-m` sibling takes the slot gets none ({@link slotTaughtByMForm}).
- * `wordNotes` are {@link overlayWordNotes} over the same inputs.
+ * word note. An `-l` / `-r` row whose `-m` sibling takes the slot with the reading it already has gets
+ * none ({@link slotTaughtByMForm}). `wordNotes` are {@link overlayWordNotes} over the same inputs.
  */
 export function overlaySlotNotes(
   inputs: OverlayNoteInputs,
@@ -194,8 +200,10 @@ export function overlaySlotNotes(
     const first = Math.min(...all.map((r) => r.at));
     const later = [...new Set(all.map((r) => r.at))].filter((at) => at > first).sort((a, b) => a - b);
     for (const at of later) {
-      const known = new Set(all.filter((r) => r.at < at).map((r) => r.row.pos));
-      const here = all.filter((r) => r.at === at && !known.has(r.row.pos) && !slotTaughtByMForm(r.row, inputs.overlays));
+      const earlier = all.filter((r) => r.at < at);
+      const known = new Set(earlier.map((r) => r.row.pos));
+      const taught = new Set(earlier.map((r) => r.row.gloss));
+      const here = all.filter((r) => r.at === at && !known.has(r.row.pos) && !slotTaughtByMForm(r.row, inputs.overlays, taught));
       if (here.length === 0) continue;
       const of = wordNote.get(senseForm);
       if (!of) throw new Error(`overlay ${senseForm}: slot rows at ${here[0]!.cp.anchor} but no word note`);

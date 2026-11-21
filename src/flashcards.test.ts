@@ -20,7 +20,12 @@ import {
   releaseId,
   productionGlosses,
   sakeInventoryRoots,
+  SCALE_ENDING_KINDS,
+  SET_FIELDS,
+  SET_MODEL,
+  type FlashcardNotes,
 } from "./flashcards.js";
+import { endingNoteKey, endingReading, SCALE_ANCHOR, SCALE_NOTE_KEY } from "./flashcards-endings.js";
 import { overlayExamples, overlayRowKey } from "./flashcards-examples.js";
 import { highlightExample, hostLine, slotNoteKey, slotReadings, slotTaughtByMForm, wordNoteGloss } from "./flashcards-overlays.js";
 import { loadDefaultTables } from "./parse/index.js";
@@ -34,6 +39,7 @@ const examples = overlayExamples(inputs.overlays, inputs, tables);
 const elapsed = Math.round(performance.now() - started);
 const notes = buildNotes(inputs, examples);
 const rebuild = (published: typeof inputs.published) => buildNotes({ ...inputs, published }, examples);
+const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.overlays, ...n.slots, ...n.endings];
 const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];
 
 describe("buildNotes", () => {
@@ -109,7 +115,7 @@ describe("buildNotes", () => {
     for (const r of rows) {
       const at = rowAt(r);
       const earlier = rows.filter((o) => o.senseForm === r.senseForm && rowAt(o) < at);
-      if (earlier.length === 0 || earlier.some((o) => o.pos === r.pos) || slotTaughtByMForm(r, inputs.overlays)) continue;
+      if (earlier.length === 0 || earlier.some((o) => o.pos === r.pos) || slotTaughtByMForm(r, inputs.overlays, new Set(earlier.map((o) => o.gloss)))) continue;
       assert.ok(notes.slots.some((n) => n.fields.form === r.senseForm && cpOf(n.tags) === at && n.tags.includes(`ageben::pos::${r.pos}`)), `${r.senseForm}@${r.pos} ${r.anchor}`);
     }
     const ezem = notes.slots.find((n) => n.key === "ezem@more-hinges")!;
@@ -119,15 +125,25 @@ describe("buildNotes", () => {
     assert.equal(ezem.fields.definition, ezemG[0]!.definition);
   });
 
-  it("gives an ending set's new slot to its -m form only", () => {
+  it("gives an ending set's new slot to its -m form only when the reading carries over", () => {
     const keys = new Set(notes.slots.map((n) => n.key));
     assert.ok(keys.has("omam@universality") && keys.has("evum@universality") && keys.has("ewem@same-role-words"));
-    for (const key of ["omal@universality", "omar@universality", "evul@universality", "evur@universality", "ewel@same-role-words"]) assert.ok(!keys.has(key), key);
+    for (const key of ["omal@universality", "omar@universality", "eyur@universality", "eyul@universality", "evul@universality", "evur@universality"]) {
+      assert.ok(!keys.has(key), key);
+    }
+    // ewel reads *like* in the cite slot, taught as *exactly-like*: its own slot note.
+    const ewel = notes.slots.find((n) => n.key === "ewel@same-role-words");
+    assert.ok(ewel);
+    assert.deepEqual(ewel.tags.filter((t) => t.startsWith("ageben::pos::")), ["ageben::pos::cite"]);
+    assert.equal(ewel.guid, noteGuid("overlay", "ewel@same-role-words", "like"));
     const set = [{ senseForm: "xam", pos: "w", kind: "may" as const }];
-    assert.equal(slotTaughtByMForm({ senseForm: "xal", pos: "w", kind: "may" as const }, set), true);
-    assert.equal(slotTaughtByMForm({ senseForm: "xal", pos: "th", kind: "may" as const }, set), false);
-    assert.equal(slotTaughtByMForm({ senseForm: "xal", pos: "w", kind: "notional" as const }, set), false);
-    assert.equal(slotTaughtByMForm({ senseForm: "xam", pos: "w", kind: "may" as const }, set), false);
+    const xal = (pos: string, kind: "may" | "notional", gloss = "X-find") => ({ senseForm: "xal", pos, kind, gloss });
+    const taught = new Set(["X-find"]);
+    assert.equal(slotTaughtByMForm(xal("w", "may"), set, taught), true);
+    assert.equal(slotTaughtByMForm(xal("w", "may", "X-other"), set, taught), false);
+    assert.equal(slotTaughtByMForm(xal("th", "may"), set, taught), false);
+    assert.equal(slotTaughtByMForm(xal("w", "notional"), set, taught), false);
+    assert.equal(slotTaughtByMForm({ ...xal("w", "may"), senseForm: "xam" }, set, taught), false);
   });
 
   it("orders overlay notes by checkpoint", () => {
@@ -146,7 +162,7 @@ describe("buildNotes", () => {
     const ezemGlosses = inputs.overlays.filter((r) => r.senseForm === "ezem" && r.pos !== "g").map((r) => r.gloss);
     assert.equal(notes.overlays.find((n) => n.key === "ezem")!.guid, noteGuid("overlay", "ezem", wordNoteGloss(ezemGlosses.map((gloss) => ({ gloss })))));
     assert.equal(wordNoteGloss([{ gloss: "b" }, { gloss: "a" }, { gloss: "b" }]), "a / b");
-    const all = [...notes.roots, ...notes.compounds, ...notes.overlays, ...notes.slots].map((n) => n.guid);
+    const all = allNotes(notes).map((n) => n.guid);
     assert.equal(new Set(all).size, all.length);
   });
 
@@ -163,16 +179,16 @@ describe("buildNotes", () => {
   });
 
   it("tags every note with one release id that changes only when content changes", () => {
-    const all = [...notes.roots, ...notes.compounds, ...notes.overlays, ...notes.slots];
+    const all = allNotes(notes);
     const id = releaseId(all);
     assert.match(id, /^[0-9a-f]{8}$/);
     for (const n of all) assert.equal(n.tags.filter((t) => t.startsWith("ageben::release::")).join(), `ageben::release::${id}`, n.key);
     const reversed = rebuild([...inputs.published].reverse());
-    assert.equal(releaseId([...reversed.roots, ...reversed.compounds, ...reversed.overlays, ...reversed.slots]), id);
+    assert.equal(releaseId(allNotes(reversed)), id);
     assert.equal(releaseId(all.map((n) => ({ ...n, tags: [] }))), id);
     const [a] = inputs.published;
     const edited = rebuild([{ ...a!, mnemonic: `${a!.mnemonic} x` }, ...inputs.published.slice(1)]);
-    assert.notEqual(releaseId([...edited.roots, ...edited.compounds, ...edited.overlays, ...edited.slots]), id);
+    assert.notEqual(releaseId(allNotes(edited)), id);
   });
 
   it("tags core words and overlays with the checkpoint that first drills them", () => {
@@ -185,7 +201,7 @@ describe("buildNotes", () => {
       const cp = inputs.checkpoints.find((c) => c.anchor === n.core)!;
       assert.deepEqual(cps, [`ageben::cp::${cp.page.replace(/\.md$/, "")}::${cp.band}`], n.key);
     }
-    for (const n of [...notes.overlays, ...notes.slots]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
+    for (const n of [...notes.overlays, ...notes.slots, ...notes.endings]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
     assert.ok(!notes.roots.some((n) => n.tags.some((t) => t.startsWith("ageben::core::"))));
   });
 
@@ -199,12 +215,60 @@ describe("buildNotes", () => {
   it("gives no two production fronts the same glosses", () => {
     const seen = new Map<string, string>();
     const dupes: string[] = [];
-    for (const n of [...notes.roots, ...notes.compounds, ...notes.overlays, ...notes.slots]) {
+    for (const n of allNotes(notes)) {
       const key = productionGlosses(n);
       if (seen.has(key)) dupes.push(`${seen.get(key)} / ${n.key}: ${key}`);
       else seen.set(key, n.key);
     }
     assert.deepEqual(dupes, []);
+  });
+});
+
+describe("ending notes", () => {
+  const cpOf = (tags: readonly string[]) => tags.find((t) => t.startsWith("ageben::cp::"));
+  const cloze = (l: string, m: string, r: string) =>
+    `{{c1::<code>-l</code>}} <i>${l}</i> · {{c2::<code>-m</code>}} <i>${m}</i> · {{c3::<code>-r</code>}} <i>${r}</i>`;
+
+  it("puts the scale note first, at sakes.md#beginner-practice, as an Ageben set note", () => {
+    const scale = notes.endings[0]!;
+    assert.equal(scale.key, SCALE_NOTE_KEY);
+    assert.equal(scale.model, SET_MODEL);
+    assert.equal(scale.guid, noteGuid("set", SCALE_NOTE_KEY, ""));
+    assert.equal(cpOf(scale.tags), "ageben::cp::sakes::beginner");
+    assert.equal(scale.fields.text, cloze("settled", "default", "passing"));
+    assert.equal(scale.fields.link, "https://clarityconlang.com/grammar/sakes.html#settled-to-passing");
+    assert.ok(inputs.pageText(SCALE_ANCHOR.split("#")[0]!).includes(`id="${SCALE_ANCHOR.split("#")[1]}"`));
+  });
+
+  it("gives each scale-ending kind one ending note, at its first -l / -r checkpoint", () => {
+    const order = new Map(inputs.checkpoints.map((c) => [checkpointTag(c.page, c.band), inputs.checkpoints.indexOf(c)]));
+    assert.deepEqual(notes.endings.slice(1).map((n) => n.key).sort(), [...SCALE_ENDING_KINDS].map(endingNoteKey).sort());
+    for (const kind of SCALE_ENDING_KINDS) {
+      const note = notes.endings.find((n) => n.key === endingNoteKey(kind))!;
+      const first = Math.min(...inputs.overlays.filter((r) => r.kind === kind && coveredByEndingNote(r)).map((r) => order.get(anchorCheckpoint(r.anchor, inputs)!.tag)!));
+      assert.equal(order.get(cpOf(note.tags)!), first, kind);
+      assert.ok(note.tags.includes(`ageben::overlay::${kind}`), kind);
+      assert.equal(note.guid, noteGuid("set", endingNoteKey(kind), ""));
+      assert.equal(new Set([...note.fields.text.matchAll(/\{\{c(\d+)::/g)].map((m) => m[1])).size, 3, kind);
+    }
+    const at = notes.endings.map((n) => order.get(cpOf(n.tags)!)!);
+    assert.deepEqual(at, [...at].sort((a, b) => a - b));
+    const evidential = notes.endings.find((n) => n.key === endingNoteKey("evidential"))!;
+    assert.ok(evidential.fields.text.startsWith(cloze("strong", "default", "weak")));
+    assert.equal(cpOf(evidential.tags), "ageben::cp::evidentiality::intermediate");
+    // Lexical endings keep their word notes and stay off the ending note's forms.
+    const phasal = notes.endings.find((n) => n.key === endingNoteKey("phasal"))!;
+    assert.ok(phasal.fields.text.startsWith(cloze("lasting", "default", "for now")));
+    assert.ok(!phasal.fields.text.includes("elom"));
+    for (const form of LEXICAL_ENDING_FORMS) assert.ok(notes.overlays.some((n) => n.key === form), form);
+  });
+
+  it("reads an ending off a gloss's suffix", () => {
+    assert.equal(endingReading("MEMORY.strong"), "strong");
+    assert.equal(endingReading("already.for-now"), "for now");
+    assert.equal(endingReading("WANT-passing"), "passing");
+    assert.equal(endingReading("MEMORY"), undefined);
+    assert.equal(endingReading("not-yet"), undefined);
   });
 });
 
@@ -232,7 +296,7 @@ describe("packs", () => {
     deck!.notes.forEach((n, i) => {
       assert.equal(n.source, i % 2 === 0 ? "root" : "overlay");
       if (i % 2 === 0) assert.equal(n.key, inputs.sakeRoots[i / 2]);
-      else assert.equal(n.fields.kind, "sake");
+      else assert.equal(n.model === OVERLAY_MODEL && n.fields.kind, "sake");
     });
   });
 
@@ -243,7 +307,9 @@ describe("packs", () => {
       ["Ageben::Everything::Compounds", inputs.compounds.length],
       ["Ageben::Everything::Overlays", notes.overlays.length],
       ["Ageben::Everything::Slots", notes.slots.length],
+      ["Ageben::Everything::Endings", notes.endings.length],
     ]);
+    assert.deepEqual(packJson({ id: "everything", decks }).modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS, [SET_MODEL]: SET_FIELDS });
   });
 
   it("names the overlay note type on overlay notes in the pack JSON, with its field order", () => {
