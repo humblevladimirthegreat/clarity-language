@@ -623,7 +623,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🛑,stop,ezohu,place,takes-away,medium,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-practice
 🚧,construction,ugohu,place,takes-away,medium,blockage,construction blocks the road; blockage is something in the way,,block; barrier,roles.md#beginner-practice
 🛙,lighthouse,olaho,place,order,big,vigilance,a lighthouse keeps watch through the night; vigilance is keeping watch for danger,,,
-⚓,anchor,awu,tool,takes-away,,grounding,anchor holds the ship steady; grounding is staying steady,,,hook-compounds.md#advanced-practice
+⚓,anchor,awu,tool,takes-away,,grounding,anchor holds the ship steady; grounding is staying steady,,,here-there.md#beginner-practice
 🛟,life-buoy,olowu,tool,takes-away,medium,rescue,a lifebuoy is thrown to pull someone from the water,,,
 🛶,canoe,egavo,doing,order,big,lake,a canoe floats on a lake,,,
 🚤,boat,ubava,doing,holds,big,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,viewpoint.md#intermediate-practice

@@ -116,6 +116,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *luggage* | `elobal` | 🧳 |
 | *dog* | `odozel` | 🐕 |
 | *sleep* | `vezuvel` | 💤 from *sleep* |
+| *anchor* | `awul` | ⚓ |
 
 **Review:**
 
@@ -156,6 +157,14 @@ z-Alazun | v-sleep | [away-from | b-interlocutors]
 `zazozon vehohel em bayan.`
 
 z-Azozon | v-sit | [near | b-interlocutors]
+:::
+
+**4.** *Ahelan sees an anchor somewhere.*
+
+::: details Show answer
+`zahelan dawul vayebel el bar.`
+
+z-Ahelan | d-anchor | v-see | [at | b-something]
 :::
 
 #### Ageben → English {#beginner-ageben-to-english}

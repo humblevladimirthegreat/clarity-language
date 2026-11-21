@@ -175,7 +175,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *ship* | `ahaval` | 🚢 |
-| *anchor* | `awul` | ⚓ |
 
 **Review:**
 
@@ -185,6 +184,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
 | *walk* | `vowurol` |
+| *anchor* | `awul` |
 | *boat* | `ubaval` |
 | *guard* | `agayul` |
 | *fog* | `ovulul` |
