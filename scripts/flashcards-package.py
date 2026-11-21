@@ -2,7 +2,9 @@
 
 Run through npm run flashcards; by hand: .venv/bin/python scripts/flashcards-package.py <pack.json> <out.apkg>
 
-The pack JSON's `model` names the note type: "Ageben lexicon" (v1 packs) or "Claritish".
+The pack JSON's `model` names the default note type ("Ageben lexicon", "Claritish", "Ageben overlay"
+or "Ageben set") and `fields` its field order. A note may name another type in its own `model`;
+the pack's `modelFields` then gives that type's field order, keyed by name.
 Each note type and its ids are fixed constants so a re-import updates notes and keeps review
 history; note GUIDs and deck ids come from the JSON, where they derive from stable keys.
 """
@@ -15,6 +17,8 @@ import genanki
 
 MODEL_ID = 1738204517
 CLARITISH_MODEL_ID = 1738204518
+OVERLAY_MODEL_ID = 1738204519
+SET_MODEL_ID = 1738204520
 FIELDS = ["front", "concrete", "abstract", "aliases", "parts", "mnemonic", "kind"]
 
 # Overlays (kind set) lead with the definition; roots and compounds show labeled concrete,
@@ -92,10 +96,90 @@ CLARITISH_MODEL = genanki.Model(
     sort_field_index=0,
 )
 
-# Note type by the JSON's `model`, with the fields that already hold HTML (never escaped).
+# Ageben overlay: `example` holds the example sentence as HTML with the overlay word wrapped in
+# <span class="overlay">; recognition highlights it, production blanks it. The back: definition,
+# per-slot readings (empty when one reading), host's concrete sense (empty for bare-vowel forms),
+# the word note a slot note extends, the example's morph gloss, the anchor link, then the mnemonic.
+OVERLAY_FIELDS = ["example", "form", "definition", "readings", "host", "slot_of", "gloss", "link", "mnemonic", "kind"]
+
+OVERLAY_BACK = """
+<div class="english">
+<div class="line"><span class="label">definition</span>{{definition}}</div>
+{{#readings}}<div class="line readings">{{readings}}</div>{{/readings}}
+{{#host}}<div class="line"><span class="label">host</span>{{host}}</div>{{/host}}
+{{#slot_of}}<div class="line"><span class="label">new slot of</span>{{slot_of}}</div>{{/slot_of}}
+</div>
+{{#gloss}}<div class="gloss">{{gloss}}</div>{{/gloss}}
+{{#link}}<div class="link"><a href="{{link}}">grammar section</a></div>{{/link}}
+{{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}
+"""
+
+EXAMPLE_CSS = """
+.example { font-size: 28px; margin: 0.4em 0; }
+.overlay { font-weight: 700; color: #1a5fb4; background: rgba(26, 95, 180, 0.12); border-radius: 0.2em; padding: 0 0.15em; }
+.nightMode .overlay, .night_mode .overlay { color: #99c1f1; background: rgba(153, 193, 241, 0.15); }
+.blank .overlay { color: transparent; background: none; border-bottom: 2px solid #888; }
+.readings { font-size: 17px; }
+.gloss { margin-top: 0.8em; font-size: 15px; font-family: ui-monospace, monospace; opacity: 0.8; }
+.link { margin-top: 0.6em; font-size: 13px; }
+"""
+
+OVERLAY_MODEL = genanki.Model(
+    OVERLAY_MODEL_ID,
+    "Ageben overlay",
+    fields=[{"name": f} for f in OVERLAY_FIELDS],
+    templates=[
+        {
+            "name": "Recognition",
+            "qfmt": '<div class="example">{{example}}</div>',
+            "afmt": '{{FrontSide}}<hr id="answer">' + OVERLAY_BACK,
+        },
+        {
+            "name": "Production",
+            "qfmt": '<div class="english"><div class="line"><span class="label">definition</span>{{definition}}</div></div>'
+            + '<div class="example blank">{{example}}</div>'
+            # The CSS hides the word; the script also takes it out of the page, so its length and
+            # a text selection give nothing away.
+            + "<script>document.querySelectorAll('.blank .overlay').forEach((e) => { e.textContent = '\\u2003\\u2003\\u2003'; });</script>",
+            "afmt": '<div class="example">{{example}}</div><hr id="answer">' + OVERLAY_BACK,
+        },
+    ],
+    css=CSS + EXAMPLE_CSS,
+    sort_field_index=1,
+)
+
+# Ageben set: an Anki Cloze type, one blank per member ({{c1::...}}), the other members showing.
+# `title` names the set (the kind, or the scale or ending it teaches); `text` is the cloze HTML.
+SET_FIELDS = ["text", "title", "link", "mnemonic"]
+
+SET_MODEL = genanki.Model(
+    SET_MODEL_ID,
+    "Ageben set",
+    fields=[{"name": f} for f in SET_FIELDS],
+    templates=[
+        {
+            "name": "Cloze",
+            "qfmt": '{{#title}}<div class="title">{{title}}</div>{{/title}}<div class="example">{{cloze:text}}</div>',
+            "afmt": '{{#title}}<div class="title">{{title}}</div>{{/title}}<div class="example">{{cloze:text}}</div>'
+            + '{{#link}}<div class="link"><a href="{{link}}">grammar section</a></div>{{/link}}'
+            + '{{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}',
+        },
+    ],
+    css=CSS + EXAMPLE_CSS + """
+.title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
+.cloze { font-weight: 700; color: #1a5fb4; }
+.nightMode .cloze, .night_mode .cloze { color: #99c1f1; }
+""",
+    model_type=genanki.Model.CLOZE,
+    sort_field_index=1,
+)
+
+# Note type by name (the JSON's `model`), with the fields that already hold HTML (never escaped).
 MODELS = {
     "Ageben lexicon": (LEXICON_MODEL, set()),
     "Claritish": (CLARITISH_MODEL, {"meaning"}),
+    "Ageben overlay": (OVERLAY_MODEL, {"example", "readings"}),
+    "Ageben set": (SET_MODEL, {"text"}),
 }
 
 
@@ -104,18 +188,30 @@ def main() -> None:
         sys.exit("usage: flashcards-package.py <pack.json> <out.apkg>")
     with open(sys.argv[1], encoding="utf-8") as f:
         pack = json.load(f)
-    if pack.get("model") not in MODELS:
-        sys.exit(f"unknown note type {pack.get('model')!r}; use {', '.join(MODELS)}")
-    model, html_fields = MODELS[pack["model"]]
-    names = [f["name"] for f in model.fields]
-    if pack["fields"] != names:
-        sys.exit(f"field mismatch: JSON has {pack['fields']}, note type {model.name} has {names}")
+    field_orders = {pack.get("model"): pack.get("fields"), **pack.get("modelFields", {})}
+    checked: dict[str, tuple[genanki.Model, set[str], list[str]]] = {}
 
+    def note_type(name: str) -> tuple[genanki.Model, set[str], list[str]]:
+        """The note type a note names, its HTML fields and field order, checked against the JSON once."""
+        if name not in checked:
+            if name not in MODELS:
+                sys.exit(f"unknown note type {name!r}; use {', '.join(MODELS)}")
+            model, html_fields = MODELS[name]
+            names = [f["name"] for f in model.fields]
+            if field_orders.get(name) != names:
+                sys.exit(f"field mismatch: JSON has {field_orders.get(name)} for {name}, note type has {names}")
+            checked[name] = (model, html_fields, names)
+        return checked[name]
+
+    note_type(pack.get("model"))
     decks = []
     due = 0
     for d in pack["decks"]:
         deck = genanki.Deck(d["id"], d["name"])
         for n in d["notes"]:
+            model, html_fields, names = note_type(n.get("model", pack["model"]))
+            if len(n["fields"]) != len(names):
+                sys.exit(f"note {n['guid']}: {len(n['fields'])} fields, note type {model.name} has {len(names)}")
             # Due keeps new cards in pack order: checkpoint order, then CSV order.
             deck.add_note(
                 genanki.Note(

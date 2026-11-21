@@ -15,12 +15,9 @@ import { join, resolve } from "node:path";
 
 import { claritishLessons, lessonPages, levelReviewPages } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { claritishPackJson, claritishTsv, loadClaritishPack } from "../src/flashcards-claritish.js";
-import { buildNotes, buildPack, loadFlashcardInputs, NOTE_FIELDS, PACK_IDS, packTsv, type PackId } from "../src/flashcards.js";
+import { buildNotes, buildPack, loadFlashcardInputs, PACK_IDS, packJson, packTsv, type PackId } from "../src/flashcards.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath } from "../src/tmp-paths.js";
-
-/** Note type of the v1 packs (the `model` in their JSON; `packTsv` names the same). */
-const LEXICON_MODEL = "Ageben lexicon";
 
 type Options ={ packs: PackId[]; out: string; tsvOnly: boolean };
 
@@ -74,11 +71,7 @@ function main(): void {
     writeFileSync(`${base}.tsv`, packTsv(pack));
     const count = pack.decks.reduce((n, d) => n + d.notes.length, 0);
     if (!options.tsvOnly) {
-      packageJson(base, {
-        model: LEXICON_MODEL,
-        fields: NOTE_FIELDS,
-        decks: pack.decks.map((d) => ({ name: d.name, id: d.id, notes: d.notes.map((n) => ({ guid: n.guid, fields: NOTE_FIELDS.map((f) => n.fields[f]), tags: n.tags })) })),
-      });
+      packageJson(base, packJson(pack));
     }
     console.log(`${id}: ${count} notes in ${pack.decks.length} deck(s) → ${base}.${options.tsvOnly ? "tsv" : "apkg"}`);
   }

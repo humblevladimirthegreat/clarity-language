@@ -59,6 +59,37 @@ export type LexiconPackId = Exclude<PackId, "claritish">;
 export type PackDeck = { name: string; id: number; notes: FlashcardNote[] };
 export type Pack = { id: LexiconPackId; decks: PackDeck[] };
 
+/** Note types `scripts/flashcards-package.py` builds, by name, with their field order. */
+export const LEXICON_MODEL = "Ageben lexicon";
+export const OVERLAY_MODEL = "Ageben overlay";
+/** `example` is HTML with the overlay word in `<span class="overlay">`; `readings` is HTML. */
+export const OVERLAY_FIELDS = ["example", "form", "definition", "readings", "host", "slot_of", "gloss", "link", "mnemonic", "kind"] as const;
+/** Anki Cloze type; `text` is the cloze HTML, one `{{cN::…}}` per member. */
+export const SET_MODEL = "Ageben set";
+export const SET_FIELDS = ["text", "title", "link", "mnemonic"] as const;
+
+/** A note in the pack JSON; `model` names its note type when it is not the pack's default. */
+export type PackJsonNote = { guid: string; fields: string[]; tags: string[]; model?: string };
+/**
+ * The JSON `scripts/flashcards-package.py` packages: the default note type and its field order,
+ * the field order of any other type a note names (`modelFields`), and the decks.
+ */
+export type PackJson = {
+  model: string;
+  fields: readonly string[];
+  modelFields?: Record<string, readonly string[]>;
+  decks: { name: string; id: number; notes: PackJsonNote[] }[];
+};
+
+/** The pack JSON of a lexicon pack: every note of the Ageben lexicon type. */
+export function packJson(pack: Pack): PackJson {
+  return {
+    model: LEXICON_MODEL,
+    fields: NOTE_FIELDS,
+    decks: pack.decks.map((d) => ({ name: d.name, id: d.id, notes: d.notes.map((n) => ({ guid: n.guid, fields: NOTE_FIELDS.map((f) => n.fields[f]), tags: n.tags })) })),
+  };
+}
+
 const DECK_ROOT = "Ageben";
 
 /**
@@ -304,7 +335,7 @@ export function packTsv(pack: Pack): string {
   const lines = [
     "#separator:tab",
     "#html:false",
-    "#notetype:Ageben lexicon",
+    `#notetype:${LEXICON_MODEL}`,
     "#deck column:1",
     "#guid column:2",
     `#tags column:${NOTE_FIELDS.length + 3}`,
