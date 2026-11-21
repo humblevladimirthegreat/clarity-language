@@ -7,6 +7,8 @@ import { NOT_CORE_ROOTS } from "./core-vocabulary.js";
 import {
   anchorCheckpoint,
   buildNotes,
+  coveredByEndingNote,
+  LEXICAL_ENDING_FORMS,
   buildPack,
   loadFlashcardInputs,
   noteGuid,
@@ -15,6 +17,9 @@ import {
   productionGlosses,
   sakeInventoryRoots,
 } from "./flashcards.js";
+import { overlayExamples, overlayRowKey } from "./flashcards-examples.js";
+import { loadDefaultTables } from "./parse/index.js";
+import { morphGlossLine } from "./parse/morph-gloss.js";
 
 const pages = lessonPages();
 const inputs = loadFlashcardInputs(pages, levelReviewPages);
@@ -176,5 +181,85 @@ describe("sakeInventoryRoots", () => {
   it("reads the first column of the inventory table", () => {
     const md = "### Sake inventory {#sake-inventory}\n\n| Ageben | Use |\n|---|---|\n| **`ahu`** | autonomy |\n| **`ulo`** | competence |\n\nAfter.\n";
     assert.deepEqual(sakeInventoryRoots(md), ["ahu", "ulo"]);
+  });
+});
+
+describe("overlayExamples", () => {
+  const tables = loadDefaultTables();
+  const started = performance.now();
+  const examples = overlayExamples(inputs.overlays, inputs, tables);
+  const elapsed = Math.round(performance.now() - started);
+
+  it("gives every overlay row an example, except the -l / -r forms an ending note covers", (t) => {
+    t.diagnostic(`overlayExamples: ${inputs.overlays.length} rows in ${elapsed} ms`);
+    const missing = inputs.overlays
+      .filter((row) => !coveredByEndingNote(row) && !examples.has(overlayRowKey(row)))
+      .map((row) => overlayRowKey(row));
+    assert.deepEqual(missing, [], `overlay rows with no example (sense_form@pos anchor):\n${missing.join("\n")}`);
+  });
+
+  it("exempts only scale-ending -l / -r forms, never the lexical ones", () => {
+    assert.ok(coveredByEndingNote({ kind: "evidential", senseForm: "ubol" }));
+    assert.ok(!coveredByEndingNote({ kind: "evidential", senseForm: "ubom" }));
+    assert.ok(!coveredByEndingNote({ kind: "may", senseForm: "omal" }));
+    for (const form of LEXICAL_ENDING_FORMS) assert.ok(!coveredByEndingNote({ kind: "phasal", senseForm: form }), form);
+  });
+
+  it("glosses every example with the page glosser, naming the overlay's slot word", () => {
+    const unnamed: string[] = [];
+    for (const row of inputs.overlays) {
+      const example = examples.get(overlayRowKey(row));
+      if (!example) continue;
+      assert.ok(example.gloss.trim(), overlayRowKey(row));
+      assert.equal(example.gloss, morphGlossLine(example.text, tables, { strict: true }));
+      // The slot word's gloss: the row's gloss, or the parser's label for it, which the definition names.
+      const labels = example.gloss.split("|").map((w) => w.replace(/[[\]{}]/g, "").trim().replace(/^[a-z]+-/, ""));
+      if (!example.gloss.includes(row.gloss) && !labels.some((l) => l && row.definition.includes(l))) unnamed.push(`${overlayRowKey(row)}: ${example.gloss}`);
+    }
+    assert.deepEqual(unnamed, []);
+  });
+
+  // A small page: a short example outside the anchor section, a longer one inside it, and a lone citation.
+  const page = [
+    "# Page",
+    "",
+    "## Elsewhere {#elsewhere}",
+    "",
+    "Short: `zazozon thomam`.",
+    "",
+    "## Taught {#taught}",
+    "",
+    "Citation: `thomam`. Sentence: `zalazun thomam dahelan vudurul.`",
+    "",
+    "## Cited only {#cited}",
+    "",
+    "Citation: `thomam`.",
+    "",
+    "### Practice {#practice}",
+    "",
+  ].join("\n");
+  const sectionOf = (id: string) => {
+    const offset = page.indexOf(`{#${id}}`);
+    const next = page.indexOf("\n#", offset);
+    return { band: "beginner" as const, line: page.slice(0, offset).split("\n").length, offset: page.lastIndexOf("\n", offset) + 1, end: next < 0 ? page.length : next + 1 };
+  };
+  const fake = {
+    checkpoints: [{ anchor: "p.md#practice", page: "p.md", band: "beginner", line: page.split("\n").indexOf("### Practice {#practice}") + 1, review: false }] as unknown as typeof inputs.checkpoints,
+    anchorSection: (anchor: string) => sectionOf(anchor.split("#")[1]!),
+    pageText: () => page,
+  };
+  const may = inputs.overlays.find((r) => r.senseForm === "omam" && r.pos === "th")!;
+
+  it("prefers an example in the anchor section over a shorter one elsewhere on the page", () => {
+    const example = overlayExamples([{ ...may, anchor: "p.md#taught" }], fake, tables).get(overlayRowKey({ ...may, anchor: "p.md#taught" }));
+    assert.equal(example?.text, "zalazun thomam dahelan vudurul.");
+    assert.equal(example?.from, "section");
+  });
+
+  it("never takes a lone citation; falls back to the rest of the page", () => {
+    const row = { ...may, anchor: "p.md#cited" };
+    const example = overlayExamples([row], fake, tables).get(overlayRowKey(row));
+    assert.equal(example?.text, "zazozon thomam");
+    assert.equal(example?.from, "page");
   });
 });

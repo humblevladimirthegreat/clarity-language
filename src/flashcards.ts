@@ -41,8 +41,10 @@ export type FlashcardInputs = {
   checkpoints: readonly Checkpoint[];
   /** Band of the section a `page.md#id` anchor lands in. */
   anchorBand: (anchor: string) => Band | undefined;
-  /** Band and 1-based heading line of the section a `page.md#id` anchor lands in. */
-  anchorSection: (anchor: string) => { band: Band | undefined; line: number } | undefined;
+  /** Band, 1-based heading line, and `[offset, end)` in the page text of the section a `page.md#id` anchor lands in. */
+  anchorSection: (anchor: string) => { band: Band | undefined; line: number; offset: number; end: number } | undefined;
+  /** Markdown of a grammar page. */
+  pageText: (page: string) => string;
   /** Display title of a grammar page (`clause.md` → `Clause`). */
   pageTitle: (page: string) => string;
   /** Sake roots in sake-inventory order. */
@@ -236,6 +238,20 @@ export function anchorCheckpoint(anchor: string, inputs: Pick<FlashcardInputs, "
   return { page, band: checkpoint.band, id, anchor: checkpoint.anchor, tag: checkpointTag(page, checkpoint.band) };
 }
 
+/** Overlay kinds whose `-l` / `-r` endings read the scale: one ending note per kind teaches those endings. */
+export const SCALE_ENDING_KINDS: ReadonlySet<string> = new Set(["evidential", "phasal", "want", "attempt", "decision", "mirative"]);
+
+/** `-l` / `-r` forms of scale-ending kinds whose ending is lexical: each keeps its own word note. */
+export const LEXICAL_ENDING_FORMS: ReadonlySet<string> = new Set(["elol", "elor", "ahul", "ahur"]);
+
+/**
+ * True when an overlay row gets no word note of its own: an `-l` / `-r` form of a {@link SCALE_ENDING_KINDS} kind,
+ * taught by the kind's ending note, unless its ending is lexical ({@link LEXICAL_ENDING_FORMS}). Such rows need no example.
+ */
+export function coveredByEndingNote(row: Pick<OverlayRow, "kind" | "senseForm">): boolean {
+  return SCALE_ENDING_KINDS.has(row.kind) && /[lr]$/.test(row.senseForm) && !LEXICAL_ENDING_FORMS.has(row.senseForm);
+}
+
 /** Inputs from data/ and docs/grammar/: `pages` is the reading order with titles, reviews last in each group. */
 export function loadFlashcardInputs(
   pages: readonly { page: string; title: string }[],
@@ -251,11 +267,12 @@ export function loadFlashcardInputs(
     }
   }
   const sections = new Map<string, PageSections>();
+  const pageText = (page: string) => {
+    if (!markdown.has(page)) markdown.set(page, readFileSync(grammarFile(page), "utf8"));
+    return markdown.get(page)!;
+  };
   const sectionsOf = (page: string) => {
-    if (!sections.has(page)) {
-      const text = markdown.get(page) ?? readFileSync(grammarFile(page), "utf8");
-      sections.set(page, pageSections(page, text));
-    }
+    if (!sections.has(page)) sections.set(page, pageSections(page, pageText(page)));
     return sections.get(page)!;
   };
   const titles = new Map(pages.map((p) => [p.page, p.title]));
@@ -272,9 +289,10 @@ export function loadFlashcardInputs(
       const [page, id] = anchor.split("#") as [string, string | undefined];
       const section = sectionsOf(page).anchors.get(id ?? "");
       if (!section) return undefined;
-      const text = markdown.get(page) ?? readFileSync(grammarFile(page), "utf8");
-      return { band: section.band, line: text.slice(0, section.offset).split("\n").length };
+      const text = pageText(page);
+      return { band: section.band, line: text.slice(0, section.offset).split("\n").length, offset: section.offset, end: section.end };
     },
+    pageText,
     pageTitle: (page) => titles.get(page) ?? page.replace(/\.md$/, ""),
     sakeRoots: sakeInventoryRoots(markdown.get("sakes.md") ?? readFileSync(grammarFile("sakes.md"), "utf8")),
   };
