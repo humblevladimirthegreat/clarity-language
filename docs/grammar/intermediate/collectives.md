@@ -184,6 +184,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *sheet-music* | `ehorol` | 🎼 |
 | *heavy* | `arolem` | 🪨 from *rock* |
+| *socks* | `ubal` | 🧦 |
 
 **Review:**
 
@@ -219,12 +220,12 @@ z-Azozon-x | v-sing-x
 z-sheet-music-x | g-heavy-x
 :::
 
-**3.** *You all see the sheet music.*
+**3.** *You all see the socks.*
 
 ::: details Show answer
-`zawanx dehorol vayebel.`
+`zawanx dubal vayebel.`
 
-z-listener-x | d-sheet-music | v-see
+z-listener-x | d-socks | v-see
 :::
 
 **4.** *Azozon and Alazun see three pages between them.*

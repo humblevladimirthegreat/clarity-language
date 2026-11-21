@@ -32,13 +32,13 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Ageben | Cue |
 |---------|--------|-----|
-| *socks* | `ubal` | 🧦 |
 | *shirt* | `ehobal` | 👕 |
 
 **Review:**
 
 | English | Ageben |
 |---------|--------|
+| *socks* | `ubal` |
 | *Azozon* | `azozon` |
 | *Alazun* | `alazun` |
 | *Ahelan* | `ahelan` |
