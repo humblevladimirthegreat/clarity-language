@@ -7,7 +7,6 @@ const ANCHOR = "docs/meta/code-layout.md#limits";
 
 // Remove a row when its file is split; never raise a count.
 const ALLOWED: Record<string, number> = {
-  "src/interpret/translate.ts": 2298,
   "src/parse/morph-gloss.ts": 1763,
 };
 

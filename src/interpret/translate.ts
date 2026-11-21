@@ -24,7 +24,8 @@ import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js"
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
 
 import { KEPT_HOOK, sayOf, wrapText, type Conditional, type Ctx, type EveryHinge, type Frames, type LeftOut, type Literal, type MayOver, type Note, type Part, type Subst, type Talk, type TermSource, type TranslateOptions, type Translation, type Why, type Wrap } from "./translate-types.js";
-import { CONDITIONAL, HINGE_KEYS, ZONE_INTENTIONS, answerable, bareFrames, becauseDenied, claimTerms, denied, detailRange, fragment, held, hingeDenied, inRange, isEmptyClaim, isOrList, joinOf, mayDenied, name, nounHinge, orRow, over, ownChannel, placeOf, plainView, raws, replaceTerm, sharedAdjectives, str, termDetails, termFrames, valueTerm, type NounHinge, type Range } from "./translate-helpers.js";
+import { CONDITIONAL, HINGE_KEYS, ZONE_INTENTIONS, answerable, bareFrames, becauseDenied, claimTerms, detailRange, fragment, hingeDenied, inRange, isEmptyClaim, isOrList, joinOf, mayDenied, name, nounHinge, over, ownChannel, placeOf, plainView, raws, replaceTerm, sharedAdjectives, str, termDetails, termFrames, valueTerm, type Range } from "./translate-helpers.js";
+import { because, condition, hinge, notOne, nounCondition, nounHinge as sayNounHinge, orList, pool as poolClaim } from "./translate-conditions.js";
 
 // ── The program ─────────────────────────────────────────────────────────────
 
@@ -110,7 +111,7 @@ export function ownProgram(program: string): string {
 }
 
 
-class Translator {
+export class Translator {
   readonly lines: string[] = [];
   readonly readings: ReadingId[] = [];
   readonly terms = new Map<string, TermSource>();
@@ -447,7 +448,7 @@ class Translator {
     this.visited = [reading];
     this.bound = new Set();
     const g = nounHinge(reading);
-    if (g) return this.nounHinge(reading, g);
+    if (g) return sayNounHinge(this, reading, g);
     // R4c decision 5: a verbless list is a fragment, with no claim term.
     const frag = reading.unread.length ? undefined : fragment(reading);
     if (frag) return this.leave(reading, frag);
@@ -565,7 +566,7 @@ class Translator {
     if (grounds) {
       this.rule(ctx, grounds.text, []);
       this.rule(ctx, `grounds(${grounds.text},${this.claim(reading.claim, ctx)})`, []);
-      this.pool(grounds.reading, grounds.text, grounds.reading.claim, 1);
+      poolClaim(this, grounds.reading, grounds.text, grounds.reading.claim, 1);
     }
     if (own) this.use(...own.frames);
     this.use(carriedChannel);
@@ -642,7 +643,7 @@ class Translator {
       const ctx: Ctx = { reading: to, id: str(reading.id), subst: new Map(), asserted: sign > 0, out };
       const t = this.claim(to.claim, ctx);
       this.rule(ctx, sign > 0 ? t : `neg(${t})`, []);
-      this.pool(reading, t, to.claim, sign);
+      poolClaim(this, reading, t, to.claim, sign);
       const lines = this.witnesses.get(to.id);
       if (!had && lines) {
         this.witnesses.delete(to.id);
@@ -674,8 +675,8 @@ class Translator {
     if (inner === frames.hinge || inner === frames.because) {
       const gloss = inner.values.gloss ?? "";
       const fn = inner === frames.because ? (gloss === "because" ? "because" : undefined) : CONDITIONAL[gloss];
-      const noun = this.nounCondition(inner);
-      const cond = noun ? undefined : this.condition(reading, inner);
+      const noun = nounCondition(this, inner);
+      const cond = noun ? undefined : condition(this, reading, inner);
       if (!fn || (!noun && (!cond || cond.frames.some((f) => f.key !== "slot:newMember") || this.unrowed(cond) || claimTerms(cond.claim).some((x) => termFrames(x).length || isOrList(x))))) return this.leave(reading, bad);
       d = `${fn}(${noun?.text ?? this.claim(cond!.claim, { ...ctx, reading: cond! })},${t})`;
       this.use(inner);
@@ -714,7 +715,7 @@ class Translator {
     if (claimTerms(reading.claim).some((t) => t.kind === "list")) return bad;
     const cond = hosted.reading;
     if (cond.frames.some((f) => f.key !== "slot:newMember") || this.unrowed(cond) || cond.stanceLists?.length || claimTerms(cond.claim).some((t) => t.kind === "list" || termFrames(t).length)) return bad;
-    this.condition(reading, channel);
+    condition(this, reading, channel);
     return { text: this.claim(cond.claim, { ...ctx, reading: cond, asserted: false }), reading: cond };
   }
 
@@ -893,7 +894,7 @@ class Translator {
       this.rule(ctx, `maybe(${ctx.id})`, [], "gate");
       ctx.gate = `maybe(${ctx.id})`;
     }
-    if (ors.length && !frames.because) return this.orList(reading, claim, ors[0]!, ctx);
+    if (ors.length && !frames.because) return orList(this, reading, claim, ors[0]!, ctx);
 
     // Universal: the list term becomes X, its kind the body (rows 8, 9, R1-2).
     let sign: 1 | -1 = 1;
@@ -945,7 +946,7 @@ class Translator {
     if (whole && denial && inner) {
       // R4a-2: inside a holder's view, the items are the holder's views.
       if (frames.hinge || frames.because || frames.zone || frames.restrictor || (ctx.wrap && !plainView(ctx.wrap))) return { construction: "join.u", key: "joinSeries:u", reason: "noRow" };
-      if (inner.series === "e" && (inner.ending === "l" || inner.ending === "m")) return this.notOne(reading, claim, denial, ctx, inner.ending === "m");
+      if (inner.series === "e" && (inner.ending === "l" || inner.ending === "m")) return notOne(this, reading, claim, denial, ctx, inner.ending === "m");
       if (inner.series === "e" || inner.series === "ae") return noRow("joinSeries:u");
       const lits: Literal[] = [];
       denial.members.forEach((m, i) => {
@@ -969,7 +970,7 @@ class Translator {
     if (frames.universal && denial) heads.forEach((h) => (h.sign = -1));
     const lit = (h: { text: string; sign: number }): string => (h.sign < 0 ? `neg(${h.text})` : h.text);
 
-    if (frames.because) return this.because(reading, frames, claim, heads, body, ctx, mayOver);
+    if (frames.because) return because(this, reading, frames, claim, heads, body, ctx, mayOver);
     // Row 14's zone, outside MAY's choice. A say-word zone only on a plain claim or beside MAY (R4b-9); on a universal
     // only a closed `zual` (R4b-12, R4b-13).
     const zone = frames.zone ? this.zone(reading, frames.zone, { ...ctx, choice: false }) : undefined;
@@ -980,7 +981,7 @@ class Translator {
       // R4b-15 (D14): the earlier covers the later; a zone first marks the conditional (R4e decision 3).
       const first = zone && (over(reading, frames.zone!, frames.hinge) ? true : over(reading, frames.hinge, frames.zone!) ? false : undefined);
       if (zone && first === undefined) return zoneBad;
-      return this.hinge(reading, frames.hinge, heads, body, ctx, mayOver, false, zone ? { term: zone.term, first: !!first } : undefined);
+      return hinge(this, reading, frames.hinge, heads, body, ctx, mayOver, false, zone ? { term: zone.term, first: !!first } : undefined);
     }
 
     if (frames.restrictor) {
@@ -1005,7 +1006,7 @@ class Translator {
         this.rule(ctx, `may(${t})`, [], "always");
         this.rule(ctx, marker, [{ atom: `never(${t})`, premise: `never(${t})` }], "clash");
         this.rule(ctx, marker, [{ atom: "never(P)", premise: "never(P)" }, { atom: `fits(P,${t})` }], "clash");
-        this.pool(reading, t, heads[0]!.claim, 1);
+        poolClaim(this, reading, t, heads[0]!.claim, 1);
         return true;
       }
       // R4b-14: a zone only with bare `hual` / `hal`.
@@ -1024,7 +1025,7 @@ class Translator {
         this.rule(ctx, `against(${h.text},${zone.term})`, []);
         this.rule(ctx, `against(${h.text},${zone.term})`, [], "always");
       }
-      this.pool(reading, h.text, h.claim, never && !listed ? -1 : 1);
+      poolClaim(this, reading, h.text, h.claim, never && !listed ? -1 : 1);
       return true;
     }
 
@@ -1039,10 +1040,10 @@ class Translator {
         const plain = { ...ctx, choice: false };
         this.rule(plain, `against(${lit(h)},${zone.term})`, ctx.choice ? [{ atom: `holds(${lit(h)})`, premise: lit(h) }] : body);
         if (zone.say) this.rule(plain, wrapText(zone.say, lit(h)), []);
-        if (zone.say?.answer === "u") this.pool(reading, h.text, h.claim, -1);
+        if (zone.say?.answer === "u") poolClaim(this, reading, h.text, h.claim, -1);
       }
       if (list) this.templates.push({ ctx, list, claim: h.claim, sign: ban ? -1 : h.sign });
-      else if (!h.unasked) this.pool(reading, h.text, h.claim, ban ? -1 : h.sign);
+      else if (!h.unasked) poolClaim(this, reading, h.text, h.claim, ban ? -1 : h.sign);
       // R3-5: every MAY reading gives `may(T)`, which a hinge on a MAY condition reads; the holder's own MAY (R3-6) is
       // already a term inside the view.
       // R4b-18: over members the gate's `may(T)` is on the list term, ungated. R4b-20: over a say word, `may(say(..T))`.
@@ -1293,366 +1294,9 @@ class Translator {
           s.set(l, { text: claim.predicate.includes(l) ? this.kind(l.members[j]!, `${place}${j + 1}`, ctx) : this.term(l.members[j]!, `${place}${j + 1}`, ctx) });
           c = replaceTerm(c, l, m);
         }
-        this.pool(reading, this.claim(claim, { ...ctx, subst: s }), c, 1);
+        poolClaim(this, reading, this.claim(claim, { ...ctx, subst: s }), c, 1);
       }
     }
-  }
-
-  /**
-   * A hinge's condition: its hosted clause, the sentence a backward stand-in (`blarth`, stand-in-vowels.md#stand-in-back)
-   * resumes, or the next sentence (`grounds`). A noun condition (`gahum blugalal`) has none, so it has no row here yet.
-   */
-  condition(reading: Reading, frame: Frame): Reading | undefined {
-    const hosted = frame.hosted && throughAntecedent(frame.hosted);
-    const back = hosted?.kind === "pronoun" ? reading.links.find((l) => l.kind === "standInBack" && l.words.includes(hosted.word))?.to : undefined;
-    const cond = hosted?.kind === "clause" ? hosted.reading : back ? this.byId.get(back) : frame.content?.[0];
-    if (cond) {
-      for (const l of reading.links) if ((l.kind === "standIn" || l.kind === "standInBack" || l.kind === "grounds") && (l.to === cond.id || l.frame === frame)) this.use(l);
-      if (!this.visited.includes(cond)) this.visited.push(cond);
-    }
-    return cond;
-  }
-
-  /**
-   * R2-1 rows 5 to 8, R2-10 (because-and-iff.md#choosing-a-hinge, fault.md#fault, verb-and-stance-joins.md#stance-joins):
-   * *because* claims its outcome, its condition, and the link `cause(C, O)`; `-l` adds `fault(C, O)` and `-r`
-   * `share(C, O)`. *Not because* (`thul` on the hinge) claims the outcome and denies the link, leaving the condition
-   * unstated. *Only because* (`thebem` over `thahum`) adds row 6 on the same condition. On a closed universal each rule
-   * takes row 8's body, as a hinge does.
-   *
-   * R4b-2: inside a holder's view each term is wrapped. R4b-4 (D2): a condition with its own MAY, holder or say word is
-   * that clause's own term, `may(T)` (with row 15's choice on T), `view(H, T)` or `say(.., T)`. R4b-5 (D3): MAY right
-   * before the hinge gates only the link and its marker, and claims `may(cause(C, O))`. R4b-6 (D11): the hinge over MAY
-   * makes the outcome a choice, `may(O)`, and links `cause(C, may(O))`. R4b-7 (D12): under `hual` every atom also takes
-   * the marker `always(..)`; under `huam` one gate covers all three (held with `switch(defaults)`); an *or* list in the
-   * condition or the outcome is row 20's choice per item, each item linked in the worlds where it holds.
-   */
-  because(reading: Reading, frames: Frames, claim: Claim, heads: { text: string; claim: Claim; sign: 1 | -1 }[], body: Literal[], ctx: Ctx, mayOver?: MayOver): true | Why {
-    const frame = frames.because!;
-    const bad = { construction: frame.construction, key: frame.key, reason: "noRow" };
-    const gloss = frame.values.gloss;
-    if (gloss !== "because" && gloss !== "because.fault" && gloss !== "because.share") return bad;
-    const denied = !!becauseDenied(reading);
-    const noun = this.nounCondition(frame);
-    // The hinge's hosted list keeps no parts of its own.
-    const hosted = frame.hosted;
-    const orCond = !noun && hosted?.kind === "list" && hosted.parts.length <= 1 && isOrList({ ...hosted, parts: [hosted.parts[0] ?? { members: hosted.members }] as ListTerm["parts"] }) ? hosted : undefined;
-    const cond = noun || orCond ? undefined : this.condition(reading, frame);
-    const condFrames = cond?.frames.filter((f) => f.key !== "slot:newMember") ?? [];
-    if (heads.length !== 1 || (!noun && !orCond && (!cond || this.unrowed(cond) || claimTerms(cond.claim).some((t) => termFrames(t).length || isOrList(t))))) return bad;
-    const orOut = claimTerms(heads[0]!.claim, false).find(isOrList);
-    const restrictor = frames.restrictor?.values;
-    const always = restrictor?.series === "ua" && restrictor.ending === "l";
-    const often = restrictor?.series === "ua" && restrictor.ending === "m";
-    if (frames.restrictor && (!(always || often) || claim.details.some((d) => d.key === "unit:h") || denied)) return bad;
-    if ((orCond || orOut) && (!orRow((orCond ?? orOut)!) || denied || frames.hinge || frames.restrictor || mayOver || ctx.wrap || body.length)) return bad;
-    if (mayOver && (denied || frames.hinge || body.length)) return bad;
-    // R4b-4 (D2): the condition's own frame makes it that clause's own term.
-    let condText: string;
-    let condInner: string | undefined;
-    if (condFrames.length) {
-      if (denied || mayOver || frames.restrictor || frames.hinge || ctx.wrap || body.length || cond!.stanceLists?.length) return bad;
-      const cf = this.readingFrames(cond!);
-      const own = [cf.may, cf.holder, cf.say].filter(Boolean).length;
-      if (own !== 1 || cf.other || cf.hinge || cf.because || cf.universal || cf.restrictor || cf.zone || cf.likely || cf.mayHost || cf.standalone.length) return bad;
-      condInner = this.claim(cond!.claim, { ...ctx, reading: cond!, asserted: false });
-      if (cf.may) {
-        condText = `may(${condInner})`;
-        this.rule({ ...ctx, choice: true }, condInner, []);
-      } else {
-        const wrap = this.wrap(cond!, cf, { ...ctx, reading: cond! });
-        if (!wrap || "reason" in wrap) return bad;
-        condText = wrapText(wrap, condInner);
-      }
-      this.use(...condFrames);
-    } else {
-      condText = noun?.text ?? (orCond ? "" : this.claim(cond!.claim, { ...ctx, reading: cond!, asserted: false }));
-    }
-    if (/\bX\b/.test(condText)) return bad;
-    const h = heads[0]!;
-    const out = h.sign < 0 ? `neg(${h.text})` : h.text;
-    const w = (t: string): string => this.w(ctx, t);
-    const marker = (c: string, o: string): string | undefined => (gloss === "because.fault" ? `fault(${c},${o})` : gloss === "because.share" ? `share(${c},${o})` : undefined);
-    this.use(frame, frames.restrictor);
-    if (denied) this.useDenied(reading, becauseDenied(reading)!);
-
-    // R4b-7: an *or* list in the condition or the outcome: row 20 on the list, the link per item where it holds.
-    if (orCond || orOut) {
-      const list = (orCond ?? orOut)!;
-      const items = orCond
-        ? orCond.members.map((m, i) => {
-            if (m.kind !== "thing" || m.named || m.details.length) return undefined;
-            const text = name(m.root);
-            const slot = `i(${ctx.id},${i + 1})`;
-            const mClaim: Claim = { roles: { z: m }, predicate: [], details: [] };
-            this.kinds.set(text, m);
-            this.slots.set(slot, { reading: reading.id, claim: mClaim });
-            this.pool(reading, text, mClaim, 1);
-            return { text, slot };
-          })
-        : this.items(reading, h.claim, list, ctx);
-      if (items.some((it) => !it)) return bad;
-      const its = items as { text: string; slot: string }[];
-      this.orBounds(list, its, ctx);
-      this.use(list);
-      if (orCond) {
-        this.pool(reading, h.text, h.claim, h.sign);
-        this.rule(ctx, out, []);
-      } else {
-        this.pool(cond ?? reading, condText, noun?.claim ?? cond!.claim, 1);
-        this.rule(ctx, condText, []);
-      }
-      for (const it of its) {
-        const [c, o] = orCond ? [it.text, out] : [condText, it.text];
-        const lit: Literal[] = [{ atom: `holds(${it.text})`, premise: it.text }];
-        this.rule(ctx, `cause(${c},${o})`, lit);
-        const m = marker(c, o);
-        if (m) this.rule(ctx, m, lit);
-      }
-      return true;
-    }
-
-    this.pool(cond ?? reading, condInner ?? condText, noun?.claim ?? cond!.claim, 1);
-    if (!body.length) this.pool(reading, h.text, h.claim, h.sign);
-    if (mayOver === "outcome") {
-      // R4b-6 (D11): a world cause of a possible outcome.
-      const may = `may(${out})`;
-      this.rule(ctx, condText, []);
-      this.rule({ ...ctx, choice: true }, out, []);
-      this.rule(ctx, may, []);
-      this.rule(ctx, `cause(${condText},${may})`, []);
-      const m = marker(condText, may);
-      if (m) this.rule(ctx, m, []);
-      return true;
-    }
-    if (often) {
-      // R4b-7 (D12): under `huam` the outcome, the condition and the link are one choice together.
-      this.rule(ctx, `maybe(${ctx.id})`, [], "gate");
-      this.rule(ctx, `maybe(${ctx.id})`, [{ atom: "switch(defaults)" }], "some");
-      ctx.gate = `maybe(${ctx.id})`;
-    }
-    const link = `cause(${condText},${out})`;
-    const atoms: string[] = [out];
-    this.rule(ctx, w(out), body);
-    if (!denied) {
-      this.rule(ctx, w(condText), body);
-      atoms.push(condText);
-    }
-    if (mayOver === "link") {
-      // R4b-5 (D3): MAY right before the hinge hedges only the link; the outcome and the condition stay claimed.
-      this.rule(ctx, `may(${link})`, []);
-      this.rule(ctx, `maybe(${ctx.id})`, [], "gate");
-      ctx.gate = `maybe(${ctx.id})`;
-    }
-    this.rule(ctx, w(denied ? `neg(${link})` : link), body);
-    if (!denied) atoms.push(link);
-    const m = marker(condText, out);
-    if (m) this.rule(ctx, w(m), body);
-    // R4b-7 (D12): under `hual` each atom also takes the marker `always(..)`.
-    if (always) for (const a of atoms) this.rule(ctx, a, body, "always");
-    return frames.hinge ? this.hinge(reading, frames.hinge, heads, body, ctx, undefined, true) : true;
-  }
-
-  /**
-   * Rows 5–7 and R1-5: a condition hinge; neither its condition nor its outcome is claimed. R4e-1: the reading claims
-   * the conditional, `if(c(Id), o(Id))`, `onlyif(..)` or `iff(..)` (`neg(o(Id))` for a denied outcome), and each rule
-   * takes it in its body. R4e-3: a denied conditional (`thohem thul blarl`) claims `neg(T)` and runs no rule. A hinge on
-   * a universal keeps its rules with no term. R4e-6: MAY over the hinge makes the term a choice; MAY on the condition or
-   * under the hinge wraps that slot of the term in `may(..)`. R4b-1: a `bl-` noun
-   * condition reads as its kind.
-   */
-  hinge(reading: Reading, frame: Frame, heads: { text: string; claim: Claim; sign: 1 | -1 }[], body: Literal[], ctx: Ctx, mayOver?: MayOver, because = false, zone?: { term: string; first: boolean }): true | Why {
-    const bad = { construction: frame.construction, key: frame.key, reason: "noRow" };
-    const noun = this.nounCondition(frame);
-    const cond = noun ? undefined : this.condition(reading, frame);
-    // R4e finding 1: a first mention in the condition is written as its kind (R1-3), so its frame is no bar.
-    const condFrames = cond?.frames.filter((f) => f.key !== "slot:newMember") ?? [];
-    // R3-5: MAY inside the condition makes the condition a chance (causation.md#if).
-    const mayCond = condFrames.length === 1 && condFrames[0]!.key === "overlay:may:th" && !condFrames[0]!.holderHost;
-    if (heads.length !== 1 || (!noun && (!cond || (condFrames.length && !mayCond) || this.unrowed(cond) || claimTerms(cond.claim).some((t) => termFrames(t).length || isOrList(t))))) return bad;
-    if (claimTerms(heads[0]!.claim, false).some(isOrList)) return bad;
-    const gloss = frame.values.gloss ?? "";
-    const termName = CONDITIONAL[gloss];
-    if (!termName) return bad;
-    // R4e-6: MAY first (`thomam … thohem blarl`) makes the conditional a choice; the hinge first (`blarth` over MAY) makes the
-    // outcome possible.
-    const mayGate = mayOver === "gate";
-    const mayOutcome = mayOver === "outcome";
-    // R4a-9: a hinge over a say word (`thohem blarth` first): the outcome is the say term, the condition your own claim.
-    const sayOut = ctx.wrap?.kind === "say";
-    if (sayOut && (mayCond || mayOutcome || mayGate || because)) return bad;
-    const condClaim = noun?.claim ?? cond!.claim;
-    const condSite = cond ?? reading;
-    const universal = body.length > 0;
-    const every = universal ? ctx.every : undefined;
-    if (universal && !every) return bad;
-    // R4b-16 (usually-vs-must.md#how-things-work): a resume pronoun in the condition whose antecedent the universal binds
-    // is the member, `X`.
-    const bound = every && cond ? claimTerms(cond.claim).filter((t) => t.kind === "pronoun" && this.boundBy(t)) : [];
-    const condSubst = new Map(ctx.subst);
-    bound.forEach((t) => condSubst.set(t, { text: "X" }));
-    const condText = noun?.text ?? this.claim(cond!.claim, { ...ctx, reading: cond!, asserted: false, subst: condSubst });
-    if (!bound.length && /\bX\b/.test(condText)) return bad;
-    const denied = hingeDenied(reading) === frame;
-    // A denied conditional on a universal (R4e open decision 2), with MAY, in a wrap or beside *because* has no row.
-    // R4e-5: a holder's denied conditional is the holder's view, `view(H, neg(if(..)))`.
-    if (denied && (universal || mayCond || mayOutcome || mayGate || (ctx.wrap && !plainView(ctx.wrap)) || because)) return bad;
-    // R4b-15 (D14): a hinge over a zone marks the outcome its *if* rule gives; *only if* gives no outcome to mark. R4e
-    // decision 3: a zone over a hinge marks the conditional, which needs its term.
-    if (zone && (denied || universal || mayCond || mayOutcome || mayGate || sayOut || (!zone.first && gloss === "only-if"))) return bad;
-    const h = heads[0]!;
-    // R4b-16: on a universal the rules run over the member's slots, `c(Id, X)` / `o(Id, X)`, built per stated member.
-    const c = universal ? `c(${ctx.id},X)` : `c(${ctx.id})`;
-    const o = universal ? `o(${ctx.id},X)` : `o(${ctx.id})`;
-    if (!universal) this.slots.set(c, { reading: condSite.id, claim: condClaim });
-    this.pool(condSite, condText, condClaim, 1);
-    // R2-5: inside a view, the holder's own rule runs on the holder's views.
-    const w = (t: string): string => this.w(ctx, t);
-    // R4a-9: under a say word the condition is unwrapped, and the outcome's denial is the say term's (a ban's `neg(say(..))`).
-    const wc = (t: string): string => (sayOut ? t : w(t));
-    const wneg = (slot: string, n: string): string => (slot === o && sayOut ? `neg(${w(n)})` : slot === o ? w(`neg(${n})`) : wc(`neg(${n})`));
-    const truth = (slot: string, n: string): Literal[] => [{ atom: `fits(${slot},${n})` }, { atom: `holds(${slot === o ? w(n) : wc(n)})`, premise: slot === o ? w(n) : wc(n) }];
-    const falsity = (slot: string, n: string): Literal[] => [{ atom: `fits(${n},${slot})` }, { atom: `holds(${wneg(slot, n)})`, premise: wneg(slot, n) }];
-    const out = w(h.sign < 0 ? `neg(${h.text})` : h.text);
-    const notOut = sayOut && h.sign > 0 ? `neg(${w(h.text)})` : w(h.sign < 0 ? h.text : `neg(${h.text})`);
-    const outTrue = (n: string): Literal[] => (h.sign < 0 ? falsity(o, n) : truth(o, n));
-    const outFalse = (n: string): Literal[] => (h.sign < 0 ? truth(o, n) : falsity(o, n));
-    if (!universal) {
-      this.slots.set(o, { reading: reading.id, claim: h.claim });
-      this.pool(reading, h.text, h.claim, 1);
-    }
-    // R4e-1: the conditional as a claim term over the reading's own slots. R4e-6: MAY on the condition is
-    // `if(may(c(Id)), o(Id))`, MAY under the hinge `if(c(Id), may(o(Id)))`; MAY over the hinge keeps the plain term.
-    // R4e decision 2 (c): on a universal, the template term over `c(Id)` / `o(Id)`, claimed once, gives a member term over
-    // `c(Id, X)` / `o(Id, X)` for each member; the rules take the member term.
-    const termed = !sayOut;
-    const shape = (cs: string, os: string): string => {
-      const oSlot = h.sign < 0 ? `neg(${os})` : os;
-      return `${termName}(${mayCond ? `may(${cs})` : cs},${mayOutcome ? `may(${oSlot})` : oSlot})`;
-    };
-    const term = shape(`c(${ctx.id})`, `o(${ctx.id})`);
-    const member = shape(c, o);
-    const may: Conditional["may"] = mayCond ? "cond" : mayOutcome ? "out" : undefined;
-    const conditional = { reading: reading.id, name: termName, negOut: h.sign < 0, denied, ...(may ? { may } : {}) };
-    if (termed && !universal) this.conditionals.set(term, { ...conditional, id: ctx.id });
-    if (universal) this.everyHinges.push({ reading, condSite, ctx, cond: condClaim, bound, out: h.claim, list: every!.list, kind: every!.kind, member, conditional });
-    if (denied) {
-      // R4e-3 (say-reasons.md#arguments: "only that the link fails"): the link denied, nothing else claimed.
-      this.rule(ctx, w(`neg(${term})`), []);
-      this.useDenied(reading, frame);
-      return true;
-    }
-    const gate: Literal[] = termed ? [{ atom: `holds(${w(member)})`, premise: w(member) }] : [];
-    if (termed && mayGate) {
-      // R4e-6: row 15 on the term, `{ holds(T) }` and `holds(may(T))`.
-      this.rule({ ...ctx, choice: true }, w(term), []);
-      this.rule(ctx, w(`may(${term})`), []);
-    } else if (termed) this.rule(ctx, w(term), []);
-    if (termed && universal) this.rule(ctx, w(member), [{ atom: `holds(${w(term)})`, premise: w(term) }, ...body]);
-    if (zone?.first) this.rule(ctx, `against(${term},${zone.term})`, []);
-    const enough = gloss === "if" || gloss === "iff";
-    const needs = gloss === "only-if" || gloss === "iff";
-    if (mayCond) {
-      // R3-5: the body reads `may(P)`; a stated condition gives it too. No backward rule for *if*. R4b-25 (D5): *only if*
-      // and *iff* add row 6 on `may(P)`, and its back rule gives the condition as MAY on a claim (row 15).
-      this.rule(ctx, w("may(P)"), [...body, { atom: `fits(${c},P)` }, { atom: `holds(${w("P")})`, premise: w("P") }]);
-      if (enough) this.rule(ctx, out, [...gate, ...body, { atom: `fits(${c},P)` }, { atom: `holds(${w("may(P)")})`, premise: w("may(P)") }]);
-      if (needs) {
-        this.rule(ctx, notOut, [...gate, ...body, { atom: `fits(P,${c})` }, { atom: `holds(${w("neg(may(P))")})`, premise: w("neg(may(P))") }]);
-        if (!universal) {
-          this.rule({ ...ctx, choice: true }, w(condText), [...gate, ...outTrue("P")]);
-          this.rule(ctx, w(`may(${condText})`), [...gate, ...outTrue("P")]);
-        }
-      }
-    } else if (mayOutcome) {
-      // R3-1 row 6: a hinge over MAY makes the outcome only possible: a choice, and no backward rule. R4b-26 (D5, R4b
-      // decision 1): the *only if* half stays plain, without the condition the outcome is not even possible. D19: with
-      // the condition held, every hinge over MAY gives the choice on the outcome (MAY gives a choice wherever it is held).
-      this.rule({ ...ctx, choice: true }, out, [...gate, ...body, ...truth(c, "P")]);
-      if (needs) this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
-    } else {
-      if (enough) {
-        this.rule(ctx, out, [...gate, ...body, ...truth(c, "P")]);
-        if (zone && !zone.first) this.rule(ctx, `against(${out},${zone.term})`, [...gate, ...body, ...truth(c, "P")]);
-        // R4b-16: on a universal, back per member; R4b-17: a definition (*iff*) both ways.
-        this.rule(ctx, wc(`neg(${condText})`), [...gate, ...body, ...outFalse("P")]);
-      }
-      if (needs) {
-        this.rule(ctx, notOut, [...gate, ...body, ...falsity(c, "P")]);
-        this.rule(ctx, wc(condText), [...gate, ...body, ...outTrue("P")]);
-      }
-    }
-    this.use(frame, mayCond ? condFrames[0] : undefined);
-    for (const l of cond?.links ?? []) if (l.kind === "anaphor" && bound.some((t) => t.kind === "pronoun" && l.words.includes(t.word))) this.used.add(l);
-    return true;
-  }
-
-  /** A pronoun whose antecedent the current reading's universal binds (its kind word). */
-  boundBy(term: Term): boolean {
-    const t = throughAntecedent(term);
-    return t.kind === "thing" && this.bound.has(t.head);
-  }
-
-  /** R4b-1: a `bl-` common noun as a hinge's condition (`thahum blerulal`) reads as its kind K, matched as *there is K*. */
-  nounCondition(frame: Frame): { text: string; claim: Claim } | undefined {
-    const t = frame.hosted;
-    if (t?.kind !== "thing" || t.named || t.details.length) return undefined;
-    this.kinds.set(name(t.root), t);
-    return { text: name(t.root), claim: { roles: { z: t }, predicate: [], details: [] } };
-  }
-
-  /**
-   * R4e-7 (causation.md#if: "a noun outcome says *there is X if there is Y*"): a `/ɡ/` hinge on a common noun. The
-   * outcome is the existence claim `isa(nm(Id, z), K)`, the condition `isa(nm(Id, bl), K2)`, each matched as *there is
-   * K*. *If* claims the conditional and its forward rule; *only if* its back rule; *iff* both (no denied existence term,
-   * so no rule from a denial). *Because* (row 10) claims both sides and `cause(C, O)`, `-l` / `-r` adding row 12's marker.
-   */
-  nounHinge(reading: Reading, g: NounHinge): void {
-    const gloss = g.detail.values.gloss ?? "";
-    const termName = CONDITIONAL[gloss];
-    if (!termName && !["because", "because.fault", "because.share"].includes(gloss)) return this.leave(reading, { construction: g.frame.construction, key: g.frame.key, reason: "noRow" });
-    const id = str(reading.id);
-    const out: string[] = [];
-    const ctx: Ctx = { reading, id, subst: new Map(), asserted: false, out };
-    const k = name(g.outcome.root);
-    const k2 = name(g.cond.root);
-    this.kinds.set(k, g.outcome);
-    this.kinds.set(k2, g.cond);
-    const o = `isa(nm(${id},z),${k})`;
-    const c = `isa(nm(${id},bl),${k2})`;
-    const oClaim: Claim = { roles: { z: g.outcome }, predicate: [], details: [] };
-    const cClaim: Claim = { roles: { z: g.cond }, predicate: [], details: [] };
-    this.pool(reading, o, oClaim, 1);
-    this.pool(reading, c, cClaim, 1);
-    // R4b-3: the stacked `gebem` adds row 6 on the same condition (row 13), as *only if* does here.
-    const conditional = termName ?? (g.stack ? "onlyif" : undefined);
-    if (!termName) {
-      this.rule(ctx, o, []);
-      this.rule(ctx, c, []);
-      this.rule(ctx, `cause(${c},${o})`, []);
-      if (gloss === "because.fault") this.rule(ctx, `fault(${c},${o})`, []);
-      if (gloss === "because.share") this.rule(ctx, `share(${c},${o})`, []);
-    }
-    if (conditional) {
-      const termName = conditional;
-      const cs = `c(${id})`;
-      const os = `o(${id})`;
-      this.slots.set(cs, { reading: reading.id, claim: cClaim });
-      this.slots.set(os, { reading: reading.id, claim: oClaim });
-      const term = `${termName}(${cs},${os})`;
-      this.conditionals.set(term, { reading: reading.id, name: termName, id, negOut: false, denied: false });
-      this.rule(ctx, term, []);
-      const gate: Literal = { atom: `holds(${term})`, premise: term };
-      if (termName !== "onlyif") this.rule(ctx, o, [gate, { atom: `fits(${cs},P)` }, { atom: "holds(P)", premise: "P" }]);
-      if (termName !== "if") this.rule(ctx, c, [gate, { atom: `fits(${os},P)` }, { atom: "holds(P)", premise: "P" }]);
-    }
-    this.use(g.frame, g.detail, g.stack?.frame, g.stack?.detail, ...reading.frames);
-    const parts = readingParts(reading);
-    const unused = parts.filter((p) => !this.used.has(p.of));
-    if (unused.length) return this.leave(reading, { construction: unused[0]!.key, key: unused[0]!.key, reason: "unused", unused: unused.map((p) => p.text) });
-    this.accounting.set(reading.id, { parts, used: this.used });
-    this.readings.push(reading.id);
-    this.lines.push(`% ${reading.id}`, `on(${id}).`, ...out);
   }
 
   /**
@@ -1705,70 +1349,6 @@ class Translator {
     return true;
   }
 
-  /**
-   * R3-1 row 8 and R3-3: an *or* list (joins.md#choice-e, set-joins.md#exclusivity-and-denying-a-whole-list). Each item
-   * is a choice; `el`, `ael` and `aem` need at least one (`clash(noneof(Id))`, and the last item when the rest are
-   * denied: "even `-m` still needs at least one of the listed items"); `el` and `em` allow at most one (one held denies
-   * the rest). Joined on `fits(i(Id, K), P)`.
-   */
-  orList(reading: Reading, claim: Claim, list: ListTerm, ctx: Ctx): true | Why {
-    const { series } = list.values;
-    if (!orRow(list)) return { construction: `join.${series}`, key: `joinSeries:${series}`, reason: "noRow" };
-    this.orBounds(list, this.items(reading, claim, list, ctx), ctx);
-    return true;
-  }
-
-  /** R3-1 row 8: each item a choice, with the list's bounds (a list {@link orRow} accepts). */
-  orBounds(list: ListTerm, items: { text: string; slot: string }[], ctx: Ctx): void {
-    const { series, ending } = list.values;
-    const atLeast = ending === "l" || series === "ae";
-    const atMost = series === "e";
-    for (const it of items) this.rule({ ...ctx, choice: true }, it.text, []);
-    if (atLeast) {
-      items.forEach((_, k) => this.rule(ctx, `some(${ctx.id})`, held(items, k), "some"));
-      this.rule(ctx, `noneof(${ctx.id})`, [{ atom: `not some(${ctx.id})` }], "clash");
-      if (items.length > 1) items.forEach((it, k) => this.rule(ctx, it.text, items.flatMap((_, j) => (j === k ? [] : denied(items, j)))));
-    }
-    if (atMost) items.forEach((_, k) => items.forEach((jt, j) => j !== k && this.rule(ctx, `neg(${jt.text})`, held(items, k))));
-  }
-
-  /**
-   * R3-1 row 7: *not exactly one* (`vel vul`): one item held with every other denied clashes, `clash(notone(Id))`; with
-   * two items each holds or is denied with the other. *Not at most one* (`vem vul`) adds the clash with no item held.
-   */
-  notOne(reading: Reading, claim: Claim, list: ListTerm, ctx: Ctx, none: boolean): true {
-    const items = this.items(reading, claim, list, ctx);
-    // R4a-2: inside a holder's view, row 21 runs on the holder's views.
-    const w = (t: string): string => this.w(ctx, t);
-    const rest = (k: number): Literal[] => items.flatMap((_, j) => (j === k ? [] : denied(items, j, w)));
-    items.forEach((_, k) => this.rule(ctx, w(`notone(${ctx.id})`), [...held(items, k, w), ...rest(k)], "clash"));
-    if (none) this.rule(ctx, w(`notone(${ctx.id})`), items.flatMap((_, j) => denied(items, j, w)), "clash");
-    if (items.length === 2) {
-      for (const [k, j] of [[0, 1], [1, 0]] as const) {
-        this.rule(ctx, w(items[j]!.text), held(items, k, w));
-        this.rule(ctx, w(`neg(${items[j]!.text})`), denied(items, k, w));
-      }
-    }
-    return true;
-  }
-
-  /** Each item of a list as the claim with that item, its slot `i(Id, K)`, and its term in the pool. */
-  items(reading: Reading, claim: Claim, list: ListTerm, ctx: Ctx): { text: string; slot: string }[] {
-    return list.members.map((m, i) => {
-      const item = this.substituted(claim, list, m, { ...ctx, asserted: false });
-      const slot = `i(${ctx.id},${i + 1})`;
-      this.slots.set(slot, { reading: reading.id, claim: item.claim });
-      this.pool(reading, item.text, item.claim, 1);
-      return { text: item.text, slot };
-    });
-  }
-
-  pool(reading: Reading, text: string, claim: Claim, sign: number): void {
-    if (/\bX\d*\b/.test(text)) return;
-    if (!this.terms.has(text)) this.terms.set(text, { reading: reading.id, claim });
-    if (sign < 0) this.denied.add(text);
-  }
-
   // ── After the readings ──
 
   sites(query: ReadingId, target: ReadingId): { querySite: TermSite; targetSite: TermSite } {
@@ -1781,7 +1361,7 @@ class Translator {
       for (const [text, term] of this.individuals) {
         const subst: Subst = new Map(t.ctx.subst);
         subst.set(t.list, { text, term });
-        this.pool(t.ctx.reading, this.claim(t.claim, { ...t.ctx, subst, out: [] }), replaceTerm(t.claim, t.list, term), t.sign);
+        poolClaim(this, t.ctx.reading, this.claim(t.claim, { ...t.ctx, subst, out: [] }), replaceTerm(t.claim, t.list, term), t.sign);
       }
     }
     // R4b-16, R4e decision 2 (c): a universal hinge's member slots and member conditional, per member the log states of
@@ -1797,8 +1377,8 @@ class Translator {
         const outSubst: Subst = new Map(e.ctx.subst).set(e.list, { text, term });
         this.slots.set(`c(${id})`, { reading: e.condSite.id, claim: cond });
         this.slots.set(`o(${id})`, { reading: e.reading.id, claim: out });
-        this.pool(e.condSite, this.claim(cond, { ...e.ctx, reading: e.condSite, asserted: false, subst: condSubst, out: [] }), cond, 1);
-        this.pool(e.reading, this.claim(out, { ...e.ctx, asserted: false, subst: outSubst, out: [] }), out, 1);
+        poolClaim(this, e.condSite, this.claim(cond, { ...e.ctx, reading: e.condSite, asserted: false, subst: condSubst, out: [] }), cond, 1);
+        poolClaim(this, e.reading, this.claim(out, { ...e.ctx, asserted: false, subst: outSubst, out: [] }), out, 1);
         this.conditionals.set(e.member.replace(/\bX\b/g, () => text), { ...e.conditional, id });
       }
     }

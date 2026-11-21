@@ -7,7 +7,7 @@
 
 The solver answers questions that take more than one step over a log: *does this follow*, *could this be*, *what clashes*, *what to give up*, *why not*, *what stands*. It translates the log's [readings](interpreter.md#terms) to a Clingo program and runs it with `clingo-wasm`. This note owns the encoding, the translation table, the jobs and their options, what each job returns, and the CLI. The one-step matcher, its steps and its switches stay in [interpreter](interpreter.md#matching).
 
-Files: `src/interpret/translate.ts` (log to program), `src/interpret/translate-types.ts` (its exported types), `src/interpret/translate-helpers.ts` (its atoms, ranges and claim helpers), `src/interpret/solve.ts` (the jobs; the only file that imports `clingo-wasm`), `src/interpret/solve-browser.ts` (the browser entry), and `src/interpret/steps.ts` (step conditions shared with the matcher). Goldens are `src/interpret/fixtures/solve-*.lp`, each beside its `solve-*.txt` fixture.
+Files: `src/interpret/translate.ts` (log to program), `src/interpret/translate-types.ts` (its exported types), `src/interpret/translate-helpers.ts` (its atoms, ranges and claim helpers), `src/interpret/translate-conditions.ts` (hinges, *because*, noun conditions and *or* lists, as functions taking the `Translator`), `src/interpret/solve.ts` (the jobs; the only file that imports `clingo-wasm`), `src/interpret/solve-browser.ts` (the browser entry), and `src/interpret/steps.ts` (step conditions shared with the matcher). Goldens are `src/interpret/fixtures/solve-*.lp`, each beside its `solve-*.txt` fixture.
 
 ## Adding a row
 
