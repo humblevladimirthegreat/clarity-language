@@ -1,46 +1,96 @@
 # Flashcards (editors)
 
-Editors only. How the Anki packs are generated, keyed, checked and published. The learner page for the Claritish pack is [Flashcards](../grammar/claritish/flashcards.md); its policy is the **Flashcards** paragraph of [Claritish track](grammar-docs.md#claritish-track).
+Editors only. How the Anki packs are generated, keyed, checked and published. The learner pages are [Flashcards](../grammar/flashcards.md) for the Ageben packs and [Claritish flashcards](../grammar/claritish/flashcards.md) for the Claritish pack; the Claritish page's policy is the **Flashcards** paragraph of [Claritish track](grammar-docs.md#claritish-track).
 
 ## Packs and decks {#packs}
 
-| Pack | Built by | Note type | Decks |
-|------|----------|-----------|-------|
-| `ageben-core` | [`src/flashcards.ts`](../../src/flashcards.ts) | Ageben lexicon | `Ageben::Core::NN <page> · <band>`, one per stage checkpoint |
-| `ageben-sakes` | same | Ageben lexicon | `Ageben::Sakes` |
-| `ageben-everything` | same | Ageben lexicon | every lexicon note |
-| `claritish` | [`src/flashcards-claritish.ts`](../../src/flashcards-claritish.ts) | Claritish | `Claritish::NN <lesson title>`, one per lesson that has notes |
+| Pack | Built by | Decks |
+|------|----------|-------|
+| `ageben-beginner`, `ageben-intermediate`, `ageben-advanced` | [`src/flashcards-packs.ts`](../../src/flashcards-packs.ts) | One subdeck per sidebar unit of the band that has notes, named and numbered as in [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts): `Ageben::1 Beginner::04 Why and what for` |
+| `ageben-everything` | same | `Ageben::Everything::Roots`, `::Compounds`, `::Closed`, `::Overlays`: every root, compound, closed word and overlay word note, for lookup |
+| `claritish` | [`src/flashcards-claritish.ts`](../../src/flashcards-claritish.ts) | `Claritish::NN <lesson title>`, one per lesson that has notes |
 
+- A band subdeck holds the notes its unit's checkpoints first drill: core words (by the `core` cell), closed words, and overlay notes. Level reviews add none. A root or compound with no `core` cell is in Everything only.
 - **Deck ids** hash the full deck name (`ageben-deck/<name>`), in genanki's range [2^30, 2^31). Renaming a deck makes a new deck.
 - **Claritish deck numbers** follow the lesson's position in `claritishLessons` ([`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts)), the bonus last. A lesson with no notes leaves its number free, so the other names stay stable.
-- **Order:** new cards follow deck order, then sheet order inside a deck. Nothing ships suspended.
-- The Ageben packs overlap: a note in two packs is one note in Anki, by its GUID.
+- The Ageben packs overlap: a note in two packs is one note in Anki, by its GUID. It keeps the new-card position of the pack imported first, so the learner page says to import the band packs before Everything.
+
+## Unlocking and order {#unlocking}
+
+- **Suspended:** every card of the four Ageben packs ships suspended. The pack JSON says so with a top-level `"suspend": true`, and the packager sets `suspend` on each card. Claritish ships unsuspended.
+- **Checkpoint tag:** each note a checkpoint first drills carries `ageben::cp::<page>::<band>` (page without `.md`; a page has at most one checkpoint per band). On reaching the checkpoint, the learner unsuspends `deck:Ageben* tag:<tag>`.
+- **Anchor to checkpoint** (`anchorCheckpoint` in [`src/flashcards.ts`](../../src/flashcards.ts)): an overlay or closed-word row goes to the first non-review checkpoint after its `anchor` section on the same page, in that section's band. The anchor may be an explicit id or a heading slug. A row that maps to no checkpoint fails `npm test`.
+- **Order inside a band pack:** units in sidebar order, checkpoints in path order inside a unit. Inside a checkpoint (`checkpointNotes`): core roots, core compounds, closed words, then each overlay kind in order of its first note, with its word notes, slot notes, ending note (the scale note sits with `sake`) and set note.
+- **New-card order:** the packager gives each note a running `due` across the pack's decks; both cards of a note share it. Anki's default sort, *Card type, then order gathered*, would show a day's recognition cards before its production and higher cloze cards, so the learner page says to sort by *Order gathered*. It also says to tick *Import any learning progress*: the default import resets every card to new and drops the suspension.
+- **Load check:** `npm test` fails when one checkpoint adds more than 45 new cards (a little over two days at Anki's default 20).
 
 ## Note types {#note-types}
 
-[`scripts/flashcards-package.py`](../../scripts/flashcards-package.py) owns both note types and packages with `genanki`. The pack JSON's `model` field picks the type; the packager stops on an unknown model or a field list that does not match.
+[`scripts/flashcards-package.py`](../../scripts/flashcards-package.py) owns the note types and packages with `genanki`. The pack JSON's `model` names the default type and `fields` its field order; a note of another type names it in its own `model`, and `modelFields` gives that type's field order (`packJson`). The packager stops on an unknown model or a field list that does not match.
 
 | Note type | Model id | Fields | Cards |
 |-----------|----------|--------|-------|
-| Ageben lexicon | 1738204517 | `front`, `concrete`, `abstract`, `aliases`, `parts`, `mnemonic`, `kind` | Recognition (stem → English) and Production (English → stem) |
+| Ageben lexicon | 1738204517 | `front`, `concrete`, `abstract`, `aliases`, `parts`, `mnemonic`, `kind` | Recognition (form → English) and Production (English → form) |
+| Ageben overlay | 1738204519 | `example`, `form`, `definition`, `readings`, `host`, `slot_of`, `gloss`, `link`, `mnemonic`, `kind` | Recognition and Production |
+| Ageben set | 1738204520 | `text`, `title`, `link`, `mnemonic` | Cloze: one card per member |
 | Claritish | 1738204518 | `front`, `meaning`, `lesson` | Recognition only, with a small muted lesson line under the meaning |
 
 - Model ids are fixed constants. Never change one: Anki would treat it as a new note type.
-- **Ageben lexicon:** the English block has concrete, abstract and *also* (`english_aliases`) lines. A compound shows its parts with each root's concrete gloss. The mnemonic shows small on the back. No two production fronts may match.
-- **Claritish:** `meaning` is HTML and is not escaped by the packager; `meaningHtml` escapes the text it builds from. The two note types never share notes.
+- **Mnemonic,** on every Ageben type: on the back only, small and muted.
+- **Ageben lexicon:** roots, compounds and closed words. Roots and compounds show labeled concrete, abstract and *also* (`english_aliases`) lines; a compound shows its parts with each root's concrete gloss. A closed word (`kind` set) shows a *definition* line, its English as plain text, and a *gloss* line, the words starred in `english`. No two production fronts may match (`npm test`).
+- **Ageben overlay:** `example` and `readings` are HTML; the example wraps the overlay word in `<span class="overlay">`.
+
+  | Card | Front | Back |
+  |------|-------|------|
+  | Recognition | The example, overlay highlighted | Definition; per-slot readings when they differ; host's concrete sense; *new slot of* (slot notes); morph gloss of the example; link to the anchor section; mnemonic |
+  | Production | Definition, and the example with the overlay blanked | The full example, then the recognition back |
+
+- **Ageben set:** `text` is cloze HTML, one `{{cN::<code>…</code>}}` per member with its English after it, so the other members show on each card. Scale, ending and set notes all use it.
+- **Claritish:** `meaning` is HTML and is not escaped by the packager; `meaningHtml` escapes the text it builds from. Claritish and Ageben notes never share a note type.
+
+## Overlay notes {#overlay-notes}
+
+Card text comes only from the `data/` CSVs and checked page examples; nothing adds or rewrites a sense.
+
+- **Word note** (`overlayWordNotes`, [`src/flashcards-overlays.ts`](../../src/flashcards-overlays.ts)): one per sense form, at the checkpoint of its first row. Rows of the form at that checkpoint fold in; where their definitions differ, `readings` lists them per slot (`ezem`: WHEREAS on `h`, ALTHOUGH on `th` / `g`). A folded note takes its example, definition, mnemonic and link from the first row in CSV order that has an example.
+- **Slot note** (`overlaySlotNotes`): one per later checkpoint that puts a known form in a new slot, such as join relations, hinges, and moods on one adjective. Its back gives the new slot's reading and names the word note in `slot_of`. In an ending set only the `-m` form gets one, unless the `-l` / `-r` form's gloss in the new slot is new (`slotTaughtByMForm`).
+- **Example** (`overlayExamples`, [`src/flashcards-examples.ts`](../../src/flashcards-examples.ts)): the shortest code span in the anchor section whose parse uses the overlay in the row's slot; failing that, the shortest such span in the rest of the page before its checkpoint. A lone citation never counts. The morph gloss comes from the page glosser's strict `morphGlossLine`. A row with no example fails `npm test`, except the `-l` / `-r` forms an ending note covers.
+- **Host:** the root of the sense form (`senseFormRoot`), with its concrete sense when it is a published root. Bare-vowel forms show no host line.
+- **Link:** `https://clarityconlang.com/grammar/<page>.html#<id>` of the row's anchor.
+
+## Endings and sets {#endings-and-sets}
+
+[`src/flashcards-endings.ts`](../../src/flashcards-endings.ts) and [`src/flashcards-sets.ts`](../../src/flashcards-sets.ts) build Ageben set notes.
+
+- **Scale note** (*Settled-to-passing scale*): `-l` settled, `-m` default, `-r` passing, at `sakes.md#beginner-practice`.
+- **Ending note** (*<Kind> endings*): one per kind in `SCALE_ENDING_KINDS` (evidential, phasal, want, attempt, decision, mirative), at the kind's first `-l` / `-r` checkpoint. An ending's reading is the suffix of the kind's CSV gloss (a bare gloss reads *default*); every form of the kind must agree, or the build throws. The note lists the kind's `-m` forms below the cloze. These kinds keep word notes for `-m` forms only (`coveredByEndingNote`).
+- **Lexical endings** keep a word note per form: `LEXICAL_ENDING_FORMS` (`elol`, `elor`, `ahul`, `ahur`), and every form of a kind outside `SCALE_ENDING_KINDS`, such as plan, MAY, notional and the as-of resume forms.
+- **Set note** (*<Kind> words*): a kind's word notes first taught at one checkpoint, when there are at least `SET_MIN_MEMBERS` (3), `-m` forms only where the kind has an ending note. It sorts after its members.
+
+## Closed words {#closed-words}
+
+[`data/closed-words.csv`](../../data/closed-words.csv) (`form,english,kind,anchor`, read by [`src/closed-words.ts`](../../src/closed-words.ts)) holds closed words with a fixed English reading: pronouns, linkers, polar words, stance words and turn words. `english` marks the gloss words with `*…*`. Each row becomes an Ageben lexicon note, tagged `ageben::closed` and `ageben::closed::<kind>`, placed at its anchor's checkpoint like an overlay row. Its test checks that every form parses and is spelled in its anchor section; `retie-docs` relinks the anchors but does not rewrite the forms, so a stale form fails that test.
 
 ## Keys and release tags {#keys}
 
-| Note | GUID hashes | Tags |
-|------|-------------|------|
-| Root | `ageben/root/<root>` | `ageben::root`, core tags |
-| Compound | `ageben/compound/<stem>` | `ageben::compound`, core tags |
-| Sake overlay | `ageben/overlay/<sense_form>`, `th` / `w` rows collapsed | `ageben::overlay`, its kind and PoS, a stage tag where its anchor has one |
-| Claritish | `claritish/<section id>/<form>` | `claritish`, `claritish::lesson::<slug>`, `claritish::release::<id>` |
+An `.apkg` import matches notes by GUID only. A GUID never comes from row order: an edit to a gloss line, alias, mnemonic, example, `core` cell or deck keeps the note and its review history, and a respelling makes a new note.
 
-- A GUID never comes from row order. A new meaning keeps the note and its review history; a respelling makes a new note.
-- **Release id:** the first 8 hex of a SHA-256 over the decks (name, id) and their notes (GUID, fields), without tags. It changes only when card content, a deck or a GUID changes, and never from a timestamp.
-- **Updating:** after importing a new release, the learner deletes `deck:Claritish* -tag:claritish::release::<id>`, which clears the notes of respelled or dropped forms. The Ageben packs will take the same scheme with an `ageben::` prefix.
+| Note | Key | GUID hashes | Tags |
+|------|-----|-------------|------|
+| Root | `root` | `root`, root, concrete | `ageben::root`, checkpoint tag |
+| Compound | `stem` | `compound`, stem, concrete | `ageben::compound`, checkpoint tag |
+| Closed word | `form` | `closed`, form, `english` | `ageben::closed`, its kind, stage, checkpoint tag |
+| Overlay word | `sense_form` | `overlay`, key, its glosses | `ageben::overlay`, its kind, each PoS, stage, checkpoint tag |
+| Overlay slot | `<form>@<page>` | same | same |
+| Set | `<kind>@<page>` | `set`, key | `ageben::overlay`, its kind, stage, checkpoint tag |
+| Ending | `endings:<kind>` | same | same |
+| Scale | `scale` | same | `ageben::overlay`, stage, checkpoint tag |
+| Claritish | | `claritish/<section id>/<form>` | `claritish`, `claritish::lesson::<slug>`, `claritish::release::<id>` |
+
+- **Ageben GUID** (`noteGuid`): the first 12 characters of a base64url SHA-256 over `ageben/v2`, the source, the key and the gloss. An overlay note's gloss is its rows' distinct glosses, sorted and joined with ` / `. A row that takes another row's old spelling in a retie gets a new note, since the gloss differs.
+- Kind, PoS and stage tags read `ageben::overlay::<kind>`, `ageben::closed::<kind>`, `ageben::pos::<pos>` and `ageben::stage::<band>`. Every Ageben note also carries the release tag.
+- **Ageben release id** (`releaseId`): the first 8 hex of a SHA-256 over the notes (source, GUID, fields, `core`) sorted by GUID, without tags or decks. **Claritish release id:** the same over the decks (name, id) and their notes (GUID, fields), without tags. Each changes only when content changes, never from a timestamp.
+- **Updating:** after importing a new release, the learner deletes `deck:Ageben* -tag:ageben::release::<id>` (or `deck:Claritish* -tag:claritish::release::<id>`), which clears the notes of respelled, reglossed and dropped forms.
 
 ## Claritish notes {#claritish-notes}
 
@@ -61,6 +111,7 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 - **Ending labels** on stance × ending notes come from the `#settled` column headers. An ending swap is `swapEnding`, the same variant the cheat sheet lint accepts as taught.
 - **Lesson of a note:** where the sheet links the note's first place to a lesson (its row, then its column header, then its section heading), that lesson. Otherwise the first lesson in `claritishLessons` order whose page has the form, or an ending-swapped variant, in a backtick span, including as a whole word inside a multi-word span. The build throws on a sheet link to a page that is not a lesson, and on a form in no lesson.
 - **Tests** ([`flashcards-claritish.test.ts`](../../src/flashcards-claritish.test.ts)) fail on a note with no lesson and on a lesson page that lacks its note's form.
+- Claritish cards ship unsuspended; new cards follow deck order, then sheet order inside a deck.
 
 ## Regenerating {#regenerating}
 
@@ -68,26 +119,32 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 
 | Command | Writes to `tmp/out/flashcards/` |
 |---------|---------------------------------|
-| `npm run flashcards` | every pack: `.apkg`, `.tsv`, `.json`, then the import check |
-| `npm run flashcards -- --pack core,sakes` | only these (`core`, `sakes`, `everything`, `claritish`) |
-| `npm run flashcards -- --tsv-only` | `.tsv` and `.json` only; no packaging, no check, no `.venv` needed |
+| `npm run flashcards` | every pack: `.apkg`, `.json` and the TSVs, then the import check |
+| `npm run flashcards -- --pack beginner,everything` | only these (`beginner`, `intermediate`, `advanced`, `everything`, `claritish`) |
+| `npm run flashcards -- --tsv-only` | TSVs and `.json` only; no packaging, no check, no `.venv` needed |
 | `npm run flashcards -- --out DIR` | the same, into `DIR` |
 
+- An Ageben pack writes `ageben-<pack>.apkg`, `.json`, and one TSV per note type it holds: `ageben-<pack>.tsv` (lexicon), `-overlay.tsv` and `-set.tsv` (the last two `#html:true`). Claritish writes `claritish.apkg`, `.json` and `.tsv`.
 - Packaging and the check need `.venv/bin/python` with [`requirements.txt`](../../requirements.txt) (`genanki` through [`requirements-publish.txt`](../../requirements-publish.txt), and the `anki` pin for the check).
-- Output is deterministic: no timestamps or random ids in notes, GUIDs, deck ids or the release id. Nothing generated is committed.
+- Output is deterministic: no timestamps or random ids in notes, GUIDs, deck ids or release ids. Nothing generated is committed.
 
 ## Import check {#import-check}
 
-[`scripts/flashcards-check.py`](../../scripts/flashcards-check.py) imports every built pack into a throwaway collection with Anki's backend and checks:
+[`scripts/flashcards-check.py`](../../scripts/flashcards-check.py) imports every built pack into a throwaway collection with Anki's backend, with *Import any learning progress* on (`with_scheduling`), as the learner page says, and checks:
 
-- the note type arrives, nothing conflicts, and overlapping Ageben packs share notes;
-- every card renders: 2 cards per lexicon note, 1 per Claritish note;
-- a second import adds nothing;
-- **release search:** it rebuilds the Claritish pack with one note dropped, recomputing the release id in Python as the TS does, imports it with *always update*, and checks that the release search finds exactly the dropped note. A change to the release id formula changes `release_id` in the check too.
+- the note types arrive, nothing conflicts, and overlapping Ageben packs share notes;
+- cards arrive suspended where the pack JSON says `suspend`, and unsuspended elsewhere;
+- new cards sorted by `(due, ord)` follow pack order, for the notes each pack brought;
+- every card renders a question and an answer, and a cloze card has a blank: 2 cards per lexicon or overlay note, one per cloze number on a set note, 1 per Claritish note;
+- each `ageben::cp::` tag's unlock search, `deck:Ageben* tag:<tag>`, finds exactly the notes that carry it;
+- a second import adds nothing, and a card the learner unsuspended and one they reviewed keep their state;
+- **release search:** for Claritish and for the Ageben packs together, it rebuilds the packs with one note dropped and the release tags recomputed, imports them with *always update*, and checks that the release search finds exactly the dropped note. For Claritish the Python release id matches the TS one, so a change to that formula changes `release_id` in the check too; for Ageben the check needs only a different id.
 
 ## Publishing {#publishing}
 
-- `docs:publish` runs [`scripts/publish-docs-extras.mjs`](../../scripts/publish-docs-extras.mjs) after VitePress. It builds the Claritish pack JSON and packages it into `dist/grammar/flashcards/claritish.apkg`, served at `/grammar/flashcards/claritish.apkg`. It skips the import check. The Ageben packs are not published yet.
+- `docs:publish` runs [`scripts/publish-docs-extras.mjs`](../../scripts/publish-docs-extras.mjs) after VitePress. From the same `src/` calls as `npm run flashcards`, it packages `dist/grammar/flashcards/claritish.apkg` and `dist/grammar/flashcards/ageben-{beginner,intermediate,advanced,everything}.apkg`, served under `/grammar/flashcards/`. It skips the import check.
 - [`amplify.yml`](../../amplify.yml) `preBuild` runs `python3 -m venv .venv` and installs `requirements-publish.txt` (`genanki` only) after `npm ci`.
 - A missing `.venv` or a failed packaging step fails the deploy.
-- The learner page reads its counts, deck list, download path and release tag from [`claritish-flashcards.data.ts`](../grammar/.vitepress/lib/claritish-flashcards.data.ts), so the page holds no hand-written data.
+- **Data loaders** build from `src/` only, so the learner pages hold no hand-written data:
+  - [`flashcards.data.ts`](../grammar/.vitepress/lib/flashcards.data.ts) gives the Ageben page each pack's title, download path (`AGEBEN_APKG_PATHS`, site-base-relative), note, card and deck counts; the checkpoints by band and unit, each with its title, link, tag, unlock search and counts (level reviews left out); and the release id, tag and cleanup search.
+  - [`claritish-flashcards.data.ts`](../grammar/.vitepress/lib/claritish-flashcards.data.ts) gives the Claritish page its counts, deck list, download path and release tag.

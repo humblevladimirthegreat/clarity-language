@@ -76,7 +76,7 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `orientation-style.md` | Wording and voice for the two orientation pages, `purpose.md` and `introduction.md`. |
 | `claritish-style.md` | Wording and voice for the Claritish track, the hyphenated English host, and what counts as a journal editor cue. |
 | `claritish-editor-data.md` | File formats of the journal editor data: cue columns and pattern syntax, word lists, flow keys. |
-| `flashcards.md` | Anki flashcard generator: packs and decks, note types, keys and release tags, Claritish note rules, regenerating, the import check, publishing. |
+| `flashcards.md` | Anki flashcard generator: packs and decks, unlocking and order, note types, overlay, ending, set and closed-word notes, keys and release tags, Claritish note rules, regenerating, the import check, publishing and data loaders. |
 | `glosses.md` | Morph and free gloss rules. |
 | `learning-levels.md` | Beginner / intermediate / advanced gates and the cross-doc path. |
 | `translation-exercises.md` | Translation checkpoint policy. |
