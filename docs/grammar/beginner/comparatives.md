@@ -78,7 +78,7 @@ When English would say *as challenging as*, you say two people have the quality 
 >
 > "Azozon is about as bright as Alazun."
 
-A tie does not say either one has the quality: `zazozon zalazun zoel gamahum` can be two people who are both hardly challenging.
+A tie says only that the two match. It does not say that either one has the quality: `zazozon zalazun zoel gamahum` can describe two people who are both hardly challenging.
 
 **Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazozon gamahum` *Azozon is challenging*. Use `oe` when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](clause.md#extra-nouns) `hewem`), not the same score on a named quality.
 

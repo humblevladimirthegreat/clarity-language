@@ -152,7 +152,7 @@ When English denies the listed items, use vowel `u`. One item before `zul` is *n
 >
 > "neither tea nor coffee."
 
-Two `u` lists in one clause deny every pairing: no item of one list goes with any item of the other.
+With two `u` lists in one clause, you deny every pairing: no item from one list goes with any item from the other.
 
 > `zazozon zalazun zul dodozel dogozel dul vayebel.`
 >

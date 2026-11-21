@@ -40,15 +40,13 @@ When you are not sure, use `thomam`: it says *could be* and nothing about follow
 >
 > "Alazun may be punching Azozon, I'll find out."
 
-In a yes/no question, `thomal` says you are asking in order to find out:
+A yes/no question with MAY asks whether it could be so, not whether it is. With `thomal`, it also says you are asking in order to find out:
 
 > `yel zazozon vabuvul thomal dalazun.`
 >
 > y-question | z-Azozon | v-punch | th-MAY-find-out | d-Alazun
 >
 > "Might Azozon be punching Alazun? Let's find out."
-
-A question with MAY asks whether it could be so, not whether it is.
 
 > `zahelan thomar vagamul.`
 >

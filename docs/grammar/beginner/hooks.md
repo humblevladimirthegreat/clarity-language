@@ -138,13 +138,13 @@ English can open a sentence with *Additionally*, *In other words*, *Instead*, or
 
 Use the same `el …` for *actually* when you correct what someone expected: the new claim replaces the old one.
 
-`ul …` keeps the general claim before it and takes out only the members it names in the same role. After *the family walks*, `ul zalazun vowurol vul.` still says everyone else in the family walks; only Alazun is out, so the two sentences never contradict each other.
-
 > `ol zahelan godozel.`
 >
 > in.other.words | z-Ahelan | g-dog
 >
 > "In other words, Ahelan is a dog."
+
+`ul …` takes out only the people or things it names, in the same role as in the claim before it, and the rest of that claim still stands. After *the family walks*, `ul zalazun vowurol vul.` takes out Alazun alone: everyone else in the family still walks, so the two sentences never contradict each other.
 
 The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in `barl`, it is an extra-noun hook instead.
 

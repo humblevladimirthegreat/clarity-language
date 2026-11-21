@@ -36,7 +36,7 @@ To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title
 
 A call only picks who you are talking to; it does not change what the sentence claims. So it may sit before or after a stance word, and you say the same thing.
 
-After a call, `zawan` is the one you called until you call someone else. In a turn with no call, it is whoever you last called; if you have called no one and only two people are talking, it is the other one.
+A call also settles who *you* is. After a call, `zawan` (*you*) is the one you called, until you call someone else. In a turn with no call, it is whoever you last called; if you have called no one and only two people are talking, it is the other one.
 
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alazun uses `/y/`; saying Alazun walks uses `/z/` (`zalazun vowurol`).
 

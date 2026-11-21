@@ -35,7 +35,7 @@ A command or request makes no claim, so an *if* hinge on it limits the instructi
 >
 > "If Alazun sits, walk."
 
-A question with an *if* hinge asks whether the condition is enough for the outcome, not whether either one holds.
+A question with an *if* hinge (*does Azozon walk if it rains?*) asks whether the condition is enough for the outcome. It does not ask whether the condition or the outcome holds.
 
 To make the outcome only a guess (*if Azozon walks, maybe Alazun sits*), put [MAY](knowing.md#may) first. The *if* clause stays last, so MAY covers the whole sentence: you claim neither the walking nor the sitting, only that the sitting could follow from the walking.
 
