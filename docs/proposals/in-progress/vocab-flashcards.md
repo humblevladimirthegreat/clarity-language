@@ -1,6 +1,6 @@
 # Proposal: vocab flashcards v2
 
-**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it. Phase 2 (U6–U11, late hosts) done 2026-11-21: six hosts made core earlier (see [late hosts](#late-hosts)); no checkpoint over its `core` cap. Phase 3 STOPPED 2026-11-21 at U14: U12 (`anchorCheckpoint`, `checkpointTag`) and U13 (v2 GUID, `releaseId` / `releaseTag`, checkpoint tags on v1 notes) committed; U14's chooser (`src/flashcards-examples.ts`, `overlayExamples`) is built and green but left uncommitted, without its test, because 102 of 234 overlay rows have no example ([open decisions](#open-decisions)); U15 and U16 not started. Settled by the phase executor 2026-11-21 (autonomous, core order): `eze`, `awu`, `ago` and `uba` could not be New words at the checkpoint the plan named, because its bank lists their overlay (`thezem`, `awum`, `agom`, `ubam`) and the word-bank lint counts that row as the host. They went to the nearest earlier checkpoint with room instead, per the design's *at or before the overlay*: `awu` at `here-there.md`, `ago` at `label-seams.md`, `uba` at `collectives.md`; `eze` at `speech-moves.md`, which took the slot of *peek* `ebemo`, now core at `dependents.md`. `uge` went to `plurality.md` and `eho` to `clause-sequence.md` as planned. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
+**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it. Phase 2 (U6–U11, late hosts) done 2026-11-21: six hosts made core earlier (see [late hosts](#late-hosts)); no checkpoint over its `core` cap. Phase 3 stopped 2026-11-21 at U14 and resumed the same day: U12 (`anchorCheckpoint`, `checkpointTag`) and U13 (v2 GUID, `releaseId` / `releaseTag`, checkpoint tags on v1 notes) committed; U14's chooser (`src/flashcards-examples.ts`, `overlayExamples`) built and green, uncommitted until its test lands. User decision 2026-11-21 on overlay rows with no example (102 of 234): option (c) plus (a). The `-l` / `-r` forms of ending-note kinds (evidential, phasal, want, attempt, decision, mirative; not the lexical `elol` / `elor` / `ahul` / `ahur`) are exempt from the example test, as they get no word note; for the other 69 rows, content units E1–E4 write a short example sentence into each anchor section that lacks one, and U31's style gate reviews those sections. Settled by the phase executor 2026-11-21 (autonomous, core order): `eze`, `awu`, `ago` and `uba` could not be New words at the checkpoint the plan named, because its bank lists their overlay (`thezem`, `awum`, `agom`, `ubam`) and the word-bank lint counts that row as the host. They went to the nearest earlier checkpoint with room instead, per the design's *at or before the overlay*: `awu` at `here-there.md`, `ago` at `label-seams.md`, `uba` at `collectives.md`; `eze` at `speech-moves.md`, which took the slot of *peek* `ebemo`, now core at `dependents.md`. `uge` went to `plurality.md` and `eho` to `clause-sequence.md` as planned. v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
 - One pack per band, plus Everything.
 - One subdeck per unit; words and grammar share each subdeck; unlocking is per checkpoint, by tag.
 - Endings are taught once per kind; closed sets are drilled as overlapping cloze; no emoji on any card.
@@ -47,7 +47,7 @@ New note type **Ageben overlay**, fixed model id:
 | Recognition | The example, overlay highlighted | Definition (per-slot readings when they differ); host's concrete sense; mnemonic; morph gloss of the example; link to the anchor section |
 | Production | Definition, and the example with the overlay blanked | The full example, then the recognition back |
 
-- **Example:** the shortest code span in the anchor section whose parse uses the overlay in the row's slot. If there is none, take the shortest from the rest of the anchor's page, before its checkpoint. A row with none fails `npm test`. The **morph gloss** comes from the parser.
+- **Example:** the shortest code span in the anchor section whose parse uses the overlay in the row's slot. If there is none, take the shortest from the rest of the anchor's page, before its checkpoint. A row with none fails `npm test`, except the `-l` / `-r` forms of kinds with an ending note ([endings taught once](#endings-taught-once)). The **morph gloss** comes from the parser.
 - **Word note:** one per sense form, at its first checkpoint. Rows at the same checkpoint fold in; differing readings are listed per slot (`ezem`: WHEREAS on `h`, ALTHOUGH on `th` / `g`).
 - **Slot note:** one per later checkpoint that puts a known form in a new slot (join relations, hinges at `more-hinges.md` / `same-role-words.md`, moods at `universality.md`). Its back gives the new slot's reading and names the word note. For a form in an ending set, only the `-m` form gets a slot note.
 - **Host:** `senseFormRoot`. The concrete sense is shown when it is a published root; bare-vowel forms show no host line.
@@ -133,9 +133,16 @@ The build runs `npm run flashcards`, which packages every pack with `scripts/fla
 - Tests: GUIDs follow the new key; a reused spelling with a new gloss makes a new GUID; the release id changes only when content changes.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`.
 
+**E1–E4 Anchor examples.** `proposal-worker`, `model: opus`, effort `high`, one unit per page group, run in order. Each writes a short example sentence into each anchor section the chooser finds no example for (a sentence, not a citation; using the overlay in the row's slot; before the checkpoint), following the section's example format, then checks with `tmp/scratch/vf-missing.ts`. A row whose reading in its slot the page does not settle is written up as an open decision and skipped.
+- **E1** `sakes.md`: `#word-shape` 8, `#personal-possession` 7.
+- **E2** `universality.md#mood-on-one-adjective` 12, `already-still-yet.md#stage-of-change` 7, `can-and-cant.md#ability-fallback` 1.
+- **E3** `join-relations.md` 9, `locative-relations.md` 4, `of-relations.md` 2, `same-role-words.md#before-and-after` 2.
+- **E4** `as-of.md` 10, `more-hinges.md#time-hinge-on-noun` 4, `dependents.md#hinges` 2, `because-and-iff.md#choosing-a-hinge` 1.
+- **May edit:** the unit's grammar pages.
+
 **U14 Overlay examples.** `proposal-worker`, `model: opus`, effort `high`.
 - Choose each overlay row's example per the design: the shortest code span in the anchor section whose parse uses the overlay in the row's slot, else the shortest from the rest of the anchor's page before its checkpoint.
-- A test fails on a row with no example. If more than a few rows have none, stop and report the list.
+- A test fails on a row with no example, exempting the `-l` / `-r` forms of ending-note kinds. Runs after E1–E4; the chooser is already in the tree.
 - **May edit:** `src/flashcards.ts`, `src/flashcards.test.ts`, a new helper beside them.
 
 **U15 Morph glosses.** `proposal-worker`, `model: opus`, effort `medium`.
@@ -232,7 +239,7 @@ Gate: `npm run verify -- --allow-generate` against the phase baseline.
 - **May edit:** `docs/meta/flashcards.md`.
 
 **U31 Style gate.** `style-editor`, `model: opus`, effort `high`.
-- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `1a0e3e4f`, the commit before phase 1's first. That list covers phase 2's checkpoint top-ups (`speech-moves.md`, `dependents.md`, `plurality.md`, `clause-sequence.md`, `here-there.md`, `label-seams.md`, `collectives.md`) and the Flashcards page.
+- Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `1a0e3e4f`, the commit before phase 1's first. That list covers phase 2's checkpoint top-ups (`speech-moves.md`, `dependents.md`, `plurality.md`, `clause-sequence.md`, `here-there.md`, `label-seams.md`, `collectives.md`), phase 3's anchor examples (E1–E4) and the Flashcards page.
 
 Final gate: `npm run verify` against an empty baseline (`--allow-generate` only for allowlist **generate** rows this plan did not touch). The orchestrator then:
 - cuts this proposal down to an idea holding the v3 items, per [consolidate](../../meta/procedures/proposals.md#consolidate);
@@ -240,19 +247,12 @@ Final gate: `npm run verify` against an empty baseline (`--allow-generate` only 
 
 ### Commits
 
-One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 3, 6; phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 24 left.
+One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 3, 8 left (E1–E4, U14–U16, the consolidation); phase 4, 8; phase 5, 5; phase 6, 5, the last being the idea cut-down. About 24 left.
 
 ## Open decisions
 
 If U23's load test fails with closed words in, the orchestrator stops and brings the options to the user.
 
-**Overlay rows with no example (blocks U14's test, U15, and every overlay note in phase 4).** U14's chooser finds an example for 132 of 234 overlay rows (8 from the rest of the page). 102 have none before their checkpoint: every sentence using them sits in Practice. 33 are `-l` / `-r` forms of ending-note kinds, which get no word note under the design, leaving 69. Of those, 33 appear only as one-word citations or `…` templates, and 36 in no span on the page; counting Practice too covers only 9. By anchor: `universality.md#mood-on-one-adjective` 12, join-relations 9, `sakes.md#word-shape` 8, `as-of.md#as-of` 8, `sakes.md#personal-possession` 7, `already-still-yet.md#stage-of-change` 7, `more-hinges.md#time-hinge-on-noun` 4, and 1 or 2 each on `dependents.md#hinges`, `as-of.md#stance-as-of`, `locative-relations.md` (two sections), `of-relations.md`, `same-role-words.md`, `can-and-cant.md`, `because-and-iff.md`. Options:
-- (a) A content unit (or one per page) writes a short example sentence into each anchor section that lacks one: grammar-page edits, checked with the chooser, then a style gate.
-- (b) Accept a one-word citation as the example (covers 33). The production card's blank becomes the whole front.
-- (c) Exempt `-l` / `-r` forms of ending-note kinds from the test (102 → 69), matching the design's word-note rule. Needs (a) or (b) for the rest.
-- (d) Notes with no example drop the example lines: recognition shows the form, production shows the definition only.
-
-**Recommendation:** (medium) (c) plus (a), from the worker: real sentences in the anchor sections help the page's readers too, and the card's example stays a sentence. (a) adds a phase of grammar edits before phase 4.
 
 ## Background
 
