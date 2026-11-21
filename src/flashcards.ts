@@ -1,12 +1,13 @@
 /**
  * Vocabulary flashcards: notes for Anki built from the lexicon CSVs (`vocab-flashcards.md`).
- * One note per published root, compound, overlay sense form and new overlay slot; packs filter the notes into
+ * One note per published root, compound, closed word, overlay sense form and new overlay slot; packs filter the notes into
  * decks. The CSVs stay canonical: nothing here adds or rewrites a sense.
  */
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
+import { loadClosedWords, type ClosedWordRow } from "./closed-words.js";
 import { stageCheckpoints, type Checkpoint } from "./core-vocabulary.js";
 import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, senseFormRoot, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
@@ -18,16 +19,16 @@ import { pageSections, type Band, type PageSections } from "./lint/learning-orde
 import { loadDefaultTables } from "./parse/index.js";
 import { grammarFile, readData, REPO_ROOT } from "./repo-paths.js";
 
-export type NoteSource = "root" | "compound" | "overlay" | "set";
+export type NoteSource = "root" | "compound" | "closed" | "overlay" | "set";
 
-/** Note-type fields, in Anki field order. `kind` is the overlay kind, empty on roots and compounds. */
+/** Note-type fields, in Anki field order. `kind` is the closed-word kind on closed words, empty on roots and compounds. */
 export const NOTE_FIELDS = ["front", "concrete", "abstract", "aliases", "parts", "mnemonic", "kind"] as const;
 
 export type NoteFields = Record<(typeof NOTE_FIELDS)[number], string>;
 
 type NoteBase = {
   source: NoteSource;
-  /** Stable key: published `root`, compound `stem`, or overlay `sense_form`. */
+  /** Stable key: published `root`, compound `stem`, closed-word `form`, or overlay `sense_form`. */
   key: string;
   guid: string;
   tags: string[];
@@ -35,7 +36,7 @@ type NoteBase = {
   core: string;
 };
 
-/** A root or compound: the Ageben lexicon note type. */
+/** A root, compound or closed word: the Ageben lexicon note type. */
 export type LexiconNote = NoteBase & { model: typeof LEXICON_MODEL; fields: NoteFields };
 export type OverlayNoteFields = Record<(typeof OVERLAY_FIELDS)[number], string>;
 /** An overlay word note: the Ageben overlay note type. */
@@ -46,11 +47,12 @@ export type SetNote = NoteBase & { model: typeof SET_MODEL; fields: SetNoteField
 export type FlashcardNote = LexiconNote | OverlayNote | SetNote;
 
 /**
+ * `closed` are the closed function words (`data/closed-words.csv`), in checkpoint order;
  * `overlays` are word notes; `slots` are slot notes, a known form in a new slot at a later checkpoint;
  * `sets` are set notes over word notes (`flashcards-sets.ts`), each after its members;
  * `endings` are the scale note and the ending notes (`flashcards-endings.ts`).
  */
-export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[]; sets: SetNote[]; endings: SetNote[] };
+export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; closed: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[]; sets: SetNote[]; endings: SetNote[] };
 
 /** A note's field values in its note type's field order. */
 export function fieldValues(note: FlashcardNote): string[] {
@@ -63,6 +65,7 @@ export type FlashcardInputs = {
   published: readonly PublishedRow[];
   compounds: readonly CompoundRow[];
   overlays: readonly OverlayRow[];
+  closedWords: readonly ClosedWordRow[];
   checkpoints: readonly Checkpoint[];
   /** Band of the section a `page.md#id` anchor lands in. */
   anchorBand: (anchor: string) => Band | undefined;
@@ -152,7 +155,7 @@ export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`ageben-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-/** Every note: roots, compounds, overlay word, slot and set notes, scale and ending notes. `examples` defaults to {@link overlayExamples} over the inputs. */
+/** Every note: roots, compounds, closed words, overlay word, slot and set notes, scale and ending notes. `examples` defaults to {@link overlayExamples} over the inputs. */
 export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">, examples?: ReadonlyMap<string, OverlayExample>): FlashcardNotes {
   const checkpointBand = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
   const coreTags = (source: NoteSource, key: string, cell: string | undefined): string[] => {
@@ -188,6 +191,8 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     core: r.core ?? "",
   }));
 
+  const closed = closedWordNotes(inputs);
+
   // One overlay word note per sense form at its first checkpoint, a slot note per later new slot (flashcards-overlays.ts).
   const tables = loadDefaultTables();
   const found = examples ?? overlayExamples(inputs.overlays, inputs, tables);
@@ -198,10 +203,46 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
   // The scale note and one ending note per scale-ending kind (flashcards-endings.ts).
   const endings = endingNotes(inputs);
 
-  const all = [...roots, ...compounds, ...overlays, ...slots, ...sets, ...endings];
+  const all = [...roots, ...compounds, ...closed, ...overlays, ...slots, ...sets, ...endings];
   const release = releaseTag(all);
   for (const note of all) note.tags.push(release);
-  return { roots, compounds, overlays, slots, sets, endings };
+  return { roots, compounds, closed, overlays, slots, sets, endings };
+}
+
+/**
+ * A closed word's English as plain text: the `*…*` markup dropped (`*I* (the speaker)` → `I (the speaker)`).
+ * Ageben lexicon fields are plain text, escaped by the packager and the TSV.
+ */
+export function closedEnglish(english: string): string {
+  return english.replace(/\*([^*]+)\*/g, "$1");
+}
+
+/** The gloss words of a closed word's English: its `*…*` spans, joined (`*one*, generic *you*` → `one, you`). */
+export function closedGloss(english: string): string {
+  return [...english.matchAll(/\*([^*]+)\*/g)].map((m) => m[1]!).join(", ");
+}
+
+/**
+ * One Ageben lexicon note per closed word, placed like an overlay: at the checkpoint its anchor maps to
+ * ({@link anchorCheckpoint}), in checkpoint order, then CSV order. GUID: form + English.
+ */
+export function closedWordNotes(inputs: Pick<FlashcardInputs, "closedWords" | "checkpoints" | "anchorSection">): LexiconNote[] {
+  const checkpointIndex = new Map(inputs.checkpoints.map((c, i) => [c.anchor, i]));
+  const placed = inputs.closedWords.map((row, order) => {
+    const cp = anchorCheckpoint(row.anchor, inputs);
+    if (!cp) throw new Error(`closed word ${row.form}: anchor ${row.anchor} maps to no checkpoint`);
+    const note: LexiconNote = {
+      source: "closed",
+      model: LEXICON_MODEL,
+      key: row.form,
+      guid: noteGuid("closed", row.form, row.english),
+      fields: { front: row.form, concrete: closedGloss(row.english), abstract: closedEnglish(row.english), aliases: "", parts: "", mnemonic: "", kind: row.kind },
+      tags: ["ageben::closed", `ageben::closed::${row.kind}`, `ageben::stage::${cp.band}`, cp.tag],
+      core: "",
+    };
+    return { note, at: checkpointIndex.get(cp.anchor)!, order };
+  });
+  return placed.sort((a, b) => a.at - b.at || a.order - b.order).map((p) => p.note);
 }
 
 /** The glosses on a production front, which must pick out one stem (aliases are cues and may repeat). */
@@ -241,7 +282,7 @@ export function buildPack(id: LexiconPackId, notes: FlashcardNotes, inputs: Pick
     }
     return { id, decks: [deck("Sakes", ordered)] };
   }
-  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Overlays", notes.overlays), deck("Everything::Slots", notes.slots), deck("Everything::Sets", notes.sets), deck("Everything::Endings", notes.endings)] };
+  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Closed", notes.closed), deck("Everything::Overlays", notes.overlays), deck("Everything::Slots", notes.slots), deck("Everything::Sets", notes.sets), deck("Everything::Endings", notes.endings)] };
 }
 
 /** Sake roots from the first column of the sake inventory table (sakes.md#sake-inventory). */
@@ -324,6 +365,7 @@ export function loadFlashcardInputs(
     published: parsePublishedCsv(readData("lexicon-published.csv")),
     compounds: parseCompoundCsv(readData("lexicon-compounds.csv")),
     overlays: parseOverlayCsv(readData("lexicon-overlays.csv")),
+    closedWords: loadClosedWords(),
     checkpoints: stageCheckpoints(pages.map((p) => p.page), (page) => markdown.get(page), loadDefaultTables(), reviewPages),
     anchorBand: (anchor) => {
       const [page, id] = anchor.split("#") as [string, string | undefined];

@@ -8,7 +8,10 @@ import {
   anchorCheckpoint,
   buildNotes,
   checkpointTag,
+  closedEnglish,
+  closedGloss,
   coveredByEndingNote,
+  LEXICON_MODEL,
   LEXICAL_ENDING_FORMS,
   buildPack,
   loadFlashcardInputs,
@@ -40,7 +43,7 @@ const examples = overlayExamples(inputs.overlays, inputs, tables);
 const elapsed = Math.round(performance.now() - started);
 const notes = buildNotes(inputs, examples);
 const rebuild = (published: typeof inputs.published) => buildNotes({ ...inputs, published }, examples);
-const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.overlays, ...n.slots, ...n.sets, ...n.endings];
+const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.closed, ...n.overlays, ...n.slots, ...n.sets, ...n.endings];
 const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];
 
 describe("buildNotes", () => {
@@ -225,6 +228,43 @@ describe("buildNotes", () => {
   });
 });
 
+describe("closed-word notes", () => {
+  it("maps every closed-word row to a checkpoint on its page, in its band", () => {
+    const missing = inputs.closedWords.filter((r) => !anchorCheckpoint(r.anchor, inputs)).map((r) => `${r.form} ${r.anchor}`);
+    assert.deepEqual(missing, []);
+    for (const row of inputs.closedWords) {
+      const cp = anchorCheckpoint(row.anchor, inputs)!;
+      assert.equal(cp.page, row.anchor.split("#")[0]);
+      assert.equal(cp.band, inputs.anchorBand(row.anchor));
+    }
+  });
+
+  it("makes one Ageben lexicon note per row, tagged with its kind, band and checkpoint", () => {
+    assert.equal(notes.closed.length, inputs.closedWords.length);
+    for (const row of inputs.closedWords) {
+      const note = notes.closed.find((n) => n.key === row.form && n.guid === noteGuid("closed", row.form, row.english))!;
+      assert.ok(note, row.form);
+      assert.equal(note.model, LEXICON_MODEL);
+      assert.equal(note.fields.front, row.form);
+      assert.equal(note.fields.kind, row.kind);
+      const cp = anchorCheckpoint(row.anchor, inputs)!;
+      assert.deepEqual(note.tags.slice(0, 4), ["ageben::closed", `ageben::closed::${row.kind}`, `ageben::stage::${cp.band}`, cp.tag]);
+    }
+  });
+
+  it("renders the *…* markup as plain text, the starred words as the gloss", () => {
+    assert.equal(closedEnglish("*one*, generic *you*, *people*"), "one, generic you, people");
+    assert.equal(closedGloss("*one*, generic *you*, *people*"), "one, you, people");
+    assert.ok(notes.closed.every((n) => !n.fields.abstract.includes("*") && n.fields.concrete));
+  });
+
+  it("orders closed words by checkpoint", () => {
+    const order = new Map(inputs.checkpoints.map((c) => [checkpointTag(c.page, c.band), inputs.checkpoints.indexOf(c)]));
+    const at = notes.closed.map((n) => order.get(n.tags.find((t) => t.startsWith("ageben::cp::"))!)!);
+    assert.deepEqual(at, [...at].sort((a, b) => a - b));
+  });
+});
+
 describe("set notes", () => {
   const cpOf = (tags: readonly string[]) => tags.find((t) => t.startsWith("ageben::cp::"))!;
   const membersOf = (text: string) => [...text.matchAll(/\{\{c\d+::<code>([^<]+)<\/code>\}\}/g)].map((m) => m[1]!);
@@ -350,6 +390,7 @@ describe("packs", () => {
     assert.deepEqual(decks.map((d) => [d.name, d.notes.length]), [
       ["Ageben::Everything::Roots", inputs.published.length],
       ["Ageben::Everything::Compounds", inputs.compounds.length],
+      ["Ageben::Everything::Closed", inputs.closedWords.length],
       ["Ageben::Everything::Overlays", notes.overlays.length],
       ["Ageben::Everything::Slots", notes.slots.length],
       ["Ageben::Everything::Sets", notes.sets.length],
