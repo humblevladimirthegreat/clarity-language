@@ -58,6 +58,13 @@ The other time hinges work the same way:
 | `zalazun dowurol garum blozulul vayebel.` | *Alazun sees the walk that lasts until the thunderstorm.* |
 | `zalazun dowurol guvahum blozulul vayebel.` | *Alazun sees the walk that is done by the time of the thunderstorm.* |
 
+The [*despite*](/dependents#hinges) and [*so that*](/dependents#so-that) hinges take a noun the same way: **`gezem`** puts the obstacle in `/b/`, and **`govam`** puts the goal there.
+
+| Ageben | English |
+|--------|---------|
+| `zalazun dowurol gezem blozulul vayebel.` | *Alazun sees the walk despite the thunderstorm.* |
+| `zalazun dowurol govam bluvodal vayebel.` | *Alazun sees the walk for fruit.* (the fruit is what the walk is for) |
+
 **Compare with:** *before* `gabam` is built on the root of `zabal` (*a backpack*, packed ahead of time). As an ordinary noun, `zabal` still means *a backpack*.
 
 ### Practice {#intermediate-practice}

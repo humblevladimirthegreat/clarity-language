@@ -91,14 +91,14 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `gevam` | locative around (figure on all sides of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `gewel` | likeness exactly like (type match) | [Exactly like (hewel / gewel)](/exactly-like#exactly-like) | I |
 | `gewem` | likeness like (type resemblance) | [Likeness (like)](/relations#likeness) | B |
-| `gezem` | ALTHOUGH clause hinge (concession; NP despite) | [Because, although (hinges)](/dependents#hinges) | B |
+| `gezem` | ALTHOUGH clause hinge (concession; NP despite) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](/of-relations#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gohem` | IF clause hinge (one-way conditional) | [If](/causation#if) | B |
 | `gohom` | locative across (edge to far edge of one landmark) | [Between, across, around](/locative-relations#locative-relations) | I |
 | `gon` | join-relation prioritizing (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `gorel` | IDENTITY copula (identical-to / same-as) | [Identity](/predication#identity) | B |
-| `govam` | SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal) | [Because, although (hinges)](/dependents#hinges) | B |
+| `govam` | SO-THAT clause hinge (the speaker's aim for the thing; NP for-goal) | [Time hinges on a noun](/more-hinges#time-hinge-on-noun) | I |
 | `goyom` | stimulus (sake about a noun you do not possess) | [Personal possession](/sakes#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](/join-relations#join-relations) | I |
 | `guen` | join-relation open to anything but (adjective) | [Join-relations](/join-relations#join-relations) | I |

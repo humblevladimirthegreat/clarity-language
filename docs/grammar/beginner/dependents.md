@@ -76,7 +76,7 @@ You can also say:
 | **`habam blarl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`halam blarl`** | *after* | `alal` *sand* | ⌛: the sand has already run through |
 
-English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same `thezem` hinge and put that noun in a `bl-` word where `blarl` would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. All the hinge adds is your expectation that the obstacle would normally have stopped the event. To attach it to a noun instead, use `/ɡ/`: **`gezem`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+English *despite* takes a noun instead of a clause (*despite Alazun*). Use the same `thezem` hinge and put that noun in a `bl-` word where `blarl` would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. All the hinge adds is your expectation that the obstacle would normally have stopped the event. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazozon vowurol thezem blalazun.`
 >
@@ -142,7 +142,7 @@ Ageben verbs have no past or future form. *Before*, *after*, *while*, and *until
 
 <a id="event-purpose"></a>
 
-English *so that* names the outcome an event aims at (*I walk so that Alazun sits*). Use the hinge `thovam` with `blarl`, the same pair shape as *because*, and put the outcome in the sentence after `blarl`. Unlike *because*, this does not claim the outcome happened. To attach the hinge to a noun, use **`govam`**. (cue: 🥅 *goal*: you act so the shot counts)
+English *so that* names the outcome an event aims at (*I walk so that Alazun sits*). Use the hinge `thovam` with `blarl`, the same pair shape as *because*, and put the outcome in the sentence after `blarl`. Unlike *because*, this does not claim the outcome happened. (cue: 🥅 *goal*: you act so the shot counts)
 
 <!-- Exception to house-cast: the aim this hinge names is the speaker's, so I is the point. -->
 
