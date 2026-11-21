@@ -1,4 +1,4 @@
-/** The fill job (docs/meta/solver.md#jobs, R4c-9 to R4c-11, D10): fill() over the solve-fill fixture, read as solve.test.ts reads one. */
+/** The fill job (docs/meta/solver.md#jobs, R4c-9 to R4c-13, D10): fill() over the solve-fill fixture, read as solve.test.ts reads one. */
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -38,7 +38,7 @@ function log(name: string, labels: string[], extra: string[] = []) {
 const q = (text: string): Reading => readText(text, tables)[0]!;
 const base: SolveOptions = { lexicon: tables };
 
-describe("solve: the fill job (R4c-9 to R4c-11, D10)", () => {
+describe("solve: the fill job (R4c-9 to R4c-13, D10)", () => {
   const filled = async (labels: string[], question: string, options: FillOptions = {}, extra: string[] = []) => {
     const a = await fill(log("fill", labels, extra), q(question), { ...base, ...options });
     return { verdict: a.verdict, terms: a.fillers.map((f) => f.term), because: a.fillers.map((f) => f.because) };
@@ -67,8 +67,8 @@ describe("solve: the fill job (R4c-9 to R4c-11, D10)", () => {
   });
 
   it("fillers ask cannot reach: a closed universal to its instance, a met hinge", async () => {
-    assert.deepEqual(await filled(["f3"], "yel zar vezuvel.", {}, ["zazozon gogozel."]), { verdict: "filled", terms: [["zazozon"]], because: [["t:0.0", "t:0.1"]] });
-    const hinge = await filled(["f1"], "yel zar vehohel.", {}, ["zalazun vehohel thohem blarl zazozon vowurol."]);
+    assert.deepEqual(await filled(["f3", "f4"], "yel zar vezuvel."), { verdict: "filled", terms: [["zazozon"]], because: [["t:0.0", "t:0.1"]] });
+    const hinge = await filled(["f1", "f5"], "yel zar vehohel.");
     assert.deepEqual(hinge, { verdict: "filled", terms: [["zalazun"]], because: [["t:0.0", "t:0.1"]] });
   });
 
@@ -84,9 +84,26 @@ describe("solve: the fill job (R4c-9 to R4c-11, D10)", () => {
     assert.deepEqual((await filled(["f10"], "yel zar vudurul.", { possible: true })).terms, [["zalazun"]]);
   });
 
+  it("gar asks what kind, from isa only (R4c-12)", async () => {
+    assert.deepEqual(await filled(["f4"], "yel gar zazozon."), { verdict: "filled", terms: [["gogozel"]], because: [["t:0.0"]] });
+    assert.equal((await filled(["f1"], "yel gar zazozon.")).verdict, "unknown");
+  });
+
+  it("why binds a cause's condition, never a met if (R4c-13)", async () => {
+    const why = await fill(log("fill", ["f9"]), q("yel thahum blar zazozon vowurol."), base);
+    assert.deepEqual([why.verdict, why.fillers], ["filled", [{ at: ["bl"], term: ["zalazun vezuvel"], because: ["t:0.0"] }]]);
+    assert.equal((await filled(["f1", "f5"], "yel thahum blar zalazun vehohel.")).verdict, "unknown");
+  });
+
   it("follows and couldBe still answer a fill question beyond; a blank no fill row reads is beyond", async () => {
     assert.equal((await follows(log("fill", ["f1"]), q("yel zar vowurol."), base)).verdict, "beyond");
     assert.equal((await filled(["f1"], "yel zur vowurol.")).verdict, "beyond");
     assert.equal((await filled(["f1"], "yel zazozon zar.")).verdict, "beyond");
+    // R4c decision 7 and R4c-13: …ur, a blank beside why, and other condition words with blar wait for their rows.
+    assert.equal((await filled(["f4"], "yel gur zazozon.")).verdict, "beyond");
+    assert.equal((await filled(["f9"], "yel thahum blar zar vowurol.")).verdict, "beyond");
+    assert.equal((await filled(["f9"], "yel thovam blar zazozon vowurol.")).verdict, "beyond");
+    assert.equal((await filled(["f1"], "yel el bar zazozon vowurol.")).verdict, "beyond");
+    assert.equal((await filled(["f1"], "yel hewem blar zazozon vowurol.")).verdict, "beyond");
   });
 });

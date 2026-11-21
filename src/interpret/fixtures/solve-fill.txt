@@ -1,6 +1,6 @@
-# Solver fixture: the fill job, fill(log, question) (R4c-9 to R4c-11, D10; questions.md#fill-ask, #fill-all, fill-ask-roles.md#fill-ask-arity).
+# Solver fixture: the fill job, fill(log, question) (R4c-9 to R4c-13, D10; questions.md#fill-ask, #fill-all, fill-ask-roles.md#fill-ask-arity, fill-ask-jobs.md#what-kind, #why).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
-# Read as one log here; solve.test.ts asks each question of the entries it names.
+# Read as one log here; solve-fill.test.ts asks each question of the entries it names.
 # R4c-10: open blank. f1: ? yel zar vowurol. → azozon. f1 + f2: → azozon, alazun (one zar, several fillers: all listed)
 # f1 alone: ? yel zar vezuvel. → no filler, unknown; with closedWorld → nobody
 # R4c-11: f1 alone: ? yel zer vowurol. → yes (existence)
@@ -9,6 +9,9 @@
 # R4c-9: membership. f6: ? yel zar vowurol. → azozon, alazun. ? yel zarx vowurol. → azozon, alazun (R4c-10)
 # R4c-10: fill-all as tuples. f7 + f8: ? yel zar dar vayebel. → (azozon, a dog), (alazun, a cat)
 # R4c-9, brave: f10: ?~ yel zar vudurul. → alazun with possible; cautious: no filler, unknown
+# R4c-12: what kind, from isa only. f4: ? yel gar zazozon. → gogozel
+# R4c-9: hinge. f5 + f1: ? yel zar vehohel. → alazun
+# R4c-13: why, from cause only. f9: ? yel thahum blar zazozon vowurol. → zalazun vezuvel. f5 + f1: ? yel thahum blar zalazun vehohel. → no filler, unknown (a met if is not a cause)
 @ f1
 zazozon vowurol.
 = Azozon walks.
@@ -36,3 +39,15 @@ zalazun dogozel vayebel.
 @ f10
 zalazun thomam vudurul.
 = Alazun may have left.
+
+@ f4
+zazozon gogozel.
+= Azozon is a cat.
+
+@ f5
+zalazun vehohel thohem blarl zazozon vowurol.
+= Alazun sits if Azozon walks.
+
+@ f9
+zazozon vowurol thahum blarl zalazun vezuvel.
+= Azozon walks because Alazun is asleep.

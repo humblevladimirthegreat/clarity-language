@@ -5,6 +5,9 @@
 % t:0.4 = f7
 % t:0.5 = f8
 % t:0.6 = f10
+% t:0.7 = f4
+% t:0.8 = f5
+% t:0.9 = f9
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -108,6 +111,36 @@ on("t:0.6").
 fired("t:0.6",uduru(z(alazu))) :- holds(uduru(z(alazu))), on("t:0.6").
 holds(may(uduru(z(alazu)))) :- on("t:0.6").
 fired("t:0.6",may(uduru(z(alazu)))) :- on("t:0.6").
+% t:0.7
+on("t:0.7").
+holds(isa(azozo,ogoze)) :- on("t:0.7").
+fired("t:0.7",isa(azozo,ogoze)) :- on("t:0.7").
+% t:0.8
+on("t:0.8").
+holds(if(c("t:0.8"),o("t:0.8"))) :- on("t:0.8").
+fired("t:0.8",if(c("t:0.8"),o("t:0.8"))) :- on("t:0.8").
+holds(ehohe(z(alazu))) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+fired("t:0.8",ehohe(z(alazu))) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+used("t:0.8",ehohe(z(alazu)),if(c("t:0.8"),o("t:0.8"))) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+used("t:0.8",ehohe(z(alazu)),P) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(c("t:0.8"),P), holds(P), on("t:0.8").
+holds(neg(owuro(z(azozo)))) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(P,o("t:0.8")), holds(neg(P)), on("t:0.8").
+fired("t:0.8",neg(owuro(z(azozo)))) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(P,o("t:0.8")), holds(neg(P)), on("t:0.8").
+used("t:0.8",neg(owuro(z(azozo))),if(c("t:0.8"),o("t:0.8"))) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(P,o("t:0.8")), holds(neg(P)), on("t:0.8").
+used("t:0.8",neg(owuro(z(azozo))),neg(P)) :- holds(if(c("t:0.8"),o("t:0.8"))), fits(P,o("t:0.8")), holds(neg(P)), on("t:0.8").
+% t:0.9
+on("t:0.9").
+holds(owuro(z(azozo))) :- on("t:0.9").
+fired("t:0.9",owuro(z(azozo))) :- on("t:0.9").
+holds(ezuve(z(alazu))) :- on("t:0.9").
+fired("t:0.9",ezuve(z(alazu))) :- on("t:0.9").
+holds(cause(ezuve(z(alazu)),owuro(z(azozo)))) :- on("t:0.9").
+fired("t:0.9",cause(ezuve(z(alazu)),owuro(z(azozo)))) :- on("t:0.9").
+
+% Fits, from match().
+fits(c("t:0.8"),owuro(z(azozo))).
+fits(owuro(z(azozo)),c("t:0.8")).
+fits(o("t:0.8"),ehohe(z(alazu))).
+fits(ehohe(z(alazu)),o("t:0.8")).
 
 % Members, from claimMemberLists().
 member(ls("t:0.3",z),azozo,1).

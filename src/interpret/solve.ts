@@ -548,9 +548,18 @@ export type FillOptions = SolveOptions & { possible?: boolean };
  */
 type FillBlank = { at: BlankSite; term: Term; listed?: Term[]; existence: boolean };
 
-/** The question's blanks, or the part no fill row reads (a blank in another place or series: R4c decision 7, B5a2). */
+/**
+ * The question's blanks, or the part no fill row reads: a blank in another place or series (`zur`, `zor`, a blank inside
+ * `derl` / `darl`: R4c decision 7). R4c-12: `gar` on a verbless claim asks what kind, from `isa` only.
+ */
 function fillBlanks(claim: Claim): FillBlank[] | { key: string } {
   const out: FillBlank[] = [];
+  for (const [i, t] of claim.predicate.entries()) {
+    if (t.kind !== "blank") continue;
+    const family = t.word.family;
+    if (claim.verb || family?.kind !== "joinMarker" || family.series !== "a") return { key: `blank:${t.word.raw}` };
+    out.push({ at: `predicate.${i}`, term: t, existence: false });
+  }
   for (const r of ["z", "d", "b"] as const) {
     const t = claim.roles[r];
     if (t?.kind === "blank") {
@@ -589,6 +598,29 @@ function fillerText(term: Term): string {
 
 const roleClaim = (t: Term): Claim => ({ roles: { z: t }, predicate: [], details: [] });
 
+/** Where a term's word sits in its sentence. */
+function termAt(term: Term): number {
+  const t = throughAntecedent(term);
+  if (t.kind === "thing") return t.head.at ?? 0;
+  if (t.kind === "list") return Math.min(...t.members.map(termAt));
+  return "word" in t ? (t.word.at ?? 0) : 0;
+}
+
+/** A clause filler (*why*, R4c-13) spelled: its claim's terms in sentence order. */
+const claimText = (claim: Claim): string =>
+  [claim.verb, ...Object.values(claim.roles), ...claim.predicate]
+    .filter((t): t is Term => t !== undefined)
+    .sort((a, b) => termAt(a) - termAt(b))
+    .map(fillerText)
+    .join(" ");
+
+/**
+ * R4c-13 (D10, fill-ask-jobs.md#why): `thahum blar`, *why?*, a *because* hinge hosting the blank `blar`. Other condition
+ * words with `blar` (*what for?*, *under what condition?*) wait for their rows.
+ */
+const whyFrame = (question: Reading): Reading["frames"][number] | undefined =>
+  question.frames.find((f) => f.key === "overlay:clause_hinge:th" && /^because(\.|$)/.test(f.values.gloss ?? "") && f.hosted?.kind === "blank" && f.hosted.word.family?.kind === "joinMarker" && f.hosted.word.family.series === "a");
+
 /**
  * The fill job (R4c-9 to R4c-11, D10; questions.md#fill-ask, #fill-all, fill-ask-roles.md#fill-ask-arity): what fills
  * each blank of a fill question. The log is solved (cautious: atoms in every clash-free world; `possible`: in some), and
@@ -603,11 +635,16 @@ export async function fill(log: Pick<Log, "readings">, question: Reading, option
   // A question's own MAY asks what could fill it (R4b-28): the job runs brave.
   const may = question.frames.some((f) => questionMay(question, f));
   const possible = !!options.possible || may;
-  const frame = isQuestionForce(question).find((f) => f.key !== "slot:newMember");
+  // R4c-13: a *why* frame is the fill job's; the question is asked without it, and its blank binds a cause's condition.
+  const whyF = whyFrame(question);
+  const asking = whyF ? { ...question, frames: question.frames.filter((f) => f !== whyF) } : question;
+  const frame = isQuestionForce(asking).find((f) => f.key !== "slot:newMember");
   if (frame) return out("beyond", { left: [{ reading: question.id, construction: frame.construction, key: frame.key, reason: "noRow" }] });
-  const blanks = fillBlanks(question.claim);
+  const found0 = fillBlanks(question.claim);
+  // A why question fills only its condition: a blank in the claim too is beyond.
+  const blanks = whyF ? (Array.isArray(found0) ? { key: "blank" } : []) : found0;
   if (!Array.isArray(blanks)) return out("beyond", { left: [{ reading: question.id, construction: "fillAsk", key: blanks.key, reason: "noRow" }] });
-  const p = prepare(log, question, options, false, new Set(blanks.map((b) => b.term)));
+  const p = prepare({ ...log, readings: log.readings.filter((r) => r !== question) }, asking, options, false, new Set(blanks.map((b) => b.term)));
   if (!p.ok) return out(p.answer.verdict === "refused" ? "refused" : "beyond", { left: p.answer.left, english: p.answer.english });
   const left = p.translation.left;
   const big = tooLarge(p.program, options);
@@ -630,7 +667,24 @@ export async function fill(log: Pick<Log, "readings">, question: Reading, option
   const querySite = p.translation.site(p.qid!);
   const found = new Map<string, { filler: Filler; start: string[]; terms: Term[] }>();
   const switches = new Set<SolveSwitch>();
-  for (const held of model.holds) {
+  // R4c-13: *why* binds C from each held `cause(C, Out)` whose Out fits the question's claim; a met *if* gives none.
+  for (const held of whyF ? model.holds : []) {
+    const { name: link, args } = splitAtom(held);
+    if (link !== "cause" || args.length !== 2) continue;
+    const outInner = negOf(args[1]!);
+    if (!!outInner !== !!p.negated) continue;
+    const outcome = p.translation.terms.get(outInner ?? args[1]!);
+    const condition = p.translation.terms.get(args[0]!);
+    if (!outcome || !condition || outcome.reading === p.qid) continue;
+    const binding = match(asked, outcome.claim, { switches: { widen: !!options.widen }, lexicon: options.lexicon, querySite, targetSite: p.translation.site(outcome.reading) });
+    if (!binding) continue;
+    const term = [claimText(condition.claim)];
+    const entry = found.get(term[0]!) ?? { filler: { at: ["bl"], term, because: [] }, start: [], terms: [] };
+    entry.start.push(held);
+    found.set(term[0]!, entry);
+    binding.switches.forEach((s) => s === "widen" && switches.add("widen"));
+  }
+  for (const held of whyF ? [] : model.holds) {
     if (negOf(held) !== undefined) continue;
     const source = p.translation.terms.get(held);
     if (!source || source.reading === p.qid) continue;
@@ -659,7 +713,8 @@ export async function fill(log: Pick<Log, "readings">, question: Reading, option
   const listed = (terms: Term[]): boolean =>
     terms.some((t, i) => t.kind === "list" && t.members.every((m) => found.has(terms.map((x, j) => (j === i ? fillerText(m) : fillerText(x))).join("\u0000"))));
   const at = (terms: Term[]): number => {
-    const t = throughAntecedent(terms[0]!);
+    if (!terms[0]) return 0;
+    const t = throughAntecedent(terms[0]);
     return t.kind === "thing" ? (t.head.at ?? 0) : 0;
   };
   const fillers: (Filler & { pos: number })[] = [];
@@ -676,7 +731,7 @@ export async function fill(log: Pick<Log, "readings">, question: Reading, option
   if (closed && !fillers.length) switches.add("closedWorld");
   if (may) switches.add("couldBe");
   const used = (["widen", "defaults", "closedWorld", "couldBe"] as const).filter((s) => switches.has(s));
-  if (blanks[0]!.existence) return out(fillers.length ? "yes" : closed ? "no" : "unknown", { because, switches: used, left });
+  if (blanks[0]?.existence) return out(fillers.length ? "yes" : closed ? "no" : "unknown", { because, switches: used, left });
   return out(fillers.length ? "filled" : closed ? "nobody" : "unknown", { fillers: fillers.map(({ pos: _, ...f }) => f), because, switches: used, left });
 }
 
