@@ -56,7 +56,7 @@ English *the second biggest* names a place just below the winner. Keep the super
 
 Under `zuol` the same place counts from the bottom, so `zazozon zuol wrodol gelazem` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zol` or `zuol`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
 
-One name holds one place on a scale. If Azozon is the second biggest, Azozon is neither the third biggest nor the biggest.
+A name holds only one place on a scale: if Azozon is the second biggest, Azozon is neither the biggest nor the third biggest.
 
 **Compare with:** an ordinal after a noun picks the Nth *thing* (`zodozel grodol` *the second dog*), not the Nth on a scale. A factor (*twice as big*) goes on `/h/`, not `/w/`.
 
@@ -82,7 +82,7 @@ When English would say *Alazun walks more intensely than Azozon*, you rank how t
 >
 > "Alazun walks as intensely as Azozon."
 
-With a verb, each one does it: in both `zalazun zazozon zol hahunom vowurol` and `zalazun zazozon zoel hahunom vowurol`, both walk. The rank or the tie is only about how.
+With a verb, every name in the rank does the act: in both `zalazun zazozon zol hahunom vowurol` and `zalazun zazozon zoel hahunom vowurol`, Alazun and Azozon both walk. The rank or the tie compares only how they walk.
 
 **Compare with:** `gahunom` after `zol` (no verb) is *more intense* as a quality of the people. After the verb, `hahunom` is an ordinary *how* they walk and ranks nothing.
 

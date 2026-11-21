@@ -48,7 +48,7 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 
 A noun after a because hinge names an act or a thing, not a person. For *because of Alazun*, say what Alazun did as a sentence after `blarl`. A name after the hinge is a named event or place (a storm, a city), never the person.
 
-A stance or holder inside the sentence after `blarl` stays in it: *because Alazun may be asleep* gives the guess, not the sleeping, as the reason. Put the hinge first with `blarth` and MAY after it (`thahum blarth thomam …`) for a fact that makes the outcome possible.
+A stance word inside the sentence after `blarl`, or a word there that says whose view the claim is, belongs to that sentence: *because Alazun may be asleep* gives the guess as the reason, not the sleeping. When a fact is the reason and the outcome is only possible, put the hinge first with `blarth`, then MAY (`thahum blarth thomam …`).
 
 ### Unless and even if {#unless-and-even-if}
 

@@ -54,7 +54,17 @@ English connects one finished sentence to the next with words like *therefore*, 
 | *but* | **`xugohum`** | `ugohum` *blockage* | 🚧: the expected path is blocked | `xugohum` |
 | *by the way* | **`xavedam`** | `avedam` *accessory* | 🍟: a side dish, not the main course | `xavedam` |
 
-*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* puts the next claim at the same time; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). *Therefore* also gives a reason, as *because* does: the last claim is why the next one holds. Those same roots keep their ordinary content readings under other role letters.
+What each linker says about the next claim:
+
+| Linker | The next claim |
+|--------|----------------|
+| *therefore* | moves forward from the last claim, and the last claim is why it holds, as with *because* |
+| *however* | contrasts with the last claim |
+| *meanwhile* | holds at the same time as the last claim |
+| *next* | is the next frame |
+| *but* | goes against the continuation the last claim led you to expect: harder push-back than *however* |
+
+Those same roots keep their ordinary content readings under other role letters.
 
 A linker reaches back to one sentence: the one that ends at the period before it. To link back to several claims at once, join them into that sentence with a [clause join](/joins#clause-joins).
 
