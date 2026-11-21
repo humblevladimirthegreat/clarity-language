@@ -29,6 +29,23 @@ Only words about how you know or how things stand move to `/w/` this way: the on
 >
 > "Azozon walks, still tired." (the tiredness from earlier has not worn off)
 
+Every other mood word works the same way on `/w/`:
+
+| Ageben | English |
+|--------|---------|
+| `zazozon dahobal wubom gerulol vayebel.` | *Azozon sees a hat that, going by the pattern, is red.* |
+| `zazozon dahobal weyom gerulol vayebel.` | *Azozon sees a hat that is apparently red.* |
+| `zazozon dahobal wanam gerulol vayebel.` | *Azozon sees a hat that, it follows, is red.* |
+| `zazozon dahobal webam gerulol vayebel.` | *Azozon sees a hat that is said to be red.* |
+| `zazozon dahobal wabem gerulol vayebel.` | *Azozon sees a hat that my gut says is red.* |
+| `zazozon dahobal welam gerulol vayebel.` | *Azozon sees a hat that used to be red.* |
+| `zazozon dahobal womam gerulol vayebel.` | *Azozon sees a hat that may be red.* |
+| `zazozon dahobal womal gerulol vayebel.` | *Azozon sees a hat that may be red; I'll find out.* |
+| `zazozon dahobal womar gerulol vayebel.` | *Azozon sees a hat that may be red, who knows.* |
+| `zazozon dahobal weyum gerulol vayebel.` | *Azozon sees a hat that I imagine as red.* |
+| `zazozon dahobal weyur gerulol vayebel.` | *Azozon sees a hat; suppose it is red.* |
+| `zazozon dahobal weyul gerulol vayebel.` | *Azozon sees a hat that, for practice, is red.* |
+
 ### Practice {#advanced-practice}
 
 Short drills for Advanced. Try each item before opening **Show answer**.

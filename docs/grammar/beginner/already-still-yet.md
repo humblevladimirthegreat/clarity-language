@@ -63,6 +63,18 @@ On *not yet*, the ending says how firmly you expect the change instead. Use `-m`
 >
 > "Azozon has stopped walking for now." (expected to start again)
 
+> `zalazun thelol vudurul.`
+>
+> z-Alazun | th-not-yet.sure | v-departure
+>
+> "Alazun hasn't left yet, but will."
+
+> `zazozon thelor vowurol.`
+>
+> z-Azozon | th-not-yet.maybe-never | v-walk
+>
+> "Azozon hasn't walked yet, and may never."
+
 Like any stance, *not yet* can take MAY in front of it, when you are not sure the change has still not come.
 
 > `zalazun thomam thelom vudurul.`
@@ -78,6 +90,16 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 > z-Azozon | [d-cat | [w-still | g-sleepy]] | v-see
 >
 > "Azozon sees a cat that is still sleepy."
+
+The other three words work the same way:
+
+| Ageben | English |
+|--------|---------|
+| `zazozon dogozel wavem guzemel vayebel.` | *Azozon sees a cat that is already sleepy.* |
+| `zazozon dogozel welom guzemel vayebel.` | *Azozon sees a cat that is not sleepy yet.* |
+| `zazozon dogozel welol guzemel vayebel.` | *Azozon sees a cat that is not sleepy yet, but will be.* |
+| `zazozon dogozel welor guzemel vayebel.` | *Azozon sees a cat that is not sleepy yet, and may never be.* |
+| `zazozon dogozel wuvum guzemel vayebel.` | *Azozon sees a cat that is no longer sleepy.* |
 
 ### Ever and never {#ever-never}
 

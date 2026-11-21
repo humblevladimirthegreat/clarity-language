@@ -103,6 +103,12 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 >
 > "Azozon can't right now."
 
+> `zazozon dogozel wodaxam guzemel vayebel.`
+>
+> z-Azozon | [d-cat | [w-ABIL-able | g-sleepy]] | v-see
+>
+> "Azozon sees a cat that can be sleepy."
+
 ### Intention adverbs {#intention-adverbs}
 
 An ordinary adverb tells how, when, or where the action happens. Some `/h/` words are instead about the whole claim, as a [stance](clause.md#stance-th) is. These are **intention adverbs**, and `hodaxol` above is one: it says Azozon can't, without naming any verb. You may put an intention adverb anywhere in the sentence: alone, its place changes nothing; next to another word about the whole claim, the earlier of the two covers the later ([which word covers which](clause.md#which-covers-which)).
