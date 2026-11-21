@@ -1,6 +1,6 @@
 # Solver follow-ups: matching, suppositions, fixture labels, and moving declarations
 
-**Status:** READY, 2026-11-21. User, 2026-11-21: the four questions left from the coverage work are settled as recommended: 1 (a), 2 (b), 3 (a), 4 (b) ([Decided](#decided)); also fix the fixture-label bug and add a `move-decl` tool.  
+**Status:** IN PROGRESS, 2026-11-21. Phase started. User, 2026-11-21: the four questions left from the coverage work are settled as recommended: 1 (a), 2 (b), 3 (a), 4 (b) ([Decided](#decided)); also fix the fixture-label bug and add a `move-decl` tool.  
 **Related:** [solver.md](../../meta/solver.md) (translation table rows 34 and 45, the edge, the fixture paragraph); [interpreter.md](../../meta/interpreter.md#matching) (matching); [code-layout.md](../../meta/code-layout.md#splitting-a-file); `src/interpret/match.ts`, `translate*.ts`, `translate.test.ts`, `solve.test.ts`, `fixtures/solve-lists.txt`, `fixtures/solve-links.txt`; `scripts/deps.ts`, `scripts/lib/deps.ts`, `scripts/outline.ts`; grammar page [notional](/notional) (read only).  
 **Depends on:** none.  
 **Design authority:** none. No form or reading changes: solver matching, one solver term, a test helper, and a tool.

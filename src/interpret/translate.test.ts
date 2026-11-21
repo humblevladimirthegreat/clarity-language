@@ -43,10 +43,14 @@ describe("translate: golden program per solver fixture", () => {
   for (const file of readdirSync(fixtures).filter((f) => /^solve-.*\.txt$/.test(f))) {
     it(file, () => {
       const list = entries(file);
-      const t = translate(logOf(list.map((e) => e.text)), { lexicon: tables });
+      const log = logOf(list.map((e) => e.text));
+      const t = translate(log, { lexicon: tables });
       assert.deepEqual(t.left, [], "every fixture reading has a row");
-      // The golden file names each reading id's fixture label, so a reader can follow it.
-      const labels = t.readings.map((id, i) => `% ${id} = ${list[i]?.label}`).join("\n");
+      // The golden file names each reading id's fixture label, so a reader can follow it. A reading belongs to the log
+      // entry that holds it (or holds the top-level reading it sits in), and the entry's `at` is its fixture index.
+      const owner = new Map(log.entries.flatMap((e) => e.readings.map((r) => [r.id, e.at] as const)));
+      const entryAt = (id: string) => owner.get(id) ?? [...owner].find(([top]) => id.startsWith(`${top}.`))?.[1];
+      const labels = t.readings.map((id) => `% ${id} = ${list[entryAt(id) ?? -1]?.label}`).join("\n");
       const text = `${labels}\n\n${t.program}`;
       const golden = join(fixtures, file.replace(/\.txt$/, ".lp"));
       if (process.env.UPDATE_GOLDEN || !existsSync(golden)) writeFileSync(golden, text);
