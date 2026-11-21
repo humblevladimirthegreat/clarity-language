@@ -1015,7 +1015,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ⬅️,west,ewuho,place,order,none,return,map-left is west; return is going back again,,western; react; reply; respond; response; answer,viewpoint.md#intermediate-practice
 ↖️,northwest,anuho,place,order,none,,,,,
 ↕️,vertical,evuho,place,order,none,hierarchy,up and down; hierarchy ranks higher and lower,,,
-↔️,east-west,eho,place,order,,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,collectives.md#intermediate-practice
+↔️,east-west,eho,place,order,,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,clause-sequence.md#beginner-practice
 ↩️,back,ebuho,place,order,none,revert,return arrow curves back left; revert is going back to before,,rear,
 ↪️,forward,uvuho,place,order,none,redirect,return arrow curves forward right; redirect is sending another way,,proceed; forth,
 ⤴️,curve-up,ogugo,sign,order,none,improvement,the arrow turns upward; improvement is getting better,,improve; enhance; reform; slope,

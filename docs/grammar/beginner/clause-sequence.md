@@ -33,6 +33,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *rain* | `erulal` | 🌧️ |
+| *east-west* | `ehol` | ↔️ |
 
 **Review:**
 
@@ -48,6 +49,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *window* | `uwohel` |
 | *open* | `vohel` |
 | *see* | `vayebel` |
+| *train* | `edavol` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -83,6 +85,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Ahelan | d-window | v-open | x-and-then | z-Azozon | d-rain | v-see]
 :::
 
+**5.** *Ahelan sits, then Azozon sees the east-west train.*
+
+::: details Show answer
+`zahelan vehohel xan zazozon dedavol gehol vayebel.`
+
+[z-Ahelan | v-sit | x-and-then | z-Azozon | [d-train | g-east-west] | v-see]
+:::
+
 #### Ageben → English {#beginner-ageben-to-english}
 
 **1.** `zahelan vozumul xan zalazun vabuvul.`
@@ -107,6 +117,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Alazun | v-sit | x-and-then | z-Ahelan | v-run]
 
 *Alazun sits, then Ahelan runs.*
+:::
+
+**4.** `zalazun dedavol gehol vayebel xan zahelan veruvol.`
+
+::: details Show answer
+[z-Alazun | [d-train | g-east-west] | v-see | x-and-then | z-Ahelan | v-run]
+
+*Alazun sees the east-west train, then Ahelan runs.*
 :::
 
 #### Pick one {#beginner-pick-one}

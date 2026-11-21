@@ -184,7 +184,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *sheet-music* | `ehorol` | 🎼 |
 | *heavy* | `arolem` | 🪨 from *rock* |
-| *reciprocity* | `hehom` | ↔️ from *east-west*: each one to the others |
 
 **Review:**
 
@@ -200,6 +199,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *page* | `obonol` |
 | *sing* | `vozuyel` |
 | *see* | `vayebel` |
+| *reciprocity* | `hehom` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
