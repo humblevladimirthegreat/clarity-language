@@ -82,6 +82,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    logo: { src: '/favicon.svg', alt: '' },
     nav: [
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
