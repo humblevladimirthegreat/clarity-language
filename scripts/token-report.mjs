@@ -7,7 +7,9 @@
 //   --skip             leave out a session (for example the one running the report)
 //   --dir              transcript folder (default ~/.claude/projects/<slug of this repo's path>)
 //   --agent <id | text>  only the subagent transcripts whose id starts with it or whose description
-//                      holds it (case-insensitive; the Subagents table lists each description)
+//                      holds it (case-insensitive; the Subagents table lists each description), with the
+//                      subagents they started; the table nests those under their parent with a subtotal,
+//                      so a phase executor's line plus its workers is that phase's cost
 //   --session <id>     only that session (an id prefix) and its subagents; with --agent, its matching subagents
 //   --calls            one line per tool call of the selected transcripts: number, kind, result tokens,
 //                      context at that call, carry cost (weighted, and its share of that transcript), label
@@ -112,7 +114,7 @@ function transcripts() {
         /* no meta */
       }
       const subLines = fs.readFileSync(path.join(subDir, g), "utf8").split("\n").filter(Boolean);
-      out.push({ session, sub: true, id: g.replace(/^agent-|\.jsonl$/g, ""), lines: subLines, start: firstTimestamp(subLines), desc: meta.description ?? "", type: meta.agentType ?? "" });
+      out.push({ session, sub: true, id: g.replace(/^agent-|\.jsonl$/g, ""), lines: subLines, start: firstTimestamp(subLines), desc: meta.description ?? "", type: meta.agentType ?? "", parent: meta.parentAgentId ?? null, depth: meta.spawnDepth ?? 1 });
     }
   }
   return out;
@@ -323,8 +325,17 @@ const selected = (x) => {
   const want = opts.agent.toLowerCase();
   return x.sub && (x.id.startsWith(opts.agent) || x.desc.toLowerCase().includes(want));
 };
+// A selected subagent brings the subagents it started (a phase executor's workers).
+const withDescendants = (picked) => {
+  const ids = new Set(picked.filter((x) => x.sub).map((x) => x.id));
+  for (let grew = true; grew; ) {
+    grew = false;
+    for (const x of inWindow) if (x.sub && x.parent && ids.has(x.parent) && !ids.has(x.id)) ids.add(x.id), (grew = true);
+  }
+  return inWindow.filter((x) => picked.includes(x) || (x.sub && ids.has(x.id)));
+};
 // --session alone keeps the session and its subagents; --agent keeps only subagents.
-const all = inWindow.filter((x) => (opts.agent || opts.session ? selected(x) : true));
+const all = opts.agent || opts.session ? withDescendants(inWindow.filter(selected)) : inWindow;
 const total = all.reduce((a, x) => a + x.cost, 0);
 if (!total) {
   console.log(opts.agent || opts.session ? `No transcript in ${opts.dir} matches${opts.session ? ` --session ${opts.session}` : ""}${opts.agent ? ` --agent ${opts.agent}` : ""}.` : `No API calls in ${opts.dir} between ${opts.since} and ${opts.until}.`);
@@ -387,9 +398,17 @@ console.log(`  failing steps: ${Object.entries(steps).sort((a, b) => b[1] - a[1]
 console.log(`  after a failure, before the next edit: re-runs ${sum(loops, (l) => l.rerunNoEdit)}, log / saved-output reads ${sum(loops, (l) => l.logPeeks)}, src/ or scripts/ greps ${sum(loops, (l) => l.srcGreps)}`);
 
 console.log("\n## Subagents: start, calls, peak context, weighted cost, description");
-for (const s of [...subs].sort((a, b) => (a.start < b.start ? -1 : 1))) {
-  console.log(`  ${s.start.slice(0, 16).replace("T", " ")}  ${String(s.n).padStart(4)}  ${k(s.ctxMax).padStart(5)}  ${k(s.cost).padStart(6)}  ${s.desc || s.type}`);
-}
+// Nested subagents print under the one that started them; a parent with children gets a subtotal.
+const subIds = new Set(subs.map((x) => x.id));
+const childrenOf = (id) => subs.filter((x) => x.parent === id).sort((a, b) => (a.start < b.start ? -1 : 1));
+const treeCost = (x) => x.cost + sum(childrenOf(x.id), treeCost);
+const printSub = (s, indent) => {
+  console.log(`  ${s.start.slice(0, 16).replace("T", " ")}  ${String(s.n).padStart(4)}  ${k(s.ctxMax).padStart(5)}  ${k(s.cost).padStart(6)}  ${"  ".repeat(indent)}${s.desc || s.type}`);
+  const kids = childrenOf(s.id);
+  for (const c of kids) printSub(c, indent + 1);
+  if (kids.length) console.log(`  ${" ".repeat(30)}${k(treeCost(s)).padStart(6)}  ${"  ".repeat(indent)}└ with the ${kids.length} it started`);
+};
+for (const s of subs.filter((x) => !x.parent || !subIds.has(x.parent)).sort((a, b) => (a.start < b.start ? -1 : 1))) printSub(s, 0);
 if (subs.length) console.log(`  median peak ~${k(median(subs.map((x) => x.ctxMax)))}, median cost ~${k(median(subs.map((x) => x.cost)))}`);
 
 // ---------- recurring shapes ----------

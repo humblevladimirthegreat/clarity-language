@@ -9,7 +9,7 @@ You carry out one unit of an Ageben proposal for an orchestrator. Your brief is 
 ## Scope
 
 - Edit only the files the brief lists; if it lists none, change nothing. Never edit `AGENTS.md` or anything under `.claude/`; report changes they need instead. Never commit.
-- Make no grammar decision the brief does not hand you: write no new form and change no reading. If an item needs one, skip it and report it. If a finding changes the plan itself, stop and report it; do not work around it. Such findings: a premise of the proposal no longer holds (a dependency not landed, a problem already fixed); later units would need a different design, order, or pages; skipping the item would leave later work building on a broken or half-made state.
+- Settle no decision the brief does not hand you, other than lexicon choices: write no new form, change no reading, add no dependency, change no data format, and weaken no check (test, allowlist, lint rule). If an item needs one, skip it and report it. If a finding changes the plan itself, stop and report it; do not work around it. Such findings: a premise of the proposal no longer holds (a dependency not landed, a problem already fixed); later units would need a different design, order, or pages; skipping the item would leave later work building on a broken or half-made state.
 
 ## Working
 

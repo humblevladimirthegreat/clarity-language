@@ -104,7 +104,8 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 | Write or top up a checkpoint or level review, edit the drill allowlist | `drill-generation.md` |
 | Write down an idea: a loose spec nobody has planned yet | `ideas.md` |
 | Turn an idea into a plan: what a proposal holds, when it is ready, phases and units, the plan section | `proposal-plans.md` |
-| Orchestrate a plan as the session the user talks to: subagents, gates, commits, phases, resuming, consolidating. A subagent running one unit skips it; its brief is complete | `proposals.md` |
+| Orchestrate a plan as the session the user talks to: which decisions an agent may settle, subagents, gates, commits, phases, resuming, consolidating. A subagent running one unit skips it; its brief is complete | `proposals.md` |
+| Run a whole proposal in one session, only when the user asks: runner, phase executors, usage gate, agent decisions | `full-execution.md` |
 
 ## Tooling notes
 

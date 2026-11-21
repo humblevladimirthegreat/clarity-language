@@ -20,13 +20,73 @@ Proposals may link **out** to `docs/grammar/`, `docs/meta/`, `data/`, and code. 
 ## Open decisions
 <a id="open-decisions"></a>
 
-- Grammar decisions belong to the user. An agent that meets one while carrying out a proposal logs it under Open decisions, skips the item, and carries on with the rest.
-- Each logged open decision states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The user still decides; the recommendation saves a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
+- A worker settles no decision its brief does not hand it. It writes the decision up, skips the item, and carries on with the rest. The orchestrator sorts it into a [decision class](#decision-classes), which says who settles it.
+- Each write-up states the problem, lists the options, and ends with a **Recommendation:** the option the agent would pick and why, in a sentence or two, weighed by its effect on the learner. The recommendation saves whoever decides a round of analysis. When the agent has no basis to choose, it says so and names what would settle it.
 - Each recommendation states its confidence, as **(high)**, **(medium)** or **(low)** right after **Recommendation:**.
   - **High:** the grammar pages or a stated design goal point to one option, and the others cost the learner something clear.
   - **Medium:** a judgment call with a clear reason, where another option is still defensible.
   - **Low:** a slight lean only, because the options are close or the agent lacks something that would settle it. Name what that is.
 - A settled reading goes on its grammar page. A rejection with a reason beyond *no reading yet* also gets an entry in [design-decisions.md](../design-decisions.md).
+
+### Decision classes
+<a id="decision-classes"></a>
+
+| Class | Who settles it | Record |
+|-------|----------------|--------|
+| **Autonomous** | the orchestrator | the item's commit, and the grammar page or `design-decisions.md` entry |
+| **Review later** | the orchestrator; the user looks it over afterwards | its own commit and a *Decided by agent* entry ([settling a decision](#settling-a-decision)) |
+| **Blocking** | the user only | the write-up stays under Open decisions in the proposal |
+
+The class comes from what the decision touches, not from the confidence. A blocking decision stays blocking however sure the agent is, and an autonomous one is still settled when confidence is low.
+
+**Blocking** decisions:
+
+- **Language goals.** It makes a parse ambiguous, touches one of the psychological themes of [purpose.md](../../grammar/purpose.md) or a test in [feature-criteria.md](../feature-criteria.md), or changes phonology, orthography or singability.
+- **Restricting the language.** It bans or rejects a form a learner would reach for, or marks a spelling closed in [unassigned-reserved.md](../unassigned-reserved.md). Allowing a second natural way to say something is not blocking.
+- **Precedent.** It sets a general rule for a family of constructions, rather than applying an existing rule to one case.
+- **Contradiction.** It goes against a `design-decisions.md` entry, a grammar page, or a design goal of [purpose.md](../../grammar/purpose.md) or [introduction.md](../../grammar/introduction.md).
+- **Maintainability.** It adds a library or other dependency, or chooses between one and custom code. Or it changes a format that other code relies on: the columns or shape of a file in `data/`, or what a build step writes.
+- **Weaker checks.** It loosens a test, adds to an allowlist, turns off a lint rule, or leaves out a coverage row to get the tree green.
+- **Process.** It changes a procedure page, an agent file, or this policy in a way the plan does not spell out.
+- **Public surface.** It changes a public URL or redirect, a sidebar group or a page name, or starts a deploy.
+- **Spending.** It runs a paid eval, uses a costlier model than the plan names, or would push a full run past its [usage gate](full-execution.md#usage-gate).
+- **Scope.** It drops a proposal item or a teaching section, rather than deferring it.
+
+**Review later** decisions:
+
+- **New learning.** It adds a form, an exception, or a distinction a learner has to learn.
+- **Meanings.** It gives a reading to an open spelling, or moves an overlay to another anchor.
+- **Names.** It sets a learner-facing English name in [terminology.md](../../grammar/terminology.md).
+- **Band.** It places a form in a band within the gates of [learning-levels.md](../learning-levels.md). Changing a gate is blocking.
+
+**Autonomous** decisions:
+
+- **Combining readings.** How two readings combine, unless a blocking test applies.
+- **Lexicon detail.** A root's sense, alias or gloss, and the `core` order.
+- **Following the grammar.** How the parser, interpreter or solver carries out what the owning grammar section already says.
+- **Writing.** Wording, example sentences, house cast choices, checkpoint content.
+- **Code shape.** File splits, internal helpers, script flags, so long as no format that other code relies on changes.
+
+Two rules break ties:
+
+- When the class is unclear, take the stricter one, and say why in the write-up.
+- When later units would build on the decision, so that undoing it takes more than reverting its commit, move it up one class.
+
+### Settling a decision
+<a id="settling-a-decision"></a>
+
+The orchestrator settles autonomous and review-later decisions itself, so that one context keeps a phase's decisions consistent with each other.
+
+- **High or medium confidence.** It takes the recommendation, unless something it knows from other units argues against it.
+- **Low confidence.** It first starts a research unit: a `proposal-worker` whose brief names the question, the options, and what would raise the confidence. Research uses the grammar pages, `design-decisions.md`, and batched probes with `parse.mjs`, `find.mjs` and `reading.mjs`, never the web. The report gives the evidence and the new confidence.
+- **Still low after research.** It decides anyway and flags the decision. A flagged autonomous decision becomes review later.
+
+Each decision lands the way a user's decision would: the settled reading on its grammar page, and a `design-decisions.md` entry for a rejection with a reason. An autonomous decision lands in the commit of the item it unblocks. A review-later decision also gets:
+
+- **its own commit**, named *`name.md`: decide <topic> (agent, <confidence>)*, so the user can revert it alone
+- **an entry under *Decided by agent:*** on the Status line: the date, the decision in a clause, its confidence, whether it is flagged, and the commit hash. Consolidation keeps these entries until the user has reviewed them.
+
+The items a decision unblocks then go to a fresh worker as usual. At the end of the phase the orchestrator tells the user the new *Decided by agent* entries, flagged ones first, and any blocking decisions. A blocking decision that later items or phases build on is a [stop-and-alert](#stop-and-alert) finding.
 
 ## Stop and alert
 <a id="stop-and-alert"></a>
@@ -57,9 +117,11 @@ At the end of each phase the orchestrator:
 
 When a phase runs over its budget and there is more than one unit left to do, the orchestrator ends it early at the next unit boundary, the same way, and the Status line says where the split fell. The next session starts the next phase as in [resuming](#resuming).
 
+When the user asks for a whole proposal in one session, a runner starts each phase in a phase-executor subagent instead, per [full-execution.md](full-execution.md). Nothing on this page changes for a one-phase session.
+
 ## Running with subagents
 
-The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`, `style-editor`) restate parts of this page so that subagents never read it: the [stop-and-alert](#stop-and-alert) findings, the stop line, reading slices, script files for scripted edits, quiet verification, and the report fields. When you change one of those rules here, make the same change in every agent file that restates it.
+The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`, `style-editor`, and `phase-executor` for [full runs](full-execution.md)) restate parts of this page so that subagents never read it: the [stop-and-alert](#stop-and-alert) findings, the stop line, reading slices, script files for scripted edits, quiet verification, and the report fields. When you change one of those rules here, make the same change in every agent file that restates it.
 
 1. **Short-lived subagents.** Give each subagent one or two items, and size a unit by the pages it reads, not by its item count: a unit that walks more than about eight pages, or a whole sidebar group, splits (for example by band). Start a fresh one when the next item reads different pages, or once a context passes about 25 turns or about 80k tokens. Split by shared context, not by file: two items that read the same pages may share a subagent; an item that needs new pages gets a new one. A unit that changes code whose design is not settled in the plan (a new tree node, a new data shape) and also writes the prose that teaches the result splits in two: the code unit first, then a prose unit briefed from what the code produced (its forms, glosses and ids, checked with `parse.mjs`). The prose needs the result, not the code's internals, and a code design that is redone midway leaves a context every prose turn would pay for again.
 2. **The item goes in a brief file.** The orchestrator writes each subagent's brief to its own file in the session's scratchpad directory (`tmp/scratch/briefs/` when the session has none), and the prompt only names it: *Read your brief at `<path>` and follow it.* Every prompt the orchestrator sends stays in its context for the rest of the phase, while the subagent reads the file once, at its cold start. Build each brief by a script from parts kept in files (the digest, a running list such as glossed labels), and never print a finished brief back into the orchestrator's context. The brief carries everything the subagent needs to start:
