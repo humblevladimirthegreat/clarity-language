@@ -156,6 +156,21 @@ def main() -> None:
                 i = next(i for i, (a, b) in enumerate(zip(order, sorted(order))) if a != b)
                 problems.append(f"{name}: new cards out of pack order at card {i}: {got[i][2]} ord {got[i][1]}")
 
+        # The unlock search: each checkpoint tag finds exactly the notes that carry it. Tags are
+        # hierarchical in Anki, so a page name that is a prefix of another would show here.
+        by_tag: dict[str, set[str]] = {}
+        for pack in packs.values():
+            for d in pack["decks"]:
+                for n in d["notes"]:
+                    for t in n["tags"]:
+                        if t.startswith("ageben::cp::"):
+                            by_tag.setdefault(t, set()).add(n["guid"])
+        for tag, want_guids in sorted(by_tag.items()):
+            found_guids = {col.get_note(nid).guid for nid in col.find_notes(f"deck:Ageben* tag:{tag}")}
+            if found_guids != want_guids:
+                problems.append(f"unlock search for {tag} found {len(found_guids)} note(s); want {len(want_guids)}")
+        unlock = f", unlock search right for {len(by_tag)} checkpoint tag(s)" if by_tag else ""
+
         # The learner's own state, which a re-import must keep: one card unsuspended, one reviewed.
         learner: dict[int, tuple] = {}
         ageben = [c for c in col.find_cards('"deck:Ageben*"', order="c.id")]
@@ -220,7 +235,7 @@ def main() -> None:
         sys.exit(f"Anki import check failed: {len(problems)} problem(s)")
     kept = f", learner state kept for {len(learner)} card(s)" if learner else ""
     search = f", release search finds the dropped note ({', '.join(released)})" if released else ""
-    print(f"Anki import check: {notes} notes, {want_cards} cards, {len(decks)} decks, suspension and order as packed{kept}{search}")
+    print(f"Anki import check: {notes} notes, {want_cards} cards, {len(decks)} decks, suspension and order as packed{unlock}{kept}{search}")
 
 
 if __name__ == "__main__":
