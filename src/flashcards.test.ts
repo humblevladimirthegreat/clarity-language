@@ -7,63 +7,116 @@ import { NOT_CORE_ROOTS } from "./core-vocabulary.js";
 import {
   anchorCheckpoint,
   buildNotes,
+  checkpointTag,
   coveredByEndingNote,
   LEXICAL_ENDING_FORMS,
   buildPack,
   loadFlashcardInputs,
   noteGuid,
+  OVERLAY_FIELDS,
+  OVERLAY_MODEL,
+  packJson,
   packTsv,
   releaseId,
   productionGlosses,
   sakeInventoryRoots,
 } from "./flashcards.js";
 import { overlayExamples, overlayRowKey } from "./flashcards-examples.js";
+import { highlightExample, hostLine, slotReadings, wordNoteGloss } from "./flashcards-overlays.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { morphGlossLine } from "./parse/morph-gloss.js";
 
 const pages = lessonPages();
 const inputs = loadFlashcardInputs(pages, levelReviewPages);
-const notes = buildNotes(inputs);
+const tables = loadDefaultTables();
+const started = performance.now();
+const examples = overlayExamples(inputs.overlays, inputs, tables);
+const elapsed = Math.round(performance.now() - started);
+const notes = buildNotes(inputs, examples);
+const rebuild = (published: typeof inputs.published) => buildNotes({ ...inputs, published }, examples);
 const SAKES = [CLOSED.ballot, CLOSED.tool, CLOSED.lightbulb, CLOSED.compass, CLOSED.knot, CLOSED.present, CLOSED.strawberry, CLOSED.lungs, CLOSED.egg];
 
 describe("buildNotes", () => {
-  it("makes one note per published root, compound, and sake sense form", () => {
+  it("makes one note per published root, compound, and overlay sense form an ending note does not cover", () => {
     assert.equal(notes.roots.length, inputs.published.length);
     assert.equal(notes.compounds.length, inputs.compounds.length);
-    const senseForms = new Set(inputs.overlays.filter((r) => r.kind === "sake").map((r) => r.senseForm));
-    assert.equal(notes.overlays.length, senseForms.size);
+    const senseForms = new Set(inputs.overlays.filter((r) => !coveredByEndingNote(r)).map((r) => r.senseForm));
+    assert.deepEqual(notes.overlays.map((n) => n.key).sort(), [...senseForms].sort());
+    assert.ok(notes.overlays.every((n) => n.model === OVERLAY_MODEL && n.fields.form === n.key && !n.fields.slot_of));
+    assert.ok(!notes.overlays.some((n) => n.key === "ubol" || n.key === "ubor"));
   });
 
-  it("collapses the th / w rows of a sake into one note tagged with both", () => {
-    const rows = inputs.overlays.filter((r) => r.kind === "sake" && r.senseForm === inputs.overlays[0]!.senseForm);
+  it("folds the rows of a sense form at its first checkpoint into one note, tagged with each slot", () => {
+    const rows = inputs.overlays.filter((r) => r.senseForm === "unam");
     assert.ok(rows.length >= 2);
-    const note = notes.overlays.find((n) => n.key === rows[0]!.senseForm)!;
+    const note = notes.overlays.find((n) => n.key === "unam")!;
     for (const { pos } of rows) assert.ok(note.tags.includes(`ageben::pos::${pos}`), pos);
     assert.ok(note.tags.includes("ageben::stage::beginner"));
-    assert.equal(note.fields.concrete, rows[0]!.gloss);
-    assert.equal(note.fields.abstract, rows[0]!.definition);
+    assert.ok(note.tags.includes(anchorCheckpoint(rows[0]!.anchor, inputs)!.tag));
+    assert.equal(note.fields.definition, rows[0]!.definition);
+    assert.equal(note.fields.readings, "");
+    assert.equal(note.fields.mnemonic, rows[0]!.mnemonic);
+    assert.equal(note.fields.link, "https://clarityconlang.com/grammar/sakes.html#word-shape");
+    // A slot taught at a later checkpoint is not folded in: ezem on g comes after h and th.
+    const ezem = notes.overlays.find((n) => n.key === "ezem")!;
+    assert.deepEqual(ezem.tags.filter((t) => t.startsWith("ageben::pos::")), ["ageben::pos::h", "ageben::pos::th"]);
+  });
+
+  it("lists readings per slot where the folded rows' definitions differ", () => {
+    const def = (form: string, pos: string) => inputs.overlays.find((r) => r.senseForm === form && r.pos === pos)!.definition;
+    assert.equal(slotReadings([{ pos: "h", definition: "a" }, { pos: "th", definition: "b" }, { pos: "g", definition: "b" }]), '<div class="line"><span class="label">h</span>a</div><div class="line"><span class="label">th / g</span>b</div>');
+    const ezem = notes.overlays.find((n) => n.key === "ezem")!;
+    assert.ok(ezem.fields.readings.includes(def("ezem", "h")) && ezem.fields.readings.includes(def("ezem", "th")));
+    const enam = notes.overlays.find((n) => n.key === "enam")!;
+    assert.ok(enam.fields.readings.includes('<span class="label">h / g / w</span>'), enam.fields.readings);
+  });
+
+  it("highlights the overlay word in the example and carries the example's morph gloss", () => {
+    for (const n of notes.overlays) {
+      const spans = n.fields.example.match(/<span class="overlay">[^<]+<\/span>/g) ?? [];
+      assert.equal(spans.length, 1, `${n.key}: ${n.fields.example}`);
+      assert.ok(n.fields.gloss.trim(), n.key);
+      assert.match(n.fields.link, /^https:\/\/clarityconlang\.com\/grammar\/[a-z0-9-]+\.html#[a-z0-9-]+$/, n.key);
+    }
+    assert.equal(highlightExample("zazozon daledel van", new Set(["an@v"]), tables), 'zazozon daledel <span class="overlay">van</span>');
+  });
+
+  it("names the host root and its concrete sense; bare-vowel forms have no host line", () => {
+    const una = inputs.published.find((r) => r.root === "una")!;
+    assert.equal(notes.overlays.find((n) => n.key === "unam")!.fields.host, `una (${una.concrete})`);
+    assert.equal(notes.overlays.find((n) => n.key === "an")!.fields.host, "");
+    assert.equal(hostLine("an", inputs.published), "");
+  });
+
+  it("orders overlay notes by checkpoint", () => {
+    const order = new Map(inputs.checkpoints.map((c) => [checkpointTag(c.page, c.band), inputs.checkpoints.indexOf(c)]));
+    const at = notes.overlays.map((n) => order.get(n.tags.find((t) => t.startsWith("ageben::cp::"))!)!);
+    assert.deepEqual(at, [...at].sort((a, b) => a - b));
   });
 
   it("derives GUIDs from source, spelling and concrete gloss, not row order", () => {
-    const reversed = buildNotes({ ...inputs, published: [...inputs.published].reverse() });
+    const reversed = rebuild([...inputs.published].reverse());
     const guid = new Map(reversed.roots.map((n) => [n.key, n.guid]));
     for (const n of notes.roots) assert.equal(guid.get(n.key), n.guid);
     for (const n of notes.roots) assert.equal(n.guid, noteGuid("root", n.key, n.fields.concrete));
     for (const n of notes.compounds) assert.equal(n.guid, noteGuid("compound", n.key, n.fields.concrete));
-    for (const n of notes.overlays) assert.equal(n.guid, noteGuid("overlay", n.key, n.fields.concrete));
+    assert.equal(notes.overlays.find((n) => n.key === "unam")!.guid, noteGuid("overlay", "unam", "autonomy"));
+    const ezemGlosses = inputs.overlays.filter((r) => r.senseForm === "ezem" && r.pos !== "g").map((r) => r.gloss);
+    assert.equal(notes.overlays.find((n) => n.key === "ezem")!.guid, noteGuid("overlay", "ezem", wordNoteGloss(ezemGlosses.map((gloss) => ({ gloss })))));
+    assert.equal(wordNoteGloss([{ gloss: "b" }, { gloss: "a" }, { gloss: "b" }]), "a / b");
     const all = [...notes.roots, ...notes.compounds, ...notes.overlays].map((n) => n.guid);
     assert.equal(new Set(all).size, all.length);
   });
 
   it("keeps the GUID through an alias or mnemonic edit; a respelling or new gloss makes a new one", () => {
     const [a, b] = inputs.published;
-    const edited = buildNotes({ ...inputs, published: [{ ...a!, mnemonic: `${a!.mnemonic} x`, englishAliases: ["zz"] }, ...inputs.published.slice(1)] });
+    const edited = rebuild([{ ...a!, mnemonic: `${a!.mnemonic} x`, englishAliases: ["zz"] }, ...inputs.published.slice(1)]);
     assert.equal(edited.roots[0]!.guid, notes.roots[0]!.guid);
     // A retie hands row a the old spelling of row b: the note must not inherit b's history.
-    const retied = buildNotes({ ...inputs, published: [{ ...a!, root: b!.root }, ...inputs.published.slice(1)] });
+    const retied = rebuild([{ ...a!, root: b!.root }, ...inputs.published.slice(1)]);
     assert.notEqual(retied.roots[0]!.guid, notes.roots[1]!.guid);
     assert.notEqual(retied.roots[0]!.guid, notes.roots[0]!.guid);
-    const reglossed = buildNotes({ ...inputs, published: [{ ...a!, concrete: `${a!.concrete} x` }, ...inputs.published.slice(1)] });
+    const reglossed = rebuild([{ ...a!, concrete: `${a!.concrete} x` }, ...inputs.published.slice(1)]);
     assert.notEqual(reglossed.roots[0]!.guid, notes.roots[0]!.guid);
   });
 
@@ -72,11 +125,11 @@ describe("buildNotes", () => {
     const id = releaseId(all);
     assert.match(id, /^[0-9a-f]{8}$/);
     for (const n of all) assert.equal(n.tags.filter((t) => t.startsWith("ageben::release::")).join(), `ageben::release::${id}`, n.key);
-    const reversed = buildNotes({ ...inputs, published: [...inputs.published].reverse() });
+    const reversed = rebuild([...inputs.published].reverse());
     assert.equal(releaseId([...reversed.roots, ...reversed.compounds, ...reversed.overlays]), id);
     assert.equal(releaseId(all.map((n) => ({ ...n, tags: [] }))), id);
     const [a] = inputs.published;
-    const edited = buildNotes({ ...inputs, published: [{ ...a!, mnemonic: `${a!.mnemonic} x` }, ...inputs.published.slice(1)] });
+    const edited = rebuild([{ ...a!, mnemonic: `${a!.mnemonic} x` }, ...inputs.published.slice(1)]);
     assert.notEqual(releaseId([...edited.roots, ...edited.compounds, ...edited.overlays]), id);
   });
 
@@ -141,18 +194,30 @@ describe("packs", () => {
     });
   });
 
-  it("Everything: all roots and compounds, one deck per source", () => {
+  it("Everything: all roots, compounds and overlay word notes, one deck per source", () => {
     const decks = buildPack("everything", notes, inputs).decks;
     assert.deepEqual(decks.map((d) => [d.name, d.notes.length]), [
       ["Ageben::Everything::Roots", inputs.published.length],
       ["Ageben::Everything::Compounds", inputs.compounds.length],
+      ["Ageben::Everything::Overlays", notes.overlays.length],
     ]);
   });
 
-  it("writes one TSV line per note under the header", () => {
+  it("names the overlay note type on overlay notes in the pack JSON, with its field order", () => {
+    const json = packJson(buildPack("sakes", notes, inputs));
+    assert.deepEqual(json.modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS });
+    const packed = json.decks[0]!.notes;
+    packed.forEach((n, i) => {
+      assert.equal(n.model, i % 2 === 0 ? undefined : OVERLAY_MODEL);
+      assert.equal(n.fields.length, i % 2 === 0 ? json.fields.length : OVERLAY_FIELDS.length);
+    });
+    assert.equal(packJson(buildPack("core", notes, inputs)).modelFields, undefined);
+  });
+
+  it("writes one TSV line per Ageben lexicon note under the header", () => {
     const pack = buildPack("sakes", notes, inputs);
     const lines = packTsv(pack).trimEnd().split("\n");
-    assert.equal(lines.filter((l) => !l.startsWith("#")).length, 18);
+    assert.equal(lines.filter((l) => !l.startsWith("#")).length, 9);
     assert.ok(lines.filter((l) => !l.startsWith("#")).every((l) => l.split("\t").length === 10));
   });
 });
@@ -185,11 +250,6 @@ describe("sakeInventoryRoots", () => {
 });
 
 describe("overlayExamples", () => {
-  const tables = loadDefaultTables();
-  const started = performance.now();
-  const examples = overlayExamples(inputs.overlays, inputs, tables);
-  const elapsed = Math.round(performance.now() - started);
-
   it("gives every overlay row an example, except the -l / -r forms an ending note covers", (t) => {
     t.diagnostic(`overlayExamples: ${inputs.overlays.length} rows in ${elapsed} ms`);
     const missing = inputs.overlays

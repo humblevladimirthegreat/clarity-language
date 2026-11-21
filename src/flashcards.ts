@@ -10,7 +10,9 @@ import { join } from "node:path";
 import { stageCheckpoints, type Checkpoint } from "./core-vocabulary.js";
 import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, senseFormRoot, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
-import { BANDS, pageSections, type Band, type PageSections } from "./lint/learning-order.js";
+import type { OverlayExample } from "./flashcards-examples.js";
+import { overlayWordNotes } from "./flashcards-overlays.js";
+import { pageSections, type Band, type PageSections } from "./lint/learning-order.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { grammarFile, readData, REPO_ROOT } from "./repo-paths.js";
 
@@ -21,18 +23,29 @@ export const NOTE_FIELDS = ["front", "concrete", "abstract", "aliases", "parts",
 
 export type NoteFields = Record<(typeof NOTE_FIELDS)[number], string>;
 
-export type FlashcardNote = {
+type NoteBase = {
   source: NoteSource;
   /** Stable key: published `root`, compound `stem`, or overlay `sense_form`. */
   key: string;
   guid: string;
-  fields: NoteFields;
   tags: string[];
   /** The `core` cell (roots and compounds); empty when not core. */
   core: string;
 };
 
-export type FlashcardNotes = { roots: FlashcardNote[]; compounds: FlashcardNote[]; overlays: FlashcardNote[] };
+/** A root or compound: the Ageben lexicon note type. */
+export type LexiconNote = NoteBase & { model: typeof LEXICON_MODEL; fields: NoteFields };
+export type OverlayNoteFields = Record<(typeof OVERLAY_FIELDS)[number], string>;
+/** An overlay word note: the Ageben overlay note type. */
+export type OverlayNote = NoteBase & { model: typeof OVERLAY_MODEL; fields: OverlayNoteFields };
+export type FlashcardNote = LexiconNote | OverlayNote;
+
+export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; overlays: OverlayNote[] };
+
+/** A note's field values in its note type's field order. */
+export function fieldValues(note: FlashcardNote): string[] {
+  return note.model === OVERLAY_MODEL ? OVERLAY_FIELDS.map((f) => note.fields[f]) : NOTE_FIELDS.map((f) => note.fields[f]);
+}
 
 export type FlashcardInputs = {
   published: readonly PublishedRow[];
@@ -60,8 +73,8 @@ export type PackDeck = { name: string; id: number; notes: FlashcardNote[] };
 export type Pack = { id: LexiconPackId; decks: PackDeck[] };
 
 /** Note types `scripts/flashcards-package.py` builds, by name, with their field order. */
-export const LEXICON_MODEL = "Ageben lexicon";
-export const OVERLAY_MODEL = "Ageben overlay";
+export const LEXICON_MODEL = "Ageben lexicon" as const;
+export const OVERLAY_MODEL = "Ageben overlay" as const;
 /** `example` is HTML with the overlay word in `<span class="overlay">`; `readings` is HTML. */
 export const OVERLAY_FIELDS = ["example", "form", "definition", "readings", "host", "slot_of", "gloss", "link", "mnemonic", "kind"] as const;
 /** Anki Cloze type; `text` is the cloze HTML, one `{{cN::…}}` per member. */
@@ -81,12 +94,18 @@ export type PackJson = {
   decks: { name: string; id: number; notes: PackJsonNote[] }[];
 };
 
-/** The pack JSON of a lexicon pack: every note of the Ageben lexicon type. */
+/** The pack JSON of a lexicon pack: Ageben lexicon notes by default; overlay notes name their own type. */
 export function packJson(pack: Pack): PackJson {
+  const overlays = pack.decks.some((d) => d.notes.some((n) => n.model === OVERLAY_MODEL));
   return {
     model: LEXICON_MODEL,
     fields: NOTE_FIELDS,
-    decks: pack.decks.map((d) => ({ name: d.name, id: d.id, notes: d.notes.map((n) => ({ guid: n.guid, fields: NOTE_FIELDS.map((f) => n.fields[f]), tags: n.tags })) })),
+    ...(overlays ? { modelFields: { [OVERLAY_MODEL]: OVERLAY_FIELDS } } : {}),
+    decks: pack.decks.map((d) => ({
+      name: d.name,
+      id: d.id,
+      notes: d.notes.map((n): PackJsonNote => ({ guid: n.guid, fields: fieldValues(n), tags: n.tags, ...(n.model === LEXICON_MODEL ? {} : { model: n.model }) })),
+    })),
   };
 }
 
@@ -104,7 +123,7 @@ export function noteGuid(source: NoteSource, spelling: string, gloss: string): s
 export function releaseId(notes: readonly FlashcardNote[]): string {
   const body = [...notes]
     .sort((a, b) => (a.guid < b.guid ? -1 : a.guid > b.guid ? 1 : 0))
-    .map((n) => [n.source, n.guid, NOTE_FIELDS.map((f) => n.fields[f]), n.core]);
+    .map((n) => [n.source, n.guid, fieldValues(n), n.core]);
   return createHash("sha256").update(JSON.stringify(body)).digest("hex").slice(0, 8);
 }
 
@@ -118,13 +137,9 @@ export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`ageben-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-function earliestBand(bands: readonly (Band | undefined)[]): Band | undefined {
-  return BANDS.find((b) => bands.includes(b));
-}
-
-export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">): FlashcardNotes {
+/** Every note: roots, compounds, overlay word notes. `examples` defaults to {@link overlayExamples} over the inputs. */
+export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">, examples?: ReadonlyMap<string, OverlayExample>): FlashcardNotes {
   const checkpointBand = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
-  const checkpointIndex = new Map(inputs.checkpoints.map((c, i) => [c.anchor, i]));
   const coreTags = (source: NoteSource, key: string, cell: string | undefined): string[] => {
     if (!cell) return [];
     const band = checkpointBand.get(cell);
@@ -134,8 +149,9 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
   const concreteOf = new Map(inputs.published.map((r) => [r.root, r.concrete]));
   const empty: NoteFields = { front: "", concrete: "", abstract: "", aliases: "", parts: "", mnemonic: "", kind: "" };
 
-  const roots = inputs.published.map((r): FlashcardNote => ({
+  const roots = inputs.published.map((r): LexiconNote => ({
     source: "root",
+    model: LEXICON_MODEL,
     key: r.root,
     guid: noteGuid("root", r.root, r.concrete),
     fields: { ...empty, front: r.root, concrete: r.concrete, abstract: r.abstract, aliases: (r.englishAliases ?? []).join(", "), mnemonic: r.mnemonic },
@@ -147,8 +163,9 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     const gloss = concreteOf.get(root);
     return gloss ? `${root} (${gloss})` : root;
   };
-  const compounds = inputs.compounds.map((r): FlashcardNote => ({
+  const compounds = inputs.compounds.map((r): LexiconNote => ({
     source: "compound",
+    model: LEXICON_MODEL,
     key: r.stem,
     guid: noteGuid("compound", r.stem, r.concrete),
     fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: r.join ? `${part(r.left)} + ${r.join} + ${part(r.right)}` : `${part(r.left)} + ${r.right}`, mnemonic: r.mnemonic },
@@ -156,40 +173,8 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     core: r.core ?? "",
   }));
 
-  // The `th` / `w` rows of one sense form collapse into one note. Only sakes for now (v1 packs
-  // use no other overlay); some other sense forms differ by PoS row and need a key rule first.
-  const bySense = new Map<string, OverlayRow[]>();
-  for (const row of inputs.overlays.filter((r) => r.kind === "sake")) bySense.set(row.senseForm, [...(bySense.get(row.senseForm) ?? []), row]);
-  const overlays = [...bySense].map(([senseForm, rows]): FlashcardNote => {
-    const first = rows[0]!;
-    for (const row of rows) {
-      if (row.kind !== first.kind || row.gloss !== first.gloss || row.definition !== first.definition) {
-        throw new Error(`overlay ${senseForm}: the ${first.pos} and ${row.pos} rows disagree on kind, gloss, or definition`);
-      }
-    }
-    const stage = earliestBand(rows.map((r) => inputs.anchorBand(r.anchor)));
-    // The note unlocks at the first checkpoint, in path order, that any of its rows maps to.
-    const cps = rows.map((r) => {
-      const cp = anchorCheckpoint(r.anchor, inputs);
-      if (!cp) throw new Error(`overlay ${senseForm}: anchor ${r.anchor} maps to no checkpoint`);
-      return cp;
-    });
-    const cp = cps.reduce((a, b) => (checkpointIndex.get(b.anchor)! < checkpointIndex.get(a.anchor)! ? b : a));
-    return {
-      source: "overlay",
-      key: senseForm,
-      guid: noteGuid("overlay", senseForm, first.gloss),
-      fields: { ...empty, front: senseForm, concrete: first.gloss, abstract: first.definition, mnemonic: first.mnemonic, kind: first.kind },
-      tags: [
-        "ageben::overlay",
-        `ageben::overlay::${first.kind}`,
-        ...[...new Set(rows.map((r) => r.pos))].map((pos) => `ageben::pos::${pos}`),
-        ...(stage ? [`ageben::stage::${stage}`] : []),
-        cp.tag,
-      ],
-      core: "",
-    };
-  });
+  // One overlay word note per sense form at its first checkpoint (flashcards-overlays.ts).
+  const overlays = overlayWordNotes(inputs, examples);
 
   const release = releaseTag([...roots, ...compounds, ...overlays]);
   for (const note of [...roots, ...compounds, ...overlays]) note.tags.push(release);
@@ -198,6 +183,10 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
 
 /** The glosses on a production front, which must pick out one stem (aliases are cues and may repeat). */
 export function productionGlosses(note: FlashcardNote): string {
+  if (note.model === OVERLAY_MODEL) {
+    // The overlay front: the definition and the example with the overlay word blanked.
+    return `${note.fields.definition} | ${note.fields.example.replace(/<span class="overlay">.*?<\/span>/, "___")}`;
+  }
   return `${note.fields.concrete} | ${note.fields.abstract}`;
 }
 
@@ -228,7 +217,7 @@ export function buildPack(id: LexiconPackId, notes: FlashcardNotes, inputs: Pick
     }
     return { id, decks: [deck("Sakes", ordered)] };
   }
-  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds)] };
+  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Overlays", notes.overlays)] };
 }
 
 /** Sake roots from the first column of the sake inventory table (sakes.md#sake-inventory). */
@@ -329,7 +318,10 @@ export function loadFlashcardInputs(
   };
 }
 
-/** Anki-importable TSV: directive header, then one line per note (deck, GUID, fields, tags). */
+/**
+ * Anki-importable TSV: directive header, then one line per Ageben lexicon note (deck, GUID, fields, tags).
+ * One TSV holds one note type, so overlay notes are in the `.apkg` and `.json` only.
+ */
 export function packTsv(pack: Pack): string {
   const clean = (s: string) => s.replace(/[\t\r\n]+/g, " ");
   const lines = [
@@ -342,7 +334,9 @@ export function packTsv(pack: Pack): string {
     `#columns:deck\tguid\t${NOTE_FIELDS.join("\t")}\ttags`,
   ];
   for (const d of pack.decks) {
-    for (const note of d.notes) lines.push([d.name, note.guid, ...NOTE_FIELDS.map((f) => note.fields[f]), note.tags.join(" ")].map(clean).join("\t"));
+    for (const note of d.notes) {
+      if (note.model === LEXICON_MODEL) lines.push([d.name, note.guid, ...NOTE_FIELDS.map((f) => note.fields[f]), note.tags.join(" ")].map(clean).join("\t"));
+    }
   }
   return `${lines.join("\n")}\n`;
 }

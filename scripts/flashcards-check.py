@@ -23,9 +23,18 @@ from anki.import_export_pb2 import ImportAnkiPackageUpdateCondition
 IF_NEWER = ImportAnkiPackageUpdateCondition.IMPORT_ANKI_PACKAGE_UPDATE_CONDITION_IF_NEWER
 ALWAYS = ImportAnkiPackageUpdateCondition.IMPORT_ANKI_PACKAGE_UPDATE_CONDITION_ALWAYS
 
-# Cards per note, by the pack JSON's `model` (flashcards-package.py builds the templates).
-TEMPLATES = {"Ageben lexicon": 2, "Claritish": 1}
+# Cards per note, by the note's `model` (its own, else the pack's; flashcards-package.py builds the
+# templates). An Ageben set note is a cloze: one card per distinct cloze number in its text.
+TEMPLATES = {"Ageben lexicon": 2, "Claritish": 1, "Ageben overlay": 2, "Ageben set": None}
+CLOZE = re.compile(r"\{\{c(\d+)::")
 RELEASE_TAG = "claritish::release::"
+
+
+def cards_of(model: str, fields: list[str]) -> int:
+    per_note = TEMPLATES[model]
+    if per_note is not None:
+        return per_note
+    return len({m.group(1) for f in fields for m in CLOZE.finditer(f)})
 
 
 def visible(html: str) -> str:
@@ -63,7 +72,8 @@ def main() -> None:
     if not packs:
         sys.exit("usage: flashcards-check.py <pack.json> [...]")
     problems: list[str] = []
-    guids: dict[str, set[str]] = {model: set() for model in TEMPLATES}
+    # GUID -> cards, by note type; a note shared by overlapping packs counts once.
+    guids: dict[str, dict[str, int]] = {model: {} for model in TEMPLATES}
     decks: set[str] = set()
     claritish: list[str] = []
     for path in packs:
@@ -75,9 +85,14 @@ def main() -> None:
             claritish.append(path)
         for d in pack["decks"]:
             decks.add(d["name"])
-            guids[pack["model"]].update(n["guid"] for n in d["notes"])
+            for n in d["notes"]:
+                model = n.get("model", pack["model"])
+                if model not in TEMPLATES:
+                    sys.exit(f"{path}: note {n['guid']}: unknown note type {model!r}")
+                guids[model][n["guid"]] = cards_of(model, n["fields"])
     notes = sum(len(g) for g in guids.values())
-    want_cards = sum(TEMPLATES[m] * len(g) for m, g in guids.items())
+    want = {m: sum(g.values()) for m, g in guids.items()}
+    want_cards = sum(want.values())
 
     with tempfile.TemporaryDirectory() as work:
         col = Collection(os.path.join(work, "check.anki2"))
@@ -105,15 +120,16 @@ def main() -> None:
         missing = decks - {d.name for d in col.decks.all_names_and_ids()}
         if missing:
             problems.append(f"decks not created: {', '.join(sorted(missing))}")
-        for model, per_note in TEMPLATES.items():
+        for model in TEMPLATES:
             cards = col.find_cards(f'"note:{model}"')
-            if len(cards) != per_note * len(guids[model]):
-                problems.append(f"{len(cards)} {model} cards found to render; want {per_note * len(guids[model])}")
+            if len(cards) != want[model]:
+                problems.append(f"{len(cards)} {model} cards found to render; want {want[model]}")
             for cid in cards:
                 card = col.get_card(cid)
                 q, a = visible(card.question()), visible(card.answer())
                 if not q or not a or "{{" in q + a or "front of this card is blank" in q.lower():
-                    problems.append(f"{card.note()['front']} {card.template()['name']}: bad render: {q[:60]!r}")
+                    note = card.note()
+                    problems.append(f"{note.guid} {note.fields[note.note_type()['sortf']]} {card.template()['name']}: bad render: {q[:60]!r}")
 
         # The update a learner makes: import a build that drops a note, then search for notes
         # outside the new release. ALWAYS, since both builds may carry the same modified time.
