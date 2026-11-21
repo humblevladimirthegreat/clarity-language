@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { fullGlossIndex } from "../game/build.js";
-import { checkLine, clashReply, closed, fillFragmentDrafts, giveUpReply, listGroup, spell, whatIsItLikeDraft } from "./reply.js";
+import { checkLine, clashReply, closed, fillAnswerReply, fillFragmentDrafts, giveUpReply, listGroup, spell, whatIsItLikeDraft } from "./reply.js";
 
 const tables = loadDefaultTables();
 const index = fullGlossIndex(tables);
@@ -38,6 +38,18 @@ describe("shared shapes", () => {
     assert.equal(listGroup(["d-dog"]), "d-dog");
     assert.equal(listGroup(["d-dog", "d-door"]), "[d-dog | d-door | d-and]");
     assert.equal(fillFragmentDrafts([{ leaf: "z-dog", english: "a dog" }, { leaf: "z-cat", english: "a cat" }])[0]?.gloss, "[z-dog | z-cat | z-and]");
+  });
+
+  it("a fill answer: one role blank or a predicate blank a fragment, a tuple or a why clause no line", () => {
+    const f = (at: string[], term: string[]) => ({ at, term, because: [] });
+    const two = fillAnswerReply({ verdict: "filled", fillers: [f(["z"], ["zazozon"]), f(["z"], ["zalazun"])] }, tables);
+    assert.equal(two?.shape, "fillFragment");
+    assert.ok(two?.ageben);
+    assert.equal(fillAnswerReply({ verdict: "filled", fillers: [f(["predicate.0"], ["gogozel"])] }, tables)?.shape, "fillFragment");
+    assert.equal(fillAnswerReply({ verdict: "filled", fillers: [f(["z", "d"], ["zazozon", "dodozel"])] }, tables), undefined);
+    assert.equal(fillAnswerReply({ verdict: "filled", fillers: [f(["bl"], ["zalazun vezuvel"])] }, tables), undefined);
+    assert.equal(fillAnswerReply({ verdict: "yes", fillers: [] }, tables)?.shape, "yes");
+    assert.equal(fillAnswerReply({ verdict: "nobody", fillers: [] }, tables), undefined);
   });
 
   it("which one? asks what the noun is like, the noun as subject, and spells", () => {

@@ -180,6 +180,33 @@ export function fillFragmentDrafts(answers: readonly { leaf: string; english: st
 }
 
 /**
+ * The reply to the solver's fill job (solver.md#cli): yes, no, or cannot say for `yes`, `no`, `unknown`; for `filled`,
+ * the fillers as one fragment when each fills one role blank (`z`, `d`, `b`) or a predicate blank, a word each. A
+ * fill-all tuple, a *why* clause, `nobody`, `beyond` and `refused` have no line; the CLI prints their English.
+ */
+export function fillAnswerReply(answer: { verdict: string; fillers: readonly { at: readonly string[]; term: readonly string[] }[] }, tables: ClassifyTables): Reply | undefined {
+  if (answer.verdict === "yes") return firstReply("yes", [yesDraft()], tables);
+  if (answer.verdict === "no") return firstReply("no", [noDraft()], tables);
+  if (answer.verdict === "unknown") return firstReply("cannotSay", [cannotSayDraft(tables)], tables);
+  if (answer.verdict !== "filled") return undefined;
+  const leaves: { leaf: string; english: string }[] = [];
+  for (const f of answer.fillers) {
+    const at = f.at[0];
+    const word = f.term[0];
+    if (f.at.length !== 1 || !at || !word || /\s/.test(word) || !/^([zdb]|predicate\.\d+)$/.test(at)) return undefined;
+    let leaf: string;
+    try {
+      leaf = leafOf(word, tables);
+    } catch {
+      return undefined;
+    }
+    if (at.length === 1) leaf = leaf.replace(/^[zdb]-/, `${at}-`);
+    if (!leaves.some((l) => l.leaf === leaf)) leaves.push({ leaf, english: leaf.replace(/^[a-z]+-/, "") });
+  }
+  return firstReply("fillFragment", fillFragmentDrafts(leaves), tables);
+}
+
+/**
  * A fill answer as a full clause: the question's own gloss with its act word dropped and its blank leaf replaced by
  * the answer. A where blank (`place`) is its `[<hook> | b-wh]` group, replaced by the answer's group. Undefined when the
  * question's gloss has no such blank.

@@ -77,6 +77,11 @@ describe("solve: the fill job (R4c-9 to R4c-13, D10)", () => {
     assert.deepEqual([yes.verdict, yes.fillers, yes.because], ["yes", [], ["t:0.0"]]);
     assert.equal((await filled(["f1"], "yel zer vezuvel.")).verdict, "unknown");
     assert.equal((await filled(["f1"], "yel zer vezuvel.", { closedWorld: true })).verdict, "no");
+    // R4c-11 on a predicate blank: ger asks whether it is like anything, existence over isa.
+    const like = await fill(log("fill", ["f4"]), q("yel ger zazozon."), base);
+    assert.deepEqual([like.verdict, like.fillers, like.because], ["yes", [], ["t:0.0"]]);
+    assert.equal((await filled(["f1"], "yel ger zazozon.")).verdict, "unknown");
+    assert.equal((await filled(["f1"], "yel ger zazozon.", { closedWorld: true })).verdict, "no");
   });
 
   it("cautious by default; possible fills from some world", async () => {

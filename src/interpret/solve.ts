@@ -550,15 +550,17 @@ type FillBlank = { at: BlankSite; term: Term; listed?: Term[]; existence: boolea
 
 /**
  * The question's blanks, or the part no fill row reads: a blank in another place or series (`zur`, `zor`, a blank inside
- * `derl` / `darl`: R4c decision 7). R4c-12: `gar` on a verbless claim asks what kind, from `isa` only.
+ * `derl` / `darl`: R4c decision 7). R4c-12: `gar` on a verbless claim asks what kind, from `isa` only; `ger`, whether it
+ * is like anything, is existence over the same `isa` atoms (R4c-11).
  */
 function fillBlanks(claim: Claim): FillBlank[] | { key: string } {
   const out: FillBlank[] = [];
   for (const [i, t] of claim.predicate.entries()) {
     if (t.kind !== "blank") continue;
     const family = t.word.family;
-    if (claim.verb || family?.kind !== "joinMarker" || family.series !== "a") return { key: `blank:${t.word.raw}` };
-    out.push({ at: `predicate.${i}`, term: t, existence: false });
+    const series = family?.kind === "joinMarker" ? family.series : undefined;
+    if (claim.verb || (series !== "a" && series !== "e")) return { key: `blank:${t.word.raw}` };
+    out.push({ at: `predicate.${i}`, term: t, existence: series === "e" });
   }
   for (const r of ["z", "d", "b"] as const) {
     const t = claim.roles[r];

@@ -13,8 +13,8 @@ export { compareValues, measureValue, numberValue, sameNumberWord, samePayload, 
 export type { MeasureValue, NumberValue } from "./value.js";
 export { ask, questionFilters } from "./ask.js";
 export type { Host, Match } from "./ask.js";
-export { clashes, couldBe, follows, giveUp, stands, whyNot } from "./solve-browser.js";
-export type { Answer, Clash, ClashResult, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve-browser.js";
+export { clashes, couldBe, fill, follows, giveUp, stands, whyNot } from "./solve-browser.js";
+export type { Answer, BlankSite, Clash, ClashResult, FillAnswer, Filler, FillOptions, FillVerdict, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve-browser.js";
 export { canonicalReadings, compareCanonical, sameReadings } from "./equal.js";
 export type { CanonicalReadings, EqualResult, EqualVerdict, UnorderedPair } from "./equal.js";
 export { FAMILY_TERMS, REACH_LINES, inspectNotes, notesForToken } from "./inspect-notes.js";

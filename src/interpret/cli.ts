@@ -10,10 +10,10 @@ import type { LexWord } from "../parse/types.js";
 import { ask, type Match } from "./ask.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
 import { throughAntecedent } from "./match.js";
-import { formatProbe, parseProbe, probeJson, runProbeCase, type ProgramView } from "./probe.js";
+import { formatProbe, isFillAsk, parseProbe, probeJson, runProbeCase, type ProgramView } from "./probe.js";
 import { readText } from "./read.js";
-import { cannotSayDraft, clashReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
-import { clashes, couldBe, follows, giveUp, stands, type Answer, type Clash, type GiveUpResult, type Semantics, type SolveOptions, type StandsResult } from "./solve.js";
+import { cannotSayDraft, clashReply, fillAnswerReply, firstReply, giveUpReply, noDraft, whyReply, yesDraft, type Reply } from "./reply.js";
+import { clashes, couldBe, fill, follows, giveUp, stands, type Answer, type Clash, type FillAnswer, type GiveUpResult, type Semantics, type SolveOptions, type StandsResult } from "./solve.js";
 import type { LeftOut } from "./translate-types.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 
@@ -31,7 +31,9 @@ const USAGE = [
   "  unsettled pairs, switches used, then the glosses of the question and of the sentence. No match prints `no match`.",
   "       node scripts/reading.mjs solve [--json] [--possible] [--defaults] [--closed] [--window N] FILE '<question>'",
   "  Asks the solver whether the question follows from the FILE's log (--possible: whether it could be so): the verdict,",
-  "  the reply, why (each deciding reading with its turn), switches used, and readings left out of the program.",
+  "  the reply, why (each deciding reading with its turn), switches used, and readings left out of the program. A fill",
+  "  question (zar, dar, zer, gar, thahum blar, ...) goes to the fill job (--possible: a filler in some world): the verdict,",
+  "  the reply, each filler as `term[, term] — why: [at] speaker: text`, switches, left; --json prints the FillAnswer.",
   "  --defaults  everyday defaults for open universals; --closed  the unsaid is false",
   "       node scripts/reading.mjs clashes [--json] [--give-up] [--window N] FILE",
   "  Prints each smallest clash in the FILE's log, with its readings; --give-up adds a smallest set to give up.",
@@ -39,7 +41,8 @@ const USAGE = [
   "  Prints what stands in the FILE's log: each reading in, out or undecided, the attacks, and the extensions.",
   "       node scripts/reading.mjs probe [--json] [--program[=full]] [--terms a,b] [--case N|LABEL] [--possible] [--defaults] [--closed] FILE",
   "  FILE holds independent cases, each its own log: a line starting `---` starts one (the rest of the line is its label);",
-  "  turn lines as `log` reads them; `? text` asks with follows, `?~ text` with couldBe (--possible: `?` too). A solve",
+  "  turn lines as `log` reads them; `? text` asks with follows, `?~ text` with couldBe (--possible: `?` too); a fill",
+  "  question goes to the fill job, `?~` brave. A solve",
   "  fixture (`@ id` tags the next turn, `= English` skipped) is one case. Per case: turns that did not parse, left, notes,",
   "  each smallest clash or `no clash`, each question's verdict, because, switches and left. --program adds the case's own",
   "  program lines, not the generic rules every program shares (--program=full keeps them); --terms a,b keeps only program",
@@ -397,6 +400,28 @@ export function formatAnswer(answer: Answer, log: Log, tables: ClassifyTables): 
   return out;
 }
 
+/** One line per reading id as `[at] speaker: text`, joined; the id alone when the log lacks it. */
+function turnText(ids: readonly string[], log: Log): string {
+  const turnOf = new Map(log.entries.flatMap((e) => e.readings.map((r) => [r.id, e] as const)));
+  return ids.map((id) => {
+    const e = turnOf.get(id);
+    return e ? `[${e.at}] ${e.speaker}: ${e.text}` : id;
+  }).join("; ");
+}
+
+/** Text for a fill question under `solve`: verdict, reply, english, each filler with why, an existence's why, switches, left. */
+export function formatFillAnswer(answer: FillAnswer, log: Log, tables: ClassifyTables): string[] {
+  const out = [`verdict ${answer.verdict}`];
+  const reply = fillAnswerReply(answer, tables);
+  if (reply) out.push(`reply ${reply.english}${reply.ageben ? ` ${reply.ageben}` : ""}`);
+  if (answer.english) out.push(`english ${answer.english}`);
+  for (const f of answer.fillers) out.push(`filler ${f.term.join(", ")} — why: ${turnText(f.because, log)}`);
+  if (!answer.fillers.length && answer.because.length) out.push(`why ${whyReply(answer.because).english}`, ...readingLines(answer.because, log, "  "));
+  if (answer.switches.length) out.push(`switches ${answer.switches.join(", ")}`);
+  out.push(...leftLines(answer.left));
+  return out;
+}
+
 /** Text for `stands`: each reading with its label and turn, the attacks, and the extensions. */
 export function formatStands(result: StandsResult, log: Log): string[] {
   const out: string[] = [];
@@ -460,6 +485,13 @@ async function solveCommand(command: SolveCommand, raw: string[]): Promise<void>
     process.exit(1);
   }
   if (!question) (console.error("query: holds no sentence"), process.exit(1));
+  if (isFillAsk(question)) {
+    const filled = await fill(log, question, { ...options, possible: flags.possible });
+    if (flags.json) console.log(JSON.stringify({ ...filled, reply: fillAnswerReply(filled, tables) }, null, 2));
+    else for (const l of formatFillAnswer(filled, log, tables)) console.log(l);
+    if (filled.verdict === "refused") process.exitCode = 1;
+    return;
+  }
   const answer = await (flags.possible ? couldBe : follows)(log, question, options);
   if (flags.json) console.log(JSON.stringify({ ...answer, reply: answerReply(answer, tables) }, null, 2));
   else for (const l of formatAnswer(answer, log, tables)) console.log(l);

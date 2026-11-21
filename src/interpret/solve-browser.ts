@@ -6,7 +6,7 @@
  */
 import type * as Solve from "./solve.js";
 
-export type { Answer, Clash, ClashResult, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve.js";
+export type { Answer, BlankSite, Clash, ClashResult, FillAnswer, Filler, FillOptions, FillVerdict, GiveUpResult, Label, Semantics, SolveOptions, SolveSwitch, SolveVerdict, Standing, StandsOptions, StandsResult, WhyNotResult } from "./solve.js";
 
 let loading: Promise<typeof Solve> | undefined;
 
@@ -41,4 +41,9 @@ export async function whyNot(...args: Parameters<typeof Solve.whyNot>): ReturnTy
 /** {@link Solve.stands}: what stands, each reading in, out or undecided. */
 export async function stands(...args: Parameters<typeof Solve.stands>): ReturnType<typeof Solve.stands> {
   return (await solver()).stands(...args);
+}
+
+/** {@link Solve.fill}: what fills each blank of a fill question. */
+export async function fill(...args: Parameters<typeof Solve.fill>): ReturnType<typeof Solve.fill> {
+  return (await solver()).fill(...args);
 }

@@ -124,6 +124,20 @@ describe("reading CLI: solve, clashes and stands", () => {
     assert.equal(json.reply.shape, "yes");
   });
 
+  it("solve: a fill question goes to the fill job; each filler with its why; --possible brave, --closed nobody, --json the FillAnswer", () => {
+    const fillLog = join(dir, "fill-log.txt");
+    writeFileSync(fillLog, ["zazozon vowurol.", "zalazun vowurol.", "zahelan thomam vudurul."].join("\n"));
+    const out = run("solve", fillLog, "yel zar vowurol.");
+    assert.equal(out.status, 0, out.stderr);
+    assert.match(out.stdout, /^verdict filled\nreply \S.* \S+$/m);
+    assert.match(out.stdout, /^filler zazozon — why: \[0\] speaker: zazozon vowurol\.\nfiller zalazun — why: \[1\] speaker: zalazun vowurol\.$/m);
+    assert.match(run("solve", fillLog, "yel zar vudurul.").stdout, /^verdict unknown$/m);
+    assert.match(run("solve", "--possible", fillLog, "yel zar vudurul.").stdout, /^filler zahelan — why: \[2\] /m);
+    assert.match(run("solve", "--closed", fillLog, "yel zar vezuvel.").stdout, /^verdict nobody\nswitches closedWorld$/m);
+    const json = JSON.parse(run("solve", "--json", fillLog, "yel zer vowurol.").stdout);
+    assert.deepEqual([json.verdict, json.fillers, json.because, json.reply.shape], ["yes", [], ["t:0.0", "t:0.1"], "yes"]);
+  });
+
   it("clashes: each smallest clash with its readings, and the set to give up", () => {
     const out = run("clashes", "--give-up", clash);
     assert.equal(out.status, 0, out.stderr);
@@ -181,6 +195,15 @@ describe("reading CLI: solve, clashes and stands", () => {
       assert.match(cases[2]!, /^clash t:0\.0 t:0\.1 t:0\.2 atom ewobo\(z\(alazu\)\)$/m);
       // --possible asks a plain `?` with couldBe.
       assert.match(run("probe", "--possible", file).stdout, /^\?~ yel zalazun vewobol\. -> no because t:0\.0$/m);
+    });
+
+    it("a fill question goes to the fill job: its fillers bracketed, ?~ brave", () => {
+      const fillFile = join(dir, "probe-fill.txt");
+      writeFileSync(fillFile, ["zazozon dodozel vayebel.", "zalazun dogozel vayebel.", "zahelan thomam vudurul.", "? yel zar dar vayebel.", "? yel zar vudurul.", "?~ yel zar vudurul."].join("\n"));
+      const out = run("probe", fillFile).stdout;
+      assert.match(out, /^\? yel zar dar vayebel\. -> filled \[zazozon, dodozel\] \[zalazun, dogozel\] because t:0\.0 t:0\.1$/m);
+      assert.match(out, /^\? yel zar vudurul\. -> unknown$/m);
+      assert.match(out, /^\?~ yel zar vudurul\. -> filled \[zahelan\] because t:0\.2$/m);
     });
 
     it("--program adds the case's own program lines; --program=full adds the generic rules too; --json prints one object per case", () => {

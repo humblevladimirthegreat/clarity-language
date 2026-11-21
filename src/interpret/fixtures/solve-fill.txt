@@ -4,6 +4,7 @@
 # R4c-10: open blank. f1: ? yel zar vowurol. → azozon. f1 + f2: → azozon, alazun (one zar, several fillers: all listed)
 # f1 alone: ? yel zar vezuvel. → no filler, unknown; with closedWorld → nobody
 # R4c-11: f1 alone: ? yel zer vowurol. → yes (existence)
+# R4c-11: f4: ? yel ger zazozon. → yes (existence over isa); f1 alone: → unknown, no under closedWorld
 # R4c-10: f1 alone: ? yel zazozon zalazun zar vowurol. → azozon (blank limited to the listed items)
 # R4c-9: universal to instance. f3 + "zazozon gogozel.": ? yel zar vezuvel. → azozon
 # R4c-9: membership. f6: ? yel zar vowurol. → azozon, alazun. ? yel zarx vowurol. → azozon, alazun (R4c-10)

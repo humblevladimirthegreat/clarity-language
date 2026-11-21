@@ -1,11 +1,15 @@
 /** `reading.mjs probe`: many independent solver cases in one file, each its own log with its own questions (docs/meta/solver.md#cli). */
 import type { ClassifyTables } from "../parse/classify.js";
 import { buildLog, readQuestion, type Log, type Turn } from "./log.js";
-import { clashes, couldBe, follows, type Answer, type ClashResult, type SolveOptions } from "./solve.js";
+import { clashes, couldBe, fill, follows, type Answer, type ClashResult, type FillAnswer, type SolveOptions } from "./solve.js";
 import { ownProgram, translate } from "./translate.js";
 import type { LeftOut } from "./translate-types.js";
+import type { Reading } from "./types.js";
 
-/** A question in a case: asked with `follows`, or `couldBe` (`?~`, or `?` under `--possible`). */
+/** A fill question (`ask:fillAsk`): `solve` and `probe` send it to the fill job, not to `follows` / `couldBe`. */
+export const isFillAsk = (question: Reading): boolean => question.frames.some((f) => f.family === "force" && f.values.ask === "fillAsk");
+
+/** A question in a case: asked with `follows`, or `couldBe` (`?~`, or `?` under `--possible`); a fill question with `fill`, `couldBe` brave. */
 export type ProbeQuestion = { text: string; job: "follows" | "couldBe"; line: number };
 
 /** A turn of a case, with its file line and the fixture label (`@ id`) before it, when there is one. */
@@ -23,7 +27,7 @@ export type ProbeResult = {
   left: LeftOut[];
   notes: { reading: string; key: string; construction: string }[];
   clashes?: ClashResult;
-  questions: (ProbeQuestion & { answer?: Answer; error?: string })[];
+  questions: (ProbeQuestion & { answer?: Answer | FillAnswer; error?: string })[];
   program?: string;
   error?: string;
   /** The log, for formatting reading ids with their turns; not in JSON. */
@@ -109,6 +113,7 @@ export async function runProbeCase(c: ProbeCase, tables: ClassifyTables, options
       try {
         const question = readQuestion(log, q.text, tables)[0];
         if (!question) result.questions.push({ ...q, error: "holds no sentence" });
+        else if (isFillAsk(question)) result.questions.push({ ...q, answer: await fill(log, question, { ...options, possible: q.job === "couldBe" }) });
         else result.questions.push({ ...q, answer: await (q.job === "couldBe" ? couldBe : follows)(log, question, options) });
       } catch (error) {
         result.questions.push({ ...q, error: firstLine(error) });
@@ -149,6 +154,8 @@ export function formatProbe(r: ProbeResult, index: number): string[] {
     }
     const a = q.answer!;
     const parts = [`${head} -> ${a.verdict}`];
+    // A fill answer's fillers, each bracketed: one term per blank, a fill-all tuple comma-joined.
+    if ("fillers" in a && a.fillers.length) parts.push(a.fillers.map((f) => `[${f.term.join(", ")}]`).join(" "));
     if (a.because.length) parts.push(`because ${a.because.map((id) => idText(id, r)).join(" ")}`);
     if (a.switches.length) parts.push(`switches ${a.switches.join(",")}`);
     out.push(parts.join(" "));
