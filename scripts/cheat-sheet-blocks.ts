@@ -17,13 +17,13 @@
 //   rows so a too-tall table can split across `<PageBreak />` (same columns).
 // - `sakes` — one row per sake root, as the `/th/` word for *serves* and *detracts from*.
 // - `closed-words` — closed-root words with a fixed reading (special pronouns,
-//   sentence linkers), spelled from src/closed-roots.ts.
+//   sentence linkers), read from data/closed-words.csv (kinds `pronoun` and `linker`).
 //
 // Every row links to the section that teaches it, with that section's stage.
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { CLOSED, type ClosedName } from "../src/closed-roots.js";
+import { loadClosedWords } from "../src/closed-words.js";
 import { parseOverlayCsv, type OverlayRow } from "../src/lexicon-search.js";
 import { overlaySpelling } from "../src/parse/classify.js";
 import { pageSections, type Band, type PageSections } from "../src/lint/learning-order.js";
@@ -116,32 +116,18 @@ function sakeRows(): string {
   );
 }
 
-/** Closed-root words with a fixed reading. English and anchor live here; the root comes from closed-roots.ts. */
-const CLOSED_WORDS: ReadonlyArray<{ name: ClosedName; form: (root: string) => string; english: string; anchor: string }> = [
-  { name: "microphone", form: (r) => `${r}n`, english: "*I* (the speaker)", anchor: "pronouns.md#special-pronouns" },
-  { name: "headphones", form: (r) => `${r}n`, english: "*you* (the listener)", anchor: "pronouns.md#special-pronouns" },
-  { name: "handshake", form: (r) => `${r}n`, english: "*we* (you and I)", anchor: "pronouns.md#special-pronouns" },
-  { name: "person", form: (r) => `${r}n`, english: "*one*, generic *you*, *people*", anchor: "pronouns.md#generic-pronoun" },
-  { name: "star", form: (r) => `${r}n`, english: "*the topic*", anchor: "topic.md#topic-pronoun" },
-  { name: "east", form: (r) => `x${r}m`, english: "*therefore*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "east", form: (r) => `x${r}l`, english: "*it follows that*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "zebra", form: (r) => `x${r}m`, english: "*however*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "zebra", form: (r) => `x${r}l`, english: "*nevertheless*, *even so*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "clock", form: (r) => `x${r}m`, english: "*meanwhile*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "film", form: (r) => `x${r}m`, english: "*next*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "construction", form: (r) => `x${r}m`, english: "*but*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "construction", form: (r) => `x${r}l`, english: "*on the contrary*", anchor: "sentence-linkers.md#sentence-linkers" },
-  { name: "fries", form: (r) => `x${r}m`, english: "*by the way*", anchor: "sentence-linkers.md#sentence-linkers" },
-];
+/** Kinds of data/closed-words.csv rows the cheat sheets show. */
+const SHOWN_CLOSED_KINDS: ReadonlySet<string> = new Set(["pronoun", "linker"]);
 
 function closedWordRows(): string {
   return table(
     ["Ageben", "English", "Taught in", "Stage"],
-    CLOSED_WORDS.map((w) => ({ ...w, spelled: w.form(CLOSED[w.name]) }))
-      .sort((a, b) => a.spelled.localeCompare(b.spelled))
+    loadClosedWords()
+      .filter((w) => SHOWN_CLOSED_KINDS.has(w.kind))
+      .sort((a, b) => a.form.localeCompare(b.form))
       .map((w) => {
         const { link, stage } = sectionCell(w.anchor);
-        return [`\`${w.spelled}\``, w.english, link, stage];
+        return [`\`${w.form}\``, w.english, link, stage];
       }),
   );
 }
