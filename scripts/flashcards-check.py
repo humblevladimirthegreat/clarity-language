@@ -4,9 +4,13 @@ Run through npm run flashcards; by hand: .venv/bin/python scripts/flashcards-che
 (each <pack.json> sits beside its <pack.apkg>).
 
 Uses Anki's own backend (the `anki` package from requirements.txt), so it checks what a learner's
-import does: the note type arrives, nothing conflicts, overlapping packs share notes, every card
-renders a non-blank question and answer, and a second import adds nothing. For a Claritish pack it
-then imports a build with one note dropped and checks that the release search finds exactly that note.
+import does, with "Import any learning progress" ticked (`with_scheduling`), as the learner is told:
+the note type arrives, nothing conflicts, overlapping packs share notes, cards arrive suspended where
+the pack JSON says `suspend` and unsuspended elsewhere, new cards come in pack order, every card
+renders a non-blank question and answer (a cloze card with a blank), and a second import adds
+nothing. For the Claritish pack and for the Ageben packs together it then imports a build with one
+note dropped and checks that the release search finds exactly that note, and that a card the learner
+unsuspended and one they reviewed keep their state through both re-imports.
 """
 
 import hashlib
@@ -26,8 +30,11 @@ ALWAYS = ImportAnkiPackageUpdateCondition.IMPORT_ANKI_PACKAGE_UPDATE_CONDITION_A
 # Cards per note, by the note's `model` (its own, else the pack's; flashcards-package.py builds the
 # templates). An Ageben set note is a cloze: one card per distinct cloze number in its text.
 TEMPLATES = {"Ageben lexicon": 2, "Claritish": 1, "Ageben overlay": 2, "Ageben set": None}
+CLOZE_MODELS = {"Ageben set"}
 CLOZE = re.compile(r"\{\{c(\d+)::")
-RELEASE_TAG = "claritish::release::"
+# Release tag prefix and top deck, by family: a pack is Claritish by its note type, else Ageben.
+FAMILIES = {"Claritish": ("claritish::release::", "Claritish"), "Ageben": ("ageben::release::", "Ageben")}
+SUSPENDED = -1
 
 
 def cards_of(model: str, fields: list[str]) -> int:
@@ -42,47 +49,58 @@ def visible(html: str) -> str:
 
 
 def release_id(decks: list[dict]) -> str:
-    """The release id src/flashcards-claritish.ts computes: a hash of the note list without tags."""
+    """A hash of the note list without tags. For Claritish it is the id src/flashcards-claritish.ts
+    computes; for Ageben it only needs to differ from the build's own id."""
     body = [[d["name"], d["id"], [[n["guid"], n["fields"]] for n in d["notes"]]] for d in decks]
     text = json.dumps(body, ensure_ascii=False, separators=(",", ":"))
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:8]
 
 
-def drop_one(path: str, work: str) -> tuple[str, str, str]:
-    """Write and package a copy of a Claritish pack with its last note dropped and the release
-    tags recomputed. Returns the copy's JSON path, the dropped GUID, and the new release id."""
-    with open(path, encoding="utf-8") as f:
-        pack = json.load(f)
-    deck = max(pack["decks"], key=lambda d: len(d["notes"]))
-    dropped = deck["notes"].pop()["guid"]
-    rid = release_id(pack["decks"])
-    for d in pack["decks"]:
-        for n in d["notes"]:
-            n["tags"] = [t for t in n["tags"] if not t.startswith(RELEASE_TAG)] + [RELEASE_TAG + rid]
-    out = os.path.join(work, "dropped.json")
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(pack, f, ensure_ascii=False)
+def drop_one(paths: list[str], prefix: str, keep: set[str], work: str) -> tuple[list[str], str, str]:
+    """Write and package copies of one family's packs with one note dropped from every pack that holds
+    it and the release tags recomputed over all of them, as the next release would ship. The dropped
+    note is the last one of the first pack's largest deck that is not in `keep`. Returns the copies'
+    JSON paths, the dropped GUID, and the new release id."""
+    packs = []
+    for path in paths:
+        with open(path, encoding="utf-8") as f:
+            packs.append(json.load(f))
+    deck = max(packs[0]["decks"], key=lambda d: len(d["notes"]))
+    dropped = next(n["guid"] for n in reversed(deck["notes"]) if n["guid"] not in keep)
+    for pack in packs:
+        for d in pack["decks"]:
+            d["notes"] = [n for n in d["notes"] if n["guid"] != dropped]
+    rid = release_id([d for pack in packs for d in pack["decks"]])
     script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "flashcards-package.py")
-    subprocess.run([sys.executable, script, out, re.sub(r"\.json$", ".apkg", out)], check=True)
-    return out, dropped, rid
+    outs = []
+    for path, pack in zip(paths, packs):
+        for d in pack["decks"]:
+            for n in d["notes"]:
+                n["tags"] = [t for t in n["tags"] if not t.startswith(prefix)] + [prefix + rid]
+        out = os.path.join(work, "dropped-" + os.path.basename(path))
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(pack, f, ensure_ascii=False)
+        subprocess.run([sys.executable, script, out, re.sub(r"\.json$", ".apkg", out)], check=True)
+        outs.append(out)
+    return outs, dropped, rid
 
 
 def main() -> None:
-    packs = sys.argv[1:]
-    if not packs:
+    paths = sys.argv[1:]
+    if not paths:
         sys.exit("usage: flashcards-check.py <pack.json> [...]")
     problems: list[str] = []
     # GUID -> cards, by note type; a note shared by overlapping packs counts once.
     guids: dict[str, dict[str, int]] = {model: {} for model in TEMPLATES}
     decks: set[str] = set()
-    claritish: list[str] = []
-    for path in packs:
+    packs: dict[str, dict] = {}
+    families: dict[str, list[str]] = {}
+    for path in paths:
         with open(path, encoding="utf-8") as f:
-            pack = json.load(f)
+            pack = packs[path] = json.load(f)
         if pack.get("model") not in TEMPLATES:
             sys.exit(f"{path}: unknown note type {pack.get('model')!r}")
-        if pack["model"] == "Claritish":
-            claritish.append(path)
+        families.setdefault("Claritish" if pack["model"] == "Claritish" else "Ageben", []).append(path)
         for d in pack["decks"]:
             decks.add(d["name"])
             for n in d["notes"]:
@@ -99,7 +117,7 @@ def main() -> None:
 
         def load(path: str, again: bool, update=IF_NEWER) -> None:
             apkg = re.sub(r"\.json$", ".apkg", path)
-            options = ImportAnkiPackageOptions(update_notes=update, update_notetypes=update)
+            options = ImportAnkiPackageOptions(update_notes=update, update_notetypes=update, with_scheduling=True)
             log = col.import_anki_package(ImportAnkiPackageRequest(package_path=apkg, options=options)).log
             name = os.path.basename(apkg)
             for field in ("conflicting", "first_field_match", "missing_notetype", "missing_deck", "empty_first_field"):
@@ -108,9 +126,51 @@ def main() -> None:
             if again and len(log.new):
                 problems.append(f"{name}: second import added {len(log.new)} note(s)")
 
-        for path in packs:
+        def cards_by_guid() -> dict[str, list[tuple[int, int, int]]]:
+            """GUID -> its cards as (due, ord, queue)."""
+            rows = col.db.all("select n.guid, c.due, c.ord, c.queue from cards c join notes n on c.nid = n.id")
+            out: dict[str, list[tuple[int, int, int]]] = {}
+            for guid, due, ord_, queue in rows:
+                out.setdefault(guid, []).append((due, ord_, queue))
+            return out
+
+        for path in paths:
             load(path, again=False)
-        for path in packs:
+
+        # Suspension and new-card order. A note shared by overlapping packs keeps the cards of the
+        # pack that brought it, so each pack is checked on the notes it brought, in import order.
+        cards = cards_by_guid()
+        seen: set[str] = set()
+        for path in paths:
+            pack, name = packs[path], os.path.basename(path)
+            suspend = pack.get("suspend") is True
+            brought = [n["guid"] for d in pack["decks"] for n in d["notes"] if n["guid"] not in seen]
+            seen.update(brought)
+            wrong = [g for g in brought for _, _, q in cards.get(g, []) if (q == SUSPENDED) != suspend]
+            if wrong:
+                problems.append(f"{name}: {len(wrong)} card(s) {'not ' if suspend else ''}suspended on import, e.g. {wrong[0]}")
+            place = {g: i for i, g in enumerate(brought)}
+            got = sorted((due, ord_, g) for g in brought for due, ord_, _ in cards.get(g, []))
+            order = [(place[g], ord_) for _, ord_, g in got]
+            if order != sorted(order):
+                i = next(i for i, (a, b) in enumerate(zip(order, sorted(order))) if a != b)
+                problems.append(f"{name}: new cards out of pack order at card {i}: {got[i][2]} ord {got[i][1]}")
+
+        # The learner's own state, which a re-import must keep: one card unsuspended, one reviewed.
+        learner: dict[int, tuple] = {}
+        ageben = [c for c in col.find_cards('"deck:Ageben*"', order="c.id")]
+        if len(ageben) >= 2:
+            col.sched.unsuspend_cards(ageben[:2])
+            col.sched.set_due_date([ageben[1]], "5")
+
+        def state(cid: int) -> tuple:
+            c = col.get_card(cid)
+            return (c.queue, c.type, c.due, c.ivl)
+
+        learner = {cid: state(cid) for cid in ageben[:2]}
+        keep = {col.get_card(cid).note().guid for cid in learner}
+
+        for path in paths:
             load(path, again=True)
 
         if col.note_count() != notes:
@@ -121,34 +181,46 @@ def main() -> None:
         if missing:
             problems.append(f"decks not created: {', '.join(sorted(missing))}")
         for model in TEMPLATES:
-            cards = col.find_cards(f'"note:{model}"')
-            if len(cards) != want[model]:
-                problems.append(f"{len(cards)} {model} cards found to render; want {want[model]}")
-            for cid in cards:
+            found = col.find_cards(f'"note:{model}"')
+            if len(found) != want[model]:
+                problems.append(f"{len(found)} {model} cards found to render; want {want[model]}")
+            for cid in found:
                 card = col.get_card(cid)
-                q, a = visible(card.question()), visible(card.answer())
-                if not q or not a or "{{" in q + a or "front of this card is blank" in q.lower():
+                raw_q = card.question()
+                q, a = visible(raw_q), visible(card.answer())
+                blank = model not in CLOZE_MODELS or 'class="cloze"' in raw_q
+                if not q or not a or not blank or "{{" in q + a or "front of this card is blank" in q.lower():
                     note = card.note()
                     problems.append(f"{note.guid} {note.fields[note.note_type()['sortf']]} {card.template()['name']}: bad render: {q[:60]!r}")
 
-        # The update a learner makes: import a build that drops a note, then search for notes
-        # outside the new release. ALWAYS, since both builds may carry the same modified time.
-        released = ""
-        for path in claritish:
-            out, dropped, rid = drop_one(path, work)
-            load(out, again=False, update=ALWAYS)
-            stale = col.find_notes(f'"deck:Claritish*" -tag:{RELEASE_TAG}{rid}')
+        # The update a learner makes: import every pack of the next build, which drops a note, then
+        # search for notes outside the new release. ALWAYS, since both builds may carry the same
+        # modified time.
+        released = []
+        for family, members in families.items():
+            prefix, top = FAMILIES[family]
+            outs, dropped, rid = drop_one(members, prefix, keep, work)
+            if any(prefix + rid in n["tags"] for n in packs[members[0]]["decks"][0]["notes"]):
+                problems.append(f"{family}: the build with a note dropped kept release id {rid}")
+            for out in outs:
+                load(out, again=False, update=ALWAYS)
+            stale = col.find_notes(f'"deck:{top}*" -tag:{prefix}{rid}')
             found = [col.get_note(nid).guid for nid in stale]
             if found != [dropped]:
-                problems.append(f"release search after dropping {dropped} found {found[:5]} ({len(found)} note(s))")
-            released = ", release search finds the dropped note"
+                problems.append(f"{family}: release search after dropping {dropped} found {found[:5]} ({len(found)} note(s))")
+            released.append(family)
+        for cid, before in learner.items():
+            if state(cid) != before:
+                problems.append(f"card {cid}: learner state (queue, type, due, ivl) {before} became {state(cid)} on re-import")
         col.close()
 
     for p in problems[:40]:
         print(f"  {p}", file=sys.stderr)
     if problems:
         sys.exit(f"Anki import check failed: {len(problems)} problem(s)")
-    print(f"Anki import check: {notes} notes, {want_cards} cards, {len(decks)} decks{released}")
+    kept = f", learner state kept for {len(learner)} card(s)" if learner else ""
+    search = f", release search finds the dropped note ({', '.join(released)})" if released else ""
+    print(f"Anki import check: {notes} notes, {want_cards} cards, {len(decks)} decks, suspension and order as packed{kept}{search}")
 
 
 if __name__ == "__main__":
