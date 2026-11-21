@@ -150,6 +150,18 @@ On `/ɡ/` a sake word describes a noun you keep; on `/th/` it says how the event
 >
 > "Azozon talks, and that boosts my confidence."
 
+Every sake root works the same way on `/th/`:
+
+| Ageben | English |
+|--------|---------|
+| `zuwen vudurol thunatham thodethar.` | *I dance: that serves autonomy, and pleasure right now.* |
+| `zuwen varuyol thurotham.` | *I write, and that serves purpose.* |
+| `zazozon vahuyal buwen thawetham.` | *Azozon hugs me, and that serves relatedness.* |
+| `zuwen veduyol balazun thewatham.` | *I teach Alazun, and that serves beneficence.* |
+| `zuwen vazuvol thobathal.` | *I swim, and that does my body good in the long term.* |
+| `zuwen veluyol thowetham.` | *I learn, and that serves understanding.* |
+| `zazozon vozuyel thudatham.` | *Azozon sings, and that does me good somehow.* |
+
 Without mid-word `th`, the root keeps its everyday sense: `gunal` is *ballot-like*, and `hodel` is the adverb from *strawberry*.
 
 For a noun that is not yours, the sake word goes on `/w/` instead, as the next section shows.
@@ -166,6 +178,18 @@ When the noun is not yours (weather, a gathering, another person’s church), fo
 > z-gathering | [w-autonomy-unmet-passing | g-stimulus]
 >
 > "The gathering detracts from autonomy right now." (passing)
+
+Every sake root works the same way before `goyom`:
+
+| Ageben | English |
+|--------|---------|
+| `zobeval wuwatham goyom.` | *The puzzle serves competence.* |
+| `zehahal wurotham goyom.` | *The church serves purpose.* |
+| `zabowam wawetham goyom.` | *The gathering serves relatedness.* |
+| `zuzahal wewatham goyom.` | *The school serves beneficence.* |
+| `zerulal wobathum goyom.` | *The rain is hard on my body.* |
+| `zalel wowetham goyom.` | *The star serves understanding.* |
+| `zobahal wudatham goyom.` | *The park does me good somehow.* |
 
 The same `/w/` sake word can sit before any adjective. Then it is about *that property*: the tea's heat is what serves pleasure, not the tea as a whole. `goyom` is the case where the property is the noun itself, as the thing you react to.
 
