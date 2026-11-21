@@ -100,16 +100,21 @@ export const SET_FIELDS = ["text", "title", "link", "mnemonic"] as const;
 export type PackJsonNote = { guid: string; fields: string[]; tags: string[]; model?: string };
 /**
  * The JSON `scripts/flashcards-package.py` packages: the default note type and its field order,
- * the field order of any other type a note names (`modelFields`), and the decks.
+ * the field order of any other type a note names (`modelFields`), whether every card ships
+ * suspended (`suspend`; absent means unsuspended), and the decks.
  */
 export type PackJson = {
   model: string;
   fields: readonly string[];
+  suspend?: true;
   modelFields?: Record<string, readonly string[]>;
   decks: { name: string; id: number; notes: PackJsonNote[] }[];
 };
 
-/** The pack JSON of a lexicon pack: Ageben lexicon notes by default; overlay and set notes name their own type. */
+/**
+ * The pack JSON of a lexicon pack: Ageben lexicon notes by default; overlay and set notes name their own type.
+ * Every card ships suspended; the learner unsuspends a checkpoint's tag on reaching it.
+ */
 export function packJson(pack: Pack): PackJson {
   const has = (model: string) => pack.decks.some((d) => d.notes.some((n) => n.model === model));
   const modelFields = Object.fromEntries(
@@ -119,6 +124,7 @@ export function packJson(pack: Pack): PackJson {
     model: LEXICON_MODEL,
     fields: NOTE_FIELDS,
     ...(Object.keys(modelFields).length > 0 ? { modelFields } : {}),
+    suspend: true,
     decks: pack.decks.map((d) => ({
       name: d.name,
       id: d.id,

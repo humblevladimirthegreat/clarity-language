@@ -446,6 +446,10 @@ describe("packs", () => {
     assert.deepEqual(packJson({ id: "everything", decks }).modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS });
   });
 
+  it("ships every card of every Ageben pack suspended", () => {
+    for (const pack of bandPacks) assert.equal(packJson(pack).suspend, true, pack.id);
+  });
+
   it("names each non-lexicon note type in the pack JSON, with its field order", () => {
     const json = packJson(bandPacks[0]!);
     assert.deepEqual(json.modelFields, { [OVERLAY_MODEL]: OVERLAY_FIELDS, [SET_MODEL]: SET_FIELDS });

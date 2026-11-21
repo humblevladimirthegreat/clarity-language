@@ -204,6 +204,7 @@ def main() -> None:
         return checked[name]
 
     note_type(pack.get("model"))
+    suspend = pack.get("suspend") is True
     decks = []
     due = 0
     for d in pack["decks"]:
@@ -213,15 +214,17 @@ def main() -> None:
             if len(n["fields"]) != len(names):
                 sys.exit(f"note {n['guid']}: {len(n['fields'])} fields, note type {model.name} has {len(names)}")
             # Due keeps new cards in pack order: checkpoint order, then CSV order.
-            deck.add_note(
-                genanki.Note(
-                    model=model,
-                    fields=[v if name in html_fields else html.escape(v, quote=False) for name, v in zip(names, n["fields"])],
-                    tags=n["tags"],
-                    guid=n["guid"],
-                    due=due,
-                )
+            note = genanki.Note(
+                model=model,
+                fields=[v if name in html_fields else html.escape(v, quote=False) for name, v in zip(names, n["fields"])],
+                tags=n["tags"],
+                guid=n["guid"],
+                due=due,
             )
+            # genanki 0.13 caches note.cards; each Card's `suspend` writes queue -1.
+            for card in note.cards:
+                card.suspend = suspend
+            deck.add_note(note)
             due += 1
         decks.append(deck)
     genanki.Package(decks).write_to_file(sys.argv[2])
