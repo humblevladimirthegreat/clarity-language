@@ -2,17 +2,13 @@
 
 import type { TokenType } from "chevrotain";
 import {
-  B,
   HostedB,
-  JoinV,
-  V,
   VPlainEnd,
   VPlainMore,
   VContEnd,
   VContMore,
   JoinVEnd,
   JoinVMore,
-  W,
   WBefore,
 } from "../tokens.js";
 import type { GrammarParser } from "../sentence-grammar.js";

@@ -1,6 +1,6 @@
 /** Sentence-parser rules for noun phrases: one set per slot, their lists, parts and join closes. */
 
-import { B, HostedB, Factor, HScale, BScale, FenceBar, ItemHook, W, WBefore } from "../tokens.js";
+import { B, HostedB, Factor, HScale, BScale, FenceBar, ItemHook, WBefore } from "../tokens.js";
 import {
   CLOSE_ENDS,
   LIST_ENDS,

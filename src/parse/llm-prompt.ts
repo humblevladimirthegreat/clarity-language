@@ -4,7 +4,8 @@
  * doc examples picked by shared constructions, and the task. Pure: the example index and the
  * label glosses come in from llm-examples.ts.
  */
-import { MORPH_FORM_SUFFIXES, ROLE_PART } from "./morph-gloss.js";
+import { MORPH_FORM_SUFFIXES } from "./morph-gloss-labels.js";
+import { ROLE_PART } from "./morph-gloss-tables.js";
 
 /** One doc example: its gloss, its free English split into sentence and note, and its features. */
 export type ExamplePair = {

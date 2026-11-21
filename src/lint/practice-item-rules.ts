@@ -5,7 +5,7 @@
  * that each item has its parts, that its forms parse, and how its forms relate.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import { normalizeAgeben } from "../parse/morph-gloss.js";
+import { normalizeAgeben } from "../parse/morph-gloss-blocks.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { LexWord } from "../parse/types.js";
 import { sameReadings } from "../interpret/equal.js";

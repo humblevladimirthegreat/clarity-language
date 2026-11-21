@@ -25,7 +25,9 @@ import clingo from "clingo-wasm";
 import type { Log } from "./log.js";
 import { match, type TermSite } from "./match.js";
 import type { StepLexicon } from "./steps.js";
-import { detailRange, inRange, sayOf, translate, unwrapText, type LeftOut, type Translation } from "./translate.js";
+import { detailRange, inRange } from "./translate-helpers.js";
+import { sayOf, unwrapText, type LeftOut, type Translation } from "./translate-types.js";
+import { translate } from "./translate.js";
 import type { Claim, Detail, Reading, Term } from "./types.js";
 import { detailNumber, wordValue } from "./value.js";
 

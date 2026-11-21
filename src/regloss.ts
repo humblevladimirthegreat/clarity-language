@@ -6,7 +6,8 @@
  */
 import { extractMorphPairs, type MorphPair } from "./lint/morph-gloss-docs.js";
 import type { ClassifyTables } from "./parse/classify.js";
-import { morphGlossLine, normalizeMorphLine } from "./parse/morph-gloss.js";
+import { morphGlossLine } from "./parse/morph-gloss.js";
+import { normalizeMorphLine } from "./parse/morph-gloss-blocks.js";
 
 export const sepMorph = (line: string): string =>
   normalizeMorphLine(line.replace(/\s+·\s+/g, " | ").replace(/\s+;\s+/g, " | "));

@@ -12,7 +12,8 @@ import type { FrameReach } from "../parse/scope.js";
 import type { InspectToken } from "../parse/inspect.js";
 import type { LexWord, ParseResult } from "../parse/types.js";
 import { classOf } from "./classes.js";
-import { readParse, type ReadOptions } from "./read.js";
+import { readParse } from "./read.js";
+import type { ReadOptions } from "./read-context.js";
 import type { Detail, Frame, FrameFamily, Reading, ReadingId, StanceList, Term } from "./types.js";
 
 /** A learner term: the heading text in `terminology.md` and its anchor there. */

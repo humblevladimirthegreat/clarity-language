@@ -17,7 +17,7 @@
  */
 import type { LexWord, ParseResult } from "../parse/types.js";
 import { classOf } from "./classes.js";
-import { wordKey } from "./read.js";
+import { wordKey } from "./read-context.js";
 import type { Detail, Frame, Reading, Term } from "./types.js";
 
 /** Where a word sits in the parse tree: field names from the utterance down, indices dropped (`left.interjections`). */

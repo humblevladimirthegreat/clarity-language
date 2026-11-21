@@ -16,7 +16,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { extractFreeEnglish } from "../src/lint/free-english.js";
 import { fillSelf } from "../src/learner-name.js";
 import { loadDefaultTables, parseWithTables } from "../src/parse/index.js";
-import { looksLikeMorphLine } from "../src/parse/morph-gloss.js";
+import { looksLikeMorphLine } from "../src/parse/morph-gloss-blocks.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 

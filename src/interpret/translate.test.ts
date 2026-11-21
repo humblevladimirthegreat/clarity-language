@@ -8,7 +8,8 @@ import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { buildLog } from "./log.js";
-import { inRange, translate } from "./translate.js";
+import { inRange } from "./translate-helpers.js";
+import { translate } from "./translate.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(here, "..", "..");

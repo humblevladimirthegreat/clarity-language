@@ -9,7 +9,8 @@ export {
   inspectText,
   morphDetails,
 } from "./inspect.js";
-export { morphGlossFor, morphGlossLine, morphGlossWords, senseLabel } from "./morph-gloss.js";
+export { morphGlossFor, morphGlossLine, morphGlossWords } from "./morph-gloss.js";
+export { senseLabel } from "./morph-gloss-labels.js";
 export type {
   InspectConstruction,
   InspectError,
