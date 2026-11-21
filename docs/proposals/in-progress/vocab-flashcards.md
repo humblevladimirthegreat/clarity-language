@@ -1,11 +1,11 @@
 # Proposal: vocab flashcards v2
 
-**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it. Phase 2 (U6–U11, late hosts) done 2026-11-21: six hosts made core earlier (see [late hosts](#late-hosts)); no checkpoint over its `core` cap. Phase 3 (E1–E4, U12–U16, keys, examples, note types) done 2026-11-21, after the user settled the stop on overlay rows with no example (2026-11-21: exempt the `-l` / `-r` forms of ending-note kinds; write example sentences into the anchor sections for the rest, 69 rows on 12 pages). Every overlay row now has an example or is exempt. Autonomous, 2026-11-21: `un` on `/h/` is glossed *refusing*, as its definition and the parser label say. Phase 4 (U17–U23, notes and packs) done 2026-11-21: `npm run flashcards` gives Beginner 197 notes / 414 cards (9 decks), Intermediate 217 / 459 (17), Advanced 35 / 72 (5), Everything 2562 / 5124 (4), Claritish 98 notes (12 decks); the import check sees 2716 notes, 5381 cards, 47 decks. Largest checkpoint `sakes.md` at 42 new cards, so the load test passes with closed words in. Autonomous, phase 4, 2026-11-21: an `-l` / `-r` form whose `-m` sibling takes a new slot gets no slot note unless its gloss there is new (`ewel` cite at `same-role-words.md` gets one); closed-word English shows as plain text, the starred words on the concrete line; one TSV per note type; same-gloss members of a set (`enam` / `enar` in the as-of hinge set) stay as they are. **Decided by agent:**
+**Status:** IN PROGRESS 2026-11-21. Phase 1 (U1–U5, closed words) done 2026-11-21: `data/closed-words.csv` (44 rows), its parser and test, the cheat sheets read it. Phase 2 (U6–U11, late hosts) done 2026-11-21: six hosts made core earlier (see [late hosts](#late-hosts)); no checkpoint over its `core` cap. Phase 3 (E1–E4, U12–U16, keys, examples, note types) done 2026-11-21, after the user settled the stop on overlay rows with no example (2026-11-21: exempt the `-l` / `-r` forms of ending-note kinds; write example sentences into the anchor sections for the rest, 69 rows on 12 pages). Every overlay row now has an example or is exempt. Autonomous, 2026-11-21: `un` on `/h/` is glossed *refusing*, as its definition and the parser label say. Phase 4 (U17–U23, notes and packs) done 2026-11-21: `npm run flashcards` gives Beginner 197 notes / 414 cards (9 decks), Intermediate 217 / 459 (17), Advanced 35 / 72 (5), Everything 2562 / 5124 (4), Claritish 98 notes (12 decks); the import check sees 2716 notes, 5381 cards, 47 decks. Largest checkpoint `sakes.md` at 42 new cards, so the load test passes with closed words in. Autonomous, phase 4, 2026-11-21: an `-l` / `-r` form whose `-m` sibling takes a new slot gets no slot note unless its gloss there is new (`ewel` cite at `same-role-words.md` gets one); closed-word English shows as plain text, the starred words on the concrete line; one TSV per note type; same-gloss members of a set (`enam` / `enar` in the as-of hinge set) stay as they are. Phase 5 (U24–U27, packaging and publishing) done 2026-11-21: the four Ageben packs ship every card suspended, new-card positions follow pack order, the import check proves both plus learner state through re-import, the release search, cloze blanks and each checkpoint's unlock search; `docs:publish` builds the four packs into `dist/grammar/flashcards/`; `flashcards.data.ts` feeds the page. Autonomous, phase 5, 2026-11-21: the page tells the learner to import the band packs before Everything, because a note shared between packs keeps the new-card position of the pack imported first. **Decided by agent:**
 - 2026-11-21: `gezem` / `govam` on a noun are taught at `more-hinges.md#time-hinge-on-noun` with the other noun hinges; their anchors moved there from beginner `dependents.md#hinges`, whose two sentences naming them went (a `/ɡ/` hinge with `/b/` is taught later). High, not flagged, `9a6714b9`.
 - 2026-11-21: the `/ɡ/` and `/w/` as-of resume forms (`genar`, `gunor`, `wenar`, `wunor`) take the snapshot of the matching earlier pair, taught with examples at `as-of.md#as-of`. Medium, not flagged, `99d9109f`.
 - 2026-11-21: `hadam` on an event names what the act puts in as the filling (`zazozon vobuvul hadam bledudal` *Azozon pours, filling something with tea*), at `of-relations.md#of-relations`. Medium, not flagged, `a63e020d`.
 - 2026-11-21: Anki's default import drops the suspension (it resets scheduling), so the Flashcards page tells the learner to tick **Import any learning progress**, and the U25 import check imports with `with_scheduling=True`; the alternative was a different unlock mechanism. Medium, not flagged, `9e905ed2`.
-- 2026-11-21: Anki's default new-card sort (*Card type, then order gathered*) breaks note order within a day, so the Flashcards page tells the learner to set the Ageben preset to **Order gathered**; the alternative, a deck preset inside the `.apkg`, applies only if the learner ticks *Import deck presets* and genanki lacks it. Medium, not flagged, DECISION2.
+- 2026-11-21: Anki's default new-card sort (*Card type, then order gathered*) breaks note order within a day, so the Flashcards page tells the learner to set the Ageben preset to **Order gathered**; the alternative, a deck preset inside the `.apkg`, applies only if the learner ticks *Import deck presets* and genanki lacks it. Medium, not flagged, `40cf18cf`.
 
 v1 shipped (`npm run flashcards`: Core, Sakes and Everything packs, summed up under [v1 as shipped](#v1-as-shipped); [`docs/meta/flashcards.md`](../../meta/flashcards.md) owns it and the Claritish pack; phase 6 extends that doc). Plan re-cut to one item per unit and six phases, 2026-11-21. Decisions, 2026-11-20:
 - One pack per band, plus Everything.
@@ -93,20 +93,20 @@ Done in phase 2: `eze`, `uge`, `eho`, `awu`, `ago` and `uba` are now core at or 
 
 `docs/grammar/flashcards.md`, titled **Flashcards**, sits under **Tools** in the sidebar after Inspect. It holds:
 - What the packs hold, with download links.
-- Setup: Anki with AnkiDroid or AnkiMobile, FSRS at about 0.9, bury siblings, study from the top **Ageben** deck. When importing, tick **Import any learning progress**: Anki's default import resets every card to new, which drops the suspension the packs ship with (found in U24; Anki 26.9, `with_scheduling` off by default). In the study preset, set the new-card sort order to **Order gathered**: the default, *Card type, then order gathered*, shows a day's recognition cards before its production and higher cloze cards.
+- Setup: Anki with AnkiDroid or AnkiMobile, FSRS at about 0.9, bury siblings, study from the top **Ageben** deck. When importing, tick **Import any learning progress**: Anki's default import resets every card to new, which drops the suspension the packs ship with (found in U24; Anki 26.9, `with_scheduling` off by default). In the study preset, set the new-card sort order to **Order gathered**: the default, *Card type, then order gathered*, shows a day's recognition cards before its production and higher cloze cards. Import the band packs before Everything: a note in both keeps the new-card position of the pack imported first.
 - Unlocking: one tag search per checkpoint, grouped by band and unit.
 - Updating: re-import, then delete with the release search.
 - Reviewing: daily reviews before new cards; on a production card, say the answer before flipping; read-only learners suspend the production cards.
 
-The page gets its checkpoint list and release id from a VitePress data loader, `flashcards.data.ts`, beside the other `*.data.ts` in `.vitepress/lib/`. No hand-written list goes stale.
+The page gets its pack list, checkpoint list and release id from the data loader `docs/grammar/.vitepress/lib/flashcards.data.ts` (see *As built* below). No hand-written list goes stale.
 
 ### Publishing
 
 `docs:publish` builds the four packs into `dist/grammar/flashcards/` beside the Claritish pack, through the publish step and Amplify venv the Claritish pack added ([publishing](../../meta/flashcards.md#publishing)). A failed packaging step fails the deploy. Nothing generated is committed.
 
-### As built (phases 1–4)
+### As built (phases 1–5)
 
-Input for U27 and U30; `docs/meta/flashcards.md` still describes v1 (Core, Sakes, one TSV) until U30.
+Input for U28 and U30; `docs/meta/flashcards.md` still describes v1 (Core, Sakes, one TSV) until U30.
 
 - **Modules.** `src/flashcards.ts`: inputs, GUIDs (`noteGuid`), release tag, checkpoint tags (`anchorCheckpoint`, `checkpointTag`), `buildNotes`, `closedWordNotes`, `packJson`, `packTsv`. `src/flashcards-overlays.ts`: word and slot notes (`slotTaughtByMForm`). `src/flashcards-endings.ts`: scale and ending notes. `src/flashcards-sets.ts`: set notes (`overlaySetNotes`, `SET_MIN_MEMBERS`). `src/flashcards-packs.ts`: band packs, Everything, `checkpointNotes`, `noteCards`. `src/flashcards-examples.ts`: `overlayExamples`.
 - **Notes.** `FlashcardNotes` holds `overlays` (90 word notes), `slots` (36), `endings` (scale + 6), `sets` (13) and `closed` (44), all in the release tag. Keys: word note `sense_form`; slot `<form>@<page>`; set `<kind>@<page>`; ending `endings:<kind>`; scale `scale`; GUID gloss of a folded note is its sorted distinct glosses joined with ` / `. A folded word note takes its example, definition, mnemonic and link from the first row in CSV order with an example. `link` is `https://clarityconlang.com/grammar/<page>.html#<id>`.
@@ -114,11 +114,19 @@ Input for U27 and U30; `docs/meta/flashcards.md` still describes v1 (Core, Sakes
 - **Set and ending notes.** HTML cloze, `{{c1::<code>-l</code>}} <i>settled</i> · …`; an ending's reading is the suffix of its kind's CSV gloss (a bare gloss reads *default*); titles *Settled-to-passing scale*, *<Kind> endings*, *<Kind> words*. An ending note lists its kind's `-m` forms outside the cloze.
 - **Closed words.** Ageben lexicon notes, GUID `noteGuid("closed", form, english)`, tags `ageben::closed`, `ageben::closed::<kind>`; the English shows as plain text, the starred words on the concrete line.
 - **Packs.** Subdeck per sidebar unit from `reading-order.ts`. Inside a checkpoint: core roots, core compounds, closed words, then each overlay kind in order of its first note: word, slot, ending, set (the scale note sits with `sake`). Everything holds Roots, Compounds, Closed and Overlays (word notes) only.
-- **Output.** `npm run flashcards` (`--pack`, `--out`, `--tsv-only`) writes per pack `ageben-<pack>.apkg`, `.json`, and one TSV per note type: `ageben-<pack>.tsv`, `-overlay.tsv`, `-set.tsv` (the last two `#html:true`). `scripts/flashcards-check.py` reads each note's `model` and counts cards per type. One run in phase 4 failed once with the Claritish release search finding all 98 notes; it did not recur in about ten later runs. U25 should keep an eye out for it.
+- **Output.** `npm run flashcards` (`--pack`, `--out`, `--tsv-only`) writes per pack `ageben-<pack>.apkg`, `.json`, and one TSV per note type: `ageben-<pack>.tsv`, `-overlay.tsv`, `-set.tsv` (the last two `#html:true`). `scripts/flashcards-check.py` reads each note's `model` and counts cards per type.
+
+- **Suspension and order.** `packJson` writes a top-level `"suspend": true` for the four Ageben packs (absent for Claritish, which ships unsuspended); the packager sets `card.suspend` on every card. Each note gets a running `due` across decks in pack order; both cards of a note share it. With Anki's default import the suspension is lost and the default sort reorders a day's cards, hence the two setup steps on the page.
+- **Import check** (`scripts/flashcards-check.py`, run by every `npm run flashcards`, about 5 s): imports with `with_scheduling=True`; Ageben cards arrive suspended, Claritish not; new cards sorted by `(due, ord)` match note order; an unsuspended and a reviewed card keep their state through re-import; after a next build with one note dropped, the release search finds exactly that note; every card renders, a cloze card has a blank; each `ageben::cp::` search (`deck:Ageben* tag:<tag>`, 99 tags) finds exactly its notes.
+- **Publish.** `scripts/publish-docs-extras.mjs` writes `dist/grammar/flashcards/ageben-{beginner,intermediate,advanced,everything}.apkg` from the same `src/` calls as `npm run flashcards`, beside `claritish.apkg`; no import check there.
+- **Data loader** `docs/grammar/.vitepress/lib/flashcards.data.ts`, built from `src/` only (about 2 s cold). Exports `AGEBEN_PACK_IDS`, `AGEBEN_APKG_DIR = '/flashcards'`, `agebenApkgFile(pack)`, `AGEBEN_APKG_PATHS` (`{ pack, path }`, site-base-relative, wrap in `withBase`), `loadAgebenFlashcards()`, and `data: AgebenFlashcardsData`:
+  - `packs`: `{ id, title, path, notes, cards, decks }` for Beginner, Intermediate, Advanced, Everything.
+  - `bands`: `{ band, title, units }`; a unit is `{ title, number, deck, checkpoints }` (units with notes only); a checkpoint is `{ title, page, link, tag, search, notes, cards }`, `link` like `/clause#beginner-practice`, `search` like `deck:Ageben* tag:ageben::cp::<page>::<band>`. Level reviews unlock nothing and are left out. Beginner 34 checkpoints in 9 units, Intermediate 52 in 17, Advanced 13 in 5.
+  - `releaseId` (8 hex), `releaseTag`, `cleanupSearch` (`deck:Ageben* -tag:ageben::release::<id>`).
 
 ## Plan
 
-Phases 5–6 are left, each in a fresh orchestrator session, each planned at well under 40 orchestrator turns and cut where the next units read different rules or pages, or wait on a finding. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
+Phase 6 is left, in a fresh orchestrator session, planned at well under 40 orchestrator turns. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Each phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit.
 
 The build runs `npm run flashcards`, which packages every pack with `scripts/flashcards-package.py` and checks it. The packager and `scripts/flashcards-check.py` know all three note types. Every unit leaves `npm run flashcards` working.
 
@@ -140,36 +148,10 @@ The build runs `npm run flashcards`, which packages every pack with `scripts/fla
 > - At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
 > - **Report** (about 150 words): done (one line); counts (notes, cards, rows) where the unit makes them; files touched (count); registry or `AGENTS.md` lines to change; the `verify` line; skips with reasons; lexicon choices; **left:**; **inefficient:**.
 
-### Phase 5: packaging and publishing
-
-**U24 Suspended cards and new-card order.** `proposal-worker`, `model: opus`, effort `medium`.
-- In `scripts/flashcards-package.py`, ship every card suspended, and make new-card order follow deck order.
-- **May edit:** `scripts/flashcards-package.py`, `requirements.txt` (pins only).
-
-**U25 Import check.** `proposal-worker`, `model: opus`, effort `medium`.
-- Extend `scripts/flashcards-check.py`:
-  - first import arrives suspended;
-  - a card unsuspended before re-import stays unsuspended;
-  - new-card order matches the note list;
-  - after importing a second build with one note dropped, the release search finds exactly that note;
-  - every card of every type renders.
-- **May edit:** `scripts/flashcards-check.py`.
-
-**U26 Publish step.** `proposal-worker`, `model: sonnet`, effort `medium`.
-- Extend the Claritish publish step in `scripts/publish-docs-extras.mjs` to build the four Ageben packs into `dist/grammar/flashcards/`. Run `npm run docs:publish` and check the four `.apkg` files land.
-- **May edit:** `scripts/publish-docs-extras.mjs`, `scripts/flashcards.ts`.
-
-**U27 Data loader.** `proposal-worker`, `model: opus`, effort `medium`.
-- Add `docs/grammar/.vitepress/lib/flashcards.data.ts`, modeled on the other data loaders. It returns the packs (name, file, note and card counts), the checkpoints grouped by band and unit (title, tag search), and the release id.
-- The report lists the loader's exports and their shapes, for U28's brief.
-- **May edit:** the new data loader.
-
-Gate: `npm run verify -- --allow-generate` against the phase baseline.
-
 ### Phase 6: page and docs
 
 **U28 Flashcards page.** `proposal-worker`, `model: opus`, effort `high`.
-- Write `docs/grammar/flashcards.md` per the design's download page, reading U27's loader (its exports go in the brief). Follow [doc-style.md](../../meta/doc-style.md) and its checklist.
+- Write `docs/grammar/flashcards.md` per the design's download page, reading the data loader (its exports, from *As built*, go in the brief). Follow [doc-style.md](../../meta/doc-style.md) and its checklist.
 - Run `npm run build`; links to the `.apkg` files must pass the dead-link check.
 - **May edit:** `docs/grammar/flashcards.md`, a Vue component under `.vitepress/components/` if the tables need one.
 
@@ -196,7 +178,7 @@ Final gate: `npm run verify` against an empty baseline (`--allow-generate` only 
 
 ### Commits
 
-One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 5, 5; phase 6, 5, the last being the idea cut-down. About 10 left.
+One commit per unit, with the message `vocab-flashcards U<n>: <summary> [skip-cd]` plus the co-author line. A `cheat-sheet-blocks --write` that changes output gets its own fenced commit. Each phase ends with a commit of the consolidated proposal. Expected: phase 6, 5, the last being the idea cut-down.
 
 ## Open decisions
 
