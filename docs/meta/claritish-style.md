@@ -68,11 +68,11 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 `## The forms` leads with the small table, then one sentence on where the drop-in goes in the English sentence, then the endings.
 
 - **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thomam`").
-- **Long menus say they are menus.** An urge or channel inventory is followed by *you don't need to memorize it*.
-- **A further inventory section follows these rules.** A lesson section that is neither the gap nor the forms, such as `## The sakes` or `## The marks`, is held to the same rules as `## The forms`. When it lists a long menu, it says it is a menu (*Nine sakes is a menu; you don't need to memorize it.*).
-- **No bold run-in labels.** When the forms section adds several things, introduce each in an ordinary sentence (*First, … Second, … Third, …*), not under a bold label at the start of a paragraph. Bold stays for a term where it is defined.
+- **Help the reader learn a long list.** After an inventory of more than about five drop-ins (urges, channels, sakes), give the reader a way to hold it: group the rows, or point out a pattern in their meanings. Do not tell the reader they need not memorize it. A drop-in is only useful once it comes to mind as you speak or write.
+- **A further inventory section follows these rules.** A lesson section that is neither the gap nor the forms, such as `## The sakes` or `## The marks`, is held to the same rules as `## The forms`. When it lists a long inventory, it helps the reader learn it the same way.
+- **No bold run-in labels.** When the forms section adds several things, introduce each with a sentence that says how it connects to what came before, not under a bold label at the start of a paragraph. Bold stays for a term where it is defined. Do not number the sentences (*First, … Second, …*), which reads like a school essay. When the parts are parallel and each takes a paragraph, give each a short H3 instead.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the reach doesn't matter*.
-- **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*the urge is not a plan*).
+- **Rule out the near miss.** Where the obvious English reading is wrong, say what the near miss is and how it differs, with an example. A bare denial (*the urge is not a plan*) tells the reader what to avoid but not how to tell the two apart.
 - **Endings.** Which scale each lesson teaches, and its cue, is in [Claritish track](grammar-docs.md#claritish-track); this page adds nothing to it. A [hyphenated suffix](#hyphenated-host) takes no ending.
 - **Pronunciation** is taught once, in *How sure are you?*, in English keywords. Later lessons do not repeat it.
 
@@ -102,7 +102,7 @@ Lessons carry no full Ageben sentences and no morph gloss lines. Explain a drop-
 ## Back-references
 <a id="back-references"></a>
 
-Lessons carry no numbers. A lesson may name an earlier lesson by title, in plain text, when it reuses its form ("start from a thanks or sorry word from Thanks and sorry"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
+Lessons carry no numbers. A lesson may name an earlier lesson by title, in italics, when it reuses its form ("start from a thanks or sorry word from *Thanks and sorry*"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
 
 ## Editor cues and cards
 <a id="editor-cards"></a>

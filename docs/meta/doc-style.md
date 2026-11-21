@@ -30,6 +30,7 @@ Each line is one rule. *Build* means `npm run build` checks it, so you do not ne
 | A picture or metaphor follows the plain rule | Judgment | [Unpack English pictures](#unpack-english-pictures) |
 | House shorthand is said in longer English on first use | Judgment | [House shorthand](#house-shorthand) |
 | Reassurance changes what the learner does or expects | Judgment | [Warmth](#warmth) |
+| Prose reads aloud like a teacher talking: ideas linked, few slogans, people as subjects | Judgment | [Tone](#tone) |
 | Controls are described in a table | Judgment | [Interface instructions](#interface-instructions) |
 
 Run the [closing tests](#before-you-finish) on anything you wrote or rewrote.
@@ -111,8 +112,8 @@ Em dashes are banned in published and root Markdown, and the build fails on them
 - Address the learner in second person ("use `-r` when…", "prefer names when…"). That *you* is English teaching voice, not an Ageben pronoun.
 - Teaching stages do not use maintainer *we* ("we now write…") or author *I*. Author *I* is allowed only on signed prose that does not teach rules: the acknowledgments and the criticisms on the purpose page ([orientation voice](orientation-style.md#voice)).
 - One idea per H2 or H3.
-- Keep a paragraph to five sentences or fewer. When a paragraph lists parallel items (controls, cases, options), use a table.
-- Do not clear your throat ("In this section…", "It is important to note…"). An extra sentence must add mechanism or consequence.
+- Keep a paragraph to five sentences or fewer. When a paragraph runs long, split it where the idea divides, not by clipping sentences. When a paragraph lists parallel items (controls, cases, options), use a table.
+- Do not clear your throat ("In this section…", "It is important to note…"). An extra sentence must add mechanism or consequence, or show how two ideas connect: a linking sentence is not filler ([tone](#tone)).
 - Bold sparingly: a term at the point it is defined, and a control's label. Put Ageben forms in backticks, not italics.
 - Treat a form like a term. An Ageben form may be bold where the page introduces it, and is plain backticks after that, so bold tells the learner *this is where it is taught*. Bare letters and endings always go in backticks (`` `-l` ``, never **-l**). A paragraph that introduces more than four forms still trips `bold-density`; the fix is usually a table. A heading that spells a content root pins an English `{#id}` ([retie-safe writing](grammar-docs.md#retie-safe-writing)).
 
@@ -132,6 +133,31 @@ Three kinds of sentence sound warm and carry information. They are allowed:
 **Test (warmth):** the sentence may stay if it changes what the learner does or expects. "This takes practice at first" passes. "You're doing great" fails.
 
 Put reassurance where the difficulty is predictable (a new sound, pitch, the first long sentences), at most once in a section. Let the examples carry most of the warmth: sentences about real feelings and the [house people](grammar-docs.md#house-people) show the language's character better than friendly prose around a table.
+
+## Tone
+<a id="tone"></a>
+
+Write the way a good teacher talks to a smart adult: plainly, in whole sentences, showing how each idea leads to the next. The rest of this page cuts filler. This section keeps what remains from reading like notes or slogans.
+
+- **Read it aloud.** Keep a sentence only if a good teacher would say it out loud to an adult. If you would not say it, rewrite it.
+- **Connect the ideas.** Show how one claim leads to the next with *because*, *so*, *for example*, or *that's why*. A run of bare claims leaves the reader to work out how they fit together.
+- **Ration the slogans.** A section gets at most one semicolon-balanced pair (*A does this; B does that*) and at most one *X, not Y* denial. Use the denial only where a reader would otherwise get it wrong, and do not end a paragraph on a slogan. A page built from these reads as a string of aphorisms.
+- **Let people act.** The subject of a sentence is a person or a concrete thing. A feature, a form, or a language does not hear, lose, or grade anything.
+- **Vary the length.** Several short claims in a row sound clipped. Join the ones that belong together, and give the main idea a full sentence.
+- **Keep symbols in tables.** `≈`, `→`, and `=` belong in tables and cheat sheets. In a sentence, spell the relation out: *think of `-l` as lasting*.
+- **Say what a name means when you reuse it.** When you point back to an idea taught elsewhere, say it in plain words, not just by its house name (*settled-to-passing scale*). A name alone gives the reader nothing to hold.
+- **Keep titles apart from the sentence.** Put a page or lesson title in italics, or rephrase around it, so a title ending in *?* does not run into your own punctuation.
+- **One shape per column.** Every cell in a table column has the same grammatical form: all noun phrases, or all clauses.
+- **Write required points in your own words.** Where a rule asks a page to say something (when to leave a form out, which form to use when unsure), phrase it for that page. The same sentence on every page reads as boilerplate.
+
+| Smell | Prefer |
+|-------|--------|
+| "A pattern comes from other cases; clues come from this case." | "A pattern comes from other cases like this one, so you could say it before you even reach the stop. Clues come from the scene in front of you." |
+| "Hearing a sound yourself is your own senses." | "When you hear a sound yourself, you're going on your own ears." |
+| "Plain English loses that by the second sentence." | "In plain English, a listener takes the second sentence as something you saw." |
+| "`-l` ≈ lasting" in a sentence | "think of `-l` as *lasting*" |
+| *First, … Second, … Third, …* through a section | A short heading for each part, or a sentence saying how each part connects to the last |
+| The same stock sentence on every page, such as *X is a menu; you don't need to memorize it.* | A sentence written for that page's case, such as a grouping that makes its list easier to learn |
 
 ## Explain before you slogan
 <a id="explain-before-you-slogan"></a>
@@ -279,3 +305,4 @@ Run these on each section you wrote. Skip the first on a table that only finishe
 5. **Why care.** Does the section say what the learner can now do or hear? If it only describes, add the [consequence](#consequence).
 6. **Once.** Is any explanation on the page for the second time? Keep it where it is owned.
 7. **Warmth.** Does each reassuring sentence change what the learner does or expects? Cut the ones that do not.
+8. **Read aloud.** Read the section aloud. Rewrite any sentence you would not say to a person, and any run of short sentences that sounds like notes ([tone](#tone)).
