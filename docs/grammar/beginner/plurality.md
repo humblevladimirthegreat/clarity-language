@@ -150,6 +150,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *ant* | `enezal` | 🐜 |
+| *attest* | `vugel` | 👁️‍🗨️ |
 | *basket* | `abowal` | 🧺 |
 | *sandwich* | `edal` | 🥪 |
 | *wine* | `owudal` | 🍷 |
@@ -236,12 +237,12 @@ z-Ahelan-x | d-sandwich | v-see
 *Ahelan and associates see a sandwich.*
 :::
 
-**2.** `zuwenx vehohel.`
+**2.** `zuwenx vugel.`
 
 ::: details Show answer
-z-speaker-x | v-sit
+z-speaker-x | v-attest
 
-*My people and I sit.* (not you)
+*My people and I attest.* (not you)
 :::
 
 **3.** `zalazun vehohel. zalazurx dedal vayebel.`

@@ -224,7 +224,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Ageben | Cue |
 |---------|--------|-----|
 | *phone* | `ovewel` | 📱 |
-| *attest* | `vugel` | 👁️‍🗨️ |
 
 **Review:**
 
@@ -232,6 +231,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Azozon* | `azozon` |
 | *listener* | `awan` |
+| *attest* | `vugel` |
 | *tell* | `vezuyol` |
 | *misstate* | `venumul` |
 | *see* | `vayebel` |
