@@ -26,6 +26,7 @@ import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } fr
 
 import { KEPT_HOOK, sayOf, wrapText, type Conditional, type Ctx, type EveryHinge, type Frames, type LeftOut, type Literal, type MayOver, type Note, type Part, type Subst, type Talk, type TermSource, type TranslateOptions, type Translation, type Why, type Wrap } from "./translate-types.js";
 import { CONDITIONAL, HINGE_KEYS, ZONE_INTENTIONS, answerable, bareFrames, becauseDenied, claimTerms, detailRange, fragment, hingeDenied, inRange, isEmptyClaim, isOrList, joinOf, mayDenied, name, nounHinge, over, ownChannel, placeOf, plainView, raws, replaceTerm, sharedAdjectives, str, termDetails, termFrames, valueTerm, type Range } from "./translate-helpers.js";
+import { excepted, pointBack, withdrawn } from "./translate-links.js";
 import { because, condition, hinge, pooled, resumedDetails, notOne, nounCondition, nounHinge as sayNounHinge, orList, pool as poolClaim } from "./translate-conditions.js";
 
 // ── The program ─────────────────────────────────────────────────────────────
@@ -123,6 +124,8 @@ export class Translator {
   readonly consts = new Map<Term, string>();
   /** Individuals a closed or open universal may stand for: named things and first-mention nouns. */
   readonly individuals = new Map<string, Term>();
+  /** O-2: the readings a withdrawing hook took back, whose `on(Id)` facts finish() drops. */
+  readonly withdrawn = new Set<ReadingId>();
   readonly denied = new Set<string>();
   readonly templates: { ctx: Ctx; list: Term; claim: Claim; sign: 1 | -1 }[] = [];
   readonly facts = new Set<string>();
@@ -623,7 +626,7 @@ export class Translator {
       if (l.key === "unit:linker" || l.key === "body:topicMarker" || l.key === "slot:tag") {
         out.used.push(l);
         if (l.key === "unit:linker" && text === "xahom" && l.to) out.therefore = l.to;
-      } else if (l.key === "edge:hook" && l.kind === "discourse" && KEPT_HOOK.test(text)) out.used.push(l);
+      } else if (l.key === "edge:hook" && l.kind === "discourse" && (KEPT_HOOK.test(text) || pointBack(l, out))) out.used.push(l);
       else if (l.key === "edge:polar") {
         const m = /^y([aeiou]+)[lmr]$/.exec(text);
         if (!m) continue;
@@ -647,6 +650,7 @@ export class Translator {
    * R4d decision O-1: `xahom` between two plain claims adds row 10's `holds(cause(Prior, Next)) :- on(Id).`
    */
   talkRules(reading: Reading, talk: Talk, out: string[]): void {
+    if (talk.withdraws) this.withdrawn.add(talk.withdraws);
     if (talk.answer) {
       const { to, sign } = talk.answer;
       if (sign > 0) for (const f of to.frames) if (f.key === "slot:newMember" && f.hosted) this.newMembers.add(f.hosted);
@@ -935,7 +939,7 @@ export class Translator {
       this.bound.add(instance.head);
       // R2-5: inside a view, the kind is the holder's too; a say word's kind is your own claim (R4a-10).
       const isa = ctx.wrap?.kind === "say" ? `isa(X,${k})` : this.w(ctx, `isa(X,${k})`);
-      body.push({ atom: `holds(${isa})`, premise: isa });
+      body.push({ atom: `holds(${isa})`, premise: isa }, ...excepted(this, reading.id, list).map((m) => ({ atom: `X!=${m}` })));
       ctx.every = { list, kind: k };
       const say = ctx.wrap?.kind === "say" ? ctx.wrap : undefined;
       if (say && frames.say && over(reading, frames.say, f)) {
@@ -1285,7 +1289,7 @@ export class Translator {
         const ls = this.term(l, place, ctx);
         const v = group.length > 1 ? `X${i + 1}` : "X";
         subst.set(l, { text: v });
-        body.push({ atom: `member(${ls},${v},G)` });
+        body.push({ atom: `member(${ls},${v},G)` }, ...excepted(this, reading.id, l).map((m) => ({ atom: `${v}!=${m}` })));
         const shared = claim.predicate.includes(l) ? undefined : this.sharedDetails(l, ctx);
         l.members.forEach((m, j) => {
           const enc = claim.predicate.includes(l) ? this.kind(m, `${place}${j + 1}`, ctx) : this.term(m, `${place}${j + 1}`, ctx);
@@ -1309,6 +1313,7 @@ export class Translator {
           s.set(l, { text: claim.predicate.includes(l) ? this.kind(l.members[j]!, `${place}${j + 1}`, ctx) : this.term(l.members[j]!, `${place}${j + 1}`, ctx) });
           c = replaceTerm(c, l, m);
         }
+        if (group.some((l) => excepted(this, reading.id, l).includes(s.get(l)!.text))) continue;
         poolClaim(this, reading, this.claim(claim, { ...ctx, subst: s }), c, 1);
       }
     }
@@ -1373,7 +1378,7 @@ export class Translator {
   finish(): string {
     // Universal templates with each individual, for fits.
     for (const t of this.templates) {
-      for (const [text, term] of this.individuals) {
+      for (const [text, term] of [...this.individuals].filter(([x]) => !excepted(this, t.ctx.reading.id, t.list).includes(x))) {
         const subst: Subst = new Map(t.ctx.subst);
         subst.set(t.list, { text, term });
         poolClaim(this, t.ctx.reading, this.claim(t.claim, { ...t.ctx, subst, out: [] }), replaceTerm(t.claim, t.list, term), t.sign);
@@ -1383,7 +1388,7 @@ export class Translator {
     // its kind (`isa(M, K)` in the pool); a member known only through `widen` gets none.
     for (const e of this.everyHinges) {
       for (const [text, term] of this.individuals) {
-        if (!this.terms.has(`isa(${text},${e.kind})`)) continue;
+        if (!this.terms.has(`isa(${text},${e.kind})`) || excepted(this, e.reading.id, e.list).includes(text)) continue;
         const id = `${e.ctx.id},${text}`;
         const cond = e.bound.reduce((claim, b) => replaceTerm(claim, b, term), e.cond);
         const out = replaceTerm(e.out, e.list, term);
@@ -1440,7 +1445,7 @@ export class Translator {
       ...section(VIEW_SAY_TITLE, [...this.wraps.values()].some((w) => sayOf(w) && w.kind === "view") ? VIEW_SAY : []),
       ...section("Switches.", switches),
       "",
-      ...this.lines,
+      ...withdrawn(this.lines, this.withdrawn),
       ...section("Fits, from match().", [...new Set(fits)]),
       ...section("Members, from claimMemberLists().", [...this.facts]),
       ...section("Compound heads, from compoundHeads().", [...new Set(heads)]),

@@ -6,39 +6,6 @@
 # Each group comment names the row, the entries that make one log (in that order), the question, the verdict the row
 # should give, and the verdict now.
 
-# R4d-6: the occasion clause after a restrictor's stand-in is the marker's data; the link is used.
-# lk28, ? zawan vebal. -> follows: unknown, marker only, as row 15 with listed occasions (now: unknown, left unused lexReading:standIn).
-@ lk28
-zawan vebal huxal blarl zayan vavobol al bohahal.
-= You haven't listened once since we went into the house.
-
-# R4d-7: a point-back hook takes the landmark it points back to (needs the reader gap filled first).
-# lk29, ? zalazun vehohel el bohahal. -> follows: yes; ? zalazun vehohel. -> yes (now: unknown; left unused hookJob:resume).
-# lk30, ? zalazun vehohel. -> follows: unknown, never no (now: unknown, left).
-# lk31, ? zalazun varuyol aol babewol. -> follows: yes (now: unknown, left).
-@ lk29
-zazozon vehohel el bohahal. zalazun vehohel er.
-= Azozon sits at the house. Alazun sits there too.
-
-@ lk30
-zazozon vehohel el bohahal. zalazun vehohel vul er.
-= Azozon sits at the house. Alazun doesn't sit there.
-
-@ lk31
-zazozon danal aol babewol varuyol. zalazun varuyol aor.
-= Azozon writes a book with a pen. Alazun writes with it too.
-
-# R4d-8: a stand-in pointing back holds the content of the reading it points to, as a nested clause, not claimed again.
-# lk32, ? zazozon vezuyol darl zalazun vehohel. -> follows: yes; ? zalazun vehohel. -> yes (now: unknown; yes).
-# lk33, ? zalazun valom durl vehohel. -> follows: yes, once durth points to the durl dependent (now: unknown, left unused lexReading:standInBack).
-@ lk32
-zalazun vehohel. zazozon vezuyol darth.
-= Alazun sits. Azozon says so.
-
-@ lk33
-zazozon vezuyol balazun durl vehohel. zalazun valom durth.
-= Azozon tells Alazun not to sit. Alazun wishes not to.
-
 # R4d-9: joined verbs: each verb claims with the shared noun.
 # lk34, ? zazozon dabedal vozedal. -> follows: yes (now: unknown, left unused reading:verbSharedNoun).
 # lk35, ? zazozon veruvol. -> follows: yes (now: unknown; not left, the verb list is never split).
@@ -56,23 +23,8 @@ zazozon vowurol veruvol val.
 zazozon zalazun zal vowurol veruvol wubam val.
 = Azozon and Alazun walk and run, respectively.
 
-# Open decisions (no row yet; the verdict depends on the decision).
-# O-2 (instead / never mind): lk37, ? zalazun veruvol. -> unknown if el withdraws the last reading (now: yes, t:0.1 left).
-# lk38, same with ur.
-# O-3 (except): lk39, ? zalazun vowurol. -> no, with no clash, if the exception limits the prior claim (now: unknown).
+# Open decision (no row yet; the verdict depends on the decision).
 # O-6 (NOTIONAL): lk41, ? zazozon vehohel. -> unknown, never yes (now: unknown; left noRow overlay:notional:th, unused carry:notional).
-@ lk37
-zalazun veruvol. el zalazun vezuvel.
-= Alazun runs. Instead, Alazun sleeps.
-
-@ lk38
-zalazun veruvol. ur zalazun vezuvel.
-= Alazun runs. Never mind that: Alazun sleeps.
-
-@ lk39
-zuvayal vowurol. ul zalazun vowurol vul.
-= The family walks. Except, Alazun doesn't walk.
-
 @ lk41
 zazozon theyum vowurol. zazozon vehohel.
 = Imagine Azozon walking. Azozon sits.

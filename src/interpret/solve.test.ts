@@ -1338,3 +1338,47 @@ describe("solve: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4,
     assert.equal(await said(lk(ask("yel zalazun vowurol."), "Alazun: yaor."), "yel zalazun vowurol."), "yes");
   });
 });
+
+describe("solve: links that point back (R4d-6 to R4d-8, R4d decisions O-2, O-3)", () => {
+  const lk = (...items: string[]) => buildLog(items.map((x, at) => named(fixture("links").get(x) ?? x, at)), tables);
+  const said = async (l: ReturnType<typeof lk>, question: string) => (await follows(l, q(question), base)).verdict;
+  const left = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).left;
+
+  it("R4d-6: lk28, the occasion clause is the marker's data, and the stand-in is used", async () => {
+    assert.deepEqual(left(lk("lk28")), []);
+    assert.equal(await said(lk("lk28"), "yel zawan vebal."), "unknown");
+  });
+
+  it("R4d-7: lk29 to lk31, a point-back hook takes the landmark of the hook it resumes; under a denial it stays inside", async () => {
+    assert.equal(await said(lk("lk29"), "yel zalazun vehohel el bohahal."), "yes");
+    assert.equal(await said(lk("lk29"), "yel zalazun vehohel."), "yes");
+    assert.equal(await said(lk("lk30"), "yel zalazun vehohel."), "unknown");
+    assert.equal(await said(lk("lk31"), "yel zalazun varuyol aol babewol."), "yes");
+  });
+
+  it("R4d-8: lk32, lk33, a stand-in pointing back holds the latest content of its kind, not claimed again", async () => {
+    assert.equal(await said(lk("lk32"), "yel zazozon vezuyol darl zalazun vehohel."), "yes");
+    assert.equal(await said(lk("lk32"), "yel zalazun vehohel."), "yes");
+    assert.equal(await said(lk("lk33"), "yel zalazun valom durl vehohel."), "yes");
+  });
+
+  it("O-2: lk37, lk38, el and ur withdraw the claim before them; the hook is a note", async () => {
+    assert.equal(await said(lk("lk37"), "yel zalazun veruvol."), "unknown");
+    assert.equal(await said(lk("lk37"), "yel zalazun vezuvel."), "yes");
+    assert.equal(await said(lk("lk38"), "yel zalazun veruvol."), "unknown");
+    const t = translate(lk("lk37"), { lexicon: tables });
+    assert.doesNotMatch(t.program, /^on\("t:0\.0"\)\.$/m);
+    assert.deepEqual(t.notes.map((n) => `${n.reading} ${n.frame.key}`), ["t:1.0 edge:hook"]);
+  });
+
+  it("O-3: lk39, lk42, lk43, an exception keeps the general claim minus the members it names, with no clash", async () => {
+    assert.equal(await said(lk("lk39"), "yel zalazun vowurol."), "no");
+    assert.deepEqual((await clashes(lk("lk39"), base)).clashes, []);
+    assert.equal(await said(lk("lk42"), "yel zalazun vewobol."), "no");
+    assert.deepEqual((await clashes(lk("lk42"), base)).clashes, []);
+    assert.match(translate(lk("lk42"), { lexicon: tables }).program, /^holds\(ewobo\(z\(X\)\)\) :- holds\(isa\(X,ebeze\)\), X!=alazu, on\("t:0\.1"\)\.$/m);
+    assert.equal(await said(lk("lk43"), "yel zalazun vewobol."), "no");
+    assert.equal(await said(lk("lk43"), "yel zazozon vewobol."), "yes");
+    assert.deepEqual((await clashes(lk("lk43"), base)).clashes, []);
+  });
+});

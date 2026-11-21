@@ -72,6 +72,14 @@ describe("accounting guard: the drops it catches", () => {
     assert.deepEqual(left("yel zawan vowurol. xahom zawan veruvol."), ["noRow edge:force", "noRow edge:force"]);
     assert.deepEqual(left("yel zar vowurol.", "yaol."), ["noRow edge:force", "unused edge:polar"]);
   });
+  it("B6b: a table fragment, a link that reaches nothing, is left as a fragment; the period form of a hinge condition stays left by the hinge rows", () => {
+    assert.deepEqual(left("herom blarl."), ["fragment lexReading:standIn"]);
+    assert.deepEqual(left("huxal blarl."), ["fragment lexReading:standIn"]);
+    assert.deepEqual(left("ul ul."), ["fragment edge:hook"]);
+    assert.deepEqual(left("zarx ar."), ["fragment hookJob:resume"]);
+    assert.deepEqual(left("thohem blarl. zalazun vezuyol."), ["noRow overlay:clause_hinge:th"]);
+  });
+
   it("a plain and list, a hinge, and a resumed pronoun are kept", () => {
     assert.deepEqual(left("zazozon zalazun zal vowurol."), []);
     assert.deepEqual(left("zual gogozel vowurol."), []);

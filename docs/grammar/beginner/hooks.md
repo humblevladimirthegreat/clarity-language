@@ -138,6 +138,8 @@ English can open a sentence with *Additionally*, *In other words*, *Instead*, or
 
 Use the same `el …` for *actually* when you correct what someone expected: the new claim replaces the old one.
 
+`ul …` keeps the general claim before it and takes out only the members it names in the same role. After *the family walks*, `ul zalazun vowurol vul.` still says everyone else in the family walks; only Alazun is out, so the two sentences never contradict each other.
+
 > `ol zahelan godozel.`
 >
 > in.other.words | z-Ahelan | g-dog

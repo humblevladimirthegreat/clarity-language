@@ -22,15 +22,37 @@
 % t:8.1 = lk18
 % t:9.0 = lk27
 % t:10.0 = lk40
-% t:11.0 = undefined
-% t:12.0 = undefined
-% t:13.0 = undefined
-% t:14.0 = undefined
-% t:15.0 = undefined
-% t:16.0 = undefined
-% t:17.0 = undefined
-% t:18.0 = undefined
-% t:19.0 = undefined
+% t:11.0 = lk28
+% t:12.0 = lk29
+% t:13.0 = lk30
+% t:14.0 = lk31
+% t:15.0 = lk32
+% t:16.0 = lk33
+% t:17.0 = lk37
+% t:18.0 = lk38
+% t:19.0 = lk39
+% t:19.1 = lk42
+% t:19.2 = lk43
+% t:19.3 = undefined
+% t:19.4 = undefined
+% t:19.5 = undefined
+% t:19.6 = undefined
+% t:19.7 = undefined
+% t:19.8 = undefined
+% t:19.9 = undefined
+% t:19.10 = undefined
+% t:19.11 = undefined
+% t:19.12 = undefined
+% t:20.0 = undefined
+% t:20.1 = undefined
+% t:21.0 = undefined
+% t:21.1 = undefined
+% t:22.0 = undefined
+% t:22.1 = undefined
+% t:22.2 = undefined
+% t:23.0 = undefined
+% t:23.1 = undefined
+% t:24.0 = undefined
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -240,7 +262,102 @@ holds(owuro(z(azozo))) :- on("t:19.0").
 fired("t:19.0",owuro(z(azozo))) :- on("t:19.0").
 holds(isa(ahela,odoze)) :- on("t:19.0").
 fired("t:19.0",isa(ahela,odoze)) :- on("t:19.0").
+% t:19.1
+on("t:19.1").
+never(eba(z(listener(24)),w(dt("lexReading:standIn","blarl",cl(avobo(z(we(24)),w(dt("hookJob:extraNoun","al",ohaha,w)))),w)))) :- on("t:19.1").
+fired("t:19.1",never(eba(z(listener(24)),w(dt("lexReading:standIn","blarl",cl(avobo(z(we(24)),w(dt("hookJob:extraNoun","al",ohaha,w)))),w))))) :- on("t:19.1").
+% t:19.2
+on("t:19.2").
+holds(ehohe(z(azozo),w(dt("hookJob:extraNoun","el",ohaha,w)))) :- on("t:19.2").
+fired("t:19.2",ehohe(z(azozo),w(dt("hookJob:extraNoun","el",ohaha,w)))) :- on("t:19.2").
+% t:19.3
+on("t:19.3").
+holds(ehohe(z(alazu),w(dt("hookJob:extraNoun","el",ohaha,w)))) :- on("t:19.3").
+fired("t:19.3",ehohe(z(alazu),w(dt("hookJob:extraNoun","el",ohaha,w)))) :- on("t:19.3").
+% t:19.4
+on("t:19.4").
+holds(ehohe(z(azozo),w(dt("hookJob:extraNoun","el",ohaha,w)))) :- on("t:19.4").
+fired("t:19.4",ehohe(z(azozo),w(dt("hookJob:extraNoun","el",ohaha,w)))) :- on("t:19.4").
+% t:19.5
+on("t:19.5").
+holds(neg(ehohe(z(alazu),w(dt("hookJob:extraNoun","el",ohaha,w))))) :- on("t:19.5").
+fired("t:19.5",neg(ehohe(z(alazu),w(dt("hookJob:extraNoun","el",ohaha,w))))) :- on("t:19.5").
+% t:19.6
+on("t:19.6").
+holds(isa(nm("t:19.6",d),ana)) :- on("t:19.6").
+fired("t:19.6",isa(nm("t:19.6",d),ana)) :- on("t:19.6").
+holds(aruyo(z(azozo),d(nm("t:19.6",d)),w(dt("hookJob:extraNoun","aol",abewo,w)))) :- on("t:19.6").
+fired("t:19.6",aruyo(z(azozo),d(nm("t:19.6",d)),w(dt("hookJob:extraNoun","aol",abewo,w)))) :- on("t:19.6").
+% t:19.7
+on("t:19.7").
+holds(aruyo(z(alazu),w(dt("hookJob:extraNoun","aol",abewo,w)))) :- on("t:19.7").
+fired("t:19.7",aruyo(z(alazu),w(dt("hookJob:extraNoun","aol",abewo,w)))) :- on("t:19.7").
+% t:19.8
+on("t:19.8").
+holds(ehohe(z(alazu))) :- on("t:19.8").
+fired("t:19.8",ehohe(z(alazu))) :- on("t:19.8").
+% t:19.9
+on("t:19.9").
+holds(ezuyo(z(azozo),d(cl(ehohe(z(alazu)))))) :- on("t:19.9").
+fired("t:19.9",ezuyo(z(azozo),d(cl(ehohe(z(alazu)))))) :- on("t:19.9").
+% t:19.10
+on("t:19.10").
+holds(ezuyo(z(azozo),d(cl(ehohe)),b(alazu))) :- on("t:19.10").
+fired("t:19.10",ezuyo(z(azozo),d(cl(ehohe)),b(alazu))) :- on("t:19.10").
+% t:19.11
+on("t:19.11").
+holds(alo(z(alazu),d(cl(ehohe)))) :- on("t:19.11").
+fired("t:19.11",alo(z(alazu),d(cl(ehohe)))) :- on("t:19.11").
+% t:19.12
+holds(eruvo(z(alazu))) :- on("t:19.12").
+fired("t:19.12",eruvo(z(alazu))) :- on("t:19.12").
+% t:20.0
+on("t:20.0").
+holds(ezuve(z(alazu))) :- on("t:20.0").
+fired("t:20.0",ezuve(z(alazu))) :- on("t:20.0").
+% t:20.1
+holds(eruvo(z(alazu))) :- on("t:20.1").
+fired("t:20.1",eruvo(z(alazu))) :- on("t:20.1").
+% t:21.0
+on("t:21.0").
+holds(ezuve(z(alazu))) :- on("t:21.0").
+fired("t:21.0",ezuve(z(alazu))) :- on("t:21.0").
+% t:21.1
+on("t:21.1").
+holds(isa(nm("t:21.1",z),uvaya)) :- on("t:21.1").
+fired("t:21.1",isa(nm("t:21.1",z),uvaya)) :- on("t:21.1").
+holds(owuro(z(nm("t:21.1",z)))) :- on("t:21.1").
+fired("t:21.1",owuro(z(nm("t:21.1",z)))) :- on("t:21.1").
+% t:22.0
+on("t:22.0").
+holds(neg(owuro(z(alazu)))) :- on("t:22.0").
+fired("t:22.0",neg(owuro(z(alazu)))) :- on("t:22.0").
+% t:22.1
+on("t:22.1").
+holds(isa(alazu,ebeze)) :- on("t:22.1").
+fired("t:22.1",isa(alazu,ebeze)) :- on("t:22.1").
+% t:22.2
+on("t:22.2").
+holds(ewobo(z(X))) :- holds(isa(X,ebeze)), X!=alazu, on("t:22.2").
+fired("t:22.2",ewobo(z(X))) :- holds(isa(X,ebeze)), X!=alazu, on("t:22.2").
+used("t:22.2",ewobo(z(X)),isa(X,ebeze)) :- holds(isa(X,ebeze)), X!=alazu, on("t:22.2").
+% t:23.0
+on("t:23.0").
+holds(neg(ewobo(z(alazu)))) :- on("t:23.0").
+fired("t:23.0",neg(ewobo(z(alazu)))) :- on("t:23.0").
+% t:23.1
+on("t:23.1").
+holds(ewobo(z(ls("t:23.1",z)))) :- on("t:23.1").
+fired("t:23.1",ewobo(z(ls("t:23.1",z)))) :- on("t:23.1").
+holds(ewobo(z(X))) :- member(ls("t:23.1",z),X,G), X!=alazu, on("t:23.1").
+fired("t:23.1",ewobo(z(X))) :- member(ls("t:23.1",z),X,G), X!=alazu, on("t:23.1").
+% t:24.0
+on("t:24.0").
+holds(neg(ewobo(z(alazu)))) :- on("t:24.0").
+fired("t:24.0",neg(ewobo(z(alazu)))) :- on("t:24.0").
 
 % Members, from claimMemberLists().
 member(ls("t:8.0",z),odoze,1).
 member(ls("t:8.0",z),ogoze,2).
+member(ls("t:23.1",z),azozo,1).
+member(ls("t:23.1",z),alazu,2).

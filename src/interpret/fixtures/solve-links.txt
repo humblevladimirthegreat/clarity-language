@@ -1,4 +1,5 @@
-# Solver fixture: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5; sentence-linkers.md#sentence-linkers,
+# Solver fixture: links that add no term (R4d-1 to R4d-5, R4d decisions O-1, O-4, O-5) and links that point back (R4d-6 to
+# R4d-8, O-2, O-3; sentence-linkers.md#sentence-linkers,
 # questions.md#polar-particle, polar-inventory.md#polar-endings, tag-pronouns.md#naming-with-a-tag, hooks.md#discourse-hooks).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # A line may start "Name: " to set the turn's speaker, as the log reader does; an entry with no name is the default speaker.
@@ -103,3 +104,53 @@ ol zahelan godozel.
 @ lk40
 yaor zazozon vowurol.
 = All right, so Azozon walks, for now.
+
+# Links that point back (R4d-6 to R4d-8, R4d decisions O-2, O-3; restrictors.md#only-when-never-hal,
+# in-clause-hooks.md#hook-resume, stand-in-vowels.md#stand-in-back, hooks.md#discourse-hooks). Each entry's links stay
+# inside it. R4d-6: lk28, the occasion clause is the marker's data. R4d-7: lk29 to lk31, er / aor take the landmark of
+# the hook they resume. R4d-8: lk32, lk33, darth / durth hold the latest content of their kind. O-2: lk37, lk38, el / ur
+# withdraw the claim before them. O-3: lk39, lk42, lk43, ul skips the members the exception names.
+
+@ lk28
+zawan vebal huxal blarl zayan vavobol al bohahal.
+= You haven't listened once since we went into the house.
+
+@ lk29
+zazozon vehohel el bohahal. zalazun vehohel er.
+= Azozon sits at the house. Alazun sits there too.
+
+@ lk30
+zazozon vehohel el bohahal. zalazun vehohel vul er.
+= Azozon sits at the house. Alazun doesn't sit there.
+
+@ lk31
+zazozon danal aol babewol varuyol. zalazun varuyol aor.
+= Azozon writes a book with a pen. Alazun writes with it too.
+
+@ lk32
+zalazun vehohel. zazozon vezuyol darth.
+= Alazun sits. Azozon says so.
+
+@ lk33
+zazozon vezuyol balazun durl vehohel. zalazun valom durth.
+= Azozon tells Alazun not to sit. Alazun wishes not to.
+
+@ lk37
+zalazun veruvol. el zalazun vezuvel.
+= Alazun runs. Instead, Alazun sleeps.
+
+@ lk38
+zalazun veruvol. ur zalazun vezuvel.
+= Alazun runs. Never mind that: Alazun sleeps.
+
+@ lk39
+zuvayal vowurol. ul zalazun vowurol vul.
+= The family walks. Except, Alazun doesn't walk.
+
+@ lk42
+zalazun gebezel. zual gebezel vewobol. ul zalazun vewobol vul.
+= Alazun is a bird. Every bird flies. Except, Alazun doesn't fly.
+
+@ lk43
+zazozon zalazun zal vewobol. ul zalazun vewobol vul.
+= Azozon and Alazun fly. Except, Alazun doesn't fly.

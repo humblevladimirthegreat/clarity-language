@@ -221,10 +221,18 @@ export function ownChannel(reading: Reading): { channel: Frame; frames: Set<Fram
   return { channel, frames: new Set([channel, ...rest]) };
 }
 
-/** R4c decision 5: a verbless claim whose one role is a list with a join frame (`zobudal zuel.`, `zobonol zabewol zen.`). */
+/**
+ * R4c decision 5: a verbless claim whose one role is a list with a join frame (`zobudal zuel.`, `zobonol zabewol zen.`).
+ * B6b: a table fragment, a verbless reading with no link that points anywhere: a stand-in with nothing after it
+ * (`herom blarl`, `huxal blarl`, `ul barl`), a discourse hook alone (`ul ul`), or a point-back hook with no verb to follow
+ * (`zarx ar`). No row can use a link that reaches nothing.
+ */
 export function fragment(reading: Reading): Why | undefined {
   const c = reading.claim;
-  if (c.verb || c.predicate.length || c.details.length || c.roles.d || c.roles.b || c.clauses) return undefined;
+  if (c.verb || c.predicate.length || c.roles.d || c.roles.b || c.clauses) return undefined;
+  const dangling = reading.links.some((l) => l.to) ? undefined : reading.links.find((l) => l.kind === "standIn" || l.kind === "hookResume" || (l.key === "edge:hook" && !c.roles.z && !c.details.length));
+  if (dangling) return { construction: "fragment", key: dangling.key, reason: "fragment" };
+  if (c.details.length) return undefined;
   const f = c.roles.z?.kind === "list" ? termFrames(c.roles.z).find((x) => x.key.startsWith("joinSeries:") && x.key !== "joinSeries:u") : undefined;
   return f ? { construction: "fragment", key: f.key, reason: "fragment" } : undefined;
 }

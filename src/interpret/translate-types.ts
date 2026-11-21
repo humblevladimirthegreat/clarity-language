@@ -34,8 +34,11 @@ export type Note = { reading: ReadingId; frame: Frame | Detail | LinkNote };
 /** A link as a note: its classification key doubles as the construction a reply names. */
 export type LinkNote = Link & { construction: string };
 
-/** R4d: the links a reading's rows used with no term of their own, a polar word's verdict, and *therefore*'s prior reading. */
-export type Talk = { used: Link[]; answer?: { to: Reading; sign: 1 | -1 }; therefore?: ReadingId };
+/**
+ * R4d: the links a reading's rows used with no term of their own, a polar word's verdict, *therefore*'s prior reading, and
+ * the reading a withdrawing hook takes back (O-2).
+ */
+export type Talk = { used: Link[]; answer?: { to: Reading; sign: 1 | -1 }; therefore?: ReadingId; withdraws?: ReadingId };
 
 /** R4d-5: a discourse hook that adds (`a`, `ao`, `ae`), rewords (`o`) or returns (`er`) keeps the clause. */
 export const KEPT_HOOK = /^(?:(?:a|o)[lmr]|(?:ao|ae)[lm]|er)$/;
