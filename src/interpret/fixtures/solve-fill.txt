@@ -1,0 +1,38 @@
+# Solver fixture: the fill job, fill(log, question) (R4c-9 to R4c-11, D10; questions.md#fill-ask, #fill-all, fill-ask-roles.md#fill-ask-arity).
+# Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
+# Read as one log here; solve.test.ts asks each question of the entries it names.
+# R4c-10: open blank. f1: ? yel zar vowurol. → azozon. f1 + f2: → azozon, alazun (one zar, several fillers: all listed)
+# f1 alone: ? yel zar vezuvel. → no filler, unknown; with closedWorld → nobody
+# R4c-11: f1 alone: ? yel zer vowurol. → yes (existence)
+# R4c-10: f1 alone: ? yel zazozon zalazun zar vowurol. → azozon (blank limited to the listed items)
+# R4c-9: universal to instance. f3 + "zazozon gogozel.": ? yel zar vezuvel. → azozon
+# R4c-9: membership. f6: ? yel zar vowurol. → azozon, alazun. ? yel zarx vowurol. → azozon, alazun (R4c-10)
+# R4c-10: fill-all as tuples. f7 + f8: ? yel zar dar vayebel. → (azozon, a dog), (alazun, a cat)
+# R4c-9, brave: f10: ?~ yel zar vudurul. → alazun with possible; cautious: no filler, unknown
+@ f1
+zazozon vowurol.
+= Azozon walks.
+
+@ f2
+zalazun vowurol.
+= Alazun walks.
+
+@ f3
+zual gogozel vezuvel.
+= Every cat sleeps.
+
+@ f6
+zazozon zalazun zal vowurol.
+= Azozon and Alazun walk.
+
+@ f7
+zazozon dodozel vayebel.
+= Azozon sees a dog.
+
+@ f8
+zalazun dogozel vayebel.
+= Alazun sees a cat.
+
+@ f10
+zalazun thomam vudurul.
+= Alazun may have left.

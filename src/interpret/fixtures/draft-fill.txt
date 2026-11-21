@@ -1,55 +1,22 @@
-# Solver draft fixture (R4c): the fill job, fill(log, question) (D10; questions.md#fill-ask, #fill-all, fill-ask-roles.md#fill-ask-arity).
+# Solver draft fixture (R4c): the fill job, what kind and why (D10; questions.md#fill-ask, fill-ask-roles.md#fill-ask-jobs).
 # Format: each entry is a label line "@ <id>", then one Ageben line, then "= <English>". Lines starting with # are comments; blank lines separate entries.
 # Each comment names the entries a question reads (as their own case), the fillers the row should give, and the verdict now.
-# Every question below now answers beyond, reason fillAsk (follows and couldBe never answer a fill question).
+# The open blank, listed blank, zarx, fill-all and existence are in solve-fill.txt (f1 to f3, f6 to f8, f10).
+# Every question below now answers beyond: fill() reads no gar blank and no why frame yet.
 
-# R4c-8: open blank. f1: ? yel zar vowurol. → azozon. f1 + f2: → azozon, alazun (one zar, several fillers: all listed)
-# f1 alone: ? yel zar vezuvel. → no filler, unknown; with closedWorld → nobody
-# f1 alone: ? yel zer vowurol. → yes (existence; R4c-11)
-# f1 alone: ? yel zazozon zalazun zar vowurol. → azozon (blank limited to the listed items)
-@ f1
-zazozon vowurol.
-= Azozon walks.
-
-@ f2
-zalazun vowurol.
-= Alazun walks.
-
-# R4c-9: fillers ask cannot reach. f3 + f4: ? yel zar vezuvel. → azozon (closed universal to instance)
-@ f3
-zual gogozel vezuvel.
-= Every cat sleeps.
-
+# R4c-12: what kind, from isa only. f4: ? yel gar zazozon. → gogozel
+# f3 (solve-fill) + f4: ? yel zar vezuvel. → azozon (closed universal to instance; R4c-9, tested in solve.test.ts)
 @ f4
 zazozon gogozel.
 = Azozon is a cat.
 
-# R4c-9: hinge. f5 + f1: ? yel zar vehohel. → alazun
+# R4c-9: hinge. f5 + f1 (solve-fill): ? yel zar vehohel. → alazun (tested in solve.test.ts)
+# R4c-13: why, from cause only. f5 + f1: ? yel thahum blar zalazun vehohel. → no filler (a met if is not a cause)
 @ f5
 zalazun vehohel thohem blarl zazozon vowurol.
 = Alazun sits if Azozon walks.
 
-# R4c-9: membership. f6: ? yel zar vowurol. → azozon, alazun. ? yel zarx vowurol. → azozon, alazun (R4c-10)
-@ f6
-zazozon zalazun zal vowurol.
-= Azozon and Alazun walk.
-
-# R4c-10: fill-all as tuples. f7 + f8: ? yel zar dar vayebel. → (azozon, a dog), (alazun, a cat)
-@ f7
-zazozon dodozel vayebel.
-= Azozon sees a dog.
-
-@ f8
-zalazun dogozel vayebel.
-= Alazun sees a cat.
-
-# R4c-12: what kind, from isa only. f4: ? yel gar zazozon. → gogozel
-# R4c-13: why, from cause only. f9: ? yel thahum blar zazozon vowurol. → the condition, zalazun vezuvel. f5 + f1: ? yel thahum blar zalazun vehohel. → no filler (a met if is not a cause)
+# R4c-13: why, from cause only. f9: ? yel thahum blar zazozon vowurol. → the condition, zalazun vezuvel.
 @ f9
 zazozon vowurol thahum blarl zalazun vezuvel.
 = Azozon walks because Alazun is asleep.
-
-# R4c-8, brave: f10: ?~ yel zar vudurul. → alazun with --possible; cautious: no filler, unknown
-@ f10
-zalazun thomam vudurul.
-= Alazun may have left.

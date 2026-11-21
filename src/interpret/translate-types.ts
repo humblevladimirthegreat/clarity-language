@@ -8,6 +8,8 @@ export type TranslateOptions = {
   lexicon?: StepLexicon;
   /** Host switches written as `switch(Name).` facts: `widen` (compound to head), `defaults` (everyday defaults), `closed` (closed world). */
   switches?: Partial<Record<"widen" | "defaults" | "closed", boolean>>;
+  /** R4c-9: the blanks the fill job reads (`blank` terms, or a listed blank's list). Only `fill` marks them used. */
+  blanks?: ReadonlySet<object>;
 };
 
 /**

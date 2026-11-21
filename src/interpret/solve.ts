@@ -11,6 +11,7 @@
  *   one removal pass. Several worlds: re-solved with the switch atoms free (QuickXplain).
  * - {@link giveUp}: a smallest set to give up, by one optimization run. {@link whyNot}: the smallest clash a claim joins.
  * - {@link stands}: what stands, each reading in, out or undecided over the attacks clashes give (ASPARTIX encodings).
+ * - {@link fill}: what fills a fill question's blanks, from the solved atoms (R4c-9 to R4c-11, D10).
  *
  * Fitting stays the matcher's: the question is matched in TypeScript, by {@link match}, against the claims the answer
  * set's `holds` atoms stand for ({@link Translation.terms}). A question's fit to a stated range is {@link inRange}'s.
@@ -23,7 +24,7 @@
 import clingo from "clingo-wasm";
 
 import type { Log } from "./log.js";
-import { match, type TermSite } from "./match.js";
+import { match, throughAntecedent, type TermSite } from "./match.js";
 import type { StepLexicon } from "./steps.js";
 import { detailRange, inRange } from "./translate-helpers.js";
 import { sayOf, unwrapText, type LeftOut, type Translation } from "./translate-types.js";
@@ -336,7 +337,7 @@ type Prepared =
  * first-mention noun in it brings (its kind, count and details) stay on, as a witness. With `keepClaim` the claim stays
  * on, as {@link whyNot} needs.
  */
-function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefined, options: SolveOptions, keepClaim = false): Prepared {
+function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefined, options: SolveOptions, keepClaim = false, blanks?: ReadonlySet<object>): Prepared {
   const switches = { widen: !!options.widen, defaults: !!options.defaults, closed: !!options.closedWorld };
   let qReading: Reading | undefined;
   if (question && "claim" in question) {
@@ -357,7 +358,7 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
     qReading = { id: "?", source: undefined as never, frames: [], order: [], unordered: [], claim: question, links: [], unread: [] };
   }
   const readings = qReading ? [...log.readings.filter((r) => r !== question), qReading] : log.readings;
-  const translation = translate({ readings, entries: (log as Partial<Log>).entries }, { lexicon: options.lexicon, switches });
+  const translation = translate({ readings, entries: (log as Partial<Log>).entries }, { lexicon: options.lexicon, switches, blanks });
   const left = translation.left.filter((l) => l.reading !== qReading?.id);
   if (qReading && translation.left.length !== left.length) {
     return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: translation.left } };
@@ -511,6 +512,172 @@ export async function couldBe(log: Pick<Log, "readings">, question: Reading | Cl
   const c = hits(every, p);
   if (c.no.length) return answer("no", every, c.no, p, c.switches);
   return { verdict: "unknown", because: [], switches: [], left: p.translation.left };
+}
+
+// ── Filling ─────────────────────────────────────────────────────────────────
+
+/** Where a blank sits in the question: the place {@link match} names (`z`, `d`, `b`, nested with `/`). */
+export type BlankSite = string;
+
+/** One answer to a fill question: a term per blank, in question order, and the readings behind it, in log order. */
+export type Filler = { at: BlankSite[]; term: string[]; because: string[] };
+
+/**
+ * `filled` lists the fillers; `unknown` when none is found, `nobody` under `closedWorld`. A `…er` question (existence,
+ * R4c-11) answers `yes` (with `because`, no fillers), else `unknown`, `no` under `closedWorld`. `beyond` and `refused`
+ * as {@link Answer} has them.
+ */
+export type FillVerdict = "filled" | "unknown" | "nobody" | "yes" | "no" | "beyond" | "refused";
+
+export type FillAnswer = {
+  verdict: FillVerdict;
+  fillers: Filler[];
+  /** Reading ids behind the answer, in log order: every filler's, or the existence's. */
+  because: string[];
+  switches: SolveSwitch[];
+  left: LeftOut[];
+  english?: string;
+};
+
+/** `possible`: brave, a filler that holds in some world; cautious (in every world) by default. */
+export type FillOptions = SolveOptions & { possible?: boolean };
+
+/**
+ * A blank the fill job reads (R4c-10): an open blank `zar`, `zarx` for every member, `…er` for existence (R4c-11), or a
+ * listed blank, `zazozon zalazun zar` (only the listed items fill it). Each sits in a role.
+ */
+type FillBlank = { at: BlankSite; term: Term; listed?: Term[]; existence: boolean };
+
+/** The question's blanks, or the part no fill row reads (a blank in another place or series: R4c decision 7, B5a2). */
+function fillBlanks(claim: Claim): FillBlank[] | { key: string } {
+  const out: FillBlank[] = [];
+  for (const r of ["z", "d", "b"] as const) {
+    const t = claim.roles[r];
+    if (t?.kind === "blank") {
+      const family = t.word.family;
+      const series = family?.kind === "joinMarker" ? family.series : undefined;
+      if (series !== "a" && series !== "e") return { key: `blank:${t.word.raw}` };
+      out.push({ at: r, term: t, existence: series === "e" });
+    } else if (t?.kind === "list" && t.values.ending === "r") {
+      if (t.values.series !== "a" || t.members.length < 2 || t.members.some((m) => m.kind === "blank")) return { key: `blank:${t.join?.raw ?? "list"}` };
+      out.push({ at: r, term: t, listed: t.members, existence: false });
+    }
+  }
+  const existence = out.filter((b) => b.existence).length;
+  if (!out.length || (existence && existence !== out.length)) return { key: "blank" };
+  return out;
+}
+
+/** A filler's spelled term: a thing by its word, through a pronoun's antecedent. */
+function fillerText(term: Term): string {
+  const t = throughAntecedent(term);
+  switch (t.kind) {
+    case "thing":
+      return t.head.raw;
+    case "number":
+    case "quote":
+    case "blank":
+      return t.word.raw;
+    case "literal":
+      return t.payload;
+    case "list":
+      return t.members.map(fillerText).join(" ");
+    default:
+      return t.kind;
+  }
+}
+
+const roleClaim = (t: Term): Claim => ({ roles: { z: t }, predicate: [], details: [] });
+
+/**
+ * The fill job (R4c-9 to R4c-11, D10; questions.md#fill-ask, #fill-all, fill-ask-roles.md#fill-ask-arity): what fills
+ * each blank of a fill question. The log is solved (cautious: atoms in every clash-free world; `possible`: in some), and
+ * each `holds` atom is matched against the question by {@link match}, each blank binding the term in its place, so the
+ * fillers a universal, a hinge or a list gives come from the solved atoms. Several fillers are all listed (D10), as
+ * tuples in the blanks' order for fill-all. A filler source is one more loop over the model here.
+ */
+export async function fill(log: Pick<Log, "readings">, question: Reading, options: FillOptions = {}): Promise<FillAnswer> {
+  const out = (verdict: FillVerdict, rest: Partial<FillAnswer> = {}): FillAnswer => ({ verdict, fillers: [], because: [], switches: [], left: [], ...rest });
+  const force = question.frames.find((f) => f.family === "force" && f.values.ask === "fillAsk");
+  if (!force) return out("beyond", { left: [{ reading: question.id, construction: "fillAsk", reason: "notFillAsk" }], english: "That is not a fill question." });
+  // A question's own MAY asks what could fill it (R4b-28): the job runs brave.
+  const may = question.frames.some((f) => questionMay(question, f));
+  const possible = !!options.possible || may;
+  const frame = isQuestionForce(question).find((f) => f.key !== "slot:newMember");
+  if (frame) return out("beyond", { left: [{ reading: question.id, construction: frame.construction, key: frame.key, reason: "noRow" }] });
+  const blanks = fillBlanks(question.claim);
+  if (!Array.isArray(blanks)) return out("beyond", { left: [{ reading: question.id, construction: "fillAsk", key: blanks.key, reason: "noRow" }] });
+  const p = prepare(log, question, options, false, new Set(blanks.map((b) => b.term)));
+  if (!p.ok) return out(p.answer.verdict === "refused" ? "refused" : "beyond", { left: p.answer.left, english: p.answer.english });
+  const left = p.translation.left;
+  const big = tooLarge(p.program, options);
+  if (big) return out("refused", { left, english: big });
+  const program = await worlds(p.program);
+  if (typeof program !== "string") return out("refused", { left, english: program.why });
+  const run = await consequences(program, possible ? "brave" : "cautious");
+  if (!run.ok) return out("refused", { left, english: run.why });
+  const model = new Model(run.atoms);
+  // The question with each listed blank as one open blank; its bindings are kept only among the listed items.
+  const asked: Claim = { ...p.claim!, roles: { ...p.claim!.roles } };
+  const open = new Map<FillBlank, Term>();
+  for (const b of blanks) {
+    if (!b.listed) continue;
+    const list = b.term as Extract<Term, { kind: "list" }>;
+    const blank: Term = { kind: "blank", word: list.join! };
+    asked.roles[b.at as "z" | "d" | "b"] = blank;
+    open.set(b, blank);
+  }
+  const querySite = p.translation.site(p.qid!);
+  const found = new Map<string, { filler: Filler; start: string[]; terms: Term[] }>();
+  const switches = new Set<SolveSwitch>();
+  for (const held of model.holds) {
+    if (negOf(held) !== undefined) continue;
+    const source = p.translation.terms.get(held);
+    if (!source || source.reading === p.qid) continue;
+    const targetSite = p.translation.site(source.reading);
+    const binding = match(asked, source.claim, { switches: { widen: !!options.widen }, lexicon: options.lexicon, querySite, targetSite });
+    if (!binding) continue;
+    const terms: Term[] = [];
+    const ok = blanks.every((b) => {
+      const blank = open.get(b) ?? b.term;
+      const bound = binding.blanks.find((x) => x.blank === blank && x.at === b.at)?.term;
+      if (!bound) return false;
+      terms.push(bound);
+      return !b.listed || b.listed.some((item) => match(roleClaim(item), roleClaim(bound), { lexicon: options.lexicon, querySite, targetSite }));
+    });
+    if (!ok) continue;
+    const term = terms.map(fillerText);
+    const key = term.join("\u0000");
+    const entry = found.get(key) ?? { filler: { at: blanks.map((b) => b.at), term, because: [] }, start: [], terms };
+    entry.start.push(held);
+    found.set(key, entry);
+    binding.switches.forEach((s) => s === "widen" && switches.add("widen"));
+  }
+  const order = p.translation.readings;
+  const rank = (ids: string[]): number => Math.min(...ids.map((id) => order.indexOf(id)), Infinity);
+  // A list bound whole, whose members each fill the blank too (an *and* list's claim beside its members'), gives way to them.
+  const listed = (terms: Term[]): boolean =>
+    terms.some((t, i) => t.kind === "list" && t.members.every((m) => found.has(terms.map((x, j) => (j === i ? fillerText(m) : fillerText(x))).join("\u0000"))));
+  const at = (terms: Term[]): number => {
+    const t = throughAntecedent(terms[0]!);
+    return t.kind === "thing" ? (t.head.at ?? 0) : 0;
+  };
+  const fillers: (Filler & { pos: number })[] = [];
+  for (const { filler, start, terms } of found.values()) {
+    if (listed(terms)) continue;
+    const why = explain(model, start, p.ctx);
+    why.switches.forEach((s) => switches.add(s));
+    fillers.push({ ...filler, because: why.because, pos: at(terms) });
+  }
+  // Log order of the readings behind each filler, then the filler's place in its sentence.
+  fillers.sort((a, b) => rank(a.because) - rank(b.because) || a.pos - b.pos || a.term.join(" ").localeCompare(b.term.join(" ")));
+  const because = [...new Set(fillers.flatMap((f) => f.because))].sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  const closed = !!options.closedWorld;
+  if (closed && !fillers.length) switches.add("closedWorld");
+  if (may) switches.add("couldBe");
+  const used = (["widen", "defaults", "closedWorld", "couldBe"] as const).filter((s) => switches.has(s));
+  if (blanks[0]!.existence) return out(fillers.length ? "yes" : closed ? "no" : "unknown", { because, switches: used, left });
+  return out(fillers.length ? "filled" : closed ? "nobody" : "unknown", { fillers: fillers.map(({ pos: _, ...f }) => f), because, switches: used, left });
 }
 
 /** The program with only the given readings switched on. */

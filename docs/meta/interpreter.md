@@ -183,7 +183,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | anaphor | `topic` | link | `topic.md#topic-pronoun` |  |
 | anaphor | `landmark` | link | `hooked-joins.md#hooked-joins` | A hooked join's landmark pointing back |
 | ask | `yesNo` | frame:force | `questions.md#question` | `AskRecord`: the question type is a `value` of the force frame |
-| ask | `fillAsk` | frame:force | `questions.md#fill-ask` | The blank is a `blank` term |
+| ask | `fillAsk` | frame:force | `questions.md#fill-ask` | The blank is a `blank` term; the fill job binds each `blank` term; `follows` / `couldBe` answer `beyond` |
 | ask | `rhetorical` | frame:force | `more-turn-words.md#rhetorical` |  |
 | ask | `none` | structure | `questions.md#question` | Not a question |
 | answer | `answer` | link | `questions.md#fill-ask` | A reply filling a blank |

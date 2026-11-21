@@ -470,6 +470,8 @@ export class Translator {
     this.used = new Set();
     this.visited = [reading];
     this.bound = new Set();
+    // R4c-9: a fill question's blanks are the fill job's, which matches them against the solved atoms.
+    this.use(...(this.options.blanks ?? []));
     const g = nounHinge(reading);
     if (g) return sayNounHinge(this, reading, g);
     // R4c decision 5: a verbless list is a fragment, with no claim term.
