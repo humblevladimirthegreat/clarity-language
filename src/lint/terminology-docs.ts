@@ -4,7 +4,8 @@
  * the page appears on the page it links to, and every link anchor resolves.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import { MORPH_GLOSS_LABELS, morphGlossLine } from "../parse/morph-gloss.js";
+import { MORPH_GLOSS_LABELS } from "../parse/morph-gloss-labels.js";
+import { morphGlossLine } from "../parse/morph-gloss.js";
 import { isAgebenRootShape } from "../root-shape.js";
 import { classifyAgebenSpan, decodeEntities, walkAgebenSpans } from "./ageben-docs.js";
 import { grammarHeadings } from "./grammar-anchors.js";

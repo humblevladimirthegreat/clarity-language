@@ -5,14 +5,8 @@ import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
 import { createClassifyTables } from "./classify.js";
-import {
-  compareMorphGloss,
-  extractExampleBlocks,
-  extractTeachBlocks,
-  morphGlossLine,
-  morphRedundantWithLoose,
-  normalizeMorphLine,
-} from "./morph-gloss.js";
+import { compareMorphGloss, extractExampleBlocks, extractTeachBlocks, morphRedundantWithLoose, normalizeMorphLine } from "./morph-gloss-blocks.js";
+import { morphGlossLine } from "./morph-gloss.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(

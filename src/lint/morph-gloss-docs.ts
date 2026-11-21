@@ -1,12 +1,6 @@
 import { collectAmbiguity } from "../parse/ambiguity.js";
 import type { ClassifyTables } from "../parse/classify.js";
-import {
-  compareMorphGloss,
-  extractExampleBlocks,
-  extractTeachBlocks,
-  looksLikeMorphLine,
-  morphRedundantWithLoose,
-} from "../parse/morph-gloss.js";
+import { compareMorphGloss, extractExampleBlocks, extractTeachBlocks, looksLikeMorphLine, morphRedundantWithLoose } from "../parse/morph-gloss-blocks.js";
 import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
 import { SPEECH_MARK } from "./number-speech-docs.js";

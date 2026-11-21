@@ -23,24 +23,10 @@ export { parseWord, parseWords, parseWordStream, probeMorphWord, WordParseError 
 export { collectAmbiguity } from "./ambiguity.js";
 export { parseWithTables } from "./parse-core.js";
 export { inspectText, glossFor, chipsFor, morphDetails, endingSense } from "./inspect.js";
-export {
-  compareMorphGloss,
-  extractExampleBlocks,
-  extractTeachBlocks,
-  morphGlossFor,
-  morphGlossLine,
-  morphRedundantWithLoose,
-  normalizeAgeben,
-  normalizeLooseEnglish,
-  normalizeMorphLine,
-  senseLabel,
-} from "./morph-gloss.js";
-export type {
-  CompareMorphGlossResult,
-  ExampleBlockPair,
-  MorphGlossContext,
-  TeachBlock,
-} from "./morph-gloss.js";
+export { compareMorphGloss, extractExampleBlocks, extractTeachBlocks, morphRedundantWithLoose, normalizeAgeben, normalizeLooseEnglish, normalizeMorphLine } from "./morph-gloss-blocks.js";
+export { morphGlossFor, morphGlossLine } from "./morph-gloss.js";
+export { senseLabel } from "./morph-gloss-labels.js";
+export type { CompareMorphGlossResult, ExampleBlockPair, MorphGlossContext, TeachBlock } from "./morph-gloss-tables.js";
 export type {
   InspectConstruction,
   InspectError,

@@ -11,8 +11,11 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify, SAME_ROLE_POS } from "./classify.js";
-import { POINTER_VOWEL, ROLE_PART, REACH_VOWEL, sameRoleLabel, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
-import type { MorphGlossContext } from "./morph-gloss.js";
+import { POINTER_VOWEL, ROLE_PART, REACH_VOWEL } from "./morph-gloss-tables.js";
+import { sameRoleLabel } from "./morph-gloss-labels.js";
+import { morphGlossFor, morphGlossLine, morphGlossWords } from "./morph-gloss.js";
+import { normalizeMorphLine } from "./morph-gloss-blocks.js";
+import type { MorphGlossContext } from "./morph-gloss-tables.js";
 import { parseWords } from "./word.js";
 import { POINT_BACK_HOOKS, TIME_HOOKS, TIME_JOINS } from "./series.js";
 

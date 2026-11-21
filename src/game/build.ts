@@ -17,7 +17,7 @@ import { constructionRegistry } from "../parse/constructions.js";
 import { ConstructionError } from "../parse/enforce.js";
 import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-inverse.js";
 import { loadDefaultTables } from "../parse/index.js";
-import { looksLikeMorphLine } from "../parse/morph-gloss.js";
+import { looksLikeMorphLine } from "../parse/morph-gloss-blocks.js";
 import { unknownWords } from "../parse/lexicon-check.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { parseWords, WordParseError } from "../parse/word.js";

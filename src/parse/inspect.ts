@@ -1,5 +1,6 @@
 import { classify, markMentions, type ClassifyTables } from "./classify.js";
-import { morphGlossBrackets, senseLabel } from "./morph-gloss.js";
+import { morphGlossBrackets } from "./morph-gloss.js";
+import { senseLabel } from "./morph-gloss-labels.js";
 import type { WordBrackets } from "./gloss-structure.js";
 import { visitResult, type Visitor } from "./ast-walk.js";
 import { parseWithTables } from "./parse-core.js";

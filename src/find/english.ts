@@ -7,7 +7,8 @@
  * Hits are grouped by the section that owns them, best section first.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import { extractTeachBlocks, morphGlossWords } from "../parse/morph-gloss.js";
+import { extractTeachBlocks } from "../parse/morph-gloss-blocks.js";
+import { morphGlossWords } from "../parse/morph-gloss.js";
 import { extractTranslationExercises } from "../lint/morph-gloss-docs.js";
 import { pageSections, sectionAt, type Band } from "../lint/learning-order.js";
 import { fillSelf } from "../learner-name.js";

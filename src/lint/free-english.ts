@@ -6,7 +6,8 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { classifyAgebenSpan } from "./ageben-docs.js";
-import { looksLikeMorphLine, morphGlossLine } from "../parse/morph-gloss.js";
+import { looksLikeMorphLine } from "../parse/morph-gloss-blocks.js";
+import { morphGlossLine } from "../parse/morph-gloss.js";
 import { practiceItems, type PracticeItem } from "./practice-items.js";
 import { glossLabels } from "./terminology-docs.js";
 

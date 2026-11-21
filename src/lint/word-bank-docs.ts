@@ -8,7 +8,7 @@ import { CLOSED, closedDerived } from "../closed-roots.js";
 import { classify, lexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
 import { derivedHookGloss, readHookCompound } from "../parse/hook-compounds.js";
 import { senseFormEnding, senseFormRoot, type OverlayKind } from "../lexicon-search.js";
-import { senseLabel } from "../parse/morph-gloss.js";
+import { senseLabel } from "../parse/morph-gloss-labels.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { lineNumberAt } from "../retie/tokens.js";
 import { fillSelf, hasSelfSlot } from "../learner-name.js";
