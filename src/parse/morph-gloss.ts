@@ -30,19 +30,14 @@
 
 import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
-import { JOIN_SERIES } from "./series.js";
-import { classifyAll, hookCompoundGloss, overlayKey, SAME_ROLE_POS, type ClassifyTables } from "./classify.js";
-import { type ExtraNounHook } from "./hook-compounds.js";
-import { type PublishedRow } from "../lexicon-search.js";
-import { CLOSED, closedDerived, namedEnglish, withLexiconClosedRoots } from "../closed-roots.js";
-import { linkerEnglish } from "./linkers.js";
+import { classifyAll, type ClassifyTables } from "./classify.js";
+import { withLexiconClosedRoots } from "../closed-roots.js";
 import { buildGlossTree, renderGlossNodes, tokenGlossTree, unwrapLoneBracket, bracketsByWord, type GlossNode, type WordBrackets } from "./gloss-structure.js";
 import { scanChunks, toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
-import { stripFlagSuffix } from "../flag-label.js";
 import { isDigitlessNumberBlank } from "./resolve.js";
-import { parseWords, WordParseError } from "./word.js";
-import { type AnaphorBind, type AskRecord, type Ending, type LexOverlay, type LexWord, type NumberGroup, type NumberStem, type ParseResult, type Pos, type ResolveInfo } from "./types.js";
+import { parseWords } from "./word.js";
+import { type AnaphorBind, type AskRecord, type LexWord, type ParseResult, type ResolveInfo } from "./types.js";
 import { houseCast, NUMBER_BLANK, numberMarkSuffix, REACH_VOWEL, SAY_PART, SAY_ANSWER, SAY_ENDING, roleFront, pointerFront, POINTER_ENDING, POINTER_VOWEL, UnknownWordError, type MorphGlossContext, ordinalEnglish } from "./morph-gloss-tables.js";
 import { normalizeAgeben } from "./morph-gloss-blocks.js";
 import { senseLabel, WRITTEN_SPAN, hookLabel, hookedJoinHookLabel, joinMarkerLabel, numberLabel, xPieces, writingSpanLabel, contentBody, rootSense, markShorthandRuns, numberSurfaceSuffix } from "./morph-gloss-labels.js";

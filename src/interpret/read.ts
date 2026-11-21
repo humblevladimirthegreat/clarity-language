@@ -38,13 +38,6 @@ import type { Detail, Frame, Link, Reading, ReadingId, StanceList, Term } from "
 
 // ── Terms ───────────────────────────────────────────────────────────────────
 
-export function rootOf(word: LexWord): string {
-  const family = word.family;
-  if (family.kind === "content") return family.roots.join("");
-  if (family.kind === "x") return [...family.leftRoots, ...(family.rightRoots ?? [])].join("x");
-  return word.raw;
-}
-
 
 /**
  * A pronoun term. Its antecedent is the word the resolver's bind names: the term already read from that word, whatever

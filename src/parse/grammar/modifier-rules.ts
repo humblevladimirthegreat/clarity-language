@@ -2,18 +2,13 @@
 
 import type { TokenType } from "chevrotain";
 import {
-  B,
-  G,
   GInList,
   GInRespList,
-  H,
   HostedBNoun,
   HostedBNumber,
   HostedBJoined,
   HostedOdo,
   LateOdo,
-  HPlain,
-  HTh,
   HList,
   HLone,
   HPlainList,
@@ -30,12 +25,9 @@ import {
   JoinH,
   JoinV,
   JoinZ,
-  Odo,
-  Hook,
   HookHosting,
   HookPlain,
   SameRolePair,
-  W,
   WBefore,
   WLeaf,
 } from "../tokens.js";

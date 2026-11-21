@@ -12,7 +12,6 @@ import type {
   SharedRecord,
 } from "../parse/types.js";
 import { classOf, overlayClassKey } from "./classes.js";
-import { rootOf } from "./read.js";
 import { toneFrame } from "./tones.js";
 import type { Detail, Frame, Link, LinkKind, Reading, ReadingId, Term, Unread } from "./types.js";
 
@@ -263,6 +262,13 @@ export function nextSentence(here: Here): ReadingId | undefined {
 export function previousSentence(here: Here): ReadingId | undefined {
   const at = here.ctx.sentences.findIndex((s) => s.utterance === here.utterance && s.body === here.body);
   return at > 0 ? here.ctx.sentences[at - 1]?.id : undefined;
+}
+
+function rootOf(word: LexWord): string {
+  const family = word.family;
+  if (family.kind === "content") return family.roots.join("");
+  if (family.kind === "x") return [...family.leftRoots, ...(family.rightRoots ?? [])].join("x");
+  return word.raw;
 }
 
 export function thing(word: LexWord): Term {

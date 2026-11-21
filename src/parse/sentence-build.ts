@@ -2,31 +2,10 @@
 
 import type { CstNode, IToken } from "chevrotain";
 import {
-  B,
-  D,
-  Force,
-  G,
-  H,
-  Citation,
-  JoinB,
-  JoinD,
-  JoinG,
-  JoinH,
-  JoinV,
-  JoinX,
-  JoinZ,
   lexWordFromToken,
-  Linker,
-  Odo,
   Period,
-  Polar,
   QMark,
   Hook,
-  V,
-  Vocative,
-  Interjection,
-  W,
-  Z,
 } from "./tokens.js";
 import { isNamedStandIn, isStandIn } from "./classify.js";
 import { scopeClause, scopeIsland } from "./verb-items.js";

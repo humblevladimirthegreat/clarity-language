@@ -8,12 +8,10 @@ import {
   Linker,
   Period,
   Polar,
-  Hook,
   HookHosting,
   HookPlain,
   Vocative,
   Interjection,
-  W,
   WBefore,
 } from "../tokens.js";
 import { type ParserRule } from "../sentence-shapes.js";
