@@ -1,0 +1,15 @@
+form,english,kind,anchor
+uwen,*I* (the speaker),pronoun,pronouns.md#special-pronouns
+awan,*you* (the listener),pronoun,pronouns.md#special-pronouns
+ayan,*we* (you and I),pronoun,pronouns.md#special-pronouns
+eyen,"*one*, generic *you*, *people*",pronoun,pronouns.md#generic-pronoun
+alen,*the topic*,pronoun,topic.md#topic-pronoun
+xahom,*therefore*,linker,sentence-linkers.md#sentence-linkers
+xahol,*it follows that*,linker,sentence-linkers.md#sentence-linkers
+xezem,*however*,linker,sentence-linkers.md#sentence-linkers
+xezel,"*nevertheless*, *even so*",linker,sentence-linkers.md#sentence-linkers
+xugorom,*meanwhile*,linker,sentence-linkers.md#sentence-linkers
+xevewom,*next*,linker,sentence-linkers.md#sentence-linkers
+xugohum,*but*,linker,sentence-linkers.md#sentence-linkers
+xugohul,*on the contrary*,linker,sentence-linkers.md#sentence-linkers
+xavedam,*by the way*,linker,sentence-linkers.md#sentence-linkers
