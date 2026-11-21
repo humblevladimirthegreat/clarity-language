@@ -22,7 +22,7 @@ import {
   sakeInventoryRoots,
 } from "./flashcards.js";
 import { overlayExamples, overlayRowKey } from "./flashcards-examples.js";
-import { highlightExample, hostLine, slotReadings, wordNoteGloss } from "./flashcards-overlays.js";
+import { highlightExample, hostLine, slotNoteKey, slotReadings, slotTaughtByMForm, wordNoteGloss } from "./flashcards-overlays.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { morphGlossLine } from "./parse/morph-gloss.js";
 
@@ -72,7 +72,7 @@ describe("buildNotes", () => {
   });
 
   it("highlights the overlay word in the example and carries the example's morph gloss", () => {
-    for (const n of notes.overlays) {
+    for (const n of [...notes.overlays, ...notes.slots]) {
       const spans = n.fields.example.match(/<span class="overlay">[^<]+<\/span>/g) ?? [];
       assert.equal(spans.length, 1, `${n.key}: ${n.fields.example}`);
       assert.ok(n.fields.gloss.trim(), n.key);
@@ -86,6 +86,48 @@ describe("buildNotes", () => {
     assert.equal(notes.overlays.find((n) => n.key === "unam")!.fields.host, `una (${una.concrete})`);
     assert.equal(notes.overlays.find((n) => n.key === "an")!.fields.host, "");
     assert.equal(hostLine("an", inputs.published), "");
+  });
+
+  it("adds a slot note only at a later checkpoint that puts a known form in a new slot", () => {
+    const index = new Map(inputs.checkpoints.map((c, i) => [checkpointTag(c.page, c.band), i]));
+    const cpOf = (tags: readonly string[]) => index.get(tags.find((t) => t.startsWith("ageben::cp::"))!)!;
+    const rowAt = (r: (typeof inputs.overlays)[number]) => index.get(anchorCheckpoint(r.anchor, inputs)!.tag)!;
+    const posTags = (tags: readonly string[]) => tags.filter((t) => t.startsWith("ageben::pos::")).map((t) => t.slice("ageben::pos::".length));
+    const rows = inputs.overlays.filter((r) => !coveredByEndingNote(r));
+    assert.ok(notes.slots.length > 0);
+    for (const n of notes.slots) {
+      const word = notes.overlays.find((w) => w.key === n.fields.form);
+      assert.ok(word, n.key);
+      const at = cpOf(n.tags);
+      assert.ok(at > cpOf(word.tags), `${n.key}: not after its word note`);
+      assert.equal(n.key, slotNoteKey(n.fields.form, inputs.checkpoints[at]!.page));
+      assert.equal(n.fields.slot_of, `${word.fields.form} · ${word.fields.definition}`);
+      const known = new Set(rows.filter((r) => r.senseForm === n.fields.form && rowAt(r) < at).map((r) => r.pos));
+      for (const pos of posTags(n.tags)) assert.ok(!known.has(pos), `${n.key}: ${pos} taught earlier`);
+    }
+    // Every new slot at a later checkpoint has its note, unless the ending set's -m form carries it.
+    for (const r of rows) {
+      const at = rowAt(r);
+      const earlier = rows.filter((o) => o.senseForm === r.senseForm && rowAt(o) < at);
+      if (earlier.length === 0 || earlier.some((o) => o.pos === r.pos) || slotTaughtByMForm(r, inputs.overlays)) continue;
+      assert.ok(notes.slots.some((n) => n.fields.form === r.senseForm && cpOf(n.tags) === at && n.tags.includes(`ageben::pos::${r.pos}`)), `${r.senseForm}@${r.pos} ${r.anchor}`);
+    }
+    const ezem = notes.slots.find((n) => n.key === "ezem@more-hinges")!;
+    assert.deepEqual(posTags(ezem.tags), ["g"]);
+    const ezemG = inputs.overlays.filter((r) => r.senseForm === "ezem" && r.pos === "g");
+    assert.equal(ezem.guid, noteGuid("overlay", "ezem@more-hinges", wordNoteGloss(ezemG)));
+    assert.equal(ezem.fields.definition, ezemG[0]!.definition);
+  });
+
+  it("gives an ending set's new slot to its -m form only", () => {
+    const keys = new Set(notes.slots.map((n) => n.key));
+    assert.ok(keys.has("omam@universality") && keys.has("evum@universality") && keys.has("ewem@same-role-words"));
+    for (const key of ["omal@universality", "omar@universality", "evul@universality", "evur@universality", "ewel@same-role-words"]) assert.ok(!keys.has(key), key);
+    const set = [{ senseForm: "xam", pos: "w", kind: "may" as const }];
+    assert.equal(slotTaughtByMForm({ senseForm: "xal", pos: "w", kind: "may" as const }, set), true);
+    assert.equal(slotTaughtByMForm({ senseForm: "xal", pos: "th", kind: "may" as const }, set), false);
+    assert.equal(slotTaughtByMForm({ senseForm: "xal", pos: "w", kind: "notional" as const }, set), false);
+    assert.equal(slotTaughtByMForm({ senseForm: "xam", pos: "w", kind: "may" as const }, set), false);
   });
 
   it("orders overlay notes by checkpoint", () => {
@@ -104,7 +146,7 @@ describe("buildNotes", () => {
     const ezemGlosses = inputs.overlays.filter((r) => r.senseForm === "ezem" && r.pos !== "g").map((r) => r.gloss);
     assert.equal(notes.overlays.find((n) => n.key === "ezem")!.guid, noteGuid("overlay", "ezem", wordNoteGloss(ezemGlosses.map((gloss) => ({ gloss })))));
     assert.equal(wordNoteGloss([{ gloss: "b" }, { gloss: "a" }, { gloss: "b" }]), "a / b");
-    const all = [...notes.roots, ...notes.compounds, ...notes.overlays].map((n) => n.guid);
+    const all = [...notes.roots, ...notes.compounds, ...notes.overlays, ...notes.slots].map((n) => n.guid);
     assert.equal(new Set(all).size, all.length);
   });
 
@@ -121,16 +163,16 @@ describe("buildNotes", () => {
   });
 
   it("tags every note with one release id that changes only when content changes", () => {
-    const all = [...notes.roots, ...notes.compounds, ...notes.overlays];
+    const all = [...notes.roots, ...notes.compounds, ...notes.overlays, ...notes.slots];
     const id = releaseId(all);
     assert.match(id, /^[0-9a-f]{8}$/);
     for (const n of all) assert.equal(n.tags.filter((t) => t.startsWith("ageben::release::")).join(), `ageben::release::${id}`, n.key);
     const reversed = rebuild([...inputs.published].reverse());
-    assert.equal(releaseId([...reversed.roots, ...reversed.compounds, ...reversed.overlays]), id);
+    assert.equal(releaseId([...reversed.roots, ...reversed.compounds, ...reversed.overlays, ...reversed.slots]), id);
     assert.equal(releaseId(all.map((n) => ({ ...n, tags: [] }))), id);
     const [a] = inputs.published;
     const edited = rebuild([{ ...a!, mnemonic: `${a!.mnemonic} x` }, ...inputs.published.slice(1)]);
-    assert.notEqual(releaseId([...edited.roots, ...edited.compounds, ...edited.overlays]), id);
+    assert.notEqual(releaseId([...edited.roots, ...edited.compounds, ...edited.overlays, ...edited.slots]), id);
   });
 
   it("tags core words and overlays with the checkpoint that first drills them", () => {
@@ -143,7 +185,7 @@ describe("buildNotes", () => {
       const cp = inputs.checkpoints.find((c) => c.anchor === n.core)!;
       assert.deepEqual(cps, [`ageben::cp::${cp.page.replace(/\.md$/, "")}::${cp.band}`], n.key);
     }
-    for (const n of notes.overlays) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
+    for (const n of [...notes.overlays, ...notes.slots]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
     assert.ok(!notes.roots.some((n) => n.tags.some((t) => t.startsWith("ageben::core::"))));
   });
 
@@ -157,7 +199,7 @@ describe("buildNotes", () => {
   it("gives no two production fronts the same glosses", () => {
     const seen = new Map<string, string>();
     const dupes: string[] = [];
-    for (const n of [...notes.roots, ...notes.compounds, ...notes.overlays]) {
+    for (const n of [...notes.roots, ...notes.compounds, ...notes.overlays, ...notes.slots]) {
       const key = productionGlosses(n);
       if (seen.has(key)) dupes.push(`${seen.get(key)} / ${n.key}: ${key}`);
       else seen.set(key, n.key);
@@ -200,6 +242,7 @@ describe("packs", () => {
       ["Ageben::Everything::Roots", inputs.published.length],
       ["Ageben::Everything::Compounds", inputs.compounds.length],
       ["Ageben::Everything::Overlays", notes.overlays.length],
+      ["Ageben::Everything::Slots", notes.slots.length],
     ]);
   });
 

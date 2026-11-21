@@ -1,6 +1,6 @@
 /**
  * Vocabulary flashcards: notes for Anki built from the lexicon CSVs (`vocab-flashcards.md`).
- * One note per published root, compound, and overlay sense form; packs filter the notes into
+ * One note per published root, compound, overlay sense form and new overlay slot; packs filter the notes into
  * decks. The CSVs stay canonical: nothing here adds or rewrites a sense.
  */
 import { createHash } from "node:crypto";
@@ -10,8 +10,8 @@ import { join } from "node:path";
 import { stageCheckpoints, type Checkpoint } from "./core-vocabulary.js";
 import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, senseFormRoot, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
-import type { OverlayExample } from "./flashcards-examples.js";
-import { overlayWordNotes } from "./flashcards-overlays.js";
+import { overlayExamples, type OverlayExample } from "./flashcards-examples.js";
+import { overlaySlotNotes, overlayWordNotes } from "./flashcards-overlays.js";
 import { pageSections, type Band, type PageSections } from "./lint/learning-order.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { grammarFile, readData, REPO_ROOT } from "./repo-paths.js";
@@ -40,7 +40,8 @@ export type OverlayNoteFields = Record<(typeof OVERLAY_FIELDS)[number], string>;
 export type OverlayNote = NoteBase & { model: typeof OVERLAY_MODEL; fields: OverlayNoteFields };
 export type FlashcardNote = LexiconNote | OverlayNote;
 
-export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; overlays: OverlayNote[] };
+/** `overlays` are word notes; `slots` are slot notes, a known form in a new slot at a later checkpoint. */
+export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[] };
 
 /** A note's field values in its note type's field order. */
 export function fieldValues(note: FlashcardNote): string[] {
@@ -137,7 +138,7 @@ export function deckId(name: string): number {
   return (1 << 30) + (createHash("sha256").update(`ageben-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-/** Every note: roots, compounds, overlay word notes. `examples` defaults to {@link overlayExamples} over the inputs. */
+/** Every note: roots, compounds, overlay word and slot notes. `examples` defaults to {@link overlayExamples} over the inputs. */
 export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoots">, examples?: ReadonlyMap<string, OverlayExample>): FlashcardNotes {
   const checkpointBand = new Map(inputs.checkpoints.map((c) => [c.anchor, c.band]));
   const coreTags = (source: NoteSource, key: string, cell: string | undefined): string[] => {
@@ -173,12 +174,15 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     core: r.core ?? "",
   }));
 
-  // One overlay word note per sense form at its first checkpoint (flashcards-overlays.ts).
-  const overlays = overlayWordNotes(inputs, examples);
+  // One overlay word note per sense form at its first checkpoint, a slot note per later new slot (flashcards-overlays.ts).
+  const tables = loadDefaultTables();
+  const found = examples ?? overlayExamples(inputs.overlays, inputs, tables);
+  const overlays = overlayWordNotes(inputs, found, tables);
+  const slots = overlaySlotNotes(inputs, overlays, found, tables);
 
-  const release = releaseTag([...roots, ...compounds, ...overlays]);
-  for (const note of [...roots, ...compounds, ...overlays]) note.tags.push(release);
-  return { roots, compounds, overlays };
+  const release = releaseTag([...roots, ...compounds, ...overlays, ...slots]);
+  for (const note of [...roots, ...compounds, ...overlays, ...slots]) note.tags.push(release);
+  return { roots, compounds, overlays, slots };
 }
 
 /** The glosses on a production front, which must pick out one stem (aliases are cues and may repeat). */
@@ -217,7 +221,7 @@ export function buildPack(id: LexiconPackId, notes: FlashcardNotes, inputs: Pick
     }
     return { id, decks: [deck("Sakes", ordered)] };
   }
-  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Overlays", notes.overlays)] };
+  return { id, decks: [deck("Everything::Roots", notes.roots), deck("Everything::Compounds", notes.compounds), deck("Everything::Overlays", notes.overlays), deck("Everything::Slots", notes.slots)] };
 }
 
 /** Sake roots from the first column of the sake inventory table (sakes.md#sake-inventory). */
