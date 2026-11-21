@@ -36,6 +36,12 @@ The pair covers only its own clause. To keep the same whose-now in a following `
 >
 > "As of 22 July, Alazun had left and was still gone. As of that same day, Azozon's walk still counted too."
 
+> `zalazun thubom blral hunom bl_#23,7 vowurol. xazozon thubom blral hunor vehohel.`
+>
+> z-Alazun | [th-PATTERN | bl-later] | [h-as-of.bookmark | bl-_23,7] | v-walk . x-Azozon | [th-PATTERN | bl-later] | h-as-of.bookmark | v-sit
+>
+> "Taking 23 July as now, Alazun would walk, going by the pattern. From that same now, Azozon would sit."
+
 The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`genam` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wenam b_#22,7 gamahum`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the verb should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
 The `bl-` word after the pair can be:
@@ -66,6 +72,24 @@ Once whose-now is set, these count from it:
 > "As of 22 July, Azozon is more challenging than Alazun."
 
 Here the snapshot covers only *challenging*. It does not reach a verb: a verb in this clause would still count from speech-now unless the clause had its own `/h/` pair.
+
+> `zazozon zalazun zol wunom b_#23,7 gamahum.`
+>
+> [z-Azozon | z-Alazun | z-rank/more | [[w-as-of.bookmark | b-_23,7] | g-challenge]]
+>
+> "Taking 23 July as now, Azozon would be more challenging than Alazun."
+
+> `zazozon dohahal genam bl_#22,7 vayebel.`
+>
+> z-Azozon | [d-house | [g-as-of.ledger | bl-_22,7]] | v-see
+>
+> "Azozon sees the house as of 22 July."
+
+> `zazozon dohahal gunom bl_#23,7 vayebel.`
+>
+> z-Azozon | [d-house | [g-as-of.bookmark | bl-_23,7]] | v-see
+>
+> "Azozon sees the house as it would be on 23 July."
 
 > `zaral haram henam bludurul.`
 >
@@ -149,6 +173,18 @@ With `thunom`, the stance is one you would hold, not one you held:
 > "Once Azozon had spoken, I'd think Alazun might leave."
 
 Resume works as on `/h/`: **`thenar`** / **`thunor`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
+
+> `zalazun thenam bl_#22,7 thomam vudurul. xazozon thenar thomam vowurol.`
+>
+> z-Alazun | [th-as-of.ledger | bl-_22,7] | th-MAY | v-departure . x-Azozon | th-as-of.ledger | th-MAY | v-walk
+>
+> "On 22 July, I thought Alazun might leave. Then too, I thought Azozon might walk."
+
+> `zalazun thunom bl_#23,7 thomam vudurul. xazozon thunor thomam vowurol.`
+>
+> z-Alazun | [th-as-of.bookmark | bl-_23,7] | th-MAY | v-departure . x-Azozon | th-as-of.bookmark | th-MAY | v-walk
+>
+> "Taking 23 July as now, I'd think Alazun might leave. From that same now, I'd think Azozon might walk."
 
 Unlike the event pair, stance *as-of* also takes a signed offset from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless `blrul` is *back then*, with no amount claimed:
 

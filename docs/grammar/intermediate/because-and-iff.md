@@ -38,6 +38,12 @@ Several conditions can sit inside `/b/` as a [join](/joins) (`thohem blugalal bl
 >
 > "Azozon walks if and only if Alazun is asleep."
 
+> `zerulal gehom blugalal.`
+>
+> z-rain | [g-iff | bl-cloud]
+>
+> "There is rain if and only if there are clouds."
+
 *Only because* stacks two hinges: `thebem` (the outcome needs it), then `thahum` with the condition (and it is a fact).
 
 > `zazozon vowurol thebem thahum blerulal.`

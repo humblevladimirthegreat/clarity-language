@@ -49,6 +49,15 @@ English can place one thing in time rather than the whole event (*the walk after
 >
 > "Alazun sees the walk after the thunderstorm." (*after the thunderstorm* says which walk)
 
+The other time hinges work the same way:
+
+| Ageben | English |
+|--------|---------|
+| `zalazun dowurol gerom blozulul vayebel.` | *Alazun sees the walk during the thunderstorm.* |
+| `zalazun dowurol gabam blozulul vayebel.` | *Alazun sees the walk before the thunderstorm.* |
+| `zalazun dowurol garum blozulul vayebel.` | *Alazun sees the walk that lasts until the thunderstorm.* |
+| `zalazun dowurol guvahum blozulul vayebel.` | *Alazun sees the walk that is done by the time of the thunderstorm.* |
+
 **Compare with:** *before* `gabam` is built on the root of `zabal` (*a backpack*, packed ahead of time). As an ordinary noun, `zabal` still means *a backpack*.
 
 ### Practice {#intermediate-practice}
