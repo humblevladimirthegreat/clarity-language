@@ -66,7 +66,7 @@ As a plain noun, `zedal` is *a sandwich*.
 >
 > "Azozon walks across the station."
 
-On a noun it is **`gohom`**: *Azozon, across the station, sits.* As a plain noun, `zohol` is *a bridge*.
+On a noun it is **`gohom`**: `zazozon gohom blezahol vehohel` *Azozon, across the station, sits.* As a plain noun, `zohol` is *a bridge*.
 
 *Around* needs a root too: the person or thing is on all sides of one landmark, like a ring. Use hosted **`hevam`** (or **`gevam`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
 
@@ -76,7 +76,7 @@ On a noun it is **`gohom`**: *Azozon, across the station, sits.* As a plain noun
 >
 > "Cats sit around a train."
 
-As a plain noun, `zeval` is *a carousel*. `em` *near* says only that the person or thing is close, not that it surrounds the landmark.
+On a noun: `zogozelx gevam bledavol` *cats around a train*. As a plain noun, `zeval` is *a carousel*. `em` *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |
@@ -127,7 +127,7 @@ To name the gap (*across the station from Azozon*), add `hohom` with the gap as 
 >
 > "Ahelan sits across the station from Azozon."
 
-On a noun it is **`gavunam`**. As a plain noun, `zavunal` is *a volleyball*.
+On a noun it is **`gavunam`**: `zohahal gavunam blezahol` *a house opposite the station*. As a plain noun, `zavunal` is *a volleyball*.
 
 *Beyond* is **`huzurum`**: the person or thing is on the far side of the landmark from where the speaker stands. (cue: 🌇 *sunset*: the sun goes down on the far side of the horizon)
 
@@ -137,7 +137,7 @@ On a noun it is **`gavunam`**. As a plain noun, `zavunal` is *a volleyball*.
 >
 > "Alazun sits beyond the station."
 
-*Past* names a route that goes by the landmark. *Beyond* names only the far side, with no route. On a noun it is **`guzurum`**. As a plain noun, `zuzurul` is *a sunset*.
+*Past* names a route that goes by the landmark. *Beyond* names only the far side, with no route. On a noun it is **`guzurum`**: `zohahal guzurum blezahol` *a house beyond the station*. As a plain noun, `zuzurul` is *a sunset*.
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Same root as | Cue |

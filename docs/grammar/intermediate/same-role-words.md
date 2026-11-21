@@ -50,6 +50,20 @@ English *before* and *ahead of* put A first; *after* and *behind* put A second. 
 >
 > "Azozon walks behind Ahelan." (Ahelan walks too)
 
+With `-l`, Ahelan is the whole of it:
+
+> `zazozon abal zahelan vowurol.`
+>
+> z-Azozon | before.closed | z-Ahelan | v-walk
+>
+> "Azozon walks ahead of just Ahelan."
+
+> `zazozon alal zahelan vowurol.`
+>
+> z-Azozon | after.closed | z-Ahelan | v-walk
+>
+> "Azozon walks behind just Ahelan."
+
 Between two verbs, the word orders two acts of the same doer. A is `vowurol`, the nearest verb before `abam`:
 
 > `zazozon vowurol abam vazuvol.`

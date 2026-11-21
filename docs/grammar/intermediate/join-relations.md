@@ -39,6 +39,20 @@ For several members, put a [phrase join](/joins) inside the `/b/` phrase (`gan b
 
 *Anti-* vs *without*: `gun blumudel` vs `guan blumudel`. *Without X* vs *anything but X*: `guan bluwedal` vs `guen bluwedal`. Sole pick vs among options: `gen blazozon` vs `gaen blazozon`. Workaround as top priority vs workaround as first step: `gon blurewem` vs `gaon blurewem`.
 
+The `/h/` forms in whole sentences:
+
+| Ageben | English |
+|--------|---------|
+| `zalazun hen blazozon vuguyol.` | *Alazun cooks exclusively for Azozon.* |
+| `zazozon haen bluwedal vuguyol.` | *Azozon cooks, with peanuts among the options.* |
+| `zazozon hun blumudel vuguyol.` | *Azozon cooks, refusing meat.* |
+| `zazozon huan blumudel vuguyol.` | *Azozon cooks without meat.* |
+| `zazozon huen blumudel vuguyol.` | *Azozon cooks anything but meat.* |
+| `zazozon hon blabezul vuruyel.` | *Azozon repairs, prioritizing the bug.* |
+| `zazozon haon blabezul vuruyel.` | *Azozon repairs, starting with the bug.* |
+| `zazozon huon blabezul vuruyel.` | *Azozon repairs, deprioritizing the bug.* |
+| `zazozon hoen blalazun vozuyel.` | *Azozon sings, tying with Alazun.* |
+
 **Compare with:** *a house like Azozon’s* / *walks like a duck* is resemblance ([like](/relations#likeness) `gewem` / `hewem`), not `goen` / `hoen` *on a par with* / *equating*.
 
 ### Practice {#intermediate-practice}
