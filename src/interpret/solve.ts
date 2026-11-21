@@ -26,7 +26,7 @@ import clingo from "clingo-wasm";
 import type { Log } from "./log.js";
 import { match, throughAntecedent, type TermSite } from "./match.js";
 import type { StepLexicon } from "./steps.js";
-import { detailRange, inRange } from "./translate-helpers.js";
+import { detailRange, inRange, notionalHolder } from "./translate-helpers.js";
 import { sayOf, unwrapText, type LeftOut, type Translation } from "./translate-types.js";
 import { translate } from "./translate.js";
 import type { Claim, Detail, Reading, Term } from "./types.js";
@@ -345,7 +345,8 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
     // A holder or a say word on the question is the translator's (R2-1): the question is asked inside its wrap.
     // R3-6: so is the holder's own MAY, a term inside the view.
     const holder = frames.some((f) => f.key === "xFamily:holder");
-    const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || !!f.holderHost || (holder && f.key === "overlay:may:th");
+    // Decision 4 (notional.md#notional-as-if-framing): so is NOTIONAL, asked inside the latest supposition's view.
+    const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || f.key === "overlay:notional:th" || !!f.holderHost || (holder && f.key === "overlay:may:th");
     // R4e-4: a condition hinge on a question asks whether the conditional holds; the translator gives its term.
     const conditional = (f: Reading["frames"][number]): boolean => (f.key === "overlay:clause_hinge:th" || f.key === "overlay:clause_hinge:g") && ["if", "only-if", "iff"].includes(f.values.gloss ?? "");
     const beyond = frames.find((f) => f.key !== "slot:newMember" && !wrapping(f) && !conditional(f));
@@ -362,6 +363,11 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
   const left = translation.left.filter((l) => l.reading !== qReading?.id);
   if (qReading && translation.left.length !== left.length) {
     return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: translation.left } };
+  }
+  // A NOTIONAL question with no supposition in the log keeps its own holder, which nothing holds: unknown.
+  const wrap = qReading && translation.wraps.get(qReading.id);
+  if (wrap?.kind === "view" && wrap.holder === notionalHolder(JSON.stringify(qReading!.id))) {
+    return { ok: false, answer: { verdict: "unknown", because: [], switches: [], left: [] } };
   }
   let program = translation.program;
   if (qReading && !keepClaim) {

@@ -180,8 +180,9 @@ zazozon vowurol veruvol vam.
 zazozon dabedal vugudol daledel vozedal val.
 = Azozon cooks popcorn and eats an apple.
 
-# NOTIONAL (R4d decision O-6; notional.md#notional-as-if-framing): lk41, the imagined scene and the bare sentence it
-# carries to are each view(notional, T), never your claim, so *does Azozon sit?* is unknown.
+# NOTIONAL (R4d decision O-6, decision 4; notional.md#notional-as-if-framing): lk41, the imagined scene and the bare
+# sentence it carries to are each view(notional(Id), T), Id the stated reading's, never your claim, so *does Azozon sit?*
+# is unknown.
 
 @ lk41
 zazozon theyum vowurol. zazozon vehohel.

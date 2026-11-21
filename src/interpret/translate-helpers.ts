@@ -17,8 +17,13 @@ export const RESERVED = new Set([
   "if", "onlyif", "iff", "we", "every", "because", "want", "decision", "grounds", "place", "notional",
 ]);
 
-/** R4d decision O-6: the holder of NOTIONAL's view, `view(notional, T)` (notional.md#notional-as-if-framing). */
+/**
+ * Decision 4 (solver-followups N1, notional.md#notional-as-if-framing): one holder per supposition, the stated
+ * NOTIONAL reading's id, `view(notional(Id), T)`. `id` is the reading's quoted id, as `Ctx.id` has it.
+ */
 export const NOTIONAL = "notional";
+export const notionalHolder = (id: string): string => `${NOTIONAL}(${id})`;
+export const isNotionalHolder = (holder: string): boolean => holder.startsWith(`${NOTIONAL}(`);
 
 /** R4b decision 3: the intention adverbs after `uom` and their zone terms (contrary-to.md#contrary-to-stance). */
 export const ZONE_INTENTIONS: Record<string, string> = { "overlay:plan:th": "plan", "overlay:want:th": "want", "overlay:decision:th": "decision" };

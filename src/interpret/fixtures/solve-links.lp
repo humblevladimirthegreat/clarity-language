@@ -400,12 +400,12 @@ holds(ozeda(z(azozo),d(nm("t:24.5",d2)))) :- on("t:24.5").
 fired("t:24.5",ozeda(z(azozo),d(nm("t:24.5",d2)))) :- on("t:24.5").
 % t:24.6
 on("t:24.6").
-holds(view(notional,owuro(z(azozo)))) :- on("t:24.6").
-fired("t:24.6",view(notional,owuro(z(azozo)))) :- on("t:24.6").
+holds(view(notional("t:24.6"),owuro(z(azozo)))) :- on("t:24.6").
+fired("t:24.6",view(notional("t:24.6"),owuro(z(azozo)))) :- on("t:24.6").
 % t:24.7
 on("t:24.7").
-holds(view(notional,ehohe(z(azozo)))) :- on("t:24.7").
-fired("t:24.7",view(notional,ehohe(z(azozo)))) :- on("t:24.7").
+holds(view(notional("t:24.6"),ehohe(z(azozo)))) :- on("t:24.7").
+fired("t:24.7",view(notional("t:24.6"),ehohe(z(azozo)))) :- on("t:24.7").
 
 % Members, from claimMemberLists().
 member(ls("t:8.0",z),odoze,1).

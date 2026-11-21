@@ -4,7 +4,7 @@ import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import { throughAntecedent } from "./steps.js";
 import type { Frame, Reading, Term } from "./types.js";
 import { wrapText, type Ctx, type Frames, type Why, type Wrap } from "./translate-types.js";
-import { CONDITIONAL, NOTIONAL, ZONE_INTENTIONS, claimTerms, isEmptyClaim, isOrList, name, str, termFrames } from "./translate-helpers.js";
+import { CONDITIONAL, ZONE_INTENTIONS, isNotionalHolder, notionalHolder, claimTerms, isEmptyClaim, isOrList, name, str, termFrames } from "./translate-helpers.js";
 import { condition, nounCondition } from "./translate-conditions.js";
 import { readingParts, type Translator } from "./translate.js";
 
@@ -84,17 +84,24 @@ export function wrapOf(tr: Translator, reading: Reading, frames: Frames, ctx: Ct
   if (inner && "reason" in inner) return inner;
   let holder: string | undefined;
   let channel: Frame | undefined;
-  // R4d decision O-6 (notional.md#notional-as-if-framing): NOTIONAL is Holders row 1 with the holder `notional`, never
-  // `holds(T)`; a later bare sentence it carries to takes the same wrap, so row 4 runs inside the supposition.
+  // Decision 4 (notional.md#notional-as-if-framing): NOTIONAL is Holders row 1 with one holder per supposition,
+  // `notional(Id)` with Id the stated reading's id, never `holds(T)`; a later bare sentence it carries to takes the
+  // same holder, so row 4 runs inside each supposition and two suppositions never clash with each other. A question
+  // under NOTIONAL asks inside the latest supposition's view; with none, its own holder, which nothing holds.
   const carriedNotional = frames.notional || frames.holder ? undefined : reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:notional");
   if (frames.notional || carriedNotional) {
+    let supposition = notionalHolder(ctx.id);
     if (carriedNotional) {
       const from = carriedNotional.to ? tr.wraps.get(carriedNotional.to) : undefined;
-      if (from?.kind !== "view" || from.holder !== NOTIONAL) return { construction: carriedNotional.key, key: carriedNotional.key, reason: "noRow" };
+      if (from?.kind !== "view" || !isNotionalHolder(from.holder)) return { construction: carriedNotional.key, key: carriedNotional.key, reason: "noRow" };
+      supposition = from.holder;
+    } else if (reading.id.startsWith("?")) {
+      const latest = [...tr.wraps.values()].filter((w) => w.kind === "view" && isNotionalHolder(w.holder)).at(-1);
+      if (latest?.kind === "view") supposition = latest.holder;
     }
     tr.use(frames.notional, carriedNotional);
-    tr.holders.set(NOTIONAL, "the imagined");
-    return { kind: "view", holder: NOTIONAL, ...(inner?.kind === "say" ? { say: inner } : {}) };
+    tr.holders.set(supposition, "the imagined");
+    return { kind: "view", holder: supposition, ...(inner?.kind === "say" ? { say: inner } : {}) };
   }
   if (frames.holder) {
     if (!frames.channel && !frames.mayHost) return { construction: frames.holder.construction, key: frames.holder.key, reason: "noRow" };
