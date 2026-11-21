@@ -41,6 +41,8 @@ export type FlashcardInputs = {
   checkpoints: readonly Checkpoint[];
   /** Band of the section a `page.md#id` anchor lands in. */
   anchorBand: (anchor: string) => Band | undefined;
+  /** Band and 1-based heading line of the section a `page.md#id` anchor lands in. */
+  anchorSection: (anchor: string) => { band: Band | undefined; line: number } | undefined;
   /** Display title of a grammar page (`clause.md` → `Clause`). */
   pageTitle: (page: string) => string;
   /** Sake roots in sake-inventory order. */
@@ -189,6 +191,29 @@ export function sakeInventoryRoots(sakesMarkdown: string): string[] {
   return roots;
 }
 
+/** The checkpoint that first drills an anchored row: page, band, Practice heading id, and unlock tag. */
+export type AnchorCheckpoint = { page: string; band: Band; id: string; anchor: string; tag: string };
+
+/** Unlock tag of a checkpoint: `ageben::cp::<page>::<band>`, page without `.md`. */
+export function checkpointTag(page: string, band: Band): string {
+  return `ageben::cp::${page.replace(/\.md$/, "")}::${band}`;
+}
+
+/**
+ * Map a row's `anchor` (`page.md#id`, explicit id or heading slug) to the first non-review
+ * checkpoint after the anchor's section on the same page, in that section's band. Row-agnostic:
+ * overlay and closed-word rows both call it. Undefined when the anchor or its checkpoint is missing.
+ */
+export function anchorCheckpoint(anchor: string, inputs: Pick<FlashcardInputs, "checkpoints" | "anchorSection">): AnchorCheckpoint | undefined {
+  const section = inputs.anchorSection(anchor);
+  if (!section?.band) return undefined;
+  const page = anchor.split("#")[0]!;
+  const checkpoint = inputs.checkpoints.find((c) => c.page === page && c.band === section.band && !c.review && c.line >= section.line);
+  if (!checkpoint) return undefined;
+  const id = checkpoint.anchor.split("#")[1]!;
+  return { page, band: checkpoint.band, id, anchor: checkpoint.anchor, tag: checkpointTag(page, checkpoint.band) };
+}
+
 /** Inputs from data/ and docs/grammar/: `pages` is the reading order with titles, reviews last in each group. */
 export function loadFlashcardInputs(
   pages: readonly { page: string; title: string }[],
@@ -220,6 +245,13 @@ export function loadFlashcardInputs(
     anchorBand: (anchor) => {
       const [page, id] = anchor.split("#") as [string, string | undefined];
       return sectionsOf(page).anchors.get(id ?? "")?.band;
+    },
+    anchorSection: (anchor) => {
+      const [page, id] = anchor.split("#") as [string, string | undefined];
+      const section = sectionsOf(page).anchors.get(id ?? "");
+      if (!section) return undefined;
+      const text = markdown.get(page) ?? readFileSync(grammarFile(page), "utf8");
+      return { band: section.band, line: text.slice(0, section.offset).split("\n").length };
     },
     pageTitle: (page) => titles.get(page) ?? page.replace(/\.md$/, ""),
     sakeRoots: sakeInventoryRoots(markdown.get("sakes.md") ?? readFileSync(grammarFile("sakes.md"), "utf8")),

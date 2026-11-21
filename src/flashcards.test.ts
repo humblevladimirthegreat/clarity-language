@@ -5,6 +5,7 @@ import { isLevelReview, lessonPages, levelReviewPages } from "../docs/grammar/.v
 import { CLOSED } from "./closed-roots.js";
 import { NOT_CORE_ROOTS } from "./core-vocabulary.js";
 import {
+  anchorCheckpoint,
   buildNotes,
   buildPack,
   loadFlashcardInputs,
@@ -106,6 +107,26 @@ describe("packs", () => {
     const lines = packTsv(pack).trimEnd().split("\n");
     assert.equal(lines.filter((l) => !l.startsWith("#")).length, 18);
     assert.ok(lines.filter((l) => !l.startsWith("#")).every((l) => l.split("\t").length === 10));
+  });
+});
+
+describe("anchorCheckpoint", () => {
+  it("maps every overlay row's anchor to a checkpoint on its page, in its band", () => {
+    const missing = inputs.overlays.filter((r) => !anchorCheckpoint(r.anchor, inputs)).map((r) => `${r.senseForm} ${r.anchor}`);
+    assert.deepEqual(missing, []);
+    for (const row of inputs.overlays) {
+      const cp = anchorCheckpoint(row.anchor, inputs)!;
+      assert.equal(cp.page, row.anchor.split("#")[0]);
+      assert.equal(cp.band, inputs.anchorBand(row.anchor));
+      assert.equal(cp.tag, `ageben::cp::${cp.page.replace(/\.md$/, "")}::${cp.band}`);
+      assert.ok(inputs.checkpoints.some((c) => c.anchor === `${cp.page}#${cp.id}` && !c.review));
+    }
+  });
+
+  it("maps a checkpoint heading to itself and an unknown anchor to nothing", () => {
+    const cp = inputs.checkpoints.find((c) => !c.review)!;
+    assert.equal(anchorCheckpoint(cp.anchor, inputs)?.anchor, cp.anchor);
+    assert.equal(anchorCheckpoint("clause.md#no-such-section", inputs), undefined);
   });
 });
 
