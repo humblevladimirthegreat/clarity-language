@@ -268,7 +268,7 @@ Whose-now is the moment of speaking unless you move it. `henam` claims the momen
 |--------|-----|---------|-------|
 | [`henam` / `genam` / `wenam`](/as-of#as-of) | a real now | *as of* (dated ledger) | A |
 | [`hunom` / `gunom` / `wunom`](/as-of#as-of) | a placeholder now | *as of* (placeholder now) | A |
-| [`henar` / `hunor`](/as-of#as-of) | resume that whose-now | *same books* | A |
+| [`henar` / `genar` / `wenar`, `hunor` / `gunor` / `wunor`](/as-of#as-of) | resume that whose-now | *same books* | A |
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English | Stage |

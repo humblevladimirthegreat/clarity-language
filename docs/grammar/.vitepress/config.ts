@@ -102,6 +102,7 @@ export default defineConfig({
         items: [
           { text: 'Lexicon', link: '/lexicon' },
           { text: 'Inspect', link: '/inspect' },
+          { text: 'Flashcards', link: '/flashcards' },
           { text: 'Number Pegs', link: '/pegs' },
           { text: 'Finger Code', link: '/finger-code' },
           { text: 'Pitch Practice', link: '/pitch-practice' },

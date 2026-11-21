@@ -162,7 +162,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 |--------|-----|---------|--------------|-----|
 | **`henam` / `genam` / `wenam`** | asserted whose-now | *as of* (dated ledger) | `enal` *ledger* | 📒: a dated line in the books |
 | **`hunom` / `gunom` / `wunom`** | unasserted whose-now | *as of* (placeholder now) | `unol` *bookmark* | 🔖: hold the place without stamping |
-| **`henar` / `hunor`** | resume that whose-now | *same books* | same | `-r` restates the stem; no `/b/` |
+| **`henar` / `genar` / `wenar`, `hunor` / `gunor` / `wunor`** | resume that whose-now | *same books* | same | `-r` restates the stem; no `/b/` |
 
 ### Stance as-of {#stance-as-of}
 
