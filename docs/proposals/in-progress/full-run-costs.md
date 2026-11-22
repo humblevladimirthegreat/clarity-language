@@ -37,6 +37,21 @@ What U6 measures the pilot against:
   - `AGENTS.md` loads (see *Decided by agent*); no MCP instructions load (`mcp_servers: []`); the agent file's `tools` list holds.
 - **The launcher** (`npm run phase-exec -- <proposal> <phase> [--rest] [--model M] [--effort E]`) prints one line on exit: `phase-exec: <staging path> exit <code> session <uuid>`, or `phase-exec: FAIL report missing <path> exit <code> session <uuid>`. The process's own output goes to `tmp/logs/phase-exec-<name>-phase-<N>.log`. Each run appends `{proposal, phase, rest, session, start, end, exit}` to `tmp/state/full-runs.jsonl`, where U6 finds the executor's session id. `npm run token-report -- --session` takes a comma-separated list of id prefixes. The launcher itself has not yet run end to end; phase 2 is its first real run.
 
+## Pilot result
+
+Phase 2 ran as a `claude -p` process, session `0376f33b`, with U3–U5 in one parallel batch and then U6. Numbers come from the transcripts, through U6's launch at 00:56:22:
+
+- **Cache-write kinds.** All 18 executor calls wrote `ephemeral_1h`. All worker calls wrote `ephemeral_5m` (U3 15.4k, U4 14.4k, U5 27.1k).
+- **Executor cost.** It wrote 44.1k and read 643k: 88k weighted in writes, 152k with reads. Its first call wrote 14.4k at an 18k context (system prompt and `AGENTS.md`); its second wrote 10.3k (`proposals.md`).
+- **Per unit (four units).** The executor wrote about 11k a unit: 22k weighted in writes, 38k with reads. The `AGENTS.md` start is about 7k of that. The vocab-flashcards executors wrote about 29k a unit at 5 minutes, 37k weighted in writes alone (909k over about 31 units).
+- **Gaps.** None passed 5 minutes; the longest was 169 s, waiting on the batch. U6 itself ran 91 s, so no executor gap in the whole phase passed 5 minutes, and this phase didn't test read against rewrite after a long worker; U1's smoke test is still the only evidence (a read after 6.6 and 10 minutes).
+- **Break-even.** The 1-hour premium on this phase's writes was about 33k weighted (44.1k × 0.75). One rewrite of the 48k context at 5 minutes costs 60k; a read at 1 hour costs 5k. So one gap past 5 minutes a phase pays for the premium.
+- **Launcher and hand-off.** The three parallel units each ran `npm run verify`, and their builds clashed in `dist/`: U3's verify failed twice in `docs:publish`, with `FileNotFoundError` writing `dist/grammar/flashcards/*.apkg`. The executor's verify after the batch passed. The `full-runs.jsonl` line is written only when the process exits, so the executor had to pass its session id to U6 in the brief. `token-report` prints neither cache-write kinds nor gaps, so U6 read them from the transcripts with a scratch script.
+
+**Recommendation:** (a): keep process executors as the full-run default. They cost less per unit than the vocab-flashcards subagent executors, and one long worker a phase pays for the 1-hour premium. (b) saves at most the 33k premium; its keep-alive wakes each read the whole context, and a missed wake costs a 60k rewrite. Either way, give parallel batches their own fix in the follow-up: units in a batch run a verify that doesn't write to `dist/`, or verify takes a lock on `dist/`. Then the executor's verify after the batch is the full one. Confidence **medium**: the numbers are token weights, and the windows may charge differently.
+
+The usage-window delta decides it. If phase 2's 5-hour delta is at most about 10 points (2.3 a unit over four units), (a) stands. If it is above about 12 points (3 a unit), the windows charge the 1-hour writes more than their weights, and (b) is the better choice. (c) is the better choice only if the delta is above about 16 points (4 a unit). A process executor would then cost more than a subagent executor even after a keep-alive cut its writes to the 5-minute rate.
+
 ## Plan
 
 One phase left, in a fresh orchestrator session, well under 40 orchestrator turns. At the end of the phase, and if the user says to stop partway, the orchestrator [consolidates this proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. The phase starts with `npm run verify -- --baseline`. Every unit ends with `npm run verify -- --allow-generate`, and the orchestrator commits it when green. Subagents never commit. No unit edits `docs/grammar/`, so there is no style gate and no recall gate.
