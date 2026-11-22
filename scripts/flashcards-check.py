@@ -223,6 +223,12 @@ def main() -> None:
             found = [col.get_note(nid).guid for nid in stale]
             if found != [dropped]:
                 problems.append(f"{family}: release search after dropping {dropped} found {found[:5]} ({len(found)} note(s))")
+                # Show what the search saw, so one run names the cause: each note's decks and release tags.
+                for nid in (stale[:5] or col.find_notes(f"guid:{dropped}")):
+                    note = col.get_note(nid)
+                    in_decks = sorted({col.decks.name(c.did) for c in note.cards()})
+                    releases = [t for t in note.tags if "::release::" in t]
+                    problems.append(f"  {note.guid}: decks {in_decks}, release tags {releases}; wanted tag {prefix}{rid}")
             released.append(family)
         for cid, before in learner.items():
             if state(cid) != before:

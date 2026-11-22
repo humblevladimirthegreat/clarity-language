@@ -38,6 +38,7 @@ You start without `AGENTS.md`; these are the parts of it a unit uses. To find wh
 - Check that Ageben forms parse with one batched call, `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`: it prints a gloss or a one-line error per input. Use `--llm-prompt` only to work out what a sentence means; it prints a long prompt.
 - Probe in batches. When the unit tests many sentences, write them all into one `node scripts/reading.mjs probe` file (cases separated by `---`), run it once, and re-probe only what surprised you. Never add `--program` to a batch; use it on one case (`--case N`, `--terms a,b`) to debug a verdict or confirm a new row's terms.
 - Check your work the way the brief says. If it says nothing and you edited files, run `npm run verify -- --allow-generate` (Bash timeout 300000 ms) at the end, `--fast` along the way. The orchestrator saved the baseline; do not re-save it. On a FAIL, read only the new lines, or grep `tmp/logs/verify-last.log`.
+- When a check fails and then passes on a rerun with no edit, report it as a possible flake, quoting the failing line, and don't bisect it.
 
 ## Stop
 
