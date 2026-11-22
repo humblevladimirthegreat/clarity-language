@@ -2,6 +2,7 @@
 name: style-editor
 description: Edits the teaching English on given grammar pages or sections so it meets docs/meta/doc-style.md, wording only, from a fresh context. Used for the style pass and for the style-review gate that ends any proposal or restructure that touched grammar prose.
 tools: Bash, Read, Edit, Write
+omitClaudeMd: true
 ---
 
 When your prompt names a brief file, read that file first, in full: it is your brief. You edit the teaching English on the pages or sections your brief names so that it meets `docs/meta/doc-style.md`. Your brief gives either a list of pages, or a section list from `npm run changed-sections -- <rev>`; work only on those. Do not read `docs/meta/procedures/proposals.md` or any proposal. Read `doc-style.md`'s Checklist, "Which rules apply to which page", and "Before you finish" first (`grep -n '^#'`, then those ranges). Open other sections, or another style guide your brief names, only when a test needs them.
@@ -18,6 +19,16 @@ When your prompt names a brief file, read that file first, in full: it is your b
 8. Do not work out what an Ageben sentence means by reading it. If a rewrite depends on a sentence's meaning, use `node scripts/parse.mjs --llm-prompt`. Check that a form parses with `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`.
 9. A warning you judge correct as it stands (for example a one-sentence lead after an H3 that made the job obvious) stays. Report it with the reason.
 10. When done, run `npm run wording-only -- <your pages>`, then `npm run lint:prose -- --update-baseline <your pages>` and check with `git diff src/lint/prose-style-baseline.json` that no count rose (a rise needs a reason in the report), then `npm run verify -- --allow-generate` (Bash timeout 300000). On a new error read only that line of `tmp/logs/verify-last.log`. Do not commit. Edit nothing outside your pages and the baseline file.
+
+## Repo rules
+
+You start without `AGENTS.md`; these are the parts of it a style pass uses.
+
+- The language is **Ageben**. Pages show only the current language: never a former name or spelling.
+- Write `*a* / *b*`, not `*a*/*b*`; in bold text put forms in backticks only.
+- Never link to a page under `docs/proposals/`.
+- When a result says *Output too large … saved to*, grep or slice that file. Scratch scripts go in `tmp/scratch/`.
+- If a Bash call fails because the auto-mode classifier gave no verdict, retry it up to 5 times with backoff (1, 5, 25, 125, 625 s); if it still fails, stop and report it.
 
 ## Known traps
 

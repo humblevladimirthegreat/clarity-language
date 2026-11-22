@@ -1,6 +1,6 @@
 # AGENTS.md policy
 
-Editors only. What belongs in the root `AGENTS.md`, which every agent session loads before reading anything else.
+Editors only. What belongs in the root `AGENTS.md`, which every agent session loads before reading anything else, except the custom subagents that [start without it](#custom-agents).
 
 ## Why this policy exists
 
@@ -31,6 +31,12 @@ A procedure is the step-by-step for one kind of task (parsing, respelling, peeli
 - Put a step in a procedure when only that task needs it. Keep it in `AGENTS.md` when breaking it causes silent damage in unrelated work (a hand-spelled root, a proposal link); say it there in one line and link the procedure.
 - Policy and rationale (what a page should say, why a form is absent) stay in the flat `docs/meta/` files. A procedure links to them rather than restating them.
 - A custom agent definition names the procedure files its task needs in its body ("read X first").
+
+## Custom agents {#custom-agents}
+
+The custom agents under `.claude/agents/` work from a brief that names their pages, so they set `omitClaudeMd: true` and start without `AGENTS.md`: the routing tables and the rules they never use would otherwise cost every subagent call. Each restates, in its *Repo rules* section, only the `AGENTS.md` rules its task needs, and greps `AGENTS.md` when it needs a route its brief does not give.
+
+When you change a rule in `AGENTS.md`, make the same change in every agent file whose *Repo rules* restates it (`grep -n '<rule words>' .claude/agents/*.md`). A new custom agent sets `omitClaudeMd: true` and gets its own *Repo rules* section, unless its task needs the routing tables.
 
 ## Size
 

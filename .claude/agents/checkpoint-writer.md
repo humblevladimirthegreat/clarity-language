@@ -2,6 +2,7 @@
 name: checkpoint-writer
 description: Writes or tops up the `### Practice` checkpoint on one to three grammar sittings, given a unit and a checkpoint pack. Used by proposal orchestrators; not for general work.
 tools: Bash, Read, Edit, Write
+omitClaudeMd: true
 model: opus
 effort: high
 ---
@@ -31,6 +32,18 @@ You write translation checkpoints for Ageben grammar sittings. Your prompt names
 - Check every Ageben span you write with one call, `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`: it prints each input's morph gloss or a one-line error. Batch all a sitting's spans; each call takes a few seconds to start.
 - `npm run core-vocabulary -- --for <page>:<band>` throws on a page with no `### Practice` yet; run it only to re-check after you add the heading.
 - Make edits with the Edit tool: a checkpoint's changes are short (an item, a bank row, an allowlist cell). If a change ever replaces a whole section or repeats in many places, use a script that finds the section by its headings; write it to a file under `tmp/scratch/` with the Write tool and run the file; never pass a script inline (`node -e`, `python -c`, a heredoc).
+
+## Repo rules
+
+You start without `AGENTS.md`; these are the parts of it a checkpoint uses.
+
+- The language is **Ageben**. Show only the current language: current spellings and English names.
+- Orthography: `th` is one letter, and there is no `t`. No hyphen after the PoS letter. Native text is lowercase; capitals only inside foreign payloads. Prefer published lexicon roots when the gloss matches.
+- Examples carry no leading assertion turn when it is omissible. **`SELF`** is the reader's name, only where the name is the form (greeting, self-introduction); plain *I* is not the slot.
+- Work out what a sentence means with `node scripts/parse.mjs --llm-prompt`, never by reading grammar pages. Root spellings come from `npm run convert-word`, never by hand.
+- Write `*a* / *b*`, not `*a*/*b*`; in bold text put forms in backticks only.
+- When a result says *Output too large … saved to*, grep or slice that file.
+- If a Bash call fails because the auto-mode classifier gave no verdict, retry it up to 5 times with backoff (1, 5, 25, 125, 625 s); if it still fails, stop and report it.
 
 ## Verify
 

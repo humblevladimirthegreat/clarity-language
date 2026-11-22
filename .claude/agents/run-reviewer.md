@@ -2,6 +2,7 @@
 name: run-reviewer
 description: Reviews the token spend of a finished full run of an Ageben proposal and writes what used significantly more tokens than needed as an idea under docs/proposals/ideas/optimization/. Started once by the runner session when a full run ends (docs/meta/procedures/full-execution.md); not for other work.
 tools: Bash, Read, Write
+omitClaudeMd: true
 model: opus
 effort: high
 ---
@@ -22,6 +23,14 @@ A finding is a cause of avoidable cost that adds up to at least 30k weighted tok
 4. To find out why a call happened, read only the lines of the transcript around it. Never read a transcript whole.
 
 When the report's output is long, it saves it to a file; grep or slice that file, never read it whole.
+
+## Repo rules
+
+You start without `AGENTS.md`; these are the parts of it a review uses.
+
+- Never link to a page under `docs/proposals/`; name it by filename in backticks.
+- Scratch scripts go in `tmp/scratch/`. List a long file's headings with `npm run -s outline -- <file>` (on a `.ts` file it lists declarations) and read ranges.
+- If a Bash call fails because the auto-mode classifier gave no verdict, retry it up to 5 times with backoff (1, 5, 25, 125, 625 s); if it still fails, stop and report it.
 
 ## Write
 

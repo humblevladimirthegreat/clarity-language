@@ -80,7 +80,12 @@ The runner pays for every report on every later turn, so the executor keeps it t
 The runner:
 
 1. Runs the usage reading labeled `after`.
-2. Checks `git status --short`. If the tree is dirty, it stops and tells the user, because an executor that crashed can leave half-made work.
+2. Checks `git status --short`. If the tree is dirty, it stops and tells the user, because an executor that crashed can leave half-made work. The one exception is a dirty path that looks like another session's work and that the build doesn't read. The runner goes on when every dirty path is all of these:
+   - Markdown under `docs/proposals/` or `docs/meta/`, which the build doesn't read (`npm run build` is skipped for them, per `AGENTS.md`)
+   - not the running proposal
+   - not named in the running proposal (`grep -c` on the path)
+
+   It names those paths in its next message to the user. It doesn't tell the next executor about them, because executors stage only their own files ([commits](proposals.md#commits)). Any other dirty path, including a source file, data file, or grammar page, still stops the run.
 3. Acts on the outcome:
    - `DONE`: the usage gate, then the next phase.
    - `SPLIT`: the usage gate, then a fresh executor for the rest.
