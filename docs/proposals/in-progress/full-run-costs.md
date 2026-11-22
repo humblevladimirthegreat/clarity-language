@@ -1,6 +1,6 @@
 # Proposal: full-run costs
 
-**Status:** READY 2026-11-22. Written 2026-11-21 as an optimization idea, from the token review of the full run of `vocab-flashcards.md` (runner session `67f2111b`, 46 subagents, 10.6M weighted tokens). Decisions, 2026-11-22:
+**Status:** IN PROGRESS 2026-11-22, phase 1 under way. Written 2026-11-21 as an optimization idea, from the token review of the full run of `vocab-flashcards.md` (runner session `67f2111b`, 46 subagents, 10.6M weighted tokens). Decisions, 2026-11-22:
 - Design 1 (standing context) is done for `AGENTS.md`: `omitClaudeMd: true` on the five custom agents. The connector toggle is still open.
 - Phase executors run as background `claude -p` processes that the runner starts, and pass their report back through a staging file. The user doesn't expect permissions to be a problem, since executors already run unattended.
 - This proposal's own phase 2 is the pilot: it runs under a process executor, and its measurements decide whether process executors stay.

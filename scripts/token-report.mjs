@@ -10,7 +10,9 @@
 //                      holds it (case-insensitive; the Subagents table lists each description), with the
 //                      subagents they started; the table nests those under their parent with a subtotal,
 //                      so a phase executor's line plus its workers is that phase's cost
-//   --session <id>     only that session (an id prefix) and its subagents; with --agent, its matching subagents
+//   --session <ids>    only those sessions (a comma-separated list of id prefixes, such as a full run's
+//                      phase sessions from tmp/state/full-runs.jsonl) and their subagents; with --agent,
+//                      their matching subagents
 //   --calls            one line per tool call of the selected transcripts: number, kind, result tokens,
 //                      context at that call, carry cost (weighted, and its share of that transcript), label
 //   --agent / --session without --since search all dates. The Recurring shapes section counts, over every
@@ -62,7 +64,7 @@ function parseArgs(argv) {
     }
     const key = { "--since": "since", "--until": "until", "--skip": "skip", "--dir": "dir", "--agent": "agent", "--session": "session" }[flag];
     if (!key || argv[i + 1] === undefined) {
-      console.error(`Unknown or incomplete argument: ${flag}\nUsage: npm run token-report -- [--since DATE] [--until DATE] [--skip SESSION] [--dir PATH] [--agent ID_OR_TEXT] [--session ID] [--calls]`);
+      console.error(`Unknown or incomplete argument: ${flag}\nUsage: npm run token-report -- [--since DATE] [--until DATE] [--skip SESSION] [--dir PATH] [--agent ID_OR_TEXT] [--session ID[,ID…]] [--calls]`);
       process.exit(2);
     }
     opts[key] = argv[++i];
@@ -320,7 +322,7 @@ function analyse(t) {
 
 const inWindow = transcripts().map(analyse).filter((x) => x.n > 0);
 const selected = (x) => {
-  if (opts.session && !x.session.startsWith(opts.session)) return false;
+  if (opts.session && !opts.session.split(",").some((p) => p && x.session.startsWith(p.trim()))) return false;
   if (!opts.agent) return !x.sub || !!opts.session;
   const want = opts.agent.toLowerCase();
   return x.sub && (x.id.startsWith(opts.agent) || x.desc.toLowerCase().includes(want));

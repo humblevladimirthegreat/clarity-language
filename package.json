@@ -53,6 +53,7 @@
     "retarget-id": "tsx scripts/retarget-id.ts",
     "verify": "tsx scripts/verify.ts",
     "token-report": "node scripts/token-report.mjs",
+    "phase-exec": "tsx scripts/phase-exec.ts",
     "usage-window": "tsx scripts/usage-window.ts",
     "page-lines": "tsx scripts/page-lines.ts",
     "changed-sections": "tsx scripts/changed-sections.ts",
