@@ -5,6 +5,9 @@
 - Phase executors run as background `claude -p` processes that the runner starts, and pass their report back through a staging file. The user doesn't expect permissions to be a problem, since executors already run unattended.
 - This proposal's own phase 2 is the pilot: it runs under a process executor, and its measurements decide whether process executors stay.
 
+**Decided by agent:**
+- 2026-11-22: a process executor loads `AGENTS.md` (about 24k characters), because `claude -p --agent` ignores the agent file's `omitClaudeMd`. Accept the load, and state it in `phase-executor.md` and `full-execution.md` instead of *you start without AGENTS.md*. `--bare` would drop it, but it needs an API key, not the subscription login. Its workers still start without it. Medium confidence, not flagged. Commit: see the git log, *decide AGENTS.md in process executors*.
+
 **Related:** [full-execution.md](../../meta/procedures/full-execution.md), [proposals.md](../../meta/procedures/proposals.md#running-with-subagents), [phase-executor.md](../../../.claude/agents/phase-executor.md), [proposal-worker.md](../../../.claude/agents/proposal-worker.md), [run-reviewer.md](../../../.claude/agents/run-reviewer.md), [parser-pipeline.md](../../meta/parser-pipeline.md#repo-layout), [verify.ts](../../../scripts/verify.ts), [token-report.mjs](../../../scripts/token-report.mjs), [flashcards-check.py](../../../scripts/flashcards-check.py), [tmp-paths.ts](../../../src/tmp-paths.ts).  
 **Depends on:** the uncommitted 2026-11-22 edits for Design 1 (the five files under `.claude/agents/`, `agents-md.md`, `proposals.md`) and the dirty-path exception in `full-execution.md` are committed first, because U2 edits `phase-executor.md` and `full-execution.md` and commits whole files.  
 **Design authority:** none. Tooling and editor procedure only.
