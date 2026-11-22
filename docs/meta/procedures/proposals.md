@@ -128,6 +128,7 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`,
    - the item's own finding text, copied from the proposal
    - the gate run or open decision that settles it, if any
    - the proposal's rule digest (at most about 40 lines)
+   - notes on what earlier units built, which also list the library helpers each used (a walker, a parse entry point, a constant), so the next subagent calls them instead of searching `src/` for them
    - links to the full rule sections it may open if the digest does not settle a question
 
    It does not tell the subagent to read the whole proposal. Each proposal that runs through subagents holds one reusable digest, which the orchestrator copies into every brief. When the digest says how to check forms, it names `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …` (one batched call, a gloss or an error per input), and keeps `--llm-prompt` for working out what a sentence means: that prompt runs to pages per call ([reading Ageben](read-ageben.md#parsing)). The digest always carries this standing line, because nothing else makes a running subagent stop:

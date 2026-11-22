@@ -226,6 +226,13 @@ data/
 
 npm scripts: `generate:word` (Peggy); `build` (generate + `tsc`); `test`; `parse`. Chevrotain needs no generate step.
 
+Library entry points, for a script or lint rule that reads Ageben:
+
+- walk every Ageben code span in the docs: `walkAgebenSpans`, `classifyAgebenSpan` (`src/lint/ageben-docs.ts`)
+- parse with tables: `parseWithTables` (`src/parse/parse-core.ts`), `loadDefaultTables` (`src/parse/index.ts`)
+- visit words: `visitResult` (`src/parse/ast-walk.ts`)
+- the site origin: `SITE_ORIGIN` (`scripts/lib/llms-txt.ts`)
+
 ## IR
 
 Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
