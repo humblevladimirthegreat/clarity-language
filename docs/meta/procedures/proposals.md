@@ -117,7 +117,7 @@ At the end of each phase the orchestrator:
 
 When a phase runs over its budget and there is more than one unit left to do, the orchestrator ends it early at the next unit boundary, the same way, and the Status line says where the split fell. The next session starts the next phase as in [resuming](#resuming).
 
-When the user asks for a whole proposal in one session, a runner starts each phase in a phase-executor subagent instead, per [full-execution.md](full-execution.md). Nothing on this page changes for a one-phase session.
+When the user asks for a whole proposal in one session, a runner starts each phase in a separate phase executor instead (a `claude -p` process during the pilot), per [full-execution.md](full-execution.md). Nothing on this page changes for a one-phase session.
 
 ## Running with subagents
 
