@@ -16,7 +16,11 @@ https://discord.gg/CAMGw2Akhc
 -cheat sheet distinguish cue vs exact match
 -scoping/carry rules in central page/cheat-sheet
 -change llms.txt to download the reader instead of parser?
--reader exhaustive systematic audit
+
+save for near end of limit resets:
+-review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
+-review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete or promoting to grammar?
+
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth
@@ -29,10 +33,6 @@ Finger code (experimental, docs/grammar/finger-code.md; remove the warning once 
 -spares and free layers: vowel-hand thumb; consonant-hand pinky alone, middle + ring + pinky, thumb + index + pinky, thumb + a hooked run; piano 2 + 4 and 3 + 5; white keys; hand location, wrist movement, the face. Candidates: the period, `/y/` turns, tone marks, span fences
 -speech edges (phonology.md#speech-edges): the finger code has its word and sentence rests, but no channel renders the scope-island break (the next beat half a beat late, before and after the island)
 -render parsed doc examples through the finger code (the site player covers typed text only)
-
-save for near end of limit resets:
--review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
--review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete or promoting to grammar?
 
 Dictionary entries (open lexicon / concepts, not the closed list above):
 -unconditional self acceptance
