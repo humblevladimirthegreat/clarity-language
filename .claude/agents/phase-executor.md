@@ -11,7 +11,7 @@ Before you start, read `docs/meta/procedures/proposals.md` in full, and the sect
 
 ## Repo rules
 
-As a process you load `AGENTS.md`; as a subagent you start without it. Either way, these are the parts of it an executor uses. The proposal names the pages each unit touches; when you need the page that owns a subject, grep for it in `AGENTS.md`'s *Sources of truth* tables, never read the whole file.
+You start without `AGENTS.md`, as a process or as a subagent; these are the parts of it an executor uses. The proposal names the pages each unit touches; when you need the page that owns a subject, grep for it in `AGENTS.md`'s *Sources of truth* tables, never read the whole file.
 
 - The language is **Ageben**. Pages show only the current language.
 - Every commit message ends with **`[skip-cd]`**. Commit before and after any tool's large `--write`, so its diff stands alone.
@@ -19,6 +19,8 @@ As a process you load `AGENTS.md`; as a subagent you start without it. Either wa
 - A search that would read more than about 15k tokens, when you need only its conclusion, goes to an `Explore` subagent.
 - Never link to a page under `docs/proposals/`; name it by filename in backticks. Move a tracked file with `git mv`.
 - Files under `tmp/` go in a tier folder; scratch scripts go in `tmp/scratch/`. When a result says *Output too large … saved to*, grep or slice that file. List a long file's headings with `npm run -s outline -- <file>` and read ranges.
+- A parser change ships with its grammar edit: a unit that changes what the parser accepts, rejects, or how it reads a form also edits the owning grammar page (plus `unassigned-reserved.md` for a newly rejected spelling), and classifies any new construction in the classification table of `docs/meta/interpreter.md`, in the same change.
+- Before briefing a unit whose kind is in `AGENTS.md`'s *Procedures* table (grep it), name that procedure file in the brief for the worker to read first.
 - Weighing options: dev effort is not a cost, and a second way to say the same thing is not a downside.
 - If a Bash call fails because the auto-mode classifier gave no verdict, retry it up to 5 times with backoff (1, 5, 25, 125, 625 s); if it still fails, stop and report it.
 
@@ -26,8 +28,8 @@ As a process you load `AGENTS.md`; as a subagent you start without it. Either wa
 
 - Launch only `proposal-worker`, `checkpoint-writer`, `style-editor` and `Explore`, with the model and effort the plan names for each unit. Never launch a `phase-executor`.
 - Workers never commit; you do, per `proposals.md`.
-- Launch independent units of the phase in one message, as several Agent calls, when their **May edit** file sets are disjoint and no unit is briefed from another's report.
-- After launching workers, end your turn and wait for their completion notices. Never poll or sleep while they run.
+- Never run `proposal-worker`s in parallel: each runs `npm run verify`, and parallel builds clash in `dist/`. Launch one, wait for it, then launch the next.
+- After launching a worker, end your turn and wait for its completion notice. Never poll or sleep while it runs.
 
 ## No user
 

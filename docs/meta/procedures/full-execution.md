@@ -11,14 +11,14 @@ How one session carries out a whole proposal, every phase, without the user star
 | **Worker** | `proposal-worker`, `checkpoint-writer`, `style-editor`, `Explore`, started by the executor | one unit, unchanged |
 | **Run reviewer** | a `run-reviewer` subagent (`.claude/agents/run-reviewer.md`) the runner starts once the run ends | the [optimization review](#optimization-review) |
 
-A process executor is a session of its own, so its workers sit one layer below it, and its prompt cache lasts an hour: a worker that runs past five minutes doesn't make it write its context again. It loads `AGENTS.md`, because `claude -p --agent` ignores the agent file's `omitClaudeMd`; its workers and a subagent executor start without it. Process executors are a pilot, open until `full-run-costs.md` decides whether they stay. An agent definition cannot limit which agent types it starts (a type list in its `tools` is ignored), so the agent file names the allowed types.
+A process executor is a session of its own, so its workers sit one layer below it, and its prompt cache lasts an hour: a worker that runs past five minutes doesn't make it write its context again. Like its workers and a subagent executor, it starts without `AGENTS.md`: `claude -p --agent` ignores the agent file's `omitClaudeMd`, so the launcher sets `CLAUDE_CODE_DISABLE_CLAUDE_MDS=1` in its environment. An agent definition cannot limit which agent types it starts (a type list in its `tools` is ignored), so the agent file names the allowed types.
 
 The runner stays lean so that it can last the whole run:
 
 - It reads the proposal's Status line and phase list only (`npm run outline -- <proposal>`, then that range), never the items, diffs, or worker reports.
 - It never edits the proposal or any other file, and never commits.
 - It launches each executor with `npm run phase-exec -- <proposal> <phase>` in a background Bash call, adding `--rest` for the rest of a split phase, and `--model` or `--effort` when the plan names values other than `opus` and `high` for the phase. The launcher gives the process a one-line prompt that names the phase and the staging path for its report, `tmp/state/full-runs/<name>-phase-<N>.md`. The runner then ends its turn and waits for the call's completion notice, never polling or sleeping.
-- When the process exits, the launcher prints one line, `phase-exec: <report path> exit <code> session <uuid>`, or `phase-exec: FAIL report missing …` with the same fields, and appends the phase to `tmp/state/full-runs.jsonl`. The process's own output goes to `tmp/logs/phase-exec-<name>-phase-<N>.log`, which the runner never reads whole.
+- When the process starts, the launcher appends the phase to `tmp/state/full-runs.jsonl` with its session id and start time, so a running or crashed executor's session is on record; at exit it adds the end time, exit code and report path to that line. It then prints one line, `phase-exec: <report path> exit <code> session <uuid>`, or `phase-exec: FAIL report missing …` with the same fields. The process's own output goes to `tmp/logs/phase-exec-<name>-phase-<N>.log`, which the runner never reads whole.
 
 <a id="subagent-fallback"></a>
 **Subagent fallback.** The runner starts the executor as a subagent instead when the plan names a subagent executor for the phase, or when the launcher fails without running an executor: `claude` would not start (`FAIL report missing …` with `exit 127`; the log says why), or the launcher itself failed in a way the runner can't fix. It launches it with `subagent_type: "phase-executor"`, `model: "opus"` and `effort: "high"`, unless the plan names other values, and a one-line prompt: *Carry out phase N of `name.md` as a full-run phase executor.* The subagent returns its report instead of staging it. Its workers sit two layers below the runner, inside Claude Code's default nesting limit of three.
@@ -55,7 +55,7 @@ The executor reads [proposals.md](proposals.md) in full and runs the phase as it
 - **Stop and alert.** A [stop-and-alert](proposals.md#stop-and-alert) finding still stops the run. The executor carries out the steps there up to telling the user, then returns `STOPPED`, with the finding and the options it sees in the report.
 - **End of phase.** After the phase's last commit and the consolidated proposal's commit, it writes the report to the staging path its prompt names, as its last act, and also returns it, instead of naming the next prompt. A subagent executor, whose prompt names no path, only returns it. When it ends a phase early on budget ([phases](proposals.md#phases)), it reports `SPLIT`, and the runner starts a fresh executor for the rest (`--rest`), after the usage gate.
 - **Open decisions.** It settles the autonomous and review-later ones, and skips past the blocking ones ([agent decisions](#agent-decisions)).
-- **Parallel units.** It launches independent units of the phase in one message when their **May edit** file sets are disjoint and no unit is briefed from another's report. After launching workers it ends its turn and waits for their completion notices, never polling or sleeping.
+- **One `proposal-worker` at a time.** It never runs `proposal-worker`s in parallel ([proposals.md](proposals.md#running-with-subagents)). After launching a worker it ends its turn and waits for its completion notice, never polling or sleeping.
 - **Reading the proposal.** It lists the proposal's headings (`npm run -s outline`) and reads from the top to `## Background`, opening Background only when a unit needs it.
 
 ## Agent decisions
@@ -103,7 +103,7 @@ The runner:
    - the blocking decisions still open
    - what the run cost in both windows (`--deltas`)
    - the optimization idea's path and its findings in one line each, or that nothing qualified
-   - the command for the per-phase token breakdown, `npm run token-report -- --session <ids>`, with the runner's session id and each executor's from `tmp/state/full-runs.jsonl`, comma-separated; it nests each executor's workers under it with a subtotal
+   - the command for the per-phase token breakdown, `npm run token-report -- --session <ids>`, with the runner's session id and each executor's from `tmp/state/full-runs.jsonl`, comma-separated; it nests each executor's workers under it with a subtotal; it also lists each transcript's cache writes by kind (`w5m` / `w1h`) and its longest gap between calls, flagged over 5 minutes
 
 ## Optimization review
 <a id="optimization-review"></a>

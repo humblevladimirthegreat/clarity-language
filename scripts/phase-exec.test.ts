@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { buildPrompt, claudeArgs, parseArgs, reportRel, resultLine } from "./phase-exec.ts";
+import { mkdtempSync, readFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+
+import { buildPrompt, claudeArgs, claudeEnv, parseArgs, recordEnd, recordStart, reportRel, resultLine } from "./phase-exec.ts";
 
 const UUID = "00000000-0000-4000-8000-000000000000";
 
@@ -39,8 +43,27 @@ describe("phase-exec arguments", () => {
     assert.deepEqual(flags.slice(2), ["--agent", "phase-executor", "--model", "opus", "--effort", "high", "--permission-mode", "auto", "--strict-mcp-config", "--session-id", UUID]);
   });
 
+  it("starts the process without AGENTS.md, keeping the rest of the environment", () => {
+    assert.deepEqual(claudeEnv({ PATH: "/bin", HOME: "/h" }), { PATH: "/bin", HOME: "/h", CLAUDE_CODE_DISABLE_CLAUDE_MDS: "1" });
+  });
+
   it("prints one result line, marked FAIL when the report is missing", () => {
     assert.equal(resultLine("tmp/state/full-runs/x-phase-1.md", true, 0, UUID), `phase-exec: tmp/state/full-runs/x-phase-1.md exit 0 session ${UUID}`);
     assert.equal(resultLine("tmp/state/full-runs/x-phase-1.md", false, 0, UUID), `phase-exec: FAIL report missing tmp/state/full-runs/x-phase-1.md exit 0 session ${UUID}`);
+  });
+});
+
+describe("phase-exec run record", () => {
+  const read = (f: string) => readFileSync(f, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l));
+  it("writes the start line, then rewrites only that session's line with the exit fields", () => {
+    const f = join(mkdtempSync(join(tmpdir(), "phase-exec-")), "full-runs.jsonl");
+    recordStart(f, { proposal: "a.md", phase: 1, session: "s1", start: "t1" });
+    recordStart(f, { proposal: "a.md", phase: 2, session: "s2", start: "t2" });
+    assert.deepEqual(read(f)[0], { proposal: "a.md", phase: 1, session: "s1", start: "t1" });
+    recordEnd(f, "s1", { end: "t3", exit: 0, report: "r.md" });
+    const lines = read(f);
+    assert.equal(lines.length, 2);
+    assert.deepEqual(lines[0], { proposal: "a.md", phase: 1, session: "s1", start: "t1", end: "t3", exit: 0, report: "r.md" });
+    assert.deepEqual(lines[1], { proposal: "a.md", phase: 2, session: "s2", start: "t2" });
   });
 });

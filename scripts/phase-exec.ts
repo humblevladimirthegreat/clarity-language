@@ -8,17 +8,19 @@
 //   --effort    the executor's effort: low, medium, high, xhigh or max (default high)
 //
 // The process runs `--agent phase-executor` with `--permission-mode auto`, `--strict-mcp-config` and a
-// session id picked here. The executor writes its phase report to tmp/state/full-runs/<name>-phase-<N>.md;
-// the process's own output goes to tmp/logs/phase-exec-<name>-phase-<N>.log. When the process exits, one
-// line is appended to tmp/state/full-runs.jsonl (proposal, phase, rest, session, start, end, exit) and one
-// result line is printed:
+// session id picked here, with CLAUDE_CODE_DISABLE_CLAUDE_MDS=1 in its environment so it starts without
+// AGENTS.md (`claude -p --agent` ignores the agent file's `omitClaudeMd`). The executor writes its phase report to tmp/state/full-runs/<name>-phase-<N>.md;
+// the process's own output goes to tmp/logs/phase-exec-<name>-phase-<N>.log. When the process starts, one
+// line is appended to tmp/state/full-runs.jsonl (proposal, phase, rest, session, start); at exit that line is
+// rewritten in place with end and exit added (a launcher that died keeps the start fields only). One
+// result line is printed at exit:
 //   phase-exec: <report path> exit <code> session <uuid>
 //   phase-exec: FAIL report missing <report path> exit <code> session <uuid>
 // The launcher exits with the process's exit code, or 1 when the report is missing or was not written
 // during this run (a report older than the start counts as missing).
 import { spawn } from "node:child_process";
 import { randomUUID } from "node:crypto";
-import { appendFileSync, closeSync, existsSync, mkdirSync, openSync, statSync } from "node:fs";
+import { appendFileSync, closeSync, existsSync, mkdirSync, openSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -87,6 +89,36 @@ export function claudeArgs(args: PhaseExecArgs, session: string): string[] {
   ];
 }
 
+/** The executor process's environment: this one's, with AGENTS.md and CLAUDE.md files turned off. */
+export function claudeEnv(env: NodeJS.ProcessEnv = process.env): NodeJS.ProcessEnv {
+  return { ...env, CLAUDE_CODE_DISABLE_CLAUDE_MDS: "1" };
+}
+
+/** Appends the start line of a run to the JSONL file. */
+export function recordStart(file: string, entry: Record<string, unknown>): void {
+  appendFileSync(file, `${JSON.stringify(entry)}\n`);
+}
+
+/** Rewrites the line of one session in place, adding the exit fields; appends the line when it is missing. */
+export function recordEnd(file: string, session: string, fields: Record<string, unknown>): void {
+  const lines = existsSync(file) ? readFileSync(file, "utf8").split("\n").filter(Boolean) : [];
+  let found = false;
+  const out = lines.map((l) => {
+    try {
+      const o = JSON.parse(l) as Record<string, unknown>;
+      if (o.session === session) {
+        found = true;
+        return JSON.stringify({ ...o, ...fields });
+      }
+    } catch {
+      /* keep a line that is not JSON as it is */
+    }
+    return l;
+  });
+  if (!found) out.push(JSON.stringify({ session, ...fields }));
+  writeFileSync(file, `${out.join("\n")}\n`);
+}
+
 /** The result line printed when the process exits. */
 export function resultLine(report: string, ok: boolean, exit: number, session: string): string {
   return `phase-exec: ${ok ? "" : "FAIL report missing "}${report} exit ${exit} session ${session}`;
@@ -116,7 +148,9 @@ async function main(): Promise<void> {
   mkdirSync(dirname(log), { recursive: true });
   const logFd = openSync(log, "w");
   const start = new Date();
-  const child = spawn("claude", claudeArgs(args, session), { cwd: REPO_ROOT, stdio: ["ignore", logFd, logFd] });
+  const runs = tmpPath("state", "full-runs.jsonl");
+  recordStart(runs, { proposal: `${args.name}.md`, phase: args.phase, rest: args.rest, session, start: start.toISOString() });
+  const child = spawn("claude", claudeArgs(args, session), { cwd: REPO_ROOT, env: claudeEnv(), stdio: ["ignore", logFd, logFd] });
   for (const signal of ["SIGINT", "SIGTERM"] as const) process.on(signal, () => child.kill(signal));
   const exit = await new Promise<number>((resolve) => {
     child.on("error", (e) => {
@@ -128,8 +162,7 @@ async function main(): Promise<void> {
   closeSync(logFd);
   const end = new Date();
   const ok = existsSync(report) && statSync(report).mtimeMs >= start.getTime();
-  const entry = { proposal: `${args.name}.md`, phase: args.phase, rest: args.rest, session, start: start.toISOString(), end: end.toISOString(), exit };
-  appendFileSync(tmpPath("state", "full-runs.jsonl"), `${JSON.stringify(entry)}\n`);
+  recordEnd(runs, session, { end: end.toISOString(), exit, report: reportRel(args.name, args.phase) });
   console.log(resultLine(reportRel(args.name, args.phase), ok, exit, session));
   process.exit(ok ? exit : exit || 1);
 }

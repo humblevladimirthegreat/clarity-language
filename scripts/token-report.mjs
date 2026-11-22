@@ -196,6 +196,7 @@ function analyse(t) {
   const usage = new Map();
   const order = [];
   const tools = new Map();
+  const stamps = new Map(); // message id -> first timestamp (ms)
   const items = []; // { kind, tok, at, label, big }
   const callList = []; // { n, kind, name, input, msgId, inIt, outIt }
   const events = []; // check / edit / log-peek / src-grep, in order
@@ -211,6 +212,7 @@ function analyse(t) {
     if (o.type === "assistant" && o.message?.id) {
       if (!usage.has(o.message.id)) order.push(o.message.id);
       usage.set(o.message.id, o.message.usage);
+      if (!stamps.has(o.message.id) && o.timestamp) stamps.set(o.message.id, Date.parse(o.timestamp));
       for (const c of o.message.content ?? []) {
         if (c.type === "tool_use") {
           const kind = kindOf(c.name, c.input);
@@ -304,6 +306,11 @@ function analyse(t) {
     if (failing && !editedSinceFail && e.type === "log peek") loop.logPeeks++;
     if (failing && !editedSinceFail && e.type === "src grep") loop.srcGreps++;
   }
+  const w5m = calls.reduce((a, u) => a + (u.cache_creation?.ephemeral_5m_input_tokens ?? 0), 0);
+  const w1h = calls.reduce((a, u) => a + (u.cache_creation?.ephemeral_1h_input_tokens ?? 0), 0);
+  const times = order.map((id) => stamps.get(id)).filter((x) => Number.isFinite(x));
+  let gap = 0;
+  for (let i = 1; i < times.length; i++) gap = Math.max(gap, times[i] - times[i - 1]);
   const ctxs = calls.map(context);
   const toolCalls = callList.map((r) => ({
     n: r.n,
@@ -315,7 +322,7 @@ function analyse(t) {
     carry: (r.inIt?.carry ?? 0) + (r.outIt?.carry ?? 0),
     label: callLabel(r.name, r.input),
   }));
-  return { ...t, lines: undefined, toolCalls, n, cost, comp, items, loop, skills, listing, ctx0: ctxs[0] ?? 0, ctxMax: Math.max(0, ...ctxs) };
+  return { ...t, lines: undefined, toolCalls, n, cost, comp, w5m, w1h, gap, items, loop, skills, listing, ctx0: ctxs[0] ?? 0, ctxMax: Math.max(0, ...ctxs) };
 }
 
 // ---------- report ----------
@@ -515,4 +522,12 @@ if (opts.calls) {
       console.log(`    ${String(c.n).padStart(3)} ${c.kind.padEnd(26)} ${k(c.tok).padStart(5)} ${k(c.ctx).padStart(5)} ${k(c.carry).padStart(5)} ${pct(c.carry, x.cost).padStart(6)}  ${c.label}`);
     }
   }
+}
+
+console.log("\n## Cache writes and longest gap between calls, per transcript (a gap over 5 min outlives a 5m cache entry)");
+const tok = (x) => (x >= 1000 ? `${(x / 1000).toFixed(1)}k` : String(x));
+const gapText = (ms) => `${(ms / 60000).toFixed(1)} min${ms > 300_000 ? " (over 5 min)" : ""}`;
+for (const x of [...mains, ...subs.sort((a, b) => (a.start < b.start ? -1 : 1))]) {
+  if (!x.w5m && !x.w1h) continue;
+  console.log(`  ${x.session.slice(0, 8)} ${x.sub ? "sub " : "main"} ${x.start.slice(0, 16).replace("T", " ")}  w5m ${tok(x.w5m)} / w1h ${tok(x.w1h)}  longest gap ${gapText(x.gap)}${x.sub ? "  " + (x.desc || x.type) : ""}`);
 }
