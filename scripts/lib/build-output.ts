@@ -117,6 +117,23 @@ export function parseTestFailures(output: string, root = process.cwd()): TestFai
   return failures;
 }
 
+/** The first assertion line of each failing test, by test name (the first failure wins when a name repeats). */
+export function testAssertions(output: string, root = process.cwd()): Map<string, string> {
+  const out = new Map<string, string>();
+  for (const failure of parseTestFailures(output, root)) {
+    if (failure.message.length && !out.has(failure.name)) out.set(failure.name, failure.message[0]!);
+  }
+  return out;
+}
+
+/** Error keys, each `test | name` key followed by its first assertion line (indented, already clipped) when the log has one. */
+export function keysWithAssertions(keys: readonly string[], assertions: ReadonlyMap<string, string>): string[] {
+  return keys.flatMap((key) => {
+    const message = key.startsWith("test | ") ? assertions.get(key.slice("test | ".length)) : undefined;
+    return message ? [key, `    ${message}`] : [key];
+  });
+}
+
 /** One block per failing test: `✖ name`, its location, the assertion, and the command that reruns its file. */
 export function testFailureLines(output: string, root = process.cwd()): string[] {
   const failures = parseTestFailures(output, root);

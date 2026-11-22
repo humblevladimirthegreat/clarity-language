@@ -18,6 +18,7 @@ import { join } from "node:path";
 import { allowlistRows } from "../src/lint/checkpoint-inventory.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath, tmpRel } from "../src/tmp-paths.js";
+import { keysWithAssertions, testAssertions } from "./lib/build-output.ts";
 import { compare, jobKeys, jobOf, splitJobs, stripAnsi, type ErrorKey } from "./lib/verify.ts";
 
 const BASELINE = tmpPath("state", "verify-baseline.json");
@@ -57,7 +58,9 @@ function generatePages(): Set<string> {
   );
 }
 
-function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[]; sizeWarnings: string[] } {
+type Run = { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[]; sizeWarnings: string[]; assertions: Map<string, string> };
+
+function run(fast: boolean): Run {
   const blocks = sh("node_modules/.bin/tsx scripts/cheat-sheet-blocks.ts --write");
   rmSync(BUILD_LOG, { force: true });
   const build = sh("node scripts/build.mjs", fast ? { BUILD_SKIP_TEST: "1", BUILD_VERBOSE: "" } : { BUILD_VERBOSE: "" });
@@ -75,13 +78,14 @@ function run(fast: boolean): { keys: ErrorKey[]; ran: Set<string>; failedJobs: s
   }
   // The source-size lint only warns; show its lines so a file past the ceiling is seen on a passing run.
   const sizeWarnings = jobs.filter((j) => j.label === "lint source size").flatMap((j) => j.lines.filter((l) => l.startsWith("warning: ")));
-  return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label), sizeWarnings };
+  const assertions = testAssertions(buildOut);
+  return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label), sizeWarnings, assertions };
 }
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const started = Date.now();
-  const { keys, ran, failedJobs, sizeWarnings } = run(options.fast);
+  const { keys, ran, failedJobs, sizeWarnings, assertions } = run(options.fast);
   const secs = `${Math.round((Date.now() - started) / 1000)}s`;
   const failedNote = failedJobs.length ? `failed jobs: ${failedJobs.join(", ")}` : "every job passed";
 
@@ -114,11 +118,16 @@ function main(): void {
   const byJob = new Map<string, ErrorKey[]>();
   for (const key of result.fresh) byJob.set(jobOf(key), [...(byJob.get(jobOf(key)) ?? []), key]);
   let shown = 0;
+  let lines = 0;
   for (const [, list] of byJob) {
     for (const key of list) {
-      if (shown >= SHOW) break;
-      console.log(`  ${key.length > 220 ? `${key.slice(0, 217)}...` : key}`);
+      if (lines >= SHOW) break;
+      // A test key shows its first assertion line under it; that line counts toward SHOW.
+      const [head, ...assertion] = keysWithAssertions([key], assertions);
+      console.log(`  ${head!.length > 220 ? `${head!.slice(0, 217)}...` : head}`);
+      for (const line of assertion) console.log(`  ${line}`);
       shown += 1;
+      lines += 1 + assertion.length;
     }
   }
   if (result.fresh.length > shown) console.log(`  ... ${result.fresh.length - shown} more new; see ${LAST_LOG_REL}`);

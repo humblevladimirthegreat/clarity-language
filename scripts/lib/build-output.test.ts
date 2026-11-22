@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { ASSERTION_LIMIT, LINE_WIDTH, buildFooter, jobFooter, parseTestFailures, testFailureLines } from "./build-output.ts";
+import { ASSERTION_LIMIT, LINE_WIDTH, buildFooter, jobFooter, keysWithAssertions, parseTestFailures, testAssertions, testFailureLines } from "./build-output.ts";
 import { jobKeys, splitJobs } from "./verify.ts";
 
 const LOG = "tmp/logs/build-last.log";
@@ -167,5 +167,30 @@ describe("buildFooter", () => {
     assert.ok(keys.includes("lint ageben | docs/grammar/intermediate/try.md | practice-item  (1 English → Ageben item(s); this band teaches 1 sections, use 3–6)"));
     assert.ok(keys.includes("test | fails deep"));
     assert.ok(keys.includes("test | demo"));
+  });
+});
+
+describe("assertions under verify's test keys", () => {
+  const assertions = testAssertions(TEST_OUT, ROOT);
+
+  it("maps each failing test to its first assertion line", () => {
+    assert.equal(assertions.get("fails deep"), "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:");
+    assert.equal(assertions.get("top-level fail"), "AssertionError [ERR_ASSERTION]: one is not two");
+  });
+
+  it("shows the message under its test key and leaves other keys alone", () => {
+    const keys = ["lint ageben | docs/a.md | bad", "test | top-level fail", "test | no such test"];
+    assert.deepEqual(keysWithAssertions(keys, assertions), [
+      "lint ageben | docs/a.md | bad",
+      "test | top-level fail",
+      "    AssertionError [ERR_ASSERTION]: one is not two",
+      "test | no such test",
+    ]);
+  });
+
+  it("clips a long message", () => {
+    const long = TEST_OUT.replace("one is not two", "x".repeat(LINE_WIDTH + 50));
+    const [, message] = keysWithAssertions(["test | top-level fail"], testAssertions(long, ROOT));
+    assert.match(message!, /… \(\+\d+ chars\)$/);
   });
 });
