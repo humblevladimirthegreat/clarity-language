@@ -12,30 +12,47 @@ Inbound links: npm run page-refs -- claritish/what-a-feeling-wants.md
 
 ## The gap {#gap}
 
-An English emotion word such as *anxious*, *angry*, or *proud* names the feeling and stops there. *I'm so angry* does not say which need went unmet, or what the anger urges you to do. *It made me anxious* can send you off to hide before you have noticed that hiding is what you want. Ageben names the need and the urge in one word, so you can see the urge before you follow it.
+An English emotion word such as *anxious*, *angry*, or *proud* names the feeling and says nothing more about it. *I'm so angry* does not say which need went unmet, or what the anger makes you want to do. *It made me anxious* can send you off to hide before you have noticed that hiding is what you want. Ageben names the need and the urge in one word, so you can name the urge before you follow it.
 
 ## The forms {#forms}
+<!-- Agent summary: feeling word = thanks/sorry word (`th` + sake + `tha` met / `thu` unmet + ending) + urge vowel + last `-m`. Middle ending keeps its thanks/sorry meaning (how long the payoff or harm lasts); this lesson uses the default `-m`. Last `-m` = how long the feeling lasts, left open. Placement: after the English clause the feeling is about; alone, with no clause = how you feel right now. Can't tell which sake → `uda` (`thudathumum`); naming the sake changes nothing else (`thunathumum`). Nothing makes you want to move → urge `a`. -->
 
-A **feeling word** is a thanks or sorry word from Thanks and sorry with two letters added. Keep the whole thanks or sorry word, add one vowel for the urge, and end with `-m`. The ending from Thanks and sorry stays in the middle and keeps its meaning. The last `-m` leaves open how long the feeling lasts.
+A **feeling word** is one Ageben word that names a need and the **urge**, which is what the feeling makes you want to do. You build it from a thanks or sorry word from *Thanks and sorry*. That word starts with `th`, names a sake (the need involved), says with `tha` that the sake was met or with `thu` that it went unmet, and ends with `-m`. To make a feeling word, keep that whole word, add one vowel for the urge, and end with another `-m`.
 
 | `thuwa` | `tha` | `m` | `a` | `m` |
 |---------|-------|-----|-----|-----|
 | competence | met | default ending | stay in it (urge) | how long: open |
 
-| Urge | It pulls you to | Belongs when |
-|------|-----------------|--------------|
+Read the table from left to right. `thuwatham` is the thanks word for competence met, *it worked; I can do this*. The urge `a` adds *I want to stay in it*, and the last `-m` ends the word, so `thuwathamam` says *I pulled it off, and I want to savor it*.
+
+The ending from *Thanks and sorry*, which says how long the payoff or the harm lasts, now sits in the middle of the word and keeps that meaning. Every feeling word in this lesson keeps it at the default, `-m`. The last `-m` is about the feeling itself, and it leaves open how long the feeling lasts.
+
+Put the feeling word after the English clause the feeling is about, as in *We shipped the draft `thuwathamam`*. A feeling word on its own, with no clause, says how you feel right now.
+
+When you can't tell which need is involved, use the unspecified sake `uda`. So `thudathumum` says *something is off, and I want to get away*. Once you can tell which need it is, put that sake in place of `uda` and change nothing else: `thunathumum` says *my say was taken, and I want to get away*. The urge has a ready answer too, because when nothing makes you want to move, the urge is `a`.
+
+## The four urges {#urges}
+<!-- Agent summary: urge vowel (table): `a` stay in it (*in*), `e` act on someone (*at*), `o` do something for someone (*for*), `u` move off (*from*). `a` points at no one; `e` `o` `u` move you relative to someone or something. *Belongs when* lists times each fits; no urge is the right one to have. Two urges mix → name the stronger one. -->
+
+| Urge | It makes you want to | Belongs when |
+|------|----------------------|--------------|
 | `a` | stay in it: savor it, sit with it | it is a good moment, or a loss that needs time |
 | `e` | act on someone: confront, thank, press for | something can be said or done to someone |
 | `o` | do something for someone: give back, make amends | you were helped, or you caused a cost |
 | `u` | move off: avoid, leave, hide | the danger is real, or you need room |
 
-The four urges are a menu; you don't need to memorize it.
+Each urge goes with one small English word that says which way the feeling moves you: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The words also sort the four into two groups. `a` keeps you where you are, in the feeling, so it points at no one. The other three move you in relation to someone or something: `e` acts at them, `o` does something for them, and `u` moves away from them. So to pick the vowel, first ask whether the feeling makes you want to move at all, and if it does, which of those three ways.
 
-Put the feeling word after the English clause the feeling is about, like any other drop-in. On its own, with no clause, it says how you feel right now.
+The same event can bring different urges, and the vowel says which one you feel:
 
-When you can't tell which need it is, use the unspecified sake `uda`: `thudathumum` says *something is off, and I want to get away*. When you feel no urge to move, use `a`.
+> My friend remembered my birthday `thawethamam`.  
+> My friend remembered my birthday `thawethamem`.  
+> I forgot to pick her up `thewathumom`.  
+> I forgot to pick her up `thewathumum`.
 
-No urge is the right one to have; each has times when it belongs. The urge is not a plan, either: naming it leaves you free to follow it or not. When two urges mix, name the stronger one. When the English emotion word already says all you want to say, leave it in English.
+Both birthday sentences say you feel connected. With `thawethamam` you want to stay in that feeling, and with `thawethamem` you want to act on someone, here by thanking your friend. Both of the last two say you cost her something. `thewathumom` says you want to make it right, and `thewathumum` says you want to get away, for example by avoiding her.
+
+No urge is the right one to have. Each has times when it belongs, and the *Belongs when* column names some of them: wanting to move off fits when the danger is real. When two urges mix, as when you want both to thank your friend and to sit with the feeling, name the stronger one.
 
 ## Examples {#examples}
 
@@ -53,7 +70,32 @@ No urge is the right one to have; each has times when it belongs. The urge is no
 | `thawethamam` | I feel connected, and I want to stay in it | *touched* | relatedness met; stay in it |
 | `thudathumum` | something is off, and I want to get away | *uneasy* | a sake unmet; move off |
 
-`thunathumem` points the anger at someone, so the next question is what you would say to them. `thewathumom` turns *guilty* into an urge to make amends, and the sake says what to make up: she is not better off because of you. `thudathumum` names an urge to leave before you know which need is behind it.
+`thunathumem` says you want to take it up with someone, and its sake says what you would ask for: a say in your own work. Where *guilty* names only the feeling, `thewathumom` names the cost: she is not better off because of you, and you want to make that right. `thudathumum` names an urge to get away before you know which need is behind it.
+
+## Telling a feeling word apart {#telling-apart}
+<!-- Agent summary: near misses. The urge is a want, not a decision: naming it leaves you free to follow it or not. Keep the English emotion word when it is all you can tell (no need, no urge) or all you want to say. After a clause the feeling is about that clause's event; alone it is about nothing you can point to, and the clause can come later. -->
+
+Three things are easily confused with what a feeling word says, and each is handled differently.
+
+### An urge or a plan {#urge-or-plan}
+
+The urge is what the feeling makes you want to do, and naming it leaves you free to follow it or not. Compare these two:
+
+> He rewrote my memo, and I'm going to talk to him.  
+> He rewrote my memo `thunathumem`.
+
+The first sentence says what you will do. The second says that your say was taken and that you want to take it up with someone. After saying it, you can still decide to let the memo go, because the word named a want and did not commit you to anything.
+
+### A feeling word or the English word {#feeling-or-emotion-word}
+
+*He rewrote my memo, and I'm angry* names the feeling. *He rewrote my memo `thunathumem`* names the need behind it and what the anger makes you want to do. So use the feeling word when you can tell those two things. When all you can tell is the emotion word, keep the English word, which says as much as you know. Keep it as well when the English word already says all you want to say.
+
+### With a clause or alone {#clause-or-alone}
+
+> The meeting ran two hours over `thudathumum`.  
+> `thudathumum`.
+
+After a clause, the feeling is about what the clause says happened, here the long meeting. On its own, the same word says how you feel right now, and that the feeling is about nothing you can point to. So you can say it before you know the cause, and add the clause once you find it.
 
 ## Practice {#practice}
 
@@ -65,16 +107,28 @@ Build the feeling word from the parts in the note.
 My friend remembered my favorite song `thawethamam`.
 :::
 
-**2.** *The meeting ran two hours over.* (my say went unmet, default ending; I want to take it up with someone)
+**2.** *My friend remembered my favorite song.* (connection met, default ending; I want to thank someone)
+
+::: details Show answer
+My friend remembered my favorite song `thawethamem`.
+:::
+
+**3.** *The meeting ran two hours over.* (my say went unmet, default ending; I want to take it up with someone)
 
 ::: details Show answer
 The meeting ran two hours over `thunathumem`.
 :::
 
-**3.** How you feel right now, with no clause. (something is off, and I can't tell which need; I want to get away)
+**4.** *The meeting ran two hours over.* (my say went unmet, default ending; I want to get away)
+
+::: details Show answer
+The meeting ran two hours over `thunathumum`.
+:::
+
+**5.** How you feel right now, with no clause. (something is off, and I can't tell which need; I want to get away)
 
 ::: details Show answer
 `thudathumum`.
 :::
 
-<!-- Source (editors): how-you-feel.md#feeling-word, how-you-feel.md#urges, how-you-feel.md#feeling-no-object. -->
+<!-- Source (editors): how-you-feel.md#feeling-word, how-you-feel.md#urges, how-you-feel.md#urge-landmark, how-you-feel.md#feeling-no-object. -->
