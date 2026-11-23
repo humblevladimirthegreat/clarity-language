@@ -4,7 +4,7 @@
 
 Tone gets lost in text. *You're the worst* could be a joke or a fight, and the reader has to guess. An Ageben tone mark, a symbol written before the words, says how you mean them.
 
-## The marks {#marks}
+## The marks {#forms}
 
 | Mark | Meaning |
 |------|---------|
