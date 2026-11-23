@@ -16,6 +16,7 @@ These are the rules this page adds. *Build* means `npm run build` checks it. *Ju
 | Every italic phrase in a cued lesson's gap raises a cue or is exempt | Build, fails | [Editor cues and cards](#editor-cards) |
 | Every drop-in in a lesson table is on the cheat sheet, and the reverse | Build, fails | [Cheat sheet](grammar-docs.md#claritish-track) |
 | Each practice answer, and each example in *Labels* and *What a feeling wants*, reads as the editor places its drop-in | Build, fails | [Examples and practice](#examples-practice) |
+| Before renaming a heading, reshaping a table, or rewording practice, read the page's read-by block | Judgment | [Read-by blocks](grammar-docs.md#read-by-blocks) |
 | A feature has the grammar's name, glossed in the sentence that first uses it | Judgment | [Use the grammar's terms](#grammar-terms) |
 | No grammar machinery the reader cannot use yet | Judgment | [Use the grammar's terms](#grammar-terms) |
 | The gap names a thinking trap, and each of its sentences reads alone | Judgment | [The gap](#the-gap) |

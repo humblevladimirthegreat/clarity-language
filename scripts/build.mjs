@@ -111,6 +111,7 @@ const jobs = [
   run("lint json format", bin("tsx"), ["scripts/format-json.ts", "--check"]),
   run("lint game", bin("tsx"), ["scripts/lint-game.ts"]),
   run("cheat sheet blocks", bin("tsx"), ["scripts/cheat-sheet-blocks.ts"]),
+  run("page readers", bin("tsx"), ["scripts/page-readers.ts"]),
   run("lint ageben", bin("tsx"), ["scripts/lint-ageben-docs.ts"]),
   run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"]),
   run("docs:publish", "npm", ["run", "-s", "docs:publish"]),

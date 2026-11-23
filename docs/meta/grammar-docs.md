@@ -570,6 +570,84 @@ Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginne
 
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 
+## Read-by blocks
+<a id="read-by-blocks"></a>
+
+Code reads some parts of a grammar page: a lesson's H1, its `#gap` and `#forms` sections, its tables and practice, the cheat-sheet markers on a stage page. Data files name sections by id. Each page under `docs/grammar/` says which, in a `<!-- read-by … -->` comment after the frontmatter. Before you rename a heading id, reshape a table, or reword practice, read the page's block.
+
+| Line | What it lists |
+|------|---------------|
+| `Page shape read by code:` | One line per contract in [`src/page-contracts.ts`](../../src/page-contracts.ts) that covers the page: the part (H1, a section id, tables, practice, markers), what it must hold, and the files that read it |
+| `Sections named by data:` | One line per section id, with a count per registry (construction homes, interpreter rows, closed-word and overlay anchors, and so on) |
+| `Named by data:` | On a Claritish lesson, its cues, flows, and cheat-sheet rows |
+| `Inbound links:` | The command that lists every link into the page |
+
+Nothing in a block is typed by hand. `npm run page-readers -- --write` writes every block, and the build's `page readers` step fails when:
+
+- a block is missing or stale;
+- a registry anchor resolves to no id on its page;
+- a page a contract covers lacks the contract's part (a named id, a table, a `### Practice`);
+- a new file in `src/`, `scripts/` or `docs/grammar/.vitepress/` names a grammar path in code, but neither imports a contract nor is on the generator's whole-site list.
+
+A contract that covers every stage page, or every page, is listed once, in the block below, not in each page's block. Tools that read every page alike (the lints, `retie-docs`, `find.mjs`, the movers) are on the generator's whole-site list.
+
+<!-- read-by-site (generated: npm run page-readers -- --write; do not edit) -->
+
+Page shape read on every page or every stage page:
+
+- H1 (every page): the first H1 is the page's title in the grammar map (the filename when there is none) (`scripts/grammar-map.ts`)
+- H3 headings (stage pages): each H3 heading outside code fences, Practice aside, is listed as a section in the grammar map (`scripts/grammar-map.ts`)
+- cheat-sheet markers (stage pages, where present; counted in each page's block): each marker names a sheet id and sits right before a table whose forms are on that sheet (`scripts/lint-cheat-sheets.ts`)
+
+Tools that read or rewrite every page alike, with no page contract:
+
+- `scripts/cheat-sheet-blocks.ts`
+- `scripts/checkpoint-pack.mjs`
+- `scripts/core-vocabulary.ts`
+- `scripts/english-helper-eval.ts`
+- `scripts/english-helper-recall.ts`
+- `scripts/free-english-diff-guard.ts`
+- `scripts/free-english-review.ts`
+- `scripts/lib/grammar-git.ts`
+- `scripts/lib/ipa-clips.ts`
+- `scripts/lib/link-rewrite.ts`
+- `scripts/lib/llms-txt.ts`
+- `scripts/lib/page-readers.ts`
+- `scripts/lint-ageben-docs.ts`
+- `scripts/lint-anchors.ts`
+- `scripts/lint-cheat-sheet-print.ts`
+- `scripts/lint-forward-links.ts`
+- `scripts/lint-md-balance.mjs`
+- `scripts/lint-prose-style.ts`
+- `scripts/lint-sidebar-pages.ts`
+- `scripts/llm-eval.ts`
+- `scripts/move-heading.ts`
+- `scripts/pad-exercise-spoiler-blanks.ts`
+- `scripts/page-lines.ts`
+- `scripts/page-readers.ts`
+- `scripts/peel-band.ts`
+- `scripts/peel-headings.ts`
+- `scripts/plan-units.ts`
+- `scripts/regloss-docs.ts`
+- `scripts/rename-language.ts`
+- `scripts/retarget-id.ts`
+- `scripts/retie-docs.ts`
+- `src/find-english/cli.ts`
+- `src/find/entries-cache.ts`
+- `src/find/pass.ts`
+- `src/flashcards.ts`
+- `src/game/build.ts`
+- `src/grammar-check/corpus.ts`
+- `src/interpret/accounting-walk.ts`
+- `src/parse/llm-examples.ts`
+- `src/repo-paths.ts`
+
+<!-- /read-by-site -->
+
+**Inbound links.** `npm run page-refs -- PAGE [--id ID]` lists every link into a page, or into one id on it, with `file:line` and the text around it. PAGE is the path under `docs/grammar/`: `clause.md`, `claritish/feelings.md`, `cheat-sheets/to-english.md`. Use it instead of grep; `npm run retarget-id -- --page` takes the same page keys and rewrites the links.
+
+**Anchor check.** `lint anchors` in the build (alone: `npm run lint:anchors`) fails on a link whose `#id` is not on the target page. It skips links inside inline code and fenced blocks. A link into a page outside `docs/grammar/` also passes when the id matches GitHub's slug of a heading there.
+
 ## Markdown hygiene
 <a id="markdown-hygiene"></a>
 
