@@ -65,7 +65,8 @@
     "sweep": "tsx scripts/sweep.ts",
     "class-row": "tsx scripts/class-row.ts",
     "deps": "tsx scripts/deps.ts",
-    "move-decl": "tsx scripts/move-decl.ts"
+    "move-decl": "tsx scripts/move-decl.ts",
+    "page-readers": "tsx scripts/page-readers.ts"
   },
   "engines": {
     "node": ">=24"

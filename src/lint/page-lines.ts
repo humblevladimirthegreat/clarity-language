@@ -8,6 +8,17 @@ import { PRACTICE_TITLE_RE, practiceRanges } from "./practice-sections.js";
 
 const SEE_ALSO_RE = /^## See also\b/i;
 
+/** Opens the generated read-by block (scripts/page-readers.ts), which line counts leave out. */
+export const READ_BY_OPEN = "<!-- read-by";
+
+/** Lines of the read-by block placed before the H1, with the blank line that sets it off; 0 without one. */
+export function readByLines(lines: readonly string[]): number {
+  const start = lines.findIndex((l) => l.startsWith(READ_BY_OPEN));
+  if (start < 0 || lines.slice(0, start).some((l) => /^#\s/.test(l))) return 0;
+  const end = lines.indexOf("-->", start);
+  return end < 0 ? 0 : end - start + 2;
+}
+
 export type HeadingLines = {
   id: string;
   title: string;
@@ -65,9 +76,10 @@ export function countPageLines(markdown: string): PageLineCount {
   }
   const practiceLines = covered(practice);
   const seeAlsoLines = covered(seeAlso);
+  const total = lines.length - readByLines(lines);
   return {
-    lines: lines.length,
-    teach: lines.length - practiceLines - seeAlsoLines,
+    lines: total,
+    teach: total - practiceLines - seeAlsoLines,
     practice: practiceLines,
     seeAlso: seeAlsoLines,
     S: taught.length,
