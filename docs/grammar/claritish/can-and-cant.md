@@ -27,13 +27,13 @@ The hyphen works the way it does in *Labels*, where a suffix like `-thu` goes on
 Not every English *can* is about what someone is able to do. When *can* asks for permission, as in *can I sit here?*, or makes a request, as in *can you pass the salt?*, leave it as it is. The suffix has nothing to add there, because nobody is asking whether you're able.
 
 ## Telling the can'ts apart {#telling-apart}
-<!-- Agent summary: near misses. `-xo` = usually can, blocked for now; `-xe` = not able so far, may change. `-xe` leaves it open; `-xu` = never, impossible; unsure → `-xe`. Plain verb = does it; `-xa` = is able to. *can* / *can't* for permission (*can I sit here?*, a ban) is not ability → no suffix. -->
+<!-- Agent summary: near misses. `-xo` = usually can, blocked for now; `-xe` = not able so far, may change. `-xe` leaves it open; `-xu` = never, impossible; unsure → `-xe`. Plain verb = does it; `-xa` = is able to. *can't* for a ban (able, but not allowed) is not ability → no suffix. -->
 
 Most mix-ups here come from the fact that English uses one word, *can't*, for all three limits, and *can* for more than ability.
 
 ### For now or not yet {#now-or-yet}
 
-Both of these say the limit might end, so the question to ask is whether you usually can. With your arm in a cast, *I `drive-xo`* fits, because you drive most days and the cast is in the way for now. If you've never had a driving lesson, it's *I `drive-xe`*: you can't drive yet, but nothing stops you from learning.
+Both of these say the limit might end, so the question to ask is whether you usually can. With your arm in a cast, *I `drive-xo`* fits, because you drive most days and the cast is in the way for now. If you've never had a driving lesson, it's *I `drive-xe`*: you can't drive yet, and that could change once you learn.
 
 ### Not yet or never {#yet-or-never}
 
@@ -111,4 +111,4 @@ I `drink-xu` milk.
 She `drive-xa`.
 :::
 
-<!-- Source (editors): can-and-cant.md#ability-changeability (can, can't); can-and-cant.md#can (plain verb vs ability); permission-consent.md#permission (asking leave is not ability); x sound from phonology.md. -->
+<!-- Source (editors): can-and-cant.md#ability-changeability (can, can't); can-and-cant.md#can (plain verb vs ability); permission-consent.md#permission (asking leave is not ability); more-turn-words.md#stacked-acts (a *could you* request); x sound from phonology.md. -->

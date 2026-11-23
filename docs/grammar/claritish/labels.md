@@ -20,9 +20,9 @@ The rows run from the smallest reach to the biggest, so the vowel tells you the 
 
 The suffix goes straight onto the word that carries the label. For an act, that's the verb, as in *he `lied-thu`*. For a quality it's the adjective (*I was `lazy-thu`*), and for a role it's the noun (*she's a `nurse-tho`*). The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Ageben.
 
-You met the endings `-l`, `-m`, and `-r` in *How sure are you?*, where they say how settled something is, with `-l` as *lasting* and `-r` as *right now*. They don't come back here. A reach suffix stops at its vowel, because the vowel is the whole choice and there's nothing left for an ending to say.
+You met the endings `-l`, `-m`, and `-r` in *How sure are you?*, where they run from settled to passing, with `-l` as *lasting* and `-r` as *right now*. They don't come back here. A reach suffix stops at its vowel, because the vowel is the whole choice and there's nothing left for an ending to say.
 
-You don't need a suffix on every label. When the reach doesn't matter, as in *I'm tired* after a long flight, leave it off, since a bare word makes no claim about how far it reaches. Add the suffix when you'd otherwise reach for *this time* or *a teacher*, or when a listener could hear one act as a whole nature.
+You don't need a suffix on every label. When the reach doesn't matter, as in *I'm tired* after a long flight, leave it off, since a bare word makes no claim about how far it reaches. Add the suffix when the reach does matter: when you'd otherwise reach for *this time* or *a teacher*, for example, or when a listener could hear one act as a whole nature.
 
 When you can't tell which reach fits, go by what you've actually seen. If all you've seen is one episode, `-thu` says exactly that much and no more.
 
@@ -69,7 +69,7 @@ In the same way, *often* is a count of occasions and isn't what `-tho` means. *H
 > We were `careless-thu` on that release.  
 > He's `anxious-tha`.
 
-The first line says one act happened, and denies that lying is his practice. *She's `rude-the`, to him at least* keeps the label inside one relationship, so it says nothing about how she treats anyone else. *He's `anxious-tha`* does call him a type. The suffix makes that a choice the listener can see, instead of something a bare *he's anxious* slips in.
+The first line says one act happened, and denies that lying is his practice. *She's `rude-the`, to him at least* keeps the label inside one relationship, so it says nothing about how she treats anyone else. *He's `anxious-tha`* does call him a type. The suffix makes that a choice the listener can see, instead of something the listener has to guess from a bare *he's anxious*.
 
 ## Practice {#practice}
 
