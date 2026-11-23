@@ -29,13 +29,13 @@ English puts *can* and *can't* in front of the verb. Here the meaning goes onto 
 
 So *I can swim* becomes *I `swim-xa`*. The *I can't sing* from the gap becomes two different sentences, because you now have to say which one you mean: *I `sing-xo`* is the sore throat, and *I `sing-xu`* is the lifelong fact.
 
-There's one way to say *can* and three ways to say *can't*, and the three differ in how lasting the limit is. With `o`, the limit is for now: you usually can, and something is in your way. With `e`, it's not yet, so you can't do it so far, and that could still change. With `u`, it's never. The fourth vowel, `a`, means you can, with no limit at all.
+There's one way to say *can* and three ways to say *can't*, and the three differ in how lasting the limit is. With `o`, the limit is for now: you usually can, and something is in your way. With `e`, it's not yet: you haven't been able to so far, and that could still change. With `u`, it's never. The fourth vowel, `a`, means you can, with no limit at all.
 
 When you can't tell how lasting the limit is, use `-xe`. It claims only *not yet*, so it never says a limit is permanent when it might still change.
 
-The hyphen works the way it does in *Labels*, where a suffix like `-thu` goes on an English word: the hyphen only shows that the word in front is English, and the letters after it are spelled exactly as in Ageben. As there, no ending follows, because the vowel already makes the whole choice. The new letter is `x`, which sounds like the *si* in *vision*.
+The hyphen works the way it does in *Labels*, where a suffix like `-thu` goes on an English word: the hyphen only shows that the word in front is English, and the letters after it are spelled exactly as in Ageben. As there, no ending follows, because the vowel already carries the whole meaning. The new letter is `x`, which sounds like the *si* in *vision*.
 
-Not every English *can* is about what someone is able to do. When *can* asks for permission, as in *can I sit here?*, or makes a request, as in *can you pass the salt?*, leave it as it is. The suffix has nothing to add there, because nobody is asking whether you're able.
+Not every English *can* is about what someone is able to do. When *can* asks for permission, as in *can I sit here?*, or makes a request, as in *can you pass the salt?*, leave it as it is. The suffix would add nothing there, because nobody is asking whether you're able.
 
 ## Telling the can'ts apart {#telling-apart}
 <!-- Agent summary: near misses. `-xo` = usually can, blocked for now; `-xe` = not able so far, may change. `-xe` leaves it open; `-xu` = never, impossible; unsure → `-xe`. Plain verb = does it; `-xa` = is able to. *can't* for a ban (able, but not allowed) is not ability → no suffix. -->
@@ -48,7 +48,7 @@ Both of these say the limit might end, so the question to ask is whether you usu
 
 ### Not yet or never {#yet-or-never}
 
-*My grandmother `text-xe`* says she can't text yet, perhaps because her grandson is still teaching her. *My grandmother `text-xu`* says she never will be able to, which is a much bigger claim. A listener who hears the second one no longer expects a message from her.
+*My grandmother `text-xe`* says she can't text yet, perhaps because her grandson is still teaching her. *My grandmother `text-xu`* says she never will be able to, which is a much bigger claim.
 
 That's why `-xe` is the default. If you aren't sure the limit is permanent, `-xu` claims more than you know, while `-xe` allows for either outcome.
 

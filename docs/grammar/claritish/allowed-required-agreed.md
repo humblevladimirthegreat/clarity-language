@@ -90,7 +90,7 @@ The consent drop-in is only ever the yes of the one the act is done to. In *I bo
 
 ### A sentence about yourself {#about-yourself}
 
-Because `-m` with nobody named means the say is yours, `hwuvam`, `hwuvum`, and `hwuvom` don't fit a sentence about what you yourself do. *I have to work late `hwuvom`* would make you the outside person demanding it of yourself, and that has no reading. When something is required of you, name where the demand comes from instead. Use `hwuvol` when a rule requires it and `hwuvor` when it's custom, or name the person in English (*my manager says I have to work late*) and leave the drop-in out.
+Because `-m` with nobody named means the say is yours, `hwuvam`, `hwuvum`, and `hwuvom` don't fit a sentence about what you yourself do. *I have to work late `hwuvom`* would make you the outside person demanding it of yourself, and that sentence makes no sense. When something is required of you, name where the demand comes from instead. Use `hwuvol` when a rule requires it and `hwuvor` when it's custom, or name the person in English (*my manager says I have to work late*) and leave the drop-in out.
 
 ### Allowed or able {#allowed-or-able}
 

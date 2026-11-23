@@ -31,7 +31,7 @@ The rows run from the smallest reach to the biggest, so the vowel says how big t
 
 The suffix goes directly onto the word that carries the label. For an act, that's the verb, as in *he `lied-thu`*. For a quality it's the adjective (*I was `lazy-thu`*), and for a role it's the noun (*she's a `nurse-tho`*). The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Ageben.
 
-You met the endings `-l`, `-m`, and `-r` in *How sure are you?*, where they run from settled to passing, with `-l` as *lasting* and `-r` as *right now*. A reach suffix takes none of them. It ends at its vowel, because the vowel makes the whole choice and an ending would have nothing to add.
+You met the endings `-l`, `-m`, and `-r` in *How sure are you?*, where they run from settled to passing, with `-l` as *lasting* and `-r` as *right now*. A reach suffix takes none of them. It ends at its vowel, because the vowel already carries the whole meaning.
 
 You don't need a suffix on every label. When the reach doesn't matter, as in *I'm tired* after a long flight, leave it off, since a bare word makes no claim about how far it reaches. Add the suffix when the reach does matter: when you would otherwise add *this time* or *a teacher*, for example, or when one act could be taken as a whole nature.
 
