@@ -32,7 +32,7 @@ The feeling word goes where it went in *What a feeling wants*: after the English
 ## Six more urges {#urges}
 <!-- Agent summary: six two-vowel urges (table), in the same place as `a` `e` `o` `u`; they name pulls those four blur together. Small English words: `oe` toward, `uo` against, `ua` out of, `ao` using, `ae` on, `ue` through. `oe` `uo` `ua` `ao` move you in relation to someone (like `e` `o` `u`); `ae` `ue` point at no one (like `a`). `oe`: met sake = want to tell someone, unmet = want someone with you. No urge is the right one to have. Two mix → name the stronger, or use two feeling words to say both. -->
 
-The four urges from *What a feeling wants* are one vowel each: stay in it, act on someone, do something for someone, and move off. Six more urges are two vowels each, and they go in the same place in the word. They name pulls that the first four blur together, such as freezing in place or calming someone down to stay safe.
+The four urges from *What a feeling wants* are one vowel each: stay in it, act on someone, do something for someone, and move off. Six more urges are two vowels each, and they go in the same place in the word. They name urges for which the first four have no separate vowel, such as freezing in place or calming someone down to stay safe.
 
 | Urge | Goes with | It makes you want to | Belongs when |
 |------|-----------|----------------------|--------------|
@@ -43,7 +43,7 @@ The four urges from *What a feeling wants* are one vowel each: stay in it, act o
 | `ae` | *on* | stay on the spot: frozen, or keeping a lid on it | acting now would cost more than waiting |
 | `ue` | *through* | do something, but you can't tell what | you don't know yet |
 
-Each of the first four urges goes with a small English word: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The new urges follow the same pattern. With `oe` you turn *toward* someone, and with `uo` you push *against* something. `ua` takes you *out of* the fight, and with `ao` you keep the peace *using* yourself. `ae` keeps you *on* the spot, or keeps a lid *on* the feeling, and with `ue` the feeling runs *through* you and you can't tell which way it pulls.
+Each of the first four urges goes with a small English word: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The new urges follow the same pattern. With `oe` you turn *toward* someone, and with `uo` you push *against* something. With `ua` you step *out of* the fight, and with `ao` you keep the peace *using* yourself. With `ae` you stay *on* the spot, or keep a lid *on* the feeling, and with `ue` the feeling goes *through* you and you can't tell which way it pulls.
 
 The ten urges also fall into two groups. `oe`, `uo`, `ua`, and `ao` move you in relation to someone, as `e`, `o`, and `u` do. `ae` and `ue` point at no one, as `a` does, because holding still and not knowing which way to go are not aimed at anybody.
 
@@ -54,7 +54,7 @@ The same event can bring either of two new urges:
 
 Both say your say was taken. With `uo`, you want to push back on the rewrite, which fits when a limit is being crossed. With `ua`, you want to step out of the fight and let the memo go, which fits when a fight over it isn't worth the cost.
 
-The urge `oe` covers two pulls toward someone, and the sake word says which one:
+The urge `oe` covers two ways of turning toward someone, and whether the sake was met says which one:
 
 > The exam results came in `thuwathamoem`.  
 > The exam results came in `thuwathumoem`.
@@ -116,7 +116,7 @@ In the review sentence, `thomam` says the review may cost you competence, so the
 ## Telling the parts apart {#telling-apart}
 <!-- Agent summary: near misses. `a` = no pull; `ae` = a pull, holding still; `ue` = a pull, direction unknown. Middle ending = the situation (sorry word: `-l` for good, `-m` can still change, `-r` passed); last ending = the feeling; when they disagree (settled feeling over a passed cost) the feeling no longer matches the situation. Last ending = how long, never how strong: a strong flash takes `-r`, a mild lasting feeling `-l`. -->
 
-Three parts of a feeling word are easily confused, and each pair is told apart differently.
+Three things in a feeling word are easily confused: the three urges that leave you where you are, the middle and last endings, and how long a feeling lasts against how strong it is.
 
 ### Three ways to stay put {#staying-put}
 

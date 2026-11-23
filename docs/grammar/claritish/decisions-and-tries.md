@@ -34,7 +34,7 @@ Leave the decision word out when you are only saying what happens. *We're moving
 ## What the ending says {#endings}
 <!-- Agent summary: endings follow the settled-to-passing scale from *How sure are you?*: `-l` lasting, `-m` the default, `-r` right now; each word gives them its own meaning. Decision = how final: `thogel` for good, `thogem` can still change, `thoger` for now only; the verb stays the same. Try = how committed: `howal` keeps trying until it works or is ruled out, `howam` unsaid, `howar` a trial run, a low-stakes probe that plans for failure (if it fails, finding that out was the point). Use `howar` to lower the stakes of starting, for yourself or someone else. -->
 
-The endings `-l`, `-m`, and `-r` are the three from *How sure are you?*, where they run from most settled to most passing. Think of `-l` as *lasting*, `-m` as the default in the middle, and `-r` as *right now*. Each word gives the three endings its own meaning along that line.
+The endings `-l`, `-m`, and `-r` are the three from *How sure are you?*, where they run from most settled to most passing. Think of `-l` as *lasting*, `-m` as the default in the middle, and `-r` as *right now*. Each word gives the three endings a meaning of its own, in that same order.
 
 ### On a decision {#on-a-decision}
 
@@ -44,7 +44,7 @@ On a decision word, the ending says how final the decision is. Here is one choic
 > We're selling the car `thogem`.  
 > We're selling the car `thoger`.
 
-With `thogel`, you have decided for good, and the choice is final. With `thogem`, you have decided and can still change your mind. With `thoger`, the decision holds for now only. Because the ending carries how open the choice is, the rest of the sentence stays the same in all three.
+With `thogel`, you have decided for good, and the choice is final. With `thogem`, you have decided and can still change your mind. With `thoger`, the decision holds for now only. Because the ending says how open the choice is, the rest of the sentence stays the same in all three.
 
 ### On a try {#on-a-try}
 
@@ -71,7 +71,7 @@ A trial run plans for failure. If the lessons don't work out, finding that out w
 ## Telling them apart {#telling-apart}
 <!-- Agent summary: near misses. Decision vs plan (*Wants and plans*): plan word = you mean to do a later act, ending = how far it is worked out; decision word = a choice made and how readily you would change it, whenever the act falls (fits before you start and while you do it). Both: plan word first (`thagom` `thogel`). Decision vs promise: `thogel` is a choice only you can see; a promise is a yes given openly that others can hold you to; no drop-in here, so *I promise* stays English. Try vs result: plain sentence = the act happens; try word = the attempt happens, outcome open; omit it when saying the act happened. A try word makes no claim about whether you can (ability suffix, *Can and can't*). Whose: decision word = your decision, even when someone else does the act; someone else's decision stays English. Try word = whoever does the act tries. -->
 
-Four cases are easy to confuse with these drop-ins, and each is handled differently.
+Four pairs are easy to confuse with these drop-ins: a decision and a plan, a decision and a promise, a try and a result, and your own decision or try and someone else's.
 
 ### A decision or a plan {#decision-or-plan}
 

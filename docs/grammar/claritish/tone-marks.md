@@ -28,7 +28,7 @@ A **tone mark** is a symbol written in front of words to say how you mean them: 
 | `?` | unsure about it | raised, tentative |
 | `!` | strong feeling (the words say which) | louder, stressed |
 
-The `%` mark says that you are teasing and do not mean the words literally. For example, *You're the worst* with no mark leaves the reader to tell a joke from a fight, while *%You're the worst* says it is teasing. Without a mark the sentence means the same thing, and its tone is not written down. So a mark is never required, and none of the five is a default: each says a different tone, so choose the one that matches how you mean the words, or write none.
+The `%` mark says that you are teasing and do not mean the words literally. For example, *You're the worst* with no mark leaves the reader to tell a joke from a fight, while *%You're the worst* says it is teasing. Without a mark the sentence means the same thing, and its tone is not written down, so a mark is never required. None of the five is a default, because each says a different tone. Choose the one that matches how you mean the words, or write none.
 
 A mark changes only the tone of the words. The sentence still says the same thing and does the same job, so *;Call me when you land* is still a request, made warmly. The `!` mark says the feeling is strong but not which feeling it is, because the words show that. For example, *!We shipped it* is strong excitement and *!They cancelled it* is strong upset, with the same mark on both.
 
@@ -71,7 +71,7 @@ Different marks combine to mix their tones. Write them together with no space, i
 ## Telling a mark apart {#telling-apart}
 <!-- Agent summary: near misses. `?` mark = unsure; the sentence stays a statement, and a question is written as an English question. `&` only sets one thing against others; a word that is only the new part (an answer to a question) takes no mark. -->
 
-Two other things are easily confused with a tone mark, and each is written differently.
+A question and a stressed new word are easily confused with a tone mark, and neither takes one.
 
 ### Unsure or asking {#unsure-or-asking}
 

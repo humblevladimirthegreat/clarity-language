@@ -32,7 +32,7 @@ Leave both words out when you are only saying what happens. *I'm visiting in Mar
 ## What the ending says {#endings}
 <!-- Agent summary: endings follow the settled-to-passing scale from *How sure are you?*: `-l` lasting, `-m` the default, `-r` right now; each word gives them its own meaning. Want = how long the wanting lasts: `thalol` keeps coming back, `thalom` unsaid, `thalor` will pass. Plan = how fully worked out: `thagol` backups ready (hurdles anticipated and prepared for), `thagom` steps laid out or detail unsaid, `thagor` direction only, details open. No plan level is better; a direction often suits a small or early plan; for a plan that matters, have an answer to what could go wrong before saying `thagol`. `thagom` on your own plan implies no backups yet. -->
 
-The endings `-l`, `-m`, and `-r` are the three from *How sure are you?*, where they run from lasting to passing. Think of `-l` as *lasting*, `-m` as the default in the middle, and `-r` as *right now*. Each word gives the three endings its own meaning along that line.
+The endings `-l`, `-m`, and `-r` are the three from *How sure are you?*, where they run from lasting to passing. Think of `-l` as *lasting*, `-m` as the default in the middle, and `-r` as *right now*. Each word gives the three endings a meaning of its own, in that same order.
 
 ### On a want {#on-a-want}
 
@@ -70,7 +70,7 @@ You know how far your own plan is worked out, so `thagom` about your own plan im
 ## Telling them apart {#telling-apart}
 <!-- Agent summary: near misses. Want vs plan: English *I'm going to* can introduce either; want word = a wish, no claim you mean to act; plan word = you mean to. Both together: want word first (`thalol` `thagom`). Plan vs forecast: a forecast (*I'm going to be late*) says what you expect to happen and takes no plan word; with `thagom` it becomes something you mean to do and no longer says it will happen. Whose: both words are the speaker's, even when someone else does the act (*Sam takes the late shift `thalom`* = you want Sam to); someone else's own want or plan has no drop-in here, so it stays English. Wanting a thing: name the act that would get it (*I'm adopting a dog `thalom`*). -->
 
-Four cases are easy to get wrong, and each is handled differently.
+Four cases are easy to get wrong: a want and a plan, a plan and a forecast, whose want or plan a word means, and wanting a thing instead of an act.
 
 ### A want or a plan {#want-or-plan}
 
@@ -88,7 +88,7 @@ Both words mean your own want or plan, even when someone else does the act. For 
 
 ### Wanting a thing {#wanting-a-thing}
 
-A want word goes on a sentence about an act. So for *I want a dog*, name the act that would get you the dog: *I'm adopting a dog `thalom`* says you want to adopt one.
+A want word goes on a sentence about an act, so for *I want a dog*, name the act that would get you the dog: *I'm adopting a dog `thalom`* says you want to adopt one.
 
 ## Practice {#practice}
 

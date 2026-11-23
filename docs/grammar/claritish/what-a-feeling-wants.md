@@ -29,7 +29,7 @@ The ending from *Thanks and sorry*, which says how long the payoff or the harm l
 
 Put the feeling word after the English clause the feeling is about, as in *We shipped the draft `thuwathamam`*. A feeling word on its own, with no clause, is a whole sentence about how you feel.
 
-When you can't tell which need is involved, use the unspecified sake `uda`. So `thudathumum` says *something is off, and I want to get away*. Once you can tell which need it is, put that sake in place of `uda` and change nothing else: `thunathumum` says *my say was taken, and I want to get away*. The urge has a ready answer too, because when nothing makes you want to move, the urge is `a`.
+When you can't tell which need is involved, use the unspecified sake `uda`. So `thudathumum` says *something is off, and I want to get away*. Once you can tell which need it is, put that sake in place of `uda` and change nothing else: `thunathumum` says *my say was taken, and I want to get away*. For the urge, when nothing makes you want to move, use `a`.
 
 ## The four urges {#urges}
 <!-- Agent summary: urge vowel (table): `a` stay in it (*in*), `e` act on someone (*at*), `o` do something for someone (*for*), `u` move off (*from*). `a` points at no one; `e` `o` `u` move you relative to someone or something. *Belongs when* lists times each fits; no urge is the right one to have. Two urges mix → name the stronger one. -->
@@ -41,7 +41,7 @@ When you can't tell which need is involved, use the unspecified sake `uda`. So `
 | `o` | do something for someone: give back, make amends | you were helped, or you caused a cost |
 | `u` | move off: avoid, leave, hide | the danger is real, or you need room |
 
-Each urge goes with one small English word that says which way the feeling moves you: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The words also sort the four into two groups. `a` keeps you where you are, in the feeling, so it points at no one. The other three move you in relation to someone or something: `e` acts at them, `o` does something for them, and `u` moves away from them. So to pick the vowel, first ask whether the feeling makes you want to move at all, and if it does, which of those three ways.
+Each urge goes with one small English word that says which way the feeling moves you: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The words also sort the four into two groups. `a` means staying where you are, in the feeling, so it points at no one. The other three move you in relation to someone or something: `e` means acting at them, `o` doing something for them, and `u` moving away from them. So to pick the vowel, first ask whether the feeling makes you want to move at all, and if it does, which of those three ways.
 
 The same event can bring different urges, and the vowel says which one you feel:
 
@@ -52,7 +52,7 @@ The same event can bring different urges, and the vowel says which one you feel:
 
 Both birthday sentences say you feel connected. With `thawethamam` you want to stay in that feeling, and with `thawethamem` you want to act on someone, here by thanking your friend. Both of the last two say you cost her something. `thewathumom` says you want to make it right, and `thewathumum` says you want to get away, for example by avoiding her.
 
-No urge is the right one to have. Each has times when it belongs, and the *Belongs when* column names some of them: wanting to move off fits when the danger is real. When two urges mix, as when you want both to thank your friend and to sit with the feeling, name the stronger one.
+No urge is the right one to have. Each one fits some situations, and the *Belongs when* column names a few of them: wanting to move off fits when the danger is real. When two urges mix, as when you want both to thank your friend and to sit with the feeling, name the stronger one.
 
 ## Examples {#examples}
 
@@ -75,7 +75,7 @@ No urge is the right one to have. Each has times when it belongs, and the *Belon
 ## Telling a feeling word apart {#telling-apart}
 <!-- Agent summary: near misses. The urge is a want, not a decision: naming it leaves you free to follow it or not. Keep the English emotion word when it is all you can tell (no need, no urge). After a clause the feeling is about that clause's event; alone it is about nothing you can point to, and the clause can come later. -->
 
-Three things are easily confused with what a feeling word says, and each is handled differently.
+A feeling word is easily confused in three ways: its urge with a plan, the feeling word with the English emotion word, and the word after a clause with the same word alone.
 
 ### An urge or a plan {#urge-or-plan}
 
