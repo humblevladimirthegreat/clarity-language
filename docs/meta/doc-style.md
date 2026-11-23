@@ -30,7 +30,7 @@ Each line is one rule. *Build* means `npm run build` checks it, so you do not ne
 | A picture or metaphor follows the plain rule | Judgment | [Unpack English pictures](#unpack-english-pictures) |
 | House shorthand is said in longer English on first use | Judgment | [House shorthand](#house-shorthand) |
 | Reassurance changes what the learner does or expects | Judgment | [Warmth](#warmth) |
-| Prose reads aloud like a teacher talking: ideas linked, few slogans, people as subjects | Judgment | [Tone](#tone) |
+| Prose reads like technical documentation: literal words, ideas linked, few slogans, no human verbs on forms | Judgment | [Tone](#tone) |
 | Controls are described in a table | Judgment | [Interface instructions](#interface-instructions) |
 
 Run the [closing tests](#before-you-finish) on anything you wrote or rewrote.
@@ -137,12 +137,15 @@ Put reassurance where the difficulty is predictable (a new sound, pitch, the fir
 ## Tone
 <a id="tone"></a>
 
-Write the way a good teacher talks to a smart adult: plainly, in whole sentences, showing how each idea leads to the next. The rest of this page cuts filler. This section keeps what remains from reading like notes or slogans.
+Write like good technical documentation for a smart adult: literal, precise, in whole sentences, with each idea linked to the next. The rest of this page cuts filler. This section keeps what remains from reading like notes, slogans, or chat.
 
-- **Read it aloud.** Keep a sentence only if a good teacher would say it out loud to an adult. If you would not say it, rewrite it.
+- **Read it back.** Every sentence states a rule, a fact, a reason, or an example. Rewrite a sentence that only sets a mood.
+- **Literal words.** Use no idioms and no figurative verbs. A form *means*, *marks*, *applies to*, or *goes* somewhere. It does not *color*, *earn its place*, *pretend*, or *do the work*, and a guess is not *chased*.
+- **No conversational filler.** Cut *just*, *actually*, *simply*, *it pays to*, and *it's worth*.
 - **Connect the ideas.** Show how one claim leads to the next with *because*, *so*, *for example*, or *that's why*. A run of bare claims leaves the reader to work out how they fit together.
 - **Ration the slogans.** A section gets at most one semicolon-balanced pair (*A does this; B does that*) and at most one *X, not Y* denial. Use the denial only where a reader would otherwise get it wrong, and do not end a paragraph on a slogan. A page built from these reads as a string of aphorisms.
-- **Let people act.** The subject of a sentence is a person or a concrete thing. A feature, a form, or a language does not hear, lose, or grade anything.
+- **Forms take literal verbs.** A form, ending, or sentence may be the subject of *means*, *marks*, *says*, or *applies to*. It never takes a human verb: a feature, a form, or a language does not hear, lose, pretend, or want anything.
+- **State the effect directly.** Say what the form means, not how an imagined listener reacts to it: "marks the sentence as a guess", not "so the listener doesn't take it as news".
 - **Vary the length.** Several short claims in a row sound clipped. Join the ones that belong together, and give the main idea a full sentence.
 - **Keep symbols in tables.** `≈`, `→`, and `=` belong in tables and cheat sheets. In a sentence, spell the relation out: *think of `-l` as lasting*.
 - **Say what a name means when you reuse it.** When you point back to an idea taught elsewhere, say it in plain words, not just by its house name (*settled-to-passing scale*). A name alone gives the reader nothing to hold.
@@ -153,7 +156,11 @@ Write the way a good teacher talks to a smart adult: plainly, in whole sentences
 | Smell | Prefer |
 |-------|--------|
 | "A pattern comes from other cases; clues come from this case." | "A pattern comes from other cases like this one, so you could say it before you even reach the stop. Clues come from the scene in front of you." |
-| "Hearing a sound yourself is your own senses." | "When you hear a sound yourself, you're going on your own ears." |
+| "Hearing a sound yourself is your own senses." | "When you hear a sound yourself, your evidence is what you heard." |
+| "It marks the sentence as a guess, so the listener doesn't take it as news." | "It marks the sentence as a guess." |
+| "The word earns its place on painful guesses." | "Use it most on painful guesses." |
+| "next to the word it colors" | "next to the word it applies to" |
+| "it pays to fix it in memory now" | "later lessons rely on it, so learn it now" |
 | "Plain English loses that by the second sentence." | "In plain English, a listener takes the second sentence as something you saw." |
 | "`-l` ≈ lasting" in a sentence | "think of `-l` as *lasting*" |
 | *First, … Second, … Third, …* through a section | A short heading for each part, or a sentence saying how each part connects to the last |
@@ -205,7 +212,7 @@ The first sentence is the English job. The second is the Ageben shape. The third
 Every section that introduces a distinction says what the learner can now do with it. Two kinds count:
 
 - **Mechanical.** What you may now reorder, leave out, or attach.
-- **Human.** What the form lets you say to someone, or notice in yourself, that English makes awkward. Ageben exists for these, so name one when the feature has it.
+- **Human.** What the form lets you say to someone, or notice in yourself, that English makes awkward. Ageben exists for these, so name one when the feature has it. State it as when to use the form ("use it on painful guesses, such as…"), never as a judgment of the form ("it earns its place", "it shines").
 
 A section that describes a pattern and stops has no consequence. "The four vowels form two opposite pairs" needs a next sentence saying what the pairing is for.
 
@@ -305,4 +312,4 @@ Run these on each section you wrote. Skip the first on a table that only finishe
 5. **Why care.** Does the section say what the learner can now do or hear? If it only describes, add the [consequence](#consequence).
 6. **Once.** Is any explanation on the page for the second time? Keep it where it is owned.
 7. **Warmth.** Does each reassuring sentence change what the learner does or expects? Cut the ones that do not.
-8. **Read aloud.** Read the section aloud. Rewrite any sentence you would not say to a person, and any run of short sentences that sounds like notes ([tone](#tone)).
+8. **Read it back.** Rewrite any idiom, figurative verb, or filler word, any sentence that only sets a mood, and any run of short sentences that sounds like notes ([tone](#tone)).

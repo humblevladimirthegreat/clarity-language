@@ -1,6 +1,6 @@
 # Claritish newcomer rewrite: explain for people, summarize for agents
 
-**Status:** IN PROGRESS. P1 done 2026-11-23 (U1 to U7, A1 as two audits A1a and A1b; commits dc85ee42 to b7f14f57): the policy is in [claritish-style.md](../../meta/claritish-style.md#newcomer) and the [lesson shape](../../meta/grammar-docs.md#claritish-track), and six lessons are rewritten and audited. Next: P2. Decided 2026-11-21: grammar prose is written for human comprehension first; agents get a terse `<!-- Agent summary: … -->` comment directly under each teaching heading, invisible to readers; the [tone](../../meta/doc-style.md#tone) guidelines join `doc-style.md`; lessons no longer tell the reader a list need not be memorized, and instead help them learn it. The pilot, [How do you know?](../../grammar/claritish/how-you-know.md), is the model for every lesson. After this proposal's human review, a second proposal applies the same approach to the full grammar. Decided 2026-11-21 (the open decisions, as recommended): no length cap on a rewritten lesson, the newcomer tests set the length and R1 judges it; a lint for agent summaries waits for the grammar-wide proposal; practice may grow to about eight items, added only as contrast pairs.
+**Status:** IN PROGRESS. P1 done 2026-11-23 (U1 to U7, A1 as two audits A1a and A1b; commits dc85ee42 to b7f14f57): the policy is in [claritish-style.md](../../meta/claritish-style.md#newcomer) and the [lesson shape](../../meta/grammar-docs.md#claritish-track), and six lessons are rewritten and audited. Next: P2. Decided 2026-11-23: the voice is technical documentation, not a teacher talking. The [tone](../../meta/doc-style.md#tone) guidelines now ask for literal words, literal verbs on forms, effects stated directly, and no conversational filler, and a [consequence](../../meta/doc-style.md#consequence) says when to use a form, never how good it is. [How sure are you?](../../grammar/claritish/could-be.md) was redone in that voice outside the run and replaces the pilot as the model. P2 gives the other P1 lessons the same pass; P3 is the old P2. Decided 2026-11-21: grammar prose is written for human comprehension first; agents get a terse `<!-- Agent summary: … -->` comment directly under each teaching heading, invisible to readers; the [tone](../../meta/doc-style.md#tone) guidelines join `doc-style.md`; lessons no longer tell the reader a list need not be memorized, and instead help them learn it. The pilot, [How do you know?](../../grammar/claritish/how-you-know.md), was the model for every lesson until 2026-11-23. After this proposal's human review, a second proposal applies the same approach to the full grammar. Decided 2026-11-21 (the open decisions, as recommended): no length cap on a rewritten lesson, the newcomer tests set the length and R1 judges it; a lint for agent summaries waits for the grammar-wide proposal; practice may grow to about eight items, added only as contrast pairs.
 
 **Related:** every page under [`docs/grammar/claritish/`](../../grammar/claritish/); [claritish-style.md](../../meta/claritish-style.md), [doc-style.md](../../meta/doc-style.md) (tone section), the [Claritish track](../../meta/grammar-docs.md#claritish-track) policy; the journal editor's cue data [`data/claritish-triggers.csv`](../../../data/claritish-triggers.csv), which reads each lesson's gap; [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), which ties each lesson table to the cheat sheet.
 
@@ -14,13 +14,60 @@ At the end of each phase, and if the user says to stop partway, the orchestrator
 
 The run uses subagents. Each lesson reads its own owning grammar sections, which the other lessons share little of, and the fact audits need a fresh context that wrote none of the prose.
 
-One phase is left. **P2** rewrites the remaining five lessons and the track's other prose pages, audits them, runs the style gate, and ends by asking the user for review.
+Two phases are left. **P2** redoes the voice of the P1 lessons, wording only, and checks that no claim moved. **P3** rewrites the remaining five lessons and the track's other prose pages, audits them, runs the style gate, and ends by asking the user for review. The cut falls between them because P3's briefs take could-be.md and the redone lessons as their model, and the two phases read different rules: P2 reads only the voice rules and its own lessons, P3 also reads the owning grammar sections.
 
 **Built in P1.** [claritish-style.md](../../meta/claritish-style.md) now holds [Explaining for a newcomer](../../meta/claritish-style.md#newcomer) (the newcomer tests, no length cap, practice up to about eight items as contrast pairs), [Agent summaries](../../meta/claritish-style.md#agent-summaries), and an *Explanatory sections* bullet under [forms](../../meta/claritish-style.md#forms); back-references now say the reused idea in plain words. *How sure are you?* (could-be.md) owns the track's first teaching of the `-l` / `-m` / `-r` scale, in `## What the ending says`: think of `-l` as *lasting* and `-r` as *right now*. A later lesson that points back to it names the title and says the idea in those words. Thanks-and-sorry.md no longer has a `## The sakes` H2; the sake table is under `## The forms`. Rewrites grew three to five times (table below), and A1 found that the longer lessons restate themselves in places. The audit of 1,000-plus-word lessons should report restated sections, as A1 did.
 
 **Split audits.** A1 ran as two audits of three or four lessons each, because one audit of seven lessons and their sources passes the six-page unit size. A2 splits the same way: A2a for U8 to U10, A2b for U11 and U12.
 
 ### Phase P2
+
+The user found the P1 voice too conversational (*so the listener doesn't take it as news*, *earns its place*) and asked for technical writing. The guidelines changed on 2026-11-23 (Status line), and could-be.md was redone by hand as the model. A1 already audited the facts, so P2 changes wording only: the units are `style-editor` passes, whose `wording-only` check and fact rule keep claims fixed, and A3 reads the diff to confirm it.
+
+**Start.** The guideline edits, the could-be.md redo, and this revision are uncommitted. Commit them first, as one commit of their own (`claritish-newcomer-rewrite: technical voice in tone guidelines, could-be redone [skip-cd]`), so `<rev>` below is that commit. Then `npm run verify -- --baseline`.
+
+Each V unit's brief file holds the voice brief below and names its pages.
+
+**V1 How do you know?** `style-editor`, `model: opus`, `effort: high`. Voice pass on [how-you-know.md](../../grammar/claritish/how-you-know.md). The lesson says when a channel "earns its place" (an A1 usage aid, listed under P1 input); keep the claim and state it as when to use the channel.
+**May edit:** `docs/grammar/claritish/how-you-know.md`, `src/lint/prose-style-baseline.json`.
+
+**V2 Labels; Can and can't.** `style-editor`, `model: opus`, `effort: high`. Voice pass on [labels.md](../../grammar/claritish/labels.md) and [can-and-cant.md](../../grammar/claritish/can-and-cant.md), the two shortest P1 lessons.
+**May edit:** those two files, `src/lint/prose-style-baseline.json`.
+
+**V3 Thanks and sorry.** `style-editor`, `model: opus`, `effort: high`. Voice pass on [thanks-and-sorry.md](../../grammar/claritish/thanks-and-sorry.md).
+**May edit:** `docs/grammar/claritish/thanks-and-sorry.md`, `src/lint/prose-style-baseline.json`.
+
+**V4 Allowed and required.** `style-editor`, `model: opus`, `effort: high`. Voice pass on [allowed-required-agreed.md](../../grammar/claritish/allowed-required-agreed.md). Leave the consent examples under Open decisions as they are.
+**May edit:** `docs/grammar/claritish/allowed-required-agreed.md`, `src/lint/prose-style-baseline.json`.
+
+**V5 Oughts and motives.** `style-editor`, `model: opus`, `effort: high`. Voice pass on [oughts-and-motives.md](../../grammar/claritish/oughts-and-motives.md).
+**May edit:** `docs/grammar/claritish/oughts-and-motives.md`, `src/lint/prose-style-baseline.json`.
+
+**A3 Meaning check.** `proposal-worker` (fresh), `model: opus`, `effort: medium`. Read `git diff --word-diff <rev>~1 -- docs/grammar/claritish/`, which covers could-be.md and the V units' lessons; do not read whole pages or the grammar. For each changed sentence, check that it makes the same claim as the one it replaced: the same drop-in, meaning, condition, default, and leave-out point, with nothing added or dropped. Restore a drifted claim in the new voice. Check that each agent summary still matches its section. Report each drift with its line, fixed or left. If the diff runs past about 30k tokens, split it as A3a (could-be, how-you-know, labels, can-and-cant) and A3b (the rest).
+**May edit:** the seven lessons named.
+
+**End.** `npm run verify -- --allow-generate` passes, then consolidate: record the word counts after P2 in the P1 input table, and move what P3 needs into its section.
+
+#### Voice brief (in every V unit's brief file)
+
+```
+- Pages: <the unit's lessons>. Model voice: docs/grammar/claritish/could-be.md; read it first.
+- Rules: docs/meta/doc-style.md#tone and #consequence, and docs/meta/claritish-style.md (Checklist,
+  #newcomer, #the-gap). A Claritish lesson skips the lead rules and the slogan test (which-page table).
+- Wording only. Keep every claim: drop-ins, meanings, conditions, defaults, leave-out points, near
+  misses, examples, tables, headings and {#ids}, agent summaries, Practice, the Source comment. Do not
+  read the grammar sources; the facts were audited. A sentence that cannot be made literal without
+  changing its claim stays; report it.
+- Gap: keep every italic phrase exactly (journal editor cues read them); each gap sentence reads alone.
+- Voice: literal words, no idioms or figurative verbs (colors, earns its place, chases, does the work,
+  where it belongs, crossed your mind). A form may be the subject of means / marks / says / applies to,
+  never of a human verb (pretends, hears, wants). Say what a form means, not how a listener reacts.
+  A payoff says when to use the form, not how good it is. Cut just, actually, simply, it pays to,
+  it's worth. Keep the links between ideas (because / so / for example).
+- Report as your agent definition says, plus: sentences left for want of a literal wording.
+```
+
+### Phase P3
 
 **U8 Wants and plans.** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [wants-and-plans.md](../../grammar/claritish/wants-and-plans.md) per the digest. English *I'm going to* can be either a want or a plan; if the owning sections draw that line, give it a contrast example.
 **May edit:** `docs/grammar/claritish/wants-and-plans.md`.
@@ -45,7 +92,7 @@ One phase is left. **P2** rewrites the remaining five lessons and the track's ot
 
 **May edit:** those four files.
 
-**A2 Fact audit, P2 lessons.** `proposal-worker` (fresh), `model: opus`, `effort: high`, as two units (A2a: U8 to U10; A2b: U11, U12). For each lesson the phase changed: check every sentence of new or changed prose that states what a drop-in means or when to use it against the owning sections named in its Source comment, and list each claim they do not support, with the line. Check that each agent summary states only what its section teaches, and that each teaching H2 has one. Fix wording that overstates the owning section; a claim that would need a new meaning goes into the report, unfixed. Report word counts and sections that restate another. Read slices only: headings first, then the cited sections.
+**A2 Fact audit, P3 lessons.** `proposal-worker` (fresh), `model: opus`, `effort: high`, as two units (A2a: U8 to U10; A2b: U11, U12). For each lesson the phase changed: check every sentence of new or changed prose that states what a drop-in means or when to use it against the owning sections named in its Source comment, and list each claim they do not support, with the line. Check that each agent summary states only what its section teaches, and that each teaching H2 has one. Fix wording that overstates the owning section; a claim that would need a new meaning goes into the report, unfixed. Report word counts and sections that restate another. Read slices only: headings first, then the cited sections.
 **May edit:** the five lessons named.
 
 **S1 Style gate.** `style-editor` (fresh), `model: opus`, `effort: high`. Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `271a14ae`, the commit before U1, against [doc-style.md](../../meta/doc-style.md) (including [tone](../../meta/doc-style.md#tone)) and [claritish-style.md](../../meta/claritish-style.md).
@@ -54,7 +101,7 @@ One phase is left. **P2** rewrites the remaining five lessons and the track's ot
 **R1 Human review.** *Orchestrator.* Consolidate this proposal and commit. Then ask the user to review the rewritten track, and stop. Name these for the user:
 
 - the pages changed, with word counts before and after
-- the claims A1 (below) and A2 could not support and left in place
+- the claims A1 (below) and A2 could not support and left in place, and any drift A3 left
 - any open decisions the run logged
 - three pages worth reading first: could-be, labels, and feelings, which carry the most new explanation
 
@@ -86,7 +133,7 @@ Addressing the review's concerns, and the follow-up proposal that applies this a
 
 ```
 - Task: rewrite one Claritish lesson so a newcomer understands it on first read. Read
-  docs/grammar/claritish/how-you-know.md first: it is the model. Then read your lesson, then the
+  docs/grammar/claritish/could-be.md first: it is the model for voice and shape. Then read your lesson, then the
   owning grammar sections named in its <!-- Source (editors): --> comment (headings first, then slices).
 - Rules: docs/meta/claritish-style.md (all of it) and docs/meta/doc-style.md#tone. Do not link to them
   from the lesson.
@@ -104,10 +151,13 @@ Addressing the review's concerns, and the follow-up proposal that applies this a
   example, not just denied; say when to leave the drop-in out and which form to use when unsure; a
   long list gets a grouping or pattern to learn it by (never "you don't need to memorize it"); a
   point back to an earlier lesson names its title in italics and says the idea in plain words.
-- Tone: would a good teacher say it aloud? Link ideas with because / so / for example. At most one
-  semicolon-balanced pair and one "X, not Y" per section. People and things act, not features.
-  Vary sentence length. No ≈ or → in prose. One grammatical shape per table column. No numbered
-  "First, … Second, …" runs.
+- Tone: technical documentation, literal words. No idioms or figurative verbs (colors, earns its
+  place, chases, does the work, where it belongs). A form may be the subject of means / marks / says /
+  applies to, never of a human verb (pretends, hears, wants). Say what a form means, not how a
+  listener reacts. A payoff says when to use the form, not how good it is. Cut just, actually,
+  simply, it pays to, it's worth. Link ideas with because / so / for example. At most one
+  semicolon-balanced pair and one "X, not Y" per section. Vary sentence length. No ≈ or → in prose.
+  One grammatical shape per table column. No numbered "First, … Second, …" runs.
 - Do not invent (A1 found each of these): a "use it when" trigger beyond the owning rule; a "when
   unsure" default on a scale whose owning section gives none (say which forms are ruled out instead);
   a reason for the lasting / right-now picture; an English cue word (*obviously*) tied to a drop-in;
@@ -129,13 +179,13 @@ Addressing the review's concerns, and the follow-up proposal that applies this a
   statement; gap italics changed (should be none); verify line; skips with reasons; left; inefficient.
 ```
 
-The audit briefs (A1, A2) carry the same digest with the task lines replaced by their unit text.
+The audit briefs (A1, A2) carry the same digest with the task lines replaced by their unit text. P2's V units use the voice brief instead, and A3 its unit text alone.
 
 ### Gates and commits
 
 - `npm run verify -- --baseline` at the start of each phase. `npm run verify -- --allow-generate` after each unit, before its commit.
-- Final gate, in P2 before R1: a full `npm run verify` that passes against an empty baseline.
-- One commit per unit, with the message `claritish-newcomer-rewrite <ID>: … [skip-cd]` and the co-author line. A unit whose audit changed nothing makes no commit. P1 made 10 commits. P2 makes about 10 (A2 is two units), the last being R1's consolidation.
+- Final gate, in P3 before R1: a full `npm run verify` that passes against an empty baseline.
+- One commit per unit, with the message `claritish-newcomer-rewrite <ID>: … [skip-cd]` and the co-author line. A unit whose audit changed nothing makes no commit. P1 made 10 commits. P2 makes about 8: the start commit, V1 to V5, A3 if it fixed anything, and the consolidation. P3 makes about 10 (A2 is two units), the last being R1's consolidation.
 - No `AGENTS.md` change is expected. The Claritish row already points to the track, and the agent-summary convention reaches `AGENTS.md` with the grammar-wide proposal.
 
 ## Open decisions
@@ -146,7 +196,7 @@ The audit briefs (A1, A2) carry the same digest with the task lines replaced by 
 - Recast them so the consenter is the one the act is done to (*the doctor examined her*, *I hugged him*), and leave ownership to the grammar owner.
 - Ask the grammar owner to say in [consent](../../grammar/intermediate/permission-consent.md#consent) whether an owner's yes is `hwud-` when the owned thing holds `d`.
 
-**Recommendation:** (medium) keep the examples and settle the grammar question separately, since the lead names *their things* and the lesson's gloss is plain English, not the role letter. No P2 lesson uses consent, so this does not block P2.
+**Recommendation:** (medium) keep the examples and settle the grammar question separately, since the lead names *their things* and the lesson's gloss is plain English, not the role letter. No P3 lesson uses consent, and V4 is wording only, so this blocks neither phase.
 
 ## Background
 
@@ -157,7 +207,7 @@ The grammar pages, and the Claritish lessons most of all, are terse. A reader wh
 ### Goals
 
 - Every Claritish lesson explains its drop-ins well enough that a newcomer can use them after one read: contrasts shown, near misses explained, defaults and omissions stated.
-- The prose reads like a teacher talking, per the [tone](../../meta/doc-style.md#tone) guidelines.
+- The prose reads like technical documentation, per the [tone](../../meta/doc-style.md#tone) guidelines.
 - Agents get each teaching section's rules from one comment under its heading, without reading the explanation.
 - The approach is proven on one track, and reviewed, before the full grammar adopts it.
 

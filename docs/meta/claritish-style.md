@@ -82,7 +82,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 ## Explaining for a newcomer
 <a id="newcomer"></a>
 
-A lesson is read once, by someone who has never met the drop-in, and it must leave them able to use it. Stating a distinction is not enough for that reader: they need to see it at work. So run these tests on every lesson, and let them set its length; there is no length cap. The [tone](doc-style.md#tone) guidelines say how the explanation should sound.
+A lesson is read once, by someone who has never met the drop-in, and it must leave them able to use it. Stating a distinction is not enough for that reader: they need to see it at work. So run these tests on every lesson, and let them set its length; there is no length cap. A newcomer needs more examples and contrasts, not a chattier voice: the prose stays as literal as a grammar page, as the [tone](doc-style.md#tone) guidelines require.
 
 - **Show each distinction.** Every distinction the lesson draws gets a contrast example: the same sentence both ways, with what changes. When several pairs get confused, give each pair an H3 in a contrast section.
 - **Use every form.** Each drop-in in a lesson table appears in an example, or in a sentence that explains it. A row the prose never touches is a row the reader skips.
@@ -107,7 +107,7 @@ The hyphen belongs to Claritish only. Ageben writes these mid-word on an Ageben 
 
 About five one-line examples in a single blockquote, two trailing spaces per line. They are ordinary adult situations (a shipped draft, a delayed flight, a rewritten memo, a sister laid off), not toy sentences, and they carry no Ageben beyond the drop-in. The [house cast](grammar-docs.md#house-cast) stays out of the lessons; names appear only in the full sentence on the closing page.
 
-After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the reach does the work.
+After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the reach changes the meaning.
 
 Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thomal`)"). A note may name the parts when the word is composed, as in *Wants and plans*. Answers go in `::: details Show answer`.
 
