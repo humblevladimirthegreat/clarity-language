@@ -47,7 +47,7 @@ A contraction is one word, so write `I'm sorry | I am sorry`, not `I'm/I am sorr
 | `after-noun` | After the noun |
 | `suffix` | As a hyphen suffix on the English verb after the cue, which replaces the cue: *I can't sing* → `sing-xu` |
 | `on-cue` | As a hyphen suffix on the cue's last word, which stays: *he's a liar* → `liar-the` |
-| `before-word` | As a tone mark at the start of the sentence |
+| `before-word` | As a tone mark at the start of the sentence, with a space after it, so it applies to the whole sentence |
 
 ## Word lists
 <a id="word-lists"></a>

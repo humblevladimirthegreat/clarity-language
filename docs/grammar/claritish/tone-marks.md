@@ -16,9 +16,9 @@ Inbound links: npm run page-refs -- claritish/tone-marks.md
 In writing, the reader cannot hear the voice that shows how you mean your words. A text that says *You're the worst* could be a joke or a fight, and the reader has to guess which. An Ageben tone mark, a symbol written before the words, says how you mean them.
 
 ## The marks {#forms}
-<!-- Agent summary: five tone marks (table), written bare, no space, right before the English they apply to: `%` joking, teasing (not meant literally); `;` warm, affectionate; `&` contrast, this one not another; `?` unsure; `!` strong feeling, the words say which. Each stands for a change of voice in speech. Changes the tone only: the sentence says the same and does the same job (statement, request). No default mark; a mark is never required, and without one the sentence means the same with its tone unwritten. -->
+<!-- Agent summary: five tone marks (table), written right before the English they apply to: `%` joking, teasing (not meant literally); `;` warm, affectionate; `&` contrast, this one not another; `?` unsure; `!` strong feeling, the words say which. Each stands for a change of voice in speech. Changes the tone only: the sentence says the same and does the same job (statement, request). No default mark; a mark is never required, and without one the sentence means the same with its tone unwritten. -->
 
-A **tone mark** is a symbol written in front of words to say how you mean them: as a joke, warmly, in contrast to something else, unsure, or with strong feeling. In speech, your voice shows these tones, and each mark stands for one change in your voice. Write the mark bare, with no space between it and the word after it.
+A **tone mark** is a symbol written in front of words to say how you mean them: as a joke, warmly, in contrast to something else, unsure, or with strong feeling. In speech, your voice shows these tones, and each mark stands for one change in your voice. Write the mark right before the words it applies to. A space after the mark changes how far it reaches, as the next section shows.
 
 | Mark | Meaning | Your voice in speech |
 |------|---------|----------------------|
@@ -28,19 +28,24 @@ A **tone mark** is a symbol written in front of words to say how you mean them: 
 | `?` | unsure about it | raised, tentative |
 | `!` | strong feeling (the words say which) | louder, stressed |
 
-The `%` mark says that you are teasing and do not mean the words literally. For example, *You're the worst* with no mark leaves the reader to tell a joke from a fight, while *%You're the worst* says it is teasing. Without a mark the sentence means the same thing, and its tone is not written down, so a mark is never required. None of the five is a default, because each says a different tone. Choose the one that matches how you mean the words, or write none.
+The `%` mark says that you are teasing and do not mean the words literally. For example, *You're the worst* with no mark leaves the reader to tell a joke from a fight, while *% You're the worst* says it is teasing. Without a mark the sentence means the same thing, and its tone is not written down, so a mark is never required. None of the five is a default, because each says a different tone. Choose the one that matches how you mean the words, or write none.
 
-A mark changes only the tone of the words. The sentence still says the same thing and does the same job, so *;Call me when you land* is still a request, made warmly. The `!` mark says the feeling is strong but not which feeling it is, because the words show that. For example, *!We shipped it* is strong excitement and *!They cancelled it* is strong upset, with the same mark on both.
+A mark changes only the tone of the words. The sentence still says the same thing and does the same job, so *; Call me when you land* is still a request, made warmly.
+
+The `!` mark says the feeling is strong but not which feeling it is, because the words show that. For example, *! We shipped it* is strong excitement and *! They cancelled it* is strong upset, with the same mark on both.
 
 ## What the mark applies to {#placement}
-<!-- Agent summary: the mark applies to what follows it. Attached to a word inside the sentence → that word only; attached to the first word → the whole sentence. A final `!` or `?` is English punctuation, not a tone mark. -->
+<!-- Agent summary: the mark applies to what follows it. Attached to a word, with no space: that word only, also at the start of a sentence. Followed by a space: the words after it, up to the end of the sentence or the next mark that has a space after it. A final `!` or `?` is English punctuation, not a tone mark. -->
 
-A mark applies to the words after it, so the reader sees the tone before reading the words. Attached to a word inside the sentence, it applies to that word only. Attached to the first word, it applies to the whole sentence. Here is the same sentence both ways:
+A mark applies to the words after it, so the reader sees the tone before reading the words.
+
+The space after the mark says how far it reaches. Attached to a word, with no space, the mark applies to that word only. Followed by a space, it applies to the words after it, up to the end of the sentence or the next mark that has a space after it. Here is the same sentence three ways:
 
 > He brought a ?casserole.  
+> ? He brought a casserole.  
 > ?He brought a casserole.
 
-The first sentence marks only *casserole*: you are not sure that *casserole* is the right word for what he brought. The second marks the whole sentence as something you are unsure of.
+The first sentence marks only *casserole*: you are not sure that *casserole* is the right word for what he brought. The second marks the whole sentence as something you are unsure of. The third marks only *He*, because the mark is attached to that word: you are sure a casserole came, and unsure who brought it.
 
 A `!` or `?` at the end of a sentence is not a tone mark. It is English punctuation and means what it means in English, so *We shipped it!* is an ordinary English sentence. A tone mark always comes before the words it applies to.
 
@@ -49,24 +54,24 @@ A `!` or `?` at the end of a sentence is not a tone mark. It is English punctuat
 
 Doubling a mark makes its tone stronger. For example, `!!` is a stronger feeling than `!`, and `??` means very unsure. Two copies of one mark is the most, so `!!!` is not a tone mark. Compare:
 
-> !We shipped it.  
-> !!We shipped it.
+> ! We shipped it.  
+> !! We shipped it.
 
 Different marks combine to mix their tones. Write them together with no space, in any order, because the order does not change the meaning: `?!` and `!?` mean the same. For example, `?!` means surprised and doubtful, and `%;` means teasing but fond:
 
-> ?!She's moving to Iceland.  
-> %;You and your spreadsheets.
+> ?! She's moving to Iceland.  
+> %; You and your spreadsheets.
 
 ## Examples {#examples}
 
-> %You're the worst.  
-> ;Call me when you land.  
+> % You're the worst.  
+> ; Call me when you land.  
 > We went &Tuesday.  
 > The meeting starts at ?six.  
-> !!We got the apartment.  
-> %;You and your spreadsheets.
+> !! We got the apartment.  
+> %; You and your spreadsheets.
 
-*We went &Tuesday* means Tuesday and not another day. *The meeting starts at ?six* marks only the time as something you are unsure of. *%;You and your spreadsheets* is teasing, and it is fond.
+*We went &Tuesday* means Tuesday and not another day. *The meeting starts at ?six* marks only the time as something you are unsure of. *%; You and your spreadsheets* is teasing, and it is fond.
 
 ## Telling a mark apart {#telling-apart}
 <!-- Agent summary: near misses. `?` mark = unsure; the sentence stays a statement, and a question is written as an English question. `&` only sets one thing against others; a word that is only the new part (an answer to a question) takes no mark. -->
@@ -75,7 +80,7 @@ A question and a stressed new word are easily confused with a tone mark, and nei
 
 ### Unsure or asking {#unsure-or-asking}
 
-The `?` mark means you are unsure, and it does not make the sentence a question. *?She's moving to Iceland* is still a statement: you are saying that she is moving, and that you are not sure of it. To ask, write an English question, such as *Is she moving to Iceland?*, which ends in English punctuation.
+The `?` mark means you are unsure, and it does not make the sentence a question. *? She's moving to Iceland* is still a statement: you are saying that she is moving, and that you are not sure of it. To ask, write an English question, such as *Is she moving to Iceland?*, which ends in English punctuation.
 
 ### Contrast or new information {#contrast-or-new}
 
@@ -90,19 +95,19 @@ Add a tone mark so the sentence says what the note asks for.
 **1.** *I love Mondays.* (you're joking)
 
 ::: details Show answer
-%I love Mondays.
+% I love Mondays.
 :::
 
 **2.** *Sleep well.* (warmly)
 
 ::: details Show answer
-;Sleep well.
+; Sleep well.
 :::
 
 **3.** *Sleep well.* (teasing, but fondly)
 
 ::: details Show answer
-%;Sleep well.
+%; Sleep well.
 :::
 
 **4.** *I asked for the blue one.* (the blue one, not another)
@@ -114,7 +119,7 @@ I asked for the &blue one.
 **5.** *She's moving to Iceland.* (you're surprised and doubtful)
 
 ::: details Show answer
-?!She's moving to Iceland.
+?! She's moving to Iceland.
 :::
 
 **6.** *She's moving to Iceland.* (you're not sure *Iceland* is the right place)
@@ -126,13 +131,13 @@ She's moving to ?Iceland.
 **7.** *We won.* (you feel strongly about it)
 
 ::: details Show answer
-!We won.
+! We won.
 :::
 
 **8.** *We won.* (the strongest feeling you can mark)
 
 ::: details Show answer
-!!We won.
+!! We won.
 :::
 
 <!-- Source (editors): tone-marks.md#showing-your-tone, tone-marks.md#emphasis-and-clefts. Lesson pages never link into the grammar; see docs/meta/grammar-docs.md#claritish-track. -->

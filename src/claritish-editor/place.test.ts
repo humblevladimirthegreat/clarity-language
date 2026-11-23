@@ -122,15 +122,15 @@ describe("on-cue placement", () => {
 describe("before-word placement", () => {
   const mark = (text: string, dropCue: boolean) => applyChanges(text, placeDropIn(cueIn(text), "%", { placement: "before-word", joiner: "space", dropCue })).text;
 
-  it("puts the mark at the start of the sentence", () => {
-    assert.equal(mark("You're the worst.", false), "%You're the worst.");
-    assert.equal(mark("Long day. You're the worst.", false), "Long day. %You're the worst.");
+  it("puts the mark and a space at the start of the sentence", () => {
+    assert.equal(mark("You're the worst.", false), "% You're the worst.");
+    assert.equal(mark("Long day. You're the worst.", false), "Long day. % You're the worst.");
   });
 
   it("drops a laugh at either end", () => {
-    assert.equal(mark("Mondays again lol", true), "%Mondays again");
-    assert.equal(mark("lol mondays again", true), "%mondays again");
-    assert.equal(mark("Lol mondays again", true), "%Mondays again");
+    assert.equal(mark("Mondays again lol", true), "% Mondays again");
+    assert.equal(mark("lol mondays again", true), "% mondays again");
+    assert.equal(mark("Lol mondays again", true), "% Mondays again");
   });
 });
 
@@ -151,8 +151,13 @@ describe("command placement", () => {
     assert.deepEqual(placeAtCommand("/can sing", 0, { from: 0, to: 4 }, "-xo"), []);
   });
 
-  it("joins a tone mark to the word after it", () => {
-    assert.equal(command("/tone You're the worst.", "%"), "%You're the worst.");
+  it("keeps a space after a tone mark that starts a sentence", () => {
+    assert.equal(command("/tone You're the worst.", "%"), "% You're the worst.");
+    assert.equal(command("Long day. /tone You're the worst.", "%"), "Long day. % You're the worst.");
+    assert.equal(command("%/tone Sleep well.", ";"), "%; Sleep well.");
+  });
+
+  it("joins a tone mark inside a sentence to the word after it", () => {
     assert.equal(command("We went /tone Tuesday.", "&"), "We went &Tuesday.");
   });
 });

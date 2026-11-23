@@ -18,8 +18,8 @@ export type NearMiss = Span & {
   reason: "ending" | "no-t" | "spelling";
 };
 
-/** A tone mark run before a word, after a space or opening punctuation (`?!She's`, `&Tuesday`). */
-const MARKS_RE = /(?<=^|[\s"“‘(\[])[%;&?!]+(?=[\p{L}\p{N}])/gu;
+/** A tone mark run after a space or opening punctuation, attached to a word (`&Tuesday`) or standing before one with a space (`?! She's`). */
+const MARKS_RE = /(?<=^|[\s"“‘(\[])[%;&?!]+(?=[ \t]*[\p{L}\p{N}])/gu;
 /** A word, with apostrophes and hyphens inside it (`sing-xo`, `I'm`). */
 const CHUNK_RE = /[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu;
 

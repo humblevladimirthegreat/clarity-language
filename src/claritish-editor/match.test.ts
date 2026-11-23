@@ -184,6 +184,7 @@ describe("cues", () => {
   it("does not flag a sentence that already has a drop-in from the cue's lesson", () => {
     const form = forms[order[0]!]![0]!;
     assert.equal(scan(`I think it rained ${form}.`).length, 0);
+    assert.equal(scan("% You're the worst.").length, 0);
     assert.equal(scan("%You're the worst.").length, 0);
     assert.equal(scan("I can't sing, but I drive-xe.").length, 0);
     assert.equal(scan(`He's a liar${forms.labels![0]!}.`).length, 0);

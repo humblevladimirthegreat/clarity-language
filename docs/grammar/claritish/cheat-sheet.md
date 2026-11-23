@@ -64,7 +64,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 | Mark | Meaning | Mark | Meaning |
 |------|---------|------|---------|
-| `%` | joking, teasing | `?` | unsure about this word |
+| `%` | joking, teasing | `?` | unsure about it |
 | `;` | warm, affectionate | `!` | strong feeling |
 | `&` | contrast: this one, not another | | |
 

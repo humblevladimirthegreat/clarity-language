@@ -7,7 +7,7 @@ import type { Cue, Span, Token } from "./match.js";
  * thanks to something owned); `suffix`: a hyphen suffix on the English verb after the cue, which
  * replaces the cue (*I can't sing* → *I sing-xu*); `on-cue`: a hyphen suffix on the cue's last
  * word, which stays (*He's a liar* → *He's a liar-the*); `before-word`: a tone mark at the start of
- * the sentence, coloring all of it.
+ * the sentence with a space after it, so it applies to the whole sentence (`% You're the worst.`).
  */
 export type Placement = "after-clause" | "after-noun" | "suffix" | "on-cue" | "before-word";
 
@@ -74,7 +74,7 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
   } else if (options.placement === "before-word") {
     const first = sentence.tokens.find((t) => t.word && (!drop || outside(t)));
     at = (first?.from ?? base) - base;
-    insert = form;
+    insert = `${form} `;
   } else if (options.placement === "after-noun" && options.noun) {
     at = options.noun.to - base;
     insert = ` ${form}`;
@@ -88,7 +88,7 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
 
   if (removal && at >= removal.from && at <= removal.to) {
     // The drop-in lands where the cue was cut (`closed, I think.` → `closed thovum.`); a tone mark
-    // goes before the re-capitalized letter (`lol you're` → `%you're`).
+    // and its space go before the re-capitalized letter (`Lol mondays` → `% Mondays`).
     const merged = options.placement === "before-word" ? insert + removal.insert : removal.insert + insert;
     changes.push({ from: removal.from + base, to: removal.to + base, insert: merged, form });
   } else {
@@ -100,8 +100,9 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
 
 /**
  * Changes that replace a slash command (`/sure`) in `line` (at document offset `base`) with
- * `form`: a suffix joins the word before it (`sing /can` → `sing-xo`), a tone mark the word after
- * it, and any other drop-in takes the command's place. None when a suffix has no word before it.
+ * `form`: a suffix joins the word before it (`sing /can` → `sing-xo`); a tone mark at the start of a
+ * sentence keeps one space after it, so it applies to the sentence (`% You're`), and inside a sentence
+ * joins the word after it (`&Tuesday`); any other drop-in takes the command's place. None when a suffix has no word before it.
  */
 export function placeAtCommand(line: string, base: number, command: Span, form: string): PlacedChange[] {
   const before = line.slice(0, command.from - base);
@@ -111,7 +112,10 @@ export function placeAtCommand(line: string, base: number, command: Span, form: 
     return m ? [{ from: command.from - m[1]!.length, to: command.to, insert: form, form }] : [];
   }
   if (!/[\p{L}\p{N}]/u.test(form)) {
-    return [{ from: command.from, to: command.to + /^[ \t]*/.exec(after)![0].length, insert: form, form }];
+    const space = /^[ \t]*/.exec(after)![0].length;
+    // A mark typed after another joins its stack, so the stack's start decides (`%/tone Sleep` → `%; Sleep`).
+    const sentenceStart = /(^|[.!?…]["”’)]*\s)\s*$/u.test(before.replace(/[%;&?!]+$/u, ""));
+    return [{ from: command.from, to: command.to + space, insert: sentenceStart ? `${form} ` : form, form }];
   }
   return [{ from: command.from, to: command.to, insert: /^[\p{L}\p{N}]/u.test(after) ? `${form} ` : form, form }];
 }

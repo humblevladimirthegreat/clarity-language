@@ -20,6 +20,10 @@ describe("drop-ins in the text", () => {
     assert.deepEqual(findDropIns(text, known).map((d) => d.form), [could, "-xo", "?!", sorry]);
   });
 
+  it("finds a tone mark that stands before a sentence with a space", () => {
+    assert.deepEqual(findDropIns("Long day. % You're the worst.", known).map((d) => d.form), ["%"]);
+  });
+
   it("reads English punctuation as English", () => {
     assert.deepEqual(findDropIns("Really? Yes! 50% off; it's fine.", known), []);
   });
