@@ -51,4 +51,9 @@ describe("guard-long-output: long Markdown", () => {
     assert.ok(check("cat docs/meta/solver.md", root, root).markdown.length > 0);
     assert.equal(check("sed -n '1,40p' docs/meta/solver.md", root, root).markdown.length, 0);
   });
+
+  it("lets style-editor print a long page whole, but not other agents", () => {
+    assert.equal(check("cat docs/meta/solver.md", root, root, "style-editor").markdown.length, 0);
+    assert.ok(check("cat docs/meta/solver.md", root, root, "proposal-worker").markdown.length > 0);
+  });
 });

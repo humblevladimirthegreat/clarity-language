@@ -9,7 +9,8 @@
  * files it names (under docs/, or AGENTS.md / TODO.md) total more than LIMIT
  * lines: read it in slices instead. Allowed: `cat x.md | grep …`,
  * `cat > x.md <<EOF`, `sed -n 'A,Bp'`, `grep`, `head`, `tail`, and files
- * outside the guarded paths.
+ * outside the guarded paths. The `style-editor` subagent is exempt: it reads
+ * whole lesson pages to reword them (the hook input's `agent_type`).
  *
  * Raw test runs. `tsx --test` or `node --test` (also through `npx`) whose
  * output reaches the transcript: a failure prints every assertion's whole
@@ -27,6 +28,8 @@ import { pathToFileURL } from "node:url";
 
 const LIMIT = 150;
 const PRINTERS = new Set(["cat", "less", "more", "bat", "nl"]);
+/** Subagent types the long-Markdown rule does not apply to. */
+const MARKDOWN_EXEMPT = new Set(["style-editor"]);
 
 function stripHeredocs(command) {
   const lines = command.split("\n");
@@ -79,7 +82,7 @@ export function rawTestRun(words) {
   return ["tsx", "node"].includes(basename(rest[i] ?? "")) && rest.slice(i + 1).includes("--test");
 }
 
-export function check(command, cwd, root) {
+export function check(command, cwd, root, agentType) {
   const text = stripHeredocs(command);
   let dir = cwd;
   const offenders = [];
@@ -109,7 +112,8 @@ export function check(command, cwd, root) {
   }
   // The limit applies to the whole call: two mid-size files in one command count together.
   const total = offenders.reduce((sum, [, n]) => sum + n, 0);
-  return { markdown: total > LIMIT ? offenders : [], rawTest };
+  const exempt = MARKDOWN_EXEMPT.has(agentType ?? "");
+  return { markdown: !exempt && total > LIMIT ? offenders : [], rawTest };
 }
 
 function main() {
@@ -122,7 +126,7 @@ function main() {
   const command = input?.tool_input?.command;
   if (typeof command !== "string") process.exit(0);
   const root = process.env.CLAUDE_PROJECT_DIR || input.cwd || process.cwd();
-  const { markdown: offenders, rawTest } = check(command, input.cwd || root, root);
+  const { markdown: offenders, rawTest } = check(command, input.cwd || root, root, input.agent_type);
   if (rawTest) {
     process.stderr.write(
       "Blocked: a direct tsx --test / node --test run prints each failure's whole input (a failed assert.match prints the full program). " +
