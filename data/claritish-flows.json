@@ -592,19 +592,19 @@
         "parts": [
           {
             "section": "allowed",
-            "row": "agreed",
+            "row": "they agreed",
             "col": "{consent}"
           }
         ],
         "gloss": [
           {
             "section": "allowed",
-            "row": "agreed",
+            "row": "they agreed",
             "take": "row"
           },
           {
             "section": "allowed",
-            "row": "agreed",
+            "row": "they agreed",
             "col": "{consent}",
             "take": "english"
           }
@@ -688,13 +688,13 @@
               },
               "stance": {
                 "section": "sakes",
-                "table": 2,
+                "table": 3,
                 "row": "prescription",
                 "col": "Stance"
               },
               "ending": {
                 "section": "sakes",
-                "table": 2,
+                "table": 3,
                 "col": "{ending}",
                 "take": "ending"
               }
@@ -710,14 +710,14 @@
           },
           {
             "section": "sakes",
-            "table": 2,
+            "table": 3,
             "row": "prescription",
             "col": "Says",
             "take": "english"
           },
           {
             "section": "sakes",
-            "table": 2,
+            "table": 3,
             "row": "prescription",
             "col": "{ending}",
             "take": "english"

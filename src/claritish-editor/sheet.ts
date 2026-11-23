@@ -8,7 +8,7 @@ import { cells, spans, tables } from "../lint/cheat-sheet-tables.js";
 export type SheetRef = {
   /** `{#id}` of the sheet heading. */
   section: string;
-  /** 1-based table in the section; the first by default. */
+  /** 1-based table in the section. By default, the one table whose rows hold `row`; otherwise the first. */
   table?: number;
   /** Row label: the first cell's English, matched whole or as a word prefix. */
   row?: string;
@@ -75,19 +75,31 @@ function fill(value: string, answers: Readonly<Record<string, string>>): string 
   });
 }
 
-/** The one item that is `wanted`, or starts with it at a word boundary. */
-function pick(items: readonly string[], wanted: string, what: string): number {
+/** The items that are `wanted` (when exactly one is), else those that start with it at a word boundary. */
+function matches(items: readonly string[], wanted: string): number[] {
   const w = wanted.toLowerCase();
   const exact = items.flatMap((item, i) => (item.toLowerCase() === w ? [i] : []));
-  if (exact.length === 1) return exact[0]!;
-  const prefix = items.flatMap((item, i) => (item.toLowerCase().startsWith(w) && !/[\p{L}\p{N}]/u.test(item[w.length] ?? "") ? [i] : []));
-  if (prefix.length === 1) return prefix[0]!;
-  throw new Error(`${what} \`${wanted}\` ${prefix.length ? "is ambiguous" : "is not on the sheet"} (have: ${items.join("; ")})`);
+  if (exact.length === 1) return exact;
+  return items.flatMap((item, i) => (item.toLowerCase().startsWith(w) && !/[\p{L}\p{N}]/u.test(item[w.length] ?? "") ? [i] : []));
 }
 
-function tableOf(sheet: Sheet, ref: SheetRef): SheetTable {
+/** The one item that is `wanted`, or starts with it at a word boundary. */
+function pick(items: readonly string[], wanted: string, what: string): number {
+  const found = matches(items, wanted);
+  if (found.length === 1) return found[0]!;
+  throw new Error(`${what} \`${wanted}\` ${found.length ? "is ambiguous" : "is not on the sheet"} (have: ${items.join("; ")})`);
+}
+
+const rowLabels = (table: SheetTable) => table.rows.map((r) => cellEnglish(r[0] ?? ""));
+
+function tableOf(sheet: Sheet, ref: SheetRef, answers: Readonly<Record<string, string>>): SheetTable {
   const list = sheet.tables.get(ref.section);
   if (!list) throw new Error(`no table in sheet section #${ref.section}`);
+  if (ref.table === undefined && ref.row !== undefined) {
+    const wanted = fill(ref.row, answers);
+    const holders = list.filter((t) => matches(rowLabels(t), wanted).length === 1);
+    if (holders.length === 1) return holders[0]!;
+  }
   const table = list[(ref.table ?? 1) - 1];
   if (!table) throw new Error(`sheet section #${ref.section} has no table ${ref.table}`);
   return table;
@@ -100,7 +112,7 @@ export function resolveRef(sheet: Sheet, ref: SheetRef, answers: Readonly<Record
     const line = sheetLine(sheet, ref.section, fill(ref.line, answers));
     return ref.item === undefined ? line : lineItem(line, fill(ref.item, answers), ref.take ?? "span", where);
   }
-  const table = tableOf(sheet, ref);
+  const table = tableOf(sheet, ref, answers);
   const take = ref.take ?? "span";
   let cell: string;
   let rowLabel = "";
@@ -122,7 +134,7 @@ export function resolveRef(sheet: Sheet, ref: SheetRef, answers: Readonly<Record
       }
     }
     if (ref.row === undefined) throw new Error(`ref to ${where} names no row or cell`);
-    const row = table.rows[pick(table.rows.map((r) => cellEnglish(r[0] ?? "")), fill(ref.row, answers), `row in ${where}`)]!;
+    const row = table.rows[pick(rowLabels(table), fill(ref.row, answers), `row in ${where}`)]!;
     rowLabel = cellEnglish(row[0] ?? "");
     if (take === "row") return rowLabel;
     if (col === undefined) throw new Error(`ref to ${where} names a row but no column`);

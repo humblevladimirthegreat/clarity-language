@@ -73,11 +73,12 @@ LEXICON_MODEL = genanki.Model(
     sort_field_index=0,
 )
 
-# Claritish: the form on the front; the meaning (HTML from the cheat sheet) and a small, muted
-# lesson line on the back. One template; the Ageben packs never share these notes.
+# Claritish: the form on the front; the meaning (HTML from the cheat sheet, with a muted `.also`
+# line for a row's other ending forms) and a small, muted lesson line on the back. One template; the Ageben packs never share these notes.
 CLARITISH_CSS = CSS + """
 .meaning { display: inline-block; text-align: left; margin: 0.25em 0; }
 .lesson { margin-top: 1em; font-size: 13px; opacity: 0.55; }
+.also { margin-top: 0.35em; font-size: 14px; opacity: 0.7; }
 """
 
 CLARITISH_MODEL = genanki.Model(

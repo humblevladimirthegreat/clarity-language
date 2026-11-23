@@ -19,8 +19,14 @@ export const CLARITISH_MODEL = "Claritish";
 export const CLARITISH_FIELDS = ["front", "meaning", "lesson"] as const;
 export type ClaritishFields = Record<(typeof CLARITISH_FIELDS)[number], string>;
 
-/** One meaning on a back: `head` in bold, `context` in brackets, then `label: detail` or `detail`. */
-export type ClaritishMeaning = { head: string; context?: string; label?: string; detail?: string };
+/** A form's ending reading: `label: detail`, or either alone. */
+export type ClaritishReading = { label?: string; detail?: string };
+
+/**
+ * One meaning on a back: `head` in bold, `context` in brackets, then `label: detail` or `detail`.
+ * `also`: the row's other ending forms, which get no note of their own, on a muted line below.
+ */
+export type ClaritishMeaning = { head: string; context?: string; also?: ({ form: string } & ClaritishReading)[] } & ClaritishReading;
 
 export type ClaritishLesson = { title: string; slug: string; page: string };
 
@@ -90,7 +96,13 @@ function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-/** A back as HTML: meanings joined by a line break. */
+function readingHtml(r: ClaritishReading): string {
+  if (r.label && r.detail) return `${escapeHtml(r.label)}: <i>${escapeHtml(r.detail)}</i>`;
+  if (r.detail) return `<i>${escapeHtml(r.detail)}</i>`;
+  return escapeHtml(r.label ?? "");
+}
+
+/** A back as HTML: meanings joined by a line break; a meaning's other ending forms in a muted block. */
 export function meaningHtml(meanings: readonly ClaritishMeaning[]): string {
   return meanings
     .map((m) => {
@@ -98,9 +110,24 @@ export function meaningHtml(meanings: readonly ClaritishMeaning[]): string {
       if (m.context) out += ` (${escapeHtml(m.context)})`;
       if (m.label && m.detail) out += ` · ${escapeHtml(m.label)}: <i>${escapeHtml(m.detail)}</i>`;
       else if (m.label || m.detail) out += ` · ${escapeHtml((m.label || m.detail)!)}`;
+      if (m.also?.length) out += `<div class="also">${m.also.map((a) => `${escapeHtml(a.form)} ${readingHtml(a)}`).join(" · ")}</div>`;
       return out;
     })
     .join("<br>");
+}
+
+/**
+ * One table row's ending cells as places. `keepAll` gives every cell a note: the row that first
+ * teaches its table's ending scale. Otherwise only the `-m` cell gets one, with the others in `also`.
+ */
+function rowPlaces(cells: readonly ({ form: string; ending: string } & ClaritishReading)[], keepAll: boolean, place: (form: string, reading: ClaritishReading) => Place, where: string): Place[] {
+  const reading = (c: ClaritishReading): ClaritishReading => ({ ...(c.label ? { label: c.label } : {}), ...(c.detail ? { detail: c.detail } : {}) });
+  if (keepAll) return cells.map((c) => place(c.form, reading(c)));
+  const main = cells.find((c) => c.ending === "m");
+  if (!main) throw new Error(`${where}: no \`-m\` cell`);
+  const p = place(main.form, reading(main));
+  const also = cells.filter((c) => c !== main).map((c) => ({ form: c.form, ...reading(c) }));
+  return [{ ...p, meaning: { ...p.meaning, also } }];
 }
 
 type Place = { form: string; section: string; meaning: ClaritishMeaning; link?: string };
@@ -122,22 +149,24 @@ function only(list: readonly string[], what: string): string {
   return list[0]!;
 }
 
-/** Row label × ending column tables (#settled, #how-you-know, #allowed): one place per form cell. */
+/**
+ * Row label × ending column tables (#settled, #how-you-know, #allowed). Each table is one ending
+ * scale: its first row gets a place per cell, every later row one for its `-m` cell (`rowPlaces`).
+ */
 function gridPlaces(sheet: Sheet, section: string, headingLink: string | undefined): Place[] {
-  const t = table(sheet, section, 0);
-  return t.rows.flatMap((row) => {
-    const head = cellEnglish(row[0] ?? "");
-    return row.slice(1).map((cell, j): Place => {
-      const header = t.header[j + 1]!;
-      const detail = cellEnglish(cell);
-      return {
-        form: only(spans(cell), `#${section} row ${head}`),
-        section,
-        meaning: { head, label: headerEnglish(header), ...(detail ? { detail } : {}) },
-        link: firstLink(row[0] ?? "", header) ?? headingLink,
-      };
-    });
-  });
+  return (sheet.tables.get(section) ?? []).flatMap((t) =>
+    t.rows.flatMap((row, r) => {
+      const head = cellEnglish(row[0] ?? "");
+      const where = `#${section} row ${head}`;
+      const cells = t.header.flatMap((header, j) => {
+        const ending = headerEnding(header);
+        if (!ending) return [];
+        return [{ form: only(spans(row[j] ?? ""), where), ending, label: headerEnglish(header), detail: cellEnglish(row[j] ?? ""), header }];
+      });
+      const headerOf = new Map(cells.map((c) => [c.form, c.header]));
+      return rowPlaces(cells, r === 0, (form, reading) => ({ form, section, meaning: { head, ...reading }, link: firstLink(row[0] ?? "", headerOf.get(form)!) ?? headingLink }), where);
+    }),
+  );
 }
 
 /** Tables of form / English column pairs (#suffixes, #tone-marks, the urge table): one place per form cell. */
@@ -181,38 +210,44 @@ function sakePlaces(sheet: Sheet, headingLink: string | undefined, endingLabel: 
   const prefix = formula[0];
   if (formula.length !== 4 || !prefix || !("literal" in prefix)) throw new Error("cheat sheet #sakes: the sake word formula is not `prefix` + sake + stance + ending");
 
-  const stances = table(sheet, section, 1);
-  const stanceCol = column(stances.header, "Stance", section);
-  const saysCol = column(stances.header, "Says", section);
-  const exampleCol = column(stances.header, "Example", section);
   const stanceRows: Place[] = [];
   const crossRows: Place[] = [];
   const saysForms: Place[] = [];
-  for (const row of stances.rows) {
-    const stanceCell = row[stanceCol] ?? "";
-    const stance = only(spans(stanceCell), "#sakes stance cell");
-    const saysCell = row[saysCol] ?? "";
-    const says = plain(saysCell).split(",")[0]!.trim();
-    const link = firstLink(saysCell, stanceCell) ?? headingLink;
-    stanceRows.push({ form: stance, section, meaning: { head: cellEnglish(stanceCell), detail: says }, link });
-    const example = spans(row[exampleCol] ?? "")[0];
-    if (!example) throw new Error(`#sakes stance ${stance}: no Example`);
-    const stem = example.slice(0, -1);
-    if (!example.startsWith(prefix.literal) || !stem.endsWith(stance)) throw new Error(`#sakes Example \`${example}\` does not fit the sake word formula`);
-    const need = needOf.get(stem.slice(prefix.literal.length, -stance.length));
-    if (!need) throw new Error(`#sakes Example \`${example}\`: its sake is not in the needs table`);
-    stances.header.forEach((header, i) => {
-      const ending = headerEnding(header);
-      if (!ending) return;
-      const label = endingLabel.get(ending);
-      if (!label) throw new Error(`#sakes: ending -${ending} has no label in #settled`);
-      crossRows.push({ form: stem + ending, section, meaning: { head: says, context: need, label, detail: plain(row[i] ?? "") }, link });
+  // Stance tables: the first reads #settled's scale, so each row gets its `-m` form only; a later
+  // table is a scale of its own, and its first row gets every ending (`rowPlaces`).
+  const stanceTables = (sheet.tables.get(section) ?? []).slice(1);
+  if (!stanceTables.length) throw new Error("cheat sheet #sakes has no stance table");
+  stanceTables.forEach((stances, k) => {
+    const stanceCol = column(stances.header, "Stance", section);
+    const saysCol = column(stances.header, "Says", section);
+    const exampleCol = column(stances.header, "Example", section);
+    stances.rows.forEach((row, r) => {
+      const stanceCell = row[stanceCol] ?? "";
+      const stance = only(spans(stanceCell), "#sakes stance cell");
+      const saysCell = row[saysCol] ?? "";
+      const says = plain(saysCell).split(",")[0]!.trim();
+      const link = firstLink(saysCell, stanceCell) ?? headingLink;
+      stanceRows.push({ form: stance, section, meaning: { head: cellEnglish(stanceCell), detail: says }, link });
+      const example = spans(row[exampleCol] ?? "")[0];
+      if (!example) throw new Error(`#sakes stance ${stance}: no Example`);
+      const stem = example.slice(0, -1);
+      if (!example.startsWith(prefix.literal) || !stem.endsWith(stance)) throw new Error(`#sakes Example \`${example}\` does not fit the sake word formula`);
+      const need = needOf.get(stem.slice(prefix.literal.length, -stance.length));
+      if (!need) throw new Error(`#sakes Example \`${example}\`: its sake is not in the needs table`);
+      const cells = stances.header.flatMap((header, i) => {
+        const ending = headerEnding(header);
+        if (!ending) return [];
+        const label = headerEnglish(header) || (k === 0 ? endingLabel.get(ending) : undefined);
+        if (k === 0 && !label) throw new Error(`#sakes: ending -${ending} has no label in #settled`);
+        return [{ form: stem + ending, ending, ...(label ? { label } : {}), detail: plain(row[i] ?? "") }];
+      });
+      crossRows.push(...rowPlaces(cells, k > 0 && r === 0, (form, reading) => ({ form, section, meaning: { head: says, context: need, ...reading }, link }), `#sakes stance ${stance}`));
+      // A form in the Says cell (`blawan` for *yours*): its meaning is the emphasis after it.
+      for (const m of saysCell.matchAll(/`([^`]+)`[^`*]*\*([^*]+)\*/g)) {
+        saysForms.push({ form: m[1]!, section, meaning: { head: m[2]!, detail: plain(saysCell) }, link });
+      }
     });
-    // A form in the Says cell (`blawan` for *yours*): its meaning is the emphasis after it.
-    for (const m of saysCell.matchAll(/`([^`]+)`[^`*]*\*([^*]+)\*/g)) {
-      saysForms.push({ form: m[1]!, section, meaning: { head: m[2]!, detail: plain(saysCell) }, link });
-    }
-  }
+  });
   places.push(...stanceRows, ...crossRows, ...saysForms);
 
   // A prose line with a swap (`g` for `th`) and its example: *my coat* `gobathal`.

@@ -75,7 +75,7 @@ In `data/claritish-flows.json`, each question's answers name a place on the chea
 - a cell by its English (`autonomy`) or by the meaning in the cell beside it (`can never` for `-xu`),
 - or a prose line (the `Sake word:` formula).
 
-`{question}` in a reference is filled with the answer. A choice with no `label` takes the sheet's own English; a question's `labelFrom` reads labels that depend on an earlier answer (*tolerated* for allowed, *by custom* for required).
+A reference with a row and no `table` reads the one table in its section that holds that row, so a row can move to a table of its own (as `planned` and `they agreed` have) with no flow edit; otherwise it reads the first table. `{question}` in a reference is filled with the answer. A choice with no `label` takes the sheet's own English; a question's `labelFrom` reads labels that depend on an earlier answer (*tolerated* for allowed, *by custom* for required).
 
 | Key | Does |
 |-----|------|

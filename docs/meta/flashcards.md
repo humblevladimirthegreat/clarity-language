@@ -99,16 +99,17 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 | Sheet section | Notes |
 |---------------|-------|
 | `#sounds` (vowels and `x`) | none: sounds, not meanings |
-| `#settled`, `#how-you-know`, `#allowed` | one per form cell; the back is row label · column header: English |
+| `#settled`, `#how-you-know`, `#allowed` | each table is one ending scale: its first row gets one note per form cell, each later row one for its `-m` cell ([ending scales](#ending-scales)); the back is row label · column header: English |
 | `#suffixes` | one per suffix, front with its hyphen |
 | `#tone-marks` | one per mark |
-| `#sakes` | one per need; one per stance; one per stance × ending, spelled by swapping the ending on the row's Example; each form in a Says cell (cut at its first comma); each prose line with a swap and its example (`gobathal`) |
+| `#sakes` | one per need; one per stance; stance × ending forms, spelled by swapping the ending on the row's Example: one per row for its `-m` form in the first stance table, and every ending on the first row of each later table ([ending scales](#ending-scales)); each form in a Says cell (cut at its first comma); each prose line with a swap and its example (`gobathal`) |
 | `#feelings` | one per urge; a line that gives a form already on the sheet another meaning joins that note |
 
 - A section with tables and no rule above throws, so a new sheet section needs a rule in `sheetPlaces`.
 - **No note** for pattern pieces (`th`, `g`, the formula table, the *Sake word* line) or a bare ending: endings read differently in each table, so their readings sit on full forms.
 - **Merging:** one note per distinct form. A form in two places gets one meaning per place, joined by a line break; its section id (and so its GUID) is that of its first place.
-- **Ending labels** on stance × ending notes come from the `#settled` column headers. An ending swap is `swapEnding`, the same variant the cheat sheet lint accepts as taught.
+- <a id="ending-scales"></a>**Ending scales:** once a learner knows a scale's three endings, a second row's `-l` and `-r` cards only drill its stem again. So each scale's endings get notes once, on the row that first teaches it (`rowPlaces`). Every other row gets one note, for its `-m` form, and its `-l` / `-r` forms and readings sit on that back in a muted `.also` line. A row whose endings read in a way the scale does not predict (*backups ready* on a plan, *they invited it* on an ought) goes in a table of its own on the sheet, so it is the first row of its scale. Its headers are bare `-l` / `-m` / `-r`, the first header cell names what the ending grades, and its cells give the readings.
+- **Ending labels** on stance × ending notes come from the stance table's headers. Bare headers in the first stance table read the `#settled` column headers; a later stance table's bare headers give no label, and the cell is the reading. An ending swap is `swapEnding`, the same variant the cheat sheet lint accepts as taught.
 - **Lesson of a note:** where the sheet links the note's first place to a lesson (its row, then its column header, then its section heading), that lesson. Otherwise the first lesson in `claritishLessons` order whose page has the form, or an ending-swapped variant, in a backtick span, including as a whole word inside a multi-word span. The build throws on a sheet link to a page that is not a lesson, and on a form in no lesson.
 - **Tests** ([`flashcards-claritish.test.ts`](../../src/flashcards-claritish.test.ts)) fail on a note with no lesson and on a lesson page that lacks its note's form.
 - Claritish cards ship unsuspended; new cards follow deck order, then sheet order inside a deck.

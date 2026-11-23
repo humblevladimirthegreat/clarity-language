@@ -25,6 +25,9 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | [decided](decisions-and-tries.md) | `thogel` for good | `thogem` can still change | `thoger` for now |
 | [tries](decisions-and-tries.md) | `howal` committed to trying | `howam` tries | `howar` a trial run |
 | [wants](wants-and-plans.md) | `thalol` for a long time | `thalom` wants to | `thalor` feels like it now |
+
+| How worked out | `-l` | `-m` | `-r` |
+|----------------|------|------|------|
 | [planned](wants-and-plans.md) | `thagol` backups ready | `thagom` steps laid out | `thagor` only the direction |
 
 ## [How you know](how-you-know.md) {#how-you-know}
@@ -46,16 +49,18 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | allowed | `hwuval` | `hwuvam` | `hwuvar` tolerated |
 | forbidden | `hwuvul` | `hwuvum` | `hwuvur` frowned on |
 | required | `hwuvol` | `hwuvom` | `hwuvor` by custom |
-| agreed (the affected person) | `hwudal` in advance | `hwudam` said yes, can take it back | `hwudar` assumed OK |
 
-## Suffixes on English words {#suffixes}
+| How firmly | `-l` | `-m` | `-r` |
+|------------|------|------|------|
+| they agreed | `hwudal` in advance | `hwudam` said yes, can take it back | `hwudar` assumed OK |
 
-| [Label reach](labels.md) | | [Ability](can-and-cant.md) | |
-|--------------------------|-|----------------------------|-|
-| `-thu` | this episode | `-xa` | can |
-| `-tho` | a practiced role | `-xo` | can't, just for now |
-| `-the` | this pair: one relationship | `-xe` | can't yet (the default) |
-| `-tha` | a type across scenes | `-xu` | can never |
+## [Tone marks](tone-marks.md) {#tone-marks}
+
+| Mark | Meaning | Mark | Meaning |
+|------|---------|------|---------|
+| `%` | joking, teasing | `?` | unsure about this word |
+| `;` | warm, affectionate | `!` | strong feeling |
+| `&` | contrast: this one, not another | | |
 
 <PageBreak />
 
@@ -73,8 +78,13 @@ Sake word: `th` + sake + stance + ending.
 |--------|------|---------|--------|--------|--------|
 | `tha` met | [thanks](thanks-and-sorry.md) | `thawetham` | it will stay with me | thank you | got me through right now |
 | `thu` unmet | [sorry](thanks-and-sorry.md), with `blawan` for *yours* | `thawethum`, `thawethum blawan` | deeply sorry | I'm sorry | my bad |
-| `the` prescription | [ought to be done](oughts-and-motives.md) for it | `thawethem` | they invited it | your own offer | worth a try |
 | `tho` motive | [being done](oughts-and-motives.md) for it | `thawethom` | over time | unstated | right away |
+
+On an ought word, the ending says why the advice is welcome:
+
+| Stance | Says | Example | `-l` | `-m` | `-r` |
+|--------|------|---------|--------|--------|--------|
+| `the` prescription | [ought to be done](oughts-and-motives.md) for it | `thawethem` | they invited it | your own offer | worth a try |
 
 Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `gobathal`.
 
@@ -99,12 +109,13 @@ How long it lasts: `-l` settled in, `-m` open, `-r` a wave that will pass.
 
 A cost or payoff that may come: `thomam` right before the feeling word.
 
-## [Tone marks](tone-marks.md) {#tone-marks}
+## Suffixes on English words {#suffixes}
 
-| Mark | Meaning | Mark | Meaning |
-|------|---------|------|---------|
-| `%` | joking, teasing | `?` | unsure about this word |
-| `;` | warm, affectionate | `!` | strong feeling |
-| `&` | contrast: this one, not another | | |
+| [Label reach](labels.md) | | [Ability](can-and-cant.md) | |
+|--------------------------|-|----------------------------|-|
+| `-thu` | this episode | `-xa` | can |
+| `-tho` | a practiced role | `-xo` | can't, just for now |
+| `-the` | this pair: one relationship | `-xe` | can't yet (the default) |
+| `-tha` | a type across scenes | `-xu` | can never |
 
 <!-- Claritish track, cheat sheet: every drop-in from the lessons, condensed. Adds no forms and links only to lessons (docs/meta/grammar-docs.md#claritish-track). scripts/lint-cheat-sheets.ts checks it against the lessons' tables, and the journal editor (editor.md) reads its forms from these tables. -->

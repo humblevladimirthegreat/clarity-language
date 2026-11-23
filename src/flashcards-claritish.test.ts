@@ -53,6 +53,30 @@ describe("Claritish notes", () => {
     assert.ok(!fronts.has(spans(sheet.tables.get("sounds")![0]!.rows.at(-1)![0]!)[0]!), "the x sound");
   });
 
+  it("drills each ending scale once: later rows of a table get their -m form, with -l and -r on the back", () => {
+    const byFront = new Map(pack.notes.map((n) => [n.fields.front, n]));
+    for (const section of ["settled", "how-you-know", "allowed"]) {
+      for (const t of sheet.tables.get(section)!) {
+        const endingCols = t.header.flatMap((h, j) => (/^`-[lmr]`/.test(h.trim()) ? [j] : []));
+        t.rows.forEach((row, r) => {
+          const forms = endingCols.map((j) => spans(row[j] ?? "")[0]!);
+          const main = forms.find((f) => f.endsWith("m"))!;
+          if (r === 0) {
+            for (const f of forms) assert.ok(byFront.has(f), `${f}: first row of its table has no note`);
+            return;
+          }
+          const also = byFront.get(main)?.meanings[0]?.also?.map((a) => a.form) ?? [];
+          for (const f of forms.filter((f) => f !== main)) {
+            assert.ok(!byFront.has(f), `${f}: a later row's -l / -r form has a note of its own`);
+            assert.ok(also.includes(f), `${f}: not on the back of ${main}`);
+          }
+        });
+      }
+    }
+    assert.match(byFront.get("thawetham")!.fields.meaning, /<div class="also">thawethal /);
+    assert.ok(byFront.has("thawethel") && byFront.has("thawether"), "a later stance table's first row keeps every ending");
+  });
+
   it("joins a form's meanings from two places into one note", () => {
     const joined = pack.notes.filter((n) => n.meanings.length > 1);
     assert.ok(joined.length >= 1);
