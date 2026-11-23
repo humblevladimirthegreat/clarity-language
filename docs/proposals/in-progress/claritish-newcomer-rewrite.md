@@ -44,7 +44,7 @@ Each is a usage aid that adds no meaning, unless noted.
 - labels: when unsure of the reach, go by what you have seen (one episode gives `-thu`).
 - allowed-required-agreed: leave the drop-in out when the English already names the source.
 - oughts-and-motives: advice for the listener's own good with `blawan`, and `hual` for *the usual reason*, are not taught; the P1 writer suggested adding `blawan` (medium).
-- wants-and-plans: *English I'm going to can introduce a wish or something you mean to do.* A claim about English; the journal editor offers both a want and a plan on that cue, but [intention](../../grammar/intermediate/intention.md) lists only intention and forecast for *going to*. The auditor's confidence that it needs a change: low.
+- wants-and-plans: *English I'm going to can introduce a wish or something you mean to do.* A claim about English; the journal editor offers both a want and a plan on that cue, but [intention](../../grammar/beginner/intention.md) lists only intention and forecast for *going to*. The auditor's confidence that it needs a change: low.
 - feelings, pre-existing: the Examples rows for `thuwathumur` and `thobathumaor` say *may*, which is `thomam`'s meaning, not the drop-in's.
 
 Points the writers left out for want of an owning statement, which the lessons could teach if a grammar page states them: in wants-and-plans, a want or plan default, and PLAN in questions; in decisions-and-tries, leaving the drop-in off when the English says how settled (*for now*, *for good*); in feelings, an English strength word (*a little*) staying in the sentence; in tone-marks, leaving the mark off when the words make the tone plain (the editor's *laughing* cue already contradicts that line).
