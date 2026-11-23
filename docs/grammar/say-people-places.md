@@ -462,7 +462,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 >
 > "Azozon would rather walk than run."
 
-**Compare with:** *or rather* (correcting what you just said) is the revision hook [`ol`](/hooks#rather-el), not a preference. *Belong to* as legal ownership is `gegunum` ([of relations](/of-relations#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
+**Compare with:** *or rather* (correcting what you just said) is the revision hook [`ol`](/hooks#rather-ol), not a preference. *Belong to* as legal ownership is `gegunum` ([of relations](/of-relations#of-relations)). *Represent* as *stand for* a symbol is not proxy, and has no recipe here.
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 
@@ -1073,7 +1073,7 @@ Examples:
 
 ### Compass directions as moves in the talk {#arrow-roots-as-talk-moves}
 
-**Needs:** [Arrow rose](/roles#arrow-rose) · [Linking sentences](/sentence-linkers#sentence-linkers)
+**Needs:** [Arrow rose](/viewpoint#arrow-rose-compass-vs-face) · [Linking sentences](/sentence-linkers#sentence-linkers)
 
 When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root *bare* (no `th` + facing person). Generic heading is **`uro`** (*direction*). Facing-relative ahead / back still uses `DIR th ANCHOR`.
 

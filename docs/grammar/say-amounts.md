@@ -273,7 +273,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](/v
 
 ### How often {#frequency-words}
 
-**Needs:** [Always](/restrictors#always-hual) · [Sometimes](/restrictors#sometimes--anytime--some-other-time) · [Frequency scale](/comparative-arity#frequency-scale) · [Whose view](/holder#what-the-holder-covers)
+**Needs:** [Always](/restrictors#always-hual) · [Sometimes](/restrictors#sometimes-anytime-some-other-time) · [Frequency scale](/comparative-arity#frequency-scale) · [Whose view](/holder#what-the-holder-covers)
 
 English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Ageben uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `herom` *while* with `bual` (*everything*).
 
@@ -424,7 +424,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 
 ### Group, crowd, bunch, pair, list, range, member {#group-words}
 
-**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r) · [Ranges](/ranges#number-ranges) · [Of relations](/of-relations#of-relations)
+**Needs:** [Associative group](/plurality#associative) · [Many and few](/vague-amounts#vague-amounts) · [Unspecified member](/joins#unspecified-member-r-phrase) · [Ranges](/ranges#number-ranges) · [Of relations](/of-relations#of-relations)
 
 English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Ageben has no noun for the set itself. It marks the kind as a *group in this situation* with `-x` after the ending (`-lx` for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus `-x`, not a separate word.
 
