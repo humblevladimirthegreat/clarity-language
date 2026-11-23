@@ -13,7 +13,7 @@ Inbound links: npm run page-refs -- claritish/how-you-know.md
 
 ## The gap {#gap}
 
-English often doesn't say how you know something, and when it does, the words are blunt: *I heard* covers both a solid source and a rumor, and *I remember* covers both a vivid memory and a hazy one. *Obviously* or *must have* lets a strong hunch from the clues pass for a proof. In Ageben, a claim can carry a word for its **evidential channel**: how you came to know it.
+English often doesn't say how you know something, and when it does, the words are vague: *I heard* covers both a solid source and a rumor, and *I remember* covers both a vivid memory and a hazy one. *Obviously* or *must have* makes a strong hunch from the clues sound like a proof. In Ageben, a claim can take a word that names its **evidential channel**: how you came to know it.
 
 ## The forms {#forms}
 <!-- Agent summary: seven channel drop-ins (table), ending `-m` by default. Placement: where English puts *apparently*; covers its clause. No channel fits → `thomam`. Optional; omit when the source doesn't matter. Recording: `thugem` while watching, `thevum` after. Document: `thebam`. -->
@@ -30,45 +30,45 @@ Each drop-in below names one channel. To choose, think of what you'd say if some
 | `thebam` | reported | someone told you, or you read it | *I heard*, *they say* |
 | `thabem` | intuition | you have a gut sense you can't fully explain | *I feel like*, *my gut says* |
 
-Seven is a lot to learn at once, so it helps to notice that they fall into four groups: things you sensed yourself (live and memory), things you reasoned out (pattern, clues, deduced), things someone told you (reported), and things you simply sense (intuition). Learn the groups first. Once you know which group a claim belongs to, you're choosing between at most three rows.
+Seven drop-ins are a lot to learn at once, so learn them in four groups: things you sensed yourself (live and memory), things you reasoned out (pattern, clues, deduced), things someone told you (reported), and things you sense but can't fully explain (intuition). Once you know which group a claim belongs to, you choose between at most three rows.
 
-The drop-in goes where English would put *apparently*: at the end of the clause, at the start, or right beside the word it's about. It applies to the clause it sits in. If you can't name any channel at all, what you have is a guess, and the *could be* word `thomam` from *How sure are you?* is the better fit.
+The drop-in goes where English would put *apparently*: at the end of the clause, at the start, or next to the word it's about. It applies to the clause it sits in. If you can't name any channel at all, what you have is a guess, so use `thomam`, the word for *could be* from *How sure are you?*, instead.
 
-You don't need to mark every claim. When nobody would ask how you know, such as when everyone in the meeting can see the time on the invite, leave the drop-in out. It earns its place when the source matters: news about a person, a reason you're blaming someone, or a fact someone is about to act on.
+You don't need to mark every claim. When nobody would ask how you know, such as when everyone in the meeting can see the time on the invite, leave the drop-in out. Use it when the source matters, such as news about a person, a reason you're blaming someone, or a fact someone is about to act on.
 
-Recordings and documents follow simple rules. Watching a video counts as seeing for yourself, so it's `thugem` while you watch and `thevum` once you've finished. A document counts as a report, because someone wrote it.
+Recordings and documents each have a rule. Watching a video counts as seeing for yourself, so it's `thugem` while you watch and `thevum` once you've finished. A document counts as a report, because someone wrote it.
 
 ## Telling channels apart {#telling-apart}
 <!-- Agent summary: near misses. Hearing a sound = `thugem` / `thevum`; hearing news = `thebam`. Pattern (`thubom`) = other similar cases; clues (`theyom`) = this case. Clues can fail with all clues true; deduction (`thanam`) fails only on a false premise; *obviously* usually = clues. Intuition (`thabem`) is a way of knowing, not a feeling. -->
 
-A few channels get confused with each other, usually because English uses the same phrase for both.
+A few pairs of channels are easily confused, usually because English uses the same phrase for both.
 
 ### Hearing it or hearing about it {#hearing}
 
-*I heard* can mean two different things. When you hear the door slam, you're going on your own ears, so it's `thugem` as it happens and `thevum` afterward. When you hear that your neighbor is moving, you're going on someone else's word, and that's `thebam`.
+*I heard* can mean two different things. When you hear the door slam, your evidence is what you heard, so it's `thugem` as it happens and `thevum` afterward. When you hear that your neighbor is moving, your evidence is what someone told you, so it's `thebam`.
 
 ### A pattern or clues {#pattern-or-clues}
 
-Both involve reasoning, but they start from different places. A pattern comes from other cases like this one: *the bus is late `thubom`* means it's usually late on Mondays, and you could say it before you've even left the house. Clues come from the case in front of you: *the bus is late `theyom`* means the stop is crowded and the arrival board is blank.
+Both involve reasoning, but they start from different evidence. A pattern comes from other cases like this one: *the bus is late `thubom`* means it's usually late on Mondays, and you could say it before you've even left the house. Clues come from the case in front of you: *the bus is late `theyom`* means the stop is crowded and the arrival board is blank.
 
 ### Clues or a deduction {#clues-or-deduction}
 
-Clues make a claim likely, but they can all be true and the claim still be wrong. If the milk is warm and the fridge door was open, the door is the obvious suspect, but the fridge could also have broken. A deduction is stronger: if what it starts from is true, the conclusion has to be. If the tickets sold out on Monday, they were gone by Tuesday, and only a mistake about Monday could make that false.
+Clues make a claim likely, but they can all be true and the claim still be wrong. If the milk is warm and the fridge door was open, the open door is the likely cause, but the fridge could also have broken. A deduction is stronger: if what it starts from is true, the conclusion has to be. If the tickets sold out on Monday, they were gone by Tuesday, and only a mistake about Monday could make that false.
 
-So keep `thanam` for the times you'd say *it follows* or *so it must be*. When you'd say *obviously*, you usually have clues, and `theyom` is the honest choice.
+So use `thanam` only when you'd say *it follows* or *so it must be*. When you'd say *obviously*, you usually have clues, so use `theyom`.
 
 ### A hunch or a feeling {#hunch-or-feeling}
 
-A gut sense is about how you know something, so it goes on the claim itself. *He's lost `thabem`* says your gut tells you he's lost. Feeling worried that he's lost is something else, a feeling about the news, and this drop-in doesn't express it.
+A gut sense is about how you know something, so it goes on the claim itself. *He's lost `thabem`* says you have a gut sense that he's lost. Feeling worried that he's lost is something else, a feeling about the news, and this drop-in doesn't mean that.
 
 ## How strong the evidence is {#strength}
 <!-- Agent summary: ending grades evidence strength: `-l` could show it, `-m` (default) could describe it, `-r` could only gesture. What strong / weak means per channel: table. Grades evidence, not likelihood of the event. Same settled-to-passing scale as How sure are you? (`-l` ≈ lasting, `-r` ≈ right now). -->
 
-Two claims can come through the same channel and still deserve different amounts of trust. A notice from the airline and a remark you overheard at the gate are both reports, and a clear view and a quick glimpse are both live. The last letter of the drop-in tells them apart, and you can pick it by imagining how you'd answer if someone asked *how do you know?*
+Two claims can come through the same channel and still deserve different amounts of trust. A notice from the airline and a remark you overheard at the gate are both reports, and a clear view and a quick glimpse are both live. The last letter of the drop-in marks the difference, and you can pick it by imagining how you'd answer if someone asked *how do you know?*
 
 - `-l` (strong): you could show them something they can check for themselves, such as the document, the clues, or the source.
 - `-m` (the default): you could describe what you saw, heard, or noticed, and they'd have to take your word for it.
-- `-r` (weak): you could only point vaguely in its direction, and a follow-up question would turn up little.
+- `-r` (weak): you could only point vaguely in its direction, and a follow-up question would find little more.
 
 If you're not sure which ending fits, use `-m`.
 
@@ -86,7 +86,7 @@ What counts as strong depends on the channel. A strong memory is a vivid one, a 
 
 The ending rates your evidence, not the news itself. A reliable source can report something surprising (*the CEO resigned `thebal`*), and a rumor can be about something perfectly ordinary.
 
-You've met these three endings before, in *How sure are you?*, where `-l` was the most settled end of the scale and `-r` the most passing. The same idea applies here. Think of `-l` as *lasting*, because evidence you can show will still hold up tomorrow, and `-r` as *right now*, because a glimpse or a rumor may not survive the next question.
+You've met these three endings before, in *How sure are you?*, where the three form a scale from most settled (`-l`) to most passing (`-r`). The scale runs the same way here. Think of `-l` as *lasting*, because evidence you can show can still be checked tomorrow, and `-r` as *right now*, because a glimpse or a rumor may have nothing behind it once someone asks a follow-up question.
 
 ## Examples {#examples}
 
@@ -96,16 +96,16 @@ You've met these three endings before, in *How sure are you?*, where `-l` was th
 > I locked the door `thevur`.  
 > This bug is in the parser `theyom`, `thomam`.
 
-The calendar notice behind *the meeting got moved `thebal`* is something you could forward to anyone who doubts it, while *Marco quit `thebar`* is hallway talk. *I locked the door `thevur`* admits the memory is hazy, which is a good reason to go back and check. The last example answers two separate questions at once: you worked it out from clues (`theyom`), and you're only saying it could be so (`thomam`).
+The calendar notice behind *the meeting got moved `thebal`* is something you could forward to anyone who doubts it, while *Marco quit `thebar`* is a rumor from the hallway. *I locked the door `thevur`* says the memory is hazy, which is a reason to go back and check. The last example says two separate things: you worked it out from clues (`theyom`), and you're only saying it could be so (`thomam`).
 
 ## In a story {#in-a-story}
 <!-- Agent summary: a channel carries forward over the speaker's later claims with no channel, until a new channel replaces it. The speaker's own feelings and plans are not claims and stay outside it. -->
 
-When you tell a story, you only need the drop-in on the first sentence. It carries over to the sentences that follow, until you name a different channel:
+When you tell a story, you only need the drop-in on the first sentence. It applies to the sentences that follow, until you name a different channel:
 
 > Marco quit `thebam`. He took the stapler. He didn't say goodbye.
 
-Everything here is something you heard. In plain English, a listener would lose track of that by the second sentence and take *he took the stapler* as something you saw.
+Everything here is something you heard. In plain English, a listener would take the second sentence, *he took the stapler*, as something you saw.
 
 To switch to something you know firsthand, name the new channel:
 
