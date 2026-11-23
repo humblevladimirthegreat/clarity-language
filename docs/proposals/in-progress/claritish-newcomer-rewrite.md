@@ -1,6 +1,6 @@
 # Claritish newcomer rewrite: explain for people, summarize for agents
 
-**Status:** IN PROGRESS, 2026-11-23. P1 under way. Decided 2026-11-21: grammar prose is written for human comprehension first; agents get a terse `<!-- Agent summary: … -->` comment directly under each teaching heading, invisible to readers; the [tone](../../meta/doc-style.md#tone) guidelines join `doc-style.md`; lessons no longer tell the reader a list need not be memorized, and instead help them learn it. The pilot, [How do you know?](../../grammar/claritish/how-you-know.md), is the model for every lesson. After this proposal's human review, a second proposal applies the same approach to the full grammar. Decided 2026-11-21 (the open decisions, as recommended): no length cap on a rewritten lesson, the newcomer tests set the length and R1 judges it; a lint for agent summaries waits for the grammar-wide proposal; practice may grow to about eight items, added only as contrast pairs.
+**Status:** IN PROGRESS. P1 done 2026-11-23 (U1 to U7, A1 as two audits A1a and A1b; commits dc85ee42 to b7f14f57): the policy is in [claritish-style.md](../../meta/claritish-style.md#newcomer) and the [lesson shape](../../meta/grammar-docs.md#claritish-track), and six lessons are rewritten and audited. Next: P2. Decided 2026-11-21: grammar prose is written for human comprehension first; agents get a terse `<!-- Agent summary: … -->` comment directly under each teaching heading, invisible to readers; the [tone](../../meta/doc-style.md#tone) guidelines join `doc-style.md`; lessons no longer tell the reader a list need not be memorized, and instead help them learn it. The pilot, [How do you know?](../../grammar/claritish/how-you-know.md), is the model for every lesson. After this proposal's human review, a second proposal applies the same approach to the full grammar. Decided 2026-11-21 (the open decisions, as recommended): no length cap on a rewritten lesson, the newcomer tests set the length and R1 judges it; a lint for agent summaries waits for the grammar-wide proposal; practice may grow to about eight items, added only as contrast pairs.
 
 **Related:** every page under [`docs/grammar/claritish/`](../../grammar/claritish/); [claritish-style.md](../../meta/claritish-style.md), [doc-style.md](../../meta/doc-style.md) (tone section), the [Claritish track](../../meta/grammar-docs.md#claritish-track) policy; the journal editor's cue data [`data/claritish-triggers.csv`](../../../data/claritish-triggers.csv), which reads each lesson's gap; [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), which ties each lesson table to the cheat sheet.
 
@@ -14,49 +14,11 @@ At the end of each phase, and if the user says to stop partway, the orchestrator
 
 The run uses subagents. Each lesson reads its own owning grammar sections, which the other lessons share little of, and the fact audits need a fresh context that wrote none of the prose.
 
-Two phases. **P1** writes the policy, rewrites the first six lessons in sidebar order, and audits them. **P2** rewrites the remaining five lessons and the track's other prose pages, audits them, runs the style gate, and ends by asking the user for review. The cut after P1 falls where the audit's findings can still change the brief for P2.
+One phase is left. **P2** rewrites the remaining five lessons and the track's other prose pages, audits them, runs the style gate, and ends by asking the user for review.
 
-### Phase P1
+**Built in P1.** [claritish-style.md](../../meta/claritish-style.md) now holds [Explaining for a newcomer](../../meta/claritish-style.md#newcomer) (the newcomer tests, no length cap, practice up to about eight items as contrast pairs), [Agent summaries](../../meta/claritish-style.md#agent-summaries), and an *Explanatory sections* bullet under [forms](../../meta/claritish-style.md#forms); back-references now say the reused idea in plain words. *How sure are you?* (could-be.md) owns the track's first teaching of the `-l` / `-m` / `-r` scale, in `## What the ending says`: think of `-l` as *lasting* and `-r` as *right now*. A later lesson that points back to it names the title and says the idea in those words. Thanks-and-sorry.md no longer has a `## The sakes` H2; the sake table is under `## The forms`. Rewrites grew three to five times (table below), and A1 found that the longer lessons restate themselves in places. The audit of 1,000-plus-word lessons should report restated sections, as A1 did.
 
-**U1 Policy.** *Orchestrator.* Write the rules the lesson units follow, so that each brief points to a written policy and the pilot conforms to it.
-
-- In [claritish-style.md](../../meta/claritish-style.md), add a section **Explaining for a newcomer** (anchor `newcomer`) that holds the newcomer tests from the digest below. Also add a section **Agent summaries** (anchor `agent-summaries`) that sets the format: one HTML comment directly under each teaching H2, starting `Agent summary:`, terse, every form in backticks, stating no rule the section does not teach. Gap, Examples, and Practice get none.
-- In the same file's forms section, allow explanatory sections after `## The forms` and before `## Practice`. Examples are a contrast section with an H3 per pair, a strength section, and a section on how the drop-in carries across sentences. Add a checklist row for each new section.
-- In the [Claritish track](../../meta/grammar-docs.md#claritish-track) lesson shape, name those explanatory sections and the agent summary comment.
-- Check [how-you-know.md](../../grammar/claritish/how-you-know.md) against the new sections and fix anything it misses.
-- Write the brief digest file from the digest below.
-
-**May edit:** `docs/meta/claritish-style.md`, `docs/meta/grammar-docs.md`, `docs/grammar/claritish/how-you-know.md`.
-
-**U2 How sure are you?** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [could-be.md](../../grammar/claritish/could-be.md) per the digest. This lesson introduces the `-l` / `-m` / `-r` scale that later lessons point back to. The scale's first teaching should therefore be the clearest one in the track, with a contrast example for each ending.
-**May edit:** `docs/grammar/claritish/could-be.md`.
-
-**U3 Labels.** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [labels.md](../../grammar/claritish/labels.md) per the digest. The hyphenated host is the hard part for a newcomer: show the same English label with each reach vowel, and say when to leave the suffix off.
-**May edit:** `docs/grammar/claritish/labels.md`.
-
-**U4 Can and can't.** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [can-and-cant.md](../../grammar/claritish/can-and-cant.md) per the digest.
-**May edit:** `docs/grammar/claritish/can-and-cant.md`.
-
-**U5 Thanks and sorry.** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [thanks-and-sorry.md](../../grammar/claritish/thanks-and-sorry.md) per the digest. Replace *Nine sakes is a menu; you don't need to memorize it.* with a way to learn the nine, such as a grouping drawn from the owning section.
-**May edit:** `docs/grammar/claritish/thanks-and-sorry.md`.
-
-**U6 Allowed and required.** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [allowed-required-agreed.md](../../grammar/claritish/allowed-required-agreed.md) per the digest. Its endings grade the source, not the settled-to-passing scale, so say that in plain words before the endings table.
-**May edit:** `docs/grammar/claritish/allowed-required-agreed.md`.
-
-**U7 Oughts and motives.** `proposal-worker`, `model: opus`, `effort: high`. Rewrite [oughts-and-motives.md](../../grammar/claritish/oughts-and-motives.md) per the digest. Its two ending sets (prescription and motive) need a contrast that shows them apart on one example.
-**May edit:** `docs/grammar/claritish/oughts-and-motives.md`.
-
-**A1 Fact audit, P1 lessons.** `proposal-worker` (fresh), `model: opus`, `effort: high`. For each lesson U2 to U7 changed, plus the pilot:
-
-- Check every sentence of new or changed prose that states what a drop-in means or when to use it against the owning sections named in the page's `<!-- Source (editors): … -->` comment. List each claim those sections do not support, with the line.
-- Check that each agent summary states only what its section teaches, and that each teaching H2 has one.
-- Fix wording that overstates what the owning section says. A claim that would need a new meaning goes into the report and is not fixed.
-- Report any pattern of invention the P2 brief should warn against.
-
-Read slices only: headings first, then the cited sections.
-**May edit:** the seven lessons named.
-
-End of P1: consolidate this proposal. If A1 found a pattern, add a line to the digest for P2, then commit.
+**Split audits.** A1 ran as two audits of three or four lessons each, because one audit of seven lessons and their sources passes the six-page unit size. A2 splits the same way: A2a for U8 to U10, A2b for U11 and U12.
 
 ### Phase P2
 
@@ -83,18 +45,40 @@ End of P1: consolidate this proposal. If A1 found a pattern, add a line to the d
 
 **May edit:** those four files.
 
-**A2 Fact audit, P2 lessons.** `proposal-worker` (fresh), `model: opus`, `effort: high`. As A1, for U8 to U12.
+**A2 Fact audit, P2 lessons.** `proposal-worker` (fresh), `model: opus`, `effort: high`, as two units (A2a: U8 to U10; A2b: U11, U12). For each lesson the phase changed: check every sentence of new or changed prose that states what a drop-in means or when to use it against the owning sections named in its Source comment, and list each claim they do not support, with the line. Check that each agent summary states only what its section teaches, and that each teaching H2 has one. Fix wording that overstates the owning section; a claim that would need a new meaning goes into the report, unfixed. Report word counts and sections that restate another. Read slices only: headings first, then the cited sections.
 **May edit:** the five lessons named.
 
-**S1 Style gate.** `style-editor` (fresh), `model: opus`, `effort: high`. Review the `npm run changed-sections -- <rev>` list, where `<rev>` is the commit before U0, against [doc-style.md](../../meta/doc-style.md) (including [tone](../../meta/doc-style.md#tone)) and [claritish-style.md](../../meta/claritish-style.md).
+**S1 Style gate.** `style-editor` (fresh), `model: opus`, `effort: high`. Review the `npm run changed-sections -- <rev>` list, where `<rev>` is `271a14ae`, the commit before U1, against [doc-style.md](../../meta/doc-style.md) (including [tone](../../meta/doc-style.md#tone)) and [claritish-style.md](../../meta/claritish-style.md).
 **May edit:** the changed lessons and track pages.
 
 **R1 Human review.** *Orchestrator.* Consolidate this proposal and commit. Then ask the user to review the rewritten track, and stop. Name these for the user:
 
 - the pages changed, with word counts before and after
-- the claims A1 and A2 could not support and left in their reports
+- the claims A1 (below) and A2 could not support and left in place
 - any open decisions the run logged
 - three pages worth reading first: could-be, labels, and feelings, which carry the most new explanation
+
+**P1 input for R1.** Word counts, before (commit `271a14ae`) and after P1:
+
+| Lesson | Before | After |
+|--------|--------|-------|
+| how-you-know (pilot) | 1823 | 1823 |
+| could-be | 413 | 1400 |
+| labels | 308 | 1444 |
+| can-and-cant | 346 | 1138 |
+| thanks-and-sorry | 568 | 2094 |
+| allowed-required-agreed | 392 | 1860 |
+| oughts-and-motives | 818 | 2081 |
+
+Claims A1 found no owning statement for and left in place, each a usage aid that adds no meaning:
+
+- how-you-know: when a channel "earns its place" (news about a person, a reason for blame, a fact someone acts on); *obviously* usually means clues; the reason given for *lasting* (evidence you can show still holds up tomorrow).
+- could-be: the swap test. Not a claim, but a gap: an *I think* that rests on reasons takes a channel ([evidentiality](../../grammar/intermediate/evidentiality.md#evidentiality)), and the lesson does not say so.
+- labels: when unsure of the reach, go by what you have seen (one episode gives `-thu`).
+- allowed-required-agreed: leave the drop-in out when the English already names the source (the style policy's leave-out point).
+- oughts-and-motives: advice for the listener's own good with `blawan`, and `hual` for *the usual reason*, are not taught; the writer suggested adding `blawan` (medium).
+
+Restated sections A1 reported, for R1 to judge: labels H3 *A role or a type*; can-and-cant *Not yet or never*, second paragraph; thanks-and-sorry, the forms paragraph *the word is about you*.
 
 Addressing the review's concerns, and the follow-up proposal that applies this approach to the full grammar, come after R1. They are not part of this plan.
 
@@ -124,6 +108,12 @@ Addressing the review's concerns, and the follow-up proposal that applies this a
   semicolon-balanced pair and one "X, not Y" per section. People and things act, not features.
   Vary sentence length. No ≈ or → in prose. One grammatical shape per table column. No numbered
   "First, … Second, …" runs.
+- Do not invent (A1 found each of these): a "use it when" trigger beyond the owning rule; a "when
+  unsure" default on a scale whose owning section gives none (say which forms are ruled out instead);
+  a reason for the lasting / right-now picture; an English cue word (*obviously*) tied to a drop-in;
+  an effect on the listener (*easier to turn down*); a definition pushed into a consequence it does
+  not state ("nobody said" is not "no rule exists"). A back-reference restates the earlier idea in
+  its own lesson's words; check them. An agent summary borrows nothing from a neighbouring section.
 - Practice: keep the format; notes say what the speaker means, never which form. You may add
   contrast pairs (same English, different note). Answers in ::: details Show answer.
 - No links into the grammar or between lessons; no full Ageben sentences; no glosses; no house cast.
@@ -145,12 +135,18 @@ The audit briefs (A1, A2) carry the same digest with the task lines replaced by 
 
 - `npm run verify -- --baseline` at the start of each phase. `npm run verify -- --allow-generate` after each unit, before its commit.
 - Final gate, in P2 before R1: a full `npm run verify` that passes against an empty baseline.
-- One commit per unit, with the message `claritish-newcomer-rewrite <ID>: … [skip-cd]` and the co-author line. A unit whose audit changed nothing makes no commit. P1 ends with the consolidated proposal: about 10 commits. P2 makes about 9, the last being R1's consolidation.
+- One commit per unit, with the message `claritish-newcomer-rewrite <ID>: … [skip-cd]` and the co-author line. A unit whose audit changed nothing makes no commit. P1 made 10 commits. P2 makes about 10 (A2 is two units), the last being R1's consolidation.
 - No `AGENTS.md` change is expected. The Claritish row already points to the track, and the agent-summary convention reaches `AGENTS.md` with the grammar-wide proposal.
 
 ## Open decisions
 
-None open. The decisions of 2026-11-21 are on the Status line.
+**Consent on things a person owns.** A1 found that *Allowed and required* applies `hwudam` / `hwudar` to *her photo*, *the photo of us*, and *your car*. The lesson glosses the consent drop-in as *the person it's done to*, and in the grammar the consenter holds the clause's `d` role, which here is the photo or the car, not its owner. The car and the shared photo were in the lesson before this proposal; the rewrite added *her photo* as the endings contrast. The lead of [consent](../../grammar/intermediate/permission-consent.md#consent) does say consent covers *their body, their things, their time*.
+
+- Keep the examples: the lead's *their things* covers an owner's yes.
+- Recast them so the consenter is the one the act is done to (*the doctor examined her*, *I hugged him*), and leave ownership to the grammar owner.
+- Ask the grammar owner to say in [consent](../../grammar/intermediate/permission-consent.md#consent) whether an owner's yes is `hwud-` when the owned thing holds `d`.
+
+**Recommendation:** (medium) keep the examples and settle the grammar question separately, since the lead names *their things* and the lesson's gloss is plain English, not the role letter. No P2 lesson uses consent, so this does not block P2.
 
 ## Background
 
