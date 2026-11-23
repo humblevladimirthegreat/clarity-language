@@ -2,11 +2,12 @@
 
 ## The gap {#gap}
 
-*I can't* hides three different things: *not right now*, *not yet*, and *never*. Heard back, *I can't sing* can mean a sore throat or a lifelong fact. Ageben says whether a limit is for now, not yet, or for good.
+*I can't* hides three different things: *not right now*, *not yet*, and *never*. Heard back later, *I can't sing* could mean a sore throat or a lifelong fact, and a friend who takes it the wrong way will either stop asking you or keep pushing. Ageben says whether a limit on what you can do is for now, not yet, or for good.
 
 ## The forms {#forms}
+<!-- Agent summary: ability suffix = English verb + hyphen + `x` + ability vowel (table): `-xa` can, `-xo` can't just for now (usually can), `-xe` can't yet, `-xu` can never (impossible). Replaces the English *can* / *can't*; goes on the verb. Three can'ts differ by how lasting: `o` a dip, `e` not yet, `u` never; `a` full can-do. Unsure how lasting → `-xe`. Hyphen marks the English host; no `-l` / `-m` / `-r` ending. `x` = the *si* in *vision*. Omit when *can* asks leave or makes a request. -->
 
-Add a hyphen to the English verb, then `x` and a vowel:
+English puts *can* and *can't* in front of the verb. Here the meaning goes onto the verb itself: drop the English *can* or *can't*, then add a hyphen, `x`, and the **ability vowel**, which says whether you can, or which kind of *can't* you mean.
 
 | Suffix | Meaning |
 |--------|---------|
@@ -15,21 +16,48 @@ Add a hyphen to the English verb, then `x` and a vowel:
 | `-xe` | can't yet (the default when you are not sure) |
 | `-xu` | can never: impossible |
 
-`x` sounds like the *s* in *vision*. The hyphen works as it does in Labels: the word in front is English, and the vowel carries the meaning, so no ending follows.
+So *I can swim* becomes *I `swim-xa`*. The *I can't sing* from the gap splits in two, because you now have to say which one you mean: *I `sing-xo`* is the sore throat, and *I `sing-xu`* is the lifelong fact.
 
-To remember the vowels: `a` ≈ full, `o` ≈ a dip, `e` ≈ not yet, `u` ≈ never.
+There's one way to say *can* and three ways to say *can't*, and the three differ in how lasting the limit is. Think of `o` as a dip: you usually can, and something is in your way for now. With `e`, it's not yet, so you can't do it so far, and that could still change. With `u`, it's never. That leaves `a` for the full can-do, with no limit at all.
 
-Leave the suffix off when *can* is only polite filler. *Can you pass the salt* needs no `-xa`.
+When you can't tell how lasting the limit is, use `-xe`. It claims only *not yet*, so it never shuts a door that might still open.
+
+The hyphen works the way it does in *Labels*, where a suffix like `-thu` goes on an English word: the hyphen only shows that the word in front is English, and the letters after it are spelled exactly as in Ageben. As there, no ending follows, because the vowel already carries the whole choice. The new letter is `x`, which sounds like the *si* in *vision*.
+
+Not every English *can* is about what someone is able to do. When *can* asks for permission, as in *can I sit here?*, or makes a request, as in *can you pass the salt?*, leave it as it is. The suffix has nothing to add there, because nobody is asking whether you're able.
+
+## Telling the can'ts apart {#telling-apart}
+<!-- Agent summary: near misses. `-xo` = usually can, blocked for now; `-xe` = not able so far, may change. `-xe` leaves it open; `-xu` = never, impossible; unsure → `-xe`. Plain verb = does it; `-xa` = is able to. *can* / *can't* for permission (*can I sit here?*, a ban) is not ability → no suffix. -->
+
+Most mix-ups here come from the fact that English uses one word, *can't*, for all three limits, and *can* for more than ability.
+
+### For now or not yet {#now-or-yet}
+
+Both of these say the limit might end, so the question to ask is whether you usually can. With your arm in a cast, *I `drive-xo`* fits, because you drive most days and the cast is in the way for now. If you've never had a driving lesson, it's *I `drive-xe`*: you can't drive yet, but nothing stops you from learning.
+
+### Not yet or never {#yet-or-never}
+
+*My grandmother `text-xe`* says she can't text yet, perhaps because her grandson is still teaching her. *My grandmother `text-xu`* says she never will be able to, which is a much bigger claim. A listener who hears the second one stops expecting a message from her.
+
+That's why `-xe` is the default. If you aren't sure the limit is permanent, `-xu` says more than you know, while `-xe` leaves room for either outcome.
+
+### Doing it or able to {#doing-or-able}
+
+*I swim*, with no suffix, says you do it, perhaps every morning before work. *I `swim-xa`* says you're able to, which is a different claim. You can say *I `swim-xa`* truthfully and still not have been in a pool for years.
+
+### Able or allowed {#able-or-allowed}
+
+English *can't* also covers what someone isn't allowed to do. *She `drive-xe`* says she hasn't learned to drive yet. If she knows how, and her parents have simply said no, then *she can't drive* is about permission. She is able, so the ability suffix doesn't fit, and *can't* stays as it is.
 
 ## Examples {#examples}
 
 > I `swim-xa`, but I `drive-xo` with this cast on.  
 > She `code-xe`. She starts the course in May.  
 > I `sing-xu` in front of people.  
-> He `lift-xo` today, his back is out.  
+> He `lift-xo` today, because his back is out.  
 > The kids `read-xe`, but they're learning.
 
-*I `drive-xo`* says the cast is the problem and it will pass. *She `code-xe`* keeps the door open without promising how soon, which plain *can't* never does. *I `sing-xu`* is the only one that closes the door.
+*I `drive-xo`* puts the blame on the cast, and the cast will come off. *She `code-xe`* keeps the door open without promising how soon, which plain *can't* never does. *I `sing-xu`* is the only one of the five that closes the door, so say it only when you mean it.
 
 ## Practice {#practice}
 
@@ -41,22 +69,46 @@ Add the suffix that fits the note.
 I `run-xo`.
 :::
 
-**2.** *He can't read music.* (he hasn't learned it yet)
+**2.** *I can't run.* (my knee is hurt, and the doctor can't say yet whether it will recover)
+
+::: details Show answer
+I `run-xe`.
+:::
+
+**3.** *He can't read music.* (he hasn't learned it yet)
 
 ::: details Show answer
 He `read-xe` music.
 :::
 
-**3.** *I can't drink milk.* (an allergy that will not change)
+**4.** *He can't read music.* (he usually can, but he left his glasses at home)
+
+::: details Show answer
+He `read-xo` music.
+:::
+
+**5.** *I can't sing.* (I have a sore throat)
+
+::: details Show answer
+I `sing-xo`.
+:::
+
+**6.** *I can't sing.* (I've never been able to hold a tune, and that won't change)
+
+::: details Show answer
+I `sing-xu`.
+:::
+
+**7.** *I can't drink milk.* (an allergy that will not change)
 
 ::: details Show answer
 I `drink-xu` milk.
 :::
 
-**4.** *She can drive.* (she has her license)
+**8.** *She can drive.* (she has her license)
 
 ::: details Show answer
 She `drive-xa`.
 :::
 
-<!-- Source (editors): can-and-cant.md#ability-changeability (can, can't); x sound from phonology.md. -->
+<!-- Source (editors): can-and-cant.md#ability-changeability (can, can't); can-and-cant.md#can (plain verb vs ability); permission-consent.md#permission (asking leave is not ability); x sound from phonology.md. -->
