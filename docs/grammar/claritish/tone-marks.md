@@ -13,34 +13,75 @@ Inbound links: npm run page-refs -- claritish/tone-marks.md
 
 ## The gap {#gap}
 
-Tone gets lost in text. *You're the worst* could be a joke or a fight, and the reader has to guess. An Ageben tone mark, a symbol written before the words, says how you mean them.
+In writing, the reader cannot hear the voice that shows how you mean your words. A text that says *You're the worst* could be a joke or a fight, and the reader has to guess which. An Ageben tone mark, a symbol written before the words, says how you mean them.
 
 ## The marks {#forms}
+<!-- Agent summary: five tone marks (table), written bare, no space, right before the English they apply to: `%` joking, teasing (not meant literally); `;` warm, affectionate; `&` contrast, this one not another; `?` unsure; `!` strong feeling, the words say which. Each stands for a change of voice in speech. Changes the tone only: the sentence says the same and does the same job (statement, request). No default mark; a mark is never required, and without one the sentence means the same with its tone unwritten. -->
 
-| Mark | Meaning |
-|------|---------|
-| `%` | joking, teasing |
-| `;` | warm, affectionate |
-| `&` | contrast: this one, not another |
-| `?` | unsure about this word |
-| `!` | strong feeling (the words say which) |
+A **tone mark** is a symbol written in front of words to say how you mean them: as a joke, warmly, in contrast to something else, unsure, or with strong feeling. In speech, your voice shows these tones, and each mark stands for one change in your voice. Write the mark bare, with no space between it and the word after it.
 
-Double a mark for more: `!!` is stronger still, `??` is very unsure. Stack different marks to mix tones, in any order: `?!` is surprised and doubtful, `%;` is teasing but fond. Two of the same mark is the most.
+| Mark | Meaning | Your voice in speech |
+|------|---------|----------------------|
+| `%` | joking, teasing | light, smiling |
+| `;` | warm, affectionate | soft, gentle |
+| `&` | contrast: this one, not another | stressed and slowed |
+| `?` | unsure about this word | raised, tentative |
+| `!` | strong feeling (the words say which) | louder, stressed |
 
-Write the mark before what it colors, so the reader sees the tone before reading the words. Attach it to a word to color that word. Put it at the start of the sentence to color the whole sentence. A `!` at the end of a sentence is still ordinary English punctuation.
+The `%` mark says that you are teasing and do not mean the words literally. For example, *You're the worst* with no mark leaves the reader to tell a joke from a fight, while *%You're the worst* says it is teasing. Without a mark the sentence means the same thing, and its tone is not written down. So a mark is never required, and none of the five is a default: each says a different tone, so choose the one that matches how you mean the words, or write none.
 
-When the words already make the tone plain (*just kidding*, *love you*), leave the mark off.
+A mark changes only the tone of the words. The sentence still says the same thing and does the same job, so *;Call me when you land* is still a request, made warmly. The `!` mark says the feeling is strong but not which feeling it is, because the words show that. For example, *!We shipped it* is strong excitement and *!They cancelled it* is strong upset, with the same mark on both.
+
+## What the mark applies to {#placement}
+<!-- Agent summary: the mark applies to what follows it. Attached to a word inside the sentence → that word only; attached to the first word → the whole sentence. A final `!` or `?` is English punctuation, not a tone mark. -->
+
+A mark applies to the words after it, so the reader sees the tone before reading the words. Attached to a word inside the sentence, it applies to that word only. Attached to the first word, it applies to the whole sentence. Here is the same sentence both ways:
+
+> He brought a ?casserole.  
+> ?He brought a casserole.
+
+The first sentence marks only *casserole*: you are not sure that *casserole* is the right word for what he brought. The second marks the whole sentence as something you are unsure of.
+
+A `!` or `?` at the end of a sentence is not a tone mark. It is English punctuation and means what it means in English, so *We shipped it!* is an ordinary English sentence. A tone mark always comes before the words it applies to.
+
+## Stronger and mixed tones {#stacking}
+<!-- Agent summary: double a mark for a stronger tone (`!!` stronger, `??` very unsure); two of one mark is the most, so `!!!` is not a mark. Stack different marks to mix their tones: no space between them, any order, same meaning (`?!` = `!?` surprised and doubtful; `%;` teasing but fond). -->
+
+Doubling a mark makes its tone stronger. For example, `!!` is a stronger feeling than `!`, and `??` means very unsure. Two copies of one mark is the most, so `!!!` is not a tone mark. Compare:
+
+> !We shipped it.  
+> !!We shipped it.
+
+Different marks combine to mix their tones. Write them together with no space, in any order, because the order does not change the meaning: `?!` and `!?` mean the same. For example, `?!` means surprised and doubtful, and `%;` means teasing but fond:
+
+> ?!She's moving to Iceland.  
+> %;You and your spreadsheets.
 
 ## Examples {#examples}
 
 > %You're the worst.  
 > ;Call me when you land.  
 > We went &Tuesday.  
-> He brought a ?casserole.  
-> !We shipped it.  
+> The meeting starts at ?six.  
+> !!We got the apartment.  
 > %;You and your spreadsheets.
 
-*We went &Tuesday* means Tuesday and not another day. *He brought a ?casserole* means you're not sure *casserole* is the right word for it.
+*We went &Tuesday* means Tuesday and not another day. *The meeting starts at ?six* marks only the time as something you are unsure of. *%;You and your spreadsheets* is teasing, and it is fond.
+
+## Telling a mark apart {#telling-apart}
+<!-- Agent summary: near misses. `?` mark = unsure; the sentence stays a statement, and a question is written as an English question. `&` only sets one thing against others; a word that is only the new part (an answer to a question) takes no mark. -->
+
+Two other things are easily confused with a tone mark, and each is written differently.
+
+### Unsure or asking {#unsure-or-asking}
+
+The `?` mark means you are unsure, and it does not make the sentence a question. *?She's moving to Iceland* is still a statement: you are saying that she is moving, and that you are not sure of it. To ask, write an English question, such as *Is she moving to Iceland?*, which ends in English punctuation.
+
+### Contrast or new information {#contrast-or-new}
+
+Use `&` when you set one thing against the others it could have been. For example, if a friend thinks you went on Monday, *We went &Tuesday* sets Tuesday against Monday.
+
+English often stresses the new part of a sentence too, and that stress takes no mark. When a friend asks *When did you go?*, the answer *We went Tuesday* needs no `&`, because the question already shows which part is new. So leave `&` off a word that is only new, and put it on a word that is chosen over something else.
 
 ## Practice {#practice}
 
@@ -58,16 +99,40 @@ Add a tone mark so the sentence says what the note asks for.
 ;Sleep well.
 :::
 
-**3.** *I asked for the blue one.* (the blue one, not another)
+**3.** *Sleep well.* (teasing, but fondly)
+
+::: details Show answer
+%;Sleep well.
+:::
+
+**4.** *I asked for the blue one.* (the blue one, not another)
 
 ::: details Show answer
 I asked for the &blue one.
 :::
 
-**4.** *She's moving to Iceland.* (you're surprised and doubtful)
+**5.** *She's moving to Iceland.* (you're surprised and doubtful)
 
 ::: details Show answer
 ?!She's moving to Iceland.
 :::
 
-<!-- Source (editors): tone-marks.md#showing-your-tone. Lesson pages never link into the grammar; see docs/meta/grammar-docs.md#claritish-track. -->
+**6.** *She's moving to Iceland.* (you're not sure *Iceland* is the right place)
+
+::: details Show answer
+She's moving to ?Iceland.
+:::
+
+**7.** *We won.* (you feel strongly about it)
+
+::: details Show answer
+!We won.
+:::
+
+**8.** *We won.* (the strongest feeling you can mark)
+
+::: details Show answer
+!!We won.
+:::
+
+<!-- Source (editors): tone-marks.md#showing-your-tone, tone-marks.md#emphasis-and-clefts. Lesson pages never link into the grammar; see docs/meta/grammar-docs.md#claritish-track. -->
