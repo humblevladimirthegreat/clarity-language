@@ -13,12 +13,12 @@ Inbound links: npm run page-refs -- claritish/oughts-and-motives.md
 
 ## The gap {#gap}
 
-*You should call her* gives no reason anyone can check, so it lands as pressure and turns into an argument about who gets to say *should*. *I did it for you* names no need the act served, which is why it so often sounds like a bill. Ageben has two sake words that put the need into the sentence: one says an act ought to be done for that need, and the other says it is being done for it.
+*You should call her* gives no reason anyone can check, so it is heard as pressure and often becomes an argument about who gets to say *should*. *I did it for you* names no need the act served, which is why it so often sounds like a demand for repayment. Ageben has two sake words, which name in the sentence the need an act is for: one says the act ought to be done for that need, and the other says it is being done for it.
 
 ## The forms {#forms}
-<!-- Agent summary: two drop-ins (table): `thawethem` prescription (the act ought to be done for the sake), `thawethom` motive (the act is being done for it). Built `th` + sake + stance + ending, like thanks and sorry (`tha` met, `thu` unmet); `the` = ought, `tho` = motive. Any of the nine sakes: `thobathem`, `thowethom`. Placement: where an English adverb or tag would go; covers its clause; the drop-in carries the ought, so English *should* can go (*call her* `thawethem`); how firmly you ask stays with the English. Optional; omit when the English already gives a reason the listener can check. -->
+<!-- Agent summary: two drop-ins (table): `thawethem` prescription (the act ought to be done for the sake), `thawethom` motive (the act is being done for it). Built `th` + sake + stance + ending, like thanks and sorry (`tha` met, `thu` unmet); `the` = ought, `tho` = motive. Any of the nine sakes: `thobathem`, `thowethom`. Placement: where an English adverb or tag would go; covers its clause; the drop-in says the ought, so English *should* can go (*call her* `thawethem`); the English says how firmly you ask. Optional; omit when the English already gives a reason the listener can check. -->
 
-Each drop-in below names a sake, the need an act is for, and says how the act stands toward it. One is advice; the other describes what's already going on.
+Each drop-in below names a sake, the need an act is for, and says how the act relates to it. The first gives advice, and the second describes an act that is already happening.
 
 | Drop-in | Stance | Meaning |
 |---------|--------|---------|
@@ -36,16 +36,16 @@ So the four words below differ by a single vowel, and each one says something di
 | `thawethem` | this ought to be done, for that need |
 | `thawethom` | this is being done for that need |
 
-Any of the nine sakes fits in the middle, just as it does on a thanks. For example, `thobathem` says something is worth doing for your health, and `thowethom` says you're doing it to understand.
+Any of the nine sakes fits in the middle, as it does on a thanks. For example, `thobathem` says something is worth doing for your health, and `thowethom` says you're doing it to understand.
 
-The drop-in goes where English would put an adverb or a tag, and it covers the clause it sits in. Because the drop-in already says the act ought to happen, the English can drop its *should*, so *you should call her* can become *call her `thawethem`*. The drop-in doesn't set how firmly you ask, though. The English still does that, so pick the wording that presses as hard as you mean to.
+The drop-in goes where English would put an adverb or a tag, and it applies to the whole clause it sits in. Because the drop-in already says the act ought to happen, you can leave out the English *should*, so *you should call her* can become *call her `thawethem`*. The drop-in doesn't say how firmly you ask. The English wording says that, so choose English that asks as firmly as you mean to.
 
-You don't need one on every *should*. When your English already gives a reason the listener can check, as in *you should take an umbrella, the forecast says rain*, the reason is already in the sentence and plain English does the job. The drop-in earns its place when the reason is a need of yours that the English leaves unsaid.
+You don't need one on every *should*. When your English already gives a reason the listener can check, as in *you should take an umbrella, the forecast says rain*, the reason is already in the sentence and plain English is enough. Use the drop-in when the reason is a need of yours that the English leaves unsaid.
 
 ## Telling them apart {#telling-apart}
 <!-- Agent summary: near misses. `the` (ought) = the act ought to happen and may not have yet; `tho` (motive) = the act is happening, and the need is why. The sake is the speaker's, even on someone else's act: `thobathem` on *open the window* = for my health; `tho` on another's act never says why they act (their reasons are in their mind; say them in English). Motive names the need served, not the cause (English *because*), and describes rather than recommends. -->
 
-The two stances look alike, and English *for* can mean several things, so a few mix-ups are worth heading off.
+The two stances look alike, and English *for* can mean several things, so a few mix-ups are easy to make.
 
 ### Ought or doing {#ought-or-doing}
 
@@ -54,7 +54,7 @@ A prescription says an act ought to happen. A motive describes an act that is ha
 > Let's take the stairs `thobathem`.  
 > We're taking the stairs `thobathom`.
 
-With `thobathem`, you're giving advice: the stairs would be good for your health, and nobody may have climbed a single step yet. With `thobathom`, you're already climbing, and your health is the reason. Nothing in the second one says anyone *should*, so it doesn't press anyone.
+With `thobathem`, you're giving advice: the stairs would be good for your health, and nobody may have climbed a single step yet. With `thobathom`, you're already climbing, and your health is the reason. Nothing in the second one says anyone *should*, so it asks nothing of anyone.
 
 ### Whose need it is {#whose-need}
 
@@ -64,7 +64,7 @@ This matters most for a motive on someone else's act:
 
 > My sister calls every Sunday `thawethom`.
 
-This says that, for you, her calls are about feeling connected. It doesn't say why she calls, because her reasons are in her mind, and the drop-in only speaks for you. If you know her reason, say it in English: *she calls because she misses home*.
+This says that, for you, her calls are about feeling connected. It doesn't say why she calls, because her reasons are in her mind, and the drop-in names only your need. If you know her reason, say it in English: *she calls because she misses home*.
 
 ### A motive or a cause {#motive-or-cause}
 
@@ -73,14 +73,14 @@ A motive names the need an act serves. It doesn't name what made the act happen:
 > I skipped the party `thobathom`.  
 > I skipped the party because of the snow.
 
-The first says that skipping served your health, perhaps because you needed the rest. The second gives a cause, something in the situation that pushed you, and English *because* says that well on its own. A motive also describes without recommending: `thobathom` says what the skipping was for, and it doesn't claim that skipping was a good idea.
+The first says that skipping served your health, perhaps because you needed the rest. The second gives a cause, something in the situation that made you skip it, and English *because* already says that. A motive also describes without recommending: `thobathom` says what the skipping was for, and it doesn't claim that skipping was a good idea.
 
 ## What the ending says {#endings}
-<!-- Agent summary: two ending sets; read the stance first. Prescription (`the`) grades why the move is welcome: `-l` they invited this kind of move (explicitly or by a standing invitation), `-m` your own offer, unasked, `-r` a tryout, to see whether it helps; not whether it works. None true → drop the ought word. Can't tell whether invited → not `-l`: `-m` (own offer) or `-r` (tryout); no default ending on `the`. Motive (`tho`) grades when the payoff lands: `-l` over time, `-m` (default) unstated, `-r` right away; same direction as How sure are you? (`-l` ≈ lasting, `-r` ≈ right now); neither end better. Same letter, different job: `thawethel` invited vs `thawethol` over time; `thawether` tryout vs `thawethor` right away. -->
+<!-- Agent summary: two ending sets; read the stance first. Prescription (`the`) grades why the move is welcome: `-l` they invited this kind of move (explicitly or by a standing invitation), `-m` your own offer, unasked, `-r` a tryout, to see whether it helps; not whether it works. None true → drop the ought word. Can't tell whether invited → not `-l`: `-m` (own offer) or `-r` (tryout); no default ending on `the`. Motive (`tho`) grades when the payoff comes: `-l` over time, `-m` (default) unstated, `-r` right away; same direction as How sure are you? (`-l` ≈ lasting, `-r` ≈ right now); neither end better. Same letter, different job: `thawethel` invited vs `thawethol` over time; `thawether` tryout vs `thawethor` right away. -->
 
-The last letter of the word is its ending, and here the endings do two different jobs. On a prescription they say why your advice is welcome, and on a motive they say when the payoff lands. So look at the stance first, and then read the matching column:
+The last letter of the word is its ending, and here the endings have two different meanings. On a prescription they say why your advice is welcome, and on a motive they say when the payoff comes. So look at the stance first, and then read the matching column:
 
-| Ending | Prescription (why the move is welcome) | Motive (when the payoff lands) |
+| Ending | Prescription (why the move is welcome) | Motive (when the payoff comes) |
 |--------|----------------------------------------|--------------------------------|
 | `-l` | they invited this kind of move | serves the need over time |
 | `-m` | your own offer, unasked | unstated (the default) |
@@ -94,7 +94,7 @@ The prescription endings answer a question the listener might fairly ask: *why a
 > Send me the agenda the night before `thowethem`.  
 > Send me the agenda the night before `thowether`.
 
-With `thowethel`, they invited it. Maybe they asked what would help you follow the meetings, or they've told you before to say what you need, and an invitation like that still stands. With `thowethem`, nobody asked, and you're offering the idea because the agenda would help you understand what's coming. With `thowether`, you're proposing a tryout: send it once, and you'll both see whether it helps.
+With `thowethel`, they invited it. Maybe they asked what would help you follow the meetings, or they've told you before to say what you need, and an invitation like that still applies. With `thowethem`, nobody asked, and you're offering the idea because the agenda would help you understand what's coming. With `thowether`, you're proposing a tryout: send it once, and you'll both see whether it helps.
 
 The ending says why you're making the move, not whether it will work. A tryout, for example, makes no claim that the idea is right. It only proposes finding out.
 
@@ -107,7 +107,7 @@ The motive endings say when the act pays off for the need. These are the three e
 > I walked instead of driving `thobathol`.  
 > I walked instead of driving `thobathor`.
 
-With `thobathol`, the walk is part of getting fit, and the payoff builds over the months. With `thobathor`, you wanted the fresh air today, and the payoff came during the walk itself. Neither end is better, because doing something for a payoff right now is often exactly what's needed. If you don't know which fits, or it doesn't matter, use `-m`.
+With `thobathol`, the walk is part of getting fit, and the payoff builds over the months. With `thobathor`, you wanted the fresh air today, and the payoff came during the walk itself. Neither end is better, because doing something for a payoff right now is often what you need. If you don't know which fits, or it doesn't matter, use `-m`.
 
 ### The same letter on both {#same-letter}
 
@@ -131,7 +131,7 @@ Both end in `-r`. The first proposes one lunch as a tryout, to see whether it he
 > I'm keeping Thursdays free `thawethol`.  
 > Try swapping the agenda order `thurother`.
 
-*Put the deadline in writing `thowethel`* is advice they asked for, and it says what the writing is for: so you understand the date the same way they do. *Turn the music down `thodethem`* is your own request, unasked, and it says the quiet is for your pleasure, which gives the listener a reason they can weigh. *Try swapping the agenda order `thurother`* offers the move as a tryout, aimed at whether the meeting feels worth your time, without claiming the swap is the right fix.
+*Put the deadline in writing `thowethel`* is advice they asked for, and it says what the writing is for: so you understand the date the same way they do. *Turn the music down `thodethem`* is your own request, unasked, and it says the quiet is for your pleasure, which gives the listener a reason they can weigh. *Try swapping the agenda order `thurother`* offers the move as a tryout, to see whether it makes the meeting feel worth your time, without claiming the swap is the right fix.
 
 ## Practice {#practice}
 
