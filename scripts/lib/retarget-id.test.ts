@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 
 import { REPO_ROOT } from "../../src/repo-paths.js";
 import { applyHashMoves } from "./hash-rows.ts";
-import { findReferences, parseExceptions, retargetText } from "./retarget-id.ts";
+import { findPageReferences, findReferences, parseExceptions, retargetText } from "./retarget-id.ts";
 
 const PAGE = "thanks-and-sorry.md";
 const ON_PAGE = join(REPO_ROOT, "docs", "grammar", "beginner", PAGE);
@@ -84,5 +84,87 @@ describe("hash row for a split", () => {
   it("adds one same-page row from the old id to the default target", () => {
     const { rows } = applyHashMoves([], [{ from: PAGE, id: "thanks-sorry", into: PAGE, toId: "thanks" }]);
     assert.deepEqual(rows, [{ page: PAGE, hash: "thanks-sorry", to: PAGE, toHash: "thanks" }]);
+  });
+});
+
+describe("pages resolved by folder", () => {
+  const GRAMMAR = join(REPO_ROOT, "docs", "grammar");
+  const IN_LESSONS = join(GRAMMAR, "claritish", "labels.md");
+  const STAGE = join(GRAMMAR, "beginner", "how-you-feel.md");
+  const PURPOSE = join(GRAMMAR, "purpose.md");
+  const META = join(REPO_ROOT, "docs", "meta", "x.md");
+  const count = (text: string, file: string, page: string) => findReferences(text, file, page, "x").length;
+
+  for (const name of ["can-and-cant", "feelings", "thanks-and-sorry", "tone-marks"]) {
+    const stage = `${name}.md`;
+    const lesson = `claritish/${name}.md`;
+
+    it(`${name}: a bare link in a lesson is the lesson's, elsewhere the stage page's`, () => {
+      const text = `See [a](${name}.md#x), [b](./${name}#x) and [c](${name}.html#x).`;
+      assert.equal(count(text, IN_LESSONS, lesson), 1);
+      assert.equal(findReferences(text, IN_LESSONS, lesson, "x")[0]!.count, 3);
+      assert.equal(count(text, IN_LESSONS, stage), 0);
+      assert.equal(count(text, STAGE, stage), 1);
+      assert.equal(count(text, STAGE, lesson), 0);
+    });
+
+    it(`${name}: a claritish/ path is the lesson's from any folder`, () => {
+      const text = `[a](../claritish/${name}.md#x) [b](claritish/${name}.md#x) [c](/claritish/${name}#x)`;
+      assert.equal(findReferences(text, PURPOSE, lesson, "x")[0]!.count, 3);
+      assert.equal(count(text, PURPOSE, stage), 0);
+      const meta = `[a](../grammar/claritish/${name}.md#x)`;
+      assert.equal(count(meta, META, lesson), 1);
+      assert.equal(count(meta, META, stage), 0);
+    });
+
+    it(`${name}: a lesson's ../ link and bare Source ref are the stage page's`, () => {
+      const text = `[a](../${name}.md#x) [b](/${name}#x) <!-- Source (editors): ${name}.md#x. -->`;
+      assert.equal(findReferences(text, IN_LESSONS, stage, "x")[0]!.count, 3);
+      assert.equal(count(text, IN_LESSONS, lesson), 0);
+      assert.equal(count(`"claritish/${name}.md#x"`, CODE, lesson), 1);
+      assert.equal(count(`"claritish/${name}.md#x"`, CODE, stage), 0);
+    });
+  }
+
+  it("retargets a lesson's links in their own form", () => {
+    const page = "claritish/feelings.md";
+    const lesson = "[a](feelings.md#x) [b](../feelings.md#x)";
+    assert.equal(retargetText(lesson, IN_LESSONS, page, "x", () => "y").text, "[a](feelings.md#y) [b](../feelings.md#x)");
+    const purpose = "[a](claritish/feelings.md#x) [b](feelings.md#x)";
+    assert.equal(retargetText(purpose, PURPOSE, page, "x", () => "y").text, "[a](claritish/feelings.md#y) [b](feelings.md#x)");
+    const code = '"claritish/feelings.md#x", "feelings.md#x"';
+    assert.equal(retargetText(code, CODE, page, "x", () => "y").text, '"claritish/feelings.md#y", "feelings.md#x"');
+  });
+});
+
+describe("findPageReferences", () => {
+  const LESSON = join(REPO_ROOT, "docs", "grammar", "claritish", "index.md");
+  it("finds anchored and unanchored links and bare refs to the page, in line order", () => {
+    const text = [
+      "- [Feelings](feelings.md): more. See [it](feelings.md#urge) and [stage](../feelings.md#urge).",
+      "<!-- Source (editors): feelings.md#urge, claritish/feelings.md#urge. -->",
+    ].join("\n");
+    const refs = findPageReferences(text, LESSON, "claritish/feelings.md");
+    assert.deepEqual(
+      refs.map((r) => [r.line, r.id, r.linkText]),
+      [
+        [1, undefined, "Feelings"],
+        [1, "urge", "it"],
+        [2, "urge", undefined],
+      ],
+    );
+    assert.deepEqual(
+      findPageReferences(text, LESSON, "feelings.md").map((r) => [r.line, r.id, r.linkText]),
+      [
+        [1, "urge", "stage"],
+        [2, "urge", undefined],
+      ],
+    );
+  });
+
+  it("skips bare refs in proposals and longer names", () => {
+    assert.equal(findPageReferences("feelings.md#urge", PROPOSAL, "feelings.md").length, 0);
+    assert.equal(findPageReferences("how-you-feelings.md#urge", CODE, "feelings.md").length, 0);
+    assert.equal(findPageReferences("[x](../grammar/feelings.md)", PROPOSAL, "feelings.md").length, 1);
   });
 });

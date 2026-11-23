@@ -105,14 +105,32 @@ export function setBandFrontMatter(markdown: string, band: Band): string {
   return markdown.replace(/^---\s*$/m, `---\nband: ${band}`);
 }
 
-export function rewriteAnchorRefs(text: string, map: Map<string, string>): { text: string; changes: { from: string; to: string }[] } {
+/**
+ * Bare `page.md#id` refs, keyed by folder: `claritish/page.md#id` (any path ending in that folder)
+ * is the lesson, any other is the stage page. With `from` (the file the text sits in), a ref inside
+ * a Markdown link `](…)` resolves from that file instead, as {@link resolveLinkPage} does.
+ */
+export function rewriteAnchorRefs(
+  text: string,
+  map: Map<string, string>,
+  from?: string,
+): { text: string; changes: { from: string; to: string }[] } {
   const changes: { from: string; to: string }[] = [];
+  const here = from === undefined ? "" : pageKeyOf(from);
   const textOut = text.replace(
     /(\]\()?((?:[\w.-]+\/)*)([\w.-]+\.md)#([A-Za-z0-9_-]+)(?![A-Za-z0-9_-])(\))?/g,
     (whole, linkOpen: string | undefined, dir: string, page: string, id: string, linkClose: string | undefined) => {
-      const to = map.get(`${page}#${id}`);
+      const key =
+        linkOpen && from !== undefined
+          ? resolveLinkPage(from, `${dir}${page}`)
+          : lastFolder(dir) === LESSON_DIR
+            ? `${LESSON_DIR}/${page}`
+            : page;
+      const to = map.get(`${key}#${id}`);
       if (!to) return whole;
-      const next = retargetPath(dir, to);
+      const [toPage, toId] = splitAnchor(to);
+      const href = `${retargetDir(dir, key!, toPage, linkOpen ? here : "")}${leafOf(toPage)}`;
+      const next = toId ? `${href}#${toId}` : href;
       const replaced = `${linkOpen ?? ""}${next}${linkClose ?? ""}`;
       if (replaced !== whole) changes.push({ from: `${page}#${id}`, to });
       return replaced;
@@ -121,20 +139,25 @@ export function rewriteAnchorRefs(text: string, map: Map<string, string>): { tex
   return { text: textOut, changes };
 }
 
+/**
+ * Markdown links `](href#id)` whose page and id are in `map`. `currentPage` is the file the text
+ * sits in, as a path or a page key (`feelings.md`, `claritish/feelings.md`); each href resolves
+ * from it ({@link resolveLinkPage}).
+ */
 export function rewriteMarkdownLinks(
   text: string,
   currentPage: string,
   map: Map<string, string>,
   changes?: { from: string; to: string }[],
 ): string {
+  const here = pageKeyOf(currentPage);
   return text.replace(/\]\(([^)\s]*)#([^)\s]+)\)/g, (whole, href: string, id: string) => {
-    if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return whole;
-    const page = hrefToPage(href, currentPage);
+    const page = resolveLinkPage(currentPage, href);
     if (!page) return whole;
     const to = map.get(`${page}#${id}`);
     if (!to) return whole;
     const [toPage, toId] = splitAnchor(to);
-    const nextHref = retargetHref(href, currentPage, toPage);
+    const nextHref = retargetHref(href, here, page, toPage);
     const replaced = toId ? `](${nextHref}#${toId})` : `](${nextHref})`;
     if (changes && replaced !== whole) changes.push({ from: `${page}#${id}`, to });
     return replaced;
@@ -315,28 +338,82 @@ function splitAnchor(anchor: string): [string, string | undefined] {
   return i < 0 ? [anchor, undefined] : [anchor.slice(0, i), anchor.slice(i + 1)];
 }
 
-function retargetPath(dir: string, to: string): string {
-  const [toPage, toId] = splitAnchor(to);
-  return toId ? `${dir}${toPage}#${toId}` : `${dir}${toPage}`;
+// ── Page keys: links resolved by folder ──
+
+/** The Claritish lessons' folder under docs/grammar/; every other page keys by its flat filename. */
+const LESSON_DIR = "claritish";
+
+/**
+ * The page key under docs/grammar/ of a file path or key: `claritish/feelings.md` for a Claritish
+ * lesson, the bare filename (`feelings.md`) for anything else, stage pages included.
+ */
+export function pageKeyOf(file: string): string {
+  const parts = file.split(/[/\\]/);
+  const name = parts.pop() ?? "";
+  const inLessons = parts.at(-1) === LESSON_DIR && (parts.length === 1 || parts.at(-2) === "grammar");
+  return inLessons ? `${LESSON_DIR}/${name}` : name;
 }
 
-function hrefToPage(href: string, currentPage: string): string | undefined {
-  if (href === "") return currentPage;
-  const path = href.replace(/^\.\//, "").replace(/^\//, "");
-  const leaf = path.split("/").pop() ?? path;
-  const stem = leaf.replace(/\.(?:md|html)$/, "");
-  if (!stem) return currentPage;
-  return `${stem}.md`;
+/**
+ * The page key a link target means, read from `from` (the file it sits in, as a path or page key).
+ * `target` is an href with or without `#id` (`feelings.md`, `../claritish/feelings.html#x`,
+ * `/feelings`). A path whose last folder is `claritish` is the lesson; a bare name is the lesson
+ * inside `claritish/` and the stage page elsewhere; any other path is the stage page. An empty
+ * href is `from`'s own page; an external URL is `undefined`.
+ */
+export function resolveLinkPage(from: string, target: string): string | undefined {
+  const href = target.replace(/#.*$/, "");
+  if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return undefined;
+  const here = pageKeyOf(from);
+  const path = href.replace(/^\.\//, "");
+  const parts = path.split("/");
+  const stem = (parts.pop() ?? "").replace(/\.(?:md|html)$/, "");
+  if (!stem) return here || undefined;
+  const dirs = parts.filter((part) => part !== "" && part !== ".");
+  const lesson = dirs.length ? dirs.at(-1) === LESSON_DIR : !path.startsWith("/") && isLesson(here);
+  return lesson ? `${LESSON_DIR}/${stem}.md` : `${stem}.md`;
 }
 
-function retargetHref(href: string, currentPage: string, toPage: string): string {
-  if (href === "") return toPage === currentPage ? "" : toPage;
+function isLesson(key: string): boolean {
+  return key.startsWith(`${LESSON_DIR}/`);
+}
+
+function lastFolder(dir: string): string | undefined {
+  return dir.split("/").filter((part) => part !== "" && part !== ".").at(-1);
+}
+
+/** A key's filename as written in a link: the lesson folder dropped, a stage key as is. */
+function leafOf(key: string): string {
+  return isLesson(key) ? key.slice(LESSON_DIR.length + 1) : key;
+}
+
+/**
+ * The folder part of an href once its page moves from `fromKey` to `toKey`; `here` is the key of the
+ * file the link sits in (`""` for a bare ref). Unchanged when both keys share a folder.
+ */
+function retargetDir(dir: string, fromKey: string, toKey: string, here: string): string {
+  if (isLesson(fromKey) === isLesson(toKey)) return dir;
+  if (isLesson(toKey)) {
+    return isLesson(here) && /^(?:\.\.?\/)?$/.test(dir) ? "" : `${dir}${LESSON_DIR}/`;
+  }
+  const out = dir.replace(new RegExp(`(?:^|(?<=/))${LESSON_DIR}/$`), "");
+  return out === "" && isLesson(here) ? "../" : out;
+}
+
+function retargetHref(href: string, here: string, fromKey: string, toKey: string): string {
+  if (href === "") {
+    if (toKey === here) return "";
+    return `${retargetDir("", here, toKey, here)}${leafOf(toKey)}`;
+  }
+  const dirEnd = href.lastIndexOf("/") + 1;
+  const dir = retargetDir(href.slice(0, dirEnd), fromKey, toKey, here);
+  const toPage = leafOf(toKey);
   const newStem = toPage.replace(/\.md$/, "");
-  return href.replace(/[^/]+$/, (leaf) => {
-    if (leaf.endsWith(".html")) return `${newStem}.html`;
-    if (leaf.endsWith(".md")) return toPage;
-    return newStem;
-  });
+  const leaf = href.slice(dirEnd);
+  if (leaf === "") return href;
+  if (leaf.endsWith(".html")) return `${dir}${newStem}.html`;
+  if (leaf.endsWith(".md")) return `${dir}${toPage}`;
+  return `${dir}${newStem}`;
 }
 
 function pickH1Id(explicit: string | undefined, title: string, newPage: string, taken: readonly string[]): string {

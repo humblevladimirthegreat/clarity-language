@@ -10,8 +10,10 @@
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 
-import { REPO_ROOT } from "../../src/repo-paths.js";
-import { rewriteAnchorRefs, rewriteMarkdownLinks } from "./peel-band.ts";
+import { grammarFile, GRAMMAR_DIR, REPO_ROOT } from "../../src/repo-paths.js";
+import { pageKeyOf, resolveLinkPage, rewriteAnchorRefs, rewriteMarkdownLinks } from "./peel-band.ts";
+
+export { pageKeyOf, resolveLinkPage };
 
 const SCAN_DIRS = ["docs", "src", "scripts", "data"].map((dir) => join(REPO_ROOT, dir));
 const SCAN_FILES = ["AGENTS.md", "README.md"].map((name) => join(REPO_ROOT, name));
@@ -20,6 +22,17 @@ const SKIP_PREFIX = /^(?:peel-band|peel-headings|move-heading|retarget-id|link-r
 const PROPOSALS = `${join(REPO_ROOT, "docs", "proposals")}${sep}`;
 
 export type Change = { from: string; to: string };
+
+/** A page key (`feelings.md`, `claritish/feelings.md`) or path under docs/grammar/ → page key. */
+export function pageKeyArg(value: string): string {
+  const stem = value.replace(/^\.?\//, "").replace(/\.(?:md|html)$/, "");
+  return pageKeyOf(`${stem}.md`);
+}
+
+/** The absolute file of a page key: a lesson under `claritish/`, a stage page in its band folder. */
+export function pageKeyFile(key: string): string {
+  return key.includes("/") ? join(GRAMMAR_DIR, key) : grammarFile(key);
+}
 
 export function rewriteTargets(): string[] {
   const out: string[] = SCAN_FILES.filter((file) => existsSync(file));
@@ -48,14 +61,14 @@ export function applyMaps(
   linkMap: Map<string, string>,
   homeMap: Map<string, string> = new Map(),
 ): { text: string; changes: Change[] } {
-  const currentPage = file.endsWith(".md") ? file.split(/[/\\]/).pop()! : "";
+  const markdown = file.endsWith(".md");
   const code = /\.(?:ts|vue|csv|tsv)$/.test(file);
   const map = code ? new Map([...linkMap, ...homeMap]) : linkMap;
   const changes: Change[] = [];
   let next = text;
-  if (currentPage) next = rewriteMarkdownLinks(next, currentPage, map, changes);
+  if (markdown) next = rewriteMarkdownLinks(next, file, map, changes);
   if (file.startsWith(PROPOSALS)) return { text: next, changes };
-  const refs = rewriteAnchorRefs(next, map);
+  const refs = rewriteAnchorRefs(next, map, markdown ? file : undefined);
   changes.push(...refs.changes);
   return { text: refs.text, changes };
 }

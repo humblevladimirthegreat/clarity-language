@@ -50,6 +50,7 @@
     "plan-units": "tsx scripts/plan-units.ts",
     "peel-headings": "tsx scripts/peel-headings.ts",
     "move-heading": "tsx scripts/move-heading.ts",
+    "page-refs": "tsx scripts/page-refs.ts",
     "retarget-id": "tsx scripts/retarget-id.ts",
     "verify": "tsx scripts/verify.ts",
     "token-report": "node scripts/token-report.mjs",

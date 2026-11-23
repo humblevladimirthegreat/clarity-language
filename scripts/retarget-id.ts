@@ -3,6 +3,9 @@
  *
  * Run: npm run retarget-id -- --page beginner/a.md --id old --to new [--except file:line=id,…] [--list] [--write]
  *
+ * `--page` is the page's path under docs/grammar/: a stage page by its filename (any band folder is
+ * dropped), a Claritish lesson as `claritish/a.md`. Links resolve by folder (link-rewrite.ts).
+ *
  * Preconditions: `--id` no longer exists on `--page`; `--to` and every `--except` target do.
  * `--list` prints each reference to `a.md#old` repo-wide (also `.html`, `/a#old` and same-page
  * `](#old)` links), one per line: `file:line`, link text, and the text around it. The scan is
@@ -19,9 +22,9 @@ import { join, relative } from "node:path";
 import { hashRedirects } from "../docs/grammar/.vitepress/lib/hash-redirect.js";
 import { applyHashMoves, writeHashRedirects } from "./lib/hash-rows.ts";
 import { idsIn } from "./lib/heading-clusters.ts";
-import { rewriteTargets } from "./lib/link-rewrite.ts";
+import { pageKeyArg, pageKeyFile, rewriteTargets } from "./lib/link-rewrite.ts";
 import { findReferences, parseExceptions, retargetText } from "./lib/retarget-id.ts";
-import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
+import { REPO_ROOT } from "../src/repo-paths.js";
 
 const hashPath = join(REPO_ROOT, "docs", "grammar", ".vitepress", "lib", "hash-redirect.ts");
 
@@ -41,7 +44,7 @@ function parseArgs(argv: string[]): Options {
     };
     if (arg === "--write") options.write = true;
     else if (arg === "--list") options.list = true;
-    else if (arg === "--page") options.page = `${value().replace(/^.*\//, "").replace(/\.(?:md|html)$/, "")}.md`;
+    else if (arg === "--page") options.page = pageKeyArg(value());
     else if (arg === "--id") options.id = value().replace(/^#/, "");
     else if (arg === "--to") options.to = value().replace(/^#/, "");
     else if (arg === "--except") options.except = parseExceptions(value());
@@ -65,7 +68,7 @@ function checkPreconditions(options: Options, pagePath: string): void {
 }
 
 function main(options: Options): void {
-  const pagePath = grammarFile(options.page);
+  const pagePath = pageKeyFile(options.page);
   checkPreconditions(options, pagePath);
   const files = rewriteTargets().filter((file) => file !== hashPath);
   if (!files.includes(pagePath)) files.push(pagePath);

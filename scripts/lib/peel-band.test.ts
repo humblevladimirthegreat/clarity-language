@@ -9,7 +9,9 @@ import {
   addAllowlistRow,
   addSittingToUnit,
   appendObjectToExportedArray,
+  pageKeyOf,
   peelBand,
+  resolveLinkPage,
   rewriteAnchorRefs,
   rewriteMarkdownLinks,
   setBandFrontMatter,
@@ -146,6 +148,38 @@ describe("rewriteMarkdownLinks", () => {
       rewriteMarkdownLinks("See [x](./joins#intermediate) and [y](joins.html#intermediate).", "other.md", map),
       "See [x](./rank-joins) and [y](rank-joins.html).",
     );
+  });
+});
+
+describe("resolveLinkPage", () => {
+  it("reads claritish/ paths as lessons and bare names from the file's folder", () => {
+    const lesson = "docs/grammar/claritish/labels.md";
+    const cases: [string, string, string | undefined][] = [
+      [lesson, "feelings.md#x", "claritish/feelings.md"],
+      [lesson, "./feelings", "claritish/feelings.md"],
+      [lesson, "../feelings.md", "feelings.md"],
+      [lesson, "/feelings#x", "feelings.md"],
+      [lesson, "#x", "claritish/labels.md"],
+      ["docs/grammar/beginner/joins.md", "feelings.md", "feelings.md"],
+      ["docs/grammar/purpose.md", "claritish/feelings.md", "claritish/feelings.md"],
+      ["docs/grammar/purpose.md", "../claritish/feelings.md", "claritish/feelings.md"],
+      ["docs/meta/x.md", "../grammar/claritish/feelings.md", "claritish/feelings.md"],
+      ["claritish/labels.md", "feelings.html", "claritish/feelings.md"],
+      ["joins.md", "https://example.com/feelings.md", undefined],
+    ];
+    for (const [from, target, key] of cases) assert.equal(resolveLinkPage(from, target), key, `${from} → ${target}`);
+    assert.equal(pageKeyOf("/repo/docs/grammar/claritish/feelings.md"), "claritish/feelings.md");
+    assert.equal(pageKeyOf("/repo/docs/grammar/beginner/feelings.md"), "feelings.md");
+  });
+
+  it("rewrites a link that moves between a stage page and a lesson in the file's own terms", () => {
+    const into = new Map([["feelings.md#x", "claritish/feelings.md#y"]]);
+    assert.equal(rewriteMarkdownLinks("[a](feelings.md#x)", "docs/grammar/purpose.md", into), "[a](claritish/feelings.md#y)");
+    assert.equal(rewriteMarkdownLinks("[a](../feelings.md#x)", "claritish/labels.md", into), "[a](feelings.md#y)");
+    const out = new Map([["claritish/feelings.md#y", "feelings.md#x"]]);
+    assert.equal(rewriteMarkdownLinks("[a](claritish/feelings.md#y)", "purpose.md", out), "[a](feelings.md#x)");
+    assert.equal(rewriteMarkdownLinks("[a](feelings.md#y)", "claritish/labels.md", out), "[a](../feelings.md#x)");
+    assert.equal(rewriteAnchorRefs("docs/grammar/claritish/feelings.md#y", out).text, "docs/grammar/feelings.md#x");
   });
 });
 

@@ -6,7 +6,10 @@
  * exactly what `--write` changes. Each line's references go to one target: the default, or the
  * exception named for that `file:line`.
  */
-import { applyMaps } from "./link-rewrite.ts";
+import { sep } from "node:path";
+
+import { REPO_ROOT } from "../../src/repo-paths.js";
+import { applyMaps, resolveLinkPage } from "./link-rewrite.ts";
 
 export type Reference = {
   /** 1-based line. */
@@ -54,6 +57,56 @@ export function retargetText(
   return { text: lines.join("\n"), edits };
 }
 
+export type PageReference = {
+  /** 1-based line. */
+  line: number;
+  /** The id the reference points at; `undefined` for the page itself. */
+  id: string | undefined;
+  /** Link text, when the reference is a Markdown link. */
+  linkText: string | undefined;
+  /** About 80 characters around the reference. */
+  context: string;
+};
+
+const PROPOSALS = `${REPO_ROOT}${sep}docs${sep}proposals${sep}`;
+
+/**
+ * Every reference in `text` to page key `page` (`feelings.md`, `claritish/feelings.md`), anchored
+ * or not, by the scan of link-rewrite.ts: Markdown links in `.md` files resolve from `file`; bare
+ * `a.md` / `a.md#id` refs key by their folder, and are skipped in proposals.
+ */
+export function findPageReferences(text: string, file: string, page: string): PageReference[] {
+  const markdown = file.endsWith(".md");
+  const bare = !file.startsWith(PROPOSALS);
+  const out: PageReference[] = [];
+  text.split("\n").forEach((lineText, i) => {
+    const found: { at: number; ref: PageReference }[] = [];
+    const add = (at: number, length: number, id: string | undefined, linkText: string | undefined) =>
+      found.push({ at, ref: { line: i + 1, id, linkText, context: contextAt(lineText, at, length) } });
+    if (markdown) {
+      for (const m of lineText.matchAll(/\[([^\]]*)\]\(([^)\s]*)\)/g)) {
+        const href = m[2]!;
+        if (resolveLinkPage(file, href) !== page) continue;
+        const hash = href.indexOf("#");
+        add(m.index!, m[0].length, hash < 0 ? undefined : href.slice(hash + 1), m[1]!);
+      }
+    }
+    if (bare) {
+      const re = /(\]\()?((?:[\w.-]+\/)*)([\w.-]+\.md)(?:#([A-Za-z0-9_-]+))?(?![\w-])/g;
+      for (const m of lineText.matchAll(re)) {
+        if (m[1] && markdown) continue;
+        const before = lineText[m.index! - 1];
+        if (!m[1] && before && /[\w/.-]/.test(before)) continue;
+        const folder = m[2]!.split("/").filter((part) => part && part !== ".").at(-1);
+        const key = folder === "claritish" ? `claritish/${m[3]}` : m[3]!;
+        if (key === page) add(m.index!, m[0].length, m[4], undefined);
+      }
+    }
+    out.push(...found.sort((x, y) => x.at - y.at).map((f) => f.ref));
+  });
+  return out;
+}
+
 /** `file:line=id,file:line=id` → map keyed `file:line`. */
 export function parseExceptions(value: string): Map<string, string> {
   const out = new Map<string, string>();
@@ -65,6 +118,12 @@ export function parseExceptions(value: string): Map<string, string> {
     out.set(key, m[3]!);
   }
   return out;
+}
+
+function contextAt(line: string, at: number, length: number): string {
+  const start = Math.max(0, at - 30);
+  const end = Math.min(line.length, at + length + 30);
+  return `${start > 0 ? "…" : ""}${line.slice(start, end).trim()}${end < line.length ? "…" : ""}`;
 }
 
 function linkTexts(line: string, oldId: string): string[] {
