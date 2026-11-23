@@ -57,6 +57,15 @@ function byCue(text: string, mark: Mark, form: string): string {
   return applyChanges(text, placeDropIn(mark.cue, outcomeOf(form).form, { placement: trigger.placement, joiner: trigger.joiner, dropCue: trigger.dropCue })).text;
 }
 
+/** How a drop-in was placed, for a failure message: the cue and its placement, or the command. */
+function placedBy(mark: Mark | undefined): string {
+  if (!mark) return "by command (no cue)";
+  const trigger = data.triggers.find((t) => t.id === mark.cue.trigger)!;
+  return `cue ${trigger.id} (${trigger.placement}${trigger.dropCue ? ", drops its cue words" : ""})`;
+}
+
+const PLACEMENT_RULE = "Write it as the editor places it: docs/meta/claritish-style.md#examples-practice";
+
 /**
  * `answer` with `form` taken out and put back by typing a command where it was, as the writer
  * would with no English cue. A stack of tone marks (`?!`) takes one command per mark.
@@ -87,9 +96,9 @@ const words = (text: string): string[] => text.toLowerCase().match(/[\p{L}']+/gu
 function assertPlaced(placed: string, prompt: string, answer: string, form: string, message: string) {
   if (placed === answer) return;
   const added = words(answer.replace(form, "")).filter((w) => !words(prompt).includes(w));
-  assert.ok(added.length, `${message}: placed “${placed}”, the lesson has “${answer}”`);
+  assert.ok(added.length, `${message} placed “${placed}”, the lesson has “${answer}”. ${PLACEMENT_RULE}`);
   const host = answer.split(/\s+/).find((w) => w.includes(form))!.replace(/[.,!?;:]+$/, "");
-  assert.ok(placed.includes(host), `${message}: placed “${placed}”, the lesson has ${host}`);
+  assert.ok(placed.includes(host), `${message} placed “${placed}”, the lesson has ${host}. ${PLACEMENT_RULE}`);
 }
 
 describe("editor data", () => {
@@ -283,7 +292,7 @@ describe("lesson round-trip", () => {
         const text = own || !prefixes[id] ? item.prompt : `${prefixes[id]} ${item.prompt[0]!.toLowerCase()}${item.prompt.slice(1)}`;
         const [mark] = own ? [own] : prefixes[id] ? scanner(text, ALL) : [];
         const placed = mark ? byCue(text, mark, form!) : byCommand(item.answer, form!);
-        assertPlaced(placed, text, item.answer, form!, `“${item.prompt}”`);
+        assertPlaced(placed, text, item.answer, form!, `“${item.prompt}”: ${placedBy(mark)}`);
       }
     });
   }
@@ -298,7 +307,7 @@ describe("lesson round-trip", () => {
           const answer = sentence.replace(/`/g, "");
           const prompt = english(sentence);
           const mark = scanner(prompt, ALL).find((m) => m.cue.lesson === id);
-          assert.equal(mark ? byCue(prompt, mark, form) : byCommand(answer, form), answer, `“${prompt}”`);
+          assert.equal(mark ? byCue(prompt, mark, form) : byCommand(answer, form), answer, `“${prompt}”: ${placedBy(mark)}. ${PLACEMENT_RULE}`);
         }
       }
     });

@@ -233,7 +233,7 @@ Source: [feelings.md](/permission-consent#say-words)
 - **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwen vowurol hwuvam.`). It would be the speaker's say over their own act, which is their part (`hwuzom`). Parser: `saySpeaker`.
 - **open:** **-x** on a say word (`hwuvamx`). A group's say comes from a group in the clause, and no other reading is guessable. Parser: `pluralOnPos`.
 - **open:** **-n** on a say word (`hwuvan`), as on other closed families. Parser: no word.
-- **open:** a `bl-` word after a participant's say (`z` / `d` / `b`) without pair reach **`e`** (`hwudam blalazun`). The participant is already in the clause. Parser: `sayHost`.
+- **closed (D-78):** a `bl-` word after a participant's say (`z` / `d` / `b`) without pair reach **`e`** (`hwudam blalazun`). The participant is already in the clause, and a participant's say never passes to someone else; the yes of someone who holds no role is `v` with a `bl-` word (`hwevam blalazun`). Parser: `sayHost`.
 
 ## Pronouns and plurality
 

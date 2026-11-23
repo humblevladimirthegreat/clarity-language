@@ -269,7 +269,7 @@ An act that touches someone else's body, things, or time can go ahead on a yes n
 
 English *she's fine with it* does not say whether she signed on, said yes and can take it back, or was never asked.
 
-A [say word](/permission-consent#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
+A [say word](/permission-consent#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, the doer, or someone whose things or time it uses, by name) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
 
 Marking an assumed yes as an assumption helps you check before acting, and marking a spoken yes as revocable records that they can withdraw it.
 

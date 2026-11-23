@@ -68,7 +68,7 @@ To ask for permission, put the clause under [ask](/questions#question): `yem zuw
 
 ### Someone in the act: consent (`z` / `d` / `b`) {#consent}
 
-English *they agreed* reports **consent**: the say of someone *in* the act: their body, their things, their time. In Ageben, write the role letter that person has in the clause: `d` the one it's done to, `b` the recipient, `z` the doer. They are already in the clause, so the say word needs no `bl-` word. You can then report the yes of the person the act touches apart from any outside permission.
+English *they agreed* reports **consent**: the say of someone *in* the act, the one it is done to, told or given to, or done by. In Ageben, write the role letter that person has in the clause: `d` the one it's done to, `b` the recipient, `z` the doer. They are already in the clause, so the say word needs no `bl-` word. You can then report the yes of the person the act touches apart from any outside permission.
 
 > `zazozon vezuyol bahelan hwubam.`
 >
@@ -124,6 +124,30 @@ A vow (`hwuzal`) commits you to an act, and said to someone it is a **promise** 
 
 To check in, ask: `yem zuwen vezuyol bawan hwubam.` (*Are you still OK with me telling you?*).
 
+The role letter names whoever holds that role in this clause, and the say never passes to anyone else. In *I read your book*, the book is the one it's done to, and you appear only inside its phrase (`om bawan`), so `hwudam` there would say the book agreed. Someone whose things or time the act uses, without a role of their own, has a say from outside the act: write `v`, give it pair reach `e` (their say covers only their own part; more in the next section), and name them in a `bl-` word. `hwevam blawan` is *fine as far as you're concerned*.
+
+> `zuwen danal om bawan vanalayebel hwevar blawan.`
+>
+> z-speaker | [d-book | [used-by | b-listener]] | v-read | [h-pair-event-ALLOW-tacit | bl-listener]
+>
+> "I read your book, assuming you don't mind."
+
+The endings read as they do for consent: `hweval` they signed on (a release for a photo), `hwevam` they said yes and can take it back, `hwevar` you are assuming it. Because the letter never passes on, the yes of the one it's done to and the yes of the one it belongs to stay apart, and you can say both.
+
+> `zuwen dodozel om balazun vowurol hwudar hwevam blalazun.`
+>
+> z-speaker | [d-dog | [used-by | b-Alazun]] | v-walk | h-episode-patient-ALLOW-tacit | [h-pair-event-ALLOW-said | bl-Alazun]
+>
+> "I walk Alazun's dog: the dog is presumably fine with it, and Alazun said yes."
+
+The same rule keeps a parent's yes from passing for a child's. In *the doctor examined Alazun's son*, `hwudam` is the son's own yes, and Alazun's yes is `hwuvam blalazun`. When a verb puts the owner in the clause, say it that way and use their own letter: with `vogeral` (*lend*), the lender is the doer and the borrower the recipient.
+
+> `zawan dugaval vogeral buwen hwuzem.`
+>
+> z-listener | d-car | v-lend | b-speaker | h-episode-agent-CHOICE-said
+>
+> "You lend me the car, by your own choice."
+
 A say word takes no `-x`: a group's say comes from a group in the clause.
 
 ### How far the say reaches {#say-reach}
@@ -132,7 +156,7 @@ The reach vowel is [label reach](/label-seams#reach-vowels), the same vowels as 
 
 - `u`: this act. `hwudam` is a yes to this act, which is why consent is asked for each time.
 - `o`: standing. `hwodam` is standing consent (*they're generally fine with this*), `hwovam` standing permission (*you may, any time*), `hwovom` a standing duty, and `hwozom` a discipline. Standing is not binding: `hwodam` can still be taken back, and only `-l` binds.
-- `e`: toward one party, named in a `bl-` word. `zuwen vowurol hwezal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On `v`, the `bl-` word is still who has the say, and `e` limits it to their own part: `hwuvam blalazun` is *Alazun lets Azozon walk*, and `hwevam blalazun` is *fine as far as Alazun is concerned*; others may still object. Bare `hwevam` is *fine by me*, without speaking for anyone else.
+- `e`: toward one party, named in a `bl-` word. `zuwen vowurol hwezal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On `d` or `b`, it is a yes given to that party alone, and it covers no one else who acts: `zahelan dalazun vayebel hwedam blazozon.` is *Ahelan looks at Alazun on a yes Alazun gave Azozon*, not one Alazun gave Ahelan. On `v`, the `bl-` word is still who has the say, and `e` limits it to their own part: `hwuvam blalazun` is *Alazun lets Azozon walk*, and `hwevam blalazun` is *fine as far as Alazun is concerned*; others may still object. Bare `hwevam` is *fine by me*, without speaking for anyone else.
 - `a`: a type across scenes. `hwadam` is *they're the type who's fine with it*, and `hwavom` *their kind has to*. These are the inferences consent and fairness warn against; the form makes them visible instead of hiding them.
 - Pairs compose as on any label: `hwuovam` is *you may, but not in my official role*.
 

@@ -573,7 +573,7 @@
     "questions": [
       {
         "id": "consent",
-        "prompt": "Did the person it affects agree?",
+        "prompt": "Did the person it was done to agree?",
         "choices": [
           {
             "value": "-m"
@@ -583,6 +583,11 @@
           },
           {
             "value": "-r"
+          },
+          {
+            "value": "none",
+            "label": "It was done to their things or time",
+            "none": "The consent word is the yes of the one the act is done to. For their car, their photo, or their time, say their yes in English: you said I could take the car."
           }
         ]
       }

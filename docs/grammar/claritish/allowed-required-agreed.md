@@ -2,12 +2,12 @@
 
 ## The gap {#gap}
 
-English *can*, *may*, *should*, and *OK* blur who allowed something, and whether the person it affects agreed or was only assumed to. When nobody says whose yes it is, a habit everyone follows can pass for a rule, and a guess that a friend won't mind can pass for their actual yes. Ageben has separate words for **permission** (someone allowing or forbidding an act), **requirement** (someone demanding it), and **consent** (the yes of the person the act affects), and the ending of each word says where the yes or no comes from.
+English *can*, *may*, *should*, and *OK* blur who allowed something, and whether the person it's done to agreed or was only assumed to. When nobody says whose yes it is, a habit everyone follows can pass for a rule, and a guess that a friend won't mind can pass for their actual yes. Ageben has separate words for **permission** (someone allowing or forbidding an act), **requirement** (someone demanding it), and **consent** (the yes of the person the act is done to), and the ending of each word says where the yes or no comes from.
 
 ## The forms {#forms}
 <!-- Agent summary: four drop-ins (table), ending `-m` by default: `hwuvam` allowed, `hwuvum` forbidden, `hwuvom` required (someone over the act); `hwudam` agreed (consent of the person it's done to). Placement: after the clause, before it, or beside the word it's about; covers the whole clause. `-m` with no one named: the person with the say is the speaker. Unsure of the source → `-m`. Leave out when the English already says whose say it is. -->
 
-Each drop-in below says what someone said about an act. The first three come from someone outside the act, such as a rule or a person with the standing to decide, and they say it's allowed, forbidden, or required. The fourth is consent, which comes from inside the act. It says that the person the act is done to said yes, because it's their body, their things, or their time that the act touches.
+Each drop-in below says what someone said about an act. The first three come from someone outside the act, such as a rule or a person with the standing to decide, and they say it's allowed, forbidden, or required. The fourth is consent, which comes from inside the act. It says that the person the act is done to said yes: the one examined, hugged, photographed, or signed up.
 
 | Drop-in | What was said | English often says |
 |---------|---------------|--------------------|
@@ -50,16 +50,16 @@ Because each ending names a different source, two of them can be true of the sam
 
 On the consent word, the ending says how firmly the person agreed. Take one photo, said three ways:
 
-> The newsletter printed her photo `hwudal`.  
-> The newsletter printed her photo `hwudam`.  
-> The newsletter printed her photo `hwudar`.
+> The newsletter photographed her `hwudal`.  
+> The newsletter photographed her `hwudam`.  
+> The newsletter photographed her `hwudar`.
 
 With `hwudal`, she signed on in advance, perhaps with a release form, and backing out now has terms. With `hwudam`, she said yes, and she can take it back at any time. With `hwudar`, nobody asked her, and the newsletter took her yes as given.
 
 `hwudar` is a fair thing to say, but it's visibly weaker than the other two. It puts *I assumed* into the sentence, where English would hide it inside *she was fine with it*.
 
 ## Telling them apart {#telling-apart}
-<!-- Agent summary: near misses. Rule (`-l`) vs custom (`-r`): `hwuvol` / `hwuvor`, `hwuvul` / `hwuvur`. Permission (`hwuvam`, someone over the act) vs consent (`hwudam`, the person it's done to); both can hold. `-m` on `hwuvam` / `hwuvum` / `hwuvom` = the speaker's say, so no reading on a sentence about the speaker (*I have to …*): use `hwuvol`, `hwuvor`, or name the person in English and leave the drop-in out. *can* = able (*I can swim*) involves no one's yes → no drop-in. -->
+<!-- Agent summary: near misses. Rule (`-l`) vs custom (`-r`): `hwuvol` / `hwuvor`, `hwuvul` / `hwuvur`. Permission (`hwuvam`, someone over the act) vs consent (`hwudam`, the person it's done to); both can hold. Act done to someone's things or time (*your car*, *a photo of us*): `hwudam` would be the thing's yes → say the owner's yes in English and leave the drop-in out; recast when it's really done to them (*I tagged her*). `-m` on `hwuvam` / `hwuvum` / `hwuvom` = the speaker's say, so no reading on a sentence about the speaker (*I have to …*): use `hwuvol`, `hwuvor`, or name the person in English and leave the drop-in out. *can* = able (*I can swim*) involves no one's yes → no drop-in. -->
 
 A few pairs get confused, usually because English uses the same words for both.
 
@@ -73,6 +73,10 @@ The same split works for a ban. *No smoking on the balcony `hwuvul`* means the r
 
 Permission comes from someone over the act, while consent comes from the person the act is done to, and the two can come apart. *The doctor examined my son `hwuvam`* says you, the parent, allowed it. *The doctor examined my son `hwudam`* says your son agreed himself. Both can be true, and saying which one you mean keeps the parent's yes from passing for the child's.
 
+### Their things or their time {#things-or-time}
+
+The consent drop-in is only ever the yes of the one the act is done to. In *I borrowed your car* or *I posted a photo of us*, the act is done to the car or the photo, so `hwudam` would say the car or the photo agreed. When an act uses someone's things or time, say their yes in English (*you said I could take the car*, *she said I could post it*) and leave the drop-in out. When the act is really done to them, say it that way and the drop-in fits again: *I tagged her in the photo `hwudam`*.
+
 ### A sentence about yourself {#about-yourself}
 
 Because `-m` with nobody named means the say is yours, `hwuvam`, `hwuvum`, and `hwuvom` don't fit a sentence about what you yourself do. *I have to work late `hwuvom`* would make you the outside person demanding it of yourself, and that has no reading. When something is required of you, name where the demand comes from instead. Use `hwuvol` when a rule requires it and `hwuvor` when it's custom, or name the person in English (*my manager says I have to work late*) and leave the drop-in out.
@@ -83,14 +87,14 @@ In *Can and can't*, the *can* that means someone is able to do something got its
 
 ## Examples {#examples}
 
-> I borrowed your car `hwudar`.  
+> I signed you up for the 10k `hwudar`.  
 > You can leave early `hwuvam`.  
 > We wear ties `hwuvor`, not `hwuvol`.  
 > Visitors sign in at the desk `hwuvol`.  
 > No phones at dinner `hwuvum`.  
 > People smoke on the balcony `hwuvar`.
 
-*I borrowed your car `hwudar`* owns up to the assumption: you didn't ask, and you're saying so. *We wear ties `hwuvor`, not `hwuvol`* tells a new colleague that ties are a custom, so nobody will point to a rule if they skip one. *People smoke on the balcony `hwuvar`* doesn't say anyone approved, only that nobody is stopping them.
+*I signed you up for the 10k `hwudar`* owns up to the assumption: you didn't ask first, and you're saying so. *We wear ties `hwuvor`, not `hwuvol`* tells a new colleague that ties are a custom, so nobody will point to a rule if they skip one. *People smoke on the balcony `hwuvar`* doesn't say anyone approved, only that nobody is stopping them.
 
 ## Practice {#practice}
 
@@ -108,16 +112,16 @@ You can park here `hwuval`.
 You can park here `hwuvam`.
 :::
 
-**3.** *I posted the photo of us.* (the other person in the photo said yes)
+**3.** *I tagged her in the photo.* (she said yes)
 
 ::: details Show answer
-I posted the photo of us `hwudam`.
+I tagged her in the photo `hwudam`.
 :::
 
-**4.** *I posted the photo of us.* (you didn't ask the other person; you figured they wouldn't mind)
+**4.** *I tagged her in the photo.* (you didn't ask her; you figured she wouldn't mind)
 
 ::: details Show answer
-I posted the photo of us `hwudar`.
+I tagged her in the photo `hwudar`.
 :::
 
 **5.** *People bring a dish.* (custom expects it)
@@ -144,4 +148,4 @@ Talking during the film `hwuvur`.
 Talking during the film `hwuvul`.
 :::
 
-<!-- Source (editors): permission-consent.md#say-words, permission-consent.md#permission (speaker on `-m`, ability), permission-consent.md#consent (consent endings), permission-consent.md#say-reach (different sources never clash). -->
+<!-- Source (editors): permission-consent.md#say-words, permission-consent.md#permission (speaker on `-m`, ability), permission-consent.md#consent (consent endings; the role letter never passes to an owner), permission-consent.md#say-reach (different sources never clash). -->
