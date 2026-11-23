@@ -14,7 +14,8 @@ import { join } from "node:path";
 import nlp from "compromise";
 
 import { parseCsv } from "../csv.js";
-import { REPO_ROOT, readData } from "../repo-paths.js";
+import { CLARITISH_FOLDER, CLARITISH_NOT_LESSONS, lessonForms, lessonGap, lessonOrder, lessonPracticeItems, lessonTitle, claritishSheetTables, onlyPage } from "../page-contracts.js";
+import { GRAMMAR_DIR, REPO_ROOT, readData } from "../repo-paths.js";
 import { compileTrigger, parsePattern, sentenceCues, sentences, type CompiledTrigger } from "./match.js";
 import type { Joiner, Placement } from "./place.js";
 import { findDropIns, findNearMisses } from "./read-back.js";
@@ -35,7 +36,7 @@ import {
   type PracticeItem,
 } from "./types.js";
 
-const CLARITISH = join(REPO_ROOT, "docs", "grammar", "claritish");
+const CLARITISH = join(GRAMMAR_DIR, CLARITISH_FOLDER);
 const PLACEMENTS: readonly Placement[] = ["after-clause", "after-noun", "suffix", "on-cue", "before-word"];
 const JOINERS: readonly Joiner[] = ["space", "comma", "sentence"];
 /** Letters typed before autocomplete offers a drop-in (`EditorData.autocompleteMin`). */
@@ -85,13 +86,13 @@ export type EditorSources = {
 
 export function readSources(): EditorSources {
   const lessons = new Map<string, string>();
-  const index = readFileSync(join(CLARITISH, "index.md"), "utf8");
+  const index = readFileSync(join(GRAMMAR_DIR, onlyPage(lessonOrder)), "utf8");
   for (const id of trackOrder(index)) lessons.set(id, readFileSync(join(CLARITISH, `${id}.md`), "utf8"));
   return {
     triggersCsv: readData("claritish-triggers.csv"),
     flowsJson: readData("claritish-flows.json"),
     wordsCsv: readData("claritish-words.csv"),
-    sheet: readFileSync(join(CLARITISH, "cheat-sheet.md"), "utf8"),
+    sheet: readFileSync(join(GRAMMAR_DIR, onlyPage(claritishSheetTables)), "utf8"),
     index,
     lessons,
     englishWords: englishWords(),
@@ -115,8 +116,8 @@ function englishWords(): string[] {
 
 /** Lesson ids in the intro page's lesson list, then its other lesson links (the bonus). */
 function trackOrder(index: string): string[] {
-  const ids = [...index.matchAll(/\]\(([\w-]+)\.md\)/g)].map((m) => m[1]!);
-  return [...new Set(ids)].filter((id) => id !== "learn" && id !== "cheat-sheet" && id !== "editor");
+  const ids = [...index.matchAll(lessonOrder.pattern!)].map((m) => m[1]!);
+  return [...new Set(ids)].filter((id) => !CLARITISH_NOT_LESSONS.has(`${id}.md`));
 }
 
 /** The prose of a lesson section (`## … {#gap}`), up to the next heading. */
@@ -134,8 +135,7 @@ function section(markdown: string, id: string): string | undefined {
  * no clause.*): the item starts empty, and the instruction leads the note.
  */
 export function lessonPractice(markdown: string): Omit<PracticeItem, "forms">[] {
-  const re = /^\*\*\d+\.\*\* (?:\*(.+?)\*|([^*\s][^(\n]*?))\s*(?:\((.+)\))?\s*\n\n::: details Show answer\n(.+)\n:::/gm;
-  return [...markdown.matchAll(re)].map((m) => {
+  return [...markdown.matchAll(lessonPracticeItems.pattern!)].map((m) => {
     const answer = m[4]!.replace(/`/g, "").trim();
     if (m[1] !== undefined) return { prompt: m[1], note: m[3] ?? "", answer };
     const instruction = m[2]!.trim().replace(/\.$/, "");
@@ -396,7 +396,7 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     if (!PLACEMENTS.includes(placement)) problems.push(`${where}: unknown placement \`${row.placement}\``);
     if (!JOINERS.includes(joiner)) problems.push(`${where}: unknown join \`${row.join}\``);
     if (row.drop_cue !== "yes" && row.drop_cue !== "no") problems.push(`${where}: drop_cue must be yes or no`);
-    const gapText = section(markdown, "gap");
+    const gapText = section(markdown, lessonGap.id!);
     const gap = gapText ? gapSentences(gapText)[Number(row.gap_sentence) - 1] : undefined;
     if (!gap) problems.push(`${where}: ${lesson}.md has no gap sentence ${row.gap_sentence}`);
     const mirror = (row.mirror ?? "").split("/").map((s) => s.trim());
@@ -421,19 +421,19 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
   const exemptCompiled = exempt.map((e, i) => compileTrigger({ id: `exempt-${i}`, lesson: e.lesson, cues: e.cues, exclude: [] }));
   const cued = [...new Set(triggers.map((t) => t.lesson))];
   for (const lesson of cued) {
-    const gap = section(sources.lessons.get(lesson)!, "gap") ?? "";
+    const gap = section(sources.lessons.get(lesson)!, lessonGap.id!) ?? "";
     for (const m of gap.matchAll(/(?<!\*)\*([^*\n]+)\*(?!\*)/g)) {
       const phrase = plain(m[1]!);
       const hit = (list: readonly CompiledTrigger[]) => sentences(phrase).some((s) => sentenceCues(s, list.filter((t) => t.lesson === lesson)).length > 0);
       if (!hit(compiled) && !hit(exemptCompiled)) {
-        problems.push(`claritish/${lesson}.md gap: *${phrase}* raises no ${lesson} cue and is not exempt in claritish-triggers.csv`);
+        problems.push(`claritish/${lesson}.md #${lessonGap.id}: *${phrase}* raises no ${lesson} cue and is not exempt in claritish-triggers.csv`);
       }
     }
   }
 
   const lessons: EditorLesson[] = order
     .filter((id) => cued.includes(id))
-    .map((id) => ({ id, title: plain(/^#\s+(.*?)\s*(?:\{#[\w-]+\})?\s*$/m.exec(sources.lessons.get(id)!)?.[1] ?? id), learn: `claritish/${id}.html#forms` }));
+    .map((id) => ({ id, title: plain(lessonTitle.pattern!.exec(sources.lessons.get(id)!)?.[1] ?? id), learn: `${CLARITISH_FOLDER}/${id}.html#${lessonForms.id}` }));
 
   const { glossary } = indexForms(flows);
 

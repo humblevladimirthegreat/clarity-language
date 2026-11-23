@@ -10,6 +10,7 @@
  */
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { pageTitle, stageSections } from "../src/page-contracts.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import {
   advancedLessons,
@@ -78,7 +79,7 @@ function otherPages(): Page[] {
 }
 
 function h1(markdown: string): string | undefined {
-  const m = /^# (.+)$/m.exec(markdown);
+  const m = pageTitle.pattern!.exec(markdown);
   return m ? clean(m[1]!) : undefined;
 }
 
@@ -98,7 +99,7 @@ function h3s(markdown: string): string[] {
   for (const line of markdown.split("\n")) {
     if (/^\s*(```|~~~)/.test(line)) fence = !fence;
     if (fence) continue;
-    const m = /^### (.+)$/.exec(line);
+    const m = stageSections.pattern!.exec(line);
     if (m && !/^Practice\b/i.test(clean(m[1]!))) out.push(clean(m[1]!));
   }
   return out;

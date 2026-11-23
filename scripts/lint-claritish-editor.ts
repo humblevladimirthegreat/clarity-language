@@ -3,12 +3,14 @@
 // The checks live in src/claritish-editor/data.ts, which the editor page loads too.
 import { buildEditorData } from "../src/claritish-editor/data.js";
 import { answerPaths } from "../src/claritish-editor/types.js";
+import { lessonGap } from "../src/page-contracts.js";
 
 const { data, problems } = buildEditorData();
 
 if (problems.length) {
   console.error(`Claritish editor data has ${problems.length} problem(s):`);
   for (const p of problems) console.error(`  ${p}`);
+  console.error(`Lesson pages: #${lessonGap.id} needs ${lessonGap.requires}.`);
   process.exitCode = 1;
 } else {
   const outcomes = Object.values(data.flows).reduce((n, f) => n + answerPaths(f.questions).length, 0);

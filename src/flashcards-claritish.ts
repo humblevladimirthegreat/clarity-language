@@ -11,7 +11,8 @@ import { join } from "node:path";
 
 import { cellEnglish, plain, readFormula, readSheet, type Sheet } from "./claritish-editor/sheet.js";
 import { spans, swapEnding } from "./lint/cheat-sheet-tables.js";
-import { REPO_ROOT } from "./repo-paths.js";
+import { CLARITISH_FOLDER, claritishSheetTables, onlyPage } from "./page-contracts.js";
+import { GRAMMAR_DIR } from "./repo-paths.js";
 
 /** The Claritish note type: its own model, never shared with the Ageben packs. */
 export const CLARITISH_MODEL = "Claritish";
@@ -357,9 +358,9 @@ export function buildClaritishPack(sheetMarkdown: string, lessons: readonly Clar
 
 /** Reads the cheat sheet and the lesson pages: pass the Claritish sidebar (`claritishLessons`). */
 export function loadClaritishPack(sidebar: readonly { text: string; link: string }[]): ClaritishPack {
-  const dir = join(REPO_ROOT, "docs", "grammar", "claritish");
+  const dir = join(GRAMMAR_DIR, CLARITISH_FOLDER);
   const lessons = claritishLessonList(sidebar).map((l) => ({ ...l, markdown: readFileSync(join(dir, l.page), "utf8") }));
-  return buildClaritishPack(readFileSync(join(dir, "cheat-sheet.md"), "utf8"), lessons);
+  return buildClaritishPack(readFileSync(join(GRAMMAR_DIR, onlyPage(claritishSheetTables)), "utf8"), lessons);
 }
 
 /** The JSON `scripts/flashcards-package.py` packages: the Claritish note type and its decks. */

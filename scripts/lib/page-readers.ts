@@ -15,7 +15,10 @@
  * Placement is exact so `--strip` gives back the page byte for byte: with frontmatter the block
  * goes right after its closing `---` line as `\n` + block + `\n`; without, at the top as block + `\n\n`.
  */
+import ts from "typescript";
+
 import { READ_BY_OPEN } from "../../src/lint/page-lines.ts";
+import type { PageContract, PageSet } from "../../src/page-contracts.ts";
 
 export { READ_BY_OPEN };
 
@@ -147,4 +150,87 @@ export function refreshPage(markdown: string, block: string): PageResult {
   if (stripped.includes(READ_BY_OPEN)) return { next, problem: "misplaced" };
   if (current === undefined) return { next, problem: "missing" };
   return current === block ? { next } : { next, problem: "stale" };
+}
+
+// ---------------------------------------------------------------- shape lines
+
+/** One contract from src/page-contracts.ts, by its export name, with the files that import it. */
+export type ContractInfo = { name: string; contract: PageContract; readers: readonly string[] };
+
+/** Whether a contract covers every page or every stage page; such a contract is listed once, in grammar-docs.md. */
+export function isWholeSite(set: PageSet): boolean {
+  return set.kind === "every page" || set.kind === "stage pages";
+}
+
+/** The part's name in a line: `H1`, `#gap`, `tables`, or the contract's label. */
+export function partLabel(contract: PageContract): string {
+  if (contract.label) return contract.label;
+  if (contract.part === "h1") return "H1";
+  if ((contract.part === "section" || contract.part === "anchor") && contract.id) return `#${contract.id}`;
+  return contract.part;
+}
+
+/** `#gap: requires (reader, reader)`; with `count`, the label carries it: `markers (3)`. */
+export function shapeLine(info: ContractInfo, count?: number): string {
+  const label = count === undefined ? partLabel(info.contract) : `${partLabel(info.contract)} (${count})`;
+  return `${label}: ${info.contract.requires} (${info.readers.join(", ")})`;
+}
+
+/**
+ * How many times the part is on the page: matches of the pattern, the id (0 or 1), or table rows.
+ * `ids` is the page's published ids.
+ */
+export function partCount(contract: PageContract, markdown: string, ids: ReadonlySet<string>): number {
+  const body = markdown.replace(/<!--[\s\S]*?-->/g, (c) => (contract.part === "marker" ? c : ""));
+  if (contract.pattern) return [...body.matchAll(new RegExp(contract.pattern.source, contract.pattern.flags.includes("g") ? contract.pattern.flags : `${contract.pattern.flags}g`))].length;
+  if (contract.part === "section" || contract.part === "anchor") return contract.id && ids.has(contract.id) ? 1 : 0;
+  if (contract.part === "tables") return body.split("\n").filter((l) => l.startsWith("|")).length;
+  if (contract.part === "examples") return [...body.matchAll(/`[^`\n]+`/g)].length;
+  if (contract.part === "h1") return [...body.matchAll(/^# /gm)].length;
+  return 0;
+}
+
+// ---------------------------------------------------------------- whole-site block (grammar-docs.md)
+
+export const SITE_OPEN = "<!-- read-by-site (generated: npm run page-readers -- --write; do not edit) -->";
+export const SITE_CLOSE = "<!-- /read-by-site -->";
+
+/** The whole-site block's body: contracts on every page or stage page, then the tools that read every page alike. */
+export function renderSiteBody(contracts: readonly ContractInfo[], tools: readonly string[]): string {
+  const lines = ["Page shape read on every page or every stage page:", ""];
+  for (const info of contracts) {
+    const where = info.contract.pages.kind === "every page" ? "every page" : "stage pages";
+    lines.push(`- ${partLabel(info.contract)} (${where}${info.contract.part === "marker" ? ", where present; counted in each page's block" : ""}): ${info.contract.requires} (${info.readers.map((r) => `\`${r}\``).join(", ")})`);
+  }
+  lines.push("", "Tools that read or rewrite every page alike, with no page contract:", "", ...tools.map((t) => `- \`${t}\``));
+  return lines.join("\n");
+}
+
+/** The page with the whole-site block's body refreshed; `problem` when the markers are absent or the body is stale. */
+export function refreshSiteBlock(markdown: string, body: string): { next: string; problem?: "no marker" | "stale" } {
+  const open = markdown.indexOf(SITE_OPEN);
+  const close = markdown.indexOf(SITE_CLOSE, open);
+  if (open < 0 || close < 0) return { next: markdown, problem: "no marker" };
+  const start = open + SITE_OPEN.length;
+  const fresh = `\n\n${body}\n\n`;
+  const next = markdown.slice(0, start) + fresh + markdown.slice(close);
+  return next === markdown ? { next } : { next, problem: "stale" };
+}
+
+// ---------------------------------------------------------------- new readers
+
+/** Code that names a grammar path: the helpers, the folder, or the path in parts. */
+export const GRAMMAR_PATH_RE = /grammarFile\(|GRAMMAR_DIR|docs\/grammar|["']docs["'],\s*["']grammar["']/;
+
+/** A source file's code with its comments removed (a `.vue` file's `<script>` blocks only). */
+export function codeOnly(file: string, text: string): string {
+  const source = file.endsWith(".vue") ? [...text.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]!).join("\n") : text;
+  const kind = /\.[cm]?js$/.test(file) ? ts.ScriptKind.JS : ts.ScriptKind.TS;
+  const sf = ts.createSourceFile(file.replace(/\.vue$/, ".ts"), source, ts.ScriptTarget.Latest, false, kind);
+  return ts.createPrinter({ removeComments: true }).printFile(sf);
+}
+
+/** Whether a source file names a grammar path in code, not only in comments; the site's code folder (`docs/grammar/.vitepress`) is not a page path. */
+export function namesGrammarPath(file: string, text: string): boolean {
+  return GRAMMAR_PATH_RE.test(text) && GRAMMAR_PATH_RE.test(codeOnly(file, text).replaceAll("docs/grammar/.vitepress", ""));
 }

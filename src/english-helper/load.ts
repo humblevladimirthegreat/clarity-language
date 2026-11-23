@@ -10,6 +10,7 @@ import { loadGrammarEntries } from "../find/entries-cache.js";
 import { pageSections } from "../lint/learning-order.js";
 import { listMarkdown } from "../markdown-files.js";
 import { loadDefaultTables } from "../parse/index.js";
+import { cheatSheetParadigms, coversPage } from "../page-contracts.js";
 import { dataPath, REPO_ROOT } from "../repo-paths.js";
 import type { HelperData, SectionInfo } from "./analyze.js";
 import { createHelperData, type HelperPayload } from "./browser.js";
@@ -52,7 +53,7 @@ export function loadParadigmBlocks(): ParadigmBlock[] {
   const canonical = loadCanonicalAnchors();
   return grammarFiles()
     .map((file) => grammarPath(relative(REPO_ROOT, file)))
-    .filter((page) => page.startsWith("cheat-sheets/"))
+    .filter((page) => coversPage(cheatSheetParadigms.pages, page))
     .sort()
     .flatMap((page) => parseParadigmBlocks(page, readFileSync(join(GRAMMAR_DIR, page), "utf8"), (link) => canonical.get(link) ?? link));
 }

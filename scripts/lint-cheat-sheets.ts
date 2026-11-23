@@ -26,10 +26,11 @@ import { lineNumberAt } from "../src/retie/tokens.js";
 import { listMarkdown } from "../src/markdown-files.js";
 import { cheatSheetSidebar, cheatSheetSlug } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { grammarFile, REPO_ROOT } from "../src/repo-paths.js";
+import { CLARITISH_FOLDER, cheatSheetMarker, claritishSheetTables, coversPage, isLessonPage, lessonTables, onlyPage } from "../src/page-contracts.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const sheetsDir = "cheat-sheets";
-const claritishDir = join(grammarDir, "claritish");
+const claritishDir = join(grammarDir, CLARITISH_FOLDER);
 
 /** Grammar sheets in docs/grammar/cheat-sheets/, by the ID owning pages use in `<!-- cheat-sheet: ID -->`. */
 const SHEETS: Record<string, string> = {
@@ -50,11 +51,9 @@ const SHEETS: Record<string, string> = {
   "to-english": "to-english.md",
 };
 
-const CLARITISH_SHEET = "cheat-sheet.md";
-const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn.md", CLARITISH_SHEET, "flashcards.md", "editor.md"]);
-const CLARITISH_PATTERN_ONLY = new Set(["what-a-feeling-wants.md", "feelings.md"]);
+const CLARITISH_SHEET = onlyPage(claritishSheetTables).slice(CLARITISH_FOLDER.length + 1);
 
-const MARKER_RE = /<!--\s*cheat-sheet:\s*(\S+)\s*-->/g;
+const MARKER_RE = cheatSheetMarker.pattern!;
 
 const problems: string[] = [];
 
@@ -203,13 +202,13 @@ function tableSpans(text: string): string[] {
 }
 
 function lintClaritish(): number {
-  const lessons = readdirSync(claritishDir).filter((f) => f.endsWith(".md") && !CLARITISH_NOT_LESSONS.has(f));
+  const lessons = readdirSync(claritishDir).filter((f) => f.endsWith(".md") && isLessonPage(`${CLARITISH_FOLDER}/${f}`));
   const sheetSpans = new Set(spans(readFileSync(join(claritishDir, CLARITISH_SHEET), "utf8")));
   const lessonSpans = new Set<string>();
   for (const file of lessons) {
     const text = readFileSync(join(claritishDir, file), "utf8");
     for (const span of spans(text)) lessonSpans.add(span);
-    if (CLARITISH_PATTERN_ONLY.has(file)) continue;
+    if (!coversPage(lessonTables.pages, `${CLARITISH_FOLDER}/${file}`)) continue;
     for (const span of tableSpans(text)) {
       if (!sheetSpans.has(span)) problems.push(`claritish/${file}: \`${span}\` is not on the cheat sheet`);
     }

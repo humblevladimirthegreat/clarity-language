@@ -123,8 +123,8 @@ export function rewriteAnchorRefs(
       const key =
         linkOpen && from !== undefined
           ? resolveLinkPage(from, `${dir}${page}`)
-          : lastFolder(dir) === LESSON_DIR
-            ? `${LESSON_DIR}/${page}`
+          : KEYED_DIRS.has(lastFolder(dir))
+            ? `${lastFolder(dir)}/${page}`
             : page;
       const to = map.get(`${key}#${id}`);
       if (!to) return whole;
@@ -340,24 +340,28 @@ function splitAnchor(anchor: string): [string, string | undefined] {
 
 // ── Page keys: links resolved by folder ──
 
-/** The Claritish lessons' folder under docs/grammar/; every other page keys by its flat filename. */
+/** The Claritish lessons' folder under docs/grammar/; with the cheat sheets' folder, the pages keyed by folder. Every other page keys by its flat filename. */
 const LESSON_DIR = "claritish";
+const SHEET_DIR = "cheat-sheets";
+const KEYED_DIRS: ReadonlySet<string | undefined> = new Set([LESSON_DIR, SHEET_DIR]);
 
 /**
  * The page key under docs/grammar/ of a file path or key: `claritish/feelings.md` for a Claritish
- * lesson, the bare filename (`feelings.md`) for anything else, stage pages included.
+ * lesson, `cheat-sheets/roles.md` for a cheat sheet, the bare filename (`feelings.md`) for anything
+ * else, stage pages included.
  */
 export function pageKeyOf(file: string): string {
   const parts = file.split(/[/\\]/);
   const name = parts.pop() ?? "";
-  const inLessons = parts.at(-1) === LESSON_DIR && (parts.length === 1 || parts.at(-2) === "grammar");
-  return inLessons ? `${LESSON_DIR}/${name}` : name;
+  const folder = parts.at(-1);
+  const keyed = KEYED_DIRS.has(folder) && (parts.length === 1 || parts.at(-2) === "grammar");
+  return keyed ? `${folder}/${name}` : name;
 }
 
 /**
  * The page key a link target means, read from `from` (the file it sits in, as a path or page key).
  * `target` is an href with or without `#id` (`feelings.md`, `../claritish/feelings.html#x`,
- * `/feelings`). A path whose last folder is `claritish` is the lesson; a bare name is the lesson
+ * `/feelings`). A path whose last folder is `claritish` is the lesson, `cheat-sheets` the cheat sheet; a bare name is the lesson
  * inside `claritish/` and the stage page elsewhere; any other path is the stage page. An empty
  * href is `from`'s own page; an external URL is `undefined`.
  */
@@ -370,6 +374,7 @@ export function resolveLinkPage(from: string, target: string): string | undefine
   const stem = (parts.pop() ?? "").replace(/\.(?:md|html)$/, "");
   if (!stem) return here || undefined;
   const dirs = parts.filter((part) => part !== "" && part !== ".");
+  if (dirs.at(-1) === SHEET_DIR) return `${SHEET_DIR}/${stem}.md`;
   const lesson = dirs.length ? dirs.at(-1) === LESSON_DIR : !path.startsWith("/") && isLesson(here);
   return lesson ? `${LESSON_DIR}/${stem}.md` : `${stem}.md`;
 }

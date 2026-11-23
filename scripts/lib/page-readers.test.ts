@@ -2,7 +2,16 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { countPageLines } from "../../src/lint/page-lines.js";
+import type { PageContract } from "../../src/page-contracts.ts";
 import {
+  codeOnly,
+  namesGrammarPath,
+  partCount,
+  refreshSiteBlock,
+  renderSiteBody,
+  shapeLine,
+  SITE_CLOSE,
+  SITE_OPEN,
   countText,
   currentBlock,
   invertRegistries,
@@ -138,5 +147,51 @@ describe("page-lines skips the block", () => {
     const withBlock = countPageLines(placeBlock(STAGE, block));
     assert.equal(withBlock.lines, bare.lines);
     assert.equal(withBlock.teach, bare.teach);
+  });
+});
+
+describe("shape lines", () => {
+  const gap: PageContract = { pages: { kind: "lessons" }, part: "section", id: "gap", requires: "a gap section" };
+  const marker: PageContract = { pages: { kind: "stage pages" }, part: "marker", pattern: /<!--\s*m:\s*(\S+)\s*-->/g, label: "m markers", requires: "each names a sheet" };
+
+  it("labels the part and lists the readers", () => {
+    assert.equal(shapeLine({ name: "lessonGap", contract: gap, readers: ["a.ts", "b.ts"] }), "#gap: a gap section (a.ts, b.ts)");
+    assert.equal(shapeLine({ name: "m", contract: marker, readers: ["c.ts"] }, 2), "m markers (2): each names a sheet (c.ts)");
+  });
+
+  it("counts a part on the page, markers kept and other comments skipped", () => {
+    assert.equal(partCount(gap, "## Gap {#gap}", new Set(["gap"])), 1);
+    assert.equal(partCount(gap, "## Gap", new Set()), 0);
+    assert.equal(partCount(marker, "<!-- m: a -->\n|x|\n<!-- m: b -->", new Set()), 2);
+    const tables: PageContract = { pages: { kind: "lessons" }, part: "tables", requires: "t" };
+    assert.equal(partCount(tables, "<!--\n| not a row |\n-->\n| a |", new Set()), 1);
+  });
+});
+
+describe("whole-site block", () => {
+  const h1: PageContract = { pages: { kind: "every page" }, part: "h1", pattern: /^# (.+)$/m, requires: "a title" };
+  const body = renderSiteBody([{ name: "pageTitle", contract: h1, readers: ["x.ts"] }], ["t.ts"]);
+
+  it("lists contracts and tools", () => {
+    assert.match(body, /^- H1 \(every page\): a title \(`x\.ts`\)$/m);
+    assert.match(body, /^- `t\.ts`$/m);
+  });
+
+  it("fills the markers, then is fresh; no markers is a note, not a change", () => {
+    const page = `# Docs\n\n${SITE_OPEN}\n${SITE_CLOSE}\n`;
+    const first = refreshSiteBlock(page, body);
+    assert.equal(first.problem, "stale");
+    assert.deepEqual(refreshSiteBlock(first.next, body), { next: first.next });
+    assert.deepEqual(refreshSiteBlock("# Docs\n", body), { next: "# Docs\n", problem: "no marker" });
+  });
+});
+
+describe("new-reader heuristic", () => {
+  it("skips comments and the site's code folder", () => {
+    assert.equal(namesGrammarPath("a.ts", 'const d = join(ROOT, "docs", "grammar");'), true);
+    assert.equal(namesGrammarPath("a.ts", "// reads docs/grammar/x.md\n/** GRAMMAR_DIR */\nconst x = 1;"), false);
+    assert.equal(namesGrammarPath("a.ts", 'import { y } from "../docs/grammar/.vitepress/lib/y.js";'), false);
+    assert.equal(namesGrammarPath("a.ts", 'const re = /\\/\\//; const p = "docs/grammar";'), true);
+    assert.doesNotMatch(codeOnly("a.vue", "<template>docs/grammar</template><script setup>const a = 1</script>"), /grammar/);
   });
 });

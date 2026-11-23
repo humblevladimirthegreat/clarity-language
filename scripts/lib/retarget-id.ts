@@ -98,7 +98,7 @@ export function findPageReferences(text: string, file: string, page: string): Pa
         const before = lineText[m.index! - 1];
         if (!m[1] && before && /[\w/.-]/.test(before)) continue;
         const folder = m[2]!.split("/").filter((part) => part && part !== ".").at(-1);
-        const key = folder === "claritish" ? `claritish/${m[3]}` : m[3]!;
+        const key = folder === "claritish" || folder === "cheat-sheets" ? `${folder}/${m[3]}` : m[3]!;
         if (key === page) add(m.index!, m[0].length, m[4], undefined);
       }
     }

@@ -23,13 +23,13 @@ const PROPOSALS = `${join(REPO_ROOT, "docs", "proposals")}${sep}`;
 
 export type Change = { from: string; to: string };
 
-/** A page key (`feelings.md`, `claritish/feelings.md`) or path under docs/grammar/ → page key. */
+/** A page key (`feelings.md`, `claritish/feelings.md`, `cheat-sheets/roles.md`) or path under docs/grammar/ → page key. */
 export function pageKeyArg(value: string): string {
   const stem = value.replace(/^\.?\//, "").replace(/\.(?:md|html)$/, "");
   return pageKeyOf(`${stem}.md`);
 }
 
-/** The absolute file of a page key: a lesson under `claritish/`, a stage page in its band folder. */
+/** The absolute file of a page key: a lesson under `claritish/`, a sheet under `cheat-sheets/`, a stage page in its band folder. */
 export function pageKeyFile(key: string): string {
   return key.includes("/") ? join(GRAMMAR_DIR, key) : grammarFile(key);
 }
