@@ -68,7 +68,7 @@ You know how far your own plan is worked out, so `thagom` about your own plan im
 *I'm going back to school `thalol`* is a want you have had for years, and it does not say that you will go. *I'm calling in sick `thalor`* is a want that will pass, perhaps by lunchtime. *I'm moving in the spring `thagol`* says the plan already covers what you will do if the lease falls through, while *we're redoing the kitchen `thagor`* says that only the idea is settled.
 
 ## Telling them apart {#telling-apart}
-<!-- Agent summary: near misses. Want vs plan: English *I'm going to* can introduce either; want word = a wish, no claim you mean to act; plan word = you mean to. Both together: want word first (`thalol` `thagom`). Plan vs forecast: a forecast (*I'm going to be late*) says what you expect to happen and takes no plan word; with `thagom` it becomes something you mean to do and no longer says it will happen. Whose: both words are always the speaker's, even when someone else does the act (*Sam takes the late shift `thalom`* = you want Sam to); someone else's own want or plan has no drop-in here, so it stays English. Wanting a thing: name the act that would get it (*I'm adopting a dog `thalom`*). -->
+<!-- Agent summary: near misses. Want vs plan: English *I'm going to* can introduce either; want word = a wish, no claim you mean to act; plan word = you mean to. Both together: want word first (`thalol` `thagom`). Plan vs forecast: a forecast (*I'm going to be late*) says what you expect to happen and takes no plan word; with `thagom` it becomes something you mean to do and no longer says it will happen. Whose: both words are the speaker's, even when someone else does the act (*Sam takes the late shift `thalom`* = you want Sam to); someone else's own want or plan has no drop-in here, so it stays English. Wanting a thing: name the act that would get it (*I'm adopting a dog `thalom`*). -->
 
 Four cases are easy to get wrong, and each is handled differently.
 
@@ -84,7 +84,7 @@ English *going to* also makes forecasts, which say what you expect to happen. *I
 
 ### Whose want or plan {#whose}
 
-Both words always mean your own want or plan, even when someone else does the act. For example, *Sam takes the late shift `thalom`* says you want Sam to take it, and *Sam takes the late shift `thagom`* says you plan for Sam to take it. These drop-ins cannot say what Sam wants or plans, so for that, keep the sentence in English: *Sam wants the late shift*.
+Both words mean your own want or plan, even when someone else does the act. For example, *Sam takes the late shift `thalom`* says you want Sam to take it, and *Sam takes the late shift `thagom`* says you plan for Sam to take it. These drop-ins cannot say what Sam wants or plans, so for that, keep the sentence in English: *Sam wants the late shift*.
 
 ### Wanting a thing {#wanting-a-thing}
 

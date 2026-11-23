@@ -15,9 +15,9 @@ Inbound links: npm run page-refs -- claritish/what-a-feeling-wants.md
 An English emotion word such as *anxious*, *angry*, or *proud* names the feeling and says nothing more about it. *I'm so angry* does not say which need went unmet, or what the anger makes you want to do. *It made me anxious* can send you off to hide before you have noticed that hiding is what you want. Ageben names the need and the urge in one word, so you can name the urge before you follow it.
 
 ## The forms {#forms}
-<!-- Agent summary: feeling word = thanks/sorry word (`th` + sake + `tha` met / `thu` unmet + ending) + urge vowel + last `-m`. Middle ending keeps its thanks/sorry meaning (how long the payoff or harm lasts); this lesson uses the default `-m`. Last `-m` = how long the feeling lasts, left open. Placement: after the English clause the feeling is about; alone, with no clause = how you feel right now. Can't tell which sake → `uda` (`thudathumum`); naming the sake changes nothing else (`thunathumum`). Nothing makes you want to move → urge `a`. -->
+<!-- Agent summary: feeling word = thanks/sorry word (`th` + sake + `tha` met / `thu` unmet + ending) + urge vowel + last `-m`. Middle ending keeps its thanks/sorry meaning (how long the payoff or harm lasts); this lesson uses the default `-m`. Last `-m` = how long the feeling lasts, left open. Placement: after the English clause the feeling is about; alone, with no clause = a whole sentence about how you feel. Can't tell which sake → `uda` (`thudathumum`); naming the sake changes nothing else (`thunathumum`). Nothing makes you want to move → urge `a`. -->
 
-A **feeling word** is one Ageben word that names a need and the **urge**, which is what the feeling makes you want to do. You build it from a thanks or sorry word from *Thanks and sorry*. That word starts with `th`, names a sake (the need involved), says with `tha` that the sake was met or with `thu` that it went unmet, and ends with `-m`. To make a feeling word, keep that whole word, add one vowel for the urge, and end with another `-m`.
+A **feeling word** is one Ageben word that names a need and the **urge**, which is what the feeling makes you want to do. You build it from a thanks or sorry word from *Thanks and sorry*. That word starts with `th`, names a sake (the need involved), says with `tha` that the sake was met or with `thu` that it went unmet, and ends with an ending such as `-m`. To make a feeling word, keep that whole word, add one vowel for the urge, and end with another `-m`.
 
 | `thuwa` | `tha` | `m` | `a` | `m` |
 |---------|-------|-----|-----|-----|
@@ -27,7 +27,7 @@ Read the table from left to right. `thuwatham` is the thanks word for competence
 
 The ending from *Thanks and sorry*, which says how long the payoff or the harm lasts, now sits in the middle of the word and keeps that meaning. Every feeling word in this lesson keeps it at the default, `-m`. The last `-m` is about the feeling itself, and it leaves open how long the feeling lasts.
 
-Put the feeling word after the English clause the feeling is about, as in *We shipped the draft `thuwathamam`*. A feeling word on its own, with no clause, says how you feel right now.
+Put the feeling word after the English clause the feeling is about, as in *We shipped the draft `thuwathamam`*. A feeling word on its own, with no clause, is a whole sentence about how you feel.
 
 When you can't tell which need is involved, use the unspecified sake `uda`. So `thudathumum` says *something is off, and I want to get away*. Once you can tell which need it is, put that sake in place of `uda` and change nothing else: `thunathumum` says *my say was taken, and I want to get away*. The urge has a ready answer too, because when nothing makes you want to move, the urge is `a`.
 
@@ -73,7 +73,7 @@ No urge is the right one to have. Each has times when it belongs, and the *Belon
 `thunathumem` says you want to take it up with someone, and its sake says what you would ask for: a say in your own work. Where *guilty* names only the feeling, `thewathumom` names the cost: she is not better off because of you, and you want to make that right. `thudathumum` names an urge to get away before you know which need is behind it.
 
 ## Telling a feeling word apart {#telling-apart}
-<!-- Agent summary: near misses. The urge is a want, not a decision: naming it leaves you free to follow it or not. Keep the English emotion word when it is all you can tell (no need, no urge) or all you want to say. After a clause the feeling is about that clause's event; alone it is about nothing you can point to, and the clause can come later. -->
+<!-- Agent summary: near misses. The urge is a want, not a decision: naming it leaves you free to follow it or not. Keep the English emotion word when it is all you can tell (no need, no urge). After a clause the feeling is about that clause's event; alone it is about nothing you can point to, and the clause can come later. -->
 
 Three things are easily confused with what a feeling word says, and each is handled differently.
 
@@ -88,14 +88,14 @@ The first sentence says what you will do. The second says that your say was take
 
 ### A feeling word or the English word {#feeling-or-emotion-word}
 
-*He rewrote my memo, and I'm angry* names the feeling. *He rewrote my memo `thunathumem`* names the need behind it and what the anger makes you want to do. So use the feeling word when you can tell those two things. When all you can tell is the emotion word, keep the English word, which says as much as you know. Keep it as well when the English word already says all you want to say.
+*He rewrote my memo, and I'm angry* names the feeling. *He rewrote my memo `thunathumem`* names the need behind it and what the anger makes you want to do. So use the feeling word when you can tell those two things. When all you can tell is the emotion word, keep the English word, which says as much as you know.
 
 ### With a clause or alone {#clause-or-alone}
 
 > The meeting ran two hours over `thudathumum`.  
 > `thudathumum`.
 
-After a clause, the feeling is about what the clause says happened, here the long meeting. On its own, the same word says how you feel right now, and that the feeling is about nothing you can point to. So you can say it before you know the cause, and add the clause once you find it.
+After a clause, the feeling is about what the clause says happened, here the long meeting. On its own, the same word says that the feeling is about nothing you can point to. So you can say it before you know the cause, and add the clause once you find it.
 
 ## Practice {#practice}
 

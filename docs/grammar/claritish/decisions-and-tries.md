@@ -16,7 +16,7 @@ Inbound links: npm run page-refs -- claritish/decisions-and-tries.md
 *I've decided* sounds final even when you could still change your mind, and *I'll try* sounds like a hedge even when you are committed to trying. Neither *I've decided* nor *I'll try* says how settled you are. In Ageben, the ending on a decision word or a try word says how settled the decision is or how committed the try is.
 
 ## The forms {#forms}
-<!-- Agent summary: two sets of drop-ins. Decision `thogel` / `thogem` / `thoger`: you have made a choice to do the act; does not say the act happens. Try `howal` / `howam` / `howar`: the act is attempted; says nothing about whether it works. Placement: where English puts an adverb or tag, usually the end of the clause; covers its clause. Unsure → middle one: `thogem` (can still change; claims nothing about how firm the choice will turn out), `howam` (commitment unsaid). Omit the decision word when saying the act happens (plain *We're moving to Denver*). -->
+<!-- Agent summary: two sets of drop-ins. Decision `thogel` / `thogem` / `thoger`: you have made a choice to do the act; does not say the act happens. Try `howal` / `howam` / `howar`: the act is attempted; says nothing about whether it works. Placement: where English puts an adverb or tag, usually the end of the clause; covers its clause. Unsure → middle one: `thogem` (can still change; claims nothing about how firm the choice will turn out), `howam` (commitment unsaid). Omit the decision word when only saying the act happens (plain *We're moving to Denver*). -->
 
 The drop-ins in this lesson come in two sets of three. A **decision** word says that you have made a choice to do the act. A **try** word says that someone attempts the act, and it says nothing about whether the attempt works.
 
@@ -29,7 +29,7 @@ Put the drop-in where English would put an adverb or a tag, usually at the end o
 
 When you can't tell which ending fits, use the middle one. `thogem` says you have decided and can still change your mind, and it is also the form to use when you don't know how settled the decision is. How firm a choice will turn out is hard to know even about your own choices, so `thogem` claims nothing either way. `howam` says that you try and leaves out how committed you are.
 
-Leave the decision word out when you are saying what happens. *We're moving to Denver* with nothing added says that the move happens. *We're moving to Denver `thogel`* says that you have decided for good to move, and it does not claim that the move happens.
+Leave the decision word out when you are only saying what happens. *We're moving to Denver* with nothing added says that the move happens. *We're moving to Denver `thogel`* says that you have decided for good to move, and it does not claim that the move happens.
 
 ## What the ending says {#endings}
 <!-- Agent summary: endings follow the settled-to-passing scale from *How sure are you?*: `-l` lasting, `-m` the default, `-r` right now; each word gives them its own meaning. Decision = how final: `thogel` for good, `thogem` can still change, `thoger` for now only; the verb stays the same. Try = how committed: `howal` keeps trying until it works or is ruled out, `howam` unsaid, `howar` a trial run, a low-stakes probe that plans for failure (if it fails, finding that out was the point). Use `howar` to lower the stakes of starting, for yourself or someone else. -->
@@ -69,7 +69,7 @@ A trial run plans for failure. If the lessons don't work out, finding that out w
 *We're moving to Denver `thogel`* says the decision to move is final. *I'm taking the job `thogem`* says you have chosen the job and could still change your mind. *I'm going vegetarian `howar`* is a trial run: if the diet does not suit you, finding that out was the point.
 
 ## Telling them apart {#telling-apart}
-<!-- Agent summary: near misses. Decision vs plan (*Wants and plans*): plan word = you mean to do a later act, ending = how far it is worked out; decision word = a choice made and how readily you would change it, whenever the act falls (fits before you start and while you do it). Both: plan word first (`thagom` `thogel`). Decision vs promise: `thogel` is a choice only you can see; a promise is a yes given openly that others can hold you to; no drop-in here, so *I promise* stays English. Try vs result: plain sentence = the act happens; try word = the attempt happens, outcome open; omit it when saying the act happened. A try word makes no claim about whether you can (ability suffix, *Can and can't*). Whose: decision word = always your decision, even when someone else does the act; someone else's decision stays English. Try word = whoever does the act tries. -->
+<!-- Agent summary: near misses. Decision vs plan (*Wants and plans*): plan word = you mean to do a later act, ending = how far it is worked out; decision word = a choice made and how readily you would change it, whenever the act falls (fits before you start and while you do it). Both: plan word first (`thagom` `thogel`). Decision vs promise: `thogel` is a choice only you can see; a promise is a yes given openly that others can hold you to; no drop-in here, so *I promise* stays English. Try vs result: plain sentence = the act happens; try word = the attempt happens, outcome open; omit it when saying the act happened. A try word makes no claim about whether you can (ability suffix, *Can and can't*). Whose: decision word = your decision, even when someone else does the act; someone else's decision stays English. Try word = whoever does the act tries. -->
 
 Four cases are easy to confuse with these drop-ins, and each is handled differently.
 
@@ -93,9 +93,9 @@ A try word also makes no claim about whether you are able to do the act. For tha
 
 ### Whose decision, whose try {#whose}
 
-A decision word always means your own decision, even when someone else does the act. For example, *the kids go to bed at eight `thogel`* says that you have decided for good that the kids go to bed at eight. These drop-ins cannot say what someone else decided, so keep that in English: *Sam decided to stay*.
+A decision word means your own decision, even when someone else does the act. For example, *the kids go to bed at eight `thogel`* says that you have decided for good that the kids go to bed at eight. These drop-ins cannot say what someone else decided, so keep that in English: *Sam decided to stay*.
 
-A try word works differently, because an attempt belongs to whoever makes it. *The kids are learning to swim `howal`* says that the kids will keep trying until they can swim or it is ruled out.
+A try word works differently: it means that whoever does the act makes the attempt. *The kids are learning to swim `howal`* says that the kids will keep trying until they can swim or it is ruled out.
 
 ## Practice {#practice}
 
