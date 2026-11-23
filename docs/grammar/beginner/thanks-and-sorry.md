@@ -2,6 +2,12 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- thanks-and-sorry.md
+-->
+
 # Thanks and sorry {#thanks-and-sorry}
 
 You thank and apologize in Ageben by saying whose sake was served or harmed. For thanks, you say your own sake is met; for sorry, you say the other person's sake went unmet.

@@ -2,6 +2,10 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- no-subject.md
+-->
+
 # Leaving out who acts {#leaving-out-who-acts}
 
 ### Leaving out who acts {#no-subject}

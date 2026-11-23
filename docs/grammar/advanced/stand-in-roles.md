@@ -2,6 +2,14 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #speech-act-verbs: 2 construction homes, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- stand-in-roles.md
+-->
+
 # Stand-in words {#stand-in-words}
 
 English verbs such as *confirm* and *deny* name a speech act; Ageben builds them from a stand-in with the ending `-rn` on `/v/`, and the following sentence is the content you confirm or deny. English *it is … that* puts a whole sentence in the subject role, and a `/z/` stand-in does the same.

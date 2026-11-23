@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #notional-as-if-framing: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key
+- #follow-up-endings-notional: 2 overlay rows, 1 pair-table rule
+Inbound links: npm run page-refs -- notional.md
+-->
+
 # As if {#as-if}
 
 English *as if*, *imagine*, and *suppose* talk about a scene that is only imagined. Ageben keeps the ordinary verb and adds NOTIONAL. Its ending says what the imagining is for: a rehearsal, a plain picture, or a passing *what if*.

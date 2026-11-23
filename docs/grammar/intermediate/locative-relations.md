@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #locative-relations: 6 overlay rows, 2 interpreter rows, 2 interpreter classes
+- #path-and-far-side: 8 overlay rows
+Inbound links: npm run page-refs -- locative-relations.md
+-->
+
 # Landmark relations {#landmark-relations}
 
 Hooks already give you *in*, *from*, and *toward*; the other places on this page each need a relation root with the landmark right after it. The first section teaches *between* two landmarks, *across* one from edge to edge, and *around* one on all sides. The second adds *past*, *along*, *opposite*, and *beyond*: a path that goes by a landmark, a path along its long side, a place facing it, and a place on its far side.

@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #bars: 3 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class, 1 frame key
+Inbound links: npm run page-refs -- bars.md
+-->
+
 # Than planned, enough, too {#than-planned-enough-too}
 
 English *more than planned*, *sleepier than usual*, *enough*, and *too much* compare against what a plan, an expectation, or a need sets, not against another thing. Ageben writes the plan, expectation, or need as a stance word in the place of the second name, where it becomes the bar: the value you rank against. That one pattern gives *than planned* with a plan word, *than usual* with a channel, and *enough* and *too* with a sake word.

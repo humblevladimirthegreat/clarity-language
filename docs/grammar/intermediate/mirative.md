@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #mirative: 1 rejection, 3 overlay rows, 1 interpreter row, 1 interpreter class, 1 frame key, 8 pair-table rules
+Inbound links: npm run page-refs -- mirative.md
+-->
+
 # It turns out {#it-turns-out}
 
 ### *It turns out* (`themem`) {#mirative}

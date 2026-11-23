@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #say-words: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key
+- #permission: 2 rejections
+Inbound links: npm run page-refs -- permission-consent.md
+-->
+
 # Permission and consent {#permission-and-consent}
 
 This page teaches one word on `/h/` for who has a say over an act, and what they say: allow, forbid, require, or leave it to someone. The first section builds that word from its pieces. The next two cover someone over the act (permission and requirement) and someone in it (consent), and the last says how far a say reaches.

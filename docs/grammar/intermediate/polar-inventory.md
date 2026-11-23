@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #polar-particle-fuller-inventory: 1 construction home, 3 closed words
+- #polar-endings: 9 closed words
+- #check-backs: 1 rejection
+Inbound links: npm run page-refs -- polar-inventory.md
+-->
+
 # Yes, no, and not that {#yes-no-and-not-that}
 
 This page completes the short answer words. Six polar words let you agree, deny, take up or turn down an option, reject a loaded question, or decline to answer, each firmly, softly, or for now, and they answer a command as well as a claim. Every polar word also works as a check-back, a short turn after your sentence that asks the listener for that answer. A question that already contains *not* is answered about that negative claim. A yes/no question can also check one named item with a join.

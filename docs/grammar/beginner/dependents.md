@@ -2,6 +2,16 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #dependent-clauses: 7 construction homes, 2 rejections, 3 interpreter rows, 3 interpreter classes
+- #hinges: 1 rejection, 9 overlay rows, 6 interpreter rows, 6 interpreter classes, 1 frame key, 13 pair-table rules
+- #so-that: 1 rejection
+Inbound links: npm run page-refs -- dependents.md
+-->
+
 # Dependents
 
 How a next sentence can fill a role (subject, object, and so on) in the sentence before it, and how English *who / that / which* is two sentences.

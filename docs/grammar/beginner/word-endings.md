@@ -2,6 +2,15 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #abstract-m: 1 construction home, 1 interpreter row, 1 interpreter class
+- #greeting: 11 construction homes, 2 interpreter rows, 2 interpreter classes, 2 frame keys
+Inbound links: npm run page-refs -- word-endings.md
+-->
+
 # Word endings
 
 A content word’s last letter tells the listener how to take its meaning: a new ordinary kind, the root’s abstract sense, or a name. That last letter is the **word ending**.

@@ -2,6 +2,12 @@
 prev: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- lesson links: the order of the links to lessons is the track's lesson order (src/claritish-editor/data.ts)
+Inbound links: npm run page-refs -- claritish/index.md
+-->
+
 # Claritish Introduction {#claritish}
 
 **Claritish** is English with a few Ageben words dropped in, called **drop-ins**. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where English would put an adverb or a short tag such as *you know*.

@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- introduction.md
+-->
+
 # Ageben Introduction
 
 **Ageben** (`agebe` + the name ending **-n**) translates to English *clarity*.

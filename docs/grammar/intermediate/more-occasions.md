@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #ranked-with-listed-occasions: 1 construction home
+Inbound links: npm run page-refs -- more-occasions.md
+-->
+
 # Exclusive and ranked times {#exclusive-and-ranked-times}
 
 Beginner restrictors said *only when*, *always*, and *sometimes*. This page first sets them apart from a whole sentence used as the occasion (*if Azozon walks*), which takes a hinge word instead. It then gives the rest of the restrictor vowel map, for *either when A or when B* and *always except when…*. Next come the ranked restrictors, for *preferably when A, or else when B*, and last the restrictors that point at some time without saying which.

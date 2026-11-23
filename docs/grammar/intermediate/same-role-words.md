@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #before-and-after: 4 construction homes, 3 rejections, 4 overlay rows, 1 interpreter row, 1 interpreter class
+- #same-role-while: 2 overlay rows
+- #same-role-like: 2 overlay rows, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- same-role-words.md
+-->
+
 # Before, after, while, and like {#before-after-while-like}
 
 English *ahead of*, *while*, and *like* can relate two people or two acts that share the rest of one sentence: *Azozon walks ahead of Ahelan*, *walks while singing*, *Azozon, like Ahelan, walks*. Ageben puts one word between the two, and the first section gives the shape all four such words share. *Before* and *after* then put one of the two first, *while* puts them at the same time, and *like* holds one up as the case the other matches.

@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #what-kind: 1 construction home
+Inbound links: npm run page-refs -- fill-ask-jobs.md
+-->
+
 # Fill-ask jobs {#what-kind-when-where-whose-how-why}
 
 To ask *what kind*, *when*, *where*, *whose*, *how*, or *why*, you put the blank in the role that fits the question. For *what kind* the blank is an adjective (`gar`), and for *when* it sits in the role that names an occasion (`har`). For *where* and *whose* it is a noun after a short word: *at* or *in* for a place, *used by* for whose. For *how* and *why* it follows a word that names the kind of answer, *like* for manner or a condition word such as *because* for a reason, and that word picks which answer you mean.

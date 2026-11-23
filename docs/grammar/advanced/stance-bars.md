@@ -2,6 +2,12 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- stance-bars.md
+-->
+
 # Every bar {#every-bar}
 
 English ranks a thing against many expectations (*than I remember*, *than they said*, *than I hoped*), and in Ageben any stance that sets a value can be that bar. A `/b/` word on the bar names who sets it: the source, the person who demands or grants, or the people whose cases make the pattern. The ranked item can also be a whole kind, written as a universal fence before the bar. Ability, rules, and hopes can be the bar as well, which gives *as … as possible* and *more than can be done for now*.

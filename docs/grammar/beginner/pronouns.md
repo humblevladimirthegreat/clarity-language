@@ -2,6 +2,22 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #resume-r: 3 construction homes, 1 rejection, 4 interpreter rows, 4 interpreter classes
+- #role-pointers: 7 construction homes, 2 rejections, 2 interpreter rows, 2 interpreter classes
+- #themself: 1 construction home, 1 rejection
+- #the-other-one: 1 construction home
+- #whoever-it-was: 1 construction home
+- #a-new-one: 1 construction home, 2 rejections
+- #share: 1 construction home, 2 rejections
+- #special-pronouns: 3 closed words
+- #generic-pronoun: 1 rejection, 1 closed word
+Inbound links: npm run page-refs -- pronouns.md
+-->
+
 # Pronouns
 
 A pronoun stands in for a noun. English *he*, *she*, *it*, and *they* point back to someone or something already named, while *I*, *you*, and *one* stand in for a person without naming anyone. You already write the endings `-l` / `-m` / `-n` on a [citation](word-endings.md) and on content words. Ageben points back with the fourth ending, `-r`: write the role letter for the word’s role in this sentence, then the earlier word’s whole stem, then `-r`. For someone in a recent sentence, a shorter role pointer names them by the part they played instead.

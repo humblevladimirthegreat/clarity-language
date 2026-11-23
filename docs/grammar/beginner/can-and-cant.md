@@ -2,6 +2,16 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #ability: 2 construction homes, 1 rejection, 2 interpreter rows, 2 interpreter classes, 2 frame keys
+- #can-be-role-ability: 1 construction home
+- #ability-fallback: 1 construction home, 2 overlay rows, 2 interpreter rows, 2 interpreter classes, 2 frame keys
+Inbound links: npm run page-refs -- can-and-cant.md
+-->
+
 # Can and can't {#can-and-cant}
 
 Ageben puts English *can* and *can't* inside the verb or adjective: after the root you write `x` and a vowel, and the vowel also says whether a *can't* is for now, not yet, or never. When no single root names the activity, the special word `oda` takes the same `x` and vowel instead. Used for the whole clause, that word is an intention adverb, a word about the whole claim, so it can sit anywhere in the sentence with the same meaning.

@@ -2,6 +2,10 @@
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- flashcards.md
+-->
+
 # Flashcards {#flashcards}
 
 The Ageben flashcards put the words and grammar of the lessons into Anki, a flashcard app that shows each card again just before you would forget it. There is one pack for each level, and a fourth pack, Everything, that holds the whole dictionary for looking words up. Every card starts switched off, and you switch a lesson's cards on when you reach its practice section, so Anki never shows you a word before the lessons have taught it.

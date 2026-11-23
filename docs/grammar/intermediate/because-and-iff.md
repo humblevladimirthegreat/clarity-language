@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #choosing-a-hinge: 1 rejection, 2 overlay rows
+Inbound links: npm run page-refs -- because-and-iff.md
+-->
+
 # Because and iff {#because-and-iff}
 
 English *if*, *only if*, *if and only if*, and *because* each tie an outcome to a condition. Ageben has a hinge for each, and the hinge also says which way the link runs and whether you claim the condition is a fact. *Unless* and *even if* are built on the *if* hinge `thohem`: *unless* changes the word that stands for the next sentence, and *even if* puts the *although* hinge `thezem` before it.

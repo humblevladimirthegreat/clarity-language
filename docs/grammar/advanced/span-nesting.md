@@ -2,6 +2,10 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- span-nesting.md
+-->
+
 # Closing and nesting spans {#closing-and-nesting-spans}
 
 Two marks written just inside a span's closing bracket change how it closes: one keeps faulty wording as said, and one closes every open span at once. Spans can also sit inside one another, each closed by its own bracket.

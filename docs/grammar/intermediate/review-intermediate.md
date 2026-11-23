@@ -2,6 +2,10 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- review-intermediate.md
+-->
+
 # Intermediate review {#intermediate-review}
 
 The Intermediate review covers every Intermediate section, from titled names to measures.

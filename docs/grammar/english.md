@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- english.md
+-->
+
 # Saying it in Ageben
 
 These pages are recipes, not lessons. Each one shows how forms you already learned answer an English question, and links the grammar it needs. Read them in any order once the linked sections are familiar. This page first sorts English words that cover several jobs, such as *by* and *for*, then gives one row per everyday word, each with the section that teaches it.

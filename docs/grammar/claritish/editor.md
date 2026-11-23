@@ -4,6 +4,10 @@ aside: false
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- claritish/editor.md
+-->
+
 # Journal editor {#editor}
 
 Write a journal entry here, or paste one in. The editor puts a dotted line under English that a lesson's gap is about: the *I think* that hides a guess, the *I heard* that passes on a rumor, the *thanks* that doesn't say what it did for you. Open a dotted phrase to see the habit in one line, answer a question or two, and add the drop-in that fits. Or leave the English as it is: that is always a fine answer.

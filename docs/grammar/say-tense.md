@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- say-tense.md
+-->
+
 # Tense and modals
 
 Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and for *can* / *may* / *must* / *should*. Verbs in Ageben carry no tense. Every form here is taught on a grammar page; each recipe links what it needs.

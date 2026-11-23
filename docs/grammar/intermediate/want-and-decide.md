@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #want: 3 overlay rows, 1 interpreter row, 1 interpreter class, 1 frame key
+- #decision-revisability: 3 overlay rows, 1 interpreter row, 1 interpreter class, 1 frame key
+- #whose-intention: 1 rejection, 3 pair-table rules
+Inbound links: npm run page-refs -- want-and-decide.md
+-->
+
 # Want and decide {#want-and-decide}
 
 English *I want to*, *I've decided to*, and *Alazun wants to* say what a mind holds about an act, not whether it happens. Ageben says each with a `/th/` stance word, and its ending says how long a want lasts or whether a decision can change. Someone else's want or decision takes a holder, which says how you know it.

@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- fill-ask-roles.md
+-->
+
 # Who, which, and any {#who-which-and-any}
 
 The fill-ask vowels and how many items you list before the blank complete the *who* / *what* map. A blank can also sit inside a dependent clause. How to ask for *yes* or *no*, and how to answer, is in [questions](/questions).

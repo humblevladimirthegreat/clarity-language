@@ -2,6 +2,20 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #who-acts-and-the-action: 4 construction homes, 4 interpreter rows, 4 interpreter classes
+- #direct-object-d: 2 construction homes
+- #adjectives-ɡ: 2 construction homes, 1 interpreter row, 1 interpreter class
+- #adjective-detail-w: 2 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+- #adverbs-h: 3 construction homes, 1 interpreter row, 1 interpreter class
+- #which-covers-which: 99 pair-table rules
+- #extra-nouns: 4 construction homes, 2 rejections, 1 overlay row, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- clause.md
+-->
+
 # The clause
 
 How to read and write one Ageben **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.

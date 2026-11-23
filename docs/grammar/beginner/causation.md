@@ -2,6 +2,13 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #if: 2 overlay rows, 2 interpreter rows, 2 interpreter classes, 2 frame keys, 1 pair-table rule
+- #only-if: 3 overlay rows
+Inbound links: npm run page-refs -- causation.md
+-->
+
 # Causation {#causation}
 
 English *if*, *only if*, and *if and only if* each tie a condition to an outcome. Ageben uses a hinge word for each, and the hinges keep two questions apart: whether the condition is *enough* for the outcome, and whether the outcome *needs* it. With all three, you do not claim the condition is a fact.

@@ -2,6 +2,10 @@
 aside: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- pitch-practice.md
+-->
+
 # Pitch Practice
 
 Each vowel has its own [pitch](/phonology#vowel-pitch), counted up from your home note: `a` low, `o` mid-low, `e` mid-high, `u` high. Practice here whenever you like. Both drills share your home note, which stays saved on this device.

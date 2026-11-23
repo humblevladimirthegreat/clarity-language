@@ -2,6 +2,20 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #including-am-al: 6 construction homes, 2 rejections, 2 interpreter rows, 2 interpreter classes
+- #rather-ol: 1 construction home
+- #instead-el: 1 construction home
+- #except-ul: 1 construction home
+- #closed-and-open-endings: 3 construction homes
+- #discourse-hooks: 1 construction home, 1 rejection, 2 interpreter rows, 2 interpreter classes
+- #since: 1 rejection
+Inbound links: npm run page-refs -- hooks.md
+-->
+
 # Hooks {#hooks}
 
 

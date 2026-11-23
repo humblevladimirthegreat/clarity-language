@@ -2,6 +2,10 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- review-advanced.md
+-->
+
 # Advanced review {#advanced-review}
 
 The Advanced review covers every Advanced section, from stand-in words to numeric prefixes.

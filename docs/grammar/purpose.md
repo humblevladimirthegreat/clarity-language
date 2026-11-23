@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- purpose.md
+-->
+
 # Why Ageben
 
 What Ageben is for, what it looks like, a tour of the features that serve its aims, and what it does not claim.

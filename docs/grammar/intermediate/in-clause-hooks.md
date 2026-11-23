@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #in-clause: 1 interpreter row, 1 interpreter class
+- #hook-w: 2 construction homes
+- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- in-clause-hooks.md
+-->
+
 # Hooks inside the clause {#hooks-inside-the-clause}
 
 Inside a clause, a hook ties B to A, or names a landmark. The first section collects the four hooks with closed `-l` and open `-m`, which say how complete B is, and shows how to turn a whole hooked phrase into a name. The next three let you say more than one thing about the same A, add detail to the hook itself, and point back to a landmark already named with `-r`.

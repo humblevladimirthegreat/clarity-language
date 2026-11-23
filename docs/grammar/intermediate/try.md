@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #trying: 3 overlay rows, 1 interpreter row, 1 interpreter class, 1 frame key
+Inbound links: npm run page-refs -- try.md
+-->
+
 # Try {#try-sitting}
 
 English *try to*, how hard someone tries, and *failing that* say that someone attempts an act, how far they will go, and what comes next if it fails. In Ageben, an `/h/` word before the verb marks the attempt and how committed it is. A clause join then adds a backup that comes into play only if the attempt fails.

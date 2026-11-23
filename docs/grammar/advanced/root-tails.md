@@ -2,6 +2,12 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- root-tails.md
+-->
+
 # Root tails {#root-tails-sitting}
 
 A root's last two letters hint at what kind of thing it names and what that thing does, and its middle vowel usually hints at its size. A few dictionary words end in two such letters instead of a second root, as the word for *friend* does.

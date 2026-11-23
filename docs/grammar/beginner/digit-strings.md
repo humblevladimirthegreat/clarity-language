@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #digit-strings: 2 construction homes
+- #plural-labels: 1 rejection
+- #time: 3 construction homes
+Inbound links: npm run page-refs -- digit-strings.md
+-->
+
 # Digits and time {#digit-strings-and-time}
 
 English writes some numbers as codes rather than amounts, such as a phone or room number, and writes clock times and dates in digits too. A code takes the digit-string marker `re` (written `_`), so it stays a code rather than an amount and can stand in any role. A clock time or a date is the same kind of digit string with no relation word before it, and its numbers are read by position, so the word already says which one is the hour or the month.

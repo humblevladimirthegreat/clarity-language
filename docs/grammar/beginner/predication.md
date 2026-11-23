@@ -2,6 +2,15 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #classification: 1 rejection
+- #existence: 1 construction home, 1 interpreter row, 1 interpreter class
+- #unsaid-event: 1 construction home, 1 interpreter row, 1 interpreter class
+- #identity: 1 construction home, 1 overlay row, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- predication.md
+-->
+
 # Predication {#predication}
 
 English *is* does two jobs that look alike. You can say someone is a kind or role (*Azozon is a dog*): they belong in that category. You can also say two names pick out the same one (*Alazun is Azozon*): one person under two labels, not a category. Ageben uses a different word pattern for each.

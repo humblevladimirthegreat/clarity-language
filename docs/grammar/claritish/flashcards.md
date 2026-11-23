@@ -2,6 +2,10 @@
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- claritish/flashcards.md
+-->
+
 # Flashcards {#flashcards}
 
 The Claritish flashcards put every drop-in from the lessons into Anki, a flashcard app. Each flashcard shows a drop-in on the front, and on the back what it means and which lesson teaches it. Each lesson has its own deck, so you can study a lesson's drop-ins right after you read it.

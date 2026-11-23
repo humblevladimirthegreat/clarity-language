@@ -2,6 +2,18 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (5): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #doubled-act: 1 construction home, 1 pair-table rule
+- #stacked-acts: 1 construction home, 1 pair-table rule
+- #rhetorical: 1 construction home, 1 interpreter row, 1 interpreter class, 1 frame key
+- #quiz: 1 construction home
+- #describe-turn-word: 1 construction home, 1 rejection
+Inbound links: npm run page-refs -- more-turn-words.md
+-->
+
 # Turn words, further {#turn-words-further}
 
 This page does more with the act words that open a turn. Saying an act word twice makes the act more insistent. Two different act words in a row say what you really do and how it sounds, and the rhetorical question, the quiz, and the question that sounds like another act are three such pairs. A command word before an adjective asks the listener to be something, and a call or a reaction can take an adjective or a degree word of its own.

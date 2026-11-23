@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #counts: 3 construction homes, 1 interpreter row, 1 interpreter class
+- #ordinals: 1 construction home
+- #more-than-one: 1 construction home
+Inbound links: npm run page-refs -- numbers.md
+-->
+
 # Numbers {#numbers}
 
 Use a number word when English would say *how many* of something (*three cats*) or *which place* something has in a series (*the second book*). You write that whole count or rank as one word, and you can also say *more than one* without naming a count.

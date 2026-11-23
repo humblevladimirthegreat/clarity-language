@@ -3,6 +3,12 @@ pageClass: cheat-sheet
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- tables: each table is a paradigm block whose rows hold code-span forms, italic English and section links, for the English helper (src/english-helper/load.ts)
+Inbound links: npm run page-refs -- cheat-sheets/vowels.md
+-->
+
 <PrintButton />
 
 # Vowels cheat sheet {#vowels-cheat-sheet}

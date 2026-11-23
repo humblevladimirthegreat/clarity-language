@@ -2,6 +2,12 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- open-ranges.md
+-->
+
 # Open and named ranges {#open-and-named-ranges}
 
 This page stretches the range hook past two plain numbers. A ray gives a range only one end, for *5 or more* and *less than 5*. A named or unknown range changes the hook's ending to name a band, such as *the teens*, or to stand for one value inside it that you do not name.

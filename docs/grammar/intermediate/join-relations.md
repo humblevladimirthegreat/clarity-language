@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #join-relations: 6 construction homes, 20 overlay rows, 3 interpreter rows, 3 interpreter classes
+Inbound links: npm run page-refs -- join-relations.md
+-->
+
 # With and without {#with-and-without}
 
 ### Join-relations {#join-relations}

@@ -2,6 +2,13 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #general-claims: 2 pair-table rules
+- #how-things-work: 2 pair-table rules
+Inbound links: npm run page-refs -- usually-vs-must.md
+-->
+
 # Usually vs must {#usually-vs-must}
 
 For a general claim such as *usually* or *always*, a universal fence or restrictor says how far the claim reaches, and a channel before or after that word says how you know the whole claim or each case. A cause or condition on the claim says how things work, and `thehom` on a closed fence makes a definition, which needs no channel.

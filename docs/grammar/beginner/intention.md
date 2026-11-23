@@ -2,6 +2,12 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #plan: 1 rejection, 3 overlay rows, 1 interpreter row, 1 interpreter class, 1 frame key, 1 pair-table rule
+Inbound links: npm run page-refs -- intention.md
+-->
+
 # Intention {#intention}
 
 English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Ageben marks intention with a `/th/` stance word before an ordinary verb. So a plan never reads as a claim that the event will happen, and the listener can tell a chosen course from a prediction.

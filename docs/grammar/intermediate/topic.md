@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #topic: 1 interpreter row, 1 interpreter class
+- #topic-pronoun: 1 construction home, 2 rejections, 1 closed word, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- topic.md
+-->
+
 # Topic {#discourse-topic}
 
 English *now, about Azozon…*, *speaking of dogs…*, and *so, back to Azozon…* say what the talk is about from here on, and every later *he* or *it* follows. Ageben makes that overt as a **topic**. This page shows how to set, return to, and clear a topic, the one pronoun that means it, what a change of topic resets, and how a topic meets groups, dependent clauses, and questions. Pointing back at someone already named, without setting what the talk is about, is in [pronouns](/pronouns).

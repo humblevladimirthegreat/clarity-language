@@ -2,6 +2,22 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #and-lists-a: 13 construction homes, 1 interpreter row, 1 interpreter class
+- #right-close: 9 construction homes, 2 rejections, 3 interpreter rows, 3 interpreter classes
+- #choice-e: 1 construction home, 1 interpreter row, 1 interpreter class
+- #standalone-phrase: 4 construction homes, 1 interpreter row, 1 interpreter class
+- #negation-u: 4 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
+- #everything-ua: 1 construction home, 2 interpreter rows, 2 interpreter classes, 2 frame keys, 1 pair-table rule
+- #rank-o: 1 construction home, 1 interpreter row, 1 interpreter class
+- #unspecified-member-r-phrase: 1 construction home, 2 rejections
+- #clause-joins: 3 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- joins.md
+-->
+
 # Joins
 
 When English fills one role with several things (*a dog and a cat*, *walks and runs*), Ageben writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).

@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #genitive: 1 rejection, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- social-ties.md
+-->
+
 # Whose: *Azozon's* {#social-ties}
 
 English *'s* covers both a thing someone keeps or uses (*Azozon's dog*) and a person tied to someone (*Azozon's friend*). For a thing, put `om` after the noun and then the user, which says who uses the thing, not who owns it. For a person, `om` cannot go, because a person is not something someone uses: the root for the tie goes on as an adjective, with the other person right after it.

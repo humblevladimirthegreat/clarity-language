@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- very-and-slightly.md
+-->
+
 # Very and slightly {#very-and-slightly}
 
 English grades with words like *very* and *kind of*, and Ageben puts such a word in one of two places. A degree word in `/w/`, right before an adjective or adverb, grades a quality or how something is done. One fixed word in `/h/` grades the action itself, saying it happened only to some degree, not fully.

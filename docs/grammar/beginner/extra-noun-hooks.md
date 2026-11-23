@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #extra-noun-stacked-vowels-and-loose-m: 12 construction homes, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- extra-noun-hooks.md
+-->
+
 # Extra-noun hooks {#extra-noun-hooks}
 
 Two-vowel hooks name the rest of the everyday extras (*on*, *toward*, *through*, *using*), and `-m` on a hook makes the landmark only the general surroundings of the act (*amid*, *near*, *despite*).

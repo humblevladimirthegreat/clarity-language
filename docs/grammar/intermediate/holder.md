@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #naming-a-holder: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key
+- #what-the-holder-covers: 1 rejection, 14 pair-table rules
+Inbound links: npm run page-refs -- holder.md
+-->
+
 # Whose view {#whose-view}
 
 To report what someone else thinks or feels, you join their name onto the word that says how you know their view, so you never report someone's mind without saying how you know it. Someone else's plan, aim, or motive takes their name the same way. Once the name is on, the rest of the clause gives their view, not yours; only the word that carries the name is your own claim.

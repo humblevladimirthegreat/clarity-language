@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #equatives-oe-shared-scale: 1 construction home
+Inbound links: npm run page-refs -- comparatives.md
+-->
+
 # Comparatives {#comparatives-page}
 
 English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in order on that quality. *As … as* says they sit at the same height, that is, they have the quality to the same degree. *Both are challenging* only says each has the quality; it does not say who ranks higher or whether they match. Ageben writes the first two with a rank join (the join from the Joins page that puts items in order) followed by the shared adjective, and the third with an ordinary *and*-list.

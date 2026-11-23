@@ -2,6 +2,10 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- abstract-landmarks.md
+-->
+
 # In a crisis, out of debt {#in-a-crisis-out-of-debt}
 
 ### Abstract landmarks (*in a crisis*, *out of debt*) {#abstract-landmarks}

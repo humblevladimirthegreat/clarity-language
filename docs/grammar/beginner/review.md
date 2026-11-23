@@ -2,6 +2,10 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- review.md
+-->
+
 # Beginner review {#beginner-review}
 
 Each level ends with one review. It mixes every page of that level, one item per page, so you meet each decision again after the pages that followed it. Take the review once you have finished every page at that level. Each answer ends with a **Rule:** link to the section it tests: when you miss an item, reread that section.

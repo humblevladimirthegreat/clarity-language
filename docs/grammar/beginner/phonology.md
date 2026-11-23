@@ -2,6 +2,12 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #word-edges: 6 construction homes, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- phonology.md
+-->
+
 # Phonology {#phonology}
 
 Phonology is how a language sounds: this page teaches you to sound out Ageben. Each letter has one pronunciation, the same every time. A **syllable** is one beat with one vowel, and it ends with a consonant only at the end of a word, so you can hear where words stop. Every syllable takes an even beat, and a word is stressed on its first one. When you need a moment to think, a held sound fills the pause.

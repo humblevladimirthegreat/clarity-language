@@ -2,6 +2,16 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #likeness: 1 overlay row, 1 interpreter row, 1 interpreter class
+- #exchange: 2 overlay rows, 2 interpreter rows, 2 interpreter classes
+- #proxy: 2 overlay rows, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- relations.md
+-->
+
 # Relations
 
 Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Ageben writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.

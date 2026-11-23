@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #exactly-like: 2 overlay rows
+Inbound links: npm run page-refs -- exactly-like.md
+-->
+
 # Exactly like {#exactly-like-sitting}
 
 ### Exactly like (`hewel` / `gewel`) {#exactly-like}

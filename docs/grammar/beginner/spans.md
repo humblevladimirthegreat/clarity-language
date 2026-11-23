@@ -2,6 +2,19 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #writing: 4 construction homes, 2 interpreter rows, 2 interpreter classes, 1 frame key
+- #exact-paraphrase-proper: 2 construction homes
+- #loans: 1 construction home, 1 interpreter row, 1 interpreter class
+- #y-spans: 1 rejection
+- #asides-th: 1 construction home, 1 interpreter row, 1 interpreter class
+- #pos: 1 rejection
+Inbound links: npm run page-refs -- spans.md
+-->
+
 # Spans
 
 Some parts of a sentence are not ordinary Ageben words: a quote of what someone said, a word from another language, a comment in parentheses. Ageben sets such a part apart as a **span**: a role letter, then a pair of brackets around the words. The role letter says what the whole bracketed chunk does in the sentence (subject, object, verb, adverb, and so on), so the rest of the sentence reads as usual. A span is written only: speech has no word for its open or close.

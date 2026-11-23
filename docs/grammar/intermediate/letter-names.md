@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- letter-names.md
+-->
+
 # Letter names {#naming-letters}
 
 This page gives the Ageben name of every letter, for spelling a word aloud. A drill then plays vowel stacks and letter names on their vowel pitches for you to sing back.

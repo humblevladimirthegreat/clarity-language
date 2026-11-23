@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (5): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #viewpoint-laterals: 1 construction home, 1 interpreter row, 1 interpreter class
+- #landmark-facing: 2 rejections
+Inbound links: npm run page-refs -- viewpoint.md
+-->
+
 # Left, right, and facing {#left-right-and-facing}
 
 Ageben's eight arrow roots name compass headings (*west*), and with `th` and a facing person they name a side of that person (*Azozon’s left*). Gravity *up* / *down* needs no facing person, since everyone shares it. Later sections add a landmark (*left of the tree*) and the landmark's own front (*behind the house*), and say which part of the compound takes the ending.

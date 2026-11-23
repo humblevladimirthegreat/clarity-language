@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- compound-families.md
+-->
+
 # Which compound {#which-compound}
 
 A word built from several pieces can be one of several kinds of compound, here called families. You tell the families apart by what sits on each side of the first `x`, or around a mid-word `th`. You can add more roots to an ordinary compound or a hyphenated name, and the last section gives the order in which to check a word.

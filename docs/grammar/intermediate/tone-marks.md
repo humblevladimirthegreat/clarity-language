@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #showing-your-tone: 11 construction homes, 3 rejections, 1 interpreter row, 1 interpreter class, 1 frame key
+Inbound links: npm run page-refs -- tone-marks.md
+-->
+
 # Tone marks {#tone-marks-sitting}
 
 In speech your voice shows how you feel; in writing, a mark in front of a word or a sentence shows that feeling without changing what the sentence does. To single out one word, as English does by stressing it or moving it, you mark that word only when you set it against others, because Ageben word order carries no emphasis.

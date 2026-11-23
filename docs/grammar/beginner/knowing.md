@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #may: 1 rejection, 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key
+- #follow-up-endings-may: 2 overlay rows
+- #live-vs-memory: 2 overlay rows, 1 interpreter row, 1 interpreter class, 1 frame key
+Inbound links: npm run page-refs -- knowing.md
+-->
+
 # Knowing {#knowing}
 
 English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Ageben keeps the ordinary verb and adds a `/th/` stance word that says which: MAY for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.

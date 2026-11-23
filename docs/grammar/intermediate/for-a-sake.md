@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #motive-tho-time-horizon: 4 construction homes
+- #whose-stake: 1 interpreter class, 1 frame key, 7 pair-table rules
+Inbound links: npm run page-refs -- for-a-sake.md
+-->
+
 # Doing it for a sake {#doing-it-for-a-sake}
 
 English *for the sake of …* says what an act is for. Ageben says it with one sake word, and this page fills in the rest of how sake words work. The first section adds the motive (*doing it for a sake*) and its time horizon, and the second shows which ending table each stance vowel takes. The third lists every place a sake word can attach, and the last shows how to name whose stake it is.

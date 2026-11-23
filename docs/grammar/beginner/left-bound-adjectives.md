@@ -2,6 +2,12 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #left-bound-adjectives: 2 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- left-bound-adjectives.md
+-->
+
 # Adjectives first {#adjectives-before-the-noun}
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}

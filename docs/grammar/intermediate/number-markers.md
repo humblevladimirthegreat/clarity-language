@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (6): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #marker-vowel-referential-identity: 1 construction home
+- #number-endings: 4 construction homes, 1 rejection
+- #letter-codes: 1 construction home
+Inbound links: npm run page-refs -- number-markers.md
+-->
+
 # Number markers and endings {#number-markers-and-endings}
 
 English numbers do more than count a noun: *three* on its own, *minus three*, *about twenty*, *the Second …* in a title, a code such as *room 12* or *B12*, and a short way to write them. Ageben keeps the same one-word number and changes its role letter, marker vowel, or ending.

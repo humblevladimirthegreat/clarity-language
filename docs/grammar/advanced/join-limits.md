@@ -2,6 +2,10 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- join-limits.md
+-->
+
 # Join limits {#join-limits}
 
 Use this page to check a join word before you write it. A join's role letter decides which endings it can take, and a short list of limits holds for every join, whatever its role. The reference table at the end lists rare readings that keep a meaning with any number of items, and how to mix two joins by nesting.

@@ -2,6 +2,15 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #firm-or-soft-act: 3 closed words
+- #act-for-now: 4 closed words
+Inbound links: npm run page-refs -- firm-soft.md
+-->
+
 # Firm and soft {#speech-act-firm-and-soft}
 
 Ageben changes one ending to say how firmly you hold a statement, question, or request: with `-l` you stand behind it, and with `-m` you offer it softly. A third ending, `-r`, holds it only for now, and you expect to revisit it.

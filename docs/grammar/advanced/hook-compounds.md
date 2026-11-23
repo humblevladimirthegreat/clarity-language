@@ -2,6 +2,13 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #hook-compounds: 1 construction home, 1 interpreter row, 1 interpreter class
+- #hook-prefixes: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- hook-compounds.md
+-->
+
 # Cite plus a hook {#cite-plus-a-hook}
 
 A hook can join a dictionary word in two ways. A hook compound fuses an extra-noun hook onto the end of a dictionary form to make one verb, such as *leave* from *walk* + *from*. A hook prefix writes a hook's vowels in front of a stem to make one describing word, such as *water-powered*.

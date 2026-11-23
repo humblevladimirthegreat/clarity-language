@@ -2,6 +2,10 @@
 aside: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- finger-code.md
+-->
+
 # Finger Code
 
 ::: warning Experimental

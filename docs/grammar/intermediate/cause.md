@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #mechanism: 2 overlay rows, 2 interpreter rows, 2 interpreter classes, 2 frame keys
+Inbound links: npm run page-refs -- cause.md
+-->
+
 # CAUSE {#cause-sitting}
 
 English *makes it happen* can name how a result comes about or the one who makes it happen. In Ageben, the stance word CAUSE right before a hinge says the condition is how the result is produced. With no hinge and a `bl-` word after it, it names the one who makes someone else act.

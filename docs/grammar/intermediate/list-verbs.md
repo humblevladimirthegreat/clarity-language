@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #list-verbs: 1 construction home, 10 overlay rows, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- list-verbs.md
+-->
+
 # List verbs {#list-verbs-sitting}
 
 ### List verbs {#list-verbs}

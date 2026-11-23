@@ -2,6 +2,17 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #reach-vowels: 5 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class
+- #reach-relative: 2 construction homes
+- #reach-type: 1 construction home
+- #reach-stacks: 12 construction homes
+Inbound links: npm run page-refs -- label-seams.md
+-->
+
 # Label seams {#how-far-a-label-reaches}
 
 English *Alazun is angry* can mean one outburst or the kind of person Alazun is, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word `th`, then a reach vowel, then the ending. Two reach vowels can also stack in a pair, for a reach like *every time but this one*.

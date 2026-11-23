@@ -2,6 +2,12 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #mood-on-one-adjective: 29 overlay rows, 5 interpreter rows, 5 interpreter classes, 5 frame keys
+Inbound links: npm run page-refs -- universality.md
+-->
+
 # Mood on one adjective {#mood-on-one-adjective-sitting}
 
 ### Mood on one adjective

@@ -2,6 +2,19 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #place-on-a-scale: 1 rejection
+- #manner-scale: 1 rejection
+- #amount-scale: 1 construction home
+- #frequency-scale: 1 construction home, 1 interpreter row, 1 interpreter class
+- #time-scale: 1 construction home
+- #factor: 1 construction home
+Inbound links: npm run page-refs -- comparative-arity.md
+-->
+
 # Ranking on any scale {#ranking-on-any-scale}
 
 English *less than*, *the second biggest*, *more often than*, *earlier than*, *the more … the more*, and *twice as … as* rank things on more kinds of scale than a plain quality: how, how much, how often, when, and by how many times. Each one reuses the rank join you already know and changes the words around it, so once you can say *more … than* you can rank on any of these scales.

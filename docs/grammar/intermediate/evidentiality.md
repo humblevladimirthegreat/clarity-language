@@ -2,6 +2,18 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #evidentiality: 1 rejection, 5 overlay rows
+- #evidence-strength: 14 overlay rows
+- #hand-depth: 2 rejections
+- #evidence-clause: 1 interpreter row, 1 interpreter class, 1 pair-table rule
+- #carry-forward: 1 rejection
+Inbound links: npm run page-refs -- evidentiality.md
+-->
+
 # How you know {#how-you-know}
 
 English *apparently*, *I hear*, *according to Azozon*, *judging by*, and *it will rain* each rest a claim on some kind of evidence. Ageben names that evidence on one channel word, so the listener always knows what your claim rests on. This page covers the seven channels, how strong your evidence is, how many hands a claim passed through, who or what it came from, forecasts, the fact that tells you a claim holds, how one channel covers the sentences after it, and deduction.

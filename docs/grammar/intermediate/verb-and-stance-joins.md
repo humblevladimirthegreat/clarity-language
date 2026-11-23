@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #vp-clause-forms: 9 construction homes, 2 rejections, 2 interpreter rows, 2 interpreter classes
+- #stance-joins: 3 construction homes
+- #stance-join-before-barl: 1 construction home
+- #standalone-stance-joins: 1 construction home, 1 interpreter class, 1 frame key, 13 pair-table rules
+- #stance-join-reach: 8 pair-table rules
+Inbound links: npm run page-refs -- verb-and-stance-joins.md
+-->
+
 # Joins on verbs and stances {#joins-on-verbs-and-stances}
 
 The join vowels and endings from [joins](/joins) also join verbs (`/v/`), whole clauses (`/x/`), and stance words (`/th/`). Joining verbs or clauses lets you say several acts in one sentence. A stance join denies or weighs the grounds you give for a claim, or, with no grounds before it, says how to take the claim; either way the claim itself still stands.

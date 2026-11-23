@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #ranges: 5 construction homes, 2 rejections, 3 interpreter rows, 3 interpreter classes
+Inbound links: npm run page-refs -- ranges.md
+-->
+
 # Ranges {#ranges-sitting}
 
 English *A through B*, *up to but not including B*, *strictly between*, *outside A–B*, and *from 3 to 5* name a stretch along an ordered line. Ageben writes each with one hook between the two ends. The first section uses these hooks on people, days, and other ordered items; the second uses the same hooks on numbers.

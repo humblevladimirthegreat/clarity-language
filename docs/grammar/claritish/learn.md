@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- claritish/learn.md
+-->
+
 # Learn the full language {#learn}
 
 ## What you can say now {#recap}

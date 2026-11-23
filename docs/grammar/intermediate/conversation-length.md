@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #conversation-length: 2 construction homes
+Inbound links: npm run page-refs -- conversation-length.md
+-->
+
 # Conversation length {#how-long-to-talk}
 
 ### Saying how long you can talk {#conversation-length}

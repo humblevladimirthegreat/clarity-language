@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- say-questions.md
+-->
+
 # Asking and answering
 
 Recipes for English question shapes beyond plain *yes/no* and *who / what*, and for the small replies around them. The sections cover echo and reported questions, replies that keep a speaker going or soften an answer, exclamations and side remarks, offers and confirmations built on a list, and English verbs for speech acts such as *ask* and *offer*. Every form here is taught on a grammar page; each recipe links what it needs.

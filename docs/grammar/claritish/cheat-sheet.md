@@ -3,6 +3,12 @@ pageClass: cheat-sheet
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- tables: the sheet's tables are the reference set of drop-ins; flows name its sections and columns (scripts/lint-cheat-sheets.ts, src/claritish-editor/data.ts, src/flashcards-claritish.ts)
+Inbound links: npm run page-refs -- claritish/cheat-sheet.md
+-->
+
 <PrintButton />
 
 # Claritish cheat sheet {#cheat-sheet}

@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #naming-with-a-tag: 5 construction homes, 6 rejections, 3 interpreter rows, 3 interpreter classes
+- #tag-pairs: 2 rejections
+Inbound links: npm run page-refs -- tag-pronouns.md
+-->
+
 # Tag pronouns {#pronoun-tags}
 
 When English labels people *A* and *O* to keep them apart, Ageben gives each one a tag, a label word that stays on the same person or thing however many others come and go. To refer to two tagged people or things together, one word stacks both tags.

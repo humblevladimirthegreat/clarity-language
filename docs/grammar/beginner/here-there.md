@@ -2,6 +2,12 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- here-there.md
+-->
+
 # Here, there, and somewhere {#here-there-and-somewhere}
 
 English *somewhere*, *nowhere*, *here*, *there*, *this*, and *that* point to a place or a thing without naming it. Ageben says both with a place hook: followed by an unnamed place for *somewhere*, or by a person in the conversation for *here* and *there*.

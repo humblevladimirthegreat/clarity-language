@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #complex-chaining: 2 construction homes
+Inbound links: npm run page-refs -- longer-chains.md
+-->
+
 # Longer chains {#longer-chains}
 
 ### Complex chaining {#complex-chaining}

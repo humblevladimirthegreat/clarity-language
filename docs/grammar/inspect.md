@@ -3,6 +3,10 @@ aside: false
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- inspect.md
+-->
+
 # Inspect
 
 Paste Ageben and click or highlight a word for a floating inspect card with part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Highlight a join, span fence, or island brace (`{` / `}`) to inspect the construction. To link to a sentence, end this page's address with ?text= followed by the URL-encoded Ageben.

@@ -2,6 +2,10 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- nested-dependents.md
+-->
+
 # Nested dependents {#nested-dependents-sitting}
 
 ### Nested dependents {#nested-dependents}

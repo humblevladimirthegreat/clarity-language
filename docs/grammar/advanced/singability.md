@@ -2,6 +2,10 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- singability.md
+-->
+
 # Voicing Ageben {#singing-and-speech-edges}
 
 Ageben's word shapes keep it easy to sing, and each vowel has its own pitch above your home note. A few small words that change a claim are never said quietly, and a rise or fall in your voice adds nothing the words do not say. Silence counted in beats marks the sentence edges that have no word, a word that can only open a sentence makes a new one easy to hear, and a line sung on one note still says everything it says in speech.

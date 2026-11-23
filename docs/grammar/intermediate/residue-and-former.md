@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #residue: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key
+- #former-climate: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key, 1 pair-table rule
+Inbound links: npm run page-refs -- residue-and-former.md
+-->
+
 # Residue and former {#residue-and-former}
 
 English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Ageben says how it stands now, its climate, with two `/h/` words. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now.

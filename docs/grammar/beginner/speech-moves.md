@@ -2,6 +2,18 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #turn-y: 1 rejection
+- #vocative: 5 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key, 18 pair-table rules
+- #interjections-reactions: 2 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
+- #speech-act-statement-question-command: 8 construction homes, 4 closed words, 1 interpreter row, 1 interpreter class, 1 frame key, 9 pair-table rules
+- #continue-x: 2 construction homes
+Inbound links: npm run page-refs -- speech-moves.md
+-->
+
 # Speech moves {#speech-moves}
 
 How to start a new speech move (one statement, question, command, or other act) with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding. You can also keep the move you started going with `/x/`.

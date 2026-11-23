@@ -2,6 +2,17 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #question: 2 construction homes, 1 closed word, 3 interpreter rows, 3 interpreter classes, 2 frame keys
+- #fill-ask: 3 rejections, 2 interpreter rows, 2 interpreter classes, 1 frame key
+- #question-tone: 3 construction homes
+- #polar-particle: 3 construction homes, 1 rejection, 6 closed words, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- questions.md
+-->
+
 # Questions
 
 This page teaches how to ask a question and how to answer one.

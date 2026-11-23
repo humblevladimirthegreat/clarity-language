@@ -2,6 +2,10 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- quote-contents.md
+-->
+
 # Inside a quote {#inside-a-quote}
 
 A cite holds someone else's words, with their own act word and their own topic. Your sentence around it keeps its own.

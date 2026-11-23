@@ -4,6 +4,10 @@ outline: false
 search: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- wizard.md
+-->
+
 # Wizard sandbox
 
 A test bench for the wizard game's engine, for the designer and fluent testers: every root and every grammar feature the parser accepts is open. You are a wizard in a small school with two people to talk to and a few things to handle. Type one Ageben sentence at a time. Call someone before you ask or command them; to act yourself, put yourself in the subject.

@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #universals-domains-generics: 1 rejection, 2 interpreter rows, 2 interpreter classes, 1 frame key
+- #kind-reference: 1 construction home, 1 interpreter row, 1 interpreter class
+- #bound-tags: 1 construction home, 4 rejections
+Inbound links: npm run page-refs -- universals-domains.md
+-->
+
 # Talking about a whole kind {#talking-about-a-whole-kind}
 
 English talks about a whole kind in several ways, and Ageben gives each its own form. *Every cat* and *no cat* put the kind after the *everything* or *no* join. Closing that *everything* list with a denial says *not every cat*. The named form of the join is the kind itself, as in *the dodo is extinct*.

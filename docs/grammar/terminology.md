@@ -1,3 +1,27 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #mood-labels: 2 inspect terms
+- #ability-incapability: 1 inspect term
+- #already-still-not-yet-no-longer: 1 inspect term
+- #bar: 1 inspect term
+- #clause-hinge-np-hinge: 1 inspect term
+- #contrary-to: 1 inspect term
+- #domain-generic-every-k: 1 inspect term
+- #holder: 1 inspect term
+- #intention: 1 inspect term
+- #negation: 1 inspect term
+- #residue-former-climate: 1 inspect term
+- #restrictor: 1 inspect term
+- #sakes: 1 inspect term
+- #say-word: 1 inspect term
+- #span-span-open: 1 inspect term
+- #speaker-attitude: 1 inspect term
+- #speech-act: 1 inspect term
+- #stance: 1 inspect term
+- #vocative: 1 inspect term
+Inbound links: npm run page-refs -- terminology.md
+-->
+
 # Terminology
 
 English names these grammar pages use. Each entry is a short gloss plus a link to the teaching section. The teaching page is the source of truth for how the form works.

@@ -1,3 +1,14 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- H1: the journal editor's lesson title (src/claritish-editor/data.ts)
+- #forms: the editor's "Learn this" link (src/claritish-editor/data.ts)
+- #gap: a level-2 section with id gap; each italic phrase in it raises the lesson's cue or is exempt (scripts/lint-claritish-editor.ts, src/claritish-editor/data.ts)
+- tables: each table row's spans are on the Claritish cheat sheet (scripts/lint-cheat-sheets.ts)
+- practice: numbered practice items, each a bold number, an italic prompt and an optional note, then the answer in a Show answer details block (src/claritish-editor/data.ts)
+Named by data: 3 cues (claritish-triggers.csv), 2 flows (claritish-flows.json), 2 cheat-sheet rows.
+Inbound links: npm run page-refs -- claritish/oughts-and-motives.md
+-->
+
 # Oughts and motives {#oughts-and-motives}
 
 ## The gap {#gap}

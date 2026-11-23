@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #acting-as: 1 construction home
+- #content-of-the-event: 13 construction homes, 2 rejections
+Inbound links: npm run page-refs -- role-parts.md
+-->
+
 # Role parts {#role-parts}
 
 English *a teacher*, *as a teacher*, *the way it was done*, and *that knife* mix a person's role, the role an act is done in, a quality of an event, and a landmark. Ageben keeps those apart: a **role word** names a participant or a quality of the event; a place, tool, or time is a landmark with a hook. The sections below cover how far a role holds (its reach vowel), a role word used as an adverb for the role an act is done in, landmarks, which have no role word, and the part consonant that makes a role word name a quality of the event.

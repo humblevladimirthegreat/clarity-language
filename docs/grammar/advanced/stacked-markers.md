@@ -2,6 +2,15 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #from-the-end-end-relative-ordinal-marker-uo: 1 construction home
+- #stacked-markers: 2 construction homes
+Inbound links: npm run page-refs -- stacked-markers.md
+-->
+
 # Stacked markers, from the end first {#stacked-markers-from-the-end-first}
 
 To name a place counted from the last one, as in *second-to-last*, a number takes the end-relative marker. That marker is one of four stacks of two marker symbols, which also cover labels below zero, error bounds of plus or minus N, and calendar dates.

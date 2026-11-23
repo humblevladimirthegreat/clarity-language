@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #prescription-the-ought-this-act-for-this-sake: 4 construction homes, 1 rejection
+Inbound links: npm run page-refs -- ought-for-a-sake.md
+-->
+
 # Ought for a sake {#ought-for-a-sake}
 
 ### Should do it for a sake (`the`) {#prescription-the-ought-this-act-for-this-sake}

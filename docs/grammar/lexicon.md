@@ -3,6 +3,10 @@ aside: false
 outline: false
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- lexicon.md
+-->
+
 # Lexicon
 
 Published roots, search by concrete English, abstract sense, packed **role English** (`v:see` on 👁️), Ageben form, overlay, or mnemonic. PoS letter and reference ending are added when you use a root in a sentence ([clause](/clause#role-letters), [word ending](/word-endings)). Morph uses packed role English for that role (`v-see` on `/v/`; still `z-eye` as a noun).

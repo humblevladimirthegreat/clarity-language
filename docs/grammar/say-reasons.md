@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- say-reasons.md
+-->
+
 # Reasons and plans
 
 Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* doing, *as of that date*, and when or why a feeling happens. Every form here is taught on a grammar page; each recipe links what it needs.

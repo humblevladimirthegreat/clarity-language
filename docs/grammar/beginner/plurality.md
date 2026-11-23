@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #associative: 3 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- plurality.md
+-->
+
 # Plurality
 
 English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Ageben marks that **associative group** with optional `-x` after the [word ending](word-endings.md).

@@ -2,6 +2,15 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #as-of: 3 construction homes, 4 rejections, 12 overlay rows, 3 interpreter rows, 3 interpreter classes
+- #stance-as-of: 4 overlay rows
+Inbound links: npm run page-refs -- as-of.md
+-->
+
 # Whose now {#whose-now}
 
 English *as of Friday* and *I was sure then* measure a sentence from a moment other than the one you speak in. The first section sets that moment for the event: what was still left over, what used to hold, or what was planned as of a date. The second sets it for your stance, so you can say what you thought or felt then without claiming you think it now.

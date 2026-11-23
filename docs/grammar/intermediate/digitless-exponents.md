@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (4): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #exponents: 2 construction homes
+- #bare-oom: 1 construction home
+Inbound links: npm run page-refs -- digitless-exponents.md
+-->
+
 # How many and how big {#how-many-and-how-big}
 
 English can leave an amount open (*some*, *a few*), ask for it (*how many?*, *how big?*), or say how big a number is (*27 million*, *thousands*). In Ageben a number word with its digits dropped leaves the amount, rank, or code open, and the same word with another ending asks for one. An exponent inside the number word gives its size: with digits after it, it writes a large or tiny amount in one word; alone, it names a band such as *thousands*; and in casual talk a conversation may set one for the numbers that follow. A long number is said group by group, with a spoken comma between groups. Everyday *three cats* and *the second book* stay in [numbers](/numbers).

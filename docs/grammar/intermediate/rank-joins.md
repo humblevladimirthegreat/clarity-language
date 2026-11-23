@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #invert-u-stacks: 2 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
+- #route-ao: 1 construction home, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- rank-joins.md
+-->
+
 # Rank joins {#rank-joins-sitting}
 
 A rank join puts the listed items in order: a tie, the order reversed, or a route from first to last. Like the other joins, it can also close a list of one item, or of none.

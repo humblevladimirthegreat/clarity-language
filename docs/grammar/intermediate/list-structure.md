@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #shared-after-the-join: 2 construction homes, 4 interpreter rows, 4 interpreter classes
+- #respectively: 3 construction homes, 2 rejections, 1 overlay row, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- list-structure.md
+-->
+
 # What a list word reaches {#what-a-list-word-reaches}
 
 A word right after a list, or inside it, can describe the whole list or one item, or pair two lists item by item (*respectively*). Where it sits decides what it reaches. A list inside another list closes each part with its own join word.

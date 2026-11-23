@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #exclusivity-and-denying-a-whole-list: 1 construction home, 1 interpreter row, 1 interpreter class, 1 frame key
+- #full-single-item-and-standalone-inventories: 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- set-joins.md
+-->
+
 # Set joins {#set-joins}
 
 A set join says which listed items count: *and/or*, a denial of the whole list, and the set readings with one item or none.

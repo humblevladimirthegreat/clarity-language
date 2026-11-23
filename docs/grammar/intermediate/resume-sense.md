@@ -2,6 +2,10 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- resume-sense.md
+-->
+
 # Resume, further {#resume-further}
 
 These sections take the whole-stem resume from Beginner further: the English it stands for in each role, how to pin one sense of a root that has two, and how to change only the role letter to recast the same thing as a doing, a kind, or a manner.

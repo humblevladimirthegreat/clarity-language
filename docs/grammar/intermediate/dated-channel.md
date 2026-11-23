@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #counting-from-now: 1 construction home, 2 rejections
+Inbound links: npm run page-refs -- dated-channel.md
+-->
+
 # Dated channel {#dated-channel-sitting}
 
 English counts time from now (*three hours ago*, *in three hours*); in Ageben you put that amount of time right after the word that says how you know, so a dated claim always says how you know it. For *now* and *today*, that amount is zero.

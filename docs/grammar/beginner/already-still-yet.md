@@ -2,6 +2,14 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #stage-of-change: 1 rejection, 24 overlay rows, 3 interpreter rows, 3 interpreter classes, 3 frame keys, 8 pair-table rules
+Inbound links: npm run page-refs -- already-still-yet.md
+-->
+
 # Already and still {#already-still-not-yet-no-longer}
 
 You say how far a change has come by now with four words, for *already*, *still*, *not yet*, and *no longer*. For *has ever*, you pair *already* with *sometimes*; for *has never*, you use *never* alone.

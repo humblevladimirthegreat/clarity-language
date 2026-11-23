@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- say-amounts.md
+-->
+
 # Amounts, sizes and time
 
 Recipes for English comparisons, percentages, units and dates. Every form here is taught on a grammar page; each recipe links what it needs.

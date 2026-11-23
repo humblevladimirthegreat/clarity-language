@@ -2,6 +2,15 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #measure-phrases: 1 rejection
+- #percent-and-percentage-points: 1 construction home
+Inbound links: npm run page-refs -- measures-and-percent.md
+-->
+
 # Measures and percent {#measures-and-percent}
 <a id="numbers-applied"></a>
 

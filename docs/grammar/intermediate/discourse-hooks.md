@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- discourse-hooks.md
+-->
+
 # In fact and anyway {#in-fact-and-anyway}
 
 English *In fact*, *for example*, *among other things*, and *anyway* tie a sentence to what was said before. At the front of a sentence, Ageben uses the same hook spellings as everyday *Additionally* and *Instead* ([hooks](/hooks)). The first section gives them `-m`, for one sentence among several you could say, and `-r`, to point back to an earlier stretch of talk. The second adds two-vowel hooks for *In fact* and *For example*, and the third shows the other places in a sentence where these hooks can sit.

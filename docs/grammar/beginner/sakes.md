@@ -2,6 +2,19 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #sake-inventory: 1 rejection
+- #met: 5 construction homes
+- #time-horizon-endings-on-met: 2 construction homes
+- #unmet-thu-detracts-from-the-sake: 4 construction homes
+- #word-shape: 2 rejections, 9 overlay rows, 3 interpreter rows, 3 interpreter classes, 3 frame keys
+- #personal-possession: 10 overlay rows, 2 interpreter rows, 2 interpreter classes, 2 frame keys
+Inbound links: npm run page-refs -- sakes.md
+-->
+
 # Sakes {#sakes}
 <a id="sake-ascription"></a>
 

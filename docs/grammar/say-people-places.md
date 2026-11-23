@@ -1,3 +1,7 @@
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- say-people-places.md
+-->
+
 # People and places
 
 Recipes for English *as for*, *whose*, *different from*, official titles, and pointing back across roles. Every form here is taught on a grammar page; each recipe links what it needs.

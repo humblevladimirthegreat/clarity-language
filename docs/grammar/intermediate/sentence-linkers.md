@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #sentence-linkers: 2 rejections, 9 closed words, 1 interpreter row, 1 interpreter class
+Inbound links: npm run page-refs -- sentence-linkers.md
+-->
+
 # Linking sentences {#linking-sentences}
 
 This page shows how one sentence connects to the next. The first section lists what the ending on a continue word does: link two sentences, introduce or return to a topic, or chain clauses. The second says what a period closes, and which speech act the next sentence has. The third teaches the six sentence linkers, words like *therefore* and *however* that connect a finished sentence to the one after it.

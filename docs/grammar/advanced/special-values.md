@@ -2,6 +2,17 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #special-values: 1 construction home
+- #special-referential: 1 construction home
+- #zero-exponent: 1 construction home
+- #hyperbole: 1 construction home
+Inbound links: npm run page-refs -- special-values.md
+-->
+
 # Infinity, zero, and hyperbole {#infinity-zero-and-hyperbole}
 
 English has words for amounts and places past ordinary counting: *infinitely many*, *last place*, *a gazillion*, *absolutely zero*. Ageben writes the exponent mark **`wa`** or **`wu`** with no exponent digits, and what comes before that empty exponent picks the meaning: nothing, nonzero mantissa digits, or the mantissa `0` (table). A word has only one such group, and that group takes no percent closer. All three kinds keep their meaning as a stance, where they say how sure you are.

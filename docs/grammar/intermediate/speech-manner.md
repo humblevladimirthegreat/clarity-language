@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- speech-manner.md
+-->
+
 # Frankly and to be clear {#frankly-and-to-be-clear}
 
 ### Speech manner (*frankly* / *to be clear*) {#speech-manner}

@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #contrary-to-stance: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key, 8 pair-table rules
+- #contrary-to-holder: 1 construction home
+Inbound links: npm run page-refs -- contrary-to.md
+-->
+
 # Contrary to {#contrary-to}
 
 English *contrary to the plan*, *against the rules*, and *contrary to what I was told* each name what an event goes against. Ageben puts the hook `uom` right before the word that says it: a plan, a say word, or a channel. A holder word after `uom` makes that plan or view someone else's.

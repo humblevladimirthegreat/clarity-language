@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- phonotactics.md
+-->
+
 # Word shape {#word-shape}
 
 This page lays out the full shape of a content word, part by part. It then gives the one exception, the number word, and the one beat you say with no vowel letter.

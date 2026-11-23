@@ -2,6 +2,12 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- label-reach.md
+-->
+
 # How a label holds {#how-a-label-holds}
 
 This page adds two choices about how firmly a label fits. The first section softens a kind, holds it at every time, or denies it, without changing the kind word. The second section uses the ending of the *is the same as* word to claim a match outright or leave it open.

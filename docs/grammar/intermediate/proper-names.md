@@ -2,6 +2,14 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #name-instance--ln: 1 construction home, 1 rejection, 2 interpreter rows, 2 interpreter classes
+Inbound links: npm run page-refs -- proper-names.md
+-->
+
 # Names and titles {#proper-names-and-titled-phrases}
 
 This page puts the name ending from Beginner on every role letter, for titles, brands, and named events. It then shows how to mean one thing a name applies to (*an iPhone*), the four endings on a country or tradition root, names of several words (a store name or a title), and a given name with a family name.

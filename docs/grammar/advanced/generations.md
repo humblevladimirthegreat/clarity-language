@@ -2,6 +2,12 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- generations.md
+-->
+
 # Generations {#generations}
 
 You can name one member of a generation, such as a grandchild or a sub-sub-point, with one number word: a rank number plus an exponent that says how many generations away it is from the one in focus. The same forms name close kin (parents, siblings, children) but never side branches such as aunts or cousins, which you reach in two steps.

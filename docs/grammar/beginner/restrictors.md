@@ -2,6 +2,17 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #only-when-never-hal: 2 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
+- #always-hual: 1 construction home
+- #sometimes-anytime-some-other-time: 2 construction homes
+- #on-the-following-adjective-w: 1 interpreter class, 1 frame key
+Inbound links: npm run page-refs -- restrictors.md
+-->
+
 # Restrictors {#restrictors}
 
 

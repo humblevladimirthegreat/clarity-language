@@ -2,6 +2,13 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #feeling-word: 1 construction home, 1 rejection
+- #urge-landmark: 1 construction home
+Inbound links: npm run page-refs -- how-you-feel.md
+-->
+
 # How you feel {#how-you-feel}
 
 Four ways to say how you feel, from a body sensation to a word that names the need and what the feeling pulls you to do. Each is a complete sentence, so you say as much as you can tell right now and stop there.

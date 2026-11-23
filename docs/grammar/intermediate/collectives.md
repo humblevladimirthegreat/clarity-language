@@ -2,6 +2,16 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #verbs-v: 1 construction home, 1 interpreter row, 1 interpreter class
+- #adjectives-g: 1 construction home
+- #vocatives-y: 1 construction home, 1 rejection
+Inbound links: npm run page-refs -- collectives.md
+-->
+
 # Groups, further {#groups-further}
 
 This page finishes the associative ending from Beginner. It covers who counts when you leave the group open; the same ending on a verb for one shared act, and on an adjective for a property of the whole group; how to say *each other*; how to address several people, in a sentence and in a call; and a table of every word that takes the ending.

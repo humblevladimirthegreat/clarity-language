@@ -2,6 +2,16 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #role-compounds: 5 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class
+- #one-time-or-a-practice: 1 construction home
+- #this-instance-r: 1 construction home
+- #the-undergoer-d: 1 construction home
+- #the-extra-b-party-b: 1 construction home
+Inbound links: npm run page-refs -- roles.md
+-->
+
 # Role compounds {#roles}
 
 When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Ageben builds that name from the event’s stem as one word: a person or thing letter, then `w`, a reach vowel, a part consonant, the stem, and an ordinary [word ending](word-endings.md). The part consonant says which part the participant had in the event: `z` the doer, `d` what the event acts on or brings into being, or `b` the extra `/b/` party. The reach vowel says how far the label reaches: with `u` one act is enough, and `o` claims a practiced role, the kind English names as a job. Every role word picks one, so calling someone *a fighter* after a single fight takes a separate, visible choice. With the ending `-r`, you mean the participant of a particular earlier event (*the one teaching*).

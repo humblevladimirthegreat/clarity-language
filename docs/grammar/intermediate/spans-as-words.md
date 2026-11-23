@@ -2,6 +2,13 @@
 band: intermediate
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Sections named by data:
+- #mention: 1 construction home, 2 overlay rows, 2 interpreter rows, 2 interpreter classes
+- #one-of-a-title: 1 construction home
+Inbound links: npm run page-refs -- spans-as-words.md
+-->
+
 # Spans as words {#spans-as-words}
 
 A span is written only, with no spoken form of its own. In a sentence it can stand like a word: a word as spelling, a noun, an adjective before the noun, or one thing a title names.

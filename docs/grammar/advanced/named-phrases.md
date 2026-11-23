@@ -2,6 +2,10 @@
 band: advanced
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Inbound links: npm run page-refs -- named-phrases.md
+-->
+
 # Named phrases {#named-phrases}
 
 ### A set phrase as one name (`-n`) {#named-phrase-n}
