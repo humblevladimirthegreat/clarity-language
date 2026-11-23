@@ -19,6 +19,8 @@ These are the rules this page adds. *Build* means `npm run build` checks it. *Ju
 | No grammar machinery the reader cannot use yet | Judgment | [Use the grammar's terms](#grammar-terms) |
 | The gap names a thinking trap, and each of its sentences reads alone | Judgment | [The gap](#the-gap) |
 | The forms give a default, a place to leave the drop-in out, and the near miss | Judgment | [Forms](#forms) |
+| Each distinction has a contrast example, and each table form appears in an example or an explanation | Judgment | [Explaining for a newcomer](#newcomer) |
+| Each teaching H2 has one agent summary, stating only what its section teaches | Judgment | [Agent summaries](#agent-summaries) |
 | A practice note says what the speaker means, never which form to write | Judgment | [Examples and practice](#examples-practice) |
 | No full Ageben sentence and no morph gloss in a lesson | Judgment | [No glosses](#no-glosses) |
 | No lesson numbers, no links between lessons or into the grammar | Judgment | [Back-references](#back-references) |
@@ -70,11 +72,26 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 - **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thomam`").
 - **Help the reader learn a long list.** After an inventory of more than about five drop-ins (urges, channels, sakes), give the reader a way to hold it: group the rows, or point out a pattern in their meanings. Do not tell the reader they need not memorize it. A drop-in is only useful once it comes to mind as you speak or write.
 - **A further inventory section follows these rules.** A lesson section that is neither the gap nor the forms, such as `## The sakes` or `## The marks`, is held to the same rules as `## The forms`. When it lists a long inventory, it helps the reader learn it the same way.
+- **Explanatory sections.** Between `## The forms` and `## Practice`, a lesson may add H2s that explain what the table alone cannot: a contrast section with one H3 per pair of drop-ins that get confused (*Telling channels apart* in *How do you know?*), a section on what the ending grades (*How strong the evidence is*), and a section on how the drop-in carries across sentences (*In a story*). `## Examples` sits among them where it reads best. Each one passes the [newcomer tests](#newcomer) and opens with an [agent summary](#agent-summaries).
 - **No bold run-in labels.** When the forms section adds several things, introduce each with a sentence that says how it connects to what came before, not under a bold label at the start of a paragraph. Bold stays for a term where it is defined. Do not number the sentences (*First, … Second, …*), which reads like a school essay. When the parts are parallel and each takes a paragraph, give each a short H3 instead.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the reach doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, say what the near miss is and how it differs, with an example. A bare denial (*the urge is not a plan*) tells the reader what to avoid but not how to tell the two apart.
 - **Endings.** Which scale each lesson teaches, and its cue, is in [Claritish track](grammar-docs.md#claritish-track); this page adds nothing to it. A [hyphenated suffix](#hyphenated-host) takes no ending.
 - **Pronunciation** is taught once, in *How sure are you?*, in English keywords. Later lessons do not repeat it.
+
+## Explaining for a newcomer
+<a id="newcomer"></a>
+
+A lesson is read once, by someone who has never met the drop-in, and it must leave them able to use it. Stating a distinction is not enough for that reader: they need to see it at work. So run these tests on every lesson, and let them set its length; there is no length cap. The [tone](doc-style.md#tone) guidelines say how the explanation should sound.
+
+- **Show each distinction.** Every distinction the lesson draws gets a contrast example: the same sentence both ways, with what changes. When several pairs get confused, give each pair an H3 in a contrast section.
+- **Use every form.** Each drop-in in a lesson table appears in an example, or in a sentence that explains it. A row the prose never touches is a row the reader skips.
+- **Explain the near miss with an example**, as in [forms](#forms).
+- **Say when to leave the drop-in out, and which form to use when unsure**, as in [forms](#forms).
+- **Give a long list a shape**: a grouping or a pattern to learn it by, as in [forms](#forms).
+- **Restate what you point back to.** A pointer to an earlier lesson names its title in italics and says the idea in plain words ([back-references](#back-references)).
+
+Practice may grow to about eight items. Add them only as contrast pairs: the same English with two different notes, each pointing to a different drop-in.
 
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
@@ -102,7 +119,22 @@ Lessons carry no full Ageben sentences and no morph gloss lines. Explain a drop-
 ## Back-references
 <a id="back-references"></a>
 
-Lessons carry no numbers. A lesson may name an earlier lesson by title, in italics, when it reuses its form ("start from a thanks or sorry word from *Thanks and sorry*"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
+Lessons carry no numbers. A lesson may name an earlier lesson by title, in italics, when it reuses its form ("start from a thanks or sorry word from *Thanks and sorry*"). It also says the reused idea in plain words, in a clause, so a reader who has forgotten the lesson still follows ("the *could be* word `thomam` from *How sure are you?*"). That clause is a reminder, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
+
+## Agent summaries
+<a id="agent-summaries"></a>
+
+The explanation is written for people. An agent that needs only a section's rules reads them from one HTML comment directly under the section's H2, which the site does not show:
+
+```md
+## How strong the evidence is {#strength}
+<!-- Agent summary: ending grades evidence strength: `-l` could show it, `-m` (default) could describe it, `-r` could only gesture. … -->
+```
+
+- **Which sections.** Every teaching H2 gets exactly one: `## The forms`, a further inventory section, and each explanatory section. `## The gap`, `## Examples`, and `## Practice` get none, and neither do H3s.
+- **What it says.** The section's rules, tersely: forms, defaults, placement, when to leave the drop-in out, the near misses. It states no rule the section does not teach, so it never becomes a second source.
+- **How it is written.** It starts `Agent summary:`. Every form is in backticks. Notes style is fine here, and so are `≈` and `→`: the [tone](doc-style.md#tone) guidelines are for prose a person reads.
+- **Keep it in step.** When the section's teaching changes, rewrite its summary in the same edit.
 
 ## Editor cues and cards
 <a id="editor-cards"></a>
