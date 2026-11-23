@@ -15,6 +15,7 @@ These are the rules this page adds. *Build* means `npm run build` checks it. *Ju
 |------|------------|---------|
 | Every italic phrase in a cued lesson's gap raises a cue or is exempt | Build, fails | [Editor cues and cards](#editor-cards) |
 | Every drop-in in a lesson table is on the cheat sheet, and the reverse | Build, fails | [Cheat sheet](grammar-docs.md#claritish-track) |
+| Each practice answer, and each example in *Labels* and *What a feeling wants*, reads as the editor places its drop-in | Build, fails | [Examples and practice](#examples-practice) |
 | A feature has the grammar's name, glossed in the sentence that first uses it | Judgment | [Use the grammar's terms](#grammar-terms) |
 | No grammar machinery the reader cannot use yet | Judgment | [Use the grammar's terms](#grammar-terms) |
 | The gap names a thinking trap, and each of its sentences reads alone | Judgment | [The gap](#the-gap) |
@@ -110,6 +111,8 @@ About five one-line examples in a single blockquote, two trailing spaces per lin
 After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the reach changes the meaning.
 
 Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thomal`)"). A note may name the parts when the word is composed, as in *Wants and plans*. Answers go in `::: details Show answer`.
+
+Each answer reads exactly as the journal editor would place its drop-in: from the lesson's own cue in the prompt, or by command where the prompt has none. In *Labels* and *What a feeling wants*, each example sentence must place the same way. Some cues drop their words, as *should* does (`drop_cue` in `data/claritish-triggers.csv`), so *We should eat together more* is answered *Eat together more `thawether`*, not *We should eat together more `thawether`*. The build checks this (`src/claritish-editor/data.test.ts`), and a failure names the cue and its placement.
 
 ## No Ageben sentences, no glosses
 <a id="no-glosses"></a>
