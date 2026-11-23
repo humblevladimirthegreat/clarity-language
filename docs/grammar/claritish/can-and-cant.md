@@ -48,7 +48,7 @@ Both of these say the limit might end, so the question to ask is whether you usu
 
 ### Not yet or never {#yet-or-never}
 
-*My grandmother `text-xe`* says she can't text yet, perhaps because her grandson is still teaching her. *My grandmother `text-xu`* says she never will be able to, which is a much bigger claim. After the second one, nobody should expect a message from her.
+*My grandmother `text-xe`* says she can't text yet, perhaps because her grandson is still teaching her. *My grandmother `text-xu`* says she never will be able to, which is a much bigger claim. A listener who hears the second one no longer expects a message from her.
 
 That's why `-xe` is the default. If you aren't sure the limit is permanent, `-xu` claims more than you know, while `-xe` allows for either outcome.
 

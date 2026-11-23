@@ -27,7 +27,7 @@ To mark the label reach, add a hyphen to the English word, then `th` and the **r
 | `-tho` | a practiced role: the position they hold | *as her job*, *a nurse* |
 | `-tha` | a type across scenes | *an anxious type*, *that kind of person* |
 
-The rows run from the smallest reach to the biggest, so the vowel says how big the claim is. With `u`, the label covers a short span of time, one stretch of doing. With `e`, it covers one person: how someone is toward that one other person. With `o`, it covers a role they practice, such as a job or a part they play. With `a`, it covers their scenes in general, because the quality shows in every scene they are in.
+The rows run from the smallest reach to the biggest, so the vowel says how big the claim is. With `u`, the label covers a short span of time, one stretch of doing. With `e`, it covers one person: how someone is toward that one other person. With `o`, it covers a role they practice, such as a job or a part they play. With `a`, it covers their scenes in general, because the quality shows across their scenes.
 
 The suffix goes directly onto the word that carries the label. For an act, that's the verb, as in *he `lied-thu`*. For a quality it's the adjective (*I was `lazy-thu`*), and for a role it's the noun (*she's a `nurse-tho`*). The hyphen only shows that the word in front is English. The letters after it are spelled exactly as in Ageben.
 
@@ -38,7 +38,7 @@ You don't need a suffix on every label. When the reach doesn't matter, as in *I'
 When you can't tell which reach fits, choose the reach you have seen. If all you have seen is one episode, use `-thu`, which claims that one episode and nothing more.
 
 ## One label, four reaches {#four-reaches}
-<!-- Agent summary: any label takes any reach vowel; the English word stays, the claim's size changes. `strict-thu` one occasion; `strict-the` toward one person (name them in English after it, or leave them unstated); `strict-tho` the role they practice, which stays in its scenes; `strict-tha` a type, the quality applies in every scene. On a verb, `-tho` = the act as their practice (`lies-tho`), vs one act `lied-thu`. -->
+<!-- Agent summary: any label takes any reach vowel; the English word stays, the claim's size changes. `strict-thu` one occasion; `strict-the` toward one person (name them in English after it, or leave them unstated); `strict-tho` the role they practice, which stays in its scenes; `strict-tha` a type, the quality holds across scenes. On a verb, `-tho` = the act as their practice (`lies-tho`), vs one act `lied-thu`. -->
 
 Any label can take any of the four vowels, and the English word stays the same. What changes is how much of the person you're making a claim about. Picture a soccer coach and four people who each want to say *she's strict*:
 
@@ -49,7 +49,7 @@ Any label can take any of the four vowels, and the English word stays the same. 
 
 The first is about one occasion. Today at practice she made the whole team run laps for being late, and the sentence says nothing about tomorrow. The second limits the label to one relationship: with her son she's strict, and with everyone else she might be easygoing. You name the other person in English, the way you normally would. If you leave them out (*she's `strict-the`*), the label still holds toward one person, but you don't say who.
 
-The third is about the role she practices. Strictness is part of how she coaches, so it applies at the field, and at home it may not show at all. The fourth calls her a strict type, someone who is strict in every scene: at the field, with friends, and at dinner.
+The third is about the role she practices. Strictness is part of how she coaches, so it applies at the field, and at home it may not show at all. The fourth calls her a strict type, someone whose strictness shows from scene to scene: at the field, with friends, and at dinner.
 
 A verb works the same way. *He `lied-thu`* is one lie. *He `lies-tho`* says lying is his practice, as it is for a con artist, so it claims much more than one lie.
 

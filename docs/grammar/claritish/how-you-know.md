@@ -96,7 +96,7 @@ You've met these three endings before, in *How sure are you?*, where the three f
 > I locked the door `thevur`.  
 > This bug is in the parser `theyom`, `thomam`.
 
-The calendar notice behind *the meeting got moved `thebal`* is something you could forward to anyone who doubts it, while *Marco quit `thebar`* is a rumor from the hallway. *I locked the door `thevur`* says the memory is hazy, which is a reason to go back and check. The last example says two separate things: you worked it out from clues (`theyom`), and you're only saying it could be so (`thomam`).
+The calendar notice behind *the meeting got moved `thebal`* is something you could forward to anyone who doubts it, while *Marco quit `thebar`* is a rumor from the hallway. *I locked the door `thevur`* says the memory is hazy, which is a good reason to go back and check. The last example says two separate things: you worked it out from clues (`theyom`), and you're only saying it could be so (`thomam`).
 
 ## In a story {#in-a-story}
 <!-- Agent summary: a channel carries forward over the speaker's later claims with no channel, until a new channel replaces it. The speaker's own feelings and plans are not claims and stay outside it. -->

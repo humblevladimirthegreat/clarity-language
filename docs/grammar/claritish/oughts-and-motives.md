@@ -13,7 +13,7 @@ Inbound links: npm run page-refs -- claritish/oughts-and-motives.md
 
 ## The gap {#gap}
 
-*You should call her* gives no reason anyone can check, so it is heard as pressure and often becomes an argument about who gets to say *should*. *I did it for you* names no need the act served, which is why it so often sounds like a demand for repayment. Ageben has two sake words, which name in the sentence the need an act is for: one says the act ought to be done for that need, and the other says it is being done for it.
+*You should call her* gives no reason anyone can check, so it is heard as pressure and becomes an argument about who gets to say *should*. *I did it for you* names no need the act served, which is why it so often sounds like a demand for repayment. Ageben has two sake words, which name in the sentence the need an act is for: one says the act ought to be done for that need, and the other says it is being done for it.
 
 ## The forms {#forms}
 <!-- Agent summary: two drop-ins (table): `thawethem` prescription (the act ought to be done for the sake), `thawethom` motive (the act is being done for it). Built `th` + sake + stance + ending, like thanks and sorry (`tha` met, `thu` unmet); `the` = ought, `tho` = motive. Any of the nine sakes: `thobathem`, `thowethom`. Placement: where an English adverb or tag would go; covers its clause; the drop-in says the ought, so English *should* can go (*call her* `thawethem`); the English says how firmly you ask. Optional; omit when the English already gives a reason the listener can check. -->

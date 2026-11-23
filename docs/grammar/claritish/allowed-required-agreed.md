@@ -82,7 +82,7 @@ The same distinction applies to a ban. *No smoking on the balcony `hwuvul`* mean
 
 ### Someone allowing it or the person agreeing {#permission-or-consent}
 
-Permission comes from someone with authority over the act, while consent comes from the person the act is done to, and either can hold without the other. *The doctor examined my son `hwuvam`* says you, the parent, allowed it. *The doctor examined my son `hwudam`* says your son agreed himself. Both can be true, so say which yes you mean: the parent's or the child's.
+Permission comes from someone with authority over the act, while consent comes from the person the act is done to, and either can hold without the other. *The doctor examined my son `hwuvam`* says you, the parent, allowed it. *The doctor examined my son `hwudam`* says your son agreed himself. Both can be true, and saying which yes you mean keeps the parent's yes from being mistaken for the child's.
 
 ### Their things or their time {#things-or-time}
 
