@@ -25,7 +25,7 @@ Here is a feeling word that uses two of the additions, read from left to right:
 |---------|-------|-----|------|-----|
 | autonomy | unmet | default ending | push back (urge) | settled in (how long) |
 
-`thuna` names the sake autonomy, your say in what you do, and `thu` says it went unmet. The `m` after it is the ending from *Thanks and sorry*, which on a sorry word says how lasting the harm is. At the default `-m`, the harm could still change. Then come `uo`, one of the new urges, which means *push back*, and a last `-l`, which says the feeling has settled in. So `thunathumuol` says *my say keeps being taken, I want to push back, and the feeling has settled in*.
+`thuna` names the sake autonomy, your say in what you do, and `thu` says it went unmet. The `m` after it is the ending from *Thanks and sorry*, which on a sorry word says how lasting the harm is. At the default `-m`, the harm could still change. Then come `uo`, one of the new urges, which means *push back*, and a last `-l`, which says the feeling has settled in. So `thunathumuol` says *my say was taken, I want to push back, and the feeling has settled in*.
 
 The feeling word goes where it went in *What a feeling wants*: after the English clause the feeling is about, as in *He rewrote my memo again `thunathumuol`*.
 
@@ -41,18 +41,18 @@ The four urges from *What a feeling wants* are one vowel each: stay in it, act o
 | `ua` | *out of* | step out of the fight: let go, yield | it can't be changed, or it isn't worth the cost |
 | `ao` | *using* | use yourself to keep the peace | calming things down keeps someone safe |
 | `ae` | *on* | stay on the spot: frozen, or keeping a lid on it | acting now would cost more than waiting |
-| `ue` | *through* | move, but you can't tell which way | you don't know yet |
+| `ue` | *through* | do something, but you can't tell what | you don't know yet |
 
-Each of the first four urges goes with a small English word: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The new urges follow the same pattern. With `oe` you turn *toward* someone, and with `uo` you push *against* something. `ua` takes you *out of* the fight, and with `ao` you keep the peace *using* yourself. `ae` keeps you *on* the spot, or keeps a lid *on* the feeling, and with `ue` the feeling runs *through* you without a direction.
+Each of the first four urges goes with a small English word: `a` with *in*, `e` with *at*, `o` with *for*, and `u` with *from*. The new urges follow the same pattern. With `oe` you turn *toward* someone, and with `uo` you push *against* something. `ua` takes you *out of* the fight, and with `ao` you keep the peace *using* yourself. `ae` keeps you *on* the spot, or keeps a lid *on* the feeling, and with `ue` the feeling runs *through* you and you can't tell which way it pulls.
 
-The small words also sort the ten urges into two groups. `oe`, `uo`, `ua`, and `ao` move you in relation to someone or something, as `e`, `o`, and `u` do. `ae` and `ue` point at no one, as `a` does, because holding still and not knowing which way to go are not aimed at anybody.
+The ten urges also fall into two groups. `oe`, `uo`, `ua`, and `ao` move you in relation to someone, as `e`, `o`, and `u` do. `ae` and `ue` point at no one, as `a` does, because holding still and not knowing which way to go are not aimed at anybody.
 
 The same event can bring either of two new urges:
 
 > He rewrote my memo again `thunathumuom`.  
 > He rewrote my memo again `thunathumuam`.
 
-Both say your say was taken. With `uo`, you want to push back on the rewrite, because a limit is being crossed. With `ua`, you want to step out of the fight and let the memo go, for example because a fight over it isn't worth the cost.
+Both say your say was taken. With `uo`, you want to push back on the rewrite, which fits when a limit is being crossed. With `ua`, you want to step out of the fight and let the memo go, which fits when a fight over it isn't worth the cost.
 
 The urge `oe` covers two pulls toward someone, and the sake word says which one:
 
@@ -64,7 +64,7 @@ With `tha`, your competence was met, so you want to tell someone the news. With 
 As with the first four, no urge is the right one to have, and the *Belongs when* column names some times when each one fits. When two urges mix, name the stronger one, or use two feeling words to say both.
 
 ## How long the feeling lasts {#duration}
-<!-- Agent summary: last ending = how long the feeling itself lasts: `-l` settled in (hours, days, a mood), `-m` (default) left open, `-r` a flash or a wave that will pass. Same direction as How sure are you? (`-l` ≈ lasting, `-r` ≈ right now). `-r` → a feeling you can wait out; `-l` → a feeling that needs attention of its own. Can't tell how long → `-m`. -->
+<!-- Agent summary: last ending = how long the feeling itself lasts: `-l` settled in (hours, days, a mood), `-m` (default) left open, `-r` a flash or a wave that will pass. Same direction as How sure are you? (`-l` ≈ lasting, `-r` ≈ right now). `-r` → a feeling you can wait out; `-l` → a feeling that needs attention of its own. Can't tell how long: `-l` and `-r` say more than you know; `-m` says nothing about it. -->
 
 The last letter of a feeling word is its ending, and it says how long the feeling itself lasts. These are the three endings from *How sure are you?*, where you could think of `-l` as *lasting* and `-r` as *right now*. They run in the same direction here.
 
@@ -79,9 +79,9 @@ Here is the same feeling with each end of the scale:
 > He rewrote my memo again `thunathumuol`.  
 > He rewrote my memo again `thunathumuor`.
 
-Both say your say was taken and you want to push back. With `-l`, the feeling has settled in, and it may last for days. With `-r`, it is a wave that will pass. That difference says what to do next, because a feeling marked `-r` is one you can wait out, and a feeling marked `-l` needs attention of its own.
+Both say your say was taken and you want to push back. With `-l`, the feeling has settled in, and it may last for days. With `-r`, it is a wave that will pass. That difference suggests what to do next, because a feeling marked `-r` is one you can wait out, and a feeling marked `-l` needs attention of its own.
 
-When you can't tell how long the feeling will last, end the word with `-m`, which leaves that open.
+When you can't tell how long the feeling will last, `-l` and `-r` each say more than you know, and `-m` says nothing about how long.
 
 ## A cost that may come {#may-come}
 <!-- Agent summary: a feeling word alone says its cost or payoff is real. For fear, worry, or hope about what hasn't happened, put `thomam` (could be) right before the feeling word: the event may cost you or pay off. `thomam` keeps its endings: `thomal` adds that you'll find out whether the cost is real. Omit `thomam` when the cost or payoff has happened. -->
@@ -106,7 +106,7 @@ The first sentence says you are in danger. The second says only that you may be.
 | Drop-in | What it says | Instead of | The parts |
 |---------|--------------|------------|-----------|
 | `thuwathumur` | it may cost me competence, and I want to get away; a wave | *anxious* | competence unmet; move off; a wave |
-| `thunathumuol` | my say keeps being taken, and I want to push back; it has settled in | *resentful* | autonomy unmet; push back; settled in |
+| `thunathumuol` | my say was taken, and I want to push back; it has settled in | *resentful* | autonomy unmet; push back; settled in |
 | `thawethuluar` | a wave of grief over a loss that stays | *sad* | relatedness unmet for good; let go; a wave |
 | `thobathumaor` | I may be in danger, and I want to calm him down; a flash | *scared* | physical unmet; keep the peace; a flash |
 | `thuwathumael` | I can't keep up, and I'm frozen; it has settled in | *overwhelmed* | competence unmet; stay on the spot; settled in |
@@ -126,7 +126,7 @@ The urges `a`, `ae`, and `ue` all leave you where you are, for different reasons
 > The deadline moved up `thuwathumaem`.  
 > The deadline moved up `thuwathumuem`.
 
-All three say the new deadline costs you competence. With `a`, nothing pulls you to move, and you sit with the feeling. With `ae`, something pulls you, and you are holding still: frozen, or keeping a lid on it. With `ue`, something pulls you, and you can't tell which way yet. So when a feeling moves you and you can't say where, the urge is `ue`.
+All three say the new deadline costs you competence. With `a`, nothing pulls you to move, and you sit with the feeling. With `ae`, something pulls you, and you are holding still: frozen, or keeping a lid on it. With `ue`, something pulls you, and you can't tell which way yet. So when something pulls you and you can't say which way, the urge is `ue`.
 
 ### The situation or the feeling {#situation-or-feeling}
 

@@ -25,7 +25,7 @@ A **tone mark** is a symbol written in front of words to say how you mean them: 
 | `%` | joking, teasing | light, smiling |
 | `;` | warm, affectionate | soft, gentle |
 | `&` | contrast: this one, not another | stressed and slowed |
-| `?` | unsure about this word | raised, tentative |
+| `?` | unsure about it | raised, tentative |
 | `!` | strong feeling (the words say which) | louder, stressed |
 
 The `%` mark says that you are teasing and do not mean the words literally. For example, *You're the worst* with no mark leaves the reader to tell a joke from a fight, while *%You're the worst* says it is teasing. Without a mark the sentence means the same thing, and its tone is not written down. So a mark is never required, and none of the five is a default: each says a different tone, so choose the one that matches how you mean the words, or write none.
