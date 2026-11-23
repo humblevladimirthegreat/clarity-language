@@ -65,9 +65,9 @@ A few pairs get confused, usually because English uses the same words for both.
 
 ### A rule or a custom {#rule-or-custom}
 
-*Have to* sounds the same whether a rule demands something or everyone just does it. *Phones go off during the meeting `hwuvol`* points to a rule someone could show you. *Phones go off during the meeting `hwuvor`* says nobody ever made it a rule, though everyone in the room expects it.
+*Have to* sounds the same whether a rule demands something or everyone just does it. *Phones go off during the meeting `hwuvol`* points to a rule someone could show you. *Phones go off during the meeting `hwuvor`* says nobody asked for it, though everyone in the room expects it.
 
-The same split works for a ban. *No smoking on the balcony `hwuvul`* means the rules forbid it, while *no smoking on the balcony `hwuvur`* means you could, but the neighbors won't like it. A newcomer who hears a custom as a rule may worry about breaking something that was never written down.
+The same split works for a ban. *No smoking on the balcony `hwuvul`* means the rules forbid it, while *no smoking on the balcony `hwuvur`* means nobody has said no, but the neighbors won't like it. A newcomer who hears a custom as a rule may worry about breaking something that was never written down.
 
 ### Someone allowing it or the person agreeing {#permission-or-consent}
 

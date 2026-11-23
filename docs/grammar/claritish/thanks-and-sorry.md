@@ -98,7 +98,7 @@ On a sorry, the ending says how lasting the harm is:
 > I missed your recital. `thawethur blawan`.  
 > I missed your recital. `thawethul blawan`.
 
-With `thawethur blawan`, there's another recital next month, and the harm will pass. With `thawethul blawan`, it was the last one, and as far as you can tell nothing will make up for it. The default `-m` sits between them: the harm is real, and effort or time could soften it.
+With `thawethur blawan`, there's another recital next month, and the harm will pass. With `thawethul blawan`, it was the last one, and as far as you can tell nothing will make up for it. The default `-m` sits between them: the harm is real, and effort or a change in circumstance could soften it.
 
 ## Thanks for something you own {#possession}
 <!-- Agent summary: thank a thing you own: `g` for `th`, right after the English noun (*my coat* `gobathal`); the word already says it's yours. Only for things you own; for anything else, thank the event with the `th` word after the clause. -->
