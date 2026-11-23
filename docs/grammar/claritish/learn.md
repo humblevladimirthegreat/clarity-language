@@ -6,7 +6,7 @@ Inbound links: npm run page-refs -- claritish/learn.md
 
 ## What you can say now {#recap}
 
-With a handful of drop-ins, your English now says:
+With the drop-ins from the lessons, your English can now say:
 
 - how sure you are, and what you'll do about it (*could be*)
 - how you know (live, memory, pattern, clues, deduction, report, gut) and how strong the evidence is
@@ -14,12 +14,12 @@ With a handful of drop-ins, your English now says:
 - which need a thank-you or an apology is about
 - who allowed something, who required it, and whether the person it affects agreed
 - how settled a decision or a try is
-- a feeling as a need and a pull, instead of one opaque label, and whether it will pass
+- a feeling as the need behind it and the urge it brings, instead of one label, and whether it will pass
 - how you mean it (tone marks)
 
 ## These were never add-ons {#never-add-ons}
 
-Every drop-in you learned is a real Ageben word, spelled the same way. In the full language they sit inside sentences built for them, and they stack: one sentence can carry a tone, a channel, a try, and a sake at once.
+Every drop-in you learned is a real Ageben word, spelled the same way. In the full language they are parts of ordinary sentences, and several can appear together. For example, the sentence below marks a tone, a channel, a try, and a sake at once.
 
 > `;zalazun thugem howar vozuyel thodethar.`
 >
@@ -29,7 +29,7 @@ Every drop-in you learned is a real Ageben word, spelled the same way. In the fu
 
 ## What Claritish can't do {#limits}
 
-In English, these distinctions show up only when you remember to add them. Most of the time you won't, and the old shortcuts come back: the guess that sounds like a fact, the rumor that sounds like a sighting, the one act that becomes a person's nature. Ageben is built around these distinctions, so they are there every time you speak, write, or think in it.
+In English, these distinctions appear only when you remember to add a drop-in. Most of the time you won't, so the old habits return: a guess said like a fact, a rumor said like something you saw, one act taken as a person's whole nature. Ageben's grammar is built around these distinctions, so they are present every time you speak, write, or think in it.
 
 ## Start learning Ageben {#start}
 

@@ -10,7 +10,7 @@ Inbound links: npm run page-refs -- claritish/editor.md
 
 # Journal editor {#editor}
 
-Write a journal entry here, or paste one in. The editor puts a dotted line under English that a lesson's gap is about: the *I think* that hides a guess, the *I heard* that passes on a rumor, the *thanks* that doesn't say what it did for you. Open a dotted phrase to see the habit in one line, answer a question or two, and add the drop-in that fits. Or leave the English as it is: that is always a fine answer.
+Write a journal entry here, or paste one in. The editor puts a dotted line under English phrases that a lesson's gap describes. For example, it marks the *I think* in front of a guess, the *I heard* in front of a rumor, and the *thanks* that does not say what it did for you. Open a dotted phrase to see the habit in one line, answer a question or two, and add the drop-in that fits. You can also leave the English as it is, which is always an acceptable answer.
 
 The editor marks these phrases, called cues, from every lesson.
 
@@ -21,7 +21,7 @@ The editor marks these phrases, called cues, from every lesson.
 | <kbd>/</kbd> | Adds a drop-in with no English cue: pick one, such as <kbd>/sure</kbd>, <kbd>/know</kbd>, <kbd>/label</kbd>, <kbd>/thanks</kbd>, <kbd>/feel</kbd>, <kbd>/tone</kbd>, and the rest |
 | <kbd>/feel</kbd> | Builds a feeling word part by part: met or unmet, the urge, how long it lasts, and the need |
 | A drop-in you have written | Shows what it means when you hover it. A word one letter away from a drop-in gets a grey dashed line and a suggestion |
-| The panel beside the text | Counts the phrases still in plain English, as a mirror, not a score. **Show the mirror** opens it again after you close it |
+| The panel beside the text | Counts the phrases still in plain English. This count, the mirror, describes your writing and is not a score. **Show the mirror** opens it again after you close it |
 | **Practice a lesson** | Loads a lesson's practice sentences to try your drop-ins against the lesson's |
 
 The editor is for writing to yourself. What you write stays in this browser and is never sent anywhere.
