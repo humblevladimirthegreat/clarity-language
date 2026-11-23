@@ -17,9 +17,7 @@ Inbound links: npm run page-refs -- claritish/index.md
 
 `thomam` means *could be*. It applies to the whole clause it sits in, so the sentence says that the package might arrive Friday, and nothing more.
 
-Every drop-in is a real Ageben word, spelled exactly as Ageben spells it. Each one you learn is already part of the full language, so you can stop after any lesson and keep what you have learned.
-
-In your own writing, drop-ins need no marking, so leave out italics and quotes. These pages set them in `code font` only to make them easy to find.
+This helps you get a feel for how Ageben influences your thinking. Everything you learn in Claritish is exactly the same in Ageben so this also provides a smoother on-ramp into the full language.
 
 ## The lessons {#lessons}
 <!-- Agent summary: eleven lessons in a fixed order, each with a few examples and a practice set; later lessons reuse earlier ones, so read them in order the first time. -->
