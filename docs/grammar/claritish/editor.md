@@ -10,14 +10,14 @@ Inbound links: npm run page-refs -- claritish/editor.md
 
 # Journal editor {#editor}
 
-Write a journal entry here, or paste one in. The editor puts a dotted line under English phrases that a lesson's gap describes. For example, it marks the *I think* in front of a guess, the *I heard* in front of a rumor, and the *thanks* that does not say what it did for you. Open a dotted phrase to see the habit in one line, answer a question or two, and add the drop-in that fits. You can also leave the English as it is, which is always an acceptable answer.
+Write a journal entry here, or paste one in. The editor puts a dotted line under English phrases that a lesson's gap describes. For example, it marks the *I think* in front of a guess, the *I heard* in front of a rumor, and the *thanks* that does not say what it did for you. Open a dotted phrase to see a one-line description of the habit, answer a question or two, and add the drop-in that fits. You can also leave the English as it is, which is always an acceptable answer.
 
-The editor marks these phrases, called cues, from every lesson.
+A marked phrase is called a cue, and the editor marks the cues from every lesson.
 
 | Control | What it does |
 |---------|--------------|
 | A lesson's title, above the editor | Turns that lesson's cues on or off. Turn a lesson off until you have read it |
-| A dotted phrase | Opens the habit in one line, a question or two, and the drop-in that fits |
+| A dotted phrase | Opens a one-line description of the habit, a question or two, and the drop-in that fits |
 | <kbd>/</kbd> | Adds a drop-in with no English cue: pick one, such as <kbd>/sure</kbd>, <kbd>/know</kbd>, <kbd>/label</kbd>, <kbd>/thanks</kbd>, <kbd>/feel</kbd>, <kbd>/tone</kbd>, and the rest |
 | <kbd>/feel</kbd> | Builds a feeling word part by part: met or unmet, the urge, how long it lasts, and the need |
 | A drop-in you have written | Shows what it means when you hover it. A word one letter away from a drop-in gets a grey dashed line and a suggestion |

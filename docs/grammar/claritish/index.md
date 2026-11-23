@@ -15,7 +15,7 @@ Inbound links: npm run page-refs -- claritish/index.md
 
 > The package arrives Friday `thomam`.
 
-`thomam` means *could be*. It applies to the whole clause it sits in, so the sentence says that the package might arrive Friday and claims nothing more.
+`thomam` means *could be*. It applies to the whole clause it sits in, so the sentence says that the package might arrive Friday, and nothing more.
 
 Every drop-in is a real Ageben word, spelled exactly as Ageben spells it. Each one you learn is already part of the full language, so you can stop after any lesson and keep what you have learned.
 
