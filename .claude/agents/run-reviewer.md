@@ -36,7 +36,7 @@ You start without `AGENTS.md`; these are the parts of it a review uses.
 
 - For each finding, work out roughly what the step should have cost, and a reasonably-costed fix: a tool or its flags, a hook, a procedure page, an agent file, or the wording of a brief. Check that the file you name exists and that the fix is not already in place.
 - With no findings, write nothing and return *no findings*.
-- Otherwise write one file, `docs/proposals/ideas/optimization/<proposal filename>` (with `-2`, `-3` before `.md` if that exists), in the idea format, with these sections:
+- Otherwise write one file, `docs/proposals/ideas/optimization/tips-from_<proposal filename>` (with `-2`, `-3` before `.md` if that exists), in the idea format, with these sections:
   1. **Problem**: one entry per finding, most costly first: the cause, each place it happened (phase, agent, call numbers), its total cost, roughly what it should have cost, and why.
   2. **Sketch**: the fix for each, naming the file it would touch.
   3. **Open questions**: where a fix has more than one shape, with a recommendation and its confidence.

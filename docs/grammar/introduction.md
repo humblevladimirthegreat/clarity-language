@@ -8,7 +8,7 @@ Ageben has two kinds of goals: psychological goals, which say what the language 
 
 Ageben's psychological goals are compassion, rationality, and empowerment. [Why Ageben](purpose.md) explains those goals, tours the features that serve them, and says what the language does not claim.
 
-If you want an easy start before the grammar, [Claritish](claritish/index.md) teaches a few Ageben words you can drop into English today.
+To start before the grammar, [Claritish](claritish/index.md) teaches a few Ageben words you can use in English right away.
 
 ## Structural goals {#structural-goals}
 
@@ -16,9 +16,9 @@ Three structural goals shape how the sounds, words, and grammar are built:
 
 - **Unambiguous but usable:** every sentence has exactly one reading, precise enough for a program to understand, without making ordinary speech hard to say.
 - **Singable:** syllable shapes are chosen to be easy to sing.
-- **Reusable:** a small set of patterns does many jobs. The same few endings, the same vowel series, and the same scales return across the grammar, so each pattern you learn keeps paying off on later pages.
+- **Reusable:** a small set of patterns does many jobs. The same few endings, the same vowel series, and the same scales return across the grammar, so each pattern you learn applies again on later pages.
 
-The first goal shows up in three places: in how a sentence is built, in what a pronoun points to, and in what a word means.
+The first goal applies in three places: in how a sentence is built, in what a pronoun points to, and in what a word means.
 
 ### One role per word {#syntactic}
 
@@ -28,7 +28,7 @@ In a clause, every content word (a word built on a root, such as a noun, verb, o
 
 English *it* and *they* can point to almost anything mentioned earlier. An Ageben pronoun copies the stem of an earlier word (the word without its role letter and ending) and points to the most recently mentioned word with that stem, so a fixed rule picks the one thing it means.
 
-The other pronouns follow rules that are just as fixed. A **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few special pronouns cover the speaker, the listener, and similar roles. To keep several people or things apart, you can give each a **tag**, a short label (A, E, O, or U) that later pronouns reuse. When the talk is about one thing, you can name it as the **topic**, and one pronoun always means it.
+The other pronouns follow equally fixed rules. A **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few special pronouns cover the speaker, the listener, and similar roles. To keep several people or things apart, you can give each a **tag**, a short label (A, E, O, or U) that later pronouns reuse. When the talk is about one thing, you can name it as the **topic**, and one pronoun always means it.
 
 ### One sense per entry {#semantic}
 
@@ -37,14 +37,14 @@ Each dictionary entry has one sense. When a meaning is related to a word but bel
 ### Tools those goals make possible
 <a id="tools"></a>
 
-Because of role letters, a small fixed set of endings, and spelling that matches sound, a program can read a word's role, what a pronoun points to, and how to pronounce it straight from the writing. You write nothing extra for the tools: they read the same sentences people do.
+Because of role letters, a small fixed set of endings, and spelling that matches sound, a program can read a word's role, what a pronoun points to, and how to pronounce it directly from the writing. You write nothing extra for the tools: they read the same sentences people do.
 
 - **[Inspect](inspect.md):** paste a sentence and click or highlight a word to see its role, its root's sense, and how the clause fits together.
 - **Pronunciation:** the same page shows an **IPA:** line, which writes out the text as spoken in the International Phonetic Alphabet (a standard notation for speech sounds). Since each letter has one sound and syllables come in only a few shapes, pronunciation follows directly from the spelling.
 
 ## Features that show the design {#worth-a-look}
 
-Each row below names something English leaves open and links to the section where Ageben settles it. The pages come from all three levels and build on earlier ones, so a term may be new when you land there; follow its link back. To learn the language itself, use the reading order in [How to learn](#how-to-learn).
+Each row below names something English leaves open and links to the section where Ageben settles it. The pages come from all three levels and build on earlier ones, so a term may be new when you arrive there; follow its link back. To learn the language itself, use the reading order in [How to learn](#how-to-learn).
 
 ### Every sentence has one reading {#one-reading}
 
@@ -60,7 +60,7 @@ Ageben settles in the writing several things English leaves to context.
 
 ### A few patterns do many jobs {#few-patterns}
 
-Ageben gets many meanings out of a few patterns, so forms English learns one by one fall out of patterns you already know.
+Ageben builds many meanings from a few patterns, so forms English learns one by one follow from patterns you already know.
 
 | Feature | What English leaves open | Level |
 |---------|--------------------------|-------|
@@ -70,11 +70,11 @@ Ageben gets many meanings out of a few patterns, so forms English learns one by 
 
 ### Built to be sung {#built-to-be-sung}
 
-Ageben word shapes are chosen so a melody can carry them.
+Ageben word shapes are chosen to be easy to set to a melody.
 
 | Feature | What English leaves open | Level |
 |---------|--------------------------|-------|
-| [Word shapes for singing](/singability#singability-constraints) | English *strengths* ends in a pile of consonants, and *record* changes meaning when the stress moves. Ageben words mostly alternate consonant and vowel, and stress always falls on the first syllable, which is meant to let a melody place any word freely. | Advanced |
+| [Word shapes for singing](/singability#singability-constraints) | English *strengths* ends in a cluster of consonants, and *record* changes meaning when the stress moves. Ageben words mostly alternate consonant and vowel, and stress always falls on the first syllable, which is meant to let a melody place any word freely. | Advanced |
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>
@@ -88,7 +88,7 @@ The rest of the sidebar is for looking things up:
 | In the sidebar | What it is | When to open it |
 |----------------|------------|-----------------|
 | **Review**, last in each level ([Beginner](/review), [Intermediate](/review-intermediate), [Advanced](/review-advanced)) | One item per page at that level. Each answer links back to the section it tests | When you finish a level |
-| **Tools**: [Terminology](terminology.md) | The English names these pages use for grammar, each with a short gloss and a link to the section that teaches it | When a grammar term has slipped your mind |
+| **Tools**: [Terminology](terminology.md) | The English names these pages use for grammar, each with a short gloss and a link to the section that teaches it | When you forget a grammar term |
 | **Tools**: [Lexicon](lexicon.md) | Roots and dictionary compounds, and a way to respell an English name | When you need a word |
 | **Tools**: [Inspect](inspect.md) | A word-by-word breakdown of a sentence | When you want to check a sentence |
 | **Cheat Sheets** | A printable lookup page for each part of the grammar. Two of them line up what each letter means across those parts. **Ageben → English** is the spelling index for short closed words. Each row is tagged **B**, **I**, or **A** for its level and links to the section that teaches it | When you want a form you have already met |
@@ -125,7 +125,7 @@ Suggested attribution: *Ageben by humblevladimirthegreat, licensed under CC BY 4
 
 I would like to thank ClearerThinking.org and their book *The 12 Levers* for being a helpful compendium of scientifically validated personal growth techniques and noting their safety conditions.
 
-The Conlangs community on Reddit has been a wealth of resources, ideas, and support for conlangers everywhere, and I am grateful for it.
+The Conlangs community on Reddit has given conlangers everywhere resources, ideas, and support, and I am grateful for it.
 
 Thank you as well to all the beta testers and reviewers for their feedback and questions.
 

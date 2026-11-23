@@ -47,6 +47,7 @@ Two things follow:
 | [Warmth](doc-style.md#warmth) | Unchanged |
 | Paragraph length, one idea per heading, no throat-clearing ([voice and length](doc-style.md#voice-and-length)) | Unchanged |
 | Parallel items go in a table ([voice and length](doc-style.md#voice-and-length)) | Unchanged. It applies to the lists of sidebar groups and tools |
+| [Tone](doc-style.md#tone) | Unchanged: literal words, literal verbs on features, effects stated directly, no conversational filler. Criticisms may argue, but in literal words. A figurative verb for what Ageben does to a person (*nudges*, *steers*) also overstates it, so [calibrated claims](#calibrated-claims) catch it too |
 | [Unpack English pictures](doc-style.md#unpack-english-pictures) | Unchanged. The conceptual metaphors list is the one place a picture is the subject, and each line there still names the plain claim |
 | [A choice says when](doc-style.md#a-choice-says-when) | Unchanged. It applies wherever the page offers two ways in, such as Claritish first or the grammar first |
 | [Say it once](doc-style.md#say-it-once) | Tightened: [one owner per topic](#one-owner) |
@@ -189,3 +190,4 @@ The introduction does three jobs, and each has its own register. Keep them from 
 4. **Could they use it.** Is there a form, placement rule, or inventory the reader cannot act on yet? Replace it with the choice in English and the link.
 5. **Once.** Search both pages for the feature's key word. Is it explained in one place and previewed at most once before that?
 6. **Who is speaking.** Is every sentence either about the language, addressed to the reader, or signed *I* in a section that allows it?
+7. **Read it back.** Is any sentence an idiom, a figurative verb, or filler (*just*, *actually*, *really* for emphasis)? Rewrite it literally ([tone](doc-style.md#tone)).
