@@ -28,3 +28,12 @@ Costs are weighted tokens (cache read 0.1×, 1 h write 2×, 5 min write 1.25×, 
 - **Sketch 2: a new flag, or only the pointer?** The pointer alone would have saved most of finding 2's 115k, but writers would still learn of a taught-later form only from `verify`, one round per mistake. **Recommendation:** add the pointer now and the `--at` flag when the next rewrite phase is planned, since every later phase repeats this check on every page. Confidence **medium**.
 - **Sketch 1: rule text or a check?** No lint reads proposal plans, so a wording rule relies on the plan writer. A check that counts the *May edit* files of units marked *orchestrator* would catch U1, but it would be the first plan lint. **Recommendation:** wording only for now. Confidence **medium**.
 - **Sketch 4: hide or mark?** Dropping baseline-only jobs from the line hides a job that is still red. **Recommendation:** mark them, as sketched. Confidence **high**.
+
+## The review itself
+
+The run-reviewer for this phase cost 728k over 62 calls, peaking at 112k.
+
+- **The whole `--calls` listing went into context (about 70k avoidable).** Calls 6–7 ran `token-report --calls` for the whole session and printed its 330 call lines in two slices, about 13k tokens, which the next 55 calls carried (99k). Running `--agent <id> --calls` per transcript, as `.claude/agents/run-reviewer.md` step 2 says, or grepping the saved listing for costly rows, would have kept about 4k.
+- **Two scratch scripts filled gaps in the report (about 25k, under the threshold but likely in every review).** `--calls` shows each result's carry but not each call's own weighted cost, and it cannot show a call's input or the reasoning before it. The review wrote `tmp/scratch/rr-calls.mjs` (calls in a range, with the text before each) and `tmp/scratch/rr-cost.mjs` (weighted cost per call) to measure calls like U4's, which cost 74k after a cache expiry.
+
+**Sketch:** in `scripts/token-report.mjs`, give `--calls` a column with each call's own weighted cost and a `--top N` option that keeps the N costliest calls per transcript. Add `--show <agent>:<from>-<to>`, which prints each call's input and the assistant text before it, trimmed. Then in `run-reviewer.md` step 2, use `--top` first and `--show` in place of reading transcript lines.
