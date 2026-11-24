@@ -88,7 +88,7 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `site-redirects.md` | Public URL remaps. |
 | `agents-md.md` | What belongs in this file. |
 | `wizard-game.md` | Wizard sandbox engine (`src/game/`): what it reads from the docs, writing game content as morph gloss, and its checks. |
-| `interpreter.md` | Interpreter (`src/interpret/`): reading terms, frame families, classification table, pair table, reader rules, matcher rules, host contract, the loop and its pass-through list, which tools read readings and which the parse. |
+| `interpreter.md` | Interpreter (`src/interpret/`): reading terms, frame families, family profiles, boundaries, discourse slots, classification table, pair table, reader rules, matcher rules, host contract, the loop and its pass-through list, which tools read readings and which the parse. |
 | `solver.md` | Solver (`src/interpret/solve.ts`, `translate.ts`): encoding, translation table, jobs and options, what stands, CLI. |
 | `code-layout.md` | Source file size limit and its lint, splitting a file, `npm run deps`. |
 | `TODO.md` (root) | Planned revisions; fold into grammar docs as work proceeds. |
