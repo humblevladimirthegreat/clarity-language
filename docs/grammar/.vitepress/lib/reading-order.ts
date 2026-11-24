@@ -351,6 +351,7 @@ export const cheatSheetSidebar: LessonLink[] = [
   { text: 'Roles', link: '/cheat-sheets/roles' },
   { text: 'Comparing', link: '/cheat-sheets/comparing' },
   { text: 'Numbers', link: '/cheat-sheets/numbers' },
+  { text: 'How far a word reaches', link: '/cheat-sheets/word-reach' },
   { text: 'Ageben → English', link: '/cheat-sheets/to-english' },
 ]
 

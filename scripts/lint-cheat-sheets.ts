@@ -48,6 +48,7 @@ const SHEETS: Record<string, string> = {
   comparing: "comparing.md",
   numbers: "numbers.md",
   "joins-hooks": "joins-hooks.md",
+  "word-reach": "word-reach.md",
   "to-english": "to-english.md",
 };
 
