@@ -1,6 +1,6 @@
 # Grammar newcomer rewrite: explain for people, summarize for agents
 
-**Status:** READY, 2026-11-24. No phase started. Decided 2026-11-24 (user): the Claritish review list (R1 of `claritish-newcomer-rewrite.md`) folds into this proposal as unit C1, and that proposal is deleted when C1 lands. The scope is tiered: stage pages and the recipe track get the full newcomer rewrite. The orientation pages, terminology and the tool pages get a tone pass plus agent summaries. The cheat sheets get a tone pass of their hand-written prose only. On stage pages, contrasts and near misses go inside the existing H3s, so headings, sittings, URLs and checkpoints stay as they are. The run starts with a pilot of three Beginner pages and stops for the user's review before it fans out. Carried over from the Claritish run (decided 2026-11-21 and 2026-11-23): the prose is written for human comprehension first, in the voice of technical documentation per the [tone](../../meta/doc-style.md#tone) guidelines; there is no length cap, because the newcomer tests set the length; agents read each section's rules from a terse `<!-- Agent summary: … -->` comment; the agent-summary lint and the `outline` support were deferred to this proposal.
+**Status:** READY, 2026-11-24. No phase started. Decided 2026-11-24 (user): digests and unit briefs are tracked in git under `docs/proposals/run-state/grammar-newcomer-rewrite/`, not in the scratchpad, so the run can continue in another environment ([run state](#run-state)). Decided 2026-11-24 (user): the Claritish review list (R1 of `claritish-newcomer-rewrite.md`) folds into this proposal as unit C1, and that proposal is deleted when C1 lands. The scope is tiered: stage pages and the recipe track get the full newcomer rewrite. The orientation pages, terminology and the tool pages get a tone pass plus agent summaries. The cheat sheets get a tone pass of their hand-written prose only. On stage pages, contrasts and near misses go inside the existing H3s, so headings, sittings, URLs and checkpoints stay as they are. The run starts with a pilot of three Beginner pages and stops for the user's review before it fans out. Carried over from the Claritish run (decided 2026-11-21 and 2026-11-23): the prose is written for human comprehension first, in the voice of technical documentation per the [tone](../../meta/doc-style.md#tone) guidelines; there is no length cap, because the newcomer tests set the length; agents read each section's rules from a terse `<!-- Agent summary: … -->` comment; the agent-summary lint and the `outline` support were deferred to this proposal.
 
 **Related:** every stage page under [`docs/grammar/beginner/`](../../grammar/beginner/), [`intermediate/`](../../grammar/intermediate/) and [`advanced/`](../../grammar/advanced/); the recipe track ([english.md](../../grammar/english.md) and the `say-*.md` pages); [purpose.md](../../grammar/purpose.md), [introduction.md](../../grammar/introduction.md), [terminology.md](../../grammar/terminology.md), the tool pages at the top of [`docs/grammar/`](../../grammar/), the [cheat sheets](../../grammar/cheat-sheets/) and the level reviews. Policy: [grammar-docs.md](../../meta/grammar-docs.md), [doc-style.md](../../meta/doc-style.md), [claritish-style.md](../../meta/claritish-style.md) (newcomer tests and agent summaries, the model for this run), [orientation-style.md](../../meta/orientation-style.md), [glosses.md](../../meta/glosses.md). Tooling: [`scripts/outline.ts`](../../../scripts/outline.ts), the build's lint steps, [AGENTS.md](../../../AGENTS.md).
 
@@ -24,6 +24,13 @@ The run uses subagents. Each page reads its own owning sections, which other pag
 - **Audit unit:** `proposal-worker` (fresh), `model: opus`, `effort: high`. Run the [audit brief](#audit-brief) on the pages the named units changed. **May edit:** those pages.
 - **Style unit:** `style-editor` (fresh), `model: opus`, `effort: high`. Review the `npm run changed-sections -- <rev>` list for the named pages against [doc-style.md](../../meta/doc-style.md) (including [tone](../../meta/doc-style.md#tone)) and the newcomer section U1 writes. `<rev>` is the commit before P1's first, which goes on the Status line when P1 starts. Wording only. **May edit:** the named pages.
 
+<a id="run-state"></a>
+**Run state.** The run may continue in a different environment, and neither the scratchpad nor `tmp/` travels with the repo. So the files the run carries from unit to unit are tracked in git, in `docs/proposals/run-state/grammar-newcomer-rewrite/`. For this run, that folder replaces the scratchpad that [running with subagents](../../meta/procedures/proposals.md#running-with-subagents), step 2, names for briefs.
+
+- `stage-digest.txt` and `audit-digest.txt`: the two digests. U1 writes them from the sections below, and M1 and later consolidations update them. Once they exist, the files are the only copy: G1's consolidation cuts the *Stage digest* and *Audit brief* sections below to a pointer.
+- `briefs/<unit-id>.txt`: each unit's brief, built from the digest and the unit's line, and written before the unit starts. The unit's commit includes it, so a unit cut off mid-run can be started again elsewhere from the same brief. A unit that makes no commit leaves its brief to the phase's consolidation commit. Each phase's consolidation deletes the briefs of its finished units; the git log keeps them.
+- Files are `.txt`, so the build's Markdown checks skip them. Nothing links into the folder; name its files by path in backticks. F1 deletes the folder along with this proposal.
+
 ### Phase P1: policy, tooling, pilot
 
 **U1 Policy.** *Orchestrator.* Write the rules the rewrite units follow:
@@ -31,9 +38,9 @@ The run uses subagents. Each page reads its own owning sections, which other pag
 - In [grammar-docs.md](../../meta/grammar-docs.md), add **Explaining for a newcomer** (anchor `newcomer`). It holds the newcomer tests from the stage digest below, adapted from [claritish-style.md](../../meta/claritish-style.md#newcomer) for pages that are the source of truth. Contrasts go inside the H3 that teaches the form, and the H3 count never grows for them. New examples use only constructions taught on the page or earlier. There is no length cap. Add a row to the [stage checklist](../../meta/grammar-docs.md#stage-checklist).
 - In grammar-docs.md, add **Agent summaries** (anchor `agent-summaries`), the grammar-wide convention. One comment sits directly under each teaching heading. Stage pages put it under every H3 except Practice and See also. Recipe pages put it under each heading that teaches a recipe. Claritish lessons put it under each teaching H2, and under the H1 when the lead itself states track-wide rules (this settles the index.md placement R1 raised). Orientation, terminology and tool pages put it under each H2 that states something an agent acts on: a design goal, a rule, or how a tool reads its input. Cheat sheets and level reviews get none. The format, the content limits and *keep it in step* move here from [claritish-style.md](../../meta/claritish-style.md#agent-summaries), and that section shrinks to the Claritish placement and a pointer.
 - In claritish-style.md's newcomer section, keep the Claritish-only parts (contrast H3s, practice as contrast pairs) and point to grammar-docs.md for the shared tests.
-- Write the brief digest file from the stage digest below, and the audit digest from the [audit brief](#audit-brief).
+- Write `stage-digest.txt` from the stage digest below, and `audit-digest.txt` from the [audit brief](#audit-brief), in the [run-state](#run-state) folder.
 
-**May edit:** `docs/meta/grammar-docs.md`, `docs/meta/claritish-style.md`, `docs/meta/doc-style.md`.
+**May edit:** `docs/meta/grammar-docs.md`, `docs/meta/claritish-style.md`, `docs/meta/doc-style.md`, the run-state folder.
 
 **U2 Agent-summary tooling.** `proposal-worker`, `model: opus`, `effort: medium`.
 
@@ -59,7 +66,7 @@ The run uses subagents. Each page reads its own owning sections, which other pag
 ### Phase P2: Beginner, first words; Claritish review
 
 **M1 Model update.** *Orchestrator.* Fold the user's pilot review into U1's policy sections and the digest. If the user hand-edited a pilot page, write down what the edit changed as digest lines. Name the reviewed pilot pages as the model in the digest's first line.
-**May edit:** `docs/meta/grammar-docs.md`, `docs/meta/doc-style.md`, the digest file.
+**May edit:** `docs/meta/grammar-docs.md`, `docs/meta/doc-style.md`, the run-state `stage-digest.txt` and `audit-digest.txt`.
 
 **C1 Claritish review.** `proposal-worker`, `model: opus`, `effort: high`. Act on the items `claritish-newcomer-rewrite.md` left under *Review (R1)*:
 
@@ -238,7 +245,7 @@ Each E unit is a rewrite unit.
 **L1 Lint on.** *Orchestrator.* Turn on U2's coverage check for every stage page, recipe page and Claritish lesson, so that a new page cannot ship without summaries. If a page fails, it missed a summary: send it back to the unit that wrote it (or a fresh rewrite unit). Never add a page to an exemption list.
 **May edit:** the lint's page-kind setting.
 
-**F1 Final gate.** *Orchestrator.* A full `npm run verify` against an empty baseline. Then delete this proposal and commit.
+**F1 Final gate.** *Orchestrator.* A full `npm run verify` against an empty baseline. Then delete this proposal and `docs/proposals/run-state/grammar-newcomer-rewrite/`, and commit.
 
 ### Stage digest (pasted into every rewrite brief)
 

@@ -197,21 +197,43 @@ function isLabelMarker(marker: NumberMarker): boolean {
  * A stance word that is a rank fence's bar becomes {@link Bar}, or {@link FenceBar} as the first bar after a closed `ua` fence.
  */
 export function markContext(tokens: IToken[]): IToken[] {
-  const retype = (token: IToken, type: TokenType | undefined): IToken =>
-    type ? { ...token, tokenType: type, tokenTypeIdx: type.tokenTypeIdx! } : token;
-  const paired = tokens.map((token, i) => retype(token, isSameRolePairAt(tokens, i) ? SameRolePair : undefined));
-  const out: IToken[] = [];
-  for (const [i, token] of paired.entries()) out.push(retype(token, hostedType(token, out, paired.slice(i + 1))));
-  const barred = out.map((token, i) => retype(token, barTypeAt(out, i)));
-  const hooked = barred.map((token, i) => retype(token, isItemHookAt(barred, i) ? ItemHook : undefined));
-  const continued = hooked.map((token, i) => retype(token, tokenIs(token, V) && isVerbListAt(hooked.slice(0, i)) ? VCont : undefined));
-  const verbs = continued.map((token, i) => retype(token, verbTypeAt(continued, i)));
-  const hRuns = verbs.map((token, i) => retype(token, hListTypeAt(verbs, i)));
-  const listed = hRuns.map((token, i) => retype(token, gListTypeAt(hRuns, i)));
-  const leaning = listed.map((token, i) => retype(token, glTypeAt(listed, i)));
-  const standIns = leaning.map((token, i) => retype(token, odoTypeAt(leaning, i)));
-  return standIns.map((token, i) => retype(token, wTypeAt(standIns, i)));
+  return CONTEXT_PASSES.reduce((current, pass) => pass.run(current), tokens);
 }
+
+/** One step of {@link markContext}: a name for reports (`npm run context-report`) and the retyping it does. */
+export type ContextPass = { name: string; run: (tokens: IToken[]) => IToken[] };
+
+function retype(token: IToken, type: TokenType | undefined): IToken {
+  return type ? { ...token, tokenType: type, tokenTypeIdx: type.tokenTypeIdx! } : token;
+}
+
+/** A pass that retypes each token from the whole list as the previous pass left it. */
+function eachToken(typeAt: (tokens: IToken[], at: number) => TokenType | undefined): ContextPass["run"] {
+  return (tokens) => tokens.map((token, i) => retype(token, typeAt(tokens, i)));
+}
+
+/** The passes of {@link markContext}, in order; each reads the tokens as the passes before it left them. */
+export const CONTEXT_PASSES: readonly ContextPass[] = [
+  { name: "sameRolePair", run: eachToken((tokens, i) => (isSameRolePairAt(tokens, i) ? SameRolePair : undefined)) },
+  {
+    // Left to right: a word sees the words before it as this pass already retyped them.
+    name: "hosted",
+    run: (tokens) => {
+      const out: IToken[] = [];
+      for (const [i, token] of tokens.entries()) out.push(retype(token, hostedType(token, out, tokens.slice(i + 1))));
+      return out;
+    },
+  },
+  { name: "bar", run: eachToken(barTypeAt) },
+  { name: "itemHook", run: eachToken((tokens, i) => (isItemHookAt(tokens, i) ? ItemHook : undefined)) },
+  { name: "verbList", run: eachToken((tokens, i) => (tokenIs(tokens[i]!, V) && isVerbListAt(tokens.slice(0, i)) ? VCont : undefined)) },
+  { name: "verbEnd", run: eachToken(verbTypeAt) },
+  { name: "hRun", run: eachToken(hListTypeAt) },
+  { name: "gRun", run: eachToken(gListTypeAt) },
+  { name: "glLean", run: eachToken(glTypeAt) },
+  { name: "standIn", run: eachToken(odoTypeAt) },
+  { name: "wLeaf", run: eachToken(wTypeAt) },
+];
 
 /** Past a host's hosted `/b/` (the list that fills it) and its amount, from `next`. */
 function skipHosted(tokens: IToken[], next: number): number {

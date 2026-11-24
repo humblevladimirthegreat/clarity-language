@@ -3,7 +3,7 @@
  * phrase span in this checkout's docs/grammar/. Both parsers read the same spans, so a difference
  * is a parser change, never a doc change. Exits 1 when any span parses differently.
  *
- * The ref's src/, data/ and package.json are extracted to tmp/cache/parse-ref/<sha>/ and bundled once.
+ * The ref's src/, data/, package.json and the sidebar order file are extracted to tmp/cache/parse-ref/<sha>/ and bundled once.
  *
  * With `--drop-one` (one word deleted) and / or `--swap` (two neighboring words swapped), it compares variants of each
  * span instead: inputs beyond the docs, where a parser change can alter a tree or a rejection that no doc sentence shows.
@@ -41,7 +41,9 @@ async function refParser(ref: string): Promise<{ sha: string; parse: Parse }> {
   const bundle = join(dir, "parse.bundle.mjs");
   if (!existsSync(bundle)) {
     mkdirSync(dir, { recursive: true });
-    const tar = execFileSync("git", ["archive", sha, "src", "data", "package.json"], { cwd: REPO_ROOT, maxBuffer: 1 << 30 });
+    // src/repo-paths.ts imports the sidebar order from the docs, as in src/find/rev-parser.ts.
+    const paths = ["src", "data", "package.json", "docs/grammar/.vitepress/lib/reading-order.ts"];
+    const tar = execFileSync("git", ["archive", sha, ...paths], { cwd: REPO_ROOT, maxBuffer: 1 << 30 });
     execFileSync("tar", ["-x", "-C", dir], { input: tar });
     buildSync({
       entryPoints: [join(dir, "src", "parse", "index.ts")],
