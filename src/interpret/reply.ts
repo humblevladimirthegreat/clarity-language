@@ -161,10 +161,10 @@ function placeLeaf(landmark: { leaf: string; english: string }, place: PlaceBlan
  */
 export function answerLeaf(term: Term, at: string, tables: ClassifyTables, place?: PlaceBlank): { leaf: string; english: string } | undefined {
   const t = throughAntecedent(term);
-  if (t.kind !== "thing" && t.kind !== "speaker" && t.kind !== "listener") return undefined;
+  if (t.kind !== "thing" && t.kind !== "speaker" && t.kind !== "listener" && t.kind !== "we") return undefined;
   const word = t.kind === "thing" ? t.head : t.word;
   const leaf = morphGlossFor(word, tables).replace(/^[zdb]-/, `${place ? "b" : at}-`);
-  const english = t.kind === "speaker" ? "me" : t.kind === "listener" ? "you" : t.kind === "thing" && t.named ? namedEnglish(t.root) : leaf.replace(/^[a-z]+-[←]?/, "");
+  const english = t.kind === "speaker" ? "me" : t.kind === "listener" ? "you" : t.kind === "we" ? "us" : t.kind === "thing" && t.named ? namedEnglish(t.root) : leaf.replace(/^[a-z]+-[←]?/, "");
   return place ? placeLeaf({ leaf, english }, place) : { leaf, english };
 }
 

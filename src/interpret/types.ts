@@ -130,7 +130,7 @@ export type Detail = {
  */
 export type Term =
   | { kind: "thing"; head: LexWord; root: string; named: boolean; details: Detail[]; frames?: Frame[] }
-  | { kind: "speaker" | "listener"; word: LexWord; details?: Detail[]; frames?: Frame[] }
+  | { kind: "speaker" | "listener" | "we"; word: LexWord; details?: Detail[]; frames?: Frame[] }
   | { kind: "pronoun"; word: LexWord; bind?: AnaphorBind; antecedent?: Term; details?: Detail[]; frames?: Frame[] }
   | { kind: "blank"; word: LexWord; details?: Detail[]; frames?: Frame[] }
   | { kind: "literal"; word: LexWord; payload: string; details?: Detail[]; frames?: Frame[] }

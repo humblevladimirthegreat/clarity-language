@@ -226,4 +226,18 @@ describe("ask: switches", () => {
     // An asker the caller does not name fits any speaker.
     assert.deepEqual(said("yel zuwen vowurol."), [0]);
   });
+
+  // R4a-8 (D16), as the solver reads it: `zawan` is the turn's addressee, from the log's persons.
+  it("a logged zawan after a call to Azozon answers a question about Azozon", () => {
+    const log = buildLog(
+      [
+        { speaker: "Bea", at: 0, text: "yazozon. zalazun vudurul." },
+        { speaker: "Bea", at: 1, text: "zawan vowurol." },
+      ],
+      tables,
+    );
+    const said = (text: string): number[] => ask(readText(text, tables, { text: "q" })[0]!, log).map((m) => m.entry?.at ?? -1);
+    assert.deepEqual(said("yel zazozon vowurol."), [1]);
+    assert.deepEqual(said("yel zalazun vowurol."), []);
+  });
 });

@@ -105,7 +105,7 @@ class Canon {
     }
     const term = value as Term;
     if (term.kind === "thing" && !this.termOf.has(term.head)) this.termOf.set(term.head, term);
-    if ("word" in term && (term.kind === "pronoun" || term.kind === "speaker" || term.kind === "listener") && !this.termOf.has(term.word)) {
+    if ("word" in term && (term.kind === "pronoun" || term.kind === "speaker" || term.kind === "listener" || term.kind === "we") && !this.termOf.has(term.word)) {
       this.termOf.set(term.word, term);
     }
     for (const [key, child] of Object.entries(value)) {
@@ -275,6 +275,7 @@ class Canon {
       }
       case "speaker":
       case "listener":
+      case "we":
       case "blank":
       case "number":
         return { kind: term.kind, word: raw(term.word), ...this.extras(term) };

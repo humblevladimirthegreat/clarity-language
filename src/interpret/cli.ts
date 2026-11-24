@@ -64,6 +64,7 @@ export function formatTerm(term: Term | undefined): string {
       return `${term.head.raw}${term.named ? " (named)" : ""}${tail(term.details)}`;
     case "speaker":
     case "listener":
+    case "we":
       return `${term.kind} ${term.word.raw}${tail(term.details)}`;
     case "pronoun":
       return `pronoun ${term.word.raw}${term.antecedent ? ` -> ${formatTerm(term.antecedent)}` : ""}${tail(term.details)}`;

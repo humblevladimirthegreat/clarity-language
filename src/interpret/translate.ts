@@ -16,7 +16,7 @@
  */
 import { CLOSED } from "../closed-roots.js";
 import type { LexWord } from "../parse/types.js";
-import type { Addressed, Addressee, Log, LogEntry } from "./log.js";
+import { turnPersons, type Log, type LogEntry, type TurnPersons } from "./log.js";
 import { match, type TermSite } from "./match.js";
 import { allReadings } from "./read.js";
 import { asMember, claimMemberLists, collective, compoundHeads, memberList, throughAntecedent, universalInstance, type ListTerm } from "./steps.js";
@@ -143,12 +143,8 @@ export class Translator {
   readonly wraps = new Map<ReadingId, Wrap>();
   readonly holders = new Map<string, string>();
   readonly witnesses = new Map<ReadingId, Set<string>>();
-  /** Each reading's turn speaker, when the log's entries are given. */
-  readonly speakers = new Map<ReadingId, string>();
-  /** Each reading's turn, by its place in the log's entries, when they are given. */
-  readonly turns = new Map<ReadingId, number>();
-  /** Each reading's turn addressees (`LogEntry.addressees`, D16), when the turn has any. */
-  readonly addressees = new Map<ReadingId, Addressed>();
+  /** Each top-level reading's turn and its place in the log's entries, when they are given. */
+  readonly turnOf = new Map<ReadingId, { entry: LogEntry; turn: number }>();
   /** The log's readings by id, for a link that names one (a backward stand-in's sentence). */
   readonly byId = new Map<ReadingId, Reading>();
   /** The accounting guard: the parts the current reading's rows used, and the readings whose claims they wrote. */
@@ -165,54 +161,30 @@ export class Translator {
 
   constructor(readonly options: TranslateOptions) {}
 
+  /** A reading's turn persons (`turnPersons`): the constants when the turn is not known (a question). */
+  persons(reading: Reading | ReadingId): TurnPersons {
+    const at = this.turnOf.get((typeof reading === "string" ? reading : reading.id).split("/")[0]!);
+    return turnPersons(at?.entry, at?.turn ?? 0, (t) => this.consts.get(t));
+  }
+
   /** The speaker of a reading's turn as a term (`sp("a")`), or the constant `speaker` when the turn is not known. */
-  speaker(reading: Reading): string {
-    const who = this.speakers.get(reading.id.split("/")[0]!);
-    return who === undefined ? "speaker" : `sp(${str(who)})`;
+  speaker(reading: Reading | ReadingId): string {
+    return this.persons(reading).speaker;
   }
 
-  /**
-   * R4a-8 (D16): the one addressed in a reading's turn, from `LogEntry.addressees` (never the call frames on a reading):
-   * with exactly one addressee, that addressee's term (a call's party as a term in a role, another speaker `sp("…")`);
-   * with none or several (R4a decision 1), `listener(N)`, N the turn's place in the log, which fits no other turn's.
-   * The constant `listener` when the turn is not known (a question).
-   */
+  /** R4a-8 (D16): the one addressed in a reading's turn (`turnPersons`). */
   listener(reading: Reading | ReadingId): string {
-    const id = (typeof reading === "string" ? reading : reading.id).split("/")[0]!;
-    const turn = this.turns.get(id);
-    if (turn === undefined) return "listener";
-    const to = this.addressees.get(id)?.to ?? [];
-    return (to.length === 1 ? this.person(to[0]!) : undefined) ?? `listener(${turn})`;
+    return this.persons(reading).listener;
   }
 
-  /** An addressee as a term: another speaker `sp("…")`; a call's party as in a role (a name, through `-r`'s antecedent). */
-  person(a: Addressee): string | undefined {
-    if (a.kind === "speaker") return `sp(${str(a.speaker)})`;
-    const t = throughAntecedent(a.party);
-    if (t.kind !== "thing") return undefined;
-    return this.consts.get(t) ?? name(t.root);
-  }
-
-  /**
-   * R4a-7: `zaya` in a reading's turn, `we(S, A1, …, Ak)`: the turn speaker and the turn's addressees, sorted by text so
-   * one pair of people is one term whoever speaks. `we(N)` when the turn has no addressees, fitting no other turn's; the
-   * constant `we` when the turn is not known (a question).
-   */
+  /** R4a-7: `zayan` in a reading's turn (`turnPersons`). */
   we(reading: Reading | ReadingId): string {
-    const id = (typeof reading === "string" ? reading : reading.id).split("/")[0]!;
-    const turn = this.turns.get(id);
-    if (turn === undefined) return "we";
-    const to = this.addressees.get(id)?.to ?? [];
-    if (!to.length) return `we(${turn})`;
-    const who = this.speakers.get(id);
-    const members = [...new Set([who === undefined ? "speaker" : `sp(${str(who)})`, ...to.map((a) => this.person(a) ?? `listener(${turn})`)])].sort();
-    return `we(${members.join(",")})`;
+    return this.persons(reading).we;
   }
 
   /** A reading's turn persons as the program writes them, so a speaker, listener or `zaya` term fits only its own turn's. */
   site(id: ReadingId): TermSite {
-    const who = this.speakers.get(id.split("/")[0]!);
-    return { speaker: who === undefined ? "speaker" : `sp(${str(who)})`, listener: this.listener(id), we: this.we(id) };
+    return this.persons(id);
   }
 
   // ── Terms ──
@@ -239,7 +211,6 @@ export class Translator {
     if (known) return known;
     switch (t.kind) {
       case "thing": {
-        if (t.named && t.root === CLOSED.handshake && !t.head.plural) return this.we(ctx.reading);
         if (t.named) {
           const text = name(t.root);
           this.individuals.set(text, t);
@@ -258,6 +229,8 @@ export class Translator {
         return this.value(t.word);
       case "speaker":
         return this.speaker(ctx.reading);
+      case "we":
+        return this.we(ctx.reading);
       case "listener":
         return this.listener(ctx.reading);
       case "pronoun": {
@@ -1320,9 +1293,7 @@ export function translate(log: Pick<Log, "readings"> & { entries?: readonly LogE
   // The turn's speaker (a say word's `-m` on `v`, `uwen` in a role), from the log's entries when given.
   (log.entries ?? []).forEach((entry, turn) => {
     for (const r of entry.readings) {
-      t.speakers.set(r.id, entry.speaker);
-      t.turns.set(r.id, turn);
-      if (entry.addressees) t.addressees.set(r.id, entry.addressees);
+      t.turnOf.set(r.id, { entry, turn });
     }
   });
   for (const reading of allReadings(log.readings)) t.byId.set(reading.id, reading);

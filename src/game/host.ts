@@ -72,6 +72,7 @@ function unreadable(term: Term): string | undefined {
   switch (term.kind) {
     case "speaker":
     case "listener":
+    case "we":
     case "blank":
       return undefined;
     case "thing":
@@ -80,7 +81,7 @@ function unreadable(term: Term): string | undefined {
       const word = term.word;
       if (isPointer(word)) return pointerRole(word) ? undefined : `this role pointer (${word.raw})`;
       const to = throughAntecedent(term);
-      if (to.kind === "speaker" || to.kind === "listener") return undefined;
+      if (to.kind === "speaker" || to.kind === "listener" || to.kind === "we") return undefined;
       return (to.kind === "thing" ? to.root : contentRoot(word)) ? undefined : `this pronoun (${word.raw})`;
     }
     default:
@@ -148,6 +149,9 @@ function resolveTerm(term: Term, reach: Reach): Resolution {
       return { ok: true, id: reach.speaker };
     case "listener":
       return listener(term.word);
+    case "we":
+      // No entity is the turn's *we* yet: looked for by its root, as a name in a role.
+      return byRoot(reach, contentRoot(term.word)!, true, adjsOf(term), false);
     case "thing":
       return byRoot(reach, term.root, term.named, adjsOf(term), term.head.ending === "l");
     case "pronoun": {
@@ -159,6 +163,7 @@ function resolveTerm(term: Term, reach: Reach): Resolution {
       const to = throughAntecedent(term);
       if (to.kind === "speaker") return { ok: true, id: reach.speaker };
       if (to.kind === "listener") return listener(word);
+      if (to.kind === "we") return resolveTerm(to, reach);
       const root = to.kind === "thing" ? to.root : contentRoot(word)!;
       return byRoot(reach, root, to.kind === "thing" && to.named, adjsOf(to), word.ending === "l");
     }

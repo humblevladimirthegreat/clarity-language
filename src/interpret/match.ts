@@ -13,7 +13,6 @@
  * - A blank in the query binds to the target's term in that place.
  * - Widening and inference are switches, off by default ({@link Switch}); every match found through one names it.
  */
-import { CLOSED } from "../closed-roots.js";
 import type { Claim, Detail, Frame, Link, Reading, StanceList, Term } from "./types.js";
 import type { LexWord } from "../parse/types.js";
 import { detailNumber, sameNumberKind, sameNumberWord, samePayload, termNumber, wordValue } from "./value.js";
@@ -223,22 +222,21 @@ function termMatch(queryTerm: Term, targetTerm: Term, state: State, at: string):
 }
 
 /**
- * A turn person as its site names it: a speaker or listener term, `zaya` (a named handshake thing, R4a-7), or a name
- * (its root, as a call's party is written). Undefined for any other term, or when the site names no one.
+ * A turn person as its site names it: a speaker, listener or `we` term (R4a-7), or a name (its root, as a call's party
+ * is written). Undefined for any other term, or when the site names no one.
  */
 function personText(term: Term, site: TermSite | undefined): string | undefined {
-  if (term.kind === "speaker" || term.kind === "listener") return site?.[term.kind];
+  if (term.kind === "speaker" || term.kind === "listener" || term.kind === "we") return site?.[term.kind];
   if (term.kind !== "thing" || !term.named || termNumber(term)) return undefined;
-  if (term.root === CLOSED.handshake && !term.head.plural) return site?.we;
   return /^[a-z][a-z0-9_]*$/.test(term.root) ? term.root : JSON.stringify(term.root);
 }
 
-const isTurnPerson = (t: Term): boolean => t.kind === "speaker" || t.kind === "listener" || (t.kind === "thing" && t.named && t.root === CLOSED.handshake && !t.head.plural);
+const isTurnPerson = (t: Term): boolean => t.kind === "speaker" || t.kind === "listener" || t.kind === "we";
 
 function structural(query: Term, target: Term, state: State, at: string): boolean {
   // R4a-7, R4a-8: a turn person fits whatever its site names it as (`zawan` after a call to Azozon is Azozon), and a
   // name fits a turn person the site names with that name; two turn terms with no site fall back to their kind.
-  if ((isTurnPerson(query) || isTurnPerson(target)) && !(query.kind === target.kind && (query.kind === "speaker" || query.kind === "listener"))) {
+  if ((isTurnPerson(query) || isTurnPerson(target)) && !(query.kind === target.kind && isTurnPerson(query))) {
     const q = personText(query, state.options.querySite);
     const t = personText(target, state.options.targetSite);
     if (q !== undefined && t !== undefined) return q === t;
@@ -252,7 +250,8 @@ function structural(query: Term, target: Term, state: State, at: string): boolea
       return target.kind === "thing" && target.root === query.root && target.named === query.named;
     }
     case "speaker":
-    case "listener": {
+    case "listener":
+    case "we": {
       if (target.kind !== query.kind) return false;
       const q = state.options.querySite?.[query.kind];
       const t = state.options.targetSite?.[query.kind];

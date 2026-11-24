@@ -20,6 +20,8 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { ParseResult } from "../parse/types.js";
 import { readParse } from "./read.js";
+import { throughAntecedent } from "./steps.js";
+import { name, str } from "./translate-helpers.js";
 import type { Frame, Reading, Term } from "./types.js";
 
 /** One turn as the host gives it. `at` is the host's time or sequence number. */
@@ -234,6 +236,43 @@ export function readQuestion(log: Log, text: string, tables: ClassifyTables, opt
 /** A log of the given turns, in order. */
 export function buildLog(turns: readonly Turn[], tables: ClassifyTables, options: LogOptions = {}): Log {
   return turns.reduce((log, turn) => appendTurn(log, turn, tables), emptyLog(options));
+}
+
+/**
+ * A turn's persons as the solver writes them, so a speaker, listener or `zaya` term fits only its own turn's
+ * (docs/meta/interpreter.md#the-log). Opaque ids: compare them, never read them.
+ */
+export type TurnPersons = { speaker: string; listener: string; we: string };
+
+/** A log speaker as the solver writes one: `sp("a")`. */
+export const speakerId = (speaker: string): string => `sp(${str(speaker)})`;
+
+/**
+ * The persons of the turn at place `turn` in the log (`entry`; undefined for a turn the log does not hold, such as a
+ * question: the constants `speaker`, `listener`, `we`).
+ *
+ * - **speaker**: `sp("…")`.
+ * - **listener** (R4a-8, D16): from `LogEntry.addressees`, never the call frames on a reading. With exactly one
+ *   addressee, that addressee's id: another speaker `sp("…")`, a call's party as a name in a role is written (through
+ *   `-r`'s antecedent); with none or several (R4a decision 1), `listener(N)`, which fits no other turn's.
+ * - **we** (R4a-7): `we(S, A1, …, Ak)`, the speaker and the addressees sorted by text, so one pair of people is one id
+ *   whoever speaks; `we(N)` when the turn has no addressees.
+ *
+ * `party` gives a call party's id when the caller has one of its own (the Translator's constant for a first mention).
+ */
+export function turnPersons(entry: Pick<LogEntry, "speaker" | "addressees"> | undefined, turn: number, party?: (term: Term) => string | undefined): TurnPersons {
+  if (entry === undefined) return { speaker: "speaker", listener: "listener", we: "we" };
+  const person = (a: Addressee): string | undefined => {
+    if (a.kind === "speaker") return speakerId(a.speaker);
+    const t = throughAntecedent(a.party);
+    if (t.kind !== "thing") return undefined;
+    return party?.(t) ?? name(t.root);
+  };
+  const speaker = speakerId(entry.speaker);
+  const to = entry.addressees?.to ?? [];
+  const listener = (to.length === 1 ? person(to[0]!) : undefined) ?? `listener(${turn})`;
+  const members = [...new Set([speaker, ...to.map((a) => person(a) ?? `listener(${turn})`)])].sort();
+  return { speaker, listener, we: to.length ? `we(${members.join(",")})` : `we(${turn})` };
 }
 
 /** The turn a top-level reading of the log belongs to. */

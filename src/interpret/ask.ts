@@ -10,7 +10,7 @@
  *
  * Read the question against the log with `readQuestion` (log.ts), so its pronouns bind to the log's terms.
  */
-import { entryOf, type Log, type LogEntry } from "./log.js";
+import { entryOf, speakerId, turnPersons, type Log, type LogEntry } from "./log.js";
 import { passThrough, referentOf, type Host } from "./host.js";
 import { framePath, match, withIslands, withListFrames, readingTree, type Binding, type FramePath, type MatchOptions, type Switch } from "./match.js";
 import type { Frame, Reading } from "./types.js";
@@ -110,8 +110,8 @@ export function ask<E>(question: Reading, log: Log, host: Host<E> = {}, ask: Ask
       ...(referent
         ? { referent: (term, side, site) => referent(term, side, side === "target" ? { ...site, ...(entry ? { entry } : {}) } : site) }
         : {}),
-      querySite: { reading: question, ...(ask.asker !== undefined ? { speaker: ask.asker } : {}) },
-      targetSite: { reading, ...(entry ? { speaker: entry.speaker } : {}) },
+      querySite: { reading: question, ...(ask.asker !== undefined ? { speaker: speakerId(ask.asker) } : {}) },
+      targetSite: { reading, ...(entry ? turnPersons(entry, log.entries.indexOf(entry)) : {}) },
       ...(host.switches ? { switches: host.switches } : {}),
       ...(host.lexicon ? { lexicon: host.lexicon } : {}),
     };

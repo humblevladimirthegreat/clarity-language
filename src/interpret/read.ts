@@ -117,6 +117,8 @@ function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
   if (family.kind === "content" && word.ending === "n" && family.roots.length === 1) {
     if (family.roots[0] === CLOSED.microphone) return { kind: "speaker", word };
     if (family.roots[0] === CLOSED.headphones) return { kind: "listener", word };
+    // `zayan`, the turn's *we* (R4a-7); `zayanx` stays a group thing.
+    if (family.roots[0] === CLOSED.handshake && !word.plural) return { kind: "we", word };
   }
   switch (word.reading) {
     case "standIn": {
