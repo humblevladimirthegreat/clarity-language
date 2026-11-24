@@ -1,6 +1,6 @@
 # Reader and solver boundary
 
-**Status:** READY (2026-11-21)  
+**Status:** IN PROGRESS (phase 1 started 2026-11-24)  
 **Related:** [interpreter.md](../../meta/interpreter.md) ([links](../../meta/interpreter.md#links), [reader rules](../../meta/interpreter.md#reader-rules), [parse or reading](../../meta/interpreter.md#parse-or-reading), [matching](../../meta/interpreter.md#matching)), [solver.md](../../meta/solver.md) ([translation table](../../meta/solver.md#translation-table), [the edge](../../meta/solver.md#the-edge)), [`read.ts`](../../../src/interpret/read.ts), [`types.ts`](../../../src/interpret/types.ts), [`log.ts`](../../../src/interpret/log.ts), [`ask.ts`](../../../src/interpret/ask.ts), [`match.ts`](../../../src/interpret/match.ts), [`translate.ts`](../../../src/interpret/translate.ts), [`translate-links.ts`](../../../src/interpret/translate-links.ts), [`translate-say.ts`](../../../src/interpret/translate-say.ts)  
 **Depends on:** none  
 **Design authority:** *none*. No form or reading changes. Solver answers change only where the solver ignored what the reader already says (B1). `ask` answers change only where `ask` lacked the turn persons the solver already uses (B3).

@@ -100,7 +100,7 @@ Notes on the rows:
 - **Only if (row 6).** A denied P rules out the condition only when the condition says at least P, so the fit runs from P to `c(Id)`; when the terms are equal this is the plain row.
 - **Where the conditional has no term (rows 5 to 7).** A hinge over a say word keeps its rules with `on(Id)` alone. A hinge on a universal has the template and member terms of row 22. MAY with a hinge has a term (MAY rows 17 and 18). A first mention in the condition is written as its kind (R1-3), and its `slot:newMember` frame is used.
 - **Whole-list denial (row 4)** joins each item on `fits(i(Id, K), Pk)`, so a claim that says at least the item counts.
-- **Listed exceptions (row 15).** Any `unit:h` adverb in a `hual` / `hal` claim counts as listed exceptions (marker only), since the reader does not attach the occasions to the restrictor frame; so does an occasion clause after the restrictor's stand-in (row 38).
+- **Listed exceptions (row 15).** The solver reads the restrictor frame's `Frame.occasions`: a restrictor with any listed occasion has listed exceptions (marker only), and an adverb that is not an occasion (an intensity adverb before the verb) does not; so does an occasion clause after the restrictor's stand-in (row 38).
 - **A hinge on a command** makes no claim (`causation.md#if`); the force frame has no row, so the turn is `beyond`.
 - **Steps always on.** Membership and closed universal to instance always run in a solver job, since the pages state them as what the sentence says. `widen` stays a switch, named in the answer, since a compound's head is the lexicon's.
 

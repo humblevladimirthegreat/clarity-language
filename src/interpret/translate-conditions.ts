@@ -53,7 +53,7 @@ export function because(tr: Translator, reading: Reading, frames: Frames, claim:
   const restrictor = frames.restrictor?.values;
   const always = restrictor?.series === "ua" && restrictor.ending === "l";
   const often = restrictor?.series === "ua" && restrictor.ending === "m";
-  if (frames.restrictor && (!(always || often) || claim.details.some((d) => d.key === "unit:h") || denied)) return bad;
+  if (frames.restrictor && (!(always || often) || frames.restrictor.occasions?.length || denied)) return bad;
   if ((orCond || orOut) && (!orRow((orCond ?? orOut)!) || denied || frames.hinge || frames.restrictor || mayOver || ctx.wrap || body.length)) return bad;
   if (mayOver && (denied || frames.hinge || body.length)) return bad;
   // R4b-4 (D2): the condition's own frame makes it that clause's own term.

@@ -29,3 +29,11 @@ zazozon vowurol herulal hual.
 @ a7
 zazozon vowurol vehohel vul.
 = Azozon neither walks nor sits.
+
+@ a8
+zazozon hahunom vowurol hual.
+= Azozon always walks very much.
+
+@ a9
+zazozon vowurol hahunom hual.
+= Azozon always walks, except when very much.

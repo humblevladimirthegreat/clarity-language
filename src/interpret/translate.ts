@@ -763,7 +763,7 @@ export class Translator {
       const v = frames.restrictor.values;
       // R4d-6 (restrictors.md#only-when-never-hal): an occasion clause (`huxal blarl …`) is listed, in the marker's data.
       const occasion = frames.restrictor.hosted?.kind === "clause" ? frames.restrictor.hosted : undefined;
-      const listed = claim.details.some((d) => d.key === "unit:h") || !!occasion;
+      const listed = !!frames.restrictor.occasions?.length || !!occasion;
       const always = v.series === "ua" && v.ending === "l";
       const never = v.series === "a" && v.ending === "l";
       const usually = v.series === "ua" && v.ending === "m";

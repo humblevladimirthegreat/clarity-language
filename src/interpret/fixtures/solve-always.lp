@@ -5,6 +5,8 @@
 % t:0.4 = a5
 % t:0.5 = a6
 % t:0.6 = a7
+% t:0.7 = a8
+% t:0.8 = a9
 
 % Generic rules (docs/meta/solver.md).
 clash(P) :- holds(P), holds(neg(P)).
@@ -107,6 +109,17 @@ holds(neg(owuro(z(azozo)))) :- on("t:0.6").
 fired("t:0.6",neg(owuro(z(azozo)))) :- on("t:0.6").
 holds(neg(ehohe(z(azozo)))) :- on("t:0.6").
 fired("t:0.6",neg(ehohe(z(azozo)))) :- on("t:0.6").
+% t:0.7
+on("t:0.7").
+holds(owuro(z(azozo),w(dt("unit:h","hahunom")))) :- on("t:0.7").
+fired("t:0.7",owuro(z(azozo),w(dt("unit:h","hahunom")))) :- on("t:0.7").
+always(owuro(z(azozo),w(dt("unit:h","hahunom")))) :- on("t:0.7").
+fired("t:0.7",always(owuro(z(azozo),w(dt("unit:h","hahunom"))))) :- on("t:0.7").
+% t:0.8
+on("t:0.8").
+always(owuro(z(azozo),w(dt("unit:h","hahunom")))) :- on("t:0.8").
+fired("t:0.8",always(owuro(z(azozo),w(dt("unit:h","hahunom"))))) :- on("t:0.8").
 
 % Fits, from match().
 fits(owuro(z(azozo)),owuro(z(azozo),w(dt("unit:h","herulal")))).
+fits(owuro(z(azozo)),owuro(z(azozo),w(dt("unit:h","hahunom")))).

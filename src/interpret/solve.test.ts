@@ -1486,3 +1486,13 @@ describe("solve: NOTIONAL (R4d decision O-6, decision 4)", () => {
     assert.equal(await said(lk("zazozon vowurol."), "yel zazozon theyum vowurol."), "unknown");
   });
 });
+
+describe("solve: restrictor occasions come from the reader's Frame.occasions (reader-solver boundary B1)", () => {
+  const walks = q("zazozon hahunom vowurol.");
+  it("hual after an intensity adverb is bare: it claims the clause (a8)", async () => {
+    assert.equal((await follows(log("always", ["a8"]), walks, base)).verdict, "yes");
+  });
+  it("hual after the verb's occasion adverb lists exceptions: marker only (a9)", async () => {
+    assert.equal((await follows(log("always", ["a9"]), walks, base)).verdict, "unknown");
+  });
+});
