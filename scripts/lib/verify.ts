@@ -168,3 +168,26 @@ export function compare(
 export function jobOf(key: ErrorKey): string {
   return key.split(" | ", 1)[0]!;
 }
+
+export type JobSplit = { failed: string[]; baselineOnly: string[] };
+
+/**
+ * Split the failed jobs. A job is baseline only when it produced at least one error key and none
+ * is new (each is in the baseline, or on a generate row when `generatePages` is given). A failed
+ * job with a new key, or with no key at all, stays in `failed`.
+ */
+export function splitFailedJobs(
+  jobs: readonly JobResult[],
+  baseline: readonly ErrorKey[],
+  generatePages: ReadonlySet<string> | undefined,
+): JobSplit {
+  const base = new Set(baseline);
+  const split: JobSplit = { failed: [], baselineOnly: [] };
+  for (const job of jobs) {
+    if (job.ok) continue;
+    const keys = jobKeys(job);
+    const old = keys.length > 0 && keys.every((k) => base.has(k) || (generatePages !== undefined && onGenerateRow(k, generatePages)));
+    (old ? split.baselineOnly : split.failed).push(job.label);
+  }
+  return split;
+}

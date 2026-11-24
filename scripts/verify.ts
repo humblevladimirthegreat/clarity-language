@@ -19,7 +19,7 @@ import { allowlistRows } from "../src/lint/checkpoint-inventory.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath, tmpRel } from "../src/tmp-paths.js";
 import { keysWithAssertions, testAssertions } from "./lib/build-output.ts";
-import { compare, jobKeys, jobOf, splitJobs, stripAnsi, type ErrorKey } from "./lib/verify.ts";
+import { compare, jobKeys, jobOf, splitFailedJobs, splitJobs, stripAnsi, type ErrorKey, type JobResult } from "./lib/verify.ts";
 
 const BASELINE = tmpPath("state", "verify-baseline.json");
 const LAST_LOG = tmpPath("logs", "verify-last.log");
@@ -58,7 +58,7 @@ function generatePages(): Set<string> {
   );
 }
 
-type Run = { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[]; sizeWarnings: string[]; assertions: Map<string, string> };
+type Run = { keys: ErrorKey[]; ran: Set<string>; failedJobs: string[]; sizeWarnings: string[]; jobs: JobResult[]; assertions: Map<string, string> };
 
 function run(fast: boolean): Run {
   const blocks = sh("node_modules/.bin/tsx scripts/cheat-sheet-blocks.ts --write");
@@ -79,13 +79,13 @@ function run(fast: boolean): Run {
   // The source-size lint only warns; show its lines so a file past the ceiling is seen on a passing run.
   const sizeWarnings = jobs.filter((j) => j.label === "lint source size").flatMap((j) => j.lines.filter((l) => l.startsWith("warning: ")));
   const assertions = testAssertions(buildOut);
-  return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label), sizeWarnings, assertions };
+  return { keys, ran: new Set(jobs.map((j) => j.label)), failedJobs: jobs.filter((j) => !j.ok).map((j) => j.label), sizeWarnings, jobs, assertions };
 }
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const started = Date.now();
-  const { keys, ran, failedJobs, sizeWarnings, assertions } = run(options.fast);
+  const { keys, ran, failedJobs, sizeWarnings, jobs, assertions } = run(options.fast);
   const secs = `${Math.round((Date.now() - started) / 1000)}s`;
   const failedNote = failedJobs.length ? `failed jobs: ${failedJobs.join(", ")}` : "every job passed";
 
@@ -112,7 +112,13 @@ function main(): void {
   ];
   if (options.allowGenerate) parts.push(`${result.generate} on generate rows (expected)`);
   if (result.unchecked) parts.push(`${result.unchecked} not checked (job skipped)`);
-  console.log(`verify: ${pass ? "PASS" : "FAIL"}, ${parts.join(", ")} (${failedNote}; ${secs})`);
+  const split = splitFailedJobs(jobs, baseline.keys, options.allowGenerate ? generatePages() : undefined);
+  const notes = [
+    ...(split.failed.length ? [`failed jobs: ${split.failed.join(", ")}`] : []),
+    ...(split.baselineOnly.length ? [`baseline only: ${split.baselineOnly.join(", ")}`] : []),
+    ...(failedJobs.length ? [] : ["every job passed"]),
+  ];
+  console.log(`verify: ${pass ? "PASS" : "FAIL"}, ${parts.join(", ")} (${[...notes, secs].join("; ")})`);
   for (const line of sizeWarnings) console.log(`  ${line}`);
   if (baseline.saved === "none") console.log("  no baseline: run npm run verify -- --baseline first; every error counts as new");
   const byJob = new Map<string, ErrorKey[]>();

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { compare, jobKeys, onGenerateRow, splitJobs } from "./verify.ts";
+import { compare, jobKeys, onGenerateRow, splitFailedJobs, splitJobs } from "./verify.ts";
 
 const BUILD = `✓ tsc (1.2s)
 docs/grammar/intermediate/try.md: 12 checked, 0 redundant-omitted / 12 with loose English; 14 morph gloss(es) compared to parser
@@ -109,5 +109,38 @@ describe("compare", () => {
     const result = compare([key], [], new Set(["lint ageben"]), new Set(["set-joins.md"]));
     assert.deepEqual(result.fresh, []);
     assert.equal(result.generate, 1);
+  });
+});
+
+describe("splitFailedJobs", () => {
+  const jobs = splitJobs(BUILD);
+  const lintKeys = jobKeys(jobs.find((j) => j.label === "lint ageben")!);
+  const tscKeys = jobKeys(jobs.find((j) => j.label === "tsc vitepress")!);
+
+  it("marks a job baseline only when every key is in the baseline", () => {
+    const split = splitFailedJobs(jobs, [...lintKeys, ...tscKeys], undefined);
+    assert.deepEqual(split.baselineOnly, ["lint ageben", "tsc vitepress"]);
+    assert.deepEqual(split.failed, ["test"]);
+  });
+
+  it("keeps a job with a new key under failed", () => {
+    const split = splitFailedJobs(jobs, lintKeys.slice(1), undefined);
+    assert.ok(split.failed.includes("lint ageben"));
+    assert.ok(!split.baselineOnly.includes("lint ageben"));
+  });
+
+  it("keeps a failed job with no key under failed", () => {
+    const split = splitFailedJobs([{ label: "x", ok: false, lines: [] }], [], undefined);
+    assert.deepEqual(split, { failed: ["x"], baselineOnly: [] });
+  });
+
+  it("counts generate-row keys as not new only under generate pages", () => {
+    const job = { label: "lint ageben", ok: false, lines: ["docs/grammar/intermediate/try.md:1  practice-item  (x)"] };
+    assert.deepEqual(splitFailedJobs([job], [], new Set(["try.md"])).baselineOnly, ["lint ageben"]);
+    assert.deepEqual(splitFailedJobs([job], [], undefined).failed, ["lint ageben"]);
+  });
+
+  it("skips passing jobs", () => {
+    assert.deepEqual(splitFailedJobs([{ label: "tsc", ok: true, lines: [] }], [], undefined), { failed: [], baselineOnly: [] });
   });
 });
