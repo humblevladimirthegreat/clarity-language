@@ -1,73 +1,16 @@
 # Scope model: one statement of reach, order, ownership and carry
 
-**Status:** IN PROGRESS. Phase 1 started 2026-11-24. Decided 2026-11-24 (user): edits to existing pages get no style review, because a full style pass over them follows later; the new scope page is not in that pass, so it gets its own style review (L5). Writers of grammar prose still self-check against the [checklist](../../meta/doc-style.md#checklist). Decided 2026-11-24 (user, both as recommended): D1, the scope page is a synthesis page closing Intermediate, in a unit of its own after *Surprise and what's not so*, titled *How far a word reaches*; D2, a scope cheat sheet generated from the profile, boundary and slot tables (L4 runs).
+**Status:** IN PROGRESS. Phase 1 stopped after U3 at the user's request, 2026-11-24; U4, U5, U6 and the phase 1 close remain, and the next session starts at U4. Phase 1 commits so far: `cdd63e7b` start, `3086d93f` U1, `856423e9` U2, `838e2906` U3. Decided 2026-11-24 (user): edits to existing pages get no style review, because a full style pass over them follows later; the new scope page is not in that pass, so it gets its own style review (L5). Writers of grammar prose still self-check against the [checklist](../../meta/doc-style.md#checklist). Decided 2026-11-24 (user, both as recommended): D1, the scope page is a synthesis page closing Intermediate, in a unit of its own after *Surprise and what's not so*, titled *How far a word reaches*; D2, a scope cheat sheet generated from the profile, boundary and slot tables (L4 runs).
 
-**Related:** [interpreter.md](../../meta/interpreter.md) ([frame families](../../meta/interpreter.md#frame-families), [links](../../meta/interpreter.md#links), [scope statements](../../meta/interpreter.md#scope-statements), [reader rules](../../meta/interpreter.md#reader-rules), [pair table](../../meta/interpreter.md#pair-table)); [scope.ts](../../../src/parse/scope.ts) (`FRAME_KEYS`, `PAIR_ROWS`, `orderPair`, `clauseScopes`); [carry.ts](../../../src/parse/carry.ts); [read.ts](../../../src/interpret/read.ts) (`readClause`, `readIsland`, `readDependent`, `stackedHinge`, `pointBackLinks`, `carriedLinks`); [read-context.ts](../../../src/interpret/read-context.ts) (`placeFrame`, `memberFrame`, `framedMember`, `Here.scoped`); [scope.test.ts](../../../src/parse/scope.test.ts); [classes.test.ts](../../../src/interpret/classes.test.ts); the corpus walk in [accounting-walk.ts](../../../src/interpret/accounting-walk.ts) and [sweep.ts](../../../scripts/sweep.ts). Grammar: [clause.md](../../grammar/beginner/clause.md#which-covers-which), [sentence-linkers.md](../../grammar/intermediate/sentence-linkers.md#past-a-period), [holder.md](../../grammar/intermediate/holder.md#what-the-holder-covers), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward), [feelings.md](../../grammar/intermediate/feelings.md#speaker-attitude), [mirative.md](../../grammar/intermediate/mirative.md#mirative), [for-a-sake.md](../../grammar/intermediate/for-a-sake.md#whose-stake), [joins.md](../../grammar/beginner/joins.md#everything-ua), [universals-domains.md](../../grammar/intermediate/universals-domains.md#bound-tags), [scope-islands.md](../../grammar/intermediate/scope-islands.md), [quote-contents.md](../../grammar/intermediate/quote-contents.md), [reading-order.ts](../../grammar/.vitepress/lib/reading-order.ts).
+**Related:** [interpreter.md](../../meta/interpreter.md) ([frame families](../../meta/interpreter.md#frame-families), [family profiles](../../meta/interpreter.md#family-profiles), [boundaries](../../meta/interpreter.md#boundaries), [links](../../meta/interpreter.md#links), [scope statements](../../meta/interpreter.md#scope-statements), [reader rules](../../meta/interpreter.md#reader-rules), [pair table](../../meta/interpreter.md#pair-table)); [scope.ts](../../../src/parse/scope.ts) (`FRAME_KEYS`, `PAIR_ROWS`, `orderPair`, `clauseScopes`); [scope-profiles.ts](../../../src/parse/scope-profiles.ts) (`PROFILES`, `derivePairRows`, `EXCEPTIONS`, `explainPair`); [boundaries.ts](../../../src/parse/boundaries.ts) (`BOUNDARIES`); [scope-report.ts](../../../src/interpret/scope-report.ts) (`npm run scope-report`); [carry.ts](../../../src/parse/carry.ts); [read.ts](../../../src/interpret/read.ts) (`readClause`, `readIsland`, `readDependent`, `stackedHinge`, `pointBackLinks`, `carriedLinks`); [read-context.ts](../../../src/interpret/read-context.ts) (`placeFrame`, `memberFrame`, `framedMember`, `Here.scoped`); [scope.test.ts](../../../src/parse/scope.test.ts); [classes.test.ts](../../../src/interpret/classes.test.ts); the corpus walk in [accounting-walk.ts](../../../src/interpret/accounting-walk.ts) and [sweep.ts](../../../scripts/sweep.ts). Grammar: [clause.md](../../grammar/beginner/clause.md#which-covers-which), [sentence-linkers.md](../../grammar/intermediate/sentence-linkers.md#past-a-period), [holder.md](../../grammar/intermediate/holder.md#what-the-holder-covers), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward), [feelings.md](../../grammar/intermediate/feelings.md#speaker-attitude), [mirative.md](../../grammar/intermediate/mirative.md#mirative), [for-a-sake.md](../../grammar/intermediate/for-a-sake.md#whose-stake), [joins.md](../../grammar/beginner/joins.md#everything-ua), [universals-domains.md](../../grammar/intermediate/universals-domains.md#bound-tags), [scope-islands.md](../../grammar/intermediate/scope-islands.md), [quote-contents.md](../../grammar/intermediate/quote-contents.md), [reading-order.ts](../../grammar/.vitepress/lib/reading-order.ts).
 
 **Depends on:** none. **Order:** never run a phase of this proposal at the same time as a phase of `reading-realizer.md`, because both edit `read.ts` and `read-context.ts`. Running phase 1 of this proposal first is recommended: realizer unit U14 places frames from the pair table, and phase 1 here turns that table into a few rules it can follow.
 
 **Design authority:** *none* for phase 1: it restructures code and editor notes, and every reading stays the same. Phase 2 changes only the readings the user accepts under [Open decisions](#open-decisions), each through its owning grammar page. Phase 3 adds one teaching page and one cheat sheet, and adds or changes no form.
 
-## Problem
-
-The grammar's rules on how far a word reaches are stated piece by piece, and the code mirrors that scatter:
-
-- **Order of two whole-clause frames.** `PAIR_ROWS` has 158 rows. About 97 say *the earlier covers the later*. 18 say a call commutes. 13 put `force` over the other frame, and 9 of those cite only that the act word sits on the left edge, outside the body: that is nesting by the tree (reader rule 2), not a pair rule. The few real exceptions are hard to see among the repeats.
-- **Whose a frame is.** "Stays yours" appears on several pages with different reach. A speaker attitude escapes a question, a holder and a carried frame. MIRATIVE and a sake word escape a question but not a holder: a holder covers MIRATIVE, and a sake word follows text order against a holder. A `contrary` frame escapes neither, yet commutes with the other remarks. WANT, PLAN and DECISION neither take nor end a carried frame. Each is a hand-written row or a constant (`REMARKS`, `NO_CLAIM_KEYS`, `ATTITUDE_KEY`).
-- **Boxes.** Five kinds of nested reading (clause-join member, dependent, a hinge's `blarl` next sentence, scope island, quote) each let a different set of things through: a holder goes into a dependent, a carried frame never starts in a dependent or join member, nothing carries into a quote, a binder and a bound tag go on through a stand-in. The rules are conditions spread across `readClause`, `readIsland`, `carriedFrames` and the `scoped` flag.
-- **Past a period.** Carried frames live in the parser's resolve stage (`carry.ts`), the topic in the resolver, stand-in point-back and hook resume in the reader (`pointBackLinks`). Each has its own start, end and per-speaker rules, and no one place says which state crosses a speaker change, a quote, *by the way* or a goodbye.
-- **Placement in two stages.** The scope stage places whole-clause frames for scoped clauses. The reader places them again for islands and verb-list items (`placeFrame` with `scoped: false`, `memberFrame`), so reach is computed twice.
-- **One-off constructions.** `stackedHinge` and `stackedNounHinge` match the glosses `only-if` and `because`. `readStanceList`, `framedMember` and restrictor occasions are other hand-built cases.
-
-So the grammar has no single statement of its scope rules. A learner meets *earlier covers later* in [clause.md](../../grammar/beginner/clause.md#which-covers-which) and then a dozen local exceptions, and an editor can't see which exceptions are principled and which are accidents.
-
-## Goals
-
-1. The code states each scope rule once, as data: family profiles that generate the pair table, a boundary table, and a table of what carries past a period. Phase 1 changes no reading.
-2. A report shows how often each rule fires over the doc examples, and lists the rules the grammar never states or that fire only in their own example.
-3. An audit turns those results into concrete simplifications, each as a user decision with a recommendation.
-4. The accepted simplifications land in the grammar and the code together.
-5. One teaching page presents reach, order, boxes, ownership and carry as one system, so instance pages can lean on it.
-
-## Non-goals
-
-- No reading changes in phase 1. A unit whose refactor changes a reading stops and reports.
-- No change to the solver, the matcher or the log beyond what a phase 2 decision requires.
-- No change to the shape of `ResolveInfo`, `ClauseScope`, `Reading` or `Link`, except additive exports (such as an `explainPair` function) and the records U4 adds for islands.
-- No moving of `pointBackLinks` into the resolve stage. The discourse-slot table describes both layers; it does not merge them.
-- No style review of edits to existing pages (see Status). Only the new scope page gets one.
-- No split of `read.ts` for size alone. It is under the ceiling.
-
 ## Design
 
-### Family profiles
-
-Each frame family gets a profile in a new `src/parse/scope-profiles.ts`:
-
-- **seat:** `edge` (outside the body: `force`, `call`), or `body`.
-- **order:** `text` (earlier covers later), `covers` (over everything in its clause wherever it sits: `holder`), or `commutes` (`call`).
-- **escapes:** the outer frames the family stays outside of because it stays the speaker's: some of `force`, `holder`, `carried`.
-- **text anchors:** extra anchors a text-order row involving the family cites (for example `HINGE_LAST` for `hinge`, `MAY_BEFORE` for MAY, `STANDALONE` and `REACH` for `polarity`).
-- **member cases:** conditions on one member of a family, such as a channel, a doubled act word or FORMER.
-
-`derivePairRows()` builds every row from the profiles, in a fixed rule order: call, edge, both escape each other, escape, covers, member case, text. A pair the rules can't derive goes in an `EXCEPTIONS` list, each with its anchor and a one-line reason. `PAIR_ROWS` becomes `derivePairRows()`. A test checks that the derived rows equal a frozen copy of today's rows (pair, kind, cases, anchor sets). `explainPair(a, b)` returns the rule id that decided a pair (`call`, `edge`, `escape:force`, `covers:holder`, `exception:<id>`, `text`, and so on).
-
-The seed rules below come from reading `PAIR_ROWS`. U2 settles the final set: fewer exceptions is better, as long as each property cites a grammar sentence.
-
-| Seed | Today's rows it covers |
-|------|------------------------|
-| `call` commutes with all | the 18 `call` rows |
-| `edge`: `force` over a body frame | 9 rows cite only `ACT_EDGE`; 4 more add their own anchor (`hinge`, `stance`, `holder`, `intention`) |
-| `escapes: force` | `force` under `attitude`, `mirative`, `sake` |
-| `escapes: holder` | `attitude` over `holder` |
-| remarks escape each other | the 6 commuting pairs among `sake`, `attitude`, `mirative`, `contrary` |
-| `covers: holder` | 10 rows; 3 more are *fixed by word shape* (the seam sits on `stance`, `intention`, `notional`) |
-| member cases | channel against `attitude`, `mirative` (commutes) and `hinge` (channel over); FORMER over `occasion`; a doubled act word |
-| likely exceptions | `sake` × `holder` and `hinge` × `holder` (text order); `hinge` × `occasion` (occasion over); `contrary` × `stance` and `contrary` × `intention` (commute) |
-
-### Boundaries
-
-A `BOUNDARIES` table in a new `src/parse/boundaries.ts`. Rows are the nested-reading kinds: clause-join member, dependent named by a stand-in, dependent in a slot, `blarl` grounds, scope island, quote, aside. Columns are what might pass in: outer whole-clause frames, the holder, carry start, carry end, an inherited carried frame, binder reach, bound tag, rest-of-sentence tone mark. Each cell is `passes`, `blocks`, or `unstated`, with the anchor that states it. The code consults the table where it now tests a condition: `ownCarry` (main clause only), `readClause` / `readIsland` / `readDependent`, the binder and bound-tag reach through stand-ins. An `unstated` cell is never decided by the unit: it keeps today's behavior, is marked `unstated (today: passes)` or `(today: blocks)`, and goes to the audit.
+The family profiles, the boundary table and the scope report are built; [built so far](#phase-1-the-scope-model-in-code) says where. What is left to build:
 
 ### One placement stage
 
@@ -87,13 +30,9 @@ A `DISCOURSE_SLOTS` table in a new `src/parse/discourse-slots.ts`, one row per p
 
 Columns: set by, read by, ended by (a new value, a written statement word, *by the way*, a goodbye), kept per speaker or shared, crosses a quote, anchor. `carriedFrames` reads its end events and per-speaker rule from its row. `pointBackLinks` reads its own row for whether it looks past a speaker change. A cell the pages don't state is marked `unstated (today: …)`, as in the boundary table.
 
-### Scope report
-
-`npm run scope-report` walks every doc example with the same pass as `npm run sweep` (`passFiles`, `collectFileSpans`). For each example it records each reading's frame families, `order` entries (families, kind, anchors), `unordered` pairs, stance lists, nested-reading kinds and the links by kind and key, with targets as relative sentence offsets. `--save` writes `tmp/state/scope-report.json`, and `--diff` lists examples whose record changed. Once profiles exist, it counts examples per `explainPair` rule id, per boundary cell exercised and per discourse slot, naming one sample text each. Stdout is a summary; the full report goes to `tmp/logs/scope-report.md` via `tmpPath()`.
-
 ### Seed findings for the audit
 
-These come from reading the code for this plan. U6 checks them against the report and adds to them.
+These come from reading the code for this plan and from U2 and U3. U6 checks them against the report and adds to them.
 
 - **F1. `force` rows are tree nesting.** The edge rows follow from reader rule 2. The pair table and the beginner exceptions table could say "the act word stands outside the sentence" once, not 13 times. This changes only editor notes and wording.
 - **F2. Remarks escape different frames.** `attitude` escapes `force`, `holder` and the carried frame. `mirative` and `sake` escape only `force`. `contrary` escapes none but commutes with the other three. One class of *remarks that stay yours* would replace four behaviors.
@@ -101,7 +40,11 @@ These come from reading the code for this plan. U6 checks them against the repor
 - **F4. Channel-only cases.** A channel commutes with `attitude` and `mirative` and sits over a hinge, while MAY follows text order in all three. A stated reason ("a channel is grounds, not a claim") could explain all three at once, or they could be dropped.
 - **F5. MAY under a holder.** The holder carries past a period and the MAY does not.
 - **F6. Stacked hinges by gloss.** *Only because* is two hard-coded glosses. A general rule ("a frame word with an empty `/b/` right before another frame word shares its `/b/`") would cover it, along with any later stack.
-- **F7. Unstated cells** from the boundary and slot tables.
+- **F7. Unstated cells** from the boundary and slot tables. The boundary table has 25, frozen in `src/parse/boundaries.test.ts` and listed in [boundaries](../../meta/interpreter.md#boundaries); most are `outerFrames` and `carried` cells on member, dependent and `blarl` grounds rows, the quote's outer frames, holder and binder, and every aside cell but carry end.
+- **F8. Binder reach stated but not carried.** [joins.md](../../grammar/beginner/joins.md#everything-ua) says a binder reaches to the end of the sentence and into the sentence a `blarl` points to. Today a binder in one join member is not in a later member's scope, and nothing carries it into the grounds sentence. The boundary table records the page's cell; the code keeps today's behavior.
+- **F9. Bound tags bypass the table.** Bound-tag reach lives in `resolve.ts`, which U3 could not edit, so the `boundTag` cells are recorded but nothing consults them.
+- **F10. Pair rows cite fewer anchors than their rule.** `binder` × `hinge` cites only `dependents.md#hinges` (no `blarth` anchor); `polarity` × `binder` leaves out STANDALONE; `polarity` × `phase` leaves out REACH although `phase` has a `/th/` form; the four edge rows with their own anchor cite only it, not ACT_EDGE. The frozen rows keep these as they are.
+- **F11. Report blind spots.** No example has a `blarl` sentence with its next sentence, so the grounds row is never exercised, and the report counts asides under `quote`. U6 says whether either hides a candidate.
 
 ## Implementation plan
 
@@ -113,34 +56,26 @@ Three phases, run through subagents. At the end of each phase, and if the user s
 
 Each phase reads a different set of pages, and phase 2 needs the user's answers to phase 1's findings.
 
-**Gates.** At the start of each phase the orchestrator saves `npm run verify -- --baseline`. From U1's commit on, it also saves `npm run scope-report -- --save`. Each unit ends with `npm run verify -- --allow-generate`, and the unit passes before its commit. In phase 1, every unit after U1 also shows an empty `npm run scope-report -- --diff`. No phase 1 unit edits a test expectation, a solver golden (`src/interpret/fixtures/solve-*.lp`), `run.test.ts` or a `src/game/` test. In phase 2, `--diff` lists only the examples the unit's decision names. The final gate is a full `npm run verify` against an empty baseline at the end of phase 3. The proposal edits no `say-*.md`, `english.md` or `src/english-helper/`, so it has no recall gate. Its style gate covers the new scope page only (L5, Status).
+**Gates.** At the start of each session the orchestrator saves `npm run verify -- --baseline` and `npm run scope-report -- --save`. Each unit ends with `npm run verify -- --allow-generate`, and the unit passes before its commit. In phase 1, every unit after U1 also shows an empty `npm run scope-report -- --diff`. No phase 1 unit edits a test expectation, a solver golden (`src/interpret/fixtures/solve-*.lp`), `run.test.ts` or a `src/game/` test. In phase 2, `--diff` lists only the examples the unit's decision names. The final gate is a full `npm run verify` against an empty baseline at the end of phase 3. The proposal edits no `say-*.md`, `english.md` or `src/english-helper/`, so it has no recall gate. Its style gate covers the new scope page only (L5, Status).
 
 ### Phase 1: the scope model in code
 
-**U1. Scope report and snapshot.**
-Agent `proposal-worker`, `model: opus`, effort `medium`.
-Build `npm run scope-report` per [scope report](#scope-report), without rule ids, which U2 adds. First read `scripts/sweep.ts` and reuse its walk and its `--save` / `--diff` handling; import, don't copy. Add a short test that runs the report on two fixture texts. Run `--save` and report the summary counts.
-**May edit:** `scripts/scope-report.ts`, `src/interpret/scope-report.ts`, `src/interpret/scope-report.test.ts`, `package.json` (the script entry), and `src/interpret/accounting-walk.ts` or `scripts/sweep.ts` only to export a shared helper.
-
-**U2. Family profiles and escape sets.**
-Agent `proposal-worker`, `model: opus`, effort `high`.
-Write `src/parse/scope-profiles.ts` per [family profiles](#family-profiles). First freeze today's rows into `src/parse/scope-profiles.test.ts` as a literal, then make `PAIR_ROWS` come from `derivePairRows()` with the test checking equality. Export `explainPair`. Make `carry.ts` take its `coveredBy` families (`ATTITUDE_KEY`) and its no-claim members (`NO_CLAIM_KEYS`) from the profiles' `escapes: carried` and a `claims: false` member property, with the same output. Add rule-id counts to the scope report. In [interpreter.md](../../meta/interpreter.md), add a *Family profiles* section before the pair table: the properties, the rule order, and the exception list with reasons. Rewrite the pair table's intro paragraph to say the rows are derived. Leave the rows and samples as they are, except the *Counts* line.
-**May edit:** `src/parse/scope-profiles.ts`, `src/parse/scope-profiles.test.ts`, `src/parse/scope.ts`, `src/parse/carry.ts`, `src/parse/scope.test.ts` (imports only), `src/interpret/scope-report.ts`, `docs/meta/interpreter.md`.
-
-**U3. Boundary table.**
-Agent `proposal-worker`, `model: opus`, effort `high`.
-Write `src/parse/boundaries.ts` per [boundaries](#boundaries), and make `carry.ts`, `read.ts` and `scope.ts` consult it where they now test a condition. For each cell, find the stating sentence with `node scripts/find.mjs` and the grammar page's section, reading slices only: [holder.md](../../grammar/intermediate/holder.md#what-the-holder-covers), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward), [joins.md](../../grammar/beginner/joins.md#everything-ua), [universals-domains.md](../../grammar/intermediate/universals-domains.md#bound-tags), [scope-islands.md](../../grammar/intermediate/scope-islands.md), [quote-contents.md](../../grammar/intermediate/quote-contents.md), [tone-marks.md](../../grammar/intermediate/tone-marks.md). Mark cells with no stating sentence `unstated` with today's behavior, and list them in the report. Add boundary-cell counts to the scope report and a *Boundaries* section to `interpreter.md` after *Scope statements*.
-**May edit:** `src/parse/boundaries.ts`, `src/parse/boundaries.test.ts`, `src/parse/carry.ts`, `src/parse/scope.ts`, `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/scope-report.ts`, `docs/meta/interpreter.md`.
+**Built so far** (U1 to U3; input for U4 to U6):
+- **Scope report.** `npm run scope-report` (`scripts/scope-report.ts`, logic in `src/interpret/scope-report.ts`). `--save` writes `tmp/state/scope-report.json`, `--diff` compares to it, the full report is `tmp/logs/scope-report.md`. Per reading it records frame families, order entries, unordered pairs, stance lists, nested-reading kind and links (targets as sentence offsets). It counts examples per `explainPair` rule id and per boundary cell; U5 adds slot counts. Walk helpers `forEachExample`, `readSnapshot`, `writeSnapshot` are exported from `src/interpret/accounting-walk.ts`.
+- **Family profiles.** `src/parse/scope-profiles.ts`: `PROFILES` (18 families), `derivePairRows()` (8 rules), `EXCEPTIONS` (6), `explainPair`, `caseMatches`. `PAIR_ROWS` in `scope.ts` is derived; a frozen-rows test guards it. Escapes are `force`, `holder`, `carried` and `remark` (two remarks commute). The `carried` escape sits on members (`slot:th` attitude, sake feeling words), since interjections in `attitude` are not covered today; aim members have `claims: false`. `carry.ts` reads both. Documented in [family profiles](../../meta/interpreter.md#family-profiles).
+- **Boundaries.** `src/parse/boundaries.ts`: `BOUNDARIES`, 7 nested-reading rows by 8 columns. A passing cell also names how it reaches the nested reading (`copy`, `nesting`, `link`, `resolve`, `sentence`). Consulted by `collectClause` through `copied()` in `scope.ts`, `nestedCarry` in `carry.ts`, and `carriedLinks` in `read.ts` through `nestedKinds` in `read-context.ts`. Documented in [boundaries](../../meta/interpreter.md#boundaries).
+- **page-readers.** A new `src/parse/*.ts` file holding `page.md#id` anchors trips the page-readers lint. Register it in `scripts/page-readers.ts` (`REGISTRIES`, `READ_FILES`, `registryRefs()`) as U2 and U3 did, then run `npm run page-readers -- --write`.
+- Never run `npx prettier` or another formatter the repo does not depend on.
 
 **U4. One placement stage.**
 Agent `proposal-worker`, `model: opus`, effort `high`.
-Carry out [one placement stage](#one-placement-stage). Measure first with `npm run deps` on `read-context.ts`. If an island or verb-list item record would change a carried frame, or `ResolveInfo.scope` consumers in `gloss-structure.ts` or `src/game/` would need more than skipping the new records, stop and report. Update [reader rules](../../meta/interpreter.md#reader-rules) and the `unread` reasons in `interpreter.md`.
+Carry out [one placement stage](#one-placement-stage). What passes into a nested record already comes from `BOUNDARIES` through `copied()` in `collectClause`; give islands and verb-list items their records through the same path, keeping every cell's value. Measure first with `npm run deps` on `read-context.ts`. If an island or verb-list item record would change a carried frame, or `ResolveInfo.scope` consumers in `gloss-structure.ts` or `src/game/` would need more than skipping the new records, stop and report. Update [reader rules](../../meta/interpreter.md#reader-rules) and the `unread` reasons in `interpreter.md`.
 **May edit:** `src/parse/scope.ts`, `src/parse/types.ts` (a record field only), `src/parse/gloss-structure.ts` (skipping the new records only), `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/types.ts` (dropping the `unscoped` reason), `src/interpret/coverage.ts`, the matching tests (removing `unscoped` cases only), `docs/meta/interpreter.md`.
 
 **U5. Discourse slots.**
 Agent `proposal-worker`, `model: opus`, effort `high`.
 Write `src/parse/discourse-slots.ts` per [discourse slots](#discourse-slots). Make `carriedFrames` and `pointBackLinks` read their rows, with no change in output. Find each cell's stating sentence in [sentence-linkers.md](../../grammar/intermediate/sentence-linkers.md#past-a-period), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward), [topic.md](../../grammar/intermediate/topic.md), [stand-in-vowels.md](../../grammar/intermediate/stand-in-vowels.md#stand-in-back), [in-clause-hooks.md](../../grammar/intermediate/in-clause-hooks.md#hook-resume), [notional.md](../../grammar/intermediate/notional.md#notional-as-if-framing), reading slices only. Unstated cells are handled as in U3. Add slot counts to the scope report. In `interpreter.md`, add a *Discourse slots* section after *Links*, and cut the carried-frame row of the links table down to a pointer to it.
-**May edit:** `src/parse/discourse-slots.ts`, `src/parse/discourse-slots.test.ts`, `src/parse/carry.ts`, `src/interpret/read.ts`, `src/interpret/scope-report.ts`, `docs/meta/interpreter.md`.
+**May edit:** `src/parse/discourse-slots.ts`, `src/parse/discourse-slots.test.ts`, `src/parse/carry.ts`, `src/interpret/read.ts`, `src/interpret/scope-report.ts`, `docs/meta/interpreter.md`, and `scripts/page-readers.ts` only to register the new table (then `npm run page-readers -- --write`, which rewrites generated read-by blocks).
 
 **U6. Audit: simplification candidates.**
 Agent `proposal-worker`, `model: opus`, effort `high`. A fresh context that made none of U1 to U5.
@@ -160,7 +95,7 @@ Group the candidates that would land together. Change no code and no grammar pag
 2. Consolidate. Write the phase 2 S-units from U6's decisions, one unit per group, each marked *waits on D<n>*.
 3. Tell the user the decisions due.
 
-Expected commits: 6 unit commits, 1 `AGENTS.md` commit, 1 consolidation commit.
+Expected commits left: 3 unit commits, 1 `AGENTS.md` commit, 1 consolidation commit.
 
 ### Phase 2: simplifications
 
@@ -254,3 +189,35 @@ One commit per unit after its gate, staged with that unit's files only. Each is 
 ## Open decisions
 
 None open: D1 and D2 are settled (Status). U6 adds D3 onward.
+
+## Background
+
+### Problem
+
+The grammar's rules on how far a word reaches are stated piece by piece, and the code mirrors that scatter:
+
+- **Order of two whole-clause frames.** `PAIR_ROWS` has 158 rows. About 97 say *the earlier covers the later*. 18 say a call commutes. 13 put `force` over the other frame, and 9 of those cite only that the act word sits on the left edge, outside the body: that is nesting by the tree (reader rule 2), not a pair rule. The few real exceptions are hard to see among the repeats.
+- **Whose a frame is.** "Stays yours" appears on several pages with different reach. A speaker attitude escapes a question, a holder and a carried frame. MIRATIVE and a sake word escape a question but not a holder: a holder covers MIRATIVE, and a sake word follows text order against a holder. A `contrary` frame escapes neither, yet commutes with the other remarks. WANT, PLAN and DECISION neither take nor end a carried frame. Each is a hand-written row or a constant (`REMARKS`, `NO_CLAIM_KEYS`, `ATTITUDE_KEY`).
+- **Boxes.** Five kinds of nested reading (clause-join member, dependent, a hinge's `blarl` next sentence, scope island, quote) each let a different set of things through: a holder goes into a dependent, a carried frame never starts in a dependent or join member, nothing carries into a quote, a binder and a bound tag go on through a stand-in. The rules are conditions spread across `readClause`, `readIsland`, `carriedFrames` and the `scoped` flag.
+- **Past a period.** Carried frames live in the parser's resolve stage (`carry.ts`), the topic in the resolver, stand-in point-back and hook resume in the reader (`pointBackLinks`). Each has its own start, end and per-speaker rules, and no one place says which state crosses a speaker change, a quote, *by the way* or a goodbye.
+- **Placement in two stages.** The scope stage places whole-clause frames for scoped clauses. The reader places them again for islands and verb-list items (`placeFrame` with `scoped: false`, `memberFrame`), so reach is computed twice.
+- **One-off constructions.** `stackedHinge` and `stackedNounHinge` match the glosses `only-if` and `because`. `readStanceList`, `framedMember` and restrictor occasions are other hand-built cases.
+
+So the grammar has no single statement of its scope rules. A learner meets *earlier covers later* in [clause.md](../../grammar/beginner/clause.md#which-covers-which) and then a dozen local exceptions, and an editor can't see which exceptions are principled and which are accidents.
+
+### Goals
+
+1. The code states each scope rule once, as data: family profiles that generate the pair table, a boundary table, and a table of what carries past a period. Phase 1 changes no reading.
+2. A report shows how often each rule fires over the doc examples, and lists the rules the grammar never states or that fire only in their own example.
+3. An audit turns those results into concrete simplifications, each as a user decision with a recommendation.
+4. The accepted simplifications land in the grammar and the code together.
+5. One teaching page presents reach, order, boxes, ownership and carry as one system, so instance pages can lean on it.
+
+### Non-goals
+
+- No reading changes in phase 1. A unit whose refactor changes a reading stops and reports.
+- No change to the solver, the matcher or the log beyond what a phase 2 decision requires.
+- No change to the shape of `ResolveInfo`, `ClauseScope`, `Reading` or `Link`, except additive exports (such as an `explainPair` function) and the records U4 adds for islands.
+- No moving of `pointBackLinks` into the resolve stage. The discourse-slot table describes both layers; it does not merge them.
+- No style review of edits to existing pages (see Status). Only the new scope page gets one.
+- No split of `read.ts` for size alone. It is under the ceiling.
