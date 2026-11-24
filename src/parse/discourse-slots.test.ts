@@ -37,6 +37,14 @@ describe("discourse slot table", () => {
     assert.equal(perSpeaker("hookResume"), false);
   });
 
+  it("ends a supposition with its owner's NOTIONAL frame, and shares it", () => {
+    // The supposition is its owner's carried NOTIONAL frame (carriedFrames' `suppositions`), so its end events are the
+    // carried frame's; another speaker can still ask inside it.
+    for (const event of ["newValue", "statementWord", "byTheWay", "goodbye"] as const) assert.equal(endsAt("supposition", event), endsAt("carriedFrame", event), event);
+    assert.equal(goodbyeEndsEveryone("supposition"), true);
+    assert.equal(perSpeaker("supposition"), false);
+  });
+
   it("names the slot each reading link reads", () => {
     assert.equal(slotOfLink("carriedFrame carry:channel"), "carriedFrame");
     assert.equal(slotOfLink("standInBack lexReading:standInBack"), "standInBack");
@@ -77,11 +85,6 @@ describe("discourse slot table", () => {
       "hookResume byTheWay: unstated (today: keeps)",
       "hookResume goodbye: unstated (today: keeps)",
       "hookResume kept: unstated (today: shared)",
-      "supposition newValue: unstated (today: ends)",
-      "supposition statementWord: unstated (today: keeps)",
-      "supposition byTheWay: unstated (today: keeps)",
-      "supposition goodbye: unstated (today: keeps)",
-      "supposition kept: unstated (today: shared)",
       "supposition quote: unstated (today: blocks)",
       "sentenceBefore statementWord: unstated (today: ends)",
       "sentenceBefore byTheWay: unstated (today: ends)",

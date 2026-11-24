@@ -151,13 +151,17 @@ function isGreetingScope(scope: ClauseScope | undefined): boolean {
  * a frame of their own: another speaker's reply neither takes nor ends it, and it is still in force when its speaker
  * goes on (evidentiality.md#carry-forward). A goodbye ends the conversation, so it ends every speaker's frame. Unset:
  * one speaker.
+ *
+ * `suppositions` are the NOTIONAL frames still in force at the end of the text, one per speaker at most, in the order
+ * they were set: the suppositions a later NOTIONAL question can ask inside. Another speaker can ask inside one, and only
+ * its owner's events end it, so it ends with its owner's frame (notional.md#notional-as-if-framing; the `supposition` row).
  */
 export function carriedFrames(
   utterances: readonly Utterance[],
   scopes: readonly ClauseScope[],
   goodbyes: ReadonlySet<object>,
   speakers?: readonly string[],
-): BodyCarry[] {
+): { carried: BodyCarry[]; suppositions: CarriedFrame[] } {
   const byClause = new Map(scopes.filter((s) => !s.bodiless).map((s) => [s.clause, s]));
   const out: BodyCarry[] = [];
   const carries = new Map<string, CarriedFrame[]>();
@@ -202,5 +206,8 @@ export function carriedFrames(
       }
     });
   });
-  return out;
+  const suppositions = [...carries.values()]
+    .flatMap((frames) => frames.filter((frame) => frame.kind === "notional"))
+    .sort((a, b) => a.utteranceIndex - b.utteranceIndex || a.bodyIndex - b.bodyIndex);
+  return { carried: out, suppositions };
 }

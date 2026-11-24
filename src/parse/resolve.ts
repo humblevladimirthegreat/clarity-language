@@ -1169,7 +1169,7 @@ function buildResolve(
   const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
   const scope = clauseScopes(result.utterances, tables, blanks, tones);
   const pairings = respectivelyPairings(result);
-  const carried = carriedFrames(result.utterances, scope, ctx.goodbyes, speakers);
+  const { carried, suppositions } = carriedFrames(result.utterances, scope, ctx.goodbyes, speakers);
   return {
     anaphors: ctx.anaphors,
     asks: ctx.asks,
@@ -1179,6 +1179,8 @@ function buildResolve(
     ...(pairings.length > 0 ? { pairings } : {}),
     ...(tones.length > 0 ? { tones } : {}),
     ...(carried.length > 0 ? { carried } : {}),
+    ...(suppositions.length > 0 ? { suppositions } : {}),
+    ...(speakers ? { speakers } : {}),
     ...(ctx.asides.size > 0 ? { asides: ctx.asides } : {}),
   };
 }

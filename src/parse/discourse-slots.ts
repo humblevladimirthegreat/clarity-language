@@ -6,7 +6,9 @@
  * names, as in the boundary table (interpreter.md#boundaries).
  *
  * Consulted by `carriedFrames` (carry.ts) for its end events and its per-speaker rule, and by the reader's
- * `pointBackLinks` (read.ts) for whether a point-back looks past a speaker change or out of a quote.
+ * `pointBackLinks` (read.ts) for whether a point-back looks past a speaker change or out of a quote. The `supposition`
+ * row's end events are its owner's carried NOTIONAL frame's, so `carriedFrames` keeps it (`suppositions`); its test holds
+ * the two rows' end cells equal.
  */
 
 /** The slots. */
@@ -55,6 +57,7 @@ export const END_EVENTS: Readonly<Record<EndEvent, string>> = {
 
 const CARRY = "evidentiality.md#carry-forward";
 const NOTIONAL = "notional.md#notional-as-if-framing";
+const NOTIONAL_ENDS = "notional.md#follow-up-endings-notional";
 const TOPIC = "topic.md#topic";
 const TOPIC_QUOTE = "topic.md#topic-dependents";
 const BACK = "stand-in-vowels.md#stand-in-back";
@@ -139,19 +142,19 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
   },
   {
     id: "supposition",
-    what: "the NOTIONAL supposition a question points to",
-    setBy: "a stated reading with a NOTIONAL frame",
+    what: "the NOTIONAL supposition a question points to: the latest NOTIONAL frame still in force, by either speaker",
+    setBy: "a stated reading with a NOTIONAL frame; its owner's carried NOTIONAL frame, so the owner's events end it",
     readBy: { what: "a question with a NOTIONAL frame", links: ["supposition link:supposition"] },
     endedBy: {
-      newValue: unstatedEnd("ends"),
-      statementWord: unstatedEnd("keeps"),
-      byTheWay: unstatedEnd("keeps"),
-      goodbye: unstatedEnd("keeps"),
+      newValue: ends(NOTIONAL_ENDS),
+      statementWord: ends(CARRY),
+      byTheWay: ends(CARRY),
+      goodbye: { verdict: "ends", anchor: CARRY, everyone: true },
     },
-    kept: unstatedKept("shared"),
+    kept: { verdict: "shared", anchor: NOTIONAL },
     quote: unstatedQuote("blocks"),
     aside: asideBlocks,
-    anchors: [NOTIONAL],
+    anchors: [NOTIONAL, NOTIONAL_ENDS, CARRY],
   },
   {
     id: "sentenceBefore",

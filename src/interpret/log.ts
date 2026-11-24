@@ -238,15 +238,20 @@ export function readQuestion(log: Log, text: string, tables: ClassifyTables, opt
 
 /**
  * A question's NOTIONAL frame asks inside a supposition (notional.md#notional-as-if-framing): on a reading with a question
- * force frame (`values.ask`), a `supposition` link from
- * it `to` the latest stated NOTIONAL reading in the log, `frame` that reading's NOTIONAL frame. With none, there is no link. Choosing it is link resolution,
- * like a carried frame's, so the reader does it and the solver and `ask` read the link.
+ * force frame (`values.ask`), a `supposition` link from it `to` the latest stated NOTIONAL reading whose frame is still in
+ * force at the end of the log's window (`ResolveInfo.suppositions`), `frame` that reading's NOTIONAL frame. Either
+ * speaker's supposition counts, and it ends with its owner's frame: the owner's new channel or supposition, written
+ * statement word or *by the way*, or anyone's goodbye (the `supposition` row, interpreter.md#discourse-slots). With
+ * none, there is no link. Choosing it is link resolution, like a carried frame's, so the reader does it and the solver
+ * and `ask` read the link. The log's own parse chooses it: the question's re-read context is cut by the window.
  */
 function suppositionLink(log: Log, reading: Reading): void {
   const frame = reading.frames.find((f) => f.family === "notional");
   if (!frame || !reading.frames.some((f) => f.family === "force" && f.values.ask !== undefined)) return;
-  const stated = log.readings.filter((r) => r.frames.some((f) => f.family === "notional")).at(-1);
-  const supposed = stated?.frames.find((f) => f.family === "notional");
+  const latest = log.parse?.resolve?.suppositions?.at(-1);
+  const stated = latest && log.readings.find((r) => r.source.utterance === latest.utteranceIndex && r.source.body === latest.bodyIndex);
+  const notional = stated?.frames.filter((f) => f.family === "notional") ?? [];
+  const supposed = notional.find((f) => f.words.includes(latest!.word)) ?? notional[0];
   if (!stated || !supposed) return;
   reading.links.push(link("supposition", "link:supposition", frame.words, { anchor: frame.anchor, to: stated.id, frame: supposed }));
 }

@@ -607,6 +607,13 @@ export type ResolveInfo = {
    */
   carried?: BodyCarry[];
   /**
+   * The NOTIONAL frames still in force at the end of the text, one per speaker at most, in the order they were set: the
+   * suppositions a later NOTIONAL question asks inside (notional.md#notional-as-if-framing). Present when there is one.
+   */
+  suppositions?: CarriedFrame[];
+  /** Who says each sentence, in text order (`ParseOptions.speakers`). Present when the parse was given speakers. */
+  speakers?: readonly string[];
+  /**
    * What passes into each aside word (`(…)`), noted where it sits (spans.md#asides-th): the reader parses the aside's words
    * with it as `ParseOptions.aside`. Present when the text has an aside.
    */

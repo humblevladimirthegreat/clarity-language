@@ -260,7 +260,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | **Added:** in-clause hook pointing back to a landmark: `resumed` the latest extra-noun hook detail in an earlier sentence (for stacked vowels, the latest with the same vowels), its `hosted` the landmark, and `to` its sentence; neither when there is none | `hookJob:resume` | `in-clause-hooks.md#hook-resume` |
 | **Added:** frame content in the next sentence (`blarl`): a hinge's condition, a channel's grounds; each binder before the `blarl` takes a link of its own, `frame` the binder (`joins.md#everything-ua`) | `slot:grounds` | `causation.md#if`, `dependents.md#hinges`, `evidentiality.md#evidence-clause` |
 | **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences, `to` the reading that set it; what sets, reads and ends it is the [discourse slots](#discourse-slots) row `carriedFrame` | `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`); `carry:channel`, `carry:holder`, `carry:notional` | `evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now` |
-| **Added:** a NOTIONAL question's supposition: `readQuestion` links the question's NOTIONAL frame `to` the latest stated NOTIONAL reading in the log, `frame` that reading's NOTIONAL frame; no link when the log has none. The solver asks inside that reading's view, and `ask` matches the question only against the reading it points to and the readings that carry its frame | `link:supposition` | `notional.md#notional-as-if-framing` |
+| **Added:** a NOTIONAL question's supposition: `readQuestion` links the question's NOTIONAL frame `to` the latest stated NOTIONAL reading in the log whose frame is still in force, by either speaker (`ResolveInfo.suppositions`, the [discourse slots](#discourse-slots) row `supposition`), `frame` that reading's NOTIONAL frame; no link when the log has none. The solver asks inside that reading's view, and `ask` matches the question only against the reading it points to and the readings that carry its frame | `link:supposition` | `notional.md#notional-as-if-framing` |
 | **Added:** a polar word replying to the yes / no question before it | `edge:polar` | `questions.md#polar-particle` |
 | **Added:** a bound tag, naming each member of a `zual` / `zuam` fence in turn, to the end of its sentence and through the stand-ins in it | `slot:tag`, `anaphor:tag` | `universals-domains.md#bound-tags` |
 | **Added:** a topic set by an `/x/` word, which later pronouns follow | `body:topicMarker` | `topic.md#topic` |
@@ -271,7 +271,7 @@ A link whose one word's meaning the solver acts on carries that word's `values`,
 
 ## Discourse slots
 
-Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it in two places: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change, and whether it looks out of a quote: where the quote cell blocks, the quote's own reading resolves the point-backs in it and the outer sentences leave them as they are. The scope report counts the examples whose links read each slot (`discourse slots`).
+Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it in two places: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change (who says each sentence is `ResolveInfo.speakers`, set when the parse is given speakers), and whether it looks out of a quote: where the quote cell blocks, the quote's own reading resolves the point-backs in it and the outer sentences leave them as they are. The scope report counts the examples whose links read each slot (`discourse slots`).
 
 Each cell is stated, with the section that states it, or **unstated**: as in the [boundary table](#boundaries), an unstated cell keeps what the code does today, which it names, until the grammar states it.
 
@@ -334,15 +334,15 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `quote` | blocks, `in-clause-hooks.md#hook-resume` |
 | `aside` | passes, `spans.md#asides-th` |
 
-**`supposition`**, the NOTIONAL supposition a question points to (`notional.md#notional-as-if-framing`). Set by a stated reading with a NOTIONAL frame; read by a question with a NOTIONAL frame (`link:supposition`, the [links](#links) row).
+**`supposition`**, the NOTIONAL supposition a question points to (`notional.md#notional-as-if-framing`, `notional.md#follow-up-endings-notional`, `evidentiality.md#carry-forward`). Set by a stated reading with a NOTIONAL frame; read by a question with a NOTIONAL frame (`link:supposition`, the [links](#links) row). The value is the latest NOTIONAL frame still in force, by either speaker: each is its owner's carried frame, so only the owner's events end it, and a goodbye ends every one. `carriedFrames` reports the ones in force at the end of the text (`ResolveInfo.suppositions`), and `readQuestion` links to the latest from the log's own parse, not the question's re-read, whose window may cut the context.
 
 | Column | Cell |
 |--------|------|
-| `newValue` | unstated (today: ends) |
-| `statementWord` | unstated (today: keeps) |
-| `byTheWay` | unstated (today: keeps) |
-| `goodbye` | unstated (today: keeps) |
-| `kept` | unstated (today: shared) |
+| `newValue` | ends (the owner's new channel or supposition), `notional.md#follow-up-endings-notional` |
+| `statementWord` | ends (the owner's), `evidentiality.md#carry-forward` |
+| `byTheWay` | ends (the owner's), `evidentiality.md#carry-forward` |
+| `goodbye` | ends every speaker's, `evidentiality.md#carry-forward` |
+| `kept` | shared, `notional.md#notional-as-if-framing` |
 | `quote` | unstated (today: blocks) |
 | `aside` | blocks, `spans.md#asides-th` |
 
@@ -701,7 +701,7 @@ An aside is self-contained: it inherits nothing from the outer sentence, and not
 
 ## The log
 
-`Log` (`src/interpret/log.ts`) holds readings in order, each turn with its `speaker` and `at`. Each new turn is parsed together with the transcript so far, or the host's `window` of it, so the resolver's bindings cross turns with no parser change; the same turns always give the same log. The log closes each turn with a period before it joins the transcript. A turn that does not parse adds nothing and goes in `rejected`. The window is parsed with each sentence's speaker (`ParseOptions.speakers`, [stage 4](parser-pipeline.md#stage-4--resolve-ast--discourse-sidecar)), so a carried frame is per speaker.
+`Log` (`src/interpret/log.ts`) holds readings in order, each turn with its `speaker` and `at`. Each new turn is parsed together with the transcript so far, or the host's `window` of it, so the resolver's bindings cross turns with no parser change; the same turns always give the same log. The log closes each turn with a period before it joins the transcript. A turn that does not parse adds nothing and goes in `rejected`. The window is parsed with each sentence's speaker (`ParseOptions.speakers`, [stage 4](parser-pipeline.md#stage-4--resolve-ast--discourse-sidecar)), so a carried frame is per speaker, and a NOTIONAL question's supposition ends with its owner's frame.
 
 A call, *yes* / *no*, or interjection closed by a period is its own utterance, so the next sentence reads as a new move ([past a period](/sentence-linkers#past-a-period)); the log keeps it as its own reading.
 

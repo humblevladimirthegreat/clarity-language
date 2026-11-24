@@ -146,4 +146,37 @@ describe("readQuestion: a NOTIONAL question's supposition link (reader-solver bo
     assert.deepEqual(supposition(["zazozon vowurol."], "yel zazozon theyum vowurol."), []);
     assert.deepEqual(supposition(["zazozon theyum vowurol."], "yel zazozon vowurol."), []);
   });
+
+  // The supposition ends with its owner's NOTIONAL frame, and stays shared (notional.md#notional-as-if-framing, the
+  // `supposition` row of interpreter.md#discourse-slots).
+  const SUPPOSE = "z-Azozon | th-NOTIONAL-suppose | g-role-agent-teach";
+  const ASK = spell("y-question | z-Azozon | th-NOTIONAL-suppose | v-teach");
+  /** The reading index the question's supposition link points to, or undefined with no link. */
+  const linkedTo = (turns: [string, string][], asker = "B"): number | undefined => {
+    const log = buildLog(turns.map(([speaker, gloss], at) => ({ speaker, at, text: spell(gloss) })), tables);
+    const links = readQuestion(log, ASK, tables, { speaker: asker })[0]!.links.filter((l) => l.kind === "supposition");
+    assert.ok(links.length <= 1);
+    return links[0] && log.readings.findIndex((r) => r.id === links[0]!.to);
+  };
+  it("links to another speaker's supposition, and to the owner's after another speaker's statement word", () => {
+    assert.equal(linkedTo([["A", SUPPOSE]]), 0);
+    assert.equal(linkedTo([["A", SUPPOSE]], "A"), 0);
+    assert.equal(linkedTo([["A", SUPPOSE], ["B", "y-statement | z-Azozon | v-teach"]]), 0);
+    assert.equal(linkedTo([["A", SUPPOSE], ["B", "z-Alazun | th-REPORTED | v-departure"]]), 0);
+    assert.equal(linkedTo([["A", SUPPOSE], ["B", "x-by-the-way | z-Alazun | v-sleep"]]), 0);
+  });
+  it("links to the latest supposition still in force, by either speaker", () => {
+    assert.equal(linkedTo([["A", SUPPOSE], ["B", "z-Alazun | th-NOTIONAL-suppose | v-teach"]]), 1);
+    assert.equal(linkedTo([["A", SUPPOSE], ["A", "z-Alazun | th-NOTIONAL-suppose | v-teach"]]), 1);
+    assert.equal(linkedTo([["A", SUPPOSE], ["B", "z-Alazun | th-NOTIONAL-suppose | v-teach"], ["B", "y-statement | z-Alazun | v-teach"]]), 0);
+  });
+  it("has no link once the owner's frame ends: a new channel, a written statement word, by the way, anyone's goodbye", () => {
+    assert.equal(linkedTo([["A", SUPPOSE], ["A", "z-Alazun | th-REPORTED | v-departure"]]), undefined);
+    for (const act of ["y-statement", "y-soft-statement", "y-provisional-statement"])
+      assert.equal(linkedTo([["A", SUPPOSE], ["A", `${act} | z-Azozon | v-teach`]]), undefined, act);
+    assert.equal(linkedTo([["A", SUPPOSE], ["A", "x-by-the-way | z-Alazun | v-sleep"]]), undefined);
+    assert.equal(linkedTo([["A", "Alazun"], ["A", SUPPOSE]]), 1);
+    assert.equal(linkedTo([["A", "Alazun"], ["A", SUPPOSE], ["B", "Alazun"]]), undefined);
+    assert.equal(linkedTo([["A", "Alazun"], ["A", SUPPOSE], ["A", "Alazun"]]), undefined);
+  });
 });

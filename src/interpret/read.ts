@@ -1210,7 +1210,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     if (reading) reading.links.push(link("answer", "answer:answer", answer.blanks, { answer, ...(to ? { to } : {}) }));
   }
   carriedLinks(out, info?.carried ?? []);
-  pointBackLinks(out);
+  pointBackLinks(out, info?.speakers);
   // A tone on a word, a span or an island sits on what it colors (tone-marks.md#showing-your-tone); a rest-of-sentence tone
   // came in with the scope frames.
   if (info?.tones) placeTones(out, allReadings(out), info.tones);
@@ -1241,7 +1241,7 @@ function hookVowels(word: LexWord | undefined): string {
  * - Inside a quote, either one looks only within the quote (stand-in-vowels.md#stand-in-back,
  *   in-clause-hooks.md#hook-resume): the quote's own reading resolved it, and the outer sentences leave it as it is.
  */
-function pointBackLinks(sentences: Reading[]): void {
+function pointBackLinks(sentences: Reading[], speakers: readonly string[] = []): void {
   const byId = new Map(allReadings(sentences).map((r) => [r.id, r]));
   const contents = (sentence: Reading): { vowel: string; id: ReadingId }[] => {
     const act = sentence.frames.find((f) => f.key === "edge:force");
@@ -1253,9 +1253,10 @@ function pointBackLinks(sentences: Reading[]): void {
   };
   const hooks = (sentence: Reading): Detail[] =>
     sentence.claim.details.filter((d) => d.key === "hookJob:extraNoun" && d.hosted).reverse();
-  // Whether a slot looks past a speaker change is its discourse slot row (interpreter.md#discourse-slots). The reader is
-  // not told who says each sentence, so it reads them as one speaker's.
-  const speakerOf = (_sentence: Reading): string => "";
+  // Whether a slot looks past a speaker change is its discourse slot row (interpreter.md#discourse-slots). Who says each
+  // sentence is the parse's `ResolveInfo.speakers`, one per top-level reading; with none, one speaker says them all.
+  const speakerById = new Map(sentences.map((s, i) => [s.id, speakers[i] ?? ""]));
+  const speakerOf = (sentence: Reading): string => speakerById.get(sentence.id) ?? "";
   const earlierFor = (slot: SlotId, sentence: Reading, earlier: Reading[]): Reading[] =>
     perSpeaker(slot) ? earlier.filter((s) => speakerOf(s) === speakerOf(sentence)) : earlier;
   // A quote's words were read as their own text, which resolved its point-backs within the quote; where the slot's quote
