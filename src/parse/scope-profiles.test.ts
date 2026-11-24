@@ -44,7 +44,7 @@ const FROZEN: readonly PairRow[] = [
   {"pair":["sake","binder"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","hinge"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
   {"pair":["sake","stance"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
-  {"pair":["sake","holder"],"kind":"rule","cases":[{"order":"textOrder","anchors":["holder.md#what-the-holder-covers"]}]},
+  {"pair":["sake","holder"],"kind":"rule","cases":[{"order":"over","over":"holder","anchors":["holder.md#what-the-holder-covers"]}]},
   {"pair":["sake","intention"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","ability"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","phase"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
@@ -77,7 +77,7 @@ const FROZEN: readonly PairRow[] = [
   {"pair":["binder","contrary"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["binder","occasion"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["hinge","stance"],"kind":"rule","cases":[{"order":"over","over":"stance","anchors":["evidentiality.md#evidence-clause","usually-vs-must.md#how-things-work"],"when":{"stance":["channel"]}},{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
-  {"pair":["hinge","holder"],"kind":"rule","cases":[{"order":"textOrder","anchors":["holder.md#what-the-holder-covers"]}]},
+  {"pair":["hinge","holder"],"kind":"rule","cases":[{"order":"over","over":"holder","anchors":["holder.md#what-the-holder-covers"]}]},
   {"pair":["hinge","intention"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
   {"pair":["hinge","ability"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
   {"pair":["hinge","phase"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
@@ -189,6 +189,8 @@ describe("family profiles", () => {
     assert.equal(explainPair("holder", "attitude"), "escape:holder");
     assert.equal(explainPair("mirative", "contrary"), "escape:each-other");
     assert.equal(explainPair("holder", "occasion"), "covers:holder");
+    assert.equal(explainPair("sake", "holder"), "covers:holder");
+    assert.equal(explainPair("hinge", "holder"), "covers:holder");
     assert.equal(explainPair("stance", "holder"), "seam:holder");
     assert.equal(explainPair({ family: "stance", member: "channel" }, "hinge"), "member:channel");
     assert.equal(explainPair({ family: "stance", member: "may" }, "hinge"), "text");

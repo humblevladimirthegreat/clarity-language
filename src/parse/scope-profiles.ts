@@ -226,20 +226,6 @@ export type PairException = { id: string; pair: [FrameFamily, FrameFamily]; kind
 /** The pairs the rules cannot derive (interpreter.md#family-profiles). */
 export const EXCEPTIONS: readonly PairException[] = [
   {
-    id: "sake-holder",
-    pair: ["sake", "holder"],
-    kind: "rule",
-    cases: [{ order: "textOrder", anchors: [HOLDER] }],
-    reason: "a sake word before the holder is yours, after it the holder's: text order, not the holder over its clause",
-  },
-  {
-    id: "hinge-holder",
-    pair: ["hinge", "holder"],
-    kind: "rule",
-    cases: [{ order: "textOrder", anchors: [HOLDER] }],
-    reason: "*so that* after a holder is the holder's, alone it is yours: text order, not the holder over its clause",
-  },
-  {
     id: "hinge-occasion",
     pair: ["hinge", "occasion"],
     kind: "rule",

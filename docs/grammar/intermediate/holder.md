@@ -104,7 +104,7 @@ The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conve
 
 ### Someone else's plan, aim, or motive {#holder-plans-and-motives}
 
-Someone else's plan takes a holder too. [PLAN](/intention#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan.
+Someone else's plan takes a holder too. [PLAN](/intention#plan-predict) alone is yours; with a holder it is theirs, and the seam word says how you know what they plan.
 
 > `zazozon thebamazozon thagom vowurol.`
 >
@@ -126,9 +126,9 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 >
 > "Going by the official calendar, Azozon plans to speak."
 
-**Compare with:** someone else's aim takes a holder the same way. The [so that](/dependents#so-that) hinge alone is your aim; after a holder it is the holder's, so `zazozon thebamazozon vowurol thovam blarl zazozon vehohel.` is *I hear Azozon walks in order to sit*.
+**Compare with:** someone else's aim takes a holder the same way. The [so that](/dependents#so-that) hinge alone is your aim; with a holder in the clause it is the holder's, wherever the hinge sits, so `zazozon thebamazozon vowurol thovam blarl zazozon vehohel.` is *I hear Azozon walks in order to sit*.
 
-Someone else's motive goes the same way. A [motive](for-a-sake.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
+Someone else's motive goes the same way. A [motive](for-a-sake.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. With a holder, the motive is the holder's, before or after the seam word, and the seam word says how you know their reason.
 
 > `zazozon vezuyol thawethom theyomazozon.`
 >
@@ -190,7 +190,7 @@ With the interlocutors (you and the listener together) as holder, the view is on
 
 MEMORY says the claim rests on your memory, and the holder says the view is one you both share. You can't know the listener's memory, only claim the view is shared, and the listener can answer with a memory of their own. `ham thevumayan` adds *as far as I know*.
 
-The interlocutors work as holder on any host. With PLAN after it, the plan is one you claim you both have, and the seam word still says how you know:
+The interlocutors work as holder on any host. With PLAN, the plan is one you claim you both have, and the seam word still says how you know:
 
 > `zayan theyomayan thagom vowurol.`
 >
@@ -279,7 +279,7 @@ z-Ahelan | th-REPORTED-Ahelan | th-plan-itinerary | v-tell
 
 z-Azozon | th-CLUES-Alazun | th-LIVE | v-scream
 
-LIVE comes after the holder, so the watching is Alazun's, not yours.
+LIVE is in the holder's clause, so the watching is Alazun's, not yours.
 :::
 
 #### Ageben → English {#intermediate-ageben-to-english}
