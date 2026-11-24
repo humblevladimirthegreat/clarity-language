@@ -44,7 +44,12 @@ describe("phase-exec arguments", () => {
   });
 
   it("starts the process without AGENTS.md, keeping the rest of the environment", () => {
-    assert.deepEqual(claudeEnv({ PATH: "/bin", HOME: "/h" }), { PATH: "/bin", HOME: "/h", CLAUDE_CODE_DISABLE_CLAUDE_MDS: "1" });
+    assert.deepEqual(claudeEnv({ PATH: "/bin", HOME: "/h" }), {
+      PATH: "/bin",
+      HOME: "/h",
+      CLAUDE_CODE_DISABLE_CLAUDE_MDS: "1",
+      CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS: "0",
+    });
   });
 
   it("prints one result line, marked FAIL when the report is missing", () => {

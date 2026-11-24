@@ -11,7 +11,7 @@ How one session carries out a whole proposal, every phase, without the user star
 | **Worker** | `proposal-worker`, `checkpoint-writer`, `style-editor`, `Explore`, started by the executor | one unit, unchanged |
 | **Run reviewer** | a `run-reviewer` subagent (`.claude/agents/run-reviewer.md`) the runner starts once the run ends | the [optimization review](#optimization-review) |
 
-A process executor is a session of its own, so its workers sit one layer below it, and its prompt cache lasts an hour: a worker that runs past five minutes doesn't make it write its context again. Like its workers and a subagent executor, it starts without `AGENTS.md`: `claude -p --agent` ignores the agent file's `omitClaudeMd`, so the launcher sets `CLAUDE_CODE_DISABLE_CLAUDE_MDS=1` in its environment. An agent definition cannot limit which agent types it starts (a type list in its `tools` is ignored), so the agent file names the allowed types.
+A process executor is a session of its own, so its workers sit one layer below it, and its prompt cache lasts an hour: a worker that runs past five minutes doesn't make it write its context again. Like its workers and a subagent executor, it starts without `AGENTS.md`: `claude -p --agent` ignores the agent file's `omitClaudeMd`, so the launcher sets `CLAUDE_CODE_DISABLE_CLAUDE_MDS=1` in its environment. It also sets `CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0`: by default `claude -p` terminates 600 seconds after its last turn while background tasks still run, which kills a worker the executor is waiting on. An agent definition cannot limit which agent types it starts (a type list in its `tools` is ignored), so the agent file names the allowed types.
 
 The runner stays lean so that it can last the whole run:
 

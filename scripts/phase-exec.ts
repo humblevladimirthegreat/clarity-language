@@ -9,7 +9,8 @@
 //
 // The process runs `--agent phase-executor` with `--permission-mode auto`, `--strict-mcp-config` and a
 // session id picked here, with CLAUDE_CODE_DISABLE_CLAUDE_MDS=1 in its environment so it starts without
-// AGENTS.md (`claude -p --agent` ignores the agent file's `omitClaudeMd`). The executor writes its phase report to tmp/state/full-runs/<name>-phase-<N>.md;
+// AGENTS.md (`claude -p --agent` ignores the agent file's `omitClaudeMd`), and CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0
+// so `claude -p` waits for a running worker instead of terminating after 600s. The executor writes its phase report to tmp/state/full-runs/<name>-phase-<N>.md;
 // the process's own output goes to tmp/logs/phase-exec-<name>-phase-<N>.log. When the process starts, one
 // line is appended to tmp/state/full-runs.jsonl (proposal, phase, rest, session, start); at exit that line is
 // rewritten in place with end and exit added (a launcher that died keeps the start fields only). One
@@ -89,9 +90,12 @@ export function claudeArgs(args: PhaseExecArgs, session: string): string[] {
   ];
 }
 
-/** The executor process's environment: this one's, with AGENTS.md and CLAUDE.md files turned off. */
+/**
+ * The executor process's environment: this one's, with AGENTS.md and CLAUDE.md files turned off, and no ceiling
+ * on how long `claude -p` waits for background tasks (by default it terminates after 600s, killing a running worker).
+ */
 export function claudeEnv(env: NodeJS.ProcessEnv = process.env): NodeJS.ProcessEnv {
-  return { ...env, CLAUDE_CODE_DISABLE_CLAUDE_MDS: "1" };
+  return { ...env, CLAUDE_CODE_DISABLE_CLAUDE_MDS: "1", CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS: "0" };
 }
 
 /** Appends the start line of a run to the JSONL file. */

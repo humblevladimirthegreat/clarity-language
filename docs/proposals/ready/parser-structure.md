@@ -10,15 +10,15 @@
 - add no left-bound *not* and no bar marker
 - one slot table as data
 - build the tree in the grammar where it can
-- one shared grade for the stance endings, after `scope-model.md`
+- one shared grade for the stance endings, after `scope-model.md`; D1 settled 2026-11-24 by events: `scope-model.md` phase 2 ran without taking up the grade, so it lands in phase 4 here
 - split `enforce` by what each check needs
 
 **Related:** [parser-pipeline.md](../../meta/parser-pipeline.md); [read-ageben.md § one tree per sentence](../../meta/procedures/read-ageben.md#grammar-check); [joins.md § right-close](../../grammar/beginner/joins.md#right-close); [bars.md § bars](../../grammar/intermediate/bars.md#bars); [design-decisions.md](../../meta/design-decisions.md); [unassigned-reserved.md](../../meta/unassigned-reserved.md); [interpreter.md § classification table](../../meta/interpreter.md#classification-table); [`mark-context.ts`](../../../src/parse/mark-context.ts) (`CONTEXT_PASSES`), [`tokens.ts`](../../../src/parse/tokens.ts), [`grammar/`](../../../src/parse/grammar/), [`sentence-build.ts`](../../../src/parse/sentence-build.ts), [`enforce.ts`](../../../src/parse/enforce.ts), [`constructions.ts`](../../../src/parse/constructions.ts) (`REJECTIONS`), [`context-report.ts`](../../../src/parse/context-report.ts), [`lexicon-overlays.csv`](../../../data/lexicon-overlays.csv).
 
 **Depends on:** none. **Order:**
 - Phases 1 and 2 change no parse and may run at any time, including alongside `scope-model.md`.
-- Phase 3 changes the grammar, so it never runs while `scope-model.md` phase 1 runs, because that phase's gate needs an unchanged reading of every example.
-- Phase 4 runs after `scope-model.md` lands. If that proposal's phase 2 takes up the stance grade, drop phase 4's grade units (D1).
+- Phase 3 changes the grammar, so it never runs while a `scope-model.md` unit that changes readings runs (its phase 4 S4b and S10 to S12), because each of those units' `scope-report --diff` must list only the examples it names. `scope-model.md` phases 1 to 3 are done.
+- Phase 4 runs after `scope-model.md` lands, because both change the stance families' data.
 - Land U6's edits to joins.md and bars.md before `grammar-newcomer-rewrite.md` rewrites those pages.
 
 **Design authority:**
@@ -297,7 +297,4 @@ Each commit message starts with `parser-structure.md` and the unit ID, then `[sk
 
 ## Open decisions
 
-**D1. Where the stance grade lands.** `scope-model.md` phase 2 changes the same stance families' data and could take up the grade.
-- Options: phase 4 here, after `scope-model.md` lands; or a decision inside `scope-model.md` phase 2.
-- **Recommendation:** (medium) phase 4 here. The grade is about what the endings mean, not scope, and keeping it here keeps `scope-model.md`'s audit to scope.
-- Not blocking: phases 1 to 3 don't depend on it.
+None.
