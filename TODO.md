@@ -8,16 +8,15 @@ discord invite:
 https://discord.gg/CAMGw2Akhc
 
 # TODO
--pilot and proposal for full ageben style rewrite
 -contact form / about me
 -cheat sheet for reading a word?
 -should any other cheat sheets be added?
 -speed reading view becomes outline mode?
--syntax highlighting should cover more obscure scoping/carry rules
+-syntax highlighting should cover scoping/carry rules
 -cheat sheet distinguish cue vs exact match
--scoping/carry rules in central page/cheat-sheet
 -change llms.txt to download the reader instead of parser?
--refactor the reader to suggest ways to simplify the grammar and even reconceptualize how the grammar is organized (e.g. formalizing general scoping/carry rules and having a lesson in the grammar about it)
+-turn off automatic run reviewer
+-style editor should have standard prompt
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
