@@ -1,7 +1,7 @@
 - Task: rewrite the teaching prose of the page(s) in your brief so a newcomer can use each form
-  after one read. Model (pilot, until M1 names the reviewed pilot pages): the voice of
-  docs/grammar/claritish/could-be.md, section "Telling a guess apart" (lines 62-80) only; a lesson
-  has no glosses, so take its voice and contrasts, not its shape. On your page, list headings first (npm run -s outline -- FILE), read its read-by block,
+  after one read. Model: the approved pilot pages in docs/grammar/beginner/: clause.md (structure),
+  knowing.md (a stance distinction), how-you-feel.md (a long list). Read one H3 of the one nearest
+  your page's kind, not whole pages. On your page, list headings first (npm run -s outline -- FILE), read its read-by block,
   then read slices.
 - Rules: docs/meta/grammar-docs.md#newcomer and #agent-summaries; docs/meta/doc-style.md (checklist,
   tone, explain before you slogan); docs/meta/glosses.md for any new example. Open other
