@@ -36,6 +36,8 @@ describe("boundary table", () => {
     assert.equal(crosses("grounds", "binder", "link"), true);
     // A bound tag's reach runs on into the sentence a final stand-in points to (universals-domains.md#bound-tags).
     assert.equal(crosses("grounds", "boundTag", "resolve"), true);
+    // An aside's words see the tags as they are once the reach ends (spans.md#asides-th).
+    assert.equal(crosses("aside", "boundTag", "resolve"), false);
     // Carried frames: only the main clause starts or ends one, and no nested reading takes a link of its own.
     for (const kind of NESTED_KINDS) {
       for (const column of ["carryStart", "carryEnd", "carried"] as const) assert.equal(crosses(kind, column, "link"), false, `${kind} ${column}`);

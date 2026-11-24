@@ -35,6 +35,7 @@ import { isClauseAdverb, type ClassifyTables } from "./classify.js";
 import { clauseScopes, isBareEdge } from "./scope.js";
 import { carriedFrames } from "./carry.js";
 import { crosses } from "./boundaries.js";
+import { slotRow } from "./discourse-slots.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -787,14 +788,79 @@ function closeSentence(ctx: Ctx): void {
   const carries = ctx.lastWord?.reading === "standIn" && crosses("grounds", "boundTag", "resolve");
   ctx.lastWord = undefined;
   if (!ctx.reach || carries) return;
-  for (const [vowel, previous] of ctx.reach.shadowed) {
-    if (previous) ctx.tags.set(vowel, previous);
+  endReach(ctx.reach, ctx.tags, ctx.expired);
+  ctx.reach = undefined;
+}
+
+/** End a bound reach on these tags: every tag assigned inside it goes back to its earlier holder; one with none expires. */
+function endReach(reach: BoundReach, tags: Map<TagVowel, TagBinding>, expired: Set<TagVowel>): void {
+  for (const [vowel, previous] of reach.shadowed) {
+    if (previous) tags.set(vowel, previous);
     else {
-      ctx.tags.delete(vowel);
-      ctx.expired.add(vowel);
+      tags.delete(vowel);
+      expired.add(vowel);
     }
   }
-  ctx.reach = undefined;
+}
+
+// ── Asides (spans.md#asides-th) ──────────────────────────────────────────────
+
+/**
+ * What an aside's words take from outside: the backward-reference state where the aside sits, so a pronoun, role
+ * pointer, tag or topic pronoun in it points back to the outer sentence and the sentences before it, as it would outside
+ * the aside (spans.md#asides-th). Nothing else comes in: no landmark, ask, carried frame or conversation state. The
+ * reader parses the aside's words on their own, as it does a cite's, and their resolve starts from a copy of this, so
+ * nothing they bind reaches back out.
+ */
+type AsideContext = Pick<Ctx, "antecedents" | "anchors" | "turns" | "referents" | "tags" | "expired" | "reach" | "topic">;
+
+/** Each aside word's context, noted as the walk reaches it. */
+const asideContexts = new WeakMap<LexWord, AsideContext>();
+
+/** The context the resolve being run starts from: set by {@link withAsideContext} while the reader parses an aside. */
+let incoming: AsideContext | undefined;
+
+function isAside(word: LexWord): boolean {
+  return word.family.kind === "writingSpan" && word.family.bracket === "(";
+}
+
+/**
+ * Note an aside's context. A bound reach passes only where the `aside` row's `boundTag` cell says so
+ * (interpreter.md#boundaries); where it blocks, the aside sees the tags as they are once the reach ends. The topic passes
+ * where the `topic` slot's `aside` cell says so (interpreter.md#discourse-slots).
+ */
+function noteAside(ctx: Ctx, word: LexWord): void {
+  const tags = new Map(ctx.tags);
+  const expired = new Set(ctx.expired);
+  const reachPasses = crosses("aside", "boundTag", "resolve");
+  if (ctx.reach && !reachPasses) endReach(ctx.reach, tags, expired);
+  const reach = ctx.reach && reachPasses ? { shadowed: new Map(ctx.reach.shadowed), bound: new Set(ctx.reach.bound) } : undefined;
+  const topicCell = slotRow("topic").aside;
+  const topic = (topicCell.today ?? topicCell.verdict) === "passes" ? ctx.topic : undefined;
+  asideContexts.set(word, {
+    antecedents: [...ctx.antecedents],
+    anchors: ctx.anchors.map((anchor) => ({ predicate: anchor.predicate, fillers: { ...anchor.fillers } })),
+    turns: [...ctx.turns],
+    referents: new Map(ctx.referents),
+    tags,
+    expired,
+    reach,
+    topic,
+  });
+}
+
+/**
+ * Run `parse` (the reader parsing an aside's words, spans.md#asides-th) with its resolve starting from the context noted
+ * where `aside` sits in the outer text. With none noted, the words start with nothing, as a cite's do.
+ */
+export function withAsideContext<T>(aside: LexWord, parse: () => T): T {
+  const before = incoming;
+  incoming = asideContexts.get(aside);
+  try {
+    return parse();
+  } finally {
+    incoming = before;
+  }
 }
 
 /** Whether a slot's filler is that referent: one of its words, or the whole joined group. */
@@ -987,6 +1053,7 @@ function considerWord(ctx: Ctx, word: LexWord, slot?: WordSlot): void {
 function resolveVisitor(ctx: Ctx): Visitor {
   return {
     word(word, slot) {
+      if (isAside(word)) noteAside(ctx, word);
       if ((word.at ?? -1) >= (ctx.lastWord?.at ?? -1)) ctx.lastWord = word;
       if (slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
       if (slot === "orodo") ctx.standIn = word;
@@ -1069,26 +1136,30 @@ function resolveVisitor(ctx: Ctx): Visitor {
 }
 
 function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = [], speakers?: readonly string[]): ResolveInfo {
+  // An aside's words start from what passes in where the aside sits (spans.md#asides-th); a text or a cite from nothing.
+  const seed = incoming;
   const ctx: Ctx = {
-    antecedents: [],
+    antecedents: [...(seed?.antecedents ?? [])],
     landmarks: [],
     hookLandmarks: new Set(),
     rangeBlanks: new Map(),
     named: new Set(),
-    tags: new Map(),
+    tags: new Map(seed?.tags),
     groupTags: new Map(),
-    expired: new Set(),
+    ...(seed?.reach ? { reach: { shadowed: new Map(seed.reach.shadowed), bound: new Set(seed.reach.bound) } } : {}),
+    expired: new Set(seed?.expired),
+    ...(seed?.topic ? { topic: seed.topic } : {}),
     greeted: new Set(),
     closing: false,
     goodbye: false,
     goodbyes: new Set(),
     anaphors: [],
-    anchors: [],
+    anchors: (seed?.anchors ?? []).map((anchor) => ({ predicate: anchor.predicate, fillers: { ...anchor.fillers } })),
     clauses: [],
-    turns: [],
+    turns: [...(seed?.turns ?? [])],
     pendingConsequence: false,
     consequenceHere: false,
-    referents: new Map(),
+    referents: new Map(seed?.referents),
     asks: [],
     shared: [],
     gaps: [],

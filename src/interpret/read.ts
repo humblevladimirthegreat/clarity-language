@@ -13,7 +13,7 @@ import { crosses, type NestedKind } from "../parse/boundaries.js";
 import { perSpeaker, type SlotId } from "../parse/discourse-slots.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
-import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
+import { isGenericPronoun, isTopicPronoun, withAsideContext } from "../parse/resolve.js";
 import type {
   BodyCarry,
   CarryKind,
@@ -53,11 +53,24 @@ function pronoun(word: LexWord, here: Here): Term {
   const bind = here.ctx.anaphors.get(word);
   if (bind) here.reading.links.push(link("anaphor", `anaphor:${bind.kind}`, [word], { bind }));
   const at = bind?.antecedent;
-  const antecedent = at ? (here.ctx.terms.get(at) ?? here.ctx.lists.get(at) ?? thing(at)) : undefined;
+  const outer = here.ctx.options.outerTerm;
+  const antecedent = at ? (here.ctx.terms.get(at) ?? here.ctx.lists.get(at) ?? (outer ? outerAntecedent(outer(at), at) : thing(at))) : undefined;
   const sort = isTopicPronoun(word) ? "topic" : isGenericPronoun(word) ? "generic" : undefined;
   const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}) };
   here.ctx.terms.set(word, term);
   return term;
+}
+
+/**
+ * The antecedent an aside's pronoun holds for a word outside the aside (spans.md#asides-th): an outer pronoun keeps its
+ * chain, without its details and frames, and any other outer word is a plain term of that word. So the aside never holds
+ * the term that hosts it.
+ */
+function outerAntecedent(term: Term | undefined, at: LexWord): Term {
+  if (term?.kind !== "pronoun") return thing(at);
+  const { details: _details, frames: _frames, antecedent, ...bare } = term;
+  const next = term.bind?.antecedent;
+  return { ...bare, ...(antecedent && next ? { antecedent: outerAntecedent(antecedent, next) } : {}) };
 }
 
 /** A span's Ageben words, as the morph gloss strips them (spans.md#close). */
@@ -77,10 +90,15 @@ function quoteReadings(word: LexWord, here: Here): Reading[] {
     return [];
   }
   try {
-    const sub = parseWithTables(text, tables);
+    // A cite's words start with nothing from outside; an aside's back references point out of it (spans.md#asides-th),
+    // to the terms already read there.
+    const aside = family.bracket === "(";
+    const sub = aside ? withAsideContext(word, () => parseWithTables(text, tables)) : parseWithTables(text, tables);
+    const { outerTerm: _, ...options } = here.ctx.options;
+    const outerTerm = (at: LexWord): Term | undefined => here.ctx.terms.get(at) ?? here.ctx.options.outerTerm?.(at);
     // An aside's readings sit at `/a<at>`, a cite's at `/q<at>`: the step names the boundary (nestedKinds).
-    const step = family.bracket === "(" ? "a" : "q";
-    return readParse(sub, { ...here.ctx.options, text: `${here.reading.id}/${step}${word.at ?? 0}` });
+    const step = aside ? "a" : "q";
+    return readParse(sub, { ...options, ...(aside ? { outerTerm } : {}), text: `${here.reading.id}/${step}${word.at ?? 0}` });
   } catch {
     unread(here, "quoteParse", "unit:writingSpan", word);
     return [];

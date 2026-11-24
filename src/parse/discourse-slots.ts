@@ -63,8 +63,8 @@ const LINKERS = "sentence-linkers.md#sentence-linkers";
 const ASIDES = "spans.md#asides-th";
 const ASIDE_TOPIC = "quote-contents.md#topic-quotes";
 
-/** Stated as passing into an aside; the aside's words are parsed on their own, so nothing reaches them yet. */
-const asidePassesNotToday = (anchor: string): AsideCell => ({ verdict: "passes", anchor, today: "blocks" });
+/** Stated as passing into an aside: a back reference in it reads the value where the aside sits. */
+const asidePasses = (anchor: string): AsideCell => ({ verdict: "passes", anchor });
 const asideBlocks: AsideCell = { verdict: "blocks", anchor: ASIDES };
 
 const ends = (anchor: string): EndCell => ({ verdict: "ends", anchor });
@@ -107,7 +107,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     endedBy: { newValue: ends(TOPIC), statementWord: keeps(TOPIC), byTheWay: ends(TOPIC), goodbye: ends(TOPIC) },
     kept: { verdict: "shared", anchor: TOPIC },
     quote: { verdict: "blocks", anchor: TOPIC_QUOTE },
-    aside: asidePassesNotToday(ASIDE_TOPIC),
+    aside: asidePasses(ASIDE_TOPIC),
     anchors: [TOPIC, "topic.md#topic-pronoun"],
   },
   {
@@ -118,7 +118,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     endedBy: { newValue: ends(BACK), statementWord: unstatedEnd("keeps"), byTheWay: unstatedEnd("keeps"), goodbye: unstatedEnd("keeps") },
     kept: unstatedKept("shared"),
     quote: unstatedQuote("passes"),
-    aside: asidePassesNotToday(ASIDES),
+    aside: asidePasses(ASIDES),
     anchors: [BACK],
   },
   {
@@ -134,7 +134,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     },
     kept: unstatedKept("shared"),
     quote: unstatedQuote("passes"),
-    aside: asidePassesNotToday(ASIDES),
+    aside: asidePasses(ASIDES),
     anchors: [RESUME],
   },
   {

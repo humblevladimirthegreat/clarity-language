@@ -284,7 +284,7 @@ The end events:
 | `byTheWay` | *by the way* (`xavedam`) |
 | `goodbye` | a goodbye |
 
-The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A stated `aside` cell the code does not follow yet says so (`today: blocks`): an aside's words are parsed on their own, so no outer value reaches them yet. Nothing inside an aside sets a slot.
+The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A passing `aside` cell reads the value where the aside sits: the topic through the aside's resolve, which starts from the outer context, and a point-back through the sentence's own `to` pass, which reaches the links inside its asides. Nothing inside an aside sets a slot.
 
 **`carriedFrame`**, the carried frame: a channel, holder or NOTIONAL, a dated channel with its offset (`evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now`). Set by a channel, NOTIONAL or holder on a statement's main clause; read by a later statement with no such frame of its own, as one `carriedFrame` link (`carry:channel`, `carry:holder`, `carry:notional`) per inherited frame, `to` the reading that set it, `frame` that reading's frame; a dated channel's link also holds its offset words. The record is `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`). Settled 2026-11-18: a holder on MAY carries and the MAY does not (`holder.md#naming-a-holder`); only a channel on the main clause starts or ends a frame, never one in a dependent or on one clause-join member (`evidentiality.md#carry-forward`, the boundary table's `carryStart` and `carryEnd`); the grounds after `blarl` sit in the body that takes the frame (decision 16, no page edit); a carried frame covers what you claim, never your own stance (decision 15, `evidentiality.md#carry-forward`): a statement whose clause has WANT, PLAN or DECISION neither takes nor ends it, and on a statement with a speaker attitude (`slot:th`) or a feeling word on `/th/` (a sake word with a moved horizon, `how-you-feel.md#feeling-word`) the claim takes it and the link's `coveredBy` lists those frames, which sit over it. The order is a link field, not an `order` entry, because the carried frame is never in the later reading's `frames`.
 
@@ -308,7 +308,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | ends, `topic.md#topic` |
 | `kept` | shared, `topic.md#topic` |
 | `quote` | blocks, `topic.md#topic-dependents` |
-| `aside` | passes (today: blocks), `quote-contents.md#topic-quotes` |
+| `aside` | passes, `quote-contents.md#topic-quotes` |
 
 **`standInBack`**, the latest content per act vowel (`stand-in-vowels.md#stand-in-back`). Set by a sentence, by its act vowel (none states), or a dependent a stand-in of that vowel fills; read by a stand-in on `-rth` (`lexReading:standInBack`, the [links](#links) row).
 
@@ -320,7 +320,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: passes) |
-| `aside` | passes (today: blocks), `spans.md#asides-th` |
+| `aside` | passes, `spans.md#asides-th` |
 
 **`hookResume`**, the latest extra-noun hook per vowel (`in-clause-hooks.md#hook-resume`). Set by an extra-noun hook with a landmark, per vowels for stacked vowels; read by an extra-noun hook on `-r` (`hookJob:resume`, the [links](#links) row).
 
@@ -332,7 +332,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: passes) |
-| `aside` | passes (today: blocks), `spans.md#asides-th` |
+| `aside` | passes, `spans.md#asides-th` |
 
 **`supposition`**, the NOTIONAL supposition a question points to (`notional.md#notional-as-if-framing`). Set by a stated reading with a NOTIONAL frame; read by a question with a NOTIONAL frame (`link:supposition`, the [links](#links) row).
 
@@ -686,7 +686,7 @@ The columns:
 | `boundTag` | blocks, `spans.md#asides-th` |
 | `tone` | blocks, `spans.md#asides-th` |
 
-An aside is self-contained: it inherits nothing from the outer sentence, and nothing in it reaches out. Its readings sit at `/a<at>` under the reading that holds it (a cite's at `/q<at>`). Only backward references pass in (the `aside` column of the [discourse slots](#discourse-slots), and pronouns).
+An aside is self-contained: it inherits nothing from the outer sentence, and nothing in it reaches out. Its readings sit at `/a<at>` under the reading that holds it (a cite's at `/q<at>`). Only backward references pass in (the `aside` column of the [discourse slots](#discourse-slots), and pronouns). The resolve stage notes, at each aside word, the state a back reference reads: earlier antecedents, role-pointer anchors and turns, tags, and the topic. The reader parses the aside's words on their own, as it does a cite's, and their resolve starts from a copy of that state (`withAsideContext` in `resolve.ts`), so a resume, role pointer, tag or topic pronoun in the aside binds to a word outside it, and nothing it binds reaches back out. Its antecedent term is the outer pronoun's chain without details, or a plain term of the outer word, so the aside never holds the term that hosts it. A bound reach does not pass (the `boundTag` cell): the aside sees the tags as they are once the reach ends. A hooked join's point-back (`hooked-joins.md#hooked-joins-point-back`) does not pass either.
 
 ## Reader rules
 

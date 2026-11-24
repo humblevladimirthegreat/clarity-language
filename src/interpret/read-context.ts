@@ -23,6 +23,11 @@ export type ReadOptions = {
   tables?: ClassifyTables;
   /** The text id that starts every {@link ReadingId}. */
   text?: string;
+  /**
+   * In an aside: the term already read outside it from a word, for a pronoun in the aside that points back out
+   * (spans.md#asides-th). The reader sets it on an aside's words only.
+   */
+  outerTerm?: (word: LexWord) => Term | undefined;
 };
 
 // ── Keys ────────────────────────────────────────────────────────────────────

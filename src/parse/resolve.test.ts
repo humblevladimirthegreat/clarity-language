@@ -6,6 +6,9 @@ import { describe, it } from "node:test";
 
 import { createClassifyTables } from "./classify.js";
 import { parse } from "./index.js";
+import { visitResult } from "./ast-walk.js";
+import { withAsideContext } from "./resolve.js";
+import type { AnaphorBind, LexWord } from "./types.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
@@ -633,5 +636,37 @@ describe("resolve — fill answers (questions.md#fill-ask)", () => {
     assert.deepEqual(answersOf("yel dorelx gragel oer grazal zazozon varal. yal ragel."), ["citation:oer"]);
     assert.deepEqual(answersOf("yel dorelx gragel oer grazal zazozon varal. yal orelx gragel."), ["citation:oer"]);
     assert.deepEqual(answersOf("yel zragel oer zrazal vezuvel. yal ragel."), ["citation:oer"]);
+  });
+});
+
+describe("resolve — asides (spans.md#asides-th)", () => {
+  /** The outer text's anaphors, and the aside's own, read with the context noted where the aside sits. */
+  function asideOf(text: string) {
+    const outer = parseText(text);
+    let aside: LexWord | undefined;
+    visitResult(outer, { word: (word) => void (word.family.kind === "writingSpan" && word.family.bracket === "(" && (aside ??= word)) });
+    assert.ok(aside && aside.family.kind === "writingSpan");
+    const payload = aside.family.payload;
+    const inner = withAsideContext(aside, () => parseText(payload));
+    const show = (binds: AnaphorBind[]) => binds.map((bind) => `${bind.pronoun.raw}→${bind.antecedent?.raw ?? "-"}`);
+    return { outer: show(outer.resolve!.anaphors), inner: show(inner.resolve!.anaphors) };
+  }
+
+  it("points a resume in an aside back to the outer sentence and the sentences before it", () => {
+    assert.deepEqual(asideOf("zazozon g(zazozor vowurol) vozuyel.").inner, ["zazozor→zazozon"]);
+    assert.deepEqual(asideOf("zazozon vowurol. zalazun vezuvel th(zazozor vehohel).").inner, ["zazozor→zazozon"]);
+  });
+
+  it("lets the topic and a tag into an aside (quote-contents.md#topic-quotes)", () => {
+    assert.deepEqual(asideOf("x@<Sam> zalen vowurol th(zalen vezuvel).").inner, ["zalen→x@<Sam>"]);
+    assert.deepEqual(asideOf("zodogal zwal vowurol th(zwar vezuvel).").inner, ["zwar→zodogal"]);
+  });
+
+  it("keeps a bound reach out of an aside (the aside row's boundTag cell blocks)", () => {
+    assert.throws(() => asideOf("zual gogozel zwal vezuvel th(zwar guzemel)."), /expires at the end of that sentence/);
+  });
+
+  it("lets nothing out of an aside", () => {
+    assert.deepEqual(asideOf("zazozon vowurol th(zalazun vezuvel). zalazur vehohel.").outer, ["zalazur→-"]);
   });
 });

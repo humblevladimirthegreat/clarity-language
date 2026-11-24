@@ -44,13 +44,13 @@ describe("discourse slot table", () => {
     assert.equal(slotOfLink("standIn lexReading:standIn"), undefined);
   });
 
-  it("lets only point-backs and the topic into an aside, none of them yet", () => {
+  it("lets only point-backs and the topic into an aside", () => {
     const aside = DISCOURSE_SLOTS.map((row) => `${row.id}: ${slotCellLabel(row.aside)}`);
     assert.deepEqual(aside, [
       "carriedFrame: blocks",
-      "topic: passes (today: blocks)",
-      "standInBack: passes (today: blocks)",
-      "hookResume: passes (today: blocks)",
+      "topic: passes",
+      "standInBack: passes",
+      "hookResume: passes",
       "supposition: blocks",
       "sentenceBefore: blocks",
       "answer: blocks",
