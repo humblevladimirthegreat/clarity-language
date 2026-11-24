@@ -17,6 +17,7 @@
     "lint:anchors": "tsx scripts/lint-anchors.ts",
     "lint:source-size": "tsx scripts/lint-source-size.ts",
     "lint:prose": "tsx scripts/lint-prose-style.ts",
+    "lint:agent-summaries": "tsx scripts/lint-agent-summaries.ts",
     "free-english-review": "tsx scripts/free-english-review.ts",
     "llm-eval": "tsx scripts/llm-eval.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",

@@ -154,6 +154,7 @@ const WHOLE_SITE = [
   "scripts/lib/link-rewrite.ts",
   "scripts/lib/llms-txt.ts",
   "scripts/lib/page-readers.ts",
+  "scripts/lint-agent-summaries.ts",
   "scripts/lint-ageben-docs.ts",
   "scripts/lint-anchors.ts",
   "scripts/lint-cheat-sheet-print.ts",

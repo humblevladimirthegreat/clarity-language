@@ -90,6 +90,8 @@ Warnings are ratcheted. `src/lint/prose-style-baseline.json` holds each page's c
 
 To add a phrase or a term, edit the list in `src/lint/prose-style.ts` and add a case to its test.
 
+The build also runs `scripts/lint-agent-summaries.ts` (rules in `src/lint/agent-summaries.ts`) over every page under `docs/grammar/`, the HTML comments included. It fails on an [agent summary](grammar-docs.md#agent-summaries) that is not one `<!-- Agent summary: … -->` line, is not directly under a heading (or its `<a id>` line), is a second one under its heading, or sits under Practice, See also, Gap or Examples. On a stage page, a recipe page or a Claritish lesson that has any summary, it fails on a teaching heading with none: a stage H3, a recipe H3 or an H2 with no H3 under it, a lesson H2. `COVERAGE_REQUIRED` there lists the page kinds held to coverage before they have a summary. Backticked forms in a summary get the same Ageben checks as the page's other code spans.
+
 Two commands support a style review. Neither runs in the build.
 
 | Command | Use it to |

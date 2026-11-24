@@ -106,6 +106,7 @@ const jobs = [
   run("lint anchors", bin("tsx"), ["scripts/lint-anchors.ts"]),
   run("lint source size", bin("tsx"), ["scripts/lint-source-size.ts"]),
   run("lint prose style", bin("tsx"), ["scripts/lint-prose-style.ts"]),
+  run("lint agent summaries", bin("tsx"), ["scripts/lint-agent-summaries.ts"]),
   run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"]),
   run("lint claritish editor", bin("tsx"), ["scripts/lint-claritish-editor.ts"]),
   run("lint json format", bin("tsx"), ["scripts/format-json.ts", "--check"]),

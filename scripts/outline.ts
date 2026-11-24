@@ -15,20 +15,25 @@
  *          --min-tokens N  hide declarations and runs smaller than N tokens
  *          --no-collapse   print every short entry on its own line
  *          --top N         directory listing length (default 25)
+ *          --summaries     Markdown: each heading's agent summary, indented under it
+ *                          (docs/meta/grammar-docs.md#agent-summaries)
  *
  * Run: npm run outline -- docs/grammar/beginner/clause.md
  *      npm run outline -- --depth 2 AGENTS.md docs/meta/doc-style.md
+ *      npm run outline -- docs/grammar/beginner/clause.md --summaries
  *      npm run outline -- src/interpret/read.ts
  *      npm run outline -- --min-tokens 200 src/interpret/translate.ts
  *      npm run outline -- src/parse
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import ts from "typescript";
 
 import { BANNER } from "./lib/deps.ts";
+import { headingSummaries } from "../src/lint/agent-summaries.ts";
 
-type Options = { depth: number; minTokens: number; collapse: boolean; top: number };
+type Options = { depth: number; minTokens: number; collapse: boolean; top: number; summaries?: boolean };
 
 type Section = { level: number; title: string; start: number; end: number; tokens: number };
 
@@ -213,11 +218,12 @@ function main(): void {
     else if (args[i] === "--min-tokens") opts.minTokens = Number(args[++i]);
     else if (args[i] === "--top") opts.top = Number(args[++i]);
     else if (args[i] === "--no-collapse") opts.collapse = false;
+    else if (args[i] === "--summaries") opts.summaries = true;
     else files.push(args[i]!);
   }
   const counts = [opts.depth, opts.minTokens, opts.top];
   if (files.length === 0 || counts.some((n) => !Number.isInteger(n) || n < 0) || opts.depth < 1) {
-    console.error("Usage: npm run outline -- [--depth N] [--min-tokens N] [--no-collapse] [--top N] FILE|DIR …");
+    console.error("Usage: npm run outline -- [--depth N] [--min-tokens N] [--no-collapse] [--top N] [--summaries] FILE|DIR …");
     process.exit(1);
   }
   for (const file of files) {
@@ -230,18 +236,29 @@ function main(): void {
       outlineCode(file, text, opts);
       continue;
     }
-    const total = text.split("\n").length;
-    console.log(`${file}: ${total} lines, ~${Math.round(text.length / 4)} tokens`);
-    const sections = outline(text, opts.depth);
-    if (sections.length > 0 && sections[0]!.start > 1) {
-      const head = text.split("\n").slice(0, sections[0]!.start - 1).join("\n");
-      console.log(`  1-${sections[0]!.start - 1}  ~${Math.round(head.length / 4)}t  (before first heading)`);
-    }
-    for (const s of sections) {
-      const indent = "  ".repeat(s.level);
-      console.log(`${indent}${s.start}-${s.end}  ~${s.tokens}t  ${"#".repeat(s.level)} ${s.title}`);
-    }
+    for (const line of outlineMarkdown(file, text, opts)) console.log(line);
   }
 }
 
-main();
+/** The outline of a Markdown file, one line per heading; with `summaries`, each heading's agent summary under it. */
+export function outlineMarkdown(file: string, text: string, opts: Pick<Options, "depth" | "summaries">): string[] {
+  const out: string[] = [];
+  const total = text.split("\n").length;
+  out.push(`${file}: ${total} lines, ~${Math.round(text.length / 4)} tokens`);
+  const sections = outline(text, opts.depth);
+  if (sections.length > 0 && sections[0]!.start > 1) {
+    const head = text.split("\n").slice(0, sections[0]!.start - 1).join("\n");
+    out.push(`  1-${sections[0]!.start - 1}  ~${Math.round(head.length / 4)}t  (before first heading)`);
+  }
+  const summaryAt = new Map<number, string>();
+  if (opts.summaries) for (const a of headingSummaries(text)) if (a.text) summaryAt.set(a.heading.line + 1, a.text);
+  for (const s of sections) {
+    const indent = "  ".repeat(s.level);
+    out.push(`${indent}${s.start}-${s.end}  ~${s.tokens}t  ${"#".repeat(s.level)} ${s.title}`);
+    const summary = summaryAt.get(s.start);
+    if (summary) out.push(`${indent}    ${summary}`);
+  }
+  return out;
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

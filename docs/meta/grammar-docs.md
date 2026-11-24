@@ -270,7 +270,7 @@ The explanation is written for people. An agent that needs only a section's rule
   - **None:** cheat sheets, level reviews, and headings for Practice, See also, Gap and Examples.
 - **What it says.** The section's rules, tersely: forms, defaults, placement, when to leave a form out, the near misses. It states no rule the section does not teach, so it never becomes a second source.
 - **How it is written.** It starts `Agent summary:`. Every form is in backticks. Notes style is fine here, and so are `≈` and `→`: the [tone](doc-style.md#tone) guidelines are for prose a person reads.
-- **Keep it in step.** When the section's teaching changes, rewrite its summary in the same edit.
+- **Keep it in step.** When the section's teaching changes, rewrite its summary in the same edit. The build checks the format, the placement and the coverage ([what the build checks](doc-style.md#what-the-build-checks)).
 
 ## Beginner stage shape
 <a id="beginner-stage-shape"></a>
@@ -656,6 +656,7 @@ Tools that read or rewrite every page alike, with no page contract:
 - `scripts/lib/llms-txt.ts`
 - `scripts/lib/page-readers.ts`
 - `scripts/lint-ageben-docs.ts`
+- `scripts/lint-agent-summaries.ts`
 - `scripts/lint-anchors.ts`
 - `scripts/lint-cheat-sheet-print.ts`
 - `scripts/lint-forward-links.ts`
