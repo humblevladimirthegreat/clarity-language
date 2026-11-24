@@ -5,6 +5,8 @@ band: intermediate
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Sections named by data:
+- #letter-names: 18 sound-name rows
 Inbound links: npm run page-refs -- letter-names.md
 -->
 

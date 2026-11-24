@@ -7,6 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #name-instance--ln: 1 construction home, 1 rejection, 2 interpreter rows, 2 interpreter classes
+- #intermediate-practice: 18 sound-name rows
 Inbound links: npm run page-refs -- proper-names.md
 -->
 

@@ -4,9 +4,10 @@ band: beginner
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #counts: 3 construction homes, 1 interpreter row, 1 interpreter class
+- #counts: 3 construction homes, 10 sound-name rows, 1 interpreter row, 1 interpreter class
 - #ordinals: 1 construction home
 - #more-than-one: 1 construction home
+- #beginner-practice: 10 sound-name rows
 Inbound links: npm run page-refs -- numbers.md
 -->
 
