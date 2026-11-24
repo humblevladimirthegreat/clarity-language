@@ -31,6 +31,11 @@ describe("boundary table", () => {
       assert.equal(crosses(kind, "outerFrames", "copy"), false);
       assert.equal(crosses(kind, "tone", "copy"), false);
     }
+    // A binder reaches the `blarl` grounds by link (joins.md#everything-ua); a later clause-join member, not yet.
+    assert.equal(crosses("member", "binder", "copy"), false);
+    assert.equal(crosses("grounds", "binder", "link"), true);
+    // A bound tag's reach runs on into the sentence a final stand-in points to (universals-domains.md#bound-tags).
+    assert.equal(crosses("grounds", "boundTag", "resolve"), true);
     // Carried frames: only the main clause starts or ends one, and no nested reading takes a link of its own.
     for (const kind of NESTED_KINDS) {
       for (const column of ["carryStart", "carryEnd", "carried"] as const) assert.equal(crosses(kind, column, "link"), false, `${kind} ${column}`);
@@ -60,7 +65,6 @@ describe("boundary table", () => {
       "grounds carryStart: unstated (today: passes)",
       "grounds carryEnd: unstated (today: passes)",
       "grounds carried: unstated (today: passes)",
-      "grounds binder: passes (today: blocks)",
       "grounds tone: unstated (today: blocks)",
       "island carried: unstated (today: passes)",
       "quote outerFrames: unstated (today: blocks)",

@@ -200,7 +200,13 @@ Put a kind after it for *every* member of that kind: `zual godozel` is *every do
 >
 > "There is a cat that every dog sees." (one cat)
 
-Who did what never changes: in both, the dogs see and the cat is seen. What changes is whether one cat serves for every dog. With just one such phrase, the order changes nothing. The reach also runs on into the sentence a [stand-in](/dependents#dependent-clauses) in it points to.
+Who did what never changes: in both, the dogs see and the cat is seen. What changes is whether one cat serves for every dog. With just one such phrase, the order changes nothing. The reach also runs on into the sentence a [stand-in](/dependents#dependent-clauses) in it points to. Here `blarl` points to the next sentence, so `zogozer` there is each cat in turn:
+
+> `zual gogozel vezuvel thahum blarl. zogozer guzemel.`
+>
+> [z-everything | g-cat] | v-sleep | [th-because | bl-that-clause] . z-←cat | g-sleepy
+>
+> "Every cat sleeps because it is sleepy." (each cat, because that cat is sleepy)
 
 Whether a phrase brings in a new member decides whether it takes part in this order:
 

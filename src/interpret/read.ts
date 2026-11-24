@@ -963,6 +963,22 @@ function stackedHinge(reading: Reading): void {
   for (const details of detailLists(reading)) stackedNounHinge(details);
 }
 
+/**
+ * A binder reaches the sentence a stand-in in its reach points to (joins.md#everything-ua): each binder before a `blarl`
+ * takes a `grounds` link of its own to that next sentence, where there is one, by the `grounds` row's `binder` cell
+ * (interpreter.md#boundaries).
+ */
+function groundsBinders(reading: Reading): void {
+  if (!crosses("grounds", "binder", "link")) return;
+  const grounds = new Map(reading.links.filter((l) => l.kind === "grounds" && l.to).map((l) => [l.words[0], l]));
+  for (const [word, l] of grounds) {
+    for (const binder of reading.frames) {
+      if (binder.family !== "binder" || (binder.words[0]?.at ?? Infinity) >= (word?.at ?? -Infinity)) continue;
+      reading.links.push({ ...l, frame: binder });
+    }
+  }
+}
+
 /** The `/ɡ/` stack among one term's details: a hinge detail with no `/b/`, right before one that has one (no `blarl` on `/ɡ/`). */
 function stackedNounHinge(details: Detail[]): void {
   for (const lead of details) {
@@ -1018,6 +1034,7 @@ function readClause(clause: Clause, utterance: number, body: number, id: Reading
   for (const coord of titledPhrases(clause.units)) ctx.titled.add(coord);
   readUnits(clause.units, here, clause);
   stackedHinge(reading);
+  groundsBinders(reading);
   if (clause.dependent && !ctx.dependents.has(clause.dependent.clause)) {
     // A dependent no stand-in names in a role: an `/h/` stand-in or `Odo` slot; kept as a detail with its reading.
     const dependent = readDependent(clause, here)!;

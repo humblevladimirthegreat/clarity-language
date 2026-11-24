@@ -258,7 +258,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | What carries past a period | | `sentence-linkers.md#past-a-period` |
 | **Added:** discourse hook to prior talk (`-r`: `to` an earlier stretch; `el` / `em` / `ul` / `um`: `to` the sentence before, the claim it replaces or makes an exception to) | `hookJob:discourse`, `edge:hook` | `hooks.md#discourse-hooks`, `discourse-hooks.md#discourse` |
 | **Added:** in-clause hook pointing back to a landmark: `resumed` the latest extra-noun hook detail in an earlier sentence (for stacked vowels, the latest with the same vowels), its `hosted` the landmark, and `to` its sentence; neither when there is none | `hookJob:resume` | `in-clause-hooks.md#hook-resume` |
-| **Added:** frame content in the next sentence (`blarl`): a hinge's condition, a channel's grounds | `slot:grounds` | `causation.md#if`, `dependents.md#hinges`, `evidentiality.md#evidence-clause` |
+| **Added:** frame content in the next sentence (`blarl`): a hinge's condition, a channel's grounds; each binder before the `blarl` takes a link of its own, `frame` the binder (`joins.md#everything-ua`) | `slot:grounds` | `causation.md#if`, `dependents.md#hinges`, `evidentiality.md#evidence-clause` |
 | **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences, `to` the reading that set it; what sets, reads and ends it is the [discourse slots](#discourse-slots) row `carriedFrame` | `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`); `carry:channel`, `carry:holder`, `carry:notional` | `evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now` |
 | **Added:** a NOTIONAL question's supposition: `readQuestion` links the question's NOTIONAL frame `to` the latest stated NOTIONAL reading in the log, `frame` that reading's NOTIONAL frame; no link when the log has none. The solver asks inside that reading's view, and `ask` matches the question only against the reading it points to and the readings that carry its frame | `link:supposition` | `notional.md#notional-as-if-framing` |
 | **Added:** a polar word replying to the yes / no question before it | `edge:polar` | `questions.md#polar-particle` |
@@ -563,7 +563,7 @@ No sentence states an order against another frame.
 
 ## Boundaries
 
-A nested reading sits behind a boundary: what of the reading around it passes in is the `BOUNDARIES` table in `src/parse/boundaries.ts`. The code consults it where it decides what crosses: `clauseScopes` for the frames a nested clause's scope record holds, `carriedFrames` for the clauses that start or end a carried frame, and the reader's `carriedLinks` for the readings a carried frame links to. Each cell is **passes**, **blocks**, or **unstated**, with the section that states it. An unstated cell keeps what the code does today, which it names, until the grammar states it. The scope report counts the examples that show each cell (`boundary cells`).
+A nested reading sits behind a boundary: what of the reading around it passes in is the `BOUNDARIES` table in `src/parse/boundaries.ts`. The code consults it where it decides what crosses: `clauseScopes` for the frames a nested clause's scope record holds, `carriedFrames` for the clauses that start or end a carried frame, the resolve stage's `closeSentence` for whether a bound tag's reach runs on into the `blarl` grounds, the reader's `carriedLinks` for the readings a carried frame links to, and its `groundsBinders` for the binders that reach the grounds: each binder before a `blarl` takes a `grounds` link of its own to the next sentence. Each cell is **passes**, **blocks**, or **unstated**, with the section that states it. An unstated cell keeps what the code does today, which it names, until the grammar states it. The scope report counts the examples that show each cell (`boundary cells`).
 
 A cell that passes says how it reaches the nested reading:
 
@@ -636,7 +636,7 @@ The columns:
 | `carryStart` | unstated (today: passes, sentence) |
 | `carryEnd` | unstated (today: passes, sentence) |
 | `carried` | unstated (today: passes, sentence) |
-| `binder` | passes (link), today: blocks, `joins.md#everything-ua` |
+| `binder` | passes (link), `joins.md#everything-ua` |
 | `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | unstated (today: blocks) |
 

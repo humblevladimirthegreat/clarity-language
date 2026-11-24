@@ -34,6 +34,7 @@ import { CLOSED, closedDerived } from "../closed-roots.js";
 import { isClauseAdverb, type ClassifyTables } from "./classify.js";
 import { clauseScopes, isBareEdge } from "./scope.js";
 import { carriedFrames } from "./carry.js";
+import { crosses } from "./boundaries.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -778,10 +779,12 @@ function isQuantifierFence(join: LexWord): boolean {
 
 /**
  * A bound reach ends with its sentence, unless the sentence ends on a forward stand-in, whose sentence is still inside it
- * (universals-domains.md#bound-tags). Every tag assigned inside it goes back to its earlier holder; one with none is free.
+ * (universals-domains.md#bound-tags): the `grounds` row's `boundTag` cell (interpreter.md#boundaries). Clause-join members,
+ * dependents and islands sit inside the sentence, so the walk keeps the reach open across them, as their cells say. Every
+ * tag assigned inside it goes back to its earlier holder; one with none is free.
  */
 function closeSentence(ctx: Ctx): void {
-  const carries = ctx.lastWord?.reading === "standIn";
+  const carries = ctx.lastWord?.reading === "standIn" && crosses("grounds", "boundTag", "resolve");
   ctx.lastWord = undefined;
   if (!ctx.reach || carries) return;
   for (const [vowel, previous] of ctx.reach.shadowed) {

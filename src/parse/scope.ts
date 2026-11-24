@@ -539,10 +539,11 @@ function islandsIn(clause: Clause): Clause[] {
 
 /**
  * The outer frames a nested clause's scope record holds: those whose boundary cell passes by copy
- * (interpreter.md#boundaries). A rest-of-sentence tone is the `tone` column; every other frame `outerFrames`.
+ * (interpreter.md#boundaries). A rest-of-sentence tone is the `tone` column, a binder the `binder` column, every other
+ * frame `outerFrames`.
  */
 function copied(reaching: readonly ScopeFrame[], kind: NestedKind): ScopeFrame[] {
-  return reaching.filter((frame) => crosses(kind, frame.tone ? "tone" : "outerFrames", "copy"));
+  return reaching.filter((frame) => crosses(kind, frame.tone ? "tone" : frame.family === "binder" ? "binder" : "outerFrames", "copy"));
 }
 
 // ── Tone marks over the rest of the sentence ────────────────────────────────
