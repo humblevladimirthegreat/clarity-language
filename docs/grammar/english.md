@@ -83,7 +83,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | what was said (*tells that the dog runs*) | stand-in **`darl`** (often `/d/`) | [Dependent clauses](/dependents#dependent-clauses) |
 | approximate amount (*about three*) | number `-m` (`~`) | [Number endings](/number-markers#number-endings) |
 | approximate clock (*around 15:30*) | clock `-m` | [Time](/digit-strings#time) |
-| gist of wording (*something like “…”*) | span paraphrase **`~`** | [Exact, paraphrase, proper](/spans#when-required) |
+| roughly the words (*something like “…”*) | approximate quote: span **`~`** | [Exact, approximate, proper](/spans#when-required) |
 | place (*walks about the house*) | hook **`am`** (*amid*) or **`uel`** (*through*), not topic | [Hooks](/hooks#extra-noun) |
 
 ### *as*
@@ -364,6 +364,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebe
 | *now, about Onuren Alazun* (the work) | `x@[onuren alazun]` | [Topic](/topic#topic), [cite](/spans#writing) |
 | *back to Azozon*, *as I was saying about Azozon* | `/x/` + whole stem + `-r`: **`xazozor`** | [Return](/topic#topic-return) |
 | *anyway, Azozon …* (after a side topic) | **`er xazozor …`** | [Return](/topic#topic-return), [resume hooks](/discourse-hooks#discourse) |
+| *paraphrase*, *gist*, *in other words* (what someone said, in your own words) | stand-in **`darl`** + the sentence; **`derl`** for what they asked | [Dependent clauses](/dependents#dependent-clauses) |
 | *what are we talking about?* | **`yel zar gehugom.`** | [Asking about the topic](/topic#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyen`** | [Generic pronoun](/pronouns#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zwuzer`** (*the latter*) / **`zwuzar`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodozel zwal`, then `zwar`) | [Role pointers](/pronouns#role-pointers), [tag pronouns](/tag-pronouns#naming-with-a-tag) |

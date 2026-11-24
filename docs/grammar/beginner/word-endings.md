@@ -248,4 +248,4 @@ correction
 - [Plurality](plurality.md): `-x` after the ending
 - [The clause](clause.md): role letters; adding a first letter to a citation
 - [Opaque and loan words](spans.md#loans): mention / opaque when the form or a foreign acronym is the point
-- Titled phrases: [Exact, paraphrase, proper](spans.md#when-required)
+- Titled phrases: [Exact, approximate, proper](spans.md#when-required)

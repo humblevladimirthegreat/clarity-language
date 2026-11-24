@@ -86,7 +86,7 @@ export const GLOSS_READER = {
     ".other": "see `←ROLE.same` above",
     ".unsaid": "see `←ROLE.same` above",
     ".instance": "one thing the name applies to (an Azozon, one of them)",
-    ".about": "approximately; on a quoted span, a paraphrase",
+    ".about": "approximately; on a quoted span, an approximate quote: the speaker's own words as near as recalled",
     ".named": "used as a fixed name or title",
     ".again": "the same number as before",
     ".name": "a real person called by that letter, whose name is kept back: new the first time, the same one after (`tag.A+O.name`: two such people)",

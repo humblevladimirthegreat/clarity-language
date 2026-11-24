@@ -334,9 +334,9 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 
 ### Hello, sir, yeah, quote, mention {#reply-words}
 
-**Needs:** [Greeting](/word-endings#greeting) · [Polar particle](/questions#polar-particle) · [Cite](/spans#writing) · [Mention](/spans-as-words#mention) · [Asides](/spans#asides)
+**Needs:** [Greeting](/word-endings#greeting) · [Polar particle](/questions#polar-particle) · [Cite](/spans#writing) · [Dependent clauses](/dependents#dependent-clauses) · [Mention](/spans-as-words#mention) · [Asides](/spans#asides)
 
-These everyday English words each map to a form taught elsewhere: a greeting, a call by name, a yes or no particle, a cite, a mention, or an aside. One English word can split across rows, as *quote* and *mention* do, so pick the row by what the word does.
+These everyday English words each map to a form taught elsewhere: a greeting, a call by name, a yes or no particle, a cite, a dependent clause, a mention, or an aside. One English word can split across rows, as *quote* and *mention* do, so pick the row by what the word does.
 
 | English | Ageben | Reading |
 |---------|--------|---------|
@@ -346,7 +346,8 @@ These everyday English words each map to a form taught elsewhere: a greeting, a 
 | *nope* / *nah* | `yuol.` / `yuom.` | no, firm / soft |
 | *yeah, sure* | `yael.` | take up the offer |
 | *quote* (the exact words) | `d[zalazun vezuyol]` | cite |
-| *quote* (the gist) | `d~[zalazun vezuyol]` | paraphrase cite |
+| *quote* (roughly the words) | `d~[zalazun vezuyol]` | approximate cite |
+| *paraphrase*, *gist*, *in other words* (what was said, in your own words) | `darl zalazun vowurol` | dependent clause |
 | *mention* (a word) | `glegol z[odoze]` | mention |
 | *mention* (in passing) | `th(…)` | aside |
 | *mention* (acknowledge someone) | `vowuyal` | *acknowledgment* |

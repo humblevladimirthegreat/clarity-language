@@ -7,7 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #writing: 4 construction homes, 2 interpreter rows, 2 interpreter classes, 1 frame key
-- #exact-paraphrase-proper: 2 construction homes
+- #exact-approximate-proper: 2 construction homes
 - #loans: 1 construction home, 1 interpreter row, 1 interpreter class
 - #y-spans: 1 rejection
 - #asides-th: 1 construction home, 1 interpreter row, 1 interpreter class, 7 boundary cells, 6 discourse slot cells
@@ -37,16 +37,16 @@ Start with a one-word quote as the object of *said*. A [greeting](word-endings.m
 
 The whole `d[azozon]` is the direct object (who or what is acted on). When the quote is a whole Ageben sentence, each word inside starts with its own role letter, as in any sentence.
 
-### Exact, paraphrase, proper
+### Exact, approximate, proper {#exact-approximate-proper}
 <a id="when-required"></a>
 
-English shows how faithful a quote is with extra words, such as *something like “…”* when you give only the gist. Ageben puts a mark after the role letter, right before the opening bracket: no mark for the **exact** words as they were said (`d[azozon]`), `~` for a **paraphrase**, the gist and not the exact words (`d~[zazozon vozuyel]`), and `@` for a **proper** span, the title of a work (`d@[onuren alazun]`). The listener then knows whether you claim the wording, only its meaning, or a work by name.
+English shows how faithful a quote is with extra words, such as *something like “…”* when you are not sure of every word. Ageben puts a mark after the role letter, right before the opening bracket: no mark for the **exact** words as they were said (`d[azozon]`), `~` for an **approximate** quote, the words as near as you recall them, a few perhaps wrong (`d~[zazozon vozuyel]`), and `@` for a **proper** span, the title of a work (`d@[onuren alazun]`). The listener then knows whether you claim the wording, the wording only roughly, or a work by name.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
 | *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
-| **`~`** | paraphrase | the gist, not the exact words | `~` looks like “about / approximately” |
+| **`~`** | approximate | roughly the words: a few may be wrong | `~` looks like “about / approximately” |
 | **`@`** | proper | the work known by that title | `@` like a social media handle |
 
 > `zalazun d~[zazozon vozuyel] varuyol.`
@@ -54,6 +54,8 @@ English shows how faithful a quote is with extra words, such as *something like 
 > z-Alazun | d-CITE.about[z-Azozon | v-sing] | v-write
 >
 > "Alazun wrote something like “Azozon sings.”"
+
+An approximate quote is still the speaker’s own sentence, as an exact one is, so *I* inside it is the person quoted. You claim its whole meaning, and its words only roughly. When you give only the meaning, in your own words, use a [dependent clause](dependents.md#dependent-clauses) instead: `darl` for what they said, `derl` for what they asked.
 
 With `@`, the span names a work whose title has several words, such as a song, proverb, or book. It then means the work itself, not its title as a string of words.
 

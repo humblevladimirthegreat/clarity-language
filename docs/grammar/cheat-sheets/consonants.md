@@ -79,7 +79,7 @@ l m r n
 │     └── root-tail kinds (memory: l concrete, m abstract, n name)
 ├── exactness — how tightly you mean the stated form
 │     ├── number -l / -m (exact / about)
-│     ├── span none / ~ (verbatim / gist)
+│     ├── span none / ~ (verbatim / roughly)
 │     ├── stand-in -rl / -rm (the whole next sentence / the gist)
 │     ├── IDENTITY (is / basically)
 │     ├── exactly-like vs like

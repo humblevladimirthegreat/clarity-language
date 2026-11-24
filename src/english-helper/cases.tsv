@@ -198,3 +198,6 @@ Ahelan sings if and only if Alazun sits.	if and only if	form:blarl	the *iff* row
 Ahelan swims like a duck.	like	link:relations.md#likeness	an example phrase in a contrast table (*like a duck*) once took the whole slot
 Ahelan swims like a duck.	duck	no-gap	the noun after *like* keeps its own root
 Didn't Azozon walk?	not	link:joins.md#negation-u	an example question (*Not Azozon?*) once took *not* and the name
+Alazun paraphrased it.	paraphrased	link:dependents.md#dependent-clauses	*paraphrase* gives the meaning in your own words: a dependent clause, not the approximate quote `~`
+In other words, Azozon sings.	In other words	link:dependents.md#dependent-clauses	*in other words* gives the meaning in your own words: a dependent clause
+Alazun told me the gist.	gist	link:dependents.md#dependent-clauses	*the gist* is the meaning in your own words: a dependent clause

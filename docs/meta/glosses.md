@@ -297,7 +297,7 @@ A **labeled bracket** `LABEL[ … ]` marks a package. The label is uppercase Eng
 |-------|---------|
 | `NAME[…]` | [Titled phrase](/proper-names#titled-phrases): **-n** on the hook, join, or span that packages it |
 | `CITE[…]` / `ASIDE[…]` / `OPAQUE[…]` | Span (`d[…]` / `th(…)` / `d<…>`) |
-| `CITE.about[…]` | Paraphrase **-m** span (`d~[…]`) |
+| `CITE.about[…]` | Approximate quote **-m** span (`d~[…]`) |
 | `NAME.CITE[…]` | Proper **-n** span (`d@[…]`) |
 | `SCOPE[…]` | Scope island `{ … }` |
 

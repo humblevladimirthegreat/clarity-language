@@ -114,10 +114,10 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 <!-- cheat-sheet: restrictors-spans -->
 | Mark | Use | English | Example | Stage |
 |------|-----|---------|---------|-------|
-| [*(none)*](/spans#exact-paraphrase-proper) | exact | verbatim wording | `d[azozon]` | B |
-| [`~`](/spans#exact-paraphrase-proper) | paraphrase | the gist | `d~[zazozon vozuyel]` | B |
-| [`@`](/spans#exact-paraphrase-proper) | proper | a work known by that title | `d@[onuren alazun]` | B |
-| [`~@`](/spans#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[onuren alazun]` | B |
+| [*(none)*](/spans#exact-approximate-proper) | exact | verbatim wording | `d[azozon]` | B |
+| [`~`](/spans#exact-approximate-proper) | approximate | roughly the words | `d~[zazozon vozuyel]` | B |
+| [`@`](/spans#exact-approximate-proper) | proper | a work known by that title | `d@[onuren alazun]` | B |
+| [`~@`](/spans#exact-approximate-proper) | proper, loosely remembered | *something like that title* | `d~@[onuren alazun]` | B |
 | [`^@`](/spans-as-words#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[onuren alazun]` | I |
 | [`~^@`](/spans-as-words#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[onuren alazun]` | I |
 
@@ -141,8 +141,8 @@ A one-word name is an ordinary `-n` word (`donuren`), not a span.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Quote a sentence](/spans#exact-paraphrase-proper) | `zalazun d~[zazozon vozuyel] varuyol.` | *Alazun wrote something like “Azozon sings.”* | B |
-| [A title of several words](/spans#exact-paraphrase-proper) | `zahelan d@[onuren alazun] vozuyel.` | *Ahelan sang Onuren Alazun.* | B |
+| [Quote a sentence](/spans#exact-approximate-proper) | `zalazun d~[zazozon vozuyel] varuyol.` | *Alazun wrote something like “Azozon sings.”* | B |
+| [A title of several words](/spans#exact-approximate-proper) | `zahelan d@[onuren alazun] vozuyel.` | *Ahelan sang Onuren Alazun.* | B |
 | [A cite as the verb](/spans#pos) | `yul zalazun v[vezohul].` | *Don't say “stop,” Alazun.* | B |
 | [A loan verb](/spans#pos) | <code>zalazun dazozon v&lt;google&gt;.</code> | *Alazun googled Azozon.* | B |
 | [A loan adjective](/spans#pos) | <code>zodozel g&lt;rouge&gt; vowurol.</code> | *A rouge dog walks.* | B |
@@ -212,6 +212,6 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `her` *anytime* ([any one will do](/restrictors#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](/restrictors#always-hual)) |
 | `hur` *some other time* ([a leftover occasion](/more-occasions#more-occasions)) | | `huel` *anytime except when…* ([leftover times in general](/more-occasions#more-occasions)) |
 | `herulal hal` *only when it rains* ([a restrictor list](/more-occasions#occasions-vs-a-dependent-when)) | | `thohem blarl` *if a whole sentence* ([a dependent](/more-occasions#occasions-vs-a-dependent-when)) |
-| `d[azozon]` *what was said* ([a cite](/spans#writing)) | | `donuren` *the one-word name* ([an ordinary `-n` word](/spans#exact-paraphrase-proper)) |
-| `d@[onuren alazun]` *the work* ([a proper span](/spans#exact-paraphrase-proper)) | | `glegon` *the name as spelling* ([a mention](/spans-as-words#mention)) |
+| `d[azozon]` *what was said* ([a cite](/spans#writing)) | | `donuren` *the one-word name* ([an ordinary `-n` word](/spans#exact-approximate-proper)) |
+| `d@[onuren alazun]` *the work* ([a proper span](/spans#exact-approximate-proper)) | | `glegon` *the name as spelling* ([a mention](/spans-as-words#mention)) |
 | `th(…)` *an aside* ([a comment](/spans#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](/scope-islands#scope-islands)) |

@@ -320,7 +320,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *multiple* (*more than one*) | a ray: `zogozelx g+2 oel grawal` |
 | *minority* (*fewer than half*) | `zogozelx g+0% uel g+50%` |
 | *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
-| *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](/spans#when-required)) |
+| *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, approximate, proper](/spans#when-required)) |
 | *a dozen* | `zudalx g+12` |
 | *a quarter of the cats* | `zogozelx g-4` (or `g+25%`) |
 | *two thirds of the cats*, *three quarters* | `zogozelx gradol grugel` (count, then [fraction](/measures-and-percent#fractions)) |

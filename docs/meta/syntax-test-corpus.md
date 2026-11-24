@@ -244,7 +244,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 | 215 | The house stands where three roads meet. | `zoraholx g+3 vezahom. zohahal thugem vuzuvel al bezahor.` | [z-road-x \| g-three.short] \| v-hub . z-house \| th-LIVE \| v-stand \| [in \| b-←station] | covered |
 | 216 | He has far more money than brains. | `zaral om bazozon zebobem om bazozon zol wohalal gral.` | `[z-money \| [used-by \| b-Azozon]] \| [[z-intellect \| [used-by \| b-Azozon]] \| z-rank/more \| [w-ocean \| g-amount]]` | covered |
 | 217 | Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it. | `zohel theyol vohel hal thahum blarl zegudal guravam zedalolx gelazem zal velom om boher.` | z-door \| th-CLUES.strong \| v-open \| h-never \| [th-because \| b-that-clause] \| [[z-greens \| g-length] \| [z-tree-x \| g-big] \| z-and] \| v-growth \| [near \| b-←open] | covered |
-| 218 | I met a little cottage girl; she was eight years old, she said. | `zuwen thevum degoyol gamezem gegaham vezahom. zegoyor thevum d~[zegoyor bovuvam g+8 guburom] vezuyol.` | z-speaker \| th-MEMORY \| [d-girl \| g-small \| g-rural] \| v-hub . z-←girl \| th-MEMORY \| d-CITE.about[z-←girl \| [b-year \| g-eight.short \| g-age]] \| v-tell | covered |
+| 218 | I met a little cottage girl; she was eight years old, she said. | `zuwen thevum degoyol gamezem gegaham vezahom. zegoyor thevum vezuyol darl zegoyor bovuvam g+8 guburom.` | z-speaker \| th-MEMORY \| [d-girl \| g-small \| g-rural] \| v-hub . z-←girl \| th-MEMORY \| v-tell \| d-that-clause \| z-←girl \| [b-year \| g-eight.short \| g-age] | covered |
 
 ### Notes
 
@@ -376,7 +376,7 @@ Every Ageben line below was checked with `node scripts/parse.mjs`.
 - **STC-212, 213, *I think*:** `vevemel darl`. *My opinion is that* is said as *I think that*; *governor* is the agent compound on *leadership*, *pardon* is *forgive* (`vabugem`).
 - **STC-214, *why he has left*:** a reported *why* is the `thahum blar` blank inside `derl` ([reported questions](../grammar/say-questions.md#reported-questions)); *mystery* is the abstract as a verb (`vemayem`) with that clause as its object, so the English subject clause becomes an object.
 - **STC-217, *never*, *evidently*:** `hal` is the *never* restrictor; *evidently* is the strong CLUES channel. *Gate* is *door*, and `boher` binds the door noun, though its nearest same-root word is the verb.
-- **STC-218, *cottage girl*:** *little rural girl*; *she said* is a paraphrase cite (`d~[…]`) with the age as a measure on *year* (`bovuvam g+8`).
+- **STC-218, *cottage girl*:** *little rural girl*; *she said* gives her words in the narrator's voice, so it takes a dependent clause (`darl`), not a cite; the age is a measure on *year* (`bovuvam g+8`).
 
 Findings (stopping points) are logged in [syntax-test-results](syntax-test-results.md).
 

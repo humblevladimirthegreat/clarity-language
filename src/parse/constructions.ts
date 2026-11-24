@@ -705,8 +705,8 @@ export const RANGE_MEMBER_CONSTRUCTIONS: Record<"oer" | "uer" | "uar" | "uor" | 
 /** Span features: the written fidelity marks (spans.md). */
 export const SPAN_FEATURE_CONSTRUCTIONS: Record<`mark.${"^@" | "@" | "~"}`, ConstructionEntry> = {
   "mark.^@": { anchor: "spans-as-words.md#one-of-a-title", summary: "^@ one thing the span's name applies to" },
-  "mark.@": { anchor: "spans.md#exact-paraphrase-proper", summary: "@ proper span" },
-  "mark.~": { anchor: "spans.md#exact-paraphrase-proper", summary: "~ paraphrase span" },
+  "mark.@": { anchor: "spans.md#exact-approximate-proper", summary: "@ proper span" },
+  "mark.~": { anchor: "spans.md#exact-approximate-proper", summary: "~ approximate span" },
 };
 
 /** Role words: the part consonant, the label reach after `w`, ability, the -r instance, and acting as (`/h/`) (roles.md). */
