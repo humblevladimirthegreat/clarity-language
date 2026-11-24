@@ -9,6 +9,7 @@
 import { CLOSED } from "../closed-roots.js";
 import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
+import { crosses, type NestedKind } from "../parse/boundaries.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
 import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
@@ -32,7 +33,7 @@ import type {
   VpCoord,
 } from "../parse/types.js";
 import { classOf } from "./classes.js";
-import { constructionFor, copyScope, detailOf, frameOf, framedMember, holderHostValues, hostOnHead, link, memberFrame, nextSentence, placeFrame, previousSentence, thing, unread, wordKey, wordValues, type Ctx, type Here, type ReadOptions } from "./read-context.js";
+import { constructionFor, copyScope, detailOf, frameOf, framedMember, holderHostValues, hostOnHead, link, memberFrame, nestedKinds, nextSentence, placeFrame, previousSentence, thing, unread, wordKey, wordValues, type Ctx, type Here, type ReadOptions } from "./read-context.js";
 import { throughAntecedent } from "./steps.js";
 import { placeTones } from "./tones.js";
 import type { Detail, Frame, Link, Reading, ReadingId, StanceList, Term } from "./types.js";
@@ -1229,16 +1230,25 @@ function carriedLinks(sentences: Reading[], carried: readonly BodyCarry[]): void
       const source = at.get(`${carry.utteranceIndex}.${carry.bodyIndex}`);
       const frame = source?.frames.find((f) => f.family === CARRY_FAMILY[carry.kind] && f.words.includes(carry.word));
       const words = [carry.word, ...(carry.offset ? [carry.offset.bound, ...(carry.offset.amount ? [carry.offset.amount] : [])] : [])];
-      reading.links.push(
-        link("carriedFrame", `carry:${carry.kind}`, words, {
-          anchor: carry.offset ? "dated-channel.md#counting-from-now" : CARRY_ANCHOR[carry.kind],
-          ...(source ? { to: source.id } : {}),
-          ...(frame ? { frame } : {}),
-          ...(coveredBy.length > 0 ? { coveredBy } : {}),
-        }),
-      );
+      const carried = link("carriedFrame", `carry:${carry.kind}`, words, {
+        anchor: carry.offset ? "dated-channel.md#counting-from-now" : CARRY_ANCHOR[carry.kind],
+        ...(source ? { to: source.id } : {}),
+        ...(frame ? { frame } : {}),
+        ...(coveredBy.length > 0 ? { coveredBy } : {}),
+      });
+      reading.links.push(carried);
+      // A nested reading takes a link of its own only where every boundary it sits behind passes the carried frame by
+      // link (interpreter.md#boundaries); otherwise the sentence's link covers it through the tree, or nothing does.
+      for (const nested of nestedOf(reading)) if (nested.kinds.every((kind) => crosses(kind, "carried", "link"))) nested.reading.links.push({ ...carried });
     }
   }
+}
+
+/** A sentence's nested readings, each with the boundary kinds it sits behind (interpreter.md#boundaries). */
+function nestedOf(sentence: Reading): { reading: Reading; kinds: NestedKind[] }[] {
+  const all = allReadings([sentence]);
+  const byId = new Map(all.map((r) => [r.id, r]));
+  return all.slice(1).map((reading) => ({ reading, kinds: nestedKinds(reading, byId) }));
 }
 
 /** Parse and read one text. */

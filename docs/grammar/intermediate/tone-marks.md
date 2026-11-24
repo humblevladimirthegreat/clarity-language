@@ -6,7 +6,7 @@ band: intermediate
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #showing-your-tone: 11 construction homes, 3 rejections, 1 interpreter row, 1 interpreter class, 1 frame key
+- #showing-your-tone: 11 construction homes, 3 rejections, 1 interpreter row, 1 interpreter class, 1 frame key, 5 boundary cells
 Inbound links: npm run page-refs -- tone-marks.md
 -->
 

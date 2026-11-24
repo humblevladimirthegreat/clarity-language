@@ -31,6 +31,7 @@ import { CLASSES } from "../src/interpret/classes.js";
 import { FAMILY_TERMS } from "../src/interpret/inspect-notes.js";
 import { CONSTRUCTIONS, REJECTIONS } from "../src/parse/constructions.js";
 import { FRAME_KEYS, PAIR_ROWS } from "../src/parse/scope.js";
+import { boundaryCells } from "../src/parse/boundaries.js";
 import { PROFILES } from "../src/parse/scope-profiles.js";
 import { GRAMMAR_DIR, readData, REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath, tmpRel } from "../src/tmp-paths.js";
@@ -77,6 +78,7 @@ const REGISTRIES: readonly Registry[] = [
   { name: "classes", kind: "section", singular: "interpreter class", plural: "interpreter classes" },
   { name: "frame-keys", kind: "section", singular: "frame key", plural: "frame keys" },
   { name: "pair-rows", kind: "section", singular: "pair-table rule", plural: "pair-table rules" },
+  { name: "boundaries", kind: "section", singular: "boundary cell", plural: "boundary cells" },
   { name: "terms", kind: "section", singular: "inspect term", plural: "inspect terms" },
   { name: "cues", kind: "page", singular: "cue (claritish-triggers.csv)", plural: "cues (claritish-triggers.csv)" },
   { name: "flows", kind: "page", singular: "flow (claritish-flows.json)", plural: "flows (claritish-flows.json)" },
@@ -92,6 +94,7 @@ const READ_FILES = new Set([
   "src/interpret/classes.ts",
   "src/parse/scope.ts",
   "src/parse/scope-profiles.ts",
+  "src/parse/boundaries.ts",
   "src/interpret/inspect-notes.ts",
 ]);
 
@@ -268,6 +271,10 @@ function registryRefs(): RegistryRef[] {
   const rowAnchors = new Set(PAIR_ROWS.flatMap((row) => row.cases.flatMap((c) => c.anchors)));
   for (const profile of PROFILES) {
     for (const a of new Set(profileAnchors(profile))) if (!rowAnchors.has(a)) refs.push(anchorRef("pair-rows", a, `scope-profiles.ts ${profile.family}`, "docs/meta"));
+  }
+  // The boundary table's cells name the sections that state what passes into a nested reading.
+  for (const { kind, column, cell } of boundaryCells()) {
+    if (cell.anchor) refs.push(anchorRef("boundaries", cell.anchor, `boundaries.ts ${kind} ${column}`, "docs/meta"));
   }
   for (const [family, term] of Object.entries(FAMILY_TERMS)) {
     if (term?.anchor) refs.push(anchorRef("terms", term.anchor, `inspect-notes.ts ${family}`, "docs/meta"));

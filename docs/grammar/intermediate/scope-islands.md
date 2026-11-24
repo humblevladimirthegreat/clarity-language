@@ -4,7 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #scope-islands: 5 construction homes, 6 rejections, 1 interpreter row, 1 interpreter class
+- #scope-islands: 5 construction homes, 6 rejections, 1 interpreter row, 1 interpreter class, 3 boundary cells
 Inbound links: npm run page-refs -- scope-islands.md
 -->
 

@@ -11,7 +11,7 @@ Sections named by data:
 - #choice-e: 1 construction home, 1 interpreter row, 1 interpreter class
 - #standalone-phrase: 4 construction homes, 1 interpreter row, 1 interpreter class
 - #negation-u: 4 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
-- #everything-ua: 1 construction home, 2 interpreter rows, 2 interpreter classes, 2 frame keys, 1 pair-table rule
+- #everything-ua: 1 construction home, 2 interpreter rows, 2 interpreter classes, 2 frame keys, 1 pair-table rule, 4 boundary cells
 - #rank-o: 1 construction home, 1 interpreter row, 1 interpreter class
 - #unspecified-member-r-phrase: 1 construction home, 2 rejections
 - #clause-joins: 3 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class

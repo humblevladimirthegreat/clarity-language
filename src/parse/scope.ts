@@ -12,6 +12,7 @@
  * row states one, nothing where the pair commutes, and an `unordered` entry where the pair is still unsettled.
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
+import { crosses, type NestedKind } from "./boundaries.js";
 import { caseMatches, derivePairRows, HOLDER, MAY_BEFORE, TEXT_ORDER, type PairRow } from "./scope-profiles.js";
 import { stackKind } from "./series.js";
 import { isGreeting, isNoKindFence } from "./ast-walk.js";
@@ -497,11 +498,22 @@ function collectClause(
     // One reading per member of a clause join (reader rule 1); the turn's edge frames reach each member.
     if (unit.kind === "clauseCoord") {
       const members = [unit.coord.first, ...unit.coord.links.map((link) => link.clause)];
-      for (const member of members) if (member) collectClause(member, utteranceIndex, reaching, tables, blanks, out, tones);
+      for (const member of members) if (member) collectClause(member, utteranceIndex, copied(reaching, "member"), tables, blanks, out, tones);
     }
   }
   // A dependent is a nested reading with its own frames (reader rule 2).
-  if (clause.dependent) collectClause(clause.dependent.clause, utteranceIndex, [], tables, blanks, out, tones);
+  if (clause.dependent) {
+    const kind = clause.dependent.orodo.reading === "standIn" ? "standInDependent" : "slotDependent";
+    collectClause(clause.dependent.clause, utteranceIndex, copied(reaching, kind), tables, blanks, out, tones);
+  }
+}
+
+/**
+ * The outer frames a nested clause's scope record holds: those whose boundary cell passes by copy
+ * (interpreter.md#boundaries). A rest-of-sentence tone is the `tone` column; every other frame `outerFrames`.
+ */
+function copied(reaching: readonly ScopeFrame[], kind: NestedKind): ScopeFrame[] {
+  return reaching.filter((frame) => crosses(kind, frame.tone ? "tone" : "outerFrames", "copy"));
 }
 
 // ── Tone marks over the rest of the sentence ────────────────────────────────

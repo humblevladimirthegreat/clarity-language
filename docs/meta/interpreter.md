@@ -464,6 +464,124 @@ No sentence states an order against another frame.
 - See `hinge` and `stance` above (`usually-vs-must.md#general-claims`) for the statements against `hinge` and `stance`.
 - What a universal commits to: closed `zual` claims no exceptions; open `zuam` "leaves the list of exceptions open … you only do not rule them out" (`universals-domains.md#not-every`).
 
+## Boundaries
+
+A nested reading sits behind a boundary: what of the reading around it passes in is the `BOUNDARIES` table in `src/parse/boundaries.ts`. The code consults it where it decides what crosses: `clauseScopes` for the frames a nested clause's scope record holds, `carriedFrames` for the clauses that start or end a carried frame, and the reader's `carriedLinks` for the readings a carried frame links to. Each cell is **passes**, **blocks**, or **unstated**, with the section that states it. An unstated cell keeps what the code does today, which it names, until the grammar states it. The scope report counts the examples that show each cell (`boundary cells`).
+
+A cell that passes says how it reaches the nested reading:
+
+- `copy`: the nested clause's scope record holds the outer frame, ordered against its own frames.
+- `nesting`: the nested reading sits inside the outer one, so the outer frame covers it through the tree ([reader rule 2](#reader-rules)); nothing is copied.
+- `link`: through a link, as the [grounds link](#links) carries a `blarl` sentence into its frame.
+- `resolve`: the resolve stage's walk keeps it open across the boundary, as a bound tag's reach.
+- `sentence`: the nested reading is a sentence of its own, and the rule for sentences applies to it.
+
+A stated cell whose code does otherwise says so (`today: blocks`): the code keeps today's behavior, and the cell waits for the audit.
+
+The columns:
+
+| Column | What passes in |
+|--------|----------------|
+| `outerFrames` | the outer clause's whole-clause frames, the turn's edge frames among them |
+| `holder` | the outer clause's holder |
+| `carryStart` | a channel, NOTIONAL or holder inside starts a carried frame |
+| `carryEnd` | a new frame inside ends a carried frame |
+| `carried` | a carried frame on the sentence |
+| `binder` | a binder's reach (`zual`, a new member) |
+| `boundTag` | a bound tag's reach |
+| `tone` | a free-standing tone mark at the start of the sentence |
+
+**`member`**, a clause-join member:
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | unstated (today: passes, copy) |
+| `holder` | unstated (today: blocks) |
+| `carryStart` | blocks, `evidentiality.md#carry-forward` |
+| `carryEnd` | blocks, `evidentiality.md#carry-forward` |
+| `carried` | unstated (today: passes, nesting) |
+| `binder` | passes (copy), today: blocks, `joins.md#everything-ua` |
+| `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
+| `tone` | passes (copy), `tone-marks.md#showing-your-tone` |
+
+**`standInDependent`**, a dependent a stand-in names:
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | unstated (today: blocks) |
+| `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
+| `carryStart` | blocks, `evidentiality.md#carry-forward` |
+| `carryEnd` | blocks, `evidentiality.md#carry-forward` |
+| `carried` | unstated (today: passes, nesting) |
+| `binder` | passes (nesting), `joins.md#everything-ua` |
+| `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
+| `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |
+
+**`slotDependent`**, a dependent in a slot (an `/h/` stand-in or `Odo` slot):
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | unstated (today: blocks) |
+| `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
+| `carryStart` | blocks, `evidentiality.md#carry-forward` |
+| `carryEnd` | blocks, `evidentiality.md#carry-forward` |
+| `carried` | unstated (today: passes, nesting) |
+| `binder` | unstated (today: passes, nesting) |
+| `boundTag` | unstated (today: passes, resolve) |
+| `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |
+
+**`grounds`**, the `blarl` grounds: the next sentence, a frame's content:
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | unstated (today: blocks) |
+| `holder` | passes (link), `holder.md#what-the-holder-covers` |
+| `carryStart` | unstated (today: passes, sentence) |
+| `carryEnd` | unstated (today: passes, sentence) |
+| `carried` | unstated (today: passes, sentence) |
+| `binder` | passes (link), today: blocks, `joins.md#everything-ua` |
+| `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
+| `tone` | unstated (today: blocks) |
+
+**`island`**, a scope island:
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | passes (nesting), `scope-islands.md#scope-islands` |
+| `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
+| `carryStart` | blocks, `scope-islands.md#scope-islands` |
+| `carryEnd` | blocks, `scope-islands.md#scope-islands` |
+| `carried` | unstated (today: passes, nesting) |
+| `binder` | passes (nesting), `joins.md#everything-ua` |
+| `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
+| `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |
+
+**`quote`**, a cite (`[…]`):
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | unstated (today: blocks) |
+| `holder` | unstated (today: blocks) |
+| `carryStart` | blocks, `evidentiality.md#carry-forward` |
+| `carryEnd` | blocks, `evidentiality.md#carry-forward` |
+| `carried` | blocks, `evidentiality.md#carry-forward` |
+| `binder` | unstated (today: blocks) |
+| `boundTag` | blocks, `quote-contents.md#topic-quotes` |
+| `tone` | blocks, `tone-marks.md#showing-your-tone` |
+
+**`aside`**, an aside (`(…)`):
+
+| Column | Cell |
+|--------|------|
+| `outerFrames` | unstated (today: blocks) |
+| `holder` | unstated (today: blocks) |
+| `carryStart` | unstated (today: blocks) |
+| `carryEnd` | blocks, `evidentiality.md#carry-forward` |
+| `carried` | unstated (today: blocks) |
+| `binder` | unstated (today: blocks) |
+| `boundTag` | unstated (today: blocks) |
+| `tone` | unstated (today: blocks) |
+
 ## Reader rules
 
 1. **One reading per clause.** A `BodyClause` gives one. A clause join gives one per member, held by a list term. A dependent, a hinge's clause, an island, and a quote give nested readings in `content`.

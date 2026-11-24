@@ -3,6 +3,7 @@ import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { overlayConstructionId } from "../parse/construction-trace.js";
 import { linkerEnglish } from "../parse/linkers.js";
 import { hookLabel, joinMarkerLabel } from "../parse/morph-gloss-labels.js";
+import type { NestedKind } from "../parse/boundaries.js";
 import { newMemberHead, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
@@ -316,4 +317,24 @@ function nestFrame(key: string, word: LexWord, outer: Frame, here: Here): Frame 
   const frame = frameOf(key, word, here);
   outer.inner = [...(outer.inner ?? []), frame];
   return frame;
+}
+
+/**
+ * The boundary kinds a nested reading sits behind, outermost first (interpreter.md#boundaries), from its id's path under
+ * its sentence: `m` a clause-join member, `d` a dependent (in a slot when its parent's `slot:dependent` link names it),
+ * `i` / `v` an island, `q` a cite, or an aside when its parent holds it in an aside detail. `byId` holds every reading.
+ */
+export function nestedKinds(reading: Reading, byId: ReadonlyMap<ReadingId, Reading>): NestedKind[] {
+  const steps = reading.id.split("/");
+  const kinds: NestedKind[] = [];
+  for (let i = 1; i < steps.length; i++) {
+    const parent = byId.get(steps.slice(0, i).join("/"));
+    const id = steps.slice(0, i + 1).join("/");
+    const step = steps[i]!;
+    if (step.startsWith("m")) kinds.push("member");
+    else if (step.startsWith("i") || step.startsWith("v")) kinds.push("island");
+    else if (step === "d") kinds.push(parent?.links.some((l) => l.key === "slot:dependent" && l.to === id) ? "slotDependent" : "standInDependent");
+    else if (step.startsWith("q")) kinds.push(parent?.claim.details.some((d) => d.kind === "aside" && d.content?.some((r) => r.id === id)) ? "aside" : "quote");
+  }
+  return kinds;
 }

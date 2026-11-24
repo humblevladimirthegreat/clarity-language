@@ -3,6 +3,7 @@
  * to scope shows as a list of examples whose record changed. Walks the examples `npm run sweep` walks
  * (`forEachExample` in `accounting-walk.ts`); the script `scripts/scope-report.ts` saves, diffs and prints it.
  */
+import { BOUNDARY_COLUMNS, boundaryCell, cellLabel, type BoundaryColumn, type NestedKind } from "../parse/boundaries.js";
 import type { FrameFamily } from "../parse/scope.js";
 import { explainPair, type PairSide } from "../parse/scope-profiles.js";
 import type { Frame, Reading, StanceList } from "./types.js";
@@ -103,6 +104,29 @@ const side = (family: string): PairSide => {
 const pairRules = (r: ReadingRecord): string[] =>
   r.families.flatMap((a, i) => r.families.slice(i + 1).map((b) => explainPair(side(a), side(b)))).filter((rule) => rule !== "never");
 
+/** The boundary row of a nested reading the record's path names (a cite or an aside: `quote`). */
+const ROW_OF_NESTED: Readonly<Record<string, NestedKind>> = { member: "member", island: "island", quote: "quote" };
+
+/** The boundary row of the reading a link names: a dependent, by how it is named, and the `blarl` grounds. */
+const ROW_OF_LINK: Readonly<Record<string, NestedKind>> = {
+  "standIn lexReading:standIn": "standInDependent",
+  "standIn slot:dependent": "slotDependent",
+  "grounds slot:grounds": "grounds",
+};
+
+/** The boundary cells a reading crosses into, as `row column: verdict` (interpreter.md#boundaries). */
+const boundaryKeys = (r: ReadingRecord): string[] => {
+  const rows = new Set<NestedKind>();
+  const own = r.nested ? ROW_OF_NESTED[r.nested] : undefined;
+  if (own) rows.add(own);
+  for (const l of r.links) {
+    const row = ROW_OF_LINK[l.split(" -> ")[0] ?? ""];
+    if (row && l.includes(" -> ")) rows.add(row);
+  }
+  const columns = Object.keys(BOUNDARY_COLUMNS) as BoundaryColumn[];
+  return [...rows].flatMap((row) => columns.map((column) => `${row} ${column}: ${cellLabel(boundaryCell(row, column))}`));
+};
+
 const SECTIONS: [string, (r: ReadingRecord) => string[]][] = [
   ["frame families", (r) => r.families],
   ["pair rules", pairRules],
@@ -111,9 +135,10 @@ const SECTIONS: [string, (r: ReadingRecord) => string[]][] = [
   ["stance lists", (r) => r.stanceLists.map((l) => l.split(": ")[0] ?? l)],
   ["nested readings", (r) => (r.nested ? [r.nested] : [])],
   ["links", (r) => r.links.map((l) => l.split(" -> ")[0] ?? l)],
+  ["boundary cells", boundaryKeys],
 ];
 
-/** Count examples per frame family, pair rule, order pair and kind, unordered pair, stance list, nested kind, and link kind and key. */
+/** Count examples per frame family, pair rule, order pair and kind, unordered pair, stance list, nested kind, link kind and key, and boundary cell. */
 export function countReport(report: ScopeReport): ScopeCounts {
   const counts: ScopeCounts = Object.fromEntries(SECTIONS.map(([name]) => [name, {}]));
   for (const example of Object.values(report)) {

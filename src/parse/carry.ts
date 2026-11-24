@@ -9,7 +9,8 @@
  * What the pages settle, and this file follows:
  * - Starts: a whole-clause channel, NOTIONAL or holder seam on a statement's main clause, never one in a dependent or on
  *   one clause-join member, which neither starts nor ends a frame (evidentiality.md#carry-forward,
- *   notional.md#notional-as-if-framing, holder.md#naming-a-holder). A holder seam carries with the channel or NOTIONAL it sits on.
+ *   notional.md#notional-as-if-framing, holder.md#naming-a-holder). The boundary table's `carryStart` and `carryEnd`
+ *   cells say so (interpreter.md#boundaries). A holder seam carries with the channel or NOTIONAL it sits on.
  *   A dated channel keeps its offset (dated-channel.md#counting-from-now).
  * - Takes it: a statement with no such frame of its own, including one after a call, a reaction or an answer word, one
  *   with a linker or a topic word, and one with MAY or MIRATIVE (evidentiality.md#carry-forward, mirative.md#mirative).
@@ -23,11 +24,12 @@
  *   *by the way* (`xavedam`); a goodbye (word-endings.md#greeting, as the resolve stage tells it from a hello).
  */
 import { offsetSign } from "./enforce.js";
+import { boundaryCell, todayOf, type BoundaryColumn, type NestedKind } from "./boundaries.js";
 import { linkerEnglish } from "./linkers.js";
 import type { ClauseScope, FrameFamily, ScopeFrame } from "./scope.js";
 import { membersWhere, type MemberProfile } from "./scope-profiles.js";
 import { actWord } from "./series.js";
-import type { BodyCarry, BodyClause, CarriedFrame, CarryKind, HUnit, LexWord, Utterance } from "./types.js";
+import type { BodyCarry, BodyClause, CarriedFrame, CarryKind, Clause, HUnit, LexWord, Utterance } from "./types.js";
 
 /** The scope-frame keys that start a carry, and the kind each starts. */
 const CARRY_KEYS: Readonly<Record<string, CarryKind>> = {
@@ -74,8 +76,8 @@ function writtenAct(utterance: Utterance): "statement" | "other" | undefined {
   return act.family.kind === "joinMarker" && act.family.series === "a" ? "statement" : "other";
 }
 
-function hUnitOf(body: BodyClause, word: LexWord): HUnit | undefined {
-  for (const unit of body.clause.units) if (unit.kind === "h" && unit.unit.word === word) return unit.unit;
+function hUnitOf(clause: Clause, word: LexWord): HUnit | undefined {
+  for (const unit of clause.units) if (unit.kind === "h" && unit.unit.word === word) return unit.unit;
   return undefined;
 }
 
@@ -89,15 +91,49 @@ function offsetOf(unit: HUnit | undefined): CarriedFrame["offset"] {
  * The carried frames a body sets: each channel, NOTIONAL and holder among its own clause's whole-clause frames. A MAY
  * under a holder seam carries nothing of its own (MAY does not carry, evidentiality.md#carry-forward); its holder does.
  */
-function ownCarry(scope: ClauseScope | undefined, body: BodyClause, utteranceIndex: number, bodyIndex: number): CarriedFrame[] {
+function ownCarry(scope: ClauseScope | undefined, clause: Clause, utteranceIndex: number, bodyIndex: number): CarriedFrame[] {
   const out: CarriedFrame[] = [];
   for (const frame of scope?.frames ?? []) {
     const kind = CARRY_KEYS[frame.key];
     if (!kind || (kind === "channel" && frame.member !== "channel")) continue;
-    const offset = kind === "channel" ? offsetOf(hUnitOf(body, frame.word)) : undefined;
+    const offset = kind === "channel" ? offsetOf(hUnitOf(clause, frame.word)) : undefined;
     out.push({ kind, word: frame.word, utteranceIndex, bodyIndex, ...(offset ? { offset } : {}) });
   }
   return out;
+}
+
+/** A clause's clause-join members and dependents, nested ones included, each with its boundary kind (interpreter.md#boundaries). */
+function nestedClauses(clause: Clause, out: { clause: Clause; kind: NestedKind }[] = []): { clause: Clause; kind: NestedKind }[] {
+  for (const unit of clause.units) {
+    if (unit.kind !== "clauseCoord") continue;
+    for (const member of [unit.coord.first, ...unit.coord.links.map((link) => link.clause)]) {
+      if (!member) continue;
+      out.push({ clause: member, kind: "member" });
+      nestedClauses(member, out);
+    }
+  }
+  const dependent = clause.dependent;
+  if (dependent) {
+    out.push({ clause: dependent.clause, kind: dependent.orodo.reading === "standIn" ? "standInDependent" : "slotDependent" });
+    nestedClauses(dependent.clause, out);
+  }
+  return out;
+}
+
+/**
+ * The frames a body's nested clauses set, where the boundary table lets `column` (carry start or end) pass out of them
+ * (interpreter.md#boundaries). Today every such cell blocks: a channel starts or ends a frame only on the main clause.
+ */
+function nestedCarry(
+  column: BoundaryColumn,
+  body: BodyClause,
+  byClause: ReadonlyMap<Clause, ClauseScope>,
+  utteranceIndex: number,
+  bodyIndex: number,
+): CarriedFrame[] {
+  return nestedClauses(body.clause)
+    .filter(({ kind }) => todayOf(boundaryCell(kind, column)) === "passes")
+    .flatMap(({ clause }) => ownCarry(byClause.get(clause), clause, utteranceIndex, bodyIndex));
 }
 
 function isGreetingScope(scope: ClauseScope | undefined): boolean {
@@ -141,7 +177,8 @@ export function carriedFrames(
         return;
       }
       if (body.linker && linkerEnglish(body.linker) === "by-the-way") carries.delete(speaker);
-      const own = ownCarry(scope, body, utteranceIndex, bodyIndex);
+      const own = [...ownCarry(scope, body.clause, utteranceIndex, bodyIndex), ...nestedCarry("carryStart", body, byClause, utteranceIndex, bodyIndex)];
+      if (own.length === 0 && nestedCarry("carryEnd", body, byClause, utteranceIndex, bodyIndex).length > 0) carries.delete(speaker);
       if (own.length > 0) {
         carries.set(speaker, own);
         return;
