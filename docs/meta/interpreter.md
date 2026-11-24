@@ -603,7 +603,7 @@ The columns:
 | `holder` | blocks, `joins.md#clause-joins` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
-| `carried` | unstated (today: passes, nesting) |
+| `carried` | passes (nesting), `evidentiality.md#carry-forward` |
 | `binder` | passes (copy), today: blocks, `joins.md#everything-ua` |
 | `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | passes (copy), `tone-marks.md#showing-your-tone` |
@@ -616,7 +616,7 @@ The columns:
 | `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
-| `carried` | unstated (today: passes, nesting) |
+| `carried` | passes (nesting), `evidentiality.md#carry-forward` |
 | `binder` | passes (nesting), `joins.md#everything-ua` |
 | `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |
@@ -629,7 +629,7 @@ The columns:
 | `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
-| `carried` | unstated (today: passes, nesting) |
+| `carried` | passes (nesting), `evidentiality.md#carry-forward` |
 | `binder` | passes (nesting), `joins.md#everything-ua` |
 | `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |
@@ -655,7 +655,7 @@ The columns:
 | `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
 | `carryStart` | blocks, `scope-islands.md#scope-islands` |
 | `carryEnd` | blocks, `scope-islands.md#scope-islands` |
-| `carried` | unstated (today: passes, nesting) |
+| `carried` | passes (nesting), `evidentiality.md#carry-forward` |
 | `binder` | passes (nesting), `joins.md#everything-ua` |
 | `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |

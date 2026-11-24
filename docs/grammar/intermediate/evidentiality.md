@@ -10,7 +10,7 @@ Sections named by data:
 - #evidence-strength: 14 overlay rows
 - #hand-depth: 2 rejections
 - #evidence-clause: 1 interpreter row, 1 interpreter class, 3 pair-table rules
-- #carry-forward: 1 rejection, 2 pair-table rules, 10 boundary cells, 11 discourse slot cells
+- #carry-forward: 1 rejection, 2 pair-table rules, 14 boundary cells, 11 discourse slot cells
 Inbound links: npm run page-refs -- evidentiality.md
 -->
 
@@ -297,7 +297,7 @@ The frame is not ended by a new [topic](topic.md#topic) or a return to one, the 
 >
 > "Azozon walked, so they say. Now, about Alazun: Alazun sat." (the sitting is hearsay too)
 
-A channel starts or ends a frame only on the sentence's main clause. A channel inside a [dependent](/dependents#dependent-clauses) or on one member of a [clause join](/joins#clause-joins) is about that part alone.
+A channel starts or ends a frame only on the sentence's main clause. A channel inside a [dependent](/dependents#dependent-clauses) or on one member of a [clause join](/joins#clause-joins) is about that part alone. A frame that carries into a later statement covers everything that statement claims, like a channel on its main clause: every member of a clause join, and the inner sentences and [scope islands](scope-islands.md#scope-islands) inside it, as parts of that claim.
 
 Four things end the frame:
 

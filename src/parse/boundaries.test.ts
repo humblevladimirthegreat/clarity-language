@@ -53,16 +53,12 @@ describe("boundary table", () => {
       .filter(({ cell }) => cell.verdict === "unstated" || cell.today !== undefined)
       .map(({ kind, column, cell }) => `${kind} ${column}: ${cellLabel(cell)}`);
     assert.deepEqual(open, [
-      "member carried: unstated (today: passes)",
       "member binder: passes (today: blocks)",
-      "standInDependent carried: unstated (today: passes)",
-      "slotDependent carried: unstated (today: passes)",
       "grounds outerFrames: unstated (today: blocks)",
       "grounds carryStart: unstated (today: passes)",
       "grounds carryEnd: unstated (today: passes)",
       "grounds carried: unstated (today: passes)",
       "grounds tone: unstated (today: blocks)",
-      "island carried: unstated (today: passes)",
     ]);
   });
 });
