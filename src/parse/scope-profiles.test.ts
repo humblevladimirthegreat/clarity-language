@@ -1,7 +1,7 @@
 /**
  * Family profiles: the derived pair table equals the hand-written table it replaced (frozen below as it stood before
  * the profiles, with the rows a decision changed since: `force` × `contrary` (contrary-to.md#contrary-to-stance) and the
- * channel's cases (evidentiality.md#evidence-clause)), case by case and anchor by anchor, and `explainPair` names the
+ * channel's cases (evidentiality.md#evidence-clause), and the seam word over a sake word (holder.md#what-the-holder-covers)), case by case and anchor by anchor, and `explainPair` names the
  * rule that decided a pair.
  */
 import assert from "node:assert/strict";
@@ -43,13 +43,13 @@ const FROZEN: readonly PairRow[] = [
   {"pair":["sake","attitude"],"kind":"commutes","cases":[{"order":"commutes","anchors":["mirative.md#mirative","feelings.md#speaker-attitude","for-a-sake.md#whose-stake","contrary-to.md#contrary-to-stance"]}]},
   {"pair":["sake","binder"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","hinge"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
-  {"pair":["sake","stance"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
+  {"pair":["sake","stance"],"kind":"rule","cases":[{"order":"over","over":"stance","anchors":["holder.md#what-the-holder-covers"],"seam":true},{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
   {"pair":["sake","holder"],"kind":"rule","cases":[{"order":"over","over":"holder","anchors":["holder.md#what-the-holder-covers"]}]},
   {"pair":["sake","intention"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","ability"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","phase"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","residue"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
-  {"pair":["sake","notional"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
+  {"pair":["sake","notional"],"kind":"rule","cases":[{"order":"over","over":"notional","anchors":["holder.md#what-the-holder-covers"],"seam":true},{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["sake","mirative"],"kind":"commutes","cases":[{"order":"commutes","anchors":["mirative.md#mirative","feelings.md#speaker-attitude","for-a-sake.md#whose-stake","contrary-to.md#contrary-to-stance"]}]},
   {"pair":["sake","contrary"],"kind":"commutes","cases":[{"order":"commutes","anchors":["mirative.md#mirative","feelings.md#speaker-attitude","for-a-sake.md#whose-stake","contrary-to.md#contrary-to-stance"]}]},
   {"pair":["sake","occasion"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
@@ -194,6 +194,9 @@ describe("family profiles", () => {
     assert.equal(explainPair("stance", "holder"), "seam:holder");
     assert.equal(explainPair({ family: "stance", member: "channel" }, "hinge"), "member:channel");
     assert.equal(explainPair({ family: "stance", member: "may" }, "hinge"), "text");
+    assert.equal(explainPair({ family: "stance", member: "channel", holderHost: true }, "sake"), "seam-word");
+    assert.equal(explainPair({ family: "notional", holderHost: true }, "sake"), "seam-word");
+    assert.equal(explainPair({ family: "stance", member: "channel" }, "sake"), "text");
     assert.equal(explainPair("hinge", "occasion"), "exception:hinge-occasion");
     assert.equal(explainPair("bar", "stance"), "never");
   });

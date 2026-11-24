@@ -35,10 +35,13 @@ const WHOSE_INTENTION = "want-and-decide.md#whose-intention";
 
 type When = Partial<Record<FrameFamily, FrameMember[]>>;
 
-/** One case of a pair row: `over` names the family that covers, `textOrder` the earlier over the later. */
+/**
+ * One case of a pair row: `over` names the family that covers, `textOrder` the earlier over the later. An `over` case
+ * with `seam` holds only where the covering frame is the word the holder seam sits on.
+ */
 export type PairCase =
   | { order: "textOrder"; anchors: string[]; when?: When }
-  | { order: "over"; over: FrameFamily; anchors: string[]; when?: When }
+  | { order: "over"; over: FrameFamily; anchors: string[]; when?: When; seam?: true }
   | { order: "commutes"; anchors: string[]; when?: When }
   | { order: "unsettled"; anchors: string[]; when?: When };
 
@@ -95,6 +98,13 @@ export type FamilyProfile = {
   underForce?: string;
   /** A holder seam sits on its word: the holder over it is fixed by word shape, citing this. */
   holderSeam?: string;
+  /** Its word can carry the holder seam: a channel or MAY, NOTIONAL (holder.md#naming-a-holder). */
+  seamHost?: true;
+  /**
+   * Under a holder it is the holder's, and the seam word stays yours, so the seam word covers it wherever it sits; the
+   * anchor says so. Against any other frame of the seam word's family it keeps its row.
+   */
+  underSeam?: string;
   text?: TextAnchor[];
   members?: MemberProfile[];
   /** Two frames of the family have a row of their own. */
@@ -127,6 +137,7 @@ export const PROFILES: readonly FamilyProfile[] = [
     order: "text",
     underForce: WHOSE_INTENTION,
     holderSeam: HOLDER,
+    seamHost: true,
     self: true,
     text: [
       { anchors: [MAY_BEFORE], with: MAY_FAMILIES },
@@ -177,6 +188,7 @@ export const PROFILES: readonly FamilyProfile[] = [
     seat: "body",
     order: "text",
     remark: "for-a-sake.md#whose-stake",
+    underSeam: HOLDER,
     members: [{ id: "feeling", feeling: true, escapes: ["carried"], anchor: "how-you-feel.md#feeling-word" }],
   },
   { family: "contrary", seat: "body", order: "text", remark: CONTRARY },
@@ -209,7 +221,7 @@ export const PROFILES: readonly FamilyProfile[] = [
       },
     ],
   },
-  { family: "notional", seat: "body", order: "text", holderSeam: "notional.md#follow-up-endings-notional" },
+  { family: "notional", seat: "body", order: "text", holderSeam: "notional.md#follow-up-endings-notional", seamHost: true },
   { family: "occasion", seat: "body", order: "text" },
   {
     family: "binder",
@@ -261,8 +273,8 @@ export const EXCEPTIONS: readonly PairException[] = [
   },
 ];
 
-/** One side of a pair: a family, and the member the resolve stage tagged, if any. */
-export type PairSide = { family: FrameFamily; member?: string };
+/** One side of a pair: a family, the member the resolve stage tagged, if any, and whether the holder seam sits on it. */
+export type PairSide = { family: FrameFamily; member?: string; holderHost?: true };
 
 /** Whether a case's member condition holds for the two frames. */
 export function caseMatches(when: When | undefined, a: PairSide, b: PairSide): boolean {
@@ -270,6 +282,12 @@ export function caseMatches(when: When | undefined, a: PairSide, b: PairSide): b
   return Object.entries(when).every(([family, members]) =>
     [a, b].some((side) => side.family === family && side.member !== undefined && (members as string[]).includes(side.member)),
   );
+}
+
+/** Whether a case holds for the two frames: its member condition, and a seam case's seam word. */
+export function caseApplies(c: PairCase, a: PairSide, b: PairSide): boolean {
+  if (!caseMatches(c.when, a, b)) return false;
+  return !(c.order === "over" && c.seam) || [a, b].some((side) => side.family === c.over && side.holderHost === true);
 }
 
 type Derived = { rule: string; row: PairRow };
@@ -308,7 +326,19 @@ function memberCases(a: FamilyProfile, b: FamilyProfile): PairCase[] {
   return cases;
 }
 
-/** The rule order: call, edge, both escape each other, escape, covers, member case, text. Exceptions come first. */
+/** The seam word over a family the holder owns, wherever it sits: before the member cases and text order. */
+function seamCases(a: FamilyProfile, b: FamilyProfile): PairCase[] {
+  const cases: PairCase[] = [];
+  for (const [host, other] of [
+    [a, b],
+    [b, a],
+  ] as const) {
+    if (host.seamHost && other.underSeam) cases.push({ order: "over", over: host.family, anchors: [other.underSeam], seam: true });
+  }
+  return cases;
+}
+
+/** The rule order: call, edge, both escape each other, escape, covers, seam word, member case, text. Exceptions come first. */
 function derive(a: FamilyProfile, b: FamilyProfile): Derived {
   const pair: [FrameFamily, FrameFamily] = [a.family, b.family];
   const exception = EXCEPTIONS.find((e) => (e.pair[0] === a.family && e.pair[1] === b.family) || (e.pair[0] === b.family && e.pair[1] === a.family));
@@ -346,7 +376,7 @@ function derive(a: FamilyProfile, b: FamilyProfile): Derived {
     return { rule: `covers:${x.family}`, row: { pair, kind: "rule", cases: [over(x.family, x.orderAnchor ?? "")] } };
   }
   const text: PairCase = { order: "textOrder", anchors: [TEXT_ORDER, ...textAnchors(a, b)] };
-  return { rule: "text", row: { pair, kind: "rule", cases: [...memberCases(a, b), text] } };
+  return { rule: "text", row: { pair, kind: "rule", cases: [...seamCases(a, b), ...memberCases(a, b), text] } };
 }
 
 function pairKey(a: FrameFamily, b: FrameFamily): string {
@@ -371,8 +401,8 @@ export function derivePairRows(): PairRow[] {
 
 /**
  * The rule that decided a pair: `call`, `edge`, `escape:each-other`, `escape:force`, `escape:holder`, `seam:holder`,
- * `covers:holder`, `member:<id>` (a member case that matches the two sides), `exception:<id>`, `text`, or `never` for
- * a family that never pairs.
+ * `covers:holder`, `seam-word` (the seam word over a family the holder owns), `member:<id>` (a member case that matches
+ * the two sides), `exception:<id>`, `text`, or `never` for a family that never pairs.
  */
 export function explainPair(a: FrameFamily | PairSide, b: FrameFamily | PairSide): string {
   const [x, y] = [a, b].map((s) => (typeof s === "string" ? { family: s } : s)) as [PairSide, PairSide];
@@ -380,7 +410,8 @@ export function explainPair(a: FrameFamily | PairSide, b: FrameFamily | PairSide
   const derived = DERIVED.get(pairKey(x.family, y.family));
   if (!derived) return "text";
   if (derived.rule.startsWith("exception:")) return derived.rule;
-  const found = derived.row.cases.find((c) => caseMatches(c.when, x, y));
+  const found = derived.row.cases.find((c) => caseApplies(c, x, y));
+  if (found?.order === "over" && found.seam) return "seam-word";
   if (found?.when) {
     const [family, members] = Object.entries(found.when)[0] ?? [];
     const member = PROFILE.get(family as FrameFamily)?.members?.find((m) => m.member && members?.includes(m.member));

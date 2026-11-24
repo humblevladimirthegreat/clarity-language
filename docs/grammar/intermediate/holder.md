@@ -5,7 +5,7 @@ band: intermediate
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
 - #naming-a-holder: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key, 1 discourse slot cell
-- #what-the-holder-covers: 1 rejection, 14 pair-table rules, 4 boundary cells
+- #what-the-holder-covers: 1 rejection, 16 pair-table rules, 4 boundary cells
 Inbound links: npm run page-refs -- holder.md
 -->
 
@@ -138,7 +138,7 @@ Someone else's motive goes the same way. A [motive](for-a-sake.md#sake-preferenc
 
 ### What belongs to the holder {#what-the-holder-covers}
 
-The seam word is yours; the rest of the clause is the holder's. The word that carries the name says how you know about the holder's view: you inferred it, heard it, or guess it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
+The seam word is yours wherever it sits; the rest of the clause is the holder's. The word that carries the name says how you know about the holder's view: you inferred it, heard it, or guess it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
 
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|

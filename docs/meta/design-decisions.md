@@ -120,6 +120,7 @@ A dependent runs to the end of the written sentence, so `dorl P xol Q` is *wheth
 
 - **No free holder word or hosted `/b/` holder.** Fusing the holder onto a warrant makes a warrant-less attribution unwritable, even where no parser checks it.
 - **No `th` seam (`theyothazozon`).** It drops the grade. A consonant + `th` cluster (`thevemthazawan`) is illegal mid-word.
+- **No text order between the seam word and a sake word.** A motive or feeling word before the seam word would cover it, making the holder's motive the reason for your own access to their view, and the usual sentence-final seam word would read as how you know a claim that already sits under the holder's stake. The seam word is yours and marks where the holder's view begins, so it covers every sake word and feeling word the holder owns, wherever it sits. A channel and a sake word of one mind, both yours or both the holder's, still follow text order.
 - **Recognition by spelling.** A `/th/` word that begins with a closed host root, then `l` / `m` / `r`, then a vowel, is a holder. This is safe only while no published root has that shape: respell a new root of that shape rather than add a special case.
 
 ### General claims

@@ -13,7 +13,7 @@
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
 import { crosses, type NestedKind } from "./boundaries.js";
-import { caseMatches, derivePairRows, HOLDER, MAY_BEFORE, TEXT_ORDER, type PairRow } from "./scope-profiles.js";
+import { caseApplies, derivePairRows, HOLDER, MAY_BEFORE, TEXT_ORDER, type PairRow } from "./scope-profiles.js";
 import { stackKind } from "./series.js";
 import { isGreeting, isNoKindFence } from "./ast-walk.js";
 import type { BodyClause, Clause, HUnit, IslandUnit, LeftEdge, LexWord, NpCoord, NpPackage, ToneRecord, Unit, Utterance } from "./types.js";
@@ -197,7 +197,7 @@ function orderPair(a: ScopeFrame, b: ScopeFrame, scope: ClauseScope): void {
   // pair commutes (tone-marks.md#showing-your-tone).
   if (a.tone && b.tone) return;
   const row = pairRow(a.family, b.family) ?? DEFAULT_ROW;
-  const found = row.cases.find((c) => caseMatches(c.when, a, b));
+  const found = row.cases.find((c) => caseApplies(c, a, b));
   if (!found || found.order === "commutes") return;
   if (found.order === "unsettled") {
     scope.unordered.push({ frames: [a, b], anchors: found.anchors });
