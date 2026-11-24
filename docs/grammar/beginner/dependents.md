@@ -6,7 +6,7 @@ band: beginner
 Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #dependent-clauses: 7 construction homes, 2 rejections, 3 interpreter rows, 3 interpreter classes
+- #dependent-clauses: 7 construction homes, 2 rejections, 3 interpreter rows, 3 interpreter classes, 2 boundary cells
 - #hinges: 1 rejection, 9 overlay rows, 6 interpreter rows, 6 interpreter classes, 1 frame key, 13 pair-table rules
 - #so-that: 1 rejection
 Inbound links: npm run page-refs -- dependents.md
@@ -45,6 +45,14 @@ Sometimes a whole sentence fills one role in another sentence. In *Azozon tells 
 > "Azozon tells Alazun that the dog runs."
 
 Alazun, the person told, is plain `/b/`. Word order is free, so you can always arrange the other words to leave `darl` at the end. Do not open the inner sentence with `/y/`: it is not a new turn, and the stand-in's vowel already says what kind of content it is (`a` for *that …*). The inner sentence names who does its verb (`/z/`), even where English drops that person (*wants to walk*): write the name again.
+
+The inner sentence only fills a role, so it takes nothing from the words that frame the main sentence. The main sentence's act word and your stance words in it are about the main claim, not about the inner sentence:
+
+> `thevemem zazozon vezuyol balazun darl zodozel veruvol.`
+>
+> th-doubt | z-Azozon | v-tell | b-Alazun | d-that-clause | z-dog | v-run
+>
+> "I doubt Azozon tells Alazun that the dog runs." (you doubt the telling; you say nothing about the dog)
 
 For English *whether*, change the vowel to `e`: **`derl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
 

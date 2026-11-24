@@ -4,6 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
+- #quote-acts: 3 boundary cells
 - #topic-quotes: 1 boundary cell, 1 discourse slot cell
 Inbound links: npm run page-refs -- quote-contents.md
 -->
@@ -21,6 +22,14 @@ A quoted question or command keeps its own [act word](/speech-moves#speech-act-s
 > z-Azozon | d-CITE[y-question | z-Alazun | v-walk] | v-tell
 >
 > "Azozon said, “Does Alazun walk?”"
+
+Nothing else in your sentence reaches into the cite either. Your act word and your stance words are about your claim that the words were said, never about the words themselves, and the reach of an [*every*](/joins#everything-ua) phrase stops at the cite.
+
+> `thevemem zazozon d[zalazun vowurol] vezuyol.`
+>
+> th-doubt | z-Azozon | d-CITE[z-Alazun | v-walk] | v-tell
+>
+> "I doubt Azozon said, “Alazun walks.”" (you doubt the saying, not the walking)
 
 ### Topics in a quote {#topic-quotes}
 

@@ -599,8 +599,8 @@ The columns:
 
 | Column | Cell |
 |--------|------|
-| `outerFrames` | unstated (today: passes, copy) |
-| `holder` | unstated (today: blocks) |
+| `outerFrames` | passes (copy), `joins.md#clause-joins` |
+| `holder` | blocks, `joins.md#clause-joins` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
 | `carried` | unstated (today: passes, nesting) |
@@ -612,7 +612,7 @@ The columns:
 
 | Column | Cell |
 |--------|------|
-| `outerFrames` | unstated (today: blocks) |
+| `outerFrames` | blocks, `dependents.md#dependent-clauses` |
 | `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
@@ -625,13 +625,13 @@ The columns:
 
 | Column | Cell |
 |--------|------|
-| `outerFrames` | unstated (today: blocks) |
+| `outerFrames` | blocks, `dependents.md#dependent-clauses` |
 | `holder` | passes (nesting), `holder.md#what-the-holder-covers` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
 | `carried` | unstated (today: passes, nesting) |
-| `binder` | unstated (today: passes, nesting) |
-| `boundTag` | unstated (today: passes, resolve) |
+| `binder` | passes (nesting), `joins.md#everything-ua` |
+| `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | passes (nesting), `tone-marks.md#showing-your-tone` |
 
 **`grounds`**, the `blarl` grounds: the next sentence, a frame's content:
@@ -664,12 +664,12 @@ The columns:
 
 | Column | Cell |
 |--------|------|
-| `outerFrames` | unstated (today: blocks) |
-| `holder` | unstated (today: blocks) |
+| `outerFrames` | blocks, `quote-contents.md#quote-acts` |
+| `holder` | blocks, `quote-contents.md#quote-acts` |
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
 | `carried` | blocks, `evidentiality.md#carry-forward` |
-| `binder` | unstated (today: blocks) |
+| `binder` | blocks, `quote-contents.md#quote-acts` |
 | `boundTag` | blocks, `quote-contents.md#topic-quotes` |
 | `tone` | blocks, `tone-marks.md#showing-your-tone` |
 

@@ -49,6 +49,9 @@ const ISLANDS = "scope-islands.md#scope-islands";
 const TONE = "tone-marks.md#showing-your-tone";
 const QUOTE_TOPICS = "quote-contents.md#topic-quotes";
 const ASIDES = "spans.md#asides-th";
+const CLAUSE_JOINS = "joins.md#clause-joins";
+const DEPENDENTS = "dependents.md#dependent-clauses";
+const QUOTE_ACTS = "quote-contents.md#quote-acts";
 
 const passes = (via: BoundaryVia, anchor: string): BoundaryCell => ({ verdict: "passes", via, anchor });
 const blocks = (anchor: string): BoundaryCell => ({ verdict: "blocks", anchor });
@@ -63,8 +66,8 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
     kind: "member",
     what: "a clause-join member",
     cells: {
-      outerFrames: unstated("passes", "copy"),
-      holder: unstated("blocks"),
+      outerFrames: passes("copy", CLAUSE_JOINS),
+      holder: blocks(CLAUSE_JOINS),
       carryStart: blocks(CARRY),
       carryEnd: blocks(CARRY),
       carried: unstated("passes", "nesting"),
@@ -77,7 +80,7 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
     kind: "standInDependent",
     what: "a dependent a stand-in names",
     cells: {
-      outerFrames: unstated("blocks"),
+      outerFrames: blocks(DEPENDENTS),
       holder: passes("nesting", HOLDER),
       carryStart: blocks(CARRY),
       carryEnd: blocks(CARRY),
@@ -91,13 +94,13 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
     kind: "slotDependent",
     what: "a dependent in a slot (an `/h/` stand-in or `Odo` slot)",
     cells: {
-      outerFrames: unstated("blocks"),
+      outerFrames: blocks(DEPENDENTS),
       holder: passes("nesting", HOLDER),
       carryStart: blocks(CARRY),
       carryEnd: blocks(CARRY),
       carried: unstated("passes", "nesting"),
-      binder: unstated("passes", "nesting"),
-      boundTag: unstated("passes", "resolve"),
+      binder: passes("nesting", UA),
+      boundTag: passes("resolve", BOUND),
       tone: passes("nesting", TONE),
     },
   },
@@ -133,12 +136,12 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
     kind: "quote",
     what: "a cite (`[…]`)",
     cells: {
-      outerFrames: unstated("blocks"),
-      holder: unstated("blocks"),
+      outerFrames: blocks(QUOTE_ACTS),
+      holder: blocks(QUOTE_ACTS),
       carryStart: blocks(CARRY),
       carryEnd: blocks(CARRY),
       carried: blocks(CARRY),
-      binder: unstated("blocks"),
+      binder: blocks(QUOTE_ACTS),
       boundTag: blocks(QUOTE_TOPICS),
       tone: blocks(TONE),
     },

@@ -8,7 +8,7 @@ Page shape read by code:
 Sections named by data:
 - #universals-domains-generics: 1 rejection, 2 interpreter rows, 2 interpreter classes, 1 frame key
 - #kind-reference: 1 construction home, 1 interpreter row, 1 interpreter class
-- #bound-tags: 1 construction home, 4 rejections, 4 boundary cells
+- #bound-tags: 1 construction home, 4 rejections, 5 boundary cells
 Inbound links: npm run page-refs -- universals-domains.md
 -->
 
