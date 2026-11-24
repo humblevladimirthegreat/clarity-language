@@ -14,7 +14,10 @@
 /** The slots. */
 export type SlotId = "carriedFrame" | "topic" | "standInBack" | "hookResume" | "supposition" | "sentenceBefore" | "answer";
 
-/** What may end a slot's value. */
+/**
+ * What may end a slot's value. A cell says whether the sentence that is the event, and those after it, still read the
+ * value; for a slot only the next sentence reads (`sentenceBefore`, `answer`), whether that sentence still reads it.
+ */
 export type EndEvent = "newValue" | "statementWord" | "byTheWay" | "goodbye";
 
 /** Whether an event ends the value. A goodbye that ends every speaker's value, not only its own speaker's, says so. */
@@ -63,6 +66,8 @@ const TOPIC_QUOTE = "topic.md#topic-dependents";
 const BACK = "stand-in-vowels.md#stand-in-back";
 const RESUME = "in-clause-hooks.md#hook-resume";
 const LINKERS = "sentence-linkers.md#sentence-linkers";
+const PAST = "sentence-linkers.md#past-a-period";
+const FILL = "questions.md#fill-ask";
 const ASIDES = "spans.md#asides-th";
 const ASIDE_TOPIC = "quote-contents.md#topic-quotes";
 
@@ -73,16 +78,6 @@ const asideBlocks: AsideCell = { verdict: "blocks", anchor: ASIDES };
 const ends = (anchor: string): EndCell => ({ verdict: "ends", anchor });
 const keeps = (anchor: string): EndCell => ({ verdict: "keeps", anchor });
 const unstatedEnd = (today: "ends" | "keeps"): EndCell => ({ verdict: "unstated", anchor: "", today });
-const unstatedKept = (today: "speaker" | "shared"): KeptCell => ({ verdict: "unstated", anchor: "", today });
-const unstatedQuote = (today: "passes" | "blocks"): QuoteCell => ({ verdict: "unstated", anchor: "", today });
-
-/** Every event after the value's own sentence replaces it: it lasts one sentence. Today's behavior; no page states it. */
-const ONE_SENTENCE: Record<EndEvent, EndCell> = {
-  newValue: unstatedEnd("ends"),
-  statementWord: unstatedEnd("ends"),
-  byTheWay: unstatedEnd("ends"),
-  goodbye: unstatedEnd("ends"),
-};
 
 /** The discourse slot table. */
 export const DISCOURSE_SLOTS: readonly SlotRow[] = [
@@ -118,24 +113,19 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     what: "the latest content per act vowel",
     setBy: "a sentence, by its act vowel (none states), or a dependent a stand-in of that vowel fills",
     readBy: { what: "a stand-in on `-rth`", links: ["standInBack lexReading:standInBack"] },
-    endedBy: { newValue: ends(BACK), statementWord: unstatedEnd("keeps"), byTheWay: unstatedEnd("keeps"), goodbye: unstatedEnd("keeps") },
-    kept: unstatedKept("shared"),
+    endedBy: { newValue: ends(BACK), statementWord: keeps(BACK), byTheWay: keeps(BACK), goodbye: unstatedEnd("keeps") },
+    kept: { verdict: "shared", anchor: BACK },
     quote: { verdict: "blocks", anchor: BACK },
     aside: asidePasses(ASIDES),
     anchors: [BACK],
   },
   {
     id: "hookResume",
-    what: "the latest extra-noun hook per vowel",
-    setBy: "an extra-noun hook with a landmark (stacked vowels: per vowels)",
+    what: "the latest landmark on an extra-noun hook (a stacked `-r` hook looks first for the latest with its vowels)",
+    setBy: "an extra-noun hook with a landmark",
     readBy: { what: "an extra-noun hook on `-r` (`er`, `aor`)", links: ["hookResume hookJob:resume"] },
-    endedBy: {
-      newValue: unstatedEnd("ends"),
-      statementWord: unstatedEnd("keeps"),
-      byTheWay: unstatedEnd("keeps"),
-      goodbye: unstatedEnd("keeps"),
-    },
-    kept: unstatedKept("shared"),
+    endedBy: { newValue: ends(RESUME), statementWord: keeps(RESUME), byTheWay: keeps(RESUME), goodbye: unstatedEnd("keeps") },
+    kept: { verdict: "shared", anchor: RESUME },
     quote: { verdict: "blocks", anchor: RESUME },
     aside: asidePasses(ASIDES),
     anchors: [RESUME],
@@ -152,7 +142,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
       goodbye: { verdict: "ends", anchor: CARRY, everyone: true },
     },
     kept: { verdict: "shared", anchor: NOTIONAL },
-    quote: unstatedQuote("blocks"),
+    quote: { verdict: "blocks", anchor: NOTIONAL },
     aside: asideBlocks,
     anchors: [NOTIONAL, NOTIONAL_ENDS, CARRY],
   },
@@ -164,22 +154,22 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
       what: "a sentence linker, a discourse hook, a polar word",
       links: ["linker unit:linker", "discourse edge:hook", "discourse hookJob:discourse", "polar edge:polar"],
     },
-    endedBy: { ...ONE_SENTENCE, newValue: ends(LINKERS) },
-    kept: unstatedKept("shared"),
-    quote: unstatedQuote("blocks"),
+    endedBy: { newValue: ends(LINKERS), statementWord: keeps(PAST), byTheWay: keeps(PAST), goodbye: unstatedEnd("ends") },
+    kept: { verdict: "shared", anchor: PAST },
+    quote: { verdict: "blocks", anchor: PAST },
     aside: asideBlocks,
-    anchors: [LINKERS, "hooks.md#discourse-hooks", "questions.md#polar-particle"],
+    anchors: [LINKERS, PAST, "hooks.md#discourse-hooks", "questions.md#polar-particle"],
   },
   {
     id: "answer",
     what: "the question an answer fills",
     setBy: "a question",
     readBy: { what: "the reply right after it", links: ["answer answer:answer"] },
-    endedBy: ONE_SENTENCE,
-    kept: unstatedKept("shared"),
-    quote: unstatedQuote("blocks"),
+    endedBy: { newValue: ends(FILL), statementWord: unstatedEnd("keeps"), byTheWay: ends(FILL), goodbye: unstatedEnd("ends") },
+    kept: { verdict: "shared", anchor: FILL },
+    quote: { verdict: "blocks", anchor: FILL },
     aside: asideBlocks,
-    anchors: ["questions.md#fill-ask"],
+    anchors: [FILL],
   },
 ];
 

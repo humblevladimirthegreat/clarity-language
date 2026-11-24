@@ -7,7 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #question: 2 construction homes, 1 closed word, 3 interpreter rows, 3 interpreter classes, 2 frame keys
-- #fill-ask: 3 rejections, 2 interpreter rows, 2 interpreter classes, 1 frame key, 1 discourse slot cell
+- #fill-ask: 3 rejections, 2 interpreter rows, 2 interpreter classes, 1 frame key, 5 discourse slot cells
 - #question-tone: 3 construction homes
 - #polar-particle: 3 construction homes, 1 rejection, 6 closed words, 1 interpreter row, 1 interpreter class, 1 discourse slot cell
 Inbound links: npm run page-refs -- questions.md
@@ -90,6 +90,8 @@ If the reply is just one noun, not a full sentence, write it as a [citation](wor
 > "Azozon."
 
 Written after the question, the reply is a new [turn](speech-moves.md#turn-y), so it opens with `yal`: `yel zar vowurol. yal azozon.`
+
+Only the sentence right after the question fills the blank, whoever says it. Once another sentence or a new question comes between, the blank is closed. A reply that opens with a sentence linker, such as *by the way*, is a new remark, not the answer, and a name inside a quote is the quoted person's words, not your answer.
 
 A reply of more than one noun keeps its letters. It is a sentence with only the blank's role in it: [existence](predication.md#existence) for a `/z/` blank, a [lone object](predication.md#unsaid-event) for a `/d/` blank.
 

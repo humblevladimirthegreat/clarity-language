@@ -8,7 +8,7 @@ Page shape read by code:
 Sections named by data:
 - #in-clause: 1 interpreter row, 1 interpreter class
 - #hook-w: 2 construction homes
-- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 2 discourse slot cells
+- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 6 discourse slot cells
 Inbound links: npm run page-refs -- in-clause-hooks.md
 -->
 
@@ -104,6 +104,8 @@ A discourse hook (a hook at the front of a sentence that ties it to what was sai
 ### Point back (`er` / `ar` / `ur` / `or`) {#hook-resume}
 
 English *there*, *from there*, and *for it* point back to a place or thing already named. In Ageben, give the extra-noun hook `-r` and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume `-r`](/pronouns#resume-r) does on a noun. A hook with `-r` has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook). So you can say *there* or *from there* without naming the landmark again.
+
+The landmark in play is the latest one named on an extra-noun hook, whichever hook named it and whoever said it: naming a new landmark replaces it. A stacked hook with `-r`, such as `aer`, looks first for the latest landmark named with its own vowels. A written statement word such as `yal`, or a [*by the way*](sentence-linkers.md#sentence-linkers) in between, leaves it in play.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Points back to | English |

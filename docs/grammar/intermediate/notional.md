@@ -4,7 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #notional-as-if-framing: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key, 3 discourse slot cells
+- #notional-as-if-framing: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key, 4 discourse slot cells
 - #follow-up-endings-notional: 2 overlay rows, 1 pair-table rule, 2 discourse slot cells
 Inbound links: npm run page-refs -- notional.md
 -->
@@ -27,7 +27,7 @@ English *imagine …*, *as if …*, and *for the sake of argument* talk about a 
 
 **For *could be*, use:** [MAY](/knowing#may).
 
-NOTIONAL [carries forward](evidentiality.md#carry-forward) like a channel, so a story you make up, or a supposition you reason through, runs over several sentences. Either speaker can ask inside a supposition, with NOTIONAL on the question, until the frame that carries it ends. *Once upon a time* is NOTIONAL on the first sentence. It also ends a channel carried from an earlier sentence: from there on, the imagined scene carries.
+NOTIONAL [carries forward](evidentiality.md#carry-forward) like a channel, so a story you make up, or a supposition you reason through, runs over several sentences. Either speaker can ask inside a supposition, with NOTIONAL on the question, until the frame that carries it ends. A question inside a [quote](/spans#writing) is the quoted speaker's, so it does not ask inside your supposition. *Once upon a time* is NOTIONAL on the first sentence. It also ends a channel carried from an earlier sentence: from there on, the imagined scene carries.
 
 > `zazozon theyum vowurol. zazozon vehohel. zazozon vozuyel.`
 >

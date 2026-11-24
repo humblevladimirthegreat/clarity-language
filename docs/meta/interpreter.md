@@ -284,6 +284,8 @@ The end events:
 | `byTheWay` | *by the way* (`xavedam`) |
 | `goodbye` | a goodbye |
 
+An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with `yal` still answers, and `yal xezem …` still links to the sentence before.
+
 The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A passing `aside` cell reads the value where the aside sits: the topic through the aside's resolve, which starts from the outer context, and a point-back through the sentence's own `to` pass, which reaches the links inside its asides. Nothing inside an aside sets a slot.
 
 **`carriedFrame`**, the carried frame: a channel, holder or NOTIONAL, a dated channel with its offset (`evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now`). Set by a channel, NOTIONAL or holder on a statement's main clause; read by a later statement with no such frame of its own, as one `carriedFrame` link (`carry:channel`, `carry:holder`, `carry:notional`) per inherited frame, `to` the reading that set it, `frame` that reading's frame; a dated channel's link also holds its offset words. The record is `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`). Settled 2026-11-18: a holder on MAY carries and the MAY does not (`holder.md#naming-a-holder`); only a channel on the main clause starts or ends a frame, never one in a dependent or on one clause-join member (`evidentiality.md#carry-forward`, the boundary table's `carryStart` and `carryEnd`); the grounds after `blarl` sit in the body that takes the frame (decision 16, no page edit); a carried frame covers what you claim, never your own stance (decision 15, `evidentiality.md#carry-forward`): a statement whose clause has WANT, PLAN or DECISION neither takes nor ends it, and on a statement with a speaker attitude (`slot:th`) or a feeling word on `/th/` (a sake word with a moved horizon, `how-you-feel.md#feeling-word`) the claim takes it and the link's `coveredBy` lists those frames, which sit over it. The order is a link field, not an `order` entry, because the carried frame is never in the later reading's `frames`.
@@ -315,22 +317,22 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | Column | Cell |
 |--------|------|
 | `newValue` | ends, `stand-in-vowels.md#stand-in-back` |
-| `statementWord` | unstated (today: keeps) |
-| `byTheWay` | unstated (today: keeps) |
+| `statementWord` | keeps, `stand-in-vowels.md#stand-in-back` |
+| `byTheWay` | keeps, `stand-in-vowels.md#stand-in-back` |
 | `goodbye` | unstated (today: keeps) |
-| `kept` | unstated (today: shared) |
+| `kept` | shared, `stand-in-vowels.md#stand-in-back` |
 | `quote` | blocks, `stand-in-vowels.md#stand-in-back` |
 | `aside` | passes, `spans.md#asides-th` |
 
-**`hookResume`**, the latest extra-noun hook per vowel (`in-clause-hooks.md#hook-resume`). Set by an extra-noun hook with a landmark, per vowels for stacked vowels; read by an extra-noun hook on `-r` (`hookJob:resume`, the [links](#links) row).
+**`hookResume`**, the latest landmark on an extra-noun hook, whatever its vowel; a stacked hook on `-r` looks first for the latest with its own vowels (`in-clause-hooks.md#hook-resume`). Set by an extra-noun hook with a landmark; read by an extra-noun hook on `-r` (`hookJob:resume`, the [links](#links) row).
 
 | Column | Cell |
 |--------|------|
-| `newValue` | unstated (today: ends) |
-| `statementWord` | unstated (today: keeps) |
-| `byTheWay` | unstated (today: keeps) |
+| `newValue` | ends, `in-clause-hooks.md#hook-resume` |
+| `statementWord` | keeps, `in-clause-hooks.md#hook-resume` |
+| `byTheWay` | keeps, `in-clause-hooks.md#hook-resume` |
 | `goodbye` | unstated (today: keeps) |
-| `kept` | unstated (today: shared) |
+| `kept` | shared, `in-clause-hooks.md#hook-resume` |
 | `quote` | blocks, `in-clause-hooks.md#hook-resume` |
 | `aside` | passes, `spans.md#asides-th` |
 
@@ -343,31 +345,31 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `byTheWay` | ends (the owner's), `evidentiality.md#carry-forward` |
 | `goodbye` | ends every speaker's, `evidentiality.md#carry-forward` |
 | `kept` | shared, `notional.md#notional-as-if-framing` |
-| `quote` | unstated (today: blocks) |
+| `quote` | blocks, `notional.md#notional-as-if-framing` |
 | `aside` | blocks, `spans.md#asides-th` |
 
-**`sentenceBefore`**, the sentence before (`sentence-linkers.md#sentence-linkers`, `hooks.md#discourse-hooks`, `questions.md#polar-particle`). Set by every sentence; read by a sentence linker (`unit:linker`), a discourse hook (`edge:hook`, `hookJob:discourse`) and a polar word (`edge:polar`).
+**`sentenceBefore`**, the sentence before (`sentence-linkers.md#sentence-linkers`, `sentence-linkers.md#past-a-period`, `hooks.md#discourse-hooks`, `questions.md#polar-particle`). Set by every sentence; read by a sentence linker (`unit:linker`), a discourse hook (`edge:hook`, `hookJob:discourse`) and a polar word (`edge:polar`).
 
 | Column | Cell |
 |--------|------|
 | `newValue` | ends, `sentence-linkers.md#sentence-linkers` |
-| `statementWord` | unstated (today: ends) |
-| `byTheWay` | unstated (today: ends) |
+| `statementWord` | keeps, `sentence-linkers.md#past-a-period` |
+| `byTheWay` | keeps, `sentence-linkers.md#past-a-period` |
 | `goodbye` | unstated (today: ends) |
-| `kept` | unstated (today: shared) |
-| `quote` | unstated (today: blocks) |
+| `kept` | shared, `sentence-linkers.md#past-a-period` |
+| `quote` | blocks, `sentence-linkers.md#past-a-period` |
 | `aside` | blocks, `spans.md#asides-th` |
 
 **`answer`**, the question an answer fills (`questions.md#fill-ask`). Set by a question; read by the reply right after it (`answer:answer`).
 
 | Column | Cell |
 |--------|------|
-| `newValue` | unstated (today: ends) |
-| `statementWord` | unstated (today: ends) |
-| `byTheWay` | unstated (today: ends) |
+| `newValue` | ends, `questions.md#fill-ask` |
+| `statementWord` | unstated (today: keeps after `yal`; a reply opening with `yam` or `yar` answers nothing) |
+| `byTheWay` | ends, `questions.md#fill-ask` |
 | `goodbye` | unstated (today: ends) |
-| `kept` | unstated (today: shared) |
-| `quote` | unstated (today: blocks) |
+| `kept` | shared, `questions.md#fill-ask` |
+| `quote` | blocks, `questions.md#fill-ask` |
 | `aside` | blocks, `spans.md#asides-th` |
 
 ## Scope statements

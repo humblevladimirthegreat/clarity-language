@@ -6,6 +6,7 @@ band: intermediate
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
+- #past-a-period: 5 discourse slot cells
 - #sentence-linkers: 2 rejections, 9 closed words, 1 interpreter row, 1 interpreter class, 2 discourse slot cells
 Inbound links: npm run page-refs -- sentence-linkers.md
 -->
@@ -35,6 +36,8 @@ When you say several sentences in a row, the listener needs to hear where each o
 The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](tone-marks.md#showing-your-tone) that go before the words they color. Whether a rest comes, and which word follows it, tells the listener if the speech act goes on or a new one starts. After a rest, a new `/y/` turn word (*yes*, *no*, a call, or an act word) starts a new act, a bare body is a statement whatever came before it, and only a sentence linker keeps the prior act. With no rest, as after an `/x/` continue, the same sentence goes on.
 
 A call, a *yes* / *no*, or an interjection closed by a period is a whole move and reaches only its own turn. The next body is its own statement: it is not said to that person because of the call, and the *yes* / *no* or interjection does not reach it either. Whether you are still talking to that person is up to the conversation.
+
+A sentence linker (below), a [discourse hook](/hooks#discourse-hooks), and a [polar word](/questions#polar-particle) read the sentence right before them, whoever said it: a reply can open with *however* (`xezem`), and `yaol` agrees with the other person's claim. A written statement word before a linker does not change that, and *by the way* is itself a linker that reads the sentence before. Inside a [quote](/spans#writing), the sentence before is one of the quoted sentences; the first sentence in a quote has none.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|

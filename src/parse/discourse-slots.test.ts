@@ -71,32 +71,26 @@ describe("discourse slot table", () => {
     ]);
   });
 
+  it("keeps a point-back, the sentence before and the answer over a written statement word", () => {
+    // A `yal` sentence still reads them: a reply opening with `yal` answers (questions.md#fill-ask; the answer cell stays
+    // unstated, since a reply opening with `yam` or `yar` answers nothing today), and `yal xezem …` links to the sentence
+    // before; *by the way* is a linker, so it reads the sentence before but answers nothing.
+    for (const id of ["standInBack", "hookResume", "sentenceBefore", "answer"] as const) assert.equal(endsAt(id, "statementWord"), false, id);
+    for (const id of ["standInBack", "hookResume", "sentenceBefore"] as const) assert.equal(endsAt(id, "byTheWay"), false, id);
+    assert.equal(endsAt("answer", "byTheWay"), true);
+    for (const id of ["sentenceBefore", "answer"] as const) assert.equal(perSpeaker(id), false, id);
+  });
+
   it("lists the unstated cells", () => {
     const open = slotCells()
       .filter(({ cell }) => cell.verdict === "unstated")
       .map(({ id, column, cell }) => `${id} ${column}: ${slotCellLabel(cell)}`);
     assert.deepEqual(open, [
-      "standInBack statementWord: unstated (today: keeps)",
-      "standInBack byTheWay: unstated (today: keeps)",
       "standInBack goodbye: unstated (today: keeps)",
-      "standInBack kept: unstated (today: shared)",
-      "hookResume newValue: unstated (today: ends)",
-      "hookResume statementWord: unstated (today: keeps)",
-      "hookResume byTheWay: unstated (today: keeps)",
       "hookResume goodbye: unstated (today: keeps)",
-      "hookResume kept: unstated (today: shared)",
-      "supposition quote: unstated (today: blocks)",
-      "sentenceBefore statementWord: unstated (today: ends)",
-      "sentenceBefore byTheWay: unstated (today: ends)",
       "sentenceBefore goodbye: unstated (today: ends)",
-      "sentenceBefore kept: unstated (today: shared)",
-      "sentenceBefore quote: unstated (today: blocks)",
-      "answer newValue: unstated (today: ends)",
-      "answer statementWord: unstated (today: ends)",
-      "answer byTheWay: unstated (today: ends)",
+      "answer statementWord: unstated (today: keeps)",
       "answer goodbye: unstated (today: ends)",
-      "answer kept: unstated (today: shared)",
-      "answer quote: unstated (today: blocks)",
     ]);
   });
 });
