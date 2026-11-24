@@ -23,8 +23,9 @@ How to read and write one Ageben **clause** (roughly, one simple sentence): who 
 You already write a [citation](word-endings.md): root + ending (`odozel`, `owurol`, `azozon`). In a sentence, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
+<!-- Agent summary: subject (who acts) = `/z/`, verb (the action) = `/v/`. Word = role letter + root + ending, one word: citation `odozel` → `zodozel`; root and ending stay as cited. A name keeps its `-n`: `azozon` → `zazozon`. Subject + verb only → order Subject – Verb. A period ends the statement, so `zodozel vowurol.` is a whole sentence. -->
 
-To say who does something and what they do, mark the **subject** (who acts) with `/z/` (a `z` as the word's first letter) and the **verb** (the action) with `/v/`. Write role letter + root + ending as one word (`zodozel` from the citation `odozel`). With only a subject and a verb, the order is Subject – Verb. A period ends the statement, so those two words already make a whole sentence.
+To say who does something and what they do, mark the **subject** (who acts) with `/z/` and the **verb** (the action) with `/v/`. Each of these letters goes in front of a citation as the word's first letter, and the result is written as one word, so the citation `odozel` becomes `zodozel`. With only a subject and a verb, the order is Subject – Verb, and a period ends the statement, so those two words already make a whole sentence.
 
 > `zodozel vowurol.`
 >
@@ -32,7 +33,9 @@ To say who does something and what they do, mark the **subject** (who acts) with
 >
 > "A dog walks."
 
-A name you already cite with `-n` (`azozon`) keeps `-n` in the sentence:
+Compare `zodozel` with its citation `odozel`. The root and the ending `-l` are the same, and the `z` in front is the only new part: it says the dog is the one acting. The verb works the same way, with `v` in front of the citation `owurol`.
+
+A name keeps its ending too. You cite a name with `-n` (`azozon`), so in the sentence it is `zazozon`, with the `-n` still at the end:
 
 > `zazozon vowurol.`
 >
@@ -40,9 +43,12 @@ A name you already cite with `-n` (`azozon`) keeps `-n` in the sentence:
 >
 > "Azozon walks."
 
-### Direct object (`/d/`)
+The two sentences differ only in who walks. Both subjects start with the same `z`, and each keeps the ending of its own citation: `-l` for the dog, `-n` for Azozon.
 
-To say who or what the action is done to, add a **direct object** and mark it with `/d/`. The default order is Subject – Direct Object – Verb. Because the first letter already says each word’s role, you may move those three words without changing who did what, and moving a word does not stress it. Keep the default order anyway, because listeners expect it.
+### Direct object (`/d/`)
+<!-- Agent summary: direct object (who/what is acted on) = `/d/`. Default order Subject – Direct Object – Verb (`zodozel dogozel vayebel.`). The letters carry the roles: swapping `z` and `d` between two nouns swaps who does what (`zogozel dodozel vayebel.` = a cat sees a dog). Moving words keeps each role and adds no stress; keep the default order anyway. -->
+
+To say who or what the action is done to, add a **direct object** and mark it with `/d/`. The default order is Subject – Direct Object – Verb, so the verb comes last, after the object.
 
 > `zodozel dogozel vayebel.`
 >
@@ -50,7 +56,17 @@ To say who or what the action is done to, add a **direct object** and mark it wi
 >
 > "A dog sees a cat."
 
-Same meaning, object first:
+Because each word's first letter says its role, swapping the letters swaps who does what. Here the cat does the seeing:
+
+> `zogozel dodozel vayebel.`
+>
+> z-cat | d-dog | v-see
+>
+> "A cat sees a dog."
+
+Both sentences use the same two roots and the same two letters. What changed is which noun carries which letter, and that alone turns the dog from the one who sees into the one who is seen.
+
+Moving a word keeps its letter, so it keeps its role. You may move the subject, the direct object and the verb without changing who did what, and moving a word does not stress it. Here the object comes first, with the same meaning:
 
 > `dogozel zodozel vayebel.`
 >
@@ -58,9 +74,12 @@ Same meaning, object first:
 >
 > "A dog sees a cat."
 
-### Adjectives (`/ɡ/`) {#adjectives-ɡ}
+In English, order is often the only thing that says who sees whom, so *a dog sees a cat* and *a cat sees a dog* are different sentences. In Ageben the letters say it. Even so, keep the default order, Subject – Direct Object – Verb, because listeners expect it.
 
-An **adjective** names a property of a noun (*angry*). Mark it with `/ɡ/` and put it right after the noun it describes. You can stack several adjectives after one noun.
+### Adjectives (`/ɡ/`) {#adjectives-ɡ}
+<!-- Agent summary: adjective (property of a noun) = `/ɡ/`, right after the noun it describes; several may stack after one noun. Position picks the noun: `zodozel gonumul dogozel vayebel.` = an angry dog sees a cat; `zodozel dogozel gonumul vayebel.` = a dog sees an angry cat. Event root in `/ɡ/` → the noun is in the middle of the event (`zodozel gowurol` = a walking dog). -->
+
+An **adjective** names a property of a noun, such as *angry*. Mark it with `/ɡ/` and put it right after the noun it describes, so for *an angry dog* you say the dog first and *angry* after it.
 
 > `zodozel gonumul vowurol.`
 >
@@ -68,11 +87,34 @@ An **adjective** names a property of a noun (*angry*). Mark it with `/ɡ/` and p
 >
 > "An angry dog walks."
 
-When the root names an event, the adjective says the noun is in the middle of it: `gowurol` after *dog* is *a walking dog*.
+Because the adjective goes right after its noun, its position decides which noun has the property. In the next two sentences the words are the same, and only `gonumul` moves:
+
+> `zodozel gonumul dogozel vayebel.`
+>
+> [z-dog | g-angry] | d-cat | v-see
+>
+> "An angry dog sees a cat."
+
+> `zodozel dogozel gonumul vayebel.`
+>
+> z-dog | [d-cat | g-angry] | v-see
+>
+> "A dog sees an angry cat."
+
+When the root names an event, the adjective says the noun is in the middle of it: `gowurol` after *dog* is *a walking dog*. Compare it with the verb `vowurol`, the same root with a different letter. In `zodozel vowurol.` the walking is the action the sentence reports. As `gowurol`, the walking describes the dog, and the sentence can report another action.
+
+You can stack several adjectives after one noun, and each of them describes that noun:
+
+> `zodozel gonumul gowurol dogozel vayebel.`
+>
+> [z-dog | g-angry | g-walk] | d-cat | v-see
+>
+> "An angry dog that is walking sees a cat."
 
 ### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
+<!-- Agent summary: `/w/` = detail on the word right after it, such as how strongly an adjective holds: `zodozel welazem gonumul` = a very angry dog; `welazem` describes `gonumul` only, not the dog. Goes immediately before its word; before a noun or a verb a `/w/` word is rejected (`welazem` after `gonumul` would land before the verb). -->
 
-To say how strongly a property holds (*very* angry), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.
+To say how strongly a property holds (*very* angry), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, so in the example below the dog is angry, and *very* says how angry.
 
 > `zodozel welazem gonumul vowurol.`
 >
@@ -80,9 +122,14 @@ To say how strongly a property holds (*very* angry), add a word marked with `/w/
 >
 > "A very angry dog walks."
 
-### Adverbs (`/h/`) {#adverbs-h}
+Without `welazem`, `zodozel gonumul vowurol.` says only that an angry dog walks. Adding `welazem` changes how angry the dog is, and nothing else in the sentence.
 
-An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hadurom halozum` *hastily and quietly*).
+Because the `/w/` word describes the word right after it, keep it on the near side of the adjective. Placed after `gonumul`, `welazem` would stand right before the verb `vowurol`, and a verb takes no `/w/` word, so that sentence is not well formed. A noun takes none either: to describe the dog itself, use a `/ɡ/` word.
+
+### Adverbs (`/h/`) {#adverbs-h}
+<!-- Agent summary: adverb (how, when or where the action happens) = `/h/`, anywhere in the sentence; moving it changes nothing (`zodozel hadurom vowurol.` = `zodozel vowurol hadurom.`). Several may sit together (`hadurom halozum` = hastily and quietly). Same root in `/ɡ/` describes the noun instead (`zodozel gadurom` = a hasty dog). A `/w/` word goes right before an `/h/` word too (`welazem hadurom` = very hastily). -->
+
+An **adverb** says how, when, or where an action happens. Mark it with `/h/`. An adverb describes the action, not a noun beside it, so you may place it anywhere in the sentence.
 
 > `zodozel hadurom vowurol.`
 >
@@ -90,7 +137,22 @@ An **adverb** says how, when, or where an action happens. Mark it with `/h/`. Yo
 >
 > "A dog walks hastily."
 
+Put `hadurom` last instead, as in `zodozel vowurol hadurom.`, and the sentence means the same. Several adverbs can sit next to each other, as in `hadurom halozum` (*hastily and quietly*).
+
+The same root with `/ɡ/` describes the dog instead of the walking:
+
+> `zodozel gadurom vowurol.`
+>
+> [z-dog | g-haste] | v-walk
+>
+> "A hasty dog walks."
+
+Here haste is a property of the dog, and the sentence says nothing about how this walk goes. With `hadurom`, the haste is in the walking. So when the word says how the action happens, use `/h/`. When it says what the person or thing is like, use `/ɡ/` and put it right after the noun.
+
+A `/w/` word works before an adverb just as it does before an adjective, so `welazem hadurom` is *very hastily*.
+
 ### Stance (`/th/`) {#stance-th}
+<!-- Agent summary: stance word = `/th/`: how the speaker stands toward the whole claim (how sure, how known, why it holds, only imagined); place it as freely as `/h/`. `thevemem zodozel vowurol.` = I doubt a dog is walking; without it, `zodozel vowurol.` = a dog walks. Same root in `/h/` describes the action instead (`zodozel hevemem vowurol.` = a dog walks doubtfully). `/th/` = what is in a mind; with nothing else marked, the speaker's mind, now, as they speak. -->
 
 An adverb describes the action. A **stance** word describes how you, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/` (`th` counts as one letter, [phonology](phonology.md#consonants)) and, as with `/h/`, place it anywhere in the sentence. One sentence then carries both the claim and your stance on it.
 
@@ -100,11 +162,22 @@ An adverb describes the action. A **stance** word describes how you, the speaker
 >
 > "I doubt a dog is walking."
 
-The adverb describes the walking. The stance word describes your claim about it.
+Compare the first sentence on this page, `zodozel vowurol.`, *a dog walks*. Adding `thevemem` keeps the same claim and adds that you doubt it.
+
+The adverb describes the walking. The stance word describes your claim about it. So the same root means something different with each letter:
+
+> `zodozel hevemem vowurol.`
+>
+> z-dog | h-doubt | v-walk
+>
+> "A dog walks doubtfully."
+
+With `/h/`, the doubt says how the dog walks. With `/th/`, the doubt is yours, and it is about whether the dog walks at all. So when you would say *I doubt* in English, use `/th/`, and keep `/h/` for *doubtfully* as a way of walking.
 
 A stance is yours now, as you speak. `/th/` is for what is in a mind, and with nothing else marked, that mind is yours.
 
 ### Which word covers which {#which-covers-which}
+<!-- Agent summary: a `/th/` stance word is about the whole claim, as are some words taught later (*always*, *I plan*). With two such words, the earlier covers the later: it is about the later word and the claim together, so swapping them changes the meaning (`thewemum thevemem …` = the doubt worries you; `thevemem thewemum …` = the walking would worry you). A noun introducing someone or something new (*a dog* on first mention) takes part too: `zodozel thevemem vowurol.` = there is a dog that I doubt is walking; so put stance words before such a noun. With one such word, its place changes nothing. Ordinary `/h/` adverbs never take part. Table: words with their own rule (speech-act word first in its turn; *because* / *if* clause last, said first and pointed back to in order to cover; own feeling, surprise or benefit stays the speaker's; whose-view word covers the whole clause; join word right after stance words works only on them). -->
 
 A stance word is about the whole claim, and so are a few other words you will meet later, such as *always* and *I plan*. When one sentence has two such words, the earlier one **covers** the later one: it is about the later word and the claim together. Their order alone sets this, so swapping the two changes what you say.
 
@@ -120,9 +193,19 @@ A stance word is about the whole claim, and so are a few other words you will me
 >
 > "I doubt a dog is walking, worrying as that would be." (the walking would worry you)
 
-A noun that brings someone or something new into the talk, such as *a dog* the first time you mention it, takes part in this order too; a later lesson on joins lists every phrase that does. In `zodozel thevemem vowurol.` the dog comes first, so it covers the doubt: *there is a dog that I doubt is walking*. That is why the examples above put the stance words before the dog.
+In the first sentence `thewemum` comes first, so the worry covers the doubt: what worries you is that you doubt the dog is walking. In the second, `thevemem` comes first, so the doubt covers the worry. You doubt the dog is walking, and the worry is about the walking, if it happens.
 
-With only one such word, its place changes nothing. An ordinary adverb (how, when, or where) never takes part: it may sit anywhere.
+A noun that brings someone or something new into the talk, such as *a dog* the first time you mention it, takes part in this order too. Put the dog before the stance word, and the dog covers the doubt:
+
+> `zodozel thevemem vowurol.`
+>
+> z-dog | th-doubt | v-walk
+>
+> "There is a dog that I doubt is walking."
+
+Here you say there is a dog, and you doubt only its walking. In `thevemem zodozel vowurol.` the doubt comes first and covers the dog as well: *I doubt a dog is walking*. That is why the examples above put the stance words before the dog.
+
+With only one such word, its place changes nothing. An ordinary adverb (how, when, or where) never takes part, so it may sit anywhere, before or after a stance word.
 
 A few words keep a rule of their own, which their pages give:
 
@@ -135,6 +218,7 @@ A few words keep a rule of their own, which their pages give:
 | A join word (a word that closes a list, such as *and* or *not*) right after stance words | Works only on those stance words, so it covers nothing else |
 
 ### Extra nouns (`/b/`) {#extra-nouns}
+<!-- Agent summary: extra noun beyond subject and object = `/b/`; the letter after `b` sets its job. Plain `b` = who receives what the verb passes on (who is paid, who is told); the thing given or said stays `/d/` (`zazozon daral varal balazun.` = Azozon pays Alazun money); at most one receiver per verb, usually right after the verb (S – D – V – B). `bl` = the second person or thing of a relation word (its host) in `/ɡ/`, `/h/` or `/th/`, right after the host: `hewem blazozon` = like Azozon; `/w/` goes before the host (`welazem hewem blazozon`). `/h/` host → the relation describes the action (`zodozel vezuvel hewem blazozon.` = a dog sleeps like Azozon). A `bl-` word not right after its host is not a sentence; plain `b` may stand next to any word (`hadurom balazun` = still the one paid). -->
 
 Some sentences name a person or thing beyond the subject and direct object: who receives what is given, or whom something is like. Mark that **extra noun** with `/b/`; the letter after the `b` tells these two jobs apart.
 
@@ -146,7 +230,17 @@ A plain `/b/` word is the person who receives what the verb passes on: who gets 
 >
 > "Azozon tells Alazun."
 
-Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun right after it, with `l` after the `b`. The relation word is then the `bl-` word's **host**, and the `bl-` word completes the relation. (cue: `l` ≈ lock: locked to the host right before it)
+With both nouns in one sentence, you can see the two jobs side by side:
+
+> `zazozon daral varal balazun.`
+>
+> z-Azozon | d-money | v-pay | b-Alazun
+>
+> "Azozon pays Alazun money."
+
+The money is what passes from Azozon to Alazun, so it takes `/d/`. Alazun is the one who receives it, so `balazun` takes plain `b`.
+
+Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun right after it, with `l` after the `b`. The relation word is then the `bl-` word's **host**, and the `bl-` word completes the relation. (cue: think of `l` as *lock*: the word is locked to the host right before it)
 
 > `hewem blazozon`
 >
@@ -162,17 +256,20 @@ A `/w/` word still goes before the host, so the host and its `bl-` word stay sid
 >
 > "very like Azozon"
 
+Because `hewem` is an adverb, *like Azozon* here describes the action, the way the dog sleeps:
+
 > `zodozel vezuvel hewem blazozon.`
 >
 > z-dog | v-sleep | [h-like | bl-Azozon]
 >
 > "A dog sleeps like Azozon."
 
-A `bl-` word needs its host right before it. Anywhere else it is not a sentence. A plain `/b/` word is never a host's partner, so the person who receives may stand next to any word.
+A `bl-` word needs its host right before it. Anywhere else it is not a sentence. A plain `/b/` word is never a host's partner, so the person who receives may stand next to any word. So ask what the noun does: if it receives something, use plain `b`, and if it completes a relation word right before it, use `bl`.
 
 **Compare with:** in <!-- lint: moved -->`zazozon hadurom balazun varal.` (*Azozon hastily pays Alazun*), `balazun` sits right after an `/h/` word and is still the one paid. `hewem blalazun` is *like Alazun*.
 
 ### Role letters {#role-letters}
+<!-- Agent summary: the eight role letters so far, in three groups. Nouns: `/z/` subject, `/d/` direct object, `/b/` extra noun (plain = receiver; `bl` = partner of the relation word before it). Action: `/v/` verb. Describers: `/ɡ/` a noun (right after it), `/w/` the next `/ɡ/`, `/h/` or `/th/` word, `/h/` the action (anywhere), `/th/` the speaker's stance on the claim (anywhere). -->
 
 The role letters you have used so far:
 
@@ -187,6 +284,8 @@ The role letters you have used so far:
 | `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | `w` ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | `h` starts *how* / *when* / *where* |
 | `/th/` | stance (how sure, how known, why, as if): what is in a mind | `th` ≈ *think* (your stance on the claim) |
+
+The eight letters fall into three groups. `/z/`, `/d/`, and `/b/` mark nouns, the people and things in the sentence, and `/v/` marks the action. The other four describe something, and each describes a different thing: `/ɡ/` a noun, `/w/` the word right after it, `/h/` the action, and `/th/` your stance on the whole claim. So when you choose a letter, first ask whether the word names someone, the action, or a description, and then ask what it describes.
 
 ### Practice {#beginner-practice}
 
