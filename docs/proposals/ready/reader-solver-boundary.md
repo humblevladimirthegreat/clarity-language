@@ -147,9 +147,10 @@ A review-later decision adds its own commit.
 
 ## Open decisions
 
-**D1. Does `ask` honor the supposition link?** *Class:* autonomous (how two readings combine), settled by the orchestrator before U6. Today `ask` passes a NOTIONAL question's filter on any NOTIONAL reading's path. The solver asks inside the latest supposition only (row 45).
+**D1. Does** `ask` **honor the supposition link?** *Class:* autonomous (how two readings combine), settled by the orchestrator before U6. Today `ask` passes a NOTIONAL question's filter on any NOTIONAL reading's path. The solver asks inside the latest supposition only (row 45).
 Options:
+
 - (a) `ask` requires the path's NOTIONAL frame to belong to the linked reading, or to a reading whose `carry:notional` link points to it;
 - (b) `ask` ignores the link, so the two tools keep differing.
 
-**Recommendation:** (medium) (a). The two tools exist to agree on what a question asks. With (b), the loop can say *yes* from a supposition the solver treats as closed. Whether a new supposition closes the old one is already settled for the solver, and (a) applies that rule rather than making a new one.
+**Recommendation:** (medium) (a). The two tools exist to agree on what a question asks. With (b), the loop can say *yes* from a supposition the solver treats as closed. Whether a new supposition closes the old one is already settled for the solver, and (a) applies that rule rather than making a new one. EDITOR: I accept (a)
