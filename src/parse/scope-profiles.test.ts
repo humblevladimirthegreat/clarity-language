@@ -1,6 +1,8 @@
 /**
  * Family profiles: the derived pair table equals the hand-written table it replaced (frozen below as it stood before
- * the profiles), case by case and anchor by anchor, and `explainPair` names the rule that decided a pair.
+ * the profiles, with the rows a decision changed since: `force` × `contrary` (contrary-to.md#contrary-to-stance) and the
+ * channel's cases (evidentiality.md#evidence-clause)), case by case and anchor by anchor, and `explainPair` names the
+ * rule that decided a pair.
  */
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
@@ -22,7 +24,7 @@ const FROZEN: readonly PairRow[] = [
   {"pair":["force","residue"],"kind":"rule","cases":[{"order":"over","over":"force","anchors":["speech-moves.md#speech-act-statement-question-command"]}]},
   {"pair":["force","notional"],"kind":"rule","cases":[{"order":"over","over":"force","anchors":["speech-moves.md#speech-act-statement-question-command"]}]},
   {"pair":["force","mirative"],"kind":"rule","cases":[{"order":"over","over":"mirative","anchors":["mirative.md#mirative"]}]},
-  {"pair":["force","contrary"],"kind":"rule","cases":[{"order":"over","over":"force","anchors":["speech-moves.md#speech-act-statement-question-command"]}]},
+  {"pair":["force","contrary"],"kind":"rule","cases":[{"order":"over","over":"contrary","anchors":["contrary-to.md#contrary-to-stance"]}]},
   {"pair":["force","occasion"],"kind":"rule","cases":[{"order":"over","over":"force","anchors":["speech-moves.md#speech-act-statement-question-command"]}]},
   {"pair":["say","sake"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["say","attitude"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
@@ -53,7 +55,7 @@ const FROZEN: readonly PairRow[] = [
   {"pair":["sake","occasion"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["attitude","binder"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["attitude","hinge"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","dependents.md#hinges","stand-in-vowels.md#stand-in-back"]}]},
-  {"pair":["attitude","stance"],"kind":"rule","cases":[{"order":"commutes","anchors":["feelings.md#speaker-attitude"],"when":{"stance":["channel"]}},{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
+  {"pair":["attitude","stance"],"kind":"rule","cases":[{"order":"commutes","anchors":["evidentiality.md#evidence-clause"],"when":{"stance":["channel"]}},{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
   {"pair":["attitude","holder"],"kind":"rule","cases":[{"order":"over","over":"attitude","anchors":["holder.md#what-the-holder-covers"]}]},
   {"pair":["attitude","intention"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["attitude","ability"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
@@ -90,7 +92,7 @@ const FROZEN: readonly PairRow[] = [
   {"pair":["stance","phase"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
   {"pair":["stance","residue"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which"]}]},
   {"pair":["stance","notional"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
-  {"pair":["stance","mirative"],"kind":"rule","cases":[{"order":"commutes","anchors":["mirative.md#mirative"],"when":{"stance":["channel"]}},{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
+  {"pair":["stance","mirative"],"kind":"rule","cases":[{"order":"commutes","anchors":["evidentiality.md#evidence-clause"],"when":{"stance":["channel"]}},{"order":"textOrder","anchors":["clause.md#which-covers-which","already-still-yet.md#stage-of-change"]}]},
   {"pair":["stance","contrary"],"kind":"commutes","cases":[{"order":"commutes","anchors":["contrary-to.md#contrary-to-stance"]}]},
   {"pair":["stance","occasion"],"kind":"rule","cases":[{"order":"textOrder","anchors":["clause.md#which-covers-which","usually-vs-must.md#general-claims"]}]},
   {"pair":["holder","intention"],"kind":"wordShape","cases":[{"order":"over","over":"holder","anchors":["want-and-decide.md#whose-intention"]}]},
@@ -183,6 +185,7 @@ describe("family profiles", () => {
     assert.equal(explainPair("call", "holder"), "call");
     assert.equal(explainPair("force", "say"), "edge");
     assert.equal(explainPair("force", "sake"), "escape:force");
+    assert.equal(explainPair("force", "contrary"), "escape:force");
     assert.equal(explainPair("holder", "attitude"), "escape:holder");
     assert.equal(explainPair("mirative", "contrary"), "escape:each-other");
     assert.equal(explainPair("holder", "occasion"), "covers:holder");

@@ -26,6 +26,11 @@ const REACH = "verb-and-stance-joins.md#stance-join-reach";
 /** A channel follows text order: first, how you know the whole generalization; after a fence or restrictor, each case. */
 const GENERALIZATION = "usually-vs-must.md#general-claims";
 const CONTRARY = "contrary-to.md#contrary-to-stance";
+/**
+ * A channel is not part of what you claim, only what backs it: it is not under your feeling, your surprise or a cause
+ * (attitude and mirative commute with it; it covers a hinge wherever it sits). MAY is part of the claim: text order.
+ */
+const BACKING = "evidentiality.md#evidence-clause";
 const WHOSE_INTENTION = "want-and-decide.md#whose-intention";
 
 type When = Partial<Record<FrameFamily, FrameMember[]>>;
@@ -46,10 +51,10 @@ export type Seat = "edge" | "body";
 export type FamilyOrder = "text" | "covers" | "commutes";
 
 /**
- * What a family stays outside of because it stays the speaker's: the act (`force`), a holder's view (`holder`), a frame
- * carried from an earlier statement (`carried`), another remark of the speaker's (`remark`: two remarks commute).
+ * What a family or member stays outside of because it stays the speaker's: a holder's view (`holder`), a frame carried
+ * from an earlier statement (`carried`). A remark's escape from the act is {@link FamilyProfile.remark}.
  */
-export type Escape = "force" | "holder" | "carried" | "remark";
+export type Escape = "holder" | "carried";
 
 /** Extra anchors a text-order row cites: against `with` (default: every family), never against `except`. */
 type TextAnchor = { anchors: string[]; with?: FrameFamily[]; except?: FrameFamily[] };
@@ -79,8 +84,13 @@ export type FamilyProfile = {
   order: FamilyOrder;
   /** The anchor of `order` where it is not `text`. */
   orderAnchor?: string;
-  /** What it stays outside of, each with the anchor that says so. */
-  escapes?: Partial<Record<Escape, string>>;
+  /**
+   * A remark of the speaker's on the claim: it escapes `force` (it stays yours and outside what is asked) and commutes
+   * with another remark. The anchor is the page that says it stays outside a question.
+   */
+  remark?: string;
+  /** What else it stays outside of, each with the anchor that says so. */
+  escapes?: Partial<Record<Exclude<Escape, "carried">, string>>;
   /** The anchor a row with the act word over it cites, where its page states the pair (default: the act edge). */
   underForce?: string;
   /** A holder seam sits on its word: the holder over it is fixed by word shape, citing this. */
@@ -125,9 +135,9 @@ export const PROFILES: readonly FamilyProfile[] = [
         member: "channel",
         anchor: "evidentiality.md#evidence-clause",
         cases: [
-          { with: "attitude", order: "commutes", anchors: ["feelings.md#speaker-attitude"] },
-          { with: "mirative", order: "commutes", anchors: ["mirative.md#mirative"] },
-          { with: "hinge", order: "over", anchors: ["evidentiality.md#evidence-clause", "usually-vs-must.md#how-things-work"] },
+          { with: "attitude", order: "commutes", anchors: [BACKING] },
+          { with: "mirative", order: "commutes", anchors: [BACKING] },
+          { with: "hinge", order: "over", anchors: [BACKING, "usually-vs-must.md#how-things-work"] },
         ],
       },
     ],
@@ -148,12 +158,13 @@ export const PROFILES: readonly FamilyProfile[] = [
       { anchors: [REACH], with: REACH_FAMILIES },
     ],
   },
-  { family: "mirative", seat: "body", order: "text", escapes: { force: "mirative.md#mirative", remark: "mirative.md#mirative" } },
+  { family: "mirative", seat: "body", order: "text", remark: "mirative.md#mirative" },
   {
     family: "attitude",
     seat: "body",
     order: "text",
-    escapes: { force: "feelings.md#speaker-attitude", holder: HOLDER, remark: "feelings.md#speaker-attitude" },
+    remark: "feelings.md#speaker-attitude",
+    escapes: { holder: HOLDER },
     members: [
       { id: "speaker-attitude", keys: ["slot:th"], escapes: ["carried"], anchor: "evidentiality.md#carry-forward" },
     ],
@@ -162,10 +173,10 @@ export const PROFILES: readonly FamilyProfile[] = [
     family: "sake",
     seat: "body",
     order: "text",
-    escapes: { force: "for-a-sake.md#whose-stake", remark: "for-a-sake.md#whose-stake" },
+    remark: "for-a-sake.md#whose-stake",
     members: [{ id: "feeling", feeling: true, escapes: ["carried"], anchor: "how-you-feel.md#feeling-word" }],
   },
-  { family: "contrary", seat: "body", order: "text", escapes: { remark: CONTRARY } },
+  { family: "contrary", seat: "body", order: "text", remark: CONTRARY },
   { family: "say", seat: "body", order: "text" },
   { family: "holder", seat: "body", order: "covers", orderAnchor: HOLDER, underForce: HOLDER },
   {
@@ -319,20 +330,21 @@ function derive(a: FamilyProfile, b: FamilyProfile): Derived {
     [a, b],
     [b, a],
   ] as const) {
-    if (x.seat === "edge" && y.seat === "body" && !y.escapes?.force) {
+    if (x.seat === "edge" && y.seat === "body" && !y.remark) {
       return { rule: "edge", row: { pair, kind: "rule", cases: [over(x.family, y.underForce ?? ACT_EDGE)] } };
     }
   }
-  if (a !== b && a.escapes?.remark && b.escapes?.remark) {
-    const anchors = PROFILES.flatMap((p) => (p.escapes?.remark ? [p.escapes.remark] : []));
+  if (a !== b && a.remark && b.remark) {
+    const anchors = PROFILES.flatMap((p) => (p.remark ? [p.remark] : []));
     return { rule: "escape:each-other", row: { pair, kind: "commutes", cases: [commutes(...anchors)] } };
   }
   for (const [x, y] of [
     [a, b],
     [b, a],
   ] as const) {
+    const escapes: Partial<Record<"force" | "holder", string>> = { force: x.remark, holder: x.escapes?.holder };
     for (const escape of ["force", "holder"] as const) {
-      const anchor = x.escapes?.[escape];
+      const anchor = escapes[escape];
       if (y.family === escape && anchor) return { rule: `escape:${escape}`, row: { pair, kind: "rule", cases: [over(x.family, anchor)] } };
     }
   }

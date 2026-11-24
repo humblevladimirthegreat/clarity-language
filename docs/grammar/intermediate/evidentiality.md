@@ -9,7 +9,7 @@ Sections named by data:
 - #evidentiality: 1 rejection, 5 overlay rows
 - #evidence-strength: 14 overlay rows
 - #hand-depth: 2 rejections
-- #evidence-clause: 1 interpreter row, 1 interpreter class, 1 pair-table rule
+- #evidence-clause: 1 interpreter row, 1 interpreter class, 3 pair-table rules
 - #carry-forward: 1 rejection, 2 pair-table rules, 10 boundary cells, 7 discourse slot cells
 Inbound links: npm run page-refs -- evidentiality.md
 -->
@@ -241,7 +241,11 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 >
 > "Alazun punched, judging by the fact that Azozon is screaming, which I can hear."
 
-**Compare with:** a `bl-` noun after any channel is its [source](#source) (`thebam blazozon` *according to Azozon*), and no other channel takes `blarl`. A cause or condition word may not come before the channel. Put the channel first (`theyom thahum blarl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](/knowing#may).
+A channel is not part of what you claim, only what backs it. So it is never under your feeling, your surprise or a cause: with an [attitude](feelings.md#speaker-attitude), a word of surprise, or a cause or condition anywhere in the sentence, the channel still says how you know the whole claim. [MAY](/knowing#may) is part of the claim, so it keeps [text order](/clause#which-covers-which): the earlier covers the later.
+
+To say both that you inferred it and that it was caused, use a channel and a cause or condition word in one sentence: `theyom thahum blarl`. A hinge with `blarth` may come first instead (`thahum blarth zalazun vabuvul theyom.` *so Alazun punched, judging by clues*). Both orders mean the same, and the channel first is the usual one.
+
+**Compare with:** a `bl-` noun after any channel is its [source](#source) (`thebam blazozon` *according to Azozon*), and no other channel takes `blarl`. *Could be* with no grounds is [MAY](/knowing#may).
 
 ### Carrying a channel forward {#carry-forward}
 
