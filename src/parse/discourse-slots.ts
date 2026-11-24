@@ -6,7 +6,7 @@
  * names, as in the boundary table (interpreter.md#boundaries).
  *
  * Consulted by `carriedFrames` (carry.ts) for its end events and its per-speaker rule, and by the reader's
- * `pointBackLinks` (read.ts) for whether a point-back looks past a speaker change.
+ * `pointBackLinks` (read.ts) for whether a point-back looks past a speaker change or out of a quote.
  */
 
 /** The slots. */
@@ -117,7 +117,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     readBy: { what: "a stand-in on `-rth`", links: ["standInBack lexReading:standInBack"] },
     endedBy: { newValue: ends(BACK), statementWord: unstatedEnd("keeps"), byTheWay: unstatedEnd("keeps"), goodbye: unstatedEnd("keeps") },
     kept: unstatedKept("shared"),
-    quote: unstatedQuote("passes"),
+    quote: { verdict: "blocks", anchor: BACK },
     aside: asidePasses(ASIDES),
     anchors: [BACK],
   },
@@ -133,7 +133,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
       goodbye: unstatedEnd("keeps"),
     },
     kept: unstatedKept("shared"),
-    quote: unstatedQuote("passes"),
+    quote: { verdict: "blocks", anchor: RESUME },
     aside: asidePasses(ASIDES),
     anchors: [RESUME],
   },
@@ -196,6 +196,12 @@ export function endsAt(id: SlotId, event: EndEvent): boolean {
 export function goodbyeEndsEveryone(id: SlotId): boolean {
   const cell = slotRow(id).endedBy.goodbye;
   return cell.verdict === "ends" && cell.everyone === true;
+}
+
+/** Whether the value from outside a quote reaches a reading inside it (an unstated cell keeps today's behavior). */
+export function reachesQuote(id: SlotId): boolean {
+  const cell = slotRow(id).quote;
+  return (cell.verdict === "unstated" ? cell.today : cell.verdict) === "passes";
 }
 
 /** Whether each speaker keeps a value of their own (an unstated cell keeps today's behavior). */

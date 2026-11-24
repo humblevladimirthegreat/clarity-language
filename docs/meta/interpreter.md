@@ -271,7 +271,7 @@ A link whose one word's meaning the solver acts on carries that word's `values`,
 
 ## Discourse slots
 
-Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it in two places: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change. The scope report counts the examples whose links read each slot (`discourse slots`).
+Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it in two places: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change, and whether it looks out of a quote: where the quote cell blocks, the quote's own reading resolves the point-backs in it and the outer sentences leave them as they are. The scope report counts the examples whose links read each slot (`discourse slots`).
 
 Each cell is stated, with the section that states it, or **unstated**: as in the [boundary table](#boundaries), an unstated cell keeps what the code does today, which it names, until the grammar states it.
 
@@ -319,7 +319,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `byTheWay` | unstated (today: keeps) |
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
-| `quote` | unstated (today: passes) |
+| `quote` | blocks, `stand-in-vowels.md#stand-in-back` |
 | `aside` | passes, `spans.md#asides-th` |
 
 **`hookResume`**, the latest extra-noun hook per vowel (`in-clause-hooks.md#hook-resume`). Set by an extra-noun hook with a landmark, per vowels for stacked vowels; read by an extra-noun hook on `-r` (`hookJob:resume`, the [links](#links) row).
@@ -331,7 +331,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `byTheWay` | unstated (today: keeps) |
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
-| `quote` | unstated (today: passes) |
+| `quote` | blocks, `in-clause-hooks.md#hook-resume` |
 | `aside` | passes, `spans.md#asides-th` |
 
 **`supposition`**, the NOTIONAL supposition a question points to (`notional.md#notional-as-if-framing`). Set by a stated reading with a NOTIONAL frame; read by a question with a NOTIONAL frame (`link:supposition`, the [links](#links) row).

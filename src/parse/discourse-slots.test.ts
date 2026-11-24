@@ -5,7 +5,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { DISCOURSE_SLOTS, endsAt, goodbyeEndsEveryone, perSpeaker, SLOT_IDS, slotCellLabel, slotCells, slotOfLink } from "./discourse-slots.js";
+import { DISCOURSE_SLOTS, endsAt, goodbyeEndsEveryone, perSpeaker, reachesQuote, SLOT_IDS, slotCellLabel, slotCells, slotOfLink } from "./discourse-slots.js";
 
 describe("discourse slot table", () => {
   it("has one row per slot", () => {
@@ -44,6 +44,12 @@ describe("discourse slot table", () => {
     assert.equal(slotOfLink("standIn lexReading:standIn"), undefined);
   });
 
+  it("lets nothing from outside into a quote", () => {
+    for (const row of DISCOURSE_SLOTS) assert.equal(reachesQuote(row.id), false, row.id);
+    assert.equal(slotCellLabel(DISCOURSE_SLOTS.find((row) => row.id === "standInBack")!.quote), "blocks");
+    assert.equal(slotCellLabel(DISCOURSE_SLOTS.find((row) => row.id === "hookResume")!.quote), "blocks");
+  });
+
   it("lets only point-backs and the topic into an aside", () => {
     const aside = DISCOURSE_SLOTS.map((row) => `${row.id}: ${slotCellLabel(row.aside)}`);
     assert.deepEqual(aside, [
@@ -66,13 +72,11 @@ describe("discourse slot table", () => {
       "standInBack byTheWay: unstated (today: keeps)",
       "standInBack goodbye: unstated (today: keeps)",
       "standInBack kept: unstated (today: shared)",
-      "standInBack quote: unstated (today: passes)",
       "hookResume newValue: unstated (today: ends)",
       "hookResume statementWord: unstated (today: keeps)",
       "hookResume byTheWay: unstated (today: keeps)",
       "hookResume goodbye: unstated (today: keeps)",
       "hookResume kept: unstated (today: shared)",
-      "hookResume quote: unstated (today: passes)",
       "supposition newValue: unstated (today: ends)",
       "supposition statementWord: unstated (today: keeps)",
       "supposition byTheWay: unstated (today: keeps)",

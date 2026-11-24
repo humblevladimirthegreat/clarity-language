@@ -1203,6 +1203,24 @@ describe("reader: links that point back past a period", () => {
     assert.equal(linkOf(readText("zalazun vehohel er.", tables)[0]!, "hookResume")?.to, undefined);
   });
 
+  it("a point-back inside a quote looks only within the quote", () => {
+    const quoted = (text: string, kind: string) =>
+      allReadings(readText(text, tables))
+        .filter((r) => r.id.includes("/q"))
+        .flatMap((r) => r.links.filter((l) => l.kind === kind));
+    // `darth` in the quote: no statement before it inside the quote, so no `to`, not the outer sentence before.
+    const [back] = quoted("zalazun vehohel. zahelan d[ zazozon vezuyol darth ] varuyol.", "standInBack");
+    assert.ok(back);
+    assert.equal(back.to, undefined);
+    // With a statement inside the quote, `darth` takes it.
+    const [inner] = quoted("zalazun vehohel. zahelan d[ zazozon vowurol. zazozon vezuyol darth ] varuyol.", "standInBack");
+    assert.match(inner?.to ?? "", /\/q\d+:0\.0$/);
+    // `er` in the quote does not take the landmark named before it.
+    const [resume] = quoted("zazozon vehohel el bohahal. zahelan d[ zalazun vehohel er ] varuyol.", "hookResume");
+    assert.ok(resume);
+    assert.equal(resume.to, undefined);
+  });
+
   it("hooks.md#discourse-hooks: `el` / `em` / `ul` / `um` on the left edge point to the claim before", () => {
     for (const hook of ["el", "em", "ul", "um"]) {
       const [first, second] = readText(`zalazun veruvol. ${hook} zalazun vezuvel.`, tables);

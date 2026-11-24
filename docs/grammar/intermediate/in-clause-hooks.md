@@ -8,7 +8,7 @@ Page shape read by code:
 Sections named by data:
 - #in-clause: 1 interpreter row, 1 interpreter class
 - #hook-w: 2 construction homes
-- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 1 discourse slot cell
+- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 2 discourse slot cells
 Inbound links: npm run page-refs -- in-clause-hooks.md
 -->
 
@@ -125,7 +125,7 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 >
 > "The dog sleeps in the house. It runs from there."
 
-Stacked extra-noun vowels, the hooks with two vowels, point back the same way: the vowels keep the extra they named (`ael` *on*, `aol` *using*, `uel` *through*), and `-r` drops the landmark.
+Stacked extra-noun vowels, the hooks with two vowels, point back the same way: the vowels keep the extra they named (`ael` *on*, `aol` *using*, `uel` *through*), and `-r` drops the landmark. Inside a [quote](/spans#writing), a point-back hook looks only within the quoted words, never at a landmark named before the quote.
 
 <!-- cheat-sheet: joins-hooks -->
 | Ageben | Points back to | English |

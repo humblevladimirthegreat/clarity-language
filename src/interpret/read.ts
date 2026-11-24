@@ -10,7 +10,7 @@ import { CLOSED } from "../closed-roots.js";
 import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { crosses, type NestedKind } from "../parse/boundaries.js";
-import { perSpeaker, type SlotId } from "../parse/discourse-slots.js";
+import { perSpeaker, reachesQuote, type SlotId } from "../parse/discourse-slots.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
 import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
@@ -1238,6 +1238,8 @@ function hookVowels(word: LexWord | undefined): string {
  * - A point-back hook (`er`, `aor`) takes the landmark already in play (in-clause-hooks.md#hook-resume): the latest
  *   extra-noun hook in an earlier sentence, and for stacked vowels the latest with the same vowels ("the vowels keep the
  *   extra they named"). `to` is its sentence and `resumed` its detail, whose `hosted` is the landmark.
+ * - Inside a quote, either one looks only within the quote (stand-in-vowels.md#stand-in-back,
+ *   in-clause-hooks.md#hook-resume): the quote's own reading resolved it, and the outer sentences leave it as it is.
  */
 function pointBackLinks(sentences: Reading[]): void {
   const byId = new Map(allReadings(sentences).map((r) => [r.id, r]));
@@ -1256,16 +1258,20 @@ function pointBackLinks(sentences: Reading[]): void {
   const speakerOf = (_sentence: Reading): string => "";
   const earlierFor = (slot: SlotId, sentence: Reading, earlier: Reading[]): Reading[] =>
     perSpeaker(slot) ? earlier.filter((s) => speakerOf(s) === speakerOf(sentence)) : earlier;
+  // A quote's words were read as their own text, which resolved its point-backs within the quote; where the slot's quote
+  // cell blocks, the outer sentences do not resolve them again (interpreter.md#discourse-slots).
+  const outside = (slot: SlotId, kinds: readonly NestedKind[]): boolean => reachesQuote(slot) || !kinds.includes("quote");
   sentences.forEach((sentence, i) => {
     const before = sentences.slice(0, i).reverse();
-    for (const l of allReadings([sentence]).flatMap((r) => r.links)) {
-      if (l.kind === "standInBack") {
+    const links = [{ reading: sentence, kinds: [] as NestedKind[] }, ...nestedOf(sentence)].flatMap(({ reading, kinds }) => reading.links.map((l) => ({ l, kinds })));
+    for (const { l, kinds } of links) {
+      if (l.kind === "standInBack" && outside("standInBack", kinds)) {
         const vowel = seriesOf(l.words[0]);
         const found = earlierFor("standInBack", sentence, before).flatMap(contents).find((c) => c.vowel === vowel);
         if (found) l.to = found.id;
         else delete l.to;
       }
-      if (l.kind === "hookResume") {
+      if (l.kind === "hookResume" && outside("hookResume", kinds)) {
         const vowels = hookVowels(l.words[0]);
         const all = earlierFor("hookResume", sentence, before).flatMap((s) => hooks(s).map((d) => ({ s, d })));
         const found = (vowels.length > 1 ? all.find(({ d }) => hookVowels(d.words[0]) === vowels) : undefined) ?? all[0];
