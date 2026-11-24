@@ -14,7 +14,19 @@
 //                      phase sessions from tmp/state/full-runs.jsonl) and their subagents; with --agent,
 //                      their matching subagents
 //   --calls            one line per tool call of the selected transcripts: number, kind, result tokens,
-//                      context at that call, carry cost (weighted, and its share of that transcript), label
+//                      context at that call, cost, carry cost (weighted, and its share of that transcript),
+//                      label. Cost is the weighted cost of the API call that issued the tool call; when one
+//                      API call issues several tool calls, the first row shows it and the others show ".
+//                      A cache expiry shows as one large cost (the whole context written again).
+//                      When the listing would print more than 200 rows, it prints each transcript's header
+//                      and its 10 costliest rows (by cost plus carry) and saves the full listing to
+//                      tmp/logs/token-report-calls.txt, naming the file.
+//   --top N            with --calls: per transcript, only the N rows with the largest cost plus carry,
+//                      in call order, and a line saying how many rows were left out
+//   --show <t>:<from>-<to>  only this section: tool calls <from> to <to> of transcript <t> (a subagent id
+//                      prefix, or main for the session given by --session), each with its number, cost,
+//                      the assistant text before it and its tool input (each trimmed to about 300
+//                      characters), and its result's size; never the result's body
 //   --agent / --session without --since search all dates. The Recurring shapes section counts, over every
 //   subagent in the window, the scratch scripts written or run and the greps repeated in 3 or more of them
 //   (under --agent / --session only the shapes the selected transcripts used).
@@ -53,6 +65,8 @@ function parseArgs(argv) {
     agent: undefined,
     session: undefined,
     calls: false,
+    top: undefined,
+    show: undefined,
     dir: path.join(os.homedir(), ".claude", "projects", root.replace(/[^A-Za-z0-9]/g, "-")),
   };
   let explicitSince = false;
@@ -62,15 +76,34 @@ function parseArgs(argv) {
       opts.calls = true;
       continue;
     }
-    const key = { "--since": "since", "--until": "until", "--skip": "skip", "--dir": "dir", "--agent": "agent", "--session": "session" }[flag];
+    const key = { "--since": "since", "--until": "until", "--skip": "skip", "--dir": "dir", "--agent": "agent", "--session": "session", "--top": "top", "--show": "show" }[flag];
     if (!key || argv[i + 1] === undefined) {
-      console.error(`Unknown or incomplete argument: ${flag}\nUsage: npm run token-report -- [--since DATE] [--until DATE] [--skip SESSION] [--dir PATH] [--agent ID_OR_TEXT] [--session ID[,ID…]] [--calls]`);
+      console.error(`Unknown or incomplete argument: ${flag}\nUsage: npm run token-report -- [--since DATE] [--until DATE] [--skip SESSION] [--dir PATH] [--agent ID_OR_TEXT] [--session ID[,ID…]] [--calls [--top N]] [--show AGENT|main:FROM-TO]`);
       process.exit(2);
     }
     opts[key] = argv[++i];
     if (key === "since") explicitSince = true;
   }
-  if ((opts.agent || opts.session) && !explicitSince) opts.since = "";
+  if ((opts.agent || opts.session || opts.show) && !explicitSince) opts.since = "";
+  if (opts.top !== undefined) {
+    opts.top = Number(opts.top);
+    if (!Number.isInteger(opts.top) || opts.top < 1) {
+      console.error("--top takes a whole number of rows, such as --top 15");
+      process.exit(2);
+    }
+  }
+  if (opts.show !== undefined) {
+    const m = /^([^:]+):(\d+)-(\d+)$/.exec(opts.show);
+    if (!m) {
+      console.error("--show takes <agent id prefix | main>:<from>-<to>, such as --show a1b2c3:12-18");
+      process.exit(2);
+    }
+    if (m[1] === "main" && !opts.session) {
+      console.error("--show main:… needs --session <id>");
+      process.exit(2);
+    }
+    opts.show = { who: m[1], from: Number(m[2]), to: Number(m[3]) };
+  }
   return opts;
 }
 
@@ -202,6 +235,7 @@ function analyse(t) {
   const events = []; // check / edit / log-peek / src-grep, in order
   const skills = [];
   let listing;
+  let textBefore = ""; // assistant text since the previous tool call
   for (const l of t.lines) {
     let o;
     try {
@@ -218,8 +252,11 @@ function analyse(t) {
           const kind = kindOf(c.name, c.input);
           // A tool_use can repeat on later lines of the same message: one call record per id.
           const seen = tools.get(c.id)?.rec;
-          const rec = seen ?? { n: callList.length + 1, kind, name: c.name, input: c.input ?? {}, msgId: o.message.id };
-          if (!seen) callList.push(rec);
+          const rec = seen ?? { n: callList.length + 1, kind, name: c.name, input: c.input ?? {}, msgId: o.message.id, before: textBefore };
+          if (!seen) {
+            callList.push(rec);
+            textBefore = "";
+          }
           tools.set(c.id, { name: c.name, input: c.input ?? {}, kind, rec });
           const inputTok = repoTok(JSON.stringify(c.input ?? {}));
           const inIt = { kind: coarse(kind) === "edit" || kind === "subagent" ? coarse(kind) : "tool input", tok: inputTok, at: order.length };
@@ -229,6 +266,7 @@ function analyse(t) {
           if (c.name === "Skill") skills.push(c.input?.skill ?? "?");
         } else if (c.type === "text") {
           items.push({ kind: "assistant text", tok: proseTok(c.text ?? ""), at: order.length });
+          textBefore += (textBefore ? "\n" : "") + (c.text ?? "");
         }
       }
     } else if (o.type === "user" && Array.isArray(o.message?.content)) {
@@ -240,7 +278,10 @@ function analyse(t) {
           const label = tool?.name === "Bash" ? (tool.input.command ?? "").slice(0, 70) : (tool?.input.file_path ?? tool?.input.pattern ?? tool?.name ?? "?");
           const outIt = { kind: coarse(kind), tok: repoTok(text), at: order.length + 1, label: `${tool?.name ?? "?"}: ${label}`.replace(/\s+/g, " ") };
           items.push(outIt);
-          if (tool?.rec) tool.rec.outIt = outIt;
+          if (tool?.rec) {
+            tool.rec.outIt = outIt;
+            tool.rec.resultChars = text.length;
+          }
           if (kind === "check") events.push({ type: "check", fail: FAIL.test(text), steps: FAIL.test(text) ? failedSteps(text) : [] });
           else if (kind.startsWith("exploration")) {
             const cmd = tool?.name === "Bash" ? tool.input.command ?? "" : tool?.input.file_path ?? "";
@@ -312,8 +353,15 @@ function analyse(t) {
   let gap = 0;
   for (let i = 1; i < times.length; i++) gap = Math.max(gap, times[i] - times[i - 1]);
   const ctxs = calls.map(context);
+  const firstOfMsg = new Set();
   const toolCalls = callList.map((r) => ({
     n: r.n,
+    msgId: r.msgId,
+    // The API call's weighted cost belongs to the first tool call it issued.
+    ownCost: firstOfMsg.has(r.msgId) ? 0 : (firstOfMsg.add(r.msgId), weight(usage.get(r.msgId) ?? {})),
+    msgCost: weight(usage.get(r.msgId) ?? {}),
+    before: r.before ?? "",
+    resultChars: r.resultChars,
     kind: r.kind,
     name: r.name,
     input: r.input,
@@ -357,6 +405,32 @@ const median = (xs) => {
   return s.length ? s[s.length >> 1] : 0;
 };
 const sum = (xs, f) => xs.reduce((a, x) => a + f(x), 0);
+
+// --show prints only its own section.
+if (opts.show) {
+  const { who, from, to } = opts.show;
+  const found = all.filter((x) => (who === "main" ? !x.sub : x.sub && x.id.startsWith(who)));
+  if (found.length !== 1) {
+    console.log(`--show ${who}: ${found.length ? `${found.length} transcripts match; give a longer id prefix` : "no transcript matches"}${who === "main" ? "" : " (with --session, among that session's subagents)"}.`);
+    process.exit(1);
+  }
+  const x = found[0];
+  const trim = (str, n = 300) => {
+    const one = String(str).replace(/\s+/g, " ").trim();
+    return one.length > n ? `${one.slice(0, n)}… (${one.length} chars)` : one;
+  };
+  console.log(`## Tool calls ${from}-${to} of ${x.session.slice(0, 8)} ${x.sub ? `sub ${x.id.slice(0, 8)} ${x.desc || x.type}` : "main"} (${x.toolCalls.length} tool calls)`);
+  const picked = x.toolCalls.filter((c) => c.n >= from && c.n <= to);
+  if (!picked.length) console.log(`  no tool calls numbered ${from}-${to}`);
+  for (const c of picked) {
+    console.log(`\n  ${c.n} ${c.kind}  cost ${c.ownCost ? k(c.ownCost) : `" (API call shared with the call before; ${k(c.msgCost)})`}  context ${k(c.ctx)}  carry ${k(c.carry)}`);
+    if (c.before.trim()) console.log(`    text: ${trim(c.before)}`);
+    console.log(`    input: ${trim(c.name === "Bash" ? c.input.command ?? "" : JSON.stringify(c.input))}`);
+    console.log(`    result: ${c.resultChars === undefined ? "none" : `${c.resultChars.toLocaleString("en")} chars, ~${k(c.tok)} tokens`}`);
+  }
+  process.exit(0);
+}
+
 const mains = all.filter((x) => !x.sub);
 const subs = all.filter((x) => x.sub);
 
@@ -515,11 +589,38 @@ if (listings.length) {
 }
 
 if (opts.calls) {
-  console.log("\n## Tool calls: number, kind, result tokens, context at the call, carry (weighted, share of that transcript's spend), label");
-  for (const x of all) {
-    console.log(`  ${x.session.slice(0, 8)} ${x.sub ? `sub ${x.id.slice(0, 8)} ${x.desc || x.type}` : "main"} (${x.toolCalls.length} tool calls, ${x.n} API calls)`);
-    for (const c of x.toolCalls) {
-      console.log(`    ${String(c.n).padStart(3)} ${c.kind.padEnd(26)} ${k(c.tok).padStart(5)} ${k(c.ctx).padStart(5)} ${k(c.carry).padStart(5)} ${pct(c.carry, x.cost).padStart(6)}  ${c.label}`);
+  const CALLS_FILE = "tmp/logs/token-report-calls.txt";
+  const rank = (c) => c.ownCost + c.carry;
+  const costliest = (rows, n) => [...rows].sort((a, b) => rank(b) - rank(a)).slice(0, n).sort((a, b) => a.n - b.n);
+  const rowLines = (rows) => {
+    let prevMsg;
+    return rows.map((c) => {
+      // " only when the row above, as printed, came from the same API call.
+      const cost = c.msgId === prevMsg ? '"' : k(c.msgCost);
+      prevMsg = c.msgId;
+      return `    ${String(c.n).padStart(3)} ${c.kind.padEnd(26)} ${k(c.tok).padStart(5)} ${k(c.ctx).padStart(5)} ${cost.padStart(5)} ${k(c.carry).padStart(5)} ${pct(c.carry, x0(c)).padStart(6)}  ${c.label}`;
+    });
+  };
+  const costOf = new Map(all.map((x) => [x, x.cost]));
+  const owner = new Map(all.flatMap((x) => x.toolCalls.map((c) => [c, x])));
+  const x0 = (c) => costOf.get(owner.get(c));
+  const heading = "\n## Tool calls: number, kind, result tokens, context at the call, cost of the API call, carry (weighted, share of that transcript's spend), label";
+  const blocks = all.map((x) => {
+    const head = `  ${x.session.slice(0, 8)} ${x.sub ? `sub ${x.id.slice(0, 8)} ${x.desc || x.type}` : "main"} (${x.toolCalls.length} tool calls, ${x.n} API calls)`;
+    const rows = opts.top ? costliest(x.toolCalls, opts.top) : x.toolCalls;
+    const left = x.toolCalls.length - rows.length;
+    return { x, head, rows, tail: left ? [`    … ${left} rows left out (--top ${opts.top})`] : [] };
+  });
+  const full = [heading, ...blocks.flatMap((b) => [b.head, ...rowLines(b.rows), ...b.tail])];
+  const rowCount = sum(blocks, (b) => b.rows.length);
+  if (rowCount <= 200) console.log(full.join("\n"));
+  else {
+    fs.mkdirSync(path.join(root, "tmp", "logs"), { recursive: true });
+    fs.writeFileSync(path.join(root, CALLS_FILE), full.join("\n").replace(/^\n/, "") + "\n");
+    console.log(`${heading} (${rowCount} rows: each transcript's 10 costliest here; the full listing is in ${CALLS_FILE})`);
+    for (const b of blocks) {
+      const rows = costliest(b.rows, 10);
+      console.log([b.head, ...rowLines(rows), ...(b.x.toolCalls.length > rows.length ? [`    … ${b.x.toolCalls.length - rows.length} rows left out (see ${CALLS_FILE})`] : [])].join("\n"));
     }
   }
 }
