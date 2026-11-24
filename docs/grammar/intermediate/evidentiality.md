@@ -10,7 +10,7 @@ Sections named by data:
 - #evidence-strength: 14 overlay rows
 - #hand-depth: 2 rejections
 - #evidence-clause: 1 interpreter row, 1 interpreter class, 3 pair-table rules
-- #carry-forward: 1 rejection, 2 pair-table rules, 14 boundary cells, 11 discourse slot cells
+- #carry-forward: 1 rejection, 3 pair-table rules, 14 boundary cells, 11 discourse slot cells
 Inbound links: npm run page-refs -- evidentiality.md
 -->
 
@@ -275,7 +275,7 @@ A command, request, or prohibition takes one channel, REPORTED: the order is som
 >
 > "I'm told you should walk." (the order is someone else's)
 
-The frame says how you learned a claim, so it never covers your own [stance](/clause#stance-th). A sentence that only plans, wants, or decides claims nothing: it takes no frame and does not end it, and your next statement picks the frame up again. An [attitude or a feeling](feelings.md#speaker-attitude) about a claim leaves the claim under the frame, and the feeling stays yours, outside it.
+The frame says how you learned a claim, so it never covers your own [stance](/clause#stance-th). A sentence that only plans, wants, or decides claims nothing: it takes no frame and does not end it, and your next statement picks the frame up again. A [greeting](word-endings.md#greeting), like a plan, claims nothing: it takes no frame and does not end one. An [attitude or a feeling](feelings.md#speaker-attitude) about a claim leaves the claim under the frame, and the feeling stays yours, outside it.
 
 > `zalazun thebam vudurul. zuwen thagom vowurol. zalazun veruvol.`
 >

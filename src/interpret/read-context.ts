@@ -4,7 +4,7 @@ import { overlayConstructionId } from "../parse/construction-trace.js";
 import { linkerEnglish } from "../parse/linkers.js";
 import { hookLabel, joinMarkerLabel } from "../parse/morph-gloss-labels.js";
 import type { NestedKind } from "../parse/boundaries.js";
-import { newMemberHead, type ClauseScope, type ScopeFrame } from "../parse/scope.js";
+import { FRAME_KEYS, newMemberHead, type ClauseScope, type ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
   Clause,
@@ -301,7 +301,10 @@ export function thing(word: LexWord): Term {
   return { kind: "thing", head: word, root: rootOf(word), named: word.ending === "n" || word.ending === "ln", details: [] };
 }
 
-/** A frame word met in the clause: the resolve stage's frame when it gave one, else a frame of its own. */
+/**
+ * A frame word met in the clause: the resolve stage's frame when it gave one, else a frame of its own. A whole-clause
+ * frame missing from the scope record is an `unread` entry, never placed here (interpreter.md#reader-rules, rule 3).
+ */
 export function placeFrame(key: string, word: LexWord, here: Here): Frame {
   // The resolve stage may file the word under another key of the same family (`lexReading:ability` for an
   // `xFamily:ability` word): one word, one frame of that family.
@@ -309,7 +312,8 @@ export function placeFrame(key: string, word: LexWord, here: Here): Frame {
   const existing = here.reading.frames.find((f) => f.words[0] === word && (f.key === key || f.family === "holder" || f.family === family));
   if (existing) return existing;
   const frame = frameOf(key, word, here);
-  here.reading.frames.push(frame);
+  if (FRAME_KEYS[key]?.reach === "clause") unread(here, "unplaced", key, word);
+  else here.reading.frames.push(frame);
   return frame;
 }
 

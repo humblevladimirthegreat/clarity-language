@@ -115,7 +115,10 @@ export const PROFILES: readonly FamilyProfile[] = [
     seat: "edge",
     order: "text",
     self: true,
-    members: [{ id: "repeat", member: "repeat", anchor: "more-turn-words.md#doubled-act" }],
+    members: [
+      { id: "repeat", member: "repeat", anchor: "more-turn-words.md#doubled-act" },
+      { id: "greeting", keys: ["reading:greeting"], claims: false, anchor: "evidentiality.md#carry-forward" },
+    ],
   },
   { family: "call", seat: "edge", order: "commutes", orderAnchor: CALL, self: true },
   {

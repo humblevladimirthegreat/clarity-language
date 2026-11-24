@@ -826,6 +826,14 @@ describe("reader: tone marks (tone-marks.md#showing-your-tone)", () => {
     assert.equal(tone("frames" in quote ? quote.frames : undefined).values.scope, "span");
   });
 
+  it("an island's two whole-clause frames come from its scope record, not the reader (interpreter.md#reader-rules, rule 3)", () => {
+    const all = allReadings(read("z-Azozon | SCOPE[h-possibility | h-already | [z-dog | g-red]] | v-see"));
+    const island = all.find((r) => /\/i\d+$/.test(r.id))!;
+    assert.deepEqual(families(island), ["phase", "binder"]);
+    assert.deepEqual(orders(island), ["phase>binder rule"]);
+    assert.deepEqual(all.flatMap((r) => r.unread), []);
+  });
+
   it("scope-islands.md:19: a mark before an island's brace frames the island's reading only", () => {
     const { readings, all } = toned("z-Ahelan | !SCOPE[h-possibility | d-untruth] | v-see");
     const island = all.find((r) => /\/i\d+$/.test(r.id))!;

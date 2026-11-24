@@ -120,7 +120,7 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
   },
   {
     kind: "island",
-    what: "a scope island",
+    what: "a scope island or a verb-list item with words of its own",
     cells: {
       outerFrames: passes("nesting", ISLANDS),
       holder: passes("nesting", HOLDER),

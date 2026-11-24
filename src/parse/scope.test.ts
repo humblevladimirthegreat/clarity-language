@@ -253,6 +253,14 @@ describe("scope order (clause.md#which-covers-which)", () => {
     assert.equal(tagged("y-statement | Azozon"), false);
   });
 
+  it("an island with two whole-clause frames of its own orders them in its own record (scope-islands.md#scope-islands)", () => {
+    const scopes = scopeOf("z-Azozon | SCOPE[h-possibility | h-already | [z-dog | g-red]] | v-see");
+    const island = scopes.find((s) => s.frames.some((f) => f.family === "phase"))!;
+    assert.deepEqual(island.frames.map((f) => f.family), ["phase", "binder"]);
+    assert.deepEqual(orders(island), ["phase>binder clause.md#which-covers-which"]);
+    assert.ok(!scopes.some((s) => s !== island && s.frames.some((f) => f.family === "phase")), "the outer clause has no record of them");
+  });
+
   it("a turn with no body has its own record, by utterance", () => {
     const [scope] = scopeOf("y-Azozon | y-question");
     assert.equal(scope!.bodiless, true);

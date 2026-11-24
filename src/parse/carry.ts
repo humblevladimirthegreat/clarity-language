@@ -15,7 +15,7 @@
  * - Takes it: a statement with no such frame of its own, including one after a call, a reaction or an answer word, one
  *   with a linker or a topic word, and one with MAY or MIRATIVE (evidentiality.md#carry-forward, mirative.md#mirative).
  * - Neither takes nor ends: a question, a command, a request (the act word that is the real act, more-turn-words.md#stacked-acts);
- *   a hello; a statement that only wants, plans or decides (WANT, PLAN, DECISION), which claims nothing
+ *   a hello, or a statement that only wants, plans or decides (WANT, PLAN, DECISION): neither claims anything
  *   (evidentiality.md#carry-forward, intention.md#plan, want-and-decide.md#want, #decision-revisability).
  * - Under your own stance: a frame carried onto a statement with a speaker attitude or a feeling word on `/th/` sits under
  *   it; the claim takes the frame and the feeling stays yours (evidentiality.md#carry-forward, feelings.md#speaker-attitude,
@@ -42,8 +42,8 @@ const CARRY_KEYS: Readonly<Record<string, CarryKind>> = {
 };
 
 /**
- * The keys of a stance that leaves no claim: its content is not asserted (intention.md#plan, want-and-decide.md#want,
- * #decision-revisability). The family profiles' members with `claims: false`.
+ * The keys of a frame that leaves no claim: a greeting, and a stance whose content is not asserted (evidentiality.md#carry-forward,
+ * intention.md#plan, want-and-decide.md#want, #decision-revisability). The family profiles' members with `claims: false`.
  */
 const NO_CLAIM_KEYS: ReadonlySet<string> = new Set(membersWhere((m) => m.claims === false).flatMap(({ member }) => member.keys ?? []));
 
@@ -139,10 +139,6 @@ function nestedCarry(
     .flatMap(({ clause }) => ownCarry(byClause.get(clause), clause, utteranceIndex, bodyIndex));
 }
 
-function isGreetingScope(scope: ClauseScope | undefined): boolean {
-  return (scope?.frames ?? []).some((frame: ScopeFrame) => frame.key === "reading:greeting");
-}
-
 /**
  * For each sentence body that inherits a frame, the frames it inherits. `scopes` are the resolve stage's scope records;
  * `goodbyes` the utterances and bodies the resolve stage reads as a goodbye.
@@ -197,10 +193,10 @@ export function carriedFrames(
         carries.set(speaker, own);
         return;
       }
-      // Only wanting, planning or deciding claims nothing: the frame skips it (evidentiality.md#carry-forward).
+      // A greeting, or only wanting, planning or deciding, claims nothing: the frame skips it (evidentiality.md#carry-forward).
       if ((scope?.frames ?? []).some((frame) => NO_CLAIM_KEYS.has(frame.key))) return;
       const carry = carries.get(speaker) ?? [];
-      if (carry.length > 0 && !isGreetingScope(scope)) {
+      if (carry.length > 0) {
         const coveredBy = ownStanceWords(scope);
         out.push({ utteranceIndex, bodyIndex, frames: carry, ...(coveredBy.length > 0 ? { coveredBy } : {}) });
       }
