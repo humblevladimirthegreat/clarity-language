@@ -4,11 +4,14 @@
  * its result and `npm run sweep` (`scripts/sweep.ts`) counts it, so both run the same walk. Not the reader coverage
  * sweep (`sweep.test.ts`).
  */
-import { readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname } from "node:path";
 
+import type { Example } from "../find/examples.js";
 import { passFiles } from "../find/pass.js";
 import { collectFileSpans } from "../find/walk.js";
 import type { ClassifyTables } from "../parse/classify.js";
+import { tmpPath, tmpRel } from "../tmp-paths.js";
 import { translate } from "./translate.js";
 import type { Frame, Reading, Term } from "./types.js";
 
@@ -49,41 +52,61 @@ export type Walk = {
   left: WalkLeft[];
 };
 
+/** Each grammar example under `docs/grammar` that has readings, with its file: the walk `npm run sweep` and `npm run scope-report` share. */
+export function forEachExample(tables: ClassifyTables, visit: (file: string, example: Example) => void): void {
+  for (const file of passFiles(["docs/grammar"])) {
+    for (const example of collectFileSpans(file, readFileSync(file, "utf8"), tables).examples) {
+      if (example.readings.length) visit(file, example);
+    }
+  }
+}
+
+/** A snapshot saved under `tmp/state/` by `--save`, or undefined when none is saved. */
+export function readSnapshot<T>(name: string): T | undefined {
+  const path = tmpPath("state", name);
+  return existsSync(path) ? (JSON.parse(readFileSync(path, "utf8")) as T) : undefined;
+}
+
+/** Write a `--save` snapshot under `tmp/state/`; returns its repo-relative path. */
+export function writeSnapshot(name: string, data: unknown): string {
+  const path = tmpPath("state", name);
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`);
+  return tmpRel("state", name);
+}
+
 /** Walk the grammar examples under `docs/grammar` through `translate()`. */
 export function walkAccounting(tables: ClassifyTables): Walk {
   const walk: Walk = { kept: 0, silent: [], threw: [], unnamed: [], left: [] };
-  for (const file of passFiles(["docs/grammar"])) {
-    for (const example of collectFileSpans(file, readFileSync(file, "utf8"), tables).examples) {
-      if (!example.readings.length) continue;
-      let t: ReturnType<typeof translate>;
-      try {
-        t = translate({ readings: example.readings }, { lexicon: tables });
-      } catch (e) {
-        const message = (e as Error).message;
-        walk.threw.push({ file, text: example.text, message });
-        walk.silent.push(`${file}: ${example.text}: translate() threw ${message}`);
+  forEachExample(tables, (file, example) => {
+    let t: ReturnType<typeof translate>;
+    try {
+      t = translate({ readings: example.readings }, { lexicon: tables });
+    } catch (e) {
+      const message = (e as Error).message;
+      walk.threw.push({ file, text: example.text, message });
+      walk.silent.push(`${file}: ${example.text}: translate() threw ${message}`);
+      return;
+    }
+    for (const id of t.readings) {
+      walk.kept++;
+      const reading = example.readings.find((r) => r.id === id);
+      const account = t.accounting.get(id);
+      if (!reading || !account) {
+        walk.silent.push(`${file}: ${example.text}: ${id} has no accounting`);
         continue;
       }
-      for (const id of t.readings) {
-        walk.kept++;
-        const reading = example.readings.find((r) => r.id === id);
-        const account = t.accounting.get(id);
-        if (!reading || !account) {
-          walk.silent.push(`${file}: ${example.text}: ${id} has no accounting`);
-          continue;
-        }
-        const inventory = new Set(account.parts.map((p) => p.of));
-        const missed = walked(reading).filter((p) => !inventory.has(p));
-        const unused = account.parts.filter((p) => !account.used.has(p.of)).map((p) => p.text);
-        if (missed.length) walk.silent.push(`${file}: ${example.text}: ${id} has ${missed.length} part(s) the inventory misses`);
-        if (unused.length) walk.silent.push(`${file}: ${example.text}: ${id} kept with ${unused.join(", ")}`);
-      }
-      for (const l of t.left) {
-        const key = l.key ?? l.construction;
-        walk.left.push({ file, text: example.text, reading: l.reading, reason: l.reason, key, unused: l.unused ?? [] });
-        if (l.reason === "unused" && !l.unused?.length) walk.unnamed.push(`${file}: ${example.text}: unused names its parts`);
-      }
+      const inventory = new Set(account.parts.map((p) => p.of));
+      const missed = walked(reading).filter((p) => !inventory.has(p));
+      const unused = account.parts.filter((p) => !account.used.has(p.of)).map((p) => p.text);
+      if (missed.length) walk.silent.push(`${file}: ${example.text}: ${id} has ${missed.length} part(s) the inventory misses`);
+      if (unused.length) walk.silent.push(`${file}: ${example.text}: ${id} kept with ${unused.join(", ")}`);
     }
-  }
+    for (const l of t.left) {
+      const key = l.key ?? l.construction;
+      walk.left.push({ file, text: example.text, reading: l.reading, reason: l.reason, key, unused: l.unused ?? [] });
+      if (l.reason === "unused" && !l.unused?.length) walk.unnamed.push(`${file}: ${example.text}: unused names its parts`);
+    }
+  });
   return walk;
 }

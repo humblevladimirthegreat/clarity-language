@@ -14,15 +14,12 @@
  *      npm run sweep -- --diff
  *      npm run sweep -- --texts edge:hook fragment
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname } from "node:path";
-
-import { walkAccounting } from "../src/interpret/accounting-walk.js";
+import { readSnapshot, walkAccounting, writeSnapshot } from "../src/interpret/accounting-walk.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { tmpPath, tmpRel } from "../src/tmp-paths.js";
+import { tmpRel } from "../src/tmp-paths.js";
 import { countWalk, diffCounts, formatCounts, formatDiff, formatTexts, textsFor, type SweepCounts } from "./lib/sweep.ts";
 
-const SAVE = tmpPath("state", "sweep-accounting.json");
+const SAVE = "sweep-accounting.json";
 const USAGE = "Usage: npm run sweep -- [--save] [--diff] | --texts KEY …";
 
 const argv = process.argv.slice(2);
@@ -40,20 +37,18 @@ if (textKeys.length) {
 }
 const save = args.includes("--save");
 const diff = args.includes("--diff");
-if (diff && !existsSync(SAVE)) {
-  console.error(`No saved counts at ${tmpRel("state", "sweep-accounting.json")}; run npm run sweep -- --save first.`);
+const before = diff ? readSnapshot<SweepCounts>(SAVE) : undefined;
+if (diff && !before) {
+  console.error(`No saved counts at ${tmpRel("state", SAVE)}; run npm run sweep -- --save first.`);
   process.exit(1);
 }
 
 const counts = countWalk(walkAccounting(loadDefaultTables()));
-if (diff) {
-  const before = JSON.parse(readFileSync(SAVE, "utf8")) as SweepCounts;
+if (before) {
   console.log(formatDiff(diffCounts(before, counts)).join("\n"));
 } else {
   console.log(formatCounts(counts).join("\n"));
 }
 if (save) {
-  mkdirSync(dirname(SAVE), { recursive: true });
-  writeFileSync(SAVE, `${JSON.stringify(counts, null, 2)}\n`);
-  console.log(`\nSaved to ${tmpRel("state", "sweep-accounting.json")}`);
+  console.log(`\nSaved to ${writeSnapshot(SAVE, counts)}`);
 }

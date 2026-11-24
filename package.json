@@ -64,6 +64,7 @@
     "lint:cheat-sheet-print": "tsx scripts/lint-cheat-sheet-print.ts",
     "outline": "tsx scripts/outline.ts",
     "sweep": "tsx scripts/sweep.ts",
+    "scope-report": "tsx scripts/scope-report.ts",
     "context-report": "tsx scripts/context-report.ts",
     "class-row": "tsx scripts/class-row.ts",
     "deps": "tsx scripts/deps.ts",
