@@ -1,0 +1,37 @@
+Brief: grammar-newcomer-rewrite, unit S1 (style review of the pilot)
+
+You are a style-editor running a fresh style review. Three pilot Beginner pages were rewritten so a
+newcomer can use each form after one read, then fact-audited. They become the model for every later
+rewrite, so the voice matters as much as the rules.
+
+## Scope
+
+The sections listed by `npm run changed-sections -- 5cb1637b <page>` for each of:
+
+- docs/grammar/beginner/clause.md
+- docs/grammar/beginner/knowing.md
+- docs/grammar/beginner/how-you-feel.md
+
+## Rules
+
+- docs/meta/doc-style.md, including "Tone" (#tone) and "Explain before you slogan". Your agent file
+  says how to read it.
+- docs/meta/grammar-docs.md, section "Explaining for a newcomer" (#newcomer): the tests that set
+  these pages' length. There is no length cap: do not cut a contrast, near-miss explanation,
+  default, or list grouping to shorten a section. Tighten wording, not teaching.
+- Each teaching H3 now carries an `<!-- Agent summary: … -->` comment directly under its heading,
+  for agents, written in notes style on purpose (docs/meta/grammar-docs.md#agent-summaries). The
+  tone rules do not apply to it. Leave every summary as it is.
+- Inline overlay cues have a set shape: `(cue: same root as `<citation>` *<English>*: <why>)`
+  (docs/meta/grammar-docs.md#when-to-state-a-scene-cue). You may tighten the why; keep the shape.
+- Labels already glossed by earlier pages: none listed; clause.md is the first page in reading
+  order, so gloss any label or house shorthand where these pages first use it.
+
+## Check
+
+Your agent file's rule 10. `wording-only` compares with HEAD by default, which is the audited
+version; that is the comparison wanted.
+
+## Report
+
+As your agent file says.

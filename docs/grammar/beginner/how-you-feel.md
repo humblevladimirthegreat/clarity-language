@@ -11,7 +11,7 @@ Inbound links: npm run page-refs -- how-you-feel.md
 
 # How you feel {#how-you-feel}
 
-Four ways to say how you feel, from a body sensation to a word that names the need and what the feeling pulls you to do. Each is a complete sentence, so you say as much as you can tell right now and stop there.
+This page gives four ways to say how you feel, from a body sensation to a word that names the need involved and what the feeling pulls you to do. Each is a complete sentence, so you say as much as you can tell right now and stop there. The later sections show how to choose the urge and name whom it points at, how to say what a feeling is about (a thing, an event, or nothing you can point to), and how to say a feeling about what may happen.
 
 ### Start with the body {#body-sensation}
 <!-- Agent summary: body sensation = property sentence: body-part noun, then a `/ɡ/` word, no verb (`zobal gegewal.`, `zadedum garolem.`). The `/ɡ/` word: a quality (`garolem` *heavy*) or a thing the part is like (`gegewal` *clamp*). Name no owner: in a feeling sentence the body is yours. Needs no interpretation: say it before you know what the feeling is. -->
@@ -34,7 +34,7 @@ The `/ɡ/` word can be a quality, as `garolem` *heavy* is, or a thing the body p
 
 English says *my chest*, but name no owner for the body part. In a sentence about how you feel, the body is yours, so `zobal` alone already means your lungs.
 
-A sensation needs no interpretation. `zobal gegewal.` says what your chest is doing and leaves open which feeling comes with it. So you can report it before you know what the feeling is, and it is often the most accurate thing you can say.
+To report a sensation, you do not have to work out what it means. `zobal gegewal.` says what your chest is doing and leaves open which feeling comes with it. So you can report it before you know what the feeling is, and it is often the most accurate thing you can say.
 
 ### A plain label {#feeling-label}
 <!-- Agent summary: label = English emotion word as a property root on `/ɡ/` after `zuwen`: `zuwen gonumul.` *I am angry*. Names the feeling only: no need, no urge; use when that is all you can tell or want to share. Body sentence (`zobal gegewal.`) is about a body part; label (`zuwen gevemul.`) is about you and names the feeling. Table shape, a memory aid: most labels share a root with a noun that is the feeling itself (`evemul`, `ehamul`, `ebumal`, `emel`, `onomul`) or a sign that shows it (`odebel` teardrop, `ubamol` blush, `ugomal` grin); `uremel` → `guremel` *relieved* + `guremem` *calm*; no partner: `gonumul`, `gewemul`, `gadamul`. -->
@@ -84,7 +84,7 @@ One root, `uremel` *relief*, gives two labels that differ only in the last lette
 ### A feeling word {#feeling-word}
 <!-- Agent summary: feeling word = sake word (sake root + `tha` met / `thu` unmet + ending) + urge vowel + last `-m`; alone on `/th/` = whole sentence about you. `thudathum` + `u` + `-m` = `thudathumum`. Contrast: `thudathum.` (a need of mine is unmet) vs `thudathumum.` (… and I want to get away). The sake word's ending sits mid-word and keeps its meaning; last ending = how long the feeling lasts, `-m` leaves it open. Can't tell which need → `uda`; naming it changes nothing else (`thunathumum`). In a command it still says how the speaker feels; the command asks only for the act (`yol vowurol thudathumum.`). Four-ways table: body → label → feeling word with `uda` → named sake; stop where what you can tell stops. -->
 
-A label does not say what you need or what the feeling makes you want to do. A **feeling word** says both. Take a [sake word](sakes.md#word-shape), which already says which need is involved and whether it is met, and add two things to its end: one vowel for the **urge**, what the feeling pulls you to do, and a last `-m`. Alone on `/th/` it is a whole sentence about you, just as a lone met word in [thanks](thanks-and-sorry.md#saying-thanks) says that your own sake is met. (cue: a feeling word = a sake word + what it makes you want to do)
+A label does not say what you need or what the feeling makes you want to do. A **feeling word** says both. Take a [sake word](sakes.md#word-shape), which already says which need is involved and whether it is met, and add two things to its end: one vowel for the **urge**, what the feeling pulls you to do, and a last `-m`. Alone on `/th/` it is a whole sentence about you, just as a lone sake word marked as met, in [thanks](thanks-and-sorry.md#saying-thanks), says that your own sake is met. (cue: a feeling word is a sake word plus what it makes you want to do)
 
 > `thudathumum.`
 >
@@ -92,7 +92,7 @@ A label does not say what you need or what the feeling makes you want to do. A *
 >
 > "Something is off, and I want to get away."
 
-Build it from the plain sake word: `thudathum` (a sake, unmet, modifiable) + `u` (the urge to get away) + `-m` = `thudathumum`. Said alone, the plain sake word stops at the need:
+To build it, start from the plain sake word `thudathum` (a need of yours is unmet, and the harm can be softened), add `u` (the urge to get away), and end with `-m`: `thudathumum`. Said alone, the plain sake word stops at the need:
 
 > `thudathum.`
 >
@@ -134,7 +134,7 @@ You now have four ways to say how you feel, and each says more than the one befo
 ### The four urges {#urges}
 <!-- Agent summary: urge vowel = vowel of a one-vowel hook, read as a movement: `a` STAYING (*in*: stay in it), `e` AIMED (*at*: act on a target), `o` GIVING (*for*: do something for someone), `u` AWAY (*from*: move off). Groups: `a` keeps you where you are; `e` `o` `u` move you relative to someone or something. Contrasts: `thawethamam.` / `thawethamem.`; `thewathumom.` / `thewathumum.` The urge is a pull you may or may not follow; the sake names what to ask for. No urge is correct; *Belongs when* lists fits. Two pulls mix → name the stronger. Unsure: `uda` for the sake, `a` when nothing pulls you to move. -->
 
-The urge vowel says how the feeling moves you: to stay in it, to act on someone, to do something for someone, or to move off. It is the vowel of a one-vowel [hook](hooks.md#extra-noun), the small word that does the work of an English preposition (*in*, *at*, *for*, or *from*), and on a feeling word it is read as that movement.
+The urge vowel says how the feeling moves you: to stay in it, to act on someone, to do something for someone, or to move off. It is the vowel of a one-vowel [hook](hooks.md#extra-noun), the small word used where English uses a preposition (*in*, *at*, *for*, or *from*), and on a feeling word it is read as that movement.
 
 > `thawethamam.`
 >
@@ -179,12 +179,12 @@ Saying the urge before you follow it leaves you a choice: follow it or not. For 
 
 No urge is the correct one to have. Each has situations where it belongs, and **Belongs when** names some. When two pulls mix, the urge names the stronger one. For example, if you feel connected and want both to thank someone and to sit with the feeling, choose `e` or `a` by which pull is stronger.
 
-With the last ending left at `-m`, a feeling word is four choices: the sake, met or unmet, the sake word's ending, and the urge. Two of them have a ready answer when you are unsure: `uda` for the sake, and `a` when nothing pulls you to move.
+With the last ending left at `-m`, building a feeling word takes four choices: the sake, met or unmet, the sake word's ending, and the urge. Two of them have a ready answer when you are unsure: `uda` for the sake, and `a` when nothing pulls you to move.
 
 ### Who the urge points at {#urge-landmark}
 <!-- Agent summary: landmark of `e` / `o` / `u` = `bl-` word right after the feeling word: who you want to take it up with / make it up to / get away from. `a` takes none: staying points at no one. No `bl-` → someone unnamed (`thunathumem.`). Contrast: `thewathumom blalazun.` (make it right with Alazun) vs `thewathumum blalazun.` (get away from Alazun). Near miss: on a plain sake word `bl-` = whose sake (`thawetham blalazun.` = the act met Alazun's sake); after `e` `o` `u` the sake is yours and `bl-` is the landmark (`thawethamem blalazun.` = I want to thank Alazun). -->
 
-Three of the urges move you relative to someone or something: `e` at them, `o` for them, `u` away from them. Name that landmark in a `bl-` word right after the feeling word. You can then say who you want to talk to, make it up to, or get away from. `a` has no landmark, because staying in a feeling points at no one.
+Three of the urges move you relative to someone or something: `e` at them, `o` for them, `u` away from them. That person or thing is the urge's **landmark**, and you name it in a `bl-` word right after the feeling word. You can then say who you want to talk to, make it up to, or get away from. `a` has no landmark, because staying in a feeling points at no one.
 
 > `thunathumem blalazun.`
 >
@@ -237,7 +237,7 @@ Put the same feeling word on `/ɡ/`, and the memo becomes yours:
 >
 > "My memo costs me connection, and I want to take it up with Alazun."
 
-Only the owner changes. So when the thing is someone else's, or no one's, like a coworker's memo or the weather, keep the feeling word off `/ɡ/`, because there it would claim the thing as yours.
+Only the owner changes. So when the thing is someone else's, or no one's, like a coworker's memo or the weather, keep the feeling word off `/ɡ/`, because there it would say the thing is yours.
 
 The landmark still comes last, after `goyom`. With no `bl-` word, `e`, `o`, or `u` points at the noun itself: `zonal wawethumum goyom.` is *the memo costs me connection, and I want to get away from it*.
 
@@ -252,7 +252,7 @@ You do not need a noun to say how you feel. A feeling word alone on `/th/`, with
 >
 > "Connection is missing, and I want to hide."
 
-A lone feeling can still name what caused it, with [*because*](fault.md#fault): `thahum` followed by a `bl-` word for the cause. The cause is not what the feeling is about: the feeling below is not *about* the rain.
+A lone feeling word can still name what caused the feeling, with [*because*](fault.md#fault): `thahum` followed by a `bl-` word for the cause. The cause is not what the feeling is about: the feeling below is not *about* the rain.
 
 > `thudathumum thahum blerulal.`
 >
@@ -270,7 +270,7 @@ To make the rain what the feeling is about, put the feeling word on the rain its
 
 Now the urge points at the rain. In the sentence before, the rain only set the feeling off, and the feeling is about nothing you can point to.
 
-When the feeling is about something that happens, put the feeling word on that clause. It is then about the clause's event, so English *moved that …* or *glad that …* puts the feeling on the clause it names:
+When the feeling is about something that happens, put the feeling word on that clause. The feeling is then about the clause's event, as in English *moved that …* or *glad that …*:
 
 > `zalazun vowurol thawethamam.`
 >
@@ -283,7 +283,7 @@ When the feeling is about something that happens, put the feeling word on that c
 ### A feeling about what may happen {#predicted-feeling}
 <!-- Agent summary: prediction (fear, worry, hope) → MAY `thomam` beside the feeling word; the sake word then says what the event may cost or pay off, not what it has. Contrast: `thomam thobathumum.` (may be in danger) vs `thobathumum.` (the danger is real). Lets you say you are afraid without claiming the danger is real. MAY keeps its follow-up endings: `thomal thobathumum.` = … and I will find out whether it is real. -->
 
-Fear, worry, and hope are about something that has not happened yet. A sake word with nothing beside it reports the cost or payoff as real, so for a prediction put [MAY](knowing.md#may) (`thomam`), the `/th/` word that says something could be so without claiming it is, next to the feeling word. The sake word then says what the event may cost you or pay off, not what it has. You can say you are afraid without claiming the danger is real. (cue: MAY turns *it costs me* into *it may cost me*)
+Fear, worry, and hope are about something that has not happened yet. A sake word with nothing beside it reports the cost or payoff as real, so for a prediction put [MAY](knowing.md#may) (`thomam`), the `/th/` word that says something could be so without claiming it is, next to the feeling word. The sake word then says what the event may cost you or give you, not what it has already cost or given. You can say you are afraid without claiming the danger is real. (cue: MAY turns *it costs me* into *it may cost me*)
 
 > `thomam thobathumum.`
 >
@@ -297,7 +297,7 @@ Fear, worry, and hope are about something that has not happened yet. A sake word
 >
 > "This may serve my purpose, and I want to go after it."
 
-Without MAY, `thobathumum.` says the danger is real: *I am in danger, and I want to get away*. So when you are afraid of what might happen, keep `thomam` in, or the sentence says the danger is real. MAY keeps its [follow-up endings](knowing.md#follow-up-endings-may), the endings that say what you will do about a guess, so `thomal thobathumum.` adds that you will find out whether the danger is real.
+Without MAY, `thobathumum.` says the danger is real: *I am in danger, and I want to get away*. So when you are afraid of what might happen, keep `thomam` in. MAY keeps its [follow-up endings](knowing.md#follow-up-endings-may), the endings that say what you will do about a guess, so `thomal thobathumum.` adds that you will find out whether the danger is real.
 
 ### Practice {#beginner-practice}
 

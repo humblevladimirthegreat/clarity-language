@@ -20,7 +20,7 @@ Inbound links: npm run page-refs -- clause.md
 
 How to read and write one Ageben **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
 
-You already write a [citation](word-endings.md): root + ending (`odozel`, `owurol`, `azozon`). In a sentence, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
+You already write a [citation](word-endings.md), the root and ending you use for a word outside a sentence (`odozel`, `owurol`, `azozon`). In a sentence, put a **role letter** in front of it. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
 <!-- Agent summary: subject (who acts) = `/z/`, verb (the action) = `/v/`. Word = role letter + root + ending, one word: citation `odozel` → `zodozel`; root and ending stay as cited. A name keeps its `-n`: `azozon` → `zazozon`. Subject + verb only → order Subject – Verb. A period ends the statement, so `zodozel vowurol.` is a whole sentence. -->
@@ -154,7 +154,7 @@ A `/w/` word works before an adverb just as it does before an adjective, so `wel
 ### Stance (`/th/`) {#stance-th}
 <!-- Agent summary: stance word = `/th/`: how the speaker stands toward the whole claim (how sure, how known, why it holds, only imagined); place it as freely as `/h/`. `thevemem zodozel vowurol.` = I doubt a dog is walking; without it, `zodozel vowurol.` = a dog walks. Same root in `/h/` describes the action instead (`zodozel hevemem vowurol.` = a dog walks doubtfully). `/th/` = what is in a mind; with nothing else marked, the speaker's mind, now, as they speak. -->
 
-An adverb describes the action. A **stance** word describes how you, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/` (`th` counts as one letter, [phonology](phonology.md#consonants)) and, as with `/h/`, place it anywhere in the sentence. One sentence then carries both the claim and your stance on it.
+An adverb describes the action. A **stance** word describes how you, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/` (`th` counts as one letter, [phonology](phonology.md#consonants)) and, as with `/h/`, place it anywhere in the sentence. One sentence then states both the claim and your stance on it.
 
 > `thevemem zodozel vowurol.`
 >
@@ -164,7 +164,7 @@ An adverb describes the action. A **stance** word describes how you, the speaker
 
 Compare the first sentence on this page, `zodozel vowurol.`, *a dog walks*. Adding `thevemem` keeps the same claim and adds that you doubt it.
 
-The adverb describes the walking. The stance word describes your claim about it. So the same root means something different with each letter:
+The same root as an `/h/` adverb describes the walking instead, so it means something different:
 
 > `zodozel hevemem vowurol.`
 >
@@ -174,7 +174,7 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 With `/h/`, the doubt says how the dog walks. With `/th/`, the doubt is yours, and it is about whether the dog walks at all. So when you would say *I doubt* in English, use `/th/`, and keep `/h/` for *doubtfully* as a way of walking.
 
-A stance is yours now, as you speak. `/th/` is for what is in a mind, and with nothing else marked, that mind is yours.
+`/th/` marks what is in a mind, and with nothing else marked, that mind is yours, at the moment you speak.
 
 ### Which word covers which {#which-covers-which}
 <!-- Agent summary: a `/th/` stance word is about the whole claim, as are some words taught later (*always*, *I plan*). With two such words, the earlier covers the later: it is about the later word and the claim together, so swapping them changes the meaning (`thewemum thevemem …` = the doubt worries you; `thevemem thewemum …` = the walking would worry you). A noun introducing someone or something new (*a dog* on first mention) takes part too: `zodozel thevemem vowurol.` = there is a dog that I doubt is walking; so put stance words before such a noun. With one such word, its place changes nothing. Ordinary `/h/` adverbs never take part. Table: words with their own rule (speech-act word first in its turn; *because* / *if* clause last, said first and pointed back to in order to cover; own feeling, surprise or benefit stays the speaker's; whose-view word covers the whole clause; join word right after stance words works only on them). -->
@@ -220,7 +220,7 @@ A few words keep a rule of their own, which their pages give:
 ### Extra nouns (`/b/`) {#extra-nouns}
 <!-- Agent summary: extra noun beyond subject and object = `/b/`; the letter after `b` sets its job. Plain `b` = who receives what the verb passes on (who is paid, who is told); the thing given or said stays `/d/` (`zazozon daral varal balazun.` = Azozon pays Alazun money); at most one receiver per verb, usually right after the verb (S – D – V – B). `bl` = the second person or thing of a relation word (its host) in `/ɡ/`, `/h/` or `/th/`, right after the host: `hewem blazozon` = like Azozon; `/w/` goes before the host (`welazem hewem blazozon`). `/h/` host → the relation describes the action (`zodozel vezuvel hewem blazozon.` = a dog sleeps like Azozon). A `bl-` word not right after its host is not a sentence; plain `b` may stand next to any word (`hadurom balazun` = still the one paid). -->
 
-Some sentences name a person or thing beyond the subject and direct object: who receives what is given, or whom something is like. Mark that **extra noun** with `/b/`; the letter after the `b` tells these two jobs apart.
+Some sentences name a person or thing beyond the subject and direct object: who receives what is given, or whom something is like. Mark that **extra noun** with `/b/`, and the letter after the `b` says which of the two it is.
 
 A plain `/b/` word is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`, and each verb has at most one receiver, usually right after the verb (Subject – Direct Object – Verb – Extra noun).
 
@@ -230,7 +230,7 @@ A plain `/b/` word is the person who receives what the verb passes on: who gets 
 >
 > "Azozon tells Alazun."
 
-With both nouns in one sentence, you can see the two jobs side by side:
+With a `/d/` word and a `/b/` word in one sentence, you can see the difference between them:
 
 > `zazozon daral varal balazun.`
 >
@@ -264,7 +264,7 @@ Because `hewem` is an adverb, *like Azozon* here describes the action, the way t
 >
 > "A dog sleeps like Azozon."
 
-A `bl-` word needs its host right before it. Anywhere else it is not a sentence. A plain `/b/` word is never a host's partner, so the person who receives may stand next to any word. So ask what the noun does: if it receives something, use plain `b`, and if it completes a relation word right before it, use `bl`.
+A `bl-` word needs its host right before it, and placed anywhere else it makes a sentence that is not well formed. A plain `/b/` word is never a host's partner, so the person who receives may stand next to any word. To choose between them, ask what the noun does: if it receives something, use plain `b`, and if it completes a relation word right before it, use `bl`.
 
 **Compare with:** in <!-- lint: moved -->`zazozon hadurom balazun varal.` (*Azozon hastily pays Alazun*), `balazun` sits right after an `/h/` word and is still the one paid. `hewem blalazun` is *like Alazun*.
 

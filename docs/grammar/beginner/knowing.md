@@ -12,7 +12,7 @@ Inbound links: npm run page-refs -- knowing.md
 
 # Knowing {#knowing}
 
-English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Ageben keeps the ordinary verb and adds a `/th/` stance word that says which: MAY for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
+English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Ageben keeps the ordinary verb and adds a `/th/` stance word that says which: MAY for what could be so, or a word for how you know it. So a guess stays marked as a guess, and a report says how you know it.
 
 ### MAY {#may}
 <!-- Agent summary: MAY = `oma` + ending as a `/th/` stance word: "could be so"; claims neither that it happens nor why you think so. Default `thomam`. Contrast: `zalazun thomam dahelan vudurul.` (may be leaving) vs `zalazun dahelan vudurul.` (reported as happening). Matters most for painful guesses (rejection, blow, loss). A later plain sentence settles the guess, never contradicts it. *I think* as a guess → MAY (test: *could be* fits in its place); *I think* as the act of thinking → verb `vevemel` (`zazozon vevemel.`). Noun `zomal` = a thought. Claims only: no reading on a command, request or prohibition, so leave it off them (it does not soften `yol vowurol.`). -->
@@ -25,7 +25,7 @@ English *maybe* and *I think* let you say something *could be* so without claimi
 >
 > "Alazun may be leaving Ahelan."
 
-Start with **`thomam`**, *may* / *could be*, as here. Take the `/th/` word out and the same words make a report:
+The default form is **`thomam`**, *may* / *could be*, as in this example. Take the `/th/` word out, and the same words make a report:
 
 > `zalazun dahelan vudurul.`
 >
@@ -33,7 +33,7 @@ Start with **`thomam`**, *may* / *could be*, as here. Take the `/th/` word out a
 >
 > "Alazun is leaving Ahelan."
 
-Without the `/th/` word, you are reporting that it happens. With `thomam`, you claim only that it could. This matters most for painful guesses (a rejection, a blow, a loss), because English *I think* easily turns them into facts.
+Without the `/th/` word, you are reporting that it happens. With `thomam`, you claim only that it could. Use MAY most on painful guesses (a rejection, a blow, a loss), because with English *I think*, such a guess easily sounds like a fact.
 
 A later plain sentence does not contradict a *may*. Suppose you said `zalazun thomam dahelan vudurul.` and then found out that Alazun is leaving. Saying `zalazun dahelan vudurul.` settles the guess, and so would saying that Alazun is not leaving, since MAY never claimed either.
 
@@ -41,7 +41,7 @@ English *I think* has two uses, and only one of them is MAY. In *I think Alazun 
 
 **Compare with:** `zazozon vevemel.` is *Azozon thinks*, a report of the act of thinking; it does not mark anything as a guess.
 
-MAY goes only on a claim, a sentence that says how things are or could be. A [command, request, or prohibition](/speech-moves#speech-act-beginner) tells someone what to do or not to do, so it is not a claim, and MAY has no reading there. For example, MAY does not turn the command `yol vowurol.` (*Walk!*) into a gentler suggestion. Leave it off, and give the command as it is.
+MAY goes only on a claim, a sentence that says how things are or could be. A [command, request, or prohibition](/speech-moves#speech-act-beginner) tells someone what to do or not to do, so it is not a claim, and MAY has no meaning there. For example, MAY does not turn the command `yol vowurol.` (*Walk!*) into a gentler suggestion. Leave it off, and give the command as it is.
 
 ### Follow-up endings (MAY) {#follow-up-endings-may}
 <!-- Agent summary: ending on MAY = follow-up on the guess. `thomal` (`-l`): you will find out; `thomam` (`-m`, default): follow-up unstated, use when unsure; `thomar` (`-r`): passing thought, not pursuing it. None is better. Contrast set: `zahelan thomal vagamul.`, `zahelan thomam vagamul.`, `zahelan thomar vagamul.` `-n` → ordinary name. Yes/no question + MAY asks whether it could be so: `yel zazozon vabuvul thomal dalazun.` (might Azozon be punching Alazun? let's find out) vs `yel zazozon vabuvul dalazun.` (is Azozon punching Alazun?); `thomal` on a question = asking in order to find out. -->
@@ -74,7 +74,7 @@ Here is the same guess with each ending:
 >
 > "Ahelan may be crying, who knows."
 
-All three say that Ahelan could be crying, and only the ending changes. With `thomal`, you will find out, for example by going to look. With `thomam`, you say nothing about a next step. With `thomar`, you have considered it and are letting it go for now. To keep the three in order, read them as one line from a guess you will see through to the end (`-l`), through the middle (`-m`), to a thought that holds only right now (`-r`).
+All three say that Ahelan could be crying, and only the ending changes. With `thomal`, you will find out, for example by going to look. With `thomam`, you say nothing about a next step. With `thomar`, you have considered it and are letting it go for now. To keep the three in order, read them as one line from a guess you will follow to the end (`-l`), through the middle (`-m`), to a thought that holds only right now (`-r`).
 
 No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices, so pick the ending that matches what you will do. When you are not sure, use `thomam`: it says *could be* and nothing about following up.
 
@@ -84,7 +84,7 @@ No ending is better than the others: finding out, leaving it at *may*, and letti
 >
 > "Alazun may be punching Azozon, I'll find out."
 
-A yes/no question, the kind a turn starting with `yel` asks, works the same way. Without MAY, it asks whether something is so:
+A yes/no question, a sentence that starts with `yel`, works the same way. Without MAY, it asks whether something is so:
 
 > `yel zazozon vabuvul dalazun.`
 >
@@ -108,7 +108,7 @@ With MAY, it asks whether it could be so, not whether it is. With `thomal`, it a
 <a id="reconstructive-catch"></a>
 <!-- Agent summary: evidential = `/th/` stance word naming the channel a claim reached you through. `thugem` LIVE: in your senses as you speak, any sense (sight, sound, touch, an ache) → present; `thevum` MEMORY: you remember sensing it → past. Verbs have no past or future form, so the channel places the event in time: `zazozon thugem vowurol.` = is walking, I see it; `zazozon thevum vowurol.` = walked, I remember. Nothing behind the claim → MAY (`thomam`). Never both on one claim. Seeing as an act = verb `vayebel` (`zazozon thevum dunobal vayebel.` = Azozon saw a boot, as I remember); *I witnessed it* → MEMORY. Screen or recording: `thugem` while you watch, `thevum` after, device as `bl-` partner (`thugem blugewel` / `thevum blugewel`). -->
 
-English often says how you know a claim: *I see it*, *I saw it*. Ageben keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: **LIVE** if the scene is in your senses as you speak, **MEMORY** if you remember sensing it. Verbs have no past or future form, so these two channels also place the event in time: a MEMORY claim is past.
+English often says how you know a claim: *I see it*, *I saw it*. Ageben keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: **LIVE** if the scene is in your senses as you speak, **MEMORY** if you remember sensing it. Verbs have no past or future form, so these two channels also place the event in time: a LIVE claim is present, and a MEMORY claim is past.
 
 > `zazozon thugem vowurol.`
 >
@@ -134,7 +134,7 @@ These two channels are enough for ordinary talk about a scene in your senses. To
 >
 > "Azozon may be walking."
 
-The same sentence with `thomam` says only that Azozon could be walking. It names no channel, because MAY gives no reason for thinking so. So use LIVE or MEMORY when you sensed the scene yourself, and MAY when you have nothing behind the claim.
+The same sentence with `thomam` says only that Azozon could be walking. It names no channel, because MAY gives no reason for thinking so. So use LIVE or MEMORY when you sensed the scene yourself, and MAY when you are only guessing.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -145,7 +145,7 @@ LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, 
 
 **Compare with:** the act of seeing is the ordinary verb `vayebel`; LIVE only says how you know the claim.
 
-English *I see it* and *I saw it* both report watching; they differ in when you watched, which is the split between LIVE and MEMORY. Do not put both on one claim. English *I witnessed it* is MEMORY, because the witnessing is over by the time you tell it. (cue: same root as `evul` *fishing*: remembering pulls the episode back up, and what comes up may not be what you hoped, the way a line can come up with a boot)
+English *I see it* and *I saw it* both report watching; they differ in when you watched, which is the split between LIVE and MEMORY. Do not put both on one claim. English *I witnessed it* is MEMORY, because the witnessing is over by the time you tell it. (cue: same root as `evul` *fishing*: remembering brings an episode back up, and like a fishing line it can bring up a boot)
 
 > `zazozon thevum dunobal vayebel.`
 >
@@ -155,7 +155,7 @@ English *I see it* and *I saw it* both report watching; they differ in when you 
 
 In this sentence the seeing is Azozon's, and it is part of the claim, so it is the verb `vayebel`. How you know the claim is a separate matter, and `thevum` says it: you remember the scene of Azozon seeing the boot.
 
-A screen or a recording extends your senses. While you watch footage, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can slip just as a memory of the scene can. In the examples below, the device is the `bl-` word right after the channel word.
+A screen or a recording extends your senses. While you watch footage, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can be wrong in the same ways as a memory of the scene. In the examples below, the device is the `bl-` word right after the channel word.
 
 > `zazozon thugem blugewel vowurol.`
 >
