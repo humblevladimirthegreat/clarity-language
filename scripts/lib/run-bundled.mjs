@@ -1,5 +1,6 @@
 // Runs a CLI (src/<name>/cli.ts) from a precompiled esbuild bundle, skipping tsx startup.
-// The bundle is rebuilt only when a file under src/ is newer than it, after
+// The bundle is rebuilt only when a file under src/ or docs/grammar/.vitepress/lib/
+// (which src/ imports, such as reading-order.ts) is newer than it, after
 // regenerating the Peggy word parser if word.peggy is newer than its output.
 import { execSync } from "node:child_process";
 import { readdirSync, statSync } from "node:fs";
@@ -27,7 +28,7 @@ function newestMtime(dir) {
 }
 
 /**
- * Runs dist/<name>/cli.bundle.mjs, rebuilding it first when src/ is newer.
+ * Runs dist/<name>/cli.bundle.mjs, rebuilding it first when its sources are newer.
  * `extraEntries` (file names under src/<name>/, such as "worker.ts") are bundled
  * beside it as dist/<name>/<base>.bundle.mjs, so the CLI finds them with
  * `new URL("./<base>.bundle.mjs", import.meta.url)`.
@@ -44,7 +45,11 @@ export async function runBundled(name, extraEntries = []) {
     execSync("npm run -s generate:word", { cwd: root, stdio: ["ignore", 2, 2] });
   }
 
-  if (Math.min(...bundles.map(mtime)) < newestMtime(join(root, "src"))) {
+  const sources = Math.max(
+    newestMtime(join(root, "src")),
+    newestMtime(join(root, "docs", "grammar", ".vitepress", "lib")),
+  );
+  if (Math.min(...bundles.map(mtime)) < sources) {
     const { buildSync } = await import("esbuild");
     buildSync({
       entryPoints: entries.map((entry) => join(root, "src", name, entry)),

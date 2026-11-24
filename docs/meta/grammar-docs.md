@@ -248,7 +248,7 @@ The page is the source of truth, so explaining never changes the language:
 
 - **Nothing new.** The prose adds no form, reading, rule, exception or default. Every rule it states is already on the page or on the page that owns that subsystem. When an explanation needs a point that no page states, leave it out and log it as a grammar gap in `TODO.md`.
 - **Structure stays.** Contrasts, near misses and new examples go inside the H3 that teaches the form, and the H3 count never grows for them. Headings, ids, Practice and See also stay as they are; Claritish lessons, which give each confused pair its own H3, are the exception ([Claritish newcomer tests](claritish-style.md#newcomer)).
-- **Examples stay within reach.** A new example parses, carries a morph gloss line per [glosses.md](glosses.md), uses the [house cast](#house-cast), and uses only constructions taught on its page or earlier in reading order (check with `node scripts/find.mjs`). On a recipe page, that means the sections its **Needs:** line links. Keep every existing example; the page's [read-by block](#read-by-blocks) names the ones tools read.
+- **Examples stay within reach.** A new example parses, carries a morph gloss line per [glosses.md](glosses.md), uses the [house cast](#house-cast), and uses only constructions taught on its page or earlier in reading order (check a draft with `node scripts/parse.mjs --check-lexicon --at <page>#<id>` before splicing it; the order is the unit arrays in [reading-order.ts](../grammar/.vitepress/lib/reading-order.ts)). On a recipe page, that means the sections its **Needs:** line links. Keep every existing example; the page's [read-by block](#read-by-blocks) names the ones tools read.
 
 Orientation pages, [terminology.md](../grammar/terminology.md), tool pages and cheat sheets teach no forms, so they take the [tone](doc-style.md#tone) guidelines without these tests.
 
@@ -657,6 +657,7 @@ Tools that read or rewrite every page alike, with no page contract:
 - `scripts/lib/link-rewrite.ts`
 - `scripts/lib/llms-txt.ts`
 - `scripts/lib/page-readers.ts`
+- `scripts/lib/run-bundled.mjs`
 - `scripts/lint-ageben-docs.ts`
 - `scripts/lint-agent-summaries.ts`
 - `scripts/lint-anchors.ts`
@@ -684,6 +685,7 @@ Tools that read or rewrite every page alike, with no page contract:
 - `src/game/build.ts`
 - `src/grammar-check/corpus.ts`
 - `src/interpret/accounting-walk.ts`
+- `src/lint/draft-order.ts`
 - `src/parse/context-report.ts`
 - `src/parse/llm-examples.ts`
 - `src/repo-paths.ts`

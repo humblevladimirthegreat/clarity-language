@@ -8,6 +8,7 @@ export const PARSE_FLAGS = [
   "--loose",
   "--examples",
   "--json",
+  "--at",
 ] as const;
 
 export type ParseCliOptions = {
@@ -19,6 +20,8 @@ export type ParseCliOptions = {
   examples: number | undefined;
   /** Print the parse tree instead of the gloss report. */
   json: boolean;
+  /** `--at <page>[#<id>]`: also report constructions taught after that point in the reading order. */
+  at: string | undefined;
   args: string[];
 };
 
@@ -33,6 +36,7 @@ export function parseCliArgs(raw: string[]): ParseCliOptions {
     loose: false,
     examples: undefined,
     json: false,
+    at: undefined,
     args: [],
   };
   for (let i = 0; i < raw.length; i++) {
@@ -41,6 +45,10 @@ export function parseCliArgs(raw: string[]): ParseCliOptions {
       const value = Number(raw[++i]);
       if (!Number.isInteger(value) || value < 0) throw new Error("--examples needs a whole number");
       options.examples = value;
+    } else if (arg === "--at") {
+      const value = raw[++i];
+      if (!value || value.startsWith("--")) throw new Error("--at needs a page, as <page> or <page>#<id>");
+      options.at = value;
     } else if (arg.startsWith("--")) {
       if (!known.has(arg)) throw new Error(`unknown flag ${arg}`);
       if (arg === "--check-ambiguity") options.checkAmbiguity = true;
@@ -58,6 +66,9 @@ export function parseCliArgs(raw: string[]): ParseCliOptions {
   }
   if (!options.llmPrompt && (options.loose || options.examples !== undefined)) {
     throw new Error("--loose and --examples go with --llm-prompt");
+  }
+  if (options.at !== undefined && (options.llmPrompt || options.json)) {
+    throw new Error("--at adds lines to the gloss report; it does not combine with --llm-prompt or --json");
   }
   return options;
 }

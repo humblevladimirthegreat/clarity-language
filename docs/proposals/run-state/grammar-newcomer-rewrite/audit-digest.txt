@@ -20,10 +20,10 @@
 - Structure stays: the H1 and its one-line job; every H3, with its title, {#id} and order; Practice;
   See also. Contrasts, near misses and new examples go inside the H3 they explain; add no heading.
   Tables keep their columns and rows unless the read-by block says no tool reads them.
-- Examples: new ones parse (node scripts/parse.mjs --check-lexicon '<a>' '<b>' …, one batched call),
-  get a morph gloss line per glosses.md, use the house cast, and use only constructions taught on
-  this page or earlier in reading order (check with node scripts/find.mjs; the order is in
-  docs/grammar/.vitepress/lib/reading-order.ts). Keep every existing
+- Examples: new ones parse (node scripts/parse.mjs --check-lexicon --at <page>#<id> '<a>' '<b>' …,
+  one batched call, <id> the H3 they go in), get a morph gloss line per glosses.md, use the house
+  cast, and use only constructions taught on this page or earlier in reading order (--at prints a
+  learning-order line for each one taught later). Keep every existing
   example; the read-by block names the ones tools read.
 - Teach now: no previews of later pages, no forward links (the build lints them).
 - Overlay cue, inline: (cue: same root as `<-l citation>` *<English>*: <one short why>), no emoji

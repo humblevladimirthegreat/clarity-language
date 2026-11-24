@@ -2,7 +2,7 @@
  * Where constructions are used relative to where they are taught: the anchor-page
  * coverage check and the learning-order check run by `lint:ageben` over the full corpus.
  */
-import type { ConstructionEntry } from "../parse/constructions.js";
+import { constructionRegistry, type ConstructionEntry } from "../parse/constructions.js";
 import { lineNumberAt } from "../retie/tokens.js";
 import { constructionFamilies, type ConstructionUse } from "./drill-coverage.js";
 import {
@@ -16,6 +16,14 @@ import {
 } from "./learning-order.js";
 
 type Registry = ReadonlyMap<string, ConstructionEntry>;
+
+/**
+ * The registry the learning-order check reads: the static registry plus one `overlay.*`
+ * entry per closed overlay row. `lint:ageben` and `parse.mjs --at` both build it here.
+ */
+export function orderRegistry(overlays: Parameters<typeof constructionRegistry>[0]): Map<string, ConstructionEntry> {
+  return constructionRegistry(overlays);
+}
 
 /** Each construction's home section (its anchor resolved), `undefined` when the anchor does not resolve. */
 export function constructionHomes(order: LearningOrder, registry: Registry): Map<string, Section | undefined> {

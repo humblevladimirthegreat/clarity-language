@@ -80,6 +80,7 @@ import {
   constructionCoverageGaps,
   constructionHomes,
   learningOrderFindings,
+  orderRegistry,
   pageDependencies,
 } from "../src/lint/construction-order.js";
 import { duplicateIds } from "../src/lint/grammar-anchors.js";
@@ -93,7 +94,7 @@ import {
   duplicateDrills,
   type ConstructionUse,
 } from "../src/lint/drill-coverage.js";
-import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
+import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS } from "../src/parse/constructions.js";
 import { hashRedirects } from "../docs/grammar/.vitepress/lib/hash-redirect.js";
 import {
   isLevelReview,
@@ -116,7 +117,7 @@ import { REPO_ROOT, readData } from "../src/repo-paths.js";
  * learning-order check covers every entry; the page-level coverage check covers
  * the static registry.
  */
-const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
+const CONSTRUCTIONS = orderRegistry(loadDefaultTables().overlays.values());
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const cheatSheetsDir = join(grammarDir, "cheat-sheets");
 const isSittingFile = (file: string) => relative(grammarDir, file).replaceAll("\\", "/") === pageRelPath(basename(file));

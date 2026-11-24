@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 import { readFileSync } from "node:fs";
 
+import { orderRegistry } from "../lint/construction-order.js";
+import { formatLater, laterConstructions, orderPoint, stageLearningOrder } from "../lint/draft-order.js";
 import { parseCliArgs } from "./cli-args.js";
 import { describeError, describeUnknown, reportInput } from "./cli-report.js";
-import { loadDefaultTables, parse } from "./index.js";
+import { loadDefaultTables, parse, parseWithTables } from "./index.js";
 import { unknownWords } from "./lexicon-check.js";
 import { loadPromptContext } from "./llm-examples.js";
 import { promptForPassage } from "./llm-passage.js";
 
 const USAGE = [
-  "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] [--json] '<Ageben text>' ['<Ageben text>' ...]",
+  "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] [--at <page>[#<id>]] [--json] '<Ageben text>' ['<Ageben text>' ...]",
   "       node scripts/parse.mjs [same flags] - < inputs.txt   (one input per line)",
   "       node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Ageben text>' ['<Ageben text>' ...]",
   "  Prints each input, then its morph gloss or a one-line error, then words the lexicon does not know.",
@@ -18,6 +20,8 @@ const USAGE = [
   "  --check-ambiguity  also report readings no grammar rule picks between",
   "  --check-lexicon    also exit 1 when a word is not in the lexicon (a stem that only parses is not a lexicon word)",
   "  --constructions    also list the construction IDs each parse used",
+  "  --at <page>[#<id>] also list, and exit 1 on, each construction whose home comes after that point in the",
+  "                     reading order (learning-order  <id>  →  <home>); <page> alone passes anything homed on it",
   "  --llm-prompt       print a translation prompt for an LLM with no Ageben context (several inputs make one passage)",
   "  --loose            with --llm-prompt: ask for the sentence only, no note",
   "  --examples N       with --llm-prompt: how many doc examples to show (default 4; 0 for none)",
@@ -34,7 +38,7 @@ try {
 } catch (error) {
   usage(error instanceof Error ? error.message : String(error));
 }
-const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, examples, json, args } = parsed;
+const { checkAmbiguity, constructions, checkLexicon, llmPrompt, loose, examples, json, at, args } = parsed;
 
 // Each argument is one input; `-` (or no arguments with piped stdin) reads one input per line.
 const readStdin = args.includes("-") || (args.length === 0 && !process.stdin.isTTY);
@@ -61,9 +65,34 @@ if (llmPrompt) {
   }
 } else if (!json) {
   const tables = loadDefaultTables();
+  // `--at`: the learning-order check of lint:ageben, run on drafts at one point.
+  let draftOrder: { check: (ids: readonly string[]) => string[] } | undefined;
+  if (at !== undefined) {
+    const order = stageLearningOrder();
+    const registry = orderRegistry(tables.overlays.values());
+    let point: ReturnType<typeof orderPoint>;
+    try {
+      point = orderPoint(order, at);
+    } catch (error) {
+      console.error(error instanceof Error ? error.message : String(error));
+      process.exit(1);
+    }
+    draftOrder = { check: (ids) => laterConstructions(order, registry, point, ids).map((later) => formatLater(later, point)) };
+  }
   let failed = false;
   for (const input of inputs) {
     const report = reportInput(input, tables, { checkAmbiguity, constructions, checkLexicon });
+    if (draftOrder) {
+      let ids: readonly string[] = [];
+      try {
+        ids = parseWithTables(input, tables, { constructions: true }).constructions ?? [];
+      } catch {
+        // The report already shows the parse error.
+      }
+      const lines = draftOrder.check(ids);
+      for (const line of lines) report.lines.push(`  ${line}`);
+      if (lines.length > 0) report.failed = true;
+    }
     console.log(report.lines.join("\n"));
     if (report.failed) failed = true;
   }
