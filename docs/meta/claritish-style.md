@@ -84,16 +84,12 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 ## Explaining for a newcomer
 <a id="newcomer"></a>
 
-A lesson is read once, by someone who has never met the drop-in, and it must leave them able to use it. Stating a distinction is not enough for that reader: they need to see it at work. So run these tests on every lesson, and let them set its length; there is no length cap. A newcomer needs more examples and contrasts, not a chattier voice: the prose stays as literal as a grammar page, as the [tone](doc-style.md#tone) guidelines require.
+A lesson is read once, by someone who has never met the drop-in, and it must leave them able to use it. The newcomer tests are shared with the grammar pages and live in [explaining for a newcomer](grammar-docs.md#newcomer): show each distinction, use every form, explain the near miss with an example, say the default and when to leave the drop-in out, give a long list a shape, and restate what you point back to. Run them on every lesson, and let them set its length; there is no length cap. Two parts differ for lessons:
 
-- **Show each distinction.** Every distinction the lesson draws gets a contrast example: the same sentence both ways, with what changes. When several pairs get confused, give each pair an H3 in a contrast section.
-- **Use every form.** Each drop-in in a lesson table appears in an example, or in a sentence that explains it. A row the prose never touches is a row the reader skips.
-- **Explain the near miss with an example**, as in [forms](#forms).
-- **Say when to leave the drop-in out, and which form to use when unsure**, as in [forms](#forms).
-- **Give a long list a shape**: a grouping or a pattern to learn it by, as in [forms](#forms).
-- **Restate what you point back to.** A pointer to an earlier lesson names its title in italics and says the idea in plain words ([back-references](#back-references)).
+- **Contrast H3s.** When several pairs of drop-ins get confused, give each pair an H3 in a contrast section ([explanatory sections](#forms)). A grammar page keeps its contrasts inside the H3 that teaches the form.
+- **Practice as contrast pairs.** Practice may grow to about eight items. Add them only as contrast pairs: the same English with two different notes, each pointing to a different drop-in.
 
-Practice may grow to about eight items. Add them only as contrast pairs: the same English with two different notes, each pointing to a different drop-in.
+Lessons state the near miss, the default and the place to leave the drop-in out in [forms](#forms), and point back to earlier lessons per [back-references](#back-references).
 
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
@@ -128,17 +124,7 @@ Lessons carry no numbers. A lesson may name an earlier lesson by title, in itali
 ## Agent summaries
 <a id="agent-summaries"></a>
 
-The explanation is written for people. An agent that needs only a section's rules reads them from one HTML comment directly under the section's H2, which the site does not show:
-
-```md
-## How strong the evidence is {#strength}
-<!-- Agent summary: ending grades evidence strength: `-l` could show it, `-m` (default) could describe it, `-r` could only gesture. … -->
-```
-
-- **Which sections.** Every teaching H2 gets exactly one: `## The forms`, a further inventory section, and each explanatory section. `## The gap`, `## Examples`, and `## Practice` get none, and neither do H3s.
-- **What it says.** The section's rules, tersely: forms, defaults, placement, when to leave the drop-in out, the near misses. It states no rule the section does not teach, so it never becomes a second source.
-- **How it is written.** It starts `Agent summary:`. Every form is in backticks. Notes style is fine here, and so are `≈` and `→`: the [tone](doc-style.md#tone) guidelines are for prose a person reads.
-- **Keep it in step.** When the section's teaching changes, rewrite its summary in the same edit.
+Every teaching H2 of a lesson opens with one agent summary: `## The forms`, a further inventory section, and each explanatory section. `## The gap`, `## Examples` and `## Practice` get none, and neither do H3s. The H1 gets one when the lead itself states rules for the whole track, as on the intro page. The format, what a summary may say, and keeping it in step are in [agent summaries](grammar-docs.md#agent-summaries).
 
 ## Editor cues and cards
 <a id="editor-cards"></a>

@@ -232,6 +232,46 @@ Do not open a **Beginner** section, or a later-stage H3 that teaches a **new Eng
 
 Within a page, material every learner needs comes before material they may skip. An optional section says it is optional in its first sentence. Space follows importance: an optional feature, or the instructions for a drill, should not take more of the page than the required teaching around it. When it does, shorten it or move the detail to the page that owns the tool.
 
+## Explaining for a newcomer
+<a id="newcomer"></a>
+
+A stage page or a recipe page is read by someone meeting its forms for the first time, and it must leave them able to use each form after one read. Stating a distinction is not enough for that reader: they need to see it at work. So run these tests on every teaching H3, and let them set the page's length; there is no length cap. A newcomer needs more examples and contrasts, not a chattier voice, so the prose stays as literal as the [tone](doc-style.md#tone) guidelines require.
+
+- **Show each distinction.** Every distinction the H3 draws gets a contrast: the same sentence both ways, and what changes between them.
+- **Use every form.** Each form in a table appears in an example, or in a sentence that explains it. A row the prose never touches is a row the reader skips.
+- **Explain the near miss with an example.** Where the obvious English reading is wrong, say what the near miss is and how to tell the two apart. A bare denial (*the urge is not a plan*) says what to avoid, not how to tell.
+- **Say the default, and when to leave the form out.** Say which form to use when the reader cannot tell which fits, and where the form is unnecessary, wherever the page or the page that owns the subsystem states it.
+- **Give a long list a shape.** After an inventory of more than about five rows, give the reader a grouping or a pattern to learn it by. Never tell the reader they need not memorize it: a form is only useful once it comes to mind as you speak.
+- **Restate what you point back to.** A link back to an earlier section also says its idea in plain words, in a clause, so a reader who has forgotten it still follows. That clause is a reminder, not a recap.
+
+The page is the source of truth, so explaining never changes the language:
+
+- **Nothing new.** The prose adds no form, reading, rule, exception or default. Every rule it states is already on the page or on the page that owns that subsystem. When an explanation needs a point that no page states, leave it out and log it as a grammar gap in `TODO.md`.
+- **Structure stays.** Contrasts, near misses and new examples go inside the H3 that teaches the form, and the H3 count never grows for them. Headings, ids, Practice and See also stay as they are; Claritish lessons, which give each confused pair its own H3, are the exception ([Claritish newcomer tests](claritish-style.md#newcomer)).
+- **Examples stay within reach.** A new example parses, carries a morph gloss line per [glosses.md](glosses.md), uses the [house cast](#house-cast), and uses only constructions taught on its page or earlier in reading order (check with `node scripts/find.mjs`). On a recipe page, that means the sections its **Needs:** line links. Keep every existing example; the page's [read-by block](#read-by-blocks) names the ones tools read.
+
+Orientation pages, [terminology.md](../grammar/terminology.md), tool pages and cheat sheets teach no forms, so they take the [tone](doc-style.md#tone) guidelines without these tests.
+
+## Agent summaries
+<a id="agent-summaries"></a>
+
+The explanation is written for people. An agent that needs only a section's rules reads them from one HTML comment directly under the section's heading, which the site does not show. `npm run outline -- FILE --summaries` prints each heading with its summary, so an agent can read the rules of a whole page without its prose.
+
+```md
+### MAY {#may}
+<!-- Agent summary: `oma` + ending as a /th/ stance word = MAY, "could be so"; default `thomam`. No /th/ word → reported as happening. Claims only: no reading on commands, requests, prohibitions. … -->
+```
+
+- **Where they go.** A heading gets at most one summary, and it sits on the line directly under the heading (under the `<a id>` line, when there is one).
+  - **Stage pages:** every H3, except Practice and See also.
+  - **Recipe pages:** every heading that teaches a recipe.
+  - **Claritish lessons:** every teaching H2, and the H1 when the lead itself states rules for the whole track ([Claritish agent summaries](claritish-style.md#agent-summaries)).
+  - **Orientation, terminology and tool pages:** each H2 that states something an agent acts on: a design goal, a rule, or how a tool reads its input.
+  - **None:** cheat sheets, level reviews, and headings for Practice, See also, Gap and Examples.
+- **What it says.** The section's rules, tersely: forms, defaults, placement, when to leave a form out, the near misses. It states no rule the section does not teach, so it never becomes a second source.
+- **How it is written.** It starts `Agent summary:`. Every form is in backticks. Notes style is fine here, and so are `≈` and `→`: the [tone](doc-style.md#tone) guidelines are for prose a person reads.
+- **Keep it in step.** When the section's teaching changes, rewrite its summary in the same edit.
+
 ## Beginner stage shape
 <a id="beginner-stage-shape"></a>
 <a id="beginner-band-shape"></a>
@@ -570,6 +610,8 @@ Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginne
 
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 
+Before shipping **any stage page or recipe page**, run the [newcomer tests](#newcomer) on each teaching H3, and check that each one has exactly one [agent summary](#agent-summaries) stating only what the H3 teaches.
+
 ## Read-by blocks
 <a id="read-by-blocks"></a>
 
@@ -685,7 +727,7 @@ VitePress does not render HTML comments. Use them for **editor-only** notes that
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
 ```
 
-Do **not** use `<!--@include: …-->` for notes — that is a VitePress include. Do not put the same note in visible parentheses, scare-quotes, or “for editors:” asides ([no process leftover](#no-process-or-corrective-leftover)). Folder-wide content and teaching policy lives on this meta page; wording and voice policy lives in [doc-style.md](doc-style.md). Comments are for the **local** why, not a second style guide.
+Do **not** use `<!--@include: …-->` for notes — that is a VitePress include. Do not put the same note in visible parentheses, scare-quotes, or “for editors:” asides ([no process leftover](#no-process-or-corrective-leftover)). Folder-wide content and teaching policy lives on this meta page; wording and voice policy lives in [doc-style.md](doc-style.md). Comments are for the **local** why, not a second style guide. A teaching heading also carries an `<!-- Agent summary: … -->` line, which has its own rules ([agent summaries](#agent-summaries)).
 
 ### Retie-safe writing
 <a id="retie-safe-writing"></a>
