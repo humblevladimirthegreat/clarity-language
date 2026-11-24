@@ -372,7 +372,7 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 | Kind | What it is | Where it goes |
 |------|-----------|----------------|
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
-| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*volume*, *because*). **Same root as** = citation **-l** of that picture (`ugowul` *quiet*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
+| Scene | Published emoji + concrete that licenses **-m**, then why that scene evokes the sense | **English** = abstract sense (*volume*, *because*). **Same root as** = citation **-l** of that picture (`ugowul` *quiet*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column). Inline in prose, an overlay's cue is `same root as` its citation plus why ([when to state a scene cue](#when-to-state-a-scene-cue)) |
 
 A lexicon path is a real **-l** / **-m** choice; the *concrete* English is still not what drills ask for. Write `*volume*` in **English** (no `(**-m**)` tag — the citation ending already marks abstract), `` `ugowul` *quiet* `` in **Same root as**, and `🔈: volume is sound turned up or down` (or `from *quiet*: volume is sound turned up or down` when the table has no **Same root as** column) in **Cue** — never `quiet → *volume*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the concrete (`*see*` / `vayebel` / `` `ayebel` *eye* `` / `👁️: seeing is what an eye does`).
 
@@ -385,11 +385,13 @@ A **scene** cue (`emoji *literal*: why`) is for remembering a published picture.
 
 **State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, IDENTITY, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, clause-hinge **`ohe`**, locatives, means, likeness *like*, exchange *for*, proxy *on behalf of*, of-relations, special pronouns, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
+**Inline, an overlay cue names the root.** In prose, the cue says which ordinary word shares the root, as its **-l** citation with its English, then one short clause on why that root hosts the job: `` (cue: same root as `omal` *thought*: a *may* is a thought about the scene, not a report of it) ``. It carries no emoji and no scene *literal*. Tables are unchanged: the **Same root as** column names the citation and **Cue** keeps the scene.
+
 **Do not state it** when the example is ordinary **lexicon abstract** (content **-m**): `welazem` *size* / *very*, `hadurom` *hastily*. Do **not** add a following sentence of the form “**`aduro`** here is the published abstract *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [word-endings.md](/word-endings#abstract-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the abstract ending.
 
 | Do | Don’t |
 |----|--------|
-| Overlay lead: **`oma`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hadurom vowurol`, a sentence that names the lexicon row and restates the dash cue |
+| Overlay lead: **`oma`** as MAY, then `` (cue: same root as `omal` *thought*: …) `` | After `hadurom vowurol`, a sentence that names the lexicon row and restates the dash cue |
 | Overlay table **Cue** for IDENTITY, ABIL, CAUSE, locatives, means, likeness *like*, exchange *for*, proxy *on behalf of*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 

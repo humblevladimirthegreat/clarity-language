@@ -15,7 +15,8 @@
   Tables keep their columns and rows unless the read-by block says no tool reads them.
 - Examples: new ones parse (node scripts/parse.mjs --check-lexicon '<a>' '<b>' …, one batched call),
   get a morph gloss line per glosses.md, use the house cast, and use only constructions taught on
-  this page or earlier in reading order (check with node scripts/find.mjs). Keep every existing
+  this page or earlier in reading order (check with node scripts/find.mjs; the order is in
+  docs/grammar/.vitepress/lib/reading-order.ts). Keep every existing
   example; the read-by block names the ones tools read.
 - Newcomer tests, per H3: each distinction gets a contrast (the same sentence both ways, saying what
   changes); each form in a table appears in an example or in a sentence explaining it; a near miss
@@ -23,6 +24,12 @@
   a form out, wherever the page states it; a long list gets a grouping or pattern to learn it by
   (never "you don't need to memorize it"); a link back restates the idea in plain words.
 - Teach now: no previews of later pages, no forward links (the build lints them).
+- Overlay cue, inline: (cue: same root as `<-l citation>` *<English>*: <one short why>), no emoji
+  or scene literal (grammar-docs.md#when-to-state-a-scene-cue). Rewrite an old scene cue this way;
+  table Cue cells keep their scenes.
+- Pilot audit found these inventions; avoid them: a "so" clause that turns a mnemonic into a
+  derivation (frame a memory aid as one); a summing-up line that answers a question the page leaves
+  open; a contrast paraphrase that contradicts a rule elsewhere on the page.
 - Tone: would a good teacher say it aloud? Link ideas with because / so / for example. At most one
   semicolon-balanced pair and one "X, not Y" per H3. People and things act, not features. Vary
   sentence length. No ≈ or → in prose. No "First, … Second, …" runs. Paragraphs of five sentences

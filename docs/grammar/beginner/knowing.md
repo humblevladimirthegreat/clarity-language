@@ -17,7 +17,7 @@ English *I think* can be a guess, a memory, or a conclusion from clues, and the 
 ### MAY {#may}
 <!-- Agent summary: MAY = `oma` + ending as a `/th/` stance word: "could be so"; claims neither that it happens nor why you think so. Default `thomam`. Contrast: `zalazun thomam dahelan vudurul.` (may be leaving) vs `zalazun dahelan vudurul.` (reported as happening). Matters most for painful guesses (rejection, blow, loss). A later plain sentence settles the guess, never contradicts it. *I think* as a guess → MAY (test: *could be* fits in its place); *I think* as the act of thinking → verb `vevemel` (`zazozon vevemel.`). Noun `zomal` = a thought. Claims only: no reading on a command, request or prohibition, so leave it off them (it does not soften `yol vowurol.`). -->
 
-English *maybe* and *I think* let you say something *could be* so without claiming that it is: *Alazun may be leaving*. Ageben keeps the ordinary sentence and adds one [stance](clause.md#stance-th) word, the `/th/` word that says how you stand toward the whole claim. For a guess, that word is **`oma`** plus an ending, and it is called **MAY**. The sentence then says the leaving is possible, not that it happens, and it gives no reason for thinking so. (cue: 💭 *thought*: a balloon over the scene)
+English *maybe* and *I think* let you say something *could be* so without claiming that it is: *Alazun may be leaving*. Ageben keeps the ordinary sentence and adds one [stance](clause.md#stance-th) word, the `/th/` word that says how you stand toward the whole claim. For a guess, that word is **`oma`** plus an ending, and it is called **MAY**. The sentence then says the leaving is possible, not that it happens, and it gives no reason for thinking so. (cue: same root as `omal` *thought*: a *may* is a thought about the scene, not a report of it)
 
 > `zalazun thomam dahelan vudurul.`
 >
@@ -145,7 +145,7 @@ LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, 
 
 **Compare with:** the act of seeing is the ordinary verb `vayebel`; LIVE only says how you know the claim.
 
-English *I see it* and *I saw it* both report watching; they differ in when you watched, which is the split between LIVE and MEMORY. Do not put both on one claim. English *I witnessed it* is MEMORY, because the witnessing is over by the time you tell it. (cue: memory is fishing: you pull the episode back, and it may not be what you hoped, the way a line can come up with a boot)
+English *I see it* and *I saw it* both report watching; they differ in when you watched, which is the split between LIVE and MEMORY. Do not put both on one claim. English *I witnessed it* is MEMORY, because the witnessing is over by the time you tell it. (cue: same root as `evul` *fishing*: remembering pulls the episode back up, and what comes up may not be what you hoped, the way a line can come up with a boot)
 
 > `zazozon thevum dunobal vayebel.`
 >
