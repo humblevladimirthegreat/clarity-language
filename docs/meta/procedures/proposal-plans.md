@@ -39,6 +39,8 @@ Carry out a proposal in the orchestrator's session when it fits there: a few pag
 
 Within a subagent run, the orchestrator also does a small unit itself: a few edits on one page it can read in one slice. A subagent's cold start (about 20k tokens) costs more than that slice carried for the rest of the phase. A unit that needs a fresh context by rule (an audit, a checkpoint writer) still gets a subagent. The plan marks such units *orchestrator*.
 
+A policy unit that writes into more than one page, or reads more than one slice, is a `proposal-worker` unit, however short its edits. The orchestrator settles its decisions in the brief and reads only the report and `git diff --stat`. Edits a worker may not make, to `AGENTS.md` and to files under `.claude/`, stay with the orchestrator: workers report each one as exact old and new text, and the orchestrator applies them at the end of the phase.
+
 Use subagents when any of these holds:
 
 - The work spans many pages in clusters that share little.
@@ -80,7 +82,9 @@ Never cut inside a unit or where the tree is not green.
 - **Measure it.** `npm run token-report -- --since DATE` prints spend by component, carry cost by content kind, fix-loop counts, a subagent table, skills invoked, and recurring shapes (scratch scripts and greps found in three or more subagents, a sign of a missing shared tool), from this project's transcripts. Its header holds the last baseline. To read one unit's run:
   - `--agent <id prefix or description text>` keeps only the matching subagent transcripts, so name each unit's launch by its ID.
   - `--session <id prefix>` keeps that session and its subagents; with `--agent`, only its matching subagents. Without `--since`, both search all dates.
-  - `--calls` prints one line per tool call: number, kind, result tokens, context at the call, carry cost, label.
+  - `--calls` prints one line per tool call: number, kind, result tokens, context at the call, cost, carry cost, label. The cost is the weighted cost of the API call that issued the tool call; later rows from the same API call show `"`, and a cache expiry shows as one large cost. A listing over 200 rows prints each transcript's 10 costliest rows and saves the full listing to `tmp/logs/token-report-calls.txt`.
+  - `--calls --top N` keeps each transcript's N rows with the largest cost plus carry, in call order, and ends with a line counting the rows left out.
+  - `--show <agent id prefix|main>:<from>-<to>` prints those calls of one transcript (`main` needs `--session`): for each, its number, cost, the assistant text before it, its input, and the result's size in characters and tokens, each trimmed. It never prints the result body, so it shows why a costly call ran without loading what it read.
 
 ## The plan section
 
@@ -88,8 +92,8 @@ A proposal that runs in more than one session states its phases in the plan: eac
 
 A proposal that runs through subagents also states, in its plan:
 
-- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](proposals.md#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is usually one item, sized per [step 1](proposals.md#running-with-subagents)). Write the units as paragraphs, never as a table, because item text is too long to read in a table cell. Each unit starts with its bold ID and name, then a line with the agent, `model` and effort, then its items, then a **May edit:** line
-- the files each unit may edit
+- the units, with IDs, their order, their items, and for each the agent type (`proposal-worker` unless a more specific agent fits, [step 6](proposals.md#running-with-subagents)), the Agent tool `model` value (`opus`, `sonnet`, `haiku`) and reasoning effort (one fresh subagent per unit; a unit is usually one item, sized per [step 1](proposals.md#running-with-subagents)). Write the units as paragraphs, never as a table, because item text is too long to read in a table cell. Each unit starts with its bold ID and name, then a line with the agent, `model` and effort, then its items, then a **May edit:** line. A unit marked *orchestrator* names its one page and the slice it reads
+- the files each unit may edit. A unit that adds a file under `src/`, `scripts/` or `docs/grammar/.vitepress/` that names a grammar path also lists `scripts/page-readers.ts` (for `WHOLE_SITE`), or names the contract it imports from `src/page-contracts.ts` ([read-by blocks](../grammar-docs.md#read-by-blocks))
 - the rule digest copied into every brief, with its report format and the standing stop line from [step 2](proposals.md#running-with-subagents)
 - the gates: `npm run verify -- --allow-generate` against the phase's baseline between items, and the final gate (a clean `npm run build` once nothing is left on a **generate** row). A full `npm run verify` that passes against an empty baseline runs the build and the tests, so it is the final gate; don't run `npm run build` or `npm test` again after it.
 - the recall gate, for a phase that edits `say-*.md`, `english.md` or `src/english-helper/`: `npm run english-helper-recall -- --check` at the phase's end, with its result on the Status line. A drop is then owned by the phase that caused it ([English helper](english-helper.md#regression-net)).
