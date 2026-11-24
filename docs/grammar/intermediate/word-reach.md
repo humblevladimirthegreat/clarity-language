@@ -8,7 +8,7 @@ Inbound links: npm run page-refs -- word-reach.md
 
 # How far a word reaches {#word-reach}
 
-English leaves much of a sentence's reach to guesswork: in *I doubt Azozon said the dog runs*, only context tells whether you doubt the saying or the running. Ageben fixes it with a few rules you have already met one page at a time. Side by side, they say how far each kind of word reaches, which word covers which, what gets into a dependent, an island, or a quote, whose view each word gives, and what carries past a period.
+English often leaves it to guesswork how far a word reaches: in *I doubt Azozon said the dog runs*, only context tells whether you doubt the saying or the running. Ageben fixes it with a few rules you have already met one page at a time. Side by side, they say how far each kind of word reaches, which word covers which, what gets into a dependent, an island, or a quote, whose view each word gives, and what carries past a period.
 
 ### From one word to past the period {#reach-sizes}
 
@@ -19,10 +19,10 @@ When you read a sentence, the question to ask of each word is what it is about: 
 | One word | A tone mark written onto a word | `zazozon ?dodozel vayebel.` *Azozon saw a dog, I think* (unsure about just the dog) | [Tone marks](tone-marks.md#showing-your-tone) |
 | A phrase | The binder inside an island's braces | `zazozon { hogugem zodozel gerulol } vayebel.` | [Scope islands](scope-islands.md#scope-islands) |
 | A clause | A stance word, a channel, a feeling or sake word on `/th/`, an intention adverb | `thevemem zazozon vowurol xam zalazun veruvol.` doubts only the walking | [Which word covers which](/clause#which-covers-which), [clause joins](/joins#clause-joins) |
-| The rest of the sentence | The act word; an *every* phrase or a newly mentioned noun, from where it stands; a bound tag | `zual godozel dogozel vayebel.` | [Speech acts](/speech-moves#speech-act-statement-question-command), [everything](/joins#everything-ua), [bound tags](universals-domains.md#bound-tags) |
+| The rest of the sentence | The act word; an *every* phrase or a newly mentioned noun, from its place onward; a bound tag | `zual godozel dogozel vayebel.` | [Speech acts](/speech-moves#speech-act-statement-question-command), [everything](/joins#everything-ua), [bound tags](universals-domains.md#bound-tags) |
 | Past the period | A channel carried forward, the topic, what `-rth` and a hook on `-r` point back to | `zalazun thebam vudurul. zalazun veruvol.` | [Carrying a channel forward](evidentiality.md#carry-forward), [topic](topic.md#topic) |
 
-A phrase with the reach of the rest of the sentence also runs on into the sentence a stand-in in it points to. Here `blarl` points to the next sentence, so the *every* phrase still reaches it, and `zogozer` there is each cat in turn:
+A phrase with the reach of the rest of the sentence also reaches into the sentence a stand-in in it points to. Here `blarl` points to the next sentence, so the *every* phrase still reaches it, and `zogozer` there is each cat in turn:
 
 > `zual gogozel vezuvel thahum blarl. zogozer guzemel.`
 >
@@ -81,7 +81,7 @@ So when you meet two clause-reach words, check this table first, and fall back o
 
 ### What gets into a box {#boxes}
 
-Some stretches of a sentence keep words apart from the sentence around them: a clause in a join, a dependent after a stand-in, an island in braces, a quote, and an aside. Call each of these a **box**. A box decides two things: which outside words reach in, and whether words inside reach out. Knowing it tells you, for example, that your doubt about a report is never a doubt about the reported words.
+Some stretches of a sentence keep words apart from the sentence around them: a clause in a join, a dependent after a stand-in, an island in braces, a quote, and an aside. Call each of these a **box**. Each kind of box sets two things: which outside words reach in, and whether words inside reach out. Knowing it tells you, for example, that your doubt about a report is never a doubt about the reported words.
 
 | Box | Written | Reaches in | Stays out |
 |-----|---------|------------|-----------|
@@ -155,7 +155,7 @@ In a question, your remarks stay outside what is asked, so the listener answers 
 
 ### What carries past a period {#past-the-period}
 
-Most words stop at the period. An *every* phrase and a bound tag end with their sentence, though they reach on into the sentences a stand-in in that stretch points to, and a call closed by a period reaches only its own turn ([what carries past a period](sentence-linkers.md#past-a-period)). A few things do carry on, each until a set event ends it, and knowing those events tells you when a later sentence still rests on an earlier one.
+Most words stop at the period. An *every* phrase and a bound tag end with their sentence, though they reach on into the sentences a stand-in in that stretch points to, and a call closed by a period reaches only its own turn ([what carries past a period](sentence-linkers.md#past-a-period)). A few things do carry on, each until a set event ends it, and knowing those events tells you when a later sentence still depends on an earlier one.
 
 | What carries | Read by | Ends with | Taught in |
 |--------------|---------|-----------|-----------|
@@ -166,7 +166,7 @@ Most words stop at the period. An *every* phrase and a bound tag end with their 
 | The sentence before | A sentence linker, a discourse hook, or a polar word, whoever said that sentence | The next sentence, a goodbye | [What carries past a period](sentence-linkers.md#past-a-period) |
 | A question's blank | The sentence right after the question | Any other sentence, a reply that opens with *by the way*, a goodbye | [Fill-ask](/questions#fill-ask) |
 
-A frame skips what is not a statement. A question does not take it and does not end it, so your next statement picks it up again:
+A frame applies only to statements. A question neither takes it nor ends it, so it applies again to your next statement:
 
 > `zalazun thebam vudurul. yel zalazun veruvol. zalazun vozuyel.`
 >
@@ -182,7 +182,7 @@ A written statement word ends your frame, but it ends nothing else in the table:
 >
 > "Who walks?" "Azozon, I think."
 
-A goodbye ends the conversation, so every row ends there for the sentences after it, whoever says it and whatever was set before. A quote starts fresh in the same way: inside it, `-rth` and a hook on `-r` look only within the quoted words, and your frame does not carry in.
+A goodbye ends the conversation, so everything in the table ends there for the sentences after it, whoever says it and whatever was set before. A quote also begins with nothing carried in: inside it, `-rth` and a hook on `-r` point back only within the quoted words, and your frame does not carry in.
 
 ### Practice {#intermediate-practice}
 
