@@ -184,6 +184,11 @@ export type Link = {
   key: string;
   anchor: string;
   words: LexWord[];
+  /**
+   * linker, discourse, polar, standIn, standInBack: the word's `gloss` (`therefore`, `instead`, `yes`, `that-clause`),
+   * plus `series` and `ending` where the word is a vowel series and an ending (a hook, a polar word, a stand-in).
+   */
+  values?: Record<string, string>;
   /** The reading it points to, where the tree or the resolve stage names one. */
   to?: ReadingId;
   bind?: AnaphorBind;

@@ -42,9 +42,6 @@ export type LinkNote = Link & { construction: string };
  */
 export type Talk = { used: Link[]; answer?: { to: Reading; sign: 1 | -1 }; therefore?: ReadingId; withdraws?: ReadingId };
 
-/** R4d-5: a discourse hook that adds (`a`, `ao`, `ae`), rewords (`o`) or returns (`er`) keeps the clause. */
-export const KEPT_HOOK = /^(?:(?:a|o)[lmr]|(?:ao|ae)[lm]|er)$/;
-
 /** A term in the program and the claim it stands for: the matcher's input for a question asked of the answer set. */
 export type TermSource = { reading: ReadingId; claim: Claim };
 

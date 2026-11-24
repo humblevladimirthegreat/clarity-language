@@ -1,6 +1,8 @@
 /** Reader context: word keys, the `Ctx` and `Here` records, scope copying, and the frame builders every reader group shares. */
 import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { overlayConstructionId } from "../parse/construction-trace.js";
+import { linkerEnglish } from "../parse/linkers.js";
+import { hookLabel, joinMarkerLabel } from "../parse/morph-gloss-labels.js";
 import { newMemberHead, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
@@ -245,8 +247,29 @@ export function detailOf(key: string, word: LexWord, kind: string): Detail {
   return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values: wordValues(word) };
 }
 
+/** The link kinds whose one word's meaning the solver reads off `values` (interpreter.md#links). */
+const VALUED_LINKS: ReadonlySet<LinkKind> = new Set(["linker", "discourse", "polar", "standIn", "standInBack"]);
+
 export function link(kind: LinkKind, key: string, words: LexWord[], extra: Partial<Link> = {}): Link {
-  return { kind, key, anchor: classOf(key)?.anchor ?? "", words, ...extra };
+  const values = VALUED_LINKS.has(kind) && words.length === 1 ? linkValues(words[0]!) : undefined;
+  return { kind, key, anchor: classOf(key)?.anchor ?? "", words, ...(values ? { values } : {}), ...extra };
+}
+
+/**
+ * A link word's values: its gloss as the morph gloss gives it (a sentence linker's, a discourse hook's, a join word's),
+ * and, for a word built from a vowel series and an ending (a hook, a polar word, a stand-in), `series` and `ending`.
+ */
+function linkValues(word: LexWord): Record<string, string> {
+  const values = wordValues(word);
+  const family = word.family;
+  let gloss: string | undefined;
+  if (family.kind === "hook") {
+    if (word.ending) values.series = family.form.slice(0, -word.ending.length);
+    gloss = hookLabel(family.form, { hookJob: "discourse" });
+  } else if (family.kind === "joinMarker") gloss = joinMarkerLabel(word, {});
+  else gloss = linkerEnglish(word);
+  if (gloss && !values.gloss) values.gloss = gloss;
+  return values;
 }
 
 export function unread(here: Here, reason: Unread["reason"], key: string, word?: LexWord): void {

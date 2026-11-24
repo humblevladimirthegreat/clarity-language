@@ -12,21 +12,35 @@
 import { throughAntecedent, type ListTerm } from "./steps.js";
 import type { Translator } from "./translate.js";
 import { pool as poolClaim } from "./translate-conditions.js";
-import { answerable, name, raws, str } from "./translate-helpers.js";
-import { KEPT_HOOK, type Ctx, type Talk } from "./translate-types.js";
+import { answerable, name, str } from "./translate-helpers.js";
+import type { Ctx, Talk } from "./translate-types.js";
 import type { Claim, Detail, Link, Reading, ReadingId, Term } from "./types.js";
 
-/** O-2: the discourse hooks that withdraw the claim they point to. */
-const WITHDRAW_HOOK = /^(?:e[lm]|ur)$/;
-/** O-3: the discourse hooks that state an exception to the claim they point to. */
-const EXCEPT_HOOK = /^u[lm]$/;
+/** R4d-5: the discourse hooks, by gloss, that add (`al`, `aol`, `ael`), reword (`ol`) or return (`ar`, `or`, `er`) and keep the clause. */
+const KEPT_HOOKS: ReadonlySet<string> = new Set([
+  "additionally",
+  "additionally.open",
+  "in.fact",
+  "in.fact.open",
+  "for.example",
+  "for.example.open",
+  "in.other.words",
+  "in.other.words.open",
+  "going.back.to.that",
+  "as.I.said",
+  "anyway",
+]);
+/** O-2: the discourse hooks, by gloss, that withdraw the claim they point to. */
+const WITHDRAW_HOOKS: ReadonlySet<string> = new Set(["instead", "instead.open", "never.mind.that"]);
+/** O-3: the discourse hooks, by gloss, that state an exception to the claim they point to. */
+const EXCEPT_HOOKS: ReadonlySet<string> = new Set(["except", "except.open"]);
 
 /** For talk(): whether `l` is a withdrawing or excepting hook that points back; a withdrawal names its reading in `out`. */
 export function pointBack(l: Link, out: Talk): boolean {
   if (l.key !== "edge:hook" || l.kind !== "discourse" || !l.to) return false;
-  const text = raws(l.words);
-  if (WITHDRAW_HOOK.test(text)) out.withdraws = l.to;
-  return WITHDRAW_HOOK.test(text) || EXCEPT_HOOK.test(text);
+  const gloss = l.values?.gloss ?? "";
+  if (WITHDRAW_HOOKS.has(gloss)) out.withdraws = l.to;
+  return WITHDRAW_HOOKS.has(gloss) || EXCEPT_HOOKS.has(gloss);
 }
 
 /** O-2: the program's lines with each withdrawn reading's `on(Id).` fact dropped. */
@@ -45,7 +59,7 @@ export function excepted(tr: Translator, prior: ReadingId, list: Term | ListTerm
   const roles = (["z", "d", "b"] as const).filter((r) => claim.roles[r] === list);
   const out: string[] = [];
   for (const r of tr.byId.values()) {
-    if (!r.links.some((l) => l.key === "edge:hook" && l.to === prior && EXCEPT_HOOK.test(raws(l.words)))) continue;
+    if (!r.links.some((l) => l.key === "edge:hook" && l.to === prior && EXCEPT_HOOKS.has(l.values?.gloss ?? ""))) continue;
     for (const role of roles) {
       const t = r.claim.roles[role];
       for (const m of t?.kind === "list" ? t.members : t ? [t] : []) {
@@ -99,29 +113,28 @@ export function pooled(tr: Translator, claim: Claim, reading: Reading): Claim {
 /**
  * R4d-1, R4d-3 to R4d-5 (R4d decisions O-4, O-5): the links that add no term. Used: a sentence linker, topic word or
  * agenda number (`unit:linker`), a span topic (`body:topicMarker`), a tag (`slot:tag`; its phrase takes its own row),
- * a discourse hook that adds, rewords or returns (`edge:hook`, {@link KEPT_HOOK}), and a polar word with no verdict
+ * a discourse hook that adds, rewords or returns (`edge:hook`, {@link KEPT_HOOKS}), and a polar word with no verdict
  * (`ua`, `oe`, `ae`, `ue`, or any polar word on a command or with no reading before it). R4d-2: `ao` / `uo` on any
  * ending (`-r` too, O-4) on a yes / no question or a statement is a verdict on that reading's claim; on a fill question,
- * or a reading with a frame or a list, it stays unused. O-1: `xahom` names the reading its `cause` starts from.
+ * or a reading with a frame or a list, it stays unused. O-1: *therefore* (`xahom`, gloss `therefore`) names the reading its `cause` starts from.
  */
 export function talkOf(tr: Translator, reading: Reading): Talk {
   const out: Talk = { used: [] };
   for (const l of reading.links) {
-    const text = raws(l.words);
     if (l.key === "unit:linker" || l.key === "body:topicMarker" || l.key === "slot:tag") {
       out.used.push(l);
-      if (l.key === "unit:linker" && text === "xahom" && l.to) out.therefore = l.to;
-    } else if (l.key === "edge:hook" && l.kind === "discourse" && (KEPT_HOOK.test(text) || pointBack(l, out))) out.used.push(l);
+      if (l.key === "unit:linker" && l.values?.gloss === "therefore" && l.to) out.therefore = l.to;
+    } else if (l.key === "edge:hook" && l.kind === "discourse" && (KEPT_HOOKS.has(l.values?.gloss ?? "") || pointBack(l, out))) out.used.push(l);
     else if (l.key === "edge:polar") {
-      const m = /^y([aeiou]+)[lmr]$/.exec(text);
-      if (!m) continue;
+      const series = l.values?.series;
+      if (!series) continue;
       const to = l.to ? tr.byId.get(l.to) : undefined;
       const force = to?.frames.find((f) => f.key === "edge:force");
       const command = force?.values.series === "o" || force?.values.series === "u";
-      if (["ua", "oe", "ae", "ue"].includes(m[1]!) || ((m[1] === "ao" || m[1] === "uo") && (!to || command))) out.used.push(l);
-      else if ((m[1] === "ao" || m[1] === "uo") && to && answerable(to)) {
+      if (["ua", "oe", "ae", "ue"].includes(series) || ((series === "ao" || series === "uo") && (!to || command))) out.used.push(l);
+      else if ((series === "ao" || series === "uo") && to && answerable(to)) {
         out.used.push(l);
-        out.answer = { to, sign: m[1] === "ao" ? 1 : -1 };
+        out.answer = { to, sign: series === "ao" ? 1 : -1 };
       }
     }
   }

@@ -66,7 +66,7 @@ export function groundsOf(tr: Translator, reading: Reading, channel: Frame, ctx:
   const hosted = channel.hosted;
   const link = hosted?.kind === "clause" ? reading.links.find((l) => l.kind === "standIn" && l.to === hosted.reading.id) : undefined;
   if (hosted?.kind !== "clause") return bad;
-  if (!link || link.words.map((w) => w.raw).join(" ") !== "blarl" || isEmptyClaim(reading.claim)) return bad;
+  if (!link || link.values?.series !== "a" || link.values.ending !== "rl" || isEmptyClaim(reading.claim)) return bad;
   if (claimTerms(reading.claim).some((t) => t.kind === "list")) return bad;
   const cond = hosted.reading;
   if (cond.frames.some((f) => f.key !== "slot:newMember") || tr.unrowed(cond) || cond.stanceLists?.length || claimTerms(cond.claim).some((t) => t.kind === "list" || termFrames(t).length)) return bad;

@@ -1187,4 +1187,15 @@ describe("reader: links that point back past a period", () => {
     const [, plain] = readText("zalazun veruvol. al zalazun vezuvel.", tables);
     assert.equal(linkOf(plain!, "discourse")?.to, undefined);
   });
+
+  it("interpreter.md#links: a linker, hook, polar word or stand-in link carries its word's gloss, series and ending", () => {
+    const valuesOf = (text: string, key: string, at = -1) => allReadings(readText(text, tables)).at(at)!.links.find((l) => l.key === key)?.values;
+    assert.deepEqual(valuesOf("zalazun veruvol. xahom zalazun vezuvel.", "unit:linker"), { ending: "m", gloss: "therefore" });
+    assert.deepEqual(valuesOf("zalazun veruvol. el zalazun vezuvel.", "edge:hook"), { ending: "l", series: "e", gloss: "instead" });
+    assert.deepEqual(valuesOf("zalazun veruvol. aol zalazun vezuvel.", "edge:hook"), { ending: "l", series: "ao", gloss: "in.fact" });
+    assert.deepEqual(valuesOf("zalazun veruvol xal ul zazozon vezuvel.", "hookJob:discourse"), { ending: "l", series: "u", gloss: "except" });
+    assert.deepEqual(valuesOf("zalazun veruvol. yaor.", "edge:polar"), { series: "ao", ending: "r", gloss: "yes-for-now" });
+    assert.deepEqual(valuesOf("thahum blarl zazozon vehohel. zalazun veruvol.", "lexReading:standIn", 0), { series: "a", ending: "rl", gloss: "that-clause" });
+    assert.deepEqual(valuesOf("zalazun veruvol. zazozon vehohel barth.", "lexReading:standInBack"), { series: "a", ending: "rth", gloss: "that-same-claim" });
+  });
 });
