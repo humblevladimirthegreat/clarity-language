@@ -4,7 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #naming-a-holder: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key
+- #naming-a-holder: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key, 1 discourse slot cell
 - #what-the-holder-covers: 1 rejection, 14 pair-table rules, 4 boundary cells
 Inbound links: npm run page-refs -- holder.md
 -->

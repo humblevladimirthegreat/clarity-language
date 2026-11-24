@@ -4,6 +4,7 @@
  * (`forEachExample` in `accounting-walk.ts`); the script `scripts/scope-report.ts` saves, diffs and prints it.
  */
 import { BOUNDARY_COLUMNS, boundaryCell, cellLabel, type BoundaryColumn, type NestedKind } from "../parse/boundaries.js";
+import { slotOfLink } from "../parse/discourse-slots.js";
 import type { FrameFamily } from "../parse/scope.js";
 import { explainPair, type PairSide } from "../parse/scope-profiles.js";
 import type { Frame, Reading, StanceList } from "./types.js";
@@ -127,6 +128,14 @@ const boundaryKeys = (r: ReadingRecord): string[] => {
   return [...rows].flatMap((row) => columns.map((column) => `${row} ${column}: ${cellLabel(boundaryCell(row, column))}`));
 };
 
+/** The discourse slots a reading's links read, as `slot kind key`, with ` (no to)` where the link names no reading (interpreter.md#discourse-slots). */
+const slotKeys = (r: ReadingRecord): string[] =>
+  r.links.flatMap((l) => {
+    const [kindKey = "", to] = l.split(" -> ");
+    const slot = slotOfLink(kindKey);
+    return slot ? [`${slot} ${kindKey}${to === undefined && slot !== "topic" ? " (no to)" : ""}`] : [];
+  });
+
 const SECTIONS: [string, (r: ReadingRecord) => string[]][] = [
   ["frame families", (r) => r.families],
   ["pair rules", pairRules],
@@ -136,9 +145,10 @@ const SECTIONS: [string, (r: ReadingRecord) => string[]][] = [
   ["nested readings", (r) => (r.nested ? [r.nested] : [])],
   ["links", (r) => r.links.map((l) => l.split(" -> ")[0] ?? l)],
   ["boundary cells", boundaryKeys],
+  ["discourse slots", slotKeys],
 ];
 
-/** Count examples per frame family, pair rule, order pair and kind, unordered pair, stance list, nested kind, link kind and key, and boundary cell. */
+/** Count examples per frame family, pair rule, order pair and kind, unordered pair, stance list, nested kind, link kind and key, boundary cell, and discourse slot. */
 export function countReport(report: ScopeReport): ScopeCounts {
   const counts: ScopeCounts = Object.fromEntries(SECTIONS.map(([name]) => [name, {}]));
   for (const example of Object.values(report)) {

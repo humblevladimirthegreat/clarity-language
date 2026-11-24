@@ -259,7 +259,7 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 | **Added:** discourse hook to prior talk (`-r`: `to` an earlier stretch; `el` / `em` / `ul` / `um`: `to` the sentence before, the claim it replaces or makes an exception to) | `hookJob:discourse`, `edge:hook` | `hooks.md#discourse-hooks`, `discourse-hooks.md#discourse` |
 | **Added:** in-clause hook pointing back to a landmark: `resumed` the latest extra-noun hook detail in an earlier sentence (for stacked vowels, the latest with the same vowels), its `hosted` the landmark, and `to` its sentence; neither when there is none | `hookJob:resume` | `in-clause-hooks.md#hook-resume` |
 | **Added:** frame content in the next sentence (`blarl`): a hinge's condition, a channel's grounds | `slot:grounds` | `causation.md#if`, `dependents.md#hinges`, `evidentiality.md#evidence-clause` |
-| **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences. One `carriedFrame` link per inherited frame, `to` the reading that set it, `frame` that reading's frame; a dated channel's link also holds its offset words. Settled 2026-11-18: a holder on MAY carries and the MAY does not (`holder.md#naming-a-holder`); only a channel on the main clause starts or ends a frame, never one in a dependent or on one clause-join member (`evidentiality.md#carry-forward`); the grounds after `blarl` sit in the body that takes the frame (decision 16, no page edit); a carried frame covers what you claim, never your own stance (decision 15, `evidentiality.md#carry-forward`): a statement whose clause has WANT, PLAN or DECISION neither takes nor ends it, and on a statement with a speaker attitude (`slot:th`) or a feeling word on `/th/` (a sake word with a moved horizon, `how-you-feel.md#feeling-word`) the claim takes it and the link's `coveredBy` lists those frames, which sit over it. The order is a link field, not an `order` entry, because the carried frame is never in the later reading's `frames` | `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`); `carry:channel`, `carry:holder`, `carry:notional` | `evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now` |
+| **Added:** a carried frame: a channel, holder, NOTIONAL, or dated offset that goes on over later bare sentences, `to` the reading that set it; what sets, reads and ends it is the [discourse slots](#discourse-slots) row `carriedFrame` | `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`); `carry:channel`, `carry:holder`, `carry:notional` | `evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now` |
 | **Added:** a NOTIONAL question's supposition: `readQuestion` links the question's NOTIONAL frame `to` the latest stated NOTIONAL reading in the log, `frame` that reading's NOTIONAL frame; no link when the log has none. The solver asks inside that reading's view, and `ask` matches the question only against the reading it points to and the readings that carry its frame | `link:supposition` | `notional.md#notional-as-if-framing` |
 | **Added:** a polar word replying to the yes / no question before it | `edge:polar` | `questions.md#polar-particle` |
 | **Added:** a bound tag, naming each member of a `zual` / `zuam` fence in turn, to the end of its sentence and through the stand-ins in it | `slot:tag`, `anaphor:tag` | `universals-domains.md#bound-tags` |
@@ -268,6 +268,100 @@ Each link type joins two readings, or a word and a reading. Confirmed against it
 The grounds link and the carried frame shape the reading: a hinge whose condition is `blarl` gets that next sentence's reading as its `content` through the link, and a carried frame appears on a later reading as a link to the reading that set it, never as a copied frame.
 
 A link whose one word's meaning the solver acts on carries that word's `values`, the way a frame does, so the solver never tests its spelling. The sentence linker (`unit:linker`) carries its `gloss` (`therefore`, `however`). The discourse hook (`edge:hook`, `hookJob:discourse`) carries its `gloss` (`instead`, `except`, `in.fact`), its vowels as `series` and its `ending`. The polar word (`edge:polar`) and the stand-ins (`lexReading:standIn`, `lexReading:standInNamed`, `lexReading:standInBack`, `slot:dependent`) carry `series`, `ending` and their `gloss` (`yes-for-now`, `that-clause`). The other links carry no `values`.
+
+## Discourse slots
+
+Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it in two places: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change. The scope report counts the examples whose links read each slot (`discourse slots`).
+
+Each cell is stated, with the section that states it, or **unstated**: as in the [boundary table](#boundaries), an unstated cell keeps what the code does today, which it names, until the grammar states it.
+
+The end events:
+
+| Column | Event |
+|--------|-------|
+| `newValue` | a new value |
+| `statementWord` | a written statement word (`yal`, `yam`, `yar`) as the real act |
+| `byTheWay` | *by the way* (`xavedam`) |
+| `goodbye` | a goodbye |
+
+The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) and `quote` (`passes` or `blocks` into a quote).
+
+**`carriedFrame`**, the carried frame: a channel, holder or NOTIONAL, a dated channel with its offset (`evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now`). Set by a channel, NOTIONAL or holder on a statement's main clause; read by a later statement with no such frame of its own, as one `carriedFrame` link (`carry:channel`, `carry:holder`, `carry:notional`) per inherited frame, `to` the reading that set it, `frame` that reading's frame; a dated channel's link also holds its offset words. The record is `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`). Settled 2026-11-18: a holder on MAY carries and the MAY does not (`holder.md#naming-a-holder`); only a channel on the main clause starts or ends a frame, never one in a dependent or on one clause-join member (`evidentiality.md#carry-forward`, the boundary table's `carryStart` and `carryEnd`); the grounds after `blarl` sit in the body that takes the frame (decision 16, no page edit); a carried frame covers what you claim, never your own stance (decision 15, `evidentiality.md#carry-forward`): a statement whose clause has WANT, PLAN or DECISION neither takes nor ends it, and on a statement with a speaker attitude (`slot:th`) or a feeling word on `/th/` (a sake word with a moved horizon, `how-you-feel.md#feeling-word`) the claim takes it and the link's `coveredBy` lists those frames, which sit over it. The order is a link field, not an `order` entry, because the carried frame is never in the later reading's `frames`.
+
+| Column | Cell |
+|--------|------|
+| `newValue` | ends, `evidentiality.md#carry-forward` |
+| `statementWord` | ends, `evidentiality.md#carry-forward` |
+| `byTheWay` | ends, `evidentiality.md#carry-forward` |
+| `goodbye` | ends every speaker's, `evidentiality.md#carry-forward` |
+| `kept` | speaker, `evidentiality.md#carry-forward` |
+| `quote` | blocks, `evidentiality.md#carry-forward` |
+
+**`topic`**, the topic (`topic.md#topic`, `topic.md#topic-pronoun`). Set by an `/x/` introduce or return at the start of a sentence; read by the topic pronoun (`anaphor:topic`).
+
+| Column | Cell |
+|--------|------|
+| `newValue` | ends, `topic.md#topic` |
+| `statementWord` | keeps, `topic.md#topic` |
+| `byTheWay` | ends, `topic.md#topic` |
+| `goodbye` | ends, `topic.md#topic` |
+| `kept` | shared, `topic.md#topic` |
+| `quote` | blocks, `topic.md#topic-dependents` |
+
+**`standInBack`**, the latest content per act vowel (`stand-in-vowels.md#stand-in-back`). Set by a sentence, by its act vowel (none states), or a dependent a stand-in of that vowel fills; read by a stand-in on `-rth` (`lexReading:standInBack`, the [links](#links) row).
+
+| Column | Cell |
+|--------|------|
+| `newValue` | ends, `stand-in-vowels.md#stand-in-back` |
+| `statementWord` | unstated (today: keeps) |
+| `byTheWay` | unstated (today: keeps) |
+| `goodbye` | unstated (today: keeps) |
+| `kept` | unstated (today: shared) |
+| `quote` | unstated (today: passes) |
+
+**`hookResume`**, the latest extra-noun hook per vowel (`in-clause-hooks.md#hook-resume`). Set by an extra-noun hook with a landmark, per vowels for stacked vowels; read by an extra-noun hook on `-r` (`hookJob:resume`, the [links](#links) row).
+
+| Column | Cell |
+|--------|------|
+| `newValue` | unstated (today: ends) |
+| `statementWord` | unstated (today: keeps) |
+| `byTheWay` | unstated (today: keeps) |
+| `goodbye` | unstated (today: keeps) |
+| `kept` | unstated (today: shared) |
+| `quote` | unstated (today: passes) |
+
+**`supposition`**, the NOTIONAL supposition a question points to (`notional.md#notional-as-if-framing`). Set by a stated reading with a NOTIONAL frame; read by a question with a NOTIONAL frame (`link:supposition`, the [links](#links) row).
+
+| Column | Cell |
+|--------|------|
+| `newValue` | unstated (today: ends) |
+| `statementWord` | unstated (today: keeps) |
+| `byTheWay` | unstated (today: keeps) |
+| `goodbye` | unstated (today: keeps) |
+| `kept` | unstated (today: shared) |
+| `quote` | unstated (today: blocks) |
+
+**`sentenceBefore`**, the sentence before (`sentence-linkers.md#sentence-linkers`, `hooks.md#discourse-hooks`, `questions.md#polar-particle`). Set by every sentence; read by a sentence linker (`unit:linker`), a discourse hook (`edge:hook`, `hookJob:discourse`) and a polar word (`edge:polar`).
+
+| Column | Cell |
+|--------|------|
+| `newValue` | ends, `sentence-linkers.md#sentence-linkers` |
+| `statementWord` | unstated (today: ends) |
+| `byTheWay` | unstated (today: ends) |
+| `goodbye` | unstated (today: ends) |
+| `kept` | unstated (today: shared) |
+| `quote` | unstated (today: blocks) |
+
+**`answer`**, the question an answer fills (`questions.md#fill-ask`). Set by a question; read by the reply right after it (`answer:answer`).
+
+| Column | Cell |
+|--------|------|
+| `newValue` | unstated (today: ends) |
+| `statementWord` | unstated (today: ends) |
+| `byTheWay` | unstated (today: ends) |
+| `goodbye` | unstated (today: ends) |
+| `kept` | unstated (today: shared) |
+| `quote` | unstated (today: blocks) |
 
 ## Scope statements
 

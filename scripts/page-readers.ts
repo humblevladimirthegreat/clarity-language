@@ -33,6 +33,7 @@ import { FAMILY_TERMS } from "../src/interpret/inspect-notes.js";
 import { CONSTRUCTIONS, REJECTIONS } from "../src/parse/constructions.js";
 import { FRAME_KEYS, PAIR_ROWS } from "../src/parse/scope.js";
 import { boundaryCells } from "../src/parse/boundaries.js";
+import { DISCOURSE_SLOTS, slotCells } from "../src/parse/discourse-slots.js";
 import { PROFILES } from "../src/parse/scope-profiles.js";
 import { GRAMMAR_DIR, readData, REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath, tmpRel } from "../src/tmp-paths.js";
@@ -81,6 +82,7 @@ const REGISTRIES: readonly Registry[] = [
   { name: "frame-keys", kind: "section", singular: "frame key", plural: "frame keys" },
   { name: "pair-rows", kind: "section", singular: "pair-table rule", plural: "pair-table rules" },
   { name: "boundaries", kind: "section", singular: "boundary cell", plural: "boundary cells" },
+  { name: "discourse-slots", kind: "section", singular: "discourse slot cell", plural: "discourse slot cells" },
   { name: "terms", kind: "section", singular: "inspect term", plural: "inspect terms" },
   { name: "cues", kind: "page", singular: "cue (claritish-triggers.csv)", plural: "cues (claritish-triggers.csv)" },
   { name: "flows", kind: "page", singular: "flow (claritish-flows.json)", plural: "flows (claritish-flows.json)" },
@@ -98,6 +100,7 @@ const READ_FILES = new Set([
   "src/parse/scope.ts",
   "src/parse/scope-profiles.ts",
   "src/parse/boundaries.ts",
+  "src/parse/discourse-slots.ts",
   "src/interpret/inspect-notes.ts",
 ]);
 
@@ -286,6 +289,11 @@ function registryRefs(): RegistryRef[] {
   // The boundary table's cells name the sections that state what passes into a nested reading.
   for (const { kind, column, cell } of boundaryCells()) {
     if (cell.anchor) refs.push(anchorRef("boundaries", cell.anchor, `boundaries.ts ${kind} ${column}`, "docs/meta"));
+  }
+  // The discourse slot table's rows and cells name the sections that state what crosses a period.
+  for (const row of DISCOURSE_SLOTS) for (const a of row.anchors) refs.push(anchorRef("discourse-slots", a, `discourse-slots.ts ${row.id}`, "docs/meta"));
+  for (const { id, column, cell } of slotCells()) {
+    if (cell.anchor) refs.push(anchorRef("discourse-slots", cell.anchor, `discourse-slots.ts ${id} ${column}`, "docs/meta"));
   }
   for (const [family, term] of Object.entries(FAMILY_TERMS)) {
     if (term?.anchor) refs.push(anchorRef("terms", term.anchor, `inspect-notes.ts ${family}`, "docs/meta"));

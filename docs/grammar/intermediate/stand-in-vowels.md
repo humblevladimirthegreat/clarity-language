@@ -7,7 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #stand-in: 3 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class
-- #stand-in-back: 6 construction homes, 2 interpreter rows, 2 interpreter classes, 12 pair-table rules
+- #stand-in-back: 6 construction homes, 2 interpreter rows, 2 interpreter classes, 12 pair-table rules, 2 discourse slot cells
 Inbound links: npm run page-refs -- stand-in-vowels.md
 -->
 

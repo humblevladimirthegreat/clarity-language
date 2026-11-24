@@ -6,7 +6,7 @@ band: intermediate
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #sentence-linkers: 2 rejections, 9 closed words, 1 interpreter row, 1 interpreter class
+- #sentence-linkers: 2 rejections, 9 closed words, 1 interpreter row, 1 interpreter class, 2 discourse slot cells
 Inbound links: npm run page-refs -- sentence-linkers.md
 -->
 

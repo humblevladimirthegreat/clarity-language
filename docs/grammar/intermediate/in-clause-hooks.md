@@ -8,7 +8,7 @@ Page shape read by code:
 Sections named by data:
 - #in-clause: 1 interpreter row, 1 interpreter class
 - #hook-w: 2 construction homes
-- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+- #hook-resume: 7 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 1 discourse slot cell
 Inbound links: npm run page-refs -- in-clause-hooks.md
 -->
 

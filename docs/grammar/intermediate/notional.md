@@ -4,7 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #notional-as-if-framing: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key
+- #notional-as-if-framing: 1 overlay row, 1 interpreter row, 1 interpreter class, 1 frame key, 2 discourse slot cells
 - #follow-up-endings-notional: 2 overlay rows, 1 pair-table rule
 Inbound links: npm run page-refs -- notional.md
 -->

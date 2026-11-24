@@ -11,7 +11,7 @@ Sections named by data:
 - #instead-el: 1 construction home
 - #except-ul: 1 construction home
 - #closed-and-open-endings: 3 construction homes
-- #discourse-hooks: 1 construction home, 1 rejection, 2 interpreter rows, 2 interpreter classes
+- #discourse-hooks: 1 construction home, 1 rejection, 2 interpreter rows, 2 interpreter classes, 1 discourse slot cell
 - #since: 1 rejection
 Inbound links: npm run page-refs -- hooks.md
 -->

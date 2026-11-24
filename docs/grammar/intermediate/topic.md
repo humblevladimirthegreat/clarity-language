@@ -6,8 +6,9 @@ band: intermediate
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #topic: 1 interpreter row, 1 interpreter class
-- #topic-pronoun: 1 construction home, 2 rejections, 1 closed word, 1 interpreter row, 1 interpreter class
+- #topic: 1 interpreter row, 1 interpreter class, 6 discourse slot cells
+- #topic-pronoun: 1 construction home, 2 rejections, 1 closed word, 1 interpreter row, 1 interpreter class, 1 discourse slot cell
+- #topic-dependents: 1 discourse slot cell
 Inbound links: npm run page-refs -- topic.md
 -->
 

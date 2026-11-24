@@ -22,9 +22,12 @@
  *   how-you-feel.md#feeling-word). `BodyCarry.coveredBy` names those words.
  * - Ends: a new channel, NOTIONAL or holder (it replaces the frame); a written statement word as the real act;
  *   *by the way* (`xavedam`); a goodbye (word-endings.md#greeting, as the resolve stage tells it from a hello).
+ *   The end events and the per-speaker rule are the discourse slot table's `carriedFrame` row
+ *   (interpreter.md#discourse-slots).
  */
 import { offsetSign } from "./enforce.js";
 import { boundaryCell, todayOf, type BoundaryColumn, type NestedKind } from "./boundaries.js";
+import { endsAt, goodbyeEndsEveryone, perSpeaker } from "./discourse-slots.js";
 import { linkerEnglish } from "./linkers.js";
 import type { ClauseScope, FrameFamily, ScopeFrame } from "./scope.js";
 import { membersWhere, type MemberProfile } from "./scope-profiles.js";
@@ -159,26 +162,33 @@ export function carriedFrames(
   const out: BodyCarry[] = [];
   const carries = new Map<string, CarriedFrame[]>();
   let sentence = 0;
-  const speakerAt = (index: number): string => speakers?.[index] ?? "";
+  const speakerAt = (index: number): string => (perSpeaker("carriedFrame") ? (speakers?.[index] ?? "") : "");
+  // A goodbye ends every speaker's frame, or only its own speaker's (interpreter.md#discourse-slots).
+  const goodbye = (speaker: string): void => {
+    if (!endsAt("carriedFrame", "goodbye")) return;
+    if (goodbyeEndsEveryone("carriedFrame")) carries.clear();
+    else carries.delete(speaker);
+  };
   utterances.forEach((utterance, utteranceIndex) => {
     const first = sentence;
     sentence += Math.max(utterance.bodies.length, 1);
     const act = writtenAct(utterance);
-    if (goodbyes.has(utterance)) carries.clear();
+    if (goodbyes.has(utterance)) goodbye(speakerAt(first));
     // A written statement word as the real act: back in your own voice (evidentiality.md#carry-forward).
-    else if (act === "statement") carries.delete(speakerAt(first));
+    else if (act === "statement" && endsAt("carriedFrame", "statementWord")) carries.delete(speakerAt(first));
     // A question, command or request neither takes the frame nor ends it.
     if (act === "other") return;
     utterance.bodies.forEach((body, bodyIndex) => {
       const speaker = speakerAt(first + bodyIndex);
       const scope = byClause.get(body.clause);
       if (goodbyes.has(body)) {
-        carries.clear();
+        goodbye(speaker);
         return;
       }
-      if (body.linker && linkerEnglish(body.linker) === "by-the-way") carries.delete(speaker);
+      if (body.linker && linkerEnglish(body.linker) === "by-the-way" && endsAt("carriedFrame", "byTheWay")) carries.delete(speaker);
       const own = [...ownCarry(scope, body.clause, utteranceIndex, bodyIndex), ...nestedCarry("carryStart", body, byClause, utteranceIndex, bodyIndex)];
-      if (own.length === 0 && nestedCarry("carryEnd", body, byClause, utteranceIndex, bodyIndex).length > 0) carries.delete(speaker);
+      const nestedEnd = endsAt("carriedFrame", "newValue") && nestedCarry("carryEnd", body, byClause, utteranceIndex, bodyIndex).length > 0;
+      if (own.length === 0 && nestedEnd) carries.delete(speaker);
       if (own.length > 0) {
         carries.set(speaker, own);
         return;
