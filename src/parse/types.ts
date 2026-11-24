@@ -614,6 +614,12 @@ export type ResolveInfo = {
   /** Who says each sentence, in text order (`ParseOptions.speakers`). Present when the parse was given speakers. */
   speakers?: readonly string[];
   /**
+   * Each sentence read as a goodbye (word-endings.md#greeting), in text order: a goodbye body, or a goodbye on an
+   * utterance's turn cluster, given as its first sentence. What it ends is its row in the discourse slots
+   * (interpreter.md#discourse-slots). Present when the text has one.
+   */
+  goodbyes?: { utteranceIndex: number; bodyIndex: number }[];
+  /**
    * What passes into each aside word (`(…)`), noted where it sits (spans.md#asides-th): the reader parses the aside's words
    * with it as `ParseOptions.aside`. Present when the text has an aside.
    */

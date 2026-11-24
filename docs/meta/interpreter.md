@@ -271,7 +271,7 @@ A link whose one word's meaning the solver acts on carries that word's `values`,
 
 ## Discourse slots
 
-Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it in two places: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change (who says each sentence is `ResolveInfo.speakers`, set when the parse is given speakers), and whether it looks out of a quote: where the quote cell blocks, the quote's own reading resolves the point-backs in it and the outer sentences leave them as they are. The scope report counts the examples whose links read each slot (`discourse slots`).
+Some state crosses a period: a later sentence reads what an earlier one set. Each piece of it is a row of the `DISCOURSE_SLOTS` table in `src/parse/discourse-slots.ts`, one row per slot. A row says what sets the slot, what reads it (and the links that record the read), and its cells: which events end the value, whether each speaker keeps their own, and whether the value from outside a quote reaches a reading inside it. The code consults it where it reads a slot: `carriedFrames` reads the carried frame's end events and per-speaker rule from its row, and the reader's `pointBackLinks` reads from the stand-in and hook rows whether a point-back looks past a speaker change (who says each sentence is `ResolveInfo.speakers`, set when the parse is given speakers), and whether it looks out of a quote: where the quote cell blocks, the quote's own reading resolves the point-backs in it and the outer sentences leave them as they are. Every point-back, and `previousSentence` and `fillAnswers` for the sentence before and the answer, read their row's goodbye cell. The scope report counts the examples whose links read each slot (`discourse slots`).
 
 Each cell is stated, with the section that states it, or **unstated**: as in the [boundary table](#boundaries), an unstated cell keeps what the code does today, which it names, until the grammar states it.
 
@@ -284,7 +284,7 @@ The end events:
 | `byTheWay` | *by the way* (`xavedam`) |
 | `goodbye` | a goodbye |
 
-An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with `yal` still answers, and `yal xezem …` still links to the sentence before.
+An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with `yal` still answers, and `yal xezem …` still links to the sentence before. A goodbye ends the conversation, so every slot's `goodbye` cell ends: no sentence after a goodbye reads the goodbye or anything before it. Its stand-in and hook rows end in the goodbye sentence too, since a point-back in it finds nothing; for `sentenceBefore` and `answer`, whether the goodbye sentence itself still reads the sentence before it and fills the question before it is unstated (the cell's `eventSentence`; today it does). The resolve stage lists the goodbye sentences (`ResolveInfo.goodbyes`), which the reader's `previousSentence` (`read-context.ts`) and `pointBackLinks` read; inside the resolve stage, `carriedFrames` and `fillAnswers` read the same goodbyes.
 
 The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A passing `aside` cell reads the value where the aside sits: the topic through the aside's resolve, which starts from the outer context, and a point-back through the sentence's own `to` pass, which reaches the links inside its asides. Nothing inside an aside sets a slot.
 
@@ -319,7 +319,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `stand-in-vowels.md#stand-in-back` |
 | `statementWord` | keeps, `stand-in-vowels.md#stand-in-back` |
 | `byTheWay` | keeps, `stand-in-vowels.md#stand-in-back` |
-| `goodbye` | unstated (today: keeps) |
+| `goodbye` | ends, `stand-in-vowels.md#stand-in-back` |
 | `kept` | shared, `stand-in-vowels.md#stand-in-back` |
 | `quote` | blocks, `stand-in-vowels.md#stand-in-back` |
 | `aside` | passes, `spans.md#asides-th` |
@@ -331,7 +331,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `in-clause-hooks.md#hook-resume` |
 | `statementWord` | keeps, `in-clause-hooks.md#hook-resume` |
 | `byTheWay` | keeps, `in-clause-hooks.md#hook-resume` |
-| `goodbye` | unstated (today: keeps) |
+| `goodbye` | ends, `in-clause-hooks.md#hook-resume` |
 | `kept` | shared, `in-clause-hooks.md#hook-resume` |
 | `quote` | blocks, `in-clause-hooks.md#hook-resume` |
 | `aside` | passes, `spans.md#asides-th` |
@@ -355,7 +355,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `sentence-linkers.md#sentence-linkers` |
 | `statementWord` | keeps, `sentence-linkers.md#past-a-period` |
 | `byTheWay` | keeps, `sentence-linkers.md#past-a-period` |
-| `goodbye` | unstated (today: ends) |
+| `goodbye` | ends for the sentences after it, `sentence-linkers.md#past-a-period`; the goodbye sentence itself unstated (today: keeps) |
 | `kept` | shared, `sentence-linkers.md#past-a-period` |
 | `quote` | blocks, `sentence-linkers.md#past-a-period` |
 | `aside` | blocks, `spans.md#asides-th` |
@@ -367,7 +367,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `questions.md#fill-ask` |
 | `statementWord` | unstated (today: keeps after `yal`; a reply opening with `yam` or `yar` answers nothing) |
 | `byTheWay` | ends, `questions.md#fill-ask` |
-| `goodbye` | unstated (today: ends) |
+| `goodbye` | ends for the sentences after it, `questions.md#fill-ask`; the goodbye sentence itself unstated (today: keeps) |
 | `kept` | shared, `questions.md#fill-ask` |
 | `quote` | blocks, `questions.md#fill-ask` |
 | `aside` | blocks, `spans.md#asides-th` |

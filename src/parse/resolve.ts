@@ -35,7 +35,7 @@ import { isClauseAdverb, type ClassifyTables } from "./classify.js";
 import { clauseScopes, isBareEdge } from "./scope.js";
 import { carriedFrames } from "./carry.js";
 import { crosses } from "./boundaries.js";
-import { slotRow } from "./discourse-slots.js";
+import { endsAt, slotRow } from "./discourse-slots.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -1165,7 +1165,8 @@ function buildResolve(
     asides: new Map(),
   };
   visitResult(result, resolveVisitor(ctx));
-  const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
+  const goodbyes = goodbyeSentences(result.utterances, ctx.goodbyes);
+  const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks, new Set(goodbyes.map((g) => g.utteranceIndex)));
   const blanks = new Set(ctx.asks.flatMap((ask) => [...ask.gaps, ...(ask.inner ?? [])]));
   const scope = clauseScopes(result.utterances, tables, blanks, tones);
   const pairings = respectivelyPairings(result);
@@ -1181,6 +1182,7 @@ function buildResolve(
     ...(carried.length > 0 ? { carried } : {}),
     ...(suppositions.length > 0 ? { suppositions } : {}),
     ...(speakers ? { speakers } : {}),
+    ...(goodbyes.length > 0 ? { goodbyes } : {}),
     ...(ctx.asides.size > 0 ? { asides: ctx.asides } : {}),
   };
 }
@@ -1214,6 +1216,18 @@ function respectivelyPairings(result: ParseResult): PairingRecord[] {
 }
 
 /**
+ * Each sentence the resolve stage read as a goodbye, in text order: a goodbye body, or a goodbye on an utterance's turn
+ * cluster, given as the utterance's first sentence (`ResolveInfo.goodbyes`).
+ */
+function goodbyeSentences(utterances: readonly Utterance[], goodbyes: ReadonlySet<object>): { utteranceIndex: number; bodyIndex: number }[] {
+  return utterances.flatMap((utterance, utteranceIndex) => {
+    const bodies = utterance.bodies.flatMap((body, bodyIndex) => (goodbyes.has(body) ? [bodyIndex] : []));
+    const at = goodbyes.has(utterance) && !bodies.includes(0) ? [0, ...bodies] : bodies;
+    return at.map((bodyIndex) => ({ utteranceIndex, bodyIndex }));
+  });
+}
+
+/**
  * Tie each reply to the fill-ask right before it (questions.md#fill-ask). A bare citation fills one blank: a noun for
  * a noun blank, a number (`ragel`) or a counted noun (`orelx gradol`) for a number blank (`grar`, a range of numbers).
  * A sentence with no verb fills the blanks when its nouns keep exactly the blanks' letters: existence for a `/z/`
@@ -1224,9 +1238,13 @@ function fillAnswers(
   utterances: Utterance[],
   asks: AskRecord[],
   rangeBlanks: ReadonlyMap<LexWord, BlankRole | undefined>,
+  goodbyeUtterances: ReadonlySet<number>,
 ): AnswerRecord[] {
   const answers: AnswerRecord[] = [];
   utterances.forEach((utterance, i) => {
+    // A goodbye ends the conversation: a reply after it fills no blank asked before it or in it (the `answer` row's
+    // goodbye cell, interpreter.md#discourse-slots).
+    if (goodbyeUtterances.has(i - 1) && endsAt("answer", "goodbye")) return;
     const ask = asks.find((record) => record.utteranceIndex === i - 1);
     const body = utterance.bodies[0];
     const act = actWord(utterance.left);

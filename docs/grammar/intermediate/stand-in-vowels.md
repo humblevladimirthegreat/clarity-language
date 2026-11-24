@@ -7,7 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #stand-in: 3 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class
-- #stand-in-back: 6 construction homes, 2 interpreter rows, 2 interpreter classes, 12 pair-table rules, 6 discourse slot cells
+- #stand-in-back: 6 construction homes, 2 interpreter rows, 2 interpreter classes, 12 pair-table rules, 7 discourse slot cells
 Inbound links: npm run page-refs -- stand-in-vowels.md
 -->
 
@@ -128,7 +128,7 @@ The vowel still says what kind of content it is, and the word stands for the mos
 
 The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](/pronouns#resume-r) `-r` picks up one word; `-rth` picks up what was said. Inside a [quote](/spans#writing), `-rth` looks only within the quoted words, never at what was said before the quote.
 
-`-rth` looks back over everything said, by either speaker, so you can take up the other person's claim (*I know that*). A written statement word such as `yal`, or a [*by the way*](sentence-linkers.md#sentence-linkers) in between, does not clear what was said before it: `-rth` still finds the latest content of its kind.
+`-rth` looks back over everything said, by either speaker, so you can take up the other person's claim (*I know that*). A written statement word such as `yal`, or a [*by the way*](sentence-linkers.md#sentence-linkers) in between, does not clear what was said before it: `-rth` still finds the latest content of its kind. A [goodbye](/word-endings#greeting) ends the conversation: `-rth` in a goodbye, or after one, never points to the goodbye or to anything said before it.
 
 Other role letters work the same way as the forward stand-in: **`blarth`** after a hinge (*because of that*) or after [*like*](/relations#likeness) `hewem` (*like that*), **`zarth`** as the subject. Stand-ins fill `/z/` `/d/` `/b/` only; there is no stand-in on `/ɡ/` `/h/` `/w/` `/th/`. *Such* is [whole-stem `-r`](/pronouns#resume-r), and *then* or *so* is a hinge + `blarth`.
 

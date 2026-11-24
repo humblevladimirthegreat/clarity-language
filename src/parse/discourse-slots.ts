@@ -17,14 +17,22 @@ export type SlotId = "carriedFrame" | "topic" | "standInBack" | "hookResume" | "
 /**
  * What may end a slot's value. A cell says whether the sentence that is the event, and those after it, still read the
  * value; for a slot only the next sentence reads (`sentenceBefore`, `answer`), whether that sentence still reads it.
+ * A goodbye ends the conversation, so for those two its cell says whether the sentence after the goodbye reads the
+ * goodbye or anything before it, and its `eventSentence` whether the goodbye sentence itself still reads the value.
  */
 export type EndEvent = "newValue" | "statementWord" | "byTheWay" | "goodbye";
 
 /** Whether an event ends the value. A goodbye that ends every speaker's value, not only its own speaker's, says so. */
 export type EndCell =
-  | { verdict: "ends"; anchor: string; everyone?: true }
+  | { verdict: "ends"; anchor: string; everyone?: true; eventSentence?: EventSentenceCell }
   | { verdict: "keeps"; anchor: string }
   | { verdict: "unstated"; anchor: ""; today: "ends" | "keeps" };
+
+/**
+ * Whether the sentence that is the event still reads the value, where its cell says only what the sentences after it do:
+ * no page states it yet, so it keeps today's behavior, which it names.
+ */
+export type EventSentenceCell = { verdict: "unstated"; anchor: ""; today: "ends" | "keeps" };
 
 /** Whether each speaker keeps a value of their own, or the speakers share one. */
 export type KeptCell = { verdict: "speaker" | "shared"; anchor: string } | { verdict: "unstated"; anchor: ""; today: "speaker" | "shared" };
@@ -78,6 +86,8 @@ const asideBlocks: AsideCell = { verdict: "blocks", anchor: ASIDES };
 const ends = (anchor: string): EndCell => ({ verdict: "ends", anchor });
 const keeps = (anchor: string): EndCell => ({ verdict: "keeps", anchor });
 const unstatedEnd = (today: "ends" | "keeps"): EndCell => ({ verdict: "unstated", anchor: "", today });
+/** A goodbye ends the value for the sentences after it; the goodbye sentence itself still reads it today, unstated. */
+const goodbyeEndsAfter = (anchor: string): EndCell => ({ verdict: "ends", anchor, eventSentence: { verdict: "unstated", anchor: "", today: "keeps" } });
 
 /** The discourse slot table. */
 export const DISCOURSE_SLOTS: readonly SlotRow[] = [
@@ -113,7 +123,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     what: "the latest content per act vowel",
     setBy: "a sentence, by its act vowel (none states), or a dependent a stand-in of that vowel fills",
     readBy: { what: "a stand-in on `-rth`", links: ["standInBack lexReading:standInBack"] },
-    endedBy: { newValue: ends(BACK), statementWord: keeps(BACK), byTheWay: keeps(BACK), goodbye: unstatedEnd("keeps") },
+    endedBy: { newValue: ends(BACK), statementWord: keeps(BACK), byTheWay: keeps(BACK), goodbye: ends(BACK) },
     kept: { verdict: "shared", anchor: BACK },
     quote: { verdict: "blocks", anchor: BACK },
     aside: asidePasses(ASIDES),
@@ -124,7 +134,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     what: "the latest landmark on an extra-noun hook (a stacked `-r` hook looks first for the latest with its vowels)",
     setBy: "an extra-noun hook with a landmark",
     readBy: { what: "an extra-noun hook on `-r` (`er`, `aor`)", links: ["hookResume hookJob:resume"] },
-    endedBy: { newValue: ends(RESUME), statementWord: keeps(RESUME), byTheWay: keeps(RESUME), goodbye: unstatedEnd("keeps") },
+    endedBy: { newValue: ends(RESUME), statementWord: keeps(RESUME), byTheWay: keeps(RESUME), goodbye: ends(RESUME) },
     kept: { verdict: "shared", anchor: RESUME },
     quote: { verdict: "blocks", anchor: RESUME },
     aside: asidePasses(ASIDES),
@@ -154,7 +164,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
       what: "a sentence linker, a discourse hook, a polar word",
       links: ["linker unit:linker", "discourse edge:hook", "discourse hookJob:discourse", "polar edge:polar"],
     },
-    endedBy: { newValue: ends(LINKERS), statementWord: keeps(PAST), byTheWay: keeps(PAST), goodbye: unstatedEnd("ends") },
+    endedBy: { newValue: ends(LINKERS), statementWord: keeps(PAST), byTheWay: keeps(PAST), goodbye: goodbyeEndsAfter(PAST) },
     kept: { verdict: "shared", anchor: PAST },
     quote: { verdict: "blocks", anchor: PAST },
     aside: asideBlocks,
@@ -165,7 +175,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     what: "the question an answer fills",
     setBy: "a question",
     readBy: { what: "the reply right after it", links: ["answer answer:answer"] },
-    endedBy: { newValue: ends(FILL), statementWord: unstatedEnd("keeps"), byTheWay: ends(FILL), goodbye: unstatedEnd("ends") },
+    endedBy: { newValue: ends(FILL), statementWord: unstatedEnd("keeps"), byTheWay: ends(FILL), goodbye: goodbyeEndsAfter(FILL) },
     kept: { verdict: "shared", anchor: FILL },
     quote: { verdict: "blocks", anchor: FILL },
     aside: asideBlocks,
@@ -203,11 +213,20 @@ export function perSpeaker(id: SlotId): boolean {
   return (cell.verdict === "unstated" ? cell.today : cell.verdict) === "speaker";
 }
 
-/** A cell's label: its verdict, `unstated (today: …)`, or `passes (today: blocks)`. */
+/**
+ * A cell's label: its verdict, `unstated (today: …)`, or `passes (today: blocks)`; an end cell with an unstated event
+ * sentence adds `; the event sentence unstated (today: …)`.
+ */
 export function slotCellLabel(cell: EndCell | KeptCell | QuoteCell | AsideCell): string {
   if (cell.verdict === "unstated") return `unstated (today: ${cell.today})`;
   if ("today" in cell && cell.today) return `${cell.verdict} (today: ${cell.today})`;
-  return "everyone" in cell && cell.everyone ? `${cell.verdict} (every speaker's)` : cell.verdict;
+  const verdict = "everyone" in cell && cell.everyone ? `${cell.verdict} (every speaker's)` : cell.verdict;
+  return "eventSentence" in cell && cell.eventSentence ? `${verdict}; the event sentence unstated (today: ${cell.eventSentence.today})` : verdict;
+}
+
+/** Whether a cell, or the event-sentence part of an end cell, is unstated. */
+export function hasUnstated(cell: EndCell | KeptCell | QuoteCell | AsideCell): boolean {
+  return cell.verdict === "unstated" || ("eventSentence" in cell && cell.eventSentence?.verdict === "unstated");
 }
 
 /** Every cell with its row and column, in table order. */

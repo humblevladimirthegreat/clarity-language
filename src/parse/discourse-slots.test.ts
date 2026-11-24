@@ -5,7 +5,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { DISCOURSE_SLOTS, endsAt, goodbyeEndsEveryone, perSpeaker, reachesQuote, SLOT_IDS, slotCellLabel, slotCells, slotOfLink } from "./discourse-slots.js";
+import { DISCOURSE_SLOTS, endsAt, goodbyeEndsEveryone, hasUnstated, perSpeaker, reachesQuote, SLOT_IDS, slotCellLabel, slotCells, slotOfLink } from "./discourse-slots.js";
 
 describe("discourse slot table", () => {
   it("has one row per slot", () => {
@@ -20,6 +20,7 @@ describe("discourse slot table", () => {
     for (const { id, column, cell } of slotCells()) {
       if (cell.verdict === "unstated") assert.equal(cell.anchor, "", `${id} ${column}`);
       else assert.match(cell.anchor, anchor, `${id} ${column}`);
+      if ("eventSentence" in cell && cell.eventSentence) assert.equal(cell.eventSentence.anchor, "", `${id} ${column} event sentence`);
     }
     for (const row of DISCOURSE_SLOTS) {
       assert.ok(row.anchors.length > 0, row.id);
@@ -43,6 +44,15 @@ describe("discourse slot table", () => {
     for (const event of ["newValue", "statementWord", "byTheWay", "goodbye"] as const) assert.equal(endsAt("supposition", event), endsAt("carriedFrame", event), event);
     assert.equal(goodbyeEndsEveryone("supposition"), true);
     assert.equal(perSpeaker("supposition"), false);
+  });
+
+  it("ends every slot at a goodbye, the carried frame and the supposition for every speaker", () => {
+    // A goodbye ends the conversation (word-endings.md#greeting): nothing after it reads a value set before it.
+    for (const id of DISCOURSE_SLOTS.map((row) => row.id)) assert.equal(endsAt(id, "goodbye"), true, id);
+    // The goodbye sentence itself: point-backs in it find nothing; whether it still reads the sentence before and the
+    // question it answers is not stated, and keeps today's behavior.
+    const event = DISCOURSE_SLOTS.filter((row) => row.endedBy.goodbye.verdict === "ends" && row.endedBy.goodbye.eventSentence).map((row) => row.id);
+    assert.deepEqual(event, ["sentenceBefore", "answer"]);
   });
 
   it("names the slot each reading link reads", () => {
@@ -83,14 +93,12 @@ describe("discourse slot table", () => {
 
   it("lists the unstated cells", () => {
     const open = slotCells()
-      .filter(({ cell }) => cell.verdict === "unstated")
+      .filter(({ cell }) => hasUnstated(cell))
       .map(({ id, column, cell }) => `${id} ${column}: ${slotCellLabel(cell)}`);
     assert.deepEqual(open, [
-      "standInBack goodbye: unstated (today: keeps)",
-      "hookResume goodbye: unstated (today: keeps)",
-      "sentenceBefore goodbye: unstated (today: ends)",
+      "sentenceBefore goodbye: ends; the event sentence unstated (today: keeps)",
       "answer statementWord: unstated (today: keeps)",
-      "answer goodbye: unstated (today: ends)",
+      "answer goodbye: ends; the event sentence unstated (today: keeps)",
     ]);
   });
 });

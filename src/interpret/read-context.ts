@@ -1,6 +1,7 @@
 /** Reader context: word keys, the `Ctx` and `Here` records, scope copying, and the frame builders every reader group shares. */
 import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { overlayConstructionId } from "../parse/construction-trace.js";
+import { endsAt } from "../parse/discourse-slots.js";
 import { linkerEnglish } from "../parse/linkers.js";
 import { hookLabel, joinMarkerLabel } from "../parse/morph-gloss-labels.js";
 import type { NestedKind } from "../parse/boundaries.js";
@@ -145,8 +146,11 @@ export type Ctx = {
   shared: Map<LexWord, SharedRecord[]>;
   /** The resolve stage's record for each shared word, keyed by the tree's shared item. */
   sharedItems: Map<CoordShared, SharedRecord>;
-  /** First reading id of each sentence, in text order: what a linker, grounds or answer points to. */
-  sentences: { utterance: number; body: number; id: ReadingId }[];
+  /**
+   * First reading id of each sentence, in text order: what a linker, grounds or answer points to. `goodbye` marks a
+   * sentence the resolve stage read as a goodbye (`ResolveInfo.goodbyes`).
+   */
+  sentences: { utterance: number; body: number; id: ReadingId; goodbye?: true }[];
   /** A dependent's reading, made once where its stand-in names it. */
   dependents: Map<Clause, Reading>;
   /** Each list term by the join words of its parts: where a *respectively* link finds its partner list. */
@@ -285,9 +289,15 @@ export function nextSentence(here: Here): ReadingId | undefined {
   return at >= 0 ? here.ctx.sentences[at + 1]?.id : undefined;
 }
 
+/**
+ * The sentence before this one, if any: what a sentence linker, a discourse hook or a polar word reads
+ * (sentence-linkers.md#past-a-period). A goodbye ends the conversation, so the sentence after one has none (the
+ * `sentenceBefore` row's goodbye cell, interpreter.md#discourse-slots).
+ */
 export function previousSentence(here: Here): ReadingId | undefined {
   const at = here.ctx.sentences.findIndex((s) => s.utterance === here.utterance && s.body === here.body);
-  return at > 0 ? here.ctx.sentences[at - 1]?.id : undefined;
+  const before = at > 0 ? here.ctx.sentences[at - 1] : undefined;
+  return before?.goodbye && endsAt("sentenceBefore", "goodbye") ? undefined : before?.id;
 }
 
 function rootOf(word: LexWord): string {

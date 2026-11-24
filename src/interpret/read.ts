@@ -10,7 +10,7 @@ import { CLOSED } from "../closed-roots.js";
 import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { crosses, type NestedKind } from "../parse/boundaries.js";
-import { perSpeaker, reachesQuote, type SlotId } from "../parse/discourse-slots.js";
+import { endsAt, perSpeaker, reachesQuote, type SlotId } from "../parse/discourse-slots.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
 import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
@@ -1164,9 +1164,12 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     pairings: [],
   };
   for (const record of info?.shared ?? []) ctx.shared.set(record.join, [...(ctx.shared.get(record.join) ?? []), record]);
+  const goodbyeAt = new Set((info?.goodbyes ?? []).map((g) => `${g.utteranceIndex}.${g.bodyIndex}`));
   result.utterances.forEach((u, ui) => {
     const count = Math.max(u.bodies.length, 1);
-    for (let bi = 0; bi < count; bi++) ctx.sentences.push({ utterance: ui, body: bi, id: `${text}:${ui}.${bi}` });
+    for (let bi = 0; bi < count; bi++) {
+      ctx.sentences.push({ utterance: ui, body: bi, id: `${text}:${ui}.${bi}`, ...(goodbyeAt.has(`${ui}.${bi}`) ? { goodbye: true as const } : {}) });
+    }
   });
 
   const out: Reading[] = [];
@@ -1210,7 +1213,7 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     if (reading) reading.links.push(link("answer", "answer:answer", answer.blanks, { answer, ...(to ? { to } : {}) }));
   }
   carriedLinks(out, info?.carried ?? []);
-  pointBackLinks(out, info?.speakers);
+  pointBackLinks(out, info?.speakers, new Set(ctx.sentences.filter((s) => s.goodbye).map((s) => s.id)));
   // A tone on a word, a span or an island sits on what it colors (tone-marks.md#showing-your-tone); a rest-of-sentence tone
   // came in with the scope frames.
   if (info?.tones) placeTones(out, allReadings(out), info.tones);
@@ -1240,8 +1243,10 @@ function hookVowels(word: LexWord | undefined): string {
  *   extra they named"). `to` is its sentence and `resumed` its detail, whose `hosted` is the landmark.
  * - Inside a quote, either one looks only within the quote (stand-in-vowels.md#stand-in-back,
  *   in-clause-hooks.md#hook-resume): the quote's own reading resolved it, and the outer sentences leave it as it is.
+ * - A goodbye ends the conversation: either one, in or after a goodbye, never looks at the goodbye or anything before it
+ *   (`goodbyes`, the sentences `ResolveInfo.goodbyes` names).
  */
-function pointBackLinks(sentences: Reading[], speakers: readonly string[] = []): void {
+function pointBackLinks(sentences: Reading[], speakers: readonly string[] = [], goodbyes: ReadonlySet<ReadingId> = new Set()): void {
   const byId = new Map(allReadings(sentences).map((r) => [r.id, r]));
   const contents = (sentence: Reading): { vowel: string; id: ReadingId }[] => {
     const act = sentence.frames.find((f) => f.key === "edge:force");
@@ -1257,8 +1262,18 @@ function pointBackLinks(sentences: Reading[], speakers: readonly string[] = []):
   // sentence is the parse's `ResolveInfo.speakers`, one per top-level reading; with none, one speaker says them all.
   const speakerById = new Map(sentences.map((s, i) => [s.id, speakers[i] ?? ""]));
   const speakerOf = (sentence: Reading): string => speakerById.get(sentence.id) ?? "";
-  const earlierFor = (slot: SlotId, sentence: Reading, earlier: Reading[]): Reading[] =>
-    perSpeaker(slot) ? earlier.filter((s) => speakerOf(s) === speakerOf(sentence)) : earlier;
+  // Where the slot's goodbye cell ends it, a point-back looks only at the sentences after the latest goodbye, and one in
+  // a goodbye looks at none. `earlier` runs latest first.
+  const sinceGoodbye = (slot: SlotId, sentence: Reading, earlier: Reading[]): Reading[] => {
+    if (!endsAt(slot, "goodbye")) return earlier;
+    if (goodbyes.has(sentence.id)) return [];
+    const at = earlier.findIndex((s) => goodbyes.has(s.id));
+    return at < 0 ? earlier : earlier.slice(0, at);
+  };
+  const earlierFor = (slot: SlotId, sentence: Reading, earlier: Reading[]): Reading[] => {
+    const open = sinceGoodbye(slot, sentence, earlier);
+    return perSpeaker(slot) ? open.filter((s) => speakerOf(s) === speakerOf(sentence)) : open;
+  };
   // A quote's words were read as their own text, which resolved its point-backs within the quote; where the slot's quote
   // cell blocks, the outer sentences do not resolve them again (interpreter.md#discourse-slots).
   const outside = (slot: SlotId, kinds: readonly NestedKind[]): boolean => reachesQuote(slot) || !kinds.includes("quote");
