@@ -17,7 +17,7 @@
 
 **Depends on:** none. **Order:**
 - Phases 1 and 2 change no parse and may run at any time, including alongside `scope-model.md`.
-- Phase 3 changes the grammar, so it never runs while a `scope-model.md` unit that changes readings runs (its phase 4 S4b and S10 to S12), because each of those units' `scope-report --diff` must list only the examples it names. `scope-model.md` phases 1 to 3 are done.
+- Phase 3 changes the grammar, so it never runs while a `scope-model.md` unit that changes readings runs (its phase 4), because each of those units' `scope-report --diff` must list only the examples it names. `scope-model.md` phases 1 to 3 are done.
 - Phase 4 runs after `scope-model.md` lands, because both change the stance families' data.
 - Land U6's edits to joins.md and bars.md before `grammar-newcomer-rewrite.md` rewrites those pages.
 

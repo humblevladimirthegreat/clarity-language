@@ -15,8 +15,10 @@ https://discord.gg/CAMGw2Akhc
 -syntax highlighting should cover scoping/carry rules
 -cheat sheet distinguish cue vs exact match
 -change llms.txt to download the reader instead of parser?
--turn off automatic run reviewer
--style editor should have standard prompt
+
+-parser-structure phase 1-2
+-confirm what's available in the cloud environment
+-in full-execution.md: turn off automatic run reviewer and mention that cross-phase data should be git-tracked in docs/proposals/run-state/
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

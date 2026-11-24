@@ -1,23 +1,24 @@
 # Scope model: one statement of reach, order, ownership and carry
 
-**Status:** IN PROGRESS. Phases 1 to 3 done 2026-11-24. Phase 1: `cdd63e7b` start, `3086d93f` U1, `856423e9` U2, `838e2906` U3, `20222bea` U4, `4e387bae` U5, `194d388b` U6, `aa9a34a5` `AGENTS.md`. Phase 2 (full run): `2645a9ac` S1, `3aa3fb18` S2, `cb399cd6` S3, `6349564c` S4 (grounds half; the member half is S4b). Phase 3 (full run, two executors): `1b6b16c4` S5, `a648b95c` S5c, `a8f3c94f` S5d, `b6007106` S5b, `3d0c7246` S6, `fedce528` S6c, `55da329e` S7, `7e3efcfa` S8, `d40c972b` S9. Recall gate at the phase end passed (checkpoint recall 99.4 on the same sentences; all sentences 99.4 to 99.2, within the baseline). Next: phase 4, starting at S4b. Decided by agent: 2026-11-24, carried frames pass into clause-join members, dependents and islands (high, not flagged, `95f8ffc3`). Decided 2026-11-24 (user): D16 (a), the seam word escapes a sake word under a holder (S10); D17 to D19 as recommended, a goodbye ends the `standInBack`, `hookResume`, `sentenceBefore` and `answer` slots (S11), and any statement word answers a question (S12). S10 to S12 run in phase 4 after S4b, before L1. Decided 2026-11-24 (user): D15 (a), change `coverage.ts` (S4b). Edits to existing pages get no style review, because a full style pass over them follows later; the new scope page is not in that pass, so it gets its own style review (L5). Writers of grammar prose still self-check against the [checklist](../../meta/doc-style.md#checklist). D1, the scope page is a synthesis page closing Intermediate, in a unit of its own after *Surprise and what's not so*, titled *How far a word reaches*; D2, a scope cheat sheet generated from the profile, boundary and slot tables (L4).
+**Status:** IN PROGRESS. Phases 1 to 3 done 2026-11-24. Phase 1: `cdd63e7b` start, `3086d93f` U1, `856423e9` U2, `838e2906` U3, `20222bea` U4, `4e387bae` U5, `194d388b` U6, `aa9a34a5` `AGENTS.md`. Phase 2 (full run): `2645a9ac` S1, `3aa3fb18` S2, `cb399cd6` S3, `6349564c` S4 (grounds half; the member half is S4b). Phase 3 (full run, two executors): `1b6b16c4` S5, `a648b95c` S5c, `a8f3c94f` S5d, `b6007106` S5b, `3d0c7246` S6, `fedce528` S6c, `55da329e` S7, `7e3efcfa` S8, `d40c972b` S9. Recall gate at the phase end passed (checkpoint recall 99.4 on the same sentences; all sentences 99.4 to 99.2, within the baseline). Next: phase 4, starting at S4b. Decided by agent: 2026-11-24, carried frames pass into clause-join members, dependents and islands (high, not flagged, `95f8ffc3`). Decided 2026-11-24 (user): D16 (a), the seam word escapes a sake word under a holder (S10); D17 to D19 as recommended, a goodbye ends the `standInBack`, `hookResume`, `sentenceBefore` and `answer` slots (S11), and any statement word answers a question (S12). S10 to S12 run in phase 4 after S4b. Split 2026-11-24 (user): phase 4 is the last reading changes (S4b, S10 to S12), and phase 5 writes the scope page (L1 to L5). Decided 2026-11-24 (user): D15 (a), change `coverage.ts` (S4b). Edits to existing pages get no style review, because a full style pass over them follows later; the new scope page is not in that pass, so it gets its own style review (L5). Writers of grammar prose still self-check against the [checklist](../../meta/doc-style.md#checklist). D1, the scope page is a synthesis page closing Intermediate, in a unit of its own after *Surprise and what's not so*, titled *How far a word reaches*; D2, a scope cheat sheet generated from the profile, boundary and slot tables (L4).
 
 **Related:** [interpreter.md](../../meta/interpreter.md) ([family profiles](../../meta/interpreter.md#family-profiles), [boundaries](../../meta/interpreter.md#boundaries), [links](../../meta/interpreter.md#links), [discourse slots](../../meta/interpreter.md#discourse-slots), [scope statements](../../meta/interpreter.md#scope-statements), [reader rules](../../meta/interpreter.md#reader-rules), [pair table](../../meta/interpreter.md#pair-table)); [scope.ts](../../../src/parse/scope.ts); [scope-profiles.ts](../../../src/parse/scope-profiles.ts); [boundaries.ts](../../../src/parse/boundaries.ts); [discourse-slots.ts](../../../src/parse/discourse-slots.ts); [carry.ts](../../../src/parse/carry.ts); [scope-report.ts](../../../src/interpret/scope-report.ts); [read.ts](../../../src/interpret/read.ts); [read-context.ts](../../../src/interpret/read-context.ts). Grammar: [clause.md](../../grammar/beginner/clause.md#which-covers-which), [holder.md](../../grammar/intermediate/holder.md#what-the-holder-covers), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward), [contrary-to.md](../../grammar/intermediate/contrary-to.md#contrary-to-stance), [because-and-iff.md](../../grammar/intermediate/because-and-iff.md#choosing-a-hinge), [cause.md](../../grammar/intermediate/cause.md#mechanism), [joins.md](../../grammar/beginner/joins.md#everything-ua), [spans.md](../../grammar/beginner/spans.md#asides-th), [stand-in-vowels.md](../../grammar/intermediate/stand-in-vowels.md#stand-in-back), [in-clause-hooks.md](../../grammar/intermediate/in-clause-hooks.md#hook-resume), [notional.md](../../grammar/intermediate/notional.md#notional-as-if-framing), [reading-order.ts](../../grammar/.vitepress/lib/reading-order.ts).
 
 **Depends on:** none. **Order:** never run a phase of this proposal at the same time as a phase of `reading-realizer.md`, because both edit `read.ts` and `read-context.ts`.
 
-**Design authority:** phase 4's S4b changes the readings that D9's member half names (four examples), through [joins.md](../../grammar/beginner/joins.md#everything-ua). L1 to L5 add one teaching page and one cheat sheet, and add or change no form.
+**Design authority:** phase 4 changes only the readings its decisions name: S4b those of D9's member half (four examples), through [joins.md](../../grammar/beginner/joins.md#everything-ua); S10 the seam word under a holder (D16), through [holder.md](../../grammar/intermediate/holder.md#what-the-holder-covers); S11 the slots a goodbye ends (D17, D18); S12 replies that open with `yam` or `yar` (D19), which lifts the rejection of `yam azozon.`. Phase 5's L1 to L5 add one teaching page and one cheat sheet, and add or change no form.
 
 ## Implementation plan
 
-Four phases, run through subagents. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates the proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
+Five phases, run through subagents. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates the proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
 
 - **Phases 1 to 3** (done) built the scope model in code, audited it, and landed the decisions: profiles, hinges, binders' grounds reach, asides, approximate quotes, the point-back slots, the unstated cells and the tidy.
-- **Phase 4** lands the binder's member reach (S4b) and D16 to D19 (S10 to S12), then writes the teaching page.
+- **Phase 4** lands the last reading changes: the binder's member reach (S4b) and D16 to D19 (S10 to S12).
+- **Phase 5** writes the teaching page and its cheat sheet (L1 to L5).
 
-**Gates.** At the start of the session the orchestrator saves `npm run verify -- --baseline` and `npm run scope-report -- --save`. Each unit ends with `npm run verify -- --allow-generate`, and the unit passes before its commit. After each unit's commit the orchestrator resaves the snapshot (`scope-report -- --save`), so that `npm run scope-report -- --diff` lists only the examples the unit names: S4b's four, and none for L1 to L5. The final gate is a full `npm run verify` against an empty baseline at the end of phase 4. Phase 4 edits no recipe page and no English helper, so it has no recall gate. Its style gate is L5, the new scope page only (Status).
+**Gates.** At the start of the session the orchestrator saves `npm run verify -- --baseline` and `npm run scope-report -- --save`. Each unit ends with `npm run verify -- --allow-generate`, and the unit passes before its commit. After each unit's commit the orchestrator resaves the snapshot (`scope-report -- --save`), so that `npm run scope-report -- --diff` lists only the examples the unit names: the examples each S-unit names, and none for L1 to L5. The final gate is a full `npm run verify` against an empty baseline at the end of phase 5. Phases 4 and 5 edit no recipe page and no English helper, so they have no recall gate. Phase 5's style gate is L5, the new scope page only (Status).
 
-**What phases 1 to 3 built** (input for every later unit; the rules the scope page teaches):
+**What earlier phases built** (input for every later unit; the rules the scope page teaches):
 
 - **Scope report.** `npm run scope-report` (`scripts/scope-report.ts`, logic in `src/interpret/scope-report.ts`). `--save` writes `tmp/state/scope-report.json`, `--diff` compares to it, and the full report is `tmp/logs/scope-report.md` (grep or slice it, never read it whole). Per reading it records frame families, order entries, unordered pairs, stance lists, nested-reading kind and links. It counts examples per `explainPair` rule id, per boundary cell and per discourse slot. Walk helpers `forEachExample`, `readSnapshot` and `writeSnapshot` are exported from `src/interpret/accounting-walk.ts`.
 - **Family profiles.** `src/parse/scope-profiles.ts`: `PROFILES` (18 families), `derivePairRows()` (8 rules), `EXCEPTIONS` (4), `explainPair`, `caseMatches`. `PAIR_ROWS` in `scope.ts` is derived; the frozen rows that guard it live in `scope-profiles.test.ts`. The holder covers sake words and hinges wherever they sit (S3). The four remark families (`attitude`, `mirative`, `sake`, `contrary`) escape `force` and commute with each other through one shared `remark` property; the `Escape` type is only `holder` and `carried`. The channel member cases cite [evidentiality.md](../../grammar/intermediate/evidentiality.md#evidence-clause) through `BACKING`. Aim members and the `force` member `greeting` (`reading:greeting`) have `claims: false`: a greeting, like a plan, claims nothing, takes no frame and ends none ([evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward)); `isGreetingScope` is gone. `carry.ts` reads both. Documented in [family profiles](../../meta/interpreter.md#family-profiles).
@@ -33,8 +34,7 @@ Four phases, run through subagents. At the end of each phase, and if the user sa
 - **Probes.** `node scripts/reading.mjs probe` gives solver output; for scope order, run plain `node scripts/reading.mjs` on the sentence, or the scope report.
 - Never run `npx prettier` or another formatter the repo does not depend on.
 
-### Phase 4: the scope page
-
+### Phase 4: the last reading changes
 
 **S4b. A binder reaches later clause-join members (D9, member half).**
 Agent `proposal-worker`, `model: opus`, effort `high`. D15 settled (user, 2026-11-24): (a), change `coverage.ts` so a frame copied from a scope record into a later member counts as the same place as its word's earlier place in the sentence; this also clears the `edge:force` doubles.
@@ -56,6 +56,10 @@ Agent `proposal-worker`, `model: opus`, effort `high`.
 D19 settled (user, 2026-11-24, as recommended): (a). A reply opening with any statement word answers the question before it, so a learner can give a soft or hedged answer: `fillAnswers` accepts `yam` and `yar` as well as `yal`, and the rejection of `yam azozon.` is lifted. This is a parser change, so it lands with its grammar edit on [questions.md](../../grammar/beginner/questions.md) (and wherever the answer is taught), drops the spelling from `unassigned-reserved.md` if it is listed there, adds a [classification table](../../meta/interpreter.md#classification-table) row for any new construction id, and states the `answer` statement-word cell. `--diff` lists only examples that open a reply with `yam` or `yar` after a question.
 **May edit:** the parser files that reject `yam azozon.`, `src/interpret/read.ts` (`fillAnswers`), `src/parse/discourse-slots.ts` and its test, `docs/meta/interpreter.md`, `docs/meta/unassigned-reserved.md`, `docs/grammar/beginner/questions.md` and the page that teaches answers, if another.
 
+**Phase 4 close.** *Orchestrator.* Bring the user any open decisions S10 to S12 reported. Consolidate, and add the rules S4b and S10 to S12 settled to *What earlier phases built*, which phase 5's page teaches. Expected commits: 4 unit commits, 1 consolidation commit.
+
+### Phase 5: the scope page
+
 **L1. Write the page.**
 Agent `proposal-worker`, `model: opus`, effort `high`.
 Write *How far a word reaches* as the last Intermediate page, in a new unit of its own after *Surprise and what's not so* (Status, D1). Every instance it covers is taught before it, so it uses a real example of each and links back to each. Five sections:
@@ -66,14 +70,14 @@ Write *How far a word reaches* as the last Intermediate page, in a new unit of i
 4. Whose it is: you, the holder, the one asked.
 5. What carries past a period, and what ends it.
 
-Teach from the profile, boundary and slot tables as phases 2 and 3 left them, and from the rules under *What phases 1 to 3 built*. Teach the cells and the seam-word reading S10 to S12 settled, as they left them. Use only forms taught on earlier pages (the build's forward-link lint checks this), and link each rule to the section that teaches its instance. Check every form with one batched `node scripts/parse.mjs --check-lexicon`. Add the page to `reading-order.ts` and a read-by block per [read-by blocks](../../meta/grammar-docs.md#read-by-blocks). Propose new English names for [terminology.md](../../grammar/terminology.md) in the report; don't add them. Leave Practice to L3. Self-check against the [doc-style checklist](../../meta/doc-style.md#checklist).
+Teach from the profile, boundary and slot tables as phases 2 to 4 left them, and from the rules under *What earlier phases built*. Teach the cells and the seam-word reading S10 to S12 settled, as they left them. Use only forms taught on earlier pages (the build's forward-link lint checks this), and link each rule to the section that teaches its instance. Check every form with one batched `node scripts/parse.mjs --check-lexicon`. Add the page to `reading-order.ts` and a read-by block per [read-by blocks](../../meta/grammar-docs.md#read-by-blocks). Propose new English names for [terminology.md](../../grammar/terminology.md) in the report; don't add them. Leave Practice to L3. Self-check against the [doc-style checklist](../../meta/doc-style.md#checklist).
 **May edit:** the new page, `docs/grammar/.vitepress/lib/reading-order.ts`.
 
 **L2. Instance pages lean on the general rule.**
 Agent `proposal-worker`, `model: opus`, effort `high`.
 On these sections, cut sentences that restate a general rule the reader has already met:
 
-- [clause.md](../../grammar/beginner/clause.md#which-covers-which) (its exceptions table, per D4 and phases 2 and 3; its holder row is already right)
+- [clause.md](../../grammar/beginner/clause.md#which-covers-which) (its exceptions table, per D4 and phases 2 to 4; its holder row is already right)
 - [holder.md](../../grammar/intermediate/holder.md#what-the-holder-covers)
 - [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward)
 - [sentence-linkers.md](../../grammar/intermediate/sentence-linkers.md#past-a-period)
@@ -99,14 +103,14 @@ Agent `style-editor`, `model: opus`, effort `high`. A fresh context that made no
 Review the whole of *How far a word reaches*, Practice included, against [doc-style.md](../../meta/doc-style.md). Only this page: L2's edits to existing pages wait for the later full style pass (Status). It runs last, after L3 and L4, so it sees the page as it ships.
 **May edit:** the new page.
 
-**Phase 4 close.** *Orchestrator.*
+**Phase 5 close.** *Orchestrator.*
 
 1. Add the terminology names L1 proposed (a review-later decision, its own commit).
 2. Add the new page to the grammar table in `AGENTS.md`.
 3. Run a full `npm run verify` against an empty baseline.
 4. Delete this proposal once `interpreter.md` and the grammar own the result.
 
-Expected commits: 9 unit commits (S4b, S10 to S12, L1 to L5), 1 for the cheat-sheet tool output, 1 terminology commit, 1 `AGENTS.md` commit, 1 final commit.
+Expected commits: 5 unit commits (L1 to L5), 1 for the cheat-sheet tool output, 1 terminology commit, 1 `AGENTS.md` commit, 1 final commit.
 
 ### Rule digest (copied into every brief)
 
@@ -157,8 +161,8 @@ So the grammar has no single statement of its scope rules. A learner meets *earl
 
 ### Non-goals
 
-- No reading changes in phase 1, and in phases 2 and 3 only those the decisions name. A unit that changes any other reading stops and reports.
-- No change to the solver, the matcher or the log beyond what a phase 2 or 3 decision requires.
+- No reading changes in phase 1, and in phases 2 to 4 only those the decisions name. A unit that changes any other reading stops and reports.
+- No change to the solver, the matcher or the log beyond what a phase 2 to 4 decision requires.
 - No change to the shape of `ResolveInfo`, `ClauseScope`, `Reading` or `Link`, except additive exports (such as an `explainPair` function) and the records U4 adds for islands.
 - No moving of `pointBackLinks` into the resolve stage. The discourse-slot table describes both layers; it does not merge them.
 - No style review of edits to existing pages (see Status). Only the new scope page gets one.
