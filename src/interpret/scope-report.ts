@@ -3,6 +3,8 @@
  * to scope shows as a list of examples whose record changed. Walks the examples `npm run sweep` walks
  * (`forEachExample` in `accounting-walk.ts`); the script `scripts/scope-report.ts` saves, diffs and prints it.
  */
+import type { FrameFamily } from "../parse/scope.js";
+import { explainPair, type PairSide } from "../parse/scope-profiles.js";
 import type { Frame, Reading, StanceList } from "./types.js";
 
 /** One reading, as plain strings so a record compares and diffs as text. */
@@ -92,8 +94,18 @@ export type Tally = { examples: number; sample: string };
 /** Per section, the examples that show each key. */
 export type ScopeCounts = Record<string, Record<string, Tally>>;
 
+const side = (family: string): PairSide => {
+  const [name = "", member] = family.split("/");
+  return { family: name as FrameFamily, ...(member ? { member } : {}) };
+};
+
+/** For every two frames of a reading, the rule that decides the pair (`explainPair`, interpreter.md#family-profiles). */
+const pairRules = (r: ReadingRecord): string[] =>
+  r.families.flatMap((a, i) => r.families.slice(i + 1).map((b) => explainPair(side(a), side(b)))).filter((rule) => rule !== "never");
+
 const SECTIONS: [string, (r: ReadingRecord) => string[]][] = [
   ["frame families", (r) => r.families],
+  ["pair rules", pairRules],
   ["order", (r) => r.order.map((o) => o.split(" ").slice(0, 4).join(" "))],
   ["unordered", (r) => r.unordered],
   ["stance lists", (r) => r.stanceLists.map((l) => l.split(": ")[0] ?? l)],
@@ -101,7 +113,7 @@ const SECTIONS: [string, (r: ReadingRecord) => string[]][] = [
   ["links", (r) => r.links.map((l) => l.split(" -> ")[0] ?? l)],
 ];
 
-/** Count examples per frame family, order pair and kind, unordered pair, stance list, nested kind, and link kind and key. */
+/** Count examples per frame family, pair rule, order pair and kind, unordered pair, stance list, nested kind, and link kind and key. */
 export function countReport(report: ScopeReport): ScopeCounts {
   const counts: ScopeCounts = Object.fromEntries(SECTIONS.map(([name]) => [name, {}]));
   for (const example of Object.values(report)) {

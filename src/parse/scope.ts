@@ -1,16 +1,18 @@
 /**
  * Scope order of whole-clause frames (clause.md#which-covers-which).
  *
- * Two tables copied as data from `docs/meta/interpreter.md`, never re-derived:
+ * Two tables from `docs/meta/interpreter.md`:
  * - {@link FRAME_KEYS}: the frame rows of the classification table (key → family, and whether the form reaches the
- *   whole clause).
- * - {@link PAIR_ROWS}: the pair table, one row per pair of families, with the anchor of its rule.
+ *   whole clause), copied as data.
+ * - {@link PAIR_ROWS}: the pair table, one row per pair of families, with the anchor of its rule, derived from the family
+ *   profiles (`scope-profiles.ts`).
  *
  * {@link clauseScopes} reads each clause's whole-clause frames off the tree and emits, for every two of them, the
  * order the pair table gives: the earlier over the later by text order (the decided rule), a fixed order where a
  * row states one, nothing where the pair commutes, and an `unordered` entry where the pair is still unsettled.
  */
 import { overlayKey, type ClassifyTables } from "./classify.js";
+import { caseMatches, derivePairRows, HOLDER, MAY_BEFORE, TEXT_ORDER, type PairRow } from "./scope-profiles.js";
 import { stackKind } from "./series.js";
 import { isGreeting, isNoKindFence } from "./ast-walk.js";
 import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, NpCoord, NpPackage, ToneRecord, Unit, Utterance } from "./types.js";
@@ -151,230 +153,12 @@ export type ClauseScope = {
   bodiless?: true;
 };
 
-const TEXT_ORDER = "clause.md#which-covers-which";
-const MAY_BEFORE = "already-still-yet.md#stage-of-change";
-const HOLDER = "holder.md#what-the-holder-covers";
-
-/** One case of a pair row: `over` names the family that covers, `textOrder` the earlier over the later. */
-type PairCase =
-  | { order: "textOrder"; anchors: string[]; when?: Partial<Record<FrameFamily, FrameMember[]>> }
-  | { order: "over"; over: FrameFamily; anchors: string[]; when?: Partial<Record<FrameFamily, FrameMember[]>> }
-  | { order: "commutes"; anchors: string[]; when?: Partial<Record<FrameFamily, FrameMember[]>> }
-  | { order: "unsettled"; anchors: string[]; when?: Partial<Record<FrameFamily, FrameMember[]>> };
-
-type PairRow = { pair: [FrameFamily, FrameFamily]; kind: "rule" | "wordShape" | "commutes" | "unsettled"; cases: PairCase[] };
-
-const text = (...anchors: string[]): PairCase => ({ order: "textOrder", anchors: [TEXT_ORDER, ...anchors] });
-const over = (family: FrameFamily, ...anchors: string[]): PairCase => ({ order: "over", over: family, anchors });
-const commutes = (...anchors: string[]): PairCase => ({ order: "commutes", anchors });
-const REMARKS = ["mirative.md#mirative", "feelings.md#speaker-attitude", "for-a-sake.md#whose-stake", "contrary-to.md#contrary-to-stance"];
-const ACT_EDGE = "speech-moves.md#speech-act-statement-question-command";
-const HINGE_LAST = ["dependents.md#hinges", "stand-in-vowels.md#stand-in-back"];
-const STANDALONE = "verb-and-stance-joins.md#standalone-stance-joins";
-/** A `/th/` word right before a `/th/` join is its item; with words between, it is a frame of its own. */
-const REACH = "verb-and-stance-joins.md#stance-join-reach";
-const CHANNEL: Partial<Record<FrameFamily, FrameMember[]>> = { stance: ["channel"] };
-/** A channel follows text order: first, how you know the whole generalization; after a fence or restrictor, each case. */
-const GENERALIZATION = "usually-vs-must.md#general-claims";
-
-const CALL = "speech-moves.md#vocative";
-/** Every family a call can share a clause with, itself included: a call commutes with each. */
-const CALL_PAIRS: readonly FrameFamily[] = [
-  "force",
-  "polarity",
-  "say",
-  "stance",
-  "holder",
-  "hinge",
-  "intention",
-  "ability",
-  "phase",
-  "residue",
-  "notional",
-  "mirative",
-  "contrary",
-  "occasion",
-  "sake",
-  "attitude",
-  "binder",
-  "call",
-];
-
-function rule(a: FrameFamily, b: FrameFamily, ...cases: PairCase[]): PairRow {
-  return { pair: [a, b], kind: "rule", cases };
-}
-
 /**
- * The pair table (interpreter.md#pair-table), one row per pair in the table's order. Same-family pairs other than
- * `stance` × `stance` follow the scope statements: `binder`, `intention` by text order; tone marks commute (never on
- * the tree). Any other pair with no row takes the decided rule, text order.
+ * The pair table (interpreter.md#pair-table), derived from the family profiles (interpreter.md#family-profiles). Same-family
+ * pairs other than those with a row follow the scope statements: tone marks commute (never on the tree). Any other pair
+ * with no row takes the decided rule, text order.
  */
-export const PAIR_ROWS: readonly PairRow[] = [
-  rule("force", "say", over("force", ACT_EDGE)),
-  rule("force", "sake", over("sake", "for-a-sake.md#whose-stake")),
-  rule("force", "attitude", over("attitude", "feelings.md#speaker-attitude")),
-  rule("force", "binder", over("force", ACT_EDGE)),
-  rule("force", "hinge", over("force", "causation.md#if")),
-  rule("force", "stance", over("force", "want-and-decide.md#whose-intention")),
-  rule("force", "holder", over("force", HOLDER)),
-  rule("force", "intention", over("force", "want-and-decide.md#whose-intention")),
-  rule("force", "ability", over("force", ACT_EDGE)),
-  rule("force", "phase", over("force", ACT_EDGE)),
-  rule("force", "residue", over("force", ACT_EDGE)),
-  rule("force", "notional", over("force", ACT_EDGE)),
-  rule("force", "mirative", over("mirative", "mirative.md#mirative")),
-  rule("force", "contrary", over("force", ACT_EDGE)),
-  rule("force", "occasion", over("force", ACT_EDGE)),
-  rule("say", "sake", text()),
-  rule("say", "attitude", text()),
-  rule("say", "binder", text()),
-  rule("say", "hinge", text(...HINGE_LAST)),
-  rule("say", "stance", text()),
-  rule("say", "holder", over("holder", HOLDER)),
-  rule("say", "intention", text()),
-  rule("say", "ability", text()),
-  rule("say", "phase", text()),
-  rule("say", "residue", text()),
-  rule("say", "notional", text()),
-  rule("say", "mirative", text()),
-  rule("say", "contrary", text()),
-  rule("say", "occasion", text()),
-  { pair: ["sake", "attitude"], kind: "commutes", cases: [commutes(...REMARKS)] },
-  rule("sake", "binder", text()),
-  rule("sake", "hinge", text(...HINGE_LAST)),
-  rule("sake", "stance", text(MAY_BEFORE)),
-  rule("sake", "holder", { order: "textOrder", anchors: [HOLDER] }),
-  rule("sake", "intention", text()),
-  rule("sake", "ability", text()),
-  rule("sake", "phase", text()),
-  rule("sake", "residue", text()),
-  rule("sake", "notional", text()),
-  { pair: ["sake", "mirative"], kind: "commutes", cases: [commutes(...REMARKS)] },
-  { pair: ["sake", "contrary"], kind: "commutes", cases: [commutes(...REMARKS)] },
-  rule("sake", "occasion", text()),
-  rule("attitude", "binder", text()),
-  rule("attitude", "hinge", text(...HINGE_LAST)),
-  rule("attitude", "stance", { ...commutes("feelings.md#speaker-attitude"), when: CHANNEL }, text(MAY_BEFORE)),
-  rule("attitude", "holder", over("attitude", HOLDER)),
-  rule("attitude", "intention", text()),
-  rule("attitude", "ability", text()),
-  rule("attitude", "phase", text()),
-  rule("attitude", "residue", text()),
-  rule("attitude", "notional", text()),
-  { pair: ["attitude", "mirative"], kind: "commutes", cases: [commutes(...REMARKS)] },
-  { pair: ["attitude", "contrary"], kind: "commutes", cases: [commutes(...REMARKS)] },
-  rule("attitude", "occasion", text()),
-  rule("binder", "hinge", text("dependents.md#hinges")),
-  // Text order for every member: a channel first is about the whole generalization, after the binder about each case.
-  rule("binder", "stance", text(GENERALIZATION)),
-  rule("binder", "holder", over("holder", HOLDER)),
-  rule("binder", "intention", text()),
-  rule("binder", "ability", text()),
-  rule("binder", "phase", text()),
-  rule("binder", "residue", text()),
-  rule("binder", "notional", text()),
-  rule("binder", "mirative", text()),
-  rule("binder", "contrary", text()),
-  rule("binder", "occasion", text()),
-  rule(
-    "hinge",
-    "stance",
-    { ...over("stance", "evidentiality.md#evidence-clause", "usually-vs-must.md#how-things-work"), when: CHANNEL },
-    text(MAY_BEFORE, ...HINGE_LAST),
-  ),
-  rule("hinge", "holder", { order: "textOrder", anchors: [HOLDER] }),
-  rule("hinge", "intention", text(...HINGE_LAST)),
-  rule("hinge", "ability", text(...HINGE_LAST)),
-  rule("hinge", "phase", text(...HINGE_LAST)),
-  rule("hinge", "residue", text(...HINGE_LAST)),
-  rule("hinge", "notional", text(...HINGE_LAST)),
-  rule("hinge", "mirative", text(...HINGE_LAST)),
-  rule("hinge", "contrary", text(...HINGE_LAST)),
-  rule("hinge", "occasion", over("occasion", "usually-vs-must.md#how-things-work")),
-  { pair: ["stance", "holder"], kind: "wordShape", cases: [over("holder", HOLDER)] },
-  rule("stance", "intention", text(MAY_BEFORE)),
-  rule("stance", "ability", text()),
-  rule("stance", "phase", text(MAY_BEFORE)),
-  rule("stance", "residue", text()),
-  rule("stance", "notional", text(MAY_BEFORE)),
-  rule("stance", "mirative", { ...commutes("mirative.md#mirative"), when: CHANNEL }, text(MAY_BEFORE)),
-  { pair: ["stance", "contrary"], kind: "commutes", cases: [commutes("contrary-to.md#contrary-to-stance")] },
-  rule("stance", "occasion", text(GENERALIZATION)),
-  { pair: ["holder", "intention"], kind: "wordShape", cases: [over("holder", "want-and-decide.md#whose-intention")] },
-  rule("holder", "ability", over("holder", HOLDER)),
-  rule("holder", "phase", over("holder", HOLDER)),
-  rule("holder", "residue", over("holder", HOLDER)),
-  { pair: ["holder", "notional"], kind: "wordShape", cases: [over("holder", "notional.md#follow-up-endings-notional")] },
-  rule("holder", "mirative", over("holder", HOLDER)),
-  // A holder inside the `uom` zone is the contrary frame's content and never pairs; elsewhere the holder covers
-  // everything in its clause, wherever it sits.
-  rule("holder", "contrary", over("holder", HOLDER)),
-  rule("holder", "occasion", over("holder", HOLDER)),
-  rule("intention", "ability", text()),
-  rule("intention", "phase", text()),
-  rule("intention", "residue", text()),
-  rule("intention", "notional", text()),
-  rule("intention", "mirative", text()),
-  { pair: ["intention", "contrary"], kind: "commutes", cases: [commutes("contrary-to.md#contrary-to-stance")] },
-  rule("intention", "occasion", text()),
-  rule("ability", "phase", text()),
-  rule("ability", "residue", text()),
-  rule("ability", "notional", text()),
-  rule("ability", "mirative", text()),
-  rule("ability", "contrary", text()),
-  rule("ability", "occasion", text()),
-  rule("phase", "residue", text()),
-  rule("phase", "notional", text()),
-  rule("phase", "mirative", text()),
-  rule("phase", "contrary", text()),
-  rule("phase", "occasion", text()),
-  rule("residue", "notional", text()),
-  rule("residue", "mirative", text()),
-  rule("residue", "contrary", text()),
-  rule(
-    "residue",
-    "occasion",
-    { ...over("residue", "residue-and-former.md#former-climate"), when: { residue: ["former"] } },
-    text(),
-  ),
-  rule("notional", "mirative", text()),
-  rule("notional", "contrary", text()),
-  rule("notional", "occasion", text()),
-  { pair: ["mirative", "contrary"], kind: "commutes", cases: [commutes(...REMARKS)] },
-  rule("mirative", "occasion", text()),
-  rule("contrary", "occasion", text()),
-  rule("stance", "stance", text(MAY_BEFORE)),
-  rule("polarity", "force", over("force", ACT_EDGE)),
-  rule("polarity", "stance", text(STANDALONE, REACH)),
-  rule("polarity", "intention", text(STANDALONE, REACH)),
-  rule("polarity", "hinge", text(...HINGE_LAST, STANDALONE, REACH)),
-  rule("polarity", "ability", text(STANDALONE)),
-  rule("polarity", "say", text(STANDALONE)),
-  rule("polarity", "sake", text(STANDALONE, REACH)),
-  rule("polarity", "attitude", text(STANDALONE, REACH)),
-  rule("polarity", "binder", text()),
-  // Under a holder a standalone stance join is the holder's, as a stance word is.
-  rule("polarity", "holder", over("holder", HOLDER)),
-  rule("polarity", "phase", text(STANDALONE)),
-  rule("polarity", "residue", text(STANDALONE)),
-  rule("polarity", "notional", text(STANDALONE, REACH)),
-  rule("polarity", "mirative", text(STANDALONE, REACH)),
-  rule("polarity", "contrary", text(STANDALONE, REACH)),
-  rule("polarity", "occasion", text(STANDALONE)),
-  // Same-family pairs from the scope statements.
-  rule("binder", "binder", text("joins.md#everything-ua")),
-  rule("intention", "intention", text("intention.md#plan")),
-  // Two act words: a doubled one is the same act, only more insistent; of two different ones the first is the act
-  // and the second how it sounds, so the first covers the second.
-  rule(
-    "force",
-    "force",
-    { ...commutes("more-turn-words.md#doubled-act"), when: { force: ["repeat"] } },
-    { order: "textOrder", anchors: ["more-turn-words.md#stacked-acts"] },
-  ),
-  // A call names who the turn is for and commutes with every other frame in its clause (speech-moves.md#vocative).
-  ...CALL_PAIRS.map((family): PairRow => ({ pair: ["call", family], kind: "commutes", cases: [commutes(CALL)] })),
-];
+export const PAIR_ROWS: readonly PairRow[] = derivePairRows();
 
 /** Families that never pair (interpreter.md#pair-table, "Never in a pair"). */
 const NEVER_PAIRS = new Set<FrameFamily>(["bar", "quote", "unknown"]);
@@ -390,14 +174,7 @@ export function pairRow(a: FrameFamily, b: FrameFamily): PairRow | undefined {
   return PAIRS.get(pairKey(a, b));
 }
 
-const DEFAULT_ROW: PairRow = { pair: ["unknown", "unknown"], kind: "rule", cases: [text()] };
-
-function caseMatches(when: PairCase["when"], a: ScopeFrame, b: ScopeFrame): boolean {
-  if (!when) return true;
-  return Object.entries(when).every(([family, members]) =>
-    [a, b].some((frame) => frame.family === family && frame.member !== undefined && members!.includes(frame.member)),
-  );
-}
+const DEFAULT_ROW: PairRow = { pair: ["unknown", "unknown"], kind: "rule", cases: [{ order: "textOrder", anchors: [TEXT_ORDER] }] };
 
 /** MAY right before the `/th/` word it covers (already-still-yet.md#stage-of-change). */
 function mayRightBefore(earlier: ScopeFrame, later: ScopeFrame): boolean {

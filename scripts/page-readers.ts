@@ -31,6 +31,7 @@ import { CLASSES } from "../src/interpret/classes.js";
 import { FAMILY_TERMS } from "../src/interpret/inspect-notes.js";
 import { CONSTRUCTIONS, REJECTIONS } from "../src/parse/constructions.js";
 import { FRAME_KEYS, PAIR_ROWS } from "../src/parse/scope.js";
+import { PROFILES } from "../src/parse/scope-profiles.js";
 import { GRAMMAR_DIR, readData, REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath, tmpRel } from "../src/tmp-paths.js";
 import * as pageContracts from "../src/page-contracts.ts";
@@ -90,6 +91,7 @@ const READ_FILES = new Set([
   INTERPRETER,
   "src/interpret/classes.ts",
   "src/parse/scope.ts",
+  "src/parse/scope-profiles.ts",
   "src/interpret/inspect-notes.ts",
 ]);
 
@@ -234,6 +236,14 @@ function lessonRef(registry: string, lesson: string, where: string): RegistryRef
   return { registry, page, id: "", where };
 }
 
+/** Every `page.md#id` string anywhere in a value, such as a family profile. */
+function profileAnchors(value: unknown): string[] {
+  if (typeof value === "string") return /\.md#/.test(value) ? [value] : [];
+  if (Array.isArray(value)) return value.flatMap(profileAnchors);
+  if (value && typeof value === "object") return Object.values(value).flatMap(profileAnchors);
+  return [];
+}
+
 function registryRefs(): RegistryRef[] {
   const refs: (RegistryRef | undefined)[] = [];
   for (const [id, entry] of CONSTRUCTIONS) refs.push(anchorRef("constructions", entry.anchor, `constructions.ts ${id}`));
@@ -253,6 +263,11 @@ function registryRefs(): RegistryRef[] {
   }
   for (const row of PAIR_ROWS) {
     for (const c of row.cases) for (const a of c.anchors) if (a) refs.push(anchorRef("pair-rows", a, `scope.ts PAIR_ROWS ${row.pair.join("×")}`, "docs/meta"));
+  }
+  // Profile anchors no derived row cites (a member's carry escape, say) still name the pages the profiles read.
+  const rowAnchors = new Set(PAIR_ROWS.flatMap((row) => row.cases.flatMap((c) => c.anchors)));
+  for (const profile of PROFILES) {
+    for (const a of new Set(profileAnchors(profile))) if (!rowAnchors.has(a)) refs.push(anchorRef("pair-rows", a, `scope-profiles.ts ${profile.family}`, "docs/meta"));
   }
   for (const [family, term] of Object.entries(FAMILY_TERMS)) {
     if (term?.anchor) refs.push(anchorRef("terms", term.anchor, `inspect-notes.ts ${family}`, "docs/meta"));

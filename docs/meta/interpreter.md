@@ -647,11 +647,54 @@ A tool that needs what a sentence says reads readings; a tool that needs how it 
 - **Pronouns by referent.** A bound pronoun compares as its antecedent's canonical term, keeping its ending's sense: `-r` the one meant (through a chain of `-r` pronouns to the first mention, with the sentence it was met in, `pronouns.md#resume-r`), `-l` the antecedent written out with the pronoun's role letter (`pronouns.md#a-new-one`), `-m` a share of it (`pronouns.md#share`). A role compound keeps its reach and part (`roles.md#role-compounds`). An unbound pronoun compares by form.
 - **Nested readings** (dependents, islands, quotes, clause-join members, a frame's content) compare recursively, in place.
 
+## Family profiles
+
+Each family that pairs has a profile in `src/parse/scope-profiles.ts`, and the [pair table](#pair-table) is derived from the profiles. The properties, each with the page that states it:
+
+| Property | Values | Families | Anchor |
+|----------|--------|----------|--------|
+| seat | `edge`: on the turn's left edge, outside the body; `body` | `edge`: `force`, `call`; the rest `body` | `speech-moves.md#speech-act-statement-question-command`, `speech-moves.md#vocative` |
+| order | `text`: the earlier covers the later; `covers`: over everything in its clause, wherever it sits; `commutes`: with every frame | `covers`: `holder`; `commutes`: `call`; the rest `text` | `clause.md#which-covers-which`, `holder.md#what-the-holder-covers`, `speech-moves.md#vocative` |
+| escapes `force` | stays outside the act: only the claim is asked | `sake`, `attitude`, `mirative` | `for-a-sake.md#whose-stake`, `feelings.md#speaker-attitude`, `mirative.md#mirative` |
+| escapes `holder` | stays yours under a holder | `attitude` | `holder.md#what-the-holder-covers` |
+| escapes `remark` | a remark of yours: two remarks commute | `sake`, `attitude`, `mirative`, `contrary` | `for-a-sake.md#whose-stake`, `feelings.md#speaker-attitude`, `mirative.md#mirative`, `contrary-to.md#contrary-to-stance` |
+| escapes `carried` (member) | a carried frame sits under it: the claim takes the frame, the feeling stays yours | `attitude` (a root on `/th/`), `sake` (a feeling word) | `evidentiality.md#carry-forward`, `how-you-feel.md#feeling-word` |
+| under force | the anchor a row with the act word over it cites, where the family's page states the pair; otherwise `speech-moves.md#speech-act-statement-question-command` | `hinge`, `stance`, `intention`, `holder` | `causation.md#if`, `want-and-decide.md#whose-intention`, `holder.md#what-the-holder-covers` |
+| holder seam | the holder seam sits on its word, so the holder over it is fixed by word shape | `stance`, `intention`, `notional` | `holder.md#what-the-holder-covers`, `want-and-decide.md#whose-intention`, `notional.md#follow-up-endings-notional` |
+| text anchors | extra anchors a text-order row cites | `stance`: MAY right before a `/th/` frame, a channel against `binder` and `occasion`; `hinge`: the hinge last, and the `blarth` hinge first except against `binder`; `polarity`: a standalone join except against `binder`, a `/th/` word right before the join; `binder`, `intention`: against themselves | `already-still-yet.md#stage-of-change`, `usually-vs-must.md#general-claims`, `dependents.md#hinges`, `stand-in-vowels.md#stand-in-back`, `verb-and-stance-joins.md#standalone-stance-joins`, `verb-and-stance-joins.md#stance-join-reach`, `joins.md#everything-ua`, `intention.md#plan` |
+| member cases | one member's own order against one family, before text order | a channel commutes with `attitude` and `mirative`, and covers `hinge`; FORMER covers `occasion` | `feelings.md#speaker-attitude`, `mirative.md#mirative`, `evidentiality.md#evidence-clause`, `usually-vs-must.md#how-things-work`, `residue-and-former.md#former-climate` |
+| claims (member) | `false`: its content is not asserted, so a carried frame skips the statement | `intention`: WANT, PLAN, DECISION | `evidentiality.md#carry-forward`, `intention.md#plan` |
+| self | two frames of the family have a row | `stance`, `intention`, `binder`, `force`, `call` | `already-still-yet.md#stage-of-change`, `intention.md#plan`, `joins.md#everything-ua`, `more-turn-words.md#stacked-acts`, `speech-moves.md#vocative` |
+
+**Rule order.** `derivePairRows()` gives each pair the first rule that applies, and `explainPair(a, b)` names it (the scope report counts them):
+
+1. **Exception** (`exception:<id>`): the pair's row from the list below.
+2. **Call** (`call`): a family that commutes with every frame commutes with the other.
+3. **Edge** (`edge`): the act word covers a body frame that does not escape `force`.
+4. **Both escape each other** (`escape:each-other`): two remarks commute.
+5. **Escape** (`escape:force`, `escape:holder`): a family that escapes the other's family covers it.
+6. **Covers** (`covers:holder`, `seam:holder`): the holder covers the other; fixed by word shape where its seam sits on the other.
+7. **Member case** (`member:<id>`): a member's own case, then text order for the rest.
+8. **Text** (`text`): the earlier covers the later, citing `clause.md#which-covers-which` and the text anchors of both families.
+
+**Exceptions.** The pairs the rules do not derive:
+
+| Id | Pair | Row | Reason |
+|----|------|-----|--------|
+| `sake-holder` | `sake` × `holder` | text order, `holder.md#what-the-holder-covers` | A sake word before the holder is yours, after it the holder's: text order, not the holder over its clause |
+| `hinge-holder` | `hinge` × `holder` | text order, `holder.md#what-the-holder-covers` | *So that* after a holder is the holder's, alone it is yours: text order, not the holder over its clause |
+| `hinge-occasion` | `hinge` × `occasion` | occasion over, `usually-vs-must.md#how-things-work` | The hinge holds for each occasion, wherever it sits |
+| `contrary-stance` | `stance` × `contrary` | commutes, `contrary-to.md#contrary-to-stance` | Only the word after `uom` is what the event goes against; a stance anywhere else still applies to the claim |
+| `contrary-intention` | `intention` × `contrary` | commutes, `contrary-to.md#contrary-to-stance` | As with a stance: only the word after `uom` is what the event goes against |
+| `stacked-acts` | `force` × `force` | a doubled act word commutes (`more-turn-words.md#doubled-act`); otherwise text order, `more-turn-words.md#stacked-acts` | Both act words are on the edge: the first is the act and covers the second, as the act pages state it, not by the general text rule |
+
+A test checks that the derived rows equal the rows the hand-written table held before the profiles: each pair, its kind, its cases and their anchors in order.
+
 ## Pair table
 
-One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word: commutes; two free-standing tone marks: commute, see [attitude](#attitude)), except `stance` × `stance` and `call` × `call`, which have rows. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
+One row per pair of families whose forms can both reach the whole clause, counting a carried frame (see [links](#links)). The rows are derived from the [family profiles](#family-profiles) (`derivePairRows()`); this table shows each with its note and samples. Same-family pairs are in the [scope statements](#scope-statements) (`binder`, `intention`, and two different act words in `force`: fixed by a rule; a doubled act word: commutes; two free-standing tone marks: commute, see [attitude](#attitude)); of those the code derives a row for `binder`, `intention` and `force`, and this table shows `stance` × `stance` and `call` × `call`. Samples spell the frame word with one exemplar per family (MAY for `stance`, PLAN for `intention`, *always* for `occasion`, *already* for `phase`, RESIDUE for `residue`, *if* for `hinge`, `uom` PLAN for `contrary`) and are checked with `--check-lexicon`. Two samples put the frames in both text orders. Where no other rule orders them, the earlier covers the later (`clause.md#which-covers-which`).
 
-Counts: fixed by a rule 126, unsettled 0, commutes 26, fixed by word shape 3.
+Counts: fixed by a rule 126, unsettled 0, commutes 26, fixed by word shape 3. By the rule that derives the row: text 93, call 18, edge 13, covers 9, escape each other 6, exception 5, member case 4, escape `force` 3, word-shape seam 3, escape `holder` 1.
 
 Decided 2026-11-13, on the grammar pages since unit S1 of `ageben-interpreter.md`: where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later (`clause.md#which-covers-which`); an attitude word, MIRATIVE, and a sake word stay outside a question (`feelings.md#speaker-attitude`, `mirative.md#mirative`, `for-a-sake.md#whose-stake`). Standing exceptions keep their own rows: force first (`speech-moves.md#speech-act-statement-question-command`), a `blarl` hinge last (`dependents.md#hinges`; the hinge over a word is a `blarth` hinge put first, `stand-in-vowels.md#stand-in-back`), the holder over its clause (`holder.md#what-the-holder-covers`), and FORMER over a restrictor (`residue-and-former.md#former-climate`). Unit S2 has the parser's resolve stage emit the order.
 

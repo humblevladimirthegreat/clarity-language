@@ -24,7 +24,8 @@
  */
 import { offsetSign } from "./enforce.js";
 import { linkerEnglish } from "./linkers.js";
-import type { ClauseScope, ScopeFrame } from "./scope.js";
+import type { ClauseScope, FrameFamily, ScopeFrame } from "./scope.js";
+import { membersWhere, type MemberProfile } from "./scope-profiles.js";
 import { actWord } from "./series.js";
 import type { BodyCarry, BodyClause, CarriedFrame, CarryKind, HUnit, LexWord, Utterance } from "./types.js";
 
@@ -35,21 +36,34 @@ const CARRY_KEYS: Readonly<Record<string, CarryKind>> = {
   "xFamily:holder": "holder",
 };
 
-/** The keys of a stance that leaves no claim: its content is not asserted (intention.md#plan, want-and-decide.md#want, #decision-revisability). */
-const NO_CLAIM_KEYS: ReadonlySet<string> = new Set(["overlay:want:th", "overlay:plan:th", "overlay:decision:th"]);
+/**
+ * The keys of a stance that leaves no claim: its content is not asserted (intention.md#plan, want-and-decide.md#want,
+ * #decision-revisability). The family profiles' members with `claims: false`.
+ */
+const NO_CLAIM_KEYS: ReadonlySet<string> = new Set(membersWhere((m) => m.claims === false).flatMap(({ member }) => member.keys ?? []));
 
-/** The key of a speaker attitude: an ordinary root on `/th/` (feelings.md#speaker-attitude). */
-const ATTITUDE_KEY = "slot:th";
+/**
+ * The members a carried frame sits under: a speaker attitude, an ordinary root on `/th/` (feelings.md#speaker-attitude),
+ * and a feeling word. The family profiles' members that escape `carried`.
+ */
+const UNDER_OWN = membersWhere((m) => m.escapes?.includes("carried") ?? false);
 
 /** A feeling word: a sake word with its horizon moved mid-word and an urge (how-you-feel.md#feeling-word). Plain sake words are not. */
 function isFeelingWord(word: LexWord): boolean {
   return word.family.kind === "x" && word.family.xFamily === "sake" && word.family.horizon !== undefined;
 }
 
+/** Whether a frame is a member: of its family, with one of its keys if it names any, and a feeling word if it is one. */
+function isMember(frame: ScopeFrame, family: FrameFamily, member: MemberProfile): boolean {
+  if (frame.family !== family) return false;
+  if (member.keys && !member.keys.includes(frame.key)) return false;
+  return !member.feeling || isFeelingWord(frame.word);
+}
+
 /** The words of a body's own whole-clause stances that a carried frame sits under (evidentiality.md#carry-forward). */
 function ownStanceWords(scope: ClauseScope | undefined): LexWord[] {
   return (scope?.frames ?? [])
-    .filter((frame) => !frame.tone && (frame.key === ATTITUDE_KEY || (frame.family === "sake" && isFeelingWord(frame.word))))
+    .filter((frame) => !frame.tone && UNDER_OWN.some((own) => isMember(frame, own.family, own.member)))
     .map((frame) => frame.word);
 }
 
