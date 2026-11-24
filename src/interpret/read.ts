@@ -13,7 +13,7 @@ import { crosses, type NestedKind } from "../parse/boundaries.js";
 import { perSpeaker, type SlotId } from "../parse/discourse-slots.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
-import { isGenericPronoun, isTopicPronoun, withAsideContext } from "../parse/resolve.js";
+import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type {
   BodyCarry,
   CarryKind,
@@ -93,7 +93,8 @@ function quoteReadings(word: LexWord, here: Here): Reading[] {
     // A cite's words start with nothing from outside; an aside's back references point out of it (spans.md#asides-th),
     // to the terms already read there.
     const aside = family.bracket === "(";
-    const sub = aside ? withAsideContext(word, () => parseWithTables(text, tables)) : parseWithTables(text, tables);
+    const passing = aside ? here.ctx.result.resolve?.asides?.get(word) : undefined;
+    const sub = parseWithTables(text, tables, passing ? { aside: passing } : {});
     const { outerTerm: _, ...options } = here.ctx.options;
     const outerTerm = (at: LexWord): Term | undefined => here.ctx.terms.get(at) ?? here.ctx.options.outerTerm?.(at);
     // An aside's readings sit at `/a<at>`, a cite's at `/q<at>`: the step names the boundary (nestedKinds).

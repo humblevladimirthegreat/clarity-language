@@ -7,7 +7,6 @@ import { describe, it } from "node:test";
 import { createClassifyTables } from "./classify.js";
 import { parse } from "./index.js";
 import { visitResult } from "./ast-walk.js";
-import { withAsideContext } from "./resolve.js";
 import type { AnaphorBind, LexWord } from "./types.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -647,7 +646,7 @@ describe("resolve — asides (spans.md#asides-th)", () => {
     visitResult(outer, { word: (word) => void (word.family.kind === "writingSpan" && word.family.bracket === "(" && (aside ??= word)) });
     assert.ok(aside && aside.family.kind === "writingSpan");
     const payload = aside.family.payload;
-    const inner = withAsideContext(aside, () => parseText(payload));
+    const inner = parse(payload, tables, { aside: outer.resolve!.asides!.get(aside)! });
     const show = (binds: AnaphorBind[]) => binds.map((bind) => `${bind.pronoun.raw}→${bind.antecedent?.raw ?? "-"}`);
     return { outer: show(outer.resolve!.anaphors), inner: show(inner.resolve!.anaphors) };
   }
@@ -666,7 +665,13 @@ describe("resolve — asides (spans.md#asides-th)", () => {
     assert.throws(() => asideOf("zual gogozel zwal vezuvel th(zwar guzemel)."), /expires at the end of that sentence/);
   });
 
+  it("points a hooked join's point-back in an aside to a landmark outside it (hooked-joins.md#hooked-joins-point-back)", () => {
+    assert.deepEqual(asideOf("zazozon vehohel el bohahal th(zerxual vezuvel).").inner, ["zerxual→bohahal"]);
+    assert.deepEqual(asideOf("zazozon vehohel el bohahal. zalazun vowurol th(zerxual vezuvel).").inner, ["zerxual→bohahal"]);
+  });
+
   it("lets nothing out of an aside", () => {
     assert.deepEqual(asideOf("zazozon vowurol th(zalazun vezuvel). zalazur vehohel.").outer, ["zalazur→-"]);
+    assert.throws(() => parseText("zazozon vowurol th(zalazun vehohel el bohahal). zerxual vezuvel."), /needs a landmark in play/);
   });
 });

@@ -131,6 +131,8 @@ type Ctx = {
   /** The stand-in of the dependent the walk is inside, if any. */
   standIn?: LexWord;
   question: boolean;
+  /** What passes into each aside, noted as the walk reaches it (spans.md#asides-th). */
+  asides: Map<LexWord, AsideContext>;
 };
 
 /** Writing / speech number markers that share referential identity. */
@@ -807,18 +809,13 @@ function endReach(reach: BoundReach, tags: Map<TagVowel, TagBinding>, expired: S
 
 /**
  * What an aside's words take from outside: the backward-reference state where the aside sits, so a pronoun, role
- * pointer, tag or topic pronoun in it points back to the outer sentence and the sentences before it, as it would outside
- * the aside (spans.md#asides-th). Nothing else comes in: no landmark, ask, carried frame or conversation state. The
- * reader parses the aside's words on their own, as it does a cite's, and their resolve starts from a copy of this, so
- * nothing they bind reaches back out.
+ * pointer, tag, topic pronoun or hooked join's point-back in it points back to the outer sentence and the sentences
+ * before it, as it would outside the aside (spans.md#asides-th). Nothing else comes in: no ask, carried frame or
+ * conversation state. The resolve stage notes one per aside word (`ResolveInfo.asides`); the reader parses the aside's
+ * words on their own, as it does a cite's, with it as `ParseOptions.aside`, and their resolve starts from a copy of it,
+ * so nothing they bind reaches back out.
  */
-type AsideContext = Pick<Ctx, "antecedents" | "anchors" | "turns" | "referents" | "tags" | "expired" | "reach" | "topic">;
-
-/** Each aside word's context, noted as the walk reaches it. */
-const asideContexts = new WeakMap<LexWord, AsideContext>();
-
-/** The context the resolve being run starts from: set by {@link withAsideContext} while the reader parses an aside. */
-let incoming: AsideContext | undefined;
+export type AsideContext = Pick<Ctx, "antecedents" | "landmarks" | "anchors" | "turns" | "referents" | "tags" | "expired" | "reach" | "topic">;
 
 function isAside(word: LexWord): boolean {
   return word.family.kind === "writingSpan" && word.family.bracket === "(";
@@ -834,12 +831,13 @@ function noteAside(ctx: Ctx, word: LexWord): void {
   const expired = new Set(ctx.expired);
   const reachPasses = crosses("aside", "boundTag", "resolve");
   if (ctx.reach && !reachPasses) endReach(ctx.reach, tags, expired);
-  const reach = ctx.reach && reachPasses ? { shadowed: new Map(ctx.reach.shadowed), bound: new Set(ctx.reach.bound) } : undefined;
+  const reach = ctx.reach && reachPasses ? copyReach(ctx.reach) : undefined;
   const topicCell = slotRow("topic").aside;
   const topic = (topicCell.today ?? topicCell.verdict) === "passes" ? ctx.topic : undefined;
-  asideContexts.set(word, {
+  ctx.asides.set(word, {
     antecedents: [...ctx.antecedents],
-    anchors: ctx.anchors.map((anchor) => ({ predicate: anchor.predicate, fillers: { ...anchor.fillers } })),
+    landmarks: [...ctx.landmarks],
+    anchors: copyAnchors(ctx.anchors),
     turns: [...ctx.turns],
     referents: new Map(ctx.referents),
     tags,
@@ -849,18 +847,12 @@ function noteAside(ctx: Ctx, word: LexWord): void {
   });
 }
 
-/**
- * Run `parse` (the reader parsing an aside's words, spans.md#asides-th) with its resolve starting from the context noted
- * where `aside` sits in the outer text. With none noted, the words start with nothing, as a cite's do.
- */
-export function withAsideContext<T>(aside: LexWord, parse: () => T): T {
-  const before = incoming;
-  incoming = asideContexts.get(aside);
-  try {
-    return parse();
-  } finally {
-    incoming = before;
-  }
+function copyReach(reach: BoundReach): BoundReach {
+  return { shadowed: new Map(reach.shadowed), bound: new Set(reach.bound) };
+}
+
+function copyAnchors(anchors: readonly Anchor[]): Anchor[] {
+  return anchors.map((anchor) => ({ predicate: anchor.predicate, fillers: { ...anchor.fillers } }));
 }
 
 /** Whether a slot's filler is that referent: one of its words, or the whole joined group. */
@@ -1135,18 +1127,23 @@ function resolveVisitor(ctx: Ctx): Visitor {
   };
 }
 
-function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = [], speakers?: readonly string[]): ResolveInfo {
+function buildResolve(
+  result: ParseResult,
+  tables?: ClassifyTables,
+  tones: ToneRecord[] = [],
+  speakers?: readonly string[],
+  seed?: AsideContext,
+): ResolveInfo {
   // An aside's words start from what passes in where the aside sits (spans.md#asides-th); a text or a cite from nothing.
-  const seed = incoming;
   const ctx: Ctx = {
     antecedents: [...(seed?.antecedents ?? [])],
-    landmarks: [],
+    landmarks: [...(seed?.landmarks ?? [])],
     hookLandmarks: new Set(),
     rangeBlanks: new Map(),
     named: new Set(),
     tags: new Map(seed?.tags),
     groupTags: new Map(),
-    ...(seed?.reach ? { reach: { shadowed: new Map(seed.reach.shadowed), bound: new Set(seed.reach.bound) } } : {}),
+    ...(seed?.reach ? { reach: copyReach(seed.reach) } : {}),
     expired: new Set(seed?.expired),
     ...(seed?.topic ? { topic: seed.topic } : {}),
     greeted: new Set(),
@@ -1154,7 +1151,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
     goodbye: false,
     goodbyes: new Set(),
     anaphors: [],
-    anchors: (seed?.anchors ?? []).map((anchor) => ({ predicate: anchor.predicate, fillers: { ...anchor.fillers } })),
+    anchors: copyAnchors(seed?.anchors ?? []),
     clauses: [],
     turns: [...(seed?.turns ?? [])],
     pendingConsequence: false,
@@ -1165,6 +1162,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
     gaps: [],
     innerGaps: [],
     question: false,
+    asides: new Map(),
   };
   visitResult(result, resolveVisitor(ctx));
   const answers = fillAnswers(result.utterances, ctx.asks, ctx.rangeBlanks);
@@ -1181,6 +1179,7 @@ function buildResolve(result: ParseResult, tables?: ClassifyTables, tones: ToneR
     ...(pairings.length > 0 ? { pairings } : {}),
     ...(tones.length > 0 ? { tones } : {}),
     ...(carried.length > 0 ? { carried } : {}),
+    ...(ctx.asides.size > 0 ? { asides: ctx.asides } : {}),
   };
 }
 
@@ -1268,11 +1267,17 @@ function fillAnswers(
  */
 /**
  * `tones`: the marks `enforceTones` took out of the token stream (tone-marks.md#showing-your-tone). `speakers`: who says each
- * sentence (`ParseOptions.speakers`).
+ * sentence (`ParseOptions.speakers`). `aside`: in an aside's words, what passes in where it sits (`ParseOptions.aside`).
  */
-export function resolve(result: ParseResult, tables?: ClassifyTables, tones: ToneRecord[] = [], speakers?: readonly string[]): ParseResult {
+export function resolve(
+  result: ParseResult,
+  tables?: ClassifyTables,
+  tones: ToneRecord[] = [],
+  speakers?: readonly string[],
+  aside?: AsideContext,
+): ParseResult {
   return {
     utterances: result.utterances,
-    resolve: buildResolve(result, tables, tones, speakers),
+    resolve: buildResolve(result, tables, tones, speakers, aside),
   };
 }

@@ -1,4 +1,5 @@
 import type { ClauseScope } from "./scope.js";
+import type { AsideContext } from "./resolve.js";
 import type { OverlayKind } from "../lexicon-search.js";
 
 /**
@@ -459,6 +460,12 @@ export type ParseOptions = {
    * is their own (evidentiality.md#carry-forward). Unset: the text is one speaker.
    */
   speakers?: readonly string[];
+  /**
+   * The text is an aside's words: what passes in from where the aside sits, the outer parse's `ResolveInfo.asides` entry
+   * for it (spans.md#asides-th). Its resolve starts from a copy, so nothing it binds reaches back out. Unset: nothing
+   * passes in, as for a text or a cite.
+   */
+  aside?: AsideContext;
 };
 
 export type ParseResult = {
@@ -599,6 +606,11 @@ export type ResolveInfo = {
    * per sentence body that inherits any. Present when some body does.
    */
   carried?: BodyCarry[];
+  /**
+   * What passes into each aside word (`(…)`), noted where it sits (spans.md#asides-th): the reader parses the aside's words
+   * with it as `ParseOptions.aside`. Present when the text has an aside.
+   */
+  asides?: ReadonlyMap<LexWord, AsideContext>;
 };
 
 // ── Carried frames ──────────────────────────────────────────────────────────
