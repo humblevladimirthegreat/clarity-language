@@ -78,7 +78,9 @@ function quoteReadings(word: LexWord, here: Here): Reading[] {
   }
   try {
     const sub = parseWithTables(text, tables);
-    return readParse(sub, { ...here.ctx.options, text: `${here.reading.id}/q${word.at ?? 0}` });
+    // An aside's readings sit at `/a<at>`, a cite's at `/q<at>`: the step names the boundary (nestedKinds).
+    const step = family.bracket === "(" ? "a" : "q";
+    return readParse(sub, { ...here.ctx.options, text: `${here.reading.id}/${step}${word.at ?? 0}` });
   } catch {
     unread(here, "quoteParse", "unit:writingSpan", word);
     return [];
@@ -93,16 +95,25 @@ function spanTerm(word: LexWord, here: Here): Term {
   if (family.bracket === "<" || !family.payload.trim() || family.marks.includes("@") || family.marks.includes("^@")) {
     return { kind: "literal", word, payload: family.payload };
   }
-  const readings = quoteReadings(word, here);
-  // The frame (or the aside's detail) keeps the word (rule 5) and hosts the quote term, so the term nests in it: one
-  // place for the word wherever else the term sits (a role).
-  const term: Term = { kind: "quote", word, readings };
-  if (family.bracket === "(") {
-    here.reading.claim.details.push({ ...detailOf("unit:writingSpan", word, "aside"), content: readings, hosted: term });
-  } else {
-    here.reading.frames.push({ ...frameOf("unit:writingSpan", word, here), content: readings, hosted: term });
+  const aside = asideDetail(word, here);
+  if (aside) {
+    here.reading.claim.details.push(aside);
+    return aside.hosted!;
   }
+  // The frame keeps the word (rule 5) and hosts the quote term, so the term nests in it: one place for the word
+  // wherever else the term sits (a role).
+  const readings = quoteReadings(word, here);
+  const term: Term = { kind: "quote", word, readings };
+  here.reading.frames.push({ ...frameOf("unit:writingSpan", word, here), content: readings, hosted: term });
   return term;
+}
+
+/** An aside (`th(…)`, `ɡ(…)`, `w(…)`, `h(…)`): a detail whose content is the aside's own readings (spans.md#asides-th). */
+function asideDetail(word: LexWord, here: Here): Detail | undefined {
+  const family = word.family;
+  if (family.kind !== "writingSpan" || family.bracket !== "(") return undefined;
+  const readings = quoteReadings(word, here);
+  return { ...detailOf("unit:writingSpan", word, "aside"), content: readings, hosted: { kind: "quote", word, readings } };
 }
 
 /** The term a role phrase's head word builds, kept by its word so a later pronoun that resumes it points at it. */
@@ -178,6 +189,11 @@ function addDetails(term: Term, details: Detail[]): void {
 
 /** A `/w/` word: a degree detail, or a frame with adjective reach (rule 2). */
 function modifier(word: LexWord, here: Here, into: Detail): void {
+  const aside = asideDetail(word, here);
+  if (aside) {
+    into.details = [...(into.details ?? []), aside];
+    return;
+  }
   const key = wordKey(word);
   const row = classOf(key);
   if (row?.cls.startsWith("frame:")) {
@@ -221,9 +237,10 @@ function hostedTerm(hosted: Hosted | undefined, here: Here, clause: Clause, fram
 function adjDetail(pkg: GPackage, here: Here, clause: Clause): Detail {
   const word = pkg.word;
   const key = wordKey(word);
-  const row = classOf(key);
-  if (!row) unread(here, "noRow", key, word);
-  const detail = detailOf(key, word, row?.cls.startsWith("detail:") ? row.cls.slice(7) : "adjective");
+  const aside = asideDetail(word, here);
+  const row = aside ? undefined : classOf(key);
+  if (!row && !aside) unread(here, "noRow", key, word);
+  const detail = aside ?? detailOf(key, word, row?.cls.startsWith("detail:") ? row.cls.slice(7) : "adjective");
   if (row?.cls.startsWith("frame:")) detail.frames = [frameOf(key, word, here)];
   for (const w of pkg.modifiers) modifier(w, here, detail);
   if (pkg.asOf) {
@@ -552,6 +569,13 @@ function readStanceList(unit: HUnit, key: string, here: Here): void {
 function readH(unit: HUnit, here: Here, clause: Clause): void {
   const word = unit.word;
   const key = wordKey(word, unit.closes);
+  const aside = asideDetail(word, here);
+  if (aside) {
+    // A `th(…)` or `h(…)` aside comments on the sentence or the action: a detail of the claim, no frame (spans.md#asides-th).
+    for (const w of unit.modifiers) modifier(w, here, aside);
+    here.reading.claim.details.push(aside);
+    return;
+  }
   if (word.pos === "th" && word.family.kind === "joinMarker" && unit.closes?.length) {
     readStanceList(unit, key, here);
     return;

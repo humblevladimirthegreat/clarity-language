@@ -107,7 +107,7 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 | [`th(…)`](/spans#asides) | Ageben | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zazozon vowurol th(hugowul).` | B |
 | [`{ … }`](/scope-islands#scope-islands) | Ageben | scope island: a binder (a word like *possibly*, or a join) inside reaches only that chunk | `zazozon { hogugem zodozel gerulol } vayebel.` | I |
 
-When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
+When the lexicon has a matching root, write the ordinary word, not a span. An aside takes its own act word (a statement when it has none) and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
 ### Marks before the bracket {#marks}
 

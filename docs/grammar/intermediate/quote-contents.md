@@ -4,7 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #topic-quotes: 1 boundary cell
+- #topic-quotes: 1 boundary cell, 1 discourse slot cell
 Inbound links: npm run page-refs -- quote-contents.md
 -->
 

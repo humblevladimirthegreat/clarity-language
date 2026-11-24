@@ -65,7 +65,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | unit | `h` | detail:adverb | `clause.md#adverbs-h` | Default for a plain `/h/` word. An `/h/` word with a restrictor, ability, or overlay reading takes that word's row first, except on a restrictor's occasion list, where it is this row whatever its reading (`residue-and-former.md#former-climate`) |
 | unit | `linker` | link | `sentence-linkers.md#sentence-linkers` | Points back to the one sentence before the period. On any other `/x/` word, a topic word or agenda number (`topic.md#topic`): links nothing to the claim |
 | unit | `hook` | structure | `hooks.md#including-am-al` | Read by its `hookJob` row |
-| unit | `writingSpan` | frame:quote | `spans.md#writing` | A cite fills one role; its words are a nested reading that keeps its own act word and frames (`quote-contents.md#quote-acts`, `evidentiality.md#carry-forward`). Loan, opaque and mention spans are `literal` terms (`spans.md#loans`); an aside `th(…)` is a nested comment reading (`spans.md#asides-th`) |
+| unit | `writingSpan` | frame:quote | `spans.md#writing` | A cite fills one role; its words are a nested reading that keeps its own act word and frames (`quote-contents.md#quote-acts`, `evidentiality.md#carry-forward`). Loan, opaque and mention spans are `literal` terms (`spans.md#loans`); an aside (`th(…)`, `ɡ(…)`, `w(…)`, `h(…)`) is an `aside` detail whose content is the aside's own readings, a nested reading of kind `aside` that keeps its own act word, a statement when it has none (`spans.md#asides-th`) |
 | unit | `island` | structure | `scope-islands.md#scope-islands` | Nests: a stance inside frames that chunk only (rule 2) |
 | unit | `clauseCoord` | structure | `joins.md#clause-joins` | One reading per member (rule 1); the join itself is read by its `joinSeries` row |
 | unit | `gCoord` | structure | `joins.md#right-close` | A `/ɡ/` list; its join is read by its `joinSeries` row |
@@ -284,7 +284,7 @@ The end events:
 | `byTheWay` | *by the way* (`xavedam`) |
 | `goodbye` | a goodbye |
 
-The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) and `quote` (`passes` or `blocks` into a quote).
+The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A stated `aside` cell the code does not follow yet says so (`today: blocks`): an aside's words are parsed on their own, so no outer value reaches them yet. Nothing inside an aside sets a slot.
 
 **`carriedFrame`**, the carried frame: a channel, holder or NOTIONAL, a dated channel with its offset (`evidentiality.md#carry-forward`, `holder.md#naming-a-holder`, `notional.md#notional-as-if-framing`, `dated-channel.md#counting-from-now`). Set by a channel, NOTIONAL or holder on a statement's main clause; read by a later statement with no such frame of its own, as one `carriedFrame` link (`carry:channel`, `carry:holder`, `carry:notional`) per inherited frame, `to` the reading that set it, `frame` that reading's frame; a dated channel's link also holds its offset words. The record is `ResolveInfo.carried` (`BodyCarry` → `CarriedFrame`). Settled 2026-11-18: a holder on MAY carries and the MAY does not (`holder.md#naming-a-holder`); only a channel on the main clause starts or ends a frame, never one in a dependent or on one clause-join member (`evidentiality.md#carry-forward`, the boundary table's `carryStart` and `carryEnd`); the grounds after `blarl` sit in the body that takes the frame (decision 16, no page edit); a carried frame covers what you claim, never your own stance (decision 15, `evidentiality.md#carry-forward`): a statement whose clause has WANT, PLAN or DECISION neither takes nor ends it, and on a statement with a speaker attitude (`slot:th`) or a feeling word on `/th/` (a sake word with a moved horizon, `how-you-feel.md#feeling-word`) the claim takes it and the link's `coveredBy` lists those frames, which sit over it. The order is a link field, not an `order` entry, because the carried frame is never in the later reading's `frames`.
 
@@ -296,6 +296,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | ends every speaker's, `evidentiality.md#carry-forward` |
 | `kept` | speaker, `evidentiality.md#carry-forward` |
 | `quote` | blocks, `evidentiality.md#carry-forward` |
+| `aside` | blocks, `spans.md#asides-th` |
 
 **`topic`**, the topic (`topic.md#topic`, `topic.md#topic-pronoun`). Set by an `/x/` introduce or return at the start of a sentence; read by the topic pronoun (`anaphor:topic`).
 
@@ -307,6 +308,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | ends, `topic.md#topic` |
 | `kept` | shared, `topic.md#topic` |
 | `quote` | blocks, `topic.md#topic-dependents` |
+| `aside` | passes (today: blocks), `quote-contents.md#topic-quotes` |
 
 **`standInBack`**, the latest content per act vowel (`stand-in-vowels.md#stand-in-back`). Set by a sentence, by its act vowel (none states), or a dependent a stand-in of that vowel fills; read by a stand-in on `-rth` (`lexReading:standInBack`, the [links](#links) row).
 
@@ -318,6 +320,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: passes) |
+| `aside` | passes (today: blocks), `spans.md#asides-th` |
 
 **`hookResume`**, the latest extra-noun hook per vowel (`in-clause-hooks.md#hook-resume`). Set by an extra-noun hook with a landmark, per vowels for stacked vowels; read by an extra-noun hook on `-r` (`hookJob:resume`, the [links](#links) row).
 
@@ -329,6 +332,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: passes) |
+| `aside` | passes (today: blocks), `spans.md#asides-th` |
 
 **`supposition`**, the NOTIONAL supposition a question points to (`notional.md#notional-as-if-framing`). Set by a stated reading with a NOTIONAL frame; read by a question with a NOTIONAL frame (`link:supposition`, the [links](#links) row).
 
@@ -340,6 +344,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: keeps) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: blocks) |
+| `aside` | blocks, `spans.md#asides-th` |
 
 **`sentenceBefore`**, the sentence before (`sentence-linkers.md#sentence-linkers`, `hooks.md#discourse-hooks`, `questions.md#polar-particle`). Set by every sentence; read by a sentence linker (`unit:linker`), a discourse hook (`edge:hook`, `hookJob:discourse`) and a polar word (`edge:polar`).
 
@@ -351,6 +356,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: ends) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: blocks) |
+| `aside` | blocks, `spans.md#asides-th` |
 
 **`answer`**, the question an answer fills (`questions.md#fill-ask`). Set by a question; read by the reply right after it (`answer:answer`).
 
@@ -362,6 +368,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `goodbye` | unstated (today: ends) |
 | `kept` | unstated (today: shared) |
 | `quote` | unstated (today: blocks) |
+| `aside` | blocks, `spans.md#asides-th` |
 
 ## Scope statements
 
@@ -484,7 +491,7 @@ No sentence states an order against another frame.
 - `more-turn-words.md#stacked-acts` (within the family): "the *first* is what you really do, and the *second* is how it sounds." Each act word is a frame; the first covers the second.
 - `more-turn-words.md#doubled-act` (within the family): "The act stays the same and only grows more insistent; the repeat never cancels it." The two frames commute.
 - `quote-contents.md#quote-acts` (against `quote`): "The outer sentence is still your claim (*said*), and `yel` or `yol` belongs to the quoted talk."
-- `spans.md#asides-th` (against an aside): "a clause with the same speech act as the outer sentence (both statements, both questions, or both commands)."
+- `spans.md#asides-th` (against an aside): "It takes its own act word, which may differ from the outer sentence's." The aside's act frame covers only its own reading.
 - `questions.md#embedded-whether` (against a dependent): "The whole sentence is still a statement, so do not write `yel` at its start."
 - `tone-marks.md#showing-your-tone` (against `attitude`): "It never changes the speech act (that is the act word's job)".
 - See `hinge`, `stance`, `holder`, and `intention` above for the statements against `force`.
@@ -670,14 +677,16 @@ The columns:
 
 | Column | Cell |
 |--------|------|
-| `outerFrames` | unstated (today: blocks) |
-| `holder` | unstated (today: blocks) |
-| `carryStart` | unstated (today: blocks) |
+| `outerFrames` | blocks, `spans.md#asides-th` |
+| `holder` | blocks, `spans.md#asides-th` |
+| `carryStart` | blocks, `spans.md#asides-th` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
-| `carried` | unstated (today: blocks) |
-| `binder` | unstated (today: blocks) |
-| `boundTag` | unstated (today: blocks) |
-| `tone` | unstated (today: blocks) |
+| `carried` | blocks, `spans.md#asides-th` |
+| `binder` | blocks, `spans.md#asides-th` |
+| `boundTag` | blocks, `spans.md#asides-th` |
+| `tone` | blocks, `spans.md#asides-th` |
+
+An aside is self-contained: it inherits nothing from the outer sentence, and nothing in it reaches out. Its readings sit at `/a<at>` under the reading that holds it (a cite's at `/q<at>`). Only backward references pass in (the `aside` column of the [discourse slots](#discourse-slots), and pronouns).
 
 ## Reader rules
 

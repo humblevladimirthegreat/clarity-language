@@ -10,7 +10,7 @@ Sections named by data:
 - #exact-paraphrase-proper: 2 construction homes
 - #loans: 1 construction home, 1 interpreter row, 1 interpreter class
 - #y-spans: 1 rejection
-- #asides-th: 1 construction home, 1 interpreter row, 1 interpreter class
+- #asides-th: 1 construction home, 1 interpreter row, 1 interpreter class, 7 boundary cells, 6 discourse slot cells
 - #pos: 1 rejection
 Inbound links: npm run page-refs -- spans.md
 -->
@@ -107,7 +107,23 @@ To add a side comment in parentheses, write a role letter, then **`(`** … **`)
 | `w(…)` | the next `/ɡ/`, `/h/`, or `/th/` word | right before that word, like [*very*](clause.md#adjective-detail-w) |
 | `h(…)` | the action | anywhere an [adverb](clause.md#adverbs-h) may sit |
 
-The inside is ordinary Ageben: a fragment, or a clause with the same speech act as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no role of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
+The inside is ordinary Ageben: a fragment or a clause. An aside is self-contained. A pronoun or other pointer in it may point back to the outer sentence or the sentences before it, but nothing else comes in from outside, and nothing in the aside reaches out. Drop the aside and the sentence means the same.
+
+An aside takes its own act word, which may differ from the outer sentence's. With no act word, it is a statement. A question in an aside is one you wonder aloud: nobody answers it, and a reply answers the outer sentence.
+
+> `zazozon vowurol th(yel zalazun vezuvel).`
+>
+> z-Azozon | v-walk | th-ASIDE[y-question | z-Alazun | v-sleep]
+>
+> "Azozon walks (is Alazun asleep?)."
+
+> `yel zazozon vowurol th(zalazun vezuvel).`
+>
+> y-question | z-Azozon | v-walk | th-ASIDE[z-Alazun | v-sleep]
+>
+> "Does Azozon walk (Alazun is asleep)?"
+
+An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no role of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
 
 > `zazozon vowurol th(hugowul).`
 >

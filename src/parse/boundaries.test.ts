@@ -70,13 +70,6 @@ describe("boundary table", () => {
       "quote outerFrames: unstated (today: blocks)",
       "quote holder: unstated (today: blocks)",
       "quote binder: unstated (today: blocks)",
-      "aside outerFrames: unstated (today: blocks)",
-      "aside holder: unstated (today: blocks)",
-      "aside carryStart: unstated (today: blocks)",
-      "aside carried: unstated (today: blocks)",
-      "aside binder: unstated (today: blocks)",
-      "aside boundTag: unstated (today: blocks)",
-      "aside tone: unstated (today: blocks)",
     ]);
   });
 });

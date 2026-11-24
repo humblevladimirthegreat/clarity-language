@@ -48,6 +48,7 @@ const BOUND = "universals-domains.md#bound-tags";
 const ISLANDS = "scope-islands.md#scope-islands";
 const TONE = "tone-marks.md#showing-your-tone";
 const QUOTE_TOPICS = "quote-contents.md#topic-quotes";
+const ASIDES = "spans.md#asides-th";
 
 const passes = (via: BoundaryVia, anchor: string): BoundaryCell => ({ verdict: "passes", via, anchor });
 const blocks = (anchor: string): BoundaryCell => ({ verdict: "blocks", anchor });
@@ -146,14 +147,14 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
     kind: "aside",
     what: "an aside (`(…)`)",
     cells: {
-      outerFrames: unstated("blocks"),
-      holder: unstated("blocks"),
-      carryStart: unstated("blocks"),
+      outerFrames: blocks(ASIDES),
+      holder: blocks(ASIDES),
+      carryStart: blocks(ASIDES),
       carryEnd: blocks(CARRY),
-      carried: unstated("blocks"),
-      binder: unstated("blocks"),
-      boundTag: unstated("blocks"),
-      tone: unstated("blocks"),
+      carried: blocks(ASIDES),
+      binder: blocks(ASIDES),
+      boundTag: blocks(ASIDES),
+      tone: blocks(ASIDES),
     },
   },
 ];

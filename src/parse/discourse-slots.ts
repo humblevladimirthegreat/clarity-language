@@ -1,6 +1,7 @@
 /**
  * The discourse slots (interpreter.md#discourse-slots): each piece of state that crosses a period, with what sets it,
- * what reads it, what ends it, whether each speaker keeps their own, and whether it reaches into a quote. Each cell
+ * what reads it, what ends it, whether each speaker keeps their own, and whether it reaches into a quote or an aside.
+ * Nothing inside an aside sets a slot (spans.md#asides-th). Each cell
  * cites the section that states it; a cell no page states is `unstated` and keeps what the code does today, which it
  * names, as in the boundary table (interpreter.md#boundaries).
  *
@@ -26,6 +27,9 @@ export type KeptCell = { verdict: "speaker" | "shared"; anchor: string } | { ver
 /** Whether the value from outside a quote reaches a reading inside it. */
 export type QuoteCell = { verdict: "passes" | "blocks"; anchor: string } | { verdict: "unstated"; anchor: ""; today: "passes" | "blocks" };
 
+/** Whether the value from outside an aside reaches a reading inside it. A stated cell the code does not follow yet says so. */
+export type AsideCell = { verdict: "passes"; anchor: string; today?: "blocks" } | { verdict: "blocks"; anchor: string; today?: never };
+
 export type SlotRow = {
   id: SlotId;
   what: string;
@@ -35,6 +39,7 @@ export type SlotRow = {
   endedBy: Record<EndEvent, EndCell>;
   kept: KeptCell;
   quote: QuoteCell;
+  aside: AsideCell;
   /** The sections that state the slot. */
   anchors: readonly string[];
 };
@@ -55,6 +60,12 @@ const TOPIC_QUOTE = "topic.md#topic-dependents";
 const BACK = "stand-in-vowels.md#stand-in-back";
 const RESUME = "in-clause-hooks.md#hook-resume";
 const LINKERS = "sentence-linkers.md#sentence-linkers";
+const ASIDES = "spans.md#asides-th";
+const ASIDE_TOPIC = "quote-contents.md#topic-quotes";
+
+/** Stated as passing into an aside; the aside's words are parsed on their own, so nothing reaches them yet. */
+const asidePassesNotToday = (anchor: string): AsideCell => ({ verdict: "passes", anchor, today: "blocks" });
+const asideBlocks: AsideCell = { verdict: "blocks", anchor: ASIDES };
 
 const ends = (anchor: string): EndCell => ({ verdict: "ends", anchor });
 const keeps = (anchor: string): EndCell => ({ verdict: "keeps", anchor });
@@ -85,6 +96,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     },
     kept: { verdict: "speaker", anchor: CARRY },
     quote: { verdict: "blocks", anchor: CARRY },
+    aside: asideBlocks,
     anchors: [CARRY, "holder.md#naming-a-holder", NOTIONAL, "dated-channel.md#counting-from-now"],
   },
   {
@@ -95,6 +107,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     endedBy: { newValue: ends(TOPIC), statementWord: keeps(TOPIC), byTheWay: ends(TOPIC), goodbye: ends(TOPIC) },
     kept: { verdict: "shared", anchor: TOPIC },
     quote: { verdict: "blocks", anchor: TOPIC_QUOTE },
+    aside: asidePassesNotToday(ASIDE_TOPIC),
     anchors: [TOPIC, "topic.md#topic-pronoun"],
   },
   {
@@ -105,6 +118,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     endedBy: { newValue: ends(BACK), statementWord: unstatedEnd("keeps"), byTheWay: unstatedEnd("keeps"), goodbye: unstatedEnd("keeps") },
     kept: unstatedKept("shared"),
     quote: unstatedQuote("passes"),
+    aside: asidePassesNotToday(ASIDES),
     anchors: [BACK],
   },
   {
@@ -120,6 +134,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     },
     kept: unstatedKept("shared"),
     quote: unstatedQuote("passes"),
+    aside: asidePassesNotToday(ASIDES),
     anchors: [RESUME],
   },
   {
@@ -135,6 +150,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     },
     kept: unstatedKept("shared"),
     quote: unstatedQuote("blocks"),
+    aside: asideBlocks,
     anchors: [NOTIONAL],
   },
   {
@@ -148,6 +164,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     endedBy: { ...ONE_SENTENCE, newValue: ends(LINKERS) },
     kept: unstatedKept("shared"),
     quote: unstatedQuote("blocks"),
+    aside: asideBlocks,
     anchors: [LINKERS, "hooks.md#discourse-hooks", "questions.md#polar-particle"],
   },
   {
@@ -158,6 +175,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     endedBy: ONE_SENTENCE,
     kept: unstatedKept("shared"),
     quote: unstatedQuote("blocks"),
+    aside: asideBlocks,
     anchors: ["questions.md#fill-ask"],
   },
 ];
@@ -186,18 +204,20 @@ export function perSpeaker(id: SlotId): boolean {
   return (cell.verdict === "unstated" ? cell.today : cell.verdict) === "speaker";
 }
 
-/** A cell's label: its verdict, or `unstated (today: …)`. */
-export function slotCellLabel(cell: EndCell | KeptCell | QuoteCell): string {
+/** A cell's label: its verdict, `unstated (today: …)`, or `passes (today: blocks)`. */
+export function slotCellLabel(cell: EndCell | KeptCell | QuoteCell | AsideCell): string {
   if (cell.verdict === "unstated") return `unstated (today: ${cell.today})`;
+  if ("today" in cell && cell.today) return `${cell.verdict} (today: ${cell.today})`;
   return "everyone" in cell && cell.everyone ? `${cell.verdict} (every speaker's)` : cell.verdict;
 }
 
 /** Every cell with its row and column, in table order. */
-export function slotCells(): { id: SlotId; column: EndEvent | "kept" | "quote"; cell: EndCell | KeptCell | QuoteCell }[] {
+export function slotCells(): { id: SlotId; column: EndEvent | "kept" | "quote" | "aside"; cell: EndCell | KeptCell | QuoteCell | AsideCell }[] {
   return DISCOURSE_SLOTS.flatMap((row) => [
     ...(Object.keys(END_EVENTS) as EndEvent[]).map((column) => ({ id: row.id, column, cell: row.endedBy[column] })),
     { id: row.id, column: "kept" as const, cell: row.kept },
     { id: row.id, column: "quote" as const, cell: row.quote },
+    { id: row.id, column: "aside" as const, cell: row.aside },
   ]);
 }
 

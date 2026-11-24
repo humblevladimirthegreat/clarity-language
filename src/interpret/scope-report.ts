@@ -11,9 +11,9 @@ import type { Frame, Reading, StanceList } from "./types.js";
 
 /** One reading, as plain strings so a record compares and diffs as text. */
 export type ReadingRecord = {
-  /** Where the reading sits: `s<offset>` from the example's first sentence, plus its clause path (`/m0`, `/d`, `/i3`, `/q2.0`). */
+  /** Where the reading sits: `s<offset>` from the example's first sentence, plus its clause path (`/m0`, `/d`, `/i3`, `/q2:0.0`, `/a2:0.0`). */
   at: string;
-  /** The kind of nested reading, from the last path step: `member`, `dependent`, `island`, `quote`. Absent at top level. */
+  /** The kind of nested reading, from the last path step: `member`, `dependent`, `island`, `quote`, `aside`. Absent at top level. */
   nested?: string;
   /** Each frame's family, `family/member` where the resolve stage tags a member, in text order. */
   families: string[];
@@ -36,7 +36,7 @@ export type ScopeReport = Record<string, ExampleRecord>;
 export type ReportExample = { file: string; text: string; allReadings: Reading[] };
 
 const ID = /:(\d+)\.(\d+)((?:\/.*)?)$/;
-const NESTED: Record<string, string> = { m: "member", d: "dependent", i: "island", q: "quote" };
+const NESTED: Record<string, string> = { m: "member", d: "dependent", i: "island", q: "quote", a: "aside" };
 
 const family = (f: Frame): string => (f.member ? `${f.family}/${f.member}` : f.family);
 const stanceMember = (m: Frame | StanceList): string => ("family" in m ? family(m) : "list");
@@ -105,8 +105,8 @@ const side = (family: string): PairSide => {
 const pairRules = (r: ReadingRecord): string[] =>
   r.families.flatMap((a, i) => r.families.slice(i + 1).map((b) => explainPair(side(a), side(b)))).filter((rule) => rule !== "never");
 
-/** The boundary row of a nested reading the record's path names (a cite or an aside: `quote`). */
-const ROW_OF_NESTED: Readonly<Record<string, NestedKind>> = { member: "member", island: "island", quote: "quote" };
+/** The boundary row of a nested reading the record's path names. */
+const ROW_OF_NESTED: Readonly<Record<string, NestedKind>> = { member: "member", island: "island", quote: "quote", aside: "aside" };
 
 /** The boundary row of the reading a link names: a dependent, by how it is named, and the `blarl` grounds. */
 const ROW_OF_LINK: Readonly<Record<string, NestedKind>> = {

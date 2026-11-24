@@ -318,7 +318,7 @@ function nestFrame(key: string, word: LexWord, outer: Frame, here: Here): Frame 
 /**
  * The boundary kinds a nested reading sits behind, outermost first (interpreter.md#boundaries), from its id's path under
  * its sentence: `m` a clause-join member, `d` a dependent (in a slot when its parent's `slot:dependent` link names it),
- * `i` / `v` an island, `q` a cite, or an aside when its parent holds it in an aside detail. `byId` holds every reading.
+ * `i` / `v` an island, `q` a cite, `a` an aside. `byId` holds every reading.
  */
 export function nestedKinds(reading: Reading, byId: ReadonlyMap<ReadingId, Reading>): NestedKind[] {
   const steps = reading.id.split("/");
@@ -330,7 +330,8 @@ export function nestedKinds(reading: Reading, byId: ReadonlyMap<ReadingId, Readi
     if (step.startsWith("m")) kinds.push("member");
     else if (step.startsWith("i") || step.startsWith("v")) kinds.push("island");
     else if (step === "d") kinds.push(parent?.links.some((l) => l.key === "slot:dependent" && l.to === id) ? "slotDependent" : "standInDependent");
-    else if (step.startsWith("q")) kinds.push(parent?.claim.details.some((d) => d.kind === "aside" && d.content?.some((r) => r.id === id)) ? "aside" : "quote");
+    else if (step.startsWith("q")) kinds.push("quote");
+    else if (step.startsWith("a")) kinds.push("aside");
   }
   return kinds;
 }
