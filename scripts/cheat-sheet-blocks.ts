@@ -19,7 +19,8 @@
 // - `closed-words` — closed-root words with a fixed reading (special pronouns,
 //   sentence linkers), read from data/closed-words.csv (kinds `pronoun` and `linker`).
 // - `scope-profiles` — which word covers which: text order and the rules of their
-//   own, from the family profiles (src/parse/scope-profiles.ts).
+//   own, from the family profiles (src/parse/scope-profiles.ts). Takes `skip=` /
+//   `take=` like `overlays`.
 // - `boundaries` — what reaches into each box, from the boundary table
 //   (src/parse/boundaries.ts); each cell links to the section that states it.
 // - `discourse-slots` — what carries past a period and what ends it, from the
@@ -105,19 +106,24 @@ function table(header: string[], rows: string[][]): string {
 
 const overlays = () => parseOverlayCsv(readData("lexicon-overlays.csv"));
 
-function overlayRows(params: Params): string {
-  const pos = params.pos;
-  const kind = params.kind;
+/** The rows `skip=` / `take=` keep, so a too-tall table can split across `<PageBreak />`. */
+function sliceRows<T>(rows: T[], params: Params): T[] {
   const skip = Number((params.skip ?? ["0"])[0]);
   const takeRaw = params.take?.[0];
   const take = takeRaw == null ? undefined : Number(takeRaw);
   if (!Number.isInteger(skip) || skip < 0) throw new Error(`skip= needs a non-negative integer`);
   if (take != null && (!Number.isInteger(take) || take < 0)) throw new Error(`take= needs a non-negative integer`);
-  const rows = overlays()
+  return rows.slice(skip, take == null ? undefined : skip + take);
+}
+
+function overlayRows(params: Params): string {
+  const pos = params.pos;
+  const kind = params.kind;
+  const sorted = overlays()
     .filter((o) => (!pos || pos.includes(o.pos)) && (kind ? kind.includes(o.kind) : o.kind !== "sake"))
     .map((o) => ({ form: overlaySpelling(o), o }))
-    .sort((a, b) => a.form.localeCompare(b.form))
-    .slice(skip, take == null ? undefined : skip + take);
+    .sort((a, b) => a.form.localeCompare(b.form));
+  const rows = sliceRows(sorted, params);
   return table(
     ["Ageben", "English", "Taught in", "Stage"],
     rows.map(({ form, o }) => {
@@ -248,7 +254,7 @@ function familyRules(p: FamilyProfile): RuleRow[] {
   return [...rows, ...(p.members ?? []).flatMap(memberRules)];
 }
 
-function profileRows(): string {
+function profileRows(params: Params): string {
   const textOrder = PROFILES.filter((p) => p.order === "text").map((p) => familyName(p.family));
   const rows: RuleRow[] = [
     { word: cap(textOrder.join("; ")), rule: "The earlier covers the later", anchors: [TEXT_ORDER] },
@@ -256,7 +262,7 @@ function profileRows(): string {
   ];
   return table(
     ["Word", "Rule", "Taught in", "Stage"],
-    rows.map((r) => [r.word, r.rule, r.anchors.map((a) => sectionCell(a).link).join(", "), latestStage(r.anchors)]),
+    sliceRows(rows, params).map((r) => [r.word, r.rule, r.anchors.map((a) => sectionCell(a).link).join(", "), latestStage(r.anchors)]),
   );
 }
 

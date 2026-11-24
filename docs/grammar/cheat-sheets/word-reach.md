@@ -19,7 +19,7 @@ A quick look at [how far a word reaches](/word-reach). Nothing here is new: each
 
 When two words both reach the whole clause, the earlier one covers the later one ([earlier covers later](/word-reach#earlier-covers-later)). The first row lists the words that follow text order. The rows after it are rules of their own: check them first, and fall back on text order only when neither word has one.
 
-<!-- generated: scope-profiles -->
+<!-- generated: scope-profiles take=8 -->
 | Word | Rule | Taught in | Stage |
 |------|------|-----------|-------|
 | The act word; a stance word; a *because* or *if* hinge; *not*; MIRATIVE; your attitude; a sake word on the clause; *contrary to* with its stance; a say word; a want, plan, decision, or try; *can*; *already*, *still*, or *yet*; RESIDUE or FORMER; NOTIONAL; a restrictor; an *every* phrase or a newly mentioned noun | The earlier covers the later | [Which word covers which](/clause#which-covers-which) | B |
@@ -30,6 +30,15 @@ When two words both reach the whole clause, the earlier one covers the later one
 | A channel | Covers a *because* or *if* hinge, wherever it sits | [Evidence clause (blarl)](/evidentiality#evidence-clause), [How things work, and definitions](/usually-vs-must#how-things-work) | A |
 | MIRATIVE | A remark: stays yours and outside what is asked | [It turns out (themem)](/mirative#mirative) | I |
 | Your attitude | A remark: stays yours and outside what is asked | [Hopefully and other attitudes](/feelings#speaker-attitude) | I |
+<!-- /generated -->
+
+<PageBreak />
+
+## Which word covers which {#covers-2}
+
+<!-- generated: scope-profiles skip=8 -->
+| Word | Rule | Taught in | Stage |
+|------|------|-----------|-------|
 | Your attitude | Stays yours under a holder | [What belongs to the holder](/holder#what-the-holder-covers) | I |
 | Your attitude | Stays yours, outside a carried frame | [Carrying a channel forward](/evidentiality#carry-forward) | I |
 | A sake word on the clause | A remark: stays yours and outside what is asked | [Whose stake](/for-a-sake#whose-stake) | I |
@@ -60,6 +69,8 @@ A box keeps words apart from the sentence around it: a clause in a join, a depen
 | A quote | [no](/quote-contents#quote-acts) | [no](/quote-contents#quote-acts) | [no](/evidentiality#carry-forward) | [no](/evidentiality#carry-forward) | [no](/evidentiality#carry-forward) | [no](/quote-contents#quote-acts) | [no](/quote-contents#topic-quotes) | [no](/tone-marks#showing-your-tone) | I |
 | An aside | [no](/spans#asides-th) | [no](/spans#asides-th) | [no](/spans#asides-th) | [no](/evidentiality#carry-forward) | [no](/spans#asides-th) | [no](/spans#asides-th) | [no](/spans#asides-th) | [no](/spans#asides-th) | I |
 <!-- /generated -->
+
+<PageBreak />
 
 ## What carries past a period {#past-the-period}
 
