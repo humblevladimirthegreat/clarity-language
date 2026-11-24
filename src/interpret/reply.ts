@@ -14,6 +14,7 @@ import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-
 import { morphGlossFor, morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { throughAntecedent } from "./match.js";
+import { thing } from "./read-context.js";
 import type { ParseResult } from "../parse/types.js";
 import type { BlankSite } from "./host.js";
 import type { Term } from "./types.js";
@@ -160,7 +161,9 @@ function placeLeaf(landmark: { leaf: string; english: string }, place: PlaceBlan
  * (`place`) answers with the question's hook and the term as its landmark.
  */
 export function answerLeaf(term: Term, at: string, tables: ClassifyTables, place?: PlaceBlank): { leaf: string; english: string } | undefined {
-  const t = throughAntecedent(term);
+  const end = throughAntecedent(term);
+  // The generic pronoun answers as the name its word is (pronouns.md#generic-pronoun).
+  const t = end.kind === "pronoun" && end.sort === "generic" ? thing(end.word) : end;
   if (t.kind !== "thing" && t.kind !== "speaker" && t.kind !== "listener" && t.kind !== "we") return undefined;
   const word = t.kind === "thing" ? t.head : t.word;
   const leaf = morphGlossFor(word, tables).replace(/^[zdb]-/, `${place ? "b" : at}-`);

@@ -71,7 +71,8 @@ export function questionFilters(question: Reading): Frame[] {
  * and antecedent, and the ending is left out. This holds for the holder frame and for its host stance.
  */
 function filterValues(frame: Frame): Record<string, string> {
-  if (!frame.party && !frame.holderHost) return frame.values;
+  // A say word's party (permission-consent.md#say-words) is who says it, and its ending still counts.
+  if ((!frame.party || frame.key === "wordFamily:say") && !frame.holderHost) return frame.values;
   const { ending: _party, ...rest } = frame.values;
   return rest;
 }

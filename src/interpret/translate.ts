@@ -19,6 +19,7 @@ import type { LexWord } from "../parse/types.js";
 import { turnPersons, type Log, type LogEntry, type TurnPersons } from "./log.js";
 import { match, type TermSite } from "./match.js";
 import { allReadings } from "./read.js";
+import { thing } from "./read-context.js";
 import { asMember, claimMemberLists, collective, compoundHeads, memberList, throughAntecedent, universalInstance, type ListTerm } from "./steps.js";
 import type { Claim, Detail, Frame, Reading, ReadingId, Term } from "./types.js";
 import { compareValues, detailNumber, wordStem, wordValue, type NumberValue } from "./value.js";
@@ -234,6 +235,9 @@ export class Translator {
       case "listener":
         return this.listener(ctx.reading);
       case "pronoun": {
+        // The generic pronoun in a role is written as the name its word is (pronouns.md#generic-pronoun); as a holder it is
+        // `generic` (translate-say.ts).
+        if (t.sort === "generic") return this.term(thing(t.word), place, ctx);
         // R4d-8 (stand-in-vowels.md#stand-in-back): a stand-in pointing back is the linked reading's claim, nested and not
         // claimed again, as the forward stand-in's dependent is written.
         const back = ctx.reading.links.find((l) => l.kind === "standInBack" && l.words.includes(t.word) && l.to);

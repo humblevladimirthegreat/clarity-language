@@ -1199,3 +1199,66 @@ describe("reader: links that point back past a period", () => {
     assert.deepEqual(valuesOf("zalazun veruvol. zazozon vehohel barth.", "lexReading:standInBack"), { series: "a", ending: "rth", gloss: "that-same-claim" });
   });
 });
+
+describe("reader (B4): holder and say-word parties", () => {
+  const holder = (text: string): Frame => frame(readText(text, tables).at(-1)!, "holder");
+  const say = (text: string): Frame => readText(text, tables).at(-1)!.frames.find((f) => f.key === "wordFamily:say")!;
+
+  it("topic.md#topic-pronoun: the topic pronoun is a pronoun of sort `topic`, as a holder and in a role", () => {
+    const party = holder("xazozon theyomalen zalazun vudurul.").party;
+    assert.ok(party?.kind === "pronoun" && party.sort === "topic");
+    const role = readText("xazozon zalen vudurul.", tables)[0]!.claim.roles.z;
+    assert.ok(role?.kind === "pronoun" && role.sort === "topic");
+  });
+
+  it("pronouns.md#generic-pronoun: the generic pronoun holder is a pronoun of sort `generic`", () => {
+    const party = holder("zalazun theyomeyen vudurul.").party;
+    assert.ok(party?.kind === "pronoun" && party.sort === "generic" && !party.bind);
+  });
+
+  it("pronouns.md#generic-pronoun: the generic pronoun in a role is a pronoun of sort `generic`, and a `-r` holder resuming it keeps it", () => {
+    const role = readText("zeyen vudurul.", tables)[0]!.claim.roles.z;
+    assert.ok(role?.kind === "pronoun" && role.sort === "generic" && !role.antecedent);
+    const party = holder("zeyen vudurul. zalazun theyomeyer vudurul.").party;
+    assert.ok(party?.kind === "pronoun" && party.antecedent?.kind === "pronoun" && party.antecedent.sort === "generic");
+  });
+
+  it("holder.md#naming-a-holder: a `-r` holder resuming the group `zayanx` is the turn's *we* as a group; resuming `zayan`, the *we* term", () => {
+    const group = holder("zayanx vudurul. zalazun theyomayar vudurul.").party;
+    assert.ok(group?.kind === "we" && group.word.plural);
+    const we = holder("zayan vudurul. zalazun theyomayar vudurul.").party;
+    assert.ok(we?.kind === "pronoun" && we.antecedent?.kind === "we");
+  });
+
+  it("holder.md#naming-a-holder: the handshake named is the turn's *we*; the headphones on another ending have no party", () => {
+    assert.equal(holder("zalazun theyomayan vudurul.").party?.kind, "we");
+    const group = holder("zalazun theyomayanx vudurul.").party;
+    assert.ok(group?.kind === "we" && group.word.plural);
+    assert.equal(holder("zalazun theyomawal vudurul.").party, undefined);
+  });
+
+  it("holder.md#naming-a-holder: a `-r` holder with no antecedent is the name it spells, its anaphor link kept", () => {
+    const reading = readText("zalazun theyomazozor vudurul.", tables)[0]!;
+    const party = frame(reading, "holder").party;
+    assert.ok(party?.kind === "thing" && party.named && party.root === "azozo");
+    assert.ok(reading.links.some((l) => l.kind === "anaphor"));
+    const bound = holder("zazozon vudurul. zalazun theyomazozor vudurul.").party;
+    assert.ok(bound?.kind === "pronoun" && bound.antecedent?.kind === "thing" && bound.antecedent.root === "azozo");
+  });
+
+  it("permission-consent.md#say-words: on `v` the party is the hosted `bl-` word, else the speaker on `-m`; `-l` and `-r` give a source", () => {
+    const hosted = say("zazozon vowurol hwuvam blalazun.");
+    assert.ok(hosted.party?.kind === "thing" && hosted.party.root === "alazu" && !hosted.hosted);
+    assert.equal(say("zazozon vowurol hwuvam.").party?.kind, "speaker");
+    const rules = say("zahelan vehohel hwuval.");
+    assert.ok(!rules.party && rules.values.source === "rules");
+    const unsaid = say("zalazun vezuvel hwuvor.");
+    assert.ok(!unsaid.party && unsaid.values.source === "unsaid");
+  });
+
+  it("permission-consent.md#say-words: off `v` the say word has no party, and its hosted `bl-` word stays whom it is said to", () => {
+    const off = say("zuwen vowurol hwezal blahelan.");
+    assert.ok(!off.party && !off.values.source && off.hosted?.kind === "thing");
+    assert.ok(!say("zazozon vezuyol bahelan hwubam.").party);
+  });
+});

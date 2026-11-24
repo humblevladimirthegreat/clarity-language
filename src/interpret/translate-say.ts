@@ -1,6 +1,5 @@
 /** Translator say words and holders (docs/meta/solver.md): the wrap a say word, a holder or a zone puts on a claim, as functions taking the translator. */
-import { CLOSED, namedEnglish } from "../closed-roots.js";
-import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
+import { namedEnglish } from "../closed-roots.js";
 import { throughAntecedent } from "./steps.js";
 import type { Frame, Reading, Term } from "./types.js";
 import { wrapText, type Ctx, type Frames, type Why, type Wrap } from "./translate-types.js";
@@ -138,7 +137,8 @@ export function sayWrap(tr: Translator, reading: Reading, say: Frame, ctx: Ctx):
   const hosted = say.hosted ? tr.term(say.hosted, "bl", { ...ctx, asserted: false }) : undefined;
   let who: string | undefined;
   let to: string | undefined;
-  if (v.part === "v") who = hosted ?? (v.ending === "m" ? tr.speaker(reading) : v.ending === "l" ? "rules" : v.ending === "r" ? "unsaid" : undefined);
+  // On `v` the reader gives who says it: the party (a hosted `bl-` word, or the speaker), else `source`.
+  if (v.part === "v") who = say.party ? tr.term(say.party, "bl", { ...ctx, asserted: false }) : say.values.source;
   else if (v.part === "z" || v.part === "d" || v.part === "b") {
     const filler = reading.claim.roles[v.part];
     const fence = reading.frames.find((f) => f.key === "joinSeries:ua" || f.key === "joinSeries:u:kind")?.hosted;
@@ -192,38 +192,39 @@ export function zoneOf(tr: Translator, reading: Reading, frame: Frame, ctx: Ctx)
  * Undefined for a holder with no row: a topic pronoun with no topic, and the speaker.
  */
 export function holderOf(tr: Translator, frame: Frame, ctx: Ctx): string | undefined {
-  if (!frame.party) return undefined;
-  tr.resume(frame.party, ctx);
-  const through = throughAntecedent(frame.party);
-  const own = frame.party.kind === "pronoun" && through.kind === "pronoun" ? frame.party.word : undefined;
-  const party: Term = own && own.ending === "r" && own.family.kind === "x" ? { kind: "thing", head: own, root: own.family.rightRoots!.join(""), named: true, details: [] } : through;
-  if (party.kind === "listener") {
-    const text = tr.term(party, "h", ctx);
+  const party = frame.party;
+  if (!party) return undefined;
+  tr.resume(party, ctx);
+  // A `-r` holder with no antecedent is the name it spells; it still uses the anaphor link the resolver gave its word.
+  if (party.kind !== "pronoun") for (const l of ctx.reading.links) if (l.kind === "anaphor" && frame.words.some((w) => l.words.includes(w))) tr.use(l);
+  const through = throughAntecedent(party);
+  if (through.kind === "listener") {
+    const text = tr.term(through, "h", ctx);
     tr.holders.set(text, "your");
     return text;
   }
-  if (party.kind !== "thing") return undefined;
-  const known = tr.consts.get(party);
-  if (known) {
-    tr.holders.set(known, "someone's");
-    return known;
-  }
-  const word = party.head;
-  if (isTopicPronoun(word) || party.root === CLOSED.microphone || party.root === CLOSED.headphones) return undefined;
   let text: string;
   let english: string;
-  if (isGenericPronoun(word)) [text, english] = ["generic", "the generic"];
-  else if (party.root === CLOSED.handshake && party.named) [text, english] = [tr.we(ctx.reading), "our"];
-  else if (party.named) [text, english] = [name(party.root), `${namedEnglish(party.root)}'s`];
+  let plural: boolean | undefined;
+  if (through.kind === "we") [text, english, plural] = [tr.term(through, "h", ctx), "our", through.word.plural];
+  else if (through.kind === "pronoun" && through.sort === "generic") [text, english, plural] = ["generic", "the generic", through.word.plural];
+  else if (through.kind !== "thing") return undefined;
   else {
-    text = `nm(${ctx.id},h)`;
-    english = word.plural ? "some people's" : "someone's";
-    tr.kinds.set(name(party.root), party);
-    tr.witness(ctx, `isa(${text},${name(party.root)})`);
-    tr.holders.set(text, english);
-    return text;
+    const known = tr.consts.get(through);
+    if (known) {
+      tr.holders.set(known, "someone's");
+      return known;
+    }
+    if (!through.named) {
+      text = `nm(${ctx.id},h)`;
+      tr.kinds.set(name(through.root), through);
+      tr.witness(ctx, `isa(${text},${name(through.root)})`);
+      tr.holders.set(text, through.head.plural ? "some people's" : "someone's");
+      return text;
+    }
+    [text, english, plural] = [name(through.root), `${namedEnglish(through.root)}'s`, through.head.plural];
   }
-  if (word.plural) [text, english] = [`grp(${text})`, english.replace(/'s$/, " and co.'s")];
+  if (plural) [text, english] = [`grp(${text})`, english.replace(/'s$/, " and co.'s")];
   tr.holders.set(text, english);
   return text;
 }

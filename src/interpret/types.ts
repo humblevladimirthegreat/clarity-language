@@ -80,7 +80,7 @@ export type Frame = {
   /** The owning grammar section. */
   anchor: string;
   words: LexWord[];
-  /** The word's own typed fields, copied (a say word: reach, part, answer, ending; a question: ask). */
+  /** The word's own typed fields, copied (a say word: reach, part, answer, ending, and on `v` with no party its `source`; a question: ask). */
   values: Record<string, string>;
   /** Whose it is: a holder, the one with the say, the addressee. */
   party?: Term;
@@ -131,7 +131,16 @@ export type Detail = {
 export type Term =
   | { kind: "thing"; head: LexWord; root: string; named: boolean; details: Detail[]; frames?: Frame[] }
   | { kind: "speaker" | "listener" | "we"; word: LexWord; details?: Detail[]; frames?: Frame[] }
-  | { kind: "pronoun"; word: LexWord; bind?: AnaphorBind; antecedent?: Term; details?: Detail[]; frames?: Frame[] }
+  | {
+      kind: "pronoun";
+      word: LexWord;
+      /** The topic or the generic pronoun, as the resolve stage tells them apart (topic.md#topic-pronoun, pronouns.md#generic-pronoun). */
+      sort?: "generic" | "topic";
+      bind?: AnaphorBind;
+      antecedent?: Term;
+      details?: Detail[];
+      frames?: Frame[];
+    }
   | { kind: "blank"; word: LexWord; details?: Detail[]; frames?: Frame[] }
   | { kind: "literal"; word: LexWord; payload: string; details?: Detail[]; frames?: Frame[] }
   | { kind: "number"; word: LexWord; stem: NumberStem; details?: Detail[]; frames?: Frame[] }

@@ -81,6 +81,7 @@ function unreadable(term: Term): string | undefined {
       const word = term.word;
       if (isPointer(word)) return pointerRole(word) ? undefined : `this role pointer (${word.raw})`;
       const to = throughAntecedent(term);
+      if (to.kind === "pronoun" && to.sort === "generic" && to.word.plural) return `a group (${to.word.raw})`;
       if (to.kind === "speaker" || to.kind === "listener" || to.kind === "we") return undefined;
       return (to.kind === "thing" ? to.root : contentRoot(word)) ? undefined : `this pronoun (${word.raw})`;
     }
@@ -165,7 +166,9 @@ function resolveTerm(term: Term, reach: Reach): Resolution {
       if (to.kind === "listener") return listener(word);
       if (to.kind === "we") return resolveTerm(to, reach);
       const root = to.kind === "thing" ? to.root : contentRoot(word)!;
-      return byRoot(reach, root, to.kind === "thing" && to.named, adjsOf(to), word.ending === "l");
+      // The generic pronoun is looked for as a name, as it was in a role before it was a pronoun of its sort.
+      const named = to.kind === "thing" ? to.named : to.kind === "pronoun" && to.sort === "generic";
+      return byRoot(reach, root, named, adjsOf(to), word.ending === "l");
     }
     default:
       return { ok: false, reason: "none" };

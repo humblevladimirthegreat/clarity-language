@@ -258,8 +258,9 @@ function structural(query: Term, target: Term, state: State, at: string): boolea
       return q === undefined || t === undefined || q === t;
     }
     case "pronoun":
-      // An unbound pronoun has no antecedent to match through.
-      return false;
+      // The generic pronoun fits the generic pronoun (pronouns.md#generic-pronoun); another unbound pronoun has no
+      // antecedent to match through.
+      return query.sort === "generic" && target.kind === "pronoun" && target.sort === "generic";
     case "literal":
       return samePayload(query, target);
     case "number": {

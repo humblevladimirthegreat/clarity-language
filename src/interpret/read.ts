@@ -11,6 +11,7 @@ import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
+import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
 import type {
   BodyCarry,
   CarryKind,
@@ -32,6 +33,7 @@ import type {
 } from "../parse/types.js";
 import { classOf } from "./classes.js";
 import { constructionFor, copyScope, detailOf, frameOf, framedMember, holderHostValues, hostOnHead, link, memberFrame, nextSentence, placeFrame, previousSentence, thing, unread, wordKey, wordValues, type Ctx, type Here, type ReadOptions } from "./read-context.js";
+import { throughAntecedent } from "./steps.js";
 import { placeTones } from "./tones.js";
 import type { Detail, Frame, Link, Reading, ReadingId, StanceList, Term } from "./types.js";
 
@@ -42,14 +44,16 @@ import type { Detail, Frame, Link, Reading, ReadingId, StanceList, Term } from "
 /**
  * A pronoun term. Its antecedent is the word the resolver's bind names: the term already read from that word, whatever
  * its kind (a pronoun holds its own antecedent, so a chain goes on; a join word names its list), else a term of that
- * word. Never bound here (reader rule 6).
+ * word. Never bound here (reader rule 6). The topic and the generic pronoun carry their `sort`, as the resolve stage tells
+ * them apart (topic.md#topic-pronoun, pronouns.md#generic-pronoun).
  */
 function pronoun(word: LexWord, here: Here): Term {
   const bind = here.ctx.anaphors.get(word);
   if (bind) here.reading.links.push(link("anaphor", `anaphor:${bind.kind}`, [word], { bind }));
   const at = bind?.antecedent;
   const antecedent = at ? (here.ctx.terms.get(at) ?? here.ctx.lists.get(at) ?? thing(at)) : undefined;
-  const term: Term = { kind: "pronoun", word, ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}) };
+  const sort = isTopicPronoun(word) ? "topic" : isGenericPronoun(word) ? "generic" : undefined;
+  const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}) };
   here.ctx.terms.set(word, term);
   return term;
 }
@@ -120,6 +124,8 @@ function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
     // `zayan`, the turn's *we* (R4a-7); `zayanx` stays a group thing.
     if (family.roots[0] === CLOSED.handshake && !word.plural) return { kind: "we", word };
   }
+  // The generic pronoun (`zeyen`, pronouns.md#generic-pronoun) is a pronoun of its sort, as it is as a holder.
+  if (isGenericPronoun(word)) return pronoun(word, here);
   switch (word.reading) {
     case "standIn": {
       const dependent = clause.dependent ? readDependent(clause, here) : undefined;
@@ -582,6 +588,7 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
       const party = holderParty(word, here);
       if (party) frame.party = party;
     }
+    sayParty(frame, word);
     return;
   }
   if (row.cls === "link") {
@@ -599,17 +606,45 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
 /**
  * Whose view a holder seam word gives (holder.md#naming-a-holder). The word ends the way a noun for that person would:
  * the topic pronoun is whoever the talk is about now, so it carries the topic it is bound to (topic.md#topic-pronoun);
- * the listener is the listener term, as `zawan` is in a role; `-n` is a name, marked named as the same name in a role
- * is; and `-r` is "someone already named", a pronoun with the resolver's antecedent (a name with none bound).
+ * the generic pronoun is a pronoun of its sort (pronouns.md#generic-pronoun); the microphone is the speaker term, the
+ * headphones on `-n` the listener term, as `zuwen` and `zawan` are in a role, and the handshake named the turn's *we*;
+ * `-n` is a name, marked named as the same name in a role is; and `-r` is "someone already named", a pronoun with the
+ * resolver's antecedent, or, with none at the end of its chain, the name it spells.
  */
 function holderParty(word: LexWord, here: Here): Term | undefined {
   const family = word.family;
   if (family.kind !== "x" || !family.rightRoots?.length) return undefined;
   const bind = here.ctx.anaphors.get(word)?.kind;
-  if (bind === "topic" || (word.ending === "r" && bind === "content")) return pronoun(word, here);
-  if (word.ending === "n" && family.rightRoots.length === 1 && family.rightRoots[0] === CLOSED.headphones) return { kind: "listener", word };
+  if (bind === "topic" || isGenericPronoun(word)) return pronoun(word, here);
+  // A `-r` whose bind reaches no antecedent is the name it spells; its anaphor link stays the resolver's. One that
+  // resumes the group `zayanx` (a group thing in a role) is the turn's *we* as a group, as the named handshake is.
+  if (word.ending === "r" && bind === "content") {
+    const term = pronoun(word, here);
+    const end = throughAntecedent(term);
+    if (end.kind === "thing" && end.named && end.root === CLOSED.handshake) return { kind: "we", word: end.head };
+    if (end.kind !== "pronoun" || end.sort === "generic") return term;
+  }
+  const root = family.rightRoots.length === 1 ? family.rightRoots[0] : undefined;
+  if (root === CLOSED.microphone) return { kind: "speaker", word };
+  if (root === CLOSED.headphones) return word.ending === "n" ? { kind: "listener", word } : undefined;
   const named = word.ending === "n" || word.ending === "ln" || word.ending === "r";
+  if (root === CLOSED.handshake && named) return { kind: "we", word };
   return { kind: "thing", head: word, root: family.rightRoots.join(""), named, details: [] };
+}
+
+/**
+ * Who says a say word on `v` (permission-consent.md#say-words): its hosted `bl-` word, else by its ending the speaker
+ * (`-m`), or `values.source`: the rules (`-l`) or no one yet (`-r`). On `z` `d` `b` the hosted word is whom it
+ * is said to, and stays `hosted`.
+ */
+function sayParty(frame: Frame, word: LexWord): void {
+  if (frame.key !== "wordFamily:say" || frame.values.part !== "v") return;
+  if (frame.hosted) {
+    frame.party = frame.hosted;
+    delete frame.hosted;
+  } else if (word.ending === "m") frame.party = { kind: "speaker", word };
+  else if (word.ending === "l") frame.values.source = "rules";
+  else if (word.ending === "r") frame.values.source = "unsaid";
 }
 
 /**
@@ -655,7 +690,11 @@ function readHook(unit: Extract<Unit, { kind: "hook" }>, here: Here, clause: Cla
         const zone = unit.zone.word;
         // A holder on the stance names whose plan or view the event goes against (contrary-to.md#contrary-to-holder).
         if (zone.family.kind === "x" && zone.family.xFamily === "holder") inner.push(holderFrame(zone, here));
-        else inner.push(frameOf(wordKey(zone, unit.zone.closes), zone, here));
+        else {
+          const said = frameOf(wordKey(zone, unit.zone.closes), zone, here);
+          sayParty(said, zone);
+          inner.push(said);
+        }
       }
       if (unit.heldIntention) inner.push(frameOf(wordKey(unit.heldIntention), unit.heldIntention, here));
       if (inner.length) frame.inner = inner;

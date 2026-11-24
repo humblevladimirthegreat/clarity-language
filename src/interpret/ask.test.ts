@@ -241,3 +241,19 @@ describe("ask: switches", () => {
     assert.deepEqual(said("yel zalazun vowurol."), []);
   });
 });
+
+describe("ask: say words on `v`", () => {
+  it("permission-consent.md#say-words: a hosted `bl-` party leaves the ending counting (`-m` said, `-l` the rule)", () => {
+    const said = buildLog(turns("z-Azozon | v-walk | [h-episode-event-ALLOW-said | bl-Alazun]", "z-Azozon | v-walk | [h-episode-event-ALLOW-rule | bl-Alazun]"), tables);
+    const at = (gloss: string): number[] => ask(question(gloss), said).map((m) => m.entry?.at ?? -1);
+    assert.deepEqual(at("y-question | z-Azozon | v-walk | [h-episode-event-ALLOW-said | bl-Alazun]"), [0]);
+    assert.deepEqual(at("y-question | z-Azozon | v-walk | [h-episode-event-ALLOW-rule | bl-Alazun]"), [1]);
+  });
+
+  it("permission-consent.md#say-words: the ending still counts when the say word has a party", () => {
+    const said = buildLog(turns("z-Azozon | v-walk | h-episode-event-ALLOW-said", "z-Azozon | v-walk | h-episode-event-ALLOW-rule"), tables);
+    const at = (gloss: string): number[] => ask(question(gloss), said).map((m) => m.entry?.at ?? -1);
+    assert.deepEqual(at("y-question | z-Azozon | v-walk | h-episode-event-ALLOW-said"), [0]);
+    assert.deepEqual(at("y-question | z-Azozon | v-walk | h-episode-event-ALLOW-rule"), [1]);
+  });
+});

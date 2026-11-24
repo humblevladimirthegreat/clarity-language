@@ -27,6 +27,12 @@ describe("match", () => {
     assert.equal(match(claim("z-Azozon | b-Alazun | v-pay"), claim("z-Alazun | b-Azozon | v-pay")), undefined);
   });
 
+  it("pronouns.md#generic-pronoun: the generic pronoun matches the generic pronoun, and no name", () => {
+    const generic = readText("zeyen vudurul.", tables)[0]!.claim;
+    assert.ok(match(generic, readText("zeyen vudurul.", tables)[0]!.claim));
+    assert.equal(match(generic, claim("z-Azozon | v-departure")), undefined);
+  });
+
   it("a role the query leaves out matches anything; the verb matches by root", () => {
     assert.ok(match(claim("z-Azozon | v-pay"), claim("z-Azozon | b-Alazun | v-pay")));
     assert.equal(match(claim("z-Azozon | v-walk"), claim("z-Azozon | v-pay")), undefined);
