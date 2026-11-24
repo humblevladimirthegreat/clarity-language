@@ -353,12 +353,11 @@ function listFrames(joins: (LexWord | undefined)[], here: Here): Frame[] {
 
 /**
  * *No K* (`zul` + kind, universals-domains.md#universals-domains-generics): the fence is a binder, as `zual`'s is, and its
- * denial rides in it as `inner`, not on the list term. A scoped clause has the binder from its scope record; a reading with
- * none (an island, a verb-list item) places it here. `hostOnJoin` hosts the list (interpreter.md `joinSeries:u:kind`).
+ * denial rides in it as `inner`, not on the list term. The reading has the binder from its scope record. `hostOnJoin`
+ * hosts the list (interpreter.md `joinSeries:u:kind`).
  */
 function noKindBinder(join: LexWord, here: Here): void {
-  const scoped = here.reading.frames.find((f) => f.key === "joinSeries:u:kind" && f.words[0] === join);
-  const frame = scoped ?? (here.scoped ? undefined : placeFrame("joinSeries:u:kind", join, "clause", here));
+  const frame = here.reading.frames.find((f) => f.key === "joinSeries:u:kind" && f.words[0] === join);
   if (frame) frame.inner = [frameOf("joinSeries:u", join, here)];
 }
 
@@ -433,7 +432,7 @@ function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
   const parts = coord.parts.map((part) => {
     const members = part.items.map((item): Term => {
       if (item.kind === "package") return itemTerm(item.package, here, clause);
-      if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island.units, here) };
+      if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island, here) };
       return barTerm(item.bar, here, clause);
     });
     if (part.tag) here.reading.links.push(link("tag", "slot:tag", [part.tag]));
@@ -452,7 +451,7 @@ function gTerm(coord: GCoord, here: Here, clause: Clause): Term {
     shared.push(...sharedDetails(part.shared, here, clause));
     return {
       members: part.items.map((item): Term => {
-        if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island.units, here) };
+        if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island, here) };
         const term = thing(item.adj.word);
         addDetails(term, [adjDetail(item.adj, here, clause)]);
         return term;
@@ -493,11 +492,11 @@ function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
     joinModifiers(part.joinModifiers, part.join, here);
     // Each item is a verb plus the words before it (verb-and-stance-joins.md#vp-clause-forms): an item with words of
     // its own is a nested reading whose verb is that verb.
-    const itemUnits = new Map((part.itemUnits ?? []).map((item) => [item.verb, item.units]));
+    const itemUnits = new Map((part.itemUnits ?? []).map((item) => [item.verb, item]));
     const members = part.items.map((w): Term => {
-      const units = itemUnits.get(w);
-      if (!units) return verbOf(w, here);
-      const item = readIsland(units, here, `v${w.at ?? 0}`);
+      const own = itemUnits.get(w);
+      if (!own) return verbOf(w, here);
+      const item = readIsland(own, here, `v${w.at ?? 0}`);
       item.claim.verb = verbOf(w, { ...here, reading: item });
       return { kind: "clause", reading: item };
     });
@@ -574,7 +573,7 @@ function readH(unit: HUnit, here: Here, clause: Clause): void {
     return;
   }
   if (row.cls.startsWith("frame:")) {
-    const frame = placeFrame(key, word, row.reach, here);
+    const frame = placeFrame(key, word, here);
     for (const w of unit.modifiers) {
       const holder: Detail = detailOf(key, word, "frame");
       modifier(w, here, holder);
@@ -685,7 +684,7 @@ function readHook(unit: Extract<Unit, { kind: "hook" }>, here: Here, clause: Cla
       here.reading.links.push(link("hookResume", "hookJob:resume", [word]));
       return;
     case "zone": {
-      const frame = placeFrame("hookJob:zone", word, "clause", here);
+      const frame = placeFrame("hookJob:zone", word, here);
       const inner: Frame[] = [];
       if (unit.zone) {
         const zone = unit.zone.word;
@@ -849,13 +848,13 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
         anchor: classOf("unit:island")?.anchor ?? "",
         words: [],
         values: {},
-        content: [readIsland(unit.island.units, here)],
+        content: [readIsland(unit.island, here)],
       });
       return;
     case "clauseCoord": {
       const coord = unit.coord;
       const members: Clause[] = [coord.first, ...coord.links.map((l) => l.clause)].filter((c): c is Clause => c !== undefined);
-      const readings = members.map((member, i) => readClause(member, here.utterance, here.body, `${here.reading.id}/m${i}`, here.ctx, here.scoped));
+      const readings = members.map((member, i) => readClause(member, here.utterance, here.body, `${here.reading.id}/m${i}`, here.ctx));
       const joins = coord.links.map((l) => l.join);
       const join = joins[joins.length - 1];
       const terms: Term[] = readings.map((reading) => ({ kind: "clause", reading }));
@@ -913,13 +912,16 @@ function emptyReading(id: ReadingId, utterance: number, body: number, clause: Cl
   return { id, source: { utterance, body, clause }, frames: [], order: [], unordered: [], claim: { roles: {}, predicate: [], details: [] }, links: [], unread: [] };
 }
 
-/** A scope island: a nested reading of its chunk; a stance inside frames that chunk only (rule 2). */
-function readIsland(units: Unit[], outer: Here, path = `i${firstAt(units)}`): Reading {
-  const clause: Clause = { units };
+/**
+ * A scope island or a verb-list item: a nested reading of its chunk, with the frames of its own scope record; a stance
+ * inside frames that chunk only (rule 2).
+ */
+function readIsland(clause: Clause, outer: Here, path = `i${firstAt(clause.units)}`): Reading {
   const reading = emptyReading(`${outer.reading.id}/${path}`, outer.utterance, outer.body, clause);
-  const here: Here = { ...outer, reading, scoped: false };
-  for (const coord of titledPhrases(units)) here.ctx.titled.add(coord);
-  readUnits(units, here, clause);
+  copyScope(reading, outer.ctx.scopes.get(clause), outer.ctx.options.tables);
+  const here: Here = { ...outer, reading };
+  for (const coord of titledPhrases(clause.units)) here.ctx.titled.add(coord);
+  readUnits(clause.units, here, clause);
   return reading;
 }
 
@@ -928,7 +930,7 @@ function readDependent(clause: Clause, here: Here): Reading | undefined {
   if (!dependent) return undefined;
   let reading = here.ctx.dependents.get(dependent.clause);
   if (!reading) {
-    reading = readClause(dependent.clause, here.utterance, here.body, `${here.reading.id}/d`, here.ctx, here.scoped);
+    reading = readClause(dependent.clause, here.utterance, here.body, `${here.reading.id}/d`, here.ctx);
     here.ctx.dependents.set(dependent.clause, reading);
   }
   return reading;
@@ -1003,10 +1005,10 @@ function detailLists(reading: Reading): Detail[][] {
   return out;
 }
 
-function readClause(clause: Clause, utterance: number, body: number, id: ReadingId, ctx: Ctx, scoped: boolean): Reading {
+function readClause(clause: Clause, utterance: number, body: number, id: ReadingId, ctx: Ctx): Reading {
   const reading = emptyReading(id, utterance, body, clause);
   copyScope(reading, ctx.scopes.get(clause), ctx.options.tables);
-  const here: Here = { ctx, reading, utterance, body, scoped };
+  const here: Here = { ctx, reading, utterance, body };
   for (const coord of titledPhrases(clause.units)) ctx.titled.add(coord);
   readUnits(clause.units, here, clause);
   stackedHinge(reading);
@@ -1107,8 +1109,8 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
     const bodies = utterance.bodies.length ? utterance.bodies : [undefined];
     bodies.forEach((body, bi) => {
       const id = `${text}:${ui}.${bi}`;
-      const reading = body ? readClause(body.clause, ui, bi, id, ctx, true) : emptyReading(id, ui, bi, { units: [] });
-      const here: Here = { ctx, reading, utterance: ui, body: bi, scoped: true };
+      const reading = body ? readClause(body.clause, ui, bi, id, ctx) : emptyReading(id, ui, bi, { units: [] });
+      const here: Here = { ctx, reading, utterance: ui, body: bi };
       if (!body) copyScope(reading, ctx.bodiless.get(ui), ctx.options.tables);
       edgeDetails(utterance.left, here, reading.source.clause);
       if (bi === 0) edgeLinks(utterance.left, here);

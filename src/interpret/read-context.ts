@@ -4,7 +4,7 @@ import { overlayConstructionId } from "../parse/construction-trace.js";
 import { linkerEnglish } from "../parse/linkers.js";
 import { hookLabel, joinMarkerLabel } from "../parse/morph-gloss-labels.js";
 import type { NestedKind } from "../parse/boundaries.js";
-import { newMemberHead, type ClauseScope, type FrameReach, type ScopeFrame } from "../parse/scope.js";
+import { newMemberHead, type ClauseScope, type ScopeFrame } from "../parse/scope.js";
 import type {
   AnaphorBind,
   Clause,
@@ -155,7 +155,6 @@ export type Here = {
   reading: Reading;
   utterance: number;
   body: number;
-  scoped: boolean;
   /** A hook detail waiting for the phrase right after it: its landmark, or the phrase it joins to (in-clause-hooks.md#in-clause). */
   pendingHook?: Detail;
 };
@@ -221,14 +220,12 @@ export function hostOnHead(term: Term, head: LexWord | undefined, here: Here): v
 }
 
 /**
- * A role phrase or landmark that brings in a new member (joins.md#everything-ua): its frame hosts the phrase's term. A
- * scoped clause has the frame from its scope record; a reading with none (an island, a verb-list item) places it here,
- * as it does a stance word.
+ * A role phrase or landmark that brings in a new member (joins.md#everything-ua): its frame, from the reading's scope
+ * record, hosts the phrase's term.
  */
 export function memberFrame(coord: NpCoord, term: Term, here: Here): void {
   const head = here.ctx.titled.has(coord) ? undefined : newMemberHead(coord, here.ctx.blanks);
   if (!head) return;
-  if (!here.scoped) placeFrame("slot:newMember", head, "clause", here);
   hostOnHead(term, head, here);
 }
 
@@ -300,7 +297,7 @@ export function thing(word: LexWord): Term {
 }
 
 /** A frame word met in the clause: the resolve stage's frame when it gave one, else a frame of its own. */
-export function placeFrame(key: string, word: LexWord, reach: FrameReach | undefined, here: Here): Frame {
+export function placeFrame(key: string, word: LexWord, here: Here): Frame {
   // The resolve stage may file the word under another key of the same family (`lexReading:ability` for an
   // `xFamily:ability` word): one word, one frame of that family.
   const family = classOf(key)?.cls.slice("frame:".length);
@@ -308,7 +305,6 @@ export function placeFrame(key: string, word: LexWord, reach: FrameReach | undef
   if (existing) return existing;
   const frame = frameOf(key, word, here);
   here.reading.frames.push(frame);
-  if (reach === "clause" && here.scoped) unread(here, "unscoped", key, word);
   return frame;
 }
 

@@ -226,5 +226,5 @@ export type Unread = {
   construction: string;
   key?: string;
   word?: LexWord;
-  reason: "noRow" | "unknownWord" | "unscoped" | "unplaced" | "quoteParse";
+  reason: "noRow" | "unknownWord" | "unplaced" | "quoteParse";
 };

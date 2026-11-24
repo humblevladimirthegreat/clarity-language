@@ -16,7 +16,7 @@ import { crosses, type NestedKind } from "./boundaries.js";
 import { caseMatches, derivePairRows, HOLDER, MAY_BEFORE, TEXT_ORDER, type PairRow } from "./scope-profiles.js";
 import { stackKind } from "./series.js";
 import { isGreeting, isNoKindFence } from "./ast-walk.js";
-import type { BodyClause, Clause, HUnit, LeftEdge, LexWord, NpCoord, NpPackage, ToneRecord, Unit, Utterance } from "./types.js";
+import type { BodyClause, Clause, HUnit, IslandUnit, LeftEdge, LexWord, NpCoord, NpPackage, ToneRecord, Unit, Utterance } from "./types.js";
 
 export type FrameFamily =
   | "force"
@@ -506,6 +506,35 @@ function collectClause(
     const kind = clause.dependent.orodo.reading === "standIn" ? "standInDependent" : "slotDependent";
     collectClause(clause.dependent.clause, utteranceIndex, copied(reaching, kind), tables, blanks, out, tones);
   }
+  // A scope island and a verb-list item with words of its own are nested readings too (reader rule 2). A
+  // rest-of-sentence tone reaches them by nesting, so they take none here.
+  for (const island of islandsIn(clause)) collectClause(island, utteranceIndex, copied(reaching, "island"), tables, blanks, out);
+}
+
+/**
+ * The outermost scope islands and verb-list items with words of their own (verb-and-stance-joins.md#vp-clause-forms)
+ * among a clause's own units: each is a nested reading, keyed by its tree object. Those inside one are its own.
+ */
+function islandsIn(clause: Clause): Clause[] {
+  const out: Clause[] = [];
+  const seen = new Set<object>(nestedClauses(clause));
+  const walk = (value: unknown): void => {
+    if (value === null || typeof value !== "object" || seen.has(value) || isWord(value)) return;
+    seen.add(value);
+    const node = value as { kind?: unknown; island?: IslandUnit; itemUnits?: { verb: LexWord; units: Unit[] }[] };
+    if (node.kind === "island" && node.island) {
+      seen.add(node.island);
+      out.push(node.island);
+      return;
+    }
+    for (const item of node.itemUnits ?? []) {
+      seen.add(item);
+      out.push(item);
+    }
+    for (const child of Array.isArray(value) ? value : Object.values(value)) walk(child);
+  };
+  walk(clause.units);
+  return out;
 }
 
 /**
@@ -536,14 +565,18 @@ function wordsUnder(value: unknown, skip: ReadonlySet<object> = new Set(), out =
 
 /** A clause's own words: not those of its dependent or of its clause-join members, which have readings of their own. */
 function ownWords(clause: Clause): Set<LexWord> {
-  const skip = new Set<object>();
-  if (clause.dependent) skip.add(clause.dependent.clause);
+  return wordsUnder(clause, new Set(nestedClauses(clause)));
+}
+
+/** A clause's dependent and its clause-join members. */
+function nestedClauses(clause: Clause): Clause[] {
+  const out: Clause[] = clause.dependent ? [clause.dependent.clause] : [];
   for (const unit of clause.units) {
     if (unit.kind !== "clauseCoord") continue;
-    if (unit.coord.first) skip.add(unit.coord.first);
-    for (const link of unit.coord.links) if (link.clause) skip.add(link.clause);
+    if (unit.coord.first) out.push(unit.coord.first);
+    for (const link of unit.coord.links) if (link.clause) out.push(link.clause);
   }
-  return wordsUnder(clause, skip);
+  return out;
 }
 
 /** A rest-of-sentence tone's frame and the first word it colors inside a sentence body. */

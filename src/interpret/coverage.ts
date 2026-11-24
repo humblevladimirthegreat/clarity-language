@@ -10,8 +10,8 @@
  *   detail hosts (a binder frame's list, a quote frame's quote) and that also fills a role is one place: it counts
  *   nested in the frame that keeps its word, and the role's copy of the same object is skipped.
  * - **pointer places**: a link and an `unread` entry. A link marks the word that carries it, and that word usually has
- *   an own place too (a pronoun's term and its `anaphor` link); an `unread` entry may annotate a frame (`unknown`,
- *   `unscoped`). So a pointer place counts only for a word with no own place, and never doubles one.
+ *   an own place too (a pronoun's term and its `anaphor` link); an `unread` entry may annotate a frame (`unknown`).
+ *   So a pointer place counts only for a word with no own place, and never doubles one.
  *
  * Words of a quote's own parse (a cite's or an aside's readings) are not words of this parse and are skipped.
  */
