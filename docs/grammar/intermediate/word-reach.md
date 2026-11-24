@@ -183,3 +183,140 @@ A written statement word ends your frame, but it ends nothing else in the table:
 > "Who walks?" "Azozon, I think."
 
 A goodbye ends the conversation, so every row ends there for the sentences after it, whoever says it and whatever was set before. A quote starts fresh in the same way: inside it, `-rth` and a hook on `-r` look only within the quoted words, and your frame does not carry in.
+
+### Practice {#intermediate-practice}
+
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a ski slope
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *ski* | `uzunol` | ⛷️ |
+| *snowboard* | `ozunol` | 🏂 |
+| *goggles* | `egebul` | 🥽 |
+| *snowman* | `ozalel` | ☃️ |
+| *concern* | `thewemum` | 😟 from *worried* |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *person* | `eyel` |
+| *doubt* | `thevemem` |
+| *CLUES* | `theyom` |
+| *REPORTED* | `thebam` |
+| *see* | `vayebel` |
+| *tell* | `vezuyol` |
+| *sleep* | `vezuvel` |
+
+#### English → Ageben {#intermediate-english-to-ageben}
+
+**1.** *Azozon saw goggles, I think.* (only the goggles are a guess)
+
+::: details Show answer
+`zazozon ?degebul vayebel.`
+
+z-Azozon | ?d-goggles | v-see
+:::
+
+**2.** *I doubt Ahelan told Azozon that Alazun skis.* (you doubt the telling)
+
+::: details Show answer
+`thevemem zahelan vezuyol bazozon darl zalazun vuzunol.`
+
+th-doubt | z-Ahelan | v-tell | b-Azozon | d-that-clause | z-Alazun | v-ski
+:::
+
+**3.** *I doubt Alazun skis, and Azozon snowboards.* (only the skiing is in doubt)
+
+::: details Show answer
+`thevemem zalazun vuzunol xam zazozon vozunol.`
+
+[th-doubt | z-Alazun | v-ski | x-and.open | z-Azozon | v-snowboard]
+:::
+
+**4.** *I gather Alazun skis to feel connected.* (the motive is Alazun's)
+
+::: details Show answer
+`zalazun vuzunol thawethom theyomalazun.`
+
+z-Alazun | v-ski | th-relatedness-motive-any-term | th-CLUES-Alazun
+
+**Also correct:** `zalazun theyomalazun vuzunol thawethom.`
+:::
+
+#### Ageben → English {#intermediate-ageben-to-english}
+
+**1.** `zalazun vuzunol th(yel zahelan vezuvel).`
+
+::: details Show answer
+z-Alazun | v-ski | th-ASIDE[y-question | z-Ahelan | v-sleep]
+
+*Alazun skis (is Ahelan asleep?).*
+:::
+
+**2.** `thevemem zazozon d[zahelan vozunol] vezuyol.`
+
+::: details Show answer
+th-doubt | z-Azozon | d-CITE[z-Ahelan | v-snowboard] | v-tell
+
+*I doubt Azozon said, “Ahelan snowboards.”* (you doubt the saying, not the snowboarding)
+:::
+
+**3.** `yel themem vuzunol zazozon.`
+
+::: details Show answer
+y-question | th-MIRATIVE | v-ski | z-Azozon
+
+*Is Azozon skiing, of all things?*
+:::
+
+**4.** `yel zar vozunol. yam azozon.`
+
+::: details Show answer
+y-question | z-wh | v-snowboard . y-soft-statement | Azozon
+
+*“Who is snowboarding?” “Azozon, I think.”*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *I doubt Alazun skis, worrying as that would be.* `thevemem thewemum zalazun vuzunol.` or `thewemum thevemem zalazun vuzunol.`
+
+::: details Show answer
+`thevemem thewemum zalazun vuzunol.`
+
+th-doubt | th-concern | z-Alazun | v-ski
+
+The earlier word covers the later one: doubt first puts the worry under the doubt, on the skiing.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *There is one snowman that everyone sees.* <!-- lint: error -->`zual geyel dozalel vayebel.`
+
+::: details Show answer
+`dozalel zual geyel vayebel.`
+
+d-snowman | [z-everything | g-person] | v-see
+
+English order puts *everyone* first, which lets each person see a different snowman; the snowman goes first to be one for all.
+:::
+
+#### What changes {#intermediate-what-changes}
+
+**1.** `zalazun thebam vozunol. yel zahelan vuzunol. zazozon vozunol.` / `zalazun thebam vozunol. yal zahelan vuzunol. zazozon vozunol.`
+
+::: details Show answer
+z-Alazun | th-REPORTED | v-snowboard . y-question | z-Ahelan | v-ski . z-Azozon | v-snowboard
+
+z-Alazun | th-REPORTED | v-snowboard . y-statement | z-Ahelan | v-ski . z-Azozon | v-snowboard
+
+In the first, the question skips the hearsay, so Azozon snowboarding is hearsay too. In the second, `yal` ends it: Ahelan skiing and Azozon snowboarding are your own claims.
+:::

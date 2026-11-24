@@ -69,6 +69,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *french* | `avranzam` |
 | *catastrophe* | `abowum` |
 | *revelation* | `thavewom` |
+| *REPORTED* | `thebam` |
 
 #### English → Ageben {#intermediate-english-to-ageben}
 
@@ -316,6 +317,18 @@ y-question | [d-cookie | d-wh]
 *Which cookie?*
 
 **Rule:** [Fill-ask vowels and how many items you list](fill-ask-roles.md#fill-ask-arity)
+:::
+
+**9.** `xalazun zalen thebam vazuvol. yal zalen voguvol.`
+
+::: details Show answer
+x-Alazun | z-TOPIC | th-REPORTED | v-swim . y-statement | z-TOPIC | v-climb
+
+*Now, about Alazun: Alazun swam, so they say. Alazun climbs.* (the climbing is your own claim)
+
+`yal` ends the hearsay frame but not the topic, so `zalen` still points to Alazun.
+
+**Rule:** [What carries past a period](word-reach.md#past-the-period)
 :::
 
 #### Pick one {#intermediate-pick-one}
