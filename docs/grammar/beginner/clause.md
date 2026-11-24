@@ -48,7 +48,7 @@ The two sentences differ only in who walks. Both subjects start with the same `z
 ### Direct object (`/d/`)
 <!-- Agent summary: direct object (who/what is acted on) = `/d/`. Default order Subject – Direct Object – Verb (`zodozel dogozel vayebel.`). The letters carry the roles: swapping `z` and `d` between two nouns swaps who does what (`zogozel dodozel vayebel.` = a cat sees a dog). Moving words keeps each role and adds no stress; keep the default order anyway. -->
 
-To say who or what the action is done to, add a **direct object** and mark it with `/d/`. The default order is Subject – Direct Object – Verb, so the verb comes last, after the object.
+To say who or what the action is done to, add a **direct object** and mark it with `/d/`. The default order is Subject – Direct Object – Verb, so the verb comes after the object.
 
 > `zodozel dogozel vayebel.`
 >

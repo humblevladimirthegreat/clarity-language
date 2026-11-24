@@ -37,7 +37,7 @@ English says *my chest*, but name no owner for the body part. In a sentence abou
 A sensation needs no interpretation. `zobal gegewal.` says what your chest is doing and leaves open which feeling comes with it. So you can report it before you know what the feeling is, and it is often the most accurate thing you can say.
 
 ### A plain label {#feeling-label}
-<!-- Agent summary: label = English emotion word as a property root on `/ɡ/` after `zuwen`: `zuwen gonumul.` *I am angry*. Names the feeling only: no need, no urge; use when that is all you can tell or want to share. Body sentence (`zobal gegewal.`) is about a body part; label (`zuwen gevemul.`) is about you and names the feeling. Table pattern: most labels share a root with a noun that is the feeling itself (`evemul`, `ehamul`, `ebumal`, `emel`, `onomul`) or a sign that shows it (`odebel` teardrop, `ubamol` blush, `ugomal` grin); `uremel` → `guremel` *relieved* + `guremem` *calm*; no partner: `gonumul`, `gewemul`, `gadamul`. -->
+<!-- Agent summary: label = English emotion word as a property root on `/ɡ/` after `zuwen`: `zuwen gonumul.` *I am angry*. Names the feeling only: no need, no urge; use when that is all you can tell or want to share. Body sentence (`zobal gegewal.`) is about a body part; label (`zuwen gevemul.`) is about you and names the feeling. Table shape, a memory aid: most labels share a root with a noun that is the feeling itself (`evemul`, `ehamul`, `ebumal`, `emel`, `onomul`) or a sign that shows it (`odebel` teardrop, `ubamol` blush, `ugomal` grin); `uremel` → `guremel` *relieved* + `guremem` *calm*; no partner: `gonumul`, `gewemul`, `gadamul`. -->
 
 When you know the English emotion word and nothing more, say that word. The emotion roots are ordinary property words, so *I am angry* has the same shape as a body sentence: the speaker noun `zuwen`, then the label on `/ɡ/`.
 
@@ -210,7 +210,7 @@ Alazun is the landmark in both. With `o` you want to do something for Alazun, an
 
 With no `bl-` word, the urge points at someone unnamed: `thunathumem.` is *my say was taken, and I want to take it up with someone*.
 
-**Compare with:** on a plain sake word, a `bl-` word names whose sake it is, so `thawetham blalazun.` says the act met Alazun's sake ([thanks and sorry](thanks-and-sorry.md#saying-sorry), where a `bl-` word after an unmet word names whose sake you harmed). After `e`, `o`, or `u` the sake is yours and the `bl-` word is the landmark: `thawethamem blalazun.` is *I feel connected, and I want to thank Alazun*. So the urge vowel is what tells you which job the `bl-` word has.
+**Compare with:** on a plain sake word, a `bl-` word names whose sake it is, so `thawetham blalazun.` says the act met Alazun's sake ([thanks and sorry](thanks-and-sorry.md#saying-sorry), where a `bl-` word after an unmet word names whose sake you harmed). After `e`, `o`, or `u` the sake is yours and the `bl-` word is the landmark: `thawethamem blalazun.` is *I feel connected, and I want to thank Alazun*. So when a `bl-` word follows a feeling word with `e`, `o`, or `u`, it names the landmark, not whose sake it is.
 
 ### A feeling about a thing {#feeling-about-a-thing}
 <!-- Agent summary: feeling word goes on a noun as a plain sake word does; the noun is what the feeling is about. Your own thing: feeling word on `/ɡ/` after it (`zobewom guwathamam.`); a `/ɡ/` sake word also says the noun is yours. Not yours: feeling word on `/w/` right before `goyom` *as stimulus* (`zonal wawethumem goyom blalazun.`). Contrast `zonal gawethumem blalazun.` (my memo) vs `zonal wawethumem goyom blalazun.` (a memo you only react to). Never `/ɡ/` for a thing that is not yours. Landmark `bl-` last, after `goyom`; no `bl-` → `e` `o` `u` point at the noun (`zonal wawethumum goyom.`). -->
@@ -268,7 +268,7 @@ To make the rain what the feeling is about, put the feeling word on the rain its
 >
 > "The rain costs me something, and I want to get away from it."
 
-Now the urge points at the rain. In the sentence before, you want to get away from nothing in particular, and the rain only set the feeling off.
+Now the urge points at the rain. In the sentence before, the rain only set the feeling off, and the feeling is about nothing you can point to.
 
 When the feeling is about something that happens, put the feeling word on that clause. It is then about the clause's event, so English *moved that …* or *glad that …* puts the feeling on the clause it names:
 

@@ -1,0 +1,87 @@
+Brief: grammar-newcomer-rewrite, unit A1 (fact audit of the pilot)
+
+You are a proposal-worker running a fresh fact audit. Three pilot pages were rewritten for
+newcomers, each by its own writer; you wrote none of it. These pages become the model for every
+later rewrite, so an invented rule here would spread.
+
+## Pages (rewritten by units U3, U4, U5; compare each with its version at 5cb1637b)
+
+- docs/grammar/beginner/clause.md (U3)
+- docs/grammar/beginner/knowing.md (U4)
+- docs/grammar/beginner/how-you-feel.md (U5)
+
+`git diff --stat 5cb1637b -- <page>` gives the size; `npm run changed-sections -- 5cb1637b <page>`
+lists the changed sections.
+
+## Points the writers flagged (check these first)
+
+- clause.md: the writer showed only by contrast, without stating it, that a plain sentence with no
+  /th/ word states the claim as so. Check that no sentence states more than the page or its owners do.
+- knowing.md: the MAY section has a "could be" test for telling a guess from "I think" meaning the
+  act of thinking, adapted from docs/grammar/claritish/could-be.md (section "Telling a guess
+  apart"). Check that the grammar page, or the page that owns MAY, supports it as stated.
+- how-you-feel.md: see below.
+
+how-you-feel.md writer's notes (U5):
+- The label table was given a shape: most labels share a root with a noun, either the feeling
+  itself (fear, heartbreak, passion, surprise, nauseated) or a sign that shows it (teardrop, blush,
+  grin), "which is how the lexicon glosses those roots". Check that the grouping follows the
+  lexicon glosses (data/lexicon-published.csv) and does not present a category as grammar that no
+  page names; a grouping offered as a memory aid is fine if it says so.
+- The urges are grouped as `a` stays put, while `e`, `o` and `u` move you relative to someone.
+  Check that the page or its owner (feelings.md) supports this reading of the four vowels.
+- Left out for want of an owning statement: what a bl- word after an `a` feeling word means; what
+  the last-letter difference in `guremel` / `guremem` means; whether a feeling word always reports
+  the speaker's own feeling. Check that the new prose does not imply an answer to any of these.
+
+## Tooling
+
+`npm run -s outline -- FILE --summaries` prints each heading with its agent summary. The build lints
+summary format and coverage.
+
+## May edit
+
+The three pages above: fix wording that overstates its source, and a summary that states more than
+its H3 teaches. Report, do not fix, a claim that would need a new rule.
+
+## Digest
+
+- Task: fact-check the rewrite of the pages in your brief. You wrote none of it. Compare each page
+  with its version at 5cb1637b (git show 5cb1637b:FILE), headings first, then the changed H3s.
+- Claims: list every rule, default, reading or near-miss claim in the new prose that neither the old
+  page nor the owning page states, with the line. Fix wording that overstates what the source says;
+  report a claim that would need a new rule, and do not fix it.
+- Examples: run every new example through one batched parse.mjs --check-lexicon call and compare
+  each gloss with the page's gloss line. Where the prose explains what an example means, check that
+  reading in one node scripts/reading.mjs probe file. Check that each new example uses only
+  constructions taught on the page or earlier (find.mjs).
+- Summaries: each teaching H3 has exactly one, and it states only what the H3 teaches.
+- Practice still agrees with the prose.
+- Report also: any pattern of invention the next phase's digest should warn against.
+- Rules: docs/meta/grammar-docs.md#newcomer and #agent-summaries; docs/meta/doc-style.md (checklist,
+  tone, explain before you slogan); docs/meta/glosses.md for any new example. Open other
+  grammar-docs.md sections only when a question comes up.
+- The page is the source of truth, so the rewrite does not change the language: no new form,
+  reading, rule, exception or default. Each rule the new prose states is on the page now or on the
+  page that owns that subsystem (AGENTS.md table). If a point you need is stated nowhere, leave it
+  out and report it.
+- Structure stays: the H1 and its one-line job; every H3, with its title, {#id} and order; Practice;
+  See also. Contrasts, near misses and new examples go inside the H3 they explain; add no heading.
+  Tables keep their columns and rows unless the read-by block says no tool reads them.
+- Examples: new ones parse (node scripts/parse.mjs --check-lexicon '<a>' '<b>' …, one batched call),
+  get a morph gloss line per glosses.md, use the house cast, and use only constructions taught on
+  this page or earlier in reading order (check with node scripts/find.mjs). Keep every existing
+  example; the read-by block names the ones tools read.
+- Teach now: no previews of later pages, no forward links (the build lints them).
+- Agent summary: directly under each teaching H3 (not Practice or See also), one comment
+  <!-- Agent summary: ... --> with the H3's rules, tersely: forms in backticks, notes style, ≈ and →
+  allowed. It states nothing the H3 does not teach.
+- Practice: leave it, except an item the new prose makes wrong; fix that item and report it.
+- Verify with npm run verify -- --allow-generate (--fast inside the item); never paste raw build
+  output. Clear any prose warning on your page; do not update the baseline.
+- Do not commit; the orchestrator commits. Never link to a file under docs/proposals/.
+- At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls.
+  If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a
+  clean point, leave the tree green, and report: done, left (as steps), files touched.
+- Report (about 150 words): done; teach words before → after per page; claims left out for want of
+  an owning statement; practice items fixed; verify line; skips with reasons; left; inefficient.
