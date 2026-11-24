@@ -684,6 +684,7 @@ Tools that read or rewrite every page alike, with no page contract:
 - `src/game/build.ts`
 - `src/grammar-check/corpus.ts`
 - `src/interpret/accounting-walk.ts`
+- `src/parse/context-report.ts`
 - `src/parse/llm-examples.ts`
 - `src/repo-paths.ts`
 

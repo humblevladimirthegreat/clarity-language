@@ -189,6 +189,7 @@ const WHOLE_SITE = [
   "src/game/build.ts",
   "src/grammar-check/corpus.ts",
   "src/interpret/accounting-walk.ts",
+  "src/parse/context-report.ts",
   "src/parse/llm-examples.ts",
   "src/repo-paths.ts",
 ];
