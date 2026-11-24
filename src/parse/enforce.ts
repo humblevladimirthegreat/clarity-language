@@ -1095,9 +1095,10 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
       if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {
         throw new ConstructionError("linkerAlone", body.linker.raw);
       }
-      // A reply turn of one citation opens with the statement act (`yal azozon.`, questions.md#fill-ask).
+      // A reply turn of one citation opens with a statement word (`yal azozon.`, `yam azozon.`, questions.md#fill-ask).
       const act = actWord(left);
-      if (body.fragment && act && act.raw !== "yal") throw new ConstructionError("citationTurn", act.raw);
+      const statement = act?.family.kind === "joinMarker" && act.family.series === "a";
+      if (body.fragment && act && !statement) throw new ConstructionError("citationTurn", act.raw);
       enforceOffsets(body.clause.units, directive);
       enforceHandDepthChannel(body.clause.units);
     }

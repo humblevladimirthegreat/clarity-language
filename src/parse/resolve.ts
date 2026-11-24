@@ -1247,8 +1247,10 @@ function fillAnswers(
     if (goodbyeUtterances.has(i - 1) && endsAt("answer", "goodbye")) return;
     const ask = asks.find((record) => record.utteranceIndex === i - 1);
     const body = utterance.bodies[0];
+    // A reply opening with any statement word (`yal`, `yam`, `yar`) still answers (the `answer` row's statement-word cell).
     const act = actWord(utterance.left);
-    if (!ask || ask.kind !== "fillAsk" || !body || body.linker || (act && act.raw !== "yal")) return;
+    const statement = act?.family.kind === "joinMarker" && act.family.series === "a";
+    if (!ask || ask.kind !== "fillAsk" || !body || body.linker || (act && !statement) || (statement && endsAt("answer", "statementWord"))) return;
     const blanks = ask.gaps;
     const roleOf = (word: LexWord): BlankRole | undefined => {
       if (rangeBlanks.has(word)) return rangeBlanks.get(word);

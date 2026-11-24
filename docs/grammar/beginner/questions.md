@@ -7,7 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #question: 2 construction homes, 1 closed word, 3 interpreter rows, 3 interpreter classes, 2 frame keys
-- #fill-ask: 3 rejections, 2 interpreter rows, 2 interpreter classes, 1 frame key, 6 discourse slot cells
+- #fill-ask: 3 rejections, 2 interpreter rows, 2 interpreter classes, 1 frame key, 7 discourse slot cells
 - #question-tone: 3 construction homes
 - #polar-particle: 3 construction homes, 1 rejection, 6 closed words, 1 interpreter row, 1 interpreter class, 1 discourse slot cell
 Inbound links: npm run page-refs -- questions.md
@@ -89,7 +89,13 @@ If the reply is just one noun, not a full sentence, write it as a [citation](wor
 >
 > "Azozon."
 
-Written after the question, the reply is a new [turn](speech-moves.md#turn-y), so it opens with `yal`: `yel zar vowurol. yal azozon.`
+Written after the question, the reply is a new [turn](speech-moves.md#turn-y), so it opens with a statement word. Use `yal` to give the answer outright: `yel zar vowurol. yal azozon.` To hedge it, open with the soft statement word `yam` (*Azozon, I think*) or the for-now statement word `yar` (*Azozon, as things stand*); *Firm and soft* teaches both. Either reply still answers the question.
+
+> `yel zar vowurol. yam azozon.`
+>
+> y-question | z-wh | v-walk . y-soft-statement | Azozon
+>
+> "Who walks?" "Azozon, I think."
 
 Only the sentence right after the question fills the blank, whoever says it. Once another sentence or a new question comes between, the blank is closed. A [goodbye](word-endings.md#greeting) ends the conversation, so no sentence after a goodbye fills a blank. A reply that opens with a sentence linker, such as *by the way*, is a new remark, not the answer, and a name inside a quote is the quoted person's words, not your answer.
 

@@ -230,7 +230,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | reading | `amountScale` | detail:degree | `vague-amounts.md` | frame-or-detail unclear; see report |
 | reading | `frequencyScale` | detail:degree | `comparative-arity.md#frequency-scale` | The scale a rank join ranks by, *how often*: a shared detail on the list term, never a restrictor on the clause |
 | reading | `bareQuestion` | frame:force | `questions.md#question` | No body: asks about what was just said |
-| reading | `greeting` | frame:force | `word-endings.md#greeting` | The named citation alone, in a turn with nothing on its left edge; a one-name reply after `yal` is an answer (`questions.md#fill-ask`). The frame keeps the name and hosts the role's term. A bid on the citation (`alahexon.`, no `/y/`; `conversation-length.md#conversation-length`) sits on the left edge and is this frame too; under `/y/` it is a call. Never pairs: a greeting turn holds no other frame |
+| reading | `greeting` | frame:force | `word-endings.md#greeting` | The named citation alone, in a turn with nothing on its left edge; a one-name reply after a statement word (`yal`, `yam`, `yar`) is an answer (`questions.md#fill-ask`). The frame keeps the name and hosts the role's term. A bid on the citation (`alahexon.`, no `/y/`; `conversation-length.md#conversation-length`) sits on the left edge and is this frame too; under `/y/` it is a call. Never pairs: a greeting turn holds no other frame |
 | reading | `verbFirstItem` | structure | `verb-and-stance-joins.md#vp-clause-forms` |  |
 | reading | `verbSharedNoun` | link | `verb-and-stance-joins.md#vp-clause-forms` | An argument shared by joined verbs |
 | reading | `fromTo` | detail:range | `ranges.md#ranges` |  |
@@ -284,7 +284,7 @@ The end events:
 | `byTheWay` | *by the way* (`xavedam`) |
 | `goodbye` | a goodbye |
 
-An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with `yal` still answers, and `yal xezem …` still links to the sentence before. A goodbye ends the conversation, so every slot's `goodbye` cell ends: no sentence after a goodbye reads the goodbye or anything before it. Its stand-in and hook rows end in the goodbye sentence too, since a point-back in it finds nothing; for `sentenceBefore` and `answer`, whether the goodbye sentence itself still reads the sentence before it and fills the question before it is unstated (the cell's `eventSentence`; today it does). The resolve stage lists the goodbye sentences (`ResolveInfo.goodbyes`), which the reader's `previousSentence` (`read-context.ts`) and `pointBackLinks` read; inside the resolve stage, `carriedFrames` and `fillAnswers` read the same goodbyes.
+An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with any statement word (`yal`, `yam`, `yar`) still answers, and `yal xezem …` still links to the sentence before. A goodbye ends the conversation, so every slot's `goodbye` cell ends: no sentence after a goodbye reads the goodbye or anything before it. Its stand-in and hook rows end in the goodbye sentence too, since a point-back in it finds nothing; for `sentenceBefore` and `answer`, whether the goodbye sentence itself still reads the sentence before it and fills the question before it is unstated (the cell's `eventSentence`; today it does). The resolve stage lists the goodbye sentences (`ResolveInfo.goodbyes`), which the reader's `previousSentence` (`read-context.ts`) and `pointBackLinks` read; inside the resolve stage, `carriedFrames` and `fillAnswers` read the same goodbyes.
 
 The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A passing `aside` cell reads the value where the aside sits: the topic through the aside's resolve, which starts from the outer context, and a point-back through the sentence's own `to` pass, which reaches the links inside its asides. Nothing inside an aside sets a slot.
 
@@ -365,7 +365,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | Column | Cell |
 |--------|------|
 | `newValue` | ends, `questions.md#fill-ask` |
-| `statementWord` | unstated (today: keeps after `yal`; a reply opening with `yam` or `yar` answers nothing) |
+| `statementWord` | keeps, `questions.md#fill-ask` |
 | `byTheWay` | ends, `questions.md#fill-ask` |
 | `goodbye` | ends for the sentences after it, `questions.md#fill-ask`; the goodbye sentence itself unstated (today: keeps) |
 | `kept` | shared, `questions.md#fill-ask` |

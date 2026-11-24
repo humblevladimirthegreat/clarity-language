@@ -82,9 +82,9 @@ describe("discourse slot table", () => {
   });
 
   it("keeps a point-back, the sentence before and the answer over a written statement word", () => {
-    // A `yal` sentence still reads them: a reply opening with `yal` answers (questions.md#fill-ask; the answer cell stays
-    // unstated, since a reply opening with `yam` or `yar` answers nothing today), and `yal xezem …` links to the sentence
-    // before; *by the way* is a linker, so it reads the sentence before but answers nothing.
+    // A `yal` sentence still reads them: a reply opening with any statement word (`yal`, `yam`, `yar`) answers
+    // (questions.md#fill-ask), and `yal xezem …` links to the sentence before; *by the way* is a linker, so it reads the
+    // sentence before but answers nothing.
     for (const id of ["standInBack", "hookResume", "sentenceBefore", "answer"] as const) assert.equal(endsAt(id, "statementWord"), false, id);
     for (const id of ["standInBack", "hookResume", "sentenceBefore"] as const) assert.equal(endsAt(id, "byTheWay"), false, id);
     assert.equal(endsAt("answer", "byTheWay"), true);
@@ -97,7 +97,6 @@ describe("discourse slot table", () => {
       .map(({ id, column, cell }) => `${id} ${column}: ${slotCellLabel(cell)}`);
     assert.deepEqual(open, [
       "sentenceBefore goodbye: ends; the event sentence unstated (today: keeps)",
-      "answer statementWord: unstated (today: keeps)",
       "answer goodbye: ends; the event sentence unstated (today: keeps)",
     ]);
   });

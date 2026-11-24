@@ -899,7 +899,7 @@ export const REJECTIONS = {
   standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge thovam or the if hinge thohem" },
   hingeStack: { anchor: "because-and-iff.md#choosing-a-hinge", summary: "hinge stacks are `thebem thahum` (only because) and `thezem thohem` (even if)" },
   citationInClause: { anchor: "questions.md#fill-ask", summary: "a word with no role letter fills no slot, so it is never part of a clause; it stands only as a sentence of its own (`azozon.`)" },
-  citationTurn: { anchor: "questions.md#fill-ask", summary: "a reply turn of one citation opens with the statement act only (`yal azozon.`)" },
+  citationTurn: { anchor: "questions.md#fill-ask", summary: "a reply turn of one citation opens with a statement word only (`yal azozon.`, `yam azozon.`, `yar azozon.`)" },
   sameRoleSides: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word goes between two phrases of one role (`zazozon abam zahelan vowurol.`); at the start of a body only with the blank it asks for (`yel abam zar zazozon vowurol.`), and never as glue" },
   sameRoleExtraNoun: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word takes no /b/ after it: B keeps A's /z/, /d/ or /v/; a landmark goes on the /h/ relation with bl- (`habam blohahal`)" },
   sameRoleEnding: { anchor: "same-role-words.md#before-and-after", summary: "a same-role word ends in -m (open) or -l (closed); -n and -r have no reading" },

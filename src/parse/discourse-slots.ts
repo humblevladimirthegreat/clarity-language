@@ -85,7 +85,6 @@ const asideBlocks: AsideCell = { verdict: "blocks", anchor: ASIDES };
 
 const ends = (anchor: string): EndCell => ({ verdict: "ends", anchor });
 const keeps = (anchor: string): EndCell => ({ verdict: "keeps", anchor });
-const unstatedEnd = (today: "ends" | "keeps"): EndCell => ({ verdict: "unstated", anchor: "", today });
 /** A goodbye ends the value for the sentences after it; the goodbye sentence itself still reads it today, unstated. */
 const goodbyeEndsAfter = (anchor: string): EndCell => ({ verdict: "ends", anchor, eventSentence: { verdict: "unstated", anchor: "", today: "keeps" } });
 
@@ -175,7 +174,7 @@ export const DISCOURSE_SLOTS: readonly SlotRow[] = [
     what: "the question an answer fills",
     setBy: "a question",
     readBy: { what: "the reply right after it", links: ["answer answer:answer"] },
-    endedBy: { newValue: ends(FILL), statementWord: unstatedEnd("keeps"), byTheWay: ends(FILL), goodbye: goodbyeEndsAfter(FILL) },
+    endedBy: { newValue: ends(FILL), statementWord: keeps(FILL), byTheWay: ends(FILL), goodbye: goodbyeEndsAfter(FILL) },
     kept: { verdict: "shared", anchor: FILL },
     quote: { verdict: "blocks", anchor: FILL },
     aside: asideBlocks,
