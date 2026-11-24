@@ -186,7 +186,9 @@ export type LinkKind =
   /** A hinge's condition or a channel's grounds in the next sentence (`blarl`, `barl`). */
   | "grounds"
   /** A channel, holder, NOTIONAL or dated offset carried over a later bare sentence: points to the reading that set it. */
-  | "carriedFrame";
+  | "carriedFrame"
+  /** A question's NOTIONAL frame to the supposition it asks inside: the latest stated NOTIONAL reading in the log. */
+  | "supposition";
 
 export type Link = {
   kind: LinkKind;
@@ -203,7 +205,7 @@ export type Link = {
   bind?: AnaphorBind;
   shared?: SharedRecord;
   answer?: AnswerRecord;
-  /** grounds: the frame whose content the next sentence is; carriedFrame: the frame carried. */
+  /** grounds: the frame whose content the next sentence is; carriedFrame: the frame carried; supposition: the supposed reading's NOTIONAL frame. */
   frame?: Frame;
   /**
    * carriedFrame: the reading's own speaker attitudes and feeling words, which sit over the carried frame

@@ -10,6 +10,11 @@ export type TranslateOptions = {
   switches?: Partial<Record<"widen" | "defaults" | "closed", boolean>>;
   /** R4c-9: the blanks the fill job reads (`blank` terms, or a listed blank's list). Only `fill` marks them used. */
   blanks?: ReadonlySet<object>;
+  /**
+   * The reading asked as a question (solve.ts `prepare`, told by its force frame before the frame is stripped): under
+   * NOTIONAL it asks inside the view its `supposition` link names (notional.md#notional-as-if-framing).
+   */
+  question?: ReadingId;
 };
 
 /**

@@ -7,7 +7,7 @@ import { describe, it } from "node:test";
 import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
-import { appendTurn, buildLog, sentenceSpeakers, type Log } from "./log.js";
+import { appendTurn, buildLog, readQuestion, sentenceSpeakers, type Log } from "./log.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
@@ -128,5 +128,22 @@ describe("log", () => {
       { window: 1 },
     );
     assert.deepEqual(who(windowed), ["call alazu@0", "otherSpeaker A", "lastCall alazu@0"]);
+  });
+});
+
+describe("readQuestion: a NOTIONAL question's supposition link (reader-solver boundary B5)", () => {
+  const supposition = (texts: string[], question: string) => {
+    const log = buildLog(texts.map((text, at) => ({ speaker: "A", at, text })), tables);
+    const links = readQuestion(log, question, tables)[0]!.links.filter((l) => l.kind === "supposition");
+    return links.map((l) => [l.key, l.to, l.frame?.family]);
+  };
+  it("links to the latest stated NOTIONAL reading in the log", () => {
+    const texts = ["zazozon theyum vowurol.", "zazozon vehohel.", "zazozon theyum vowurol vul.", "zazozon vehohel."];
+    const log = buildLog(texts.map((text, at) => ({ speaker: "A", at, text })), tables);
+    assert.deepEqual(supposition(texts, "yel zazozon theyum vowurol."), [["link:supposition", log.readings[2]!.id, "notional"]]);
+  });
+  it("has no link with no NOTIONAL reading in the log, or no NOTIONAL frame on the question", () => {
+    assert.deepEqual(supposition(["zazozon vowurol."], "yel zazozon theyum vowurol."), []);
+    assert.deepEqual(supposition(["zazozon theyum vowurol."], "yel zazozon vowurol."), []);
   });
 });

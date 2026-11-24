@@ -12,7 +12,7 @@
  */
 import { entryOf, speakerId, turnPersons, type Log, type LogEntry } from "./log.js";
 import { passThrough, referentOf, type Host } from "./host.js";
-import { framePath, match, withIslands, withListFrames, readingTree, type Binding, type FramePath, type MatchOptions, type Switch } from "./match.js";
+import { framePath, match, withIslands, withListFrames, readingTree, type Binding, type FramePath, type MatchOptions, type PathFrame, type Switch } from "./match.js";
 import type { Frame, Reading } from "./types.js";
 
 export type { Host };
@@ -77,10 +77,22 @@ function filterValues(frame: Frame): Record<string, string> {
   return rest;
 }
 
-function carries(path: FramePath, filter: Frame, options: MatchOptions): boolean {
+/**
+ * D1 (reader-solver boundary B5): a NOTIONAL question's `supposition` link (readQuestion) names the one supposition it
+ * asks inside, so its NOTIONAL filter is carried only by that reading's frame, stated there or carried from it. With no
+ * link, any NOTIONAL frame carries it.
+ */
+function supposedBy(question: Reading, filter: Frame): ((pf: PathFrame) => boolean) | undefined {
+  const to = filter.family === "notional" ? question.links.find((l) => l.kind === "supposition")?.to : undefined;
+  if (to === undefined) return undefined;
+  return (pf) => (pf.how === "carried" ? pf.link?.to : pf.reading.id) === to;
+}
+
+function carries(path: FramePath, filter: Frame, options: MatchOptions, supposed?: (pf: PathFrame) => boolean): boolean {
   return path.frames.some(
     (pf) =>
       pf.frame.family === filter.family &&
+      (!supposed || supposed(pf)) &&
       sameValues(filterValues(pf.frame), filterValues(filter)) &&
       (!filter.party ||
         (pf.frame.party !== undefined &&
@@ -119,7 +131,7 @@ export function ask<E>(question: Reading, log: Log, host: Host<E> = {}, ask: Ask
     const binding = match(question.claim, reading.claim, options);
     if (!binding) continue;
     const path = withIslands(withListFrames(framePath(reading, tree), binding.listFrames, reading), binding.islands);
-    if (!filters.every((f) => carries(path, f, options))) continue;
+    if (!filters.every((f) => carries(path, f, options, supposedBy(question, f)))) continue;
     out.push({ reading, ...(entry ? { entry } : {}), binding, path, unsettled: path.unsettled, switches: binding.switches });
   }
   return out;

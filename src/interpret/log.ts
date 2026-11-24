@@ -20,6 +20,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { ParseResult } from "../parse/types.js";
 import { readParse } from "./read.js";
+import { link } from "./read-context.js";
 import { throughAntecedent } from "./steps.js";
 import { name, str } from "./translate-helpers.js";
 import type { Frame, Reading, Term } from "./types.js";
@@ -230,7 +231,24 @@ export function readQuestion(log: Log, text: string, tables: ClassifyTables, opt
   const parse = parseWithTables(transcript([...context, { speaker: "", at: 0, text }]), tables, { speakers });
   const index = sentenceIndex(parse);
   const readings = readParse(parse, { tables, text: options.text ?? "q" });
-  return readings.filter((r) => (index.get(`${r.source.utterance}.${r.source.body}`) ?? -1) >= before);
+  const question = readings.filter((r) => (index.get(`${r.source.utterance}.${r.source.body}`) ?? -1) >= before);
+  for (const reading of question) suppositionLink(log, reading);
+  return question;
+}
+
+/**
+ * A question's NOTIONAL frame asks inside a supposition (notional.md#notional-as-if-framing): on a reading with a question
+ * force frame (`values.ask`), a `supposition` link from
+ * it `to` the latest stated NOTIONAL reading in the log, `frame` that reading's NOTIONAL frame. With none, there is no link. Choosing it is link resolution,
+ * like a carried frame's, so the reader does it and the solver and `ask` read the link.
+ */
+function suppositionLink(log: Log, reading: Reading): void {
+  const frame = reading.frames.find((f) => f.family === "notional");
+  if (!frame || !reading.frames.some((f) => f.family === "force" && f.values.ask !== undefined)) return;
+  const stated = log.readings.filter((r) => r.frames.some((f) => f.family === "notional")).at(-1);
+  const supposed = stated?.frames.find((f) => f.family === "notional");
+  if (!stated || !supposed) return;
+  reading.links.push(link("supposition", "link:supposition", frame.words, { anchor: frame.anchor, to: stated.id, frame: supposed }));
 }
 
 /** A log of the given turns, in order. */

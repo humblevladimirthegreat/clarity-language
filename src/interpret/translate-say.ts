@@ -86,17 +86,21 @@ export function wrapOf(tr: Translator, reading: Reading, frames: Frames, ctx: Ct
   // Decision 4 (notional.md#notional-as-if-framing): NOTIONAL is Holders row 1 with one holder per supposition,
   // `notional(Id)` with Id the stated reading's id, never `holds(T)`; a later bare sentence it carries to takes the
   // same holder, so row 4 runs inside each supposition and two suppositions never clash with each other. A question
-  // under NOTIONAL asks inside the latest supposition's view; with none, its own holder, which nothing holds.
+  // (`options.question`, from its force frame) under NOTIONAL asks inside the view its `supposition` link names (the
+  // reader's, readQuestion); with no link, its own holder, which nothing holds.
   const carriedNotional = frames.notional || frames.holder ? undefined : reading.links.find((l) => l.kind === "carriedFrame" && l.key === "carry:notional");
   if (frames.notional || carriedNotional) {
     let supposition = notionalHolder(ctx.id);
+    const asked = frames.notional && tr.options.question === reading.id;
+    const suppositionLink = asked ? reading.links.find((l) => l.kind === "supposition") : undefined;
+    const supposed = suppositionLink?.to ? tr.wraps.get(suppositionLink.to) : undefined;
     if (carriedNotional) {
       const from = carriedNotional.to ? tr.wraps.get(carriedNotional.to) : undefined;
       if (from?.kind !== "view" || !isNotionalHolder(from.holder)) return { construction: carriedNotional.key, key: carriedNotional.key, reason: "noRow" };
       supposition = from.holder;
-    } else if (reading.id.startsWith("?")) {
-      const latest = [...tr.wraps.values()].filter((w) => w.kind === "view" && isNotionalHolder(w.holder)).at(-1);
-      if (latest?.kind === "view") supposition = latest.holder;
+    } else if (supposed?.kind === "view" && isNotionalHolder(supposed.holder)) {
+      supposition = supposed.holder;
+      tr.use(suppositionLink);
     }
     tr.use(frames.notional, carriedNotional);
     tr.holders.set(supposition, "the imagined");

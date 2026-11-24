@@ -7,7 +7,7 @@ import { describe, it } from "node:test";
 import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
-import { buildLog } from "./log.js";
+import { buildLog, readQuestion } from "./log.js";
 import { inRange } from "./translate-helpers.js";
 import { translate } from "./translate.js";
 
@@ -209,5 +209,24 @@ describe("translate: ranges (ranges.md#ranges, open-ranges.md#rays)", () => {
     assert.equal(inRange(v(3), { first: { infinite: 1 }, second: end(3), hook: "uel" }), false);
     assert.equal(inRange(v(5), { first: { infinite: -1 }, second: end(5), hook: "oel" }), true);
     assert.equal(inRange(v(6), { first: { infinite: -1 }, second: end(5), hook: "oel" }), false);
+  });
+});
+
+describe("translate: a NOTIONAL question takes its supposition from the reader's link (reader-solver boundary B5)", () => {
+  // The question's id has no `?`: only the `supposition` link (readQuestion) names the view it asks inside.
+  const holderOf = (texts: string[], question: string): unknown => {
+    const log = logOf(texts);
+    // The solver translates a question without its ask force, naming it as the question (solve.ts `prepare`).
+    const read = readQuestion(log, question, tables)[0]!;
+    const asked = { ...read, frames: read.frames.filter((f) => f.family !== "force") };
+    const wrap = translate({ readings: [...log.readings, asked], entries: log.entries }, { lexicon: tables, question: asked.id }).wraps.get(asked.id);
+    return wrap?.kind === "view" ? wrap.holder : undefined;
+  };
+  it("the latest stated NOTIONAL reading's view; with none, the question's own holder", () => {
+    const pair = ["zazozon theyum vowurol.", "zazozon theyum vowurol vul."];
+    assert.equal(holderOf(pair, "yel zazozon theyum vowurol."), `notional(${JSON.stringify(logOf(pair).readings[1]!.id)})`);
+    assert.equal(holderOf(["zazozon theyum vowurol.", "zazozon vehohel."], "yel zazozon theyum vehohel."), `notional(${JSON.stringify(logOf(["zazozon theyum vowurol."]).readings[0]!.id)})`);
+    // No link: the question's own holder (its id counts the log's utterance), which nothing holds.
+    assert.equal(holderOf(["zazozon vowurol."], "yel zazozon theyum vowurol."), 'notional("q:1.0")');
   });
 });

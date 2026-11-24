@@ -340,12 +340,13 @@ type Prepared =
 function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefined, options: SolveOptions, keepClaim = false, blanks?: ReadonlySet<object>): Prepared {
   const switches = { widen: !!options.widen, defaults: !!options.defaults, closed: !!options.closedWorld };
   let qReading: Reading | undefined;
+  let isQuestion = false;
   if (question && "claim" in question) {
     const frames = isQuestionForce(question);
     // A holder or a say word on the question is the translator's (R2-1): the question is asked inside its wrap.
     // R3-6: so is the holder's own MAY, a term inside the view.
     const holder = frames.some((f) => f.key === "xFamily:holder");
-    // Decision 4 (notional.md#notional-as-if-framing): so is NOTIONAL, asked inside the latest supposition's view.
+    // Decision 4 (notional.md#notional-as-if-framing): so is NOTIONAL, asked inside the view its `supposition` link names.
     const wrapping = (f: Reading["frames"][number]): boolean => f.key === "xFamily:holder" || f.key === "wordFamily:say" || f.key === "overlay:notional:th" || !!f.holderHost || (holder && f.key === "overlay:may:th");
     // R4e-4: a condition hinge on a question asks whether the conditional holds; the translator gives its term.
     const conditional = (f: Reading["frames"][number]): boolean => (f.key === "overlay:clause_hinge:th" || f.key === "overlay:clause_hinge:g") && ["if", "only-if", "iff"].includes(f.values.gloss ?? "");
@@ -355,11 +356,12 @@ function prepare(log: Pick<Log, "readings">, question: Reading | Claim | undefin
       return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: [{ reading: question.id, construction, key: beyond?.key, reason: "noRow" }] } };
     }
     qReading = { ...question, id: `?${question.id}`, frames };
+    isQuestion = question.frames.some((f) => f.family === "force" && f.values.ask !== undefined);
   } else if (question) {
     qReading = { id: "?", source: undefined as never, frames: [], order: [], unordered: [], claim: question, links: [], unread: [] };
   }
   const readings = qReading ? [...log.readings.filter((r) => r !== question), qReading] : log.readings;
-  const translation = translate({ readings, entries: (log as Partial<Log>).entries }, { lexicon: options.lexicon, switches, blanks });
+  const translation = translate({ readings, entries: (log as Partial<Log>).entries }, { lexicon: options.lexicon, switches, blanks, question: isQuestion ? qReading!.id : undefined });
   const left = translation.left.filter((l) => l.reading !== qReading?.id);
   if (qReading && translation.left.length !== left.length) {
     return { ok: false, answer: { verdict: "beyond", because: [], switches: [], left: translation.left } };

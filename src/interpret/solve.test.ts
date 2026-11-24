@@ -7,7 +7,7 @@ import { describe, it } from "node:test";
 import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
-import { buildLog } from "./log.js";
+import { buildLog, readQuestion } from "./log.js";
 import { match } from "./match.js";
 import { readText } from "./read.js";
 import { whyReply } from "./reply.js";
@@ -1444,7 +1444,7 @@ describe("solve: joined verbs (R4d-9, R4d-10)", () => {
 
 describe("solve: NOTIONAL (R4d decision O-6, decision 4)", () => {
   const lk = (...items: string[]) => buildLog(items.map((x, at) => named(fixture("links").get(x) ?? x, at)), tables);
-  const said = async (l: ReturnType<typeof lk>, question: string) => (await follows(l, q(question), base)).verdict;
+  const said = async (l: ReturnType<typeof lk>, question: string) => (await follows(l, readQuestion(l, question, tables)[0]!, base)).verdict;
   const left = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).left.map((x) => [x.reason, x.construction]);
   const notes = (l: ReturnType<typeof lk>) => translate(l, { lexicon: tables }).notes.map((n) => `${n.reading} ${n.frame.key}`);
 

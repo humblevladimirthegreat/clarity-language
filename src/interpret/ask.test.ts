@@ -8,7 +8,7 @@ import { fullGlossIndex } from "../game/build.js";
 import { createClassifyTables } from "../parse/classify.js";
 import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { ask, type Match } from "./ask.js";
-import { buildLog, type Turn } from "./log.js";
+import { buildLog, readQuestion, type Turn } from "./log.js";
 import { readingTree, throughAntecedent, type PathFrame } from "./match.js";
 import { readText } from "./read.js";
 import type { Reading, Term } from "./types.js";
@@ -255,5 +255,16 @@ describe("ask: say words on `v`", () => {
     const at = (gloss: string): number[] => ask(question(gloss), said).map((m) => m.entry?.at ?? -1);
     assert.deepEqual(at("y-question | z-Azozon | v-walk | h-episode-event-ALLOW-said"), [0]);
     assert.deepEqual(at("y-question | z-Azozon | v-walk | h-episode-event-ALLOW-rule"), [1]);
+  });
+});
+
+describe("ask: a NOTIONAL question's supposition link (D1, reader-solver boundary B5)", () => {
+  const said = buildLog(turns("z-Azozon | th-NOTIONAL | v-walk", "z-Azozon | th-NOTIONAL | v-walk"), tables);
+  it("read against the log, it fits only the latest supposition", () => {
+    const asked = readQuestion(said, spell("y-question | z-Azozon | th-NOTIONAL | v-walk"), tables)[0]!;
+    assert.deepEqual(ask(asked, said).map((m) => m.entry?.at), [1]);
+  });
+  it("with no link, it fits every NOTIONAL reading", () => {
+    assert.deepEqual(ask(question("y-question | z-Azozon | th-NOTIONAL | v-walk"), said).map((m) => m.entry?.at), [0, 1]);
   });
 });
