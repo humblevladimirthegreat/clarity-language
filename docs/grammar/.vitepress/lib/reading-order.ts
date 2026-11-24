@@ -252,6 +252,10 @@ export const intermediateUnits: Unit[] = [
       { text: 'Want and decide', link: '/want-and-decide' },
     ],
   },
+  {
+    text: 'Putting it together',
+    items: [{ text: 'How far a word reaches', link: '/word-reach' }],
+  },
 ]
 
 /** Intermediate sittings, flat, in reading order. */
