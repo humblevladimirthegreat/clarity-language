@@ -123,15 +123,13 @@ This holds on someone else's act too. `zazozon vezuyol thawetham` is *Azozon tal
 
 The `/b/` names whose stake it is, not who owns the noun. On `/ɡ/` the noun is still yours: `zewal gawethal blalazun` is *my gift, good for Alazun*. Someone else's thing is `gegunum` plus `/b/`, or `goyom`.
 
-A sake word on the clause stays outside a question, though the question word comes first ([which word covers which](/clause#which-covers-which)). It is your own remark on what the act serves (with no `/b/`, your own stake), so the question asks only about the act.
+A sake word on the clause, with or without a `bl-` word, is your own remark on what the act serves, so it is one of the words that [stay yours](/clause#which-covers-which): a question or a command asks only about the act.
 
 > `yel zazozon vowurol thobatham.`
 >
 > y-question | z-Azozon | v-walk | th-physical-met-any-term
 >
 > "Is Azozon walking? That would be good for my health."
-
-A command works the same way: a sake word on the clause, with or without a `bl-` word, is your remark on what the act serves, and the command asks only for the act.
 
 To ask whether the act serves a need, say the act first and ask about it: `zazozon vowurol. yel zarth gobatham blawan.` is *Azozon walks. Is that good for your health?*
 

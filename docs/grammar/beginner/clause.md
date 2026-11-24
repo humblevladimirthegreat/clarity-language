@@ -177,7 +177,7 @@ With `/h/`, the doubt says how the dog walks. With `/th/`, the doubt is yours, a
 `/th/` marks what is in a mind, and with nothing else marked, that mind is yours, at the moment you speak.
 
 ### Which word covers which {#which-covers-which}
-<!-- Agent summary: a `/th/` stance word is about the whole claim, as are some words taught later (*always*, *I plan*). With two such words, the earlier covers the later: it is about the later word and the claim together, so swapping them changes the meaning (`thewemum thevemem …` = the doubt worries you; `thevemem thewemum …` = the walking would worry you). A noun introducing someone or something new (*a dog* on first mention) takes part too: `zodozel thevemem vowurol.` = there is a dog that I doubt is walking; so put stance words before such a noun. With one such word, its place changes nothing. Ordinary `/h/` adverbs never take part. Table: words with their own rule (speech-act word first in its turn; *because* / *if* clause last, said first and pointed back to in order to cover; own feeling, surprise or benefit stays the speaker's; whose-view word covers the whole clause; join word right after stance words works only on them). -->
+<!-- Agent summary: a `/th/` stance word is about the whole claim, as are some words taught later (*always*, *I plan*). With two such words, the earlier covers the later: it is about the later word and the claim together, so swapping them changes the meaning (`thewemum thevemem …` = the doubt worries you; `thevemem thewemum …` = the walking would worry you). A noun introducing someone or something new (*a dog* on first mention) takes part too: `zodozel thevemem vowurol.` = there is a dog that I doubt is walking; so put stance words before such a noun. With one such word, its place changes nothing. Ordinary `/h/` adverbs never take part. Table: words with their own rule (speech-act word first in its turn; *because* / *if* clause last, said first and pointed back to in order to cover; own feeling, surprise, benefit, or the plan or expectation the event goes against stays the speaker's; whose-view word covers the whole clause; join word right after stance words works only on them). -->
 
 A stance word is about the whole claim, and so are a few other words you will meet later, such as *always* and *I plan*. When one sentence has two such words, the earlier one **covers** the later one: it is about the later word and the claim together. Their order alone sets this, so swapping the two changes what you say.
 
@@ -213,7 +213,7 @@ A few words keep a rule of their own, which their pages give:
 |------|--------------|
 | A speech-act word, such as the one that makes a question | Comes first in its turn, so it covers the rest |
 | A *because* or *if* word | Keeps its clause last, so the words before it cover it. To put it over them, say its clause first and point back to it |
-| A word that only gives your own feeling, your surprise, or whose good the act serves | Stays yours, even in a question: the question asks only about the claim |
+| A word that only gives your own feeling, your surprise, whose good the act serves, or the plan or expectation the event goes against | Stays yours, even in a question: the question asks only about the claim |
 | A word naming whose view the clause gives | Covers the whole clause, wherever it sits |
 | A join word (a word that closes a list, such as *and* or *not*) right after stance words | Works only on those stance words, so it covers nothing else |
 

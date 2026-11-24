@@ -34,7 +34,7 @@ The ending says how firm the expectation was that the news overturned. If you do
 >
 > "Alazun is walking, I see it, and I never expected that."
 
-In a question MIRATIVE stays yours, outside what is asked, as a [speaker attitude](feelings.md#speaker-attitude) does, though the question word comes first ([which word covers which](/clause#which-covers-which)). The surprise is your own, so the question asks only about the claim.
+Your surprise is one of the words that [stay yours even in a question](/clause#which-covers-which), so the question asks only about the claim.
 
 > `yel themem vowurol zazozon.`
 >
