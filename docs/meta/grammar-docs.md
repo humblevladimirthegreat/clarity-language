@@ -255,7 +255,7 @@ Orientation pages, [terminology.md](../grammar/terminology.md), tool pages and c
 ## Agent summaries
 <a id="agent-summaries"></a>
 
-The explanation is written for people. An agent that needs only a section's rules reads them from one HTML comment directly under the section's heading, which the site does not show. `npm run outline -- FILE --summaries` prints each heading with its summary, so an agent can read the rules of a whole page without its prose.
+The explanation is written for people. An agent that needs only a section's rules reads them from one HTML comment directly under the section's heading, which the site does not show. `npm run outline -- FILE --summaries` prints each heading with its summary, so an agent can read the rules of a whole page without its prose. Not every page has summaries yet; on a page without them, the rules are only in the prose.
 
 ```md
 ### MAY {#may}
@@ -610,7 +610,7 @@ Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginne
 
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 
-Before shipping **any stage page or recipe page**, run the [newcomer tests](#newcomer) on each teaching H3, and check that each one has exactly one [agent summary](#agent-summaries) stating only what the H3 teaches.
+Before shipping **any stage page or recipe page**, run the [newcomer tests](#newcomer) on each teaching H3. On a page that has [agent summaries](#agent-summaries), check that each teaching H3 has exactly one, stating only what the H3 teaches.
 
 ## Read-by blocks
 <a id="read-by-blocks"></a>
