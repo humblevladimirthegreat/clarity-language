@@ -31,8 +31,8 @@ describe("boundary table", () => {
       assert.equal(crosses(kind, "outerFrames", "copy"), false);
       assert.equal(crosses(kind, "tone", "copy"), false);
     }
-    // A binder reaches the `blarl` grounds by link (joins.md#everything-ua); a later clause-join member, not yet.
-    assert.equal(crosses("member", "binder", "copy"), false);
+    // A binder reaches the `blarl` grounds by link and a later clause-join member by copy (joins.md#everything-ua).
+    assert.equal(crosses("member", "binder", "copy"), true);
     assert.equal(crosses("grounds", "binder", "link"), true);
     // A bound tag's reach runs on into the sentence a final stand-in points to (universals-domains.md#bound-tags).
     assert.equal(crosses("grounds", "boundTag", "resolve"), true);
@@ -53,7 +53,6 @@ describe("boundary table", () => {
       .filter(({ cell }) => cell.verdict === "unstated" || cell.today !== undefined)
       .map(({ kind, column, cell }) => `${kind} ${column}: ${cellLabel(cell)}`);
     assert.deepEqual(open, [
-      "member binder: passes (today: blocks)",
       "grounds outerFrames: unstated (today: blocks)",
       "grounds carryStart: unstated (today: passes)",
       "grounds carryEnd: unstated (today: passes)",

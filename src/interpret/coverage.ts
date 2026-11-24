@@ -8,7 +8,9 @@
  *   another place that already holds the same word (a holder seam's `party` cut from its own word, a hooked join's
  *   `bound` detail on the join that closes its list) is the same place, not a second one. A term a frame or a
  *   detail hosts (a binder frame's list, a quote frame's quote) and that also fills a role is one place: it counts
- *   nested in the frame that keeps its word, and the role's copy of the same object is skipped.
+ *   nested in the frame that keeps its word, and the role's copy of the same object is skipped. A frame a scope record
+ *   copies into a later clause-join member (the act word, an earlier member's binder) is its word's earlier place in
+ *   the sentence, not a second one.
  * - **pointer places**: a link and an `unread` entry. A link marks the word that carries it, and that word usually has
  *   an own place too (a pronoun's term and its `anaphor` link); an `unread` entry may annotate a frame (`unknown`).
  *   So a pointer place counts only for a word with no own place, and never doubles one.
@@ -199,13 +201,34 @@ export function placements(readings: Reading[]): { hits: Map<LexWord, Hit>; word
 }
 
 /**
+ * Whether `later` is a frame copied from a scope record into a clause-join member, from the reading of `earlier`: the
+ * same frame key, in a member reading, reached from the earlier place's reading only through clause-join members (the
+ * reading around the join, or an earlier member). The turn's act word reaches each member, and a binder reaches the
+ * members after its own (interpreter.md#boundaries, joins.md#everything-ua).
+ */
+function memberCopy(earlier: Placement, later: Placement): boolean {
+  if (!earlier.frame || !later.frame || earlier.place !== later.place) return false;
+  const a = earlier.reading.split("/");
+  const b = later.reading.split("/");
+  let common = 0;
+  while (common < a.length && common < b.length && a[common] === b[common]) common++;
+  const member = (segment: string): boolean => /^m\d+$/.test(segment);
+  return b.length > common && member(b[b.length - 1]!) && a.slice(common).every(member) && b.slice(common).every(member);
+}
+
+/**
  * The own places of one word that are distinct places in one sentence. Two frames the reading orders by word shape
- * (a holder seam and the stance it sits on, interpreter.md#pair-table) are one word's fixed slots: one place.
+ * (a holder seam and the stance it sits on, interpreter.md#pair-table) are one word's fixed slots: one place. A frame
+ * copied into a later clause-join member is its word's earlier place again ({@link memberCopy}).
  */
 function distinct(places: Placement[], wordShape: Map<Frame, Set<Frame>>): Placement[] {
   const out: Placement[] = [];
+  const seen: Placement[] = [];
   for (const place of places) {
-    const same = out.some((o) => place.frame && o.frame && wordShape.get(o.frame)?.has(place.frame));
+    // A member holds one copy: a second frame of the same key in the same reading is a second place.
+    const copy = !seen.some((o) => o.reading === place.reading && o.place === place.place) && out.some((o) => memberCopy(o, place));
+    seen.push(place);
+    const same = copy || out.some((o) => place.frame && o.frame && wordShape.get(o.frame)?.has(place.frame));
     if (!same) out.push(place);
   }
   return out;

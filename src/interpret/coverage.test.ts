@@ -10,7 +10,7 @@ import { glossToAgeben } from "../parse/gloss-inverse.js";
 import { parse } from "../parse/index.js";
 import type { ParseResult } from "../parse/types.js";
 import { coverage } from "./coverage.js";
-import { readParse } from "./read.js";
+import { allReadings, readParse } from "./read.js";
 import type { Reading } from "./types.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -57,6 +57,25 @@ describe("coverage: every word lands in exactly one place", () => {
       cover.doubled[0]!.places.map((p) => p.place),
       ["term:thing", "term:thing"],
     );
+  });
+
+  it("a frame copied into a later clause-join member is its word's earlier place: the act word, a binder", () => {
+    const result = parse("yel zual gwozeduyol veduyol xam zazozon gwozeduyol xan zalazun vudurul.", tables);
+    const readings = readParse(result, { tables });
+    const keys = (id: string): string[] => allReadings(readings).find((r) => r.id === id)!.frames.map((f) => f.key);
+    assert.deepEqual(keys("t:0.0/m2"), ["edge:force", "joinSeries:ua"], "the act word and the first member's binder reach the last member");
+    const cover = coverage(result, readings);
+    assert.deepEqual(raws(cover.missing), []);
+    assert.deepEqual(raws(cover.doubled), []);
+  });
+
+  it("a second frame of the same word in one member is still doubled", () => {
+    const result = parse("zual gwozeduyol veduyol xam zazozon gwozeduyol.", tables);
+    const readings = readParse(result, { tables });
+    const last = allReadings(readings).find((r) => r.id === "t:0.0/m1")!;
+    last.frames.push({ ...last.frames.find((f) => f.key === "joinSeries:ua")! });
+    const cover = coverage(result, readings);
+    assert.deepEqual(raws(cover.doubled), ["zual"]);
   });
 
   it("a holder seam on its stance is one word in two fixed slots: one place", () => {

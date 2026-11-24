@@ -55,8 +55,6 @@ const QUOTE_ACTS = "quote-contents.md#quote-acts";
 
 const passes = (via: BoundaryVia, anchor: string): BoundaryCell => ({ verdict: "passes", via, anchor });
 const blocks = (anchor: string): BoundaryCell => ({ verdict: "blocks", anchor });
-/** A cell a page states, where today's code does otherwise: kept as it is, a finding for the audit. */
-const passesNotToday = (via: BoundaryVia, anchor: string): BoundaryCell => ({ verdict: "passes", via, anchor, today: "blocks" });
 const unstated = (today: "passes" | "blocks", via?: BoundaryVia): BoundaryCell =>
   today === "passes" ? { verdict: "unstated", anchor: "", today, via: via ?? "nesting" } : { verdict: "unstated", anchor: "", today };
 
@@ -71,7 +69,7 @@ export const BOUNDARIES: readonly BoundaryRow[] = [
       carryStart: blocks(CARRY),
       carryEnd: blocks(CARRY),
       carried: passes("nesting", CARRY),
-      binder: passesNotToday("copy", UA),
+      binder: passes("copy", UA),
       boundTag: passes("resolve", BOUND),
       tone: passes("copy", TONE),
     },

@@ -562,7 +562,7 @@ No sentence states an order against another frame.
 
 **Whole clause:** a `ua` / `uo` fence and a phrase that brings in a new member (`slot:newMember`, decided 2026-11-17) each reach from where they stand to the end of the sentence, and on through a stand-in in it.
 
-- Order (within the family and against any frame word): `clause.md#which-covers-which`, as `joins.md#everything-ua` says: "Such a phrase follows the order rule for words that cover the whole clause …: when a clause has two of them, or one and a stance word, the earlier covers the later." Reach: `joins.md#everything-ua`, "reaches from where it stands to the end of its sentence. Whatever comes later is inside it."
+- Order (within the family and against any frame word): `clause.md#which-covers-which`, as `joins.md#everything-ua` says: "Such a phrase follows the order rule for words that cover the whole clause …: when a clause has two of them, or one and a stance word, the earlier covers the later." Reach: `joins.md#everything-ua`, "reaches from where it stands to the end of its sentence. Whatever comes later is inside it." So a binder in one clause-join member reaches every later member: their scope records hold it, ordered against their own frames (the `member` binder cell in [boundaries](#boundaries)).
 - A hook's landmark after a frame word on the hook (`zodozel vezuvel wal al bohehal.`, *never in a house*): the frame word comes first and reaches only the hook's phrase, so its binder nests under that frame word (rule 2; `clause.md#which-covers-which`, `in-clause-hooks.md#hook-w`) and does not pair.
 - `universals-domains.md#bound-tags`: "A bound tag holds from the phrase that assigns it to the end of its sentence, and through every sentence a [stand-in](/dependents#hinges) in that stretch points to".
 - `universals-domains.md#not-every` (against `polarity`): see `polarity`.
@@ -582,7 +582,7 @@ A cell that passes says how it reaches the nested reading:
 - `resolve`: the resolve stage's walk keeps it open across the boundary, as a bound tag's reach.
 - `sentence`: the nested reading is a sentence of its own, and the rule for sentences applies to it.
 
-A stated cell whose code does otherwise says so (`today: blocks`): the code keeps today's behavior, and the cell waits for the audit.
+A stated cell whose code does otherwise says so (`today: blocks`): the code keeps today's behavior, and the cell waits for the audit. Every stated cell holds in the code now.
 
 The columns:
 
@@ -606,7 +606,7 @@ The columns:
 | `carryStart` | blocks, `evidentiality.md#carry-forward` |
 | `carryEnd` | blocks, `evidentiality.md#carry-forward` |
 | `carried` | passes (nesting), `evidentiality.md#carry-forward` |
-| `binder` | passes (copy), today: blocks, `joins.md#everything-ua` |
+| `binder` | passes (copy), `joins.md#everything-ua` |
 | `boundTag` | passes (resolve), `universals-domains.md#bound-tags` |
 | `tone` | passes (copy), `tone-marks.md#showing-your-tone` |
 

@@ -497,8 +497,17 @@ function collectClause(
   for (const unit of clause.units) {
     // One reading per member of a clause join (reader rule 1); the turn's edge frames reach each member.
     if (unit.kind === "clauseCoord") {
+      // A binder reaches to the end of its sentence (joins.md#everything-ua): an earlier member's binder frames reach
+      // each later member too.
       const members = [unit.coord.first, ...unit.coord.links.map((link) => link.clause)];
-      for (const member of members) if (member) collectClause(member, utteranceIndex, copied(reaching, "member"), tables, blanks, out, tones);
+      const binders: ScopeFrame[] = [];
+      for (const member of members) {
+        if (!member) continue;
+        const passed = copied([...reaching, ...binders], "member");
+        const at = out.length;
+        collectClause(member, utteranceIndex, passed, tables, blanks, out, tones);
+        binders.push(...out[at]!.frames.filter((frame) => frame.family === "binder" && !passed.includes(frame)));
+      }
     }
   }
   // A dependent is a nested reading with its own frames (reader rule 2).
