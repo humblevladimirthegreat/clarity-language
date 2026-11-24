@@ -188,7 +188,209 @@ One commit per unit after its gate, staged with that unit's files only. Each is 
 
 ## Open decisions
 
-None open: D1 and D2 are settled (Status). U6 adds D3 onward.
+D1 and D2 are settled (Status). D3 to D14 come from the U6 audit, run against `tmp/logs/scope-report.md` after U5 and a batch of readings (`reading.mjs --file`). Groups that would land together: **G1** D3; **G2** D4, D6 and D8 (wording and editor notes, no reading changes); **G3** D5 and D7 (profile escapes and member cases); **G4** D9 (binder and bound-tag reach); **G5** D10, D11 and D12 (unstated cells, asides, quotes and slots); **G6** D13 and D14 (code tidy).
+
+### D3. Stacked hinges: one rule instead of two glosses
+
+**Problem.** `stackedHinge` in `read.ts` (and `stackedNounHinge`) matches two glosses: an *only-if* hinge with no `/b/` right before a *because* hinge with one shares its `/b/`. Two other stacks are stated and not read. `because-and-iff.md#choosing-a-hinge`: "For *even if*, put the *although* hinge `thezem` right before `thohem`." `cause.md#mechanism`: "`thewom` right before the hinge, and the trigger in the hinge's `/b/`." Read today, `zazozon vowurol thewom thohem blerulal.` and `zazozon vowurol thezem thohem blarl zalazun vezuvel.` leave `thewom` and `thezem` with no hosted term; only `thebem thahum` shares it.
+
+**Options.**
+1. Keep as is: two glosses; *even if* and CAUSE stacks stay unread.
+2. Add the two stated stacks as further gloss pairs.
+3. One word-shape rule: a `/th/` hinge-family word (`overlay:clause_hinge:th`, `overlay:cause:th`) with no `/b/` right before a `/th/` hinge that has one shares that hinge's `/b/` and grounds link; the same on `/ɡ/` among a noun's details.
+4. Option 3 for any frame word with an empty `/b/` (F6 as seeded). MAY or a channel right before a hinge (`theyom thahum blarl`, `thomam thahul blarl`) have no `/b/` to share, so this reads nothing more than option 3 and states a broader rule than any page does.
+
+**Pages and examples.** Option 3: no grammar page changes; `interpreter.md` hinge scope statements add the two anchors. About 14 distinct doc examples gain a hosted term (`thewom` + hinge on `cause.md` and `say-reasons.md`, `thezem thohem` on `because-and-iff.md`, `say-reasons.md` and the *why* cheat sheet).
+
+**Learner.** None directly: the pages already teach all three stacks. The solver can then answer *what triggered it* and *even if what* questions on them.
+
+**Class.** Autonomous (following the grammar): each stack is stated on its page; option 3 only reads what they say. Option 4 would be blocking (precedent: a rule for every frame word that no page states).
+
+**Recommendation:** (high) option 3. It covers every stated stack with one rule keyed on word shape, as the pages describe it ("right before the hinge"), and drops the gloss match.
+
+### D4. The act word's rows as one statement
+
+**Problem (F1).** The `edge` rule gives every body family that does not escape `force` its own pair-table row (103 examples), each citing the act-word anchor. They all follow from the act word standing on the turn's edge outside the body (reader rule 2). The beginner table in `clause.md#which-covers-which` already says it once.
+
+**Options.** 1. Keep the rows as they are. 2. Keep the derived rows in code (the frozen-rows test guards them), and in `interpreter.md` replace the edge rows of the pair table with one line: the act word covers every body frame that does not escape `force`, by tree nesting.
+
+**Pages and examples.** `interpreter.md` only; no grammar page, no reading changes.
+
+**Learner.** None: editor notes.
+
+**Class.** Autonomous (writing, code shape).
+
+**Recommendation:** (high) option 2, if the pair table is hand-kept; if it is generated, have the generator fold the edge rows.
+
+### D5. Remarks that stay yours: one class or four behaviors
+
+**Problem (F2).** Four families escape different frames. `attitude` escapes `force`, `holder`, a carried frame (its `/th/` roots) and other remarks. `mirative` escapes `force` and remarks. `sake` escapes `force`, remarks, and a carried frame (its feeling words). `contrary` escapes only remarks: `yel zazozon vowurol uom thagom.` reads the act word over the `uom` frame. The pages do not let all four collapse: `holder.md#what-the-holder-covers` says a sake word after the holder is the holder's ("The second is Azozon's"), so `sake` cannot escape `holder`. No page states `mirative` against a holder (today the holder covers it) or `contrary` in a question.
+
+**Options.**
+1. Keep as is.
+2. One class for the `force` escape: all four remarks stay outside a question and commute with each other; `holder` and carried-frame escapes stay per family, as their pages state. Only `contrary` changes: in a question, `uom` + its word stays yours.
+3. Full unification: one class escaping `force`, `holder` and the carried frame. Contradicts the sake sentence of `holder.md` and changes `holder > mirative` readings.
+
+**Pages and examples.** Option 2: `contrary-to.md` gains a sentence on questions; the beginner table row *A word that only gives your own feeling, your surprise, or whose good the act serves* adds *or what the event went against*. Two examples change (`force > contrary`: 2 in the report). Option 3: `holder.md`, `mirative.md`, and 5 `sake > holder` plus 2 `holder > mirative` examples.
+
+**Learner.** Option 2 turns three named words in the beginner row into one class with four members, and one more word to learn in it. Option 3 would contradict what `holder.md` teaches.
+
+**Class.** Blocking (precedent): option 2 sets a rule for a family of constructions and gives `contrary` a reading in a question no page states.
+
+**Recommendation:** (low) option 2. *Contrary to plan* in a question reads naturally as the asker's own remark, as surprise does, but no page says so. A `contrary-to.md` sentence on questions, or the user's judgment of `yel zazozon vowurol uom thagom.`, would settle it.
+
+### D6. The holder: covers its clause, except sake and *so that*
+
+**Problem (F3).** The holder is the one clause frame free of position: it covers everything in its clause (13 `covers:holder` examples, 102 `seam:holder`), except a sake word and a hinge, which follow text order against it (exceptions `sake-holder`, `hinge-holder`, 6 examples each). The beginner table says the holder "covers the whole clause, wherever it sits", which a sake word or *so that* before the holder contradicts.
+
+**Options.**
+1. Keep the model as is.
+2. Keep the model, and make the beginner row exact: *Covers the whole clause, wherever it sits, except a sake or* so that *word before it*. Or link the row to `holder.md#what-the-holder-covers` for the two cases.
+3. The holder follows text order like every frame. Contradicts `holder.md#what-the-holder-covers` against `occasion` ("a sweeping *never* or *always* covers only the times you both remember", with `hal` before the holder: `zawan vebal hal thevumayan.`), and "covers its clause".
+4. The holder covers sake and hinges too. Contradicts the two `holder.md` sentences that are the exceptions.
+
+**Pages and examples.** Option 2: one row on `clause.md`; no reading changes. Option 3: `holder.md`; 13 `covers:holder` examples change. Option 4: `holder.md`, `holder-plans-and-motives`; 12 examples change.
+
+**Learner.** Option 2 removes a beginner rule that the intermediate page then breaks. Options 3 and 4 trade one exception for a reading the pages now teach otherwise.
+
+**Class.** Option 2 autonomous (writing). Options 3 and 4 blocking (contradiction).
+
+**Recommendation:** (high) option 2. Both exceptions are stated on `holder.md` with reasons a learner can follow (whose aim, whose stake); the beginner row is the only thing that misleads.
+
+### D7. A channel's own cases: one reason, or drop them
+
+**Problem (F4).** A channel commutes with `attitude` and `mirative` and covers a hinge wherever it sits (`member:channel`, 31 examples), while MAY follows text order against all three (`thomam thevemem …` reads MAY over the attitude; `zazozon thahum blerulal thomam vowurol.` the hinge over MAY). Each case cites its own page sentence. Also, `evidentiality.md#evidence-clause` says "A cause or condition word may not come before the channel", but `zazozon thahum blerulal theyom vowurol.` parses and reads the channel over the hinge.
+
+**Options.**
+1. Keep the three cases as they are.
+2. Keep the readings, and state one reason on `evidentiality.md`: a channel says what backs the claim, so it is neither about your feeling or surprise nor under them, and a cause or condition is part of what it backs. The three member cases cite that one sentence.
+3. Drop the cases: a channel follows text order like MAY. Changes up to 31 examples and contradicts `evidentiality.md#evidence-clause` and `feelings.md#speaker-attitude` ("the channel says what backs it").
+4. For the hinge-before-channel order the page forbids: reject it, or keep reading it as now.
+
+**Pages and examples.** Option 2: `evidentiality.md` gains one sentence; no reading changes. The reason must not reach `sake` or `contrary`: a channel against those follows text order today (8 `sake`/channel examples).
+
+**Learner.** Option 2 gives one reason in place of three facts. Option 4's rejection would ban a form the learner may reach for.
+
+**Class.** Option 2 review later (new learning: a reason stated on a grammar page). Option 3 blocking (contradiction). Rejecting under option 4 is blocking (restricting the language).
+
+**Recommendation:** (medium) option 2, and keep reading the hinge-first order as today: the page's *may not* is advice the reading already honors, since the channel covers the hinge either way.
+
+### D8. MAY under a holder does not carry
+
+**Problem (F5).** `zalazun thomamazozon vudurul. zalazun vezuvel.` carries the holder to the next sentence and not the MAY; with a channel (`theyomazozon`) both carry. `holder.md#naming-a-holder` states it: "A holder on MAY carries too, but the MAY stays on its own sentence."
+
+**Options.** 1. Keep as is. 2. MAY carries with its holder. 3. A holder on MAY does not carry.
+
+**Pages and examples.** Options 2 and 3 change `holder.md` and the `carry:holder` link on MAY examples (1 in the report).
+
+**Learner.** The asymmetry is taught in one sentence with its reason (MAY is not how you learned the claim). Options 2 and 3 replace a stated rule.
+
+**Class.** Options 2 and 3 blocking (contradiction).
+
+**Recommendation:** (high) option 1. It is stated, and MAY is not a channel, so it has no reason to carry.
+
+### D9. Binder and bound-tag reach from the boundary table
+
+**Problem (F8, F9, F11).** `joins.md#everything-ua` says a binder reaches to the end of the sentence and into the sentence a `blarl` points to. Today a binder in one clause-join member is not in a later member's scope (`zual gogozel vehohel xan zazozor vowurol.` puts `zual` in member 1 only), and nothing carries it into the grounds sentence (`zual gogozel vezuvel thahum blarl. gogozer vowurol.` links the grounds but not the binder). The `member` and `grounds` binder cells say *passes, today: blocks*. Bound-tag reach lives in `resolve.ts`, so the `boundTag` cells are recorded and never consulted. No doc example has a `blarl` sentence with its next sentence, so the `grounds` row is never exercised.
+
+**Options.**
+1. Keep as is: cells record the page, the code keeps today's reach.
+2. Carry out the page: the binder copies into later members and reaches the grounds sentence through the grounds link; `resolve.ts` reads the `boundTag` cells; add one example of a binder with a `blarl` sentence after it to `joins.md#everything-ua`.
+3. Reword `joins.md` to today's behavior (the binder stops at the member and at the period).
+
+**Pages and examples.** Option 2: `joins.md` gains one example; readings change only in member examples with a binder in a non-final member (the `member` row has 50 examples in all; `scope-report -- --diff` gives the count). The `boundTag` change should change no reading; if it does, that is a finding.
+
+**Learner.** Option 2 makes the reader do what the beginner page teaches. Option 3 narrows a taught rule.
+
+**Class.** Option 2 autonomous (following the grammar). Option 3 blocking (contradiction).
+
+**Recommendation:** (high) option 2 for the bound tags (code shape only); (medium) for the binder cells, because the member case changes readings and its one sentence ("to the end of its sentence") is all the page says about joins.
+
+### D10. The unstated boundary and slot cells
+
+**Problem (F7, U5 a).** 25 boundary cells and 28 slot cells are `unstated (today: …)`. With examples behind them: `standInDependent` outer frames and carried frame (239 examples), `quote` outer frames, holder and binder (55), `member` outer frames, holder and carried frame (50), `slotDependent` outer frames, carried frame, binder and bound tag (21). The `grounds` and `aside` cells have no example (D11). The slot cells sit on `standInBack`, `hookResume`, `supposition`, `sentenceBefore` and `answer`: statement word, *by the way*, goodbye, kept and quote, plus a new value on `hookResume`, `supposition` and `answer`.
+
+**Options.**
+1. Leave them unstated.
+2. State the cells that have examples, as today's behavior, each on its owning page (`dependents.md`, `quote-contents.md`, `joins.md`, `stand-in-vowels.md`, `in-clause-hooks.md`, `sentence-linkers.md`, `questions.md`), one decision per cell where a page sentence would read oddly; the rest stay unstated.
+3. State every cell, the example-less ones included.
+
+**Pages and examples.** Option 2: about 7 pages gain a sentence or a table row; no reading changes, since each cell keeps today's behavior. Any cell whose today's behavior a page author would not write is split out as its own decision.
+
+**Learner.** Option 2 answers questions a learner can meet in the examples (does my channel cover the dependent? does `darth` look past *by the way*?). Option 3 adds rules for cases no example shows.
+
+**Class.** Review later (new learning on each page), stricter because the cells are many; any cell that turns out to need a reading other than today's is blocking (precedent).
+
+**Recommendation:** (medium) option 2. It closes the cells learners meet without adding rules for cases nobody writes yet; D12 settles the quote cells of `standInBack` and `hookResume` first.
+
+### D11. Asides have no nested reading
+
+**Problem (F11).** The reader reads an aside `th(…)` as a `quote`-family frame (`unit:writingSpan`) with no nested reading: in `zahelan vozuyel th(zalazun vozumul).` the aside's words are never read, so the `aside` boundary row (7 unstated cells, 1 stated) governs nothing, and the report counts asides under `quote`. `spans.md#asides-th` states what an aside is ("a clause with the same speech act as the outer sentence").
+
+**Options.**
+1. Keep as is: the row waits for asides to be read.
+2. Drop the `aside` row until asides are read.
+3. Read an aside's content as a nested reading of its own kind, with its own frame family in the report, and then settle its cells (D10).
+
+**Pages and examples.** Option 3: the aside examples on `spans.md`, `review.md` and `span-nesting.md` gain a nested reading; no grammar page changes until the cells are stated.
+
+**Learner.** None until the solver answers questions about what an aside says; then option 3 makes asides count.
+
+**Class.** Option 3 autonomous (following the grammar: `spans.md` says an aside is a clause). Option 2 autonomous (code shape).
+
+**Recommendation:** (medium) option 1 now, and option 3 as its own item or proposal: reading asides is work beyond simplifying the scope model, and the row records what to settle when it lands.
+
+### D12. Quotes and point-back slots
+
+**Problem (U5 b, c, d).** (b) `pointBackLinks` runs over every reading, quotes included: in `zalazun vehohel. zahelan d[ zazozon vezuyol darth ] varuyol.` the `darth` inside the quote links to the sentence before the quote, and a target found inside the quote can be overwritten or deleted when the outer sentences are resolved again (medium confidence, from U5). The `standInBack` and `hookResume` quote cells are `unstated (today: passes)`, while the carried frame, topic, sentence before and answer all block. (c) The NOTIONAL supposition a question points to is shared across speakers and not ended by `yal`, `xavedam` or a goodbye; the NOTIONAL carried frame is per speaker and ended by all three, so the two can disagree. (d) The reader is not told who says each sentence (`speakerOf` returns `""`).
+
+**Options.**
+- (b) 1. Keep as is. 2. A quote blocks both slots: a point-back inside a quote looks only within the quote, as a topic does (`topic.md#topic-dependents`). 3. Passes, but resolve each reading once, so a target inside the quote is kept.
+- (c) 1. Keep as is. 2. The supposition ends on the carried frame's end events, and stays shared, so another speaker's question can point to your story. 3. Derive the supposition from the carried frame outright (per speaker).
+- (d) Pass speakers to the reader when a slot row becomes per speaker; until then, nothing.
+
+**Pages and examples.** (b) option 2: `stand-in-vowels.md#stand-in-back` and `in-clause-hooks.md#hook-resume` gain a sentence each; no doc example has a point-back inside a quote, so no reading in the corpus changes. (c) option 2: `notional.md#notional-as-if-framing` gains a sentence; the corpus has no example where the two disagree.
+
+**Learner.** (b) option 2 gives the learner one rule: nothing from outside reaches into a quote. (c) option 2 makes a supposition end where the story's frame ends.
+
+**Class.** (b) review later (meanings: an unstated cell gets a value); the double-resolve fix itself is autonomous. (c) review later. (d) autonomous (code shape).
+
+**Recommendation:** (b) (medium) option 2: it matches the four other slots and `evidentiality.md#carry-forward` ("A quote keeps its speaker's frame"). (c) (low) option 2: it keeps a listener's question about your story working, which option 3 would break; a `notional.md` sentence on whether `yal` ends a supposition would settle it. (d) (high) defer.
+
+### D13. Placement stage tidy
+
+**Problem (U4 a to d).** (a) An island or verb-list item with two whole-clause frames of its own now gets order entries; the corpus has none (24 island readings, each with at most one own frame). (b) `placeFrame` still places a whole-clause frame missing from a record, which reader rule 3 says the reader never does; no corpus case reaches it. (c) The `island` boundary row (`what: "a scope island"`) also covers verb-list items and does not say so. (d) Every island gets a record, read or not.
+
+**Options.** (a) Keep; add a scope test with two frames in an island, or not. (b) Keep, or make the missing record an `unread` entry so rule 3 holds in code. (c) Keep, or say *a scope island or a verb-list item with words of its own* in `boundaries.ts` and `interpreter.md`. (d) Keep.
+
+**Pages and examples.** `boundaries.ts`, `read-context.ts`, `interpreter.md`; no reading changes.
+
+**Learner.** None.
+
+**Class.** Autonomous (code shape, writing).
+
+**Recommendation:** (high) add the island test (a), raise `unread` for (b), reword the row (c), keep (d): an unread island's record costs nothing and keeps the walk generic.
+
+### D14. Other rules keyed on one construction
+
+**Problem.** The audit's grep for rules that match one key or gloss (`values.gloss ===`, `key === "`) finds, besides `stackedHinge` (D3):
+- `isGreetingScope` (`carry.ts`): a greeting (`reading:greeting`) neither takes nor ends a carried frame. No page states it; it acts as `claims: false` does for WANT, PLAN and DECISION (`evidentiality.md#carry-forward`: "A sentence that only plans, wants, or decides claims nothing: it takes no frame and does not end it").
+- `PHRASE_FRAMES` (`read-context.ts`): `slot:newMember` and `reading:greeting` host the phrase their word heads.
+- The occasion list on `lexReading:restrictor` (`scope.ts`), the `edge:force` lookups for the question type and for `-rth` (`read.ts`), `joinSeries:u:kind` in `noKindBinder`, and `slot:newMember` in `framedMember`: each is the one construction its page describes.
+- `readStanceList` matches word shape (a `/th/` join that closes stance words), not a key: nothing to change.
+
+**Options.**
+1. Keep all as is.
+2. Fold the greeting into the `claims: false` member property, and state on `evidentiality.md#carry-forward` that a greeting, like a plan, claims nothing; keep the rest.
+3. Also move `PHRASE_FRAMES` to a property of its frame-key rows (`hostsPhrase`).
+
+**Pages and examples.** Option 2: one sentence on `evidentiality.md`; no reading changes. Option 3: `scope.ts` and `read-context.ts` only.
+
+**Learner.** Option 2 states a rule the reader already follows and the learner would guess (a greeting is not a claim).
+
+**Class.** Option 2 review later (a page sentence that gives greetings a carry rule). Option 3 autonomous (code shape).
+
+**Recommendation:** (medium) option 2, and option 3 only if a third phrase-hosting frame appears: with two members a set is as clear as a property.
 
 ## Background
 
