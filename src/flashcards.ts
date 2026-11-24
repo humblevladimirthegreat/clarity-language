@@ -13,11 +13,13 @@ import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
 import { overlayExamples, type OverlayExample } from "./flashcards-examples.js";
 import { endingNotes } from "./flashcards-endings.js";
+import { soundNameNotes } from "./flashcards-names.js";
 import { overlaySlotNotes, overlayWordNotes } from "./flashcards-overlays.js";
 import { packUnits, type PackUnit } from "./flashcards-packs.js";
 import { overlaySetNotes } from "./flashcards-sets.js";
 import { pageSections, type Band, type PageSections } from "./lint/learning-order.js";
 import { loadDefaultTables } from "./parse/index.js";
+import { loadSoundNames, type SoundNameRow } from "./sound-names.js";
 import { grammarFile, readData, REPO_ROOT } from "./repo-paths.js";
 
 export type NoteSource = "root" | "compound" | "closed" | "overlay" | "set";
@@ -51,9 +53,10 @@ export type FlashcardNote = LexiconNote | OverlayNote | SetNote;
  * `closed` are the closed function words (`data/closed-words.csv`), in checkpoint order;
  * `overlays` are word notes; `slots` are slot notes, a known form in a new slot at a later checkpoint;
  * `sets` are set notes over word notes (`flashcards-sets.ts`), each after its members;
- * `endings` are the scale note and the ending notes (`flashcards-endings.ts`).
+ * `endings` are the scale note and the ending notes (`flashcards-endings.ts`);
+ * `names` are the digit-syllable and letter-name set notes (`flashcards-names.ts`).
  */
-export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; closed: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[]; sets: SetNote[]; endings: SetNote[] };
+export type FlashcardNotes = { roots: LexiconNote[]; compounds: LexiconNote[]; closed: LexiconNote[]; overlays: OverlayNote[]; slots: OverlayNote[]; sets: SetNote[]; endings: SetNote[]; names: SetNote[] };
 
 /** A note's field values in its note type's field order. */
 export function fieldValues(note: FlashcardNote): string[] {
@@ -67,6 +70,7 @@ export type FlashcardInputs = {
   compounds: readonly CompoundRow[];
   overlays: readonly OverlayRow[];
   closedWords: readonly ClosedWordRow[];
+  soundNames: readonly SoundNameRow[];
   checkpoints: readonly Checkpoint[];
   /** Band of the section a `page.md#id` anchor lands in. */
   anchorBand: (anchor: string) => Band | undefined;
@@ -206,11 +210,13 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "units">,examples?: Rea
   const sets = overlaySetNotes(inputs, overlays);
   // The scale note and one ending note per scale-ending kind (flashcards-endings.ts).
   const endings = endingNotes(inputs);
+  // One cloze note per group of digit syllables and letter names (flashcards-names.ts).
+  const names = soundNameNotes(inputs);
 
-  const all = [...roots, ...compounds, ...closed, ...overlays, ...slots, ...sets, ...endings];
+  const all = [...roots, ...compounds, ...closed, ...overlays, ...slots, ...sets, ...endings, ...names];
   const release = releaseTag(all);
   for (const note of all) note.tags.push(release);
-  return { roots, compounds, closed, overlays, slots, sets, endings };
+  return { roots, compounds, closed, overlays, slots, sets, endings, names };
 }
 
 /**
@@ -324,6 +330,7 @@ export function loadFlashcardInputs(
     compounds: parseCompoundCsv(readData("lexicon-compounds.csv")),
     overlays: parseOverlayCsv(readData("lexicon-overlays.csv")),
     closedWords: loadClosedWords(),
+    soundNames: loadSoundNames(),
     checkpoints: stageCheckpoints(pages.map((p) => p.page), (page) => markdown.get(page), loadDefaultTables(), reviewPages),
     anchorBand: (anchor) => {
       const [page, id] = anchor.split("#") as [string, string | undefined];

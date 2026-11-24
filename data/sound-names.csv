@@ -1,0 +1,29 @@
+group,form,reading,cue,anchor,checkpoint
+digits,ba,1,,numbers.md#counts,numbers.md#beginner-practice
+digits,do,2,,numbers.md#counts,numbers.md#beginner-practice
+digits,ge,3,,numbers.md#counts,numbers.md#beginner-practice
+digits,hu,4,,numbers.md#counts,numbers.md#beginner-practice
+digits,za,5,,numbers.md#counts,numbers.md#beginner-practice
+digits,vo,6,,numbers.md#counts,numbers.md#beginner-practice
+digits,re,7,,numbers.md#counts,numbers.md#beginner-practice
+digits,lu,8,,numbers.md#counts,numbers.md#beginner-practice
+digits,na,9,,numbers.md#counts,numbers.md#beginner-practice
+digits,mo,0,,numbers.md#counts,numbers.md#beginner-practice
+digit-letters,bu,b,boo,letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,de,d,den,letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,go,g,go (no glide),letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,ha,h,ha,letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,zu,z,zoo,letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,ve,v,vet,letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,ro,r,row (no glide),letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,la,l,la,letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,nu,n,noon (the noo),letter-names.md#letter-names,proper-names.md#intermediate-practice
+digit-letters,me,m,met,letter-names.md#letter-names,proper-names.md#intermediate-practice
+other-letters,tho,th,though (no glide),letter-names.md#letter-names,proper-names.md#intermediate-practice
+other-letters,wa,w,wander,letter-names.md#letter-names,proper-names.md#intermediate-practice
+other-letters,yu,y,you,letter-names.md#letter-names,proper-names.md#intermediate-practice
+other-letters,xe,x,shed,letter-names.md#letter-names,proper-names.md#intermediate-practice
+vowels,u,u,you (without the y),letter-names.md#letter-names,proper-names.md#intermediate-practice
+vowels,a,a,spa,letter-names.md#letter-names,proper-names.md#intermediate-practice
+vowels,o,o,Cambodia (no glide),letter-names.md#letter-names,proper-names.md#intermediate-practice
+vowels,e,e,bet,letter-names.md#letter-names,proper-names.md#intermediate-practice

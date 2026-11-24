@@ -45,8 +45,16 @@ Editors only. How the Anki packs are generated, keyed, checked and published. Th
   | Recognition | The example, overlay highlighted | Definition; per-slot readings when they differ; host's concrete sense; *new slot of* (slot notes); morph gloss of the example; link to the anchor section; mnemonic |
   | Production | Definition, and the example with the overlay blanked | The full example, then the recognition back |
 
-- **Ageben set:** `text` is cloze HTML, one `{{cN::<code>…</code>}}` per member with its English after it, so the other members show on each card. Scale, ending and set notes all use it.
+- **Ageben set:** `text` is cloze HTML, one `{{cN::<code>…</code>}}` per member with its English after it, so the other members show on each card. Scale, ending, name and set notes all use it.
 - **Claritish:** `meaning` is HTML and is not escaped by the packager; `meaningHtml` escapes the text it builds from. Claritish and Ageben notes never share a note type.
+
+## Digit and letter names {#sound-names}
+
+[`data/sound-names.csv`](../../data/sound-names.csv) owns the digit syllables and the letter names (`group`, `form`, `reading`, `cue`, `anchor`, `checkpoint`); [`src/flashcards-names.ts`](../../src/flashcards-names.ts) builds one Ageben set note per group: `digits`, `digit-letters`, `other-letters`, `vowels`. Each blank hides a name, and the digit or letter it names shows beside it; a vowel also shows its English cue, because a vowel's name is the vowel.
+
+- **Checkpoint:** a row's `checkpoint` is the stage checkpoint whose Practice unlocks the note, one per group. Digits unlock at `numbers.md#beginner-practice`. `letter-names.md` has no checkpoint, so its names unlock at the next intermediate one in the sidebar, `proper-names.md#intermediate-practice`. The note is tagged `ageben::names` and `ageben::names::<group>`; its key and GUID spelling is `names:<group>`.
+- **Link:** the row's `anchor`.
+- **Kept current by `npm test`** (`src/sound-names.test.ts`): the `digits` rows must equal the Digit / Syllable table of `numbers.md`; the three letter groups together must equal the Ageben / Name / Cue table of `letter-names.md`, letter, name and cue, in page order; `digit-letters` must equal the digit-syllable table there; and each digit letter's name must be its digit syllable's consonant with the opposite vowel. Change a table and the CSV together.
 
 ## Overlay notes {#overlay-notes}
 

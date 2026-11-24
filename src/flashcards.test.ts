@@ -43,7 +43,7 @@ const examples = overlayExamples(inputs.overlays, inputs, tables);
 const elapsed = Math.round(performance.now() - started);
 const notes = buildNotes(inputs, examples);
 const rebuild = (published: typeof inputs.published) => buildNotes({ ...inputs, published }, examples);
-const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.closed, ...n.overlays, ...n.slots, ...n.sets, ...n.endings];
+const allNotes = (n: FlashcardNotes) => [...n.roots, ...n.compounds, ...n.closed, ...n.overlays, ...n.slots, ...n.sets, ...n.endings, ...n.names];
 
 describe("buildNotes", () => {
   it("makes one note per published root, compound, and overlay sense form an ending note does not cover", () => {
@@ -204,7 +204,7 @@ describe("buildNotes", () => {
       const cp = inputs.checkpoints.find((c) => c.anchor === n.core)!;
       assert.deepEqual(cps, [`ageben::cp::${cp.page.replace(/\.md$/, "")}::${cp.band}`], n.key);
     }
-    for (const n of [...notes.overlays, ...notes.slots, ...notes.sets, ...notes.endings]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
+    for (const n of [...notes.overlays, ...notes.slots, ...notes.sets, ...notes.endings, ...notes.names]) assert.equal(n.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, n.key);
     assert.ok(!notes.roots.some((n) => n.tags.some((t) => t.startsWith("ageben::core::"))));
   });
 
@@ -359,7 +359,7 @@ describe("ending notes", () => {
 describe("packs", () => {
   const cpOf = (n: FlashcardNote) => n.tags.find((t) => t.startsWith("ageben::cp::"));
   const bandPacks = BANDS.map((band) => buildPack(band, notes, inputs));
-  const grammarNotes = [...notes.closed, ...notes.overlays, ...notes.slots, ...notes.sets, ...notes.endings];
+  const grammarNotes = [...notes.closed, ...notes.overlays, ...notes.slots, ...notes.sets, ...notes.endings, ...notes.names];
   const coreNotes = [...notes.roots, ...notes.compounds].filter((n) => n.core);
 
   it("puts every core word, closed word and grammar note in one band pack, the band of its checkpoint", () => {
@@ -401,7 +401,7 @@ describe("packs", () => {
       : n.source === "closed" ? 1
       : n.model === OVERLAY_MODEL ? (n.fields.slot_of ? 3 : 2)
       : n.key.includes("@") ? 5 : 4;
-    const kindOf = (n: FlashcardNote) => (n.model === OVERLAY_MODEL ? n.fields.kind : n.key === SCALE_NOTE_KEY ? "sake" : n.tags.find((t) => t.startsWith("ageben::overlay::"))!.slice(17));
+    const kindOf = (n: FlashcardNote) => (n.model === OVERLAY_MODEL ? n.fields.kind : n.key === SCALE_NOTE_KEY ? "sake" : n.tags.includes("ageben::names") ? "names" : n.tags.find((t) => t.startsWith("ageben::overlay::"))!.slice(17));
     let checked = 0;
     for (const checkpoint of inputs.checkpoints) {
       const here = checkpointNotes(notes, checkpoint);
@@ -423,6 +423,22 @@ describe("packs", () => {
     const sakes = checkpointNotes(notes, inputs.checkpoints.find((c) => c.anchor === "sakes.md#beginner-practice")!);
     const scale = sakes.findIndex((n) => n.key === SCALE_NOTE_KEY);
     assert.ok(scale > 0 && kindOf(sakes[scale - 1]!) === "sake", sakes.map((n) => n.key).join(" "));
+  });
+
+  it("digit-syllable and letter-name notes: one cloze set per group, one blank per row, at the row's checkpoint", () => {
+    assert.deepEqual(notes.names.map((n) => n.key), ["names:digits", "names:digit-letters", "names:other-letters", "names:vowels"]);
+    for (const note of notes.names) {
+      const group = note.key.slice("names:".length);
+      const rows = inputs.soundNames.filter((r) => r.group === group);
+      assert.equal(noteCards(note), rows.length, note.key);
+      assert.equal(note.tags.filter((t) => t.startsWith("ageben::cp::")).length, 1, note.key);
+    }
+    const digits = notes.names[0]!;
+    assert.equal(digits.fields.text.split(" · ")[0], "{{c1::<code>ba</code>}} 1");
+    assert.ok(checkpointNotes(notes, inputs.checkpoints.find((c) => c.anchor === "numbers.md#beginner-practice")!).includes(digits));
+    const letters = notes.names.slice(1);
+    const intermediate = checkpointNotes(notes, inputs.checkpoints.find((c) => c.anchor === "proper-names.md#intermediate-practice")!);
+    for (const n of letters) assert.ok(intermediate.includes(n), n.key);
   });
 
   it("no checkpoint adds more than 45 new cards", () => {

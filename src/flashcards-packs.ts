@@ -57,6 +57,7 @@ function cpTagOf(note: FlashcardNote): string | undefined {
 function groupKind(note: FlashcardNote): string {
   if (note.model === OVERLAY_MODEL) return note.fields.kind;
   if (note.key === SCALE_NOTE_KEY) return "sake";
+  if (note.tags.includes("ageben::names")) return "names";
   const tag = note.tags.find((t) => t.startsWith("ageben::overlay::"));
   if (!tag) throw new Error(`${note.source} ${note.key}: no overlay kind tag`);
   return tag.slice("ageben::overlay::".length);
@@ -71,7 +72,7 @@ export function checkpointNotes(notes: FlashcardNotes, checkpoint: { anchor: str
   const at = (list: readonly FlashcardNote[]) => list.filter((n) => cpTagOf(n) === tag);
   const core = [...notes.roots, ...notes.compounds].filter((n) => n.core === checkpoint.anchor);
   const groups = new Map<string, FlashcardNote[]>();
-  for (const note of [...at(notes.overlays), ...at(notes.slots), ...at(notes.endings), ...at(notes.sets)]) {
+  for (const note of [...at(notes.overlays), ...at(notes.slots), ...at(notes.endings), ...at(notes.sets), ...at(notes.names)]) {
     const kind = groupKind(note);
     groups.set(kind, [...(groups.get(kind) ?? []), note]);
   }
