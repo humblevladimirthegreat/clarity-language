@@ -18,9 +18,9 @@ A finding is a cause of avoidable cost that adds up to at least 30k weighted tok
 ## Measure
 
 1. Run `npm run -s token-report -- --session <id1>,<id2>,…` once, with every session id from the prompt. It nests each phase executor's workers under it with a subtotal. Leave your own transcript out of every finding.
-2. Pick the transcripts that cost the most for their task, and those an *Inefficient* line names. For each, run `npm run -s token-report -- --session <id> --agent <agent id> --calls` and look for the costly calls: large results, results carried for many calls, reruns, repeated reads. Note each avoidable cost under its cause as you go, so you can sum it.
+2. Pick the transcripts that cost the most for their task, and those an *Inefficient* line names. For each, run `npm run -s token-report -- --session <id> --agent <agent id> --calls --top 15`; never run `--calls` over a whole session. Look for the costly calls: a large cost (a cache expiry shows as one), large results, results carried for many calls, reruns, repeated reads. Then run `npm run -s token-report -- --session <id> --show <agent id>:<from>-<to>` on the costly calls to see why they happened. Note each avoidable cost under its cause as you go, so you can sum it.
 3. Read the report's *Recurring shapes* section: a script or grep repeated across agents is one cause spread thin, often a missing shared tool. Measure it in two or three of those agents and estimate its total from the count.
-4. To find out why a call happened, read only the lines of the transcript around it. Never read a transcript whole.
+4. Read transcript lines only when `--show` leaves a call's cause unclear, and then only the lines around that call. Never read a transcript whole.
 
 When the report's output is long, it saves it to a file; grep or slice that file, never read it whole.
 

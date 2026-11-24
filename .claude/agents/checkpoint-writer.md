@@ -48,7 +48,7 @@ You start without `AGENTS.md`; these are the parts of it a checkpoint uses.
 ## Verify
 
 - The orchestrator saved the baseline. Do not re-save it.
-- Gate: `npm run verify -- --allow-generate` (about 50 s; give Bash a 300000 ms timeout) shows your rows' errors resolved and nothing new. Use `--fast` partway through. On a FAIL, read only the new lines it prints, or grep `tmp/logs/verify-last.log` for one file.
+- Gate: `npm run verify -- --allow-generate` (about 50 s; give Bash a 300000 ms timeout) shows your rows' errors resolved and nothing new. Use `--fast` partway through. On a FAIL, read only the new lines it prints, or grep `tmp/logs/verify-last.log` for one file. A job under baseline only failed before the phase began and has no new error; it is not the unit's to check.
 - Decision-item lints (same content roots, exactly one word different) only show at build time: run `--fast` once after drafting decision items.
 
 ## Stop

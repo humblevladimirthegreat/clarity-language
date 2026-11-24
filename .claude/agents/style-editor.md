@@ -18,7 +18,7 @@ When your prompt names a brief file, read that file first, in full: it is your b
 7. Do not change code spans, fenced blocks, glosses, examples, headings, anchor ids, link targets, anything under `### Practice`, or anything between `<!-- generated -->` markers. Do not move sections. A heading that fails the plain-language rule is reported, not retitled.
 8. Do not work out what an Ageben sentence means by reading it. If a rewrite depends on a sentence's meaning, use `node scripts/parse.mjs --llm-prompt`. Check that a form parses with `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`.
 9. A warning you judge correct as it stands (for example a one-sentence lead after an H3 that made the job obvious) stays. Report it with the reason.
-10. When done, run `npm run wording-only -- <your pages>`, then `npm run lint:prose -- --update-baseline <your pages>` and check with `git diff src/lint/prose-style-baseline.json` that no count rose (a rise needs a reason in the report), then `npm run verify -- --allow-generate` (Bash timeout 300000). On a new error read only that line of `tmp/logs/verify-last.log`. Do not commit. Edit nothing outside your pages and the baseline file.
+10. When done, run `npm run wording-only -- <your pages>`, then `npm run lint:prose -- --update-baseline <your pages>` and check with `git diff src/lint/prose-style-baseline.json` that no count rose (a rise needs a reason in the report), then `npm run verify -- --allow-generate` (Bash timeout 300000). On a new error read only that line of `tmp/logs/verify-last.log`. A job under baseline only failed before the phase began and has no new error; it is not the unit's to check. Do not commit. Edit nothing outside your pages and the baseline file.
 
 ## Repo rules
 

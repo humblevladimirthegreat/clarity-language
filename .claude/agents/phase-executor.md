@@ -15,7 +15,7 @@ You start without `AGENTS.md`, as a process or as a subagent; these are the part
 
 - The language is **Ageben**. Pages show only the current language.
 - Every commit message ends with **`[skip-cd]`**. Commit before and after any tool's large `--write`, so its diff stands alone.
-- `npm test` and `npm run build` end with a failure footer (`file:line`, the fix, the rule's anchor): read it instead of rerunning. `npm run verify` prints only errors new since the baseline; full log in `tmp/logs/verify-last.log`.
+- `npm test` and `npm run build` end with a failure footer (`file:line`, the fix, the rule's anchor): read it instead of rerunning. `npm run verify` prints only errors new since the baseline; full log in `tmp/logs/verify-last.log`. A job under baseline only failed before the phase began and has no new error; it is not the unit's to check.
 - A search that would read more than about 15k tokens, when you need only its conclusion, goes to an `Explore` subagent.
 - Never link to a page under `docs/proposals/`; name it by filename in backticks. Move a tracked file with `git mv`.
 - Files under `tmp/` go in a tier folder; scratch scripts go in `tmp/scratch/`. When a result says *Output too large … saved to*, grep or slice that file. List a long file's headings with `npm run -s outline -- <file>` and read ranges.
