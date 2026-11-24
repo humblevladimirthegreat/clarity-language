@@ -319,6 +319,30 @@ describe("reader audit (R4): doc examples, one per test, checked against the doc
     assert.equal(alone?.hosted?.kind, "clause");
   });
 
+  it("because-and-iff.md#unless-and-even-if, cause.md#mechanism: `thezem` and `thewom` right before a hinge share its `/b/`", () => {
+    const hinges = (reading: Reading): Frame[] => reading.frames.filter((f) => f.family === "hinge");
+    // CAUSE: "`thewom` right before the hinge, and the trigger in the hinge's `/b/`".
+    const [cause, hinge] = hinges(readText("zazozon vowurol thewom thohem blerulal.", tables)[0]!);
+    assert.equal(cause?.key, "overlay:cause:th");
+    assert.ok(hinge?.hosted?.kind === "thing" && cause?.hosted === hinge.hosted);
+    // *Even if*: "put the *although* hinge `thezem` right before `thohem`".
+    const [although, iff] = hinges(readText("zazozon vowurol thezem thohem blarl zalazun vezuvel.", tables)[0]!);
+    assert.equal(although?.values.gloss, "although");
+    assert.ok(iff?.hosted?.kind === "clause" && although?.hosted === iff.hosted);
+    const [first, next] = readText("zazozon vowurol thezem thohem blarl. zalazun vezuvel.", tables);
+    const grounds = first!.links.filter((l) => l.kind === "grounds");
+    assert.deepEqual(
+      grounds.map((l) => [l.frame?.values.gloss, l.to]),
+      [
+        ["if", next!.id],
+        ["although", next!.id],
+      ],
+    );
+    // `thewom` with no hinge after it keeps its own `/b/` (the causer, cause.md#make).
+    const [make] = hinges(readText("zalazun vezuyol thewom blazozon.", tables)[0]!);
+    assert.ok(make?.hosted?.kind === "thing" && make.hosted.root === "azozo");
+  });
+
   it("because-and-iff.md:18: a stacked `gebem` on a noun takes the `gahum` detail's condition", () => {
     const hinges = (reading: Reading) => {
       const z = reading.claim.roles.z;

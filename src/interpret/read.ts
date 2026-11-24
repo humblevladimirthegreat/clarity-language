@@ -937,34 +937,39 @@ function readDependent(clause: Clause, here: Here): Reading | undefined {
   return reading;
 }
 
+/** The `/th/` hinge-family keys a stack may join (`scope.ts`): the clause hinges and CAUSE. */
+const STACK_TH = new Set(["overlay:clause_hinge:th", "overlay:cause:th"]);
+/** The `/ɡ/` hinge-family keys a stack may join among a noun's details. */
+const STACK_G = new Set(["overlay:clause_hinge:g"]);
+
 /**
- * *Only because* (because-and-iff.md#choosing-a-hinge): "*Only because* stacks two hinges: `thebem` (the outcome needs
- * it), then `thahum` with the condition (and it is a fact)." A `thebem` with no `/b/` of its own, right before a `thahum`
- * that has one, takes that condition: the same `hosted` term (one place, the first host's in coverage), and a `grounds`
- * link of its own where the condition is the next sentence (`blarl` before a period). The `/ɡ/` pair on a noun
- * (`gebem gahum`, *depends on*) stacks the same way: there the hinges are sibling details of the noun.
+ * A stacked hinge, one word-shape rule: a `/th/` hinge-family word with no `/b/` of its own, right before a `/th/` hinge
+ * that has one, shares that hinge's `/b/`: the same `hosted` term (one place, the first host's in coverage), and a
+ * `grounds` link of its own where the `/b/` is the next sentence (`blarl` before a period). The pages state three
+ * stacks: *only because* (because-and-iff.md#choosing-a-hinge, "`thebem` (the outcome needs it), then `thahum` with the
+ * condition"), *even if* (because-and-iff.md#unless-and-even-if, "put the *although* hinge `thezem` right before
+ * `thohem`"), and CAUSE with a hinge (cause.md#mechanism, "`thewom` right before the hinge, and the trigger in the
+ * hinge's `/b/`"). The `/ɡ/` pair on a noun (`gebem gahum`, *depends on*) stacks the same way among the noun's details.
  */
 function stackedHinge(reading: Reading): void {
-  const KEY = "overlay:clause_hinge:th";
-  for (const needs of reading.frames) {
-    if (needs.key !== KEY || needs.values.gloss !== "only-if" || needs.hosted || needs.words[0]?.at === undefined) continue;
-    const after = needs.words[0].at + 1;
-    const fact = reading.frames.find((f) => f.key === KEY && f.values.gloss === "because" && f.words[0]?.at === after);
-    if (!fact?.hosted) continue;
-    needs.hosted = fact.hosted;
-    for (const l of reading.links.filter((l) => l.kind === "grounds" && l.frame === fact)) reading.links.push({ ...l, frame: needs });
+  for (const lead of reading.frames) {
+    if (!STACK_TH.has(lead.key) || lead.hosted || lead.words[0]?.at === undefined) continue;
+    const after = lead.words[0].at + 1;
+    const hinge = reading.frames.find((f) => STACK_TH.has(f.key) && f.words[0]?.at === after);
+    if (!hinge?.hosted) continue;
+    lead.hosted = hinge.hosted;
+    for (const l of reading.links.filter((l) => l.kind === "grounds" && l.frame === hinge)) reading.links.push({ ...l, frame: lead });
   }
   for (const details of detailLists(reading)) stackedNounHinge(details);
 }
 
-/** The `/ɡ/` stack among one term's details: `gebem` with no `/b/`, right before a `gahum` that has one (no `blarl` on `/ɡ/`). */
+/** The `/ɡ/` stack among one term's details: a hinge detail with no `/b/`, right before one that has one (no `blarl` on `/ɡ/`). */
 function stackedNounHinge(details: Detail[]): void {
-  const KEY = "overlay:clause_hinge:g";
-  for (const needs of details) {
-    if (needs.key !== KEY || needs.values.gloss !== "only-if" || needs.hosted || needs.words[0]?.at === undefined) continue;
-    const after = needs.words[0].at + 1;
-    const fact = details.find((d) => d.key === KEY && d.values.gloss === "because" && d.words[0]?.at === after);
-    if (fact?.hosted) needs.hosted = fact.hosted;
+  for (const lead of details) {
+    if (!STACK_G.has(lead.key) || lead.hosted || lead.words[0]?.at === undefined) continue;
+    const after = lead.words[0].at + 1;
+    const hinge = details.find((d) => STACK_G.has(d.key) && d.words[0]?.at === after);
+    if (hinge?.hosted) lead.hosted = hinge.hosted;
   }
 }
 

@@ -131,8 +131,8 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `ability:h` | frame:ability | `can-and-cant.md#ability-fallback` |  |
 | overlay | `ability:w` | frame:ability | `can-and-cant.md#ability-fallback` | adjective reach |
 | overlay | `identity:g` | structure | `predication.md#identity` | fills `claim.predicate` |
-| overlay | `clause_hinge:th` | frame:hinge | `causation.md#if` | *Only because* (`because-and-iff.md#choosing-a-hinge`): a `thebem` with no `/b/`, right before a `thahum` that has one, takes its condition: the same `hosted` term, and its own `grounds` link when the condition is the next sentence |
-| overlay | `clause_hinge:g` | frame:hinge | `causation.md#if` | on a noun; frame by default. *Depends on* (`because-and-iff.md#choosing-a-hinge`, `gebem gahum`): a `gebem` detail with no `/b/`, right before a `gahum` detail of the same noun that has one, takes its condition: the same `hosted` term (`/ɡ/` takes no `blarl`) |
+| overlay | `clause_hinge:th` | frame:hinge | `causation.md#if` | Stacked hinge: a `/th/` hinge-family word (`clause_hinge:th`, `cause:th`) with no `/b/`, right before a `/th/` hinge that has one, shares that `/b/`: the same `hosted` term, and its own `grounds` link when the `/b/` is the next sentence. The pages state *only because* `thebem thahum` (`because-and-iff.md#choosing-a-hinge`), *even if* `thezem thohem` (`because-and-iff.md#unless-and-even-if`), and CAUSE `thewom` before a hinge (`cause.md#mechanism`) |
+| overlay | `clause_hinge:g` | frame:hinge | `causation.md#if` | on a noun; frame by default. Stacks the same way among one noun's details, *depends on* `gebem gahum` (`because-and-iff.md#choosing-a-hinge`): a hinge detail with no `/b/`, right before one that has one, shares its `hosted` term (`/ɡ/` takes no `blarl`) |
 | overlay | `clause_hinge:h` | frame:hinge | `dependents.md#hinges` | whereas, so … that; frame by default |
 | overlay | `clause_hinge:*:while` | detail:time | `dependents.md#hinges` | time hinge, any PoS |
 | overlay | `clause_hinge:*:until` | detail:time | `dependents.md#hinges` | time hinge, any PoS |
@@ -141,7 +141,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | overlay | `clause_hinge:*:after` | detail:time | `dependents.md#hinges` | time hinge, any PoS |
 | overlay | `clause_hinge:*:as-of.ledger` | detail:time | `as-of.md#as-of` | as-of, any PoS; on `/th/` it dates the stance |
 | overlay | `clause_hinge:*:as-of.bookmark` | detail:time | `as-of.md#as-of` | as-of, any PoS; on `/th/` it dates the stance |
-| overlay | `cause:th` | frame:hinge | `cause.md#mechanism` |  |
+| overlay | `cause:th` | frame:hinge | `cause.md#mechanism` | Right before a hinge with a `/b/`, shares it (the stacked hinge, the `clause_hinge:th` row) |
 | overlay | `cause:w` | frame:hinge | `cause.md#mechanism` | adjective reach; frame by default |
 | overlay | `list_verb:v` | structure | `list-verbs.md#list-verbs` | as `lexReading:listVerb` |
 | overlay | `join_relation:g` | detail:relation | `join-relations.md#join-relations` |  |
@@ -374,6 +374,7 @@ Per family: the forms that reach the whole clause, then every sentence on its pa
 - `dependents.md#hinges`: "*Because* is your stance on why the claim holds, *so that* is your own aim for the event, and *although* is your expectation that the first event would normally have stopped the second, so they take `/th/`."
 - `causation.md#if` (against `force`): "A command or request makes no claim, so an *if* hinge on it limits the instruction instead: do this only in that case."
 - `because-and-iff.md#choosing-a-hinge` (two hinges): "*Only because* stacks two hinges: `thebem` (the outcome needs it), then `thahum` with the condition (and it is a fact)."
+- `because-and-iff.md#unless-and-even-if` (two hinges): "For *even if*, put the *although* hinge `thezem` right before `thohem`."
 - `cause.md#mechanism` (CAUSE with a hinge): "English *habit* / *triggered by*, when a trigger is how the act is produced, uses this same stack: `thewom` right before the hinge, and the trigger in the hinge's `/b/`."
 - `usually-vs-must.md#how-things-work` (against `occasion` and `binder`): "A [cause or condition](/causation) on a general claim says how things work. It holds for *each* member or occasion, the same way the verb does."
 
