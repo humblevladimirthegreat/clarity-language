@@ -21,7 +21,7 @@ The realizer never reads a reading directly. It reads the **meaning view**: a co
 - `order` and `unordered` as indices into the reading's frames, with each unsettled pair in text order. [Reader rule 3](interpreter.md#reader-rules) leaves the order of an unsettled pair open, so the view keeps the order the text gave and the realizer never picks one;
 - links by kind and key, with the reading they point to (`to`), the frame they carry, and the terms and details they name;
 - a pronoun's bind as the bind's kind, with its antecedent as a meaning-view term;
-- the identities: a thing's roots, each named by its lexicon row's concrete sense (a listed compound stem as one root, and a root with no row by its spelling); a name as its root spelling; a plain adjective's, adverb's or degree word's root, as the reader's `values.root`; a literal's payload; and a number's stem. These are spellings by design: a different root or name is a different thing, not a different way to say the same thing.
+- the identities: a thing's roots, each named by its lexicon row's concrete sense (a listed compound stem as one root, and a root with no row by its spelling); a name as its root spelling; a plain adjective's, adverb's or degree word's root, as the reader's `values.root`; a literal's payload; and a number's stem (on a number detail, as the reader's `values.number`). These are spellings by design: a different root or name is a different thing, not a different way to say the same thing.
 
 **What the view drops.** Everything that is form or a pointer into the parse:
 
@@ -35,7 +35,7 @@ A test projects every doc example and fails on any object in the view that has a
 
 **The import rule.** Files in `src/realize/` other than `meaning.ts` may import only these: `meaning.ts` and other files in the folder; the reading types (`src/interpret/types.ts`, as types only) and `src/interpret/read.ts`; the lexicon tables (`src/parse/classify.ts`, `src/lexicon-search.ts` and `src/lexicon-compounds.ts`, as types only, and `src/closed-roots.ts`); and the spelling path (`src/parse/gloss-inverse.ts`, and `spell` and `checkLine` from `src/interpret/reply.ts`). A test reads every such file's imports and fails on anything else. So `meaning.ts` is the only way from a reading to the realizer. Test files may import anything.
 
-**Number glosses.** A number's stem is an identity the view keeps, so the realizer writes a number word's gloss label (`g-twelve`, `z-three`) itself, in `src/realize/`, from the stem and the markers the view records. It does not import the glosser's `numberLabel`, which is outside the import rule. The spelling path spells that gloss, and `spell` keeps only a line that glosses back to it, so a label that drifts from the glosser's fails the round trip rather than passing silently.
+**Number glosses.** A number's stem is an identity the view keeps, so the realizer writes a number word's gloss label (`g-twelve`, `z-three`) itself, in `src/realize/numbers.ts`, from the stem and the markers the view records: a number term's `stem` and its `values.ending`, and a number detail's `values.number` (the stem in shorthand, `+3`) and `values.ending`. It does not import the glosser's `numberLabel`, which is outside the import rule. The spelling path spells that gloss, and `spell` keeps only a line that glosses back to it, so a label that drifts from the glosser's fails the round trip rather than passing silently.
 
 ## Canonical choices
 <a id="canonical-choices"></a>
@@ -50,6 +50,7 @@ Where the grammar allows several forms with the same meaning, the realizer write
 | The statement act `yal` left out | `edge:force` | `speech-moves.md#speech-act-beginner` |
 | A role pointer on `-r` written as the resume of the one it names, and a chain of `-r` resumes as the resume of the first mention | `anaphor:pointer` | `pronouns.md#role-pointers` |
 | A new one on `-l` written as the noun it copies, on the new member's ending | `slot:newMember` | `pronouns.md#a-new-one` |
+| A number in its preferred writing: spelled out with one digit or none (`gragel`, `gragem`), in shorthand with two or more (`g+12`, `g~+12`) | `lexReading:number` | `number-markers.md#writing-style-numeric-vs-spelled` |
 
 ## Round trip
 <a id="round-trip"></a>

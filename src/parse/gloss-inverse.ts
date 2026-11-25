@@ -3,15 +3,16 @@
  *
  * Leaves resolve through an index of glossed word forms (every published root
  * and compound under each role letter and ending, the closed join / hook
- * series, plus any extra forms the caller supplies — numbers and mid-word `x`
- * compounds are open-ended). Resumes, names, quoted pass-through, labeled
- * brackets, and sentence marks invert structurally. Each candidate line is
+ * series, plus any extra forms the caller supplies — mid-word `x` compounds
+ * and the numbers below are open-ended). Resumes, names, plain number words
+ * (a count, rank or signed amount with one run of digits), quoted
+ * pass-through, labeled brackets, and sentence marks invert structurally. Each candidate line is
  * re-glossed; only a line whose gloss matches the input is returned.
  */
 
 import type { ClassifyTables } from "./classify.js";
 import { classify, SAME_ROLE_POS } from "./classify.js";
-import { POINTER_VOWEL, ROLE_PART, REACH_VOWEL } from "./morph-gloss-tables.js";
+import { cardinalEnglish, POINTER_VOWEL, ROLE_PART, REACH_VOWEL } from "./morph-gloss-tables.js";
 import { sameRoleLabel } from "./morph-gloss-labels.js";
 import { morphGlossFor, morphGlossLine, morphGlossWords } from "./morph-gloss.js";
 import { normalizeMorphLine } from "./morph-gloss-blocks.js";
@@ -305,6 +306,51 @@ function nameRoot(label: string): string | undefined {
   return joined.endsWith("n") ? joined.slice(0, -1) : undefined;
 }
 
+// ── Numbers ─────────────────────────────────────────────────────────────────
+
+/** Digit → its spoken syllable (numbers.md#counts). */
+const DIGIT_SYLLABLE = ["mo", "ba", "do", "ge", "hu", "za", "vo", "re", "lu", "na"];
+
+/** Marker symbol → its spoken vowel after `r` (number-markers.md#writing-preferred-shorthand). */
+const MARKER_VOWEL: Record<string, string> = { "+": "a", "-": "u", "#": "o" };
+
+/** Number form suffix → the ending it marks, spoken and as its written mark (glosses.md *Form suffixes*). */
+const NUMBER_ENDING: Record<string, { ending: string; mark: string }> = {
+  "": { ending: "l", mark: "" },
+  ".about": { ending: "m", mark: "~" },
+  ".named": { ending: "n", mark: "@" },
+  ".again": { ending: "r", mark: "=" },
+};
+
+const CARDINAL_DIGITS = new Map(Array.from({ length: 13 }, (_, n) => [cardinalEnglish(n), String(n)]));
+
+/** A number label's marker and digits: `three`, `20` (count), `2nd` (rank), `minus-three`, `divided-by-three`. */
+function numberOfLabel(label: string): { marker: string; digits: string } | undefined {
+  const digitsOf = (text: string): string | undefined => CARDINAL_DIGITS.get(text) ?? (/^\d+$/.test(text) ? text : undefined);
+  const rank = label.match(/^(\d+)(?:st|nd|rd|th)$/);
+  if (rank) return { marker: "#", digits: rank[1]! };
+  const signed = label.match(/^(?:minus|divided-by)-(.+)$/);
+  const digits = digitsOf(signed ? signed[1]! : label);
+  return digits === undefined ? undefined : { marker: signed ? "-" : "+", digits };
+}
+
+/**
+ * The forms a number-word leaf can be (glosses.md#round-trip: one gloss, one word): `g-three` → `gragel`, `g+3`;
+ * `z-twelve.about` → `zrabadom`, `z~+12`; `d-←three` (a resume) → `drager`, `d=+3`. Both writings are candidates; the
+ * re-gloss check keeps the one the surface suffix (`.spelled`, `.short`, or none for the preferred writing) names.
+ */
+function numberCandidates(core: string): string[] {
+  const leaf = core.match(/^((?:th|[zdbvgwhxy])-)?(←)?(.+?)(\.about|\.named|\.again)?(?:\.spelled|\.short)?$/);
+  if (!leaf) return [];
+  const number = numberOfLabel(leaf[3]!);
+  const vowel = number && MARKER_VOWEL[number.marker];
+  if (!number || !vowel || (leaf[2] && leaf[4])) return [];
+  const pos = (leaf[1] ?? "").replace(/-$/, "");
+  const { ending, mark } = leaf[2] ? NUMBER_ENDING[".again"]! : NUMBER_ENDING[leaf[4] ?? ""]!;
+  const syllables = [...number.digits].map((digit) => DIGIT_SYLLABLE[Number(digit)]).join("");
+  return [`${pos}r${vowel}${syllables}${ending}`, `${pos}${mark}${number.marker}${number.digits}`];
+}
+
 function leafCandidates(text: string, index: GlossIndex, named: boolean): string[] {
   const plural = /[^-]-x$/.test(text) && !text.endsWith("-x-x");
   const core = plural ? text.slice(0, -2) : text;
@@ -323,6 +369,8 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     out.add(`${(tag[1] ?? "").replace(/-$/, "")}w${tag[3]!.replace("+", "").toLowerCase()}${ending}${suffix}`);
     return [...out];
   }
+
+  for (const form of numberCandidates(core)) out.add(form + suffix);
 
   const resume = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {

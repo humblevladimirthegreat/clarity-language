@@ -148,7 +148,15 @@ export type Term =
     }
   | { kind: "blank"; word: LexWord; details?: Detail[]; frames?: Frame[] }
   | { kind: "literal"; word: LexWord; payload: string; details?: Detail[]; frames?: Frame[] }
-  | { kind: "number"; word: LexWord; stem: NumberStem; details?: Detail[]; frames?: Frame[] }
+  | {
+      kind: "number";
+      word: LexWord;
+      stem: NumberStem;
+      /** The number's ending, spoken or written as its mark (`ending`: `l` exact, `m` about, `n` named; number-markers.md#number-endings). */
+      values?: Record<string, string>;
+      details?: Detail[];
+      frames?: Frame[];
+    }
   | {
       kind: "list";
       /** The join that closes the list (its last part's join). */

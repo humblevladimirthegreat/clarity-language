@@ -7,6 +7,7 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import type { MeaningDetail, MeaningTerm } from "./meaning.js";
+import { numberDetailLeaf, numberTermLeaf, resumedNumberLabel } from "./numbers.js";
 import { leaf, rootOf, type Ending } from "./words.js";
 import type { GapKind } from "./realize.js";
 
@@ -84,6 +85,8 @@ export function adverb(detail: MeaningDetail, tables: ClassifyTables): string {
 /** A term's plain adjectives, each with its degree words, after the head (clause.md#adjectives-ɡ). */
 function adjectives(details: readonly MeaningDetail[] | undefined, tables: ClassifyTables): string[] {
   return (details ?? []).map((detail) => {
+    // A count or rank sits with the adjectives (numbers.md#counts).
+    if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
     if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
     return plainWord(detail, "g", detail.values.root, tables);
   });
@@ -101,6 +104,8 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
       return unit([leafOf(pos, SPECIAL_ROOT[term.kind], "n", tables), ...adjectives(term.details, tables)]);
     case "pronoun":
       return unit([pronounLeaf(term, pos, ending, tables), ...adjectives(term.details, tables)]);
+    case "number":
+      return unit([numberTermLeaf(term, pos), ...adjectives(term.details, tables)]);
     default:
       throw noRule(`a ${term.kind} term`);
   }
@@ -136,6 +141,9 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
     return thingLeaf(copied, pos, ending, tables);
   }
   if (values.ending !== "r") throw noRule(`a pronoun on -${values.ending ?? "?"}`);
+  // A number resumed on -r glosses as `←` and the number's label (number-markers.md#number-endings). It parses only
+  // after the number it resumes, so it spells only in a line that holds that number.
+  if (term.antecedent.kind === "number") return `${pos}-←${resumedNumberLabel(term.antecedent)}`;
   const thing = referent(term.antecedent);
   if (!thing) throw noRule(`a resume of a ${term.antecedent.kind} term`);
   // A resume glosses as `←` and the label of the word it resumes (glosses.md#round-trip).
@@ -156,8 +164,11 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables): string {
  * which holds its ending and degree words.
  */
 export function predicateTerm(term: MeaningTerm, tables: ClassifyTables): string {
-  if (term.kind !== "thing" || term.named || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
+  if (term.kind !== "thing" || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
   const [self, ...rest] = term.details;
+  // A number predicate (numbers.md#counts: *there are three cats*): the number word is its own detail.
+  if (self?.key === "lexReading:number" && !rest.length) return numberDetailLeaf(self);
+  if (term.named) throw noRule("a thing predicate");
   if (!self || rest.length || self.key !== "slot:adj") throw noRule("a predicate that is not one plain adjective");
   // A built word (a hook compound, a role word, a label seam) has no plain root on its detail: word-building, phase 2.
   const root = oneRoot(term, tables);

@@ -87,7 +87,7 @@ export type MeaningTerm =
   | ({ kind: "speaker" | "listener" | "we" | "blank" } & Attached)
   | ({ kind: "pronoun"; sort?: "generic" | "topic"; bind?: AnaphorKind; antecedent?: MeaningTerm; values?: Record<string, string> } & Attached)
   | ({ kind: "literal"; payload: string } & Attached)
-  | ({ kind: "number"; stem: NumberStem } & Attached)
+  | ({ kind: "number"; stem: NumberStem; values?: Record<string, string> } & Attached)
   | {
       kind: "list";
       members: MeaningTerm[];
@@ -250,7 +250,7 @@ export class Projector {
         case "literal":
           return { kind: "literal", payload: term.payload, ...attached(term) };
         case "number":
-          return { kind: "number", stem: structuredClone(term.stem), ...attached(term) };
+          return { kind: "number", stem: structuredClone(term.stem), values: opt(term.values, (values) => ({ ...values })), ...attached(term) };
         case "list":
           return {
             kind: "list",

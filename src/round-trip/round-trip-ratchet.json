@@ -1,5 +1,5 @@
 {
-  "ok": 94,
+  "ok": 102,
   "keys": {
     "anaphor:content": 19,
     "anaphor:landmark": 1,
@@ -13,7 +13,7 @@
     "carry:channel": 8,
     "carry:holder": 1,
     "carry:notional": 2,
-    "claim": 244,
+    "claim": 243,
     "edge:force": 145,
     "edge:hook": 9,
     "edge:interjection": 9,
@@ -78,7 +78,7 @@
     "shared:scale": 62,
     "slot:dependent": 3,
     "slot:grounds": 12,
-    "slot:newMember": 365,
+    "slot:newMember": 358,
     "slot:tag": 17,
     "slot:th": 17,
     "unit:h": 33,

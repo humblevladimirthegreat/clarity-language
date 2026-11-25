@@ -70,6 +70,25 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes numbers: in a role, as the predicate, and on a noun, each in its preferred writing", () => {
+    const cases: [string, string][] = [
+      ["zragel vezuvel.", "zragel vezuvel."],
+      ["zazozon d+12 vayebel.", "zazozon d+12 vayebel."],
+      ["zrugel vezuvel.", "zrugel vezuvel."],
+      ["zanal grodol.", "zanal grodol."],
+      ["zanal g+3.", "zanal gragel."],
+      ["zalazun danal grogel varuyol.", "zalazun danal grogel varuyol."],
+      ["zodozel grababal vezuvel.", "zodozel g+11 vezuvel."],
+      ["zodozel gonumul g~+3 vezuvel.", "zodozel gonumul gragem vezuvel."],
+      ["zanal grodon.", "zanal grodon."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

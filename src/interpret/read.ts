@@ -150,7 +150,7 @@ function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
   const ctx = here.ctx;
   if (ctx.blanks.has(word)) return { kind: "blank", word };
   // A number resume (`drager`, number-markers.md#number-endings) is a pronoun on the number it resumes.
-  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem };
+  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem, values: wordValues(word) };
   if (family.kind === "foreign") return { kind: "literal", word, payload: family.payload };
   if (family.kind === "writingSpan") return spanTerm(word, here);
   if (family.kind === "content" && word.ending === "n" && family.roots.length === 1) {
