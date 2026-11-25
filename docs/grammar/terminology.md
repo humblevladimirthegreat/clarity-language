@@ -224,6 +224,14 @@ Clause content after the left-edge `/y/` cluster.
 
 [Speech moves](/speech-moves#turn-y)
 
+### Box
+
+A stretch that keeps words apart from the sentence around it: a clause in a join, a dependent, a scope island, a quote, or an aside. Each kind of box sets what gets in from outside.
+
+[How far a word reaches](/word-reach#boxes)
+
+**Compare with:** a [scope island](#scope-island) is one kind of box.
+
 ### Break / rest
 
 Silence counted in beats at a sentence edge with no word: a **break** puts the next beat half a beat late (around a scope island), a **rest** is one silent beat (a period).
@@ -335,6 +343,12 @@ Same-speech-act forward motion.
 The hook `uom` right before a `/th/` stance word or an intention adverb: the event goes against that plan, say word, or channel (*contrary to the plan*), and the word after `uom` no longer applies to the claim.
 
 [Contrary to](/contrary-to#contrary-to-stance)
+
+### Cover
+
+An earlier word that reaches the whole clause covers a later one: it is about the later word and the claim together, so swapping the two changes the meaning.
+
+[How far a word reaches](/word-reach#earlier-covers-later)
 
 ### Cross-role recast
 
@@ -818,11 +832,25 @@ Material after the join closer; **SHARED scale**.
 
 [Joins](/joins), [comparatives](/comparatives)
 
+### Reach
+
+The stretch of talk a word is about: one word, a phrase, a clause, the rest of the sentence, or past the period.
+
+[How far a word reaches](/word-reach#reach-sizes)
+
+**Compare with:** [label reach](#label-reach) is a vowel inside a word, not how far the word applies.
+
 ### Relative clause (English *who / that / which*)
 
 Identify a noun with two sentences (then [resume](#resume)), a hosted `/ɡ/` + `/b/` relation, or a [role compound](#role-compound-agent-patient-recipient) on `/ɡ/`.
 
 [Dependents](/dependents#which-noun)
+
+### Remark
+
+Your attitude, MIRATIVE, a sake word on the clause, or `uom` with its stance. A remark stays yours and stays outside what a question asks.
+
+[How far a word reaches](/word-reach#whose-it-is)
 
 ### Residue / former climate
 
