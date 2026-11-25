@@ -1,6 +1,6 @@
 # Parser structure: context passes, slot rules, tree building, and what they say about the grammar
 
-**Status:** READY, 2026-11-24. No phase started. Measuring done and uncommitted (U0, below). Decided 2026-11-24 (user, all as recommended):
+**Status:** IN PROGRESS, 2026-11-25. Phase 1 started at `13d7b221`; U0 landed in `5cb1637b`. Decided 2026-11-24 (user, all as recommended):
 
 - no phrase builder in place of the retype passes
 - fold the `/w/` and `gl-` retypes into grammar structure first; fold class A only if U2's measurements allow it
