@@ -12,7 +12,7 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify, SAME_ROLE_POS } from "./classify.js";
-import { cardinalEnglish, POINTER_VOWEL, ROLE_PART, REACH_VOWEL } from "./morph-gloss-tables.js";
+import { cardinalEnglish, HOOK_EXTRA_NOUN, POINTER_VOWEL, ROLE_PART, REACH_VOWEL } from "./morph-gloss-tables.js";
 import { sameRoleLabel } from "./morph-gloss-labels.js";
 import { morphGlossFor, morphGlossLine, morphGlossWords } from "./morph-gloss.js";
 import { normalizeMorphLine } from "./morph-gloss-blocks.js";
@@ -150,16 +150,21 @@ function indexSayForms(index: GlossIndex, tables: ClassifyTables): void {
   }
 }
 
-/** One content root under each role letter (and `gl-` / hosted `bl-`) and **-l/-m/-n**. */
+/**
+ * One content root under each role letter (and `gl-` / hosted `bl-`) and **-l/-m/-n**. A listed hook compound
+ * (`owurolul`, hook-compounds.md) already ends in its hook, so it takes no ending; as a stem it is the compound less
+ * its last letter, which a built word's ending then supplies (`guoxowurolul`).
+ */
 export function indexRootForms(index: GlossIndex, root: string, tables: ClassifyTables): void {
-  for (const ending of ENDINGS) {
+  const hooked = /[lmn]$/.test(root);
+  for (const ending of hooked ? [""] : ENDINGS) {
     for (const prefix of [...POS, "gl", "bl", ""]) {
       const surface = `${prefix}${root}${ending}`;
       const gloss = glossOne(surface, tables, {});
       if (!gloss) continue;
       add(index.forms, gloss, surface);
       const body = gloss.replace(/^(?:th|gl|bl|[zdbvgwhxy])-/, "");
-      add(index.roots, body, root);
+      add(index.roots, body, hooked ? root.slice(0, -1) : root);
     }
   }
 }
@@ -387,14 +392,89 @@ function compoundCandidates(core: string, index: GlossIndex): string[] {
   const leaf = core.match(/^((?:th|[zdbvgwhxy])-)?([a-z][a-z.-]*-x-[a-z.-]*[a-z])$/);
   if (!leaf) return [];
   const pos = (leaf[1] ?? "").replace(/-$/, "");
+  return chainStems(leaf[2]!, index).flatMap((stem) => ["l", "m"].map((ending) => `${pos}${stem}${ending}`));
+}
+
+/** The stems (no role letter, no ending) a sense chain names: each sense's roots, joined by `x` (`dog-x-walk` → `odozexowuro`). */
+function chainStems(chain: string, index: GlossIndex): string[] {
   let stems = [""];
-  for (const sense of leaf[2]!.split("-x-")) {
+  for (const sense of chain.split("-x-")) {
     const roots = [...(index.roots.get(sense) ?? [])];
     if (roots.length === 0) return [];
     stems = stems.flatMap((stem) => roots.map((root) => (stem ? `${stem}x${root}` : root)));
     if (stems.length > 16) return [];
   }
-  return stems.flatMap((stem) => ["l", "m"].map((ending) => `${pos}${stem}${ending}`));
+  return stems;
+}
+
+// ── Built words ─────────────────────────────────────────────────────────────
+
+/** Hook prefix label → the hook as it stands before the `x` seam (`against` → `uo`, `contrary-to` → `uom`). */
+const HOOK_BY_LABEL = new Map<string, string[]>();
+for (const [hook, label] of Object.entries(HOOK_EXTRA_NOUN)) {
+  const front = hook.endsWith("l") ? hook.slice(0, -1) : hook;
+  HOOK_BY_LABEL.set(label, [...(HOOK_BY_LABEL.get(label) ?? []), front]);
+}
+
+/** A numeric prefix's digitless kind label → its marker vowel and spoken exponent (numeric-derivation.md). */
+const NUMERIC_KIND: Record<string, string> = {
+  infinity: "awa",
+  grain: "awu",
+  void: "uwa",
+  quasi: "uwu",
+  origin: "owu",
+  telos: "owa",
+  poly: "a",
+  de: "u",
+};
+
+/** A numeric prefix's number as spoken before its seam: `two` → `rado`, `1st` → `roba`, `_1` → `reba`, `quasi` → `ruwu`. */
+function numericStem(label: string): string | undefined {
+  const kind = NUMERIC_KIND[label];
+  if (kind) return `r${kind}`;
+  const source = label.match(/^_(\d+)$/);
+  const number = source ? { marker: "_", digits: source[1]! } : numberOfLabel(label);
+  const vowel = number && (number.marker === "_" ? "e" : MARKER_VOWEL[number.marker]);
+  if (!number || !vowel) return undefined;
+  return `r${vowel}${[...number.digits].map((digit) => DIGIT_SYLLABLE[Number(digit)]).join("")}`;
+}
+
+const REACH_LABELS = Object.keys(REACH_BY_LABEL).join("|");
+const LABEL_SEAM = new RegExp(`^(.+)-th-(${REACH_LABELS})$`);
+
+/**
+ * The stems (no role letter, no ending) a built word's gloss body names (glosses.md#round-trip): a role word
+ * (`episode-agent-teach` → `wuzeduyo`), a hook prefix (`against-x-fight` → `uoxuvuvu`), a numeric prefix
+ * (`three.about-x-speech` → `ragemxezuyo`), or any of these or a plain sense with a label seam (`misstate-th-role` →
+ * `enumutho`). The caller adds the ending; the re-gloss check keeps the one whose ending gives these senses.
+ */
+function builtStems(body: string, index: GlossIndex): string[] {
+  const seam = body.match(LABEL_SEAM);
+  if (seam) {
+    const bases = [...chainStems(seam[1]!, index), ...builtStems(seam[1]!, index)];
+    return bases.map((base) => `${base}th${REACH_BY_LABEL[seam[2]!]}`);
+  }
+  const role = body.match(ROLE_FRONT);
+  if (role?.[3]!.startsWith("-")) {
+    return chainStems(role[3]!.slice(1), index).map((stem) => `w${REACH_BY_LABEL[role[1]!]}${PART_BY_LABEL[role[2]!]}${stem}`);
+  }
+  const at = body.indexOf("-x-");
+  if (at < 0) return [];
+  const [front, rest] = [body.slice(0, at), body.slice(at + 3)];
+  const stems = chainStems(rest, index);
+  const hooks = HOOK_BY_LABEL.get(front) ?? [];
+  const about = front.endsWith(".about");
+  const number = numericStem(about ? front.slice(0, -".about".length) : front);
+  const fronts = [...hooks, ...(number ? [`${number}${about ? "m" : ""}`] : [])];
+  return fronts.flatMap((head) => stems.map((stem) => `${head}x${stem}`));
+}
+
+/** A built word on **-l**, **-m** or **-n** (`z-episode-agent-teach` → `zwuzeduyol`). */
+function builtCandidates(core: string, index: GlossIndex): string[] {
+  const leaf = core.match(/^((?:th|[zdbvgwhxy])-)?([a-z0-9_][a-z0-9_.-]*[a-z])$/);
+  if (!leaf) return [];
+  const pos = (leaf[1] ?? "").replace(/-$/, "");
+  return builtStems(leaf[2]!, index).flatMap((stem) => ENDINGS.map((ending) => `${pos}${stem}${ending}`));
 }
 
 function leafCandidates(text: string, index: GlossIndex, named: boolean): string[] {
@@ -420,6 +500,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   for (const form of scaleCandidates(core)) out.add(form + suffix);
   for (const form of fractionCandidates(core)) out.add(form + suffix);
   for (const form of compoundCandidates(core, index)) out.add(form + suffix);
+  for (const form of builtCandidates(core, index)) out.add(form + suffix);
 
   const resume = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {
@@ -445,6 +526,8 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
     const name = nameRoot(body.replace(/\.instance$/, ""));
     if (name) roots.push(name);
     for (const root of roots) out.add(`${pos}${roleFront}${root}r${suffix}`);
+    // A built word's resume: its whole stem on **-r** (`z-←against-x-fight` → `zuoxuvuvur`).
+    if (!roleFront) for (const stem of builtStems(body, index)) out.add(`${pos}${stem}r${suffix}`);
   }
 
   const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*?)(\.instance)?$/);
