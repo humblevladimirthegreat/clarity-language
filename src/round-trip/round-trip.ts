@@ -6,7 +6,7 @@ import { canonicalReadings, sameReadings } from "../interpret/equal.js";
 import { allReadings, readText } from "../interpret/read.js";
 import type { Reading } from "../interpret/types.js";
 import type { ClassifyTables } from "../parse/classify.js";
-import { project } from "../realize/meaning.js";
+import { project, type MeaningReading } from "../realize/meaning.js";
 import { firstKey, realize, type GapKind, type Realized } from "../realize/realize.js";
 import { corpus, readTurn, type CorpusEntry } from "./corpus.js";
 
@@ -18,12 +18,22 @@ export type Verdict = "ok" | "different" | "unsettled" | `gap:${GapKind}` | `ski
 /**
  * One example's round trip. `key` files it for the counts: a gap's key, else the key (`firstKey`) of the first reading
  * that differs, or of the first reading; `(none)` when nothing was read. `path` is the first differing path of a
- * `different` verdict (`idempotence` when the realized text realizes to another gloss).
+ * `different` verdict (`idempotence` when the realized text realizes to another gloss). `partKeys` is the key of every
+ * part of every reading, which the ratchet counts: unlike `key`, it does not move as the realizer gets further.
  */
-export type Trip = { source: string; ageben: string; verdict: Verdict; key: string; gloss?: string; realized?: string; path?: string; detail?: string };
+export type Trip = { source: string; ageben: string; verdict: Verdict; key: string; partKeys: string[]; gloss?: string; realized?: string; path?: string; detail?: string };
 
 /** The key of a trip with no reading to file it under. */
 export const NO_KEY = "(none)";
+
+/**
+ * The key of every part of a reading: each frame's, claim detail's, stance list's and link's, without repeats; `claim`
+ * for a reading with none of these (the bare clause).
+ */
+export function partKeys(view: MeaningReading): string[] {
+  const keys = [...view.frames, ...view.claim.details, ...(view.stanceLists ?? []), ...view.links].map((part) => part.key);
+  return keys.length ? [...new Set(keys)] : ["claim"];
+}
 
 /** A text's readings realized in order: the joined glosses and spellings, or the first gap. */
 function realizeAll(readings: Reading[], tables: ClassifyTables): Realized {
@@ -66,7 +76,7 @@ function diffPath(x: unknown, y: unknown): string[] | undefined {
 
 /** One example's round trip. */
 export function tripEntry(entry: CorpusEntry, tables: ClassifyTables): Trip {
-  const base = { source: entry.source, ageben: entry.ageben };
+  const base = { source: entry.source, ageben: entry.ageben, partKeys: [...new Set(entry.meanings.flatMap(partKeys))] };
   const keyAt = (index: number): string => (entry.meanings[index] ? firstKey(entry.meanings[index]) : NO_KEY);
   if (allReadings(entry.readings).some((r) => r.unread.length)) return { ...base, verdict: "skipped:unread", key: keyAt(0) };
   const out = realizeAll(entry.readings, tables);
@@ -94,14 +104,18 @@ export function roundTrip(tables: ClassifyTables): Trip[] {
   const { entries, unparsed, failures } = corpus(tables);
   return [
     ...entries.map((entry) => tripEntry(entry, tables)),
-    ...unparsed.map((u): Trip => ({ source: u.source, ageben: u.ageben, verdict: "skipped:noParse", key: NO_KEY, detail: u.error })),
-    ...failures.map((f): Trip => ({ source: "", ageben: f, verdict: "skipped:project", key: NO_KEY })),
+    ...unparsed.map((u): Trip => ({ source: u.source, ageben: u.ageben, verdict: "skipped:noParse", key: NO_KEY, partKeys: [], detail: u.error })),
+    ...failures.map((f): Trip => ({ source: "", ageben: f, verdict: "skipped:project", key: NO_KEY, partKeys: [] })),
   ];
 }
 
 // ── Counts ──
 
-/** The ratchet (`round-trip-ratchet.json`): the `ok` count, and the failures (not `ok`, not skipped) by key. */
+/**
+ * The ratchet (`round-trip-ratchet.json`): the `ok` count, and by part key the failed trips (not `ok`, not skipped) with
+ * a reading that has a part with that key. A trip counts once under each of its `partKeys`, so its keys stay put as the
+ * realizer gets further into it, and a key with no failures gains one only when an `ok` trip fails.
+ */
 export type Ratchet = { ok: number; keys: Record<string, number> };
 
 /** A trip the realizer failed: not `ok`, and not skipped before the realizer ran. */
@@ -109,6 +123,6 @@ export const failed = (trip: Trip): boolean => trip.verdict !== "ok" && !trip.ve
 
 export function ratchetOf(trips: readonly Trip[]): Ratchet {
   const keys = new Map<string, number>();
-  for (const trip of trips) if (failed(trip)) keys.set(trip.key, (keys.get(trip.key) ?? 0) + 1);
+  for (const trip of trips) if (failed(trip)) for (const key of trip.partKeys) keys.set(key, (keys.get(key) ?? 0) + 1);
   return { ok: trips.filter((t) => t.verdict === "ok").length, keys: Object.fromEntries([...keys].sort(([a], [b]) => a.localeCompare(b))) };
 }

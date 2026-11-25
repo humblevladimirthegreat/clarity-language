@@ -73,9 +73,9 @@ A gap is filed under the key of the reading's first part: its first frame's key,
 
 A trip that is not a gap is filed under the key of its first reading, or of the first reading that differs.
 
-**The ratchet.** `src/round-trip/round-trip-ratchet.json` holds the count of `ok` trips and, by key, the count of trips that failed (neither `ok` nor skipped). Its test fails when the `ok` count falls, or when a key with no failures gains one. When the counts improve, the unit that improved them lowers the file to the new counts.
+**The ratchet.** `src/round-trip/round-trip-ratchet.json` holds the count of `ok` trips and, by key, the count of trips that failed (neither `ok` nor skipped). A failed trip counts once under the key of every part of every one of its readings (a reading with no parts counts as `claim`), not under the key it is filed under. That key moves as the realizer gets further into a trip, while a trip's part keys never change, so a key with no failures gains one only when an `ok` trip fails. Its test fails when the `ok` count falls, or when a key with no failures gains one. When the counts improve, the unit that improved them lowers the file to the new counts, which `npm run round-trip -- --ratchet` prints.
 
-**The script.** `npm run round-trip` prints the counts by verdict, then each verdict's keys. `--save` writes them to the `tmp/` state folder, and `--diff` prints only the counts that changed since the save, as for `npm run sweep`. `--texts KEY …` lists the examples behind a verdict (`gap:noRule`), a key (`edge:force`) or a type that heads keys (`edge`).
+**The script.** `npm run round-trip` prints the counts by verdict, then each verdict's keys, each trip under the key it is filed under. `--save` writes them to the `tmp/` state folder, and `--diff` prints only the counts that changed since the save, as for `npm run sweep`. `--texts KEY …` lists the examples behind a verdict (`gap:noRule`), a key (`edge:force`) or a type that heads keys (`edge`).
 
 ## Variants
 <a id="variants"></a>

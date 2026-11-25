@@ -1,7 +1,8 @@
 /**
  * The round trip over the doc examples (docs/meta/realizer.md#round-trip) and its ratchet (`round-trip-ratchet.json`):
- * the `ok` count does not fall, and a key with no failures does not gain one. When the counts improve, lower the file
- * to the new counts (`npm run round-trip` prints them).
+ * the `ok` count does not fall, and a key with no failures does not gain one. A failed trip counts under the key of every
+ * part of every reading (`ratchetOf`), so its keys do not move as the realizer improves. When the counts improve, lower
+ * the file to the new counts (`npm run round-trip -- --ratchet` prints them).
  */
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -14,7 +15,7 @@ import { realize, spellGloss } from "../realize/realize.js";
 import { sameReadings } from "../interpret/equal.js";
 import { project } from "../realize/meaning.js";
 import { corpus, readTurn } from "./corpus.js";
-import { firstDifference, ratchetOf, roundTrip, type Ratchet } from "./round-trip.js";
+import { firstDifference, ratchetOf, roundTrip, tripEntry, type Ratchet } from "./round-trip.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const ratchetPath = join(here, "round-trip-ratchet.json");
@@ -57,6 +58,15 @@ describe("round trip", () => {
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));
+  });
+
+  it("counts a failed trip in the ratchet under the keys of every reading, not only the one that failed", () => {
+    const text = "dazozon vayebel. zazozon dahobal wabem gerulol vayebel.";
+    const readings = readTurn(text, tables);
+    const trip = tripEntry({ ageben: text, source: "test", readings, meanings: project(readings, tables) }, tables);
+    assert.equal(trip.verdict, "gap:noRule");
+    assert.equal(trip.key, "slot:newMember", "the display key is the first gap's");
+    assert.deepEqual(ratchetOf([trip]).keys, { claim: 1, "slot:newMember": 1 });
   });
 
   it("finds the first differing path of two canonical forms", () => {
