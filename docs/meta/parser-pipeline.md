@@ -176,6 +176,44 @@ A choice the grammar can make by place needs no pass. A verb that goes on a verb
 
 The class comes from one table in `src/parse/context-report.ts`, not from the saved counts. Stdout is the per-pass summary; the full report, with the *settles at* column and samples, goes to `tmp/logs/context-report.md`. `--save` writes the counts to `tmp/state/context-report.json`, and `--diff` prints only the counts that changed since the save.
 
+#### Why the remaining passes stay
+<a id="why-passes-stay"></a>
+
+Each pass below retypes a word that stays ambiguous until a later word arrives. Trials that read each one by place in the grammar failed `grammar-check`'s LR(1) check, because a production had to choose before the deciding word:
+
+| Pass (retypes) | LR(1) conflicts | Shape |
+|---|---|---|
+| `wLeaf` (`/w/` targets, 315) | 3,801 in 342 decisions | after a finished phrase, a `/w/` word starts a modifier run or attaches higher; the word after a run of any length decides |
+| `glLean` (`gl-` lean, 38) | 678 in 150 | noun or package, and list-item close; the noun after the `gl-` word decides |
+| `verbEnd` (`VPlainEnd` / `VPlainMore`, `JoinVEnd` / `JoinVMore`) | 1,892 in 55 | lone verb or list at the first verb, where the second verb may come any number of words later; the `/v/` join's *end* and *more* readings reduce on the same lookahead |
+| `hosted` (`HostedBNoun`, `HostedBNumber`, `HostedOdo`, `LateOdo`, `Amount`, `HScale`, `BScale`, `Factor`, `HZone`, `HZoneHeld`, `HSharedV`) | 3 to 2,916 per family | after a host (or a rank join, a shared adverb, `HookHosting`), the same word could also start a new phrase; `Amount` is reduce/reduce, cardinal or adjective on the landmark |
+
+`HookHosting` was not tried. In the examples the deciding word is never far (`npm run context-report`, 6,088 examples):
+
+| Pass | Decided at the word | 1 ahead | 2+ ahead | Max |
+|---|---|---|---|---|
+| `hosted` | 1,025 | 279 | 0 | 1 |
+| `verbEnd` | 3,145 | 25 | 8 | 3 |
+| `glLean` | 2 | 33 | 3 | 2 |
+| `wLeaf` | 79 | 222 | 16 | 3 |
+
+So the conflicts come from runs the grammar allows to be any length, not from sentences a listener finds hard. There are three causes:
+
+- **A modifier that leans on the word after its run** (`/w/`, `gl-`). Joins close on the right, so the parser can't tell whether the phrase before has ended until the run's target arrives. For `gl-` the choice is about the noun before it: a list item if the noun after the `gl-` word has the same role, a lone phrase if not.
+- **No apposition settles a verb list at its second verb**, which may come several words later.
+- **Hosting.** The deciding facts are in the words (`bl-`, `uom`, the join's series, the number kind), but the grammar also lets the hosted word start a new phrase in that spot. Every hosted retype is set by the word's own class and the word before it, except `HookHosting` and `HostedBJoined` (the next word, or the rest of the list) and `HZoneHeld` (`uom` two words back).
+
+`HSharedV` also stays for a reason of its own. Without it, an `/h/` after a `/v/` join parses as an ordinary phrase after the verb list, like a `/d/` or `/b/` there, and the grammar is LR(1)-clean. But the adverb then lands among the clause's shared phrases instead of on the join, which gives a different tree (`zazozon vowurol veruvol val hahunom.`).
+
+Alternatives considered and rejected:
+
+- **Regroup after the parse:** parse the ambiguous stretch as neutral units and regroup them afterward. That is post-parse reshaping again, and it renames construction ids.
+- **Change the forms:** a role-marked `gl-`, a `/w/` that agrees with its target, or a marker on a verb list's first verb. Each changes forms for a parser gain. Limiting verb lists to standalone or one-item joins makes acts with their own objects or recipients take a clause join, which repeats the subject. Allowing only bare-verb items leaves only the first verb with words of its own.
+- **Lexer types for the hosting facts,** with chain variants per host kind (no new-phrase path right after the host). Neither this nor precedence changes a parse. Variants multiply the 36 or so unit-chain rules, and a missed path drops sentences silently: trials left 1 to 802 doc sentences with no tree.
+- **A declared nearest-host precedence in `grammar-check`.** It weakens what the check proves, needs the tree count and Chevrotain to agree with every declaration, and cannot settle `Amount`, which is reduce/reduce.
+
+Revisit precedence if later work keeps adding host kinds. Without it, each new host is one more `hosted` case and token type. With it, each is one declaration.
+
 Recovery is off. Illegal left fences and binderless islands throw `SentenceParseError`.
 
 ### Word slots
