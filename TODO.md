@@ -15,7 +15,6 @@ https://discord.gg/CAMGw2Akhc
 -syntax highlighting should cover scoping/carry rules
 -cheat sheet distinguish cue vs exact match
 -change llms.txt to download the reader instead of parser?
--check unassigned-reserved.md to see if there's anything we should define
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
