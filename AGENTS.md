@@ -42,6 +42,7 @@ Stage pages sit in `beginner/`, `intermediate/`, or `advanced/` under `docs/gram
 | `intention.md` | Plan; try / fallback (`try.md`); want, saying you have decided (`want-and-decide.md`); ability / incapability, intention adverbs (`can-and-cant.md`). |
 | `knowing.md` | MAY, live / memory; evidentiality (`evidentiality.md`); holder (`holder.md`); mood on one adjective (`universality.md`); dated channel (`dated-channel.md`); usually vs must (`usually-vs-must.md`). |
 | `residue-and-former.md` | Residue / former; contrary to: plan, say words, channels, whose (`contrary-to.md`); it turns out (`mirative.md`); as if (`notional.md`); already / still / not yet / no longer (`already-still-yet.md`). |
+| `word-reach.md` | How far a word reaches, closing Intermediate: reach sizes, earlier covers later and its exceptions, what gets into a box, whose a word is, what carries past a period and what ends it (synthesis; each rule's owning section teaches it). |
 | `roles.md` | Role compounds; viewpoint laterals, landmark facing, gravity (`viewpoint.md`); role parts (`role-parts.md`). |
 | `compounds.md` | Mid-word `x`, dictionary compounds; compound families (`compound-families.md`); conversation length (`conversation-length.md`); root tails, tail suffixes (`root-tails.md`). |
 | `spans.md` | Span fences, asides; spans as words: mention, span nouns, `gl` spans, one of a title (`spans-as-words.md`); inside a quote: act words, topics (`quote-contents.md`); scope islands (`scope-islands.md`); editorial close, nesting (`span-nesting.md`). |
