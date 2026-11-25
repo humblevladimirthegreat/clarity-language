@@ -859,6 +859,7 @@ A tool that needs what a sentence says reads readings; a tool that needs how it 
 | The [solver](solver.md) (`solve.ts`, `translate.ts`) | readings |
 | The wizard's engine and host (`src/game/engine.ts`, `src/game/host.ts`) | readings |
 | `scripts/reading.mjs` (`npm run reading`) | readings |
+| The [realizer](realizer.md) (`src/realize/`) | readings, through the [meaning view](realizer.md#meaning-view) (`meaning.ts`), which drops every parsed word |
 | The "same reading" lint (`src/lint/practice-item-rules.ts`, through `sameReadings`) | readings |
 | Construction search's frame queries (`frame=`, `--over`, `--under`, `--unordered`, `--diff` in `src/find/`) | readings |
 | The translation prompt (`src/parse/llm-prompt.ts`, `parse.mjs --llm-prompt`) | parse (morph gloss). Tried 2026-11-19 with reader structure lines added (what covers what, unsettled pairs, carried frames); on 20 pairs with two or more whole-clause frames the miss rate rose from 20% to 28%, so the lines were dropped. |
