@@ -6,7 +6,9 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { checkLine, spell } from "../interpret/reply.js";
 import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-inverse.js";
+import { claimGloss } from "./claim.js";
 import type { MeaningReading } from "./meaning.js";
+import { Unrealized } from "./terms.js";
 
 /**
  * Why the realizer wrote nothing: `noRule`, no rule for this key yet; `missingValue`, the view lacks what is needed to
@@ -29,10 +31,17 @@ export function firstKey(view: MeaningReading): string {
   return view.frames[0]?.key ?? view.claim.details[0]?.key ?? view.stanceLists?.[0]?.key ?? view.links[0]?.key ?? "claim";
 }
 
-/** Realize one reading of the meaning view. */
-export function realize(view: MeaningReading, _tables: ClassifyTables): Realized {
+/** Realize one reading of the meaning view: the bare clause (`claim.ts`), else a gap under the reading's first key. */
+export function realize(view: MeaningReading, tables: ClassifyTables): Realized {
   const key = firstKey(view);
-  return { gap: { kind: "noRule", key, detail: `no rule realizes ${key} yet` } };
+  let gloss: string;
+  try {
+    gloss = claimGloss(view, tables);
+  } catch (error) {
+    if (!(error instanceof Unrealized)) throw error;
+    return { gap: { kind: error.kind, key, detail: `${key}: ${error.message}` } };
+  }
+  return spellGloss(gloss, key, tables);
 }
 
 const indexes = new WeakMap<ClassifyTables, GlossIndex>();

@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** meaning view and round trip shipped; the realizer has no rules yet, and the variant corpus is still to come  
+**Status:** meaning view and round trip shipped; the realizer writes the bare clause, and the variant corpus is still to come  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md) through the [interpreter's readings](interpreter.md#terms). The realizer writes Ageben for a reading; it never decides what a reading means.
 
 The realizer takes a reading and writes an Ageben text that says the same thing. The round trip checks it: read a doc example, realize each reading, read the result again, and compare the two readings with [equal readings](interpreter.md#equal-readings). A pass shows that the reading holds the whole meaning of the text. A failure shows a place where the meaning still lives only in a word's spelling. This note owns the meaning view, the canonical choices, the round trip, the variant corpus and the list of gaps. The realizer is in `src/realize/`, and the round trip in `src/round-trip/`.
@@ -21,7 +21,7 @@ The realizer never reads a reading directly. It reads the **meaning view**: a co
 - `order` and `unordered` as indices into the reading's frames, with each unsettled pair in text order. [Reader rule 3](interpreter.md#reader-rules) leaves the order of an unsettled pair open, so the view keeps the order the text gave and the realizer never picks one;
 - links by kind and key, with the reading they point to (`to`), the frame they carry, and the terms and details they name;
 - a pronoun's bind as the bind's kind, with its antecedent as a meaning-view term;
-- the identities: a thing's roots, each named by its lexicon row's concrete sense (a listed compound stem as one root, and a root with no row by its spelling); a name as its root spelling; a literal's payload; and a number's stem. These are spellings by design: a different root or name is a different thing, not a different way to say the same thing.
+- the identities: a thing's roots, each named by its lexicon row's concrete sense (a listed compound stem as one root, and a root with no row by its spelling); a name as its root spelling; a plain adjective's, adverb's or degree word's root, as the reader's `values.root`; a literal's payload; and a number's stem. These are spellings by design: a different root or name is a different thing, not a different way to say the same thing.
 
 **What the view drops.** Everything that is form or a pointer into the parse:
 
@@ -38,10 +38,14 @@ A test projects every doc example and fails on any object in the view that has a
 ## Canonical choices
 <a id="canonical-choices"></a>
 
-Where the grammar allows several forms with the same meaning, the realizer writes one. Each choice is a row here: what the realizer writes, the key of the reading part it writes it for, and the grammar anchor that allows the other forms. A choice must give a text that [equal readings](interpreter.md#equal-readings) finds the same as the original; when none does, the part is a gap. The table has no rows yet, since the realizer has no rules yet.
+Where the grammar allows several forms with the same meaning, the realizer writes one. Each choice is a row here: what the realizer writes, the key of the reading part it writes it for, and the grammar anchor that allows the other forms. A choice must give a text that [equal readings](interpreter.md#equal-readings) finds the same as the original; when none does, the part is a gap.
 
 | Choice | Key | Anchor |
 |--------|-----|--------|
+| The roles in the default order: subject, direct object, verb, then a plain extra noun (`z`, `d`, `v`, `b`) | `claim` | `clause.md#extra-nouns` |
+| Roles whose nouns bring in a new member keep the order their frames cover each other in, the earlier word covering the later | `slot:newMember` | `clause.md#which-covers-which` |
+| Adverbs right before the verb, or before the predicate when the clause has no verb | `unit:h` | `clause.md#adverbs-h` |
+| The statement act `yal` left out | `edge:force` | `speech-moves.md#speech-act-beginner` |
 
 ## Round trip
 <a id="round-trip"></a>
@@ -53,7 +57,9 @@ Where the grammar allows several forms with the same meaning, the realizer write
 - `noSpell`: the gloss does not spell;
 - `noParse`: the spelled line does not parse to one tree.
 
-A gap is filed under the key of the reading's first part: its first frame's key, else its first claim detail's, its first stance list's or its first link's. A reading with none of these is the bare clause, filed as `claim`. For now the realizer has no rules, so every reading is a `noRule` gap.
+A gap is filed under the key of the reading's first part: its first frame's key, else its first claim detail's, its first stance list's or its first link's. A reading with none of these is the bare clause, filed as `claim`.
+
+**The bare clause.** `src/realize/claim.ts` writes the claim: its verb, its `z`, `d` and `b` roles, its predicate and its plain adverbs, in the order of the [canonical choices](#canonical-choices). A role holds a `thing`, `speaker`, `listener` or `we` term with its plain adjectives and their degree words (`src/realize/terms.ts`). A first-mention noun's new-member frame ([new member in a statement](../grammar/beginner/joins.md#new-member-in-a-statement)) is written by its noun alone, on the ending the frame records; any other frame, a link, a stance list or a word-building stem is still a `noRule` gap. A word's leaf gloss comes from the gloss index for its root, role letter and ending (`src/realize/words.ts`), so the realizer never writes an English label or a spelling itself.
 
 **The walk.** `src/round-trip/round-trip.ts` reads each doc example as one turn of a log (`buildLog`), so links and pronouns cross its sentences. It projects every reading, realizes it, and joins the realized sentences in order. It then gives the example one verdict:
 

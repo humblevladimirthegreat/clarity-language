@@ -251,7 +251,10 @@ export function framedMember(coord: NpCoord, term: Term, under: Frame, here: Her
 
 export function detailOf(key: string, word: LexWord, kind: string): Detail {
   const anchor = classOf(key)?.anchor ?? "";
-  return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values: wordValues(word) };
+  const values = wordValues(word);
+  // A plain content word's root is what the adjective, adverb or degree word says (clause.md#adjectives-ɡ).
+  if (word.reading === "ordinary" && word.family.kind === "content") values.root = word.family.roots.join("");
+  return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values };
 }
 
 /** The link kinds whose one word's meaning the solver reads off `values` (interpreter.md#links). */

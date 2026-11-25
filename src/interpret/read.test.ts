@@ -60,6 +60,20 @@ describe("reader: one fixture per frame family", () => {
     assert.ok(say.reach && say.part && say.answer, JSON.stringify(say));
   });
 
+  it("plain details: an adjective, adverb or degree word's root is a value", () => {
+    const [reading] = read("[z-dog | [w-very | g-angry]] | h-haste | v-walk");
+    const thing = reading!.claim.roles.z;
+    assert.ok(thing?.kind === "thing");
+    const adj = thing.details[0]!;
+    const roots = [adj, adj.details?.[0], reading!.claim.details[0]].map((detail) => detail?.values.root);
+    const spelled = [adj, adj.details?.[0], reading!.claim.details[0]].map((detail) => {
+      const family = detail?.words[0]?.family;
+      return family?.kind === "content" ? family.roots.join("") : undefined;
+    });
+    assert.ok(roots.every(Boolean), JSON.stringify(roots));
+    assert.deepEqual(roots, spelled);
+  });
+
   it("stance and mirative: a channel and MIRATIVE commute, so no order is recorded", () => {
     const [reading] = read("th-CLUES | z-Azozon | v-walk | th-MIRATIVE");
     assert.deepEqual(families(reading!), ["stance", "mirative"]);

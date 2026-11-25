@@ -11,7 +11,9 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { realize, spellGloss } from "../realize/realize.js";
-import { corpus } from "./corpus.js";
+import { sameReadings } from "../interpret/equal.js";
+import { project } from "../realize/meaning.js";
+import { corpus, readTurn } from "./corpus.js";
 import { firstDifference, ratchetOf, roundTrip, type Ratchet } from "./round-trip.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -31,6 +33,30 @@ describe("round trip", () => {
     assert.ok("ageben" in yes && yes.gloss === "y-yes", JSON.stringify(yes));
     const bad = spellGloss("NOSUCH-gloss", "claim", tables);
     assert.ok("gap" in bad && (bad.gap.kind === "noSpell" || bad.gap.kind === "noParse"), JSON.stringify(bad));
+  });
+
+  it("realizes the bare clause in the default order, keeping the order new members cover each other in", () => {
+    const cases: [string, string][] = [
+      ["zodozel vowurol.", "zodozel vowurol."],
+      ["zodozel gonumul dogozel vayebel.", "zodozel gonumul dogozel vayebel."],
+      ["dogozel zodozel vayebel.", "dogozel zodozel vayebel."],
+      ["balazun zazozon daral varal.", "zazozon daral varal balazun."],
+      ["zodozel vowurol hadurom.", "zodozel hadurom vowurol."],
+      ["zodozel welazem gonumul vowurol.", "zodozel welazem gonumul vowurol."],
+      ["zazozon gonumul hadurom.", "zazozon hadurom gonumul."],
+      ["zawan dayan vayebel.", "zawan dayan vayebel."],
+      ["dazozon vayebel.", "dazozon vayebel."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
+  it("files a part the bare clause has no rule for under the reading's first key", () => {
+    const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
+    assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));
   });
 
   it("finds the first differing path of two canonical forms", () => {
