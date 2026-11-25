@@ -7,7 +7,7 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import type { MeaningDetail, MeaningTerm } from "./meaning.js";
-import { hNumberLeaf, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
+import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, rootOf, type Ending } from "./words.js";
 import type { GapKind } from "./realize.js";
 import { listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
@@ -103,8 +103,12 @@ export function adverb(detail: MeaningDetail, tables: ClassifyTables): string {
 }
 
 /** A term's plain adjectives, each with its degree words, after the head (clause.md#adjectives-ɡ). */
-function adjectives(details: readonly MeaningDetail[] | undefined, tables: ClassifyTables): string[] {
-  return (details ?? []).map((detail) => {
+function adjectives(details: readonly MeaningDetail[] | undefined, tables: ClassifyTables, plainNoun = false): string[] {
+  return (details ?? []).map((detail, i, all) => {
+    // A minus number right after a plain noun, or after a count anywhere, is a fraction (measures-and-percent.md#fractions).
+    const prev = all[i - 1];
+    const fraction = (prev ? isPlainCount(prev) : plainNoun) ? fractionLeaf(detail) : undefined;
+    if (fraction) return fraction;
     // A count or rank sits with the adjectives (numbers.md#counts).
     if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
     if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
@@ -161,7 +165,7 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
     case "list":
       return listGloss(term, pos, ending, listWriters((m, own) => roleTerm(m, pos, own, tables, style), tables, style), style);
     case "thing":
-      return unit([thingLeaf(term, pos, ending, tables), ...adjectives(term.details, tables)]);
+      return unit([thingLeaf(term, pos, ending, tables), ...adjectives(term.details, tables, !term.named && ending === "l" && term.stem.length === 1)]);
     case "speaker":
     case "listener":
     case "we":

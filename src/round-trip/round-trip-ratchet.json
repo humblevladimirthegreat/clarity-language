@@ -1,5 +1,5 @@
 {
-  "ok": 278,
+  "ok": 286,
   "keys": {
     "anaphor:content": 17,
     "anaphor:landmark": 1,
@@ -32,7 +32,7 @@
     "joinSeries:u:kind": 5,
     "joinSeries:u:standalone": 3,
     "joinSeries:ua": 39,
-    "joinSeries:uo": 11,
+    "joinSeries:uo": 10,
     "lexReading:ability": 2,
     "lexReading:joinRelation": 7,
     "lexReading:number": 5,
@@ -75,10 +75,10 @@
     "shared:distribute": 10,
     "shared:equative": 6,
     "shared:kind": 35,
-    "shared:scale": 46,
+    "shared:scale": 40,
     "slot:dependent": 3,
     "slot:grounds": 12,
-    "slot:newMember": 299,
+    "slot:newMember": 297,
     "slot:tag": 17,
     "slot:th": 17,
     "unit:h": 31,

@@ -93,6 +93,39 @@ export function numberDetailLeaf(detail: MeaningDetail): string {
   return leafOf(fromBody(detail.values.number), "g", detail.values.ending);
 }
 
+/** The parts a fraction names one of, by their English (measures-and-percent.md#fractions); others are `one-Nth`. */
+const FRACTION_NAMES: Record<number, string> = { 2: "half", 3: "third", 4: "quarter" };
+
+/** A plain `/ɡ/` count on **-l** (`g+N`), which makes a minus number right after it a fraction. */
+export function isPlainCount(detail: MeaningDetail): boolean {
+  if (detail.key !== "lexReading:number" || detail.values.ending !== "l" || detail.values.gloss) return false;
+  try {
+    return fromBody(detail.values.number).marker === "+";
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * A minus number N (N ≥ 2) right after a plain noun or a count, which names one part in N
+ * (measures-and-percent.md#fractions: `zedudal grugel`, *a third of the tea*), or undefined when the detail is not one.
+ */
+export function fractionLeaf(detail: MeaningDetail): string | undefined {
+  if (detail.key !== "lexReading:number" || detail.values.gloss) return undefined;
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) return undefined;
+  let number: Plain;
+  try {
+    number = fromBody(detail.values.number);
+  } catch {
+    return undefined;
+  }
+  const n = Number(number.digits);
+  if (number.marker !== "-" || n < 2) return undefined;
+  // The fraction's gloss names no ending; only the exact one reads back the same.
+  if (detail.values.ending !== "l") throw noRule(`a fraction on -${detail.values.ending ?? "?"}`);
+  return `g-${FRACTION_NAMES[n] ?? `one-${ordinal(n)}`}-of`;
+}
+
 /**
  * A digitless number shared after a rank join (comparative-arity.md#amount-scale, #frequency-scale, #time-scale): the
  * scale it ranks on, which the reader records in `values.scale`, is its letter and its label (`g-amount`,

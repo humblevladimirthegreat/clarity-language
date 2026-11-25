@@ -167,15 +167,18 @@ describe("round trip", () => {
       ["zazozon zalazun zoel gelazem hradol.", ["zazozon zalazun zoel gelazem hradol."]],
       ["zalazun zazozon zoel gelazem hrudol.", ["zalazun zazozon zoel gelazem hrudol."]],
       ["zalazun vowurol hragel.", ["zalazun hragel vowurol."]],
+      // A digitless scale word, from `values.scale`; a mid-word x compound; a fraction after a plain noun or a count.
+      ["zazozon zalazun zol hral vowurol.", ["zazozon zalazun zol hral vowurol."]],
+      ["zazozon thagom zol bral vavurol.", ["zazozon thagom zol bral vavurol."]],
+      ["zuwedaxubudal.", ["zuwedaxubudal."]],
+      ["zedudal grugel vehohel.", ["zedudal grugel vehohel."]],
+      ["zedudal gradol grugel vehohel.", ["zedudal gradol grugel vehohel."]],
     ];
     for (const [text, want] of cases) {
       const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
       assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
       assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
     }
-    // A digitless scale word is written from `values.scale`, but its label does not spell yet.
-    const [scale] = project(readTurn("zazozon zalazun zol hral vowurol.", tables), tables).map((view) => realize(view, tables));
-    assert.ok(scale && "gap" in scale && scale.gap.kind === "noSpell" && scale.gap.detail.includes("h-how-often"), JSON.stringify(scale));
     // A role compound on -r resumes its event: it spells only after the verb it names.
     const role = project(readTurn("zazozon veduyol. zwuzeduyor vezuvel.", tables), tables).map((view) => realize(view, tables))[1];
     assert.ok(role && "gap" in role && role.gap.kind === "noSpell" && role.gap.detail.includes("z-←episode-agent-teach"), JSON.stringify(role));

@@ -122,6 +122,28 @@ describe("glossToAgeben", () => {
     for (const [gloss, ageben] of cases) assert.equal(glossToAgeben(gloss, tables, bare), ageben, gloss);
   });
 
+  it("spells a digitless scale word and a mid-word x compound with no doc line to copy them from", () => {
+    const bare = buildGlossIndex(tables);
+    const cases: [string, string][] = [
+      ["[z-Azozon | z-Alazun | z-rank/more | g-amount] | v-walk", "zazozon zalazun zol gral vowurol"],
+      ["[z-Azozon | z-Alazun | z-rank/more | g-amount.about] | v-walk", "zazozon zalazun zol gram vowurol"],
+      ["[z-Azozon | z-Alazun | z-rank/more | h-how-often] | v-walk", "zazozon zalazun zol hral vowurol"],
+      ["[z-Azozon | th-plan-itinerary | z-rank/more | b-later] | v-arrival", "zazozon thagom zol bral vavurol"],
+      ["z-peanut-x-butter", "zuwedaxubudal"],
+      ["d-peanut-x-butter", "duwedaxubudal"],
+      ["z-triviality-x-compliment", "zuwedaxubudam"],
+      ["[z-tea | g-third-of] | v-sit", "zedudal grugel vehohel"],
+      ["[z-tea | g-half-of] | v-sit", "zedudal grudol vehohel"],
+      ["[z-tea | g-two | g-third-of] | v-sit", "zedudal gradol grugel vehohel"],
+      ["[z-tea | g-one-12th-of] | v-sit", "zedudal g-12 vehohel"],
+    ];
+    for (const [gloss, ageben] of cases) {
+      const spelled = glossToAgeben(gloss, tables, bare);
+      assert.equal(spelled, ageben, gloss);
+      assert.equal(morphGlossLine(spelled, tables), gloss, ageben);
+    }
+  });
+
   it("rejects a gloss no Ageben line produces", () => {
     assert.throws(() => glossToAgeben("z-dog | v-not-a-real-sense", tables, index));
   });

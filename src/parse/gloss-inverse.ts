@@ -351,6 +351,52 @@ function numberCandidates(core: string): string[] {
   return [`${pos}r${vowel}${syllables}${ending}`, `${pos}${mark}${number.marker}${number.digits}`];
 }
 
+const FRACTION_DIGITS: Record<string, string> = { half: "2", third: "3", quarter: "4" };
+
+/**
+ * A fraction, a minus number right after a plain noun or a count (measures-and-percent.md#fractions): `g-half-of` →
+ * `grudol`, `g-one-12th-of` → `g-12`, in the preferred writing first (number-markers.md#writing-style-numeric-vs-spelled).
+ */
+function fractionCandidates(core: string): string[] {
+  const fraction = core.match(/^g-(?:(half|third|quarter)|one-(\d+)(?:st|nd|rd|th))-of$/);
+  if (!fraction) return [];
+  const digits = fraction[1] ? FRACTION_DIGITS[fraction[1]]! : fraction[2]!;
+  const spelled = `gru${[...digits].map((digit) => DIGIT_SYLLABLE[Number(digit)]).join("")}l`;
+  return digits.length > 1 ? [`g-${digits}`, spelled] : [spelled, `g-${digits}`];
+}
+
+/** The digitless scale word on each role letter that has one, by its scale label (morph-gloss.ts `SCALE_GLOSS`). */
+const SCALE_POS: Record<string, string> = { amount: "g", "how-often": "h", later: "b" };
+
+/**
+ * A digitless `+` shared after a rank or tie join names its scale (comparative-arity.md#amount-scale): `g-amount` →
+ * `gral`, `h-how-often` → `hral`, `b-later` → `bral`, and `.about` on **-m** (`gram`). The spelled writing, the
+ * preferred one with no digit (number-markers.md#writing-style-numeric-vs-spelled).
+ */
+function scaleCandidates(core: string): string[] {
+  const scale = core.match(/^([ghb])-(amount|how-often|later)(\.about)?$/);
+  if (!scale || SCALE_POS[scale[2]!] !== scale[1]) return [];
+  return [`${scale[1]}ra${scale[3] ? "m" : "l"}`];
+}
+
+/**
+ * A mid-word `x` compound (compounds.md): its parts' senses joined at `-x-` (`z-peanut-x-butter` → `zuwedaxubudal`).
+ * Every root each sense names, on each ending; the re-gloss check keeps the one whose ending gives these senses.
+ */
+function compoundCandidates(core: string, index: GlossIndex): string[] {
+  const leaf = core.match(/^((?:th|[zdbvgwhxy])-)?([a-z][a-z.-]*-x-[a-z.-]*[a-z])$/);
+  if (!leaf) return [];
+  const pos = (leaf[1] ?? "").replace(/-$/, "");
+  let stems = [""];
+  for (const sense of leaf[2]!.split("-x-")) {
+    const roots = [...(index.roots.get(sense) ?? [])];
+    if (roots.length === 0) return [];
+    stems = stems.flatMap((stem) => roots.map((root) => (stem ? `${stem}x${root}` : root)));
+    if (stems.length > 16) return [];
+  }
+  return stems.flatMap((stem) => ["l", "m"].map((ending) => `${pos}${stem}${ending}`));
+}
+
 function leafCandidates(text: string, index: GlossIndex, named: boolean): string[] {
   const plural = /[^-]-x$/.test(text) && !text.endsWith("-x-x");
   const core = plural ? text.slice(0, -2) : text;
@@ -371,6 +417,9 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   }
 
   for (const form of numberCandidates(core)) out.add(form + suffix);
+  for (const form of scaleCandidates(core)) out.add(form + suffix);
+  for (const form of fractionCandidates(core)) out.add(form + suffix);
+  for (const form of compoundCandidates(core, index)) out.add(form + suffix);
 
   const resume = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {
