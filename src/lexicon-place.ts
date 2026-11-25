@@ -69,13 +69,18 @@ export function englishRank(label: string, freqRank: Map<string, number>): numbe
   return Math.max(...words.map((word) => freqRank.get(word) ?? UNLISTED));
 }
 
-export function loadFrequencyRanks(): Map<string, number> {
+/** Word → line number in a `word count` frequency list; a repeated word keeps its first line. */
+export function parseFrequencyRanks(text: string): Map<string, number> {
   const freqRank = new Map<string, number>();
-  readFileSync(FREQ_FILE, "utf8").split("\n").forEach((line, index) => {
+  text.split("\n").forEach((line, index) => {
     const word = line.split(" ")[0];
     if (word && !freqRank.has(word)) freqRank.set(word, index + 1);
   });
   return freqRank;
+}
+
+export function loadFrequencyRanks(): Map<string, number> {
+  return parseFrequencyRanks(readFileSync(FREQ_FILE, "utf8"));
 }
 
 export async function ensureFrequencyFile(): Promise<void> {
@@ -470,11 +475,15 @@ export async function placePublishedRoots(
     annealSteps?: number;
     /** Tails annealing steps (src/root-tails-place.ts). */
     tailSteps?: number;
+    /** English frequency ranks; by default the cached list, fetched when missing. Tests pass a fixture. */
+    freqRank?: Map<string, number>;
+    /** Label → CMU pronunciation; by default the pronunciation cache, rebuilt when it lacks a label. Tests pass a fixture. */
+    pron?: Map<string, string>;
   } = {},
 ): Promise<Placement[]> {
-  await ensureFrequencyFile();
-  const pron = await pronunciationsFor(rows);
-  const freqRank = loadFrequencyRanks();
+  const pron = options.pron ?? (await pronunciationsFor(rows));
+  if (!options.freqRank) await ensureFrequencyFile();
+  const freqRank = options.freqRank ?? loadFrequencyRanks();
   const indexed = indexRows(rows, overlays, pron, freqRank);
   const skip = options.skip ?? new Set<string>();
   // An English word the doc lint reads as English in code can't be a root.

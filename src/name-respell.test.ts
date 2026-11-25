@@ -1,13 +1,22 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { loadCmu } from "./cmu-dict.ts";
+import { parseCmuDict } from "./cmu-dict.ts";
 import { parsePublishedCsv } from "./lexicon-search.ts";
 import { matchNamedRow, respellEnglishName } from "./name-respell.ts";
 import { readFileSync } from "node:fs";
 import { dataPath } from "./repo-paths.ts";
 
-const cmu = loadCmu();
+/** The pinned CMU dictionary's lines for the words these tests read, so they need no download. */
+const cmu = parseCmuDict([
+  "alan AE1 L AH0 N",
+  "japan JH AH0 P AE1 N",
+  "new N UW1",
+  "new(2) N Y UW1",
+  "owen OW1 AH0 N",
+  "sam S AE1 M",
+  "zealand Z IY1 L AH0 N D",
+].join("\n"));
 const rows = parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8"));
 
 describe("respellEnglishName", () => {

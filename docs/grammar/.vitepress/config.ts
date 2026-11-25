@@ -1,4 +1,4 @@
-import { copyFileSync, mkdirSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { dirname } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
@@ -17,9 +17,15 @@ const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 const cmuDict = fileURLToPath(new URL('../../../tmp/cache/cmudict.dict', import.meta.url))
 const cmuPublic = fileURLToPath(new URL('../public/cmudict.dict', import.meta.url))
 
-await ensureCmuDict()
-mkdirSync(dirname(cmuPublic), { recursive: true })
-copyFileSync(cmuDict, cmuPublic)
+// The name respeller widget reads /cmudict.dict. BUILD_OFFLINE=1 (cloud sessions) builds without it
+// when it isn't cached; the widget then spells names by letters.
+if (process.env.BUILD_OFFLINE && !existsSync(cmuDict)) {
+  console.warn('warning: BUILD_OFFLINE: no cached tmp/cache/cmudict.dict, so the site build leaves out /cmudict.dict (names respell by letters)')
+} else {
+  await ensureCmuDict()
+  mkdirSync(dirname(cmuPublic), { recursive: true })
+  copyFileSync(cmuDict, cmuPublic)
+}
 
 export default defineConfig({
   title: 'Ageben Grammar',

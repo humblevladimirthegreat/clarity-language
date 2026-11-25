@@ -6,7 +6,8 @@
 // each followed by its `✓` / `✗ label (12.3s)` line (`npm run verify` reads that log).
 // stdout carries only the status lines, warnings, `build ok` / `build FAILED`, and on failure
 // a Failures footer: each failing job's issue lines with file:line, last. BUILD_VERBOSE=1 also
-// prints every job's full output.
+// prints every job's full output. BUILD_OFFLINE=1 (set by .claude/cloud-setup-script.sh) builds the
+// site without downloading the CMU dictionary when it isn't cached (docs/grammar/.vitepress/config.ts).
 import { spawn } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";

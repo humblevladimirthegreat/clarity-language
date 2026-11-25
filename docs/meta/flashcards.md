@@ -131,10 +131,11 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 | `npm run flashcards` | every pack: `.apkg`, `.json` and the TSVs, then the import check |
 | `npm run flashcards -- --pack beginner,everything` | only these (`beginner`, `intermediate`, `advanced`, `everything`, `claritish`) |
 | `npm run flashcards -- --tsv-only` | TSVs and `.json` only; no packaging, no check, no `.venv` needed |
+| `npm run flashcards -- --no-check` | every pack packaged, no import check; `.venv` needs only `genanki` |
 | `npm run flashcards -- --out DIR` | the same, into `DIR` |
 
 - An Ageben pack writes `ageben-<pack>.apkg`, `.json`, and one TSV per note type it holds: `ageben-<pack>.tsv` (lexicon), `-overlay.tsv` and `-set.tsv` (the last two `#html:true`). Claritish writes `claritish.apkg`, `.json` and `.tsv`.
-- Packaging and the check need `.venv/bin/python` with [`requirements.txt`](../../requirements.txt) (`genanki` through [`requirements-publish.txt`](../../requirements-publish.txt), and the `anki` pin for the check).
+- Packaging and the check need `.venv/bin/python` with [`requirements.txt`](../../requirements.txt) (`genanki` through [`requirements-publish.txt`](../../requirements-publish.txt), and the `anki` pin for the check). A `.venv` with only `requirements-publish.txt`, as in a cloud session, still packages; see [import check](#import-check) for when the check is skipped.
 - Output is deterministic: no timestamps or random ids in notes, GUIDs, deck ids or release ids. Nothing generated is committed.
 
 ## Import check {#import-check}
@@ -148,6 +149,13 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 - each `ageben::cp::` tag's unlock search, `deck:Ageben* tag:<tag>`, finds exactly the notes that carry it;
 - a second import adds nothing, and a card the learner unsuspended and one they reviewed keep their state;
 - **release search:** for Claritish and for the Ageben packs together, it rebuilds the packs with one note dropped and the release tags recomputed, imports them with *always update*, and checks that the release search finds exactly the dropped note. For Claritish the Python release id matches the TS one, so a change to that formula changes `release_id` in the check too; for Ageben the check needs only a different id.
+
+**When `.venv` has no `anki`.** The `anki` wheel is a large download, so a cloud session installs only `requirements-publish.txt`. `npm run flashcards` (and so `npm run build`) then decides from `git diff` against the merge base with `origin/main`, untracked files included:
+
+- No flashcard code changed: it packages every pack, skips the check, and prints a `warning:` line, which the build shows without failing.
+- `src/flashcards*`, `scripts/flashcards*` or a `requirements*.txt` changed, or git can't tell: it fails before packaging and names the changed files. Install `requirements.txt` and rerun, or run the check where `anki` is installed.
+
+Data edits (lexicon, closed words, sound names) change the notes but not how packs import, so they don't need the check.
 
 ## Publishing {#publishing}
 

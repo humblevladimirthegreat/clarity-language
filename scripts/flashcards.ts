@@ -7,8 +7,11 @@
  *                                                 claritish: tmp/out/flashcards/claritish.apkg and .tsv, Claritish note type
  *      npm run flashcards -- --out <dir>          another output directory
  *      npm run flashcards -- --tsv-only           skip the genanki step and the Anki check (no .venv needed)
+ *      npm run flashcards -- --no-check           package, but skip the Anki check (no `anki` in .venv needed)
  *
  * After packaging, scripts/flashcards-check.py imports every pack into a throwaway Anki collection.
+ * When .venv lacks `anki` (requirements-publish.txt only), the check is skipped with a warning, unless
+ * flashcard code changed since origin/main: then it fails (docs/meta/flashcards.md#import-check).
  */
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
@@ -21,13 +24,17 @@ import { buildPack, noteCards, packTsvs } from "../src/flashcards-packs.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 import { tmpPath } from "../src/tmp-paths.js";
 
-type Options ={ packs: PackId[]; out: string; tsvOnly: boolean };
+type Options ={ packs: PackId[]; out: string; tsvOnly: boolean; noCheck: boolean };
+
+/** Paths whose change needs the Anki import check to run: the generator, packager and checker, and the Python pins. */
+const CHECK_PATHS = /^(src\/flashcards|scripts\/flashcards|requirements[^/]*\.txt$)/;
 
 function parseArgs(argv: string[]): Options {
-  const options: Options = { packs: [...PACK_IDS], out: tmpPath("out", "flashcards"), tsvOnly: false };
+  const options: Options = { packs: [...PACK_IDS], out: tmpPath("out", "flashcards"), tsvOnly: false, noCheck: false };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]!;
     if (arg === "--tsv-only") options.tsvOnly = true;
+    else if (arg === "--no-check") options.noCheck = true;
     else if (arg === "--out" && argv[i + 1]) options.out = resolve(argv[++i]!);
     else if (arg === "--pack" && argv[i + 1]) {
       const packs = argv[++i]!.split(",");
@@ -39,6 +46,35 @@ function parseArgs(argv: string[]): Options {
   return options;
 }
 
+/** Files changed since this branch left origin/main (HEAD when there is no remote), committed or not, plus untracked ones; undefined when git fails. */
+function changedFiles(): string[] | undefined {
+  const git = (...args: string[]) => {
+    const run = spawnSync("git", args, { cwd: REPO_ROOT, encoding: "utf8" });
+    return run.status === 0 ? run.stdout : undefined;
+  };
+  const base = git("merge-base", "HEAD", "origin/main")?.trim() || "HEAD";
+  const diff = git("diff", "--name-only", base);
+  const untracked = git("ls-files", "--others", "--exclude-standard");
+  if (diff === undefined || untracked === undefined) return undefined;
+  return `${diff}\n${untracked}`.split("\n").filter(Boolean);
+}
+
+/**
+ * Whether to run the Anki import check. Without `anki` in .venv it is skipped with a warning,
+ * unless flashcard code changed (or git can't tell): then the run fails before packaging.
+ */
+function shouldCheck(python: string): boolean {
+  if (spawnSync(python, ["-c", "import anki"], { stdio: "ignore" }).status === 0) return true;
+  const changed = changedFiles();
+  const relevant = changed?.filter((path) => CHECK_PATHS.test(path));
+  if (relevant === undefined || relevant.length > 0) {
+    const why = relevant ? `flashcard code changed (${relevant.join(", ")})` : "git could not list changed files";
+    throw new Error(`.venv has no anki and ${why}: \`.venv/bin/pip install -r requirements.txt\` to run the import check`);
+  }
+  console.log("warning: Anki import check skipped: .venv has no anki and no flashcard code changed since origin/main (install requirements.txt to run it)");
+  return false;
+}
+
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const pages = lessonPages();
@@ -48,6 +84,7 @@ function main(): void {
   if (!options.tsvOnly && !existsSync(python)) {
     throw new Error("no .venv/bin/python: create it with `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`, or pass --tsv-only");
   }
+  const check = !options.tsvOnly && !options.noCheck && shouldCheck(python);
   mkdirSync(options.out, { recursive: true });
 
   const packed: string[] = [];
@@ -78,9 +115,9 @@ function main(): void {
     }
     console.log(`${id}: ${packNotes.length} notes, ${cards} cards in ${pack.decks.length} deck(s) → ${base}.${options.tsvOnly ? "tsv" : "apkg"}`);
   }
-  if (packed.length > 0) {
-    const check = spawnSync(python, [join(REPO_ROOT, "scripts", "flashcards-check.py"), ...packed], { stdio: "inherit" });
-    if (check.status !== 0) process.exit(check.status ?? 1);
+  if (check && packed.length > 0) {
+    const run = spawnSync(python, [join(REPO_ROOT, "scripts", "flashcards-check.py"), ...packed], { stdio: "inherit" });
+    if (run.status !== 0) process.exit(run.status ?? 1);
   }
 }
 

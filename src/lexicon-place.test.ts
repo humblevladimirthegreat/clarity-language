@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import type { CompoundRow } from "./lexicon-compounds.ts";
-import { annealShortRoots, englishRank, loadFrequencyRanks, placePublishedRoots, rowPriority, shortRootGuards } from "./lexicon-place.ts";
+import { annealShortRoots, englishRank, parseFrequencyRanks, placePublishedRoots, rowPriority, shortRootGuards } from "./lexicon-place.ts";
 import type { OverlayRow } from "./lexicon-search.ts";
 import { shortRootCandidates } from "./word-converter.ts";
 
@@ -32,16 +32,33 @@ function shortItem(emoji: string, root: string, cmu: string, index: number) {
   return { row: { emoji, concrete: emoji, abstract: "", englishByPos: "", root }, index, groups: new Set<string>(), eligible: true, priority: index, cmu };
 }
 
+/**
+ * A stand-in for the downloaded word-frequency list, so these tests need no network or cache.
+ * The real list is fetched by `retie-docs` and `compound-fill` when they place roots.
+ */
+const RANKS = parseFrequencyRanks(["the 100", "of 90", "number 80", "count 70", "book 60", "memory 50", "direction 40", "delight 30", "grin 20", "ballot 10"].join("\n"));
+
+/** placePublishedRoots with the fixture ranks and no pronunciations: a label CMU lacks loses only the English cost. */
+function place(...[rows, overlays, options]: Parameters<typeof placePublishedRoots>) {
+  return placePublishedRoots(rows, overlays, { freqRank: RANKS, pron: new Map(), ...options });
+}
+
 describe("frequency priority", () => {
+  it("ranks a word by its first line and skips a repeat", () => {
+    const ranks = parseFrequencyRanks("the 100\nof 90\n\nthe 5\n");
+    assert.equal(ranks.get("the"), 1);
+    assert.equal(ranks.get("of"), 2);
+    assert.equal(ranks.size, 2);
+  });
+
   it("ranks a common word ahead of an unlisted one", () => {
-    const ranks = loadFrequencyRanks();
-    assert.ok(englishRank("the", ranks) < englishRank("notawordzz", ranks));
-    assert.equal(englishRank("notawordzz", ranks), 50001);
+    assert.ok(englishRank("the", RANKS) < englishRank("notawordzz", RANKS));
+    assert.equal(englishRank("notawordzz", RANKS), 50001);
   });
 
   it("uses the rarest word of a multi-word label", () => {
-    const ranks = loadFrequencyRanks();
-    assert.equal(englishRank("the notawordzz", ranks), englishRank("notawordzz", ranks));
+    assert.equal(englishRank("the notawordzz", RANKS), englishRank("notawordzz", RANKS));
+    assert.equal(englishRank("The Book", RANKS), englishRank("book", RANKS));
   });
 });
 
@@ -58,13 +75,13 @@ describe("placement", () => {
   };
 
   it("ranks a row by its most frequent sense", () => {
-    const ranks = loadFrequencyRanks();
     const grin = { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" };
-    assert.equal(rowPriority(grin, ranks), Math.min(englishRank("grin", ranks), englishRank("delight", ranks)));
+    assert.equal(rowPriority(grin, RANKS), englishRank("delight", RANKS));
+    assert.ok(englishRank("delight", RANKS) < englishRank("grin", RANKS));
   });
 
   it("anneals an eligible row to three letters and gives an ordinary row its tail", async () => {
-    const placed = await placePublishedRoots(
+    const placed = await place(
       [
         { emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "title", shape: "holds" },
         { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "", kind: "mind", shape: "holds" },
@@ -81,7 +98,7 @@ describe("placement", () => {
   });
 
   it("keeps a row's root length, and the other five-letter roots out of a re-placed row's way", async () => {
-    const placed = await placePublishedRoots(
+    const placed = await place(
       [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", root: "egemo", kind: "mind", shape: "one" }],
       [overlay],
       { kept: [{ emoji: "😀", root: "egema" }], tailSteps: 100 },
@@ -93,14 +110,14 @@ describe("placement", () => {
 
   it("refuses a five-letter row with no kind", async () => {
     await assert.rejects(
-      placePublishedRoots([{ emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" }], [], { tailSteps: 0 }),
+      place([{ emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" }], [], { tailSteps: 0 }),
       /need a kind, a shape/,
     );
   });
 
   it("keeps a new root from sharing its first two letters with a kept root in the same overlay group", async () => {
     const compass: OverlayRow = { ...overlay, senseForm: "alodam", emoji: "🧭", gloss: "purpose" };
-    const placed = await placePublishedRoots(
+    const placed = await place(
       [{ emoji: "🧭", concrete: "compass", abstract: "direction", englishByPos: "", kind: "body", shape: "one" }],
       [overlay, compass],
       { blocked: ["aba"], kept: [{ emoji: "🗳️", root: "aba" }], annealRestarts: 1, annealSteps: 20_000 },
@@ -112,7 +129,7 @@ describe("placement", () => {
 
   it("never spells a root with an English word the doc lint reads as English", async () => {
     await assert.rejects(
-      placePublishedRoots(
+      place(
         [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "counting", shape: "one" }],
         [overlay],
         {
@@ -128,7 +145,7 @@ describe("placement", () => {
 
   it("lets a short root start a kept l / m-second root", async () => {
     // Only a five-letter root fuses with a hook, so `abu` beside `abula` makes no hook compound.
-    const placed = await placePublishedRoots(
+    const placed = await place(
       [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "body", shape: "takes-away" }],
       [overlay],
       {
@@ -143,7 +160,7 @@ describe("placement", () => {
 
   it("checks five-letter rows against a moved short root's new holder host", async () => {
     const fishing: OverlayRow = { ...overlay, senseForm: "evor", emoji: "🎣", kind: "evidential", gloss: "recalled" };
-    const placed = await placePublishedRoots(
+    const placed = await place(
       [
         { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo", kind: "doing", shape: "takes-away" },
         { emoji: "🎻", concrete: "violin", abstract: "harmony", englishByPos: "", kind: "counting", shape: "order", size: "none" },
@@ -157,7 +174,7 @@ describe("placement", () => {
   });
 
   it("checks listed compounds through a moved short member's new spelling", async () => {
-    const placed = await placePublishedRoots(
+    const placed = await place(
       [
         { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo", kind: "doing", shape: "takes-away" },
         { emoji: "🔢", concrete: "number", abstract: "count", englishByPos: "", root: "anoro", kind: "counting", shape: "order", size: "medium" },
@@ -206,6 +223,6 @@ describe("placement", () => {
       shape: "holds",
     }));
     const overlays = rows.map((row) => ({ ...overlay, emoji: row.emoji, senseForm: `${row.emoji}m` }));
-    await assert.rejects(placePublishedRoots(rows, overlays, { annealRestarts: 1, annealSteps: 20 }), /sign \/ holds has 5 rows and 4 free forms/);
+    await assert.rejects(place(rows, overlays, { annealRestarts: 1, annealSteps: 20 }), /sign \/ holds has 5 rows and 4 free forms/);
   });
 });

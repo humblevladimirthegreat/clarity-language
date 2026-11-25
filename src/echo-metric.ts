@@ -6,7 +6,6 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { parseCsv } from "./csv.ts";
-import { CMU_PATH } from "./cmu-dict.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
 import { tmpPath } from "./tmp-paths.ts";
 
@@ -27,20 +26,30 @@ export const WEIGHTS: Weights = { start: 3, stressOnset: 2, onset: 1, coda: 0.75
 /** A phoneme with its Ageben letter and its role in the metric. */
 type Seg = { letter: string; vowel: boolean; kind: "start" | "stressOnset" | "onset" | "coda" | "vStress" | "vOther" | "schwa" };
 
-/** Word-initial consonant clusters found at the start of ≥ 20 CMU words (drops loans such as *ts-*, *vl-*). */
-let onsets: Set<string> | undefined;
-function legalOnsets(): Set<string> {
-  if (onsets) return onsets;
+/** Word-initial consonant clusters found at the start of ≥ 20 words of a CMU dictionary (drops rare loans such as *vl-*). */
+export function deriveLegalOnsets(cmuText: string): Set<string> {
   const counts = new Map<string, number>();
-  for (const line of readFileSync(CMU_PATH, "utf8").split("\n")) {
+  for (const line of cmuText.split("\n")) {
     const phones = line.replace(/\s*#.*$/, "").trim().split(/\s+/).slice(1);
     const k = phones.findIndex((p) => /\d$/.test(p));
     if (k <= 0) continue;
     const cluster = phones.slice(0, k).join(" ");
     counts.set(cluster, (counts.get(cluster) ?? 0) + 1);
   }
-  return (onsets = new Set([...counts].filter(([, n]) => n >= 20).map(([c]) => c)));
+  return new Set([...counts].filter(([, n]) => n >= 20).map(([c]) => c));
 }
+
+/**
+ * {@link deriveLegalOnsets} of the pinned CMU download (src/echo-pronunciation.ts), kept here so
+ * the metric needs no download; src/echo-metric.test.ts checks it against the cached file when present.
+ */
+export const LEGAL_ONSETS: ReadonlySet<string> = new Set([
+  "B", "B L", "B R", "B W", "B Y", "CH", "D", "D R", "D W", "D Y", "DH", "F", "F L", "F R", "F Y",
+  "G", "G L", "G R", "G W", "G Y", "HH", "HH W", "HH Y", "JH", "K", "K L", "K R", "K W", "K Y", "L",
+  "M", "M Y", "N", "P", "P L", "P R", "P Y", "R", "S", "S K", "S K R", "S K W", "S L", "S M", "S N",
+  "S P", "S P L", "S P R", "S T", "S T R", "S V", "S W", "SH", "SH L", "SH M", "SH N", "SH R", "SH W",
+  "T", "T R", "T S", "T W", "T Y", "TH", "TH R", "V", "W", "Y", "Z", "ZH",
+]);
 
 /**
  * Split one word's phonemes into syllables (a consonant cluster between vowels goes to the next
@@ -68,7 +77,7 @@ function segment(phones: string[], firstWord: boolean): Seg[] {
     const a = prev + 1;
     const b = next;
     let from = b;
-    for (let s = a; s < b; s++) if (legalOnsets().has(phones.slice(s, b).join(" "))) { from = s; break; }
+    for (let s = a; s < b; s++) if (LEGAL_ONSETS.has(phones.slice(s, b).join(" "))) { from = s; break; }
     markOnset(from, b);
   }
   return phones.map((p, i) => {

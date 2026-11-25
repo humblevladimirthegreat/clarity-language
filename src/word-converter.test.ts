@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import {
   letterDistribution,
   mappedSourceLetters,
-  toAgebenWord,
+  shortRootCandidates,
 } from "./word-converter.js";
 
 describe("spelling map", () => {
@@ -14,8 +14,9 @@ describe("spelling map", () => {
 });
 
 describe("pronunciation conversion", () => {
+  // toAgebenWord("coffee") is this on the CMU entry; the phones are inline so the test needs no download.
   it("returns a three-letter root that echoes the word", () => {
-    const root = toAgebenWord("coffee");
+    const root = shortRootCandidates("K AA1 F IY0")[0]!;
     assert.equal(root.length, 3);
     assert.equal(root[1], "g");
   });
