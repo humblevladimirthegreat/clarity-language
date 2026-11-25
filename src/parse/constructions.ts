@@ -927,7 +927,7 @@ export const REJECTIONS = {
   holderSeamW: { anchor: "holder.md#naming-a-holder", summary: "a tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyomeyel`)" },
   numberPlural: { anchor: "digit-strings.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
-  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, or /b/; in a holder seam or a viewpoint lateral, resume the person instead" },
+  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, or /b/: a pointer picks a participant, and other slots take none; in a holder seam or a viewpoint lateral, resume the person instead" },
   pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (a: with someone else in it; u: with that role unsaid)" },
   pointerOtherState: { anchor: "role-parts.md#content-of-the-event", summary: "a state pointer takes no other vowel (a): no clause names a resulting state for the other to differ from" },
   pointerOtherExtent: { anchor: "role-parts.md#content-of-the-event", summary: "an extent pointer takes no other vowel (a): no clause names an amount for the other to differ from" },

@@ -171,7 +171,7 @@ A hook prefix (`guoxuvuvul` *anti-fighting*, [hooks.md](/hook-compounds#hook-pre
 
 - **Reach stays optional** on a person noun (`zuoxuvuvul` *an opponent of fighting*), unlike a role word (D-40). A role word names a part in an event, so a bare one would turn one act into a trait. A hook prefix names a stance toward its stem, not a part someone played, so there is no single act for the label to inflate. The **`th`** seam after the stem still says the reach (`zuoxuvuvuthol` *a committed opponent*, `zuoxuvuvuthul` *against fighting this time*). Rejected: required reach at the front, as on role words, which would put two vowel slots before the seam and spend a letter on every prefix word.
 - **The -m zones get `mx`.** Leaving the zones without prefixes would lose *contra-*, *inter-* (*amid*), and *para-* (*near*). The **`m`** is the letter that marks the zone on the free hook (`uol` → `uom`), so `uomx` reads without a new rule. Cost: a syllable-final `m` mid-word, the same one an approximate [numeric prefix](#numeric-prefixes) uses (D-57 for why not `lx`).
-- **Slots.** A prefix word fills `/ɡ/`, `/z/` `/d/` `/b/`, and `/h/`. On `/v/` it would repeat the `/ɡ/` predicate, and `/w/`, `/th/`, `/x/`, and `/y/` have no reading yet ([unassigned-reserved](unassigned-reserved.md#hook-prefixes)).
+- **Slots.** A prefix word fills `/ɡ/`, `/z/` `/d/` `/b/`, and `/h/`. `/v/`, `/w/`, `/th/`, `/x/`, and `/y/` have no reading yet ([unassigned-reserved](unassigned-reserved.md#hook-prefixes)). A hook prefix names a stance toward its stem, and a verb would have to say which act carries that stance (opposing, campaigning, refusing), which the hook does not tell.
 
 ### Hooked joins {#hooked-joins}
 

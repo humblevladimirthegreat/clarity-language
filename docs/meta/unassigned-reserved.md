@@ -160,7 +160,7 @@ Source: [hooks.md](/hook-compounds#hook-prefixes)
 - **open:** **`n`** between hook vowels and the seam (`guenxavuvul`). It would need a job of the hook's **-n** inside a word. Parser: no word.
 - **closed ([hooked joins](design-decisions.md#hooked-joins)):** **`r`** between hook vowels and the seam (`gorxawahal`). The stem is the landmark, so nothing is left unsaid to point back to. Parser: no word.
 - **closed (D-57):** `lx` after hook vowels (`guelxavuvul`). Plain **`x`** already spells the **-l** reading. Parser: no word.
-- **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuoxuvuvul`). `/v/` would repeat the `/ɡ/` predicate (*is anti-fighting*); the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
+- **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuoxuvuvul`). No reading yet. A hook prefix names a stance toward its stem, and on `/v/` the verb would have to say which act carries that stance (opposing, campaigning, refusing), which the hook does not tell; the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
 - **open:** a hook prefix inside a larger word: as a piece of an ordinary compound (*an anti-war house*), as a role-compound stem, or with ability after its stem (`gaxawahaxal`). Not guessable which piece the hook would cover; a separate `/ɡ/` word says it. Parser: no word.
 
 ## Hooked joins {#hooked-joins}
@@ -176,6 +176,12 @@ Source: [hooks.md](/hooked-joins#hooked-joins)
 - **open:** on `/h/`, a join other than a bare restrictor (`huxoel`, `huxel`). Parser: `hookedJoinRestrictor`.
 - **closed ([hooked joins](design-decisions.md#hooked-joins)):** a number body or a role-compound stem before **`x`** + a join (`zragexual`, `zwazuduyexual`). Parser: no word.
 
+## Label reach
+
+Source: [label-seams.md](/label-seams#reach-vowels)
+
+- **open:** label reach on `/w/` / `/th/` / `/x/` / `/y/` (`wowurothul`, `thowurothul`). Label reach labels a content word, and these slots hold a degree, a stance, a topic or a call; on a sake root the **`th`** spot is the sake's own stance. Parser: `labelReachSlot`.
+
 ## Role compounds
 
 Source: [roles.md](/roles), [compounds.md](/compounds)
@@ -187,14 +193,14 @@ Source: [roles.md](/roles), [compounds.md](/compounds)
 - **closed ([reach written once](design-decisions.md#role-reach-at-the-front)):** a **`th`** reach after a role word's stem (`zwazuduyethel`). Parser: no word.
 - **open:** a role compound as a piece of an ordinary compound, or two part consonants in a word. Not guessable: an inner `w` + vowel + part reads as part of the stem. *Noun + agent* is the role compound's own stem (`zwuzodozexowurol`).
 - **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-reach host (`zwuzuwen`, `zuwethun`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelReachStem`.
-- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodozexal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `oda`). Parser: `abilitySlot`.
+- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, `/h/`, `/w/`, `/th/`, `/x/`, or `/y/` (`zodozexal`, `wowuroxal`). *Can* belongs to an act or a quality, and a noun, an adverb, a degree, a stance, a topic or a call is none of those. Ability is on `/v/` and `/ɡ/` (plus hostless `oda`). Parser: `abilitySlot`.
 - **open:** name + `x` + vowel + **-n** in a clause body (`zalazun zazozoxon veruvol.`). A bid is said to someone when arriving or leaving; inside a clause it has no job. That shape is a conversation-length bid only as a citation or a `/y/` call.
 
 ## Role pointers
 
 Source: [pronouns.md](/pronouns#role-pointers)
 
-- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` (`vwuzer`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](/permission-consent#say-words) (`hwuzam`).
+- **open:** a role pointer on `/v/` / `/ɡ/` / `/w/` / `/th/` (`vwuzer`, `thwuzer`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`. On `/h/` the pointer shape is a [say word](/permission-consent#say-words) (`hwuzam`).
 - **closed (D-24):** a role pointer on `/y/` / `/x/`.
 - **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zwuzul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
 - **open:** a share (**-m**) with pointer vowel `o` or with **-x** (`zwuzom`, `zwuzemx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
@@ -246,6 +252,12 @@ Source: [pronouns.md](/pronouns), [plurality.md](/plurality)
 - **open:** **-x** on an interjection (`/y/` **-l** / **-m**). An interjection addresses no one.
 - **closed (D-69):** **-n** on the neutral root in any slot (`umen`, `zumen`, `zumenx`, `xumen`). *Someone* is `zeyel zar`, or `zwal` when you will return to them. Parser: `retiredSomeone`.
 - **open:** the topic pronoun as a topic word or a resume (`xalen`, `zaler`). The topic pronoun is the topic itself, so there is nothing to set or return to.
+
+## Name instances (`-ln`)
+
+Source: [proper-names.md](/proper-names#name-instance--ln)
+
+- **open:** **-ln** on `/ɡ/` / `/v/` / `/h/` / `/w/` / `/th/` (`gazozoln`, `vazozoln`). **-ln** names one thing that fills a role, and these slots take no participant. Parser: `nameInstanceSlot`.
 
 ## Identity (`IDENTITY`)
 
@@ -310,6 +322,7 @@ Source: [speech-moves.md](/firm-soft#firm-or-soft-act), [stacked act words](/mor
 Source: [spans.md](/spans)
 
 - **open:** an aside under `/z/` `/d/` `/b/` `/v/` (`d(…)`); a cite, opaque or mention under `/th/` (`th[…]`). An aside comments and fills no slot of the verb, and no job has asked for a quoted or foreign stance word: a foreign phrase goes in an aside or a `/y/` interjection. Parser: `spanSlot`.
+- **open:** an aside under `/x/` (`x(…)`). An aside comments and sets no topic. Parser: `spanSlot`.
 - **open:** a span resume (`d[=]`). The shape is not guessable, and a span is an ordinary noun for role pointers (`dwuder`).
 - **open:** a resume pronoun for a span in a `/v/` slot (`v[vezohul]`). A verb span echoes wording, so there is no stem to resume.
 
@@ -319,7 +332,7 @@ Source: [sakes.md](/sakes)
 
 - **open:** forced listener / third-person possessives on sake ascription. A `/ɡ/` sake already means the speaker's belonging ([personal possession](/sakes#personal-possession)); anyone else's noun is **`goyom`** or ownership (`gegunum`), so a second possessive reading would compete.
 - **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). A sake word is a stance on a belonging, an unowned noun, or the clause, and these slots are none of those. *Walks healthily* is the clause stance (`thobatham`).
-- **open:** prescription **`the`** on a noun (`gawethel`, `wawethel goyom`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`gawethom`).
+- **open:** prescription **`the`** on a noun (`gawethel`, `wawethel goyom`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`gawethom`). Parser: `prescriptionSlot`.
 - **closed (D-36):** **-n** on a sake word.
 - **closed ([feeling words](design-decisions.md#feeling-words)):** a second `bl-` word after a feeling word (`thudathumem blazozon blalazun`, `blNoHost`). The one `bl-` is the landmark or whose stake; someone else's stake with a landmark urge is a sentence of its own (`thunathul blazozon. thudathumoem blazozon.`).
 
