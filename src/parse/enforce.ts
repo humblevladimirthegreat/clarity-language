@@ -315,13 +315,14 @@ function enforceSameRoleEndings(tokens: IToken[], tables: ClassifyTables): void 
 function enforceLocks(tokens: IToken[]): void {
   let list = false;
   let prev: LexWord | undefined;
-  for (const token of tokens) {
+  for (const [i, token] of tokens.entries()) {
     const before = prev;
     const word = tokenWord(token);
     prev = word;
     if (!word) continue;
     if (isAny(token, [HostedB, HostedOdo, LateOdo])) {
-      list = token.tokenType === HostedBJoined;
+      // The parse marks a list at its second `bl-` word; it is one only if a `/b/` join closes it.
+      list = token.tokenType === HostedBJoined && hostedListCloses(tokens, i + 1);
       continue;
     }
     if (list && word.pos === "b" && word.family.kind !== "hook") {
@@ -336,6 +337,13 @@ function enforceLocks(tokens: IToken[]): void {
     if (word.bl && joinHook(before) && isStandIn(word)) throw new ConstructionError("hookedJoinClause", `${before!.raw} ${word.raw}`);
     if (word.bl) throw new ConstructionError("blNoHost", word.raw);
   }
+}
+
+/** `/b/` words from `from`, then a `/b/` join. */
+function hostedListCloses(tokens: IToken[], from: number): boolean {
+  let at = from;
+  while (tokens[at]?.tokenType === B) at += 1;
+  return tokens[at]?.tokenType === JoinB;
 }
 
 function tokenWord(token: IToken | undefined): LexWord | undefined {

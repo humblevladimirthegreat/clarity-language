@@ -31,7 +31,7 @@ export type Settles = "itself" | "word" | "join";
  */
 const SETTLES: Record<string, { all?: Settles; join?: readonly string[]; word?: readonly string[] }> = {
   sameRolePair: { word: ["SameRolePair"] },
-  hosted: { word: ["HookHosting"], join: ["HostedBJoined"] },
+  hosted: { word: ["HookHosting", "HostedBJoined"] },
   bar: { all: "join" },
   itemHook: { all: "join" },
   verbEnd: { join: ["VPlainMore"] },

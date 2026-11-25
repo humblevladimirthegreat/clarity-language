@@ -175,7 +175,10 @@ export const HostedB = wordToken("HostedB");
 /** A hosted `/b/` number: an offset or amount, which no adjective describes. */
 export const HostedBNumber = wordToken("HostedBNumber", [HostedB]);
 export const HostedBNoun = wordToken("HostedBNoun", [HostedB]);
-/** A hosted `/b/` whose `/b/` words run on to a `/b/` join: the list fills the hosted slot (joins.md#right-close). */
+/**
+ * A hosted `/b/` that a list's second `bl-` word follows, or `/b/` words and then a `/b/` join: the list fills the hosted
+ * slot (joins.md#right-close).
+ */
 export const HostedBJoined = wordToken("HostedBJoined", [HostedB]);
 export const HostedOdo = wordToken("HostedOdo");
 /** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (verb-and-stance-joins.md#vp-clause-forms). Set by `markContext`. */

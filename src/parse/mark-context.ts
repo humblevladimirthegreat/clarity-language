@@ -516,8 +516,12 @@ function hostsAhead(hook: IToken, after: IToken[]): boolean {
   return tokenIs(next, B, JoinB, OdoB, TagB, WritingSpanB) || (isZoneHook(hook) && isStanceWord(next));
 }
 
-/** `/b/` words, then a `/b/` join: a list that takes the hosted `/b/` before it as its first item (joins.md#right-close). */
+/**
+ * A list that takes the hosted `/b/` before it as its first item (joins.md#right-close): shown by a second `bl-` word
+ * right after it, or by `/b/` words and then a `/b/` join.
+ */
 function joinClosesAhead(after: IToken[]): boolean {
+  if (after[0]?.tokenType === B && (after[0].payload as LexWord | undefined)?.bl) return true;
   let i = 0;
   while (after[i]?.tokenType === B) i += 1;
   return after[i]?.tokenType === JoinB;
