@@ -847,6 +847,8 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
   here.pendingHook = undefined;
   if (hook && unit.kind === "np") {
     hook.hosted = npTerm(unit.coord, here, clause);
+    // The role letter of the phrase the hook hosts: a range's two ends share one (ranges.md#ranges).
+    hook.values.part = unit.coord.level;
     const under = hook.frames?.filter((f) => f.words.length > 0).at(-1);
     if (under) framedMember(unit.coord, hook.hosted, under, here);
     else memberFrame(unit.coord, hook.hosted, here);
@@ -854,6 +856,7 @@ function readUnit(unit: Unit, here: Here, clause: Clause): void {
   }
   if (hook && unit.kind === "vp") {
     hook.hosted = vpTerm(unit.coord, here, clause);
+    hook.values.part = "v";
     return;
   }
   switch (unit.kind) {

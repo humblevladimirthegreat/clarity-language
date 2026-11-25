@@ -135,6 +135,8 @@ export function wordValues(word: LexWord): Record<string, string> {
   }
   // An ability word's vowel: can, or which kind of can't (can-and-cant.md#ability); a sake's or scope's vowel likewise.
   if (family.kind === "x" && family.stanceVowel) values.stanceVowel = family.stanceVowel;
+  // A hook's vowels, which say its relation (hooks.md, ranges.md#ranges); its ending is `ending`.
+  if (family.kind === "hook" && word.ending) values.series = family.form.slice(0, -word.ending.length);
   if (word.overlay) values.gloss = word.overlay.gloss;
   if (word.ending && family.kind !== "say") values.ending = word.ending;
   return values;
@@ -275,10 +277,10 @@ export function detailOf(key: string, word: LexWord, kind: string): Detail {
 }
 
 /** The link kinds whose one word's meaning the solver reads off `values` (interpreter.md#links). */
-const VALUED_LINKS: ReadonlySet<LinkKind> = new Set(["linker", "discourse", "polar", "standIn", "standInBack"]);
+const VALUED_LINKS: ReadonlySet<LinkKind> = new Set(["linker", "discourse", "hookResume", "polar", "standIn", "standInBack"]);
 
 export function link(kind: LinkKind, key: string, words: LexWord[], extra: Partial<Link> = {}): Link {
-  const values = VALUED_LINKS.has(kind) && words.length === 1 ? linkValues(words[0]!) : undefined;
+  const values = VALUED_LINKS.has(kind) && words.length === 1 ? linkValues(words[0]!, kind) : undefined;
   return { kind, key, anchor: classOf(key)?.anchor ?? "", words, ...(values ? { values } : {}), ...extra };
 }
 
@@ -286,14 +288,13 @@ export function link(kind: LinkKind, key: string, words: LexWord[], extra: Parti
  * A link word's values: its gloss as the morph gloss gives it (a sentence linker's, a discourse hook's, a join word's),
  * and, for a word built from a vowel series and an ending (a hook, a polar word, a stand-in), `series` and `ending`.
  */
-function linkValues(word: LexWord): Record<string, string> {
+function linkValues(word: LexWord, kind: LinkKind): Record<string, string> {
   const values = wordValues(word);
   const family = word.family;
   let gloss: string | undefined;
-  if (family.kind === "hook") {
-    if (word.ending) values.series = family.form.slice(0, -word.ending.length);
-    gloss = hookLabel(family.form, { hookJob: "discourse" });
-  } else if (family.kind === "joinMarker") gloss = joinMarkerLabel(word, {});
+  // A hook's `series` comes with its word's values; a point-back hook glosses by its landmark job (*there*).
+  if (family.kind === "hook") gloss = hookLabel(family.form, { hookJob: kind === "hookResume" ? "resume" : "discourse" });
+  else if (family.kind === "joinMarker") gloss = joinMarkerLabel(word, {});
   else gloss = linkerEnglish(word);
   if (gloss && !values.gloss) values.gloss = gloss;
   return values;

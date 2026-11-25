@@ -3,8 +3,9 @@
  * order of clause.md, the statement act left out, and a first-mention noun's new-member frame written by its noun.
  */
 import type { ClassifyTables } from "../parse/classify.js";
-import type { MeaningFrame, MeaningReading, MeaningTerm } from "./meaning.js";
-import { adverb, predicateTerm, roleTerm, Unrealized, verbTerm } from "./terms.js";
+import type { MeaningDetail, MeaningFrame, MeaningReading, MeaningTerm } from "./meaning.js";
+import { adverb, plainWord, predicateTerm, roleTerm, Unrealized, verbTerm } from "./terms.js";
+import { placeDetails, zoneGloss } from "./details.js";
 import type { Ending } from "./words.js";
 import type { ListStyle } from "./lists.js";
 
@@ -32,6 +33,14 @@ function newMemberOf(frame: MeaningFrame, roles: Partial<Record<Role, MeaningTer
   const newOne = term?.kind === "pronoun" && term.values?.ending === "l";
   const andList = term?.kind === "list" && term.values.series === "a";
   return term && (term.kind === "thing" || newOne || andList) ? role : undefined;
+}
+
+/** The thing a new-member frame hosts when it is a claim detail's hosted phrase (a hook's landmark), not a role's noun. */
+function hostedNewMember(frame: MeaningFrame, details: readonly MeaningDetail[]): MeaningTerm | undefined {
+  if (frame.key !== "slot:newMember" || frame.party || frame.content || frame.inner?.length || frame.details?.length) return undefined;
+  if (frame.member !== undefined || frame.holderHost || frame.occasions) return undefined;
+  const hosted = frame.hosted;
+  return hosted?.kind === "thing" && details.some((d) => d.hosted === hosted) ? hosted : undefined;
 }
 
 /**
@@ -85,7 +94,16 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
   // A shared link is the list's shared word (list-structure.md#shared-after-the-join); writing the word makes it again.
   // A pairing link is the *respectively* word its list's join writes (list-structure.md#respectively).
-  const links = view.links.filter((link) => link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing");
+  // A discourse hook (hooks.md#discourse-hooks) is its word at the left edge, which ties the sentence to prior talk
+  // again when read; its link carries its gloss.
+  const front: string[] = [];
+  // A point-back hook (in-clause-hooks.md#hook-resume) is its word, an extra noun; reading it finds its landmark again.
+  const resumes: string[] = [];
+  const links = view.links.filter((link) => {
+    if (link.kind === "discourse" && link.values?.gloss && !link.frame && !link.resumed) return void front.push(link.values.gloss);
+    if (link.kind === "hookResume" && link.values?.gloss && !link.frame) return void resumes.push(link.values.gloss);
+    return link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing";
+  });
   if (links.length) throw noRule(`a ${links[0]!.kind} link`);
   const respectively = respectivelyLists(view);
   if (respectively.size) style = { ...style, respectively };
@@ -93,6 +111,8 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   if (claim.clauses) throw noRule("clause-join members");
   const endings = new Map<Role, Ending>();
   const framed = new Map<number, Role>();
+  const zones: string[] = [];
+  const hostedEndings = new Map<MeaningTerm, Ending>();
   view.frames.forEach((frame, index) => {
     if (isStatementAct(frame)) return;
     const binder = binderListOf(frame, claim.roles);
@@ -100,9 +120,17 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
       framed.set(index, binder);
       return;
     }
+    const zone = zoneGloss(frame);
+    if (zone) return void zones.push(zone);
+    const ending = frame.values.ending;
+    // A hook's landmark or hosted phrase brings in a new member as a role's noun does (joins.md#new-member-in-a-statement).
+    const hosted = hostedNewMember(frame, claim.details);
+    if (hosted) {
+      if (ending !== "l" && ending !== "m") throw noRule(`a new member on -${ending}`);
+      return void hostedEndings.set(hosted, ending);
+    }
     const role = newMemberOf(frame, claim.roles);
     if (!role) throw noRule(`frame ${frame.key}`);
-    const ending = frame.values.ending;
     if (ending !== "l" && ending !== "m") throw noRule(`a new member on -${ending}`);
     endings.set(role, ending);
     framed.set(index, role);
@@ -112,14 +140,30 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const rank = ranks(view, framed);
   const inFrameOrder = roles.filter((r) => rank.has(r)).sort((a, b) => rank.get(a)! - rank.get(b)!);
   const placed = roles.map((r) => (rank.has(r) ? inFrameOrder.shift()! : r));
-  const piece = (r: Role): string => roleTerm(claim.roles[r]!, r, endings.get(r), tables, style);
-  const before = placed.filter((_, i) => roles[i] !== "b").map(piece);
-  const after = placed.filter((_, i) => roles[i] === "b").map(piece);
-  const adverbs = claim.details.map((detail) => adverb(detail, tables));
-  const verb = claim.verb ? [verbTerm(claim.verb, tables, style)] : [];
+  const details = placeDetails(claim.details, (detail) => adverb(detail, tables), {
+    phrase: (term, part, ending) => {
+      if (part === "z" || part === "d" || part === "b") return roleTerm(term, part, ending, tables, style);
+      if (part === "v") return verbTerm(term, tables, style);
+      throw noRule(`a hook hosting a /${part}/ phrase`);
+    },
+    degree: (detail) => plainWord(detail, "w", detail.values.root, tables),
+    endingOf: (term) => hostedEndings.get(term),
+  });
+  // A range or in-clause hook and its second phrase go right after the first (ranges.md#ranges).
+  const withAttached = (part: string, piece: string): string[] => {
+    const attached = details.attached.get(part) ?? [];
+    details.attached.delete(part);
+    return [piece, ...attached];
+  };
+  const piece = (r: Role): string[] => withAttached(r, roleTerm(claim.roles[r]!, r, endings.get(r), tables, style));
+  const before = placed.filter((_, i) => roles[i] !== "b").flatMap(piece);
+  const after = placed.filter((_, i) => roles[i] === "b").flatMap(piece);
+  const verb = claim.verb ? withAttached("v", verbTerm(claim.verb, tables, style)) : [];
   const predicate = claim.predicate.map((term) => predicateTerm(term, tables, style));
-  // Adverbs right before the verb or predicate (clause.md#adverbs-h places them anywhere).
-  const pieces = [...before, ...adverbs, ...verb, ...predicate, ...after];
+  if (details.attached.size) throw noRule(`a hook after a /${[...details.attached.keys()][0]}/ part the claim does not have`);
+  // Adverbs and hosted relations right before the verb or predicate (clause.md#adverbs-h places them anywhere); extra
+  // nouns after it (clause.md#extra-nouns), hooked ones after the plain ones; a discourse hook first, a zone last.
+  const pieces = [...front, ...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];
   if (!pieces.length) throw noRule("an empty claim");
   return pieces.join(" | ");
 }

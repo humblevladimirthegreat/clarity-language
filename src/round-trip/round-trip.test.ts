@@ -131,6 +131,30 @@ describe("round trip", () => {
     assert.ok(built && "gap" in built && built.gap.kind === "missingValue", JSON.stringify(built));
   });
 
+  it("realizes hooks and relations: ranges, in-clause and extra-noun hooks, point-back and discourse hooks, relations, zones", () => {
+    const cases: [string, string[]][] = [
+      ["zalazun varal bazozon oel bahelan.", ["zalazun varal bazozon oel bahelan."]],
+      ["zragel oel zrazal.", ["zragel oel zrazal."]],
+      ["zalazun wemem al zazozon vowurol.", ["zalazun wemem al zazozon vowurol."]],
+      ["zazozon veruvol el vowurol.", ["zazozon veruvol el vowurol."]],
+      ["zazozon abal zahelan vowurol.", ["zazozon abal zahelan vowurol."]],
+      ["zazozon vavobol al bohahal.", ["zazozon vavobol al bohahal."]],
+      ["zalazun ual bohahal veruvol al bedavol.", ["zalazun ual bohahal veruvol al bedavol."]],
+      ["zazozon vehohel el bohahal. zalazun vehohel er.", ["zazozon vehohel el bohahal.", "zalazun vehohel er."]],
+      ["zazozon vowurol. al zalazun vowurol.", ["zazozon vowurol.", "al zalazun vowurol."]],
+      ["zazozon hanem blalazun vezuyol.", ["zazozon hanem blalazun vezuyol."]],
+      ["zazozon vowurol uom thagom.", ["zazozon vowurol uom thagom."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+    // An unnamed relation landmark has no new-member frame, so the view has no ending for it.
+    const [unnamed] = project(readTurn("zazozon vowurol hohom blezahol.", tables), tables).map((view) => realize(view, tables));
+    assert.ok(unnamed && "gap" in unnamed && unnamed.gap.kind === "missingValue", JSON.stringify(unnamed));
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));
