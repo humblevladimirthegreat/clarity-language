@@ -135,6 +135,8 @@ export function wordValues(word: LexWord): Record<string, string> {
   }
   // An ability word's vowel: can, or which kind of can't (can-and-cant.md#ability); a sake's or scope's vowel likewise.
   if (family.kind === "x" && family.stanceVowel) values.stanceVowel = family.stanceVowel;
+  // A tag's vowels: which tags it names (tag-pronouns.md#naming-with-a-tag, two stacked in #tag-pairs).
+  if (family.kind === "tag") values.tag = family.vowels.join("");
   // A hook's vowels, which say its relation (hooks.md, ranges.md#ranges); its ending is `ending`.
   if (family.kind === "hook" && word.ending) values.series = family.form.slice(0, -word.ending.length);
   if (word.overlay) values.gloss = word.overlay.gloss;
@@ -341,6 +343,9 @@ export function thing(word: LexWord): Term {
  */
 export function termValues(word: LexWord): Record<string, string> {
   return {
+    // A standalone join as a term (a `bl-` landmark, hooked-joins.md#hooked-joins-endings: `zexual blual`) is the
+    // widest bound its series names, *everything*, *none*: its series says which.
+    ...(word.family.kind === "joinMarker" ? { series: word.family.series } : {}),
     ...(word.ending ? { ending: word.ending } : {}),
     ...(word.plural ? { plural: "x" } : {}),
     ...(word.pos ? {} : { citation: "bare" }),

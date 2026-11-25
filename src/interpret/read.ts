@@ -66,8 +66,12 @@ function pronoun(word: LexWord, here: Here): Term {
     bind?.kind === "role" && family.kind === "x" && family.part && family.reachVowel ? { part: family.part, reach: family.reachVowel } : {};
   // A `-r` that reaches nothing earlier is the one you both already know (pronouns.md#resume-r): its root says which.
   const known: Record<string, string> = !antecedent && family.kind === "content" ? { root: family.roots.join("") } : {};
+  // A tag pronoun's vowels are the tags it names (tag-pronouns.md#naming-with-a-tag; two stacked, #tag-pairs).
+  const tag: Record<string, string> = family.kind === "tag" ? { tag: family.vowels.join("") } : {};
   const values: Record<string, string> | undefined =
-    bind && word.ending ? { ...termValues(word), ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer, ...role, ...known } : undefined;
+    (bind || family.kind === "tag") && word.ending
+      ? { ...termValues(word), ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer, ...role, ...known, ...tag }
+      : undefined;
   const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}), ...(values ? { values } : {}) };
   here.ctx.terms.set(word, term);
   return term;
@@ -311,7 +315,7 @@ function itemTerm(pkg: NpPackage, here: Here, clause: Clause): Term {
     const anchor = classOf("unit:gCoord")?.anchor ?? "";
     details.push({ kind: "adjective", construction: "unit:gCoord", key: "unit:gCoord", anchor, words: [], values: {}, hosted: gTerm(pkg.adjCoord, here, clause) });
   }
-  if (pkg.tag) here.reading.links.push(link("tag", "slot:tag", [pkg.tag]));
+  if (pkg.tag) tagLink(pkg.tag, here).tagged = term;
   addDetails(term, details);
   return term;
 }
@@ -418,7 +422,7 @@ function noKindBinder(join: LexWord, here: Here): void {
   if (frame) frame.inner = [frameOf("joinSeries:u", join, here)];
 }
 
-type Part = { members: Term[]; join?: LexWord };
+type Part = { members: Term[]; join?: LexWord; values?: Record<string, string>; shared?: Detail[] };
 
 /**
  * A hooked join's bound (hooked-joins.md#hooked-joins): the hook says which members count, the ones in that relation
@@ -428,6 +432,16 @@ function boundOf(join: LexWord | undefined, landmark: LexWord | undefined, here:
   if (!join || join.family.kind !== "joinMarker" || !join.family.hook) return undefined;
   const hosted = landmark ? headTerm(landmark, here, clause) : here.ctx.anaphors.has(join) ? pronoun(join, here) : undefined;
   return { ...detailOf("word:hookedJoin", join, "bound"), construction: "word.hookedJoin", ...(landmark ? { words: [join, landmark] } : {}), ...(hosted ? { hosted } : {}) };
+}
+
+/**
+ * A tag on **-l** or **-n** after a phrase in the same role assigns it (tag-pronouns.md#naming-with-a-tag): its link keeps
+ * the tag vowels in `values.tag` and the ending in `values.ending`, since they say which tag names what, and how.
+ */
+function tagLink(word: LexWord, here: Here): Link {
+  const out = link("tag", "slot:tag", [word], { values: wordValues(word) });
+  here.reading.links.push(out);
+  return out;
 }
 
 /** `/w/` words right before a join word (`joinModifiers`): *respectively* is a pairing link (list-structure.md#respectively). */
@@ -450,6 +464,8 @@ function listTerm(parts: Part[], here: Here, bound?: Detail, shared: Detail[] = 
   const members = parts.flatMap((p) => p.members);
   // A fill-ask join with no items is the blank itself (questions.md#fill-ask; interpreter.md `ask:fillAsk`).
   if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, details: [...(bound ? [bound] : []), ...shared] };
+  // Each fence's join says what that fence does (joins.md#right-close), so each part keeps its join's values.
+  for (const part of parts) if (part.join) part.values = wordValues(part.join);
   const frames = listFrames(joins.filter((j) => !j || !noKind.has(j)), here);
   for (const j of noKind) noKindBinder(j, here);
   const term: Term = {
@@ -486,27 +502,35 @@ function npTerm(coord: NpCoord, here: Here, clause: Clause): Term {
   let bound: Detail | undefined;
   const shared: Detail[] = [];
   const noKind = new Set(coord.parts.filter(isNoKindFence).map((part) => part.join!));
+  const tags: { link: Link; last: boolean }[] = [];
   const parts = coord.parts.map((part) => {
     const members = part.items.map((item): Term => {
       if (item.kind === "package") return itemTerm(item.package, here, clause);
       if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island, here) };
       return barTerm(item.bar, here, clause);
     });
-    if (part.tag) here.reading.links.push(link("tag", "slot:tag", [part.tag]));
+    if (part.tag) tags.push({ link: tagLink(part.tag, here), last: part === coord.parts.at(-1) });
     joinModifiers(part.joinModifiers, part.join, here);
     bound = boundOf(part.join, part.landmark, here, clause) ?? bound;
-    shared.push(...sharedDetails(part.shared, here, clause, part.factor, !!part.join && noKind.has(part.join)));
-    return { members, ...(part.join ? { join: part.join } : {}) };
+    const own = sharedDetails(part.shared, here, clause, part.factor, !!part.join && noKind.has(part.join));
+    shared.push(...own);
+    return { members, ...(part.join ? { join: part.join } : {}), ...(own.length ? { shared: own } : {}) };
   });
-  return listTerm(parts, here, bound, shared, noKind);
+  const term = listTerm(parts, here, bound, shared, noKind);
+  // A tag after the last fence names the whole list (tag-pronouns.md#naming-with-a-tag); after an inner fence it names
+  // the group that fence closes, which is no term of its own.
+  for (const tag of tags) if (tag.last) tag.link.tagged = term;
+  return term;
 }
 
 function gTerm(coord: GCoord, here: Here, clause: Clause): Term {
   const shared: Detail[] = [];
   const parts = coord.parts.map((part) => {
     joinModifiers(part.joinModifiers, part.join, here);
-    shared.push(...sharedDetails(part.shared, here, clause));
+    const own = sharedDetails(part.shared, here, clause);
+    shared.push(...own);
     return {
+      ...(own.length ? { shared: own } : {}),
       members: part.items.map((item): Term => {
         if (item.kind === "island") return { kind: "clause", reading: readIsland(item.island, here) };
         const term = thing(item.adj.word);
@@ -529,7 +553,8 @@ function verbTerm(word: LexWord, here: Here): Term {
 function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
   const shared: Detail[] = [];
   const parts = coord.parts.map((part) => {
-    shared.push(...sharedDetails(part.shared, here, clause));
+    const own = sharedDetails(part.shared, here, clause);
+    shared.push(...own);
     for (const unit of part.sharedUnits ?? []) {
       readUnit(unit, here, clause);
       if (unit.kind === "np") here.reading.links.push(link("verbShared", "reading:verbSharedNoun", []));
@@ -557,7 +582,7 @@ function vpTerm(coord: VpCoord, here: Here, clause: Clause): Term {
       item.claim.verb = verbOf(w, { ...here, reading: item });
       return { kind: "clause", reading: item };
     });
-    return { members, ...(part.join ? { join: part.join } : {}) };
+    return { members, ...(part.join ? { join: part.join } : {}), ...(own.length ? { shared: own } : {}) };
   });
   return listTerm(parts, here, undefined, shared);
 }
@@ -1218,6 +1243,10 @@ export function readParse(result: ParseResult, options: ReadOptions = {}): Readi
   for (const { link: pairing, marker } of ctx.pairings) {
     const partners = (records.get(marker)?.partners ?? []).flatMap((join) => ctx.lists.get(join) ?? []);
     if (partners.length) pairing.partners = partners;
+    // The list whose join *respectively* sits right before (list-structure.md#respectively).
+    const join = pairing.words[1];
+    const own = join ? ctx.lists.get(join) : undefined;
+    if (own) pairing.list = own;
   }
 
   // Question type: a value of the act word's force frame (interpreter.md#classification-table, `ask`).

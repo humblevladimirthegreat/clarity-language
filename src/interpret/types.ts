@@ -185,8 +185,11 @@ export type Term =
       members: Term[];
       shared: SharedRecord[];
       values: Record<string, string>;
-      /** The tree's parts: each part's members and the join that closes it. */
-      parts: { members: Term[]; join?: LexWord }[];
+      /**
+       * The tree's parts: each part's members and the join that closes it, with that join's `values` (as `values` has
+       * the last one's), and the SHARED words right after that join (the same objects as in `sharedDetails`).
+       */
+      parts: { members: Term[]; join?: LexWord; values?: Record<string, string>; shared?: Detail[] }[];
       /** List-reach frames (a `u` list join denies only its items, rule 2). */
       frames?: Frame[];
       /** A hooked join's bound: which members count (hooked-joins.md#hooked-joins). Its hook is in `values.hook`, its landmark is `hosted`. */
@@ -248,6 +251,10 @@ export type Link = {
   coveredBy?: Frame[];
   /** pairing: the list terms the *respectively* list pairs with, from the resolve stage's `PairingRecord` (one in every doc example; never picked between). */
   partners?: Term[];
+  /** pairing: the list term whose join *respectively* sits right before (list-structure.md#respectively). */
+  list?: Term;
+  /** tag (`slot:tag`): the term the tag names, the phrase right before it or the whole list after a join (tag-pronouns.md#naming-with-a-tag). */
+  tagged?: Term;
   /**
    * hookResume: the extra-noun hook it points back to (in-clause-hooks.md#hook-resume), in the reading `to` names; its
    * `hosted` is the landmark. Absent when no earlier sentence names one.

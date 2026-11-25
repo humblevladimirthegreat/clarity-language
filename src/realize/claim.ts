@@ -8,6 +8,7 @@ import { adverb, plainWord, predicateTerm, roleTerm, Unrealized, verbTerm } from
 import { placeDetails, zoneGloss } from "./details.js";
 import type { Ending } from "./words.js";
 import type { ListStyle } from "./lists.js";
+import { assignedTags } from "./tags.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -47,9 +48,16 @@ function hostedNewMember(frame: MeaningFrame, details: readonly MeaningDetail[])
  * A join's own binder frame (joins.md#everything-ua: `zual godozel`, *every dog*), hosting the list it closes in a role:
  * the list's join writes it.
  */
-function binderListOf(frame: MeaningFrame, roles: Partial<Record<Role, MeaningTerm>>): Role | undefined {
+function binderListOf(frame: MeaningFrame, roles: Partial<Record<Role, MeaningTerm>>, details: readonly MeaningDetail[] = []): Role | "landmark" | undefined {
   if (frame.family !== "binder" || !frame.key.startsWith("joinSeries:") || frame.hosted?.kind !== "list") return undefined;
-  if (frame.party || frame.content || frame.inner?.length || frame.details?.length || frame.member !== undefined || frame.holderHost || frame.occasions) return undefined;
+  if (frame.party || frame.content || frame.details?.length || frame.member !== undefined || frame.holderHost || frame.occasions) return undefined;
+  // *No K* (`zul godozel`, universals-domains.md#universals-domains-generics) holds its join's own denial, which the
+  // join word writes too.
+  const list = frame.hosted;
+  const ownDenial = (inner: MeaningFrame): boolean =>
+    inner.key === `joinSeries:${list.values.series}` && !inner.hosted && !inner.party && !inner.content && !inner.inner?.length && !inner.details?.length;
+  if (frame.inner?.length && (frame.key !== "joinSeries:u:kind" || !frame.inner.every(ownDenial))) return undefined;
+  if (details.some((d) => d.hosted === frame.hosted)) return "landmark";
   return ROLES.find((r) => roles[r] === frame.hosted);
 }
 
@@ -78,6 +86,11 @@ function respectivelyLists(view: MeaningReading): Set<MeaningTerm> {
   const lists = [...ROLES.map((r) => claim.roles[r]), claim.verb, ...claim.predicate].filter((t): t is MeaningTerm => t?.kind === "list");
   for (const link of view.links) {
     if (link.kind !== "pairing") continue;
+    // The reader names the list whose join the word sits before.
+    if (link.list && lists.includes(link.list)) {
+      out.add(link.list);
+      continue;
+    }
     const partners = link.partners ?? [];
     const candidates = lists.filter((t) => !partners.includes(t) && t.kind === "list" && t.values.series === "a");
     if (partners.length !== 1 || !lists.includes(partners[0]!) || candidates.length !== 1) {
@@ -99,7 +112,10 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const front: string[] = [];
   // A point-back hook (in-clause-hooks.md#hook-resume) is its word, an extra noun; reading it finds its landmark again.
   const resumes: string[] = [];
-  const links = view.links.filter((link) => {
+  // An assigning tag is its word right after the term it names (tag-pronouns.md#naming-with-a-tag).
+  const { tags, rest } = assignedTags(view.links);
+  if (tags.size) style = { ...style, tags };
+  const links = rest.filter((link) => {
     if (link.kind === "discourse" && link.values?.gloss && !link.frame && !link.resumed) return void front.push(link.values.gloss);
     if (link.kind === "hookResume" && link.values?.gloss && !link.frame) return void resumes.push(link.values.gloss);
     return link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing";
@@ -115,7 +131,9 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const hostedEndings = new Map<MeaningTerm, Ending>();
   view.frames.forEach((frame, index) => {
     if (isStatementAct(frame)) return;
-    const binder = binderListOf(frame, claim.roles);
+    // A join's binder frame over a hook's landmark (`el bual`, *everywhere*) is written by the landmark's join too.
+    const binder = binderListOf(frame, claim.roles, claim.details);
+    if (binder === "landmark") return;
     if (binder) {
       framed.set(index, binder);
       return;
@@ -161,6 +179,7 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const verb = claim.verb ? withAttached("v", verbTerm(claim.verb, tables, style)) : [];
   const predicate = claim.predicate.map((term) => predicateTerm(term, tables, style));
   if (details.attached.size) throw noRule(`a hook after a /${[...details.attached.keys()][0]}/ part the claim does not have`);
+  if (tags.size) throw noRule("a tag on a term the claim does not write in a role");
   // Adverbs and hosted relations right before the verb or predicate (clause.md#adverbs-h places them anywhere); extra
   // nouns after it (clause.md#extra-nouns), hooked ones after the plain ones; a discourse hook first, a zone last.
   const pieces = [...front, ...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];

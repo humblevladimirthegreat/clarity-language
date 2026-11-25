@@ -59,9 +59,15 @@ const HOOK: Record<string, string> = {
 
 /**
  * How a realized list writes its parts: `standalone` false writes a join with no items by its listed job; a list in
- * `respectively` takes `w-respectively` right before its join (list-structure.md#respectively).
+ * `respectively` takes `w-respectively` right before its join (list-structure.md#respectively); a term in `tags` takes
+ * its tag right after it (tag-pronouns.md#naming-with-a-tag).
  */
-export type ListStyle = { standalone: boolean; respectively?: ReadonlySet<MeaningTerm> };
+export type ListStyle = {
+  standalone: boolean;
+  respectively?: ReadonlySet<MeaningTerm>;
+  /** The claim's assigning tags by the term each names (tags.ts); a term's writer takes its tag out when it writes it. */
+  tags?: Map<MeaningTerm, string>;
+};
 
 /**
  * The join word's leaf under `pos`: its series' job, `.open` on **-m** (an open `e` is *or*), `.named` on **-n**; a
@@ -123,24 +129,44 @@ function sharedWord(detail: MeaningDetail, writers: ListWriters): string {
  */
 export function listGloss(term: Extract<MeaningTerm, { kind: "list" }>, pos: string, ending: Ending | undefined, writers: ListWriters, style: ListStyle): string {
   const { member } = writers;
+  const parts = term.parts.length ? term.parts : [{ members: term.members }];
+  const joins = parts.map((part, i) => part.values ?? (i === parts.length - 1 ? term.values : undefined));
   // A `u` join's denial reaches only its items (joins.md#negation-u): the join's own frame, which its word writes.
-  const other = (term.frames ?? []).filter((frame) => !ownFrame(frame, term.values));
+  const other = (term.frames ?? []).filter((frame) => !joins.some((values) => values && ownFrame(frame, values)));
   if (other.length) throw noRule(`a list with the frame ${other[0]!.key}`);
-  const landmark = term.bound ? [boundLandmark(term.bound, writers)] : [];
-  // A fence of several parts closes each with its own join; the view keeps only the last one's values.
-  if (term.parts.length > 1) throw noRule("a list of several fences");
+  // A fence of several parts closes each with its own join, the SHARED words of each right after it
+  // (list-structure.md#fence-nesting); one part takes the list's own shared words.
+  if (joins.some((values, i) => !values && i < parts.length - 1)) throw noRule("a fence with no join before the last");
+  const perPart = parts.some((part) => part.shared);
+  if (perPart && parts.reduce((n, part) => n + (part.shared?.length ?? 0), 0) !== (term.sharedDetails?.length ?? 0)) {
+    throw new Unrealized("missingValue", "a list whose SHARED words are not all on a part");
+  }
+  // A hooked join's landmark rides right after the join that holds the hook.
+  const hooked = joins.findIndex((values) => values?.hook !== undefined);
   // Only the first unnamed member's ending is in the view; a later one gets none, and its writer says so.
   let first = true;
-  const members = term.members.map((m) => {
-    const needs = m.kind === "thing" && !m.named;
-    const own = needs && first ? ending : undefined;
-    if (needs) first = false;
-    return member(m, own);
-  });
-  const sharedWords = (term.sharedDetails ?? []).map((detail) => sharedWord(detail, writers));
-  const join = joinLeaf(term.values, pos, style.standalone && !members.length);
-  // *Respectively* sits right before the join word of the later list (list-structure.md#respectively).
-  const respectively = style.respectively?.has(term) ? ["w-respectively"] : [];
-  const pieces = [...members, ...respectively, join, ...landmark, ...sharedWords];
+  // Each later fence closes the ones before it, so they are one unit inside it (`[[z-everything | g-cat] | z-not]`).
+  const pieces = parts.reduce<string[]>((before, part, i) => {
+    const done = before.length > 1 ? [`[${before.join(" | ")}]`] : before;
+    return [...done, ...partPieces(part, i)];
+  }, []);
   return pieces.length === 1 ? pieces[0]! : `[${pieces.join(" | ")}]`;
+
+  function partPieces(part: (typeof parts)[number], i: number): string[] {
+    const members = part.members.map((m) => {
+      const needs = m.kind === "thing" && !m.named;
+      const own = needs && first ? ending : undefined;
+      if (needs) first = false;
+      return member(m, own);
+    });
+    const values = joins[i];
+    if (!values) return members;
+    const shared = (perPart ? (part.shared ?? []) : i === parts.length - 1 ? (term.sharedDetails ?? []) : []).map((detail) => sharedWord(detail, writers));
+    // Only a first fence with no items is the standalone join; a later fence closes the ones before it.
+    const join = joinLeaf(values, pos, style.standalone && i === 0 && !members.length);
+    const landmark = term.bound && (i === hooked || (hooked < 0 && i === parts.length - 1)) ? [boundLandmark(term.bound, writers)] : [];
+    // *Respectively* sits right before the join word of the later list (list-structure.md#respectively).
+    const respectively = style.respectively?.has(term) && i === parts.length - 1 ? ["w-respectively"] : [];
+    return [...members, ...respectively, join, ...landmark, ...shared];
+  }
 }

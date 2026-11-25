@@ -171,6 +171,28 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes lists of several fences, no K, a standalone join as a landmark, and assigning tags and tag pronouns", () => {
+    const cases: [string, string][] = [
+      ["zual gogozel zul vezuvel.", "zual gogozel zul vezuvel."],
+      ["zedudal zogudal zel zowulal zal vozedal.", "zedudal zogudal zel zowulal zal vozedal."],
+      ["zul godozel vezuvel.", "zul godozel vezuvel."],
+      ["zazozon vowurol el bual.", "zazozon vowurol el bual."],
+      ["zexual blual vezuvel.", "zexual blual vezuvel."],
+      ["zodozel zwal vowurol.", "zodozel zwal vowurol."],
+      ["zodozel zwal zogozel zwol zam vowurol.", "zodozel zwal zogozel zwol zam vowurol."],
+      ["zodozel zogozel zam zwal vowurol.", "zodozel zogozel zam zwal vowurol."],
+      ["zual gogozel zwal vezuvel.", "zual gogozel zwal vezuvel."],
+      ["zeyel zwan vowurol.", "zeyel zwan vowurol."],
+      ["zwal vezuyol bwol.", "zwal vezuyol bwol."],
+      ["zwanx vowurol.", "zwanx vowurol."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
   it("realizes comparatives: shared scale and equative words, bars, factors, number adverbs", () => {
     const cases: [string, string[]][] = [
       ["zazozon zalazun zol gamahum.", ["zazozon zalazun zol gamahum."]],

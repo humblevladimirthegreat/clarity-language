@@ -94,8 +94,11 @@ export type MeaningTerm =
   | {
       kind: "list";
       members: MeaningTerm[];
-      /** The tree's parts, each with its members (the same objects as in `members`). */
-      parts: { members: MeaningTerm[] }[];
+      /**
+       * The tree's parts, each with its members (the same objects as in `members`), its join's `values` and the SHARED
+       * words right after its join (the same objects as in `sharedDetails`).
+       */
+      parts: { members: MeaningTerm[]; values?: Record<string, string>; shared?: MeaningDetail[] }[];
       shared: { role: SharedRole }[];
       values: Record<string, string>;
       frames?: MeaningFrame[];
@@ -117,6 +120,8 @@ export type MeaningLink = {
   frame?: MeaningFrame;
   coveredBy?: MeaningFrame[];
   partners?: MeaningTerm[];
+  list?: MeaningTerm;
+  tagged?: MeaningTerm;
   resumed?: MeaningDetail;
 };
 
@@ -260,7 +265,11 @@ export class Projector {
           return {
             kind: "list",
             members: term.members.map((member) => this.term(member)),
-            parts: term.parts.map((part) => ({ members: part.members.map((member) => this.term(member)) })),
+            parts: term.parts.map((part) => ({
+              members: part.members.map((member) => this.term(member)),
+              ...(part.values ? { values: { ...part.values } } : {}),
+              ...(part.shared ? { shared: this.details(part.shared) } : {}),
+            })),
             shared: term.shared.map((record) => ({ role: record.role })),
             values: { ...term.values },
             frames: opt(term.frames, (frames) => this.frames(frames)),
@@ -287,6 +296,8 @@ export class Projector {
       frame: opt(link.frame, (frame) => this.frame(frame)),
       coveredBy: opt(link.coveredBy, (frames) => this.frames(frames)),
       partners: opt(link.partners, (terms) => terms.map((term) => this.term(term))),
+      list: opt(link.list, (term) => this.term(term)),
+      tagged: opt(link.tagged, (term) => this.term(term)),
       resumed: opt(link.resumed, (detail) => this.detail(detail)),
     }));
   }

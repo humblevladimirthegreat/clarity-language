@@ -10,7 +10,8 @@ import type { MeaningDetail, MeaningTerm } from "./meaning.js";
 import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, rootOf, type Ending } from "./words.js";
 import type { GapKind } from "./realize.js";
-import { listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
+import { joinLeaf, listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
+import { tagLabel } from "./tags.js";
 
 /** Lists written with a join that has no items as the standalone join (joins.md#standalone-phrase). */
 const STANDALONE: ListStyle = { standalone: true };
@@ -77,6 +78,8 @@ export function thingLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: st
     const named = leaf(pos, term.name, "n", tables) ?? `${pos}-${term.name.charAt(0).toUpperCase()}${term.name.slice(1)}n`;
     return own === "ln" ? `${named}.instance` : named;
   }
+  // A standalone join as a term (`blual`, hooked-joins.md#hooked-joins-endings) is the widest bound its series names.
+  if (term.values.series) return joinLeaf({ series: term.values.series, ...(own ? { ending: own } : {}) }, pos, true);
   ending ??= isEnding(own) ? own : undefined;
   if (!ending) throw new Unrealized("missingValue", "an unnamed thing with no ending in the view");
   if (term.stem.length > 1 && term.stem.every((part) => part.length === 1)) return compoundLeaf(term, pos, ending, tables);
@@ -173,6 +176,12 @@ function barLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, tables: Classify
 
 /** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit. */
 export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  // A tag that names this term goes right after it, in the same role (tag-pronouns.md#naming-with-a-tag).
+  const tag = style.tags?.get(term);
+  if (tag) {
+    style.tags!.delete(term);
+    return `[${roleTerm(term, pos, ending, tables, style)} | ${pos}-${tag}]`;
+  }
   const bar = term.kind === "thing" ? barLeaf(term, tables) : undefined;
   if (bar) return bar;
   if (term.kind !== "list" && "frames" in term && term.frames?.length) throw noRule(`a ${term.kind} term with its own frame`);
@@ -256,6 +265,8 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
   if (term.sort === "generic") return leafOf(pos, CLOSED.person, "n", tables);
   if (term.sort === "topic") return leafOf(pos, CLOSED.star, "n", tables);
   const values = term.values ?? {};
+  // A tag pronoun is its tag vowels and ending (tag-pronouns.md#naming-with-a-tag); reading it binds it again.
+  if (values.tag) return `${pos}-${tagLabel(values)}`;
   // A `-r` that reaches nothing earlier, the one you both already know (pronouns.md#resume-r), by its own root.
   if (!term.antecedent && values.ending === "r" && values.root && !values.sense) {
     const known = leafOf(pos, values.root, "l", tables);
@@ -263,7 +274,6 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
   }
   if (!term.antecedent) throw noRule("a pronoun with no antecedent");
   if (term.bind === "role") return roleResumeLeaf(term, values, pos, tables);
-  if (term.bind === "tag") throw noRule(`a ${term.bind} pronoun`);
   if (values.sense) throw noRule("a resume pinned to a sense");
   if (values.ending === "l") {
     const copied = term.antecedent;
