@@ -10,6 +10,7 @@ Sections named by data:
 - #vocative: 5 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 1 frame key, 18 pair-table rules
 - #interjections-reactions: 2 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
 - #speech-act-statement-question-command: 8 construction homes, 4 closed words, 1 interpreter row, 1 interpreter class, 1 frame key, 8 pair-table rules
+- #speech-act-beginner: 1 canonical choice
 - #continue-x: 2 construction homes
 Inbound links: npm run page-refs -- speech-moves.md
 -->
