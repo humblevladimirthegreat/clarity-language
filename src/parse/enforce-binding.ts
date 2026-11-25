@@ -4,11 +4,12 @@ import { ConstructionError } from "./enforce.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import { rolePronounRoots, isGenericPronoun } from "./resolve.js";
 import type { AnaphorBind, LexWord } from "./types.js";
+import { slotAllows, type WordSlots } from "./word-slots.js";
 
 /** What resolve bound each pronoun, tag and pointer to: an unbound or misbound one has no reading. */
 export function enforceBindings(anaphors: AnaphorBind[], tables: ClassifyTables): void {
   for (const bind of anaphors) {
-    if (bind.kind === "pointer") enforcePointer(bind);
+    if (bind.kind === "pointer") enforcePointer(bind, tables.wordSlots);
     if (bind.kind === "tag" && bind.boundRebind) throw new ConstructionError("tagBoundRebind", bind.pronoun.raw);
     if (bind.antecedent) continue;
     if (bind.kind === "tag" && bind.boundExpired) throw new ConstructionError("tagBoundExpired", bind.pronoun.raw);
@@ -28,9 +29,9 @@ export function enforceBindings(anaphors: AnaphorBind[], tables: ClassifyTables)
  * Role pointers (pronouns.md#role-pointers): nouns only, never their own slot, never unbound; the new-one and share
  * endings have their own limits.
  */
-function enforcePointer(bind: AnaphorBind): void {
+function enforcePointer(bind: AnaphorBind, slots: WordSlots): void {
   const word = bind.pronoun;
-  if (word.pos !== "z" && word.pos !== "d" && word.pos !== "b") throw new ConstructionError("pointerSlot", word.raw);
+  if (!word.pos || !slotAllows(slots, "role pointer", word.pos)) throw new ConstructionError("pointerSlot", word.raw);
   if (word.ending === "m" && bind.pointerVowel === "o") throw new ConstructionError("pointerShareSelf", word.raw);
   if (word.ending === "m" && word.plural) throw new ConstructionError("pointerSharePlural", word.raw);
   if (word.ending === "l" && bind.pointerVowel === "u") throw new ConstructionError("pointerNewUnsaid", word.raw);

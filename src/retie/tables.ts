@@ -15,6 +15,7 @@ import { DEFAULT_SELF_ROOT, fillSelf } from "../learner-name.js";
 import { parseCompoundCsv, retieCompoundRows, type CompoundRow } from "../lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow } from "../lexicon-search.js";
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
+import { parseWordSlotsCsv, WORD_SLOTS_FILE, type WordSlots } from "../parse/word-slots.js";
 import { REPO_ROOT } from "../repo-paths.js";
 
 import { retieOverlayForm } from "./lexicon.js";
@@ -70,8 +71,8 @@ function shiftSenseForm(row: OverlayRow, rootByEmoji: ReadonlyMap<string, string
   return retieOverlayForm(row.senseForm, row.pos, new Map([[from, to]])) ?? row.senseForm;
 }
 
-function tablesOf(rows: Rows): ClassifyTables {
-  return createClassifyTablesFromRows(rows.published, rows.overlays, rows.compounds);
+function tablesOf(rows: Rows, wordSlots: WordSlots): ClassifyTables {
+  return createClassifyTablesFromRows(rows.published, rows.overlays, rows.compounds, wordSlots);
 }
 
 /**
@@ -96,11 +97,12 @@ export function retieTables(map: ReadonlyMap<string, string>, rootDir = REPO_ROO
     overlays: parseOverlayCsv(data("lexicon-overlays.csv")),
     compounds: parseCompoundCsv(data("lexicon-compounds.csv")),
   };
+  const slots = parseWordSlotsCsv(data(WORD_SLOTS_FILE));
   const roots = new Set(rows.published.map((row) => row.root));
   if (lexiconConverted(roots, map)) {
     const reverse = new Map([...map].map(([oldRoot, newRoot]) => [newRoot, oldRoot]));
-    return { old: tablesOf(shiftRows(rows, reverse)), current: tablesOf(rows) };
+    return { old: tablesOf(shiftRows(rows, reverse), slots), current: tablesOf(rows, slots) };
   }
-  return { old: tablesOf(rows), current: tablesOf(shiftRows(rows, map)) };
+  return { old: tablesOf(rows, slots), current: tablesOf(shiftRows(rows, map), slots) };
 }
 

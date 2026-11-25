@@ -25,6 +25,7 @@ export function agentDataModule(): string {
     `export const publishedCsv = ${JSON.stringify(readData('lexicon-published.csv'))};`,
     `export const overlaysCsv = ${JSON.stringify(readData('lexicon-overlays.csv'))};`,
     `export const compoundsCsv = ${JSON.stringify(readData('lexicon-compounds.csv'))};`,
+    `export const wordSlotsCsv = ${JSON.stringify(readData('word-slots.csv'))};`,
     `export const contextData = ${JSON.stringify(contextData)};`,
   ].join('\n')
 }

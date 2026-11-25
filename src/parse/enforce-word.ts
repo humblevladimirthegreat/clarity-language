@@ -10,37 +10,19 @@ import { rolePronounRoots, isGenericPronoun } from "./resolve.js";
 import { joinHook, POINT_BACK_HOOKS, TIME_JOINS, TIME_HOOKS } from "./series.js";
 import { Tone, Period, QMark, Bang, IslandOpen, IslandClose, type TokenPayload, isLexWordPayload, HostedB, HostedOdo, LateOdo, HostedBJoined, W, GPlain, B, JoinB, classifyTokenBranch } from "./tokens.js";
 import type { LexWord, ToneRecord, ToneScope, NumberStem, NumberMarker } from "./types.js";
-
-const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
-
-const SAKE_POS = new Set(["g", "th", "w"]);
-
-/** Label reach goes on content slots (label-seams.md#reach-vowels). */
-const REACH_POS = new Set(["g", "z", "d", "b", "v", "h"]);
+import { slotAllows, type WordSlots } from "./word-slots.js";
 
 /** Slot-rule parts: the participant that sat in that slot (roles.md#role-compounds). */
 const SLOT_PARTS = new Set(["z", "d", "b"]);
-
-/** A role compound names a participant or a quality of an event (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r); `/h/` takes a slot part for acting as (*as a teacher*). */
-const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
-
-/** A hook prefix names a property, a participant, or how the clause stands to the stem (hook-compounds.md#hook-prefixes). */
-const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
-
-/** Ability goes on a verb or a property (can-and-cant.md#ability). */
-const ABILITY_POS = new Set(["g", "v"]);
-
-/** A hooked join bounds a set of participants, or the times a restrictor covers (hooked-joins.md#hooked-joins). */
-const HOOKED_JOIN_POS = new Set(["z", "d", "b", "h"]);
 
 /**
  * A hooked join goes on `/z/`, `/d/`, `/b/` or `/h/`, never hosted (hooked-joins.md#hooked-joins). Its point-back is a hook
  * that points back on its own. On `/h/` the join is a bare restrictor and the hook one with a time reading.
  */
-function enforceHookedJoinWord(word: LexWord): void {
+function enforceHookedJoinWord(word: LexWord, slots: WordSlots): void {
   const hook = joinHook(word);
   if (!hook) return;
-  if (!word.pos || !HOOKED_JOIN_POS.has(word.pos) || word.bl) throw new ConstructionError("hookedJoinSlot", word.raw);
+  if (!word.pos || !slotAllows(slots, "hooked join", word.pos) || word.bl) throw new ConstructionError("hookedJoinSlot", word.raw);
   if (hook.endsWith("r") && !POINT_BACK_HOOKS.has(hook)) throw new ConstructionError("hookedJoinPointBack", word.raw);
   if (word.pos !== "h") return;
   if (word.reading !== "restrictor" || !TIME_JOINS.has(series(word)! + word.ending)) throw new ConstructionError("hookedJoinRestrictor", word.raw);
@@ -212,28 +194,25 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
   return payload && isLexWordPayload(payload) ? payload : undefined;
 }
 
-/** Modifier slots that take an aside (spans.md#asides-th): the whole sentence, one noun, one modifier, or the action. */
-const ASIDE_POS = new Set(["th", "g", "w", "h"]);
-
 /**
  * Which slots a span fence fills (spans.md#pos): an aside only under `/th/`, `/ɡ/` (and `gl-`), `/w/`,
  * or `/h/`; a cite, mention or opaque in a content slot or `/w/` (never `/th/`) or as an `/x/` topic word.
  * An aside resume (`dexur`) may recast the aside into another slot.
  */
-function enforceSpanSlot(word: LexWord): void {
+function enforceSpanSlot(word: LexWord, slots: WordSlots): void {
   const family = word.family;
   if (family.kind !== "writingSpan" || word.pos === "y" || !word.pos) return;
   if (word.pos === "x") {
     if (!isTopicSpan(word)) throw new ConstructionError("spanSlot", word.raw);
     return;
   }
-  if (family.bracket === "(" ? !ASIDE_POS.has(word.pos) : word.pos === "th") throw new ConstructionError("spanSlot", word.raw);
+  if (!slotAllows(slots, family.bracket === "(" ? "aside span" : "cite, mention or opaque span", word.pos)) throw new ConstructionError("spanSlot", word.raw);
 }
 
 /** **-ln** and span `^@` name one thing a name applies to: a noun slot or a citation only (proper-names.md#name-instance--ln). */
-function enforceNameInstance(word: LexWord): void {
+function enforceNameInstance(word: LexWord, slots: WordSlots): void {
   if (word.ending !== "ln") return;
-  if (word.gl || (word.pos && !["z", "d", "b"].includes(word.pos))) throw new ConstructionError("nameInstanceSlot", word.raw);
+  if (word.gl || (word.pos && !slotAllows(slots, "name instance -ln", word.pos))) throw new ConstructionError("nameInstanceSlot", word.raw);
   const roots = word.family.kind === "content" ? word.family.roots : [];
   if (roots.some((root) => rolePronounRoots().has(root) || root === CLOSED.star || root === CLOSED.person)) {
     throw new ConstructionError("nameInstanceSlot", word.raw);
@@ -267,12 +246,13 @@ export function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number):
 }
 
 export function enforceWord(word: LexWord, tables: ClassifyTables): void {
-  enforceHookedJoinWord(word);
+  const slots = tables.wordSlots;
+  enforceHookedJoinWord(word, slots);
   // A holder names people, so it takes -x like any noun (`thodumazawanx`, holder.md#naming-a-holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   // A topic word is a noun, so it takes -x like one (`xazawanx`, topic.md#topic-groups); a published linker does not.
   const topic = word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word)) && !linkerEnglish(word);
-  if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder && !topic) {
+  if (word.plural && word.pos && !slotAllows(slots, "plural -x", word.pos) && !holder && !topic) {
     throw new ConstructionError("pluralOnPos", word.raw);
   }
   const stemRoot = word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
@@ -280,7 +260,7 @@ export function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (nounish && stemRoot === CLOSED.star && (word.ending === "r" || (word.ending === "n" && word.pos === "x"))) {
     throw new ConstructionError("topicOfTopic", word.raw);
   }
-  if (word.family.kind === "tag") enforceTag(word);
+  if (word.family.kind === "tag") enforceTag(word, slots);
   if (isHolderSeamW(word, tables)) throw new ConstructionError("holderSeamW", word.raw);
   // The speaker is never a holder: your own view needs no seam (D-68, holder.md#what-the-holder-covers).
   if (holder && word.family.kind === "x" && word.family.rightRoots?.[0] === CLOSED.microphone) throw new ConstructionError("holderSeamSpeaker", word.raw);
@@ -300,17 +280,17 @@ export function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "y") {
     if (family.kind === "writingSpan" && family.bracket === "(") throw new ConstructionError("ySpanType", word.raw);
   }
-  enforceSpanSlot(word);
-  enforceNameInstance(word);
+  enforceSpanSlot(word, slots);
+  enforceNameInstance(word, slots);
   enforceStackedJoinR(word);
   enforceStandInRole(word);
   if (family.kind === "x" && family.xFamily === "sake") {
-    if (word.pos && !SAKE_POS.has(word.pos)) throw new ConstructionError("sakeSlot", word.raw);
+    if (word.pos && !slotAllows(slots, "sake word", word.pos)) throw new ConstructionError("sakeSlot", word.raw);
     if (family.stanceVowel && family.stanceVowel.length > 1) throw new ConstructionError("sakeStackedVowel", word.raw);
     if (family.horizon && (family.stanceVowel === "e" || word.ending === "n")) {
       throw new ConstructionError("emotionTail", word.raw);
     }
-    if (family.stanceVowel === "e" && word.pos && word.pos !== "th") throw new ConstructionError("prescriptionSlot", word.raw);
+    if (family.stanceVowel === "e" && word.pos && !slotAllows(slots, "prescription", word.pos)) throw new ConstructionError("prescriptionSlot", word.raw);
     if (word.ending === "n") throw new ConstructionError("sakeEnding", word.raw);
   }
   // A sake root + `th` + vowel + **-n** + tail is not a lateral; a sake word never takes **-n** (sakes.md#word-shape).
@@ -318,7 +298,7 @@ export function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("sakeEnding", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "scope") {
-    if (word.pos && !REACH_POS.has(word.pos)) throw new ConstructionError("labelReachSlot", word.raw);
+    if (word.pos && !slotAllows(slots, "label reach", word.pos)) throw new ConstructionError("labelReachSlot", word.raw);
     if (family.leftRoots.some((root) => arrowRoots().has(root))) throw new ConstructionError("labelReachArrow", word.raw);
     if (word.ending === "n" && family.leftRoots.some((root) => rolePronounRoots().has(root))) throw new ConstructionError("labelReachStem", word.raw);
   }
@@ -327,7 +307,7 @@ export function enforceWord(word: LexWord, tables: ClassifyTables): void {
     const actingAs = word.pos === "h" && !!family.part && SLOT_PARTS.has(family.part);
     if (
       word.pos &&
-      (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding) || (word.pos === "h" && !actingAs))
+      (!slotAllows(slots, "role compound", word.pos) || (word.pos === "y" && !callEnding) || (word.pos === "h" && !actingAs))
     ) {
       throw new ConstructionError("roleCompoundSlot", word.raw);
     }
@@ -335,12 +315,12 @@ export function enforceWord(word: LexWord, tables: ClassifyTables): void {
       throw new ConstructionError("roleCompoundStem", word.raw);
     }
   }
-  if (family.kind === "x" && family.xFamily === "hookPrefix" && word.pos && !HOOK_PREFIX_POS.has(word.pos)) {
+  if (family.kind === "x" && family.xFamily === "hookPrefix" && word.pos && !slotAllows(slots, "hook prefix", word.pos)) {
     throw new ConstructionError("hookPrefixSlot", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "ability" && word.reading === "ability" && word.pos) {
     const hostless = tables.hostlessAbilityRoot !== null && family.leftRoots[0] === tables.hostlessAbilityRoot;
-    if (!ABILITY_POS.has(word.pos) && !hostless) throw new ConstructionError("abilitySlot", word.raw);
+    if (!slotAllows(slots, "ability", word.pos) && !hostless) throw new ConstructionError("abilitySlot", word.raw);
   }
 }
 
@@ -383,8 +363,8 @@ function enforceDegreeNumber(word: LexWord, stem: NumberStem): void {
  * Tag pronouns (tag-pronouns.md#naming-with-a-tag): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
  * gl- never; **-l** / **-r** / **-m** / **-n**; **-x** only on **-r** / **-n** (*A and associates*); a pair (`zwaor`) recalls or shares only.
  */
-function enforceTag(word: LexWord): void {
-  if (word.gl || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) throw new ConstructionError("tagSlot", word.raw);
+function enforceTag(word: LexWord, slots: WordSlots): void {
+  if (word.gl || !word.pos || !slotAllows(slots, "tag pronoun", word.pos)) throw new ConstructionError("tagSlot", word.raw);
   if (word.ending !== "l" && word.ending !== "r" && word.ending !== "m" && word.ending !== "n") throw new ConstructionError("tagEnding", word.raw);
   if (word.ending === "l" && word.family.kind === "tag" && word.family.vowels.length > 1) throw new ConstructionError("tagPairAssign", word.raw);
   if (word.plural && word.ending !== "r" && word.ending !== "n") throw new ConstructionError("tagPlural", word.raw);

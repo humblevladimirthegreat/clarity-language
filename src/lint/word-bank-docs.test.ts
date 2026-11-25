@@ -40,7 +40,7 @@ function tablesOf(): ClassifyTables {
         posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }),
       },
     ],
-    [],
+    [], [], loadDefaultTables().wordSlots,
   );
 }
 

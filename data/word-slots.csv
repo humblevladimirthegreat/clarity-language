@@ -1,0 +1,20 @@
+feature,rejection,letters,endings,note,anchor
+sake word,sakeSlot,g th w,,,sakes.md#sake-inventory
+sake word ending,sakeEnding,,l m r,"code rejects -n (enforceWord, enforce-word.ts), and a lateral whose left root is a sake root",sakes.md#word-shape
+emotion tail,emotionTail,,l m r,"also rejected after the prescription stance vowel e (enforceWord, enforce-word.ts)",how-you-feel.md#feeling-word
+prescription,prescriptionSlot,th,,the sake stance vowel e,ought-for-a-sake.md#prescription-the-ought-this-act-for-this-sake
+label reach,labelReachSlot,g z d b v h,,,label-seams.md#reach-vowels
+role compound,roleCompoundSlot,z d b g h x y,,"on /y/ only with -n or -r, on /h/ only with a slot part z d b (enforceWord, enforce-word.ts); overlay words skip the check",roles.md#role-compounds
+hook prefix,hookPrefixSlot,g z d b h,,,hook-compounds.md#hook-prefixes
+hooked join,hookedJoinSlot,z d b h,,"never as a hosted bl- word (enforceHookedJoinWord, enforce-word.ts)",hooked-joins.md#hooked-joins
+ability,abilitySlot,v g,,"the hostless ability root goes anywhere (tables.hostlessAbilityRoot, enforceWord, enforce-word.ts)",can-and-cant.md#ability
+aside span,spanSlot,th g w h,,"/y/ is checked by ySpanType (enforceWord, enforce-word.ts)",spans.md#pos
+"cite, mention or opaque span",spanSlot,z d b v g h w x,,"/x/ only for a cite or mention span (isTopicSpan in enforceSpanSlot, enforce-word.ts); /y/ unchecked here",spans.md#pos
+name instance -ln,nameInstanceSlot,z d b,,"never gl-, never on a pronoun root, star or person (enforceNameInstance, enforce-word.ts)",proper-names.md#name-instance--ln
+tag pronoun,tagSlot,z d b,,"never gl- (enforceTag, enforce-word.ts); a word with no letter is rejected",tag-pronouns.md#naming-with-a-tag
+role pointer,pointerSlot,z d b,,a word with no letter is rejected,pronouns.md#role-pointers
+self pointer,pointerOwnSlot,,,"not a letter rule: names its own slot (enforcePointer, enforce-binding.ts)",pronouns.md#themself
+scope island,islandOneSlot,,,"not a letter rule: at most one phrase role (islandSlot / enforceIsland, enforce-structure.ts)",scope-islands.md#scope-islands
+plural -x,pluralOnPos,z d b v g y,,"a holder and a topic word that is not a published linker take -x on /x/ (enforceWord, enforce-word.ts)",plurality.md#associative
+plural -x under /y/,pluralInterjection,,n r,"code checks the token branch yInterjection (classifyTokenBranch), not the ending (enforceWord, enforce-word.ts)",collectives.md#vocatives-y
+act or polar series word,turnSeriesCall,,l m r,"code rejects a series word among the left-edge calls (enforceForcePair, enforce-structure.ts)",speech-moves.md#vocative

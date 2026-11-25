@@ -25,6 +25,7 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
+  readFileSync(join(rootDir, "data", "word-slots.csv"), "utf8"),
 );
 
 function lex(text: string) {

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { loadDefaultTables } from "../parse/index.js";
 import { CLOSED } from "../closed-roots.js";
 
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
@@ -17,7 +18,7 @@ function tablesOf(): ClassifyTables {
       { emoji: "", concrete: "swan", abstract: "grace", root: CLOSED.swan, mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() },
       { emoji: "", concrete: "chair", abstract: "", root: "ayu", mnemonic: "", englishByPos: "v:sit", posEnglish: parseEnglishByPos("v:sit", { concrete: "chair" }) },
     ],
-    [],
+    [], [], loadDefaultTables().wordSlots,
   );
 }
 

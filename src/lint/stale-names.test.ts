@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { loadDefaultTables } from "../parse/index.js";
 
 import { createClassifyTablesFromRows } from "../parse/classify.js";
 import { emptyPosEnglish } from "../lexicon-search.js";
@@ -16,7 +17,7 @@ const tables = createClassifyTablesFromRows(
     englishByPos: "",
     posEnglish: emptyPosEnglish(),
   })),
-  [],
+  [], [], loadDefaultTables().wordSlots,
 );
 
 const names = (text: string) => lintStaleNames(text, tables).map((issue) => issue.name);

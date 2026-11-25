@@ -2,6 +2,7 @@ import { createClassifyTables, type ClassifyTables } from "./classify.js";
 import { parseWithTables } from "./parse-core.js";
 import type { ParseOptions, ParseResult } from "./types.js";
 import { readData } from "../repo-paths.js";
+import { WORD_SLOTS_FILE } from "./word-slots.js";
 
 export {
   classify,
@@ -45,6 +46,7 @@ export function loadDefaultTables(): ClassifyTables {
     readData("lexicon-published.csv"),
     readData("lexicon-overlays.csv"),
     readData("lexicon-compounds.csv"),
+    readData(WORD_SLOTS_FILE),
   );
   return defaultTables;
 }

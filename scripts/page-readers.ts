@@ -29,6 +29,7 @@ import { anchorTags, grammarHeadings } from "../src/lint/grammar-anchors.js";
 import { parseOverlayCsv } from "../src/lexicon-search.js";
 import { CLASSES } from "../src/interpret/classes.js";
 import { loadSoundNames, SOUND_NAME_FILE } from "../src/sound-names.js";
+import { parseWordSlotsCsv, WORD_SLOTS_FILE } from "../src/parse/word-slots.js";
 import { FAMILY_TERMS } from "../src/interpret/inspect-notes.js";
 import { CONSTRUCTIONS, REJECTIONS } from "../src/parse/constructions.js";
 import { FRAME_KEYS, PAIR_ROWS } from "../src/parse/scope.js";
@@ -78,6 +79,7 @@ const REGISTRIES: readonly Registry[] = [
   { name: "closed-words", kind: "section", singular: "closed word", plural: "closed words" },
   { name: "overlays", kind: "section", singular: "overlay row", plural: "overlay rows" },
   { name: "sound-names", kind: "section", singular: "sound-name row", plural: "sound-name rows" },
+  { name: "word-slots", kind: "section", singular: "slot rule", plural: "slot rules" },
   { name: "interpreter", kind: "section", singular: "interpreter row", plural: "interpreter rows" },
   { name: "classes", kind: "section", singular: "interpreter class", plural: "interpreter classes" },
   { name: "frame-keys", kind: "section", singular: "frame key", plural: "frame keys" },
@@ -97,6 +99,7 @@ const READ_FILES = new Set([
   "data/closed-words.csv",
   "data/lexicon-overlays.csv",
   "data/sound-names.csv",
+  `data/${WORD_SLOTS_FILE}`,
   INTERPRETER,
   "src/interpret/classes.ts",
   "src/parse/scope.ts",
@@ -292,6 +295,9 @@ function registryRefs(): RegistryRef[] {
   for (const n of loadSoundNames()) {
     refs.push(anchorRef("sound-names", n.anchor, `${SOUND_NAME_FILE} ${n.form}`));
     if (n.checkpoint !== n.anchor) refs.push(anchorRef("sound-names", n.checkpoint, `${SOUND_NAME_FILE} ${n.form} (checkpoint)`));
+  }
+  for (const row of parseWordSlotsCsv(readData(WORD_SLOTS_FILE)).values()) {
+    refs.push(anchorRef("word-slots", row.anchor, `${WORD_SLOTS_FILE} ${row.feature}`));
   }
   for (const row of parseClassTable(readFileSync(join(REPO_ROOT, INTERPRETER), "utf8"))) {
     if (row.anchor) refs.push(anchorRef("interpreter", row.anchor, `${INTERPRETER}:${row.line}`, "docs/meta"));

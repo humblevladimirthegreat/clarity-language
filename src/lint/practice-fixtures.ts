@@ -35,7 +35,7 @@ export function houseTables(): ClassifyTables {
       row("🪑", "chair", "v:sit"),
       row("🚶", "foot", "v:walk"),
     ],
-    [],
+    [], [], loadDefaultTables().wordSlots,
   );
 }
 

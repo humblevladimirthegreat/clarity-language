@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { loadDefaultTables } from "./index.js";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
@@ -14,6 +15,7 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
+  readFileSync(join(rootDir, "data", "word-slots.csv"), "utf8"),
 );
 
 describe("checkAmbiguity", () => {
@@ -50,7 +52,7 @@ describe("checkAmbiguity", () => {
           mnemonic: "",
           anchor: "evidentiality.md#evidentiality",
         },
-      ],
+      ], [], loadDefaultTables().wordSlots,
     );
     const hits = classifyHits(parseWord("hal"), planted);
     assert.ok(hits.some((h) => h.source === "overlay"));

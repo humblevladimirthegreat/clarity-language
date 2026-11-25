@@ -17,6 +17,7 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
+  readFileSync(join(rootDir, "data", "word-slots.csv"), "utf8"),
 );
 
 /** A solver fixture's Ageben lines by label. */

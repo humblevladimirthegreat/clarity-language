@@ -3,6 +3,7 @@ declare module "ageben:data" {
   export const publishedCsv: string;
   export const overlaysCsv: string;
   export const compoundsCsv: string;
+  export const wordSlotsCsv: string;
   export const contextData: {
     index: Omit<import("../parse/llm-prompt.js").ExamplePair, "source">[];
     labelGlosses: [string, string][];

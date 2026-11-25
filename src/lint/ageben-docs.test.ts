@@ -32,7 +32,7 @@ function tablesOf(opts?: {
       englishByPos: "",
       posEnglish: emptyPosEnglish(),
     })),
-    [],
+    [], [], loadDefaultTables().wordSlots,
   );
 }
 

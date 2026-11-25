@@ -11,10 +11,10 @@ import type { PromptContext } from "../parse/llm-prompt.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import type { ParseResult } from "../parse/types.js";
 import { unknownWordsWith, type UnknownWord } from "../parse/unknown-words.js";
-// Resolved by the bundle build: the three lexicon CSVs and the prompt context as JSON-safe data.
-import { compoundsCsv, contextData, overlaysCsv, publishedCsv } from "ageben:data";
+// Resolved by the bundle build: the three lexicon CSVs, the word-slot table and the prompt context as JSON-safe data.
+import { compoundsCsv, contextData, overlaysCsv, publishedCsv, wordSlotsCsv } from "ageben:data";
 
-const tables = createClassifyTables(publishedCsv, overlaysCsv, compoundsCsv);
+const tables = createClassifyTables(publishedCsv, overlaysCsv, compoundsCsv, wordSlotsCsv);
 
 const promptContext: PromptContext = {
   index: contextData.index.map((pair) => ({ ...pair, source: "" })),

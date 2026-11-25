@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { loadDefaultTables } from "./index.js";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
@@ -25,6 +26,7 @@ const tables = createClassifyTables(
   readFileSync(publishedPath, "utf8"),
   readFileSync(overlayPath, "utf8"),
   readFileSync(compoundsPath, "utf8"),
+  readFileSync(join(rootDir, "data", "word-slots.csv"), "utf8"),
 );
 
 function classifyText(text: string) {
@@ -372,7 +374,7 @@ describe("classify", () => {
 
 describe("lexiconContentRoots", () => {
   it("collects content and compound hosts; skips spans, numbers, foreign", () => {
-    const emptyKnown = knownLexiconRoots(createClassifyTablesFromRows([], []));
+    const emptyKnown = knownLexiconRoots(createClassifyTablesFromRows([], [], [], loadDefaultTables().wordSlots));
     assert.deepEqual(lexiconContentRoots(parseWord("zazozon")), [CLOSED.swan]);
     assert.deepEqual(unknownLexiconContentRoots(parseWord("zazozon"), emptyKnown), [CLOSED.swan]);
     assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);

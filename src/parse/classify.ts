@@ -19,6 +19,7 @@ import {
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 import { CLOSED, closedDerived, withLexiconClosedRoots } from "../closed-roots.js";
 import { JOIN_SERIES } from "./series.js";
+import { parseWordSlotsCsv, type WordSlots } from "./word-slots.js";
 
 function sakeRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
   const roots = new Set<string>();
@@ -91,6 +92,8 @@ export type ClassifyTables = {
   sakeRoots: Set<string>;
   sakeGloss: Map<string, string>;
   hostlessAbilityRoot: string | null;
+  /** data/word-slots.csv: the PoS letters each word feature is allowed on (word-slots.ts). */
+  wordSlots: WordSlots;
 };
 
 export function overlayKey(pos: string, senseForm: string): string {
@@ -356,6 +359,7 @@ function finishTables(
   published: Map<string, PublishedRow>,
   overlays: Map<string, OverlayRow>,
   compounds: Map<string, CompoundRow>,
+  wordSlots: WordSlots,
 ): ClassifyTables {
   const overlayList = [...overlays.values()];
   const sakeRoots = sakeRootsFromOverlays(overlayList);
@@ -365,13 +369,14 @@ function finishTables(
   for (const root of sakeRoots) {
     SAKE_ROOTS.add(root);
   }
-  return { overlays, published, compounds, sakeRoots, sakeGloss, hostlessAbilityRoot };
+  return { overlays, published, compounds, sakeRoots, sakeGloss, hostlessAbilityRoot, wordSlots };
 }
 
 export function createClassifyTables(
   publishedCsv: string,
   overlayCsv: string,
-  compoundCsv = "",
+  compoundCsv: string,
+  wordSlotsCsv: string,
 ): ClassifyTables {
   const publishedRows = parsePublishedCsv(publishedCsv);
   const overlayRows = parseOverlayCsv(overlayCsv);
@@ -387,13 +392,14 @@ export function createClassifyTables(
     overlays.set(overlayKey(row.pos, row.senseForm), row);
   }
 
-  return finishTables(published, overlays, compoundsFromRows(compoundRows));
+  return finishTables(published, overlays, compoundsFromRows(compoundRows), parseWordSlotsCsv(wordSlotsCsv));
 }
 
 export function createClassifyTablesFromRows(
   publishedRows: PublishedRow[],
   overlayRows: OverlayRow[],
-  compoundRows: CompoundRow[] = [],
+  compoundRows: CompoundRow[],
+  wordSlots: WordSlots,
 ): ClassifyTables {
   const published = new Map<string, PublishedRow>();
   for (const row of publishedRows) {
@@ -405,7 +411,7 @@ export function createClassifyTablesFromRows(
     overlays.set(overlayKey(row.pos, row.senseForm), row);
   }
 
-  return finishTables(published, overlays, compoundsFromRows(compoundRows));
+  return finishTables(published, overlays, compoundsFromRows(compoundRows), wordSlots);
 }
 
 /** Sake and hostless-ability rows register `x` hosts; the sake / ability word on that host uses the row. */

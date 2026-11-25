@@ -178,6 +178,11 @@ The class comes from one table in `src/parse/context-report.ts`, not from the sa
 
 Recovery is off. Illegal left fences and binderless islands throw `SentenceParseError`.
 
+### Word slots
+<a id="word-slots"></a>
+
+`data/word-slots.csv` is the slot table: for each word feature with a slot or ending rule (a sake word, label reach, a hook prefix, ability, plural **-x**, …), the PoS letters and endings it is allowed on, the rejection id that closes the rest, and the grammar anchor that teaches the rule. It reaches the parser in `ClassifyTables`, like the lexicon CSVs ([`src/parse/word-slots.ts`](../../src/parse/word-slots.ts)). `enforce` reads the `letters` column through `slotAllows` instead of keeping its own letter sets. Ending rules, and any condition the columns can't hold, stay in code; the row's `note` names the function that checks it.
+
 ### Stage 4 — resolve (AST → discourse sidecar)
 
 [`src/parse/resolve.ts`](../../src/parse/resolve.ts). `parse(text)` always runs it; `resolve(result)` is also exported. Annotations sit on `ParseResult.resolve` — the Stage 3 tree is unchanged.
@@ -233,6 +238,7 @@ src/
     enforce-structure.ts         # structure checks on the AST, after Stage 3
     enforce-binding.ts           # binding checks on ResolveInfo, after Stage 4: tag, pointer, resume, as-of bound
     enforce-retired.ts           # RETIRED: retired shapes, one row per rejection id with its D-id
+    word-slots.ts                # loader for data/word-slots.csv, the letters each feature is allowed on
     resolve.ts                   # Stage 4
     index.ts                     # parse(text)
     types.ts                     # MorphWord / LexWord / AST / ResolveInfo
@@ -240,6 +246,7 @@ src/
 data/
   lexicon-overlays.csv
   lexicon-published.csv
+  word-slots.csv
 ```
 
 npm scripts: `generate:word` (Peggy); `build` (generate + `tsc`); `test`; `parse`. Chevrotain needs no generate step.
