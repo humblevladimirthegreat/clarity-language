@@ -2,7 +2,8 @@ import type { IToken } from "chevrotain";
 
 import { withLexiconClosedRoots } from "../closed-roots.js";
 import { collectAmbiguity } from "./ambiguity.js";
-import { diagnoseParseError, enforceResult, enforceTokens, enforceTones } from "./enforce.js";
+import { diagnoseParseError, enforceResult, enforceTokens } from "./enforce.js";
+import { enforceTones } from "./enforce-word.js";
 import type { ClassifyTables } from "./classify.js";
 import { resolve } from "./resolve.js";
 import { addCstConstructions, addReadingConstructions, addResolveConstructions } from "./construction-trace.js";

@@ -25,7 +25,7 @@
  *   The end events and the per-speaker rule are the discourse slot table's `carriedFrame` row
  *   (interpreter.md#discourse-slots).
  */
-import { offsetSign } from "./enforce.js";
+import { offsetSign } from "./enforce-structure.js";
 import { boundaryCell, todayOf, type BoundaryColumn, type NestedKind } from "./boundaries.js";
 import { endsAt, goodbyeEndsEveryone, perSpeaker } from "./discourse-slots.js";
 import { linkerEnglish } from "./linkers.js";

@@ -17,7 +17,7 @@ import { withLexiconClosedRoots } from "../closed-roots.js";
 import { passFiles } from "../find/pass.js";
 import { collectFileSpans } from "../find/walk.js";
 import type { ClassifyTables } from "./classify.js";
-import { enforceTones } from "./enforce.js";
+import { enforceTones } from "./enforce-word.js";
 import { CONTEXT_PASSES } from "./mark-context.js";
 import { tokenizeUtterance } from "./tokenize.js";
 

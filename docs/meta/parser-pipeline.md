@@ -228,6 +228,11 @@ src/
     hook-jobs.ts                 # each hook's job, decided once after Stage 3
     ast-walk.ts                  # the one AST visitor (resolve, enforce, inspect are handler sets)
     series.ts                    # join-series, scale and number helpers shared across stages
+    enforce.ts                   # named rejections, entry point: enforceTokens, enforceResult, diagnoseParseError
+    enforce-word.ts              # word-shape checks on the token stream, before Stage 3 (and tone marks)
+    enforce-structure.ts         # structure checks on the AST, after Stage 3
+    enforce-binding.ts           # binding checks on ResolveInfo, after Stage 4: tag, pointer, resume, as-of bound
+    enforce-retired.ts           # RETIRED: retired shapes, one row per rejection id with its D-id
     resolve.ts                   # Stage 4
     index.ts                     # parse(text)
     types.ts                     # MorphWord / LexWord / AST / ResolveInfo
