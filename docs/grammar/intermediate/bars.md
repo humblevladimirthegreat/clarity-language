@@ -24,7 +24,7 @@ English *more than planned* and *later than planned* rank one thing against a va
 >
 > "Azozon arrives later than planned."
 
-The same stance word after the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
+As you listen, a stance word right before a rank join is read as the bar once the join arrives. The same stance word after the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](/comparatives#superlatives):
 
 > `zazozon zol bral vavurol thagom.`
 >

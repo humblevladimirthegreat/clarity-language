@@ -302,6 +302,10 @@ No adjective for someone else's feeling: it would bypass the holder warrant. A n
 
 A **u** join after a closed list denies the list as a whole: it is single-item *not X*, with the list as X (`val vul` *not both*). The rejected reading denied each item and kept the list's vowel. It made `val vul` a second *neither*, it made `vol vul` say the same as plain `vel`, and it left *not both* with no form.
 
+### Left fences
+
+Joins once opened their list: the join came first and the items after it. The listener then had to find where the list ended to know how many items it had, and the join's meaning depends on that count. One item under a negation join is *not X* and none is *nobody*; one item under a rank join is a superlative and two are a comparison; a list is something else again. With the join at the end, the count is known when the join arrives, so the join is read once. The listener also needs no marker for where a list starts: nouns of one role and verbs never stand side by side outside a list, so a second one starts it, and only stacking words (adjectives, adverbs, stance words) and lists of one wait for the join. No left-bound *not* and no bar marker were added for the same reason. Grammar pages teach only the right-close fence; this history stays here.
+
 ### Digit syllables
 
 The digit table is built from two rules, consonant blocks and a vowel cycle that climbs the [vowel pitches](/phonology#vowel-pitch), rather than English cues (*one*, *duo*, *zero*), which left 4, 6, 7 and 8 with no cue and caught none of the likeliest mishearings.

@@ -80,7 +80,9 @@ Whenever one role holds more than one word, the join is required. Two nouns of t
 >
 > "Azozon tells Alazun and Ahelan."
 
-Two verbs in one clause take the join even with other words between them. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)). Whole clauses are the one exception: their join, which starts with `x`, goes between them.
+Two verbs in one clause take the join even with other words between them. Whole clauses are the one exception: their join, which starts with `x`, goes between them.
+
+This rule tells you where a list starts as you listen. A second noun in the same role, or a second verb in the clause, can only be the next item of a list, so it tells you a list has started; the join at the end then says how the items combine. Adjectives, adverbs and stance words are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)), so for them only the join shows a list. A single word you deny is a list of one, and its join comes right after it.
 
 ### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
