@@ -1,6 +1,6 @@
 # Parser structure: context passes, slot rules, tree building, and what they say about the grammar
 
-**Status:** IN PROGRESS, 2026-11-25. Phases 1 and 2 done (`a2ea44e7` to `835d90ec`; `8710f3b3` to `7e596408`). Phase 3 is next. S3 may start now; S1 and S2 wait on the user's D8 to D11. Phase 4 waits on D3 to D7.
+**Status:** IN PROGRESS, 2026-11-25. Phases 1 and 2 done (`a2ea44e7` to `835d90ec`; `8710f3b3` to `7e596408`). Phase 3 is next. No decision is open.
 
 Where the results live:
 - **Why the passes stay:** [parser-pipeline.md § why the remaining passes stay](../../meta/parser-pipeline.md#why-passes-stay).
@@ -16,6 +16,17 @@ Decided:
   - D12 (high): keep the seven post-parse rules that wait on a later word.
   - D13 (high): keep `splitUnits` (noun case) and `joinClauseItems` in code.
   - D14 (medium): drop `HSharedV` and keep the tree (S3).
+- 2026-11-25 (user), stance endings (phase 4):
+  - D3: keep the name *settled-to-passing*; the field values are `settled` / `default` / `passing`, and every kind keeps its own gloss.
+  - D4: teach the scale on `knowing.md#follow-up-endings-may`.
+  - D5: DECISION `-m` keeps its meaning *modifiable*, a claim that the decision can still change. `ogem` gets no grade; `ogel` / `oger` are graded.
+  - D6: PLAN is graded (`agol` settled, `agom` default, `agor` passing).
+  - D7: MAY and NOTIONAL are graded (`omal` / `eyul` settled, `-m` default, `-r` passing).
+- 2026-11-25 (user), slots (phase 3):
+  - D8: the 49 open cells stay open; add the missing `Parser: prescriptionSlot` (S1).
+  - D9: open entries with ids and no-reading reasons for the cells with none (S1).
+  - D10: option (c), per the editor's note: open `-ln` on both `/x/` (a topic) and `/y/` (a call) (S2).
+  - D11: restate the `/v/` hook-prefix reason as *no reading yet*; the cell stays open (S1).
 
 Both D12 and D13 are recorded in [§ reshaping that stays](../../meta/parser-pipeline.md#reshaping-stays).
 
@@ -27,8 +38,8 @@ Both D12 and D13 are recorded in [§ reshaping that stays](../../meta/parser-pip
 **Depends on:** none. Phase 4's prose unit edits `knowing.md`, `sakes.md` and the stance pages. If `grammar-newcomer-rewrite.md` is rewriting any of them when phase 4 starts, land phase 4 first or rebase its edits onto the rewrite.
 
 **Design authority:**
-- Phase 3 changes only the forms and readings the user accepts from D8 to D11; S3 changes no parse.
-- Phase 4 changes only the stance-ending readings the user accepts from D3 to D7.
+- Phase 3 changes only the forms and readings D8 to D11 settled; S3 changes no parse.
+- Phase 4 changes only the stance-ending readings D3 to D7 settled. No gloss changes.
 
 ## Implementation plan
 
@@ -41,7 +52,7 @@ Two phases remain, run through subagents. At the end of each phase, and if the u
   - notes the phase-start commit
   - writes the rule digest below, with that sha, to the scratchpad
 - Each unit ends with `npm run verify -- --allow-generate` and passes before its commit.
-- **A parse-neutral unit** (S3, and P1 unless D3 to D7 change a gloss) also shows three things:
+- **A parse-neutral unit** (S3 and P1) also shows three things:
   - 0 differences in `npm run parse-snapshot -- --ref <phase-start sha> --drop-one --swap`
   - a passing `npm run grammar-check`
   - an unchanged construction-count file
@@ -55,7 +66,7 @@ Two phases remain, run through subagents. At the end of each phase, and if the u
 
 ### Phase 3: slot and tree decisions
 
-The units run one at a time (each runs `verify`), in the order S3, S1, S2. An S-unit whose decision the user rejects is dropped. If only S3 is left, fold it into phase 4 as its first unit, and say so on the Status line.
+The units run one at a time (each runs `verify`), in the order S3, S1, S2.
 
 **S3. Drop `HSharedV` (D14).**
 Agent `proposal-worker`, `model: opus`, effort `high`. Parse-neutral.
@@ -67,34 +78,41 @@ Agent `proposal-worker`, `model: opus`, effort `high`. Parse-neutral.
 
 **May edit:** `src/parse/tokens.ts`, `src/parse/mark-context.ts`, `src/parse/grammar/*.ts`, `src/parse/verb-items.ts`, `src/parse/sentence-build.ts`, `src/parse/enforce*.ts`, `src/parse/context-report.ts`, tests under `src/parse/` (token names only), `docs/meta/parser-pipeline.md`.
 
-**S1. Slot cells in unassigned-reserved.md (D8, D9, D11; waits on the user).**
+**S1. Slot cells in unassigned-reserved.md (D8, D9, D11).**
 Agent `proposal-worker`, `model: opus`, effort `medium`. Docs only; no parse change.
-- Give every cell that `data/word-slots.csv` closes, and that D8 or D9 does not keep closed with a stated cost, an entry in `unassigned-reserved.md`, with its rejection id:
-  - D8: add the missing `Parser: prescriptionSlot` to the prescription entry.
-  - D9: add open entries with no-reading reasons for the 17 cells that have none, as D9's write-up lists them. If D10 is accepted, the `/x/` `-ln` cell is left out.
-  - D11: restate the `/v/` hook-prefix reason as *no reading yet*, in `design-decisions.md` *Hook prefixes* and in its `unassigned-reserved.md` entry.
-- Commit each accepted decision's edits together; these are user decisions.
+- Every cell that `data/word-slots.csv` closes gets an entry in `unassigned-reserved.md` with its rejection id. The ten letters are `z d b v g w h th x y`. Six cells keep a stated cost and are not touched: tag pronoun and role pointer on `/x/` `/y/` (D-24), role pointer on `/h/` (*Role pointers* entry), plural `-x` on `/th/` (D-37).
+  - D8: the 49 cells with an open *no reading yet* entry stay as they are. Add the missing `Parser: prescriptionSlot` to the prescription entry.
+  - D9: add open entries, with ids and no-reading reasons, for the 15 cells that have none:
+    - label reach on `/w/ /th/ /x/ /y/` (`labelReachSlot`, `wowurothul`): label reach labels a content word, and these slots hold a degree, a stance, a topic or a call (on a sake root, the `th` spot is the sake's own stance)
+    - `-ln` on `/ɡ/ /v/ /h/ /w/ /th/` (`nameInstanceSlot`, `gazozoln`): `-ln` names one thing that fills a role. `/x/` and `/y/` are left out, since S2 opens them
+    - ability on `/w/ /th/ /x/ /y/` (`abilitySlot`, `wowuroxal`): ability belongs to an act or a quality. Extend the existing entry, which names only nouns, names, pronouns and `/h/`
+    - an aside under `/x/` (`spanSlot`): an aside comments and sets no topic
+    - a role pointer on `/th/` (`pointerSlot`, `thwuzer`): a pointer picks a participant. The `thwuzer` message may also say so; today it speaks only of the holder seam
+  - D11: restate the `/v/` hook-prefix reason as *no reading yet*, in `design-decisions.md` *Hook prefixes* and in its `unassigned-reserved.md` entry. A hook prefix names a stance toward its stem, and a verb would have to say which act carries that stance (opposing, campaigning, refusing), which the hook does not tell. The cell stays open.
+- Commit each decision's edits together; these are user decisions.
 
 **May edit:** `docs/meta/unassigned-reserved.md`, `docs/meta/design-decisions.md`.
 
-**S2. `-ln` as a topic (D10; waits on the user).**
+**S2. `-ln` as a topic and a call (D10).**
 Agent `proposal-worker`, `model: opus`, effort `high`.
-- Open `-ln` on `/x/`: one thing the name applies to, set as the topic, read and resumed like any `-l` topic (`xazozoln …`).
+- Today a topic word takes a content noun on `-l` (`xodozel zalazun vowurol.` *as for a dog, …*), and `-ln` is taught as `-l` under a name, but `-ln` is closed on `/x/` and `/y/` with no reason given.
+- Open `-ln` on `/x/`: one thing the name applies to, set as the topic, read and resumed like any `-l` topic (`xazozoln …` *as for an iPhone, …*).
+- Open `-ln` on `/y/`: a [call](../../grammar/beginner/speech-moves.md#vocative) to one bearer of the name, as `/y/` + name calls the named one (*hey, someone named Azozon!*). The unit checks the reading against `speech-moves.md#vocative`, and against how `/y/` + `-l` reads as an interjection, so the two don't clash.
 - Change the slot table, the grammar and the parser together:
   - the `nameInstanceSlot` row and its rejection text
-  - `topic.md` and `proper-names.md#name-instance--ln`, a sentence and an example each
-  - an interpreter row for the topic in the [classification table](../../meta/interpreter.md#classification-table)
-  - `unassigned-reserved.md`: the `/y/` cell stays open
+  - `proper-names.md#name-instance--ln`: the slot list gains `/x/` and `/y/`, with an example each; `topic.md` and `speech-moves.md#vocative` a sentence each where they list what may fill the slot
+  - interpreter rows for the topic and the call in the [classification table](../../meta/interpreter.md#classification-table)
+  - `unassigned-reserved.md`: no entry for the two cells, which now have readings
 - Fix any Practice item whose answer changes, found with `node scripts/find.mjs`, per [drill-generation.md](../../meta/procedures/drill-generation.md).
-- `parse-snapshot` lists only `-ln` topic forms.
+- `parse-snapshot` lists only `-ln` topic and call forms. None of the 23 existing `-ln` examples changes.
 
-**May edit:** `data/word-slots.csv`, `src/parse/`, `docs/grammar/*/topic.md`, `docs/grammar/*/proper-names.md`, `docs/meta/unassigned-reserved.md`, `docs/meta/interpreter.md`, Practice under those pages.
+**May edit:** `data/word-slots.csv`, `src/parse/`, `docs/grammar/*/topic.md`, `docs/grammar/*/proper-names.md`, `docs/grammar/*/speech-moves.md`, `docs/meta/unassigned-reserved.md`, `docs/meta/interpreter.md`, Practice under those pages.
 
 **Phase 3 close.** Consolidate. Expected commits: one per S-unit, plus one consolidation commit.
 
 ### Phase 4: stance grade
 
-Written from G1's audit (D3 to D7). The units wait on the user's decisions there.
+Written from G1's audit. D3 to D7 are settled; see Status.
 
 **Background for both units.** `sakes.md#settled-to-passing` already teaches the `-l` / `-m` / `-r` order as the **settled-to-passing scale**. It has a `terminology.md` entry and a consonants cheat-sheet row, and 11 references point to the anchor, one of them `SCALE_ANCHOR` in `src/flashcards-endings.ts`.
 - PLAN, NOTIONAL, DECISION, NOT-YET, `/h/` ALREADY / STILL, the polar stances, the linkers and the feelings already say they use it.
@@ -116,18 +134,19 @@ The graded endings:
 
 **P1. Grade field (code).**
 Agent `proposal-worker`, `model: opus`, effort `high`.
-- Give each `/th/` overlay reading a `grade` set from its ending, with the values D3 names (recommended: `settled` / `default` / `passing`). Each kind's gloss stays the same.
+- Give each `/th/` overlay reading a `grade` set from its ending: `settled` (`-l`), `default` (`-m`), `passing` (`-r`). Each kind's gloss stays the same.
 - Derive the field in code from the ending. A new column in `lexicon-overlays.csv` would change a data format, and that needs the user.
-- The outliers follow D5 to D7. `ahul` / `ahur` (BECAUSE fault / share) get no grade.
+- Every kind in the table is graded, PLAN, MAY and NOTIONAL included, with two exceptions that get no grade: `ogem` (DECISION *modifiable*, a claim rather than the default) and `ahul` / `ahur` (BECAUSE fault / share). `ogel` / `oger` are graded.
 - The sake rows list only `-m`, and `/h/` ALREADY / STILL are not `/th/` overlays, so the field doesn't reach them. Report how the field could cover them; don't widen it.
 - The brief names the files P1 may edit, from a grep for where overlay readings are built.
 
 **P2. Teach the scale once (prose).**
 Agent `proposal-worker`, `model: opus`, effort `high`. Briefed from P1's result, with glosses checked with `parse.mjs`.
-- Move the teaching to the section D4 names (recommended: `knowing.md#follow-up-endings-may`; `already-still-yet.md#stage-of-change` if D7 makes MAY an exception).
+- Move the teaching to `knowing.md#follow-up-endings-may`, the first graded ending in the reading order. It follows Claritish, where `could-be.md` already teaches the scale on MAY.
 - Keep a `settled-to-passing` anchor, and retarget its references with `npm run page-refs` and `retarget-id`: `sakes.md`, `terminology.md`, the consonants cheat sheet, the 7 linking pages and `SCALE_ANCHOR`.
 - Point the evidentials, MIRATIVE, WANT and MAY to the scale. Each kind keeps its own gloss, and *evidence strength* stays the channels' reading of the grade.
-- Note *modifiable* (DECISION `-m`) as a label to revisit if D5 goes as recommended.
+- Lead with each kind's own gloss and give the scale second, so that the cue *lasting* doesn't replace it. On MAY and NOTIONAL, `-l` is settled because the thought leads somewhere lasting (an answer, an act), not because the guess is held firmly; `could-be.md` puts it as "the question will be settled". On PLAN, the atlas stays *fully prepared*, and the prompt to ask what could go wrong stays as it is.
+- DECISION (`want-and-decide.md#endings-changeability`): `-l` irreversible and `-r` temporary are the scale's ends. `-m` keeps *modifiable* as a claim that the decision can still change, and is not the scale's default. Reword the sentence that says `-m` "claims nothing either way" so the page matches its table. The when-unsure advice can stay, with a reason that fits the claim (until you know a choice is final, it can still change).
 - Before reshaping a section, read its read-by block.
 
 **Then the style unit**, only if the style rule above calls for it: `style-editor`, `opus`, `high`.
@@ -174,152 +193,7 @@ Each commit message starts with `parser-structure.md` and the unit ID, then `[sk
 
 ## Open decisions
 
-### Stance endings (G1)
-
-Groups: **A** (D3, D4) settles the scale and where it is taught: the grade-field unit takes its value names from D3, and the prose unit follows D4. **B** (D5 to D7) settles the outliers and lands with the grade-field unit.
-
-The finding behind all five is in phase 4's background.
-
-### D3. The shared scale: meaning and names (group A)
-
-**Problem.** The field needs value names, and the learner needs one name for the scale. The scale's meaning is how settled the stance's hold is: `-l` the most settled (cue *lasting*), `-m` the default, `-r` the most passing (cue *right now*), and neither end is better. Evidentials use a separate term whose test (show / describe / gesture) is about the strength of the grounds.
-
-**Options.** (a) Keep as is: the name exists, but evidentials, MIRATIVE and WANT teach their endings without it. (b) Keep *settled-to-passing* and use the grades `settled` / `default` / `passing` as the field values. Every graded kind names the scale and keeps its own gloss; *evidence strength* stays the channels' reading of the grade, as *time horizon* is the sakes'. (c) A new name (*firmness*, *hold*), which renames the term, the cheat-sheet row and 11 references.
-
-**Affected.** 362 examples in 28 files carry a graded `/th/` `-l` / `-r` ending (evidential 135 in 11 files; each other kind 57 or fewer). The prose changes about 8 sections and no example.
-
-**Learner.** One cue (*lasting* / *right now*) predicts the direction of every slot. Strong evidence read as *settled grounds* is a small stretch, and the channel page keeps its own test.
-
-**Class.** Blocking (precedent).
-
-**Recommendation:** (b) **(high)**. The name is already on 11 references, the cheat sheet and the flashcards, so a new name would give the learner a second term for nothing.
-
-### D4. The section that teaches it (group A)
-
-**Problem.** `sakes.md` (19th in the reading order) teaches the scale. `knowing.md` (12th) teaches MAY's graded endings (17 examples) without naming the scale, and `already-still-yet.md` (16th) links forward to `sakes.md`. The teaching section must come no later than the first page with a graded ending.
-
-**Options.** (a) Keep as is: one forward link, and the learner meets MAY's endings without a name for the scale. (b) Move the teaching to `knowing.md#follow-up-endings-may`, the first graded ending in the order. This follows Claritish, where `could-be.md` already teaches the scale on MAY. Keep a `settled-to-passing` anchor there and retarget `sakes.md`, the other references, the terminology entry, the cheat sheet and `SCALE_ANCHOR`. (c) Teach it on `already-still-yet.md#stage-of-change`, the closest literal fit, but only if D7 rules MAY an exception. (d) Teach it on `word-endings.md` (4th), before any stance word: earliest, but abstract.
-
-**Affected.** `knowing.md`, `sakes.md`, `terminology.md`, `consonants.md`, the 7 pages that link the anchor, and one code constant. No example changes.
-
-**Learner.** The learner gets the name with its first instance, and every later page refers back to it.
-
-**Class.** Blocking (precedent).
-
-**Recommendation:** (b) **(medium)**. It is the earliest concrete case. It depends on D7 keeping MAY on the scale; if D7 goes the other way, (c).
-
-### D5. DECISION `-m` (group B)
-
-**Problem.** The gloss names `ogem` *modifiable*, a claim (open to revision), while the scale's `-m` is the default. `want-and-decide.md#endings-changeability` already says `-m` "claims nothing either way" and is the ending to use when unsure.
-
-**Options.** (a) Keep as is. (b) It fits: `ogel` / `ogem` / `oger` get `settled` / `default` / `passing`, and the gloss stays. (c) Exception: `ogem` gets no grade.
-
-**Affected.** 38 graded examples in 8 files, plus the `ogem` examples, whose text is unchanged.
-
-**Learner.** Reading `ogem` as the default matches how the page already tells learners to choose; an exception would contradict that page.
-
-**Class.** Blocking (precedent).
-
-**Recommendation:** (b) **(high)**. The page already teaches `-m` as the choice when you are unsure. Note *modifiable* for the prose unit as a label to revisit; it is not a field exception.
-
-### D6. PLAN (group B)
-
-**Problem.** Atlas / itinerary / sketch grade how fully the plan is worked out (backups, steps, direction only), not how long it lasts. `-m` *itinerary* claims that steps exist, though its gloss adds "detail unstated". `intention.md` and `wants-and-plans.md` already claim the shared scale.
-
-**Options.** (a) Keep as is. (b) It fits: `agol` settled, `agom` default, `agor` passing. A plan with backups is the most settled, and a sketch is a direction you may drop. (c) Exception: no grade, and both pages teach map resolution as PLAN's own scale.
-
-**Affected.** 57 graded examples in 12 files (`intention.md` 16).
-
-**Learner.** With (b), the cue still predicts the direction (more prepared is `-l`). With (c), the learner loses a claim they could test and find loose, but has one more scale to learn.
-
-**Class.** Blocking (precedent).
-
-**Recommendation:** (b) **(medium)**. The direction holds, and the pages already teach it that way. The weak point is that `-m` names a content (steps) rather than the default.
-
-### D7. MAY and NOTIONAL follow-ups (group B)
-
-**Problem.** These endings say what you will do with the thought, not how lasting your hold on it is. MAY: find out / unsaid / let it pass. NOTIONAL: rehearse / picture / toy with. `notional.md` claims the scale, and `could-be.md` reads MAY `-l` as "the question will be settled".
-
-**Options.** (a) Keep as is (NOTIONAL claims the scale; `knowing.md` doesn't). (b) They fit: `omal` / `eyul` settled, `omam` / `eyum` default, `omar` / `eyur` passing. `-l` leads somewhere lasting (an answer, an act), and `-r` is a passing thought. (c) Exception: no grade, or a separate follow-up grade (pursue / default / drop).
-
-**Affected.** MAY: 44 examples in 10 files (`knowing.md` 17, `could-be.md` 15). NOTIONAL: 25 in 6 files.
-
-**Learner.** With (c), the first graded ending in the reading order is off the scale, so D4 moves to (c). With (b), the *right now* cue reads literally on `-r`.
-
-**Class.** Blocking (precedent).
-
-**Recommendation:** (b) **(medium)**. The `-r` reading is literal, `-l` is where the thought settles, and Claritish already teaches MAY this way.
-
-### Slots and reshaping (U9)
-
-Groups: **C** (D8, D9, D11) lands as S1, a docs unit on `unassigned-reserved.md` (and `design-decisions.md` for D11), so that every cell `data/word-slots.csv` closes has an entry with its rejection id. **D** (D10) gives an open spelling a reading, which changes what the parser accepts; it lands as S2. **E** (D12 to D14, the reshaping left after the parse) is settled; see Status.
-
-**Cells.** The universe is the ten letters `src/parse/word-slots.ts` validates (`z d b v g w h th x y`). Thirteen rows limit letters and close 72 cells. Six have a stated cost and stay closed:
-
-| Feature | Closed letters | Cost stated in |
-|---|---|---|
-| tag pronoun | `/x/` `/y/` | `design-decisions.md` D-24 |
-| role pointer | `/x/` `/y/` | `design-decisions.md` D-24 |
-| role pointer | `/h/` | `unassigned-reserved.md` *Role pointers*: the shape is a say word (`hwuzam`) |
-| plural `-x` | `/th/` | `design-decisions.md` D-37 |
-
-The prescription row's seven cells outside the sake slots (`/z/ /d/ /b/ /v/ /h/ /x/ /y/`) follow the sake-word cells: a prescription is a sake word, so they open or stay closed with them. All examples below were checked with one batched probe; every reshaping example parses and reads with no clash.
-
-### D8. Slot cells already open (group C)
-
-**Problem.** 49 closed cells have an open entry in `unassigned-reserved.md` whose reason is *no reading yet*, not a cost: sake word on `/z/ /d/ /b/ /v/ /h/ /x/ /y/` (with prescription's seven), prescription on `/ɡ/ /w/` (`gawethel`), role compound on `/v/ /w/ /th/`, hook prefix on `/v/ /w/ /th/ /x/ /y/`, hooked join on `/v/ /ɡ/ /w/ /th/ /x/ /y/`, ability on `/z/ /d/ /b/ /h/`, an aside under `/z/ /d/ /b/ /v/`, a cite, opaque or mention span under `/th/`, a tag on `/v/ /ɡ/ /h/ /w/ /th/`, a role pointer on `/v/ /ɡ/ /w/`, `-x` on `/w/ /h/`. Only the prescription entry lacks its id (`Parser: prescriptionSlot`).
-
-**Options.** (a) Keep as is: open, and the parser rejects them, as the page's own policy allows. (b) Close some with a reason. (c) Open some with a reading.
-
-**Affected.** No example (every form is rejected); `unassigned-reserved.md` only, one line for the missing id.
-
-**Learner.** None. Each parser message already names the slots the feature takes.
-
-**Class.** Review later: it confirms each cell's status, which is stricter than code shape.
-
-**Recommendation:** (a), plus the missing id **(high)**. Every reason is a no-reading reason, and no cell has a job a learner reaches for, apart from the `/v/` hook prefix (D11).
-
-### D9. Closed cells with no entry (group C)
-
-**Problem.** 17 cells the parser rejects appear nowhere in `unassigned-reserved.md`, and the owning pages list the allowed slots without a reason: label reach on `/w/ /th/ /x/ /y/` (`labelReachSlot`, `wowurothul`); `-ln` on `/ɡ/ /v/ /h/ /w/ /th/ /x/ /y/` (`nameInstanceSlot`, `gazozoln`); ability on `/w/ /th/ /x/ /y/` (`abilitySlot`, `wowuroxal`; the open entry names only nouns, names, pronouns and `/h/`); an aside under `/x/` (`spanSlot`); a role pointer on `/th/` (`pointerSlot`, `thwuzer`, whose message speaks only of the holder seam).
-
-**Options.** (a) Keep as is. (b) Add open entries with ids and no-reading reasons: label reach labels a content word, and these slots hold a degree, a stance, a topic or a call (on a sake root, the `th` spot is the sake's own stance); ability belongs to an act or a quality; an aside comments and sets no topic; a pointer picks a participant; `-ln` names one thing that fills a role (`/x/` waits on D10). (c) Close any of them; no cost was found for one.
-
-**Affected.** No example; `unassigned-reserved.md`, and optionally the `thwuzer` message.
-
-**Learner.** None now. Drill generation stops drilling these cells.
-
-**Class.** Review later (sets each cell's status).
-
-**Recommendation:** (b) **(high)**. The repo rule wants every rejected spelling listed, and none of these has a cost to state.
-
-### D10. `-ln` as a topic (group D)
-
-**Problem.** A topic word takes a content noun on `-l` (`xodozel zalazun vowurol.` *as for a dog, …*; 35 examples in 10 files have one), but `-ln` is closed on `/x/`, and neither the page nor the parser message gives a reason. *As for an iPhone, …* (`xazozoln …`) is a form a learner would reach for, since `-ln` is taught as `-l` under a name. On `/y/`, `-l` is an interjection, so `-ln` there has no guess.
-
-**Options.** (a) Keep it closed, with the open entry from D9. (b) Open `-ln` on `/x/`: one thing the name applies to, set as the topic, read and resumed like any `-l` topic. (c) Open `/y/` too.
-
-**Affected.** 23 examples in 6 files carry `-ln`, and none changes. `topic.md` and `proper-names.md#name-instance--ln` gain a sentence and an example; the `nameInstanceSlot` row, its rejection text, and an interpreter row for the topic.
-
-**Learner.** With (b), `-ln` goes wherever a first-mention noun goes, one exception fewer to learn; the `/y/` cell stays open.
-
-**Class.** Review later (gives a reading to a spelling with no entry yet).
-
-**Recommendation:** (b) **(medium)**. The reading follows from two taught rules with no new piece. It changes what the parser accepts, so it lands after this phase.
-
-### D11. The hook prefix on `/v/` (group C)
-
-**Problem.** `design-decisions.md` *Hook prefixes* and the open entry give the `/v/` cell's reason as *it would repeat the `/ɡ/` predicate* (*is anti-fighting*). By the repo's weighing rule, a second way to say the same thing is not a cost, so the stated reason is no reason. A verb `vuoxuvuvul` could also mean more than the predicate: *acts against fighting*.
-
-**Options.** (a) Keep the text. (b) Restate it as no reading yet: a hook prefix names a stance toward its stem, and a verb would have to say which act carries the stance (opposing, campaigning, refusing), which the hook does not tell. The cell stays open. (c) Open `/v/` as *takes that stance toward the stem, in acts*.
-
-**Affected.** No example. (b): one bullet in `design-decisions.md`, one entry in `unassigned-reserved.md`. (c) also `hook-compounds.md#hook-prefixes`, the slot row and an interpreter row.
-
-**Learner.** (b): none. (c): one more slot for the prefix, with a reading close to the `/ɡ/` predicate.
-
-**Class.** Review later: (b) rewrites a design-decisions reason without changing the cell's status; (c) adds a form.
-
-**Recommendation:** (b) **(medium)**. The reason should be one the repo accepts, and no learner job needs the verb yet.
+None. The user settled D3 to D11 on 2026-11-25; see Status.
 
 ## Background
 

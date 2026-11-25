@@ -9,16 +9,17 @@ How one session carries out a whole proposal, every phase, without the user star
 | **Runner** | the session the user talks to | runs the [usage gate](#usage-gate), starts one phase executor per phase, reads its [phase report](#phase-report), decides whether to go on |
 | **Phase executor** | a top-level `claude -p` process that runs the `phase-executor` agent (`.claude/agents/phase-executor.md`), started by `npm run phase-exec`; a `phase-executor` subagent is the [fallback](#subagent-fallback) | the orchestrator of [proposals.md](proposals.md) for one phase, with the [changes below](#phase-executor) |
 | **Worker** | `proposal-worker`, `checkpoint-writer`, `style-editor`, `Explore`, started by the executor | one unit, unchanged |
-| **Run reviewer** | a `run-reviewer` subagent (`.claude/agents/run-reviewer.md`) the runner starts once the run ends | the [optimization review](#optimization-review) |
 
 A process executor is a session of its own, so its workers sit one layer below it, and its prompt cache lasts an hour: a worker that runs past five minutes doesn't make it write its context again. Like its workers and a subagent executor, it starts without `AGENTS.md`: `claude -p --agent` ignores the agent file's `omitClaudeMd`, so the launcher sets `CLAUDE_CODE_DISABLE_CLAUDE_MDS=1` in its environment. It also sets `CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0`: by default `claude -p` terminates 600 seconds after its last turn while background tasks still run, which kills a worker the executor is waiting on. An agent definition cannot limit which agent types it starts (a type list in its `tools` is ignored), so the agent file names the allowed types.
 
 The runner stays lean so that it can last the whole run:
 
 - It reads the proposal's Status line and phase list only (`npm run outline -- <proposal>`, then that range), never the items, diffs, or worker reports.
-- It never edits the proposal or any other file, and never commits.
+- It never edits the proposal or any other file, except for the move in [stopping early](#stopping-early).
 - It launches each executor with `npm run phase-exec -- <proposal> <phase>` in a background Bash call, adding `--rest` for the rest of a split phase, and `--model` or `--effort` when the plan names values other than `opus` and `high` for the phase. The launcher gives the process a one-line prompt that names the phase and the staging path for its report, `tmp/state/full-runs/<name>-phase-<N>.md`. The runner then ends its turn and waits for the call's completion notice, never polling or sleeping.
 - When the process starts, the launcher appends the phase to `tmp/state/full-runs.jsonl` with its session id and start time, so a running or crashed executor's session is on record; at exit it adds the end time, exit code and report path to that line. It then prints one line, `phase-exec: <report path> exit <code> session <uuid>`, or `phase-exec: FAIL report missing …` with the same fields. The process's own output goes to `tmp/logs/phase-exec-<name>-phase-<N>.log`, which the runner never reads whole.
+
+**Cross-phase data.** Anything one phase leaves for a later phase or for the end of the run, such as phase reports and the launch log, is run state. While the run is going it stays where the launcher writes it, under `tmp/`. If the run ends before completion, the runner moves it to `docs/proposals/run-state/<name>/`, which is git-tracked, so a resumed run can continue in another environment ([stopping early](#stopping-early)). The `grammar-newcomer-rewrite.md` proposal keeps its run state in the same folder.
 
 <a id="subagent-fallback"></a>
 **Subagent fallback.** The runner starts the executor as a subagent instead when the plan names a subagent executor for the phase, or when the launcher fails without running an executor: `claude` would not start (`FAIL report missing …` with `exit 127`; the log says why), or the launcher itself failed in a way the runner can't fix. It launches it with `subagent_type: "phase-executor"`, `model: "opus"` and `effort: "high"`, unless the plan names other values, and a one-line prompt: *Carry out phase N of `name.md` as a full-run phase executor.* The subagent returns its report instead of staging it. Its workers sit two layers below the runner, inside Claude Code's default nesting limit of three.
@@ -44,7 +45,7 @@ When a limit would be crossed:
 | 7-day limit | Stops the run for human review. |
 | The reading fails or has no windows | Stops the run before the phase. A guess near the limit is the overrun the gate exists to prevent. |
 
-To stop for review, the runner tells the user the reading, the forecast, the phases left, and the prompt that resumes the run: *Continue the full run of `name.md`*.
+To stop for review, the runner tells the user the reading, the forecast, the phases left, and the prompt that resumes the run: *Continue the full run of `name.md`*. It also does the [stopping early](#stopping-early) move.
 
 ## Phase executor
 <a id="phase-executor"></a>
@@ -97,27 +98,26 @@ The runner:
    - `DONE`: the usage gate, then the next phase.
    - `SPLIT`: the usage gate, then a fresh executor for the rest (`--rest`).
    - `STOPPED`: tells the user what the report says and waits.
-5. When the proposal has been deleted or turned back into an idea ([consolidate](proposals.md#consolidate)), ends the run. It starts the [optimization review](#optimization-review) and waits for it, then tells the user:
+5. When the proposal has been deleted or turned back into an idea ([consolidate](proposals.md#consolidate)), ends the run and tells the user:
    - the phases run
    - the *Decided by agent* list, flagged entries first
    - the blocking decisions still open
    - what the run cost in both windows (`--deltas`)
-   - the optimization idea's path and its findings in one line each, or that nothing qualified
    - the command for the per-phase token breakdown, `npm run token-report -- --session <ids>`, with the runner's session id and each executor's from `tmp/state/full-runs.jsonl`, comma-separated; it nests each executor's workers under it with a subtotal; it also lists each transcript's cache writes by kind (`w5m` / `w1h`) and its longest gap between calls, flagged over 5 minutes
 
-## Optimization review
-<a id="optimization-review"></a>
+## Stopping early
+<a id="stopping-early"></a>
 
-When the run ends, the runner starts one `subagent_type: "run-reviewer"` (`.claude/agents/run-reviewer.md`). The run reviewer writes what used significantly more tokens than needed as an idea under `docs/proposals/ideas/optimization/` and commits it. The prompt holds:
+When the run terminates before completion, the runner moves the run state into the proposal's run-state folder, so a later session can resume from git. This covers every stop above: the usage-gate stops, `STOPPED`, a failed launch or nonzero exit, a dirty tree, and a stop the user asks for. A run that ends at step 5 doesn't move anything.
 
-- the proposal's filename
-- the run's session ids: the runner's, the earlier ones when the run was resumed in a new session, and one per process executor, from this proposal's lines in `tmp/state/full-runs.jsonl` (a subagent executor's transcript sits under the runner's id)
-- each phase report's *Inefficient* line, labeled by phase
+1. Creates `docs/proposals/run-state/<name>/` if it is missing.
+2. Moves each phase report, `tmp/state/full-runs/<name>-phase-<N>.md`, into it with `mv`. The files are untracked, so `git mv` doesn't apply.
+3. Copies this proposal's lines from `tmp/state/full-runs.jsonl` into `docs/proposals/run-state/<name>/full-runs.jsonl`. The shared log stays in `tmp/`, because it also holds other proposals' lines and the token report reads it there.
+4. Commits the moved files, and nothing else: `git add` with only the new paths, then `git commit -m "run state of <name>.md, stopped at phase N [skip-cd]" -- <paths>`, ending the message with the attribution line. The `-- <paths>` form keeps other dirty paths out of the commit, including any that caused the stop.
+5. Tells the user the commit hash and the paths, and what stopped the run.
 
-It returns the file's path and one line per finding, or *no findings*.
+A stop never moves a file that the build reads.
 
 ## Keeping in step
 
 `.claude/agents/phase-executor.md` restates the [phase executor](#phase-executor) changes, [agent decisions](#agent-decisions), and the [phase report](#phase-report). When you change one of those here, make the same change there. It also counts as one of the agent files that [proposals.md](proposals.md#running-with-subagents) keeps in step.
-
-`.claude/agents/run-reviewer.md` owns the [optimization review](#optimization-review)'s steps, what counts as a finding, and the file's sections. When you change what the runner sends it or reads back, change the agent file to match.

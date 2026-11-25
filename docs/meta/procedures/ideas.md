@@ -9,7 +9,7 @@ How to write and keep an **idea**: a loose spec in `docs/proposals/ideas/` for a
 | Folder | Holds |
 |--------|-------|
 | `ideas/` | loose specs: a problem, a sketch, open questions |
-| `ideas/optimization/` | token waste found at the end of a full run ([full-execution.md](full-execution.md#optimization-review)) |
+| `ideas/optimization/` | token waste found at the end of a full run ([full-execution.md](full-execution.md)) |
 | `ready/` | plans that can start now ([proposal-plans.md](proposal-plans.md#ready-to-implement)) |
 | `in-progress/` | plans with a phase under way |
 | `rejected/` | ideas and plans turned down, kept as they were |
