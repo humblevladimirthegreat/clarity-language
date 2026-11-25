@@ -129,7 +129,7 @@ Besides how far a word reaches, each word belongs to someone: you, the holder wh
 | The holder | The rest of the clause: the event, MAY, CAUSE hinges and *so that*, plans, another channel, and sake and feeling words wherever they sit; a dependent inside the clause | [What belongs to the holder](holder.md#what-the-holder-covers), [someone else's plan, aim, or motive](holder.md#holder-plans-and-motives) |
 | The one asked | In a question, only the claim; a channel in a question asks about the listener's grounds | [Whose stake](for-a-sake.md#whose-stake), [carrying a channel forward](evidentiality.md#carry-forward) |
 
-The seam word covers a sake word in its clause whether the sake word comes before it or after it. Here the motive comes first and is still Azozon's, and the seam word says how you know Azozon's reason:
+The seam word covers every word the holder owns, whether that word comes before it or after it. Here the motive comes first and is still Azozon's, and the seam word says how you know Azozon's reason:
 
 > `zazozon vezuyol thawethom theyomazozon.`
 >
@@ -182,7 +182,15 @@ A written statement word ends your frame, but it ends nothing else in the table:
 >
 > "Who walks?" "Azozon, I think."
 
-A goodbye ends the conversation, so everything in the table ends there for the sentences after it, whoever says it and whatever was set before. A quote also begins with nothing carried in: inside it, `-rth` and a hook on `-r` point back only within the quoted words, and your frame does not carry in.
+A goodbye ends the conversation, so everything in the table ends there for the sentences after it, whoever says it and whatever was set before. The goodbye sentence itself still reads the sentence before, `-rth`, and a hook on `-r`, so you can answer and leave in one breath:
+
+> `alazuxan. yel zazozon vowurol. yaol alazuxun.`
+>
+> Alazun-presence . y-question | z-Azozon | v-walk . y-yes | Alazun-passing
+>
+> "Alazun here, I have time." "Is Azozon walking?" "Yes. I'm off now."
+
+A quote also begins with nothing carried in: inside it, `-rth` and a hook on `-r` point back only within the quoted words, and your frame does not carry in.
 
 ### Practice {#intermediate-practice}
 

@@ -10,7 +10,7 @@ Sections named by data:
 - #evidence-strength: 14 overlay rows
 - #hand-depth: 2 rejections
 - #evidence-clause: 1 interpreter row, 1 interpreter class, 3 pair-table rules
-- #carry-forward: 1 rejection, 3 pair-table rules, 14 boundary cells, 11 discourse slot cells
+- #carry-forward: 1 rejection, 3 pair-table rules, 14 boundary cells, 13 discourse slot cells
 Inbound links: npm run page-refs -- evidentiality.md
 -->
 

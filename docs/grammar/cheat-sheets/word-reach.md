@@ -42,7 +42,6 @@ When two words both reach the whole clause, the earlier one covers the later one
 | Your attitude | Stays yours under a holder | [What belongs to the holder](/holder#what-the-holder-covers) | I |
 | Your attitude | Stays yours, outside a carried frame | [Carrying a channel forward](/evidentiality#carry-forward) | I |
 | A sake word on the clause | A remark: stays yours and outside what is asked | [Whose stake](/for-a-sake#whose-stake) | I |
-| A sake word on the clause | Under a holder it is the holder's, and the seam word covers it, before or after | [What belongs to the holder](/holder#what-the-holder-covers) | I |
 | A feeling word | Stays yours, outside a carried frame | [A feeling word](/how-you-feel#feeling-word) | B |
 | *Contrary to* with its stance | A remark: stays yours and outside what is asked | [Contrary to a stance (uom)](/contrary-to#contrary-to-stance) | I |
 | The seam word of a holder | Covers its whole clause, wherever it sits | [What belongs to the holder](/holder#what-the-holder-covers) | I |
@@ -50,6 +49,7 @@ When two words both reach the whole clause, the earlier one covers the later one
 | A want, plan, or decision | Claims nothing: it takes no carried frame and ends none | [Carrying a channel forward](/evidentiality#carry-forward) | I |
 | FORMER | Covers a restrictor, wherever it sits | [A pattern that used to hold](/residue-and-former#former-climate) | I |
 | NOTIONAL | A holder named on the word covers it, by the word's shape | [Follow-up endings (NOTIONAL)](/notional#follow-up-endings-notional) | I |
+| The seam word of a holder | Covers every other word the holder owns, before or after it | [What belongs to the holder](/holder#what-the-holder-covers) | I |
 <!-- /generated -->
 
 <PageBreak />
@@ -80,10 +80,10 @@ Most words stop at the period ([what carries past a period](/word-reach#past-the
 | What carries | Read by | Ends with | Speakers | Into a quote | Into an aside | Stage |
 |--------------|---------|-----------|----------|--------------|---------------|-------|
 | Your frame: a channel, a holder, or NOTIONAL | Your later statements with no frame of their own | [a new one](/evidentiality#carry-forward), [a written statement word](/evidentiality#carry-forward), [*by the way*](/evidentiality#carry-forward), [a goodbye by either speaker](/evidentiality#carry-forward) | [each their own](/evidentiality#carry-forward) | [no](/evidentiality#carry-forward) | [no](/spans#asides-th) | I |
-| The topic | A topic pronoun | [a new one](/topic#topic), [*by the way*](/topic#topic), [a goodbye](/topic#topic) | [shared](/topic#topic) | [no](/topic#topic-dependents) | [yes](/quote-contents#topic-quotes) | I |
-| The latest content of each kind | A stand-in on `-rth` | [a new one](/stand-in-vowels#stand-in-back), [a goodbye](/stand-in-vowels#stand-in-back) | [shared](/stand-in-vowels#stand-in-back) | [no](/stand-in-vowels#stand-in-back) | [yes](/spans#asides-th) | I |
-| The latest landmark | A hook on `-r` | [a new one](/in-clause-hooks#hook-resume), [a goodbye](/in-clause-hooks#hook-resume) | [shared](/in-clause-hooks#hook-resume) | [no](/in-clause-hooks#hook-resume) | [yes](/spans#asides-th) | I |
+| The topic | A topic pronoun | [a new one](/topic#topic), [*by the way*](/topic#topic), [*next*](/topic#topic), [a goodbye](/topic#topic) | [shared](/topic#topic) | [no](/topic#topic-dependents) | [yes](/quote-contents#topic-quotes) | I |
+| The latest content of each kind | A stand-in on `-rth` | [a new one](/stand-in-vowels#stand-in-back), [a goodbye, for the sentences after it](/stand-in-vowels#stand-in-back) | [shared](/stand-in-vowels#stand-in-back) | [no](/stand-in-vowels#stand-in-back) | [yes](/spans#asides-th) | I |
+| The latest landmark | A hook on `-r` | [a new one](/in-clause-hooks#hook-resume), [a goodbye, for the sentences after it](/in-clause-hooks#hook-resume) | [shared](/in-clause-hooks#hook-resume) | [no](/in-clause-hooks#hook-resume) | [yes](/spans#asides-th) | I |
 | The NOTIONAL supposition | A question with NOTIONAL | [a new one](/notional#follow-up-endings-notional), [a written statement word](/evidentiality#carry-forward), [*by the way*](/evidentiality#carry-forward), [a goodbye by either speaker](/evidentiality#carry-forward) | [shared](/notional#notional-as-if-framing) | [no](/notional#notional-as-if-framing) | [no](/spans#asides-th) | I |
 | The sentence before | A sentence linker, a discourse hook, or a polar word | [a new one](/sentence-linkers#sentence-linkers), [a goodbye, for the sentences after it](/sentence-linkers#past-a-period) | [shared](/sentence-linkers#past-a-period) | [no](/sentence-linkers#past-a-period) | [no](/spans#asides-th) | I |
-| A question's blank | The sentence right after the question | [a new one](/questions#fill-ask), [*by the way*](/questions#fill-ask), [a goodbye, for the sentences after it](/questions#fill-ask) | [shared](/questions#fill-ask) | [no](/questions#fill-ask) | [no](/spans#asides-th) | B |
+| A question's blank | The sentence right after the question | [a new one](/questions#fill-ask), [*by the way*](/questions#fill-ask), [*next*](/questions#fill-ask), [a goodbye, for the sentences after it](/questions#fill-ask) | [shared](/questions#fill-ask) | [no](/questions#fill-ask) | [no](/spans#asides-th) | B |
 <!-- /generated -->

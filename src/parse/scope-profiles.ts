@@ -98,13 +98,12 @@ export type FamilyProfile = {
   underForce?: string;
   /** A holder seam sits on its word: the holder over it is fixed by word shape, citing this. */
   holderSeam?: string;
-  /** Its word can carry the holder seam: a channel or MAY, NOTIONAL (holder.md#naming-a-holder). */
-  seamHost?: true;
   /**
-   * Under a holder it is the holder's, and the seam word stays yours, so the seam word covers it wherever it sits; the
-   * anchor says so. Against any other frame of the seam word's family it keeps its row.
+   * Its word can carry the holder seam: a channel or MAY, NOTIONAL (holder.md#naming-a-holder). The seam word covers
+   * every frame its holder owns wherever it sits ({@link holderOwned}): under a holder the rest of the clause is the
+   * holder's, and the seam word stays yours (holder.md#what-the-holder-covers).
    */
-  underSeam?: string;
+  seamHost?: true;
   text?: TextAnchor[];
   members?: MemberProfile[];
   /** Two frames of the family have a row of their own. */
@@ -188,7 +187,6 @@ export const PROFILES: readonly FamilyProfile[] = [
     seat: "body",
     order: "text",
     remark: "for-a-sake.md#whose-stake",
-    underSeam: HOLDER,
     members: [{ id: "feeling", feeling: true, escapes: ["carried"], anchor: "how-you-feel.md#feeling-word" }],
   },
   { family: "contrary", seat: "body", order: "text", remark: CONTRARY },
@@ -326,6 +324,14 @@ function memberCases(a: FamilyProfile, b: FamilyProfile): PairCase[] {
   return cases;
 }
 
+/**
+ * Whether a holder in the clause owns the family's frames: every body frame but the holder itself and what stays yours
+ * under a holder (holder.md#what-the-holder-covers).
+ */
+export function holderOwned(p: FamilyProfile): boolean {
+  return p.seat === "body" && p.family !== "holder" && !p.escapes?.holder;
+}
+
 /** The seam word over a family the holder owns, wherever it sits: before the member cases and text order. */
 function seamCases(a: FamilyProfile, b: FamilyProfile): PairCase[] {
   const cases: PairCase[] = [];
@@ -333,7 +339,8 @@ function seamCases(a: FamilyProfile, b: FamilyProfile): PairCase[] {
     [a, b],
     [b, a],
   ] as const) {
-    if (host.seamHost && other.underSeam) cases.push({ order: "over", over: host.family, anchors: [other.underSeam], seam: true });
+    if (host.seamHost && holderOwned(other)) cases.push({ order: "over", over: host.family, anchors: [HOLDER], seam: true });
+    if (a === b) break;
   }
   return cases;
 }

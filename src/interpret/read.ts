@@ -10,7 +10,7 @@ import { CLOSED } from "../closed-roots.js";
 import { overlayKey, type ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 import { crosses, type NestedKind } from "../parse/boundaries.js";
-import { endsAt, perSpeaker, reachesQuote, type SlotId } from "../parse/discourse-slots.js";
+import { endsAt, eventSentenceReads, perSpeaker, reachesQuote, type SlotId } from "../parse/discourse-slots.js";
 import { titledPhrases } from "../parse/scope.js";
 import { isNoKindFence } from "../parse/ast-walk.js";
 import { isGenericPronoun, isTopicPronoun } from "../parse/resolve.js";
@@ -1243,8 +1243,10 @@ function hookVowels(word: LexWord | undefined): string {
  *   extra they named"). `to` is its sentence and `resumed` its detail, whose `hosted` is the landmark.
  * - Inside a quote, either one looks only within the quote (stand-in-vowels.md#stand-in-back,
  *   in-clause-hooks.md#hook-resume): the quote's own reading resolved it, and the outer sentences leave it as it is.
- * - A goodbye ends the conversation: either one, in or after a goodbye, never looks at the goodbye or anything before it
- *   (`goodbyes`, the sentences `ResolveInfo.goodbyes` names).
+ * - A goodbye ends the conversation: either one after a goodbye never looks at the goodbye or anything before it, while
+ *   one in the goodbye sentence still looks back (`goodbyes`, the sentences `ResolveInfo.goodbyes` names).
+ * - A greeting claims nothing, so a sentence that only greets is no content for `-rth`, unless it answers a question
+ *   (a bare name answering *who* also reads as a greeting) (stand-in-vowels.md#stand-in-back).
  */
 function pointBackLinks(sentences: Reading[], speakers: readonly string[] = [], goodbyes: ReadonlySet<ReadingId> = new Set()): void {
   const byId = new Map(allReadings(sentences).map((r) => [r.id, r]));
@@ -1254,7 +1256,8 @@ function pointBackLinks(sentences: Reading[], speakers: readonly string[] = [], 
       .filter((l) => l.kind === "standIn" && l.to && byId.has(l.to))
       .sort((a, b) => (b.words[0]?.at ?? 0) - (a.words[0]?.at ?? 0))
       .map((l) => ({ vowel: seriesOf(l.words[0]), id: l.to! }));
-    return [{ vowel: seriesOf(act?.words[0]), id: sentence.id }, ...dependents];
+    const greetsOnly = sentence.frames.some((f) => f.key === "reading:greeting") && !sentence.links.some((l) => l.kind === "answer");
+    return [...(greetsOnly ? [] : [{ vowel: seriesOf(act?.words[0]), id: sentence.id }]), ...dependents];
   };
   const hooks = (sentence: Reading): Detail[] =>
     sentence.claim.details.filter((d) => d.key === "hookJob:extraNoun" && d.hosted).reverse();
@@ -1262,11 +1265,12 @@ function pointBackLinks(sentences: Reading[], speakers: readonly string[] = [], 
   // sentence is the parse's `ResolveInfo.speakers`, one per top-level reading; with none, one speaker says them all.
   const speakerById = new Map(sentences.map((s, i) => [s.id, speakers[i] ?? ""]));
   const speakerOf = (sentence: Reading): string => speakerById.get(sentence.id) ?? "";
-  // Where the slot's goodbye cell ends it, a point-back looks only at the sentences after the latest goodbye, and one in
-  // a goodbye looks at none. `earlier` runs latest first.
+  // Where the slot's goodbye cell ends it, a point-back looks only at the sentences after the latest goodbye; one in the
+  // goodbye sentence looks back as far as the goodbye before it, where its event-sentence cell keeps the value.
+  // `earlier` runs latest first.
   const sinceGoodbye = (slot: SlotId, sentence: Reading, earlier: Reading[]): Reading[] => {
     if (!endsAt(slot, "goodbye")) return earlier;
-    if (goodbyes.has(sentence.id)) return [];
+    if (goodbyes.has(sentence.id) && !eventSentenceReads(slot, "goodbye")) return [];
     const at = earlier.findIndex((s) => goodbyes.has(s.id));
     return at < 0 ? earlier : earlier.slice(0, at);
   };

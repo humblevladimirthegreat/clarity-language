@@ -7,7 +7,7 @@ Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #past-a-period: 6 discourse slot cells
-- #sentence-linkers: 2 rejections, 9 closed words, 1 interpreter row, 1 interpreter class, 2 discourse slot cells
+- #sentence-linkers: 2 rejections, 9 closed words, 1 interpreter row, 1 interpreter class, 3 discourse slot cells
 Inbound links: npm run page-refs -- sentence-linkers.md
 -->
 
@@ -37,7 +37,7 @@ The act word, not the punctuation, sets question or command. `?` and `!` are [to
 
 A call, a *yes* / *no*, or an interjection closed by a period is a whole move and reaches only its own turn. The next body is its own statement: it is not said to that person because of the call, and the *yes* / *no* or interjection does not reach it either. Whether you are still talking to that person is up to the conversation.
 
-A sentence linker (below), a [discourse hook](/hooks#discourse-hooks), and a [polar word](/questions#polar-particle) read the sentence right before them, whoever said it: a reply can open with *however* (`xezem`), and `yaol` agrees with the other person's claim. A written statement word before a linker does not change that, and *by the way* is itself a linker that reads the sentence before. A [goodbye](/word-endings#greeting) ends the conversation, so the sentence after a goodbye has no sentence before it to read. Inside a [quote](/spans#writing), the sentence before is one of the quoted sentences; the first sentence in a quote has none.
+A sentence linker (below), a [discourse hook](/hooks#discourse-hooks), and a [polar word](/questions#polar-particle) read the sentence right before them, whoever said it: a reply can open with *however* (`xezem`), and `yaol` agrees with the other person's claim. A written statement word before a linker does not change that, and *by the way* is itself a linker that reads the sentence before. A [goodbye](/word-endings#greeting) ends the conversation, so the sentence after a goodbye has no sentence before it to read. The goodbye sentence itself still reads the one before it, so `yaol` with a goodbye agrees and leaves at once. Inside a [quote](/spans#writing), the sentence before is one of the quoted sentences; the first sentence in a quote has none.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|

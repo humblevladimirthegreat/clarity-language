@@ -53,6 +53,8 @@ After the fence or restrictor, the channel says how you know each case instead:
 
 Pick the place by what the claim rests on. Put the channel after the fence when you checked every member one by one; the claim is then only as wide as your checking. Put it first when you generalize from a pattern, a rule, or a deduction, which reaches cases you have never seen.
 
+A channel that names a [holder](holder.md#what-the-holder-covers) is different: it says how you know the holder's view, so it covers the whole claim wherever it sits. The fence and the claim are the holder's. In `zawan vebal hal thevumayan.` the *never* is one you both remember.
+
 The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed `hual` with a weak channel, because you claim no exceptions on thin evidence. Open `huam` does not claim that: it leaves the exceptions open.
 
 | English | Fence or restrictor | Channel | Example |

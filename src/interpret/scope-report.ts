@@ -15,7 +15,10 @@ export type ReadingRecord = {
   at: string;
   /** The kind of nested reading, from the last path step: `member`, `dependent`, `island`, `quote`, `aside`. Absent at top level. */
   nested?: string;
-  /** Each frame's family, `family/member` where the resolve stage tags a member, in text order. */
+  /**
+   * Each frame's family, `family/member` where the resolve stage tags a member, and `@seam` after it on the frame the
+   * holder seam sits on (holder.md#naming-a-holder), in text order.
+   */
   families: string[];
   /** `over > under kind anchor,…`. */
   order: string[];
@@ -38,7 +41,9 @@ export type ReportExample = { file: string; text: string; allReadings: Reading[]
 const ID = /:(\d+)\.(\d+)((?:\/.*)?)$/;
 const NESTED: Record<string, string> = { m: "member", d: "dependent", i: "island", q: "quote", a: "aside" };
 
-const family = (f: Frame): string => (f.member ? `${f.family}/${f.member}` : f.family);
+/** The suffix on the frame the holder seam sits on, so `explainPair` sees the seam word. */
+const SEAM = "@seam";
+const family = (f: Frame): string => `${f.member ? `${f.family}/${f.member}` : f.family}${f.holderHost ? SEAM : ""}`;
 const stanceMember = (m: Frame | StanceList): string => ("family" in m ? family(m) : "list");
 
 /** Records for an example's readings: sentence positions are offsets from the first sentence any of them names. */
@@ -97,8 +102,9 @@ export type Tally = { examples: number; sample: string };
 export type ScopeCounts = Record<string, Record<string, Tally>>;
 
 const side = (family: string): PairSide => {
-  const [name = "", member] = family.split("/");
-  return { family: name as FrameFamily, ...(member ? { member } : {}) };
+  const seam = family.endsWith(SEAM);
+  const [name = "", member] = (seam ? family.slice(0, -SEAM.length) : family).split("/");
+  return { family: name as FrameFamily, ...(member ? { member } : {}), ...(seam ? { holderHost: true as const } : {}) };
 };
 
 /** For every two frames of a reading, the rule that decides the pair (`explainPair`, interpreter.md#family-profiles). */

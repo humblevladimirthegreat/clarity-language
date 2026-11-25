@@ -282,9 +282,10 @@ The end events:
 | `newValue` | a new value |
 | `statementWord` | a written statement word (`yal`, `yam`, `yar`) as the real act |
 | `byTheWay` | *by the way* (`xavedam`) |
+| `next` | *next* (`xevewom`) |
 | `goodbye` | a goodbye |
 
-An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with any statement word (`yal`, `yam`, `yar`) still answers, and `yal xezem …` still links to the sentence before. A goodbye ends the conversation, so every slot's `goodbye` cell ends: no sentence after a goodbye reads the goodbye or anything before it. Its stand-in and hook rows end in the goodbye sentence too, since a point-back in it finds nothing; for `sentenceBefore` and `answer`, whether the goodbye sentence itself still reads the sentence before it and fills the question before it is unstated (the cell's `eventSentence`; today it does). The resolve stage lists the goodbye sentences (`ResolveInfo.goodbyes`), which the reader's `previousSentence` (`read-context.ts`) and `pointBackLinks` read; inside the resolve stage, `carriedFrames` and `fillAnswers` read the same goodbyes.
+An end cell says whether the sentence that is the event, and the sentences after it, still read the value. Two slots are read only by the very next sentence (`sentenceBefore`, `answer`), so any sentence ends them for the one after it; their cells say whether that next sentence, when it is the event, still reads the value: a reply that opens with any statement word (`yal`, `yam`, `yar`) still answers, and `yal xezem …` still links to the sentence before. A goodbye ends the conversation, so every slot's `goodbye` cell ends: no sentence after a goodbye reads the goodbye or anything before it. The goodbye sentence itself still reads the point-backs, the sentence before and the question before it (the cell's `eventSentence`, *keeps*), so *yes, bye* (`yaol alazuxun.`) agrees, and `-rth` or a hook on `-r` in it still points back; the carried frame, the topic and the supposition end in it. Decided 2026-11-25 (user, D21 (c) of `scope-model.md`): one rule for the goodbye sentence across the four rows. *Next* (`xevewom`) clears the topic (`topic.md#topic`) and, as a linker, answers nothing (`questions.md#fill-ask`); it is not one of the carried frame's four end events (`evidentiality.md#carry-forward`), and the other slots keep their value over it. The resolve stage lists the goodbye sentences (`ResolveInfo.goodbyes`), which the reader's `previousSentence` (`read-context.ts`) and `pointBackLinks` read; inside the resolve stage, `carriedFrames` and `fillAnswers` read the same goodbyes.
 
 The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`) `quote` (`passes` or `blocks` into a quote), and `aside` (`passes` or `blocks` into an aside, `spans.md#asides-th`). A passing `aside` cell reads the value where the aside sits: the topic through the aside's resolve, which starts from the outer context, and a point-back through the sentence's own `to` pass, which reaches the links inside its asides. Nothing inside an aside sets a slot.
 
@@ -295,6 +296,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `evidentiality.md#carry-forward` |
 | `statementWord` | ends, `evidentiality.md#carry-forward` |
 | `byTheWay` | ends, `evidentiality.md#carry-forward` |
+| `next` | keeps, `evidentiality.md#carry-forward` |
 | `goodbye` | ends every speaker's, `evidentiality.md#carry-forward` |
 | `kept` | speaker, `evidentiality.md#carry-forward` |
 | `quote` | blocks, `evidentiality.md#carry-forward` |
@@ -307,6 +309,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `topic.md#topic` |
 | `statementWord` | keeps, `topic.md#topic` |
 | `byTheWay` | ends, `topic.md#topic` |
+| `next` | ends, `topic.md#topic` |
 | `goodbye` | ends, `topic.md#topic` |
 | `kept` | shared, `topic.md#topic` |
 | `quote` | blocks, `topic.md#topic-dependents` |
@@ -319,7 +322,8 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `stand-in-vowels.md#stand-in-back` |
 | `statementWord` | keeps, `stand-in-vowels.md#stand-in-back` |
 | `byTheWay` | keeps, `stand-in-vowels.md#stand-in-back` |
-| `goodbye` | ends, `stand-in-vowels.md#stand-in-back` |
+| `next` | keeps, `stand-in-vowels.md#stand-in-back` |
+| `goodbye` | ends for the sentences after it; the goodbye sentence itself keeps, `stand-in-vowels.md#stand-in-back` |
 | `kept` | shared, `stand-in-vowels.md#stand-in-back` |
 | `quote` | blocks, `stand-in-vowels.md#stand-in-back` |
 | `aside` | passes, `spans.md#asides-th` |
@@ -331,7 +335,8 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `in-clause-hooks.md#hook-resume` |
 | `statementWord` | keeps, `in-clause-hooks.md#hook-resume` |
 | `byTheWay` | keeps, `in-clause-hooks.md#hook-resume` |
-| `goodbye` | ends, `in-clause-hooks.md#hook-resume` |
+| `next` | keeps, `in-clause-hooks.md#hook-resume` |
+| `goodbye` | ends for the sentences after it; the goodbye sentence itself keeps, `in-clause-hooks.md#hook-resume` |
 | `kept` | shared, `in-clause-hooks.md#hook-resume` |
 | `quote` | blocks, `in-clause-hooks.md#hook-resume` |
 | `aside` | passes, `spans.md#asides-th` |
@@ -343,6 +348,7 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends (the owner's new channel or supposition), `notional.md#follow-up-endings-notional` |
 | `statementWord` | ends (the owner's), `evidentiality.md#carry-forward` |
 | `byTheWay` | ends (the owner's), `evidentiality.md#carry-forward` |
+| `next` | keeps, `evidentiality.md#carry-forward` |
 | `goodbye` | ends every speaker's, `evidentiality.md#carry-forward` |
 | `kept` | shared, `notional.md#notional-as-if-framing` |
 | `quote` | blocks, `notional.md#notional-as-if-framing` |
@@ -355,7 +361,8 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `sentence-linkers.md#sentence-linkers` |
 | `statementWord` | keeps, `sentence-linkers.md#past-a-period` |
 | `byTheWay` | keeps, `sentence-linkers.md#past-a-period` |
-| `goodbye` | ends for the sentences after it, `sentence-linkers.md#past-a-period`; the goodbye sentence itself unstated (today: keeps) |
+| `next` | keeps, `sentence-linkers.md#sentence-linkers` |
+| `goodbye` | ends for the sentences after it; the goodbye sentence itself keeps, `sentence-linkers.md#past-a-period` |
 | `kept` | shared, `sentence-linkers.md#past-a-period` |
 | `quote` | blocks, `sentence-linkers.md#past-a-period` |
 | `aside` | blocks, `spans.md#asides-th` |
@@ -367,7 +374,8 @@ The other columns are `kept` (`speaker`: each speaker keeps their own; `shared`)
 | `newValue` | ends, `questions.md#fill-ask` |
 | `statementWord` | keeps, `questions.md#fill-ask` |
 | `byTheWay` | ends, `questions.md#fill-ask` |
-| `goodbye` | ends for the sentences after it, `questions.md#fill-ask`; the goodbye sentence itself unstated (today: keeps) |
+| `next` | ends, `questions.md#fill-ask` |
+| `goodbye` | ends for the sentences after it; the goodbye sentence itself keeps, `questions.md#fill-ask` |
 | `kept` | shared, `questions.md#fill-ask` |
 | `quote` | blocks, `questions.md#fill-ask` |
 | `aside` | blocks, `spans.md#asides-th` |
@@ -392,7 +400,7 @@ Per family: the forms that reach the whole clause, then every sentence on its pa
 **Whole clause:** MAY, the channels, and deduction on `/th/`. On `/w/` they have adjective reach.
 
 - `universality.md`: "In Ageben the mood words, which say how you know something or how it stands, cover the whole sentence: the `/th/` words MAY and the channels, …"
-- `evidentiality.md#evidence-clause` (a channel against `attitude`, `mirative` and `hinge`): "A channel is not part of what you claim, only what backs it. So it is never under your feeling, your surprise or a cause". So a channel commutes with an attitude and with MIRATIVE, and covers a hinge wherever it sits: "A hinge with `blarth` may come first instead … Both orders mean the same, and the channel first is the usual one." The reason names no sake word and no `uom`: a channel against `sake` or `contrary` keeps text order, except the seam word, which covers a sake word under its holder wherever it sits (`holder.md#what-the-holder-covers`, in [holder](#holder)).
+- `evidentiality.md#evidence-clause` (a channel against `attitude`, `mirative` and `hinge`): "A channel is not part of what you claim, only what backs it. So it is never under your feeling, your surprise or a cause". So a channel commutes with an attitude and with MIRATIVE, and covers a hinge wherever it sits: "A hinge with `blarth` may come first instead … Both orders mean the same, and the channel first is the usual one." The reason names no sake word and no `uom`: a channel against `sake` or `contrary` keeps text order, except the seam word, which covers every word its holder owns wherever it sits (`holder.md#what-the-holder-covers`, in [holder](#holder)).
 - `evidentiality.md#evidence-clause` (MAY against the same three): "MAY is part of the claim, so it keeps text order: the earlier covers the later."
 - `usually-vs-must.md#how-things-work` (against `hinge`): "The channel stays on the main sentence. For the whole generalization, put it first, before the fence and the hinge, as with the evidence clause: …"
 - `usually-vs-must.md#general-claims` (channel against `binder` and `occasion`): "Like any stance word, it covers what comes after it … Put first, before the universal fence or restrictor, it says how you know the whole generalization"; "After the fence or restrictor, the channel says how you know each case instead" (`zual gogozel vezuvel thugel.`).
@@ -414,6 +422,7 @@ Per family: the forms that reach the whole clause, then every sentence on its pa
 - `holder.md#what-the-holder-covers` (against `force`, `say`, speaker attitude): "Pronouns, speech moves, and speaker attitudes stay yours: `uwen` is still you, the sentence is still your turn, and *hopefully* is still your hope."
 - `holder.md#holder-plans-and-motives` (against `hinge`): "The so that hinge alone is your aim; with a holder in the clause it is the holder's, wherever the hinge sits, …", and the holder table's row "MAY, CAUSE hinges, *so that*, PLAN, prescription" (`holder.md#what-the-holder-covers`). The one place that differs: "a holder right before the *although* hinge `thezem` gives the holder only the hinge's expectation" (`contrary-to.md#contrary-to-holder`).
 - `holder.md#what-the-holder-covers` (against `sake`): "Everything else in the clause, wherever it sits, belongs to the holder", with the table row for sake words and feeling words ("the holder's stake and feeling"), and "The first sake word has no holder, so it is yours. The second is Azozon's." Also `holder.md#holder-plans-and-motives`: "With a holder, the motive is the holder's, before or after the seam word, and the seam word says how you know their reason". The seam word stays yours: "The seam word is yours wherever it sits", so it covers a sake or feeling word wherever either sits, while a channel the holder owns keeps text order with it.
+- `holder.md#what-the-holder-covers` (the seam word against the rest of its clause): "So the seam word covers every other word the holder owns, whether that word comes before it or after it." Every family but `attitude`, which stays yours; see [the seam word](#pair-table).
 - `holder.md#what-the-holder-covers` (against `polarity`): a standalone stance join is a row of the holder table ("how you take the claim" / "how the holder takes it"), and "The no-judgment is Azozon's, like any other stance word under the holder. To take no view yourself, say it in a sentence of its own, with no holder." (`zazozon vowurol thul thevumazozon.`)
 - `holder.md#what-the-holder-covers` (against `occasion`): "On MEMORY this is the history you both know, so a sweeping *never* or *always* covers only the times you both remember: …"
 - `holder.md#what-the-holder-covers` (which stances take one): "Only the seven channels and MAY take a holder: they are the ways you can have access to someone else's view." `notional.md#follow-up-endings-notional` adds NOTIONAL, and `want-and-decide.md#whose-intention` adds WANT, PLAN, and DECISION after a holder.
@@ -886,7 +895,7 @@ Each family that pairs has a profile in `src/parse/scope-profiles.ts`, and the [
 | escapes `carried` (member) | a carried frame sits under it: the claim takes the frame, the feeling stays yours | `attitude` (a root on `/th/`), `sake` (a feeling word) | `evidentiality.md#carry-forward`, `how-you-feel.md#feeling-word` |
 | under force | the anchor a row with the act word over it cites, where the family's page states the pair; otherwise `speech-moves.md#speech-act-statement-question-command` | `hinge`, `stance`, `intention`, `holder` | `causation.md#if`, `want-and-decide.md#whose-intention`, `holder.md#what-the-holder-covers` |
 | holder seam | the holder seam sits on its word, so the holder over it is fixed by word shape | `stance`, `intention`, `notional` | `holder.md#what-the-holder-covers`, `want-and-decide.md#whose-intention`, `notional.md#follow-up-endings-notional` |
-| seam host, under seam | a seam host's word can carry the holder seam; the seam word covers a family under seam wherever it sits, since under a holder that family is the holder's and the seam word stays yours. A channel or MAY that is not the seam word keeps its row | seam host: `stance`, `notional`; under seam: `sake` (feeling words included) | `holder.md#naming-a-holder`, `holder.md#what-the-holder-covers` |
+| seam host | a seam host's word can carry the holder seam; the seam word covers every family the holder owns (`holderOwned`: a body family other than `holder` that does not escape it) wherever it sits, since under a holder the rest of the clause is the holder's and the seam word stays yours. A channel or MAY that is not the seam word keeps its row | seam host: `stance`, `notional`; owned: every body family but `holder` and `attitude` | `holder.md#naming-a-holder`, `holder.md#what-the-holder-covers` |
 | text anchors | extra anchors a text-order row cites | `stance`: MAY right before a `/th/` frame, a channel against `binder` and `occasion`; `hinge`: the hinge last, and the `blarth` hinge first except against `binder`; `polarity`: a standalone join except against `binder`, a `/th/` word right before the join; `binder`, `intention`: against themselves | `already-still-yet.md#stage-of-change`, `usually-vs-must.md#general-claims`, `dependents.md#hinges`, `stand-in-vowels.md#stand-in-back`, `verb-and-stance-joins.md#standalone-stance-joins`, `verb-and-stance-joins.md#stance-join-reach`, `joins.md#everything-ua`, `intention.md#plan` |
 | member cases | one member's own order against one family, before text order | a channel commutes with `attitude` and `mirative`, and covers `hinge`, for one reason: it is not part of the claim, only what backs it; FORMER covers `occasion` | `evidentiality.md#evidence-clause`, `usually-vs-must.md#how-things-work`, `residue-and-former.md#former-climate` |
 | claims (member) | `false`: it claims nothing, so a carried frame skips the statement | `intention`: WANT, PLAN, DECISION (its content is not asserted); `force`: a greeting | `evidentiality.md#carry-forward`, `intention.md#plan` |
@@ -900,7 +909,7 @@ Each family that pairs has a profile in `src/parse/scope-profiles.ts`, and the [
 4. **Both escape each other** (`escape:each-other`): two remarks commute.
 5. **Escape** (`escape:force`, `escape:holder`): a remark covers the act word, and a family that escapes `holder` covers the holder.
 6. **Covers** (`covers:holder`, `seam:holder`): the holder covers the other; fixed by word shape where its seam sits on the other.
-7. **Seam word** (`seam-word`): the seam word covers a family under seam, a case that holds only for the frame the seam sits on.
+7. **Seam word** (`seam-word`): the seam word covers a family the holder owns, a case that holds only for the frame the seam sits on.
 8. **Member case** (`member:<id>`): a member's own case, then text order for the rest.
 9. **Text** (`text`): the earlier covers the later, citing `clause.md#which-covers-which` and the text anchors of both families.
 
@@ -924,6 +933,8 @@ Counts: fixed by a rule 126, unsettled 0, commutes 26, fixed by word shape 3. By
 Decided 2026-11-13, on the grammar pages since unit S1 of `ageben-interpreter.md`: where no other rule orders two frames that both reach the whole clause, the earlier in the text covers the later (`clause.md#which-covers-which`); an attitude word, MIRATIVE, and a sake word stay outside a question (`feelings.md#speaker-attitude`, `mirative.md#mirative`, `for-a-sake.md#whose-stake`). Standing exceptions keep their own rows: force first (`speech-moves.md#speech-act-statement-question-command`), a `blarl` hinge last (`dependents.md#hinges`; the hinge over a word is a `blarth` hinge put first, `stand-in-vowels.md#stand-in-back`), the holder over its clause (`holder.md#what-the-holder-covers`), and FORMER over a restrictor (`residue-and-former.md#former-climate`). Unit S2 has the parser's resolve stage emit the order.
 
 **The act word.** The act word covers every body frame that does not escape `force`, by tree nesting ([reader rule 2](#reader-rules)): it sits on the turn's left edge, outside the body (`speech-moves.md#speech-act-statement-question-command`). The code still derives these 12 `edge` rows, and the table below leaves them out. Where a family's page states the pair, its row cites that page: on a command *if* limits the instruction, and on a question it asks whether the conditional holds (`causation.md#if`); in a question a channel asks about the listener's grounds, and a bare WANT, PLAN or DECISION about the listener's mind (`want-and-decide.md#whose-intention`); speech moves stay yours under a holder (`holder.md#what-the-holder-covers`). The four remarks escape `force`, so their rows stay in the table.
+
+**The seam word.** The seam word covers every frame its holder owns, wherever either sits: under a holder the rest of the clause is the holder's, and the seam word stays yours ("So the seam word covers every other word the holder owns, whether that word comes before it or after it", `holder.md#what-the-holder-covers`). Decided 2026-11-25 (user, D20 of `scope-model.md`), widening the sake-only rule of D16. So every row of `stance` or `notional` against a family the holder owns (a body family other than `holder` that does not escape it: everything but `attitude`) starts with a seam case, which holds only for the frame the seam sits on, and the table below leaves it out except on the `sake` rows. A channel or MAY that is not the seam word keeps the row's other cases. Samples: `zazozon vowurol thul thevumazozon.` (the seam word over `thul`); `zawan vebal hal thevumayan.` (over *never*: the remembered history covers the whole claim, not each case, `usually-vs-must.md#general-claims`); `zalazun themem theyomazozon vudurul.` (over Azozon's surprise, where a channel that is not the seam word commutes with MIRATIVE).
 
 | Pair | Kind | Anchor | Note |
 |------|------|--------|------|

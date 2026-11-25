@@ -104,6 +104,7 @@ Before doing one of these tasks, read its file in full, alone, with the Read too
 | English → Ageben suggestions, or changing and scoring the English helper | `english-helper.md` |
 | Add, retitle, or respell a root or compound, move an overlay, edit `core`, number pegs | `lexicon.md`; when anything is respelled, also `retie.md` |
 | Measure, peel, or move sittings and H3s | `restructure-sittings.md` |
+| Add a cheat sheet, or change a sheet's tables or page breaks | `cheat-sheets.md` |
 | Write or top up a checkpoint or level review, edit the drill allowlist | `drill-generation.md` |
 | Write down an idea: a loose spec nobody has planned yet | `ideas.md` |
 | Turn an idea into a plan: what a proposal holds, when it is ready, phases and units, the plan section | `proposal-plans.md` |

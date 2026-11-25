@@ -127,7 +127,7 @@ The agent files under `.claude/agents/` (`proposal-worker`, `checkpoint-writer`,
 2. **The item goes in a brief file.** The orchestrator writes each subagent's brief to its own file in the session's scratchpad directory (`tmp/scratch/briefs/` when the session has none), and the prompt only names it: *Read your brief at `<path>` and follow it.* Every prompt the orchestrator sends stays in its context for the rest of the phase, while the subagent reads the file once, at its cold start. Build each brief by a script from parts kept in files (the digest, a running list such as glossed labels), and never print a finished brief back into the orchestrator's context. The brief carries everything the subagent needs to start:
    - the item's own finding text, copied from the proposal
    - the gate run or open decision that settles it, if any
-   - the files it may edit (or *none*), and how to check its work when that is not the phase's `verify` gate
+   - the files it may edit (or *none*), and how to check its work when that is not the phase's `verify` gate. For a code unit whose plan names the field or type its change reads ([the plan section](proposal-plans.md#the-plan-section)), the orchestrator repeats the plan's grep before writing the brief when earlier phases have edited those files, and adds the files that now carry the value
    - the procedure file its task names in `AGENTS.md`'s *Procedures* table, for it to read first
    - the proposal's rule digest (at most about 40 lines), with its report format
    - notes on what earlier units built, which also list the library helpers each used (a walker, a parse entry point, a constant), so the next subagent calls them instead of searching `src/` for them

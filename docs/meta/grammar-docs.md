@@ -567,7 +567,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one lookup page per l
 - **Stage tags:** **B** / **I** / **A** per row, or per section when the whole section is one stage: the stage of the section the row links to.
 - **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks. An italic **English** cell beside an Ageben phrase or sentence is its free English, as on grammar pages ([grammar-table gloss](glosses.md#grammar-table-gloss-free-english-only)).
 
-**Print breaks.** `npm run lint:cheat-sheet-print` (not part of `npm run build` or `npm test`; on the Claritish sheet, a page that renders with no content usually means the journal editor's flow data no longer resolves against the sheet, shown by `npm test -- src/claritish-editor/data.test.ts`) prints Chromium's PDF with that `@page` box and fails when a PDF page is not a `<PageBreak />` slice, when a table's first and last row land on different pages, or when a table is taller than one page's content box. Default is every grammar sheet plus Claritish; `--only ID` one sheet (sidebar slug, or `claritish`); `--calibrate` writes PDFs under `tmp/out/cheat-sheet-print/` (do not commit them). Needs Playwright Chromium once (`npx playwright install chromium`). Run it when changing a sheet's layout, the print CSS, or `<PageBreak />`. Fix a failure by rearranging, not by shrinking type or adding a CSS `break-before`.
+**Print breaks.** `npm run lint:cheat-sheet-print` checks that the PDF matches the `<PageBreak />` slices and that no table splits or overflows a page; how and when to run it is in the [cheat-sheet procedure](procedures/cheat-sheets.md#print-breaks).
 
 **Keeping sheets in step.** `npm run build` runs two checks:
 
@@ -576,7 +576,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one lookup page per l
 
 **Opting an owning table in.** Put `<!-- cheat-sheet: ID -->` on the line right before a table on a grammar page, where ID is the sheet's key in the lint's `SHEETS` map. Every form in that table, outside a **Cue** column, must then be on the sheet; cue letters are memory aids, so put them in backticks like any letter. Mark tables that list a subsystem's forms in backticks; leave example-only tables unmarked. A change to a marked table updates its sheet in the same change.
 
-**Adding a sheet:** create it in `cheat-sheets/`, register it in `SHEETS`, add a row to `cheatSheetSidebar` in [`reading-order.ts`](../grammar/.vitepress/lib/reading-order.ts) (the VitePress config imports it), and mark its owning tables. Place `<PageBreak />` so Chromium's PDF matches the file, then run `npm run lint:cheat-sheet-print -- --only ID`.
+**Adding or changing a sheet:** the steps are in the [cheat-sheet procedure](procedures/cheat-sheets.md).
 
 ## What belongs where
 <a id="what-belongs-where"></a>

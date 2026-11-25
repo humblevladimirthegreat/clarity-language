@@ -205,7 +205,9 @@ function orderPair(a: ScopeFrame, b: ScopeFrame, scope: ClauseScope): void {
   }
   const kind: PairKind = row.kind === "wordShape" ? "wordShape" : "rule";
   if (found.order === "over") {
-    const [top, bottom] = a.family === found.over ? [a, b] : [b, a];
+    // A seam case covers from the seam word, which may share its family with the other frame (two stance words).
+    const onTop = (f: ScopeFrame) => f.family === found.over && (!found.seam || f.holderHost === true);
+    const [top, bottom] = onTop(a) ? [a, b] : [b, a];
     scope.order.push({ over: top, under: bottom, kind, anchors: found.anchors });
     return;
   }

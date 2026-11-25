@@ -1229,6 +1229,35 @@ describe("reader: links that point back past a period", () => {
     assert.equal(resume.to, undefined);
   });
 
+  // A goodbye is a greeting from a name that already greeted (word-endings.md#greeting), so each text opens with one.
+  it("interpreter.md#discourse-slots: nothing after a goodbye reads what came before it", () => {
+    const [, , , back] = readText("alazuxan. zazozon vowurol. alazuxan. zawan vebal darth.", tables);
+    assert.equal(linkOf(back!, "standInBack")?.to, undefined);
+    const [, , , resume] = readText("alazuxan. zazozon danal aol babewol varuyol. alazuxan. zalazun varuyol aor.", tables);
+    assert.equal(linkOf(resume!, "hookResume")?.to, undefined);
+    const [, , , after] = readText("alazuxan. zazozon vowurol. alazuxan. el zalazun vezuvel.", tables);
+    assert.equal(linkOf(after!, "discourse")?.to, undefined);
+    const [, , , answer] = readText("alazuxan. yel zar vowurol. alazuxan. azozon.", tables);
+    assert.equal(linkOf(answer!, "answer"), undefined);
+  });
+
+  it("interpreter.md#discourse-slots: the goodbye sentence itself still reads all four, so you can answer as you leave", () => {
+    const [, said, back] = readText("alazuxan. zazozon vowurol. alazuxan zawan vebal darth.", tables);
+    assert.equal(linkOf(back!, "standInBack")?.to, said!.id);
+    const [, named, resume] = readText("alazuxan. zazozon danal aol babewol varuyol. alazuxan zalazun varuyol aor.", tables);
+    assert.equal(linkOf(resume!, "hookResume")?.to, named!.id);
+    const [, asked, yes] = readText("alazuxan. yel zazozon develal. yaol alazuxan.", tables);
+    assert.equal(linkOf(yes!, "polar")?.to, asked!.id);
+  });
+
+  it("stand-in-vowels.md#stand-in-back: a greeting claims nothing, so `darth` skips a hello, but not a name that answers", () => {
+    const [said, , back] = readText("zazozon vowurol. alahelan. zawan vebal darth.", tables);
+    assert.equal(linkOf(back!, "standInBack")?.to, said!.id);
+    const [, , answer, that] = readText("alazuxan. yel zar vowurol. azozon. zawan vebal darth.", tables);
+    assert.ok(linkOf(answer!, "answer"));
+    assert.equal(linkOf(that!, "standInBack")?.to, answer!.id);
+  });
+
   it("hooks.md#discourse-hooks: `el` / `em` / `ul` / `um` on the left edge point to the claim before", () => {
     for (const hook of ["el", "em", "ul", "um"]) {
       const [first, second] = readText(`zalazun veruvol. ${hook} zalazun vezuvel.`, tables);

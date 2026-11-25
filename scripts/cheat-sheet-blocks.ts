@@ -39,7 +39,7 @@ import { pageSections, type Band, type PageSections } from "../src/lint/learning
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { BOUNDARIES, BOUNDARY_COLUMNS, type BoundaryCell, type BoundaryColumn, type NestedKind } from "../src/parse/boundaries.js";
 import { DISCOURSE_SLOTS, END_EVENTS, type EndCell, type EndEvent, type SlotId } from "../src/parse/discourse-slots.js";
-import { PROFILES, TEXT_ORDER, type FamilyProfile, type MemberProfile } from "../src/parse/scope-profiles.js";
+import { HOLDER, PROFILES, TEXT_ORDER, type FamilyProfile, type MemberProfile } from "../src/parse/scope-profiles.js";
 import type { FrameFamily } from "../src/parse/scope.js";
 import { pageRelPath } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import { grammarFile, readData, REPO_ROOT } from "../src/repo-paths.js";
@@ -250,7 +250,6 @@ function familyRules(p: FamilyProfile): RuleRow[] {
   if (p.remark) rows.push({ word, rule: "A remark: stays yours and outside what is asked", anchors: [p.remark] });
   if (p.escapes?.holder) rows.push({ word, rule: "Stays yours under a holder", anchors: [p.escapes.holder] });
   if (p.holderSeam) rows.push({ word, rule: "A holder named on the word covers it, by the word's shape", anchors: [p.holderSeam] });
-  if (p.underSeam) rows.push({ word, rule: "Under a holder it is the holder's, and the seam word covers it, before or after", anchors: [p.underSeam] });
   return [...rows, ...(p.members ?? []).flatMap(memberRules)];
 }
 
@@ -259,6 +258,7 @@ function profileRows(params: Params): string {
   const rows: RuleRow[] = [
     { word: cap(textOrder.join("; ")), rule: "The earlier covers the later", anchors: [TEXT_ORDER] },
     ...PROFILES.flatMap(familyRules),
+    { word: "The seam word of a holder", rule: "Covers every other word the holder owns, before or after it", anchors: [HOLDER] },
   ];
   return table(
     ["Word", "Rule", "Taught in", "Stage"],
@@ -321,6 +321,7 @@ const EVENT_NAMES: Record<EndEvent, string> = {
   newValue: "a new one",
   statementWord: "a written statement word",
   byTheWay: "*by the way*",
+  next: "*next*",
   goodbye: "a goodbye",
 };
 

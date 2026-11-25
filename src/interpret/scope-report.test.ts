@@ -36,6 +36,20 @@ describe("scope report", () => {
     assert.equal(dependent.nested, "dependent");
   });
 
+  it("records the members of a dependent's clause join", () => {
+    const text = "zazozon vayebel derl zalazun vowurol xel zahelan veruvol.";
+    const ats = (scopeReport([example(text)])[`fixture.md: ${text}`]?.readings ?? []).map((r) => r.at);
+    assert.deepEqual(ats, ["s0", "s0/d", "s0/d/m0", "s0/d/m1"]);
+  });
+
+  it("marks the seam word, so the pair rules count it as the seam word", () => {
+    const text = "zazozon vezuyol thawethom theyomazozon.";
+    const one = scopeReport([example(text)]);
+    const [r] = one[`fixture.md: ${text}`]?.readings ?? [];
+    assert.ok(r?.families.includes("stance/channel@seam"), r?.families.join(" ") ?? "no reading");
+    assert.ok(countReport(one)["pair rules"]?.["seam-word"], Object.keys(countReport(one)["pair rules"] ?? {}).join(", "));
+  });
+
   it("counts examples per key with a sample text, and writes a full report", () => {
     const counts = countReport(report);
     assert.deepEqual(counts["order"]?.["force > force rule"], { examples: 1, sample: ORDER });
