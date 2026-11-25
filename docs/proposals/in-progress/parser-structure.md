@@ -1,34 +1,22 @@
 # Parser structure: context passes, slot rules, tree building, and what they say about the grammar
 
-**Status:** IN PROGRESS, 2026-11-25. Phases 1 and 2 done (`a2ea44e7` to `835d90ec`; `8710f3b3` to `7e596408`). Phase 3 is next. No decision is open.
+**Status:** IN PROGRESS, 2026-11-25. Phases 1 to 3 done (`a2ea44e7` to `835d90ec`; `8710f3b3` to `7e596408`; `980abfee` to `785ed838`). Phase 4 is next. No decision is open.
 
 Where the results live:
 - **Why the passes stay:** [parser-pipeline.md § why the remaining passes stay](../../meta/parser-pipeline.md#why-passes-stay).
-- **Reshaping that stays:** [§ reshaping that stays](../../meta/parser-pipeline.md#reshaping-stays).
-- **The slot table:** `data/word-slots.csv`, [§ word slots](../../meta/parser-pipeline.md#word-slots).
+- **Reshaping that stays:** [§ reshaping that stays](../../meta/parser-pipeline.md#reshaping-stays) (D12, D13). `HSharedV` is gone (D14, S3): the plain SHARED `/h/` after a verb list fills the join's `shared` through `joinAdverb` in `verb-items.ts`, and `construction-trace.ts` (`joinAdverbUnits`) traces it under its old ids.
+- **The slot table:** `data/word-slots.csv`, [§ word slots](../../meta/parser-pipeline.md#word-slots). Every closed cell has its entry in [unassigned-reserved.md](../../meta/unassigned-reserved.md) (D8, D9, D11). `-ln` is open on `/x/` (topic) and `/y/` (call), taught in `proper-names.md#name-instance--ln` (D10).
 - **The listener's list strategy:** [joins.md § right-close](../../grammar/beginner/joins.md#right-close), plus the bar sentence in [bars.md § bars](../../grammar/intermediate/bars.md#bars).
 - **Left fences:** in [design-decisions.md](../../meta/design-decisions.md).
 
-Decided:
-- 2026-11-24 (user): one shared grade for the stance endings, in phase 4.
-- 2026-11-25 (user): `data/word-slots.csv` reaches `enforce` as CSV text, a required fourth argument to `createClassifyTables`.
-- 2026-11-25 (agent, autonomous, U9's audit):
-  - D12 (high): keep the seven post-parse rules that wait on a later word.
-  - D13 (high): keep `splitUnits` (noun case) and `joinClauseItems` in code.
-  - D14 (medium): drop `HSharedV` and keep the tree (S3).
-- 2026-11-25 (user), stance endings (phase 4):
+Decided, for phase 4:
+- 2026-11-24 (user): one shared grade for the stance endings.
+- 2026-11-25 (user), stance endings:
   - D3: keep the name *settled-to-passing*; the field values are `settled` / `default` / `passing`, and every kind keeps its own gloss.
   - D4: teach the scale on `knowing.md#follow-up-endings-may`.
   - D5: DECISION `-m` keeps its meaning *modifiable*, a claim that the decision can still change. `ogem` gets no grade; `ogel` / `oger` are graded.
   - D6: PLAN is graded (`agol` settled, `agom` default, `agor` passing).
   - D7: MAY and NOTIONAL are graded (`omal` / `eyul` settled, `-m` default, `-r` passing).
-- 2026-11-25 (user), slots (phase 3):
-  - D8: the 49 open cells stay open; add the missing `Parser: prescriptionSlot` (S1).
-  - D9: open entries with ids and no-reading reasons for the cells with none (S1).
-  - D10: option (c), per the editor's note: open `-ln` on both `/x/` (a topic) and `/y/` (a call) (S2).
-  - D11: restate the `/v/` hook-prefix reason as *no reading yet*; the cell stays open (S1).
-
-Both D12 and D13 are recorded in [§ reshaping that stays](../../meta/parser-pipeline.md#reshaping-stays).
 
 **Related:**
 - [parser-pipeline.md](../../meta/parser-pipeline.md), [unassigned-reserved.md](../../meta/unassigned-reserved.md), [design-decisions.md](../../meta/design-decisions.md), [interpreter.md § classification table](../../meta/interpreter.md#classification-table).
@@ -37,78 +25,29 @@ Both D12 and D13 are recorded in [§ reshaping that stays](../../meta/parser-pip
 
 **Depends on:** none. Phase 4's prose unit edits `knowing.md`, `sakes.md` and the stance pages. If `grammar-newcomer-rewrite.md` is rewriting any of them when phase 4 starts, land phase 4 first or rebase its edits onto the rewrite.
 
-**Design authority:**
-- Phase 3 changes only the forms and readings D8 to D11 settled; S3 changes no parse.
-- Phase 4 changes only the stance-ending readings D3 to D7 settled. No gloss changes.
+**Design authority:** phase 4 changes only the stance-ending readings D3 to D7 settled. No gloss changes.
 
 ## Implementation plan
 
-Two phases remain, run through subagents. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates the proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
+One phase remains, run through subagents. At its end, and if the user says to stop partway, the orchestrator [consolidates the proposal](../../meta/procedures/proposals.md#consolidate) before the session ends.
 
 **Gates.**
-- At the start of each phase, the orchestrator does four things:
+- At the start of the phase, the orchestrator does four things:
   - saves `npm run verify -- --baseline` and `npm run context-report -- --save`
   - saves the construction counts with `node scripts/find.mjs --constructions --all > tmp/state/parser-structure-constructions.txt`
   - notes the phase-start commit
   - writes the rule digest below, with that sha, to the scratchpad
 - Each unit ends with `npm run verify -- --allow-generate` and passes before its commit.
-- **A parse-neutral unit** (S3 and P1) also shows three things:
+- **A parse-neutral unit** (P1) also shows three things:
   - 0 differences in `npm run parse-snapshot -- --ref <phase-start sha> --drop-one --swap`
   - a passing `npm run grammar-check`
   - an unchanged construction-count file
-- **A unit that changes what the parser accepts** (S2): `parse-snapshot` lists only the forms its decision names.
-- **The final gate** is a full `npm run verify` against an empty baseline at the end of phase 4, or of phase 3 when phase 4 is dropped.
+- **The final gate** is a full `npm run verify` against an empty baseline at the end of phase 4.
 - No unit edits `say-*.md`, `english.md` or `src/english-helper/`, so there is no recall gate.
 
 **Style.** Writers of grammar prose self-check against the [checklist](../../meta/doc-style.md#checklist).
 - **While `grammar-newcomer-rewrite.md` is unfinished:** no `style-editor` unit runs unless a unit creates a new page.
 - **Once it is done:** the last phase that edits grammar prose ends with a `style-editor` unit over `npm run changed-sections -- 13d7b221`. It runs only if the run's grammar edits add a section or come to more than a few sentences on a page.
-
-### Phase 3: slot and tree decisions
-
-The units run one at a time (each runs `verify`), in the order S3, S1, S2.
-
-**S3. Drop `HSharedV` (D14).**
-Agent `proposal-worker`, `model: opus`, effort `high`. Parse-neutral.
-- Today `mark-context.ts` retypes an `/h/` right after a `/v/` join to `HSharedV`, and `hSharedUnitRule` puts it in the join's `shared`.
-- U8 dropped the retype (in `mark-context`, the adverb slot in `vJoinCloseRule`, the `vpCoordOpen` chain entry and the `EndOpen` branch of `vpParts`). The LR(1) check passed: 0 conflicts, one tree per sentence. But one tree changed: in `zazozon vowurol veruvol val hahunom.` the `/h/` went to `sharedAfter` in `verb-items.ts`, which takes plain adverbs into the last part's `sharedUnits`.
-- This unit drops the retype and has the plain SHARED `/h/` after a verb list fill the join's `shared` field, so the tree stays the same. The hosting checks in `hostedType` that name `HSharedV` already accept `H`. Check that a `bl-` word after the `/h/` is still hosted.
-- Drop `HSharedV` from `tokens.ts`, from `SETTLES` in `context-report.ts`, and from the `hosted` row in parser-pipeline.md. Replace that page's `HSharedV` paragraph with a line saying how the plain SHARED phrase fills `shared`.
-- If 0 differences can't be had, revert and report why. D14 then becomes *keep*, and the paragraph stays.
-
-**May edit:** `src/parse/tokens.ts`, `src/parse/mark-context.ts`, `src/parse/grammar/*.ts`, `src/parse/verb-items.ts`, `src/parse/sentence-build.ts`, `src/parse/enforce*.ts`, `src/parse/context-report.ts`, tests under `src/parse/` (token names only), `docs/meta/parser-pipeline.md`.
-
-**S1. Slot cells in unassigned-reserved.md (D8, D9, D11).**
-Agent `proposal-worker`, `model: opus`, effort `medium`. Docs only; no parse change.
-- Every cell that `data/word-slots.csv` closes gets an entry in `unassigned-reserved.md` with its rejection id. The ten letters are `z d b v g w h th x y`. Six cells keep a stated cost and are not touched: tag pronoun and role pointer on `/x/` `/y/` (D-24), role pointer on `/h/` (*Role pointers* entry), plural `-x` on `/th/` (D-37).
-  - D8: the 49 cells with an open *no reading yet* entry stay as they are. Add the missing `Parser: prescriptionSlot` to the prescription entry.
-  - D9: add open entries, with ids and no-reading reasons, for the 15 cells that have none:
-    - label reach on `/w/ /th/ /x/ /y/` (`labelReachSlot`, `wowurothul`): label reach labels a content word, and these slots hold a degree, a stance, a topic or a call (on a sake root, the `th` spot is the sake's own stance)
-    - `-ln` on `/ɡ/ /v/ /h/ /w/ /th/` (`nameInstanceSlot`, `gazozoln`): `-ln` names one thing that fills a role. `/x/` and `/y/` are left out, since S2 opens them
-    - ability on `/w/ /th/ /x/ /y/` (`abilitySlot`, `wowuroxal`): ability belongs to an act or a quality. Extend the existing entry, which names only nouns, names, pronouns and `/h/`
-    - an aside under `/x/` (`spanSlot`): an aside comments and sets no topic
-    - a role pointer on `/th/` (`pointerSlot`, `thwuzer`): a pointer picks a participant. The `thwuzer` message may also say so; today it speaks only of the holder seam
-  - D11: restate the `/v/` hook-prefix reason as *no reading yet*, in `design-decisions.md` *Hook prefixes* and in its `unassigned-reserved.md` entry. A hook prefix names a stance toward its stem, and a verb would have to say which act carries that stance (opposing, campaigning, refusing), which the hook does not tell. The cell stays open.
-- Commit each decision's edits together; these are user decisions.
-
-**May edit:** `docs/meta/unassigned-reserved.md`, `docs/meta/design-decisions.md`.
-
-**S2. `-ln` as a topic and a call (D10).**
-Agent `proposal-worker`, `model: opus`, effort `high`.
-- Today a topic word takes a content noun on `-l` (`xodozel zalazun vowurol.` *as for a dog, …*), and `-ln` is taught as `-l` under a name, but `-ln` is closed on `/x/` and `/y/` with no reason given.
-- Open `-ln` on `/x/`: one thing the name applies to, set as the topic, read and resumed like any `-l` topic (`xazozoln …` *as for an iPhone, …*).
-- Open `-ln` on `/y/`: a [call](../../grammar/beginner/speech-moves.md#vocative) to one bearer of the name, as `/y/` + name calls the named one (*hey, someone named Azozon!*). The unit checks the reading against `speech-moves.md#vocative`, and against how `/y/` + `-l` reads as an interjection, so the two don't clash.
-- Change the slot table, the grammar and the parser together:
-  - the `nameInstanceSlot` row and its rejection text
-  - `proper-names.md#name-instance--ln`: the slot list gains `/x/` and `/y/`, with an example each; `topic.md` and `speech-moves.md#vocative` a sentence each where they list what may fill the slot
-  - interpreter rows for the topic and the call in the [classification table](../../meta/interpreter.md#classification-table)
-  - `unassigned-reserved.md`: no entry for the two cells, which now have readings
-- Fix any Practice item whose answer changes, found with `node scripts/find.mjs`, per [drill-generation.md](../../meta/procedures/drill-generation.md).
-- `parse-snapshot` lists only `-ln` topic and call forms. None of the 23 existing `-ln` examples changes.
-
-**May edit:** `data/word-slots.csv`, `src/parse/`, `docs/grammar/*/topic.md`, `docs/grammar/*/proper-names.md`, `docs/grammar/*/speech-moves.md`, `docs/meta/unassigned-reserved.md`, `docs/meta/interpreter.md`, Practice under those pages.
-
-**Phase 3 close.** Consolidate. Expected commits: one per S-unit, plus one consolidation commit.
 
 ### Phase 4: stance grade
 
@@ -193,7 +132,7 @@ Each commit message starts with `parser-structure.md` and the unit ID, then `[sk
 
 ## Open decisions
 
-None. The user settled D3 to D11 on 2026-11-25; see Status.
+None. The user settled D3 to D7 on 2026-11-25; see Status.
 
 ## Background
 
