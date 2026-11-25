@@ -56,9 +56,11 @@ function pronoun(word: LexWord, here: Here): Term {
   const outer = here.ctx.options.outerTerm;
   const antecedent = at ? (here.ctx.terms.get(at) ?? here.ctx.lists.get(at) ?? (outer ? outerAntecedent(outer(at), at) : thing(at))) : undefined;
   const sort = isTopicPronoun(word) ? "topic" : isGenericPronoun(word) ? "generic" : undefined;
-  // A bound pronoun's ending and pinned sense say which one it names (pronouns.md#a-new-one, resume-sense.md).
+  // A bound pronoun's ending and pinned sense say which one it names (pronouns.md#a-new-one, resume-sense.md); a role
+  // pointer's part and pointer vowel say which earlier part it names, and how far back (pronouns.md#role-pointers).
+  const pointer: Record<string, string> = bind?.kind === "pointer" && bind.part && bind.pointerVowel ? { part: bind.part, pointer: bind.pointerVowel } : {};
   const values: Record<string, string> | undefined =
-    bind && word.ending ? { ending: word.ending, ...(word.resumeSense ? { sense: word.resumeSense } : {}) } : undefined;
+    bind && word.ending ? { ending: word.ending, ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer } : undefined;
   const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}), ...(values ? { values } : {}) };
   here.ctx.terms.set(word, term);
   return term;

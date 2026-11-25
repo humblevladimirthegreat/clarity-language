@@ -1,5 +1,5 @@
 {
-  "ok": 140,
+  "ok": 145,
   "keys": {
     "anaphor:content": 19,
     "anaphor:landmark": 1,
@@ -62,7 +62,7 @@
     "overlay:mirative:th": 6,
     "overlay:notional:th": 8,
     "overlay:of_relation:h": 4,
-    "overlay:pairing:w": 5,
+    "overlay:pairing:w": 3,
     "overlay:phasal:h": 10,
     "overlay:phasal:th": 4,
     "overlay:plan:th": 17,
@@ -72,7 +72,7 @@
     "reading:greeting": 10,
     "reading:verbSharedNoun": 2,
     "shared:collective": 1,
-    "shared:distribute": 13,
+    "shared:distribute": 10,
     "shared:equative": 12,
     "shared:kind": 36,
     "shared:scale": 62,

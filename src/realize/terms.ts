@@ -10,7 +10,7 @@ import type { MeaningDetail, MeaningTerm } from "./meaning.js";
 import { numberDetailLeaf, numberTermLeaf, resumedNumberLabel } from "./numbers.js";
 import { leaf, rootOf, type Ending } from "./words.js";
 import type { GapKind } from "./realize.js";
-import { listGloss, type ListStyle } from "./lists.js";
+import { listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
 
 /** Lists written with a join that has no items as the standalone join (joins.md#standalone-phrase). */
 const STANDALONE: ListStyle = { standalone: true };
@@ -96,12 +96,25 @@ function adjectives(details: readonly MeaningDetail[] | undefined, tables: Class
   });
 }
 
+/**
+ * A list's writers (lists.ts): its members by `member`; a SHARED word on its own letter, an `/h/` adverb or a `/ɡ/`
+ * word (list-structure.md#shared-after-the-join); a hooked join's landmark as a `b` term on `bl-`, the letter of a
+ * word that completes the one before it (hooked-joins.md#hooked-joins).
+ */
+function listWriters(member: MemberWriter, tables: ClassifyTables, style: ListStyle): ListWriters {
+  return {
+    member,
+    shared: (detail) => plainWord(detail, detail.key === "unit:h" ? "h" : "g", detail.values.root, tables),
+    landmark: (term) => roleTerm(term, "b", undefined, tables, style).replace(/^(\[?)b-/, "$1bl-"),
+  };
+}
+
 /** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit. */
 export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   if (term.kind !== "list" && "frames" in term && term.frames?.length) throw noRule(`a ${term.kind} term with its own frame`);
   switch (term.kind) {
     case "list":
-      return listGloss(term, pos, ending, (m, own) => roleTerm(m, pos, own, tables, style), (d) => plainWord(d, "g", d.values.root, tables), style);
+      return listGloss(term, pos, ending, listWriters((m, own) => roleTerm(m, pos, own, tables, style), tables, style), style);
     case "thing":
       return unit([thingLeaf(term, pos, ending, tables), ...adjectives(term.details, tables)]);
     case "speaker":
@@ -128,6 +141,18 @@ function referent(term: MeaningTerm): Resumable | undefined {
   return plain && term.antecedent ? referent(term.antecedent) : undefined;
 }
 
+/** A role pointer's part consonant and pointer vowel, as the glosser labels them (pronouns.md#role-pointers). */
+const POINTER_PART: Record<string, string> = { z: "agent", d: "patient", b: "recipient" };
+const POINTER_VOWEL: Record<string, string> = { e: "same", a: "other", o: "self", u: "unsaid" };
+
+/** A role pointer on **-r** (`zwuzer`, *the latest doer*): this episode's part, how far back, as the reader records them. */
+function pointerLeaf(values: Record<string, string>, pos: string): string {
+  const part = POINTER_PART[values.part ?? ""];
+  const reach = POINTER_VOWEL[values.pointer ?? ""];
+  if (!part || !reach) throw new Unrealized("missingValue", "a role pointer with no part or pointer vowel in the view");
+  return `${pos}-←episode-${part}.${reach}`;
+}
+
 /**
  * A pronoun's head word under `pos`: the generic (pronouns.md#generic-pronoun) and the topic pronoun
  * (topic.md#topic-pronoun) by their roots on **-n**; a bound `-r` pronoun, resume or role pointer, as the resume of
@@ -151,6 +176,8 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
   // after the number it resumes, so it spells only in a line that holds that number.
   if (term.antecedent.kind === "number") return `${pos}-←${resumedNumberLabel(term.antecedent)}`;
   const thing = referent(term.antecedent);
+  // A list has no resume (joins.md#and-lists-a): "A role pointer back to that role picks up the whole group."
+  if (!thing && term.antecedent.kind === "list" && term.bind === "pointer") return pointerLeaf(values, pos);
   if (!thing) throw noRule(`a resume of a ${term.antecedent.kind} term`);
   // A resume glosses as `←` and the label of the word it resumes (glosses.md#round-trip).
   const named =
@@ -159,9 +186,9 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
 }
 
 /** The verb: a thing on `/v/`, named or on **-l**, with no frame or detail of its own. */
-export function verbTerm(term: MeaningTerm, tables: ClassifyTables): string {
+export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   // A verb list (joins.md#and-lists-a): each verb, then the `/v/` join.
-  if (term.kind === "list") return listGloss(term, "v", undefined, (m) => verbTerm(m, tables), (d) => plainWord(d, "g", d.values.root, tables), STANDALONE);
+  if (term.kind === "list") return listGloss(term, "v", undefined, listWriters((m) => verbTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind !== "thing") throw noRule(`a ${term.kind} verb`);
   if (term.frames?.length || term.details.length) throw noRule("a verb with its own frame or detail");
   return thingLeaf(term, "v", "l", tables);
@@ -171,9 +198,9 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables): string {
  * A predicate adjective (predication.md#classification-property): a thing whose one detail is the `/ɡ/` word itself,
  * which holds its ending and degree words.
  */
-export function predicateTerm(term: MeaningTerm, tables: ClassifyTables): string {
+export function predicateTerm(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   // A predicate list (joins.md#negation-u: `gamahum gul`): each predicate word, then the `/ɡ/` join.
-  if (term.kind === "list") return listGloss(term, "g", undefined, (m) => predicateTerm(m, tables), (d) => plainWord(d, "g", d.values.root, tables), STANDALONE);
+  if (term.kind === "list") return listGloss(term, "g", undefined, listWriters((m) => predicateTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind !== "thing" || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
   const [self, ...rest] = term.details;
   // A number predicate (numbers.md#counts: *there are three cats*): the number word is its own detail.

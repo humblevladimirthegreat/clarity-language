@@ -59,13 +59,36 @@ function ranks(view: MeaningReading, framed: Map<number, Role>): Map<Role, numbe
   return new Map([...framed].map(([index, role]) => [role, over.get(index)?.size ?? 0]));
 }
 
+/**
+ * The lists that take *respectively* (list-structure.md#respectively): for each pairing link, the one `a` list of the
+ * claim other than its partner. The link names only the partner, so a claim with more candidates is a `missingValue`.
+ */
+function respectivelyLists(view: MeaningReading): Set<MeaningTerm> {
+  const out = new Set<MeaningTerm>();
+  const claim = view.claim;
+  const lists = [...ROLES.map((r) => claim.roles[r]), claim.verb, ...claim.predicate].filter((t): t is MeaningTerm => t?.kind === "list");
+  for (const link of view.links) {
+    if (link.kind !== "pairing") continue;
+    const partners = link.partners ?? [];
+    const candidates = lists.filter((t) => !partners.includes(t) && t.kind === "list" && t.values.series === "a");
+    if (partners.length !== 1 || !lists.includes(partners[0]!) || candidates.length !== 1) {
+      throw new Unrealized("missingValue", "a respectively link that does not name which list it closes");
+    }
+    out.add(candidates[0]!);
+  }
+  return out;
+}
+
 /** The bare clause's morph gloss, or throws {@link Unrealized}. */
 export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: ListStyle = { standalone: true }): string {
   if (view.stanceLists?.length) throw noRule("a stance list");
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
   // A shared link is the list's shared word (list-structure.md#shared-after-the-join); writing the word makes it again.
-  const links = view.links.filter((link) => link.kind !== "anaphor" && link.kind !== "shared");
+  // A pairing link is the *respectively* word its list's join writes (list-structure.md#respectively).
+  const links = view.links.filter((link) => link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing");
   if (links.length) throw noRule(`a ${links[0]!.kind} link`);
+  const respectively = respectivelyLists(view);
+  if (respectively.size) style = { ...style, respectively };
   const claim = view.claim;
   if (claim.clauses) throw noRule("clause-join members");
   const endings = new Map<Role, Ending>();
@@ -93,8 +116,8 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const before = placed.filter((_, i) => roles[i] !== "b").map(piece);
   const after = placed.filter((_, i) => roles[i] === "b").map(piece);
   const adverbs = claim.details.map((detail) => adverb(detail, tables));
-  const verb = claim.verb ? [verbTerm(claim.verb, tables)] : [];
-  const predicate = claim.predicate.map((term) => predicateTerm(term, tables));
+  const verb = claim.verb ? [verbTerm(claim.verb, tables, style)] : [];
+  const predicate = claim.predicate.map((term) => predicateTerm(term, tables, style));
   // Adverbs right before the verb or predicate (clause.md#adverbs-h places them anywhere).
   const pieces = [...before, ...adverbs, ...verb, ...predicate, ...after];
   if (!pieces.length) throw noRule("an empty claim");

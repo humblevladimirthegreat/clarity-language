@@ -111,6 +111,26 @@ describe("round trip", () => {
     assert.ok(gap && "gap" in gap && gap.gap.kind === "missingValue", JSON.stringify(gap));
   });
 
+  it("realizes a hooked join's bound, a SHARED word for each member, and respectively before the later join", () => {
+    const cases: [string, string][] = [
+      ["zemxual bluwen vezuvel.", "zemxual bluwen vezuvel."],
+      ["zumxual blayan vezuvel.", "zumxual blayan vezuvel."],
+      ["zalazun zexal blazozon vowurol.", "zalazun zexal blazozon vowurol."],
+      ["zazozon zalazun zal gamahum.", "zazozon zalazun zal gamahum."],
+      ["zazozon vowurol veruvol val hahunom.", "zazozon vowurol veruvol val hahunom."],
+      ["zazozon zalazun zal gelazem gamezem wubam gal.", "zazozon zalazun zal gelazem gamezem wubam gal."],
+      ["zazozon zalazun zal vowurol veruvol wubam val.", "zazozon zalazun zal vowurol veruvol wubam val."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+    // A built word has no plain root in the view (logged for the reader-gap unit).
+    const [built] = project(readTurn("zual gwuzowurol vozuyel.", tables), tables).map((view) => realize(view, tables));
+    assert.ok(built && "gap" in built && built.gap.kind === "missingValue", JSON.stringify(built));
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));
