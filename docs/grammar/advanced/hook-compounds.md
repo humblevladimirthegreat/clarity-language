@@ -5,7 +5,7 @@ band: advanced
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
 - #hook-compounds: 1 construction home, 1 interpreter row, 1 interpreter class
-- #hook-prefixes: 1 construction home, 1 rejection, 1 interpreter row, 1 interpreter class
+- #hook-prefixes: 1 construction home, 1 rejection, 1 slot rule, 1 interpreter row, 1 interpreter class
 Inbound links: npm run page-refs -- hook-compounds.md
 -->
 

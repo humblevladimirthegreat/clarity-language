@@ -6,7 +6,7 @@ band: beginner
 Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #ability: 2 construction homes, 1 rejection, 2 interpreter rows, 2 interpreter classes, 2 frame keys
+- #ability: 2 construction homes, 1 rejection, 1 slot rule, 2 interpreter rows, 2 interpreter classes, 2 frame keys
 - #can-be-role-ability: 1 construction home
 - #ability-fallback: 1 construction home, 2 overlay rows, 2 interpreter rows, 2 interpreter classes, 2 frame keys
 Inbound links: npm run page-refs -- can-and-cant.md

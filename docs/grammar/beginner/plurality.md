@@ -6,7 +6,7 @@ band: beginner
 Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #associative: 3 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
+- #associative: 3 construction homes, 1 rejection, 1 slot rule, 1 interpreter row, 1 interpreter class
 Inbound links: npm run page-refs -- plurality.md
 -->
 

@@ -8,7 +8,7 @@ Page shape read by code:
 Sections named by data:
 - #verbs-v: 1 construction home, 1 interpreter row, 1 interpreter class
 - #adjectives-g: 1 construction home
-- #vocatives-y: 1 construction home, 1 rejection
+- #vocatives-y: 1 construction home, 1 rejection, 1 slot rule
 Inbound links: npm run page-refs -- collectives.md
 -->
 

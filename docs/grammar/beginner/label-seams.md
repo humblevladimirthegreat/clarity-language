@@ -6,7 +6,7 @@ band: beginner
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #reach-vowels: 5 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class
+- #reach-vowels: 5 construction homes, 2 rejections, 1 slot rule, 1 interpreter row, 1 interpreter class
 - #reach-relative: 2 construction homes
 - #reach-type: 1 construction home
 - #reach-stacks: 12 construction homes

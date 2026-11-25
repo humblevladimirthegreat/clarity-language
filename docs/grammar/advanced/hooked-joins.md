@@ -6,7 +6,7 @@ band: advanced
 Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #hooked-joins: 3 construction homes, 2 rejections, 2 interpreter rows, 2 interpreter classes
+- #hooked-joins: 3 construction homes, 2 rejections, 1 slot rule, 2 interpreter rows, 2 interpreter classes
 - #hooked-joins-point-back: 3 rejections
 - #hooked-joins-time: 2 rejections
 - #hooked-joins-clause: 1 rejection

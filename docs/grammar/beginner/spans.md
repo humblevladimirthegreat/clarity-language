@@ -11,7 +11,7 @@ Sections named by data:
 - #loans: 1 construction home, 1 interpreter row, 1 interpreter class
 - #y-spans: 1 rejection
 - #asides-th: 1 construction home, 1 interpreter row, 1 interpreter class, 7 boundary cells, 6 discourse slot cells
-- #pos: 1 rejection
+- #pos: 1 rejection, 2 slot rules
 Inbound links: npm run page-refs -- spans.md
 -->
 

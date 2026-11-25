@@ -7,8 +7,8 @@ Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #resume-r: 3 construction homes, 1 rejection, 4 interpreter rows, 4 interpreter classes
-- #role-pointers: 7 construction homes, 2 rejections, 2 interpreter rows, 2 interpreter classes, 1 canonical choice
-- #themself: 1 construction home, 1 rejection
+- #role-pointers: 7 construction homes, 2 rejections, 1 slot rule, 2 interpreter rows, 2 interpreter classes, 1 canonical choice
+- #themself: 1 construction home, 1 rejection, 1 slot rule
 - #the-other-one: 1 construction home
 - #whoever-it-was: 1 construction home
 - #a-new-one: 1 construction home, 2 rejections, 1 canonical choice

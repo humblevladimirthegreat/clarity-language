@@ -4,7 +4,7 @@ band: beginner
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #role-compounds: 5 construction homes, 2 rejections, 1 interpreter row, 1 interpreter class
+- #role-compounds: 5 construction homes, 2 rejections, 1 slot rule, 1 interpreter row, 1 interpreter class
 - #one-time-or-a-practice: 1 construction home
 - #this-instance-r: 1 construction home
 - #the-undergoer-d: 1 construction home

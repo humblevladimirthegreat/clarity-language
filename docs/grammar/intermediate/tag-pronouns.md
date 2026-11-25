@@ -6,7 +6,7 @@ band: intermediate
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #naming-with-a-tag: 5 construction homes, 6 rejections, 3 interpreter rows, 3 interpreter classes
+- #naming-with-a-tag: 5 construction homes, 6 rejections, 1 slot rule, 3 interpreter rows, 3 interpreter classes
 - #tag-pairs: 2 rejections
 Inbound links: npm run page-refs -- tag-pronouns.md
 -->

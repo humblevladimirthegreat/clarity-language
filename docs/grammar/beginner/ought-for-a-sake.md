@@ -6,7 +6,7 @@ band: beginner
 Page shape read by code:
 - cheat-sheet markers (1): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #prescription-the-ought-this-act-for-this-sake: 4 construction homes, 1 rejection
+- #prescription-the-ought-this-act-for-this-sake: 4 construction homes, 1 rejection, 1 slot rule
 Inbound links: npm run page-refs -- ought-for-a-sake.md
 -->
 
