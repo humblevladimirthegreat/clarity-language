@@ -23,4 +23,11 @@ describe("context report", () => {
     const [verb] = decisionsAt("zazozon vowurol dahelan vayebel val.", "vowurol").filter((d) => d.pass === "verbEnd");
     assert.deepEqual(verb && { to: verb.to, ahead: verb.ahead }, { to: "VPlainMore", ahead: 2 });
   });
+
+  it("a decision that waits for a join settles at the join, one made by the word before it at itself", () => {
+    const [more] = decisionsAt("zazozon vowurol dahelan vayebel val.", "vowurol").filter((d) => d.pass === "verbEnd");
+    assert.equal(more?.settles, "join");
+    const [hosted] = decisionsAt("zodozel vezuvel hewem blazozon.", "blazozon").filter((d) => d.pass === "hosted");
+    assert.equal(hosted?.settles, "itself");
+  });
 });

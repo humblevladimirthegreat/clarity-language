@@ -21,6 +21,33 @@ import { enforceTones } from "./enforce.js";
 import { CONTEXT_PASSES } from "./mark-context.js";
 import { tokenizeUtterance } from "./tokenize.js";
 
+/** What settles a decision: the word before it (`itself`), the next word by design (`word`), or a join later on (`join`). */
+export type Settles = "itself" | "word" | "join";
+
+/**
+ * Where each pass's decisions settle, the one place this is written down. A pass is `word` or `join` as a whole
+ * (`all`), or only for the listed target types; a decision the table does not name settles at `itself`. A `join`
+ * decision with ahead 0 (nothing waited on) reads `itself`.
+ */
+const SETTLES: Record<string, { all?: Settles; join?: readonly string[]; word?: readonly string[] }> = {
+  sameRolePair: { word: ["SameRolePair"] },
+  hosted: { word: ["HookHosting"], join: ["HostedBJoined"] },
+  bar: { all: "join" },
+  itemHook: { all: "join" },
+  verbEnd: { join: ["VPlainMore"] },
+  hRun: { join: ["HThList"] },
+  gRun: { join: ["GInList", "GInRespList"] },
+  glLean: { all: "word" },
+  wLeaf: { all: "word" },
+};
+
+/** Where a decision of `pass` to type `to` settles (see {@link SETTLES}); `ahead` is the measured spread. */
+export function settlesAt(pass: string, to: string, ahead: number): Settles {
+  const entry = SETTLES[pass];
+  const fixed: Settles = entry?.all ?? (entry?.join?.includes(to) ? "join" : entry?.word?.includes(to) ? "word" : "itself");
+  return fixed === "join" && ahead === 0 ? "itself" : fixed;
+}
+
 /** One decision of one pass on one token: a retype, or a token the pass left as it was only because of what follows. */
 export type ContextDecision = {
   pass: string;
@@ -32,6 +59,8 @@ export type ContextDecision = {
   ahead: number;
   /** The decision needed every token to the end of the input. */
   toEnd: boolean;
+  /** What settles it (see {@link SETTLES}). */
+  settles: Settles;
 };
 
 const typeNames = (tokens: IToken[]): string[] => tokens.map((t) => t.tokenType.name);
@@ -54,7 +83,7 @@ export function measureDecisions(tokens: IToken[]): ContextDecision[] {
       let k = n - 1 - i;
       while (k > 0 && prefixes[i + k - 1]![i] === to[i]) k--;
       if (from[i] === to[i] && k === 0) continue;
-      out.push({ pass: pass.name, from: from[i]!, to: to[i]!, at: i, ahead: k, toEnd: k > 0 && k === n - 1 - i });
+      out.push({ pass: pass.name, from: from[i]!, to: to[i]!, at: i, ahead: k, toEnd: k > 0 && k === n - 1 - i, settles: settlesAt(pass.name, to[i]!, k) });
     }
     input = result;
   }
@@ -79,6 +108,8 @@ export type ContextRow = {
   buckets: Record<AheadBucket, number>;
   toEnd: number;
   max: number;
+  /** Where the row's decisions settle; not in the saved counts. */
+  settles: Settles;
   samples: ContextSample[];
 };
 
@@ -128,7 +159,7 @@ export function walkContext(tables: ClassifyTables, roots: string[] = ["docs/gra
         let row = rows.get(key);
         if (!row) {
           const buckets = Object.fromEntries(AHEAD_BUCKETS.map((b) => [b, 0])) as Record<AheadBucket, number>;
-          row = { key, pass: d.pass, from: d.from, to: d.to, count: 0, texts: 0, buckets, toEnd: 0, max: 0, samples: [] };
+          row = { key, pass: d.pass, from: d.from, to: d.to, count: 0, texts: 0, buckets, toEnd: 0, max: 0, settles: d.settles, samples: [] };
           rows.set(key, row);
         }
         row.count++;
@@ -191,9 +222,9 @@ export function formatReport(walk: ContextWalk): string[] {
     const rows = walk.rows.filter((r) => r.pass === pass.name);
     if (!rows.length) continue;
     lines.push(`## ${pass.name}`, "");
-    lines.push(`| from → to | decisions | texts | ${AHEAD_BUCKETS.map((b) => `ahead ${b}`).join(" | ")} | to end | max |`);
-    lines.push(`|---|---|---|${AHEAD_BUCKETS.map(() => "---").join("|")}|---|---|`);
-    for (const r of rows) lines.push(`| ${r.from} → ${r.to} | ${r.count} | ${r.texts} | ${bucketCells(r.buckets)} | ${r.toEnd} | ${r.max} |`);
+    lines.push(`| from → to | decisions | texts | ${AHEAD_BUCKETS.map((b) => `ahead ${b}`).join(" | ")} | to end | max | settles at |`);
+    lines.push(`|---|---|---|${AHEAD_BUCKETS.map(() => "---").join("|")}|---|---|---|`);
+    for (const r of rows) lines.push(`| ${r.from} → ${r.to} | ${r.count} | ${r.texts} | ${bucketCells(r.buckets)} | ${r.toEnd} | ${r.max} | ${r.settles} |`);
     lines.push("");
     for (const r of rows) {
       lines.push(`- **${r.from} → ${r.to}**`);

@@ -164,6 +164,16 @@ Owns:
 - Matrix-final **stand-in** (`darl` / `barl`) + contiguous dependent; a stand-in inside that dependent opens its own, nested in it ([nested-dependents.md](/nested-dependents#nested-dependents)), and clause joins after it land in the innermost one
 - `Clause.predicateAdj`: a verbless clause of one noun with one `/ɡ/`, then only `/h/` words, marks that `/ɡ/` as the clause's predicate, which the tree keeps in the noun's package ([predication.md](/predication#classification-property))
 
+Before the grammar runs, `markContext` ([`src/parse/mark-context.ts`](../../src/parse/mark-context.ts)) retypes tokens by their neighbors, so the grammar needs no lookahead past one token. It runs the named passes of `CONTEXT_PASSES` in order, each reading the tokens as the passes before it left them.
+
+`npm run context-report` reruns each pass on every prefix of the distinct grammar examples and records, for each retype, how many tokens past the word the decision needed before it stopped changing (*ahead*). Each decision also has a *settles at* class:
+
+- `itself`: the word before decides it, ahead 0.
+- `word`: the next word decides it, by design.
+- `join`: a join later in the sentence decides it, as a verb list settles at its second verb.
+
+The class comes from one table in `src/parse/context-report.ts`, not from the saved counts. Stdout is the per-pass summary; the full report, with the *settles at* column and samples, goes to `tmp/logs/context-report.md`. `--save` writes the counts to `tmp/state/context-report.json`, and `--diff` prints only the counts that changed since the save.
+
 Recovery is off. Illegal left fences and binderless islands throw `SentenceParseError`.
 
 ### Stage 4 — resolve (AST → discourse sidecar)
@@ -210,7 +220,8 @@ src/
     sentence-grammar.ts          # Stage 3 Chevrotain grammar class: rule fields, constructor, DSL handle
     grammar/                     # Stage 3 rule families, one definer each: clause, unit, np, vp, modifier, package
     sentence-shapes.ts           # Stage 3 shared head: error class, slot types and consts, error messages
-    mark-context.ts              # before Stage 3: markContext retypes tokens by lookahead
+    mark-context.ts              # before Stage 3: markContext retypes tokens by lookahead (CONTEXT_PASSES)
+    context-report.ts            # npm run context-report: ahead and settles-at of each CONTEXT_PASSES decision
     sentence-build.ts            # after Stage 3: post-parse fixes, CST → AST
     hook-jobs.ts                 # each hook's job, decided once after Stage 3
     ast-walk.ts                  # the one AST visitor (resolve, enforce, inspect are handler sets)
