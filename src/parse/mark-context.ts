@@ -58,11 +58,8 @@ import {
   ItemHook,
   SameRolePair,
   V,
-  VCont,
   VPlainEnd,
   VPlainMore,
-  VContEnd,
-  VContMore,
   JoinVEnd,
   JoinVMore,
   Vocative,
@@ -226,7 +223,6 @@ export const CONTEXT_PASSES: readonly ContextPass[] = [
   },
   { name: "bar", run: eachToken(barTypeAt) },
   { name: "itemHook", run: eachToken((tokens, i) => (isItemHookAt(tokens, i) ? ItemHook : undefined)) },
-  { name: "verbList", run: eachToken((tokens, i) => (tokenIs(tokens[i]!, V) && isVerbListAt(tokens.slice(0, i)) ? VCont : undefined)) },
   { name: "verbEnd", run: eachToken(verbTypeAt) },
   { name: "hRun", run: eachToken(hListTypeAt) },
   { name: "gRun", run: eachToken(gListTypeAt) },
@@ -488,8 +484,11 @@ const VP_ITEM_MATERIAL = [
   H, JoinH, HSharedV, HostedB, Amount, G, W,
 ];
 
-/** A verb or a `/v/` join before this point, past only item material: a verb here goes on that list ({@link VCont}). */
-function isVerbListAt(before: IToken[]): boolean {
+/**
+ * A verb or a `/v/` join before this point, past only item material: a verb here goes on that list. The grammar reads
+ * this by place; enforce asks it to find a list that does not close.
+ */
+export function isVerbListAt(before: IToken[]): boolean {
   let i = before.length - 1;
   while (before[i] && tokenIs(before[i]!, ...VP_ITEM_MATERIAL)) i -= 1;
   // A verb blank in a same-role pair (`abam var`) is a unit of its own, not a list's join.
@@ -505,7 +504,6 @@ function verbTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   while (tokens[next] && tokenIs(tokens[next]!, ...VP_ITEM_MATERIAL)) next += 1;
   const more = !!tokens[next] && tokenIs(tokens[next]!, V);
   if (tokenIs(token, JoinV)) return more ? JoinVMore : JoinVEnd;
-  if (tokenIs(token, VCont)) return more ? VContMore : VContEnd;
   return more ? VPlainMore : VPlainEnd;
 }
 

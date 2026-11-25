@@ -5,8 +5,6 @@ import {
   HostedB,
   VPlainEnd,
   VPlainMore,
-  VContEnd,
-  VContMore,
   JoinVEnd,
   JoinVMore,
   WBefore,
@@ -59,8 +57,8 @@ export function defineVpRules(p: GrammarParser): void {
   p.vpCoordPartMore = vpCoordPartRule(p, "vpCoordPartMore", "later", "More");
 
   /**
-   * A verb with no join: one verb, and the `/b/` a pair-reach verb hosts. A {@link VCont} is never a lone verb: a second
-   * verb in the clause takes a join (joins.md#right-close).
+   * A verb with no join: one verb, and the `/b/` a pair-reach verb hosts. A verb after another one is never a lone verb: a
+   * second verb in the clause takes a join (joins.md#right-close).
    */
   p.vpVerb = p.RULE("vpVerb", () => {
     p.CONSUME(VPlainEnd, { LABEL: "V" });
@@ -172,20 +170,19 @@ function vpCoordPartRule(p: GrammarParser, name: string, at: "first" | "alone" |
     const items = (k: number) => p.option(k + 10, () => p.subrule(k, p.vpItemsStart, { LABEL: "vpItemUnit" }));
     const verbs = {
       ALT: () => {
-        const [end, more] = at === "first" ? [VPlainEnd, VPlainMore] : [VContEnd, VContMore];
         if (at === "later") items(1);
         p.or(2, [
-          { ALT: () => verb(1, end) },
+          { ALT: () => verb(1, VPlainEnd) },
           {
             ALT: () => {
               // Each later verb comes after its item's `/h/`, `/d/` and `/b/` words; whether it is the last one shows at the verb.
-              verb(2, more);
+              verb(2, VPlainMore);
               items(3);
               p.MANY(() => {
-                verb(3, VContMore);
+                verb(3, VPlainMore);
                 items(4);
               });
-              verb(4, VContEnd);
+              verb(4, VPlainEnd);
             },
           },
         ]);

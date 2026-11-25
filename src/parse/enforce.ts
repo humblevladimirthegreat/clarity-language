@@ -16,7 +16,7 @@ import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun, rolePronounRoots } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import { mixedSpanEnds, type HookJob } from "./hook-jobs.js";
-import { markContext } from "./mark-context.js";
+import { isVerbListAt, markContext } from "./mark-context.js";
 import { SentenceParseError } from "./sentence-shapes.js";
 import {
   B,
@@ -57,8 +57,6 @@ import {
   Tone,
   type TokenPayload,
   V,
-  VCont,
-  VContEnd,
   VPlainEnd,
   W,
   WBefore,
@@ -1366,9 +1364,9 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   const slot = PHRASE_SLOTS.find((s) => s.join !== JoinV && failAt > 0 && isAny(tokens[failAt]!, s.heads));
   if (slot) sideBySide(failAt, slot);
   // A verb list must close with a join right after its last verb (joins.md#right-close). The parser may stop anywhere
-  // from the list's first verb on, so find the first list that does not close: a verb on after another verb is VCont.
+  // from the list's first verb on, so find the first list that does not close, from a verb that goes on a list.
   for (let c = 0; c < tokens.length; c += 1) {
-    if (!tokenMatcher(tokens[c]!, VCont) || verbListCloses(tokens, c)) continue;
+    if (!tokenMatcher(tokens[c]!, V) || !isVerbListAt(tokens.slice(0, c)) || verbListCloses(tokens, c)) continue;
     let verb = c - 1;
     while (verb > 0 && !isAny(tokens[verb]!, [V, JoinV])) verb -= 1;
     if (verb === c - 1 && tokenMatcher(tokens[verb]!, JoinV)) sideBySide(c, PHRASE_SLOTS.find((s) => s.join === JoinV)!);
@@ -1408,7 +1406,7 @@ function enforceCitationSentences(tokens: IToken[]): void {
 /** From a verb on a list, the list's last verb (the first one marked `End`) has a `/v/` join right after it. */
 function verbListCloses(tokens: IToken[], from: number): boolean {
   let at = from;
-  while (tokens[at] && !isAny(tokens[at]!, [VPlainEnd, VContEnd])) at += 1;
+  while (tokens[at] && !tokenMatcher(tokens[at]!, VPlainEnd)) at += 1;
   at += 1;
   if (tokens[at] && tokenMatcher(tokens[at]!, HostedB)) at += 1;
   while (tokens[at] && tokenMatcher(tokens[at]!, W)) at += 1;

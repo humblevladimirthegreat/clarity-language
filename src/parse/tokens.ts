@@ -46,19 +46,14 @@ export const B = wordToken("B");
 export const V = wordToken("V");
 export const VPlain = wordToken("VPlain", [V]);
 /**
- * A verb right after another verb or a `/v/` join, past only the `/h/`, `/d/` and `/b/` words of its own item: it goes on
- * a verb list, so it never starts one (verb-and-stance-joins.md#vp-clause-forms). Set by `markContext`.
- */
-export const VCont = wordToken("VCont", [V]);
-/**
- * A verb (`VPlain` or `VCont`) or a `/v/` join word by what comes after it, past the item words of a verb list's item:
- * another verb (`…More`: the verb list goes on, so those words are that verb's item), or anything else (`…End`). Every
- * verb and `/v/` join gets one of these leaf types. Set by `markContext`.
+ * A verb or a `/v/` join word by what comes after it, past the item words of a verb list's item: another verb (`…More`:
+ * the verb list goes on, so those words are that verb's item), or anything else (`…End`). Every verb and `/v/` join gets
+ * one of these leaf types. Set by `markContext`. Whether a verb goes on a list rather than starting one is the grammar's:
+ * the verb right after another verb or a `/v/` join, past its own item, is the list's next verb
+ * (verb-and-stance-joins.md#vp-clause-forms).
  */
 export const VPlainEnd = wordToken("VPlainEnd", [VPlain]);
 export const VPlainMore = wordToken("VPlainMore", [VPlain]);
-export const VContEnd = wordToken("VContEnd", [VCont]);
-export const VContMore = wordToken("VContMore", [VCont]);
 export const JoinVEnd = wordToken("JoinVEnd", [JoinV]);
 export const JoinVMore = wordToken("JoinVMore", [JoinV]);
 /** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (left-bound-adjectives.md#left-bound-adjectives). */
@@ -279,11 +274,8 @@ export const allTokens = [
   B,
   V,
   VPlain,
-  VCont,
   VPlainEnd,
   VPlainMore,
-  VContEnd,
-  VContMore,
   JoinVEnd,
   JoinVMore,
   G,
