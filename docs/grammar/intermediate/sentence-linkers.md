@@ -79,7 +79,7 @@ Those same roots keep their ordinary content readings under other role letters.
 
 A linker reaches back to one sentence: the one that ends at the period before it. To link back to several claims at once, join them into that sentence with a [clause join](/joins#clause-joins).
 
-Three linkers also take `-l` for a **firm** link: use it when the link holds with no room for doubt. This is the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing). (cue: `-l` ≈ lasting: the link holds)
+Three linkers also take `-l` for a **firm** link: use it when the link holds with no room for doubt. This is the same [settled-to-passing scale](/knowing#settled-to-passing) as the endings on MAY. (cue: `-l` ≈ lasting: the link holds)
 
 <!-- cheat-sheet: linking-clauses -->
 | Ageben | Use | English |

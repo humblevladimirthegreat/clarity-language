@@ -78,7 +78,7 @@ A feeling word is built on a met (`tha`), motive (`tho`), or unmet (`thu`) sake 
 
 ### How long the feeling lasts {#feeling-duration}
 
-English tells *a flash of anger* from *a bad mood* that lasts for days. In Ageben the last ending of a feeling word says how long the feeling itself lasts, on the same [settled-to-passing scale](/sakes#settled-to-passing) as the sake word's own ending. `-m` leaves it open; `-l` says the feeling has settled in, and `-r` says it is a flash or a wave that will pass. You can then tell a mood that needs attention from a wave you can wait out.
+English tells *a flash of anger* from *a bad mood* that lasts for days. In Ageben the last ending of a feeling word says how long the feeling itself lasts, on the same [settled-to-passing scale](/knowing#settled-to-passing) as the sake word's own ending. `-m` leaves it open; `-l` says the feeling has settled in, and `-r` says it is a flash or a wave that will pass. You can then tell a mood that needs attention from a wave you can wait out.
 
 | Ending | Use | English | Cue |
 |--------|-----|---------|-----|

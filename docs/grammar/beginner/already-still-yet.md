@@ -43,7 +43,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 >
 > "Azozon doesn't walk at the house anymore."
 
-The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use `-m` when it could change back, or when you do not know. Use `-l` when it is not expected to. Use `-r` when it holds only for now: it is likely to change back soon.
+The ending says how settled the current stage is, on the same [settled-to-passing scale](knowing.md#settled-to-passing) as the endings on MAY. Use `-m` when it could change back, or when you do not know. Use `-l` when it is not expected to. Use `-r` when it holds only for now: it is likely to change back soon.
 
 On *not yet*, the ending says how firmly you expect the change instead. Use `-m` when you expect it, or when you do not say how firmly. Use `-l` when you are sure it will come: *not yet, but it will*. Use `-r` when it may never come.
 

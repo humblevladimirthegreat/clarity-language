@@ -73,7 +73,7 @@ English grades evidence with words like *clearly*, *a glimpse*, and *rumor has i
 - `-m`: you could **describe** it. You can say what you saw, were told, or noticed, and the hearer takes your account on trust.
 - `-r`: you could only **gesture** at it. You can point toward it but cannot state it precisely, so a follow-up question would find little behind it.
 
-What counts as showing depends on the channel, so the table names what each channel grades.
+What counts as showing depends on the channel, so the table names what each channel grades. The three run in the order of the [settled-to-passing scale](/knowing#settled-to-passing), with `-l` the settled end and `-r` the passing end; on a channel, that scale reads as evidence strength.
 
 Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](number-roles.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is `th#N`, so a compiled report that is several hands removed can still be `-l`.
 

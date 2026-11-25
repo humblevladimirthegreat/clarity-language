@@ -49,7 +49,7 @@ NOTIONAL takes a [holder](holder.md#naming-a-holder) the same way a channel does
 
 ### Follow-up endings (NOTIONAL) {#follow-up-endings-notional}
 
-English *let's practice …*, *imagine …*, and *what if …* differ in what the imagining is for. The ending on NOTIONAL says it: with `-l` you rehearse a scene to prepare for doing it, with `-m` you picture it with no further purpose (the default), and with `-r` you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](/sakes#settled-to-passing), like the endings on [PLAN](/intention#plan-predict). With `-n`, the word is an ordinary [name](proper-names.md#proper-name--n).
+English *let's practice …*, *imagine …*, and *what if …* differ in what the imagining is for. The ending on NOTIONAL says it: with `-l` you rehearse a scene to prepare for doing it, with `-m` you picture it with no further purpose (the default), and with `-r` you toy with a *what if* for the moment. The three run on the same [settled-to-passing scale](/knowing#settled-to-passing) as the endings on MAY and [PLAN](/intention#plan-predict). With `-n`, the word is an ordinary [name](proper-names.md#proper-name--n).
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

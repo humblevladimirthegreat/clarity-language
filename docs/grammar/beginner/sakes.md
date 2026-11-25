@@ -80,9 +80,8 @@ To say that a belonging of yours *serves* a sake (pays it off), write that thing
 
 ### Time horizon (endings on met) {#time-horizon-endings-on-met}
 <a id="sake-contact"></a>
-<a id="settled-to-passing"></a>
 
-On a *serves* word, the ending says when the payoff lands: `-l` lasting, `-m` unstated, `-r` immediate. That order, from `-l` (most settled) through `-m` (the default) to `-r` (most passing), is the **settled-to-passing scale**, and other sake endings reuse it. Neither end is better; a good day needs both. If you do not know, use `-m`.
+On a *serves* word, the ending says when the payoff lands: `-l` lasting, `-m` unstated, `-r` immediate. That order, from `-l` (most settled) through `-m` (the default) to `-r` (most passing), is the [settled-to-passing scale](knowing.md#settled-to-passing) from MAY, and other sake endings reuse it. Neither end is better; a good day needs both. If you do not know, use `-m`.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |

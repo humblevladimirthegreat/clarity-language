@@ -32,7 +32,7 @@ As a plain noun or verb, the root keeps its own meaning (`zagol` *a map*; `vagol
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-The ending on PLAN says how fully you have planned it: `-l` for a plan with backups ready, `-m` for the steps, `-r` for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With `-n`, the word is an ordinary name. `thagom` is the soft default: it claims a plan without saying how much is worked out.
+The ending on PLAN says how fully you have planned it: `-l` for a plan with backups ready, `-m` for the steps, `-r` for just the direction. The three run on the same [settled-to-passing scale](knowing.md#settled-to-passing) as the endings on MAY. With `-n`, the word is an ordinary name. `thagom` is the soft default: it claims a plan without saying how much is worked out.
 
 | Ageben | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|

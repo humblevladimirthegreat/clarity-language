@@ -44,7 +44,8 @@ English *I think* has two uses, and only one of them is MAY. In *I think Alazun 
 MAY goes only on a claim, a sentence that says how things are or could be. A [command, request, or prohibition](/speech-moves#speech-act-beginner) tells someone what to do or not to do, so it is not a claim, and MAY has no meaning there. For example, MAY does not turn the command `yol vowurol.` (*Walk!*) into a gentler suggestion. Leave it off, and give the command as it is.
 
 ### Follow-up endings (MAY) {#follow-up-endings-may}
-<!-- Agent summary: ending on MAY = follow-up on the guess. `thomal` (`-l`): you will find out; `thomam` (`-m`, default): follow-up unstated, use when unsure; `thomar` (`-r`): passing thought, not pursuing it. None is better. Contrast set: `zahelan thomal vagamul.`, `zahelan thomam vagamul.`, `zahelan thomar vagamul.` `-n` → ordinary name. Yes/no question + MAY asks whether it could be so: `yel zazozon vabuvul thomal dalazun.` (might Azozon be punching Alazun? let's find out) vs `yel zazozon vabuvul dalazun.` (is Azozon punching Alazun?); `thomal` on a question = asking in order to find out. -->
+<a id="settled-to-passing"></a>
+<!-- Agent summary: ending on MAY = follow-up on the guess. `thomal` (`-l`): you will find out; `thomam` (`-m`, default): follow-up unstated, use when unsure; `thomar` (`-r`): passing thought, not pursuing it. None is better. The order is the settled-to-passing scale (taught here first): `-l` settled (the question will be settled, not a firmer guess), `-m` default, `-r` passing; later stance endings reuse it, each with its own gloss. Contrast set: `zahelan thomal vagamul.`, `zahelan thomam vagamul.`, `zahelan thomar vagamul.` `-n` → ordinary name. Yes/no question + MAY asks whether it could be so: `yel zazozon vabuvul thomal dalazun.` (might Azozon be punching Alazun? let's find out) vs `yel zazozon vabuvul dalazun.` (is Azozon punching Alazun?); `thomal` on a question = asking in order to find out. -->
 
 After a guess, English often adds what you mean to do about it: *I'll find out*, or *who knows*. In Ageben the ending on MAY says this, so the guess and your follow-up stay one word. With `-l` you will find out, with `-m` you leave that unsaid (the default), and with `-r` it is a passing thought you are not pursuing. With `-n`, the word is an ordinary name.
 
@@ -74,7 +75,9 @@ Here is the same guess with each ending:
 >
 > "Ahelan may be crying, who knows."
 
-All three say that Ahelan could be crying, and only the ending changes. With `thomal`, you will find out, for example by going to look. With `thomam`, you say nothing about a next step. With `thomar`, you have considered it and are letting it go for now. To keep the three in order, read them as one line from a guess you will follow to the end (`-l`), through the middle (`-m`), to a thought that holds only right now (`-r`).
+All three say that Ahelan could be crying, and only the ending changes. With `thomal`, you will find out, for example by going to look. With `thomam`, you say nothing about a next step. With `thomar`, you have considered it and are letting it go for now.
+
+To keep the three in order, read them as one line from settled to passing. `-l` is the settled end because the question will be settled: you will find out the answer. It does not mean you hold the guess more firmly. `-m` is the middle and the default, and `-r` is the passing end, a thought that holds only right now. This order is the **settled-to-passing scale**, and many later endings reuse it: each word gives `-l`, `-m`, and `-r` its own meaning, always running from settled to passing.
 
 No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices, so pick the ending that matches what you will do. When you are not sure, use `thomam`: it says *could be* and nothing about following up.
 

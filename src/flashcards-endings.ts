@@ -26,7 +26,7 @@ type Ending = (typeof ENDINGS)[number];
 
 /** The checkpoint that drills the scale note, and the section that teaches the scale. */
 export const SCALE_CHECKPOINT = "sakes.md#beginner-practice";
-export const SCALE_ANCHOR = "sakes.md#settled-to-passing";
+export const SCALE_ANCHOR = "knowing.md#settled-to-passing";
 /** The settled-to-passing scale, as the design words it. */
 const SCALE_READINGS: Record<Ending, string> = STANCE_GRADE_BY_ENDING;
 

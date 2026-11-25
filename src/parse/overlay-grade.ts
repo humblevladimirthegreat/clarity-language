@@ -1,5 +1,5 @@
 /**
- * The settled-to-passing grade of a `/th/` stance overlay (`sakes.md#settled-to-passing`): `-l` settled,
+ * The settled-to-passing grade of a `/th/` stance overlay (`knowing.md#settled-to-passing`): `-l` settled,
  * `-m` default, `-r` passing. Derived from the sense form's ending, not stored in `lexicon-overlays.csv`;
  * each kind keeps its own gloss (`MEMORY.strong`, `WANT-passing`).
  */

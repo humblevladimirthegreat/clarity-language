@@ -20,7 +20,7 @@ English *it turns out*, *to my surprise*, and *so … after all* say the news ra
 >
 > "Alazun left, it turns out."
 
-The ending says how firm the expectation was that the news overturned. If you do not know, use `-m`.
+The ending says how firm the expectation was that the news overturned. The three run on the [settled-to-passing scale](/knowing#settled-to-passing): `-l` is the settled end, an expectation that was locked in, and `-r` the passing end, a loose guess. If you do not know, use `-m`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|

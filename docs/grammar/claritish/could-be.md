@@ -133,4 +133,4 @@ He forgot `thomal`.
 Aliens built it `thomar`.
 :::
 
-<!-- Source (editors): knowing.md#may, knowing.md#follow-up-endings-may, sakes.md#settled-to-passing; pronunciation from phonology.md. -->
+<!-- Source (editors): knowing.md#may, knowing.md#follow-up-endings-may, knowing.md#settled-to-passing; pronunciation from phonology.md. -->

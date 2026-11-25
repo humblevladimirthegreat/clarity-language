@@ -54,7 +54,7 @@ Shown on one root, `azozo`. From [word endings](/word-endings#concrete-l) and [r
 
 ### Scales and series {#scales}
 
-From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#naming-with-a-tag), and [settled-to-passing](/sakes#settled-to-passing).
+From [word endings](/word-endings), [number endings](/number-markers#number-endings), [spans](/spans#when-required), [joins](/joins#join-type-vowel-series), [hooks](/hooks), [role pointers](/pronouns#role-pointers), [tags](/tag-pronouns#naming-with-a-tag), and [settled-to-passing](/knowing#settled-to-passing).
 
 | Scale | Fit cue | `-l` | `-m` | `-r` | `-n` |
 |-------|----------|--------|--------|--------|--------|
@@ -62,7 +62,7 @@ From [word endings](/word-endings), [number endings](/number-markers#number-endi
 | [Exactness](/number-markers#number-endings) | how tightly you mean the stated form | exact | approximate | — | — |
 | [Completeness](/joins#join-type-vowel-series) | how fully the slot is specified | locked: only these | open: maybe more | a member you have not named | the package as a name |
 | [Reference](/pronouns#resume-r) | which referent relative to what is already in play | a new one | their part | the same one | — |
-| [Settled-to-passing](/sakes#settled-to-passing) | how lasting the hold is | lasting | default | passing | — |
+| [Settled-to-passing](/knowing#settled-to-passing) | how lasting the hold is | lasting | default | passing | — |
 
 Reference `-l` and `-m` are only on [role pointers](/pronouns#a-new-one) and [tags](/tag-pronouns#naming-with-a-tag). Tag [`-n`](/tag-pronouns#naming-with-a-tag) is reference `-r` plus a claim that the referent is a name.
 

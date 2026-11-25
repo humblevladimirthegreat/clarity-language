@@ -37,7 +37,7 @@ To want a person or thing (*want Azozon*), name the act that would get it (*see*
 
 #### Endings: lastingness {#want-endings}
 
-On `alo`, `-l` / `-m` / `-r` say how long the wanting lasts. With `-n`, the word is an ordinary [proper name](proper-names.md#proper-name--n). If you do not know, use `-m`.
+On `alo`, `-l` / `-m` / `-r` say how long the wanting lasts. This is the [settled-to-passing scale](/knowing#settled-to-passing) read as duration: `-l` is the settled end, a want that stays, and `-r` the passing end. With `-n`, the word is an ordinary [proper name](proper-names.md#proper-name--n). If you do not know, use `-m`.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -92,7 +92,7 @@ Unlike PLAN, DECISION carries no time. It says what you chose, not that the act 
 #### Endings: how final the decision is {#endings-changeability}
 <a id="decision-changeability"></a>
 
-The endings on DECISION run on the same settled-to-passing scale as [changeability](/sakes#sake-changeability) on an unmet sake: `-l` irreversible, `-m` modifiable, `-r` temporary. With `-n`, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know how settled the decision is, use `-m`. How firm a choice will turn out is hard to know even for yourself, so `-m` claims nothing either way.
+The endings on DECISION take the two ends of the [settled-to-passing scale](/knowing#settled-to-passing), as [changeability](/sakes#sake-changeability) on an unmet sake does: `-l` irreversible and `-r` temporary. `-m` is modifiable: it claims that the decision can still change, so it is not a default that leaves the question open. With `-n`, the word is an ordinary [name](proper-names.md#proper-name--n). If you do not know whether the decision is final, use `-m`: until you know a choice is final, it can still change.
 
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -108,7 +108,7 @@ To say both how detailed a plan is and how firm the decision is, put DECISION af
 >
 > "I plan to walk, and that choice is final."
 
-PLAN and DECISION endings run the same way: `-l` is the most settled, `-m` the default, and `-r` the most passing.
+PLAN and DECISION endings run the same way, from `-l` the most settled to `-r` the most passing.
 
 > `zuwen thagor thoger vowurol.`
 >

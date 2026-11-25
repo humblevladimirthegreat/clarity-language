@@ -320,7 +320,7 @@ describe("ending notes", () => {
     assert.equal(scale.guid, noteGuid("set", SCALE_NOTE_KEY, ""));
     assert.equal(cpOf(scale.tags), "ageben::cp::sakes::beginner");
     assert.equal(scale.fields.text, cloze("settled", "default", "passing"));
-    assert.equal(scale.fields.link, "https://clarityconlang.com/grammar/sakes.html#settled-to-passing");
+    assert.equal(scale.fields.link, "https://clarityconlang.com/grammar/knowing.html#settled-to-passing");
     assert.ok(inputs.pageText(SCALE_ANCHOR.split("#")[0]!).includes(`id="${SCALE_ANCHOR.split("#")[1]}"`));
   });
 

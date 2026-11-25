@@ -946,7 +946,7 @@ Clause join `-n` (`xan` *and then*; `xen` *or maybe*; `xun` *and then not*).
 
 The shared `-l` / `-m` / `-r` ladder on many stance endings: `-l` the most settled (cue: *lasting*), `-m` the default, `-r` the most passing (cue: *right now*). Neither end is better. Each slot gives the three endings its own meaning.
 
-[Sakes](/sakes#settled-to-passing)
+[Knowing](/knowing#settled-to-passing)
 
 ### SHARED scale
 
