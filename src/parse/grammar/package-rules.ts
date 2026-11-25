@@ -129,8 +129,8 @@ export function npPackageRule(p: GrammarParser, level: NpSlot, variant: "Package
     Package: [noun, { type: head.standInList, label: "Odo" }, span],
     Noun: [noun, span],
     NounTagged: [noun, span],
-    StandIn: [{ type: head.standInLone, label: "Odo" }],
-    StandInTagged: [{ type: head.standInLone, label: "Odo" }],
+    StandIn: [{ type: head.standIn, label: "Odo" }],
+    StandInTagged: [{ type: head.standIn, label: "Odo" }],
     Tag: [tag],
   }[variant];
   const tagged = { Package: "optional", NounTagged: "required", StandInTagged: "required" } as const;

@@ -210,21 +210,22 @@ export const TagD = wordToken("TagD");
 export const TagB = wordToken("TagB");
 /** A word with no role letter (a citation form): it names, filling no slot, so it stands only as a sentence of its own (word-endings.md#citation-forms). */
 export const Citation = wordToken("Citation");
-/** A forward stand-in, by the slot it fills: a noun-phrase head (`zarl`, `darl`, `barl`) or another slot. */
+/**
+ * A forward stand-in, by the slot it fills: a noun-phrase head (`zarl`, `darl`, `barl`) or another slot. A noun-phrase
+ * one keeps its type as a phrase of its own; `markContext` retypes it when it is a list item ({@link OdoZList}).
+ */
 export const Odo = wordToken("Odo");
 export const OdoZ = wordToken("OdoZ", [Odo]);
 export const OdoD = wordToken("OdoD", [Odo]);
 export const OdoB = wordToken("OdoB", [Odo]);
 /**
- * A noun-phrase stand-in by its run (set by `markContext`): an item of a list when the items after it reach that list's
- * join (`zarl zodogal zam`), or a phrase of its own, which ends the main clause (`zarl vowogal.`).
+ * A noun-phrase stand-in that is an item of a list (set by `markContext`): the items after it reach that list's join
+ * (`zarl zodogal zam`). Any other stays {@link OdoZ} / {@link OdoD} / {@link OdoB}, a phrase of its own, which ends the
+ * main clause (`zarl vowogal.`).
  */
-export const OdoZList = wordToken("OdoZList", [OdoZ]);
-export const OdoZLone = wordToken("OdoZLone", [OdoZ]);
-export const OdoDList = wordToken("OdoDList", [OdoD]);
-export const OdoDLone = wordToken("OdoDLone", [OdoD]);
-export const OdoBList = wordToken("OdoBList", [OdoB]);
-export const OdoBLone = wordToken("OdoBLone", [OdoB]);
+export const OdoZList = wordToken("OdoZList", [Odo]);
+export const OdoDList = wordToken("OdoDList", [Odo]);
+export const OdoBList = wordToken("OdoBList", [Odo]);
 export const OdoOther = wordToken("OdoOther", [Odo]);
 export const Force = wordToken("Force");
 export const Polar = wordToken("Polar");
@@ -327,11 +328,8 @@ export const allTokens = [
   OdoD,
   OdoB,
   OdoZList,
-  OdoZLone,
   OdoDList,
-  OdoDLone,
   OdoBList,
-  OdoBLone,
   OdoOther,
   Force,
   Polar,

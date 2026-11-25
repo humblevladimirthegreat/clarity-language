@@ -332,7 +332,7 @@ const GL_OF_SLOT = { z: GGlBefore.Z, d: GGlBefore.D, b: GGlBefore.B } as const;
 
 /**
  * A noun-phrase stand-in is an item of a list when the items after it reach that list's item hook, bar, or join
- * ({@link OdoZList}): `zarl zodogal zam` is one list. Any other ends its phrase ({@link OdoZLone}).
+ * ({@link OdoZList}): `zarl zodogal zam` is one list. Any other keeps its type ({@link OdoZ}) and ends its phrase.
  */
 function odoTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   const token = tokens[at]!;
@@ -342,7 +342,7 @@ function odoTypeAt(tokens: IToken[], at: number): TokenType | undefined {
   for (let after = skipNpPackage(tokens, next, level); after !== undefined; after = skipNpPackage(tokens, next, level)) next = after;
   const head = tokens[skipW(tokens, next)];
   const list = tokens[next]?.tokenType === ItemHook || (!!head && tokenIs(head, NP_JOIN[level], Bar));
-  return list ? NP_HEAD[level].standInList : NP_HEAD[level].standInLone;
+  return list ? NP_HEAD[level].standInList : undefined;
 }
 
 /** The word a `gl-` adjective leans on, by token type ({@link GGlBefore}). */

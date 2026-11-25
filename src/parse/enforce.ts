@@ -45,8 +45,11 @@ import {
   JoinZ,
   Linker,
   OdoB,
+  OdoBList,
   OdoD,
+  OdoDList,
   OdoZ,
+  OdoZList,
   Period,
   Polar,
   SameRolePair,
@@ -1278,9 +1281,9 @@ function deniedUniversalFence(coord: NpCoord): boolean {
 
 /** The words that head a phrase of each slot, and the join that closes a list of them. */
 const PHRASE_SLOTS: { heads: TokenType[]; join: TokenType }[] = [
-  { heads: [Z, OdoZ, WritingSpanZ, TagZ], join: JoinZ },
-  { heads: [D, OdoD, WritingSpanD, TagD], join: JoinD },
-  { heads: [B, OdoB, WritingSpanB, TagB], join: JoinB },
+  { heads: [Z, OdoZ, OdoZList, WritingSpanZ, TagZ], join: JoinZ },
+  { heads: [D, OdoD, OdoDList, WritingSpanD, TagD], join: JoinD },
+  { heads: [B, OdoB, OdoBList, WritingSpanB, TagB], join: JoinB },
   { heads: [V], join: JoinV },
 ];
 

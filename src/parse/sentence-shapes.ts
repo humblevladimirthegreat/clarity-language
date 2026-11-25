@@ -25,11 +25,8 @@ import {
   OdoD,
   OdoZ,
   OdoZList,
-  OdoZLone,
   OdoDList,
-  OdoDLone,
   OdoBList,
-  OdoBLone,
   WritingSpanB,
   WritingSpanD,
   WritingSpanZ,
@@ -88,9 +85,9 @@ export type PartStart = "First" | "Rest" | "Free";
 
 /** The head tokens of a noun phrase at each slot: a noun, a stand-in, or a written span. */
 export const NP_HEAD = {
-  z: { noun: Z, standIn: OdoZ, standInList: OdoZList, standInLone: OdoZLone, span: WritingSpanZ, tag: TagZ },
-  d: { noun: D, standIn: OdoD, standInList: OdoDList, standInLone: OdoDLone, span: WritingSpanD, tag: TagD },
-  b: { noun: B, standIn: OdoB, standInList: OdoBList, standInLone: OdoBLone, span: WritingSpanB, tag: TagB },
+  z: { noun: Z, standIn: OdoZ, standInList: OdoZList, span: WritingSpanZ, tag: TagZ },
+  d: { noun: D, standIn: OdoD, standInList: OdoDList, span: WritingSpanD, tag: TagD },
+  b: { noun: B, standIn: OdoB, standInList: OdoBList, span: WritingSpanB, tag: TagB },
 } as const;
 
 /** The join token that closes a list at each noun-phrase level. */
