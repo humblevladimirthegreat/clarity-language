@@ -161,7 +161,7 @@ function headTerm(word: LexWord, here: Here, clause: Clause): Term {
 function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
   const family = word.family;
   const ctx = here.ctx;
-  if (ctx.blanks.has(word)) return { kind: "blank", word };
+  if (ctx.blanks.has(word)) return { kind: "blank", word, values: wordValues(word) };
   // A number resume (`drager`, number-markers.md#number-endings) is a pronoun on the number it resumes.
   if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem, values: { ...wordValues(word), ...termValues(word) } };
   if (family.kind === "foreign") return { kind: "literal", word, payload: family.payload };
@@ -463,7 +463,7 @@ function listTerm(parts: Part[], here: Here, bound?: Detail, shared: Detail[] = 
   const join = [...joins].reverse().find((j) => j !== undefined);
   const members = parts.flatMap((p) => p.members);
   // A fill-ask join with no items is the blank itself (questions.md#fill-ask; interpreter.md `ask:fillAsk`).
-  if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, details: [...(bound ? [bound] : []), ...shared] };
+  if (join && members.length === 0 && here.ctx.blanks.has(join)) return { kind: "blank", word: join, values: wordValues(join), details: [...(bound ? [bound] : []), ...shared] };
   // Each fence's join says what that fence does (joins.md#right-close), so each part keeps its join's values.
   for (const part of parts) if (part.join) part.values = wordValues(part.join);
   const frames = listFrames(joins.filter((j) => !j || !noKind.has(j)), here);

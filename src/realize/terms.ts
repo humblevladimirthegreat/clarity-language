@@ -6,12 +6,13 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
+import { fillAskGloss } from "../parse/gloss-inverse.js";
 import type { MeaningDetail, MeaningTerm } from "./meaning.js";
 import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, listedLeaf, rootOf, type Ending } from "./words.js";
 import { builtLeaf, ROLE_REACH } from "./built.js";
 import type { GapKind } from "./realize.js";
-import { joinLeaf, listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
+import { hookFront, joinLeaf, listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
 import { tagLabel } from "./tags.js";
 
 /** Lists written with a join that has no items as the standalone join (joins.md#standalone-phrase). */
@@ -233,9 +234,35 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
       return unit([withPlural(pronounLeaf(term, pos, ending, tables), term.values), ...adjectives(term.details, tables)]);
     case "number":
       return unit([cited(numberTermLeaf(term, pos), term.values), ...adjectives(term.details, tables)]);
+    case "blank":
+      return blankTerm(term, pos, tables, style);
     default:
       throw noRule(`a ${term.kind} term`);
   }
+}
+
+/**
+ * A fill-ask blank (questions.md#fill-ask, fill-ask-roles.md#fill-ask-arity): its join word under `pos`, glossed as the
+ * blank it asks for; a hooked one (`[d-for-x-wh | bl-speaker]`, hooked-joins.md#hooked-joins) has its landmark right
+ * after it, then any adjectives.
+ */
+export function blankTerm(term: Extract<MeaningTerm, { kind: "blank" }>, pos: string, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  const { series, ending, hook, plural, ...rest } = term.values ?? {};
+  void plural;
+  if (Object.keys(rest).length || term.frames?.length) throw noRule("a blank with its own frame");
+  // A number blank (`grar`, digitless-exponents.md#how-many) keeps its number word, not a join.
+  if (!series || ending !== "r") throw noRule("a number blank");
+  const plain = fillAskGloss(`${pos}${series}${ending}`, tables);
+  if (!plain?.startsWith(`${pos}-`)) throw noRule(`a blank of series ${series} under /${pos}/`);
+  const head = withPlural(`${hookFront(pos, hook)}-${plain.slice(pos.length + 1)}`, term.values);
+  const details = [...(term.details ?? [])];
+  const landmark: string[] = [];
+  if (hook !== undefined) {
+    const bound = details.shift();
+    if (bound?.kind !== "bound" || !bound.hosted || bound.details?.length || bound.frames?.length || bound.content) throw noRule("a hooked blank with no landmark");
+    landmark.push(landmarkOf(bound.hosted, tables, style));
+  }
+  return unit([head, ...landmark, ...adjectives(details, tables)]);
 }
 
 type Thing = Extract<MeaningTerm, { kind: "thing" }>;
@@ -319,6 +346,7 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
 export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   // A verb list (joins.md#and-lists-a): each verb, then the `/v/` join.
   if (term.kind === "list") return listGloss(term, "v", undefined, listWriters((m) => verbTerm(m, tables), tables, style), { ...style, standalone: true });
+  if (term.kind === "blank") return blankTerm(term, "v", tables, style);
   if (term.kind !== "thing") throw noRule(`a ${term.kind} verb`);
   // A built verb's hosted party (label-seams.md: `venumuthel blalazun`) is its `bl-` word, right after it.
   const [hosted, ...rest] = term.details;
@@ -336,6 +364,7 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListS
 export function predicateTerm(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   // A predicate list (joins.md#negation-u: `gamahum gul`): each predicate word, then the `/ɡ/` join.
   if (term.kind === "list") return listGloss(term, "g", undefined, listWriters((m) => predicateTerm(m, tables), tables, style), { ...style, standalone: true });
+  if (term.kind === "blank") return blankTerm(term, "g", tables, style);
   if (term.kind !== "thing" || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
   const [self, ...rest] = term.details;
   // A built word (built.ts: a role word, a numeric prefix, a label seam) is its own detail, its stem as `root`.

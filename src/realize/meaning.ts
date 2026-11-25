@@ -87,7 +87,7 @@ export type MeaningTerm =
       frames?: MeaningFrame[];
     }
   | ({ kind: "speaker" | "listener" | "we"; values?: Record<string, string> } & Attached)
-  | ({ kind: "blank" } & Attached)
+  | ({ kind: "blank"; values?: Record<string, string> } & Attached)
   | ({ kind: "pronoun"; sort?: "generic" | "topic"; bind?: AnaphorKind; antecedent?: MeaningTerm; values?: Record<string, string> } & Attached)
   | ({ kind: "literal"; payload: string } & Attached)
   | ({ kind: "number"; stem: NumberStem; values?: Record<string, string> } & Attached)
@@ -247,7 +247,7 @@ export class Projector {
         case "we":
           return { kind: term.kind, values: opt(term.values, (values) => ({ ...values })), ...attached(term) };
         case "blank":
-          return { kind: term.kind, ...attached(term) };
+          return { kind: term.kind, values: opt(term.values, (values) => ({ ...values })), ...attached(term) };
         case "pronoun":
           return {
             kind: "pronoun",

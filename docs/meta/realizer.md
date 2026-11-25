@@ -60,6 +60,8 @@ Where the grammar allows several forms with the same meaning, the realizer write
 | A hosted relation, its `/h/` word and `bl-` landmark, right before the verb, with the adverbs | `lexReading:joinRelation`, `overlay:locative:h`, `overlay:of_relation:h`, `overlay:exchange:h`, `overlay:proxy:h` | `clause.md#adverbs-h` |
 | A contrary-to zone at the end of the clause | `hookJob:zone` | `contrary-to.md#contrary-to-stance` |
 | A number, a fraction among them, in its preferred writing: spelled out with one digit or none (`gragel`, `gragem`), in shorthand with two or more (`g+12`, `g~+12`) | `lexReading:number` | `number-markers.md#writing-style-numeric-vs-spelled` |
+| A polar word after the act words and before the body, the body in the order of the first act word, or of a statement when there is none | `edge:polar` | `questions.md#polar-particle` |
+| A fill-ask's blank first in the body, with the word it completes (`el bar`, `abam zar`), and the rest in statement order | `edge:force` | `questions.md#fill-ask` |
 
 ## Round trip
 <a id="round-trip"></a>

@@ -266,6 +266,29 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes polar words after the act words, and fill-ask blanks first in the body", () => {
+    const cases: [string, string[]][] = [
+      ["yaol.", ["yaol."]],
+      ["yuom.", ["yuom."]],
+      ["yaor zazozon vowurol.", ["yaor zazozon vowurol."]],
+      ["yel yaol.", ["yel yaol."]],
+      // The blank first, the rest in statement order; a blank that completes a word comes with it.
+      ["yel dar zazozon vayebel.", ["yel dar zazozon vayebel."]],
+      ["yel gar zodozel.", ["yel gar zodozel."]],
+      ["yel doxar bluwen.", ["yel doxar bluwen."]],
+      ["yel zer godozel vowurol.", ["yel zer godozel vowurol."]],
+      ["yel zarx vowurol.", ["yel zarx vowurol."]],
+      ["yel zahelan vowurol el bar.", ["yel el bar zahelan vowurol."]],
+      ["yel abam zar zazozon vowurol.", ["yel abam zar zazozon vowurol."]],
+      ["yel zar vowurol. yam azozon.", ["yel zar vowurol.", "yam azozon."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

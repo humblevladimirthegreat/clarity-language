@@ -69,6 +69,14 @@ function glossOne(surface: string, tables: ClassifyTables, ctx: MorphGlossContex
   }
 }
 
+/**
+ * The gloss a join word takes as a fill-ask blank (questions.md#fill-ask: `zar` → `z-wh`), which its glosses elsewhere
+ * (`z-something`) do not show; `undefined` when the surface is not one such word.
+ */
+export function fillAskGloss(surface: string, tables: ClassifyTables): string | undefined {
+  return glossOne(surface, tables, { fillAsk: true });
+}
+
 /** Every content root × role letter × **-l/-m/-n**, and every closed join / hook form. */
 export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = []): GlossIndex {
   const index: GlossIndex = { forms: new Map(), roots: new Map() };

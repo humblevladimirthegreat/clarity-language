@@ -5,7 +5,7 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { seriesGlossIndex } from "../parse/gloss-inverse.js";
-import type { MeaningDetail, MeaningFrame } from "./meaning.js";
+import type { MeaningDetail, MeaningFrame, MeaningLink } from "./meaning.js";
 import { leaf } from "./words.js";
 import { leafOf, plainWord, thingLeaf, unit, Unrealized, withPlural } from "./terms.js";
 
@@ -13,13 +13,16 @@ const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
 const actGlosses = new WeakMap<ClassifyTables, Map<string, string>>();
 
-/** Each act word's surface (`yel`) → its leaf gloss (`y-question`), from the gloss index's closed join forms. */
+/**
+ * Each act word's or polar word's surface (`yel`, `yaol`) → its leaf gloss (`y-question`, `y-yes`), from the gloss index's
+ * closed join forms.
+ */
 function actGlossOf(surface: string, tables: ClassifyTables): string | undefined {
   let map = actGlosses.get(tables);
   if (!map) {
     map = new Map();
     for (const [gloss, surfaces] of seriesGlossIndex(tables).forms) {
-      for (const form of surfaces) if (/^y[aeou]r?[lmr]$/.test(form) && !map.has(form)) map.set(form, gloss);
+      for (const form of surfaces) if (/^y[aeou]{1,2}r?[lmr]$/.test(form) && !map.has(form)) map.set(form, gloss);
     }
     actGlosses.set(tables, map);
   }
@@ -40,6 +43,19 @@ export function actGloss(frame: MeaningFrame, tables: ClassifyTables): string {
   const gloss = series && ending ? actGlossOf(`y${series}${ending}`, tables) : undefined;
   if (!gloss) throw noRule(`an act word of series ${series ?? "?"} on -${ending ?? "?"}`);
   return gloss;
+}
+
+/**
+ * A polar word (questions.md#polar-particle, polar-inventory.md): `y`, its two vowels and its ending, from the polar
+ * link's values. It stands after the act words and before the body.
+ */
+export function polarGloss(link: MeaningLink, tables: ClassifyTables): string {
+  const { series, ending, gloss, ...rest } = link.values ?? {};
+  void gloss;
+  if (Object.keys(rest).length || link.frame) throw noRule("a polar word with its own parts");
+  const found = series && ending ? actGlossOf(`y${series}${ending}`, tables) : undefined;
+  if (!found) throw noRule(`a polar word of series ${series ?? "?"} on -${ending ?? "?"}`);
+  return found;
 }
 
 /** The first act word's default body order (speech-moves.md#act-word-order). */
