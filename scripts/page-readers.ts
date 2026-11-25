@@ -65,6 +65,7 @@ import { pageIds } from "./lint-anchors.ts";
 
 const CLARITISH = "claritish";
 const INTERPRETER = "docs/meta/interpreter.md";
+const REALIZER = "docs/meta/realizer.md";
 const CHEAT_SHEET = `${CLARITISH}/cheat-sheet.md`;
 const SKIP_DIRS = new Set([".vitepress", "node_modules", "public"]);
 const GRAMMAR_DOCS = "docs/meta/grammar-docs.md";
@@ -84,6 +85,7 @@ const REGISTRIES: readonly Registry[] = [
   { name: "boundaries", kind: "section", singular: "boundary cell", plural: "boundary cells" },
   { name: "discourse-slots", kind: "section", singular: "discourse slot cell", plural: "discourse slot cells" },
   { name: "terms", kind: "section", singular: "inspect term", plural: "inspect terms" },
+  { name: "canonical-choices", kind: "section", singular: "canonical choice", plural: "canonical choices" },
   { name: "cues", kind: "page", singular: "cue (claritish-triggers.csv)", plural: "cues (claritish-triggers.csv)" },
   { name: "flows", kind: "page", singular: "flow (claritish-flows.json)", plural: "flows (claritish-flows.json)" },
   { name: "cheat-sheet", kind: "page", singular: "cheat-sheet row", plural: "cheat-sheet rows" },
@@ -102,6 +104,7 @@ const READ_FILES = new Set([
   "src/parse/boundaries.ts",
   "src/parse/discourse-slots.ts",
   "src/interpret/inspect-notes.ts",
+  REALIZER,
 ]);
 
 // ---------------------------------------------------------------- page contracts
@@ -197,6 +200,7 @@ const WHOLE_SITE = [
   "src/parse/context-report.ts",
   "src/parse/llm-examples.ts",
   "src/repo-paths.ts",
+  "src/round-trip/corpus.ts",
 ];
 
 /** Source files that name a grammar path in code yet import no contract, read no registry here and are not on WHOLE_SITE. */
@@ -237,6 +241,26 @@ function anchorRef(registry: string, anchor: string, where: string, siblingDir?:
     return;
   }
   return { registry, page, id, where };
+}
+
+/**
+ * The rows of realizer.md's `## Canonical choices` table (Choice | Key | Anchor), each with its 1-based line and the
+ * backticked `page.md#id` anchors in its Anchor cell.
+ */
+function canonicalChoiceRows(text: string): { line: number; anchors: string[] }[] {
+  const lines = text.split("\n");
+  const start = lines.findIndex((l) => l === "## Canonical choices");
+  if (start < 0) {
+    problems.push(`${REALIZER}: no '## Canonical choices' heading`);
+    return [];
+  }
+  const rows: { line: number; anchors: string[] }[] = [];
+  for (let i = start + 1; i < lines.length && !lines[i]!.startsWith("## "); i++) {
+    const cells = lines[i]!.split("|").slice(1, -1);
+    if (cells.length !== 3 || /^\s*(Choice|-+)\s*$/.test(cells[0]!)) continue;
+    rows.push({ line: i + 1, anchors: [...cells[2]!.matchAll(/`([^`]+\.md#[^`]+)`/g)].map((m) => m[1]!) });
+  }
+  return rows;
 }
 
 function lessonRef(registry: string, lesson: string, where: string): RegistryRef | undefined {
@@ -297,6 +321,9 @@ function registryRefs(): RegistryRef[] {
   }
   for (const [family, term] of Object.entries(FAMILY_TERMS)) {
     if (term?.anchor) refs.push(anchorRef("terms", term.anchor, `inspect-notes.ts ${family}`, "docs/meta"));
+  }
+  for (const row of canonicalChoiceRows(readFileSync(join(REPO_ROOT, REALIZER), "utf8"))) {
+    for (const a of row.anchors) refs.push(anchorRef("canonical-choices", a, `${REALIZER}:${row.line}`, "docs/meta"));
   }
   for (const row of parseCsv(readData("claritish-triggers.csv")).rows) {
     refs.push(lessonRef("cues", row.lesson ?? "", `claritish-triggers.csv ${row.id}`));

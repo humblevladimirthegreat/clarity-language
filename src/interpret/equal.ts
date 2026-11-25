@@ -8,6 +8,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { pairRow } from "../parse/scope.js";
 import type { LexWord } from "../parse/types.js";
 import { readText } from "./read.js";
+import { numberBody } from "./read-context.js";
 import type { Detail, Frame, FrameOrder, Link, Reading, StanceList, Term } from "./types.js";
 
 export type EqualVerdict = "same" | "different" | "unsettled";
@@ -79,7 +80,18 @@ function multiset(values: Json[]): Json[] {
   return values.map((v) => [stringify(v), v] as const).sort(([x], [y]) => (x < y ? -1 : x > y ? 1 : 0)).map(([, v]) => v);
 }
 
-const raw = (word: LexWord | { raw: string }): string => word.raw;
+/**
+ * A word's form. A number word compares by its role letter, value and ending, not its writing: "Both writings name the
+ * same word" (number-markers.md#writing-preferred-shorthand), so `g+3` and `gragel`, `g~+12` and `grabadom` are one form.
+ */
+function formOf(word: LexWord | { raw: string }, pos?: string): string {
+  const family = "family" in word ? word.family : undefined;
+  if (family?.kind !== "number") return word.raw;
+  const lex = word as LexWord;
+  return `${pos ?? lex.pos ?? ""}(${numberBody(family.stem)})${lex.ending ?? ""}`;
+}
+
+const raw = (word: LexWord | { raw: string }): string => formOf(word);
 
 class Canon {
   /** Each word's top-level sentence, so a referent names the sentence it was met in. */
@@ -270,7 +282,12 @@ class Canon {
     switch (term.kind) {
       case "thing": {
         const from = term.head.pos ?? "";
-        const head = pos !== undefined && term.head.raw.startsWith(from) ? pos + term.head.raw.slice(from.length) : term.head.raw;
+        const head =
+          term.head.family.kind === "number"
+            ? formOf(term.head, pos)
+            : pos !== undefined && term.head.raw.startsWith(from)
+              ? pos + term.head.raw.slice(from.length)
+              : term.head.raw;
         return { kind: "thing", head, ...this.extras(term) };
       }
       case "speaker":

@@ -31,6 +31,16 @@ describe("sameReadings: the practice-item cases", () => {
     assert.equal(verdict("zazozon hehohel hayebel vowurol.", "hehohel zazozon hayebel vowurol."), "same");
   });
 
+  it("matches a number's spelled and shorthand writing, not another value or ending (number-markers.md#writing-preferred-shorthand)", () => {
+    assert.equal(verdict("zogozel gragel vezuvel.", "zogozel g+3 vezuvel."), "same");
+    assert.equal(verdict("zogozel grabadom vezuvel.", "zogozel g~+12 vezuvel."), "same");
+    assert.equal(verdict("zragel vezuvel.", "z+3 vezuvel."), "same");
+    assert.equal(verdict("zanal grodol.", "zanal g#2."), "same");
+    assert.equal(verdict("zogozel gragel vezuvel.", "zogozel gragem vezuvel."), "different");
+    assert.equal(verdict("zogozel gragel vezuvel.", "zogozel grodol vezuvel."), "different");
+    assert.equal(verdict("zragel vezuvel.", "zrahul vezuvel."), "different");
+  });
+
   it("does not match a resume against a new noun of the same kind", () => {
     assert.equal(verdict("zazozon vehohel. zazozon vayebel.", "zazozon vehohel. zazozor vayebel."), "different");
   });

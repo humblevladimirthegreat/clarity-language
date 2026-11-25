@@ -56,7 +56,10 @@ function pronoun(word: LexWord, here: Here): Term {
   const outer = here.ctx.options.outerTerm;
   const antecedent = at ? (here.ctx.terms.get(at) ?? here.ctx.lists.get(at) ?? (outer ? outerAntecedent(outer(at), at) : thing(at))) : undefined;
   const sort = isTopicPronoun(word) ? "topic" : isGenericPronoun(word) ? "generic" : undefined;
-  const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}) };
+  // A bound pronoun's ending and pinned sense say which one it names (pronouns.md#a-new-one, resume-sense.md).
+  const values: Record<string, string> | undefined =
+    bind && word.ending ? { ending: word.ending, ...(word.resumeSense ? { sense: word.resumeSense } : {}) } : undefined;
+  const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}), ...(values ? { values } : {}) };
   here.ctx.terms.set(word, term);
   return term;
 }
@@ -147,7 +150,7 @@ function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
   const ctx = here.ctx;
   if (ctx.blanks.has(word)) return { kind: "blank", word };
   // A number resume (`drager`, number-markers.md#number-endings) is a pronoun on the number it resumes.
-  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem };
+  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem, values: wordValues(word) };
   if (family.kind === "foreign") return { kind: "literal", word, payload: family.payload };
   if (family.kind === "writingSpan") return spanTerm(word, here);
   if (family.kind === "content" && word.ending === "n" && family.roots.length === 1) {

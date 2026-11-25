@@ -105,6 +105,23 @@ describe("glossToAgeben", () => {
     }
   });
 
+  it("spells a number word with no doc line to copy it from, in the writing its gloss names", () => {
+    const bare = buildGlossIndex(tables);
+    const cases: [string, string][] = [
+      ["z-three | v-sleep", "zragel vezuvel"],
+      ["z-book | g-2nd", "zanal grodol"],
+      ["z-cat | g-twelve", "zogozel g+12"],
+      ["z-cat | g-eleven.spelled", "zogozel grababal"],
+      ["z-cat | g-three.short", "zogozel g+3"],
+      ["z-cat | g-three.about", "zogozel gragem"],
+      ["z-cat | g-twelve.about", "zogozel g~+12"],
+      ["z-book | g-2nd.named", "zanal grodon"],
+      ["z-minus-three | v-sleep", "zrugel vezuvel"],
+      ["z-Alazun | d-three | v-see . z-Azozon | d-←three | v-see", "zalazun dragel vayebel. zazozon drager vayebel"],
+    ];
+    for (const [gloss, ageben] of cases) assert.equal(glossToAgeben(gloss, tables, bare), ageben, gloss);
+  });
+
   it("rejects a gloss no Ageben line produces", () => {
     assert.throws(() => glossToAgeben("z-dog | v-not-a-real-sense", tables, index));
   });

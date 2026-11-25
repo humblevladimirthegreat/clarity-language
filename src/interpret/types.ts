@@ -138,12 +138,25 @@ export type Term =
       sort?: "generic" | "topic";
       bind?: AnaphorBind;
       antecedent?: Term;
+      /**
+       * A bound pronoun's ending, which says which one it names (`ending`: `r` the same one, `l` a new one, `m` a share;
+       * pronouns.md#a-new-one, #share), and a resume's pinned sense (`sense`: `l` / `m`; resume-sense.md#resume-sense).
+       */
+      values?: Record<string, string>;
       details?: Detail[];
       frames?: Frame[];
     }
   | { kind: "blank"; word: LexWord; details?: Detail[]; frames?: Frame[] }
   | { kind: "literal"; word: LexWord; payload: string; details?: Detail[]; frames?: Frame[] }
-  | { kind: "number"; word: LexWord; stem: NumberStem; details?: Detail[]; frames?: Frame[] }
+  | {
+      kind: "number";
+      word: LexWord;
+      stem: NumberStem;
+      /** The number's ending, spoken or written as its mark (`ending`: `l` exact, `m` about, `n` named; number-markers.md#number-endings). */
+      values?: Record<string, string>;
+      details?: Detail[];
+      frames?: Frame[];
+    }
   | {
       kind: "list";
       /** The join that closes the list (its last part's join). */

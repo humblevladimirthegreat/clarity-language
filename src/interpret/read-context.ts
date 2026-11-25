@@ -12,9 +12,11 @@ import type {
   CoordShared,
   LexWord,
   NpCoord,
+  NumberStem,
   ParseResult,
   SharedRecord,
 } from "../parse/types.js";
+import { formatNumberGroup } from "../parse/morph-gloss-tables.js";
 import { classOf, overlayClassKey } from "./classes.js";
 import { toneFrame } from "./tones.js";
 import type { Detail, Frame, Link, LinkKind, Reading, ReadingId, Term, Unread } from "./types.js";
@@ -108,6 +110,19 @@ export const SAY_VALUES = (word: LexWord): Record<string, string> => {
   if (family.kind !== "say") return {};
   return { reach: family.reach, part: family.part, answer: family.answer, ...(word.ending ? { ending: word.ending } : {}) };
 };
+
+/** The shorthand symbol of each speech marker (number-markers.md#writing-preferred-shorthand). */
+const MARKER_SYMBOL: Record<string, string> = { ra: "+", ru: "-", ro: "#", re: "_", ruo: "#-", rue: "#_", rua: "+-" };
+
+/**
+ * A number stem as its shorthand body, with no role letter or ending mark (`+3`, `#2`, `+5e3,860`): the marker symbol,
+ * a digitless exponent, then the digit groups. Both writings of one number give the same body
+ * (number-markers.md#writing-preferred-shorthand: "Both writings name the same word").
+ */
+export function numberBody(stem: NumberStem): string {
+  const marker = stem.calendarOrdinal ? "_#" : (MARKER_SYMBOL[stem.marker] ?? stem.marker);
+  return `${marker}${stem.digitlessExp ?? ""}${stem.groups.map(formatNumberGroup).join(",")}`;
+}
 
 export function wordValues(word: LexWord): Record<string, string> {
   const family = word.family;
@@ -251,7 +266,12 @@ export function framedMember(coord: NpCoord, term: Term, under: Frame, here: Her
 
 export function detailOf(key: string, word: LexWord, kind: string): Detail {
   const anchor = classOf(key)?.anchor ?? "";
-  return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values: wordValues(word) };
+  const values = wordValues(word);
+  // A plain content word's root is what the adjective, adverb or degree word says (clause.md#adjectives-ɡ).
+  if (word.reading === "ordinary" && word.family.kind === "content") values.root = word.family.roots.join("");
+  // A number word's value is what the count, rank or amount says (numbers.md#counts): its stem in shorthand.
+  if (word.family.kind === "number") values.number = numberBody(word.family.stem);
+  return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values };
 }
 
 /** The link kinds whose one word's meaning the solver reads off `values` (interpreter.md#links). */
