@@ -35,6 +35,8 @@ A test projects every doc example and fails on any object in the view that has a
 
 **The import rule.** Files in `src/realize/` other than `meaning.ts` may import only these: `meaning.ts` and other files in the folder; the reading types (`src/interpret/types.ts`, as types only) and `src/interpret/read.ts`; the lexicon tables (`src/parse/classify.ts`, `src/lexicon-search.ts` and `src/lexicon-compounds.ts`, as types only, and `src/closed-roots.ts`); and the spelling path (`src/parse/gloss-inverse.ts`, and `spell` and `checkLine` from `src/interpret/reply.ts`). A test reads every such file's imports and fails on anything else. So `meaning.ts` is the only way from a reading to the realizer. Test files may import anything.
 
+**Number glosses.** A number's stem is an identity the view keeps, so the realizer writes a number word's gloss label (`g-twelve`, `z-three`) itself, in `src/realize/`, from the stem and the markers the view records. It does not import the glosser's `numberLabel`, which is outside the import rule. The spelling path spells that gloss, and `spell` keeps only a line that glosses back to it, so a label that drifts from the glosser's fails the round trip rather than passing silently.
+
 ## Canonical choices
 <a id="canonical-choices"></a>
 
