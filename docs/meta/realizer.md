@@ -46,6 +46,8 @@ Where the grammar allows several forms with the same meaning, the realizer write
 | Roles whose nouns bring in a new member keep the order their frames cover each other in, the earlier word covering the later | `slot:newMember` | `clause.md#which-covers-which` |
 | Adverbs right before the verb, or before the predicate when the clause has no verb | `unit:h` | `clause.md#adverbs-h` |
 | The statement act `yal` left out | `edge:force` | `speech-moves.md#speech-act-beginner` |
+| A role pointer on `-r` written as the resume of the one it names, and a chain of `-r` resumes as the resume of the first mention | `anaphor:pointer` | `pronouns.md#role-pointers` |
+| A new one on `-l` written as the noun it copies, on the new member's ending | `slot:newMember` | `pronouns.md#a-new-one` |
 
 ## Round trip
 <a id="round-trip"></a>
@@ -59,7 +61,7 @@ Where the grammar allows several forms with the same meaning, the realizer write
 
 A gap is filed under the key of the reading's first part: its first frame's key, else its first claim detail's, its first stance list's or its first link's. A reading with none of these is the bare clause, filed as `claim`.
 
-**The bare clause.** `src/realize/claim.ts` writes the claim: its verb, its `z`, `d` and `b` roles, its predicate and its plain adverbs, in the order of the [canonical choices](#canonical-choices). A role holds a `thing`, `speaker`, `listener` or `we` term with its plain adjectives and their degree words (`src/realize/terms.ts`). A first-mention noun's new-member frame ([new member in a statement](../grammar/beginner/joins.md#new-member-in-a-statement)) is written by its noun alone, on the ending the frame records; any other frame, a link, a stance list or a word-building stem is still a `noRule` gap. A word's leaf gloss comes from the gloss index for its root, role letter and ending (`src/realize/words.ts`), so the realizer never writes an English label or a spelling itself.
+**The bare clause.** `src/realize/claim.ts` writes the claim: its verb, its `z`, `d` and `b` roles, its predicate and its plain adverbs, in the order of the [canonical choices](#canonical-choices). A role holds a `thing`, `speaker`, `listener`, `we` or `pronoun` term with its plain adjectives and their degree words (`src/realize/terms.ts`). A pronoun is written as the generic or topic pronoun by its `sort`, as the resume of the thing or special it names on `-r`, or as the noun it copies on `-l`; a role compound, a tag, a share on `-m`, a resume pinned to a sense and a pronoun with no antecedent are still `noRule` gaps, and the pronoun's anaphor link is left to the reader, which binds the written pronoun again. A first-mention noun's new-member frame ([new member in a statement](../grammar/beginner/joins.md#new-member-in-a-statement)) is written by its noun alone, on the ending the frame records; any other frame, a link, a stance list or a word-building stem is still a `noRule` gap. A word's leaf gloss comes from the gloss index for its root, role letter and ending (`src/realize/words.ts`), so the realizer never writes an English label or a spelling itself.
 
 **The walk.** `src/round-trip/round-trip.ts` reads each doc example as one turn of a log (`buildLog`), so links and pronouns cross its sentences. It projects every reading, realizes it, and joins the realized sentences in order. It then gives the example one verdict:
 

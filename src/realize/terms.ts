@@ -99,9 +99,49 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
     case "listener":
     case "we":
       return unit([leafOf(pos, SPECIAL_ROOT[term.kind], "n", tables), ...adjectives(term.details, tables)]);
+    case "pronoun":
+      return unit([pronounLeaf(term, pos, ending, tables), ...adjectives(term.details, tables)]);
     default:
       throw noRule(`a ${term.kind} term`);
   }
+}
+
+type Thing = Extract<MeaningTerm, { kind: "thing" }>;
+
+type Resumable = Thing | { kind: keyof typeof SPECIAL_ROOT };
+
+/** The one a `-r` pronoun names, through a chain of plain `-r` resumes and pointers, when it is a thing or a special. */
+function referent(term: MeaningTerm): Resumable | undefined {
+  if (term.kind === "thing" || term.kind === "speaker" || term.kind === "listener" || term.kind === "we") return term as Resumable;
+  const plain = term.kind === "pronoun" && term.values?.ending === "r" && !term.values.sense && term.bind !== "role" && term.bind !== "tag";
+  return plain && term.antecedent ? referent(term.antecedent) : undefined;
+}
+
+/**
+ * A pronoun's head word under `pos`: the generic (pronouns.md#generic-pronoun) and the topic pronoun
+ * (topic.md#topic-pronoun) by their roots on **-n**; a bound `-r` pronoun, resume or role pointer, as the resume of
+ * the thing it names (pronouns.md#resume-r); a new one on **-l** as the noun it copies, written out on `ending`
+ * (pronouns.md#a-new-one).
+ */
+function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: string, ending: Ending | undefined, tables: ClassifyTables): string {
+  if (term.sort === "generic") return leafOf(pos, CLOSED.person, "n", tables);
+  if (term.sort === "topic") return leafOf(pos, CLOSED.star, "n", tables);
+  const values = term.values ?? {};
+  if (!term.antecedent) throw noRule("a pronoun with no antecedent");
+  if (term.bind === "role" || term.bind === "tag") throw noRule(`a ${term.bind} pronoun`);
+  if (values.sense) throw noRule("a resume pinned to a sense");
+  if (values.ending === "l") {
+    const copied = term.antecedent;
+    if (copied.kind !== "thing" || copied.named) throw noRule(`a new one after a ${copied.kind === "thing" ? "name" : `${copied.kind} term`}`);
+    return thingLeaf(copied, pos, ending, tables);
+  }
+  if (values.ending !== "r") throw noRule(`a pronoun on -${values.ending ?? "?"}`);
+  const thing = referent(term.antecedent);
+  if (!thing) throw noRule(`a resume of a ${term.antecedent.kind} term`);
+  // A resume glosses as `←` and the label of the word it resumes (glosses.md#round-trip).
+  const named =
+    thing.kind === "thing" ? thingLeaf(thing, pos, thing.named ? undefined : "l", tables) : leafOf(pos, SPECIAL_ROOT[thing.kind], "n", tables);
+  return `${pos}-←${named.slice(named.indexOf("-") + 1)}`;
 }
 
 /** The verb: a thing on `/v/`, named or on **-l**, with no frame or detail of its own. */

@@ -85,7 +85,7 @@ export type MeaningTerm =
       frames?: MeaningFrame[];
     }
   | ({ kind: "speaker" | "listener" | "we" | "blank" } & Attached)
-  | ({ kind: "pronoun"; sort?: "generic" | "topic"; bind?: AnaphorKind; antecedent?: MeaningTerm } & Attached)
+  | ({ kind: "pronoun"; sort?: "generic" | "topic"; bind?: AnaphorKind; antecedent?: MeaningTerm; values?: Record<string, string> } & Attached)
   | ({ kind: "literal"; payload: string } & Attached)
   | ({ kind: "number"; stem: NumberStem } & Attached)
   | {
@@ -244,6 +244,7 @@ export class Projector {
             sort: term.sort,
             bind: term.bind?.kind,
             antecedent: opt(term.antecedent, (antecedent) => this.term(antecedent)),
+            values: opt(term.values, (values) => ({ ...values })),
             ...attached(term),
           };
         case "literal":

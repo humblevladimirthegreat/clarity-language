@@ -55,6 +55,21 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes pronouns: generic, a resume or role pointer as the resume, a new one as the noun it copies", () => {
+    const cases: [string, string[]][] = [
+      ["zeyen vezuvel.", ["zeyen vezuvel."]],
+      ["zazozon vowurol. zazozor vehohel.", ["zazozon vowurol.", "zazozor vehohel."]],
+      ["zazozon dalazun vayebel. zwuder veruvol.", ["zazozon dalazun vayebel.", "zalazur veruvol."]],
+      ["zazozon dugedel vayebel. zalazun dwudel vayebel.", ["zazozon dugedel vayebel.", "zalazun dugedel vayebel."]],
+      ["zayan dayar vebal.", ["zayan dayar vebal."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

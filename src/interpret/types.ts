@@ -138,6 +138,11 @@ export type Term =
       sort?: "generic" | "topic";
       bind?: AnaphorBind;
       antecedent?: Term;
+      /**
+       * A bound pronoun's ending, which says which one it names (`ending`: `r` the same one, `l` a new one, `m` a share;
+       * pronouns.md#a-new-one, #share), and a resume's pinned sense (`sense`: `l` / `m`; resume-sense.md#resume-sense).
+       */
+      values?: Record<string, string>;
       details?: Detail[];
       frames?: Frame[];
     }

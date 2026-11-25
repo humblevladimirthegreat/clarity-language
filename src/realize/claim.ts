@@ -25,7 +25,10 @@ function newMemberOf(frame: MeaningFrame, roles: Partial<Record<Role, MeaningTer
   if (frame.key !== "slot:newMember" || frame.party || frame.content || frame.inner?.length || frame.details?.length) return undefined;
   if (frame.member !== undefined || frame.holderHost || frame.occasions) return undefined;
   const role = ROLES.find((r) => roles[r] === frame.hosted);
-  return role && roles[role]!.kind === "thing" ? role : undefined;
+  const term = role && roles[role]!;
+  // A new one (pronouns.md#a-new-one) brings in a new member, as the noun it copies does.
+  const newOne = term?.kind === "pronoun" && term.values?.ending === "l";
+  return term && (term.kind === "thing" || newOne) ? role : undefined;
 }
 
 /**
@@ -46,7 +49,9 @@ function ranks(view: MeaningReading, framed: Map<number, Role>): Map<Role, numbe
 /** The bare clause's morph gloss, or throws {@link Unrealized}. */
 export function claimGloss(view: MeaningReading, tables: ClassifyTables): string {
   if (view.stanceLists?.length) throw noRule("a stance list");
-  if (view.links.length) throw noRule(`a ${view.links[0]!.kind} link`);
+  // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
+  const links = view.links.filter((link) => link.kind !== "anaphor");
+  if (links.length) throw noRule(`a ${links[0]!.kind} link`);
   const claim = view.claim;
   if (claim.clauses) throw noRule("clause-join members");
   const endings = new Map<Role, Ending>();
