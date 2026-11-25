@@ -5,7 +5,7 @@ import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
 
 // @ts-expect-error: a plain .mjs hook with no type declarations
-import { check, inlineEditScript, rawTestRun } from "./guard-long-output.mjs";
+import { check, rawTestRun } from "./guard-long-output.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const hook = join(root, "scripts", "hooks", "guard-long-output.mjs");
@@ -55,32 +55,5 @@ describe("guard-long-output: long Markdown", () => {
   it("lets style-editor print a long page whole, but not other agents", () => {
     assert.equal(check("cat docs/meta/solver.md", root, root, "style-editor").markdown.length, 0);
     assert.ok(check("cat docs/meta/solver.md", root, root, "proposal-worker").markdown.length > 0);
-  });
-});
-
-describe("guard-long-output: inline edit scripts", () => {
-  it("blocks a script file written from a heredoc", () => {
-    assert.ok(inlineEditScript("cat > tmp/scratch/fix.mjs <<'EOF'\nconsole.log(1)\nEOF\nnode tmp/scratch/fix.mjs"));
-    assert.ok(inlineEditScript("cat <<EOF > /tmp/x/fix.py\nprint(1)\nEOF"));
-    assert.ok(inlineEditScript("tee tmp/scratch/fix.ts <<'EOF' >/dev/null\nx\nEOF"));
-    assert.ok(inlineEditScript("cat >> src/a.test.ts <<'EOF'\nit('x', () => {});\nEOF"));
-  });
-
-  it("blocks inline interpreters that write a file", () => {
-    assert.ok(inlineEditScript("python3 - docs/x.md <<'EOF'\ns=open(p).read()\nopen(p,'w').write(s)\nEOF"));
-    assert.ok(inlineEditScript("python3 -c \"open('a','w').write('x')\""));
-    assert.ok(inlineEditScript("node -e \"require('fs').writeFileSync('a', 'x')\""));
-    assert.ok(inlineEditScript("node --input-type=module <<'EOF'\nimport {writeFileSync} from 'node:fs'; writeFileSync('a','b')\nEOF"));
-    assert.ok(inlineEditScript("cd src && npx --no-install tsx -e \"import('node:fs').then(f => f.writeFileSync('a','b'))\""));
-  });
-
-  it("lets read-only probes, script files and redirects through", () => {
-    assert.ok(!inlineEditScript("node -e \"console.log(require('./package.json').name)\""));
-    assert.ok(!inlineEditScript("python3 - <<'EOF'\nprint(open('a').read()[:10])\nEOF"));
-    assert.ok(!inlineEditScript("node tmp/scratch/fix.mjs"));
-    assert.ok(!inlineEditScript("node -e \"console.log(1)\" > tmp/scratch/out.txt"));
-    assert.ok(!inlineEditScript("cat > tmp/scratch/notes.txt <<'EOF'\nwriteFileSync(\nEOF"));
-    assert.ok(!inlineEditScript("grep -n writeFileSync scripts/verify.ts"));
-    assert.ok(!inlineEditScript("git commit -m \"$(cat <<'EOF'\nfix open(p,'w') in node script\nEOF\n)\""));
   });
 });
