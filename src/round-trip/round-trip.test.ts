@@ -125,9 +125,6 @@ describe("round trip", () => {
       assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
       assert.equal(sameReadings(text, want, tables).verdict, "same", text);
     }
-    // A built word has no plain root in the view (logged for the reader-gap unit).
-    const [built] = project(readTurn("zual gwuzowurol vozuyel.", tables), tables).map((view) => realize(view, tables));
-    assert.ok(built && "gap" in built && built.gap.kind === "missingValue", JSON.stringify(built));
   });
 
   it("realizes hooks and relations: ranges, in-clause and extra-noun hooks, point-back and discourse hooks, relations, zones", () => {
@@ -220,6 +217,29 @@ describe("round trip", () => {
     // A role compound on -r resumes its event: it spells only after the verb it names.
     const role = project(readTurn("zazozon veduyol. zwuzeduyor vezuvel.", tables), tables).map((view) => realize(view, tables))[1];
     assert.ok(role && "gap" in role && role.gap.kind === "noSpell" && role.gap.detail.includes("z-←episode-agent-teach"), JSON.stringify(role));
+  });
+
+  it("realizes built words from values.built: role words, hook prefixes, numeric prefixes, label seams, listed hook compounds", () => {
+    const cases: [string, string[]][] = [
+      ["zwuzeduyol veruvol.", ["zwuzeduyol veruvol."]],
+      ["zwuzodozexowurol veruvol.", ["zwuzodozexowurol veruvol."]],
+      ["dwuhowurol vayebel.", ["dwuhowurol vayebel."]],
+      ["zuoxuvuvul vowurol.", ["zuoxuvuvul vowurol."]],
+      ["zazozon dradoxabewom vayebel.", ["zazozon dradoxabewom vayebel."]],
+      ["zazozon dragemxezuyol vayebel.", ["zazozon dragemxezuyol vayebel."]],
+      ["zahelan gruwuxahuyayel.", ["zahelan gruwuxahuyayel."]],
+      ["zazozon venumuthol.", ["zazozon venumuthol."]],
+      ["zazozon dezahol vowurolul.", ["zazozon dezahol vowurolul."]],
+      ["zual gwuzowurol vozuyel.", ["zual gwuzowurol vozuyel."]],
+      // A party a built word hosts is its bl- word, right after it.
+      ["zazozon venumuthel blalazun.", ["zazozon venumuthel blalazun."]],
+      ["zalazun gonumuthael blerulal.", ["zalazun gonumuthael blerulal."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
   });
 
   it("files a part the bare clause has no rule for under the reading's first key", () => {

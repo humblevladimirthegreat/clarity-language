@@ -315,6 +315,10 @@ export class Projector {
    * concrete sense (a listed compound stem as one root). A stem the head's roots do not spell stays one spelling.
    */
   private stem(term: Extract<Term, { kind: "thing" }>): MeaningRoot[][] {
+    // A listed hook compound (hook-compounds.md#hook-compounds: `owurolul`, *leave*) is one root, the compound's own row.
+    const fused = term.head.hookCompound;
+    const listed = fused && term.head.dictionaryCompound ? this.tables.compounds.get(fused.stem)?.concrete : undefined;
+    if (listed) return [[{ sense: listed }]];
     const family = term.head.family;
     const parts: string[][] | undefined =
       family.kind === "content" && family.roots.join("") === term.root

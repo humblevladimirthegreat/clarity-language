@@ -277,7 +277,43 @@ export function detailOf(key: string, word: LexWord, kind: string): Detail {
   if (word.reading === "ordinary" && word.family.kind === "content") values.root = word.family.roots.join("");
   // A number word's value is what the count, rank or amount says (numbers.md#counts): its stem in shorthand.
   if (word.family.kind === "number") values.number = numberBody(word.family.stem);
+  // A built word's stem is the root it builds on, and how it was built is meaning too (builtValues).
+  const built = builtValues(word);
+  if (built.built) Object.assign(values, built, { root: stemOf(word) });
   return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values };
+}
+
+/** The `x` families that build a word from a stem (word-building), as against a seam that frames a host. */
+const BUILT_X: ReadonlySet<string> = new Set(["role", "hookPrefix", "numeric", "scope", "compound"]);
+
+/**
+ * How a built word was built, since each way says something of its own (interpreter.md#terms): `built` is
+ * `role` (a role word, roles.md#role-compounds: its `part` consonant and `reach` vowel), `hookPrefix` (an extra-noun
+ * hook before the seam, hook-compounds.md#hook-prefixes: its `hook`, and a `reach` after the stem's `th` seam),
+ * `numeric` (a number before the seam, numeric-derivation.md: its `number` in shorthand, and `approx` for the `mx`
+ * seam), `scope` (a label seam, label-seams.md: its `stanceVowel`), `compound` (two roots at a mid-word `x`,
+ * compounds.md) or `hookCompound` (a hook fused after a cited word, hook-compounds.md#hook-compounds: its `hook`).
+ * A word built none of these ways gives nothing.
+ */
+export function builtValues(word: LexWord): Record<string, string> {
+  const fused = word.hookCompound ?? (word.family.kind === "hookCompound" ? word.family : undefined);
+  if (fused) return { built: "hookCompound", hook: fused.hook };
+  const family = word.family;
+  if (family.kind !== "x" || !BUILT_X.has(family.xFamily)) return {};
+  const values: Record<string, string> = { built: family.xFamily };
+  if (family.part) values.part = family.part;
+  if (family.reachVowel) values.reach = family.reachVowel;
+  if (family.stanceVowel) values.stanceVowel = family.stanceVowel;
+  if (family.hook) values.hook = family.hook;
+  if (family.stemHook) values.stemHook = `${family.stemHook.leftEnding}${family.stemHook.hook}`;
+  if (family.numberStem) values.number = numberBody(family.numberStem);
+  if (family.approx) values.approx = "mx";
+  return values;
+}
+
+/** A built word's stem: its roots, parts joined at `x`; a listed hook compound's whole stem (`owurolul`). */
+function stemOf(word: LexWord): string {
+  return word.hookCompound?.stem ?? rootOf(word);
 }
 
 /** The link kinds whose one word's meaning the solver reads off `values` (interpreter.md#links). */
@@ -343,6 +379,7 @@ export function thing(word: LexWord): Term {
  */
 export function termValues(word: LexWord): Record<string, string> {
   return {
+    ...builtValues(word),
     // A standalone join as a term (a `bl-` landmark, hooked-joins.md#hooked-joins-endings: `zexual blual`) is the
     // widest bound its series names, *everything*, *none*: its series says which.
     ...(word.family.kind === "joinMarker" ? { series: word.family.series } : {}),

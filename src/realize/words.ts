@@ -46,6 +46,19 @@ export function rootOf(root: MeaningRoot, tables: ClassifyTables): string | unde
  * realizer writes is spelled from the gloss by `spell`.
  */
 export function leaf(pos: string, root: string, ending: Ending, tables: ClassifyTables): string | undefined {
+  return formsOf(root, tables).get(`${pos}${root}${ending}`);
+}
+
+/**
+ * The leaf gloss of a listed hook compound under `pos` (hook-compounds.md#hook-compounds: `vowurolul`, `v-leave`): its
+ * stem already ends in its hook, so the form is the role letter and the stem.
+ */
+export function listedLeaf(pos: string, stem: string, tables: ClassifyTables): string | undefined {
+  return formsOf(stem, tables).get(`${pos}${stem}`);
+}
+
+/** A root's glossed forms, form → leaf gloss, from the gloss index. */
+function formsOf(root: string, tables: ClassifyTables): Map<string, string> {
   const lex = lexicon(tables);
   let forms = lex.forms.get(root);
   if (!forms) {
@@ -55,5 +68,5 @@ export function leaf(pos: string, root: string, ending: Ending, tables: Classify
     for (const [gloss, surfaces] of index.forms) for (const surface of surfaces) forms.set(surface, gloss);
     lex.forms.set(root, forms);
   }
-  return forms.get(`${pos}${root}${ending}`);
+  return forms;
 }

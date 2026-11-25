@@ -8,7 +8,8 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import type { MeaningDetail, MeaningTerm } from "./meaning.js";
 import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
-import { leaf, rootOf, type Ending } from "./words.js";
+import { leaf, listedLeaf, rootOf, type Ending } from "./words.js";
+import { builtLeaf, ROLE_REACH } from "./built.js";
 import type { GapKind } from "./realize.js";
 import { joinLeaf, listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
 import { tagLabel } from "./tags.js";
@@ -69,7 +70,7 @@ export function thingLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: st
   const own = term.values.ending;
   // A resume glosses as `←` and the label of the word it resumes (glosses.md#round-trip).
   if (own === "r" && !ending) {
-    const resumed = leafOf(pos, oneRoot(term, tables), "l", tables);
+    const resumed = stemLeaf(term, pos, "l", tables);
     return `${pos}-←${resumed.slice(pos.length + 1)}`;
   }
   if (term.named) {
@@ -82,34 +83,62 @@ export function thingLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: st
   if (term.values.series) return joinLeaf({ series: term.values.series, ...(own ? { ending: own } : {}) }, pos, true);
   ending ??= isEnding(own) ? own : undefined;
   if (!ending) throw new Unrealized("missingValue", "an unnamed thing with no ending in the view");
-  if (term.stem.length > 1 && term.stem.every((part) => part.length === 1)) return compoundLeaf(term, pos, ending, tables);
-  return leafOf(pos, oneRoot(term, tables), ending, tables);
+  return stemLeaf(term, pos, ending, tables);
 }
 
 /**
- * A two-root compound (compounds.md § Two roots, one word: `zuwedaxubudal`, *peanut butter*): each part's root by its sense, joined
- * at the mid-word `x`, the last part a kind of the first, on the word's one ending.
+ * A thing's word on `ending`: its one root, or a built word (built.ts) from how the reader records it was built and
+ * its stem's label; a stem of several parts with no record is a mid-word compound.
  */
-function compoundLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: string, ending: Ending, tables: ClassifyTables): string {
+function stemLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: string, ending: Ending, tables: ClassifyTables): string {
+  const built = term.values.built ?? (term.stem.length > 1 ? "compound" : undefined);
+  if (!built) return leafOf(pos, oneRoot(term, tables), ending, tables);
+  if (term.stem.some((part) => part.length !== 1)) throw noRule("a stem of several roots");
   const roots = term.stem.map((part) => rootOf(part[0]!, tables));
-  if (roots.some((root) => !root)) throw new Unrealized("missingValue", "a compound part with no root");
-  const labels = roots.map((root) => leafOf(pos, root!, "l", tables).slice(pos.length + 1));
-  const last = leafOf(pos, roots.at(-1)!, ending, tables).slice(pos.length + 1);
+  if (!roots.length || roots.some((root) => !root)) throw new Unrealized("missingValue", "a built word's stem with no root");
+  return builtLeaf({ ...term.values, built }, pos, stemLabel(roots as string[], built, pos, ending, tables));
+}
+
+/**
+ * A built word's stem label on `ending`, without its role letter: a listed hook compound by its own row (`leave`); one
+ * root by its form; several as a mid-word compound (compounds.md § Two roots, one word: `zuwedaxubudal`, *peanut
+ * butter*), each part's root by its sense, joined at the mid-word `x`, the last part a kind of the first, on the word's
+ * one ending.
+ */
+function stemLabel(roots: string[], built: string, pos: string, ending: Ending, tables: ClassifyTables): string {
+  const strip = (gloss: string): string => gloss.slice(pos.length + 1);
+  if (built === "hookCompound") {
+    const listed = roots.length === 1 ? listedLeaf(pos, roots[0]!, tables) : undefined;
+    if (!listed) throw noRule("an unlisted hook compound");
+    return strip(listed);
+  }
+  if (roots.length === 1) return strip(leafOf(pos, roots[0]!, ending, tables));
+  const labels = roots.map((root) => strip(leafOf(pos, root, "l", tables)));
+  const last = strip(leafOf(pos, roots.at(-1)!, ending, tables));
   if (!last.startsWith(labels.at(-1)!)) throw noRule("a compound whose last part's ending changes its label");
-  return `${pos}-${labels.join("-x-")}${last.slice(labels.at(-1)!.length)}`;
+  return `${labels.join("-x-")}${last.slice(labels.at(-1)!.length)}`;
 }
 
 /** A plain content word's detail (`slot:adj`, `unit:h`, `slot:w`) as one leaf under `pos`, its degree words before it. */
 export function plainWord(detail: MeaningDetail, pos: string, root: string | undefined, tables: ClassifyTables): string {
   const ending = detail.values.ending;
   if (!root || !isEnding(ending) || ending === "n") throw noRule(`${detail.key} that is not a plain content word`);
-  if (detail.content || detail.hosted || detail.frames?.length) throw noRule(`${detail.key} with a hosted word or frame`);
+  if (detail.content || (detail.hosted && !detail.values.built) || detail.frames?.length) throw noRule(`${detail.key} with a hosted word or frame`);
   const degrees = (detail.details ?? []).map((d) => {
     if (d.key !== "slot:w") throw noRule(`${d.key} on ${detail.key}`);
     if (d.details?.length) throw noRule(`a degree word with its own detail`);
     return plainWord(d, "w", d.values.root, tables);
   });
-  return unit([...degrees, withPlural(leafOf(pos, root, ending, tables), detail.values)]);
+  // A built word (built.ts) is its front and its stem, which the reader records as `root`, parts joined at `x`.
+  const built = detail.values.built;
+  const head = built ? builtLeaf(detail.values, pos, stemLabel(root.split("x"), built, pos, ending, tables)) : leafOf(pos, root, ending, tables);
+  // A built word's hosted party (label-seams.md: `gonumuthael blerulal`) is its `bl-` word, right after it.
+  return unit([...degrees, withPlural(head, detail.values), ...(detail.hosted ? [landmarkOf(detail.hosted, tables)] : [])]);
+}
+
+/** A hosted party as a `bl-` word (hooked-joins.md#hooked-joins, label-seams.md): a `b` term on the letter `bl`. */
+function landmarkOf(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  return roleTerm(term, "b", undefined, tables, style).replace(/^(\[?)b-/, "$1bl-");
 }
 
 /** A plain adverb (`unit:h`) with its degree words. */
@@ -127,6 +156,8 @@ function adjectives(details: readonly MeaningDetail[] | undefined, tables: Class
     const prev = all[i - 1];
     const fraction = (prev ? isPlainCount(prev) : plainNoun) ? fractionLeaf(detail) : undefined;
     if (fraction) return fraction;
+    // A numeric prefix (numeric-derivation.md) is a built word, written from its stem.
+    if (detail.values.built) return plainWord(detail, "g", detail.values.root, tables);
     // A count or rank sits with the adjectives (numbers.md#counts).
     if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
     if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
@@ -145,12 +176,12 @@ function listWriters(member: MemberWriter, tables: ClassifyTables, style: ListSt
     // A vague amount on a scale (vague-amounts.md: `zol gral`, *more*) is a number word; a factor on the scale word
     // (comparative-arity.md#factor) is an `/h/` number right after it.
     shared: (detail) => {
-      if (detail.key === "lexReading:number") return sharedNumberLeaf(detail);
+      if (detail.key === "lexReading:number" && !detail.values.built) return sharedNumberLeaf(detail);
       const factors = (detail.details ?? []).filter((d) => d.kind === "amount" && d.key === "lexReading:number");
       const word = factors.length ? { ...detail, details: detail.details!.filter((d) => !factors.includes(d)) } : detail;
       return [plainWord(word, detail.key === "unit:h" ? "h" : "g", detail.values.root, tables), ...factors.map(hNumberLeaf)].join(" | ");
     },
-    landmark: (term) => roleTerm(term, "b", undefined, tables, style).replace(/^(\[?)b-/, "$1bl-"),
+    landmark: (term) => landmarkOf(term, tables, style),
   };
 }
 
@@ -162,8 +193,8 @@ function listWriters(member: MemberWriter, tables: ClassifyTables, style: ListSt
 function barLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, tables: ClassifyTables): string | undefined {
   const [frame, ...rest] = term.frames ?? [];
   if (frame?.key !== "slot:bar" || rest.length) return undefined;
-  if (frame.hosted || frame.party || frame.content || frame.inner?.length || frame.details?.length || term.details.length) {
-    throw noRule("a bar with a hosted party or its own detail");
+  if (frame.party || frame.content || frame.inner?.length || frame.details?.length || term.details.length) {
+    throw noRule("a bar with a party or its own detail");
   }
   const { gloss, ending } = frame.values;
   if (!isEnding(ending)) throw new Unrealized("missingValue", "a bar with no ending in the view");
@@ -171,7 +202,8 @@ function barLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, tables: Classify
   // An ability or say adverb's frame has no host-row gloss; its root alone picks the form.
   const found = ["th", "h"].map((pos) => leaf(pos, root, ending, tables)).filter((l): l is string => !!l && (!gloss || l.slice(l.indexOf("-") + 1).startsWith(gloss)));
   if (found.length !== 1) throw noRule(`a bar that is a built word (${gloss ?? root} on -${ending})`);
-  return found[0];
+  // A bar that hosts a party (stance-bars.md: `thobatham blalazun`) has its `bl-` word right after it.
+  return frame.hosted ? unit([found[0]!, landmarkOf(frame.hosted, tables)]) : found[0];
 }
 
 /** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit. */
@@ -189,7 +221,10 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
     case "list":
       return listGloss(term, pos, ending, listWriters((m, own) => roleTerm(m, pos, own, tables, style), tables, style), style);
     case "thing":
-      return unit([cited(withPlural(thingLeaf(term, pos, ending, tables), term.values), term.values), ...adjectives(term.details, tables, !term.named && ending === "l" && term.stem.length === 1)]);
+      return unit([
+        cited(withPlural(thingLeaf(term, pos, ending, tables), term.values), term.values),
+        ...adjectives(term.details, tables, !term.named && ending === "l" && term.stem.length === 1 && !term.values.built),
+      ]);
     case "speaker":
     case "listener":
     case "we":
@@ -225,20 +260,6 @@ function pointerLeaf(values: Record<string, string>, pos: string): string {
   if (!part || !reach) throw new Unrealized("missingValue", "a role pointer with no part or pointer vowel in the view");
   return `${pos}-←episode-${part}.${reach}`;
 }
-
-/** A role compound's reach vowel, as the glosser labels it (role-parts.md#reach). */
-const ROLE_REACH: Record<string, string> = {
-  a: "type",
-  e: "pair",
-  o: "role",
-  u: "episode",
-  ae: "situation",
-  ao: "using",
-  oe: "toward-role",
-  ua: "except-episode",
-  ue: "except-pair",
-  uo: "outside-role",
-};
 
 /**
  * A role compound on **-r** (roles.md#role-compounds: `zwuzeduyor`, *the one teaching*): the party its part names, in
@@ -299,9 +320,13 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListS
   // A verb list (joins.md#and-lists-a): each verb, then the `/v/` join.
   if (term.kind === "list") return listGloss(term, "v", undefined, listWriters((m) => verbTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind !== "thing") throw noRule(`a ${term.kind} verb`);
-  if (term.frames?.length || term.details.length) throw noRule("a verb with its own frame or detail");
+  // A built verb's hosted party (label-seams.md: `venumuthel blalazun`) is its `bl-` word, right after it.
+  const [hosted, ...rest] = term.details;
+  const party = hosted?.key === "slot:hosted" && hosted.hosted && term.values.built && !rest.length ? hosted.hosted : undefined;
+  if (term.frames?.length || (term.details.length && !party)) throw noRule("a verb with its own frame or detail");
   const own = term.values.ending;
-  return withPlural(thingLeaf(term, "v", own === "m" ? "m" : own === "r" ? undefined : "l", tables), term.values);
+  const verb = withPlural(thingLeaf(term, "v", own === "m" ? "m" : own === "r" ? undefined : "l", tables), term.values);
+  return party ? unit([verb, landmarkOf(party, tables, style)]) : verb;
 }
 
 /**
@@ -313,12 +338,13 @@ export function predicateTerm(term: MeaningTerm, tables: ClassifyTables, style: 
   if (term.kind === "list") return listGloss(term, "g", undefined, listWriters((m) => predicateTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind !== "thing" || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
   const [self, ...rest] = term.details;
+  // A built word (built.ts: a role word, a numeric prefix, a label seam) is its own detail, its stem as `root`.
+  if (self?.values.built && !rest.length) return plainWord(self, "g", self.values.root, tables);
   // A number predicate (numbers.md#counts: *there are three cats*): the number word is its own detail.
   if (self?.key === "lexReading:number" && !rest.length) return numberDetailLeaf(self);
   if (term.named) throw noRule("a thing predicate");
   if (!self || rest.length || self.key !== "slot:adj") throw noRule("a predicate that is not one plain adjective");
-  // A built word (a hook compound, a role word, a label seam) has no plain root on its detail: word-building, phase 2.
   const root = oneRoot(term, tables);
-  if (self.values.root !== root) throw noRule("a predicate that is a built word");
+  if (self.values.root !== root) throw noRule("a predicate whose word is not its own root");
   return plainWord(self, "g", root, tables);
 }
