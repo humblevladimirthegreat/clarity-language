@@ -6,6 +6,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import type { MeaningFrame, MeaningReading, MeaningTerm } from "./meaning.js";
 import { adverb, predicateTerm, roleTerm, Unrealized, verbTerm } from "./terms.js";
 import type { Ending } from "./words.js";
+import type { ListStyle } from "./lists.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -26,9 +27,21 @@ function newMemberOf(frame: MeaningFrame, roles: Partial<Record<Role, MeaningTer
   if (frame.member !== undefined || frame.holderHost || frame.occasions) return undefined;
   const role = ROLES.find((r) => roles[r] === frame.hosted);
   const term = role && roles[role]!;
-  // A new one (pronouns.md#a-new-one) brings in a new member, as the noun it copies does.
+  // A new one (pronouns.md#a-new-one) brings in a new member, as the noun it copies does; so does an and-list of
+  // such nouns, as one phrase where the list stands (joins.md#everything-ua).
   const newOne = term?.kind === "pronoun" && term.values?.ending === "l";
-  return term && (term.kind === "thing" || newOne) ? role : undefined;
+  const andList = term?.kind === "list" && term.values.series === "a";
+  return term && (term.kind === "thing" || newOne || andList) ? role : undefined;
+}
+
+/**
+ * A join's own binder frame (joins.md#everything-ua: `zual godozel`, *every dog*), hosting the list it closes in a role:
+ * the list's join writes it.
+ */
+function binderListOf(frame: MeaningFrame, roles: Partial<Record<Role, MeaningTerm>>): Role | undefined {
+  if (frame.family !== "binder" || !frame.key.startsWith("joinSeries:") || frame.hosted?.kind !== "list") return undefined;
+  if (frame.party || frame.content || frame.inner?.length || frame.details?.length || frame.member !== undefined || frame.holderHost || frame.occasions) return undefined;
+  return ROLES.find((r) => roles[r] === frame.hosted);
 }
 
 /**
@@ -47,10 +60,11 @@ function ranks(view: MeaningReading, framed: Map<number, Role>): Map<Role, numbe
 }
 
 /** The bare clause's morph gloss, or throws {@link Unrealized}. */
-export function claimGloss(view: MeaningReading, tables: ClassifyTables): string {
+export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: ListStyle = { standalone: true }): string {
   if (view.stanceLists?.length) throw noRule("a stance list");
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
-  const links = view.links.filter((link) => link.kind !== "anaphor");
+  // A shared link is the list's shared word (list-structure.md#shared-after-the-join); writing the word makes it again.
+  const links = view.links.filter((link) => link.kind !== "anaphor" && link.kind !== "shared");
   if (links.length) throw noRule(`a ${links[0]!.kind} link`);
   const claim = view.claim;
   if (claim.clauses) throw noRule("clause-join members");
@@ -58,6 +72,11 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables): string
   const framed = new Map<number, Role>();
   view.frames.forEach((frame, index) => {
     if (isStatementAct(frame)) return;
+    const binder = binderListOf(frame, claim.roles);
+    if (binder) {
+      framed.set(index, binder);
+      return;
+    }
     const role = newMemberOf(frame, claim.roles);
     if (!role) throw noRule(`frame ${frame.key}`);
     const ending = frame.values.ending;
@@ -70,7 +89,7 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables): string
   const rank = ranks(view, framed);
   const inFrameOrder = roles.filter((r) => rank.has(r)).sort((a, b) => rank.get(a)! - rank.get(b)!);
   const placed = roles.map((r) => (rank.has(r) ? inFrameOrder.shift()! : r));
-  const piece = (r: Role): string => roleTerm(claim.roles[r]!, r, endings.get(r), tables);
+  const piece = (r: Role): string => roleTerm(claim.roles[r]!, r, endings.get(r), tables, style);
   const before = placed.filter((_, i) => roles[i] !== "b").map(piece);
   const after = placed.filter((_, i) => roles[i] === "b").map(piece);
   const adverbs = claim.details.map((detail) => adverb(detail, tables));

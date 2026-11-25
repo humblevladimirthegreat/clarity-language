@@ -10,6 +10,10 @@ import type { MeaningDetail, MeaningTerm } from "./meaning.js";
 import { numberDetailLeaf, numberTermLeaf, resumedNumberLabel } from "./numbers.js";
 import { leaf, rootOf, type Ending } from "./words.js";
 import type { GapKind } from "./realize.js";
+import { listGloss, type ListStyle } from "./lists.js";
+
+/** Lists written with a join that has no items as the standalone join (joins.md#standalone-phrase). */
+const STANDALONE: ListStyle = { standalone: true };
 
 /** A part the realizer cannot write yet: why, and what. The caller files it under the reading's key. */
 export class Unrealized extends Error {
@@ -64,7 +68,7 @@ export function thingLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: st
 }
 
 /** A plain content word's detail (`slot:adj`, `unit:h`, `slot:w`) as one leaf under `pos`, its degree words before it. */
-function plainWord(detail: MeaningDetail, pos: string, root: string | undefined, tables: ClassifyTables): string {
+export function plainWord(detail: MeaningDetail, pos: string, root: string | undefined, tables: ClassifyTables): string {
   const ending = detail.values.ending;
   if (!root || !isEnding(ending) || ending === "n") throw noRule(`${detail.key} that is not a plain content word`);
   if (detail.content || detail.hosted || detail.frames?.length) throw noRule(`${detail.key} with a hosted word or frame`);
@@ -93,9 +97,11 @@ function adjectives(details: readonly MeaningDetail[] | undefined, tables: Class
 }
 
 /** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit. */
-export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables): string {
-  if ("frames" in term && term.frames?.length) throw noRule(`a ${term.kind} term with its own frame`);
+export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  if (term.kind !== "list" && "frames" in term && term.frames?.length) throw noRule(`a ${term.kind} term with its own frame`);
   switch (term.kind) {
+    case "list":
+      return listGloss(term, pos, ending, (m, own) => roleTerm(m, pos, own, tables, style), (d) => plainWord(d, "g", d.values.root, tables), style);
     case "thing":
       return unit([thingLeaf(term, pos, ending, tables), ...adjectives(term.details, tables)]);
     case "speaker":
@@ -154,6 +160,8 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
 
 /** The verb: a thing on `/v/`, named or on **-l**, with no frame or detail of its own. */
 export function verbTerm(term: MeaningTerm, tables: ClassifyTables): string {
+  // A verb list (joins.md#and-lists-a): each verb, then the `/v/` join.
+  if (term.kind === "list") return listGloss(term, "v", undefined, (m) => verbTerm(m, tables), (d) => plainWord(d, "g", d.values.root, tables), STANDALONE);
   if (term.kind !== "thing") throw noRule(`a ${term.kind} verb`);
   if (term.frames?.length || term.details.length) throw noRule("a verb with its own frame or detail");
   return thingLeaf(term, "v", "l", tables);
@@ -164,6 +172,8 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables): string {
  * which holds its ending and degree words.
  */
 export function predicateTerm(term: MeaningTerm, tables: ClassifyTables): string {
+  // A predicate list (joins.md#negation-u: `gamahum gul`): each predicate word, then the `/ɡ/` join.
+  if (term.kind === "list") return listGloss(term, "g", undefined, (m) => predicateTerm(m, tables), (d) => plainWord(d, "g", d.values.root, tables), STANDALONE);
   if (term.kind !== "thing" || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
   const [self, ...rest] = term.details;
   // A number predicate (numbers.md#counts: *there are three cats*): the number word is its own detail.

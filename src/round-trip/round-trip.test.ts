@@ -89,6 +89,28 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes lists: members then one join, a standalone join, a u denial, an everything join with its kind", () => {
+    const cases: [string, string][] = [
+      ["zazozon zalazun zal vowurol.", "zazozon zalazun zal vowurol."],
+      ["zazozon dal vayebel.", "zazozon dal vayebel."],
+      ["zual.", "zual."],
+      ["zual godozel dogozel vayebel.", "zual godozel dogozel vayebel."],
+      ["dogozel zual godozel vayebel.", "dogozel zual godozel vayebel."],
+      ["zuam gogozel guzemel.", "zuam gogozel guzemel."],
+      ["zazozon zol.", "zazozon zol."],
+      ["vowurol veruvol vam.", "vowurol veruvol vam."],
+      ["zazozon gamahum gul.", "zazozon gamahum gul."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+    // A later unnamed member's ending is not in the view (logged for the reader-gap unit).
+    const [gap] = project(readTurn("zodozel zogozel zal.", tables), tables).map((view) => realize(view, tables));
+    assert.ok(gap && "gap" in gap && gap.gap.kind === "missingValue", JSON.stringify(gap));
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

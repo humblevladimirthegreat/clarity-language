@@ -41,7 +41,12 @@ export function realize(view: MeaningReading, tables: ClassifyTables): Realized 
     if (!(error instanceof Unrealized)) throw error;
     return { gap: { kind: error.kind, key, detail: `${key}: ${error.message}` } };
   }
-  return spellGloss(gloss, key, tables);
+  const out = spellGloss(gloss, key, tables);
+  if (!("gap" in out)) return out;
+  // A join with no items glosses by its standalone job (*none*, *everything*) in a clause, and by its listed job in a
+  // bare fragment (`zual.`); when the first does not spell, the second is tried.
+  const listed = claimGloss(view, tables, { standalone: false });
+  return listed === gloss ? out : "gap" in spellGloss(listed, key, tables) ? out : spellGloss(listed, key, tables);
 }
 
 const indexes = new WeakMap<ClassifyTables, GlossIndex>();
