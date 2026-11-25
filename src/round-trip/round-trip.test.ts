@@ -155,6 +155,32 @@ describe("round trip", () => {
     assert.ok(unnamed && "gap" in unnamed && unnamed.gap.kind === "missingValue", JSON.stringify(unnamed));
   });
 
+  it("realizes comparatives: shared scale and equative words, bars, factors, number adverbs", () => {
+    const cases: [string, string[]][] = [
+      ["zazozon zalazun zol gamahum.", ["zazozon zalazun zol gamahum."]],
+      ["zahelan zol guzemel.", ["zahelan zol guzemel."]],
+      ["zazozon zalazun zol wohalal gamahum.", ["zazozon zalazun zol wohalal gamahum."]],
+      ["zazozon zalazun zoem gobulel.", ["zazozon zalazun zoem gobulel."]],
+      ["zalazun zazozon zoel hahunom vowurol.", ["zalazun zazozon zoel hahunom vowurol."]],
+      ["zazozon thubom zol guzemel.", ["zazozon thubom zol guzemel."]],
+      ["zazozon helam zol guzemel.", ["zazozon helam zol guzemel."]],
+      ["zazozon zalazun zoel gelazem hradol.", ["zazozon zalazun zoel gelazem hradol."]],
+      ["zalazun zazozon zoel gelazem hrudol.", ["zalazun zazozon zoel gelazem hrudol."]],
+      ["zalazun vowurol hragel.", ["zalazun hragel vowurol."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+    // A digitless scale word is written from `values.scale`, but its label does not spell yet.
+    const [scale] = project(readTurn("zazozon zalazun zol hral vowurol.", tables), tables).map((view) => realize(view, tables));
+    assert.ok(scale && "gap" in scale && scale.gap.kind === "noSpell" && scale.gap.detail.includes("h-how-often"), JSON.stringify(scale));
+    // A role compound on -r resumes its event: it spells only after the verb it names.
+    const role = project(readTurn("zazozon veduyol. zwuzeduyor vezuvel.", tables), tables).map((view) => realize(view, tables))[1];
+    assert.ok(role && "gap" in role && role.gap.kind === "noSpell" && role.gap.detail.includes("z-←episode-agent-teach"), JSON.stringify(role));
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

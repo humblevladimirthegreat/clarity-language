@@ -59,8 +59,13 @@ function pronoun(word: LexWord, here: Here): Term {
   // A bound pronoun's ending and pinned sense say which one it names (pronouns.md#a-new-one, resume-sense.md); a role
   // pointer's part and pointer vowel say which earlier part it names, and how far back (pronouns.md#role-pointers).
   const pointer: Record<string, string> = bind?.kind === "pointer" && bind.part && bind.pointerVowel ? { part: bind.part, pointer: bind.pointerVowel } : {};
+  // A role compound on -r keeps its part and reach vowel, since they say which party of the event it names and in
+  // what capacity (roles.md#role-compounds, role-parts.md#reach).
+  const family = word.family;
+  const role: Record<string, string> =
+    bind?.kind === "role" && family.kind === "x" && family.part && family.reachVowel ? { part: family.part, reach: family.reachVowel } : {};
   const values: Record<string, string> | undefined =
-    bind && word.ending ? { ending: word.ending, ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer } : undefined;
+    bind && word.ending ? { ending: word.ending, ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer, ...role } : undefined;
   const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}), ...(values ? { values } : {}) };
   here.ctx.terms.set(word, term);
   return term;
@@ -347,12 +352,20 @@ function hDetail(unit: HUnit, here: Here, clause: Clause): Detail {
   return detail;
 }
 
+/** The scale a digitless number shared after a rank join ranks on, by its letter (comparative-arity.md#amount-scale). */
+const DIGITLESS_SCALE: Record<string, string> = { g: "amount", h: "frequency", b: "time" };
+
 /** The shared words of one list part (list-structure.md#shared-after-the-join), each read by its class. */
 function sharedDetails(shared: CoordShared[], here: Here, clause: Clause, factor?: LexWord, noKind = false): Detail[] {
   const out = shared.map((item) => {
     const detail = item.word.pos === "g" ? adjDetail(item as GPackage, here, clause) : hDetail(item as HUnit, here, clause);
     const record = here.ctx.sharedItems.get(item);
     if (record) detail.values.role = noKind ? "kind" : record.role;
+    // A digitless number as a rank fence's shared word names the scale it ranks on by its letter
+    // (comparative-arity.md#amount-scale, #frequency-scale, #time-scale).
+    const scale = item.word.pos ? DIGITLESS_SCALE[item.word.pos] : undefined;
+    const ranked = detail.values.role === "scale" || detail.values.role === "equative";
+    if (ranked && scale && item.word.family.kind === "number" && !/\d/.test(detail.values.number ?? "")) detail.values.scale = scale;
     return detail;
   });
   if (factor) {

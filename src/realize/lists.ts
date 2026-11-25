@@ -108,7 +108,9 @@ function boundLandmark(bound: MeaningDetail, writers: ListWriters): string {
  */
 function sharedWord(detail: MeaningDetail, writers: ListWriters): string {
   const role = detail.values.role;
-  if (role !== "kind" && role !== "distribute") throw noRule(`a shared ${role ?? detail.key}`);
+  // A scale (comparatives.md#comparatives) or equative (comparatives.md#equatives) word is the quality a rank join's
+  // members are placed on, written after the join as a kind word is.
+  if (role !== "kind" && role !== "distribute" && role !== "scale" && role !== "equative") throw noRule(`a shared ${role ?? detail.key}`);
   if ((detail.key === "slot:adj" || detail.key === "unit:h") && !detail.values.root) {
     throw new Unrealized("missingValue", `a shared ${detail.key} that is a built word: the view has no root for it`);
   }

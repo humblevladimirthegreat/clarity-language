@@ -143,7 +143,7 @@ export function placeDetails(details: readonly MeaningDetail[], adverb: (detail:
   const out: PlacedDetails = { lead: [], before: [], after: [], attached: new Map() };
   const extraNouns: string[][] = [];
   for (const detail of details) {
-    if (detail.key === "unit:h") {
+    if (detail.key === "unit:h" || detail.key === "lexReading:number") {
       out.before.push(adverb(detail));
     } else if (isRelation(detail)) {
       const gloss = detail.values.gloss;

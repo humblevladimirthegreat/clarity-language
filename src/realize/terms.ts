@@ -7,7 +7,7 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import type { MeaningDetail, MeaningTerm } from "./meaning.js";
-import { numberDetailLeaf, numberTermLeaf, resumedNumberLabel } from "./numbers.js";
+import { hNumberLeaf, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, rootOf, type Ending } from "./words.js";
 import type { GapKind } from "./realize.js";
 import { listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
@@ -64,7 +64,21 @@ export function thingLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: st
     return `${pos}-${term.name.charAt(0).toUpperCase()}${term.name.slice(1)}n`;
   }
   if (!ending) throw new Unrealized("missingValue", "an unnamed thing with no ending in the view");
+  if (term.stem.length > 1 && term.stem.every((part) => part.length === 1)) return compoundLeaf(term, pos, ending, tables);
   return leafOf(pos, oneRoot(term, tables), ending, tables);
+}
+
+/**
+ * A two-root compound (compounds.md § Two roots, one word: `zuwedaxubudal`, *peanut butter*): each part's root by its sense, joined
+ * at the mid-word `x`, the last part a kind of the first, on the word's one ending.
+ */
+function compoundLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: string, ending: Ending, tables: ClassifyTables): string {
+  const roots = term.stem.map((part) => rootOf(part[0]!, tables));
+  if (roots.some((root) => !root)) throw new Unrealized("missingValue", "a compound part with no root");
+  const labels = roots.map((root) => leafOf(pos, root!, "l", tables).slice(pos.length + 1));
+  const last = leafOf(pos, roots.at(-1)!, ending, tables).slice(pos.length + 1);
+  if (!last.startsWith(labels.at(-1)!)) throw noRule("a compound whose last part's ending changes its label");
+  return `${pos}-${labels.join("-x-")}${last.slice(labels.at(-1)!.length)}`;
 }
 
 /** A plain content word's detail (`slot:adj`, `unit:h`, `slot:w`) as one leaf under `pos`, its degree words before it. */
@@ -82,6 +96,8 @@ export function plainWord(detail: MeaningDetail, pos: string, root: string | und
 
 /** A plain adverb (`unit:h`) with its degree words. */
 export function adverb(detail: MeaningDetail, tables: ClassifyTables): string {
+  // A number adverb (number-roles.md#number-as-adverb-by-marker: `hragel`, *three times*).
+  if (detail.key === "lexReading:number") return hNumberLeaf(detail);
   if (detail.key !== "unit:h") throw noRule(`claim detail ${detail.key}`);
   return plainWord(detail, "h", detail.values.root, tables);
 }
@@ -104,13 +120,42 @@ function adjectives(details: readonly MeaningDetail[] | undefined, tables: Class
 function listWriters(member: MemberWriter, tables: ClassifyTables, style: ListStyle): ListWriters {
   return {
     member,
-    shared: (detail) => plainWord(detail, detail.key === "unit:h" ? "h" : "g", detail.values.root, tables),
+    // A vague amount on a scale (vague-amounts.md: `zol gral`, *more*) is a number word; a factor on the scale word
+    // (comparative-arity.md#factor) is an `/h/` number right after it.
+    shared: (detail) => {
+      if (detail.key === "lexReading:number") return sharedNumberLeaf(detail);
+      const factors = (detail.details ?? []).filter((d) => d.kind === "amount" && d.key === "lexReading:number");
+      const word = factors.length ? { ...detail, details: detail.details!.filter((d) => !factors.includes(d)) } : detail;
+      return [plainWord(word, detail.key === "unit:h" ? "h" : "g", detail.values.root, tables), ...factors.map(hNumberLeaf)].join(" | ");
+    },
     landmark: (term) => roleTerm(term, "b", undefined, tables, style).replace(/^(\[?)b-/, "$1bl-"),
   };
 }
 
+/**
+ * A rank fence's bar (bars.md#bars): the `/th/` stance word or `/h/` intention adverb that stands where the second name
+ * would go, on the ending its `slot:bar` frame records. The frame's gloss names the stance; its word is whichever of the
+ * two letters the gloss index has a form of that gloss for. A bar that hosts a `/b/` party or holds a frame is a gap.
+ */
+function barLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, tables: ClassifyTables): string | undefined {
+  const [frame, ...rest] = term.frames ?? [];
+  if (frame?.key !== "slot:bar" || rest.length) return undefined;
+  if (frame.hosted || frame.party || frame.content || frame.inner?.length || frame.details?.length || term.details.length) {
+    throw noRule("a bar with a hosted party or its own detail");
+  }
+  const { gloss, ending } = frame.values;
+  if (!isEnding(ending)) throw new Unrealized("missingValue", "a bar with no ending in the view");
+  const root = oneRoot(term, tables);
+  // An ability or say adverb's frame has no host-row gloss; its root alone picks the form.
+  const found = ["th", "h"].map((pos) => leaf(pos, root, ending, tables)).filter((l): l is string => !!l && (!gloss || l.slice(l.indexOf("-") + 1).startsWith(gloss)));
+  if (found.length !== 1) throw noRule(`a bar that is a built word (${gloss ?? root} on -${ending})`);
+  return found[0];
+}
+
 /** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit. */
 export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  const bar = term.kind === "thing" ? barLeaf(term, tables) : undefined;
+  if (bar) return bar;
   if (term.kind !== "list" && "frames" in term && term.frames?.length) throw noRule(`a ${term.kind} term with its own frame`);
   switch (term.kind) {
     case "list":
@@ -153,6 +198,35 @@ function pointerLeaf(values: Record<string, string>, pos: string): string {
   return `${pos}-←episode-${part}.${reach}`;
 }
 
+/** A role compound's reach vowel, as the glosser labels it (role-parts.md#reach). */
+const ROLE_REACH: Record<string, string> = {
+  a: "type",
+  e: "pair",
+  o: "role",
+  u: "episode",
+  ae: "situation",
+  ao: "using",
+  oe: "toward-role",
+  ua: "except-episode",
+  ue: "except-pair",
+  uo: "outside-role",
+};
+
+/**
+ * A role compound on **-r** (roles.md#role-compounds: `zwuzeduyor`, *the one teaching*): the party its part names, in
+ * the capacity its reach vowel says, of the event it resumes, which is the verb it names.
+ */
+function roleResumeLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, values: Record<string, string>, pos: string, tables: ClassifyTables): string {
+  const part = POINTER_PART[values.part ?? ""];
+  const reach = ROLE_REACH[values.reach ?? ""];
+  if (!part || !reach) throw new Unrealized("missingValue", "a role compound with no part or reach vowel in the view");
+  if (values.ending !== "r") throw noRule(`a role compound on -${values.ending ?? "?"}`);
+  const event = term.antecedent;
+  if (event?.kind !== "thing" || event.named || event.details.length || event.frames?.length) throw noRule("a role compound after an event that is not a plain verb");
+  const verb = thingLeaf(event, "v", "l", tables);
+  return `${pos}-←${reach}-${part}-${verb.slice(verb.indexOf("-") + 1)}`;
+}
+
 /**
  * A pronoun's head word under `pos`: the generic (pronouns.md#generic-pronoun) and the topic pronoun
  * (topic.md#topic-pronoun) by their roots on **-n**; a bound `-r` pronoun, resume or role pointer, as the resume of
@@ -164,7 +238,8 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
   if (term.sort === "topic") return leafOf(pos, CLOSED.star, "n", tables);
   const values = term.values ?? {};
   if (!term.antecedent) throw noRule("a pronoun with no antecedent");
-  if (term.bind === "role" || term.bind === "tag") throw noRule(`a ${term.bind} pronoun`);
+  if (term.bind === "role") return roleResumeLeaf(term, values, pos, tables);
+  if (term.bind === "tag") throw noRule(`a ${term.bind} pronoun`);
   if (values.sense) throw noRule("a resume pinned to a sense");
   if (values.ending === "l") {
     const copied = term.antecedent;

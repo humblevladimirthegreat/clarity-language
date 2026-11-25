@@ -93,6 +93,38 @@ export function numberDetailLeaf(detail: MeaningDetail): string {
   return leafOf(fromBody(detail.values.number), "g", detail.values.ending);
 }
 
+/**
+ * A digitless number shared after a rank join (comparative-arity.md#amount-scale, #frequency-scale, #time-scale): the
+ * scale it ranks on, which the reader records in `values.scale`, is its letter and its label (`g-amount`,
+ * `h-how-often`, `b-later`), on its ending.
+ */
+const SCALE: Record<string, [string, string]> = { amount: ["g", "amount"], frequency: ["h", "how-often"], time: ["b", "later"] };
+
+/** A shared word that is a number: a digitless scale word by its scale, else a plain number on `/ɡ/`. */
+export function sharedNumberLeaf(detail: MeaningDetail): string {
+  const scale = detail.values.scale;
+  if (scale === undefined) return numberDetailLeaf(detail);
+  const [pos, name] = SCALE[scale] ?? [];
+  const suffix = ENDING_SUFFIX[detail.values.ending ?? ""];
+  if (!pos || suffix === undefined) throw noRule(`a ${scale} scale on -${detail.values.ending ?? "?"}`);
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("a scale word with a detail, frame or hosted word");
+  return `${pos}-${name}${suffix}`;
+}
+
+/**
+ * A factor on a shared scale word (comparative-arity.md#factor: `zoel gelazem hradol`, *twice as big as*): an `amount`
+ * detail of the scale word, written as an `/h/` number right after it.
+ */
+export function hNumberLeaf(detail: MeaningDetail): string {
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("an /h/ number with a detail, frame or hosted word");
+  if (detail.values.gloss) throw noRule("an /h/ number with a reading of its own");
+  const number = fromBody(detail.values.number);
+  // The inverse marker divides (comparative-arity.md#factor: `hrudol`, *half as*).
+  if (number.marker !== "-") return leafOf(number, "h", detail.values.ending);
+  const minus = leafOf(number, "h", detail.values.ending);
+  return minus.replace(/^h-minus-/, "h-divided-by-");
+}
+
 /** The label a resume of a number term glosses with after `←` (number-markers.md#number-endings). */
 export function resumedNumberLabel(term: Extract<MeaningTerm, { kind: "number" }>): string {
   if (term.values?.gloss) throw noRule("a resume of a number with a reading of its own");
