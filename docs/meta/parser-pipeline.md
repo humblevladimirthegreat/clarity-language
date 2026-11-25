@@ -214,6 +214,25 @@ Alternatives considered and rejected:
 
 Revisit precedence if later work keeps adding host kinds. Without it, each new host is one more `hosted` case and token type. With it, each is one declaration.
 
+#### Reshaping that stays after the parse
+<a id="reshaping-stays"></a>
+
+`src/parse/sentence-build.ts` mostly maps tree nodes one for one. The rules below still move or retype material after the parse, because each decides on a word the parser hasn't read when a production would have to choose:
+
+| Rule | Deciding fact | Example |
+|---|---|---|
+| `disambiguateClause` | whether the noun is the whole clause, at its end | `zazozon gamahum gul.` |
+| `markPredicateAdj` | only `/h/` words up to the clause's end | `zazozon gamahum hahunom.` |
+| `mergeIslandJoins` | the joined noun after the island | `zazozon { zalazun zal } zam vowurol.` |
+| `mergeAdjLists` (with `flattenGCoord`, `flattenHUnits`, `expandUnits`) | the `/ɡ/` join, which closes on the right | `zazozon gelazem gamezem gal.` |
+| `splitUnits`, verb case | the next unit (a `/z/`, or a verb after an `o` / `u` / `ae` / `ue` / `ua` join) | `zazozon vorn zalazun vuguyol.` |
+| `tagScale` | the word and the rank join before it; the grammar would need one more lexer retype | `zazozon zalazun zol bral vavurol.` |
+| `buildUtterances` | the sentence before, across a period | `yom zazozon vowurol. zalazun veruvol.` |
+
+Moving any of these into the grammar would trade a post-parse rule for a context retype.
+
+`splitUnits` (noun case) and `joinClauseItems` are different: the forward stand-in word itself decides where the dependent starts (`zazozon vezuyol balazun darl zodozel veruvol xal zalazun vowurol.`). They stay because the grammar form would need a stand-in variant of each unit-chain rule (noun head, a bar's hosted `/b/`, an `/h/` host's hosted `/b/`, a named stand-in verb), the shape rejected above for hosting, and the learner sees no difference.
+
 Recovery is off. Illegal left fences and binderless islands throw `SentenceParseError`.
 
 ### Word slots
