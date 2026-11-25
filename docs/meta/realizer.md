@@ -21,7 +21,7 @@ The realizer never reads a reading directly. It reads the **meaning view**: a co
 - `order` and `unordered` as indices into the reading's frames, with each unsettled pair in text order. [Reader rule 3](interpreter.md#reader-rules) leaves the order of an unsettled pair open, so the view keeps the order the text gave and the realizer never picks one;
 - links by kind and key, with the reading they point to (`to`), the frame they carry, and the terms and details they name;
 - a pronoun's bind as the bind's kind, with its antecedent as a meaning-view term;
-- the identities: a thing's roots, each named by its lexicon row's concrete sense (a listed compound stem as one root, and a root with no row by its spelling); a name as its root spelling; a plain adjective's, adverb's or degree word's root, as the reader's `values.root`; a literal's payload; and a number's stem (on a number detail, as the reader's `values.number`). These are spellings by design: a different root or name is a different thing, not a different way to say the same thing.
+- the identities: a thing's roots, each named by its lexicon row's concrete sense (a listed compound stem as one root, and a root with no row by its spelling); a name as its root spelling; a plain adjective's, adverb's or degree word's root, as the reader's `values.root`; the root of a `-r` that reaches nothing earlier, as the pronoun's `values.root`; a literal's payload; and a number's stem (on a number detail, as the reader's `values.number`). These are spellings by design: a different root or name is a different thing, not a different way to say the same thing.
 
 **What the view drops.** Everything that is form or a pointer into the parse:
 

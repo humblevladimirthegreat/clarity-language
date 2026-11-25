@@ -129,8 +129,29 @@ export type Detail = {
  * (tone-marks.md#showing-your-tone).
  */
 export type Term =
-  | { kind: "thing"; head: LexWord; root: string; named: boolean; details: Detail[]; frames?: Frame[] }
-  | { kind: "speaker" | "listener" | "we"; word: LexWord; details?: Detail[]; frames?: Frame[] }
+  | {
+      kind: "thing";
+      head: LexWord;
+      root: string;
+      named: boolean;
+      /**
+       * The head word's ending, which says how to take the root (`ending`: `l` a new concrete one, `m` the abstract
+       * sense, `n` a name, `ln` an instance of a name, `r` a resume; word-endings.md), `plural: "x"` for an anchor and
+       * its associates (plurality.md#associative), and `citation: "bare"` for a word with no role letter
+       * (word-endings.md#citation-forms).
+       */
+      values?: Record<string, string>;
+      details: Detail[];
+      frames?: Frame[];
+    }
+  | {
+      kind: "speaker" | "listener" | "we";
+      word: LexWord;
+      /** The word's `plural` and `ending`, as on a thing. */
+      values?: Record<string, string>;
+      details?: Detail[];
+      frames?: Frame[];
+    }
   | {
       kind: "pronoun";
       word: LexWord;

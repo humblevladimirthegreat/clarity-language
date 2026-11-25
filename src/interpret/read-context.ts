@@ -139,6 +139,8 @@ export function wordValues(word: LexWord): Record<string, string> {
   if (family.kind === "hook" && word.ending) values.series = family.form.slice(0, -word.ending.length);
   if (word.overlay) values.gloss = word.overlay.gloss;
   if (word.ending && family.kind !== "say") values.ending = word.ending;
+  // A plural `-x` on the word (plurality.md#associative).
+  if (word.plural) values.plural = "x";
   return values;
 }
 
@@ -329,7 +331,20 @@ function rootOf(word: LexWord): string {
 }
 
 export function thing(word: LexWord): Term {
-  return { kind: "thing", head: word, root: rootOf(word), named: word.ending === "n" || word.ending === "ln", details: [] };
+  return { kind: "thing", head: word, root: rootOf(word), named: word.ending === "n" || word.ending === "ln", values: termValues(word), details: [] };
+}
+
+/**
+ * A term word's own ending and plural (word-endings.md, plurality.md#associative): the ending says how to take the
+ * root, and `-x` names an anchor with its associates, so a term keeps both as meaning. A word with no role letter is
+ * a bare citation, the word cited outside a sentence (word-endings.md#citation-forms): `citation: "bare"`.
+ */
+export function termValues(word: LexWord): Record<string, string> {
+  return {
+    ...(word.ending ? { ending: word.ending } : {}),
+    ...(word.plural ? { plural: "x" } : {}),
+    ...(word.pos ? {} : { citation: "bare" }),
+  };
 }
 
 /**

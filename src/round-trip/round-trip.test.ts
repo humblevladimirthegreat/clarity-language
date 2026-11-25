@@ -100,15 +100,14 @@ describe("round trip", () => {
       ["zazozon zol.", "zazozon zol."],
       ["vowurol veruvol vam.", "vowurol veruvol vam."],
       ["zazozon gamahum gul.", "zazozon gamahum gul."],
+      // A later unnamed member on its own ending, which the reader keeps in the term's values.
+      ["zodozel zogozel zal.", "zodozel zogozel zal."],
     ];
     for (const [text, want] of cases) {
       const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
       assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
       assert.equal(sameReadings(text, want, tables).verdict, "same", text);
     }
-    // A later unnamed member's ending is not in the view (logged for the reader-gap unit).
-    const [gap] = project(readTurn("zodozel zogozel zal.", tables), tables).map((view) => realize(view, tables));
-    assert.ok(gap && "gap" in gap && gap.gap.kind === "missingValue", JSON.stringify(gap));
   });
 
   it("realizes a hooked join's bound, a SHARED word for each member, and respectively before the later join", () => {
@@ -144,15 +143,32 @@ describe("round trip", () => {
       ["zazozon vowurol. al zalazun vowurol.", ["zazozon vowurol.", "al zalazun vowurol."]],
       ["zazozon hanem blalazun vezuyol.", ["zazozon hanem blalazun vezuyol."]],
       ["zazozon vowurol uom thagom.", ["zazozon vowurol uom thagom."]],
+      // An unnamed relation landmark on its own ending.
+      ["zazozon vowurol hohom blezahol.", ["zazozon hohom blezahol vowurol."]],
     ];
     for (const [text, want] of cases) {
       const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
       assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
       assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
     }
-    // An unnamed relation landmark has no new-member frame, so the view has no ending for it.
-    const [unnamed] = project(readTurn("zazozon vowurol hohom blezahol.", tables), tables).map((view) => realize(view, tables));
-    assert.ok(unnamed && "gap" in unnamed && unnamed.gap.kind === "missingValue", JSON.stringify(unnamed));
+  });
+
+  it("realizes a term's own ending, plural and citation: later list members, landmarks, -m and -r verbs, -ln, -x", () => {
+    const cases: [string, string][] = [
+      ["zazozon bozerom gradol vowurol.", "zazozon vowurol bozerom gradol."],
+      ["zaxual bluzahal vezuvel el bohahal.", "zaxual bluzahal vezuvel el bohahal."],
+      ["zazozoln vowurol.", "zazozoln vowurol."],
+      ["zodozer vowurol.", "zodozer vowurol."],
+      ["zazozonx vowurol.", "zazozonx vowurol."],
+      ["zawanx vowurol.", "zawanx vowurol."],
+      ["zazozon vozuyelx", "zazozon vozuyelx."],
+      ["azozol", "azozol."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
   });
 
   it("realizes comparatives: shared scale and equative words, bars, factors, number adverbs", () => {

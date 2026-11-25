@@ -35,6 +35,12 @@ const isEnding = (value: string | undefined): value is Ending => value === "l" |
 /** A morph-gloss unit: one piece alone, several in brackets (glosses.md#phrase-brackets). */
 const unit = (pieces: string[]): string => (pieces.length === 1 ? pieces[0]! : `[${pieces.join(" | ")}]`);
 
+/** A word's leaf with its own plural `-x`, which glosses as `-x` after the label (plurality.md#associative). */
+const withPlural = (gloss: string, values: Record<string, string> | undefined): string => (values?.plural ? `${gloss}-x` : gloss);
+
+/** A bare citation's leaf, with no role letter (word-endings.md#citation-forms: `azozol`, glossed `swan`). */
+const cited = (gloss: string, values: Record<string, string> | undefined): string => (values?.citation ? gloss.slice(gloss.indexOf("-") + 1) : gloss);
+
 /** The leaf for a root, or a `noSpell` part when the gloss index has no such form. */
 function leafOf(pos: string, root: string, ending: Ending, tables: ClassifyTables): string {
   const out = leaf(pos, root, ending, tables);
@@ -52,17 +58,26 @@ function oneRoot(term: Extract<MeaningTerm, { kind: "thing" }>, tables: Classify
 }
 
 /**
- * A thing's head word under `pos`. A name is its own root on **-n** (proper-names.md#proper-name-n); an unnamed thing
- * takes `ending`, which the caller knows from the term's new-member frame (word-endings.md).
+ * A thing's head word under `pos`, without its plural. A name is its own root on **-n**
+ * (proper-names.md#proper-name--n), and an instance of it on **-ln** its label marked `.instance`
+ * (proper-names.md#name-instance--ln); a thing on **-r**, a verb's resume or a `-r` that reaches no antecedent, is the
+ * resume of its root (pronouns.md#resume-r). An unnamed thing takes `ending` when the caller knows it from a frame (its
+ * new-member frame), else its own ending (word-endings.md).
  */
 export function thingLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, pos: string, ending: Ending | undefined, tables: ClassifyTables): string {
+  const own = term.values.ending;
+  // A resume glosses as `←` and the label of the word it resumes (glosses.md#round-trip).
+  if (own === "r" && !ending) {
+    const resumed = leafOf(pos, oneRoot(term, tables), "l", tables);
+    return `${pos}-←${resumed.slice(pos.length + 1)}`;
+  }
   if (term.named) {
     if (!term.name || term.stem.length !== 1) throw noRule("a name of several parts");
-    const named = leaf(pos, term.name, "n", tables);
-    if (named) return named;
     // A name with no lexicon row: its gloss is the name itself (glosses.md#word-shape).
-    return `${pos}-${term.name.charAt(0).toUpperCase()}${term.name.slice(1)}n`;
+    const named = leaf(pos, term.name, "n", tables) ?? `${pos}-${term.name.charAt(0).toUpperCase()}${term.name.slice(1)}n`;
+    return own === "ln" ? `${named}.instance` : named;
   }
+  ending ??= isEnding(own) ? own : undefined;
   if (!ending) throw new Unrealized("missingValue", "an unnamed thing with no ending in the view");
   if (term.stem.length > 1 && term.stem.every((part) => part.length === 1)) return compoundLeaf(term, pos, ending, tables);
   return leafOf(pos, oneRoot(term, tables), ending, tables);
@@ -91,7 +106,7 @@ export function plainWord(detail: MeaningDetail, pos: string, root: string | und
     if (d.details?.length) throw noRule(`a degree word with its own detail`);
     return plainWord(d, "w", d.values.root, tables);
   });
-  return unit([...degrees, leafOf(pos, root, ending, tables)]);
+  return unit([...degrees, withPlural(leafOf(pos, root, ending, tables), detail.values)]);
 }
 
 /** A plain adverb (`unit:h`) with its degree words. */
@@ -165,15 +180,15 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
     case "list":
       return listGloss(term, pos, ending, listWriters((m, own) => roleTerm(m, pos, own, tables, style), tables, style), style);
     case "thing":
-      return unit([thingLeaf(term, pos, ending, tables), ...adjectives(term.details, tables, !term.named && ending === "l" && term.stem.length === 1)]);
+      return unit([cited(withPlural(thingLeaf(term, pos, ending, tables), term.values), term.values), ...adjectives(term.details, tables, !term.named && ending === "l" && term.stem.length === 1)]);
     case "speaker":
     case "listener":
     case "we":
-      return unit([leafOf(pos, SPECIAL_ROOT[term.kind], "n", tables), ...adjectives(term.details, tables)]);
+      return unit([withPlural(leafOf(pos, SPECIAL_ROOT[term.kind], "n", tables), term.values), ...adjectives(term.details, tables)]);
     case "pronoun":
-      return unit([pronounLeaf(term, pos, ending, tables), ...adjectives(term.details, tables)]);
+      return unit([withPlural(pronounLeaf(term, pos, ending, tables), term.values), ...adjectives(term.details, tables)]);
     case "number":
-      return unit([numberTermLeaf(term, pos), ...adjectives(term.details, tables)]);
+      return unit([cited(numberTermLeaf(term, pos), term.values), ...adjectives(term.details, tables)]);
     default:
       throw noRule(`a ${term.kind} term`);
   }
@@ -241,6 +256,11 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
   if (term.sort === "generic") return leafOf(pos, CLOSED.person, "n", tables);
   if (term.sort === "topic") return leafOf(pos, CLOSED.star, "n", tables);
   const values = term.values ?? {};
+  // A `-r` that reaches nothing earlier, the one you both already know (pronouns.md#resume-r), by its own root.
+  if (!term.antecedent && values.ending === "r" && values.root && !values.sense) {
+    const known = leafOf(pos, values.root, "l", tables);
+    return `${pos}-←${known.slice(pos.length + 1)}`;
+  }
   if (!term.antecedent) throw noRule("a pronoun with no antecedent");
   if (term.bind === "role") return roleResumeLeaf(term, values, pos, tables);
   if (term.bind === "tag") throw noRule(`a ${term.bind} pronoun`);
@@ -270,7 +290,8 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListS
   if (term.kind === "list") return listGloss(term, "v", undefined, listWriters((m) => verbTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind !== "thing") throw noRule(`a ${term.kind} verb`);
   if (term.frames?.length || term.details.length) throw noRule("a verb with its own frame or detail");
-  return thingLeaf(term, "v", "l", tables);
+  const own = term.values.ending;
+  return withPlural(thingLeaf(term, "v", own === "m" ? "m" : own === "r" ? undefined : "l", tables), term.values);
 }
 
 /**

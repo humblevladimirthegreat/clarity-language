@@ -34,7 +34,7 @@ import type {
   VpCoord,
 } from "../parse/types.js";
 import { classOf } from "./classes.js";
-import { constructionFor, copyScope, detailOf, frameOf, framedMember, holderHostValues, hostOnHead, link, memberFrame, nestedKinds, nextSentence, placeFrame, previousSentence, thing, unread, wordKey, wordValues, type Ctx, type Here, type ReadOptions } from "./read-context.js";
+import { constructionFor, copyScope, detailOf, frameOf, framedMember, holderHostValues, hostOnHead, link, memberFrame, nestedKinds, nextSentence, placeFrame, previousSentence, termValues, thing, unread, wordKey, wordValues, type Ctx, type Here, type ReadOptions } from "./read-context.js";
 import { throughAntecedent } from "./steps.js";
 import { placeTones } from "./tones.js";
 import type { Detail, Frame, Link, Reading, ReadingId, StanceList, Term } from "./types.js";
@@ -64,8 +64,10 @@ function pronoun(word: LexWord, here: Here): Term {
   const family = word.family;
   const role: Record<string, string> =
     bind?.kind === "role" && family.kind === "x" && family.part && family.reachVowel ? { part: family.part, reach: family.reachVowel } : {};
+  // A `-r` that reaches nothing earlier is the one you both already know (pronouns.md#resume-r): its root says which.
+  const known: Record<string, string> = !antecedent && family.kind === "content" ? { root: family.roots.join("") } : {};
   const values: Record<string, string> | undefined =
-    bind && word.ending ? { ending: word.ending, ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer, ...role } : undefined;
+    bind && word.ending ? { ...termValues(word), ...(word.resumeSense ? { sense: word.resumeSense } : {}), ...pointer, ...role, ...known } : undefined;
   const term: Term = { kind: "pronoun", word, ...(sort ? { sort } : {}), ...(bind ? { bind } : {}), ...(antecedent ? { antecedent } : {}), ...(values ? { values } : {}) };
   here.ctx.terms.set(word, term);
   return term;
@@ -157,12 +159,12 @@ function buildHeadTerm(word: LexWord, here: Here, clause: Clause): Term {
   const ctx = here.ctx;
   if (ctx.blanks.has(word)) return { kind: "blank", word };
   // A number resume (`drager`, number-markers.md#number-endings) is a pronoun on the number it resumes.
-  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem, values: wordValues(word) };
+  if (family.kind === "number" && !ctx.anaphors.has(word)) return { kind: "number", word, stem: family.stem, values: { ...wordValues(word), ...termValues(word) } };
   if (family.kind === "foreign") return { kind: "literal", word, payload: family.payload };
   if (family.kind === "writingSpan") return spanTerm(word, here);
   if (family.kind === "content" && word.ending === "n" && family.roots.length === 1) {
-    if (family.roots[0] === CLOSED.microphone) return { kind: "speaker", word };
-    if (family.roots[0] === CLOSED.headphones) return { kind: "listener", word };
+    if (family.roots[0] === CLOSED.microphone) return { kind: "speaker", word, values: termValues(word) };
+    if (family.roots[0] === CLOSED.headphones) return { kind: "listener", word, values: termValues(word) };
     // `zayan`, the turn's *we* (R4a-7); `zayanx` stays a group thing.
     if (family.roots[0] === CLOSED.handshake && !word.plural) return { kind: "we", word };
   }
@@ -687,11 +689,11 @@ function holderParty(word: LexWord, here: Here): Term | undefined {
     if (end.kind !== "pronoun" || end.sort === "generic") return term;
   }
   const root = family.rightRoots.length === 1 ? family.rightRoots[0] : undefined;
-  if (root === CLOSED.microphone) return { kind: "speaker", word };
-  if (root === CLOSED.headphones) return word.ending === "n" ? { kind: "listener", word } : undefined;
+  if (root === CLOSED.microphone) return { kind: "speaker", word, values: termValues(word) };
+  if (root === CLOSED.headphones) return word.ending === "n" ? { kind: "listener", word, values: termValues(word) } : undefined;
   const named = word.ending === "n" || word.ending === "ln" || word.ending === "r";
   if (root === CLOSED.handshake && named) return { kind: "we", word };
-  return { kind: "thing", head: word, root: family.rightRoots.join(""), named, details: [] };
+  return { kind: "thing", head: word, root: family.rightRoots.join(""), named, values: termValues(word), details: [] };
 }
 
 /**

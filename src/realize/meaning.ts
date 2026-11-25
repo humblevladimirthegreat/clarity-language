@@ -81,10 +81,13 @@ export type MeaningTerm =
       named: boolean;
       /** A name is an identity: its root spelling, as written. */
       name?: string;
+      /** The reader's `values`: the head's `ending`, `plural` and `citation`. */
+      values: Record<string, string>;
       details: MeaningDetail[];
       frames?: MeaningFrame[];
     }
-  | ({ kind: "speaker" | "listener" | "we" | "blank" } & Attached)
+  | ({ kind: "speaker" | "listener" | "we"; values?: Record<string, string> } & Attached)
+  | ({ kind: "blank" } & Attached)
   | ({ kind: "pronoun"; sort?: "generic" | "topic"; bind?: AnaphorKind; antecedent?: MeaningTerm; values?: Record<string, string> } & Attached)
   | ({ kind: "literal"; payload: string } & Attached)
   | ({ kind: "number"; stem: NumberStem; values?: Record<string, string> } & Attached)
@@ -230,12 +233,14 @@ export class Projector {
             stem: this.stem(term),
             named: term.named,
             name: term.named ? term.root : undefined,
+            values: { ...(term.values ?? {}) },
             details: this.details(term.details),
             frames: opt(term.frames, (frames) => this.frames(frames)),
           };
         case "speaker":
         case "listener":
         case "we":
+          return { kind: term.kind, values: opt(term.values, (values) => ({ ...values })), ...attached(term) };
         case "blank":
           return { kind: term.kind, ...attached(term) };
         case "pronoun":
