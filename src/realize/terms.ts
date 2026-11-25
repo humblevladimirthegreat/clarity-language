@@ -35,16 +35,16 @@ const SPECIAL_ROOT = { speaker: CLOSED.microphone, listener: CLOSED.headphones, 
 const isEnding = (value: string | undefined): value is Ending => value === "l" || value === "m" || value === "n";
 
 /** A morph-gloss unit: one piece alone, several in brackets (glosses.md#phrase-brackets). */
-const unit = (pieces: string[]): string => (pieces.length === 1 ? pieces[0]! : `[${pieces.join(" | ")}]`);
+export const unit = (pieces: string[]): string => (pieces.length === 1 ? pieces[0]! : `[${pieces.join(" | ")}]`);
 
 /** A word's leaf with its own plural `-x`, which glosses as `-x` after the label (plurality.md#associative). */
-const withPlural = (gloss: string, values: Record<string, string> | undefined): string => (values?.plural ? `${gloss}-x` : gloss);
+export const withPlural = (gloss: string, values: Record<string, string> | undefined): string => (values?.plural ? `${gloss}-x` : gloss);
 
 /** A bare citation's leaf, with no role letter (word-endings.md#citation-forms: `azozol`, glossed `swan`). */
 const cited = (gloss: string, values: Record<string, string> | undefined): string => (values?.citation ? gloss.slice(gloss.indexOf("-") + 1) : gloss);
 
 /** The leaf for a root, or a `noSpell` part when the gloss index has no such form. */
-function leafOf(pos: string, root: string, ending: Ending, tables: ClassifyTables): string {
+export function leafOf(pos: string, root: string, ending: Ending, tables: ClassifyTables): string {
   const out = leaf(pos, root, ending, tables);
   if (!out) throw new Unrealized("noSpell", `no ${pos} form of ${root} on -${ending}`);
   return out;

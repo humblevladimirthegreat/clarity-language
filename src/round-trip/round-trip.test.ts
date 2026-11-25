@@ -242,6 +242,30 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes act words, firm, soft and for now, stacked acts in order, each act's default order, calls and reactions", () => {
+    const cases: [string, string[]][] = [
+      ["yam zazozon vowurol.", ["yam zazozon vowurol."]],
+      ["yur vowurol.", ["yur vowurol."]],
+      // A question's verb second, a command's first with the receiver right after it.
+      ["yel zazozon dubogal vabuvul.", ["yel zazozon vabuvul dubogal."]],
+      ["yol bazozon varal.", ["yol varal bazozon."]],
+      ["yul dubogal vabuvul.", ["yul dubogal vabuvul."]],
+      // A stacked statement act is written; the first act word picks the order.
+      ["yal yel zazozon vowurol.", ["yal yel zazozon vowurol."]],
+      ["yol yel vabuvul dubogal zawan.", ["yol yel vabuvul zawan dubogal."]],
+      ["yalon golowon.", ["yalon golowon."]],
+      ["glolamam yalazun.", ["glolamam yalazun."]],
+      ["yazozon al zalazun vowurol.", ["yazozon al zalazun vowurol."]],
+      ["yemel gelazem.", ["yemel gelazem."]],
+      ["welazem yemem.", ["welazem yemem."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

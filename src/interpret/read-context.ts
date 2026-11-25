@@ -215,6 +215,8 @@ export function fromScope(frame: ScopeFrame, tables: ClassifyTables | undefined)
   if (frame.tone) return toneFrame(frame.tone);
   const out = frameOf(frame.key, frame.word, undefined);
   if (frame.holderHost) out.values = { ...holderHostValues(frame.word, tables), ...out.values };
+  // A reaction is its root under `/y/` (speech-moves.md#interjections-reactions): the root is what it reacts with.
+  if (frame.key === "edge:interjection" && frame.word?.family.kind === "content") out.values.root = frame.word.family.roots.join("");
   return {
     ...out,
     family: frame.family,

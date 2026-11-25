@@ -9,6 +9,7 @@ import { placeDetails, zoneGloss } from "./details.js";
 import type { Ending } from "./words.js";
 import type { ListStyle } from "./lists.js";
 import { assignedTags } from "./tags.js";
+import { actGloss, actOrder, callGloss, interjectionGloss } from "./acts.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -129,8 +130,18 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const framed = new Map<number, Role>();
   const zones: string[] = [];
   const hostedEndings = new Map<MeaningTerm, Ending>();
+  // The opening `/y/` words (speech-moves.md): calls and reactions, then the act words, in the reading's order. A lone
+  // plain statement act is left out (speech-moves.md#speech-act-beginner); a stacked one is written.
+  const acts = view.frames.filter((frame) => frame.key === "edge:force");
+  const opening: string[] = [];
+  const actWords: string[] = [];
   view.frames.forEach((frame, index) => {
-    if (isStatementAct(frame)) return;
+    if (frame.key === "edge:force") {
+      if (acts.length > 1 || !isStatementAct(frame)) actWords.push(actGloss(frame, tables));
+      return;
+    }
+    if (frame.key === "edge:vocative") return void opening.push(callGloss(frame, tables));
+    if (frame.key === "edge:interjection") return void opening.push(interjectionGloss(frame, tables));
     // A join's binder frame over a hook's landmark (`el bual`, *everywhere*) is written by the landmark's join too.
     const binder = binderListOf(frame, claim.roles, claim.details);
     if (binder === "landmark") return;
@@ -174,15 +185,25 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
     return [piece, ...attached];
   };
   const piece = (r: Role): string[] => withAttached(r, roleTerm(claim.roles[r]!, r, endings.get(r), tables, style));
-  const before = placed.filter((_, i) => roles[i] !== "b").flatMap(piece);
+  const groups = placed.filter((_, i) => roles[i] !== "b").map(piece);
   const after = placed.filter((_, i) => roles[i] === "b").flatMap(piece);
   const verb = claim.verb ? withAttached("v", verbTerm(claim.verb, tables, style)) : [];
+  // Each act's default order (speech-moves.md#act-word-order): a question puts its verb second, a command first, and
+  // the receiver stays right after the verb; a statement or prohibition keeps the verb late.
+  const order = verb.length ? actOrder(acts.filter((act) => acts.length > 1 || !isStatementAct(act))) : "statement";
+  const lead = order === "question" ? (groups.shift() ?? []) : [];
+  const verbFirst = order === "statement" ? [] : [...lead, ...verb, ...after];
+  const before = groups.flat();
   const predicate = claim.predicate.map((term) => predicateTerm(term, tables, style));
   if (details.attached.size) throw noRule(`a hook after a /${[...details.attached.keys()][0]}/ part the claim does not have`);
   if (tags.size) throw noRule("a tag on a term the claim does not write in a role");
   // Adverbs and hosted relations right before the verb or predicate (clause.md#adverbs-h places them anywhere); extra
   // nouns after it (clause.md#extra-nouns), hooked ones after the plain ones; a discourse hook first, a zone last.
-  const pieces = [...front, ...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];
+  // The calls and reactions first, a discourse hook right before the first act word (firm-soft.md#firm-or-soft-act).
+  const body = verbFirst.length
+    ? [...verbFirst, ...before, ...details.lead, ...details.before, ...predicate, ...details.after, ...resumes, ...zones]
+    : [...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];
+  const pieces = [...opening, ...front, ...actWords, ...body];
   if (!pieces.length) throw noRule("an empty claim");
   return pieces.join(" | ");
 }

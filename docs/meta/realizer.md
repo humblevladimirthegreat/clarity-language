@@ -47,7 +47,10 @@ Where the grammar allows several forms with the same meaning, the realizer write
 | The roles in the default order: subject, direct object, verb, then a plain extra noun (`z`, `d`, `v`, `b`) | `claim` | `clause.md#extra-nouns` |
 | Roles whose nouns bring in a new member keep the order their frames cover each other in, the earlier word covering the later | `slot:newMember` | `clause.md#which-covers-which` |
 | Adverbs, number adverbs among them, right before the verb, or before the predicate when the clause has no verb | `unit:h`, `lexReading:number` | `clause.md#adverbs-h` |
-| The statement act `yal` left out | `edge:force` | `speech-moves.md#speech-act-beginner` |
+| The statement act `yal` left out when it is the turn's only act word | `edge:force` | `speech-moves.md#speech-act-beginner` |
+| The body in the default order of its first act word: a question's verb second, a command's verb first, the receiver right after the verb; a statement or prohibition with the verb late | `edge:force` | `speech-moves.md#act-word-order` |
+| Calls and reactions first, then a discourse hook, then the act words in the reading's order, then the body | `edge:force`, `edge:vocative`, `edge:interjection` | `firm-soft.md#firm-or-soft-act`, `speech-moves.md#vocative` |
+| A call's or a reaction's `gl-` and `/w/` words before its `/y/` word, its `/ɡ/` words after it | `edge:vocative`, `edge:interjection` | `more-turn-words.md#describe-turn-word` |
 | A role pointer on `-r` written as the resume of the one it names, and a chain of `-r` resumes as the resume of the first mention; a role pointer that names a list, which has no resume, as the role pointer, from its part and pointer vowel | `anaphor:pointer` | `pronouns.md#role-pointers` |
 | A new one on `-l` written as the noun it copies, on the new member's ending | `slot:newMember` | `pronouns.md#a-new-one` |
 | A list as its members in the order the reading gives them, then one join that closes the fence, then the kind its members share or the words that describe each of them; a join with no items as the standalone join | `joinSeries:ua`, `slot:newMember`, `shared:distribute` | `joins.md#set-joins-and-rank-joins` |
