@@ -18,6 +18,7 @@ import {
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 import { CLOSED, closedDerived, withLexiconClosedRoots } from "../closed-roots.js";
+import { stanceGrade } from "./overlay-grade.js";
 import { JOIN_SERIES } from "./series.js";
 import { parseWordSlotsCsv, type WordSlots } from "./word-slots.js";
 
@@ -101,6 +102,7 @@ export function overlayKey(pos: string, senseForm: string): string {
 }
 
 function overlayFromRow(row: OverlayRow): LexOverlay {
+  const grade = stanceGrade(row);
   return {
     senseForm: row.senseForm,
     pos: row.pos,
@@ -109,6 +111,7 @@ function overlayFromRow(row: OverlayRow): LexOverlay {
     definition: row.definition,
     mnemonic: row.mnemonic,
     anchor: row.anchor,
+    ...(grade ? { grade } : {}),
   };
 }
 

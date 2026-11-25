@@ -1,6 +1,7 @@
 import type { ClauseScope } from "./scope.js";
 import type { AsideContext } from "./resolve.js";
 import type { OverlayKind } from "../lexicon-search.js";
+import type { StanceGrade } from "./overlay-grade.js";
 
 /**
  * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event (`z` doer, `d`
@@ -194,6 +195,8 @@ export type LexOverlay = {
   mnemonic: string;
   /** Home section (`page.md#heading-id`) that teaches this overlay. */
   anchor: string;
+  /** Settled-to-passing grade from the ending (overlay-grade.ts `stanceGrade`); absent when ungraded. */
+  grade?: StanceGrade;
 };
 
 export type RootGloss = {

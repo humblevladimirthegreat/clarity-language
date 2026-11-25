@@ -16,6 +16,7 @@ import {
   type SetNote,
 } from "./flashcards.js";
 import { anchorUrl } from "./flashcards-overlays.js";
+import { STANCE_GRADE_BY_ENDING } from "./parse/overlay-grade.js";
 import type { OverlayRow } from "./lexicon-search.js";
 
 export type EndingNoteInputs = Pick<FlashcardInputs, "overlays" | "checkpoints" | "anchorSection">;
@@ -27,7 +28,7 @@ type Ending = (typeof ENDINGS)[number];
 export const SCALE_CHECKPOINT = "sakes.md#beginner-practice";
 export const SCALE_ANCHOR = "sakes.md#settled-to-passing";
 /** The settled-to-passing scale, as the design words it. */
-const SCALE_READINGS: Record<Ending, string> = { l: "settled", m: "default", r: "passing" };
+const SCALE_READINGS: Record<Ending, string> = STANCE_GRADE_BY_ENDING;
 
 /** GUID and note key of the scale note, and of a kind's ending note. */
 export const SCALE_NOTE_KEY = "scale";
