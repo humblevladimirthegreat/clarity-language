@@ -2,10 +2,10 @@
 
 <!-- retie: skip -->
 
-**Status:** meaning view shipped; the realizer, the round trip and the variant corpus are still to come  
+**Status:** meaning view and round trip shipped; the realizer has no rules yet, and the variant corpus is still to come  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md) through the [interpreter's readings](interpreter.md#terms). The realizer writes Ageben for a reading; it never decides what a reading means.
 
-The realizer takes a reading and writes an Ageben text that says the same thing. The round trip checks it: read a doc example, realize each reading, read the result again, and compare the two readings with [equal readings](interpreter.md#equal-readings). A pass shows that the reading holds the whole meaning of the text. A failure shows a place where the meaning still lives only in a word's spelling. This note owns the meaning view, the canonical choices, the round trip, the variant corpus and the list of gaps. The code is in `src/realize/`.
+The realizer takes a reading and writes an Ageben text that says the same thing. The round trip checks it: read a doc example, realize each reading, read the result again, and compare the two readings with [equal readings](interpreter.md#equal-readings). A pass shows that the reading holds the whole meaning of the text. A failure shows a place where the meaning still lives only in a word's spelling. This note owns the meaning view, the canonical choices, the round trip, the variant corpus and the list of gaps. The realizer is in `src/realize/`, and the round trip in `src/round-trip/`.
 
 ## Meaning view
 <a id="meaning-view"></a>
@@ -38,12 +38,38 @@ A test projects every doc example and fails on any object in the view that has a
 ## Canonical choices
 <a id="canonical-choices"></a>
 
-Where the grammar allows several forms with the same meaning, the realizer writes one. This section will hold a table of those choices, one row per choice, with the grammar anchor that allows the other forms.
+Where the grammar allows several forms with the same meaning, the realizer writes one. Each choice is a row here: what the realizer writes, the key of the reading part it writes it for, and the grammar anchor that allows the other forms. A choice must give a text that [equal readings](interpreter.md#equal-readings) finds the same as the original; when none does, the part is a gap. The table has no rows yet, since the realizer has no rules yet.
+
+| Choice | Key | Anchor |
+|--------|-----|--------|
 
 ## Round trip
 <a id="round-trip"></a>
 
-This section will describe the round trip: how each doc example is read, realized and read again, how the two readings are compared, what each outcome counts as, and the ratchet that keeps the count of passes from falling.
+**The realizer.** `realize(view, tables)` in `src/realize/realize.ts` takes one reading of the meaning view and returns its morph gloss with the Ageben that `spell` writes for it, or a gap. A gap has a kind, the key it is filed under and a detail. The kinds:
+
+- `noRule`: the realizer has no rule for this key yet;
+- `missingValue`: the view lacks what the realizer needs to choose a word, a gap in the reader;
+- `noSpell`: the gloss does not spell;
+- `noParse`: the spelled line does not parse to one tree.
+
+A gap is filed under the key of the reading's first part: its first frame's key, else its first claim detail's, its first stance list's or its first link's. A reading with none of these is the bare clause, filed as `claim`. For now the realizer has no rules, so every reading is a `noRule` gap.
+
+**The walk.** `src/round-trip/round-trip.ts` reads each doc example as one turn of a log (`buildLog`), so links and pronouns cross its sentences. It projects every reading, realizes it, and joins the realized sentences in order. It then gives the example one verdict:
+
+| Verdict | Means |
+|---------|-------|
+| `ok` | equal readings finds the original and the realized text the same, and realizing the realized text again gives the same gloss |
+| `different` | equal readings finds them different; the trip keeps the first path where the two canonical forms differ, or `idempotence` when realizing again gives another gloss |
+| `unsettled` | equal readings finds an unordered pair in the other text order |
+| `gap:<kind>` | the realizer returned a gap for one of the readings |
+| `skipped:<reason>` | not judged: the original does not parse (`noParse`), a reading has an unread construction (`unread`), or its readings did not project (`project`) |
+
+A trip that is not a gap is filed under the key of its first reading, or of the first reading that differs.
+
+**The ratchet.** `src/round-trip/round-trip-ratchet.json` holds the count of `ok` trips and, by key, the count of trips that failed (neither `ok` nor skipped). Its test fails when the `ok` count falls, or when a key with no failures gains one. When the counts improve, the unit that improved them lowers the file to the new counts.
+
+**The script.** `npm run round-trip` prints the counts by verdict, then each verdict's keys. `--save` writes them to the `tmp/` state folder, and `--diff` prints only the counts that changed since the save, as for `npm run sweep`. `--texts KEY …` lists the examples behind a verdict (`gap:noRule`), a key (`edge:force`) or a type that heads keys (`edge`).
 
 ## Variants
 <a id="variants"></a>

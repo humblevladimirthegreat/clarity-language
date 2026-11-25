@@ -8,45 +8,17 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
-import { loadDefaultTables, parse } from "../parse/index.js";
-import { buildExampleIndex } from "../parse/llm-examples.js";
+import { loadDefaultTables } from "../parse/index.js";
 import { buildLog, readQuestion } from "../interpret/log.js";
-import { allReadings, readParse } from "../interpret/read.js";
+import { allReadings } from "../interpret/read.js";
 import type { Detail, Frame, Link, LinkKind, Reading, Term } from "../interpret/types.js";
 import { Projector, project, type MeaningLink, type MeaningReading, type MeaningTerm } from "./meaning.js";
+import { type CorpusEntry, corpus } from "../round-trip/corpus.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(here, "..", "..");
 
 // ── Corpus ──
-
-/** One doc example with its readings (as the reader sweep reads them) and their projection. */
-type CorpusEntry = { ageben: string; source: string; readings: Reading[]; meanings: MeaningReading[] };
-
-let corpusCache: { entries: CorpusEntry[]; failures: string[] } | undefined;
-
-/** Every doc example, read and projected once per test run. */
-function corpus(): { entries: CorpusEntry[]; failures: string[] } {
-  if (corpusCache) return corpusCache;
-  const tables = loadDefaultTables();
-  const entries: CorpusEntry[] = [];
-  const failures: string[] = [];
-  for (const example of buildExampleIndex(join(rootDir, "docs", "grammar"), tables)) {
-    let readings: Reading[];
-    try {
-      readings = readParse(parse(example.ageben, tables), { tables, text: example.source });
-    } catch {
-      continue; // The reader sweep reports these.
-    }
-    try {
-      entries.push({ ageben: example.ageben, source: example.source, readings, meanings: project(readings, tables) });
-    } catch (error) {
-      failures.push(`${example.source} ${example.ageben}: ${(error as Error).message}`);
-    }
-  }
-  corpusCache = { entries, failures };
-  return corpusCache;
-}
 
 /** Every object and array reachable from `root`, each once (the view shares objects). */
 function reachable(root: unknown): object[] {
