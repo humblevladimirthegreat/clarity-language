@@ -693,7 +693,7 @@ Tools that read or rewrite every page alike, with no page contract:
 
 <!-- /read-by-site -->
 
-**Inbound links.** `npm run page-refs -- PAGE [--id ID]` lists every link into a page, or into one id on it, with `file:line` and the text around it. PAGE is the path under `docs/grammar/`: `clause.md`, `claritish/feelings.md`, `cheat-sheets/to-english.md`. Use it instead of grep; `npm run retarget-id -- --page` takes the same page keys and rewrites the links.
+**Inbound links.** `npm run page-refs -- PAGE [--id ID]` lists every link into a page, or into one id on it, with `file:line` and the text around it. PAGE is the path under `docs/grammar/`: `clause.md`, `claritish/feelings.md`, `cheat-sheets/to-english.md`. Use it instead of grep; `npm run retarget-id -- --page` takes the same page keys and rewrites the links, to an id on the same page or to `b.md#id` on another ([moving an anchor](procedures/restructure-sittings.md#move-anchor)).
 
 **Anchor check.** `lint anchors` in the build (alone: `npm run lint:anchors`) fails on a link whose `#id` is not on the target page. It skips links inside inline code and fenced blocks. A link into a page outside `docs/grammar/` also passes when the id matches GitHub's slug of a heading there.
 

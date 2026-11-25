@@ -1,15 +1,35 @@
 /**
- * Retarget links to an id that left its page when an H3 split in place. Pure transform; the CLI
- * (scripts/retarget-id.ts) scans files and writes them.
+ * Retarget links to an id that left its page: an H3 split in place, or an anchor moved to another
+ * page. Pure transform; the CLI (scripts/retarget-id.ts) scans files and writes them.
  *
  * Works line by line with the same rewrites as link-rewrite.ts (`applyMaps`), so `--list` finds
  * exactly what `--write` changes. Each line's references go to one target: the default, or the
- * exception named for that `file:line`.
+ * exception named for that `file:line`. A target is an id on the same page or `page.md#id` on
+ * another; on the target page itself a retargeted link becomes a same-page `](#id)`.
  */
 import { sep } from "node:path";
 
 import { REPO_ROOT } from "../../src/repo-paths.js";
-import { applyMaps, resolveLinkPage } from "./link-rewrite.ts";
+import { applyMaps, pageKeyArg, pageKeyOf, resolveLinkPage } from "./link-rewrite.ts";
+
+/** Where references go: a page key and an id on it. */
+export type Target = { page: string; id: string };
+
+const ID = /^[A-Za-z0-9_-]+$/;
+
+/** `id`, `#id`, or `page.md#id` (also `page#id`, `/page#id`, `beginner/page.md#id`); a bare id is on `samePage`. */
+export function parseTarget(value: string, samePage: string): Target {
+  const hash = value.lastIndexOf("#");
+  const pagePart = hash < 0 ? "" : value.slice(0, hash);
+  const id = hash < 0 ? value : value.slice(hash + 1);
+  if (!ID.test(id)) throw new Error(`target "${value}" is not id or page.md#id`);
+  return { page: pagePart ? pageKeyArg(pagePart) : samePage, id };
+}
+
+/** `#id` on the same page, else `page.md#id`. */
+export function targetLabel(target: Target, page: string): string {
+  return target.page === page ? `#${target.id}` : `${target.page}#${target.id}`;
+}
 
 export type Reference = {
   /** 1-based line. */
@@ -39,22 +59,38 @@ export function findReferences(text: string, file: string, page: string, oldId: 
   return out;
 }
 
-/** Rewrite each reference to `page#oldId` to `page#targetFor(line)`. */
+export type Edit = { line: number; count: number; to: Target };
+
+/**
+ * Rewrite each reference to `page#oldId` to `targetFor(line)`: a bare id stays on `page`, a
+ * `Target` may name another page.
+ */
 export function retargetText(
   text: string,
   file: string,
   page: string,
   oldId: string,
-  targetFor: (line: number) => string,
-): { text: string; edits: { line: number; count: number; to: string }[] } {
-  const edits: { line: number; count: number; to: string }[] = [];
+  targetFor: (line: number) => string | Target,
+): { text: string; edits: Edit[] } {
+  const edits: Edit[] = [];
+  const here = file.endsWith(".md") ? pageKeyOf(file) : undefined;
   const lines = text.split("\n").map((lineText, i) => {
-    const to = targetFor(i + 1);
-    const { text: next, changes } = applyMaps(lineText, file, new Map([[`${page}#${oldId}`, `${page}#${to}`]]));
-    if (changes.length) edits.push({ line: i + 1, count: changes.length, to });
-    return next;
+    const target = targetFor(i + 1);
+    const to = typeof target === "string" ? { page, id: target } : target;
+    const map = new Map([[`${page}#${oldId}`, `${to.page}#${to.id}`]]);
+    const { text: next, changes } = applyMaps(lineText, file, map);
+    if (!changes.length) return next;
+    edits.push({ line: i + 1, count: changes.length, to });
+    return to.page === here && to.page !== page ? samePageLinks(next, file, to) : next;
   });
   return { text: lines.join("\n"), edits };
+}
+
+/** On the target page, `](page.md#id)` to the target becomes `](#id)`. */
+function samePageLinks(line: string, file: string, to: Target): string {
+  return line.replace(/\]\(([^)\s#]+)#([^)\s]+)\)/g, (whole, href: string, id: string) =>
+    id === to.id && resolveLinkPage(file, href) === to.page ? `](#${id})` : whole,
+  );
 }
 
 export type PageReference = {
@@ -107,15 +143,15 @@ export function findPageReferences(text: string, file: string, page: string): Pa
   return out;
 }
 
-/** `file:line=id,file:line=id` → map keyed `file:line`. */
-export function parseExceptions(value: string): Map<string, string> {
-  const out = new Map<string, string>();
+/** `file:line=id,file:line=page.md#id` → target map keyed `file:line`; a bare id is on `samePage`. */
+export function parseExceptions(value: string, samePage: string): Map<string, Target> {
+  const out = new Map<string, Target>();
   for (const part of value.split(",").map((s) => s.trim()).filter(Boolean)) {
-    const m = /^(.+):(\d+)=#?([A-Za-z0-9_-]+)$/.exec(part);
-    if (!m) throw new Error(`--except entry "${part}" is not file:line=id`);
+    const m = /^(.+):(\d+)=((?:[\w./-]+)?#?[A-Za-z0-9_-]+)$/.exec(part);
+    if (!m) throw new Error(`--except entry "${part}" is not file:line=id or file:line=page.md#id`);
     const key = `${m[1]!.replace(/^\.\//, "")}:${Number(m[2])}`;
     if (out.has(key)) throw new Error(`--except names ${key} twice`);
-    out.set(key, m[3]!);
+    out.set(key, parseTarget(m[3]!, samePage));
   }
   return out;
 }

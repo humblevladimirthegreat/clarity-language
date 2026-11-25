@@ -27,6 +27,14 @@ To peel named H3s onto a new sitting of another band: `npm run peel-headings -- 
 3. `npm run retarget-id -- --page a.md --id old --to new --except path/b.md:88=other,…` (dry run, paths from the repo root); `--write` rewrites each reference to `--to` or to its line's exception, and adds one `hash-redirect.ts` row so `a.html#old` lands on `a.html#new`.
 4. The tool sends a whole line to one target. A line marked `(×2)` whose references mean different H3s is fixed by hand after `--write`.
 
+## Move an anchor to another page {#move-anchor}
+
+For an id with no heading cluster to cut, such as an `<a id>` line whose teaching moves to an earlier page. A whole H3 moves with `move-heading` instead.
+
+1. Move the anchor by hand: remove the old id from `a.md` and add the new one on `b.md` (the same name or a new one).
+2. `npm run retarget-id -- --page a.md --id old --to b.md#new` (dry run; `--list` and `--except path/c.md:88=other` or `=b.md#other` work as in [splitting an H3](#split-heading)). `--write` rewrites every reference, turns `a.md`'s same-page `](#old)` links into links to `b.md`, makes links already on `b.md` same-page, and adds the `hash-redirect.ts` row `a.html#old` → `b.html#new`.
+3. The dry run flags a rewrite on a stage page that now points to a later stage page. Reword those links or drop them; the build's `lint:forward-links` decides.
+
 ## After any of these {#after}
 
 1. Commit before and after each `--write` so its diff stands alone ([fence automated rewrites](proposals.md#fence-automated-rewrites)).

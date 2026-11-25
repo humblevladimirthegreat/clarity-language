@@ -4,7 +4,14 @@ import { describe, it } from "node:test";
 
 import { REPO_ROOT } from "../../src/repo-paths.js";
 import { applyHashMoves } from "./hash-rows.ts";
-import { findPageReferences, findReferences, parseExceptions, retargetText } from "./retarget-id.ts";
+import {
+  findPageReferences,
+  findReferences,
+  parseExceptions,
+  parseTarget,
+  retargetText,
+  targetLabel,
+} from "./retarget-id.ts";
 
 const PAGE = "thanks-and-sorry.md";
 const ON_PAGE = join(REPO_ROOT, "docs", "grammar", "beginner", PAGE);
@@ -54,8 +61,8 @@ describe("retargetText", () => {
     assert.equal(lines[1], "And [sorry](thanks-and-sorry.md#sorry), [also](./thanks-and-sorry.html#sorry).");
     assert.equal(lines[2], OTHER_TEXT.split("\n")[2]);
     assert.deepEqual(edits, [
-      { line: 1, count: 1, to: "thanks" },
-      { line: 2, count: 2, to: "sorry" },
+      { line: 1, count: 1, to: { page: PAGE, id: "thanks" } },
+      { line: 2, count: 2, to: { page: PAGE, id: "sorry" } },
     ]);
   });
 
@@ -65,18 +72,71 @@ describe("retargetText", () => {
   });
 });
 
+describe("retargetText to another page", () => {
+  const TO = { page: "feelings.md", id: "sorry-feeling" };
+
+  it("points links elsewhere at the new page, keeping the href form", () => {
+    const code = retargetText('source: "thanks-and-sorry.md#thanks-sorry",', CODE, PAGE, "thanks-sorry", () => TO);
+    assert.equal(code.text, 'source: "feelings.md#sorry-feeling",');
+    const purpose = join(REPO_ROOT, "docs", "grammar", "purpose.md");
+    const link = retargetText("[a](beginner/thanks-and-sorry.md#thanks-sorry)", purpose, PAGE, "thanks-sorry", () => TO);
+    assert.equal(link.text, "[a](beginner/feelings.md#sorry-feeling)");
+  });
+
+  it("turns the old page's same-page link into a cross-page one", () => {
+    const { text } = retargetText("Back to [it](#thanks-sorry).", ON_PAGE, PAGE, "thanks-sorry", () => TO);
+    assert.equal(text, "Back to [it](feelings.md#sorry-feeling).");
+  });
+
+  it("makes links on the target page same-page", () => {
+    const { text, edits } = retargetText(OTHER_TEXT, OTHER, PAGE, "thanks-sorry", () => TO);
+    const lines = text.split("\n");
+    assert.equal(lines[0], "See [thanks](#sorry-feeling).");
+    assert.equal(lines[1], "And [sorry](#sorry-feeling), [also](#sorry-feeling).");
+    assert.equal(lines[2], OTHER_TEXT.split("\n")[2]);
+    assert.deepEqual(edits.map((e) => [e.line, e.count, e.to]), [
+      [1, 1, TO],
+      [2, 2, TO],
+    ]);
+  });
+});
+
+describe("parseTarget", () => {
+  it("reads a bare id on the same page, or page.md#id in any page-key form", () => {
+    assert.deepEqual(parseTarget("sorry", PAGE), { page: PAGE, id: "sorry" });
+    assert.deepEqual(parseTarget("#sorry", PAGE), { page: PAGE, id: "sorry" });
+    for (const value of ["feelings.md#x", "beginner/feelings.md#x", "/feelings#x", "feelings.html#x"]) {
+      assert.deepEqual(parseTarget(value, PAGE), { page: "feelings.md", id: "x" });
+    }
+    assert.deepEqual(parseTarget("claritish/feelings.md#x", PAGE), { page: "claritish/feelings.md", id: "x" });
+  });
+
+  it("rejects a page with no id", () => {
+    assert.throws(() => parseTarget("feelings.md", PAGE), /page\.md#id/);
+  });
+
+  it("labels a target by whether it leaves the page", () => {
+    assert.equal(targetLabel({ page: PAGE, id: "x" }, PAGE), "#x");
+    assert.equal(targetLabel({ page: "feelings.md", id: "x" }, PAGE), "feelings.md#x");
+  });
+});
+
 describe("parseExceptions", () => {
   it("keys by file:line", () => {
-    const map = parseExceptions("docs/grammar/beginner/feelings.md:88=sorry, ./src/game/x.ts:12=#sorry");
+    const map = parseExceptions(
+      "docs/grammar/beginner/feelings.md:88=sorry, ./src/game/x.ts:12=#sorry, a.md:3=feelings.md#x",
+      PAGE,
+    );
     assert.deepEqual([...map], [
-      ["docs/grammar/beginner/feelings.md:88", "sorry"],
-      ["src/game/x.ts:12", "sorry"],
+      ["docs/grammar/beginner/feelings.md:88", { page: PAGE, id: "sorry" }],
+      ["src/game/x.ts:12", { page: PAGE, id: "sorry" }],
+      ["a.md:3", { page: "feelings.md", id: "x" }],
     ]);
   });
 
   it("rejects a malformed or repeated entry", () => {
-    assert.throws(() => parseExceptions("feelings.md=sorry"), /file:line=id/);
-    assert.throws(() => parseExceptions("a.md:1=x,a.md:1=y"), /twice/);
+    assert.throws(() => parseExceptions("feelings.md=sorry", PAGE), /file:line=id/);
+    assert.throws(() => parseExceptions("a.md:1=x,a.md:1=y", PAGE), /twice/);
   });
 });
 
