@@ -289,6 +289,28 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes tone marks: one word's in front of it, the rest of the sentence's free-standing before the first word it colors", () => {
+    const cases: [string, string[]][] = [
+      ["! zazozon vowurol.", ["! zazozon vowurol."]],
+      ["?! zalazun dodozel vayebel.", ["?! zalazun dodozel vayebel."]],
+      ["! zazozon % dodozel vayebel.", ["! zazozon % dodozel vayebel."]],
+      ["yel ? zazozon vowurol.", ["yel ? zazozon vowurol."]],
+      ["yel yal ? zar dubogal vabuvul.", ["yel yal ? zar dubogal vabuvul."]],
+      ["yazozon ! zalazun vowurol.", ["yazozon ! zalazun vowurol."]],
+      // A word's own mark, inside its unit's bracket; on a blank, a predicate, an act word or a reaction.
+      ["zazozon ?dodozel gelazel vayebel.", ["zazozon ?dodozel gelazel vayebel."]],
+      ["yel ?!dar zawan vayebel.", ["yel ?!dar zawan vayebel."]],
+      ["zodozel !gelazem.", ["zodozel !gelazem."]],
+      ["!yel zazozon vowurol.", ["!yel zazozon vowurol."]],
+      ["!yelazem.", ["!yelazem."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

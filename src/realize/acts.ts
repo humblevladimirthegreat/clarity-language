@@ -7,7 +7,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { seriesGlossIndex } from "../parse/gloss-inverse.js";
 import type { MeaningDetail, MeaningFrame, MeaningLink } from "./meaning.js";
 import { leaf } from "./words.js";
-import { leafOf, plainWord, thingLeaf, unit, Unrealized, withPlural } from "./terms.js";
+import { leafOf, marked, ownFrames, plainWord, thingLeaf, unit, Unrealized, withPlural } from "./terms.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -37,12 +37,13 @@ function actGlossOf(surface: string, tables: ClassifyTables): string | undefined
 export function actGloss(frame: MeaningFrame, tables: ClassifyTables): string {
   const { series, ending, ask, ...rest } = frame.values;
   void ask;
-  if (Object.keys(rest).length || frame.party || frame.content || frame.hosted || frame.inner?.length || frame.details?.length) {
+  if (Object.keys(rest).length || frame.party || frame.content || frame.hosted || ownFrames(frame.inner).length || frame.details?.length) {
     throw noRule("an act word with its own parts");
   }
   const gloss = series && ending ? actGlossOf(`y${series}${ending}`, tables) : undefined;
   if (!gloss) throw noRule(`an act word of series ${series ?? "?"} on -${ending ?? "?"}`);
-  return gloss;
+  // A mark on the act word colors that word only (tone-marks.md#showing-your-tone).
+  return marked(frame.inner, gloss);
 }
 
 /**
@@ -97,8 +98,8 @@ export function callGloss(frame: MeaningFrame, tables: ClassifyTables): string {
 /** A reaction (speech-moves.md#interjections-reactions): its root under `/y/` on its ordinary ending. */
 export function interjectionGloss(frame: MeaningFrame, tables: ClassifyTables): string {
   const { root, ending, ...rest } = frame.values;
-  if (Object.keys(rest).length || frame.inner?.length || frame.content || frame.hosted || frame.party) throw noRule("a reaction with its own frame");
+  if (Object.keys(rest).length || ownFrames(frame.inner).length || frame.content || frame.hosted || frame.party) throw noRule("a reaction with its own frame");
   if (!root) throw new Unrealized("missingValue", "a reaction with no root in the view");
   if (ending !== "l" && ending !== "m") throw noRule(`a reaction on -${ending ?? "?"}`);
-  return described(leafOf("y", root, ending, tables), frame.details, tables);
+  return described(marked(frame.inner, leafOf("y", root, ending, tables)), frame.details, tables);
 }

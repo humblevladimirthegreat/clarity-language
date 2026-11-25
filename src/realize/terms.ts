@@ -7,7 +7,7 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import { fillAskGloss } from "../parse/gloss-inverse.js";
-import type { MeaningDetail, MeaningTerm } from "./meaning.js";
+import type { MeaningDetail, MeaningFrame, MeaningTerm } from "./meaning.js";
 import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, listedLeaf, rootOf, type Ending } from "./words.js";
 import { builtLeaf, ROLE_REACH } from "./built.js";
@@ -29,6 +29,42 @@ export class Unrealized extends Error {
 }
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
+
+// ── Tone marks ──
+
+/** A tone mark (tone-marks.md#showing-your-tone): a frame the reader copies onto the words it colors, not their own part. */
+export function toneOf(frame: MeaningFrame): { mark: string; scope: "word" | "rest" } | undefined {
+  if (frame.key !== "edge:tone") return undefined;
+  const { mark, names, scope, ...rest } = frame.values;
+  void names;
+  if (!mark || (scope !== "word" && scope !== "rest") || Object.keys(rest).length || frame.party || frame.content || frame.hosted || frame.inner?.length || frame.details?.length) {
+    throw noRule("a tone mark with its own parts");
+  }
+  return { mark, scope };
+}
+
+/** A term's or frame's own frames: all but its tone marks. */
+export const ownFrames = (frames: readonly MeaningFrame[] | undefined): MeaningFrame[] => (frames ?? []).filter((frame) => !toneOf(frame));
+
+/** The one tone mark of a scope among `frames`, if any; two of one scope are a gap. */
+export function toneMark(frames: readonly MeaningFrame[] | undefined, scope: "word" | "rest"): string | undefined {
+  const marks = (frames ?? []).map(toneOf).filter((tone) => tone?.scope === scope);
+  if (marks.length > 1) throw noRule(`two ${scope} tone marks on one word`);
+  return marks[0]?.mark;
+}
+
+/**
+ * A word-scope mark written in front of its word (tone-marks.md#showing-your-tone: `?z-wh`), inside the unit's bracket
+ * when the word heads one (`[?d-dog | g-big]`).
+ */
+export function marked(frames: readonly MeaningFrame[] | undefined, gloss: string): string {
+  const mark = toneMark(frames, "word");
+  if (!mark) return gloss;
+  const at = gloss.search(/[^[]/);
+  return `${gloss.slice(0, at)}${mark}${gloss.slice(at)}`;
+}
+
+// ── Terms ──
 
 /** The discourse specials by term kind (speech-roles: the microphone, headphones and handshake roots on **-n**). */
 const SPECIAL_ROOT = { speaker: CLOSED.microphone, listener: CLOSED.headphones, we: CLOSED.handshake } as const;
@@ -192,7 +228,7 @@ function listWriters(member: MemberWriter, tables: ClassifyTables, style: ListSt
  * two letters the gloss index has a form of that gloss for. A bar that hosts a `/b/` party or holds a frame is a gap.
  */
 function barLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, tables: ClassifyTables): string | undefined {
-  const [frame, ...rest] = term.frames ?? [];
+  const [frame, ...rest] = ownFrames(term.frames);
   if (frame?.key !== "slot:bar" || rest.length) return undefined;
   if (frame.party || frame.content || frame.inner?.length || frame.details?.length || term.details.length) {
     throw noRule("a bar with a party or its own detail");
@@ -215,9 +251,16 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
     style.tags!.delete(term);
     return `[${roleTerm(term, pos, ending, tables, style)} | ${pos}-${tag}]`;
   }
+  const gloss = roleWord(term, pos, ending, tables, style);
+  // A list's frames are its join's; a blank writes its own mark.
+  return term.kind === "list" || term.kind === "blank" || !("frames" in term) ? gloss : marked(term.frames, gloss);
+}
+
+/** A role term's words, its word-scope tone mark aside. */
+function roleWord(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle): string {
   const bar = term.kind === "thing" ? barLeaf(term, tables) : undefined;
   if (bar) return bar;
-  if (term.kind !== "list" && "frames" in term && term.frames?.length) throw noRule(`a ${term.kind} term with its own frame`);
+  if (term.kind !== "list" && "frames" in term && ownFrames(term.frames).length) throw noRule(`a ${term.kind} term with its own frame`);
   switch (term.kind) {
     case "list":
       return listGloss(term, pos, ending, listWriters((m, own) => roleTerm(m, pos, own, tables, style), tables, style), style);
@@ -249,12 +292,12 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
 export function blankTerm(term: Extract<MeaningTerm, { kind: "blank" }>, pos: string, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   const { series, ending, hook, plural, ...rest } = term.values ?? {};
   void plural;
-  if (Object.keys(rest).length || term.frames?.length) throw noRule("a blank with its own frame");
+  if (Object.keys(rest).length || ownFrames(term.frames).length) throw noRule("a blank with its own frame");
   // A number blank (`grar`, digitless-exponents.md#how-many) keeps its number word, not a join.
   if (!series || ending !== "r") throw noRule("a number blank");
   const plain = fillAskGloss(`${pos}${series}${ending}`, tables);
   if (!plain?.startsWith(`${pos}-`)) throw noRule(`a blank of series ${series} under /${pos}/`);
-  const head = withPlural(`${hookFront(pos, hook)}-${plain.slice(pos.length + 1)}`, term.values);
+  const head = marked(term.frames, withPlural(`${hookFront(pos, hook)}-${plain.slice(pos.length + 1)}`, term.values));
   const details = [...(term.details ?? [])];
   const landmark: string[] = [];
   if (hook !== undefined) {
@@ -351,9 +394,9 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListS
   // A built verb's hosted party (label-seams.md: `venumuthel blalazun`) is its `bl-` word, right after it.
   const [hosted, ...rest] = term.details;
   const party = hosted?.key === "slot:hosted" && hosted.hosted && term.values.built && !rest.length ? hosted.hosted : undefined;
-  if (term.frames?.length || (term.details.length && !party)) throw noRule("a verb with its own frame or detail");
+  if (ownFrames(term.frames).length || (term.details.length && !party)) throw noRule("a verb with its own frame or detail");
   const own = term.values.ending;
-  const verb = withPlural(thingLeaf(term, "v", own === "m" ? "m" : own === "r" ? undefined : "l", tables), term.values);
+  const verb = marked(term.frames, withPlural(thingLeaf(term, "v", own === "m" ? "m" : own === "r" ? undefined : "l", tables), term.values));
   return party ? unit([verb, landmarkOf(party, tables, style)]) : verb;
 }
 
@@ -365,7 +408,12 @@ export function predicateTerm(term: MeaningTerm, tables: ClassifyTables, style: 
   // A predicate list (joins.md#negation-u: `gamahum gul`): each predicate word, then the `/ɡ/` join.
   if (term.kind === "list") return listGloss(term, "g", undefined, listWriters((m) => predicateTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind === "blank") return blankTerm(term, "g", tables, style);
-  if (term.kind !== "thing" || term.frames?.length) throw noRule(`a ${term.kind} predicate`);
+  if (term.kind !== "thing" || ownFrames(term.frames).length) throw noRule(`a ${term.kind} predicate`);
+  return marked(term.frames, predicateWord(term, tables));
+}
+
+/** A predicate thing's word, its word-scope tone mark aside. */
+function predicateWord(term: Extract<MeaningTerm, { kind: "thing" }>, tables: ClassifyTables): string {
   const [self, ...rest] = term.details;
   // A built word (built.ts: a role word, a numeric prefix, a label seam) is its own detail, its stem as `root`.
   if (self?.values.built && !rest.length) return plainWord(self, "g", self.values.root, tables);
