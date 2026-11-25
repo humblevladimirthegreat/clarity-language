@@ -1,6 +1,6 @@
 # Readings for six open cells
 
-**Status:** READY, 2026-11-25. R1 and R2 ran ahead of phase 1, on 2026-11-25. The user settled D1 to D8 on 2026-11-25 (see [Decisions](#decisions)); none is left open. Phase 1 starts at U1.
+**Status:** READY, 2026-11-25. R1 and R2 ran ahead of phase 1, on 2026-11-25. The user settled D1 to D10 on 2026-11-25 (see [Decisions](#decisions)); none is left open. Phase 1 starts at U1.
 
 **Related:** [unassigned-reserved.md](../../meta/unassigned-reserved.md), [design-decisions.md](../../meta/design-decisions.md), [special-values.md](../../grammar/advanced/special-values.md), [questions.md](../../grammar/beginner/questions.md), [relations.md](../../grammar/beginner/relations.md), [exactly-like.md](../../grammar/intermediate/exactly-like.md), [comparatives.md](../../grammar/beginner/comparatives.md), [as-of.md](../../grammar/advanced/as-of.md), [hooked-joins.md](../../grammar/advanced/hooked-joins.md), [ranges.md](../../grammar/intermediate/ranges.md), [because-and-iff.md](../../grammar/intermediate/because-and-iff.md), [interpreter.md § classification table](../../meta/interpreter.md#classification-table), [`enforce.ts`](../../../src/parse/enforce.ts), [`enforce-word.ts`](../../../src/parse/enforce-word.ts), [`tokens.ts`](../../../src/parse/tokens.ts), [`constructions.ts`](../../../src/parse/constructions.ts), [`detectors.ts`](../../../src/english-helper/detectors.ts).
 
@@ -12,9 +12,10 @@
 - `/w/` likeness + `/b/` before an adjective (`wewem bohahal gelazem`, `wewel …`)
 - `/h/` hooked joins on `ue` *through*, `am` *amid*, `oem` *in the direction of* (`huexual`, `hamxual`, `hoemxual`)
 - a range of labelled landmarks (`al burahal g_3 oel g_5`), per D6
-- `herol` + a `bl-` word or `blarl`, *only while*, per D8
+- hinge **-l** as the closed ending, per D7 and D8: `herol` *only while*, `thohel` / `thebel` *if and only if*, `thoval` *only so that*
+- a respelling of the *if and only if* root `eho`, per D9
 
-`thohel` stays open (D7); only its entry is reworded. `yol azozon.` stays open (D2).
+`yol azozon.` stays open (D2).
 
 ## Problem
 
@@ -38,7 +39,7 @@
 - Other open cells. Their notes hold up.
 - `yol azozon.` (a command + a citation). A request needs one action and a bare noun does not name it (*Coffee!* can be *bring me*, *I want* or *make*), so the cell stays open on that reason.
 - `wewem` with no landmark. `wewem gelazem` keeps its current parse.
-- Respelling the *if* / *if and only if* roots. `ohe` and `eho` are vowel-order mirrors, so one slip turns `thohem` into `thehom`. That is flagged to the user, not changed here.
+- Moving fault off `thahul` so that *only because* can take it.
 - Hooks with no time reading on `/h/` (`ua`, `ao`, `e`, `ae`, `ue` *against*, `humxal`).
 
 ## Design
@@ -108,23 +109,37 @@ Code:
 - Docs: a landmark example and the `ul … oel g_5` / `oel burahal g_5` Compare-with in `ranges.md`; the `hookJob:span` row in `interpreter.md`; the entry in `unassigned-reserved.md`; a clarifying clause in the landmark bullet of `design-decisions.md`.
 - No new construction ids: the form falls under `hookJob:span`.
 
-### 6. Hinge -l: `thohel` stays open, `herol` *only while* (D7, D8)
+### 6. Hinge -l is the closed ending (D7, D8)
 
-R2 found four **-l** patterns on closed roots, where the entry names two, and that the entry's *by* `arul` is a mistake (`arul` is the plain root *timer*; the *by* hinge is `huvahum`). The four:
-1. strongest, an exact match: `hewel` / `gewel`
-2. the reason broke a norm: `thahul`
-3. the settled end of the settled-to-passing scale: `havel` and the other phasals, `thomal`, `themel`, `ubol`
-4. closed, *B is the whole of it*: `abal` / `alal` / `erol` / `ewel`, and `hual` against `huam`
+Clause hinges take a B (their `bl-` word or `blarl`), like hooks and same-role words. On those, [closed and open endings](../../grammar/beginner/hooks.md#closed-and-open-endings) is a beginner rule: `-m` *B may not be the only one*, `-l` *B is the whole of it*. Hinge **-l** follows the same rule: the hinge's own reading, plus *and B is the only one*. The pages already teach the open half in their own words: plain *if* "leaves room for other routes", and *only if* says "other things may also be required".
 
-On *if* they pull opposite ways. *Strongest* and *no exceptions* give *whenever*, which is sufficiency. *The whole of it* gives *only if*, which is necessity and is `thebem`'s job. So `thohel` stays open on the guess conflict alone (D7), with this wording in `unassigned-reserved.md`:
-- Lead of *Closed-root endings*: "**-l** on a closed root has no single guess. It is *strongest* on *exactly like* (`hewel`), *broke a norm* on *because* (`thahul`), the settled end of the [settled-to-passing scale](/knowing#settled-to-passing) on the phasals and channels (`havel`, `ubol`), and *B is the whole of it* on the same-role words (`erol` *only while*). A family where these disagree, or where none meets an English job, has no guessable **-l**."
-- Entry: "**open:** clause-hinge **-l** beyond *because* (`thahul`) and *while* (`herol`). On *if* (`thohel`) the guesses pull opposite ways: *strongest* and the restrictors' *no exceptions* (`hual`) give *whenever*, and the same-role *B is the whole of it* (`erol`) gives *only if*, so the listener cannot tell which was meant. On the other clause hinges no guess meets an English job."
+| Form | Reading | English |
+|------|---------|---------|
+| `herol` + B | during B, and at no other time | *only while*, *as long as* (time) |
+| `thohel` / `gohel` + B | B is enough, and B is the only route | *if and only if* |
+| `thebel` / `gebel` + B | B is needed, and B is the only requirement | *all it takes is B*, so also *if and only if* |
+| `thoval` / `goval` + B | B is the whole aim | *only so that*, *just so that* |
 
-On *while* the patterns agree: `erol`'s *A happens during B and at no other time* carries over to the *while* hinge word for word. So `herol` + a `bl-` word or `blarl` is *only while* / *as long as* (time) (D8). `habal` / `halal` (*only before* / *only after*) carry over less well and stay under the open entry.
+Closing *if* gives *if and only if*, not *only if*. `erol` keeps plain *while* and adds *no other times*, and `thohel` likewise keeps *enough* and adds *no other routes*. `thohel` and `thebel` both land beside `thehom`, approaching it from either side. That is a second route, which is allowed.
 
-Two edits keep sufficiency and necessity apart on the pages:
-- **The *if* cue.** `thohem`'s door cue reads "walk through only if it opens", which is the *only if* wording on the sufficiency word. It becomes "🚪 *door*: open it and you're through" everywhere it appears: [causation.md](../../grammar/beginner/causation.md) lines 19, 91 and 110, and the table in [because-and-iff.md](../../grammar/intermediate/because-and-iff.md) line 21.
-- **A Compare-with on `erol`** in [same-role-words.md](../../grammar/intermediate/same-role-words.md#same-role-while): `erol` *only while* is about time; for *only if* on a condition, use `thebem`, linking back to [causation.md § only if](../../grammar/beginner/causation.md#only-if). That page is beginner, so the link is backward.
+The exception is **`thahul`**, *because* where the reason broke a norm ([fault](../../grammar/beginner/fault.md#fault)), which learners meet before hooks. It stays as taught, and *only because* has no form. The other hinges (`harum`, `huvahum`, `habam`, `halam`, `hahom`, `thezem`, `hezem`, the as-of hinges) keep **-l** open: none has a closed reading that meets an English job.
+
+**Page.** A new section, *Closed hinges* `{#closed-hinges}`, on [because-and-iff.md](../../grammar/intermediate/because-and-iff.md), after *Unless and even if*. The page is intermediate and comes after hooks, so it links back to [closed and open endings](../../grammar/beginner/hooks.md#closed-and-open-endings) and to [fault](../../grammar/beginner/fault.md#fault). It does not go on `dependents.md`, which comes before hooks. *Choosing the hinge* gains a Compare-with: *if and only if* is `thehom`, `thohel` or `thebel`.
+
+**Entry and lead** in `unassigned-reserved.md`:
+- Lead of *Closed-root endings*: "**-l** on a closed root follows its family. On words that take a B (hooks, same-role words, clause hinges) it is the closed ending, *B is the whole of it*, except *because* (`thahul`, *broke a norm*). It is *strongest* on *exactly like* (`hewel`), and the settled end of the [settled-to-passing scale](/knowing#settled-to-passing) on the phasals and channels (`havel`, `ubol`)."
+- Entry: "**open:** clause-hinge **-l** on *until*, *by*, *before*, *after*, *so* (result), *although*, *whereas* and the as-of hinges. The closed reading meets no English job on these."
+- The entry's *by* `arul` is a mistake and goes: `arul` is the plain root *timer*, and the *by* hinge is `huvahum`.
+
+**Keeping the directions apart:**
+- **The *if* cue.** `thohem`'s door cue reads "walk through only if it opens", which is *only if* wording on the sufficiency word. It becomes "🚪 *door*: open it and you're through" everywhere it appears: [causation.md](../../grammar/beginner/causation.md) lines 19, 91 and 110, and the table in [because-and-iff.md](../../grammar/intermediate/because-and-iff.md) line 21.
+- **`erol` by its rule.** On [same-role-words.md](../../grammar/intermediate/same-role-words.md#same-role-while), `erol` is taught as *during B and at no other time*, not only by its gloss *only while*. That way a learner carrying it over writes `thohel` for *if and only if*, not for *only if*. A Compare-with links back to `herol` and to [closed hinges](../../grammar/intermediate/because-and-iff.md#closed-hinges): necessity alone is `thebem`. Both pages come earlier, so the links point backward.
+
+### 7. Respell the *if and only if* root (D9)
+
+`thohem` (root `ohe`, *if*) and `thehom` (root `eho`, *if and only if*) are vowel-order mirrors, so swapping two vowels turns *if* into *if and only if*. The mirror also hints at the wrong partner: a reversed *if* suggests the converse, and the converse of *A if B* is *A only if B*, which is `thebem`. `eho` is respelled because `thehom` is the rarer form, while `thohem` is beginner core.
+
+The new root keeps the sense *if and only if* and needs a concrete seed with the same idea, each side only with the other (now ↔️ *east-west*). It must share no vowel order with `ohe` or `ebe`. Choosing the seed and sense is a lexicon choice. The spelling comes from `npm run convert-word`, and every use moves through `retie-docs` ([respelling a row](../../meta/procedures/lexicon.md#respelling-a-row)).
 
 ## Implementation plan
 
@@ -149,7 +164,7 @@ Two phases, run through subagents. At the end of each phase, and if the user say
 
 ### Phase 1: settled readings
 
-Phase 1 is roughly 30 orchestrator turns.
+Phase 1 is roughly 35 orchestrator turns.
 
 **U1 Near-made-it cheer.** `proposal-worker`, `model: opus`, effort `high`.
 - Teaches [design § 1](#1-near-made-it-cheer-yrawul). Checks `yrawul` / `yrawum` with `--check-lexicon --at special-values.md#…`, and gives them interpreter rows if `npm run class-row` shows the cheers are keyed by form.
@@ -165,24 +180,28 @@ Phase 1 is roughly 30 orchestrator turns.
 - Teaches [design § 4](#4-time-bounds-throughout-in-the-thick-of-in-the-run-up-to), all three hooks, and narrows the Hooked joins entry.
 - **May edit:** `src/parse/enforce-word.ts`, `src/parse/constructions.ts`, `src/parse/invalid-forms.test.ts`, `src/english-helper/detectors.ts`, `src/interpret/classes.ts`, `docs/meta/interpreter.md`, `docs/grammar/advanced/hooked-joins.md`, `docs/meta/unassigned-reserved.md`.
 
-**U6 Hinge -l (`herol` *only while*, `thohel` open).** `proposal-worker`, `model: opus`, effort `high`.
-- Carries out [design § 6](#6-hinge--l-thohel-stays-open-herol-only-while-d7-d8):
-  - teaches `herol` + a `bl-` word or `blarl` on the [time hinges](../../grammar/beginner/dependents.md#hinges) section
-  - adds an `erol` row on `h` to `data/lexicon-overlays.csv` (and on `g` if the page teaches a noun-side use)
-  - updates `isHinge` in `src/parse/enforce-structure.ts`, if the hinge list does not come from overlay data
-  - adds a `clause_hinge` row to `src/interpret/classes.ts` and its row in `interpreter.md`
-  - rewrites the *Closed-root endings* lead and the clause-hinge **-l** entry in `unassigned-reserved.md`, with the wording in design § 6
-  - fixes the *if* door cue in all four places
-  - adds the `erol` / `thebem` Compare-with
-- **May edit:** `docs/meta/unassigned-reserved.md`, `data/lexicon-overlays.csv`, `src/parse/enforce-structure.ts`, `src/interpret/classes.ts`, `docs/meta/interpreter.md`, `docs/grammar/beginner/dependents.md`, `docs/grammar/beginner/causation.md`, `docs/grammar/intermediate/because-and-iff.md`, `docs/grammar/intermediate/same-role-words.md`.
+**U6a Closed hinges: forms and section.** `proposal-worker`, `model: opus`, effort `high`.
+- Carries out the forms and the page section of [design § 6](#6-hinge--l-is-the-closed-ending-d7-d8):
+  - adds `data/lexicon-overlays.csv` rows for `erol` (`h`, `g`), `ohel` (`th`, `g`), `ebel` (`th`, `g`) and `oval` (`th`, `g`), each anchored at `because-and-iff.md#closed-hinges`
+  - updates `isHinge` in `src/parse/enforce-structure.ts`, if the hinge list does not come from overlay data. `thohel blarl` must stop tripping `standInHost`.
+  - adds `clause_hinge` rows to `src/interpret/classes.ts` and `interpreter.md`. `thohel` and `thebel` read as the same biconditional as `thehom`.
+  - writes the *Closed hinges* section on `because-and-iff.md`, plus the Compare-with in *Choosing the hinge*
+  - checks every new form with `--check-lexicon --at because-and-iff.md#closed-hinges`
+- **May edit:** `data/lexicon-overlays.csv`, `src/parse/enforce-structure.ts`, `src/parse/parse.test.ts`, `src/interpret/classes.ts`, `docs/meta/interpreter.md`, `docs/grammar/intermediate/because-and-iff.md`.
 
-Order: U1, U2, U4, U6, then the cheat-sheet rewrite, which also picks up U6's overlay row.
+**U6b Closed hinges: entry, cue, `erol`.** `proposal-worker`, `model: opus`, effort `high`. Prose only, from U6a's report.
+- Rewrites the *Closed-root endings* lead and the clause-hinge **-l** entry in `unassigned-reserved.md` with the wording in design § 6, and drops the *by* `arul` mistake.
+- Fixes the *if* door cue in all four places.
+- Teaches `erol` by its rule on `same-role-words.md`, with the Compare-with back to `herol` and closed hinges.
+- **May edit:** `docs/meta/unassigned-reserved.md`, `docs/grammar/beginner/causation.md`, `docs/grammar/intermediate/because-and-iff.md` (the cue row only), `docs/grammar/intermediate/same-role-words.md`.
 
-**Commits:** U1, U2, U4, U6, the cheat-sheet output, and the consolidated proposal: about six.
+Order: U1, U2, U4, U6a, U6b, then the cheat-sheet rewrite, which also picks up U6a's overlay rows.
+
+**Commits:** U1, U2, U4, U6a, U6b, the cheat-sheet output, and the consolidated proposal: about seven.
 
 ### Phase 2: likeness on `/w/`, the landmark range, Practice
 
-Phase 2 is roughly 30 orchestrator turns.
+Phase 2 is roughly 38 orchestrator turns.
 
 **U3a `/w/` likeness pair: code.** `proposal-worker`, `model: opus`, effort `high`.
 - Builds the parse in [design § 3](#3-as-big-as-a-house-wewem--b): `wewem` *about as … as*, `wewel` *exactly as … as*.
@@ -200,14 +219,21 @@ Phase 2 is roughly 30 orchestrator turns.
 - **May edit:** `src/interpret/read.ts`, `src/interpret/translate-helpers.ts`, `src/interpret/fixtures/solve-numbers.txt`, the reader tests, `docs/grammar/intermediate/ranges.md`, `docs/meta/interpreter.md`, `docs/meta/design-decisions.md` (the landmark bullet under hooks and relations), `docs/meta/unassigned-reserved.md`.
 
 **C1, C2 Practice top-up.** `checkpoint-writer`, `model: opus`, effort `high`.
-- C1 covers the beginner and intermediate sittings that gained a form: questions (and speech-moves if `yul azozon.` landed there), relations, dependents (time hinges), exactly-like, ranges.
+- C1 covers the beginner and intermediate sittings that gained a form: questions (and speech-moves if `yul azozon.` landed there), relations, exactly-like, ranges, because-and-iff (closed hinges). It also adds direction drills (D10) to the causation checkpoint and one or two items to the beginner [level review](../../meta/translation-exercises.md#level-reviews). These items put *if* and *only if* on the same two clauses (*Azozon walks if it rains* against *Azozon walks only if it rains*).
 - C2 covers the advanced ones: special-values, hooked-joins.
 - The orchestrator rebuilds the pack with `node scripts/checkpoint-pack.mjs` right before each. It skips a sitting where [drill-generation.md](../../meta/procedures/drill-generation.md) asks for no top-up.
-- **May edit:** the `### Practice` sections of its sittings, and the drill allowlist.
+- **May edit:** the `### Practice` sections of its sittings, `docs/grammar/beginner/review.md` (C1), and the drill allowlist.
 
-Order: U3a, U3b, U5, C1, C2, the cheat-sheet rewrite, the final gate.
+**U7 Respell the *if and only if* root.** `proposal-worker`, `model: opus`, effort `high`. It runs last, so the retie also moves the forms this proposal wrote.
+- Reads [lexicon.md](../../meta/procedures/lexicon.md) and [retie.md](../../meta/procedures/retie.md) in full first, then carries out [design § 7](#7-respell-the-if-and-only-if-root-d9).
+- Before choosing anything, checks `design-decisions.md` and the lexicon notes for a written reason behind the `ohe` / `eho` mirror. If one exists, stops and reports.
+- Picks the new seed and sense, gets the spelling from `npm run convert-word`, and updates the cue on every page that names it.
+- The orchestrator fences the `retie-docs --write`: commit before it, commit its output alone, then commit the hand fixes ([fence automated rewrites](../../meta/procedures/proposals.md#fence-automated-rewrites)).
+- **May edit:** what `lexicon.md` and `retie.md` list for a respelling, and the cue text in `causation.md` and `because-and-iff.md`.
 
-**Commits:** U3a, U3b, U5, C1, C2, the cheat-sheet output, and the consolidated proposal: about seven.
+Order: U3a, U3b, U5, C1, C2, U7, the cheat-sheet rewrite, the final gate.
+
+**Commits:** U3a, U3b, U5, C1, C2, U7 (its retie output and its hand fixes), the cheat-sheet output, and the consolidated proposal: about nine.
 
 ### Rule digest (copied into every brief)
 
@@ -251,5 +277,7 @@ Settled by the user, 2026-11-25. Each reading is written into the design section
 - **D4** `wewem` *about as … as* at beginner in relations.md, `wewel` *exactly as … as* at intermediate in exactly-like.md; both in exactly-like.md if the forward-link lint requires it ([§ 3](#3-as-big-as-a-house-wewem--b)).
 - **D5** All three time hooks: `ue` *throughout*, `am` *in the thick of*, `oem` *in the run-up to* ([§ 4](#4-time-bounds-throughout-in-the-thick-of-in-the-run-up-to)).
 - **D6** A range on the landmark's `/ɡ/` label, through a reader fix; *a range of named landmarks* stays open ([§ 5](#5-a-range-of-labelled-landmarks-d6)).
-- **D7** `thohel` stays open on the guess conflict alone, with the reworded lead and entry; the *if* door cue is fixed and `erol` gains a Compare-with to `thebem` ([§ 6](#6-hinge--l-thohel-stays-open-herol-only-while-d7-d8)).
-- **D8** `herol` + a `bl-` word or `blarl`: *only while* / *as long as* ([§ 6](#6-hinge--l-thohel-stays-open-herol-only-while-d7-d8)).
+- **D7** Hinge **-l** is the closed ending of hooks, *B is the whole of it*, with `thahul` (fault) as the one exception. `thohel` and `thebel` mean *if and only if*, and `thoval` *only so that*. The other hinges keep **-l** open. The *if* door cue is fixed, and `erol` is taught by its rule ([§ 6](#6-hinge--l-is-the-closed-ending-d7-d8)). This replaces an earlier D7, *keep `thohel` open*, which had read closure on *if* as *only if*.
+- **D8** `herol` + a `bl-` word or `blarl`: *only while* / *as long as* ([§ 6](#6-hinge--l-is-the-closed-ending-d7-d8)).
+- **D9** Respell the *if and only if* root `eho`, so it no longer mirrors `ohe` ([§ 7](#7-respell-the-if-and-only-if-root-d9)).
+- **D10** Drills that put *if* against *only if* go in both the causation checkpoint and the beginner level review (C1).
