@@ -67,6 +67,34 @@ function label(number: Plain): string {
   return number.marker === "-" ? `minus-${cardinal}` : cardinal;
 }
 
+/** A numeric prefix's digitless kind by its shorthand body (numeric-derivation.md), as the glosser labels it. */
+const NUMERIC_KIND: Record<string, string> = {
+  "+e": "infinity",
+  "+e-": "grain",
+  "+-": "grain",
+  "-e": "void",
+  "-e-": "quasi",
+  "--e-": "quasi",
+  "--": "quasi",
+  "#e-": "origin",
+  "#-": "origin",
+  "#e": "telos",
+  "+": "poly",
+  "-": "de",
+};
+
+/**
+ * A numeric prefix's number (numeric-derivation.md), from its shorthand body: a digitless kind by its label
+ * (`quasi`), a digit string as `_` and its digits (`_1`), else the plain number's label (`two`, `1st`).
+ */
+export function numericLabel(body: string | undefined): string {
+  if (body === undefined) throw new Unrealized("missingValue", "a numeric prefix with no number in the view");
+  const kind = NUMERIC_KIND[body];
+  if (kind) return kind;
+  const digits = body.match(/^_(\d+)$/);
+  return digits ? `_${digits[1]}` : label(fromBody(body));
+}
+
 /**
  * The leaf of a plain number under `pos`, on its ending. The preferred writing takes no surface suffix
  * (number-markers.md#writing-style-numeric-vs-spelled), so the gloss names the preferred one and `spell` writes it.
@@ -91,6 +119,71 @@ export function numberDetailLeaf(detail: MeaningDetail): string {
   if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("a number with a detail, frame or hosted word");
   if (detail.values.gloss) throw noRule("a number with a reading of its own");
   return leafOf(fromBody(detail.values.number), "g", detail.values.ending);
+}
+
+/** The parts a fraction names one of, by their English (measures-and-percent.md#fractions); others are `one-Nth`. */
+const FRACTION_NAMES: Record<number, string> = { 2: "half", 3: "third", 4: "quarter" };
+
+/** A plain `/ɡ/` count on **-l** (`g+N`), which makes a minus number right after it a fraction. */
+export function isPlainCount(detail: MeaningDetail): boolean {
+  if (detail.key !== "lexReading:number" || detail.values.ending !== "l" || detail.values.gloss || detail.values.built) return false;
+  try {
+    return fromBody(detail.values.number).marker === "+";
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * A minus number N (N ≥ 2) right after a plain noun or a count, which names one part in N
+ * (measures-and-percent.md#fractions: `zedudal grugel`, *a third of the tea*), or undefined when the detail is not one.
+ */
+export function fractionLeaf(detail: MeaningDetail): string | undefined {
+  if (detail.key !== "lexReading:number" || detail.values.gloss || detail.values.built) return undefined;
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) return undefined;
+  let number: Plain;
+  try {
+    number = fromBody(detail.values.number);
+  } catch {
+    return undefined;
+  }
+  const n = Number(number.digits);
+  if (number.marker !== "-" || n < 2) return undefined;
+  // The fraction's gloss names no ending; only the exact one reads back the same.
+  if (detail.values.ending !== "l") throw noRule(`a fraction on -${detail.values.ending ?? "?"}`);
+  return `g-${FRACTION_NAMES[n] ?? `one-${ordinal(n)}`}-of`;
+}
+
+/**
+ * A digitless number shared after a rank join (comparative-arity.md#amount-scale, #frequency-scale, #time-scale): the
+ * scale it ranks on, which the reader records in `values.scale`, is its letter and its label (`g-amount`,
+ * `h-how-often`, `b-later`), on its ending.
+ */
+const SCALE: Record<string, [string, string]> = { amount: ["g", "amount"], frequency: ["h", "how-often"], time: ["b", "later"] };
+
+/** A shared word that is a number: a digitless scale word by its scale, else a plain number on `/ɡ/`. */
+export function sharedNumberLeaf(detail: MeaningDetail): string {
+  const scale = detail.values.scale;
+  if (scale === undefined) return numberDetailLeaf(detail);
+  const [pos, name] = SCALE[scale] ?? [];
+  const suffix = ENDING_SUFFIX[detail.values.ending ?? ""];
+  if (!pos || suffix === undefined) throw noRule(`a ${scale} scale on -${detail.values.ending ?? "?"}`);
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("a scale word with a detail, frame or hosted word");
+  return `${pos}-${name}${suffix}`;
+}
+
+/**
+ * A factor on a shared scale word (comparative-arity.md#factor: `zoel gelazem hradol`, *twice as big as*): an `amount`
+ * detail of the scale word, written as an `/h/` number right after it.
+ */
+export function hNumberLeaf(detail: MeaningDetail): string {
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("an /h/ number with a detail, frame or hosted word");
+  if (detail.values.gloss) throw noRule("an /h/ number with a reading of its own");
+  const number = fromBody(detail.values.number);
+  // The inverse marker divides (comparative-arity.md#factor: `hrudol`, *half as*).
+  if (number.marker !== "-") return leafOf(number, "h", detail.values.ending);
+  const minus = leafOf(number, "h", detail.values.ending);
+  return minus.replace(/^h-minus-/, "h-divided-by-");
 }
 
 /** The label a resume of a number term glosses with after `←` (number-markers.md#number-endings). */

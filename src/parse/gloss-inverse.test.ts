@@ -122,6 +122,65 @@ describe("glossToAgeben", () => {
     for (const [gloss, ageben] of cases) assert.equal(glossToAgeben(gloss, tables, bare), ageben, gloss);
   });
 
+  it("spells a digitless scale word and a mid-word x compound with no doc line to copy them from", () => {
+    const bare = buildGlossIndex(tables);
+    const cases: [string, string][] = [
+      ["[z-Azozon | z-Alazun | z-rank/more | g-amount] | v-walk", "zazozon zalazun zol gral vowurol"],
+      ["[z-Azozon | z-Alazun | z-rank/more | g-amount.about] | v-walk", "zazozon zalazun zol gram vowurol"],
+      ["[z-Azozon | z-Alazun | z-rank/more | h-how-often] | v-walk", "zazozon zalazun zol hral vowurol"],
+      ["[z-Azozon | th-plan-itinerary | z-rank/more | b-later] | v-arrival", "zazozon thagom zol bral vavurol"],
+      ["z-peanut-x-butter", "zuwedaxubudal"],
+      ["d-peanut-x-butter", "duwedaxubudal"],
+      ["z-triviality-x-compliment", "zuwedaxubudam"],
+      ["[z-tea | g-third-of] | v-sit", "zedudal grugel vehohel"],
+      ["[z-tea | g-half-of] | v-sit", "zedudal grudol vehohel"],
+      ["[z-tea | g-two | g-third-of] | v-sit", "zedudal gradol grugel vehohel"],
+      ["[z-tea | g-one-12th-of] | v-sit", "zedudal g-12 vehohel"],
+    ];
+    for (const [gloss, ageben] of cases) {
+      const spelled = glossToAgeben(gloss, tables, bare);
+      assert.equal(spelled, ageben, gloss);
+      assert.equal(morphGlossLine(spelled, tables), gloss, ageben);
+    }
+  });
+
+  it("spells a built word with no doc line to copy it from", () => {
+    const bare = buildGlossIndex(tables);
+    const cases: [string, string][] = [
+      // Role words on each ending, with a stem compound.
+      ["z-episode-agent-teach | v-run", "zwuzeduyol veruvol"],
+      ["z-except-episode-agent-teach | v-run", "zwuazeduyol veruvol"],
+      ["d-episode-manner-walk | v-see", "dwuhowurol vayebel"],
+      ["h-role-agent-teach", "hwozeduyol"],
+      ["z-episode-agent-dog-x-walk | v-run", "zwuzodozexowurol veruvol"],
+      // Hook prefixes: a zone hook, a stem compound, a hook-compound stem, label reach, and a resume.
+      ["z-against-x-fight | v-walk . z-←against-x-fight | v-sleep", "zuoxuvuvul vowurol. zuoxuvuvur vezuvel"],
+      ["g-contrary-to-x-wind", "guomxawulol"],
+      ["g-against-x-house-x-walk", "guoxohahaxowurol"],
+      ["g-against-x-leave", "guoxowurolul"],
+      ["z-against-x-fight-th-role", "zuoxuvuvuthol"],
+      // Numeric prefixes: a count, the `mx` seam, a rank, a source number, a digitless kind.
+      ["z-Azozon | d-two-x-commitment | v-see", "zazozon dradoxabewom vayebel"],
+      ["z-Azozon | d-three.about-x-speech | v-see", "zazozon dragemxezuyol vayebel"],
+      ["z-Alazun | d-1st-x-draft | v-write", "zalazun drobaxobewom varuyol"],
+      ["z-Azozon | d-_1-x-petri-dish | v-see", "zazozon drebaxubewal vayebel"],
+      ["z-quasi-x-friend", "zruwuxahuyayel"],
+      // Label seams on a verb.
+      ["z-Azozon | v-misstate-th-role", "zazozon venumuthol"],
+      ["z-Alazun | v-misstate-th-toward-role", "zalazun venumuthoel"],
+      ["z-speaker | v-tell-th-outside-role | b-listener", "zuwen vezuyothuol bawan"],
+      // Listed hook-compound verbs.
+      ["z-Azozon | d-station | v-leave", "zazozon dezahol vowurolul"],
+      ["z-Azozon | d-catastrophe | v-traverse", "zazozon dabowum vowuroluol"],
+      ["z-Alazun | d-tea | v-serve", "zalazun dedudal vowurolel"],
+    ];
+    for (const [gloss, ageben] of cases) {
+      const spelled = glossToAgeben(gloss, tables, bare);
+      assert.equal(spelled, ageben, gloss);
+      assert.equal(morphGlossLine(spelled, tables), gloss, ageben);
+    }
+  });
+
   it("rejects a gloss no Ageben line produces", () => {
     assert.throws(() => glossToAgeben("z-dog | v-not-a-real-sense", tables, index));
   });

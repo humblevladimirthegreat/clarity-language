@@ -89,6 +89,159 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes lists: members then one join, a standalone join, a u denial, an everything join with its kind", () => {
+    const cases: [string, string][] = [
+      ["zazozon zalazun zal vowurol.", "zazozon zalazun zal vowurol."],
+      ["zazozon dal vayebel.", "zazozon dal vayebel."],
+      ["zual.", "zual."],
+      ["zual godozel dogozel vayebel.", "zual godozel dogozel vayebel."],
+      ["dogozel zual godozel vayebel.", "dogozel zual godozel vayebel."],
+      ["zuam gogozel guzemel.", "zuam gogozel guzemel."],
+      ["zazozon zol.", "zazozon zol."],
+      ["vowurol veruvol vam.", "vowurol veruvol vam."],
+      ["zazozon gamahum gul.", "zazozon gamahum gul."],
+      // A later unnamed member on its own ending, which the reader keeps in the term's values.
+      ["zodozel zogozel zal.", "zodozel zogozel zal."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes a hooked join's bound, a SHARED word for each member, and respectively before the later join", () => {
+    const cases: [string, string][] = [
+      ["zemxual bluwen vezuvel.", "zemxual bluwen vezuvel."],
+      ["zumxual blayan vezuvel.", "zumxual blayan vezuvel."],
+      ["zalazun zexal blazozon vowurol.", "zalazun zexal blazozon vowurol."],
+      ["zazozon zalazun zal gamahum.", "zazozon zalazun zal gamahum."],
+      ["zazozon vowurol veruvol val hahunom.", "zazozon vowurol veruvol val hahunom."],
+      ["zazozon zalazun zal gelazem gamezem wubam gal.", "zazozon zalazun zal gelazem gamezem wubam gal."],
+      ["zazozon zalazun zal vowurol veruvol wubam val.", "zazozon zalazun zal vowurol veruvol wubam val."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes hooks and relations: ranges, in-clause and extra-noun hooks, point-back and discourse hooks, relations, zones", () => {
+    const cases: [string, string[]][] = [
+      ["zalazun varal bazozon oel bahelan.", ["zalazun varal bazozon oel bahelan."]],
+      ["zragel oel zrazal.", ["zragel oel zrazal."]],
+      ["zalazun wemem al zazozon vowurol.", ["zalazun wemem al zazozon vowurol."]],
+      ["zazozon veruvol el vowurol.", ["zazozon veruvol el vowurol."]],
+      ["zazozon abal zahelan vowurol.", ["zazozon abal zahelan vowurol."]],
+      ["zazozon vavobol al bohahal.", ["zazozon vavobol al bohahal."]],
+      ["zalazun ual bohahal veruvol al bedavol.", ["zalazun ual bohahal veruvol al bedavol."]],
+      ["zazozon vehohel el bohahal. zalazun vehohel er.", ["zazozon vehohel el bohahal.", "zalazun vehohel er."]],
+      ["zazozon vowurol. al zalazun vowurol.", ["zazozon vowurol.", "al zalazun vowurol."]],
+      ["zazozon hanem blalazun vezuyol.", ["zazozon hanem blalazun vezuyol."]],
+      ["zazozon vowurol uom thagom.", ["zazozon vowurol uom thagom."]],
+      // An unnamed relation landmark on its own ending.
+      ["zazozon vowurol hohom blezahol.", ["zazozon hohom blezahol vowurol."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes a term's own ending, plural and citation: later list members, landmarks, -m and -r verbs, -ln, -x", () => {
+    const cases: [string, string][] = [
+      ["zazozon bozerom gradol vowurol.", "zazozon vowurol bozerom gradol."],
+      ["zaxual bluzahal vezuvel el bohahal.", "zaxual bluzahal vezuvel el bohahal."],
+      ["zazozoln vowurol.", "zazozoln vowurol."],
+      ["zodozer vowurol.", "zodozer vowurol."],
+      ["zazozonx vowurol.", "zazozonx vowurol."],
+      ["zawanx vowurol.", "zawanx vowurol."],
+      ["zazozon vozuyelx", "zazozon vozuyelx."],
+      ["azozol", "azozol."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes lists of several fences, no K, a standalone join as a landmark, and assigning tags and tag pronouns", () => {
+    const cases: [string, string][] = [
+      ["zual gogozel zul vezuvel.", "zual gogozel zul vezuvel."],
+      ["zedudal zogudal zel zowulal zal vozedal.", "zedudal zogudal zel zowulal zal vozedal."],
+      ["zul godozel vezuvel.", "zul godozel vezuvel."],
+      ["zazozon vowurol el bual.", "zazozon vowurol el bual."],
+      ["zexual blual vezuvel.", "zexual blual vezuvel."],
+      ["zodozel zwal vowurol.", "zodozel zwal vowurol."],
+      ["zodozel zwal zogozel zwol zam vowurol.", "zodozel zwal zogozel zwol zam vowurol."],
+      ["zodozel zogozel zam zwal vowurol.", "zodozel zogozel zam zwal vowurol."],
+      ["zual gogozel zwal vezuvel.", "zual gogozel zwal vezuvel."],
+      ["zeyel zwan vowurol.", "zeyel zwan vowurol."],
+      ["zwal vezuyol bwol.", "zwal vezuyol bwol."],
+      ["zwanx vowurol.", "zwanx vowurol."],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), [want], text);
+      assert.equal(sameReadings(text, want, tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes comparatives: shared scale and equative words, bars, factors, number adverbs", () => {
+    const cases: [string, string[]][] = [
+      ["zazozon zalazun zol gamahum.", ["zazozon zalazun zol gamahum."]],
+      ["zahelan zol guzemel.", ["zahelan zol guzemel."]],
+      ["zazozon zalazun zol wohalal gamahum.", ["zazozon zalazun zol wohalal gamahum."]],
+      ["zazozon zalazun zoem gobulel.", ["zazozon zalazun zoem gobulel."]],
+      ["zalazun zazozon zoel hahunom vowurol.", ["zalazun zazozon zoel hahunom vowurol."]],
+      ["zazozon thubom zol guzemel.", ["zazozon thubom zol guzemel."]],
+      ["zazozon helam zol guzemel.", ["zazozon helam zol guzemel."]],
+      ["zazozon zalazun zoel gelazem hradol.", ["zazozon zalazun zoel gelazem hradol."]],
+      ["zalazun zazozon zoel gelazem hrudol.", ["zalazun zazozon zoel gelazem hrudol."]],
+      ["zalazun vowurol hragel.", ["zalazun hragel vowurol."]],
+      // A digitless scale word, from `values.scale`; a mid-word x compound; a fraction after a plain noun or a count.
+      ["zazozon zalazun zol hral vowurol.", ["zazozon zalazun zol hral vowurol."]],
+      ["zazozon thagom zol bral vavurol.", ["zazozon thagom zol bral vavurol."]],
+      ["zuwedaxubudal.", ["zuwedaxubudal."]],
+      ["zedudal grugel vehohel.", ["zedudal grugel vehohel."]],
+      ["zedudal gradol grugel vehohel.", ["zedudal gradol grugel vehohel."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+    // A role compound on -r resumes its event: it spells only after the verb it names.
+    const role = project(readTurn("zazozon veduyol. zwuzeduyor vezuvel.", tables), tables).map((view) => realize(view, tables))[1];
+    assert.ok(role && "gap" in role && role.gap.kind === "noSpell" && role.gap.detail.includes("z-←episode-agent-teach"), JSON.stringify(role));
+  });
+
+  it("realizes built words from values.built: role words, hook prefixes, numeric prefixes, label seams, listed hook compounds", () => {
+    const cases: [string, string[]][] = [
+      ["zwuzeduyol veruvol.", ["zwuzeduyol veruvol."]],
+      ["zwuzodozexowurol veruvol.", ["zwuzodozexowurol veruvol."]],
+      ["dwuhowurol vayebel.", ["dwuhowurol vayebel."]],
+      ["zuoxuvuvul vowurol.", ["zuoxuvuvul vowurol."]],
+      ["zazozon dradoxabewom vayebel.", ["zazozon dradoxabewom vayebel."]],
+      ["zazozon dragemxezuyol vayebel.", ["zazozon dragemxezuyol vayebel."]],
+      ["zahelan gruwuxahuyayel.", ["zahelan gruwuxahuyayel."]],
+      ["zazozon venumuthol.", ["zazozon venumuthol."]],
+      ["zazozon dezahol vowurolul.", ["zazozon dezahol vowurolul."]],
+      ["zual gwuzowurol vozuyel.", ["zual gwuzowurol vozuyel."]],
+      // A party a built word hosts is its bl- word, right after it.
+      ["zazozon venumuthel blalazun.", ["zazozon venumuthel blalazun."]],
+      ["zalazun gonumuthael blerulal.", ["zalazun gonumuthael blerulal."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

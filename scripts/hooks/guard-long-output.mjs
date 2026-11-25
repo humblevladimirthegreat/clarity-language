@@ -19,14 +19,6 @@
  * Allowed: piped into another command (`| grep -E '^# (pass|fail)'`) or
  * redirected to a file.
  *
- * Inline edit scripts. A heredoc that writes a script file (`cat > x.mjs <<EOF`,
- * `tee x.py <<EOF`), or an inline interpreter (`python3 - <<EOF`,
- * `python3 -c`, `node -e`, `tsx -e`, a heredoc into `node`) whose code writes
- * a file (`writeFileSync`, `open(…, 'w')`, `.write_text(`). Quoted old text
- * belongs in Edit calls; a section-level script goes in a file written with
- * the Write tool, then run (proposal-worker.md, proposals.md step 10).
- * Allowed: inline probes that only read, and output redirected to a file.
- *
  * Exit 2 with a message on stderr blocks the call and shows the message to
  * the model; exit 0 lets it run. Any internal error lets the call run.
  */
@@ -90,23 +82,6 @@ export function rawTestRun(words) {
   return ["tsx", "node"].includes(basename(rest[i] ?? "")) && rest.slice(i + 1).includes("--test");
 }
 
-const SCRIPT_FILE = String.raw`\S+\.(?:mjs|cjs|js|mts|ts|py|sh)['"]?`;
-/** `cat > x.mjs <<EOF`, `cat <<EOF > x.py`, `tee x.ts <<EOF`: a script file written from a heredoc. */
-const HEREDOC_SCRIPT = new RegExp(
-  String.raw`(?:^|[\s;&|(])(?:cat\b[^\n]*>\s*${SCRIPT_FILE}[^\n]*<<|cat\b[^\n]*<<[^\n]*>\s*${SCRIPT_FILE}|tee\b[^\n]*\s${SCRIPT_FILE}[^\n]*<<)`,
-);
-/** An interpreter given its code inline: `-c` / `-e` / `-p`, `-` (stdin), or a heredoc. */
-const INLINE_INTERPRETER =
-  /(?:^|[\s;&|(])(?:python3?|node|tsx|deno|bun)\b(?:\s+--?[\w=-]+)*?(?:\s+-[cep]\b|\s+-(?=\s|$)|[^\n|;&]*<<)/m;
-/** Code that writes a file. */
-const WRITES_FILE = /\b(?:writeFileSync|writeFile|appendFileSync|appendFile|createWriteStream)\s*\(|\.write_text\s*\(|\.write_bytes\s*\(|\bopen\s*\([^)]*,\s*(?:mode\s*=\s*)?['"][wax]b?\+?['"]/;
-
-/** A Bash call that writes or runs an edit script inline instead of from a file. */
-export function inlineEditScript(command) {
-  if (HEREDOC_SCRIPT.test(command)) return true;
-  return INLINE_INTERPRETER.test(command) && WRITES_FILE.test(command);
-}
-
 export function check(command, cwd, root, agentType) {
   const text = stripHeredocs(command);
   let dir = cwd;
@@ -151,16 +126,6 @@ function main() {
   const command = input?.tool_input?.command;
   if (typeof command !== "string") process.exit(0);
   const root = process.env.CLAUDE_PROJECT_DIR || input.cwd || process.cwd();
-  if (inlineEditScript(command)) {
-    process.stderr.write(
-      "Blocked: an inline edit script (a heredoc that writes a script file, or python3 - / -c, node -e that writes a file). " +
-        "Replacing quoted old text: make Edit calls instead, several in one response when they belong together. " +
-        "A section-level rewrite or a change repeated in many places: write the script to a file with the Write tool " +
-        "(under the session scratchpad, or tmp/scratch/), find each section by its headings, assert each anchor matches once, then run the file. " +
-        "Inline probes that only read are fine.\n",
-    );
-    process.exit(2);
-  }
   const { markdown: offenders, rawTest } = check(command, input.cwd || root, root, input.agent_type);
   if (rawTest) {
     process.stderr.write(

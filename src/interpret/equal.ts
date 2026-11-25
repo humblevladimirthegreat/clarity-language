@@ -121,7 +121,7 @@ class Canon {
       this.termOf.set(term.word, term);
     }
     for (const [key, child] of Object.entries(value)) {
-      if (key === "source" || key === "bind" || key === "antecedent" || key === "partners") continue;
+      if (key === "source" || key === "bind" || key === "antecedent" || key === "partners" || key === "list" || key === "tagged") continue;
       this.index(child, sentence, seen);
     }
   }

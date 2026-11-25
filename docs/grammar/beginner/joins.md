@@ -13,6 +13,7 @@ Sections named by data:
 - #negation-u: 4 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
 - #everything-ua: 1 construction home, 2 interpreter rows, 2 interpreter classes, 2 frame keys, 1 pair-table rule, 5 boundary cells
 - #rank-o: 1 construction home, 1 interpreter row, 1 interpreter class
+- #set-joins-and-rank-joins: 1 canonical choice
 - #unspecified-member-r-phrase: 1 construction home, 2 rejections
 - #clause-joins: 3 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class, 2 boundary cells
 Inbound links: npm run page-refs -- joins.md

@@ -55,7 +55,7 @@ A **phase** is the part of a proposal that one orchestrator session carries out;
 
 Prefer more, shorter phases. The orchestrator's context grows with every unit's brief, report and gate, and each later turn pays for all of it again, while a cut costs one cold start ([where the tokens go](#where-the-tokens-go)). In a [full run](full-execution.md) a cut costs the user nothing either, because the runner starts each phase.
 
-Plan a phase at about 40 orchestrator turns, and cut sooner where a cut point below falls naturally. Size a phase by orchestrator turns, not by its unit count. A small unit costs the orchestrator about four turns (brief, launch, gate, commit), so a phase of small units can hold eight to ten of them. A proposal that fits in one session has one phase and names none.
+Plan a phase at about 40 orchestrator turns, and cut sooner where a cut point below falls naturally. Size a phase by orchestrator turns, not by its unit count. A small unit costs the orchestrator about four turns (brief, launch, gate, commit), so a phase of small units can hold eight to ten of them. A proposal that fits in one session has one phase and names none. In a [full run](full-execution.md), a phase also fits in one executor process, which is killed 2 hours after it starts: at about 20 minutes per code unit, that is four units at most, and two or three leave room for a split unit.
 
 Never leave a phase holding a single subagent unit, such as a style gate. Fold it into a neighboring phase, even when that phase then runs one unit past its budget. A cold start is cheap next to a long context, but one small unit doesn't earn a whole session of its own.
 

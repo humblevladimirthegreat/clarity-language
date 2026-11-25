@@ -34,8 +34,8 @@ describe("phase-exec arguments", () => {
     const args = parseArgs(["full-run-costs", "2"]);
     assert.equal(reportRel("full-run-costs", 2), "tmp/state/full-runs/full-run-costs-phase-2.md");
     assert.equal(
-      buildPrompt(args, UUID),
-      `Carry out phase 2 of \`full-run-costs.md\` as a full-run phase executor. Your session id is \`${UUID}\`; write your report to \`tmp/state/full-runs/full-run-costs-phase-2.md\`.`,
+      buildPrompt(args, UUID, new Date("2026-11-25T18:03:19.490Z")),
+      `Carry out phase 2 of \`full-run-costs.md\` as a full-run phase executor. Your session id is \`${UUID}\`; write your report to \`tmp/state/full-runs/full-run-costs-phase-2.md\`. You started at 2026-11-25T18:03:19.490Z.`,
     );
     assert.match(buildPrompt({ ...args, rest: true }, UUID), /^Carry out the rest of phase 2 of /);
     const flags = claudeArgs(args, UUID);

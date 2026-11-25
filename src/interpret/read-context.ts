@@ -135,8 +135,14 @@ export function wordValues(word: LexWord): Record<string, string> {
   }
   // An ability word's vowel: can, or which kind of can't (can-and-cant.md#ability); a sake's or scope's vowel likewise.
   if (family.kind === "x" && family.stanceVowel) values.stanceVowel = family.stanceVowel;
+  // A tag's vowels: which tags it names (tag-pronouns.md#naming-with-a-tag, two stacked in #tag-pairs).
+  if (family.kind === "tag") values.tag = family.vowels.join("");
+  // A hook's vowels, which say its relation (hooks.md, ranges.md#ranges); its ending is `ending`.
+  if (family.kind === "hook" && word.ending) values.series = family.form.slice(0, -word.ending.length);
   if (word.overlay) values.gloss = word.overlay.gloss;
   if (word.ending && family.kind !== "say") values.ending = word.ending;
+  // A plural `-x` on the word (plurality.md#associative).
+  if (word.plural) values.plural = "x";
   return values;
 }
 
@@ -271,14 +277,50 @@ export function detailOf(key: string, word: LexWord, kind: string): Detail {
   if (word.reading === "ordinary" && word.family.kind === "content") values.root = word.family.roots.join("");
   // A number word's value is what the count, rank or amount says (numbers.md#counts): its stem in shorthand.
   if (word.family.kind === "number") values.number = numberBody(word.family.stem);
+  // A built word's stem is the root it builds on, and how it was built is meaning too (builtValues).
+  const built = builtValues(word);
+  if (built.built) Object.assign(values, built, { root: stemOf(word) });
   return { kind, construction: constructionFor(key, word), key, anchor, words: [word], values };
 }
 
+/** The `x` families that build a word from a stem (word-building), as against a seam that frames a host. */
+const BUILT_X: ReadonlySet<string> = new Set(["role", "hookPrefix", "numeric", "scope", "compound"]);
+
+/**
+ * How a built word was built, since each way says something of its own (interpreter.md#terms): `built` is
+ * `role` (a role word, roles.md#role-compounds: its `part` consonant and `reach` vowel), `hookPrefix` (an extra-noun
+ * hook before the seam, hook-compounds.md#hook-prefixes: its `hook`, and a `reach` after the stem's `th` seam),
+ * `numeric` (a number before the seam, numeric-derivation.md: its `number` in shorthand, and `approx` for the `mx`
+ * seam), `scope` (a label seam, label-seams.md: its `stanceVowel`), `compound` (two roots at a mid-word `x`,
+ * compounds.md) or `hookCompound` (a hook fused after a cited word, hook-compounds.md#hook-compounds: its `hook`).
+ * A word built none of these ways gives nothing.
+ */
+export function builtValues(word: LexWord): Record<string, string> {
+  const fused = word.hookCompound ?? (word.family.kind === "hookCompound" ? word.family : undefined);
+  if (fused) return { built: "hookCompound", hook: fused.hook };
+  const family = word.family;
+  if (family.kind !== "x" || !BUILT_X.has(family.xFamily)) return {};
+  const values: Record<string, string> = { built: family.xFamily };
+  if (family.part) values.part = family.part;
+  if (family.reachVowel) values.reach = family.reachVowel;
+  if (family.stanceVowel) values.stanceVowel = family.stanceVowel;
+  if (family.hook) values.hook = family.hook;
+  if (family.stemHook) values.stemHook = `${family.stemHook.leftEnding}${family.stemHook.hook}`;
+  if (family.numberStem) values.number = numberBody(family.numberStem);
+  if (family.approx) values.approx = "mx";
+  return values;
+}
+
+/** A built word's stem: its roots, parts joined at `x`; a listed hook compound's whole stem (`owurolul`). */
+function stemOf(word: LexWord): string {
+  return word.hookCompound?.stem ?? rootOf(word);
+}
+
 /** The link kinds whose one word's meaning the solver reads off `values` (interpreter.md#links). */
-const VALUED_LINKS: ReadonlySet<LinkKind> = new Set(["linker", "discourse", "polar", "standIn", "standInBack"]);
+const VALUED_LINKS: ReadonlySet<LinkKind> = new Set(["linker", "discourse", "hookResume", "polar", "standIn", "standInBack"]);
 
 export function link(kind: LinkKind, key: string, words: LexWord[], extra: Partial<Link> = {}): Link {
-  const values = VALUED_LINKS.has(kind) && words.length === 1 ? linkValues(words[0]!) : undefined;
+  const values = VALUED_LINKS.has(kind) && words.length === 1 ? linkValues(words[0]!, kind) : undefined;
   return { kind, key, anchor: classOf(key)?.anchor ?? "", words, ...(values ? { values } : {}), ...extra };
 }
 
@@ -286,14 +328,13 @@ export function link(kind: LinkKind, key: string, words: LexWord[], extra: Parti
  * A link word's values: its gloss as the morph gloss gives it (a sentence linker's, a discourse hook's, a join word's),
  * and, for a word built from a vowel series and an ending (a hook, a polar word, a stand-in), `series` and `ending`.
  */
-function linkValues(word: LexWord): Record<string, string> {
+function linkValues(word: LexWord, kind: LinkKind): Record<string, string> {
   const values = wordValues(word);
   const family = word.family;
   let gloss: string | undefined;
-  if (family.kind === "hook") {
-    if (word.ending) values.series = family.form.slice(0, -word.ending.length);
-    gloss = hookLabel(family.form, { hookJob: "discourse" });
-  } else if (family.kind === "joinMarker") gloss = joinMarkerLabel(word, {});
+  // A hook's `series` comes with its word's values; a point-back hook glosses by its landmark job (*there*).
+  if (family.kind === "hook") gloss = hookLabel(family.form, { hookJob: kind === "hookResume" ? "resume" : "discourse" });
+  else if (family.kind === "joinMarker") gloss = joinMarkerLabel(word, {});
   else gloss = linkerEnglish(word);
   if (gloss && !values.gloss) values.gloss = gloss;
   return values;
@@ -328,7 +369,24 @@ function rootOf(word: LexWord): string {
 }
 
 export function thing(word: LexWord): Term {
-  return { kind: "thing", head: word, root: rootOf(word), named: word.ending === "n" || word.ending === "ln", details: [] };
+  return { kind: "thing", head: word, root: rootOf(word), named: word.ending === "n" || word.ending === "ln", values: termValues(word), details: [] };
+}
+
+/**
+ * A term word's own ending and plural (word-endings.md, plurality.md#associative): the ending says how to take the
+ * root, and `-x` names an anchor with its associates, so a term keeps both as meaning. A word with no role letter is
+ * a bare citation, the word cited outside a sentence (word-endings.md#citation-forms): `citation: "bare"`.
+ */
+export function termValues(word: LexWord): Record<string, string> {
+  return {
+    ...builtValues(word),
+    // A standalone join as a term (a `bl-` landmark, hooked-joins.md#hooked-joins-endings: `zexual blual`) is the
+    // widest bound its series names, *everything*, *none*: its series says which.
+    ...(word.family.kind === "joinMarker" ? { series: word.family.series } : {}),
+    ...(word.ending ? { ending: word.ending } : {}),
+    ...(word.plural ? { plural: "x" } : {}),
+    ...(word.pos ? {} : { citation: "bare" }),
+  };
 }
 
 /**

@@ -1,6 +1,6 @@
 # Reading realizer
 
-**Status:** IN PROGRESS. Phase 1 done 2026-11-25 (U1, U2, U2b, U3, U4, U4b; literals moved to U15). Next: phase 2. Round trip at phase 1's end: 102 `ok` of 1477 examples; 49 `different`, 21 `gap:missingValue`, 1298 `gap:noRule`, 3 `gap:noSpell`, 4 `skipped:unread`. `reader-solver-boundary.md` is landed in the tree. D1 settled 2026-11-21: equal readings move onto the meaning view (U20). Settled by the orchestrator 2026-11-25 (autonomous, now in [realizer.md](../../meta/realizer.md)): the round-trip harness lives in `src/round-trip/`, outside the `src/realize/` import allowlist, because it needs the parser and `sameReadings`; the ratchet counts each failed trip under every part key of its readings, so progress cannot move a failure onto an unlisted key; `gloss-inverse.ts` spells number glosses structurally.  
+**Status:** IN PROGRESS. Phase 1 done 2026-11-25 (U1, U2, U2b, U3, U4, U4b; literals moved to U15). Phase 2 done 2026-11-25 (U5, U5b, U6, U7, U7b, U8a, U8b, U8c1, U8c2; U8's leftovers moved to U14, U13, U16 and U17). Next: phase 3. User decision 2026-11-25: the rest of the plan is resized to about 5× less usage per phase (phase 2 cost 81 points of the 5-hour window over two executor runs, about 8 per unit): each former unit splits by page set into units of about 40 calls, two units per phase, so phases 3 and 4 become phases 3 to 13, with a hard turn cap in the digest. Round trip at phase 2's end: 480 `ok` of 1479 (102 at phase 1's end). Settled by the orchestrator 2026-11-25 (autonomous, code shape, as U7b did): units may extend `spell` in `src/parse/gloss-inverse.ts` structurally when a realized gloss does not spell; U8c1 did so for built words (`6064a7a`). `reader-solver-boundary.md` is landed in the tree. D1 settled 2026-11-21: equal readings move onto the meaning view (U20). Settled by the orchestrator 2026-11-25 (autonomous, now in [realizer.md](../../meta/realizer.md)): the round-trip harness lives in `src/round-trip/`, outside the `src/realize/` import allowlist, because it needs the parser and `sameReadings`; the ratchet counts each failed trip under every part key of its readings, so progress cannot move a failure onto an unlisted key; `gloss-inverse.ts` spells number glosses structurally.  
 **Decided by agent:** 2026-11-25: the realizer writes number gloss labels itself in `src/realize/numbers.ts`, from the stem the view keeps, instead of widening the import allowlist to the glosser's `numberLabel` (medium, not flagged, `caac6e3`). The other option: add `numberLabel` from `src/parse/morph-gloss-labels.ts` to the allowlist. That function reads no word, but widening the allowlist is a weaker check.
 **Related:** [interpreter.md](../../meta/interpreter.md) ([terms](../../meta/interpreter.md#terms), [reader rules](../../meta/interpreter.md#reader-rules), [parse or reading](../../meta/interpreter.md#parse-or-reading), [equal readings](../../meta/interpreter.md#equal-readings), [classification table](../../meta/interpreter.md#classification-table), [pair table](../../meta/interpreter.md#pair-table)), [glosses.md](../../meta/glosses.md#round-trip), [read-ageben.md](../../meta/procedures/read-ageben.md), [`types.ts`](../../../src/interpret/types.ts), [`read.ts`](../../../src/interpret/read.ts), [`equal.ts`](../../../src/interpret/equal.ts), [`reply.ts`](../../../src/interpret/reply.ts), [`gloss-inverse.ts`](../../../src/parse/gloss-inverse.ts), [`llm-examples.ts`](../../../src/parse/llm-examples.ts), [`rewrite.ts`](../../../src/find/rewrite.ts), [`sweep.test.ts`](../../../src/interpret/sweep.test.ts), [`scripts/sweep.ts`](../../../scripts/sweep.ts)  
 **Depends on:** `reader-solver-boundary.md`  
@@ -32,116 +32,156 @@
 
 ## Implementation plan
 
-Four phases, run through subagents; phase 1 is done. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates the proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Phase 1 builds the meaning view, the harness and the bare clause, so later units are briefed from measured counts. Phase 2 covers terms and details, which frames host. Phase 3 covers the frame families. Phase 4 covers nesting, discourse and the variant corpus. Each later phase reads a different set of grammar pages, and each starts from the round-trip counts the one before it leaves.
+Thirteen phases, run through subagents; phases 1 and 2 are done. At the end of each phase, and if the user says to stop partway, the orchestrator [consolidates the proposal](../../meta/procedures/proposals.md#consolidate) before the session ends. Phase 1 builds the meaning view, the harness and the bare clause, so later units are briefed from measured counts. Phase 2 covers terms and details, which frames host. Phases 3 to 8 cover the frame families and their reader gaps. Phases 9 to 13 cover nesting, discourse, numbers in full, the variant corpus and equal readings. Each phase holds two units of about 40 calls each, so one executor run costs about a fifth of phase 2's and ends well inside the 2-hour background limit. Each phase reads a different set of grammar pages, and each starts from the round-trip counts the one before it leaves. Counts in brackets after a unit's items are the ratchet's failing trips per key at phase 2's end; a trip counts under every key of its readings, so they size a unit and do not sum.
 
-**Gates.** At the start of each phase the orchestrator saves `npm run verify -- --baseline` and `npm run round-trip -- --save`. Each unit ends with `npm run verify` and passes before its commit. The ratchet is in `npm test`, so `verify` covers it. At each phase end, `npm run round-trip -- --diff` shows no key that got worse. The proposal touches no prose under `docs/grammar/`, so it has no style gate and no recall gate. The final gate is a full `npm run verify` against an empty baseline at the end of phase 4.
+**Gates.** At the start of each phase the orchestrator saves `npm run verify -- --baseline` and `npm run round-trip -- --save`. Each unit ends with `npm run verify` and passes before its commit. The ratchet is in `npm test`, so `verify` covers it. At each phase end, `npm run round-trip -- --diff` shows no key that got worse. The proposal touches no prose under `docs/grammar/`, so it has no style gate and no recall gate. The final gate is a full `npm run verify` against an empty baseline at the end of phase 13.
 
-**Reader-gap units.** Units U3 to U17 fix in place the reader gaps of triage step 1 that need only a copied field. They log the gaps that need a new shape. The reader-gap unit that closes each phase (U8, U14, U19) takes the logged list. If the list is empty, the orchestrator drops that unit. A unit that changes the outcome of `run.test.ts`, `src/game/` tests or a solver golden stops and reports; it does not edit the test.
+**Reader-gap units.** Units U3 to U17b fix in place the reader gaps of triage step 1 that need only a copied field. They log the gaps that need a new shape. The reader-gap units take the logged lists: U14b and U14c for phases 1 to 7, U19 for phases 9 to 12. If a list is empty, the orchestrator drops that unit. A unit that changes the outcome of `run.test.ts`, `src/game/` tests or a solver golden stops and reports; it does not edit the test.
 
 **Solver goldens.** No unit changes a `src/interpret/fixtures/solve-*.lp` golden. A reader field the solver did not read before changes no golden; if one changes, the unit stops and reports.
 
-### Built in phase 1 (input for later units)
+### Built in phases 1 and 2 (input for later units)
 
-- **Files.** The meaning view is `src/realize/meaning.ts`: `project(readings, tables)` and `Projector`, the `Meaning*` types, and the no-`raw` and import-allowlist tests in `meaning.test.ts` (`REALIZE_IMPORTS`). The realizer is `src/realize/realize.ts` (`realize`, `firstKey`, `spellGloss`, `Gap`), with `claim.ts`, `terms.ts`, `words.ts` and `numbers.ts`. The harness is `src/round-trip/`: `corpus.ts` (`corpus`, `readTurn`), `round-trip.ts` (`roundTrip`, `tripEntry`, `partKeys`, `ratchetOf`), `round-trip.test.ts` (case tables `[text, want]` checked with `realize` and `sameReadings`) and **`src/round-trip/round-trip-ratchet.json`**. Wherever this plan says `src/realize/round-trip*`, it means `src/round-trip/`.
-- **Realized so far.** The bare clause: the verb; the `z`, `d` and `b` roles; the predicate; plain adverb, adjective and degree details; `thing`, `speaker`, `listener` and `we` terms; a statement `yal` left out; a `slot:newMember` frame hosting one plain noun. Pronouns: generic, topic, a bound `-r` resume or role pointer, a new one on `-l`. Number terms with their markers, in a role, as a predicate and on a noun, in the preferred writing. *Canonical choices* in `realizer.md` has 7 rows.
-- **Reader fields added:** `values.root` on a content-word detail; `values.ending` and `values.sense` on a pronoun term; `values.ending` on a number term; `values.number` (the shorthand stem) on a number detail. `equal.ts` gained one rule: a number word compares by role letter, shorthand body and ending, not by its writing (`number-markers.md#writing-preferred-shorthand`).
-- **Logged for U8** (shape changes or missing values, from phase 1):
-  - plural `-x` on terms, predicates and pointers (about 22 `different` trips);
-  - a verb's `-m` abstract or `-r` resume ending (12);
-  - how a verb was built: hook compound, label seam (10);
-  - the `-ln` instance (1);
-  - a bare citation with no role letter (3);
-  - a built word (role word, numeric prefix) or an `-m` unit noun with a number, on a noun with no new-member frame: the view has no ending for the noun (`missingValue`, about 21);
-  - a tag pronoun's tag vowel;
-  - an unbound `-r` (`zodozer`, *the one you both know*) has no stem.
-- **Left to later units.** U5: a list as a pronoun's antecedent, and `slot:newMember` over an and-list or `zar`. U6: `slot:newMember` over a hook's landmark. U7: role-compound pronouns (`anaphor:role`, 6 trips). U8: tag pronouns, once the tag vowel is in the view. U15: **literal terms** (moved from U4: the reader copies the span's kind and marks into a `values` field on the literal term (cite, opaque or mention; `NAME`, `~`, `^`, `@`), then the realizer writes them; `spell` already spells `OPAQUE["kimchi"]`). U16: a `-m` share, whose pointer gloss does not spell, and a resume pinned to one sense, since `d-←dog` spells as a plain `-r`. U17: the number forms its item lists.
-- **Settled for U16 (autonomous).** A resume parses only after what it resumes, so a reading spelled on its own line cannot spell it (`drager`, `gap:noSpell` under `anaphor:number`). U16 spells each reading with the turn's earlier realized lines as context.
+- **Files.** The meaning view is `src/realize/meaning.ts`: `project(readings, tables)` and `Projector`, the `Meaning*` types, and the no-`raw` and import-allowlist tests in `meaning.test.ts` (`REALIZE_IMPORTS`). The realizer is `src/realize/realize.ts` (`realize`, `firstKey`, `spellGloss`, `Gap`), with `claim.ts`, `terms.ts` (`thingLeaf`, `withPlural`, `cited`), `words.ts` (`listedLeaf`), `numbers.ts` (`numericLabel`), `lists.ts`, `details.ts`, `tags.ts` and `built.ts` (`ROLE_REACH`). The harness is `src/round-trip/`: `corpus.ts` (`corpus`, `readTurn`), `round-trip.ts` (`roundTrip`, `tripEntry`, `partKeys`, `ratchetOf`), `round-trip.test.ts` (case tables `[text, want]` checked with `realize` and `sameReadings`) and **`src/round-trip/round-trip-ratchet.json`**. Wherever this plan says `src/realize/round-trip*`, it means `src/round-trip/`. `spell` is in `src/parse/gloss-inverse.ts`.
+- **Realized so far.** The bare clause (verb, `z`/`d`/`b` roles, predicate, plain details, statement `yal` left out); pronouns; number terms in the preferred writing, digitless scale words, factors, fractions after a plain noun or count; list terms (members, each part's own join and shared kind, and-list frame, binders, `u` denial, *no K*, hooked-join bounds, shared distribute words, *respectively*); hooks and relations (ranges, in-clause and extra-noun hooks, same-role words, hosted relations, discourse and point-back hooks, contrary-to zones); comparatives, superlatives, equatives, bars in a fence, number adverbs; tag pronouns and assigning or bound tags; built words (role words, hook prefixes, numeric prefixes, label seams, `x` and hook compounds, listed hook-compound verbs); a party hosted by a built word or bar. `spell` spells digitless scale labels, `x` compounds, fractions and built-word glosses structurally.
+- **Reader fields added.** `values.root` on a content-word detail and on an unbound `-r` pronoun; on thing, speaker, listener and number terms, `values.ending`, `values.plural` (`x`) and `values.citation` (`bare`); `values.plural` on details and bound pronouns; `values.ending` and `values.sense` on a pronoun; `values.number` on a number detail; `values.scale` on a digitless shared number; `values.part` and `values.reach` on a role compound on `-r`; `values.part` and `values.pointer` on a role pointer; a hook word's `values.series` and a hook detail's `values.part`; `hookResume` link `values`; each list part's `values` and `shared`; the pairing link's `list`; the `slot:tag` link's `values.tag`, `values.ending` and `tagged`; a tag pronoun's `values.tag`; a standalone join's `values.series`; `builtValues(word)` in `read-context.ts` (`values.built` = `role` | `hookPrefix` | `numeric` | `scope` | `compound` | `hookCompound`, with `part`, `reach`, `stanceVowel`, `hook`, `stemHook`, `number`, `approx`; a built detail's stem as `values.root`). `equal.ts` gained one rule (a number word compares by role letter, shorthand body and ending) and skips the back-references `list` and `tagged` when indexing; no verdict changed.
+- **Round trip at phase 2's end:** 480 `ok` of 1479; 1 `different`, 1 `gap:missingValue`, 6 `gap:noParse`, 964 `gap:noRule`, 23 `gap:noSpell`, 4 `skipped:unread`. Two stored ratchet counts (`edge:vocative`, `unit:linker`) sit 1 below what the tree gives, from before phase 2, with no verdict change; leave them.
+- **Logged for U14b and U14c** (left by U8): an in-clause hook between two `/ɡ/` words hosts nothing (`zazozon gadamul ol guzemel`, `hookJob:clause`); a named hook (`oen`, `en`) makes the span a name (`NAME[...]`), which the view does not record (2 `noSpell`); an adverb resume on `/h/` (`herulor`, `hazuror`) has no antecedent; joins on `-n` (`zobodel zubudal zan`, 4) and a hooked join on `er` (1); a hook prefix on a hook-compound stem (`guoxowurolul`) needs the listed stem in the view; a bar with no ending in the view (`shared:equative`, `bars.md` line 126); `spell` does not spell a role word with an ability vowel (`g-episode-agent-authorship-able`, 3) or a plural role word on `bl-` (`bl-role-agent-learn-x`, 2).
+- **Left to later units.** U13a: bars that are ability, say or holder words (`hodaxal`, `hwuvol`, `theguyom`, `thewemum`, about 5) need ability or say values on the bar. U15a: **literal terms** (the reader copies the span's kind and marks into a `values` field on the literal term (cite, opaque or mention; `NAME`, `~`, `^`, `@`), then the realizer writes them; `spell` already spells `OPAQUE["kimchi"]`). U16b: a `-m` share, whose pointer gloss does not spell; a resume pinned to one sense (`d-←dog` spells as a plain `-r`); role-compound resumes (`anaphor:role`, 6 `noSpell`), tag recalls on `-r`/`-m` (`gap:noParse`), list pointers spelled alone, and `standIn` links, which all spell only after their antecedent. U17a and U17b: the number forms their items list, plus percent (`g+25%`), number stems `zrawal`/`zruwal` and digit strings in hooks.
+- **Logged in `realizer.md` *Gaps*:** prefix labels that are also a root's sense (`infinity`, `grain`, `void`, `origin`, hook `by`) gloss two words alike, so `zrawaxolamal` reads back as `zenuroxolamal` (1 `different`). Recommendation: reword those lexicon rows.
+- **Settled for U16a (autonomous).** A resume parses only after what it resumes, so a reading spelled on its own line cannot spell it (`drager`, `gap:noSpell` under `anaphor:number`). U16a spells each reading with the turn's earlier realized lines as context.
 
 ### Standard unit
 
-Units marked *the rest as U3* do this: add each canonical choice to `realizer.md` with the anchor that allows it; triage failures on their keys per [triage](#triage-of-a-failure); lower the ratchet from `npm run round-trip -- --ratchet`; and log shape changes for the phase's reader-gap unit.
-**May edit (as U3):** `src/realize/*.ts` (`meaning.ts` only for fields the reader gains), `src/round-trip/round-trip-ratchet.json`, `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/types.ts` (fields only), `src/interpret/equal.ts` (stated equivalences only), the matching `*.test.ts` files, including `src/round-trip/round-trip.test.ts` (new cases only), `docs/meta/realizer.md`, `docs/meta/interpreter.md`, and the read-by blocks that `npm run page-readers -- --write` rewrites.
+Units marked *the rest as U3* do this: add each canonical choice to `realizer.md` with the anchor that allows it; triage failures on their keys per [triage](#triage-of-a-failure); lower the ratchet with `npm run round-trip -- --lower`; and log shape changes for the phase's reader-gap unit.
+**May edit (as U3):** `src/realize/*.ts` (`meaning.ts` only for fields the reader gains), `src/round-trip/round-trip-ratchet.json`, `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/types.ts` (fields only), `src/interpret/equal.ts` (stated equivalences only), the matching `*.test.ts` files, including `src/round-trip/round-trip.test.ts` (new cases only), `src/parse/gloss-inverse.ts` (structural spelling only) and its test, `docs/meta/realizer.md`, `docs/meta/interpreter.md`, and the read-by blocks that `npm run page-readers -- --write` rewrites.
 
-### Phase 2: lists, details and word-building
+### Phase 3: force and questions
 
-**U5. Lists and joins.**  
+**U9a. Force, calls and attitude.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize `list` terms: set and rank joins, fences, SHARED, *respectively*, `u` list denial, binders and bound tags, hooked joins. Pages: [joins.md](../../grammar/beginner/joins.md), [list-structure.md](../../grammar/intermediate/list-structure.md), [set-joins.md](../../grammar/intermediate/set-joins.md), [rank-joins.md](../../grammar/intermediate/rank-joins.md), [universals-domains.md](../../grammar/intermediate/universals-domains.md), [hooked-joins.md](../../grammar/advanced/hooked-joins.md). The rest as U3.  
+Realize the `force`, `call` and `attitude` families: act words, firm and soft, doubled and stacked acts, vocatives, interjections, speaker attitude, speech manner, tone marks (`edge:force` 145, `edge:vocative` 13, `edge:interjection` 9, `edge:tone` 6). Pages: [speech-moves.md](../../grammar/beginner/speech-moves.md), [firm-soft.md](../../grammar/beginner/firm-soft.md), [tone-marks.md](../../grammar/intermediate/tone-marks.md), [speech-manner.md](../../grammar/intermediate/speech-manner.md). The rest as U3.  
 **May edit:** as U3.
 
-**U6. Hooks and relations.**  
+**U9b. Questions and polar answers.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize details from hooks and relations: in-clause and extra-noun hooks, ranges, abstract landmarks, hosted relations, locatives, social ties, *as of*, same-role words. Pages: [hooks.md](../../grammar/beginner/hooks.md), [in-clause-hooks.md](../../grammar/intermediate/in-clause-hooks.md), [extra-noun-hooks.md](../../grammar/beginner/extra-noun-hooks.md), [ranges.md](../../grammar/intermediate/ranges.md), [relations.md](../../grammar/beginner/relations.md), [locative-relations.md](../../grammar/intermediate/locative-relations.md). If the unit reaches more than six pages, it stops at relations and reports; the orchestrator starts a fresh unit for the rest. The rest as U3.  
+Realize yes/no and fill questions, polar particles and polar answers, and fill-ask blanks (`edge:polar` 32). Pages: [questions.md](../../grammar/beginner/questions.md), [fill-ask-roles.md](../../grammar/intermediate/fill-ask-roles.md). The rest as U3.  
 **May edit:** as U3.
 
-**U7. Compounds, role words and comparatives.**  
+### Phase 4: knowing
+
+**U10a. MAY and channels.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize role compounds and role parts, mid-word `x` compounds and hook compounds, numeric prefixes, and comparatives, superlatives, equatives, vague amounts, measures and percent. Pages: [roles.md](../../grammar/beginner/roles.md), [compounds.md](../../grammar/beginner/compounds.md), [hook-compounds.md](../../grammar/advanced/hook-compounds.md), [comparatives.md](../../grammar/beginner/comparatives.md), [measures-and-percent.md](../../grammar/intermediate/measures-and-percent.md). The rest as U3.  
+Realize the `stance` family's MAY, live and memory, channels and dated channels (`overlay:evidential:th` 107, `overlay:may:th` 34). Pages: [knowing.md](../../grammar/beginner/knowing.md), [evidentiality.md](../../grammar/intermediate/evidentiality.md), [dated-channel.md](../../grammar/intermediate/dated-channel.md). The rest as U3.  
 **May edit:** as U3.
 
-**U8. Phase 2 reader gaps.**  
+**U10b. Holders, usually and must, stance lists.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Make the reader shape changes logged in phases 1 and 2 (phase 1's list is under *Built in phase 1*) (new term kinds, link kinds or reading fields), each from its owning grammar section, with its [interpreter.md](../../meta/interpreter.md) entry. Every consumer that switches on the changed kind handles the new one (`equal.ts`, `match.ts`, `reply.ts`, `translate*.ts`, `src/game/host.ts`). Then realize what each change unblocks.  
-**May edit:** `src/interpret/types.ts`, `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/log.ts`, `src/interpret/equal.ts`, `src/interpret/match.ts`, `src/interpret/reply.ts`, `src/interpret/translate*.ts` (kind switches only), `src/game/host.ts` (kind switches only), `src/realize/*.ts`, the matching `*.test.ts` files (new cases only), `src/round-trip/round-trip-ratchet.json`, `docs/meta/interpreter.md`, `docs/meta/realizer.md`.
-
-### Phase 3: frames
-
-**U9. Force, calls and attitude.**  
-Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize the `force`, `call` and `attitude` families and polar answers: act words, firm and soft, doubled and stacked acts, questions and fill-ask blanks, vocatives, interjections, speaker attitude, speech manner, tone marks. Pages: [speech-moves.md](../../grammar/beginner/speech-moves.md), [firm-soft.md](../../grammar/beginner/firm-soft.md), [questions.md](../../grammar/beginner/questions.md), [fill-ask-roles.md](../../grammar/intermediate/fill-ask-roles.md), [tone-marks.md](../../grammar/intermediate/tone-marks.md), [speech-manner.md](../../grammar/intermediate/speech-manner.md). The rest as U3.  
+Realize the `holder` family, usually and must, mood on one adjective, and stance lists. Pages: [holder.md](../../grammar/intermediate/holder.md), [usually-vs-must.md](../../grammar/advanced/usually-vs-must.md), [universality.md](../../grammar/advanced/universality.md), [verb-and-stance-joins.md](../../grammar/intermediate/verb-and-stance-joins.md) (stance joins only). The rest as U3.  
 **May edit:** as U3.
 
-**U10. Knowing.**  
-Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize the `stance` and `holder` families and stance lists: MAY, live and memory, channels, dated channels, usually and must, mood on one adjective, holders. Pages: [knowing.md](../../grammar/beginner/knowing.md), [evidentiality.md](../../grammar/intermediate/evidentiality.md), [holder.md](../../grammar/intermediate/holder.md), [dated-channel.md](../../grammar/intermediate/dated-channel.md), [usually-vs-must.md](../../grammar/advanced/usually-vs-must.md), [verb-and-stance-joins.md](../../grammar/intermediate/verb-and-stance-joins.md) (stance joins only). The rest as U3.  
-**May edit:** as U3.
+### Phase 5: residue and condition hinges
 
 **U11. Residue and its neighbors.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize `residue`, `phase`, `notional`, `mirative` and `contrary`. Pages: [residue-and-former.md](../../grammar/intermediate/residue-and-former.md), [already-still-yet.md](../../grammar/beginner/already-still-yet.md), [notional.md](../../grammar/intermediate/notional.md), [mirative.md](../../grammar/intermediate/mirative.md), [contrary-to.md](../../grammar/intermediate/contrary-to.md). The rest as U3.  
+Realize `residue`, `phase`, `notional`, `mirative` and `contrary` (`overlay:residue:h` 13, `overlay:phasal:*` 14, `overlay:notional:th` 8, `overlay:mirative:th` 6, `overlay:former_climate:h` 5). Pages: [residue-and-former.md](../../grammar/intermediate/residue-and-former.md), [already-still-yet.md](../../grammar/beginner/already-still-yet.md), [notional.md](../../grammar/intermediate/notional.md), [mirative.md](../../grammar/intermediate/mirative.md), [contrary-to.md](../../grammar/intermediate/contrary-to.md). The rest as U3.  
 **May edit:** as U3.
 
-**U12. Hinges and occasions.**  
+**U12a. Condition and cause hinges.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize `hinge` and `occasion`: *if*, *only if*, *iff*, *because*, fault, CAUSE, the result hinge, restrictors and their occasions, habitual, *again*. Pages: [causation.md](../../grammar/beginner/causation.md), [because-and-iff.md](../../grammar/intermediate/because-and-iff.md), [fault.md](../../grammar/beginner/fault.md), [cause.md](../../grammar/intermediate/cause.md), [restrictors.md](../../grammar/beginner/restrictors.md), [more-occasions.md](../../grammar/intermediate/more-occasions.md). The rest as U3.  
+Realize the `hinge` family's *if*, *only if*, *iff*, *because*, fault, CAUSE and the result hinge (`overlay:clause_hinge:th` 69, `overlay:cause:th` 8). Pages: [causation.md](../../grammar/beginner/causation.md), [because-and-iff.md](../../grammar/intermediate/because-and-iff.md), [fault.md](../../grammar/beginner/fault.md), [cause.md](../../grammar/intermediate/cause.md). The rest as U3.  
 **May edit:** as U3.
 
-**U13. Say words, sakes, bars, intention and ability.**  
+### Phase 6: occasions and sakes
+
+**U12b. Restrictors, occasions and time hinges.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize `say`, `sake`, `bar`, `intention` and `ability`. Pages: [permission-consent.md](../../grammar/intermediate/permission-consent.md), [sakes.md](../../grammar/beginner/sakes.md), [for-a-sake.md](../../grammar/intermediate/for-a-sake.md), [bars.md](../../grammar/intermediate/bars.md), [intention.md](../../grammar/beginner/intention.md), [can-and-cant.md](../../grammar/beginner/can-and-cant.md). If the unit reaches more than six pages, it stops after sakes and bars and reports. The rest as U3.  
+Realize `occasion`: restrictors and their occasions, habitual, *again* (`lexReading:restrictor` 40); and the hinges on a relation word (`overlay:clause_hinge:*:…`: as-of 30, after, while, before, by, until 14). Pages: [restrictors.md](../../grammar/beginner/restrictors.md), [more-occasions.md](../../grammar/intermediate/more-occasions.md), [as-of.md](../../grammar/advanced/as-of.md), [same-role-words.md](../../grammar/intermediate/same-role-words.md). The rest as U3.  
 **May edit:** as U3.
 
-**U14. Frame order and phase 3 reader gaps.**  
+**U13a. Sakes and bars.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Check frame placement over every pair kind of the [pair table](../../meta/interpreter.md#pair-table): run `npm run round-trip -- --texts` on the examples with two or more whole-clause frames, and fix the placement rules in the realizer. Then make the reader shape changes logged in phase 3, as in U8.  
-**May edit:** as U8.
-
-### Phase 4: nesting, discourse and variants
-
-**U15. Dependents, clause joins and spans.**  
-Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize literal terms (moved from U4; see *Built in phase 1*), then nested readings: dependents and their hinges, nested dependents, clause joins and clause sequences, scope islands, asides, quotes and their contents, mention spans. Pages: [dependents.md](../../grammar/beginner/dependents.md), [nested-dependents.md](../../grammar/advanced/nested-dependents.md), [clause-sequence.md](../../grammar/beginner/clause-sequence.md), [spans.md](../../grammar/beginner/spans.md), [quote-contents.md](../../grammar/intermediate/quote-contents.md), [scope-islands.md](../../grammar/intermediate/scope-islands.md). The rest as U3.  
+Realize `sake` and `bar`, including the bars left by phase 2 that are ability, say or holder words (see *Left to later units*) (`lexReading:sake` 66). Pages: [sakes.md](../../grammar/beginner/sakes.md), [for-a-sake.md](../../grammar/intermediate/for-a-sake.md), [ought-for-a-sake.md](../../grammar/beginner/ought-for-a-sake.md), [bars.md](../../grammar/intermediate/bars.md). The rest as U3.  
 **May edit:** as U3.
 
-**U16. Links across sentences.**  
+### Phase 7: say words, intention and frame order
+
+**U13b. Say words, intention and ability.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-Realize links in multi-sentence examples: sentence linkers, discourse hooks, stand-ins and point-backs, grounds, carried frames, answers and polar replies, topics. Spell each reading with the turn's earlier realized lines as context (settled; see *Built in phase 1*). Pages: [sentence-linkers.md](../../grammar/intermediate/sentence-linkers.md), [discourse-hooks.md](../../grammar/intermediate/discourse-hooks.md), [stand-in-vowels.md](../../grammar/intermediate/stand-in-vowels.md), [stand-in-roles.md](../../grammar/advanced/stand-in-roles.md), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward) (carry forward only). The rest as U3.  
+Realize `say`, `intention` and `ability`: permission and consent, plan, try and fallback, want and decide, ability (`overlay:plan:th` 17, `overlay:want:th` 11, `overlay:decision:th` 6, `overlay:attempt:h` 4, `lexReading:ability` 2). Pages: [permission-consent.md](../../grammar/intermediate/permission-consent.md), [intention.md](../../grammar/beginner/intention.md), [try.md](../../grammar/intermediate/try.md), [want-and-decide.md](../../grammar/intermediate/want-and-decide.md), [can-and-cant.md](../../grammar/beginner/can-and-cant.md). The rest as U3.  
 **May edit:** as U3.
 
-**U17. Numbers in full.**  
+**U14a. Frame order.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+Check frame placement over every pair kind of the [pair table](../../meta/interpreter.md#pair-table): run `npm run round-trip -- --texts` on the examples with two or more whole-clause frames, and fix the placement rules in the realizer. Log any reader shape change it needs for U14b.  
+**May edit:** as U3.
+
+### Phase 8: reader gaps for phases 1 to 7
+
+**U14b. Reader gaps, first half.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+Make the first half of the reader shape changes in *Logged for U14b and U14c* under *Built in phases 1 and 2*: the in-clause hook between two `/ɡ/` words, the named hook's `NAME[...]` span, the adverb resume on `/h/`, and joins on `-n` and the hooked join on `er`. Each change comes from its owning grammar section, with its [interpreter.md](../../meta/interpreter.md) entry. Prefer a field on an existing kind over a new kind when the grammar section gives no reason for a new kind. Every consumer that switches on a changed kind handles the new one (`equal.ts`, `match.ts`, `reply.ts`, `translate*.ts`, `src/game/host.ts`). Then realize what each change unblocks, as the *Standard unit* says.  
+**May edit (as U14):** `src/interpret/types.ts`, `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/log.ts`, `src/interpret/equal.ts`, `src/interpret/match.ts`, `src/interpret/reply.ts`, `src/interpret/translate*.ts` (kind switches only), `src/game/host.ts` (kind switches only), `src/realize/*.ts`, `src/parse/gloss-inverse.ts` (structural spelling only), the matching `*.test.ts` files (new cases only), `src/round-trip/round-trip-ratchet.json`, `docs/meta/interpreter.md`, `docs/meta/realizer.md`.
+
+**U14c. Reader gaps, second half.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+As U14b, for the rest of that list (the hook prefix on a hook-compound stem, the bar with no ending, the role words `spell` does not spell) and every shape change logged in phases 3 to 7. If that is more than the turn cap holds, the orchestrator splits the rest into U14d and puts it first in phase 9.  
+**May edit:** as U14.
+
+### Phase 9: spans and dependents
+
+**U15a. Literal terms and spans.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+Realize literal terms (moved from U4; see *Built in phases 1 and 2*), then spans: asides, quotes and their contents, mention spans, scope islands (`unit:writingSpan` 14, `unit:island` 2). Pages: [spans.md](../../grammar/beginner/spans.md), [spans-as-words.md](../../grammar/intermediate/spans-as-words.md), [quote-contents.md](../../grammar/intermediate/quote-contents.md), [scope-islands.md](../../grammar/intermediate/scope-islands.md). The rest as U3.  
+**May edit:** as U3.
+
+**U15b. Dependents and clause joins.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+Realize dependents and their hinges, nested dependents, clause joins and clause sequences (`slot:dependent` 3). Pages: [dependents.md](../../grammar/beginner/dependents.md), [nested-dependents.md](../../grammar/advanced/nested-dependents.md), [clause-sequence.md](../../grammar/beginner/clause-sequence.md). The rest as U3.  
+**May edit:** as U3.
+
+### Phase 10: links across sentences
+
+**U16a. Linkers, discourse hooks and carried frames.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+First make the harness spell each reading with the turn's earlier realized lines as context (settled; see *Built in phases 1 and 2*). Then realize sentence linkers, discourse hooks, grounds, carried frames and topics (`unit:linker` 42, `slot:grounds` 12, `carry` 11). Pages: [sentence-linkers.md](../../grammar/intermediate/sentence-linkers.md), [discourse-hooks.md](../../grammar/intermediate/discourse-hooks.md), [topic.md](../../grammar/intermediate/topic.md), [evidentiality.md](../../grammar/intermediate/evidentiality.md#carry-forward) (carry forward only). The rest as U3.  
+**May edit:** as U3, plus `src/round-trip/round-trip.ts`.
+
+**U16b. Stand-ins, resumes and answers.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+Realize stand-ins and point-backs, the resumes left by phase 2 (see *Left to later units*), and answers and polar replies (`lexReading:standIn` 84, `anaphor:*` 50, `lexReading:standInBack` 3, `answer` 1). Pages: [stand-in-vowels.md](../../grammar/intermediate/stand-in-vowels.md), [stand-in-roles.md](../../grammar/advanced/stand-in-roles.md), [resume-sense.md](../../grammar/intermediate/resume-sense.md). The rest as U3.  
+**May edit:** as U3.
+
+### Phase 11: numbers in full
+
+**U17a. Number roles and markers.**  
 Agent `proposal-worker`, `model: opus`, effort `medium`.  
-Realize what U4 left of numbers: number roles, stacked markers, digitless forms and exponents, special values, digit strings and time, initials, rays and named ranges, generations. Pages: [number-roles.md](../../grammar/intermediate/number-roles.md), [stacked-markers.md](../../grammar/advanced/stacked-markers.md), [digitless-exponents.md](../../grammar/intermediate/digitless-exponents.md), [special-values.md](../../grammar/advanced/special-values.md), [digit-strings.md](../../grammar/beginner/digit-strings.md), [open-ranges.md](../../grammar/advanced/open-ranges.md). The rest as U3.  
+Realize number roles, stacked markers, digitless forms and exponents, and special values. Pages: [number-roles.md](../../grammar/intermediate/number-roles.md), [stacked-markers.md](../../grammar/advanced/stacked-markers.md), [digitless-exponents.md](../../grammar/intermediate/digitless-exponents.md), [special-values.md](../../grammar/advanced/special-values.md). The rest as U3.  
 **May edit:** as U3.
 
-**U18. Variant corpus.**  
-Agent `proposal-worker`, `model: opus`, effort `high`.  
-Write `src/round-trip/variants.ts` (outside the import allowlist, like the harness) per [the variant corpus](#the-variant-corpus), reusing `rewrite.ts`'s slot maps (import them; do not copy them). Add `--variants` to `scripts/round-trip.ts` and a variant ratchet to `round-trip.test.ts`. If the variant run is too slow for `npm test`, it moves behind `npm run round-trip -- --variants` with its ratchet checked there, and `realizer.md` says so. Run it, triage each failure kind per [triage](#triage-of-a-failure), and write the *Variants* section of `realizer.md`.  
-**May edit:** `src/round-trip/variants.ts`, `src/round-trip/round-trip.ts`, `src/round-trip/round-trip.test.ts`, `src/round-trip/round-trip-ratchet.json`, `scripts/round-trip.ts`, and the files U3 may edit.
+**U17b. Digit strings, ranges and percent.**  
+Agent `proposal-worker`, `model: opus`, effort `medium`.  
+Realize digit strings and time, initials, rays and named ranges, generations, percent (`g+25%`), the number stems `zrawal` and `zruwal`, and digit strings in hooks. Pages: [digit-strings.md](../../grammar/beginner/digit-strings.md), [initials.md](../../grammar/advanced/initials.md), [open-ranges.md](../../grammar/advanced/open-ranges.md), [generations.md](../../grammar/advanced/generations.md). The rest as U3.  
+**May edit:** as U3.
 
-**U19. Phase 4 reader gaps.**  
+### Phase 12: variant corpus
+
+**U18a. Build the variant corpus.**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
-As U8, for the gaps logged in phase 4 and by the variant run.  
-**May edit:** as U8.
+Write `src/round-trip/variants.ts` (outside the import allowlist, like the harness) per [the variant corpus](#the-variant-corpus), reusing `rewrite.ts`'s slot maps (import them; do not copy them). Add `--variants` to `scripts/round-trip.ts` and a variant ratchet to `round-trip.test.ts`. If the variant run is too slow for `npm test`, it moves behind `npm run round-trip -- --variants` with its ratchet checked there, and `realizer.md` says so. Report the variant counts by verdict and key; triage nothing.  
+**May edit:** `src/round-trip/variants.ts`, `src/round-trip/round-trip.ts`, `src/round-trip/round-trip.test.ts`, `src/round-trip/round-trip-ratchet.json`, `scripts/round-trip.ts`, `docs/meta/realizer.md`.
+
+**U18b. Triage the variants.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+Triage each variant failure kind per [triage](#triage-of-a-failure), starting from U18a's counts, write the *Variants* section of `realizer.md`, and log shape changes for U19.  
+**May edit:** as U18a, and the files U3 may edit.
+
+### Phase 13: reader gaps and equal readings
+
+**U19. Reader gaps for phases 9 to 12.**  
+Agent `proposal-worker`, `model: opus`, effort `high`.  
+As U14b, for the gaps logged in phases 9 to 12 and by the variant run. If that is more than the turn cap holds, the orchestrator runs the rest as U19b before U20.  
+**May edit:** as U14.
 
 **U20. Equal readings on the meaning view (D1).**  
 Agent `proposal-worker`, `model: opus`, effort `high`.  
@@ -149,7 +189,7 @@ Agent `proposal-worker`, `model: opus`, effort `high`.
 Rebuild `canonicalReadings` in `equal.ts` on `project`, keeping each listed rule, so two texts compare by meaning view and not by raw spelling. Every existing `equal.test.ts` case keeps its verdict. Run the "same reading" lint over the practice items and report any item whose verdict changes; do not edit the items. Update [equal readings](../../meta/interpreter.md#equal-readings).  
 **May edit:** `src/interpret/equal.ts`, `src/interpret/equal.test.ts` (new cases only), `src/realize/meaning.ts`, `docs/meta/interpreter.md`.
 
-**Phase 4 close.** *Orchestrator.* Add a `docs/meta/realizer.md` row to the editor-notes table in `AGENTS.md` (*Owns: meaning view, canonical choices, round trip, variants, realizer gaps*; code `src/realize/`, `src/round-trip/`, `npm run round-trip`). Run a full `npm run verify` against an empty baseline. Report the final round-trip counts and the *Gaps* list to the user. Then move this file per [folder and links](../../meta/procedures/proposals.md#folder-and-links) once `realizer.md` and `interpreter.md` own the result.
+**Phase 13 close.** *Orchestrator.* Add a `docs/meta/realizer.md` row to the editor-notes table in `AGENTS.md` (*Owns: meaning view, canonical choices, round trip, variants, realizer gaps*; code `src/realize/`, `src/round-trip/`, `npm run round-trip`). Run a full `npm run verify` against an empty baseline. Report the final round-trip counts and the *Gaps* list to the user. Then move this file per [folder and links](../../meta/procedures/proposals.md#folder-and-links) once `realizer.md` and `interpreter.md` own the result.
 
 ### Rule digest (copied into every brief)
 
@@ -163,20 +203,20 @@ Rebuild `canonicalReadings` in `equal.ts` on `project`, keeping each listed rule
   - a page that is silent: a *Gaps* entry in `realizer.md` with a **Recommendation:** and confidence, then skip.
 - Never settle a meaning the grammar leaves open. Never loosen `equal.ts` without a cited grammar sentence. Never raise the ratchet; lower it when counts improve.
 - Each canonical choice is a row in `realizer.md`'s *Canonical choices* table with the anchor that allows it.
-- No parser change. If one is needed, stop and report.
+- No parser change. If one is needed, stop and report. Extending `spell` (`src/parse/gloss-inverse.ts`) is not a parser change: when a realized gloss equals the parser's own gloss but does not spell, add a structural rule there (never a table of whole words) with `gloss-inverse.test.ts` cases. If two words share one gloss, log a *Gaps* entry instead.
 - If a `run.test.ts`, `src/game/` test or solver golden changes outcome, stop and report. Do not edit the test or the golden.
-- Check forms with one batched `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`. Probe readings with one `node scripts/reading.mjs probe` file (cases separated by `---`). List examples behind a key with `npm run round-trip -- --texts KEY`. Never write a one-off script for these.
+- Check forms with one batched `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`. Probe readings with one `node scripts/reading.mjs probe` file (cases separated by `---`). List examples behind a key with `npm run round-trip -- --texts KEY`, and see those trips in full (gloss, realized line, path, detail) with `--detail KEY` (`--limit N`). See one text's meaning view, realized line and verdict with `npm run realize -- view 'TEXT' …`, and spell glosses with `npm run realize -- spell 'GLOSS' …` ([probes](../../meta/realizer.md#probes)). Never write a one-off script for these.
 - Run `npm run verify` at the end of the unit (`--fast` for checks inside it). On a new error, read only that line of `tmp/logs/verify-last.log`.
 - Keep files under the [code layout](../../meta/code-layout.md) ceiling. Split with `npm run move-decl`, never by hand.
 - Do not commit. Do not edit `AGENTS.md`: report any Owns-line change.
-- The harness is in `src/round-trip/`, outside the import allowlist. Lower `src/round-trip/round-trip-ratchet.json` from `npm run round-trip -- --ratchet` (counts only go down; never add a key).
+- The harness is in `src/round-trip/`, outside the import allowlist. Lower `src/round-trip/round-trip-ratchet.json` with `npm run round-trip -- --lower`, never by hand (it only lowers, never adds a key, and names any key that rose).
 - A new *Canonical choices* row makes its grammar page's read-by block stale: run `npm run page-readers -- --write` before the final `verify`, and report the pages it wrote.
-- At about 25 tool calls, check what is left. If it is small, finish the item, even past 25 calls. If a significant amount is left (more than a few edits, or pages you have not read yet), stop at a clean point, leave the tree green, and report: done, left (as steps), files touched.
+- **Turn cap: 40 tool calls.** Count your tool calls. At the first item boundary after 40, stop even if items remain: leave the tree green, run `npm run verify`, and report **left:** as steps for a fresh worker. Past 40, finish only an item that needs one or two more edits. A long context costs more on every call, so a second worker is cheaper than running on.
 - **Report** (about 150 words): done (one line); round-trip `ok` count before and after, and the keys still failing with their count; reader fields added; `equal.ts` rules added with their anchors; gaps logged (key and one line each); shape changes logged for the reader-gap unit; `verify` line; skips with reasons; **left:**; **inefficient:**.
 
 ### Commits
 
-One commit per unit after its gate, staged with that unit's files only, named `reading-realizer U<n>: <what it did> [skip-cd]` with the co-author line. One commit per phase for the consolidated proposal. Expected for phases 2 to 4: 16 unit commits (fewer where a reader-gap unit is dropped) and 3 consolidation commits. A unit whose `page-readers --write` regenerates read-by blocks commits them on their own, after its own commit. A review-later decision gets its own commit per [settling a decision](../../meta/procedures/proposals.md#settling-a-decision).
+One commit per unit after its gate, staged with that unit's files only, named `reading-realizer U<n>: <what it did> [skip-cd]` with the co-author line. One commit per phase for the consolidated proposal. Expected for phases 3 to 13: 22 unit commits (fewer where a reader-gap unit is dropped, more where one splits) and 11 consolidation commits. A unit whose `page-readers --write` regenerates read-by blocks commits them on their own, after its own commit. A review-later decision gets its own commit per [settling a decision](../../meta/procedures/proposals.md#settling-a-decision).
 
 ## Open decisions
 

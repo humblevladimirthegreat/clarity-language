@@ -65,17 +65,20 @@ export function reportRel(name: string, phase: number): string {
   return tmpRel("state", "full-runs", `${name}-phase-${phase}.md`);
 }
 
-/** The one-line prompt the executor starts from. */
-export function buildPrompt(args: PhaseExecArgs, session: string): string {
+/**
+ * The one-line prompt the executor starts from. It names the start time, because the background Bash call that runs
+ * this launcher is killed at 2 hours: the executor returns `SPLIT` at the first unit boundary after 90 minutes.
+ */
+export function buildPrompt(args: PhaseExecArgs, session: string, started: Date = new Date()): string {
   const what = args.rest ? `the rest of phase ${args.phase}` : `phase ${args.phase}`;
-  return `Carry out ${what} of \`${args.name}.md\` as a full-run phase executor. Your session id is \`${session}\`; write your report to \`${reportRel(args.name, args.phase)}\`.`;
+  return `Carry out ${what} of \`${args.name}.md\` as a full-run phase executor. Your session id is \`${session}\`; write your report to \`${reportRel(args.name, args.phase)}\`. You started at ${started.toISOString()}.`;
 }
 
 /** The `claude` arguments for one executor process. */
-export function claudeArgs(args: PhaseExecArgs, session: string): string[] {
+export function claudeArgs(args: PhaseExecArgs, session: string, started: Date = new Date()): string[] {
   return [
     "-p",
-    buildPrompt(args, session),
+    buildPrompt(args, session, started),
     "--agent",
     "phase-executor",
     "--model",
