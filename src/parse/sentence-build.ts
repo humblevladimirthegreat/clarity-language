@@ -478,7 +478,7 @@ function vpItemNodes(parent: CstNode): CstNode[] {
 }
 
 function buildVpCoord(cst: CstNode): VpCoord {
-  const parts = cst.name === "vpCoord" || cst.name === "vpCoordOpen" ? vpPartNodes(cst) : [cst];
+  const parts = cst.name === "vpCoord" ? vpPartNodes(cst) : [cst];
   return {
     parts: parts.map((part) => {
       const close = partJoinClose(part, "vJoinClose");

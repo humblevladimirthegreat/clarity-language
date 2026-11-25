@@ -97,18 +97,12 @@ export class AgebenSentenceParser extends CstParser {
   public citation!: ParserRule;
   public npSets!: Record<NpSlot, ReturnType<typeof npRules>>;
   public vpCoord!: ParserRule;
-  public vpCoordOpen!: ParserRule;
   public vpTailAfterEndClosed!: ParserRule;
-  public vpTailAfterEndOpen!: ParserRule;
   public vpTailAfterMoreClosed!: ParserRule;
-  public vpTailAfterMoreOpen!: ParserRule;
-  public vpCoordPartFirstEndOpen!: ParserRule;
   public vpCoordPartFirstEndClosed!: ParserRule;
   public vpCoordPartFirstMore!: ParserRule;
-  public vpCoordPartAloneEndOpen!: ParserRule;
   public vpCoordPartAloneEndClosed!: ParserRule;
   public vpCoordPartAloneMore!: ParserRule;
-  public vpCoordPartEndOpen!: ParserRule;
   public vpCoordPartEndClosed!: ParserRule;
   public vpCoordPartMore!: ParserRule;
   public vpVerb!: ParserRule;
@@ -122,7 +116,6 @@ export class AgebenSentenceParser extends CstParser {
   public vpItemUnitH!: ParserRule;
   public vpItemUnitHook!: ParserRule;
   public vpItemUnitHSingle!: ParserRule;
-  public vJoinCloseEndOpen!: ParserRule;
   public vJoinCloseEndClosed!: ParserRule;
   public vJoinCloseMore!: ParserRule;
   public gCoord!: ParserRule;
@@ -180,12 +173,6 @@ export class AgebenSentenceParser extends CstParser {
   public sharedScaleOpen!: ParserRule;
   public hScaleOpen!: ParserRule;
   public hScaleClosed!: ParserRule;
-  public sharedAdverb!: ParserRule;
-  public sharedAdverbOpen!: ParserRule;
-  public sharedAdverbClosed!: ParserRule;
-  public hSharedUnit!: ParserRule;
-  public hSharedUnitOpen!: ParserRule;
-  public hSharedUnitClosed!: ParserRule;
 }
 
 /** The parser as the rule definers in `grammar/` see it: its public members plus the DSL methods they call. */

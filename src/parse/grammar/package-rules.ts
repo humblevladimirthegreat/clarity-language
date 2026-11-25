@@ -11,7 +11,6 @@ import {
   GInRespList,
   HostedBNoun,
   HostedBNumber,
-  HSharedV,
   HScale,
   BScale,
   JoinB,
@@ -97,20 +96,6 @@ export function definePackageRules(p: GrammarParser): void {
   p.hScaleOpen = hScaleRule(p, "hScaleOpen", "open");
 
   p.hScaleClosed = hScaleRule(p, "hScaleClosed", "closed");
-
-  /** The adverb a verb list's join shares (it covers every verb). */
-  p.sharedAdverb = p.RULE("sharedAdverb", () => p.SUBRULE(p.hSharedUnit, { LABEL: "hUnitRule" }));
-
-  p.sharedAdverbOpen = p.RULE("sharedAdverbOpen", () => p.SUBRULE(p.hSharedUnitOpen, { LABEL: "hUnitRule" }));
-
-  p.sharedAdverbClosed = p.RULE("sharedAdverbClosed", () => p.SUBRULE(p.hSharedUnitClosed, { LABEL: "hUnitRule" }));
-
-  /** The shared adverb and what it hosts, as any `/h/` word takes it, in any shape, `Open` or `Closed` (see {@link landmarkHosted}). */
-  p.hSharedUnit = hSharedUnitRule(p, "hSharedUnit", "any");
-
-  p.hSharedUnitOpen = hSharedUnitRule(p, "hSharedUnitOpen", "open");
-
-  p.hSharedUnitClosed = hSharedUnitRule(p, "hSharedUnitClosed", "closed");
 }
 
 /**
@@ -210,16 +195,6 @@ function hScaleRule(p: GrammarParser, name: string, shape: "any" | "open" | "clo
       p.CONSUME(WBefore.HScale, { LABEL: "W" });
     });
     p.CONSUME(HScale, { LABEL: "H" });
-    hostedOrStandIn(p, shape, false);
-  });
-}
-
-function hSharedUnitRule(p: GrammarParser, name: string, shape: "any" | "open" | "closed") {
-  return p.RULE(name, () => {
-    p.MANY(() => {
-      p.CONSUME(WBefore.HSharedV, { LABEL: "W" });
-    });
-    p.CONSUME(HSharedV, { LABEL: "H" });
     hostedOrStandIn(p, shape, false);
   });
 }

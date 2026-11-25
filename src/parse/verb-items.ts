@@ -12,6 +12,7 @@
  */
 import { isClauseAdverb } from "./classify.js";
 import { markStanceJoins } from "./stance-joins.js";
+import { classifyToTokenType, HPlain } from "./tokens.js";
 import type { Clause, IslandUnit, LexWord, Unit, VpCoord } from "./types.js";
 
 function isNp(unit: Unit | undefined, level: "z" | "d" | "b"): boolean {
@@ -88,10 +89,25 @@ function sharedAfter(units: Unit[], at: number): Unit[] {
   return [...units.slice(0, at + 1), ...units.slice(end)];
 }
 
+/**
+ * A plain `/h/` adverb right after a verb list's last `/v/` join is SHARED on that join: it covers every verb
+ * (verb-and-stance-joins.md#vp-clause-forms). The grammar reads it as an ordinary phrase after the list.
+ */
+function joinAdverb(units: Unit[], at: number): Unit[] {
+  const vp = units[at];
+  const next = units[at + 1];
+  if (vp?.kind !== "vp" || next?.kind !== "h" || classifyToTokenType(next.unit.word) !== HPlain) return units;
+  const last = vp.coord.parts.at(-1)!;
+  if (!last.join) return units;
+  last.shared = [...last.shared, next.unit];
+  return [...units.slice(0, at + 1), ...units.slice(at + 2)];
+}
+
 /** Place each verb list's words in a unit list (see the module comment). */
 export function scopeVerbItems(units: Unit[]): Unit[] {
   let out = units;
   for (let at = 0; at < out.length; at++) {
+    out = joinAdverb(out, at);
     if (!isVerbJoin(out[at])) continue;
     out = sharedAfter(out, at);
     const before = out.length;

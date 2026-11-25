@@ -209,7 +209,6 @@ function unitKinds(p: GrammarParser): {
     ...np("d"),
     ...np("b"),
     { rule: p.vpCoord, label: "vpCoord", state: "v", end: "closed", kind: "v" },
-    { rule: p.vpCoordOpen, label: "vpCoord", state: "v", end: "open", kind: "v" },
     { rule: p.vpVerb, label: "vpCoord", state: "v", end: "closed", kind: "v" },
     { rule: p.gCoord, label: "gCoord", state: "g", end: "closed", kind: "g", after: ["closed"] },
     { rule: p.gCoordPlainLead, label: "gCoord", state: "g", end: "closed", kind: "g", after: ["shared"] },

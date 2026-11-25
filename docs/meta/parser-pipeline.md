@@ -186,7 +186,7 @@ Each pass below retypes a word that stays ambiguous until a later word arrives. 
 | `wLeaf` (`/w/` targets, 315) | 3,801 in 342 decisions | after a finished phrase, a `/w/` word starts a modifier run or attaches higher; the word after a run of any length decides |
 | `glLean` (`gl-` lean, 38) | 678 in 150 | noun or package, and list-item close; the noun after the `gl-` word decides |
 | `verbEnd` (`VPlainEnd` / `VPlainMore`, `JoinVEnd` / `JoinVMore`) | 1,892 in 55 | lone verb or list at the first verb, where the second verb may come any number of words later; the `/v/` join's *end* and *more* readings reduce on the same lookahead |
-| `hosted` (`HostedBNoun`, `HostedBNumber`, `HostedOdo`, `LateOdo`, `Amount`, `HScale`, `BScale`, `Factor`, `HZone`, `HZoneHeld`, `HSharedV`) | 3 to 2,916 per family | after a host (or a rank join, a shared adverb, `HookHosting`), the same word could also start a new phrase; `Amount` is reduce/reduce, cardinal or adjective on the landmark |
+| `hosted` (`HostedBNoun`, `HostedBNumber`, `HostedOdo`, `LateOdo`, `Amount`, `HScale`, `BScale`, `Factor`, `HZone`, `HZoneHeld`) | 3 to 2,916 per family | after a host (or a rank join, `HookHosting`), the same word could also start a new phrase; `Amount` is reduce/reduce, cardinal or adjective on the landmark |
 
 `HookHosting` was not tried. In the examples the deciding word is never far (`npm run context-report`, 6,088 examples):
 
@@ -203,7 +203,7 @@ So the conflicts come from runs the grammar allows to be any length, not from se
 - **No apposition settles a verb list at its second verb**, which may come several words later.
 - **Hosting.** The deciding facts are in the words (`bl-`, `uom`, the join's series, the number kind), but the grammar also lets the hosted word start a new phrase in that spot. Every hosted retype is set by the word's own class and the word before it, except `HookHosting` and `HostedBJoined` (the next word, or the rest of the list) and `HZoneHeld` (`uom` two words back).
 
-`HSharedV` also stays for a reason of its own. Without it, an `/h/` after a `/v/` join parses as an ordinary phrase after the verb list, like a `/d/` or `/b/` there, and the grammar is LR(1)-clean. But the adverb then lands among the clause's shared phrases instead of on the join, which gives a different tree (`zazozon vowurol veruvol val hahunom.`).
+A plain SHARED `/h/` right after a verb list's last `/v/` join has no token of its own. The grammar reads it as an ordinary phrase after the list, and `joinAdverb` in `verb-items.ts` moves it into that join's `shared` field (`zazozon vowurol veruvol val hahunom.`). The construction trace still names it the join's shared slot.
 
 Alternatives considered and rejected:
 

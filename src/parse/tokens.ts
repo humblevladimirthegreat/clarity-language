@@ -102,7 +102,6 @@ export const W_TARGETS = [
   "HLone",
   "Bar",
   "HScale",
-  "HSharedV",
   "GAdj",
   "GInList",
   "GInRespList",
@@ -176,8 +175,6 @@ export const HostedBNoun = wordToken("HostedBNoun", [HostedB]);
  */
 export const HostedBJoined = wordToken("HostedBJoined", [HostedB]);
 export const HostedOdo = wordToken("HostedOdo");
-/** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (verb-and-stance-joins.md#vp-clause-forms). Set by `markContext`. */
-export const HSharedV = wordToken("HSharedV");
 /**
  * `barl` that fills a `/th/` host from further right, so it is never a `/b/` stand-in of its own: after a stance join
  * that closes a hinge with no `/b/` (verb-and-stance-joins.md#stance-join-before-barl), or after a channel's offset
@@ -308,7 +305,6 @@ export const allTokens = [
   HostedBNoun,
   HostedBJoined,
   HostedOdo,
-  HSharedV,
   LateOdo,
   Amount,
   Factor,

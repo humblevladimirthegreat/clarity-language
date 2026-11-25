@@ -18,7 +18,6 @@ import {
   HostedBNumber,
   HostedBJoined,
   HostedOdo,
-  HSharedV,
   LateOdo,
   HPlain,
   HTh,
@@ -388,7 +387,6 @@ const W_TARGET_HEADS: [WTarget, TokenType[]][] = [
   ["HLone", [HLone]],
   ["Bar", [Bar]],
   ["HScale", [HScale]],
-  ["HSharedV", [HSharedV]],
   ["GAdj", [GAdj]],
   ["GInList", [GInList]],
   ["GInRespList", [GInRespList]],
@@ -453,7 +451,6 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (isStanceWord(token) && isZoneHook(host)) return HZone;
   if (host.tokenType === HZone && isHolderWord(host) && isIntentionStance(token)) return HZoneHeld;
   if (tokenIs(token, H) && isRankNounJoin(before[skipWBack(before, before.length - 1)])) return HScale;
-  if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
   const locked = !!(token.payload as LexWord | undefined)?.bl;
   // A hooked join's landmark: one `bl-` word, never a list (hooked-joins.md#hooked-joins). An `/h/` one hosts as any `/h/` word.
@@ -461,13 +458,13 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
   // A `bl-` join blank (`hewom blar`, `thebam blar`) completes its host like a `bl-` noun.
-  if (locked && tokenIs(token, B, JoinB) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HZone) || isScopeThoVerb(host))) {
+  if (locked && tokenIs(token, B, JoinB) && (tokenIs(host, H, G, Amount, Factor, HScale, HZone) || isScopeThoVerb(host))) {
     if (!isScopeThoVerb(host) && joinClosesAhead(after)) return HostedBJoined;
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
   // A `/z/` or `/d/` stand-in there is still read as hosted, so `standInHost` names the slip (`thahum blarl`).
   const lockable = locked || (token.payload as LexWord | undefined)?.pos !== "b";
-  if (lockable && tokenIs(token, Odo) && tokenIs(host, H, Factor, HScale, HSharedV, HZone)) return HostedOdo;
+  if (lockable && tokenIs(token, Odo) && tokenIs(host, H, Factor, HScale, HZone)) return HostedOdo;
   if (locked && token.tokenType === OdoB && isLateOdoAt(before)) return LateOdo;
   if (isAmountAt(token, before)) return Amount;
   if (isFactorAt(token, before)) return Factor;
@@ -481,7 +478,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
  */
 const VP_ITEM_MATERIAL = [
   D, B, WritingSpanD, WritingSpanB, TagD, TagB, JoinD, JoinB, ItemHook, HookHosting, Bar, HScale, BScale, Factor,
-  H, JoinH, HSharedV, HostedB, Amount, G, W,
+  H, JoinH, HostedB, Amount, G, W,
 ];
 
 /**

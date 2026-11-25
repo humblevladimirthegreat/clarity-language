@@ -22,35 +22,23 @@ export function defineVpRules(p: GrammarParser): void {
    * The parts after the first come as a right-recursive tail (read back by `vpPartNodes`): after a join that another
    * verb follows, a part with verbs; after any other join, a lone join word as a part of its own, or nothing.
    */
-  p.vpCoord = vpCoordRule(p, "vpCoord", "Closed");
+  p.vpCoord = vpCoordRule(p, "vpCoord");
 
-  p.vpCoordOpen = vpCoordRule(p, "vpCoordOpen", "Open");
+  p.vpTailAfterEndClosed = vpTailRule(p, "vpTailAfterEndClosed", "alone");
 
-  p.vpTailAfterEndClosed = vpTailRule(p, "vpTailAfterEndClosed", "alone", "Closed");
-
-  p.vpTailAfterEndOpen = vpTailRule(p, "vpTailAfterEndOpen", "alone", "Open");
-
-  p.vpTailAfterMoreClosed = vpTailRule(p, "vpTailAfterMoreClosed", "later", "Closed");
-
-  p.vpTailAfterMoreOpen = vpTailRule(p, "vpTailAfterMoreOpen", "later", "Open");
+  p.vpTailAfterMoreClosed = vpTailRule(p, "vpTailAfterMoreClosed", "later");
 
   /**
    * One part of a verb list, by where it stands (`First`, a lone join word `Alone`, or later) and its join: `More` when
-   * another verb comes after it, else `End`, which shares an `Open` adverb or none or a `Closed` one.
+   * another verb comes after it, else `End`.
    */
-  p.vpCoordPartFirstEndOpen = vpCoordPartRule(p, "vpCoordPartFirstEndOpen", "first", "EndOpen");
-
   p.vpCoordPartFirstEndClosed = vpCoordPartRule(p, "vpCoordPartFirstEndClosed", "first", "EndClosed");
 
   p.vpCoordPartFirstMore = vpCoordPartRule(p, "vpCoordPartFirstMore", "first", "More");
 
-  p.vpCoordPartAloneEndOpen = vpCoordPartRule(p, "vpCoordPartAloneEndOpen", "alone", "EndOpen");
-
   p.vpCoordPartAloneEndClosed = vpCoordPartRule(p, "vpCoordPartAloneEndClosed", "alone", "EndClosed");
 
   p.vpCoordPartAloneMore = vpCoordPartRule(p, "vpCoordPartAloneMore", "alone", "More");
-
-  p.vpCoordPartEndOpen = vpCoordPartRule(p, "vpCoordPartEndOpen", "later", "EndOpen");
 
   p.vpCoordPartEndClosed = vpCoordPartRule(p, "vpCoordPartEndClosed", "later", "EndClosed");
 
@@ -103,58 +91,54 @@ export function defineVpRules(p: GrammarParser): void {
   });
 
   /**
-   * A `/v/` join word that another verb follows (`More`), or that ends its part (`End`): sharing an adverb whose hosted
-   * `/b/` the adjectives after it describe (`EndOpen`), or no adverb or any other (`EndClosed`).
+   * A `/v/` join word that another verb follows (`More`), or that ends its part (`End`). The adverb right after the
+   * list's join is an ordinary phrase here; `scopeVerbItems` puts it in the join's shared slot.
    */
-  p.vJoinCloseEndOpen = vJoinCloseRule(p, "vJoinCloseEndOpen", JoinVEnd, "open");
+  p.vJoinCloseEndClosed = vJoinCloseRule(p, "vJoinCloseEndClosed", JoinVEnd);
 
-  p.vJoinCloseEndClosed = vJoinCloseRule(p, "vJoinCloseEndClosed", JoinVEnd, "closed");
-
-  p.vJoinCloseMore = vJoinCloseRule(p, "vJoinCloseMore", JoinVMore, "any");
+  p.vJoinCloseMore = vJoinCloseRule(p, "vJoinCloseMore", JoinVMore);
 }
 
-/** A verb list that ends `Open` (its last join shares an adverb whose hosted `/b/` adjectives describe) or `Closed`. */
-function vpCoordRule(p: GrammarParser, name: string, end: "Open" | "Closed") {
-  return p.RULE(name, () => vpParts(p, "first", end));
+/** A verb list. */
+function vpCoordRule(p: GrammarParser, name: string) {
+  return p.RULE(name, () => vpParts(p, "first"));
 }
 
 /** The parts after a join: lone join words after an `End` join (`alone`), parts with verbs after a `More` one (`later`). */
-function vpTailRule(p: GrammarParser, name: string, at: "alone" | "later", end: "Open" | "Closed") {
-  return p.RULE(name, () => vpParts(p, at, end));
+function vpTailRule(p: GrammarParser, name: string, at: "alone" | "later") {
+  return p.RULE(name, () => vpParts(p, at));
 }
 
 /**
  * One part, then the rest of the list: the part is the last one (its join `End`, sharing as the list ends), or the
  * tail goes on, after an `End` join with lone join words and after a `More` join with a part with verbs.
  */
-function vpParts(p: GrammarParser, at: "first" | "alone" | "later", end: "Open" | "Closed"): void {
+function vpParts(p: GrammarParser, at: "first" | "alone" | "later"): void {
   const parts = {
-    first: { EndOpen: p.vpCoordPartFirstEndOpen, EndClosed: p.vpCoordPartFirstEndClosed, More: p.vpCoordPartFirstMore },
-    alone: { EndOpen: p.vpCoordPartAloneEndOpen, EndClosed: p.vpCoordPartAloneEndClosed, More: p.vpCoordPartAloneMore },
-    later: { EndOpen: p.vpCoordPartEndOpen, EndClosed: p.vpCoordPartEndClosed, More: p.vpCoordPartMore },
+    first: { EndClosed: p.vpCoordPartFirstEndClosed, More: p.vpCoordPartFirstMore },
+    alone: { EndClosed: p.vpCoordPartAloneEndClosed, More: p.vpCoordPartAloneMore },
+    later: { EndClosed: p.vpCoordPartEndClosed, More: p.vpCoordPartMore },
   }[at];
-  const afterEnd = end === "Open" ? p.vpTailAfterEndOpen : p.vpTailAfterEndClosed;
-  const afterMore = end === "Open" ? p.vpTailAfterMoreOpen : p.vpTailAfterMoreClosed;
   p.OR([
-    { ALT: () => p.SUBRULE(parts[`End${end}`], { LABEL: "vpCoordPart" }) },
-    ...(["EndOpen", "EndClosed"] as const).map((close, i) => ({
+    { ALT: () => p.SUBRULE(parts.EndClosed, { LABEL: "vpCoordPart" }) },
+    {
       ALT: () => {
-        p.subrule(i + 2, parts[close], { LABEL: "vpCoordPart" });
-        p.subrule(i + 4, afterEnd, { LABEL: "vpCoordPart" });
+        p.SUBRULE2(parts.EndClosed, { LABEL: "vpCoordPart" });
+        p.SUBRULE3(p.vpTailAfterEndClosed, { LABEL: "vpCoordPart" });
       },
-    })),
+    },
     {
       ALT: () => {
         p.SUBRULE6(parts.More, { LABEL: "vpCoordPart" });
-        p.SUBRULE7(afterMore, { LABEL: "vpCoordPart" });
+        p.SUBRULE7(p.vpTailAfterMoreClosed, { LABEL: "vpCoordPart" });
       },
     },
   ]);
 }
 
-function vpCoordPartRule(p: GrammarParser, name: string, at: "first" | "alone" | "later", close: "EndOpen" | "EndClosed" | "More") {
+function vpCoordPartRule(p: GrammarParser, name: string, at: "first" | "alone" | "later", close: "EndClosed" | "More") {
   return p.RULE(name, () => {
-    const join = { EndOpen: p.vJoinCloseEndOpen, EndClosed: p.vJoinCloseEndClosed, More: p.vJoinCloseMore }[close];
+    const join = { EndClosed: p.vJoinCloseEndClosed, More: p.vJoinCloseMore }[close];
     const alone = { ALT: () => p.SUBRULE(join, { LABEL: "standaloneJoin" }) };
     if (at === "alone") {
       alone.ALT();
@@ -225,16 +209,12 @@ function vpItemNpRule(p: GrammarParser, name: string, level: "d" | "b") {
   });
 }
 
-function vJoinCloseRule(p: GrammarParser, name: string, join: TokenType, shared: "open" | "closed" | "any") {
+function vJoinCloseRule(p: GrammarParser, name: string, join: TokenType) {
   return p.RULE(name, () => {
     // A `/w/` right before the join word is respectively `wazem` (joins.md § Respectively).
     p.MANY(() => {
       p.CONSUME(WBefore.JoinV, { LABEL: "W" });
     });
     p.CONSUME(join, { LABEL: "JoinV" });
-    // Only a shared /h/ follows a verb join (it covers every verb); a /ɡ/ there is not shared, and a /th/ there is on the claim.
-    const adverb = { open: p.sharedAdverbOpen, closed: p.sharedAdverbClosed, any: p.sharedAdverb }[shared];
-    if (shared === "open") p.SUBRULE(adverb, { LABEL: "sharedAfterJoin" });
-    else p.OPTION(() => p.SUBRULE2(adverb, { LABEL: "sharedAfterJoin" }));
   });
 }
