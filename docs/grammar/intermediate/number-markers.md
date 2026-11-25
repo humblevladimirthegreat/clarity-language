@@ -8,6 +8,7 @@ Page shape read by code:
 Sections named by data:
 - #marker-vowel-referential-identity: 1 construction home
 - #number-endings: 4 construction homes, 1 rejection
+- #writing-style-numeric-vs-spelled: 1 canonical choice
 - #letter-codes: 1 construction home
 Inbound links: npm run page-refs -- number-markers.md
 -->
