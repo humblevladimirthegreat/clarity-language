@@ -197,7 +197,7 @@ Key types: `unit` is `Unit.kind`; `hookJob` is `HookJob`; `lexReading` is `LexRe
 | ending | `l` | label | `phonology.md#word-edges` | |
 | ending | `m` | label | `word-endings.md#abstract-m` | |
 | ending | `n` | label | `proper-names.md#name-instance--ln` | Named reference; the term's `named` |
-| ending | `ln` | label | `proper-names.md#name-instance--ln` | |
+| ending | `ln` | label | `proper-names.md#name-instance--ln` | One thing the name applies to. On `/x/` a topic word (`unit:linker`), introduced and resumed as an `-l` topic (`topic.md#topic`); on `/y/` a call (`edge:vocative`) to one bearer of the name (`speech-moves.md#vocative`) |
 | ending | `r` | link | `pronouns.md#resume-r` |  |
 | ending | `rl` | link | `dependents.md#dependent-clauses` | Stand-in for the dependent that follows |
 | ending | `rm` | link | `stand-in-vowels.md#stand-in` | |

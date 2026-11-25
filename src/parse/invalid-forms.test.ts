@@ -145,7 +145,7 @@ const ROWS: Row[] = [
   { invalid: "zebahel gazozoln.", rejection: "nameInstanceSlot", valid: "zebahel gazozon." },
   { invalid: "zalazun vazozoln.", rejection: "nameInstanceSlot", valid: "zalazun dazozoln vayebel." },
   { invalid: "zuweln vowurol.", rejection: "nameInstanceSlot", valid: "zuwen vowurol." },
-  { invalid: "y^@<Sam> zalazun vowurol.", rejection: "nameInstanceSlot", valid: "y@<Sam> zalazun vowurol." },
+  { invalid: "zalazun vowurol h^@<Sam>.", rejection: "nameInstanceSlot", valid: "zalazun vowurol h@<Sam>." },
   { invalid: "zalazun g^@<iPhone> vayebel.", rejection: "nameInstanceSlot", valid: "zalazun dovewel g@<iPhone> vayebel." },
   { invalid: "zazozon vowurol harth.", rejection: "standInRole", valid: "zazozon vowurol halam blarth." },
   { invalid: "zazozon gobulol garn.", rejection: "standInRole", valid: "zazozon gobulol." },

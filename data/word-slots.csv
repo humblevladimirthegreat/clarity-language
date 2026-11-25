@@ -10,7 +10,7 @@ hooked join,hookedJoinSlot,z d b h,,"never as a hosted bl- word (enforceHookedJo
 ability,abilitySlot,v g,,"the hostless ability root goes anywhere (tables.hostlessAbilityRoot, enforceWord, enforce-word.ts)",can-and-cant.md#ability
 aside span,spanSlot,th g w h,,"/y/ is checked by ySpanType (enforceWord, enforce-word.ts)",spans.md#pos
 "cite, mention or opaque span",spanSlot,z d b v g h w x,,"/x/ only for a cite or mention span (isTopicSpan in enforceSpanSlot, enforce-word.ts); /y/ unchecked here",spans.md#pos
-name instance -ln,nameInstanceSlot,z d b,,"never gl-, never on a pronoun root, star or person (enforceNameInstance, enforce-word.ts)",proper-names.md#name-instance--ln
+name instance -ln,nameInstanceSlot,z d b x y,,"never gl-, never on a pronoun root, star or person (enforceNameInstance, enforce-word.ts)",proper-names.md#name-instance--ln
 tag pronoun,tagSlot,z d b,,"never gl- (enforceTag, enforce-word.ts); a word with no letter is rejected",tag-pronouns.md#naming-with-a-tag
 role pointer,pointerSlot,z d b,,a word with no letter is rejected,pronouns.md#role-pointers
 self pointer,pointerOwnSlot,,,"not a letter rule: names its own slot (enforcePointer, enforce-binding.ts)",pronouns.md#themself

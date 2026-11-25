@@ -40,7 +40,7 @@ The table shows `-n` on each role letter:
 
 ### One of a name (`-ln`) {#name-instance--ln}
 
-English *an iPhone*, *a copy of the Odyssey*, and *someone named Azozon* each mean one thing the name applies to, not the named thing itself. End the word in `-ln` instead of `-n`, on `/z/`, `/d/`, or `/b/`. Like `-l`, it brings a new thing into the conversation, and the **n** says which name it falls under. So you can mention one bed of a bed brand without a separate word for *bed*. (cue: `l` first mention, then `n` name)
+English *an iPhone*, *a copy of the Odyssey*, and *someone named Azozon* each mean one thing the name applies to, not the named thing itself. End the word in `-ln` instead of `-n`, on `/z/`, `/d/`, or `/b/`, or on `/x/` and `/y/` (below). Like `-l`, it brings a new thing into the conversation, and the **n** says which name it falls under. So you can mention one bed of a bed brand without a separate word for *bed*. (cue: `l` first mention, then `n` name)
 
 > `zalazun dazozoln vayebel.`
 >
@@ -66,6 +66,22 @@ What counts as one depends on what the name names:
 | `zaloln golowon` | the same on a full name | *someone named Alon Olowon* |
 
 An `-ln` word is a new mention, so a lone `zazozoln.` is *there is an Azozon*, and a later `-r` resume (`dazozor`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](/spans#when-required)).
+
+On `/x/`, an `-ln` word makes one thing the name applies to the topic (what the talk is about from here on), as an `-l` topic word does, and a later `-r` resume points to that same one.
+
+> `xazozoln zalazun dazozor vayebel.`
+>
+> x-Azozon.instance | z-Alazun | d-←Azozon.instance | v-see
+>
+> "Now, about an Azozon: Alazun sees it."
+
+On `/y/`, an `-ln` word [calls](/speech-moves#vocative) one bearer of the name, as `/y/` + `-n` calls the named one. It ends in `n`, so it calls like any `/y/` word on `-n`; only `-l` and `-m` under `/y/` give a reaction.
+
+> `yazozoln.`
+>
+> y-Azozon.instance
+>
+> "Hey, someone named Azozon!"
 
 **Compare with:** `gazozon` after a noun puts it in the brand (`zebahel gazozon` *the bed is an Azozon*), and `-l` on the root is the root’s own sense: `dazozol` is *a swan*.
 

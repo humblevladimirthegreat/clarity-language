@@ -209,7 +209,7 @@ function enforceSpanSlot(word: LexWord, slots: WordSlots): void {
   if (!slotAllows(slots, family.bracket === "(" ? "aside span" : "cite, mention or opaque span", word.pos)) throw new ConstructionError("spanSlot", word.raw);
 }
 
-/** **-ln** and span `^@` name one thing a name applies to: a noun slot or a citation only (proper-names.md#name-instance--ln). */
+/** **-ln** and span `^@` name one thing a name applies to: a noun slot, an `/x/` topic, a `/y/` call, or a citation only (proper-names.md#name-instance--ln). */
 function enforceNameInstance(word: LexWord, slots: WordSlots): void {
   if (word.ending !== "ln") return;
   if (word.gl || (word.pos && !slotAllows(slots, "name instance -ln", word.pos))) throw new ConstructionError("nameInstanceSlot", word.raw);

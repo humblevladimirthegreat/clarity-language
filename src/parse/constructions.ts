@@ -893,7 +893,7 @@ export const REJECTIONS = {
   blNoHost: { anchor: "clause.md#extra-nouns", summary: "a bl- word completes the /ɡ/ /h/ or /th/ word right before it, so it needs one there (`hewem blazozon`); a recipient is a plain /b/ (`balazun`)" },
   blListItem: { anchor: "clause.md#extra-nouns", summary: "in a hosted list every /b/ item takes bl- (`hazam blodahal blozedel bal`); the join word does not" },
   glNoNoun: { anchor: "left-bound-adjectives.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`globulol zodozel`); with no noun after it, use a plain /ɡ/ word" },
-  nameInstanceSlot: { anchor: "proper-names.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
+  nameInstanceSlot: { anchor: "proper-names.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/, sets the topic on /x/, calls on /y/, or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/, and never on a pronoun root" },
   standInRole: { anchor: "stand-in-vowels.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewem blarth`)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed hinge, a clues / pattern channel, like (`hewem`), or an /h/ hooked join" },
   standInHostUndo: { anchor: "stand-in-vowels.md#stand-in", summary: "burl follows only the so-that hinge thovam or the if hinge thohem" },

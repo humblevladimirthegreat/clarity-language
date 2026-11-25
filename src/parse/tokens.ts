@@ -416,9 +416,10 @@ export function classifyTokenBranch(word: LexWord): { type: AgebenTokenType; bra
   if (reading === "sameRole") return { type: HookPlain, branch: "sameRole" };
   // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
   if (family.kind === "writingSpan") {
-    // Under `/y/`: a named span (`y@<Sam>`) calls someone; any other span is the reaction itself.
+    // Under `/y/`: a named span (`y@<Sam>`, or one bearer of the name, `y^@<Sam>`) calls someone; any other span is the reaction itself.
     if (pos === "y") {
-      return family.marks.includes("@") ? { type: Vocative, branch: "yVocative" } : { type: Interjection, branch: "yInterjection" };
+      const named = family.marks.includes("@") || family.marks.includes("^@");
+      return named ? { type: Vocative, branch: "yVocative" } : { type: Interjection, branch: "yInterjection" };
     }
     if (pos === "x") return { type: Linker, branch: "linker" };
     if (pos === "g" && word.gl) return { type: GGl, branch: "writingSpanSlot" };
