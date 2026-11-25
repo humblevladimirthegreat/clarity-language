@@ -30,12 +30,14 @@ You start without `AGENTS.md`, as a process or as a subagent; these are the part
 - Workers never commit; you do, per `proposals.md`.
 - Never run `proposal-worker`s in parallel: each runs `npm run verify`, and parallel builds clash in `dist/`. Launch one, wait for it, then launch the next.
 - After launching a worker, end your turn and wait for its completion notice. Never poll or sleep while it runs.
+- Every code brief states the turn cap as a number: *stop at the first item boundary after 40 tool calls, leave the tree green, run `npm run verify`, and report* **left:**. Brief a fresh worker from that list. A brief that says only *the turn cap* gives the worker nothing to count.
+- Before briefing a unit whose items rely on a layer it may not edit or has not built (spelling, parsing, a reader field), run one probe over 5 to 10 of its samples (for the realizer, `npm run realize -- spell` or `view`). If the probe fails, the blocker becomes its own unit, first.
 
 ## No user
 
 - Never wait for the user or ask a question. Where `proposals.md` says to tell the user something, put it in your report.
 - A stop-and-alert finding (a premise of the proposal no longer holds; later phases would need a different design, order or pages; skipping would leave later work on a broken or half-made state; too many skips to meet the goals) still stops the run. Do the stop steps in `proposals.md` up to telling the user, then return `STOPPED`.
-- At the phase's end, after the last unit's commit and the consolidated proposal's commit, write and return the report ([Report](#report)) instead of naming the next prompt. If you end the phase early on budget, report `SPLIT` and say where it split.
+- At the phase's end, after the last unit's commit and the consolidated proposal's commit, write and return the report ([Report](#report)) instead of naming the next prompt. If you end the phase early on budget, report `SPLIT` and say where it split. Your prompt names your start time: the process is killed 2 hours after it, so at the first unit boundary 90 minutes or more after it, commit and return `SPLIT`.
 
 ## Open decisions
 

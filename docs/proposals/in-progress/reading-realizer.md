@@ -53,7 +53,7 @@ Thirteen phases, run through subagents; phases 1 and 2 are done. At the end of e
 
 ### Standard unit
 
-Units marked *the rest as U3* do this: add each canonical choice to `realizer.md` with the anchor that allows it; triage failures on their keys per [triage](#triage-of-a-failure); lower the ratchet from `npm run round-trip -- --ratchet`; and log shape changes for the phase's reader-gap unit.
+Units marked *the rest as U3* do this: add each canonical choice to `realizer.md` with the anchor that allows it; triage failures on their keys per [triage](#triage-of-a-failure); lower the ratchet with `npm run round-trip -- --lower`; and log shape changes for the phase's reader-gap unit.
 **May edit (as U3):** `src/realize/*.ts` (`meaning.ts` only for fields the reader gains), `src/round-trip/round-trip-ratchet.json`, `src/interpret/read.ts`, `src/interpret/read-context.ts`, `src/interpret/types.ts` (fields only), `src/interpret/equal.ts` (stated equivalences only), the matching `*.test.ts` files, including `src/round-trip/round-trip.test.ts` (new cases only), `src/parse/gloss-inverse.ts` (structural spelling only) and its test, `docs/meta/realizer.md`, `docs/meta/interpreter.md`, and the read-by blocks that `npm run page-readers -- --write` rewrites.
 
 ### Phase 3: force and questions
@@ -205,11 +205,11 @@ Rebuild `canonicalReadings` in `equal.ts` on `project`, keeping each listed rule
 - Each canonical choice is a row in `realizer.md`'s *Canonical choices* table with the anchor that allows it.
 - No parser change. If one is needed, stop and report. Extending `spell` (`src/parse/gloss-inverse.ts`) is not a parser change: when a realized gloss equals the parser's own gloss but does not spell, add a structural rule there (never a table of whole words) with `gloss-inverse.test.ts` cases. If two words share one gloss, log a *Gaps* entry instead.
 - If a `run.test.ts`, `src/game/` test or solver golden changes outcome, stop and report. Do not edit the test or the golden.
-- Check forms with one batched `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`. Probe readings with one `node scripts/reading.mjs probe` file (cases separated by `---`). List examples behind a key with `npm run round-trip -- --texts KEY`. Never write a one-off script for these.
+- Check forms with one batched `node scripts/parse.mjs --check-lexicon '<a>' '<b>' …`. Probe readings with one `node scripts/reading.mjs probe` file (cases separated by `---`). List examples behind a key with `npm run round-trip -- --texts KEY`, and see those trips in full (gloss, realized line, path, detail) with `--detail KEY` (`--limit N`). See one text's meaning view, realized line and verdict with `npm run realize -- view 'TEXT' …`, and spell glosses with `npm run realize -- spell 'GLOSS' …` ([probes](../../meta/realizer.md#probes)). Never write a one-off script for these.
 - Run `npm run verify` at the end of the unit (`--fast` for checks inside it). On a new error, read only that line of `tmp/logs/verify-last.log`.
 - Keep files under the [code layout](../../meta/code-layout.md) ceiling. Split with `npm run move-decl`, never by hand.
 - Do not commit. Do not edit `AGENTS.md`: report any Owns-line change.
-- The harness is in `src/round-trip/`, outside the import allowlist. Lower `src/round-trip/round-trip-ratchet.json` from `npm run round-trip -- --ratchet` (counts only go down; never add a key).
+- The harness is in `src/round-trip/`, outside the import allowlist. Lower `src/round-trip/round-trip-ratchet.json` with `npm run round-trip -- --lower`, never by hand (it only lowers, never adds a key, and names any key that rose).
 - A new *Canonical choices* row makes its grammar page's read-by block stale: run `npm run page-readers -- --write` before the final `verify`, and report the pages it wrote.
 - **Turn cap: 40 tool calls.** Count your tool calls. At the first item boundary after 40, stop even if items remain: leave the tree green, run `npm run verify`, and report **left:** as steps for a fresh worker. Past 40, finish only an item that needs one or two more edits. A long context costs more on every call, so a second worker is cheaper than running on.
 - **Report** (about 150 words): done (one line); round-trip `ok` count before and after, and the keys still failing with their count; reader fields added; `equal.ts` rules added with their anchors; gaps logged (key and one line each); shape changes logged for the reader-gap unit; `verify` line; skips with reasons; **left:**; **inefficient:**.
