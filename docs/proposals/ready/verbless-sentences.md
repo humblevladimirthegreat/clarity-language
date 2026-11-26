@@ -1,6 +1,6 @@
 # Verbless sentences: existence takes a verb, the rest reply
 
-**Status:** READY, 2026-11-26. The user settled every design decision on 2026-11-26 (see [Decisions](#decisions)). Two decisions stay open for phase 2 and neither blocks phase 1 ([Open decisions](#open-decisions)). Phase 1 starts at R0.
+**Status:** READY, 2026-11-26. The user settled every design decision on 2026-11-26 (see [Decisions](#decisions)). None is left open. Phase 1 starts at R0.
 
 **Related:** [predication.md](../../grammar/beginner/predication.md), [questions.md](../../grammar/beginner/questions.md), [fill-ask-jobs.md](../../grammar/beginner/fill-ask-jobs.md), [restrictors.md](../../grammar/beginner/restrictors.md), [no-subject.md](../../grammar/beginner/no-subject.md), [clause.md § extra detail on an adjective](../../grammar/beginner/clause.md#adjective-detail-w), [hooks.md](../../grammar/beginner/hooks.md), [causation.md](../../grammar/beginner/causation.md), [how-you-feel.md](../../grammar/beginner/how-you-feel.md), [thanks-and-sorry.md](../../grammar/beginner/thanks-and-sorry.md), [social-ties.md](../../grammar/beginner/social-ties.md), [universals-domains.md](../../grammar/intermediate/universals-domains.md), [very-and-slightly.md](../../grammar/intermediate/very-and-slightly.md), [polar-inventory.md § confirming a negative](../../grammar/intermediate/polar-inventory.md#confirming-a-negative), [resume-sense.md](../../grammar/intermediate/resume-sense.md), [sentence-linkers.md § what carries past a period](../../grammar/intermediate/sentence-linkers.md#past-a-period), [evidentiality.md](../../grammar/intermediate/evidentiality.md), [cheat-sheets/word-shape-clause.md](../../grammar/cheat-sheets/word-shape-clause.md), [terminology.md](../../grammar/terminology.md), [design-decisions.md](../../meta/design-decisions.md) (D-65, the feelings note), [unassigned-reserved.md](../../meta/unassigned-reserved.md), [interpreter.md § classification table](../../meta/interpreter.md#classification-table), [grammar-docs.md § marking Ageben](../../meta/grammar-docs.md#marking-ageben), [`lexicon-published.csv`](../../../data/lexicon-published.csv) (root `uzuve`), [`construction-trace.ts`](../../../src/parse/construction-trace.ts) (`isExistence`, `isUnsaidEvent`), [`constructions.ts`](../../../src/parse/constructions.ts), [`enforce.ts`](../../../src/parse/enforce.ts) (`wNoHost`), [`resolve.ts`](../../../src/parse/resolve.ts) (`fillAnswers`), [`discourse-slots.ts`](../../../src/parse/discourse-slots.ts), [`llm-prompt.ts`](../../../src/parse/llm-prompt.ts), [`read-context.ts`](../../../src/interpret/read-context.ts), [`classes.ts`](../../../src/interpret/classes.ts), [`translate-conditions.ts`](../../../src/interpret/translate-conditions.ts), [`claim.ts`](../../../src/realize/claim.ts), [`detectors.ts`](../../../src/english-helper/detectors.ts).
 
@@ -12,7 +12,7 @@
 - **A short reply** is any other body with no verb. It reaches back to the sentence before. Three kinds of body are not short replies: a lone feeling or sake word (D10, D11), a bare citation (a greeting or a one-noun answer), and a body under a command word with no command before it (D9). A short reply with nothing to reach back to is not well formed.
 - **The lone object** (`dodozel.`, `zazozon dalazun.`) has no reading of its own any more. It is a short reply.
 - **A lone `/w/` word** is accepted when it is a whole body and is read as a short reply (D6). `wNoHost` still rejects a `/w/` with no host inside a clause.
-- **New rejections:** a short reply with nothing before it; a lone `/w/` reply with no single host (D6); a blank answer whose letter does not match the blank (D7). Open decision O1 may add one more: nouns and a feeling word with no verb.
+- **New rejections:** a short reply with nothing before it; a lone `/w/` reply with no single host (D6); a blank answer whose letter does not match the blank (D7). Nouns and a feeling word with no verb (`feelingNounNoVerb`, O1).
 
 ## Problem
 
@@ -113,7 +113,7 @@ With no host, or with two or more candidates, the reply is rejected (`wReplyHost
 
 **Commands (D9).** Under a command word, a reply reuses the clause before only when that sentence was a command. Otherwise it keeps the unsaid-act reading.
 
-**`/th/` words (D10, D11).** Stance words take part as replies: MAY, channels, certainty, wants and plans, and reasons with `bl-`. That gives *Maybe.*, *So I hear.* and *Because of X.* Feeling words and sake words do not take part: a lone feeling or sake word keeps its taught reading as a sentence about you, and thanks is unchanged.
+**`/th/` words (D10, D11).** Stance words take part as replies: MAY, channels, certainty, wants and plans, and reasons with `bl-`. That gives *Maybe.*, *So I hear.* and *Because of X.* Feeling words and sake words do not take part: a lone feeling or sake word keeps its taught reading as a sentence about you, and thanks is unchanged. A body with nouns and a feeling word but no verb is rejected (`feelingNounNoVerb`, O1); the message points to `zalazun vuzuvem thudathumum.`
 
 **Examples the teaching section uses.** All of these parse today except the `/w/` replies.
 
@@ -139,7 +139,7 @@ With no host, or with two or more candidates, the reply is rejected (`wReplyHost
 - **`fill-ask-jobs.md`:** a new H3, *Short replies* (`#short-replies`), at the end of the teaching sections, before Practice. It covers the rule, the three contexts, replace or add, the `/h/`, `/w/` and MAY examples, and the D4 *Compare with*.
   - It sits there because it comes after restrictors, questions and MAY in the reading order, so it needs no forward links.
   - The *When?* section gains its answer examples, and a `var` reply goes in `questions.md`.
-  - O2 covers the case where the sitting grows too long.
+  - If the sitting grows past the limit, *Short replies* becomes its own beginner page right after *Fill-ask jobs* in the sidebar (`short-replies.md`, O2), keeping the same id.
 - **`questions.md:102`** and **`:160`:** blank replies of several nouns are short replies, and the `/b/` blank case is added.
 - **One line each, on pages later in the reading order:** `very-and-slightly.md` (*Very.* / *Slightly.* as replies) and `evidentiality.md` (a lone channel as a reply).
 - **Prose that names existence** is reworded: `hooks.md:220`, `causation.md:27`, `universals-domains.md:62`, `how-you-feel.md:281`, `social-ties.md:61`, the `word-shape-clause` cheat sheet rows, and the Existence link in `say-reasons.md`.
@@ -163,7 +163,7 @@ Three phases, run through subagents. At the end of each phase, and if the user s
 
 **Style.** Writers of grammar prose self-check against the [checklist](../../meta/doc-style.md#checklist). Phase 3 ends with a `style-editor` unit over `npm run changed-sections -- <commit before R0>`.
 
-**Decisions.** The user settled them all. O1 and O2 are logged under [Open decisions](#open-decisions) for phase 2.
+**Decisions.** The user settled them all; none is left open.
 
 ### Phase 1: example rewrites
 
@@ -215,16 +215,16 @@ Order: R0, R1, R2, R3, R4, R5, R6, then the cheat-sheet output and the recall ga
 
 ### Phase 2: the rules
 
-About 36 orchestrator turns. O1 and O2 are settled before F1 starts.
+About 36 orchestrator turns.
 
 **F1 Teaching.** `proposal-worker`, `model: opus`, effort `high`. Prose that is valid under both parsers.
 - Rewrites `predication.md` per § 1 and § 2, and removes *Something happened*.
 - Writes `fill-ask-jobs.md#short-replies` with every § 3 example except the `/w/` replies, which wait for F2. Merges the `> gelazem.` answer into its question's span.
 - Rewords `questions.md:102` and `:160`, and adds the `/b/` and `var` replies.
 - Rewords the existence prose in `hooks.md:220` and `causation.md:27`. Retargets the inbound links of `#unsaid-event` with `npm run page-refs` and `retarget-id`.
-- Measures `fill-ask-jobs.md` per [restructure-sittings.md](../../meta/procedures/restructure-sittings.md). If it is over the limit, stops and reports (O2).
+- Measures `fill-ask-jobs.md` per [restructure-sittings.md](../../meta/procedures/restructure-sittings.md). If it is over the limit, puts the section on a new page `docs/grammar/beginner/short-replies.md` right after *Fill-ask jobs* in `reading-order.ts` (O2), and retargets with `npm run page-refs` / `retarget-id`.
 - Checks forms with `--check-lexicon --at <page>#<id>`.
-- **May edit:** `predication.md`, `fill-ask-jobs.md`, `questions.md`, `hooks.md`, `causation.md`, `say-reasons.md` (the link only), `terminology.md`.
+- **May edit:** `predication.md`, `fill-ask-jobs.md`, `questions.md`, `hooks.md`, `causation.md`, `say-reasons.md` (the link only), `terminology.md`; under O2 also `docs/grammar/beginner/short-replies.md` (new) and `docs/grammar/.vitepress/lib/reading-order.ts`.
 - **Commit:** held, and made together with F2, so the grammar and the parser land in one commit.
 
 **F2 Parser.** `proposal-worker`, `model: opus`, effort `high`.
@@ -232,7 +232,7 @@ About 36 orchestrator turns. O1 and O2 are settled before F1 starts.
   - Retires `reading.existence` and `reading.unsaidEvent`.
   - Adds `reading.shortReply`, and `reading.existence` for a `vuzuvem` clause if the reader needs the id.
   - Generalizes `fillAnswers` to every short reply.
-- **Rejections.** Short reply with nothing before (`shortReplyNoSentence`); `wReplyHostless` (D6); `replyLetterMismatch` (D7); and O1's id if O1 says to reject. Each gets an error message that names the fix.
+- **Rejections.** Short reply with nothing before (`shortReplyNoSentence`); `wReplyHostless` (D6); `replyLetterMismatch` (D7); `feelingNounNoVerb` (O1). Each gets an error message that names the fix.
 - **`wNoHost`** is lifted for a `/w/` that is a whole body.
 - Adds an interpreter classification row for each new id and removes the retired ones (`classes.ts`, `interpreter.md`).
 - Adds the `/w/` reply examples to `fill-ask-jobs.md#short-replies`, plus their entries in `unassigned-reserved.md` and `design-decisions.md` (§ 4).
@@ -354,17 +354,5 @@ Settled by the user, 2026-11-26. Each reading is written into the design section
 - **N7** A noun before a lone feeling takes `vuzuvem` (§ 2).
 - **N8** Phrase examples drop the period; real claims get a verb (phase 1).
 - **Placement and name:** *Short replies* goes at the end of `fill-ask-jobs.md`'s teaching sections, with one line each on `very-and-slightly.md` and `evidentiality.md`. The English name is *short reply* (§ 4).
-
-## Open decisions
-<a id="open-decisions"></a>
-
-**O1. Nouns plus a feeling word, with no verb** (`zalazun thudathumum.` once N7 is in place). *Blocking* (it restricts a form, and it touches the feelings theme); due before F2.
-- Under § 1 this body is neither a claim nor a lone feeling.
-- **(a) Reject it** (`feelingNounNoVerb`), with a message pointing to `zalazun vuzuvem thudathumum.`
-- **(b) Read it as a short reply** whose feeling covers the rebuilt clause. After *Azozon left.*, `zalazun thudathumum.` would replace the subject and add the feeling: *something is off now that Alazun left*.
-- **Recommendation (medium):** (a). Under (b), a feeling attaches to the last claim without being said, which D10 rules out for a lone feeling. A noun in front should not bring that back. The cost is one word (`vuzuvem`).
-
-**O2. If `fill-ask-jobs.md` grows past the sitting limit.** *Blocking* only if it happens (a new page changes the sidebar); F1 measures it.
-- **(a)** A new beginner page, *Short replies*, right after *Fill-ask jobs* in the sidebar.
-- **(b)** Peel an existing H3 off `fill-ask-jobs.md`.
-- **Recommendation (medium):** (a). Short replies are a topic of their own, and learners will look for them by name. Peeling would split the *when / where / how* set, which belongs together.
+- **O1** Nouns plus a feeling word with no verb are rejected (`feelingNounNoVerb`), pointing to the `vuzuvem` form (§ 3, F2).
+- **O2** If `fill-ask-jobs.md` passes the sitting limit, *Short replies* gets its own beginner page right after *Fill-ask jobs* (§ 4, F1).
