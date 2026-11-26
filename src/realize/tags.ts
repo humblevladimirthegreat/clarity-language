@@ -3,7 +3,7 @@
  * records, and an assigning tag written right after the term its link names.
  */
 import type { MeaningLink, MeaningTerm } from "./meaning.js";
-import { Unrealized } from "./terms.js";
+import { Unrealized } from "./gaps.js";
 
 /** Each tag vowel by its letter name (letter-names.md#letter-names), as the glosser labels it. */
 const LETTER: Record<string, string> = { a: "A", o: "O", e: "E", u: "U" };

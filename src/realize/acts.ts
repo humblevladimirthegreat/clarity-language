@@ -7,7 +7,8 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { seriesGlossIndex } from "../parse/gloss-inverse.js";
 import type { MeaningDetail, MeaningFrame, MeaningLink } from "./meaning.js";
 import { leaf } from "./words.js";
-import { leafOf, marked, ownFrames, plainWord, thingLeaf, unit, Unrealized, withPlural } from "./terms.js";
+import { leafOf, marked, ownFrames, plainWord, thingLeaf, unit, withPlural } from "./terms.js";
+import { Unrealized } from "./gaps.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 

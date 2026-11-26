@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
-import { realize, spellGloss } from "../realize/realize.js";
+import { allGaps, realize, spellGloss } from "../realize/realize.js";
 import { sameReadings } from "../interpret/equal.js";
 import { project } from "../realize/meaning.js";
 import { corpus, readTurn } from "./corpus.js";
@@ -344,6 +344,22 @@ describe("round trip", () => {
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zerulal gohem blugalal.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));
+  });
+
+  it("collects every gap of a reading in --all-gaps mode: each failed part, a knock-on as nested, a word that does not spell", () => {
+    const gapsOf = (text: string) => project(readTurn(text, tables), tables).flatMap((view) => allGaps(view, tables));
+    // Two links and two frames with no rule: four gaps, where the default stops at the first.
+    const several = gapsOf("thezem thohem blarl");
+    assert.ok(new Set(several.map((g) => g.key)).size >= 2 && several.filter((g) => !g.nested).length >= 2, JSON.stringify(several));
+    // Clause-join members with no rule leave an empty claim: the second gap comes from the first, so it is nested.
+    const knockOn = gapsOf("zazozon vehohel xan zazozor vowurol.");
+    assert.ok(knockOn.some((g) => !g.nested) && knockOn.some((g) => g.nested && g.detail.endsWith("an empty claim")), JSON.stringify(knockOn));
+    // A stand-in verb whose word does not spell alone: a noSpell gap with that word's gloss as its detail.
+    const word = gapsOf("zazozon vuen zazozon vehohel.");
+    assert.ok(word.some((g) => g.kind === "noSpell" && /^v-\S+$/.test(g.detail)), JSON.stringify(word));
+    // The default still stops at the first gap.
+    const [view] = project(readTurn("thezem thohem blarl", tables), tables);
+    assert.ok("gap" in realize(view!, tables));
   });
 
   it("counts a failed trip in the ratchet under the keys of every reading, not only the one that failed", () => {

@@ -4,7 +4,8 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import type { MeaningDetail, MeaningFrame, MeaningReading, MeaningTerm } from "./meaning.js";
-import { adverb, plainWord, predicateTerm, roleTerm, toneMark, toneOf, Unrealized, verbTerm } from "./terms.js";
+import { adverb, plainWord, predicateTerm, roleTerm, toneMark, toneOf, verbTerm } from "./terms.js";
+import { attempt, PLACEHOLDER, skip, Unrealized } from "./gaps.js";
 import { placeDetails, zoneGloss, type DetailWriters } from "./details.js";
 import type { Ending } from "./words.js";
 import type { ListStyle } from "./lists.js";
@@ -124,9 +125,10 @@ function withRestMarks(pieces: readonly string[], marks: ReadonlyMap<string, str
 export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: ListStyle = { standalone: true }): string {
   // A stance list goes last, its join right after its stance words (verb-and-stance-joins.md#stance-joins); a
   // standalone stance join goes there in its place.
-  if ((view.stanceLists?.length ?? 0) > 1) throw noRule("more than one stance list");
+  for (const extra of view.stanceLists?.slice(1) ?? []) skip(extra.key, noRule("more than one stance list"));
   const listed = new Set<number>();
-  const stanceList = view.stanceLists?.length ? [stanceListGloss(view, view.stanceLists[0]!, tables, listed)] : [];
+  const firstList = view.stanceLists?.[0];
+  const stanceList = firstList ? [attempt(firstList.key, () => stanceListGloss(view, firstList, tables, listed), PLACEHOLDER)] : [];
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
   // A shared link is the list's shared word (list-structure.md#shared-after-the-join); writing the word makes it again.
   // A pairing link is the *respectively* word its list's join writes (list-structure.md#respectively).
@@ -144,14 +146,15 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const links = rest.filter((link) => {
     if (link.kind === "discourse" && link.values?.gloss && !link.frame && !link.resumed) return void front.push(link.values.gloss);
     if (link.kind === "hookResume" && link.values?.gloss && !link.frame) return void resumes.push(link.values.gloss);
-    if (link.kind === "polar") return void polar.push(polarGloss(link, tables));
+    if (link.kind === "polar") return void polar.push(attempt(link.key, () => polarGloss(link, tables), PLACEHOLDER));
     return link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing" && link.kind !== "answer";
   });
-  if (links.length) throw noRule(`a ${links[0]!.kind} link`);
-  const respectively = respectivelyLists(view);
+  for (const link of links) skip(link.key, noRule(`a ${link.kind} link`));
+  const pairing = view.links.find((link) => link.kind === "pairing")?.key ?? "claim";
+  const respectively = attempt(pairing, () => respectivelyLists(view), new Set<MeaningTerm>());
   if (respectively.size) style = { ...style, respectively };
   const claim = view.claim;
-  if (claim.clauses) throw noRule("clause-join members");
+  if (claim.clauses) skip("claim", noRule("clause-join members"));
   const endings = new Map<Role, Ending>();
   const framed = new Map<number, Role>();
   const zones: string[] = [];
@@ -168,7 +171,7 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   let sentenceMark: string | undefined;
   const opening: string[] = [];
   const actWords: string[] = [];
-  view.frames.forEach((frame, index) => {
+  const writeFrame = (frame: MeaningFrame, index: number): void => {
     if (frame.key === "edge:force") {
       if (acts.length > 1 || !isStatementAct(frame)) actWords.push(actGloss(frame, tables));
       return;
@@ -207,6 +210,9 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
     if (ending !== "l" && ending !== "m") throw noRule(`a new member on -${ending}`);
     endings.set(role, ending);
     framed.set(index, role);
+  };
+  view.frames.forEach((frame, index) => {
+    if (!attempt(frame.key, () => (writeFrame(frame, index), true), false)) opening.push(PLACEHOLDER);
   });
   const roles = ROLES.filter((r) => claim.roles[r]);
   // A stance word goes first in the body, or after the framed nouns that cover it (clause.md#which-covers-which).
@@ -214,7 +220,8 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const late: string[] = [];
   const framedNouns = new Set(framed.keys());
   for (const index of stanceOrder(view, stances)) {
-    (stancePlace(view, index, framedNouns) === "early" ? early : late).push(stanceWordGloss(view.frames[index]!, tables, view.frames[holders.get(index) ?? -1]));
+    const write = (): void => void (stancePlace(view, index, framedNouns) === "early" ? early : late).push(stanceWordGloss(view.frames[index]!, tables, view.frames[holders.get(index) ?? -1]));
+    if (!attempt(view.frames[index]!.key, () => (write(), true), false)) late.push(PLACEHOLDER);
   }
   // Framed roles keep the default slots, filled in the order their frames cover each other.
   const rank = ranks(view, framed);
