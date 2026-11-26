@@ -14,6 +14,7 @@ export type { AnaphorKind, FrameFamily, LinkKind, NumberStem, PairKind, ReadingI
 /** One root of a thing's stem: its lexicon row's concrete sense, or its spelling when no row gives one. */
 export type MeaningRoot = { sense: string } | { spelling: string };
 
+/** One reading of a sentence without its form: its frames, their order, its stance lists, its claim and its links. */
 export type MeaningReading = {
   id: ReadingId;
   /** The reading's frames, in the reading's order. */
@@ -29,6 +30,7 @@ export type MeaningReading = {
   unread?: true;
 };
 
+/** The bare clause: its verb, its `z`, `d` and `b` roles by letter, its predicate words, its details and its clause-join members. */
 export type MeaningClaim = {
   verb?: MeaningTerm;
   roles: Partial<Record<"z" | "d" | "b", MeaningTerm>>;
@@ -37,6 +39,7 @@ export type MeaningClaim = {
   clauses?: MeaningTerm;
 };
 
+/** A frame (a stance, act, condition, hook, new member …): its family, its key and the reader's `values`, with what it holds. */
 export type MeaningFrame = {
   family: FrameFamily;
   key: string;
@@ -52,6 +55,7 @@ export type MeaningFrame = {
   holderHost?: true;
 };
 
+/** A detail on the claim or a term (adjective, adverb, number, hook, relation …): its kind, its key and the reader's `values`. */
 export type MeaningDetail = {
   kind: string;
   key: string;
@@ -62,6 +66,7 @@ export type MeaningDetail = {
   frames?: MeaningFrame[];
 };
 
+/** A list of stances joined by one join word: its key, the join's `values` and its members. */
 export type MeaningStanceList = {
   key: string;
   values: Record<string, string>;
@@ -73,6 +78,7 @@ export type MeaningStanceList = {
 
 type Attached = { details?: MeaningDetail[]; frames?: MeaningFrame[] };
 
+/** What fills a role, the verb or the predicate, by `kind`: a thing, a person, a blank, a pronoun, a literal, a number, a list, a clause or a quote. */
 export type MeaningTerm =
   | {
       kind: "thing";
@@ -108,6 +114,7 @@ export type MeaningTerm =
   | { kind: "clause"; reading: MeaningReading }
   | { kind: "quote"; readings: MeaningReading[]; frames?: MeaningFrame[] };
 
+/** A link from the reading to something outside its claim (an anaphor, an answer, a tag, a discourse hook …): its kind, key and what it names. */
 export type MeaningLink = {
   kind: LinkKind;
   key: string;
@@ -140,7 +147,8 @@ function defined<T extends object>(out: T): T {
 }
 
 /**
- * Projects readings and their parts. A shared object (a frame both in `frames` and a stance list, an occasion both on
+ * Turns interpreter readings and their parts into meaning-view objects (tests project one term or link with it; elsewhere
+ * call `project`). A shared object (a frame both in `frames` and a stance list, an occasion both on
  * the claim and its restrictor, a pronoun's antecedent) projects to one shared object, and a cycle closes on itself.
  */
 export class Projector {

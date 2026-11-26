@@ -13,7 +13,8 @@ import { corpus, readTurn, type CorpusEntry } from "./corpus.js";
 /** Why an example is not judged: it does not parse, a reading has an `unread` entry, or its readings did not project. */
 export type SkipReason = "noParse" | "unread" | "project";
 
-export type Verdict = "ok" | "different" | "unsettled" | `gap:${GapKind}` | `skipped:${SkipReason}`;
+/** A trip's outcome: `ok`, `different` readings, `unsettled` (an unordered pair in the other text order), a realizer gap, or skipped. */
+export type Verdict ="ok" | "different" | "unsettled" | `gap:${GapKind}` | `skipped:${SkipReason}`;
 
 /**
  * One example's round trip. `key` files it for the counts: a gap's key, else the key (`firstKey`) of the first reading
@@ -74,7 +75,7 @@ function diffPath(x: unknown, y: unknown): string[] | undefined {
   return [];
 }
 
-/** One example's round trip. */
+/** One example's `Trip`: its readings realized and spelled, the text read back and judged, then realized again for idempotence. */
 export function tripEntry(entry: CorpusEntry, tables: ClassifyTables): Trip {
   const base = { source: entry.source, ageben: entry.ageben, partKeys: [...new Set(entry.meanings.flatMap(partKeys))] };
   const keyAt = (index: number): string => (entry.meanings[index] ? firstKey(entry.meanings[index]) : NO_KEY);
@@ -121,6 +122,7 @@ export type Ratchet = { ok: number; keys: Record<string, number> };
 /** A trip the realizer failed: not `ok`, and not skipped before the realizer ran. */
 export const failed = (trip: Trip): boolean => trip.verdict !== "ok" && !trip.verdict.startsWith("skipped:");
 
+/** The ratchet counts of a run: how many trips are `ok`, and per part key how many failed trips carry it, keys sorted. */
 export function ratchetOf(trips: readonly Trip[]): Ratchet {
   const keys = new Map<string, number>();
   for (const trip of trips) if (failed(trip)) for (const key of trip.partKeys) keys.set(key, (keys.get(key) ?? 0) + 1);

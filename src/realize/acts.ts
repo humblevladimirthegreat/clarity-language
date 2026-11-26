@@ -62,6 +62,7 @@ export function polarGloss(link: MeaningLink, tables: ClassifyTables): string {
 /** The first act word's default body order (speech-moves.md#act-word-order). */
 export type ActOrder = "statement" | "question" | "command";
 
+/** The body order the turn's first act word sets, from its series: `e` a question, `o` a command, else a statement. */
 export function actOrder(acts: readonly MeaningFrame[]): ActOrder {
   const series = acts[0]?.values.series;
   return series === "e" ? "question" : series === "o" ? "command" : "statement";

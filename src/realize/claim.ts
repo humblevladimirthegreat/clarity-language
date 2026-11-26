@@ -119,7 +119,7 @@ function withRestMarks(pieces: readonly string[], marks: ReadonlyMap<string, str
   return out;
 }
 
-/** The bare clause's morph gloss, or throws {@link Unrealized}. */
+/** A reading's whole morph gloss (act words, the clause in default order, its details and tags), or throws {@link Unrealized}. */
 export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: ListStyle = { standalone: true }): string {
   if (view.stanceLists?.length) throw noRule("a stance list");
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
