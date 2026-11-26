@@ -7,7 +7,8 @@ import { allReadings, readText } from "../interpret/read.js";
 import type { Reading } from "../interpret/types.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { project, type MeaningReading } from "../realize/meaning.js";
-import { firstKey, realize, type GapKind, type Realized } from "../realize/realize.js";
+import { allGaps, firstKey, realize, type GapKind, type Realized } from "../realize/realize.js";
+import type { FoundGap } from "../realize/gaps.js";
 import { corpus, readTurn, type CorpusEntry } from "./corpus.js";
 
 /** Why an example is not judged: it does not parse, a reading has an `unread` entry, or its readings did not project. */
@@ -127,4 +128,38 @@ export function ratchetOf(trips: readonly Trip[]): Ratchet {
   const keys = new Map<string, number>();
   for (const trip of trips) if (failed(trip)) for (const key of trip.partKeys) keys.set(key, (keys.get(key) ?? 0) + 1);
   return { ok: trips.filter((t) => t.verdict === "ok").length, keys: Object.fromEntries([...keys].sort(([a], [b]) => a.localeCompare(b))) };
+}
+
+// ── Every gap ──
+
+/** One example's gaps in collecting mode (`allGaps`): every gap of every reading, not just the first. */
+export type TripGaps = { source: string; ageben: string; gaps: FoundGap[] };
+
+/** Every judged doc example's gaps (`--all-gaps`); an example the default trip skips is left out. */
+export function allTripGaps(tables: ClassifyTables): TripGaps[] {
+  return corpus(tables)
+    .entries.filter((entry) => !allReadings(entry.readings).some((r) => r.unread.length))
+    .map((entry) => ({ source: entry.source, ageben: entry.ageben, gaps: entry.meanings.flatMap((view) => allGaps(view, tables)) }));
+}
+
+/** One key's row of the `--all-gaps` table: its gaps not nested and nested, the examples it touches, its distinct details. */
+export type GapRow = { key: string; gaps: number; nested: number; trips: number; details: number };
+
+/** The `--all-gaps` table by each gap's own key, the most non-nested gaps first. */
+export function gapRows(trips: readonly TripGaps[]): GapRow[] {
+  const rows = new Map<string, GapRow & { seen: Set<string> }>();
+  for (const trip of trips) {
+    const touched = new Set<string>();
+    for (const gap of trip.gaps) {
+      const row = rows.get(gap.key) ?? rows.set(gap.key, { key: gap.key, gaps: 0, nested: 0, trips: 0, details: 0, seen: new Set() }).get(gap.key)!;
+      if (gap.nested) row.nested++;
+      else row.gaps++;
+      row.seen.add(gap.detail);
+      if (!touched.has(gap.key)) row.trips++;
+      touched.add(gap.key);
+    }
+  }
+  return [...rows.values()]
+    .map(({ seen, ...row }) => ({ ...row, details: seen.size }))
+    .sort((a, b) => b.gaps - a.gaps || b.nested - a.nested || a.key.localeCompare(b.key));
 }

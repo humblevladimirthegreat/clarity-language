@@ -5,7 +5,7 @@
  * and the rest throw a `noRule` {@link Unrealized} until their unit.
  */
 import type { MeaningDetail, MeaningTerm, NumberStem } from "./meaning.js";
-import { Unrealized } from "./terms.js";
+import { Unrealized } from "./gaps.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 

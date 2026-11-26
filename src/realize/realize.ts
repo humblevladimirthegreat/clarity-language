@@ -8,7 +8,7 @@ import { checkLine, spell } from "../interpret/reply.js";
 import { buildGlossIndex, glossToAgeben, type GlossIndex } from "../parse/gloss-inverse.js";
 import { claimGloss } from "./claim.js";
 import type { MeaningReading } from "./meaning.js";
-import { Unrealized } from "./terms.js";
+import { collecting, PLACEHOLDER, Unrealized, type FoundGap } from "./gaps.js";
 
 /**
  * Why the realizer wrote nothing: `noRule`, no rule for this key yet; `missingValue`, the view lacks what is needed to
@@ -68,4 +68,89 @@ export function spellGloss(gloss: string, key: string, tables: ClassifyTables): 
   }
   const check = checkLine(/[.?!]$/.test(line) ? line : `${line}.`, tables);
   return { gap: { kind: "noParse", key, detail: `${gloss} → ${line}: ${check.ok ? "does not spell" : check.why}` } };
+}
+
+// ── Every gap ──
+
+/** A gloss's units at its top level, split at each `|` outside brackets (`a | [b | c]` → `a`, `[b | c]`). */
+function unitsOf(gloss: string): string[] {
+  const out: string[] = [];
+  let depth = 0;
+  let from = 0;
+  for (let i = 0; i < gloss.length; i++) {
+    if (gloss[i] === "[") depth++;
+    else if (gloss[i] === "]") depth--;
+    else if (gloss[i] === "|" && depth === 0) {
+      out.push(gloss.slice(from, i).trim());
+      from = i + 1;
+    }
+  }
+  return [...out, gloss.slice(from).trim()].filter(Boolean);
+}
+
+/** A bracketed unit's inside (`[d-dog | g-big]` → `d-dog | g-big`), or undefined for a word. */
+function insideOf(unit: string): string | undefined {
+  if (!unit.startsWith("[")) return undefined;
+  let depth = 0;
+  for (let i = 0; i < unit.length; i++) {
+    if (unit[i] === "[") depth++;
+    else if (unit[i] === "]" && --depth === 0) return i === unit.length - 1 ? unit.slice(1, -1) : undefined;
+  }
+  return undefined;
+}
+
+/** A word with a part-of-speech letter (`z-dog`, `bl-speaker`, `?d-wh`); a hook's label (`at`) spells only in its unit. */
+const hasLetter = (word: string): boolean => /^\W*[a-z]{1,2}-/.test(word);
+
+/**
+ * The parts of a unit that do not spell alone: none when it spells; else its parts that do not, a word with no letter
+ * only when it stands alone; a unit whose parts each spell is itself the part. A unit holding a placeholder is judged
+ * only by its parts.
+ */
+function unspelled(unit: string, tables: ClassifyTables): string[] {
+  if (unit === PLACEHOLDER) return [];
+  const gapped = unit.includes(PLACEHOLDER);
+  if (!gapped && spellsAlone(unit, tables)) return [];
+  const inside = insideOf(unit);
+  if (inside === undefined) return [unit];
+  const own = unitsOf(inside).flatMap((part) => unspelled(part, tables)).filter(hasLetter);
+  return own.length || gapped ? own : [unit];
+}
+
+const spelled = new WeakMap<ClassifyTables, Map<string, boolean>>();
+
+/** True when one unit's gloss spells alone against the bare gloss index, as `spellGloss` spells a line. */
+function spellsAlone(word: string, tables: ClassifyTables): boolean {
+  let seen = spelled.get(tables);
+  if (!seen) spelled.set(tables, (seen = new Map()));
+  const known = seen.get(word);
+  if (known !== undefined) return known;
+  let index = indexes.get(tables);
+  if (!index) indexes.set(tables, (index = buildGlossIndex(tables)));
+  let ok = true;
+  try {
+    glossToAgeben(word, tables, index);
+  } catch {
+    ok = false;
+  }
+  seen.set(word, ok);
+  return ok;
+}
+
+/**
+ * Every gap of one reading (docs/meta/realizer.md#round-trip), where `realize` returns only the first: each item that
+ * fails is recorded and written as a placeholder (`collecting`, gaps.ts), and each written word or unit that does not
+ * spell alone (`unspelled`) is a `noSpell` gap under the reading's first key, its gloss as the detail. A gloss with no gap that still does not
+ * spell or parse as a line, though each word spells, is the line's own gap, as `realize` files it. Empty when the
+ * reading realizes.
+ */
+export function allGaps(view: MeaningReading, tables: ClassifyTables): FoundGap[] {
+  const key = firstKey(view);
+  const { value: gloss, gaps } = collecting(key, () => claimGloss(view, tables));
+  const line = gloss !== undefined && !gaps.length ? realize(view, tables) : undefined;
+  if (line && !("gap" in line)) return [];
+  const words = gloss === undefined ? [] : unitsOf(gloss).flatMap((unit) => unspelled(unit, tables));
+  const noSpell = words.map((word): FoundGap => ({ kind: "noSpell", key, detail: word, nested: false }));
+  if (gaps.length || noSpell.length) return [...gaps, ...noSpell];
+  return line && "gap" in line ? [{ ...line.gap, nested: false }] : [];
 }

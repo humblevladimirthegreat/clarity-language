@@ -18,6 +18,9 @@
  *          --tally KEY …  per key, its trip count, then each reason in the trips' detail lines (`tripReason`: the text
  *                  after the key or gloss, the gloss as `…`) with its count and one sample text with its file:line, the
  *                  commonest first; where triage of a key starts. Prints the top reasons, saves all to tmp/logs/round-trip-tally.txt
+ *          --all-gaps  every gap of every trip, not just the first (`allTripGaps`): prints counts by gap kind, by each
+ *                  gap's own key (not nested, nested, trips, distinct details) and the commonest noSpell words; saves one
+ *                  line per gap to tmp/logs/round-trip-gaps.txt (with --json, the key table to tmp/state/round-trip-gaps.json)
  *
  * Run: npm run round-trip
  *      npm run round-trip -- --save
@@ -27,21 +30,23 @@
  *      npm run round-trip -- --detail gap:noSpell edge:force --limit 40
  *      npm run round-trip -- --detail edge:force unit:linker --per-key 1
  *      npm run round-trip -- --tally edge:force lexReading:restrictor
+ *      npm run round-trip -- --all-gaps [--json]
  * One text or one gloss: npm run realize -- view TEXT … | view --key KEY [--has TEXT] | spell GLOSS …
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { readSnapshot, writeSnapshot } from "../src/interpret/accounting-walk.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { ratchetOf, roundTrip, type Ratchet, type Trip } from "../src/round-trip/round-trip.js";
-import { tmpRel } from "../src/tmp-paths.js";
+import { allTripGaps, gapRows, ratchetOf, roundTrip, type Ratchet, type Trip, type TripGaps } from "../src/round-trip/round-trip.js";
+import { tmpPath, tmpRel } from "../src/tmp-paths.js";
+import { clip } from "./lib/build-output.ts";
 import { countTrips, diffTrips, formatDiff, formatTexts, formatTrips, tripTexts, type TripCounts } from "./lib/sweep.ts";
 import { formatTally, pickTrips, shortLines, tallyTrips, writeLog } from "./lib/trip-triage.ts";
 
 const SAVE = "round-trip.json";
 const RATCHET = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "round-trip", "round-trip-ratchet.json");
-const USAGE = "Usage: npm run round-trip -- [--save] [--diff] | --ratchet | --lower | --texts KEY … | --detail KEY … [--limit N] [--per-key N] | --tally KEY …";
+const USAGE = "Usage: npm run round-trip -- [--save] [--diff] | --ratchet | --lower | --texts KEY … | --detail KEY … [--limit N] [--per-key N] | --tally KEY … | --all-gaps [--json]";
 
 const fail = (message: string): never => {
   console.error(`${message} ${USAGE}`);
@@ -65,14 +70,23 @@ const countFlag = (name: string): number | undefined => {
 const limit = countFlag("--limit");
 const perKey = countFlag("--per-key");
 const args = at >= 0 ? argv.slice(0, at) : argv;
-const bad = args.filter((a) => !["--save", "--diff", "--ratchet", "--lower"].includes(a));
+const bad = args.filter((a) => !["--save", "--diff", "--ratchet", "--lower", "--all-gaps", "--json"].includes(a));
 if (bad.length) fail(`Unknown argument ${bad[0]}.`);
 if (listFlag && (!listKeys.length || args.length)) fail(`${listFlag} takes one or more keys and no other flag.`);
 const ratchet = args.includes("--ratchet");
 const lower = args.includes("--lower");
 if ((ratchet || lower) && args.length > 1) fail(`${ratchet ? "--ratchet" : "--lower"} takes no other flag.`);
 
+const gapsMode = args.includes("--all-gaps");
+if (gapsMode && args.some((a) => a !== "--all-gaps" && a !== "--json")) fail("--all-gaps takes only --json.");
+if (args.includes("--json") && !gapsMode) fail("--json goes with --all-gaps.");
+
 const started = Date.now();
+if (gapsMode) {
+  printGaps(allTripGaps(loadDefaultTables()), args.includes("--json"));
+  console.log(`\n${((Date.now() - started) / 1000).toFixed(1)} s`);
+  process.exit(0);
+}
 const trips = roundTrip(loadDefaultTables());
 
 if (listFlag === "--texts") {
@@ -152,4 +166,43 @@ function lowerRatchet(now: Ratchet): void {
   writeFileSync(RATCHET, `${JSON.stringify({ ...stored, ok, keys }, null, 2)}\n`);
   console.log(changes.length ? `Lowered ${changes.length}: ${changes.join(", ")}` : "Nothing to lower.");
   if (rose.length) console.log(`Not lowered (worse than stored): ${rose.join(", ")}`);
+}
+
+/** The `--all-gaps` summary on stdout; one line per gap in a log, and with `json` the key table in tmp/state. */
+function printGaps(all: readonly TripGaps[], json: boolean): void {
+  const gaps = all.flatMap((trip) => trip.gaps.map((gap) => ({ ...gap, trip })));
+  const top = (gap: { nested: boolean }): boolean => !gap.nested;
+  const lines = gaps.map((g) => `${g.key}  ${g.kind}  ${g.nested ? "nested" : "-"}  ${g.detail}  ‖ ${clip(`${g.trip.source} ${g.trip.ageben}`)}`);
+  const file = writeLog("round-trip-gaps.txt", lines);
+  const kinds = new Map<string, [number, number]>();
+  for (const g of gaps) {
+    const n = kinds.get(g.kind) ?? kinds.set(g.kind, [0, 0]).get(g.kind)!;
+    n[g.nested ? 1 : 0]++;
+  }
+  const rows = gapRows(all);
+  const words = new Map<string, number>();
+  for (const g of gaps) if (g.kind === "noSpell" && !g.detail.includes(": ")) words.set(g.detail.replace(/_[\d,]+/g, "_N"), (words.get(g.detail.replace(/_[\d,]+/g, "_N")) ?? 0) + 1);
+  const pad = (n: number): string => String(n).padStart(6);
+  console.log(
+    [
+      `trips judged: ${all.length}, with at least one gap: ${all.filter((t) => t.gaps.length).length}`,
+      `gaps: ${gaps.length}, not nested: ${gaps.filter(top).length}`,
+      "",
+      "by kind (not nested, nested):",
+      ...[...kinds].sort((a, b) => b[1][0] - a[1][0]).map(([kind, [n, m]]) => `${pad(n)}${pad(m)}  ${kind}`),
+      "",
+      `by key, top 40 of ${rows.length} (not nested, nested, trips, details):`,
+      ...rows.slice(0, 40).map((r) => `${pad(r.gaps)}${pad(r.nested)}${pad(r.trips)}${pad(r.details)}  ${r.key}`),
+      "",
+      `noSpell words, top 30 of ${words.size} (digits as _N):`,
+      ...[...words].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 30).map(([word, n]) => `${pad(n)}  ${word}`),
+      "",
+      `One line per gap in ${file}`,
+    ].join("\n"),
+  );
+  if (!json) return;
+  const out = tmpPath("state", "round-trip-gaps.json");
+  mkdirSync(dirname(out), { recursive: true });
+  writeFileSync(out, `${JSON.stringify(rows, null, 2)}\n`);
+  console.log(`Key table saved to ${tmpRel("state", "round-trip-gaps.json")}`);
 }

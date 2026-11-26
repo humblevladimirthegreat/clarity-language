@@ -9,7 +9,7 @@
  */
 import { EXTRA_NOUN } from "./details.js";
 import { numericLabel } from "./numbers.js";
-import { Unrealized } from "./terms.js";
+import { Unrealized } from "./gaps.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 

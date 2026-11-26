@@ -5,7 +5,7 @@
  * standalone join (joins.md#standalone-phrase).
  */
 import type { MeaningDetail, MeaningFrame, MeaningTerm } from "./meaning.js";
-import { Unrealized } from "./terms.js";
+import { attempt, PLACEHOLDER, skip, Unrealized } from "./gaps.js";
 import type { Ending } from "./words.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
@@ -139,7 +139,7 @@ export function listGloss(term: Extract<MeaningTerm, { kind: "list" }>, pos: str
   const joins = parts.map((part, i) => part.values ?? (i === parts.length - 1 ? term.values : undefined));
   // A `u` join's denial reaches only its items (joins.md#negation-u): the join's own frame, which its word writes.
   const other = (term.frames ?? []).filter((frame) => !joins.some((values) => values && ownFrame(frame, values)));
-  if (other.length) throw noRule(`a list with the frame ${other[0]!.key}`);
+  for (const frame of other) skip(frame.key, noRule(`a list with the frame ${frame.key}`));
   // A fence of several parts closes each with its own join, the SHARED words of each right after it
   // (list-structure.md#fence-nesting); one part takes the list's own shared words.
   if (joins.some((values, i) => !values && i < parts.length - 1)) throw noRule("a fence with no join before the last");
@@ -167,10 +167,10 @@ export function listGloss(term: Extract<MeaningTerm, { kind: "list" }>, pos: str
     });
     const values = joins[i];
     if (!values) return members;
-    const shared = (perPart ? (part.shared ?? []) : i === parts.length - 1 ? (term.sharedDetails ?? []) : []).map((detail) => sharedWord(detail, writers));
+    const shared = (perPart ? (part.shared ?? []) : i === parts.length - 1 ? (term.sharedDetails ?? []) : []).map((detail) => attempt(detail.key, () => sharedWord(detail, writers), PLACEHOLDER));
     // Only a first fence with no items is the standalone join; a later fence closes the ones before it.
     const join = joinLeaf(values, pos, style.standalone && i === 0 && !members.length);
-    const landmark = term.bound && (i === hooked || (hooked < 0 && i === parts.length - 1)) ? [boundLandmark(term.bound, writers)] : [];
+    const landmark = term.bound && (i === hooked || (hooked < 0 && i === parts.length - 1)) ? [attempt(term.bound.key, () => boundLandmark(term.bound!, writers), PLACEHOLDER)] : [];
     // *Respectively* sits right before the join word of the later list (list-structure.md#respectively).
     const respectively = style.respectively?.has(term) && i === parts.length - 1 ? ["w-respectively"] : [];
     return [...members, ...respectively, join, ...landmark, ...shared];

@@ -6,7 +6,8 @@
 import type { ClassifyTables } from "../parse/classify.js";
 import type { MeaningFrame, MeaningReading, MeaningStanceList } from "./meaning.js";
 import { joinLeaf } from "./lists.js";
-import { landmarkOf, roleTerm, unit, Unrealized } from "./terms.js";
+import { landmarkOf, roleTerm, unit } from "./terms.js";
+import { Unrealized } from "./gaps.js";
 
 /** The stance frames this file writes: MAY (knowing.md#may) and the channels (evidentiality.md#evidentiality, knowing.md#live-vs-memory). */
 const STANCE_WORDS = new Set(["overlay:may:th", "overlay:evidential:th"]);

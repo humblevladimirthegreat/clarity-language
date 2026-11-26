@@ -11,22 +11,12 @@ import type { MeaningDetail, MeaningFrame, MeaningTerm } from "./meaning.js";
 import { fractionLeaf, hNumberLeaf, isPlainCount, measureLeaf, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, listedLeaf, rootOf, type Ending } from "./words.js";
 import { builtLeaf, ROLE_REACH } from "./built.js";
-import type { GapKind } from "./realize.js";
 import { hookFront, joinLeaf, listGloss, type ListStyle, type ListWriters, type MemberWriter } from "./lists.js";
 import { tagLabel } from "./tags.js";
+import { attempt, PLACEHOLDER, skip, Unrealized } from "./gaps.js";
 
 /** Lists written with a join that has no items as the standalone join (joins.md#standalone-phrase). */
 const STANDALONE: ListStyle = { standalone: true };
-
-/** A part the realizer cannot write yet: why, and what. The caller files it under the reading's key. */
-export class Unrealized extends Error {
-  constructor(
-    readonly kind: GapKind,
-    detail: string,
-  ) {
-    super(detail);
-  }
-}
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -203,20 +193,24 @@ export function adverb(detail: MeaningDetail, tables: ClassifyTables): string {
 
 /** A term's plain adjectives, each with its degree words, after the head (clause.md#adjectives-ɡ). */
 function adjectives(details: readonly MeaningDetail[] | undefined, tables: ClassifyTables, plainNoun = false): string[] {
-  return (details ?? []).map((detail, i, all) => {
-    // A minus number right after a plain noun, or after a count anywhere, is a fraction (measures-and-percent.md#fractions).
-    const prev = all[i - 1];
-    const fraction = (prev ? isPlainCount(prev) : plainNoun) ? fractionLeaf(detail) : undefined;
-    if (fraction) return fraction;
-    // A numeric prefix (numeric-derivation.md) is a built word, written from its stem.
-    if (detail.values.built) return plainWord(detail, "g", detail.values.root, tables);
-    // A count or rank sits with the adjectives (numbers.md#counts).
-    if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
-    // A time noun's signed count, which dates a channel (dated-channel.md#counting-from-now).
-    if (detail.key === "slot:hosted" && detail.kind === "amount") return measureLeaf(detail);
-    if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
-    return plainWord(detail, "g", detail.values.root, tables);
-  });
+  return (details ?? []).map((detail, i, all) =>
+    attempt(detail.key, () => adjective(detail, all[i - 1], plainNoun, tables), PLACEHOLDER),
+  );
+}
+
+/** One of a term's adjectives, after `prev`, the one before it. */
+function adjective(detail: MeaningDetail, prev: MeaningDetail | undefined, plainNoun: boolean, tables: ClassifyTables): string {
+  // A minus number right after a plain noun, or after a count anywhere, is a fraction (measures-and-percent.md#fractions).
+  const fraction = (prev ? isPlainCount(prev) : plainNoun) ? fractionLeaf(detail) : undefined;
+  if (fraction) return fraction;
+  // A numeric prefix (numeric-derivation.md) is a built word, written from its stem.
+  if (detail.values.built) return plainWord(detail, "g", detail.values.root, tables);
+  // A count or rank sits with the adjectives (numbers.md#counts).
+  if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
+  // A time noun's signed count, which dates a channel (dated-channel.md#counting-from-now).
+  if (detail.key === "slot:hosted" && detail.kind === "amount") return measureLeaf(detail);
+  if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
+  return plainWord(detail, "g", detail.values.root, tables);
 }
 
 /**
@@ -260,8 +254,13 @@ function barLeaf(term: Extract<MeaningTerm, { kind: "thing" }>, tables: Classify
   return frame.hosted ? unit([found[0]!, landmarkOf(frame.hosted, tables)]) : found[0];
 }
 
-/** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit. */
+/** A term in a role (`z`, `d`, `b`): its head, then its adjectives, as one unit; while collecting, a gap files under `term:KIND`. */
 export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  return attempt(`term:${term.kind}`, () => roleUnit(term, pos, ending, tables, style), PLACEHOLDER);
+}
+
+/** A role term's unit, its tag after it. */
+function roleUnit(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   // A tag that names this term goes right after it, in the same role (tag-pronouns.md#naming-with-a-tag).
   const tag = style.tags?.get(term);
   if (tag) {
@@ -277,7 +276,7 @@ export function roleTerm(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending
 function roleWord(term: MeaningTerm, pos: "z" | "d" | "b", ending: Ending | undefined, tables: ClassifyTables, style: ListStyle): string {
   const bar = term.kind === "thing" ? barLeaf(term, tables) : undefined;
   if (bar) return bar;
-  if (term.kind !== "list" && "frames" in term && ownFrames(term.frames).length) throw noRule(`a ${term.kind} term with its own frame`);
+  if (term.kind !== "list" && "frames" in term) for (const frame of ownFrames(term.frames)) skip(frame.key, noRule(`a ${term.kind} term with its own frame`));
   switch (term.kind) {
     case "list":
       return listGloss(term, pos, ending, listWriters((m, own) => roleTerm(m, pos, own, tables, style), tables, style), style);
@@ -402,8 +401,13 @@ function pronounLeaf(term: Extract<MeaningTerm, { kind: "pronoun" }>, pos: strin
   return `${pos}-←${named.slice(named.indexOf("-") + 1)}`;
 }
 
-/** The verb: a thing on `/v/`, named or on **-l**, with no frame or detail of its own. */
+/** The verb: a thing on `/v/`, named or on **-l**, with no frame or detail of its own; while collecting, a gap files under `term:KIND`. */
 export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  return attempt(`term:${term.kind}`, () => verbWord(term, tables, style), PLACEHOLDER);
+}
+
+/** The verb's words. */
+function verbWord(term: MeaningTerm, tables: ClassifyTables, style: ListStyle): string {
   // A verb list (joins.md#and-lists-a): each verb, then the `/v/` join.
   if (term.kind === "list") return listGloss(term, "v", undefined, listWriters((m) => verbTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind === "blank") return blankTerm(term, "v", tables, style);
@@ -411,7 +415,7 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListS
   // A built verb's hosted party (label-seams.md: `venumuthel blalazun`) is its `bl-` word, right after it.
   const [hosted, ...rest] = term.details;
   const party = hosted?.key === "slot:hosted" && hosted.hosted && term.values.built && !rest.length ? hosted.hosted : undefined;
-  if (ownFrames(term.frames).length || (term.details.length && !party)) throw noRule("a verb with its own frame or detail");
+  for (const part of [...ownFrames(term.frames), ...(party ? [] : term.details)]) skip(part.key, noRule("a verb with its own frame or detail"));
   const own = term.values.ending;
   const verb = marked(term.frames, withPlural(thingLeaf(term, "v", own === "m" ? "m" : own === "r" ? undefined : "l", tables), term.values));
   return party ? unit([verb, landmarkOf(party, tables, style)]) : verb;
@@ -422,10 +426,16 @@ export function verbTerm(term: MeaningTerm, tables: ClassifyTables, style: ListS
  * which holds its ending and degree words.
  */
 export function predicateTerm(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+  return attempt(`term:${term.kind}`, () => predicateUnit(term, tables, style), PLACEHOLDER);
+}
+
+/** A predicate term's words. */
+function predicateUnit(term: MeaningTerm, tables: ClassifyTables, style: ListStyle): string {
   // A predicate list (joins.md#negation-u: `gamahum gul`): each predicate word, then the `/ɡ/` join.
   if (term.kind === "list") return listGloss(term, "g", undefined, listWriters((m) => predicateTerm(m, tables), tables, style), { ...style, standalone: true });
   if (term.kind === "blank") return blankTerm(term, "g", tables, style);
-  if (term.kind !== "thing" || ownFrames(term.frames).length) throw noRule(`a ${term.kind} predicate`);
+  if (term.kind !== "thing") throw noRule(`a ${term.kind} predicate`);
+  for (const frame of ownFrames(term.frames)) skip(frame.key, noRule("a thing predicate"));
   return marked(term.frames, predicateWord(term, tables));
 }
 

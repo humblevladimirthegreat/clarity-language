@@ -7,7 +7,7 @@
  * its `values.gloss`.
  */
 import type { MeaningDetail, MeaningFrame, MeaningTerm } from "./meaning.js";
-import { Unrealized } from "./terms.js";
+import { attempt, PLACEHOLDER, Unrealized } from "./gaps.js";
 import type { Ending } from "./words.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
@@ -143,7 +143,7 @@ function landmark(term: MeaningTerm, writers: DetailWriters): string {
 export function placeDetails(details: readonly MeaningDetail[], adverb: (detail: MeaningDetail) => string, writers: DetailWriters): PlacedDetails {
   const out: PlacedDetails = { lead: [], before: [], after: [], attached: new Map() };
   const extraNouns: string[][] = [];
-  for (const detail of details) {
+  const place = (detail: MeaningDetail): void => {
     if (detail.key === "unit:h" || detail.key === "lexReading:number") {
       out.before.push(adverb(detail));
     } else if (isRelation(detail)) {
@@ -164,7 +164,8 @@ export function placeDetails(details: readonly MeaningDetail[], adverb: (detail:
       const pieces = out.attached.get(part) ?? out.attached.set(part, []).get(part)!;
       pieces.push(hookWord(detail, detail.key === "hookJob:span" ? SPAN : IN_CLAUSE, writers), writers.phrase(hosted, part, writers.endingOf(hosted)));
     } else throw noRule(`claim detail ${detail.key}`);
-  }
+  };
+  for (const detail of details) if (!attempt(detail.key, () => (place(detail), true), false)) out.before.push(PLACEHOLDER);
   // A hook right after a landmark describes that landmark (ranges.md#ranges), so two extra nouns sit apart: the first
   // before the verb, the second after it.
   if (extraNouns.length > 2) throw noRule("more than two extra-noun hooks");
