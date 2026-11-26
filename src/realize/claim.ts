@@ -4,11 +4,12 @@
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import type { MeaningDetail, MeaningFrame, MeaningReading, MeaningTerm } from "./meaning.js";
-import { adverb, plainWord, predicateTerm, roleTerm, Unrealized, verbTerm } from "./terms.js";
-import { placeDetails, zoneGloss } from "./details.js";
+import { adverb, plainWord, predicateTerm, roleTerm, toneMark, toneOf, Unrealized, verbTerm } from "./terms.js";
+import { placeDetails, zoneGloss, type DetailWriters } from "./details.js";
 import type { Ending } from "./words.js";
 import type { ListStyle } from "./lists.js";
 import { assignedTags } from "./tags.js";
+import { actGloss, actOrder, callGloss, interjectionGloss, polarGloss } from "./acts.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -101,24 +102,45 @@ function respectivelyLists(view: MeaningReading): Set<MeaningTerm> {
   return out;
 }
 
-/** The bare clause's morph gloss, or throws {@link Unrealized}. */
+/**
+ * The written pieces with each copied tone mark before the first piece that carries it (tone-marks.md#showing-your-tone).
+ * Every piece after a copied mark must carry it, or a later one: a mark colors all the words after it.
+ */
+function withRestMarks(pieces: readonly string[], marks: ReadonlyMap<string, string>): string[] {
+  const out: string[] = [];
+  let current: string | undefined;
+  for (const piece of pieces) {
+    const mark = marks.get(piece);
+    if (mark && mark !== current) out.push(mark);
+    else if (!mark && current) throw noRule("a word after a tone mark that the mark does not color");
+    current = mark;
+    out.push(piece);
+  }
+  return out;
+}
+
+/** A reading's whole morph gloss (act words, the clause in default order, its details and tags), or throws {@link Unrealized}. */
 export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: ListStyle = { standalone: true }): string {
   if (view.stanceLists?.length) throw noRule("a stance list");
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
   // A shared link is the list's shared word (list-structure.md#shared-after-the-join); writing the word makes it again.
   // A pairing link is the *respectively* word its list's join writes (list-structure.md#respectively).
+  // An answer link ties a reply to the question before it (questions.md#fill-ask); reading the reply after it ties it again.
   // A discourse hook (hooks.md#discourse-hooks) is its word at the left edge, which ties the sentence to prior talk
   // again when read; its link carries its gloss.
   const front: string[] = [];
   // A point-back hook (in-clause-hooks.md#hook-resume) is its word, an extra noun; reading it finds its landmark again.
   const resumes: string[] = [];
+  // A polar word (questions.md#polar-particle) stands after the act words and before the body; its link is the word.
+  const polar: string[] = [];
   // An assigning tag is its word right after the term it names (tag-pronouns.md#naming-with-a-tag).
   const { tags, rest } = assignedTags(view.links);
   if (tags.size) style = { ...style, tags };
   const links = rest.filter((link) => {
     if (link.kind === "discourse" && link.values?.gloss && !link.frame && !link.resumed) return void front.push(link.values.gloss);
     if (link.kind === "hookResume" && link.values?.gloss && !link.frame) return void resumes.push(link.values.gloss);
-    return link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing";
+    if (link.kind === "polar") return void polar.push(polarGloss(link, tables));
+    return link.kind !== "anaphor" && link.kind !== "shared" && link.kind !== "pairing" && link.kind !== "answer";
   });
   if (links.length) throw noRule(`a ${links[0]!.kind} link`);
   const respectively = respectivelyLists(view);
@@ -129,8 +151,25 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const framed = new Map<number, Role>();
   const zones: string[] = [];
   const hostedEndings = new Map<MeaningTerm, Ending>();
+  // The opening `/y/` words (speech-moves.md): calls and reactions, then the act words, in the reading's order. A lone
+  // plain statement act is left out (speech-moves.md#speech-act-beginner); a stacked one is written.
+  const acts = view.frames.filter((frame) => frame.key === "edge:force");
+  // A free-standing mark at the start colors the whole sentence (tone-marks.md#showing-your-tone): its own frame.
+  let sentenceMark: string | undefined;
+  const opening: string[] = [];
+  const actWords: string[] = [];
   view.frames.forEach((frame, index) => {
-    if (isStatementAct(frame)) return;
+    if (frame.key === "edge:force") {
+      if (acts.length > 1 || !isStatementAct(frame)) actWords.push(actGloss(frame, tables));
+      return;
+    }
+    const tone = toneOf(frame);
+    if (tone) {
+      if (tone.scope !== "rest" || sentenceMark) throw noRule("a sentence tone mark that is not one free-standing mark");
+      return void (sentenceMark = tone.mark);
+    }
+    if (frame.key === "edge:vocative") return void opening.push(callGloss(frame, tables));
+    if (frame.key === "edge:interjection") return void opening.push(interjectionGloss(frame, tables));
     // A join's binder frame over a hook's landmark (`el bual`, *everywhere*) is written by the landmark's join too.
     const binder = binderListOf(frame, claim.roles, claim.details);
     if (binder === "landmark") return;
@@ -158,7 +197,7 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const rank = ranks(view, framed);
   const inFrameOrder = roles.filter((r) => rank.has(r)).sort((a, b) => rank.get(a)! - rank.get(b)!);
   const placed = roles.map((r) => (rank.has(r) ? inFrameOrder.shift()! : r));
-  const details = placeDetails(claim.details, (detail) => adverb(detail, tables), {
+  const writers: DetailWriters = {
     phrase: (term, part, ending) => {
       if (part === "z" || part === "d" || part === "b") return roleTerm(term, part, ending, tables, style);
       if (part === "v") return verbTerm(term, tables, style);
@@ -166,23 +205,54 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
     },
     degree: (detail) => plainWord(detail, "w", detail.values.root, tables),
     endingOf: (term) => hostedEndings.get(term),
-  });
+  };
+  // A blank that completes another word comes first together with that word (questions.md#fill-ask: `el bar`, `abam zar`).
+  const hostsBlank = (detail: MeaningDetail): boolean => detail.hosted?.kind === "blank";
+  const placeAll = (some: readonly MeaningDetail[]) => placeDetails(some, (detail) => adverb(detail, tables), writers);
+  const details = placeAll(claim.details.filter((detail) => !hostsBlank(detail)));
+  const asked = placeAll(claim.details.filter(hostsBlank));
+  const askedFirst = [...asked.lead, ...asked.before, ...[...asked.attached.values()].flat(), ...asked.after];
   // A range or in-clause hook and its second phrase go right after the first (ranges.md#ranges).
   const withAttached = (part: string, piece: string): string[] => {
     const attached = details.attached.get(part) ?? [];
     details.attached.delete(part);
     return [piece, ...attached];
   };
-  const piece = (r: Role): string[] => withAttached(r, roleTerm(claim.roles[r]!, r, endings.get(r), tables, style));
-  const before = placed.filter((_, i) => roles[i] !== "b").flatMap(piece);
+  // A later free-standing mark is copied onto each term after it (tone-marks.md#showing-your-tone); each written term
+  // records the mark it carries, and the mark is written once, before the first.
+  const restMarks = new Map<string, string>();
+  const carrying = (term: MeaningTerm | undefined, piece: string): string => {
+    const mark = term && "frames" in term ? toneMark(term.frames, "rest") : undefined;
+    if (mark && (restMarks.get(piece) ?? mark) !== mark) throw noRule("two words written alike under different tone marks");
+    if (mark) restMarks.set(piece, mark);
+    return piece;
+  };
+  const piece = (r: Role): string[] => withAttached(r, carrying(claim.roles[r], roleTerm(claim.roles[r]!, r, endings.get(r), tables, style)));
+  const groups = placed.filter((_, i) => roles[i] !== "b").map(piece);
   const after = placed.filter((_, i) => roles[i] === "b").flatMap(piece);
-  const verb = claim.verb ? withAttached("v", verbTerm(claim.verb, tables, style)) : [];
-  const predicate = claim.predicate.map((term) => predicateTerm(term, tables, style));
+  const verb = claim.verb ? withAttached("v", carrying(claim.verb, verbTerm(claim.verb, tables, style))) : [];
+  // Each act's default order (speech-moves.md#act-word-order): a question puts its verb second, a command first, and
+  // the receiver stays right after the verb; a statement or prohibition keeps the verb late.
+  const actOrdered = verb.length ? actOrder(acts.filter((act) => acts.length > 1 || !isStatementAct(act))) : "statement";
+  // A fill-ask puts its blank first and the rest in statement order (questions.md#fill-ask).
+  const blankRole = placed.findIndex((r, i) => roles[i] !== "b" && claim.roles[r]!.kind === "blank");
+  const blankFirst = actOrdered !== "command" && (askedFirst.length > 0 || blankRole >= 0 || claim.predicate.some((term) => term.kind === "blank"));
+  const order = blankFirst ? "statement" : actOrdered;
+  const lead = order === "question" ? (groups.shift() ?? []) : blankRole >= 0 && blankFirst ? groups.splice(blankRole, 1)[0]! : [];
+  const verbFirst = order === "statement" ? [] : [...lead, ...verb, ...after];
+  const before = groups.flat();
+  const predicate = claim.predicate.map((term) => carrying(term, predicateTerm(term, tables, style)));
+  const blankPredicate = blankFirst && blankRole < 0 ? predicate.splice(0) : [];
   if (details.attached.size) throw noRule(`a hook after a /${[...details.attached.keys()][0]}/ part the claim does not have`);
   if (tags.size) throw noRule("a tag on a term the claim does not write in a role");
   // Adverbs and hosted relations right before the verb or predicate (clause.md#adverbs-h places them anywhere); extra
   // nouns after it (clause.md#extra-nouns), hooked ones after the plain ones; a discourse hook first, a zone last.
-  const pieces = [...front, ...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];
+  // The calls and reactions first, a discourse hook right before the first act word (firm-soft.md#firm-or-soft-act).
+  const body = verbFirst.length
+    ? [...askedFirst, ...verbFirst, ...before, ...details.lead, ...details.before, ...predicate, ...details.after, ...resumes, ...zones]
+    : [...askedFirst, ...lead, ...blankPredicate, ...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];
+  const pieces = [...opening, ...front, ...actWords, ...polar, ...body];
   if (!pieces.length) throw noRule("an empty claim");
-  return pieces.join(" | ");
+  if (sentenceMark && (opening.length || actWords.length || polar.length)) throw noRule("a sentence tone mark before the opening /y/ words");
+  return [...(sentenceMark ? [sentenceMark] : []), ...withRestMarks(pieces, restMarks)].join(" | ");
 }

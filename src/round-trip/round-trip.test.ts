@@ -242,6 +242,75 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes act words, firm, soft and for now, stacked acts in order, each act's default order, calls and reactions", () => {
+    const cases: [string, string[]][] = [
+      ["yam zazozon vowurol.", ["yam zazozon vowurol."]],
+      ["yur vowurol.", ["yur vowurol."]],
+      // A question's verb second, a command's first with the receiver right after it.
+      ["yel zazozon dubogal vabuvul.", ["yel zazozon vabuvul dubogal."]],
+      ["yol bazozon varal.", ["yol varal bazozon."]],
+      ["yul dubogal vabuvul.", ["yul dubogal vabuvul."]],
+      // A stacked statement act is written; the first act word picks the order.
+      ["yal yel zazozon vowurol.", ["yal yel zazozon vowurol."]],
+      ["yol yel vabuvul dubogal zawan.", ["yol yel vabuvul zawan dubogal."]],
+      ["yalon golowon.", ["yalon golowon."]],
+      ["glolamam yalazun.", ["glolamam yalazun."]],
+      ["yazozon al zalazun vowurol.", ["yazozon al zalazun vowurol."]],
+      ["yemel gelazem.", ["yemel gelazem."]],
+      ["welazem yemem.", ["welazem yemem."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes polar words after the act words, and fill-ask blanks first in the body", () => {
+    const cases: [string, string[]][] = [
+      ["yaol.", ["yaol."]],
+      ["yuom.", ["yuom."]],
+      ["yaor zazozon vowurol.", ["yaor zazozon vowurol."]],
+      ["yel yaol.", ["yel yaol."]],
+      // The blank first, the rest in statement order; a blank that completes a word comes with it.
+      ["yel dar zazozon vayebel.", ["yel dar zazozon vayebel."]],
+      ["yel gar zodozel.", ["yel gar zodozel."]],
+      ["yel doxar bluwen.", ["yel doxar bluwen."]],
+      ["yel zer godozel vowurol.", ["yel zer godozel vowurol."]],
+      ["yel zarx vowurol.", ["yel zarx vowurol."]],
+      ["yel zahelan vowurol el bar.", ["yel el bar zahelan vowurol."]],
+      ["yel abam zar zazozon vowurol.", ["yel abam zar zazozon vowurol."]],
+      ["yel zar vowurol. yam azozon.", ["yel zar vowurol.", "yam azozon."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
+  it("realizes tone marks: one word's in front of it, the rest of the sentence's free-standing before the first word it colors", () => {
+    const cases: [string, string[]][] = [
+      ["! zazozon vowurol.", ["! zazozon vowurol."]],
+      ["?! zalazun dodozel vayebel.", ["?! zalazun dodozel vayebel."]],
+      ["! zazozon % dodozel vayebel.", ["! zazozon % dodozel vayebel."]],
+      ["yel ? zazozon vowurol.", ["yel ? zazozon vowurol."]],
+      ["yel yal ? zar dubogal vabuvul.", ["yel yal ? zar dubogal vabuvul."]],
+      ["yazozon ! zalazun vowurol.", ["yazozon ! zalazun vowurol."]],
+      // A word's own mark, inside its unit's bracket; on a blank, a predicate, an act word or a reaction.
+      ["zazozon ?dodozel gelazel vayebel.", ["zazozon ?dodozel gelazel vayebel."]],
+      ["yel ?!dar zawan vayebel.", ["yel ?!dar zawan vayebel."]],
+      ["zodozel !gelazem.", ["zodozel !gelazem."]],
+      ["!yel zazozon vowurol.", ["!yel zazozon vowurol."]],
+      ["!yelazem.", ["!yelazem."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("files a part the bare clause has no rule for under the reading's first key", () => {
     const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));

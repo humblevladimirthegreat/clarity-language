@@ -17,6 +17,10 @@
  *          --top N         directory listing length (default 25)
  *          --summaries     Markdown: each heading's agent summary, indented under it
  *                          (docs/meta/grammar-docs.md#agent-summaries)
+ *          --exports       code map: for a code file, or each code file under a directory
+ *                          (tests only with --tests), the first sentence of its header
+ *                          comment, then one line per export: kind, name, line range and
+ *                          the first sentence of its doc comment (`—` if none)
  *
  * Run: npm run outline -- docs/grammar/beginner/clause.md
  *      npm run outline -- --depth 2 AGENTS.md docs/meta/doc-style.md
@@ -24,8 +28,9 @@
  *      npm run outline -- src/interpret/read.ts
  *      npm run outline -- --min-tokens 200 src/interpret/translate.ts
  *      npm run outline -- src/parse
+ *      npm run outline -- src/realize --exports
  */
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import ts from "typescript";
@@ -33,7 +38,9 @@ import ts from "typescript";
 import { BANNER } from "./lib/deps.ts";
 import { headingSummaries } from "../src/lint/agent-summaries.ts";
 
-type Options = { depth: number; minTokens: number; collapse: boolean; top: number; summaries?: boolean };
+type Options = { depth: number; minTokens: number; collapse: boolean; top: number; summaries?: boolean; exports?: boolean; tests?: boolean };
+
+const USAGE = "Usage: npm run outline -- [--depth N] [--min-tokens N] [--no-collapse] [--top N] [--summaries] [--exports [--tests]] FILE|DIR …";
 
 type Section = { level: number; title: string; start: number; end: number; tokens: number };
 
@@ -209,6 +216,77 @@ function outlineDir(dir: string, opts: Options): void {
   for (const r of shown) console.log(`  ${String(r.lines).padStart(6)}  ~${String(r.tokens).padStart(6)}t  ${r.path}`);
 }
 
+// ── Code map (--exports) ──
+
+/** A comment's prose: the comment markers and each line's leading `*` dropped, the lines joined by spaces. */
+function commentProse(comment: string): string {
+  return comment
+    .replace(/^\/\*\*?|\*\/$/g, "")
+    .split("\n")
+    .map((line) => line.replace(/^\s*(?:\/\/+|\*(?!\/))?\s?/, "").trim())
+    .filter((line) => line !== "")
+    .join(" ")
+    .replace(/\{@link\s+([^}|\s]+)[^}]*\}/g, "$1");
+}
+
+/** The first sentence of a comment's prose: up to the first `.`, `!` or `?` before a space, `e.g.`, `i.e.` and `vs.` excepted. */
+function firstSentence(comment: string): string {
+  const prose = commentProse(comment);
+  const end = /(?<!\b(?:e\.g|i\.e|vs))[.!?](?=\s|$)/.exec(prose);
+  return end ? prose.slice(0, end.index + 1) : prose;
+}
+
+/** The doc comment directly above a node (a `/** … *\/` with no blank line between), or undefined. */
+function docComment(node: ts.Node, text: string): string | undefined {
+  const ranges = ts.getLeadingCommentRanges(text, node.getFullStart()) ?? [];
+  const last = ranges[ranges.length - 1];
+  if (!last || !text.startsWith("/**", last.pos)) return undefined;
+  const gap = text.slice(last.end, node.getStart());
+  return /^[ \t]*\r?\n?[ \t]*$/.test(gap) ? text.slice(last.pos, last.end) : undefined;
+}
+
+/** The file's header: its first comment, when a blank line or an import separates it from the code below. */
+function headerComment(sf: ts.SourceFile, text: string): string | undefined {
+  const first = (ts.getLeadingCommentRanges(text, 0) ?? [])[0] ?? (text.startsWith("#!") ? (ts.getLeadingCommentRanges(text, text.indexOf("\n") + 1) ?? [])[0] : undefined);
+  if (!first) return undefined;
+  const comment = text.slice(first.pos, first.end);
+  const statement = sf.statements[0];
+  if (statement && !ts.isImportDeclaration(statement) && docComment(statement, text) === comment) return undefined;
+  return comment;
+}
+
+/** One map line per exported declaration (`export { … }` lists included): kind, name, line range, doc's first sentence. */
+function exportLines(file: string, text: string): string[] {
+  const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true);
+  const lineOf = (pos: number): number => sf.getLineAndCharacterOfPosition(pos).line + 1;
+  const header = headerComment(sf, text);
+  const out = [`${file} — ${header ? firstSentence(header) : "(no header comment)"}`];
+  for (const node of sf.statements) {
+    let label: string | null = null;
+    if (ts.isExportDeclaration(node)) label = `${node.isTypeOnly ? "type " : ""}re-export ${node.exportClause?.getText(sf).replace(/\s+/g, " ") ?? "*"}`;
+    else if (isExported(node)) label = describe(node, sf)?.replace(/^export /, "") ?? null;
+    if (label === null) continue;
+    const doc = docComment(node, text);
+    const range = `${lineOf(node.getStart(sf, true))}-${lineOf(node.getEnd())}`;
+    out.push(`  ${range} ${label} — ${doc ? firstSentence(doc) : "—"}`);
+  }
+  return out;
+}
+
+/** The code map of a file, or of every code file under a directory in path order (tests only with `tests`). */
+function outlineExports(path: string, opts: Options): void {
+  if (!statSync(path).isDirectory()) {
+    for (const line of exportLines(path, readFileSync(path, "utf8"))) console.log(line);
+    return;
+  }
+  const files = readdirSync(path, { recursive: true, withFileTypes: true })
+    .filter((e) => e.isFile() && CODE_FILE.test(e.name) && !e.name.endsWith(".d.ts") && (opts.tests || !/\.test\.[cm]?[jt]sx?$/.test(e.name)))
+    .map((e) => join(e.parentPath, e.name))
+    .filter((p) => !/(?:^|\/)(?:node_modules|dist|\.[^/]+)\//.test(p))
+    .sort();
+  for (const file of files) for (const line of exportLines(file, readFileSync(file, "utf8"))) console.log(line);
+}
+
 function main(): void {
   const args = process.argv.slice(2);
   const opts: Options = { depth: 6, minTokens: 0, collapse: true, top: 25 };
@@ -219,14 +297,31 @@ function main(): void {
     else if (args[i] === "--top") opts.top = Number(args[++i]);
     else if (args[i] === "--no-collapse") opts.collapse = false;
     else if (args[i] === "--summaries") opts.summaries = true;
-    else files.push(args[i]!);
+    else if (args[i] === "--exports") opts.exports = true;
+    else if (args[i] === "--tests") opts.tests = true;
+    else if (args[i] === "--help" || args[i] === "-h") {
+      console.log(USAGE);
+      return;
+    } else if (args[i]!.startsWith("-")) {
+      console.error(`Unknown option ${args[i]}\n${USAGE}`);
+      process.exit(1);
+    } else files.push(args[i]!);
   }
   const counts = [opts.depth, opts.minTokens, opts.top];
   if (files.length === 0 || counts.some((n) => !Number.isInteger(n) || n < 0) || opts.depth < 1) {
-    console.error("Usage: npm run outline -- [--depth N] [--min-tokens N] [--no-collapse] [--top N] [--summaries] FILE|DIR …");
+    console.error(USAGE);
+    process.exit(1);
+  }
+  const missing = files.filter((file) => !existsSync(file));
+  if (missing.length > 0) {
+    console.error(`No such file or directory: ${missing.join(", ")}`);
     process.exit(1);
   }
   for (const file of files) {
+    if (opts.exports) {
+      outlineExports(file, opts);
+      continue;
+    }
     if (statSync(file).isDirectory()) {
       outlineDir(file, opts);
       continue;

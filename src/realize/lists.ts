@@ -77,11 +77,17 @@ export function joinLeaf(values: Record<string, string>, pos: string, standalone
   const { series, ending, hook } = values;
   const job = (series && standalone ? STANDALONE_JOB[series] : undefined) ?? (series ? JOB[series] : undefined);
   if (!job || !series) throw noRule(`a join of series ${series ?? "?"}`);
-  const front = hook === undefined ? pos : HOOK[hook] ? `${pos}-${HOOK[hook]}-x` : undefined;
-  if (!front) throw noRule(`a hooked join on the hook ${hook}`);
+  const front = hookFront(pos, hook);
   if (ending === "l") return `${front}-${job}`;
   if (ending === "m") return `${front}-${series === "e" ? "or" : job}.open`;
   throw noRule(`a join on -${ending ?? "?"}`);
+}
+
+/** A join's front: its letter, with a hooked join's hook before the seam (`z-at-x`, hooked-joins.md#hooked-joins). */
+export function hookFront(pos: string, hook: string | undefined): string {
+  if (hook === undefined) return pos;
+  if (!HOOK[hook]) throw noRule(`a hooked join on the hook ${hook}`);
+  return `${pos}-${HOOK[hook]}-x`;
 }
 
 /** A list-reach frame the join word itself brings: keyed by the join's series, with the join's values and nothing else. */

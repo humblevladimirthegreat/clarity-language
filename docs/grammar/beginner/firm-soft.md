@@ -6,7 +6,7 @@ band: beginner
 Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
-- #firm-or-soft-act: 3 closed words
+- #firm-or-soft-act: 3 closed words, 1 canonical choice
 - #act-for-now: 4 closed words
 Inbound links: npm run page-refs -- firm-soft.md
 -->

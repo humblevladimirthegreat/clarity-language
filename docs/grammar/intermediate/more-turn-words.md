@@ -10,7 +10,7 @@ Sections named by data:
 - #stacked-acts: 1 construction home, 1 pair-table rule
 - #rhetorical: 1 construction home, 1 interpreter row, 1 interpreter class, 1 frame key
 - #quiz: 1 construction home
-- #describe-turn-word: 1 construction home, 1 rejection
+- #describe-turn-word: 1 construction home, 1 rejection, 1 canonical choice
 Inbound links: npm run page-refs -- more-turn-words.md
 -->
 

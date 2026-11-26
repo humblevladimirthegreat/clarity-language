@@ -55,6 +55,7 @@ const IN_CLAUSE: Record<string, string> = {
   un: "except.named",
 };
 
+/** Each extra-noun hook's label (extra-noun-hooks.md), by its series and ending; `built.ts` reuses it for hook prefixes. */
 export const EXTRA_NOUN: Record<string, string> = {
   al: "in",
   am: "amid",

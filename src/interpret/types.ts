@@ -167,7 +167,14 @@ export type Term =
       details?: Detail[];
       frames?: Frame[];
     }
-  | { kind: "blank"; word: LexWord; details?: Detail[]; frames?: Frame[] }
+  | {
+      kind: "blank";
+      word: LexWord;
+      /** The blank's join word: its `series` (which question it asks, fill-ask-roles.md#fill-ask-arity), `ending` and `hook`. */
+      values?: Record<string, string>;
+      details?: Detail[];
+      frames?: Frame[];
+    }
   | { kind: "literal"; word: LexWord; payload: string; details?: Detail[]; frames?: Frame[] }
   | {
       kind: "number";

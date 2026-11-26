@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 
 import { extractMorphPairs } from "../lint/morph-gloss-docs.js";
-import { buildGlossIndex, glossToAgeben } from "./gloss-inverse.js";
+import { buildGlossIndex, fillAskGloss, glossToAgeben } from "./gloss-inverse.js";
 import { loadDefaultTables } from "./index.js";
 import { morphGlossLine } from "./morph-gloss.js";
 
@@ -187,5 +187,13 @@ describe("glossToAgeben", () => {
 
   it("rejects a stray bracket instead of looping (a role letter on a bracket)", () => {
     assert.throws(() => glossToAgeben("y-command | d-[red | dog] | v-construct", tables, index), /unbalanced bracket/);
+  });
+});
+
+describe("fillAskGloss", () => {
+  it("glosses a join word as the blank it asks for, and nothing else as one", () => {
+    assert.equal(fillAskGloss("zar", tables), "z-wh");
+    assert.equal(fillAskGloss("gur", tables), "g-wh-else");
+    assert.equal(fillAskGloss("zodozel", tables)?.endsWith("wh"), false);
   });
 });

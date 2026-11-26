@@ -7,10 +7,11 @@ Page shape read by code:
 - cheat-sheet markers (2): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Sections named by data:
 - #turn-y: 1 rejection
-- #vocative: 5 construction homes, 1 rejection, 1 slot rule, 1 interpreter row, 1 interpreter class, 1 frame key, 18 pair-table rules
+- #vocative: 5 construction homes, 1 rejection, 1 slot rule, 1 interpreter row, 1 interpreter class, 1 frame key, 18 pair-table rules, 1 canonical choice
 - #interjections-reactions: 2 construction homes, 1 interpreter row, 1 interpreter class, 1 frame key
 - #speech-act-statement-question-command: 8 construction homes, 4 closed words, 1 interpreter row, 1 interpreter class, 1 frame key, 8 pair-table rules
 - #speech-act-beginner: 1 canonical choice
+- #act-word-order: 1 canonical choice
 - #continue-x: 2 construction homes
 Inbound links: npm run page-refs -- speech-moves.md
 -->
