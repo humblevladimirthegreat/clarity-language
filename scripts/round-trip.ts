@@ -13,7 +13,11 @@
  *          --texts KEY …  instead of counts, the examples behind each key: a verdict (`gap:noRule`, `skipped:unread`),
  *                  a key (`claim`, `edge:force`), or a type that heads keys (`edge`); each text with its count and file
  *          --detail KEY …  as --texts, but each trip in full: verdict, key, file, text, realized gloss and spelling,
- *                  path and detail. Prints the first 20 (`--limit N` for more) and saves all to tmp/logs/round-trip-detail.txt
+ *                  path and detail. Prints the first 20 (`--limit N` for more; `--per-key N` for at most N from each key)
+ *                  and saves all to tmp/logs/round-trip-detail.txt
+ *          --tally KEY …  per key, its trip count, then each reason in the trips' detail lines (`tripReason`: the text
+ *                  after the key or gloss, the gloss as `…`) with its count and one sample text with its file:line, the
+ *                  commonest first; where triage of a key starts. Prints the top reasons, saves all to tmp/logs/round-trip-tally.txt
  *
  * Run: npm run round-trip
  *      npm run round-trip -- --save
@@ -21,21 +25,23 @@
  *      npm run round-trip -- --lower
  *      npm run round-trip -- --texts claim edge
  *      npm run round-trip -- --detail gap:noSpell edge:force --limit 40
- * One text or one gloss: npm run realize -- view TEXT … | spell GLOSS …
+ *      npm run round-trip -- --detail edge:force unit:linker --per-key 1
+ *      npm run round-trip -- --tally edge:force lexReading:restrictor
+ * One text or one gloss: npm run realize -- view TEXT … | view --key KEY [--has TEXT] | spell GLOSS …
  */
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { readSnapshot, writeSnapshot } from "../src/interpret/accounting-walk.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { ratchetOf, roundTrip, type Ratchet, type Trip } from "../src/round-trip/round-trip.js";
-import { tmpPath, tmpRel } from "../src/tmp-paths.js";
-import { clip } from "./lib/build-output.ts";
+import { tmpRel } from "../src/tmp-paths.js";
 import { countTrips, diffTrips, formatDiff, formatTexts, formatTrips, tripTexts, type TripCounts } from "./lib/sweep.ts";
+import { formatTally, pickTrips, shortLines, tallyTrips, writeLog } from "./lib/trip-triage.ts";
 
 const SAVE = "round-trip.json";
 const RATCHET = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "round-trip", "round-trip-ratchet.json");
-const USAGE = "Usage: npm run round-trip -- [--save] [--diff] | --ratchet | --lower | --texts KEY … | --detail KEY … [--limit N]";
+const USAGE = "Usage: npm run round-trip -- [--save] [--diff] | --ratchet | --lower | --texts KEY … | --detail KEY … [--limit N] [--per-key N] | --tally KEY …";
 
 const fail = (message: string): never => {
   console.error(`${message} ${USAGE}`);
@@ -43,17 +49,21 @@ const fail = (message: string): never => {
 };
 
 const argv = process.argv.slice(2);
-const listFlag = argv.find((a) => a === "--texts" || a === "--detail");
+const listFlag = argv.find((a) => a === "--texts" || a === "--detail" || a === "--tally");
 const at = listFlag ? argv.indexOf(listFlag) : -1;
 let listKeys = at >= 0 ? argv.slice(at + 1) : [];
-let limit = 20;
-const limitAt = listKeys.indexOf("--limit");
-if (limitAt >= 0) {
-  if (listFlag !== "--detail") fail("--limit goes with --detail.");
-  limit = Number(listKeys[limitAt + 1]);
-  if (!Number.isInteger(limit) || limit < 1) fail("--limit takes a positive whole number.");
-  listKeys = [...listKeys.slice(0, limitAt), ...listKeys.slice(limitAt + 2)];
-}
+/** Take `--NAME N` (detail only) out of the key list: its positive whole number, or undefined when absent. */
+const countFlag = (name: string): number | undefined => {
+  const i = listKeys.indexOf(name);
+  if (i < 0) return undefined;
+  if (listFlag !== "--detail") fail(`${name} goes with --detail.`);
+  const n = Number(listKeys[i + 1]);
+  if (!Number.isInteger(n) || n < 1) fail(`${name} takes a positive whole number.`);
+  listKeys = [...listKeys.slice(0, i), ...listKeys.slice(i + 2)];
+  return n;
+};
+const limit = countFlag("--limit");
+const perKey = countFlag("--per-key");
 const args = at >= 0 ? argv.slice(0, at) : argv;
 const bad = args.filter((a) => !["--save", "--diff", "--ratchet", "--lower"].includes(a));
 if (bad.length) fail(`Unknown argument ${bad[0]}.`);
@@ -70,7 +80,15 @@ if (listFlag === "--texts") {
   process.exit(0);
 }
 if (listFlag === "--detail") {
-  printDetail(trips, listKeys, limit);
+  printDetail(trips, listKeys, limit ?? (perKey ? Infinity : 20), perKey);
+  process.exit(0);
+}
+if (listFlag === "--tally") {
+  const tallies = tallyTrips(trips, listKeys);
+  const top = formatTally(tallies, 8);
+  const file = writeLog("round-trip-tally.txt", formatTally(tallies));
+  console.log(shortLines(top, top.length));
+  console.log(`\n${tallies.reduce((n, t) => n + t.reasons.length, 0)} reason(s) for ${listKeys.join(", ")}; up to 8 per key shown, all in ${file}`);
   process.exit(0);
 }
 if (ratchet) {
@@ -95,14 +113,9 @@ console.log((before ? formatDiff(diffTrips(before, counts)) : formatTrips(counts
 console.log(`\n${((Date.now() - started) / 1000).toFixed(1)} s`);
 if (save) console.log(`Saved to ${writeSnapshot(SAVE, counts)}`);
 
-/** Whether a key argument names a trip: its verdict, its key, or a type heading its key (`edge` names `edge:force`). */
-function names(arg: string, trip: Trip): boolean {
-  return trip.verdict === arg || trip.key === arg || trip.key.startsWith(`${arg}:`);
-}
-
-/** Each matching trip in full; the first `limit` on stdout, all in a log file. */
-function printDetail(all: readonly Trip[], keys: readonly string[], max: number): void {
-  const hits = all.filter((trip) => keys.some((k) => names(k, trip)));
+/** Each matching trip in full; the first `max` on stdout (with `perKey`, at most that many from each key), all in a log file. */
+function printDetail(all: readonly Trip[], keys: readonly string[], max: number, perKey?: number): void {
+  const hits = pickTrips(all, keys);
   const blocks = hits.map((t) =>
     [
       `${t.verdict} ${t.key}  ${t.source}`,
@@ -113,11 +126,11 @@ function printDetail(all: readonly Trip[], keys: readonly string[], max: number)
       ...(t.detail ? [`  detail:   ${t.detail}`] : []),
     ].join("\n"),
   );
-  const file = tmpPath("logs", "round-trip-detail.txt");
-  mkdirSync(dirname(file), { recursive: true });
-  writeFileSync(file, `${blocks.join("\n\n")}\n`);
-  console.log(blocks.slice(0, max).map((b) => b.split("\n").map(clip).join("\n")).join("\n\n"));
-  console.log(`\n${hits.length} trip(s) for ${keys.join(", ")}; ${Math.min(max, hits.length)} shown, all in ${tmpRel("logs", "round-trip-detail.txt")}`);
+  const file = writeLog("round-trip-detail.txt", blocks.join("\n\n").split("\n"));
+  const shown = new Set(pickTrips(hits, keys, perKey).slice(0, max));
+  const out = blocks.filter((_, i) => shown.has(hits[i]!));
+  console.log(out.map((b) => shortLines(b.split("\n"), Infinity)).join("\n\n"));
+  console.log(`\n${hits.length} trip(s) for ${keys.join(", ")}; ${out.length} shown${perKey ? ` (at most ${perKey} per key)` : ""}, all in ${file}`);
 }
 
 /** Lower the stored ratchet to `now`: `ok` only rises, stored keys only fall, no key is added. */
