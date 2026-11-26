@@ -11,7 +11,7 @@ Sections named by data:
 - #adjectives-ɡ: 2 construction homes, 1 interpreter row, 1 interpreter class
 - #adjective-detail-w: 2 construction homes, 1 rejection, 1 interpreter row, 1 interpreter class
 - #adverbs-h: 3 construction homes, 1 interpreter row, 1 interpreter class, 2 canonical choices
-- #stance-th: 1 canonical choice
+- #stance-th: 3 canonical choices
 - #which-covers-which: 99 pair-table rules, 2 canonical choices
 - #extra-nouns: 4 construction homes, 2 rejections, 1 overlay row, 2 interpreter rows, 2 interpreter classes, 1 canonical choice
 Inbound links: npm run page-refs -- clause.md
