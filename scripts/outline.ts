@@ -35,7 +35,6 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import ts from "typescript";
 
-import { clip } from "./lib/build-output.ts";
 import { BANNER } from "./lib/deps.ts";
 import { headingSummaries } from "../src/lint/agent-summaries.ts";
 
@@ -227,8 +226,7 @@ function commentProse(comment: string): string {
     .map((line) => line.replace(/^\s*(?:\/\/+|\*(?!\/))?\s?/, "").trim())
     .filter((line) => line !== "")
     .join(" ")
-    .replace(/\{@link\s+([^}|\s]+)[^}]*\}/g, "$1")
-    .replace(/ \((?:[\w./-]+\.md(?:#[\w-]+)?(?:, )?)+\)/g, ""); // a bare doc reference costs map tokens and names no job
+    .replace(/\{@link\s+([^}|\s]+)[^}]*\}/g, "$1");
 }
 
 /** The first sentence of a comment's prose: up to the first `.`, `!` or `?` before a space, `e.g.`, `i.e.` and `vs.` excepted. */
@@ -262,7 +260,7 @@ function exportLines(file: string, text: string): string[] {
   const sf = ts.createSourceFile(file, text, ts.ScriptTarget.Latest, true);
   const lineOf = (pos: number): number => sf.getLineAndCharacterOfPosition(pos).line + 1;
   const header = headerComment(sf, text);
-  const out = [clip(`${file} — ${header ? firstSentence(header) : "(no header comment)"}`)];
+  const out = [`${file} — ${header ? firstSentence(header) : "(no header comment)"}`];
   for (const node of sf.statements) {
     let label: string | null = null;
     if (ts.isExportDeclaration(node)) label = `${node.isTypeOnly ? "type " : ""}re-export ${node.exportClause?.getText(sf).replace(/\s+/g, " ") ?? "*"}`;
@@ -270,7 +268,7 @@ function exportLines(file: string, text: string): string[] {
     if (label === null) continue;
     const doc = docComment(node, text);
     const range = `${lineOf(node.getStart(sf, true))}-${lineOf(node.getEnd())}`;
-    out.push(clip(`  ${range} ${label} — ${doc ? firstSentence(doc) : "—"}`));
+    out.push(`  ${range} ${label} — ${doc ? firstSentence(doc) : "—"}`);
   }
   return out;
 }
