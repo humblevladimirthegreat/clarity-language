@@ -10,6 +10,7 @@ import type { Ending } from "./words.js";
 import type { ListStyle } from "./lists.js";
 import { assignedTags } from "./tags.js";
 import { actGloss, actOrder, callGloss, interjectionGloss, polarGloss } from "./acts.js";
+import { holderHosts, isStanceWord, isStandaloneJoin, stanceListGloss, stanceOrder, stancePlace, stanceWordGloss, standaloneJoinGloss } from "./frames-stance.js";
 
 const noRule = (detail: string): Unrealized => new Unrealized("noRule", detail);
 
@@ -121,7 +122,11 @@ function withRestMarks(pieces: readonly string[], marks: ReadonlyMap<string, str
 
 /** A reading's whole morph gloss (act words, the clause in default order, its details and tags), or throws {@link Unrealized}. */
 export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: ListStyle = { standalone: true }): string {
-  if (view.stanceLists?.length) throw noRule("a stance list");
+  // A stance list goes last, its join right after its stance words (verb-and-stance-joins.md#stance-joins); a
+  // standalone stance join goes there in its place.
+  if ((view.stanceLists?.length ?? 0) > 1) throw noRule("more than one stance list");
+  const listed = new Set<number>();
+  const stanceList = view.stanceLists?.length ? [stanceListGloss(view, view.stanceLists[0]!, tables, listed)] : [];
   // A pronoun's anaphor link is the bind its term carries; reading the realized pronoun makes it again.
   // A shared link is the list's shared word (list-structure.md#shared-after-the-join); writing the word makes it again.
   // A pairing link is the *respectively* word its list's join writes (list-structure.md#respectively).
@@ -150,6 +155,11 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   const endings = new Map<Role, Ending>();
   const framed = new Map<number, Role>();
   const zones: string[] = [];
+  // MAY and the channels (knowing.md#may, evidentiality.md#evidentiality), placed once the framed nouns are known.
+  const stances: number[] = [];
+  // A holder is written in the stance word it sits on (holder.md#naming-a-holder).
+  const holders = holderHosts(view);
+  const inWord = new Set(holders.values());
   const hostedEndings = new Map<MeaningTerm, Ending>();
   // The opening `/y/` words (speech-moves.md): calls and reactions, then the act words, in the reading's order. A lone
   // plain statement act is left out (speech-moves.md#speech-act-beginner); a stacked one is written.
@@ -177,6 +187,12 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
       framed.set(index, binder);
       return;
     }
+    if (inWord.has(index) || listed.has(index)) return;
+    if (isStanceWord(frame)) return void stances.push(index);
+    if (isStandaloneJoin(frame)) {
+      if (stanceList.length) throw noRule("a standalone stance join and a stance list");
+      return void stanceList.push(standaloneJoinGloss(view, index));
+    }
     const zone = zoneGloss(frame);
     if (zone) return void zones.push(zone);
     const ending = frame.values.ending;
@@ -193,6 +209,13 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
     framed.set(index, role);
   });
   const roles = ROLES.filter((r) => claim.roles[r]);
+  // A stance word goes first in the body, or after the framed nouns that cover it (clause.md#which-covers-which).
+  const early: string[] = [];
+  const late: string[] = [];
+  const framedNouns = new Set(framed.keys());
+  for (const index of stanceOrder(view, stances)) {
+    (stancePlace(view, index, framedNouns) === "early" ? early : late).push(stanceWordGloss(view.frames[index]!, tables, view.frames[holders.get(index) ?? -1]));
+  }
   // Framed roles keep the default slots, filled in the order their frames cover each other.
   const rank = ranks(view, framed);
   const inFrameOrder = roles.filter((r) => rank.has(r)).sort((a, b) => rank.get(a)! - rank.get(b)!);
@@ -249,8 +272,8 @@ export function claimGloss(view: MeaningReading, tables: ClassifyTables, style: 
   // nouns after it (clause.md#extra-nouns), hooked ones after the plain ones; a discourse hook first, a zone last.
   // The calls and reactions first, a discourse hook right before the first act word (firm-soft.md#firm-or-soft-act).
   const body = verbFirst.length
-    ? [...askedFirst, ...verbFirst, ...before, ...details.lead, ...details.before, ...predicate, ...details.after, ...resumes, ...zones]
-    : [...askedFirst, ...lead, ...blankPredicate, ...before, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones];
+    ? [...early, ...askedFirst, ...verbFirst, ...before, ...late, ...details.lead, ...details.before, ...predicate, ...details.after, ...resumes, ...zones, ...stanceList]
+    : [...early, ...askedFirst, ...lead, ...blankPredicate, ...before, ...late, ...details.lead, ...details.before, ...verb, ...predicate, ...after, ...details.after, ...resumes, ...zones, ...stanceList];
   const pieces = [...opening, ...front, ...actWords, ...polar, ...body];
   if (!pieces.length) throw noRule("an empty claim");
   if (sentenceMark && (opening.length || actWords.length || polar.length)) throw noRule("a sentence tone mark before the opening /y/ words");

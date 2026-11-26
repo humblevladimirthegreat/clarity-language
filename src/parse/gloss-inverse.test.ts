@@ -144,6 +144,30 @@ describe("glossToAgeben", () => {
     }
   });
 
+  it("spells an overlay on -r and a digitless number with no doc line to copy them from", () => {
+    const bare = buildGlossIndex(tables);
+    const cases: [string, string][] = [
+      ["th-PATTERN.weak | v-rain", "thubor verulal"],
+      ["th-MAY-who-knows | v-rain", "thomar verulal"],
+      ["[th-PATTERN | bl-later] | v-rain", "thubom blral verulal"],
+      ["[th-PATTERN | bl-earlier] | v-rain", "thubom blrul verulal"],
+      ["[th-PATTERN | bl-later.about] | v-rain", "thubom blram verulal"],
+      ["[th-CLUES | bl-+-e-] | v-rain", "theyom blrawul verulal"],
+      ["[th-CLUES | bl-+-e-.about] | v-rain", "theyom blrawum verulal"],
+      // A holder on its seam: a name, a resume, a kind with -x, the generic pronoun, MAY.
+      ["z-Alazun | th-CLUES.strong-Azozon | v-departure", "zalazun theyolazozon vudurul"],
+      ["z-Azozon | v-walk . z-Alazun | th-CLUES-←Azozon | v-departure", "zazozon vowurol. zalazun theyomazozor vudurul"],
+      ["z-Alazun | th-CLUES-person-x | v-departure", "zalazun theyomeyelx vudurul"],
+      ["th-CLUES-ONE | z-Alazun | v-departure", "theyomeyen zalazun vudurul"],
+      ["z-Alazun | th-MAY-Azozon | v-departure", "zalazun thomamazozon vudurul"],
+    ];
+    for (const [gloss, ageben] of cases) {
+      const spelled = glossToAgeben(gloss, tables, bare);
+      assert.equal(spelled, ageben, gloss);
+      assert.equal(morphGlossLine(spelled, tables), gloss, ageben);
+    }
+  });
+
   it("spells a built word with no doc line to copy it from", () => {
     const bare = buildGlossIndex(tables);
     const cases: [string, string][] = [

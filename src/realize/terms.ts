@@ -8,7 +8,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import { fillAskGloss } from "../parse/gloss-inverse.js";
 import type { MeaningDetail, MeaningFrame, MeaningTerm } from "./meaning.js";
-import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
+import { fractionLeaf, hNumberLeaf, isPlainCount, measureLeaf, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, listedLeaf, rootOf, type Ending } from "./words.js";
 import { builtLeaf, ROLE_REACH } from "./built.js";
 import type { GapKind } from "./realize.js";
@@ -160,7 +160,9 @@ function stemLabel(roots: string[], built: string, pos: string, ending: Ending, 
 export function plainWord(detail: MeaningDetail, pos: string, root: string | undefined, tables: ClassifyTables): string {
   const ending = detail.values.ending;
   if (!root || !isEnding(ending) || ending === "n") throw noRule(`${detail.key} that is not a plain content word`);
-  if (detail.content || (detail.hosted && !detail.values.built) || detail.frames?.length) throw noRule(`${detail.key} with a hosted word or frame`);
+  if (detail.content || (detail.hosted && !detail.values.built)) throw noRule(`${detail.key} with a hosted word or frame`);
+  const moods = (detail.frames ?? []).map(moodWord);
+  if (moods.length && (pos !== "g" || detail.details?.length)) throw noRule(`${detail.key} with a mood word that is not alone before a /ɡ/ word`);
   const degrees = (detail.details ?? []).map((d) => {
     if (d.key !== "slot:w") throw noRule(`${d.key} on ${detail.key}`);
     if (d.details?.length) throw noRule(`a degree word with its own detail`);
@@ -170,11 +172,24 @@ export function plainWord(detail: MeaningDetail, pos: string, root: string | und
   const built = detail.values.built;
   const head = built ? builtLeaf(detail.values, pos, stemLabel(root.split("x"), built, pos, ending, tables)) : leafOf(pos, root, ending, tables);
   // A built word's hosted party (label-seams.md: `gonumuthael blerulal`) is its `bl-` word, right after it.
-  return unit([...degrees, withPlural(head, detail.values), ...(detail.hosted ? [landmarkOf(detail.hosted, tables)] : [])]);
+  return unit([...moods, ...degrees, withPlural(head, detail.values), ...(detail.hosted ? [landmarkOf(detail.hosted, tables)] : [])]);
+}
+
+/**
+ * A mood word on one adjective (universality.md#mood-on-adjective): the stance on `/w/` right before the `/ɡ/` word it
+ * covers, glossed by the reader's gloss of its sense (`w-MEMORY`), which holds its ending's meaning.
+ */
+function moodWord(frame: MeaningFrame): string {
+  const gloss = frame.values.gloss;
+  const plain = !frame.party && !frame.content && !frame.inner?.length && !frame.details?.length && !frame.hosted && !frame.holderHost;
+  if (!gloss || !plain || toneOf(frame) || !Object.keys(frame.values).every((key) => key === "gloss" || key === "ending")) {
+    throw noRule(`a ${frame.key} frame on an adjective`);
+  }
+  return `w-${gloss}`;
 }
 
 /** A hosted party as a `bl-` word (hooked-joins.md#hooked-joins, label-seams.md): a `b` term on the letter `bl`. */
-function landmarkOf(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+export function landmarkOf(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   return roleTerm(term, "b", undefined, tables, style).replace(/^(\[?)b-/, "$1bl-");
 }
 
@@ -197,6 +212,8 @@ function adjectives(details: readonly MeaningDetail[] | undefined, tables: Class
     if (detail.values.built) return plainWord(detail, "g", detail.values.root, tables);
     // A count or rank sits with the adjectives (numbers.md#counts).
     if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
+    // A time noun's signed count, which dates a channel (dated-channel.md#counting-from-now).
+    if (detail.key === "slot:hosted" && detail.kind === "amount") return measureLeaf(detail);
     if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
     return plainWord(detail, "g", detail.values.root, tables);
   });

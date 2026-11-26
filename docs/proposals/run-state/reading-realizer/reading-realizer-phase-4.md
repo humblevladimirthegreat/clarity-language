@@ -1,0 +1,8 @@
+- Outcome: DONE
+- Phase: 4 (U10a, U10b) complete; next is phase 5
+- Commits: 7978c77 ccf7b36 b9e54f2 21fb6b0 31724af
+- Decided by agent: none
+- Blocking: none
+- Gate: `verify: PASS, 0 new, 0 resolved, 11 baseline still open (baseline only: flashcards)`. Round trip went from 629 to 705 `ok` of 1479. `--diff`: no `ok` trip now fails. One trip went from a gap to `different` (`zalazun thebam vudurul. yal zalazun vezuvel.`, under `edge:force`). The view does not record that a written `yal` ends a carried channel. This is logged for U16a. Five `noRule` keys rose by 1 to 4 because trips now get past the stance frame. There is no recall gate.
+- Units: 2 (U10a 57 calls, U10b 54 calls, both past the 40-call cap). U10b swapped the placeholder text in two existing `round-trip.test.ts` tests because their example now realizes. The assertions did not change.
+- Inefficient: both workers ran past the 40-call cap, though neither had work left. U10a sent one heredoc twice because `tmp/scratch` was missing.

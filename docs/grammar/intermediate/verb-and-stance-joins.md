@@ -7,8 +7,8 @@ Sections named by data:
 - #vp-clause-forms: 9 construction homes, 2 rejections, 2 interpreter rows, 2 interpreter classes
 - #stance-joins: 3 construction homes
 - #stance-join-before-barl: 1 construction home
-- #standalone-stance-joins: 1 construction home, 1 interpreter class, 1 frame key, 13 pair-table rules
-- #stance-join-reach: 8 pair-table rules
+- #standalone-stance-joins: 1 construction home, 1 interpreter class, 1 frame key, 13 pair-table rules, 1 canonical choice
+- #stance-join-reach: 8 pair-table rules, 2 canonical choices
 Inbound links: npm run page-refs -- verb-and-stance-joins.md
 -->
 
