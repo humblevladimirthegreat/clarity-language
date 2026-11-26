@@ -302,6 +302,15 @@ describe("round trip", () => {
       ["zodozel thevul vowurol.", ["zodozel thevul vowurol."]],
       ["thevul zodozel vowurol.", ["thevul zodozel vowurol."]],
       ["yel thubom blral verulal.", ["yel verulal thubom blral."]],
+      // A holder on its seam (holder.md#naming-a-holder), placed as its stance word is.
+      ["zalazun theyomeyelx vudurul.", ["zalazun theyomeyelx vudurul."]],
+      ["theyomeyen zalazun vudurul.", ["zalazun theyomeyen vudurul."]],
+      ["zazozon vowurol. zalazun theyomazozor vudurul.", ["zazozon vowurol.", "zalazun theyomazozor vudurul."]],
+      // A stance list and a standalone stance join last (verb-and-stance-joins.md#stance-join-reach).
+      ["zazozon vowurol thomam thul.", ["zazozon vowurol thomam thul."]],
+      ["thomam zazozon vowurol thul.", ["zazozon thomam vowurol thul."]],
+      // A mood word on one adjective (universality.md#mood-on-adjective).
+      ["zazozon dahobal wevum gerulol vayebel.", ["zazozon dahobal wevum gerulol vayebel."]],
     ];
     for (const [text, want] of cases) {
       const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
@@ -333,12 +342,12 @@ describe("round trip", () => {
   });
 
   it("files a part the bare clause has no rule for under the reading's first key", () => {
-    const out = project(readTurn("zazozon dahobal wabem gerulol vayebel.", tables), tables).map((view) => realize(view, tables));
+    const out = project(readTurn("zerulal gohem blugalal.", tables), tables).map((view) => realize(view, tables));
     assert.ok("gap" in out[0]! && out[0].gap.kind === "noRule" && out[0].gap.key === "slot:newMember", JSON.stringify(out));
   });
 
   it("counts a failed trip in the ratchet under the keys of every reading, not only the one that failed", () => {
-    const text = "dazozon vayebel. zazozon dahobal wabem gerulol vayebel.";
+    const text = "dazozon vayebel. zerulal gohem blugalal.";
     const readings = readTurn(text, tables);
     const trip = tripEntry({ ageben: text, source: "test", readings, meanings: project(readings, tables) }, tables);
     assert.equal(trip.verdict, "gap:noRule");

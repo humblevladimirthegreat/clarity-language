@@ -519,6 +519,24 @@ function builtCandidates(core: string, index: GlossIndex): string[] {
   return builtStems(leaf[2]!, index).flatMap((stem) => ENDINGS.map((ending) => `${pos}${stem}${ending}`));
 }
 
+/**
+ * A stance word with a holder seam (holder.md#naming-a-holder): the channel or MAY word keeps its own **-l**, **-m** or
+ * **-r**, and the holder follows as the noun for that person would be written, without its role letter
+ * (`th-CLUES-Azozon` → `theyom` + `azozon`, `th-CLUES-←Azozon` → `theyomazozor`, `th-CLUES-person` → `theyomeyel`).
+ */
+function holderCandidates(core: string, index: GlossIndex): string[] {
+  if (!core.startsWith("th-")) return [];
+  const parts = core.split("-");
+  const out: string[] = [];
+  for (let k = 2; k < parts.length; k++) {
+    const words = [...(index.forms.get(parts.slice(0, k).join("-")) ?? [])].filter((form) => /^th.*[lmr]$/.test(form));
+    if (words.length === 0) continue;
+    const holders = leafCandidates(`z-${parts.slice(k).join("-")}`, index, false).filter((form) => form.startsWith("z"));
+    for (const word of words) for (const holder of holders) out.push(word + holder.slice(1));
+  }
+  return out;
+}
+
 function leafCandidates(text: string, index: GlossIndex, named: boolean): string[] {
   const plural = /[^-]-x$/.test(text) && !text.endsWith("-x-x");
   const core = plural ? text.slice(0, -2) : text;
@@ -544,6 +562,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   for (const form of fractionCandidates(core)) out.add(form + suffix);
   for (const form of compoundCandidates(core, index)) out.add(form + suffix);
   for (const form of builtCandidates(core, index)) out.add(form + suffix);
+  for (const form of holderCandidates(core, index)) out.add(form + suffix);
 
   const resume = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {

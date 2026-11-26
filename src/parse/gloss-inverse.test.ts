@@ -154,6 +154,12 @@ describe("glossToAgeben", () => {
       ["[th-PATTERN | bl-later.about] | v-rain", "thubom blram verulal"],
       ["[th-CLUES | bl-+-e-] | v-rain", "theyom blrawul verulal"],
       ["[th-CLUES | bl-+-e-.about] | v-rain", "theyom blrawum verulal"],
+      // A holder on its seam: a name, a resume, a kind with -x, the generic pronoun, MAY.
+      ["z-Alazun | th-CLUES.strong-Azozon | v-departure", "zalazun theyolazozon vudurul"],
+      ["z-Azozon | v-walk . z-Alazun | th-CLUES-←Azozon | v-departure", "zazozon vowurol. zalazun theyomazozor vudurul"],
+      ["z-Alazun | th-CLUES-person-x | v-departure", "zalazun theyomeyelx vudurul"],
+      ["th-CLUES-ONE | z-Alazun | v-departure", "theyomeyen zalazun vudurul"],
+      ["z-Alazun | th-MAY-Azozon | v-departure", "zalazun thomamazozon vudurul"],
     ];
     for (const [gloss, ageben] of cases) {
       const spelled = glossToAgeben(gloss, tables, bare);
