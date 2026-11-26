@@ -4,7 +4,7 @@ band: intermediate
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Sections named by data:
-- #counting-from-now: 1 construction home, 2 rejections, 1 discourse slot cell
+- #counting-from-now: 1 construction home, 2 rejections, 1 discourse slot cell, 1 canonical choice
 Inbound links: npm run page-refs -- dated-channel.md
 -->
 
