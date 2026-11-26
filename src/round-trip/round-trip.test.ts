@@ -289,6 +289,27 @@ describe("round trip", () => {
     }
   });
 
+  it("realizes MAY and the channels: after the roles, before a new member they cover, with a source or offset right after", () => {
+    const cases: [string, string[]][] = [
+      ["thomar verulal.", ["thomar verulal."]],
+      ["zalazun thomam vudurul.", ["zalazun thomam vudurul."]],
+      ["zalazun thebar vudurul.", ["zalazun thebar vudurul."]],
+      ["thubom blral verulal.", ["thubom blral verulal."]],
+      ["zalazun thubom blrul vudurul.", ["zalazun thubom blrul vudurul."]],
+      ["zalazun thebam blazozon vudurul.", ["zalazun thebam blazozon vudurul."]],
+      ["zazozon thevum blazurom grubal vowurol.", ["zazozon thevum blazurom grubal vowurol."]],
+      // The earlier word covers the later (clause.md#which-covers-which).
+      ["zodozel thevul vowurol.", ["zodozel thevul vowurol."]],
+      ["thevul zodozel vowurol.", ["thevul zodozel vowurol."]],
+      ["yel thubom blral verulal.", ["yel verulal thubom blral."]],
+    ];
+    for (const [text, want] of cases) {
+      const out = project(readTurn(text, tables), tables).map((view) => realize(view, tables));
+      assert.deepEqual(out.map((o) => ("ageben" in o ? o.ageben : o.gap.detail)), want, text);
+      assert.equal(sameReadings(text, want.join(" "), tables).verdict, "same", text);
+    }
+  });
+
   it("realizes tone marks: one word's in front of it, the rest of the sentence's free-standing before the first word it colors", () => {
     const cases: [string, string[]][] = [
       ["! zazozon vowurol.", ["! zazozon vowurol."]],

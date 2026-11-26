@@ -99,18 +99,29 @@ export function numericLabel(body: string | undefined): string {
  * The leaf of a plain number under `pos`, on its ending. The preferred writing takes no surface suffix
  * (number-markers.md#writing-style-numeric-vs-spelled), so the gloss names the preferred one and `spell` writes it.
  */
-function leafOf(number: Plain, pos: string, ending: string | undefined): string {
+function leafOf(number: Plain, pos: string, ending: string | undefined, signed = false): string {
   if (ending === undefined) throw new Unrealized("missingValue", "a number with no ending in the view");
   const suffix = ENDING_SUFFIX[ending];
   if (suffix === undefined) throw noRule(`a number on -${ending}`);
   // A negative number on a noun is a fraction (measures-and-percent.md#fractions), a value of its own.
-  if (number.marker === "-" && pos === "g") throw noRule("a negative number on a noun");
+  if (number.marker === "-" && pos === "g" && !signed) throw noRule("a negative number on a noun");
   return `${pos}-${label(number)}${suffix}`;
 }
+
+/** A digitless signed number on `/b/`, an unmeasured offset from now (evidentiality.md#forecast), by its sign. */
+const OFFSET: Record<string, string> = { "+": "later", "-": "earlier" };
 
 /** A number term in a role (number-markers.md#parts-of-speech-on-numbers): its leaf under the role letter. */
 export function numberTermLeaf(term: Extract<MeaningTerm, { kind: "number" }>, pos: "z" | "d" | "b"): string {
   if (term.values?.gloss) throw noRule("a number with a reading of its own");
+  // `blral` *some time after now*, `blrul` *some time before now* (evidentiality.md#forecast).
+  const stem = term.stem;
+  const offset = pos === "b" && !stem.groups.length && stem.digitlessExp === undefined && !stem.calendarOrdinal ? OFFSET[SPEECH_MARKER[stem.marker] ?? stem.marker] : undefined;
+  if (offset) {
+    const ending = term.values?.ending;
+    if (ending !== "l" && ending !== "m") throw noRule(`an offset on -${ending}`);
+    return `b-${offset}${ENDING_SUFFIX[ending]}`;
+  }
   return leafOf(fromStem(term.stem), pos, term.values?.ending);
 }
 
@@ -119,6 +130,16 @@ export function numberDetailLeaf(detail: MeaningDetail): string {
   if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("a number with a detail, frame or hosted word");
   if (detail.values.gloss) throw noRule("a number with a reading of its own");
   return leafOf(fromBody(detail.values.number), "g", detail.values.ending);
+}
+
+/**
+ * A signed count on a time noun that dates a channel (dated-channel.md#counting-from-now: `blagorum grugel`, *three
+ * hours ago*): the noun's `slot:hosted` amount, a `/ɡ/` number whose sign counts back or ahead from now.
+ */
+export function measureLeaf(detail: MeaningDetail): string {
+  if (detail.content || detail.hosted || detail.details?.length || detail.frames?.length) throw noRule("a measure with a detail, frame or hosted word");
+  if (detail.values.gloss) throw noRule("a measure with a reading of its own");
+  return leafOf(fromBody(detail.values.number), "g", detail.values.ending, true);
 }
 
 /** The parts a fraction names one of, by their English (measures-and-percent.md#fractions); others are `one-Nth`. */

@@ -8,7 +8,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { CLOSED } from "../closed-roots.js";
 import { fillAskGloss } from "../parse/gloss-inverse.js";
 import type { MeaningDetail, MeaningFrame, MeaningTerm } from "./meaning.js";
-import { fractionLeaf, hNumberLeaf, isPlainCount, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
+import { fractionLeaf, hNumberLeaf, isPlainCount, measureLeaf, numberDetailLeaf, numberTermLeaf, resumedNumberLabel, sharedNumberLeaf } from "./numbers.js";
 import { leaf, listedLeaf, rootOf, type Ending } from "./words.js";
 import { builtLeaf, ROLE_REACH } from "./built.js";
 import type { GapKind } from "./realize.js";
@@ -174,7 +174,7 @@ export function plainWord(detail: MeaningDetail, pos: string, root: string | und
 }
 
 /** A hosted party as a `bl-` word (hooked-joins.md#hooked-joins, label-seams.md): a `b` term on the letter `bl`. */
-function landmarkOf(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
+export function landmarkOf(term: MeaningTerm, tables: ClassifyTables, style: ListStyle = STANDALONE): string {
   return roleTerm(term, "b", undefined, tables, style).replace(/^(\[?)b-/, "$1bl-");
 }
 
@@ -197,6 +197,8 @@ function adjectives(details: readonly MeaningDetail[] | undefined, tables: Class
     if (detail.values.built) return plainWord(detail, "g", detail.values.root, tables);
     // A count or rank sits with the adjectives (numbers.md#counts).
     if (detail.key === "lexReading:number") return numberDetailLeaf(detail);
+    // A time noun's signed count, which dates a channel (dated-channel.md#counting-from-now).
+    if (detail.key === "slot:hosted" && detail.kind === "amount") return measureLeaf(detail);
     if (detail.key !== "slot:adj") throw noRule(`term detail ${detail.key}`);
     return plainWord(detail, "g", detail.values.root, tables);
   });

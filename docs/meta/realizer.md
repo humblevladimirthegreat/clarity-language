@@ -63,6 +63,8 @@ Where the grammar allows several forms with the same meaning, the realizer write
 | A number, a fraction among them, in its preferred writing: spelled out with one digit or none (`gragel`, `gragem`), in shorthand with two or more (`g+12`, `g~+12`) | `lexReading:number` | `number-markers.md#writing-style-numeric-vs-spelled` |
 | A polar word after the act words and before the body, the body in the order of the first act word, or of a statement when there is none | `edge:polar` | `questions.md#polar-particle` |
 | A fill-ask's blank first in the body, with the word it completes (`el bar`, `abam zar`), and the rest in statement order | `edge:force` | `questions.md#fill-ask` |
+| MAY or a channel right after the roles, before the verb; first in the body when it covers a noun that brings in a new member, so the earlier word covers the later | `overlay:may:th`, `overlay:evidential:th` | `clause.md#stance-th`, `clause.md#which-covers-which` |
+| A channel's source or offset as its `bl-` word right after it; an unmeasured offset as `blral` or `blrul`, a measured one as a time noun and its signed count (`blazurom grubal`) | `overlay:evidential:th` | `evidentiality.md#source`, `evidentiality.md#forecast`, `dated-channel.md#counting-from-now` |
 
 ## Round trip
 <a id="round-trip"></a>

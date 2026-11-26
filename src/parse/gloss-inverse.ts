@@ -85,6 +85,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
   indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
   indexSameRoleForms(index, tables);
+  indexOverlayForms(index, tables);
   indexLineForms(index, extraLines, tables);
   return index;
 }
@@ -96,12 +97,27 @@ export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
   indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
   indexSameRoleForms(index, tables);
+  indexOverlayForms(index, tables);
   return index;
 }
 
 /** The same-role words (same-role-words.md): a listed citation glosses as its relation only inside a clause. */
 function indexSameRoleForms(index: GlossIndex, tables: ClassifyTables): void {
   for (const row of tables.overlays.values()) if (row.pos === SAME_ROLE_POS) add(index.forms, sameRoleLabel(row), row.senseForm);
+}
+
+/**
+ * Every closed overlay sense form under its role letter (lexicon-overlays.csv): the root forms cover only **-l/-m/-n**,
+ * so an overlay on **-r** (`thubor` PATTERN.weak, `thomar` MAY-who-knows) is indexed from its row.
+ */
+function indexOverlayForms(index: GlossIndex, tables: ClassifyTables): void {
+  for (const row of tables.overlays.values()) {
+    const surface = `${row.pos}${row.senseForm}`;
+    for (const ctx of CONTEXTS) {
+      const gloss = glossOne(surface, tables, ctx);
+      if (gloss) add(index.forms, gloss, surface);
+    }
+  }
 }
 
 function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
@@ -396,6 +412,24 @@ function scaleCandidates(core: string): string[] {
  * A mid-word `x` compound (compounds.md): its parts' senses joined at `-x-` (`z-peanut-x-butter` → `zuwedaxubudal`).
  * Every root each sense names, on each ending; the re-gloss check keeps the one whose ending gives these senses.
  */
+/** A digitless exponent's spoken syllable (number-markers.md): `e` → `wa`, `e-` → `wu`. */
+const EXPONENT_SYLLABLE: Record<string, string> = { e: "wa", "e-": "wu" };
+
+/**
+ * A number with no digits, as the glosser labels it (morph-gloss-labels.ts `numberLabel`): an unmeasured offset on
+ * `/b/` or a hosted `bl-` (evidentiality.md#forecast: `bl-later` → `blral`, `bl-earlier` → `blrul`), or a sign
+ * and a digitless exponent (`bl-+-e-` → `blrawul`); `.about` is **-m**. The spelled writing, the preferred one with no
+ * digit (number-markers.md#writing-style-numeric-vs-spelled).
+ */
+function digitlessCandidates(core: string): string[] {
+  const offset = core.match(/^(bl?)-(later|earlier)(\.about)?$/);
+  if (offset) return [`${offset[1]}r${offset[2] === "later" ? "a" : "u"}${offset[3] ? "m" : "l"}`];
+  const exp = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?([+\-#])-(e-?)(\.about)?$/);
+  if (!exp) return [];
+  const pos = (exp[1] ?? "").replace(/-$/, "");
+  return [`${pos}r${MARKER_VOWEL[exp[2]!]}${EXPONENT_SYLLABLE[exp[3]!]}${exp[4] ? "m" : "l"}`];
+}
+
 function compoundCandidates(core: string, index: GlossIndex): string[] {
   const leaf = core.match(/^((?:th|[zdbvgwhxy])-)?([a-z][a-z.-]*-x-[a-z.-]*[a-z])$/);
   if (!leaf) return [];
@@ -506,6 +540,7 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
 
   for (const form of numberCandidates(core)) out.add(form + suffix);
   for (const form of scaleCandidates(core)) out.add(form + suffix);
+  for (const form of digitlessCandidates(core)) out.add(form + suffix);
   for (const form of fractionCandidates(core)) out.add(form + suffix);
   for (const form of compoundCandidates(core, index)) out.add(form + suffix);
   for (const form of builtCandidates(core, index)) out.add(form + suffix);
