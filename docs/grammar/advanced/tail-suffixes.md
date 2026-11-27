@@ -8,7 +8,7 @@ Page shape read by code:
 Inbound links: npm run page-refs -- root-tails.md
 -->
 
-# Root tails {#root-tails-sitting}
+# Tail suffixes {#tail-suffixes-sitting}
 
 A root's last two letters hint at what kind of thing it names and what that thing does, and its middle vowel usually hints at its size. A few dictionary words end in two such letters instead of a second root, as the word for *friend* does.
 

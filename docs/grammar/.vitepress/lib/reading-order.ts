@@ -293,7 +293,7 @@ export const advancedUnits: Unit[] = [
     items: [
       { text: 'Voicing Ageben', link: '/singability' },
       { text: 'Cite plus a hook', link: '/hook-compounds' },
-      { text: 'Root tails', link: '/root-tails' },
+      { text: 'Tail suffixes', link: '/tail-suffixes' },
     ],
   },
   {

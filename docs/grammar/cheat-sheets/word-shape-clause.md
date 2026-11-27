@@ -89,8 +89,8 @@ A dictionary compound joins its two roots with the left root's ending (`-l` ever
 | [`zoheleboral`](/compounds#dictionary-compounds) | *doorbell* | B |
 | [`zuzahalanal`](/compounds#dictionary-compounds) | *textbook* | B |
 | [`zerulalogobal`](/compounds#dictionary-compounds) | *raincoat* | B |
-| [`zahuyayel`](/root-tails#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
-| [`zebahehal`](/root-tails#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
+| [`zahuyayel`](/tail-suffixes#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
+| [`zebahehal`](/tail-suffixes#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
 With more pieces, keep the English order in one word, with the kind as the last root (`zogudaxedudaxowulan` *Coffee-Tea-Water*, one named shop).
 
