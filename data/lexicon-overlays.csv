@@ -92,7 +92,7 @@ ohem,g,🚪,clause_hinge,if,IF clause hinge (one-way conditional),door opens one
 ehom,th,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-if
 ehom,g,↔️,clause_hinge,iff,IFF clause hinge (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,because-and-iff.md#choosing-a-hinge
 ahum,th,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#hinges
-ahul,th,🧱,clause_hinge,because.fault,BECAUSE clause hinge with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
+ahul,th,🧱,clause_hinge,because.fault,BECAUSE clause hinge with fault (the reason broke a norm the actor could have kept),a wall stands on its foundation; -l locks the blame on a broken norm,fault.md#fault
 ahur,th,🧱,clause_hinge,because.share,BECAUSE clause hinge with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,fault.md#fault
 ahum,g,🧱,clause_hinge,because,BECAUSE clause hinge (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,because-and-iff.md#choosing-a-hinge
 ebem,th,🧻,clause_hinge,only-if,ONLY-IF clause hinge (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if

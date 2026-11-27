@@ -14,12 +14,12 @@ Inbound links: npm run page-refs -- fault.md
 
 ### Fault {#fault}
 
-English *because* names what made an outcome happen without saying anyone did wrong, and *it was their fault* adds the blame. Ageben changes the ending on the *because* hinge: `-m` for the plain cause, `-l` when the reason broke a rule (someone did wrong), and `-r` when it was one cause among others. You can then say whether a cause carries blame, or only played a part, without a separate word.
+English *because* names what made an outcome happen without saying anyone did wrong, and *it was their fault* adds the blame. Ageben changes the ending on the *because* hinge: `-m` for the plain cause, `-l` when the reason broke a rule that whoever acted could have kept (someone did wrong), and `-r` when it was one cause among others. You can then say whether a cause carries blame, or only played a part, without a separate word.
 
 <!-- cheat-sheet: why-allowed -->
 | Ageben | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thahul`** | the reason broke a norm | *it's their fault* / *to blame* | `-l` ≈ locked on a broken rule |
+| **`thahul`** | the reason broke a norm, and whoever acted could have done otherwise | *it's their fault* / *to blame* | `-l` ≈ locked on a broken rule |
 | **`thahum`** | the reason made it happen; no fault claimed | *because* | `-m` ≈ the ordinary case |
 | **`thahur`** | the reason is one share among others | *partly because* / *played a part* | `-r` ≈ one wall of several holding it up |
 
@@ -42,6 +42,8 @@ English *because* names what made an outcome happen without saying anyone did wr
 > "The rain is part of why Azozon left."
 
 The rule from [*because*](dependents.md#hinges) matters most here: the act goes in the `bl-` word, not the person (`thahul blarl zalazun vezuyol` *Alazun's speaking is to blame*, never `thahul blalazun`). So fault lands on what someone did, which leaves room for *Alazun did a wrong thing* without *Alazun is bad*. A thing or circumstance (`blerulal`) is fine there, because there is no person to blame.
+
+Fault needs two things: the act broke a rule, and whoever did it could have done otherwise. If they could not (they slipped, or nobody had told them the rule), the act is a plain cause, `-m`, or one share among others, `-r`. After something goes badly, people tend to believe it could have been avoided, so choosing `-l` is the point to ask whether it could. This holds for your own acts too.
 
 Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the hinge (`thomam thahul blarl …`).
 
@@ -126,7 +128,7 @@ z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
 
 z-Azozon | v-sit | [th-because | bl-that-clause] | z-Alazun | v-pour
 
-**-m** is the plain cause; **-l** would say the pouring broke a rule.
+**-m** is the plain cause; **-l** would say the pouring broke a rule Alazun could have kept.
 :::
 
 #### Fix it {#beginner-fix-it}

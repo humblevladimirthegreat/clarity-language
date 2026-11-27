@@ -422,7 +422,7 @@ z-Azozon | h-still | v-walk
 
 z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 
-**-l** says the speaking broke a rule; **-m** is a plain cause, with no fault claimed.
+**-l** says the speaking broke a rule Alazun could have kept; **-m** is a plain cause, with no fault claimed.
 
 **Rule:** [Fault](fault.md#fault)
 :::

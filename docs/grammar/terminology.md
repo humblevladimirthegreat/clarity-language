@@ -460,7 +460,7 @@ Whether *if* vs *because* treats the dependent as asserted.
 
 ### Fault
 
-Endings on *because*: `-l` the reason broke a rule, `-m` plain cause, `-r` one share among others. The act sits in `/b/`, not the person.
+Endings on *because*: `-l` the reason broke a rule the actor could have kept, `-m` plain cause, `-r` one share among others. The act sits in `/b/`, not the person.
 
 [Fault](/fault#fault)
 
