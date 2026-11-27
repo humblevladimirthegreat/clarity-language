@@ -1022,7 +1022,7 @@ Role letter + `w` + a tag vowel (A, E, O, U) + ending: a label the speaker assig
 
 A dictionary word whose head is a bare root tail instead of a second root (`zahuyayel` *a friend*: *hug* + a person tail).
 
-[Root tails](/root-tails#tail-suffixes)
+[Tail suffixes](/tail-suffixes#tail-suffixes)
 
 ### Thanks and sorry
 
