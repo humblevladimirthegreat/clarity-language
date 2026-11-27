@@ -21,9 +21,11 @@ Use a number word when English would say *how many* of something (*three cats*) 
 To say how many of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word has one syllable per digit, so any count, however long, is a single word that describes the noun like any other adjective. Build it in this order:
 
 1. the role letter `g`;
-2. the **count marker** **`ra`**, whose `r` is the same `r` that starts a root's [tail](/root-tails#root-tails) when the root names counting, time or money;
+2. the **count marker** **`ra`**;
 3. one syllable for each digit;
 4. the ending `-l`.
+
+The `r` of `ra` is the same `r` that starts a root's [tail](/root-tails#root-tails) when the root names counting, time or money.
 
 Digits are spoken and written as these syllables:
 

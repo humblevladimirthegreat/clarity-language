@@ -43,7 +43,7 @@ English *because* names what made an outcome happen without saying anyone did wr
 
 The rule from [*because*](dependents.md#hinges) matters most here: the act goes in the `bl-` word, not the person (`thahul blarl zalazun vezuyol` *Alazun's speaking is to blame*, never `thahul blalazun`). So fault lands on what someone did, which leaves room for *Alazun did a wrong thing* without *Alazun is bad*. A thing or circumstance (`blerulal`) is fine there, because there is no person to blame.
 
-Fault needs two things: the act broke a rule, and whoever did it could have done otherwise. If they could not (they slipped, or nobody had told them the rule), the act is a plain cause, `-m`, or one share among others, `-r`. After something goes badly, people tend to believe it could have been avoided, so choosing `-l` is the point to ask whether it could. This holds for your own acts too.
+Fault needs two things: the act broke a rule, and whoever did it could have done otherwise. If they could not (they slipped, or nobody had told them the rule), the act is a plain cause, `-m`, or one share among others, `-r`. After something goes badly, people tend to believe it could have been avoided, so before you choose `-l`, ask whether it really could. Ask the same about your own acts.
 
 Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the hinge (`thomam thahul blarl …`).
 

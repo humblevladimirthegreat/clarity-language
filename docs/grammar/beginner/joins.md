@@ -90,7 +90,7 @@ This rule tells you where a list starts as you listen. A second noun in the same
 ### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
 
-When English offers a menu and asks you to *pick one*, or leaves the pick *(optional)*, use vowel `e`. Closed `-l` (`zel`) means the listener picks exactly one of the listed items. Open `-m` (`zem`) means the pick is optional. (cue: `e` ≈ choice.) It is the same `e` that ends a root's [tail](/root-tails#root-tails) when the thing is one whole: the choice keeps one piece.
+When English offers a menu and asks you to *pick one*, or leaves the pick *(optional)*, use vowel `e`. Closed `-l` (`zel`) means the listener picks exactly one of the listed items. Open `-m` (`zem`) means the pick is optional. (cue: `e` ≈ choice.)
 
 > `zedudal zogudal zel.`
 >
@@ -103,6 +103,8 @@ When English offers a menu and asks you to *pick one*, or leaves the pick *(opti
 > [z-coffee | z-or.open]
 >
 > "coffee." (optional)
+
+This `e` is the same `e` that ends a root's [tail](/root-tails#root-tails) when the thing is one whole thing: the choice keeps one item.
 
 ### How many items {#standalone-phrase}
 <a id="single-item-phrase"></a>
@@ -153,7 +155,7 @@ Right after a word that takes a [`bl-` partner](clause.md#extra-nouns), a standa
 
 ### Negation (`u`) {#negation-u}
 
-When English denies the listed items, use vowel `u`. One item before `zul` is *not X*, two are *neither A nor B*, and more are *none of these*; the join alone (`zul` / `zum`) is *no*. Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing. (cue: `u` ≈ undo.) It is the same `u` that ends a root's [tail](/root-tails#root-tails) when the thing takes away or works against.
+When English denies the listed items, use vowel `u`. One item before `zul` is *not X*, two are *neither A nor B*, and more are *none of these*; the join alone (`zul` / `zum`) is *no*. Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing. (cue: `u` ≈ undo.)
 
 > `gamahum gul.`
 >
@@ -172,6 +174,8 @@ When English denies the listed items, use vowel `u`. One item before `zul` is *n
 > [z-tea | z-coffee | z-not]
 >
 > "neither tea nor coffee."
+
+This `u` is the same `u` that ends a root's [tail](/root-tails#root-tails) when the thing takes away or works against something.
 
 With two `u` lists in one clause, you deny every pairing: no item from one list goes with any item from the other.
 
@@ -254,13 +258,15 @@ In a command, a noun you mention for the first time, such as *a door*, asks the 
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
 
-When English ranks items (a priority, a favorite, *A before B*), write them in that order, then a join with vowel `o`; the earlier item outranks the later. The *and*, *or*, and *not* joins above are set joins: the items share a role as a group, and writing one before the other does not rank them. With one item, `zol` means *only X matters* and `zom` means *X first* or *mainly X*. (cue: `o` ≈ rank.) It is the same `o` that ends a root's [tail](/root-tails#root-tails) when the thing follows an order or a path.
+When English ranks items (a priority, a favorite, *A before B*), write them in that order, then a join with vowel `o`; the earlier item outranks the later. The *and*, *or*, and *not* joins above are set joins: the items share a role as a group, and writing one before the other does not rank them. With one item, `zol` means *only X matters* and `zom` means *X first* or *mainly X*. (cue: `o` ≈ rank.)
 
 > `zazozon zol.`
 >
 > [z-Azozon | z-rank/more]
 >
 > "only Azozon matters."
+
+This `o` is the same `o` that ends a root's [tail](/root-tails#root-tails) when the thing follows an order or a path.
 
 ### Unspecified member (`-r`) {#unspecified-member-r-phrase}
 

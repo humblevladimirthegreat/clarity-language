@@ -10,11 +10,9 @@ Inbound links: npm run page-refs -- root-tails.md
 
 # Root tails {#root-tails-sitting}
 
-A root's last two letters hint at what kind of thing it names and what that thing does, and its middle vowel usually hints at its size. Use these hints to remember the words you learn.
-
 ### Root tails {#root-tails}
 
-A root ends in a **tail**, its last two letters, that hints at what it names. The last consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. On a five-letter root the first three letters keep it apart from others of the same kind; on a three-letter root the first vowel does.
+A root's spelling helps you remember it and guess at words you have not met. A root ends in a **tail**, its last two letters: the consonant says what **kind** of thing the root's everyday concrete sense is, and the vowel says what that thing does to other things, its **job**. So if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names.
 
 In the citation for *cat*, the root is `ogoze` and the ending is `-l`:
 
@@ -22,11 +20,11 @@ In the citation for *cat*, the root is `ogoze` and the ending is `-l`:
 >
 > "cat"
 
-The tail belongs to the root, so it comes just before the word ending: here it is `ze`. The `z` says the thing is a creature, and the `e` says it is one whole thing.
+The tail belongs to the root, so it comes just before the word ending: here it is `ze`. The `z` says the thing is a creature, and the `e` says it is one whole thing. On a five-letter root such as `ogoze`, the first three letters keep it apart from other roots of the same kind; on a three-letter root, the first vowel does.
 
-The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound.
+The tail is only a memory aid: no rule of grammar depends on it, and you never build a root from its tail. A country or territory name has no tail: it is spelled from the English sound.
 
-Each consonant **echoes** a job the same letter already has in a sentence or a word ending: the letter points at that job as a memory aid, and grammar does not read it.
+Each tail consonant except `r` also **echoes** a use the same letter already has in a sentence or as a word ending. The echo is a second memory aid, and no rule depends on it either.
 
 <!-- cheat-sheet: consonants -->
 | Second consonant | Kind | Example | Echo |
@@ -44,7 +42,7 @@ Each consonant **echoes** a job the same letter already has in a sentence or a w
 | `r` | counting, time, money and rhythm | `ugoro` *clock* | — |
 | `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `ezuna` *soccer* | [`-n`](/word-endings#named-n-beginner) is the name ending |
 
-The last vowel is the job: what the thing does to other things.
+The tail vowel gives the job:
 
 <!-- cheat-sheet: vowels -->
 | Last vowel | Job | Examples |
@@ -54,7 +52,7 @@ The last vowel is the job: what the thing does to other things.
 | `e` | one whole thing: round or compact, like a ball | `ogoze` *cat*, `alede` *apple* |
 | `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* |
 
-When more than one job fits, try `u` first, then `a`, then `o`. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `o`, round or compact `e`, sharp `u`. A banana ends in `o` and an apple in `e`. For a feeling, it's which way the feeling points (toward others `a`, along a standing `o`, inward `e`); for an action, how it unfolds (with others `a`, along a course `o`, once on the spot `e`).
+When more than one job fits, the vowel is `u` if that fits, then `a`, then `o`. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `o`, round or compact `e`, sharp `u`. A banana ends in `o` and an apple in `e`. For a feeling, it's which way the feeling points (toward others `a`, along a standing `o`, inward `e`); for an action, how it unfolds (with others `a`, along a course `o`, once on the spot `e`).
 
 In every kind but feelings, the **middle vowel** usually says how big the thing is:
 

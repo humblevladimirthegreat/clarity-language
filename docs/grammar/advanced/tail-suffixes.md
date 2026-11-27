@@ -8,11 +8,11 @@ Inbound links: npm run page-refs -- tail-suffixes.md
 
 # Tail suffixes {#tail-suffixes-sitting}
 
-A root's [tail](/root-tails#root-tails), its last two letters, hints at what kind of thing the root names and what that thing does. A few dictionary words end in a bare tail instead of a second root, as the word for *friend* does.
+A root's [tail](/root-tails#root-tails), its last two letters, hints at what kind of thing the root names and what that thing does. A few dictionary words end in a bare tail instead of a second root, and you look them up like any other dictionary word.
 
 ### Tail suffixes {#tail-suffixes}
 
-A few dictionary words end in a bare tail instead of a second root. *Friend* is *hug* plus `ye`: `y` for a person, `e` for one thing marked by the left piece, so *a person known by hugs*. The two letters already say what kind of thing the word names, so it needs no second root such as *person*.
+*Friend* is *hug* plus `ye`: `y` for a person, `e` for one thing marked by the left piece, so *a person known by hugs*. The two letters already say what kind of thing the word names, so it needs no second root such as *person*.
 
 > `zahuyayel.`
 >
