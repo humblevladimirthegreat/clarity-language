@@ -51,9 +51,10 @@ CSS = """
 .label { display: inline-block; min-width: 6.5em; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
 .also { font-size: 17px; opacity: 0.85; }
 .parts { margin-top: 0.8em; font-size: 17px; }
-.letter { text-align: left; font-size: 16px; margin: 0.15em auto; max-width: 28em; }
-.letter > code:first-child { display: inline-block; min-width: 2.6em; font-weight: 600; }
-.cue { margin-top: 0.8em; font-size: 16px; }
+.letter, .cue { display: flex; align-items: baseline; text-align: left; font-size: 16px; margin: 0.15em auto; max-width: 28em; }
+.letter > code:first-child { flex: 0 0 auto; min-width: 3.4em; margin-right: 0.6em; font-weight: 600; }
+.cue { margin-top: 0.8em; }
+.cue > .label { flex: 0 0 auto; min-width: 0; margin-right: 0.6em; width: 3.4em; }
 .mnemonic { margin-top: 0.8em; font-size: 14px; font-style: italic; opacity: 0.6; }
 """
 
@@ -115,7 +116,7 @@ OVERLAY_BACK = """
 {{#slot_of}}<div class="line"><span class="label">new slot of</span>{{slot_of}}</div>{{/slot_of}}
 </div>
 {{#host}}<div class="parts">{{host}}</div>{{/host}}
-{{#mnemonic}}<div class="cue"><span class="label">cue</span>{{mnemonic}}</div>{{/mnemonic}}
+{{#mnemonic}}<div class="cue"><span class="label">cue</span><span>{{mnemonic}}</span></div>{{/mnemonic}}
 {{#gloss}}<div class="gloss">{{gloss}}</div>{{/gloss}}
 {{#link}}<div class="link"><a href="{{link}}">grammar section</a></div>{{/link}}
 """

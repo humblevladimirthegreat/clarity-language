@@ -94,16 +94,16 @@ describe("buildNotes", () => {
     const una = inputs.published.find((r) => r.root === "una")!;
     const host = notes.overlays.find((n) => n.key === "unam")!.fields.host;
     // The example's sake word carries its stance: th + una + tha + ending, and the ending follows the stance's table.
-    for (const piece of ["<code>th</code> role: stance", "<code>n</code> kind: titles", "<code>a</code> job: holds or gathers", `<code>una</code> host: <i>${una.concrete}</i>`, "<code>tha</code> sake stance: met / serves"]) {
+    for (const piece of ["<code>th</code><span>role: stance", "<code>n</code><span>kind: titles", "<code>a</code><span>job: holds or gathers", `<code>una</code><span>host: <i>${una.concrete}</i>`, "<code>tha</code><span>sake stance: met / serves"]) {
       assert.ok(host.includes(piece), `${piece} in ${host}`);
     }
     assert.ok(!host.includes("<code>u</code>"), "a root's first vowel is never explained");
     assert.ok(!host.includes("ending"), host);
     const oma = inputs.published.find((r) => r.root === "oma")!;
     const may = notes.overlays.find((n) => n.key === "omam")!.fields.host;
-    assert.ok(may.includes(`<code>m</code> abstract ending: <i>${oma.abstract}</i>`), may);
+    assert.ok(may.includes(`<code>m</code><span>abstract ending: <i>${oma.abstract}</i>`), may);
     const join = notes.overlays.find((n) => n.key === "an")!.fields.host;
-    assert.ok(join.includes("<code>a</code> join: <i>and</i> (grows)"), join);
+    assert.ok(join.includes("<code>a</code><span>join: <i>and</i> (grows)"), join);
   });
 
   it("adds a slot note only at a later checkpoint that puts a known form in a new slot", () => {
@@ -223,8 +223,8 @@ describe("buildNotes", () => {
     assert.equal(glasses.onset, "g");
     assert.equal(
       parts("agebe"),
-      '<div class="letter"><code>g</code> echoes the first sound of <i>glasses</i></div><div class="letter"><code>e</code> size: no bigger than your hand</div>' +
-        '<div class="letter"><code>b</code> kind: the body and what goes on it</div><div class="letter"><code>e</code> job: one whole thing</div>',
+      '<div class="letter"><code>g</code><span>echoes the first sound of <i>glasses</i></span></div><div class="letter"><code>e</code><span>size: no bigger than your hand</span></div>' +
+        '<div class="letter"><code>b</code><span>kind: the body and what goes on it</span></div><div class="letter"><code>e</code><span>job: one whole thing</span></div>',
     );
     const missed = inputs.published.find((r) => r.root.length === 5 && r.onset && r.root[1] !== r.onset)!;
     assert.ok(!parts(missed.root).includes("first sound"), missed.root);
@@ -237,10 +237,10 @@ describe("buildNotes", () => {
 
   it("explains every closed word's pieces from its parse", () => {
     const parts = (form: string) => notes.closed.find((n) => n.key === form)!.fields.parts;
-    assert.ok(parts("yaol").includes("<code>a</code> family: add") && parts("yaol").includes("<code>o</code> answering: the claim or the order") && parts("yaol").includes("<code>l</code> firm"), parts("yaol"));
-    assert.ok(parts("yom").includes("<code>o</code> act: command") && parts("yom").includes("<code>m</code> soft"), parts("yom"));
-    assert.ok(parts("uwen").includes("<code>uwe</code> root:") && parts("uwen").includes("<code>n</code> these pronouns end in"), parts("uwen"));
-    assert.ok(parts("xezel").includes("<code>x</code> role: continue") && parts("xezel").includes("<code>l</code> firm: the link holds"), parts("xezel"));
+    assert.ok(parts("yaol").includes("<code>a</code><span>family: add") && parts("yaol").includes("<code>o</code><span>answering: the claim or the order") && parts("yaol").includes("<code>l</code><span>firm"), parts("yaol"));
+    assert.ok(parts("yom").includes("<code>o</code><span>act: command") && parts("yom").includes("<code>m</code><span>soft"), parts("yom"));
+    assert.ok(parts("uwen").includes("<code>uwe</code><span>root:") && parts("uwen").includes("<code>n</code><span>these pronouns end in"), parts("uwen"));
+    assert.ok(parts("xezel").includes("<code>x</code><span>role: continue") && parts("xezel").includes("<code>l</code><span>firm: the link holds"), parts("xezel"));
     for (const n of notes.closed) {
       const pieces = [...n.fields.parts.matchAll(/<div class="letter"><code>([^<]+)<\/code>/g)].map((m) => m[1]!);
       assert.ok(pieces.some((p) => n.key.endsWith(p)), `${n.key}: its ending is explained (${pieces.join(" ")})`);
@@ -251,10 +251,10 @@ describe("buildNotes", () => {
     const row = inputs.compounds.find((r) => inputs.published.some((p) => p.root === r.left) && inputs.published.some((p) => p.root === r.right))!;
     const gloss = (root: string) => inputs.published.find((p) => p.root === root)!.concrete;
     const note = notes.compounds.find((n) => n.key === row.stem)!;
-    assert.ok(note.fields.parts.includes(`<code>${row.left}</code> left piece: <i>${gloss(row.left)}</i>`), note.fields.parts);
-    assert.ok(note.fields.parts.includes(`<code>${row.right}</code> kind of thing: <i>${gloss(row.right)}</i>`), note.fields.parts);
+    assert.ok(note.fields.parts.includes(`<code>${row.left}</code><span>left piece: <i>${gloss(row.left)}</i>`), note.fields.parts);
+    assert.ok(note.fields.parts.includes(`<code>${row.right}</code><span>kind of thing: <i>${gloss(row.right)}</i>`), note.fields.parts);
     const suffixed = notes.compounds.find((n) => n.key === inputs.compounds.find((r) => !r.join && r.right === "ha")!.stem)!;
-    assert.ok(suffixed.fields.parts.includes("<code>h</code> kind: places and fixtures") && suffixed.fields.parts.includes("<code>a</code> job: holds or gathers"), suffixed.fields.parts);
+    assert.ok(suffixed.fields.parts.includes("<code>h</code><span>kind: places and fixtures") && suffixed.fields.parts.includes("<code>a</code><span>job: holds or gathers"), suffixed.fields.parts);
   });
 
   it("gives no two production fronts the same glosses", () => {

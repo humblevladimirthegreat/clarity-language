@@ -228,12 +228,12 @@ export function escapeHtml(text: string): string {
   return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-/** Letter lines as HTML: one `.letter` line each, the letters in `<code>`, `*…*` as italics and `` `…` `` as code. */
+/** Letter lines as HTML: one `.letter` line each, the letters in `<code>` beside the text in a `<span>` (two columns, so a long line wraps under its text), `*…*` as italics and `` `…` `` as code. */
 export function lettersHtml(lines: readonly LetterLine[]): string {
   return lines
     .map(({ letters, text }) => {
       const body = escapeHtml(text).replace(/\*([^*]+)\*/g, "<i>$1</i>").replace(/`([^`]+)`/g, "<code>$1</code>");
-      return `<div class="letter"><code>${escapeHtml(letters)}</code> ${body}</div>`;
+      return `<div class="letter"><code>${escapeHtml(letters)}</code><span>${body}</span></div>`;
     })
     .join("");
 }
