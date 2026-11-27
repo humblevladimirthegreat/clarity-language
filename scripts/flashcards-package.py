@@ -36,6 +36,7 @@ ENGLISH = """
 """
 
 STEM = '<div class="stem">{{front}}</div>'
+# `parts` is HTML: a compound's parts, or a root's or closed word's letters (one `.letter` line each).
 EXTRAS = """
 {{#parts}}<div class="parts">{{parts}}</div>{{/parts}}
 {{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}
@@ -50,6 +51,9 @@ CSS = """
 .label { display: inline-block; min-width: 6.5em; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
 .also { font-size: 17px; opacity: 0.85; }
 .parts { margin-top: 0.8em; font-size: 17px; }
+.letter { text-align: left; font-size: 16px; margin: 0.15em auto; max-width: 28em; }
+.letter > code:first-child { display: inline-block; min-width: 2.6em; font-weight: 600; }
+.cue { margin-top: 0.8em; font-size: 16px; }
 .mnemonic { margin-top: 0.8em; font-size: 14px; font-style: italic; opacity: 0.6; }
 """
 
@@ -99,20 +103,21 @@ CLARITISH_MODEL = genanki.Model(
 
 # Ageben overlay: `example` holds the example sentence as HTML with the overlay word wrapped in
 # <span class="overlay">; recognition highlights it, production blanks it. The back: definition,
-# per-slot readings (empty when one reading), host's concrete sense (empty for bare-vowel forms),
-# the word note a slot note extends, the example's morph gloss, the anchor link, then the mnemonic.
+# per-slot readings (empty when one reading), the word note a slot note extends; then `host`, HTML: where
+# each letter of the overlay word comes from, ending with its host's concrete sense (flashcards.md#letters);
+# then the mnemonic as the cue from the host to the meaning, the example's morph gloss and the anchor link.
 OVERLAY_FIELDS = ["example", "form", "definition", "readings", "host", "slot_of", "gloss", "link", "mnemonic", "kind"]
 
 OVERLAY_BACK = """
 <div class="english">
 <div class="line"><span class="label">definition</span>{{definition}}</div>
 {{#readings}}<div class="line readings">{{readings}}</div>{{/readings}}
-{{#host}}<div class="line"><span class="label">host</span>{{host}}</div>{{/host}}
 {{#slot_of}}<div class="line"><span class="label">new slot of</span>{{slot_of}}</div>{{/slot_of}}
 </div>
+{{#host}}<div class="parts">{{host}}</div>{{/host}}
+{{#mnemonic}}<div class="cue"><span class="label">cue</span>{{mnemonic}}</div>{{/mnemonic}}
 {{#gloss}}<div class="gloss">{{gloss}}</div>{{/gloss}}
 {{#link}}<div class="link"><a href="{{link}}">grammar section</a></div>{{/link}}
-{{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}
 """
 
 EXAMPLE_CSS = """
@@ -177,9 +182,9 @@ SET_MODEL = genanki.Model(
 
 # Note type by name (the JSON's `model`), with the fields that already hold HTML (never escaped).
 MODELS = {
-    "Ageben lexicon": (LEXICON_MODEL, set()),
+    "Ageben lexicon": (LEXICON_MODEL, {"parts"}),
     "Claritish": (CLARITISH_MODEL, {"meaning"}),
-    "Ageben overlay": (OVERLAY_MODEL, {"example", "readings"}),
+    "Ageben overlay": (OVERLAY_MODEL, {"example", "readings", "host"}),
     "Ageben set": (SET_MODEL, {"text"}),
 }
 

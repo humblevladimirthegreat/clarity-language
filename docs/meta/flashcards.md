@@ -36,13 +36,13 @@ Editors only. How the Anki packs are generated, keyed, checked and published. Th
 | Claritish | 1738204518 | `front`, `meaning`, `lesson` | Recognition only, with a small muted lesson line under the meaning |
 
 - Model ids are fixed constants. Never change one: Anki would treat it as a new note type.
-- **Mnemonic,** on every Ageben type: on the back only, small and muted.
-- **Ageben lexicon:** roots, compounds and closed words. Roots and compounds show labeled concrete, abstract and *also* (`english_aliases`) lines; a compound shows its parts with each root's concrete gloss. A closed word (`kind` set) shows a *definition* line, its English as plain text, and a *gloss* line, the words starred in `english`. No two production fronts may match (`npm test`).
-- **Ageben overlay:** `example` and `readings` are HTML; the example wraps the overlay word in `<span class="overlay">`.
+- **Mnemonic,** on every Ageben type: on the back only, small and muted, except on an overlay card, where it is the labeled *cue* that leads from the host to the meaning.
+- **Ageben lexicon:** roots, compounds and closed words. Roots and compounds show labeled concrete, abstract and *also* (`english_aliases`) lines. A closed word (`kind` set) shows a *definition* line, its English as plain text, and a *gloss* line, the words starred in `english`. `parts` is HTML, the [letters](#letters) of a root, compound or closed word. No two production fronts may match (`npm test`).
+- **Ageben overlay:** `example`, `readings` and `host` are HTML; the example wraps the overlay word in `<span class="overlay">`, and `host` holds the highlighted word's [letters](#letters).
 
   | Card | Front | Back |
   |------|-------|------|
-  | Recognition | The example, overlay highlighted | Definition; per-slot readings when they differ; host's concrete sense; *new slot of* (slot notes); morph gloss of the example; link to the anchor section; mnemonic |
+  | Recognition | The example, overlay highlighted | Definition; per-slot readings when they differ; *new slot of* (slot notes); the word's letters, ending with its host's concrete sense; the mnemonic as a labeled *cue*; morph gloss of the example; link to the anchor section |
   | Production | Definition, and the example with the overlay blanked | The full example, then the recognition back |
 
 - **Ageben set:** `text` is cloze HTML, one `{{cN::<code>…</code>}}` per member with its English after it, so the other members show on each card. Scale, ending, name and set notes all use it.
@@ -63,8 +63,16 @@ Card text comes only from the `data/` CSVs and checked page examples; nothing ad
 - **Word note** (`overlayWordNotes`, [`src/flashcards-overlays.ts`](../../src/flashcards-overlays.ts)): one per sense form, at the checkpoint of its first row. Rows of the form at that checkpoint fold in; where their definitions differ, `readings` lists them per slot (`ezem`: WHEREAS on `h`, ALTHOUGH on `th` / `g`). A folded note takes its example, definition, mnemonic and link from the first row in CSV order that has an example.
 - **Slot note** (`overlaySlotNotes`): one per later checkpoint that puts a known form in a new slot, such as join relations, hinges, and moods on one adjective. Its back gives the new slot's reading and names the word note in `slot_of`. In an ending set only the `-m` form gets one, unless the `-l` / `-r` form's gloss in the new slot is new (`slotTaughtByMForm`).
 - **Example** (`overlayExamples`, [`src/flashcards-examples.ts`](../../src/flashcards-examples.ts)): the shortest code span in the anchor section whose parse uses the overlay in the row's slot; failing that, the shortest such span in the rest of the page before its checkpoint. A lone citation never counts. The morph gloss comes from the page glosser's strict `morphGlossLine`. A row with no example fails `npm test`, except the `-l` / `-r` forms an ending note covers.
-- **Host:** the root of the sense form (`senseFormRoot`), with its concrete sense when it is a published root. Bare-vowel forms show no host line.
+- **Host:** the `host` field is the [letters](#letters) of the highlighted word, the host root's line among them when it is a published root. Bare-vowel forms have no host line.
 - **Link:** `https://clarityconlang.com/grammar/<page>.html#<id>` of the row's anchor.
+
+## Letters {#letters}
+
+[`src/flashcards-letters.ts`](../../src/flashcards-letters.ts) says where each letter of a word comes from, one `.letter` line per letter or piece. It reads only data and grammar pages, never CMU. The wording of kinds, jobs and sizes comes from the tables on [root tails](../grammar/beginner/root-tails.md#root-tails), and the role letters from the [consonants cheat sheet](../grammar/cheat-sheets/consonants.md#role-letters). The act, polar, join, sake-stance and ability vowels are a table in the file, quoting the vowels cheat sheet and their owning sections. Change a page's wording and the file together.
+
+- **Root:** never the first vowel, which only keeps roots apart. On a five-letter root, the first consonant gets a line only when it equals the row's `onset` ([onset](procedures/lexicon.md#onset)), and the middle vowel only when it is the row's size vowel. A miss there is a root that gave the echo up in a full cell, so it gets no line, and a `mind` row has no size. Then the tail: kind and job. A place-name root gets one line, spelled from the English sound.
+- **Compound:** the left root, the join (`-l` everyday sense, `-m` abstract sense), and the right root or a tail suffix as kind and job. A compound with an extra-noun hook keeps the plain parts line.
+- **Closed word and overlay word:** split by `parseWord`. The role letter (`gl-` as one piece), the root's letters and concrete sense, or the stacked act, polar or join vowels, or a sake or ability stance after the host. Then the ending where a rule covers it: `-m` on a root is the abstract ending with the host's abstract sense, which is the step from the host to the overlay meaning; `-l` / `-r` on a kind taught on the settled-to-passing scale (the ending-note kinds, MAY, plan, notional); `-l` / `-m` / `-r` on `/y/` firm, soft, for now; a linker's `-l` firm; a special pronoun's `-n`. Any other ending gets no line (hinge `-l` / `-r`, likeness, identity, mention, the join `-n`, and a stance word's ending, which follows its stance's table). An overlay card explains the word its example highlights, so a sake card explains `thunatham`, not the citation `unam`.
 
 ## Endings and sets {#endings-and-sets}
 

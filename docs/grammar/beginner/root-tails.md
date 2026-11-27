@@ -4,6 +4,7 @@ band: beginner
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Page shape read by code:
+- tables: tables headed Second consonant, Last vowel and Middle vowel give each tail letter and size vowel, wording before a colon, for flashcard letter lines (src/flashcards-letters.ts)
 - cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
 Inbound links: npm run page-refs -- root-tails.md
 -->

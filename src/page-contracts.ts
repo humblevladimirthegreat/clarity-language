@@ -123,6 +123,21 @@ export const cheatSheetParadigms: PageContract = {
   requires: "each table is a paradigm block whose rows hold code-span forms, italic English and section links, for the English helper",
 };
 
+// ---------------------------------------------------------------- flashcard letters
+
+export const rootTailTables: PageContract = {
+  pages: { kind: "pages", pages: ["root-tails.md"] },
+  part: "tables",
+  requires: "tables headed Second consonant, Last vowel and Middle vowel give each tail letter and size vowel, wording before a colon, for flashcard letter lines",
+};
+
+export const roleLetterTable: PageContract = {
+  pages: { kind: "pages", pages: ["cheat-sheets/consonants.md"] },
+  part: "section",
+  id: "role-letters",
+  requires: "a table headed Letter gives each role letter in a code span and its job, wording before a colon, for flashcard letter lines",
+};
+
 // ---------------------------------------------------------------- every page
 
 export const pageTitle: PageContract = {

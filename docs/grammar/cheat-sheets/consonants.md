@@ -5,6 +5,7 @@ outline: false
 
 <!-- read-by (generated: npm run page-readers -- --write; do not edit)
 Page shape read by code:
+- #role-letters: a table headed Letter gives each role letter in a code span and its job, wording before a colon, for flashcard letter lines (src/flashcards-letters.ts)
 - tables: each table is a paradigm block whose rows hold code-span forms, italic English and section links, for the English helper (src/english-helper/load.ts)
 Inbound links: npm run page-refs -- cheat-sheets/consonants.md
 -->

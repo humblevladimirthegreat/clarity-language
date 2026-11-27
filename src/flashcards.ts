@@ -13,6 +13,7 @@ import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
 import { overlayExamples, type OverlayExample } from "./flashcards-examples.js";
 import { endingNotes } from "./flashcards-endings.js";
+import { compoundLetters, escapeHtml, letterTablesFor, lettersHtml, rootLetters, wordLetters } from "./flashcards-letters.js";
 import { soundNameNotes } from "./flashcards-names.js";
 import { overlaySlotNotes, overlayWordNotes } from "./flashcards-overlays.js";
 import { packUnits, type PackUnit } from "./flashcards-packs.js";
@@ -94,7 +95,7 @@ export type Pack = { id: LexiconPackId; decks: PackDeck[] };
 /** Note types `scripts/flashcards-package.py` builds, by name, with their field order. */
 export const LEXICON_MODEL = "Ageben lexicon" as const;
 export const OVERLAY_MODEL = "Ageben overlay" as const;
-/** `example` is HTML with the overlay word in `<span class="overlay">`; `readings` is HTML. */
+/** `example` is HTML with the overlay word in `<span class="overlay">`; `readings` and `host` (the letter breakdown, flashcards-letters.ts) are HTML. */
 export const OVERLAY_FIELDS = ["example", "form", "definition", "readings", "host", "slot_of", "gloss", "link", "mnemonic", "kind"] as const;
 /** Anki Cloze type; `text` is the cloze HTML, one `{{cN::…}}` per member. */
 export const SET_MODEL = "Ageben set" as const;
@@ -173,6 +174,8 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "units">,examples?: Rea
     return [checkpointTag(cell.split("#")[0]!, band)];
   };
   const concreteOf = new Map(inputs.published.map((r) => [r.root, r.concrete]));
+  const letters = letterTablesFor(inputs.pageText);
+  const byRoot = new Map(inputs.published.map((r) => [r.root, r]));
   const empty: NoteFields = { front: "", concrete: "", abstract: "", aliases: "", parts: "", mnemonic: "", kind: "" };
 
   const roots = inputs.published.map((r): LexiconNote => ({
@@ -180,7 +183,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "units">,examples?: Rea
     model: LEXICON_MODEL,
     key: r.root,
     guid: noteGuid("root", r.root, r.concrete),
-    fields: { ...empty, front: r.root, concrete: r.concrete, abstract: r.abstract, aliases: (r.englishAliases ?? []).join(", "), mnemonic: r.mnemonic },
+    fields: { ...empty, front: r.root, concrete: r.concrete, abstract: r.abstract, aliases: (r.englishAliases ?? []).join(", "), parts: lettersHtml(rootLetters(r, letters)), mnemonic: r.mnemonic },
     tags: ["ageben::root", ...coreTags("root", r.root, r.core)],
     core: r.core ?? "",
   }));
@@ -189,12 +192,17 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "units">,examples?: Rea
     const gloss = concreteOf.get(root);
     return gloss ? `${root} (${gloss})` : root;
   };
+  // A compound's pieces, or the plain parts line where a piece has no letter rule (an extra-noun hook).
+  const compoundParts = (r: CompoundRow) => {
+    const pieces = compoundLetters(r, byRoot, letters);
+    return pieces ? lettersHtml(pieces) : escapeHtml(r.join ? `${part(r.left)} + ${r.join} + ${part(r.right)}` : `${part(r.left)} + ${r.right}`);
+  };
   const compounds = inputs.compounds.map((r): LexiconNote => ({
     source: "compound",
     model: LEXICON_MODEL,
     key: r.stem,
     guid: noteGuid("compound", r.stem, r.concrete),
-    fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: r.join ? `${part(r.left)} + ${r.join} + ${part(r.right)}` : `${part(r.left)} + ${r.right}`, mnemonic: r.mnemonic },
+    fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: compoundParts(r), mnemonic: r.mnemonic },
     tags: ["ageben::compound", ...coreTags("compound", r.stem, r.core)],
     core: r.core ?? "",
   }));
@@ -221,7 +229,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "units">,examples?: Rea
 
 /**
  * A closed word's English as plain text: the `*…*` markup dropped (`*I* (the speaker)` → `I (the speaker)`).
- * Ageben lexicon fields are plain text, escaped by the packager and the TSV.
+ * Ageben lexicon fields are plain text, escaped by the packager and the TSV, except `parts`, which is HTML.
  */
 export function closedEnglish(english: string): string {
   return english.replace(/\*([^*]+)\*/g, "$1");
@@ -236,7 +244,9 @@ export function closedGloss(english: string): string {
  * One Ageben lexicon note per closed word, placed like an overlay: at the checkpoint its anchor maps to
  * ({@link anchorCheckpoint}), in checkpoint order, then CSV order. GUID: form + English.
  */
-export function closedWordNotes(inputs: Pick<FlashcardInputs, "closedWords" | "checkpoints" | "anchorSection">): LexiconNote[] {
+export function closedWordNotes(inputs: Pick<FlashcardInputs, "closedWords" | "checkpoints" | "anchorSection" | "published" | "pageText">): LexiconNote[] {
+  const tables = letterTablesFor(inputs.pageText);
+  const byRoot = new Map(inputs.published.map((r) => [r.root, r]));
   const checkpointIndex = new Map(inputs.checkpoints.map((c, i) => [c.anchor, i]));
   const placed = inputs.closedWords.map((row, order) => {
     const cp = anchorCheckpoint(row.anchor, inputs);
@@ -246,7 +256,7 @@ export function closedWordNotes(inputs: Pick<FlashcardInputs, "closedWords" | "c
       model: LEXICON_MODEL,
       key: row.form,
       guid: noteGuid("closed", row.form, row.english),
-      fields: { front: row.form, concrete: closedGloss(row.english), abstract: closedEnglish(row.english), aliases: "", parts: "", mnemonic: "", kind: row.kind },
+      fields: { front: row.form, concrete: closedGloss(row.english), abstract: closedEnglish(row.english), aliases: "", parts: lettersHtml(wordLetters(row.form, byRoot, tables)), mnemonic: "", kind: row.kind },
       tags: ["ageben::closed", `ageben::closed::${row.kind}`, `ageben::stage::${cp.band}`, cp.tag],
       core: "",
     };
