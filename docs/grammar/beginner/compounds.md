@@ -50,7 +50,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 ### Words you look up, not build
 <a id="dictionary-compounds"></a>
 
-English *bedroom*, *doorbell*, and *textbook* feel like one word, and Ageben lists those as one **dictionary word** too: you look the word up rather than making it on the spot by putting `x` between *door* and *bell*. Inside the spelling you can still see the two old roots, joined by the [word ending](word-endings.md) of the *left* root instead of `x`: `-l` when that piece is the everyday kind, `-m` when it is the abstract sense. The last letter is still the ending of the *whole* entry, so in a sentence you add a role letter and that ending, the same way you do for *dog* or *hammer*.
+English *bedroom*, *doorbell*, and *textbook* feel like one word, and Ageben lists those as one **dictionary word** too: you look the word up rather than making it on the spot by putting `x` between *door* and *bell*. Inside the spelling you can still see the two old roots, joined by the [word ending](word-endings.md) of the *left* root instead of `x`: `-l` when that piece is the everyday kind, `-m` when it is the abstract sense. The last letter is still the ending of the *whole* entry, so in a sentence you add a role letter and that ending, the same way you do for *dog* or *hammer*. The right root names what kind of thing the word is (a doorbell is a bell), so the word keeps that root's [tail](/root-tails#root-tails), the two letters that hint at its kind and job.
 
 > `zoheleboral.`
 >

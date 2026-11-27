@@ -56,6 +56,8 @@ When English joins items with *and*, write every item, then one join word with v
 >
 > "walks and runs." (and possibly more)
 
+This `a` is the same `a` that ends a root's [tail](/root-tails#root-tails) when the thing holds or gathers.
+
 Whatever the join, the whole list fills one role in the clause. A [role pointer](pronouns.md#role-pointers) back to that role picks up the whole group:
 
 > `zazozon zalazun zal vowurol. zwuzer vehohel.`
@@ -101,6 +103,8 @@ When English offers a menu and asks you to *pick one*, or leaves the pick *(opti
 > [z-coffee | z-or.open]
 >
 > "coffee." (optional)
+
+This `e` is the same `e` that ends a root's [tail](/root-tails#root-tails) when the thing is one whole thing: the choice keeps one item.
 
 ### How many items {#standalone-phrase}
 <a id="single-item-phrase"></a>
@@ -170,6 +174,8 @@ When English denies the listed items, use vowel `u`. One item before `zul` is *n
 > [z-tea | z-coffee | z-not]
 >
 > "neither tea nor coffee."
+
+This `u` is the same `u` that ends a root's [tail](/root-tails#root-tails) when the thing takes away or works against something.
 
 With two `u` lists in one clause, you deny every pairing: no item from one list goes with any item from the other.
 
@@ -259,6 +265,8 @@ When English ranks items (a priority, a favorite, *A before B*), write them in t
 > [z-Azozon | z-rank/more]
 >
 > "only Azozon matters."
+
+This `o` is the same `o` that ends a root's [tail](/root-tails#root-tails) when the thing follows an order or a path.
 
 ### Unspecified member (`-r`) {#unspecified-member-r-phrase}
 

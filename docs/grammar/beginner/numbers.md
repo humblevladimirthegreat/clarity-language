@@ -25,6 +25,8 @@ To say how many of a thing there are, put a number word after the noun, in the s
 3. one syllable for each digit;
 4. the ending `-l`.
 
+The `r` of `ra` is the same `r` that starts a root's [tail](/root-tails#root-tails) when the root names counting, time or money.
+
 Digits are spoken and written as these syllables:
 
 | Digit | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 |

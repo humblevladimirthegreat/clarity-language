@@ -64,6 +64,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *departure* | `vudurul` |
 | *dance* | `vudurol` |
 | *competence* | `uwal` |
+| *eraser* | `erewul` |
+| *magnify* | `umewel` |
 
 #### English → Ageben {#beginner-english-to-ageben}
 
@@ -422,7 +424,7 @@ z-Azozon | h-still | v-walk
 
 z-Azozon | v-departure | [th-because.fault | bl-that-clause] | z-Alazun | v-tell
 
-**-l** says the speaking broke a rule; **-m** is a plain cause, with no fault claimed.
+**-l** says the speaking broke a rule Alazun could have kept; **-m** is a plain cause, with no fault claimed.
 
 **Rule:** [Fault](fault.md#fault)
 :::
@@ -481,7 +483,19 @@ A clock time is a digit string under `/h/`; **`hragel`** is *three times*.
 
 #### What changes {#beginner-what-changes}
 
-**1.** `zuwen thagor vazuvol.` / `zuwen thagol vazuvol.`
+**1.** `erewul` / `umewel`
+
+::: details Show answer
+eraser
+
+magnify
+
+The first is *an eraser*, the second *a magnifier*. Both end in `w` plus a vowel, so both are tools. `wu` takes something away (an eraser rubs out marks); `we` is one compact tool.
+
+**Rule:** [Root tails](root-tails.md#root-tails)
+:::
+
+**2.** `zuwen thagor vazuvol.` / `zuwen thagol vazuvol.`
 
 ::: details Show answer
 z-speaker | th-plan-sketch | v-swim
@@ -493,7 +507,7 @@ With **`thagor`**, I only intend to swim: the direction, details open. With **`t
 **Rule:** [Plan](intention.md#plan)
 :::
 
-**2.** `zalazun thugem vuvuvul.` / `zalazun thevum vuvuvul.`
+**3.** `zalazun thugem vuvuvul.` / `zalazun thevum vuvuvul.`
 
 ::: details Show answer
 z-Alazun | th-LIVE | v-fight

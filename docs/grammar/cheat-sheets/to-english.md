@@ -208,7 +208,7 @@ The pronouns are shown without a role letter: add the one for their role (`zuwen
 | `thagol` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](/intention#plan) | B |
 | `thagom` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](/intention#plan) | B |
 | `thagor` | plan mood sketch map-resolution (direction only; details left open) | [Plan](/intention#plan) | B |
-| `thahul` | BECAUSE clause hinge with fault (the reason broke a norm) | [Fault](/fault#fault) | B |
+| `thahul` | BECAUSE clause hinge with fault (the reason broke a norm the actor could have kept) | [Fault](/fault#fault) | B |
 | `thahum` | BECAUSE clause hinge (explanatory reason) | [Because, although (hinges)](/dependents#hinges) | B |
 | `thahur` | BECAUSE clause hinge with a share (the reason contributed among others) | [Fault](/fault#fault) | B |
 | `thalol` | want mood lasting (a wish that keeps returning) | [Want](/want-and-decide#want) | I |

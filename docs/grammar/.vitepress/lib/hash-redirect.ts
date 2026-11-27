@@ -196,6 +196,7 @@ export const hashRedirects: HashRedirect[] = [
   { page: "stand-in-roles.md", hash: "stand-in-roles", to: "stand-in-roles.md", toHash: "speech-act-verbs" },
   { page: "spans.md", hash: "exact-paraphrase-proper", to: "spans.md", toHash: "exact-approximate-proper" },
   { page: "sakes.md", hash: "settled-to-passing", to: "knowing.md", toHash: "settled-to-passing" },
+  { page: "root-tails.md", hash: "tail-suffixes", to: "tail-suffixes.md", toHash: "tail-suffixes" },
 ]
 
 /** VitePress route path (`/joins.html`) → grammar page file (`joins.md`). */

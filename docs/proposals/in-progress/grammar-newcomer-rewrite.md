@@ -53,8 +53,9 @@ The run uses subagents. Each page reads its own owning sections, which other pag
 **B2** Rewrite unit: [word-endings.md](../../grammar/beginner/word-endings.md), [no-subject.md](../../grammar/beginner/no-subject.md).
 **B3** Rewrite unit: [speech-moves.md](../../grammar/beginner/speech-moves.md), [firm-soft.md](../../grammar/beginner/firm-soft.md).
 **B4** Rewrite unit: [dependents.md](../../grammar/beginner/dependents.md).
-**A2a** Audit unit for B1, B2. **A2b** Audit unit for B3, B4.
-**S2a** Style unit for B1, B2. **S2b** Style unit for B3, B4 and C1.
+**B5** Rewrite unit: [root-tails.md](../../grammar/beginner/root-tails.md).
+**A2a** Audit unit for B1, B2. **A2b** Audit unit for B3, B4, B5.
+**S2a** Style unit for B1, B2. **S2b** Style unit for B3, B4, B5 and C1.
 
 ### Phase P3: Beginner, pointing to asking
 
@@ -172,7 +173,7 @@ Each is a rewrite unit. **A13a** / **S13a** for X1 to X4; **A13b** / **S13b** fo
 
 **X8** [singability.md](../../grammar/advanced/singability.md).
 **X9** [hook-compounds.md](../../grammar/advanced/hook-compounds.md).
-**X10** [root-tails.md](../../grammar/advanced/root-tails.md).
+**X10** [tail-suffixes.md](../../grammar/advanced/tail-suffixes.md).
 **X11** [stand-in-roles.md](../../grammar/advanced/stand-in-roles.md), [nested-dependents.md](../../grammar/advanced/nested-dependents.md), [span-nesting.md](../../grammar/advanced/span-nesting.md).
 **X12** [join-limits.md](../../grammar/advanced/join-limits.md), [named-phrases.md](../../grammar/advanced/named-phrases.md).
 **X13** [hooked-joins.md](../../grammar/advanced/hooked-joins.md).

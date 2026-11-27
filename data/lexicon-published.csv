@@ -337,7 +337,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪶,feather,uvebo,body,order,small,softness,a feather is light and gentle to touch; softness is a yielding feel,,,
 🦩,flamingo,ovozo,creature,order,medium,flamboyance,flamingo stands out flamboyantly,,,
 🦚,peacock,eboza,creature,holds,medium,,,,,
-🦜,parrot,oboze,creature,one,medium,,,,,
+🦜,parrot,oboze,creature,one,medium,,,,,root-tails.md#beginner-practice
 🪽,wing,ewobo,body,order,medium,,,,,
 🪿,goose,ugoza,creature,holds,medium,,,,,
 🐦‍🔥,phoenix,evozo,creature,order,medium,rebirth,a phoenix rises from its own ashes,,,
@@ -345,7 +345,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐊,crocodile,ogazu,creature,takes-away,big,deceit,crocodile tears are deceit,,,
 🐢,turtle,udoza,creature,holds,medium,,,,,
 🦎,lizard,elezo,creature,order,small,tail,a lizard can drop its tail; a tail is the rear extension of a body,,,
-🐍,snake,ezozu,creature,takes-away,medium,ambush,a snake in the grass strikes from hiding,,,
+🐍,snake,ezozu,creature,takes-away,medium,ambush,a snake in the grass strikes from hiding,,,root-tails.md#beginner-practice
 🐉,dragon,udazu,creature,takes-away,big,legend,dragon lives in legend; legend is an inherited mythic tale,,,
 🦕,brontosaurus,abazo,creature,order,big,antiquity,a brontosaurus lived ages before us,,ancient,
 🦖,dinosaur,adazu,creature,takes-away,big,,,,,
@@ -353,7 +353,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐬,dolphin,odaza,creature,holds,big,,,,,
 🫍,orca,orazu,creature,takes-away,big,,,,,
 🦭,seal,ezaze,creature,one,big,imprimatur,seal stamps a document as sanctioned; imprimatur is official backing,,sanction; stamp,named-phrases.md#advanced-practice
-🐟,fish,eveza,creature,holds,small,abundance,plenty of fish in the sea,,plenty,
+🐟,fish,eveza,creature,holds,small,abundance,plenty of fish in the sea,,plenty,root-tails.md#beginner-practice
 🐡,blowfish,obezu,creature,takes-away,small,bluster,a blowfish puffs up to look bigger; bluster is puffed-up talk,,,
 🦈,shark,uhazu,creature,takes-away,big,ruthlessness,shark is ruthless predator,,,
 🐙,octopus,agoza,creature,holds,medium,reach,octopus reaches in every direction,,stretch; extension,
@@ -374,7 +374,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐞,ladybug,oleze,creature,one,small,luck,"a ladybug landing is taken as a good chance; luck is when it went well by chance, not a charm you have",,lucky; fortune; fortunate,
 🦗,grasshopper,ageze,creature,one,small,,,,,
 🪳,cockroach,agezu,creature,takes-away,small,resilience,cockroach survives anything,,survival; survive,
-🕷️,spider,azezu,creature,takes-away,small,entrapment,spider traps its prey,,,
+🕷️,spider,azezu,creature,takes-away,small,entrapment,spider traps its prey,,,root-tails.md#beginner-practice
 🕸️,cobweb,ugola,nature,holds,medium,network,a cobweb connects everything,,net; web,
 🦂,scorpion,ozezu,creature,takes-away,small,broken-promise,"the scorpion promised the frog a safe crossing, then stung it",,,
 🦟,mosquito,omezu,creature,takes-away,small,irritation,a mosquito's whine and itchy bite nag you,,,
@@ -563,7 +563,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏦,bank,abaha,place,holds,big,security,bank keeps money safe; security is kept safe,,deposit,
 🏨,hotel,ayaha,place,holds,big,,,,,
 🏩,motel,omaha,place,holds,big,privacy,discreet lodging,,,
-🏪,shop,awaha,place,holds,big,convenience,the corner shop is always nearby; convenience is easy to reach,,store,
+🏪,shop,awaha,place,holds,big,convenience,the corner shop is always nearby; convenience is easy to reach,,store,root-tails.md#beginner-practice
 🏫,school,uzaha,place,holds,big,education,school teaches; education is learning over time,,educational; course,word-endings.md#beginner-practice
 🏬,department-store,udaha,place,holds,big,market,a department store gathers many stalls under one roof; a market is where goods are traded,,economic; economy; retail; commercial,
 🏭,factory,uvaha,place,holds,big,output,factory turns out goods; output is the unobservable result-role,,industrial,numeric-derivation.md#advanced-practice

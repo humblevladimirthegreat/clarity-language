@@ -138,8 +138,8 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 | *purpose* (the outcome aimed at) | `thovam` + `/b/` | *so that*: your own aim |
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`gawethom`) | the noun's purpose is this sake |
 | *What is the purpose?* | `thovam blar` | *What for?*: the listener's aim |
-| *guilty* / *to blame* | `thahul` + `/b/` | the because hinge, the reason broke a norm |
-| *guilty* (the feeling) | a feeling word + **`thahul blarl`** + your own act | the feeling, caused by your act, which broke a norm |
+| *guilty* / *to blame* | `thahul` + `/b/` | the because hinge, the reason broke a norm the actor could have kept |
+| *guilty* (the feeling) | a feeling word + **`thahul blarl`** + your own act | the feeling, caused by your act, which broke a norm you could have kept |
 | *hurt* / *upset* (no fault named) | a feeling word + **`thahum blarl`** + what happened | the feeling and its cause, with no one at fault |
 | *ashamed* / *embarrassed* | `gubamom` | the embarrassment root as a property |
 

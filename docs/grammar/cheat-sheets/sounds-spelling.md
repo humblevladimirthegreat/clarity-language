@@ -66,7 +66,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | [Roots are vowel-first](/phonotactics#phonotactics): V(CV)+, a vowel then consonant-vowel pairs | `zobulol` = `z` + `obulo` + `-l` | I |
 | [Place-name root](/place-name-roots#place-name-roots) with no cluster: seven letters, ends `n` + vowel | `azabanan` *Japan* | I |
 | [Place-name root](/place-name-roots#place-name-roots) that keeps a cluster | `avranzan` *France* | I |
-| [A root's last two letters hint at its kind and job](/root-tails#root-tails) | `ogoze` *cat*: `z` a creature, `o` one of its kind | A |
+| [A root's last two letters hint at its kind and job](/root-tails#root-tails) | `ogoze` *cat*: `z` a creature, `e` one whole thing | B |
 
 ### Parts of a word, in order {#parts-in-order}
 

@@ -23,6 +23,7 @@ export const beginnerUnits: Unit[] = [
       { text: 'Leaving out who acts', link: '/no-subject' },
       { text: 'Speech moves', link: '/speech-moves' },
       { text: 'Dependents', link: '/dependents' },
+      { text: 'Root tails', link: '/root-tails' },
     ],
   },
   {
@@ -293,7 +294,7 @@ export const advancedUnits: Unit[] = [
     items: [
       { text: 'Voicing Ageben', link: '/singability' },
       { text: 'Cite plus a hook', link: '/hook-compounds' },
-      { text: 'Root tails', link: '/root-tails' },
+      { text: 'Tail suffixes', link: '/tail-suffixes' },
     ],
   },
   {
