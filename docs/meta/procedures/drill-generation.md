@@ -270,6 +270,7 @@ Status: **exists** = do not overwrite; **generate** = to write (the build fails 
 | 16 | `ought-for-a-sake.md` | **exists** | a yoga studio | Prescription **`the`** + invited / unasked / tryout endings; `/b/` whose stake on advice | Recycle = all earlier Beginner. Not motive **`tho`**, attachment sites, contrary, or sake bars |
 | 16 | `already-still-yet.md` | **exists** | a train platform | already / still / not yet / no longer (`havem` / `hawum` / `thelom` / `huvum`); ever / never with **`har`** / **`hal`** | Recycle = all earlier Beginner. Not MIRATIVE / RESIDUE / FORMER / NOTIONAL |
 | 16 | `fault.md` | **exists** | a bike rack | Fault endings on *because* (`thahul` / `thahum` / `thahur`); act in `bl-`, not the person | Recycle = all earlier Beginner. Not iff, only-because, following-sentence **`blarl`** inventory, or CAUSE |
+| — | `root-tails.md` | **generate** | — | — | Split off `tail-suffixes.md`: fill in what to test, then write the checkpoint (or mark **skip** with a reason) |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>

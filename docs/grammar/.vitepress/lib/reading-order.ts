@@ -23,6 +23,7 @@ export const beginnerUnits: Unit[] = [
       { text: 'Leaving out who acts', link: '/no-subject' },
       { text: 'Speech moves', link: '/speech-moves' },
       { text: 'Dependents', link: '/dependents' },
+      { text: "Root tails", link: "/root-tails" },
     ],
   },
   {
