@@ -21,7 +21,7 @@ The letter order `a`, `o`, `e`, `u` gives two sibling **scales**: size is amount
 
 | Series | Parent | Fit cue | `a` | `o` | `e` | `u` | Stage |
 |--------|--------|----------|-------|-------|-------|-------|-------|
-| [Size](/root-tails#root-tails) (scale) | — | how much is there | big | medium | small | none | A |
+| [Size](/root-tails#root-tails) (scale) | — | how much is there | big | medium | small | none || B |
 | [Order](/numbers#counts) (scale) | — | which slot in a count of four | first | second | third | fourth | B |
 | [Join](/joins#join-type-vowel-series) | size | how much list is left | *and* (grows) | rank (stays) | choice (one) | *not* (gone) | B |
 | [Act](/speech-moves#speech-act-beginner) | join | what you do to the discourse list | statement | command | question | prohibition | B |
@@ -101,10 +101,10 @@ The [middle vowel](/root-tails#root-tails) is a memory aid only: the grammar doe
 
 | [Middle vowel](/root-tails#root-tails) | Size | Stage |
 |----------------------------------------|------|-------|
-| `a` | about your size or bigger | A |
-| `o` | between your hand and you | A |
-| `e` | no bigger than your hand | A |
-| `u` | nothing you could measure | A |
+| `a` | about your size or bigger || B |
+| `o` | between your hand and you || B |
+| `e` | no bigger than your hand || B |
+| `u` | nothing you could measure || B |
 
 | Job | `a` | `o` | `e` | `u` | Stage |
 |-----|-------|-------|-------|-------|-------|
@@ -130,7 +130,7 @@ In [joins](/joins#join-type-vowel-series), the vowel says how much of the list i
 | [Number marker](/number-markers#marker-vowel-referential-identity) | `+` count | `#` ordinal | `_` digit string | `-` negative | I |
 | [Restrictor](/restrictors) | `hal` *only when* / *never* | | `her` *anytime* | `hur` *some other time*; `hual` *always* | B |
 | [Comparative](/comparatives#comparatives) / [equative](/comparatives#equatives) | | `zol` *more … than* | | | B |
-| [Root job](/root-tails#root-tails) | holds or gathers | order, path, sequence | one whole thing | takes away | A |
+| [Root job](/root-tails#root-tails) | holds or gathers | order, path, sequence | one whole thing | takes away || B |
 
 The equative `zoel` (*as … as*) uses `oe`, a join stack ([rank joins](/rank-joins#rank-joins)).
 
@@ -202,10 +202,10 @@ From [root tails](/root-tails#root-tails): a root's last vowel hangs on the join
 
 | Last vowel | Job | Examples | Stage |
 |------------|-----|----------|-------|
-| `a` | holds or gathers | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* | A |
-| `o` | order, path, sequence | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* | A |
-| `e` | one whole thing | `ogoze` *cat*, `alede` *apple* | A |
-| `u` | takes away | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* | A |
+| `a` | holds or gathers | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* || B |
+| `o` | order, path, sequence | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* || B |
+| `e` | one whole thing | `ogoze` *cat*, `alede` *apple* || B |
+| `u` | takes away | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* || B |
 
 ## Order {#order}
 

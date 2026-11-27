@@ -30,7 +30,7 @@ The join’s vowel says what happens to the list: `a` adds the items together (*
 
 ### And-lists (`a`)
 
-When English joins items with *and*, write every item, then one join word with vowel `a`, which adds the items together as one group. The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs. Its ending says whether the list is complete: closed `-l` means these are the only items, and open `-m` means other members may exist, which the English shows as *(and possibly more)*. When unsure, prefer `-m`. (cue: `a` ≈ add.) It is the same `a` that ends a root's [tail](/root-tails#root-tails) when the thing holds or gathers.
+When English joins items with *and*, write every item, then one join word with vowel `a`, which adds the items together as one group. The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs. Its ending says whether the list is complete: closed `-l` means these are the only items, and open `-m` means other members may exist, which the English shows as *(and possibly more)*. When unsure, prefer `-m`. (cue: `a` ≈ add.)
 
 > `zodozel zogozel zal.`
 >
@@ -55,6 +55,8 @@ When English joins items with *and*, write every item, then one join word with v
 > [v-walk | v-run | v-and.open]
 >
 > "walks and runs." (and possibly more)
+
+This `a` is the same `a` that ends a root's [tail](/root-tails#root-tails) when the thing holds or gathers.
 
 Whatever the join, the whole list fills one role in the clause. A [role pointer](pronouns.md#role-pointers) back to that role picks up the whole group:
 

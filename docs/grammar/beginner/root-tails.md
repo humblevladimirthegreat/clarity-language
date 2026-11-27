@@ -16,7 +16,13 @@ A root's last two letters hint at what kind of thing it names and what that thin
 
 A root ends in a **tail**, its last two letters, that hints at what it names. The last consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. On a five-letter root the first three letters keep it apart from others of the same kind; on a three-letter root the first vowel does.
 
-The tail belongs to the root, so it comes just before the word ending. In `ogozel` *a cat*, the root is `ogoze` and the ending is `-l`. The tail is `ze`: `z` says the thing is a creature, and `e` says it is one whole thing.
+In the citation for *cat*, the root is `ogoze` and the ending is `-l`:
+
+> `ogozel`
+>
+> "cat"
+
+The tail belongs to the root, so it comes just before the word ending: here it is `ze`. The `z` says the thing is a creature, and the `e` says it is one whole thing.
 
 The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound.
 
