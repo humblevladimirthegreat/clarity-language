@@ -1,9 +1,8 @@
 #!/bin/bash
 # Setup script for Claude Code cloud sessions: paste into the cloud environment's setup script.
-# Installs Node (.nvmrc), npm packages, and a .venv with genanki only. It downloads no data files:
-# tests use fixtures, BUILD_OFFLINE=1 lets the site build skip the CMU dictionary, and without
-# `anki` the flashcard import check is skipped unless flashcard code changed
-# (docs/meta/flashcards.md#import-check).
+# Installs Node (.nvmrc), npm packages, and a .venv with genanki and Anki's backend (`anki`), so
+# `npm run flashcards` runs the import check (docs/meta/flashcards.md#import-check). It downloads
+# no data files: tests use fixtures, and BUILD_OFFLINE=1 lets the site build skip the CMU dictionary.
 set -euo pipefail
 
 REPO="$(git rev-parse --show-toplevel 2>/dev/null || true)"
@@ -52,12 +51,12 @@ if [ -f "$REPO/package-lock.json" ]; then
   cd "$REPO"
   npm ci
 
-  # Python for flashcard packaging (genanki), the same set Amplify installs; the large `anki` wheel is left out
+  # Python for flashcard packaging (genanki) and the import check (anki); Amplify installs only genanki
   if ! python3 -c 'import ensurepip' 2>/dev/null; then
     apt-get update && apt-get install -y python3-venv
   fi
   [ -x .venv/bin/python ] || python3 -m venv .venv
-  .venv/bin/pip install -q -r requirements-publish.txt
+  .venv/bin/pip install -q -r requirements.txt
 else
   echo "Repo not found at setup time (pwd=$(pwd)); skipping npm install and .venv"
 fi

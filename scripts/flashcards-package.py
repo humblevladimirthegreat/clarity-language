@@ -36,11 +36,13 @@ ENGLISH = """
 """
 
 STEM = '<div class="stem">{{front}}</div>'
+# `parts` is HTML: a compound's parts, or a root's or closed word's letters (one `.letter` line each).
 EXTRAS = """
 {{#parts}}<div class="parts">{{parts}}</div>{{/parts}}
 {{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}
 """
 
+# Shared base, also Claritish's: changing it restyles the Claritish pack, so Ageben-only rules go in AGEBEN_CSS.
 CSS = """
 .card { font-family: system-ui, sans-serif; font-size: 20px; text-align: center; color: #222; background: #fff; }
 .nightMode.card, .night_mode .card { color: #eee; background: #2f2f31; }
@@ -51,6 +53,18 @@ CSS = """
 .also { font-size: 17px; opacity: 0.85; }
 .parts { margin-top: 0.8em; font-size: 17px; }
 .mnemonic { margin-top: 0.8em; font-size: 14px; font-style: italic; opacity: 0.6; }
+"""
+
+# Ageben note types, sized for phones: a long word shrinks and then wraps instead of widening the card;
+# letter and cue lines are two flex columns (letters or label, then text) so a long line wraps under its
+# text (flashcards.md#letters), and a long piece such as a whole place-name root wraps in its column.
+AGEBEN_CSS = CSS + """
+.stem { font-size: min(36px, 8vw); overflow-wrap: anywhere; }
+.letter, .cue { display: flex; align-items: baseline; text-align: left; font-size: 16px; margin: 0.15em auto; max-width: 28em; }
+.letter > code:first-child { flex: 0 1 auto; min-width: 3.4em; max-width: 45%; margin-right: 0.6em; font-weight: 600; overflow-wrap: anywhere; }
+.cue { margin-top: 0.8em; }
+.cue > .label { flex: 0 0 auto; min-width: 0; margin-right: 0.6em; width: 3.4em; }
+.nightMode a, .night_mode a { color: #99c1f1; }
 """
 
 LEXICON_MODEL = genanki.Model(
@@ -69,7 +83,7 @@ LEXICON_MODEL = genanki.Model(
             "afmt": '{{FrontSide}}<hr id="answer">' + STEM + EXTRAS,
         },
     ],
-    css=CSS,
+    css=AGEBEN_CSS,
     sort_field_index=0,
 )
 
@@ -99,20 +113,21 @@ CLARITISH_MODEL = genanki.Model(
 
 # Ageben overlay: `example` holds the example sentence as HTML with the overlay word wrapped in
 # <span class="overlay">; recognition highlights it, production blanks it. The back: definition,
-# per-slot readings (empty when one reading), host's concrete sense (empty for bare-vowel forms),
-# the word note a slot note extends, the example's morph gloss, the anchor link, then the mnemonic.
+# per-slot readings (empty when one reading), the word note a slot note extends; then `host`, HTML: where
+# each letter of the overlay word comes from, ending with its host's concrete sense (flashcards.md#letters);
+# then the mnemonic as the cue from the host to the meaning, the example's morph gloss and the anchor link.
 OVERLAY_FIELDS = ["example", "form", "definition", "readings", "host", "slot_of", "gloss", "link", "mnemonic", "kind"]
 
 OVERLAY_BACK = """
 <div class="english">
 <div class="line"><span class="label">definition</span>{{definition}}</div>
 {{#readings}}<div class="line readings">{{readings}}</div>{{/readings}}
-{{#host}}<div class="line"><span class="label">host</span>{{host}}</div>{{/host}}
 {{#slot_of}}<div class="line"><span class="label">new slot of</span>{{slot_of}}</div>{{/slot_of}}
 </div>
+{{#host}}<div class="parts">{{host}}</div>{{/host}}
+{{#mnemonic}}<div class="cue"><span class="label">cue</span><span>{{mnemonic}}</span></div>{{/mnemonic}}
 {{#gloss}}<div class="gloss">{{gloss}}</div>{{/gloss}}
 {{#link}}<div class="link"><a href="{{link}}">grammar section</a></div>{{/link}}
-{{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}
 """
 
 EXAMPLE_CSS = """
@@ -145,7 +160,7 @@ OVERLAY_MODEL = genanki.Model(
             "afmt": '<div class="example">{{example}}</div><hr id="answer">' + OVERLAY_BACK,
         },
     ],
-    css=CSS + EXAMPLE_CSS,
+    css=AGEBEN_CSS + EXAMPLE_CSS,
     sort_field_index=1,
 )
 
@@ -166,7 +181,7 @@ SET_MODEL = genanki.Model(
             + '{{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}',
         },
     ],
-    css=CSS + EXAMPLE_CSS + """
+    css=AGEBEN_CSS + EXAMPLE_CSS + """
 .title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
 .cloze { font-weight: 700; color: #1a5fb4; }
 .nightMode .cloze, .night_mode .cloze { color: #99c1f1; }
@@ -177,9 +192,9 @@ SET_MODEL = genanki.Model(
 
 # Note type by name (the JSON's `model`), with the fields that already hold HTML (never escaped).
 MODELS = {
-    "Ageben lexicon": (LEXICON_MODEL, set()),
+    "Ageben lexicon": (LEXICON_MODEL, {"parts"}),
     "Claritish": (CLARITISH_MODEL, {"meaning"}),
-    "Ageben overlay": (OVERLAY_MODEL, {"example", "readings"}),
+    "Ageben overlay": (OVERLAY_MODEL, {"example", "readings", "host"}),
     "Ageben set": (SET_MODEL, {"text"}),
 }
 

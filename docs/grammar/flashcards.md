@@ -24,7 +24,7 @@ Anki stores each word as a note and makes one or more cards from it. You meet th
 | A word with one fixed grammar use, such as a word that names what you are acting for | An example sentence with the word highlighted; on its reverse card, the meaning and the sentence with the word blanked out | What the word does in that sentence |
 | A set of related words | The whole set with one member blanked out | The full set |
 
-The back also gives the word's memory cue, where it has one.
+The back also shows where the word's letters come from, one line per letter or piece, such as what kind of thing the root's last consonant names. A root's first vowel gets no line: it only keeps the root apart from similar roots. A letter that the usual rule would explain but that was changed to keep two roots apart also gets no line. Last comes the word's memory cue, where it has one. On a grammar-use card the cue leads from the root's everyday thing to the grammar meaning.
 
 ## Setup {#setup}
 

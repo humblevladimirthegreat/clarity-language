@@ -36,13 +36,13 @@ Editors only. How the Anki packs are generated, keyed, checked and published. Th
 | Claritish | 1738204518 | `front`, `meaning`, `lesson` | Recognition only, with a small muted lesson line under the meaning |
 
 - Model ids are fixed constants. Never change one: Anki would treat it as a new note type.
-- **Mnemonic,** on every Ageben type: on the back only, small and muted.
-- **Ageben lexicon:** roots, compounds and closed words. Roots and compounds show labeled concrete, abstract and *also* (`english_aliases`) lines; a compound shows its parts with each root's concrete gloss. A closed word (`kind` set) shows a *definition* line, its English as plain text, and a *gloss* line, the words starred in `english`. No two production fronts may match (`npm test`).
-- **Ageben overlay:** `example` and `readings` are HTML; the example wraps the overlay word in `<span class="overlay">`.
+- **Mnemonic,** on every Ageben type: on the back only, small and muted, except on an overlay card, where it is the labeled *cue* that leads from the host to the meaning.
+- **Ageben lexicon:** roots, compounds and closed words. Roots and compounds show labeled concrete, abstract and *also* (`english_aliases`) lines. A closed word (`kind` set) shows a *definition* line, its English as plain text, and a *gloss* line, the words starred in `english`. `parts` is HTML, the [letters](#letters) of a root, compound or closed word. No two production fronts may match (`npm test`).
+- **Ageben overlay:** `example`, `readings` and `host` are HTML; the example wraps the overlay word in `<span class="overlay">`, and `host` holds the highlighted word's [letters](#letters).
 
   | Card | Front | Back |
   |------|-------|------|
-  | Recognition | The example, overlay highlighted | Definition; per-slot readings when they differ; host's concrete sense; *new slot of* (slot notes); morph gloss of the example; link to the anchor section; mnemonic |
+  | Recognition | The example, overlay highlighted | Definition; per-slot readings when they differ; *new slot of* (slot notes); the word's letters, ending with its host's concrete sense; the mnemonic as a labeled *cue*; morph gloss of the example; link to the anchor section |
   | Production | Definition, and the example with the overlay blanked | The full example, then the recognition back |
 
 - **Ageben set:** `text` is cloze HTML, one `{{cN::<code>…</code>}}` per member with its English after it, so the other members show on each card. Scale, ending, name and set notes all use it.
@@ -63,8 +63,16 @@ Card text comes only from the `data/` CSVs and checked page examples; nothing ad
 - **Word note** (`overlayWordNotes`, [`src/flashcards-overlays.ts`](../../src/flashcards-overlays.ts)): one per sense form, at the checkpoint of its first row. Rows of the form at that checkpoint fold in; where their definitions differ, `readings` lists them per slot (`ezem`: WHEREAS on `h`, ALTHOUGH on `th` / `g`). A folded note takes its example, definition, mnemonic and link from the first row in CSV order that has an example.
 - **Slot note** (`overlaySlotNotes`): one per later checkpoint that puts a known form in a new slot, such as join relations, hinges, and moods on one adjective. Its back gives the new slot's reading and names the word note in `slot_of`. In an ending set only the `-m` form gets one, unless the `-l` / `-r` form's gloss in the new slot is new (`slotTaughtByMForm`).
 - **Example** (`overlayExamples`, [`src/flashcards-examples.ts`](../../src/flashcards-examples.ts)): the shortest code span in the anchor section whose parse uses the overlay in the row's slot; failing that, the shortest such span in the rest of the page before its checkpoint. A lone citation never counts. The morph gloss comes from the page glosser's strict `morphGlossLine`. A row with no example fails `npm test`, except the `-l` / `-r` forms an ending note covers.
-- **Host:** the root of the sense form (`senseFormRoot`), with its concrete sense when it is a published root. Bare-vowel forms show no host line.
+- **Host:** the `host` field is the [letters](#letters) of the highlighted word, the host root's line among them when it is a published root. Bare-vowel forms have no host line.
 - **Link:** `https://clarityconlang.com/grammar/<page>.html#<id>` of the row's anchor.
+
+## Letters {#letters}
+
+[`src/flashcards-letters.ts`](../../src/flashcards-letters.ts) says where each letter of a word comes from, one `.letter` line per letter or piece: the letters in `<code>`, then the text in a `<span>`. The two make flex columns, so a long line wraps under its text; the overlay *cue* line uses the same layout. Ageben note types are sized for phones (`AGEBEN_CSS` in the packager): the headword shrinks with the screen and then wraps, and a long piece such as a whole place-name root wraps in its column. Check a styling change at 320 px. Claritish keeps the shared base `CSS` alone, so an Ageben-only rule never restyles it. It reads only data and grammar pages, never CMU. The wording of kinds, jobs and sizes comes from the tables on [root tails](../grammar/beginner/root-tails.md#root-tails), and the role letters from the [consonants cheat sheet](../grammar/cheat-sheets/consonants.md#role-letters). The act, polar, join, sake-stance and ability vowels are a table in the file, quoting the vowels cheat sheet and their owning sections. Change a page's wording and the file together.
+
+- **Root:** never the first vowel, which only keeps roots apart. On a five-letter root, the first consonant gets a line only when it equals the row's `onset` ([onset](procedures/lexicon.md#onset)), and the middle vowel only when it is the row's size vowel. A miss there is a root that gave the echo up in a full cell, so it gets no line, and a `mind` row has no size. Then the tail: kind and job. A place-name root gets one line, spelled from the English sound.
+- **Compound:** the left root, the join (`-l` everyday sense, `-m` abstract sense), and the right root or a tail suffix as kind and job. A compound with an extra-noun hook keeps the plain parts line.
+- **Closed word and overlay word:** split by `parseWord`. The role letter (`gl-` as one piece), the root's letters and concrete sense, or the stacked act, polar or join vowels, or a sake or ability stance after the host. Then the ending where a rule covers it: `-m` on a root is the abstract ending with the host's abstract sense, which is the step from the host to the overlay meaning; `-l` / `-r` on a kind taught on the settled-to-passing scale (the ending-note kinds, MAY, plan, notional); `-l` / `-m` / `-r` on `/y/` firm, soft, for now; a linker's `-l` firm; a special pronoun's `-n`. Any other ending gets no line (hinge `-l` / `-r`, likeness, identity, mention, the join `-n`, and a stance word's ending, which follows its stance's table). An overlay card explains the word its example highlights, so a sake card explains `thunatham`, not the citation `unam`.
 
 ## Endings and sets {#endings-and-sets}
 
@@ -135,7 +143,7 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 | `npm run flashcards -- --out DIR` | the same, into `DIR` |
 
 - An Ageben pack writes `ageben-<pack>.apkg`, `.json`, and one TSV per note type it holds: `ageben-<pack>.tsv` (lexicon), `-overlay.tsv` and `-set.tsv` (the last two `#html:true`). Claritish writes `claritish.apkg`, `.json` and `.tsv`.
-- Packaging and the check need `.venv/bin/python` with [`requirements.txt`](../../requirements.txt) (`genanki` through [`requirements-publish.txt`](../../requirements-publish.txt), and the `anki` pin for the check). A `.venv` with only `requirements-publish.txt`, as in a cloud session, still packages; see [import check](#import-check) for when the check is skipped.
+- Packaging and the check need `.venv/bin/python` with [`requirements.txt`](../../requirements.txt) (`genanki` through [`requirements-publish.txt`](../../requirements-publish.txt), and the `anki` pin for the check). A `.venv` with only `requirements-publish.txt`, as on Amplify, still packages; see [import check](#import-check) for when the check is skipped.
 - Output is deterministic: no timestamps or random ids in notes, GUIDs, deck ids or release ids. Nothing generated is committed.
 
 ## Import check {#import-check}
@@ -150,7 +158,7 @@ Card text comes only from the [Claritish cheat sheet](../grammar/claritish/cheat
 - a second import adds nothing, and a card the learner unsuspended and one they reviewed keep their state;
 - **release search:** for Claritish and for the Ageben packs together, it rebuilds the packs with one note dropped and the release tags recomputed, imports them with *always update*, and checks that the release search finds exactly the dropped note. For Claritish the Python release id matches the TS one, so a change to that formula changes `release_id` in the check too; for Ageben the check needs only a different id.
 
-**When `.venv` has no `anki`.** The `anki` wheel is a large download, so a cloud session installs only `requirements-publish.txt`. `npm run flashcards` (and so `npm run build`) then decides from `git diff` against the merge base with `origin/main`, untracked files included:
+**When `.venv` has no `anki`.** Amplify installs only `requirements-publish.txt`, and a `.venv` set up by hand may do the same; the cloud setup script ([`.claude/cloud-setup-script.sh`](../../.claude/cloud-setup-script.sh)) installs `requirements.txt`, `anki` included. `npm run flashcards` (and so `npm run build`) then decides from `git diff` against the merge base with `origin/main`, untracked files included:
 
 - No flashcard code changed: it packages every pack, skips the check, and prints a `warning:` line, which the build shows without failing.
 - `src/flashcards*`, `scripts/flashcards*` or a `requirements*.txt` changed, or git can't tell: it fails before packaging and names the changed files. Install `requirements.txt` and rerun, or run the check where `anki` is installed.

@@ -1,19 +1,18 @@
 /**
  * Root-tails report for `convert-word --lexicon` and `--report`: the share of five-letter roots that start
- * with the English label's first consonant, confusing pairs (same kind, same first two letters) in total
+ * with the English label's first consonant (the `onset` cell), confusing pairs (same kind, same first two letters) in total
  * and per kind beside the even-spread floor, the share of sized roots whose middle vowel is their size's,
  * and the 👓 root the language name comes from.
  */
 import { isFlagLabel } from "../../src/flag-label.js";
 import type { PublishedRow } from "../../src/lexicon-search.js";
-import { firstConsonant } from "../../src/root-tails-place.js";
 import { evenSpreadPairs, isSize, KIND_LETTERS, SIZE_VOWELS, tailMetrics, type Kind } from "../../src/root-tails.js";
 
 function pct(count: number, total: number): string {
   return `${total === 0 ? "0.0" : ((100 * count) / total).toFixed(1)}%`;
 }
 
-export function printTailsReport(published: readonly PublishedRow[], pron: Map<string, string>): void {
+export function printTailsReport(published: readonly PublishedRow[]): void {
   const long = published.filter((row) => row.root.length === 5);
   const metrics = tailMetrics(long.map((row) => ({ root: row.root, kind: row.kind ?? "", concrete: row.concrete })));
   // Rate: confusing pairs among the same-kind pairs that could share a prefix. Flags and other
@@ -22,8 +21,8 @@ export function printTailsReport(published: readonly PublishedRow[], pron: Map<s
   const line = (label: string, value: string) => console.log(`  ${label.padEnd(52)}${value.padStart(16)}`);
 
   // Flags are left out of the first-consonant share.
-  const scored = long.filter((row) => !isFlagLabel(row.concrete) && firstConsonant(pron.get(row.concrete) ?? ""));
-  const echoed = scored.filter((row) => row.root[1] === firstConsonant(pron.get(row.concrete)!)).length;
+  const scored = long.filter((row) => !isFlagLabel(row.concrete) && row.onset);
+  const echoed = scored.filter((row) => row.root[1] === row.onset).length;
   console.log("");
   line("first consonant is the label's (excluding flags)", pct(echoed, scored.length));
   const sized = long.filter((row) => isSize(row.size ?? ""));

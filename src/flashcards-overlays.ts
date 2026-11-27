@@ -6,7 +6,8 @@
  */
 import { anchorCheckpoint, coveredByEndingNote, noteGuid, type AnchorCheckpoint, type FlashcardInputs, type OverlayNote } from "./flashcards.js";
 import { overlayExamples, overlayRowKey, overlaySlot, type OverlayExample } from "./flashcards-examples.js";
-import { senseFormRoot, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
+import { letterTablesFor, lettersHtml, wordLetters } from "./flashcards-letters.js";
+import type { OverlayRow } from "./lexicon-search.js";
 import { visitResult } from "./parse/ast-walk.js";
 import type { ClassifyTables } from "./parse/classify.js";
 import { loadDefaultTables } from "./parse/index.js";
@@ -66,11 +67,11 @@ export function slotReadings(rows: readonly Pick<OverlayRow, "pos" | "definition
   return [...bySense].map(([definition, slots]) => `<div class="line"><span class="label">${escapeHtml(slots.join(" / "))}</span>${escapeHtml(definition)}</div>`).join("");
 }
 
-/** Host line: the sense form's root and its concrete sense, when the root is published (bare-vowel forms have none). */
-export function hostLine(senseForm: string, published: readonly Pick<PublishedRow, "root" | "concrete">[]): string {
-  const root = senseFormRoot(senseForm);
-  const row = published.find((r) => r.root === root);
-  return row ? `${root} (${row.concrete})` : "";
+/** The word a highlighted example marks: the letters are explained as the card shows them (a sake word with its stance). */
+function highlightedWord(html: string): string {
+  const word = /<span class="overlay">([^<]+)<\/span>/.exec(html)?.[1];
+  if (!word) throw new Error(`no highlighted word in ${html}`);
+  return word;
 }
 
 /** The GUID gloss of a word note: its rows' distinct glosses, sorted, so row order never changes it. */
@@ -131,17 +132,18 @@ function overlayNote(
   if (!lead) throw new Error(`overlay ${senseForm}: no example for any row at ${cp.anchor}`);
   const example = found.get(overlayRowKey(lead))!;
   const key = slot ? slotNoteKey(senseForm, cp.page) : senseForm;
+  const highlighted = highlightExample(example.text, new Set([overlaySlot(lead.senseForm, lead.pos)]), tables);
   return {
     source: "overlay",
     model: "Ageben overlay",
     key,
     guid: noteGuid("overlay", key, wordNoteGloss(rows)),
     fields: {
-      example: highlightExample(example.text, new Set([overlaySlot(lead.senseForm, lead.pos)]), tables),
+      example: highlighted,
       form: senseForm,
       definition: lead.definition,
       readings: slotReadings(rows),
-      host: hostLine(senseForm, inputs.published),
+      host: lettersHtml(wordLetters(highlightedWord(highlighted), new Map(inputs.published.map((r) => [r.root, r])), letterTablesFor(inputs.pageText), { overlayKind: lead.kind })),
       slot_of: slot ? `${slot.of.fields.form} · ${slot.of.fields.definition}` : "",
       gloss: example.gloss,
       link: anchorUrl(lead.anchor),

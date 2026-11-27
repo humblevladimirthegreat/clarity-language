@@ -7,6 +7,7 @@
  *      npm run convert-word -- --lexicon --only breaker
  *      npm run convert-word -- --lexicon --all
  *      npm run convert-word -- --report
+ *      npm run convert-word -- --onsets
  *
  * --lexicon requires --only or --all (never re-places the whole lexicon by default).
  * --lexicon also writes tmp/state/lexicon-retie-map.json for npm run retie-docs.
@@ -24,8 +25,7 @@ import {
 } from "../src/lexicon-compounds.js";
 import { resyncClosedRootsSource } from "../src/closed-roots.js";
 import { lookupPronunciation } from "../src/cmu-dict.js";
-import { loadPron } from "../src/echo-metric.js";
-import { placePublishedRoots } from "../src/lexicon-place.js";
+import { placePublishedRoots, pronunciationsFor } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { placeRoot } from "../src/place-root.js";
 import {
@@ -41,7 +41,7 @@ import {
   type Shape,
   type Size,
 } from "../src/root-tails.js";
-import { placeTailRoots } from "../src/root-tails-place.js";
+import { firstConsonant, placeTailRoots } from "../src/root-tails-place.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
   AGEBEN_CONSONANTS,
@@ -63,6 +63,7 @@ const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definit
 type CliOptions = {
   lexicon: boolean;
   report: boolean;
+  onsets: boolean;
   steps?: number;
   all: boolean;
   only: string[];
@@ -75,6 +76,7 @@ type CliOptions = {
 function parseArgs(argv: string[]): CliOptions {
   let lexicon = false;
   let report = false;
+  let onsets = false;
   let steps: number | undefined;
   let all = false;
   let kind = "";
@@ -91,6 +93,10 @@ function parseArgs(argv: string[]): CliOptions {
     }
     if (arg === "--report") {
       report = true;
+      continue;
+    }
+    if (arg === "--onsets") {
+      onsets = true;
       continue;
     }
     if (arg === "--kind" || arg === "--shape" || arg === "--size") {
@@ -134,11 +140,11 @@ function parseArgs(argv: string[]): CliOptions {
   }
 
   const input = parts.join(" ").trim();
-  if (report) {
-    if (lexicon || input) {
-      throw new Error("--report takes no other mode or input");
+  if (report || onsets) {
+    if (lexicon || input || (report && onsets)) {
+      throw new Error("--report and --onsets take no other mode or input");
     }
-    return { lexicon, report, all, only, input, kind, shape, size };
+    return { lexicon, report, onsets, all, only, input, kind, shape, size };
   }
   if (steps !== undefined && !lexicon) {
     throw new Error("--steps requires --lexicon");
@@ -164,13 +170,14 @@ function parseArgs(argv: string[]): CliOptions {
     throw new Error("--lexicon requires --only <row> or --all (re-places the whole lexicon)");
   }
 
-  return { lexicon, report, steps, all, only, input, kind, shape, size };
+  return { lexicon, report, onsets, steps, all, only, input, kind, shape, size };
 }
 
 function printUsage(): void {
   console.error(`Usage: npm run convert-word -- <english> [--kind KIND [--shape SHAPE] [--size SIZE]]
        npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all) [--steps N]
        npm run convert-word -- --report
+       npm run convert-word -- --onsets
 
 <english> alone prints the best three-letter root by English echo. With --kind and --shape (and
 --size where the kind takes one) it prints the five-letter root-tails root that word would take
@@ -187,6 +194,9 @@ root stays put.
 tail-suffix vowels from kind and shape while keeping the first vowel; --lexicon needs one of
 --only or --all. --steps sets the five-letter annealing steps.
 --report prints the root-tails report for the published lexicon.
+--onsets fills each empty onset cell (the English label's first consonant, from CMU) on a
+five-letter tail row, and lists the cells that differ from CMU; --lexicon fills them on the rows it
+places before placing, and clears them on a row that lands on another length.
 
 Examples:
   npm run convert-word -- fishing
@@ -300,6 +310,16 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
   for (const row of targets) {
     if (!(row.concrete ?? "").trim()) skipped += 1;
   }
+  // The placer aims for the onset cell; a target that may take five letters and has none gets it from CMU.
+  const pron = await pronunciationsFor(rows.map((row) => ({ concrete: (row.concrete ?? "").trim() })));
+  let onsetsChanged = 0;
+  for (const row of targets) {
+    if ((row.onset ?? "").trim() || !mayTakeOnset(row)) continue;
+    const onset = onsetFor(pron, row);
+    if (!onset) continue;
+    row.onset = onset;
+    onsetsChanged++;
+  }
   const placed = await placePublishedRoots(
     targets.flatMap((row) => {
       const concrete = (row.concrete ?? "").trim();
@@ -313,6 +333,7 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
         kind: (row.kind ?? "").trim(),
         shape: (row.shape ?? "").trim(),
         size: (row.size ?? "").trim(),
+        onset: (row.onset ?? "").trim(),
         core: !!(row.core ?? "").trim(),
       }];
     }),
@@ -324,6 +345,7 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
         .map((row) => ({ emoji: (row.emoji ?? "").trim(), root: (row.root ?? "").trim() })),
       compounds: allMode ? retieCompoundRows(compoundRows, new Map(retiePairs.map((pair) => [pair.oldRoot, pair.newRoot]))).rows : compoundRows,
       tailSteps: steps,
+      pron,
     },
   );
   // a seedless row is keyed by its concrete label
@@ -339,6 +361,10 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
       continue;
     }
     row.root = neu;
+    if (neu.length !== 5 && (row.onset ?? "").trim()) {
+      row.onset = "";
+      onsetsChanged++;
+    }
     assigned.push(neu);
     if (row.emoji) oldToNewByEmoji.set(row.emoji, { oldRoot: previous, newRoot: neu });
     if (neu !== previous) {
@@ -398,7 +424,7 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
     throw new Error(`Root tails after placement:\n${tailErrors.map((e) => `  ${e.key}: ${e.reason}`).join("\n")}`);
   }
 
-  if (changed > 0) {
+  if (changed > 0 || onsetsChanged > 0) {
     writeFileSync(publishedPath, serializeCsv(headers, rows));
   }
   if (overlaysChanged) {
@@ -455,7 +481,41 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
     }
     console.log(`letters: ${dist.letters}`);
   }
-  printTailsReport(placedRows, loadPron());
+  printTailsReport(placedRows);
+}
+
+/** A row that has, or may be placed on, a five-letter tail root: not `named`, and five letters or none yet. */
+function mayTakeOnset(row: Record<string, string>): boolean {
+  const root = (row.root ?? "").trim();
+  return (row.kind ?? "").trim() !== PLACE_KIND && (root.length === 5 || !root);
+}
+
+/** The `onset` cell CMU gives a row's concrete label: the Ageben letter of its first consonant, empty when CMU lacks the label or it has none. */
+function onsetFor(pron: ReadonlyMap<string, string>, row: Record<string, string>): string {
+  return firstConsonant(pron.get((row.concrete ?? "").trim()) ?? "") ?? "";
+}
+
+/** `--onsets`: fill each empty onset cell on a five-letter tail row from CMU; list the filled cells that differ from it (a cell is kept: it may correct CMU). */
+async function fillOnsets(): Promise<void> {
+  const { headers, rows } = parseCsv(readFileSync(publishedPath, "utf8"));
+  const targets = rows.filter((row) => (row.root ?? "").trim().length === 5 && mayTakeOnset(row));
+  const pron = await pronunciationsFor(targets.map((row) => ({ concrete: (row.concrete ?? "").trim() })));
+  let filled = 0;
+  const none: string[] = [];
+  for (const row of targets) {
+    const fromCmu = onsetFor(pron, row);
+    const cell = (row.onset ?? "").trim();
+    if (!cell) {
+      if (fromCmu) {
+        row.onset = fromCmu;
+        filled++;
+      } else none.push((row.concrete ?? "").trim());
+    } else if (fromCmu && cell !== fromCmu) {
+      console.log(`DIFF ${(row.concrete ?? "").trim()} onset ${cell} (CMU ${fromCmu})`);
+    }
+  }
+  if (filled > 0) writeFileSync(publishedPath, serializeCsv(headers, rows));
+  console.log(`filled ${filled} onset cell(s); ${none.length} five-letter row(s) with no CMU first consonant${none.length ? `: ${none.join(", ")}` : ""}`);
 }
 
 /** The five-letter root one English word would take beside the published lexicon, which stays put; a place-name root for `--kind named`. */
@@ -488,7 +548,11 @@ function tailRootFor(input: string, kind: string, shape: string, size: string): 
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
   if (options.report) {
-    printTailsReport(parsePublishedCsv(readFileSync(publishedPath, "utf8")), loadPron());
+    printTailsReport(parsePublishedCsv(readFileSync(publishedPath, "utf8")));
+    return;
+  }
+  if (options.onsets) {
+    await fillOnsets();
     return;
   }
   if (options.lexicon) {

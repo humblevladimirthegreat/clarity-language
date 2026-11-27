@@ -44,6 +44,8 @@ export type PlaceRow = {
   shape?: string;
   /** Middle-vowel preference (`size` column), src/root-tails.ts. */
   size?: string;
+  /** English echo (`onset` column): the first consonant placement aims for; filled by convert-word before placing. */
+  onset?: string;
   /** Core vocabulary row (`core` column filled): it outbids non-core rows for its English first consonant. */
   core?: boolean;
 };
@@ -445,7 +447,7 @@ export function annealShortRoots(
  * The pronunciation cache, rebuilt once when it is missing or lacks a label (a new or relabelled row).
  * A label CMU lacks only loses the English cost and tie-breaks.
  */
-async function pronunciationsFor(rows: PlaceRow[]): Promise<Map<string, string>> {
+export async function pronunciationsFor(rows: readonly Pick<PlaceRow, "concrete">[]): Promise<Map<string, string>> {
   const covers = (pron: Map<string, string>) => rows.every((row) => !row.concrete.trim() || pron.has(row.concrete));
   try {
     const pron = loadPron();
@@ -566,6 +568,7 @@ export async function placePublishedRoots(
       shape: item.row.shape as Shape,
       size: (item.row.size || undefined) as Size | undefined,
       cmu: item.cmu,
+      onset: item.row.onset ?? "",
       current: item.row.root?.length === 5 ? item.row.root : undefined,
       core: item.row.core,
     })),

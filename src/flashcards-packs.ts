@@ -118,8 +118,8 @@ export function noteCards(note: FlashcardNote): number {
 
 /** Per note type: its TSV file suffix, whether its file is HTML, the fields that already hold HTML, and its field order. */
 const tsvTypes = () => [
-  { model: LEXICON_MODEL, suffix: "", html: false, htmlFields: new Set<string>(), fields: NOTE_FIELDS },
-  { model: OVERLAY_MODEL, suffix: "-overlay", html: true, htmlFields: new Set<string>(["example", "readings"]), fields: OVERLAY_FIELDS },
+  { model: LEXICON_MODEL, suffix: "", html: true, htmlFields: new Set<string>(["parts"]), fields: NOTE_FIELDS },
+  { model: OVERLAY_MODEL, suffix: "-overlay", html: true, htmlFields: new Set<string>(["example", "readings", "host"]), fields: OVERLAY_FIELDS },
   { model: SET_MODEL, suffix: "-set", html: true, htmlFields: new Set<string>(["text"]), fields: SET_FIELDS },
 ] as const;
 
