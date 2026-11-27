@@ -30,7 +30,7 @@ The join’s vowel says what happens to the list: `a` adds the items together (*
 
 ### And-lists (`a`)
 
-When English joins items with *and*, write every item, then one join word with vowel `a`, which adds the items together as one group. The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs. Its ending says whether the list is complete: closed `-l` means these are the only items, and open `-m` means other members may exist, which the English shows as *(and possibly more)*. When unsure, prefer `-m`. (cue: `a` ≈ add.)
+When English joins items with *and*, write every item, then one join word with vowel `a`, which adds the items together as one group. The join’s first letter matches the items: `zam` after two `/z/` nouns, `vam` after two `/v/` verbs. Its ending says whether the list is complete: closed `-l` means these are the only items, and open `-m` means other members may exist, which the English shows as *(and possibly more)*. When unsure, prefer `-m`. (cue: `a` ≈ add.) It is the same `a` that ends a root's [tail](/root-tails#root-tails) when the thing holds or gathers.
 
 > `zodozel zogozel zal.`
 >
@@ -88,7 +88,7 @@ This rule tells you where a list starts as you listen. A second noun in the same
 ### Choice (`e`) {#choice-e}
 <a id="empty-allowed-om"></a>
 
-When English offers a menu and asks you to *pick one*, or leaves the pick *(optional)*, use vowel `e`. Closed `-l` (`zel`) means the listener picks exactly one of the listed items. Open `-m` (`zem`) means the pick is optional. (cue: `e` ≈ choice.)
+When English offers a menu and asks you to *pick one*, or leaves the pick *(optional)*, use vowel `e`. Closed `-l` (`zel`) means the listener picks exactly one of the listed items. Open `-m` (`zem`) means the pick is optional. (cue: `e` ≈ choice.) It is the same `e` that ends a root's [tail](/root-tails#root-tails) when the thing is one whole: the choice keeps one piece.
 
 > `zedudal zogudal zel.`
 >
@@ -151,7 +151,7 @@ Right after a word that takes a [`bl-` partner](clause.md#extra-nouns), a standa
 
 ### Negation (`u`) {#negation-u}
 
-When English denies the listed items, use vowel `u`. One item before `zul` is *not X*, two are *neither A nor B*, and more are *none of these*; the join alone (`zul` / `zum`) is *no*. Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing. (cue: `u` ≈ undo.)
+When English denies the listed items, use vowel `u`. One item before `zul` is *not X*, two are *neither A nor B*, and more are *none of these*; the join alone (`zul` / `zum`) is *no*. Because the denial is a join, it reaches only the items in its list: `zazozon zul` denies who it is, and leaves the rest of the sentence standing. (cue: `u` ≈ undo.) It is the same `u` that ends a root's [tail](/root-tails#root-tails) when the thing takes away or works against.
 
 > `gamahum gul.`
 >
@@ -252,7 +252,7 @@ In a command, a noun you mention for the first time, such as *a door*, asks the 
 ### Rank (`o`) {#rank-o}
 <a id="set-joins-and-rank-joins"></a>
 
-When English ranks items (a priority, a favorite, *A before B*), write them in that order, then a join with vowel `o`; the earlier item outranks the later. The *and*, *or*, and *not* joins above are set joins: the items share a role as a group, and writing one before the other does not rank them. With one item, `zol` means *only X matters* and `zom` means *X first* or *mainly X*. (cue: `o` ≈ rank.)
+When English ranks items (a priority, a favorite, *A before B*), write them in that order, then a join with vowel `o`; the earlier item outranks the later. The *and*, *or*, and *not* joins above are set joins: the items share a role as a group, and writing one before the other does not rank them. With one item, `zol` means *only X matters* and `zom` means *X first* or *mainly X*. (cue: `o` ≈ rank.) It is the same `o` that ends a root's [tail](/root-tails#root-tails) when the thing follows an order or a path.
 
 > `zazozon zol.`
 >

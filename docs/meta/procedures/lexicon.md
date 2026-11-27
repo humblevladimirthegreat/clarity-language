@@ -89,7 +89,7 @@ A placed row keeps its length. So a row that gains its first overlay keeps its f
 
 ## Root tails {#root-tails}
 
-A root ends in a **tail**: its last consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. A five-letter root is `V C V | C V`; a three-letter root is `V | C V`. The learner-facing letter map, with each letter's anchor in the grammar, is in [compounds.md § root tails](/root-tails#root-tails).
+A root ends in a **tail**: its last consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. A five-letter root is `V C V | C V`; a three-letter root is `V | C V`. The learner-facing letter map, with each letter's anchor in the grammar, is in [root-tails.md § root tails](/root-tails#root-tails).
 
 The `kind` and `shape` columns of [`lexicon-published.csv`](../../../data/lexicon-published.csv) record the call for each three- or five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free. The `size` column steers a five-letter row's middle vowel ([size](#size)) and stays empty on a three-letter row. `npm test` fails on a row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
 

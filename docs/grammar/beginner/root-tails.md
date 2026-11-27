@@ -2,15 +2,25 @@
 band: beginner
 ---
 
+<!-- read-by (generated: npm run page-readers -- --write; do not edit)
+Page shape read by code:
+- cheat-sheet markers (3): each marker names a sheet id and sits right before a table whose forms are on that sheet (scripts/lint-cheat-sheets.ts)
+Inbound links: npm run page-refs -- root-tails.md
+-->
+
 # Root tails {#root-tails-sitting}
+
+A root's last two letters hint at what kind of thing it names and what that thing does, and its middle vowel usually hints at its size. Use these hints to remember the words you learn.
 
 ### Root tails {#root-tails}
 
 A root ends in a **tail**, its last two letters, that hints at what it names. The last consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. On a five-letter root the first three letters keep it apart from others of the same kind; on a three-letter root the first vowel does.
 
-The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound ([place-name roots](place-name-roots.md#place-name-roots)).
+The tail belongs to the root, so it comes just before the word ending. In `ogozel` *a cat*, the root is `ogoze` and the ending is `-l`. The tail is `ze`: `z` says the thing is a creature, and `e` says it is one whole thing.
 
-Each letter **echoes** a job it already has somewhere in the grammar: the letter points at that job as a memory aid, and grammar does not read it.
+The tail is a memory aid. No grammar reads it, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound.
+
+Each consonant **echoes** a job the same letter already has in a sentence or a word ending: the letter points at that job as a memory aid, and grammar does not read it.
 
 <!-- cheat-sheet: consonants -->
 | Second consonant | Kind | Example | Echo |
@@ -25,18 +35,18 @@ Each letter **echoes** a job it already has somewhere in the grammar: the letter
 | `d` | food and drink, with dishes and kitchen gear | `alede` *apple* | [`/d/`](/clause#role-letters) is what is done to (eaten) |
 | `w` | tools and things you use | `anewu` *knife* | [`/w/`](/clause#role-letters) is *with* |
 | `g` | signs and marks: symbols, letters, religion marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) is a grade, a mark on something |
-| `r` | counting, time, money and rhythm | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) |
-| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `ezuna` *soccer* | [`-n`](/proper-names#proper-name--n) is the name ending |
+| `r` | counting, time, money and rhythm | `ugoro` *clock* | — |
+| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `ezuna` *soccer* | [`-n`](/word-endings#named-n-beginner) is the name ending |
 
-The last vowel is the job: what the thing does to other things. Each vowel echoes what it does on a [join](/joins):
+The last vowel is the job: what the thing does to other things.
 
 <!-- cheat-sheet: vowels -->
-| Last vowel | Job | Examples | Echo |
-|------------|-----|----------|------|
-| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* (it lives in a colony) | holds: the list grows |
-| `o` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* | path or route: in a rank join the line stays |
-| `e` | one whole thing: round or compact, like a ball | `ogoze` *cat*, `alede` *apple* | one compact thing: a choice keeps one piece |
-| `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* | takes away |
+| Last vowel | Job | Examples |
+|------------|-----|----------|
+| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `aruda` *rice*, `eneza` *ant* (it lives in a colony) |
+| `o` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `oraho` *road*, `ugoro` *clock*, `eruvo` *run*, `urulo` *rainbow* |
+| `e` | one whole thing: round or compact, like a ball | `ogoze` *cat*, `alede` *apple* |
+| `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* |
 
 When more than one job fits, try `u` first, then `a`, then `o`. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `o`, round or compact `e`, sharp `u`. A banana ends in `o` and an apple in `e`. For a feeling, it's which way the feeling points (toward others `a`, along a standing `o`, inward `e`); for an action, how it unfolds (with others `a`, along a course `o`, once on the spot `e`).
 
@@ -52,4 +62,4 @@ In every kind but feelings, the **middle vowel** usually says how big the thing 
 
 This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings have no size, so a feeling's middle vowel carries no meaning.
 
-A [dictionary word](/compounds#dictionary-compounds) made of two roots ends in its head root, so it keeps the head's tail.
+The short three-letter roots that grammar words are built on have tails too. There the tail cues the root's everyday thing, and that thing cues the grammar meaning; the tail never says the grammar meaning itself. `ezel` *zebra* ends in `ze`, a creature that is one whole animal. A zebra's two kinds of stripe on one animal are the cue for `thezem`, the [hinge](/dependents#hinges) for *although*: a word that attaches a second sentence to the first.
