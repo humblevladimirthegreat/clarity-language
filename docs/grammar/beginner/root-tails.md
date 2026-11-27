@@ -69,3 +69,134 @@ In every kind but feelings, the **middle vowel** usually says how big the thing 
 This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings have no size, so a feeling's middle vowel carries no meaning.
 
 The short three-letter roots that grammar words are built on have tails too. There the tail cues the root's everyday thing, and that thing cues the grammar meaning; the tail never says the grammar meaning itself. `ezel` *zebra* ends in `ze`, a creature that is one whole animal. A zebra's two kinds of stripe on one animal are the cue for `thezem`, the [hinge](/dependents#hinges) for *although*: a word that attaches a second sentence to the first.
+
+### Practice {#beginner-practice}
+
+Short drills for Beginner. Try each item before opening **Show answer**. The new words are animals, so use each tail to remember which root is which; no grammar reads it.
+
+**Setting:** a pet shop
+
+**New words:**
+
+| English | Ageben | Cue |
+|---------|--------|-----|
+| *parrot* | `obozel` | 🦜 `ze`: a creature, one whole thing |
+| *snake* | `ezozul` | 🐍 `zu`: a creature that bites |
+| *spider* | `azezul` | 🕷️ `zu` with a hand-sized `e` in the middle |
+| *fish* | `evezal` | 🐟 `za`: a creature that swims in a school |
+| *shop* | `awahal` | 🏪 `ha`: a place you go inside |
+
+**Review:**
+
+| English | Ageben |
+|---------|--------|
+| *Azozon* | `azozon` |
+| *Alazun* | `alazun` |
+| *Ahelan* | `ahelan` |
+| *see* | `vayebel` |
+| *peek* | `vebemol` |
+| *find* | `vumewel` |
+| *scream* | `vozumul` |
+| *tell* | `vezuyol` |
+| *open* | `vohel` |
+| *sit* | `vehohel` |
+| *jar* | `adal` |
+| *that-clause* | `darl` |
+| *because* | `thahum` |
+| *although* | `thezem` |
+
+#### English → Ageben {#beginner-english-to-ageben}
+
+**1.** *Ahelan sees a parrot.*
+
+::: details Show answer
+`zahelan vayebel dobozel.`
+
+z-Ahelan | v-see | d-parrot
+
+**Also correct:** `zahelan dobozel vayebel.`
+:::
+
+**2.** *Alazun peeks at the snake.*
+
+::: details Show answer
+`zalazun vebemol dezozul.`
+
+z-Alazun | v-peek | d-snake
+
+**Also correct:** `zalazun dezozul vebemol.`
+:::
+
+**3.** *Azozon finds a spider in the shop.*
+
+::: details Show answer
+`zazozon vumewel dazezul hawahal.`
+
+z-Azozon | v-find | d-spider | h-shop
+
+**Also correct:** `zazozon dazezul vumewel hawahal.`
+:::
+
+**4.** *The parrot screams because Alazun opens the jar.*
+
+::: details Show answer
+`zobozel vozumul thahum blarl zalazun dadal vohel.`
+
+z-parrot | v-scream | [th-because | bl-that-clause] | z-Alazun | d-jar | v-open
+:::
+
+#### Ageben → English {#beginner-ageben-to-english}
+
+**1.** `zazozon vezuyol bahelan darl zobozel vozumul.`
+
+::: details Show answer
+z-Azozon | v-tell | b-Ahelan | d-that-clause | z-parrot | v-scream
+
+*Azozon tells Ahelan that the parrot screams.*
+:::
+
+**2.** `devezal vumewel hawahal.`
+
+::: details Show answer
+d-fish | v-find | h-shop
+
+*A fish got found in the shop.*
+:::
+
+**3.** `zezozul dalazun vayebel.`
+
+::: details Show answer
+z-snake | d-Alazun | v-see
+
+*The snake sees Alazun.*
+:::
+
+**4.** `zazozon vehohel thezem blezozul.`
+
+::: details Show answer
+z-Azozon | v-sit | [th-although | bl-snake]
+
+*Azozon sits despite the snake.*
+:::
+
+#### What changes {#beginner-what-changes}
+
+**1.** `zahelan dezozul vayebel.` / `zahelan dazezul vayebel.`
+
+::: details Show answer
+z-Ahelan | d-snake | v-see
+
+z-Ahelan | d-spider | v-see
+
+The first: *Ahelan sees a snake.* The second: *Ahelan sees a spider.* Both roots end in `zu`, a creature that bites; the middle `o` of *snake* is bigger than your hand, the `e` of *spider* fits in it.
+:::
+
+**2.** `zalazun dobozel vumewel.` / `zalazun devezal vumewel.`
+
+::: details Show answer
+z-Alazun | d-parrot | v-find
+
+z-Alazun | d-fish | v-find
+
+The first: *Alazun finds a parrot.* The second: *Alazun finds a fish.* *Parrot* ends in `ze`, one whole creature; *fish* ends in `za`, a creature that lives in a school.
+:::
