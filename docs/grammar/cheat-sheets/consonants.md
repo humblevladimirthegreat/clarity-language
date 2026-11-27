@@ -162,18 +162,18 @@ A root's last consonant hints at the kind of thing. From [root tails](/root-tail
 
 | Letter | Kind | Example | Echo | Stage |
 |--------|------|---------|-----------------|-------|
-| `z` | creatures | `ogoze` *cat* | [`/z/`](/clause#role-letters) who acts || B |
-| `y` | people | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone || B |
-| `m` | mind and feeling | `evemu` *fear* | [`-m`](/word-endings#abstract-m) abstract || B |
-| `b` | body and what goes on it | `aheba` *hand* | [`/b/`](/clause#role-letters) the extra piece || B |
-| `v` | doing, playing, moving | `eruvo` *run* | [`/v/`](/clause#role-letters) the action || B |
-| `h` | places and fixtures | `ohaha` *house* | [`/h/`](/clause#role-letters) where || B |
-| `l` | nature and raw stuff | `edalo` *tree* | [`-l`](/word-endings#concrete-l) concrete || B |
-| `d` | food, drink, kitchen | `alede` *apple* | [`/d/`](/clause#role-letters) what is done to || B |
-| `w` | tools | `anewu` *knife* | [`/w/`](/clause#role-letters) *with* || B |
-| `g` | signs and marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something || B |
-| `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) || B |
-| `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [`-n`](/word-endings#named-n-beginner) the name ending || B |
+| `z` | creatures | `ogoze` *cat* | [`/z/`](/clause#role-letters) who acts | B |
+| `y` | people | `eboyo` *baby* | [`/y/` + name](/speech-moves#vocative) calls someone | B |
+| `m` | mind and feeling | `evemu` *fear* | [`-m`](/word-endings#abstract-m) abstract | B |
+| `b` | body and what goes on it | `aheba` *hand* | [`/b/`](/clause#role-letters) the extra piece | B |
+| `v` | doing, playing, moving | `eruvo` *run* | [`/v/`](/clause#role-letters) the action | B |
+| `h` | places and fixtures | `ohaha` *house* | [`/h/`](/clause#role-letters) where | B |
+| `l` | nature and raw stuff | `edalo` *tree* | [`-l`](/word-endings#concrete-l) concrete | B |
+| `d` | food, drink, kitchen | `alede` *apple* | [`/d/`](/clause#role-letters) what is done to | B |
+| `w` | tools | `anewu` *knife* | [`/w/`](/clause#role-letters) *with* | B |
+| `g` | signs and marks | `ewugu` *warning* | [`/ɡ/`](/clause#role-letters) a mark on something | B |
+| `r` | counting, time, money | `ugoro` *clock* | `r` after a role letter starts a [number](/numbers#counts) | B |
+| `n` | titles, paper, named sports | `unona` *newspaper*, `ezuna` *soccer* | [`-n`](/word-endings#named-n-beginner) the name ending | B |
 
 ## `-n` that is not a name {#n-not-a-name}
 
