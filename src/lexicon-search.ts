@@ -27,6 +27,8 @@ export type PublishedRow = {
   shape?: string;
   /** Middle-vowel preference: what the thing measures against a person (src/root-tails.ts). */
   size?: string;
+  /** English echo: the Ageben letter for the concrete label's first consonant (`onset`), five-letter tail rows only; the placer reads it as the first consonant to aim for (src/root-tails-place.ts). */
+  onset?: string;
   abstract: string;
   mnemonic: string;
   englishByPos: string;
@@ -133,6 +135,7 @@ const PUBLISHED_HEADERS = [
   "kind",
   "shape",
   "size",
+  "onset",
   "abstract",
   "mnemonic",
   "english_by_pos",
@@ -375,6 +378,7 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
       kind: row.kind ?? "",
       shape: row.shape ?? "",
       size: row.size ?? "",
+      onset: row.onset ?? "",
       abstract,
       mnemonic: row.mnemonic ?? "",
       englishByPos,

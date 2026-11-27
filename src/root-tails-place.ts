@@ -52,6 +52,11 @@ export type TailPlaceRow = {
   size?: Size;
   /** CMU pronunciation of the label; empty loses only the echo tie-break. */
   cmu: string;
+  /**
+   * First consonant to aim for: the row's `onset` cell (the English label's first consonant). Absent (one
+   * English word, no row) falls back to the CMU first consonant; empty means the label gives none.
+   */
+  onset?: string;
   /** A root kept as it is: the row is not placed, but its root counts against the others. */
   fixed?: string;
   /** The row's root before this run: placement leaves it there unless moving gains something. */
@@ -148,7 +153,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const cands = rows.map((row) => (row.fixed ? [] : candidates(row, holderHosts, input.blocked)));
   const free = rows.flatMap((row, i) => (row.fixed ? [] : [i]));
   const unary = rows.map((row, i) => {
-    const first = firstConsonant(row.cmu);
+    const first = row.onset === undefined ? firstConsonant(row.cmu) : row.onset || null;
     const costs = new Map<number, number>();
     for (const code of cands[i]!) {
       const root = decode(code);

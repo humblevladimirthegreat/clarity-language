@@ -115,6 +115,14 @@ describe("validateRootTails", () => {
     assert.ok(reasons([{ ...star!, root: "aba" }]).some((r) => r.includes("does not end in its tail le")));
   });
 
+  it("takes an onset only on a five-letter tail row, one consonant", () => {
+    assert.deepEqual(reasons([{ ...cat!, onset: "g" }, { ...rage!, onset: "" }]), []);
+    assert.ok(reasons([{ ...cat!, onset: "th" }]).some((r) => r.startsWith("onset th is not one of")));
+    assert.ok(reasons([{ ...cat!, onset: "a" }]).some((r) => r.startsWith("onset a is not one of")));
+    assert.ok(reasons([{ ...star!, onset: "z" }]).some((r) => r.startsWith("only a five-letter tail row has an onset")));
+    assert.ok(reasons([{ ...france!, onset: "v" }]).some((r) => r.startsWith("only a five-letter tail row has an onset")));
+  });
+
   it("needs a size on every kind but mind, and rejects one on a mind row", () => {
     assert.ok(reasons([{ ...cat!, size: "" }]).some((r) => r === "a creature row needs a size"));
     assert.ok(reasons([{ ...cat!, size: "huge" }]).some((r) => r.startsWith("size must be")));
@@ -206,6 +214,13 @@ describe("placeTailRoots", () => {
     const onB = roots.filter((root) => root[1] === "b");
     assert.equal(onB.length, 4);
     assert.equal(new Set(onB.map((root) => root[0])).size, 4);
+  });
+
+  it("aims for the onset cell over the CMU first consonant, and for none when the cell is empty", () => {
+    const row = { kind: "nature" as const, shape: "one" as const, size: "small" as const, cmu: "B AA1 L" };
+    const { roots } = placeTailRoots({ rows: [{ ...row, onset: "m" }, { ...row }], shortRoots: new Set(), compounds: [], steps: 0 });
+    assert.equal(roots[0]![1], "m");
+    assert.equal(roots[1]![1], "b");
   });
 
   it("leaves current roots in place on a rerun", () => {

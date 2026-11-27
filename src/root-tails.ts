@@ -207,12 +207,23 @@ export function holderClash(root: string, holderHosts: ReadonlySet<string>): boo
 
 export type TailError = { key: string; reason: string };
 
+/** Letters an `onset` cell can hold: the consonants an English first sound maps to (src/pronunciation-map.ts), each one a five-letter root's second letter can be. */
+export const ONSET_LETTERS = "bdghylmnrvwz";
+
+/** Why a row's `onset` cell is wrong for its root, or null: only a five-letter tail row has one, a single consonant from {@link ONSET_LETTERS}; empty when the label gives none. */
+export function onsetFieldError(root: string, kind: string, onset: string): string | null {
+  if (!onset) return null;
+  if (kind === PLACE_KIND || root.length !== 5) return `only a five-letter tail row has an onset (got ${onset})`;
+  if (onset.length !== 1 || !ONSET_LETTERS.includes(onset)) return `onset ${onset} is not one of ${ONSET_LETTERS.split("").join(" ")}`;
+  return null;
+}
+
 /**
  * Checks `npm test` and `check-compounds` run over the published lexicon: every three- or five-letter
  * row has a kind and shape from their closed sets and a root that ends in its tail; a five-letter row
  * also has a size unless its kind is unsized, and clears the holder check; a three-letter row has no
- * size; a `named` row has no shape or size and a place-name root no other place shares. The middle
- * vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
+ * size; a `named` row has no shape or size and a place-name root no other place shares; only a
+ * five-letter tail row has an `onset`, one consonant ({@link onsetFieldError}). The middle vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
  */
 export function validateRootTails(
   published: readonly PublishedRow[],
@@ -226,6 +237,8 @@ export function validateRootTails(
     const kind = row.kind ?? "";
     const shape = row.shape ?? "";
     const size = row.size ?? "";
+    const onsetError = onsetFieldError(row.root, kind, row.onset ?? "");
+    if (onsetError) errors.push({ key, reason: onsetError });
     if (kind === PLACE_KIND) {
       if (shape) errors.push({ key, reason: `a ${PLACE_KIND} row has no shape (got ${shape})` });
       if (size) errors.push({ key, reason: `a ${PLACE_KIND} row has no size (got ${size})` });
