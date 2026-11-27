@@ -42,6 +42,7 @@ EXTRAS = """
 {{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}
 """
 
+# Shared base, also Claritish's: changing it restyles the Claritish pack, so Ageben-only rules go in AGEBEN_CSS.
 CSS = """
 .card { font-family: system-ui, sans-serif; font-size: 20px; text-align: center; color: #222; background: #fff; }
 .nightMode.card, .night_mode .card { color: #eee; background: #2f2f31; }
@@ -51,11 +52,19 @@ CSS = """
 .label { display: inline-block; min-width: 6.5em; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
 .also { font-size: 17px; opacity: 0.85; }
 .parts { margin-top: 0.8em; font-size: 17px; }
+.mnemonic { margin-top: 0.8em; font-size: 14px; font-style: italic; opacity: 0.6; }
+"""
+
+# Ageben note types, sized for phones: a long word shrinks and then wraps instead of widening the card;
+# letter and cue lines are two flex columns (letters or label, then text) so a long line wraps under its
+# text (flashcards.md#letters), and a long piece such as a whole place-name root wraps in its column.
+AGEBEN_CSS = CSS + """
+.stem { font-size: min(36px, 8vw); overflow-wrap: anywhere; }
 .letter, .cue { display: flex; align-items: baseline; text-align: left; font-size: 16px; margin: 0.15em auto; max-width: 28em; }
-.letter > code:first-child { flex: 0 0 auto; min-width: 3.4em; margin-right: 0.6em; font-weight: 600; }
+.letter > code:first-child { flex: 0 1 auto; min-width: 3.4em; max-width: 45%; margin-right: 0.6em; font-weight: 600; overflow-wrap: anywhere; }
 .cue { margin-top: 0.8em; }
 .cue > .label { flex: 0 0 auto; min-width: 0; margin-right: 0.6em; width: 3.4em; }
-.mnemonic { margin-top: 0.8em; font-size: 14px; font-style: italic; opacity: 0.6; }
+.nightMode a, .night_mode a { color: #99c1f1; }
 """
 
 LEXICON_MODEL = genanki.Model(
@@ -74,7 +83,7 @@ LEXICON_MODEL = genanki.Model(
             "afmt": '{{FrontSide}}<hr id="answer">' + STEM + EXTRAS,
         },
     ],
-    css=CSS,
+    css=AGEBEN_CSS,
     sort_field_index=0,
 )
 
@@ -151,7 +160,7 @@ OVERLAY_MODEL = genanki.Model(
             "afmt": '<div class="example">{{example}}</div><hr id="answer">' + OVERLAY_BACK,
         },
     ],
-    css=CSS + EXAMPLE_CSS,
+    css=AGEBEN_CSS + EXAMPLE_CSS,
     sort_field_index=1,
 )
 
@@ -172,7 +181,7 @@ SET_MODEL = genanki.Model(
             + '{{#mnemonic}}<div class="mnemonic">{{mnemonic}}</div>{{/mnemonic}}',
         },
     ],
-    css=CSS + EXAMPLE_CSS + """
+    css=AGEBEN_CSS + EXAMPLE_CSS + """
 .title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.55; }
 .cloze { font-weight: 700; color: #1a5fb4; }
 .nightMode .cloze, .night_mode .cloze { color: #99c1f1; }
